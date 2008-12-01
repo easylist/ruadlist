@@ -38,6 +38,7 @@
 @@|http://www2.admin.tomsk.ru/www/core1.nsf/
 @@|https://ssl.google-analytics.com/urchin.js|
 @@|https://w6.spacegate.com.ua/
+@@|https://www.google.com/reader/
 ! = Фильтры по регулярным выражениям =============
 /(?:\/cnt\/.*|\.cnt)\?/
 /(?:mn|sj)(?:[1-9]|10)\.ru/
@@ -93,8 +94,6 @@
 #DIV(id^=novoteka)
 #DIV(id^=rdminfrm_)
 ! = Общие фильтры ================
-euro.dirius.info/images/ban
-popstart.ru/
 */AdWorks/
 */AdsIframe/
 */AdsManager/
@@ -370,6 +369,7 @@ eseek.ru/button.php?
 eserver.ru/img/b/*.gif
 estudio-max.com/buttons/
 euro-football.ru/*.gif
+euro.dirius.info/images/ban
 ext.host-tracker.com/uptime-img/?
 fair.ru/i/i.php?
 faststart.ru/img/button.gif
@@ -645,6 +645,7 @@ pop-under.ru/
 pop-wmz.ru/
 popad.ru/
 popget.ru/
+popstart.ru/
 popularsite.ru/*.php?
 popunder-mladnet.medialand.ru/
 popunder.ru/
@@ -895,7 +896,9 @@ zvukoff.ru/24open/*.jpg
 anonymouse.org#DIV(id=mouselayer)
 bash.org.ru##DIV#page > HR
 bash.org.ru##DIV:not(#ads) > DIV.q > DIV:not(.vote):first-child
-bash.org.ru/forweb
+cwer.ru##DIV#sitename:first-child
+cwer.ru##NOINDEX
+cwer.ru##DIV > DIV:last-child > CENTER:first-child
 dreamprogs.net##DIV#container > DIV#left > DIV.block:last-child
 dreamprogs.net##DIV#left > DIV:first-child + * + DIV
 dreamprogs.net##DIV.block_right:not(:last-child)
