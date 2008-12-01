@@ -266,7 +266,6 @@ b81x63nc.ws.md
 ban_click
 bans.bride.ru
 bantex.ru/*?
-bash.org.ru/forweb
 basketfan.my1.ru/knopka.gif
 belsoft.tut.by/i/*.swf
 bepag.net//cnt.php?
@@ -895,7 +894,8 @@ zvukoff.ru/24open/*.jpg
 ! = Зачистка сайтов ==============================
 anonymouse.org#DIV(id=mouselayer)
 bash.org.ru##DIV#page > HR
-bash.org.ru##DIV.q > DIV:not(.vote):first-child
+bash.org.ru##DIV:not(#ads) > DIV.q > DIV:not(.vote):first-child
+bash.org.ru/forweb
 dreamprogs.net##DIV#container > DIV#left > DIV.block:last-child
 dreamprogs.net##DIV#left > DIV:first-child + * + DIV
 dreamprogs.net##DIV.block_right:not(:last-child)
