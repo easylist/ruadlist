@@ -52,7 +52,7 @@
 /[\W_]banner(?:co(?:de|unt)|_?click|div|BG|(id)?=|\d+(?!(\.swf|\w+))|s|\.php|-rotation|-?ad)(?!(_|.*\.(png|htm)))/
 /[\W_]popup(?!\d)(?:co(?:de|unt)|_?click|div|id=|\.php(?!\?)|.*\.swf|-?ad)/
 /[^a-z]ad[svjx\d]?[^a-z\d].*\?/
-/[^a-z]count[^a-z]/$~other,~xmlhttprequest
+/[^a-z]count[^a-z]/$~other,~xmlhttprequest,~xbl
 /[^a-z]top[^a-z].*\..*\?/
 /\.(?:ucoz\.(?:ru|com|org|net|de|ua|ko\.uk|kz|lv)|at\.ua|3dn\.ru|my1\.ru|clan\.su|moy\.su|do\.am)/stat/\d+/
 /\/(?:\?addyn|coad-)/
