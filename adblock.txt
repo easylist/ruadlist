@@ -14,13 +14,14 @@
 @@$stylesheet
 @@.ng.ru/*banner.jpg
 @@http://domdot.ru/merge?
-@@http://ifolder.ru/random/images/?
+@@images.kaspersky.com/*/promo/
 @@|http://*.*.vkadre.ru/assets/thumbnails/*.vk.jpg|
 @@|http://belocal.de/templates/belocal3/partner/nextgen/
 @@|http://bs.nigma.ru/maxima/Render.app.php
 @@|http://cs*.vkontakte.ru/u*/*_*.jpg|
 @@|http://demonsat.3dn.ru/index/0-34|
 @@|http://exchengine.ru/bare/export/js.html?
+@@|http://ifolder.ru/random/images/?
 @@|http://images.google.*/images?
 @@|http://img-fotki.yandex.ru/get/*ad
 @@|http://market.yandex.ru/jsc/i/popup.js|
@@ -34,7 +35,6 @@
 @@|http://smsdengi.com/partners_js.php?
 @@|http://stg.odnoklassniki.ru/res/
 @@|http://www*.ng.ru/*banner$image,script
-@@|http://www.images.kaspersky.com/*/promo/
 @@|http://www.vorbis.com/images/banners/
 @@|http://www2.admin.tomsk.ru/www/core1.nsf/
 @@|https://ssl.google-analytics.com/urchin.js|
@@ -900,18 +900,26 @@ zvukoff.ru/24open/*.jpg
 anonymouse.org#DIV(id=mouselayer)
 bash.org.ru##DIV#page > HR
 bash.org.ru##DIV:not(#ads) > DIV.q > DIV:not(.vote):first-child
-cwer.ru##NOINDEX
 cwer.ru##DIV#wrap > DIV#leftside:first-child > DIV#block-block-15
 cwer.ru##DIV#wrap > DIV#rightside > DIV#block-blockcache-49 > *
+cwer.ru##NOINDEX
 dreamprogs.net##DIV#container > DIV#left > DIV.block:last-child
 dreamprogs.net##DIV#left > DIV:first-child + * + DIV
 dreamprogs.net##DIV.block_right:not(:last-child)
 dreamprogs.net##DIV.content DIV#lfwar:first-child
 dreamprogs.net##DIV.content NOINDEX
 dreamprogs.net#DIV(id=topbanner)
+hmn.ru##BODY > TABLE[width="100%"]:first-child
+hmn.ru##INDEX > CENTER:last-child > TABLE.m11[width="480"]
+hmn.ru##INDEX > CENTER:last-child > TABLE[width="95%"]
 http://www.translate.ru/App_Themes/Default/begLoad/
-livejournal.com#DIV(class^=ljad)
+kinobaza.net##*[width="600"] DIV
+kinobaza.net##BODY > DIV[style="font-family: tahoma; padding-top: 4px;"]
+kinobaza.net##TABLE DIV.story:last-child
+kinobaza.net##TD.rightside:last-child > DIV[style="padding-left: 6px; padding-top: 10px;"]
+kinobaza.net#*(href^=http://kinobaza.net/ero)
 livejournal.com#DIV(class=adv)
+livejournal.com#DIV(class^=ljad)
 mail.google.com#DIV(class=XoqCub V3vJRb)
 mail.google.com#DIV(class=yxEQwb)
 mail.ru##DIV#agentToolbarId.agentToolBar[style]
@@ -995,12 +1003,12 @@ translate.ru#DIV(class=bgn_content)
 translate.ru#DIV(id=b_adv)
 translate.ru#DIV(id=ctl00_SiteContent_trasnlform_OurPartners)
 videofiles.com.ua#CENTER
-webpark.ru##div[class="block"]:first-child+*+*+*+*+ *+DIV
-webpark.ru##div[class="block"]:first-child+*+*+*+DIV
 webpark.ru##NOINDEX + * + NOINDEX
 webpark.ru##NOINDEX + NOINDEX
 webpark.ru##NOINDEX > div[class="block"] + DIV
 webpark.ru##NOINDEX:last-child
+webpark.ru##div[class="block"]:first-child+*+*+*+*+ *+DIV
+webpark.ru##div[class="block"]:first-child+*+*+*+DIV
 webpark.ru#IFRAME
 zaycev.net/*.js
 zaycev.net/m3_images/*.$image
