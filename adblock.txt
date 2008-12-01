@@ -82,17 +82,18 @@
 /rb(?:[1-9]|10)\.design\.ru/
 /re[ck]lama/
 ! = Общие CSS-фильтры ============================
-##A[href*="http://free.getcd.ru/?r"]
-##A[href*="http://filepost.ru?page="]
 ##A[href*="7dvd.ru/fn.php?r="]
+##A[href*="http://filepost.ru?page="]
+##A[href*="http://free.getcd.ru/?r"]
 #*(style=border-width: 0px; height: 31px; width: 88px;)
 #A(href*=http://kinotraff.ru/in.php?id=)
 #A(href*=partner.grand-casino.com)
 #A(href*=www.grand-casino.com)
 #DIV(id$=_len_ai)
+#DIV(id*=adriver)
 #DIV(id=radeant)
-#DIV(id^=MarketGid)
 #DIV(id^=ad3fun)
+#DIV(id^=MarketGid)
 #DIV(id^=novoteka)
 #DIV(id^=rdminfrm_)
 ! = Общие фильтры ================
