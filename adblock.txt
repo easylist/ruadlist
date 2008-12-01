@@ -38,7 +38,6 @@
 @@|http://www2.admin.tomsk.ru/www/core1.nsf/
 @@|https://ssl.google-analytics.com/urchin.js|
 @@|https://w6.spacegate.com.ua/
-@@|https://www.google.com/reader/
 ! = Фильтры по регулярным выражениям =============
 /(?:\/cnt\/.*|\.cnt)\?/
 /(?:mn|sj)(?:[1-9]|10)\.ru/
@@ -53,7 +52,7 @@
 /[\W_]banner(?:co(?:de|unt)|_?click|div|BG|(id)?=|\d+(?!(\.swf|\w+))|s|\.php|-rotation|-?ad)(?!(_|.*\.(png|htm)))/
 /[\W_]popup(?!\d)(?:co(?:de|unt)|_?click|div|id=|\.php(?!\?)|.*\.swf|-?ad)/
 /[^a-z]ad[svjx\d]?[^a-z\d].*\?/
-/[^a-z]count[^a-z]/$~other
+/[^a-z]count[^a-z]/$~other,~xmlhttprequest
 /[^a-z]top[^a-z].*\..*\?/
 /\.(?:ucoz\.(?:ru|com|org|net|de|ua|ko\.uk|kz|lv)|at\.ua|3dn\.ru|my1\.ru|clan\.su|moy\.su|do\.am)/stat/\d+/
 /\/(?:\?addyn|coad-)/
