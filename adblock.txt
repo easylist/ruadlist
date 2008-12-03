@@ -40,8 +40,8 @@
 @@|http://www2.admin.tomsk.ru/www/core1.nsf/
 @@|https://ssl.google-analytics.com/urchin.js|
 @@|https://w6.spacegate.com.ua/
-
 ! = Фильтры по регулярным выражениям =============
+/\/ads?(?:graphics|i?frame|manager|works?|p(?:eeps|ro))\//
 /(?:mn|sj)(?:[1-9]|10)\.ru/
 /(?:\/cnt\/.*|\.cnt)\?/
 //\d+ads?//
@@ -76,7 +76,7 @@
 /\/(?:\?addyn|coad-)/
 /\/(?:\w+[^_]popup\d|p(op)?under)\.js/
 /\/ad[svjx\d]?\//
-/\/ban\d?\//
+/\/ban+(?:er)?s?\d*\//
 /\W(?:(?:allo|web)sponsors?)[\.\/]/
 /\W(?:a(?:d|lexa|tdmt|twola)|qksrv|zedo|2o7|cjt1|i(?:4o|entry|vwbox)|d(?:imaso|vlabs)|eproof|falkag|revsci|tacoda)\./
 /\W(?:fuse|blog|php|sub|flash|smart|central|web)ads?\./
@@ -108,12 +108,6 @@
 #DIV(id^=novoteka)
 #DIV(id^=rdminfrm_)
 ! = Общие фильтры ================
-*/adgraphics/
-*/adpeeps/
-*/adsiframe/
-*/adsmanager/
-*/adspro/
-*/adworks/
 */ctxtlink/
 */dontblockthis/
 */ebayinternalpromos/
@@ -192,7 +186,6 @@
 .xbn.ru
 .yandex.*/resource/
 /banman/*$subdocument,script
-/bann/*$image
 /begun.js
 /bitrix/spread.php?
 /by.banclk?
@@ -554,7 +547,6 @@ mamler.com/templates/
 maploco.com/vmap/
 mari.net.ru
 masterpop.ru/
-mayki.zaycev.net/
 mb.osp.ru/*?
 mb.osp.ru/cgi-bin/iframe/
 mbn.com.ua/*?
@@ -942,6 +934,7 @@ emuparadise.org##TABLE#index P[align="center"] + DIV[align="center"]
 emuparadise.org#DIV(id=rmiad)
 emuparadise.org#DIV(id=yo)
 emuparadise.org#IMG(src=/graphics/eplogo.jpg)
+file-online.ru#DIV(class=block_text)
 hmn.ru##BODY > TABLE[width="100%"]:first-child
 hmn.ru##INDEX > CENTER:last-child > TABLE.m11[width="480"]
 hmn.ru##INDEX > CENTER:last-child > TABLE[width="95%"]
