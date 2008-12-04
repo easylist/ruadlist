@@ -5,7 +5,7 @@
 !   Alex_root anti-porn list
 !Копирайт: http://forum.mozilla-russia.org/viewtopic.php?id=3679&p=22
 
-!============ Общие правила
+!======== Общие правила ========
 ##A[href*="adult"][href*="foto"]
 ##A[href*="adult"][href*="film"]
 ##A[href*="adult"][href*="video"]
@@ -51,51 +51,9 @@
 ##A[href*="xxx"][href*="foto"]
 ##A[href*="xxx"][href*="film"]
 ##A[href*="xxx"][href*="video"]
-adult*foto
-adult*film
-adult*video
-cekc*foto
-cekc*film
-cekc*video
-ero*foto
-ero*film
-ero*video
-foto*adult
-foto*cekc
-foto*ero
-foto*intim
-foto*porn
-foto*sex
-foto*xxx
-film*adult
-film*cekc
-film*erot
-film*intim
-film*porn
-film*sex
-film*xxx
-intim*foto
-intim*film
-intim*video
-porn*foto
-porn*film
-porn*video
-sex*foto
-sex*film
-sex*video
-seks*foto
-seks*film
-seks*video
-video*adult
-video*cekc
-video*erot
-video*intim
-video*porn
-video*sex
-video*xxx
-xxx*foto
-xxx*film
-xxx*video
+/(?:(?:adult|ceks|ero|henta[ijy]|intim|porn|se(?:x|ks)|xxx).*){2,}/
+/(?:adult|cekc|ero|henta[ijy]|intim|porn|se(?:x|ks)|xxx).*(?:fot(?:o|k)|film|video)/
+/(?:fot(?:o|k)|film|video).*(?:adult|cekc|ero|henta[ijy]|intim|porn|se(?:x|ks)|xxx)/
 !=================
 #*(href*=/erotic)
 #*(href*=/erotik)
@@ -1502,7 +1460,6 @@ vipkoketka.ru/
 vipmovie.ru/
 viptrax.ru/
 vipwhore.ru/
-vipxxx-party.ru/
 virusoff.net.ru/
 vorgins.com/
 voyeur4ru.net/
@@ -2700,7 +2657,6 @@ zvrashenec.ru/
 #*(href*=vipmovie.ru)
 #*(href*=viptrax.ru)
 #*(href*=vipwhore.ru)
-#*(href*=vipxxx-party.ru)
 #*(href*=virusoff.net.ru)
 #*(href*=vorgins.com)
 #*(href*=voyeur4ru.net)
