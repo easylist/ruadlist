@@ -42,11 +42,8 @@
 @@|https://ssl.google-analytics.com/urchin.js|
 @@|https://w6.spacegate.com.ua/
 ! = Фильтры по регулярным выражениям =============
-/\/ads?(?:graphics|i?frame|manager|works?|p(?:eeps|ro))\//
 /(?:mn|sj)(?:[1-9]|10)\.ru/
 /(?:\/cnt\/.*|\.cnt)\?/
-/\/\d+ads?\//
-/80[-x]15|88[-x](?:15|3[123])|100[-x](?:1[05]0|35)|120[-x](?:6|9|12|14|24|60)0|125[-x]125|160[-x](?:60?|8)0|180[-x]150|200[-x]100|240[-x](?:35|40)0|250[-x]250|300[-x](?:25|60)0|336[-x]280|392[-x]72|400[-x]40|468[-x](?:15|[68]0)|600[-x](?:10|24)0|728[-x][69]0|(?:234|380|4[78]0|800)[-x]60/
 /ad(js\.php\?|x\.js|log|ima?ge?|runner|c(?:lick|ycle|ontent)|f(?:etch|rame)|s(?:erve|pace|wrapper|crip|how)|v(?:iew|ert))/
 /affiliat(?:e|ion)/$~object
 /b[au]nn?er[sz]?/
@@ -60,12 +57,12 @@
 /http\:\/\/a\.[^/]*\./$~background,~image
 /http\:\/\/sj(?:[1-9]|10)\.ru/
 /re[ck]lama/
+/[-\._\(&=]ad_?\d+/
 /[-\/\.\(&](?:ivw(?:-bin)?(?!\.html)|espotting)[-\/\._\)&=\?](?!&)/
 /[-\/\._&=](?:dime|(?:euro|pay)s?4?|f(?:ine|ast)|mega|precision|specific|swf\?|value)[_-]?(?:stream|xchange|(c|k)lick)(?!\.(jpg|png))/
 /[-\/\._\(&=\?]ad_?(?:d?s(?!\.)(?:c|e)?rvi?(?:ng)?e?r?|\d\.|(?:x|sv?)(?:\d?|\.js)|sc?(?!(_|\/))|vert.*|view|tech|trix|type|_?str(?:eam|ing)|code|case|cli(?:ck|ent)s?)[-\/\._\)\?=](?!etr)/
 /[-\/\._\(&=]ad_?(?:action|b(?:utler|rite|ottom|ox_?)|codes?\d*|function|ima?ge?s?|_?id(?!=&)|js(?!\.php)|.php|farm|v(?!=?(&|off))|x\.js|-.*|l(?:ink|og|ayer))[-\/\._\)&=\|](?!s(ea)?rch)/
 /[-\/\._\(&=]ad_?(?:m(?:an|entor|odule|osaic)|p(?:ops?|arse)|revolver|s(?:dk|end|ize|tome|onar|cripts?)|s?remote|type|-?f(?:low|rame|etch))[-\/\._\)&=]/
-/[-\._\(&=]ad_?\d+/
 /[\W_]banner(?:co(?:de|unt)|_?click|div|BG|(id)?=|\d+(?!(\.swf|\w+))|s|\.php|-rotation|-?ad)(?!(_|.*\.(png|htm)))/
 /[\W_]popup(?!\d)(?:co(?:de|unt)|_?click|div|id=|\.php(?!\?)|.*\.swf|-?ad)/
 /[^a-z]ad[svjx\d]?[^a-z\d].*\?/
@@ -74,8 +71,11 @@
 /\.(?:ucoz\.(?:ru|com|org|net|de|ua|ko\.uk|kz|lv)|at\.ua|3dn\.ru|my1\.ru|clan\.su|moy\.su|do\.am)/stat/\d+/
 /\/(?:\?addyn|coad-)/
 /\/(?:\w+[^_]popup\d|p(op)?under)\.js/
+/\/ads?(?:graphics|i?frame|manager|works?|p(?:eeps|ro))\//
 /\/ad[svjx\d]?\//
 /\/ban+(?:er)?s?\d*\//
+/\/\d+ads?\//
+/\D(?:80[-x]15|88[-x](?:15|3[123])|100[-x](?:1[05]0|35)|120[-x](?:6|9|12|14|24|60)0|125[-x]125|160[-x](?:60?|8)0|180[-x]150|200[-x]100|240[-x](?:35|40)0|250[-x]250|300[-x](?:25|60)0|336[-x]280|392[-x]72|400[-x]40|468[-x](?:15|[68]0)|600[-x](?:10|24)0|728[-x][69]0|(?:234|380|4[78]0|800)[-x]60)\D/
 /\W(?:(?:allo|web)sponsors?)[\.\/]/
 /\W(?:a(?:d|lexa|tdmt|twola)|qksrv|zedo|2o7|cjt1|i(?:4o|entry|vwbox)|d(?:imaso|vlabs)|eproof|falkag|revsci|tacoda)\./
 /\W(?:fuse|blog|php|sub|flash|smart|central|web)ads?\./
