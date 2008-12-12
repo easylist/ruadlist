@@ -50,7 +50,6 @@
 /ad(js\.php\?|x\.js|log|ima?ge?|runner|c(?:lick|ycle|ontent)|f(?:etch|rame)|s(?:erve|pace|wrapper|crip|how)|v(?:iew|ert))/
 /affiliat(?:e|ion)/$~object
 /b[au]nn?er[sz]?/
-/counte[rd]/
 /http\:\/\/(?:100|210|234|468)\./
 /http\:\/\/(?:ad|bx)[sv]?\d?\./
 /http\:\/\/(?:top100\-)?images\.rambler\.ru\/top100\//
@@ -113,6 +112,8 @@
 #DIV(id^=novoteka)
 #DIV(id^=rdminfrm_)
 ! = Общие фильтры ================
+*/counted/
+*/counter/
 */ctxtlink/
 */dontblockthis/
 */ebayinternalpromos/
