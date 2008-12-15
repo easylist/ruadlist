@@ -13,39 +13,33 @@
 
 ! = Исключения ===================================
 
-! Оптимизация для стилей.
+! Стили блокировать смысла нет, пропустим сразу
 @@$stylesheet
-! Википедию и подобные ресурсы не трогаем.
+! Вики-подобные ресурсы не трогаем
 @@.wiki*.org/
-@@.ng.ru/*banner.jpg
-@@deviantart.com/global/difi/?$subdocument
-@@http://domdot.ru/merge?
+! Картинки в гуглопоиске всегда отображаем
+@@.google.*/images?
+! Прочие исключения
+@@.admin.tomsk.ru/www/core1.nsf/
+@@.ng.ru/images/right_banners/
 @@images.kaspersky.com/*/promo/
 @@steampowered.com
 @@zaycev.net/m3_images/i/
-@@|http://*.*.vkadre.ru/assets/thumbnails/*.vk.jpg|
 @@|http://belocal.de/templates/belocal3/partner/nextgen/
-@@|http://cs*.vkontakte.ru/u*/*_*.jpg|
 @@|http://demonsat.3dn.ru/index/0-34|
+@@|http://domdot.ru/merge?
 @@|http://exchengine.ru/bare/export/js.html?
 @@|http://gallery-*.usercash.com/
 @@|http://ifolder.ru/random/images/?
-@@|http://images.google.*/images?
-@@|http://img-fotki.yandex.ru/get/*ad
 @@|http://kawaii-radio.net/banners/
-@@|http://market.yandex.ru/jsc/i/popup.js|
-@@|http://mywishlist.ru/pic/wish/*__100x100.jpeg
-@@|http://pics.rbc.ru/img/cnews/20
-@@|http://pics.rbc.ru/img/oranews/*.jpg
+@@|http://mywishlist.ru/pic/wish/*__100x100.
+@@|http://pics.rbc.ru/img/
+@@|http://pics.rbc.ru/quote/
 @@|http://recordings.ru/mperl/new/popup/_frames.base.pl?r=
-@@|http://s.mcstatic.com/
-@@|http://sendmms.megafon.ru/fedmms/i/button.gif|
 @@|http://smsdengi.com/partners_js.php?
 @@|http://stg.odnoklassniki.ru/res/
-@@|http://www*.ng.ru/*banner$image,script
 @@|http://www.animenfo.com/radio/*.js
 @@|http://www.vorbis.com/images/banners/
-@@|http://www2.admin.tomsk.ru/www/core1.nsf/
 @@|https://ssl.google-analytics.com/urchin.js|
 @@|https://w6.spacegate.com.ua/
 
@@ -641,7 +635,6 @@ http://oowl.ru/ab/
 http://poptraf.*/
 http://soft-teleport.ru/uploads/ad/
 http://vipmest.info/
-http://www.rbc.ru/*.swf
 http://xap.ru/*.js
 hypernews.ru/*.js
 i.bigmir.net/cnt/
@@ -807,11 +800,7 @@ peter-falk.clan.su/_fr/0/*.gif
 photo-droch.net/
 photohit.ru/a-z/*.jpg
 pics.news.meta.ua/
-pics.rbc.ru/$image
-pics.rbc.ru/$object
-pics.rbc.ru/img/grinf/news
-pics.rbc.ru/rbcmill/
-pics.sport.rbc.ru/$image
+pics.rbc.ru/$image,object
 pindotrafforg.54.com1.ru
 pingwin.net.ua/www/delivery
 piter.com/*.gif
