@@ -10,10 +10,12 @@
 !5!Появился вопрос по подписке?
 !6!Вам обязательно помогут на форуме DemonSat.3dn.ru
 !7!===============================================
+
 ! = Исключения ===================================
--- Оптимизация для стилей.
+
+! Оптимизация для стилей.
 @@$stylesheet
--- Википедию и подобные ресурсы не трогаем.
+! Википедию и подобные ресурсы не трогаем.
 @@.wiki*.org/
 @@.ng.ru/*banner.jpg
 @@deviantart.com/global/difi/?$subdocument
@@ -46,7 +48,9 @@
 @@|http://www2.admin.tomsk.ru/www/core1.nsf/
 @@|https://ssl.google-analytics.com/urchin.js|
 @@|https://w6.spacegate.com.ua/
+
 ! = Фильтры по регулярным выражениям =============
+
 /(\/cnt\/.*|\.cnt)\?/
 /ad(?:js\.php|x\.js|log|ima?ge?|runner|c(?:lick|ycle|ontent)|f(?:etch|rame)|s(?:erve|pace|wrapper|crip|how)|v(?:iew|ert))/
 /affiliat(?:e|ion)/$~object
@@ -73,7 +77,9 @@
 /\W(?:fuse|blog|php|sub|flash|smart|central|web)ads?\./
 /\W(?:layer|logme|rich|skyscraper|out)\.php\?\w/
 /\W(?:view|top|bottom|left|right|werbe|ad|live|net|promo|sales|video|wide)_?banner/
+
 ! = Общие CSS-фильтры ============================
+
 ##A[href*="7dvd.ru/fn.php?r="]
 ##A[href*="click2go.ru/?id="]
 ##A[href*="http://filepost.ru?page="]
@@ -99,7 +105,9 @@
 #DIV(id^=MarketGid)
 #DIV(id^=novoteka)
 #DIV(id^=rdminfrm_)
+
 ! = Общие фильтры ================
+
 *//1-traf.net/
 *//13rus.ru/img/
 *//1pop.ru/
@@ -1046,7 +1054,9 @@ zakladka.org.ua/button.*.png
 zaza.net.ua/uploads/posts/*.gif
 zero.kz/c.php?
 zvukoff.ru/24open/*.jpg
+
 ! = Зачистка сайтов ==============================
+
 2baksa.net##DIV.block_text[align="center"] + DIV.leftblock + DIV.block_text
 2baksa.net##TD:last-child > BR[clear="all"] + * + * + CENTER
 2baksa.net#A(href*=2baksa.net/go/go.php?http://voob.ru)
