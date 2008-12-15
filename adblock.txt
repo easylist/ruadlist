@@ -45,7 +45,7 @@
 @@|https://ssl.google-analytics.com/urchin.js|
 @@|https://w6.spacegate.com.ua/
 ! = Фильтры по регулярным выражениям =============
-/(?::\/\/|\.)(?:1txt|2da2|4smi|99z|ad(?:dweb|fox|fun|me|sn24|ward)|begun|chbn|cl(?:x|een)|ir|ket|kpdn|lb[en]|link|pb(?:g|net)|pop(?:under|ups)?|ppnd|prbn|qle|rax|r[bl]e|[stx]bn|tle|vba|wbn)\.ru/
+/(?::\/\/|\.)(?:1txt|2da2|4smi|99z|ad(?:dweb|fox|fun|me|net|sn24|ward)|begun|chbn|cl(?:x|een)|imho|ir|ket|kpdn|lb[en]|link|pb(?:g|net)|pop(?:traf|under|ups)?|ppnd|prbn|qle|rax|r[bl]e|[stx]bn|tle|vba|wbn)\.ru/
 /(?:mn|sj)(?:[1-9]|10)\.ru/
 /(?:\/cnt\/.*|\.cnt)\?/
 /:\/\/(?:100|210|234|468)\./
@@ -1077,11 +1077,12 @@ www.slo.ru/*700x70
 www.slo.ru/180x400.jpg
 www.slo.ru/img/re/fc.gif
 zaycev.net##*:not(B) > A:not([href*="zaycev.net"]):not([href^="mailto:"]):not([href^="javascript:"])
-zaycev.net##TABLE.mb TABLE A[target="_blank"] + * + CENTER > TABLE
 zaycev.net##TD.main:first-child + * + TD > P.mb + * + TABLE.mb TABLE:first-child + * + TABLE TABLE CENTER > TABLE[align="center"]:first-child
 zaycev.net##TD.main:first-child + * + TD > P.mb + * + TABLE.mb TABLE:first-child + * + TABLE TABLE CENTER > TABLE[align="center"]:last-child
-zaycev.net##TD.main:first-child + * + TD > P.mb:first-child + CENTER + TABLE.mb + BR + TABLE.mb
-zaycev.net##TD.main:first-child + * + TD > P.mb:first-child + CENTER > DIV.menu1
+zaycev.net##TD[width="240"][valign="top"][align="center"]:last-child
+zaycev.net#DIV(class=menu1)(align=center)
 zaycev.net#IFRAME
+zaycev.net#TD(align=center)(colspan=3)
 zaycev.net/m3_images/
+zhmak.info#A(rel=nofollow)
 zhmak.info#NOINDEX
