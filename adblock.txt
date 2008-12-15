@@ -51,8 +51,6 @@
 
 ! = Фильтры по регулярным выражениям =============
 
-/(\/cnt\/.*|\.cnt)\?/
-/affiliat(?:e|ion)/$~object
 /[\W_](?:dime|euros?4?|pays?4?|fine|fast|mega|precision|specific|swf\?|value)[-_]?(?:stream|xchange|[ck]lick)(?!\.(jpg|png))/
 /[\W_](?:ivw(-bin)?(?!\.html)|espotting)[\W_](?!&)/
 /[\W_]ads?[-_]?(?:[ce]?rvi?(?:ng)?e?r?|\d\.|\.php|[xv]?\.js|action|b(?:utler|rite|ottom|ox_?)|c(?:odes?\d*|ase|li(?:c?k|ent)s?)|f(?:arm|etch|low|rame|unction)|i(?:ma?ge?s?|d(?!=&))|l(?:ink|og|ayer)|m(?:an|entor|odule|osaic)|p(?:ops?|arse)|r(?:emote|evolver)|s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)|t(?:ech|rix|ype)|v(?:ert|iew))(?!=?v(?:&|off))[\W_](?!s(ea)?rch)/
@@ -266,6 +264,7 @@
 .chbn.ru/
 .cleen.ru/
 .clx.ru/
+.cnt?
 .corporative.ru/upload/
 .datasvit.net/images/*_banner.
 .dating-exchange.com
@@ -360,6 +359,7 @@
 /begun.js
 /bitrix/spread.php?
 /by.banclk?
+/cnt/*?
 /event.ng
 /IndianRailways/*$match-case
 /marketplace.asp?
@@ -405,6 +405,8 @@ adult-click.ru
 adulttraffic.ru
 adv.hardwarez.ru/cgi-bin
 advbroker.ru/code/?
+affiliate$~object
+affiliation$~object
 ajax.1tizer.com/?
 alfainternet.su/skokoskoko.js
 all-news.net.ua/informers/
