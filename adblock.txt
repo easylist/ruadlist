@@ -72,10 +72,10 @@
 
 ! = Развёрнутые фильтры ==========================
 
-! Орининал: /\W(?:(?:allo|web)sponsors?)[./]/
+! Оригинал: /\W(?:(?:allo|web)sponsors?)[./]/
 allosponsor
 websponsor
-! Орининал: /\W(?:layer|logme|rich|skyscraper|out)\.php\?\w/
+! Оригинал: /\W(?:layer|logme|rich|skyscraper|out)\.php\?\w/
 -layer.php?
 -logme.php?
 -out.php?
@@ -86,8 +86,7 @@ websponsor
 /out.php?
 /rich.php?
 /skyscraper.php?
-
-! Фильтр: /(\/cnt\/.*|\.cnt)\?/
+! Оригинал: /(\/cnt\/.*|\.cnt)\?/
 .cnt?
 /cnt/*?
 
@@ -282,6 +281,7 @@ websponsor
 .agronews.ru/images/*.swf
 .agrotv.ru/*.swf
 .all.by/*?
+.bannerbank.ru/
 .begun.ru/
 .bigmir.net/?
 .chbn.ru/
@@ -1153,9 +1153,13 @@ mail.google.com#DIV(class=yxEQwb)
 mail.ru##DIV#agentToolbarId.agentToolBar[style]
 mail.ru#DIV(id=lite_top_banner)
 maxnet.ua##A > IMG[width="88"]
-mozilla-russia.org##SPAN[ID^="modex"][style="font-size: 80%;"]:last-child
 mozilla-russia.org#DIV(id$=Col_advC)
 mozilla-russia.org/images/rek_header.png
+mozilla-russia.org##SPAN[ID^="modex"][style="font-size: 80%;"]:last-child
+muzoff.ru##BODY > SCRIPT:first-child + * + * + * + * + * + * + SCRIPT + TABLE[width="100%"]
+muzoff.ru##BODY > TABLE > TBODY:first-child > TR > TD > TABLE + DIV[align="center"]
+muzoff.ru#DIV(id=ibp)
+muzoff.ru##TABLE > TBODY > TR > TD > CENTER
 nnm.ru#*(class*=banner)
 nnm.ru#*(id*=banner)
 nnm.ru#DIV(id=rightMenu)
@@ -1281,6 +1285,7 @@ zaycev.net#TD(align=center)(colspan=3)
 zaycev.net/m3_images/
 zhmak.info#A(rel=nofollow)
 zhmak.info#NOINDEX
+|http://muzoff.ru/rek/
 |http://samlab.ws/*.js
 |http://samlab.ws/*.swf
 |http://samlab.ws/file
