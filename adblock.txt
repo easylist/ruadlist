@@ -50,24 +50,17 @@
 
 /affiliat(?:e|ion)/$~object
 /[\W_](?:dime|euros?4?|pays?4?|fine|fast|mega|precision|specific|swf\?|value)[-_]?(?:stream|xchange|[ck]lick)(?!\.(jpg|png))/
-/[\W_](?:ivw(-bin)?(?!\.html)|espotting)[\W_](?!&)/
-/[\W_]ad[-_]\d+/
 /[\W_]ads?[-_]?(?:[ce]?rvi?(?:ng)?e?r?|\d\.|\.php|[xv]?\.js|action|b(?:utler|rite|ottom|ox_?)|c(?:odes?\d*|ase|li(?:c?k|ent)s?)|f(?:arm|etch|low|rame|unction)|i(?:ma?ge?s?|d(?!=&))|l(?:ink|og|ayer)|m(?:an|entor|odule|osaic)|p(?:ops?|arse)|r(?:emote|evolver)|s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)|t(?:ech|rix|ype)|v(?:ert|iew))(?!=?v(?:&|off))[\W_](?!s(ea)?rch)/
 /[\W_]banner(?:co(?:de|unt)|_?click|div|BG|(id)?=|\d+(?!(\.swf|\w+))|s|\.php|-rotation|-?ad)(?!(_|.*\.(png|htm)))/
-/[\W_]popup(?!\d)(?:co(?:de|unt)|_?click|div|id=|\.php(?!\?)|.*\.swf|-?ad)/
 /[^a-z](?:partners?|promo|sponsors?)[^a-z]/
 /[^a-z]count[^a-z]/$~other,~xmlhttprequest,~xbl
 /[^a-z]top[^a-z].*\..*\?/
 /\.(?:ucoz\.(?:ru|com|org|net|de|ua|ko\.uk|kz|lv)|at\.ua|3dn\.ru|my1\.ru|clan\.su|moy\.su|do\.am)/stat/\d+/
-/\/(?:\?addyn|coad-)/
-/\/(?:\w+[^_]popup\d|p(op)?under)\.js/
 /\/ad(?:[sv]?(?:graphics|i?frame|manager|works?|p(?:eeps|ro))|[svjx\d])\//
 /\/ban+(?:er)?s?\d*\//
-/\/\d+ads?\//
 /\D(?:1(?:00[-x](?:1[05]0|35)|20[-x](?:1[24]|24|60?|9)0|25[-x]125|60[-x](?:60?|8)0|80[-x]150)|2(?:00[-x][13]0|34[-x](?:6|1[20])|40[-x](?:35|40)|50[-x]25|70[-x]6)0|3(?:00[-x](?:25|60)0|36[-x]280|80[-x]60|92[-x]72)|4(?:00[-x]40|[78]0[-x]60|68[-x](?:15|[68]0))|600[-x](?:10|24)0|7(?:00[-x][67]|28[-x][69])0|8(?:0(?:[-x]15|0[-x]60)|8[-x](?:15|3[123])))\D/
 /\W(?:a(?:lexa|tdmt|twola)|qksrv|zedo|2o7|cjt1|i(?:4o|entry|vwbox)|d(?:imaso|vlabs)|eproof|falkag|revsci|tacoda)\./
 /\W(?:fuse|blog|php|sub|flash|smart|central|web)ads?\./
-/\W(?:view|top|bottom|left|right|werbe|ad|live|net|promo|sales|video|wide)_?banner/
 /\Wad[svjx\d]\?/
 
 ! = Развёрнутые фильтры ==========================
