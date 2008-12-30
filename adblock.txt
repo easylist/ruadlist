@@ -51,7 +51,7 @@
 
 /affiliat(?:e|ion)/$~object
 /[\W_]ads?[-_]?(?:[ce]?rvi?(?:ng)?e?r?|\d\.|\.php|[xv]?\.js|action|b(?:utler|rite|ottom|ox_?)|c(?:odes?\d*|ase|li(?:c?k|ent)s?)|f(?:arm|etch|low|rame|unction)|i(?:ma?ge?s?|d(?!=&))|l(?:ink|og|ayer)|m(?:an|entor|odule|osaic)|p(?:ops?|arse)|r(?:emote|evolver)|s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)|t(?:ech|rix|ype)|v(?:ert|iew))(?!=?v(?:&|off))[\W_](?!s(ea)?rch)/
-/[\W_]banner(?:co(?:de|unt)|_?click|div|BG|(id)?=|\d+(?!(\.swf|\w+))|s|\.php|-rotation|-?ad)(?!(_|.*\.(png|htm)))/
+/[\W_]banner(?:co(?:de|unt)|_?click|div|BG|(id)?=|\d+(?!(\.swf|\w+))|\.php|-rotation|-?ad)(?!(_|.*\.(png|htm)))/
 /[^a-z](?:partners?|promo|sponsors?)[^a-z]/
 /[^a-z]count[^a-z]/$~other,~xmlhttprequest,~xbl
 /[^a-z]top[^a-z].*\..*\?/
