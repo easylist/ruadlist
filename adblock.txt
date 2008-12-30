@@ -52,10 +52,10 @@
 ! = Фильтры по регулярным выражениям =============
 
 /affiliat(?:e|ion)/$~object
-/[\W_]ads?[-_]?(?:[ce]?rvi?(?:ng)?e?r?|\d\.|\.php|[xv]?\.js|action|b(?:utler|rite|ottom|ox_?)|c(?:odes?\d*|ase|li(?:c?k|ent)s?)|f(?:arm|etch|low|rame|unction)|i(?:ma?ge?s?|d(?!=&))|l(?:ink|og|ayer)|m(?:an|entor|odule|osaic)|p(?:ops?|arse)|r(?:emote|evolver)|s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)|t(?:ech|rix|ype)|v(?:ert|iew))(?!=?v(?:&|off))[\W_](?!s(ea)?rch)/
-/[\W_]banner(?:co(?:de|unt)|_?click|div|BG|(id)?=|\d+(?!(\.swf|\w+))|\.php|-rotation|-?ad)(?!(_|.*\.(png|htm)))/
+/[\W_]ads?[-_]?(?:[xv]?\.js|action|b(?:utler|rite|ottom|ox_?)|c(?:odes?\d*|ase|li(?:c?k|ent)s?)|f(?:arm|etch|low|rame|unction)|i(?:ma?ge?s?|d(?!=&))|l(?:ink|og|ayer)|m(?:an|entor|odule|osaic)|p(?:ops?|arse)|r(?:emote|evolver)|s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)|t(?:ech|rix|ype)|v(?:ert|iew))(?!=?v(?:&|off))[\W_](?!s(ea)?rch)/
+/[\W_]banner(?:co(?:de|unt)|_?click|div|bg|(id)?=|\d+(?!(\.swf|\w+))|-rotation|-?ad)(?!(?:_|.*\.(?:png|htm)))/
 /[^a-z](?:partners?|promo|sponsors?)[^a-z]/
-/[^a-z]count[^a-z]/$~other,~xmlhttprequest,~xbl
+/[^a-z]count(?:er)?[^a-z]/$~other,~xmlhttprequest,~xbl
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/
 /\/ad[sv]?(?:graphics|i?frame|manager|works?|p(?:eeps|ro))\//
 /\/ban+(?:er)?s?\d*\//
@@ -254,6 +254,8 @@
 .adnet.ru/
 .adriver.ru/
 .adru.net/*?
+.adserver.*?
+.adservinginternational.
 .adskape.ru/
 .adsn24.ru/
 .advertising.
@@ -356,6 +358,7 @@
 //li.ru/*?
 //ngbn.net/iframe.php?
 //nnm.ru/*.swf
+/ads.php?
 /banman/*$subdocument,script
 /begun.js
 /bitrix/spread.php?
@@ -408,6 +411,7 @@ a.gismeteo.ru/
 ab.adpro.com.ua/
 abc-people.com/bann_
 active.interzet.ru/log.php?
+ad*.rambler.ru/
 add.in.ua/im/button.gif
 adlik.akavita.com/*?
 adshop.ru/adshop/?
@@ -1063,6 +1067,7 @@ zaza.net.ua/uploads/posts/*.gif
 zero.kz/c.php?
 zto.h16.ru/
 zvukoff.ru/24open/*.jpg
+_ads.php?
 
 ! = Зачистка сайтов ==============================
 
