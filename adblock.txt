@@ -55,10 +55,10 @@
 /[\W_]ads?[-_]?(?:[xv]?\.js|action|b(?:utler|rite|ottom|ox_?)|c(?:odes?\d*|ase|li(?:c?k|ent)s?)|f(?:arm|etch|low|rame|unction)|i(?:ma?ge?s?|d(?!=&))|l(?:ink|og|ayer)|m(?:an|entor|odule|osaic)|p(?:ops?|arse)|r(?:emote|evolver)|s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)|t(?:ech|rix|ype)|v(?:ert|iew))(?!=?v(?:&|off))[\W_](?!s(ea)?rch)/
 /[\W_]banner(?:co(?:de|unt)|_?click|div|bg|(id)?=|\d+(?!(\.swf|\w+))|-rotation|-?ad)(?!(?:_|.*\.(?:png|htm)))/
 /[^a-z](?:partners?|promo|sponsors?)[^a-z]/
-/[^a-z]count(?:er)?[^a-z]/$~other,~xmlhttprequest,~xbl
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/
 /\/ad[sv]?(?:graphics|i?frame|manager|works?|p(?:eeps|ro))\//
 /\/ban+(?:er)?s?\d*\//
+/\/count(?:ers?)?[.?/]/
 /\D(?:1(?:00[-x](?:1[05]0|35)|20[-x](?:1[24]|24|60?|9)0|25[-x]125|60[-x](?:60?|8)0|80[-x]150)|2(?:00[-x][13]0|34[-x](?:6|1[20])|40[-x](?:35|40)|50[-x]25|70[-x]6)0|3(?:00[-x](?:25|60)0|36[-x]280|80[-x]60|92[-x]72)|4(?:00[-x]40|[78]0[-x]60|68[-x](?:15|[68]0))|600[-x](?:10|24)0|7(?:00[-x][67]|28[-x][69])0|8(?:0(?:[-x]15|0[-x]60)|8[-x](?:15|3[123])))\D/
 /\W(?:a(?:lexa|tdmt|twola)|qksrv|zedo|2o7|cjt1|i(?:4o|entry|vwbox)|d(?:imaso|vlabs)|eproof|falkag|revsci|tacoda)\./
 /\W(?:fuse|blog|php|sub|flash|smart|central|web)ads?\./
@@ -219,7 +219,6 @@
 *//xbn.ru/
 *//yadro.ru/
 */counted/
-*/counter/
 */ctxtlink/
 */dontblockthis/
 */ebayinternalpromos/
@@ -651,7 +650,6 @@ informer.cyberstyle.ru
 infosec.ru/common/data/pub/images/articles/
 infotech-media.ru/*.js
 internetportal.ru/*.gif
-intersib.ab.ru/cgi-bin/count.cgi?id=
 ip2phrase.com/ip2phrase.asp?
 itotal.ru/images/itotal.gif
 jag.mews.ru
@@ -837,7 +835,6 @@ radio-tech.ru/pic/pages/
 rambler.ru/i.ban?
 rambler.ru/top100/
 rapidshare.com/img*/*logo*.gif
-rapidshare.ru/count/
 raptop.ru/images/img*.gif
 rate.7surf.ru/img.php?
 razbogatey.com/images/banner_
@@ -863,7 +860,6 @@ rrru.ru/img.php?
 rssnewser.ru/add
 rssportal.ru/getinformer.php?
 ru-top.net/img/
-rusbrowse.ru/counter.php?
 ruscontext.com/
 ruvideo.net/obzor/
 ruwm.ru/links.php?
@@ -1030,7 +1026,6 @@ widgeo.net/compteur.php?
 widgets.amung.us
 widgets.fotocash.ru
 wieistmeineip.de/ip-address/
-wmlink.ru/counter.php
 wmlink2008.info/
 wmmail.ru/images/wm.gif
 wmplace.ru/place.php?
