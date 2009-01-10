@@ -56,13 +56,13 @@
 /[\W_]banner(?:co(?:de|unt)|_?click|div|bg|(id)?=|\d+(?!(\.swf|\w+))|-rotation|-?ad)(?!(?:_|.*\.(?:png|htm)))/
 /[^a-z](?:partners?|promo|sponsors?)[^a-z]/
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/
+/[/_-]ad[svjx\d]\?/
 /\/ad[sv]?(?:graphics|i?frame|manager|works?|p(?:eeps|ro))\//
 /\/ban+(?:er)?s?\d*[./]/
 /\/count(?:ers?)?[.?/]/
-/\D(?:1(?:00[-x](?:1[05]0|35)|2[05][-x](?:1[24]|24|60?|9)0|60[-x](?:60?|8)0|80[-x]150)|2(?:00[-x][13]0|34[-x](?:6|1[20])|40[-x](?:35|40)|50[-x]25|70[-x]6)0|3(?:00[-x](?:25|60)0|36[-x]280|80[-x]60|92[-x]72)|4(?:00[-x]40|[78]0[-x]60|68[-x](?:15|[68]0))|600[-x](?:10|24)0|7(?:00|28)[-x][679]0|8(?:0(?:[-x]15|0[-x]60)|8[-x](?:15|3[123])))\D/
+/\D(?:1(?:[05]0[-x](?:1[05]0|3[05]0?)|2[05][-x](?:1[24]|24|60?|9)0|60[-x](?:60?|8)0|80[-x]150)|2(?:00[-x][13]0|34[-x](?:6|1[20])|40[-x](?:35|40)|50[-x]25|70[-x]6)0|3(?:00[-x](?:25|60)0|36[-x]280|80[-x]60|92[-x]72)|4(?:00[-x]40|[78]0[-x]60|68[-x](?:15|[68]0))|600[-x](?:10|24)0|7(?:00|28)[-x][679]0|8(?:0(?:[-x]15|0[-x]60)|8[-x](?:15|3[123])))\D/
 /\W(?:a(?:lexa|tdmt|twola)|qksrv|zedo|2o7|cjt1|i(?:4o|entry|vwbox)|d(?:imaso|vlabs)|eproof|falkag|revsci|tacoda)\./
 /\W(?:fuse|blog|php|sub|flash|smart|central|web)ads?\./
-/\Wad[svjx\d]\?/
 
 ! = Развёрнутые фильтры ==========================
 
@@ -93,6 +93,8 @@
 ##A[href*="click2go.ru/?id="]
 ##A[href*="http://filepost.ru?page="]
 ##A[href*="http://free.getcd.ru/?r"]
+!Реклама сайта флэш-игрушек.
+##DIV[style="border-top: 3px solid rgb(185, 224, 239); background-color: rgb(225, 241, 255);"]
 #*(style=border-width: 0px; height: 31px; width: 88px;)
 #A(href*=/topsites.)
 #A(href*=grand-casino.com)
@@ -120,6 +122,7 @@
 
 ! = Общие фильтры ================
 
+|http://adv.
 *//1pop.ru/
 *//1txt.ru/
 *//2da2.ru/
@@ -231,6 +234,7 @@
 */phpads/
 */popup/
 */printads/
+*/qzx.ru/gf/
 */reclama/
 */reklama/
 */shared/promos/
@@ -323,6 +327,7 @@
 .rax.ru/
 .rbe.ru/
 .refer.ru/
+.richbanner.ru/
 .rle.ru/
 .ru-board.com/board/temp
 .sape.ru/
@@ -936,6 +941,7 @@ static.exaccess.ru/asp/static_script.asp?
 static.feed.rbc.ru/rbc/logical/$subdocument
 static.globalstars.ru/static/*.js
 static.oper.ru/data/rennabs/
+static.pornolab.net/00
 static.terrhq.ru/torrents/
 static.torrents.ru/00
 stb.msn.com/i
@@ -1122,6 +1128,16 @@ fishki.net##DIV#line + TABLE TR:first-child > TD:last-child > SCRIPT[src*="xajax
 fishki.net##DIV#line + TABLE TR:first-child > TD:last-child > SCRIPT[src*="xajax"] + TABLE + BR + TABLE
 fishki.net##DIV[id^="medialand_adland"] + DIV.block
 fishki.net#IFRAME
+fullgames.ru##DIV#footer + TABLE TD > DIV + * + DIV#ms
+fullgames.ru##DIV#footer + TABLE TD#left > CENTER
+fullgames.ru##DIV#footer + TABLE TD#main > CENTER:first-child
+fullgames.ru##DIV#footer + TABLE TD#main > INDEX > CENTER
+fullgames.ru#DIV(id=footer)
+fullgames.ru#DIV(id=jbe_top)
+fullgames.ru#DIV(id=rtn4plentasf)
+fullgames.ru##DIV#up + TABLE TD#right
+game-torrent.info/forum/$object
+gelbooru.com#DIV(id^=note-box)
 goldenbank.kiev.ua##BODY > TABLE TABLE:first-child + * + TABLE DIV:first-child + * + TABLE.Verdana10 TD:first-child + * + * + TD:last-child
 goldenbank.kiev.ua#TABLE(class=mag_tab)
 hdtracker.ru##TD[width="100%"] + TD[width="160"][valign="top"]
@@ -1206,10 +1222,6 @@ rian.ru#A(href=http://www.glomu.ru/)
 rpgcodex.net##CENTER > IFRAME
 ru-board.com#A(href^=http://filepost.ru?page=)
 russianews.ru##TD.chapterbans[width="15%"]:last-child
-samforum.ws##DIV.page > DIV > BR + TABLE.tborder > TBODY > TR > TD[class="alt1"][width="100%"]:first-child
-samforum.ws##DIV.page > DIV > DIV > TABLE.tborder > TBODY > TR > TD[align="center"][class="alt1"]:first-child
-samforum.ws##DIV.page > DIV:first-child > DIV:first-child + TABLE + BR + TABLE.tborder
-samforum.ws#DIV(class=quickajaxrating)
 samlab.ws##A.name:not([href*="samlab.ws"])
 samlab.ws##DIV#left > DIV:first-child + * + *
 samlab.ws##DIV#left > DIV:first-child + * + * + *
