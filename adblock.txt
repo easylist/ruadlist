@@ -56,7 +56,7 @@
 /[\W_]banner(?:co(?:de|unt)|_?click|div|bg|(id)?=|\d+(?!(\.swf|\w+))|-rotation|-?ad)(?!(?:_|.*\.(?:png|htm)))/
 /[^a-z](?:partners?|promo|sponsors?)[^a-z]/
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/
-/[/_-]ad[svjx\d]\?/
+/[/_-]ad[svjx\d]s?(?:\.\w{2,3})?(?:\?|$)/
 /\/ad[sv]?(?:graphics|i?frame|manager|works?|p(?:eeps|ro))\//
 /\/ban+(?:er)?s?\d*[./]/
 /\/count(?:ers?)?[.?/]/
@@ -122,6 +122,7 @@
 
 ! = Общие фильтры ================
 
+|http://ads.
 |http://adv.
 *//1pop.ru/
 *//1txt.ru/
@@ -275,6 +276,7 @@
 .cleen.ru/
 .clickopen.ru/
 .clx.ru/
+.cpxinteractive.com/
 .dating-exchange.com
 .doubleclick.net/
 .ehoo.ru/knopka/
@@ -283,6 +285,7 @@
 .intellitxt.com/
 .ir.ru/
 .ket.ru/
+.kontera.com/
 .kpdn.ru/
 .lbe.ru/
 .lbn.ru/
