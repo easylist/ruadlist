@@ -113,8 +113,9 @@
 ! Скрываем теги А, выглядящие картинками
 #*(style=border-width: 0px; height: 31px; width: 88px;)
 ! Реклама сайта флэш-игрушек.
-##DIV[style="border-top: 3px solid rgb(185, 224, 239); background-color: rgb(225, 241, 255);"]
-
+#A(href^=http://www.gorodigr.ru/sys/mmoiframe.php?partner=)
+! Скрываем верхнюю полоску на юкоз-сайтах
+##DIV[id^="adBara"][style="height: 23px;"]:first-child
 ! = Общие фильтры ================
 
 .*.redtram.com/news/
@@ -342,8 +343,8 @@
 //wbn.ru/*
 //xbn.ru/*
 //yadro.ru/*
-/ads_iframe.
 /ads.php?
+/ads_iframe.
 /advert.
 /adview.
 /banman/*$subdocument,script
@@ -664,6 +665,7 @@ internetportal.ru/*.gif
 ip2phrase.com/ip2phrase.asp?
 itotal.ru/images/itotal.gif
 jag.mews.ru
+japan.leit.ru/button.php?
 jet3.ayola.net/cn.php?
 jigsaw.w3.org/css-validator/images/vcss
 js.dt00.net
@@ -866,6 +868,7 @@ rnd.yxo.ru
 rose.ixbt.com/
 rosinvest.com/informs/
 rotator.exler.ru/*?
+rotator.gameboss.ru/
 rpod.ru/i/b/
 rrru.ru/img.php?
 rssnewser.ru/add
@@ -931,7 +934,7 @@ spbfp.atlant.ru
 spbland.ru/bban/
 spylog.com/*?
 spytrack.tic.ru
-src.ucoz.net/img/bn/
+s*.ucoz.net/img/bn/
 src.ucoz.net/img/cp/
 stat.aport.ru/*?
 static.exaccess.ru/asp/static_script.asp?
