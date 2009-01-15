@@ -8,7 +8,7 @@
 !3!Заметили ложное срабатывание фильтра?
 !4!Хотите просто помочь проекту?
 !5!Появился вопрос по подписке?
-!6!Вы сегда можете написать в багтрекер: http://code.google.com/p/ruadlist/issues/entry  (Ctrl+c)
+!6!Вы всегда можете написать в багтрекер: http://code.google.com/p/ruadlist/issues/entry  (Ctrl+c)
 !7!Или на форум DemonSat.3dn.ru
 !8!===============================================
 
@@ -116,6 +116,9 @@
 #A(href^=http://www.gorodigr.ru/sys/mmoiframe.php?partner=)
 ! Скрываем верхнюю полоску на юкоз-сайтах
 ##DIV[id^="adBara"][style="height: 23px;"]:first-child
+! Скрываем рекламу на форумах, на myBB-движке
+##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
+
 ! = Общие фильтры ================
 
 .*.redtram.com/news/
