@@ -51,7 +51,7 @@
 
 ! = Фильтры по регулярным выражениям =============
 
-/affiliat(?:e(?!s\.quintura.com)|ion)/$~object
+/affiliat(?:e(?!s\.quintura.com)|ion)/$~object,~object-subrequest
 /[/&?_-](?:a(?:lexa|tdmt|twola)|qksrv|zedo|2o7|cjt1|i(?:4o|entry|vwbox)|d(?:imaso|vlabs)|eproof|falkag|revsci|tacoda)\./
 /[/&?_-](?:fuse|blog|php|sub|flash|smart|central|web)ads?\./
 /[/&?_-]ads?[-_]?(?:action|b(?:utler|rite|ottom|ox_?)|c(?:odes?\d*|ase|li(?:c?k|ent)s?)|f(?:arm|etch|low|rame|unction)|i(?:ma?ge?s?|d(?!=&))|l(?:ink|og|ayer)|m(?:an|entor|odule|osaic)|p(?:ops?|arse)|r(?:emote|evolver)|s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)|t(?:ech|rix|ype))(?!=?v(?:&|off))[\W_]/
@@ -62,7 +62,7 @@
 /\/ad[sv]?(?:graphics|i?frame|manager|works?|p(?:eeps|ro))\//
 /\/ban+(?:er)?s?\d*[./]/
 /\/count(?:ers?)?[.?/]/
-/\D(?:1(?:[05]0[-x]3[05]0?|2[05][-x](?:14|24|60?|9)0|60[-x](?:60|8)0|80[-x]150)|2(?:00[-x][13]0|34[-x](?:6|1[20])|40[-x](?:35|40)|70[-x]6)0|3(?:00[-x](?:25|60)0|36[-x]280|80[-x]60|92[-x]72)|4(?:00[-x]40|[78]0[-x]60|68[-x](?:15|[68]0))|600[-x](?:10|24)0|7(?:00|28)[-x][679]0|8(?:[08][-x](?:15|3[123])|00[-x]60))\D/
+/\D(?:1(?:[05]0[-x]3[05]0?|2[05][-x](?:14|24|60?)0|60[-x](?:60|8)0|80[-x]150)|2(?:00[-x][13]0|34[-x](?:6|1[20])|40[-x](?:35|40)|70[-x]6)0|3(?:00[-x](?:25|60)0|36[-x]280|80[-x]60|92[-x]72)|4(?:00[-x]40|[78]0[-x]60|68[-x](?:15|[68]0))|600[-x](?:10|24)0|7(?:00|28)[-x][679]0|8(?:[08][-x](?:15|3[123])|00[-x]60))\D/
 /banner/$object
 
 ! = Развёрнутые фильтры ==========================
