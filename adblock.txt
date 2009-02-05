@@ -1109,13 +1109,6 @@ zvukoff.ru/24open/*.jpg
 
 ! = Зачистка сайтов ==============================
 
-epidem.ru##A:not([href^="http://epidem.ru"]):not([href^="/"])
-s.tfile.ru/images/kfforex.jpg
-tfile.ru#IFRAME
-tfile.ru##TABLE#home_c TD#lcol:first-child
-tfile.ru#DIV(id$=_ban)
-smi2.ru/data/js/
-market.autoua.net##DIV#mabila-market:first-child
 2baksa.net##DIV.block_text[align="center"] + DIV.leftblock + DIV.block_text
 2baksa.net##TD:last-child > BR[clear="all"] + * + * + CENTER
 2baksa.net#A(href*=2baksa.net/go/go.php?http://voob.ru)
@@ -1123,12 +1116,10 @@ market.autoua.net##DIV#mabila-market:first-child
 2baksa.net#DIV(class=block_text)(align=center)
 2baksa.net/download/dre.gif
 3dnews.ru#DIV(class=mbanner)
-|http://www.ag.ru/jscodes/ushi_dyn/
-|http://www.ag.ru/images/
 ag.ru##DIV#rotating_banners:first-child
 ag.ru##DIV#upadbg2.mt5:last-child
-ag.ru##TR:first-child > TD:first-child > TABLE.mt3[width="100%"]:first-child
 ag.ru##TD.s2:first-child + TD.s[width="19%"][nowrap][align="center"]
+ag.ru##TR:first-child > TD:first-child > TABLE.mt3[width="100%"]:first-child
 ag.ru#DIV(id=top_campaign)(class=top_s_bar)
 allbest4free.ru#NOINDEX
 anime-zone.ru##BODY > NOINDEX:last-child
@@ -1146,9 +1137,9 @@ bash.org.ru##DIV:not(#ads) > DIV.q > DIV:not(.vote):first-child
 catode.ru##DIV > DIV#wrapper > DIV#right > DIV.block:last-child
 catode.ru##DIV#fixed > DIV#bottomWrapper > DIV.dashed
 catode.ru##DIV#wrapper > DIV#container > DIV#content > DIV#left > DIV.block:last-child
+citysmile.ru##TABLE[style="border: medium none rgb(255, 0, 0);"] > TBODY:first-child:last-child
 citysmile.ru#DIV(style=text-align: justify; font-size: 9pt;)
 citysmile.ru#TABLE(class=informer_skyfoto)
-citysmile.ru##TABLE[style="border: medium none rgb(255, 0, 0);"] > TBODY:first-child:last-child
 citysmile.ru/images/xxx
 copypast.ru#TD(id=fishi)
 copypast.ru/re/
@@ -1165,12 +1156,13 @@ dreamprogs.net##DIV.content DIV#lfwar:first-child
 dreamprogs.net##DIV.content DIV:first-child + NOINDEX
 dreamprogs.net#DIV(id=topbanner)
 dump.ru/themes/dump/images/*938x100
-emuparadise.org##TABLE#framework > TBODY:first-child > TR:first-child TABLE#index:last-child
 emuparadise.org##TABLE#framework > TBODY:first-child > TR:first-child > TD:last-child > P
+emuparadise.org##TABLE#framework > TBODY:first-child > TR:first-child TABLE#index:last-child
 emuparadise.org##TABLE#index P[align="center"]
 emuparadise.org##TABLE#index P[align="center"] + DIV[align="center"]
 emuparadise.org#DIV(id=rmiad)
 emuparadise.org#DIV(id=yo)
+epidem.ru##A:not([href^="http://epidem.ru"]):not([href^="/"])
 file-online.ru#DIV(class=block_text)
 fishki.net##A:not([href*="fishki.net"]):not([href*=".php?"]):not([href^="javascript:"]):not([href^="mailto:"]):not([href*=".livejournal."]):not([href="http://www.kolobok.wrg.ru"]) *:not([src*="bonus"]):not([src*="fishki_net"])
 fishki.net##BODY > TABLE TR:first-child > TD:first-child > DIV.baner_l + * + * + * + DIV.block
@@ -1179,8 +1171,8 @@ fishki.net##DIV#line + TABLE TR:first-child > TD:last-child > SCRIPT[src*="xajax
 fishki.net##DIV[id^="medialand_adland"] + DIV.block
 fishki.net#IFRAME
 forum.antichat.ru##DIV[align="center"]>A[href^="http"]
-forum.antichat.ru##TD:last-child > P[align="center"]
 forum.antichat.ru##TD.alt1Active > SPAN[style="float: right;"] > A[href^="http"]
+forum.antichat.ru##TD:last-child > P[align="center"]
 forum.antichat.ru/$image,object
 fullgames.ru##DIV#footer + TABLE TD > DIV + * + DIV#ms
 fullgames.ru##DIV#footer + TABLE TD#left > CENTER
@@ -1204,12 +1196,11 @@ hotcharts.ru##TABLE.archive + NOINDEX
 hotcharts.ru#A(href^=http://li.ru/go?)
 hotcharts.ru#DIV(class=comment)
 hotcharts.ru#DIV(class^=text_ad_)
-russianews.ru/img/b/
 imagereverb.com#IFRAME
 interfilm.nu##TABLE + TABLE + TABLE + TABLE + TABLE + TABLE + TABLE *[align="center"]
-itnews.com.ua##TR + * > TD[bgcolor="#ebebeb"][style="height: 96px;"]:first-child
 itc.ua#DIV(class=b240x350)
 itc.ua#DIV(id=ad_top)
+itnews.com.ua##TR + * > TD[bgcolor="#ebebeb"][style="height: 96px;"]:first-child
 kinobaza.net##*[width="600"] DIV
 kinobaza.net##BODY > DIV[style="font-family: tahoma; padding-top: 4px;"]
 kinobaza.net##TABLE DIV.story:last-child
@@ -1224,12 +1215,15 @@ livejournal.com#*(class*=-adv)
 livejournal.com#*(class^=adv)
 livejournal.com#DIV(class^=ljad)
 lostfilm.tv/vision/
+macovod.net#DIV(id=top-band-2)
+macovod.net/ads/
 mail.google.com#DIV(class=XoqCub V3vJRb)
 mail.google.com#DIV(class=yxEQwb)
 mail.ru##DIV#agentToolbarId.agentToolBar[style]
 mail.ru#DIV(id=eurosport)
 mail.ru#DIV(id=lite_top_banner)
 mail.ru#TABLE(class=text_adv)
+market.autoua.net##DIV#mabila-market:first-child
 maxnet.ua##A > IMG[width="88"]
 mozilla-russia.org##SPAN[ID^="modex"][style="font-size: 80%;"]:last-child
 mozilla-russia.org#DIV(id$=Col_advC)
@@ -1253,19 +1247,19 @@ ochevidec.net##TABLE.moduletable:first-child + * + * + * + TABLE
 ochevidec.net##TD.topleft > DIV:last-child
 ochevidec.net#IFRAME
 overclockers.ru##A[target="_blank"] > IMG[width="468"][height="60"]
-overclockers.ru##BODY > DIV[align="center"]
 overclockers.ru##BODY > DIV:first-child + * + TABLE[width="100%"][height="72"]
+overclockers.ru##BODY > DIV[align="center"]
 overclockers.ru##BODY > TABLE[width="100%"] > TBODY > TR > TD[width="12%"]:first-child + TD + TD
-overclockers.ru##DIV.menu > DIV:first-child + * + * + * + * + DIV
 overclockers.ru##DIV.menu > DIV:first-child + * + * + * + * + * + DIV
+overclockers.ru##DIV.menu > DIV:first-child + * + * + * + * + DIV
 overclockers.ru##DIV.nou CENTER > TABLE
+overclockers.ru##P > TABLE[width="100%"]:first-child
 overclockers.ru#IFRAME
-overclockers.ru/images/*_logo.*
-overclockers.ru/images/logo_*.*
+overclockers.ru#TABLE(width=100%)(height=67)
 overclockers.ru/images/$object
 overclockers.ru/images/*x60.*
-overclockers.ru##P > TABLE[width="100%"]:first-child
-overclockers.ru#TABLE(width=100%)(height=67)
+overclockers.ru/images/*_logo.*
+overclockers.ru/images/logo_*.*
 ozon.ru/graphics/*/*.swf
 ozon.ru/graphics/img/
 ozon.ru/graphics/img_ban/
@@ -1291,6 +1285,8 @@ rbc.ru##DIV.otherBlocks > DIV#copyrights + DIV#counters
 rian.ru#A(href=http://www.glomu.ru/)
 rpgcodex.net##CENTER > IFRAME
 russianews.ru##TD.chapterbans[width="15%"]:last-child
+russianews.ru/img/b/
+s.tfile.ru/images/kfforex.jpg
 samlab.ws##A.name:not([href*="samlab.ws"])
 samlab.ws##DIV#left > DIV:first-child + * + *
 samlab.ws##DIV#left > DIV:first-child + * + * + *
@@ -1315,6 +1311,7 @@ sfw.org.ua##CENTER > NOINDEX
 sfw.org.ua##TD.tab-links > NOINDEX
 sfw.org.ua##TR:first-child + TR > TD[valign="top"] > TABLE:first-child + * + * + TABLE
 slo.ru##CENTER > TABLE:first-child:last-child *
+smi2.ru/data/js/
 soft-best.ws##DIV#dle-content > DIV.news
 soft-best.ws##NOINDEX:first-child
 soft-best.ws##TD.col_l > TABLE TABLE:first-child + * + * + * + * + * + * + TABLE
@@ -1335,6 +1332,9 @@ soft-teleport.ru#TABLE(id=table46)
 soft-teleport.ru#TABLE(id=table6)
 soft-teleport.ru#TABLE(id=table65)
 softodrom.ru/scr/begun.php?
+tfile.ru##TABLE#home_c TD#lcol:first-child
+tfile.ru#DIV(id$=_ban)
+tfile.ru#IFRAME
 torrents.ru##DIV#page_footer > TABLE[style="margin: 8px auto 6px;"]
 torrents.ru##TD#sidebar1 DIV.tCenter > FORM
 torrents.ru##TR#f-11:last-child
@@ -1386,4 +1386,6 @@ zhmak.info#NOINDEX
 |http://samlab.ws/*.js
 |http://samlab.ws/*.swf
 |http://samlab.ws/file
+|http://www.ag.ru/images/
+|http://www.ag.ru/jscodes/ushi_dyn/
 |http://www.anode.ru/*.swf
