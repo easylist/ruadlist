@@ -65,25 +65,6 @@
 /\D(?:1(?:[05]0[-x]3[05]0?|2[05][-x](?:14|24|60?)0|60[-x](?:60|8)0|80[-x]150)|2(?:00[-x][13]0|34[-x](?:6|1[20])|40[-x](?:35|40)|70[-x]6)0|3(?:00[-x](?:25|60)0|36[-x]280|80[-x]60|92[-x]72)|4(?:00[-x]40|[78]0[-x]60|68[-x](?:15|[68]0))|600[-x](?:10|24)0|7(?:00|28)[-x][679]0|8(?:[08][-x](?:15|3[123])|00[-x]60))\D/
 /banner/$object
 
-! = Развёрнутые фильтры ==========================
-
-! Оригинал: /\.(?:ucoz\.(?:ru|com|org|net|de|ua|ko\.uk|kz|lv)|at\.ua|3dn\.ru|my1\.ru|clan\.su|moy\.su|do\.am)/stat/\d+/
-.3dn.ru/stat/
-.at.ua/stat/
-.clan.su/stat/
-.do.am/stat/
-.moy.su/stat/
-.my1.ru/stat/
-.ucoz.com/stat/
-.ucoz.de/stat/
-.ucoz.ko.uk/stat/
-.ucoz.kz/stat/
-.ucoz.lv/stat/
-.ucoz.net/stat/
-.ucoz.org/stat/
-.ucoz.ru/stat/
-.ucoz.ua/stat/
-
 ! = Общие CSS-фильтры ============================
 
 #A(href*=/topsites.)
@@ -130,6 +111,7 @@
 .1pop.ru/
 .1txt.ru/
 .2da2.ru/
+.3dn.ru/stat/
 .4smi.ru/
 .99z.ru/
 .abn.com.ua/*?
@@ -152,15 +134,18 @@
 .agro.net.ru/
 .all.by/*?
 .anastasia-international.com/
+.at.ua/stat/
 .bannerbank.ru/
 .begun.ru/
 .bigmir.net/?
 .chbn.ru/
+.clan.su/stat/
 .cleen.ru/
 .clickopen.ru/
 .clx.ru/
 .cpxinteractive.com/
 .dating-exchange.com
+.do.am/stat/
 .doubleclick.net/
 .ehoo.ru/knopka/
 .hitlist.ru
@@ -186,6 +171,8 @@
 .mn7.ru/
 .mn8.ru/
 .mn9.ru/
+.moy.su/stat/
+.my1.ru/stat/
 .mystat-in.net/
 .owebmoney.ru/
 .parimatch.com/jss/*.swf
@@ -236,6 +223,15 @@
 .tbn.ru/
 .tle.ru/
 .topcto.ru/*?
+.ucoz.com/stat/
+.ucoz.de/stat/
+.ucoz.ko.uk/stat/
+.ucoz.kz/stat/
+.ucoz.lv/stat/
+.ucoz.net/stat/
+.ucoz.org/stat/
+.ucoz.ru/stat/
+.ucoz.ua/stat/
 .vba.ru/
 .warlog.ru/
 .wbn.ru/
@@ -439,8 +435,8 @@ agronews.ru/images/*.gif
 agronews.ru/images/*.swf
 agrotv.ru/*.swf
 ajax.1tizer.com/?
-alfainternet.su/skokoskoko.js
 alfafilms.ru/images/*_baner_
+alfainternet.su/skokoskoko.js
 all-news.net.ua/informers/
 all-web.ru/button.php?id=
 allbest4free.ru/randompicture/
