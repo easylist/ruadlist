@@ -396,6 +396,7 @@
 /sponsImages/*
 /uicp.ru/?bn=
 /vendshow/*
+/vottbanner
 /xap.ru/*.js
 1-traf.net/
 13rus.ru/img/
@@ -1136,6 +1137,8 @@ zvukoff.ru/24open/*.jpg
 
 ! = Зачистка сайтов ==============================
 
+.sovsport.ru/banner-item/
+.sovsport.ru/ib
 2baksa.net##DIV.block_text[align="center"] + DIV.leftblock + DIV.block_text
 2baksa.net##TD:last-child > BR[clear="all"] + * + * + CENTER
 2baksa.net#A(href*=2baksa.net/go/go.php?http://voob.ru)
@@ -1203,7 +1206,6 @@ forum.antichat.ru##TD.alt1Active > SPAN[style="float: right;"] > A[href^="http"]
 forum.antichat.ru##TD:last-child > P[align="center"]
 forum.antichat.ru/$image,object
 forum.ru-board.com##BODY > CENTER
-i.ru-board.com/xmtmp/
 forum.ru-board.com##BODY > LINK:first-child + * + TABLE[width="100%"][height="67"]
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
 forums.overclockers.ru##BODY > A:first-child + TABLE[width="100%"][height="72"]
@@ -1230,9 +1232,10 @@ hotcharts.ru##TABLE.archive + NOINDEX
 hotcharts.ru#A(href^=http://li.ru/go?)
 hotcharts.ru#DIV(class=comment)
 hotcharts.ru#DIV(class^=text_ad_)
+i.ru-board.com/xmtmp/
 imagereverb.com#IFRAME
-interfilm.nu##TABLE + TABLE + TABLE + TABLE + TABLE + TABLE + TABLE *[align="center"]
 images.rambler.ru/upl/r2/
+interfilm.nu##TABLE + TABLE + TABLE + TABLE + TABLE + TABLE + TABLE *[align="center"]
 itc.ua#DIV(class=b240x350)
 itc.ua#DIV(id=ad_top)
 itnews.com.ua##TR + * > TD[bgcolor="#ebebeb"][style="height: 96px;"]:first-child
@@ -1284,10 +1287,12 @@ ochevidec.net##TABLE.moduletable:first-child + * + * + * + * + * + TABLE
 ochevidec.net##TABLE.moduletable:first-child + * + * + * + TABLE
 ochevidec.net##TD.topleft > DIV:last-child
 ochevidec.net#IFRAME
+oper.ru#DIV(class=banners)
+oper.ru#DIV(id=onlinedengi)
 overclockers.ru##A[target="_blank"] > IMG[width="468"][height="60"]
-overclockers.ru##BODY > TABLE[width="100%"][height="72"]
 overclockers.ru##BODY > DIV[align="center"]
 overclockers.ru##BODY > TABLE[width="100%"] > TBODY > TR > TD[width="12%"]:first-child + TD + TD
+overclockers.ru##BODY > TABLE[width="100%"][height="72"]
 overclockers.ru##DIV.menu > DIV:first-child + * + * + * + * + * + DIV
 overclockers.ru##DIV.menu > DIV:first-child + * + * + * + * + DIV
 overclockers.ru##DIV.nou CENTER > TABLE
@@ -1370,8 +1375,6 @@ soft-teleport.ru#TABLE(id=table46)
 soft-teleport.ru#TABLE(id=table6)
 soft-teleport.ru#TABLE(id=table65)
 softodrom.ru/scr/begun.php?
-.sovsport.ru/banner-item/
-.sovsport.ru/ib
 tfile.ru##TABLE#home_c TD#lcol:first-child
 tfile.ru#DIV(id$=_ban)
 tfile.ru#IFRAME
@@ -1427,6 +1430,7 @@ zhmak.info#NOINDEX
 |http://samlab.ws/*.js
 |http://samlab.ws/*.swf
 |http://samlab.ws/file
+|http://static.oper.ru/onlinedengi/
 |http://www.ag.ru/images/
 |http://www.ag.ru/jscodes/ushi_dyn/
 |http://www.anode.ru/*.swf
