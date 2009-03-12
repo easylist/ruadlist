@@ -55,8 +55,6 @@
 
 ! = Фильтры по регулярным выражениям =============
 
-/affiliat(?:e(?!s\.quintura.com)|ion)/$~object,~object-subrequest
-/[/&?_-](?:a(?:lexa|tdmt|twola)|qksrv|zedo|2o7|cjt1|i(?:4o|entry|vwbox)|d(?:imaso|vlabs)|eproof|falkag|revsci|tacoda)\./
 /[/&?_-]ads?[-_]?(?:action|b(?:utler|rite|ottom|ox_?)|c(?:odes?\d*|ase|li(?:c?k|ent)s?)|f(?:arm|etch|low|rame|unction)|i(?:ma?ge?s?|d(?!=&))|l(?:ink|og|ayer)|m(?:an|entor|odule|osaic)|p(?:ops?|arse)|r(?:emote|evolver)|s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)|t(?:ech|rix|ype))(?!=?v(?:&|off))[\W_]/
 /[/&?_-]banner(?:co(?:de|unt)|_?click|div|bg|(id)?=|\d+(?!(\.swf|\w+))|-rotation|-?ad)(?!(?:_|.*\.(?:png|htm)))/
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
