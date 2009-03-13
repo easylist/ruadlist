@@ -11,24 +11,29 @@
 ##A[href*="adult"][href*="foto"]
 ##A[href*="adult"][href*="film"]
 ##A[href*="adult"][href*="video"]
+##A[href*="adult"][href*="category"]
 ##A[href*="cekc"][href*="foto"]
 ##A[href*="cekc"][href*="film"]
 ##A[href*="cekc"][href*="video"]
+##A[href*="cekc"][href*="category"]
 ##A[href*="droch"][href*="foto"]
 ##A[href*="droch"][href*="film"]
 ##A[href*="droch"][href*="video"]
 ##A[href*="ero"][href*="foto"]
 ##A[href*="ero"][href*="film"]
 ##A[href*="ero"][href*="video"]
+##A[href*="eroti"][href*="category"]
 ##A[href*="intim"][href*="foto"]
 ##A[href*="intim"][href*="film"]
 ##A[href*="intim"][href*="video"]
+##A[href*="intim"][href*="category"]
 ##A[href*="hentai"][href*="foto"]
 ##A[href*="hentai"][href*="film"]
 ##A[href*="hentai"][href*="video"]
 ##A[href*="hentaj"][href*="foto"]
 ##A[href*="hentaj"][href*="film"]
 ##A[href*="hentaj"][href*="video"]
+##A[href*="hentaj"][href*="category"]
 ##A[href*="hentay"][href*="foto"]
 ##A[href*="hentay"][href*="film"]
 ##A[href*="hentay"][href*="video"]
@@ -38,12 +43,14 @@
 ##A[href*="sex"][href*="foto"]
 ##A[href*="sex"][href*="film"]
 ##A[href*="sex"][href*="video"]
+##A[href*="sex"][href*="category"]
 ##A[href*="seks"][href*="foto"]
 ##A[href*="seks"][href*="film"]
 ##A[href*="seks"][href*="video"]
 ##A[href*="xxx"][href*="foto"]
 ##A[href*="xxx"][href*="film"]
 ##A[href*="xxx"][href*="video"]
+##A[href*="xxx"][href*="category"]
 /(?:(?:adult|cekc|droch|eroti|henta[ijy]|intim|porn|se(?:x|ks)|xxx).*){2,}/
 /(?:adult|cekc|droch|eroti|h(?:enta[ijy]|ustler)|intim|porn|se(?:x|ks)|xxx).*(?:fot(?:ok?|ki)|film|video)/
 /(?:fot(?:ok?|ki)|film|video).*(?:adult|cekc|droch|eroti|h(?:enta[ijy]|ustler)|intim|porn|se(?:x|ks)|xxx)/
@@ -61,10 +68,15 @@
 #*(href*=/xxx/)
 #*(href*=xxx-)
 #*(href*=-xxx)
+#A[href*="=adult"]
+#A[href*="=eroti"]
+#A[href*="=hentai"]
+#A[href*="=intim"]
+#A[href*="=sex"]
+#A[href*="=xxx"]
 эроти
 %D1%8D%D1%80%D0%BE%D1%82%D0%B8
-/erotik
-/erotic
+/eroti
 /porn
 /cekc
 /intim
@@ -92,8 +104,10 @@ xxx-
 #*(alt*= порно)
 #*(title^=порно)
 #*(title*= порно)
-#*(alt*=порну)
-#*(title*=порну)
+#*(alt^=порну)
+#*(alt*= порну)
+#*(title^=порну)
+#*(title*= порну)
 #*(alt*=хентай)
 #*(title*=хентай)
 !==========================
@@ -724,6 +738,7 @@ hrenvam.com.ru/
 tp://katafot.com/
 tp://15on1.com/
 tp://1nax.ru/
+tp://1zona.ru/
 tp://23-00.com/
 tp://3xvid.ru/
 tp://4ort.ru/
@@ -1482,6 +1497,7 @@ webweek.ru/
 wethotxx.com/
 whorehouse.ru/
 wowshemale.net/
+www.1zona.ru/
 www.busya.net/
 www.carol.ru/
 www.dork.ru/
@@ -1937,6 +1953,7 @@ ng.ru/images/2008-10-06/216786s.jpg
 #*(href*=://15on1.com)
 #*(href*=://18sexy.ru)
 #*(href*=://1nax.ru)
+#*(href*=://1zona.ru)
 #*(href*=://23-00.com)
 #*(href*=://3xvid.ru)
 #*(href*=://4ort.ru)
@@ -2696,6 +2713,7 @@ ng.ru/images/2008-10-06/216786s.jpg
 #*(href*=wethotxx.com)
 #*(href*=whorehouse.ru)
 #*(href*=wowshemale.net)
+#*(href*=www.1zona.ru)
 #*(href*=www.busya.net)
 #*(href*=www.carol.ru)
 #*(href*=www.dork.ru)
@@ -2759,6 +2777,7 @@ katafot.com##*
 18virgin.info##*
 1nax.ru##*
 1style.ru##*
+1zona.ru##*
 1xxxtv.net##*
 20porngirls.ru##*
 21stcucumber.com##*
@@ -3270,7 +3289,6 @@ housewives4free.net##*
 hqcity.com##*
 hqtub.ru##*
 hrenvam.com.ru##*
-tp://ogli.org##*
 hugebang.com##*
 hustler.com##*
 hvorost.ru##*
@@ -3509,6 +3527,7 @@ oboi.ohq.ru##*
 obscenethumbs.com##*
 odinplus.com##*
 odinplus.com.ru##*
+ogli.org##*
 ogurchik.com##*
 oh-provider.com##*
 ok.spbtown.ru##*
