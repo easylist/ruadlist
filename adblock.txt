@@ -100,6 +100,7 @@
 #DIV(id=fp_banner)
 #DIV(id=radeant)
 #DIV(id^=ad3fun)
+##DIV[id^="adBara"]
 #DIV(id^=MarketGid)
 #DIV(id^=novoteka)
 #DIV(id^=rdminfrm_)
@@ -112,8 +113,6 @@
 #*(style=border-width: 0px; height: 31px; width: 88px;)
 ! Реклама сайта флэш-игрушек.
 #A(href^=http://www.gorodigr.ru/sys/mmoiframe.php?partner=)
-! Скрываем верхнюю полоску на юкоз-сайтах
-##DIV[id^="adBara"][style="height: 23px;"]:first-child
 ! Скрываем рекламу на форумах, на myBB-движке
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
 
