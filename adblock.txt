@@ -18,18 +18,11 @@
 @@.wikipedia.org/
 ! Картинки в гуглопоиске всегда отображаем
 @@.google.*/images?
-! Фреймы с результатами поиска для партнёров Гугла тоже
-@@google.*/cse?cx=partner$subdocument
-! Ответы гугла не трогаем, там есть ложные срабатывания, а рекламы вроде как нет
-@@otvety.google.ru/
 ! Прочие исключения
 @@.admin.tomsk.ru/www/core1.nsf/
-@@.ng.ru/images/right_banners/
-@@/home.corbina.ru/*
 @@deviantart.com/global/difi/?$subdocument
 @@forum.antichat.ru/*/
 @@google.ru/ig|
-@@images.kaspersky.com/*/promo
 @@steampowered.com
 @@zaycev.net/m3_images/i/
 @@|http://belocal.de/templates/belocal3/partner/nextgen/
@@ -39,15 +32,13 @@
 @@|http://gallery-*.usercash.com/
 @@|http://ifolder.ru/random/images/?
 @@|http://kawaii-radio.net/banners/
-@@|http://mailstatic.yandex.net/*.js
 @@|http://pics.rbc.ru/img/$image
 @@|http://pics.rbc.ru/quote/
 @@|http://recordings.ru/mperl/new/popup/_frames.base.pl?r=
 @@|http://rp5.ru/informer/
-@@|http://smsdengi.com/partners_js.php?
 @@|http://stg.odnoklassniki.ru/res/
 @@|http://technosila.ru/webroot/delivery/images/goods/
-@@|http://video.sportbox.ru/*/PromoPlayer.xap|
+@@|http://video.izv.user.madbanner.ru/crossdomain.xml
 @@|http://www.8bitpeoples.com/
 @@|http://www.animenfo.com/radio/*.js
 @@|http://www.vorbis.com/images/banners/
@@ -57,7 +48,6 @@
 /[/&?_-]ads?[-_]?(?:action|b(?:utler|rite|ottom|ox_?)|c(?:odes?\d*|ase|li(?:c?k|ent)s?)|f(?:arm|etch|low|rame|unction)|i(?:ma?ge?s?|d(?!=&))|l(?:ink|og|ayer)|m(?:an|entor|odule|osaic)|p(?:ops?|arse)|r(?:emote|evolver)|s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)|t(?:ech|rix|ype))(?!=?v(?:&|off))[\W_]/
 /[/&?_-]banner(?:co(?:de|unt)|_?click|div|bg|(id)?=|\d+(?!(\.swf|\w+))|-rotation|-?ad)(?!(?:_|.*\.(?:png|htm)))/
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
-/[^a-z](?:partners?|promo|sponsors?)[^a-z]/
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/
 /\/ad[svjx0-9]?\//
 /\/ban+(?:er)?s?\d*[./]/
