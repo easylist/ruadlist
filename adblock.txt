@@ -32,6 +32,9 @@
 @@|http://exchengine.ru/bare/export/js.html?
 @@|http://gallery-*.usercash.com/
 @@|http://ifolder.ru/random/images/?
+@@|http://img.ngs.ru/*/i/
+@@|http://img.ngs.ru/*/img/
+@@|http://img.ngs.ru/*/upload
 @@|http://kawaii-radio.net/banners/
 @@|http://pics.rbc.ru/img/$image
 @@|http://pics.rbc.ru/quote/
@@ -1336,8 +1339,7 @@ i.ru-board.com/xmtmp/
 imagereverb.com#IFRAME
 images.google.com,images.google.ru##TABLE[style^="padding: 8px; background: rgb(255, 248, 221) none repeat scroll 0%"]
 images.rambler.ru/upl/r2/
-img.ngs.ru$object
-img.ngs.ru/*/*/124*/*.gif
+img.ngs.ru/$image,objekt,background
 itc.ua#DIV(class=b240x350)
 itc.ua#DIV(id=ad_top)
 itnews.com.ua##TR + * > TD[bgcolor="#ebebeb"][style="height: 96px;"]:first-child
@@ -1396,6 +1398,12 @@ myzuka.ru/schemes/default/images/bsum.jpg
 newestsoft.com##DIV.mk_body_bg > TABLE[bgcolor="#ffffff"][style="border: 1px solid rgb(193, 209, 253);"]
 newestsoft.com#A(href=http://reviewsoft.ru/)
 newestsoft.com/images/*x90$image
+ngs.ru##*[class*="banner"]
+ngs.ru#*(id=advblock)
+ngs.ru#*(class*=adv-top)
+ngs.ru#*(class*=ban-top)
+ngs.ru##DIV.adv
+ngs.ru##DIV[align="center"] > NOINDEX
 nn.ru##DIV#rPanPad > DIV#rPan
 nn.ru#A(href*=nn.ru/nnbs.php?id=)
 nn.ru/nnbs.php?id=
