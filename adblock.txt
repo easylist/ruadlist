@@ -58,14 +58,14 @@
 /[/&?_-]ads?[-_]?p(?:ops?|arse)[\W_]/
 /[/&?_-]ads?[-_]?r(?:emote)[\W_]/
 /[/&?_-]ads?[-_]?s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)[\W_]/
-/[/&?_-]ads?[-_]?t(?:ech|rix|ype))[\W_]/
+/[/&?_-]ads?[-_]?t(?:ech|rix|ype)[\W_]/
 ! Разделено на части /[/&?_-]banner(?:co(?:de|unt)|_?click|div|bg|(id)?=|\d+(?!(\.swf|\w+))|-rotation|-?ad)(?!(?:_|.*\.(?:png|htm)))/
 /[/&?_-]bannerco(?:de|unt)/
 /[/&?_-]banner_?click/
 /[/&?_-]banner(?:div|bg)/
 /[/&?_-]banner(id)?=|\d+(?!(\.swf|\w+))/
 /[/&?_-]banner-rotation/
-/[/&?_-]banner-?ad)/
+/[/&?_-]banner-?ad/
 ! Разделение требуется для сбора статистики, так как правила перегружены.
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/
