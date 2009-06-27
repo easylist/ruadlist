@@ -64,7 +64,7 @@
 /[/&?_-]banner_?click/
 /[/&?_-]banner(?:div|bg)/
 /[/&?_-]banner(id)?=/
-/[/&?_-]banner\d+(?!(\.swf|\w+))/
+/[/&?_-]banner\d+(?!\w)/$~object
 /[/&?_-]banner-rotation/
 /[/&?_-]banner-?ad/
 ! Разделение требуется для сбора статистики, так как правила перегружены.
@@ -528,7 +528,7 @@ azerimake.km.ru
 b.megaban.com.ua/
 b2bcontext.ru
 b81x63nc.ws.md
-banner$object
+banner$object,object_subrequest,other
 banner.lviv.ua
 banniere
 bans.bride.ru
