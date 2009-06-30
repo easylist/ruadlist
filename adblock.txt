@@ -64,7 +64,7 @@
 /[/&?_-]banner_?click/
 /[/&?_-]banner(?:div|bg)/
 /[/&?_-]banner(id)?=/
-/[/&?_-]banner\d+(?!\w)/$~object
+/[/&?_-]banner\d+(?!\w)/$~object,`object_subrequest,`other
 /[/&?_-]banner-rotation/
 /[/&?_-]banner-?ad/
 ! Разделение требуется для сбора статистики, так как правила перегружены.
