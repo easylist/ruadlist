@@ -17,36 +17,40 @@
 @@.wikipedia.org/
 ! Картинки в гуглопоиске всегда отображаем
 @@.google.*/images?
-! Прочие исключения
+! Блокирует: Антитоп
 @@.8bitpeoples.com/
-@@.admin.tomsk.ru/www/core1.nsf/
-@@.animenfo.com/radio/*.js
+! Блокирует: Антисчётчик
+@@games-tv.ru/tst/counter.php?
+! Блокирует: Антибаннер
+@@.admin.tomsk.ru/
 @@.sonypictures.com/
-@@.vorbis.com/images/banners/
-@@/games-tv.ru/tst/counter.php?
-@@deviantart.com/global/difi/?$subdocument
-@@forum.antichat.ru/*/
-@@google.ru/ig|
-@@steampowered.com
+@@kawaii-radio.net/banners/
+@@vorbis.com/images/banners/
 @@video.*.user.madbanner.ru/
-@@zaycev.net/m3_images/i/
-@@zaycev.net/m3_images/mp3player.swf?
-@@|http://belocal.de/templates/belocal3/partner/nextgen/
-@@|http://domdot.ru/merge?
-@@|http://earth.google.com/
-@@|http://exchengine.ru/bare/export/js.html?
-@@|http://gallery-*.usercash.com/
-@@|http://ifolder.ru/random/images/?
+! Блокирует: Антиразмер
+@@|http://rp5.ru/informer/
+! Блокирует: pics.rbc.ru/$image,object
+@@|http://pics.rbc.ru/img/$image
+@@|http://pics.rbc.ru/quote/
+! Блокирует: img.ngs.ru/$image,object,background
 @@|http://img.ngs.ru/*/i/
 @@|http://img.ngs.ru/*/images/
 @@|http://img.ngs.ru/*/img/
 @@|http://img.ngs.ru/*/upload
-@@|http://kawaii-radio.net/banners/
-@@|http://pics.rbc.ru/img/$image
-@@|http://pics.rbc.ru/quote/
-@@|http://recordings.ru/mperl/new/popup/_frames.base.pl?r=
-@@|http://rp5.ru/informer/
+! Блокирует: zaycev.net/m3_images/
+@@zaycev.net/m3_images/i/
+@@zaycev.net/m3_images/mp3player.swf?
+! Случайные срабатывания на хэш-имена
+@@|http://gallery-*.usercash.com/
+! Прочие исключения
+@@deviantart.com/global/difi/?$subdocument
+@@google.ru/ig|
+@@|http://earth.google.com/
+@@|http://ifolder.ru/random/images/?
 @@|http://stg.odnoklassniki.ru/res/
+! Вероятно больше не требуются
+@@|http://belocal.de/templates/belocal3/partner/nextgen/
+@@|http://exchengine.ru/bare/export/js.html?
 @@|http://technosila.ru/webroot/delivery/images/goods/
 
 ! = Фильтры по регулярным выражениям =============
@@ -72,10 +76,14 @@
 /[/&?_-]banner-?ad/
 ! Разделение требуется для сбора статистики, так как правила перегружены.
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
-/[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet
 /\/ad[svjx0-9]\//
+! Антитоп
+/[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet
+! Антибаннер
 /\/ban+(?:er)?s?\d*[./]/
+! Антисчётчик
 /\/count(?:ers?)?[.?/]/
+! Антиразмер (блокировка баннеров по размеру указанному в имени файла)
 /\D(?:1(?:[05]0[-_x]3[05]0?|2[05][-_x](?:14|24|60?)0|60[-_x](?:60|8)0|80[-_x]150)|2(?:00[-_x][13]0|34[-_x](?:6|1[20])|40[-_x](?:35|40)|70[-_x]6)0|3(?:00[-_x](?:25|60)0|36[-_x]280|80[-_x]60|92[-_x]72)|4(?:00[-_x]40|[78]0[-_x]60|68[-_x](?:15|[68]0))|600[-_x](?:10|24)0|7(?:[60]0|[26]8)[-_x][679]0|8(?:[08][-_x](?:15|3[123])|00[-_x]60))\D/$domain=~fcenter.ru
 
 ! = Общие CSS-фильтры ============================
@@ -425,8 +433,8 @@
 /peelad/*$script
 /phpads/*
 /poptraf.
-/popup.js$domain=~yandex.ru|~one.lv
-/popup/*
+/popup.js$domain=~yandex.ru|~one.lv|~domdot.ru
+/popup/*$domain=~recordings.ru
 /popuptraf
 /printads/*
 /promos/*$object
@@ -1010,6 +1018,7 @@ s.holder.com.ua/
 s.holm.ru/stat/
 s.ladoshki.com/p/a/
 s.ladoshki.com/pics/shirts/
+s.recs.ru/b/
 sat-digest.com/*.swf
 sat-digest.com/agc/*.gif
 satcore.info/design/satcore_knopka*.gif
@@ -1234,10 +1243,11 @@ zvukoff.ru/24open/*.jpg
 |http://ads.
 |http://ads1.
 |http://adv.
+
 ! = Зачистка сайтов =============================
 .sovsport.ru/banner-item/
 .sovsport.ru/ib
-2baksa.net,2baksa.ws#A(href=http://www.filecontrol.ru/)
+/images/mid/h-anons.$domain=hardwareportal.ru|hwp.ru
 2baksa.net,2baksa.ws##A[href="http://kf-forex.ru/soft.php?from=2baksa"] + FONT[size="2"]
 2baksa.net,2baksa.ws##A[href="http://www.filecontrol.ru/"] + * + P
 2baksa.net,2baksa.ws##A[href="http://www.gsm-poisk.ru"] + * + * + FONT[size="2"]
@@ -1247,6 +1257,7 @@ zvukoff.ru/24open/*.jpg
 2baksa.net,2baksa.ws##DIV[style="border-top: 2px solid rgb(225, 163, 71); margin-bottom: 5px;"] + TABLE[cellspacing="3"]
 2baksa.net,2baksa.ws##TABLE[width="500"][height="200"][border="0"]:first-child:last-child
 2baksa.net,2baksa.ws##TD[width="100"][valign="top"]:first-child + TD
+2baksa.net,2baksa.ws#A(href=http://www.filecontrol.ru/)
 2baksa.net,2baksa.ws#A(href=http://www.gsm-poisk.ru)
 2baksa.net,2baksa.ws#A(href^=http://www.2baksa.net/go/go.php?)
 2baksa.net,2baksa.ws#DIV(class=block_text)(align=center)
@@ -1254,9 +1265,9 @@ zvukoff.ru/24open/*.jpg
 2baksa.net/download/dre.gif
 3dnews.ru#DIV(class=mbanner)
 advs.gismeteo.com/
-ag.ru##DIV.newsbot.bbg + BR + CENTER
 ag.ru##DIV#rotating_banners:first-child
 ag.ru##DIV#upadbg2.mt5:last-child
+ag.ru##DIV.newsbot.bbg + BR + CENTER
 ag.ru##TD.s2:first-child + TD.s[width="19%"][nowrap][align="center"]
 ag.ru##TR:first-child > TD:first-child > TABLE.mt3[width="100%"]:first-child
 ag.ru#DIV(id=top_campaign)(class=top_s_bar)
@@ -1291,9 +1302,9 @@ cwer.ru/misc/$object
 cyber39.ru##DIV#fp_adv + * + * + DIV[align="center"]
 cyber39.ru##DIV#top:first-child
 cyber39.ru##DIV.block:last-child
-digital.ru#DIV(class*=Banner)
 depositfiles.com##DIV#download_url + DIV[style="margin: 2em auto 0pt; width: 300px;"]
 depositfiles.com#DIV(id^=zhlobam_net)
+digital.ru#DIV(class*=Banner)
 dreamprogs.net##DIV#container > DIV#left > DIV.block:last-child
 dreamprogs.net##DIV#left > DIV:first-child + * + DIV
 dreamprogs.net##DIV.block_right:not(:last-child)
@@ -1319,18 +1330,15 @@ fishki.net##DIV#line + TABLE TR:first-child > TD:last-child > SCRIPT[src*="xajax
 fishki.net##DIV#line + TABLE TR:first-child > TD:last-child > SCRIPT[src*="xajax"] + TABLE + BR + TABLE
 fishki.net##DIV[id^="medialand_adland"] + DIV.block
 fishki.net#IFRAME
-forum.antichat.ru##DIV[align="center"]>A[href^="http"]
-forum.antichat.ru##TD.alt1Active > SPAN[style="float: right;"] > A[href^="http"]
-forum.antichat.ru##TD:last-child > P[align="center"]
-forum.antichat.ru/$image,object
+forum.antichat.ru/bn/
 forum.ru-board.com##BODY > CENTER TABLE:first-child
 forum.ru-board.com##BODY > LINK:first-child + * + TABLE[width="100%"][height="67"]
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
 forums.overclockers.ru##BODY > A:first-child + TABLE[width="100%"][height="72"]
-foto.rambler.ru#DIV(class=pi_b2)
 foto.mail.ru#DIV(class=brd)
-freesoft.ru/images/
+foto.rambler.ru#DIV(class=pi_b2)
 freesoft.ru#A(href^=/clicks/click.php?adv=)
+freesoft.ru/images/
 fullgames.ru##DIV#footer + TABLE TD > DIV + * + DIV#ms
 fullgames.ru##DIV#footer + TABLE TD#left > CENTER
 fullgames.ru##DIV#footer + TABLE TD#main > CENTER:first-child
@@ -1348,9 +1356,6 @@ google.com,google.ru#TABLE(id=mbEnd)
 habrahabr.ru#DIV(class=banner)
 hardwareportal.ru,hwp.ru#DIV(class*=tbann)
 hardwareportal.ru,hwp.ru#DIV(class^=promo)
-/images/mid/h-anons.$domain=hardwareportal.ru|hwp.ru
-upload/*/mega-announce$domain=hardwareportal.ru|hwp.ru
-upload/bx/*$domain=hardwareportal.ru|hwp.ru
 hdtracker.ru##TD[width="100%"] + TD[width="160"][valign="top"]
 hmn.ru##BODY > TABLE[width="100%"]:first-child
 hmn.ru##INDEX > CENTER:last-child > TABLE.m11[width="480"]
@@ -1399,9 +1404,9 @@ macovod.net/ads/
 mail.google.com##div[class~="oM"]
 mail.rambler.ru#DIV(id=banner-right)
 mail.ru##DIV#agentToolbarId.agentToolBar[style]
-mail.ru#DIV(class^=ban)
-mail.ru#DIV(class*=Game)
 mail.ru##DIV[id^="begunTable"]
+mail.ru#DIV(class*=Game)
+mail.ru#DIV(class^=ban)
 mail.ru#DIV(id=eurosport)
 mail.ru#DIV(id=lite_top_banner)
 mail.ru#TABLE(class=text_adv)
@@ -1411,8 +1416,8 @@ motonews.ru/ad/
 mozilla-russia.org##SPAN[ID^="modex"][style="font-size: 80%;"]:last-child
 mozilla-russia.org#DIV(id$=Col_advC)
 mozilla-russia.org/images/rek_header.png
-mskd.ru/img/*x*_
 mskd.ru##CENTER > B > FONT[color="red"]
+mskd.ru/img/*x*_
 mts.ru##DIV.container:first-child > TABLE.grid.nop
 mts.ru##DIV.visual_container.red:last-child
 muzoff.ru##BODY > SCRIPT:first-child + * + * + * + * + * + * + SCRIPT + TABLE[width="100%"]
@@ -1425,11 +1430,11 @@ newestsoft.com##DIV.mk_body_bg > TABLE[bgcolor="#ffffff"][style="border: 1px sol
 newestsoft.com#A(href=http://reviewsoft.ru/)
 newestsoft.com/images/*x90$image
 ngs.ru##*[class*="banner"]
-ngs.ru#*(id=advblock)
-ngs.ru#*(class*=adv-top)
-ngs.ru#*(class*=ban-top)
 ngs.ru##DIV.adv
 ngs.ru##DIV[align="center"] > NOINDEX
+ngs.ru#*(class*=adv-top)
+ngs.ru#*(class*=ban-top)
+ngs.ru#*(id=advblock)
 nn.ru##DIV#rPanPad > DIV#rPan
 nn.ru#A(href*=nn.ru/nnbs.php?id=)
 nn.ru/nnbs.php?id=
@@ -1540,6 +1545,7 @@ soft-free.ru#A(href=http://goldfin.ru)
 softodrom.ru/scr/begun.php?
 softoroom.net#DIV(id^=fo_cblock)
 softoroom.net/forex/
+tehnosila.ru##DIV#banner_street
 tfile.ru##TABLE#home_c TD#lcol:first-child
 tfile.ru#DIV(id$=_ban)
 tfile.ru#IFRAME
@@ -1561,6 +1567,8 @@ turist.rbc.ru#DIV(class=subCgoods)
 turist.ru#A(href=http://readme.ru/)
 turist.ru#DIV(class=subCgoods)
 tutu.ru##TD.plink:first-child:last-child
+upload/*/mega-announce$domain=hardwareportal.ru|hwp.ru
+upload/bx/*$domain=hardwareportal.ru|hwp.ru
 uploading.com#DIV(class=bb)
 uploading.com#DIV(class=membership_plans cl)
 video-clips.ru/images/sms240.gif
@@ -1589,10 +1597,10 @@ yandex.ru#DIV(id=banner)
 zaycev.net##TD[width="240"][valign="top"][align="center"]:last-child
 zaycev.net#A(href=http://chat.allsoch.ru/)
 zaycev.net#A(href=http://huyandex.com/)
+zaycev.net#A(href=http://kinogeroy.ru/)
+zaycev.net#A(href=http://www.iphone3g-club.ru/)
 zaycev.net#A(href^=http://mayki.zaycev.net)
 zaycev.net#A(href^=http://www.azbukas)
-zaycev.net#A(href=http://www.iphone3g-club.ru/)
-zaycev.net#A(href=http://kinogeroy.ru/)
 zaycev.net#DIV(class=menu1)(align=center)
 zaycev.net#IFRAME
 zaycev.net#TD(align=center)(colspan=3)
