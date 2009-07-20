@@ -1,4 +1,4 @@
-[Adblock Plus 1.0]
+﻿[Adblock Plus 1.0]
 !Продолжение подписки от denis-ovs.narod.ru
 !RU AdList [http://ruadlist.googlecode.com/]
 !0!=======================================
@@ -39,8 +39,6 @@
 @@|http://img.ngs.ru/*/images/
 @@|http://img.ngs.ru/*/img/
 @@|http://img.ngs.ru/*/upload
-!Блокирует: /\/ad[svjx0-9]\//
-@@||info-broker.ks.ua/images/com_adsmanager/ads/
 ! Случайные срабатывания на хэш-имена
 @@|http://gallery-*.usercash.com/
 ! Прочие исключения
@@ -54,7 +52,7 @@
 
 ! = Фильтры по регулярным выражениям =============
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
-/\/ad[svjx0-9]\//
+/\/ad[svjx0-9]\//$domain=~info-broker.ks.ua
 ! Антитоп
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet
 ! Антибаннер
@@ -302,6 +300,7 @@
 //adward.ru/*
 //agro.net.ru/*
 //all.by/*?
+//b.vtomske.ru/*
 //banner
 //begun.ru/*
 //bs.mybb.ru
@@ -441,7 +440,7 @@
 /peelad/*$script
 /phpads/*
 /poptraf.
-/popup.js$domain=~yandex.ru|~one.lv|~domdot.ru|~ps2ptt.com
+/popup.js$third-party,domain=~yandex.ru
 /popup/*$domain=~recordings.ru
 /popuptraf
 /printads/*
@@ -1141,6 +1140,7 @@ traffsale.com/
 traffsaler.com/
 trafon.ru/
 trusearch.net/affblock/
+ttp://b.$object
 tvoi-dosug.com/b?
 tvoi-dosug.com/getThumbs?
 tx2.ru/informers/
@@ -1576,6 +1576,7 @@ www.ag.ru/framer/
 www.animenfo.com/radio/meganimedvd.swf
 www.slo.ru/*300x200
 www.slo.ru/180x400.jpg
+xmages.net/msg.php
 yandex.ru#*(id=direct)
 yandex.ru#DIV(class=ad)
 yandex.ru#DIV(class=go-ad-all)
