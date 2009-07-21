@@ -13,25 +13,25 @@
 ! = Исключения ==============================
 
 ! Википедию не трогаем
-@@.wikimedia.org/
-@@.wikipedia.org/
+@@||wikimedia.org^
+@@||wikipedia.org^
 ! Картинки в гуглопоиске всегда отображаем
-@@.google.*/images?
+@@||google.*/images?
 ! Блокирует: Антитоп
-@@.8bitpeoples.com/
+@@||8bitpeoples.com^
 ! Блокирует: Антисчётчик
-@@games-tv.ru/tst/counter.php?
+@@||games-tv.ru/tst/counter.php?
 ! Блокирует: Антибаннер
-@@.admin.tomsk.ru/
-@@.sonypictures.com/
-@@kawaii-radio.net/banners/
-@@vorbis.com/images/banners/
-@@video.*.user.madbanner.ru/
+@@||admin.tomsk.ru^
+@@||sonypictures.com^
+@@||kawaii-radio.net/banners/
+@@||vorbis.com/images/banners/
+@@||video.*.user.madbanner.ru/
 ! Блокирует: Антиразмер
 @@|http://rp5.ru/informer/
 ! Блокирует: pics.rbc.ru/$image,object
-@@|http://pics.rbc.ru/img/$image,stylesheet
-@@|http://pics.rbc.ru/quote/
+@@||pics.rbc.ru/img/$image,stylesheet
+@@||pics.rbc.ru/quote/
 ! Блокирует: google-analytics.com
 @@|http://www.google.*/ig|
 ! Блокирует: img.ngs.ru/$image,object,background
@@ -39,12 +39,14 @@
 @@|http://img.ngs.ru/*/images/
 @@|http://img.ngs.ru/*/img/
 @@|http://img.ngs.ru/*/upload
+!Блокирует: /\/ad[svjx0-9]\//
+@@||info-broker.ks.ua/images/
 ! Случайные срабатывания на хэш-имена
-@@|http://gallery-*.usercash.com/
+@@||gallery-*.usercash.com/
 ! Прочие исключения
-@@deviantart.com/global/difi/?$subdocument
-@@|http://ifolder.ru/random/images/?
-@@|http://stg.odnoklassniki.ru/res/
+@@||deviantart.com/global/difi/?$subdocument
+@@||ifolder.ru/random/images/?
+@@||stg.odnoklassniki.ru/res/
 ! Вероятно больше не требуются
 @@|http://belocal.de/templates/belocal3/partner/nextgen/
 @@|http://exchengine.ru/bare/export/js.html?
@@ -52,7 +54,7 @@
 
 ! = Фильтры по регулярным выражениям =============
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
-/\/ad[svjx0-9]\//$domain=~info-broker.ks.ua
+/\/ad[svjx0-9]\//
 ! Антитоп
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet
 ! Антибаннер
