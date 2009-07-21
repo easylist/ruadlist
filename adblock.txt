@@ -61,29 +61,19 @@
 /\/count(?:ers?)?[.?/]/
 ! Антиразмер (блокировка баннеров по размеру указанному в имени файла)
 /\D(?:1(?:[05]0[-_x]3[05]0?|2[05][-_x](?:14|24|60?)0|60[-_x](?:60|8)0|80[-_x]150)|2(?:00[-_x][13]0|34[-_x](?:6|1[20])|40[-_x](?:35|40)|70[-_x]6)0|3(?:00[-_x](?:25|60)0|36[-_x]280|80[-_x]60|92[-_x]72)|4(?:00[-_x]40|[78]0[-_x]60|68[-_x](?:15|[68]0))|600[-_x](?:10|24)0|7(?:[60]0|[26]8)[-_x][679]0|8(?:[08][-_x](?:15|3[123])|00[-_x]60))\D/$domain=~fcenter.ru
-! Разделено на части /[/&?_-]ads?[-_]?(?:action|b(?:utler|rite|ottom|ox_?)|c(?:odes?\d*|ase|li(?:c?k|ent)s?)|f(?:arm|etch|low|rame|unction)|i(?:ma?ge?s?|d(?!=&))|l(?:ink|og|ayer)|m(?:an|entor|odule|osaic)|p(?:ops?|arse)|r(?:emote|evolver)|s(?:dk|end|ize|t(?:ome|ream|ring)|onar|cripts?)|t(?:ech|rix|ype))(?!=?v(?:&|off))[\W_]/
-/[/&?_-]ads?[-_]?action[\W_]/
-/[/&?_-]ads?[-_]?b(?:utler|rite|ottom|ox_?)[\W_]/
-/[/&?_-]ads?[-_]?c(?:odes?\d*|ase)[\W_]/
-/[/&?_-]ads?[-_]?cli(?:c?k|ent)s?[\W_]/
-/[/&?_-]ads?[-_]?f(?:arm|etch|low|rame|unction)[\W_]/
-/[/&?_-]ads?[-_]?i(?:ma?ge?s?|d(?!=&))[\W_]/
-/[/&?_-]ads?[-_]?l(?:ink|og|ayer)[\W_]/
-/[/&?_-]ads?[-_]?m(?:an|entor|odule|osaic)[\W_]/
-/[/&?_-]ads?[-_]?p(?:ops?|arse)[\W_]/
-/[/&?_-]ads?[-_]?remote[\W_]/
-/[/&?_-]ads?[-_]?s(?:dk|end|ize|onar|cripts?)[\W_]/
-/[/&?_-]ads?[-_]?st(?:ome|ream|ring)[\W_]/
-/[/&?_-]ads?[-_]?t(?:ech|rix)[\W_]/
-! Разделено на части /[/&?_-]banner(?:co(?:de|unt)|_?click|div|bg|(id)?=|\d+(?!(\.swf|\w+))|-rotation|-?ad)(?!(?:_|.*\.(?:png|htm)))/
-/[/&?_-]bannerco(?:de|unt)/
-/[/&?_-]banner_?click/
-/[/&?_-]banner(?:div|bg)/
+! Правила, которые следует постепенно переписать на обычные.
+/[/&?_-]ads?[-_]?b(?:utler|rite|ottom)[\W_]/
+/[/&?_-]ads?[-_]?box_?[\W_]/
+/[/&?_-]ads?[-_]?f(?:etch|low|unction)[\W_]/
+/[/&?_-]ads?[-_]?farm[\W_]/
+/[/&?_-]ads?[-_]?frame[\W_]/
+/[/&?_-]ads?[-_]?ima?ge?s?[\W_]/
+/[/&?_-]ads?[-_]?id(?!=&)[\W_]/
+/[/&?_-]ads?[-_]?link[\W_]/
+/[/&?_-]ads?[-_]?log[\W_]/
+/[/&?_-]ads?[-_]?layer[\W_]/
 /[/&?_-]banner(id)?=/
 /[/&?_-]banner\d+(?!\w)/$~object,~object_subrequest,~other
-/[/&?_-]banner-rotation/
-/[/&?_-]banner-?ad/
-! Разделение требуется для сбора статистики, так как правила перегружены.
 
 ! = Общие CSS-фильтры ============================
 ##A[href*="cachewww.onlinecashmethod.com/"][href*="?member="]
