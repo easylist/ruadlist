@@ -11,9 +11,11 @@
 !5! порнографию и не является надёжной
 !6! защитой от неё!
 
-!======== Пока единственное исключение ========
+! ======== Исключения ========
 @@|http://img-fotki.yandex.ru/get/*XXX$match-case
-!======== Общие правила ========
+@@|https://auth.tbn.ru/cdp?action=
+
+! ======= Общие правила =======
 ##A[href*="adult"][href*="foto"]
 ##A[href*="adult"][href*="film"]
 ##A[href*="adult"][href*="video"]
@@ -69,6 +71,7 @@
 -xxx
 xxx-
 wallpapers/girls/
+seksbomb
 supertrah
 !=================
 #A(href*=эроти)
@@ -97,6 +100,7 @@ supertrah
 #A[href*="=intim"]
 #A[href*="=sex"]
 #A[href*="=xxx"]
+#*(href*=seksbomb)
 #*(href*=supertrah)
 !======================
 #*(alt*=ЛЕСБИ)
@@ -3936,6 +3940,7 @@ sekass.ru##*
 sekasu.ru##*
 sekc.info##*
 sekca.net##*
+seksbomb.com##*
 seksunet.com##*
 serversms.ru##*
 sestudio.ru##*
