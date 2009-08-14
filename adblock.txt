@@ -41,6 +41,8 @@
 @@overclockers.ru/images/*/*/*/
 !Блокирует: /\/ad[svjx0-9]\//
 @@info-broker.ks.ua/images/
+! Блокирует: /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
+@@stopgame.ru/js/$object
 ! Случайные срабатывания на хэш-имена
 @@|http://gallery-*.usercash.com/
 ! Прочие исключения
@@ -840,7 +842,6 @@ mg.dt00.net/
 migratecookiesacrossdomains.asp
 mixmarket.biz/show/
 mlfun.org.ua/images/ban
-mobile-review.com/cgi-bin/
 mochiads.com/
 mokuz.ru/vipcounter/
 money.loveplanet.ru/nb/
@@ -1238,11 +1239,14 @@ icqtraff.org/
 inetlog.ru/
 lank.ru/
 loadmovie.ru/
+mobile-review.com/$object
+mobile-review.com/cgi-bin/
 mycounter.ua/
 peel-down.ru/
 popvtop.ru/ 
 .spylog.$image,script
 stat24.com
+stopgame.ru/*/partners/
 trafoed.com/promo/
 weblog.com*/cnt
 xcounter.ru/
