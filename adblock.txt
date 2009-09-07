@@ -41,9 +41,6 @@
 @@|http://belocal.de/templates/belocal3/partner/nextgen/
 @@|http://exchengine.ru/bare/export/js.html?
 @@|http://technosila.ru/webroot/delivery/images/goods/
-! Системы определения блокировки рекламы
-! Много ключевых слов в адресе, в действительности содержит строку trap_active = true;
-@@.zshare.net/ads.js?
 !
 ! = Разблокировка необходимых веток на некоторых сайтах (так задумано) ========
 ! Блокирует: opennet.ru/img/
@@ -54,6 +51,10 @@
 ! Блокирует: pics.rbc.ru/$image,object
 @@|http://pics.rbc.ru/img/$image,stylesheet
 @@|http://pics.rbc.ru/quote/
+!
+! = Системы определения блокировки рекламы ====================================
+! Много ключевых слов в адресе, в действительности содержит строку trap_active = true;
+@@.zshare.net/ads.js?
 !
 ! = Фильтры по регулярным выражениям ==========================================
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
