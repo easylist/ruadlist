@@ -127,6 +127,10 @@
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
 !
 ! = Общие фильтры =============================================================
+/popup.js$third-party,domain=~yandex.ru
+/popup/*$domain=~recordings.ru
+banner$other,object,object_subrequest
+! ^^^ Излишне универсальные правила. Теоретически их можно совсем удалить.
 .012345.ru/upload/
 .1pop.ru/
 .1txt.ru/
@@ -430,8 +434,6 @@
 /peelad/*$script
 /phpads/*
 /poptraf.
-/popup.js$third-party,domain=~yandex.ru
-/popup/*$domain=~recordings.ru
 /popuptraf
 /printads/*
 /promos/*$object
@@ -538,7 +540,6 @@ azerimake.km.ru
 b.megaban.com.ua/
 b2bcontext.ru
 b81x63nc.ws.md
-banner$other,object,object_subrequest
 banniere
 bans.bride.ru
 bantex.ru/*?
