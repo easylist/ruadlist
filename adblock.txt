@@ -115,10 +115,6 @@
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
 !
 ! = Общие фильтры =============================================================
-/popup.js$third-party,domain=~yandex.ru
-/popup/*$domain=~recordings.ru
-banner$other,object,object_subrequest
-! ^^^ Излишне универсальные правила. Теоретически их можно совсем удалить.
 .012345.ru/upload/
 .1pop.ru/
 .1txt.ru/
@@ -1235,6 +1231,10 @@ stopgame.ru/*/partners/
 trafoed.com/promo/
 weblog.com*/cnt
 xcounter.ru/
+! Излишне универсальные правила. Теоретически их можно совсем удалить.
+/popup.js$third-party,domain=~yandex.ru
+/popup/*$domain=~recordings.ru
+banner$other,object,object_subrequest
 !
 ! = Зачистка сайтов ===========================================================
 .kp.ru/tizers/
