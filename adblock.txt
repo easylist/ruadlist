@@ -14,8 +14,6 @@
 @@.google.*/images?
 ! Блокирует: Антитоп
 @@.russia.ru/player/top/$object
-! Блокирует: Антисчётчик
-@@games-tv.ru/tst/counter.php?
 ! Блокирует: Антибаннер
 @@video.*.user.madbanner.ru/
 ! Блокирует: google-analytics.com
@@ -40,14 +38,14 @@
 @@.zshare.net/ads.js?
 !
 ! = Фильтры по регулярным выражениям ==========================================
-/[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
+/[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$~domain=games-tv.ru
 /\/ad[svjx0-9]\//
 ! Антитоп
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet,domain=~8bitpeoples.com
 ! Антибаннер
 /\/ban+(?:er)?s?\d*[./]/$domain=~citydom.ru|~sonypictures.com|~vorbis.com|~admin.tomsk.ru|~allods.ru
 ! Антисчётчик
-/\/count(?:ers?)?[.?/]/
+/\/count(?:ers?)?[.?/]/$~domain=games-tv.ru
 ! Антиразмер (блокировка баннеров по размеру указанному в имени файла)
 /\D(?:1(?:[05]0[-_x]3[05]0?|2[05][-_x](?:14|24|60?)0|60[-_x](?:60|8)0|80[-_x]150)|2(?:00[-_x][13]0|34[-_x](?:6|1[20])|40[-_x](?:35|40)|70[-_x]6)0|3(?:00[-_x](?:25|60)0|36[-_x]280|80[-_x]60|92[-_x]72)|4(?:00[-_x]40|[78]0[-_x]60|68[-_x](?:15|[68]0))|600[-_x](?:10|24)0|7(?:[60]0|[26]8)[-_x][679]0|8(?:[08][-_x](?:15|3[123])|00[-_x]60))\D/$domain=~fcenter.ru|~rp5.ru
 ! Правила, которые следует постепенно переписать на обычные.
@@ -1378,13 +1376,12 @@ hotcharts.ru##TABLE.archive + NOINDEX
 hotcharts.ru##A[href^="http://li.ru/go?"]
 hotcharts.ru##DIV.comment
 hotcharts.ru##DIV[class^="text_ad_"]
-i.ru-board.com/xmtmp/
 idownloads.ru/content/666/
 imagereverb.com##IFRAME
 images.google.com,images.google.ru##TABLE[style^="padding: 8px; background: rgb(255, 248, 221) none repeat scroll 0%"]
 images.rambler.ru/upl/*.$domain=~nova.rambler.ru
 img.ngs.ru/*?pid*&link$object
-iphones.ru/misc/a-d-v/
+i.ru-board.com/xmtmp/
 itc.ua##DIV#ad_top
 itc.ua##DIV.b240x350
 itnews.com.ua##TR + * > TD[bgcolor="#ebebeb"][style="height: 96px;"]:first-child
@@ -1472,14 +1469,14 @@ opennet.ru##CENTER#adv
 opensharing.ru##DIV[id*="banner"]
 opensharing.ru/$object
 oper.ru##DIV.banners,DIV#onlinedengi
-overclockers.ru##BODY > CENTER > TABLE,BODY > DIV[align="center"] > TABLE[width="600"],BODY > TABLE[width="100%"][height="67"]
-overclockers.ru##DIV.nou CENTER > TABLE,P > TABLE[width="100%"]:first-child
+overclockers.ru##BODY > CENTER > TABLE,DIV.nou CENTER > TABLE
+overclockers.ru##BODY > DIV[align="center"] > TABLE[width="600"]
+overclockers.ru##BODY > TABLE[width="100%"][height="67"]
+overclockers.ru##P > TABLE[width="100%"]:first-child
 overclockers.ru##IFRAME
 overclockers.ru/images/$object
 overclockers.ru/images/125x
 overclockers.ru/images/468x
-overclockers.ru/images/485x
-overclockers.ru/im_b/
 overclockers.ru/partners/
 ozon.ru/graphics/*/*.swf
 ozon.ru/graphics/img/
