@@ -2,11 +2,12 @@
 !Продолжение подписки от denis-ovs.narod.ru
 !RU AdList (ruadlist.googlecode.com)
 !==============================================================================
-!Спасибо за то, что выбрали нашу подписку. Увидели где-то рекламу?
-!Заметили ложное срабатывание фильтра? Появился вопрос по подписке?
-!Мы всегда готовы помочь на форуме (forum.mozilla-russia.org) -
-! пишите в тему Фильтры для AdBlock:
-! http://forum.mozilla-russia.org/viewtopic.php?id=3679
+! Спасибо за то, что выбрали нашу подписку.
+! Если на вашем любимом сайте осталась реклама и она вас раздражает или
+! если наша подписка создаёт проблемы при его работе, то связывайтесь с нами.
+! Мы всегда готовы помочь на форуме forum.mozilla-russia.org
+! Пишите в тему «Фильтры для AdBlock»
+! Адрес темы: http://forum.mozilla-russia.org/viewtopic.php?id=3679
 !
 ! = Ложные срабатывания (исключения) ==========================================
 ! Википедию не трогаем
@@ -1262,7 +1263,8 @@ sexvkontakte
 .kp.ru/upimg/*.gif?
 .sovsport.ru/banner-item/
 .sovsport.ru/ib
-//161.ru/$object
+161.ru##DIV[class*="banner"]
+//161.ru/*$object
 /images/mid/h-anons.$domain=hardwareportal.ru|hwp.ru
 2baksa.net,2baksa.ws##A.icq[target="_blank"]
 2baksa.net,2baksa.ws##A[href*="/go.php?url="]
