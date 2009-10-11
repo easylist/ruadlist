@@ -25,6 +25,9 @@
 @@info-broker.ks.ua/images/
 ! Блокирует: /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
 @@stopgame.ru/js/$object
+! Блокирует: overclockers.ru/images/*.jpg
+@@images.people.overclockers.ru/
+@@overclockers.ru/images/*/*/*/
 ! Прочие исключения
 @@deviantart.com/global/difi/?$subdocument
 @@|http://stg.odnoklassniki.ru/res/
@@ -1073,6 +1076,7 @@ sys.war-online.ru
 t*.extreme-dm.com
 t.pusk.ru
 tak.ru/in.php?
+tbe.tom.ru/?
 tds.richtraffic.ru/direct.php?
 teasernet.ru/
 teenseks.da.ru
@@ -1297,6 +1301,8 @@ bash.org.ru##DIV:not(#ads) > DIV.q > DIV:not(.vote):first-child
 binmovie.ru##TD.block_text[align="center"]
 bugaga.tut.by/
 pogoda.by/promo/
+catalog.tomsk.ru/ttt/
+catalog.tomsk.ru/tua/
 catode.ru##DIV > DIV#wrapper > DIV#right > DIV.block:last-child
 catode.ru##DIV#fixed > DIV#bottomWrapper > DIV.dashed
 catode.ru##DIV#wrapper > DIV#container > DIV#content > DIV#left > DIV.block:last-child
@@ -1335,6 +1341,7 @@ epidem.ru##TD[width="131"] > P
 epidem.ru##A[href="http://onlinetrax.ru"]
 epidem.ru##DIV[id*="AdBar"]
 exler.ru##DIV[id^="Banner"]
+ferra.ru/include/priceru_advert_vertelca.php?
 file-online.ru##DIV.block_text
 fishki.net##A[href^="http:"]:not([href*="fishki.net"]):not([href*=".live"]) *:not([src*="bonus"]):not([src*="fishki_net"])
 fishki.net##BODY > TABLE TR:first-child > TD:first-child > DIV.baner_l + * + * + * + DIV.block
@@ -1347,6 +1354,7 @@ forum.antichat.ru/bn/
 forum.ru-board.com##BODY > CENTER TABLE:first-child
 forum.ru-board.com##BODY > LINK:first-child + * + TABLE[width="100%"][height="67"]
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
+forum.tomsknet.ru##TABLE.banner.nocp
 forums.overclockers.ru##BODY > A:first-child + TABLE[width="100%"][height="72"]
 foto.mail.ru##DIV.brd
 foto.rambler.ru##DIV.pi_b2
@@ -1360,6 +1368,7 @@ fullgames.ru##DIV#up + TABLE TD#right
 fullgames.ru##DIV#footer
 fullgames.ru##DIV#jbe_top
 game-torrent.info/forum/$object
+games.rambler.ru##DIV.r--b728
 gelbooru.com##DIV[id^="note-box"]
 gismeteo.com,gismeteo.ru##DIV[class^="container rian_block"]
 gismeteo.com,gismeteo.ru##DIV[class*="bnr"]
@@ -1478,6 +1487,7 @@ overclockers.ru##BODY > CENTER > TABLE,BODY > DIV[align="center"] > TABLE[width=
 overclockers.ru##DIV.nou CENTER > TABLE,P > TABLE[width="100%"]:first-child
 overclockers.ru##IFRAME
 overclockers.ru/images/$object
+overclockers.ru/images/*.jpg
 overclockers.ru/images/125x
 overclockers.ru/images/468x
 overclockers.ru/images/485x
@@ -1582,6 +1592,7 @@ www.ag.ru/framer/
 www.animenfo.com/radio/meganimedvd.swf
 www.slo.ru/*300x200
 www.slo.ru/180x400.jpg
+x-soft.tomsk.ru/dsa/
 x-torrents.ru##TD.reklam
 x-torrents.ru/xxx/$image
 xmages.net/msg.php
