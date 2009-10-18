@@ -28,6 +28,7 @@
 @@stopgame.ru/js/$object
 ! Прочие исключения
 @@deviantart.com/global/difi/?$subdocument
+@@|http://dwg.ru/img/logo6.swf
 @@|http://stg.odnoklassniki.ru/res/
 !
 ! = Разблокировка необходимых веток на некоторых сайтах (так задумано) ========
@@ -1345,7 +1346,8 @@ dump.ru##A[rel="nofollow"][target="_blank"] > IMG
 dverizamki.org/$object
 .dwg.ru/img/*$object
 //dwg.ru/img/*$object
-dwg.ru##TD[background$="/img/back22.gif"]
+dwg.ru##TD[background="../img/back22.gif"] > TABLE
+dwg.ru##TD[width="135"][bgcolor="#efefef"]
 emuparadise.org##TABLE#framework > TBODY:first-child > TR:first-child > TD:last-child > P
 emuparadise.org##TABLE#framework > TBODY:first-child > TR:first-child TABLE#index:last-child
 emuparadise.org##TABLE#index P[align="center"]
