@@ -28,7 +28,6 @@
 @@stopgame.ru/js/$object
 ! Прочие исключения
 @@deviantart.com/global/difi/?$subdocument
-@@|http://dwg.ru/img/logo6.swf
 @@|http://stg.odnoklassniki.ru/res/
 !
 ! = Разблокировка необходимых веток на некоторых сайтах (так задумано) ========
@@ -750,8 +749,7 @@ i.bigmir.net/cnt/
 i.j2j.ru/
 i.mabila.ua/$domain=~mabila.ua
 i.ru-board.com/temp/
-! баннер "Давай познакомимся"
-icqmoney.com/icqbox.php?id=3589
+icqmoney.com/icqbox.php?id=
 iframepay.com/
 images.1tizer.com/
 images.letitbit.net/*ban_
@@ -1314,8 +1312,6 @@ bash.org.ru##DIV#page > HR
 bash.org.ru##DIV:not(#ads) > DIV.q > DIV:not(.vote):first-child
 binmovie.ru##TD.block_text[align="center"]
 bugaga.tut.by/
-dwg.ru##BODY > TABLE > TBODY > TR:nth-child(3) > TD:nth-child(5)
-pogoda.by/promo/
 catalog.tomsk.ru/ttt/
 catalog.tomsk.ru/tua/
 catode.ru##DIV > DIV#wrapper > DIV#right > DIV.block:last-child
@@ -1349,8 +1345,8 @@ dump.ru##A[rel="nofollow"][target="_blank"] > IMG
 dverizamki.org/$object
 .dwg.ru/img/*$object
 //dwg.ru/img/*$object
+dwg.ru##BODY > TABLE > TBODY > TR:nth-child(3) > TD:nth-child(5)
 dwg.ru##TD[background="../img/back22.gif"] > TABLE
-dwg.ru##TD[width="135"][bgcolor="#efefef"]
 emuparadise.org##TABLE#framework > TBODY:first-child > TR:first-child > TD:last-child > P
 emuparadise.org##TABLE#framework > TBODY:first-child > TR:first-child TABLE#index:last-child
 emuparadise.org##TABLE#index P[align="center"]
@@ -1529,6 +1525,7 @@ pochta.ru##DIV#tionline
 pochta.ru##DIV.bottomadvert
 pochta.ru##DIV.gamesBlock
 pochta.ru##DIV.loveplanet
+pogoda.by/promo/
 prikol.ru##OBJECT#headlinebanner
 qwe.ru##BODY > TABLE > TBODY > TR > TD > DIV.border + * + * + * + * + * + * + * + DIV.border
 qwe.ru##BODY > TABLE > TBODY > TR > TD.default_menu TABLE[width="500"] DIV
