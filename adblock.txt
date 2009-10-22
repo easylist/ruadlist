@@ -118,6 +118,25 @@ pics.rbc.ru/$image,object
 ! Скрываем рекламу на форумах, на myBB-движке
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
 !
+! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
+|http://ad.$~object_subrequest,~other
+|http://ad0
+|http://ad1
+|http://ad2
+|http://ad3
+|http://ad4
+|http://ad5
+|http://ad6
+|http://ad7
+|http://ad9
+|http://ads.
+|http://ads1.
+|http://adv.
+|http://b.$object
+|http://cnt.
+|http://stat.
+|http://top.
+!
 ! = Общие фильтры =============================================================
 .adservinginternational.
 .advertising.
@@ -1067,25 +1086,6 @@ zvukoff.ru/24open/*.jpg
 /popup.js$third-party,domain=~yandex.ru
 /popup/*$domain=~recordings.ru
 banner$other,object,object_subrequest
-!
-! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
-|http://ad.$~object_subrequest,~other
-|http://ad0
-|http://ad1
-|http://ad2
-|http://ad3
-|http://ad4
-|http://ad5
-|http://ad6
-|http://ad7
-|http://ad9
-|http://ads.
-|http://ads1.
-|http://adv.
-|http://b.$object
-|http://cnt.
-|http://stat.
-|http://top.
 !
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
 2baksa.net,2baksa.ws##A[href*="/go.php?url="]
