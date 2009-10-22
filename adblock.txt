@@ -50,7 +50,7 @@ pics.rbc.ru/$image,object
 ! Антиразмер (блокировка баннеров по размеру указанному в имени файла)
 /\D(?:1(?:[05]0[-_x]3[05]0?|2[05][-_x](?:14|24|60?)0|60[-_x](?:60|8)0|80[-_x]150)|2(?:00[-_x][13]0|34[-_x](?:6|1[20])|40[-_x](?:35|40)|70[-_x]6)0|3(?:00[-_x](?:25|60)0|36[-_x]280|80[-_x]60|92[-_x]72)|4(?:00[-_x]40|[78]0[-_x]60|68[-_x](?:15|[68]0))|600[-_x](?:10|24)0|7(?:[60]0|[26]8)[-_x][679]0|8(?:[08][-_x](?:15|3[123])|00[-_x]60))\D/$domain=~fcenter.ru|~rp5.ru
 ! Сайты со слишком короткими именами (что б не создавать массу дубль-правил)
-/[./](?:99z|clx|ipz|ir|ket|lbe|lbn|log|mn\d*|pbg|pop|qle|rax|rbe|rle|sbn|sj\d*|tle|vba|wbn|xbn)\.ru\//
+/[./](?:99z|clx|f2|i(?:pz|r)|ket|l(?:b[en]|og)|mn\d*|p(?:bg|op)|qle|r(?:ax|[bl]e)|s(?:bn|j\d*)|t(?:x2|le)|vba|wbn|xbn)\.ru\//
 ! Прочие правила
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 /\/ad[svjx0-9]\//
@@ -141,8 +141,6 @@ pics.rbc.ru/$image,object
 /194.135.105.172/*
 /217.16.18.213/*
 /217.16.18.214/*
-/217.170.78.4/*
-/217.170.78.7/*
 /62.149.18.48/openads/*
 /77.91.228.66/*
 /80.91.178.234/*
@@ -268,6 +266,7 @@ betasat.net/images/
 bezpredela.net/*.jpg
 biathlon.com/logo.php?Query=
 biathlon.ru/images/sp????/
+bigmir.net/cnt/
 biz.advertarium.com.ua/
 bizweb.ru/button.php?
 blogan.ru/*.*.*.*.$image
@@ -347,14 +346,13 @@ dvsign.net/
 dyatel.tv/dtv*.
 dynamic.dol.ru/
 dynamic.exaccess.ru/
-e*.extreme-dm.com
 e-links.ru/pr/?
 edu.ru/d/window/b/
 ekctpa.info/ekctpa.gif
 engine.adct.ru/*?
 engine.awaps.net/
 engine.rorer.ru/*?
-erotizer.info/iframe.php?
+erotizer.info/
 eseek.ru/button.php?
 eserver.ru/img/b/*.gif
 estudio-max.com/buttons/
@@ -412,14 +410,14 @@ hit*.hotlog.ru
 hit.clickaider.com/clickaider.js
 hit.clickaider.com/pv?
 hit.gemius.pl/
-hmn.ru/fban/r_bn/
+hmn.ru/$third-party
 hotline.ua/img/hl/gm
 hypernews.ru/*.js
-i.bigmir.net/cnt/
 i.j2j.ru/
 i.mabila.ua/$domain=~mabila.ua
 i.ru-board.com/temp/
 icqmoney.com/icqbox.php?id=
+idge.ru/js_search.php?
 iframepay.com/
 images.1tizer.com/
 images.letitbit.net/*ban_
@@ -427,12 +425,12 @@ images.stardock.com/flash/
 images.stardock.com/store/
 img*.depositfiles.com/adroot/
 img.8coins.ru/
-img.carnage.ru/i/main/*.swf
+img.carnage.ru/i/main/$object
 img.mail.ru/r/my/colage*.
 img.mobilezzz.com/
-img.ruclicks.com/ruclicks*.$image
+img.ruclicks.com/ruclicks
 img.topshops.com.ua/images/buttons/
-info.webalta.net/reliancebutton?url
+info.webalta.net/reliancebutton?
 informer.cyberstyle.ru
 infosec.ru/common/data/pub/images/articles/
 infotech-media.ru/*.js
@@ -463,7 +461,6 @@ lenamila.com/obzlite/
 lenta.yandex.ru/i/
 letitbit.net/images/
 letitsoft.com/$third-party
-levonevski.net/*.swf
 life4life.biz/
 link-ip.int.ru/in.php?
 linkhelp.clients.google.com/tbproxy/lh/wm
@@ -487,8 +484,8 @@ lycee.explode.ru
 mail.ru/*agentToolBar?.js
 mamler.com/templates/
 maploco.com/vmap/
-mari.net.ru
-marketgid.com/js/
+mari.net.ru/
+marketgid.com/
 media.carnage.ru
 media.online.ua/all/gft/
 medialand.relax.ru
@@ -517,7 +514,7 @@ my-monkey.ru/sensation.php
 my.rozetka.kiev.ua/out/rozetka.php?
 myanimetop.com/button.php?
 mypagerank.*/*?
-nedstatbasic.net/stats?
+nedstatbasic.net/
 nettracker.jps.ru
 newbs.hutz.co.il/www/
 news.mozilla-russia.org/wp-content/themes/mozilla/images/
@@ -652,18 +649,19 @@ smartb.2gsg.com/hosting.gif
 smarttraf.ru/
 smsbanner.ru/
 smsfiles.ru/ban*.gif
+smskopilka.ru/
 soft-teleport.ru/uploads/ad/
 sorcerers.net/includes/butler/butler.php?
 spbfp.atlant.ru
 spitter.pauk.ru/
-spylogspytrack.tic.ru
+spytrack.tic.ru/
 src.ucoz.net/img/cp/
-stat.aport.ru/*?
 static.exaccess.ru/
-static.globalstars.ru/static/*.js
+static.globalstars.ru/static/$script
 static.oper.ru/data/rennabs/
 static.pornolab.net/00
-static.terrhq.ru/torrents/
+static.terrhq.ru/
+static.thepiratebay.org/img/limited_
 static.torrents.ru/00
 stb.msn.com/i$~msn.com
 stepbystep.spb.ru/reting_stat.php?
@@ -672,7 +670,6 @@ studsss.da.ru
 submitter.ru*/i.php
 supertop.ru/cgi-bin/supertop/nph-supertop2?
 sys.war-online.ru
-t*.extreme-dm.com
 t.pusk.ru/
 tak.ru/in.php?
 takru.com/in.php?id=
@@ -708,10 +705,7 @@ trafficmaxx.de/thx.php?
 traffsale.com/
 traffsaler.com/
 trusearch.net/affblock/
-ttp://b.$object
-tvoi-dosug.com/b?
-tvoi-dosug.com/getThumbs?
-tx2.ru/informers/
+tvoi-dosug.com/
 u*.*.mytrix.com/cnt?
 u*.takru.com/
 uhi_click.cgi?
@@ -720,7 +714,8 @@ umatno.ru/mm/
 underclick.ru/
 uniq-ip.com/via/np?
 uptime.ru/*?
-us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo*.gif
+us.a1.yimg.com/
+us.i1.yimg.com/
 vas.ppro.de/click/
 video-people.com/
 videotraff.ru/img
@@ -757,13 +752,9 @@ wmplace.ru/place.php?
 wmzona.com/gptr/go.php?
 wolist.ru/$third-party
 wtools.biz/sample2.php?
-ww.hmn.ru/fban/
-wwwomen.ru/n/r/
-wwwomen.ru/php/wi.php?
+wwwomen.ru/$third-party
 x-limitrecordz.ru/*.gif
 x4u.ru/cgi-bin/wtsin.cgi?
-xml.idge.ru/js_search.php?
-xml.smskopilka.ru/client/export/smskopilka_*.js
 xn--80apfevho6e.su/img/
 xxx-tracker.com/pics/
 xxxxxx.com.ru/
@@ -877,7 +868,7 @@ zvukoff.ru/24open/*.jpg
 ||eronsk.ru/b/
 ||euros4click.de/
 ||ex6.ru/k/
-||fair.ru/i/i.php?
+||fair.ru/*/i.php?
 ||farle.ru/?bn=
 ||faststart.ru/$third-party
 ||faza.ru/img.php?
@@ -893,6 +884,7 @@ zvukoff.ru/24open/*.jpg
 ||helpls.ru/
 ||hi-fi.ru/b/
 ||hitlist.ru
+||hmn.ru/fban/
 ||hotlog.ru/$third-party
 ||i.i.ua/r/
 ||icqtraff.org/
@@ -920,7 +912,7 @@ zvukoff.ru/24open/*.jpg
 ||libo.ru/rat/img/
 ||link.ru/
 ||linkbuy.biz/
-||linkexchange.ru/
+||linkexchange.
 ||linkwm.ru/
 ||loadmovie.ru/
 ||lookszone.ru/$third-party
@@ -1072,7 +1064,12 @@ zvukoff.ru/24open/*.jpg
 ||xcounter.ru/
 ||yadro.ru/
 ||yandex.*/resource/
-!Тут могла бы быть ваша реклама, только вот зачем...
+! Излишне универсальные правила. Теоретически их можно совсем удалить.
+/popup.js$third-party,domain=~yandex.ru
+/popup/*$domain=~recordings.ru
+banner$other,object,object_subrequest
+!
+! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://ad.$~object_subrequest,~other
 |http://ad0
 |http://ad1
@@ -1086,12 +1083,10 @@ zvukoff.ru/24open/*.jpg
 |http://ads.
 |http://ads1.
 |http://adv.
+|http://b.$object
 |http://cnt.
+|http://stat.
 |http://top.
-! Излишне универсальные правила. Теоретически их можно совсем удалить.
-/popup.js$third-party,domain=~yandex.ru
-/popup/*$domain=~recordings.ru
-banner$other,object,object_subrequest
 !
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
 2baksa.net,2baksa.ws##A[href*="/go.php?url="]
@@ -1264,6 +1259,7 @@ letitbit.net/$third-party,subdocument
 letitbit.net/tmpl/letitbit.html
 letitbit.net/tmpl/premium_ru.html
 letitbit.net/tmpl/tmpl_frame_topad.php
+levonevski.net/$object
 livejournal.com##*[class^="adv"]
 livejournal.com##*[class*="-adv"]
 livejournal.com##DIV[class^="ljad"]
@@ -1406,7 +1402,6 @@ tehnosila.ru##DIV#banner_street
 tfile.ru##DIV[id$="_ban"]
 tfile.ru##IFRAME
 tfile.ru##TABLE#home_c TD#lcol:first-child
-||torrents.ru/048/*/*.jpg
 ||torrents.ru/*/640x75
 torrents.ru##DIV#page_footer > TABLE[style="margin: 8px auto 6px;"]
 torrents.ru##DIV.tCenter.mrg_12
