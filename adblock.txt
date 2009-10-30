@@ -53,7 +53,7 @@ pics.rbc.ru/$image,object
 /[./](?:99z|clx|f2|i(?:pz|r)|ket|l(?:b[en]|og)|mn\d*|p(?:bg|op)|qle|r(?:ax|[bl]e)|s(?:bn|j\d*)|t(?:bn|le|x2)|vba|wbn|xbn)\.ru\//
 ! Прочие правила
 /[&?_-]banner(id)?=/
-/[/&?_-.]re[ck]lamk?a/
+/[/&?._-]re[ck]lamk?a/
 /[/&?_-]banner(?!\w)/$~object,~object_subrequest,~other
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 /\/ad[svjx0-9]\//
