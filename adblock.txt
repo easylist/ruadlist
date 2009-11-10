@@ -52,7 +52,7 @@ pics.rbc.ru/$image,object
 ! Прочие правила
 /[&?_-]banner(id)?=/
 /[/&?._-]re[ck]lamk?a/
-/[/&?_-]banner(?!\w)/$~object,~object_subrequest,~other
+/[/&?_-]banner(?!\w)/$~object,~object-subrequest,~other
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 /\/ad[svjx0-9]\//
 !
@@ -119,7 +119,7 @@ pics.rbc.ru/$image,object
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
 !
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
-|http://ad.$~object_subrequest,~other
+|http://ad.$~object-subrequest,~other
 |http://ad0
 |http://ad1
 |http://ad2
