@@ -17,8 +17,6 @@
 @@||google.*/images?
 ! Блокирует: Антитоп
 @@||russia.ru/player/top/$object
-! Блокирует: Антибаннер
-@@video.*.user.madbanner.ru/
 ! Блокирует: google-analytics.com
 @@|http://www.google.*/ig|
 !Блокирует: /\/ad[svjx0-9]\//
@@ -947,7 +945,8 @@ zvukoff.ru/24open/*.jpg
 ||lux-bn.com.ua/
 ||luxup.ru/
 ||lycosu.com/
-||madbanner.ru/
+||madbanner.ru/cgi-bin/banner/
+||madbanner.ru/$~object-subrequest
 ||magna.ru/
 ||magnet.kiev.ua/
 ||masterpop.ru/
