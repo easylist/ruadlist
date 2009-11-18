@@ -40,7 +40,7 @@ pics.rbc.ru/$image,object
 !
 ! = Фильтры по регулярным выражениям ==========================================
 ! Антитоп
-/[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet,domain=~8bitpeoples.com|~deviantart.com
+/[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet,~xmlhttprequest,domain=~8bitpeoples.com|~deviantart.com
 ! Антибаннер
 /\/ban+(?:er)?s?\d*[./]/$domain=~citydom.ru|~sonypictures.com|~vorbis.com|~admin.tomsk.ru|~allods.ru|~playground.ru
 ! Антисчётчик
@@ -133,7 +133,7 @@ pics.rbc.ru/$image,object
 |http://adv.
 |http://b.$object
 |http://cnt.
-|http://top.
+|http://top.$~stylesheet,~xmlhttprequest
 !
 ! = Блокировка отдельных баннеров по ключевым словам в адресе =================
 love_qip_head
