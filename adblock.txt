@@ -441,6 +441,7 @@ hypernews.ru/*.js
 i.j2j.ru/
 i.mabila.ua/$domain=~mabila.ua
 icqmoney.com/icqbox.php?id=
+iframe.mediaplazza.com/
 iframepay.com/
 images.1tizer.com/
 images.letitbit.net/*ban_
@@ -869,10 +870,12 @@ zvukoff.ru/24open/*.jpg
 ||eronsk.ru/b/
 ||euros4click.de/
 ||ex6.ru/k/
+||extreme-dm.com/
 ||fair.ru/*/i.php?
 ||fairlink.ru/
 ||farle.ru/?bn=
 ||faza.ru/img.php?
+||filetarget.com/$frame
 ||fooder.ru/
 ||glam-x.ru/
 ||gogo.ru/img/p/
@@ -1064,6 +1067,7 @@ zvukoff.ru/24open/*.jpg
 ||yandex.*/cy?base=0&host=
 ||yandex.*/cycounter?
 ||yandex.*/resource/
+||yieldmanager.com/
 ! Излишне универсальные правила. Теоретически их можно совсем удалить.
 /popup.js$third-party,domain=~yandex.ru
 /popup/*$third-party
@@ -1152,12 +1156,14 @@ bash.org.ru##DIV:not(#ads) > DIV.q > DIV:not(.vote):first-child
 bash.org.ru##DIV#page > HR
 binmovie.ru##TD.block_text[align="center"]
 bugaga.tut.by/
+||burnsoftware.*/!$frame
 catalog.tomsk.ru/ttt/
 catalog.tomsk.ru/tua/
 catode.ru##DIV > DIV#wrapper > DIV#right > DIV.block:last-child
 catode.ru##DIV#fixed > DIV#bottomWrapper > DIV.dashed
 catode.ru##DIV#wrapper > DIV#container > DIV#content > DIV#left > DIV.block:last-child
 catode.ru/$object
+||cdmediaworld.*/!$frame
 ||chatname.ru/*/index.php?inc=banner
 citysmile.ru##DIV[style="text-align: justify; font-size: 9pt;"]
 citysmile.ru/images/xxx
@@ -1166,6 +1172,8 @@ citysmile.ru##TABLE[style="border: medium none rgb(255, 0, 0);"] > TBODY:first-c
 computerra.ru##TABLE._reachbanner_ TD[width="240"]:last-child
 copypast.ru/re/
 copypast.ru##TD#fishi
+||covertarget.*/!$frame
+||covertarget.*/@$frame
 cwer.ru##DIV#wrap > DIV#leftside:first-child > DIV#block-block-15
 cwer.ru##DIV#wrap > DIV#rightside > DIV#block-blockcache-49 > *
 ||cwer.ru/misc/$object
@@ -1205,11 +1213,11 @@ fishki.net##DIV[id^="medialand_adland"] + DIV.block
 fishki.net##DIV#line + TABLE TR:first-child > TD:last-child > SCRIPT[src*="xajax"] + TABLE
 fishki.net##DIV#line + TABLE TR:first-child > TD:last-child > SCRIPT[src*="xajax"] + TABLE + BR + TABLE
 fishki.net##IFRAME
+forum.ixbt.com##TABLE.top_ad2
 forum.ru-board.com##BODY > CENTER TABLE:first-child
 forum.ru-board.com##BODY > LINK:first-child + * + TABLE[width="100%"][height="67"]
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
 forums.overclockers.ru##BODY > STYLE:first-child + TABLE,FORM.headerspace + TABLE,FORM#jumpbox + TABLE
-! реклама внизу
 forums.overclockers.ru##TABLE[width="100%"][height="67"]
 forum.tomsknet.ru##TABLE.banner.nocp
 foto.mail.ru##DIV.brd
@@ -1261,7 +1269,6 @@ itc.ua##DIV.b240x350
 itnews.com.ua##TR + * > TD[bgcolor="#ebebeb"][style="height: 96px;"]:first-child
 ixbt.com##H4#nl_header
 izvestia.ru/news_rambler.html
-forum.ixbt.com##TABLE.top_ad2
 keep4u.ru##DIV#r_bottom
 keep4u.ru##DIV#r_top
 keep4u.ru##DIV[style="text-align: justify;"]
@@ -1298,8 +1305,8 @@ livejournal.com##*[class^="adv"]
 livejournal.com##*[class*="-adv"]
 livejournal.com##DIV[class^="ljad"]
 lookszone.ru/$object
-lostfilm.tv/vision/
 lostfilm.tv$object
+lostfilm.tv/vision/
 macovod.net##DIV#top-band-2
 macradar.ru/*_ad.
 macradar.ru##DIV.reclame
@@ -1319,10 +1326,12 @@ motonews.ru/ad/
 mozilla-russia.org##DIV[id$="Col_advC"]
 mozilla-russia.org/images/rek_header.png
 mozilla-russia.org##SPAN[ID^="modex"][style="font-size: 80%;"]:last-child
+||mp3mediaworld.*/!$frame
 mskd.ru##CENTER > B > FONT[color="red"]
 ||mskd.ru/img/*x*_
 mts.ru##DIV.container:first-child > TABLE.grid.nop
 mts.ru##DIV.visual_container.red:last-child
+||musictarget.*/!$frame
 muzoff.ru##A[href^="http:"]:not([href*="muzoff.ru"])
 muzoff.ru##DIV#ibp
 ||mywed.ru/bnr/
@@ -1349,20 +1358,18 @@ ochevidec.net##IFRAME
 onegadget.ru/$object
 ||opennet.ru/adv_
 opennet.ru##CENTER#adv
-opensharing.ru,opensharing.org##DIV[id*="banner"],DIV#content CENTER > A[target="_blank"],DIV#sidebar CENTER > A
 ||opensharing.$object
 ||opensharing.*/pics/
+opensharing.ru,opensharing.org##DIV[id*="banner"],DIV#content CENTER > A[target="_blank"],DIV#sidebar CENTER > A
 oper.ru##DIV.banners,DIV#onlinedengi
-overclockers.ru##IFRAME
-overclockers.ru##IMG[src$="/images/spacer.gif"] + TABLE + TABLE A[target="_blank"],DIV.nou > TABLE DIV[align="center"],DIV.nou CENTER > TABLE
 overclockers.ru##BODY > IMG[src$="/images/spacer.gif"]:first-child + TABLE,TABLE.navbg + DIV[align="center"]
-! реклама в статьях
 overclockers.ru##DIV.small + * + DIV P > TABLE TABLE > TBODY > TR > TD > *:not([id^="vote"]),IMG[src="/images/kva_rek_int.png"]
-! реклама вверху
-overclockers.ru##TABLE[width="100%"][height="68"]
+overclockers.ru##IFRAME
 overclockers.ru/images/lab/*/*/*/*/
 overclockers.ru/im_b/
+overclockers.ru##IMG[src$="/images/spacer.gif"] + TABLE + TABLE A[target="_blank"],DIV.nou > TABLE DIV[align="center"],DIV.nou CENTER > TABLE
 overclockers.ru/partners/
+overclockers.ru##TABLE[width="100%"][height="68"]
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 ||ozon.ru/graphics/*/*.swf
@@ -1424,9 +1431,9 @@ slo.ru##CENTER > TABLE:first-child:last-child *
 ||slo.ru/img/*_*x
 smart60.ru##CENTER > DIV,CENTER > TABLE
 ||smi2.ru/data/js/
+soft-best.ws/forum/pict_4_rotator/
 soft-best.ws##NOINDEX
 soft-best.ws/$object
-soft-best.ws/forum/pict_4_rotator/
 soft-free.ru##A[href="http://goldfin.ru"]
 soft-free.ru##TD + * FORM + * + * + * + * + * + * TD.modulecontent
 softodrom.ru/img/500x100_
@@ -1501,3 +1508,4 @@ zr.ru##DIV.br
 ||zr.ru/scripts/swfobject
 |http://pics.top.rbc.ru/top_pics/jslib/cookies.js
 |http://powertracker.org/images/Talky3D.gif
+
