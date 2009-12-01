@@ -42,7 +42,7 @@ pics.rbc.ru/$image,object
 ! Антитоп
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet,~xmlhttprequest,domain=~8bitpeoples.com|~deviantart.com
 ! Антибаннер
-/\/ban+(?:er)?s?\d*[./]/$domain=~citydom.ru|~sonypictures.com|~vorbis.com|~admin.tomsk.ru|~allods.ru|~playground.ru
+/\/ban+(?:er)?s?\d*[./_]/$domain=~citydom.ru|~sonypictures.com|~vorbis.com|~admin.tomsk.ru|~allods.ru|~playground.ru
 ! Антисчётчик
 /\/count(?:ers?)?[.?/]/$domain=~games-tv.ru
 ! Антиразмер (блокировка баннеров по размеру указанному в имени файла)
@@ -137,6 +137,7 @@ pics.rbc.ru/$image,object
 |http://top.$~stylesheet,~xmlhttprequest,third-party
 !
 ! = Блокировка отдельных баннеров по ключевым словам в адресе =================
+devochki-dlya-tebya-na-dosuge
 love_qip_head
 sex-v-kontakte
 sex-vkontakte
@@ -246,7 +247,6 @@ sexvkontakte
 /vottbanner
 /xap.ru/*.js
 13rus.ru/img/
-1ha.ad.md/cgi-bin/
 2pay.ru/gif/terminal.swf?link=
 a.ucoz.net/a
 abc-people.com/bann_
@@ -360,7 +360,6 @@ delivery/*.php
 delphisources.ru/pages/scripts/recl_
 deribas.kwot.biz/
 destiny-online.ru/*.swf?
-devochki-dlya-tebya-na-dosuge
 dewis.h1.ru
 dewis.spb.ru
 digisat.ru/*.gif
@@ -783,6 +782,7 @@ zuni.tyndex.ru/
 zvukoff.ru/24open/*.jpg
 ||012345.ru/upload/
 ||1-traf.net/
+||1ha.ad.md/
 ||1pop.ru/
 ||1popup.ru/
 ||1traff.ru/
@@ -1187,7 +1187,6 @@ cyber39.ru##DIV#fp_adv + * + * + DIV[align="center"]
 cyber39.ru##DIV#top:first-child
 depositfiles.com##DIV#download_url + DIV[style="margin: 2em auto 0pt; width: 300px;"]
 depositfiles.com##DIV[id^="zhlobam_net"]
-devochki-dlya-tebya-na-dosuge.com/b?
 digital.ru##DIV[class*="Banner"]
 dimonvideo.ru##BODY > TABLE NOINDEX > DIV
 dreamprogs.net##DIV.content DIV:first-child + NOINDEX
