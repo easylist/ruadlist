@@ -50,7 +50,6 @@ pics.rbc.ru/$image,object
 ! Сайты со слишком короткими именами (что б не создавать массу дубль-правил)
 /[./](?:99z|clx|f2|i(?:pz|r)|ket|l(?:b[en]|og)|mn\d*|p(?:bg|op)|qle|r(?:ax|[bl]e)|s(?:bn|j\d*)|t(?:bn|le|x2)|vba|wbn|x(?:bn|4u))\.ru\//
 ! Прочие правила
-/[&?_-]banner(id)?=/
 /[/&?._-]re[ck]lamk?a/
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 /\/ad[svjx0-9]\//
@@ -776,6 +775,8 @@ zozocash.biz/
 zto.h16.ru/
 zuni.tyndex.ru/
 zvukoff.ru/24open/*.jpg
+?banner=
+^bannerid=
 ||012345.ru/upload/
 ||1-traf.net/
 ||1ha.ad.md/
