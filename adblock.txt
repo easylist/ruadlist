@@ -49,7 +49,7 @@ pics.rbc.ru/$image,object
 /[./](?:99z|clx|f2|i(?:pz|r)|ket|l(?:b[en]|og)|mn\d*|p(?:bg|op)|qle|r(?:ax|[bl]e)|s(?:bn|j\d*)|t(?:le|x2)|vba|wbn|x(?:bn|4u))\.ru\//
 ! Прочие правила
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
-/\/ad[svjx0-9]\//
+/\/ad[svjx0-9]\//$domain=~mercatos.ru
 ! Попытка отсеять мусор и убрать регулярку
 ! Правило: /[/&?._-]re[ck]lamk?a/
 &reclama
@@ -392,18 +392,17 @@ catalog.tut.by/images/catalog-tut.gif
 cifrovik.ru/publish/open_article/
 circle.am/service/?
 click.opennet.ru/
-click.readme.ru/
 clickcashmoney.com
 clickhere.ru/
 clicks.moy.su/Vsachina/
 clicks.runews.radeant.com/
 clickunder.net/
-clocklink.com/clocks/*.swf
+clocklink.com/clocks/$object
 cn.procontext.ru/
 co.cc/img/affiliates/
 comgran.ru/topsite/button.php?
 compteur.cc/pr/pagerank.php?
-computerpress.ru/images/*.swf
+computerpress.ru/images/$object
 content.4chan.org/tmp/
 content.relax.ru
 cool.ru/coolru-button.gif
@@ -422,7 +421,7 @@ danbooru.donmai.us/images/ads-
 datasvit.net/images/*_banner.
 dating-exchange.com
 dating.poleznosti.ru/page/
-default/photoplacement/*.swf
+default/photoplacement/$object
 delivery/*.php
 delphisources.ru/pages/scripts/recl_
 deribas.kwot.biz/
@@ -437,7 +436,7 @@ dl2.ru/catalog.php?
 dload.net.ru/*.gif
 dlsite.com/modpub/banner_ad/
 dosugcz.biz/
-drweb.com/pix/*.swf
+drweb.com/pix/$object
 duuw.nm.ru/
 dverizamki.org/bshow/
 dvsign.net/
@@ -619,7 +618,7 @@ palantir.in/showban*.php?
 parimatch.com/jss/$object
 partners.vsemayki.ru/
 pc-seguro.pochta.ru
-pcmag.ru/upload/*.swf
+pcmag.ru/upload/$object
 penza-online.ru/cgi-bin/userstats.pl?
 people.1gb.ru
 pindotrafforg.54.com1.ru
@@ -656,7 +655,6 @@ rb.sport-express.ru
 rbc.ru/bannerjvs/
 rclick.com.ua/
 re.foto.radikal.ru/0708/61/*.gif
-readme.ru/informer
 reggun.ru/images/b*_
 region59.net/Buttons/
 richloads.com/img/*.gif
@@ -678,7 +676,7 @@ s.holm.ru/stat/
 s.ladoshki.com/p/a/
 s.ladoshki.com/pics/shirts/
 s.recs.ru/b/
-sat-digest.com/*.swf
+sat-digest.com/$object
 sat-digest.com/agc/*.gif
 satcore.info/design/satcore_knopka*.gif
 sayday.ru/porn
@@ -751,7 +749,7 @@ teenseks.da.ru
 temp.theabyss.ru/1/botva/
 testsbox.ru/autotest.js?
 tgvc.seall.ru/img/
-thecc.ws/cc/*.swf
+thecc.ws/cc/$object
 thews.info/img_*.gif
 third.astera.ru/www/images/
 tic-pr.info/*/button*.$image
@@ -763,7 +761,7 @@ tname.ru/img_*.gif
 tofun.ru/traff/*.php
 toget.ru/adblocks/
 toget.ru/informers/showinformer.php?
-top/nocountryforoldmen/*.swf
+top/nocountryforoldmen/$object
 top20.md/client/scripts/
 topcto.ru/img/butt/
 topdownloads.ru/images/charts/*.gif
@@ -790,7 +788,7 @@ vas.ppro.de/click/
 vezetmne.ru/
 video-people.com/
 videotraff.ru/img
-voffka.com/archives/*.swf
+voffka.com/archives/$object
 voland-rocker.fatal.ru
 votegate.ru/m.php?
 vsetv.com/pic/paid/
@@ -1106,6 +1104,7 @@ zvukoff.ru/24open/*.jpg
 ||tizers.net/
 ||tns-counter.ru/
 ||topcto.ru/
+||trade7.ru/
 ||traf.biz/
 ||trafoed.com/promo/
 ||trafon.ru/
@@ -1183,10 +1182,12 @@ zakladka.org.ua/$third-party
 ||iso100.ru/$third-party
 ||komok.com/$third-party
 ||lookszone.ru/$third-party
+||mercatos.ru/$third-party
 ||meta.ua/$script,subdocument,third-party
 ||moogle.ru/$third-party
 ||play2.biz/$third-party
 ||produman.ru/$third-party
+||readme.ru$third-party
 ||redtram.com/$third-party
 ||refo.ru/$third-party
 ||rusmedserv.com/$third-party
@@ -1194,6 +1195,7 @@ zakladka.org.ua/$third-party
 ||statcounter.com/$third-party
 ||tehnoklad.ru/$third-party
 ||torgnn.ru/$third-party
+||usde.ru/$third-party
 ||vareza.net/$third-party
 ||vsem.ru/img$third-party
 ||wolist.ru/$third-party
@@ -1274,7 +1276,7 @@ zakladka.org.ua/$third-party
 3dnews.ru##DIV.mbanner
 advs.gismeteo.com/
 agronews.ru/images/*.gif
-agronews.ru/images/*.swf
+agronews.ru/images/$object
 ag.ru##DIV[id="top_campaign"][class="top_s_bar"]
 ag.ru##DIV.newsbot.bbg + BR + CENTER
 ag.ru##DIV#rotating_banners:first-child
@@ -1353,6 +1355,7 @@ exler.ru##DIV[id^="Banner"]
 exnews.org##NOINDEX > DIV[class$="body"]
 exnews.org##TD.column + TD CENTER
 fanacmilan.com##DIV[id^="adText"]
+||fcshop.ru/i/cross/
 ferra.ru##DIV.notik,DIV.oki
 ||ferra.ru/images/news/*.gif
 ||ferra.ru/include/*_advert_
@@ -1527,7 +1530,7 @@ overclockers.ru##IMG[src$="/images/spacer.gif"] + TABLE + TABLE A[target="_blank
 overclockers.ru/partners/
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
-||ozon.ru/graphics/*/*.swf
+||ozon.ru/graphics/$object
 pics.goods.turist.ru/turist.goods_pics/$domain=~turist.ru
 pindosoff.net##DIV[class^="copyright"] > NOINDEX
 pindosoff.net##DIV#dle-content > TABLE:first-child TD.copy
@@ -1666,4 +1669,3 @@ zr.ru##DIV.br
 ||zr.ru/scripts/swfobject
 |http://pics.top.rbc.ru/top_pics/jslib/cookies.js
 |http://powertracker.org/images/Talky3D.gif
-
