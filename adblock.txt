@@ -46,7 +46,7 @@ pics.rbc.ru/$image,object
 ! Антисчётчик
 /\/count(?:ers?)?[.?/]/$domain=~games-tv.ru
 ! Сайты со слишком короткими именами (что б не создавать массу дубль-правил)
-/[./](?:99z|clx|f2|i(?:pz|r)|ket|l(?:b[en]|og)|mn\d*|p(?:bg|op)|qle|r(?:ax|[bl]e)|s(?:bn|j\d*)|t(?:le|x2)|vba|wbn|x(?:bn|4u))\.ru\//
+/[./](?:99z|clx|f2|i(?:pz|r)|ket|l(?:b[en]|og)|mn\d*|p(?:bg|op)|qle|r(?:ax|[bl]e)|s(?:bn|j\d*)|tle|vba|wbn|x(?:bn|4u))\.ru\//
 ! Прочие правила
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 /\/ad[svjx0-9]\//$domain=~mercatos.ru
@@ -313,6 +313,7 @@ love_qip_head
 /slatefp.asp
 /splash/page_header/*
 /sponsImages/*
+/tx2.ru/*
 /uicp.ru/?bn=
 /vendshow/*
 /vottbanner
