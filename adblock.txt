@@ -42,7 +42,7 @@ pics.rbc.ru/$image,object
 ! Антитоп
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet,~xmlhttprequest,domain=~8bitpeoples.com|~deviantart.com
 ! Антибаннер
-/[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$domain=~citydom.ru|~sonypictures.com|~vorbis.com|~admin.tomsk.ru|~allods.ru|~playground.ru
+/[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$domain=~citydom.ru|~vorbis.com|~admin.tomsk.ru|~allods.ru|~playground.ru
 ! Антисчётчик
 /\/count(?:ers?)?[.?/]/$domain=~games-tv.ru
 ! Сайты со слишком короткими именами (что б не создавать массу дубль-правил)
@@ -180,7 +180,7 @@ reklamka
 |http://ad9
 |http://adfarm
 |http://ad.$~object-subrequest,~other
-|http://ads.
+|http://ads.$domain=~citydom.ru
 |http://ads0
 |http://ads1
 |http://ads2
