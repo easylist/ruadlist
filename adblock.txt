@@ -3,11 +3,11 @@
 !RU AdList (ruadlist.googlecode.com)
 !==============================================================================
 ! Спасибо за то, что выбрали нашу подписку.
-! Если на вашем любимом сайте осталась реклама и она вас раздражает или
-! если наша подписка создаёт проблемы при его работе, то связывайтесь с нами.
+! Если на вашем любимом сайте осталась реклама и она мешает или
+! если наша подписка создаёт проблемы при его работе, то свяжитесь с нами.
 ! Мы всегда готовы помочь на форуме forum.mozilla-russia.org
-! Пишите в тему «Фильтры для AdBlock»
-! Адрес темы: http://forum.mozilla-russia.org/viewtopic.php?id=3679
+! Пишите нам в теме «Фильтры для расширения Adblock Plus» по адресу:
+! http://forum.mozilla-russia.org/viewtopic.php?id=3679
 !
 ! = Ложные срабатывания (исключения) ==========================================
 ! Википедию не трогаем
@@ -1528,7 +1528,7 @@ oper.ru##DIV.banners,DIV#onlinedengi
 oszone.ru,oszone.net##DIV#topbanner
 !Первое правило (до запятой) так же влияет на forums.overclockers.ru.
 overclockers.ru##TABLE[width="100%"][height="67"],TABLE.navbg + DIV[align="center"]
-overclockers.ru##DIV.small + * + DIV P > TABLE TABLE > TBODY > TR > TD > *:not([id^="vote"]),IMG[src="/images/kva_rek_int.png"]
+overclockers.ru##DIV.small + * + DIV > P > TABLE TD[style*="rgb(204, 255, 255)"],IMG[src="/images/kva_rek_int.png"]
 overclockers.ru##IFRAME
 overclockers.ru/images/$object
 overclockers.ru/im_b/
