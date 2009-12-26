@@ -46,20 +46,10 @@ pics.rbc.ru/$image,object
 ! Антисчётчик
 /\/count(?:ers?)?[.?/]/$domain=~games-tv.ru
 ! Сайты со слишком короткими именами (что б не создавать массу дубль-правил)
-/[./](?:99z|clx|f2|i(?:pz|r)|ket|l(?:b[en]|og)|mn\d*|p(?:bg|op)|qle|r(?:ax|[bl]e)|s(?:bn|j\d*)|tle|vba|wbn|x(?:bn|4u))\.ru\//
+/[./](?:99z|clx|f2|ket|log|mn\d+|p(?:bg|op)|r(?:ax|be)|sbn|tle|vba|wbn|x4u)\.ru\//
 ! Прочие правила
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 /\/ad[svjx0-9]\//$domain=~mercatos.ru
-! Попытка отсеять мусор и убрать регулярку
-! Правило: /[/&?._-]re[ck]lamk?a/
-/reklama
-_reklama
--reclama
--reklama
-/reclama
-_reclama
-reclamka
-reklamka
 ! Попытка замены на правила из EasyList
 ! Антиразмер (блокировка баннеров по размеру указанному в имени файла)
 ! Правило: /\D(?:1(?:[05]0[-_x]3[05]0?|2[05][-_x](?:14|24|60?)0|60[-_x](?:60|8)0|80[-_x]150)|2(?:00[-_x][13]0|34[-_x](?:6|1[20])|40[-_x](?:35|40)|70[-_x]6)0|3(?:00[-_x](?:25|60)0|36[-_x]280|80[-_x]60|92[-_x]72)|4(?:00[-_x]40|[78]0[-_x]60|68[-_x](?:15|[68]0))|600[-_x](?:10|24)0|7(?:[60]0|[26]8)[-_x][679]0|8(?:[08][-_x](?:15|3[123])|00[-_x]60))\D/$domain=~fcenter.ru|~rp5.ru
@@ -151,7 +141,7 @@ reklamka
 *n728x90_*
 *_768x90_*
 ! Минимальная версия регулярки, как дополнение к списку выше.
-/[/_-](?:31[-_x]88|88[-_x]31)\D/
+/\D(?:31[-_x]88|88[-_x]31)\D/
 !
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://ad0
@@ -189,11 +179,19 @@ reklamka
 |http://top.$~stylesheet,~xmlhttprequest,third-party
 !
 ! = Блокировка отдельных баннеров по ключевым словам в адресе =================
+-reclama
+-reklama
+_reclama
+_reklama
+/reclama
+/reklama
+/se*kontakte
 -na-dosuge
 adserving
 ban_click
 love_qip_head
-/se*kontakte
+reclamka
+reklamka
 !
 ! = Web-Bugs (картинки 1x1) ===================================================
 /1x1.gif
@@ -959,6 +957,7 @@ zvukoff.ru/24open/*.jpg
 ||ipcounter.de/
 ||ipru.ru/i/
 ||ipru.ru/j/
+||ipz.ru/cgi-bin/
 ||kinotraff.ru/
 ||klickmedia.ru/
 ||kmindex.ru/
@@ -968,6 +967,8 @@ zvukoff.ru/24open/*.jpg
 ||kvasu.net/*/$object
 ||kwot.biz/
 ||lazonik.com/bnrs/
+||lbe.ru/cgi-bin/
+||lbn.ru/cgi-bin/
 ||letssex.
 ||libo.ru/rat/img/
 ||link.ru/
@@ -1057,6 +1058,7 @@ zvukoff.ru/24open/*.jpg
 ||prospero.ru/
 ||protizer.ru/
 ||qb.ru/buttons/
+||qle.ru/cgi-bin/
 ||quantserve.com/
 ||rada.com.ua/img/
 ||radikal.ru/$domain=imageshost.ru
@@ -1065,6 +1067,7 @@ zvukoff.ru/24open/*.jpg
 ||refer.ru/
 ||richarbuz.com/
 ||richbanner.ru/
+||rle.ru/cgi-bin/
 ||rmbn.ru/
 ||rnd.yxo.ru/
 ||rose.ixbt.com/
@@ -1077,6 +1080,17 @@ zvukoff.ru/24open/*.jpg
 ||sape.ru/bn/
 ||seo-sport.ru/
 ||seorate.ru/
+||sj1.ru/cgi-bin/
+||sj2.ru/cgi-bin/
+||sj3.ru/cgi-bin/
+||sj4.ru/cgi-bin/
+||sj5.ru/cgi-bin/
+||sj6.ru/cgi-bin/
+||sj7.ru/cgi-bin/
+||sj8.ru/cgi-bin/
+||sj9.ru/cgi-bin/
+||sj10.ru/cgi-bin/
+||sj11.ru/cgi-bin/
 ||shoutmix.com/?
 ||sitemeter.com/
 ||softbn.ru/*?
@@ -1120,6 +1134,7 @@ zvukoff.ru/24open/*.jpg
 ||wmirk.ru/
 ||ws.md/c.png?
 ||xanax.cbn.ru/
+||xbn.ru/cgi-bin/
 ||xcounter.ru/
 ||xklad.net/
 ||yadro.ru/
@@ -1587,6 +1602,9 @@ slo.ru##CENTER > TABLE:first-child:last-child *
 ||slo.ru/img/*_*x
 smart60.ru##CENTER > DIV,CENTER > TABLE
 ||smi2.ru/data/js/
+||sobesednik.ru/$object
+||sobesednik.ru/$subdocument
+||sobesednik.ru/upload/rk/
 soft-best.ws/forum/pict_4_rotator/
 soft-best.ws##NOINDEX
 soft-best.ws/$object
