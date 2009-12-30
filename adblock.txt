@@ -42,7 +42,7 @@ pics.rbc.ru/$image,object
 ! Антитоп
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet,~xmlhttprequest,domain=~8bitpeoples.com|~deviantart.com|~wikia.com
 ! Антибаннер
-/[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$domain=~citydom.ru|~vorbis.com|~admin.tomsk.ru|~allods.ru|~playground.ru
+/[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$domain=~admin.tomsk.ru|~allods.ru|~animestuff.org|~citydom.ru|~playground.ru|~vorbis.com
 ! Антисчётчик
 /\/count(?:ers?)?[.?/]/$domain=~games-tv.ru
 ! Сайты со слишком короткими именами (что б не создавать массу дубль-правил)
@@ -1687,8 +1687,7 @@ zaycev.net/m3_images/700/
 zaycev.net##*:not([nowrap="nowrap"]) > A[href^="http:"]:not([href*="zaycev.net"])
 zaycev.net##TABLE.advlinks
 zhmak.info##A[rel="nofollow"]
-zhmak.info##DIV[id*="_adv"]
-zhmak.info##TD[valign="top"] > NOINDEX
+zhmak.info##BODY > TABLE > TBODY > TR > TD[width="180"] + * + TD > *:not(.news)
 zoneofgames.ru$object
 zr.ru##DIV.br
 ||zr.ru/scripts/swfobject
