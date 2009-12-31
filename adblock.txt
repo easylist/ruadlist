@@ -29,11 +29,13 @@
 @@|http://stg.odnoklassniki.ru/res/
 !
 ! = Блокировка с исключениями =================================================
-opennet.ru/img/
-@@opennet.ru/img/i_
-pics.rbc.ru/$image,object
-@@|http://pics.rbc.ru/img/$image
-@@|http://pics.rbc.ru/quote/
+||kronverkcinema.ru/*attachment.rpc
+@@||kronverkcinema.ru/*attachment.rpc*,*,
+||opennet.ru/img/
+@@||opennet.ru/img/i_
+||pics.rbc.ru/$image,object
+@@||pics.rbc.ru/img/$image
+@@||pics.rbc.ru/quote/
 !
 ! = Системы определения блокировки рекламы ====================================
 @@.zshare.net/ads.js?
@@ -473,7 +475,6 @@ images.1tizer.com/
 images.letitbit.net/*ban_
 images.stardock.com/flash/
 images.stardock.com/store/
-img*.depositfiles.com/adroot/
 img.8coins.ru/
 img.carnage.ru/i/main/$object
 img.mail.ru/r/my/colage*.
@@ -905,6 +906,7 @@ zvukoff.ru/24open/*.jpg
 ||clix.ru/js/
 ||comp-ex.ru/
 ||cykahax.net/
+||depositfiles.*/adroot/
 ||diagar.com/files/$image
 ||dndd.ru/
 ||do.am/stat/
@@ -1559,6 +1561,7 @@ premiaruneta.ru/upload/iblock/
 premiaruneta.ru/upload/images/icon/
 premiaruneta.ru/upload/rk/
 prikol.ru##OBJECT#headlinebanner
+qiq.ru##A[rel="nofollow"]
 ||quasir.info/img/ret4/
 ||quasir.info/js.php?
 ||quasir.info/thumbnail.php?
