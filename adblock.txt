@@ -10,6 +10,8 @@
 ! http://forum.mozilla-russia.org/viewtopic.php?id=3679
 !
 ! = Ложные срабатывания (исключения) ==========================================
+! Никогда не блокируем иконки сайтов
+@@/favicon.ico|$image
 ! Википедию не трогаем
 @@||wikimedia.org/
 @@||wikipedia.org/
@@ -34,7 +36,6 @@
 ||opennet.ru/img/
 @@||opennet.ru/img/i_
 ||overclockers.ru/$image
-@@||overclockers.ru/favicon.ico|
 @@||overclockers.ru/images/$image
 ||pics.rbc.ru/$image,object
 @@||pics.rbc.ru/img/$image
