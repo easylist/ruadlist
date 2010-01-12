@@ -35,7 +35,7 @@
 @@||kronverkcinema.ru/*attachment.rpc*,
 ||opennet.ru/img/
 @@||opennet.ru/img/i_
-||overclockers.ru/$image
+||overclockers.ru/$image,object
 @@||overclockers.ru/images/$image
 ||pics.rbc.ru/$image,object
 @@||pics.rbc.ru/img/$image
@@ -51,14 +51,12 @@
 /[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$domain=~admin.tomsk.ru|~allods.ru|~animestuff.org|~citydom.ru|~playground.ru|~reanimedia.ru|~vorbis.com
 ! Антисчётчик
 /\/count(?:ers?)?[.?/]/$domain=~games-tv.ru
-! Сайты со слишком короткими именами (что б не создавать массу дубль-правил)
-/[./](?:99z|clx|f2|ket|log|mn\d+|p(?:bg|op)|r(?:ax|be)|sbn|tle|vba|wbn|x4u)\.ru\//
 ! Прочие правила
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 /\/ad[svjx0-9]\//$domain=~mercatos.ru
-! Попытка замены на правила из EasyList
-! Антиразмер (блокировка баннеров по размеру указанному в имени файла)
-! Правило: /\D(?:1(?:[05]0[-_x]3[05]0?|2[05][-_x](?:14|24|60?)0|60[-_x](?:60|8)0|80[-_x]150)|2(?:00[-_x][13]0|34[-_x](?:6|1[20])|40[-_x](?:35|40)|70[-_x]6)0|3(?:00[-_x](?:25|60)0|36[-_x]280|80[-_x]60|92[-_x]72)|4(?:00[-_x]40|[78]0[-_x]60|68[-_x](?:15|[68]0))|600[-_x](?:10|24)0|7(?:[60]0|[26]8)[-_x][679]0|8(?:[08][-_x](?:15|3[123])|00[-_x]60))\D/$domain=~fcenter.ru|~rp5.ru
+!
+! = Блокировка баннеров по размеру в пути к картинке ==========================
+/\D(?:31[-_x]88|88[-_x]31)\D/
 *_120_600*
 *_120x600*
 *-120x600*
@@ -122,6 +120,7 @@
 */480x60/*
 */480x60.*
 *600x200_*
+*/700x70_*
 *_720x90.*
 *_728_90.*
 */728_90/*
@@ -146,8 +145,6 @@
 *728x90.s*
 *n728x90_*
 *_768x90_*
-! Минимальная версия регулярки, как дополнение к списку выше.
-/\D(?:31[-_x]88|88[-_x]31)\D/
 !
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://ad0
@@ -208,9 +205,19 @@ reklamka
 .adv.*/cgi-bin/iframe/*?
 .advertising.
 .all.by/
+.clx.ru/
+.ket.ru/
+.log.ru/
+.pbg.ru/
+.pop.ru/
 .r.msn.com/
+.rbe.ru/
 .ru/_scripts/themes/sb.js|
+.sbn.ru/
 .spylog.$image,script
+.tle.ru/
+.vba.ru
+.wbn.ru
 //a.gismeteo.
 //li.ru/*?
 //m2k.ru^
@@ -227,6 +234,7 @@ reklamka
 /adriver_
 /ads_iframe.
 /advert.
+/advert/*
 /advertisement/*
 /adview.
 /ad_show.$script
@@ -263,6 +271,7 @@ reklamka
 /pagerank/*$image
 /peelad/*$script
 /phpads/*
+/pop.ru/*
 /popuptraf
 ! Реклама с adfox.ru. У них несколько серверов и иногда указывается IP-адрес.
 /prepareCode?*&prr=
@@ -273,6 +282,7 @@ reklamka
 /pub_banners/*
 /qzx.ru/gf/*
 /rankem.cgi?action=
+/rax.ru/*
 /rekban/*
 /rnb.php?id=informer
 /shared/promos/*
@@ -471,7 +481,6 @@ hypernews.ru/*.js
 i.j2j.ru/
 i.mabila.ua/$domain=~mabila.ua
 icqmoney.com/icqbox.php?id=
-icqwindow
 iframe.mediaplazza.com/
 iframepay.com/
 images.1tizer.com/
@@ -838,9 +847,9 @@ zvukoff.ru/24open/*.jpg
 ||4smi.ru/
 ||74.ru/textblocks/
 ||7rtv.com/
+||8coins.net/
 ||8test.ru/
 ||8testov.ru/
-||8coins.net/
 ||a.kavanga.ru/
 ||abhad.net/
 ||abn.com.ua/
@@ -926,6 +935,7 @@ zvukoff.ru/24open/*.jpg
 ||euros4click.de/
 ||ex6.ru/k/
 ||extreme-dm.com/
+||f2.ru/iframe
 ||fair.ru/*/i.php?
 ||fairlink.ru/
 ||farle.ru/?bn=
@@ -950,7 +960,9 @@ zvukoff.ru/24open/*.jpg
 ||hit.gemius.pl/
 ||hitlist.ru
 ||i.i.ua/r/
+||icq-window.
 ||icqtraff.org/
+||icqwindow.
 ||id5.ru/system/
 ||idge.ru/js_search.php?
 ||igrushek.net/ad/
@@ -993,6 +1005,10 @@ zvukoff.ru/24open/*.jpg
 ||megacliks.com/
 ||metroclick.ru/
 ||mixmarket.biz/
+||mn1.ru/cgi-bin/
+||mn2.ru/cgi-bin/
+||mn3.ru/cgi-bin/
+||mn4.ru/cgi-bin/
 ||mochiads.com/
 ||moijs.com/
 ||moovy.ru/b*.php?
@@ -1087,6 +1103,8 @@ zvukoff.ru/24open/*.jpg
 ||sape.ru/bn/
 ||seo-sport.ru/
 ||seorate.ru/
+||shoutmix.com/?
+||sitemeter.com/
 ||sj1.ru/cgi-bin/
 ||sj2.ru/cgi-bin/
 ||sj3.ru/cgi-bin/
@@ -1098,8 +1116,6 @@ zvukoff.ru/24open/*.jpg
 ||sj9.ru/cgi-bin/
 ||sj10.ru/cgi-bin/
 ||sj11.ru/cgi-bin/
-||shoutmix.com/?
-||sitemeter.com/
 ||smartb.2gsg.com/
 ||softbn.ru/*?
 ||spbland.ru/bban/
@@ -1120,11 +1136,11 @@ zvukoff.ru/24open/*.jpg
 ||trafunder
 ||tynt.com/
 ||ualink.info/*?
-||ucoz.net/img/bn/
-||ucoz.net/img/ma/
 ||ucoz.*/abnl/?*_referrer=
 ||ucoz.*/main/?a=ustat;
 ||ucoz.*/stat/*http%3A//
+||ucoz.net/img/bn/
+||ucoz.net/img/ma/
 ||underclick.
 ||vicepiter.ru/
 ||videoclick.
@@ -1142,12 +1158,13 @@ zvukoff.ru/24open/*.jpg
 ||webvisor.ru/
 ||wmirk.ru/
 ||ws.md/c.png?
+||x4u.ru/cgi-bin/
 ||xanax.cbn.ru/
 ||xbn.ru/cgi-bin/
 ||xcounter.ru/
 ||xklad.net/
-||yadro.ru/
 ||yabs.yandex.ru/
+||yadro.ru/
 ||yandex.*/cy?base=0&host=
 ||yandex.*/cycounter?
 ||yandex.*/resource/
@@ -1545,7 +1562,6 @@ overclockers.ru##TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7
 overclockers.ru##TABLE[width="303"][style]
 overclockers.ru##A[target="_blank"] > IMG[width^="4"][height="60"]
 overclockers.ru##IFRAME
-overclockers.ru/images/$object
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 ||ozon.ru/graphics/$object
