@@ -57,10 +57,11 @@
 !
 ! = Блокировка баннеров по размеру в пути к картинке ==========================
 /\D(?:31[-_x]88|88[-_x]31)\D/
-*/700x70_*
 *_160x240*
 *-160x240*
 */160x240*
+*/700x70_*
+*/768x90.*
 ! Копия из EasyList (12 Jan 2010)
 *-120x600*
 *-160x600*
@@ -167,6 +168,40 @@
 *_768x90_*
 *e120x600*
 *n728x90_*
+!
+! = Скрытие баннеров по указанному размеру картинки ===========================
+##IMG[width^="8"][height="15"]
+##IMG[width="88"][height^="3"]
+##IMG[width="100"][height="35"]
+##IMG[width="120"][height^="60"]
+##IMG[width="120"][height="90"]
+##IMG[width="120"][height="240"]
+##IMG[width="120"][height="140"]
+##IMG[width="125"][height="125"]
+##IMG[width="160"][height="80"]
+##IMG[width="160"][height="240"]
+##IMG[width="160"][height="600"]
+##IMG[width="180"][height="150"]
+##IMG[width="200"][height="100"]
+##IMG[width="234"][height="60"]
+##IMG[width="240"][height="400"]
+##IMG[width="250"][height="250"]
+##IMG[width="300"][height="250"]
+##IMG[width="300"][height="600"]
+##IMG[width="380"][height="60"]
+##IMG[width="336"][height="280"]
+##IMG[width="392"][height="72"]
+##IMG[width="400"][height="40"]
+##IMG[width="468"][height="60"]
+##IMG[width="468"][height="80"]
+##IMG[width="470"][height="60"]
+##IMG[width="480"][height="60"]
+##IMG[width="600"][height="100"]
+##IMG[width="700"][height="70"]
+##IMG[width="720"][height="90"]
+##IMG[width="728"][height="60"]
+##IMG[width="728"][height="90"]
+##IMG[width="800"][height="60"]
 !
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://ad0
@@ -850,6 +885,7 @@ zvukoff.ru/24open/*.jpg
 ||188.72.225.106^
 ||194.135.105.172^
 ||195.82.146.52^
+||195.239.111.200^
 ||217.16.18.213^
 ||217.16.18.214^
 ||012345.ru/upload/
@@ -1069,8 +1105,7 @@ zvukoff.ru/24open/*.jpg
 ||plesen.net/kp*.
 ||plus10sm.ru/
 ||pochesun.com/
-||pochta.ru/$object
-||pochta.ru/hosting/
+||pochta.ru/
 ||poisk.su/img.php?
 ||poisk.su/top.php?
 ||pokaifu.com/templates/
@@ -1420,13 +1455,9 @@ ferra.ru##DIV.notik,DIV.oki
 ||ferra.ru/images/news/*.gif
 ||ferra.ru/include/*_advert_
 file-online.ru##DIV.block_text
-fishki.net##A[href^="http:"]:not([href*="fishki.net"]):not([href*=".live"]) *:not([src*="bonus"]):not([src*="fishki_net"])
-fishki.net##BODY > TABLE TR:first-child > TD:first-child > DIV.baner_l + * + * + * + DIV.block
-fishki.net##BODY > TABLE[width="100%"] > TBODY:first-child > TR:last-child > TD:last-child > DIV:first-child
-fishki.net##DIV[id^="medialand_adland"] + DIV.block
-fishki.net##DIV#line + TABLE TR:first-child > TD:last-child > SCRIPT[src*="xajax"] + TABLE
-fishki.net##DIV#line + TABLE TR:first-child > TD:last-child > SCRIPT[src*="xajax"] + TABLE + BR + TABLE
+fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
 fishki.net##IFRAME
+||fishki.net/*/ad/b/
 forum.ixbt.com##TABLE.top_ad2
 forum.ru-board.com##BODY > CENTER TABLE:first-child
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
@@ -1581,7 +1612,6 @@ oszone.ru,oszone.net##DIV#topbanner
 ! Широкие полосы с мусором, теперь проверяются все размеры с высотой на 6 или 7
 overclockers.ru##TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"],TABLE.navbg + DIV[align="center"]
 overclockers.ru##TABLE[width="303"][style]
-overclockers.ru##A[target="_blank"] > IMG[width^="4"][height="60"]
 overclockers.ru##IFRAME
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
