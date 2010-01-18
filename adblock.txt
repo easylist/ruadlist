@@ -53,7 +53,7 @@
 /\/count(?:ers?)?[.?/]/$domain=~games-tv.ru
 ! Прочие правила
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
-/\/ad[svjx0-9]\//$domain=~mercatos.ru
+/\/ad[svjx0-9]\//$domain=~mercatos.ru|~gamespot.com
 !
 ! = Блокировка баннеров по размеру в пути к картинке ==========================
 /\D(?:31[-_x]88|88[-_x]31)\D/
@@ -229,6 +229,7 @@
 |http://counter.
 |http://counting.
 |http://hit.$third-party
+|http://mads.
 |http://partner.
 |http://partners.
 |http://top.$~stylesheet,~xmlhttprequest,third-party
@@ -249,7 +250,7 @@ reclamka
 reklamka
 !
 ! = Web-Bugs (картинки 1x1) ===================================================
-/1x1.gif
+/1x1.gif$domain=~nextmail.ru|~nxt.ru|~epage.ru|~email.su|~student.su|~hu2.ru|~xaker.ru|~mail2k.ru|~dezigner.ru|~programist.ru
 /1x1.png
 /pixel.php?
 !
@@ -967,6 +968,7 @@ zvukoff.ru/24open/*.jpg
 ||clickopen.ru/
 ||clipta.com/informer/
 ||clix.ru/js/
+||com.com/*/Ads/common/
 ||comp-ex.ru/
 ||cykahax.net/
 ||depositfiles.*/adroot/
