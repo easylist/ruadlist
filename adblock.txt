@@ -49,7 +49,7 @@
 !
 ! = Фильтры по регулярным выражениям ==========================================
 ! Антитоп
-/[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet,~xmlhttprequest,domain=~8bitpeoples.com|~deviantart.com|~wikia.com
+/[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet,~xmlhttprequest,domain=~8bitpeoples.com|~cubeecraft.com|~deviantart.com|~wikia.com
 ! Антибаннер
 /[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$domain=~admin.tomsk.ru|~allods.ru|~animestuff.org|~citydom.ru|~playground.ru|~reanimedia.ru|~vorbis.com
 ! Антисчётчик
@@ -109,7 +109,8 @@
 *.728x90_*
 */120x600*
 */160x600*
-*/300x250*
+! Добавлено исключение по домену
+*/300x250*$domain=~cubeecraft.com
 */336x280*
 */468by60*
 */468x60-*
