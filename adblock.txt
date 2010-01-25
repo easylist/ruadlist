@@ -297,13 +297,11 @@ reklamka
 /adview.
 /ad_show.$script
 /all.by/*
-/an.yandex.ru/*
 /banman/*
 /begun.js
 /bitrix/spread.php?
 /bs.mybb.ru/*
 /bs.nigma.ru/*$domain=~nigma.ru
-/bs.yandex.ru/*
 /by.banclk?
 /clickheat.
 /counted/*
@@ -417,7 +415,6 @@ bnr.volgocity.ru
 bookarchive.ru/img/filmplus/ban
 box.net.pl/strony/topsites/img.php?
 br.gcl.ru/cgi-bin/br/
-button.blogs.yandex.net/
 bx.metka.ru/
 c.uarating.com
 c2001.ent.spyrix.ru/user.aic?
@@ -579,7 +576,6 @@ kolobok.us/button/
 komisite.ru/images/ban*.gif
 l.foto.radikal.ru/0701/*.gif
 lenamila.com/obzlite/
-lenta.yandex.ru/i/
 life4life.biz/
 link-ip.int.ru/in.php?
 linkhelp.clients.google.com/tbproxy/lh/wm
@@ -1224,11 +1220,7 @@ zvukoff.ru/24open/*.jpg
 ||xbn.ru/cgi-bin/
 ||xcounter.ru/
 ||xklad.net/
-||yabs.yandex.ru/
 ||yadro.ru/
-||yandex.*/cy?base=0&host=
-||yandex.*/cycounter?
-||yandex.*/resource/
 ||yieldmanager.com/
 ||znews.su/
 ||zoy.org/
@@ -1243,6 +1235,18 @@ zvukoff.ru/24open/*.jpg
 ||oneund.ru/
 ||ruigra.com/
 ||textun.ru/
+! Весь Яндекс в одном месте -_-
+yandex.ru##*#direct
+yandex.ru##DIV.ad,DIV.go-ad-all,DIV.intadv,DIV#banner
+|http://wimg.yandex.net/12/54/t-12542.png|
+||an.yandex.
+||bs.yandex.
+||button.blogs.yandex.
+||lenta.yandex.*/i/
+||mc.yandex.
+||yabs.yandex.
+||yandex.*/cy?base=0&host=
+||yandex.*/cycounter?
 ! Излишне универсальные правила. Теоретически их можно совсем удалить.
 /popup.js$third-party,domain=~yandex.ru
 /popup/*$third-party
@@ -1761,8 +1765,6 @@ x-console.com##A[href*="=banner&"]:not([href*=".x-console.com%2Fmagazine"]),*[id
 ||x-soft.tomsk.ru/dsa/
 x-torrents.ru##TD.reklam
 ||x-torrents.ru/xxx/$image
-yandex.ru##*#direct
-yandex.ru##DIV.ad,DIV.go-ad-all,DIV.intadv,DIV#banner
 ||yapfiles.*/files/$object
 yaplakal.com,yap.ru##DIV[style*="/top-line-bg.gif"]
 yaplakal.com,yap.ru##NOINDEX > *:not([class="postdetails"])
@@ -1781,5 +1783,5 @@ zr.ru##DIV.br
 ||zr.ru/scripts/swfobject
 |http://pics.top.rbc.ru/top_pics/jslib/cookies.js
 |http://powertracker.org/images/Talky3D.gif
-|http://wimg.yandex.net/12/54/t-12542.png
+
 
