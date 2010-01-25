@@ -1,14 +1,13 @@
 [Adblock Plus 0.7.5.5]
 !Original Block List http://ruadlist.googlecode.com/svn/trunk/adblock.txt
 !==========================
-@@|http://images.google.*/images?
 @@|http://img.aport.ru/docstorage.dll?
 @@|http://nglib.ru/register.jsp|
 ##*[id*="Banner"]
 ##*[class^="begun"]
 ##A[href^="http://pen007.ru/?partner=""]
 ##TABLE[width="468"][height="60"]
-##DIV[class^="banner"]$domain="~sharingmatrix.com
+##DIV[class^="banner"]$domain=~sharingmatrix.com
 ##*[class$="-ad"]
 ##DIV[class*="advertisement"]
 ##DIV[id$="sponsoredoffers"]
@@ -17,6 +16,7 @@
 ##DIV[id$="_ads"]
 ##A[style*="width: 88px"][style*="height: 31px"]
 ##IMG[width="100"][height="35"]
+##IMG[width="120"][height="90"]$domain=~wikipedia.org
 ##IMG[width="125"][height="125"]
 ##IMG[width="180"][height="150"]
 ##IMG[width="200"][height="100"]
