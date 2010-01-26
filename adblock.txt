@@ -292,7 +292,8 @@ reklamka
 /adimage.php
 /adland.php
 /adrevolver/*
-/adriver_
+/adriver/*$image,object
+/adriver_async.js
 /ads_iframe.
 /advert.
 /advert/*
@@ -1245,6 +1246,7 @@ yandex.ru##DIV.ad,DIV.go-ad-all,DIV.intadv,DIV#banner
 ||an.yandex.
 ||bs.yandex.
 ||button.blogs.yandex.
+||clck.yandex.
 ||kiks.yandex.
 ||lenta.yandex.*/i/
 ||mc.yandex.
@@ -1629,9 +1631,8 @@ opensharing.ru,opensharing.org##DIV[id*="banner"],DIV#content CENTER > A[target=
 oper.ru##DIV.banners,DIV#onlinedengi
 oszone.ru,oszone.net##DIV#topbanner
 ! Широкие полосы с мусором, теперь проверяются все размеры с высотой на 6 или 7
-overclockers.ru##TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"],TABLE.navbg + DIV[align="center"]
-overclockers.ru##TABLE[width="303"][style]
-overclockers.ru##IFRAME
+overclockers.ru##IFRAME,TABLE.navbg + DIV[align="center"],A[target="_blank"] > IMG[height="60"]
+overclockers.ru##TABLE[width="303"][style],TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 ||ozon.ru/graphics/$object
@@ -1676,6 +1677,7 @@ r.radikal.ru/STATIC/PLASTIC_MEDIA/$object
 ||ru-board.com*/temp/
 ||ru-board.com*/xmtmp/
 ||rugrad.eu/upload/bx/
+russia.ru##DIV.reklam-block
 ||russianews.ru/img/b/
 russianews.ru##TD.chapterbans[width="15%"]:last-child
 samlab.ws##DIV#left > DIV:nth-child(n+3)
@@ -1786,7 +1788,7 @@ zhmak.info##BODY > TABLE > TBODY > TR > TD[width="180"] + * + TD > *:not(.news)
 zoneofgames.ru$object
 zr.ru##DIV.br
 ||zr.ru/scripts/swfobject
-|http://pics.top.rbc.ru/top_pics/jslib/cookies.js
-|http://powertracker.org/images/Talky3D.gif
-
-
+! Блокировка отдельных файлов
+||ibm.com/developerworks/everywhere/ew.js
+||pics.top.rbc.ru/top_pics/jslib/cookies.js
+||powertracker.org/images/Talky3D.gif
