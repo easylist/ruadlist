@@ -203,6 +203,11 @@
 ##IMG[width="728"][height="90"]
 ##IMG[width="800"][height="60"]
 !
+! = Скрытие блоки по указанному размеру в стиле ===============================
+##[style*="width: 468px"][style*="height: 60px"]
+##[style*="width: 468px"][style*="height: 80px"]
+##[style*="width: 728px"][style*="height: 90px"]
+!
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://ad0
 |http://ad1
@@ -1385,8 +1390,8 @@ zakladka.org.ua/$third-party
 !
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
 2baksa.net,2baksa.ws##A[href*="/go.php?url="]:not([href*=".webmoney."]):not([href*=".google."])
-2baksa.net,2baksa.ws##TD.td_blocks + TD > *:not([style*="px 5px 10px;"]):not(.smalltext):not(.theme-news-home-title):not(.pageswitch):not(#container):not([style="padding-left: 3px;"]):not([style="width: 100%;"])
 2baksa.net,2baksa.ws##TD.td_blocks + TD > DIV > DIV[style*="clear:"][style*="float:"]
+2baksa.net,2baksa.ws##TD.td_blocks + TD > *:not([style*="px 5px 10px;"]):not(.smalltext):not(.theme-news-home-title):not(.pageswitch):not(#container):not([style="padding-left: 3px;"]):not([style="width: 100%;"])
 3dnews.ru##DIV.mbanner
 advs.gismeteo.com/
 agronews.ru/images/*.gif
@@ -1478,9 +1483,9 @@ ferra.ru##DIV.notik,DIV.oki
 ||ferra.ru/images/news/*.gif
 ||ferra.ru/include/*_advert_
 file-online.ru##DIV.block_text
+||fishki.net/*/ad/b/
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
 fishki.net##IFRAME
-||fishki.net/*/ad/b/
 forum.ixbt.com##TABLE.top_ad2
 forum.ru-board.com##BODY > CENTER TABLE:first-child
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
@@ -1513,8 +1518,8 @@ habrahabr.ru##DIV.banner
 hardwareportal.ru,hwp.ru##DIV[class^="promo"]
 hardwareportal.ru,hwp.ru##DIV[class*="tbann"]
 hdtracker.ru##TD[width="100%"] + TD[width="160"][valign="top"]
-hideme.ru##*[id*="hidemead"]
 ||hideme.ru/ad.js
+hideme.ru##*[id*="hidemead"]
 hmn.ru##BODY > TABLE[width="100%"]:first-child
 hmn.ru##INDEX > CENTER:last-child > TABLE.m11[width="480"]
 hmn.ru##INDEX > CENTER:last-child > TABLE[width="95%"]
@@ -1632,7 +1637,6 @@ opennet.ru##CENTER#adv
 opensharing.ru,opensharing.org##DIV[id*="banner"],DIV#content CENTER > A[target="_blank"],DIV#sidebar CENTER > A
 oper.ru##DIV.banners,DIV#onlinedengi
 oszone.ru,oszone.net##DIV#topbanner
-! Широкие полосы с мусором, теперь проверяются все размеры с высотой на 6 или 7
 overclockers.ru##IFRAME,TABLE.navbg + DIV[align="center"],A[target="_blank"] > IMG[height="60"]
 overclockers.ru##TABLE[width="303"][style],TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
 ||ozon.ru/graphics/img/
@@ -1679,16 +1683,16 @@ r.radikal.ru/STATIC/PLASTIC_MEDIA/$object
 ||ru-board.com*/temp/
 ||ru-board.com*/xmtmp/
 ||rugrad.eu/upload/bx/
-russia.ru##.banner-wrap,.reklam-block
 ||russianews.ru/img/b/
 russianews.ru##TD.chapterbans[width="15%"]:last-child
+russia.ru##.banner-wrap,.reklam-block
 samlab.ws##DIV#left > DIV:nth-child(n+3)
 samlab.ws##DIV.main > DIV:not(.about):first-child
 samlab.ws##DIV.main > TABLE
-samlab.ws##OL#soft-new A[target="_blank"] > IMG
 samlab.ws/file/
 samlab.ws/img/$object
 samlab.ws##LI.soft-day:not(:first-child) > DIV.box
+samlab.ws##OL#soft-new A[target="_blank"] > IMG
 scteam.ru##A[target="blank"] > SPAN
 scteam.ru##TD[valign="top"] > BR + * + * + * + * + * + TABLE[width="100%"] > TBODY > TR:first-child > TD[style="border-left: 1px solid rgb(249, 170, 49); border-right: 1px solid rgb(249, 170, 49); border-bottom: 1px solid rgb(249, 170, 49); padding: 5px;"]:first-child
 scteam.ru##TD[width="185"][valign="top"]:last-child > TABLE:first-child + * + * + * + * + TABLE[width="100%"]
@@ -1717,8 +1721,8 @@ softoroom.net##DIV[id^="fo_cblock"]
 softoroom.net/forex/
 ||sovsport.ru/banner-item/
 ||sovsport.ru/ib
-||sport.*ua/images/$object
 sport-express.ru##DIV[style*=".sport-express.ru/img/banners/"]
+||sport.*ua/images/$object
 s.tfile.ru/images/kfforex.jpg
 styanulo.ru##DIV.banner
 tehnosila.ru##DIV#banner_street
@@ -1726,18 +1730,16 @@ terabit.biz##NOINDEX
 tfile.ru##DIV[id$="_ban"]
 tfile.ru##IFRAME
 tfile.ru##TABLE#home_c TD#lcol:first-child
-theplace.ru##TD.td_main > NOINDEX > TABLE
 ||theplace.ru/images/forma/
+theplace.ru##TD.td_main > NOINDEX > TABLE
+||torrents.ru/*/640x75
 torrents.ru##DIV#bn-bot-wrap
 torrents.ru##DIV#page_footer > TABLE[style="margin: 8px auto 6px;"]
+||torrents.ru/forum/035/
 torrents.ru##IFRAME
+||torrents.ru/$object
 torrents.ru##TD#sidebar1 DIV.tCenter > FORM
 torrents.ru##TR#f-11:last-child
-||torrents.ru/*/640x75
-||torrents.ru/forum/035/
-||torrents.ru/$object
-torrents.vtomske.ru##.vtomske-body,[style*="width: 468px; height: 60px;"],[id^="page_"]>table[width="100%"]:first-child
-torrents.vtomske.ru###forums_wrap > DIV:not([class]),#forums_wrap > DIV:not([class])+DIV
 torrentz.com##DIV.download > H2 + DL
 torrentz.com##DIV[style="width: 1000px; margin: 0pt auto;"]
 translate.ru/App_Themes/Default/begLoad/
@@ -1760,10 +1762,13 @@ vkontakte.ru##A.ad_box
 vkontakte.ru##DIV#sideBar > DIV.leftAd
 vkontakte.ru##DIV[style="margin-top: 3px; font-size: 10px; text-align: center;"] > A[href="help.php?page=target"]
 ||voffka.com/archives/
-||voffka.com/js/duxy
 voffka.com##DIV.blog > DIV[align="center"]:last-child
+||voffka.com/js/duxy
 voffka.com##NOINDEX
 ||vtomske.ru/$object
+vtomske.ru##[style*="width: 200px"][style*="height: 200px"],[style*="width: 300px"][style*="height: 70px"],[style*="width: 310px"][style*="height: 70px"]
+vtomske.ru##[style*="width: 600px"][style*="height: 70px"],[style*="width: 240px"][style*="height: 140px"],[style*="width: 240px"][style*="height: 280px"]
+vtomske.ru##.vtomske-body[style="height: 37px;"],DIV[style="padding-top: 5px;"] *
 weather.ru.msn.com/msn_kp/
 webpark.ru##DIV#Experts
 webpark.ru##DIV.kontent A[target^="_blank"][href^="http:"]:not([href*="webpark.ru"]) IMG
