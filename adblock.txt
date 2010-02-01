@@ -31,6 +31,8 @@
 @@|http://stg.odnoklassniki.ru/res/
 !
 ! = Блокировка с исключениями =================================================
+||ag.ru/images/
+@@||ag.ru/images/*/
 ||kronverkcinema.ru/*attachment.rpc
 @@||kronverkcinema.ru/*attachment.rpc*,
 ||opennet.ru/img/
@@ -242,7 +244,7 @@
 |http://mads.
 |http://partner.
 |http://partners.
-|http://top.$~stylesheet,~xmlhttprequest,third-party
+|http://top.$~stylesheet,~xmlhttprequest,third-party,domain=~ag.ru
 !
 ! = Блокировка отдельных баннеров по ключевым словам в адресе =================
 -reclama
@@ -1406,7 +1408,6 @@ ag.ru##DIV.newsbot.bbg + BR + CENTER
 ag.ru##DIV#rotating_banners:first-child
 ag.ru##DIV#upadbg2.mt5:last-child
 ||ag.ru/framer/
-||ag.ru/images/
 ||ag.ru/jscodes/ushi_dyn/
 ag.ru##TD.s2:first-child + TD.s[width="19%"][nowrap][align="center"]
 ag.ru##TR:first-child > TD:first-child > TABLE.mt3[width="100%"]:first-child
