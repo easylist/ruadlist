@@ -33,6 +33,8 @@
 @@|http://stg.odnoklassniki.ru/res/
 !
 ! = Блокировка с исключениями =================================================
+||2baksa.net/download/
+@@||2baksa.net/download/*/$image
 ||ag.ru/images/
 @@||ag.ru/images/*/
 ||kronverkcinema.ru/*attachment.rpc
@@ -1086,6 +1088,7 @@ zvukoff.ru/24open/*.jpg
 ||mn4.ru/cgi-bin/
 ||mochiads.com/
 ||moijs.com/
+||moneyteacher.ru^
 ||moovy.ru/b*.php?
 ||moy.su/stat/
 ||my1.ru/stat/
@@ -1099,6 +1102,7 @@ zvukoff.ru/24open/*.jpg
 ||nimp.org/
 ||noion.ru/
 ||nomer1.ru.ru/
+||nowa.cc/showthread.php?*http://
 ||nyx.su/informers/
 ||one.ru/cgi-bin
 ||oowl.ru/ab/
@@ -1402,7 +1406,7 @@ zakladka.org.ua/$third-party
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
 !
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
-2baksa.net,2baksa.ws##A[href*="/go.php?url="]:not([href*=".webmoney."]):not([href*=".google."])
+2baksa.net,2baksa.ws##BODY > DIV > DIV > A[href*="/go.php?url="] > IMG[src*="2baksa.net/download/images/"]
 2baksa.net,2baksa.ws##TD.td_blocks + TD > DIV > DIV[style*="clear:"][style*="float:"]
 2baksa.net,2baksa.ws##TD.td_blocks + TD > *:not([style*="px 5px 10px;"]):not(.smalltext):not(.theme-news-home-title):not(.pageswitch):not(#container):not([style="padding-left: 3px;"]):not([style="width: 100%;"])
 3dnews.ru##DIV.mbanner
