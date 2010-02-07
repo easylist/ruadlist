@@ -29,8 +29,9 @@
 @@||e-travel.com/$stylesheet
 @@stopgame.ru/js/$object
 ! Прочие исключения
-@@deviantart.com/global/difi/?$subdocument
-@@|http://stg.odnoklassniki.ru/res/
+@@||deviantart.com/global/difi/?$subdocument
+@@||odnoklassniki.ru/res/
+@@||citydom.ru^$document
 !
 ! = Блокировка с исключениями =================================================
 ||2baksa.net/download/
@@ -59,7 +60,7 @@
 ! Антитоп
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~background,~stylesheet,~xmlhttprequest,third-party
 ! Антибаннер
-/[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$domain=~admin.tomsk.ru|~allods.ru|~animestuff.org|~citydom.ru|~playground.ru|~reanimedia.ru|~vorbis.com
+/[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$~background,~stylesheet,~xmlhttprequest,third-party
 ! Антисчётчик
 /\/count(?:ers?)?[.?/]/$domain=~games-tv.ru
 ! Прочие правила
@@ -220,7 +221,7 @@
 |http://ad9
 |http://adfarm
 |http://ad.$~object_subrequest,domain=~europa.eu|~sjsu.edu|~uitm.edu.my|~uni-freiburg.de
-|http://ads.$domain=~citydom.ru
+|http://ads.
 |http://ads0
 |http://ads1
 |http://ads2
@@ -889,7 +890,7 @@ zvukoff.ru/24open/*.jpg
 ||91.194.251.66^
 ||188.72.225.106^
 ||194.135.105.172^
-||194.186.121.35^
+||194.186.121.35^$domain=~mail.ru
 ||195.82.146.52^
 ||195.239.111.200^
 ||212.150.34.114^
@@ -1396,19 +1397,20 @@ zakladka.org.ua/$third-party
 ! Скрываем рекламу на форумах, на myBB-движке
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
 ! Партнёрские ссылки на торрент-трекерах
-##A[target="_blank"][href*=".idownloadaccess.com"]
-##A[target="_blank"][href*=".alivetorrents.com"]
+##A[target="_blank"][href*=".10xdownloads.com"]
 ##A[target="_blank"][href*=".alivedownload.com"]
-##A[target="_blank"][href*=".torrentdownloads.net"]
+##A[target="_blank"][href*=".alivetorrents.com"]
+##A[target="_blank"][href*=".fileindexer.com"]
+##A[target="_blank"][href*="/files-netexpress.com"]
+##A[target="_blank"][href*=".filestube.com"]
 ##A[target="_blank"][href*=".freshwap.net"]
+##A[target="_blank"][href*=".friendlyduck.com"]
+##A[target="_blank"][href*=".idownloadaccess.com"]
+##A[target="_blank"][href*="/jetdl.com"]
 ##A[target="_blank"][href*="/NowDownloadAll.com"]
 ##A[target="_blank"][href*=".sumotorrent.com"]
-##A[target="_blank"][href*="/files-netexpress.com"]
+##A[target="_blank"][href*=".torrentdownloads.net"]
 ##A[target="_blank"][href*=".torrentreactor.net"]
-##A[target="_blank"][href*=".fileindexer.com"]
-##A[target="_blank"][href*=".filestube.com"]
-##A[target="_blank"][href*=".friendlyduck.com"]
-##A[target="_blank"][href*=".10xdownloads.com"]
 !
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
 2baksa.net,2baksa.ws##BODY > DIV > DIV > A[href*="/go.php?url="] > IMG[src*="2baksa.net/download/images/"]
@@ -1554,7 +1556,7 @@ hotcharts.ru##TABLE.archive + NOINDEX
 idownloads.ru/content/666/
 ||ifolder.ru/*-brend.css
 ifolder.ru##[id*="anchor"]
-imagereverb.com##IFRAME
+imagereverb.com##IFRAMEo
 images.google.com,images.google.ru##TABLE[style^="padding: 8px; background: rgb(255, 248, 221) none repeat scroll 0%"]
 /images/mid/h-anons.$domain=hardwareportal.ru|hwp.ru
 images.rambler.ru/upl/$domain=~nova.rambler.ru
@@ -1653,7 +1655,7 @@ ochevidec.net##A[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejou
 ochevidec.net##IFRAME
 onegadget.ru/$object
 ||opennet.ru/adv_
-opennet.ru##CENTER#adv
+opennet.ru##CENTER#adv,FORM + * + * + TABLE
 ||opensharing.$object
 ||opensharing.*/pics/
 opensharing.ru,opensharing.org##DIV[id*="banner"],DIV#content CENTER > A[target="_blank"],DIV#sidebar CENTER > A
