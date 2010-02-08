@@ -363,7 +363,6 @@ reklamka
 /xgemius.js|
 13rus.ru/img/
 2pay.ru/gif/terminal.swf?link=
-a.ucoz.net/a
 abc-people.com/bann_
 active.interzet.ru/log.php?
 adlik.akavita.com/*?
@@ -474,7 +473,6 @@ dewis.spb.ru
 digisat.ru/*.gif
 dimpy.narod.ru
 direct.quasir.info
-disp*.richtraffic.ru/*.js
 dl2.ru/catalog.php?
 dload.net.ru/*.gif
 dlsite.com/modpub/banner_ad/
@@ -528,7 +526,6 @@ glows.ru/shape.php
 go.bb.ru/images/
 go.jetswap.com
 go.media-x.ru
-go.richtraffic.ru
 google-add.com/button/
 google-analistyc.
 google-analytics.com$domain=~earth.google.com|~imageshack.us
@@ -761,7 +758,6 @@ sorcerers.net/includes/butler/butler.php?
 spbfp.atlant.ru
 spitter.pauk.ru/
 spytrack.tic.ru/
-src.ucoz.net/img/cp/
 stat.aport.ru/
 stat.gala.net/
 static.exaccess.ru/
@@ -779,7 +775,6 @@ t.pusk.ru/
 tak.ru/in.php?
 takru.com/in.php?id=
 tbe.tom.ru/?
-tds.richtraffic.ru/direct.php?
 teenseks.da.ru
 temp.theabyss.ru/1/botva/
 testsbox.ru/autotest.js?
@@ -950,8 +945,9 @@ zvukoff.ru/24open/*.jpg
 ||amung.us/
 ||at.ua/stat/
 ||atdmt.com/
-||b-one.com.ua/
-||b.vtomske.ru/
+||b-one.com.ua^
+||b.candy.vl.ru^
+||b.vtomske.ru^
 ||bantex.ru/*?
 ||bbn.by/t.bbn?
 ||begun.ru/
@@ -981,6 +977,7 @@ zvukoff.ru/24open/*.jpg
 ||com.com/*/Ads/common/
 ||comp-ex.ru/
 ||comunicazio.com^
+||csht.ru/
 ||cykahax.net/
 ||depositfiles.*/adroot/
 ||diagar.com/files/$image
@@ -1161,8 +1158,9 @@ zvukoff.ru/24open/*.jpg
 ||razdevau.com^
 ||red.by/redban
 ||refer.ru/
-||richarbuz.com/
-||richbanner.ru/
+||richarbuz.com^
+||richbanner.ru^
+||richtraffic.ru^
 ||rle.ru/cgi-bin/
 ||rmbn.ru/
 ||rnd.yxo.ru/
@@ -1218,11 +1216,6 @@ zvukoff.ru/24open/*.jpg
 ||trafunder
 ||tynt.com/
 ||ualink.info/*?
-||ucoz.*/abnl/?*_referrer=
-||ucoz.*/main/?a=ustat;
-||ucoz.*/stat/*http%3A//
-||ucoz.net/img/bn/
-||ucoz.net/img/ma/
 ||underclick.
 ||ventivmedia.com^
 ||vicepiter.ru/
@@ -1263,6 +1256,15 @@ zvukoff.ru/24open/*.jpg
 ||oneund.ru/
 ||ruigra.com/
 ||textun.ru/
+! Форумы ucoz.net
+ucoz.ru##DIV[id^="adText"]
+||a.ucoz.net/a/
+||ucoz.*/abnl/?*_referrer=
+||ucoz.*/main/?a=ustat;
+||ucoz.*/stat/*http%3A//
+||ucoz.net/img/bn/
+||ucoz.net/img/cp/
+||ucoz.net/img/ma/
 ! Весь Яндекс в одном месте, много его -_-
 yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 |http://wimg.yandex.net/12/54/t-12542.png|
@@ -1783,7 +1785,6 @@ translate.ru##DIV#ctl00_SiteContent_trasnlform_OurPartners
 turist.rbc.ru##DIV.advertBlock
 tutu.ru##TD.plink:first-child:last-child
 u-antona.vrn.ru/upchk/
-ucoz.ru##DIV[id^="adText"]
 ukr.net##DIV[id*="Banner"]
 upload/bx/*$domain=hardwareportal.ru|hwp.ru
 upload/*/mega-announce$domain=hardwareportal.ru|hwp.ru
@@ -1838,4 +1839,3 @@ zr.ru##DIV.br
 ||ibm.com/developerworks/everywhere/ew.js
 ||pics.top.rbc.ru/top_pics/jslib/cookies.js
 ||powertracker.org/images/Talky3D.gif
-
