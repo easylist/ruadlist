@@ -58,7 +58,7 @@
 ! Антитоп
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~background,~stylesheet,~xmlhttprequest,third-party
 ! Антибаннер
-/[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$~background,~stylesheet,~xmlhttprequest,third-party
+/[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$~background,~object-subrequest,~stylesheet,~xmlhttprequest,third-party
 ! Антисчётчик
 /\/count(?:ers?)?[.?/]/$domain=~games-tv.ru
 ! Прочие правила
@@ -925,7 +925,7 @@ zvukoff.ru/24open/*.jpg
 ||adnet.ru/
 ||adocean.pl/
 ||adpro.com.ua/
-||adriver.ru/
+||adriver.ru/$~object-subrequest
 ||adrock.com.ua/
 ||adru.net/
 ||adsell.me/b/
@@ -952,7 +952,7 @@ zvukoff.ru/24open/*.jpg
 ||b.vtomske.ru^
 ||bantex.ru/*?
 ||bbn.by/t.bbn?
-||begun.ru/
+||begun.ru/$~object-subrequest
 ||bestreferat.ru/images/b/
 ||bigmir.net/?
 ||bin-layer.
