@@ -32,8 +32,6 @@
 @@||deviantart.com/global/difi/?$subdocument
 @@||odnoklassniki.ru/res/
 @@||citydom.ru^$document
-! Пусть повисит тут до начала Олимпиады 2010, а то там счётчик!
-@@||yandex.*/olymp2010/
 !
 ! = Блокировка с исключениями =================================================
 ||2baksa.net/download/
@@ -300,6 +298,7 @@ reklamka
 /adrevolver/*
 /adriver_async.js
 /ads_iframe.
+/adscript
 /advert.
 /advert/*
 /advertis
@@ -307,6 +306,7 @@ reklamka
 /ad_show.$script
 /all.by/*
 /banman/*
+/banner_
 /begun.js
 /bitrix/spread.php?
 /bs.mybb.ru/*
@@ -363,8 +363,13 @@ reklamka
 /uicp.ru/?bn=
 /vendshow/*
 /vottbanner
+/webadvert
 /xap.ru/*.js
 /xgemius.js|
+! Скрипт, открывающий страницу с рекламой в фоне при щелчке по некоторым сайтам.
+! Кусок кода из него для примера: !(l1l&&ll1)&&!(!l1l&&!ll1&&!lll)
+/sun*_ajax.js|
+/barmaglot.js|
 13rus.ru/img/
 2pay.ru/gif/terminal.swf?link=
 abc-people.com/bann_
@@ -432,9 +437,7 @@ c2001.ent.spyrix.ru/user.aic?
 cachewww.euro-play.net/bnr/
 cash.loadsex.ru
 cashimtrap.com/
-catalog.aport.ru/images/signs/rec_@rus.gif
 catalog.deport.ru/btn.php?
-catalog.tut.by/images/catalog-tut.gif
 cifrovik.ru/publish/open_article/
 circle.am/service/?
 click.opennet.ru/
@@ -479,7 +482,6 @@ dimpy.narod.ru
 direct.quasir.info
 dl2.ru/catalog.php?
 dload.net.ru/*.gif
-dlsite.com/modpub/banner_ad/
 dosugcz.biz/
 drweb.com/pix/$object
 duuw.nm.ru/
@@ -689,7 +691,6 @@ rambler.ru/i.ban?
 rambler.ru/top100/
 raptop.ru/images/img*.gif
 rate.7surf.ru/img.php?
-razbogatey.com/images/banner_
 rb*.design.ru/
 rb.rfn.ru/
 rb.sport-express.ru
@@ -900,7 +901,7 @@ zvukoff.ru/24open/*.jpg
 ||2da2.ru/
 ||2ip.ru/sbar/
 ||3dn.ru/stat/
-||4files.net/im/but/4files*.$image
+||4files.net/im/but/4files
 ||4smi.ru/
 ||74.ru/textblocks/
 ||7rtv.com/
@@ -960,6 +961,7 @@ zvukoff.ru/24open/*.jpg
 ||bodyclick.net/
 ||boobzi.com/
 ||bossmoney.ru/
+||bvf.ru/upchk/
 ||c.*;0x0;0;0;-;0|
 ||c.cnstats.ru^
 ||c.hit.ua^
@@ -1174,9 +1176,9 @@ zvukoff.ru/24open/*.jpg
 ||ruklik.com/
 ||ruwm.ru/links.php?
 ||sape.ru/bn/
-||seo-sport.ru/
-||shoutmix.com/?
-||sitemeter.com/
+||seo-sport.ru^
+||serving-sys.com^
+||sitemeter.com^
 ||sj1.ru/cgi-bin/
 ||sj2.ru/cgi-bin/
 ||sj3.ru/cgi-bin/
@@ -1188,6 +1190,7 @@ zvukoff.ru/24open/*.jpg
 ||sj9.ru/cgi-bin/
 ||sj10.ru/cgi-bin/
 ||sj11.ru/cgi-bin/
+||skimlinks.com^
 ||smartb.2gsg.com/
 ||softbn.ru/*?
 ||spbland.ru/bban/
@@ -1206,6 +1209,7 @@ zvukoff.ru/24open/*.jpg
 ||tizers.lenty.ru^
 ||tizers.net^
 ||tizerset.net^
+||tizru.com^
 ||tizy.ru/
 ||tjs1.ru/
 ||tns-counter.ru/$~object-subrequest
@@ -1228,6 +1232,7 @@ zvukoff.ru/24open/*.jpg
 ||video-stats.video.google.
 ||videoclick.
 ||videoclik.
+||videoplayerworld.com^
 ||vipmest.info/
 ||virtuagirlhd.com/
 ||visitweb.com/
@@ -1247,15 +1252,11 @@ zvukoff.ru/24open/*.jpg
 ||xbn.ru/cgi-bin/
 ||xcounter.ru/
 ||xklad.net/
-||yadro.ru^
 ||yieldmanager.com/
 ||xiti.com^
 ||znews.su^
+||zorkabiz.ru^
 ||zoy.org/
-! Скрипт, открывающий страницу с рекламой в фоне при щелчке по некоторым сайтам.
-! Кусок кода из него для примера: !(l1l&&ll1)&&!(!l1l&&!ll1&&!lll)
-||*/barmaglot.js|
-||*/sun*_ajax.js|
 ! Найденные домены партнёрской сети 1under.ru (все сидят на IP 89.208.145.156)
 ||1under.ru/
 ||2under.ru/
@@ -1445,13 +1446,13 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 2baksa.net,2baksa.ws##TD.td_blocks + TD > DIV > DIV[style*="clear:"][style*="float:"]
 2baksa.net,2baksa.ws##TD.td_blocks + TD > *:not([style*="px 5px 10px;"]):not(.smalltext):not(.theme-news-home-title):not(.pageswitch):not(#container):not([style="padding-left: 3px;"]):not([style="width: 100%;"])
 3dnews.ru##DIV.mbanner
+a.borda.ru##TR.font5:first-child + * + * + TR.font1 + TR.font1
 ||a.fobos.tv/click.php?
 advs.gismeteo.com/
 agronews.ru/images/*.gif
 agronews.ru/images/$object
 ag.ru###rotating_banners,#upadbg2,IMG[width="120"][height="60"]
 ||ag.ru/framer/
-||ag.ru/jscodes/ushi_dyn/
 allbest4free.ru##NOINDEX
 ||allsat.biz/ban_
 ||anekdotov.net/show/sell/
@@ -1739,6 +1740,7 @@ r.radikal.ru/STATIC/PLASTIC_MEDIA/$object
 ||russianews.ru/img/b/
 russianews.ru##TD.chapterbans[width="15%"]:last-child
 russia.ru##.banner-wrap,.reklam-block
+||samag.ru/img/bn/
 samlab.ws##DIV#left > DIV:nth-child(n+3)
 samlab.ws##DIV.main > DIV:not(.about):first-child
 samlab.ws##DIV.main > TABLE
@@ -1800,7 +1802,7 @@ translate.ru##DIV.bgn_content
 translate.ru##DIV#ctl00_SiteContent_trasnlform_OurPartners
 turist.rbc.ru##DIV.advertBlock
 tutu.ru##TD.plink:first-child:last-child
-u-antona.vrn.ru/upchk/
+||udmnet.ru^$object
 ukr.net##DIV[id*="Banner"]
 upload/bx/*$domain=hardwareportal.ru|hwp.ru
 upload/*/mega-announce$domain=hardwareportal.ru|hwp.ru
@@ -1818,10 +1820,11 @@ voffka.com##DIV.blog > DIV[align="center"]:last-child
 ||voffka.com/js/duxy
 voffka.com##NOINDEX
 ||b.vtomske.ru^
+||vtomske.ru^$object
 ||vtomske.ru^*/dns/
 ||vtomske.ru^*/intant/
 ||vtomske.ru^*/kompstar/
-vtomske.ru##[style*="width: 240px"][style*="height: 140px"],[style*="width: 240px"][style*="height: 280px"],[style*="width: 200px"][style*="height: 200px"],[style*="width: 300px"][style*="height: 70px"],[style*="width: 310px"][style*="height: 70px"],[style*="width: 600px"][style*="height: 70px"]
+vtomske.ru##[style*="width: 200px"][style*="height: 140px"],[style*="width: 240px"][style*="height: 140px"],[style*="width: 240px"][style*="height: 280px"],[style*="width: 200px"][style*="height: 200px"],[style*="width: 3"][style*="height: 70px"],[style*="width: 600px"][style*="height: 70px"]
 vtomske.ru##.vtomske-body[style="height: 37px;"],DIV[style="padding-top: 5px;"] *,.dns_banner,.intant_container,.kompstar
 weather.ru.msn.com/msn_kp/
 webpark.ru##DIV#Experts
