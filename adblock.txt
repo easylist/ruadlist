@@ -233,6 +233,8 @@
 |http://adv.
 |http://banner
 |http://b.$object
+|http://b.*/b/
+|http://b.*/iframe/
 |http://cnt.
 |http://count.
 |http://counter.
@@ -306,8 +308,9 @@ reklamka
 /ad_show.$script
 /all.by/*
 /banman/*
-/banner_
 /banner-
+/banner.
+/banner_
 /begun.js
 /bitrix/spread.php?
 /bs.mybb.ru/*
@@ -953,7 +956,6 @@ zvukoff.ru/24open/*.jpg
 ||bigmir.net/?
 ||bin-layer.
 ||binimage.de/
-||bodyclick.net/
 ||boobzi.com/
 ||bossmoney.ru/
 ||bvf.ru/upchk/
@@ -1244,7 +1246,6 @@ zvukoff.ru/24open/*.jpg
 ||zorkabiz.ru^
 ||zoy.org/
 ! Всяческие тизеры
-.net/tizer*.php?
 tizer*/cgi-bin/iframe/
 teaser*/cgi-bin/iframe/
 ||1tizer.com^
@@ -1253,14 +1254,20 @@ teaser*/cgi-bin/iframe/
 ||teasercash.com^
 ||teasernet.ru^
 ||tizer.ws^
-||tizerda.net^
-||tizergo.net^
+||tizer.com.ua^
+||tizer-bazar.com^
 ||tizers.lenty.ru^
-||tizers.net^
-||tizerset.net^
 ||tizru.com^
 ||tizy.ru/
 ||tjs1.ru/
+! А вот отдельный рассадник. Теоретически достаточно только этого правила.
+.net/tizer*.php?
+||bodyclick.net^
+||tizerda.net^
+||tizergo.net^
+||tizermine.net^
+||tizers.net^
+||tizerset.net^
 ! Найденные домены партнёрской сети 1under.ru (все сидят на IP 89.208.145.156)
 ||1under.ru/
 ||2under.ru/
