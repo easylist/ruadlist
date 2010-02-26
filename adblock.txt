@@ -243,20 +243,35 @@
 |http://partners.
 |http://top.$~stylesheet,~xmlhttprequest,third-party
 !
-! = Блокировка отдельных баннеров по ключевым словам в адресе =================
--reclama
--reklama
-_reclama
-_reklama
-/reclama
-/reklama
-/se*kontakte
--na-dosuge
+! = Баннеры ===================================================================
 adserving
 ban_click
+_banner_
+/banner_
+/banner-
+/banner.
+/banners
+/images/adv/*
+/images/ban/*
+/images/banner$domain=~allods.ru|~vorbis.com
+/images/bn/*
+/images/bnnr/*
+/images/rek/*
+/img/banner
+/img/bn/*
 love_qip_head
+-na-dosuge
+_reclama
+-reclama
+/reclama
 reclamka
+/rekban/*
+_reklama
+-reklama
+/reklama
 reklamka
+/se*kontakte
+/vottbanner
 !
 ! = Web-Bugs (картинки 1x1) ===================================================
 /1x1.gif$domain=~nextmail.ru|~nxt.ru|~epage.ru|~email.su|~student.su|~hu2.ru|~xaker.ru|~mail2k.ru|~dezigner.ru|~programist.ru
@@ -306,9 +321,6 @@ reklamka
 /ad_show.$script
 /all.by/*
 /banman/*
-/banner-
-/banner.
-/banner_
 /begun.js
 /bitrix/spread.php?
 /bs.mybb.ru/*
@@ -331,14 +343,6 @@ reklamka
 /getrank.net/pr*.php
 /houseads/*
 /i.li.ru/_sl_/*.js
-/images/adv/*
-/images/ban/*
-/images/banner$domain=~allods.ru|~vorbis.com
-/images/bnnr/*
-/images/bn/*
-/images/rek/*
-/img/banner
-/img/bn/*
 /IndianRailways/*$match-case
 /linkexchange/*
 /linkshare/*
@@ -361,7 +365,6 @@ reklamka
 /qzx.ru/gf/*
 /rankem.cgi?action=
 /rax.ru/*
-/rekban/*
 /rnb.php?id=informer
 /shared/promos/*
 /showad.asp?
@@ -373,7 +376,6 @@ reklamka
 /tx2.ru/*
 /uicp.ru/?bn=
 /vendshow/*
-/vottbanner
 /warlog.
 /webadvert
 /xap.ru/*.js
@@ -1108,72 +1110,70 @@ zvukoff.ru/24open/*.jpg
 ||oowl.ru/ab/
 ||open.by/bnrs/
 ||openad.ru^$script
-||openlinks.ru/
-||openstat.net/
-||owebmoney.ru/
-||ozon.ru/PartnerTwinerNew.aspx
+||openlinks.ru^
+||openstat.net^
+||owebmoney.ru^
 ||p-news.ru/stat/
 ||p-rank.info/*?
 ||p-rank.org/pr.php?
-||p-search.org/
+||p-search.org^
 ||p32.com.ua/girls/
-||pbnet.ru/
+||pbnet.ru^
 ||pc-software.ru/$script
 ||pcweek.ru/upload/*/160x100
-||peel-down.ru/
-||pen007.ru/pr/code.js
-||perezzz.ru/
-||photo-droch.net/
+||peel-down.ru^
+||perezzz.ru^
+||photo-droch.net^
 ||plesen.net/kp*.
-||plus10sm.ru/
-||pochesun.com/
-||pochta.ru/
+||plus10sm.ru^
+||pochesun.com^
+||pochta.ru^
 ||poisk.su/img.php?
 ||poisk.su/top.php?
 ||pokaifu.com/templates/
 ||pop-banner
 ||pop-bazar.
-||pop-parad.net/
+||pop-parad.
 ||pop-under.
-||pop-wmz.ru/
-||popad.ru/
-||popget.ru/
-||popon.ru/
-||popru.ru/
-||popstart.ru/
+||pop-wmz.ru^
+||popad.ru^
+||popget.ru^
+||popon.ru^
+||popru.ru^
+||popstart.ru^
 ||poptraf.
 ||popunder.
-||popup.su/
-||popup2m.com/
+||popup.su^
+||popup2m.com^
 ||popupclick.
-||popups.ru/
-||popvtop.ru/ 
-||poshalim.name/
-||poza-69.ru/
+||popups.ru^
+||popvtop.ru^
+||poshalim.name^
+||poza-69.ru^
 ||ppnd.ru/
 ||pr-cy.ru/img-
 ||pr-cy.ru/img_
 ||prbn.ru/
 ||prcy.su/img_*
-||promoisland.net/
-||prospero.ru/
+||promoheads.com^
+||promoisland.net^
+||prospero.ru^
 ||protect-lab.com/promo/
 ||qb.ru/buttons/
 ||qle.ru/cgi-bin/
-||quantserve.com/
+||quantserve.
 ||rada.com.ua/img/
-||radikal.ru/$domain=imageshost.ru
 ||rating.km.ua/*?
 ||razdevau.com^
 ||red.by/redban
-||refer.ru/
+||refer.ru^
 ||richarbuz.com^
 ||richbanner.ru^
 ||richtraffic.ru^
 ||rle.ru/cgi-bin/
 ||rmbn.ru/
-||rnd.yxo.ru/
-||rose.ixbt.com/
+||rnd.yxo.ru^
+||rose.ixbt.com^
 ||rotaban.
 ||rotabanner.
 ||rotator.
@@ -1210,6 +1210,7 @@ zvukoff.ru/24open/*.jpg
 ||surbis.ru/
 ||t.proext.com/
 ||tns-counter.ru/$~object-subrequest
+||tnx.net/
 ||topadvert.ru^
 ||topcto.ru^
 ||trade7.ru^
@@ -1300,10 +1301,10 @@ teaser*/cgi-bin/iframe/
 ||ruigra.com/
 ||textun.ru/
 ! Форумы ucoz.net
-ucoz.ru##DIV[id^="adText"]
+##DIV[id^="adBar"]
+##DIV[id^="adText"]
+/abnl/?begun=
 ||a.ucoz.net/a/
-||ucoz.*/abnl/?*_referrer=
-||ucoz.*/abnl/?begun=
 ||ucoz.*/main/?a=ustat;
 ||ucoz.net/img/cp/
 ||ucoz.net/img/ma/
@@ -1490,6 +1491,8 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 2baksa.net,2baksa.ws##TD.td_blocks + TD > *:not([style*="px 5px 10px;"]):not(.smalltext):not(.theme-news-home-title):not(.pageswitch):not(#container):not([style="padding-left: 3px;"]):not([style="width: 100%;"])
 3dnews.ru##.mbanner,#topBanners
 ||a.fobos.tv/click.php?
+advesti.ru##IMG[width="170"][height="340"][border="0"]
+advesti.ru##IMG[width="570"][height="80"][border="0"]
 advs.gismeteo.com/
 agronews.ru/images/*.gif
 agronews.ru/images/$object
@@ -1747,6 +1750,7 @@ overclockers.ru##IMG[border][src*="/images/"][src*=".gif"],IMG[src*="/images/"][
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 ||ozon.ru/graphics/$object
+||ozon.ru/PartnerTwinerNew.aspx
 ||panasonic.ru/upload/bx/
 ||pctuner.ru/plugins/bworks/files/
 pics.goods.turist.ru/turist.goods_pics/$domain=~turist.ru
@@ -1775,6 +1779,7 @@ qwe.ru##BODY > TABLE > TBODY > TR > TD.default_menu TABLE[width="500"] DIV
 qwe.ru##BODY > TABLE > TBODY > TR > TD > DIV.border + * + * + * + * + * + * + * + DIV.border
 qwe.ru##DIV.caption + DIV.bodytable > TABLE[width="100%"] TD
 qwe.ru##NOINDEX > A
+||radikal.ru^$domain=imageshost.ru
 radikal.ru##BODY > NOINDEX > A + TABLE > TBODY > TR:first-child > TD:first-child
 radikal.ru##DIV.inner-box
 rambler.ru##DIV.r--b728
@@ -1909,6 +1914,7 @@ zr.ru##DIV.br
 ||zr.ru/scripts/swfobject
 ! Блокировка отдельных файлов
 ||ibm.com/developerworks/everywhere/ew.js
+||pen007.ru/pr/code.js
 ||pics.top.rbc.ru/top_pics/jslib/cookies.js
 ||powertracker.org/images/Talky3D.gif
 
@@ -1917,11 +1923,6 @@ zr.ru##DIV.br
 *.ifolder.ru##DIV#b-fibo-plus
 *.ifolder.ru##DIV#b-header-in
 *.ifolder.ru##IMG#b-bottom-anchor
-advesti.ru##IMG[width="170"][height="340"][border="0"]
-advesti.ru##IMG[width="570"][height="80"][border="0"]
-animeonline.su##IMG[alt*="RJRC: Russian J-Rock Community"]
-beautiful-4-you.moy.su##DIV#adBaraM5xvgM
-beautiful-4-you.moy.su##DIV#adTextaM5xvgM
 binmusic.ru##TD.news_text[valign="top"][align="center"]
 cifrovik.ru##DIV.mvideo_banner
 cnews.ru##IMG[width="600"][height="90"]
