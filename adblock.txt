@@ -45,14 +45,6 @@
 @@||kronverkcinema.ru/*attachment.rpc*,
 ||opennet.ru/img/
 @@||opennet.ru/img/i_
-||overclockers.ru/$image,object
-@@||overclockers.ru/download/
-@@||overclockers.ru/images/*.gif$match-case
-@@||overclockers.ru/images/*.png
-@@||overclockers.ru/images/lab/
-@@||overclockers.ru/images/news/
-@@||overclockers.ru/styles/$image
-@@||people.overclockers.ru/$image
 ||pics.rbc.ru/$image,object
 @@||pics.rbc.ru/img/$image
 @@||pics.rbc.ru/quote/
@@ -1745,8 +1737,12 @@ oper.ru##.banners,#onlinedengi,###topbanner
 static.oper.ru/data/rennabs/
 static.oper.ru/images/big/$background
 oszone.ru,oszone.net##DIV#topbanner
+||overclockers.ru/im_b/
+||overclockers.ru/images/$object
+||overclockers.ru/partners/
 overclockers.ru##IFRAME,TABLE.navbg + DIV[align="center"],A[target="_blank"] > IMG[height="60"]
-overclockers.ru##TABLE[width="303"][style],TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
+overclockers.ru##TABLE[height^="24"][width^="30"][style],TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
+overclockers.ru##IMG[border="0"][src*="/images/"][src*=".gif"],IMG[src*="/images/"][src*="/n-r.gif"]
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 ||ozon.ru/graphics/$object
