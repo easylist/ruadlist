@@ -1,0 +1,115 @@
+[Adblock Plus]
+!RU Сделан Михалкиным Александром (mail:alexandr@mihalkin.ru)
+!En Created by Mihalkin Aleksander(mail:alexandr@mihalkin.ru)
+!site: http://adblockplus.mihalkin.ru
+!сайт: http://adblockplus.mihalkin.ru
+!Hevristik list for Russia
+!Экспериментальная подписка с приминений эвристики для территории России
+!
+!ПО ДАННОЙ ПОДПИСКЕ НЕТ ПОДДЕРЖКИ! ПРОСЬБА НЕ ЗАДАВАТЬ ПО НЕЙ ВОПРОСЫ!
+!
+!version 1.13evr
+!Expires after 15 days
+!
+!Исключения
+!
+@@$stylesheet
+@@.wikimedia.org/
+@@.wikipedia.org/
+@@.google.*/images?
+@@.8bitpeoples.com/
+@@|http://www.russia.ru/player/top/player4.swf
+@@games-tv.ru/tst/counter.php?
+@@.admin.tomsk.ru/
+@@.sonypictures.com/
+@@//citydom.ru/ban
+@@kawaii-radio.net/banners/
+@@video.*.user.madbanner.ru/
+@@vorbis.com/images/banners/
+@@|http://rp5.ru/informer/
+@@|http://pics.rbc.ru/img/$image,stylesheet
+@@|http://pics.rbc.ru/quote/
+@@|http://www.google.*/ig|
+@@images.people.overclockers.ru/
+@@overclockers.ru/images/*/*/*/
+@@info-broker.ks.ua/images/
+@@|http://gallery-*.usercash.com/
+@@deviantart.com/global/difi/?$subdocument
+@@|http://stg.odnoklassniki.ru/res/
+@@|http://belocal.de/templates/belocal3/partner/nextgen/
+@@|http://exchengine.ru/bare/export/js.html?
+@@|http://technosila.ru/webroot/delivery/images/goods/
+@@*.mihalkin.ru/*
+@@acid3.acidtests.org/
+@@forum.antichat.ru/antichat/pic/*
+@@kanicq.ru/invisible/jquery.js
+@@http://www.overclockers.ru/images/news/*/*.jpg
+@@http://overclockers.ru/images/lab/*/*.jpg
+@@people.overclockers.ru/
+@@zaycev.net/m3_images/i/
+@@zaycev.net/m3_images/mp3player.swf?*
+@@*.rbcdaily.ru/jslib/
+@@http://rs.mail.ru/b*.jpg
+!
+!Эвристика
+!
+/[_./&=?-]\d*ad[A-Za-z]?\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*ad[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*ad[A-Za-z]*\d*([_./&=?-].*)?$/
+/\D\d{3}[Xx_-]\d{2,3}\D.*(gif|swf)/$image,object
+/\D\d{3}[Xx_-]\d{2,3}(\D.*)?$/$script,subdocument
+/[_./&=?-]\d*[A-Za-z]*(?!lo|he)[A-Za-z]{2}ad[A-Za-z]?\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*(?!lo|he)[A-Za-z]{2}ad[A-Za-z]?\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*[A-Za-z]*rank[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/[_./&=?-]\d*[A-Za-z]*pop[A-Za-z]*\d*([_./&=?-].*)?$/$script,third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*promo[A-Za-z]*\d*([_./&=?-].*)?$/
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*affil[A-Za-z]*\d*([_./&=?-].*)?$/
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*click[A-Za-z]*\d*([_./&=?-].*)?$/
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*pop[A-Za-z]*\d*([_./&=?-].*)?$/$script
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*cgi[A-Za-z]*\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*[A-Za-z]*affil[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/[_./&=?-]\d*[A-Za-z]*click[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/[_./&=?-]\d*[A-Za-z]*promo[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/[_./&=?-]\d*[A-Za-z]*cgi[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/[_./&=?-]\d*[A-Za-z]*banner[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*banner[A-Za-z]*\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*[A-Za-z]*spons[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*spons[A-Za-z]*\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*[A-Za-z]*analy[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*traf[A-Za-z]*\d*([_./&=?-].*)?$/
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*analy[A-Za-z]*\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*[A-Za-z]*counter[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*counter[A-Za-z]*\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*[A-Za-z]*track[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*track[A-Za-z]*\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*[A-Za-z]*stat\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*rank[A-Za-z]*\d*([_./&=?-].*)?$/
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*stat\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*[A-Za-z]*stats[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*stats[A-Za-z]*\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*[A-Za-z]*traf[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/[_./&=?-]\d*[A-Za-z]*hits[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*[A-Za-z]*hits[A-Za-z]*\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*hit[A-Za-z]*\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*hit[A-Za-z]*\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*count\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*count\d*([_./&=?-].*)?$/
+/[_./&=?-]\d*log(|ger|ging)\d*([_./&=?-].*)?$/$third-party
+/^http://[^/]*/(.*[_/&=?-])?\d*log(|ger|ging)\d*([_./&=?-].*)?$/
+/[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
+/\/ad[svjx0-9]\//
+/[^a-z]top[^a-z][^.]*\.[^?]*\?/$~stylesheet
+/\/ban+(?:er)?s?\d*[./]/
+/\/count(?:ers?)?[.?/]/
+/[/&?_-]ads?[-_]?b(?:utler|rite|ottom)[\W_]/
+/[/&?_-]ads?[-_]?box_?[\W_]/
+/[/&?_-]ads?[-_]?f(?:etch|low|unction)[\W_]/
+/[/&?_-]ads?[-_]?farm[\W_]/
+/[/&?_-]ads?[-_]?frame[\W_]/
+/[/&?_-]ads?[-_]?ima?ge?s?[\W_]/
+/[/&?_-]ads?[-_]?id(?!=&)[\W_]/
+/[/&?_-]ads?[-_]?link[\W_]/
+/[/&?_-]ads?[-_]?log[\W_]/
+/[/&?_-]ads?[-_]?layer[\W_]/
+/[/&?_-]banner(id)?=/
+/[/&?_-]banner\d+(?!\w)/$~object,~object_subrequest,~other
