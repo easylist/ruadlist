@@ -248,6 +248,8 @@ adserving
 ban_click
 _banner_
 _banner/
+_banner.
+.banner.
 /banner_$domain=~allods.ru
 /banner-
 /banner.
@@ -255,11 +257,9 @@ _banner/
 /banners$domain=~allods.ru|~vorbis.com
 /images/adv/*
 /images/ban/*
-/images/banner$domain=~allods.ru|~vorbis.com
 /images/bn/*
 /images/bnnr/*
 /images/rek/*
-/img/banner
 /img/bn/*
 love_qip_head
 -na-dosuge
@@ -1019,6 +1019,7 @@ zvukoff.ru/24open/*.jpg
 ||flapoint.ru^
 ||fooder.ru^
 ||fotocash.ru^
+||freeonlineusers.com^
 ||gethit.ru^
 ||glam-x.ru^
 ||globalstars.ru^
@@ -1405,6 +1406,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ||torgnn.ru^$third-party
 ||usde.ru/$third-party
 ||vareza.net^$third-party
+||videofan.ru^$third-party
 ||vsem.ru/img$third-party
 ||warezplatinum.com^$third-party
 ||wolist.ru^$third-party
@@ -1730,6 +1732,7 @@ moikrug.ru##.y5.y5_nf.y5_vertical.snap_noshots
 mozilla-russia.org##DIV[id$="Col_advC"]
 mozilla-russia.org/images/rek_header.png
 mozilla-russia.org##SPAN[ID^="modex"][style="font-size: 80%;"]:last-child
+mp3hall.net##A[target="_blank"] > IMG
 ||mp3mediaworld.*/!$subdocument
 mskd.ru##CENTER > B > FONT[color="red"]
 ||mskd.ru/img/*x*_
@@ -1774,6 +1777,7 @@ opensharing.ru,opensharing.org##DIV[id*="banner"],DIV#content CENTER > A[target=
 oper.ru##.banners,#onlinedengi,###topbanner
 ||oper.ru/data/rennabs/
 ||oper.ru/images/big/$background
+oplati.ru##TD[width="90"][style="float: right;"]
 oszone.ru,oszone.net##DIV#topbanner
 ||overclockers.ru/im_b/
 ||overclockers.ru/images/$object
@@ -1863,6 +1867,7 @@ soft-best.ws##NOINDEX
 soft-best.ws/$object
 soft-free.ru##A[href="http://goldfin.ru"]
 soft-free.ru##TD + * FORM + * + * + * + * + * + * TD.modulecontent
+soft-arena.ru##NOINDEX
 softodrom.ru/img/500x100_
 softodrom.ru/scr/begun.php?
 softoroom.net##DIV[id^="fo_cblock"]
@@ -2022,7 +2027,3 @@ softnavigator.ru##TABLE#table11
 tabulorasa.info##TD[style="padding: 10px;"]
 samouchka.net##DIV.topbanner
 cyberforum.ru##DIV[style="padding: 3px; border: 1px solid rgb(0, 51, 153);"]
-oplati.ru##TD[style="margin-right: 0pt;"]
-mp3hall.net##IMG:first-child:last-child
-soft-arena.ru##TD[style="font-size: 12px; padding-left: 5px;"]
-soft-arena.ru##IMG[width="468"][height="60"]
