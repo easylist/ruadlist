@@ -248,10 +248,11 @@ adserving
 ban_click
 _banner_
 _banner/
-/banner_
+/banner_$domain=~allods.ru
 /banner-
 /banner.
-/banners
+/banner/*
+/banners$domain=~allods.ru|~vorbis.com
 /images/adv/*
 /images/ban/*
 /images/banner$domain=~allods.ru|~vorbis.com
@@ -913,6 +914,7 @@ zvukoff.ru/24open/*.jpg
 ||a.kavanga.ru^
 ||ad-words.ru/contextad/
 ||adb.tbn.ru^
+||adbid.pl^
 ||adbn.ru/*?
 ||adbrite.com^
 ||adbureau.net^
@@ -924,6 +926,7 @@ zvukoff.ru/24open/*.jpg
 ||adjuggler.com^
 ||adland.ru^
 ||adlog.com^
+||admpads.com^
 ||admulti.
 ||adnet.ru^
 ||adocean.pl^
@@ -934,6 +937,7 @@ zvukoff.ru/24open/*.jpg
 ||adsfast.com^
 ||adskape.ru^
 ||adsn24.ru^
+||adtaily.com^
 ||advertarium.com.ua^
 ||advertserve.com^
 ||advmaker.ru^
@@ -1012,6 +1016,7 @@ zvukoff.ru/24open/*.jpg
 ||farle.ru/?bn=
 ||faza.ru/img.php?
 ||filetarget.com^$subdocument
+||flapoint.ru^
 ||fooder.ru^
 ||fotocash.ru^
 ||gethit.ru^
@@ -1106,6 +1111,7 @@ zvukoff.ru/24open/*.jpg
 ||nimp.org^
 ||noion.ru^
 ||nomer1.ru.ru^
+||novem.pl^
 ||nowa.cc/showthread.php?*http://
 ||nyx.su/informers/
 ||one.ru/cgi-bin
@@ -1417,6 +1423,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ###fp_adv
 ###fp_banner
 ###im_popupDiv
+###novem_billboard
 ###radeant
 ##[id*="textadv"],[id*="text-adv"],[id*="text_adv"]
 ##.adbckgrnd
@@ -1500,6 +1507,7 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 ##A[target="_blank"][href*=".torrentreactor.net"]
 !
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
+0verstyle.ru##.news CENTER:first-child
 2baksa.net,2baksa.ws##BODY > DIV > DIV > A[href*="/go.php?url="] > IMG[src*="2baksa.net/download/images/"]
 2baksa.net,2baksa.ws##TD.td_blocks + TD > DIV > DIV[style*="clear:"][style*="float:"]
 2baksa.net,2baksa.ws##TD.td_blocks + TD > *:not([style*="px 5px 10px;"]):not(.smalltext):not(.theme-news-home-title):not(.pageswitch):not(#container):not([style="padding-left: 3px;"]):not([style="width: 100%;"])
@@ -1609,6 +1617,7 @@ forum.ru-board.com##BODY > CENTER TABLE:first-child
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
 forum.ru-board.com##TABLE[width="640"][border="1"]
 forum.tomsknet.ru##TABLE.banner.nocp
+forum.wiaderko.com##DIV#topbar
 foto.rambler.ru##DIV.pi_b2
 freesoft.ru##A[href^="/clicks/click.php?adv="]
 freesoft.ru/images/
@@ -1662,6 +1671,7 @@ itc.ua##DIV.b240x350
 itnews.com.ua##TR + * > TD[bgcolor="#ebebeb"][style="height: 96px;"]:first-child
 ixbt.com##H4#nl_header
 ixbt.com##TABLE[width="120"][style="border: 1px solid Black;"]
+izone.ru##NOINDEX TABLE[id^="table"][width="100%"]
 izvestia.ru/news_rambler.html
 keep4u.ru##DIV#r_bottom
 keep4u.ru##DIV#r_top
@@ -1865,7 +1875,7 @@ s.tfile.ru/images/kfforex.jpg
 styanulo.ru##DIV.banner
 tapochek.net###sidebar1-wrap,.tCenter.pad_2 > DIV[align="center"],A[target="_blank"] > IMG
 tehnosila.ru##DIV#banner_street
-terabit.biz##NOINDEX
+terabit.biz##NOINDEX,.cnt2l,.cnt2r > CENTER
 tfile.ru##DIV[id$="_ban"]
 tfile.ru##IFRAME
 tfile.ru##TABLE#home_c TD#lcol:first-child
@@ -2016,9 +2026,3 @@ oplati.ru##TD[style="margin-right: 0pt;"]
 mp3hall.net##IMG:first-child:last-child
 soft-arena.ru##TD[style="font-size: 12px; padding-left: 5px;"]
 soft-arena.ru##IMG[width="468"][height="60"]
-softall.com.ua##TABLE[style="border: 0px solid rgb(204, 204, 204); width: 100%; background: none repeat scroll 0% 0% rgb(255, 255, 255); border-collapse: separate; border-spacing: 4px; line-height: 1.2em;"]
-forum.wiaderko.com##DIV[style="position: relative; display: block; font-weight: normal; text-align: left; width: auto; height: 125px; background: none repeat scroll 0% 0% transparent; padding: 0pt; margin: 10px 0pt 0pt; clear: left; overflow: hidden;"]
-0verstyle.ru##TABLE[style="border: 2px dashed rgb(153, 153, 153);"]
-izone.ru##DIV#slider5
-terabit.biz##IMG[border="0"]:first-child:last-child
-tutusun.ru##TABLE[style="border: 1px solid rgb(204, 204, 204); width: 100%; background: none repeat scroll 0% 0% rgb(255, 255, 255); border-collapse: separate; border-spacing: 4px; line-height: 1.2em;"]
