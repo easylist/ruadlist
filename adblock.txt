@@ -60,7 +60,7 @@
 ! Антибаннер
 /[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$~background,~object-subrequest,~stylesheet,~xmlhttprequest,third-party
 ! Антисчётчик
-/\/count(?:ers?)?[.?/]/$domain=~games-tv.ru
+/\/count(?:ers?)?[.?/]/$~object-subrequest
 ! Прочие правила
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 /\/ad[svjx0-9]\//$domain=~mercatos.ru|~gamespot.com
@@ -329,9 +329,10 @@ reklamka
 /by.banclk?
 /clickheat.
 /counted/*
-/counter?
+counter.$~object-subrequest,third-party
 /counter/*
-/counter.$~object-subrequest
+/counter?
+/counter_
 /counters/*
 /ctxtlink/*
 /dontblockthis/*
@@ -361,7 +362,6 @@ reklamka
 /printads/*
 /promos/*$object
 /prre.ru/bout.php?
-/pseudocounter.js?
 /pub_banners/*
 /qzx.ru/gf/*
 /rankem.cgi?action=
@@ -1010,8 +1010,9 @@ zvukoff.ru/24open/*.jpg
 ||fairlink.ru^
 ||farle.ru/?bn=
 ||faza.ru/img.php?
-||filetarget.com/$subdocument
+||filetarget.com^$subdocument
 ||fooder.ru^
+||fotocash.ru^
 ||gethit.ru^
 ||glam-x.ru^
 ||globalstars.ru^
@@ -1045,7 +1046,6 @@ zvukoff.ru/24open/*.jpg
 ||inetlog.ru^
 ||intel.com/b/
 ||intellitxt.com^
-||ipcounter.de^
 ||ipru.ru/i/
 ||ipru.ru/j/
 ||ipz.ru/cgi-bin/
@@ -1069,6 +1069,7 @@ zvukoff.ru/24open/*.jpg
 ||linkwm.ru^
 ||lipcrus.biz^
 ||loadmovie.ru^
+||lovn.ru/
 ||lux-bn.com.ua^
 ||luxup.ru^
 ||madbanner.ru/$~object-subrequest
@@ -1207,7 +1208,6 @@ zvukoff.ru/24open/*.jpg
 ||supertop.ru^
 ||surbis.ru^
 ||t.proext.com^
-||tns-counter.ru/$~object-subrequest
 ||tnx.net/
 ||topadvert.ru^
 ||topcto.ru^
@@ -1248,7 +1248,6 @@ zvukoff.ru/24open/*.jpg
 ||x4u.ru/cgi-bin/
 ||xanax.cbn.ru^
 ||xbn.ru/cgi-bin/
-||xcounter.ru^
 ||xklad.net^
 ||yadro.ru^
 ||yellowmedia.biz^
@@ -1376,6 +1375,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ||mercatos.ru^$third-party
 ||meta.ua/$script,subdocument,third-party
 ||moogle.ru^$third-party
+||obigre.ru^$third-party
 ||oxysoft.ru^$third-party
 ||play2.biz^$third-party
 ||pozzitiv.ru^$third-party
@@ -1387,7 +1387,6 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ||rutor.org^$third-party
 ||seorate.ru^$third-party
 ||smart-soft.ru^$third-party
-||statcounter.com^$third-party
 ||tehnoklad.ru^$third-party
 ||todaymix.ru^$third-party
 ||toget.ru^$third-party
@@ -1401,6 +1400,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ||yellowsearch.ru^$third-party
 ||zakladka.org.ua^$third-party
 ||zamok911.com^$third-party
+||zoda.ru/$third-party
 !
 ! = Общие CSS-фильтры =========================================================
 ###advert
@@ -2029,6 +2029,4 @@ video.mail.ru##DIV.rb_body
 video.mail.ru##DIV#want-talk
 cybergid.com##DIV#rnb_informer2
 cybergid.com##DIV[style="border: 1px solid rgb(0, 0, 0); overflow: auto; background-color: rgb(255, 255, 255);"]
-be-ok.ru##DIV#slider6
-be-ok.ru##DIV#slider24
 bigtorrent.org##TABLE[style="background-color: rgb(255, 255, 255); width: 185px;"]
