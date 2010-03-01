@@ -247,22 +247,21 @@
 ! = Баннеры ===================================================================
 adserving
 /adspace/*
-/advert.$third-party
+/advert.$domain=~akado.ru
 /advert/*
 /advertis
 /adview.
-/ad_show.$script
 /banman/*
 ban_click
 _banner_
 _banner/
 _banner.
 .banner.
-/banner_$third-party
-/banner-$third-party
+/banner_$domain=~allods.ru|~onlime.ru
+/banner-$domain=~onlime.ru
 /banner.
 /banner/*
-/banners$domain=~allods.ru|~vorbis.com
+/banners$domain=~allods.ru|~corbina.ru|~netbynet.ru|~vorbis.com
 /images/adv/*
 /images/ban/*
 /images/bn/*
@@ -317,6 +316,7 @@ sexvodnokalssnikah
 //r.e1.ru/*
 //r.i.ua/*
 /ad*.js?link
+/ad_show.$script
 /adclick.$script
 /adimage.php
 /adland.php
