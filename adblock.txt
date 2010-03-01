@@ -496,7 +496,6 @@ dimpy.narod.ru
 direct.quasir.info
 dl2.ru/catalog.php?
 dload.net.ru/*.gif
-dosugcz.biz/
 drweb.com/pix/$object
 duuw.nm.ru/
 dverizamki.org/bshow/
@@ -945,16 +944,16 @@ zvukoff.ru/24open/*.jpg
 ||adwolf.ru^
 ||affarity.com^
 ||agro.net.ru^
-||agrotv.ru/$object
-||alfainternet.su/
+||akabo.ru^
+||alfainternet.su^
 ||all-web.ru/button.php?id=
 ||allboxing.ru/img/$object
 ||alloy.ru/auth.php?
-||alltraf.net/
+||alltraf.net^
 ||amoney.ru/images/$object
-||amung.us/
+||amung.us^
 ||at.ua/stat/
-||atdmt.com/
+||atdmt.com^
 ||b-one.com.ua^
 ||b.candy.vl.ru^
 ||b.ddestiny.ru^
@@ -996,6 +995,7 @@ zvukoff.ru/24open/*.jpg
 ||dndd.ru/
 ||do.am/stat^
 ||domika.msk.ru^
+||dosugcz.biz^
 ||dosugvip.ru^
 ||doubleclick.
 ||dt00.net^
@@ -1351,11 +1351,14 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 /popup.js$third-party,domain=~yandex.ru
 !
 ! = Условно полезные ресурсы, мусорящие на других сайтах ======================
+.faststart.ru^$third-party
+.hotlog.ru^$third-party
 //hmn.ru/*$third-party
 ||24new.ru^$third-party
 ||add.in.ua^$third-party
 ||adme.ru/$third-party
 ||adriver.ru^$third-party
+||agrotv.ru^$third-party
 ||akavita.com^$third-party
 ||animereactor.ru^$third-party
 ||anyfiles.ru^$third-party
@@ -1365,7 +1368,6 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ||directrix.ru^$third-party
 ||dividend-bank.ru/img/$third-party
 ||esc-team.com^$third-party
-||faststart.ru^$third-party
 ||filecontrol.ru^$third-party
 ||file-online.ru^$third-party
 ||filepost.ru^$third-party
@@ -1376,7 +1378,6 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ||hdtracker.ru^$third-party
 ||hellywood.ru^$third-party
 ||hotinga.ru^$third-party
-||hotlog.ru^$third-party
 ||iso100.ru^$third-party
 ||kinoclub.org^$third-party
 ||komok.com^$third-party
@@ -1427,9 +1428,11 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ###im_popupDiv
 ###novem_billboard
 ###radeant
+###topbanner
 ##[id*="textadv"],[id*="text-adv"],[id*="text_adv"]
 ##.adbckgrnd
 ##.surbis_banner
+##.topbanner
 ##[class*="text-adv"],[class*="text_adv"]
 ##A[href*="7dvd.ru/fn.php?r="]
 ##A[href*=".8coins.net/"]
@@ -1582,7 +1585,6 @@ dimonvideo.ru##BODY > TABLE NOINDEX > DIV
 dreamprogs.net##.content DIV:first-child + NOINDEX
 dreamprogs.net##.content DIV#lfwar:first-child
 dreamprogs.net##.war3
-dreamprogs.net###topbanner
 dump.ru##A[rel="nofollow"][target="_blank"] > IMG
 dverizamki.org/$object
 dwg.ru##BODY > TABLE > TBODY > TR:nth-child(3) > TD:nth-child(5)
@@ -1774,11 +1776,10 @@ opennet.ru##CENTER#adv,FORM + * + * + TABLE
 ||opensharing.$object
 ||opensharing.*/pics/
 opensharing.ru,opensharing.org##DIV[id*="banner"],DIV#content CENTER > A[target="_blank"],DIV#sidebar CENTER > A
-oper.ru##.banners,#onlinedengi,###topbanner
+oper.ru##.banners,#onlinedengi
 ||oper.ru/data/rennabs/
 ||oper.ru/images/big/$background
 oplati.ru##TD[width="90"][style="float: right;"]
-oszone.ru,oszone.net##DIV#topbanner
 ||overclockers.ru/im_b/
 ||overclockers.ru/images/$object
 ||overclockers.ru/partners/
@@ -1824,7 +1825,6 @@ radikal.ru##DIV.inner-box
 rambler.ru##DIV.r--b728
 rambler.ru##DIV.rb--TopTeaser
 rbc.ru##DIV.fullContainer > DIV[class^="pseudo"] > DIV.header:not(.layout):first-child
-rbc.ru##DIV.topBanner
 ||regnum.ru/i/bn/
 restoclub.ru/pic/iblocks
 ||rl-team.net/bazar_fast/
@@ -1862,12 +1862,13 @@ slo.ru##[class^="adv_"],IMG[width="200"][height="300"]
 ||sobesednik.ru/$object
 ||sobesednik.ru/$subdocument
 ||sobesednik.ru/upload/rk/
+soft-arena.ru##NOINDEX
 soft-best.ws/forum/pict_4_rotator/
 soft-best.ws##NOINDEX
 soft-best.ws/$object
 soft-free.ru##A[href="http://goldfin.ru"]
 soft-free.ru##TD + * FORM + * + * + * + * + * + * TD.modulecontent
-soft-arena.ru##NOINDEX
+softnavigator.ru##BODY > TABLE > TBODY > TR:first-child > TD:nth-child(3) > DIV:first-child + TABLE[width="100%"],A[href*="/go/?"]
 softodrom.ru/img/500x100_
 softodrom.ru/scr/begun.php?
 softoroom.net##DIV[id^="fo_cblock"]
@@ -1875,9 +1876,12 @@ softoroom.net/forex/
 ||sovsport.ru/ib
 sport-express.ru##DIV[style*=".sport-express.ru/img/banners/"]
 ||sport.*ua/images/$object
+softportal.com##TABLE.TblBorderCLR TD[style="padding: 0pt 25px;"] > TABLE[width="100%"]
 s.tfile.ru/images/kfforex.jpg
 ||stopgame.ru/*/partners/
 styanulo.ru##DIV.banner
+sudga.ru##TD.alt3
+tabulorasa.info##TD[style="padding: 10px;"] NOINDEX
 tapochek.net###sidebar1-wrap,.tCenter.pad_2 > DIV[align="center"],A[target="_blank"] > IMG
 tehnosila.ru##DIV#banner_street
 terabit.biz##NOINDEX,.cnt2l,.cnt2r > CENTER
@@ -1897,6 +1901,7 @@ translate.ru/App_Themes/Default/begLoad/
 translate.ru##DIV#b_adv
 translate.ru##DIV.bgn_content
 translate.ru##DIV#ctl00_SiteContent_trasnlform_OurPartners
+turbobit.net##IMG[width="490"][height="100"]
 turist.rbc.ru##DIV.advertBlock
 tutu.ru##TD.plink:first-child:last-child
 ||udmnet.ru^$object
@@ -1963,11 +1968,14 @@ zr.ru##DIV.br
 *.ifolder.ru##DIV#b-fibo-plus
 *.ifolder.ru##DIV#b-header-in
 *.ifolder.ru##IMG#b-bottom-anchor
+demotivators.ru##TABLE[style="border: 0px solid rgb(204, 204, 204); background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 100%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; border-collapse: separate; border-spacing: 4px; line-height: 1.2em;"]
 depositfiles.com##DIV.dg_t1
 depositfiles.com##DIV.zhMain
 depositfiles.com##DIV[style="text-align: center;"]
-forum.sevstar.net##DIV[style="padding: 2px; float: right;"]
+design.ru-deluxe.ru##DIV#mixkt_4294948230
+design.ru-deluxe.ru##DIV[id*="mixkt_*"]
 fast-torrent.ru##TD.ad_block
+forum.sevstar.net##DIV[style="padding: 2px; float: right;"]
 free-torrents.org##TABLE[style="border-spacing: 5px;"]
 fullz.ru##B
 gde.ru##DIV#main-content2 > DIV#central-content-result:first-child > OL.search:first-child > LI:first-child
@@ -1979,17 +1987,19 @@ infanata.org##DIV[style="border: 1px solid rgb(161, 32, 62);"]
 intv.ru##DIV#minirPromo
 job.ru##DIV.tb_container
 ksweb.ru##IMG[style="width: 500px; height: 300px;"]
-liveinternet.ru##IMG[width="500"][height="45"][border="0"]
 liveinternet.ru##IMG[width="200"][height="60"][border="0"]
 liveinternet.ru##IMG[width="476"][height="60"][border="0"]
+liveinternet.ru##IMG[width="500"][height="45"][border="0"]
+lostfilm.tv##A[href="http://romyl.ru"]
 mail.google.com##DIV.nH.mq
 mirsofta.ru##IMG[src="650x80.jpg"]
+mozilla-russia.org##DIV#modex
 ngs.ru##div[class$="nb"]
-turbobit.net##IMG[width="490"][height="100"]
 nightmail.ru##TABLE#magnaInformer
+nowa.cc##TD.mc_cars_row
+otvali.ru##DIV#rotvali
 otvali.ru##DIV[id="otvali.ru_nas_1_xxx_news"]
 otvali.ru##DIV[style="position: relative; width: auto; height: auto;"]
-otvali.ru##DIV#rotvali
 partner.loveplanet.ru##TABLE
 pochta.ru##DIV#tionline
 pochta.ru##TABLE#magnaInformer
@@ -1999,31 +2009,9 @@ rl-team.net##DIV[style="overflow: hidden; background-color: rgb(252, 247, 221); 
 rl-team.net#DIV(style=padding: 10px; overflow: hidden; float: left;)
 runews.radeant.com##DIV#lamur
 scriptiks.ru##NOINDEX
+security.opennet.ru##TABLE[bgcolor="#441144"]
 severodvinska.net##IMG[width="868"][height="60"][border="0"]
+shop.avanta.ru##DIV#container2
 slo.ru##IMG[width="300"][hspace="1"][height="200"][border="0"]
 slo.ru##TABLE.tb_dashed
 soft-best.ws##DIV[style="padding: 5px 5px 10px;"]
-softnavigator.ru##DIV[style="text-align: left;"]
-softobaza.com##IMG[alt="Эротический видео-чат «Видео-девочка.ру»"]
-softportal.com##IMG[border="0"]
-sticker.yadro.ru##HTML
-stopvirus.ru##IMG[width="468"][height="60"]
-sudga.ru##TD.alt3
-tabulorasa.info##IMG[src="http://tabulorasa.info/img/11.jpg"]
-vsamare.net##IMG[width="501"][height="90"]
-xtreme.ws##TABLE[width="500"]
-yandex.ry##.spec-adv
-youshara.ru##IMG[border="0"]
-youshara.ru##IMG[width="230"][border="0"]
-design.ru-deluxe.ru##DIV[id*="mixkt_*"]
-design.ru-deluxe.ru##DIV#mixkt_4294948230
-shop.avanta.ru##DIV#container2
-security.opennet.ru##TABLE[bgcolor="#441144"]
-demotivators.ru##TABLE[style="border: 0px solid rgb(204, 204, 204); background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 100%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; border-collapse: separate; border-spacing: 4px; line-height: 1.2em;"]
-mozilla-russia.org##DIV#modex
-lostfilm.tv##A[href="http://romyl.ru"]
-nowa.cc##TD.mc_cars_row
-softnavigator.ru##TABLE#table11
-tabulorasa.info##TD[style="padding: 10px;"]
-samouchka.net##DIV.topbanner
-cyberforum.ru##DIV[style="padding: 3px; border: 1px solid rgb(0, 51, 153);"]
