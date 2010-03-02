@@ -182,7 +182,7 @@
 !
 ! = Скрытие баннеров по указанному размеру картинки ===========================
 ##[width^="8"][height="15"]
-##[width="88"][height=^"3"]
+##[width="88"][height^="3"]
 ##[width="120"][height="600"]
 ##[width="160"][height="80"]
 ##[width="160"][height="240"]
@@ -1464,7 +1464,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ##A[href*="kinotraff.ru/in.php?id="]
 ##A[href*="nanoplast.ru/?pr="]
 ##A[href*="new-popups.ru/"]
-##A[href*="/?partner="]$domain=~findbook.ru
+~findbook.ru##A[href*="/?partner="]
 ##A[href*="porno-foto.blogtur.com"]
 ##A[href*="porno."][href*="?ref="]
 ##A[href*="pornosklad.tv"]
@@ -1724,7 +1724,7 @@ macradar.ru/*_ad.
 macradar.ru##DIV.reclame
 mail.google.com##div[class~="oM"]
 mail.rambler.ru##DIV#banner-right
-mail.ru##DIV##agentToolbarId.agentToolBar[style]
+mail.ru##DIV.agentToolBar[style]
 mail.ru##DIV[class^="ban"],DIV[class*="Game"],DIV[id^="begunTable"],DIV#lite_top_banner,TABLE.text_adv,DIV#load_banner_2 *
 mail.ru##DIV.rb_body,DIV#want-talk,DIV.brd
 mail.ru##IMG[width="240"][height="400"][border="0"]
