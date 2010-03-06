@@ -250,6 +250,7 @@ adserving
 /advert.$domain=~akado.ru
 /advert/*
 /advertis
+/adverts.
 /adview.
 /banman/*
 ban_click
@@ -361,6 +362,7 @@ counter.$~object-subrequest,third-party
 /pagerank/*$image
 /peelad/*
 /phpads/*
+/phpadsnew$~object_subrequest
 /pop.ru/*
 /popuptraf
 ! Реклама с adfox.ru. У них несколько серверов и иногда указывается IP-адрес.
@@ -1057,6 +1059,7 @@ zvukoff.ru/24open/*.jpg
 ||iframepay.com^
 ||imho.ru/
 ||inetlog.ru^
+||infolinks.com^
 ||intel.com/b/
 ||intellitxt.com^
 ||ipru.ru/i/
@@ -1623,6 +1626,7 @@ ferra.ru##DIV.notik,DIV.oki
 file-online.ru##DIV.block_text
 ||feels.ru/uploads/new6/
 feels.ru##TABLE[width="100%"][height="90"]
+filehippo.com##DIV.ad
 ||fishki.net/*/ad/b/
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
 fishki.net##IFRAME
