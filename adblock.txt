@@ -57,10 +57,10 @@
 ! = Фильтры по регулярным выражениям ==========================================
 ! Антитоп
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~background,~stylesheet,~xmlhttprequest,third-party
-! Антибаннер
-/[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$~background,~object-subrequest,~stylesheet,~xmlhttprequest,third-party
-! Антисчётчик
-/\/count(?:ers?)?[.?/]/$~object-subrequest
+! Антибаннер - выключено, так как в основном бесполезно, а не оптимизируется.
+! /[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$~background,~object-subrequest,~stylesheet,~xmlhttprequest,third-party
+! Антисчётчик - выключено, так как в основном бесполезно, а не оптимизируется.
+! /\/count(?:ers?)?[.?/]/$~object-subrequest
 ! Прочие правила
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 /\/ad[svjx0-9]\//$domain=~mercatos.ru|~gamespot.com
