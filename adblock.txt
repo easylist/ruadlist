@@ -19,8 +19,8 @@
 ! Никогда не блокируем иконки сайтов
 @@/favicon.ico|$image
 ! Википедию не трогаем
-@@||wikimedia.org/
-@@||wikipedia.org/
+@@||wikimedia.org^
+@@||wikipedia.org^
 ! Картинки в гуглопоиске всегда отображаем
 @@||google.*/images?
 ! Блокирует: Антитоп
@@ -32,6 +32,8 @@
 ! Блокирует: /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
 @@||e-travel.com/$stylesheet
 @@stopgame.ru/js/$object
+! Блокирует: |http://partner.
+@@||partner.market.yandex.ru^
 ! Прочие исключения
 @@||cubeecraft.com^$document
 @@||deviantart.com/global/difi/?$subdocument
