@@ -202,6 +202,101 @@
 ##[style*="width: 480px"][style*="height: 60px"]
 ##[style*="width: 728px"][style*="height: 60px"],[style*="width: 728px"][style*="height: 90px"]
 !
+! = Общие CSS-фильтры =========================================================
+###advert
+###AFF_popup
+###eropromo_icq
+###floatyContent
+###fp_adv
+###fp_banner
+###im_popupDiv
+###magnaInformer
+###novem_billboard
+###radeant
+###topbanner
+##[id*="textadv"],[id*="text-adv"],[id*="text_adv"]
+##.adbckgrnd
+##.surbis_banner
+##.topbanner
+##[class*="text-adv"],[class*="text_adv"]
+##A[href*="7dvd.ru/fn.php?r="]
+##A[href*=".8coins.net/"]
+##A[href*=".8test.ru/"],A[href*=".8testov.ru/"]
+##A[href*="adclick.php?"]
+##A[href*="adv_go.php?"]
+##A[href*="cachewww.onlinecashmethod.com/"][href*="?member="]
+##A[href*="click2go.ru/?id="]
+##A[href*=".erwap.ru/?"]
+##A[href*="filepost.ru?page="]
+##A[href*="fotocash.ru/?ref="]
+##A[href*="free.getcd.ru/?r"]
+##A[href*="galaxymeet.ru/?code="]
+##A[href*="glamurhome.com/index.php?ref="]
+##A[href*="grand-casino.com/?"]
+##A[href^="http://kf-forex.ru/"][href*=".php?from="]
+##A[href^="http://qle.ru"]
+##A[href^="http://www.va-bank.com/?"]
+##A[href^="http://xklad.net"]
+##A[href*=".icq-spy.ru/"]
+##A[href*="kinotraff.ru/in.php?id="]
+##A[href*="nanoplast.ru/?pr="]
+##A[href*="new-popups.ru/"]
+~findbook.ru##A[href*="/?partner="]
+##A[href*="porno-foto.blogtur.com"]
+##A[href*="porno."][href*="?ref="]
+##A[href*="pornosklad.tv"]
+##A[href*="rusextest.com/?"]
+##A[href*="rushotgirls.com/?"]
+##A[href*="sexusblog.com"]
+##A[href*="start.fotostrana.ru"][href*="?ref_id="]
+##A[href*="taketest.ru/in.php?"]
+##A[href*="thepopsa.com/index.php?ref="]
+##A[href*="thetraffic.ru/in.cgi?"]
+##A[href*="trafmonster"]
+##A[href*="/topsites."]
+##A[href*="videoklass.ru/?ref="]
+##A[href*="vkontakterus.ru/?r="]
+##A[target="_blank"][href*="/adv.php?"]
+##A[target="_blank"][href*="gsmradar.ru"]
+##A[target="_blank"][href*="gsm-search.ru"]
+##A[target="_blank"][href*="smsproverka.ru"]
+##BODY[onload="popupInit();"] > DIV#popUp
+##DIV[id$="_len_ai"]
+##DIV[id*="adriver"]
+##DIV[id^="ad3fun"]
+##DIV[id^="adBara"]
+##DIV[id^="DIV_NNN_"]
+##DIV[id^="MarketGid"]
+##DIV[id^="novoteka"]
+##DIV[id^="rdminfrm_"]
+##DIV[id^="rnb_informer"]
+##DIV[id^="rtn4p"]
+##DIV[id^="sharePost"]
+##NOINDEX [class*="banner"]
+##NOINDEX [id*="banner"]
+##TABLE[style="z-index: 10000; width: 227px;"]:first-child:last-child
+! Скрываем рекламу от Google в результатах поиска на сайтах партнёров:
+google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
+! Скрываем теги А, выглядящие как картинки размером 31x88
+##*[style="border-width: 0px; height: 31px; width: 88px;"]
+! Скрываем рекламу на форумах, на myBB-движке
+##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
+! Партнёрские ссылки на торрент-трекерах
+##A[target="_blank"][href*=".10xdownloads.com"]
+##A[target="_blank"][href*=".alivedownload.com"]
+##A[target="_blank"][href*=".alivetorrents.com"]
+##A[target="_blank"][href*=".fileindexer.com"]
+##A[target="_blank"][href*="/files-netexpress.com"]
+##A[target="_blank"][href*=".filestube.com"]
+##A[target="_blank"][href*=".freshwap.net"]
+##A[target="_blank"][href*=".friendlyduck.com"]
+##A[target="_blank"][href*=".idownloadaccess.com"]
+##A[target="_blank"][href*="/jetdl.com"]
+##A[target="_blank"][href*="/NowDownloadAll.com"]
+##A[target="_blank"][href*=".sumotorrent.com"]
+##A[target="_blank"][href*=".torrentdownloads.net"]
+##A[target="_blank"][href*=".torrentreactor.net"]
+!
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://ad0
 |http://ad1
@@ -1441,101 +1536,6 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ||zakladka.org.ua^$third-party
 ||zamok911.com^$third-party
 ||zoda.ru/$third-party
-!
-! = Общие CSS-фильтры =========================================================
-###advert
-###AFF_popup
-###eropromo_icq
-###floatyContent
-###fp_adv
-###fp_banner
-###im_popupDiv
-###magnaInformer
-###novem_billboard
-###radeant
-###topbanner
-##[id*="textadv"],[id*="text-adv"],[id*="text_adv"]
-##.adbckgrnd
-##.surbis_banner
-##.topbanner
-##[class*="text-adv"],[class*="text_adv"]
-##A[href*="7dvd.ru/fn.php?r="]
-##A[href*=".8coins.net/"]
-##A[href*=".8test.ru/"],A[href*=".8testov.ru/"]
-##A[href*="adclick.php?"]
-##A[href*="adv_go.php?"]
-##A[href*="cachewww.onlinecashmethod.com/"][href*="?member="]
-##A[href*="click2go.ru/?id="]
-##A[href*=".erwap.ru/?"]
-##A[href*="filepost.ru?page="]
-##A[href*="fotocash.ru/?ref="]
-##A[href*="free.getcd.ru/?r"]
-##A[href*="galaxymeet.ru/?code="]
-##A[href*="glamurhome.com/index.php?ref="]
-##A[href*="grand-casino.com/?"]
-##A[href^="http://kf-forex.ru/"][href*=".php?from="]
-##A[href^="http://qle.ru"]
-##A[href^="http://www.va-bank.com/?"]
-##A[href^="http://xklad.net"]
-##A[href*=".icq-spy.ru/"]
-##A[href*="kinotraff.ru/in.php?id="]
-##A[href*="nanoplast.ru/?pr="]
-##A[href*="new-popups.ru/"]
-~findbook.ru##A[href*="/?partner="]
-##A[href*="porno-foto.blogtur.com"]
-##A[href*="porno."][href*="?ref="]
-##A[href*="pornosklad.tv"]
-##A[href*="rusextest.com/?"]
-##A[href*="rushotgirls.com/?"]
-##A[href*="sexusblog.com"]
-##A[href*="start.fotostrana.ru"][href*="?ref_id="]
-##A[href*="taketest.ru/in.php?"]
-##A[href*="thepopsa.com/index.php?ref="]
-##A[href*="thetraffic.ru/in.cgi?"]
-##A[href*="trafmonster"]
-##A[href*="/topsites."]
-##A[href*="videoklass.ru/?ref="]
-##A[href*="vkontakterus.ru/?r="]
-##A[target="_blank"][href*="/adv.php?"]
-##A[target="_blank"][href*="gsmradar.ru"]
-##A[target="_blank"][href*="gsm-search.ru"]
-##A[target="_blank"][href*="smsproverka.ru"]
-##BODY[onload="popupInit();"] > DIV#popUp
-##DIV[id$="_len_ai"]
-##DIV[id*="adriver"]
-##DIV[id^="ad3fun"]
-##DIV[id^="adBara"]
-##DIV[id^="DIV_NNN_"]
-##DIV[id^="MarketGid"]
-##DIV[id^="novoteka"]
-##DIV[id^="rdminfrm_"]
-##DIV[id^="rnb_informer"]
-##DIV[id^="rtn4p"]
-##DIV[id^="sharePost"]
-##NOINDEX [class*="banner"]
-##NOINDEX [id*="banner"]
-##TABLE[style="z-index: 10000; width: 227px;"]:first-child:last-child
-! Скрываем рекламу от Google в результатах поиска на сайтах партнёров:
-google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
-! Скрываем теги А, выглядящие как картинки размером 31x88
-##*[style="border-width: 0px; height: 31px; width: 88px;"]
-! Скрываем рекламу на форумах, на myBB-движке
-##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
-! Партнёрские ссылки на торрент-трекерах
-##A[target="_blank"][href*=".10xdownloads.com"]
-##A[target="_blank"][href*=".alivedownload.com"]
-##A[target="_blank"][href*=".alivetorrents.com"]
-##A[target="_blank"][href*=".fileindexer.com"]
-##A[target="_blank"][href*="/files-netexpress.com"]
-##A[target="_blank"][href*=".filestube.com"]
-##A[target="_blank"][href*=".freshwap.net"]
-##A[target="_blank"][href*=".friendlyduck.com"]
-##A[target="_blank"][href*=".idownloadaccess.com"]
-##A[target="_blank"][href*="/jetdl.com"]
-##A[target="_blank"][href*="/NowDownloadAll.com"]
-##A[target="_blank"][href*=".sumotorrent.com"]
-##A[target="_blank"][href*=".torrentdownloads.net"]
-##A[target="_blank"][href*=".torrentreactor.net"]
 !
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
 0verstyle.ru##.news CENTER:first-child
