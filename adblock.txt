@@ -2,18 +2,16 @@
 !Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
 !Создана на основе подписки от denis-ovs (denis-ovs.narod.ru)
 !Включает в себя фрагменты подписки от Александра Михалкина и Алексея Солохина
-!Авторы: Lain_13, DemonSat, Радик245
+!Над подпиской работают: Lain_13, DemonSat, Радик245
 !
 !RU AdList (ruadlist.googlecode.com)
 !==============================================================================
-! Спасибо за то, что выбрали нашу подписку.
 ! Если на вашем любимом сайте осталась реклама и она мешает или
 ! если наша подписка создаёт проблемы при его работе, то свяжитесь с нами.
 ! Мы всегда готовы помочь в нашем блоге ruadlist.baywords.com
 ! или на форуме forum.mozilla-russia.org
 ! Пишите нам о возникших проблемах в специальную тему в блоге или на форуме
-! в теме «Фильтры для расширения Adblock Plus» по адресу:
-! http://forum.mozilla-russia.org/viewtopic.php?pid=409520
+! по адресу: http://forum.mozilla-russia.org/viewtopic.php?pid=409520
 !
 ! = Ложные срабатывания (исключения) ==========================================
 ! Никогда не блокируем иконки сайтов
@@ -23,10 +21,6 @@
 @@||wikipedia.org^
 ! Картинки в гуглопоиске всегда отображаем
 @@||google.*/images?
-! Блокирует: Антитоп
-@@||russia.ru/player/top/$object
-! Блокирует: google-analytics.com
-@@|http://www.google.*/ig|
 !Блокирует: /\/ad[svjx0-9]\//
 @@info-broker.ks.ua/images/
 ! Блокирует: /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
@@ -57,14 +51,9 @@
 @@.zshare.net/ads.js?
 !
 ! = Фильтры по регулярным выражениям ==========================================
-! Антитоп
-/[^a-z]top[^a-z][^.]*\.[^?]*\?/$~background,~stylesheet,~xmlhttprequest,third-party
-! Антибаннер - выключено, так как в основном бесполезно, а не оптимизируется.
-! /[-_/]ba?n+(?:e?r)s?\d*[.-_/]/$~background,~object-subrequest,~stylesheet,~xmlhttprequest,third-party
-! Антисчётчик - выключено, так как в основном бесполезно, а не оптимизируется.
-! /\/count(?:ers?)?[.?/]/$~object-subrequest
-! Прочие правила
+! Рекламные скрипты
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
+! Популярные имена папок с рекламой
 /\/ad[svjx0-9]\//$domain=~mercatos.ru|~gamespot.com
 !
 ! = Блокировка баннеров по размеру в пути к картинке ==========================
@@ -328,15 +317,9 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 |http://b.$object
 |http://b.*/b/
 |http://b.*/iframe/
-|http://cnt.
-|http://count.
-|http://counting.
-|http://hit.$third-party
-|http://hits.$third-party
 |http://mads.
 |http://partner.
 |http://partners.
-|http://top.$~stylesheet,~xmlhttprequest,third-party
 !
 ! = Баннеры ===================================================================
 adserving
@@ -378,14 +361,6 @@ reklamka
 sexvodnokalssnikah
 /vottbanner
 !
-! = Web-Bugs (картинки 1x1) ===================================================
-/1x1.png
-/pixel.php?
-.googleusercontent.com/tracker/
-||addthis.com^*.gif?*&CXNID=
-||bin.clearspring.com^$object
-||radar.imgsmail.ru^
-!
 ! = Общие фильтры =============================================================
 .adv.*/cgi-bin/iframe/*?
 .advertising.
@@ -404,7 +379,6 @@ sexvodnokalssnikah
 .vba.ru/
 .wbn.ru/
 //a.gismeteo.
-//li.ru/*?
 //m2k.ru^
 //r*.auto.ru/*
 //r*.izvestia.ru/*
@@ -428,12 +402,6 @@ sexvodnokalssnikah
 /bs.nigma.ru/*$domain=~nigma.ru
 /by.banclk?
 /clickheat.
-/counted/*
-/counter.$~object-subrequest
-/counter/*
-/counter?
-/counter_
-/counters/*
 /ctxtlink/*
 /dontblockthis/*
 /ebayinternalpromos/*
@@ -476,8 +444,6 @@ sexvodnokalssnikah
 /slatefp.asp
 /splash/page_header/*
 /sponsImages/*
-/top100.cnt?
-/top100/*$domain=~top100.rambler.ru
 /topadvert.
 /tx2.ru/*
 /uicp.ru/?bn=
@@ -645,7 +611,6 @@ go.jetswap.com
 go.media-x.ru
 google-add.com/button/
 google-analistyc.
-google-analytics.com$domain=~earth.google.com|~imageshack.us|~verbatim.jp
 google.*/coop/cse/brand?
 googlebar.jps.ru
 googlnet.info/script/script.php?
@@ -1335,7 +1300,6 @@ zvukoff.ru/24open/*.jpg
 ||supertop.ru^
 ||surbis.ru^
 ||t.proext.com^
-||tns-counter.ru^$~object-subrequest
 ||tnx.net/
 ||topadvert.ru^
 ||topcto.ru^
@@ -1359,7 +1323,6 @@ zvukoff.ru/24open/*.jpg
 ||ventivmedia.com^
 ||vicepiter.ru^
 ||video-link.ru^
-||video-stats.video.google.
 ||videoclick.
 ||videoclik.
 ||videoplayerworld.com^
@@ -1443,19 +1406,8 @@ teaser*/cgi-bin/iframe/
 ||a.ucoz.net/a/
 ||clicks.moy.su^
 ||cy-pr.com/i/
-||moy.su/stat/
-||ucoz.*/main/?a=ustat;
 ||ucoz.net/img/cp/
 ||ucoz.net/img/ma/
-||ucoz.com/stat/
-||ucoz.de/stat/
-||ucoz.ko.uk/stat/
-||ucoz.kz/stat/
-||ucoz.lv/stat/
-||ucoz.net/stat/
-||ucoz.org/stat/
-||ucoz.ru/stat/
-||ucoz.ua/stat/
 ! Весь Яндекс в одном месте, много его -_-
 yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 |http://wimg.yandex.net/12/54/t-12542.png|
@@ -1466,16 +1418,12 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ||clck.yandex.
 ||kiks.yandex.
 ||lenta.yandex.*/i/
-||mc.yandex.
 ||yabs.yandex.
 ||yandex.*/cy?base=0&host=
-||yandex.*/cycounter?
 ! Излишне универсальные правила. Теоретически их можно совсем удалить.
 /popup.js$third-party,domain=~yandex.ru
 !
 ! = Условно полезные ресурсы, мусорящие на других сайтах ======================
-.faststart.ru^$third-party
-.hotlog.ru^$third-party
 //hmn.ru/*$third-party
 ||24new.ru^$third-party
 ||add.in.ua^$third-party
@@ -1528,7 +1476,6 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct
 ||selectornews.com^$third-party
 ||seorate.ru^$third-party
 ||smart-soft.ru^$third-party
-||statcounter.com^$third-party
 ||tehnoklad.ru^$third-party
 ||todaymix.ru^$third-party
 ||toget.ru^$third-party

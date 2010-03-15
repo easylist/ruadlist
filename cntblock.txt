@@ -1,0 +1,70 @@
+[Adblock Plus 1.1]
+!Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
+!Создана на основе подписки от denis-ovs (denis-ovs.narod.ru)
+!Включает в себя фрагменты подписки от Александра Михалкина и Алексея Солохина
+!Над подпиской работают: Lain_13, DemonSat, Радик245
+!
+!RU CountersList (ruadlist.googlecode.com)
+!==============================================================================
+! Данная подписка создана для увеличения приватности пользователя. Она включает
+! в себя счётчики посещаемости и сбора различных параметров компьютера
+! пользователя. Они не являются рекламой, а потому и не должны находиться в
+! основной анти-рекламной подписке.
+!
+! = Ложные срабатывания (исключения) ==========================================
+! Блокирует: ||google-analytics.com
+@@|http://www.google.*/ig|
+! Блокирует: Антитоп
+@@||russia.ru/player/top/$object
+!
+! = Фильтры по регулярным выражениям ==========================================
+! Антитоп
+/[^a-z]top[^a-z][^.]*\.[^?]*\?/$~background,~stylesheet,~xmlhttprequest,third-party
+!
+! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
+|http://cnt.
+|http://count.
+|http://counting.
+|http://hit.$third-party
+|http://hits.$third-party
+|http://top.$~stylesheet,~xmlhttprequest,third-party
+!
+! = Web-Bugs (картинки 1x1) ===================================================
+.googleusercontent.com/tracker/
+/1x1.png
+/pixel.php?
+||addthis.com^*.gif?*&CXNID=
+||bin.clearspring.com^$object
+||radar.imgsmail.ru^
+!
+! = Общие фильтры =============================================================
+.faststart.ru^
+.hotlog.ru^
+//li.ru/*?
+/counted/*
+/counter.$~object-subrequest
+/counter/*
+/counter?
+/counters/*
+/counter_
+/top100.cnt?
+/top100/*$domain=~top100.rambler.ru
+||google-analytics.com$domain=~earth.google.com|~imageshack.us|~verbatim.jp
+||statcounter.com^
+||tns-counter.ru^$~object-subrequest
+||video-stats.video.google.
+! Форумы ucoz.net
+||moy.su/stat/
+||ucoz.*/main/?a=ustat;
+||ucoz.com/stat/
+||ucoz.de/stat/
+||ucoz.ko.uk/stat/
+||ucoz.kz/stat/
+||ucoz.lv/stat/
+||ucoz.net/stat/
+||ucoz.org/stat/
+||ucoz.ru/stat/
+||ucoz.ua/stat/
+! Яndex
+||mc.yandex.
+||yandex.*/cycounter?
