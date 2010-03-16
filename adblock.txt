@@ -28,6 +28,13 @@
 @@stopgame.ru/js/$object
 ! Блокирует: |http://partner.
 @@||partner.market.yandex.ru^
+! Некоторых интернет-провайдеров легче совсем разблокировать
+! там сплошные "ложные" срабатывания на "правильные" баннеры.
+@@||akado.ru^$document
+@@||beeline.ru^$document
+@@||corbina.ru^$document
+@@||netbynet.ru^$document
+@@||qwerty.ru^$document
 ! Прочие исключения
 @@||cubeecraft.com^$document
 @@||deviantart.com/global/difi/?$subdocument
@@ -326,7 +333,7 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 ! = Баннеры ===================================================================
 adserving
 /adspace/*
-/advert.$domain=~akado.ru
+/advert.
 /advert/*
 /advertis$~stylesheet
 /adverts.
@@ -337,14 +344,14 @@ ban_click
 ?banner=
 .banner.
 _banner_
-_banner.$~qwerty.ru
+_banner.
 _banner/$~object-subrequest,~stylesheet
 _banners
 /banner.
-/banner_$domain=~allods.ru|~netbynet.ru|~onlime.ru|~qwerty.ru
+/banner_$domain=~allods.ru|~onlime.ru
 /banner-$domain=~onlime.ru
 /banner/*$domain=~playground.ru
-/banners$domain=~allods.ru|~beeline.ru|~corbina.ru|~netbynet.ru|~qwerty.ru|~vorbis.com
+/banners$domain=~allods.ru|~vorbis.com
 -banner.
 -banner/
 -banners
