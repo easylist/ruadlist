@@ -28,11 +28,10 @@
 @@stopgame.ru/js/$object
 ! Блокирует: |http://partner.
 @@||partner.market.yandex.ru^
-! Некоторых интернет-провайдеров легче совсем разблокировать
-! там сплошные "ложные" срабатывания на "правильные" баннеры.
+! Некоторых интернет-провайдеров легче совсем разблокировать.
+! Там сплошные "ложные" срабатывания на "правильные" баннеры.
 @@||akado.ru^$document
-@@||beeline.ru^$document
-@@||corbina.ru^$document
+@@||megafon.ru^$document
 @@||netbynet.ru^$document
 @@||qwerty.ru^$document
 ! Прочие исключения
@@ -328,10 +327,11 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 |http://b.*/iframe/
 |http://mads.
 |http://partner.
-|http://partners.
+|http://partners.$domain=~beeline.ru
 !
 ! = Баннеры ===================================================================
 adserving
+/adbanner
 /adspace/*
 /advert.
 /advert/*
@@ -340,7 +340,7 @@ adserving
 /adview.
 /banman/*
 ban_click
-^bannerid=
+^bannerid=$domain=~skylink.ru
 ?banner=
 .banner.
 _banner_
@@ -350,8 +350,8 @@ _banners
 /banner.
 /banner_$domain=~allods.ru|~onlime.ru
 /banner-$domain=~onlime.ru
-/banner/*$domain=~playground.ru
-/banners$domain=~allods.ru|~vorbis.com
+/banner/*$domain=~mts.ru|~playground.ru
+/banners$domain=~allods.ru|~beeline.ru|~corbina.net|~corbina.ru|~vorbis.com
 -banner.
 -banner/
 -banners
