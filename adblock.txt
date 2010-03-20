@@ -29,11 +29,13 @@
 ! Блокирует: |http://partner.
 @@||partner.market.yandex.ru^
 ! Некоторых интернет-провайдеров легче совсем разблокировать.
-! Там сплошные "ложные" срабатывания на "правильные" баннеры.
+! Там сплошные «ложные» срабатывания на «правильные» баннеры.
 @@||akado.ru^$document
 @@||megafon.ru^$document
 @@||netbynet.ru^$document
 @@||qwerty.ru^$document
+! Ещё «правильные баннеры»
+@@||ozon.ru/graphics/subscribe/
 ! Прочие исключения
 @@||cubeecraft.com^$document
 @@||deviantart.com/global/difi/?$subdocument
@@ -1413,7 +1415,7 @@ teaser*/cgi-bin/iframe/
 ||cy-pr.com/i/
 ||ucoz.net/img/cp/
 ||ucoz.net/img/ma/
-! Весь Яндекс в одном месте, много его -_-
+! Весь Яндекс в одном месте, тысячи их -_-
 yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 |http://wimg.yandex.net/12/54/t-12542.png|
 ||an.yandex.
