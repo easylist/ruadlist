@@ -1171,6 +1171,7 @@ zvukoff.ru/24open/*.jpg
 ||madbanner.ru/$~object-subrequest
 ||magna.ru^
 ||magnet.kiev.ua^
+||marketingsolutions.yahoo.com^
 ||masterpop.ru^
 ||mb.*/cgi-bin/iframe/*?
 ||mbn.com.ua^
@@ -1319,7 +1320,7 @@ zvukoff.ru/24open/*.jpg
 ||toptrackers.ru/button.
 ||trade7.ru^
 ||tradedoubler.com^
-||tradelinksru.com^
+||tradelinks
 ||traf.biz^
 ||traf.spb.ru^
 ||traffmaster.ru^
@@ -1436,6 +1437,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ! = Условно полезные ресурсы, мусорящие на других сайтах ======================
 //hmn.ru/*$third-party
 ||24new.ru^$third-party
+||2baksa.net^$subdocument,third-party
 ||add.in.ua^$third-party
 ||adme.ru/$third-party
 ||adriver.ru^$third-party
@@ -1621,8 +1623,8 @@ forum.wiaderko.com##DIV#topbar
 forums.heroesofnewerth.com###purchase_pref
 foto.rambler.ru##DIV.pi_b2
 freesoft.ru##A[href^="/clicks/click.php?adv="]
-freesoft.ru/images/
-free-torrents.org/$object
+||freesoft.ru/images/
+||free-torrents.org^$object
 fullgames.ru##DIV#footer
 fullgames.ru##DIV#footer + TABLE TD > DIV + * + DIV#ms
 fullgames.ru##DIV#footer + TABLE TD#left > CENTER
@@ -1635,6 +1637,8 @@ gagadget.com###footer-holding,[style*="width: 240px"][style*="height: 350px"]
 ||gamecopyworld.*/!$subdocument
 ||gamecopyworld.*/@_$subdocument
 game-torrent.info/forum/$object
+gde.ru###menu + DIV[align="center"]
+||gde.ru/img/*320x1
 gelbooru.com##DIV[id^="note-box"]
 gismeteo.com,gismeteo.ru,gismeteo.ua##DIV[class*="bnr"],DIV[id*="Adv"],DIV[class*="rian_block"]
 gismeteo.com,gismeteo.ru,gismeteo.ua##DIV.L_1_2.clearfix > DIV.containerWrap,DIV.L_1_2 > DIV.M1 > DIV.containerWrap,DIV.mainWrap > DIV.M4 > DIV.containerWrap:nth-child(-n+2)
@@ -1704,6 +1708,8 @@ lequroz.ru/$image
 levonevski.net/$object
 lifehacker.ru##DIV#banner-column
 lifehacker.ru##IMG[alt="Ads"]
+liveinternet.ru##IMG[width="200"][height="60"],IMG[width="476"][height="60"],IMG[width="500"][height="45"]
+||liveinternet.ru/publ/00stat/*/*.swf
 livejournal.com##[class^="adv"],[class*="-adv"],[class^="ljad"]:not([class^="ljadd"])
 lookszone.ru/$object
 lostfilm.tv/img/$object
@@ -1748,9 +1754,7 @@ newestsoft.com##A[href="http://reviewsoft.ru/"]
 newestsoft.com##DIV.mk_body_bg > TABLE[bgcolor="#ffffff"][style="border: 1px solid rgb(193, 209, 253);"]
 newestsoft.com/images/*x90$image
 new-films.biz##DIV#dle-content > NOINDEX
-ngs.ru##*#advblock,*[class*="adv-top"],*[class*="banner"],*[class*="ban-top"],DIV.adv
-ngs.ru##DIV[align="center"] > NOINDEX
-ngs.ru##DIV > OBJECT > A > IMG,TABLE#nbs-block,TD.blank-td + TD.nb
+ngs.ru##.hcozffr,.nb,#nbs-block,#advblock,.adv
 nnm-club.ru##CENTER > TABLE[id^="mc_"]
 nnm-club.ru##.header IFRAME
 ||nnm.ru/a/$background
@@ -1759,6 +1763,8 @@ nnm.ru##[class*="banner"],[id*="banner"]
 //nnn.ru/*$object
 ||nn.ru/data/nnbs/
 novafilm.tv##DIV[style="display: block;"]
+nowa.cc##TD.mc_cars_row
+||nowa.cc/images/$subdocument
 npicture.net##A > IMG[src*="npicture.net/image-"]
 nvworld.ru##DIV.adv
 ||nyaatorrents.org/images/*.jpg
@@ -1975,31 +1981,13 @@ zr.ru##DIV.br
 *.ifolder.ru##DIV#b-fibo-plus
 *.ifolder.ru##DIV#b-header-in
 *.ifolder.ru##IMG#b-bottom-anchor
-demotivators.ru##TABLE[style="border: 0px solid rgb(204, 204, 204); background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 100%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; border-collapse: separate; border-spacing: 4px; line-height: 1.2em;"]
 depositfiles.com##DIV.dg_t1
 depositfiles.com##DIV.zhMain
 depositfiles.com##DIV[style="text-align: center;"]
 design.ru-deluxe.ru##DIV#mixkt_4294948230
 design.ru-deluxe.ru##DIV[id*="mixkt_*"]
-fast-torrent.ru##TD.ad_block
 forum.sevstar.net##DIV[style="padding: 2px; float: right;"]
-free-torrents.org##TABLE[style="border-spacing: 5px;"]
-fullz.ru##B
-gde.ru##DIV#main-content2 > DIV#central-content-result:first-child > OL.search:first-child > LI:first-child
-goldbook.ws##IMG[alt*="Тайна Фамилии"]
-htaccess.net.ru##P[style="margin: 0px; visibility: visible; text-decoration: underline; color: brown; font-size: 9px; line-height: 11px; background-color: rgb(255, 255, 255); font-family: Verdana; text-align: left;"]
-huyahoo.ru##IMG[border="0"]
-huyahoo.ru##TD[style="border: 1px dashed rgb(230, 230, 230); padding: 4px; font-size: 11px; width: 80%; color: rgb(68, 68, 68); font-family: verdana; background-color: rgb(253, 253, 253);"]
-infanata.org##DIV[style="border: 1px solid rgb(161, 32, 62);"]
-intv.ru##DIV#minirPromo
 job.ru##DIV.tb_container
-ksweb.ru##IMG[style="width: 500px; height: 300px;"]
-liveinternet.ru##IMG[width="200"][height="60"][border="0"]
-liveinternet.ru##IMG[width="476"][height="60"][border="0"]
-liveinternet.ru##IMG[width="500"][height="45"][border="0"]
-lostfilm.tv##A[href="http://romyl.ru"]
 mail.google.com##DIV.nH.mq
-mirsofta.ru##IMG[src="650x80.jpg"]
 mozilla-russia.org##DIV#modex
-ngs.ru##div[class$="nb"]
-nowa.cc##TD.mc_cars_row
+
