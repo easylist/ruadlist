@@ -275,8 +275,8 @@
 ##DIV[id^="sharePost"]
 ##NOINDEX [class*="banner"]
 ##NOINDEX [id*="banner"]
-! Популярный паттерн, часто ещё в CENTER это всё оборачивают
-##NOINDEX > A[target="_blank"] > IMG
+! Популярный паттерн
+##CENTER > NOINDEX > A[target="_blank"] > IMG
 ! Скрываем рекламу от Google в результатах поиска на сайтах партнёров:
 google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 ! Скрываем теги А, выглядящие как картинки размером 31x88
@@ -1696,6 +1696,7 @@ kinopoisk.ru##[style="width: 240px; height: 140px;"],[style="width: 240px; heigh
 kleo.ru##DIV#color + TABLE
 ||kolesa.kz/bs/*
 ||kolesa.kz/f/bs/*
+kotomatrix.ru##NOINDEX > A[target="_blank"] > IMG
 kp.ru##DIV.banner-middle
 ||kp.ru/_inc/garant.html
 ||kp.ru/tizers/
