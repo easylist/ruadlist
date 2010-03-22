@@ -275,7 +275,8 @@
 ##DIV[id^="sharePost"]
 ##NOINDEX [class*="banner"]
 ##NOINDEX [id*="banner"]
-##TABLE[style="z-index: 10000; width: 227px;"]:first-child:last-child
+! Популярный паттерн, часто ещё в CENTER это всё оборачивают
+##NOINDEX > A[target="_blank"] > IMG
 ! Скрываем рекламу от Google в результатах поиска на сайтах партнёров:
 google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 ! Скрываем теги А, выглядящие как картинки размером 31x88
@@ -1071,6 +1072,7 @@ zvukoff.ru/24open/*.jpg
 ||cykahax.net/
 ||depositfiles.*/adroot/
 ||diagar.com/files/$image
+||dietmake.ru^
 ||dndd.ru/
 ||do.am/stat^
 ||domika.msk.ru^
@@ -1355,6 +1357,7 @@ zvukoff.ru/24open/*.jpg
 ||xbn.ru/cgi-bin/
 ||xcounter.ru^
 ||xklad.net^
+||yaicom.ru^
 ||yellowmedia.biz^
 ||yieldmanager.com^
 ||xiti.com^
@@ -1385,9 +1388,8 @@ teaser*/cgi-bin/iframe/
 ||teasernet.com^
 ||teasernet.ru^
 ||teaservizio.com^
-.com/step*.php?
-.ru/step*.php?
 ! Сеть teasers.net, bodyclick.net и teasergate.com
+||associeta.com^
 ||bodyclick.net^
 ||teasergate.com^
 ||tizerda.net^
@@ -1395,8 +1397,6 @@ teaser*/cgi-bin/iframe/
 ||tizermine.net^
 ||tizers.net^
 ||tizerset.net^
-.com/tizer*.php?
-.net/tizer*.php?
 ! Найденные домены партнёрской сети 1under.ru (все сидят на IP 89.208.145.156)
 ||1under.ru/
 ||2under.ru/
@@ -1691,7 +1691,6 @@ kinopoisk.ru##[style="width: 240px; height: 140px;"],[style="width: 240px; heigh
 kleo.ru##DIV#color + TABLE
 ||kolesa.kz/bs/*
 ||kolesa.kz/f/bs/*
-kotomatrix.ru##NOINDEX > A[target="_blank"] > IMG
 kp.ru##DIV.banner-middle
 ||kp.ru/_inc/garant.html
 ||kp.ru/tizers/
@@ -1762,6 +1761,7 @@ novafilm.tv##DIV[style="display: block;"]
 npicture.net##A > IMG[src*="npicture.net/image-"]
 nvworld.ru##DIV.adv
 ||nyaatorrents.org/images/*.jpg
+||nya.sh/imgs/
 nyaatorrents.org##DIV[class$="ad"]
 ||obnimau.ru/img-ba/
 obnimau.ru##NOINDEX > CENTER > TABLE
@@ -2002,7 +2002,3 @@ mirsofta.ru##IMG[src="650x80.jpg"]
 mozilla-russia.org##DIV#modex
 ngs.ru##div[class$="nb"]
 nowa.cc##TD.mc_cars_row
-otvali.ru##DIV#rotvali
-otvali.ru##DIV[id="otvali.ru_nas_1_xxx_news"]
-otvali.ru##DIV[style="position: relative; width: auto; height: auto;"]
-partner.loveplanet.ru##TABLE
