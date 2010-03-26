@@ -36,10 +36,12 @@
 @@||qwerty.ru^$document
 ! Ещё «правильные баннеры»
 @@||ozon.ru/graphics/subscribe/
+! Мини-превью сайтов по их доменам в конце адреса.
+@@||similarsites.com/thumbnail/
 ! Прочие исключения
 @@||cubeecraft.com^$document
-@@||deviantart.com/global/difi/?$subdocument
 @@||citydom.ru^$document
+@@||deviantart.com/global/difi/?$subdocument
 !
 ! = Блокировка с исключениями =================================================
 ||2baksa.net/download/
@@ -1031,8 +1033,6 @@ zvukoff.ru/24open/*.jpg
 ||alltraf.net^
 ||amoney.ru/images/$object
 ||amung.us^
-||at.ua/stat/
-||atdmt.com^
 ||attivertura.com^
 ||awmpartners.com^
 ||b-one.com.ua^
@@ -1312,7 +1312,6 @@ zvukoff.ru/24open/*.jpg
 ||spbland.ru/bban/
 ||sponsorads.de^
 ||srvdata.ru^
-||stat24.com^
 ||static.exaccess.ru^
 ||static.terrhq.ru^
 ||sticker.yadro.ru^
@@ -1373,6 +1372,7 @@ zvukoff.ru/24open/*.jpg
 ||znews.su^
 ||zorkabiz.ru^
 ||zoy.org/
+
 ! Всяческие тизеры
 tizer*/cgi-bin/iframe/
 teaser*/cgi-bin/iframe/
@@ -1387,15 +1387,18 @@ teaser*/cgi-bin/iframe/
 ||tizru.com^
 ||tizy.ru/
 ||tjs1.ru/
+
 ! Сеть adteaser.ru
 ||adteaser.ru^
 /show_teaser*.php?
+
 ! Сеть teasernet.com
 ||agitazio.com^
 ||supertura.com^
 ||teasernet.com^
 ||teasernet.ru^
 ||teaservizio.com^
+
 ! Сеть teasers.net, bodyclick.net и teasergate.com
 ||associeta.com^
 ||bodyclick.net^
@@ -1405,6 +1408,7 @@ teaser*/cgi-bin/iframe/
 ||tizermine.net^
 ||tizers.net^
 ||tizerset.net^
+
 ! Найденные домены партнёрской сети 1under.ru (все сидят на IP 89.208.145.156)
 ||1under.ru/
 ||2under.ru/
@@ -1416,6 +1420,7 @@ teaser*/cgi-bin/iframe/
 ||oneund.ru/
 ||ruigra.com/
 ||textun.ru/
+
 ! Форумы ucoz.net
 ##DIV[id^="adBar"]
 ##DIV[id^="adText"]
@@ -1425,6 +1430,7 @@ teaser*/cgi-bin/iframe/
 ||cy-pr.com/i/
 ||ucoz.net/img/cp/
 ||ucoz.net/img/ma/
+
 ! Весь Яндекс в одном месте, тысячи их -_-
 yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 |http://wimg.yandex.net/12/54/t-12542.png|
@@ -1437,6 +1443,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ||lenta.yandex.*/i/
 ||yabs.yandex.
 ||yandex.*/cy?base=0&host=
+
 ! Излишне универсальные правила. Теоретически их можно совсем удалить.
 /popup.js$third-party,domain=~yandex.ru
 !

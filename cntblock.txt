@@ -38,6 +38,7 @@
 ||radar.imgsmail.ru^
 !
 ! = Общие фильтры =============================================================
+|http://c.*/c.gif?
 .faststart.ru^
 .hotlog.ru^
 //li.ru/*?
@@ -49,16 +50,23 @@
 /counter_
 /top100.cnt?
 /top100/*$domain=~top100.rambler.ru
+||at.ua/stat/
+||atdmt.com^
+||burstnet.com^
 ||clixpy.com^
 ||free-pagerank.com^
 ||geovisite.com^$third-party
 ||google-analytics.com$domain=~earth.google.com|~imageshack.us|~verbatim.jp
 ||liveinternet.ru/cgi-bin/
 ||statcounter.com^$third-party
+||stat24.com^$third-party
+||stats.indextools.com^
 ||subscribe.ru/stat/
 ||tns-counter.ru^$~object-subrequest
 ||video-stats.video.google.
+||webtrends.com^
 ||yadro.ru^
+
 ! Форумы ucoz.net
 ||moy.su/stat/
 ||ucoz.*/main/?a=ustat;
@@ -71,6 +79,7 @@
 ||ucoz.org/stat/
 ||ucoz.ru/stat/
 ||ucoz.ua/stat/
+
 ! Яndex
 ||mc.yandex.
 ||yandex.*/cycounter?
