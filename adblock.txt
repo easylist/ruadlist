@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: B9LL2mOkxYkxvzF2uXBSpQ
-!
+! Checksum: CFM/zVuHLbnNfiXYCE4hUw
+
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
 ! Проект создан DemonSat'ом на основе подписки от denis-ovs(denis-ovs.narod.ru)
@@ -14,7 +14,7 @@
 ! или на форуме forum.mozilla-russia.org
 ! Пишите о возникших проблемах в специальную тему в блогеили на форуме
 ! по адресу: http://forum.mozilla-russia.org/viewtopic.php?pid=409520
-!
+
 ! = Исключения против ложных срабатываний =====================================
 ! Никогда не блокируем иконки сайтов
 @@/favicon.ico|$image
@@ -44,7 +44,7 @@
 @@||cubeecraft.com^$document
 @@||citydom.ru^$document
 @@||deviantart.com/global/difi/?$subdocument
-!
+
 ! = Блокировка с исключениями =================================================
 ||2baksa.net/download/
 @@||2baksa.net/download/*/$image
@@ -59,16 +59,16 @@
 @@||rs.mail.ru/b$image,background,domain=mail.ru
 ||yarportal.ru/$image,background
 @@||yarportal.ru/*/$image
-!
+
 ! = Системы определения блокировки рекламы ====================================
 @@.zshare.net/ads.js?
-!
+
 ! = Фильтры по регулярным выражениям ==========================================
 ! Рекламные скрипты
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 ! Популярные имена папок с рекламой
 /\/ad[svjx0-9]\//$domain=~mercatos.ru|~gamespot.com
-!
+
 ! = Блокировка баннеров по размеру в пути к картинке ==========================
 /\D(?:3[1-3][-_x]88|88[-_x]3[1-3])\D/
 */120x140*
@@ -183,7 +183,7 @@
 *_768x90_*
 *e120x600*
 *n728x90_*
-!
+
 ! = Скрытие баннеров по указанному размеру картинки ===========================
 ##[width="80"][height="15"],[width="80"][height="150"]
 ##[width="88"][height="31"],[width="88"][height="32"],[width="88"][height="33"]
@@ -207,7 +207,7 @@
 ##[style*="width: 478px"][style*="height: 15px"],[style*="width: 478px"][style*="height: 60px"],[style*="width: 478px"][style*="height: 80px"]
 ##[style*="width: 480px"][style*="height: 60px"]
 ##[style*="width: 728px"][style*="height: 60px"],[style*="width: 728px"][style*="height: 90px"]
-!
+
 ! = Общие CSS-фильтры =========================================================
 ###advert
 ###AFF_popup
@@ -306,7 +306,7 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 ##A[target="_blank"][href*=".sumotorrent.com"]
 ##A[target="_blank"][href*=".torrentdownloads.net"]
 ##A[target="_blank"][href*=".torrentreactor.net"]
-!
+
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://ad0
 |http://ad1
@@ -338,7 +338,7 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 |http://mads.
 |http://partner.
 |http://partners.$domain=~beeline.ru
-!
+
 ! = Баннеры ===================================================================
 .net/baner/
 .com/baner/
@@ -383,7 +383,7 @@ _reklama
 /reklama
 reklamka
 /vottbanner
-!
+
 ! = Популярные баннеры по ключевым словам =====================================
 love_qip_head
 -na-dosuge
@@ -391,7 +391,7 @@ odnotrahniki
 online-v-kontakte
 /se*kontakte
 sexvodnokalssnikah
-!
+
 ! = Общие фильтры =============================================================
 .adv.*/cgi-bin/iframe/*?
 .advertising.
@@ -1460,7 +1460,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 
 ! Излишне универсальные правила. Теоретически их можно совсем удалить.
 /popup.js$third-party,domain=~yandex.ru
-!
+
 ! = Условно полезные ресурсы, мусорящие на других сайтах ======================
 //hmn.ru/*$third-party
 ||24new.ru^$third-party
@@ -1533,7 +1533,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ||zakladka.org.ua^$third-party
 ||zamok911.com^$third-party
 ||zoda.ru/$third-party
-!
+
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
 0verstyle.ru##.news CENTER:first-child
 2baksa.net,2baksa.ws##BODY > DIV > DIV > A[href*="/go.php?url="] > IMG[src*="2baksa.net/download/images/"]
