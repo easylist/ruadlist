@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: NJEZt80rZC8I+4CitcyeUA
-!
+! Checksum: jMzrO9Fe5pBRhe4vzekJ5g
+
 ! Дополнительная подписка фильтров RU CountersList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
 ! Проект создан DemonSat'ом на основе подписки от denis-ovs(denis-ovs.narod.ru)
@@ -12,17 +12,17 @@
 ! включает в себя счётчики посещаемости и сбора различных параметров компьютера
 ! пользователя. Они не являются рекламой, а потому и не должны находиться в
 ! основной анти-рекламной подписке, но при этом собирают данные о пользователе.
-!
+
 ! = Ложные срабатывания (исключения) ==========================================
 ! Блокирует: ||google-analytics.com
 @@|http://www.google.*/ig|
 ! Блокирует: Антитоп
 @@||russia.ru/player/top/$object
-!
+
 ! = Фильтры по регулярным выражениям ==========================================
 ! Антитоп
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~background,~stylesheet,~xmlhttprequest,third-party
-!
+
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://cnt.
 |http://count.
@@ -30,7 +30,7 @@
 |http://hit.$third-party
 |http://hits.$third-party
 |http://top.$~stylesheet,~xmlhttprequest,third-party
-!
+
 ! = Web-Bugs (картинки 1x1) ===================================================
 .googleusercontent.com/tracker/
 /1x1.png
@@ -38,7 +38,7 @@
 ||addthis.com^*.gif?*&CXNID=
 ||bin.clearspring.com^$object
 ||radar.imgsmail.ru^
-!
+
 ! = Общие фильтры =============================================================
 |http://c.*/c.gif?
 .faststart.ru^
