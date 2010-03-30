@@ -30,6 +30,7 @@ $data =~ s/^.*!\s*checksum[\s\-:]+([\w\+\/=]+).*\n//gmi;
 # lines and get an MD5 checksum of the result (base64-encoded,
 # without the trailing = characters).
 my $checksumData = $data;
+$checksumData =~ s/\xEF\xBB\xBF//g;
 $checksumData =~ s/\r//g;
 $checksumData =~ s/\n+/\n/g;
 
