@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: f9uN1g6Saj5CHt1frlUVEQ
+! Checksum: pbUrbk9cI/2jPbyatD6hCQ
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -30,20 +30,20 @@
 @@stopgame.ru/js/$object
 ! Блокирует: |http://partner.
 @@||partner.market.yandex.ru^
-! Некоторых интернет-провайдеров легче совсем разблокировать.
-! Там сплошные «ложные» срабатывания на «правильные» баннеры.
-@@||akado.ru^$document
-@@||megafon.ru^$document
-@@||netbynet.ru^$document
-@@||qwerty.ru^$document
 ! Ещё «правильные баннеры»
 @@||ozon.ru/graphics/subscribe/
 ! Мини-превью сайтов по их доменам в конце адреса.
 @@||similarsites.com/thumbnail/
-! Прочие исключения
+! Прочие исключения (множественные срабатывания)
+@@||ankama.com^
 @@||cubeecraft.com^$document
 @@||citydom.ru^$document
 @@||deviantart.com/global/difi/?$subdocument
+! Некоторые интернет-провайдеры — их легче совсем разблокировать.
+@@||akado.ru^$document
+@@||megafon.ru^$document
+@@||netbynet.ru^$document
+@@||qwerty.ru^$document
 
 ! = Блокировка с исключениями =================================================
 ||2baksa.net/download/
@@ -319,6 +319,7 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 |http://ad9
 |http://adfarm
 |http://ad.$~object_subrequest,domain=~europa.eu|~sjsu.edu|~uitm.edu.my|~uni-freiburg.de
+!|http://asd. (пока видел 1 такой)
 |http://ads.
 |http://ads0
 |http://ads1
@@ -344,6 +345,7 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 .com/baner/
 adserving
 /adbanner
+/adframe.$subdocument
 /adspace/*
 /advert.
 /advert/*
