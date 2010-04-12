@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: /eiLHFX80vxxMPIMgGcXnQ
+! Checksum: vK1Z3AgicyW6AXBm0QMm4g
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -237,6 +237,7 @@
 ##A[href^="http://xklad.net"]
 ##A[href*=".icq-spy.ru/"]
 ##A[href*="kinotraff.ru/in.php?id="]
+##A[href*="marketgid.com"]
 ##A[href*="nanoplast.ru/?pr="]
 ##A[href*="new-popups.ru/"]
 ~findbook.ru##A[href*="/?partner="]
@@ -253,12 +254,14 @@
 ##A[href*="trafmonster"]
 ##A[href*="/topsites."]
 ##A[href*="videoklass.ru/?ref="]
+##A[href*="visitweb.com"]
 ##A[href*="vkontakterus.ru/?r="]
 ##A[target="_blank"][href*="/adv.php?"]
 ##A[target="_blank"][href*="gsmradar.ru"]
 ##A[target="_blank"][href*="gsm-search.ru"]
 ##A[target="_blank"][href*="smsproverka.ru"]
 ##BODY[onload="popupInit();"] > DIV#popUp
+##DIV[class^="snBody"]
 ##DIV[id$="_len_ai"]
 ##DIV[id*="adriver"]
 ##DIV[id^="ad3fun"]
@@ -1789,8 +1792,7 @@ newestsoft.com##DIV.mk_body_bg > TABLE[bgcolor="#ffffff"][style="border: 1px sol
 newestsoft.com/images/*x90$image
 new-films.biz##DIV#dle-content > NOINDEX
 ngs.ru##.hcozffr,.nb,#nbs-block,#advblock,.adv
-nnm-club.ru##CENTER > TABLE[id^="mc_"]
-nnm-club.ru##.header IFRAME
+nnm-club.ru##CENTER > TABLE[id^="mc_"],DIV[id^="x"],.header IFRAME
 ||nnm.ru/a/$background
 nnm.ru##A#branding_link
 nnm.ru##[class*="banner"],[id*="banner"]
