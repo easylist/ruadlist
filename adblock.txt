@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: vK1Z3AgicyW6AXBm0QMm4g
+! Checksum: nSscks9dKOs3pbcp67TYmg
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -966,8 +966,14 @@ zvukoff.ru/24open/*.jpg
 ||195.239.111.200^
 ||212.150.34.114^
 ||213.199.175.155^
-||217.16.18.213^$~object-subrequest
-||217.16.18.214^$~object-subrequest
+
+! Сервера AdRiver по IP-адресам.
+! ||217.16.18.206^$~object-subrequest
+! ||217.16.18.213^$~object-subrequest
+! ||217.16.18.214^$~object-subrequest
+! Надеюсь так будет работать нормально.
+||217.16.18.*^$~object-subrequest
+
 ||012345.ru/upload/
 ||1-traf.net^
 ||1ha.ad.md^
