@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: 62kz0cS/6UMKtT+NrigOmQ
+! Checksum: rqeD9JbCv3ydm18Yvc4gYg
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -389,6 +389,18 @@ online-v-kontakte
 /se*kontakte
 sexvodnokalssnikah
 
+! = Популярные имена скриптов =================================================
+.ru/_scripts/themes/sb.js|
+/pseudocounter.js
+/ad*.js?link
+/adriver_async.js
+/barmaglot.js|
+/begun.js
+/block.js|$third-party
+/popup.js$third-party,domain=~yandex.ru
+/sun*_ajax.js|
+/xgemius*.js|
+
 ! = Общие фильтры =============================================================
 .adv.*/cgi-bin/iframe/*?
 .advertising.
@@ -400,7 +412,6 @@ sexvodnokalssnikah
 .pop.ru/
 .r.msn.com/
 .rbe.ru/
-.ru/_scripts/themes/sb.js|
 .sbn.ru/
 .spylog.$image,script
 .tle.ru/
@@ -413,18 +424,15 @@ sexvodnokalssnikah
 //r*.wmlink.*/*
 //r.e1.ru/*
 //r.i.ua/*
-/ad*.js?link
 /ad_show.$script
 /adclick.$script
 /adimage.php
 /adland.php
 /adrevolver/*
-/adriver_async.js
 /ads_iframe.
 /adscript
 /all.by/*
 /backlinks.
-/begun.js
 /bitrix/spread.php?
 /bs.mybb.ru/*
 /bs.nigma.ru/*$domain=~nigma.ru
@@ -435,12 +443,11 @@ sexvodnokalssnikah
 /ebayinternalpromos/*
 /event.ng
 /extadv/*
-/fmates.ru/announce.js
 /fullgames.ru/*$object
 /fuseads/*
 /getrank.net/pr*.php
 /houseads/*
-/i.li.ru/_sl_/*.js
+/i.li.ru/_sl_/$script
 /IndianRailways/*$match-case
 /linkexchange/*
 /linkshare/*
@@ -460,7 +467,6 @@ sexvodnokalssnikah
 /printads/*
 /promos/*$object
 /prre.ru/bout.php?
-/pseudocounter.js?
 /qzx.ru/gf/*
 /rankem.cgi?action=
 /rax.ru/*
@@ -477,12 +483,7 @@ sexvodnokalssnikah
 /vendshow/*
 /warlog.
 /webadvert
-/xap.ru/*.js
-/xgemius*.js|$script
-! Скрипт, открывающий страницу с рекламой в фоне при щелчке по некоторым сайтам.
-! Кусок кода из него для примера: !(l1l&&ll1)&&!(!l1l&&!ll1&&!lll)
-/sun*_ajax.js|
-/barmaglot.js|
+/xap.ru/*$script
 13rus.ru/img/
 2pay.ru/gif/terminal.swf?link=
 abc-people.com/bann_
@@ -646,7 +647,6 @@ gps-club.ru/upload/bx/
 gramer.freehostia.com/statistics/
 headnet.ru/main/images/hn.gif
 hotline.ua/img/hl/gm
-hypernews.ru/*.js
 i.j2j.ru/
 i.mabila.ua/$domain=~mabila.ua
 iframe.mediaplazza.com/
@@ -663,7 +663,6 @@ img.travian.com/admedia/
 info.webalta.net/reliancebutton?
 informer.cyberstyle.ru
 infosec.ru/common/data/pub/images/articles/
-infotech-media.ru/*.js
 internetportal.ru/*.gif
 ip2phrase.com/ip2phrase.asp?
 iphones.ru/misc/a-d-v/
@@ -694,7 +693,6 @@ linktraff.ru/
 linon.ru/links*.php?
 list.ngs.ru/images/ngs/rating/rate_
 list.ru/img/buttons/
-liveclix.net/links/*.js
 local.*/cgi-bin/iframe/mb_timezone
 log.krs-ix.ru/krs.php?
 logan.jino.ru
@@ -800,7 +798,6 @@ ruscontext.com/
 ruvideo.net/obzor/
 s.100projects.ru/
 s.agava.ru/cgi/actions/c.cgi?
-s.clicktale.net/*.js
 s.holder.com.ua/
 s.holm.ru/stat/
 s.ladoshki.com/p/a/
@@ -811,8 +808,6 @@ sat-digest.com/agc/*.gif
 satcore.info/design/satcore_knopka*.gif
 sayday.ru/porn
 sb.google.com/safebrowsing/update
-search.sputnik1.ru/search.js
-search.sputnik1.ru/stats.php?
 search4all.org/knopka.gif
 searchmeta.webhost.ru
 secure-it.imrworldwide.com/cgi-bin/m?
@@ -830,7 +825,7 @@ sexfabrika.ru/*.gif
 sexfilms.ru
 sexprice.ru/
 sexyfans.net.ru
-sexyfriend.ru/*.js
+sexyfriend.ru
 sexymafia.ru
 sezam.nov.ru
 showbiz.mail.ru/$domain=~showbiz.mail.ru
@@ -863,7 +858,6 @@ takru.com/in.php?id=
 tbe.tom.ru/?
 teenseks.da.ru
 temp.theabyss.ru/1/botva/
-testsbox.ru/autotest.js?
 tgvc.seall.ru/img/
 thecc.ws/cc/$object
 thews.info/img_*.gif
@@ -1141,6 +1135,7 @@ zvukoff.ru/24open/*.jpg
 ||hit.gemius.pl^
 ||hitlist.ru^
 ||hitter.ru^
+||hypernews.ru^$script
 ||i.i.ua/r/
 ||i.pr-cy.ru^
 ||icq-window.
@@ -1182,6 +1177,7 @@ zvukoff.ru/24open/*.jpg
 ||linkexchange.
 ||linkwm.ru^
 ||lipcrus.biz^
+||liveclix.net^
 ||loadmovie.ru^
 ||lovn.ru/
 ||lux-bn.com.ua^
@@ -1332,6 +1328,7 @@ zvukoff.ru/24open/*.jpg
 ||softbn.ru/*?
 ||spbland.ru/bban/
 ||sponsorads.de^
+||sputnik1.ru^
 ||srvdata.ru^
 ||static.exaccess.ru^
 ||static.terrhq.ru^
@@ -1423,6 +1420,7 @@ teaser*/cgi-bin/iframe/
 ||teaservizio.com^
 
 ! Сеть teasers.net, bodyclick.net и teasergate.com
+||associazio.com^
 ||associeta.com^
 ||bodyclick.net^
 ||teasergate.com^
@@ -1467,17 +1465,15 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ||yabs.yandex.
 ||yandex.*/cy?base=0&host=
 
-! Излишне универсальные правила. Теоретически их можно совсем удалить.
-/popup.js$third-party,domain=~yandex.ru
-
 ! = Условно полезные ресурсы, мусорящие на других сайтах ======================
-//hmn.ru/*$third-party
+//hmn.ru^$third-party
+//kpk.me^$third-party
 ||24new.ru^$third-party
-||2baksa.net^$subdocument,third-party
+||2baksa.net^$third-party
 ||add.in.ua^$third-party
 ||adme.ru/$third-party
 ||adriver.ru^$third-party
-||afterdownload.com^$subdocument,third-party
+||afterdownload.com^$third-party
 ||agrotv.ru^$third-party
 ||akavita.com^$third-party
 ||animereactor.ru^$third-party
@@ -1492,6 +1488,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ||filecontrol.ru^$third-party
 ||file-online.ru^$third-party
 ||filepost.ru^$third-party
+||fmates.ru^$third-party
 ||fotkidepo.ru^$script,third-party
 ||freehd.com.ua^$third-party
 ||galaxymeet.ru^$third-party
@@ -1526,6 +1523,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ||seorate.ru^$third-party
 ||smart-soft.ru^$third-party
 ||tehnoklad.ru^$third-party
+||testsbox.ru^$third-party
 ||todaymix.ru^$third-party
 ||toget.ru^$third-party
 ||torgnn.ru^$third-party
