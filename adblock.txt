@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: aFniOsf6PUFj7tkUXQowgA
+! Checksum: I3k8PZYsnRslj7ub/y/ZUw
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -1157,6 +1157,7 @@ zvukoff.ru/24open/*.jpg
 ||ipru.ru/i/
 ||ipru.ru/j/
 ||ipz.ru/cgi-bin/
+||job.ws/_bann/
 ||kinotraff.ru^
 ||klickmedia.ru^
 ||kmindex.ru^
@@ -1897,13 +1898,10 @@ rustorka.com##DIV > *:nth-child(6) ~ H3,DIV > *:nth-child(6) ~ A > IMG
 rutracker.org##IFRAME,DIV#bn-bot-wrap
 rutracker.org##TR#f-11:last-child
 ||samag.ru/img/bn/
-samlab.ws##DIV#left > DIV:nth-child(n+3)
-samlab.ws##DIV.main > DIV:not(.about):first-child
-samlab.ws##DIV.main > TABLE
-samlab.ws/file/
-samlab.ws/img/$object
-samlab.ws##LI.soft-day:not(:first-child) > DIV.box
-samlab.ws##OL#soft-new A[target="_blank"] > IMG
+samlab.ws###left > DIV:nth-child(n+3),#left + #right,.main > DIV:not(.about):first-child,.main > TABLE
+samlab.ws##LI.soft-day:not(:first-child) > DIV.box,OL#soft-new A[target="_blank"] > IMG
+||samlab.ws/file/
+||samlab.ws/img/$object
 ||scriptiks.ru^$object
 scteam.ru##A[target="blank"] > SPAN
 scteam.ru##TD[valign="top"] > BR + * + * + * + * + * + TABLE[width="100%"] > TBODY > TR:first-child > TD[style="border-left: 1px solid rgb(249, 170, 49); border-right: 1px solid rgb(249, 170, 49); border-bottom: 1px solid rgb(249, 170, 49); padding: 5px;"]:first-child
