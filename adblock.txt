@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: I3k8PZYsnRslj7ub/y/ZUw
+! Checksum: i/aIttjFQkUSUHMq62HRTg
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -1469,8 +1469,6 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ||yandex.*/cy?base=0&host=
 
 ! = Условно полезные ресурсы, мусорящие на других сайтах ======================
-//hmn.ru^$third-party
-//kpk.me^$third-party
 ||24new.ru^$third-party
 ||2baksa.net^$third-party
 ||add.in.ua^$third-party
@@ -1480,6 +1478,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ||agrotv.ru^$third-party
 ||akavita.com^$third-party
 ||animereactor.ru^$third-party
+||animeyes.ru^$third-party
 ||anyfiles.ru^$third-party
 ||autoua.com^$third-party
 ||basketfan.my1.ru^$third-party
@@ -1498,16 +1497,19 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ||goon.ru/$third-party
 ||hdtracker.ru^$third-party
 ||hellywood.ru^$third-party
+//hmn.ru^$third-party
 ||hotinga.ru^$third-party
 ||inheart.ru^$third-party
 ||iso100.ru^$third-party
 ||kinoclub.org^$third-party
 ||komok.com^$third-party
+//kpk.me^$third-party
 ||ladyshopping.ru^$third-party
 ||lenty.ru^$third-party
 ||letitsoft.com^$third-party
 ||listsites.ru^$third-party
 ||lookszone.ru^$third-party
+||mambo.kiev.ua^$third-party
 ||megastock.ru^$third-party
 ||mercatos.ru^$third-party
 ||moogle.ru^$third-party
@@ -1533,6 +1535,8 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ||usde.ru/$third-party
 ||vareza.net^$third-party
 ||videofan.ru^$third-party
+||vpsite.ru^$third-party
+||vpsite.ru^$third-party
 ||vsem.ru/img$third-party
 ||warezplatinum.com^$third-party
 ||webex.ru^$third-party
@@ -1636,6 +1640,8 @@ emuparadise.org##TABLE#index P[align="center"] + DIV[align="center"]
 epidem.ru##A[href="http://onlinetrax.ru"]
 epidem.ru##DIV[id*="AdBar"]
 epidem.ru##TD[width="131"] > P
+||epidemz.net/images/*.jpg$image
+epidemz.net##TD.news > P:first-child,A[target="_blank"]:not([href*="http://"])
 ex.ua##TD[align="right"][style*="width: 320px;"]
 exler.ru##DIV[id^="Banner"]
 exnews.org##NOINDEX > DIV[class$="body"]
