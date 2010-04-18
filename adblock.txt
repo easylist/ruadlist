@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: fxD0leg4gyoyw/8+ZU0hhQ
+! Checksum: B4SlHLV4QwtJzRfByTYLcQ
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -23,13 +23,15 @@
 @@||wikipedia.org^
 ! Картинки в гуглопоиске всегда отображаем
 @@||google.*/images?
-!Блокирует: /\/ad[svjx0-9]\//
+! Блокирует: /\/ad[svjx0-9]\//
 @@info-broker.ks.ua/images/
 ! Блокирует: /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
 @@||e-travel.com/$stylesheet
 @@stopgame.ru/js/$object
 ! Блокирует: |http://partner.
 @@||partner.market.yandex.ru^
+! Блокирует: /banners
+@@/banners/AC_RunActiveContent.js|$domain=rfcmd.com|webnames.ru
 ! Ещё «правильные баннеры»
 @@||ozon.ru/graphics/subscribe/
 ! Мини-превью сайтов по их доменам в конце адреса.
@@ -2030,7 +2032,7 @@ forum.tomsknet.ru##TABLE.banner.nocp
 ||vtomske.ru/forum/*/intant.js$script
 ||vtomske.ru^*/kompstar/
 ||vtomske.ru^$object
-vtomske.ru##[style*="width: 200px"][style*="height: 100px"],[style*="width: 200px"][style*="height: 140px"],[style*="width: 200px"][style*="height: 200px"],[style*="width: 240px"][style*="height: 140px"],[style*="width: 240px"][style*="height: 280px"],[style*="width: 3"][style*="height: 70px"],[style*="width: 468px"][style*="height: 60px"],[style*="width: 600px"][style*="height: 70px"]
+vtomske.ru##[style*="width: 200px"][style*="height: 100px"],[style*="width: 200px"][style*="height: 140px"],[style*="width: 200px"][style*="height: 200px"],[style*="width: 240px"][style*="height: 140px"],[style*="width: 240px"][style*="height: 280px"],[style*="width: 3"][style*="height: 70px"],[style*="width: 468px"],[style*="width: 600px"][style*="height: 70px"]
 vtomske.ru##.vtomske-body[style="height: 37px;"],DIV[style="padding-top: 5px;"] *,.dns_banner,.intant_container,.kompstar
 ||x-soft.tomsk.ru/dsa/
 
