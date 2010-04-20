@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: Cc360sB6XzQkrzMMPKe+9w
+! Checksum: hYvtZfdUR6X0/YKRgpJiqw
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -354,8 +354,9 @@ ban_click
 ^bannerid=$domain=~skylink.ru
 ?banner=
 .banner.
-_banner_
 _banner.
+_banner_
+_banner-
 _banner/$~object-subrequest,~stylesheet
 _banners
 /banner.
@@ -364,6 +365,8 @@ _banners
 /banner/*$domain=~mts.ru|~playground.ru
 /banners$domain=~allods.ru|~beeline.ru|~corbina.net|~corbina.ru|~vorbis.com
 -banner.$domain=~mozilla.org
+-banner_
+-banner-
 -banner/
 -banners
 /images/adv/*
