@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: WCNcpqA0/8iUC+mfs9ou6w
+! Checksum: 8yiuVmAnopPtwzYVb1o8pw
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -353,7 +353,17 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 /adserver/*
 adserving
 /adspace/*
+_advert.
+_advert_
+_advert-
+_advert/
+-advert.
+-advert_
+-advert-
+-advert/
 /advert.
+/advert_
+/advert-
 /advert/*
 /advertis$~stylesheet
 /adverts.
@@ -368,16 +378,16 @@ _banner_
 _banner-
 _banner/$~object-subrequest,~stylesheet
 _banners
-/banner.
-/banner_$domain=~allods.ru|~onlime.ru
-/banner-$domain=~onlime.ru|~tcj.com
-/banner/*$domain=~mts.ru|~playground.ru
-/banners$domain=~allods.ru|~beeline.ru|~corbina.net|~corbina.ru|~vorbis.com
 -banner.$domain=~mozilla.org
 -banner_
 -banner-
 -banner/
 -banners
+/banner.
+/banner_$domain=~allods.ru|~onlime.ru
+/banner-$domain=~onlime.ru|~tcj.com
+/banner/*$domain=~mts.ru|~playground.ru
+/banners$domain=~allods.ru|~beeline.ru|~corbina.net|~corbina.ru|~vorbis.com
 /images/adv/*
 /images/ban/*
 /images/bn/*
@@ -1665,7 +1675,6 @@ fanacmilan.com##DIV[id^="adText"]
 ||fcshop.ru/i/cross/
 ferra.ru##DIV.notik,DIV.oki
 ||ferra.ru/images/news/*.gif
-||ferra.ru/include/*_advert_
 file-online.ru##DIV.block_text
 ||feels.ru/uploads/new6/
 feels.ru##TABLE[width="100%"][height="90"]
