@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: WshIEvvA27PVIovlI8jkQQ
+! Checksum: O1nPqOZ7axlV3Nf4Jir7bg
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -1021,6 +1021,7 @@ zvukoff.ru/24open/*.jpg
 ||adbn.ru/*?
 ||adbrite.com^
 ||adbureau.net^
+||adcast.ru^
 ||addweb.ru^
 ||adfox.ru^
 ||adfun.ru^
@@ -1645,6 +1646,7 @@ depositfiles.com##DIV#download_url + DIV[style="margin: 2em auto 0pt; width: 300
 depositfiles.com##DIV[id^="zhlobam_net"]
 deviantart.com##.sleekadbubble
 digital.ru##DIV[class*="Banner"]
+||dimonvideo.ru/uploads/bb
 dimonvideo.ru##BODY > TABLE NOINDEX > DIV
 ||divan-tut.ru/promo
 dreamprogs.net##.content DIV:first-child + NOINDEX
@@ -1862,10 +1864,11 @@ oplati.ru##TD[width="90"][style="float: right;"]
 ||overclockers.ru/im_b/
 ||overclockers.ru/images/$object
 ||overclockers.ru/partners/
-overclockers.ru##BODY > DIV > TABLE[style="height: 60px;"]
+overclockers.ru##BODY > DIV > TABLE[style="height: 60px;"],TD[width="12%"]:last-child
 overclockers.ru##IFRAME,TABLE.navbg + DIV[align="center"],A[target="_blank"] > IMG[height="60"]
 overclockers.ru##TABLE[height^="24"][width^="30"],TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
 overclockers.ru,~forums.overclockers.ru,~people.overclockers.ru##A:not([href^="/"]):not([href*="/images/lab/"]):not([href*="/images/news/"]):not([href$=".overclockers.ru"]) IMG,IMG[src*="/images/"][src*="/n-r."]
+forums.overclockers.ru##TABLE.banner
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 ||ozon.ru/graphics/$object
