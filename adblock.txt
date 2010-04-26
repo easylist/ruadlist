@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.1]
-! Checksum: +eoY7qajOTJ3/yy/CYYrIg
+! Checksum: hUm44BZOnD86WYvuhOc2Xg
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -28,7 +28,7 @@
 ! Блокирует: /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
 @@||e-travel.com/$stylesheet
 @@stopgame.ru/js/$object
-! Блокирует: |http://partner.
+! Блокирует: /partner.
 @@||partner.market.yandex.ru^
 ! Блокирует: /banners
 @@/banners/AC_RunActiveContent.js|$domain=rfcmd.com|webnames.ru
@@ -342,8 +342,6 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 |http://b.*/b/
 |http://b.*/iframe/
 |http://mads.
-|http://partner.
-|http://partners.$domain=~beeline.ru
 
 ! = Баннеры ===================================================================
 .net/baner/
@@ -394,6 +392,9 @@ _banners
 /images/bnnr/*
 /images/rek/*
 /img/bn/*
+/partner.
+/partners.$domain=~beeline.ru
+/partners/*
 /reklam/*
 _reclama
 -reclama
@@ -1609,7 +1610,6 @@ azart.net.ua##A[href="/adv.php"]
 ||b.turbo.az^
 bash.org.ru##DIV:not(#ads) > DIV.q > DIV:not(.vote):first-child
 bash.org.ru##DIV#page > HR
-||bestgamer.ru/partners/
 binmovie.ru##TD.block_text[align="center"]
 borda.ru##TR.font5:first-child + * + * + TR.font1 + TR.font1
 ||bt.od.ua/images/b/
@@ -1811,7 +1811,6 @@ mediashare.com.ua/CLICKS/
 ||megafon.ru/is.swf?
 ||megafon.ru/promo.
 moikrug.ru##.y5.y5_nf.y5_vertical.snap_noshots
-||moto.com.ua/partners/
 ||moto.kiev.ua*/imgads/
 ||moto.kiev.ua/users/diez/
 ||motonews.ru/ad/
@@ -1864,7 +1863,6 @@ oper.ru##.banners,#onlinedengi
 oplati.ru##TD[width="90"][style="float: right;"]
 ||overclockers.ru/im_b/
 ||overclockers.ru/images/$object
-||overclockers.ru/partners/
 overclockers.ru##BODY > DIV > TABLE[style="height: 60px;"]
 overclockers.ru##IFRAME,TABLE.navbg + DIV[align="center"],A[target="_blank"] > IMG[height="60"]
 overclockers.ru##TABLE[height^="24"][width^="30"],TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
@@ -1975,7 +1973,6 @@ sport-express.ru##DIV[style*=".sport-express.ru/img/banners/"]
 ||sport.*ua/images/$object
 softportal.com##TABLE.TblBorderCLR TD[style="padding: 0pt 25px;"] > TABLE[width="100%"]
 ||s.tfile.ru^$image,object
-||stopgame.ru/*/partners/
 styanulo.ru##DIV.banner
 sudga.ru##TD.alt3
 tabulorasa.info##TD[style="padding: 10px;"] NOINDEX
