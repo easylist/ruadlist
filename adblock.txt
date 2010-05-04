@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: sXjE5Be91CEkF2xn8lFq+g
+! Checksum: L5c1knPF2pASEH3s2xe+Ew
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -293,6 +293,8 @@ n728x90_
 google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 ! Скрываем рекламу на форумах, на myBB-движке
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
+! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
+##DIV[onmouseout][onmouseover][style^="border: 2px solid red;"][style$="rgb(255, 247, 182);"]
 ! Партнёрские ссылки на торрент-трекерах
 ##A[target="_blank"][href*=".10xdownloads.com"]
 ##A[target="_blank"][href*=".alivedownload.com"]
@@ -1666,7 +1668,6 @@ epidem.ru##DIV[id*="AdBar"]
 epidem.ru##TD[width="131"] > P
 ||epidemz.net/images/*.jpg$image
 epidemz.net##TD.news > P:first-child,A[target="_blank"]:not([href*="http://"])
-ex.ua##TD[align="right"][style*="width: 320px;"]
 exler.ru##DIV[id^="Banner"]
 exnews.org##NOINDEX > DIV[class$="body"]
 exnews.org##TD.column + TD CENTER
@@ -1738,7 +1739,7 @@ hotcharts.ru##TABLE.archive + NOINDEX
 idownloads.ru/content/666/
 ||ifolder.ru^$object
 ||ifolder.ru^*-brend.css
-ifolder.ru##.begun,DIV#header_center
+ifolder.ru##.begun,#b-header-anchor-link
 igromania.ru##DIV.bannerplace,DIV[style="padding: 2px 0px 2px 14px; vertical-align: top;"],DIV[style="width: 986px; height: 93px;"]
 imagereverb.com##IFRAMEo
 images.google.com,images.google.ru##TABLE[style^="padding: 8px; background: rgb(255, 248, 221) none repeat scroll 0%"]
@@ -1840,6 +1841,7 @@ novafilm.tv##DIV[style="display: block;"]
 nowa.cc##TD.mc_cars_row
 ||nowa.cc/images/$subdocument
 npicture.net##A > IMG[src*="npicture.net/image-"]
+null-team.com###dle-content > TABLE[style^="border: 3px outset green;"]:first-child
 nvworld.ru##DIV.adv
 ||nyaatorrents.org/images/*.jpg
 ||nya.sh/imgs/
