@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Kj2WYR/LZ0qBRiy6mFtOlA
+! Checksum: gQVaZvalHgnCuW7oS3w9CA
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -41,6 +41,7 @@
 @@||cubeecraft.com^$document
 @@||citydom.ru^$document
 @@||deviantart.com/global/difi/?$subdocument
+@@||virpl.ru^$xmlhttprequest
 ! Некоторые интернет-провайдеры — их легче совсем разблокировать.
 @@||akado.ru^$document
 @@||megafon.ru^$document
@@ -1582,6 +1583,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 3dnews.ru##.mbanner,#topBanners
 7sl.ru##NOINDEX A[target="_blank"] > IMG
 ||a.fobos.tv/click.php?
+||adultmult.ru^$object
 advesti.ru##IMG[width="170"][height="340"][border="0"]
 advesti.ru##IMG[width="570"][height="80"][border="0"]
 advs.gismeteo.com/
@@ -2004,6 +2006,7 @@ uploder.ws/static/*0x
 ||video-clips.ru/images/
 videofiles.com.ua##CENTER
 videosaver.ru##DIV#ad
+virpl.ru##DIV#logoslide,DIV[id$="-banner"]
 vkontakte.ru##A.ad_box
 vkontakte.ru##DIV#sideBar > DIV.leftAd
 vkontakte.ru##DIV[style="margin-top: 3px; font-size: 10px; text-align: center;"] > A[href="help.php?page=target"]
