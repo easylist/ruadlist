@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: gQVaZvalHgnCuW7oS3w9CA
+! Checksum: 8d+nKWed7075iolsa0bsrw
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -295,7 +295,11 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 ! Скрываем рекламу на форумах, на myBB-движке
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
+! Именуют себя ВСкачке, ВЗагрузе, маскируются под RapidShare и прочее.
+##A[href*="/download.php?sub_id="][href*="&q="]
+##A[href*="/download.php?user_id="][href*="&q="]
 ##DIV[onmouseout][onmouseover][style^="border: 2px solid red;"][style$="rgb(255, 247, 182);"]
+##TABLE[style^="border: 3px outset green;"][style*="rgb(253, 252, 240);"]
 ! Партнёрские ссылки на торрент-трекерах
 ##A[target="_blank"][href*=".10xdownloads.com"]
 ##A[target="_blank"][href*=".alivedownload.com"]
@@ -1844,7 +1848,6 @@ novafilm.tv##DIV[style="display: block;"]
 nowa.cc##TD.mc_cars_row
 ||nowa.cc/images/$subdocument
 npicture.net##A > IMG[src*="npicture.net/image-"]
-null-team.com###dle-content > TABLE[style^="border: 3px outset green;"]:first-child
 nvworld.ru##DIV.adv
 ||nyaatorrents.org/images/*.jpg
 ||nya.sh/imgs/
