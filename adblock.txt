@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: rZGwcfMvqVR08+3AeQoU2Q
+! Checksum: n+bRR9pJZR8hzC0efjmqRA
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -71,9 +71,12 @@
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
 ! Популярные имена папок с рекламой
 /\/ad[svjx0-9]\//$domain=~mercatos.ru|~gamespot.com
+! Cлишком короткая версия слова banner
+/\/baner[._-/]/
+! Не оптимизируемый размер в имени картинки
+/\D(?:3[1-3][-_x]88|88[-_x]3[1-3])\D/
 
 ! = Блокировка баннеров по размеру в пути к картинке ==========================
-/\D(?:3[1-3][-_x]88|88[-_x]3[1-3])\D/
 /120x140
 _160x240
 -160x240
@@ -347,9 +350,6 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 |http://mads.
 
 ! = Баннеры ===================================================================
-.com/baner/
-.info/baner/
-.net/baner/
 /adbanner
 /adframe.$subdocument
 /adserver/*
@@ -1562,6 +1562,7 @@ yandex.ru##.ad,.go-ad-all,.intadv,#banner,#direct,.b-direct
 ||rutor.org^$third-party
 ||selectornews.com^$third-party
 ||seorate.ru^$third-party
+||serialinfo.ru^$third-party
 ||smart-soft.ru^$third-party
 ||tehnoklad.ru^$third-party
 ||testsbox.ru^$third-party
@@ -1684,7 +1685,6 @@ exnews.org##NOINDEX > DIV[class$="body"]
 exnews.org##TD.column + TD CENTER
 fanacmilan.com##DIV[id^="adText"]
 ||fcpug.ru^$object
-||fcpug.ru^*/baner_
 ||fcshop.ru/i/cross/
 ferra.ru##DIV.notik,DIV.oki
 ||ferra.ru/images/news/*.gif
@@ -1803,6 +1803,7 @@ liveinternet.ru##IMG[width="200"][height="60"],IMG[width="476"][height="60"],IMG
 ||liveinternet.ru/ad/
 livejournal.com##[class^="adv"],[class*="-adv"],[class^="ljad"]:not([class^="ljadd"])
 lookszone.ru/$object
+lost-abc.ru##TABLE[width="630"][height="90"]
 ||lostfilm.tv/img/
 ||macosworld.ru^$object
 macosworld.ru###sidebar > CENTER
