@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Q7dLOYTs707wnG+OBRFAvg
+! Checksum: muJ7Ow/Y2eI3lNAk4XYoJg
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -216,7 +216,10 @@ n728x90_
 ##[style*="width: 728px"][style*="height: 60px"],[style*="width: 728px"][style*="height: 90px"]
 
 ! = Общие CSS-фильтры =========================================================
-###advert
+###adv,.adv
+###advert,.advert
+###advblock,.advblock
+###advertblock,.advertblock
 ###AFF_popup
 ###eropromo_icq
 ###floatyContent
@@ -1733,7 +1736,7 @@ goldenbank.kiev.ua##TABLE.mag_tab
 google.com,google.ru##DIV#tads
 google.com,google.ru##TABLE#mbEnd
 google.com,google.ru###res TABLE[style="border: 1px solid rgb(51, 102, 153);"]
-habrahabr.ru##.banner,.adv
+habrahabr.ru##.banner
 hardwareportal.ru,hwp.ru##DIV[class^="promo"]
 hardwareportal.ru,hwp.ru##DIV[class*="tbann"]
 hdtracker.ru##TD[width="100%"] + TD[width="160"][valign="top"]
@@ -1847,7 +1850,7 @@ newestsoft.com##A[href="http://reviewsoft.ru/"]
 newestsoft.com##DIV.mk_body_bg > TABLE[bgcolor="#ffffff"][style="border: 1px solid rgb(193, 209, 253);"]
 newestsoft.com/images/*x90$image
 new-films.biz##DIV#dle-content > NOINDEX
-ngs.ru##.hcozffr,.nb,#nbs-block,#advblock,.adv
+ngs.ru##.hcozffr,.nb,#nbs-block
 nnm-club.ru##CENTER > TABLE[id^="mc_"],DIV[id^="x"],.header IFRAME
 ||nnm.ru/a/$background
 nnm.ru##A#branding_link
@@ -1858,7 +1861,6 @@ novafilm.tv##DIV[style="display: block;"]
 nowa.cc##TD.mc_cars_row
 ||nowa.cc/images/$subdocument
 npicture.net##A > IMG[src*="npicture.net/image-"]
-nvworld.ru##DIV.adv
 ||nyaatorrents.org/images/*.jpg
 ||nya.sh/imgs/
 nyaatorrents.org##DIV[class$="ad"]
@@ -1869,7 +1871,7 @@ ochevidec.net##IFRAME
 ||odnoklassniki.ru/res/*/promo/*/
 onegadget.ru/$object
 ||opennet.ru/adv_
-opennet.ru##CENTER#adv,FORM + * + * + TABLE
+opennet.ru##FORM + * + * + TABLE
 ||opensharing.$object
 ||opensharing.*/pics/
 opensharing.ru,opensharing.org##DIV[id*="banner"],DIV#content CENTER > A[target="_blank"],DIV#sidebar CENTER > A
@@ -2008,7 +2010,6 @@ translate.ru##DIV#b_adv
 translate.ru##DIV.bgn_content
 translate.ru##DIV#ctl00_SiteContent_trasnlform_OurPartners
 turbobit.net##IMG[width="490"][height="100"]
-turist.rbc.ru##DIV.advertBlock
 tutu.ru##TD.plink:first-child:last-child
 ||udmnet.ru^$object
 ukr.net##DIV[id*="Banner"]
