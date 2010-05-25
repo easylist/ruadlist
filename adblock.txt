@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: GDPoRjESs2H/qoS2BhrsAg
+! Checksum: 9B6xFnw6656hqS+zG78FCw
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -218,7 +218,7 @@ n728x90_
 ! = Общие CSS-фильтры =========================================================
 ###adv,.adv
 ###advert,.advert
-###advblock,.advblock
+~mobile-review.com###advblock,.advblock
 ###advertblock,.advertblock
 ###AFF_popup
 ###eropromo_icq
@@ -993,8 +993,10 @@ zvukoff.ru/24open/*.jpg
 ! ||217.16.18.206^$~object-subrequest
 ! ||217.16.18.213^$~object-subrequest
 ! ||217.16.18.214^$~object-subrequest
+! ||217.16.28.104^$~object-subrequest
 ! Надеюсь так будет работать нормально.
 ||217.16.18.*^$~object-subrequest
+||217.16.28.*^$~object-subrequest
 
 ||012345.ru/upload/
 ||1-traf.net^
