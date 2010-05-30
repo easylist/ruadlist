@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Hvvbj6DPj5j96ckLVdN5kQ
+! Checksum: 9XnGxm4veoPyZ51u1AzFwA
 
 ! Анти-рекламная подписка фильтров RU AdList (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
@@ -70,7 +70,7 @@
 
 ! = Фильтры по регулярным выражениям ==========================================
 ! Рекламные скрипты
-/[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~games-tv.ru
+/[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~chance.ru|~games-tv.ru
 ! Популярные имена папок с рекламой
 /\/ad[svjx0-9]\//$domain=~mercatos.ru|~gamespot.com
 ! Cлишком короткая версия слова banner
@@ -218,7 +218,7 @@ n728x90_
 ##[style*="width: 728px"][style*="height: 60px"],[style*="width: 728px"][style*="height: 90px"]
 
 ! = Общие CSS-фильтры =========================================================
-###adv,.adv
+~chance.ru###adv,.adv
 ###advert,.advert
 ~mobile-review.com###advblock,.advblock
 ###advertblock,.advertblock
