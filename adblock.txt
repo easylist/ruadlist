@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: GecNBThIrZwLkH5QWcydVg
+! Checksum: K/8PSIsZga47mrWC7qbIBA
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -1026,6 +1026,7 @@ zvukoff.ru/24open/*.jpg
 ||a.adwolf.ru/
 ||a.ava.com.ua^
 ||a.kavanga.ru^
+||aceventik.com^
 ||ad-words.ru/contextad/
 ||adbid.pl^
 ||adbn.ru/*?
@@ -1092,6 +1093,7 @@ zvukoff.ru/24open/*.jpg
 ||boobzi.com^
 ||bossmoney.ru/
 ||burstnet.com^
+||buybanners.ru^
 ||bvf.ru/upchk/
 ||c.*;0x0;0;0;-;0|
 ||c.cnstats.ru^
@@ -1100,6 +1102,7 @@ zvukoff.ru/24open/*.jpg
 ||c.uarating.com^
 ||c8.net.ua^
 ||cdsuper.ru^
+||cenovik.net^
 ||cetki.com/tempbut/$object
 ||cjconvert.com^
 ||chbn.ru/
@@ -1179,6 +1182,7 @@ zvukoff.ru/24open/*.jpg
 ||hit.gemius.pl^
 ||hitlist.ru^
 ||hitter.ru^
+||how2web.com^
 ||hypernews.ru^$script
 ||i.i.ua/r/
 ||i.pr-cy.ru^
@@ -1201,6 +1205,7 @@ zvukoff.ru/24open/*.jpg
 ||ipru.ru/i/
 ||ipru.ru/j/
 ||ipz.ru/cgi-bin/
+||itcgin.net^
 ||job.ws/_bann/
 ||kinotraff.ru^
 ||klickmedia.ru^
@@ -1335,6 +1340,7 @@ zvukoff.ru/24open/*.jpg
 ||rada.com.ua/img/
 ||rating.km.ua/*?
 ||razdevau.com^
+||recreativ.ru^
 ||red.by/redban
 ||refer.ru^
 ||revsci.net^
@@ -1481,16 +1487,17 @@ teaser*/cgi-bin/iframe/
 ||tizerset.net^
 
 ! Найденные домены партнёрской сети 1under.ru (все сидят на IP 89.208.145.156)
-||1under.ru/
-||2under.ru/
-||2lycosu.com/
-||3under.ru/
-||lycodz.com/
-||lycosu.com/
-||lycosy.com/
-||oneund.ru/
-||ruigra.com/
-||textun.ru/
+||1under.ru^
+||2under.ru^
+||2lycosu.com^
+||3under.ru^
+||lycodz.com^
+||lycosu.com^
+||lycosy.com^
+||oneund.ru^
+||oneund.com^
+||ruigra.com^
+||textun.ru^
 
 ! Форумы ucoz.net
 ##DIV[id^="adBar"]
@@ -1590,7 +1597,9 @@ yandex.ru,yandex.ua##.go-ad-all,.intadv,#banner,#direct,.b-banner,.b-direct,.b-b
 ||vsem.ru/img$third-party
 ||warezplatinum.com^$third-party
 ||webex.ru^$third-party
+||webproficlub.ru^$third-party
 ||wolist.ru^$third-party
+||worldofrest.com.ua^$third-party
 ||wwwomen.ru^$third-party
 ||xmemory.ru^$third-party
 ||yellowsearch.ru^$third-party
@@ -1650,7 +1659,7 @@ citysmile.ru##DIV[style="text-align: justify; font-size: 9pt;"]
 citysmile.ru/images/xxx
 citysmile.ru##TABLE.informer_skyfoto
 citysmile.ru##TABLE[style="border: medium none rgb(255, 0, 0);"] > TBODY:first-child:last-child
-cn.ru##[class*="rx"][class*="neta"],[id*="-banner"],[class*="headadv"],.madv
+cn.ru##[class*="rx"][class*="neta"],[id*="-banner"],[class*="headadv"],.madv,.ads-banner
 cnews.ru##IMG#mag_banner
 computerra.ru##TABLE._reachbanner_ TD[width="240"]:last-child
 copypast.ru/re/
@@ -1698,6 +1707,7 @@ exler.ru##DIV[id^="Banner"]
 exnews.org##NOINDEX > DIV[class$="body"]
 exnews.org##TD.column + TD CENTER
 fanacmilan.com##DIV[id^="adText"]
+||fb.finam.ru^
 ||fcpug.ru^$object
 ||fcshop.ru/i/cross/
 ferra.ru##DIV.notik,DIV.oki
@@ -1832,6 +1842,7 @@ mail.ru##DIV.agentToolBar[style]
 mail.ru##DIV[class^="ban"],DIV[class*="Game"],DIV[id^="begunTable"],DIV#lite_top_banner,TABLE.text_adv,DIV#load_banner_2 *
 mail.ru##DIV.rb_body,DIV#want-talk,DIV.brd
 mail.ru##IMG[width="240"][height="400"][border="0"]
+||football.ua/i/hihi/
 foto.mail.ru,video.mail.ru##[width="200"][height="200"][border="0"],[width="200"][height="300"][border="0"]
 ||mail.ru/*agentToolBar?.js
 ||imgsmail.ru/r/brand_
@@ -1868,8 +1879,7 @@ new-films.biz##DIV#dle-content > NOINDEX
 ngs.ru##.hcozffr,.nb,#nbs-block
 nnm-club.ru##CENTER > TABLE[id^="mc_"],DIV[id^="x"],.header IFRAME
 ||nnm.ru/a/$background
-nnm.ru##A#branding_link
-nnm.ru##[class*="banner"],[id*="banner"]
+nnm.ru##A#branding_link,[class*="banner"],[id*="banner"],#footer + * + #links
 //nnn.ru/*$object
 ||nn.ru/data/nnbs/
 novafilm.tv##DIV[style="display: block;"]
@@ -1972,6 +1982,7 @@ scteam.ru##TD[valign="top"] > BR + * + * + * + * + * + TABLE[width="100%"] > TBO
 scteam.ru##TD[width="185"][valign="top"]:last-child > TABLE:first-child + * + * + * + * + TABLE[width="100%"]
 ||securitylab.ru/_Article_Images/
 ||selectornews.com/images/*.gif
+||seti.ee/*reklaam/
 ||severodvinska.net/clients/
 severodvinska.net##DIV[style*="width: 868px;"][style*="height: 60px;"]
 sfw.org.ua##BODY > NOINDEX
@@ -1994,10 +2005,9 @@ soft-best.ws/$object
 soft-free.ru##A[href="http://goldfin.ru"]
 soft-free.ru##TD + * FORM + * + * + * + * + * + * TD.modulecontent
 softnavigator.ru##BODY > TABLE > TBODY > TR:first-child > TD:nth-child(3) > DIV:first-child + TABLE[width="100%"],A[href*="/go/?"]
-softodrom.ru/img/500x100_
-softodrom.ru/scr/begun.php?
-softoroom.net##DIV[id^="fo_cblock"]
-softoroom.net/forex/
+softodrom.ru##DIV.prgentry.nobottom
+||softodrom.ru/img/rekl/
+||softoroom.net/forex/
 ||sovsport.ru/banner-item/
 ||sovsport.ru/ib
 ||sovsport.ru/s/bs/
@@ -2005,6 +2015,7 @@ sport-express.ru##DIV[style*=".sport-express.ru/img/banners/"]
 ||sport.*ua/images/$object
 softportal.com##TABLE.TblBorderCLR TD[style="padding: 0pt 25px;"] > TABLE[width="100%"]
 ||s.tfile.ru^$image,object
+||studyguide.ru^$object
 styanulo.ru##DIV.banner
 subscribe.ru##.banner640,A[href*="link.subscribe.ru"]
 sudga.ru##TD.alt3
@@ -2025,6 +2036,8 @@ translate.ru##DIV.bgn_content
 translate.ru##DIV#ctl00_SiteContent_trasnlform_OurPartners
 turbobit.net##IMG[width="490"][height="100"]
 tutu.ru##TD.plink:first-child:last-child
+udaff.com##NOINDEX > A > IMG
+||udaff.com/image/$object
 ||udmnet.ru^$object
 ukr.net##DIV[id*="Banner"]
 upload/bx/*$domain=hardwareportal.ru|hwp.ru
@@ -2047,6 +2060,8 @@ vokrugsveta.ru##.right_column
 vremenno.net##.sidebarBlock:first-child
 w3schools.com##.chapter ~ .chapter ~ *,[style*="width: 890px;"][style*="height: 94px;"]
 weather.ru.msn.com/msn_kp/
+webfile.ru##TD[style$="width: 200px;"]:first-child
+||webfile.ru/*wiw
 webpark.ru##DIV#Experts
 webpark.ru##DIV.kontent A[target^="_blank"][href^="http:"]:not([href*="webpark.ru"]) IMG
 webpark.ru##IFRAME
