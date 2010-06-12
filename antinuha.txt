@@ -1,5 +1,5 @@
 [Adblock]
-! Checksum: l1VZbhWKSGIqYjsEtFwZ3Q
+! Checksum: WqufueCnwHsGqN4QdK5sPA
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/antinuha.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -9,7 +9,7 @@
 !2!   Alex_root anti-porn list
 !3! Обсуждение на http://forum.mozilla-russia.org/
 !3! Обсуждение на http://ruadlist.mybb.ru/
-!3! Эта подписка предназначена для 
+!3! Эта подписка предназначена для
 !4! блокирования и скрытия информации
 !5! непристойного содержания: порнографии, эротики и т. п.
 !5! Подписка не может блокировать всю
@@ -400,7 +400,7 @@ tp://xxx
 !1. Правило блокировки должно содержать последовательность не менее чем из 8 символов не учитывая символов-масок. Иначе такое правило считается регуляркой.
 !2. Правила блокировки следует обрамлять в || в начале и ^ в конце если между ними получается 8 символов. || - любой поддомен указанного домена, а ^ - разделительный символ кроме точки. ^ можно не ставить если ты оставляешь доменное имя без зоны, а просто с точкой в конце.
 ! OO Calc B1 =IF(LEFT(A1;1)=".";MID(A1;2;LEN(A1)-2);IF(LEFT(A1;1)="/";"";MID(A1;3;LEN(A1)-3)))
-! OO Calc C1 =IF(T(B1)<>"";IF(AND(LEN(IF(LEN(B1)>=8;CONCATENATE("||";T(B1);"^");CONCATENATE(".";T(B1);"/")))>=8;LEN(IF(LEN(B1)>=8;"";CONCATENATE("/";T(B1);"/*")))>9);CONCATENATE("||";T(B1);"/");IF(LEN(B1)>=8;CONCATENATE("||";T(B1);"^");CONCATENATE(".";T(B1);"/";"________/";T(B1);"/*")));"")
+! OO Calc C1 =IF(T(B2)<>"";IF(AND(LEN(IF(LEN(B2)>=8;CONCATENATE("||";T(B2);"^");CONCATENATE(".";T(B2);"/")))>=8;LEN(IF(LEN(B2)>=8;"";CONCATENATE("/";T(B2);"/*")))>9);CONCATENATE("||";T(B2);"/");IF(LEN(B2)>=8;CONCATENATE("||";T(B2);"^");CONCATENATE(".";T(B2);"/";"________/";T(B2);"/*")));"")
 ! OO Calc D1 =IF(LEN(B1)>=8;CONCATENATE("##[href*=""";T(B1);"""]");CONCATENATE("##[href*=""://";T(B1);"""]"))
 ! OO Calc E1 =CONCATENATE(T(B1);"##*")
 !
@@ -717,14 +717,17 @@ sextempll.narod.ru##*
 ||4ort.ru/
 ||4video.ru^
 ||5bo.ru/porno/^
-.5if.ru/________/5if.ru/*
+.5if.ru/
+/5if.ru/*
 ||69porno-video.ru^
 ||69x.110mb.com^
 ||69xxx.ru^
 ||777porno.ru^
 ||777sex.ru^
-.77x.ru/________/77x.ru/*
-.7go.ru/________/7go.ru/*
+.77x.ru/
+/77x.ru/*
+.7go.ru/
+/7go.ru/*
 ||888porno.ru^
 ||9009.biz^
 ||99bbmovies.com^
@@ -854,7 +857,8 @@ sextempll.narod.ru##*
 ||ayldomer.ru^
 ||azbukasexa.ru^
 ||aziatka.net^
-.b0f.ru/________/b0f.ru/*
+.b0f.ru/
+/b0f.ru/*
 ||b6b.biz/
 ||b8b.biz/
 ||babeposting.com^
@@ -881,6 +885,7 @@ sextempll.narod.ru##*
 ||bbporno.ru^
 ||bbwclean.com^
 ||bbwhotgirls.ru^
+||bcero.net^
 ||bdsm-videos.blogbugs.org^
 ||bdsm.in.ua^
 ||bdsminsex.com^
@@ -912,7 +917,6 @@ sextempll.narod.ru##*
 ||bestofsex.ru^
 ||bestoldwomen.ru^
 ||bestporna.ru^
-||bestporno.co^
 ||bestporno.in^
 ||bestpornoonline.ru^
 ||bestpornstar.ru^
@@ -926,7 +930,6 @@ sextempll.narod.ru##*
 ||bez-porno.ru^
 ||bezpizdy.info^
 ||bezplatno.com.ua^
-||bgirls.r^
 ||biboba.ru^
 ||big-sex.ru^
 ||big-white-tits.ru^
@@ -973,16 +976,16 @@ sextempll.narod.ru##*
 ||brazzers.vn.ua^
 ||brianadevil.com^
 ||britishcoeds.com^
-.bt.co/________/bt.co/*
-.bt.co/________/bt.co/*
 ||buduar.com^
 ||bufera.ru^
 ||bukbuddies.com^
 ||bulleye.ru^
-.bum.ru/________/bum.ru/*
+.bum.ru/
+/bum.ru/*
 ||bunt.in.ua^
 ||busya.net^
 ||buterbrod.com^
+||buterbrod.info^
 ||cameras.launchaforum.com^
 ||camixx.ru^
 ||camo4ek.net^
@@ -1092,8 +1095,6 @@ sextempll.narod.ru##*
 ||deflor.narod.ru^
 ||denwarez.ru/devuhki.html^
 ||denwarez.ru/porno/^
-||deoonlinepornosexsite.inf^
-||deotrah.co^
 ||desadov.com^
 ||desadov.sexru.net^
 ||devchenok.net^
@@ -1178,6 +1179,7 @@ sextempll.narod.ru##*
 ||dvdkinoteatr.ru^
 ||dvdmove.ru^
 ||dvdpornovideo.ru^
+||dvish.com.ua^
 ||dyavolenok.ru^
 ||dyavolx.com^
 ||e-bli.ru^
@@ -1205,7 +1207,8 @@ sextempll.narod.ru##*
 ||eclecticlips.com^
 ||efotos.ru^
 ||ege-gey.ru^
-.ego.su/________/ego.su/*
+.ego.su/
+/ego.su/*
 ||egoista.ru^
 ||egoportal.ru^
 ||ek-onlain.ru^
@@ -1233,7 +1236,6 @@ sextempll.narod.ru##*
 ||ero-xxx.net^
 ||ero.cbg.ru^
 ||ero.doseng.org^
-.ero.ne/________/ero.ne/*
 ||ero.od.ua^
 ||ero.or.kz^
 ||ero.prikol.biz^
@@ -1245,6 +1247,7 @@ sextempll.narod.ru##*
 ||erobonus.com^
 ||eroboom.ru^
 ||erobrand.ru^
+||erococos.ru^
 ||erocum.info^
 ||erodevki.ru^
 ||erodiski.ru^
@@ -1311,6 +1314,7 @@ sextempll.narod.ru##*
 ||erosmir.ru^
 ||erosms.net^
 ||erosort.ru^
+||erosouz.ru^
 ||erostext.com^
 ||erostory.ru^
 ||erosvivendi.ru^
@@ -1376,7 +1380,6 @@ sextempll.narod.ru##*
 ||extremefetish.blogbugs.org^
 ||extremekream.com^
 ||extrimsex.net^
-||ezmovies.co^
 ||fack-sexer.ru^
 ||fackvideo.ru^
 ||fakes.alfamoon.com^
@@ -1386,8 +1389,6 @@ sextempll.narod.ru##*
 ||fedod.ru^
 ||fekla.com^
 ||femdomtime.com^
-||femeet24.co^
-||fepromo.bi^
 ||fetishmovie.ru^
 ||fetishpost.ru^
 ||fetishvideo.ru^
@@ -1414,7 +1415,8 @@ sextempll.narod.ru##*
 ||flooopy.ru^
 ||flowerpantie.com^
 ||flv-porn.net^
-.fo4.ru/________/fo4.ru/*
+.fo4.ru/
+/fo4.ru/*
 ||fondf.com^
 ||fonep.ru^
 ||footcuties.com^
@@ -1457,7 +1459,6 @@ sextempll.narod.ru##*
 ||freebsd.oszc.su^
 ||freefoto.ru^
 ||freehotzone.com^
-||freepaysite.inf^
 ||freeporn.do.am^
 ||freeporno.com.ua^
 ||freepornphoto.ru^
@@ -1501,7 +1502,8 @@ sextempll.narod.ru##*
 ||garamoff.ru^
 ||gay-foto-video-besplatno.com^
 ||gay-yp.ru^
-.gay.ru/________/gay.ru/*
+.gay.ru/
+/gay.ru/*
 ||gayfox.tv^
 ||gaykartinki.com^
 ||gaykatalog.com^
@@ -1513,7 +1515,8 @@ sextempll.narod.ru##*
 ||gayzona.com^
 ||gayzona.ru^
 ||gbporno.net^
-.gee.ru/________/gee.ru/*
+.gee.ru/
+/gee.ru/*
 ||geon.ucoz.com^
 ||gerlsex.ru^
 ||getok.ru/xxx/^
@@ -1630,6 +1633,7 @@ sextempll.narod.ru##*
 ||hotpic.ru^
 ||hotpissing.com^
 ||hotporno.muchhits.info^
+||hotsexgirl.ru^
 ||hotsexmedia.com^
 ||hotsologirlz.net^
 ||housegirl.ru^
@@ -1637,7 +1641,8 @@ sextempll.narod.ru##*
 ||hugebang.com^
 ||hummer.killmyass.ru^
 ||hustler.com^
-.huy.ru/________/huy.ru/*
+.huy.ru/
+/huy.ru/*
 ||huyandex.com^
 ||hvorost.ru^
 ||hyves.eu.com^
@@ -1683,10 +1688,10 @@ sextempll.narod.ru##*
 ||intimpost.com^
 ||intimtube.ru^
 ||intimvideo.com^
+||intm.ru/
 ||iporno.ru^
 ||ipornovideo.ru^
 ||isex.ru/
-||ish.com.u^
 ||island-fever.ru^
 ||istorii-o-sexe.ru^
 ||itelka.ru^
@@ -1723,6 +1728,7 @@ sextempll.narod.ru##*
 ||karupspc.com^
 ||kashtanka.com^
 ||katafot.com^
+||keezmovies.com^
 ||keks.tv/
 ||kexparty.com^
 ||kicki.org^
@@ -1818,6 +1824,8 @@ sextempll.narod.ru##*
 ||li-lu.net^
 ||lichinka.ru^
 ||lifedom2.ru^
+||lifemeet24.com^
+||lifepromo.biz^
 ||lilit.kiev.ua^
 ||links.cnt.ru^
 ||linkxxx.ru^
@@ -1826,6 +1834,7 @@ sextempll.narod.ru##*
 ||litesex.ru^
 ||little-amateurs.com^
 ||little-one.org^
+||liubovi.com^
 ||live-xxx.ru^
 ||livedosug.ru^
 ||livejasmin.com^
@@ -1885,7 +1894,8 @@ sextempll.narod.ru##*
 ||maturefacials-uk.com^
 ||maturesworld.com^
 ||mav.rv.ua^
-.maw.ru/________/maw.ru/*
+.maw.ru/
+/maw.ru/*
 ||maxilove.info^
 ||maximum-porno.net^
 ||maxiporno.ru^
@@ -1920,6 +1930,7 @@ sextempll.narod.ru##*
 ||mintporn.ru^
 ||miradulta.ru^
 ||mirorgazma.ru^
+||mirotik.ru^
 ||mirpopok.ru^
 ||mirporno.su^
 ||mirpornoonline.ru^
@@ -1976,7 +1987,8 @@ sextempll.narod.ru##*
 ||moviepink.net^
 ||moviestomp.ru^
 ||movsbest.com^
-.mox.su/________/mox.su/*
+.mox.su/
+/mox.su/*
 ||mpegsex.ru^
 ||mrsparky.ru^
 ||msksex.ru^
@@ -1996,6 +2008,7 @@ sextempll.narod.ru##*
 ||myerofoto.com^
 ||myexgirl.ru^
 ||myfreepaysite.com^
+||myfreepaysite.info^
 ||myfriendshotmom.com^
 ||mykiski.ru^
 ||mymagazin.ru^
@@ -2011,7 +2024,8 @@ sextempll.narod.ru##*
 ||mytizernet.ru^
 ||myxxxgirl.ru^
 ||myxxxlady.info^
-.n87.ru/________/n87.ru/*
+.n87.ru/
+/n87.ru/*
 ||nahalka.com^
 ||najtidruga.ru^
 ||naked.com.ua^
@@ -2063,7 +2077,6 @@ sextempll.narod.ru##*
 ||noconnect.ru/ero/^
 ||noconnect.ru/index.php?do=cat&category=ero^
 ||nokich.ru^
-||noklassnizza.co^
 ||nonamenko.110mb.com^
 ||nonamenko.mybb.ru^
 ||nopebo.com^
@@ -2086,7 +2099,6 @@ sextempll.narod.ru##*
 ||oboi.cdom.ru^
 ||obscenethumbs.com^
 ||obzorporno.com^
-||ococos.r^
 ||odaa.ru/
 ||odezhdi.net^
 ||odindoma.com^
@@ -2094,6 +2106,7 @@ sextempll.narod.ru##*
 ||odinplus.com.ru^
 ||odnidoma.com^
 ||odnoklassniki69.at.ua^
+||odnoklassnizza.com^
 ||odnonochniki.com^
 ||odnoporno.ru^
 ||odnotrahniki-ru.ru^
@@ -2148,7 +2161,6 @@ sextempll.narod.ru##*
 ||onlytoons.net^
 ||onotes.ru^
 ||onpron.com^
-||ontaktez.co^
 ||onvideo18.ru^
 ||onvideo24.ru^
 ||onvideo7.ru^
@@ -2160,7 +2172,6 @@ sextempll.narod.ru##*
 ||orgazm-online.ru^
 ||orgazmo.ru^
 ||orgazmsite.ru^
-||osouz.r/
 ||otdamsya.com^
 ||otdupli.com^
 ||other-archive.narod.ru^
@@ -2249,7 +2260,6 @@ sextempll.narod.ru##*
 ||pizdulek.net^
 ||planetaxxx.com.ua^
 ||planetaxxx.ru^
-||plat.co/
 ||platinumporno.ru^
 ||play-me.ru^
 ||playporn.ru^
@@ -2330,6 +2340,7 @@ sextempll.narod.ru##*
 ||pornfreetut.ru^
 ||pornfuck.ru^
 ||porng.ru^
+||porngalery.net^
 ||porngallery.ru^
 ||porngid.ru^
 ||pornguru.ru^
@@ -2793,7 +2804,8 @@ sextempll.narod.ru##*
 ||privatepornovideo.ru^
 ||privatesite.ru^
 ||privatfilm.ru^
-.prn.ru/________/prn.ru/*
+.prn.ru/
+/prn.ru/*
 ||prnomom.ru^
 ||proero.net^
 ||projectvoyeur.com^
@@ -2822,7 +2834,8 @@ sextempll.narod.ru##*
 ||putana.org^
 ||pv18.ru/
 ||pytny.com^
-.qep.ru/________/qep.ru/*
+.qep.ru/
+/qep.ru/*
 ||qmov.com^
 ||quickporno.ru^
 ||qvak.makewap.ru^
@@ -2865,15 +2878,14 @@ sextempll.narod.ru##*
 ||retrolady.com^
 ||retroraws.ru^
 ||reviewporn.ru^
-.rk.com/________/rk.com/*
-||rngalery.ne^
+.rk.com/
+/rk.com/*
 ||roadsidepickups.com^
 ||rolikam.com^
 ||romano-fanseka.ru^
 ||rondic.com^
 ||rosalia.com.ua^
 ||rostrah.ru^
-||rotik.r/
 ||rpvo.ru/
 ||ru-foto.net^
 ||ru-porno.ru^
@@ -2884,6 +2896,7 @@ sextempll.narod.ru##*
 ||ru.wikipedia.org/wiki/Порнография^
 ||ru.wordpress.com/tag/порно^
 ||rubabes.com^
+||rubestporno.com^
 ||ruclicks.com^
 ||rudeslut.com^
 ||ruero.com^
@@ -3198,8 +3211,10 @@ sextempll.narod.ru##*
 ||sextriumf.ru^
 ||sexu-nax.ru^
 ||sexuploads.ru^
+||sexusblog.com^
 ||sexvideobase.net^
 ||sexvideogid.ru^
+||sexvkontakte24.com^
 ||sexvolume.ru^
 ||sexvonline.ru^
 ||sexvruki.com^
@@ -3223,6 +3238,7 @@ sextempll.narod.ru##*
 ||sexygerls.co.in^
 ||sexygolos.ru^
 ||sexyhit.ru^
+||sexykiss.ru^
 ||sexykroshki.ru^
 ||sexylolik.ru^
 ||sexyluck.info^
@@ -3311,6 +3327,7 @@ sextempll.narod.ru##*
 ||sova-online.net^
 ||spb-spb.ru^
 ||spb.devochki.cz^
+||spbgirls.ru^
 ||speedtube.ru^
 ||spermak.ru^
 ||spermik.com^
@@ -3381,7 +3398,8 @@ sextempll.narod.ru##*
 ||swinguru.co.il^
 ||sxshop.ru^
 ||t-por.net^
-.t1o.ru/________/t1o.ru/*
+.t1o.ru/
+/t1o.ru/*
 ||tahana.ru^
 ||takhico.com^
 ||taki777.boom.ru^
@@ -3415,7 +3433,6 @@ sextempll.narod.ru##*
 ||telkixxx.com^
 ||telky.net^
 ||telok.net^
-||terbrod.inf^
 ||terka.info^
 ||termoz.ru/animac/^
 ||termoz.ru/xxx/^
@@ -3448,7 +3465,6 @@ sextempll.narod.ru##*
 ||tits.blox.ua^
 ||titsspy.com^
 ||tittys.ru^
-.tm.r/________/tm.r/*
 ||toksikoz.ru^
 ||tolove.ru^
 ||tolstuxi.ru^
@@ -3499,7 +3515,7 @@ sextempll.narod.ru##*
 ||traxsuper.ru^
 ||truly-movies.com^
 ||trusoff.net^
-||tsexgirl.r^
+||tsplat.com^
 ||tsseduction.net^
 ||tualet.net^
 ||tube-mix.net^
@@ -3540,12 +3556,12 @@ sextempll.narod.ru##*
 ||twisex.ru^
 ||twistys.net^
 ||tylersroom.net^
-.tys.ru/________/tys.ru/*
+.tys.ru/
+/tys.ru/*
 ||u-tube.ru/pages/categories/21/^
 ||uahentai.org.ua^
 ||uakisski.com^
 ||uawife.com^
-||ubovi.co^
 ||ueban.com.ua^
 ||ugarim.ru^
 ||ugvip.ru^
@@ -3598,12 +3614,14 @@ sextempll.narod.ru##*
 ||videochat.com^
 ||videoerochat.ru^
 ||videoonlin.ru^
+||videoonlinepornosexsite.info^
 ||videopartyxxx.com^
 ||videoperchik.com^
 ||videoperchik.ru^
 ||videopiramida.com^
 ||videoray.ws^
 ||videosexxx.ru^
+||videotrah.com^
 ||videox-vitrina.ru^
 ||vidin.ru^
 ||vidporno.org^
@@ -3634,7 +3652,7 @@ sextempll.narod.ru##*
 ||vkadrexxx.ru^
 ||vkinohe.ru^
 ||vkontakt-sex.ru^
-||vkontakte.co^
+||vkontaktez.com^
 ||vkontraxte.ru^
 ||vlagalishe.name^
 ||vlz-life.ru^
@@ -3652,7 +3670,8 @@ sextempll.narod.ru##*
 ||vposadke.com^
 ||vprivate.ru^
 ||vqyjsic.netfirms.com^
-.vs.com/________/vs.com/*
+.vs.com/
+/vs.com/*
 ||vsa4ina.st8.ru^
 ||vse-o-porno.ru^
 ||vse-porno.com^
@@ -3700,7 +3719,8 @@ sextempll.narod.ru##*
 ||webvideo.ozersk.com^
 ||webweek.ru^
 ||webxxx.ru^
-.wen.ru/________/wen.ru/*
+.wen.ru/
+/wen.ru/*
 ||wetf.ru/
 ||wethotxx.com^
 ||whitetits.ru^
@@ -3728,11 +3748,15 @@ sextempll.narod.ru##*
 ||x-shot.ru^
 ||x-star.ru^
 ||x-stars.ru^
+||x-vkontakte.com^
 ||x-wab.ru^
 ||x-zona.org^
-.x3x.su/________/x3x.su/*
-.x4u.ru/________/x4u.ru/*
-.x69.ru/________/x69.ru/*
+.x3x.su/
+/x3x.su/*
+.x4u.ru/
+/x4u.ru/*
+.x69.ru/
+/x69.ru/*
 ||xaba.ru/
 ||xbanan.com^
 ||xbazka.ru^
@@ -3742,7 +3766,8 @@ sextempll.narod.ru##*
 ||xdron4ik.com^
 ||xdrug.org^
 ||xengine.ru^
-.xep.ru/________/xep.ru/*
+.xep.ru/
+/xep.ru/*
 ||xes.com.ua^
 ||xesdn.ru^
 ||xexa.ru/
@@ -3787,7 +3812,6 @@ sextempll.narod.ru##*
 ||xrips.com^
 ||xrol.ru/
 ||xrulez.com^
-||xrutube.co^
 ||xsait.net^
 ||xshow-project.ru^
 ||xstory.ru^
@@ -3802,13 +3826,12 @@ sextempll.narod.ru##*
 ||xtvporn.com^
 ||xtvru.com^
 ||xuk.pop3.ru^
-.xuk.ru/________/xuk.ru/*
-||xusblog.co^
+.xuk.ru/
+/xuk.ru/*
 ||xuyamba.com^
 ||xuyamba.com.ua^
 ||xvideo.ru^
 ||xvidon.ru^
-||xvkontakte24.co^
 ||xx-photo.ru^
 ||xx-vip.ru^
 ||xx2u.ru/
@@ -3873,6 +3896,7 @@ sextempll.narod.ru##*
 ||xxxplombir.ru^
 ||xxxpornotv.ru^
 ||xxxrolik.net^
+||xxxrutube.com^
 ||xxxshare.ru^
 ||xxxsites.ru^
 ||xxxtelkixxx.ru^
@@ -3890,9 +3914,9 @@ sextempll.narod.ru##*
 ||xxxxx.com.ua^
 ||xyecocka.com^
 ||xyeet.com^
-||xykiss.r^
 ||xyyandex.net^
-.xz1.ru/________/xz1.ru/*
+.xz1.ru/
+/xz1.ru/*
 ||y2000.ru^
 ||ya-ebu.ru^
 ||ya-girl.ru^
@@ -3902,6 +3926,8 @@ sextempll.narod.ru##*
 ||yanks.com^
 ||yebalka.com^
 ||yesxx.ru^
+||yobt.com^
+||yobt.com^
 ||yolesbo.com^
 ||yomature.com^
 ||young-lips.info^
@@ -4196,6 +4222,7 @@ sextempll.narod.ru##*
 ##[href*="bbporno.ru"]
 ##[href*="bbwclean.com"]
 ##[href*="bbwhotgirls.ru"]
+##[href*="bcero.net"]
 ##[href*="bdsm-videos.blogbugs.org"]
 ##[href*="bdsm.in.ua"]
 ##[href*="bdsminsex.com"]
@@ -4227,7 +4254,6 @@ sextempll.narod.ru##*
 ##[href*="bestofsex.ru"]
 ##[href*="bestoldwomen.ru"]
 ##[href*="bestporna.ru"]
-##[href*="bestporno.co"]
 ##[href*="bestporno.in"]
 ##[href*="bestpornoonline.ru"]
 ##[href*="bestpornstar.ru"]
@@ -4241,7 +4267,6 @@ sextempll.narod.ru##*
 ##[href*="bez-porno.ru"]
 ##[href*="bezpizdy.info"]
 ##[href*="bezplatno.com.ua"]
-##[href*="bgirls.r"]
 ##[href*="biboba.ru"]
 ##[href*="big-sex.ru"]
 ##[href*="big-white-tits.ru"]
@@ -4288,8 +4313,6 @@ sextempll.narod.ru##*
 ##[href*="brazzers.vn.ua"]
 ##[href*="brianadevil.com"]
 ##[href*="britishcoeds.com"]
-##[href*="://bt.co"]
-##[href*="://bt.co"]
 ##[href*="buduar.com"]
 ##[href*="bufera.ru"]
 ##[href*="bukbuddies.com"]
@@ -4298,6 +4321,7 @@ sextempll.narod.ru##*
 ##[href*="bunt.in.ua"]
 ##[href*="busya.net"]
 ##[href*="buterbrod.com"]
+##[href*="buterbrod.info"]
 ##[href*="cameras.launchaforum.com"]
 ##[href*="camixx.ru"]
 ##[href*="camo4ek.net"]
@@ -4407,8 +4431,6 @@ sextempll.narod.ru##*
 ##[href*="deflor.narod.ru"]
 ##[href*="denwarez.ru/devuhki.html"]
 ##[href*="denwarez.ru/porno/"]
-##[href*="deoonlinepornosexsite.inf"]
-##[href*="deotrah.co"]
 ##[href*="desadov.com"]
 ##[href*="desadov.sexru.net"]
 ##[href*="devchenok.net"]
@@ -4493,6 +4515,7 @@ sextempll.narod.ru##*
 ##[href*="dvdkinoteatr.ru"]
 ##[href*="dvdmove.ru"]
 ##[href*="dvdpornovideo.ru"]
+##[href*="dvish.com.ua"]
 ##[href*="dyavolenok.ru"]
 ##[href*="dyavolx.com"]
 ##[href*="e-bli.ru"]
@@ -4548,7 +4571,6 @@ sextempll.narod.ru##*
 ##[href*="ero-xxx.net"]
 ##[href*="ero.cbg.ru"]
 ##[href*="ero.doseng.org"]
-##[href*="://ero.ne"]
 ##[href*="ero.od.ua"]
 ##[href*="ero.or.kz"]
 ##[href*="ero.prikol.biz"]
@@ -4560,6 +4582,7 @@ sextempll.narod.ru##*
 ##[href*="erobonus.com"]
 ##[href*="eroboom.ru"]
 ##[href*="erobrand.ru"]
+##[href*="erococos.ru"]
 ##[href*="erocum.info"]
 ##[href*="erodevki.ru"]
 ##[href*="erodiski.ru"]
@@ -4626,6 +4649,7 @@ sextempll.narod.ru##*
 ##[href*="erosmir.ru"]
 ##[href*="erosms.net"]
 ##[href*="erosort.ru"]
+##[href*="erosouz.ru"]
 ##[href*="erostext.com"]
 ##[href*="erostory.ru"]
 ##[href*="erosvivendi.ru"]
@@ -4691,7 +4715,6 @@ sextempll.narod.ru##*
 ##[href*="extremefetish.blogbugs.org"]
 ##[href*="extremekream.com"]
 ##[href*="extrimsex.net"]
-##[href*="ezmovies.co"]
 ##[href*="fack-sexer.ru"]
 ##[href*="fackvideo.ru"]
 ##[href*="fakes.alfamoon.com"]
@@ -4701,8 +4724,6 @@ sextempll.narod.ru##*
 ##[href*="fedod.ru"]
 ##[href*="fekla.com"]
 ##[href*="femdomtime.com"]
-##[href*="femeet24.co"]
-##[href*="fepromo.bi"]
 ##[href*="fetishmovie.ru"]
 ##[href*="fetishpost.ru"]
 ##[href*="fetishvideo.ru"]
@@ -4772,7 +4793,6 @@ sextempll.narod.ru##*
 ##[href*="freebsd.oszc.su"]
 ##[href*="freefoto.ru"]
 ##[href*="freehotzone.com"]
-##[href*="freepaysite.inf"]
 ##[href*="freeporn.do.am"]
 ##[href*="freeporno.com.ua"]
 ##[href*="freepornphoto.ru"]
@@ -4945,6 +4965,7 @@ sextempll.narod.ru##*
 ##[href*="hotpic.ru"]
 ##[href*="hotpissing.com"]
 ##[href*="hotporno.muchhits.info"]
+##[href*="hotsexgirl.ru"]
 ##[href*="hotsexmedia.com"]
 ##[href*="hotsologirlz.net"]
 ##[href*="housegirl.ru"]
@@ -4998,10 +5019,10 @@ sextempll.narod.ru##*
 ##[href*="intimpost.com"]
 ##[href*="intimtube.ru"]
 ##[href*="intimvideo.com"]
+##[href*="://intm.ru"]
 ##[href*="iporno.ru"]
 ##[href*="ipornovideo.ru"]
 ##[href*="://isex.ru"]
-##[href*="ish.com.u"]
 ##[href*="island-fever.ru"]
 ##[href*="istorii-o-sexe.ru"]
 ##[href*="itelka.ru"]
@@ -5038,6 +5059,7 @@ sextempll.narod.ru##*
 ##[href*="karupspc.com"]
 ##[href*="kashtanka.com"]
 ##[href*="katafot.com"]
+##[href*="keezmovies.com"]
 ##[href*="://keks.tv"]
 ##[href*="kexparty.com"]
 ##[href*="kicki.org"]
@@ -5133,6 +5155,8 @@ sextempll.narod.ru##*
 ##[href*="li-lu.net"]
 ##[href*="lichinka.ru"]
 ##[href*="lifedom2.ru"]
+##[href*="lifemeet24.com"]
+##[href*="lifepromo.biz"]
 ##[href*="lilit.kiev.ua"]
 ##[href*="links.cnt.ru"]
 ##[href*="linkxxx.ru"]
@@ -5141,6 +5165,7 @@ sextempll.narod.ru##*
 ##[href*="litesex.ru"]
 ##[href*="little-amateurs.com"]
 ##[href*="little-one.org"]
+##[href*="liubovi.com"]
 ##[href*="live-xxx.ru"]
 ##[href*="livedosug.ru"]
 ##[href*="livejasmin.com"]
@@ -5235,6 +5260,7 @@ sextempll.narod.ru##*
 ##[href*="mintporn.ru"]
 ##[href*="miradulta.ru"]
 ##[href*="mirorgazma.ru"]
+##[href*="mirotik.ru"]
 ##[href*="mirpopok.ru"]
 ##[href*="mirporno.su"]
 ##[href*="mirpornoonline.ru"]
@@ -5311,6 +5337,7 @@ sextempll.narod.ru##*
 ##[href*="myerofoto.com"]
 ##[href*="myexgirl.ru"]
 ##[href*="myfreepaysite.com"]
+##[href*="myfreepaysite.info"]
 ##[href*="myfriendshotmom.com"]
 ##[href*="mykiski.ru"]
 ##[href*="mymagazin.ru"]
@@ -5378,7 +5405,6 @@ sextempll.narod.ru##*
 ##[href*="noconnect.ru/ero/"]
 ##[href*="noconnect.ru/index.php?do=cat&category=ero"]
 ##[href*="nokich.ru"]
-##[href*="noklassnizza.co"]
 ##[href*="nonamenko.110mb.com"]
 ##[href*="nonamenko.mybb.ru"]
 ##[href*="nopebo.com"]
@@ -5401,7 +5427,6 @@ sextempll.narod.ru##*
 ##[href*="oboi.cdom.ru"]
 ##[href*="obscenethumbs.com"]
 ##[href*="obzorporno.com"]
-##[href*="ococos.r"]
 ##[href*="://odaa.ru"]
 ##[href*="odezhdi.net"]
 ##[href*="odindoma.com"]
@@ -5409,6 +5434,7 @@ sextempll.narod.ru##*
 ##[href*="odinplus.com.ru"]
 ##[href*="odnidoma.com"]
 ##[href*="odnoklassniki69.at.ua"]
+##[href*="odnoklassnizza.com"]
 ##[href*="odnonochniki.com"]
 ##[href*="odnoporno.ru"]
 ##[href*="odnotrahniki-ru.ru"]
@@ -5463,7 +5489,6 @@ sextempll.narod.ru##*
 ##[href*="onlytoons.net"]
 ##[href*="onotes.ru"]
 ##[href*="onpron.com"]
-##[href*="ontaktez.co"]
 ##[href*="onvideo18.ru"]
 ##[href*="onvideo24.ru"]
 ##[href*="onvideo7.ru"]
@@ -5475,7 +5500,6 @@ sextempll.narod.ru##*
 ##[href*="orgazm-online.ru"]
 ##[href*="orgazmo.ru"]
 ##[href*="orgazmsite.ru"]
-##[href*="://osouz.r"]
 ##[href*="otdamsya.com"]
 ##[href*="otdupli.com"]
 ##[href*="other-archive.narod.ru"]
@@ -5564,7 +5588,6 @@ sextempll.narod.ru##*
 ##[href*="pizdulek.net"]
 ##[href*="planetaxxx.com.ua"]
 ##[href*="planetaxxx.ru"]
-##[href*="://plat.co"]
 ##[href*="platinumporno.ru"]
 ##[href*="play-me.ru"]
 ##[href*="playporn.ru"]
@@ -5645,6 +5668,7 @@ sextempll.narod.ru##*
 ##[href*="pornfreetut.ru"]
 ##[href*="pornfuck.ru"]
 ##[href*="porng.ru"]
+##[href*="porngalery.net"]
 ##[href*="porngallery.ru"]
 ##[href*="porngid.ru"]
 ##[href*="pornguru.ru"]
@@ -6181,14 +6205,12 @@ sextempll.narod.ru##*
 ##[href*="retroraws.ru"]
 ##[href*="reviewporn.ru"]
 ##[href*="://rk.com"]
-##[href*="rngalery.ne"]
 ##[href*="roadsidepickups.com"]
 ##[href*="rolikam.com"]
 ##[href*="romano-fanseka.ru"]
 ##[href*="rondic.com"]
 ##[href*="rosalia.com.ua"]
 ##[href*="rostrah.ru"]
-##[href*="://rotik.r"]
 ##[href*="://rpvo.ru"]
 ##[href*="ru-foto.net"]
 ##[href*="ru-porno.ru"]
@@ -6199,6 +6221,7 @@ sextempll.narod.ru##*
 ##[href*="ru.wikipedia.org/wiki/Порнография"]
 ##[href*="ru.wordpress.com/tag/порно"]
 ##[href*="rubabes.com"]
+##[href*="rubestporno.com"]
 ##[href*="ruclicks.com"]
 ##[href*="rudeslut.com"]
 ##[href*="ruero.com"]
@@ -6513,8 +6536,10 @@ sextempll.narod.ru##*
 ##[href*="sextriumf.ru"]
 ##[href*="sexu-nax.ru"]
 ##[href*="sexuploads.ru"]
+##[href*="sexusblog.com"]
 ##[href*="sexvideobase.net"]
 ##[href*="sexvideogid.ru"]
+##[href*="sexvkontakte24.com"]
 ##[href*="sexvolume.ru"]
 ##[href*="sexvonline.ru"]
 ##[href*="sexvruki.com"]
@@ -6538,6 +6563,7 @@ sextempll.narod.ru##*
 ##[href*="sexygerls.co.in"]
 ##[href*="sexygolos.ru"]
 ##[href*="sexyhit.ru"]
+##[href*="sexykiss.ru"]
 ##[href*="sexykroshki.ru"]
 ##[href*="sexylolik.ru"]
 ##[href*="sexyluck.info"]
@@ -6626,6 +6652,7 @@ sextempll.narod.ru##*
 ##[href*="sova-online.net"]
 ##[href*="spb-spb.ru"]
 ##[href*="spb.devochki.cz"]
+##[href*="spbgirls.ru"]
 ##[href*="speedtube.ru"]
 ##[href*="spermak.ru"]
 ##[href*="spermik.com"]
@@ -6730,7 +6757,6 @@ sextempll.narod.ru##*
 ##[href*="telkixxx.com"]
 ##[href*="telky.net"]
 ##[href*="telok.net"]
-##[href*="terbrod.inf"]
 ##[href*="terka.info"]
 ##[href*="termoz.ru/animac/"]
 ##[href*="termoz.ru/xxx/"]
@@ -6763,7 +6789,6 @@ sextempll.narod.ru##*
 ##[href*="tits.blox.ua"]
 ##[href*="titsspy.com"]
 ##[href*="tittys.ru"]
-##[href*="://tm.r"]
 ##[href*="toksikoz.ru"]
 ##[href*="tolove.ru"]
 ##[href*="tolstuxi.ru"]
@@ -6814,7 +6839,7 @@ sextempll.narod.ru##*
 ##[href*="traxsuper.ru"]
 ##[href*="truly-movies.com"]
 ##[href*="trusoff.net"]
-##[href*="tsexgirl.r"]
+##[href*="tsplat.com"]
 ##[href*="tsseduction.net"]
 ##[href*="tualet.net"]
 ##[href*="tube-mix.net"]
@@ -6860,7 +6885,6 @@ sextempll.narod.ru##*
 ##[href*="uahentai.org.ua"]
 ##[href*="uakisski.com"]
 ##[href*="uawife.com"]
-##[href*="ubovi.co"]
 ##[href*="ueban.com.ua"]
 ##[href*="ugarim.ru"]
 ##[href*="ugvip.ru"]
@@ -6913,12 +6937,14 @@ sextempll.narod.ru##*
 ##[href*="videochat.com"]
 ##[href*="videoerochat.ru"]
 ##[href*="videoonlin.ru"]
+##[href*="videoonlinepornosexsite.info"]
 ##[href*="videopartyxxx.com"]
 ##[href*="videoperchik.com"]
 ##[href*="videoperchik.ru"]
 ##[href*="videopiramida.com"]
 ##[href*="videoray.ws"]
 ##[href*="videosexxx.ru"]
+##[href*="videotrah.com"]
 ##[href*="videox-vitrina.ru"]
 ##[href*="vidin.ru"]
 ##[href*="vidporno.org"]
@@ -6949,7 +6975,7 @@ sextempll.narod.ru##*
 ##[href*="vkadrexxx.ru"]
 ##[href*="vkinohe.ru"]
 ##[href*="vkontakt-sex.ru"]
-##[href*="vkontakte.co"]
+##[href*="vkontaktez.com"]
 ##[href*="vkontraxte.ru"]
 ##[href*="vlagalishe.name"]
 ##[href*="vlz-life.ru"]
@@ -7043,6 +7069,7 @@ sextempll.narod.ru##*
 ##[href*="x-shot.ru"]
 ##[href*="x-star.ru"]
 ##[href*="x-stars.ru"]
+##[href*="x-vkontakte.com"]
 ##[href*="x-wab.ru"]
 ##[href*="x-zona.org"]
 ##[href*="://x3x.su"]
@@ -7102,7 +7129,6 @@ sextempll.narod.ru##*
 ##[href*="xrips.com"]
 ##[href*="://xrol.ru"]
 ##[href*="xrulez.com"]
-##[href*="xrutube.co"]
 ##[href*="xsait.net"]
 ##[href*="xshow-project.ru"]
 ##[href*="xstory.ru"]
@@ -7118,12 +7144,10 @@ sextempll.narod.ru##*
 ##[href*="xtvru.com"]
 ##[href*="xuk.pop3.ru"]
 ##[href*="://xuk.ru"]
-##[href*="xusblog.co"]
 ##[href*="xuyamba.com"]
 ##[href*="xuyamba.com.ua"]
 ##[href*="xvideo.ru"]
 ##[href*="xvidon.ru"]
-##[href*="xvkontakte24.co"]
 ##[href*="xx-photo.ru"]
 ##[href*="xx-vip.ru"]
 ##[href*="://xx2u.ru"]
@@ -7188,6 +7212,7 @@ sextempll.narod.ru##*
 ##[href*="xxxplombir.ru"]
 ##[href*="xxxpornotv.ru"]
 ##[href*="xxxrolik.net"]
+##[href*="xxxrutube.com"]
 ##[href*="xxxshare.ru"]
 ##[href*="xxxsites.ru"]
 ##[href*="xxxtelkixxx.ru"]
@@ -7205,7 +7230,6 @@ sextempll.narod.ru##*
 ##[href*="xxxxx.com.ua"]
 ##[href*="xyecocka.com"]
 ##[href*="xyeet.com"]
-##[href*="xykiss.r"]
 ##[href*="xyyandex.net"]
 ##[href*="://xz1.ru"]
 ##[href*="y2000.ru"]
@@ -7217,6 +7241,8 @@ sextempll.narod.ru##*
 ##[href*="yanks.com"]
 ##[href*="yebalka.com"]
 ##[href*="yesxx.ru"]
+##[href*="yobt.com"]
+##[href*="yobt.com"]
 ##[href*="yolesbo.com"]
 ##[href*="yomature.com"]
 ##[href*="young-lips.info"]
@@ -7511,6 +7537,7 @@ bazarkino.ru##*
 bbporno.ru##*
 bbwclean.com##*
 bbwhotgirls.ru##*
+bcero.net##*
 bdsm-videos.blogbugs.org##*
 bdsm.in.ua##*
 bdsminsex.com##*
@@ -7542,7 +7569,6 @@ bestkino.net/porno_tv/##*
 bestofsex.ru##*
 bestoldwomen.ru##*
 bestporna.ru##*
-bestporno.co##*
 bestporno.in##*
 bestpornoonline.ru##*
 bestpornstar.ru##*
@@ -7556,7 +7582,6 @@ bevp.net##*
 bez-porno.ru##*
 bezpizdy.info##*
 bezplatno.com.ua##*
-bgirls.r##*
 biboba.ru##*
 big-sex.ru##*
 big-white-tits.ru##*
@@ -7603,8 +7628,6 @@ brazzers.com##*
 brazzers.vn.ua##*
 brianadevil.com##*
 britishcoeds.com##*
-bt.co##*
-bt.co##*
 buduar.com##*
 bufera.ru##*
 bukbuddies.com##*
@@ -7613,6 +7636,7 @@ bum.ru##*
 bunt.in.ua##*
 busya.net##*
 buterbrod.com##*
+buterbrod.info##*
 cameras.launchaforum.com##*
 camixx.ru##*
 camo4ek.net##*
@@ -7722,8 +7746,6 @@ deffki.us##*
 deflor.narod.ru##*
 denwarez.ru/devuhki.html##*
 denwarez.ru/porno/##*
-deoonlinepornosexsite.inf##*
-deotrah.co##*
 desadov.com##*
 desadov.sexru.net##*
 devchenok.net##*
@@ -7808,6 +7830,7 @@ dvdadult.ru##*
 dvdkinoteatr.ru##*
 dvdmove.ru##*
 dvdpornovideo.ru##*
+dvish.com.ua##*
 dyavolenok.ru##*
 dyavolx.com##*
 e-bli.ru##*
@@ -7863,7 +7886,6 @@ ero-vids.com##*
 ero-xxx.net##*
 ero.cbg.ru##*
 ero.doseng.org##*
-ero.ne##*
 ero.od.ua##*
 ero.or.kz##*
 ero.prikol.biz##*
@@ -7875,6 +7897,7 @@ erobigtits.info##*
 erobonus.com##*
 eroboom.ru##*
 erobrand.ru##*
+erococos.ru##*
 erocum.info##*
 erodevki.ru##*
 erodiski.ru##*
@@ -7941,6 +7964,7 @@ erosmasster.ru##*
 erosmir.ru##*
 erosms.net##*
 erosort.ru##*
+erosouz.ru##*
 erostext.com##*
 erostory.ru##*
 erosvivendi.ru##*
@@ -8006,7 +8030,6 @@ extraxxx.ru##*
 extremefetish.blogbugs.org##*
 extremekream.com##*
 extrimsex.net##*
-ezmovies.co##*
 fack-sexer.ru##*
 fackvideo.ru##*
 fakes.alfamoon.com##*
@@ -8016,8 +8039,6 @@ fasttrax.ru##*
 fedod.ru##*
 fekla.com##*
 femdomtime.com##*
-femeet24.co##*
-fepromo.bi##*
 fetishmovie.ru##*
 fetishpost.ru##*
 fetishvideo.ru##*
@@ -8087,7 +8108,6 @@ freebdsmzone.net##*
 freebsd.oszc.su##*
 freefoto.ru##*
 freehotzone.com##*
-freepaysite.inf##*
 freeporn.do.am##*
 freeporno.com.ua##*
 freepornphoto.ru##*
@@ -8260,6 +8280,7 @@ hotnight.ru##*
 hotpic.ru##*
 hotpissing.com##*
 hotporno.muchhits.info##*
+hotsexgirl.ru##*
 hotsexmedia.com##*
 hotsologirlz.net##*
 housegirl.ru##*
@@ -8313,10 +8334,10 @@ intimplus.com##*
 intimpost.com##*
 intimtube.ru##*
 intimvideo.com##*
+intm.ru##*
 iporno.ru##*
 ipornovideo.ru##*
 isex.ru##*
-ish.com.u##*
 island-fever.ru##*
 istorii-o-sexe.ru##*
 itelka.ru##*
@@ -8353,6 +8374,7 @@ kamasutry.net##*
 karupspc.com##*
 kashtanka.com##*
 katafot.com##*
+keezmovies.com##*
 keks.tv##*
 kexparty.com##*
 kicki.org##*
@@ -8448,6 +8470,8 @@ lezdom.info##*
 li-lu.net##*
 lichinka.ru##*
 lifedom2.ru##*
+lifemeet24.com##*
+lifepromo.biz##*
 lilit.kiev.ua##*
 links.cnt.ru##*
 linkxxx.ru##*
@@ -8456,6 +8480,7 @@ listx.ru##*
 litesex.ru##*
 little-amateurs.com##*
 little-one.org##*
+liubovi.com##*
 live-xxx.ru##*
 livedosug.ru##*
 livejasmin.com##*
@@ -8550,6 +8575,7 @@ miniporn.ru##*
 mintporn.ru##*
 miradulta.ru##*
 mirorgazma.ru##*
+mirotik.ru##*
 mirpopok.ru##*
 mirporno.su##*
 mirpornoonline.ru##*
@@ -8626,6 +8652,7 @@ mybizarresite.com##*
 myerofoto.com##*
 myexgirl.ru##*
 myfreepaysite.com##*
+myfreepaysite.info##*
 myfriendshotmom.com##*
 mykiski.ru##*
 mymagazin.ru##*
@@ -8693,7 +8720,6 @@ nobullshitmovies.com##*
 noconnect.ru/ero/##*
 noconnect.ru/index.php?do=cat&category=ero##*
 nokich.ru##*
-noklassnizza.co##*
 nonamenko.110mb.com##*
 nonamenko.mybb.ru##*
 nopebo.com##*
@@ -8716,7 +8742,6 @@ nuworld.ru##*
 oboi.cdom.ru##*
 obscenethumbs.com##*
 obzorporno.com##*
-ococos.r##*
 odaa.ru##*
 odezhdi.net##*
 odindoma.com##*
@@ -8724,6 +8749,7 @@ odinplus.com##*
 odinplus.com.ru##*
 odnidoma.com##*
 odnoklassniki69.at.ua##*
+odnoklassnizza.com##*
 odnonochniki.com##*
 odnoporno.ru##*
 odnotrahniki-ru.ru##*
@@ -8778,7 +8804,6 @@ onlysexygirls.com##*
 onlytoons.net##*
 onotes.ru##*
 onpron.com##*
-ontaktez.co##*
 onvideo18.ru##*
 onvideo24.ru##*
 onvideo7.ru##*
@@ -8790,7 +8815,6 @@ orangic.ru##*
 orgazm-online.ru##*
 orgazmo.ru##*
 orgazmsite.ru##*
-osouz.r##*
 otdamsya.com##*
 otdupli.com##*
 other-archive.narod.ru##*
@@ -8879,7 +8903,6 @@ pizden.com##*
 pizdulek.net##*
 planetaxxx.com.ua##*
 planetaxxx.ru##*
-plat.co##*
 platinumporno.ru##*
 play-me.ru##*
 playporn.ru##*
@@ -8960,6 +8983,7 @@ pornfotos.ru##*
 pornfreetut.ru##*
 pornfuck.ru##*
 porng.ru##*
+porngalery.net##*
 porngallery.ru##*
 porngid.ru##*
 pornguru.ru##*
@@ -9496,14 +9520,12 @@ retrolady.com##*
 retroraws.ru##*
 reviewporn.ru##*
 rk.com##*
-rngalery.ne##*
 roadsidepickups.com##*
 rolikam.com##*
 romano-fanseka.ru##*
 rondic.com##*
 rosalia.com.ua##*
 rostrah.ru##*
-rotik.r##*
 rpvo.ru##*
 ru-foto.net##*
 ru-porno.ru##*
@@ -9514,6 +9536,7 @@ ru.wikipedia.org/wiki/Порно##*
 ru.wikipedia.org/wiki/Порнография##*
 ru.wordpress.com/tag/порно##*
 rubabes.com##*
+rubestporno.com##*
 ruclicks.com##*
 rudeslut.com##*
 ruero.com##*
@@ -9828,8 +9851,10 @@ sextrahvideo.ru##*
 sextriumf.ru##*
 sexu-nax.ru##*
 sexuploads.ru##*
+sexusblog.com##*
 sexvideobase.net##*
 sexvideogid.ru##*
+sexvkontakte24.com##*
 sexvolume.ru##*
 sexvonline.ru##*
 sexvruki.com##*
@@ -9853,6 +9878,7 @@ sexyfotogirls.ru##*
 sexygerls.co.in##*
 sexygolos.ru##*
 sexyhit.ru##*
+sexykiss.ru##*
 sexykroshki.ru##*
 sexylolik.ru##*
 sexyluck.info##*
@@ -9941,6 +9967,7 @@ sosunkov.net##*
 sova-online.net##*
 spb-spb.ru##*
 spb.devochki.cz##*
+spbgirls.ru##*
 speedtube.ru##*
 spermak.ru##*
 spermik.com##*
@@ -10045,7 +10072,6 @@ telkionline.net##*
 telkixxx.com##*
 telky.net##*
 telok.net##*
-terbrod.inf##*
 terka.info##*
 termoz.ru/animac/##*
 termoz.ru/xxx/##*
@@ -10078,7 +10104,6 @@ titicams.net##*
 tits.blox.ua##*
 titsspy.com##*
 tittys.ru##*
-tm.r##*
 toksikoz.ru##*
 tolove.ru##*
 tolstuxi.ru##*
@@ -10129,7 +10154,7 @@ traxsuper.com##*
 traxsuper.ru##*
 truly-movies.com##*
 trusoff.net##*
-tsexgirl.r##*
+tsplat.com##*
 tsseduction.net##*
 tualet.net##*
 tube-mix.net##*
@@ -10175,7 +10200,6 @@ u-tube.ru/pages/categories/21/##*
 uahentai.org.ua##*
 uakisski.com##*
 uawife.com##*
-ubovi.co##*
 ueban.com.ua##*
 ugarim.ru##*
 ugvip.ru##*
@@ -10228,12 +10252,14 @@ videoanal.ru##*
 videochat.com##*
 videoerochat.ru##*
 videoonlin.ru##*
+videoonlinepornosexsite.info##*
 videopartyxxx.com##*
 videoperchik.com##*
 videoperchik.ru##*
 videopiramida.com##*
 videoray.ws##*
 videosexxx.ru##*
+videotrah.com##*
 videox-vitrina.ru##*
 vidin.ru##*
 vidporno.org##*
@@ -10264,7 +10290,7 @@ vivatgirl.net##*
 vkadrexxx.ru##*
 vkinohe.ru##*
 vkontakt-sex.ru##*
-vkontakte.co##*
+vkontaktez.com##*
 vkontraxte.ru##*
 vlagalishe.name##*
 vlz-life.ru##*
@@ -10358,6 +10384,7 @@ x-rus.ru##*
 x-shot.ru##*
 x-star.ru##*
 x-stars.ru##*
+x-vkontakte.com##*
 x-wab.ru##*
 x-zona.org##*
 x3x.su##*
@@ -10417,7 +10444,6 @@ xrest.net##*
 xrips.com##*
 xrol.ru##*
 xrulez.com##*
-xrutube.co##*
 xsait.net##*
 xshow-project.ru##*
 xstory.ru##*
@@ -10433,12 +10459,10 @@ xtvporn.com##*
 xtvru.com##*
 xuk.pop3.ru##*
 xuk.ru##*
-xusblog.co##*
 xuyamba.com##*
 xuyamba.com.ua##*
 xvideo.ru##*
 xvidon.ru##*
-xvkontakte24.co##*
 xx-photo.ru##*
 xx-vip.ru##*
 xx2u.ru##*
@@ -10503,6 +10527,7 @@ xxxlove.biz##*
 xxxplombir.ru##*
 xxxpornotv.ru##*
 xxxrolik.net##*
+xxxrutube.com##*
 xxxshare.ru##*
 xxxsites.ru##*
 xxxtelkixxx.ru##*
@@ -10520,7 +10545,6 @@ xxxx-porno.ru##*
 xxxxx.com.ua##*
 xyecocka.com##*
 xyeet.com##*
-xykiss.r##*
 xyyandex.net##*
 xz1.ru##*
 y2000.ru##*
@@ -10532,6 +10556,8 @@ yadrochu.ru##*
 yanks.com##*
 yebalka.com##*
 yesxx.ru##*
+yobt.com##*
+yobt.com##*
 yolesbo.com##*
 yomature.com##*
 young-lips.info##*
@@ -10590,6 +10616,7 @@ zrela.com##*
 zrelieincest.ru##*
 zvero.org##*
 сиси.su##*
+
 !
 !
 !
