@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: UFv0HOapAxlrWVPX5YgOhg
+! Checksum: aIDAFlbMXsbHDxk9NZyDSg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -1976,7 +1976,7 @@ qwe.ru##DIV.caption + DIV.bodytable > TABLE[width="100%"] TD
 qwe.ru##NOINDEX > A
 ||radikal.ru^$domain=imageshost.ru
 radikal.ru##BODY > NOINDEX > A + TABLE > TBODY > TR:first-child > TD:first-child
-radikal.ru##DIV.inner-box
+radikal.ru##DIV.inner-box,TD#imgtd
 rambler.ru##DIV.r--b728
 rambler.ru##DIV.rb--TopTeaser
 rambler.ru##.pgBanner
@@ -2058,7 +2058,7 @@ tehnosila.ru##DIV#banner_street
 terabit.biz##NOINDEX,.cnt2l,.cnt2r > CENTER
 tfile.ru##IFRAME,TABLE#home_c TD#lcol:first-child
 ||thepiratebay.org/img/limited_
-theplace.ru##TD[class^="td_reklama_"]
+theplace.ru##DIV.t10,TD[class^="td_reklama_"],TD.td_main > NOINDEX,DIV[style="border: 1px dotted silver; padding: 5px; margin: 10px; font-size: 11px;"]
 ||theplace.ru/images/forma/
 torrentz.com##DIV.download > H2 + DL
 torrentz.com##DIV[style="width: 1000px; margin: 0pt auto;"]
