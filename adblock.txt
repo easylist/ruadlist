@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: +1y9Wwmp5OjjXutuIjllGA
+! Checksum: xHlhkjE3x36LBtNv4nMz2A
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -31,8 +31,6 @@
 ! Блокирует: /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
 @@||e-travel.com/$stylesheet
 @@stopgame.ru/js/$object
-! Блокирует: /partner.
-@@||partner.market.yandex.ru^
 ! Блокирует: /banners
 @@/banners/AC_RunActiveContent.js|$domain=rfcmd.com|webnames.ru
 ! Ещё «правильные баннеры»
@@ -406,8 +404,8 @@ _banners
 /images/bnnr/*$domain=~kinopoisk.ru
 /images/rek/*
 /img/bn/*
-/partner.$domain=~8088.ru|~partner.microsoft.com
-/partners.$domain=~beeline.ru
+/partner.$domain=~8088.ru|~partner.microsoft.com|~yandex.ru
+/partners.$domain=~beeline.ru|~yandex.ru
 /partners/*
 /reklam/*
 _reclama
