@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: L/eJ7ItG70EtiOEXiWIVsA
+! Checksum: D6qZVNDpe2BKquD4JtoNcw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -37,6 +37,8 @@
 @@||ozon.ru/graphics/subscribe/
 ! Блокирует: .tbn.ru/
 @@||auth.tbn.ru/
+! Блокирует: -reclama
+@@||audio-reclama.
 ! Мини-превью сайтов по их доменам в конце адреса.
 @@||similarsites.com/thumbnail/
 ! Не работает видео на eurovisionsports.tv. Блокирует /oascentral. и /\/ad[svjx0-9]\//.
@@ -411,7 +413,7 @@ _banners
 /partners/*
 /reklam/*
 _reclama
--reclama$domain=~audio-reclama.com|~audio-reclama.ru
+-reclama
 /reclama
 reclamka
 /rekban/*
