@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: yhLt8YxPRKR4zUDa/oLf5A
+! Checksum: Vm16rOjm+/zCtYBtniACLw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -47,6 +47,7 @@
 @@||ankama.com^
 @@||cubeecraft.com^$document
 @@||citydom.ru^$document
+@@||games.mail.ru/banner_$domain=games.mail.ru
 @@||virpl.ru^$xmlhttprequest
 ! Некоторые интернет-провайдеры — их легче совсем разблокировать.
 @@||akado.ru^$document
@@ -1876,17 +1877,15 @@ macradar.ru/*_ad.
 macradar.ru##DIV.reclame
 mail.google.com##DIV[class~="oM"],DIV.nH.mq
 mail.rambler.ru##DIV#banner-right
-mail.ru##DIV.agentToolBar[style]
-mail.ru##DIV[class^="ban"],DIV[class*="Game"],DIV[id^="begunTable"],DIV#lite_top_banner,TABLE.text_adv,DIV#load_banner_2 *
-mail.ru##DIV.rb_body,DIV#want-talk,DIV.brd
-mail.ru##IMG[width="240"][height="400"][border="0"]
-foto.mail.ru,video.mail.ru##[width="200"][height="200"][border="0"],[width="200"][height="300"][border="0"]
-||mail.ru/*agentToolBar?.js
+||banners.mail.ru^
+blogs.mail.ru##TABLE[width="99%"][align="center"][style="margin-bottom: -4px;"]
+mail.ru##A[class^="partnerka_"],A.toolbar-banner
+mail.ru##DIV#ad-blk-r,DIV.bGbottom.tac,TD.rekl_eburg
+mail.ru##.mCCC > [class^="rb_"],.slot_left > .rb_body
 maulnet.ru##CENTER > STRONG
 talk.maulnet.ru##.row2 > A > IMG[src*="/wp-content/uploads/"],#ipbwrapper > A > TABLE
 ||maulnet.ru^*234x30.
 ||maulnet.ru^*234-30.
-||imgsmail.ru/r/brand_
 market.autoua.net##DIV#mabila-market:first-child
 maxnet.ua##A > IMG[width="88"]
 mediashare.com.ua/CLICKS/
