@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: wRkK+blxMzOOj2Q0QIcz6A
+! Checksum: 48LJnBsoH1WnSns58s8Slg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -1050,7 +1050,7 @@ zvukoff.ru/24open/*.jpg
 ||adnet.ru^$third-party
 ||adocean.pl^
 ||adpro.com.ua^
-||adriver.ru^$third-party
+||adriver.ru^$third-party,~object-subrequest
 ||adrock.com.ua^
 ||adru.net^
 ||adsell.me/b/
@@ -1728,6 +1728,7 @@ digital.ru##DIV[class*="Banner"]
 ||dimonvideo.ru/uploads/bb
 dimonvideo.ru##BODY > TABLE NOINDEX > DIV
 ||divan-tut.ru/promo
+||dl.dropbox.com^$object-subrequest,domain=tv.molodejj.ru
 dreamprogs.net##.content DIV:first-child + NOINDEX
 dreamprogs.net##.content DIV#lfwar:first-child
 dreamprogs.net##.war3
@@ -1854,7 +1855,8 @@ kinobaza.net##*[href^="http://kinobaza.net/ero"]
 kinobaza.net##TABLE DIV.story:last-child
 kinobaza.net##TD.rightside:last-child > DIV[style="padding-left: 6px; padding-top: 10px;"]
 kinobaza.net##*[width="600"] DIV
-kinopoisk.ru##[style="width: 240px; height: 140px;"],[style="width: 240px; height: 400px;"]
+kinopoisk.ru##A.brand,[style="width: 240px; height: 140px;"],[style="width: 240px; height: 400px;"]
+||kinopoisk.ru/images/re/*.jpg?
 ||kleo.ru/cgi-bin/
 kleo.ru##DIV#color + TABLE
 ||kolesa.kz/bs/*
@@ -1949,8 +1951,7 @@ onegadget.ru/$object
 ||opennet.ru/adv_
 opennet.ru##TABLE#ibm_adv
 ||opensharing.$object
-||opensharing.*/pics/
-opensharing.ru,opensharing.org##DIV[id*="banner"],DIV#content CENTER > A[target="_blank"],DIV#sidebar CENTER > A
+opensharing.ru,opensharing.org##IMG[height="120"][width="240"]
 oper.ru##.banners,#onlinedengi
 ||oper.ru/data/rennabs/
 oplati.ru##TD[width="90"][style="float: right;"]
@@ -2008,6 +2009,7 @@ restoclub.ru/pic/iblocks
 ||rl-team.net/bazar_fast/
 rl-team.net##.border_all.tiban
 rpgcodex.net##CENTER > IFRAME
+rpod.ru###adv240x400
 r.radikal.ru/STATIC/PLASTIC_MEDIA/$object
 ||ru-board.com*/temp/
 ||ru-board.com*/xmtmp/
@@ -2105,6 +2107,7 @@ upload/*/mega-announce$domain=hardwareportal.ru|hwp.ru
 uploder.ws##CENTER:last-child
 ||uploder.ws/$object
 uploder.ws/static/*0x
+usde.ru##A[href^="/engine/redirect2.php?url="],.bc_adv_container
 vedomosti.ru##.left_banner,.footer,.top_banners,[class^=ears]
 ||video-clips.ru/images/
 videofiles.com.ua##CENTER
