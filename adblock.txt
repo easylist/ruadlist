@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 48LJnBsoH1WnSns58s8Slg
+! Checksum: ACX+DO9IzoqlibLYURJx+g
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -1098,13 +1098,13 @@ zvukoff.ru/24open/*.jpg
 ||b.ddestiny.ru^
 ||b2bcontext.ru^
 ||b2bvideo.ru^
-||bantex.ru/*?
+||bantex.ru^*?
 ||bashnya.ru^
 ||basketfan.my1.ru^$third-party
 ||bb.stream24.ru^
 ||bbelements.com^
 ||bbn.by/t.bbn?
-||begun.ru/$~object-subrequest
+||begun.ru^$~object-subrequest,third-party
 ||bepartner.ru^$third-party
 ||bestreferat.ru/images/b/
 ||bet-at-home.com^$third-party
@@ -1831,10 +1831,11 @@ imagereverb.com##IFRAMEo
 images.google.com,images.google.ru##TABLE[style^="padding: 8px; background: rgb(255, 248, 221) none repeat scroll 0%"]
 /images/mid/h-anons.$domain=hardwareportal.ru|hwp.ru
 images.rambler.ru/upl/$domain=~nova.rambler.ru
-imagebam.com##DIV[id][class],DIV#overlayBg,DIV#ajax_load_indicator
+imagebam.com##DIV#imageContainer + DIV[style],DIV[style*="width:"][style*="border:"][style*="background-color:"][style*="line-height:"][style*="text-align:"][style*="font-size:"][style*="margin:"][style*="padding-top:"][style*="padding-bottom:"]
 imagevenue.com##DIV[id^="inter"]
 img.ngs.ru/*?pid*&link$object
 inspireme.ru##A[href*="/adrotate/adrotate-out.php?"]
+ipicture.ru##A[href="http://zula.ru/"]
 ||irk.ru/img/*/ibr/
 itc.ua##DIV#ad_top
 itc.ua##DIV.b240x350
