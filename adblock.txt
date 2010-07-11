@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: kSWbxkBBZRKAwbSu81dOmA
+! Checksum: mNjnWi0dMq91Msrg8x6c8w
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -26,7 +26,6 @@
 ! Картинки в гуглопоиске всегда отображаем
 @@||google.*/images?
 ! Блокирует: /\/ad[svjx0-9]\//
-@@||imgsmail.ru/ru/btn/$image,background
 @@||info-broker.ks.ua/images/
 ! Блокирует: /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
 @@||e-travel.com/$stylesheet
@@ -61,11 +60,6 @@
 @@||kronverkcinema.ru/*attachment.rpc*,
 ||opennet.ru/img/
 @@||opennet.ru/img/i_
-||pics.rbc.ru/$image,object
-@@||pics.rbc.ru/img/$image
-@@||pics.rbc.ru/quote/
-||rs.mail.ru/
-@@||rs.mail.ru/b$image,background,domain=mail.ru
 ||yarportal.ru/$image,background
 @@||yarportal.ru/*/$image
 
@@ -76,7 +70,7 @@
 ! Рекламные скрипты
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~chance.ru|~games-tv.ru
 ! Популярные имена папок с рекламой
-/\/ad[svjx0-9]\//$domain=~mercatos.ru|~gamespot.com
+/\/ad[svjx0-9]\//$domain=~mail.ru|~mercatos.ru|~gamespot.com
 ! Cлишком короткая версия слова banner
 /\/baner[/._-]/
 ! Не оптимизируемый размер в имени картинки
@@ -398,7 +392,6 @@ _banners
 /banner_$domain=~allods.ru|~mail.ru|~onlime.ru|~playstation.com|~taxcom.ru
 /banner-$domain=~onlime.ru|~tcj.com
 /banner/*$domain=~mail.ru|~mts.ru|~playground.ru
-/banners$domain=~allods.ru|~beeline.ru|~corbina.net|~corbina.ru|~dobrochan.ru|~englishrussia.com|~furaffinity.net|~vorbis.com
 /images/adv/*
 /images/ban/*
 /images/bn/*
@@ -423,6 +416,8 @@ _reklama
 reklamka
 /upload/rk/*
 /vottbanner
+.ru/banners
+.ua/banners
 
 ! = Популярные баннеры по ключевым словам =====================================
 love_qip_head
@@ -811,7 +806,6 @@ rate.7surf.ru/img.php?
 rb*.design.ru/
 rb.rfn.ru/
 rb.sport-express.ru
-rbc.ru/bannerjvs/
 rclick.com.ua/
 re.foto.radikal.ru/0708/61/*.gif
 reggun.ru/images/b*_
@@ -1077,7 +1071,9 @@ zvukoff.ru/24open/*.jpg
 ||alfainternet.su^
 ||all-web.ru/button.php?id=
 ||allboxing.ru/img/$object
+||allnokia.ru/img/*?*/click/?
 ||alloy.ru/auth.php?
+||allsiemens.com^$third-party
 ||alltraf.net^
 ||alphacash.biz^$third-party
 ||alvadu.ru^
@@ -1375,6 +1371,7 @@ zvukoff.ru/24open/*.jpg
 ||p32.com.ua/girls/
 ||partnerearning.com^$third-party
 ||pay-click.ru^
+||pbid.iforex.com^$third-party
 ||pbnet.ru^
 ||pc-software.ru/$script
 ||pcweek.ru/upload/*/160x100
@@ -1455,6 +1452,7 @@ zvukoff.ru/24open/*.jpg
 ||rpod.ru/i/b/
 ||rrru.ru/img.php?
 ||rs-context.ru^
+||rs.mail.ru^$third-party
 ||ruklik.com/
 ||rusmedserv.com^$third-party
 ||rutor.org^$third-party
@@ -1893,10 +1891,18 @@ mail.google.com##DIV[class~="oM"],DIV.nH.mq
 mail.rambler.ru##DIV#banner-right
 ||afisha.mail.ru/img/spons/
 ||banners.mail.ru^
+||imgsmail.ru/r/my/*/bg.
+||mail.ru/map/volkswagen_
+auto.mail.ru##DIV.addMain2
 blogs.mail.ru##TABLE[width="99%"][align="center"][style="margin-bottom: -4px;"]
 mail.ru##A[class^="partnerka_"],A.toolbar-banner
 mail.ru##DIV#ad-blk-r,DIV.bGbottom.tac,TD.rekl_eburg
 mail.ru##.mCCC > [class^="rb_"],.slot_left > .rb_body
+mail.ru##IMG[width="240"][height="200"],IMG[width="240"][height="400"]
+mail.ru##[class^="ban"],[class$="_ban"],DIV[id*="banner"]
+mail.ru##[id^="getmov"]
+mail.ru##LI.promo
+maps.mail.ru##IMG[width="200"][height="30"]
 maulnet.ru##CENTER > STRONG
 talk.maulnet.ru##.row2 > A > IMG[src*="/wp-content/uploads/"],#ipbwrapper > A > TABLE
 ||maulnet.ru^*234x30.
@@ -1972,6 +1978,9 @@ forums.overclockers.ru##TABLE.banner,TD[width="160"],TABLE[width="100%"][style="
 ||panasonic.ru/upload/bx/
 ||pctuner.ru/plugins/bworks/files/
 pics.goods.turist.ru/turist.goods_pics/$domain=~turist.ru
+||pics.rbc.ru^*/img.gif?
+||pics.rbc.ru^*.swf?
+||pics.rbc.ru^*/banners/
 pindosoff.net##DIV[class^="copyright"] > NOINDEX
 pindosoff.net##DIV#dle-content > TABLE:first-child TD.copy
 pindosoff.net/images/
@@ -2005,7 +2014,10 @@ radikal.ru##DIV.inner-box,TD#imgtd
 rambler.ru##DIV.r--b728
 rambler.ru##DIV.rb--TopTeaser
 rambler.ru##.pgBanner
-rbc.ru,rbc.ua##DIV.fullContainer > DIV[class^="pseudo"] > DIV.header:not(.layout):first-child,.contentBox > .tac
+rbc.ru##DIV.banner
+rbc.ru##DIV[id^="flash_"]
+rbc.ru##IFRAME[width="234"][height="200"]
+rbc.ru##TABLE[bgcolor="#f7faef"]
 ||regnum.ru/i/bn/
 restoclub.ru/pic/iblocks
 ||rl-team.net/bazar_fast/
@@ -2156,7 +2168,6 @@ zr.ru##DIV.br
 ! Блокировка отдельных файлов
 ||ibm.com/developerworks/everywhere/ew.js
 ||pen007.ru/pr/code.js
-||pics.top.rbc.ru/top_pics/jslib/cookies.js
 ||powertracker.org/images/Talky3D.gif
 ||rutor.org/counter.js
 
