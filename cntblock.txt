@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ZGkxfKU/wW8iwXvIV1TTBw
+! Checksum: /2Q1c73RZgahdrZlrGQj1Q
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/cntblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -56,34 +56,35 @@
 /top100.cnt?
 /top100/*$domain=~top100.rambler.ru
 ||at.ua/stat/
-||atdmt.com^
-||burstnet.com^
-||c.waplog.net^
+||atdmt.com^$third-party
+||burstnet.com^$third-party
+||c.waplog.net^$third-party
 ||circle.am/service/?
 ||clicktale.net^$third-party
-||clixpy.com^
+||clixpy.com^$third-party
 ||comstar.ru/cnstats/
-||cy-pr.com^
-||feedjit.com^
-||flagcounter.com^
-||free-pagerank.com^
+||cy-pr.com^$third-party
+||feedjit.com^$third-party
+||flagcounter.com^$third-party
+||free-pagerank.com^$third-party
 ||geovisite.com^$third-party
-||google-analytics.com$domain=~earth.google.com|~imageshack.us|~verbatim.jp
-||imtop.ru^
+||google-analytics.com$third-party,domain=~earth.google.com|~imageshack.us|~verbatim.jp
+||imtop.ru^$third-party
 ||liveinternet.ru/cgi-bin/
-||quantserve.
-||radar.imgsmail.ru^
-||sedotracker.com^
+||quantserve.$third-party
+||radar.imgsmail.ru^$third-party
+||sedotracker.com^$third-party
 ||stat24.com^$third-party
 ||statcounter.com^$third-party
+||hitbox.com^$third-party
 ||hsdn.org^$third-party
 ||stats.indextools.com^
 ||subscribe.ru/stat/
 ||tns-counter.ru^$~object-subrequest
 ||video-stats.video.google.
-||wapstats.net^
-||webtrends.com^
-||yadro.ru^
+||wapstats.net^$third-party
+||webtrends.com^$third-party
+||yadro.ru^$third-party
 
 ! Форумы ucoz.net
 ||moy.su/stat/
