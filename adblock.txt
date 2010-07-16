@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: B03rOGR/8ZWmHbouNVU9kA
+! Checksum: JxYIIAopnMSeZt1lRTxo1g
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -298,7 +298,7 @@ n728x90_
 ! Популярный паттерн
 ~softarchive.net##CENTER > NOINDEX > A[target="_blank"] > IMG
 ! Скрываем рекламу от Google в результатах поиска на сайтах партнёров:
-google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
+google.com,google.ru##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 ! Скрываем рекламу на форумах, на myBB-движке
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
@@ -307,21 +307,6 @@ google.com##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 ##A[href*="/download.php?user_id="][href*="&q="]
 ##DIV[onmouseout][onmouseover][style^="border: 2px solid red;"][style$="rgb(255, 247, 182);"]
 ##TABLE[style^="border: 3px outset green;"][style*="rgb(253, 252, 240);"]
-! Партнёрские ссылки на торрент-трекерах
-##A[target="_blank"][href*=".10xdownloads.com"]
-##A[target="_blank"][href*=".alivedownload.com"]
-##A[target="_blank"][href*=".alivetorrents.com"]
-##A[target="_blank"][href*=".fileindexer.com"]
-##A[target="_blank"][href*="/files-netexpress.com"]
-##A[target="_blank"][href*=".filestube.com"]
-##A[target="_blank"][href*=".freshwap.net"]
-##A[target="_blank"][href*=".friendlyduck.com"]
-##A[target="_blank"][href*=".idownloadaccess.com"]
-##A[target="_blank"][href*="/jetdl.com"]
-##A[target="_blank"][href*="/NowDownloadAll.com"]
-##A[target="_blank"][href*=".sumotorrent.com"]
-##A[target="_blank"][href*=".torrentdownloads.net"]
-##A[target="_blank"][href*=".torrentreactor.net"]
 
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://ad0
