@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: JxYIIAopnMSeZt1lRTxo1g
+! Checksum: nAzS0vvPFv7fKlfMZ2eTxg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -213,7 +213,8 @@ n728x90_
 ##[width="728"][height="60"],[width="728"][height="90"]
 ##[style*="width: 300px"][style*="height: 250px"]
 ##[style*="width: 300px"][style*="height: 600px"]
-##[style*="width: 728px"][style*="height: 60px"],[style*="width: 728px"][style*="height: 90px"]
+##[style*="width: 728px"][style*="height: 60px"]
+##[style*="width: 728px"][style*="height: 90px"]
 
 ! = Общие CSS-фильтры =========================================================
 ~chance.ru###adv,.adv
@@ -230,14 +231,13 @@ n728x90_
 ###novem_billboard
 ###radeant
 ###topbanner
-##[id*="textadv"],[id*="text-adv"],[id*="text_adv"]
 ##.adbckgrnd
 ##.bc_adv_container
 ##.surbis_banner
 ##.topbaner
 ##.topbanner
-##[class*="text-adv"],[class*="text_adv"]
-##A[href*="7dvd.ru/fn.php?r="]
+##[id*="textadv"],[id*="text-adv"],[id*="text_adv"]
+##[class*="textadv"],[class*="text-adv"],[class*="text_adv"]
 ##A[href*=".8coins.net/"]
 ##A[href*=".8test.ru/"],A[href*=".8testov.ru/"]
 ##A[href*="adclick.php?"]
@@ -247,7 +247,6 @@ n728x90_
 ##A[href*=".erwap.ru/?"]
 ##A[href*="filepost.ru?page="]
 ##A[href*="fotocash.ru/?ref="]
-##A[href*="free.getcd.ru/?r"]
 ##A[href*="galaxymeet.ru/?code="]
 ##A[href*="glamurhome.com/index.php?ref="]
 ##A[href*="grand-casino.com/?"]
@@ -1111,7 +1110,6 @@ zvukoff.ru/24open/*.jpg
 ||c.ile.ru^
 ||c.uarating.com^
 ||c8.net.ua^
-||cdsuper.ru^
 ||cenovik.net^
 ||cetki.com/tempbut/$object
 ||chbn.ru/
@@ -1260,7 +1258,7 @@ zvukoff.ru/24open/*.jpg
 ||kmindex.ru^
 ||komban.com.ua^
 ||komok.com^$third-party
-||kontera.com^
+||kontera.com^$third-party
 ||kp.*/_inc/garant.html
 ||kp.by/upimg/*.gif?
 ||kp.ru/upimg/*.gif?
@@ -1598,6 +1596,17 @@ zvukoff.ru/24open/*.jpg
 ||zoda.ru/$third-party
 ||zorkabiz.ru^
 ||zoy.org/
+
+! Партнёрская программа adstock.ru
+##A[href*=".ru/fn.php?r="]
+##A[href*="free.getcd.ru/?r"]
+||7dvd.ru/$third-party
+||adstock.ru^$third-party
+||cdsuper.ru^$third-party
+||fasttrening.ru^$third-party
+||getcd.ru^$third-party
+||kakdolgo.ru^$third-party
+||superfastcomputer.ru^$third-party
 
 ! Всяческие тизеры
 tizer*/cgi-bin/iframe/
