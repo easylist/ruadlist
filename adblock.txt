@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ww3k4aHWrZv7fdgroXQNvQ
+! Checksum: ZFZ9re4L41lP7s0lAzXxbw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -232,6 +232,7 @@ n728x90_
 ###topbanner
 ##[id*="textadv"],[id*="text-adv"],[id*="text_adv"]
 ##.adbckgrnd
+##.bc_adv_container
 ##.surbis_banner
 ##.topbaner
 ##.topbanner
@@ -381,7 +382,7 @@ ban_click
 _banner.$domain=~mozilla.org
 _banner_
 _banner-$domain=~echo.msk.ru
-_banner/$~object-subrequest,~stylesheet
+_banner/$~object-subrequest,~stylesheet,domain=~kp.by|~kp.ru
 _banners
 -banner.$domain=~mozilla.org
 -banner_
@@ -431,7 +432,7 @@ sexvodnokalssnikah
 .ru/_scripts/themes/sb.js|
 /pseudocounter.js
 /ad*.js?link
-/adriver_async.js
+/adriver_async.js|
 /barmaglot.js|
 /begun.js
 /block.js|$third-party
@@ -516,6 +517,7 @@ sexvodnokalssnikah
 /slatefp.asp
 /splash/page_header/*
 /sponsImages/*
+/tizers/*
 /topadvert.
 /tx2.ru/*
 /uicp.ru/?bn=
@@ -665,7 +667,6 @@ go.bb.ru/images/
 go.jetswap.com
 go.media-x.ru
 google-add.com/button/
-google.*/coop/cse/brand?
 googlebar.jps.ru
 googlnet.info/script/script.php?
 govazd.am/bn/
@@ -760,7 +761,6 @@ newbs.hutz.co.il/www/
 newsprom.ru/img/
 nfscharts.nfshome.com/track.php?id=
 ninjabusiness.info/adpeeps/
-nnn.novoteka.ru
 nostalgia.onego.ru
 novosti.dn.ua/$object
 numen.ru/button/?
@@ -817,7 +817,6 @@ ru-top.net/img/
 ru.gg/werbemittel/
 ruscontext.com/
 ruvideo.net/obzor/
-s.100projects.ru/
 s.agava.ru/cgi/actions/c.cgi?
 s.holder.com.ua/
 s.holm.ru/stat/
@@ -991,6 +990,7 @@ zvukoff.ru/24open/*.jpg
 //hmn.ru^$third-party
 //kpk.me^$third-party
 ||012345.ru/upload/
+||100projects.ru^third-party
 ||1-traf.net^
 ||1ha.ad.md^
 ||1invite.ru^
@@ -1058,7 +1058,7 @@ zvukoff.ru/24open/*.jpg
 ||advertpay.net^
 ||advertpro.net^$third-party
 ||advertserve.com^
-||advmaker.ru^
+||advmaker.ru^$third-party
 ||adward.ru^
 ||adwolf.ru^
 ||affarity.com^
@@ -1217,6 +1217,7 @@ zvukoff.ru/24open/*.jpg
 ||goldtizer.com^$third-party
 ||goldtraf.su^
 ||goodadvert.
+||google.*/coop/cse/brand?
 ! Блокирует google-analistyc.net — не путать с google-analytics.com!
 ! Этот ресурс не имеет к нему ни какого отношения, а просто маскируется под него.
 ||google-analistyc.
@@ -1275,6 +1276,9 @@ zvukoff.ru/24open/*.jpg
 ||komban.com.ua^
 ||komok.com^$third-party
 ||kontera.com^
+||kp.*/_inc/garant.html
+||kp.by/upimg/*.gif?
+||kp.ru/upimg/*.gif?
 ||kpdn.ru/
 ||kv.by/img/$object
 ||kvasu.net/*/$object
@@ -1353,7 +1357,9 @@ zvukoff.ru/24open/*.jpg
 ||noion.ru^
 ||nomer1.ru.ru^
 ||novem.pl^
+||novoteka.ru$third-party
 ||nowa.cc/showthread.php?*http://
+||nsoft-s.com^$third-party
 ||nyx.su/informers/
 ||obigre.ru^$third-party
 ||obmenniki.com/img/ban
@@ -1645,7 +1651,6 @@ market.yandex.ru##.spec-adv
 ||button.blogs.yandex.
 ||clck.yandex.
 ||kiks.yandex.
-||lenta.yandex.*/i/
 ||yabs.yandex.
 ||yandex.*/cy?base=0&host=
 
@@ -1862,10 +1867,8 @@ kleo.ru##DIV#color + TABLE
 ||kolesa.kz/bs/*
 ||kolesa.kz/f/bs/*
 kotomatrix.ru##NOINDEX > A[target="_blank"] > IMG
-kp.ru##DIV.banner-middle
-||kp.ru/_inc/garant.html
-||kp.ru/tizers/
-||kp.ru/upimg/*.gif?
+kp.by,kp.ru##.baner,.banner-middle
+||advert.kp.ru^$object
 ||krisha.kz*/bs/
 ||lazonik.com/bnrs/
 legalwarez.ru,soft-teleport.ru##DIV#dle-content > DIV > P[align="justify"][style="margin: 0pt 0px;"]
@@ -1876,6 +1879,7 @@ lequroz.ru/$image
 levonevski.net/$object
 lifehacker.ru##DIV#banner-column
 lifehacker.ru##IMG[alt="Ads"]
+liveday.ru##.news > CENTER > A[target="_blank"] > IMG
 liveinternet.ru##IMG[width="200"][height="60"],IMG[width="476"][height="60"],IMG[width="500"][height="45"],EMBED[align="middle"]
 ||liveinternet.ru/publ/00stat/*/*.swf
 ||liveinternet.ru/ad/
