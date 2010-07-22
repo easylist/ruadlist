@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: EA3i4BOVQJhsBs1F72wWWQ
+! Checksum: qwZzEGQK4rkwqYN+0W+xog
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -296,6 +296,7 @@ n728x90_
 ~softarchive.net##CENTER > NOINDEX > A[target="_blank"] > IMG
 ! Скрываем рекламу от Google в результатах поиска на сайтах партнёров:
 google.com,google.ru##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
+google.com,google.ru##TABLE.t.bb + TABLE.ra
 ! Скрываем рекламу на форумах, на myBB-движке
 ##DIV.section > DIV#tieser-bottom.container[align="center"]:first-child
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
