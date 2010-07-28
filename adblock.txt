@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: BFy25D8qZrYOzKAOk4tvlQ
+! Checksum: qC4T6e9RyApt6QrPoM0myw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -30,8 +30,8 @@
 ! Блокирует: /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
 @@||e-travel.com/$stylesheet
 @@stopgame.ru/js/$object
-! Блокирует: /banners
-@@/banners/AC_RunActiveContent.js|$domain=rfcmd.com|webnames.ru
+! Блокирует: /banner/
+@@||video.*.user.madbanner.ru/cgi-bin/banner/$object-subrequest
 ! Ещё «правильные баннеры»
 @@||ozon.ru/graphics/subscribe/
 ! Блокирует: .tbn.ru/
@@ -400,7 +400,7 @@ _reklama
 reklamka
 /upload/rk/*
 /vottbanner
-.ru/banners
+.ru/banners$domain=~webnames.ru
 .ua/banners
 
 ! = Популярные баннеры по ключевым словам =====================================
