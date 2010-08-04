@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: vOie1/r/AVUHrti3lfn3eg
+! Checksum: CrfewKXKb3brejBn0EeEPQ
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/cntblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -26,6 +26,7 @@
 /[^a-z]top[^a-z][^.]*\.[^?]*\?/$~background,~stylesheet,~xmlhttprequest,third-party
 
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
+|http://c.*/c.gif?
 |http://cnt.
 |http://count.
 |http://counting.
@@ -42,10 +43,7 @@
 ||radar.imgsmail.ru^
 
 ! = Общие фильтры =============================================================
-|http://c.*/c.gif?
-.faststart.ru^
-.hotlog.ru^
-.spylog.$image,script
+.spylog.$image,script,third-party
 //li.ru/*?
 /counted/*
 /counter.$~object-subrequest,domain=~li.org
@@ -65,6 +63,7 @@
 ||clixpy.com^$third-party
 ||comstar.ru/cnstats/
 ||cy-pr.com^$third-party
+||faststart.ru^$third-party
 ||feedjit.com^$third-party
 ||flagcounter.com^$third-party
 ||free-pagerank.com^$third-party
@@ -78,6 +77,7 @@
 ||stat24.com^$third-party
 ||statcounter.com^$third-party
 ||hitbox.com^$third-party
+||hotlog.ru^$third-party
 ||hsdn.org^$third-party
 ||stats.indextools.com^
 ||subscribe.ru/stat/
