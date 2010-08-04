@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: yP82CJp5PdVrQ+axtMbG/w
+! Checksum: HR7xHz4DkcJUtzr1N3IiKg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -22,16 +22,15 @@
 @@/favicon.ico|$image
 ! Википедию не трогаем
 @@||upload.wikimedia.org^
-! @@||wikipedia.org^
 ! Картинки в гуглопоиске всегда отображаем
 @@||google.*/images?
 ! Блокирует: /\/ad[svjx0-9]\//
-@@||info-broker.ks.ua/images/
+! @@||info-broker.ks.ua/images/
 ! Блокирует: /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/
 @@||e-travel.com/$stylesheet
 @@stopgame.ru/js/$object
 ! Блокирует: /banner/
-@@||video.*.user.madbanner.ru/cgi-bin/banner/$object-subrequest
+@@||video.*.user.madbanner.ru/cgi-bin/banner/$object_subrequest
 ! Ещё «правильные баннеры»
 @@||ozon.ru/graphics/subscribe/
 ! Блокирует: .tbn.ru/
@@ -41,7 +40,7 @@
 ! Мини-превью сайтов по их доменам в конце адреса.
 @@||similarsites.com/thumbnail/
 ! Не работает видео на eurovisionsports.tv. Блокирует /oascentral. и /\/ad[svjx0-9]\//.
-@@||oascentral.feedroom.com/RealMedia/ads/ 
+! @@||oascentral.feedroom.com/RealMedia/ads/ 
 ! Прочие исключения (множественные срабатывания)
 @@||ankama.com^
 @@||cubeecraft.com^$document
@@ -70,7 +69,7 @@
 ! Рекламные скрипты
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~chance.ru|~games-tv.ru
 ! Популярные имена папок с рекламой
-/\/ad[svjx0-9]\//$domain=~garrysmod.org|~facepunch.com|~mail.ru|~mercatos.ru|~gamespot.com
+! /\/ad[svjx0-9]\//$domain=~garrysmod.org|~facepunch.com|~mail.ru|~mercatos.ru|~gamespot.com
 ! Cлишком короткая версия слова banner
 /\/baner[\d._-s/]/
 
@@ -362,7 +361,7 @@ ban_click
 _banner.$domain=~mozilla.org
 _banner_
 _banner-$domain=~echo.msk.ru
-_banner/$~object-subrequest,~stylesheet,domain=~kp.by|~kp.ru
+_banner/$~object_subrequest,~stylesheet,domain=~kp.by|~kp.ru
 _banners
 -banner.$domain=~mozilla.org
 -banner_
@@ -475,7 +474,7 @@ sexvodnokalssnikah
 /linkshare/*
 /marketplace.asp?
 /mirmaek/*.gif$image
-/oascentral.
+/oascentral.$~object_subrequest
 /pagerank.$image
 /pagerank/*$image
 /peelad/*
@@ -959,13 +958,13 @@ zvukoff.ru/24open/*.jpg
 ||213.199.175.155^
 
 ! Сервера AdRiver по IP-адресам.
-! ||217.16.18.206^$~object-subrequest
-! ||217.16.18.213^$~object-subrequest
-! ||217.16.18.214^$~object-subrequest
-! ||217.16.28.104^$~object-subrequest
+! ||217.16.18.206^$~object_subrequest
+! ||217.16.18.213^$~object_subrequest
+! ||217.16.18.214^$~object_subrequest
+! ||217.16.28.104^$~object_subrequest
 ! Надеюсь так будет работать нормально.
-||217.16.18.*^$~object-subrequest
-||217.16.28.*^$~object-subrequest
+||217.16.18.*^$~object_subrequest
+||217.16.28.*^$~object_subrequest
 
 //hmn.ru^$third-party
 //kpk.me^$third-party
@@ -1025,7 +1024,7 @@ zvukoff.ru/24open/*.jpg
 ||adnet.ru^$third-party
 ||adocean.pl^
 ||adpro.com.ua^
-||adriver.ru^$third-party,~object-subrequest
+||adriver.ru^$third-party,~object_subrequest
 ||adrock.com.ua^
 ||adru.net^
 ||adsell.me/b/
@@ -1081,7 +1080,7 @@ zvukoff.ru/24open/*.jpg
 ||bb.stream24.ru^
 ||bbelements.com^
 ||bbn.by/t.bbn?
-||begun.ru^$~object-subrequest,third-party
+||begun.ru^$~object_subrequest,third-party
 ||bepartner.ru^$third-party
 ||bestreferat.ru/images/b/
 ||bet-at-home.com^$third-party
@@ -1143,7 +1142,7 @@ zvukoff.ru/24open/*.jpg
 ||dostavka.ru^$third-party
 ||dosugcz.biz^
 ||dosugvip.ru^
-||doubleclick.$~object-subrequest
+||doubleclick.$~object_subrequest
 ||dreamlog.ru^$third-party
 ||dt00.net^$third-party,domain=~marketgid.com
 ||dw.com.com^
@@ -1285,7 +1284,7 @@ zvukoff.ru/24open/*.jpg
 ||lovn.ru/
 ||lux-bn.com.ua^
 ||luxup.ru^
-||madbanner.ru^$~object-subrequest
+||madbanner.ru^$~object_subrequest
 ||magna.ru^
 ||magnet.kiev.ua^
 ||mambo.kiev.ua^$third-party
@@ -1293,7 +1292,7 @@ zvukoff.ru/24open/*.jpg
 ||marketingsolutions.yahoo.com^
 ||masterpop.ru^
 ||mastertraffic.cn^
-||mb.*/cgi-bin/iframe/*?$~object-subrequest
+||mb.*/cgi-bin/iframe/*?$~object_subrequest
 ||mbn.com.ua^
 ||mcount.ru^
 ||media-click.ru^
@@ -1315,7 +1314,7 @@ zvukoff.ru/24open/*.jpg
 ||mn4.ru/cgi-bin/
 ||mobn.net^
 ||mochiads.com/srv/
-||mochiads.com^~object-subrequest
+||mochiads.com^~object_subrequest
 ||moijs.com^
 ||moneyteacher.ru^
 ||moogle.ru^$third-party
@@ -1725,7 +1724,7 @@ digital.ru##DIV[class*="Banner"]
 ||dimonvideo.ru/uploads/bb
 dimonvideo.ru##BODY > TABLE NOINDEX > DIV
 ||divan-tut.ru/promo
-||dl.dropbox.com^$object-subrequest,domain=tv.molodejj.ru
+||dl.dropbox.com^$object_subrequest,domain=tv.molodejj.ru
 dreamprogs.net##.content DIV:first-child + NOINDEX
 dreamprogs.net##.content DIV#lfwar:first-child
 dreamprogs.net##.war3
