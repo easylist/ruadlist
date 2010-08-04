@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 99mqwyZmgeLpwlZaPaQilw
+! Checksum: v+7zbMZ/spchjRgOIsTjZQ
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/cntblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -7,7 +7,8 @@
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
 ! Проект создан DemonSat'ом на основе подписки от denis-ovs(denis-ovs.narod.ru)
 ! Включает в себя фрагменты подписки от Александра Михалкина и Алексея Солохина
-! На данный момент над подпиской работают: Lain_13, Радик245
+! Так же использованы фрагменты подписки fanboy'я.
+! На данный момент над подпиской работают: Lain_13
 ! Помогают: MORPEH (Александр Михалкин) и другие пользователи подписки
 !==============================================================================
 ! Данная подписка создана для улучшения приватности пользователя в сети. Она
@@ -37,36 +38,47 @@
 |http://counting.
 |http://hit.$third-party
 |http://hits.$third-party
+|http://stat.
 |http://top.$~stylesheet,~xmlhttprequest,third-party
 
 ! = Web-Bugs (картинки 1x1) ===================================================
+;0x0;0;0;-;0|$third-party
 .googleusercontent.com/tracker/
 /1x1.png
 /pixel.php?
 ||addthis.com^*.gif?*&CXNID=
 ||bin.clearspring.com^$object
-||radar.imgsmail.ru^
 
 ! = Общие фильтры =============================================================
+.ru/stat/?
+.ru/cnt/?
 .spylog.$image,script,third-party
 //li.ru/*?
+/cnt.cgi?
+/cnt.php?
+/cnt-gif1x1.php?
 /counted/*
 /counter.$~object-subrequest,domain=~li.org
 /counter/*
 /counter?
 /counters/*
+/counters?
 /counter_
+/cycounter.
 /cycounter/*
+/cycounter?
 /top100.cnt?
 /top100/*$domain=~top100.rambler.ru
 ||at.ua/stat/
-||atdmt.com^$third-party
+||bigmir.net/cnt/
 ||burstnet.com^$third-party
-||c.waplog.net^$third-party
+||c.hit.ua^
 ||circle.am/service/?
 ||clicktale.net^$third-party
 ||clixpy.com^$third-party
-||comstar.ru/cnstats/
+||cnstats.ru^$third-party
+||comstar.ru/cnstats/$third-party
+||countlog.com^$third-party
 ||cy-pr.com^$third-party
 ||faststart.ru^$third-party
 ||feedjit.com^$third-party
@@ -74,11 +86,24 @@
 ||free-pagerank.com^$third-party
 ||geovisite.com^$third-party
 ||google-analytics.com$third-party,domain=~earth.google.com|~imageshack.us|~verbatim.jp
+||hc.uralweb.ru^
+||hiddenjs.ru^
+||histats.com^$third-party
+||hit.gemius.pl^
 ||imtop.ru^$third-party
+||informer.cyberstyle.ru^
+||ipcounter.de^$third-party
 ||liveinternet.ru/cgi-bin/
+||lstats.qip.ru^
+||mcount.ru^$third-party
+||mycounter*.ua^$third-party
+||mytrix.com^$third-party
+||proext.com^$third-party
 ||quantserve.$third-party
-||radar.imgsmail.ru^$third-party
+||radar.imgsmail.ru^
+||rose.ixbt.com^
 ||sedotracker.com^$third-party
+||seemore.ru^$third-party
 ||stat24.com^$third-party
 ||statcounter.com^$third-party
 ||hitbox.com^$third-party
@@ -86,13 +111,18 @@
 ||hsdn.org^$third-party
 ||stats.indextools.com^
 ||subscribe.ru/stat/
-||tns-counter.ru^$~object-subrequest
+||tns-counter.ru^$third-party,~object-subrequest
+||uarating.com^$third-party
 ||video-stats.video.google.
+||waplog.net^$third-party
 ||wapstats.net^$third-party
+||warlog.info^$third-party
+||weblog.com.ua^$third-party
 ||webtrends.com^$third-party
-||yadro.ru^$third-party
+||webvisor.$third-party
 
 ! Форумы ucoz.net
+||a.ucoz.net^
 ||moy.su/stat/
 ||ucoz.*/main/?a=ustat;
 ||ucoz.com/stat/
@@ -105,6 +135,48 @@
 ||ucoz.ru/stat/
 ||ucoz.ua/stat/
 
+! Mail.RU
+||mail.ru/count/
+||mail.ru/share_count?
+||rs.mail.ru^*.gif?rnd=$domain=mail.ru
+
 ! Яndex
+||bs.yandex.
+||clck.yandex.
 ||mc.yandex.
-||yandex.*/cycounter?
+||yandex.ru/click/
+||yandex.ru/count/
+||yandex.ru/metrika/
+
+! Правила заимствованные из русской части подписки fanboy'я и ещё не разобранные
+! https://secure.fanboy.co.nz/fanboy-tracking-intl.txt
+.ru/img.php?id
+/fstat.swf
+/impression.cgi?
+/ixbtstat/*
+/mmcount3.dll?
+/ncounter.pl?
+/readcounter.
+/tag_counter/?
+/tracker.dll?
+||1link.ru^$third-party
+||a-counter.kiev.ua^$third-party
+||bigler.ru/bsystem/
+||c.domik.net^
+||c.tbex.ru^$third-party
+||catalog.metka.ru^$third-party
+||chance.ru/c/$image
+||hmn.ru/counterdb.php?$image,background
+||lifenews.ru/count/
+||marker.ru/count/
+||price.ua^$third-party,subdocument
+||rg.ru/rgrucounter
+||rutvit.ru/?identifier
+||scounter.rambler.ru^$third-party
+||stat1.ukr.net^
+||stat2.mc2.ru^$third-party
+||stat24.meta.ua^$third-party
+||t.pusk.ru^$third-party
+||tbe.tom.ru^$third-party
+||theplace.ru^*/vintage_
+||utro.ru/utro_images/*empty.gif?
