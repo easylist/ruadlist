@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: JAZdGNsmoeQQ3yVbSQaXIg
+! Checksum: ORs8FqlrfC0U6ueA1nLG8g
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -1462,6 +1462,7 @@ zvukoff.ru/24open/*.jpg
 ||super.md/?col=
 ||supertop.ru^
 ||supertura.com^
+||superstyle.ru^$third-party
 ||surbis.ru^
 ||tak.ru/in.php?
 ||teasercash.com^$third-party
@@ -1619,6 +1620,18 @@ mail.ru##[class^="ban"],[class$="_ban"],DIV[id*="banner"]
 mail.ru##[id^="getmov"]
 mail.ru##LI.promo
 maps.mail.ru##IMG[width="200"][height="30"]
+
+! РБК
+cnews.ru##DIV.banner_wrapp
+cnews.ru,rbc.ru,rbc.ua##DIV[id^="flash_"]
+rbc.ru,rbc.ua##DIV.banner
+rbc.ru,rbc.ua##IFRAME[width="234"][height="200"]
+rbc.ru,rbc.ua##TABLE[bgcolor="#F7FAEF"]
+rbc.ru,rbc.ua##.contentBox > .tac
+rbcnews.com##A[href^="http://banner.rbc.ru/"]
+||pics.rbc.ru^*/img.gif?
+||pics.rbc.ru^*.swf?
+||pics.rbc.ru^*/banners/
 
 ! Яndex
 yandex.ru,yandex.ua##.go-ad-all,.intadv,#banner,#direct,.b-banner,.b-direct,.b-bar
@@ -1910,10 +1923,11 @@ mts.ru##DIV.visual_container.red:last-child
 muzoff.ru##A[href^="http:"]:not([href*="muzoff.ru"])
 muzoff.ru##DIV#ibp
 ||mywed.ru/bnr/
+new-films.biz##DIV#dle-content > NOINDEX
 newestsoft.com##A[href="http://reviewsoft.ru/"]
 newestsoft.com##DIV.mk_body_bg > TABLE[bgcolor="#ffffff"][style="border: 1px solid rgb(193, 209, 253);"]
 newestsoft.com/images/*x90$image
-new-films.biz##DIV#dle-content > NOINDEX
+newsru.com##TABLE[style="cursor: pointer;"][onclick^="window.open"]
 ngs.ru##.hcozffr,.nb,#nbs-block
 nnm-club.ru##CENTER > TABLE[id^="mc_"],DIV[id^="x"],.header IFRAME
 nnm.ru##A#branding_link,[class*="banner"],[id*="banner"],#footer + * + #links
@@ -1953,9 +1967,6 @@ forums.overclockers.ru##TABLE.banner,TD[width="160"],TABLE[width="100%"][style="
 ||ozon.ru/PartnerTwinerNew.aspx
 ||pctuner.ru/plugins/bworks/files/
 pics.goods.turist.ru/turist.goods_pics/$domain=~turist.ru
-||pics.rbc.ru^*/img.gif?
-||pics.rbc.ru^*.swf?
-||pics.rbc.ru^*/banners/
 pindosoff.net##DIV[class^="copyright"] > NOINDEX
 pindosoff.net##DIV#dle-content > TABLE:first-child TD.copy
 pindosoff.net/images/
@@ -1988,12 +1999,6 @@ radikal.ru##DIV[id^="left_ban"]
 rambler.ru##DIV.r--b728
 rambler.ru##DIV.rb--TopTeaser
 rambler.ru##.pgBanner
-rbc.ru,rbc.ua##DIV.banner
-rbc.ru,rbc.ua##DIV[id^="flash_"]
-rbc.ru,rbc.ua##IFRAME[width="234"][height="200"]
-rbc.ru,rbc.ua##TABLE[bgcolor="#F7FAEF"]
-rbc.ru,rbc.ua##.contentBox > .tac
-rbcnews.com##A[href^="http://banner.rbc.ru/"]
 ||regnum.ru/i/bn/
 restoclub.ru/pic/iblocks
 ||rl-team.net/bazar_fast/
