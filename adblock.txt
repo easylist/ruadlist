@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: krhmr7PAYCdECC/h3byYNg
+! Checksum: yP82CJp5PdVrQ+axtMbG/w
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -73,8 +73,6 @@
 /\/ad[svjx0-9]\//$domain=~garrysmod.org|~facepunch.com|~mail.ru|~mercatos.ru|~gamespot.com
 ! Cлишком короткая версия слова banner
 /\/baner[\d._-s/]/
-! Не оптимизируемый размер в имени картинки
-/\D(?:3[1-3][-_x]88|88[-_x]3[1-3])\D/
 
 ! = Блокировка баннеров по размеру в пути к картинке ==========================
 /120x140
@@ -201,7 +199,6 @@ n728x90_
 
 ! = Скрытие баннеров по указанному размеру картинки ===========================
 ##[width="80"][height="15"],[width="80"][height="150"]
-##[width="88"][height="31"],[width="88"][height="32"],[width="88"][height="33"]
 ##[width="120"][height="600"]
 ##[width="160"][height="80"],[width="160"][height="240"],[width="160"][height="600"]
 ##[width="300"][height="250"]
