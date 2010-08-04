@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: wHgQnKKr675CytCIFSpU3w
+! Checksum: cHw1IUYg5iEiaMMyWsRkmw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -2142,6 +2142,8 @@ zadolba.li##P.banner
 ||zaycev.net/m3_images/mirmaek/
 zaycev.net##*:not([nowrap="nowrap"]) > A[href^="http:"]:not([href*="zaycev.net"])
 zaycev.net##BODY > TABLE[height="100px"]:nth-of-type(1)
+zelenograd.ru##TABLE[cellpadding="1"] > TBODY > TR > TD[bgcolor="#CCBEB5"] > TABLE[bgcolor="white"]
+zelenograd.ru##NOINDEX > TABLE
 ||zelenograd.ru/b/
 zhmak.info##BODY > TABLE > TBODY > TR > TD[width="180"] + * + TD > *:not(.news)
 ||zhmak.info/mp.js|
