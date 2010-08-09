@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: rr3Ij4SNf+9L4W+GL0e8iA
+! Checksum: FwXrBICnsxi03es83PAZig
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -1553,7 +1553,6 @@ zvukoff.ru/24open/*.jpg
 ||xiti.com^
 ||xklad.net^
 ||xmemory.ru^$third-party
-||yadro.ru^$third-party
 ||yaicom.ru^
 ||yellowmedia.biz^
 ||yellowsearch.ru^$third-party
@@ -1633,6 +1632,13 @@ rbcnews.com##A[href^="http://banner.rbc.ru/"]
 ||pics.rbc.ru^*/img.gif?
 ||pics.rbc.ru^*.swf?
 ||pics.rbc.ru^*/banners/
+
+! Ядро.ру
+! ||yadro.ru^$third-party
+! ||ads.yadro.ru^$third-party
+! Первое блокирует счётчики, а второе должно блокироваться общим правилом
+||aif.yadro.ru^$third-party
+||yadro.ru/ad/
 
 ! Яndex
 yandex.ru,yandex.ua##.go-ad-all,.intadv,#banner,#direct,.b-banner,.b-direct,.b-bar
