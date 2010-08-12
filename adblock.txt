@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: h/QaSq7qhIlNWM8R6oY1aQ
+! Checksum: NPQVNCF+AbHgSjtLpV4MlA
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -68,10 +68,11 @@
 
 ! = Фильтры по регулярным выражениям ==========================================
 ! Рекламные скрипты
-/[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~chance.ru|~games-tv.ru
-! Постепенная замена регулярки на набор правил
+/ads.php?
 /adjs.php?
-/cgi-bin/adv.fcgi?
+/js/ads.js
+! Постепенная замена регулярки на набор правил
+/[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~chance.ru|~games-tv.ru
 ! Cлишком короткая версия слова banner
 /[/_-]baner[\d._-s/]/
 ! Популярные имена папок с рекламой
@@ -462,6 +463,7 @@ sexvodnokalssnikah
 /bs.mybb.ru/*
 /bs.nigma.ru/*$domain=~nigma.ru
 /by.banclk?
+/cgi-bin/adv.fcgi?
 /clickheat.
 /ctxtlink/*
 /dontblockthis/*
@@ -1709,6 +1711,7 @@ catode.ru##DIV#fixed > DIV#bottomWrapper > DIV.dashed
 catode.ru##DIV#wrapper > DIV#container > DIV#content > DIV#left > DIV.block:last-child
 catode.ru/$object
 ||cdmediaworld.*/!$subdocument
+||chance.ru/ban/
 ||chatname.ru/*/index.php?inc=banner
 citysmile.ru##DIV[style="text-align: justify; font-size: 9pt;"]
 citysmile.ru/images/xxx
