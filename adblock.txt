@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: UZR8DnprstgVFtGQ1+1r4A
+! Checksum: wG/5GIOB/ea7QN1wXbRS3w
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -69,6 +69,9 @@
 ! = Фильтры по регулярным выражениям ==========================================
 ! Рекламные скрипты
 /[/_-]ad[sxvj]s?\d?(?:\.\w{2,3})?(?:\?|$)/$domain=~chance.ru|~games-tv.ru
+! Постепенная замена регулярки на набор правил
+/cgi-bin/adv.fcgi?
+/cgi-bin/adjs.php?
 ! Cлишком короткая версия слова banner
 /[/_-]baner[\d._-s/]/
 ! Популярные имена папок с рекламой
@@ -315,7 +318,6 @@ google.com,google.ru##TABLE.t.bb + TABLE.ra
 |http://ad9
 |http://adfarm
 |http://ad.$~object_subrequest,domain=~europa.eu|~sjsu.edu|~uitm.edu.my|~uni-freiburg.de
-!|http://asd. (пока видел 1 такой)
 |http://ads.
 |http://ads0
 |http://ads1
@@ -460,7 +462,6 @@ sexvodnokalssnikah
 /bs.mybb.ru/*
 /bs.nigma.ru/*$domain=~nigma.ru
 /by.banclk?
-/cgi-bin/adv.fcgi?
 /clickheat.
 /ctxtlink/*
 /dontblockthis/*
@@ -1172,6 +1173,7 @@ zvukoff.ru/24open/*.jpg
 ||fxtrade.org.ru^$third-party
 ||galaxymeet.ru^$third-party
 ||gamingpartners.org^$third-party
+||getb.7ya.ru^
 ||gethit.ru^$third-party
 ||getvisits.ru^$third-party
 ||girlstalks.ru^$third-party
@@ -1660,6 +1662,7 @@ market.yandex.ru##.spec-adv
 3dnews.ru##.mbanner,#topBanners
 4pna.com##BODY > CENTER:nth-of-type(-n+2)
 7sl.ru##NOINDEX A[target="_blank"] > IMG
+||7ja.ru/imgb/
 ||a.fobos.tv/click.php?
 ||adultmult.ru^$object
 advesti.ru##IMG[width="170"][height="340"][border="0"]
