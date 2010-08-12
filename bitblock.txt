@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: d5lLLlGV4EyaSdlL6CejBg
+! Checksum: cAPg9Nmn/XNGRJIMhjS2jQ
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -9,6 +9,15 @@
 ! а именно линеечек, юзербаров, мерцающих картинок и прочего мусора.
 ! Подписка предназначена для тех, кто не желает всего этого видеть и не
 ! рекомендуется к установке по-умолчанию.
+
+! Социальные сеточки (выключайте те правила, которые вам не нужны)
+! Кнопка добавления в «ВКонтакте»
+||vkontakte.ru/js/api/share.js?
+! Добавление в «Мой Мир»
+||connect.mail.ru/js/share/
+! Универсальные службы добавления куда попало
+||addthis.com^$third-party
+||odnaknopka.ru^$third-party
 
 ! Общие правила
 .info/lines/$image
