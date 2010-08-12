@@ -1,12 +1,17 @@
 [Adblock Plus 1.1]
-! Checksum: 7x7rdmJ9/hp4SIJVo9tbQA
+! Checksum: d5lLLlGV4EyaSdlL6CejBg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
-! Дополнительная подписка фильтров RU Lines List (ruadlist.googlecode.com)
+! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
-! Создана для борьбы с задолбавшими уже линеечками.
+! Целью проекта является блокировка всего популярного и совершенно не нужного,
+! а именно линеечек, юзербаров, мерцающих картинок и прочего мусора.
+! Подписка предназначена для тех, кто не желает всего этого видеть и не
+! рекомендуется к установке по-умолчанию.
 
+! Общие правила
+.info/lines/$image
 .net/lines/$image
 .ru/line/$image
 .ru/lines/$image
@@ -23,7 +28,9 @@
 -userbar$image
 .userbar$image
 _userbar$image
-||ametric.ru^
+
+! Прочее
+||ametric.ru^$third-party
 ||animating.ru/signatures/
 ||autometric.ru^$third-party
 ||avatarochka.ru/Calend/
@@ -70,7 +77,6 @@ _userbar$image
 ||mamalines.org.ua^$third-party
 ||mamapluspapa.ru/*/lines/
 ||mima.ru/im/
-||minidog.info/lines/
 ||minuskg.ru/informer/show/
 ||mmohelper.ru/wp-content/uploads/sig/
 ||mobilewallpapers.narod.ru/bar_
@@ -82,7 +88,6 @@ _userbar$image
 ||pchelenok.com/lineyki_dlya_forumov/
 ||podpisi.net.ru^$third-party
 ||pomni.exe.by^$third-party
-||posobie.info/lines/
 ||pour-bientot.com^$third-party
 ||pregnancy.org.ua/r_prcalendar_img.php?
 ||progimp.ru/i/ub/
