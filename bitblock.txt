@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: p1DtqYEEH1bHS/cjupBKjw
+! Checksum: JMZg5CF79DKxIN2/5rEnjw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -15,24 +15,24 @@
 ! Добавление в «Мой Мир»
 ##.mrc__share
 ||connect.mail.ru/js/share/$third-party
-||imgsmail.ru/*_share_buttons_sprite.
+||imgsmail.ru/*_share_buttons_sprite.$third-party
 ! Различные штуки фейсбука (инфоблок, кнопка, ресурсы для кнопки)
-##.fb_share_size_Small
+##.fb_iframe_widget,.fb_share_size_Small
 ||facebook.com^$third-party
 ||fbcdn.net^$third-party,domain=~facebook.com
 ! Ресурсы кнопки добавления в «Google Buzz»
 ##.google-buzz-button
 ! ||gstatic.com/buzz/api/
 ! ||google.com/buzz/api/
-/buzz/api/*
+/buzz/api/*$third-party
 ! Кнопка добавления в «RuTvit»
-||rutvit.ru/js/share.js
+||rutvit.ru/js/share.js$third-party
 ! Кнопка добавления в «TweetMeme»
-||tweetmeme.com/*/button.js
+||tweetmeme.com/*/button.js$third-party
 ! Кнопка добавления в «ВКонтакте»
 ###vkshare0
 ||vkontakte.ru/js/api/share.js?$third-party
-||vkontakte.ru/share.php?
+||vkontakte.ru/share.php?$third-party
 ! Универсальные службы добавления куда попало
 ||addthis.com^$third-party
 ###odnaknopka
@@ -40,7 +40,9 @@
 
 != Правила скрытия соц-сеточек на сайтах ======================================
 imdb.com##.social_networking
-novafilm.tv##.news-entry > .box-wide
+
+!= Информеры ==================================================================
+||inforotor.net^$third-party
 
 != Общие правила ==============================================================
 .info/lines/$image
@@ -88,6 +90,7 @@ _userbar$image
 ||galaxie.ru^$third-party
 ||glitter-graphics.net^$third-party
 ||glitterfy.com^$third-party
+||google.*/brand?form=
 ||hottabych.net/ubar/
 ||hudeem-vmeste.ru/lin/
 ||informer.uinov.ru^
