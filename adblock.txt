@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: OdPOZb/OARsXkYPZjzwXXQ
+! Checksum: DZV3v6aPeeJ6R55xbN3L2w
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -461,6 +461,7 @@ sexvodnokalssnikah
 /all.by/*
 /backlinks.
 /bitrix/spread.php?
+/bodyclick.
 /bs.mybb.ru/*
 /bs.nigma.ru/*$domain=~nigma.ru
 /by.banclk?
@@ -1289,6 +1290,7 @@ zvukoff.ru/24open/*.jpg
 ||mediacontext.$third-party
 ||mediakadr.ru^
 ||medialand.
+||medianaft.ru^$third-party
 ||mediarotator.ru^
 ||megacliks.com^
 ||megafingroup.com^
@@ -1667,9 +1669,6 @@ market.yandex.ru##.spec-adv
 
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
 0verstyle.ru##.news CENTER:first-child
-2baksa.net,2baksa.ws##BODY > DIV > DIV > A[href*="/go.php?url="] > IMG[src*="2baksa.net/download/images/"]
-2baksa.net,2baksa.ws##TD.td_blocks + TD > DIV > DIV[style*="clear:"][style*="float:"]
-2baksa.net,2baksa.ws##TD.td_blocks + TD > *:not([style*="px 5px 10px;"]):not(.smalltext):not(.theme-news-home-title):not(.pageswitch):not(#container):not([style="padding-left: 3px;"]):not([style="width: 100%;"])
 2krota.ru###dle-content > TABLE:first-child CENTER
 3dnews.ru##.mbanner,#topBanners
 4pna.com##BODY > CENTER:nth-of-type(-n+2)
