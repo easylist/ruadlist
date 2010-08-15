@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: NETezGqqvfvmpK13EO0XFQ
+! Checksum: O0faBqdYni5Pdd99SuBAPg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -41,9 +41,6 @@
 ###odnaknopka
 ||odnaknopka.ru^$third-party
 
-!= Правила скрытия соц-сеточек на сайтах ======================================
-imdb.com##.social_networking
-
 != Информеры ==================================================================
 gismeteo.ua###rbkua_block
 ||export.gad.org.ua^
@@ -51,6 +48,8 @@ gismeteo.ua###rbkua_block
 
 != Раздражающий мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) ====
 ||forumkiev.com/flesh/
+imdb.com##.social_networking
+novafilm.tv##.news-entry > .box-wide > NOINDEX
 rutracker.org###logo
 
 != Общие правила ==============================================================
