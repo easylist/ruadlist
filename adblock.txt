@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: uMa3Ei8tCVSLO6hslyPi5g
+! Checksum: oF0C9UOGDQNEhiCFqDaNVw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -489,10 +489,11 @@ p://lank*.ru/
 ||b.ddestiny.ru^
 ||b2bcontext.ru^$third-party
 ||b2bvideo.ru^$third-party
-||b81x63nc.ws.md^
+||b81x63nc.ws.md^$third-party
+||banners.newsru.com^$third-party
 ||bannuncio.com^$third-party
-||bans.bride.ru^
-||bantex.ru^*?
+||bans.bride.ru^$third-party
+||bantex.ru^$third-party
 ||bashnya.ru^$third-party
 ||basketfan.my1.ru^$third-party
 ||bb.stream24.ru^
@@ -1031,6 +1032,7 @@ p://lank*.ru/
 ||rle.ru/cgi-bin/
 ||rmbn.ru/$third-party
 ||rnd.yxo.ru^
+||rose.ixbt.com^
 ||rosinvest.com/informs/
 ||rotaban.$third-party
 ||rotabanner.$third-party
@@ -1363,11 +1365,11 @@ maps.mail.ru##IMG[width="200"][height="30"]
 
 ! РБК
 cnews.ru##DIV.banner_wrapp
-cnews.ru,rbc.ru,rbc.ua##DIV[id^="flash_"]
-rbc.ru,rbc.ua##DIV.banner
-rbc.ru,rbc.ua##IFRAME[width="234"][height="200"]
-rbc.ru,rbc.ua##TABLE[bgcolor="#F7FAEF"]
-rbc.ru,rbc.ua##.contentBox > .tac
+~all.rbc.domains,cnews.ru##[id^="flashrst_"],[id^="flash_"]
+~all.rbc.domains##DIV.banner
+~all.rbc.domains##IFRAME[width="234"][height="200"]
+~all.rbc.domains##TABLE[bgcolor="#F7FAEF"]
+~all.rbc.domains##.contentBox > .tac
 rbcnews.com##A[href^="http://banner.rbc.ru/"]
 ||pics.rbc.ru^*/img.gif?
 ||pics.rbc.ru^*.swf?
