@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: STnAmDivSLahz9frzXrd0A
+! Checksum: uMa3Ei8tCVSLO6hslyPi5g
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -28,8 +28,8 @@
 @@stopgame.ru/js/$object
 ! /advert. (пока будет так)
 @@||advert.kp.ru^
-! Блокирует: /banner/
-@@||video.*.user.madbanner.ru/cgi-bin/banner/$object_subrequest
+! Блокирует: /cgi-bin/iframe/
+@@||video.*.user.madbanner.ru^$object_subrequest
 ! Ещё «правильные баннеры»
 @@||ozon.ru/graphics/subscribe/
 ! Блокирует: .tbn.ru/
@@ -215,7 +215,7 @@ ban_click
 ! _banners
 ! -banner.$domain=~mozilla.org
 ! -banner_
-! -banner-
+-banner-
 ! -banner/
 ! -banners
 ! /banner.
@@ -223,6 +223,7 @@ ban_click
 ! /banner-$domain=~onlime.ru|~tcj.com
 ! /banner/*$domain=~mail.ru|~mts.ru|~rzd.ru|~playground.ru
 /cgi-bin/banners/*
+/cgi-bin/iframe/*
 /images/adv/*
 /images/ban/*
 /images/bn/*
@@ -266,7 +267,6 @@ sexvodnokalssnikah
 /xgemius*.js|
 
 ! = Общие фильтры =============================================================
-.adv.*/cgi-bin/iframe/*?
 ! .advertising.
 .all.by/
 .clx.ru/
@@ -804,7 +804,6 @@ p://lank*.ru/
 ||listsites.ru^$third-party
 ||liveclix.net^$third-party
 ||loadmovie.ru^$third-party
-||local.*/cgi-bin/iframe/mb_timezone
 ||log.krs-ix.ru/krs.php?
 ||logan.jino.ru^
 ||login.tracking101.com^
@@ -826,7 +825,6 @@ p://lank*.ru/
 ||marketgid.com^$third-party
 ||masterpop.ru^$third-party
 ||mastertraffic.cn^$third-party
-||mb.*/cgi-bin/iframe/*?$~object_subrequest
 ||media-click.ru^$third-party
 ||media-plans.ru^$third-party
 ||media.carnage.ru^
@@ -1324,10 +1322,6 @@ p://lank*.ru/
 ||kakdolgo.ru^$third-party
 ||superfastcomputer.ru^$third-party
 
-! Всяческие тизеры
-tizer*/cgi-bin/iframe/
-teaser*/cgi-bin/iframe/
-
 ! Найденные домены партнёрской сети 1under.ru (все сидят на IP 89.208.145.156)
 ||1under.ru^$third-party
 ||2under.ru^$third-party
@@ -1730,7 +1724,6 @@ pindosoff.net##DIV#dle-content > TABLE:first-child TD.copy
 pindosoff.net/images/
 pindosoff.net##TD.nav A[target="_blank"]
 ping.eu##TABLE.txt11
-||pink.habralab.ru/cgi-bin/iframe/
 pirat.ca##DIV[id^="sidebar"] DIV[class^="spacer_"] + DIV[align="left"] > DIV[align="left"] > DIV[class^="spacer_"] + DIV[align="left"]
 pixshock.net##P[style="text-align: center;"]
 pochta.ru##DIV.bottomadvert
