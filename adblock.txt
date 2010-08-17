@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 0vAeOPZ19QNDbBVKoOeu9g
+! Checksum: lNw94J3IUwl99bWepO0T5w
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -1365,12 +1365,11 @@ maps.mail.ru##IMG[width="200"][height="30"]
 
 ! РБК
 cnews.ru##DIV.banner_wrapp
-cnews.ru##[id^="flashrst_"],[id^="flash_"]
-~all.rbc.domains##[id^="flashrst_"],[id^="flash_"]
-~all.rbc.domains##DIV.banner
-~all.rbc.domains##IFRAME[width="234"][height="200"]
-~all.rbc.domains##TABLE[bgcolor="#F7FAEF"]
-~all.rbc.domains##.contentBox > .tac
+rbc.ru,rbc.ua,cnews.ru##[id^="flashrst_"],[id^="flash_"]
+rbc.ru,rbc.ua##DIV.banner
+rbc.ru,rbc.ua##IFRAME[width="234"][height="200"]
+rbc.ru,rbc.ua##TABLE[bgcolor="#F7FAEF"]
+rbc.ru,rbc.ua##.contentBox > .tac
 rbcnews.com##A[href^="http://banner.rbc.ru/"]
 ||pics.rbc.ru^*/img.gif?
 ||pics.rbc.ru^*.swf?
