@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: XRNbpkI29m1xKlDg2aOp5Q
+! Checksum: JoBPtNXr+ANd+hXpVLGkfw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/adblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -611,6 +611,7 @@ p://lank*.ru/
 ||edu.ru/d/window/b/
 ||effad.ru^$third-party
 ||ehoo.ru/knopka/
+||endata.cx^$third-party
 ||engine.adct.ru/*?
 ||engine.rorer.ru/*?
 ||eogli.com/1/
@@ -1433,6 +1434,7 @@ azart.net.ua##A[href="/adv.php"]
 ||b.turbo.az^
 bash.org.ru##DIV:not(#ads) > DIV.q > DIV:not(.vote):first-child
 bash.org.ru##DIV#page > HR
+bigtorrent.org###dle-info + NOINDEX
 binmovie.ru##TD.block_text[align="center"]
 borda.ru##TR.font5:first-child + * + * + TR.font1 + TR.font1
 ||bt.od.ua/images/b/
@@ -1743,6 +1745,10 @@ premiaruneta.ru/upload/iblock/
 premiaruneta.ru/upload/images/icon/
 price.ua###parachute
 prikol.ru##OBJECT#headlinebanner
+probki.net##CENTER > A > IMG[width="160"],TD + * + TD > A > IMG[width="160"]
+maps.probki.net##[width="180"] > TBODY > TR:last-child
+||probki.net/Banners/
+||probki.net/images$object
 qiq.ru##A[rel="nofollow"]
 ||quasir.info/img/ret4/
 ||quasir.info/js.php?
