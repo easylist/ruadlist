@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Ks3h/miohvH/HfDEMxO71A
+! Checksum: Et2sYvP8ZOe1jfIzd7qeug
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -49,14 +49,13 @@ gismeteo.ua###rbkua_block
 ||www.rb.ru^$third-party
 
 != Раздражающий мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) ====
-||echo.msk.ru/att/element-*-misc-
 freakenergy.ru###footer>NOINDEX,.sidebar>DIV>NOINDEX
 imdb.com##.social_networking
 novafilm.tv##.news-entry>.box-wide>NOINDEX
-rutracker.org###logo
+rutracker.org,tapochek.net,pornolab.net###logo,#page_footer,.signature
+/images/logo/*$domain=rutracker.org|tapochek.net|pornolab.net
+||echo.msk.ru/att/element-*-misc-
 ||forumkiev.com/flesh/
-||rutracker.org/images/logo/
-||tapochek.net/images/logo/
 
 != Общие правила ==============================================================
 .info/lines/$image
