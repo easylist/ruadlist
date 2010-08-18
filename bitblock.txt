@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Et2sYvP8ZOe1jfIzd7qeug
+! Checksum: P1ockmlT8DPK0rFCj11B/g
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -52,10 +52,12 @@ gismeteo.ua###rbkua_block
 freakenergy.ru###footer>NOINDEX,.sidebar>DIV>NOINDEX
 imdb.com##.social_networking
 novafilm.tv##.news-entry>.box-wide>NOINDEX
-rutracker.org,tapochek.net,pornolab.net###logo,#page_footer,.signature
-/images/logo/*$domain=rutracker.org|tapochek.net|pornolab.net
 ||echo.msk.ru/att/element-*-misc-
 ||forumkiev.com/flesh/
+
+! Сайты на движке TorrentPier
+rutracker.org,tapochek.net,pornolab.net,z-torrents.fhoster.ru,razdacha.net,gardnet.tomsk.ru,torrents.zp.ua,f-trackers.com,pro100tracker.org,ya-torrent.com,myy.su,lantorrent.net.ru,lantorrent.net,lantorrent.com,best-tt.ru,halyavim.ru,pro-tracker.org,mortan.info,underverse.su,sporttracker.kz###logo,#page_footer,.signature,.copyright
+/images/logo/*$domain=rutracker.org|tapochek.net|pornolab.net|z-torrents.fhoster.ru|razdacha.net|gardnet.tomsk.ru|torrents.zp.ua|f-trackers.com|pro100tracker.org|ya-torrent.com|myy.su|lantorrent.net.ru|lantorrent.net|lantorrent.com|best-tt.ru|halyavim.ru|pro-tracker.org|mortan.info|underverse.su|sporttracker.kz
 
 != Общие правила ==============================================================
 .info/lines/$image
@@ -94,6 +96,7 @@ _userbar$image
 ||calendar.rodim.ru^
 ||card.mmos.com^
 ||catlover.m-sk.ru/lin/
+||clocklink.com^$third-party
 ||clubnevest.ru/mules/lines/
 ||daisypath.com^$third-party
 ||flines.ru^$third-party
