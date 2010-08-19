@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: HgSmMPUwL3XS/3cKXVgTFg
+! Checksum: uptVtrrA1710FHuNA2s+vw
 ! Redirect: https://easylist-downloads.adblockplus.org/ruadlist+easylist.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -203,7 +203,6 @@ _160x240
 |http://mads.
 
 ! = Баннеры ===================================================================
--advert.
 ban_click
 ! ^bannerid=$domain=~skylink.ru
 ! ?banner=
@@ -222,6 +221,9 @@ _banner-$domain=~echo.msk.ru
 ! /banner_$domain=~allods.ru|~mail.ru|~onlime.ru|~playstation.com|~taxcom.ru
 ! /banner-$domain=~onlime.ru|~tcj.com
 ! /banner/*$domain=~mail.ru|~mts.ru|~rzd.ru|~playground.ru
+
+-advert.
+/afisha_banner/*
 /cgi-bin/banners/*
 /cgi-bin/iframe/*
 /images/adv/*
@@ -1440,7 +1442,8 @@ ag.ru###rotating_banners,#upadbg2,IMG[width="120"][height="60"]
 allbest4free.ru##NOINDEX
 ||allsat.biz/ban_
 amdclub.ru###topline > NOINDEX
-||anekdotov.net/show/sell/
+anekdot.ru##.righcolumn
+||anekdot.ru/i/gallery/
 animenfo.com/radio/meganimedvd.swf
 anime-zone.ru##BODY > NOINDEX:last-child
 anime-zone.ru##DIV.menu_reklama
@@ -1496,12 +1499,15 @@ cybergid.com##SAPE_INDEX NOINDEX DIV[style],TD.body_3b TD.lpointer + TD > A[targ
 demotivation.ru##DIV#add2_div
 depositfiles.com##DIV#download_url + DIV[style="margin: 2em auto 0pt; width: 300px;"]
 depositfiles.com##DIV[id^="zhlobam_net"],DIV.banner1
+||depositphotos.com^$subdocument
 deviantart.com##.gal-tblock
 deviantart.com##.sleekadbubble
 deviantart.com##[style*="width: 300px"][style*="height: 250px"]
 digital.ru##DIV[class*="Banner"]
 ||dimonvideo.ru/uploads/bb
 dimonvideo.ru##BODY > TABLE NOINDEX > DIV
+dirty.ru##.b-ads
+||dirty.ru/i/nevoobrazimo/banner_
 ||divan-tut.ru/promo
 ||dl.dropbox.com^$object_subrequest,domain=tv.molodejj.ru
 dreamprogs.net##.content DIV:first-child + NOINDEX
@@ -1644,7 +1650,10 @@ kleo.ru##DIV#color + TABLE
 ||kolesa.kz/bs/*
 ||kolesa.kz/f/bs/*
 kotomatrix.ru##NOINDEX > A[target="_blank"] > IMG
-kp.by,kp.ru##.baner,.banner-middle
+kp.by,kp.ru###banner-after-menu
+kp.by,kp.ru##.baner
+kp.by,kp.ru##.banner-middle
+kp.by,kp.ru##.uslot_banner
 ||advert.kp.ru^$object
 ||krisha.kz*/bs/
 ||kronverkcinema.ru/*attachment.rpc
@@ -1743,12 +1752,12 @@ oper.ru##.banners,#onlinedengi
 oplati.ru##TD[width="90"][style="float: right;"]
 ||overclockers.ru/im_b/
 ||overclockers.ru/images/$object
-overclockers.ru##BODY > DIV > TABLE[style="height: 60px;"]
-overclockers.ru##IFRAME,TABLE.navbg + DIV[align="center"],A[target="_blank"] > IMG[height="60"]
-overclockers.ru##TABLE[height^="24"][width^="30"],TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
+overclockers.ru##TABLE.navbg + DIV[align="center"],TABLE[height^="24"][width^="30"]
+overclockers.ru##TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
+overclockers.ru##TD[width="12%"] + TD + TD[width="12%"],TD[width="12%"] + TD + TD[width="200"]
 overclockers.ru,~forums.overclockers.ru,~people.overclockers.ru##A:not([href^="/"]):not([href*="/images/lab/"]):not([href*="/images/news/"]):not([href$=".overclockers.ru"]):not([href*="youtube.com/watch?v="]) IMG:not([width="12"])
-overclockers.ru,~forums.overclockers.ru,~people.overclockers.ru##IMG[src*="/images/"][src*="/n-r."],#yass_top_edge + DIV > BR + DIV:last-child > TABLE[width="600"],TD[width="12%"] > DIV[style="width: 125px; height: 7px;"] + TABLE
-forums.overclockers.ru##TABLE.banner,TD[width="160"],TABLE[width="100%"][style="border: 1px solid rgb(204, 0, 0);"]
+forums.overclockers.ru##TABLE.banner
+forums.overclockers.ru##TABLE[width="100%"][style="border: solid 1px #cc0000"]
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 ||ozon.ru/graphics/$object
