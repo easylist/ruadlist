@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: L8ULZNHg3BmRr61mtCZOvw
+! Checksum: 5tQ3SAjDYxBEiip7/ZpeFA
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -14,17 +14,28 @@
 
 != Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
 != Тут не все правила - см. подписку фанбоя ниже.  
-! Добавление в «Мой Мир»
+
+!------------ Мой Мир ---------------------------------------------------------
 ##.mrc__share
+||connect.mail.ru/js/api/share.$third-party
 ||connect.mail.ru/js/share/$third-party
 ||imgsmail.ru/*_share_buttons_sprite.$third-party
-! Кнопка добавления в «RuTvit»
+
+!------------ Одноклассники ---------------------------------------------------
+##.odkl-klass
+
+!------------ RuTvit ----------------------------------------------------------
 ||rutvit.ru/js/share.js$third-party
-! Кнопка добавления в «ВКонтакте»
+
+!------------ ВКонтакте -------------------------------------------------------
 ###vkshare0
 ||vkontakte.ru/js/api/share.js?$third-party
 ||vkontakte.ru/share.php?$third-party
-! Универсальные службы добавления куда попало
+
+!------------ Яndex -----------------------------------------------------------
+||lenta.yandex.ru/i/addfeed.
+
+!------------ Универсальные ---------------------------------------------------
 ###odnaknopka
 ||odnaknopka.ru^$third-party
 
