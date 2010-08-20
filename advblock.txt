@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: rLcT425COLJt1R8zFsOxpA
+! Checksum: nHS3oaSuqvsbQ6dORSEYvg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -22,6 +22,8 @@
 @@||google.*/images?
 !:: /advert. (пока будет так)
 @@||advert.kp.ru^
+!:: ||dclick.ru^$third-party
+@@||dclick.ru/crossdomain.xml|
 !:: /cgi-bin/iframe/
 @@||video.*.user.madbanner.ru^$object_subrequest
 !:: /partner.
@@ -215,7 +217,7 @@ _banner-$domain=~echo.msk.ru
 ! -banners
 /banner.
 ! /banner_$domain=~allods.ru|~mail.ru|~onlime.ru|~playstation.com|~taxcom.ru
-! /banner-$domain=~onlime.ru|~tcj.com
+/banner-$domain=~onlime.ru|~tcj.com
 ! /banner/*$domain=~mail.ru|~mts.ru|~rzd.ru|~playground.ru
 
 -advert.
@@ -238,7 +240,7 @@ _banner-$domain=~echo.msk.ru
 /reklam/*
 _reklama
 -reklama
-! /reklama
+/reklama
 !$domain=hardwareportal.ru|hwp.ru|panasonic.ru|rugrad.eu|azart.net.ua|gps-club.ru
 /upload/bx/*
 /upload/rk/*
@@ -321,6 +323,7 @@ sexvodnokalssnikah
 ! Реклама с adfox.ru. У них несколько серверов и иногда указывается IP-адрес.
 /prepareCode?*&prr=
 /prre.ru/bout.php?
+/prre.ru/wout.php?
 /qzx.ru/gf/*
 /rankem.cgi?action=
 /rax.ru/*
@@ -485,7 +488,6 @@ p://lank*.ru/
 ||azerimake.km.ru^
 ||b-one.com.ua^
 ||b.candy.vl.ru^
-||b.dclick.ru^
 ||b.ddestiny.ru^
 ||b2bcontext.ru^$third-party
 ||b2bvideo.ru^$third-party
@@ -554,6 +556,7 @@ p://lank*.ru/
 ||clipta.com/informer/
 ||clix.ru/js/
 ||clocklink.com/clocks/$object
+||club-reseller.com^$third-party
 ||cn.procontext.ru^
 ||co.cc/img/affiliates/
 ||com.com/*/Ads/
@@ -709,6 +712,8 @@ p://lank*.ru/
 ||hi-fi.ru/b/
 ||hitlist.ru^$third-party
 ||hitter.ru^$third-party
+||holder.com.ua^$third-party
+||hotels24.ua^$third-party
 ||hotinga.ru^$third-party
 ||hotline.ua/img/hl/gm
 ||how2web.com^$third-party
@@ -742,6 +747,7 @@ p://lank*.ru/
 ||infosec.ru/common/data/pub/images/articles/
 ||inheart.ru^$third-party
 ||inside.m2k.ru^
+||instantcash.ru^$third-party
 ||intel.com/b/
 ||internetportal.ru/*.gif
 ||intimznaki.tomsk.ru^$third-party
@@ -859,6 +865,7 @@ p://lank*.ru/
 ||mercatos.ru^$third-party
 ||metod-online.com^*/promo/
 ||metroclick.ru^$third-party
+||micro-win.com^$third-party
 ||migratecookiesacrossdomains.asp
 ||mipagerank.com^$third-party
 ||mixmarket.biz^$third-party
@@ -1050,7 +1057,6 @@ p://lank*.ru/
 ||rle.ru/cgi-bin/
 ||rmbn.ru/$third-party
 ||rnd.yxo.ru^
-||rose.ixbt.com^
 ||rosinvest.com/informs/
 ||rotaban.$third-party
 ||rotabanner.$third-party
@@ -1206,6 +1212,7 @@ p://lank*.ru/
 ||topsupp.com/*?
 ||toptracker.ru^$third-party
 ||toptrackers.ru^$third-party
+||torg.mail.ru/prtnr/$third-party
 ||torgnn.ru^$third-party
 ||torrent-trackers.ru^$third-party
 ||trade7.ru^$third-party
@@ -1261,6 +1268,7 @@ p://lank*.ru/
 ||votetraffic.ru^$third-party
 ||vpsite.ru^$third-party
 ||vsego.ru/images/b
+||vsekino.su^$third-party
 ||vsem.ru/img$third-party
 ||vsetv.com/pic/paid/
 ||vz.ru/inc/b/*iframe.
@@ -1339,8 +1347,8 @@ p://lank*.ru/
 ||zorkabiz.ru^$third-party
 ||zoy.org/
 ||zozocash.biz^$third-party
-||zto.h16.ru^
-||zuni.tyndex.ru^
+||zto.h16.ru^$third-party
+||zuni.tyndex.ru^$third-party
 ||zvukoff.ru/24open/*.jpg
 
 ! Партнёрская программа adstock.ru
@@ -1495,75 +1503,67 @@ cwer.ru##NOINDEX
 ||cwer.ru/misc/$object
 cyberinfo.ru###bl_05
 
-||delfi.ua/b/
+! D
+delfi.ua###column4 > DIV > .widgetWrapper
+delfi.ua##.datet
+delfi.ua##.klucis
+delfi.ua##.partners
+delfi.ua##.wbhd
 ||ap.delfi.ua^
+||delfi.ua/b/
+||g.delfi.ua/d/m/c/
+||g.delfi.ua/r/r/
 demotivation.ru###add2_div
-depositfiles.com###download_url + DIV[style="margin: 2em auto 0pt; width: 300px;"]
-depositfiles.com##[id^="zhlobam_net"]
+demotivation.ru##BODY > NOINDEX
 depositfiles.com##.banner1
 ||depositphotos.com^$subdocument
-digital.ru##[class*="Banner"]
-||dimonvideo.ru/uploads/bb
-dimonvideo.ru##BODY > TABLE NOINDEX > DIV
+||digital.ru/uploads/banners/
 dirty.ru##.b-ads
 ||dirty.ru/i/nevoobrazimo/banner_
 ||divan-tut.ru/promo
-||dl.dropbox.com^$object_subrequest,domain=tv.molodejj.ru
-dreamprogs.net##.content DIV:first-child + NOINDEX
 dreamprogs.net##.content DIV#lfwar:first-child
 dreamprogs.net##.war3
+||dump.ru/i/
 ||dslnet.ru/adv/
-dump.ru##A[rel="nofollow"][target="_blank"] > IMG
 dverizamki.org/$object
 dwg.ru##BODY > TABLE > TBODY > TR:nth-child(3) > TD:nth-child(5)
-||dwg.ru/img/*$object
 dwg.ru##TD[background="../img/back22.gif"] > TABLE
-emuparadise.org###rmiad
-emuparadise.org###yo
-emuparadise.org###framework > TBODY:first-child > TR:first-child TABLE#index:last-child
-emuparadise.org###framework > TBODY:first-child > TR:first-child > TD:last-child > P
-emuparadise.org###index P[align="center"]
-emuparadise.org###index P[align="center"] + DIV[align="center"]
-epidem.ru##A[href="http://onlinetrax.ru"]
-epidem.ru##[id*="AdBar"]
-epidem.ru##TD[width="131"] > P
-||epidemz.net/images/*.jpg$image
-epidemz.net##TD.news > P:first-child
-epidemz.net##A[target="_blank"]:not([href*="http://"])
+||dwg.ru/img/*$object
+
+! E
+emuparadise.org###framework > TBODY > TR:first-child
+epidemz.net##TD[background^="http://epikz.net/i/"]
+epidemz.net##P > A[target="_blank"]
 ||ex.ua/b/$~stylesheet
 exler.ru##[id^="Banner"]
-exnews.org##NOINDEX > DIV[class$="body"]
-exnews.org##TD.column + TD CENTER
-fanacmilan.com##[id^="adText"]
+exnews.org##[class$="bbody"]
+exnews.org##CENTER + NOINDEX
+
+! F
 ||fb.finam.ru^
 fcenter.ru##TD[width="27"] + TD[width="99"]
 ||fcenter.ru/images/b/
 ||fcenter.ru/images/b1/
+fcpug.ru###main > DIV[style]
 ||fcpug.ru^$object
 ||fcshop.ru/i/cross/
-ferra.ru##.notik
-ferra.ru##.oki
-||ferra.ru/images/news/*.gif
-file-online.ru##.block_text
-||feels.ru/uploads/new6/
-feels.ru##[width="100%"][height="90"]
+||ferra.ru/include/*_advert_
+file-online.ru##NOINDEX > TABLE[style]
 filehippo.com##.ad
-||fishki.net/*/ad/b/
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
-fishki.net##IFRAME
+||fishki.net/*/ad/b/
 fontanka.ru##.ad
 ||football.ua/i/hihi/
-forum.funkysouls.com##[style="border: 1px dotted rgb(0, 0, 0);"]
-forum.ixbt.com##TD[style="padding-right: 4px; width: 14%; max-width: 240px;"]
-forum.ixbt.com##.dostavka
-||forum.ixbt.com/$object
-forums.ngemu.com##[style*="width: 920px;"][style*="height: 250px;"]
+! tbd:skipped
 forum.ru-board.com##BODY > CENTER TABLE:first-child
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
 forum.ru-board.com##[width="640"][border="1"]
 forum.wiaderko.com###topbar
+! tbd:continue
 ||forumkiev.com/MEDimg/
 forums.heroesofnewerth.com###purchase_pref
+forums.ngemu.com##DIV[style*="920px;"][style*="250px;"]
+! tbd:bookmark
 ||forumsofta.ru/pict_4_rotator/
 foto.rambler.ru##.pi_b2
 freakenergy.ru###menuforum
@@ -1639,6 +1639,10 @@ itc.ua##.b240x350
 itnews.com.ua##TR + * > TD[bgcolor="#ebebeb"][style="height: 96px;"]:first-child
 ixbt.com##.banner
 ixbt.com##H4#nl_header
+forum.ixbt.com##.dostavka
+forum.ixbt.com##TD[style="padding-right: 4px; width: 14%; max-width: 240px;"]
+||forum.ixbt.com/$object
+||rose.ixbt.com^
 izone.ru##NOINDEX TABLE[id^="table"][width="100%"]
 izvestia.ru##.liquid
 izvestia.ru##[style^="height: 300px; width: 150px;"]
@@ -1807,6 +1811,8 @@ pochta.ru##.bottomadvert
 pochta.ru##.gamesBlock
 pochta.ru##.loveplanet
 pochta.ru###tionline
+podrobnosti.ua##[class*="banner"]
+||lbn.podrobnosti.ua^
 ||pogoda.by/promo/
 popmech.ru###auction_tizer
 premiaruneta.ru/upload/iblock/
