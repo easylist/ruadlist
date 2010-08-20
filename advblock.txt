@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: nHS3oaSuqvsbQ6dORSEYvg
+! Checksum: 33qBYNmPaBRtXtl40zS9VQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1557,6 +1557,7 @@ fontanka.ru##.ad
 ! tbd:skipped
 forum.ru-board.com##BODY > CENTER TABLE:first-child
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
+forum.ru-board.com##TABLE[width="95%"] > TBODY > TR:last-child > TD > TABLE[cellspacing="0"][cellpadding="0"][border="0"]
 forum.ru-board.com##[width="640"][border="1"]
 forum.wiaderko.com###topbar
 ! tbd:continue
@@ -1564,7 +1565,6 @@ forum.wiaderko.com###topbar
 forums.heroesofnewerth.com###purchase_pref
 forums.ngemu.com##DIV[style*="920px;"][style*="250px;"]
 ! tbd:bookmark
-||forumsofta.ru/pict_4_rotator/
 foto.rambler.ru##.pi_b2
 freakenergy.ru###menuforum
 freakenergy.ru##.headreklama
@@ -1783,17 +1783,6 @@ oper.ru##.banners
 oper.ru###onlinedengi
 ||oper.ru/data/rennabs/
 oplati.ru##TD[width="90"][style="float: right;"]
-||overclockers.ru/im_b/
-||overclockers.ru/images/$object
-overclockers.ru##.navbg + DIV[align="center"]
-overclockers.ru##TABLE[height^="24"][width^="30"]
-overclockers.ru##TABLE[width="100%"][height^="6"]
-overclockers.ru##TABLE[width="100%"][height^="7"]
-overclockers.ru##TD[width="12%"] + TD + TD[width="12%"]
-overclockers.ru##TD[width="12%"] + TD + TD[width="200"]
-overclockers.ru,~forums.overclockers.ru,~people.overclockers.ru##A:not([href^="/"]):not([href*="/images/lab/"]):not([href*="/images/news/"]):not([href$=".overclockers.ru"]):not([href*="youtube.com/watch?v="]) IMG:not([width="12"])
-forums.overclockers.ru##.banner
-forums.overclockers.ru##TABLE[width="100%"][style="border: solid 1px #cc0000"]
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 ||ozon.ru/graphics/$object
@@ -2038,6 +2027,20 @@ zr.ru##.br
 ||ibm.com/developerworks/everywhere/ew.js
 ||pen007.ru/pr/code.js
 ||powertracker.org/images/Talky3D.gif
+
+! overclockers.ru
+forums.overclockers.ru##.banner
+forums.overclockers.ru##TABLE[width="100%"][style="border: 1px solid rgb(204, 0, 0);"]
+forums.overclockers.ru##TABLE[width="100%"][style="border: solid 1px #cc0000"]
+overclockers.ru##.navbg + DIV[align="center"]
+overclockers.ru##TABLE[height^="24"][width^="30"]
+overclockers.ru##TABLE[width="100%"][height^="6"]
+overclockers.ru##TABLE[width="100%"][height^="7"]
+overclockers.ru##TD[width="12%"] + TD + TD[width="12%"]
+overclockers.ru##TD[width="12%"] + TD + TD[width="200"]
+overclockers.ru,~forums.overclockers.ru,~people.overclockers.ru##A:not([href^="/"]):not([href*="/images/lab/"]):not([href*="/images/news/"]):not([href$=".overclockers.ru"]):not([href*="youtube.com/watch?v="]) IMG:not([width="12"])
+||overclockers.ru/images/$object
+||overclockers.ru/im_b/
 
 ! Томские ресурсы
 desk.tomsk.ru##.right_cell > CENTER
