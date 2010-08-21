@@ -3,4 +3,8 @@
 ./checksum.pl antinuha.txt
 ./checksum.pl bitblock.txt
 ./checksum.pl cntblock.txt
-svn commit
+svn diff advblock.txt
+svn diff antinuha.txt
+svn diff bitblock.txt
+svn diff cntblock.txt
+svn --editor-cmd gedit commit
