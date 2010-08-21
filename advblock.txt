@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: BpUWHTDLxunVn9ahRE2XSg
+! Checksum: wL5AJo43iPWZtjC3VQSm/w
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -36,6 +36,8 @@
 @@||mb.vesti.ru/css/$stylesheet,domain=vesti.ru
 @@||mb.vesti.ru/cgi-bin/banner/$domain=vesti.ru
 @@||mb.vesti.ru/cgi-bin/iframe/vesti_fm$domain=vesti.ru
+! Полезные баннеры на сайте альфабанке
+@@||ads.alfabank.ru^$domain=alfabank.ru
 ! Некоторые интернет-провайдеры — их легче совсем разблокировать.
 @@||akado.ru^$document
 @@||megafon.ru^$document
@@ -163,8 +165,8 @@ _160x240
 ! ##[id^="rnb_informer"]
 ##[id^="rtn4p"]
 ! ##[id^="sharePost"]
-##NOINDEX [class*="banner"]
-##NOINDEX [id*="banner"]
+! ##NOINDEX [class*="banner"]
+! ##NOINDEX [id*="banner"]
 ! Скрываем рекламу от Google в результатах поиска на сайтах партнёров:
 ! google.com,google.ru##TABLE[style="border: 1px solid rgb(51, 102, 153);"]
 ! google.com,google.ru##.t.bb + .ra
