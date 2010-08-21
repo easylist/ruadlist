@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: A6+rHgwSf3yhkR1CV4L9XQ
+! Checksum: i6IRwkdidcM2UicUHzkQzg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -15,14 +15,14 @@
 != Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
 != Тут не все правила - см. подписку фанбоя ниже.  
 
-!------------ Мой Мир ---------------------------------------------------------
-##.mrc__share
-||connect.mail.ru/js/api/share.$third-party
-||connect.mail.ru/js/share/$third-party
-||imgsmail.ru/*_share_buttons_sprite.$third-party
+!------------ Facebook --------------------------------------------------------
+||facebook.com/plugins/comments.php?$third-party
+||facebook.com/extern/login_status.php?$third-party
+! http://static.ak.fbcdn.net/rsrc.php/z5R48/hash/ejut8v2y.gif на 3dnews.ru
+||fbcdn.net^$third-party,domain=~facebook.com
 
-!------------ Одноклассники ---------------------------------------------------
-##.odkl-klass
+!------------ Google ----------------------------------------------------------
+||gmodules.com/ig/images/plus_google.gif
 
 !------------ RuTvit ----------------------------------------------------------
 ||rutvit.ru/js/share.js$third-party
@@ -33,11 +33,17 @@
 ||vkontakte.ru/js/api/share.js?$third-party
 ||vkontakte.ru/share.php?$third-party
 
+!------------ Мой Мир ---------------------------------------------------------
+##.mrc__share
+||connect.mail.ru/js/api/share.$third-party
+||connect.mail.ru/js/share/$third-party
+||imgsmail.ru/*_share_buttons_sprite.$third-party
+
+!------------ Одноклассники ---------------------------------------------------
+##.odkl-klass
+
 !------------ Яndex -----------------------------------------------------------
 ||lenta.yandex.ru/i/addfeed.
-
-!------------ Google ----------------------------------------------------------
-||gmodules.com/ig/images/plus_google.gif
 
 !------------ Универсальные ---------------------------------------------------
 ###odnaknopka
