@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ISm/ASeoJkYLrK+5loi0Sw
+! Checksum: BpUWHTDLxunVn9ahRE2XSg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -16,8 +16,8 @@
 ! по адресу: http://forum.mozilla-russia.org/viewtopic.php?pid=409520
 
 ! = Исключения против ложных срабатываний =====================================
-! Никогда не блокируем иконки сайтов
-@@/favicon.ico|$image
+! Никогда не блокируем иконки сайтов For what?! I forgot. ;)
+! @@/favicon.ico|$image
 ! Картинки в гуглопоиске всегда отображаем
 @@||google.*/images?
 !:: ||dclick.ru^$third-party
@@ -712,6 +712,7 @@ p://lank*.ru/
 ||hdtracker.ru^$third-party
 ||hellywood.ru^$third-party
 ||helpls.ru^$third-party
+||heroeswm.ru^$third-party
 ||hi-fi.ru/b/
 ||hitlist.ru^$third-party
 ||hitter.ru^$third-party
@@ -1327,6 +1328,7 @@ p://lank*.ru/
 ||xklad.net^$third-party
 ||xmemory.ru^$third-party
 ||xn--80apfevho6e.su/img/
+||xruni.ru^$third-party
 ||xxx-news.su^$third-party
 ||xxx-tracker.com/pics/
 ||xxxxxx.com.ru^
@@ -1562,39 +1564,30 @@ fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([hr
 ||fishki.net/*/ad/b/
 fontanka.ru##.ad
 ||football.ua/i/hihi/
-! tbd:skipped
-forum.ru-board.com##BODY > CENTER TABLE:first-child
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
 forum.ru-board.com##TABLE[width="95%"] > TBODY > TR:last-child > TD > TABLE[cellspacing="0"][cellpadding="0"][border="0"]
-forum.ru-board.com##[width="640"][border="1"]
-forum.wiaderko.com###topbar
-! tbd:continue
 ||forumkiev.com/MEDimg/
 forums.heroesofnewerth.com###purchase_pref
 forums.ngemu.com##DIV[style*="920px;"][style*="250px;"]
-! tbd:bookmark
 freakenergy.ru###menuforum
 freakenergy.ru##.headreklama
-freakenergy.ru##A[href^="http://www.vsemayki.ru/"]
 ||freakenergy.ru/imgpls/
 freesoft.ru##A[href^="/clicks/click.php?adv="]
+freesoft.ru##H2.txtl:not(:first-of-type)
+freesoft.ru##TABLE[width="100%"][cellspacing="3"][border="0"][align="center"]:first-child
+freesoft.ru##TABLE[width="472"][align="center"]
 ||freesoft.ru/images/
-||free-torrents.org^$object
-fullgames.ru###footer
-fullgames.ru###footer + TABLE TD > DIV + * + #ms
-fullgames.ru###footer + TABLE TD#left > CENTER
-fullgames.ru###footer + TABLE TD#main > CENTER:first-child
-fullgames.ru###footer + TABLE TD#main > INDEX > CENTER
-fullgames.ru###jbe_top
-fullgames.ru###up + TABLE TD#right
-||ox.furaffinity.net^
+||free-torrents.org^*/banners/
+fullgames.ru###left > DIV:not(#ms)
+fullgames.ru###main + #right
+fullgames.ru##CENTER > NOINDEX > A[target="_blank"]
+
+! G
 gagadget.com###footer-holding
 gagadget.com##[style*="width: 240px"][style*="height: 350px"]
-||galya.ru/*/clients/
-game-torrent.info/forum/$object
-gde.ru###menu + DIV[align="center"]
+||galya.ru^*/clients/
 ||gde.ru/img/*320x1
-gelbooru.com##[id^="note-box"]
+! skipped:s
 gismeteo.ru,gismeteo.com##.mainContainer5 > .M4:first-child
 gismeteo.ru,gismeteo.com###yandex
 gismeteo.ru,gismeteo.com,gismeteo.ua##.M123 > #left
@@ -1603,27 +1596,25 @@ gismeteo.ru,gismeteo.com,gismeteo.ua###right_banner
 gismeteo.ru,gismeteo.com,gismeteo.ua##.bnr
 ||advs.gismeteo.com^
 ||gismeteo.ru/ny/
-goldenbank.kiev.ua##BODY > TABLE TABLE:first-child + * + TABLE DIV:first-child + * + TABLE.Verdana10 TD:first-child + * + * + TD:last-child
-goldenbank.kiev.ua##.mag_tab
-google.ru###rhs_block
+! skipped:e
+
+! H
 habrahabr.ru##.banner
-hardwareportal.ru,hwp.ru##[class^="promo"]
-hardwareportal.ru,hwp.ru##[class*="tbann"]
+hdtracker.ru##CENTER:first-of-type
 hdtracker.ru##TD[width="100%"] + TD[width="160"][valign="top"]
-headhunter.com.kz,hh.ru,hh.ua,hh.by##.b-topbanner
+hh.by,hh.kz,hh.ru,hh.ua##.b-topbanner
+hideme.ru##[id*="hidemead"]
 ||hideme.ru/ad.js
-hideme.ru##*[id*="hidemead"]
 hl-inside.ru###orphus
 hl-inside.ru##.right-block.rek
-hmn.ru##BODY > TABLE[width="100%"]:first-child
-hmn.ru##INDEX > CENTER:last-child > TABLE.m11[width="480"]
-hmn.ru##INDEX > CENTER:last-child > TABLE[width="95%"]
-hotcharts.ru##A[href^="http://li.ru/go?"]
-hotcharts.ru##BODY > NOINDEX:first-child
-hotcharts.ru##[class^="text_ad_"]
-hotcharts.ru##.comment
-hotcharts.ru##NOINDEX > TABLE:not(.menu) > TBODY > TR > TD > *:not(.menu)
-hotcharts.ru##.archive + NOINDEX
+hmn.ru##A > IMG[width="240"]
+||ww.hmn.ru^
+||hotcharts.ru/img/*_700x150
+hwp.ru##[class^="promo"]
+hwp.ru##[class*="tbann"]
+
+! I
+! tbd:bookmark
 idownloads.ru/content/666/
 ||ifolder.ru^$object
 ||ifolder.ru^*-brend.css
@@ -2009,6 +2000,7 @@ webpark.ru##NOINDEX TABLE
 webpark.ru##[style*="height:"][style*="00px"]:first-child
 webplanet.ru##.marketnews
 webplanet.ru##IFRAME
+wiaderko.com###topbar
 world-art.ru/bipack/
 x-console.com##A[href*="=banner&"]:not([href*=".x-console.com%2Fmagazine"])
 x-console.com##[id*="banner"]

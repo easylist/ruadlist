@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: aENER3QKF4/je9/t3hu8wA
+! Checksum: A6+rHgwSf3yhkR1CV4L9XQ
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -53,9 +53,13 @@ gismeteo.ua###rbkua_block
 ||www.rb.ru^$third-party
 
 != Раздражающий мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) ====
+21region.org##.logo
 delfi.ua##.sbookmarks
 fanacmilan.com##CENTER > TABLE[height^="3"][style*="1px"]
-freakenergy.ru###footer>NOINDEX,.sidebar>DIV>NOINDEX
+freakenergy.ru###footer > NOINDEX
+freakenergy.ru##.sidebar > DIV > NOINDEX
+fullgames.ru###main > NOINDEX
+hwp.ru###container > DIV:first-child + DIV
 imdb.com##.social_networking
 novafilm.tv##.news-entry>.box-wide>NOINDEX
 podrobnosti.ua##.b-news-share
@@ -66,9 +70,9 @@ topnews.ru##.addto
 ||forumkiev.com/flesh/
 
 ! Сайты на движке TorrentPier
-rutracker.org,tapochek.net,pornolab.net,z-torrents.fhoster.ru,razdacha.net,gardnet.tomsk.ru,torrents.zp.ua,pro100tracker.org,myy.su,lantorrent.net.ru,lantorrent.net,lantorrent.com,best-tt.ru,halyavim.ru,pro-tracker.org,mortan.info,underverse.su,sporttracker.kz,rus-torrents.ru,torrents.net.ua,ya-torrent.com,nnbt.org,21region.org,wtracker.ru,blagovestnik.su,ivnet-cinema.ru,goldenshara.com,data-torrents.com###page_footer,.signature,.copyright
-rutracker.org,tapochek.net,pornolab.net,z-torrents.fhoster.ru,razdacha.net,gardnet.tomsk.ru,torrents.zp.ua,pro100tracker.org,myy.su,lantorrent.net.ru,lantorrent.net,lantorrent.com,best-tt.ru,halyavim.ru,pro-tracker.org,mortan.info,underverse.su,sporttracker.kz,21region.org,wtracker.ru,blagovestnik.su,goldenshara.com###logo
-/images/logo/*$domain=rutracker.org|tapochek.net|pornolab.net|z-torrents.fhoster.ru|razdacha.net|gardnet.tomsk.ru|torrents.zp.ua|pro100tracker.org|myy.su|lantorrent.net.ru|lantorrent.net|lantorrent.com|best-tt.ru|halyavim.ru|pro-tracker.org|mortan.info|underverse.su|sporttracker.kz|21region.org|wtracker.ru|blagovestnik.su|ivnet-cinema.ru|goldenshara.com
+rutracker.org,tapochek.net,free-torrents.org,pornolab.net,gardnet.tomsk.ru,myy.su,mortan.info,underverse.su,rus-torrents.ru,torrents.net.ua,ya-torrent.com,nnbt.org,21region.org,wtracker.ru,goldenshara.com,data-torrents.com###page_footer,.signature,.copyright
+rutracker.org,tapochek.net,free-torrents.org,pornolab.net,gardnet.tomsk.ru,myy.su,mortan.info,underverse.su,21region.org,wtracker.ru,goldenshara.com###logo
+/images/logo/*$domain=rutracker.org|tapochek.net|free-torrents.org|pornolab.net|gardnet.tomsk.ru|myy.su|mortan.info|underverse.su|21region.org|wtracker.ru|goldenshara.com
 
 != Общие правила ==============================================================
 .info/lines/$image
