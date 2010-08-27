@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 6lTQ3dTQ5C8RuAvRsVsFlQ
+! Checksum: QBDf2OGd5MKOPnV8Pgx94g
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -355,6 +355,7 @@ p://lank*.ru/
 ||217.16.18.*^$~object_subrequest
 ||217.16.28.*^$~object_subrequest
 ||77.91.228.66^
+||78.140.145.93/letitbit.
 ||80.91.178.234^
 ||80.93.49.192^
 ||80.93.56.187^
@@ -398,6 +399,7 @@ p://lank*.ru/
 ||a.ava.com.ua^
 ||a.fobos.tv^$third-party
 ||abc-people.com/bann_
+||abcfilm.org^$third-party
 ||aceventik.com^$third-party
 ||active.interzet.ru/log.php?
 ||ad-words.ru/contextad/
@@ -594,7 +596,8 @@ p://lank*.ru/
 ||dietmake.ru^$third-party
 ||digisat.ru/*.gif
 ||dimpy.narod.ru^
-||direct.quasir.info
+||direct.quasir.info^
+||dirkino-traff.ru^$third-party
 ||dividend-bank.ru/img/$third-party
 ||dl2.ru/catalog.php?
 ||dload.net.ru/*.gif
@@ -821,7 +824,6 @@ p://lank*.ru/
 ||linkwm.ru^$third-party
 ||linon.ru/links*.php?
 ||lipcrus.biz^$third-party
-||list.ngs.ru/images/ngs/rating/rate_
 ||list.ru/img/buttons/
 ||listsites.ru^$third-party
 ||liveclix.net^$third-party
@@ -1574,6 +1576,7 @@ fcpug.ru###main > DIV[style]
 ||ferra.ru/include/*_advert_
 file-online.ru##NOINDEX > TABLE[style]
 filehippo.com##.ad
+finiz.ru##.topline
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
 ||fishki.net/*/ad/b/
 fontanka.ru##.ad
@@ -1631,30 +1634,22 @@ hmn.ru##A > IMG[width="240"]
 ||hotcharts.ru/img/*_700x150
 hwp.ru##[class^="promo"]
 hwp.ru##[class*="tbann"]
+||hwp.ru/images/mid/h-anons.
 
 ! I
-! tbd:bookmark
-idownloads.ru/content/666/
+||idownloads.ru/wp-content/uploads/
 ||ifolder.ru^$object
 ||ifolder.ru^*-brend.css
-ifolder.ru##.begun
-ifolder.ru###b-header-anchor-link
 ifreeapps.ru##.jvmod-pad.png > A[target="_blank"] > IMG
+ifreeapps.ru###jv-banner
 igromania.ru##.bannerplace
-igromania.ru##[style="padding: 2px 0px 2px 14px; vertical-align: top;"]
-igromania.ru##[style="width: 986px; height: 93px;"]
-imagereverb.com##IFRAMEo
-/images/mid/h-anons.$domain=hardwareportal.ru|hwp.ru
-imagebam.com###imageContainer + DIV[style]
+igromania.ru##DIV[id^="snb"][class^="full_block"]
 imagebam.com##[style*="width:"][style*="border:"][style*="background-color:"][style*="line-height:"][style*="text-align:"][style*="font-size:"][style*="margin:"][style*="padding-top:"][style*="padding-bottom:"]
-imagevenue.com##[id^="inter"]
-img.ngs.ru/*?pid*&link$object
+inedelya.ru##.top_banner
 inosmi.ru##.banners
-inspireme.ru##A[href*="/adrotate/adrotate-out.php?"]
-ipicture.ru##A[href="http://zula.ru/"]
+ipicture.ru##.zula
 ||irk.ru/img/*/ibr/
 itc.ua##.b240x350
-itnews.com.ua##TR + * > TD[bgcolor="#ebebeb"][style="height: 96px;"]:first-child
 ixbt.com##.banner
 ixbt.com##H4#nl_header
 forum.ixbt.com##.dostavka
@@ -1662,52 +1657,42 @@ forum.ixbt.com##TD[style="padding-right: 4px; width: 14%; max-width: 240px;"]
 ||forum.ixbt.com/$object
 ||rose.ixbt.com/banner/
 ||rose.ixbt.com/cgi-bin/
-izone.ru##NOINDEX TABLE[id^="table"][width="100%"]
-izvestia.ru##.liquid
-izvestia.ru##[style^="height: 300px; width: 150px;"]
-izvestia.ru##[style^="height: 60px; width: 468px;"]
-izvestia.ru##[style^="height: 90px; width: 1000px;"]
-job.ru##.tb_container
+izone.ru##NOINDEX TABLE[width="100%"]
+izvestia.ru###topBanner
+izvestia.ru##IFRAME[id^="snf"]
+
+! J
+
+! K
 ||kbp.com.ua/images/banners/
 keep4u.ru###r_bottom
 keep4u.ru###r_top
-keep4u.ru##[style="text-align: justify;"]
-keep4u.ru/imgs/iphone
-keep4u.ru##TABLE[bgcolor="#aaaaaa"] > TBODY > TR[bgcolor="#ffffff"]
-keep4u.ru##TD[width="255"] + TD[style="font-size: 7pt;"]
 kino-online.org##IMG[height="120"][width="600"]
-kinobaza.net##BODY > DIV[style="font-family: tahoma; padding-top: 4px;"]
-kinobaza.net##*[href^="http://kinobaza.net/ero"]
-kinobaza.net##TABLE DIV.story:last-child
-kinobaza.net##TD.rightside:last-child > DIV[style="padding-left: 6px; padding-top: 10px;"]
-kinobaza.net##*[width="600"] DIV
+kinobaza.net##A.red
+kinobaza.net##A[href="/out.php"]
+||kinobaza.net/babes/
 kinopoisk.ru###loadb
 kinopoisk.ru##.brand
-kinopoisk.ru##[style="width: 240px; height: 140px;"]
-kinopoisk.ru##[style="width: 240px; height: 400px;"]
 ||kinopoisk.ru/images/re/*.jpg?
-kleo.ru###color + TABLE
-||kolesa.kz/bs/*
-||kolesa.kz/f/bs/*
-kotomatrix.ru##NOINDEX > A[target="_blank"] > IMG
+||kleo.ru/ban/
+kolesa.kz##.layout.pipes
+kolesa.kz##.banner
+kolesa.kz##.board
+kolesa.kz##.layout.pipes
+||kolesa.kz/br-place/
 kp.by,kp.ru###banner-after-menu
 kp.by,kp.ru##.baner
 kp.by,kp.ru##.banner-middle
 kp.by,kp.ru##.uslot_banner
 ||advert.kp.ru^$object
-||krisha.kz*/bs/
+||krisha.kz^*/br/
 ||kronverkcinema.ru/*attachment.rpc
 @@||kronverkcinema.ru/*attachment.rpc*,
-||lazonik.com/bnrs/
 ||kukuzya.ru/bnrs/
-legalwarez.ru,soft-teleport.ru###dle-content > DIV > P[align="justify"][style="margin: 0pt 0px;"]
-legalwarez.ru,soft-teleport.ru###table4
-legalwarez.ru,soft-teleport.ru###table46
-legalwarez.ru,soft-teleport.ru###table6
-legalwarez.ru,soft-teleport.ru###table65
-lequroz.ru/$image
-||78.140.145.93/letitbit.
-levonevski.net/$object
+
+! L
+||levonevski.net^*100.swf
+! tbd:bookmark
 lifehacker.ru###banner-column
 lifehacker.ru##IMG[alt="Ads"]
 liveday.ru##.news > CENTER > A[target="_blank"] > IMG
@@ -1769,6 +1754,7 @@ newsru.com##[style="cursor: pointer;"][onclick^="window.open"]
 ngs.ru##.hcozffr
 ngs.ru##.nb
 ngs.ru###nbs-block
+ngs.ru##A.ieijetv
 nnm-club.ru##CENTER > TABLE[id^="mc_"]
 nnm-club.ru##[id^="x"]
 nnm-club.ru##.header IFRAME
