@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: X5RD0XZFRt3X84fSilpX7Q
+! Checksum: iOjFLMxVGwePRodjXzb9sw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -38,16 +38,12 @@
 @@||mb.vesti.ru/cgi-bin/iframe/vesti_fm$domain=vesti.ru
 ! Полезные баннеры на сайте альфабанке
 @@||ads.alfabank.ru^$domain=alfabank.ru
-! Некоторые интернет-провайдеры — их легче совсем разблокировать.
-@@||akado.ru^$document
-@@||megafon.ru^$document
-@@||netbynet.ru^$document
-@@||qwerty.ru^$document
 ! Прочие исключения (множественные срабатывания)
-@@||ozon.ru/graphics/subscribe/
+! @@||ozon.ru/graphics/subscribe/
 ! Исправление проблем возникших в результате работы EasyList
 @@||ads.ertelecom.ru^$domain=citydom.ru
-@@||cubeecraft.com/openx/
+@@||advert.akado.ru^
+@@||akado.ru/ai/adbanner/
 
 ! = Фильтры по регулярным выражениям ==========================================
 ! Cлишком короткая версия слова banner
@@ -215,7 +211,7 @@ _banner-$domain=~echo.msk.ru
 -banner-
 ! -banner/
 ! -banners
-/banner.
+/banner.$domain=~megafon.ru
 ! /banner_$domain=~allods.ru|~mail.ru|~onlime.ru|~playstation.com|~taxcom.ru
 /banner-$domain=~onlime.ru|~tcj.com
 ! /banner/*$domain=~mail.ru|~mts.ru|~playground.ru|~rzd.ru|~saint-petersburg.ru
@@ -235,7 +231,7 @@ _banner-$domain=~echo.msk.ru
 /img/bn/*
 /imgads/*
 /partner.$domain=~8088.ru|~partner.microsoft.com|~r01.ru|~yandex.ru
-/partners.$domain=~beeline.ru|~yandex.ru
+/partners.$domain=~beeline.ru|~qwerty.ru|~yandex.ru
 ! /partners/*
 /reklam/*
 _reklama
@@ -243,7 +239,7 @@ _reklama
 /reklama_
 !$domain=hardwareportal.ru|hwp.ru|panasonic.ru|rugrad.eu|azart.net.ua|gps-club.ru
 /upload/bx/*
-/upload/rk/*
+/upload/rk/*$domain=~qwerty.ru
 /vottbanner
 .ru/banners$domain=~citydom.ru|~webnames.ru
 .ua/banners
