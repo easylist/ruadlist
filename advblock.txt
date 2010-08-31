@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: SDM59797lbfnsb6s/4pqhg
+! Checksum: VnCjd8tkGFyRZMsB7EuenA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -46,12 +46,9 @@
 ! Прочие исключения (множественные срабатывания)
 @@||ankama.com^
 @@||cubeecraft.com^$document
-@@||citydom.ru^$document
 @@||ozon.ru/graphics/subscribe/
-
-! Временное
-! ||begun.ru^$~object_subrequest,third-party
-! ||flash.begun.ru^
+! Исправление проблем возникших в результате работы EasyList
+@@||ads.ertelecom.ru^$domain=citydom.ru
 
 ! = Фильтры по регулярным выражениям ==========================================
 ! Cлишком короткая версия слова banner
@@ -249,7 +246,7 @@ _reklama
 /upload/bx/*
 /upload/rk/*
 /vottbanner
-.ru/banners$domain=~webnames.ru
+.ru/banners$domain=~citydom.ru|~webnames.ru
 .ua/banners
 
 ! = Популярные баннеры по ключевым словам =====================================
