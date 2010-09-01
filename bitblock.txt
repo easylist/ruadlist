@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: mXsL9P5cevS9HJUfsTcQKQ
+! Checksum: XBPe+NWQ1KjXhROY5vSGfA
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -16,8 +16,10 @@
 != Тут не все правила - см. подписку фанбоя ниже.  
 
 !------------ Facebook --------------------------------------------------------
+~facebook.com###facebook
 ||facebook.com/plugins/comments.php?$third-party
 ||facebook.com/extern/login_status.php?$third-party
+||facebook.com/js/*/FeatureLoader.js$third-party
 ! http://static.ak.fbcdn.net/rsrc.php/z5R48/hash/ejut8v2y.gif на 3dnews.ru
 ||fbcdn.net^$third-party,domain=~facebook.com
 
