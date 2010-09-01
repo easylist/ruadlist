@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: jMthHMPg1qbdstSd2IzocA
+! Checksum: mXsL9P5cevS9HJUfsTcQKQ
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -200,31 +200,42 @@ _userbar$image
 
 !------------------------------------------------------------------------------
 
+[Adblock Plus 1.1]
 ! Fanboy's Annoyance list Addon 
-! Updated: 18 Aug 2010
-! This list expires after 5 days
+! Updated: 2 Sep 2010
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked ads or problems by email or in our forums
 ! Email: mp3geek@gmail.com Project homepage: http://fanboy.co.nz/adblock
 !
+/bloglines.gif
 /getnetworkwidget
 /givememydigg.
+/myyahoo.gif
+/newsgator.gif
 /plugins/sociable/*
+/sendtofriend.gif
+/upprev_js.
 /widget/digg/*
 ||addthis.com^$third-party
+||api.flattr.com^$third-party
 ||buttons.googlesyndication.com^$third-party
+||c.liveintent.com^$third-party,subdocument
 ||cdn.stumble-upon.com^$third-party
-||cim.meebo.com^$third-party
+||cim.meebo.com^
 ||complex.com/toolbar/
-||digg.com/tools/diggthis$third-party
-||digg.com/tools/services$third-party
-||digg.com/tools/widgetjs$third-party
+||digg.com^$third-party
+||digsby.com^$third-party
 ||feeds*.feedburner.com^$third-party,image
 ||feeds.delicious.com^$third-party
+||images.hitwise.co.uk^$third-party
+||images.slashdot.org^$third-party
+||liveintent.com^$third-party
 ||l.yimg.com^*/img/badge
-||reddit.com/domain/$third-party
-||reddit.com/static/button/$third-party
+||linksalpha.com^$third-party
+||reddit.com^$third-party
 ||sharethis.com^$third-party
+||socialmediabuttons.com^$third-party
+||static.addtoany.com^$third-party
 ||stumbleupon.com/badge/$third-party
 ||tumblr.com/dashboard/
 ||widgets.digg.com^$third-party,script,image,stylesheet
@@ -235,15 +246,20 @@ _userbar$image
 ###ck_facebook
 ###facebook-fanbox
 ###facebook-module
+###fb-activity
 ###fb-fan-box
 ###fb-rec-box
 ###fb_container
-###index-fb-likebox
-##.facebook-sharer
+###fblike
 ###fbLikebox
+###index-fb-likebox
+###share-facebook
+##.facebook-sharer
+##.facebookRecentActivity
 ##.fb.icon
 ##.fb_content_loader
 ##.fb_iframe_widget
+##.fb_like_cont
 ##.fb_share_button
 ##.fb_share_size_Small
 ##.FBConnectButton_Small
@@ -256,6 +272,8 @@ _userbar$image
 ##a[href="http://www.facebook.com/sharer.php"]
 ##a[title="Follow me on  Facebook"]
 ##a[title="Post this story to Facebook"]
+/facebook_button
+/FacebookFanWidgetFrame.
 /js/FB.Share$third-party
 /plugins/wp-facebookconnect/*
 ||badge.facebook.com^$third-party
@@ -271,6 +289,7 @@ _userbar$image
 ||facebook.com/widgets/fan.php?$third-party
 ||facebook.com/widgets/like.php?$third-party
 ||facebook.com/widgets/recommendations.php?$third-party
+||widgets.fbshare.me^$third-party
 ~facebook.com###fb_header
 !
 !---------- Twitter Widgets ----------
@@ -284,18 +303,20 @@ _userbar$image
 ###twitter_module
 ###twitterContainer
 ###twitterfeed
+##.long_post_share_twiiter
 ##.post_share_twitter
 ##.tweetmeme-sharer
 ##.twitter-share-button
 ##.twitter.icon
 ##.twitterBadge
-##.long_post_share_twiiter
 ##[alt="Follow us to Twitter.com"]
 ##[alt="Share on Twitter"]
 ##[title="Follow me on Twitter"]
 ##[title="Follow On Twitter"]
 ##[title="Follow us on Twitter"]
 ##[title="Post this story to Twitter"]
+/Twitter_button
+/twitterbutton-
 ||platform*.twitter.com^$third-party
 ||topsy.com^$third-party
 ||twackle.com^$third-party
@@ -307,26 +328,31 @@ _userbar$image
 !
 !---------- Google/Buzz Widgets -----------
 !
+###fc-friendbar-outer
+###share-buzz
 ##.buzz-counter-long
 ##.google-buzz-button
 ##.post_share_buzz
 ##a[title="Share on Google Buzz"]
+/addtogoogle.
 ||google.com^*/friendconnect.js
 !
 !---------- Digg Widgets -----------
 !
 ###ck_digg
 ###digg-widget-container
+###share-digg
+##.dd_ajax_float
 ##.DiggThisButton
-##.post_share_dig
 ##.long_post_share_digg
+##.post_share_dig
 ##[alt="Share on Digg"]
 !
 !---------- Stumble Widgets -----------
 !
-##img[alt="Follow us to StumbleUpon.com"]
-##[alt="Share on StumbleUpon"]
 ##.stumblebutton
+##[alt="Share on StumbleUpon"]
+##img[alt="Follow us to StumbleUpon.com"]
 !
 !---------- Whitelists -----------
 !
@@ -334,7 +360,6 @@ _userbar$image
 !
 !---------- Hiding Rules ----------
 !
-###.fdbk_tab_right
 ###badge_reddit
 ###blog-share-widget
 ###ck_sharethis
@@ -342,27 +367,35 @@ _userbar$image
 ###ctl00_mainContent_lblSharingLink
 ###fdbk_tab
 ###networkedblogs_nwidget_container
+###sexy-bookmarks
 ###share-tools
 ###share-tools-title
+###share_div_float
 ###sharebar
 ###ShareSidebar
+###social-toolbar
 ###social_bookmarks
+###socialdock
 ###SocialIcons
 ###socialLinks
+###socialMediaNav
 ###socialSidebar
-###social-toolbar
 ##.addthis-button
 ##.addthis_button
 ##.addthisContainer
 ##.adsenseDole
 ##.badges_v2
 ##.beauty-bookmarks
+##.fdbk_tab_right
+##.flattr-button
 ##.gf_social
 ##.idc-share
 ##.post_share_icons
 ##.post_share_stumble
 ##.share-badges
 ##.share_icons
+##.sharebuttons
+##.shareButtonsHolder
 ##.sharepost
 ##.shareThisShare
 ##.shr-bookmarks
@@ -370,25 +403,31 @@ _userbar$image
 ##.social-links-title
 ##.social_bookmark
 ##.stico_default
-##.yahooBuzzBadge
 ##.story_tools_social_buttons_top
-##a[title="Get Feed RSS"]
-##a[title="Save On Delicious"]
-##a[title="Subscribe on FriendFeed"]
-##img[alt="Follow us to Youtube.com"]
-##[alt="Share on Reddit"]
+##.yahooBuzzBadge
 ##[alt="Share on Delicious"]
 ##[alt="Share on MySpace"]
+##[alt="Share on Reddit"]
+##a[title="Get Feed RSS"]
+##a[title="Save On Delicious"]
+##A[title="Subscribe by Email"]
+##A[title="Subscribe by RSS"]
+##A[title="Subscribe by Twitter"]
+##a[title="Subscribe on FriendFeed"]
+##img[alt="Follow us to Youtube.com"]
 abcnews.go.com###rsslisting
-abcnews.go.com###socialdock
 abcnews.go.com###socialtoolkit
 academicearth.org###bottom_toolbar
 academicearth.org###kampylink
 aceshowbiz.com##.theticker
+afterdawn.com###feedbackTab
+afterdawn.com##.add_buttons
+afterdawn.com##[title="Follow AfterDawn at Facebook"]
 alternet.org##.redditit
 anandtech.com##.follow
 animatedexplanations.com###linkShare
 animatedexplanations.com##.sharinglink
+arstechnica.com###fb
 arstechnica.com###links-bar
 ask.com###promoTray
 associatedcontent.com##.mini_ct_inner
@@ -404,8 +443,6 @@ caring.com###awesomer-bar
 cbsnews.com###cbsSMPB
 cnet.com###cnetToolbarWrap
 cnet.com###shareTags
-cnet.com##.about
-cnet.com##.aboutHed
 cnet.com##.frontDoorPromo
 cnet.com##.share
 cnn.com###fb-recommend
@@ -420,6 +457,7 @@ cracked.com###fb_sliver
 cracked.com###persistent-share
 cracked.com###togo_module
 cracked.com##.share_buttons_col_1
+digg.com###feedback-bar
 digitalspy.co.uk###topunit
 digitizor.com###upprev_box
 dumblittleman.com###advertise-now
@@ -430,10 +468,12 @@ epicurious.com###luxury_link_promo
 factcheck.org##.connections
 feedmyapp.com###facebook
 feedmyapp.com###twitter
+filehippo.com##.box-two-feature
 forum.xda-developers.com###topcontainbox
 forvo.com##.facebook
 forvo.com##.twitter
 freesfx.co.uk###popout
+funnyordie.com###funbar_wrapper
 gizmodo.com##.welcome_form
 guardian.co.uk##.share-links
 guidingtech.com###text-3
@@ -444,9 +484,13 @@ hollywire.com###post-social
 hollywire.com###social
 howstuffworks.com###smToolBar
 howstuffworks.com###smToolBarSpacer
+huffingtonpost.com##.apps-feeds
+huffingtonpost.com##.chicklets_box_outter_v05
 imgur.com###awesome-bar
 kiplinger.com###targeted-promo
 life.com###mylifeToolbarWrapper
+macnews.de###marktplatz
+makeuseof.com##.new_form
 makeuseof.com##.sub
 mashable.com##.jobs
 mashable.com##.post_share
@@ -460,6 +504,7 @@ micgadget.com###scdiv
 msn.com##.toolbar
 msnbc.msn.com###scrollPins
 msnbc.msn.com##.appopen
+mtv.com##.share
 my.yahoo.com###nux-container
 mylot.com###facebox
 mylot.com###facebox_overlay
@@ -478,7 +523,13 @@ nzherald.co.nz##.msn
 nzherald.co.nz##.share
 nzherald.co.nz##.twitter
 okcupid.com###share_popout
+pcmag.com##.about-ads
+pcmag.com##.digg-widget
+pcmag.com##.shareModule
+pcmag.com##.subscribe-panel
+pcworld.com###connect
 pcworld.com###subscribeMWForm
+pcworld.com##.fb-login
 people.com###flyingrecirc
 people.com##.cmad
 pressandjournal.co.uk###preamble
@@ -487,7 +538,7 @@ reuters.com###trackTabs
 sdnn.com###social-toolbox
 slate.com###fbog_module
 slate.com###slatest_twitter
-space.com###newsletterPop
+space.com###newsletterPo
 starpulse.com###ad-row
 stuff.co.nz###sharebox
 stuff.co.nz##.share_icon
@@ -514,6 +565,7 @@ tvsquad.com##.addthis
 upi.com###b_tbr_c
 uproxx.com###block-728
 vgchartz.com###social_icons
+wireupdate.com###icons
 zap2it.com###twitter
 ~digg.com###digg-widget
 ~digg.com###digg_module
