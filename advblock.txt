@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: +djA65AZk8kTn9TjCukZ3g
+! Checksum: B97Fyr950drmJ0W2nRNg4w
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -484,7 +484,6 @@ p://lank*.ru/
 ||b2bcontext.ru^$third-party
 ||b2bvideo.ru^$third-party
 ||b81x63nc.ws.md^$third-party
-||banners.newsru.com^$third-party
 ||bannuncio.com^$third-party
 ||bans.bride.ru^$third-party
 ||bantex.ru^$third-party
@@ -1717,7 +1716,8 @@ new-films.biz###dle-content > NOINDEX
 newestsoft.com##A[href="http://reviewsoft.ru/"]
 newestsoft.com##.mk_body_bg > TABLE[bgcolor="#ffffff"][style="border: 1px solid rgb(193, 209, 253);"]
 newestsoft.com/images/*x90$image
-newsru.com##[style="cursor: pointer;"][onclick^="window.open"]
+newsru.com###newsru_russia_240x400
+||banners.newsru.com^$third-party
 ngs.ru##.hcozffr
 ngs.ru##.nb
 ngs.ru###nbs-block
