@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: tibgBnwoUIIcVXz3KatHdw
+! Checksum: eN/nHK+UCD5MqH16uEUwdw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -194,46 +194,28 @@ _160x240
 
 ! = Баннеры ===================================================================
 ban_click
-! ^bannerid=$domain=~skylink.ru
-! ?banner=
-! .banner.
-! _banner.$domain=~mozilla.org
-! _banner_
 _banner-$domain=~echo.msk.ru
-! _banner/$~object_subrequest,~stylesheet,domain=~kp.by|~kp.ru
-! _banners
-! -banner.$domain=~mozilla.org
-! -banner_
 -banner-
-! -banner/
-! -banners
 /banner.$domain=~megafon.ru
-! /banner_$domain=~allods.ru|~mail.ru|~onlime.ru|~playstation.com|~taxcom.ru
 /banner-$domain=~onlime.ru|~tcj.com
-! /banner/*$domain=~mail.ru|~mts.ru|~playground.ru|~rzd.ru|~saint-petersburg.ru
 
 -advert.
+/adv/massage/*
 /afisha_banner/*
 /cgi-bin/banners/*
 /cgi-bin/iframe/*
 /images/adv/*
 /images/ban/*
 /images/bn/*
-! /images/bnnr.
-! /images/bnnr_
-! /images/bnnr-
-! /images/bnnr/*$domain=~kinopoisk.ru
 /images/rek/*
 /img/bn/*
 /imgads/*
 /partner.$domain=~8088.ru|~partner.microsoft.com|~r01.ru|~yandex.ru
 /partners.$domain=~beeline.ru|~qwerty.ru|~yandex.ru
-! /partners/*
 /reklam/*
 _reklama
 -reklama
 /reklama_
-!$domain=hardwareportal.ru|hwp.ru|panasonic.ru|rugrad.eu|azart.net.ua|gps-club.ru
 /upload/bx/*
 /upload/rk/*$domain=~qwerty.ru
 /vottbanner
@@ -252,7 +234,6 @@ sexvodnokalssnikah
 .ru/_scripts/themes/sb.js|
 /pseudocounter.js
 /ad*.js?link
-/barmaglot.js|
 /begun.js
 /block.js|$third-party
 ! Is it still alive?
@@ -706,6 +687,7 @@ p://lank*.ru/
 ||hitlist.ru^$third-party
 ||hitter.ru^$third-party
 ||holder.com.ua^$third-party
+||host4media.com^$third-party
 ||hotels24.ua^$third-party
 ||hotinga.ru^$third-party
 ||hotline.ua/img/hl/gm
