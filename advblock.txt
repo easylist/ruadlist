@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 8ZoRu1WjMD2djHsRrJidpw
+! Checksum: KuZG2UkL4m+3gDV+DWge4Q
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -41,7 +41,6 @@
 ! Прочие исключения (множественные срабатывания)
 ! @@||ozon.ru/graphics/subscribe/
 ! Исправление проблем возникших в результате работы EasyList
-@@||ad.adriver.ru/cgi-bin/$domain=kinopoisk.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
 @@||akado.ru/ai/adbanner/$domain=akado.ru
@@ -324,8 +323,12 @@ p://lank*.ru/
 ||195.82.146.52^
 ||212.150.34.114^
 ||213.199.175.155^
+
+! adriver
+||81.176.235.164^
 ||217.16.18.$~object_subrequest
 ||217.16.28.$~object_subrequest
+/images/*/*/0/script.js?
 
 ||012345.ru/upload/
 ||1-traf.net^$third-party
@@ -1641,6 +1644,8 @@ kinopoisk.ru###loadb
 kinopoisk.ru##.brand
 kinopoisk.ru##.line_brand
 ||kinopoisk.ru/images/re/*.*?
+@@/images/*/*/0/script.js?$domain=kinopoisk.ru
+@@||ad.adriver.ru/cgi-bin/$domain=kinopoisk.ru
 ||kleo.ru/ban/
 kolesa.kz##.layout.pipes
 kolesa.kz##.banner
