@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: kqUtmzCZzHGmPWHJjfYmcA
+! Checksum: taizaKgHo+OyB0kFvyszYQ
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -26,6 +26,9 @@
 !------------ Google ----------------------------------------------------------
 ||gmodules.com/ig/images/plus_google.gif
 ||google.com/buzz/api/$third-party
+
+!------------ LiveJournal -----------------------------------------------------
+/ljthis?
 
 !------------ RuTvit ----------------------------------------------------------
 ||rutvit.ru/js/share.js$third-party
@@ -65,13 +68,16 @@
 != Раздражающий мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) ====
 21region.org##.logo
 ag.ru##.share_button
+championat.ru##.livejournal
 delfi.ua##.sbookmarks
+deviantart.com##.deviation-share
 dpk.com.ua##.soc-box
 experts-exchange.com##.allZones,.vqpsdBlurredAnswers,.copyrightFrame,.footnoteNotice,#pageRight
 fanacmilan.com##CENTER > TABLE[height^="3"][style*="1px"]
 freakenergy.ru###footer > NOINDEX
 freakenergy.ru##.sidebar > DIV > NOINDEX
 fullgames.ru###main > NOINDEX
+game-monitor.com##.bookmark
 hwp.ru###container > DIV:first-child + DIV
 ifolder.ru###social-media
 imdb.com##.social_networking
@@ -84,7 +90,10 @@ rutracker.org###sidebar1
 topnews.ru###bottom
 topnews.ru##.addto
 ua-football.com##A[class^="icon_"][rel="nofollow"],A[class^="icon2_"]
+winreview.ru##.postmeta + NOINDEX
 ||allbest4free.ru/head.
+||cnews.ru/inc/images/feeds/
+||drugasmuga.com/images/bookmarks/
 ||echo.msk.ru/att/element-*-misc-*.gif
 ||experts-exchange.com^*/scripts/
 ||forumkiev.com/flesh/
