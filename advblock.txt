@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: +rUG/OsqvSgWRVWTMohi5A
+! Checksum: Dpc1VQn2zJ5gIq8Pnn3rUQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -228,6 +228,8 @@ sexvodnokalssnikah
 /ad*.js?link
 /begun.js
 /block.js|$third-party
+! rutor.org & opensharing.org - попап с рекламой вместо счётчика.
+/counter.js|$~third-party
 ! Is it still alive?
 /sun*_ajax.js|
 
@@ -1844,7 +1846,6 @@ russia.ru##.banner
 rustorka.com##DIV > *:nth-child(6) ~ H3
 rustorka.com##DIV > *:nth-child(6) ~ A > IMG
 rutor.org###toolbar
-||rutor.org/counter.js
 ||rutor.org/m/
 rutracker.org###bn-bot-wrap
 rutracker.org##TR#f-11:last-child
