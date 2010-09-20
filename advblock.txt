@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: hXI06ju1wB7jOsg1BjHVDQ
+! Checksum: SzQV1uc26JwLqeYNiaIZUA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1547,8 +1547,10 @@ dwg.ru##TD[background="../img/back22.gif"] > TABLE
 
 ! E
 emuparadise.org###framework > TBODY > TR:first-child
-epidemz.net##TD[background^="http://epikz.net/i/"]
-epidemz.net##P > A[target="_blank"]
+epidemz.net##A[href^="http://epidemz.net/"] + A[target="_blank"]
+epidemz.net##A[target="_blank"] > FONT[color="#CC0000"]
+epidemz.net##DIV > A[target="_blank"] > IMG
+epidemz.net##TD + TD + TD[width="135"]
 ||ex.ua/b/$~stylesheet
 exler.ru##[id^="Banner"]
 exnews.org##[class$="bbody"]
