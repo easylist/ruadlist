@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: zOoPgRWhJYQ2JSiPzW9lSw
+! Checksum: RJ5s65iTudJh4BBPWRoMpg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -92,60 +92,9 @@ _160x240
 ##.madv
 ##.surbis_banner
 ##.topbaner
-! ##[id*="textadv"],[id*="text-adv"],[id*="text_adv"]
-! ##[class*="textadv"],[class*="text-adv"],[class*="text_adv"]
-! ##A[href*=".8coins.net/"]
-! ##A[href*=".8test.ru/"],A[href*=".8testov.ru/"]
-! ##A[href*="adclick.php?"]
-! ##A[href*="adv_go.php?"]
-! ##A[href*="cachewww.onlinecashmethod.com/"][href*="?member="]
-! ##A[href*="click2go.ru/?id="]
-! ##A[href*=".erwap.ru/?"]
-! ##A[href*="filepost.ru?page="]
-! ##A[href*="fotocash.ru/?ref="]
-! ##A[href*="galaxymeet.ru/?code="]
-! ##A[href*="glamurhome.com/index.php?ref="]
-! ##A[href*="grand-casino.com/?"]
-! ##A[href^="http://kf-forex.ru/"][href*=".php?from="]
-! ##A[href^="http://qle.ru"]
-! ##A[href^="http://www.va-bank.com/?"]
-! ##A[href^="http://xklad.net"]
-! ##A[href*=".icq-spy.ru/"]
-! ##A[href*="kinotraff.ru/in.php?id="]
-! ##A[href*="marketgid.com"]
-! ##A[href*="nanoplast.ru/?pr="]
-! ##A[href*="new-popups.ru/"]
-! ~findbook.ru##A[href*="/?partner="]
-! ##A[href*="porno-foto.blogtur.com"]
-! ##A[href*="porno."][href*="?ref="]
-! ##A[href*="pornosklad.tv"]
-! ##A[href*="rusextest.com/?"]
-! ##A[href*="rushotgirls.com/?"]
-! ##A[href*="sexusblog.com"]
-! ##A[href*="start.fotostrana.ru"][href*="?ref_id="]
-! ##A[href*="taketest.ru/in.php?"]
-! ##A[href*="thepopsa.com/index.php?ref="]
-! ##A[href*="thetraffic.ru/in.cgi?"]
-! ##A[href*="trafmonster"]
-! ##A[href*="/topsites."]
-! ##A[href*="videoklass.ru/?ref="]
-! ##A[href*="visitweb.com"]
-! ##A[href*="vkontakterus.ru/?r="]
-! ##A[target="_blank"][href*="/adv.php?"]
-! ##A[target="_blank"][href*="gsmradar.ru"]
-! ##A[target="_blank"][href*="gsm-search.ru"]
-! ##A[target="_blank"][href*="smsproverka.ru"]
 ##BODY[onload="popupInit();"] > DIV#popUp
 ##[class^="snBody"]
-! ##[id$="_len_ai"]
-! ##[id*="adriver"]
-! ##[id^="ad3fun"]
-! ##[id^="adBara"]
 ##[id^="DIV_NNN_"]
-! ##[id^="novoteka"]
-! ##[id^="rdminfrm_"]
-! ##[id^="rnb_informer"]
-! ##[id^="rtn4p"]
 ! Скрываем рекламу на форумах, на myBB-движке
 ##.section > #tieser-bottom.container[align="center"]:first-child
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
@@ -1423,7 +1372,10 @@ top100.rambler.ru##.b-block2
 
 ! РБК
 cnews.ru###mag_banner
+cnews.ru###rian_iformer
+cnews.ru###small_partners_header
 cnews.ru##.banner_wrapp
+||zoom.cnews.ru^*/banners/
 rbc.ru,rbc.ua##.banner
 rbc.ru,rbc.ua##.contentBox > .tac
 rbc.ru,rbc.ua##IFRAME[width="234"][height="200"]
@@ -1431,7 +1383,6 @@ rbc.ru,rbc.ua##TABLE[bgcolor="#F7FAEF"]
 rbc.ru,rbc.ua,cnews.ru##[id^="flashrst_"]
 rbc.ru,rbc.ua,cnews.ru##[id^="flash_"]
 rbcnews.com##A[href^="http://banner.rbc.ru/"]
-rnd.cnews.ru##.rightCol > * > :not(#poll)
 ||pics.rbc.ru^*.swf?
 ||pics.rbc.ru^*/banners/
 ||pics.rbc.ru^*/img.gif?
@@ -1575,7 +1526,7 @@ fcpug.ru###main > DIV[style]
 file-online.ru##NOINDEX > TABLE[style]
 filehippo.com##.ad
 finiz.ru##.topline
-finmarket.ru##*#bbInformer231
+finmarket.ru###bbInformer231
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
 ||fishki.net/*/ad/b/
 fontanka.ru##.ad
@@ -2028,7 +1979,7 @@ yarportal.ru##TD.desc
 youtube.com##[class*="ad-div"]
 zadolba.li##.banner
 ||zaycev.net/m3_images/mirmaek/
-zaycev.net##*:not([nowrap="nowrap"]) > A[href^="http:"]:not([href*="zaycev.net"])
+zaycev.net##:not([nowrap="nowrap"]) > A[href^="http:"]:not([href*="zaycev.net"])
 zaycev.net##BODY > TABLE[height="100px"]:nth-of-type(1)
 zelenograd.ru##TABLE[cellpadding="1"] > TBODY > TR > TD[bgcolor="#CCBEB5"] > TABLE[bgcolor="white"]
 zelenograd.ru##NOINDEX > TABLE
@@ -2075,7 +2026,7 @@ vtomske.ru##[style*="width: 310px"][style*="height: 71px"]
 vtomske.ru##[style*="width: 460px"][style*="height: 60px"]
 vtomske.ru##[style*="width: 468px"][style*="height: 60px"]
 vtomske.ru##[style*="width: 600px"][style*="height: 70px"]
-vtomske.ru##[style="padding-top: 5px;"] *
+vtomske.ru##[style="padding-top: 5px;"] > *
 ||b.vtomske.ru^
 ||kompstar.tomsk.ru/ItemForBanner.
 ||nirvana.tomsk.ru/pic/kartinki/
