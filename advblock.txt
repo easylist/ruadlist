@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 8NhqArhmgukc+i/KdwOzCw
+! Checksum: 70Fxv5ndEUzeJy2lh2f1TA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -405,6 +405,8 @@ p://lank*.ru/
 ||b2bcontext.ru^$third-party
 ||b2bvideo.ru^$third-party
 ||b81x63nc.ws.md^$third-party
+||banners.newshost.net^
+||banners.newsru.com^
 ||bannuncio.com^$third-party
 ||bans.bride.ru^$third-party
 ||bantex.ru^$third-party
@@ -1688,33 +1690,30 @@ muzoff.ru###ibp
 ||mywed.ru/bnr/
 
 ! N
-! tbd:bookmark
 nashkiev.ua##.block-adv
-nashkiev.ua##.sponsorsp
 ||nashkiev.ua/style/b/
-||nashkiev.ua/style/u/banners/
 new-films.biz###dle-content > NOINDEX
 newcars.ua##DIV[style*="/images/topb_bg.gif"]:first-child
 newcars.ua###banner_media
 newcars.ua###banner_media + .noprint
 ||newcars.ua^*/bn/teaser.
-newestsoft.com##A[href="http://reviewsoft.ru/"]
-newestsoft.com##.mk_body_bg > TABLE[bgcolor="#ffffff"][style="border: 1px solid rgb(193, 209, 253);"]
-newestsoft.com/images/*x90$image
-newsru.com###newsru_russia_240x400
-||banners.newsru.com^$third-party
-ngs.ru##.hcozffr
+newestsoft.com##.main_r
+newestsoft.com##CENTER > A[target="_blank"] > IMG
+ngs.ru##A.encly
+ngs.ru##A[target="_blank"] > IMG[height="200"][width="200"]
+ngs.ru##.block_adv
+ngs.ru##[id^="banner"]
+ngs.ru##.logo-banners
 ngs.ru##.nb
 ngs.ru###nbs-block
-ngs.ru##A.ieijetv
 nnm-club.ru##CENTER > TABLE[id^="mc_"]
-nnm-club.ru##[id^="x"]
-nnm-club.ru##.header IFRAME
+nnm-club.ru##[id^="x"] > IFRAME
 nnm.ru###branding_link
 nnm.ru##[class*="banner"]
 nnm.ru##[id*="banner"]
 nnm.ru###footer + * + #links
 ||nnm.ru^*/astrum/
+! tbd:bookmark
 ||nn.ru/data/nnbs/
 novafilm.tv##.content .right > :nth-child(-n+7)
 ||shop.novafilm.tv^
