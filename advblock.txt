@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: u8HezSJVki+/nHW9rwQpUg
+! Checksum: vekhiiJruIvIU/WBtXk7+A
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -29,13 +29,7 @@
 @@||audio-reclama.
 !:: .tbn.ru/
 @@||auth.tbn.ru/
-! Мини-превью сайтов по их доменам в конце адреса
-@@||similarsites.com/thumbnail/
-! Множественные срабатывания на сайте vesti.ru.
-@@||mb.vesti.ru/css/$stylesheet,domain=vesti.ru
-@@||mb.vesti.ru/cgi-bin/banner/$domain=vesti.ru
-@@||mb.vesti.ru/cgi-bin/iframe/vesti_fm$domain=vesti.ru
-! Полезные баннеры на сайте альфабанке
+! Полезные баннеры на сайте альфабанка
 @@||ads.alfabank.ru^$domain=alfabank.ru
 ! Прочие исключения (множественные срабатывания)
 ! @@||ozon.ru/graphics/subscribe/
@@ -1498,6 +1492,7 @@ dwg.ru##TD[background="../img/back22.gif"] > TABLE
 ||dwg.ru/img/*$object
 
 ! E
+||echo.msk.ru^*-misc-banner
 emuparadise.org###framework > TBODY > TR:first-child
 epidemz.net###cyberinfrm_18
 epidemz.net##A[href^="http://epidemz.net/"] + A[target="_blank"]
@@ -1672,25 +1667,27 @@ maulnet.ru##CENTER > STRONG
 ||megafon.ru/f/banner/
 mobbit.info###content > CENTER
 mobiledevice.ru##NOFOLLOW
-! tbd:bookmark
-moikrug.ru##.y5.y5_nf.y5_vertical.snap_noshots
-||moto.kiev.ua/users/diez/
+||moto.kiev.ua/ads_banners/
+||moto.kiev.ua/forum/banners/
 ||motonews.ru/ad/
 mozilla-russia.org##A[href="http://ru.viaden.com/"]
 mozilla-russia.org##[id$="Col_advC"]
 mozilla-russia.org###modex
 mozutil.mozilla-russia.org##.footer > SPAN > DIV[style="text-align: left;"] > DIV[style="text-align: right;"]
-mp3hall.net##A[target="_blank"] > IMG
-mskd.ru##CENTER > B > FONT[color="red"]
+mskd.ru##[id^="Teaser_Block"]
+mskd.ru##TABLE[width="600px"][align="center"]
 ||mskd.ru/img/*x*_
-mts.ru##.container:first-child > TABLE.grid.nop
-mts.ru##.visual_container.red:last-child
 ||multitran.ru/ban/
 musicfond.com##.NavItems>.InitaMenu
 musicfond.com##.SearchForm>NOINDEX
 muzoff.ru##A[href^="http:"]:not([href*="muzoff.ru"])
 muzoff.ru###ibp
+||muzoff.ru/rek/
+||muzoff.ru/html/
 ||mywed.ru/bnr/
+
+! N
+! tbd:bookmark
 nashkiev.ua##.block-adv
 nashkiev.ua##.sponsorsp
 ||nashkiev.ua/style/b/
@@ -1733,7 +1730,7 @@ obnimau.ru##NOINDEX > CENTER > TABLE
 ochevidec.net##A[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejournal"]):not([href*="icq"])
 ochevidec.net##IFRAME
 ||odnoklassniki.ru/res/*/promo/*/
-old.echo.msk.ru/att/element-*-misc-banner
+
 onegadget.ru/$object
 opennet.ru###adv2
 opennet.ru###adv3

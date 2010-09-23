@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: wLqQzRCr19H0Nk1foBMbfA
+! Checksum: rOn8FsHIVEZ+MvFRkfaYzw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -35,10 +35,12 @@
 
 !------------ ВКонтакте -------------------------------------------------------
 ###vkshare0
+//vk.com^$domain=~vkontakte.ru,third-party
 ||vkontakte.ru/js/api/merchant.js$third-party
 ||vkontakte.ru/js/api/openapi.js$third-party
 ||vkontakte.ru/js/api/share.js$third-party
 ||vkontakte.ru/share.php$third-party
+||vkontakte.ru/widget_groups.php?$third-party
 
 !------------ Мой Мир ---------------------------------------------------------
 ##.mrc__share
@@ -48,6 +50,7 @@
 
 !------------ Одноклассники ---------------------------------------------------
 ##.odkl-klass
+||odnoklassniki.ru/share/$third-party
 
 !------------ Яndex -----------------------------------------------------------
 ||lenta.yandex.ru/i/addfeed.
@@ -79,12 +82,16 @@ dpk.com.ua##.soc-box
 experts-exchange.com##.allZones,.vqpsdBlurredAnswers,.copyrightFrame,.footnoteNotice,#pageRight
 f1news.ru###bookmarkBlock
 fanacmilan.com##CENTER > TABLE[height^="3"][style*="1px"]
+forum.f1news.ru###ed-0_toolbar_3
+forum.f1news.ru###fast-reply_toolbar_3
+forum.f1news.ru##*.topic_share.left
 forums.warforge.ru###logostrip
 forums.warforge.ru##BODY > DIV:nth-of-type(-n+12):not([id])
 freakenergy.ru###footer > NOINDEX
 freakenergy.ru##.sidebar > DIV > NOINDEX
 fullgames.ru###main > NOINDEX
 game-monitor.com##.bookmark
+gazeta.ru##.soc_icons
 hotline.ua##.soc-box
 hwp.ru###container > DIV:first-child + DIV
 ifolder.ru###social-media
@@ -92,6 +99,7 @@ imdb.com##.social_networking
 ipicture.ru###buton
 liveinternet.ru##.blLi_ppan
 mobiledevice.ru##.icons_bar_placeholder
+novafilm.tv###vk_groups
 novafilm.tv##.news-entry>.box-wide>NOINDEX
 podrobnosti.ua##.b-news-share
 rutracker.org###sidebar1
@@ -99,6 +107,7 @@ topnews.ru###bottom
 topnews.ru##.addto
 torrents.net.ua###smschatframe
 ua-football.com##A[class^="icon_"][rel="nofollow"],A[class^="icon2_"]
+vesti.ru##.blog_wrapper
 winreview.ru##.postmeta + NOINDEX
 ||allbest4free.ru/head.
 ||cnews.ru/inc/images/feeds/
@@ -199,12 +208,15 @@ _userbar$image
 ||mobilewallpapers.narod.ru/bar_
 ||moikroha.ru/lines
 ||mybaby.at.ua/bar/
+||mygamercard.net^$third-party
+||mygamercard.ru^$third-party
 ||nadietah.ru/llines/
 ||new-people.info/metric
 ||nick-name.ru^$third-party
 ||nomer.avtobeginner.ru^$third-party
 ||ourlines.ru^$third-party
 ||pchelenok.com/lineyki_dlya_forumov/
+||playstation.com/psn/profile/$third-party
 ||podpisi.net.ru^$third-party
 ||pomni.exe.by^$third-party
 ||pour-bientot.com^$third-party
