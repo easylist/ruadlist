@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 6AWD6FoxXdSb2PvbaykW7A
+! Checksum: RIF8oTbjYj/T9rMqdAi1Lg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -17,7 +17,7 @@
 
 !------------ Facebook --------------------------------------------------------
 ~facebook.com###facebook
-||facebook.com^$third-party,script
+||facebook.com^$third-party,script,frame
 ! http://static.ak.fbcdn.net/rsrc.php/z5R48/hash/ejut8v2y.gif на 3dnews.ru
 ||fbcdn.net^$third-party,domain=~facebook.com
 
@@ -34,7 +34,7 @@
 !------------ ВКонтакте -------------------------------------------------------
 ###vkshare0
 //vk.com^$domain=~vkontakte.ru,third-party
-||vkontakte.ru^$third-party,script
+||vkontakte.ru^$third-party,script,frame
 
 !------------ Мой Мир ---------------------------------------------------------
 ##.mrc__share
