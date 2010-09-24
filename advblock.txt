@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: /ByYfSDO61iVFIVnDZGs/Q
+! Checksum: 4G/BEeaa87+aPg0HBR/NqQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -39,7 +39,7 @@
 @@||akado.ru/ai/adbanner/$domain=akado.ru
 
 ! = Фильтры по регулярным выражениям ==========================================
-! Cлишком короткая версия слова banner
+! Слишком короткая версия слова banner
 /[/_-]baner[\d._-s/]/
 
 ! = Скрытие баннеров по указанному размеру картинки ===========================
@@ -250,6 +250,7 @@ sexvodnokalssnikah
 /warlog.
 /xap.ru/*$script
 ?begun=*&begun_referrer=*&begun_location=
+^clickunder=
 p://knal*.ru/$third-party
 p://lank*.ru/
 
@@ -1457,6 +1458,7 @@ bigtorrent.org###dle-info + NOINDEX
 
 ! C
 ||chance.ru/ban/
+cheat-master.ru##NOINDEX > CENTER > A[target="_blank"] > IMG
 citysmile.ru##NOFOLLOW > NOINDEX > A[target="_blank"]
 cn.ru##[class*="rx"][class*="neta"]
 ||comnews.ru/ds_comnews/files/$object
