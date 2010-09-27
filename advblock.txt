@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: HlNJNNYii/k+eYjh7lgijA
+! Checksum: Mo0vrKPvLx4BbgIjH34SUw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -15,8 +15,6 @@
 ! по адресу: http://forum.mozilla-russia.org/viewtopic.php?pid=409520
 
 ! = Исключения против ложных срабатываний =====================================
-! Никогда не блокируем иконки сайтов For what?! I forgot. ;)
-! @@/favicon.ico|$image
 ! Картинки в гуглопоиске всегда отображаем
 @@||google.*/images?
 !:: ||dclick.ru^$third-party
@@ -25,15 +23,10 @@
 @@||video.*.user.madbanner.ru^$object_subrequest
 !:: /partner.
 @@||partner.100suvenirov.ru/images/$image
-!:: -reclama
-@@||audio-reclama.
 !:: .tbn.ru/
 @@||auth.tbn.ru/
-! Полезные баннеры на сайте альфабанка
-@@||ads.alfabank.ru^$domain=alfabank.ru
-! Прочие исключения (множественные срабатывания)
-! @@||ozon.ru/graphics/subscribe/
 ! Исправление проблем возникших в результате работы EasyList
+@@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
 @@||akado.ru/ai/adbanner/$domain=akado.ru
@@ -1694,6 +1687,7 @@ muzoff.ru###ibp
 ||mywed.ru/bnr/
 
 ! N
+||nashgorod.ru/b/
 nashkiev.ua##.block-adv
 ||nashkiev.ua/style/b/
 new-films.biz###dle-content > NOINDEX
@@ -1917,6 +1911,7 @@ translate.ru##.bgn_content
 translate.ru###ctl00_SiteContent_trasnlform_OurPartners
 travelgps.com.ua##TD[style="width: 170px; vertical-align: top;"]
 ||trud.ru/ad/
+||tumix.ru/*/banners/
 ||turbo.az/banners/
 ||b.turbo.az^
 turbobit.net##IMG[width="490"][height="100"]
