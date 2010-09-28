@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: zjUkE2o96tc2k9jlSOBZ8w
+! Checksum: qcAlGSJEzg66f9HlTZ6CkA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -38,16 +38,9 @@
 ! = Скрытие баннеров по указанному размеру картинки ===========================
 ##[width="80"][height="15"]
 ##[width="120"][height="600"]
-! ##[width="160"][height="80"]
-! ##[width="160"][height="240"]
 ##[width="160"][height="600"]
-! ##[width="336"][height="280"]
-! ##[width="468"][height="15"]
 ##[width="468"][height="60"]
-! ##[width="480"][height="60"]
 ##[width="728"][height="90"]
-
-! ##[style*="width: 728px"][style*="height: 90px"]
 
 /120x140
 _160x240
@@ -122,10 +115,6 @@ _160x240
 
 ! = Баннеры ===================================================================
 ban_click
-! _banner-$domain=~echo.msk.ru
-! -banner-$domain=~omgubuntu.co.uk
-! /banner.$domain=~megafon.ru|~omgubuntu.co.uk
-! /banner-$domain=~omgubuntu.co.uk|~onlime.ru|~tcj.com
 
 -advert.
 /adv/massage/*
@@ -144,6 +133,9 @@ ban_click
 _reklama
 -reklama
 /reklama_
+/tizers/*
+/tizers.
+.tizers.
 /upload/bx/*
 /upload/rk/*$domain=~qwerty.ru
 /vottbanner
@@ -235,7 +227,6 @@ sexvodnokalssnikah
 /slatefp.asp
 /some-ad.php
 /splash/page_header/*
-/tizers/*
 /topadvert.
 /tx2.ru/*
 /uicp.ru/?bn=
@@ -429,6 +420,7 @@ p://lank*.ru/
 ||bn.ohah.ru^
 ||bn.orthodoxy.ru^
 ||bnr.volgocity.ru^
+||barbur.ru^$third-party
 ||bodyclick.net^$third-party
 ||boobzi.com^$third-party
 ||bookarchive.ru/img/filmplus/ban
@@ -617,6 +609,7 @@ p://lank*.ru/
 ||govazd.am/cgi-bin/pro.cgi
 ||gramer.freehostia.com/statistics/
 ||grand-masters.ru^$third-party
+||grand-masters.tru^$third-party
 ||grebibablo.com^$third-party
 ||gsmonitor.ru^$third-party
 ||gws.ru/gwscnt/?
@@ -769,8 +762,8 @@ p://lank*.ru/
 ||mediakadr.ru^$third-party
 ||medialand.$third-party
 ||medianaft.ru^$third-party
-||mediaportal.ru/$script
-||mediaportal.ru/images/*.gif
+||mediaportal.ru^$third-party
+||mediarich.us^$third-party
 ||mediarotator.ru^$third-party
 ||mediaua.com.ua/img/photo/th/
 ||megaban.com.ua^
@@ -1415,6 +1408,8 @@ yandex.ru,yandex.ua##.spec-adv
 ||2baksa.net/download/
 @@||2baksa.net/download/*/$image
 2krota.ru###dle-content > TABLE:first-child CENTER
+||2krota.ru/123/
+||2krota.ru/rekla/
 3dnews.ru###topBanners
 4pna.com##BODY > CENTER:nth-of-type(-n+2)
 5ka.su###girlsBar
