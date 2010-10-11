@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: xWpdQmmlCPFW603xF3FGxQ
+! Checksum: DoQ097ewql+dnhkqtjsavg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -87,6 +87,8 @@ _160x240
 ! FireFox 4 specific rules 
 ##DIV[onmouseout][onmouseover][style^="border:2px solid red;"]
 ##TABLE[style^="border:3px outset green;"]
+! Реклама в поиске для партнёров Google
+google.ru##DIV[align="left"] + TABLE[width="100%"][cellpadding="0"]
 
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 ! |http://ad0
@@ -1445,6 +1447,8 @@ apple-russia.ru##.bottom_adv
 apple-russia.ru##.lavr-banner
 ||apple-russia.ru/_banners/
 ||argumenti.ru/images/partners/
+! Реклама на auto.ru
+||neova.auto.ru^
 azart.net.ua##A[href="/adv.php"]
 
 ! B
@@ -1568,8 +1572,6 @@ gismeteo.com,gismeteo.lt,gismeteo.ru,gismeteo.ua###ad-top
 gismeteo.com,gismeteo.lt,gismeteo.ru,gismeteo.ua###logo
 gismeteo.ua###ad-rbkua
 ||gismeteo.*/rian.html|
-! Реклама в поиске для партнёров Google
-google.ru##DIV[align="left"] + TABLE[width="100%"][cellpadding="0"]
 
 ! H
 habrahabr.ru##.banner
