@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: xt1jMCYSUMwb/Cr3l7rhcA
+! Checksum: nT4tsdYQ+nIUJt0zSUbKpg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -15,19 +15,16 @@
 ! по адресу: http://forum.mozilla-russia.org/viewtopic.php?pid=409520
 
 ! = Исключения против ложных срабатываний =====================================
-! Исключение для межсайтовых запросов из Flash-роликов.
-! Часто приводило к блокировке видео на разных сайтах.
-@@/crossdomain.xml|$object_subrequest
 ! Картинки в гуглопоиске всегда отображаем
 @@||google.*/images?
+!:: ||dclick.ru^$third-party
+@@||dclick.ru/crossdomain.xml|
 !:: /cgi-bin/iframe/
 @@||video.*.user.madbanner.ru^$object_subrequest
 !:: /partner.
 @@||partner.100suvenirov.ru/images/$image
 !:: .tbn.ru/
 @@||auth.tbn.ru/
-! Блокировало воспроизведение видео на rutv.ru
-@@||yadro.ru/i/ad_in_video.swf$object_subrequest
 ! Исправление проблем возникших в результате работы EasyList
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
