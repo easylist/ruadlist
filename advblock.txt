@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: s/cPkSl+fKQjQ8QnEGRKfA
+! Checksum: 4u1cSyEwaLzEGhqTOS/KMA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1083,6 +1083,7 @@ p://lank*.ru/
 ||stopto.da.ru^
 ||studsss.da.ru^
 ||submitter.ru*/i.php
+||sugar-traff2.com^
 ||super.md/?col=
 ||superstyle.ru^$third-party
 ||supertop.ru^$third-party
@@ -1765,7 +1766,7 @@ opensharing.ru,opensharing.org##IMG[height="120"][width="240"]
 oper.ru##.banners
 oper.ru###onlinedengi
 ||oper.ru/data/rennabs/
-oplati.ru##TD[width="90"][style="float: right;"]
+oplati.ru##TD[width="90"]
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 ||ozon.ru/graphics/$object
@@ -1779,7 +1780,8 @@ pindosoff.net/images/
 pindosoff.net##TD.nav A[target="_blank"]
 ping.eu##.txt11
 pirat.ca##[id^="sidebar"] [class^="spacer_"] + DIV[align="left"] > DIV[align="left"] > [class^="spacer_"] + DIV[align="left"]
-pixshock.net##P[style="text-align: center;"]
+pixshock.net##CENTER > BR + CENTER
+pixshock.net##[src="http://mg.dt00.net/js/p/i/pixshock.net.i2.js"] + TABLE
 pochta.ru##.bottomadvert
 pochta.ru##.gamesBlock
 pochta.ru##.loveplanet
@@ -1813,9 +1815,7 @@ qwe.ru##BODY > TABLE > TBODY > TR > TD.default_menu TABLE[width="500"] DIV
 qwe.ru##BODY > TABLE > TBODY > TR > TD > DIV.border + * + * + * + * + * + * + * + DIV.border
 qwe.ru##.caption + DIV.bodytable > TABLE[width="100%"] TD
 qwe.ru##NOINDEX > A
-
 radikal.ru##[id^="left_ban"]
-||radikal.ru^$domain=imageshost.ru
 ||radikal.ru/STATIC/PLASTIC_MEDIA/$object
 ||rd2d.com/adv/
 ||regnum.ru/i/bn/
@@ -1854,8 +1854,11 @@ samlab.ws##OL#soft-new A[target="_blank"] > IMG
 ||securitylab.ru/bitrix/*240x400
 ||securitylab.ru/bitrix/*600x90_
 ||seti.ee/*reklaam/
+severodvinska.net###afishes_1
+severodvinska.net###forum_2
+severodvinska.net###foto_1
 ||severodvinska.net/clients/
-severodvinska.net##[style*="width: 868px;"][style*="height: 60px;"]
+||severodvinska.net/swf/
 sfw.org.ua##BODY > NOINDEX
 sfw.org.ua##CENTER > NOINDEX
 sfw.org.ua##TD.tab-links > NOINDEX
@@ -1906,7 +1909,6 @@ subscribe.ru##.banner640
 subscribe.ru##A[href*="link.subscribe.ru"]
 sudga.ru##TD.alt3
 
-tabulorasa.info##TD[style="padding: 10px;"] NOINDEX
 tapochek.net###sidebar1-wrap
 tapochek.net##.tCenter.pad_2 > DIV[align="center"]
 tapochek.net##A[target="_blank"] > IMG
@@ -1922,7 +1924,7 @@ terabit.biz###home_c TD#lcol:first-child
 theplace.ru##.t10
 theplace.ru##TD[class^="td_reklama_"]
 theplace.ru##TD.td_main > NOINDEX
-theplace.ru##[style="border: 1px dotted silver; padding: 5px; margin: 10px; font-size: 11px;"]
+theplace.ru##*[style*="dotted silver"]
 theplace.ru##A[href$="pregnancycalendar.ru"]
 ||theplace.ru/images/forma/
 ||thevista.ru/img/c_banners/*x
@@ -1939,7 +1941,6 @@ torrentino.ru##.promo-item
 translate.ru/App_Themes/Default/begLoad/
 translate.ru###b_adv
 translate.ru##[id^="TranslationAdvert"]
-travelgps.com.ua##TD[style="width: 170px; vertical-align: top;"]
 ||trud.ru/ad/
 ||tumix.ru/*/banners/
 ||turbo.az/banners/
@@ -1996,7 +1997,6 @@ world-art.ru/bipack/
 x-console.com##A[href*="=banner&"]:not([href*=".x-console.com%2Fmagazine"])
 x-console.com##[id*="banner"]
 x-console.com##[class*="banner"]
-x-console.com##[style*="width: 960px"][style*="height: 70px"]
 xmages.net###img_obj + .container_box
 ||xmages.net/msg.php
 x-torrents.ru##TD.reklam
@@ -2022,7 +2022,6 @@ zhmak.info##BODY > TABLE > TBODY > TR > TD[width="180"] + * + TD > *:not(.news)
 ||zhmak.info/giga-files/
 ||zhmak.info/$script
 @@||zhmak.info/engine/$script
-zippyshare.com##[style*="width: 328px; height: 276px;"]
 zoneofgames.ru$object
 zr.ru##.br
 ||zr.ru/scripts/swfobject
