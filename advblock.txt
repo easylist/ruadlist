@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: l78MqlZYsPJD1VT5fjqOiw
+! Checksum: Kvcawipt5cIh//iCTf6xbg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1728,23 +1728,25 @@ nnm.ru##[class*="banner"]
 nnm.ru##[id*="banner"]
 nnm.ru###footer + * + #links
 ||nnm.ru^*/astrum/
-! tbd:bookmark
 ||nn.ru/data/nnbs/
-novafilm.tv##.content .right > :nth-child(-n+7)
 ||shop.novafilm.tv^
-||x.novamedia.ru^
 beta.novoteka.ru##.outBlockVertAddLinks__
-nowa.cc##TD.mc_cars_row
+nowa.cc###mc_100x_90
+nowa.cc###usac
+nowa.cc##.mc_cars_row
+nowa.cc##[id^="Teaser_Block_"]
+||nowa.cc/download/
 ||nowa.cc/images/$subdocument
 npicture.net##A > IMG[src*="npicture.net/image-"]
 ||nya.sh/imgs/a/
-nyaatorrents.org##[class$="ad"]
+
+! O
+! tbd:bookmark
 ||obnimau.ru/img-ba/
 obnimau.ru##NOINDEX > CENTER > TABLE
 ochevidec.net##A[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejournal"]):not([href*="icq"])
 ochevidec.net##IFRAME
 ||odnoklassniki.ru/res/*/promo/*/
-
 onegadget.ru/$object
 opennet.ru###adv2
 opennet.ru###adv3
@@ -1765,6 +1767,7 @@ oplati.ru##TD[width="90"][style="float: right;"]
 ||ozon.ru/graphics/img_ban/
 ||ozon.ru/graphics/$object
 ||ozon.ru/PartnerTwinerNew.aspx
+
 ||pctuner.ru/plugins/bworks/files/
 pics.goods.turist.ru/turist.goods_pics/$domain=~turist.ru
 pindosoff.net##[class^="copyright"] > NOINDEX
@@ -1798,6 +1801,7 @@ maps.probki.net##[width="180"] > TBODY > TR:last-child
 ||probki.net/images$object
 prostopleer.com##.ad
 ||prostopleer.com/t.php?
+
 qiq.ru##A[rel="nofollow"]
 ||quasir.info/img/ret4/
 ||quasir.info/js.php?
@@ -1806,8 +1810,9 @@ qwe.ru##BODY > TABLE > TBODY > TR > TD.default_menu TABLE[width="500"] DIV
 qwe.ru##BODY > TABLE > TBODY > TR > TD > DIV.border + * + * + * + * + * + * + * + DIV.border
 qwe.ru##.caption + DIV.bodytable > TABLE[width="100%"] TD
 qwe.ru##NOINDEX > A
-||radikal.ru^$domain=imageshost.ru
+
 radikal.ru##[id^="left_ban"]
+||radikal.ru^$domain=imageshost.ru
 ||radikal.ru/STATIC/PLASTIC_MEDIA/$object
 ||rd2d.com/adv/
 ||regnum.ru/i/bn/
@@ -1830,6 +1835,7 @@ rutor.org###toolbar
 rutracker.org###bn-bot-wrap
 rutracker.org##TR#f-11:last-child
 ||static.rutracker.org/00
+
 ||saint-petersburg.ru/i/ban2/
 ||samforum.ws^$subdocument
 samlab.ws###banner-top
@@ -1896,6 +1902,7 @@ styanulo.ru##.banner
 subscribe.ru##.banner640
 subscribe.ru##A[href*="link.subscribe.ru"]
 sudga.ru##TD.alt3
+
 tabulorasa.info##TD[style="padding: 10px;"] NOINDEX
 tapochek.net###sidebar1-wrap
 tapochek.net##.tCenter.pad_2 > DIV[align="center"]
@@ -1936,6 +1943,7 @@ travelgps.com.ua##TD[style="width: 170px; vertical-align: top;"]
 ||b.turbo.az^
 turbobit.net##IMG[width="490"][height="100"]
 tutu.ru##TD.plink:first-child:last-child
+
 ua-football.com###rozetkadiv
 udaff.com##NOINDEX > A > IMG
 ||udaff.com/image/$object
@@ -1946,6 +1954,7 @@ uploder.ws##CENTER:last-child
 ||uploder.ws/$object
 uploder.ws/static/*0x
 usde.ru##A[href^="/engine/redirect2.php?url="]
+
 vedomosti.ru##.left_banner
 vedomosti.ru##.footer
 vedomosti.ru##.top_banners
@@ -1966,6 +1975,7 @@ vokrugsveta.ru##.right_column
 votkinsk.net###block-views-rotor-block_1
 ||votkinsk.net/images/vtv_images/
 vremenno.net##.sidebarBlock:first-child
+
 w3schools.com##.chapter ~ .chapter ~ *
 w3schools.com##[style*="width: 890px;"][style*="height: 94px;"]
 weather.ru.msn.com/msn_kp/
@@ -1979,6 +1989,7 @@ webplanet.ru##.marketnews
 webplanet.ru##IFRAME
 wiaderko.com###topbar
 world-art.ru/bipack/
+
 x-console.com##A[href*="=banner&"]:not([href*=".x-console.com%2Fmagazine"])
 x-console.com##[id*="banner"]
 x-console.com##[class*="banner"]
@@ -1987,12 +1998,14 @@ xmages.net###img_obj + .container_box
 ||xmages.net/msg.php
 x-torrents.ru##TD.reklam
 ||x-torrents.ru/xxx/
+
 ||yapfiles.com^$third-party
 yarportal.ru##[style$="height: 60px;"]
 yarportal.ru##TD.desc
 ||yarportal.ru/$image,background
 @@||yarportal.ru/*/$image
 youtube.com##[class*="ad-div"]
+
 zadolba.li##.banner
 ||zaycev.net/m3_images/mirmaek/
 zaycev.net##:not([nowrap="nowrap"]) > A[href^="http:"]:not([href*="zaycev.net"])
