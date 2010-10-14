@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 0QHgqBMn4Qal1zY2AAOqug
+! Checksum: l78MqlZYsPJD1VT5fjqOiw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -66,6 +66,7 @@ _160x240
 ###novem_billboard
 ###PopWin[onmousemove]
 ###radeant
+###rtn4p
 ###zhlobam_net_informer_console
 ##.adbckgrnd
 ##.bc_adv_container
@@ -254,6 +255,7 @@ p://lank*.ru/
 ||91.194.251.66^
 ||92.241.185.16/banner/
 ||188.72.225.106^
+||194.135.105.23^
 ||194.135.105.172^
 ||195.239.111.200^
 ||195.82.146.52^
@@ -1617,7 +1619,7 @@ itc.ua##.b240x350
 ixbt.com##.banner
 ixbt.com##H4#nl_header
 forum.ixbt.com##.dostavka
-forum.ixbt.com##TD[style="padding-right: 4px; width: 14%; max-width: 240px;"]
+forum.ixbt.com##.top_ad2
 ||forum.ixbt.com/$object
 ||rose.ixbt.com/banner/
 ||rose.ixbt.com/cgi-bin/
@@ -1830,20 +1832,16 @@ rutracker.org##TR#f-11:last-child
 ||static.rutracker.org/00
 ||saint-petersburg.ru/i/ban2/
 ||samforum.ws^$subdocument
-samlab.ws###left > DIV:nth-child(n+3)
+samlab.ws###banner-top
 samlab.ws###left + #right
+samlab.ws###left > DIV:nth-child(n+3)
 samlab.ws##.main > DIV:not(.about):first-child
 samlab.ws##.main > TABLE
-samlab.ws###banner-top
-samlab.ws##LI.soft-day:not(:first-child) > DIV.box
+samlab.ws##.soft-day:not(:first-child) > .box
 samlab.ws##OL#soft-new A[target="_blank"] > IMG
-samlab.ws##[style="width: 480px; height: 160px;"]
 ||samlab.ws/file/
 ||samlab.ws/img/$object
 ||scriptiks.ru^$object
-scteam.ru##A[target="blank"] > SPAN
-scteam.ru##TD[valign="top"] > BR + * + * + * + * + * + TABLE[width="100%"] > TBODY > TR:first-child > TD[style="border-left: 1px solid rgb(249, 170, 49); border-right: 1px solid rgb(249, 170, 49); border-bottom: 1px solid rgb(249, 170, 49); padding: 5px;"]:first-child
-scteam.ru##TD[width="185"][valign="top"]:last-child > TABLE:first-child + * + * + * + * + TABLE[width="100%"]
 ||securitylab.ru/bitrix/*240x400
 ||securitylab.ru/bitrix/*600x90_
 ||seti.ee/*reklaam/
@@ -1855,8 +1853,9 @@ sfw.org.ua##TD.tab-links > NOINDEX
 sfw.org.ua##TR:first-child + TR > TD[valign="top"] > TABLE:first-child + * + * + TABLE
 ||sibbanks.ru/img/all/b
 ||sibbanks.ru/img/header/ear
-sibmail.com##[style*="width: 125px;"][style*="height: 125px;"]
-sibmail.com##[style*="width: 160px;"][style*="height: 250px;"]
+sibmail.com###ll_slot_3 + * + DIV[style*="160px;"]
+sibmail.com##.gray > CENTER > DIV[style*="125px;"]
+sibmail.com##CENTER > DIV[style*="200px;"]
 sitehistory.ru##NOINDEX A
 slo.ru##[class^="adv_"]
 slo.ru##IMG[width="200"][height="300"]
@@ -1970,7 +1969,6 @@ vremenno.net##.sidebarBlock:first-child
 w3schools.com##.chapter ~ .chapter ~ *
 w3schools.com##[style*="width: 890px;"][style*="height: 94px;"]
 weather.ru.msn.com/msn_kp/
-webfile.ru##TD[style$="width: 200px;"]:first-child
 ||webfile.ru/*wiw
 webpark.ru###Experts
 webpark.ru##.kontent A[target^="_blank"][href^="http:"]:not([href*="webpark.ru"]) IMG
