@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: R1kATWOL0IYRbyeJNxM8lQ
+! Checksum: UYuz1Y2P9PgR1mkXmyK3bA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -110,6 +110,8 @@ ban_click
 /adv/banners/*
 /adv/massage/*
 /afisha_banner/*
+! Заметил, что анимированные партнёрские картиночки 88х31 часто так называются.
+/banner.gif|
 /cgi-bin/banners/*
 /cgi-bin/iframe/*
 /images/adv/*
@@ -691,6 +693,7 @@ p://lank*.ru/
 ||kleo.ru/cgi-bin/
 ||klick.net.ua/show.php?
 ||klickmedia.ru^$third-party
+||kliklink.ru^$third-party
 ||kmindex.ru^$third-party
 ||knstats.com^$third-party
 ||kolobok.us/button/
@@ -1541,6 +1544,9 @@ fenzin.org##TD[align="center"] > .leftmenu-text
 ||ferra.ru/include/*_advert_
 file-online.ru##NOINDEX > TABLE[style]
 filehippo.com##.ad
+filmix.net###body #rightcol
+filmix.net##.banner
+||filmix.net/pl/*?path=
 finiz.ru##.topline
 finmarket.ru###bbInformer231
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
