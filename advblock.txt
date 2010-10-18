@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: AifOU1QQIyg8dQDHc+MW1g
+! Checksum: lAVfCtwEGYy8x26Ja+FtOw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -78,6 +78,7 @@ _160x240
 ##BODY[onload="popupInit();"] > DIV#popUp
 ##[class^="snBody"]
 ##[id^="DIV_NNN_"]
+##[id^="Teaser_Block"]
 ! Скрываем рекламу на форумах, на myBB-движке
 ##.section > #tieser-bottom.container[align="center"]:first-child
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
@@ -94,23 +95,7 @@ _160x240
 google.ru##DIV[align="left"] + TABLE[width="100%"][cellpadding="0"]
 
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
-! |http://ad0
-! |http://ad1
-! |http://ad2
-! |http://ad3
-! |http://ad4
-! |http://ad5
-! |http://ad6
-! |http://ad7
-! |http://ad9
 |http://adfarm
-! |http://ads0
-! |http://ads1
-! |http://ads2
-! |http://ads3
-! |http://ads4
-! |http://ads5
-! |http://adserv
 |http://adstil.
 |http://adv.
 |http://b.$object
@@ -167,11 +152,8 @@ sexvodnokalssnikah
 /block.js|$third-party
 ! rutor.org & opensharing.org - попап с рекламой вместо счётчика.
 /counter.js|$~third-party
-! Is it still alive?
-/sun*_ajax.js|
 
 ! = Общие фильтры =============================================================
-! .advertising.
 .all.by/
 .clx.ru/
 .ket.ru/
@@ -1436,7 +1418,7 @@ yandex.ru,yandex.ua##.spec-adv
 2krota.ru###dle-content > TABLE:first-child CENTER
 2krota.ru##.menu > A:not([href^="/"])
 2krota.ru##NOINDEX A[target="_blank"]
-2krota.ru##[id^="Teaser_Block_"]
+! 2krota.ru##[id^="Teaser_Block_"]
 ||2krota.ru/123/
 ||2krota.ru/rekla/
 3dnews.ru###topBanners
@@ -1543,6 +1525,9 @@ exnews.org##CENTER + NOINDEX
 f1news.ru###newsexch
 f1news.ru###rightBanner240
 f1news.ru###yad
+! fast-torrent.ru##[id^="Teaser_Block_"]
+fast-torrent.ru##.ad
+||fast-torrent.ru/*banner
 fastpic.ru##.begun-area
 ||static.fastpic.ru/00
 ||fb.finam.ru^
@@ -1716,7 +1701,7 @@ mozilla-russia.org##A[href="http://ru.viaden.com/"]
 mozilla-russia.org##[id$="Col_advC"]
 mozilla-russia.org###modex
 mozutil.mozilla-russia.org##.footer > SPAN > DIV[style="text-align: left;"] > DIV[style="text-align: right;"]
-mskd.ru##[id^="Teaser_Block"]
+! mskd.ru##[id^="Teaser_Block"]
 mskd.ru##TABLE[width="600px"][align="center"]
 ||mskd.ru/img/*x*_
 ||multitran.ru/ban/
@@ -1760,7 +1745,7 @@ beta.novoteka.ru##.outBlockVertAddLinks__
 nowa.cc###mc_100x_90
 nowa.cc###usac
 nowa.cc##.mc_cars_row
-nowa.cc##[id^="Teaser_Block_"]
+! nowa.cc##[id^="Teaser_Block_"]
 ||nowa.cc/download/
 ||nowa.cc/images/$subdocument
 npicture.net##A > IMG[src*="npicture.net/image-"]
