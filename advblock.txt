@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: aGiVIo+v7DZyBFFRYDk38A
+! Checksum: eL+F2xhZv34YrQjKZeI7pg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -68,7 +68,6 @@ _160x240
 ###novem_billboard
 ###PopWin[onmousemove]
 ###radeant
-###rtn4p
 ###zhlobam_net_informer_console
 ##.adbckgrnd
 ##.bc_adv_container
@@ -78,7 +77,9 @@ _160x240
 ##BODY[onload="popupInit();"] > DIV#popUp
 ##[class^="snBody"]
 ##[id^="DIV_NNN_"]
+##[id^="rtn4p"]
 ##[id^="Teaser_Block"]
+##[id^="togetInformer_"]
 ! Скрываем рекламу на форумах, на myBB-движке
 ##.section > #tieser-bottom.container[align="center"]:first-child
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
@@ -891,6 +892,7 @@ p://lank*.ru/
 ||poisk.su/img.php?
 ||poisk.su/top.php?
 ||pokaifu.com/templates/
+||pokerstars.com^$third-party
 ||pomogi.org/urgent/1/
 ||ponsshop.ru^$third-party
 ||pop-banner
@@ -1156,6 +1158,7 @@ p://lank*.ru/
 ||trafon.ru^$third-party
 ||trafunder
 ||trusearch.net/affblock/
+||turist.ru/turist.goods_pics/$third-party
 ||tvoi-dosug.com^$third-party
 ||tynt.com^$third-party
 ||u*.*.mytrix.com/cnt?
@@ -1763,61 +1766,39 @@ npicture.net##A > IMG[src*="npicture.net/image-"]
 ||nya.sh/imgs/a/
 
 ! O
-! tbd:bookmark
-||obnimau.ru/img-ba/
 obnimau.ru##NOINDEX > CENTER > TABLE
+||obnimau.ru/img-ba/
 ochevidec.net##A[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejournal"]):not([href*="icq"])
-ochevidec.net##IFRAME
 ||odnoklassniki.ru/res/*/promo/*/
-onegadget.ru/$object
 opennet.ru###adv2
 opennet.ru###adv3
 opennet.ru###ibm_adv
-opennet.ru##IMG[height="50"][width="240"]
-opennet.ru##TD[bgcolor="#B0B190"][width="1"]
+opennet.ru##TD[width="1"]
 opennet.ru##TD[width="130"][rowspan="3"]
 opennet.ru##TD[width="470"]
 ||opennet.ru/adv_
 ||opennet.ru/img/$object
-||opensharing.$object
 opensharing.ru,opensharing.org##IMG[height="120"][width="240"]
-oper.ru##.banners
-oper.ru###onlinedengi
+||opensharing.$object
 ||oper.ru/data/rennabs/
 oplati.ru##TD[width="90"]
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
-||ozon.ru/graphics/$object
-||ozon.ru/PartnerTwinerNew.aspx
 
+! P
 ||pctuner.ru/plugins/bworks/files/
-pics.goods.turist.ru/turist.goods_pics/$domain=~turist.ru
-pindosoff.net##[class^="copyright"] > NOINDEX
 pindosoff.net###dle-content > TABLE:first-child TD.copy
-pindosoff.net/images/
 pindosoff.net##TD.nav A[target="_blank"]
-ping.eu##.txt11
-pirat.ca##[id^="sidebar"] [class^="spacer_"] + DIV[align="left"] > DIV[align="left"] > [class^="spacer_"] + DIV[align="left"]
-pixshock.net##CENTER > BR + CENTER
-pixshock.net##[src="http://mg.dt00.net/js/p/i/pixshock.net.i2.js"] + TABLE
+||pirat.ca/forum/images$object
+! Вероятно следует доработать это правило - это стандартная библиотека функций, а не рекламный скрипт.
 ||playground.ru/js/ajax-dynamic-content.js
-pochta.ru##.bottomadvert
-pochta.ru##.gamesBlock
-pochta.ru##.loveplanet
-pochta.ru###tionline
 podrobnosti.ua##[class*="banner"]
 ||lbn.podrobnosti.ua^
 ||pogoda.by/promo/
-||pokerstars.com^$third-party
-popmech.ru###auction_tizer
 pornolab.net###pl-speedbar
 ||static.pornolab.net/00
-premiaruneta.ru/upload/iblock/
-premiaruneta.ru/upload/images/icon/
 premiership.ru###banner
 ||premiership.ru/upload/adv/
-price.ua###parachute
-prikol.ru##OBJECT#headlinebanner
 probki.net##CENTER > A > IMG[width="160"]
 probki.net##TD + * + TD > A > IMG[width="160"]
 maps.probki.net##[width="180"] > TBODY > TR:last-child
@@ -1826,14 +1807,18 @@ maps.probki.net##[width="180"] > TBODY > TR:last-child
 prostopleer.com##.ad
 ||prostopleer.com/t.php?
 
-qiq.ru##A[rel="nofollow"]
-||quasir.info/img/ret4/
-||quasir.info/js.php?
-||quasir.info/thumbnail.php?
-qwe.ru##BODY > TABLE > TBODY > TR > TD.default_menu TABLE[width="500"] DIV
-qwe.ru##BODY > TABLE > TBODY > TR > TD > DIV.border + * + * + * + * + * + * + * + DIV.border
-qwe.ru##.caption + DIV.bodytable > TABLE[width="100%"] TD
-qwe.ru##NOINDEX > A
+! Q
+qiq.ru##.ram22
+||qiq.ru/media/co3.js
+! No DNS records for quasir.info (err 9002)
+! ||quasir.info/img/ret4/
+! ||quasir.info/js.php?
+! ||quasir.info/thumbnail.php?
+qwe.ru##.default_menu > DIV:first-child
+qwe.ru##TABLE + TABLE TR:last-child > TD:last-child > .border
+
+! R
+! tbd:bookmark
 radikal.ru##[id^="left_ban"]
 ||radikal.ru/STATIC/PLASTIC_MEDIA/$object
 ||rd2d.com/adv/
