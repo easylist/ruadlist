@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: REzkfp2BmdtRhkfDjUHH/w
+! Checksum: mAVj+A6cMwBgct4ovMummg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -52,11 +52,62 @@
 !------------ Яndex -----------------------------------------------------------
 ||lenta.yandex.ru/i/addfeed.
 
-!------------ Универсальные ---------------------------------------------------
+!- Универсальные --------------------------------------------------------------
 ###odnaknopka
 ||odnaknopka.ru^$third-party
 ##.social_links
 ###socialblock
+
+!- По-сайтам (частные) --------------------------------------------------------
+3dnews.ru###socialtabs
+ag.ru##.share_button
+apple-russia.ru###bloghtml
+apple-russia.ru###bookmark
+championat.ru##.livejournal
+delfi.ua##.sbookmarks
+deviantart.com##.deviation-share
+dpk.com.ua##.soc-box
+f1news.ru###bookmarkBlock
+filmix.net###block_social_open
+forum.f1news.ru###ed-0_toolbar_3
+forum.f1news.ru###fast-reply_toolbar_3
+forum.f1news.ru##.topic_share
+game-monitor.com##.bookmark
+gazeta.ru##.soc_icons
+hotline.ua##.soc-box
+ifolder.ru###social-media
+imdb.com##.social_networking
+ipicture.ru###buton
+mobiledevice.ru##.icons_bar_placeholder
+novafilm.tv##.news-entry > DIV:last-child
+novafilm.tv##.social
+novafilm.tv###vk_groups
+novafilm.tv##DIV[style*="40px;"]:last-child
+ntv.ru###btmsocialize
+ntv.ru##.podprint > UL[style*="370"]
+nvworld.ru##.buttons
+nya.sh##.q > .bottom
+opennet.ru###social_link
+podrobnosti.ua##.b-news-share
+qiq.ru##.buttonbox
+rutv.ru###btns
+shoutcast.com##.aol-share
+topnews.ru##.addto
+topnews.ru###bottom
+ua-football.com##A[class^="icon_"][rel="nofollow"],A[class^="icon2_"]
+utro.ru##.b-repost
+vesti.ru##.blog_wrapper
+winreview.ru##.postmeta + NOINDEX
+||allbest4free.ru/head.
+||cnews.ru/inc/images/feeds/
+||drugasmuga.com/images/bookmarks/
+||f1news.ru/images/sfbook/
+||gamespotcdn.com/*/social_media.
+||hwp.ru/images/socialicons/
+||msdn.com/CustomWidgets/SocialMediaSharingUC/
+||novafilm.tv/static/icons/social-
+||overclockers.ru/images/buttons/
+||thevista.ru/*/img/soc/
 
 != Информеры ==================================================================
 ||cnews.ru^$subdocument
@@ -70,86 +121,41 @@
 ||webdiscover.ru^$third-party
 ||www.rb.ru^$third-party
 
-!= Раздражающий мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) ====
-!- Общие ----------------------------------------------------------------------
+!= Мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) =================
 ##.copyright
-##.signature
 _lj_times_
 /ljtimes/*
-!- Частные --------------------------------------------------------------------
 21region.org##.logo
-ag.ru##.share_button
-apple-russia.ru###bloghtml
-apple-russia.ru###bookmark
-championat.ru##.livejournal
-delfi.ua##.sbookmarks
-deviantart.com##.deviation-share
-dpk.com.ua##.soc-box
 experts-exchange.com##.allZones,.vqpsdBlurredAnswers,.copyrightFrame,.footnoteNotice,#pageRight
-f1news.ru###bookmarkBlock
-fanacmilan.com##CENTER > TABLE[height^="3"][style*="1px"]
-filmix.net###block_social_open
-forum.f1news.ru###ed-0_toolbar_3
-forum.f1news.ru###fast-reply_toolbar_3
-forum.f1news.ru##*.topic_share.left
 forums.warforge.ru##BODY > DIV:nth-of-type(-n+12):not([id])
 forums.warforge.ru###logostrip
 freakenergy.ru###footer > NOINDEX
 freakenergy.ru##.sidebar > DIV > NOINDEX
 fullgames.ru###main > NOINDEX
-game-monitor.com##.bookmark
-gazeta.ru##.soc_icons
-hotline.ua##.soc-box
-hwp.ru###container > DIV:first-child + DIV
-ifolder.ru###social-media
-imdb.com##.social_networking
-ipicture.ru###buton
-liveinternet.ru##.blLi_ppan
-mobiledevice.ru##.icons_bar_placeholder
-novafilm.tv##.news-entry > DIV:last-child
-novafilm.tv##.social
-novafilm.tv###vk_groups
-novafilm.tv##DIV[style*="40px;"]:last-child
-||novafilm.tv/static/icons/social-
-ntv.ru##.podprint > UL[style*="370"]
-ntv.ru###btmsocialize
-nvworld.ru##.buttons
-nya.sh##.q > .bottom
-opennet.ru###social_link
 ozon.ru##.news_block
-podrobnosti.ua##.b-news-share
-qiq.ru##.buttonbox
 rutracker.org###sidebar1
-rutv.ru###btns
-shoutcast.com##.aol-share
-topnews.ru##.addto
-topnews.ru###bottom
 torrents.net.ua###smschatframe
-ua-football.com##A[class^="icon_"][rel="nofollow"],A[class^="icon2_"]
-utro.ru##.b-repost
-vesti.ru##.blog_wrapper
-winreview.ru##.postmeta + NOINDEX
 youtube.com##.homepage-side-block > :not(#stat-module-wrapper-statmodules_inbox):not(#homepage-whats-new)
-||allbest4free.ru/head.
-||cnews.ru/inc/images/feeds/
-||drugasmuga.com/images/bookmarks/
 ||echo.msk.ru/att/element-*-misc-*.gif
 ||experts-exchange.com^*/scripts/
-||f1news.ru/images/sfbook/
 ||forumkiev.com/flesh/
-||gamespotcdn.com/*/social_media.
+||fotki.yandex.ru/get/*/wind-hide.
+||glitter-graphics.net^$third-party
+||glitterfy.com^$third-party
+||google.*/brand?form=
+||icefm.ru^$third-party
+||informer.uinov.ru^
 ||levonevski.net^$object
-||msdn.com/CustomWidgets/SocialMediaSharingUC/
-||overclockers.ru/images/buttons/
 ||static.newsru.*/img/bg.gif|
-||thevista.ru/*/img/soc/
 
 ! Сайты на движке TorrentPier
 rutracker.org,tapochek.net,free-torrents.org,pornolab.net,gardnet.tomsk.ru,myy.su,mortan.info,underverse.su,rus-torrents.ru,torrents.net.ua,ya-torrent.com,nnbt.org,21region.org,wtracker.ru,goldenshara.com,data-torrents.com###page_footer
 rutracker.org,tapochek.net,free-torrents.org,pornolab.net,gardnet.tomsk.ru,myy.su,mortan.info,underverse.su,21region.org,wtracker.ru,goldenshara.com###logo
 /images/logo/*$domain=rutracker.org|tapochek.net|free-torrents.org|pornolab.net|gardnet.tomsk.ru|myy.su|mortan.info|underverse.su|21region.org|wtracker.ru|goldenshara.com
 
-!= Общие правила ==============================================================
+!= Блокировка мусора в подписях на форумах ====================================
+!- Общие правила --------------------------------------------------------------
+##.signature
 .info/lines/$image
 .net/lines/$image
 .ru/line/$image
@@ -169,7 +175,7 @@ rutracker.org,tapochek.net,free-torrents.org,pornolab.net,gardnet.tomsk.ru,myy.s
 .userbar$image
 _userbar$image
 
-!= Прочее =====================================================================
+!- Блокировка отдельных источников мусора -------------------------------------
 ||2142-stats.com^$third-party
 ||2ip.ru/bar/
 ||ametric.ru^$third-party
@@ -195,18 +201,12 @@ _userbar$image
 ||daisypath.com^$third-party
 ||flines.ru^$third-party
 ||forum-lines.ru^$third-party
-||fotki.yandex.ru/get/*/wind-hide.
 ||freetickers.net^$third-party
 ||g.bfbcs.com^$third-party
 ||galaxie.ru^$third-party
 ||gametracker.com^$third-party
-||glitter-graphics.net^$third-party
-||glitterfy.com^$third-party
-||google.*/brand?form=
 ||hottabych.net/ubar/
 ||hudeem-vmeste.ru/lin/
-||icefm.ru^$third-party
-||informer.uinov.ru^
 ||kiev-mama.com.ua/lines_holder/
 ||kilat.ru^$third-party
 ||lilypie.com^$third-party
@@ -274,6 +274,9 @@ _userbar$image
 ||zelgan.ucoz.ru/Userbarss/
 ||zoometric.ru^$third-party
 
+!------------------------------------------------------------------------------
+!- Дальнейшие правила взяты из подписки от fanboy и нацелены исключительно на -
+!- блокирокву мусора из социальных сетей. -------------------------------------
 !------------------------------------------------------------------------------
 
 [Adblock Plus 1.1]
