@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ErvEWfAg9rP5Ty5jJWxYiw
+! Checksum: qL7RBrBMpYVYloeEh14JYg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -17,8 +17,9 @@
 
 !------------ Facebook --------------------------------------------------------
 ~facebook.com###facebook
+##[alt$=" on Facebook"]
+##[title$=" to Facebook"]
 ||facebook.com^$third-party,script,subdocument
-! http://static.ak.fbcdn.net/rsrc.php/z5R48/hash/ejut8v2y.gif на 3dnews.ru
 ||fbcdn.net^$third-party,domain=~facebook.com
 
 !------------ Google ----------------------------------------------------------
@@ -27,9 +28,6 @@
 
 !------------ LiveJournal -----------------------------------------------------
 /ljthis?
-
-!------------ Mail.RU ---------------------------------------------------------
-||connect.mail.ru^$third-party
 
 !------------ RuTvit ----------------------------------------------------------
 ||rutvit.ru/js/share.js$third-party
@@ -41,10 +39,9 @@
 //vk.com^$domain=~vkontakte.ru,third-party
 ||vkontakte.ru^$third-party,script,subdocument
 
-!------------ Мой Мир ---------------------------------------------------------
+!------------ Мой Мир (Mail.RU) -----------------------------------------------
 ##.mrc__share
-||connect.mail.ru/js/api/share.$third-party
-||connect.mail.ru/js/share/$third-party
+||connect.mail.ru^$third-party
 ||imgsmail.ru/*_share_buttons_sprite.$third-party
 
 !------------ Одноклассники ---------------------------------------------------
@@ -299,7 +296,6 @@ _userbar$image
 ||api.flattr.com^$third-party
 ||buttons.googlesyndication.com^$third-party
 ||buzz-stats.com^$third-party
-||c.liveintent.com^$third-party,subdocument
 ||cdn.stumble-upon.com^$third-party
 ||cim.meebo.com^
 ||complex.com/toolbar/
@@ -321,7 +317,6 @@ _userbar$image
 ||stumbleupon.com/badge/$third-party
 ||stumbleupon.com/hostedbadge$third-party
 ||tumblr.com/dashboard/
-||widgets.digg.com^$third-party,script,image,stylesheet
 !
 !---------- Facebook Widgets ----------
 !
@@ -354,35 +349,14 @@ _userbar$image
 ##.post_share_facebook
 ##.sidebar-facebook
 ##.ymsb-facebook-module
-! ##[alt="Follow us to FacBook.com"]
-##[alt="Share on Facebook"]
-##[title="Follow us on Facebook"]
-##[title="Get Posts On Facebook Wall"]
 ##a[href="http://www.facebook.com/sharer.php"]
-##a[title="Follow me on  Facebook"]
-##a[title="Post this story to Facebook"]
-##[alt="Join us on Facebook"]
 /facebook_button
 /FacebookFanWidgetFrame.
 /facebkiconnet/*
 /js/FB.Share$third-party
 /plugins/wp-facebookconnect/*
-! ||badge.facebook.com^$third-party
 ||facebookicon.net^$third-party
 ||blogsmithmedia.com^*facebook$image
-! ||connect.facebook.net^$third-party,script
-! ||facebook.com/connect/connect.php?$third-party
-! ||facebook.com/favicon.ico$third-party
-! ||facebook.com/plugins/activity.php?$third-party
-! ||facebook.com/plugins/fan.php?$third-party
-! ||facebook.com/plugins/like.php?$third-party
-! ||facebook.com/plugins/likebox.php?$third-party
-! ||facebook.com/plugins/recommendations.php?$third-party
-! ||facebook.com/widgets/activity.php?$third-party
-! ||facebook.com/widgets/fan.php?$third-party
-! ||facebook.com/widgets/like.php?$third-party
-! ||facebook.com/widgets/recommendations.php?$third-party
-! ||widgets.fbshare.me^$third-party
 ~facebook.com###fb_header
 !
 !---------- Twitter Widgets ----------
@@ -528,19 +502,19 @@ _userbar$image
 ##.story_tools_social_buttons_top
 ##.yahooBuzzBadge
 ##.ymsb-retweet-module
-##[alt="Share on Delicious"]
-##[alt="Share on MySpace"]
-##[alt="Share on Reddit"]
-##a[title="Get Feed RSS"]
-##a[title="Save On Delicious"]
-##A[title="Subscribe by Email"]
-##A[title="Subscribe by RSS"]
-##A[title="Subscribe by Twitter"]
-##a[title="Subscribe on FriendFeed"]
+! ##[alt="Share on Delicious"]
+! ##[alt="Share on MySpace"]
+! ##[alt="Share on Reddit"]
+! ##a[title="Get Feed RSS"]
+! ##a[title="Save On Delicious"]
+! ##A[title="Subscribe by Email"]
+! ##A[title="Subscribe by RSS"]
+! ##A[title="Subscribe by Twitter"]
+! ##a[title="Subscribe on FriendFeed"]
 ##div.sociable
-##[alt="Follow us to Youtube.com"]
-##[alt="Follow us at Youtube"]
-##[alt="Watch us on YouTube"]
+! ##[alt="Follow us to Youtube.com"]
+! ##[alt="Follow us at Youtube"]
+! ##[alt="Watch us on YouTube"]
 7tutorials.com###block-block-1
 9gag.com##.share
 abcnews.go.com###rsslisting
