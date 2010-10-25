@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: aGO5AfO8+NqZSWZIukkROA
+! Checksum: MPJc2AKezMRjl3kCLJUngg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/cntblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -56,6 +56,7 @@ _8831.gif
 ! = Общие фильтры =============================================================
 .ru/stat/?
 .ru/cnt/?
+.ru/count/
 .spylog.$image,script,third-party
 //li.ru/*?
 /cnt.cgi?
@@ -174,7 +175,6 @@ _8831.gif
 ||ucoz.ua/stat/
 
 ! Mail.RU
-||mail.ru/count/
 ||mail.ru/share_count?
 ||rs.mail.ru^*.gif?rnd=$domain=mail.ru
 
@@ -183,7 +183,6 @@ _8831.gif
 ||clck.yandex.
 ||mc.yandex.
 ||yandex.ru/click/
-||yandex.ru/count/
 ||yandex.ru/metrika/
 
 ! Правила заимствованные из русской части подписки fanboy'я и ещё не разобранные
@@ -205,8 +204,6 @@ _8831.gif
 ||catalog.metka.ru^$third-party
 ||chance.ru/c/$image
 ||hmn.ru/counterdb.php?$image,background
-||lifenews.ru/count/
-||marker.ru/count/
 ||price.ua^$third-party,subdocument
 ||rg.ru/rgrucounter
 ||rutvit.ru/?identifier
