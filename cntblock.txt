@@ -1,6 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: yMPLortWKq8bofcRvUl+1w
-! Redirect: https://ruadlist.googlecode.com/svn/trunk/cntblock.txt
+! Checksum: 8ejhNJwdKLaFaJ3SfHDbvQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU CountersList (ruadlist.googlecode.com)
@@ -56,7 +55,7 @@ _8831.gif
 ! = Общие фильтры =============================================================
 .ru/stat/?
 .ru/cnt/?
-.ru/count/
+.ru/count/$domain=~money.yandex.ru
 .spylog.$image,script,third-party
 //li.ru/*?
 /cnt.cgi?
@@ -179,7 +178,7 @@ _8831.gif
 ||rs.mail.ru^*.gif?rnd=$domain=mail.ru
 
 ! Яndex
-||bs.yandex.
+||bs.yandex.$domain=~money.yandex.ru
 ||clck.yandex.
 ||mc.yandex.
 ||yandex.ru/click/
