@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: UaWo/XnAZx266H0dejxrbw
+! Checksum: CeW/bdyl0tveaMlDewFTSw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -432,6 +432,7 @@ p://lank*.ru/
 ||c2001.ent.spyrix.ru/user.aic?
 ||cachewww.euro-play.net/bnr/
 ||cash.loadsex.ru^
+||cash4ru.com^$third-party
 ||cashimtrap.com^$third-party
 ||casino-kaza.com^*/banners/
 ||catalog.deport.ru/btn.php?
@@ -1680,7 +1681,7 @@ kinopoisk.ru##.superb
 @@/images/*/*/0/script.js?$domain=kinopoisk.ru
 @@||ad.adriver.ru/cgi-bin/$domain=kinopoisk.ru
 ||kleo.ru/ban/
-kodges.ru##.banner-fullstory.pay-click
+kodges.ru##.banner-fullstory
 kolesa.kz##.banner
 kolesa.kz##.board
 kolesa.kz##.layout.pipes
@@ -1863,21 +1864,20 @@ samlab.ws##.soft-day:not(:first-child) > .box
 ||scriptiks.ru^$object
 ||seti.ee/*reklaam/
 ||severodvinska.net/fws/
-! tbd:bookmark
-sfw.org.ua##BODY > NOINDEX
+sfw.org.ua##.ws_main
 sfw.org.ua##CENTER > NOINDEX
-sfw.org.ua##TD.tab-links > NOINDEX
-sfw.org.ua##TR:first-child + TR > TD[valign="top"] > TABLE:first-child + * + * + TABLE
-||sibbanks.ru/img/all/b
-||sibbanks.ru/img/header/ear
+! Кхм... Зато честно. :3
+sfw.org.ua##[class$="-for-hueta"]
+! tbd:skipped:begin
 sibmail.com###ll_slot_3 + * + DIV[style*="160px;"]
 sibmail.com##.gray > CENTER > DIV[style*="125px;"]
 sibmail.com##CENTER > DIV[style*="200px;"]
-sitehistory.ru##NOINDEX A
+! tbd:skipped:end
 shkolazhizni.ru##.banner_text
 slo.ru##[class^="adv_"]
-slo.ru##IMG[width="200"][height="300"]
-||slo.ru/img/*_*x
+||slo.ru/img/*300x200
+||slo.ru/img/banners/
+! tbd:bookmark
 slon.ru###alfa_ad
 slon.ru##.ishow
 ||slon.ru/*intel_
