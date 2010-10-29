@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: rVHEY/EcCjeXhDSF53P9EA
+! Checksum: OvuNArvaaMtbjOqgsAE2Lw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -122,6 +122,7 @@ ban_click
 /images/bn/*
 /images/rek/*
 /img/bn/*
+/img/rekl/*
 /imgads/*
 ! /mybaner/*baner - более точная версия
 /mybaner/*
@@ -140,6 +141,10 @@ _reklama
 /vsemayki_
 .ru/banners$domain=~citydom.ru|~webnames.ru
 .ua/banners
+.swf?alink
+.swf?link1=
+.swf?link=
+.swf?path=
 
 ! = Популярные баннеры по ключевым словам =====================================
 love_qip_head
@@ -275,7 +280,6 @@ p://lank*.ru/
 ||2baksa.net^$third-party
 ||2da2.ru/$third-party
 ||2ip.ru/sbar/
-||2pay.ru/gif/terminal.swf?link=
 ||3rs.ru/extraffic/script.php?id=
 ||468.vologdainfo.ru^
 ||4files.net/im/but/4files
@@ -487,7 +491,6 @@ p://lank*.ru/
 ||dclick.ru^$third-party
 ||default/photoplacement/$object
 ||delphisources.ru/pages/scripts/recl_
-||destiny-online.ru/*.swf?
 ||dewis.h1.ru^
 ||dewis.spb.ru^
 ||diagar.com/files/$image
@@ -1389,7 +1392,6 @@ rbc.ru,rbc.ua,cnews.ru##[id^="flash_"]
 rbcnews.com##A[href^="http://banner.rbc.ru/"]
 ||cnews.ru/img/banner/
 ||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
-||pics.rbc.ru^*.swf?
 ||pics.rbc.ru^*/banners/
 ||pics.rbc.ru^*/img.gif?
 
@@ -1450,7 +1452,6 @@ ag.ru###rotating_banners
 ag.ru###upadbg2
 ag.ru##IMG[width="120"][height="60"]
 allbest4free.ru##NOINDEX
-||allnokia.ru/*?link*/click/
 ||allsat.biz/ban_
 anekdot.ru##.righcolumn
 ||anekdot.ru/i/gallery/
@@ -1567,7 +1568,6 @@ file-online.ru##NOINDEX > TABLE[style]
 filehippo.com##.ad
 filmix.net###body #rightcol
 filmix.net##.banner
-||filmix.net/pl/*?path=
 finiz.ru##.topline
 finmarket.ru###bbInformer231
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
@@ -1894,7 +1894,6 @@ softarchive.net##.box.b728x90
 softnavigator.ru##BODY > TABLE > TBODY > TR:first-child > TD:nth-child(3) > DIV:first-child + TABLE[width="100%"]
 softnavigator.ru##A[href*="/go/?"]
 softodrom.ru##.prgentry.nobottom
-||softodrom.ru/img/rekl/
 ||softoroom.net/forex/
 ||sony-club.ru/img/verticalbanner
 sotovik.ru###banner
