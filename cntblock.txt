@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: VKwQF+mDaRrxCYcpRq9PNA
+! Checksum: r5u2fzs3Qg1ei2ZGPD2DYg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU CountersList (ruadlist.googlecode.com)
@@ -53,7 +53,8 @@ _8831.gif
 ||bin.clearspring.com^$object
 
 ! = Общие фильтры =============================================================
-.ru/stat/?
+.ru/stat/
+.ua/stat/
 .ru/cnt/?
 .ru/count/
 .spylog.$image,script,third-party
@@ -80,7 +81,6 @@ _8831.gif
 ||r.msn.com^
 ! TBD
 ||ajur.info/cgi-bin/ac.fcgi?
-||at.ua/stat/
 ||burstnet.com^$third-party
 ||c.bigmir.net/?
 ||i.bigmir.net/cnt/
@@ -107,7 +107,6 @@ _8831.gif
 ||hiddenjs.ru^
 ||histats.com^$third-party
 ||hit.gemius.pl^
-||holm.ru/stat/
 ||host-tracker.com^$third-party
 ||imtop.ru^$third-party
 ||informer.cyberstyle.ru^
@@ -119,7 +118,6 @@ _8831.gif
 ||mytrix.com^$third-party
 ||nedstatbasic.net^$third-party
 ||openstat.net^$third-party
-||p-news.ru/stat/
 ||pr-cy.catzone.ws/img_*.$image
 ||prchecker.info/getpr.php?
 ||prcy.ru/$third-party
@@ -142,7 +140,6 @@ _8831.gif
 ||hotlog.ru^$third-party
 ||hsdn.org^$third-party
 ||stats.indextools.com^
-||subscribe.ru/stat/
 ||tns-counter.ru^$third-party,~object-subrequest
 ||uarating.com^$third-party
 ||video-stats.video.google.
@@ -156,12 +153,12 @@ _8831.gif
 ||youtorrents.net/button.php?
 
 ! Форумы ucoz.net
-||3dn.ru/stat/
+! ||3dn.ru/stat/
 ||a.ucoz.net^
 ||clan.su/stat/
 ||do.am/stat/
 ||moy.su/stat/
-||my1.ru/stat/
+! ||my1.ru/stat/
 ||ucoz.com/stat/
 ||ucoz.de/stat/
 ||ucoz.ko.uk/stat/
@@ -170,8 +167,8 @@ _8831.gif
 ||ucoz.*/main/?a=ustat;
 ||ucoz.net/stat/
 ||ucoz.org/stat/
-||ucoz.ru/stat/
-||ucoz.ua/stat/
+! ||ucoz.ru/stat/
+! ||ucoz.ua/stat/
 
 ! Mail.RU
 ||mail.ru/share_count?
