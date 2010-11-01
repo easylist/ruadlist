@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Y6J6/SY6BT6/ztSdlrqhAw
+! Checksum: 3jomaR+DUUqPJ76TcC553w
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1577,9 +1577,13 @@ football.ua##.header_b
 forum.donfisher.ru##TD.windowbg3
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
 forum.ru-board.com##TABLE[width="640"][border="1"]
-forum-profit.ru##[target="_blank"] > IMG
-||forum-profit.ru/images/banners/
+forum-profit.ru##A[href^="vB.Sponsors/link.php?f="]
+forum-profit.ru###threadslist > TBODY:not([id]):last-child
+forum-profit.ru##[id^="edit"] > [id^="post"]:not(:first-child):last-child
+forum-profit.ru##[id^="edit"] > .tborder:not([id])
 ||forum-profit.ru/images/partners/
+||forum-profit.ru/images/banners/
+||forum-profit.ru/images/nordfx/
 ||ru-board.com*/temp/
 ||ru-board.com*/xmtmp/
 ||forumkiev.com/MEDimg/
