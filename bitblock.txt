@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: xzgk2+MOGBrE0WPx0VGwtA
+! Checksum: FMQ1UXoc9e/WRCYRpnwXQg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -38,7 +38,8 @@
 ##.vk-button
 ##.vk-share-button
 //vk.com^$domain=~vkontakte.ru,third-party
-||vkontakte.ru^$third-party,script,subdocument
+! Домен в исключении является частью вконтакта
+||vkontakte.ru^$third-party,script,subdocument,domain=~dvd-rips.ru
 
 !------------ Мой Мир (Mail.RU) -----------------------------------------------
 ##.mrc__share
