@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: hspNkuQyNKG0uMZKZIIgDQ
+! Checksum: xv92wchRinrD2dJSv8229Q
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -77,6 +77,7 @@ _160x240
 ##.surbis_banner
 ##.topbaner
 ##BODY[onload="popupInit();"] > DIV#popUp
+##[class^="mediaget"]
 ##[class^="snBody"]
 ##[id^="DIV_NNN_"]
 ##[id^="rtn4p"]
@@ -141,7 +142,7 @@ _reklama
 .ru/banners$domain=~citydom.ru|~webnames.ru
 .ua/banners
 .swf?alink
-.swf?link1=
+.swf?link1=$domain=~citydom.ru
 .swf?link=
 .swf?path=
 
@@ -533,6 +534,7 @@ l||domika.msk.ru^
 ||engine.adct.ru^$third-party
 ||eogli.com/1/
 ||epartner.ru^$third-party
+||erclans.ru/banner/
 ||eroadvert.ru^$third-party
 ||eroboard.ru^$third-party
 ||eronsk.ru/b/
@@ -1018,6 +1020,7 @@ l||domika.msk.ru^
 ||s.ladoshki.com/p/a/
 ||s.ladoshki.com/pics/shirts/
 ||s.recs.ru/b/
+||sampishi.ru^$third-party
 ||sape.ru/bn/
 ||sat-digest.com/$object
 ||sat-digest.com/agc/*.gif
@@ -1191,6 +1194,7 @@ l||domika.msk.ru^
 ||uptracker.ru^$third-party
 ||us.a1.yimg.com^
 ||us.i1.yimg.com^
+||usde.biz^$third-party
 ||usde.ru/$third-party
 ||vareza.net^$third-party
 ||vas.ppro.de/click/
@@ -1431,6 +1435,7 @@ yandex.ru,yandex.ua##[class*="spec-adv"]
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
 
 ! #
+100let.net##[id^="SR_PopOver"]
 ||2baksa.net/download/
 @@||2baksa.net/download/*/$image
 2krota.ru###dle-content > TABLE:first-child CENTER
@@ -1482,6 +1487,7 @@ azart.net.ua##A[href="/adv.php"]
 bash.org.ru##:not(#ads) > .q > :not(.vote):first-child
 bash.org.ru###page > HR
 bigtorrent.org###dle-info + NOINDEX
+||biuss.ru/img_new/
 
 ! C
 ||chance.ru/ban/
@@ -1615,7 +1621,6 @@ freesoft.ru##TABLE[width="100%"][cellspacing="3"][border="0"][align="center"]:fi
 freesoft.ru##TABLE[width="472"][align="center"]
 ||freesoft.ru/images/
 ||free-torrents.org^*/banners/
-free-torrents.org##.mini.mediaget
 fullgames.ru###left > DIV:not(#ms)
 fullgames.ru###main + #right
 fullgames.ru##CENTER > NOINDEX > A[target="_blank"]
@@ -1642,6 +1647,7 @@ hl-inside.ru##.right-block.rek
 hmn.ru##A > IMG[width="240"]
 ||ww.hmn.ru^
 ||hotcharts.ru/img/*_700x150
+huyandex.com##TD[width="250"] + TD > TABLE[cellspacing="0"][cellpadding="0"][border="0"]
 hwp.ru##[class^="promo"]
 hwp.ru##[class*="tbann"]
 ||hwp.ru/images/mid/h-anons.
@@ -1924,7 +1930,6 @@ soft-free.ru##A[href="http://goldfin.ru"]
 soft-free.ru##TD + * FORM + * + * + * + * + * + * TD.modulecontent
 softarchive.net##.box.b728x90
 softnavigator.ru##BODY > TABLE > TBODY > TR:first-child > TD:nth-child(3) > DIV:first-child + TABLE[width="100%"]
-softnavigator.ru##A[href*="/go/?"]
 softodrom.ru##.prgentry.nobottom
 ||softoroom.net/forex/
 ||sony-club.ru/img/verticalbanner
@@ -1979,6 +1984,8 @@ torrentino.ru###siders
 torrentino.ru##.a-panel
 torrentino.ru##.promo-item
 ||torrentino.ru/images/siders/
+torrentszona.com##.banner_top
+||torrentszona.com/afisha/d
 translate.ru/App_Themes/Default/begLoad/
 translate.ru###b_adv
 translate.ru##[id^="TranslationAdvert"]
@@ -1989,6 +1996,7 @@ travelgps.com.ua##TD[style*="170px;"][style*="vertical-align"]
 ||turbo.az/banners/
 ||b.turbo.az^
 turbobit.net##IMG[width="490"][height="100"]
+||turbobit.net/js/partner_
 tutu.ru##TD.plink:first-child:last-child
 
 ua-football.com###rozetkadiv
@@ -2001,6 +2009,7 @@ uploder.ws##CENTER:last-child
 ||uploder.ws/$object
 uploder.ws/static/*0x
 usde.ru##A[href^="/engine/redirect2.php?url="]
+usde.ru##A[href^="http://usde.ru/adult/go.php?"]
 utro.ru##.b-utro-tizer
 
 vedomosti.ru##.left_banner
