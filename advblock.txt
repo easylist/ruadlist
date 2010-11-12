@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ifTDI5cs/AtmE6pPoS4F8Q
+! Checksum: X1/1gzezPnYPSuQhT5WGAw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -11,8 +11,12 @@
 !==============================================================================
 ! Если на вашем любимом сайте осталась реклама и она мешает или
 ! если наша подписка создаёт проблемы при его работе, то свяжитесь с нами.
-! Пишите о возникших проблемах в специальную тему на форуме
-! по адресу: http://forum.mozilla-russia.org/viewtopic.php?pid=409520
+! Пишите о возникших проблемах в тему на форуме по адресу: 
+! http://forum.mozilla-russia.org/viewtopic.php?pid=409520
+! Если Вы пользуетесь функцией Adblock Plus "Сообщить о проблеме...",
+! то желательно указывать свой адрес эл. почты, чтобы нам проще было вместе решить проблему.
+! Комментарии желательно писать на русском.
+! Для защиты от порно используйте расширение CensureBlock.
 
 ! = Исключения против ложных срабатываний =====================================
 ! Картинки в гуглопоиске всегда отображаем
@@ -129,14 +133,14 @@ ban_click
 /partner.$domain=~8088.ru|~elance.com|~partner.microsoft.com|~r01.ru|~yandex.ru
 /partners.$domain=~beeline.ru|~qwerty.ru|~yandex.ru
 /reklam/*
-_reklama
+_reklama$domain=~animeonline.su
 -reklama
 /reklama_$domain=~linux.ptz.ru
 /tizers/*
 /tizers.
 .tizers.
 /upload/bx/*
-/upload/rk/*$domain=~qwerty.ru
+/upload/rk/*$domain=~bbk.ru|~qwerty.ru
 /vottbanner
 /vsemayki_
 .ru/banners$domain=~citydom.ru|~webnames.ru
@@ -1468,6 +1472,8 @@ anekdot.ru##.righcolumn
 ||anime-zone.ru/inc/partners/
 animenfo.com###topright
 ||animenfo.com/*/ads/
+||animeonline.su/Reklama/
+@@||animeonline.su/Reklama/mailru/video/
 anonymouse.org###mouselayer
 ||antichat.ru/bn/
 ||antistarforce.com/*banner
@@ -1729,6 +1735,7 @@ kp.by,kp.ru,~ufa.kp.ru##.uslot_banner
 lifehacker.ru##.rblock1
 lifehacker.ru##.rblock4
 ||lifehacker.ru/promo/
+||livejournal.com/*/__rpc_lj_times_string
 linux.org.ru##.infoblock
 ||linux.org.ru^$subdocument
 ||linux.org.ru/adv/
@@ -1815,6 +1822,7 @@ obnimau.ru##NOINDEX > CENTER > TABLE
 ||obnimau.ru/img-ba/
 ochevidec.net##A[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejournal"]):not([href*="icq"])
 ||odnoklassniki.ru/res/*/promo/*/
+||online.multilex.ru^*banner
 opennet.ru###adv2
 opennet.ru###adv3
 opennet.ru###ibm_adv
