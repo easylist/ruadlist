@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: FMQ1UXoc9e/WRCYRpnwXQg
+! Checksum: JEcKjlR1esRFqDGPk5R/3w
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -38,8 +38,9 @@
 ##.vk-button
 ##.vk-share-button
 //vk.com^$domain=~vkontakte.ru,third-party
-! Домен в исключении является частью вконтакта
+! Домен dvd-rips.ru является частью вконтакта
 ||vkontakte.ru^$third-party,script,subdocument,domain=~dvd-rips.ru
+@@||vkontakte.ru/video_ext.php?
 
 !------------ Мой Мир (Mail.RU) -----------------------------------------------
 ##.mrc__share
@@ -151,6 +152,7 @@ ozon.ru##.news_block
 rutor.org##.mediaget
 rutor.org###toolbar
 rutracker.org###sidebar1
+||rutube.ru/themes/realnyje-patcany/
 sfw.org.ua##IMG[width="350"][alt*="userbar"]
 torrents.net.ua###smschatframe
 youtube.com##.homepage-side-block > :not(#stat-module-wrapper-statmodules_inbox):not(#homepage-whats-new)

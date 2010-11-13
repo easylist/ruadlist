@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: VpWyCa/CSbVPag2hTsADIw
+! Checksum: XbF7WVVh3ZEXRZ4u1MNm2w
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -133,6 +133,7 @@ ban_click
 /partner.$domain=~8088.ru|~elance.com|~partner.microsoft.com|~r01.ru|~yandex.ru
 /partners.$domain=~beeline.ru|~qwerty.ru|~yandex.ru
 /reklam/*
+/reklama/*
 _reklama$domain=~animeonline.su
 -reklama
 /reklama_$domain=~linux.ptz.ru
@@ -1475,7 +1476,6 @@ anekdot.ru##.righcolumn
 ||anime-zone.ru/inc/partners/
 animenfo.com###topright
 ||animenfo.com/*/ads/
-||animeonline.su/Reklama/
 @@||animeonline.su/Reklama/mailru/video/
 anonymouse.org###mouselayer
 ||antichat.ru/bn/
@@ -1710,6 +1710,12 @@ keep4u.ru###r_bottom
 keep4u.ru###r_top
 kharkovforum.com##A[href^="http://banner.ua/"]
 kino-online.org##IMG[height="120"][width="600"]
+||kinobanda.net^$image
+@@||kinobanda.net/highslide/graphics/$image
+@@||kinobanda.net/images/$image
+@@||kinobanda.net/includes/kcaptcha/
+@@||kinobanda.net/themes/$image
+@@||kinobanda.net/uploads/$image
 kinobaza.net##A.red
 kinobaza.net##A[href="/out.php"]
 ||kinobaza.net/babes/
