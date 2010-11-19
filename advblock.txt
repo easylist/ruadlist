@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: iCE6XIJickazZ2OSl3r4ew
+! Checksum: cDUJYd6OWIsyw2LwgodkGw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -108,7 +108,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 |http://adstil.
 |http://adv.
 |http://b.$object
-|http://b.*/b/
+|http://b.*/b/$domain=~imagepix.org
 |http://b.*/iframe/
 |http://mads.
 
@@ -579,6 +579,7 @@ l||domika.msk.ru^
 ||flapoint.ru^$third-party
 ||flash.eastweb.ru/i/files/
 ||flasher.ru/data/images/swf/
+||flashok.ru/banner/
 ||flipflapflo.net^$third-party
 ||flysat.com/resim
 ||fmates.ru^$third-party
@@ -1126,6 +1127,7 @@ l||domika.msk.ru^
 ||t.pusk.ru^
 ||tak.ru/in.php?
 ||takru.com/in.php?id=
+||tankionline.com^$third-party
 ||tbe.tom.ru/?
 ||teasercash.com^$third-party
 ||teasergate.com^$third-party
@@ -2080,6 +2082,9 @@ webpark.ru##[style*="height:"][style*="00px"]:first-child
 webplanet.ru##.marketnews
 webplanet.ru##IFRAME
 wiaderko.com###topbar
+winzoro.com###hmenu + NOINDEX
+||radikal.ru^$domain=winzoro.com
+||winzoro.com/data/ba_ne_r/
 world-art.ru/bipack/
 
 x-console.com##A[href*="=banner&"]:not([href*=".x-console.com%2Fmagazine"])
