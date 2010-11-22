@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: vNTmd4lcerUlxSsIS0cqhQ
+! Checksum: AnKpEi9eXdxKB7b0J2R94w
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -19,8 +19,8 @@
 ~facebook.com###facebook
 ##[alt$=" on Facebook"]
 ##[title$=" to Facebook"]
-||facebook.com^$third-party,script,subdocument
-||facebook.net^$third-party,script,subdocument
+||facebook.com^$third-party,script,subdocument,domain=~facebook.com
+||facebook.net^$third-party,script,subdocument,domain=~facebook.com
 ||fbcdn.net^$third-party,domain=~facebook.com
 
 !------------ Google ----------------------------------------------------------
