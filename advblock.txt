@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Dq1lgsSrVJbB14gKJshi4g
+! Checksum: 4IpbISNtZ42jrIGWhtye3Q
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -153,6 +153,7 @@ _reklama$domain=~animeonline.su
 .swf?link1=$domain=~citydom.ru
 .swf?link=
 .swf?path=
+.swf?target=_self&link
 
 ! = Популярные баннеры по ключевым словам =====================================
 love_qip_head
@@ -1912,6 +1913,9 @@ radikal.ru##[id^="left_ban"]
 rapidzona.com##[id$="_all"][style*="opacity:"]+DIV[id][align="center"][style]
 rapidzona.com##[id$="_all"][style*="opacity:"]
 rapidzona.com###dle-content NOINDEX
+rbcdaily.ru##.c-block_content_article_baner
+rbcdaily.ru##.banner
+rbcdaily.ru##[class*="_adv"]
 ||rd2d.com/adv/
 ||regnum.ru/i/bn/
 restoclub.ru/pic/iblocks
@@ -2056,7 +2060,9 @@ uploder.ws##CENTER:last-child
 uploder.ws/static/*0x
 usde.ru##A[href^="/engine/redirect2.php?url="]
 usde.ru##A[href^="http://usde.ru/adult/go.php?"]
-utro.ru##.b-utro-tizer
+utro.ru##.banner-right
+utro.ru##.conteiner-partner
+utro.ru##[id^="flashrst"]
 
 vedomosti.ru##.left_banner
 vedomosti.ru##.footer
