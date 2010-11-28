@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Iz0WdBVb52cFya14TKaW5g
+! Checksum: tOmNogPD3pSCRhJWM3VSOg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -39,7 +39,6 @@
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
 @@||fileshare.in.ua/s/js/adriver_async.js
-@@||ph4.ru/css/adsense.css
 @@.ru/ai/adbanner/$domain=akado.ru|megafon.ru
 
 ! = Фильтры по регулярным выражениям ==========================================
@@ -174,9 +173,13 @@ sexvodnokalssnikah
 
 ! = «Плохие» сайты (в основном попапы) ========================================
 ||goodsbrowser.com^
+||kupikupon.com.ua^
+||livejasmin.com^
+||telesekas.com^
+||tvsxsite.com^
 ||vzarabotke.ru^
 ||zoy.org/
-goodsbrowser.com,vzarabotke.ru,zoy.org##*
+goodsbrowser.com,kupikupon.com.ua,livejasmin.com,telesekas.com,tvsxsite.com,vzarabotke.ru,zoy.org##*
 
 ! = Общие фильтры =============================================================
 .all.by/
@@ -341,6 +344,7 @@ p://lank*.ru/
 ||adskape.ru^$third-party
 ||adsocial.ru^$third-party
 ||adsn24.ru^$third-party
+||adtaily.pl^$third-party
 ||adteaser.ru^$third-party
 ||adult-click.ru^$third-party
 ||adulttraffic.ru^$third-party
@@ -403,6 +407,7 @@ p://lank*.ru/
 ||avazone.ru^$third-party
 ||avifilm.ru/new/
 ||awmpartners.com^$third-party
+||azbukasexa.ru^$third-party
 ||azerbaijanian.com/img.php?
 ||azerimake.km.ru^
 ||b-one.com.ua^
@@ -543,6 +548,7 @@ l||domika.msk.ru^
 ||e-links.ru/pr/?
 ||e-place.ru/v/
 ||e-promoters.ru/indicator.php?
+||eads.to/$third-party
 ||edu.ru/d/window/b/
 ||effad.ru^$third-party
 ||ehoo.ru/knopka/
@@ -629,6 +635,7 @@ l||domika.msk.ru^
 ||go.bb.ru/images/
 ||go.jetswap.com^
 ||go.media-x.ru^
+||goallurl.ru^$third-party
 ||gogo.ru/img/p/
 ||gokliks.ru^$third-party
 ||gold-music.ru/informer
@@ -785,6 +792,7 @@ l||domika.msk.ru^
 ||mabila.ua^$third-party
 ||madbanner.ru^$~object_subrequest
 ||magna.ru^$third-party
+||mail.banklife.ru^$third-party
 ||mambo.kiev.ua^$third-party
 ||mamyshev.ru/bn/
 ||mamler.com/templates/
@@ -879,6 +887,7 @@ l||domika.msk.ru^
 ||obigre.ru^$third-party
 ||obmenniki.com/img/ban
 ||oboi.kards.ru/?
+||ofdaft.com^$third-party
 ||okoshechka.net^$third-party
 ||oldcombats.net/images_banner/
 ||one.ru/cgi-bin
@@ -914,6 +923,7 @@ l||domika.msk.ru^
 ||pcmag.ru/upload/$object
 ||pcweek.ru/upload/*/160x100
 ||peel-down.ru^$third-party
+||pen007.ru^$third-party
 ||penza-online.ru/cgi-bin/userstats.pl?
 ||people.1gb.ru^
 ||perezzz.ru^$third-party
@@ -941,6 +951,7 @@ l||domika.msk.ru^
 ||pop-under.$third-party
 ||pop-wmz.ru^$third-party
 ||popad.ru^$third-party
+||popander.com^$third-party
 ||popget.ru^$third-party
 ||popinads.com^$third-party
 ||popon.ru^$third-party
@@ -993,7 +1004,6 @@ l||domika.msk.ru^
 ||radikal.ru/bh.ashx?
 ||radio-t.com/buttons/
 ||radio-tech.ru/pic/pages/
-||rambler.ru/i.ban?
 ||raptop.ru/images/img*.gif
 ||rate.7surf.ru/img.php?
 ||rating.km.ua/*?
@@ -1014,6 +1024,7 @@ l||domika.msk.ru^
 ||revsci.net^$third-party
 ||rg-be.ru^$third-party
 ||richbanner.ru^$third-party
+||richclick.ru^$third-party
 ||richtraffic.ru^$third-party
 ||rimvoyeur.ru^$third-party
 ||rle.ru/cgi-bin/
@@ -1418,6 +1429,7 @@ mail.rambler.ru###banner-right
 top100.rambler.ru##.b-block2
 ||images.rambler.ru/upl/$domain=~nova.rambler.ru
 ||rambler.ru/export/banners.
+||rambler.ru/i.ban?
 
 ! РБК
 cnews.ru###mag_banner
@@ -1527,11 +1539,13 @@ banki.ru##SCRIPT[src="http://www.banki.ru/_lib/gemiusTraffic.js"] + TABLE
 banki.ru##DIV.b-signin + * + TABLE
 bape3.org###Table_01[width="797"][height="451"]
 bape3.org##A[target="_blank"] > IMG
+basemp3.ru###topbar
 bash.org.ru##:not(#ads) > .q > :not(.vote):first-child
 bash.org.ru###page > HR
 bestreferat.ru/images/a/
 bigtorrent.org###dle-info + NOINDEX
 ||biuss.ru/img_new/
+||bookz.ru/tpl/$image,object
 
 ! C
 ||chance.ru/ban/
@@ -1552,6 +1566,9 @@ cn.ru##[class*="rx"][class*="neta"]
 ||comnews.ru/ds_comnews/img_pictures/*.gif
 compress.ru##NOINDEX > A[rel="nofollow"][target="_blank"]
 computerra.ru##._reachbanner_ TD[width="240"]:last-child
+coolsoch.ru###rich_media
+coolsoch.ru###xyz
+coolsoch.ru##NOINDEX
 ||copypast.ru/*/ino*.htm
 ||copypast.ru/re*/$image
 cwer.ru##NOINDEX
@@ -1618,6 +1635,8 @@ f1news.ru###rightBanner240
 f1news.ru###yad
 fast-torrent.ru##.ad
 ||fast-torrent.ru/*banner
+||fast-torrent.ru/media/$object
+fasttorrent.ru##.ad_block
 fastpic.ru##.headerlink[target="_blank"]
 ||static.fastpic.ru/00
 ||fb.finam.ru^
@@ -1699,6 +1718,7 @@ hl-inside.ru###orphus
 hl-inside.ru##.right-block.rek
 hmn.ru##A > IMG[width="240"]
 ||ww.hmn.ru^
+hotcharts.ru##[class$="_banner"]
 ||hotcharts.ru/img/*_700x150
 ||hottabych.net^$object
 huyandex.com##TD[width="250"] + TD > TABLE[cellspacing="0"][cellpadding="0"][border="0"]
@@ -1929,6 +1949,7 @@ radikal.ru##[id^="left_ban"]
 rapidzona.com##[id$="_all"][style*="opacity:"]+DIV[id][align="center"][style]
 rapidzona.com##[id$="_all"][style*="opacity:"]
 rapidzona.com###dle-content NOINDEX
+rapidzona.com###main > NOINDEX
 rbcdaily.ru##.c-block_content_article_baner
 rbcdaily.ru##.banner
 rbcdaily.ru##[class*="_adv"]
@@ -2004,6 +2025,7 @@ sotovik.ru###banner
 ||sovsport.ru/s/bs/
 sport-express.ru##[style*=".sport-express.ru/img/banners/"]
 ||sport.*ua/images/$object
+sprazdnikami.ru###floatdiv
 softportal.com##.TblBorderCLR TD[style="padding: 0pt 25px;"] > TABLE[width="100%"]
 sr-week.ru##[class^="advt"]
 sr-week.ru##.sponsorslist
