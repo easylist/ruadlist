@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: DQKoVn/1ifm63VjHniC1mg
+! Checksum: Jp3j4K6gOR/obTOEnLA00g
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -319,6 +319,7 @@ p://lank*.ru/
 ||active.interzet.ru/log.php?
 ||ad-words.ru/contextad/
 ||ad.doubleclick.*;sz=
+||adatfacy.org^$third-party
 ||adbid.pl^$third-party
 ||adbn.ru/*?
 ||adcast.ru^$third-party,domain=~mts.ru
@@ -716,6 +717,7 @@ l||domika.msk.ru^
 ||ipz.ru/cgi-bin/
 ||iso100.ru^$third-party
 ||itcgin.net^$third-party
+||itsellservice.com.ua^$third-party
 ||jag.mews.ru^
 ||japan.leit.ru/button.php?
 ||jet3.ayola.net/cn.php?
@@ -862,6 +864,7 @@ l||domika.msk.ru^
 ||mytraf.ru^$third-party
 ||nadavi.net^$third-party
 ||narod.kz/img.php?
+||needtest.ru^$third-party
 ||nekki.ru/banner.php?
 ||neosap.ru^$third-party
 ||neosmi.ru^$third-party
@@ -967,6 +970,7 @@ l||domika.msk.ru^
 ||popups.ru^$third-party
 ||popuptraf.$third-party
 ||popvtop.ru^$third-party
+||pornonochki.com^$third-party
 ||poshalim.$third-party
 ||poza-69.ru^$third-party
 ||pozzitiv.ru^$third-party
@@ -996,6 +1000,7 @@ l||domika.msk.ru^
 ||protrafv2.com^$third-party
 ||price.ru^$third-party
 ||puls.lv/$third-party
+||pustoty.net^$third-party
 ||qb.ru/buttons/
 ||qip.ru/i/$object,third-party
 ||qle.ru/cgi-bin/
@@ -1209,6 +1214,7 @@ l||domika.msk.ru^
 ||traf.spb.ru^
 ||traff.dirkino.su^
 ||trafficmaxx.de/thx.php?
+||traffikk.biz^$third-party
 ||traffmaster.ru^$third-party
 ||traffsale.com^$third-party
 ||traffsaler.com^$third-party
@@ -1476,6 +1482,7 @@ yandex.ru,yandex.ua##[class*="spec-adv"]
 ||kiks.yandex.
 ||yabs.yandex.*=
 ||yabs.yandex.*?
+||yabs.yandex.*/show/$third-party
 ||yandex.*/cy?base=0&host=
 
 ! Google (правила для Firefox 4, временные, в будущем должно быть исправлено в EasyList)
@@ -1495,7 +1502,9 @@ yandex.ru,yandex.ua##[class*="spec-adv"]
 ||2krota.ru/rekla/
 3dnews.ru###topBanners
 4pna.com##BODY > CENTER:nth-of-type(-n+2)
+5ka.su##.ban
 ||5ka.ru/js/banners.js
+||5ka.su/js/girls.php
 ||5ka.ru/jscr/$subdocument
 689.ru##A[href="http://musbest.com/"]
 7sl.ru##NOINDEX A[target="_blank"] > IMG
@@ -1602,6 +1611,7 @@ dni.ru##.column.ad
 dni.ru##.partners-links.column.drug-drop.crop
 dni.ru###header-banner
 dni.ru##LI.links
+dosuglend.ru##[id^="tibu_container_"]
 dreamprogs.net##.content DIV#lfwar:first-child
 dreamprogs.net##.war3
 ||dump.ru/i/
@@ -1661,6 +1671,8 @@ filmix.net###body #rightcol
 filmix.net##.banner
 finiz.ru##.topline
 finmarket.ru###bbInformer231
+filorama.ru###dle-content > TABLE:first-child
+||filorama.ru/*/banner.swf
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
 ||fishki.net/*/ad/b/
 fontanka.ru##.ad
@@ -1749,6 +1761,8 @@ inosmi.ru##.banners
 interfax.ru###bbInformer233
 interfax.ru##TD[width="1"] + TD[width="747"] > DIV[style]
 interfax.ru/RCL/BAN/
+interfax.by##.banner
+||interfax.by/files/$object
 ||internethalyava.ru/*/area_banners/
 ||internethalyava.ru/sites/*/files/flash/
 investoday.ru##IMG[width="460"][height="60"]
@@ -1770,8 +1784,12 @@ izvestia.ru###topBanner
 izvestia.ru##IFRAME[id^="snf"]
 
 ! J
+jeder.ru###colwrap > .module-notitle
 
 ! K
+kapriz.info##.market + TABLE[width="100%"]
+kapriz.info##A[href^="http://kapriz.info/engine/go.php?url="]
+||kapriz.info/tizer/
 ||kbp.com.ua/images/banners/
 keep4u.ru###r_bottom
 keep4u.ru###r_top
@@ -1788,6 +1806,7 @@ kinopoisk.ru##.superb
 ||kinopoisk.ru/images/bnnr/
 ||kinopoisk.ru/images/re/*.*?
 @@/images/*/*/0/script.js?$domain=kinopoisk.ru
+kinostok.net##.sp_search2
 ||kleo.ru/ban/
 ||img.lbs.km.ru/mod/_banners/
 kodges.ru##.banner-fullstory
@@ -1819,6 +1838,8 @@ liveday.ru##TD[width="367"] > NOINDEX + TABLE[width="367"]
 lost-abc.ru##[width="630"][height="90"]
 ||lostfilm.tv/img/
 lovesoft.ru###dle-content > CENTER > A[target="_blank"]
+lu4ok.ru###dle-content > .modul-search
+||lu4ok.ru/partnerearning/
 
 ! M
 macdigger.ru###main > .box[style]
@@ -1841,6 +1862,7 @@ mozilla-russia.org##[id$="Col_advC"]
 mozilla-russia.org###modex
 mozutil.mozilla-russia.org##.footer > SPAN > DIV[style="text-align: left;"] > DIV[style="text-align: right;"]
 mp3-online.com.ua###popupWnd
+||mp3bit.ru/ban/
 mskd.ru##TABLE[width="600px"][align="center"]
 ||mskd.ru/img/*x*_
 ||multitran.ru/ban/
@@ -1988,7 +2010,9 @@ samlab.ws###soft-new A[target="_blank"] > IMG
 samlab.ws##.main > DIV:not(.about):first-child
 samlab.ws##.main > TABLE
 samlab.ws##.soft-day:not(:first-child) > .box
+||sat-digest.com.ua/agc/
 ||scriptiks.ru^$object
+||serial.co.ua/java/PopIn.js
 ||seti.ee/*reklaam/
 ||severodvinska.net/fws/
 sfw.org.ua##.ws_main
@@ -2072,11 +2096,13 @@ thevista.ru##[href^="http://referal.begun.ru/partner.php?oid="]
 ||s.tfile.ru/kf/
 thg.ru##.mm_item[style="height: 43px;"]
 ||thg.ru/images/spons/
+topfresh.ru##.sp_search2
 topnews.ru###headbanner
 topnews.ru##.newsOfPartners
 topnews.ru##.bn_ir
 ||topnews.ru^*/banners/
 ||topnews.ru/iframe/
+||torrent-games.net/media/?
 torrentino.ru###siders
 torrentino.ru##.a-panel
 torrentino.ru##.promo-item
