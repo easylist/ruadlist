@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: H2GgsHeaA3qkZS826mhlPw
+! Checksum: dgVtTiqsGM4k4yGW/DJNiA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1798,7 +1798,8 @@ keep4u.ru###r_top
 kharkovforum.com##A[href^="http://banner.ua/"]
 kino-online.org##IMG[height="120"][width="600"]
 kino-zal.tv##BLINK
-kinobanda.net##TD.main-bg A[target="_blank"]
+||kinobanda.net^$image
+@@||kinobanda.net/*/$image
 kinobaza.net##A.red
 kinobaza.net##A[href="/out.php"]
 ||kinobaza.net/babes/
