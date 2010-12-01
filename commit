@@ -1,9 +1,9 @@
 #!/bin/bash
 svn update
-./checksum.pl advblock.txt
-./checksum.pl antinuha.txt
-./checksum.pl bitblock.txt
-./checksum.pl cntblock.txt
+./hash.pl advblock.txt
+./hash.pl antinuha.txt
+./hash.pl bitblock.txt
+./hash.pl cntblock.txt
 svn diff advblock.txt
 svn diff antinuha.txt
 svn diff bitblock.txt

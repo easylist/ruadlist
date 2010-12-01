@@ -2,13 +2,13 @@
 @echo Обновление подписок...
 tortoiseproc /command:update /path:"." /closeonend:3
 @echo Расчёт контрольных сумм:
-checksum.pl advblock.txt
+hash.pl advblock.txt
 @echo * advblock.txt
-checksum.pl antinuha.txt
+hash.pl antinuha.txt
 @echo * antinuha.txt
-checksum.pl bitblock.txt
+hash.pl bitblock.txt
 @echo * bitblock.txt
-checksum.pl cntblock.txt
+hash.pl cntblock.txt
 @echo * cntblock.txt
 @echo Внесение изменений на сервер...
 tortoiseproc /command:commit /path:"."
