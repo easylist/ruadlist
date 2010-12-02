@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 43ma+ocsVICrmOQlmDTo9w
+! Checksum: ARnQ3FL0yZzyRmB7snyY9w
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -96,6 +96,8 @@ _160x240
 ##A[href*="/download.php?user_id="][href*="&q="]
 ! Реклама в поиске для партнёров Google. Если бы не AdBlock for Chrome, достаточно было бы www.google.ru##table[cellpadding="0"][width="100%"][style^="border: 1px solid"] или google.ru##DIV[align="left"] + TABLE[width="100%"][cellpadding="0"] (как было раньше).
 www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
+! Скрытие ссылок на адривер. Пока с привязкой к конкретным доменам, а дальше — посмотрим.
+compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://adfarm
@@ -1580,9 +1582,7 @@ cn.ru##[class*="rx"][class*="neta"]
 ||comnews.ru/ds_comnews/img_object/
 ||comnews.ru/ds_comnews/img_pictures/*.gif
 compress.ru##NOINDEX > A[rel="nofollow"][target="_blank"]
-compulenta.ru##A[href^="http://ad.adriver.ru/"]
 compulenta.ru##A[href^="/bitrix/rk.php?"]
-computerra.ru##._reachbanner_ TD[width="240"]:last-child
 coolsoch.ru###rich_media
 coolsoch.ru###xyz
 coolsoch.ru##NOINDEX
@@ -2240,7 +2240,6 @@ gismeteo.com,gismeteo.lt,gismeteo.ru###ad-lb
 gismeteo.com,gismeteo.lt,gismeteo.ru###ad-rian
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru,gismeteo.ua###ad-top
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru,gismeteo.ua###logo
-gismeteo.ru##A[href^="http://ad.adriver.ru/cgi-bin/click.cgi?sid="]
 ||gismeteo.*/rian.html|
 
 ! Overclockers.RU
