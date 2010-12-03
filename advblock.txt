@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: yew1sIgGIct3dVz/b2JWsg
+! Checksum: ZPaca8O70sqkAvDR6kbL8Q
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -102,7 +102,7 @@ _160x240
 ! Именуют себя ВСкачке, ВЗагрузе, маскируются под RapidShare и прочее.
 ##A[href*="/download.php?sub_id="][href*="&q="]
 ##A[href*="/download.php?user_id="][href*="&q="]
-! Реклама в поиске для партнёров Google. Если бы не AdBlock for Chrome, достаточно было бы www.google.ru##table[cellpadding="0"][width="100%"][style^="border: 1px solid"] или google.ru##DIV[align="left"] + TABLE[width="100%"][cellpadding="0"] (как было раньше).
+! Реклама в поиске для партнёров Google.
 www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ! Скрытие ссылок на адривер. Пока с привязкой к конкретным доменам, а дальше — посмотрим.
 compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
@@ -775,7 +775,6 @@ l||domika.msk.ru^
 ||link.ru/$third-party
 ||linkbuy.biz^$third-party
 ||linkexchange.$third-party
-||linkhelp.clients.google.com/tbproxy/lh/wm
 ||linktraff.ru^$third-party
 ||linkwm.ru^$third-party
 ||linon.ru/links*.php?
@@ -1494,9 +1493,6 @@ yandex.ru,yandex.ua##[class*="spec-adv"]
 ||yabs.yandex.*?
 ||yabs.yandex.*/show/$third-party
 ||yandex.*/cy?base=0&host=
-
-! Реклама на доменах Google (существующие правила из EasyList не работают в Fx4.0)
-###rhs_block > #mbEnd[cellspacing="0"][style^="padding:"]
 
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
 
