@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: VLvap2nqVgu8M5bEkii4EA
+! Checksum: ye7pL79KRQogsJCjgY3Z/Q
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1495,9 +1495,8 @@ yandex.ru,yandex.ua##[class*="spec-adv"]
 ||yabs.yandex.*/show/$third-party
 ||yandex.*/cy?base=0&host=
 
-! Google (правила для Firefox 4, временные, в будущем должно быть исправлено в EasyList)
-###mbEnd[cellspacing="0"][cellpadding="0"][style^="padding:0;"]
-###mbEnd[cellspacing="0"][style="padding:0;white-space:nowrap"]
+! Реклама на доменах Google (существующие правила из EasyList не работают в Fx4.0)
+###rhs_block > #mbEnd[cellspacing="0"]
 
 ! = Зачистка сайтов (блокировка и скрытие) ====================================
 
