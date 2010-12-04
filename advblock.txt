@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ZPaca8O70sqkAvDR6kbL8Q
+! Checksum: z+pvY0JzF+RmuVqWFUlA5A
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -76,6 +76,7 @@ _160x240
 ##.advertblock
 ###adriver_middle
 ###AFF_popup
+###cyberinfrm_18
 ###eropromo_icq
 ###floatyContent
 ###fp_adv
@@ -332,6 +333,7 @@ p://lank*.ru/
 ||addweb.ru^$third-party
 ||adfox.ru^$third-party
 ||adfun.ru^$third-party
+||adgo-online.de^$third-party
 ||adhands.ru^$third-party
 ||adjes.ru^$third-party
 ||adland.ru^$third-party
@@ -523,6 +525,7 @@ p://lank*.ru/
 ||dating-exchange.com^$third-party
 ||dating.poleznosti.ru/page/
 ||dclick.ru^$third-party
+||ddkdr.ru^$third-party
 ||delphisources.ru/pages/scripts/recl_
 ||dewis.h1.ru^
 ||dewis.spb.ru^
@@ -941,6 +944,7 @@ l||domika.msk.ru^
 ||pindotrafforg.54.com1.ru^
 ||pingmedia.ru^$third-party
 ||pingwin.net.ua/www/delivery
+||pirojok.net^$third-party
 ||piter.com/files/b_a_n_n_e_r_s/
 ||planetaua.net^$third-party
 ||play2.biz^$third-party
@@ -1633,13 +1637,11 @@ dwg.ru##TD[background="../img/back22.gif"] > TABLE
 ||echo.msk.ru^*-misc-banner
 echo.msk.ru###head > .menuadd
 emuparadise.org###framework > TBODY > TR:first-child
-epidemz.net###cyberinfrm_18
 epidemz.net##A[href^="http://epidemz.net/"] + A[target="_blank"]
 epidemz.net##A[target="_blank"] > FONT[color="#CC0000"]
-epidemz.net##TD > DIV > A[target="_blank"] > IMG
-epidemz.net##TD + TD + TD[width="135"]
-epidemz.net##TD[height="19"] TD[style] > A[target="_blank"][href^="http://"]
-epidemz.net##[width="135"] > TABLE[style]:first-child + TABLE[style]
+epidemz.net##TD[width="135"]:first-child + TD + TD[width="135"]
+epidemz.net##P[align="center"] > A[target="_blank"]
+epidemz.net##A[href^="http://media-get.ru/"]
 ||etorrent.ru/js/etorrent.ru.js
 ||b.ex.ua/$~stylesheet
 eva.ru###fft
@@ -2136,6 +2138,8 @@ translate.ru###b_adv
 translate.ru##[id^="TranslationAdvert"]
 ||translit.ru/pict/banners/
 travelgps.com.ua##TD[style*="170px;"][style*="vertical-align"]
+trinixy.ru##UL#nav > NOINDEX
+||trinixy.ru/r/
 ||trud.ru/ad/
 ||tumix.ru/*/banners/
 ||turbo.az/banners/
