@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: XDa7Y1K4qWEAVZk5Fasqag
+! Checksum: PDoOCiRHrnRr/UaL5tfa8A
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -471,6 +471,7 @@ p://lank*.ru/
 ||c.ile.ru^
 ||c2001.ent.spyrix.ru/user.aic?
 ||cachewww.euro-play.net/bnr/
+||captainsofcrush.ru^$third-party
 ||cash.loadsex.ru^
 ||cash4ru.com^$third-party
 ||cashimtrap.com^$third-party
@@ -599,6 +600,7 @@ l||domika.msk.ru^
 ||filmplus.ru^$third-party
 ||finbs.ru^$third-party
 ||fip.net.ru/img/newsex/*.jpg
+||fitsport.ru/images/banners/
 ||flapoint.ru^$third-party
 ||flash.eastweb.ru/i/files/
 ||flasher.ru/data/images/swf/
@@ -1553,7 +1555,11 @@ apple-russia.ru##.bottom_adv
 apple-russia.ru##.lavr-banner
 ||apple-russia.ru/_banners/
 ||argumenti.ru/images/partners/
-||neova.auto.ru^
+athlete.ru##A[target="_blank"] > IMG[width="120"][border="0"][style]
+athlete.ru##A[target="_blank"] > IMG[height="90"][border="0"][alt]
+forum.athlete.ru##.nopad
+forum.athlete.ru###userlinksguest > .raw1
+||athlete.ru/pic/*$object
 azart.net.ua##A[href="/adv.php"]
 
 ! B
@@ -1755,6 +1761,7 @@ hmn.ru##A > IMG[width="240"]
 ||ww.hmn.ru^
 hotcharts.ru##[class$="_banner"]
 ||hotcharts.ru/img/*_700x150
+hotsoft.net.ru##NOINDEX > TABLE[width="100%"]
 ||hottabych.net^$object
 huyandex.com##TD[width="250"] + TD > TABLE[cellspacing="0"][cellpadding="0"][border="0"]
 hwp.ru##[class^="promo"]
@@ -1902,6 +1909,7 @@ nashkiev.ua##.block-adv
 ||nashkiev.ua/style/b/
 natural-medicine.ru###GNM30
 natural-medicine.ru##[id^="teaser"]
+||neova.auto.ru^
 ||neverfold.ru/opr/*_ad.
 new-films.biz###dle-content > NOINDEX
 newcars.ua##DIV[style*="/images/topb_bg.gif"]:first-child
@@ -1918,6 +1926,7 @@ ngs.ru##[id^="banner"]
 ngs.ru##.logo-banners
 ngs.ru##.nb
 ngs.ru###nbs-block
+nightwarez.ru##TD[width="190"] + TD[width="100%"] > TABLE[width="100%"][cellspacing="0"][cellpadding="0"][border="0"]
 nnm-club.ru##CENTER > TABLE[id^="mc_"]
 nnm-club.ru##[id^="x"] > IFRAME
 nnm.ru###branding_link
