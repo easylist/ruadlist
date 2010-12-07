@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: iut6Z9C0jRfvs4awHmKzog
+! Checksum: yFy2ABiHq8uMuPAaTIeeMA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -2053,6 +2053,9 @@ samlab.ws##.main > TABLE
 samlab.ws##.soft-day:not(:first-child) > .box
 ||sat-digest.com.ua/agc/
 ||scriptiks.ru^$object
+!Правило для блокировки рекламы при заблокированном JavaScript
+||securitylab.ru/bitrix/$image
+@@||securitylab.ru/bitrix/*/$image
 ||serial.co.ua/java/PopIn.js
 ||seti.ee/*reklaam/
 ||severodvinska.net/fws/
