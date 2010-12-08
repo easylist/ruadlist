@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ujg951rVNtqdqLHUbaw4eg
+! Checksum: RwD7dpQ1YExqifqkNJCqhA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -89,6 +89,7 @@ _160x240
 ###zhlobam_net_informer_console
 ##.adbckgrnd
 ##.bc_adv_container
+##.bc-adv
 ##.madv
 ##.mediaget
 ##.surbis_banner
@@ -113,7 +114,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 |http://adfarm
 |http://adstil.
 |http://adv.
-|http://b.$object
 |http://b.*/b/$domain=~imagepix.org
 |http://b.*/iframe/
 |http://mads.
@@ -179,6 +179,7 @@ sexvodnokalssnikah
 
 ! = «Плохие» сайты (в основном попапы) ========================================
 ||avska.com^
+||devochki.cz^
 ||goodsbrowser.com^
 ||kupikupon.com.ua^
 ||livejasmin.com^
@@ -186,7 +187,7 @@ sexvodnokalssnikah
 ||pokajem.*.com^
 ||vzarabotke.ru^
 ||zoy.org/
-avska.com,goodsbrowser.com,kupikupon.com.ua,livejasmin.com,prodom2.com,tele-dom2.com,telesekas.com,tvsxsite.com,vzarabotke.ru,zoy.org##:root
+avska.com,devochki.cz,goodsbrowser.com,kupikupon.com.ua,livejasmin.com,prodom2.com,tele-dom2.com,telesekas.com,tvsxsite.com,vzarabotke.ru,zoy.org##:root
 
 ! = Общие фильтры =============================================================
 .all.by/
@@ -291,6 +292,7 @@ p://lank*.ru/
 ||1-traf.net^$third-party
 ||1000zakazov.ru^$third-party
 ||100projects.ru^$third-party
+||123service.ru^$~script,third-party
 ||13rus.ru/img/
 ||1ha.ad.md^$third-party
 ||1invite.ru^$third-party
@@ -437,6 +439,7 @@ p://lank*.ru/
 ||bantex.ru^$third-party
 ||bashnya.ru^$third-party
 ||basketfan.my1.ru^$third-party
+||bazar.penza.su^$third-party
 ||bb.stream24.ru^
 ||bbn.by/t.bbn?
 ||belsoft.tut.by/i/$object
@@ -455,6 +458,7 @@ p://lank*.ru/
 ||bizweb.ru/button.php?
 ||blogan.ru^$third-party
 ||blogun.ru^$third-party
+||blowclick.ru^$third-party
 ||bn.meteo.by/ad
 ||bn.ohah.ru^
 ||bn.orthodoxy.ru^
@@ -923,7 +927,7 @@ l||domika.msk.ru^
 ||owebmoney.ru^$third-party
 ||oxysoft.ru^$third-party
 ||ozenuydu.com/resim
-||ozon.ru/graphics/$third-party
+||ozon.ru/$script,third-party
 ||p-rank.info/*?
 ||p-rank.org/pr.php?
 ||p-search.org^$third-party
@@ -1124,6 +1128,7 @@ l||domika.msk.ru^
 ||simpletop.net/images/424/
 ||site-rank.com^$third-party
 ||sitemeter.com^$third-party
+||sitetraff.ru^$third-party
 ||sj1.ru/cgi-bin/
 ||sj10.ru/cgi-bin/
 ||sj11.ru/cgi-bin/
@@ -1508,6 +1513,7 @@ yandex.ru,yandex.ua##[class*="spec-adv"]
 
 ! #
 100let.net##[id^="SR_PopOver"]
+||1nsk.net/data/wealth/
 ||2baksa.net/download/
 @@||2baksa.net/download/*/$image
 2krota.ru###dle-content > TABLE:first-child CENTER
@@ -1569,6 +1575,7 @@ autonews.ru##[class^="banner_"]
 azart.net.ua##A[href="/adv.php"]
 
 ! B
+||b.inbox.lv/b/
 ||b.netall.ru^
 banki.ru##SCRIPT[src="http://www.banki.ru/_lib/gemiusTraffic.js"] + TABLE
 banki.ru##DIV.b-signin + * + TABLE
@@ -1676,6 +1683,7 @@ f1news.ru###bannerBlock
 f1news.ru###newsexch
 f1news.ru###rightBanner240
 f1news.ru###yad
+fansubs.ru##.row2 A[target="_blank"]
 fast-torrent.ru##.ad
 ||fast-torrent.ru/*banner
 ||fast-torrent.ru/media/$object
@@ -1751,6 +1759,7 @@ gagadget.com##[style*="width: 240px"][style*="height: 350px"]
 ||galya.ru^*/clients/
 gamer.ru##.br[style="width: 240px; height: 400px;"]
 gamer.ru##BR + TABLE[width="630"]
+gazeta.ru##.vypolzen_out
 ||gde.ru/img/*320x1
 ||ggym.ru/popover.js
 gorockop.ru##.side_block
@@ -1762,7 +1771,6 @@ gulyai.ru###dle-content > NOINDEX
 habrahabr.ru##.banner
 habrahabr.ru##.company-widget
 habrahabr.ru##.live.help
-haleava.net##.bc-adv
 haleava.net##CENTER > NOINDEX > A[target="_blank"]
 hdtracker.ru##BODY > CENTER:first-of-type
 hdtracker.ru##TD[width="100%"] + TD[width="160"][valign="top"]
@@ -1969,6 +1977,7 @@ obnimau.ru##NOINDEX > CENTER > TABLE
 ochevidec.net##A[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejournal"]):not([href*="icq"])
 ||odnoklassniki.ru/res/*/promo/*/
 ||online.multilex.ru^*banner
+onlyfilms.ru##NOINDEX > LI.m
 opennet.ru###adv2
 opennet.ru###adv3
 opennet.ru###ibm_adv
@@ -2246,9 +2255,10 @@ x-console.com##A[href*="=banner&"]:not([href*=".x-console.com%2Fmagazine"])
 x-console.com##[id*="banner"]
 x-console.com##[class*="banner"]
 xmages.net###img_obj + .container_box
-||xmages.net/msg.php
 x-torrents.ru##TD.reklam
 ||x-torrents.ru/xxx/
+||xmages.net/msg.php
+xyya.net##A[target="_blank"] > IMG[width="300"][height="420"]
 
 ||yapfiles.com^$third-party
 yarportal.ru##[style$="height: 60px;"]
