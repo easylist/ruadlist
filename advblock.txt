@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: osujTs0Bks4RhdJoTJXQiQ
+! Checksum: SpGRfeBw5XrSe4WdnJKOoQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -178,6 +178,7 @@ sexvodnokalssnikah
 /out.php?sid=$script
 
 ! = «Плохие» сайты (в основном попапы) ========================================
+||avska.com^
 ||goodsbrowser.com^
 ||kupikupon.com.ua^
 ||livejasmin.com^
@@ -185,7 +186,7 @@ sexvodnokalssnikah
 ||pokajem.*.com^
 ||vzarabotke.ru^
 ||zoy.org/
-goodsbrowser.com,kupikupon.com.ua,livejasmin.com,prodom2.com,tele-dom2.com,telesekas.com,tvsxsite.com,vzarabotke.ru,zoy.org##BODY
+avska.com,goodsbrowser.com,kupikupon.com.ua,livejasmin.com,prodom2.com,tele-dom2.com,telesekas.com,tvsxsite.com,vzarabotke.ru,zoy.org##BODY
 
 ! = Общие фильтры =============================================================
 .all.by/
@@ -712,6 +713,7 @@ l||domika.msk.ru^
 ||img.topshops.com.ua/images/buttons/
 ||inetlog.ru^$third-party
 ||info.webalta.net/reliancebutton?
+||info-dvd.ru/*/rotator/
 ||informers.ukr.net^$third-party
 ||infosec.ru/common/data/pub/images/articles/
 ||inheart.ru^$third-party
@@ -1611,6 +1613,9 @@ cyberinfo.ru###bl_05
 
 ! D
 d09032009.narod.ru##A[target="_blank"] > IMG
+danilidi.ru##BODY > NOINDEX
+danilidi.ru##TABLE[width="1000"][height="68"]
+||danilidi.ru/img/Banners/
 delfi.ua###column4 > DIV > .widgetWrapper
 delfi.ua##.datet
 delfi.ua##.klucis
@@ -1827,9 +1832,8 @@ keep4u.ru###r_top
 kharkovforum.com##A[href^="http://banner.ua/"]
 kino-online.org##IMG[height="120"][width="600"]
 kino-zal.tv##BLINK
-kinobanda.net##.main-body A[target="_blank"] > IMG[border="0"]
-||kinobanda.net^$image
-@@||kinobanda.net/*/$image
+kinobanda.net##.main-bg A[target="_blank"] > IMG
+||kinobanda.net/120x600
 kinobaza.net##A.red
 kinobaza.net##A[href="/out.php"]
 ||kinobaza.net/babes/
