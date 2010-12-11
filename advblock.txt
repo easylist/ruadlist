@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: wVPU8uVXu0sNqTPZrmwaVg
+! Checksum: K7rRgBDmlbYQgciq7ACUHw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -129,16 +129,15 @@ ban_click
 /cgi-bin/iframe/*
 /images/adv/*
 /images/ban/*
+! $domain=arendator.ru|file-bit.net|fitsport.ru|forum-profit.ru|fuzz-magazine.ru|kbp.com.ua|monetti.ru
+/images/banners/*
 /images/bn/*
 /images/rek/*
 /images/rekl/*
 /img/bn/*
 /img/rekl/*
 /imgads/*
-! /mybaner/*baner - более точная версия
 /mybaner/*
-! /partner.$domain=~8088.ru|~elance.com|~partner.microsoft.com|~r01.ru|~yandex.ru
-! /partners.$domain=~beeline.ru|~mail.qip.ru|~qwerty.ru|~yandex.ru
 /reklam/*
 _reklama$domain=~animeonline.su
 /reklama_$domain=~linux.ptz.ru
@@ -595,7 +594,6 @@ l||domika.msk.ru^
 ||faza.ru/img.php?
 ||fbs.for-ua.org.ua^
 ||videoklass.ru^$third-party
-||file-bit.net/images/banners/*
 ||file-online.ru^$third-party
 ||filecontrol.ru^$third-party
 ||filepost.ru^$third-party
@@ -604,7 +602,6 @@ l||domika.msk.ru^
 ||filmplus.ru^$third-party
 ||finbs.ru^$third-party
 ||fip.net.ru/img/newsex/*.jpg
-||fitsport.ru/images/banners/
 ||flapoint.ru^$third-party
 ||flash.eastweb.ru/i/files/
 ||flasher.ru/data/images/swf/
@@ -857,7 +854,6 @@ l||domika.msk.ru^
 ||modastro.ee^$third-party
 ||moijs.com^$third-party
 ||mokuz.ru/vipcounter/
-||monetti.ru/images/banners/
 ||money.loveplanet.ru/nb/
 ||moneysyst.biz^$third-party
 ||moneyteacher.ru^$third-party
@@ -1572,7 +1568,6 @@ apple-russia.ru##.adv_small
 apple-russia.ru##.bottom_adv
 apple-russia.ru##.lavr-banner
 ||apple-russia.ru/_banners/
-||arendator.ru/images/banners/
 ||argumenti.ru/images/partners/
 athlete.ru##A[target="_blank"] > IMG[width="120"][border="0"][style]
 athlete.ru##A[target="_blank"] > IMG[height="90"][border="0"][alt]
@@ -1734,7 +1729,6 @@ forum-profit.ru###threadslist > TBODY:not([id]):last-child
 forum-profit.ru##[id^="edit"] > [id^="post"]:not(:first-child):last-child
 forum-profit.ru##[id^="edit"] > .tborder:not([id])
 ||forum-profit.ru/images/partners/
-||forum-profit.ru/images/banners/
 ||forum-profit.ru/images/nordfx/
 ||ru-board.com*/temp/
 ||ru-board.com*/xmtmp/
@@ -1760,7 +1754,6 @@ free-torrents.org##.layout
 fullgames.ru###left > DIV:not(#ms)
 fullgames.ru###main + #right
 fullgames.ru##CENTER > NOINDEX > A[target="_blank"]
-||fuzz-magazine.ru/images/banners/
 
 ! G
 gagadget.com###footer-holding
@@ -1845,7 +1838,6 @@ jeder.ru###colwrap > .module-notitle
 kapriz.info##.market + TABLE[width="100%"]
 kapriz.info##A[href^="http://kapriz.info/engine/go.php?url="]
 ||kapriz.info/tizer/
-||kbp.com.ua/images/banners/
 keep4u.ru###r_bottom
 keep4u.ru###r_top
 kharkovforum.com##A[href^="http://banner.ua/"]
