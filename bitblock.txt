@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: bzPxR8D95RXlwEFVVoPymA
+! Checksum: 67QjaIL0zIUg5/Ba2N+oiQ
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -13,7 +13,7 @@
 !==============================================================================
 
 != Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
-!= Тут не все правила - см. подписку фанбоя ниже.  
+!= Тут не все правила - см. подписку фанбоя ниже.
 
 !------------ Facebook --------------------------------------------------------
 ~facebook.com###facebook
@@ -144,37 +144,38 @@ _lj_times_
 /ljtimes/*
 21region.org##.logo
 anidub.com##.art-header
-||cybermusic.ru/*/flash_logo.swf
+||cbox.ws/box/$third-party
 code.google.com##.vt.issuecomment.deleted
+||cybermusic.ru/*/flash_logo.swf
+||echo.msk.ru/att/element-*-misc-*.gif
 experts-exchange.com##.allZones,.vqpsdBlurredAnswers,.copyrightFrame,.footnoteNotice,#pageRight
+||experts-exchange.com^*/scripts/
+||forumkiev.com/flesh/
 forums.warforge.ru##BODY > DIV:nth-of-type(-n+12):not([id])
 forums.warforge.ru###logostrip
-||shop.warforge.ru/rotation/
+||fotki.yandex.ru/get/*/wind-hide.
 freakenergy.ru###footer > NOINDEX
 freakenergy.ru##.sidebar > DIV > NOINDEX
 fullgames.ru###main > NOINDEX
-mail.ru##.goods
-ozon.ru##.news_block
-rutor.org##.mediaget
-rutor.org###toolbar
-rutracker.org###sidebar1
-sfw.org.ua##IMG[width="350"][alt*="userbar"]
-torrents.net.ua###smschatframe
-youtube.com##.homepage-side-block > :not(#stat-module-wrapper-statmodules_inbox):not(#homepage-whats-new)
-||cbox.ws/box/$third-party
-||echo.msk.ru/att/element-*-misc-*.gif
-||experts-exchange.com^*/scripts/
-||forumkiev.com/flesh/
-||fotki.yandex.ru/get/*/wind-hide.
-||glitter-graphics.net^$third-party
 ||glitterfy.com^$third-party
+||glitter-graphics.net^$third-party
 ||google.*/brand?form=
 ||icefm.ru^$third-party
 ||informer.uinov.ru^$third-party
 ||internetmap.info^$third-party
 ||levonevski.net^$object
+mail.ru##.goods
+ozon.ru##.news_block
+rutor.org##.mediaget
+rutor.org###toolbar
+rutracker.org###sidebar1
 ||rutube.ru/themes/realnyje-patcany/
+sfw.org.ua##IMG[width="350"][alt*="userbar"]
+||shop.warforge.ru/rotation/
 ||static.newsru.*/img/bg.gif|
+terabit.biz##.cnt2l
+torrents.net.ua###smschatframe
+youtube.com##.homepage-side-block > :not(#stat-module-wrapper-statmodules_inbox):not(#homepage-whats-new)
 
 ! Сайты на движке TorrentPier
 rutracker.org,rutracker.ru,tapochek.net,free-torrents.org,pornolab.net,gardnet.tomsk.ru,myy.su,mortan.info,underverse.su,rus-torrents.ru,torrents.net.ua,ya-torrent.com,nnbt.org,21region.org,wtracker.ru,goldenshara.com,data-torrents.com###page_footer
@@ -314,7 +315,7 @@ _userbar$image
 !- блокирокву мусора из социальных сетей. -------------------------------------
 !------------------------------------------------------------------------------
 
-! Fanboy's Annoyance list Addon 
+! Fanboy's Annoyance list Addon
 ! Updated: 15 Sep 2010
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked ads or problems by email or in our forums
@@ -745,3 +746,4 @@ zap2it.com###twitter
 ~digg.com##.digg-button
 ~reddit.com##a[href="http://www.reddit.com/submit"]
 ~reddit.com###share-reddit
+
