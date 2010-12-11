@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: JjVAwRjoVp/xeBe8b8jHRA
+! Checksum: Roe8YSr6WidJrE9Y6YOYhg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -11,12 +11,12 @@
 !==============================================================================
 ! Если на вашем любимом сайте осталась реклама и она мешает или
 ! если наша подписка создаёт проблемы при его работе, то свяжитесь с нами.
-! Пишите о возникших проблемах в тему на форуме по адресу: 
+! Пишите о возникших проблемах в тему на форуме по адресу:
 ! http://forum.mozilla-russia.org/viewtopic.php?pid=409520
 ! Если Вы пользуетесь функцией Adblock Plus "Сообщить о проблеме...",
 ! то желательно указывать свой адрес эл. почты, чтобы нам проще было вместе решить проблему.
 ! Комментарии желательно писать на русском.
-! Прежде чем сообщать об ошибке, попробуйте 
+! Прежде чем сообщать об ошибке, попробуйте
 ! обновить подписку и затем обновить страницу.
 ! Для защиты от порно используйте расширение CensureBlock.
 
@@ -2105,36 +2105,27 @@ shkolazhizni.ru##.banner_text
 slo.ru##[class^="adv_"]
 ||slo.ru/img/*300x200
 ||slo.ru/img/banners/
-! tbd:bookmark
-slon.ru###alfa_ad
-slon.ru##.ishow
-||slon.ru/*intel_
-slona.net##[id^="lp_banner_"]
 ||smi2.ru/data/js/
-||sobesednik.ru/$object
-||sobesednik.ru/$subdocument
-||soccer.ru/js/banner.php?
+||sobesednik.ru^$object
 soccer.ru##.linksblock
 soccer.ru##TD[width="120px"] > DIV[style] > NOINDEX
+||soccer.ru/js/banner.php?
 soft-arena.ru##NOINDEX
-soft-best.ws/forum/pict_4_rotator/
-soft-best.ws##NOINDEX
-soft-best.ws/$object
-soft-free.ru##A[href="http://goldfin.ru"]
-soft-free.ru##TD + * FORM + * + * + * + * + * + * TD.modulecontent
-softarchive.net##.box.b728x90
-softnavigator.ru##BODY > TABLE > TBODY > TR:first-child > TD:nth-child(3) > DIV:first-child + TABLE[width="100%"]
-softnewsportal.ru##.short > NOINDEX
+soft-best.ws##.slink
+soft-best.ws###dle-content > NOINDEX
+softarchive.net##.b728x90
+softnavigator.ru##TR:first-child > TD:nth-child(3) > DIV[align="center"]:first-child + TABLE[width="100%"]
+softnewsportal.ru##.content > DIV:not(#dle-content) > .news
 softodrom.ru##.prgentry.nobottom
-||softoroom.net/forex/
+softportal.com##.TblBorderCLR TD[width="25%"] + TD[width="75%"][style] > TABLE
+softportal.com##.TblOBan
+softportal.com##.TblRLCLR TR > TD:first-child:last-child > TABLE[width="100%"]:first-child
+softportal.com##.TblTopBanCLR
 ||sony-club.ru/img/verticalbanner
 sotovik.ru###banner
-||sovsport.ru/ib
-||sovsport.ru/s/bs/
-sport-express.ru##[style*=".sport-express.ru/img/banners/"]
-||sport.*ua/images/$object
+||sovsport.ru/ib/
+||sport.ua/images/$object
 sprazdnikami.ru###floatdiv
-softportal.com##.TblBorderCLR TD[style="padding: 0pt 25px;"] > TABLE[width="100%"]
 sr-week.ru##[class^="advt"]
 sr-week.ru##.sponsorslist
 stolica.ru###stmenu
@@ -2145,68 +2136,52 @@ stopgame.ru##.ban468w
 ||stopgame.ru/images/partners/
 ||studyguide.ru^$object
 styanulo.ru##.banner
-subscribe.ru##.banner640
-subscribe.ru##A[href*="link.subscribe.ru"]
-sudga.ru##TD.alt3
+sudga.ru##IMG[width="180"][height="80"]
+sudga.ru##IMG[width="225"][height="80"]
 
+! T
+! tbd:skipped:begin
 tapochek.net###sidebar1-wrap
 tapochek.net##.tCenter.pad_2 > DIV[align="center"]
 tapochek.net##A[target="_blank"] > IMG
 ||tapochek.net^$object
-tehnosila.ru###banner_street
+! tbd:skipped:end
 telestrekoza.com##UL.xoxo.blogroll
-terabit.biz##NOINDEX
-terabit.biz##.cnt2l
-terabit.biz##.cnt2r > CENTER
-tfile.ru##IFRAME
-||s.tfile.ru/lg
-terabit.biz###home_c TD#lcol:first-child
 the-ebook.org###new-adver-promo
 the-ebook.org###new-header > #leftQuote
 the-ebook.org###new-header > #rightQuote
-||thepiratebay.org/img/limited_
 theplace.ru##.t10
 theplace.ru##TD[class^="td_reklama_"]
 theplace.ru##TD.td_main > NOINDEX
-theplace.ru##*[style*="dotted silver"]
-theplace.ru##A[href$="pregnancycalendar.ru"]
-||theplace.ru/images/forma/
+theplace.ru##[style*="dotted silver"]
 thevista.ru##.leftblinks
-thevista.ru##[href^="http://referal.begun.ru/partner.php?oid="]
-||thevista.ru/img/c_banners/
-||thevista.ru/img/l_banners/
-||s.tfile.ru/kf/
+thevista.ru##.pgbegun
 thg.ru##.mm_item[style="height: 43px;"]
+thg.ru##NOINDEX > A > IMG
 ||thg.ru/images/spons/
-topfresh.ru##.sp_search2
+topfresh.ru##[class^="sp_search"]
 topnews.ru###headbanner
 topnews.ru##.newsOfPartners
 topnews.ru##.bn_ir
 ||topnews.ru^*/banners/
 ||topnews.ru/iframe/
+torrent-games.net##BODY > CENTER
 ||torrent-games.net/media/?
-torrentino.ru###siders
-torrentino.ru##.a-panel
-torrentino.ru##.promo-item
-||torrentino.ru/images/siders/
 torrentszona.com##.banner_top
 ||torrentszona.com/afisha/d
-translate.ru/App_Themes/Default/begLoad/
 translate.ru###b_adv
 translate.ru##[id^="TranslationAdvert"]
-||translit.ru/pict/banners/
-travelgps.com.ua##TD[style*="170px;"][style*="vertical-align"]
 trinixy.ru##.last > NOINDEX
 trinixy.ru###nav > NOINDEX
 ||trinixy.ru/r/
 ||trud.ru/ad/
-||tumix.ru/*/banners/
 ||turbo.az/banners/
 ||b.turbo.az^
 ||turbobit.net/files/$object
 ||turbobit.net/js/partner_
-tutu.ru##TD.plink:first-child:last-child
 
+! U
+! tbd:bookmark
 ua-football.com###rozetkadiv
 udaff.com##NOINDEX > A > IMG
 ||udaff.com/image/$object
@@ -2357,3 +2332,4 @@ vtomske.ru##[style="padding-top: 5px;"] > *
 ||vtomske.ru^$object
 ||x-soft.tomsk.ru/dsa/
 x-soft.tomsk.ru###shop
+
