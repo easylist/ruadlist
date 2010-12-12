@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: QLAWxYSa/90LRkhY6PnaGQ
+! Checksum: 4462n8ItVlHzuytdWQYiaA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -90,6 +90,9 @@ _160x240
 ##.bc-adv
 ##.madv
 ##.mediaget
+##.sp_search_table
+##.sp_search2_table
+##.sp_search3_table
 ##.surbis_banner
 ##.topbaner
 ##BODY[onload="popupInit();"] > DIV#popUp
@@ -1791,6 +1794,7 @@ hotsoft.net.ru##NOINDEX > TABLE[width="100%"]
 huyandex.com##TD[width="250"] + TD > TABLE[cellspacing="0"][cellpadding="0"][border="0"]
 hwp.ru##[class^="promo"]
 hwp.ru##[class*="tbann"]
+hwp.ru##.l-article-wrapper > CENTER > A[target="_blank"] > IMG[border="0"]
 ||hwp.ru/images/mid/h-anons.
 
 ! I
@@ -1856,7 +1860,7 @@ kinopoisk.ru##.superb
 ||kinopoisk.ru/images/bnnr/
 ||kinopoisk.ru/images/re/*.*?
 @@/images/*/*/0/script.js?$domain=kinopoisk.ru
-kinostok.net##.sp_search2
+kinostok.net##.orange > A
 ||kleo.ru/ban/
 ||img.lbs.km.ru/mod/_banners/
 kodges.ru##.banner-fullstory
@@ -2085,7 +2089,10 @@ samlab.ws##.main > TABLE
 samlab.ws##.soft-day:not(:first-child) > .box
 ||sat-digest.com.ua/agc/
 ||scriptiks.ru^$object
-!Правило для блокировки рекламы при заблокированном JavaScript
+! Вероятно стоит сделать глобальными — это Яндекс.Директ
+search.ukr.net##.ads-header
+search.ukr.net##.ads-header + SPAN > .ad
+! Правило для блокировки рекламы при заблокированном JavaScript
 ||securitylab.ru/bitrix/$image
 @@||securitylab.ru/bitrix/*/$image
 ||serial.co.ua/java/PopIn.js
@@ -2166,7 +2173,6 @@ thevista.ru##.pgrightadv
 thg.ru##.mm_item[style="height: 43px;"]
 thg.ru##NOINDEX > A > IMG
 ||thg.ru/images/spons/
-topfresh.ru##[class^="sp_search"]
 topnews.ru###headbanner
 topnews.ru##.newsOfPartners
 topnews.ru##.bn_ir
@@ -2190,64 +2196,53 @@ trinixy.ru###nav > NOINDEX
 ||turbobit.net/js/partner_
 
 ! U
-! tbd:bookmark
 ua-football.com###rozetkadiv
+udaff.com##BODY > DIV:first-child > CENTER
 udaff.com##NOINDEX > A > IMG
 ||udaff.com/image/$object
-||udmnet.ru^$object
-ukr.net##[id*="Banner"]
-upload/*/mega-announce$domain=hardwareportal.ru|hwp.ru
 uploder.ws##CENTER:last-child
-||uploder.ws/$object
-uploder.ws/static/*0x
 usde.ru##A[href^="/engine/redirect2.php?url="]
 usde.ru##A[href^="http://usde.ru/adult/go.php?"]
 utro.ru##.banner-right
 utro.ru##.conteiner-partner
 utro.ru##[id^="flashrst"]
 
+! V
 vedomosti.ru##.left_banner
 vedomosti.ru##.footer
 vedomosti.ru##.top_banners
 vedomosti.ru##[class^=ears]
-||video-clips.ru/images/
-videofiles.com.ua##CENTER
 videosaver.ru###ad
 virpl.ru###logoslide
 virpl.ru##[id$="-banner"]
 vkontakte.ru###banner1
 vkontakte.ru###banner2
 vkontakte.ru###sideBar > .ad_box + DIV[style]
-||voffka.com/archives/
-voffka.com##.blog > DIV[align="center"]:last-child
-||voffka.com/js/duxy
-voffka.com##NOINDEX
-vokrugsveta.ru##.right_column
+voffka.com##BR + NOINDEX
+voffka.com###links > DIV > NOINDEX
+voffka.com##.posted > NOINDEX
+vokrugsveta.ru###interchange
+||vokrugsveta.ru/ad/
+||vokrugsveta.ru/img/bx/rk/
 ||votkinsk.net/adv/
 vremenno.net##.sidebarBlock:first-child
 
-warezlab.ru##.block_main > NOINDEX
-warezlab/*rotator
-weather.ru.msn.com/msn_kp/
-webantivirus.ru##DIV[style*="500px;"][style*="300px;"][style*="padding-left:"][style*="padding-top:"]
-webantivirus.ru##DIV[style*="468px;"][style*="60px;"][style*="padding-left:"][style*="padding-top:"]
-webantivirus.ru##DIV[style*="700px;"][style*="237px;"][style*="padding-left:"]
+! W
+||warezlab.ru^*rotator
+webantivirus.ru##DIV[style*="468px;"][style*="60px;"]
+webantivirus.ru##DIV[style*="500px;"][style*="300px;"]
+webantivirus.ru##DIV[style*="700px;"][style*="237px;"]
 ||webfile.ru/*wiw
-webpark.ru###Experts
-webpark.ru##.kontent A[target^="_blank"][href^="http:"]:not([href*="webpark.ru"]) IMG
-webpark.ru##IFRAME
-webpark.ru##NOINDEX TABLE
-webpark.ru##[style*="height:"][style*="00px"]:first-child
-webplanet.ru##.marketnews
-webplanet.ru##IFRAME
+webpark.ru###zinio
+webpark.ru##.kontent A[target="_blank"]
 wiaderko.com###topbar
-winzoro.com###hmenu + NOINDEX
-||radikal.ru^$domain=winzoro.com
 ||winzoro.com/data/ba_ne_r/
-womanbusiness.ru##TD[bgcolor="#ecf5ff"]
+womanbusiness.ru##TABLE[style*="2px dashed;"]
 ||womanbusiness.ru/popover.js
 world-art.ru/bipack/
 
+! X
+! tbd:bookmark
 x-console.com##A[href*="=banner&"]:not([href*=".x-console.com%2Fmagazine"])
 x-console.com##[id*="banner"]
 x-console.com##[class*="banner"]
