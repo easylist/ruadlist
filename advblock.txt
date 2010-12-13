@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 7+cZB0bnxTGTFXqz3ZPdYg
+! Checksum: qmQbPqLYk1r2J0m9rd4dLw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -265,8 +265,9 @@ avska.com,devochki.cz,goodsbrowser.com,kupikupon.com.ua,livejasmin.com,prodom2.c
 p://knal*.ru/$third-party
 p://lank*.ru/
 
-||77.91.228.66^
-||78.140.145.93/letitbit.
+||77.91.228.66/banners/
+||78.140.145.93^
+||78.140.145.178^
 ||80.91.178.234^
 ||80.93.49.192^
 ||80.93.56.187^
@@ -280,13 +281,16 @@ p://lank*.ru/
 ||92.241.185.16/banner/
 ||95.168.161.173/www/
 ||188.72.225.106^
-||194.135.105.23^
-||194.135.105.172^
-||195.239.111.200^
+||194.135.105.*/js/
 ||195.82.146.52^
-||212.150.34.114^
-||212.150.34.116^
+||195.161.119.239^
+||195.214.194.1^
+||195.239.111.200^
+||212.150.34.*/popup.
+||213.133.165.94^
+||213.186.217.210/banners/
 ||213.199.175.155^
+||217.170.78.*/banners/*
 
 ||012345.ru/upload/
 ||1-traf.net^$third-party
@@ -324,6 +328,7 @@ p://lank*.ru/
 ||a4retail.net^$third-party
 ||abc-people.com/bann_
 ||abcfilm.org^$third-party
+||abn.com.ua^$third-party
 ||abnad.net^$third-party
 ||aceventik.com^$third-party
 ||active.interzet.ru/log.php?
@@ -333,6 +338,7 @@ p://lank*.ru/
 ||adbn.ru/*?
 ||adcast.ru^$third-party,domain=~mts.ru
 ||add.in.ua^$third-party
+||adbee.com.ua^$third-party
 ||addnow.ru^$third-party
 ||addweb.ru^$third-party
 ||adfox.ru^$third-party
@@ -367,7 +373,7 @@ p://lank*.ru/
 ||advmaker.ru^$third-party
 ||adward.ru^$third-party
 ||adwolf.ru^$third-party
-||adwork.net.ua/cgi-bin/get.cgi?
+||adwork.net.ua^$third-party
 ||affarity.com^$third-party
 ||agitazio.com^$third-party
 ||agitmedia.com^$third-party
@@ -381,6 +387,7 @@ p://lank*.ru/
 ||all-web.ru/button.php?id=
 ||allbest4free.ru/randompicture/
 ||allboxing.ru/img/$object
+||allnewspoint.com^$third-party
 ||allnokia.ru/img/*?*/click/?
 ||alloy.ru/auth.php?
 ||allsiemens.com^$third-party
@@ -434,6 +441,7 @@ p://lank*.ru/
 ||banner-in.net^$third-party
 ||banners.newshost.net^
 ||banners.newsru.com^
+||bannex.com.ua^$third-party
 ||bannuncio.com^$third-party
 ||bans.bride.ru^$third-party
 ||bantex.ru^$third-party
@@ -442,6 +450,7 @@ p://lank*.ru/
 ||bazar.penza.su^$third-party
 ||bb.stream24.ru^
 ||bbn.by/t.bbn?
+||bbn.img.com.ua^$third-party
 ||belsoft.tut.by/i/$object
 ||bepartner.ru^$third-party
 ||bestcenternews.com/*logo
@@ -494,6 +503,7 @@ p://lank*.ru/
 ||cjconvert.com^$third-party
 ||cleen.ru^$third-party
 ||clickaider.com^$third-party
+||clickad.com.ua^$third-party
 ||clickbux.ru^$third-party
 ||clickcashmoney.com^$third-party
 ||clickclickclick.asia^$third-party
@@ -568,6 +578,7 @@ l||domika.msk.ru^
 ||eads.to/$third-party
 ||edu.ru/d/window/b/
 ||effad.ru^$third-party
+||ej.ua/static/$third-party
 ||ehoo.ru/knopka/
 ||engine.adct.ru^$third-party
 ||eogli.com/1/
@@ -690,6 +701,7 @@ l||domika.msk.ru^
 ||hotline.ua/img/hl/gm
 ||how2web.com^$third-party
 ||hq-films.ws^$third-party
+||hta.com.ua^$third-party
 ||http-iframe.com^$third-party
 ||hyipsrating.com^$third-party
 ||hypernews.ru^$script
@@ -810,6 +822,7 @@ l||domika.msk.ru^
 ||mabila.ua^$third-party
 ||madbanner.ru^$~object_subrequest
 ||magna.ru^$third-party
+||magnet.kiev.ua^$third-party
 ||mail.banklife.ru^$third-party
 ||mambo.kiev.ua^$third-party
 ||mamyshev.ru/bn/
@@ -1579,6 +1592,7 @@ forum.athlete.ru##.nopad
 forum.athlete.ru###userlinksguest > .raw1
 ||athlete.ru/pic/*$object
 autonews.ru##[class^="banner_"]
+autoua.net###footer-holding
 azart.net.ua##A[href="/adv.php"]
 
 ! B
@@ -1624,6 +1638,8 @@ coolsoch.ru###xyz
 coolsoch.ru##NOINDEX
 ||copypast.ru/*/ino*.htm
 ||copypast.ru/re*/$image
+cripo.com.ua###banner
+cripo.com.ua###topban
 cwer.ru##NOINDEX
 ||cwer.ru/misc/$object
 cyberinfo.ru###bl_05
@@ -1665,6 +1681,7 @@ dverizamki.org/$object
 dwg.ru##BODY > TABLE > TBODY > TR:nth-child(3) > TD:nth-child(5)
 dwg.ru##TD[background="../img/back22.gif"] > TABLE
 ||dwg.ru/img/*$object
+dynamo.kiev.ua##.hban
 
 ! E
 echo.msk.ru##.menuadd > A > IMG[border="0"][src^="http://www.echo.msk.ru/att/element-"]
@@ -1798,6 +1815,9 @@ hwp.ru##.l-article-wrapper > CENTER > A[target="_blank"] > IMG[border="0"]
 ||hwp.ru/images/mid/h-anons.
 
 ! I
+i.ua##.Premium
+i.ua##.Logo
+i.ua##.Baner
 ||idownloads.ru/wp-content/uploads/
 ||ifolder.ru^$object
 ||ifolder.ru^*-brend.css
@@ -1811,6 +1831,7 @@ imagebam.com##[style*="width:"][style*="border:"][style*="background-color:"][st
 imgfiles.ru##[id^="bn"]>*
 inedelya.ru##.top_banner
 inosmi.ru##.banners
+inter.ua##.b-top-banner
 interfax.ru###bbInformer233
 interfax.ru##TD[width="1"] + TD[width="747"] > DIV[style]
 interfax.ru/RCL/BAN/
@@ -1825,6 +1846,7 @@ ipicture.ru##.zula
 ||ipicture.ru/*/banner/
 ||irk.ru/img/*/ibr/
 itc.ua##.b240x350
+hi-fi.itc.ua##.news
 ixbt.com##.banner
 ixbt.com##H4#nl_header
 forum.ixbt.com##.dostavka
@@ -1869,6 +1891,7 @@ kolesa.kz##.board
 kolesa.kz##.layout.pipes
 ||kolesa.kz/br-place/
 ||kontrolnaja.ru/banner/
+korrespondent.net###realty_block
 korzik.net###dle-content > CENTER > TABLE > TBODY > TR > [bgcolor][style] > CENTER
 korzik.net###dle-content A[target="_blank"]
 korzik.net##A.menu[target="_blank"] > FONT[color="red"]
@@ -1990,10 +2013,13 @@ npicture.net##A > IMG[src*="npicture.net/image-"]
 ! O
 obnimau.ru##NOINDEX > CENTER > TABLE
 ||obnimau.ru/img-ba/
+obozrevatel.com##.right-banner
 ochevidec.net##A[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejournal"]):not([href*="icq"])
 ||odnoklassniki.ru/res/*/promo/*/
 ||old-games.ru/img/bnr/
 ||online.multilex.ru^*banner
+online.ua###top_banner
+online.ua###ban_news_r
 ||onlinedisk.ru/bban/banner/
 onlyfilms.ru##NOINDEX > LI.m
 opennet.ru###adv2
@@ -2109,6 +2135,9 @@ sibmail.com##CENTER > DIV[style*="200px;"]
 ! tbd:skipped:end
 sinoptik.ua##.b-partners
 sinoptik.ua##.horo-block
+siteua.org###banner_journals
+siteua.org##.friendsim
+siteua.org##NOINDEX > [class$="-block"]
 shkolazhizni.ru##.banner_text
 slo.ru##[class^="adv_"]
 ||slo.ru/img/*300x200
@@ -2173,6 +2202,7 @@ thevista.ru##.pgrightadv
 thg.ru##.mm_item[style="height: 43px;"]
 thg.ru##NOINDEX > A > IMG
 ||thg.ru/images/spons/
+||tnua.info/banner/
 topnews.ru###headbanner
 topnews.ru##.newsOfPartners
 topnews.ru##.bn_ir
@@ -2200,6 +2230,13 @@ ua-football.com###rozetkadiv
 udaff.com##BODY > DIV:first-child > CENTER
 udaff.com##NOINDEX > A > IMG
 ||udaff.com/image/$object
+ukr.net###zakl_body
+||ukr.net/partner/
+ukrinform.ua##.rightbar_text > A[target="_blank"]
+||ukrinform.ua/web/informer/uploaded/flash/
+unian.net###counters
+unian.net###rightban
+||banner.unian.net^
 uploder.ws##CENTER:last-child
 usde.ru##A[href^="/engine/redirect2.php?url="]
 usde.ru##A[href^="http://usde.ru/adult/go.php?"]
