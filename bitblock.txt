@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: +18y4uB7BIXluVCFSyLHlA
+! Checksum: 5V5m2WZI+mSfHV18j8+TCg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -38,8 +38,8 @@
 ##.vk-button
 ##.vk-share-button
 //vk.com^$domain=~vkontakte.ru,third-party
-! Домен dvd-rips.ru является частью вконтакта
-||vkontakte.ru^$third-party,script,subdocument,domain=~dvd-rips.ru
+||vkontakte.ru^$third-party,script,subdocument
+@@||vkontakte.ru/js/api/xd_connection.js$script
 @@||vkontakte.ru/video_ext.php?
 
 !------------ Мой Мир (Mail.RU) -----------------------------------------------
