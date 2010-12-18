@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: LPj38ryfENtkBTWHp2GcnA
+! Checksum: ZRVF2/eAxWRFh5GJ7dh9gg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -559,6 +559,7 @@ p://lank*.ru/
 ||digisat.ru/*.gif
 ||dikm.ru/$third-party
 ||dimpy.narod.ru^
+||dircash-promo.com^$third-party
 ||direct.quasir.info^
 ||directadvert.ru^$third-party
 ||dirkino-traff.ru^$third-party
@@ -760,6 +761,7 @@ l||domika.msk.ru^
 ||japan.leit.ru/button.php?
 ||jet3.ayola.net/cn.php?
 ||job.ws/_bann/
+||jopandex.ru^$third-party
 ||js.einfo.by/?
 ||k2kapital.com/upload
 ||karabalikelektronik.com/images/reklam
@@ -936,6 +938,7 @@ l||domika.msk.ru^
 ||ofdaft.com^$third-party
 ||okoshechka.net^$third-party
 ||oldcombats.net/images_banner/
+||olegbiz.ru^$third-party
 ||one.ru/cgi-bin
 ||onlineresume.ru/banner*?
 ||only4men.ru^$third-party
@@ -1187,6 +1190,7 @@ l||domika.msk.ru^
 ||sputnik1.ru^$third-party
 ||spytrack.tic.ru^
 ||srvdata.ru^$third-party
+||statcontent.ru^$third-party
 ||static.terrhq.ru^
 ||stb.msn.com/i$~msn.com
 ||stepbystep.spb.ru/reting_stat.php?
@@ -1323,6 +1327,7 @@ l||domika.msk.ru^
 ||voob.ru/$third-party
 ||votegate.ru/m.php?
 ||votetraffic.ru^$third-party
+||voyna-plemyon.ru^$third-party
 ||vpsite.ru^$third-party
 ||vsego.ru/images/b
 ||vsekino.su^$third-party
@@ -1887,6 +1892,8 @@ kapriz.info##A[href^="http://kapriz.info/engine/go.php?url="]
 keep4u.ru###r_bottom
 keep4u.ru###r_top
 kharkovforum.com##A[href^="http://banner.ua/"]
+killfilms.ru##A[href^="http://dosugcz.biz/"]
+||killfilms.ru/*/girls/
 kino-online.org##IMG[height="120"][width="600"]
 kino-zal.tv##BLINK
 kinobanda.net##.main-bg A[target="_blank"] > IMG
@@ -2121,6 +2128,7 @@ rustorka.com##DIV > :nth-child(6) ~ H3
 ||rustorka.com/reklama
 ||rustorka.com^$object
 ||rutor.org/m/
+||rutube.ru/themes/games-beeline/
 rutracker.org###bn-bot-wrap
 rutracker.org##TR#f-11:last-child
 ! Хоть и дешевая подделка, но баннеры-то всё равно есть.
@@ -2138,6 +2146,8 @@ samlab.ws##.main > DIV:not(.about):first-child
 samlab.ws##.main > TABLE
 samlab.ws##.soft-day:not(:first-child) > .box
 ||sat-digest.com.ua/agc/
+sc2tv.ru###block-block-8
+||sc2tv.ru/sites/default/files/$object
 ||scriptiks.ru^$object
 ! Вероятно стоит сделать глобальными — это Яндекс.Директ
 search.ukr.net##.ads-header
@@ -2174,6 +2184,9 @@ soccer.ru##TD[width="120px"] > DIV[style] > NOINDEX
 soft-arena.ru##NOINDEX
 soft-best.ws##.slink
 soft-best.ws###dle-content > NOINDEX
+soft2soft.ru##.pagebg > DIV[id][align="center"][style*="fixed;"]
+||soft2soft.ru^$script
+@@||soft2soft.ru/engine/
 softarchive.net##.b728x90
 softnavigator.ru##TR:first-child > TD:nth-child(3) > DIV[align="center"]:first-child + TABLE[width="100%"]
 softnewsportal.ru##.content > DIV:not(#dle-content) > .news
@@ -2340,6 +2353,9 @@ gismeteo.com,gismeteo.lt,gismeteo.ru###ad-rian
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru,gismeteo.ua###ad-top
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru,gismeteo.ua###logo
 ||gismeteo.*/rian.html|
+guitarplayer.ru##[class^="windowbg"] > NOINDEX
+guitarplayer.ru##[id^="ya_direct_"]
+||guitarplayer.ru/b/
 
 ! Overclockers.RU
 forums.overclockers.ru##.banner
