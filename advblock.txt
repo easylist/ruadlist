@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ZRVF2/eAxWRFh5GJ7dh9gg
+! Checksum: UilNg2HQx8r7lVO8RyrudQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -23,14 +23,14 @@
 ! = Исключения против ложных срабатываний =====================================
 !:: ||dclick.ru^$third-party
 @@||dclick.ru/crossdomain.xml|
-!:: /cgi-bin/iframe/
+!:: /cgi-bin/iframe/*
 @@||video.*.user.madbanner.ru^$object_subrequest
-!:: /partner.
-! @@||partner.100suvenirov.ru/images/$image
 !:: .tbn.ru/
 @@||auth.tbn.ru/
 !:: ||bugaga.tut.by^
 @@||bugaga.tut.by/*_tutbar
+!:: ##[width="468"][height="60"] — не хочу нагружать этот селектор проверками.
+@@||russianfedora.ru^$elemhide
 ! Исправление проблем возникших в результате работы EasyList
 @@||ad.adriver.ru/$domain=fileshare.in.ua|kinopoisk.ru|tv.molodejj.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
@@ -45,6 +45,7 @@
 @@||pagead2.googlesyndication.com/pagead/expansion_embed.js$domain=ph4.ru
 @@||pagead2.googlesyndication.com/pagead/s/iframes_api_loader.html$domain=ph4.ru
 @@||ph4.ru/css/adsense.css
+@@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 @@.ru/ai/adbanner/$domain=akado.ru|megafon.ru
 
@@ -107,6 +108,8 @@ _160x240
 ! Именуют себя ВСкачке, ВЗагрузе, маскируются под RapidShare и прочее.
 ##A[href*="/download.php?sub_id="][href*="&q="]
 ##A[href*="/download.php?user_id="][href*="&q="]
+! Реклама приватбанка (https://reports.adblockplus.org/2745d49c-d010-4ad8-a411-1fc3308c796a)
+##BODY > #flydiv
 ! Реклама в поиске для партнёров Google.
 www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ! Скрытие ссылок на адривер. Пока с привязкой к конкретным доменам, а дальше — посмотрим.
@@ -188,6 +191,8 @@ sexvodnokalssnikah
 ||livejasmin.com^
 ! $domain=prodom2.com|tele-dom2.com|telesekas.com|tvsxsite.com
 ||pokajem.*.com^
+! Вспомогательный домен clickunder.ru. Прямая блокировка эффекта не имеет, но при наличии дополнения Adblock Plus Pop-up Addon внезапно начинает определяться как нежелательный попап и блокируется не успевая перекинуть на очередной порносайт.
+||redirecturl.ru^
 ||vzarabotke.ru^
 ||zoy.org/
 avska.com,devochki.cz,goodsbrowser.com,kupikupon.com.ua,livejasmin.com,prodom2.com,tele-dom2.com,telesekas.com,tvsxsite.com,vzarabotke.ru,zoy.org##:root
@@ -570,7 +575,7 @@ p://lank*.ru/
 l||domika.msk.ru^
 ||doortrade.ru^$third-party
 ||dostavka.ru^$third-party
-||dosugcz.biz^$third-party
+||dosugcz.^$third-party
 ||dosugvip.ru^$third-party
 ||dozory.goodoo.ru^$third-party
 ||dreamlog.ru^$third-party
@@ -793,6 +798,7 @@ l||domika.msk.ru^
 ||kvasu.net/*/$object
 ||kwot.biz^$third-party
 ||ladycash.ru^$third-party
+||ladyclicks.ru^$third-party
 ||ladyshopping.ru^$third-party
 ||lbe.ru/cgi-bin/
 ||lbn.ru/cgi-bin/
@@ -1553,6 +1559,7 @@ yandex.ru,yandex.ua##[class*="spec-adv"]
 
 ! #
 100let.net##[id^="SR_PopOver"]
+||101.ru/vardata/modules/banners/
 ||1nsk.net/data/wealth/
 ||2baksa.net/download/
 @@||2baksa.net/download/*/$image
@@ -1591,6 +1598,7 @@ allbest4free.ru##NOINDEX
 ||amk-team.ru/*ajax77197cms.js
 anekdot.ru##.righcolumn
 ||anekdot.ru/i/gallery/
+||anidub.com/*/banner/
 ||anidub.com/flash/240_400_
 ||anime-zone.ru/inc/600x90.js
 ||anime-zone.ru/inc/partners/
@@ -1651,6 +1659,7 @@ chesspro.ru##TABLE[style="width: 100%; height: 90; margin-bottom: 5px"]
 ||na-svyazi.ru/img/$object
 ||na-svyazi.ru/uploads/$object
 citysmile.ru##NOFOLLOW > NOINDEX > A[target="_blank"]
+||ckyka.ru/obzor/
 cn.ru##[class*="rx"][class*="neta"]
 ||comnews.ru/ds_comnews/files/$object
 ||comnews.ru/ds_comnews/img_object/
@@ -2070,6 +2079,7 @@ oplati.ru##TD[width="90"]
 
 ! P
 ||pctuner.ru/plugins/bworks/files/
+||photodoska.ru/*/banners/
 phpbbguru.net##[href^="go.php?to="]
 pindosoff.net###dle-content > TABLE:first-child TD.copy
 pindosoff.net##TD.nav A[target="_blank"]
@@ -2097,6 +2107,7 @@ prostopleer.com##.ad
 
 ! Q
 qiq.ru##.ram22
+||qiq.ru/design/qiq/ban/
 ||qiq.ru/media/co3.js
 qwe.ru##.default_menu > DIV:first-child
 qwe.ru##TABLE + TABLE TR:last-child > TD:last-child > .border
@@ -2289,6 +2300,7 @@ vedomosti.ru##.left_banner
 vedomosti.ru##.footer
 vedomosti.ru##.top_banners
 vedomosti.ru##[class^=ears]
+||vedomosti.ru/var/bansrc/
 videosaver.ru###ad
 virpl.ru###logoslide
 virpl.ru##[id$="-banner"]
@@ -2325,6 +2337,7 @@ xmages.net##.we-are-featured
 xyya.net##A[target="_blank"] > IMG[width="300"][height="420"]
 
 ! Y
+y4eba.net.ru##.log .bod
 ||yapfiles.com^$third-party
 yarportal.ru##[style$="height: 60px;"]
 yarportal.ru##TD.desc
