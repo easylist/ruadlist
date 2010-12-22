@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: vnb6706OlAZY/1SRBhIikA
+! Checksum: 32H9tq/05yfXk+HkY9hbYw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -116,6 +116,8 @@ _160x240
 www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ! Скрытие ссылок на адривер. Пока с привязкой к конкретным доменам, а дальше — посмотрим.
 compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
+! Плавающий баннер от Mega-Bazar. Содержимое блокируется правилом /bazar_fast/*, а это скрывает остатки.
+##DIV[id][align="center"][onmouseover][style*="fixed;"]
 
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://adfarm
@@ -236,6 +238,7 @@ sexvodnokalssnikah
 /adland.php
 /all.by/*
 /backlinks.
+/bazar_fast/*
 /bitrix/spread.php?
 /bodyclick.
 /bs.mybb.ru/*
@@ -2231,7 +2234,6 @@ soft-arena.ru##NOINDEX
 soft-best.ws##.mex_adv_inside_container
 soft-best.ws##.slink NOINDEX
 soft-best.ws###dle-content > NOINDEX
-soft2soft.ru##.pagebg > DIV[id][align="center"][style*="fixed;"]
 ||soft2soft.ru^$script
 @@||soft2soft.ru/engine/
 softarchive.net##.b728x90
