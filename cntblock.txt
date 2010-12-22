@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 0ylrAyd2Jr5mMl6oprCO6g
+! Checksum: 4ejcrSSSVpN2xFYS5TNUdQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU CountersList (ruadlist.googlecode.com)
@@ -16,9 +16,7 @@
 ! основной анти-рекламной подписке, но при этом собирают данные о пользователе.
 
 ! = Ложные срабатывания (исключения) ==========================================
-! Блокирует: ||google-analytics.com
-@@|http://www.google.*/ig|
-! Блокирует: Антитоп
+!:: Антитоп
 @@||russia.ru/player/top/$object
 
 ! = Фильтры по регулярным выражениям ==========================================
@@ -66,7 +64,7 @@ _8831.gif
 /cnt-gif1x1.php?
 /count.php
 /counted/*
-/counter.$~object-subrequest,domain=~li.org
+/counter.$~object-subrequest,domain=~li.org|~mail.ru
 /counter/*
 /counter?
 /counters/*
