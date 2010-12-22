@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: iOAiQ0t1V0VM+dezDvn4Zg
+! Checksum: vnb6706OlAZY/1SRBhIikA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -139,7 +139,7 @@ ban_click
 /images/adv/*
 /images/ban/*
 ! $domain=arendator.ru|file-bit.net|fitsport.ru|forum-profit.ru|fuzz-magazine.ru|kbp.com.ua|monetti.ru
-/images/banners/*$domain=~allods.ru|~vorbis.com
+/images/banners/*$domain=~allods.ru|~visage.od.ua|~vorbis.com
 /images/bn/*
 /images/rek/*
 /images/rekl/*
@@ -191,16 +191,18 @@ sexvodnokalssnikah
 ! автоматическое открытие попапа с ними блокируется. Мне не нравится тот факт,
 ! что сайты блокируются целиком, но пока не вижу другого пути.
 ! - Порнуха
+||24pornoo.ru^
 ||avska.com^
 ||devochki.cz^
 ||livejasmin.com^
 ! $domain=prodom2.com|tele-dom2.com|telesekas.com|tvsxsite.com
 ||pokajem.*.com^
 ||redirecturl.ru^
+||sexrustube24.com^
 ||zoy.org/
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
-avska.com,devochki.cz,livejasmin.com,prodom2.com,tele-dom2.com,telesekas.com,tvsxsite.com,zoy.org##:root
+24pornoo.ru,avska.com,devochki.cz,livejasmin.com,prodom2.com,sexrustube24.com,tele-dom2.com,telesekas.com,tvsxsite.com,zoy.org##:root
 ! - Прочее
 ||gameleads.ru^
 ||goodsbrowser.com^
@@ -290,7 +292,9 @@ p://lank*.ru/
 ||80.93.56.187^
 ||81.177.7.6^
 ||83.222.31.194/in.cgi?
+! AdFox.RU
 ||87.242.91.*/adfox/
+! AdFox.RU
 ||87.242.91.*/prepareCode?
 ||89.108.72.16^
 ||90.156.144.98^
@@ -302,7 +306,8 @@ p://lank*.ru/
 ||195.82.146.52^
 ||195.161.119.239^
 ||195.239.111.200^
-||212.150.34.*/popup.
+! Media-Click.RU
+||212.150.34.*.php?
 ||213.133.165.94^
 ||213.186.217.210/banners/
 ||213.199.175.155^
@@ -836,7 +841,6 @@ l||domika.msk.ru^
 ||liveclix.net^$third-party
 ||livetraf.com^$third-party
 ||loadmovie.ru^$third-party
-||log.krs-ix.ru/krs.php?
 ||logan.jino.ru^
 ||login.tracking101.com^
 ||logtr4ry.ht-systems.ru^
@@ -1059,6 +1063,7 @@ l||domika.msk.ru^
 ||promoblock.$third-party
 ||promoheads.com^$third-party
 ||promoisland.net^$third-party
+||pronto.ru^$third-party
 ||prospero.ru^$third-party
 ||prostootdam.ru/modules/about/
 ||protect-lab.com/promo/
@@ -1267,6 +1272,7 @@ l||domika.msk.ru^
 ||tizzer.ru^$third-party
 ||tizy.ru/$third-party
 ||tjs1.ru/$third-party
+||tnafix.ru^$third-party
 ||tname.ru/img_*.gif
 ||tnx.net/$third-party
 ||todaymix.ru^$third-party
@@ -1887,6 +1893,8 @@ imagebam.com##[style*="width:"][style*="border:"][style*="background-color:"][st
 ||imagevenue.com/interstitial.
 imgfiles.ru##[id^="bn"]>*
 inedelya.ru##.top_banner
+inmoment.ru##CENTER > A[target="_blank"]
+||inmoment.ru/img/$object
 inosmi.ru##.banners
 inter.ua##.b-top-banner
 interfax.ru###bbInformer233
@@ -2220,7 +2228,8 @@ soccer.ru##.linksblock
 soccer.ru##TD[width="120px"] > DIV[style] > NOINDEX
 ||soccer.ru/js/banner.php?
 soft-arena.ru##NOINDEX
-soft-best.ws##.slink
+soft-best.ws##.mex_adv_inside_container
+soft-best.ws##.slink NOINDEX
 soft-best.ws###dle-content > NOINDEX
 soft2soft.ru##.pagebg > DIV[id][align="center"][style*="fixed;"]
 ||soft2soft.ru^$script
