@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 6yFVuOUEoSfAMN8epNgwOA
+! Checksum: s2TpIFMx4ny31w3bP5xC0Q
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -39,6 +39,7 @@
 ##.vk-share-button
 //vk.com^$domain=~vkontakte.ru,third-party
 ||vkontakte.ru^$third-party,script,subdocument
+@@||vkontakte.ru/js/api/openapi.js?$domain=kinopoisk.ru
 @@||vkontakte.ru/js/api/xd_connection.js$script
 @@||vkontakte.ru/video_ext.php?
 
