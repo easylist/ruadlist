@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: piJVq11pWzyB3wJa0cIWNQ
+! Checksum: EVBpM6L0eJm1DgmtG5BkoA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -2352,9 +2352,9 @@ vedomosti.ru##[class^=ears]
 videosaver.ru###ad
 virpl.ru###logoslide
 virpl.ru##[id$="-banner"]
+vkontakte.ru###ad_help_link
 vkontakte.ru###banner1
 vkontakte.ru###banner2
-vkontakte.ru###sideBar > .ad_box + DIV[style]
 voffka.com##BR + NOINDEX
 voffka.com###links > DIV > NOINDEX
 voffka.com##.posted > NOINDEX
@@ -2406,7 +2406,7 @@ zelenograd.ru##NOINDEX > TABLE[width="100%"][cellpadding="1"]
 zelenograd.ru##NOINDEX TD[width="40%"] > NOINDEX
 zelenograd.ru##TD[width="99%"] + TD:last-child
 ||zelenograd.ru/b/
-zhmak.info##NOINDEX > TABLE[width="100%"][style]
+zhmak.info##TD[width="180"]:first-child + TD[width="5"] + TD > :not([class="news"])
 
 ! GISMeteo BY/COM/LT/RU
 //a.gismeteo.
