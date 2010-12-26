@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: EVBpM6L0eJm1DgmtG5BkoA
+! Checksum: bhVH/jZy9osp1U9vSJWc+g
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -827,6 +827,7 @@ l||domika.msk.ru^
 ||lbn.ru/cgi-bin/
 ||lenamila.com/obzlite/
 ||lenty.ru^$third-party
+||letitfile.ru/images/$third-party
 ||letitsoft.com^$third-party
 ||letsseks.$third-party
 ||letssex.$third-party
@@ -1080,6 +1081,7 @@ l||domika.msk.ru^
 ||protrafv2.com^$third-party
 ||price.ru^$third-party
 ||price.ua^$third-party
+||printdirect.ru^$third-party
 ||puls.lv/$third-party
 ||pustoty.net^$third-party
 ||putana.cz^$third-party
@@ -1760,8 +1762,10 @@ emuparadise.org###framework > TBODY > TR:first-child
 epidemz.net##A[href$="#comment"] + A[target="_blank"]
 epidemz.net##A[target="_blank"] > FONT[color="#CC0000"]
 epidemz.net##DIV[align="right"] > A[target="_blank"]
+epidemz.net##DIV[id^="news-id-"] A[target="_blank"] > IMG
 epidemz.net##TD[width="135"]:first-child + TD > :not(#dle-content)
 epidemz.net##TD[width="135"]:first-child + TD + TD[width="135"]
+||epidemz.net^$object
 ||etorrent.ru/js/etorrent.ru.js
 ||b.ex.ua/$~stylesheet
 eva.ru###fft
@@ -2210,6 +2214,7 @@ sc2tv.ru###block-block-8
 ! Вероятно стоит сделать глобальными — это Яндекс.Директ
 search.ukr.net##.ads-header
 search.ukr.net##.ads-header + SPAN > .ad
+searchengines.ru##FORM[action="http://go.1ps.ru/pr/"] + TBODY
 ! Правило для блокировки рекламы при заблокированном JavaScript
 ||securitylab.ru/bitrix/$image,object
 @@||securitylab.ru/bitrix/*/$image
