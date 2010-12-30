@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: lr+ERdYukPWfiXXYy0qckQ
+! Checksum: cw6KfquEGl6wbjAJh5DY+g
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -337,6 +337,7 @@ p://lank*.ru/
 ||24new.ru^$third-party
 ||24open.ru/*?from=
 ||24s.ru/get.php?b=
+||24smi.org/informer.php?
 ||24smile.org^$third-party
 ||25hypnos.com^$third-party
 ||2baksa.net^$third-party
@@ -2174,10 +2175,16 @@ rbcdaily.ru##.c-block_content_article_baner
 rbcdaily.ru##.banner
 rbcdaily.ru##[class*="_adv"]
 ||rd2d.com/adv/
+||ref.by/_ads/
 ||regnum.ru/i/bn/
 ||restoclub.ru/pic/iblocks/
 ||restotv.ru/promo/$domain=restoclub.ru
 ||img.rg.ru/i/bnr/
+rin.ru##A > IMG[width="120"][height$="0"][src^="/images/"]
+||rin.ru/ban/?
+||rin.ru/bodyadv.
+||rin.ru/images/bannerpic/
+||rin.ru/js/adv_top.
 rl-team.net##.border_all.tiban
 rl-team.net##.modul-search
 ||rlsnet.ru/image_banner
