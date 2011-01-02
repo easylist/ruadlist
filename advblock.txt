@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: G0EDf17qi82uURTJ125ChQ
+! Checksum: +Yl94HqStjxiXSSgs+KpMg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -188,6 +188,7 @@ sexvodnokalssnikah
 /out.php?sid=$script
 
 ! = «Плохие» сайты (в основном попапы) ========================================
+! #pop.bookmark
 ! Прямая блокировка следующих сайтов должного эффекта не имеет, но при наличии
 ! дополнения Adblock Plus Pop-up Addon они определяются как нежелательные и
 ! автоматическое открытие попапа с ними блокируется. Мне не нравится тот факт,
@@ -201,17 +202,25 @@ sexvodnokalssnikah
 ||pokajem.*.com^
 ||redirecturl.ru^
 ||sexrustube24.com^
+||vstaet.net^
 ||zoy.org/
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
-24pornoo.ru,avska.com,devochki.cz,livejasmin.com,prodom2.com,sexrustube24.com,tele-dom2.com,telesekas.com,tvsxsite.com,zoy.org##:root
+24pornoo.ru,avska.com,devochki.cz,livejasmin.com,prodom2.com,sexrustube24.com,tele-dom2.com,telesekas.com,tvsxsite.com,vstaet.net,zoy.org##:root
 ! - Прочее
 ||1001kupon.ru^
+||advmaker.ru/go.php?
+||firefoxweb.info^
 ||fotostrana.ru/start/questpet/?
 ||gameleads.ru^
 ||goodsbrowser.com^
 ||kupikupon.com.ua^
+||kupikupon.ru^
+||letitbit.net/pop_up.
+||partypoker.com/*/videopop/
 ||promo.karosgame.ru^
+||rs.mail.ru/b*.html?rb_link=
+||upd-browser.com^
 ||vzarabotke.ru^
 
 ! = Общие фильтры =============================================================
@@ -399,8 +408,8 @@ p://lank*.ru/
 ||adulttraffic.ru^$third-party
 ||adunit.chango.ca^$third-party
 ||advbroker.ru/code/?
-||advertpay.^$third-party
-||advertpro.^$third-party
+||advertpay.$third-party
+||advertpro.$third-party
 ||advmaker.ru^$third-party
 ||adward.ru^$third-party
 ||adwolf.ru^$third-party
@@ -427,6 +436,7 @@ p://lank*.ru/
 ||alpari.ru^$third-party
 ||alphacash.biz^$third-party
 ||alvadu.ru^$third-party
+||am10.ru/$third-party
 ||amoney.ru/images/$object
 ||amung.us^$third-party
 ||analytics.*.*/*.php
@@ -587,6 +597,7 @@ p://lank*.ru/
 ||dikm.ru/$third-party
 ||dimpy.narod.ru^
 ||dircash-promo.com^$third-party
+||dircash-promost.com^$third-party
 ||direct.quasir.info^
 ||directadvert.ru^$third-party
 ||dirkino-traff.ru^$third-party
@@ -594,10 +605,10 @@ p://lank*.ru/
 ||dl2.ru/catalog.php?
 ||dload.net.ru/*.gif
 ||dndd.ru/$third-party
-l||domika.msk.ru^
+||domika.msk.ru^
 ||doortrade.ru^$third-party
 ||dostavka.ru^$third-party
-||dosugcz.^$third-party
+||dosugcz.$third-party
 ||dosugvip.ru^$third-party
 ||dozory.goodoo.ru^$third-party
 ||dreamlog.ru^$third-party
@@ -625,6 +636,7 @@ l||domika.msk.ru^
 ||eronsk.ru/b/
 ||eropays2.com^$third-party
 ||erotizer.info^$third-party
+||ervro.net^$third-party
 ||esc-team.com^$third-party
 ||eseek.ru/button.php?
 ||eserver.ru/img/b/*.gif
@@ -656,7 +668,7 @@ l||domika.msk.ru^
 ||flash.eastweb.ru/i/files/
 ||flasher.ru/data/images/swf/
 ||flashok.ru/banner/
-||flipflapflo.net^$third-party
+||flipflapflo.$third-party
 ||flysat.com/resim
 ||fmates.ru^$third-party
 ||fooder.ru^$third-party
@@ -722,6 +734,7 @@ l||domika.msk.ru^
 ||gsmonitor.ru^$third-party
 ||gws.ru/gwscnt/?
 ||h12.ru/images/
+||hd-tube.ru^$third-party
 ||hdtracker.ru^$third-party
 ||hellywood.ru^$third-party
 ||helpls.ru^$third-party
@@ -888,6 +901,7 @@ l||domika.msk.ru^
 ||mediarich.us^$third-party
 ||mediarotator.ru^$third-party
 ||mediaua.com.ua/img/photo/th/
+||mega-cash.net^$third-party
 ||megaban.com.ua^
 ||megacliks.com^$third-party
 ||megafingroup.com^$third-party
@@ -1017,6 +1031,7 @@ l||domika.msk.ru^
 ||pirojok.net^$third-party
 ||piter.com/files/b_a_n_n_e_r_s/
 ||planetaua.net^$third-party
+||platinumcode.net^$third-party
 ||play2.biz^$third-party
 ||plesen.net/kp*.
 ||plus10sm.ru^$third-party
@@ -1083,6 +1098,7 @@ l||domika.msk.ru^
 ||price.ru^$third-party
 ||price.ua^$third-party
 ||printdirect.ru^$third-party
+||pullcorn.com^$third-party
 ||puls.lv/$third-party
 ||pustoty.net^$third-party
 ||putana.cz^$third-party
@@ -1374,6 +1390,7 @@ l||domika.msk.ru^
 ||vyatka-host.ru^$third-party
 ||vz.ru/inc/b/*iframe.
 ||warezplatinum.com^$third-party
+||wave525.com.ua^$third-party
 ||web-hack.ru/images/b/
 ||web-rom.ru/?get_code
 ||web-visor.$third-party
@@ -1424,7 +1441,7 @@ l||domika.msk.ru^
 ||xmemory.ru^$third-party
 ||xn--80apfevho6e.su/img/
 ||xruni.ru^$third-party
-||xxx-news.^$third-party
+||xxx-news.$third-party
 ||xxx-tracker.com/pics/
 ||xxxxxx.com.ru^
 ||yabloko.ru^$third-party
@@ -1672,6 +1689,7 @@ bape3.org##A[target="_blank"] > IMG
 basemp3.ru###topbar
 bash.org.ru##:not(#ads) > .q > :not(.vote):first-child
 bash.org.ru###page > HR
+batzbatz.com###dle-content > NOINDEX
 bestgamer.ru##.colum_right > .blok_tb_gl:not(:last-child)
 ||bestgamer.ru/partners/
 bestreferat.ru/images/a/
@@ -1680,7 +1698,9 @@ bigreferat.com##BODY > #element
 bigtorrent.org###dle-info + NOINDEX
 ||bit-torrent.kiev.ua/rekl.php
 ||biuss.ru/img_new/
+||bkn.ru/Content/Banners/
 ||bookz.ru/tpl/$image,object
+borifan.com.ua###container > #center > DIV:not([id^="dle-"])
 
 ! C
 caredge.ru##.auth_vkontakte
@@ -1947,9 +1967,10 @@ jeder.ru###colwrap > .module-notitle
 ||jetune.ru/images/760-90-
 
 ! K
-kapriz.info##.market + TABLE[width="100%"]
-kapriz.info##A[href^="http://kapriz.info/engine/go.php?url="]
-||kapriz.info/tizer/
+kapriz.info###dle-info + NOINDEX
+||kapriz.info/tiz/
+||katushka.net/banner.
+||katushka.net/img/banners/
 keep4u.ru###r_bottom
 keep4u.ru###r_top
 kharkovforum.com##A[href^="http://banner.ua/"]
@@ -2070,13 +2091,11 @@ newfreesoft.ru##.menuheadfire
 ||newserials.net/cu.js
 newsru.com,newsru.ru##TABLE[style$="pointer;"][onclick^="window.open"]
 dom.ngs.ru##TABLE[width="100%"] > TBODY > TR[valign="top"] > TD[width="15%"]
-ngs.ru##A[target="_blank"] > IMG[height="200"][width="200"]
 ngs.ru##.block_adv
 ngs.ru##[id^="banner"]
-ngs.ru##.jtedb
 ngs.ru##.logo-banners
 ngs.ru##.nb
-ngs.ru###nbs-block
+ngs.ru##.pbteazy
 realty.ngs.ru###clients
 relax.ngs.ru###exclusive
 relax.ngs.ru##NOINDEX > #logos
@@ -2111,6 +2130,7 @@ ochevidec.net##A[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejou
 online.ua###top_banner
 online.ua###ban_news_r
 ||onlinedisk.ru/bban/banner/
+onlyfilms.ru##.dircash_button
 onlyfilms.ru##NOINDEX > LI.m
 opennet.ru###adv2
 opennet.ru###adv3
@@ -2233,11 +2253,11 @@ sfw.org.ua##.ws_main
 sfw.org.ua##CENTER > NOINDEX
 ! Кхм... Зато честно. :3
 sfw.org.ua##[class$="-for-hueta"]
-! tbd:skipped:begin
+!tbd:skipped:begin
 sibmail.com###ll_slot_3 + * + DIV[style*="160px;"]
 sibmail.com##.gray > CENTER > DIV[style*="125px;"]
 sibmail.com##CENTER > DIV[style*="200px;"]
-! tbd:skipped:end
+!tbd:skipped:end
 sinoptik.ua##.b-partners
 sinoptik.ua##.horo-block
 siteua.org###banner_journals
@@ -2285,12 +2305,12 @@ sudga.ru##IMG[width="180"][height="80"]
 sudga.ru##IMG[width="225"][height="80"]
 
 ! T
-! tbd:skipped:begin
+!tbd:skipped:begin
 tapochek.net###sidebar1-wrap
 tapochek.net##.tCenter.pad_2 > DIV[align="center"]
 tapochek.net##A[target="_blank"] > IMG
 ||tapochek.net^$object
-! tbd:skipped:end
+!tbd:skipped:end
 telestrekoza.com##UL.xoxo.blogroll
 terabit.biz##.module-one-search
 terabit.biz##.newsstory > NOINDEX
@@ -2320,6 +2340,7 @@ topnews.ru##.bn_ir
 ||topnews.ru^*/banners/
 ||topnews.ru/iframe/
 torrent-games.net##BODY > CENTER
+||torrent-games.net/flash/flashgames/
 ||torrent-games.net/media/?
 torrentszona.com##.banner_top
 torrentszona.com###popupMain
@@ -2412,6 +2433,7 @@ yarportal.ru##TD.desc
 ! Z
 zadolba.li##.sidebar > .ok
 zaycev.net##.box > CENTER
+zaycev.net##DIV > TABLE[width="750"][align="center"]
 zaycev.net##UL > NOINDEX
 forum.zaycev.net##.mb[width="180"] NOINDEX
 forum.zaycev.net##.mb[width="180"] TD[align="center"][colspan="3"]
