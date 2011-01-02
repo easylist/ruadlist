@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: KqFcxuUvaApWI1ju7U/LVQ
+! Checksum: p6BAHtmMvW4gHBq2g7tPIA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -703,6 +703,7 @@ p://lank*.ru/
 ||gethit.ru^$third-party
 ||getvisits.ru^$third-party
 ||gfdsgf333.com/in.cgi
+||giper.info^$third-party
 ||girls.ss.ru^
 ||girlstalks.ru^$third-party
 ||giveawayoftheday.com/ticker/
@@ -818,7 +819,7 @@ p://lank*.ru/
 ||kino-top.ru/images/ban*.gif
 ||kinoclub.org^$third-party
 ||kinofilms.com.ua^$third-party
-||kinolib.com/img/rand_logo.php?
+||kinolib.com^$third-party
 ||kinoman.ru^$third-party
 ||kinopromobase.ru^$third-party
 ||kinotraff.ru^$third-party
@@ -875,7 +876,7 @@ p://lank*.ru/
 ||lol.bash.org.ru^
 ||lookszone.ru^$third-party
 ||lovely37.valuehost.ru^
-||loveplanet.ru^$third-party,domain=~love.qip.ru
+||loveplanet.ru^$third-party,domain=~love.donetsk.ua|~love.qip.ru|~loveplanet.ua
 ||lovn.ru/$third-party
 ||lux-bn.com.ua^$third-party
 ||luxup.ru^$third-party
@@ -904,7 +905,7 @@ p://lank*.ru/
 ||medialand.$third-party
 ||medianaft.ru^$third-party
 ||mediaportal.ru^$third-party
-||mediarich.us^$third-party
+||mediarich.$third-party
 ||mediarotator.ru^$third-party
 ||mediaua.com.ua/img/photo/th/
 ||mega-cash.net^$third-party
@@ -1416,6 +1417,7 @@ p://lank*.ru/
 ||webproficlub.ru^$third-party
 ||websiteseo.ru/blok.php?
 ||websurf.ru/?
+||webware.ru/*/clients/
 ||westbyte.com/scripts/bs/bc.php?bi=
 ||westtokyo.ru/download/west
 ||wewonurgold.ws^$third-party
@@ -1684,6 +1686,7 @@ autoua.net###footer-holding
 azart.net.ua##A[href="/adv.php"]
 
 ! B
+||b.day.az^$subdocument
 ||b.inbox.lv/b/
 ||b.netall.ru^
 bagnet.org##.banner
@@ -1835,6 +1838,7 @@ file-online.ru##NOINDEX > TABLE[style]
 filehippo.com##.ad
 filmix.net###body #rightcol
 filmix.net##.banner
+filmx.com.ua##.modul-sp_main
 finiz.ru##.topline
 finmarket.ru###bbInformer231
 filorama.ru###dle-content > TABLE:first-child
@@ -1898,6 +1902,7 @@ gulyai.ru###dle-content > NOINDEX
 ||gulyai.ru/js/foto/
 ||guns.ru/i/
 guru.ua###adbns
+guzei.com##object[width="200"][height="100"]
 
 ! H
 habrahabr.ru##.banner
@@ -2084,6 +2089,9 @@ nashkiev.ua##.block-adv
 ||nashkiev.ua/style/b/
 natural-medicine.ru###GNM30
 natural-medicine.ru##[id^="teaser"]
+ne-kurim.ru##.pad > NOINDEX
+ne-kurim.ru###panel
+||ne-kurim.ru/upload/banners/
 ||neova.auto.ru^
 ||neverfold.ru/opr/*_ad.
 new-films.biz###dle-content > NOINDEX
@@ -2216,6 +2224,7 @@ rin.ru##A > IMG[width="120"][height$="0"][src^="/images/"]
 ||rin.ru/js/adv_top.
 rl-team.net##.border_all.tiban
 rl-team.net##.modul-search
+rl-team.net###sprof
 ||rlsnet.ru/image_banner
 roadvictory.ru###recl
 root.ua##.banner
@@ -2481,22 +2490,12 @@ autotom.ru###shop
 ||autotom.ru/img/$object
 ||autotom.ru/kompstar/
 ||b.autotom.ru/img/
-||catalog.tomsk.ru/ubb/
+||b.vtomske.ru^
 ||catalog.tomsk.ru/uay/
+||catalog.tomsk.ru/ubb/
 desk.tomsk.ru##.right_cell > CENTER
 forum.tomsknet.ru##.banner.nocp
-vtomske.ru##.dns_banner
-vtomske.ru##.vtomske-body[style="height: 37px;"]
-vtomske.ru##TABLE#auto_line
-vtomske.ru##[style*="width: 200px"][style*="height: 200px"]
-vtomske.ru##[style*="width: 240px"][style*="height: 140px"]
-vtomske.ru##[style*="width: 3"][style*="height: 70px"]
-vtomske.ru##[style*="width: 310px"][style*="height: 71px"]
-vtomske.ru##[style*="width: 460px"][style*="height: 60px"]
-vtomske.ru##[style*="width: 468px"][style*="height: 60px"]
-vtomske.ru##[style*="width: 600px"][style*="height: 70px"]
-vtomske.ru##[style="padding-top: 5px;"] > *
-||b.vtomske.ru^
+||gorod.tomsk.ru/i/b/
 ||kompstar.tomsk.ru^$third-party
 ||nirvana.tomsk.ru/pic/kartinki/
 ||tg.tomsk.ru/$third-party
@@ -2507,6 +2506,17 @@ vtomske.ru##[style="padding-top: 5px;"] > *
 ||tomsk.ru/tva/
 ||tomsk.ru/tvb/
 ||torrents.tomsk.ru/b/
+vtomske.ru##.dns_banner
+vtomske.ru##[style="padding-top: 5px;"] > *
+vtomske.ru##[style*="width: 200px"][style*="height: 200px"]
+vtomske.ru##[style*="width: 240px"][style*="height: 140px"]
+vtomske.ru##[style*="width: 310px"][style*="height: 71px"]
+vtomske.ru##[style*="width: 3"][style*="height: 70px"]
+vtomske.ru##[style*="width: 460px"][style*="height: 60px"]
+vtomske.ru##[style*="width: 468px"][style*="height: 60px"]
+vtomske.ru##[style*="width: 600px"][style*="height: 70px"]
+vtomske.ru##TABLE#auto_line
+vtomske.ru##.vtomske-body[style="height: 37px;"]
 ||vtomske.ru/forum/*/dns$script,image,background
 ||vtomske.ru/forum/*/intant.js$script
 ||vtomske.ru/forum/*/kompstar$script,image,background
