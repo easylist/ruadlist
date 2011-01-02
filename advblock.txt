@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: +Yl94HqStjxiXSSgs+KpMg
+! Checksum: KqFcxuUvaApWI1ju7U/LVQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -71,7 +71,6 @@ _160x240
 
 ! = Общие CSS-фильтры =========================================================
 ###adv
-~chance.ru,~tourdom.ru##.adv
 ~mobile-review.com###advblock
 ##.advblock
 ###advertblock
@@ -141,7 +140,7 @@ ban_click
 /images/adv/*
 /images/ban/*
 ! $domain=arendator.ru|file-bit.net|fitsport.ru|forum-profit.ru|fuzz-magazine.ru|kbp.com.ua|monetti.ru
-/images/banners/*$domain=~allods.ru|~visage.od.ua|~vorbis.com
+/images/banners/*$domain=~allods.mail.ru|~allods.ru|~visage.od.ua|~vorbis.com
 /images/bn/*
 /images/rek/*
 /images/rekl/*
@@ -157,7 +156,7 @@ _reklama$domain=~animeonline.su
 /tizers.
 .tizers.
 /upload/bx/*
-/upload/rk/*$domain=~bbk.ru|~qwerty.ru
+/upload/rk/*$domain=~bbk.ru|~kykyryza.ru|~qwerty.ru
 /vottbanner
 /vsemayki_
 .ru/banners$domain=~citydom.ru|~toptracker.ru|~webnames.ru
@@ -198,6 +197,7 @@ sexvodnokalssnikah
 ||avska.com^
 ||devochki.cz^
 ||livejasmin.com^
+||poisk125.com^
 ! $domain=prodom2.com|tele-dom2.com|telesekas.com|tvsxsite.com
 ||pokajem.*.com^
 ||redirecturl.ru^
@@ -206,20 +206,25 @@ sexvodnokalssnikah
 ||zoy.org/
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
-24pornoo.ru,avska.com,devochki.cz,livejasmin.com,prodom2.com,sexrustube24.com,tele-dom2.com,telesekas.com,tvsxsite.com,vstaet.net,zoy.org##:root
+24pornoo.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,prodom2.com,sexrustube24.com,tele-dom2.com,telesekas.com,tvsxsite.com,vstaet.net,zoy.org##:root
 ! - Прочее
+/popunder.
 ||1001kupon.ru^
 ||advmaker.ru/go.php?
 ||firefoxweb.info^
 ||fotostrana.ru/start/questpet/?
 ||gameleads.ru^
 ||goodsbrowser.com^
+||image2you.ru^
 ||kupikupon.com.ua^
 ||kupikupon.ru^
 ||letitbit.net/pop_up.
+||link2you.ru^
 ||partypoker.com/*/videopop/
+||pop.sn00.net^
 ||promo.karosgame.ru^
 ||rs.mail.ru/b*.html?rb_link=
+||travian.com.ua/landingpage/
 ||upd-browser.com^
 ||vzarabotke.ru^
 
@@ -507,7 +512,7 @@ p://lank*.ru/
 ||binimage.de^$third-party
 ||bizua.com^$third-party
 ||bizweb.ru/button.php?
-||bk.goodline.info^$~third-party
+||bk.goodline.info^$third-party
 ||blogan.ru^$third-party
 ||blogun.ru^$third-party
 ||blowclick.ru^$third-party
@@ -849,6 +854,7 @@ p://lank*.ru/
 ||libo.ru/rat/img/
 ||liex.ru/$third-party
 ||life4life.biz^$third-party
+||lifepromo.biz^$third-party
 ||limp.pp.ua^
 ||link-ip.int.ru/in.php?
 ||link.ru/$third-party
@@ -1533,7 +1539,7 @@ mail.ru##IMG[width="200"][height="300"]
 mail.ru##IMG[width="240"][height="200"]
 mail.ru##IMG[width="240"][height="400"]
 mail.ru##[class$="_ban"]
-mail.ru##[class$="banner"]
+mail.ru,~allods.mail.ru##[class$="banner"]
 mail.ru##[id^="getmov"]
 ||afisha.mail.ru/img/spons/
 ||banners.mail.ru^
@@ -1632,7 +1638,6 @@ yandex.ru,yandex.ua##[class*="spec-adv"]
 ||7sl.ru/uploads/*.swf
 
 ! A
-a42.ru##IFRAME[src^="http://bk.goodline.info/"]
 ||adultmult.ru^$object
 advesti.ru##IMG[width="170"][height="340"][border="0"]
 advesti.ru##IMG[width="570"][height="80"][border="0"]
@@ -1648,6 +1653,8 @@ allbest4free.ru##NOINDEX
 ||amk-team.ru/*ajax77197cms.js
 anekdot.ru##.righcolumn
 ||anekdot.ru/i/gallery/
+anekdotov.net##NOINDEX > TABLE[width="100%"][height="140"]
+||anekdotov.net/show/sell/
 ||anidub.com/*/banner/
 ||anidub.com/flash/240_400_
 ||anime-zone.ru/inc/600x90.js
@@ -1755,6 +1762,7 @@ demotivation.ru###add2_div
 demotivation.ru##BODY > NOINDEX
 depositfiles.com##.banner1
 design-warez.ru##A[target="_blank"] > IMG[width="180"]
+diamond-warez.net##A[href^="http://dosugcz.biz/"]
 ||digital.ru/uploads/banners/
 dirty.ru##.b-ads
 ||dirty.ru/i/nevoobrazimo/banner_
@@ -2165,6 +2173,7 @@ podrobnosti.ua##[class*="banner"]
 ||pogoda.by/promo/
 pornolab.net###pl-speedbar
 ||static.pornolab.net/00
+pr-cy.ru###ad
 premiership.ru###banner
 ||premiership.ru/upload/adv/
 price.ru##.banner_container
@@ -2363,7 +2372,6 @@ ua-football.com###rozetkadiv
 udaff.com##BODY > DIV:first-child > CENTER
 udaff.com##NOINDEX > A > IMG
 ||udaff.com/image/$object
-ukr.net###zakl_body
 ||ukr.net/partner/
 ukrinform.ua##.rightbar_text > A[target="_blank"]
 ||ukrinform.ua/web/informer/uploaded/flash/
@@ -2469,6 +2477,10 @@ overclockers.ru##TD[width="12%"] + TD + TD[width="200"]
 ||overclockers.ru/im_b/
 
 ! Томские ресурсы
+autotom.ru###shop
+||autotom.ru/img/$object
+||autotom.ru/kompstar/
+||b.autotom.ru/img/
 ||catalog.tomsk.ru/ubb/
 ||catalog.tomsk.ru/uay/
 desk.tomsk.ru##.right_cell > CENTER
