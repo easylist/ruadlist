@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: DOTe5sL53+3giwzK55sQyQ
+! Checksum: yzAw5ufo0gpz6I5mBFIJ1w
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -93,6 +93,8 @@ _160x240
 ##.bc-adv
 ##.madv
 ##.mediaget
+! Блок ссылок на фиктивные торренты на lu4ok.ru, only-mp3.ru, rl-team.net и прочие варезники
+##.modul-search
 ##.sp_search_table
 ##.sp_search2_table
 ##.sp_search3_table
@@ -172,7 +174,9 @@ love_qip_head
 -na-dosuge
 odnotrahniki
 online-v-kontakte
-/se*kontakte
+/secs*kontakte
+/seks*kontakte
+/sex*kontakte
 sexvodnokalssnikah
 /aika.swf|
 /Talky3D.gif|
@@ -185,14 +189,15 @@ sexvodnokalssnikah
 /block.js|$third-party
 ! rutor.org & opensharing.org - попап с рекламой вместо счётчика.
 /counter.js|$~third-party
+/counter2.js|$~third-party
 /out.php?sid=$script
 
 ! = «Плохие» сайты (в основном попапы) ========================================
 ! #pop.bookmark
 ! Прямая блокировка следующих сайтов должного эффекта не имеет, но при наличии
 ! дополнения Adblock Plus Pop-up Addon они определяются как нежелательные и
-! автоматическое открытие попапа с ними блокируется. Мне не нравится тот факт,
-! что сайты блокируются целиком, но пока не вижу другого пути.
+! автоматическое открытие попапа с ними блокируется. Мне (иногда) не нравится
+! тот факт, что сайты блокируются целиком, но пока не вижу другого пути.
 ! - Порнуха
 ||24pornoo.ru^
 ||avska.com^
@@ -201,19 +206,21 @@ sexvodnokalssnikah
 ||poisk125.com^
 ! $domain=prodom2.com|tele-dom2.com|telesekas.com|tvsxsite.com
 ||pokajem.*.com^
-||redirecturl.ru^
+||posmotrish.net^
 ||sexrustube24.com^
 ||vstaet.net^
 ||zoy.org/
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
-24pornoo.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,prodom2.com,sexrustube24.com,tele-dom2.com,telesekas.com,tvsxsite.com,vstaet.net,zoy.org##:root
+24pornoo.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,posmotrish.net,prodom2.com,sexrustube24.com,tele-dom2.com,telesekas.com,tvsxsite.com,vstaet.net,zoy.org##:root
 ! - Прочее
 /popunder.
 ||1001kupon.ru^
 ||advmaker.ru/go.php?
+||browser-update.ru^
 ||firefoxweb.info^
 ||fotostrana.ru/start/questpet/?
+||funtest-ru.com^
 ||gameleads.ru^
 ||goodsbrowser.com^
 ||image2you.ru^
@@ -224,9 +231,12 @@ sexvodnokalssnikah
 ||partypoker.com/*/videopop/
 ||pop.sn00.net^
 ||promo.karosgame.ru^
+||redirecturl.ru^
 ||rs.mail.ru/b*.html?rb_link=
+||go.trafking.ru^
 ||travian.com.ua/landingpage/
 ||upd-browser.com^
+||upd-browser.net^
 ||vzarabotke.ru^
 
 ! = Общие фильтры =============================================================
@@ -289,7 +299,7 @@ sexvodnokalssnikah
 /rax.ru/*
 /redtram.
 /richarbuz.
-/rnb.php?id=informer
+/rnb.php?id=
 /shared/promos/*
 /slatefp.asp
 /some-ad.php
@@ -483,6 +493,7 @@ p://lank*.ru/
 ||b2bcontext.ru^$third-party
 ||b2bvideo.ru^$third-party
 ||b81x63nc.ws.md^$third-party
+||banage.ru^$third-party
 ||banner.kiev.ua^$third-party
 ||banner.ua^$third-party
 ||banner-in.net^$third-party
@@ -493,6 +504,7 @@ p://lank*.ru/
 ||bannuncio.com^$third-party
 ||bans.bride.ru^$third-party
 ||bantex.ru^$third-party
+||base.kiwi.kz^$third-party
 ||bashnya.ru^$third-party
 ||basketfan.my1.ru^$third-party
 ||bazar.penza.su^$third-party
@@ -965,6 +977,7 @@ p://lank*.ru/
 ||nekki.ru/banner.php?
 ||neosap.ru^$third-party
 ||neosmi.ru^$third-party
+||netporno.org^$third-party
 ||nettracker.jps.ru^
 ||newbs.hutz.co.il/www/
 ||news.rin.ru^$third-party
@@ -1240,6 +1253,7 @@ p://lank*.ru/
 ||smsconvertv3.ru^$third-party
 ||smsfiles.ru/ban*.gif
 ||soft-teleport.ru/uploads/ad/
+||soft4dle.com^$third-party
 ||softbn.ru^$third-party
 ||sorcerers.net/includes/butler/butler.php?
 ||spbfp.atlant.ru^
@@ -1744,8 +1758,6 @@ coolsoch.ru##NOINDEX
 ||copypast.ru/re*/$image
 cripo.com.ua###banner
 cripo.com.ua###topban
-cwer.ru##NOINDEX
-||cwer.ru/misc/$object
 cyberinfo.ru###bl_05
 
 ! D
@@ -1997,6 +2009,7 @@ kinobanda.net##.main-bg A[target="_blank"] > IMG
 ||kinobanda.net/120x600
 kinobaza.net##A.red
 kinobaza.net##A[href="/out.php"]
+||kinomir.kz^$object
 ||kinobaza.net/babes/
 ||kinomatrix.com/banners/
 kinopoisk.ru###loadb
@@ -2045,7 +2058,6 @@ liveday.ru##TD[width="367"] > NOINDEX + TABLE[width="367"]
 lost-abc.ru##[width="630"][height="90"]
 ||lostfilm.tv/img/
 lovesoft.ru###dle-content > CENTER > A[target="_blank"]
-lu4ok.ru###dle-content > .modul-search
 ||lu4ok.ru/partnerearning/
 
 ! M
@@ -2054,6 +2066,7 @@ macdigger.ru##NOINDEX > A[target="_blank"] > IMG
 ||macosworld.ru^$object
 macovod.net###top-band-2
 mail.rambler.ru###new_browsers_topline
+market.tut.ua###salut_splash
 market-pages.ru##.sovet
 maulnet.ru##.top_banner
 maulnet.ru##CENTER > STRONG
@@ -2071,6 +2084,8 @@ mozilla-russia.org###modex
 mozutil.mozilla-russia.org##.footer > SPAN > DIV[style="text-align: left;"] > DIV[style="text-align: right;"]
 mp3-online.com.ua###popupWnd
 ||mp3bit.ru/ban/
+mp3lemon.net##.cash123
+||mp3lemon.net/image/adv/
 mskd.ru##TABLE[width="600px"][align="center"]
 ||mskd.ru/img/*x*_
 ||multitran.ru/ban/
@@ -2225,7 +2240,6 @@ rin.ru##A > IMG[width="120"][height$="0"][src^="/images/"]
 ||rin.ru/images/bannerpic/
 ||rin.ru/js/adv_top.
 rl-team.net##.border_all.tiban
-rl-team.net##.modul-search
 rl-team.net###sprof
 ||rlsnet.ru/image_banner
 roadvictory.ru###recl
