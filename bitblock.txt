@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 3VgMhWJU9lWsUqla8bop6g
+! Checksum: bzUihO5PR3Y25dsIm8b2Kw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -151,10 +151,15 @@ gismeteo.ua###ad-rbkua
 ||www.rb.ru^$third-party
 
 != Мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) =================
+! Блоки с авторскими правами и часто мусором на многих сайтах.
 ###copyright
 ##.copyright
+! Предлагают скачать торрент-клиент и торрент одним исполнимым файлом на трекерах. Баннер часто яркий, броский и не нужный вовсе.
+##[class^="mediaget"]
+! Назойливые новости на LiveJournal.
 _lj_times_
 /ljtimes/*
+! Далее идут правила для отдельных сайтов
 21region.org##.logo
 ||a-comics.ru/fw/
 anidub.com##.art-header
