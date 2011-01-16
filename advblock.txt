@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: wwOiMnwn6/ThcjvXy6mJGw
+! Checksum: pJYkvfUi5AcMsu5WVno/jQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -21,20 +21,20 @@
 ! Для защиты от порно используйте расширение CensureBlock.
 
 ! = Исключения против ложных срабатываний =====================================
-!:: ||dclick.ru^$third-party
+! Исправление проблем возникших в результате работы подписки на отдельных сайтах
+! Кросс-запрос в флэш роликах с dclick.ru
 @@||dclick.ru/crossdomain.xml|
-!:: /cgi-bin/iframe/*
+! Видео с madbanner.ru блокируется правилом /cgi-bin/iframe/*
 @@||video.*.user.madbanner.ru^$object_subrequest
-!:: .tbn.ru/
+! Авторизация на tbn.ru блокируется правилом против него же
 @@||auth.tbn.ru/
 !:: ||bugaga.tut.by^
 @@||bugaga.tut.by/*_tutbar
 !:: ##[width="468"][height="60"] — не хочу нагружать этот селектор проверками.
 @@||russianfedora.ru^$elemhide
-!:: ||195.214.194.1^ и /images/*/*/0/script.$script
-@@/images/*/*/0/script.js?$domain=kinopoisk.ru
-! Исправление проблем возникших в результате работы EasyList
-@@||ad.adriver.ru/$domain=fileshare.in.ua|kinopoisk.ru|tv.molodejj.ru
+! Правила для отдельных сайтов
+@@/images/*/*/0/script.js?$domain=dni.ru|kinopoisk.ru
+@@||adriver.ru/cgi-bin/erle.cgi?$domain=dni.ru|kinopoisk.ru|tv.molodejj.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
@@ -1789,9 +1789,9 @@ dirty.ru##.b-ads
 ||dirty.ru/i/nevoobrazimo/banner_
 ||divan-tut.ru/promo
 dni.ru##.column.ad
-dni.ru##.partners-links.column.drug-drop.crop
+dni.ru##.partners-links
 dni.ru###header-banner
-dni.ru##LI.links
+dni.ru##[id^="tieserBlock"] > [id^="tb_"]
 dostatok.ru###SR_PopOver
 dosuglend.ru##[id^="tibu_container_"]
 dreamprogs.net##.content DIV#lfwar:first-child
