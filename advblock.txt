@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: okoccxzhQOrs3QuiZ5io+g
+! Checksum: rTK028bXihxsQGWK993LMQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -28,8 +28,6 @@
 @@||video.*.user.madbanner.ru^$object_subrequest
 ! Авторизация на tbn.ru блокируется правилом против него же
 @@||auth.tbn.ru/
-!:: ||bugaga.tut.by^
-@@||bugaga.tut.by/*_tutbar
 !:: ##[width="468"][height="60"] — не хочу нагружать этот селектор проверками.
 @@||russianfedora.ru^$elemhide
 ! Правила для отдельных сайтов
@@ -535,7 +533,6 @@ p://lank*.ru/
 ||bossmoney.ru^$third-party
 ||box.net.pl/strony/topsites/img.php?
 ||br.gcl.ru/cgi-bin/br/
-||bugaga.tut.by^
 ||buybanners.ru^$third-party
 ||bvf.ru/upchk/
 ||bx.metka.ru^
@@ -1725,6 +1722,8 @@ bigtorrent.org###dle-info + NOINDEX
 ||bkn.ru/Content/Banners/
 ||bookz.ru/tpl/$image,object
 borifan.com.ua###container > #center > DIV:not([id^="dle-"])
+||bugaga.tut.by^
+@@||bugaga.tut.by/*_tutbar
 
 ! C
 caredge.ru##.auth_vkontakte
