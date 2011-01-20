@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ebWo7K27135r9P11Rz300Q
+! Checksum: CueWGacidMkh5MsFEoDSaA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -85,10 +85,6 @@ _160x240
 ##.sp_search3_table
 ##.surbis_banner
 ##.topbaner
-! Заголовок рекламного модуля Яндекс.Директ
-##.y5_h
-! Тело рекламного модуля Яндекс.Директ
-##.y5_ads
 ##BODY[onload="popupInit();"] > DIV#popUp
 ##[class^="snBody"]
 ##[id^="DIV_NNN_"]
@@ -202,7 +198,7 @@ sexvodnokalssnikah
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
 24pornoo.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,posmotrish.net,prodom2.com,sexrustube24.com,tele-dom2.com,telesekas.com,tvsxsite.com,vstaet.net,zoy.org##:root
 ! - Прочее
-/popunder.
+/popunder.$domain=~uzumaki.kz
 ||1001kupon.ru^
 ||advmaker.ru/go.php?
 ||browser-update.ru^
@@ -1606,7 +1602,7 @@ yandex.ru,yandex.ua##.b-bar
 yandex.ru,yandex.ua##.b-direct
 yandex.ru,yandex.ua##[class*="spec-adv"]
 |http://wimg.yandex.net/12/54/t-12542.png|
-||an.yandex.
+||an.yandex.$third-party
 ||awaps.yandex.
 ||button.blogs.yandex.
 ||bs.yandex.
