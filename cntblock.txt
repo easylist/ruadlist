@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: msg/pyEGpqIUvUf64PzUWw
+! Checksum: /ZCsH7o5l+n6AVvQNW4XGg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU CountersList (ruadlist.googlecode.com)
@@ -58,6 +58,8 @@ _8831.gif
 .ru/cnt/?
 .ru/count/
 .spylog.$image,script,third-party
+! Картинка вставляемая скриптом ga.js с сайта Google Analytics в параметрах которой передаются собранные данные.
+! Для случаев, когда ga.js в том или ином виде хранится локально, а не берётся с сервера Google.
 /__utm.gif
 //li.ru/*?
 /cnt.cgi?
@@ -107,6 +109,7 @@ _8831.gif
 ||fxmail.ru/rating/$third-party
 ||geovisite.com^$third-party
 ||google.com/uds/stats?
+||google-analytics.com^$third-party
 ||goto.kz/img.php?$third-party
 ||hc.uralweb.ru^
 ||hiddenjs.ru^
