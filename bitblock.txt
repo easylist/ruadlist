@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: nKGMIDTodRDrBSoBstlpvg
+! Checksum: /0ACxuGssFGoHZgLZiVTPg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -57,10 +57,11 @@
 ||lenta.yandex.ru/i/addfeed.
 
 !- Универсальные --------------------------------------------------------------
-||addthis.com^$third-party,domain=~artlebedev.ru
+/addthis.try.js
+||addthis.com^$third-party
 ###odnaknopka
-||odnaknopka.ru^$third-party
 /odnaknopka/*
+||odnaknopka.ru^$third-party
 ||pip.qip.ru^$third-party
 ##.sexy-bookmarks
 ###sexy-bookmarks
@@ -470,7 +471,8 @@ _userbar$image
 ##.post_share_buzz
 ##a[title="Share on Google Buzz"]
 /addtogoogle.
-||google.com^*/friendconnect.js$domain=~blog.vkbutton.com
+||googleusercontent.com^*/files/recent-comments-gadget.xml
+||googleusercontent.com^*/gadgets/members.xml
 !
 !---------- Digg Widgets -----------
 !
