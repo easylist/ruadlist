@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Z5LmouW9vU/WnLxgbR2J8g
+! Checksum: mXugR+VZA3eZJscqFblSog
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -25,6 +25,7 @@
 !:: ##[width="468"][height="60"] — не хочу нагружать этот селектор проверками.
 @@||russianfedora.ru^$elemhide
 ! Правила для отдельных сайтов
+@@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@/images/*/*/0/script.js?$domain=dni.ru|kinopoisk.ru
 @@||adriver.ru/cgi-bin/erle.cgi?$domain=dni.ru|kinopoisk.ru|tv.molodejj.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
@@ -36,7 +37,6 @@
 @@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
 @@||uzumaki.kz/js/popunder.js|
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
-@@.ru/ai/adbanner/$domain=akado.ru|megafon.ru
 
 ! = Фильтры по регулярным выражениям ==========================================
 ! Слишком короткая версия слова banner
