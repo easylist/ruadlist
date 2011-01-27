@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: rr1lVt7+QejdURS7w5FHNg
+! Checksum: kchesB8XVrULmHE61c2kMA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -50,10 +50,6 @@
 ##[width="468"][height="60"]
 ##[width="728"][height="90"]
 
-/120x140
-_160x240
--160x240
-/160x240
 /700x70_
 /768x90.
 
@@ -145,7 +141,6 @@ _reklama$domain=~animeonline.su
 .tizers.
 /upload/bx/*
 /upload/rk/*$domain=~bbk.ru|~kykyryza.ru|~qwerty.ru
-/vottbanner
 /vsemayki_
 .ru/banners$domain=~citydom.ru|~toptracker.ru|~webnames.ru
 .ua/banners
@@ -155,22 +150,13 @@ _reklama$domain=~animeonline.su
 .swf?path=
 .swf?target=_self&link
 
-! = Популярные баннеры по ключевым словам =====================================
-love_qip_head
--na-dosuge
-odnotrahniki
-online-v-kontakte
-/secs*kontakte
-/seks*kontakte
-/sex*kontakte
-sexvodnokalssnikah
+! = Популярные баннеры по-именам файлов =======================================
 /aika.swf|
 /Talky3D.gif|
 
 ! = Популярные имена скриптов =================================================
 .ru/_scripts/themes/sb.js|
 /pseudocounter.js
-/ad*.js?link
 /begun.js
 /block.js|$third-party
 ! rutor.org & opensharing.org - попап с рекламой вместо счётчика.
@@ -264,7 +250,6 @@ sexvodnokalssnikah
 /extadv/*
 /fullgames.ru/*$object
 /getrank.net/pr*.php
-/i.li.ru/_sl_/*$script
 /IndianRailways/*$match-case
 /informer.js?
 /linkexchange/*
@@ -272,9 +257,7 @@ sexvodnokalssnikah
 /mirmaek/*.gif$image
 /pagerank.$image
 /pagerank/*$image
-/phpadsnew$~object_subrequest
 /pop.ru/*
-/popuptraf
 /prre.ru/bout.php?
 /prre.ru/wout.php?
 /qzx.ru/gf/*
@@ -295,8 +278,6 @@ sexvodnokalssnikah
 /xap.ru/*$script
 ?begun=*&begun_referrer=*&begun_location=
 ^clickunder=
-p://knal*.ru/$third-party
-p://lank*.ru/
 
 ||77.91.228.66/banners/
 ||78.140.145.93^
@@ -646,7 +627,6 @@ p://lank*.ru/
 ||ex6.ru/k/
 ||exaccess.ru^$third-party
 ||extreme-dm.com^$third-party
-||f2.ru/iframe
 ||fafduzu.net^$third-party
 ||fair.ru/*/i.php?
 ||fairlink.ru^$third-party
@@ -740,7 +720,6 @@ p://lank*.ru/
 ||hellywood.ru^$third-party
 ||helpls.ru^$third-party
 ||heroeswm.ru^$third-party,object
-||hi-fi.ru/b/
 ||hid24.com^$third-party
 ||hit-sales.ru^$third-party
 ||hitlist.ru^$third-party
@@ -1136,7 +1115,6 @@ p://lank*.ru/
 ||region59.net/Buttons/
 ||reklamaster.com^$third-party
 ||revsci.net^$third-party
-||rg-be.ru^$third-party
 ||ria.ru/frame?v
 ||richbanner.ru^$third-party
 ||richclick.ru^$third-party
@@ -1185,7 +1163,6 @@ p://lank*.ru/
 ||searchgid.ru/informer.
 ||searchmeta.webhost.ru^
 ||secure-it.imrworldwide.com/cgi-bin/m?
-||seexycams*.da.ru^
 ||sekcygirl.ru^$third-party
 ||sektor-sga.com/sga*.
 ||selectornews.com^$third-party
@@ -1326,7 +1303,6 @@ p://lank*.ru/
 ||torgnn.ru^$third-party
 ||torrent-trackers.ru^$third-party
 ||trade7.ru^$third-party
-||tradelinks
 ||tradeone.com.ua^
 ||traf.biz^$third-party
 ||traf.spb.ru^
@@ -1341,7 +1317,6 @@ p://lank*.ru/
 ||traffstock.ru^$third-party
 ||trafoed.com/promo/
 ||trafon.ru^$third-party
-||trafunder
 ||trusearch.net/affblock/
 ||turist.ru/turist.goods_pics/$third-party
 ||tvoi-dosug.com^$third-party
@@ -1810,11 +1785,9 @@ epidemz.net##TD[width="135"]:first-child + TD > :not(#dle-content)
 epidemz.net##TD[width="135"]:first-child + TD + TD[width="135"]
 ||epidemz.net^$object
 ||etorrent.ru/js/etorrent.ru.js
-||b.ex.ua/$~stylesheet
 eva.ru###fft
 eva.ru##.bottom_bg > A > DIV[style$="300px;"]
 ||eva.ru/eva/20000-30000/*/webfile/
-||ex.ua/b/$~stylesheet
 exler.ru##[id^="Banner"]
 exler.ru###AdvertFieldCenter
 exnews.org##[class$="bbody"]
