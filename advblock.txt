@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: kdehrmv63Et/LCichxCTfA
+! Checksum: HYlCgbaMUMr8tCSNXVERvA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -104,6 +104,9 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Плавающий баннер от Mega-Bazar. Содержимое блокируется правилом /bazar_fast/*, а это скрывает остатки.
 ##DIV[id][align="center"][onmouseover][style*="fixed;"]
+! Баннеры системы banner.kiev.ua в случае если пришлось загрузить их фрейм.
+banner.kiev.ua###place
+banner.kiev.ua##IMG[src^="http://banner.kiev.ua/b/"]
 
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 |http://adfarm
@@ -458,7 +461,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||b2bvideo.ru^$third-party
 ||b81x63nc.ws.md^$third-party
 ||banage.ru^$third-party
-||banner.kiev.ua^$third-party
+||banner.kiev.ua^$third-party,domain=~referatu.net.ua
 ||banner.ua^$third-party
 ||banner-in.net^$third-party
 ||banners.newshost.net^
@@ -2219,6 +2222,7 @@ rbcdaily.ru##.banner
 rbcdaily.ru##[class*="_adv"]
 ||rd2d.com/adv/
 ||ref.by/_ads/
+referatu.net.ua##.banner468_60
 ||regnum.ru/i/bn/
 ||restoclub.ru/pic/iblocks/
 ||restotv.ru/promo/$domain=restoclub.ru
