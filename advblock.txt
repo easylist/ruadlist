@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 3b+sXQnaSJ+H0aXEiJPAFw
+! Checksum: C5cZyatbiA2O0u2DC89nsw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -43,6 +43,9 @@
 ! = Фильтры по регулярным выражениям ==========================================
 ! Слишком короткая версия слова banner
 /[/_-]baner[\d._-s/]/$domain=~nalog.ru
+_baner_
+_baner.
+/baner_
 /baner/*
 
 ! = Скрытие баннеров по указанному размеру картинки ===========================
@@ -154,7 +157,7 @@ _tizer.
 .ua/banners/
 .swf?alink=
 .swf?link1=$domain=~citydom.ru
-.swf?link=$domain=~ex-road.ru
+.swf?link=$domain=~ex-road.ru|~testoni.com
 .swf?path=
 .swf?target=_self&link
 
@@ -175,14 +178,15 @@ _tizer.
 ! ||bannuncio.com^$third-party
 ! ||supertura.com^$third-party
 ! ||teaservizio.com^$third-party
-! ||thewidgeteers.com^$third-party
+!(?)exchange.meta.ua
+!(?)thewidgeteers.com^$third-party
 /block.js|$third-party
 ! rutor.org & opensharing.org - попап с рекламой вместо счётчика.
 /counter.js|$~third-party
 /counter2.js|$~third-party
 /out.php?sid=$script
 
-! = «Плохие» сайты (в основном попапы) ========================================
+! = Сайты-попапы (их часто открывают без спросу в новом окне) =================
 ! #pop.bookmark
 ! Прямая блокировка следующих сайтов должного эффекта не имеет, но при наличии
 ! дополнения Adblock Plus Pop-up Addon они определяются как нежелательные и
@@ -203,15 +207,21 @@ _tizer.
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
 24pornoo.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,posmotrish.net,prodom2.com,sexrustube24.com,tele-dom2.com,telesekas.com,tvsxsite.com,vstaet.net,zoy.org##:root
+! - Редиректоры (открываются в попапе и перекидывают на другой сайт)
+||advmaker.ru/go.php?
+||flipflapflo.
+||gameleads.ru^
+||ipchecker.ru^
+||myredirector.net/?go=
+||redirecturl.ru^
+||go.trafking.ru^
+||web-leaders.ru/adv.
 ! - Прочее
 ||1001kupon.ru^
-||advmaker.ru/go.php?
 ||fotostrana.ru/start/questpet/?
 ||funtest-ru.com^
-||gameleads.ru^
 ||goodsbrowser.com^
 ||image2you.ru^
-||ipchecker.ru^
 ||kupikupon.com.ua^
 ||kupikupon.ru^
 ||letitbit.net/pop_up.
@@ -221,9 +231,7 @@ _tizer.
 ||promo.karosgame.ru^
 ||promo.rzonline.ru^
 ||pw.mail.ru/play.html?
-||redirecturl.ru^
 ||rs.mail.ru/b*.html?rb_link=
-||go.trafking.ru^
 ||travian.com.ua/landingpage/
 ||vzarabotke.ru^
 
@@ -246,7 +254,6 @@ _tizer.
 //m2k.ru^
 //r*.auto.ru/*
 //r*.izvestia.ru/*
-//r*.wmlink.*/*
 /ad_show.$script
 /Ads.asmx/GetInfo?
 /adv_out.$script
@@ -518,6 +525,7 @@ _tizer.
 ||bossmoney.ru^$third-party
 ||box.net.pl/strony/topsites/img.php?
 ||br.gcl.ru/cgi-bin/br/
+||bt.kiev.ua^$third-party,subdocument
 ||buybanners.ru^$third-party
 ||bvf.ru/upchk/
 ||bx.metka.ru^
@@ -648,6 +656,7 @@ _tizer.
 ||fanat.kz^$third-party
 ||fantasy.d2.ru/showban*.php?
 ||farle.ru/?bn=
+||fastcardtech.com^$third-party
 ||faza.ru/img.php?
 ||fbs.for-ua.org.ua^
 ||videoklass.ru^$third-party
@@ -663,7 +672,6 @@ _tizer.
 ||flash.eastweb.ru/i/files/
 ||flasher.ru/data/images/swf/
 ||flashok.ru/banner/
-||flipflapflo.$third-party
 ||flysat.com/resim
 ||fmates.ru^$third-party
 ||fooder.ru^$third-party
@@ -831,7 +839,8 @@ _tizer.
 ||kvasu.net/*/$object
 ||kwot.biz^$third-party
 ||kzporno.kz^$third-party
-||ladycash.ru^$third-party
+!:: /adv_out.$script
+! ||ladycash.ru^$third-party
 ||ladyclicks.ru^$third-party
 ||ladyshopping.ru^$third-party
 ||lbe.ru/cgi-bin/
@@ -886,7 +895,8 @@ _tizer.
 ||mamler.com/templates/
 ||maploco.com/vmap/
 ||mari.net.ru^
-||marketgid.com^$third-party
+! Непонятно зачем блокируем сам marketgid если его реклама идёт с dt00 + у них есть домен в зоне ru и ua
+! ||marketgid.com^$third-party
 ||masterpop.ru^$third-party
 ||mastertraffic.cn^$third-party
 ||mdesign.planet.ee^$third-party
@@ -927,6 +937,7 @@ _tizer.
 ||mobn.net^$third-party
 ||mochiads.com^~object_subrequest
 ||modastro.ee^$third-party
+||moifoto.ru/rek_
 ||moijs.com^$third-party
 ||mokuz.ru/vipcounter/
 ||money.loveplanet.ru/nb/
@@ -1015,6 +1026,7 @@ _tizer.
 ||partner.join.com.ua^$third-party
 ||partnerearning.com^$third-party
 ||partners.vsemayki.ru^
+! /adv-out/?
 ||pay-click.ru^$third-party
 ||pay-partner.ru^$third-party
 ||pbid.iforex.com^$third-party
@@ -1046,6 +1058,7 @@ _tizer.
 ||poisk.su/top.php?
 ||pokaifu.com/templates/
 ||pokerstars.com^$third-party
+||poligraf.pp.ru^$third-party
 ||pomogi.org/urgent/1/
 ||ponsshop.ru^$third-party
 ||pop-banner
@@ -1126,7 +1139,7 @@ _tizer.
 ||rclick.com.ua^
 ||readme.ru^$third-party
 ! Вероятно перекрывается правилом /tizers.
-||recreativ.$third-party
+! ||recreativ.$third-party
 ||red.by/redban
 ||redtram.com^$third-party
 ||refer.ru^$third-party
@@ -1274,9 +1287,9 @@ _tizer.
 ||tankionline.com^$third-party
 ||tbe.tom.ru/?
 ||teaser.cc^$third-party
-||teasercash.com^$third-party
+! Мёртвый домен?
+! ||teasercash.com^$third-party
 ||teasergate.com^$third-party
-||teasernet.$third-party
 ||teenseks.da.ru^
 ||teeser.ru^$third-party
 ||tehnoklad.ru^$third-party
@@ -1336,6 +1349,7 @@ _tizer.
 ||trafunder.$third-party
 ||trusearch.net/affblock/
 ||turist.ru/turist.goods_pics/$third-party
+||tsr.cdns.com.ua^$third-party
 ||tvoi-dosug.com^$third-party
 ||tynt.com^$third-party
 ||u*.*.mytrix.com/cnt?
@@ -1393,6 +1407,7 @@ _tizer.
 ||vyatka-host.ru^$third-party
 ||vz.ru/inc/b/*iframe.
 ||warezplatinum.com^$third-party
+||warnet.ws/banners/
 ||wave525.com.ua^$third-party
 ||web-hack.ru/images/b/
 ||web-rom.ru/?get_code
@@ -1423,7 +1438,7 @@ _tizer.
 ||wm-help.net/b.php?
 ||wmclickz.ru^$third-party
 ||wmirk.ru^$third-party
-||wmlink.ru^$third-party
+||wmlink.$third-party
 ||wmlink2008.info^$third-party
 ||wmplace.ru/place.php?
 ||wmunder.ru^$third-party
@@ -1498,11 +1513,17 @@ _tizer.
 ||kakdolgo.ru^$third-party
 ||superfastcomputer.ru^$third-party
 
+! TeaserNET
+||ddq.com.ua^$third-party
+||teasernet.$third-party
+
 ! Найденные домены партнёрской сети 1under.ru (все сидят на IP 89.208.145.156)
 ||1under.ru^$third-party
-||2under.ru^$third-party
 ||2lycosu.com^$third-party
+||2under.ru^$third-party
+||3lucosy.com^$third-party
 ||3under.ru^$third-party
+||crpoy.com^$third-party
 ||lycodz.com^$third-party
 ||lycosu.com^$third-party
 ||lycosy.com^$third-party
@@ -1837,6 +1858,7 @@ fenzin.org##TD[align="center"] > .leftmenu-text
 ||ferra.ru/include/*_advert_
 file-online.ru##NOINDEX > TABLE[style]
 filehippo.com##.ad
+||fileshare.in.ua/goto.aspx?
 filmix.net###body #rightcol
 filmix.net##.banner
 filmx.com.ua##.modul-sp_main
@@ -1895,6 +1917,7 @@ gamer.ru##BR + TABLE[width="630"]
 gazeta.ru##.vypolzen_out
 ||gde.ru/img/*320x1
 ||ggym.ru/popover.js
+||golosua.com/img/banners/
 gorockop.ru##.side_block
 ||grani.ru/files/*.swf|
 guitarplayer.ru##[class^="windowbg"] > NOINDEX
@@ -1963,6 +1986,10 @@ investoday.ru##.globalmesswarnwrap
 investoday.ru##.row2 > SPAN[style^="float:"]
 ipicture.ru##.zula
 ||ipicture.ru/*/banner/
+ipm.ua##.gray_block.ng1
+ipm.ua##.gray_block.ng2
+ipm.ua##.gray_block.ng3
+||ipm.dn.ua/bn/g/?
 ||irk.ru/img/*/ibr/
 itc.ua##.b240x350
 hi-fi.itc.ua##.news
@@ -2080,8 +2107,9 @@ mp3lemon.net##.cash123
 ||mp3lemon.net/image/adv/
 mskd.ru##TABLE[width="600px"][align="center"]
 ||mskd.ru/img/*x*_
-||multitran.ru/ban/
+||multiky.ru/rtr/
 multitran.ru##TD[colspan="3"] > TABLE[border="1"]
+||multitran.ru/ban/
 musicfond.com##.NavItems>.InitaMenu
 musicfond.com##.SearchForm>NOINDEX
 ||musicforums.ru/*/knopki/
@@ -2123,8 +2151,8 @@ dom.ngs.ru##TABLE[width="100%"] > TBODY > TR[valign="top"] > TD[width="15%"]
 ngs.ru##.block_adv
 ngs.ru##[id^="banner"]
 ngs.ru##.logo-banners
+ngs.ru##.mjnnuak
 ngs.ru##.nb
-ngs.ru##.pbteazy
 realty.ngs.ru###clients
 relax.ngs.ru###exclusive
 relax.ngs.ru##NOINDEX > #logos
@@ -2176,6 +2204,8 @@ opensharing.ru,opensharing.org##IMG[height="120"][width="240"]
 ||opensharing.$object
 ||oper.ru/data/rennabs/
 oplati.ru##TD[width="90"]
+oru.ru##TD[width="10"] + TD[width="260"]:last-child
+||oru.ru^*.swf?click_url=
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 
@@ -2222,10 +2252,9 @@ qwe.ru##TABLE + TABLE TR:last-child > TD:last-child > .border
 ! R
 radikal.ru##[id^="left_ban"]
 radiorecord.ru##.banner
-rapidzona.com##[id$="_all"][style*="opacity:"]+DIV[id][align="center"][style]
-rapidzona.com##[id$="_all"][style*="opacity:"]
 rapidzona.com###dle-content NOINDEX
 rapidzona.com###main > NOINDEX
+||rapidzona.com/*_200x400_
 rbcdaily.ru##.c-block_content_article_baner
 rbcdaily.ru##.banner
 rbcdaily.ru##[class*="_adv"]
@@ -2248,6 +2277,7 @@ rl-team.net###sprof
 ||rlsnet.ru/image_banner
 roadvictory.ru###recl
 root.ua##.banner
+||dgrad-host.ru/banner.$domain=rootden.ru
 rpod.ru###adv240x400
 ||rpod.ru/i/b/
 russia.ru##.banner
@@ -2408,6 +2438,7 @@ ua-football.com###rozetkadiv
 udaff.com##BODY > DIV:first-child > CENTER
 udaff.com##NOINDEX > A > IMG
 ||udaff.com/image/$object
+||ukr.net/i/rozetka/
 ||ukr.net/partner/
 ukrinform.ua##.rightbar_text > A[target="_blank"]
 ||ukrinform.ua/web/informer/uploaded/flash/
