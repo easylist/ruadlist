@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: wc/heNBP0wQ8PxsdDOv9Xw
+! Checksum: ouw1dYK4r+if9wp2olqYYg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -125,6 +125,19 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /afisha_banner/*
 ! Заметил, что анимированные партнёрские картиночки 88х31 часто так называются.
 /banner.gif|
+! Судя по всему — не нужны. Достаточно правила /cgi-bin/banner/*
+! ||sj1.ru/cgi-bin/
+! ||sj10.ru/cgi-bin/
+! ||sj11.ru/cgi-bin/
+! ||sj2.ru/cgi-bin/
+! ||sj3.ru/cgi-bin/
+! ||sj4.ru/cgi-bin/
+! ||sj5.ru/cgi-bin/
+! ||sj6.ru/cgi-bin/
+! ||sj7.ru/cgi-bin/
+! ||sj8.ru/cgi-bin/
+! ||sj9.ru/cgi-bin/
+/cgi-bin/banner/*
 /cgi-bin/banners/*
 /cgi-bin/iframe/*
 /images/adv/*
@@ -1231,17 +1244,6 @@ _tizer.
 ||site-rank.com^$third-party
 ||sitemeter.com^$third-party
 ||sitetraff.ru^$third-party
-||sj1.ru/cgi-bin/
-||sj10.ru/cgi-bin/
-||sj11.ru/cgi-bin/
-||sj2.ru/cgi-bin/
-||sj3.ru/cgi-bin/
-||sj4.ru/cgi-bin/
-||sj5.ru/cgi-bin/
-||sj6.ru/cgi-bin/
-||sj7.ru/cgi-bin/
-||sj8.ru/cgi-bin/
-||sj9.ru/cgi-bin/
 ||skylog.kz/img.php?
 ||slimp.net^$third-party
 ||slivtraff.com^$third-party
