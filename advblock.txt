@@ -1,12 +1,13 @@
 [Adblock Plus 1.1]
-! Checksum: Wh+7iErG9hwmsKnEsXgsug
+! Checksum: qYo+1yDIQHv/8XrFJC+Rtg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
-! Проект создан DemonSat'ом на основе подписки от denis-ovs(denis-ovs.narod.ru)
+! Проект создан DemonSat'ом на основе подписки от _Denis_(denis-ovs.narod.ru)
 ! Включает в себя фрагменты подписок MORPEH'а и Fanboy'я
-! На данный момент над подпиской работают: Lain_13 и Радик 245
+! Сейчас над подпиской работают:
+! Lain_13 и Радик 245
 !==============================================================================
 ! Если на вашем любимом сайте осталась реклама и она мешает или если наша подписка создаёт проблемы при его работе, то свяжитесь с нами.
 ! Пишите о возникших проблемах в тему на форуме по адресу: http://forum.mozilla-russia.org/viewtopic.php?pid=409520
@@ -1608,7 +1609,8 @@ yandex.ru,yandex.ua##[class*="spec-adv"]
 @@||yabs.yandex.*?rnd=$~third-party
 ||yandex.*/cy?base=0&host=
 
-! = Зачистка сайтов (блокировка и скрытие) ====================================
+! = Зачистка сайтов (блокировка и скрытие,
+! правила для сайтов, указанных в этих правилах)
 
 ! #
 100let.net##[id^="SR_PopOver"]
@@ -2147,6 +2149,7 @@ npicture.net##A > IMG[src*="npicture.net/image-"]
 ||nya.sh/imgs/a/
 
 ! O
+||objectiv.tv/templates/img/*.swf
 obnimau.ru##NOINDEX > CENTER > TABLE
 ||obnimau.ru/img-ba/
 obozrevatel.com##.right-banner
