@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: FitdKsbPtUs9vf35IZCwpw
+! Checksum: HnvIHh8BOlVd2gafv0t3+Q
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -171,6 +171,10 @@ _lj_times_
 /ljtimes/*
 ! Чатики
 ||chatango.com^$third-party
+! Интернет-радио с флеш-плеером, разработчики которого не знают о том, что при открытии страницы их радио должно молчать в тряпочку.
+||icefm.ru^$third-party
+! «Карта» Интернетов.
+||internetmap.info^$third-party
 ! Далее идут правила для отдельных сайтов
 21region.org##.logo
 ||a-comics.ru/fw/
@@ -191,12 +195,7 @@ freakenergy.ru###footer > NOINDEX
 freakenergy.ru##.sidebar > DIV > NOINDEX
 fullgames.ru###main > NOINDEX
 ||gismeteo.*/static/ny/
-||glitterfy.com^$third-party
-||glitter-graphics.net^$third-party
 ||google.*/brand?form=
-||icefm.ru^$third-party
-||informer.uinov.ru^$third-party
-||internetmap.info^$third-party
 ||levonevski.net^$object
 mail.ru##.goods
 ozon.ru##.news_block
@@ -217,6 +216,11 @@ rutracker.org,rutracker.ru,tapochek.net,free-torrents.org,pornolab.net,gardnet.t
 rutracker.org,rutracker.ru,tapochek.net,free-torrents.org,pornolab.net,gardnet.tomsk.ru,myy.su,mortan.info,underverse.su,21region.org,rustorka.com,wtracker.ru,goldenshara.com###logo
 /images/logo/*$domain=rutracker.org|rutracker.ru|tapochek.net|free-torrents.org|pornolab.net|gardnet.tomsk.ru|myy.su|mortan.info|underverse.su|21region.org|wtracker.ru|goldenshara.com
 ||rustorka.com/*_logo.
+
+!= Мерцающего текста рассадники ===============================================
+||glitter-graphics.net^$third-party
+||glitterfy.com^$third-party
+||sparklee.com^$third-party
 
 != Блокировка мусора в подписях на форумах ====================================
 !- Общие правила --------------------------------------------------------------
@@ -273,6 +277,7 @@ _userbar$image
 ||gametracker.com^$third-party
 ||hottabych.net/ubar/
 ||hudeem-vmeste.ru/lin/
+||informer.uinov.ru^$third-party
 ||kiev-mama.com.ua/lines_holder/
 ||kilat.ru^$third-party
 ||lilypie.com^$third-party
