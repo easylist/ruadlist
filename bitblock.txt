@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: HnvIHh8BOlVd2gafv0t3+Q
+! Checksum: 4WZRbqPIKDzmbzUp0MFpqg
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -164,17 +164,19 @@ gismeteo.ua###ad-rbkua
 ! Блоки с авторскими правами и часто мусором на многих сайтах.
 ###copyright
 ##.copyright
-! Предлагают скачать торрент-клиент и торрент одним исполнимым файлом на трекерах. Баннер часто яркий, броский и не нужный вовсе.
-##.mediaget
-! Назойливые новости на LiveJournal.
-_lj_times_
-/ljtimes/*
-! Чатики
-||chatango.com^$third-party
 ! Интернет-радио с флеш-плеером, разработчики которого не знают о том, что при открытии страницы их радио должно молчать в тряпочку.
 ||icefm.ru^$third-party
 ! «Карта» Интернетов.
 ||internetmap.info^$third-party
+! Назойливые новости на LiveJournal.
+_lj_times_
+/ljtimes/*
+! Предлагают скачать торрент-клиент и торрент одним исполнимым файлом на трекерах. Баннер часто яркий, броский и не нужный вовсе.
+##.mediaget
+! Блоки со смайликами для вставки их в текст
+###smilies
+! Чатики
+||chatango.com^$third-party
 ! Далее идут правила для отдельных сайтов
 21region.org##.logo
 ||a-comics.ru/fw/
@@ -269,6 +271,7 @@ _userbar$image
 ||clubnevest.ru/mules/lines/
 ||cska-videohits.com/forum/lines/
 ||daisypath.com^$third-party
+||fantasiya.net/fon/line/$third-party
 ||flines.ru^$third-party
 ||forum-lines.ru^$third-party
 ||freetickers.net^$third-party
