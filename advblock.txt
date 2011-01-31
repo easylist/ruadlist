@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Vpi0cWayXEtKAi1iwUj9+A
+! Checksum: a6EFFiNBiA2TqjwCEZBgbA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -113,7 +113,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ##DIV[id][align="center"][onmouseover][style*="fixed;"]
 
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
-! |http://adv.$~object_subrequest
+http://adv.$~object_subrequest,domain=~adv.vz.ru
 ! |http://b.*/b/$domain=~imagepix.org
 
 ! = Баннеры (ключевые слова в адресе) =========================================
@@ -417,10 +417,6 @@ _tizer.
 ||adult-click.ru^$third-party
 ||adulttraffic.ru^$third-party
 ||adunit.chango.ca^$third-party
-||adv.aport.ru^
-||adv.hardwarez.ru^$third-party
-||adv.magna.ru^$third-party
-||adv.nadavi.net^$third-party
 ||advbroker.ru/code/?
 ||advertpay.$third-party
 ||advertpro.$third-party
