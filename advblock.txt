@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 54TnMmFC5mpo2SYwwuaZjg
+! Checksum: r7yXAcZh9/3ujtl0AK8VDA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -111,6 +111,8 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Плавающий баннер от Mega-Bazar. Содержимое блокируется правилом /bazar_fast/*, а это скрывает остатки.
 ##DIV[id][align="center"][onmouseover][style*="fixed;"]
+! ВРЕМЕННО правило против рекламы Маркетгида добавлено сюда. Фильтр был удалён из EasyList и пока ещё не восстановили.
+~marketgid.com,~marketgid.ru,~marketgid.ua,~mgid.com,~theberry.com,~thebrigade.com,~thechive.com,~thethrottle.com##[id^="MarketGid"]
 
 ! = Баннеры ===================================================================
 ! - По ключевым словам в адресе -----------------------------------------------
@@ -228,8 +230,6 @@ _tizer.
 ||vzarabotke.ru^
 
 ! = Общие фильтры =============================================================
-! ВРЕМЕННО добавляем правила против рекламы Маркетгида сюда. Фильтры были изменены в EasyList и изменения пока ещё не отменили.
-~marketgid.com,~marketgid.ru,~marketgid.ua,~mgid.com,~theberry.com,~thebrigade.com,~thechive.com,~thethrottle.com##[id^="MarketGid"]
 
 .all.by/
 .bannerbank_
