@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: a6EFFiNBiA2TqjwCEZBgbA
+! Checksum: uzIOXDRP4i5qqK8XTp4c9A
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -112,11 +112,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Плавающий баннер от Mega-Bazar. Содержимое блокируется правилом /bazar_fast/*, а это скрывает остатки.
 ##DIV[id][align="center"][onmouseover][style*="fixed;"]
 
-! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
-http://adv.$~object_subrequest,domain=~adv.vz.ru
-! |http://b.*/b/$domain=~imagepix.org
-
-! = Баннеры (ключевые слова в адресе) =========================================
+! = Баннеры ===================================================================
+! - По ключевым словам в адресе -----------------------------------------------
 /adv/banners/*
 -advert.
 /adv/massage/*
@@ -157,8 +154,7 @@ _tizer.
 /upload/bx/*
 /upload/rk/*$domain=~bbk.ru|~kykyryza.ru|~qwerty.ru
 /vsemayki_
-
-! = Популярные баннеры по именам файлов =======================================
+! - По именам файлов ----------------------------------------------------------
 /aika.swf|
 /Talky3D.gif|
 
@@ -183,7 +179,7 @@ _tizer.
 ! дополнения Adblock Plus Pop-up Addon они определяются как нежелательные и
 ! автоматическое открытие попапа с ними блокируется. Мне (иногда) не нравится
 ! тот факт, что сайты блокируются целиком, но пока не вижу другого пути.
-! - Порнуха
+! - Порнуха -------------------------------------------------------------------
 ||24pornoo.ru^
 ||avska.com^
 ||devochki.cz^
@@ -198,7 +194,7 @@ _tizer.
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
 24pornoo.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,posmotrish.net,prodom2.com,sexrustube24.com,tele-dom2.com,telesekas.com,tvsxsite.com,vstaet.net,zoy.org##:root
-! - Редиректоры (открываются в попапе и перекидывают на другой сайт)
+! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
 ||advmaker.ru/go.php?
 ||flipflapflo.
 ||gameleads.ru^
@@ -211,7 +207,7 @@ _tizer.
 ||t8good.info^
 ||war.noc.su/?
 ||web-leaders.ru/adv.
-! - Прочее
+! - Прочее --------------------------------------------------------------------
 ||1001kupon.ru^
 ||fotostrana.ru/start/questpet/?
 ||funtest-ru.com^
@@ -237,7 +233,6 @@ _tizer.
 ||dt07.net^$domain=~marketgid.com|~marketgid.ru|~marketgid.ua|~mgid.com|~thechive.com
 ~marketgid.com,~marketgid.ru,~marketgid.ua,~mgid.com,~theberry.com,~thebrigade.com,~thechive.com,~thethrottle.com##[id^="MarketGid"]
 
-
 .all.by/
 .bannerbank_
 .ket.ru/
@@ -250,6 +245,7 @@ _tizer.
 .vba.ru/
 .wbn.ru/
 //2x2.kz^
+//adv.$~object_subrequest
 //b.*/iframe/
 //hmn.ru^$third-party
 //kpk.me^$third-party
