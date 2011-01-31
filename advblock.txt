@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: oVCIwG1I+WPdhFCKwuWT5A
+! Checksum: ZtMb5Vaf1+19tNuqfAl08g
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -93,10 +93,10 @@ IMG##[width="728"][height="90"]
 ##.topbaner
 ##BODY[onload="popupInit();"] > #popUp
 ##DIV[id^="Teaser_Block"]
+##DIV[id^="togetInformer_"]
 ##[class^="snBody"]
 ##[id^="DIV_NNN_"]
 ##[id^="rtn4p"]
-##[id^="togetInformer_"]
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
 ! Именуют себя ВСкачке, ВЗагрузе, маскируются под RapidShare и прочее.
 ##A[href*="/download.php?sub_id="][href*="&q="]
@@ -1802,6 +1802,7 @@ epidemz.net##DIV[align="right"] > A[target="_blank"]
 epidemz.net##TD[width="135"]:first-child + TD > :not(#dle-content)
 epidemz.net##TD[width="135"]:first-child + TD + TD[width="135"]
 ||epidemz.net^$object
+||epikz.net/i/s0/
 ||etorrent.ru/js/etorrent.ru.js
 ex.ua##CENTER[style^="margin-top:"][style$="24px;"] > #index_box
 ||ex.ua/*/index.
