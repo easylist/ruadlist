@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 8o46Eol5K5VYiTjGr3aZDw
+! Checksum: oVCIwG1I+WPdhFCKwuWT5A
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -23,8 +23,6 @@
 @@||video.*.user.madbanner.ru^$object_subrequest
 ! Авторизация на tbn.ru блокируется правилом против него же
 @@||auth.tbn.ru/
-!:: ##[width="468"][height="60"] — не хочу нагружать этот селектор проверками.
-@@||russianfedora.ru^$elemhide
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@/images/*/*/0/script.js?$domain=dni.ru|kinopoisk.ru
