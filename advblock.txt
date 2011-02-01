@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 5xODRmFmpaz/ZcD36nS/og
+! Checksum: tpnuyr6nuDc4kR1BJNgTog
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -2435,10 +2435,6 @@ udaff.com##NOINDEX > A > IMG
 ||udaff.com/image/$object
 ukrinform.ua##.rightbar_text > A[target="_blank"]
 ||ukrinform.ua/web/informer/uploaded/flash/
-ukrlit.vn.ua###rt_g193
-history.vn.ua##A[href^="http://wau.com.ua/"]
-history.vn.ua##DIV[id^="tizerbox_"]
-||ukrlit.vn.ua/*.swf
 unian.net###counters
 unian.net###rightban
 ||banner.unian.net^
@@ -2465,6 +2461,12 @@ vkontakte.ru###banner1
 vkontakte.ru###banner2
 ||vladbazar.com/bbb/
 referati.vladbazar.com##TD[style^="text-align:"][style*="background:"]
+history.vn.ua,ukrlit.vn.ua##A[href^="http://wau.com.ua/"]
+history.vn.ua,ukrlit.vn.ua##DIV[id^="bn_"]
+history.vn.ua,ukrlit.vn.ua##DIV[id^="tizerbox_"]
+ukrlit.vn.ua##.mag_tab
+ukrlit.vn.ua###rt_g193
+||ukrlit.vn.ua^$object
 voffka.com##BR + NOINDEX
 voffka.com###links > DIV > NOINDEX
 voffka.com##.posted > NOINDEX
