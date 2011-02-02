@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: XbG4esHUJ9aqOAOQVVIO6Q
+! Checksum: XDHa4FszenQbaFH+7g6W3w
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -551,7 +551,7 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 ||click4wm.ru^$third-party
 ||clickaider.com^$third-party
 ||clickad.com.ua^$third-party
-||clickburner.com^$third-party
+||clickburner.com/banners/
 ||clickbux.ru^$third-party
 ||clickcashmoney.com^$third-party
 ||clickclickclick.asia^$third-party
@@ -1636,7 +1636,7 @@ yandex.ru,yandex.ua##[class*="spec-adv"]
 3mp3.ru###trance
 ||3mp3.ru/dhtml/adv.
 ||3mp3.ru/banner
-4pna.com##A[onclick] > IMG
+4pna.com##A[onclick]>IMG,A[rel="nofollow"]>IMG,A[target="_blank"]>IMG
 5ka.su##.ban
 ||5ka.ru/js/banners.js
 ||5ka.su/js/girls.php
@@ -2118,6 +2118,7 @@ musicfond.com##.NavItems>.InitaMenu
 musicfond.com##.SearchForm>NOINDEX
 ||musicforums.ru/*/knopki/
 ||musicforums.ru/pictures/casio_
+muz.ru##.SEO
 muz.ru###bs_placement2
 muz.ru###popupBanner
 ||muz.ru/Content/Banners/$object
