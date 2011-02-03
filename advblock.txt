@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: WbniIWRCuo71uSFWyF+htg
+! Checksum: k1VhieiE8rDT+A2hr7vsIA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -248,7 +248,6 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 .vba.ru/
 .wbn.ru/
 //2x2.kz^
-//adv.$~object_subrequest
 //b.*/iframe/*
 //hmn.ru^$third-party
 //kpk.me^$third-party
@@ -307,6 +306,7 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 /xap.ru/*$script
 ?begun=*&begun_referrer=*&begun_location=
 ^clickunder=
+http://adv.$~object_subrequest$domain=~adv.ya.ru
 
 ||77.91.228.66/banners/
 ||78.140.145.93^
@@ -1614,8 +1614,8 @@ yandex.ru,yandex.ua###banner
 yandex.ru,yandex.ua##.b-adv
 yandex.ru,yandex.ua##.b-banner
 yandex.ru,yandex.ua##.b-bar
-yandex.ru,yandex.ua##.b-direct
-yandex.ru,yandex.ua##[class*="spec-adv"]
+yandex.ru,yandex.ua##DIV[id*=direct]
+yandex.ru,yandex.ua##UL[class*="spec-adv"]
 |http://wimg.yandex.net/12/54/t-12542.png|
 ||an.yandex.$third-party
 ||awaps.yandex.
