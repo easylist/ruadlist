@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: mF//todkbwDFBxiHaTXPFw
+! Checksum: lr0PtpcuDMSK+Xh09Nk8ow
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU CountersList (ruadlist.googlecode.com)
@@ -59,7 +59,7 @@ _8831.gif
 .su/stat/
 .ua/stat/
 .ru/cnt/?
-.ru/count/
+.ru/count/$domain=~yandex.ru
 .spylog.$image,script,third-party
 ! Картинка вставляемая скриптом ga.js с сайта Google Analytics в параметрах которой передаются собранные данные.
 ! Для случаев, когда ga.js в том или ином виде хранится локально, а не берётся с сервера Google.
@@ -187,6 +187,9 @@ _8831.gif
 ||mc.yandex.
 ||yandex.ru/click/
 ||yandex.ru/metrika/
+||yabs.yandex.*/count/*?
+||yabs.yandex.*/count/*=*=
+! @@||yabs.yandex.*?rnd=$~third-party
 
 ! Правила заимствованные из русской части подписки fanboy'я и ещё не разобранные
 ! https://secure.fanboy.co.nz/fanboy-tracking-intl.txt
