@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 9cdaWhYb0e36c3a4Ad+7sw
+! Checksum: CjQQZD+B+YnPV/IbYV8J2A
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -135,9 +135,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /img/bn/*
 /img/rekl/*
 /mybaner/*
-! Домены группы «Интерфакс»: finmarket.ru|ideal.ru|interfax.com|interfax.ru|interfax-russia.ru|pmoney.ru|rusbonds.ru|val.ru
-! Пока не нужно на: e-disclosure.ru|ifx.ru|spark-interfax.ru.
-/rcl/ban/*
 /reklam/*
 /reklama_$domain=~linux.ptz.ru
 .ru/banners/$domain=~citydom.ru|~toptracker.ru|~webnames.ru
@@ -1882,7 +1879,6 @@ filmix.net###body #rightcol
 filmix.net##.banner
 filmx.com.ua##.modul-sp_main
 finiz.ru##.topline
-finmarket.ru###bbInformer231
 fileclub.biz##.banner_top
 filorama.ru###dle-content > TABLE:first-child
 ||filorama.ru/*/banner.swf
@@ -1995,10 +1991,6 @@ inmoment.ru##CENTER > A[target="_blank"]
 ||inmoment.ru/img/$object
 inosmi.ru##.banners
 inter.ua##.b-top-banner
-interfax.ru###bbInformer233
-interfax.ru##TD[width="1"] + TD[width="747"] > DIV[style]
-interfax.by##.banner
-||interfax.by/files/$object
 ||internethalyava.ru/*/area_banners/
 ||internethalyava.ru/sites/*/files/flash/
 ||internetno.net/banners/
@@ -2578,6 +2570,14 @@ gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru,gismeteo.ua###ad-top
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru,gismeteo.ua###logo
 ||gismeteo.*/rian.html|
 ||gismeteo.*/static/app/*/*.gif
+
+! Interfax
+! Домены группы «Интерфакс»: e-disclosure.ru|finmarket.ru|ideal.ru|ifx.ru|interfax.com|interfax.ru|interfax-russia.ru|pmoney.ru|rusbonds.ru|spark-interfax.ru|val.ru
+/rcl/ban/*
+finmarket.ru,interfax.ru##[id^=bbInformer]
+finmarket.ru,pmoney.ru##A[href^="/RCL/TXT/"]
+interfax.by##.banner
+||interfax.by/files/$object
 
 ! Overclockers.RU
 forums.overclockers.ru##.banner
