@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: ezJMogY826/qpLm14l8gwA
+! Checksum: SMw9/OU0SrbPi/lHtOciuQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -134,6 +134,9 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /img/bn/*
 /img/rekl/*
 /mybaner/*
+! Домены группы «Интерфакс»: finmarket.ru|ideal.ru|interfax.com|interfax.ru|interfax-russia.ru|pmoney.ru|rusbonds.ru|val.ru
+! Пока не нужно на: e-disclosure.ru|ifx.ru|spark-interfax.ru.
+/rcl/ban/*
 /reklam/*
 /reklama_$domain=~linux.ptz.ru
 .ru/banners/$domain=~citydom.ru|~toptracker.ru|~webnames.ru
@@ -1993,8 +1996,6 @@ inosmi.ru##.banners
 inter.ua##.b-top-banner
 interfax.ru###bbInformer233
 interfax.ru##TD[width="1"] + TD[width="747"] > DIV[style]
-! Домены группы «Интерфакс», для которых правило /RCL/BAN/* пока не потребовалось: e-disclosure.ru|ifx.ru|spark-interfax.ru. А на домене ideal.ru используется нижний регистр: /rcl/ban/*
-/RCL/BAN/*$domain=finmarket.ru|ideal.ru|interfax.com|interfax.ru|interfax-russia.ru|pmoney.ru|rusbonds.ru|val.ru
 interfax.by##.banner
 ||interfax.by/files/$object
 ||internethalyava.ru/*/area_banners/
