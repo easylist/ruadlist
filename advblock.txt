@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 6zQsOTlf7FVIzRJMged2gA
+! Checksum: 8pIbVgInVq0XUSkTNUlLHg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -587,6 +587,7 @@ http://adv.$~object_subrequest$domain=~adv.ya.ru
 ||cracklab.ru/images/r_
 ||crackzplanet.com/*.gif
 ||crackzplanet.com/img/
+||creativefiles.ru^$third-party
 ||crunchbang.net/advocacy/
 ||crutop.nu^$third-party
 ||csht.ru/$third-party
@@ -939,6 +940,7 @@ http://adv.$~object_subrequest$domain=~adv.ya.ru
 ||mirmaek.ru^$third-party
 ||mirvolos.com$third-party
 ||mixmarket.biz^$third-party
+||mlgame.ru/wiki/attach/Referal/*
 ||mlfun.org.ua/images/ban
 ||mnogo.ru^$third-party
 ||mobn.net^$third-party
@@ -1171,7 +1173,7 @@ http://adv.$~object_subrequest$domain=~adv.ya.ru
 ||rosinvest.com/informs/
 ||rot.rusoul.ru/rotator/
 ||rotaban.$third-party
-||rotabanner.$third-party
+! ||rotabanner.$third-party
 ||rotator.$third-party
 ||rozetka.com.ua^$third-party
 ||rrru.ru/img.php?
@@ -1202,7 +1204,6 @@ http://adv.$~object_subrequest$domain=~adv.ya.ru
 ||sb-money.ru^$third-party
 ||sb.google.com/safebrowsing/update
 ||scorecardresearch.com^$third-party
-screendepo.com##DIV[style*="100%"][style*="70px;"][style$="center"]
 ||scrool.ru^$third-party
 ||searchgid.ru/informer.
 ||searchmeta.webhost.ru^
@@ -1265,6 +1266,7 @@ screendepo.com##DIV[style*="100%"][style*="70px;"][style$="center"]
 ||stepbystep.spb.ru/reting_stat.php?
 ||steptocash.ru^$third-party
 ||stopto.da.ru^
+||stripvidz.com^*.php?site=
 ||studsss.da.ru^
 ||submitter.ru*/i.php
 ||sugar-traff2.com^
@@ -1651,8 +1653,8 @@ yandex.ru,yandex.ua##UL[class*="spec-adv"]
 3mp3.ru###trance
 ||3mp3.ru/dhtml/adv.
 ||3mp3.ru/banner
-4pna.com##A[onclick]>IMG,A[rel="nofollow"]>IMG,A[target="_blank"]>IMG
-4pna.com##A[href*="/fin-realty.ru/"],A[href*="/econ.ua/"],A[href*="/gps4me.com.ua/"]
+! 4pna.com##A[onclick]>IMG,A[rel="nofollow"]>IMG,A[target="_blank"]>IMG
+4pna.com##A[href*="fin-realty."],A[href*="econ.ua"],A[href*="oodo.ru"],A[href*="gps4me."]
 5ka.su##.ban
 ||5ka.ru/js/banners.js
 ||5ka.su/js/girls.php
@@ -1872,6 +1874,7 @@ fcpug.ru###main > DIV[style]
 fenzin.org##TD[align="center"] > .leftmenu-text
 ||fenzin.org/images/litres_
 ||ferra.ru/include/*_advert_
+||fiat-avtocity.ru/swf/
 file-online.ru##NOINDEX > TABLE[style]
 filehippo.com##.ad
 ||fileshare.in.ua/goto.aspx?
@@ -2335,6 +2338,7 @@ samlab.ws##.soft-day:not(:first-child) > .box
 ||sat-digest.com.ua/agc/
 sc2tv.ru###block-block-8
 ||sc2tv.ru/sites/default/files/$object
+screendepo.com##DIV[style*="100%"][style*="70px;"][style$="center"]
 ||scriptiks.ru^$object
 searchengines.ru##FORM[action="http://go.1ps.ru/pr/"] + TBODY
 ! Правило для блокировки рекламы при заблокированном JavaScript
