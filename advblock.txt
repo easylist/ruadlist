@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: o1x+zzu4Oe2c053NW7L4cw
+! Checksum: x8KkjaufKXdIh60qwSpGqQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -416,6 +416,8 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||adrock.com.ua^
 ||adrock.ua^$third-party
 ||adru.net^$third-party
+! Блокирует http://media.ads.gfsrv.net/ и http://delivery.ads.gfsrv.net/ После введения новой оптимизации заменить на ||ads.$third-party или ||ads.*.*/$third-party
+||ads.gfsrv.net/
 ||adsell.me/b/
 ||adshop.ru/adshop/?
 ||adskape.ru^$third-party
@@ -1807,6 +1809,7 @@ filorama.ru###dle-content > TABLE:first-child
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
 ||fishki.net/*/ad/b/
 fontanka.ru##.ad
+football.kulichki.net##TD[bgcolor="#ffffff"][valign="top"]
 football.ua##.header_b
 ||football.ua/i/hihi/
 ||for-foto.ru/*/adv.js|
@@ -1937,6 +1940,7 @@ izvestia.ru##IFRAME[id^="snf"]
 ! J
 jeder.ru###colwrap > .module-notitle
 ||jetune.ru/images/760-90-
+||jimbot-portal.net.ru/*banners
 
 ! K
 kapriz.info###dle-info + NOINDEX
