@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: VM6W/xio7JUtZV1IEsPv2A
+! Checksum: OgBYj+rqyOdvSz32LQS0XQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -16,7 +16,7 @@
 ! Для защиты от порно в Firefox рекомендуем использовать расширение CensureBlock, а не подписки!
 
 ! = Сайты-попапы (часто самостоятельно открываются в новом окне) ==============
-! #pop.bookmark
+!#popup.bookmark
 ! Прямая блокировка следующих сайтов должного эффекта не имеет, но при наличии
 ! дополнения Adblock Plus Pop-up Addon они определяются как нежелательные и
 ! автоматическое открытие попапа с ними блокируется. Мне (иногда) не нравится
@@ -81,6 +81,7 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 ||glopic.com$domain=cooldevki.com|falosvideo.com|pokajem.do.am|portvx.com|prodom2.com|tele-dom2.com|telesekas.com|tvdom2.com|tvsxsite.com|videocinemax.com|vkvideox.com
 
 ! = Исключения против ложных срабатываний =====================================
+!#exclude.bookmark
 ! Исправление проблем возникших в результате работы подписки на отдельных сайтах
 ! Кросс-запрос в флэш роликах с dclick.ru
 @@||dclick.ru/crossdomain.xml|
@@ -104,29 +105,8 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 @@||uzumaki.kz/js/popunder.js|
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 
-! = Фильтры по регулярным выражениям ==========================================
-! Слишком короткая версия слова banner
-/[/_-]baner[\d._-s/]/$domain=~nalog.ru
-_baner_
-_baner.
-/baner_
-/baner.
-/baner/*
-
-! = Скрытие баннеров по указанному размеру картинки ===========================
-##IMG[width="80"][height="15"]
-##IMG[width="120"][height="600"]
-##IMG[width="160"][height="600"]
-##IMG[width="468"][height="60"]
-##IMG[width="728"][height="90"]
-
-/120-600-
-/468-60_
-/468-80-
-/700x70_
-/768x90.
-
 ! = Общие CSS-фильтры =========================================================
+!#css.bookmark
 ###adv
 ~mobile-review.com###advblock
 ##.advblock
@@ -181,7 +161,21 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ~marketgid.com,~marketgid.ru,~marketgid.ua,~mgid.com##DIV[id^="MarketGid"]
 
 ! = Баннеры ===================================================================
+!#banner.bookmark
 ! - По ключевым словам в адресе -----------------------------------------------
+! Слишком короткая версия слова banner
+/[/_-]baner[\d._-s/]/$domain=~nalog.ru
+! Разворачиваем по новым правилам оптимизации (ABP 1.3.5+)
+_baner_
+_baner.
+/baner_
+/baner.
+/baner/*
+/120-600-
+/468-60_
+/468-80-
+/700x70_
+/768x90.
 /adv/banners/*
 -advert.
 /adv/massage/*
@@ -200,7 +194,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /img/bn/*
 /img/rekl/*
 /mybaner/*
-/popover.js
 /reklam/*
 /reklama_$domain=~linux.ptz.ru
 .ru/banners/$domain=~citydom.ru|~toptracker.ru|~webnames.ru
@@ -226,8 +219,15 @@ _tizer.
 ! - По именам файлов ----------------------------------------------------------
 /aika.swf|
 /Talky3D.gif|
+! - Скрытие по размеру --------------------------------------------------------
+##IMG[width="80"][height="15"]
+##IMG[width="120"][height="600"]
+##IMG[width="160"][height="600"]
+##IMG[width="468"][height="60"]
+##IMG[width="728"][height="90"]
 
 ! = Популярные имена скриптов =================================================
+!#script.bookmark
 .ru/_scripts/themes/sb.js|
 /pseudocounter.js
 /begun.js
@@ -240,10 +240,11 @@ _tizer.
 /counter2.js|$~third-party
 /cout.php?sid=$script
 /out.php?sid=$script
+/popover.js
 /sun_*_ajax.js|
 
 ! = Общие фильтры =============================================================
-
+!#global.bookmark
 .all.by/
 .bannerbank_
 .ket.ru/
@@ -857,8 +858,6 @@ http://adv.$~object_subrequest$domain=~adv.ya.ru
 ||kvasu.net/*/$object
 ||kwot.biz^$third-party
 ||kzporno.kz^$third-party
-!:: /adv_out.$script
-! ||ladycash.ru^$third-party
 ||ladyclicks.ru^$third-party
 ||ladyshopping.ru^$third-party
 ||lenamila.com/obzlite/
@@ -956,8 +955,7 @@ http://adv.$~object_subrequest$domain=~adv.ya.ru
 ||moifoto.ru/rek_
 ||moijs.com^$third-party
 ||mokuz.ru/vipcounter/
-! Думаю, со временем число доменов в правиле прибавится, но блокировать везде не стоит — см. на monetizator.net, для чего он нужен. Радик.
-||monetizator.net/js/showcase_$domain=screendepo.com
+||monetizator.net/js/showcase_
 ||money.loveplanet.ru/nb/
 ||moneysyst.biz^$third-party
 ||moneyteacher.ru^$third-party
@@ -1506,6 +1504,21 @@ http://adv.$~object_subrequest$domain=~adv.ya.ru
 ||zuni.tyndex.ru^$third-party
 ||zvukoff.ru/24open/*.jpg
 
+! 1Under.RU (все сидят на IP 89.208.145.156)
+||1under.ru^$third-party
+||2lycosu.com^$third-party
+||2under.ru^$third-party
+||3lucosy.com^$third-party
+||3under.ru^$third-party
+||crpoy.com^$third-party
+||lycodz.com^$third-party
+||lycosu.com^$third-party
+||lycosy.com^$third-party
+||oneund.ru^$third-party
+||oneund.com^$third-party
+||ruigra.com^$third-party
+||textun.ru^$third-party
+
 ! AdRiver.RU
 /banners/*/*/0/index.$subdocument
 /images/*/*/0/script.$script
@@ -1529,120 +1542,18 @@ http://adv.$~object_subrequest$domain=~adv.ya.ru
 ||ddq.com.ua^$third-party
 ||teasernet.$third-party
 
-! Найденные домены партнёрской сети 1under.ru (все сидят на IP 89.208.145.156)
-||1under.ru^$third-party
-||2lycosu.com^$third-party
-||2under.ru^$third-party
-||3lucosy.com^$third-party
-||3under.ru^$third-party
-||crpoy.com^$third-party
-||lycodz.com^$third-party
-||lycosu.com^$third-party
-||lycosy.com^$third-party
-||oneund.ru^$third-party
-||oneund.com^$third-party
-||ruigra.com^$third-party
-||textun.ru^$third-party
-
-! Форумы ucoz.net
+! Ucoz.NET
 /abnl/?begun=
 ||clicks.moy.su^
 ||ucoz.net/img/ma/cv.gif|
 
-! Мыло.РУ
-auto.mail.ru##.addMain2
-deti.mail.ru##IMG[width="248"][height="66"]
-hi-tech.mail.ru##.b-mainphotocol
-hi-tech.mail.ru##.b-preview
-hi-tech.mail.ru##.l-head__l
-mail.ru###ad-blk-r
-mail.ru###ad-sputnik
-mail.ru##.ad_240x400
-mail.ru##.b-ad_200
-mail.ru##.bGbottom.tac
-mail.ru##.promo
-mail.ru##.rb_banner
-mail.ru##.rb_body
-mail.ru##.rb_nA.mb0
-mail.ru##.rekl_eburg
-mail.ru##.text_adv
-mail.ru##DIV[id^="IE8Bar"]
-mail.ru##IMG[width="200"][height="30"]
-mail.ru##IMG[width="200"][height="300"]
-mail.ru##IMG[width="240"][height="200"]
-mail.ru##IMG[width="240"][height="400"]
-mail.ru##[class$="_ban"]
-mail.ru,~allods.mail.ru##[class$="banner"]
-mail.ru##[id^="getmov"]
-||afisha.mail.ru/img/spons/
-||banners.mail.ru^$third-party
-||imgsmail.ru/pic?url=http%3A*.jpg&sig=
-||imgsmail.ru/r/my/brands/
-||mail.ru/img/bg_promo.
-||mail.ru/map/volkswagen_
-||r.mail.ru/b$subdocument
-||rs.mail.ru/b$third-party
-||showbiz.mail.ru^$third-party
-||torg.mail.ru/prtnr/$third-party
-
-! Rambler.RU
-foto.rambler.ru##.pi_b2
-mail.rambler.ru###banner-right
-rambler.ru##.inbann
-rambler.ru##.pgBanner
-rambler.ru##.r--b728
-rambler.ru##.rb--TopTeaser
-rambler.ru##[class^="b_banner_"]
-top100.rambler.ru##.b-block2
-||images.rambler.ru/upl/$domain=~nova.rambler.ru
-||rambler.ru/export/banners.
-||rambler.ru/i.ban?
-
-! РБК
-cnews.ru###mag_banner
-cnews.ru###rian_iformer
-cnews.ru###small_partners_header
-cnews.ru##.banner_wrapp
-||zoom.cnews.ru^*/banners/
-rbc.ru,rbc.ua##.banner
-rbc.ru,rbc.ua##.contentBox > .tac
-rbc.ru,rbc.ua##IFRAME[width="234"][height="200"]
-rbc.ru,rbc.ua##TABLE[bgcolor="#F7FAEF"]
-rbc.ru,rbc.ua,cnews.ru##[id^="flashrst_"]
-rbc.ru,rbc.ua,cnews.ru##[id^="flash_"]
-rbcnews.com##A[href^="http://banner.rbc.ru/"]
-||cnews.ru/img/banner/
-||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
-||pics.rbc.ru^*/banners/
-||pics.rbc.ru^*/img.gif?
-
-! Ядро.ру
-! ||yadro.ru^$third-party
-! ||ads.yadro.ru^
-! Первое блокирует счётчики, а второе должно блокироваться общим правилом
+! Yadro.RU
 ||aif.yadro.ru^
 ||sticker.yadro.ru^
 ||yadro.ru/ad/
 
-! Яndex
-###yandex
-yandex.ru,yandex.ua###banner
-yandex.ru,yandex.ua##.b-adv
-yandex.ru,yandex.ua##.b-banner
-yandex.ru,yandex.ua##.b-bar
-yandex.ru,yandex.ua##DIV[id*=direct]
-yandex.ru,yandex.ua##UL[class*="spec-adv"]
-|http://wimg.yandex.net/12/54/t-12542.png|
-||an.yandex.$third-party
-||awaps.yandex.
-||bs.yandex.$third-party
-||kiks.yandex.
-||yabs.yandex.*/show/$third-party
-||yabs.yandex.*/resource/*.swf?rnd=*&link1=
-||yandex.*/cy?base=0&host=
-
-! = Зачистка сайтов (блокировка и скрытие,
-! правила для сайтов, указанных в этих правилах)
+! = Частные правила для сайтов(блокировка и скрытие) ==========================
+!#local.bookmark
 
 ! #
 100let.net##[id^="SR_PopOver"]
@@ -1818,6 +1729,7 @@ dni.ru##.column.ad
 dni.ru##.partners-links
 dni.ru###header-banner
 dni.ru##[id^="tieserBlock"] > [id^="tb_"]
+forum.donfisher.ru##TD.windowbg3
 ||dontr.ru/upload/Banner/
 dostatok.ru###SR_PopOver
 dosuglend.ru##[id^="tibu_container_"]
@@ -1897,20 +1809,14 @@ fontanka.ru##.ad
 football.ua##.header_b
 ||football.ua/i/hihi/
 ||for-foto.ru/*/adv.js|
-forum.donfisher.ru##TD.windowbg3
-||forum.od.ua/forumpic$script
-forum.hdtv.ru##.borderwrap > .ipbtable:nth-of-type(2)
-forum.rcdesign.ru###lh_bar-top
-forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
-forum.ru-board.com##TABLE[width="640"][border="1"]
+forum.od.ua##.ad_inform_message
+||forum.od.ua/forumpic/
 forum-profit.ru##A[href^="vB.Sponsors/link.php?f="]
 forum-profit.ru###threadslist > TBODY:not([id]):last-child
 forum-profit.ru##[id^="edit"] > [id^="post"]:not(:first-child):last-child
 forum-profit.ru##[id^="edit"] > .tborder:not([id])
 ||forum-profit.ru/images/partners/
 ||forum-profit.ru/images/nordfx/
-||ru-board.com*/temp/
-||ru-board.com*/xmtmp/
 ||forumkiev.com/MEDimg/
 forums.heroesofnewerth.com###purchase_pref
 forums.ngemu.com##DIV[style*="920px;"][style*="250px;"]
@@ -1962,6 +1868,7 @@ haleava.net##CENTER > NOINDEX > A[target="_blank"]
 ||tracker.hdclub.com.ua/dox/$domain=hdclub.org,tracker.hdclub.com.ua
 hdtracker.ru##BODY > CENTER:first-of-type
 hdtracker.ru##TD[width="100%"] + TD[width="160"][valign="top"]
+forum.hdtv.ru##.borderwrap > .ipbtable:nth-of-type(2)
 hh.by,hh.kz,hh.ru,hh.ua##.b-topbanner
 hideme.ru##[id*="hidemead"]
 ||hideme.ru/ad.js
@@ -2293,9 +2200,7 @@ radiorecord.ru##.banner
 rapidzona.com###dle-content NOINDEX
 rapidzona.com###main > NOINDEX
 ||rapidzona.com/*_200x400_
-rbcdaily.ru##.c-block_content_article_baner
-rbcdaily.ru##.banner
-rbcdaily.ru##[class*="_adv"]
+forum.rcdesign.ru###lh_bar-top
 ||rd2d.com/adv/
 ||ref.by/_ads/
 referatu.net.ua##.banner120_6002
@@ -2320,6 +2225,10 @@ root.ua##.banner
 ||dgrad-host.ru/banner.$domain=rootden.ru
 rpod.ru###adv240x400
 ||rpod.ru/i/b/
+forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
+forum.ru-board.com##TABLE[width="640"][border="1"]
+||ru-board.com*/temp/
+||ru-board.com*/xmtmp/
 russia.ru##.banner
 russia.ru##.top-banner
 rustorka.com##DIV > :nth-child(6) ~ H3
@@ -2593,6 +2502,42 @@ finmarket.ru,pmoney.ru##A[href^="/RCL/TXT/"]
 interfax.by##.banner
 ||interfax.by/files/$object
 
+! Mail.RU
+auto.mail.ru##.addMain2
+deti.mail.ru##IMG[width="248"][height="66"]
+hi-tech.mail.ru##.b-mainphotocol
+hi-tech.mail.ru##.b-preview
+hi-tech.mail.ru##.l-head__l
+mail.ru###ad-blk-r
+mail.ru###ad-sputnik
+mail.ru##.ad_240x400
+mail.ru##.b-ad_200
+mail.ru##.bGbottom.tac
+mail.ru##.promo
+mail.ru##.rb_banner
+mail.ru##.rb_body
+mail.ru##.rb_nA.mb0
+mail.ru##.rekl_eburg
+mail.ru##.text_adv
+mail.ru##DIV[id^="IE8Bar"]
+mail.ru##IMG[width="200"][height="30"]
+mail.ru##IMG[width="200"][height="300"]
+mail.ru##IMG[width="240"][height="200"]
+mail.ru##IMG[width="240"][height="400"]
+mail.ru##[class$="_ban"]
+mail.ru,~allods.mail.ru##[class$="banner"]
+mail.ru##[id^="getmov"]
+||afisha.mail.ru/img/spons/
+||banners.mail.ru^$third-party
+||imgsmail.ru/pic?url=http%3A*.jpg&sig=
+||imgsmail.ru/r/my/brands/
+||mail.ru/img/bg_promo.
+||mail.ru/map/volkswagen_
+||r.mail.ru/b$subdocument
+||rs.mail.ru/b$third-party
+||showbiz.mail.ru^$third-party
+||torg.mail.ru/prtnr/$third-party
+
 ! Overclockers.RU
 forums.overclockers.ru##.banner
 forums.overclockers.ru##DIV[id] > DIV[align="center"] > TABLE[width="100%"][align="center"]
@@ -2608,12 +2553,62 @@ overclockers.ru##TD[width="12%"] + TD + TD[width="200"]
 ||overclockers.ru/images/Banner
 ||overclockers.ru/im_b/
 
+! Rambler.RU
+foto.rambler.ru##.pi_b2
+mail.rambler.ru###banner-right
+rambler.ru##.inbann
+rambler.ru##.pgBanner
+rambler.ru##.r--b728
+rambler.ru##.rb--TopTeaser
+rambler.ru##[class^="b_banner_"]
+top100.rambler.ru##.b-block2
+||images.rambler.ru/upl/$domain=~nova.rambler.ru
+||rambler.ru/export/banners.
+||rambler.ru/i.ban?
+
+! RBC (РБК)
+cnews.ru###mag_banner
+cnews.ru###rian_iformer
+cnews.ru###small_partners_header
+cnews.ru##.banner_wrapp
+||zoom.cnews.ru^*/banners/
+rbc.ru,rbc.ua,rbcdaily.ru##.banner
+rbc.ru,rbc.ua##.contentBox > .tac
+rbc.ru,rbc.ua##IFRAME[width="234"][height="200"]
+rbc.ru,rbc.ua##TABLE[bgcolor="#F7FAEF"]
+rbc.ru,rbc.ua,cnews.ru##[id^="flashrst_"]
+rbc.ru,rbc.ua,cnews.ru##[id^="flash_"]
+rbcdaily.ru##.c-block_content_article_baner
+rbcdaily.ru##[class*="_adv"]
+rbcnews.com##A[href^="http://banner.rbc.ru/"]
+||cnews.ru/img/banner/
+||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
+||pics.rbc.ru^*/banners/
+||pics.rbc.ru^*/img.gif?
+
 ! Ukr.NET
 ||informers.ukr.net^
 search.ukr.net##.ads-header
 search.ukr.net##.ads-header + SPAN > .ad
 ||ukr.net/i/rozetka/
 ||ukr.net/partner/
+
+! Yandex (Яndex)
+###yandex
+yandex.ru,yandex.ua###banner
+yandex.ru,yandex.ua##.b-adv
+yandex.ru,yandex.ua##.b-banner
+yandex.ru,yandex.ua##.b-bar
+yandex.ru,yandex.ua##DIV[id*=direct]
+yandex.ru,yandex.ua##UL[class*="spec-adv"]
+|http://wimg.yandex.net/12/54/t-12542.png|
+||an.yandex.$third-party
+||awaps.yandex.
+||bs.yandex.$third-party
+||kiks.yandex.
+||yabs.yandex.*/show/$third-party
+||yabs.yandex.*/resource/*.swf?rnd=*&link1=
+||yandex.*/cy?base=0&host=
 
 ! Томские ресурсы
 autotom.ru###shop
@@ -2653,4 +2648,3 @@ vtomske.ru##.vtomske-body[style="height: 37px;"]
 ||vtomske.ru^$object
 ||x-soft.tomsk.ru/dsa/
 x-soft.tomsk.ru###shop
-
