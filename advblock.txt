@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: aCZMS9Dsrtk6GLWwc1TUIg
+! Checksum: t6VvSqjC+bPs3cpzmcZMjg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -14,6 +14,70 @@
 ! Если вы пользуетесь функцией Adblock Plus «Сообщить о проблеме…», то желательно указывать свой адрес электропочты, а комментарии желательно писать по-русски.
 ! Прежде чем сообщать об ошибке попробуйте обновить подписку и затем обновить страницу.
 ! Для защиты от порно в Firefox рекомендуем использовать расширение CensureBlock, а не подписки!
+
+! = Сайты-попапы (их часто открывают без спросу в новом окне) =================
+! #pop.bookmark
+! Прямая блокировка следующих сайтов должного эффекта не имеет, но при наличии
+! дополнения Adblock Plus Pop-up Addon они определяются как нежелательные и
+! автоматическое открытие попапа с ними блокируется. Мне (иногда) не нравится
+! тот факт, что сайты блокируются целиком, но пока не вижу другого пути.
+! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
+||advmaker.ru/go.php?
+||am10.ru/pop_tds.php?
+||flipflapflo.
+||gameleads.ru^
+||go.timedirect.ru^
+||go.trafking.ru^
+||ipchecker.ru^
+||livetraf.com/click/
+||myredirector.net/?go=
+||peel-down.net/search.php?
+||redirecturl.ru^
+||redirnet.info/sol/
+||t1goto.info^
+||t8good.info^
+||war.noc.su/?
+||web-leaders.ru/adv.
+! - Прочее --------------------------------------------------------------------
+||1001kupon.ru^
+||fotostrana.ru/start/questpet/?
+||funtest-ru.com^
+||goodsbrowser.com^
+||image2you.ru^
+||kupikupon.com.ua^
+||kupikupon.ru^
+||letitbit.net/pop_up.
+||link2you.ru^
+||parapa.ru/adv/?
+||partypoker.com/*/videopop/
+||pop.sn00.net^
+||promo.karosgame.ru^
+||promo.rzonline.ru^
+||promo.va-bank.com^
+||pw.mail.ru/play.html?
+||rs.mail.ru/b*.html?rb_link=
+||travian.com.ua/landingpage/
+||vzarabotke.ru^
+! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
+||24pornoo.ru^
+||5pornosex.ru^
+||avska.com^
+||devochki.cz^
+||livejasmin.com^
+||poisk125.com^
+! $domain=cooldevki.com|falosvideo.com|pokajem.do.am|portvx.com|prodom2.com|tele-dom2.com|telesekas.com|tvdom2.com|tvsxsite.com|videocinemax.com|vkvideox.com|videocinemax.com
+||pokajem.*.com^
+||posmotrish.net^
+||sexrustube24.com^
+||vkru.socialru.ru^
+||vstaet.net^
+||zoy.org/
+! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
+! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
+24pornoo.ru,5pornosex.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,posmotrish.net,sexrustube24.com,vkru.socialru.ru,vstaet.net,zoy.org##:root
+cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,telesekas.com,tvdom2.com,tvsxsite.com,videocinemax.com,vkvideox.com##:root
+! Блокируем картинки на pokajem-сайтах.
+||glopic.com$domain=cooldevki.com|falosvideo.com|pokajem.do.am|portvx.com|prodom2.com|tele-dom2.com|telesekas.com|tvdom2.com|tvsxsite.com|videocinemax.com|vkvideox.com
 
 ! = Исключения против ложных срабатываний =====================================
 ! Исправление проблем возникших в результате работы подписки на отдельных сайтах
@@ -175,66 +239,6 @@ _tizer.
 /cout.php?sid=$script
 /out.php?sid=$script
 /sun_*_ajax.js|
-
-! = Сайты-попапы (их часто открывают без спросу в новом окне) =================
-! #pop.bookmark
-! Прямая блокировка следующих сайтов должного эффекта не имеет, но при наличии
-! дополнения Adblock Plus Pop-up Addon они определяются как нежелательные и
-! автоматическое открытие попапа с ними блокируется. Мне (иногда) не нравится
-! тот факт, что сайты блокируются целиком, но пока не вижу другого пути.
-! - Порнуха -------------------------------------------------------------------
-||24pornoo.ru^
-||avska.com^
-||devochki.cz^
-||livejasmin.com^
-||poisk125.com^
-! $domain=cooldevki.com|falosvideo.com|pokajem.do.am|portvx.com|prodom2.com|tele-dom2.com|telesekas.com|tvdom2.com|tvsxsite.com|videocinemax.com|vkvideox.com|videocinemax.com
-||pokajem.*.com^
-||posmotrish.net^
-||sexrustube24.com^
-||vstaet.net^
-||zoy.org/
-! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
-! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
-24pornoo.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,posmotrish.net,sexrustube24.com,vstaet.net,zoy.org##:root
-cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,telesekas.com,tvdom2.com,tvsxsite.com,videocinemax.com,vkvideox.com##:root
-||glopic.com$domain=cooldevki.com|falosvideo.com|pokajem.do.am|portvx.com|prodom2.com|tele-dom2.com|telesekas.com|tvdom2.com|tvsxsite.com|videocinemax.com|vkvideox.com
-! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
-||advmaker.ru/go.php?
-||am10.ru/pop_tds.php?
-||flipflapflo.
-||gameleads.ru^
-||go.timedirect.ru^
-||go.trafking.ru^
-||ipchecker.ru^
-||myredirector.net/?go=
-||peel-down.net/search.php?
-||redirecturl.ru^
-||redirnet.info/sol/
-||t1goto.info^
-||t8good.info^
-||war.noc.su/?
-||web-leaders.ru/adv.
-! - Прочее --------------------------------------------------------------------
-||1001kupon.ru^
-||fotostrana.ru/start/questpet/?
-||funtest-ru.com^
-||goodsbrowser.com^
-||image2you.ru^
-||kupikupon.com.ua^
-||kupikupon.ru^
-||letitbit.net/pop_up.
-||link2you.ru^
-||parapa.ru/adv/?
-||partypoker.com/*/videopop/
-||pop.sn00.net^
-||promo.karosgame.ru^
-||promo.rzonline.ru^
-||promo.va-bank.com^
-||pw.mail.ru/play.html?
-||rs.mail.ru/b*.html?rb_link=
-||travian.com.ua/landingpage/
-||vzarabotke.ru^
 
 ! = Общие фильтры =============================================================
 
