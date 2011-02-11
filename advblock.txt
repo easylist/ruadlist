@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: V/nTu+VcQcrx3tfz0PAbIg
+! Checksum: or7L5q4cxj/p2TWKWeSrmw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -86,7 +86,7 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 ! Кросс-запрос в флэш роликах с dclick.ru
 @@||dclick.ru/crossdomain.xml|
 ! Реклама в видео, но без неё не посмотришь
-@@||sticker.yadro.ru/i/ad_in_video.swf
+@@||sticker.yadro.ru/i/ad_in_video.swf$domain=rutv.ru
 ! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
 @@||video.*.user.madbanner.ru^$object_subrequest
 @@||video.mb.*/cgi-bin/iframe/$object_subrequest
@@ -105,9 +105,6 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 @@||fileshare.in.ua/s/js/adriver_async.js
 @@||ph4.ru/css/adsense.css
 @@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
-@@||sticker.yadro.ru/ad/3.xml?$object_subrequest,domain=rutv.ru
-@@||sticker.yadro.ru/crossdomain.xml$object_subrequest,domain=rutv.ru
-@@||sticker.yadro.ru/i/ad_in_video.swf$object_subrequest,domain=rutv.ru
 @@||uzumaki.kz/js/popunder.js|
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 
