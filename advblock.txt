@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: zbtsx+C8RXclisuzkWl77Q
+! Checksum: YWPOfc1cZJUODgK2RA/rSQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -87,13 +87,13 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 @@||dclick.ru/crossdomain.xml|
 ! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
 @@||video.*.user.madbanner.ru^$object_subrequest
-! @@||video.mb.*/cgi-bin/iframe/$object_subrequest
 ! Авторизация на tbn.ru блокируется правилом против него же
 @@||auth.tbn.ru/
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
-@@/images/*/*/0/script.js?$domain=dni.ru|kinopoisk.ru
-@@||adriver.ru/cgi-bin/erle.cgi?$domain=dni.ru|kinopoisk.ru|tv.molodejj.ru
+@@||adriver.ru/crossdomain.xml$domain=molodejj.tv
+@@||adriver.ru/cgi-bin/erle.cgi?sid=$object_subrequest,domain=molodejj.tv
+@@||adriver.ru/cgi-bin/erle.cgi?sid=$domain=dni.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
