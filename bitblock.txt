@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: s2GyIXxEDBeh/4DzDDHeow
+! Checksum: 0ro9hab7EjizTkAgMlIV5Q
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -232,11 +232,14 @@ rutracker.org,rutracker.ru,tapochek.net,free-torrents.org,pornolab.net,gardnet.t
 ||sparklee.com^$third-party
 
 != Блокировка мусора в подписях на форумах ====================================
-!- Общие правила --------------------------------------------------------------
+!- Правила скрытия блока подписей ---------------------------------------------
 ##.sig
 ~oxymoronical.com##.signature
 ##.signatureView
 ##.user_signature
+kadets.info##DIV[id^="post_message_"] + DIV
+
+!- Общие правила блокировки линеечек и юзербаров ------------------------------
 .info/lines/$image
 .net/lines/$image
 .ru/line/$image
@@ -251,12 +254,21 @@ rutracker.org,rutracker.ru,tapochek.net,free-torrents.org,pornolab.net,gardnet.t
 /tickers.$image
 /tickers/*$image
 /torrentbar.$image
-/userbar$image
--userbar$image
-.userbar$image
-_userbar$image
+-userbar-$image
+-userbar.$image
+-userbar/$image
+.userbar-$image
+.userbar.$image
+.userbar/$image
+/userbar-$image
+/userbar.$image
+/userbar/$image
+/userbar_$image
+_userbar.$image
+_userbar/$image
+_userbar_$image
 
-!- Блокировка отдельных источников мусора -------------------------------------
+!- Блокировка отдельных источников линеечек и юзербаров -----------------------
 ||2142-stats.com^$third-party
 ||2ip.ru/bar/
 ||ametric.ru^$third-party
@@ -310,6 +322,7 @@ _userbar$image
 ||lines*.kukuzya.ru^
 ||lines-metric.h16.ru^
 ||love.romanticcollection.ru^
+||malwarecity.com^*/fanzone/$third-party
 ||mamainfo.ru/images/line.php?
 ||mamalines.org.ua^$third-party
 ||mamapluspapa.ru/*/lines/
