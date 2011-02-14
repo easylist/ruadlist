@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: VtOnhPN+B+T3IL2Wu1xrug
+! Checksum: aMdJpT3PRWwbPzJK+hCphg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -94,6 +94,8 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 @@||adriver.ru/crossdomain.xml$domain=molodejj.tv
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$object_subrequest,domain=molodejj.tv
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$domain=dni.ru
+@@||adriver.ru/$domain=izvestia.ru
+@@||izvestia.ru/js/adriver.core.2.js$domain=izvestia.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
@@ -1533,11 +1535,12 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 
 ! AdRiver.RU
 /banners/*/*/0/index.$subdocument
-/images/*/*/0/script.$script
-||81.176.235.164^$~object_subrequest
-||195.214.194.1^$~object_subrequest
-||217.16.18.$~object_subrequest
-||217.16.28.$~object_subrequest
+/images/*/*/0/script.$script,domain=~izvestia.ru
+/images/000*/*/0/*.swf|$domain=izvestia.ru
+||81.176.235.164^$~object_subrequest,domain=~izvestia.ru
+||195.214.194.1^$~object_subrequest,domain=~izvestia.ru
+||217.16.18.$~object_subrequest,domain=~izvestia.ru
+||217.16.28.$~object_subrequest,domain=~izvestia.ru
 
 ! AdStock.RU
 ##A[href*=".ru/fn.php?r="]
