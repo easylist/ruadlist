@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 3tG+ys8uGVo3LjiE6KJRMg
+! Checksum: Dq6CZAvPEEb289pbQ8moZA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -91,11 +91,12 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 @@||auth.tbn.ru/
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
-@@||adriver.ru/crossdomain.xml$domain=molodejj.tv
-@@||adriver.ru/cgi-bin/erle.cgi?sid=$object_subrequest,domain=molodejj.tv
+@@/js/adriver.core.2.js|$domain=izvestia.ru|rian.ru
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$domain=dni.ru
-@@||adriver.ru/$domain=izvestia.ru
-@@||izvestia.ru/js/adriver.core.2.js$domain=izvestia.ru
+@@||adriver.ru/cgi-bin/erle.cgi?sid=$object_subrequest,domain=molodejj.tv
+@@||adriver.ru/cgi-bin/merle.cgi?rnd=$domain=izvestia.ru|rian.ru
+@@||adriver.ru/crossdomain.xml|$domain=molodejj.tv
+@@||adriver.ru/plugins/$script,domain=izvestia.ru|rian.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
@@ -103,10 +104,11 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 @@||advertising.yandex.$~third-party
 @@||afisha.ru/proxy/$domain=afisha.ru
 @@||fileshare.in.ua/s/js/adriver_async.js
+@@||izvestia.ru/adriver_teasers.$domain=izvestia.ru
 @@||ph4.ru/css/adsense.css
+@@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
 @@||sticker.yadro.ru/ad/3.xml?$object_subrequest,domain=rutv.ru
 @@||sticker.yadro.ru/i/ad_in_video.swf$domain=rutv.ru
-@@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
 @@||uzumaki.kz/js/popunder.js|
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 
@@ -183,9 +185,9 @@ _baner.
 /banner.gif|
 ! i4j.net, i4j.null.ru
 /bannerex.cgi/getbanner.js?id=
-/cgi-bin/banner/*
+/cgi-bin/banner/*$domain=~mb.izvestia.ru|~mb.rian.ru
 /cgi-bin/banners/*
-/cgi-bin/iframe/*
+/cgi-bin/iframe/*$domain=~izvestia.ru|~rian.ru
 /images/adv/*
 /images/ban/*
 /images/banners/*$domain=~allods.mail.ru|~allods.ru|~visage.od.ua|~vorbis.com
@@ -334,10 +336,6 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 //80.93.56.187^
 //81.177.7.6^
 //83.222.31.194/in.cgi?
-! AdFox.RU
-//87.242.91.*/adfox/*
-! AdFox.RU
-//87.242.91.*/prepareCode?
 //89.108.72.16^
 //90.156.144.98^
 //91.194.251.66^
@@ -407,7 +405,6 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||adbee.com.ua^$third-party
 ||addnow.ru^$third-party
 ||addweb.ru^$third-party
-||adfox.ru^$third-party
 ||adfun.ru^$third-party
 ||adgo-online.de^$third-party
 ||adhands.ru^$third-party
@@ -1532,6 +1529,11 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||oneund.com^$third-party
 ||ruigra.com^$third-party
 ||textun.ru^$third-party
+
+! AdFox.RU
+//87.242.91.*/adfox/*$domain=~izvestia.ru|~rian.ru
+//87.242.91.*/prepareCode?$domain=~izvestia.ru|~rian.ru
+||adfox.ru^*/prepareCode?$third-party,domain=~izvestia.ru|~rian.ru
 
 ! AdRiver.RU
 /banners/*/*/0/index.$subdocument
