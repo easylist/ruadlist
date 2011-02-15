@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: /DhpX6CTKySSzggATvPOhw
+! Checksum: sidS3cYKUjUm8CFPQOnG0w
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -187,8 +187,8 @@ _baner.
 ! i4j.net, i4j.null.ru
 /bannerex.cgi/getbanner.js?id=
 /cgi-bin/banner/*$domain=~adv.vz.ru|~mb.interfax.ru|~mb.izvestia.ru|~mb.rian.ru
-/cgi-bin/banners/*$domain=~gzt.ru|~izvestia.ru
-/cgi-bin/iframe/*$domain=~gzt.ru|~izvestia.ru|~rian.ru
+/cgi-bin/banners/*$domain=~gzt.ru|~izvestia.ru|~km.ru
+/cgi-bin/iframe/*$domain=~gzt.ru|~izvestia.ru|~rian.ru|~km.ru
 /images/adv/*
 /images/ban/*
 /images/banners/*$domain=~allods.mail.ru|~allods.ru|~visage.od.ua|~vorbis.com
@@ -211,7 +211,7 @@ _tizer.
 -tizer.
 /tizer-
 /tizer/*
-/tizer.
+/tizer.$domain=~adv.vz.ru|~km.ru
 .tizer-
 .tizer.
 /tizers/*
@@ -1537,12 +1537,13 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 
 ! AdRiver.RU
 /banners/*/*/0/index.$subdocument
-/images/*/*/0/script.$script,domain=~izvestia.ru
-/images/000*/*/0/*.swf|$domain=izvestia.ru
-||81.176.235.164^$~object_subrequest,domain=~izvestia.ru
-||195.214.194.1^$~object_subrequest,domain=~izvestia.ru
-||217.16.18.$~object_subrequest,domain=~izvestia.ru
-||217.16.28.$~object_subrequest,domain=~izvestia.ru
+/images/*/*/0/script.$script,domain=~izvestia.ru|rian.ru
+/images/000*/*/0/*.swf|$domain=izvestia.ru|rian.ru
+/images/*/*/0.gif?&sid=
+||81.176.235.164^$~object_subrequest,domain=~izvestia.ru|rian.ru
+||195.214.194.1^$~object_subrequest,domain=~izvestia.ru|rian.ru
+||217.16.18.$~object_subrequest,domain=~izvestia.ru|rian.ru
+||217.16.28.$~object_subrequest,domain=~izvestia.ru|rian.ru
 
 ! AdStock.RU
 ##A[href*=".ru/fn.php?r="]
@@ -1989,6 +1990,9 @@ kinostok.net##.orange > A
 ||kinotvonline.ru/templates/kinotvonline/images/
 ||kleo.ru/ban/
 banner.lbs.km.ru##A[target="_blank"] > IMG[width="310"]
+km.ru##.pane-block-13
+km.ru##.top-banner
+km.ru##IFRAME[height="90"]
 .lbs.km.ru/mod/_banners/*?param1=
 kodges.ru##.banner-fullstory
 kolesa.kz##.banner
@@ -2570,7 +2574,7 @@ mail.ru##[id^="getmov"]
 ||mail.ru/img/bg_promo.
 ||mail.ru/map/volkswagen_
 ||r.mail.ru/b$subdocument
-||rs.mail.ru/b$third-party,domain=~gzt.ru|~izvestia.ru
+||rs.mail.ru/b$third-party,domain=~gzt.ru|~izvestia.ru|~km.ru
 ||showbiz.mail.ru^$third-party
 ||torg.mail.ru/prtnr/$third-party
 
