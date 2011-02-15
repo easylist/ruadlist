@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: fXvb8YuvNbWkznv2prG6Og
+! Checksum: UVCRZYftTyLfERHmB0enuQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -91,13 +91,13 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 @@||auth.tbn.ru/
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
-@@/js/adriver.core.2.js|$domain=izvestia.ru|rian.ru
+@@/js/adriver.core.2.js|$domain=izvestia.ru
 @@||adfox.ru/*&prr=$domain=infox.ru|izvestia.ru|rian.ru
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$domain=dni.ru
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$object_subrequest,domain=molodejj.tv
-@@||adriver.ru/cgi-bin/merle.cgi?rnd=$domain=izvestia.ru|rian.ru
+@@||adriver.ru/cgi-bin/merle.cgi?rnd=$domain=izvestia.ru
 @@||adriver.ru/crossdomain.xml|$domain=molodejj.tv
-@@||adriver.ru/plugins/$script,domain=izvestia.ru|rian.ru
+@@||adriver.ru/plugins/$script,domain=izvestia.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
@@ -1535,13 +1535,13 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 
 ! AdRiver.RU
 /banners/*/*/0/index.$subdocument
-/images/*/*/0/script.$script,domain=~izvestia.ru|rian.ru
-/images/000*/*/0/*.swf|$domain=izvestia.ru|rian.ru
+/images/*/*/0/script.$script,domain=~izvestia.ru
+/images/000*/*/0/*.swf|$domain=izvestia.ru
 /images/*/*/0.gif?&sid=
-||81.176.235.164^$~object_subrequest,domain=~izvestia.ru|rian.ru
-||195.214.194.1^$~object_subrequest,domain=~izvestia.ru|rian.ru
-||217.16.18.$~object_subrequest,domain=~izvestia.ru|rian.ru
-||217.16.28.$~object_subrequest,domain=~izvestia.ru|rian.ru
+||81.176.235.164^$~object_subrequest,domain=~izvestia.ru
+||195.214.194.1^$~object_subrequest,domain=~izvestia.ru
+||217.16.18.$~object_subrequest,domain=~izvestia.ru
+||217.16.28.$~object_subrequest,domain=~izvestia.ru
 
 ! AdStock.RU
 ##A[href*=".ru/fn.php?r="]
