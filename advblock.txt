@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: S9gsuB0cfGHLnBYkb0JMnQ
+! Checksum: lpnB5TSp3nHTt4fA8qht/Q
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -92,7 +92,7 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@/js/adriver.core.2.js|$domain=izvestia.ru|rian.ru
-@@||adfox.ru/*&prr=$domain=gzt.ru|infox.ru|izvestia.ru|rian.ru
+@@||adfox.ru/*&prr=$domain=infox.ru|izvestia.ru|rian.ru
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$domain=dni.ru
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$object_subrequest,domain=molodejj.tv
 @@||adriver.ru/cgi-bin/merle.cgi?rnd=$domain=izvestia.ru|rian.ru
@@ -1532,7 +1532,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||textun.ru^$third-party
 
 ! AdFox.RU
-//87.242.91.*/adfox/*$domain=~gzt.ru|~infox.ru|~izvestia.ru|~rian.ru
+//87.242.91.*/adfox/*$domain=~infox.ru|~izvestia.ru|~rian.ru
 //87.242.91.*/prepareCode?
 
 ! AdRiver.RU
@@ -1877,6 +1877,7 @@ gulyai.ru###dle-content > NOINDEX
 ||guns.ru/i/
 guru.ua###adbns
 guzei.com##object[width="200"][height="100"]
+gzt.ru##.b-advertisement
 
 ! H
 habrahabr.ru##.banner
