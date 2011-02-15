@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: XwVqK4pkXvuRwjzd77G02A
+! Checksum: hY32NHzxOxO88aEGV04maQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -186,7 +186,7 @@ _baner.
 /banner.gif|
 ! i4j.net, i4j.null.ru
 /bannerex.cgi/getbanner.js?id=
-/cgi-bin/banner/*$domain=~mb.interfax.ru|~mb.izvestia.ru|~mb.rian.ru
+/cgi-bin/banner/*$domain=~adv.vz.ru|~mb.interfax.ru|~mb.izvestia.ru|~mb.rian.ru
 /cgi-bin/banners/*$domain=~gzt.ru|~izvestia.ru
 /cgi-bin/iframe/*$domain=~gzt.ru|~izvestia.ru|~rian.ru
 /images/adv/*
@@ -297,9 +297,10 @@ _tizer.
 /extadv/*
 /fullgames.ru/*$object
 /getrank.net/pr*.php
+/iframe/glomu.$subdocument
+/iframe/inosmi.$subdocument
 /IndianRailways/*$match-case
 /informer.js?
-/inosmi.$subdocument
 /linkexchange/*
 /marketplace.asp?
 /mirmaek/*$image
@@ -1878,7 +1879,10 @@ gulyai.ru###dle-content > NOINDEX
 ||guns.ru/i/
 guru.ua###adbns
 guzei.com##object[width="200"][height="100"]
+gzt.ru###bubble
 gzt.ru##.b-advertisement
+gzt.ru##.b-imported-advertisement
+gzt.ru##.soyuz_zhur
 
 ! H
 habrahabr.ru##.banner
@@ -2239,6 +2243,7 @@ referatu.net.ua##.banner468_60
 ||restoclub.ru/pic/iblocks/
 ||restotv.ru/promo/$domain=restoclub.ru
 ||img.rg.ru/i/bnr/
+rian.ru###partners_block
 rin.ru##A > IMG[width="120"][height$="0"][src^="/images/"]
 ||rin.ru/ban/?
 ||rin.ru/bodyadv.
