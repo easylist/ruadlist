@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: +FwgXAPnMgwV+StFIUAS+Q
+! Checksum: Q77OcR0grElu9fjftKuRmw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -188,7 +188,7 @@ _baner.
 ! i4j.net, i4j.null.ru
 /bannerex.cgi/getbanner.js?id=
 /cgi-bin/banner/*$domain=~mb.izvestia.ru|~mb.rian.ru
-/cgi-bin/banners/*
+/cgi-bin/banners/*$domain=~izvestia.ru
 /cgi-bin/iframe/*$domain=~izvestia.ru|~rian.ru
 /images/adv/*
 /images/ban/*
@@ -1535,7 +1535,6 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ! AdFox.RU
 //87.242.91.*/adfox/*$domain=~izvestia.ru|~rian.ru
 //87.242.91.*/prepareCode?$domain=~izvestia.ru|~rian.ru
-! ||adfox.ru^*/prepareCode?$third-party,domain=~izvestia.ru|~rian.ru
 
 ! AdRiver.RU
 /banners/*/*/0/index.$subdocument
@@ -2565,7 +2564,7 @@ mail.ru##[id^="getmov"]
 ||mail.ru/img/bg_promo.
 ||mail.ru/map/volkswagen_
 ||r.mail.ru/b$subdocument
-||rs.mail.ru/b$third-party
+||rs.mail.ru/b$third-party,domain=~izvestia.ru
 ||showbiz.mail.ru^$third-party
 ||torg.mail.ru/prtnr/$third-party
 
