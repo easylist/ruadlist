@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: uZYCV4tH2sPB0DPxm3mv8Q
+! Checksum: vUfnYE/JxjeCfbIl39KoMw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -92,8 +92,7 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@/js/adriver.core.2.js|$domain=izvestia.ru|rian.ru
-@@||adfox.ru/*/getCodeTest?*&prr=$domain=izvestia.ru|rian.ru
-@@||adfox.ru/*/prepareCode?*&prr=$domain=izvestia.ru|rian.ru
+@@||adfox.ru/*&prr=$domain=gzt.ru|izvestia.ru|rian.ru
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$domain=dni.ru
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$object_subrequest,domain=molodejj.tv
 @@||adriver.ru/cgi-bin/merle.cgi?rnd=$domain=izvestia.ru|rian.ru
@@ -187,9 +186,9 @@ _baner.
 /banner.gif|
 ! i4j.net, i4j.null.ru
 /bannerex.cgi/getbanner.js?id=
-/cgi-bin/banner/*$domain=~adv.vz.ru|~mb.izvestia.ru|~mb.rian.ru
-/cgi-bin/banners/*$domain=~izvestia.ru
-/cgi-bin/iframe/*$domain=~izvestia.ru|~rian.ru
+/cgi-bin/banner/*$domain=~adv.vz.ru|~mb.interfax.ru|~mb.izvestia.ru|~mb.rian.ru
+/cgi-bin/banners/*$domain=~gzt.ru|~izvestia.ru
+/cgi-bin/iframe/*$domain=~gzt.ru|~izvestia.ru|~rian.ru
 /images/adv/*
 /images/ban/*
 /images/banners/*$domain=~allods.mail.ru|~allods.ru|~visage.od.ua|~vorbis.com
@@ -212,7 +211,7 @@ _tizer.
 -tizer.
 /tizer-
 /tizer/*
-/tizer.$domain=~adv.vz.ru|~rian.ru
+/tizer.$domain=~adv.vz.ru|~gzt.ru|~rian.ru
 .tizer-
 .tizer.
 /tizers/*
@@ -1533,8 +1532,8 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||textun.ru^$third-party
 
 ! AdFox.RU
-//87.242.91.*/adfox/*$domain=~izvestia.ru|~rian.ru
-//87.242.91.*/prepareCode?$domain=~izvestia.ru|~rian.ru
+//87.242.91.*/adfox/*$domain=~gzt.ru|~izvestia.ru|~rian.ru
+//87.242.91.*/prepareCode?
 
 ! AdRiver.RU
 /banners/*/*/0/index.$subdocument
@@ -2564,7 +2563,7 @@ mail.ru##[id^="getmov"]
 ||mail.ru/img/bg_promo.
 ||mail.ru/map/volkswagen_
 ||r.mail.ru/b$subdocument
-||rs.mail.ru/b$third-party,domain=~izvestia.ru
+||rs.mail.ru/b$third-party,domain=~gzt.ru|~izvestia.ru
 ||showbiz.mail.ru^$third-party
 ||torg.mail.ru/prtnr/$third-party
 
