@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: vUfnYE/JxjeCfbIl39KoMw
+! Checksum: eMc950TDVdgaZUIvPVUX6A
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -92,7 +92,7 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@/js/adriver.core.2.js|$domain=izvestia.ru|rian.ru
-@@||adfox.ru/*&prr=$domain=gzt.ru|izvestia.ru|rian.ru
+@@||adfox.ru/*&prr=$domain=gzt.ru|infox.ru|izvestia.ru|rian.ru
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$domain=dni.ru
 @@||adriver.ru/cgi-bin/erle.cgi?sid=$object_subrequest,domain=molodejj.tv
 @@||adriver.ru/cgi-bin/merle.cgi?rnd=$domain=izvestia.ru|rian.ru
@@ -188,7 +188,7 @@ _baner.
 /bannerex.cgi/getbanner.js?id=
 /cgi-bin/banner/*$domain=~adv.vz.ru|~mb.interfax.ru|~mb.izvestia.ru|~mb.rian.ru
 /cgi-bin/banners/*$domain=~gzt.ru|~izvestia.ru
-/cgi-bin/iframe/*$domain=~gzt.ru|~izvestia.ru|~rian.ru
+/cgi-bin/iframe/*$domain=~gzt.ru|~izvestia.ru
 /images/adv/*
 /images/ban/*
 /images/banners/*$domain=~allods.mail.ru|~allods.ru|~visage.od.ua|~vorbis.com
@@ -1532,7 +1532,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||textun.ru^$third-party
 
 ! AdFox.RU
-//87.242.91.*/adfox/*$domain=~gzt.ru|~izvestia.ru|~rian.ru
+//87.242.91.*/adfox/*$domain=~gzt.ru|~infox.ru|~izvestia.ru|~rian.ru
 //87.242.91.*/prepareCode?
 
 ! AdRiver.RU
