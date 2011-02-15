@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Iupv2GD2d0e2PhJzoknaPg
+! Checksum: fXvb8YuvNbWkznv2prG6Og
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -495,7 +495,6 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||awmpartners.com^$third-party
 ||azbukasexa.ru^$third-party
 ||azerbaijanian.com/img.php?
-||azerimake.km.ru^
 ||b-one.com.ua^
 ||b.candy.vl.ru^
 ||b.ddestiny.ru^
@@ -1988,11 +1987,6 @@ kinopoisk.ru##.superb
 kinostok.net##.orange > A
 ||kinotvonline.ru/templates/kinotvonline/images/
 ||kleo.ru/ban/
-banner.lbs.km.ru##A[target="_blank"] > IMG[width="310"]
-km.ru##.pane-block-13
-km.ru##.top-banner
-km.ru##IFRAME[height="90"]
-.lbs.km.ru/mod/_banners/*?param1=
 kodges.ru##.banner-fullstory
 kolesa.kz##.banner
 kolesa.kz##.board
@@ -2540,6 +2534,16 @@ finmarket.ru,interfax.ru##[id^=bbInformer]
 finmarket.ru,pmoney.ru##A[href^="/RCL/TXT/"]
 interfax.by##.banner
 ||interfax.by/files/$object
+
+! KM.RU
+.lbs.km.ru/mod/_banners/*-240x200.
+.lbs.km.ru/mod/_banners/*?param1=
+banner.lbs.km.ru##A[target="_blank"] > IMG[width="310"]
+km.ru##.pane-block-13
+km.ru##.top-banner
+km.ru##IFRAME[height="90"]
+t2t.ru##.pane-block-8
+t2t.ru##.tbn
 
 ! Mail.RU
 auto.mail.ru##.addMain2
