@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: rQUlXUZhHYZu/rEx3NdbIQ
+! Checksum: 5buHOiyPCnE5uotgVcHoNg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -87,8 +87,6 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 @@||dclick.ru/crossdomain.xml|
 ! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
 @@||video.*.user.madbanner.ru^$object_subrequest
-! Авторизация на tbn.ru блокируется правилом против него же
-@@||auth.tbn.ru/
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@/js/adriver.core.2.js|$domain=izvestia.ru
@@ -259,17 +257,17 @@ _tizer.
 !#global.bookmark
 .all.by/
 .bannerbank_
-.ket.ru/
-.log.ru/
-.pbg.ru/
-.pop.ru/
-.rbe.ru/
-.sbn.ru/
-.tbn.ru/
-.tle.ru/
-.vba.ru/
-.wbn.ru/
-//2x2.kz^
+.ket.ru/$third-party
+.log.ru/$third-party
+.pbg.ru/$third-party
+.pop.ru/$third-party
+.rbe.ru/$third-party
+.sbn.ru/$third-party
+.tbn.ru/$third-party
+.tle.ru/$third-party
+.vba.ru/$third-party
+.wbn.ru/$third-party
+//2x2.kz^$third-party
 //b.*/iframe/*
 //hmn.ru^$third-party
 //kpk.me^$third-party
