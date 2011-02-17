@@ -1,5 +1,5 @@
 [Adblock]
-! Checksum: 4+/AbMo1qYmfxopDqCYUTw
+! Checksum: JoI0RRhK3vXdJrNHMsjzJg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 ! Дополнительная подписка фильтров RU AntiPron List
 ! Эта подписка предназначена для 
@@ -14,7 +14,8 @@
 ! https://addons.mozilla.org/ru/firefox/addon/195789/
 ! Если всё же используете эту подписку,
 ! пишите срои предложения в тему на форуме по адресу:
-! http://forum.mozilla-russia.org/viewtopic.php?id=40748 ==============================================================================
+! http://forum.mozilla-russia.org/viewtopic.php?id=40748
+==============================================================================
 
 != Исключения =================================================================
 @@||adblockplus.org^$document
@@ -180,10 +181,10 @@
 ##A[href*="xxx"][href*="category"]
 ##A[href*="xxx"][href*="censored"]
 ##A[href*="category=xxx"]
-/(?:(?:adult|cekc|dro(4|ch)|eroti|henta[ijy]|[^f]intim|p(orn|layboy|enthouse|izd[au])|se(?:x|ks)|trah|xxx).*){2,}/
-/(?:adult|cekc|dro(4|ch)|ero|h(?:enta[ijy]|ustler)|[^f]intim|p(?:orn|layboy|enthouse|izd[au]|ron)|se(?:x|ks)|trah|xxx).*(?:fot(?:ok?|ki)|film|video|tube)/
-/(?:fot(?:ok?|ki)|film|video|tube).*(?:adult|cekc|dro(4|ch)|eroti|h(?:enta[ijy]|ustler)|[^f]intim|p(orn|layboy|enthouse|izd[au]|ron)|se(?:x|ks)|xxx)/
-/(?:adult|blud|ceks|d((?:e(?:ff|v|w)(?:axi|k[ai]|o(?:k|chki)|stveni(?:c|ts)|chonk)i)|osuk|ro(4|ch))|e(?:bemsa|ro(?:ti[ck].?|pic|vid))|h(?:enta[ijy]|ustler)|[^f]intim|moshonka|orgasm|p(?:or(?:evo|n.{0,3}|nphoto)|utan.{0,2}|layboy|enthouse|izd[au].?|rostitu.{3,4})|razvrat.{0,4}|s(?:e(?:x|ks).?|iski)|tra[hx]nu|x(?:xx|video))[\.-]/
+/(?:(?:adult|cekc|dro(4|ch)|eroti|henta[ijy]|intim|p(orn|layboy|enthouse|izd[au])|se(?:x|ks)|trah|xxx).*){2,}/$domain=fintimes.km.ru
+/(?:adult|cekc|dro(4|ch)|ero|h(?:enta[ijy]|ustler)|intim|p(?:orn|layboy|enthouse|izd[au]|ron)|se(?:x|ks)|trah|xxx).*?(?:fot(?:ok?|ki)|film|video|tube)/
+/(?:fot(?:ok?|ki)|film|video|tube).*?(?:adult|cekc|dro(4|ch)|eroti|h(?:enta[ijy]|ustler)|intim|p(orn|layboy|enthouse|izd[au]|ron)|se(?:x|ks)|trah|xxx)/
+/(?:adult|blud|ceks|d((?:e(?:ff|v|w)(?:axi|k[ai]|o(?:k|chki)|stveni(?:c|ts)|chonk)i)|osuk|ro(4|ch))|e(?:bemsa|ro(?:ti[ck].?|pic|vid))|h(?:enta[ijy]|ustler)|intim|moshonka|orgasm|p(?:or(?:evo|n.{0,3}|nphoto)|utan.{0,2}|layboy|enthouse|izd[au].?|rostitu.{3,4})|razvrat.{0,4}|s(?:e(?:x|ks).?|iski)|tra[hx]nu|x(?:xx|video))[\.-]/
 /[-_=/.](?:adult|eroti|hentai[/-]|intim|p(?:orn|ro(?:_eto\/|stitut))|порн|lesbi|cekc|se(?:ks|x[\d/-]))/
 /эроти|%D1%8D%D1%80%D0%BE%D1%82%D0%B8/
 /-xxx|xxx-/
@@ -681,48 +682,29 @@ tp://xxx
 ||.977mb.com^
 ||.rutop.info^
 ||.t35.com^
-.3bb.ru/
-/3bb.ru/*
-.4bb.ru/
-/4bb.ru/*
 .com.nu/
 /com.nu/*
 ||errio.net^
 ||in39.ru/
-||my3gb.com^
-||mybb.ru/
-||spybb.ru^
 ##A[href*=".110mb.com"]
 ##A[href*=".977mb.com"]
 ##A[href*=".rutop.info"]
 ##A[href*=".t35.com"]
-##A[href*="://3bb.ru"]
-##A[href*="://4bb.ru"]
 ##A[href*="://com.nu"]
 ##A[href*="errio.net"]
 ##A[href*="://in39.ru"]
-##A[href*="my3gb.com"]
-##A[href*="://mybb.ru"]
 ##A[href*="pornofiga.ru"]
 ##A[href*="pornosychka.ru"]
-##A[href*="spybb.ru"]
 .110mb.com##*
 .977mb.com##*
 .rutop.info##*
 .t35.com##*
-3bb.ru##*
-4bb.ru##*
 com.nu##*
 errio.net##*
 in39.ru##*
-my3gb.com##*
-mybb.ru##*
 pornofiga.ru##*
 pornosychka.ru##*
-spybb.ru##*
-!
-!
-! сайты на богах и народе. Жаловаться надо администрации этих хостеров.
+! сайты на блогах и народе. Жаловаться надо администрации этих хостеров.
 ! ||3d-porno-files.blogspot.com^
 ||bdsmextremevideo.blogspot.com^
 ||bdsmfiles.blogspot.com^
