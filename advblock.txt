@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 9YRTU/B9+M3/sw3qNInVWg
+! Checksum: Q4xruhwWKs6bokF4YTwaAg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -1003,8 +1003,6 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||ngbn.net^$third-party
 ||nimp.org^$third-party
 ||nirvana.fm/bx?$third-party
-! Просто заменить точку на || в следующем правиле нельзя!
-.nnover.ru/common/adv.php?
 ||noion.ru^$third-party
 ||nomer1.ru.ru^
 ||nostalgia.onego.ru^
@@ -1397,6 +1395,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||vareza.net^$third-party
 ||vas.ppro.de/click/
 ||ventivmedia.com^$third-party
+||vertucash.com^$third-party
 ||vezetmne.ru^$third-party
 ||vicepiter.ru^$third-party
 ||video-link.ru^$third-party
@@ -2135,6 +2134,7 @@ nnm.ru##[class*="banner"]
 nnm.ru##[id*="banner"]
 nnm.ru###footer + * + #links
 ||nnm.ru^*/astrum/
+||nnover.ru/hints/show/
 ||nn.ru/data/nnbs/
 ||shop.novafilm.tv^
 beta.novoteka.ru##.outBlockVertAddLinks__
@@ -2173,7 +2173,7 @@ opensharing.ru,opensharing.org##IMG[height="120"][width="240"]
 oplati.ru##TD[width="90"]
 oru.ru##TD[width="10"] + TD[width="260"]:last-child
 ||oru.ru^*.swf?click_url=
-||osvete.ru/files/*.swf
+||osvete.ru/files/$object
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 
@@ -2206,7 +2206,7 @@ premiership.ru###banner
 price.ru##.banner_container
 probki.net##CENTER > A > IMG[width="160"]
 probki.net##TD[valign="top"] > A > IMG[width="160"]
-||proelectro.ru/files/*.swf
+||proelectro.ru/files/$object
 propogodu.ru##TABLE.weather + NOINDEX
 ||proxyweb.net/js/dhtmlwindow.js
 maps.probki.net##[width="180"] > TBODY > TR:last-child
@@ -2242,7 +2242,6 @@ referatu.net.ua##.banner468_60
 ||restotv.ru/promo/$domain=restoclub.ru
 ||img.rg.ru/i/bnr/
 rian.ru###partners_block
-||ric.spb.ru/flash/
 rin.ru##A > IMG[width="120"][height$="0"][src^="/images/"]
 ||rin.ru/ban/?
 ||rin.ru/bodyadv.
