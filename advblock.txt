@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 3ANibVDGOtTTnYPflvToKw
+! Checksum: reJXTTOdhZqAJGrJOB+s7g
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -171,7 +171,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 !#banner.bookmark
 ! - Блокировка по ключевым словам в адресе ------------------------------------
 ! Слишком короткая версия слова banner
-/[/_-]baner[\d._-s/]/$domain=~nalog.ru
+! /[/_-]baner[\d._s/-]/$domain=~nalog.ru
 ! Разворачиваем по новым правилам оптимизации (ABP 1.3.5+)
 _baner_
 _baner.
@@ -179,7 +179,6 @@ _baner.
 /baner.
 /baner/*
 /adv/banners/*
--advert.
 /adv/massage/*
 /afisha_banner/*
 /banner.gif|
@@ -228,7 +227,6 @@ _tizer.
 /468-60_
 /468-80-
 /700x70_
-/768x90.
 ! - Скрытие по размеру --------------------------------------------------------
 ! ##IMG[width="80"][height="15"]
 ##IMG[width="120"][height="600"]
@@ -370,7 +368,6 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||1tizer.com^$third-party
 ||1traff.ru^$third-party
 ||1txt.ru/$third-party
-||24-advert.com^$third-party
 ||24new.ru^$third-party
 ||24open.ru/*?from=
 ||24s.ru/get.php?b=
@@ -681,7 +678,6 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||fastcardtech.com^$third-party
 ||faza.ru/img.php?
 ||fbs.for-ua.org.ua^
-||videoklass.ru^$third-party
 ||file-online.ru^$third-party
 ||filecontrol.ru^$third-party
 ||filepost.ru^$third-party
@@ -804,6 +800,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||inetlog.ru^$third-party
 ||info.webalta.net/reliancebutton?
 ||info-dvd.ru/*/rotator/
+||infocar.ru/media/$third-party,script
 ||infosec.ru/common/data/pub/images/articles/
 ||inheart.ru^$third-party
 ||inside.m2k.ru^
@@ -1077,7 +1074,6 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||poisk.su/img.php?
 ||poisk.su/top.php?
 ||pokaifu.com/templates/
-||pokerstars.com^$third-party
 ||poligraf.pp.ru^$third-party
 ||pomogi.org/urgent/1/
 ||ponsshop.ru^$third-party
@@ -1226,6 +1222,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||seo-monster.ru/img_
 ||seo-sport.ru^$third-party
 ||seo24.com.ua^$third-party
+||seoliner.ru^$third-party
 ||seoprcy.ru/img_*.$image
 ||seopult.ru^$third-party
 ||seorate.ru^$third-party
@@ -1294,13 +1291,11 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||sys.war-online.ru^
 ||t.mediacartel.ru^
 ||t.pusk.ru^
-||tak.ru/in.php?
-||takru.com/in.php?id=
+||tak.ru^$third-party
+||takru.com^$third-party
 ||tankionline.com^$third-party
 ||tbe.tom.ru/?
 ||teaser.cc^$third-party
-! Мёртвый домен?
-! ||teasercash.com^$third-party
 ||teasergate.com^$third-party
 ||teenseks.da.ru^
 ||teeser.ru^$third-party
@@ -1369,8 +1364,6 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||tsr.cdns.com.ua^$third-party
 ||tvoi-dosug.com^$third-party
 ||tynt.com^$third-party
-||tak.ru^$third-party
-||takru.com^$third-party
 ||ua-teens.com^$third-party
 ||uadvt.net^$third-party
 ||ualink.info^*?
@@ -1573,7 +1566,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||101.ru/vardata/modules/banners/
 ||1nsk.net/data/wealth/
 ||2baksa.net/download/
-@@||2baksa.net/download/*/$image
+@@||2baksa.net/download/*/$image,~third-party
 2krota.ru###dle-content > TABLE:first-child CENTER
 2krota.ru##.menu > A:not([href^="/"])
 2krota.ru##NOINDEX A[target="_blank"]
@@ -1805,7 +1798,6 @@ fcpug.ru###main > DIV[style]
 ||fcshop.ru/i/cross/
 fenzin.org##TD[align="center"] > .leftmenu-text
 ||fenzin.org/images/litres_
-||ferra.ru/include/*_advert_
 ||fiat-avtocity.ru/swf/
 file-online.ru##NOINDEX > TABLE[style]
 filehippo.com##.ad
@@ -2201,6 +2193,7 @@ pornolab.net##.tCenter.nowrap.mrg_12
 pornolab.net###pl-speedbar
 ||static.pornolab.net/00
 pr-cy.ru###ad
+||pravdapskov.ru/upload/b/
 premiership.ru###banner
 ||premiership.ru/upload/adv/
 price.ru##.banner_container
@@ -2431,6 +2424,11 @@ unian.net###counters
 unian.net###rightban
 ||banner.unian.net^
 uploder.ws##CENTER:last-child
+urokinadivane.ru##.right_three_top + .left_three_center
+urokinadivane.ru##A[target="_blank"][href^="http://urokinadivane.ru/engine/go.php?url="]
+urokinadivane.ru##[class^="left_col_second_"]
+urokinadivane.ru##[id^="bn_"]
+||urokinadivane.ru/templates/GiGantika/images/swf/
 usde.biz,usde.ru##A[href^="/engine/redirect2.php?url="]
 usde.biz,usde.ru##A[href^="http://usde.ru/adult/go.php?"]
 utro.ru##.banner-right
