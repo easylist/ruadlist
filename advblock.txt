@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: cdt7iTcrxAfMjffssfsHFw
+! Checksum: CQ4A+KaI0cwff+76hXBesA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -255,6 +255,7 @@ _tizer.
 
 ! = Общие фильтры =============================================================
 !#global.bookmark
+-iframe.com^$third-party
 .all.by/
 .bannerbank_
 .ket.ru/$third-party
@@ -779,7 +780,6 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||how2web.com^$third-party
 ||hq-films.ws^$third-party
 ||hta.com.ua^$third-party
-||http-iframe.com^$third-party
 ||hyipsrating.com^$third-party
 ||hypernews.ru^$script
 ||i.j2j.ru^
@@ -2649,7 +2649,7 @@ yandex.ru,yandex.ua##.b-banner
 yandex.ru,yandex.ua##.b-bar
 yandex.ru,yandex.ua##DIV[id*=direct]
 yandex.ru,yandex.ua##UL[class*="spec-adv"]
-|http://wimg.yandex.net/12/54/t-12542.png|
+||yandex.net/12/54/t-12542.png|
 ||an.yandex.$third-party
 ||awaps.yandex.*&awcode=*&link1=
 ||bs.yandex.
