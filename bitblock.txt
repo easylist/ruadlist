@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: u/S3KDWn3PGIXaSILIATEg
+! Checksum: gWi+JtnRd7jk4qwc5GdbFw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -13,6 +13,7 @@
 !==============================================================================
 
 != Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
+!#social.bookmark
 != Тут не все правила - см. подписку фанбоя ниже.
 
 !------------ Facebook --------------------------------------------------------
@@ -75,6 +76,7 @@
 ###socialblock
 
 !- По-сайтам (частные) --------------------------------------------------------
+!#socpriv.bookmark
 3dnews.ru###socialtabs
 4pna.com##TABLE:first-child + BR + .tborder[cellspacing="1"][cellpadding="6"][align="center"]
 ||a-comics.ru/pics5/1btn/
@@ -139,6 +141,7 @@ winreview.ru##.postmeta + NOINDEX
 ||thevista.ru/*/img/soc/
 
 != Информеры ==================================================================
+!#informers.bookmark
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru###rbc
 gismeteo.ua###ad-rbkua
 ||bagnet.org/informer/$third-party
@@ -164,6 +167,7 @@ gismeteo.ua###ad-rbkua
 
 != Мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) =================
 ! Блоки с авторскими правами и, часто, мусором на многих сайтах.
+!#trash.bookmark
 ###copyright
 ###CopyRight
 ##.copyright
@@ -188,6 +192,8 @@ animelayer.ru###Wrapper > TABLE[width="100%"]:first-child
 ||beeline.ru^*/banners/
 ||beeline.ru/pb_500x460.
 ||cbox.ws/box/$third-party
+||club.ru/uploads/banners/
+club.ru##.container-banners
 ||cybermusic.ru/*/flash_logo.swf
 ||echo.msk.ru/att/element-*-misc-*.gif
 experts-exchange.com##.allZones,.vqpsdBlurredAnswers,.copyrightFrame,.footnoteNotice,#pageRight
@@ -231,12 +237,14 @@ rutracker.org,rutracker.ru,tapochek.net,free-torrents.org,pornolab.net,gardnet.t
 ||rustorka.com/*_logo.
 
 != Мерцающего текста рассадники ===============================================
+!#glitter.bookmark
 ||glitter-graphics.net^$third-party
 ||glitterfy.com^$third-party
 ||sparklee.com^$third-party
 
 != Блокировка мусора в подписях на форумах ====================================
 !- Правила скрытия блока подписей ---------------------------------------------
+!#signature.bookmark
 ##.sig
 ~oxymoronical.com##.signature
 ##.signatureView
@@ -612,19 +620,7 @@ _userbar_$image
 ##.story_tools_social_buttons_top
 ##.yahooBuzzBadge
 ##.ymsb-retweet-module
-! ##[alt="Share on Delicious"]
-! ##[alt="Share on MySpace"]
-! ##[alt="Share on Reddit"]
-! ##a[title="Get Feed RSS"]
-! ##a[title="Save On Delicious"]
-! ##A[title="Subscribe by Email"]
-! ##A[title="Subscribe by RSS"]
-! ##A[title="Subscribe by Twitter"]
-! ##a[title="Subscribe on FriendFeed"]
 ##div.sociable
-! ##[alt="Follow us to Youtube.com"]
-! ##[alt="Follow us at Youtube"]
-! ##[alt="Watch us on YouTube"]
 7tutorials.com###block-block-1
 9gag.com##.share
 abcnews.go.com###rsslisting
