@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: vQkf7qT1dblj7HPkOQZLHg
+! Checksum: qyXF/JfA2H66k3eZSAiE+A
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -99,6 +99,7 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
+@@||advert-technology.ru^$domain=advert-technology.ru,script,image
 @@||advertising.yandex.$domain=adv.ya.ru
 @@||advertising.yandex.$~third-party
 @@||afisha.ru/proxy/$domain=afisha.ru
@@ -2111,17 +2112,16 @@ newfreesoft.ru##.menuheadfire
 ||newserials.net/ranetka.js
 ||newserials.net/cu.js
 newsru.com,newsru.ru##TABLE[style$="pointer;"][onclick^="window.open"]
-dom.ngs.ru##TABLE[width="100%"] > TBODY > TR[valign="top"] > TD[width="15%"]
 ||ng.by/bimages/$object
-ngs.ru##.block_adv
-ngs.ru##[id^="banner"]
-ngs.ru##.logo-banners
-ngs.ru##.mjnnuak
-ngs.ru##.nb
+ngs.ru##.adv
+ngs.ru##.banner
+ngs.ru##DIV[style*="relative;"][style*="visible"]
+dom.ngs.ru###logo_banners
+he.ngs.ru,she.ngs.ru,relax.ngs.ru###logos
 realty.ngs.ru###clients
 relax.ngs.ru###exclusive
-relax.ngs.ru##NOINDEX > #logos
 turizm.ngs.ru###logo-menu
+.ngs.ru/$object,domain=~games.ngs.ru
 nightwarez.ru##TD[width="190"] + TD[width="100%"] > TABLE[width="100%"][cellspacing="0"][cellpadding="0"][border="0"]
 nnm-club.ru##CENTER > TABLE[id^="mc_"]
 nnm-club.ru##[id^="x"] > IFRAME
@@ -2650,10 +2650,13 @@ search.ukr.net##.ads-header + SPAN > .ad
 ! Yandex (Яndex)
 ###yandex
 yandex.ru,yandex.ua###banner
+yandex.ru,yandex.ua##.ads.g-line
 yandex.ru,yandex.ua##.b-adv
 yandex.ru,yandex.ua##.b-banner
 yandex.ru,yandex.ua##.b-bar
+yandex.ru,yandex.ua##.b-direct > .header
 yandex.ru,yandex.ua##DIV[id*=direct]
+yandex.ru,yandex.ua##DIV.b-spec-adv.g-gap-vertical.g-gap-horizontal
 yandex.ru,yandex.ua##UL[class*="spec-adv"]
 ||yandex.net/12/54/t-12542.png|
 ||an.yandex.$third-party
