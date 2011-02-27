@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: zEwc6O0ujhHFuQQ4xi+hxQ
+! Checksum: dbqWprZUB9y6exapCA3JDQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -151,6 +151,9 @@ cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,
 ##DIV[id^="Teaser_Block"]
 ##DIV[id^="togetInformer_"]
 ##[class^="snBody"]
+! Скрытие ссылок с рефералами.
+##A[href^="http://beboo.ru/k.php?cid="]
+##A[href^="http://forex4you.org/?affid="]
 ! Предлагают скачать торрент-клиент и торрент одним исполнимым файлом на трекерах.
 ##.mediaget
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
@@ -954,6 +957,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||mlgame.ru/wiki/attach/Referal/*
 ||mlfun.org.ua/images/ban
 ||mnogo.ru^$third-party
+||mobbit.info^$third-party
 ||mobn.net^$third-party
 ||mochiads.com^~object_subrequest
 ||modastro.ee^$third-party
@@ -2513,9 +2517,10 @@ yarportal.ru##TD.desc
 ! Z
 zadolba.li##.sidebar > .ok
 ||zastavki.com/banners/
+zaycev.net##.box.box-nogap
 zaycev.net##.box > CENTER
+zaycev.net##.unit-panel
 zaycev.net##[class^="trus-cell-"]
-zaycev.net##A[href^="http://beboo.ru/"]
 zaycev.net##A[href^="http://www.azbukasexa.ru/"]
 zaycev.net##DIV > TABLE[width="750"][align="center"]
 zaycev.net##UL > NOINDEX
