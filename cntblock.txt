@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Pslkycx64usgAH7gFPsd1g
+! Checksum: bUP+piSJYnL766UJSok1oA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU CountersList (ruadlist.googlecode.com)
@@ -19,7 +19,6 @@
 *$image,~image,donottrack
 
 ! = Ложные срабатывания (исключения) ==========================================
-@@||fotomag.com.ua/stat/
 
 ! = Фильтры по регулярным выражениям ==========================================
 ! Антитоп
@@ -55,7 +54,7 @@ p://top.$~stylesheet,~xmlhttprequest,third-party
 ! = Общие фильтры =============================================================
 .ru/stat/$domain=~sports.ru
 .su/stat/
-.ua/stat/
+.ua/stat/$domain=~fotomag.com.ua
 .ru/cnt/?
 .ru/count/$domain=~yandex.ru
 .spylog.$image,script,third-party
