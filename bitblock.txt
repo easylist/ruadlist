@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: +RryY0DihOzclrJkCL0f9A
+! Checksum: 5ry66Rwjt/nz4zMxbUs4tw
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -20,7 +20,7 @@
 ~facebook.com###facebook
 ##[alt$=" on Facebook"]
 ##[title$=" to Facebook"]
-||facebook.^$third-party,script,subdocument,domain=~facebook.com
+||facebook.$third-party,script,subdocument,domain=~facebook.com
 ! Возможно, ,~image в след. правиле придётся заменить на @@||sphotos.ak.fbcdn.net/hphotos-ak-
 ||fbcdn.net^$third-party,domain=~facebook.com,~image
 @@||connect.facebook.net^$third-party
