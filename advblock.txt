@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: O105eP8m6Gyaz5tZOnDG+Q
+! Checksum: tRnvKD0z0GD5ahg2GgVyFA
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com) для подписки EasyList (easylist.adblockplus.org)
@@ -231,9 +231,18 @@ _tizer.
 /Talky3D.gif|
 ! - Блокировка по размеру указанному в адресе ---------------------------------
 /120-600-
+/240x400_
 /468-60_
 /468-80-
 /700x70_
+! - Плавающий баннер что-то-там.php -------------------------------------------
+! Отличается отвратительной манерой плавать поверх всего и избегать любых общих
+! правил. Появляется на многих сайтах и всегда под разными именами.
+! Основной ареал обитания — варезники и порносайты.
+.php|$script,domain=dsvload.net|narodclub.net|nolamers.net
+.php?id=$script,domain=dsvload.net|narodclub.net|nolamers.net
+##SCRIPT[src*=".php"] + DIV[id][align="center"][style*="fixed;"]
+
 ! - Скрытие по размеру --------------------------------------------------------
 ! ##IMG[width="80"][height="15"]
 ##IMG[width="120"][height="600"]
@@ -1766,7 +1775,6 @@ dreamprogs.net##.war3
 drive.ru###banner240x400
 driver-id.ru##[class$="_hbanner_960"]
 dsvload.net##[width="285"] > TABLE[width="100%"]:last-child
-||dsvload.net/dsvload.net.php?id=$script
 ||dump.ru/i/
 dungeonmaster.ru###footer NOINDEX
 dungeonmaster.ru##.mainbanner
@@ -2108,8 +2116,6 @@ muzoff.ru###ibp
 ||na-svyazi.ru/uploads/$object
 ||nashgorod.ru/b/
 narodclub.net##A[href*="postporno.net"]
-||narodclub.net/*.php?id=$script
-||narodclub.net/*.php|$script
 nashkiev.ua##.block-adv
 ||nashkiev.ua/style/b/
 natural-medicine.ru###GNM30
