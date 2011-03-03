@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: CFKnlZiooAmHpupbuc64GQ
+! Checksum: c+gA6NLCQXGM+s6SjfVCYA
 ! Redirect: https://ruadlist.googlecode.com/svn/trunk/bitblock.txt
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
@@ -395,13 +395,15 @@ _userbar_$image
 !- Дальнейшие правила взяты из подписки от fanboy и нацелены исключительно на -
 !- блокирокву мусора из социальных сетей. Не оптимальные правила удалены.     -
 !------------------------------------------------------------------------------
-
-! Fanboy's Annoyance list Addon 
+! - Модифицированные правила
+~zippyshare.com###share_button
+! - Остальные
+! Fanboy's Annoyance list Addon
 ! Updated: 28 Feb 2011
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
 ! Email: fanboyadblock@googlegroups.com - Project homepage: http://fanboy.co.nz/
-!     
+!
 /16x16-delicious.
 /16x16-digg.
 /16x16-mixx.
@@ -606,9 +608,9 @@ _social_icons.
 ||wahoha.com^$third-party
 ||widgets.backtype.com^$third-party
 ||widgets.digg.com^$third-party,script,image,stylesheet
-!     
+!
 !---------- Facebook Widgets ----------
-!     
+!
 ###badge_facbeook
 ###ck_facebook
 ###ck_facebook_1
@@ -733,7 +735,7 @@ _social_icons.
 _btn_facebook.
 ||badge.facebook.com^$third-party
 ||blogsmithmedia.com^*facebook$image
-||facebook.com/connect/connect.*connections$third-party,domain=~farmville.com 
+||facebook.com/connect/connect.*connections$third-party,domain=~farmville.com
 ||facebook.com/favicon.ico$third-party
 ||facebook.com/plugins/activity.php?$third-party
 ||facebook.com/plugins/fan.php?$third-party
@@ -749,9 +751,9 @@ _btn_facebook.
 ~facebook.com###fb_header
 ~facebook.com###fbContainer
 ~facebook.com,~zynga.comm,~popmatters.com,~huffingtonpost.com,~frimastudio.com##.fb_iframe_widget
-!     
+!
 !---------- Twitter Widgets ----------
-!     
+!
 ###badge_twitter
 ###ck_twitter
 ###ck_twitter_1
@@ -864,9 +866,9 @@ _share_twitter.
 ||twittercounter.com^$third-party
 ||widgets.twimg.com^$third-party
 ~twitter.com##.twtr-widget
-!     
+!
 !---------- Google/Buzz Widgets -----------
-!     
+!
 ###fc-friendbar-outer
 ###share-buzz
 ##.buzz-counter-long
@@ -882,9 +884,9 @@ _share_twitter.
 /icon-googlebuzz.
 ||google.com/buzz/$third-party
 ||google.com^*/friendconnect.js
-!     
+!
 !---------- Digg Widgets -----------
-!     
+!
 ###ck_digg
 ###digg-widget-container
 ###share-digg
@@ -914,9 +916,9 @@ _share_twitter.
 ~digg.com###module_digg
 ~digg.com##.digg-button
 ~digg.com##.digg_button
-!     
+!
 !---------- Stumble Widgets -----------
-!     
+!
 ###share-stumble
 ##.share.stumble
 ##.stumble-it
@@ -933,13 +935,13 @@ _share_stumbleupon.
 _stumble_btn.
 ||cdn.stumble-upon.com/images/$third-party,domain=~stumbleupon.com
 ~smashingapps.com##A[href^="http://www.stumbleupon.com/submit?url"]
-!     
+!
 !---------- Google Analytics Annoyance (Tracker) -----------
-!     
+!
 ||google-analytics.com^$third-party,domain=~google.com|~tube8.com|~priestville.org|~coedmagazine.com|~maxcdn.com|~bolha.com|~seekingalpha.com|~threatfire.com|~aftonbladet.se|~frequency.com
-!     
+!
 !---------- Google Instant Preview (testing) -----------
-!     
+!
 google.co.nz###vspb
 google.co.nz##.vspib
 google.co.uk###vspb
@@ -948,9 +950,9 @@ google.com###vspb
 google.com##.vspib
 google.com.au###vspb
 google.com.au##.vspib
-!     
+!
 !---------- Whitelists -----------
-!     
+!
 @@/facebook-button.$domain=imdb.com
 @@||api.tweetmeme.com^*$domain=smashingapps.com
 @@||bing.net/videos/thumbnail.aspx?$domain=bing.com
@@ -963,9 +965,9 @@ google.com.au##.vspib
 @@||tweetmeme.com/i/scripts/button.js$domain=smashingapps.com
 @@||twitter.com/favicon.ico$domain=cnet.com
 @@||widgets.fbshare.me/files/$domain=smashingapps.com
-!     
+!
 !---------- Generic Hiding Rules ----------
-!     
+!
 ###article_actions_socialmedia
 ###article_tools_share
 ###articleNewsletterModule
@@ -1019,7 +1021,6 @@ google.com.au##.vspib
 ###share-options-article
 ###share-tools
 ###share-tools-title
-###share_button
 ###share_buttons
 ###share_div_float
 ###share_icons
@@ -1317,9 +1318,9 @@ google.com.au##.vspib
 ~facebook.com##.connect_widget
 ~infoworld.com##.share_wrapper
 ~neoseeker.com##.social_share
-!     
+!
 !---------- Site Specific Hiding Rules ----------
-!     
+!
 1000awesomethings.com##.sharing_label
 2createawebsite.com##[title="Become a Fan!"]
 6wunderkinder.com###newsletter
@@ -1728,7 +1729,7 @@ kk.org##[href="http://www.kk.org/follow-me.php "]
 kotaku.com##.welcome_form
 labnol.org##.spread
 labnol.org##.subscribe
-latimes.com###social 
+latimes.com###social
 latimes.com##.articlerail
 latimes.com##.classifiedAdOne
 latimes.com##.classifiedAdThree
@@ -2261,3 +2262,4 @@ zap2it.com###twitter
 zdnet.co.uk###follow
 zdnetasia.com###follow
 zeropaid.com##.thumbnail-container
+
