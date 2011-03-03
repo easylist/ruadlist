@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: yx+Ve7eqlA1DVRZUj4dUgA
+! Checksum: G+1blZSIxFt2JPpEdBbImg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -27,7 +27,7 @@
 ! тот факт, что сайты блокируются целиком, но пока не вижу другого пути.
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
 ! $domain=livetraf.com|medianaft.ru|traforet.ru
-/click/body.php?id=*&hash=
+/click/body.php?id=*&hash=$other
 ||advmaker.ru/go.php?
 ||am10.ru/*.php?$other
 ||flipflapflo.
@@ -45,12 +45,17 @@
 ||wbr.dyndns-mail.com/?get_opener_code&
 ||web-leaders.ru/adv.
 ||xn--80abg3be.net/?
+!  Super star - редирект на antivirusms.com и подобную гадость
+||all4girl.net/main/
+||greyred.net/sex/
 ! - Прочее --------------------------------------------------------------------
 ||1001kupon.ru^
+||darkorbit.bigpoint.com/?aid=
 ||fotostrana.ru/start/questpet/?
 ||funtest-ru.com^
 ||goodsbrowser.com^
 ||image2you.ru^
+||kpup.*/?sid=
 ||kupikupon.com.ua^
 ||kupikupon.ru^
 ||letitbit.net/pop_up.
@@ -246,8 +251,8 @@ _tizer.
 ! Отличается отвратительной манерой плавать поверх всего и избегать любых общих
 ! правил. Появляется на многих сайтах и всегда под разными именами.
 ! Основной ареал обитания — варезники и порносайты.
-.php|$script,domain=dsvload.net|narodclub.net|nolamers.net
-.php?id=$script,domain=dsvload.net|narodclub.net|nolamers.net
+.php|$script,domain=dsvload.net|narodclub.net|nolamers.net|pilisos.net
+.php?id=$script,domain=dsvload.net|narodclub.net|nolamers.net|pilisos.net
 ##SCRIPT[src*=".php"] + DIV[id][align="center"][style*="fixed;"]
 
 ! - Скрытие по размеру --------------------------------------------------------
@@ -1045,6 +1050,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||okoshechka.net^$third-party
 ||oldcombats.net/images_banner/
 ||olegbiz.ru^$third-party
+||ololo.tv/?$third-party
 ||one.ru/cgi-bin
 ||onlineresume.ru/banner*?
 ||only4men.ru^$third-party
@@ -2080,6 +2086,7 @@ maulnet.ru##CENTER > STRONG
 ||megafile.mksat.net/reklama/
 ||megafon.ru/f/banner/
 meteoprog.ua###nb_1
+||mnis.ru/reklama/
 mobbit.info###content > CENTER
 ||mobbit.info/r/
 mobiledevice.ru##NOFOLLOW
@@ -2332,6 +2339,7 @@ searchengines.ru##FORM[action="http://go.1ps.ru/pr/"] + TBODY
 ||securitylab.ru/bitrix/$image,object
 @@||securitylab.ru/bitrix/*/$image
 sega.ucoz.com###reklama
+serial-on.clan.su##A[href^="http://www.ruclicks.com/"]
 ||serial.co.ua/java/PopIn.js
 ||service-teplo.ru^$object
 ||service-teplo.ru/images/ban_
@@ -2598,6 +2606,7 @@ t2t.ru##.tbn
 ! Mail.RU
 ! Объединять правила с banner в конце не стоит — на самом деле там ещё классы перечислены часто.
 auto.mail.ru##.addMain2
+||cards.imgsmail.ru/i/*/header.
 deti.mail.ru##IMG[width="248"][height="66"]
 hi-tech.mail.ru##.b-mainphotocol
 hi-tech.mail.ru##.b-preview
