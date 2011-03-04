@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: NsdUgINjRhzZkdQ4daBeNQ
+! Checksum: kLWXtRRakjA6lJLhcy9QzQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -37,6 +37,7 @@
 ||ipchecker.ru^
 ||myredirector.net/?go=
 ||peel-down.net/search.php?
+||readme.ru/p.php?
 ||redirecturl.ru^
 ||redirnet.info/sol/
 ||t1goto.info^
@@ -50,6 +51,7 @@
 ||greyred.net/sex/
 ! - Прочее --------------------------------------------------------------------
 ||1001kupon.ru^
+||9donline.ru/welcome/?mita=
 ||darkorbit.bigpoint.com/?aid=
 ||fotostrana.ru/start/questpet/?
 ||funtest-ru.com^
@@ -79,8 +81,6 @@
 ||devochki.cz^
 ||livejasmin.com^
 ||poisk125.com^
-! $domain=cooldevki.com|falosvideo.com|portvx.com|prodom2.com|tele-dom2.com|telesekas.com|tvdom2.com|tvsxsite.com|videocinemax.com|vkvideox.com|videocinemax.com
-||pokajem.*.com^
 ||posmotrish.net^
 ||sexrustube24.com^
 ||vkru.socialru.ru^
@@ -89,9 +89,12 @@
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
 24pornoo.ru,5pornosex.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,posmotrish.net,sexrustube24.com,vkru.socialru.ru,vstaet.net,zoy.org##:root
-cooldevki.com,falosvideo.com,pokajem.do.am,portvx.com,prodom2.com,tele-dom2.com,telesekas.com,tvdom2.com,tvsxsite.com,videocinemax.com,vkvideox.com##:root
-! Блокируем картинки на pokajem-сайтах.
-||glopic.com$domain=cooldevki.com|falosvideo.com|pokajem.do.am|portvx.com|prodom2.com|tele-dom2.com|telesekas.com|tvdom2.com|tvsxsite.com|videocinemax.com|vkvideox.com
+! Порно-сайты сети pokajem. Известные домены включая нерабочие:
+! cooldevki.com, falosvideo.com, nashevideo.info, pokajem.do.am, portvx.com, prodom2.com,
+! tele-dom2.com, telesekas.com, tvdom2.com, tvsxsite.com, videocinemax.com, vkvideox.com, videocinemax.com
+||pokajem.*.*/
+||glopic.com$domain=nashevideo.info|pokajem.do.am|portvx.com
+nashevideo.info,pokajem.do.am,portvx.com##:root
 
 ! = Исключения против ложных срабатываний =====================================
 !#exclude.bookmark
