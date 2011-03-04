@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: kLWXtRRakjA6lJLhcy9QzQ
+! Checksum: hP7sZYbH7cfcK9oiYUNn9A
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -30,6 +30,7 @@
 /click/body.php?id=*&hash=$other
 ||advmaker.ru/go.php?
 ||am10.ru/*.php?$other
+||filonet.ru/engine/redirect.php?url=
 ||flipflapflo.
 ||gameleads.ru^
 ||go.timedirect.ru^
@@ -78,7 +79,9 @@
 ||24pornoo.ru^
 ||5pornosex.ru^
 ||avska.com^
+||click.readme.ru/informer/
 ||devochki.cz^
+||dosug.cz^
 ||livejasmin.com^
 ||poisk125.com^
 ||posmotrish.net^
@@ -88,7 +91,7 @@
 ||zoy.org/
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
-24pornoo.ru,5pornosex.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,posmotrish.net,sexrustube24.com,vkru.socialru.ru,vstaet.net,zoy.org##:root
+24pornoo.ru,5pornosex.ru,avska.com,devochki.cz,dosug.cz,livejasmin.com,poisk125.com,posmotrish.net,sexrustube24.com,vkru.socialru.ru,vstaet.net,zoy.org##:root
 ! Порно-сайты сети pokajem. Известные домены включая нерабочие:
 ! cooldevki.com, falosvideo.com, nashevideo.info, pokajem.do.am, portvx.com, prodom2.com,
 ! tele-dom2.com, telesekas.com, tvdom2.com, tvsxsite.com, videocinemax.com, vkvideox.com, videocinemax.com
@@ -155,6 +158,7 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 ##.bc_adv_container
 ##.bc-adv
 ##.madv
+##.mc_cars_row
 ##.modul-search
 ##.module-one-search
 ##.sp_search_table
@@ -210,7 +214,8 @@ _baner.
 /cgi-bin/iframe/*$domain=~gzt.ru|~izvestia.ru|~rian.ru|~km.ru
 /images/adv/*
 /images/ban/*
-/images/banners/*$domain=~allods.mail.ru|~allods.ru|~visage.od.ua|~vorbis.com|~xxxxbar.ru
+! Всё же какая гадость эти banner-правила. :)
+/images/banners/*$domain=~allods.mail.ru|~allods.ru|~dutyfree.org.ru|~visage.od.ua|~vorbis.com|~xxxxbar.ru
 /images/bn/*
 /images/rek/*
 /images/rekl/*
@@ -253,10 +258,10 @@ _tizer.
 /700x70_
 ! - Плавающий баннер что-то-там.php -------------------------------------------
 ! Отличается отвратительной манерой плавать поверх всего и избегать любых общих
-! правил. Появляется на многих сайтах и всегда под разными именами.
+! правил. Появляется на многих сайтах и почти всегда под разными именами.
 ! Основной ареал обитания — варезники и порносайты.
-.php|$script,domain=dsvload.net|narodclub.net|nolamers.net|pilisos.net
-.php?id=$script,domain=dsvload.net|narodclub.net|nolamers.net|pilisos.net
+.php|$script,domain=dsvload.net|mskd.biz|manyclips.net|narodclub.net|nolamers.net|pilisos.net
+.php?id=$script,domain=dsvload.net|mskd.biz|manyclips.net|narodclub.net|nolamers.net|pilisos.net
 ##SCRIPT[src*=".php"] + DIV[id][align="center"][style*="fixed;"]
 
 ! - Скрытие по размеру --------------------------------------------------------
@@ -358,7 +363,7 @@ _tizer.
 /xap.ru/*$script
 ?begun=*&begun_referrer=*&begun_location=
 ^clickunder=
-http://adv.$~object_subrequest,domain=~adv.ya.ru
+p://adv.$~object_subrequest,domain=~adv.ya.ru
 
 //77.91.228.66/banners/*
 //78.140.145.93^
@@ -767,6 +772,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||go.jetswap.com^
 ||go.media-x.ru^
 ||goallurl.ru^$third-party
+||godudu.com/swf/
 ||gogo.ru/img/p/
 ||gokliks.ru^$third-party
 ||gold-music.ru/informer
@@ -1304,6 +1310,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||spbfp.atlant.ru^
 ||spbland.ru/bban/
 ||spitter.pauk.ru^
+||sppromo.com/feed.php?$third-party
 ||sputnik1.ru^$third-party
 ||spytrack.tic.ru^
 ||srvdata.ru^$third-party
@@ -1333,6 +1340,7 @@ http://adv.$~object_subrequest,domain=~adv.ya.ru
 ||takru.com^$third-party
 ||tankionline.com^$third-party
 ||tbe.tom.ru/?
+||tdstraff.ru^$third-party
 ||teaser.cc^$third-party
 ||teasergate.com^$third-party
 ||teenseks.da.ru^
@@ -1903,6 +1911,8 @@ gamer.ru##.br[style="width: 240px; height: 400px;"]
 gamer.ru##BR + TABLE[width="630"]
 gazeta.ru##.vypolzen_out
 ||gde.ru/img/*320x1
+||glstar.ru/banner/
+||glstar.ru/swf/
 ||golosua.com/img/banners/
 gorockop.ru##.side_block
 ||grani.ru/files/$object
@@ -1924,6 +1934,7 @@ habrahabr.ru##.company-widget
 habrahabr.ru##.live.help
 haleava.net##CENTER > NOINDEX > A[target="_blank"]
 ||tracker.hdclub.com.ua/dox/$domain=hdclub.org,tracker.hdclub.com.ua
+hdreactor.org###mc_240_400
 hdtracker.ru##BODY > CENTER:first-of-type
 hdtracker.ru##TD[width="100%"] + TD[width="160"][valign="top"]
 forum.hdtv.ru##.borderwrap > .ipbtable:nth-of-type(2)
@@ -2004,7 +2015,10 @@ jeder.ru###colwrap > .module-notitle
 kadets.info###mc_728_90
 kapriz.info###dle-info + NOINDEX
 ||kapriz.info/tiz/
-||katushka.net/banner.
+katushka.net###banner_240_top
+katushka.net###banner600x200
+katushka.net###left_menu > .banner
+||katushka.net/banner.$object
 ||katushka.net/img/banners/
 keep4u.ru###r_bottom
 keep4u.ru###r_top
@@ -2168,8 +2182,6 @@ turizm.ngs.ru###logo-menu
 .ngs.ru/$object,domain=~games.ngs.ru
 nightwarez.ru##TD[width="190"] + TD[width="100%"] > TABLE[width="100%"][cellspacing="0"][cellpadding="0"][border="0"]
 ||nirvana.fm/pic/kartinki/
-nnm-club.ru##CENTER > TABLE[id^="mc_"]
-nnm-club.ru##[id^="x"] > IFRAME
 nnm.ru###branding_link
 nnm.ru##[class*="banner"]
 nnm.ru##[id*="banner"]
@@ -2182,7 +2194,6 @@ beta.novoteka.ru##.outBlockVertAddLinks__
 noscript.net##A[rel="nofollow"][href^="/"]
 nowa.cc###mc_100x_90
 nowa.cc###usac
-nowa.cc##.mc_cars_row
 ||nowa.cc/download/
 ||nowa.cc/images/$subdocument
 npicture.net##A > IMG[src*="npicture.net/image-"]
@@ -2228,8 +2239,7 @@ ph4.ru###topadv
 ||photodoska.ru/*/banners/
 photoshop-master.ru###dropin
 phpbbguru.net##[href^="go.php?to="]
-||pic4you.ru/trshop.js|
-||pic4you.ru/pup.js|
+||pic*you.ru/rightdown/$image,object
 pindosoff.net###dle-content > TABLE:first-child TD.copy
 pindosoff.net##TD.nav A[target="_blank"]
 ||pindosoff.net/images/
@@ -2524,7 +2534,9 @@ vokrugsveta.ru###interchange
 ||volgowarez.ru/engine/classes/js/init.js|
 ||vorum.ru/files/mpix/
 ||votkinsk.net/adv/
+||vozmi.net/img/*150x250
 vremenno.net##.sidebarBlock:first-child
+vseosi.ru##.centercol > CENTER
 ||vsestroi.com/files/$object
 ||vz.ru/import/
 ||vz.ru/inc/b/
@@ -2548,6 +2560,7 @@ world-art.ru/bipack/
 
 ! X
 x-console.com##DIV[style*="710px;"][style*="70px;"]
+x-torrents.org##.reklam
 xmages.net##.we-are-featured
 ||xmages.net/*/banner/
 xyya.net##A[target="_blank"] > IMG[width="300"][height="420"]
