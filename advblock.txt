@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 1xaU5GKnfRVZ/3CEs0Tcvg
+! Checksum: ngUMfRI8N5X+np1nm2eMuw
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -471,6 +471,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||adulttraffic.ru^$third-party
 ||adunit.chango.ca^$third-party
 ||advbroker.ru/code/?
+||advertbox.$third-party
 ||advertpay.$third-party
 ||advertpro.$third-party
 ||advmaker.ru^$third-party
@@ -2308,6 +2309,7 @@ rl-team.net##.border_all.tiban
 rl-team.net###sprof
 ||rlsnet.ru/image_banner
 roadvictory.ru###recl
+||roem.ru^$object
 root.ua##.banner
 ||dgrad-host.ru/banner.$domain=rootden.ru
 rpod.ru###adv240x400
@@ -2325,6 +2327,7 @@ russiandc.com##.L
 ||russiandc.com/banners/
 ||russiandc.com/ebs_show.php?
 rustorka.com##DIV > :nth-child(6) ~ H3
+! Если наберётся достаточно подобного, можно заменить на /banner_240_400. и /reklama240_400.
 ||rustorka.com/*240_400.
 ||rutor.org/m/
 ||rutube.ru/themes/games-beeline/
@@ -2509,6 +2512,7 @@ vedomosti.ru##.footer
 vedomosti.ru##.top_banners
 vedomosti.ru##[class^=ears]
 ||vedomosti.ru/var/bansrc/
+vesti.ru##.banner_vesti_reclama
 videosaver.ru###ad
 virpl.ru###logoslide
 virpl.ru##[id$="-banner"]
