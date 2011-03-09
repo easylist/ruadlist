@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: bIYgi9A1ivrnMbx5GXeGaw
+! Checksum: KRzz21lQyUaX0sym7GRgvg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -2739,6 +2739,8 @@ yandex.ru,yandex.ua##UL[class*="spec-adv"]
 ||bs.yandex.
 ||kiks.yandex.
 ||yabs.yandex.*/show/$third-party
+! След. правило — можно $~third-party
+||yabs.yandex.*/resource/*.gif
 ||yabs.yandex.*/resource/*.swf?rnd=*&link1=
 ||yandex.*/cy?base=0&host=
 
