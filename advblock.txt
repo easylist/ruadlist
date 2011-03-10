@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: YG3v0WwlL1pA14S8SfHc5Q
+! Checksum: 0F84XIxswesXwUemzfL5Pg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -451,6 +451,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||admulti.$third-party
 ||adne.info^$third-party
 ||adnew.for-ua.com^
+||adonweb.ru/payclick/adv-out/
 ||adpath.ru^$third-party
 ||adpro.com.ua^$third-party
 ||adrock.com.ua^
@@ -2347,14 +2348,13 @@ rutracker.org##TR#f-11:last-child
 ! S
 ||saint-petersburg.ru/i/ban2/
 ||samforum.ws^$subdocument
-samlab.ws###banner-top
-samlab.ws###left + #right
-samlab.ws###left > DIV:nth-child(n+3)
-samlab.ws###soft-new A[target="_blank"] > IMG
+samlab.ws###left > .box-shadow:nth-child(n+3)
+samlab.ws###right > .box-shadow:nth-child(n+4)
 samlab.ws##.main > DIV:not(.about):first-child
 samlab.ws##.main > TABLE
 samlab.ws##.soft-day:not(:first-child) > .box
-||samlab.ws/$object
+samlab.ws##CENTER > .box-shadow + TABLE:last-child
+||samlab.ws^$object
 ||samlab.ws/img*.png
 ||sat-digest.com.ua/agc/
 sc2tv.ru###block-block-8
