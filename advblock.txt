@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: b/RgxlXWyy4wWFRT7p1Pqg
+! Checksum: AiMmKO+UzgNhTz8WxRO07w
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -216,7 +216,7 @@ _baner.
 /adv/banners/*
 /adv/massage/*
 /afisha_banner/*
-/banner.gif|
+/banner.gif
 ! i4j.net, i4j.null.ru
 /bannerex.cgi/getbanner.js?id=
 /cgi-bin/banner/*$domain=~adv.vz.ru|~mb.interfax.ru|~mb.izvestia.ru|~mb.rian.ru
@@ -258,8 +258,8 @@ _tizer.
 /upload/rk/*$domain=~bbk.ru|~kykyryza.ru|~qwerty.ru|~radiorecord.ru
 /vsemayki_
 ! - Блокировка по именам файлов -----------------------------------------------
-/aika.swf|
-/Talky3D.gif|
+/aika.swf
+/Talky3D.gif
 ! - Блокировка по размеру указанному в адресе ---------------------------------
 /120-600-
 /240x400_
@@ -1592,7 +1592,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ! AdRiver.RU
 /banners/*/*/0/index.$subdocument
 /images/*/*/0/script.$script,domain=~izvestia.ru
-/images/000*/*/0/*.swf|$domain=izvestia.ru
+/images/000*/*/0/*.swf$domain=izvestia.ru
 /images/*/*/0.gif?&sid=
 ||81.176.235.164^$~object_subrequest,domain=~izvestia.ru
 ||195.214.194.1^$~object_subrequest,domain=~izvestia.ru
@@ -1622,7 +1622,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ! Ucoz.NET
 /abnl/?begun=
 ||clicks.moy.su^
-||ucoz.net/img/ma/cv.gif|
+||ucoz.net/img/ma/cv.gif
 
 ! Yadro.RU
 ||aif.yadro.ru^
@@ -1707,8 +1707,8 @@ forum.athlete.ru###userlinksguest > .raw1
 ||athlete.ru/pic/$object
 autonews.ru##[class^="banner_"]
 autoua.net###footer-holding
-||avata.ru/windows.gif|
-||avata.ru/images/240x400.png|
+||avata.ru/windows.gif
+||avata.ru/images/240x400.png
 ||avatary.ru/smilebar/
 azart.net.ua##A[href="/adv.php"]
 
@@ -2739,7 +2739,7 @@ rbcnews.com##A[href^="http://banner.rbc.ru/"]
 ||cnews.ru/img/banner/
 ||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
 ||pics.rbc.ru^*/banners/
-||pics.rbc.ru^*/img.gif?
+||pics.rbc.ru^*/img.*?
 
 ! Ukr.NET
 ||informers.ukr.net^
@@ -2759,7 +2759,7 @@ yandex.ru,yandex.ua##.b-direct > .header
 yandex.ru,yandex.ua##DIV[id*=direct]
 yandex.ru,yandex.ua##DIV.b-spec-adv.g-gap-vertical.g-gap-horizontal
 yandex.ru,yandex.ua##UL[class*="spec-adv"]
-||yandex.net/12/54/t-12542.png|
+||yandex.net/12/54/t-12542.png
 ||an.yandex.$third-party
 ||awaps.yandex.*&awcode=*&link1=
 ||bs.yandex.
