@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: VRZtxKqT9fS/vOuknxqjww
+! Checksum: kE44M1m8TWFjL+qNf8m/HQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
@@ -233,7 +233,7 @@ rutracker.org###sidebar1
 ||rutube.ru/themes/realnyje-patcany/
 sfw.org.ua##IMG[width="350"][alt*="userbar"]
 ||shop.warforge.ru/rotation/
-||static.newsru.*/img/bg.gif|
+||static.newsru.*/img/bg.gif
 terabit.biz##.cnt2l
 topgir.com.ua##.singing
 torrents.net.ua###smschatframe
@@ -408,6 +408,25 @@ _userbar_$image
 !------------------------------------------------------------------------------
 ! - Модифицированные правила
 ~zippyshare.com###share_button
+/delicious.gif$domain=~delicious.com
+/delicious.png$domain=~delicious.com
+/linkedin.gif$domain=~linkedin.com
+/linkedin2.png$domain=~linkedin.com
+/myspace.gif$domain=~myspace.com
+/myspace.png$domain=~myspace.com
+/facebook.gif$domain=~facebook.com
+/facebook.png$domain=~facebook.com|~lastpass.com
+/facebook1.png$domain=~facebook.com
+/facebook2.png$domain=~facebook.com
+/stumbleupon.gif$domain=~stumbleupon.com
+/stumbleupon.png$domain=~stumbleupon.com
+/technorati.png$domain=~technorati.com
+/twitter.png$domain=~twitter.com|~lastpass.com
+/twitter1.png$domain=~twitter.com
+! Правила аналогичные правилам из подписки фанбоя
+/reddit.gif$domain=~reddit.com
+/digg.gif$domain=~digg.com
+/technorati.gif$domain=~technorati.com
 ! - Остальные
 ! Fanboy's Annoyance list Addon
 ! Updated: 28 Feb 2011
@@ -429,8 +448,6 @@ _userbar_$image
 /button_share.
 /buttons/social_
 /delicious-icon.
-/delicious.gif|$domain=~delicious.com
-/delicious.png|$domain=~delicious.com
 /delicious_64.
 /digg_64.
 /disableRightClick.
@@ -488,12 +505,8 @@ _userbar_$image
 /link-delicious.
 /linkedin-32x32.
 /linkedin-icon.
-/linkedin.gif|$domain=~linkedin.com
-/linkedin2.png|$domain=~linkedin.com
 /linkedin_32.
 /myspace-32x32.
-/myspace.gif|$domain=~myspace.com
-/myspace.png|$domain=~myspace.com
 /myspace_16.
 /myspace_add.
 /myyahoo.gif
@@ -541,7 +554,6 @@ _userbar_$image
 /sociofluid/*$~stylesheet,~script
 /st_add-this_
 /st_buzz_
-/technorati.png|$domain=~technorati.com
 /toolbar-digg.
 /toolbar-facebook.
 /twitter-icon-
@@ -710,10 +722,6 @@ _social_icons.
 /facebook-32x32.
 /facebook-button.
 /facebook-icon.
-/facebook.gif|$domain=~facebook.com
-/facebook.png|$domain=~facebook.com|~lastpass.com
-/facebook1.png|$domain=~facebook.com
-/facebook2.png|$domain=~facebook.com
 /facebook_16.
 /facebook_32.
 /facebook_64.
@@ -845,8 +853,6 @@ _btn_facebook.
 /twitter-32x32.
 /twitter-button.
 /twitter-icon.
-/twitter.png|$domain=~twitter.com|~lastpass.com
-/twitter1.png|$domain=~twitter.com
 /twitter_16.
 /twitter_32.
 /twitter_64.
@@ -939,8 +945,6 @@ _share_twitter.
 /icon-stumbleUpon.
 /stumbleThis.$image
 /stumbleupon-$image
-/stumbleupon.gif|$domain=~stumbleupon.com
-/stumbleupon.png|$domain=~stumbleupon.com
 /stumbleupon1.
 _share_stumbleupon.
 _stumble_btn.
