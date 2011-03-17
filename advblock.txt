@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: AiMmKO+UzgNhTz8WxRO07w
+! Checksum: 2k0SzWWU3FWhNLXci4KnTw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -114,13 +114,8 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||video.*.user.madbanner.ru^$object_subrequest
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
-@@/js/adriver.core.2.js|$domain=izvestia.ru
 @@||adfox.ru/*&prr=$domain=infox.ru|izvestia.ru|rian.ru
-@@||adriver.ru/cgi-bin/erle.cgi?sid=$domain=dni.ru
-@@||adriver.ru/cgi-bin/erle.cgi?sid=$object_subrequest,domain=molodejj.tv|vz.ru
 @@||adriver.ru/cgi-bin/merle.cgi?rnd=$domain=izvestia.ru
-@@||adriver.ru/crossdomain.xml|$domain=molodejj.tv|tvjam.ru
-@@||adriver.ru/plugins/$script,domain=izvestia.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
@@ -129,8 +124,6 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||advertising.yandex.$~third-party
 @@||afisha.ru/proxy/$domain=afisha.ru
 @@||cdn.now.ru/www/delivery/fc.php?$domain=now.ru
-@@||fileshare.in.ua/s/js/adriver_async.js
-@@||izvestia.ru/adriver_teasers.$domain=izvestia.ru
 @@||ph4.ru/css/adsense.css
 @@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
 @@||russia.ru/reklama/32x32.flv?link1=$object_subrequest,domain=vz.ru
@@ -147,7 +140,6 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 ##.advblock
 ###advertblock
 ##.advertblock
-###adriver_middle
 ###AFF_popup
 ###cyberinfrm_18
 ###eropromo_icq
@@ -181,10 +173,10 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 ##DIV[id^="togetInformer_"]
 ##[class^="snBody"]
 ! Скрытие ссылок с рефералами.
-##A[href^="http://beboo.ru/k.php?cid="]
-##A[href^="http://forex4you.org/?affid="]
-##A[href^="http://fotostrana.ru/"][href*="ref_id="]
-##A[href^="http://xn--80abg3be.net/?"]
+! ##A[href^="http://beboo.ru/k.php?cid="]
+! ##A[href^="http://forex4you.org/?affid="]
+! ##A[href^="http://fotostrana.ru/"][href*="ref_id="]
+! ##A[href^="http://xn--80abg3be.net/?"]
 ! Предлагают скачать торрент-клиент и торрент одним исполнимым файлом на трекерах.
 ##.mediaget
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
@@ -195,8 +187,6 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 ##BODY > #flydiv
 ! Реклама в поиске для партнёров Google.
 www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
-! Скрытие ссылок на адривер. Пока с привязкой к конкретным доменам, а дальше — посмотрим.
-compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Плавающий баннер от Mega-Bazar. Содержимое блокируется правилом /bazar_fast/*, а это скрывает остатки.
 ##DIV[id][align="center"][onmouseover][style*="fixed;"]
 ! ВРЕМЕННО правило против рекламы Маркетгида добавлено сюда. Фильтр был удалён из EasyList и пока ещё не восстановили.
@@ -1590,14 +1580,22 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 //87.242.91.*/prepareCode?
 
 ! AdRiver.RU
+###adriver_middle
+compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
+.adriver.$~object_subrequest,domain=~izvestia.ru
+/adriver.$~third-party,domain=~izvestia.ru
+/adriver_$~third-party,domain=~fileshare.in.ua|~izvestia.ru
 /banners/*/*/0/index.$subdocument
 /images/*/*/0/script.$script,domain=~izvestia.ru
 /images/000*/*/0/*.swf$domain=izvestia.ru
-/images/*/*/0.gif?&sid=
-||81.176.235.164^$~object_subrequest,domain=~izvestia.ru
-||195.214.194.1^$~object_subrequest,domain=~izvestia.ru
-||217.16.18.$~object_subrequest,domain=~izvestia.ru
-||217.16.28.$~object_subrequest,domain=~izvestia.ru
+! /images/*/*/0.gif?&sid=
+//81.176.235.164^$~object_subrequest,domain=~izvestia.ru
+//90.189.192.208^$~object_subrequest,domain=~izvestia.ru
+//93.84.114.*^$~object_subrequest,domain=~izvestia.ru
+//195.214.194.1^$~object_subrequest,domain=~izvestia.ru
+//195.93.153.52^$~object_subrequest,domain=~izvestia.ru
+//217.16.18.$~object_subrequest,domain=~izvestia.ru
+//217.16.28.$~object_subrequest,domain=~izvestia.ru
 
 ! AdStock.RU
 ##A[href*=".ru/fn.php?r="]
