@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: slxi9FQjKTseFr0ve1QXUw
+! Checksum: 2Cbi7B8dJ8YSMp52g98HZg
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -184,8 +184,9 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 ##A[href^="http://beboo.ru/k.php?cid="]
 ##A[href^="http://forex4you.org/?affid="]
 ##A[href^="http://fotostrana.ru/"][href*="ref_id="]
+##A[href^="http://xn--80abg3be.net/?"]
 ! Предлагают скачать торрент-клиент и торрент одним исполнимым файлом на трекерах.
-##DIV[class^="mediaget"]
+##.mediaget
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
 ! Именуют себя ВСкачке, ВЗагрузе, маскируются под RapidShare и прочее.
 ##A[href*="/download.php?sub_id="][href*="&q="]
@@ -1816,8 +1817,7 @@ forum.donfisher.ru##TD.windowbg3
 ||dontr.ru/upload/Banner/
 dostatok.ru###SR_PopOver
 dosuglend.ru##[id^="tibu_container_"]
-dreamprogs.net##.content DIV#lfwar:first-child
-dreamprogs.net##.war3
+dreamprogs.net##.ntabs
 drive.ru###banner240x400
 driver-id.ru##[class$="_hbanner_960"]
 dsvload.net##[width="285"] > TABLE[width="100%"]:last-child
@@ -2127,6 +2127,7 @@ materialscience.ru##.sape
 maulnet.ru##.top_banner
 maulnet.ru##CENTER > STRONG
 ||maultalk.com/adv/
+megashara.com##DIV[class^="mediaget"]
 ||megafile.mksat.net/reklama/
 ||megafon.ru/f/banner/
 meteoprog.ua###nb_1
