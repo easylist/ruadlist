@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 2k0SzWWU3FWhNLXci4KnTw
+! Checksum: OKMMoz8E8owG4VAxwqy58A
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -172,7 +172,7 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 ##DIV[id^="Teaser_Block"]
 ##DIV[id^="togetInformer_"]
 ##[class^="snBody"]
-! Скрытие ссылок с рефералами.
+! Скрытие ссылок с рефералами (отключено).
 ! ##A[href^="http://beboo.ru/k.php?cid="]
 ! ##A[href^="http://forex4you.org/?affid="]
 ! ##A[href^="http://fotostrana.ru/"][href*="ref_id="]
@@ -1816,6 +1816,7 @@ forum.donfisher.ru##TD.windowbg3
 dostatok.ru###SR_PopOver
 dosuglend.ru##[id^="tibu_container_"]
 dreamprogs.net##.ntabs
+dreamprogs.net##.mainmenu A:not([href^="http://dream"])
 drive.ru###banner240x400
 driver-id.ru##[class$="_hbanner_960"]
 dsvload.net##[width="285"] > TABLE[width="100%"]:last-child
@@ -2502,6 +2503,7 @@ translate.ru##[id^="TranslationAdvert"]
 travelgps.com.ua###wrapcentre > TABLE TD[style]:first-child + TD[style*="170px;"]:last-child
 trinixy.ru##.last > NOINDEX
 trinixy.ru###nav > NOINDEX
+trinixy.ru##[rel="nofollow"] > FONT[color="#ff0000"]
 ||trinixy.ru/r/
 ||trud.ru/ad/
 ||tumix.ru/*/banners/
