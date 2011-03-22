@@ -1,12 +1,12 @@
 [Adblock Plus 1.1]
-! Checksum: 3GfseYKqgPMh1V1DWb4VFQ
+! Checksum: KcB9gO++27ekXzP34ZqLyw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
 ! для подписки EasyList (easylist.adblockplus.org)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
 ! Проект создал Akuma (DemonSat) на основе подписки Denis'а (denis-ovs.narod.ru)
-! Включает в себя фрагменты подписок MORPEH'а и Fanboy'я
+! Включает в себя фрагменты подписок MORPEH'а, Fanboy'я и UA-IX Banlist
 ! Сейчас над подпиской работают: Lain_13 и Радик245
 !==============================================================================
 !  Если на вашем любимом сайте осталась реклама и она мешает или если наша подписка
@@ -280,7 +280,6 @@ _tizer.
 /begun.js
 ! Домены сети Teasernet. Блокируются правилом /block.js|$third-party.
 ! affarity.com, agitazio.com, andtref.ru, associazio.com, associeta.com, bannuncio.com, supertura.com, teaservizio.com
-! Вероятно ложные срабатывания на скрипт с exchange.meta.ua и thewidgeteers.com, но пока не ясно.
 /block.js|$third-party
 /cout.php?sid=$script
 /out.php?sid=$script
@@ -452,6 +451,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||adnew.for-ua.com^
 ||adonweb.ru^$third-party
 ||adpath.ru^$third-party
+||adpower.com.ua^$third-party
 ||adpro.com.ua^$third-party
 ||adrock.com.ua^
 ||adrock.ua^$third-party
@@ -469,6 +469,8 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||adult-click.ru^$third-party
 ||adulttraffic.ru^$third-party
 ||adunit.chango.ca^$third-party
+||adv.hta.com.ua^$third-party
+||adv.nadavi.net^$third-party
 ||advbroker.ru/code/?
 ||advertbox.$third-party
 ||advertpay.$third-party
@@ -593,6 +595,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||cash4ru.com^$third-party
 ||cashimtrap.com^$third-party
 ||casino-kaza.com^*/banners/
+||cat.clx.ru^$third-party
 ||catalog.deport.ru/btn.php?
 ||cdpartner.ru^$third-party
 ||cenovik.net^$third-party
@@ -618,7 +621,6 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||clix.ru/js/
 ||clocklink.com/clocks/$object
 ||club-reseller.com^$third-party
-||clx.ru/cgi-bin/
 ||cn.procontext.ru^
 ||co.cc/img/affiliates/
 ||com.com/*/Ads/
@@ -681,6 +683,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||dynamic.dol.ru^
 ||e-mint.ru^$third-party
 ||e-links.ru/pr/?
+||e-photo.ua/img/ban/
 ||e-place.ru/v/
 ||e-promoters.ru/indicator.php?
 ||eads.to/$third-party
@@ -815,7 +818,6 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||hotline.ua/img/hl/gm
 ||how2web.com^$third-party
 ||hq-films.ws^$third-party
-||hta.com.ua^$third-party
 ||hyipsrating.com^$third-party
 ||hypernews.ru^$script
 ||i.j2j.ru^
@@ -978,6 +980,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||megacliks.com^$third-party
 ||megafingroup.com^$third-party
 ||megaline.kz/images/$object
+||meganews.kiev.ua^$third-party
 ||megashara.com/recimg/
 ||megastock.ru^$third-party
 ||mercatos.ru^$third-party
@@ -1419,6 +1422,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||uadvt.net^$third-party
 ||ualink.info^*?
 ||uandi.ru^$third-party
+||uaportal.com/bannes/
 ||ugly.ru/adv_frame.
 ||ucoz.ru/bnr/
 ||ukrbanner.net^$third-party
@@ -1510,6 +1514,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||womenclick.ru^$third-party
 ||worldofrest.com.ua^$third-party
 ||ws.md/c.png?
+||wt-rotator.com^$third-party
 ||wtools.biz/sample2.php?
 ||wwwomen.ru^$third-party
 ||x-limitrecordz.ru/*.gif
@@ -1732,6 +1737,8 @@ bigreferat.com##BODY > #element
 bigtorrent.org###dle-info + NOINDEX
 ||bit-torrent.kiev.ua/rekl.php
 ||biuss.ru/img_new/
+||bizarre.kiev.ua/cgi-bin/ban/
+||bizarre.kiev.ua/ban/
 ||bkn.ru/content/banners/
 ||bookz.ru/tpl/$image,object
 borifan.com.ua###container > #center > DIV:not([id^="dle-"])
@@ -1815,6 +1822,7 @@ dostatok.ru###SR_PopOver
 dosuglend.ru##[id^="tibu_container_"]
 dreamprogs.net##.ntabs
 dreamprogs.net##.mainmenu A:not([href^="http://dream"])
+drevo.uaportal.com##BODY > CENTER:first-of-type
 drive.ru###banner240x400
 driver-id.ru##[class$="_hbanner_960"]
 dsvload.net##[width="285"] > TABLE[width="100%"]:last-child
@@ -1884,6 +1892,8 @@ finiz.ru##.topline
 fileclub.biz##.banner_top
 filorama.ru###dle-content > TABLE:first-child
 ||filorama.ru/*/banner.swf
+finance.ua###banner-zone-top
+finance.ua###banner-zone-right
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
 ||fishki.net/*/ad/b/
 fontanka.ru##.ad
