@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Rowt5y0eHB6Gbh9jOcpMlg
+! Checksum: 3NJPYITKXBiqhItCzApqUg
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1123,6 +1123,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||people.1gb.ru^
 ||perezzz.ru^$third-party
 ||photo-droch.net^$third-party
+||piar.com.ua^$third-party
 ||picbay.ru^$third-party
 ||pindotrafforg.54.com1.ru^
 ||pingmedia.ru^$third-party
@@ -1413,9 +1414,9 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ! ||trade7.ru/slide/$script
 ||trade7.ru^$third-party
 ||tradelinks.$third-party
-||tradeone.com.ua^
+||tradeone.com.ua^$third-party
 ||traf.biz^$third-party
-||traf.spb.ru^
+||traf.spb.ru^$third-party
 ||traf-birga.net^$third-party
 ||traff.dirkino.su^
 ||traff-advertazer.com^$third-party
@@ -2074,6 +2075,7 @@ keys-kas.ru##.bpartn
 keys-kas.ru##.badven
 keys-kas.ru##.bcounts
 kharkovforum.com##A[href^="http://banner.ua/"]
+kiev2000.com##.left + .right
 killfilms.ru##A[href^="http://dosugcz.biz/"]
 ||killfilms.ru/*/girls/
 kino-online.org##IMG[height="120"][width="600"]
@@ -2711,6 +2713,7 @@ mail.ru###ad-sputnik
 mail.ru##.ad_240x400
 mail.ru##.b-ad_200
 mail.ru##.bGbottom.tac
+mail.ru##.goods
 mail.ru##.left_banner
 mail.ru##.promo
 mail.ru##.rb_banner
@@ -2735,6 +2738,13 @@ mail.ru##[class$="_ban"]
 ||rs.mail.ru/b$third-party,domain=~gzt.ru|~izvestia.ru|~km.ru
 ||showbiz.mail.ru^$third-party
 ||torg.mail.ru/prtnr/$third-party
+
+! Meta.UA
+meta.ua###meta_banner_top
+meta.ua###meta_market_bottom
+meta.ua##.ads
+||meta.ua/img/banners/
+||metamarket.ua/banner/
 
 ! Overclockers.RU
 forums.overclockers.ru##.banner
