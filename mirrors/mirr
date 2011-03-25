@@ -1,2 +1,4 @@
-#!/bin/bash 
-wget https://adblock.oasis.org.ua/banlist.txt
+#!/bin/bash
+wget --no-check-certificate --output-document=ua-ix-banlist.txt https://adblock.oasis.org.ua/banlist.txt
+svn diff ua-ix-banlist.txt
+
