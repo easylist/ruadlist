@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: bombahOUVuvYNw+ygK//9g
+! Checksum: jdErabhAhUNj0PAoA+kI/A
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -64,6 +64,8 @@
 ! - Прочее --------------------------------------------------------------------
 ! $domain=2011-year.ru|flambo-online.ru|flambo777.ru|floomba.ru|play-boom.com
 //kpup.*/?sid=$other
+! $domain=karosgame.ru|rzonline.ru
+//promo.*/?rsuid=$other
 ! $domain=brandsandbrands.ru|mlgame.ru
 /?utm_source=*&utm_medium=$other
 ||1001kupon.ru^
@@ -82,9 +84,8 @@
 ||parapa.ru/adv/?
 ||partypoker.com/*/videopop/
 ||pop.sn00.net^
-||promo.karosgame.ru^
-||promo.rzonline.ru^
-||promo.va-bank.com^
+||promo.upslots.com/tpromo.*?
+||promo.va-bank.com/*/?
 ||pw.mail.ru/play.html?
 ||rs.mail.ru/b*.html?rb_link=
 ||travian.com.ua/landingpage/
@@ -593,6 +594,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||bnr.volgocity.ru^
 ||barbur.ru^$third-party
 ||bodyclick.net^$third-party
+||bongo-shop.com^$third-party
 ||boobzi.com^$third-party
 ||bookarchive.ru/img/filmplus/ban
 ||bossmoney.ru^$third-party
@@ -702,6 +704,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||e-place.ru/v/
 ||e-promoters.ru/indicator.php?
 ||eads.to/$third-party
+||earnnetmoney.narod.ru^$third-party
 ||edu.ru/d/window/b/
 ||effad.ru^$third-party
 ||ej.ua/static/$third-party
@@ -1402,16 +1405,10 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||tofun.ru/traff/*.php
 ||toget.ru^$third-party
 ||top-shop.ru^$third-party
-||top/nocountryforoldmen/$object
-||top100.ezar.ru^$third-party
-||top20.md/client/scripts/
 ||topadvert.ru^$third-party
 ||topcto.ru^$third-party
-||topdownloads.ru/images/charts/*.gif
-||tope107.com/button.php?
-||topsupp.com/*?
-||toptracker.ru^$third-party
-||toptrackers.ru^$third-party
+||topdownloads.ru/charts/$third-party
+! ||topsupp.com/*?
 ||torgnn.ru^$third-party
 ||torrent-trackers.ru^$third-party
 ! ||trade7.ru/slide/$script
@@ -2267,6 +2264,7 @@ nowa.cc###usac
 ||nowa.cc/images/$subdocument
 npicture.net##A > IMG[src*="npicture.net/image-"]
 ||nr2.ru/pict/banners/
+nwcod.com##TD[width="2"] + .slink[align="center"] > :not(#dle-content)
 ||nya.sh/imgs/a/
 
 ! O
