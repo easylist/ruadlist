@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: yKVs+wkpWB9S7KfnLhEdOQ
+! Checksum: s9cApGfgoJC/dRy8wTnLlQ
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -64,8 +64,8 @@
 ! - Прочее --------------------------------------------------------------------
 ! $domain=2011-year.ru|flambo-online.ru|flambo777.ru|floomba.ru|play-boom.com
 //kpup.*/?sid=$other
-! $domain=brandsandbrands.ru (и я другие такие видел)
-/popup/?utm_$other
+! $domain=brandsandbrands.ru|mlgame.ru
+/?utm_source=*&utm_medium=$other
 ||1001kupon.ru^
 ||9donline.ru/welcome/?mita=
 ||darkorbit.bigpoint.com/?aid=
@@ -133,10 +133,11 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||advert.akado.ru/$domain=akado.ru
-@@||advert-technology.ru^$domain=advert-technology.ru,script,image
+@@||advert-technology.ru^$script,image,domain=advert-technology.ru
 @@||advertising.yandex.$domain=adv.ya.ru
 @@||advertising.yandex.$~third-party
 @@||afisha.ru/proxy/$domain=afisha.ru
+@@||b.kavanga.ru/exp?$script,domain=playground.ru
 @@||cdn.now.ru/www/delivery/fc.php?$domain=now.ru
 @@||ph4.ru/css/adsense.css
 @@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
@@ -2316,7 +2317,7 @@ pindosoff.net##TD.nav A[target="_blank"]
 ||pirat.ca/forum/images$object
 ||planeta.donetsk.ua/banner/
 ! Вероятно следует доработать это правило - это стандартная библиотека функций, а не рекламный скрипт.
-||playground.ru/js/ajax-dynamic-content.js
+! ||playground.ru/js/ajax-dynamic-content.js
 ||pn.com.ua/i/b/
 podrobnosti.ua##[class*="banner"]
 ||lbn.podrobnosti.ua^
