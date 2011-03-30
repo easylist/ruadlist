@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: OD2UPxpgDkoTtpUbquT7Rw
+! Checksum: jb0k6XWLhmV02Vw5cBrI1Q
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -32,7 +32,7 @@
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
 ! $ domain=myredirecter.info|redirnet.info
 .info/sol/$other
-! $domain=flipflapflo.biz|flipflapflo.net|wts-rotator.biz|wts-rotator.com
+! $domain=flipflapflo.biz|flipflapflo.net|wt-rotator.biz|wts-rotator.com
 //uno.*/?t=$other
 ! 92.53.107.186 - судя по тому, что IP-адрес, явно могут быть и другие такие же
 /ad/popup/*
@@ -89,7 +89,8 @@
 ||pw.mail.ru/play.html?
 ||rs.mail.ru/b*.html?rb_link=
 ||travian.com.ua/landingpage/
-! Взаработке. Верить тому, что там написано, не советую; скорого разблокирования не предвидится.
+! Домены ВЗаработке. Мошенники. Теоретически должны блокироваться на уровне
+! редиректов, а эти правила для тех, у кого нет расширения блокировки попапов.
 ||moneymaiker.ru^
 ||vzara.ru^
 ||vzarabatke.ru^
@@ -871,6 +872,7 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||instantcash.ru^$third-party
 ||intel.com/b/
 ||internetportal.ru/*.gif
+||intimshop.ru^$third-party
 ||intimznaki.tomsk.ru^$third-party
 ||invest-pool.ru^$third-party
 ||invictory.org/banners/
