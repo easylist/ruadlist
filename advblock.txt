@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: uLMtqrZmCEs9QIbqF9RyZQ
+! Checksum: Oj3oKS9RUDTYIHXN9XWP8A
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -2720,43 +2720,53 @@ t2t.ru##.tbn
 
 ! Mail.RU
 ! Объединять правила с banner в конце не стоит — на самом деле там ещё классы перечислены часто.
+! Скрытие по-разделам
 auto.mail.ru##.addMain2
-||cards.imgsmail.ru/i/*/header.
-deti.mail.ru##IMG[width="248"][height="66"]
+cards.mail.ru##.pt10.center
+deti.mail.ru##.ad_240x400
+health.mail.ru##.fromPartners3
+health.mail.ru##IMG[width="240"][height="200"]
+hi-tech.mail.ru##.b-ad_200
 hi-tech.mail.ru##.b-mainphotocol
 hi-tech.mail.ru##.b-preview
-hi-tech.mail.ru##.l-head__l
+lady.mail.ru##.slot
 love.mail.ru##.TopBannerSlot
-mail.ru###ad-blk-r
+maps.mail.ru##IMG[width="200"][height="30"]
+rabota.mail.ru###banner1
+video.mail.ru##.lvi-r-ban
+! Общие правила скрытия
 mail.ru###ad-sputnik
-mail.ru##.ad_240x400
-mail.ru##.b-ad_200
-mail.ru##.bGbottom.tac
 mail.ru##.goods
 mail.ru##.left_banner
-mail.ru##.promo
 mail.ru##.rb_banner
 mail.ru##.rb_body
 mail.ru##.rb_text
-mail.ru##.rb_nA.mb0
 mail.ru##.rekl_eburg
-mail.ru##.text_adv
-mail.ru##DIV[id^="IE8Bar"]
-mail.ru##IMG[width="200"][height="30"]
-mail.ru##IMG[width="200"][height="300"]
-mail.ru##IMG[width="240"][height="200"]
+mail.ru##.top_article_ban
 mail.ru##IMG[width="240"][height="400"]
-mail.ru##[class$="_ban"]
-||afisha.mail.ru/img/spons/
-||banners.mail.ru^$third-party
+! Блокировка ресурсов в основном на самом mail.ru
 ||imgsmail.ru/r/my/brands/
-||mail.ru/img/bg_promo.
-||mail.ru/map/volkswagen_
 //r*.mail.ru/b$object
-||r.mail.ru/b$subdocument
+//r.mail.ru/b$subdocument
+//rs.mail.ru/b$subdocument
+! Блокировка ресурсов за пределами mail.ru
+||banners.mail.ru^$third-party
 ||rs.mail.ru/b$third-party,domain=~gzt.ru|~izvestia.ru|~km.ru
 ||showbiz.mail.ru^$third-party
 ||torg.mail.ru/prtnr/$third-party
+! Теоретически больше не нужные правила
+! deti.mail.ru##IMG[width="248"][height="66"]
+! hi-tech.mail.ru##.l-head__l
+! mail.ru###ad-blk-r
+! mail.ru##.bGbottom.tac
+! mail.ru##.promo
+! mail.ru##.rb_nA.mb0
+! mail.ru##.text_adv
+! mail.ru##DIV[id^="IE8Bar"]
+! mail.ru##IMG[width="200"][height="300"]
+! mail.ru##[class$="_ban"]
+! ||mail.ru/map/volkswagen_
+! ||mail.ru/img/bg_promo.
 
 ! Meta.UA
 meta.ua###meta_banner_top

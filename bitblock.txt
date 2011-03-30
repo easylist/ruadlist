@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: tsDbh+8fWpFdjDK5LLB+Pw
+! Checksum: rfkSELXf5U1FLRZooTuZuQ
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
@@ -208,7 +208,6 @@ animelayer.ru###Wrapper > TABLE[width="100%"]:first-child
 ||club.ru/uploads/banners/
 club.ru##.container-banners
 ||cybermusic.ru/*/flash_logo.swf
-e.mail.ru##.rb_mmDivM
 ||echo.msk.ru/att/element-*-misc-*.gif
 experts-exchange.com##.allZones,.vqpsdBlurredAnswers,.copyrightFrame,.footnoteNotice,#pageRight
 ||experts-exchange.com^*/scripts/
@@ -224,8 +223,6 @@ fullgames.ru###main > NOINDEX
 ||google.*/brand?form=
 izvestia.ru##.topline
 ||levonevski.net^$object
-mail.ru##.mf_smsTop
-mail.ru##.spu
 master-css.com###header1 > H2 > SPAN
 music.yandex.ru###js-banner
 ||muz.ru/content/banners/
@@ -245,6 +242,11 @@ topgir.com.ua##.singing
 torrents.net.ua###smschatframe
 wikipedia.org###siteNotice
 youtube.com##.homepage-side-block > :not(#stat-module-wrapper-statmodules_inbox):not(#homepage-whats-new)
+! mail.ru - такое большое и жирное, что даже тут будет в отдельной группе -_-
+e.mail.ru##.rb_mmDivM
+mail.ru##.mf_smsTop
+mail.ru##.spu
+||imgsmail.ru/js/onair2.$script
 
 ! Сайты на движке TorrentPier
 rutracker.org,rutracker.ru,tapochek.net,free-torrents.org,pornolab.net,gardnet.tomsk.ru,myy.su,mortan.info,underverse.su,rus-torrents.ru,torrents.net.ua,ya-torrent.com,nnbt.org,21region.org,wtracker.ru,goldenshara.com,data-torrents.com###page_footer
