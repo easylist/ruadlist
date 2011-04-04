@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: GBqWplXFSzO1QzEZ7CcoAQ
+! Checksum: M1BEh0jqu9ErXzamGbyA9w
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -120,8 +120,9 @@
 ||glopic.com$domain=nashevideo.info|pokajem.do.am|portvx.com
 nashevideo.info,pokajem.do.am,portvx.com##:root
 
-! = Исключения против ложных срабатываний =====================================
-!#exclude.bookmark
+! = Исключения ================================================================
+! - Против ложных срабатываний ------------------------------------------------
+!#exfalse.bookmark
 ! Исправление проблем возникших в результате работы подписки на отдельных сайтах
 ! Кросс-запрос в флэш роликах с dclick.ru
 @@||dclick.ru/crossdomain.xml|
@@ -129,10 +130,7 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||video.*.user.madbanner.ru^$object_subrequest
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
-! @@/images/*/*/0/script.js?$script,domain=afisha.ru|kinopoisk.ru|meta.ua|mobile-review.com|ozon.ru
 @@||adfox.ru^*&prr=$domain=infox.ru|izvestia.ru|rian.ru
-@@||adfox.ru^*&prr=*&dl=$script,domain=rosbalt.ru
-@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|kinopoisk.ru|meta.ua|mobile-review.com|ozon.ru
 @@||adriver.ru/cgi-bin/merle.cgi?rnd=$domain=izvestia.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
@@ -142,7 +140,6 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||advertising.yandex.$domain=adv.ya.ru
 @@||advertising.yandex.$~third-party
 @@||afisha.ru/proxy/$domain=afisha.ru
-@@||b.kavanga.ru/exp?$script,domain=playground.ru
 @@||cdn.now.ru/www/delivery/fc.php?$domain=now.ru
 @@||nic.ru/styles/advertising.css$domain=nic.ru
 @@||ph4.ru/css/adsense.css
@@ -153,6 +150,16 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||uzumaki.kz/js/popunder.js|
 @@||videonow.ru/ad_holder/$domain=molodejj.tv
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
+! - Против «бесконечной загрузки страниц» -------------------------------------
+!#excompat.bookmark
+! К сожалению скрипты сторонних рекламных сетей не всегда встраиваются аккуратно,
+! что приводит к эффекту «недогрузки» страниц. Реально всё содержимое загружено,
+! но индикатор загрузки продолжает показывать процесс загрузки и это состояние
+! часто влияет на работоспособность скриптов на таких страницах.
+@@||adfox.ru^*&prr=*&dl=$script,domain=rosbalt.ru
+@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|kinopoisk.ru|meta.ua|mobile-review.com|ozon.ru
+@@||b.kavanga.ru/exp?$script,domain=playground.ru
+@@||premium.mbn.com.ua^$script,domain=ura-inform.com
 
 ! = Общие CSS-фильтры =========================================================
 !#css.bookmark
