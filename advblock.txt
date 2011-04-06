@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: tpwmrm2SAgjhFDsQ2hMZsA
+! Checksum: X62fL0lPFTX0Z7xevhx8mA
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -34,7 +34,7 @@
 ! $ domain=myredirecter.info|redirnet.info
 .info/sol/$other
 ! $domain=flipflapflo.biz|flipflapflo.net|wt-rotator.biz|wts-rotator.com
-//uno.*/?t=$other
+//uno.*/?t=$script,other
 ! 92.53.107.186 - судя по тому, что IP-адрес, явно могут быть и другие такие же
 /ad/popup/*
 ! $domain=livetraf.com|medianaft.ru|traforet.ru
@@ -1551,7 +1551,6 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||womenclick.ru^$third-party
 ||worldofrest.com.ua^$third-party
 ||ws.md/c.png?
-||wt-rotator.com^$third-party
 ||wtools.biz/sample2.php?
 ||wwwomen.ru^$third-party
 ||x-limitrecordz.ru/*.gif
