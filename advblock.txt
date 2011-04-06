@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 1HKYIpZFJYYWvBeIC7p1mA
+! Checksum: zdbPboITC7ty3JthhxckHw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -306,9 +306,6 @@ _tizer.
 .ru/_scripts/themes/sb.js|
 /pseudocounter.js
 /begun.js
-! Домены сети Teasernet. Блокируются правилом /block.js|$third-party.
-! affarity.com, agitazio.com, andtref.ru, associazio.com, associeta.com, bannuncio.com, supertura.com, teaservizio.com
-/block.js|$third-party
 /cout.php?sid=$script
 /out.php?sid=$script
 /popover.js
@@ -1656,8 +1653,13 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||cashprom.ru^$third-party
 ||microads.ru^$third-party
 
-! TeaserNET
-||ddq.com.ua^$third-party
+! TeaserNET.com
+! affarity.com, agitazio.com, andtref.ru, associazio.com, associeta.com, bannuncio.com, supertura.com, teaservizio.com
+/block.js|$third-party
+! ainstite.com, cettenu.com
+/_search.js|$third-party
+! Если прорывается один из /_search.js, то подгружается скрипт и фрейм с адресом вида imN-tub.com
+/im*-tub.com/static/*$third-party,script,subdocument
 ||teasernet.$third-party
 
 ! Ucoz.NET
@@ -1700,6 +1702,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||7sl.ru/uploads/$object
 
 ! A
+adultmanga.ru##.baner
 ||adultmult.ru^$object
 advesti.ru##IMG[width="170"][height="340"][border="0"]
 advesti.ru##IMG[width="570"][height="80"][border="0"]
