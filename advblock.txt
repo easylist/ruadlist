@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: 9ysccAEsES9utO0XvoxfpA
+! Checksum: /IkGgUsfLI5A5vpt5W+nrQ
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1655,10 +1655,13 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! TeaserNET.com
 ! affarity.com, agitazio.com, andtref.ru, associazio.com, associeta.com, bannuncio.com, supertura.com, teaservizio.com
 /block.js|$third-party
-! ainstite.com, cettenu.com, frestime.com, liendans.com, tierest.com, toutiles.com
+! ainstite.com, barraien.com, cachand.com, cettenu.com, frestime.com, liendans.com, spechete.com, tierest.com, toutiles.com
 /_search.js|$third-party
+/show6.php?b=$third-party
+/step18.php?p=$third-party
 ! Если прорывается один из /_search.js, то подгружается скрипт и фрейм с адресом вида imN-tub.com
 /im*-tub.com/static/*$third-party,script,subdocument
+/im*-tub.com/zoom.$third-party,script
 ||teasernet.$third-party
 
 ! Ucoz.NET
