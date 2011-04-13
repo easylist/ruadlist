@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: DMq5tMFTy5O9RYa0hty18Q
+! Checksum: EOe6s8n88KWD+vOoMkU6wg
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -203,11 +203,6 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 ##DIV[id^="Teaser_Block"]
 ##DIV[id^="togetInformer_"]
 ##[class^="snBody"]
-! Скрытие ссылок с рефералами (отключено).
-! ##A[href^="http://beboo.ru/k.php?cid="]
-! ##A[href^="http://forex4you.org/?affid="]
-! ##A[href^="http://fotostrana.ru/"][href*="ref_id="]
-! ##A[href^="http://xn--80abg3be.net/?"]
 ! Предлагают скачать торрент-клиент и торрент одним исполнимым файлом на некоторых трекерах.
 ##.mediaget
 ###mediaget_box
@@ -215,6 +210,8 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 ! Именуют себя ВСкачке, ВЗагрузе, маскируются под RapidShare и прочее.
 ##A[href*="/download.php?sub_id="][href*="&q="]
 ##A[href*="/download.php?user_id="][href*="&q="]
+! Ещё одни приколисты подсовывающие более 20 мегобайт какой-то дряни вместо обещанного.
+##DIV[onclick][onmouseover="this.style.background='#FAFF58';"][onmouseout="this.style.background = '#FFF8B5';"][style]
 ! Реклама приватбанка (https://reports.adblockplus.org/2745d49c-d010-4ad8-a411-1fc3308c796a)
 ##BODY > #flydiv
 ! Реклама в поиске для партнёров Google.
@@ -227,9 +224,6 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ! = Баннеры ===================================================================
 !#banner.bookmark
 ! - Блокировка по ключевым словам в адресе ------------------------------------
-! Слишком короткая версия слова banner
-! /[/_-]baner[\d._s/-]/$domain=~nalog.ru
-! Разворачиваем по новым правилам оптимизации (ABP 1.3.5+)
 _baner_
 _baner.
 /baner_$domain=~rock-online.ru
@@ -299,7 +293,6 @@ _tizer.
 ##SCRIPT[src*=".php"] + DIV[id][align="center"][style*="fixed;"]
 
 ! - Скрытие по размеру --------------------------------------------------------
-! ##IMG[width="80"][height="15"]
 ##IMG[width="120"][height="600"]
 ##IMG[width="160"][height="600"]
 ##IMG[width="468"][height="60"]
@@ -487,8 +480,8 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||adrock.com.ua^
 ||adrock.ua^$third-party
 ||adru.net^$third-party
-! Блокирует http://media.ads.gfsrv.net/ и http://delivery.ads.gfsrv.net/ После введения новой оптимизации заменить на ||ads.$third-party или ||ads.*.*/$third-party
-||ads.gfsrv.net/
+! media.ads.gfsrv.net, delivery.ads.gfsrv.net
+||ads.gfsrv.net^$third-party
 ||adsell.me/b/
 ||adshop.ru/adshop/?
 ||adskape.ru^$third-party
@@ -758,7 +751,6 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||faza.ru/img.php?
 ||fbs.for-ua.org.ua^
 ||file-online.ru^$third-party
-! ||filecontrol.ru/img/rekl/$third-party
 ||filepost.ru^$third-party
 ||filmcool.ru^$third-party
 ||filmfree.ru/images/
@@ -972,7 +964,6 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||listsites.ru^$third-party
 ||liveclix.net^$third-party
 ||liveinternet.ru/cgi-bin/adt.fcgi?
-! ||livetraf.com^$third-party
 ||loadmovie.ru^$third-party
 ||loadmult.ru/slider/$third-party
 ||loadserial.ru/slider/$third-party
@@ -1012,7 +1003,6 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||mediacontext.$third-party
 ||mediakadr.ru^$third-party
 ||medialand.$third-party
-! ||medianaft.ru^$third-party
 ||mediaportal.ru^$third-party
 ||mediarich.$third-party
 ||mediarotator.ru^$third-party
@@ -1276,7 +1266,6 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||rosinvest.com/informs/
 ||rot.rusoul.ru/rotator/
 ||rotaban.$third-party
-! ||rotabanner.$third-party
 ||rotator.$third-party
 ||rozetka.com.ua^$third-party
 ||rrru.ru/img.php?
@@ -1430,7 +1419,6 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||topadvert.ru^$third-party
 ||topcto.ru^$third-party
 ||topdownloads.ru/charts/$third-party
-! ||topsupp.com/*?
 ||torgnn.ru^$third-party
 ||torrent-trackers.ru^$third-party
 ! ||trade7.ru/slide/$script
@@ -1451,7 +1439,6 @@ p://adv.$~object_subrequest,domain=~adv.ya.ru
 ||traffstock.ru^$third-party
 ||trafoed.com/promo/
 ||trafon.ru^$third-party
-! ||traforet.ru^$third-party
 ||trafunder.$third-party
 ||trusearch.net/affblock/
 ||turist.ru/turist.goods_pics/$third-party
