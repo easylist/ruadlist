@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: f0yFFL03Pmxlnp+V5w6dpA
+! Checksum: jamcQwgtyglBKd01KWA5bA
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -125,12 +125,12 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 ! - Против ложных срабатываний ------------------------------------------------
 !#exfalse.bookmark
 ! Исправление проблем возникших в результате работы подписки на отдельных сайтах
-! Скрипт отвечащюий за меню "ещё" на Яндексе закрытый общим правилом против Тизернета.
-@@||yandex.st/*/pages/search/_search.js
 ! Кросс-запрос в флэш роликах с dclick.ru
 @@||dclick.ru/crossdomain.xml|
 ! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
 @@||video.*.user.madbanner.ru^$object_subrequest
+! Меню над строкой поиска Яндекса, его работу нарушает общее правило против Тизернета
+@@||yandex.st/*/pages/search/_search.js
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@||adfox.ru^*&prr=$domain=infox.ru|izvestia.ru|rian.ru
