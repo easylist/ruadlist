@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: +IoFiUHPwPkcW5qiQ6OOOg
+! Checksum: wTfVH+6HRda1by6aoAj16g
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -137,8 +137,6 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||dclick.ru/crossdomain.xml|
 ! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
 @@||video.*.user.madbanner.ru^$object_subrequest
-! Меню над строкой поиска Яндекса, его работу нарушает общее правило против Тизернета
-@@||yandex.st/*/pages/search/_search.js
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@||adfox.ru^*&prr=$domain=infox.ru|izvestia.ru|rian.ru
@@ -550,7 +548,6 @@ _tizer.
 ||assets.myflashfetish.com/swf/
 ||astalavista.com/backend/img/
 ||atlassolutions.com^$third-party
-||attivertura.com^$third-party
 ||auction.ua/informer.php?
 ||autocentre.ua^$subdocument,third-party
 ||autonet.ru/extra/autoclub_informer.aspx
@@ -655,7 +652,6 @@ _tizer.
 ||com.com/*/Ads/
 ||comp-ex.ru^$third-party
 ||computerpress.ru/images/$object
-||comunicazio.com^$third-party
 ||content.4chan.org/tmp/
 ||content.relax.ru^
 ||context.hotline.ua^
@@ -1631,19 +1627,23 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||microads.ru^$third-party
 
 ! TeaserNET.com
-! affarity.com, agitazio.com, andtref.ru, associazio.com, associeta.com, bannuncio.com, supertura.com, teaservizio.com
-/block.js|$third-party
-! ainstite.com, barraien.com,
-! cachand.com, cettenu.com, frestime.com, 
-! liendans.com, spechete.com, specisez.com,
-! tierest.com, toutiles.com
-/_search.js|$third-party
-/show6.php?b=$third-party
-/step18.php?p=$third-party
+! ||teasernet.$third-party
+! 88.85.93.25 : im-tub.com, teasernet.com
+! 88.85.93.34 : assantie.com, associazio.com, associeta.com, bilation.com, cachand.com, ciement.com,
+! 88.85.93.34 : nn.tmska.com, supertura.com, teaservizio.com
+! 88.85.93.35 : affarity.com, andtref.ru, barraien.com, cettenu.com, disterme.com, lavantat.com, liendans.com, tierest.com
+! 88.85.93.100: aprelite.com, canalds.com, clierets.com, comunicazio.com, daccroi.com, demanier.com, toutiles.com
+! 88.85.93.101: agitazio.com, ainstite.com, ainterme.com, annienne.com, attivertura.com, bannuncio.com
+! 88.85.93.101: daffices.com, echo.teasernet.com, frestime.com, spechete.com, specisez.com, teaservizione.com, utilient.com
+! Кстати, на этих серверах ещё обитает ворох порнухи вроде toptits.ru, pizzka.ru и тому подобного мусора.
+.com/block.js|$third-party
+.com/show6.php?b=$third-party
+.com/step18.php?p=$third-party
+.com/_search.js|$third-party
 ! Если прорывается один из /_search.js, то подгружается скрипт и фрейм с адресом вида imN-tub.com
+! IP-адреса (кроме непосредственно im-tub.com): 78.140.152.30+N-1
 /im*-tub.com/static/*$third-party,script,subdocument
 /im*-tub.com/zoom.$third-party,script
-||teasernet.$third-party
 
 ! Ucoz.NET
 /abnl/?begun=
