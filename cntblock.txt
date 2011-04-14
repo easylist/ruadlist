@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: zd/LqukRrFcEgQu5q9ZOhA
+! Checksum: s9eAJIYi63MFODexYx7qTg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU CountersList (ruadlist.googlecode.com)
@@ -84,9 +84,13 @@ p://top.$~stylesheet,~xmlhttprequest,third-party
 /cycounter?
 ! 4oru.net,foryou.kherson.ua
 /l.php3?who=$image
+/pagerank.$image
+/pagerank/*$image
+/rankem.cgi?action=
 /top100.cnt?
 /top100_counter.php?
 /top100/*$domain=~top100.rambler.ru
+/xcount.php?
 ||r.i.ua/s?
 ||r.msn.com^
 ! TBD
@@ -96,7 +100,6 @@ p://top.$~stylesheet,~xmlhttprequest,third-party
 ||bigsauron.ru^$third-party
 ||burstnet.com^$third-party
 ||c.bigmir.net/?
-||i.bigmir.net/cnt/
 ||c.hit.ua^$third-party
 ||c.microsoft.com^$third-party
 ||circle.am/service/?
@@ -118,16 +121,21 @@ p://top.$~stylesheet,~xmlhttprequest,third-party
 ||fundamentaltop500.com/ft500.php3?sid=
 ||fxmail.ru/rating/$third-party
 ||geovisite.com^$third-party
+||getrank.net^$third-party
 ||gismeteo.*/static/js/xgemius*.js|
-||google.com/uds/stats?
 ||google-analytics.com^$third-party,domain=~imageshack.us
+||google.com/uds/stats?
 ||goto.kz/img.php?$third-party
 ||hc.uralweb.ru^
 ||hiddenjs.ru^
 ||histats.com^$third-party
 ||hit.gemius.pl^
 ||hit.meta.ua^
+||hitbox.com^$third-party
 ||host-tracker.com^$third-party
+||hotlog.ru^$third-party
+||hsdn.org^$third-party
+||i.bigmir.net/cnt/
 ||imtop.ru^$third-party
 ||ipcounter.de^$third-party
 ||krutilka.price.ru/count_
@@ -135,42 +143,52 @@ p://top.$~stylesheet,~xmlhttprequest,third-party
 ||mail.ru/gstat?
 ||maulnet.ru/tools/panel/get_counter/
 ||mcount.ru^$third-party
+||mipagerank.com^$third-party
+||mobtop.ru^$third-party
 ||mycounter*.ua^$third-party
+||mypagerank.$third-party
 ||mytop-in.net^$third-party
 ||mytrix.com^$third-party
 ||nagval.ru^$third-party
 ||nedstatbasic.net^$third-party
 ||openstat.net^$third-party
+||p-rank.org/pr.php?
 ||pr-cy.catzone.ws/img_*.$image
+||pr-cy.ru/partner/
 ||pr-cy.ru/prcy_$third-party
 ||prchecker.info/getpr.php?
+||prcy-info.ru/informer.php?
+||prcy.myws.ru/img/
 ||prcy.ru/$third-party
+||prcy.su/img_*
+||prcyonline.info/img_
 ||proext.com^$third-party
 ||quantserve.$third-party
 ||radar.imgsmail.ru^
 ||rang.com.ua^$third-party
 ||rulink.de^$third-party
 ||rutop.org^$third-party
+||saint-petersburg.ru/i.php?
 ||sedotracker.com^$third-party
 ||seemore.ru^$third-party
-||saint-petersburg.ru/i.php?
-||stat24.com^$third-party
+||serank.ru/prinf/view.php?
+||simpletop.net^$third-party
+||site-rank.com^$third-party
+||sitemeter.com^$third-party
 ||stat24.com.ua^$third-party
+||stat24.com^$third-party
 ||statcounter.com^$third-party
 ||statistics.wibiya.com^$third-party
+||stats.indextools.com^
 ||statuncore.com^$third-party
 ||t.delfi.ua/_
 ||tic-pr.com^$third-party
+||tns-counter.ru^$third-party,~object-subrequest
 ||top10.vl.ru*/hh.hit^
-||top20.md/client/scripts/
 ||top100.ezar.ru^$third-party
 ||top100.sec.ru/fscounter.cfm?
+||top20.md/client/scripts/
 ||toptracker.ru/details.php?id=
-||hitbox.com^$third-party
-||hotlog.ru^$third-party
-||hsdn.org^$third-party
-||stats.indextools.com^
-||tns-counter.ru^$third-party,~object-subrequest
 ||uarating.com^$third-party
 ||video-stats.video.google.
 ||waplog.net^$third-party

@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: Nq3DPjNBEfnJcczGbnOf0Q
+! Checksum: St8mDMlfJbdnx4x7ioCf7w
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -47,6 +47,7 @@
 ||go.timedirect.ru^
 ||go.trafking.ru^
 ||ipchecker.ru/?id=
+||literedirect.com^*?__vc_pid=
 ||mesvip.com/
 ||myredirector.net/?go=
 ||peel-down.net/search.php?
@@ -89,6 +90,7 @@
 ||pop.sn00.net^
 ||promo.upslots.com/tpromo.*?
 ||promo.va-bank.com/*/?
+||readme.ru/p.php?ni=*&ifr=
 ||snailz.ru/promo/?
 ||travian.com.ua/landingpage/
 ||zzima.com/*/registration/$other
@@ -265,9 +267,6 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /linkexchange/*
 /marketplace.asp?
 /mirmaek/*$image
-/pagerank.$image
-/pagerank/*$image
-/rankem.cgi?action=
 /redtram.
 /richarbuz.
 /rnb.php?id=
@@ -574,6 +573,7 @@ _tizer.
 ||bezpredela.net/*.jpg
 ||bigbord.net^$third-party
 ||binimage.de^$third-party
+||bitbest.ru/banner/$third-party
 ||bizua.com^$third-party
 ||bizweb.ru/button.php?
 ||bk.goodline.info^$third-party
@@ -634,7 +634,6 @@ _tizer.
 ||com.com/*/Ads/
 ||comgran.ru/topsite/button.php?
 ||comp-ex.ru^$third-party
-||compteur.cc/pr/pagerank.php?
 ||computerpress.ru/images/$object
 ||comunicazio.com^$third-party
 ||content.4chan.org/tmp/
@@ -642,11 +641,8 @@ _tizer.
 ||context.hotline.ua^
 ||corporative.ru/upload/
 ||cosmo.ru/cosmo_informers/
-||countlog.com/rp/mc
 ||cqc.ru/cgi-bin/
 ||cracklab.ru/images/r_
-||crackzplanet.com/*.gif
-||crackzplanet.com/img/
 ||creativefiles.ru^$third-party
 ||crunchbang.net/advocacy/
 ||crutop.nu^$third-party
@@ -770,9 +766,6 @@ _tizer.
 ||gbe.net.ru^$third-party
 ||geo.readlist.ru/traf.php
 ||getb.7ya.ru^
-||gethit.ru^$third-party
-||getrank.net/pr*.php
-||getvisits.ru^$third-party
 ||gfdsgf333.com/in.cgi?
 ||giper.info^$third-party
 ||girls.ss.ru^
@@ -1010,7 +1003,6 @@ _tizer.
 ||micro-win.com^$third-party
 ||mignews.in.ua/banerok/index.php?cmd=ad&
 ||migratecookiesacrossdomains.asp
-||mipagerank.com^$third-party
 ||mirmaek.ru^$third-party
 ||mirvolos.com$third-party
 ||mixmarket.biz^$third-party
@@ -1045,7 +1037,6 @@ _tizer.
 ||mydrive.com.ua/js/$third-party
 ||myinfocenter.ru^$third-party
 ||myiphone.be^$third-party
-||mypagerank.*/*?
 ||mystat-in.net^$third-party
 ||mytraf.info^$third-party
 ||mytraf.ru^$third-party
@@ -1102,9 +1093,8 @@ _tizer.
 ||owebmoney.ru^$third-party
 ||oxysoft.ru^$third-party
 ||ozenuydu.com/resim
-||ozon.ru/$script,third-party
-||p-rank.info/*?
-||p-rank.org/pr.php?
+||ozon.ru^$script,third-party
+||p-rank.info^$third-party
 ||p-search.org^$third-party
 ||p32.com.ua/girls/
 ||palantir.in/showban*.php?
@@ -1176,13 +1166,7 @@ _tizer.
 ||poza-69.ru^$third-party
 ||pozzitiv.ru^$third-party
 ||ppnd.ru/$third-party
-||pr-cy.ru/partner/
-||pravoslavie.info/xcount.php?
 ||prbn.ru/$third-party
-||prcy-info.ru/informer.php?
-||prcy.myws.ru/img/
-||prcy.su/img_*
-||prcyonline.info/img_
 ||pressball.by/files/$object
 ||price.ru^$third-party
 ||price.ua^$third-party
@@ -1308,7 +1292,6 @@ _tizer.
 ||seotechnology.ru/imgseo.php?
 ||seotechnology.ru/imgygpag.php?
 ||seowebtools.ru/inform/infb.php?
-||serank.ru/prinf/view.php?
 ||serialinfo.ru^$third-party
 ||seriouspartner.ru^$third-party
 ||servidormensseger.hotbox.ru^
@@ -1323,9 +1306,7 @@ _tizer.
 ||sexyfriend.ru^$third-party
 ||sexymafia.ru^$third-party
 ||sezam.nov.ru^
-||simpletop.net/images/424/
-||site-rank.com^$third-party
-||sitemeter.com^$third-party
+||show.multiclick.ru^$third-party
 ||sitetraff.ru^$third-party
 ||skylog.kz/img.php?
 ||slimp.net^$third-party
@@ -2340,7 +2321,9 @@ pindosoff.net###dle-content > TABLE:first-child TD.copy
 pindosoff.net##TD.nav A[target="_blank"]
 ||pindosoff.net/images/
 ||pindosoff.net/sclick.js
-||pirat.ca/forum/images$object
+||pirat.ca/forum/images/posters/
+||pirat.ca/forum/banners/
+||glee.ucoz.ru^$domain=pirat.ca
 ||planeta.donetsk.ua/banner/
 ! Вероятно следует доработать это правило - это стандартная библиотека функций, а не рекламный скрипт.
 ! ||playground.ru/js/ajax-dynamic-content.js
@@ -2673,7 +2656,8 @@ world-art.ru/bipack/
 x-console.com##DIV[style*="710px;"][style*="70px;"]
 xmages.net##.we-are-featured
 ||xmages.net/*/banner/
-xyya.net##A[target="_blank"] > IMG[width="300"][height="420"]
+xyya.net##TD[align="center"][style="width:220px;"] + TD[valign="top"] > :not(#dle-content)
+||xyya.net/banner/
 
 ! Y
 y4eba.net.ru##.log .bod
