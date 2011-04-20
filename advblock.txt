@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: HGTq8thvUAvDav7DBQDDHg
+! Checksum: wXgqpW9rpqqIIxmHrhZH3A
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -329,6 +329,9 @@ _baner_
 /tizers/*
 /tizers2.
 /tizers_
+! icqadvert.org, icqadvert.com, ultrapay.net
+! Начинают с загрузки /check.php? и &mode=teaser& это один из параметров.
+=teaser&
 _tizer.
 ! - Блокировка по именам файлов -----------------------------------------------
 !#name.bookmark
@@ -820,7 +823,6 @@ _tizer.
 ||hypernews.ru^$script
 ||i.j2j.ru^
 ||icq-window.$third-party
-||icqadvert.com^$third-party
 ||icqmoney.com^$third-party
 ||icqtraff.org^$third-party
 ||icqwindow.$third-party
