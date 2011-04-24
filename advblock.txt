@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: IgzHxjXW7TuxNrwf2vDHWA
+! Checksum: d996NnvfgkRnObtDiB+Kdg
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -2772,8 +2772,6 @@ meta.ua##.ads
 ||metamarket.com.ua^$third-party
 
 ! NGS.RU
-! Имя класса тут иногда меняется.
-ngs.ru##.wochu
 .ngs.ru/*.swf?pid=*&link1=
 dom.ngs.ru###logo_banners
 he.ngs.ru,she.ngs.ru,relax.ngs.ru###logos
@@ -2781,6 +2779,8 @@ ngs.ru###ads-fix
 ngs.ru##.adv
 ngs.ru##.banner
 ngs.ru##.banner-center
+ngs.ru##A[class][style^="display: block;"][target="_blank"][href^="/"]
+ngs.ru##A[class][style^="display: block;"] > IMG[src^="http://static.ngs.ru/"]
 ngs.ru##DIV[style*="relative;"][style*="visible"]
 realty.ngs.ru###clients
 relax.ngs.ru###exclusive
