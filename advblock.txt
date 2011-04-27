@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: N3CQAE2ghi/I2pI21WZRgw
+! Checksum: eLlnpeReOzboaMUVtM9VWQ
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -261,6 +261,9 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /by.banclk?
 /cgi-bin/adv.fcgi?
 /cgi-bin/iframe/*$domain=~gzt.ru|~izvestia.ru|~rian.ru|~km.ru
+! icqadvert.org, icqadvert.com, ultrapay.net
+! Начинают с загрузки /check.php, популярные значения mode: teaser и icq.
+/check.php?user_id=*&mode=*&domain=$third-party
 /clickheat.
 /ctxtlink/*
 /event.ng
@@ -335,9 +338,6 @@ _baner_
 /tizers/*
 /tizers2.
 /tizers_
-! icqadvert.org, icqadvert.com, ultrapay.net
-! Начинают с загрузки /check.php? и &mode=teaser& это один из параметров.
-=teaser&
 _tizer.
 ! - Блокировка по именам файлов -----------------------------------------------
 !#name.bookmark
@@ -2321,6 +2321,7 @@ oplati.ru##TD[width="90"]
 oru.ru##TD[width="10"] + TD[width="260"]:last-child
 ||oru.ru^*.swf?click_url=
 ||osvete.ru/files/$object
+||otido.com.ua/banner_/
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 
