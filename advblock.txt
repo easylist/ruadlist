@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: iJch1sHlRcOgWUDf9v5U2A
+! Checksum: N3CQAE2ghi/I2pI21WZRgw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -219,8 +219,8 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ! Именуют себя ВСкачке, ВЗагрузе, маскируются под RapidShare и прочее.
 ##A[href*="/download.php?sub_id="][href*="&q="]
 ##A[href*="/download.php?user_id="][href*="&q="]
-! Ещё одни приколисты подсовывающие более 20 мегобайт какой-то дряни вместо обещанного.
-##DIV[onclick][onmouseover="this.style.background='#FAFF58';"][onmouseout="this.style.background = '#FFF8B5';"][style]
+! Ещё одни приколисты подсовывающие более 20 мегабайт какой-то дряни вместо обещанного.
+##DIV[onmouseover^="this.style.background"][onmouseout^="this.style.background"][style]
 ! Реклама приватбанка (https://reports.adblockplus.org/2745d49c-d010-4ad8-a411-1fc3308c796a)
 ##BODY > #flydiv
 ! Реклама в поиске для партнёров Google.
@@ -574,6 +574,7 @@ _tizer.
 ||bbn.by/t.bbn?
 ||bbn.img.com.ua^$third-party
 ||bcontent.life.ru/media/banners/
+||be-mine.ru^$third-party
 ||belsoft.tut.by/i/$object
 ||bepartner.ru^$third-party
 ||bestcenternews.com/*logo
@@ -1527,6 +1528,7 @@ _tizer.
 ||wtools.biz/sample2.php?
 ||wwwomen.ru^$third-party
 ||x-limitrecordz.ru/*.gif
+||x-traf.ru^$third-party
 ||x4u.ru/cgi-bin/
 ||xanax.cbn.ru^
 ||xap.ru^$script,third-party
@@ -2018,6 +2020,8 @@ hl-inside.ru###orphus
 hl-inside.ru##.right-block.rek
 hmn.ru##A > IMG[width="240"]
 ||ww.hmn.ru^
+hostingfailov.com###tablespons
+||hostingfailov.com^*html|$~third-party,subdocument
 hotcharts.ru##[class$="_banner"]
 ||hotcharts.ru/img/*_700x150
 hotsoft.net.ru##NOINDEX > TABLE[width="100%"]
@@ -2558,6 +2562,7 @@ timeout.ru##.b-branding
 timeout.ru##.banner240x190
 timeout.ru##.banner240x400
 ||tnua.info/banner/
+todownload.ru###dle-content > NOINDEX
 topnews.ru##.adv
 topnews.ru##.bn_ir
 topnews.ru###headbanner
@@ -2638,6 +2643,7 @@ ukrlit.vn.ua###rt_g193
 voffka.com##BR + NOINDEX
 voffka.com###links > DIV > NOINDEX
 voffka.com##.posted > NOINDEX
+||voffka.com/img/banners/
 vokrugsveta.ru###interchange
 ||vokrugsveta.ru/ad/
 ||vokrugsveta.ru/img/bx/rk/
