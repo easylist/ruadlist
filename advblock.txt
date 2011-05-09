@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: Ts3uOcH9tQTBSFsIhzANCQ
+! Checksum: zTgvRQTBa0q6zvsM9e82aA
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -168,7 +168,10 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|thg.ru|ozon.ru
 @@||adriver.ru/images/*/*/0/script.js?$script,domain=afisha.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|thg.ru|ozon.ru
 @@||advertpay.net/code?$script,domain=dic.academic.ru
+@@||advertpay.net/?id=*&rid=$script,domain=utro.ru
+@@||adv.magna.ru/?id=*&rid=$script,domain=utro.ru
 @@||b.kavanga.ru/exp?$script,domain=academic.ru|ekabu.ru|opennet.ru|playground.ru
+@@||medialand.ru^$script,domain=utro.ru
 @@||premium.mbn.com.ua^$script,domain=ura-inform.com
 
 ! = Общие CSS-фильтры =========================================================
@@ -447,7 +450,8 @@ _tizer.
 ||ad-words.ru/contextad/
 ||adbee.com.ua^$third-party
 ||adbid.pl^$third-party
-||adbn.ru/*?
+||adbn.ru^$third-party
+||adboon.ru^$third-party
 ||adcast.ru^$third-party,domain=~mts.ru
 ||add.in.ua^$third-party
 ||addnow.ru^$third-party
@@ -2637,9 +2641,11 @@ urokinadivane.ru##[id^="bn_"]
 ||urokinadivane.ru/templates/GiGantika/images/swf/
 usde.biz,usde.ru##A[href^="/engine/redirect2.php?url="]
 usde.biz,usde.ru##A[href^="http://usde.ru/adult/go.php?"]
+utro.ru##.banner_bottom_art
 utro.ru##.banner-right
 utro.ru##.conteiner-partner
-utro.ru##[id^="flashrst"]
+utro.ru##[id^="mlph"]
+||utro.ru/*/banners/
 
 ! V
 vedomosti.ru##.left_banner
