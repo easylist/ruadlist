@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: VdCWy4yZEZnvxUj1v9qqoA
+! Checksum: 1Gio7sI+2G/HSZ+4ztrHoQ
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -134,7 +134,7 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ! Кросс-запрос в флэш роликах с dclick.ru
 @@||dclick.ru/crossdomain.xml|
 ! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
-@@||video.*.user.madbanner.ru^$object_subrequest
+@@||video.*.user.madbanner.ru^$object-subrequest
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@||adfox.ru^*&prr=$domain=infox.ru|izvestia.ru|rian.ru
@@ -152,8 +152,8 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||nic.ru/styles/advertising.css$domain=nic.ru
 @@||ph4.ru/css/adsense.css
 @@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
-@@||russia.ru/reklama/32x32.flv?link1=$object_subrequest,domain=vz.ru
-@@||sticker.yadro.ru/ad/3.xml?$object_subrequest,domain=rutv.ru
+@@||russia.ru/reklama/32x32.flv?link1=$object-subrequest,domain=vz.ru
+@@||sticker.yadro.ru/ad/3.xml?$object-subrequest,domain=rutv.ru
 @@||sticker.yadro.ru/i/ad_in_video.swf$domain=rutv.ru
 @@||uzumaki.kz/js/popunder.js|
 @@||videonow.ru/ad_holder/$domain=molodejj.tv
@@ -245,7 +245,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 .swf?link=$domain=~ex-road.ru|~testoni.com
 .swf?path=
 .swf?target=_self&link
-//adv.$~object_subrequest,domain=~adv.ya.ru
+//adv.$~object-subrequest,domain=~adv.ya.ru
 //b.*/iframe/*
 //mads.
 /adland.php
@@ -669,7 +669,7 @@ _tizer.
 ||diagar.com/files/$image
 ||dietmake.ru^$third-party
 ||digisat.ru/*.gif
-||digitalaccess.ru^$third-party,~object_subrequest
+||digitalaccess.ru^$third-party,~object-subrequest
 ||dikm.ru/$third-party
 ||dimpy.narod.ru^
 ||dircash-promo.com^$third-party
@@ -973,7 +973,7 @@ _tizer.
 ||lydiz.com^$third-party
 ||m2k.ru/cgi-bin/
 ||mabila.ua^$third-party
-||madbanner.$~object_subrequest
+||madbanner.$~object-subrequest
 ||magnet.kiev.ua^$third-party
 ||mail.banklife.ru^$third-party
 ||mambo.kiev.ua^$third-party
@@ -1024,7 +1024,7 @@ _tizer.
 ||mnogo.ru^$third-party
 ||mobbit.info^$third-party
 ||mobn.net^$third-party
-||mochiads.com^~object_subrequest
+||mochiads.com^~object-subrequest
 ||modastro.ee^$third-party
 ||moifoto.ru/rek_
 ||moijs.com^$third-party
@@ -1457,7 +1457,7 @@ _tizer.
 ||video-link.ru^$third-party
 ||video-people.com^$third-party
 ! domain=kino-live.org
-||video.begun.ru^$third-party,object_subrequest
+||video.begun.ru^$third-party,object-subrequest
 ||videoclick.$third-party
 ||videoclik.$third-party
 ||videofan.ru^$third-party
@@ -1601,20 +1601,20 @@ _tizer.
 ###ad_ph_1
 ###adriver_middle
 compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
-.adriver.$~object_subrequest,domain=~izvestia.ru
+.adriver.$~object-subrequest,domain=~izvestia.ru
 /adriver.$~third-party,domain=~izvestia.ru
 /adriver_$~third-party,domain=~fileshare.in.ua|~izvestia.ru|~meta.ua
 /banners/*/*/0/index.$subdocument
 /images/000*/0/*.swf$domain=izvestia.ru
-! /images/000*/0/index.xml$object_subrequest,domain=~tsn.ua
-||playingfolk.com/show.php$third-party,object_subrequest
-! //81.176.235.164^$~object_subrequest,~script,domain=~izvestia.ru
-! //90.189.192.208^$~object_subrequest,~script,domain=~izvestia.ru
-! //93.84.114.*^$~object_subrequest,~script,domain=~izvestia.ru
-! //195.214.194.1^$~object_subrequest,~script,domain=~izvestia.ru
-! //195.93.153.52^$~object_subrequest,~script,domain=~izvestia.ru
-! //217.16.18.$~object_subrequest,~script,domain=~izvestia.ru
-! //217.16.28.$~object_subrequest,~script,domain=~izvestia.ru
+! /images/000*/0/index.xml$object-subrequest,domain=~tsn.ua
+||playingfolk.com/show.php$third-party,object-subrequest
+! //81.176.235.164^$~object-subrequest,~script,domain=~izvestia.ru
+! //90.189.192.208^$~object-subrequest,~script,domain=~izvestia.ru
+! //93.84.114.*^$~object-subrequest,~script,domain=~izvestia.ru
+! //195.214.194.1^$~object-subrequest,~script,domain=~izvestia.ru
+! //195.93.153.52^$~object-subrequest,~script,domain=~izvestia.ru
+! //217.16.18.$~object-subrequest,~script,domain=~izvestia.ru
+! //217.16.28.$~object-subrequest,~script,domain=~izvestia.ru
 
 ! AdStock.RU
 ##A[href*=".ru/fn.php?r="]
@@ -2902,7 +2902,7 @@ vkontakte.ru###left_ads
 ||vkbutton.com/adv/
 ||vladbazar.com/bbb/
 ! Реклама игр в играх
-||referral.mesury.ru^$domain=vkontakte.ru,object_subrequest
+||referral.mesury.ru^$domain=vkontakte.ru,object-subrequest
 
 ! Ukr.NET
 ||informers.ukr.net^
