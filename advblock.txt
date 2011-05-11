@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: 1Gio7sI+2G/HSZ+4ztrHoQ
+! Checksum: MAyXWMsQPMWAIyRojAhCxQ
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -284,7 +284,6 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /vendshow/*
 /vsemayki_
 /warlog.
-?begun=*&begun_referrer=*&begun_location=
 ^clickunder=
 ! - Баннеры -------------------------------------------------------------------
 !#banner.bookmark
@@ -348,7 +347,6 @@ _tizer.
 !#script.bookmark
 .ru/_scripts/themes/sb.js|
 /pseudocounter.js
-/begun.js
 /cout.php?sid=$script
 /out.php?sid=$script
 /popover.js
@@ -542,7 +540,6 @@ _tizer.
 ||atlassolutions.com^$third-party
 ||auction.ua/informer.php?
 ||autocentre.ua^$subdocument,third-party
-||autocontext.begun.ru^$third-party
 ||autonet.ru/extra/autoclub_informer.aspx
 ||autoreg.ru/images/
 ||autoua.com^$third-party
@@ -1456,8 +1453,6 @@ _tizer.
 ||vicepiter.ru^$third-party
 ||video-link.ru^$third-party
 ||video-people.com^$third-party
-! domain=kino-live.org
-||video.begun.ru^$third-party,object-subrequest
 ||videoclick.$third-party
 ||videoclik.$third-party
 ||videofan.ru^$third-party
@@ -1637,6 +1632,16 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||advmaker.ru/go.php?
 ||web-leaders.ru/adv.
 
+! Begun.RU
+/abnl/?begun=
+?begun=*&begun_referrer=*&begun_location=
+/begun.js
+||autocontext.begun.ru^$third-party
+! domain=kino-live.org
+||video.begun.ru^$third-party,object_subrequest
+! domain=intv.ru|lostcinema.ru
+||flash.begun.ru/banner.jsp?*$object-subrequest
+
 ! BodyClick.NET
 /banner.php?sid=*&bn=*&ad=
 /bodyclick.
@@ -1678,7 +1683,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||teasernet.ru^$third-party
 
 ! Ucoz.NET
-/abnl/?begun=
 ||clicks.moy.su^
 ||ucoz.net/img/ma/cv.gif
 
