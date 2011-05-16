@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: yRIhPBqJqD/hz5FmRbGIEA
+! Checksum: rdWJHlukHWln2PlljpNz+g
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -489,7 +489,6 @@ _tizer.
 ||adulttraffic.ru^$third-party
 ||adunit.chango.ca^$third-party
 ||adv.hta.com.ua^$third-party
-||adv.nadavi.net^$third-party
 ||advbroker.ru/code/?
 ||advertbox.$third-party
 ||advertpay.$third-party
@@ -1054,6 +1053,7 @@ _tizer.
 ||mystat-in.net^$third-party
 ||mytraf.info^$third-party
 ||mytraf.ru^$third-party
+||nadavi.net^$third-party
 ||narod.kz/img.php?
 ||nasf.ru/ad/
 ||needtest.ru^$third-party
@@ -1851,6 +1851,7 @@ coolsoch.ru##NOINDEX
 ||copypast.ru/re*/$image
 cripo.com.ua###banner
 cripo.com.ua###topban
+cwer.ru##.nadavi
 cyberinfo.ru###bl_05
 
 ! D
@@ -1903,7 +1904,7 @@ dungeonmaster.ru###footer NOINDEX
 dungeonmaster.ru##.mainbanner
 ||dverizamki.org/pictures/
 dwg.ru##BODY > TABLE > TBODY > TR:nth-child(3) > TD:nth-child(5)
-dwg.ru##TD[background="../img/back22.gif"] > TABLE
+dwg.ru##TD[background$="/img/back22.gif"] > TABLE
 ||dwg.ru/img/$object
 ||dwg.ru/img*0_
 dynamo.kiev.ua##.hban
@@ -2492,6 +2493,7 @@ samlab.ws##CENTER > .box-shadow + TABLE:last-child
 ||samlab.ws^$object
 ||samlab.ws/img*.png
 ||sat-digest.com.ua/agc/
+savefrom.net###instantcash
 sc2tv.ru###block-block-8
 ||sc2tv.ru/sites/default/files/$object
 screendepo.com##DIV[style*="100%"][style*="70px;"][style$="center"]
@@ -2506,7 +2508,8 @@ serial-on.clan.su##A[href^="http://www.ruclicks.com/"]
 ||service-teplo.ru^$object
 ||service-teplo.ru/images/ban_
 ||seti.ee/*reklaam/
-||severodvinska.net/fws/
+! чистка severodvinska.net. $third-party добавлено на всякий случай.
+||severodvinsk.me^$third-party
 sfw.org.ua##.ws_main
 sfw.org.ua##CENTER > NOINDEX
 sfw.org.ua##[class$="-for-hueta"]
