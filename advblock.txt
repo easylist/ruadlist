@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: tl9tAFsrS/Eiigddo7g2FA
+! Checksum: ChMzAHwIwv2/wy49urWBXw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -167,10 +167,9 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ! но индикатор загрузки продолжает показывать процесс загрузки и это состояние
 ! часто влияет на работоспособность скриптов на таких страницах.
 @@||adfox.ru^*&prr=*&dl=$script,domain=championat.ru|gzt.ru|rosbalt.ru
-! Сайты, на которых есть проблема со скриптами адривера:
-! domain=afisha.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|thg.ru|ozon.ru
-@@||adriver.ru/cgi-bin/erle.cgi?$script
-@@||adriver.ru/images/*/*/0/script.js?$script
+! С адривером не всё просто. Иногда эти скрипты нужны для закрытия записи на страницу, но иногда ситуация обратна и они только вредят (avito.ru, например).
+@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|thg.ru|ozon.ru
+@@||adriver.ru/images/*/*/0/script.js?$script,domain=afisha.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|thg.ru|ozon.ru
 @@||advertpay.net/code?$script,domain=dic.academic.ru
 @@||advertpay.net/?id=*&rid=$script,domain=utro.ru
 @@||adv.magna.ru/?id=*&rid=$script,domain=utro.ru
@@ -1598,6 +1597,7 @@ _tizer.
 
 ! AdRiver.RU
 ###ad_ph_1
+###ad_ph_2
 ###adriver_middle
 compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 .adriver.$~object-subrequest,domain=~izvestia.ru
@@ -1779,6 +1779,7 @@ autoua.net###footer-holding
 ||avata.ru/windows.gif
 ||avata.ru/images/240x400.png
 ||avatary.ru/smilebar/
+avito.ru##.ad_1000x90
 azart.net.ua##A[href="/adv.php"]
 
 ! B
