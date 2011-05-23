@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: lY+kCZ/ovjTURJM8PwwnCg
+! Checksum: HlMtXwHxJFH0e+cSrxUUqA
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1004,7 +1004,6 @@ _tizer.
 ||megafingroup.com^$third-party
 ||megaline.kz/images/$object
 ||meganews.kiev.ua^$third-party
-||megashara.com/recimg/
 ||megastock.ru^$third-party
 ||mercatos.ru^$third-party
 ||meta.ua/*/partn.$script,stylesheet
@@ -2233,6 +2232,8 @@ medkrug.ru##.google_adv
 ||medkrug.ru/web/flash/reg.
 ||medkrug.ru/lite.php?*&banner_id=
 megashara.com##DIV[class^="mediaget"]
+! ||megashara.com/recimg/
+||megashara.com/tmp/*
 ||megafile.mksat.net/reklama/
 ||megafon.ru/f/banner/
 meteoprog.ua###nb_1
@@ -2563,8 +2564,14 @@ stolica.ru###stmenu
 stolica.ru###vst_mvideo
 stolica.ru##.wm2_900
 stopgame.ru###brandtop
+stopgame.ru##.ban250
 stopgame.ru##.ban468w
-||stopgame.ru/images/partners/
+stopgame.ru##.head_adver
+stopgame.ru##.head_blank
+stopgame.ru##.head_zarabotay
+stopgame.ru##A[href^="http://www.kalita-finance."]
+stopgame.ru##A[href^="http://www.kalita-finance."] + BR + SPAN:last-child
+||stopgame.ru/*partners/
 ||studyguide.ru^$object
 styanulo.ru##.banner
 sudga.ru##IMG[width="180"][height="80"]
