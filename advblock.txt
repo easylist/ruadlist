@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: eXuR8pwmIQYYQbh28s+Qdg
+! Checksum: VXx2k38Z99g/7FS9F7FlEA
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1692,6 +1692,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Домены в зоне .RU:
 ||autotizer.ru^$third-party
 ||teasernet.ru^$third-party
+! Что-то новое на старых IP-адресах (88.85.93.101): http://ghaires.com/javascript/7e07
+||ghaires.com^$third-party
 
 ! Ucoz.NET
 ||clicks.moy.su^
@@ -1726,6 +1728,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||5ka.ru/js/banners.js
 ||5ka.su/js/girls.php
 ||5ka.ru/jscr/$subdocument
+62.ua##A[href^="/redirect/url?url="] > IMG[src^="/upload/"]
+||62.ua/upload/jackets/
 689.ru##A[href="http://musbest.com/"]
 ||7ja.ru/imgb/
 7sl.ru##NOINDEX A[target="_blank"] > IMG
@@ -2752,6 +2756,8 @@ yarportal.ru##[style$="height: 60px;"]
 yarportal.ru##TD.desc
 ||yarportal.ru/$image,background
 @@||yarportal.ru/*/$image
+||yatv.ru/storage/userdata/*/page_background_
+||yatv.ru/storage/userdata/*/banner_
 
 ! Z
 zadolba.li##.sidebar > .ok
