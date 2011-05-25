@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: VXx2k38Z99g/7FS9F7FlEA
+! Checksum: 0BuZg9WIOL6Yhje371SZ9g
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -105,11 +105,12 @@
 ! редиректов, а эти правила для тех, у кого нет расширения блокировки попапов.
 ||moneymaiker.ru^
 ||vmesterabotaem.ru^
+||vsemdeneg.ru^
 ||vsemtube.ru^
 ||vzara.ru^
 ||vzarabatke.ru^
 ||vzarabotke.ru^
-||youtube.$domain=vmesterabotaem.ru,vsemtube.ru
+||youtube.$domain=vmesterabotaem.ru,vsemdeneg.ru,vsemtube.ru
 ||youtube.*uCGGMufZc1c
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
 ||24pornoo.ru^
@@ -236,7 +237,7 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ! Плавающий баннер от Mega-Bazar. Содержимое блокируется правилом /bazar_fast/*, а это скрывает остатки.
 ##DIV[id][align="center"][onmouseover][style*="fixed;"]
-! ВРЕМЕННО правило против рекламы Маркетгида добавлено сюда. Фильтр был удалён из EasyList и пока ещё не восстановили.
+! Правило против рекламы Маркетгида
 ~marketgid.com,~marketgid.ru,~marketgid.ua,~mgid.com##DIV[id^="MarketGid"]
 ! - Скрытие по размеру --------------------------------------------------------
 ##IMG[width="120"][height="600"]
@@ -249,7 +250,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 .bannerbank_
 ! vipaccess.su, goldentraffic.ru и, возможно, другие.
 .ru/code_id_*.js|$script
-.swf?*/ad_click/
+/ad_click/*$object
 .swf?alink=
 .swf?link1=$domain=~citydom.ru
 .swf?link=$domain=~ex-road.ru|~testoni.com
