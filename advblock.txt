@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: YoWHFkPrtcILfqVds6s8YA
+! Checksum: rFAqpDZ5INznbBBiN+Zkiw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -75,6 +75,8 @@
 //promo.*/?rsuid=$other
 ! $domain=brandsandbrands.ru|mlgame.ru
 /?utm_source=*&utm_medium=$other
+! Игры на mail.ru (их там дофига и все норовят открться в попапе).
+.mail.ru/*?$other
 ||1001kupon.ru^
 ||2011-ru.com
 ||9donline.ru/welcome/?mita=
@@ -97,10 +99,6 @@
 ||snailz.ru/promo/?
 ||travian.com.ua/landingpage/
 ||zzima.com/*/registration/$other
-! Игры на mail.ru.
-.ru/adv/?$other
-||pw.mail.ru/play.html?
-||rs.mail.ru/b*.html?rb_link=
 ! Домены ВЗаработке. Мошенники. Теоретически должны блокироваться на уровне
 ! редиректов, а эти правила для тех, у кого нет расширения блокировки попапов.
 ||moneymaiker.ru^
@@ -2827,6 +2825,8 @@ mail.ru##.rekl_eburg
 mail.ru##.text_adv
 mail.ru##.top_article_ban
 mail.ru##IMG[width="240"][height="400"]
+! Ссылка на левые сайты в меню навигации.
+mail.ru##.shMenu2 > SPAN > A[target="_blank"][href^="http://r.mail.ru/"]
 ! Блокировка ресурсов в основном на самом mail.ru
 ||imgsmail.ru/js/onair2.$script
 ||imgsmail.ru/r/my/brands/
