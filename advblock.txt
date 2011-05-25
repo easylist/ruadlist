@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: /A31oFaezRDOhwos9MucPw
+! Checksum: zhirxBT+v+Qa2ELAlFT0Tw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -90,6 +90,7 @@
 ||letitbit.net/pop_up.
 ||link2you.ru^
 ||marketgid.com^$other
+||mobile.blinkogold.ru^$other
 ||partypoker.com/*/videopop/
 ||pop.sn00.net^
 ||promo.upslots.com/tpromo.*?
@@ -244,6 +245,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 .bannerbank_
 ! vipaccess.su, goldentraffic.ru и, возможно, другие.
 .ru/code_id_*.js|$script
+.swf?*/ad_click/
 .swf?alink=
 .swf?link1=$domain=~citydom.ru
 .swf?link=$domain=~ex-road.ru|~testoni.com
@@ -1642,7 +1644,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /begun.js
 ||autocontext.begun.ru^$third-party
 ! domain=kino-live.org
-||video.begun.ru^$third-party,object_subrequest
+||video.begun.ru^$third-party,object_subrequest,domain=~yatv.ru
 ! domain=intv.ru|lostcinema.ru
 ||flash.begun.ru/banner.jsp?*$object-subrequest
 
