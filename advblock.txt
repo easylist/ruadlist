@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: SXSPGyp0K9yWM1bgnNWjQA
+! Checksum: 1GCqHM3B59voSX2sfiFkVw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -215,6 +215,8 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ##.modul-search
 ##.module-one-search
 ##.reklam
+! i.ua, macpages.me, vesti.ru
+##.reklama
 ##.sp_search_table
 ##.sp_search2_table
 ##.sp_search3_table
@@ -239,7 +241,7 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ! Плавающий баннер от Mega-Bazar. Содержимое блокируется правилом /bazar_fast/*, а это скрывает остатки.
 ##DIV[id][align="center"][onmouseover][style*="fixed;"]
-! Правило против рекламы Маркетгида
+! Реклама Маркетгида
 ~marketgid.com,~marketgid.ru,~marketgid.ua,~mgid.com##DIV[id^="MarketGid"]
 ! - Скрытие по размеру --------------------------------------------------------
 ##IMG[width="120"][height="600"]
@@ -303,7 +305,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 .ru/banners/$domain=~citydom.ru|~toptracker.ru|~webnames.ru
 .ru/uploads/banners/
 .ua/banners/
-/adv/banners/*
+/adv/banners/*$domain=~artinvestment.ru
 /adv/massage/*
 /afisha_banner/*
 /baner.
@@ -2091,7 +2093,6 @@ hwp.ru##.l-article-wrapper > CENTER > A[target="_blank"] > IMG[border="0"]
 ! I
 i.ua##.TopBanner730
 i.ua##.baner
-i.ua##.reklama
 ||idownloads.ru/wp-content/uploads/
 ||ifolder.ru^$object
 ||ifolder.ru^*-brend.css
@@ -2234,7 +2235,6 @@ macdigger.ru##DIV[style*="banner"]
 ||macdigger.ru/img/banner/
 ||macosworld.ru^$object
 macovod.net###top-band-2
-macpages.me##.reklama
 macradar.ru##.sidebar_first
 ||macradar.ru^*/images/macradar_sidebar.
 ||medprom.ru/pictures/*/bpic.
