@@ -8,6 +8,6 @@ svn diff advblock.txt
 svn diff antinuha.txt
 svn diff bitblock.txt
 svn diff cntblock.txt
-svn --editor-cmd gedit commit
+svn --editor-cmd "xterm -e nano" commit
 sleep 1
 rm -f svn-commit.*
