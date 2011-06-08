@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: xxxrlMqK3dsZvt8FipZZkA
+! Checksum: jwkcSQgDehqlB5KrK5mYag
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -144,6 +144,8 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@||adfox.ru^*&prr=$domain=infox.ru|izvestia.ru|rian.ru
+@@||adriver.ru/*.xml|$object-subrequest,domain=tsn.ua
+@@||adriver.ru/cgi-bin/erle.cgi?$object-subrequest,domain=tsn.ua
 @@||adriver.ru/cgi-bin/merle.cgi?rnd=$domain=izvestia.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
