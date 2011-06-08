@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: BN2QSvt4b5+BYoux+a+YYQ
+! Checksum: aRIi9B+uTiCpB3MrS7gNQQ
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1704,11 +1704,15 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||im5-tub.com^
 ||im6-tub.com^
 ! Пачка «новостных» доменов тизернета вида домен.com/javascript/%alphanumerical%. Все в конечном итоге грузят мусор с lacest.com.
-! Домены: daccroi.com, ensepare.com, ghaires.com... Блокирую пару скриптов с достаточно уникальными именами и общий домен.
+! Домены: daccroi.com, ensepare.com, ghaires.com. Блокирую пару скриптов с достаточно уникальными именами и общий домен.
 .com/modules/?p=*&h=*.com&b=*&np=*&ph=*&$third-party
 .com/news.js?*.com|$third-party
 ||lacest.com^
-! Домены в зоне .RU:
+! Пока доменов обнаружилось не слишком много пусть здесь полежат. Возможно потом придётся сделать правило .com/javascript/, а может и не надо.
+||daccroi.com^
+||ensepare.com^
+||ghaires.com^
+! Домены тизернета в зоне .RU:
 ||autotizer.ru^$third-party
 ||teasernet.ru^$third-party
 
