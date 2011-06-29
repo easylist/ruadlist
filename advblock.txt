@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: ligris2fU3k8xTnxjzB/TQ
+! Checksum: /yhoDQdcwABEmHq2ycfANw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -39,6 +39,7 @@
 /ad/popup/*
 ! $domain=livetraf.com|medianaft.ru|rutraff.org|traforet.ru
 /click/body.php?id=*&hash=$other
+||4allclick.ru^
 //tds.traforet.ru/*/?$other
 ||crusewind.net/click/direct.php?
 ||filonet.ru/engine/redirect.php?url=
@@ -674,7 +675,9 @@ _tizer.
 ||creativefiles.ru^$third-party
 ||crunchbang.net/advocacy/
 ||crutop.nu^$third-party
-||csht.ru/$third-party
+! Есть и cshi.ru, но пока при блокировке cszz.ru с cshi.ru реклама не грузится.
+||csht.ru/
+||cszz.ru^
 ||cyberstyle.ru^$third-party
 ||cykahax.net/$third-party
 ||dating-exchange.com^$third-party
@@ -1778,6 +1781,7 @@ ag.ru###upadbg2
 ag.ru##IMG[width="120"][height="60"]
 aldebaran.ru##.promoforme_banners
 ||aldebaran.ru/images/recl/
+alive-ua.com##.col_l_b > TABLE:nth-of-type(3)
 allbest4free.ru##NOINDEX
 ||allsat.biz/ban_
 ||alterportal.ru^$object
