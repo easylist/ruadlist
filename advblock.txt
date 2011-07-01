@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: fqK3dOdhPSAk9rcp+x6x3A
+! Checksum: bQIJ8JBH+lLe9Hq/HdEgiw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -220,7 +220,6 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ##.modul-search
 ##.module-one-search
 ##.reklam
-! i.ua,macpages.me,vesti.ru
 ##.reklama
 ##.sp_search_table
 ##.sp_search2_table
@@ -234,9 +233,13 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ##DIV[id^="Teaser_Block"]
 ##DIV[id^="togetInformer_"]
 ##[class^="snBody"]
+~marketgid.com,~marketgid.ru,~marketgid.ua,~mgid.com##DIV[id^="MarketGid"]
 ! Предлагают скачать торрент-клиент и торрент одним исполнимым файлом на некоторых трекерах.
 ##.mediaget
 ###mediaget_box
+! Реклама от сети "Меркатор"
+##.merc_title
+##.merc_title_2
 ! Предлагают скачать что угодно и на большой скорости, а на практике подсовывают какую-то исполнимую (exe) пакость.
 ! Именуют себя ВСкачке, ВЗагрузе, маскируются под RapidShare и прочее.
 ##A[href*="/download.php?sub_id="][href*="&q="]
@@ -247,8 +250,6 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ! Плавающий баннер от Mega-Bazar. Содержимое блокируется правилом /bazar_fast/*, а это скрывает остатки.
 ##DIV[id][align="center"][onmouseover][style*="fixed;"]
-! Реклама Маркетгида
-~marketgid.com,~marketgid.ru,~marketgid.ua,~mgid.com##DIV[id^="MarketGid"]
 ! - Скрытие по размеру --------------------------------------------------------
 ##IMG[width="120"][height="600"]
 ##IMG[width="160"][height="600"]
@@ -1755,6 +1756,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 3mp3.ru###trance
 ||3mp3.ru/dhtml/adv.
 ||3mp3.ru/banner
+3ppc.net##NOINDEX > TABLE[style^="background-color:"]
 4pna.com##.vbmenu_popup + * + TABLE[id^="post"]
 4pna.com##A[onclick]>IMG,A[rel="nofollow"]>IMG,A[target="_blank"]>IMG
 4pna.com##A[href*="fin-realty."],A[href*="econ.ua"],A[href*="oodo.ru"],A[href*="gps4me."],A[href*="xdevice-shop.ru"]
