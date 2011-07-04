@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: ylIJs+nv0FiXPKKMu0xfZw
+! Checksum: B0D4JvsKY+zMJh3Bk5gYdQ
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1764,8 +1764,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||5ka.ru/js/banners.js
 ||5ka.su/js/girls.php
 ||5ka.ru/jscr/$subdocument
-62.ua##A[href^="/redirect/url?url="] > IMG[src^="/upload/"]
-||62.ua/upload/jackets/
 689.ru##A[href="http://musbest.com/"]
 ||7ja.ru/imgb/
 7sl.ru##NOINDEX A[target="_blank"] > IMG
@@ -3012,6 +3010,10 @@ search.ukr.net##.ads-header
 search.ukr.net##.ads-header + SPAN > .ad
 ||ukr.net/i/rozetka/
 ||ukr.net/partner/
+
+! Сеть городских сайтов Украины
+ua##A[href^="/redirect/url?url="] > IMG[src^="/upload/jackets/"]
+||ua/upload/jackets/
 
 ! Yandex (Яndex)
 yandex.ru,yandex.ua###banner
