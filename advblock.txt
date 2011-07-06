@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: L7KRF/YStd4pCiDiQxmq0g
+! Checksum: m6MfZ/yTK9atlAfrS420fA
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1812,6 +1812,7 @@ anonymouse.org###mouselayer
 ||ap.by/up/banner/
 ||apn.ru/ads/banners/
 ||apn-spb.ru/images/_banners
+||ban.aport.ru^
 sm.aport.ru###yandex
 apple-russia.ru###topbanner
 apple-russia.ru##.adv-main-right
@@ -2303,7 +2304,9 @@ megashara.com##DIV[class^="mediaget"]
 ||megashara.com/tmp/*
 ||megafile.mksat.net/reklama/
 ||megafon.ru/f/banner/
-meteoprog.ua###nb_1
+meteoprog.ua##.roz_block
+! ##DIV[id^="meta_news_block"] встречается на многих укр.сайтах, но блокируется правилом ||exchange.meta.ua/*/block.js|$third-party , а здесь оставалось слово "Загрузка". Если подобного будет много, можно сделать общим.
+meteoprog.ua##DIV[id^="meta_news_block"]
 ||mignews.com.ua/files/banners/
 mmaps.net##CENTER > TABLE > TBODY > TR[valign="middle"]:first-child + TR:last-child
 ||mnis.ru/reklama/
