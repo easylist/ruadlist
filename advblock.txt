@@ -118,7 +118,7 @@
 ||youtube.$domain=vmesterabotaem.ru,vsemdeneg.ru,vsemtube.ru
 ||youtube.*uCGGMufZc1c
 ||vkontakte.$domain=moneymaiker.ru,vmesterabotaem.ru
-vsemtube.ru##*
+vsemtube.ru,vzarabotke.ru##*
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
 ||24pornoo.ru^
 ||5pornosex.ru^
@@ -135,16 +135,18 @@ vsemtube.ru##*
 ||vstaet.net^
 ! увы, именно так. Не знаю, сколько у них адресов.
 ||x-uboino.
-||xxx-ulet.ru^
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
-24pornoo.ru,5pornosex.ru,avska.com,devochki.cz,dosug.cz,livejasmin.com,poisk125.com,posmotrish.net,sexrustube24.com,vkru.socialru.ru,vsesuper.in,vstaet.net,x-uboino.net,xxx-ulet.ru##:root
+24pornoo.ru,5pornosex.ru,avska.com,devochki.cz,dosug.cz,livejasmin.com,poisk125.com,posmotrish.net,sexrustube24.com,vkru.socialru.ru,vsesuper.in,vstaet.net,x-uboino.net,x-uboino.ru##:root
 ! Порно-сайты сети pokajem. Известные домены включая нерабочие:
 ! cooldevki.com, falosvideo.com, izvrasheniya.com, nashevideo.info, pokajem.do.am, portvx.com, prodom2.com,
 ! tele-dom2.com, telesekas.com, tvdom2.com, tvsxsite.com, videocinemax.com, vkvideox.com
 ||pokajem.*.*/
 ||glopic.com$domain=izvrasheniya.com|nashevideo.info|pokajem.do.am|portvx.com
 izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
+! Порнобаннер на mail.ru - признак наличия вируса, это не подпиской лечится! Но раз есть жалоба, будет и блокировка.
+||qocgle.com^
+://213.133.103.221/
 
 ! = Исключения ================================================================
 ! - Против ложных срабатываний ------------------------------------------------
@@ -1432,6 +1434,7 @@ _tizer.
 ||tizerka.in^$third-party
 ! ||tizermedia.ru^$third-party
 ||tizero.ru^$third-party
+||tizerplatform.
 ||tizy.ru^$third-party
 ||tizzer.ru^$third-party
 ! В будущем должно стать лишним — сеть переезжает на zipcash.ru (это всё tizy.ru)
