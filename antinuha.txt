@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: 8o086ZAKFMSIIJQWpCCN2A
-! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
+! Checksum: d9g9N0/+7C/bdYbtfMZCUg
+! Expires: 3 days (подписка обновляетя автоматически каждые 3 дня)
 ! Дополнительная подписка фильтров RU AntiPron List
 ! Эта подписка предназначена для 
 ! блокирования и скрытия информации непристойного
@@ -9,10 +9,10 @@
 ! порнографию и не является надёжной защитой от неё!
 ! Подписка к использованию не рекомендуется
 ! из-за недостаточной эффективности и медленных правил.
-! Вместо использования этой подписки рекомендуется использовать
-! специализированное расширение CensureBlock:
+! Вместо этой подписки или одновременно с ней 
+! рекомендум использовать расширение CensureBlock:
 ! https://addons.mozilla.org/ru/firefox/addon/195789/
-! Если всё же используете эту подписку,
+! Если используете эту подписку,
 ! пишите свои предложения в тему на форуме:
 ! http://forum.mozilla-russia.org/viewtopic.php?id=40748
 ==============================================================================
@@ -27,7 +27,7 @@
 /(?:fot(?:ok?|ki)|film|video|tube).*?(?:eroti|p(?:or|ro)n|seks|tra[hx]|xxx)/
 /(?:adult|blud|ceks|d((?:e(?:ff|v|w)(?:axi|k|o(?:k|chki)|stveni(?:c|ts)|chonk)[ai])|osuk|ro(4|ch))|e(?:bemsa|ro(?:ti|vid))|h(?:enta[ijy]|ustler)|in(?:cest|tim)|lesbi|moshonka|online(?:p(?:or|ro)n|trax)|p(?:or(?:evo|nphoto)|layboy|enthouse|izd[aeiuy]|rostitu)|razvrat|seks|iski|tra[hx]nu|xvideo)/
 /(?:eropic|p(orn.{0,3}|utan.{0,2})|sex.?|xxx)[\.-]/
-! Эту регулярку надо пополнить за счёт правил, которые ниже — всё равно они скоро перестанут быть оптимизируемыми.
+! Эту регулярку надо пополнить за счёт правил, которые ниже — всё равно они не оптимизируемые
 /[-_=/.](?:eroti|p([or]{1}n|ro?:_eto\/)|порн|sex[\d/-])/
 ##A[href*="adult"]
 ##A[href*="cekc"]
@@ -136,7 +136,7 @@
 ##A[href*="xxxonline"]
 ##A[href*="category=xxx"]
 !===========================
-! Следующий блок после выхода ABP 1.3.5 придётся собрать в регулярки.
+! Следующий блок надо собрать в регулярки.
 tp://allxxx
 tp://devki
 tp://devchenok
@@ -196,9 +196,7 @@ tp://xxx
 category*porn
 category=xxx
 eroklassn
-individualki
-individualochka
-individyalki
+/individ[uy]al(?:och)?k[ai]/
 orgazm
 porngirl
 pornofiles
@@ -208,10 +206,43 @@ supertrax
 trahsuper
 traxsuper
 wallpapers/girls/
-xxxclip
-xxxgirl
-xxxlady
-xxxonline
+/xxx(?:clip|girl|lady|online)/
+! Ещё неполный и неразобранный блок правил для адресов с кодировкой "кириллица Windows-1251". Встречал такое неоднократно. Во многих из этих правил первый знак шестнадцатеричного кода первой в слове буквы и % перед ним удалены, чтобы учитывать и верхний, и нижний регистр.
+
+! дроч
+4%F0%EE%F7%
+! +ебет+
+%2B%E5%E1%E5%F2%2B
+%2B%C5%E1%E5%F2%2B
+! ебёт
+8%E1%E5%F2
+! изнасилова
+8%E7%ED%E0%F1%E8%EB%EE%E2%E0
+! инцест
+8%ED%F6%E5%ED%F2
+! откровенн
+E%F2%EA%F0%EE%E2%E5%ED%ED
+! пизд
+4%E8%F1%F2%E8%ED
+! порн, кроме ссылок на "опорн" и "спорн"
+F%EE%F0%ED
+##A[href*="F%EE%F0%ED"]:not([href*="E%EF%EE%F0%ED"]):not([href*="F%EE%F0%ED"])
+! сисек
+%F1%E8%F1%E5%EA
+! сперм
+1%EF%E5%F0%EC
+! трахаю
+2%F0%E0%F5%E0%FE
+! насилу
+%CD%E0%F1%E8%EB%F3%
+%ED%E0%F1%E8%EB%F3%
+! хентай
+5%E5%ED%F2%E0%E9
+! хххzoo
+%F5%F5%F5zoo
+! Надо разобраться с этим сайтом - полная блокировка там необязательна
+||narodclub.net
+narodclub.net##TABLE[width="200"]:nth-of-type(3)
 !=================
 ##A[href*="/porn"]
 ##A[href*="/sex/"]
@@ -480,11 +511,9 @@ xxxonline
 ##[title*="СУПЕРМОДЕЛ"]
 ##[title*="упермодел"]
 ##[alt*="ХЕНТАЙ"]
-##[alt*="Хентай"]
-##[alt*="хентай"]
+##[alt*="ентай"]
 ##[title*="ХЕНТАЙ"]
-##[title*="Хентай"]
-##[title*="хентай"]
+##[title*="ентай"]
 ##[alt*="ЭРОТИ"]
 ##[alt*="Эроти"]
 ##[alt*="эроти"]
@@ -3360,4 +3389,4 @@ z-devka.edu.ms,za40.com,zacada.my1.ru,zadok.at.ua,zadok.org.ua,zadorno.com,zadro
 лепорно.рф,письки.net,сиси.su##*
 
 
-vesti.ru##.video_block:last-child
+vesti.ru##.video_block:nth-of-type(3)
