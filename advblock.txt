@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: EdMMwmnEmVBe8X3mVcsQcw
+! Checksum: GnMG3FkSOz5Z28TTlJGiNQ
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -333,6 +333,8 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /adv/banners/*$domain=~artinvestment.ru
 /adv/massage/*
 /afisha_banner/*
+! если проблем не будет, ограничение по типу можно снять
+/banners/*_*x*?$object
 /baner.
 /baner/*
 /baner_$domain=~rock-online.ru
@@ -2020,6 +2022,7 @@ exler.ru##[id^="Banner"]
 exler.ru###AdvertFieldCenter
 exnews.org##[class$="bbody"]
 exnews.org##CENTER + NOINDEX
+||everall.ru/static/img/banners/
 
 ! F
 f1news.ru###bannerBlock
