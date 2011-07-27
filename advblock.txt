@@ -1,5 +1,5 @@
 [Adblock Plus 1.3.5]
-! Checksum: fYhAj7p76n1vBrBkbNv5UA
+! Checksum: 7/RuxSe3Pa3jk7PlR6j20A
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -67,6 +67,9 @@
 ||all4girl.net/main/
 ||greyred.net/sex/
 ! - Прочее --------------------------------------------------------------------
+! Общие, содержат в адресе два и более параметра вроде utm_source, utm_medium и utm_campaign
+?utm_*&utm_$other
+&utm_*&utm_$other
 ! Flambo
 ! Подсеть: 91.213.175.### IP: 26, 27, 46
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
@@ -76,8 +79,6 @@
 //kpup.*/?sid=$other
 ! $domain=crazycola.ru|karosgame.ru|rzonline.ru|upslots.com|va-bank.com
 //promo.$other
-! $domain=brandsandbrands.ru|mlgame.ru
-/?utm_source=*&utm_medium=$other
 ! Игры на mail.ru (их там много и все норовят открыться в попапе)
 .mail.ru/*?$other
 ||1001kupon.ru^
