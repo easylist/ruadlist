@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: Tk3BTP92J58Ynhg1jP0M4A
+! Checksum: 0/yxgUdfOgKH0bvSnNhiqQ
 ! Expires: 3 days (подписка обновляетя автоматически каждые 3 дня)
 ! Дополнительная подписка фильтров RU AntiPron List
 ! Эта подписка предназначена для 
@@ -67,6 +67,7 @@
 ##A[href*="sekc"]
 ##A[href*="seks"]
 ##A[href*="sexy"]
+##A[href="/category/sensuality/"]
 ##A[href*="голая"]
 ##A[href*="голой"]
 ##A[href*="голые"]
@@ -75,6 +76,7 @@
 ##A[href*="Проститу"]
 ##A[href*="Шлюха"]
 ! "эроти" в ссылках:
+##A[href*="эроти"]
 ##A[href*="%D1%8D%D1%80%D0%BE%D1%82%D0%B8"]
 ##A[href*="%fd%f0%ee%f2%e8"]
 ##A[href*="%FD%F0%EE%F2%E8"]
@@ -213,35 +215,64 @@ wallpapers/girls/
 
 ! дроч
 4%F0%EE%F7%
+##A[href*="4%F0%EE%F7%"]
+##a[href*="4%f0%ee%f7%"]
 ! +ебет+
 %2B%E5%E1%E5%F2%2B
 %2B%C5%E1%E5%F2%2B
+##A[href*="%2B%E5%E1%E5%F2%2B"]
+##A[href*="%2B%C5%E1%E5%F2%2B"]
 ! ебёт
 8%E1%E5%F2
+##A[href*="8%E1%E5%F2"]
+##a[href*="8%e1%e5%f2"]
 ! изнасилова
 8%E7%ED%E0%F1%E8%EB%EE%E2%E0
+##A[href*="8%E7%ED%E0%F1%E8%EB%EE%E2%E0"]
+##a[href*="8%e7%ed%e0%f1%e8%eb%ee%e2%e0"]
 ! инцест
 8%ED%F6%E5%ED%F2
+##A[href*="8%ED%F6%E5%ED%F2"]
+##a[href*="8%ed%f6%e5%ed%f2"]
 ! откровенн
 E%F2%EA%F0%EE%E2%E5%ED%ED
+##A[href*="E%F2%EA%F0%EE%E2%E5%ED%ED"]
+##a[href*="e%f2%ea%f0%ee%e2%e5%ed%ed"]
 ! пизд
 4%E8%F1%F2%E8%ED
-! порн, кроме ссылок на "опорн" и "спорн"
+##A[href*="4%E8%F1%F2%E8%ED"]
+#a[href*="4%e8%f1%f2%e8%ed"]
+! порн, кроме ссылок на "опорн" и "спорн" (надо переделать)
 F%EE%F0%ED
 ##A[href*="F%EE%F0%ED"]:not([href*="E%EF%EE%F0%ED"]):not([href*="F%EE%F0%ED"])
+##a[href*="f%ee%f0%ed"]:not([href*="e%ef%ee%f0%ed"]):not([href*="f%ee%f0%ed"])
 ! сисек
 %F1%E8%F1%E5%EA
+##A[href*="%F1%E8%F1%E5%EA"]
+##a[href*="%f1%e8%f1%e5%ea"]
 ! сперм
 1%EF%E5%F0%EC
+##A[href*="1%EF%E5%F0%EC"]
+##a[href*="1%ef%e5%f0%ec"]
 ! трахаю
 2%F0%E0%F5%E0%FE
+##A[href*="2%F0%E0%F5%E0%FE"]
+##a[href*="2%f0%e0%f5%e0%fe"]
 ! насилу
 %CD%E0%F1%E8%EB%F3%
 %ED%E0%F1%E8%EB%F3%
+##A[href*="%CD%E0%F1%E8%EB%F3%"]
+##A[href*="%ED%E0%F1%E8%EB%F3%"]
+##a[href*="%cd%e0%f1%e8%eb%f3%"]
+##a[href*="%ed%e0%f1%e8%eb%f3%"]
 ! хентай
 5%E5%ED%F2%E0%E9
+##A[href*="5%E5%ED%F2%E0%E9"]
+##a[href*="5%e5%ed%f2%e0%e9"]
 ! хххzoo
 %F5%F5%F5zoo
+##A[href*="%F5%F5%F5zoo"]
+##a[href*="%f5%f5%f5zoo"]
 ! Надо разобраться с этим сайтом - полная блокировка там необязательна
 ||narodclub.net
 narodclub.net##TABLE[width="200"]:nth-of-type(3)
