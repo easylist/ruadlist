@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: n5aW0ZmiemhjiFwCjXvNVw
+! Checksum: K5dA5f0VARDOyZ7F3wkBOQ
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -149,6 +149,8 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ! Порнобаннер на mail.ru - признак наличия вируса, это не подпиской лечится! Но раз есть жалоба, будет и блокировка.
 ||qocgle.com^
 ://213.133.103.221/
+! Открытие сайта Ростелекома в попапе - тоже!
+||rostelecom.ru/|$other
 
 ! = Исключения ================================================================
 ! - Против ложных срабатываний ------------------------------------------------
@@ -203,8 +205,8 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||advertpay.net/code?$script,domain=dic.academic.ru
 @@||advertpay.net/?id=*&rid=$script,domain=utro.ru
 @@||adv.magna.ru/?id=*&rid=$script,domain=utro.ru
-@@||medialand.ru^$script,domain=utro.ru
-@@||medialand.relax.ru^$script,domain=loveplanet.ru
+! @@||medialand.ru^$script,domain=loveplanet.ru,utro.ru
+! @@||medialand.relax.ru^$script,domain=loveplanet.ru
 @@||premium.mbn.com.ua^$script,domain=ura-inform.com
 
 ! = Общие CSS-фильтры =========================================================
@@ -1040,7 +1042,9 @@ _tizer.
 ||mediacontext.$third-party
 ||mediadar.ru^$third-party
 ||mediakadr.ru^$third-party
-||medialand.$third-party
+! ||medialand.$third-party
+||content*.medialand.ru
+||popunder-mladnet.medialand.ru
 ||medianaft.ru^$third-party
 ||mediaportal.ru^$third-party
 ||mediarich.$third-party
