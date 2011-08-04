@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: lBD0qqrgW7cYii/k0Miyzg
+! Checksum: JoxR1nKhiToQMN8S999rGw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1743,16 +1743,19 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||im5-tub.com^
 ||im6-tub.com^
 ! Пачка доменов тизернета вида домен.com/javascript/%alphanumerical%. Все в итоге грузят мусор с lacemme (причём неприличный) и lacest.com
-! Домены: canalds,daccroi,ensepare,ghaires,lexament - все .com. Блокируем пару скриптов и общий домен. Порядок параметров в адресах бывает разный, поэтому сделать правило точнее не получается.
+! Домены: canalds,daccroi,ensepare,ghaires,lexament - все .com. Блокируем пару скриптов и общий домен. Порядок параметров в адресах бывает разный, добавляют мусор.
 .com/modules/*?*=*&*=$third-party,script
-.com/news.js?*.com|$third-party
-||lacest.com^
+! .com/javascript/$third-party,script
 ! Пока доменов обнаружилось не слишком много пусть здесь полежат. Возможно потом придётся сделать правило .com/javascript/ (оно и для вышеперечисленных подходит), а может и не надо.
 ||connees.com^
 ||daccroi.com^
+||daffices.com^
 ||ensepare.com^
 ||ghaires.com^
+||lacest.com^
 ||lexament.com^
+||utilieur.com^
+||zontrans.com^
 ! Домены тизернета в зоне .RU:
 ||autotizer.ru^$third-party
 ||teasernet.ru^$third-party
