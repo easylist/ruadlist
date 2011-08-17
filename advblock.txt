@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: fMoHm0+84k1w6eYhIzti3A
+! Checksum: Iv+J0GEeguuDqEnqFd5vtg
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -340,8 +340,6 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /bannerex.cgi/getbanner.js?id=
 /cgi-bin/banner/*$domain=~adv.vz.ru|~mb.interfax.ru|~mb.izvestia.ru|~mb.rian.ru
 /cgi-bin/banners/*$domain=~gzt.ru|~izvestia.ru|~km.ru
-! e-katalog.com.ua, e-katalog.kiev.ua, e-katalog.ru, nadavi.com.ua, nadavi.ru, podberi.tv, pokupaj.com.ua, pokupaj.ru
-/ekbn/src/*
 /images/adv/*$domain=~3k.mail.ru
 /images/ban/*
 /images/banners/*$domain=~allods.mail.ru|~allods.ru|~bakabt.com|~dutyfree.org.ru|~martgallery.ru|~slinux.ru|~visage.od.ua|~vorbis.com|~xxxxbar.ru
@@ -1109,7 +1107,6 @@ _tizer.
 ||mystat-in.net^$third-party
 ||mytraf.info^$third-party
 ||mytraf.ru^$third-party
-||nadavi.net^$third-party
 ||narod.kz/img.php?
 ||nasf.ru/ad/
 ||needtest.ru^$third-party
@@ -1730,6 +1727,13 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||microad.ru^$third-party
 ||microads.ru^$third-party
 .ru/cn/120x600.html?r=
+
+! e-Katalog.com.ua и прочие их и связанные с ними сайты
+###nadaviSpan
+! e-katalog.com.ua, e-katalog.kiev.ua, e-katalog.ru, nadavi.com.ua, nadavi.ru, podberi.tv, pokupaj.com.ua, pokupaj.ru
+/ekbn/src/*
+||nadavi.$third-party
+||podberi.tv^$third-party
 
 ! TeaserNET.com
 ! Подсеть: 88.85.93.###, адреса: 25, 34, 35, 100, 101
