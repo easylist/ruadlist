@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: VQ0dQxHKLXAY3AVl0Ij/XA
+! Checksum: x3nSDXum2B6SXC4ySTrFOg
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
@@ -93,6 +93,8 @@
 ! ##.share
 ! fcenter.ru
 ! ###share
+##.social
+###social
 ##.social_links
 ###socialblock
 ! /copy_to_blog_button_  и /copy_to_blog_icon_
@@ -160,11 +162,11 @@ korrespondent.net##.footer_socialblock
 korrespondent.net##.unipopup
 kp.ru##.cb_services-all
 ||linuxmir.ru/application/maxsite/plugins/addzakl/
+meta.ua###shareBox
 mobiledevice.ru##.icons_bar_placeholder
 molodejj.ru###sharePanel
 newsinfo.ru###facebox
 novafilm.tv##.news-entry > DIV:last-child
-novafilm.tv##.social
 novafilm.tv###vk_groups
 novafilm.tv##DIV[style*="40px;"]:last-child
 ntv.ru###btmsocialize
@@ -215,6 +217,8 @@ gismeteo.ua###ad-rbkua
 ||calend.ru^$third-party
 ||cnews.ru/inc/$subdocument
 ||export.gad.org.ua^
+###glavportInformer
+||glavport.net/finformer.php?
 ||info.weather.yandex.net^$third-party
 ||informer.gismeteo.$third-party
 ||informer.ibcs-mail.com^$third-party
@@ -231,6 +235,7 @@ gismeteo.ua###ad-rbkua
 ||rp5.ua/informer/
 ||sn00.net^$third-party
 ||static.feed.rbc.ru^$third-party
+||supernews.com.ua/out/?
 ||timeout.ru^$third-party
 ||webdiscover.ru^$third-party
 ||www.rb.ru^$third-party
@@ -508,8 +513,6 @@ _userbar_$image
 /reddit.gif$domain=~reddit.com
 /technorati.gif$domain=~technorati.com
 /vkontakte.png$domain=~vkontakte.ru|~vk.com
-! Обобщённое правило
-###social
 ! - Модифицированные правила
 ~zippyshare.com###share_button
 ! Заменяет правила скрытия на юзерскриптсах
@@ -1562,7 +1565,6 @@ alarabiya.net##.floating-left
 alarabiya.net##.img-caption-facebook-container
 alarabiya.net##.under-link-objects
 alexa.com##.shareText
-alexa.com##.social
 aljazeera.net###toolsShare
 allamericanblogger.com###floating_footer
 alluc.org##.bookmarktext
@@ -1574,7 +1576,6 @@ alternativeto.net##[href="http://twitter.com/alternativeto"]
 alternet.org###splashy_div
 alternet.org##.redditit
 alternet.org##.subscribe
-amd.com##.social
 amodernmilitarymother.com###blog-stats
 amodernmilitarymother.com###blog_subscription-4
 ampercent.com##.subscribe2
@@ -1591,7 +1592,6 @@ appbrain.com###send-email
 appstorm.net###subscribe
 arstechnica.com###fb
 arstechnica.com###links-bar
-artsyspot.com##.social
 ask.com###promoTray
 askmen.com###fancybox-overlay
 askmen.com###fancybox-wrap
@@ -1706,8 +1706,6 @@ computerworld.com###floating_tools
 computerworld.com###it_newsletters
 computerworld.com###secondary_nav
 computingunleashed.com##[target="popupwindow"]
-connectify.me##.social
-consequenceofsound.net##.social
 contactmusic.com##.topNav
 copykat.com##.connect
 cracked.com###fb-friends-recent-activity
@@ -1740,14 +1738,12 @@ dailykos.com###simplemodal-overlay
 dailymotion.com###share
 daniweb.com##.ui-dialog
 daniweb.com##.ui-widget-overlay
-davemcelfatrick.com##.social
 dealspl.us##.facebookLikeBox
 dealspl.us##.moreCouponsSocial
 dearblankpleaseblank.com###sharing
 destructoid.com##.banner_top_container
 details.com##.utilities
 deviantart.com##.deviation-share
-diet-blog.com##.social
 digg.com###feedback-bar
 digitaljournal.com###djstickyfoot
 digitalspy.co.uk###topunit
@@ -1828,7 +1824,6 @@ freemake.com##.community
 freesfx.co.uk###popout
 frooglegeek.com###sharepost
 ft.com###optimostOverlay
-fundoomails.com##.social
 funflashgames.com##.sharing_nw
 funnyordie.com###funbar_wrapper
 funnyordie.com##.share_group
@@ -1864,7 +1859,6 @@ gq.com##.utilities-bottom
 gq.com##.utility-share
 graphic.is##.sharelinks
 gravity.com###follow
-greencarreports.com##.social
 groceryiq.com##.lp_share
 groceryiq.com##.pod_share
 grooveshark.com###notifications
@@ -1890,7 +1884,6 @@ heavy.com###colorbox
 heavy.com###footer-nav-follow
 heavy.com###sharesumo
 hitfix.com##.promoboxee
-hitfix.com##.social
 hollywire.com###post-social
 hollywoodreporter.com##.social2
 honda.com##.lnkFacebook
@@ -1931,11 +1924,9 @@ idg.com.au###article_actions
 idg.com.au###article_main_top
 ifitsmovies.com###sharediv
 imagecrook.com##.bookmarks
-imdb.com##.social
 imdb.com##[href="http://twitter.com/imdb"]
 imgur.com###awesome-bar
 imgzzz.com##.auth
-impulsedriven.com##.social
 inc.com###moreSlideContainer
 inc.com###newsletter-signup
 indecisionforever.com##.comedy_share
@@ -1994,7 +1985,6 @@ lunarsoft.net###Mod46
 lycos.com##.facebookFrame
 lynda.com###follow
 macnews.de###marktplatz
-macstories.net##.social
 makeuseof.com##.new_form
 makeuseof.com##.new_form2
 makeuseof.com##.sub
@@ -2055,7 +2045,6 @@ mobileattack.com###follow
 motherjones.com###pre-page
 motortrend.com###ITEM_GENERIC_BLURB_370
 moviefone.com###fb-tabs
-moviefone.com##.social
 movieline.com###mc_embed_signup
 mozilla.com###connect
 mozilla.com###connect-facebook
@@ -2089,7 +2078,6 @@ neowin.net###ajax-spinner
 neowin.net###ajax_loading
 neowin.net###like-this
 neowin.net###widget-social
-neowin.net##.social
 nerve.com###block-nerve_mailinglist-nerve_mailinglist_bottom_block
 nerve.com###follow-nerve
 nerve.com###footer-form
@@ -2220,7 +2208,6 @@ produktywnie.pl###olussierfsp_likebox-3
 propublica.org##.simple-follow-module
 prospect.org###mc_embed_signup
 psdeluxe.com###hide
-radbox.me##.social
 ranker.com###followRanker
 ranker.com###mainlist_social_stuff
 rasamalaysia.com##.cute_profiles_sprite
@@ -2344,7 +2331,6 @@ tekgoblin.com###upprev_box
 tekw.org##.subscribe_content
 tenthamendmentcenter.com###cboxOverlay
 tenthamendmentcenter.com###colorbox
-tether.com##.social
 tgdaily.com###block-social
 theadvocates.org##.closingSocial
 theadvocates.org##.newsletterLink
@@ -2454,7 +2440,6 @@ tuaw.com###slidebox
 tv.com##.connect_prompt_box
 tvsquad.com###tout-followUs
 tvsquad.com##.addthis
-typomaps.net##.social
 ubergizmo.com###facebook_social_300
 ugo.com###fb_login
 ugo.com###fb_userbox
@@ -2521,7 +2506,6 @@ wikipedia.org###siteNotice
 wildapricot.com##.BookmarksHolder
 windows7news.com##.subscribe
 windows7news.com##.subscribebox
-windowsvalley.com##.social
 wired.com###blog_subscription_unit
 wireupdate.com###icons
 womenwithmustaches.com###twitter
