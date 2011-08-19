@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: APPuzz0W9xHm2fWUDciiZQ
+! Checksum: 1yrIojMb5vZKBK2hF4mMFw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -195,14 +195,12 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ! часто влияет на работоспособность скриптов на таких страницах.
 @@||adfox.ru^*&prr=*&dl=$script,domain=championat.ru|gzt.ru|rosbalt.ru
 ! С адривером не всё просто. Иногда эти скрипты нужны для закрытия записи на страницу, но иногда ситуация обратна и они только вредят (avito.ru, например).
-@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|ozon.ru
+@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|cnews.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|ozon.ru
 @@||adriver.ru/extender.js|$script,domain=mobile-review.com
-@@||adriver.ru/images/*/*/0/script.js?$script,domain=afisha.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|ozon.ru
+@@||adriver.ru/images/*/*/0/script.js?$script,domain=afisha.ru|cnews.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|ozon.ru
 @@||advertpay.net/code?$script,domain=dic.academic.ru
 @@||advertpay.net/?id=*&rid=$script,domain=utro.ru
 @@||adv.magna.ru/?id=*&rid=$script,domain=utro.ru
-! @@||medialand.ru^$script,domain=loveplanet.ru,utro.ru
-! @@||medialand.relax.ru^$script,domain=loveplanet.ru
 @@||premium.mbn.com.ua^$script,domain=ura-inform.com
 
 ! = Общие CSS-фильтры =========================================================
@@ -1043,9 +1041,6 @@ _tizer.
 ||mediacontext.$third-party
 ||mediadar.ru^$third-party
 ||mediakadr.ru^$third-party
-! ||medialand.$third-party
-||content*.medialand.ru
-||popunder-mladnet.medialand.ru
 ||medianaft.ru^$third-party
 ||mediaportal.ru^$third-party
 ||mediarich.$third-party
@@ -1723,11 +1718,19 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||tizermine.net^$third-party
 ||tizerset.net^$third-party
 
+! CashProm.ru
 ! «ooops. this domain used as a gateway for cashprom.ru advertising system»
 ||cashprom.ru^$third-party
 ||microad.ru^$third-party
 ||microads.ru^$third-party
 .ru/cn/120x600.html?r=
+
+! MediaLand.ru — партнёрская сеть компании «Медиа Мир».
+###medialand_adland_inline_div_750
+||content*.medialand.ru
+||popunder-mladnet.medialand.ru
+||medialand.ru/test?extip=$script
+/medialand.*.ru/test?extip=$script
 
 ! Торговая система NADAVI
 ! e-katalog.com.ua, e-katalog.kiev.ua, e-katalog.ru, nadavi.com.ua, nadavi.ru, podberi.tv, pokupaj.com.ua, pokupaj.ru и прочие
@@ -3103,6 +3106,7 @@ rbc.ru,rbc.ua,rbcdaily.ru##.banner
 rbcdaily.ru##.c-block_content_article_baner
 rbcdaily.ru##[class*="_adv"]
 ||cnews.ru/img/banner/
+||cnews.ru/inc/banners/
 ||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
 ||pics.rbc.ru/img/banners/
 ||pics.rbc.ru^*/img.*?
