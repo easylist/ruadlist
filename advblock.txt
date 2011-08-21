@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: gCjUzwEDHuXOmZ7eDfHLTQ
+! Checksum: RbwJiBRCMVKQeQvovNtnWw
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -192,7 +192,7 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ! что приводит к эффекту «недогрузки» страниц. Реально всё содержимое загружено,
 ! но индикатор загрузки продолжает показывать процесс загрузки и это состояние
 ! часто влияет на работоспособность скриптов на таких страницах.
-@@||adfox.ru^*&prr=*&dl=$script,domain=championat.ru|gzt.ru|rosbalt.ru
+@@||adfox.ru^*&prr=*&dl=$script,domain=championat.com|championat.ru|gzt.ru|rosbalt.ru
 ! С адривером не всё просто. Иногда эти скрипты нужны для закрытия записи на страницу, но иногда ситуация обратна и они только вредят (avito.ru, например).
 @@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|cnews.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|ozon.ru
 @@||adriver.ru/extender.js|$script,domain=mobile-review.com
@@ -1440,6 +1440,7 @@ _tizer.
 ||teeser.ru^$third-party
 ||tehnoklad.ru^$third-party
 ||temp.theabyss.ru/1/botva/
+||teraion.com/updater/$third-party
 ||testsbox.ru^$third-party
 ||tgvc.seall.ru/img/
 ||the-people-group.com/div/zxy/$third-party
@@ -1657,7 +1658,8 @@ _tizer.
 
 ! AdFox.RU
 ||adfox.ru*/prepareCode?
-/adfox.asyn.$script
+/adfox.$script
+/adfox/*$image,object,script
 //87.242.91.*/adfox/*$domain=~infox.ru|~izvestia.ru|~rian.ru
 //87.242.91.*/prepareCode?
 
@@ -1953,6 +1955,7 @@ business-gazeta.ru##[width="226"] > TBODY > TR > [align="center"] > NOINDEX
 ! C
 ||carexpert.ru/reclama/
 catzone.ws##.bc_adv
+championat.com##[class^="banner-"]
 ||championat.com/static/banner/
 ||chance.ru/ban/
 cheat-master.ru##NOINDEX > CENTER > A[target="_blank"] > IMG
@@ -2183,6 +2186,10 @@ glavred.info##.large-banner
 ||glstar.ru/banner/
 ||glstar.ru/swf/
 ||images.pub.goha.ru/imageshare/sites/afiles/
+goha.ru##.mini-flower
+goha.ru###flower-right
+goha.ru###flower-top
+||goha.ru/imageshare/sites/xfiles/
 ||golosua.com/img/banners/
 ||goodgame.ru/images/ad$object
 gorockop.ru##.side_block
@@ -2407,7 +2414,6 @@ medkrug.ru##.google_adv
 ||medkrug.ru/web/flash/reg.
 ||medkrug.ru/lite.php?*&banner_id=
 megashara.com##DIV[class^="mediaget"]
-! ||megashara.com/recimg/
 ||megashara.com/tmp/*
 ||megafile.mksat.net/reklama/
 ||megafon.ru/f/banner/
@@ -2415,12 +2421,15 @@ meteoprog.ua##.roz_block
 ! ##DIV[id^="meta_news_block"] встречается на многих укр.сайтах, но блокируется правилом ||exchange.meta.ua/*/block.js|$third-party , а здесь оставалось слово "Загрузка". Если подобного будет много, можно сделать общим.
 meteoprog.ua##DIV[id^="meta_news_block"]
 ||mignews.com.ua/files/banners/
+mirmmo.ru##[id^="trumedia_holder_"]
+mirmmo.ru###banner-top
 mmaps.net##CENTER > TABLE > TBODY > TR[valign="middle"]:first-child + TR:last-child
 ||mnis.ru/reklama/
 mobbit.info###content > CENTER
 ||mobbit.info/r/
 mobiledevice.ru##NOFOLLOW
 ||modern-warfare.ru/sb_counter.js
+||modgames.net/banners/
 ||moto.kiev.ua/ads_banners/
 ||moto.kiev.ua/forum/banners/
 ||motonews.ru/ad/
