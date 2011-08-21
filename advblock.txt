@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: RbwJiBRCMVKQeQvovNtnWw
+! Checksum: j0Kf+q1iVdsAu9L2v3dQSg
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -192,7 +192,7 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ! что приводит к эффекту «недогрузки» страниц. Реально всё содержимое загружено,
 ! но индикатор загрузки продолжает показывать процесс загрузки и это состояние
 ! часто влияет на работоспособность скриптов на таких страницах.
-@@||adfox.ru^*&prr=*&dl=$script,domain=championat.com|championat.ru|gzt.ru|rosbalt.ru
+@@||adfox.ru^*&prr=*&dl=$script,domain=championat.com|gzt.ru|rosbalt.ru
 ! С адривером не всё просто. Иногда эти скрипты нужны для закрытия записи на страницу, но иногда ситуация обратна и они только вредят (avito.ru, например).
 @@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|cnews.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|ozon.ru
 @@||adriver.ru/extender.js|$script,domain=mobile-review.com
@@ -2179,7 +2179,7 @@ gamer.ru##.br[style="width: 240px; height: 400px;"]
 gamer.ru##BR + TABLE[width="630"]
 gazeta.ru##.vypolzen_out
 ||gde.ru/img/*320x1
-||getalbums.ru/baner
+||getalbums.ru^$object
 glavcom.ua##.articles_big.related
 ||glavport.net/files/swfs/
 glavred.info##.large-banner
