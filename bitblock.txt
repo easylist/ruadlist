@@ -1,5 +1,5 @@
 [Adblock Plus 1.1]
-! Checksum: QX5wO1dyxV+8NwXAJpaW6g
+! Checksum: dXhVqM5cK1F/Qy4clBnX/Q
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
@@ -344,14 +344,15 @@ unionpeer.org###page_header > #head
 ||sparklee.com^$third-party
 
 != Блокировка мусора в подписях на форумах ====================================
+! Выключены. Можно копировать и разкомментировать. :)
 !- Правила скрытия блока подписей ---------------------------------------------
 !#signature.bookmark
-##.sig
-~oxymoronical.com##.signature
-##.signatureView
-##.user_signature
-##.usersig
-kadets.info##DIV[id^="post_message_"] + DIV
+! ##.sig
+! ~oxymoronical.com##.signature
+! ##.signatureView
+! ##.user_signature
+! ##.usersig
+! kadets.info##DIV[id^="post_message_"] + DIV
 
 !- Общие правила блокировки линеечек и юзербаров ------------------------------
 .info/lines/$image
