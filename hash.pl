@@ -25,22 +25,44 @@ my $data = readFile($file);
 
 # Remove already existing checksum
 $data =~ s/^.*!\s*checksum[\s\-:]+([\w\+\/=]+).*\n//gmi;
-
-# Calculate new checksum: remove all CR symbols and empty
-# lines and get an MD5 checksum of the result (base64-encoded,
-# without the trailing = characters).
-my $checksumData = $data;
-$checksumData =~ s/\xEF\xBB\xBF//g;
-$checksumData =~ s/\r//g;
-$checksumData =~ s/\n+/\n/g;
+my $oldsum = $1;
 
 # Calculate new checksum
-my $checksum = md5_base64($checksumData);
+my $checksum = getChecksum($data);
+
+if ($checksum ne $oldsum) {
+  # Get current date and time (GMT)
+  my ($sec,$min,$hour,$day,$month,$yr19,@rest) = gmtime(time);
+  my $datetimevar = ($yr19+1900).".".sprintf("%02d",$month).".".sprintf("%02d",$day)." ".sprintf("%02d",$hour).":".sprintf("%02d",$min);
+
+  # Remove already existing date-time
+  $data =~ s/^.*!\s*last update \(gmt\)[\s\-:]+(\d{4}([\s.:]\d\d?)*).*\n//gmi;
+
+  # Insert date-time into the file
+  $data =~ s/(\r?\n)/$1! Last update (GMT): $datetimevar$1/;
+}
+
+# Calculate new checksum
+$checksum = getChecksum($data);
 
 # Insert checksum into the file
 $data =~ s/(\r?\n)/$1! Checksum: $checksum$1/;
 
 writeFile($file, $data);
+
+sub getChecksum
+{
+  # Calculate new checksum: remove all CR symbols and empty
+  # lines and get an MD5 checksum of the result (base64-encoded,
+  # without the trailing = characters).
+  my $checksumData = shift;
+  $checksumData =~ s/\xEF\xBB\xBF//g;
+  $checksumData =~ s/\r//g;
+  $checksumData =~ s/\n+/\n/g;
+
+  # Calculate new checksum
+  return md5_base64($checksumData);
+}
 
 sub readFile
 {
