@@ -36,10 +36,10 @@ if ($checksum ne $oldsum) {
   my $datetimevar = ($yr19+1900).".".sprintf("%02d",$month).".".sprintf("%02d",$day)." ".sprintf("%02d",$hour).":".sprintf("%02d",$min);
 
   # Remove already existing date-time
-  $data =~ s/^.*!\s*last update \(gmt\)[\s\-:]+(\d{4}([\s.:]\d\d?)*).*\n//gmi;
+  $data =~ s/^.*!\s*last modification time \(gmt\)[\s\-:]+(\d{4}([\s.:]\d\d?)*).*\n//gmi;
 
   # Insert date-time into the file
-  $data =~ s/(\r?\n)/$1! Last update (GMT): $datetimevar$1/;
+  $data =~ s/(\r?\n)/$1! Last modification time (GMT): $datetimevar$1/;
 }
 
 # Calculate new checksum
