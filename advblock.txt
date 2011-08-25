@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: OmaeNniucdrgbC/apYxiUQ
-! Last modification time (GMT): 2011.07.24 19:48
+! Checksum: nLLFBk3EyqRy4DTVX2ncWw
+! Last modification time (GMT): 2011.07.25 11:26
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -1762,10 +1762,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||im4-tub.com^
 ||im5-tub.com^
 ||im6-tub.com^
-! Пачка доменов тизернета вида домен.com/javascript/%alphanumerical%. Все в итоге грузят мусор с lacemme (причём неприличный) и lacest.com
+! Пачка доменов тизернета вида домен.com/javascript/%alphanumerical%.
 .com/modules/*?*=*&*=$third-party,script
-! Возможно, придётся сделать .com/javascript/$third-party,script
-! Правило для .com/modules/ срабатывает почему-то не всегда, поэтому ещё 3:
+.com/modules.*?*=*&*=$third-party,script
+.com/javascript/$third-party,script
+! Основные домены с мусором
+||lacembre.com^
 ||lacemme.com^
 ||lacest.com^
 ! Домены тизернета в зоне .com (чтоб наверняка и меньше зависеть от их постоянно меняющихся скриптов)
@@ -1792,6 +1794,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||langueur.com^
 ||lavantat.com^
 ||lexament.com^
+||spechete.com^
 ||striete.com^
 ||teaservizio.com^
 ||utilieur.com^
