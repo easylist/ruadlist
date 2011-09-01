@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: giqhc970iM+GU+j0w2vTZw
-! Last modification time (GMT): 2011.07.31 22:11
+! Checksum: 6/MYzYTzvJrFnlqzSoajew
+! Last modification time (GMT): 2011.08.01 10:06
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
@@ -343,6 +343,7 @@ unionpeer.org###page_header > #head
 != Мерцающего текста рассадники ===============================================
 !#glitter.bookmark
 ||animashka.info^$third-party
+||blestki.com^$third-party
 ||gifr.ru/data/gifs/$third-party
 ||glitter-graphics.net^$third-party
 ||glitterfy.com^$third-party
@@ -358,7 +359,13 @@ unionpeer.org###page_header > #head
 ##.usersig
 kadets.info##DIV[id^="post_message_"] + DIV
 
+!- Удивительно отвратительных анимированных смайлов рассадники ----------------
+! Встречаются не столько в подписях, сколько в самом тексте. Лучше и не видеть.
+!#smiles.bookmark
+||smiles.clan.su^$third-party
+
 !- Общие правила блокировки линеечек и юзербаров ------------------------------
+!#lines,userbars.bookmark
 .info/lines/$image
 .net/lines/$image
 .ru/line/$image
@@ -453,6 +460,7 @@ _userbar_$image
 ||mamalines.org.ua^$third-party
 ||mamapluspapa.ru/*/lines/
 ||mima.ru/im/
+||miniprofile.xfire.com^$third-party
 ||minuskg.ru/informer/show/
 ||mmohelper.ru/wp-content/uploads/sig/
 ||mobilewallpapers.narod.ru/bar_
@@ -1128,7 +1136,6 @@ _share_twitter.
 _share_stumbleupon.
 _stumble_btn.
 ||cdn.stumble-upon.com/images/$third-party,domain=~stumbleupon.com
-~smashingapps.com##A[href^="http://www.stumbleupon.com/submit?url"]
 !
 !---------- Google Analytics Annoyance (Tracker) -----------
 !
@@ -1576,7 +1583,6 @@ alternativeto.net##.delicious
 alternativeto.net##.fb
 alternativeto.net##.feed
 alternativeto.net##.twitter
-alternativeto.net##[href="http://twitter.com/alternativeto"]
 alternet.org###splashy_div
 alternet.org##.redditit
 alternet.org##.subscribe
@@ -1611,7 +1617,6 @@ autos.aol.com###art_social
 backblaze.com##.icon_facebook
 backblaze.com##.icon_twitter
 bannedinhollywood.com##.post_share
-bannedinhollywood.com##[action="http://feedburner.google.com/fb/a/mailverify"]
 barstoolsports.com##.twitter
 bbc.co.uk##.feedslink
 bbc.co.uk##.share-body-bottom
@@ -1703,13 +1708,11 @@ comedycentral.com##.meta_holder
 comicbookresources.com###social-box
 comicbookresources.com###subscribe-options
 comodo.com##.inner-social
-comodo.com##[href="http://www.facebook.com/ComodoHome"]
 complex.com##.follow
 complex.com##DIV[id^="digg-widget-"]
 computerworld.com###floating_tools
 computerworld.com###it_newsletters
 computerworld.com###secondary_nav
-computingunleashed.com##[target="popupwindow"]
 contactmusic.com##.topNav
 copykat.com##.connect
 cracked.com###fb-friends-recent-activity
@@ -1800,7 +1803,6 @@ fightthesmears.com##.facebook
 fightthesmears.com##.myspace
 filehippo.com###feeds
 filehippo.com##.box-two-feature
-filehippo.com##[href="http://feeds.feedburner.com/filehippo"]
 firefoxfacts.com##.rss
 flipkart.com##.keep_in_touch
 fluffyapp.com###twitter
@@ -1852,7 +1854,6 @@ gizmag.com###mb_overlay
 gizmodo.com##.welcome_form
 glennbeck.com###flyout
 globalgrind.com##.ns-diag
-globalgrind.com##[ggregion="NewsLetterRC"]
 globalpost.com###block-block-17
 globalpost.com###block-block-7
 goal.com###bettingWidgetAnchor
@@ -1928,7 +1929,6 @@ idg.com.au###article_actions
 idg.com.au###article_main_top
 ifitsmovies.com###sharediv
 imagecrook.com##.bookmarks
-imdb.com##[href="http://twitter.com/imdb"]
 imgur.com###awesome-bar
 imgzzz.com##.auth
 inc.com###moreSlideContainer
@@ -2123,7 +2123,6 @@ nola.com##.helper
 nola.com##.mobile_lrg
 nola.com##.rss_lrg
 nola.com##.share
-nola.com##[href="http://www.nola.com/connect"]
 northjersey.com###slidebox
 novirusthanks.org##.rss
 novirusthanks.org##.share
