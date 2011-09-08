@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: CaJ9qkGAJ6ZTgZ81Fn8Rsg
-! Last modification time (GMT): 2011.08.07 12:53
+! Checksum: om3p75AuaUIHjxtXhzeiAA
+! Last modification time (GMT): 2011.08.08 08:18
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 
 ! Дополнительная региональная подписка RU AdList (ruadlist.googlecode.com)
@@ -159,10 +159,9 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||ads.tomtel.ru/adjs.$script
 ! Правила для отдельных сайтов
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
-@@||adfox.ru^*&prr=$domain=infox.ru|izvestia.ru|rian.ru
+@@||adfox.ru^*&prr=$domain=infox.ru|rian.ru
 @@||adriver.ru/*.xml|$object-subrequest,domain=tsn.ua|tvjam.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru|tsn.ua|tvjam.ru
-@@||adriver.ru/cgi-bin/merle.cgi?rnd=$domain=izvestia.ru
 @@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||ads.su^$~third-party
@@ -196,9 +195,9 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ! часто влияет на работоспособность скриптов на таких страницах.
 @@||adfox.ru^*&prr=*&dl=$script,domain=championat.com|gzt.ru|rosbalt.ru
 ! С адривером не всё просто. Иногда эти скрипты нужны для закрытия записи на страницу, но иногда ситуация обратна и они только вредят (avito.ru, например).
-@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|cnews.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|ozon.ru
+@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|cnews.ru|eg.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|ozon.ru
 @@||adriver.ru/extender.js|$script,domain=mobile-review.com
-@@||adriver.ru/images/*/*/0/script.js?$script,domain=afisha.ru|cnews.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|ozon.ru
+@@||adriver.ru/images/*/*/0/script.js?$script,domain=afisha.ru|cnews.ru|eg.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|rian.ru|ozon.ru
 @@||advertpay.net/code?$script,domain=dic.academic.ru
 @@||advertpay.net/?id=*&rid=$script,domain=utro.ru
 @@||adv.magna.ru/?id=*&rid=$script,domain=utro.ru
@@ -296,7 +295,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /bitrix/spread.php?
 /by.banclk?
 /cgi-bin/adv.fcgi?
-/cgi-bin/iframe/*$domain=~izvestia.ru|~rian.ru|~km.ru
+/cgi-bin/iframe/*$domain=~rian.ru|~km.ru
 ! icqadvert.org, icqadvert.com, ultrapay.net
 ! Начинают с загрузки /check.php, популярные значения mode: teaser и icq.
 /check.php?user_id=*&mode=*&domain=$third-party
@@ -337,8 +336,8 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /baner_$domain=~rock-online.ru
 /banner.gif
 /bannerex.cgi/getbanner.js?id=
-/cgi-bin/banner/*$domain=~adv.vz.ru|~mb.interfax.ru|~mb.izvestia.ru|~mb.rian.ru
-/cgi-bin/banners/*$domain=~gzt.ru|~izvestia.ru|~km.ru
+/cgi-bin/banner/*$domain=~adv.vz.ru|~mb.interfax.ru|~mb.rian.ru
+/cgi-bin/banners/*$domain=~gzt.ru|~km.ru
 /images/adv/*$domain=~3k.mail.ru
 /images/ban/*
 /images/banners/*$domain=~allods.mail.ru|~allods.ru|~bakabt.com|~dutyfree.org.ru|~martgallery.ru|~slinux.ru|~visage.od.ua|~vorbis.com|~xxxxbar.ru
@@ -571,6 +570,7 @@ _tizer.
 ||annews.ru/images/clients/
 ||antimuh.ru/themes/grayman/images/*.**domashek
 ||anyfiles.ru^$third-party
+||arbocontext.ru^$third-party
 ||archive.pravda.ru/cache/popular$third-party
 ||artefacts.nnov.ru/data/$object
 ||artvit.ru/cypr?
@@ -1136,6 +1136,7 @@ _tizer.
 ||novatizer.com^$third-party
 ||novem.pl^$third-party
 ||novosti.dn.ua/$object
+||novostimira.com^$third-party
 ||novostimira.com.ua^$third-party
 ||novoteka.ru$third-party
 ||nowa.cc/showthread.php?*http://
@@ -1530,6 +1531,7 @@ _tizer.
 ||videofan.ru^$third-party
 ||videoklass.ru^$third-party
 ||videoplayerworld.com^$third-party
+||videoslovo.ru^$third-party
 ||videotraff.ru/img
 ||vipmest.info^$third-party
 ||viprelax.com.ua^$third-party
@@ -1666,7 +1668,7 @@ _tizer.
 ||adfox.ru*/prepareCode?
 /adfox.$script
 /adfox/*$image,object,script
-//87.242.91.*/adfox/*$domain=~infox.ru|~izvestia.ru|~rian.ru
+//87.242.91.*/adfox/*$domain=~infox.ru|~rian.ru
 //87.242.91.*/prepareCode?
 
 ! AdRiver.RU
@@ -1674,11 +1676,10 @@ _tizer.
 ###ad_ph_2
 ###adriver_middle
 compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
-.adriver.$~object-subrequest,domain=~izvestia.ru
-/adriver.$~third-party,domain=~izvestia.ru
-/adriver_$~third-party,domain=~fileshare.in.ua|~izvestia.ru|~meta.ua
+.adriver.$~object-subrequest
+/adriver.$~object-subrequest
+/adriver_$~object-subrequest
 /banners/*/*/0/index.$subdocument
-/images/000*/0/*.swf$domain=izvestia.ru
 
 ! AdStock.RU
 ##A[href*=".ru/fn.php?r="]
@@ -2081,6 +2082,9 @@ echo.msk.ru##.advtBlock
 ||echo.msk.ru/att/element-*-misc-*.gif
 ebay-forum.ru##.mc_bottom
 econo.com.ua##.banner
+eg.ru###banner3
+eg.ru###rbanner
+||eg.ru/upfile/picture/*$object
 ekabu.ru##.dns
 ekabu.ru##.triline_block
 ekabu.ru##.m66
@@ -2315,8 +2319,7 @@ forum.ixbt.com##.top_ad2
 ||rose.ixbt.com/banner/
 ||rose.ixbt.com/cgi-bin/
 izone.ru##NOINDEX TABLE[width="100%"]
-izvestia.ru###topBanner
-izvestia.ru##IFRAME[id^="snf"]
+izvestia.ru##.right_banner_block
 
 ! J
 jeder.ru###colwrap > .module-notitle
@@ -2444,6 +2447,8 @@ megashara.com##DIV[class^="mediaget"]
 ||megashara.com/tmp/*
 ||megafile.mksat.net/reklama/
 ||megafon.ru/f/banner/
+meta.ua##.ads_240
+meta.ua###rbn
 meteoprog.ua##.roz_block
 ! ##DIV[id^="meta_news_block"] встречается на многих укр.сайтах, но блокируется правилом ||exchange.meta.ua/*/block.js|$third-party , а здесь оставалось слово "Загрузка". Если подобного будет много, можно сделать общим.
 meteoprog.ua##DIV[id^="meta_news_block"]
@@ -3103,7 +3108,7 @@ mail.ru##.shMenu2 > SPAN > A[target="_blank"][href^="http://r.mail.ru/"]
 //rs.mail.ru/b$domain=e.mail.ru
 //rs.mail.ru/b$subdocument
 ! Блокировка ресурсов за пределами mail.ru
-//rs.mail.ru/b$third-party,domain=~gzt.ru|~izvestia.ru|~km.ru
+//rs.mail.ru/b$third-party,domain=~gzt.ru|~km.ru
 ||banners.mail.ru^$third-party
 ||showbiz.mail.ru^$third-party
 ||torg.mail.ru/prtnr/$third-party
