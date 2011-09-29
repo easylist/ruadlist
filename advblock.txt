@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: 0Gjij6SmFtEeeLx3TjoyQw
-! Last modification time (GMT): 2011.08.29 19:45
+! Checksum: umUdiEuHZX9/a//++yDB8Q
+! Last modification time (GMT): 2011.08.29 19:51
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -2608,14 +2608,6 @@ ochevidec.net##A[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejou
 ||odessa-daily.com.ua/images/stories/banners/
 odnako.org##.main > .new_header_90.boxNoPadding3:first-child
 odnako.org##IMG[width="240"][height="25"]
-odnoklassniki.ru##.leftCustomAdv
-odnoklassniki.ru##.rightBottomAdv
-odnoklassniki.ru##.rightTopAdv
-odnoklassniki.ru##.sideadv
-odnoklassniki.ru##.topadv
-dnoklassniki.ru##DIV[id$="Banner"]
-||odnoklassniki.ru/res/*/promo/*/
-||odnoklassniki.ru/res/adv/
 ||old-games.ru/img/bnr/
 ||oldgames.ru/netcat_files/Image/$object
 ||onlime.ru/banners/banner_
@@ -3123,7 +3115,7 @@ km.ru##.top-banner
 km.ru##IFRAME[height="90"]
 t2t.ru##.tbn
 
-! Mail.RU
+! Mail.RU и Одноклассники
 ! Объединять правила с banner в конце не стоит — на самом деле там ещё классы перечислены часто.
 ! Скрытие по-разделам
 auto.mail.ru##.addMain2
@@ -3168,6 +3160,15 @@ mail.ru##.shMenu2 > SPAN > A[target="_blank"][href^="http://r.mail.ru/"]
 //r.mail.ru/b$subdocument
 //rs.mail.ru/b$domain=e.mail.ru
 //rs.mail.ru/b$subdocument
+! Одноклассники
+odnoklassniki.ru##.leftCustomAdv
+odnoklassniki.ru##.rightBottomAdv
+odnoklassniki.ru##.rightTopAdv
+odnoklassniki.ru##.sideadv
+odnoklassniki.ru##.topadv
+dnoklassniki.ru##DIV[id$="Banner"]
+||odnoklassniki.ru/res/*/promo/*/
+||odnoklassniki.ru/res/adv/
 ! Блокировка ресурсов за пределами mail.ru
 //rs.mail.ru/b$third-party,domain=~gzt.ru|~km.ru
 ||banners.mail.ru^$third-party
