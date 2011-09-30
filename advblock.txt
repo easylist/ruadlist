@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: vfFUOLTRR1kpx6kFP0a+CA
-! Last modification time (GMT): 2011.08.30 16:12
+! Checksum: 3nTKvI4FpmQO/DXt4ZrDow
+! Last modification time (GMT): 2011.08.30 16:33
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1134,6 +1134,7 @@ _tizer.
 ||newclick.org^$third-party
 ||news.rin.ru^$third-party
 ||newsprom.ru/img/
+||nextonmarket.com/i/banners/
 ||nfscharts.nfshome.com/track.php?id=
 ||ngads.com^$third-party
 ||ngbn.net^$third-party
@@ -1480,7 +1481,6 @@ _tizer.
 ||topcto.ru^$third-party
 ||topdownloads.ru/charts/$third-party
 ||torgnn.ru^$third-party
-||torrent-trackers.ru^$third-party
 ||trade7.ru^$third-party
 ||tradelinks.$third-party
 ||tradeone.com.ua^$third-party
@@ -2639,6 +2639,8 @@ opennet.ru##TD[width="130"][rowspan="3"]
 ||opennet.ru/adv_
 opensharing.ru,opensharing.org##IMG[height="120"][width="240"]
 ||opensharing.$object
+opentorrent.ru##.banner
+||opentorrent.ru/images/banner/
 ||oper.ru/data/rennabs/
 oplati.ru##TD[width="90"]
 oru.ru##TD[width="10"] + TD[width="260"]:last-child
@@ -2766,9 +2768,11 @@ russiandc.com##.L
 ||russiandc.com/banners/
 ||russiandc.com/ebs_show.php?
 rustorka.com##DIV > :nth-child(6) ~ H3
-! /banner_240_400. /reklama240_400. ||rustorka.com$object
 ||rustorka.com/*240*400$image,object
 ||rustorka.com/bigbang.html|
+||rustrackers.ru/banner_
+rustrek.ru###bn-bot-wrap
+rustrek.ru##A[href^="/shop.php?"]
 ||rutor.org/counter.
 ||rutor.org/m/
 rutracker.org###bn-bot-wrap
@@ -2799,6 +2803,8 @@ seasonvar.ru##.head-block > TABLE[width="1000"] TD[height="95"]
 ! Правило для блокировки рекламы при заблокированном JavaScript
 ||securitylab.ru/bitrix/$image,object
 @@||securitylab.ru/bitrix/*/$image
+||seedoff.net/partners/
+||seedoff.net/adv/
 sega.ucoz.com###reklama
 ||seobuilding.ru/myimages/$object
 serial-on.clan.su##A[href^="http://www.ruclicks.com/"]
@@ -2927,9 +2933,12 @@ topnews.ru##.headbanner
 topnews.ru##.newsOfPartners
 ||topnews.ru/upload/banners/
 ||topnews.ru/iframe/
+||toptracker.ru/banners/reklama/
+||toptracker.ru/banners/miniblock/
 torrent-games.net##BODY > CENTER
 ||torrent-games.net/flash/flashgames/
 ||torrent-games.net/media/?
+torrent-trackers.ru##.span-12.append-1
 torrents.net.ua###daos
 torrentszona.com##.banner_top
 torrentszona.com###popupMain
@@ -2976,6 +2985,7 @@ uniongang.tv##.outer[align="center"] > BR
 ||unlockers.ru/rotator.php
 upload.com.ua##.info_banner_block
 uploder.ws##CENTER:last-child
+||uptracker.ru/images/casino/
 ||upweek.ru/wp-content/banners/
 ura-inform.com##IFRAME[width="468"][height="60"]
 urokinadivane.ru##.right_three_top + .left_three_center
