@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: gAtKfmjkiJfjv697h99D1g
-! Last modification time (GMT): 2011.09.09 18:48
+! Checksum: 5sB6uS08ZpnBfc20r2ZI1Q
+! Last modification time (GMT): 2011.09.09 19:30
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -275,6 +275,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ! = Общие правила блокировки ==================================================
 !#global.bookmark
 .bannerbank_
+.bannerbank.
 ! vipaccess.su, goldentraffic.ru и, возможно, другие.
 .ru/code_id_*.js|$script
 /ad_click/*$object
@@ -1725,11 +1726,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /abnl/?begun=
 ?begun=*&begun_referrer=*&begun_location=
 /begun.js
-||autocontext.begun.ru^$third-party
+||begun.ru^$third-party
+! ||autocontext.begun.ru^$third-party
 ! domain=kino-live.org
-||video.begun.ru^$third-party,object_subrequest,domain=~yatv.ru
+! ||video.begun.ru^$third-party,object_subrequest,domain=~yatv.ru
 ! domain=intv.ru|lostcinema.ru
-||flash.begun.ru/banner.jsp?*$object-subrequest
+! ||flash.begun.ru/banner.jsp?*$object-subrequest
 
 ! BodyClick.NET
 /banner.php?sid=*&bn=*&ad=
