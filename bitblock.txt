@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: M+Q3xHwJZ6UTmZGVPohC/w
-! Last modification time (GMT): 2011.09.09 20:35
+! Checksum: 74wA6VK77oTc4T9CUmTOBg
+! Last modification time (GMT): 2011.09.12 10:51
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
@@ -61,11 +61,12 @@
 ###vkshare0
 ##.vk-button
 ##.vk-share-button
-//vk.com^$domain=~vkontakte.ru,third-party
+//vk.com^$third-party,domain=~vkontakte.ru
 /icons/vkontakte_
 ||vkontakte.ru^$third-party,script,subdocument
-@@||vkontakte.ru/js/api/openapi.js?$domain=kinopoisk.ru
-@@||vkontakte.ru/js/api/xd_connection.js$script
+||userapi.com^$third-party,domain=~vk.com|~vkontakte.ru
+! @@||vkontakte.ru/js/api/openapi.js?$domain=kinopoisk.ru
+! @@||vkontakte.ru/js/api/xd_connection.js$script
 @@||vkontakte.ru/video_ext.php?
 
 !------------ Мой Мир (Mail.RU) -----------------------------------------------
@@ -88,6 +89,7 @@
 ##.addthis
 /addthis.try.js
 ||addthis.com^$third-party
+###block_social_open
 ###odnaknopka
 /odnaknopka/*
 ||odnaknopka.ru^$third-party
@@ -136,7 +138,6 @@ delfi.ua##.sbookmarks
 deviantart.com##.deviation-share
 dpk.com.ua##.soc-box
 f1news.ru###bookmarkBlock
-filmix.net###block_social_open
 forum.f1news.ru,homenet.beeline.ru###ed-0_toolbar_3
 forum.f1news.ru,homenet.beeline.ru###fast-reply_toolbar_3
 forum.f1news.ru,homenet.beeline.ru##.topic_share
