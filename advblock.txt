@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: GJgeXKDZPhH4YCXuEy0kwA
-! Last modification time (GMT): 2011.09.12 10:52
+! Checksum: 7C2rRzBNEyNqhaYIOy0ipQ
+! Last modification time (GMT): 2011.09.12 11:15
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -265,7 +265,7 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 ! Реклама в поиске для партнёров Google.
 www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ! Плавающий баннер от Mega-Bazar. Содержимое блокируется правилом /bazar_fast/*, а это скрывает остатки.
-##DIV[id][align="center"][onmouseover][style*="fixed;"]
+! ~ecwid.com##DIV[id][align="center"][onmouseover][style*="fixed;"]
 ! - Скрытие по размеру --------------------------------------------------------
 ##IMG[width="120"][height="600"]
 ##IMG[width="160"][height="600"]
@@ -412,9 +412,9 @@ _tizer.
 ! Отличается отвратительной манерой плавать поверх всего и избегать любых общих
 ! правил. Появляется на многих сайтах и почти всегда под разными именами.
 ! Основной ареал обитания — варезники и порносайты.
-.php|$script,domain=dsvload.net|mskd.biz|manyclips.net|narodclub.net|nolamers.net|pilisos.net
-.php?id=$script,domain=dsvload.net|mskd.biz|manyclips.net|narodclub.net|nolamers.net|pilisos.net
-##SCRIPT[src*=".php"] + DIV[id][align="center"][style*="fixed;"]
+.php|$script,domain=dsvload.net|manyclips.net
+.php?id=$script,domain=dsvload.net|manyclips.net
+! ##SCRIPT[src*=".php"] + DIV[id][align="center"][style*="fixed;"]
 
 ! = Блокировка доменов ========================================================
 !#domains.bookmark
@@ -1788,10 +1788,10 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||teasernet.com^$third-party
 ! Подсеть: 88.85.93.###, адреса: 25, 34, 35, 100, 101
 ! См. http://www.robtex.com/cnet/88.85.93.html и по конкретным IP.
-! .com/block.js|$third-party
+.com/block.js|$third-party
 ! .com/show6.php?b=$third-party
 ! .com/step18.php?p=$third-party
-! .com/_search.js|$third-party
+.com/_search.js|$third-party
 ! Если прорывается один из /_search.js, то подгружается скрипт и фрейм с адресом вида imN-tub.com
 ! IP-адреса (кроме im-tub.com): 78.140.152.30+N-1
 ||im-tub.com^
@@ -1802,12 +1802,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||im5-tub.com^
 ||im6-tub.com^
 ! Пачка доменов тизернета вида домен.com/javascript/%alphanumerical%.
-.com/_search.js|
-.com/ajax/?*=*&*=$third-party,script
+! .com/ajax/?*=*&*=$third-party,script
+.com/ajax2/?*=*&*=$third-party,script
 .com/modules/*?*=*&*=$third-party,script
 .com/modules.*?*=*&*=$third-party,script
 .com/javascript/$third-party,script
-//web.*.com/static/*/*.js|$script
+! //web.*.com/static/*/*.js|$script
 ! Основные домены с мусором
 ||lacembre.com^
 ||lacemme.com^
@@ -1843,6 +1843,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||lexament.com^
 ||spechete.com^
 ||striete.com^
+||supertura.com^
 ||teaservizio.com^
 ||tierest.com^
 ||timonom.com^
