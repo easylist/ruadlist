@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: fVRuU+VxBlm2//TjA0yglQ
-! Last modification time (GMT): 2011.09.12 14:16
+! Checksum: AQ5HGjg6Sdl8+Ehhwy+6mg
+! Last modification time (GMT): 2011.09.13 08:53
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -139,6 +139,11 @@ help2play.com,moneymaiker.ru,vsemtube.ru,vzarabotke.ru##*
 ||pokajem.*.*/
 ||glopic.com$domain=izvrasheniya.com|nashevideo.info|pokajem.do.am|portvx.com
 izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
+
+! = Регулярные выражения ======================================================
+!#regexp.bookmark
+! Сайты городов и регионов России (огромное множество их)
+/\.ru\/([-.a-zA-Z0-9]*\/){4,5}$/$script
 
 ! = Исключения ================================================================
 ! - Против ложных срабатываний ------------------------------------------------
@@ -482,7 +487,6 @@ _tizer.
 ||468.vologdainfo.ru^
 ||4files.net/im/but/4files
 ||4smi.ru/$third-party
-||74.ru/textblocks/
 ||7rtv.com^$third-party
 ||8coins.net^$third-party
 ||8test.ru^$third-party
@@ -1331,7 +1335,6 @@ _tizer.
 ||reg.ru^$third-party
 ||regac.ru^$third-party
 ||reggun.ru/images/b*_
-||region59.net/buttons/
 ||reklamaster.com^$third-party
 ||reklamnoedelo.com^$third-party
 ||revsci.net^$third-party
