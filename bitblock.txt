@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: 74wA6VK77oTc4T9CUmTOBg
-! Last modification time (GMT): 2011.09.12 10:51
+! Checksum: dvkWkVQeRwbAdMs9jgzIfg
+! Last modification time (GMT): 2011.09.13 11:09
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
@@ -29,15 +29,17 @@
 ||disqus.com^*/recent_comments_widget.
 
 !------------ Facebook --------------------------------------------------------
+##[alt$=" on Facebook"]
 ##.aol-faux-facebook-like
 ##.soc_fb_share
-~facebook.com###facebook
-##[alt$=" on Facebook"]
 ##[title$=" to Facebook"]
-||facebook.$third-party,script,subdocument,domain=~facebook.com
-! Возможно, ,~image в след. правиле придётся заменить на @@||sphotos.ak.fbcdn.net/hphotos-ak-
-||fbcdn.net^$third-party,domain=~facebook.com,~image
+~facebook.com###facebook
 @@||connect.facebook.net^$third-party
+||facebook.$third-party,script,subdocument,domain=~facebook.com
+||fbcdn.net^$third-party,domain=~facebook.com,~image
+/facebook_icon_
+_facebook.png
+_facebook.gif
 
 !------------ Google ----------------------------------------------------------
 ##.g_plus
@@ -50,6 +52,7 @@
 
 !------------ LiveJournal -----------------------------------------------------
 /ljthis?
+_livejournal.gif
 
 !------------ LovePlanet ------------------------------------------------------
 ||loveplanet.ru^$third-party,domain=~loveplanet.ua
@@ -61,13 +64,16 @@
 ###vkshare0
 ##.vk-button
 ##.vk-share-button
-//vk.com^$third-party,domain=~vkontakte.ru
-/icons/vkontakte_
-||vkontakte.ru^$third-party,script,subdocument
-||userapi.com^$third-party,domain=~vk.com|~vkontakte.ru
 ! @@||vkontakte.ru/js/api/openapi.js?$domain=kinopoisk.ru
 ! @@||vkontakte.ru/js/api/xd_connection.js$script
 @@||vkontakte.ru/video_ext.php?
+//vk.com^$third-party,domain=~vkontakte.ru
+||vkontakte.ru^$third-party,script,subdocument
+||userapi.com^$third-party,domain=~vk.com|~vkontakte.ru
+/icons/vkontakte_
+/vkontakte_icon_
+_vkontakte.gif
+_vkontakte.png
 
 !------------ Мой Мир (Mail.RU) -----------------------------------------------
 ##.mrc__share
@@ -102,16 +108,11 @@
 ##.social_links
 ###socialblock
 ! /copy_to_blog_button_  и /copy_to_blog_icon_
+! К gif-версиям можно добавить _icon в начале.
 /copy_to_blog_*.gif
-_facebook.png
-_twitter.png
-_vkontakte.png
-! К следующим при необходимости можно спереди добавить _icon и убрать расширение
-_facebook.gif
 _liveinternet.gif
-_livejournal.gif
 _twitter.gif
-_vkontakte.gif
+_twitter.png
 
 !------------ Закладки --------------------------------------------------------
 ||bobrdobr.ru/images/buttons/$third-party

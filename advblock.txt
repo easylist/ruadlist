@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: AQ5HGjg6Sdl8+Ehhwy+6mg
-! Last modification time (GMT): 2011.09.13 08:53
+! Checksum: AKdZulQCvwolX4T+qBJAYQ
+! Last modification time (GMT): 2011.09.13 11:09
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1557,6 +1557,7 @@ _tizer.
 ||us.i1.yimg.com^
 ||usde.biz^$third-party
 ||usde.ru^$third-party
+||usermediaclick.ru^$third-party
 ||utarget.ru^$third-party
 ||vareza.net^$third-party
 ||vas.ppro.de/click/
@@ -1779,6 +1780,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ###medialand_adland_inline_div_750
 ||content*.medialand.ru$~script
 ||popunder-mladnet.medialand.ru
+
+! NewsAnons.ru — вроде как новости, но на сторонних сайтах — реклама
+! Замечено на fastpic, вставляет скрипт с домена usermediaclick.ru
+||newsanons.ru^$third-party
+||news-announce.com^$third-party
+/newsanons/*?advert[]=
 
 ! Торговая система NADAVI
 ! e-katalog.com.ua, e-katalog.kiev.ua, e-katalog.ru, nadavi.com.ua, nadavi.ru, podberi.tv, pokupaj.com.ua, pokupaj.ru и прочие
@@ -2151,9 +2158,11 @@ fast-torrent.ru##.ad
 ||fast-torrent.ru/*banner
 ||fast-torrent.ru/media/$object
 fasttorrent.ru##.ad_block
+! fastpic.ru##A[target="_blank"][rel="nofollow"][href^="http://static.fastpic.ru/"]
+fastpic.ru###left
 fastpic.ru###right
-fastpic.ru##A[target="_blank"][rel="nofollow"][href^="http://static.fastpic.ru/"]
-||static.fastpic.ru/*_*.jpg|
+fastpic.ru###top
+! ||static.fastpic.ru/*_*.jpg|
 ||fb.finam.ru^
 ||fbr.info/images/150x50/
 ||fbra.fbr.info/fbimage.php?
