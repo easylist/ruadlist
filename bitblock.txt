@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: 7ebMVv5uBTfty4qkzJ6HVA
-! Last modification time (GMT): 2011.09.14 08:33
+! Checksum: dN1SMKwd5i9WUV8mfwNcTw
+! Last modification time (GMT): 2011.09.16 22:24
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
@@ -64,8 +64,9 @@ _livejournal.gif
 ###vkshare0
 ##.vk-button
 ##.vk-share-button
-! @@||vkontakte.ru/js/api/openapi.js?$domain=kinopoisk.ru
-! @@||vkontakte.ru/js/api/xd_connection.js$script
+! Внимание!
+! Если требуется работа сервиса авторизации через ВКонтакте, то создайте у себя
+! вот такое вот правило-исключение: @@/js/api/openapi.js$script
 @@||vkontakte.ru/video_ext.php?
 //vk.com^$third-party,domain=~vkontakte.ru
 ||vkontakte.ru^$third-party,script,subdocument
