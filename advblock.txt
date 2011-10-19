@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: oJz4wNmf0LtL/BT+QQI8IA
-! Last modification time (GMT): 2011.09.19 08:45
+! Checksum: yDPX7edzaHQMwfzu/Tb9GA
+! Last modification time (GMT): 2011.09.19 09:11
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1499,7 +1499,6 @@ _tizer.
 ||tizerka.in^$third-party
 ||tizermedia.$third-party
 ||tizero.ru^$third-party
-||tizerplatform.
 ||tizerstock.com^$third-party
 ||tizzer.ru^$third-party
 ||tle.ru^$third-party
@@ -1749,6 +1748,11 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||advmaker.ru/go.php?
 ||web-leaders.ru/adv.
 
+! awsfvdg — обычно единственный текст на сайте
+/code.php?type=*&id=$script
+||advancedadv.
+||tizerplatform.
+
 ! Begun.RU
 /abnl/?begun=
 ?begun=*&begun_referrer=*&begun_location=
@@ -1763,16 +1767,16 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! BodyClick.NET
 /banner.php?sid=*&bn=*&ad=
 /bodyclick.
+.bodyclick.
 /tizers2.
-||bodyclick.net^$third-party
-||tizer6.net^$third-party
-||tizer7.net^$third-party
-||tizer8.net^$third-party
-||tizerbest.net^$third-party
-||tizerda.net^$third-party
-||tizergo.net^$third-party
-||tizermine.net^$third-party
-||tizerset.net^$third-party
+||tizer6.net^
+||tizer7.net^
+||tizer8.net^
+||tizerbest.net^
+||tizerda.net^
+||tizergo.net^
+||tizermine.net^
+||tizerset.net^
 
 ! CashProm.ru
 ! «ooops. this domain used as a gateway for cashprom.ru advertising system»
@@ -2739,6 +2743,7 @@ qwe.ru##TABLE + TABLE TR:last-child > TD:last-child > .border
 ! R
 radikal.ru##[id^="left_ban"]
 radiorecord.ru##.banner
+radiorecord.ru##.rotator
 rapidzona.com###dle-content NOINDEX
 rapidzona.com###main > NOINDEX
 ||rapidzona.com/*_200x400_
