@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: F43ghXwEQuFLphOottt4Nw
-! Last modification time (GMT): 2011.09.19 08:27
+! Checksum: IKb7xX/04FI2Yfs1tRlUfA
+! Last modification time (GMT): 2011.09.19 14:29
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
-
+!
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
 ! Целью проекта является блокировка всего популярного и совершенно не нужного,
@@ -11,23 +11,23 @@
 ! НЕ РЕКОМЕНДУЕТСЯ к установке по-умолчанию.
 ! Включает фрагменты менее агрессивной подписки fanboy'а. Данные о ней ниже.
 !==============================================================================
-
+!
 ! Исключения
 @@||f1.mozillamessaging.com/share/panel/$document
 @@||google.com/js/plusone.js|$domain=pikucha.ru
 @@||yandex.st/share/share.js|$domain=pikucha.ru
-
+!
 != Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
 !#social.bookmark
 != Тут не все правила - см. подписку фанбоя ниже.
-
+!
 !------------ Disqus ----------------------------------------------------------
 ! Это не социальная сеть, а централизованный сервис для комментариев с логином
 ! из любой крупной соц-сети или даже из GMail.
 ! Сам по-себе он полезен, но вот некоторые его виджеты — нет.
 ###recent-disqus-comments
 ||disqus.com^*/recent_comments_widget.
-
+!
 !------------ Facebook --------------------------------------------------------
 ##[alt$=" on Facebook"]
 ##.aol-faux-facebook-like
@@ -40,7 +40,7 @@
 /facebook_icon_
 _facebook.png
 _facebook.gif
-
+!
 !------------ Google ----------------------------------------------------------
 ##.g_plus
 ||apis.google.com/js/plusone.js$third-party
@@ -49,17 +49,17 @@ _facebook.gif
 ||google.*/coop/cse/brand?
 ||google.*/cse/api/branding.
 ||translate.google.com/translate_a/element.js?
-
+!
 !------------ LiveJournal -----------------------------------------------------
 /ljthis?
 _livejournal.gif
-
+!
 !------------ LovePlanet ------------------------------------------------------
 ||loveplanet.ru^$third-party,domain=~loveplanet.ua
-
+!
 !------------ RuTvit ----------------------------------------------------------
 ||rutvit.ru/js/share.js$third-party
-
+!
 !------------ ВКонтакте -------------------------------------------------------
 ! Внимание!
 ! Если требуется работа сервиса авторизации через ВКонтакте, то создайте у себя
@@ -79,23 +79,23 @@ _livejournal.gif
 /vkontakte_icon_
 _vkontakte.gif
 _vkontakte.png
-
+!
 !------------ Мой Мир (Mail.RU) -----------------------------------------------
 ##.mrc__share
 ||boom.mail.ru^
 ||connect.mail.ru^$third-party
 @@||connect.mail.ru/js/loader.js|
 ||imgsmail.ru/*_share_buttons_sprite.$third-party
-
+!
 !------------ Одноклассники ---------------------------------------------------
 ##.odkl-klass
 ||odnoklassniki.ru/share/$third-party
-
+!
 !------------ Яndex -----------------------------------------------------------
 ##.yashare-auto-init
 ||lenta.yandex.ru/i/addfeed.
 ||yandex.st/share/$domain=~yandex.ru|~yandex.ua
-
+!
 !- Универсальные --------------------------------------------------------------
 ##.addthis
 /addthis.try.js
@@ -120,13 +120,13 @@ _vkontakte.png
 _liveinternet.gif
 _twitter.gif
 _twitter.png
-
+!
 !------------ Закладки --------------------------------------------------------
 ||bobrdobr.ru/images/buttons/$third-party
 ||memori.ru^$third-party
 ||mister-wong.ru/img/*/buttons/$third-party
 ||moemesto.ru/icons/$third-party
-
+!
 !- По-сайтам (частные) --------------------------------------------------------
 !#socpriv.bookmark
 3dnews.ru###article + .breadcrumbs
@@ -217,7 +217,7 @@ navitel.su##.extra_append:last-child
 ||novafilm.tv/static/icons/social-
 ||overclockers.ru/images/buttons/
 ||thevista.ru/*/img/soc/
-
+!
 != Информеры ==================================================================
 !#informers.bookmark
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru###rbc
@@ -250,7 +250,7 @@ gismeteo.ua###ad-rbkua
 ||timeout.ru^$third-party
 ||webdiscover.ru^$third-party
 ||www.rb.ru^$third-party
-
+!
 != Мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) =================
 ! Блоки с авторскими правами и, часто, мусором на многих сайтах.
 !#trash.bookmark
@@ -341,7 +341,7 @@ e.mail.ru##.rb_mmDivM
 news.mail.ru##.placeForLayerToBlog + .actions
 mail.ru##.mf_smsTop
 mail.ru##.spu
-
+!
 ! Сайты на движке TorrentPier
 21region.org,data-torrents.com,freeisland.org,free-torrents.org,gardnet.tomsk.ru,goldenshara.com###page_footer
 mortan.info,myy.su,nnbt.org,pornolab.net,rus-torrents.ru,rustrek.ru,rutracker.org,rutracker.ru###page_footer
@@ -355,7 +355,7 @@ tapochek.net,underverse.su,wtracker.ru###logo
 ||rustorka.com/*_logo.
 rutracker.org###sidebar1
 unionpeer.org###page_header > #head
-
+!
 != Мерцающего текста рассадники ===============================================
 !#glitter.bookmark
 ||animashka.info^$third-party
@@ -364,7 +364,7 @@ unionpeer.org###page_header > #head
 ||glitter-graphics.net^$third-party
 ||glitterfy.com^$third-party
 ||sparklee.com^$third-party
-
+!
 != Блокировка мусора в подписях на форумах ====================================
 !- Правила скрытия блока подписей ---------------------------------------------
 !#signature.bookmark
@@ -374,12 +374,12 @@ unionpeer.org###page_header > #head
 ##.user_signature
 ##.usersig
 kadets.info##DIV[id^="post_message_"] + DIV
-
+!
 !- Удивительно отвратительных анимированных смайлов рассадники ----------------
 ! Встречаются не столько в подписях, сколько в самом тексте. Лучше и не видеть.
 !#smiles.bookmark
 ||smiles.clan.su^$third-party
-
+!
 !- Общие правила блокировки линеечек и юзербаров ------------------------------
 !#lines,userbars.bookmark
 .info/lines/$image
@@ -411,7 +411,7 @@ kadets.info##DIV[id^="post_message_"] + DIV
 _userbar.$image
 _userbar/$image
 _userbar_$image
-
+!
 !- Блокировка отдельных источников линеечек и юзербаров -----------------------
 ||2142-stats.com^$third-party
 ||2ip.ru/bar/
@@ -531,7 +531,7 @@ _userbar_$image
 ||zaers.ru^$third-party
 ||zelgan.ucoz.ru/Userbarss/
 ||zoometric.ru^$third-party
-
+!
 !------------------------------------------------------------------------------
 !- Дальнейшие правила взяты из подписки от fanboy и нацелены исключительно на -
 !- блокирокву мусора из социальных сетей. Не оптимальные правила удалены.     -
@@ -803,7 +803,6 @@ _social_icons.
 ||socialtwist.com^$third-party
 ||space.com/images/site/social/
 ||space.com/social.html
-
 ||static.addtoany.com^$third-party
 ||static.delicious.com^$third-party
 ||stumble-upon.com^$third-party,domain=~stumbleupon.com
@@ -816,7 +815,6 @@ _social_icons.
 ||tsbmag.com^*/tsb_b31.jpg
 ||tuaw.com^*/related-slider.js
 ||votes.buzz.yahoo.com^$third-party
-
 ||widgets.backtype.com^$third-party
 ||widgets.digg.com^$third-party,script,image,stylesheet
 ||widgets.dzone.com^$third-party
