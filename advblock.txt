@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: Lsmf9aQxrQN1vjCuCtKXVQ
-! Last modification time (GMT): 2011.09.19 09:28
+! Checksum: K6z+zQrizw14x3++xGE9GA
+! Last modification time (GMT): 2011.09.19 14:26
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -139,12 +139,12 @@ help2play.com,moneymaiker.ru,vsemtube.ru,vzarabotke.ru##*
 ||pokajem.*.*/
 ||glopic.com$domain=izvrasheniya.com|nashevideo.info|pokajem.do.am|portvx.com
 izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
-
+!
 ! = Регулярные выражения ======================================================
 !#regexp.bookmark
 ! Сайты городов и регионов России (огромное множество их)
 /\.ru\/([-.a-zA-Z0-9]*\/){4,5}$/$script
-
+!
 ! = Исключения ================================================================
 ! - Против ложных срабатываний ------------------------------------------------
 !#exfalse.bookmark
@@ -207,7 +207,7 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 @@||advertpay.net/?id=*&rid=$script,domain=utro.ru
 @@||adv.magna.ru/?id=*&rid=$script,domain=mk.ru|utro.ru
 @@||premium.mbn.com.ua^$script,domain=ura-inform.com
-
+!
 ! = Общие CSS-фильтры =========================================================
 !#css.bookmark
 ###ads_iframe
@@ -277,7 +277,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ##IMG[width="160"][height="600"]
 ##IMG[width="468"][height="60"]
 ##IMG[width="728"][height="90"]
-
+!
 ! = Общие правила блокировки ==================================================
 !#global.bookmark
 .bannerbank_
@@ -421,7 +421,7 @@ _tizer.
 .php|$script,domain=dsvload.net|manyclips.net
 .php?id=$script,domain=dsvload.net|manyclips.net
 ! ##SCRIPT[src*=".php"] + DIV[id][align="center"][style*="fixed;"]
-
+!
 ! = Блокировка доменов ========================================================
 !#domains.bookmark
 -iframe.com^$third-party
@@ -429,7 +429,7 @@ _tizer.
 //r*.izvestia.ru/*
 /bs.mybb.ru/*
 /bs.nigma.ru/*$domain=~nigma.ru
-
+!
 //77.91.228.66/banners/*
 //78.140.145.93^
 //78.140.145.178^
@@ -460,7 +460,7 @@ _tizer.
 //213.186.217.210/banners/*
 //213.199.175.155^
 //217.170.78.*/banners/*
-
+!
 ||003.com.ua^$third-party
 ||012345.ru/upload/
 ||1-traf.net^$third-party
@@ -1695,7 +1695,7 @@ _tizer.
 ||zto.h16.ru^$third-party
 ||zuni.tyndex.ru^$third-party
 ||zvukoff.ru/24open/*.jpg
-
+!
 ! 1Under.RU (все сидят на IP 89.208.145.156)
 .com/j15.php$script,third-party
 ||1under.ru^$third-party
@@ -1712,12 +1712,12 @@ _tizer.
 ||ruigra.com^$third-party
 ||textun.ru^$third-party
 ||yohioo.com^
-
+!
 ! AdFox.RU
 ||adwolf.ru^$third-party
 /adfox.$script
 /adfox/*$image,object,script,subdocument
-
+!
 ! AdRiver.RU
 ###ad_ph_1
 ###ad_ph_2
@@ -1725,7 +1725,7 @@ _tizer.
 ###adriver_middle
 compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /banners/*/*/0/index.$subdocument
-
+!
 ! AdStock.RU
 ##A[href*=".ru/fn.php?r="]
 ##A[href*=".ru/newfn/?go="]
@@ -1736,7 +1736,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||getcd.ru^$third-party
 ||kakdolgo.ru^$third-party
 ||superfastcomputer.ru^$third-party
-
+!
 ! AdvMaker.RU
 ! IP: 95.169.186.164
 ||advmaker.ru^$third-party
@@ -1746,12 +1746,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Popup windows
 ||advmaker.ru/go.php?
 ||web-leaders.ru/adv.
-
+!
 ! awsfvdg — обычно единственный текст на сайте
-/code.php?type=*&id=$script
+! /code.php?type=*&id=$script
 ||advancedadv.
 ||tizerplatform.
-
+!
 ! Begun.RU
 /abnl/?begun=
 ?begun=*&begun_referrer=*&begun_location=
@@ -1762,7 +1762,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! ||video.begun.ru^$third-party,object_subrequest,domain=~yatv.ru
 ! domain=intv.ru|lostcinema.ru
 ! ||flash.begun.ru/banner.jsp?*$object-subrequest
-
+!
 ! BodyClick.NET
 /banner.php?sid=*&bn=*&ad=
 /bodyclick.
@@ -1776,19 +1776,19 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||tizergo.net^
 ||tizermine.net^
 ||tizerset.net^
-
+!
 ! CashProm.ru
 ! «ooops. this domain used as a gateway for cashprom.ru advertising system»
 ||cashprom.ru^$third-party
 ||microad.ru^$third-party
 ||microads.ru^$third-party
 .ru/cn/120x600.html?r=
-
+!
 ! MediaLand.ru — партнёрская сеть компании «Медиа Мир».
 ###medialand_adland_inline_div_750
 ||content*.medialand.ru$~script
 ||popunder-mladnet.medialand.ru
-
+!
 ! NewsAnons.ru — вроде как новости, но на сторонних сайтах — реклама
 ! Замечено на fastpic.ru и kino-dom.tv, вставляет скрипт с доменов user*click.ru
 ||newsanons.ru^$third-party
@@ -1796,19 +1796,19 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /newsanons/*?advert[]=
 ||usercontentclick.ru^
 ||usermediaclick.ru^
-
+!
 ! Smart BN
 /sbn2.js$third-party
 //178.162.137.217/*
 ||smartbn.ru^$third-party
-
+!
 ! Торговая система NADAVI
 ! e-katalog.com.ua, e-katalog.kiev.ua, e-katalog.ru, nadavi.com.ua, nadavi.ru, podberi.tv, pokupaj.com.ua, pokupaj.ru и прочие
 ###nadaviSpan
 /ekbn/src/*
 ||nadavi.$third-party
 ||podberi.tv^$third-party
-
+!
 ! TeaserNET.com
 ||teasernet.com^$third-party
 ! Подсеть: 88.85.93.###, адреса: 25, 34, 35, 100, 101
@@ -1880,25 +1880,25 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||ddqq.com.ua^
 ||stats.internet-yadro.com^
 ||teasernet.ru^
-
+!
 ! Tizy.ru
 ||tizy.ru^$third-party
 ||tjs1.ru^
 ||zipcash.ru^$third-party
-
+!
 ! Ucoz.NET
 ||ucoz.*/img/ma/cv.gif
 ||ucoz.*/adv/
 ||ucoz.*/bnr/
-
+!
 ! Yadro.RU
 ||aif.yadro.ru^
 ||sticker.yadro.ru^
 ||yadro.ru/ad/
-
+!
 ! = Частные правила для сайтов(блокировка и скрытие) ==========================
 !#local.bookmark
-
+!
 ! #
 ||1000ukg.kz/uploads/banner/
 100let.net##[id^="SR_PopOver"]
@@ -1928,7 +1928,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||7ja.ru/imgb/
 ||7sl.ru/uploads/$object
 9sx.ru##MARQUEE[scrollamount]
-
+!
 ! A
 adultmanga.ru##.baner
 ||adultmult.ru/banners/
@@ -1980,7 +1980,7 @@ autoua.net###footer-holding
 ||avata.ru/images/240x400.png
 ||avatary.ru/smilebar/
 azart.net.ua##A[href="/adv.php"]
-
+!
 ! B
 bagnet.org##.banner
 ||bagnet.org/doc/images/
@@ -2011,7 +2011,7 @@ borifan.com.ua###container > #center > DIV:not([id^="dle-"])
 ||bugaga.tut.by^
 business-gazeta.ru##[width="226"] > TBODY > TR > [align="center"] > NOINDEX
 ||business-gazeta.ru/partners/
-
+!
 ! C
 ||carexpert.ru/reclama/
 catzone.ws##.bc_adv
@@ -2063,7 +2063,7 @@ cwer.ru##.round > NOINDEX
 cwer.ru###footer
 ||cwer.ru^$subdocument
 cyberinfo.ru###bl_05
-
+!
 ! D
 d09032009.narod.ru##A[target="_blank"] > IMG
 danilidi.ru###Okoshko
@@ -2125,7 +2125,7 @@ dwg.ru##TD[background$="/img/back22.gif"] > TABLE
 ||dwg.ru/img/$object
 ||dwg.ru/img*0_
 dynamo.kiev.ua##.hban
-
+!
 ! E
 ||easycom.com.ua/adbn/
 ebay-forum.ru##.postbody > DIV[style*="images/stick.png"]
@@ -2164,7 +2164,7 @@ exler.ru###AdvertFieldCenter
 exnews.org##[class$="bbody"]
 exnews.org##CENTER + NOINDEX
 ||exploit.in/materials_/
-
+!
 ! F
 f1news.ru###bannerBlock
 f1news.ru###newsexch
@@ -2259,7 +2259,7 @@ fullgames.ru###main + #right
 fullgames.ru##CENTER > NOINDEX > A[target="_blank"]
 ||fullgames.ru^$object
 funlog.ru###rfunlog
-
+!
 ! G
 gagadget.com###footer-holding
 gagadget.com##[style*="width: 240px"][style*="height: 350px"]
@@ -2307,7 +2307,7 @@ gzt.ru###bubble
 gzt.ru##.b-advertisement
 gzt.ru##.b-imported-advertisement
 gzt.ru##.soyuz_zhur
-
+!
 ! H
 habrahabr.ru##.beeline_htmlblock
 ||hacker-pro.net/banner/
@@ -2337,7 +2337,7 @@ hwp.ru##[class^="promo"]
 hwp.ru##[class*="tbann"]
 hwp.ru##.l-article-wrapper > CENTER > A[target="_blank"] > IMG[border="0"]
 ||hwp.ru/images/mid/h-anons.
-
+!
 ! I
 i.ua##.TopBanner730
 i.ua##.baner
@@ -2398,12 +2398,12 @@ forum.ixbt.com##.top_ad2
 ||rose.ixbt.com/cgi-bin/
 izone.ru##NOINDEX TABLE[width="100%"]
 izvestia.ru##.right_banner_block
-
+!
 ! J
 jeder.ru###colwrap > .module-notitle
 ||jetune.ru/images/760-90-
 ||jimbot-portal.net.ru/*banners
-
+!
 ! K
 kadets.info###mc_728_90
 kanobu.ru##.banner
@@ -2476,7 +2476,7 @@ kp.by,kp.ru,~ufa.kp.ru##.uslot_banner
 ||kulina.ru/swf/
 kyivpost.ua##.banner
 kyivpost.ua###advert_full
-
+!
 ! L
 ||lacucinaitaliana.ru/images/
 ||lavteam.net/banners/
@@ -2501,7 +2501,7 @@ lovesoft.ru###dle-content > CENTER > A[target="_blank"]
 ||lu4ok.ru/partnerearning/
 lurkmore.ru###column-one A > IMG[src^="data:image/"]
 ||lurkmore.ru/*?block=$xmlhttprequest
-
+!
 ! M
 maccentre.ru##DIV[id^="bn_"]
 macdigger.ru###top + DIV[style]
@@ -2579,7 +2579,7 @@ muzoff.ru###ibp
 ||muzoff.ru/html/
 ||my-hit.ru/*/banner/
 ||mywed.ru/bnr/
-
+!
 ! N
 ||na-svyazi.ru/img/$object
 ||na-svyazi.ru/uploads/$object
@@ -2646,7 +2646,7 @@ npicture.net##A > IMG[src*="npicture.net/image-"]
 ||nr2.ru/pict/banners/
 nwcod.com##TD[width="2"] + .slink[align="center"] > :not(#dle-content)
 ||nya.sh/imgs/a/
-
+!
 ! O
 ||objectiv.tv/templates/$object
 obnimau.ru##NOINDEX > CENTER > TABLE
@@ -2691,7 +2691,7 @@ oszone.net###rightcol-c > DIV > NOINDEX
 ||otido.com.ua/banner_/
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
-
+!
 ! P
 ||patria.md/i/partners/
 pc-user.ru###dropin
@@ -2738,14 +2738,14 @@ maps.probki.net##[width="180"] > TBODY > TR:last-child
 ||probki.net/images$object
 prostopleer.com##.ad
 ||prostopleer.com/t.php?
-
+!
 ! Q
 qip.ru##.q_banner
 qiq.ws##NOINDEX > DIV[id^="MarketGidComposite"] + BR + DIV[style^="border"]
 ||qiq.ws/design/qiq/ban/
 qwe.ru##.default_menu > DIV:first-child
 qwe.ru##TABLE + TABLE TR:last-child > TD:last-child > .border
-
+!
 ! R
 radikal.ru##[id^="left_ban"]
 radiorecord.ru##.banner
@@ -2820,7 +2820,7 @@ rustrek.ru##A[href^="/shop.php?"]
 rutracker.org###bn-bot-wrap
 rutracker.org##TR#f-11:last-child
 ||rutracker.ru/images/banner/
-
+!
 ! S
 ||s-economit.ru/wp-content/uploads/$object
 ||saint-petersburg.ru/i/ban2/
@@ -2938,7 +2938,7 @@ sudga.ru##IMG[width="225"][height="80"]
 superhimik.com###login_popup
 sysadmins.ru##NOINDEX > A[target="new"][rel="nofollow"]
 ||sysadmins.ru/adv/
-
+!
 ! T
 ||takelink.org/engine/ajax/check.js$script
 !tbd:skipped:begin
@@ -3008,7 +3008,7 @@ trinixy.ru##[rel="nofollow"] > FONT[color="#ff0000"]
 ||turbobit.net/files/
 ||turbobit.net/js/partner_
 ||twistcasino.net^$third-party
-
+!
 ! U
 ua-football.com###adriver_top
 ua-football.com##.footer_bottom
@@ -3053,7 +3053,7 @@ utro.ru##.banner-right
 utro.ru##.conteiner-partner
 utro.ru##[id^="mlph"]
 ||utro.ru/*/banners/
-
+!
 ! V
 vedomosti.ru##.left_banner
 vedomosti.ru##.footer
@@ -3099,7 +3099,7 @@ vsetyt.us###promo
 //www.vsevam.ru^$object
 ||vz.ru/import/
 ||vz.ru/inc/b/
-
+!
 ! W
 ||warezlab.ru^*rotator
 webantivirus.ru##DIV[style*="468px;"][style*="60px;"]
@@ -3119,14 +3119,14 @@ wiaderko.com###topbar
 ||winzoro.com/data/ba_ne_r/
 womanbusiness.ru##TABLE[style*="2px dashed;"]
 world-art.ru/bipack/
-
+!
 ! X
 x-console.com##DIV[style*="710px;"][style*="70px;"]
 xmages.net##.we-are-featured
 ||xmages.net/*/banner/
 xyya.net##TD[align="center"][style="width:220px;"] + TD[valign="top"] > :not(#dle-content)
 ||xyya.net/banner/
-
+!
 ! Y
 y4eba.net.ru##.log .bod
 yaplakal.com###top-line
@@ -3138,7 +3138,7 @@ yarportal.ru##[style$="height: 60px;"]
 yarportal.ru##TD.desc
 ||yarportal.ru/$image,background
 @@||yarportal.ru/*/$image
-
+!
 ! Z
 zadolba.li##.sidebar > .ok
 zadonbass.org###main_banner
@@ -3163,14 +3163,14 @@ zhmak.info##TD[width="180"]:first-child + TD[width="5"] + TD > :not([class="news
 ||zloy.im^$domain=zloy.bz
 ||zoda.ru/images/swf/
 ||api.zoomby.ru^$object-subrequest,~third-party
-
+!
 ! GISMeteo BY/COM/LT/RU
 //a.gismeteo.
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru###ad-lb
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru###ad-rian
 ||gismeteo.*/rian.html|
 ||gismeteo.*/static/app/*/*.gif
-
+!
 ! Interfax (Домены группы «Интерфакс»)
 ! BY: interfax.by
 ! RU: best-money.ru,e-disclosure.ru,finmarket.ru,ideal.ru,ifx.ru,interfax.ru,interfax-russia.ru,
@@ -3181,7 +3181,7 @@ finmarket.ru,interfax.ru##[id^=bbInformer]
 finmarket.ru,pmoney.ru##A[href^="/RCL/TXT/"]
 interfax.by##.banner
 ||interfax.by/files/$object
-
+!
 ! KM.RU
 .lbs.km.ru/mod/_banners/*-240x200.
 .lbs.km.ru/mod/_banners/*?param1=
@@ -3189,7 +3189,7 @@ banner.lbs.km.ru##A[target="_blank"] > IMG[width="310"]
 km.ru##.top-banner
 km.ru##IFRAME[height="90"]
 t2t.ru##.tbn
-
+!
 ! Mail.RU и Одноклассники
 ! Объединять правила с banner в конце не стоит — на самом деле там ещё классы перечислены часто.
 ! Скрытие по-разделам
@@ -3248,7 +3248,7 @@ odnoklassniki.ru##DIV[id$="Banner"]
 ||banners.mail.ru^$third-party
 ||showbiz.mail.ru^$third-party
 ||torg.mail.ru/prtnr/$third-party
-
+!
 ! Meta.UA
 meta.ua###meta_banner_top
 meta.ua###meta_market_bottom
@@ -3258,7 +3258,7 @@ meta.ua##.ads
 ||meta.ua/img/banners/
 ||metamarket.ua/banner/
 ||metamarket.com.ua^$third-party
-
+!
 ! NGS.RU
 ||ngs.ru/*.swf?pid=*&link1=
 dom.ngs.ru###logo_banners
@@ -3273,7 +3273,7 @@ ngs.ru##A[class][style*="display: block;"][href^="/"]
 realty.ngs.ru###clients
 relax.ngs.ru###exclusive
 turizm.ngs.ru###logo-menu
-
+!
 ! Overclockers.RU
 ! Блок анонсов и рекламы на форуме и в статьях (на главной странице пусть будет)
 forums.overclockers.ru##DIV[id] > DIV[align="center"] > TABLE[width="100%"][align="center"]
@@ -3291,7 +3291,7 @@ overclockers.ru###rightplace
 overclockers.ru###footer > DIV[style]
 ! Флэш-баннеры
 ||overclockers.ru/images/$object
-
+!
 ! Rambler.RU и их проекты
 autorambler.ru##.bannerInside
 autorambler.ru##.banner-board
@@ -3314,7 +3314,7 @@ weather.rambler.ru###prices
 ||rambler.ru/upl/ad/
 ||rambler.ru/upl/clients/
 ||rambler.ru/upl/partners/
-
+!
 ! RBC (РБК)
 ##.rbcobmen
 cnews.ru###mag_banner
@@ -3337,7 +3337,7 @@ rbcdaily.ru##[class*="_adv"]
 ||pics.rbc.ru/img/banners/
 ||pics.rbc.ru^*/img.*?
 ||zoom.cnews.ru/inc/bpic/
-
+!
 ! VKontakte.RU (ВКонтакте)
 ! Реклама самого вконтактика и всех, кто на нём так или иначе пасётся
 vkontakte.ru###ad_box_ad_0
@@ -3359,18 +3359,18 @@ vkontakte.ru###left_ads
 ! Реклама игр в играх
 ||everall.ru/static/img/banners/
 ||referral.mesury.ru^$domain=vkontakte.ru,object-subrequest
-
+!
 ! Ukr.NET
 ||informers.ukr.net^
 search.ukr.net##.ads-header
 search.ukr.net##.ads-header + SPAN > .ad
 ||ukr.net/i/rozetka/
 ||ukr.net/partner/
-
+!
 ! Сеть городских сайтов Украины
 ua##A[href^="/redirect/url?url="] > IMG[src^="/upload/jackets/"]
 ||ua/upload/jackets/
-
+!
 ! Yandex (Яndex)
 yandex.ru,yandex.ua###banner
 yandex.ru,yandex.ua##.ads.g-line
@@ -3393,12 +3393,12 @@ yandex.ru,yandex.ua##DIV[id*=direct]
 ||yabs.yandex.*/resource/*.gif
 ||yabs.yandex.*/resource/*.swf?rnd=*&link1=
 ||yandex.*/cy?base=0&host=
-
+!
 ! Город Кингисепп
 город-кингисепп.рф##.module IMG[src^="/images/stories/"]
 город-кингисепп.рф##.module IMG[src^="https://img-fotki.yandex.ru/"]
 город-кингисепп.рф###rek1
-
+!
 ! Томские ресурсы
 autotom.ru###shop
 desk.tomsk.ru##.right_cell > CENTER
