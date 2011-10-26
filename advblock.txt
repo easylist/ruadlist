@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: WXWKwPVzD/5lM9SscQAnWg
-! Last modification time (GMT): 2011.09.26 07:20
+! Checksum: 23E+UGtMmB+vjZ/W3/LaLA
+! Last modification time (GMT): 2011.09.26 08:00
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -38,7 +38,6 @@
 /click/body.php?id=*&hash=$other
 ||4allclick.ru^
 ||adonweb.ru^
-//tds.traforet.ru/*/?$other
 ||crusewind.net/click/direct.php?
 ||filonet.ru/engine/redirect.php?url=
 ||gameleads.ru^
@@ -311,6 +310,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 ! Начинают с загрузки /check.php, популярные значения mode: teaser и icq.
 /check.php?user_id=*&mode=*&domain=$third-party
 /clickheat.
+^clickunder=
 /ctxtlink/*
 /event.ng
 /extadv/*
@@ -331,10 +331,12 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /some-ad.php
 /splash/page_header/*
 /topadvert.
+/traforet.
+.traforet.
 /vendshow/*
 /vsemayki_
 /warlog.
-^clickunder=
+/webunder.
 ! - Баннеры -------------------------------------------------------------------
 !#banner.bookmark
 .biz/banner/$third-party
@@ -406,7 +408,6 @@ _tizer.
 /out.php?sid=$script
 /popover.js$domain=~hotmail.com|~live.com
 /sun_*_ajax.js|
-/traforet.js|
 ! - Блокировка по размеру указанному в адресе ---------------------------------
 !#size.bookmark
 /120-600-
@@ -1531,7 +1532,6 @@ _tizer.
 ||traffstock.ru^$third-party
 ||trafoed.com/promo/
 ||trafon.ru^$third-party
-||traforet.ru^$third-party
 ||trafunder.$third-party
 ||trumedia.goha.ru^
 ||trusearch.net/affblock/
