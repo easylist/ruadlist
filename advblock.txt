@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: xiqnxfI7MzfDqxOucMOZig
-! Last modification time (GMT): 2011.10.01 08:19
+! Checksum: YQhwxXOhwwVYfpWhLxoT4w
+! Last modification time (GMT): 2011.10.01 17:35
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -358,7 +358,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /cgi-bin/banners/*$domain=~gzt.ru|~km.ru
 /images/adv/*$domain=~3k.mail.ru
 /images/ban/*
-/images/banners/*$domain=~allods.mail.ru|~allods.ru|~bakabt.com|~dutyfree.org.ru|~martgallery.ru|~slinux.ru|~visage.od.ua|~vorbis.com|~xxxxbar.ru
+/images/banners/*$domain=~bakabt.com|~martgallery.ru|~slinux.ru|~vorbis.com|~xxxxbar.ru
 /images/bn/*
 /images/rek/*
 /images/rekl/*
@@ -419,8 +419,8 @@ _tizer.
 ! Отличается отвратительной манерой плавать поверх всего и избегать любых общих
 ! правил. Появляется на многих сайтах и почти всегда под разными именами.
 ! Основной ареал обитания — варезники и порносайты.
-.php|$script,domain=дсвлоад.рф|dsvload.net|manyclips.net
-.php?id=$script,domain=дсвлоад.рф|dsvload.net|manyclips.net
+.php|$script,subdocument,domain=дсвлоад.рф|bape3.org|dsvload.net|manyclips.net
+.php?id=$script,subdocument,domain=дсвлоад.рф|bape3.org|dsvload.net|manyclips.net
 ! ##SCRIPT[src*=".php"] + DIV[id][align="center"][style*="fixed;"]
 !
 ! = Блокировка доменов ========================================================
@@ -1332,6 +1332,7 @@ _tizer.
 ||rbe.ru^$third-party
 ||rclick.com.ua^
 ||readme.ru^$third-party
+||rebillpays.com^$third-party
 ||recreativ.ru^$third-party
 ||red.by/redban
 ||redtram.com^$third-party
@@ -1569,6 +1570,8 @@ _tizer.
 ||ventivmedia.com^$third-party
 ||vertucash.com^$third-party
 ||vezetmne.ru^$third-party
+||v-med.ru^
+||via-shop.ru^$third-party
 ||viboom.ru^$third-party
 ||vicepiter.ru^$third-party
 ||video-link.ru^$third-party
@@ -2007,6 +2010,7 @@ azart.net.ua##A[href="/adv.php"]
 bagnet.org##.banner
 ||bagnet.org/doc/images/
 @@||bagnet.org/doc/images/*/
+bape3.org##A[target="_blank"][href^="http"] > IMG
 bash.org.ru##:not(#ads) > .q > :not(.vote):first-child
 bash.org.ru###page > HR
 batzbatz.com###dle-content > SPAN > NOINDEX
@@ -2735,8 +2739,8 @@ pindosoff.net###dle-content > TABLE:first-child TD.copy
 pindosoff.net##TD.nav A[target="_blank"]
 ||pindosoff.net/images/
 ||pindosoff.net/sclick.js
-||pirat.ca/forum/images/posters/
-||pirat.ca/forum/banners/
+pirat.ca###sidebar2
+||pirat.ca/images/posters/
 ||piratski.ru/*_banner.
 ||glee.ucoz.ru^$domain=pirat.ca
 ||planeta.donetsk.ua/banner/
