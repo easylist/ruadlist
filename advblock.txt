@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: rq7qn+YVGDJ9PVVF/YBATw
-! Last modification time (GMT): 2011.10.02 20:56
+! Checksum: 5TXjV9Md0C0XbP3LHnwEJw
+! Last modification time (GMT): 2011.10.02 21:06
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -19,123 +19,125 @@
 ! = Сайты-попапы (самостоятельно открываются в новом окне) ====================
 !#popup.bookmark
 ! Прямая блокировка следующих сайтов должного эффекта не имеет!
-! Установите расширение Adblock Plus Pop-up Addon:
+! Но скоро будет иметь. Опция $popup добавлена для совместимости с тестовой версией AdBlock Plus
+! А пока установите расширение Adblock Plus Pop-up Addon:
 ! https://addons.mozilla.org/ru/firefox/addon/adblock-plus-pop-up-addon/
 ! 
 ! - Общие правила -------------------------------------------------------------
-/ad/popup/*
-/popads/*
-/popads.
+/ad/popup/*$popup
+/popads/*$popup
+/popads.$popup
 ! Содержат в адресе два и более параметра вроде utm_source, utm_medium и utm_campaign
-?utm_*&utm_$other
-&utm_*&utm_$other
+?utm_*&utm_$other,popup
+&utm_*&utm_$other,popup
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
 ! $ domain=myredirecter.info|redirnet.info
-.info/sol/$other
+.info/sol/$other,popup
 ! $domain=flipflapflo.biz|flipflapflo.net|wt-rotator.biz|wts-rotator.com
-//uno.*/?t=$script,other
+//uno.*/?t=$script,other,popup
 ! $domain=livetraf.com|mediadar.ru|medianaft.ru|rutraff.org|traforet.ru
-/click/body.php?id=*&hash=$other
-||4allclick.ru^
-||adonweb.ru^
-||crusewind.net/click/direct.php?
-||filonet.ru/engine/redirect.php?url=
-||gameleads.ru^
-||go.timedirect.ru^
-||go.trafking.ru^
-||ipchecker.ru/?id=
-||literedirect.com^*?__vc_pid=
-||mesvip.com/
-||a50.myragon.ru/guide.php?cid=*&sa=*&link_id=
-||myredirector.net/?go=
-||peel-down.net/search.php?
-||readme.ru/p.php?
-||redirecturl.ru^
-||rts.pgmediaserve.com/
-||ruclicks.com/in/
-||t1goto.info^
-||t8good.info^
-||traftiz.com/clck.php?g=*&tmz=
-||traff-redir.info/redir.php?s=
-||war.noc.su/?
-||wbr.dyndns-mail.com/?get_opener_code&
-||xn--80abg3be.net^$other
+/click/body.php?id=*&hash=$other,popup
+||4allclick.ru^$popup
+||adonweb.ru^$popup
+||crusewind.net/click/direct.php?$popup
+||filonet.ru/engine/redirect.php?url=$popup
+||gameleads.ru^$popup
+||go.timedirect.ru^$popup
+||go.trafking.ru^$popup
+||ipchecker.ru/?id=$popup
+||literedirect.com^*?__vc_pid=$popup
+||mesvip.com/$popup
+||a50.myragon.ru/guide.php?cid=*&sa=*&link_id=$popup
+||myredirector.net/?go=$popup
+||peel-down.net/search.php?$popup
+||readme.ru/p.php?$popup
+||redirecturl.ru^$popup
+||rts.pgmediaserve.com/$popup
+||ruclicks.com/in/$popup
+||t1goto.info^$popup
+||t8good.info^$popup
+||traftiz.com/clck.php?g=*&tmz=$popup
+||traff-redir.info/redir.php?s=$popup
+||war.noc.su/?$popup
+||wbr.dyndns-mail.com/?get_opener_code&$popup
+||xn--80abg3be.net^$other,popup
 !  Super star - редирект на antivirusms.com и подобную гадость
-||all4girl.net/main/
-||greyred.net/sex/
+||all4girl.net/main/$popup
+||greyred.net/sex/$popup
 ! - Прочее --------------------------------------------------------------------
 ! Flambo
 ! Подсеть: 91.213.175.### IP: 26, 27, 46
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
-||2011-ru.com^
-||play-boom.com^
-.ru/*/index.php|$other
-//kpup.*/?sid=$other
+||2011-ru.com^$popup
+||play-boom.com^$popup
+.ru/*/index.php|$other,popup
+//kpup.*/?sid=$other,popup
 ! $domain=crazycola.ru|karosgame.ru|rzonline.ru|upslots.com|va-bank.com
-//promo.$other
+//promo.$other,popup
 ! Игры на mail.ru (их там много и все норовят открыться в попапе)
-.mail.ru/*?$other
-||1001kupon.ru^
-||9donline.ru/welcome/?mita=
-||audance.ru*/promo/
-||blinkogold.ru^$other
-||chaplingames.ru$other
-||darkorbit.bigpoint.com/?aid=
-||fotostrana.ru^*/?$other
-||funtest-ru.com^
-||goodsbrowser.com^
-||image2you.ru^$~third-party
-||letitbit.net/pop_up.
-||lovecity3d.com/img/promo.
-||link2you.ru^
-||marketgid.com^*.html$other
-||mycultures.ru^$other
-||partypoker.com/*/videopop/
-||pic4you.ru$other
-||pic5you.ru$other
-||pointblank.ru/?pid=$other
-||pop.sn00.net^
-||smi2.ru/data/pop/
-||snailz.ru/promo/?
-||travian.com.ua/landingpage/
-||zzima.com/*/registration/$other
+.mail.ru/*?$other,popup
+||1001kupon.ru^$popup
+||9donline.ru/welcome/?mita=$popup
+||audance.ru*/promo/$popup
+||blinkogold.ru^$other,popup
+||chaplingames.ru$other,popup
+||darkorbit.bigpoint.com/?aid=$popup
+||fotostrana.ru^*/?$other,popup
+||funtest-ru.com^$popup
+||goodsbrowser.com^$popup
+||image2you.ru^$~third-party,popup
+||letitbit.net/pop_up.$popup
+||lovecity3d.com/img/promo.$popup
+||link2you.ru^$popup
+||marketgid.com^*.html$other,popup
+||mycultures.ru^$other,popup
+||partypoker.com/*/videopop/$popup
+||pic4you.ru$other,popup
+||pic5you.ru$other,popup
+||pointblank.ru/?pid=$other,popup
+||pop.sn00.net^$popup
+||smi2.ru/data/pop/$popup
+||snailz.ru/promo/?$popup
+||travian.com.ua/landingpage/$popup
+||zzima.com/*/registration/$other,popup
 ! Домены ВЗаработке. Мошенники. Должны блокироваться на уровне
 ! редиректов, а эти правила для тех, у кого нет расширения блокировки попапов.
-||help2play.com^
-||moneymaiker.ru^
-||vmesterabotaem.ru^
-||vsemdeneg.ru^
-||vsemtube.ru^
-||vzara.ru^
-||vzarabatke.ru^
-||vzarabotke.ru^
+||help2play.com^$popup
+||moneymaiker.ru^$popup
+||vmesterabotaem.ru^$popup
+||vsemdeneg.ru^$popup
+||vsemtube.ru^$popup
+||vzara.ru^$popup
+||vzarabatke.ru^$popup
+||vzarabotke.ru^$popup
+! Станет не нужно после добавления блокировки попапов
 ||youtube.$domain=vmesterabotaem.ru,vsemdeneg.ru,vsemtube.ru
 ||youtube.*uCGGMufZc1c
 ||vkontakte.$domain=moneymaiker.ru,vmesterabotaem.ru
-help2play.com,moneymaiker.ru,vsemtube.ru,vzarabotke.ru##*
+help2play.com,moneymaiker.ru,vsemtube.ru,vzarabotke.ru##:root
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
-||24pornoo.ru^
-||5pornosex.ru^
-||avska.com^
-||click.readme.ru/informer/
-||devochki.cz^
-||dosug.cz^
-||livejasmin.com^
-||poisk125.com^
-||pornoshara.tv
-||posmotrish.net^
-||sexrustube24.com^
-||vkru.socialru.ru^
-||vsesuper.in^
-||vstaet.net^
-||x-uboino.
+||24pornoo.ru^$popup
+||5pornosex.ru^$popup
+||avska.com^$popup
+||click.readme.ru/informer/$popup
+||devochki.cz^$popup
+||dosug.cz^$popup
+||livejasmin.com^$popup
+||poisk125.com^$popup
+||pornoshara.tv^$popup
+||posmotrish.net^$popup
+||sexrustube24.com^$popup
+||vkru.socialru.ru^$popup
+||vsesuper.in^$popup
+||vstaet.net^$popup
+||x-uboino.$popup
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
-! Имеет смысл только без расширения Adblock Plus Pop-up Addon.
+! Имеет смысл только без расширения Adblock Plus Pop-up Addon. Скоро станет не нужным.
 24pornoo.ru,5pornosex.ru,avska.com,devochki.cz,dosug.cz,livejasmin.com,poisk125.com,pornoshara.tv,posmotrish.net,sexrustube24.com,vkru.socialru.ru,vsesuper.in,vstaet.net,x-uboino.net,x-uboino.ru##:root
 ! Порно-сайты сети pokajem. Известные домены включая нерабочие:
 ! cooldevki.com, falosvideo.com, izvrasheniya.com, nashevideo.info, pokajem.do.am, portvx.com, prodom2.com,
 ! tele-dom2.com, telesekas.com, tvdom2.com, tvsxsite.com, videocinemax.com, vkvideox.com
-||pokajem.*.*/
+||pokajem.*.*/$popup
 ||glopic.com$domain=izvrasheniya.com|nashevideo.info|pokajem.do.am|portvx.com
 izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 !
