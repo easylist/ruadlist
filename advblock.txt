@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: ut0yguvZDHcWiRi8dghIvQ
-! Last modification time (GMT): 2011.10.03 17:20
+! Checksum: AyXUAoC8LjrMQR4GiLx9gA
+! Last modification time (GMT): 2011.10.05 20:28
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -38,7 +38,6 @@
 ! $domain=livetraf.com|mediadar.ru|medianaft.ru|rutraff.org|traforet.ru
 /click/body.php?id=*&hash=$other,popup
 ||4allclick.ru^$popup
-||adonweb.ru^$popup
 ||crusewind.net/click/direct.php?$popup
 ||filonet.ru/engine/redirect.php?url=$popup
 ||gameleads.ru^$popup
@@ -50,7 +49,6 @@
 ||a50.myragon.ru/guide.php?cid=*&sa=*&link_id=$popup
 ||myredirector.net/?go=$popup
 ||peel-down.net/search.php?$popup
-||readme.ru/p.php?$popup
 ||redirecturl.ru^$popup
 ||rts.pgmediaserve.com/$popup
 ||ruclicks.com/in/$popup
@@ -119,7 +117,6 @@ help2play.com,moneymaiker.ru,vsemtube.ru,vzarabotke.ru##:root
 ||24pornoo.ru^$popup
 ||5pornosex.ru^$popup
 ||avska.com^$popup
-||click.readme.ru/informer/$popup
 ||devochki.cz^$popup
 ||dosug.cz^$popup
 ||livejasmin.com^$popup
@@ -532,6 +529,7 @@ _tizer.
 ||admulti.$third-party
 ||adne.info^$third-party
 ||adnew.for-ua.com^
+||adonweb.ru^$popup
 ||adpath.ru^$third-party
 ||adpower.com.ua^$third-party
 ||adpro.com.ua^$third-party
@@ -780,6 +778,7 @@ _tizer.
 ||engine.adct.ru^$third-party
 ||eogli.com/1/
 ||epartner.ru^$third-party
+||eradio.net.ua/ban/
 ||erclans.ru/banner/
 ||eroadvert.ru^$third-party
 ||eroboard.ru^$third-party
@@ -1332,7 +1331,7 @@ _tizer.
 ||rb.sport-express.ru^
 ||rbe.ru^$third-party
 ||rclick.com.ua^
-||readme.ru^$third-party
+||readme.ru^$third-party,popup
 ||rebillpays.com^$third-party
 ||recreativ.ru^$third-party
 ||red.by/redban
@@ -1747,8 +1746,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! AdvMaker.RU
 ! IP: 95.169.186.164
 ||advmaker.ru^$third-party
-||am10.ru^
-||am11.ru^
+||am10.ru^$popup
+||am11.ru^$popup
 ||web-leaders.ru^$third-party
 ! Popup windows
 ||advmaker.ru/go.php?
@@ -2071,6 +2070,9 @@ citysmile.ru##NOFOLLOW > NOINDEX > A[target="_blank"]
 ||club.ru/banners.php$subdocument
 cn.ru##[class*="rx"][class*="neta"]
 ||cobra.com.ua/_banners/
+comfysoft.ru##TABLE[align][frame="rhs"][style]
+||comfysoft.ru/images/programmes/
+||comfysoft.ru/images/reklama/
 ||comnews.ru/ds_comnews/files/$object
 ||comnews.ru/ds_comnews/img_object/
 ||comnews.ru/ds_comnews/img_pictures/*.gif
@@ -2772,6 +2774,7 @@ premiership.ru###banner
 probki.net##CENTER > A > IMG[width="160"]
 probki.net##TD[valign="top"] > A > IMG[width="160"]
 ||proelectro.ru/files/$object
+programki.net##.reclama_v
 ||promodeejay.net/branding/
 propogodu.ru##TABLE.weather + NOINDEX
 prowebber.ru##.bantop
@@ -2919,6 +2922,7 @@ shkolazhizni.ru##.banner_text
 slo.ru##[class^="adv_"]
 ||slo.ru/img/*300x200
 ||slo.ru/img/banners/
+smartsoft.kiev.ua##TD[valign="top"] > NOINDEX
 ||smi2.ru/data/js/
 smotri.com###banner-header-bottom
 ||sobaka.ru/actions/$object
@@ -2944,6 +2948,7 @@ softodrom.ru##.prgentry.nobottom
 softportal.com##.TblBorderCLR TD[width="25%"] + TD[width="75%"][style] > TABLE
 softportal.com##.TblOBan
 softportal.com##.TblTopBanCLR
+softru.ru##.right_block_container + TABLE[width="100%"]:last-child
 ||softserver.com.ua/adv/
 ||sony-club.ru/img/verticalbanner
 ||sony-it.com.ua/img/banners/
