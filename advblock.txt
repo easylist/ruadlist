@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: VDLPqnPs7YdVIUVKCOLfbA
-! Last modification time (GMT): 2011.10.10 12:20
+! Checksum: s60P+Y8VjIIWLL9NAH+FNQ
+! Last modification time (GMT): 2011.10.10 12:39
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1792,18 +1792,15 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 .ru/cn/120x600.html?r=
 !
 ! Ero.ru и прочие связанные с ними сайты
-||ero.ru^$~image
-||ero.ru^$image,domain=~vpets.ru
+||ero.ru^$domain=~vpets.ru
 ||ero-ru.net^
 ||vboys.ru^
-
 !
 ! LadyClicks.ru — реклама нацеленная на женскую аудиторию
 /showf.php?u=$subdocument
 ||lady-clicks.ru^$third-party
 ||ladyclicks.ru^$third-party
 ||ladyclicksm.ru^$third-party
-
 !
 ! MediaLand.ru — партнёрская сеть компании «Медиа Мир».
 ###medialand_adland_inline_div_750
@@ -2844,8 +2841,8 @@ rpod.ru###adv240x400
 ||rsdn.ru/Banner/
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
 forum.ru-board.com##TD > TABLE[width][bordercolor="#EEEEEE"][border="1"][bgcolor="#FFFFFF"]
-! for Fx 3.*  and older
-forum.ru-board.com##TD > TABLE[bordercolor="#eeeeee"][border="1"][bgcolor="#ffffff"]
+! Для Fx 3.6 и предыдущих версий
+forum.ru-board.com##TD > TABLE[width][bordercolor="#eeeeee"][border="1"][bgcolor="#ffffff"]
 ||ru-board.com*/temp/
 ||ru-board.com*/xmtmp/
 ||ru-board.com/kupitraff.
