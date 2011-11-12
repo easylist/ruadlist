@@ -32,8 +32,8 @@ my $checksum = getChecksum($data);
 
 if ($checksum ne $oldsum) {
   # Get current date and time (GMT)
-  my ($sec,$min,$hour,$day,$month,$yr19,@rest) = gmtime(time);
-  my $datetimevar = ($yr19+1900).".".sprintf("%02d",$month).".".sprintf("%02d",$day)." ".sprintf("%02d",$hour).":".sprintf("%02d",$min);
+  my ($sec,$min,$hour,$day,$month0,$yr19,@rest) = gmtime(time);
+  my $datetimevar = ($yr19+1900).".".sprintf("%02d",$month0+1).".".sprintf("%02d",$day)." ".sprintf("%02d",$hour).":".sprintf("%02d",$min);
 
   # Remove already existing date-time
   $data =~ s/^.*!\s*last modification time \(gmt\)[\s\-:]+(\d{4}([\s.:]\d\d?)*).*\n//gmi;
