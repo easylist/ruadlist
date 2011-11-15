@@ -26,11 +26,11 @@ foreach(@ip_array)
           }
 	else
           {
-            print "A $& ";
+            print "A $& \n";
 	    foreach my $rr ($q->answer)
               {
 		next unless $rr->type eq "A";
-		print $rr->address, "\n";
+		print "Address: ", $rr->address, "\n";
 	      }
           }
       }	
@@ -55,4 +55,5 @@ print "NXDOMAIN NXDOMAIN can means that the root name servers are", "\n";
 print "         not providing any authoritative name servers for", "\n";
 print "         this domain. This can be because the domain does", "\n";
 print "         not exist or that the domain is on-hold.", "\n";
+print "\n";
 
