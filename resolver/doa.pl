@@ -3,13 +3,13 @@
 #use Net::Ping;
 use Net::DNS;
 
-open(INFILE, "<", "pinglist.txt") or die("cannot open infile:  $!");
+open(INFILE, "<", "checklist.txt") or die("cannot open infile:  $!");
 
 my @ip_array = <INFILE>;
 
 close(INFILE);
 
-open(OUTFILE, ">", "pingresolver.txt") or die("unable to write output: $!");
+open(OUTFILE, ">", "deadhosts.txt") or die("unable to write output: $!");
 
 chomp(@ip_array);
 
