@@ -15,49 +15,39 @@ chomp(@ip_array);
 
 $p = Net::DNS::Resolver->new;
 
-foreach(@ip_array)
-  {
-    if($_ =~ /^[^!].*$/)
-      {
-	$q = $p->query($&);
-	if(not $q)
-          {
-            print "D $& ", $p->errorstring, "\n";
-	    given ($p->errorstring)
-	      {
-		when (/^NOERROR/)  { push(@noerr,$&) }
-		when (/^SERVFAIL/) { push(@srvfl,$&) }
-		when (/^NXDOMAIN/) { push(@nxdom,$&) }
-	      }
-          }
-	else
-          {
-            print "A $& \n";
-	    foreach my $rr ($q->answer)
-              {
-		next unless $rr->type eq "A";
-		print "Address: ", $rr->address, "\n";
-	      }
-          }
-      }	
-  }
+foreach $s (@ip_array) {
+	if($s =~ /^[^!].*$/) {
+		$q = $p->query($s);
+		if(not $q) {
+			print "D $s ", $p->errorstring, "\n";
+			given ($p->errorstring) {
+				when (/^NOERROR/)  { push(@noerr,$s) }
+				when (/^SERVFAIL/) { push(@srvfl,$s) }
+				when (/^NXDOMAIN/) { push(@nxdom,$s) }
+			}
+		} else {
+			print "A $s \n";
+			foreach my $rr ($q->answer)	{
+				next unless $rr->type eq "A";
+				print "Address: ", $rr->address, "\n";
+			}
+		}
+	}	
+}
 
 print OUTFILE "! NOERROR\n";
-@snoerr = sort(@noerr);
-foreach(@snoerr) { print OUTFILE "$_\n" }
+foreach(sort @noerr) { print OUTFILE "$_\n" }
 
 print OUTFILE "! SERVFAIL\n";
-@ssrvfl = sort(@srvfl);
-foreach(@ssrvfl) { print OUTFILE "$_\n" }
+foreach(sort @srvfl) { print OUTFILE "$_\n" }
 
 print OUTFILE "! NXDOMAIN\n";
-@snxdom = sort(@nxdom);
-foreach(@snxdom) { print OUTFILE "$_\n" }
+foreach(sort @nxdom) { print OUTFILE "$_\n" }
 
 close(OUTFILE);
 
-# unlink("deadhosts.txt");
-# rename("deadhosts.tmp","deadhosts.txt");
+unlink("deadhosts.txt");
+rename("deadhosts.tmp","deadhosts.txt");
 
 print "\n";
 print "NOERROR  A NOERROR indicates that the domain does exist", "\n";
