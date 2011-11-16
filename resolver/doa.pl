@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 
 use Net::DNS;
+use feature "switch";
 
 open(INFILE, "<", "deadhosts.txt") or die("cannot open infile:  $!");
 
@@ -16,13 +17,18 @@ $p = Net::DNS::Resolver->new;
 
 foreach(@ip_array)
   {
-   if($_ =~ /^.*$/)
+    if($_ =~ /^[^!].*$/)
       {
 	$q = $p->query($&);
 	if(not $q)
           {
             print "D $& ", $p->errorstring, "\n";
-            print OUTFILE "$&\n";
+	    given ($p->errorstring)
+	      {
+		when (/^NOERROR/)  { push(@noerr,$&) }
+		when (/^SERVFAIL/) { push(@srvfl,$&) }
+		when (/^NXDOMAIN/) { push(@nxdom,$&) }
+	      }
           }
 	else
           {
@@ -34,13 +40,24 @@ foreach(@ip_array)
 	      }
           }
       }	
-  } 
+  }
+
+print OUTFILE "! NOERROR\n";
+@snoerr = sort(@noerr);
+foreach(@snoerr) { print OUTFILE "$_\n" }
+
+print OUTFILE "! SERVFAIL\n";
+@ssrvfl = sort(@srvfl);
+foreach(@ssrvfl) { print OUTFILE "$_\n" }
+
+print OUTFILE "! NXDOMAIN\n";
+@snxdom = sort(@nxdom);
+foreach(@snxdom) { print OUTFILE "$_\n" }
 
 close(OUTFILE);
 
-unlink("deadhosts.txt");
-
-rename("deadhosts.tmp","deadhosts.txt");
+# unlink("deadhosts.txt");
+# rename("deadhosts.tmp","deadhosts.txt");
 
 print "\n";
 print "NOERROR  A NOERROR indicates that the domain does exist", "\n";
