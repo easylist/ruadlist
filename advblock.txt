@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: Ghjj5ZI/+XtYb2zaf77N8Q
-! Last modification time (GMT): 2011.11.17 00:43
+! Checksum: dVcfdH7oH8dlMj9pW1MT5g
+! Last modification time (GMT): 2011.11.17 01:13
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -43,9 +43,10 @@
 ||go.trafking.ru^$other,popup
 ||ipchecker.ru/?id=$other,popup
 ||literedirect.com^*?__vc_pid=$other,popup
-||mesvip.com/$other,popup
-||a50.myragon.ru/guide.php?cid=*&sa=*&link_id=$other,popup
+||mesvip.com^$other,popup
+||myragon.ru^$other,popup
 ||myredirector.net/?go=$other,popup
+||otwety-mail.com^$popup
 ||peel-down.net/search.php?$other,popup
 ||redirecturl.ru^$other,popup
 ||rts.pgmediaserve.com/$other,popup
@@ -116,7 +117,6 @@ help2play.com,moneymaiker.ru,vsemtube.ru,vzarabotke.ru##:root
 ||5pornosex.ru^$~popup,popup
 ||avska.com^$~popup,popup
 ||devochki.cz^$~popup,popup
-||dosug.cz^$~popup,popup
 ||livejasmin.com^$~popup,popup
 ||poisk125.com^$~popup,popup
 ||pornoshara.tv^$~popup,popup
@@ -128,7 +128,7 @@ help2play.com,moneymaiker.ru,vsemtube.ru,vzarabotke.ru##:root
 ||x-uboino.$~popup,popup
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon. Скоро станет не нужным.
-24pornoo.ru,5pornosex.ru,avska.com,devochki.cz,dosug.cz,livejasmin.com,poisk125.com,pornoshara.tv,posmotrish.net,sexrustube24.com,vkru.socialru.ru,vsesuper.in,vstaet.net,x-uboino.net,x-uboino.ru##:root
+24pornoo.ru,5pornosex.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,pornoshara.tv,posmotrish.net,sexrustube24.com,vkru.socialru.ru,vsesuper.in,vstaet.net,x-uboino.net,x-uboino.ru##:root
 ! Порно-сайты сети pokajem. Известные домены включая нерабочие:
 ! cooldevki.com, falosvideo.com, izvrasheniya.com, nashevideo.info, pokajem.do.am, portvx.com, prodom2.com,
 ! tele-dom2.com, telesekas.com, tvdom2.com, tvsxsite.com, videocinemax.com, vkvideox.com
@@ -707,7 +707,6 @@ _tizer.
 ||clickaider.com^$third-party
 ||clickburner.com/banners/
 ||clickbux.ru^$third-party
-||clickcashmoney.com^$third-party
 ||clickclickclick.asia^$third-party
 ||clickcoin.com^$third-party
 ||clickhere.ru^$third-party
@@ -759,7 +758,6 @@ _tizer.
 ||domika.msk.ru^
 ||doortrade.ru^$third-party
 ||dostavka.ru^$third-party
-||dosugcz.$third-party
 ||dosugvip.ru^$third-party
 ||dozory.goodoo.ru^$third-party
 ||dreamlog.ru^$third-party
@@ -1548,7 +1546,6 @@ _tizer.
 ||tsr.cdns.com.ua^
 ||turboroller.ru^$third-party
 ||turist.ru/turist.goods_pics/$third-party
-||tvoi-dosug.com^$third-party
 ||twevent.org.ua/bn/
 ||tx2.ru^$third-party
 ||tynt.com^$third-party
@@ -1818,6 +1815,16 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||ruklik.com^$~popup,popup
 ||tdstraff.ru^$~popup,popup
 ||xxxxxxxxxx.ru^$~popup,popup
+!
+! Dosug.cz и связанные с ними домены
+! «ТУТ НИЧЕГО НЕТ. НАХРЕНА ТЫ СЮДА ЗАШЕЛ? :-)»
+! tds.clickcashmoney.com
+||clickcashmoney.com^$third-party
+||dosug.cz^$~popup,popup
+! dosugcz.net, dosugcz.in, dosugcz.biz
+||dosugcz.$~popup,popup
+||rusrestbest.com^$~popup,popup
+||tvoi-dosug.com^$~popup,popup
 !
 ! Ero.ru и прочие связанные с ними сайты
 ||ero.ru^$domain=~vpets.ru
