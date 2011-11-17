@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: An9K6X9FM4qHFBNGTIDgQA
-! Last modification time (GMT): 2011.11.16 23:24
+! Checksum: 0+fBvKC6DBhTGuNBe3saUg
+! Last modification time (GMT): 2011.11.17 00:09
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -37,7 +37,6 @@
 //uno.*/?t=$script,other,popup
 ! $domain=livetraf.com|mediadar.ru|medianaft.ru|rutraff.org|traforet.ru
 /click/body.php?id=*&hash=$other,popup
-||4allclick.ru^$other,popup
 ||crusewind.net/click/direct.php?$other,popup
 ||filonet.ru/engine/redirect.php?url=$other,popup
 ||go.timedirect.ru^$other,popup
@@ -531,6 +530,7 @@ _tizer.
 ||adme.ru^$third-party
 ||admixer.net^$third-party
 ||admoon.net^$third-party
+! admulti.com
 ||admulti.$third-party
 ||adne.info^$third-party
 ||adnew.for-ua.com^
@@ -712,7 +712,6 @@ _tizer.
 ||clickcoin.com^$third-party
 ||clickhere.ru^$third-party
 ||clickopen.ru^$third-party
-||clickunder.net^$third-party
 ||clipta.com/informer/
 ||clix.ru/js/
 ||clocklink.com/clocks/$object
@@ -788,7 +787,6 @@ _tizer.
 ||epartner.ru^$third-party
 ||eradio.net.ua/ban/
 ||erclans.ru/banner/
-||eroadvert.ru^$third-party
 ||eroboard.ru^$third-party
 ||eronsk.ru/b/
 ||eropays2.com^$third-party
@@ -871,10 +869,8 @@ _tizer.
 ||go.bb.ru/images/
 ||go.jetswap.com^
 ||go.media-x.ru^
-||goallurl.ru^$third-party
 ||godudu.com/swf/
 ||gogo.ru/img/p/
-||gokliks.ru^$third-party
 ||gold-click.info^$third-party
 ||gold-music.ru/informer
 ||gold-traf.ru^$third-party
@@ -1000,7 +996,6 @@ _tizer.
 ||kleo.ru/cgi-bin/
 ! Не нашёл в диком виде: ||klick.net.ua/show.php?
 ||klickmedia.ru^$third-party
-||kliklink.ru^$third-party
 ||knstats.com^$third-party
 ||kolobok.us/button/
 ||komban.com.ua^
@@ -1279,10 +1274,10 @@ _tizer.
 ||popstart.ru^$third-party
 ||poptraf.$third-party
 ||popularsite.ru/*.php?
+! popunder.ru
 ||popunder.$third-party
 ||popup.su^$third-party
 ||popup2m.com^$third-party
-||popupclick.$third-party
 ||popups.ru^$third-party
 ||popuptraf.$third-party
 ||popvtop.ru^$third-party
@@ -1381,7 +1376,6 @@ _tizer.
 ||rssportal.ru/getinformer.php?
 ||ru-top.net/img/
 ||ru.gg/werbemittel/
-||ruklik.com/$third-party
 ||rus-porno.ru^$third-party
 ||ruscontext.com^$third-party
 ||rusmedserv.com^$third-party
@@ -1494,7 +1488,6 @@ _tizer.
 ||tankionline.com^$third-party
 ||tbe.tom.ru/?
 ||tbn.ru^$third-party
-||tdstraff.ru^$third-party
 ||teasergate.com^$third-party
 ||teenseks.da.ru^
 ||teeser.ru^$third-party
@@ -1810,6 +1803,22 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||microad.ru^$third-party
 ||microads.ru^$third-party
 .ru/cn/120x600.html?r=
+!
+! Clickunder.net и подобные им сайты
+/get.js?user_id=$script,third-party
+||4allclick.ru^$~popup,popup
+||clickunder.net^$~popup,popup
+! eroadvert.net, eroadvert.ru
+||eroadvert.$~popup,popup
+||eropop.ru^$~popup,popup
+||goallurl.ru^$~popup,popup
+||gokliks.ru^$~popup,popup
+||kliklink.ru^$~popup,popup
+! popupclick.ru, popupclick.com
+||popupclick.$~popup,popup
+||ruklik.com^$~popup,popup
+||tdstraff.ru^$~popup,popup
+||xxxxxxxxxx.ru^$~popup,popup
 !
 ! Ero.ru и прочие связанные с ними сайты
 ||ero.ru^$domain=~vpets.ru
