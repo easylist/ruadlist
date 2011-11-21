@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: O6MauhGZeZXMR1KS5MBGMg
-! Last modification time (GMT): 2011.11.20 12:43
+! Checksum: Rb8VywIp8URForK9eXvQUw
+! Last modification time (GMT): 2011.11.21 11:53
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 !
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
@@ -156,6 +156,9 @@ championat.ru##.livejournal
 cheklab.ru##.art-postcontent > .buttons
 delfi.ua##.sbookmarks
 echo.msk.ru##.netWorkBlock
+! Следующее правило блокирует рекламу в видео после нажатия «Стоп» на echo.msk.ru;
+! но одновременно блокируются и кнопки. Чтобы опять работало, обновите страницу (или отключите правило).
+||ad.adriver.ru/cgi-bin/erle.cgi?$domain=echomsk.onlinetv.ru
 f1news.ru###bookmarkBlock
 forum.f1news.ru,homenet.beeline.ru###ed-0_toolbar_3
 forum.f1news.ru,homenet.beeline.ru###fast-reply_toolbar_3
