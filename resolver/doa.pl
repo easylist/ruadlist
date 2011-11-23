@@ -19,14 +19,14 @@ foreach $s (@ip_array) {
 	if($s =~ /^[^!].*$/) {
 		$q = $p->query($s);
 		if(not $q) {
-			print "D $s ", $p->errorstring, "\n";
+			printf "D %-8s %s\n", $p->errorstring, $s;
 			given ($p->errorstring) {
 				when (/^NOERROR/)  { push(@noerr,$s) }
 				when (/^SERVFAIL/) { push(@srvfl,$s) }
 				when (/^NXDOMAIN/) { push(@nxdom,$s) }
 			}
 		} else {
-			print "A $s \n";
+			print "A RESOLVED $s \n";
 			foreach my $rr ($q->answer)	{
 				next unless $rr->type eq "A";
 				print "Address: ", $rr->address, "\n";
