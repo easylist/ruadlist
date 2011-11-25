@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: ZOL8j6IhGgeq5H6e/CNLnQ
-! Last modification time (GMT): 2011.11.23 17:02
+! Checksum: n+f6Evh45u0x3UnjgFYH5g
+! Last modification time (GMT): 2011.11.25 16:41
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 !
 ! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
@@ -564,6 +564,7 @@ _userbar_$image
 /technorati.gif$domain=~technorati.com
 /vkontakte.png$domain=~vkontakte.ru|~vk.com
 ! - Модифицированные правила
+~z-music.ru###social_icons
 ~zippyshare.com###share_button
 ! Заменяет правила скрытия на юзерскриптсах
 ||userscripts.org/images/handycons/
@@ -1276,7 +1277,7 @@ _stumble_btn.
 ###share-options-article
 ###share-tools
 ###share-tools-title
-###share_button
+! Override: ###share_button
 ###share_buttons
 ###share_div_float
 ###share_icons
@@ -1324,7 +1325,7 @@ _stumble_btn.
 ###social_bookmarks_list
 ###social_box
 ###social_buttons
-###social_icons
+! Override: ###social_icons
 ###social_menuShare1
 ###social_share_bar
 ###socialAreaStoryBlog
