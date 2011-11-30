@@ -9,8 +9,6 @@ my @ip_array = <INFILE>;
 
 close(INFILE);
 
-open(OUTFILE, ">", "deadhosts.tmp") or die("unable to write output: $!");
-
 chomp(@ip_array);
 
 $p = Net::DNS::Resolver->new;
@@ -21,9 +19,10 @@ foreach $s (@ip_array) {
 		if(not $q) {
 			printf "D %-8s %s\n", $p->errorstring, $s;
 			given ($p->errorstring) {
-				when (/^NOERROR/)  { push(@noerr,$s) }
-				when (/^SERVFAIL/) { push(@srvfl,$s) }
-				when (/^NXDOMAIN/) { push(@nxdom,$s) }
+				when (/^NOERROR/)  { push(@noerr,$s); }
+				when (/^SERVFAIL/) { push(@srvfl,$s); }
+				when (/^NXDOMAIN/) { push(@nxdom,$s); }
+				default            { push(@other,$s); }
 			}
 		} else {
 			print "A RESOLVED $s \n";
@@ -35,6 +34,8 @@ foreach $s (@ip_array) {
 	}	
 }
 
+open(OUTFILE, ">", "deadhosts.tmp") or die("unable to write output: $!");
+
 print OUTFILE "! NOERROR\n";
 foreach(sort @noerr) { print OUTFILE "$_\n" }
 
@@ -43,6 +44,9 @@ foreach(sort @srvfl) { print OUTFILE "$_\n" }
 
 print OUTFILE "! NXDOMAIN\n";
 foreach(sort @nxdom) { print OUTFILE "$_\n" }
+
+print OUTFILE "! Network issues or other\n";
+foreach(sort @other) { print OUTFILE "$_\n" }
 
 close(OUTFILE);
 
