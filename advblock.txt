@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: iv9Of2KyuAb0qfAPd5gs7A
-! Last modification time (GMT): 2011.11.30 18:28
+! Checksum: xqsRS6ae+mSkRMHaIvjUZg
+! Last modification time (GMT): 2011.11.30 20:48
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -97,38 +97,34 @@
 ||snailz.ru/promo/?$other,popup
 ||travian.com.ua/landingpage/$other,popup
 ||zzima.com/*/registration/$other,popup
-! Домены ВЗаработке. Мошенники. Должны блокироваться на уровне
-! редиректов, а эти правила для тех, у кого нет расширения блокировки попапов.
+! Мошенники. В основном блокируются на уровне редиректов, но лучше и так.
 ||help2play.com^$~popup,popup
 ||moneymaiker.ru^$~popup,popup
+||otvetru.ru^$~popup,popup
 ||vmesterabotaem.ru^$~popup,popup
 ||vsemdeneg.ru^$~popup,popup
 ||vsemtube.ru^$~popup,popup
 ||vzara.ru^$~popup,popup
 ||vzarabatke.ru^$~popup,popup
 ||vzarabotke.ru^$~popup,popup
-! Станет не нужно после добавления блокировки попапов
-||youtube.$domain=vmesterabotaem.ru,vsemdeneg.ru,vsemtube.ru
-||youtube.*uCGGMufZc1c
+! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
+||youtube.$domain=help2play.com,otvetru.ru,vmesterabotaem.ru,vsemdeneg.ru,vsemtube.ru
 ||vkontakte.$domain=moneymaiker.ru,vmesterabotaem.ru
-help2play.com,moneymaiker.ru,vsemtube.ru,vzarabotke.ru##:root
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
-||24pornoo.ru^$~popup,popup
-||5pornosex.ru^$~popup,popup
-||avska.com^$~popup,popup
+! ||24pornoo.ru^$~popup,popup
+! ||avska.com^$~popup,popup
 ||devochki.cz^$~popup,popup
 ||livejasmin.com^$~popup,popup
-||poisk125.com^$~popup,popup
+! ||poisk125.com^$~popup,popup
 ||pornoshara.tv^$~popup,popup
-||posmotrish.net^$~popup,popup
-||sexrustube24.com^$~popup,popup
-||vkru.socialru.ru^$~popup,popup
+! ||posmotrish.net^$~popup,popup
+! ||sexrustube24.com^$~popup,popup
 ||vsesuper.in^$~popup,popup
 ||vstaet.net^$~popup,popup
 ||x-uboino.$~popup,popup
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon. Скоро станет не нужным.
-24pornoo.ru,5pornosex.ru,avska.com,devochki.cz,livejasmin.com,poisk125.com,pornoshara.tv,posmotrish.net,sexrustube24.com,vkru.socialru.ru,vsesuper.in,vstaet.net,x-uboino.net,x-uboino.ru##:root
+devochki.cz,livejasmin.com,pornoshara.tv,vsesuper.in,x-uboino.net,x-uboino.ru##:root
 ! Порно-сайты сети pokajem. Известные домены включая нерабочие:
 ! cooldevki.com, falosvideo.com, izvrasheniya.com, nashevideo.info, pokajem.do.am, portvx.com, prodom2.com,
 ! tele-dom2.com, telesekas.com, tvdom2.com, tvsxsite.com, videocinemax.com, vkvideox.com
@@ -317,7 +313,6 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /iframe/glomu.$subdocument
 /iframe/inosmi.$subdocument
 /in.cgi?$subdocument,script,third-party
-/informer.js?
 /linkexchange/*
 /marketplace.asp?
 /mirmaek/*$image
@@ -401,6 +396,34 @@ _tizer.
 .tizers.
 /tizers2.
 /utftizer.
+! - Информеры (желтая пресса, реклама товаров и просто всякий мусор) ----------
+!#informer.bookmark
+.tv/_cron/js/informer$script
+/informer.js?
+||24smi.org/informer.php?
+||all-news.net.ua/informers/
+||analyzethis.ru/informer.cgi?
+||auction.ua/informer.php?
+||autonet.ru/extra/autoclub_informer.aspx
+||bigmir.net/informer/
+||clipta.com/informer/
+||cosmo.ru/cosmo_informers/
+||gold-music.ru/informer
+||informers.openmedia.com.ua/informer.php
+||informers.faninternet.com.ua/informer.php
+||meta.ua/informers/?
+||missrich.net/informer.php?
+||nyx.su/informers/
+||otvali.ru/informer/
+||protoplex.ru/cgi-bin/informer.pl?
+||protoplex.ru/images/rating/
+||rosinvest.com/informs/
+||rssportal.ru/getinformer.php?
+||searchgid.ru/informer.
+||seowebtools.ru/inform/infb.php?
+||smi2.ru/data/iframes/$third-party
+||smigid.ru/informer/
+||vsyako-razno.ru/engine/sblocks_informer.php?
 ! - Блокировка по именам файлов -----------------------------------------------
 !#name.bookmark
 /aika.swf
@@ -490,7 +513,6 @@ _tizer.
 ||24new.ru^$third-party
 ||24open.ru/*?from=
 ||24s.ru/get.php?b=
-||24smi.org/informer.php?
 ||24smile.org^$third-party
 ||25hypnos.com^$third-party
 ||2baksa.net^$third-party
@@ -525,6 +547,7 @@ _tizer.
 ||addisp.com^$third-party
 ||addnow.ru^$third-party
 ||addweb.ru^$third-party
+||adforce.ru^$third-party
 ||adfun.ru^$third-party
 ||adgo-online.de^$third-party
 ||adhands.ru^$third-party
@@ -579,7 +602,6 @@ _tizer.
 ||akabo.ru^$third-party
 ||akavita.com^$third-party
 ||alfainternet.su^$third-party
-||all-news.net.ua/informers/
 ||all.by^$third-party
 ||allbest4free.ru/randompicture/
 ||allboxing.ru/img/$object
@@ -599,7 +621,6 @@ _tizer.
 ||amoney.ru/images/$object
 ||amung.us^$third-party
 ||analytics.*.*/*.php
-||analyzethis.ru/informer.cgi?
 ||anastasia-international.com^$third-party
 ||animelist.ru/*?
 ||animereactor.ru^$third-party
@@ -618,9 +639,7 @@ _tizer.
 ||assets.myflashfetish.com/swf/
 ||astalavista.com/backend/img/
 ||atlassolutions.com^$third-party
-||auction.ua/informer.php?
 ||autocentre.ua^$subdocument,third-party
-||autonet.ru/extra/autoclub_informer.aspx
 ||autoreg.ru/images/
 ||autoua.com^$third-party
 ||avazone.ru^$third-party
@@ -665,7 +684,6 @@ _tizer.
 ||bezpredela.net/*.jpg
 ||bigbord.net^$third-party
 ||biglion.ru^$third-party
-||bigmir.net/informer/
 ||binimage.de^$third-party
 ||binmedia.ru^$third-party
 ||bizua.com^$third-party
@@ -718,7 +736,6 @@ _tizer.
 ||clickcoin.com^$third-party
 ||clickhere.ru^$third-party
 ||clickopen.ru^$third-party
-||clipta.com/informer/
 ||clix.ru/js/
 ||clocklink.com/clocks/$object
 ||club-reseller.com^$third-party
@@ -732,7 +749,6 @@ _tizer.
 ||content.relax.ru^
 ||context.hotline.ua^
 ||corporative.ru/upload/
-||cosmo.ru/cosmo_informers/
 ||cqc.ru/cgi-bin/
 ||cracklab.ru/images/r_
 ||creativefiles.ru^$third-party
@@ -875,7 +891,6 @@ _tizer.
 ||godudu.com/swf/
 ||gogo.ru/img/p/
 ||gold-click.info^$third-party
-||gold-music.ru/informer
 ||gold-traf.ru^$third-party
 ||goldtizer.com^$third-party
 ||goldtraf.su^$third-party
@@ -944,9 +959,6 @@ _tizer.
 ||info-dvd.ru/*/rotator/
 ||info.webalta.net/reliancebutton?
 ||infocar.ru/media/$third-party,script
-! Объединить? Одна и та же реклама.
-||informers.openmedia.com.ua/informer.php
-||informers.faninternet.com.ua/informer.php
 ||infosec.ru/common/data/pub/images/articles/
 ||inheart.ru^$third-party
 ||inmoment.ru^$third-party
@@ -1108,7 +1120,6 @@ _tizer.
 ||megawmr.ru^$third-party
 ||mercatos.ru^$third-party
 ||meta.ua/*/partn.$script,stylesheet
-||meta.ua/informers/?
 ||metod-online.com^*/promo/
 ||metroclick.ru^$third-party
 ||mhealth.ru^$third-party
@@ -1120,7 +1131,6 @@ _tizer.
 ||mirmaek.ru^$third-party
 ||mirvolos.com$third-party
 ||missbelle.ru^$third-party
-||missrich.net/informer.php?
 ||mixmarket.biz^$third-party
 ||mlgame.ru/wiki/attach/Referal/
 ||mnogo.ru^$third-party
@@ -1188,7 +1198,6 @@ _tizer.
 ||novoteka.ru$third-party
 ||nsoft-s.com^$third-party
 ||numbers.md^$third-party
-||nyx.su/informers/
 ||o-o.kz/banners/$third-party
 ||obigre.ru^$third-party
 ||obmenniki.com/img/ban
@@ -1210,7 +1219,6 @@ _tizer.
 ||opensharing.org^$third-party
 ||opensharing.ru^$third-party
 ||orentraff.cn/in.cgi?
-||otvali.ru/informer/
 ||owebmoney.ru^$third-party
 ||oxysoft.ru^$third-party
 ||ozenuydu.com/resim
@@ -1313,8 +1321,6 @@ _tizer.
 ||proteaser.com^$third-party
 ||protect-lab.com/promo/
 ||protizer.$third-party
-||protoplex.ru/cgi-bin/informer.pl?
-||protoplex.ru/images/rating/
 ||protrafv2.com^$third-party
 ||prre.ru^
 ||ptredir.com^$third-party
@@ -1369,7 +1375,6 @@ _tizer.
 ||rnd.yxo.ru^
 ||rookee.ru^$third-party
 ||rorer.ru^$third-party
-||rosinvest.com/informs/
 ||rot.rusoul.ru/rotator/
 ||rotaban.$third-party
 ||rotapost.ru^$third-party
@@ -1378,7 +1383,6 @@ _tizer.
 ||rrru.ru/img.php?
 ||rs-context.ru^$third-party
 ||rssnewser.ru/add
-||rssportal.ru/getinformer.php?
 ||ru-top.net/img/
 ||ru.gg/werbemittel/
 ||rus-porno.ru^$third-party
@@ -1405,9 +1409,9 @@ _tizer.
 ||sbn.ru^$third-party
 ||scorecardresearch.com^$third-party
 ||scrool.ru^$third-party
-||searchgid.ru/informer.
 ||searchmeta.webhost.ru^
 ||secure-it.imrworldwide.com/cgi-bin/m?
+||sedoparking.com^$third-party
 ||sekcygirl.ru^$third-party
 ||sektor-sga.com/sga*.
 ||selectornews.com^$third-party
@@ -1420,7 +1424,6 @@ _tizer.
 ||seorate.ru^$third-party
 ||seotechnology.ru/imgseo.php?
 ||seotechnology.ru/imgygpag.php?
-||seowebtools.ru/inform/infb.php?
 ||serialinfo.ru^$third-party
 ||seriouspartner.ru^$third-party
 ||servidormensseger.hotbox.ru^
@@ -1444,8 +1447,6 @@ _tizer.
 ||smart-soft.ru^$third-party
 ||smartb.2gsg.com^
 ||smarttraf.ru^$third-party
-||smi2.ru/data/iframes/$third-party
-||smigid.ru/informer/
 ||smile32.ru^$third-party
 ||smsbanner.ru^$third-party
 ||smsconvertv3.ru^$third-party
@@ -1618,7 +1619,6 @@ _tizer.
 ||vsemp.ru^$third-party
 ||vsesumki.com^$third-party
 ||vsetv.com/pic/paid/
-||vsyako-razno.ru/engine/sblocks_informer.php?
 ||vyatka-host.ru^$third-party
 ||warezplatinum.com^$third-party
 ||warnet.ws/banners/
@@ -2670,6 +2670,9 @@ mp3lemon.net##TD[style^="padding: 5px; border: 1px dashed "]
 mskd.ru##TABLE[width="600px"][align="center"]
 ||mskd.ru/img/*x*_
 ||multiky.ru/rtr/
+multiki-online.net###teasers-top
+multiki-online.net###teasers-sidebar
+multiki-online.net##.more-teaser
 multitran.ru##TD[colspan="3"] > TABLE[border="1"]
 musicfond.com##.NavItems>.InitaMenu
 musicfond.com##.SearchForm>NOINDEX
@@ -3223,6 +3226,7 @@ vsetyt.us###promo
 //www.vsevam.ru^$object
 vz.ru##.hot2
 vz.ru###right > .shadow
+vz.ru###social-network-panel
 ||vz.ru/import/
 .ru/inc/$subdocument,domain=vz.ru
 !
@@ -3407,7 +3411,7 @@ ngs.ru##.adv
 ngs.ru##.banner
 ngs.ru##.banner-center
 ngs.ru##.big-right
-ngs.ru##A[class][style*="display: block;"][href^="/"]
+ngs.ru##A[target="_blank"][href^="/"] > IMG[src^="http://static.ngs.ru/"]
 realty.ngs.ru###clients
 relax.ngs.ru###exclusive
 turizm.ngs.ru###logo-menu
