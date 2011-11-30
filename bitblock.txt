@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: Qp8y5zKcRRZRvGLQLVoXsA
-! Last modification time (GMT): 2011.11.30 20:48
+! Checksum: FwzuhKf6pqPoSfHnnILTxA
+! Last modification time (GMT): 2011.11.30 22:38
 ! Expires: 5 days (подписка обновляетя автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -157,9 +157,6 @@ championat.ru##.livejournal
 cheklab.ru##.art-postcontent > .buttons
 delfi.ua##.sbookmarks
 echo.msk.ru##.netWorkBlock
-! Следующее правило блокирует рекламу в видео после нажатия «Стоп» на echo.msk.ru;
-! но одновременно блокируются и кнопки. Чтобы опять работало, обновите страницу (или отключите правило).
-||ad.adriver.ru/cgi-bin/erle.cgi?$domain=echomsk.onlinetv.ru
 f1news.ru###bookmarkBlock
 forum.f1news.ru,homenet.beeline.ru###ed-0_toolbar_3
 forum.f1news.ru,homenet.beeline.ru###fast-reply_toolbar_3
@@ -193,6 +190,7 @@ meta.ua###shareBox
 mobiledevice.ru##.icons_bar_placeholder
 molodejj.ru###sharePanel
 newsinfo.ru###facebox
+||nifiga-sebe.ru/znachki/
 novafilm.tv##.news-entry > DIV:last-child
 novafilm.tv###vk_groups
 novafilm.tv##DIV[style*="40px;"]:last-child
@@ -294,6 +292,8 @@ _lj_times_
 ! Далее идут правила для отдельных сайтов
 21region.org##.logo
 ||a-comics.ru/fw/
+! Следующее правило блокирует рекламу в видео после нажатия «Стоп» на echo.msk.ru, но создаёт проблемы.
+||ad.adriver.ru/cgi-bin/erle.cgi?$domain=echomsk.onlinetv.ru
 adultmanga.ru##.share_block
 anidub.com##.art-header
 animelayer.ru###Wrapper > TABLE[width="100%"]:first-child
