@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: QRJ0a5E3iMVmRhCnIw/PuA
-! Last modification time (GMT): 2011.11.30 20:50
+! Checksum: bNZUdmoRaOHFOr4n6IIOeA
+! Last modification time (GMT): 2011.11.30 22:17
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -38,6 +38,7 @@
 ! $domain=livetraf.com|mediadar.ru|medianaft.ru|rutraff.org|traforet.ru
 /click/body.php?id=*&hash=$other,popup
 ||crusewind.net/click/direct.php?$other,popup
+||fileshare.in.ua^*?gogogo$other,popup
 ||filonet.ru/engine/redirect.php?url=$other,popup
 ||go.timedirect.ru^$other,popup
 ||go.trafking.ru^$other,popup
@@ -46,7 +47,6 @@
 ||mesvip.com^$other,popup
 ||myragon.ru^$other,popup
 ||myredirector.net/?go=$other,popup
-||otwety-mail.com^$popup
 ||peel-down.net/search.php?$other,popup
 ||redirecturl.ru^$other,popup
 ||rts.pgmediaserve.com/$other,popup
@@ -55,6 +55,7 @@
 ||t8good.info^$other,popup
 ||traftiz.com/clck.php?g=*&tmz=$other,popup
 ||traff-redir.info/redir.php?s=$other,popup
+||trafflload.com^$~popup,popup
 ||war.noc.su/?$other,popup
 ||wbr.dyndns-mail.com/?get_opener_code&$other,popup
 ||xn--80abg3be.net^$other,popup
@@ -88,7 +89,7 @@
 ||link2you.ru^$other,popup
 ||marketgid.com^*.html$other,popup
 ||mycultures.ru^$other,popup
-||partypoker.com/*/videopop/$other,popup
+||partypoker.com^*/videopop/$other,popup
 ||pic4you.ru^$other,popup
 ||pic5you.ru^$other,popup
 ||pointblank.ru/?pid=$other,popup
@@ -98,9 +99,11 @@
 ||travian.com.ua/landingpage/$other,popup
 ||zzima.com/*/registration/$other,popup
 ! Мошенники. В основном блокируются на уровне редиректов, но лучше и так.
+||0tveti-mall.com^$~popup,popup
 ||help2play.com^$~popup,popup
 ||moneymaiker.ru^$~popup,popup
 ||otvetru.ru^$~popup,popup
+||otwety-mail.com^$~popup,popup
 ||vmesterabotaem.ru^$~popup,popup
 ||vsemdeneg.ru^$~popup,popup
 ||vsemtube.ru^$~popup,popup
@@ -136,70 +139,6 @@ izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
 !#regexp.bookmark
 ! Сайты городов и регионов России (огромное множество их)
 /\.ru\/([-.a-zA-Z0-9]*\/){4,5}$/$script
-!
-! = Исключения ================================================================
-! - Против ложных срабатываний ------------------------------------------------
-!#exfalse.bookmark
-! Исправление проблем возникших в результате работы подписки на отдельных сайтах
-! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
-@@||video.*.user.madbanner.ru^$object-subrequest
-! Видео с own3d.tv, показываемое на других сайтах (goodgame.ru|sc2tv.ru)
-@@||vox-static.liverail.com/swf/*/admanager.swf$domain=ru
-! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
-@@||ads.tomtel.ru/adjs.$script
-! Без этого ломается интеграция с виджетом «ВКонтакте» на 3dnews.ru
-@@||3dnews.ru/www/delivery/ajs.$script,domain=3dnews.ru
-! Правила для отдельных сайтов
-@@/ai/adbanner/*$domain=akado.ru|megafon.ru
-@@||adfox.ru^*&prr=$domain=infox.ru|rian.ru
-@@||adriver.ru/*.xml|$object-subrequest,domain=tsn.ua|tvjam.ru
-@@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru|tsn.ua|tvjam.ru
-@@||ads.alfabank.ru^$domain=alfabank.ru
-@@||ads.ertelecom.ru^$domain=citydom.ru
-@@||ads.su^$~third-party
-@@||adsvk.com^$elemhide,image,~third-party
-@@||advert.akado.ru/$domain=akado.ru
-@@||advert.kp.ru^$~object,~third-party
-@@||advert-technology.ru^$script,image,domain=advert-technology.ru
-@@||advertising.yandex.$domain=adv.ya.ru
-@@||advertising.yandex.$~third-party
-@@||auth.tbn.ru^$domain=ifolder.ru
-@@||afisha.ru/proxy/$domain=afisha.ru
-@@||alluregame.ru/Content/*/Advert$~third-party
-@@||bash.org.ru/faq|$elemhide
-@@||bash.org.ru/webmaster|$elemhide
-@@||cdn.now.ru/www/delivery/fc.php?$domain=now.ru
-@@||games-tv.ru/openx/www/delivery/ajs.php?$script,domain=games-tv.ru
-@@||livejournal.com/js/??*?v=$script,domain=livejournal.com
-@@||nic.ru/styles/advertising.css$domain=nic.ru
-@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=allhockey.ru
-@@||ph4.ru/*/adsense$domain=ph4.ru
-@@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
-@@||russia.ru/reklama/32x32.flv?link1=$object-subrequest,domain=vz.ru
-@@||rzd.ru/banner/$xmlhttprequest,domain=rzd.ru
-@@||sticker.yadro.ru/ad/3.xml?$object-subrequest,domain=rutv.ru
-@@||sticker.yadro.ru/i/ad_in_video.swf$domain=rutv.ru
-@@||videonow.ru/ad_holder/$domain=molodejj.tv
-@@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
-! - Против «бесконечной загрузки страниц» -------------------------------------
-!#excompat.bookmark
-! К сожалению скрипты сторонних рекламных сетей не всегда встраиваются аккуратно,
-! что приводит к эффекту «недогрузки» страниц. Реально всё содержимое загружено,
-! но индикатор загрузки продолжает показывать процесс загрузки и это состояние
-! часто влияет на работоспособность скриптов на таких страницах.
-! Баннерная сеть «Союз Журналистов», в случае с mk.ru используется домен (текстовые вставки с картинками) sj6.ru
-@@.ru/cgi-bin/iframe/mk-expert?$script,domain=mk.ru
-! Этими двумя скриптами пользуется как adfox.ru, так и их же сайт adwolf.ru, и вроде как не их kavanga.ru
-@@/getCodeTest?*&prr=*&dl=$script,domain=championat.com|gzt.ru|mk.ru|rosbalt.ru
-@@/prepareCode?*&prr=*&dl=$script,domain=championat.com|gzt.ru|mk.ru|rosbalt.ru
-! С адривером не всё просто. Иногда эти скрипты нужны для закрытия записи на страницу, но иногда ситуация обратна и они только вредят (avito.ru, например).
-@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|cnews.ru|eg.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|ozon.ru|rian.ru|vz.ru
-@@||adriver.ru/extender.js|$script,domain=mobile-review.com|vz.ru
-@@||adriver.ru/images/*/*/0/script.js?$script,domain=afisha.ru|cnews.ru|eg.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|ozon.ru|rian.ru|vz.ru
-@@||advertpay.net/code?$script,domain=dic.academic.ru
-@@||advertpay.net/?id=*&rid=$script,domain=utro.ru
-@@||adv.magna.ru/?id=*&rid=$script,domain=mk.ru|utro.ru
-@@||premium.mbn.com.ua^$script,domain=ura-inform.com
 !
 ! = Общие CSS-фильтры =========================================================
 !#css.bookmark
@@ -340,7 +279,7 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 .ru/ban/
 .ru/banner/
 .ru/banners/$domain=~citydom.ru|~onlime.ru|~toptracker.ru|~webnames.ru
-.ru/uploads/banners/
+.ru/uploads/banners/$domain=~digital.ru
 .ua/banner/
 .ua/banners/
 /adv/banners/*$domain=~artinvestment.ru
@@ -363,7 +302,7 @@ _banner.gif
 /images/rek/*
 /images/rekl/*
 /img/bn/*
-/img/rekl/*
+/img/rekl/*$domain=~softodrom.ru
 /imgads/*
 /mybaner/*
 /reklam.
@@ -1322,7 +1261,7 @@ _tizer.
 ||protizer.$third-party
 ||protrafv2.com^$third-party
 ||prre.ru^
-||ptredir.com^$third-party
+||ptredir.com^
 ||pullcorn.com^$third-party
 ||puls.lv/$third-party
 ||pustoty.net^$third-party
@@ -1741,6 +1680,7 @@ _tizer.
 ###ad_ph_2
 ###ad_ph_3
 ###adriver_middle
+||ad.adriver.ru^$domain=player.rutv.ru
 compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /banners/*/*/0/index.$subdocument
 !
@@ -2144,9 +2084,9 @@ crazys.info##A[target="_blank"] > DIV > IMG[src^="http://img.crazys.info/files/i
 ||crazys.info/files/!modules/
 cripo.com.ua###banner
 cripo.com.ua###topban
-cwer.ru##[class^="nadavi"]
 cwer.ru##.round > NOINDEX
 cwer.ru###footer
+cwer.ru###header .right
 ||cwer.ru^$subdocument
 cyberinfo.ru###bl_05
 !
@@ -2281,8 +2221,7 @@ file-online.ru##NOINDEX > TABLE[style]
 ||filebase.ws/adv/
 filehippo.com##.ad
 fileshare.in.ua##[id^="ad_"]
-||fileshare.in.ua/b$subdocument
-||fileshare.in.ua/goto.aspx?
+||fileshare.in.ua^$subdocument
 filmix.net###body #rightcol
 filmix.net##.banner
 filmx.com.ua##.modul-sp_main
@@ -2522,6 +2461,7 @@ killfilms.ru##A[href^="http://dosugcz.biz/"]
 ||killfilms.ru/*/girls/
 kino.ukr.net##.bn
 kino-dom.tv###dle-info + DIV[align="center"] > :not(#dle-content)
+||kino-dom.tv/600x130_
 kino-online.org##IMG[height="120"][width="600"]
 kino-zal.tv##BLINK
 kinobanda.net##.main-bg A[target="_blank"] > IMG
@@ -3047,9 +2987,8 @@ stolica.ru###stmenu
 stolica.ru###vst_mvideo
 stolica.ru##.wm2_900
 stopgame.ru###brandtop
-stopgame.ru##.head_adver
-stopgame.ru##.head_blank
-stopgame.ru##.head_zarabotay
+stopgame.ru##.ban250
+stopgame.ru##.ban468w
 ||stopgame.ru/*partners/
 ||storyroom.ru/bbb/
 streamzone.org###menu-block A:not([href^="redir.php?url="])
@@ -3187,6 +3126,8 @@ vedomosti.ru##.top_banners
 vedomosti.ru##[class^=ears]
 ||vedomosti.ru/var/bansrc/
 vesti.ru##.banner_vesti_reclama
+vesti.ru###video_banner_1
+||www.vesti.ru/i/*_vesti.$image
 videosaver.ru###ad
 forum.vingrad.ru###kupitraff
 video.oboz.ua##.global_overheader
@@ -3590,3 +3531,72 @@ x-soft.tomsk.ru###shop
 ||vtomske.ru/forum/*/kompstar$script,image,background
 ||vtomske.ru/informer/js/
 ||x-soft.tomsk.ru/dsa/
+!
+! = Исключения ================================================================
+! - Против ложных срабатываний ------------------------------------------------
+!#exfalse.bookmark
+! Исправление проблем возникших в результате работы подписки на отдельных сайтах
+! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
+@@||video.*.user.madbanner.ru^$object-subrequest
+! Видео с own3d.tv, показываемое на других сайтах (goodgame.ru|sc2tv.ru)
+@@||vox-static.liverail.com/swf/*/admanager.swf$domain=ru
+! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
+@@||ads.tomtel.ru/adjs.$script
+! Без этого ломается интеграция с виджетом «ВКонтакте» на 3dnews.ru
+@@||3dnews.ru/www/delivery/ajs.$script,domain=3dnews.ru
+! Игра MonsterWold на facebook'е
+@@||wooga.com/gardens/configurations/production/teaser.
+! Правила для отдельных сайтов
+@@/ai/adbanner/*$domain=akado.ru|megafon.ru
+@@||adfox.ru^*&prr=$domain=infox.ru|rian.ru
+@@||adriver.ru/*.xml|$object-subrequest,domain=tsn.ua|tvjam.ru
+@@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru|tsn.ua|tvjam.ru
+@@||ads.alfabank.ru^$domain=alfabank.ru
+@@||ads.ertelecom.ru^$domain=citydom.ru
+@@||ads.su^$~third-party
+@@||adsvk.com^$elemhide,image,~third-party
+@@||advert.akado.ru/$domain=akado.ru
+@@||advert.kp.ru^$~object,~third-party
+@@||advert-technology.ru^$script,image,domain=advert-technology.ru
+@@||advertising.yandex.$domain=adv.ya.ru
+@@||advertising.yandex.$~third-party
+@@||auth.tbn.ru^$domain=ifolder.ru
+@@||afisha.ru/proxy/$domain=afisha.ru
+@@||alluregame.ru/Content/*/Advert$~third-party
+@@||bash.org.ru/faq|$elemhide
+@@||bash.org.ru/webmaster|$elemhide
+@@||cdn.now.ru/www/delivery/fc.php?$domain=now.ru
+@@||games-tv.ru/openx/www/delivery/ajs.php?$script,domain=games-tv.ru
+@@||livejournal.com/js/??*?v=$script,domain=livejournal.com
+@@||nic.ru/styles/advertising.css$domain=nic.ru
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=allhockey.ru
+@@||ph4.ru/*/adsense$domain=ph4.ru
+@@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
+@@||russia.ru/reklama/32x32.flv?link1=$object-subrequest,domain=vz.ru
+@@||rzd.ru/banner/$xmlhttprequest,domain=rzd.ru
+@@||sticker.yadro.ru/ad/3.xml?$object-subrequest,domain=rutv.ru
+@@||sticker.yadro.ru/i/ad_in_video.swf$domain=rutv.ru
+@@||stopgame.ru/www/delivery/afr.php?*&target=_top&$subdocument,domain=stopgame.ru
+@@||stopgame.ru/www/delivery/ck.php?$subdocument,domain=stopgame.ru
+@@||stopgame.ru/www/images/$image,domain=stopgame.ru
+@@||videonow.ru/ad_holder/$domain=molodejj.tv
+@@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
+! - Против «бесконечной загрузки страниц» -------------------------------------
+!#excompat.bookmark
+! К сожалению скрипты сторонних рекламных сетей не всегда встраиваются аккуратно,
+! что приводит к эффекту «недогрузки» страниц. Реально всё содержимое загружено,
+! но индикатор загрузки продолжает показывать процесс загрузки и это состояние
+! часто влияет на работоспособность скриптов на таких страницах.
+! Баннерная сеть «Союз Журналистов», в случае с mk.ru используется домен (текстовые вставки с картинками) sj6.ru
+@@.ru/cgi-bin/iframe/mk-expert?$script,domain=mk.ru
+! Этими двумя скриптами пользуется как adfox.ru, так и их же сайт adwolf.ru, и вроде как не их kavanga.ru
+@@/getCodeTest?*&prr=*&dl=$script,domain=championat.com|gzt.ru|mk.ru|rosbalt.ru
+@@/prepareCode?*&prr=*&dl=$script,domain=championat.com|gzt.ru|mk.ru|rosbalt.ru
+! С адривером не всё просто. Иногда эти скрипты нужны для закрытия записи на страницу, но иногда ситуация обратна и они только вредят (avito.ru, например).
+@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|cnews.ru|eg.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|ozon.ru|rian.ru|vz.ru
+@@||adriver.ru/extender.js|$script,domain=mobile-review.com|vz.ru
+@@||adriver.ru/images/*/*/0/script.js?$script,domain=afisha.ru|cnews.ru|eg.ru|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|ozon.ru|rian.ru|vz.ru
+@@||advertpay.net/code?$script,domain=dic.academic.ru
+@@||advertpay.net/?id=*&rid=$script,domain=utro.ru
+@@||adv.magna.ru/?id=*&rid=$script,domain=mk.ru|utro.ru
+@@||premium.mbn.com.ua^$script,domain=ura-inform.com
