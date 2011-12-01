@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: 6Ik6Lzo35s5ymwJMSJKc4Q
-! Last modification time (GMT): 2011.12.01 17:30
+! Checksum: spFio1C1RpnXE30RP8u0JQ
+! Last modification time (GMT): 2011.12.01 18:09
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -2385,9 +2385,9 @@ igoods.com.ua##.bens
 igromania.ru##.bannerplace
 ||igromania.ru/*/banners/
 iguides.ru##.adsblock
-iguides.ru###vba_news4 > DIV[align="center"] > A[href^="http://"] > IMG
-iguides.ru##A > IMG[width="240"][height="240"]
-iguides.ru##TD[width="240"] > DIV > DIV[style*="750px;"]
+iguides.ru###container A[href^="http://"]:not([href*="iguides.ru"]) > IMG
+iguides.ru###header A[target="_blank"]
+www.iguides.ru##TD[width="240"] > DIV > DIV[style*="750px;"]
 ||imagevenue.com/interstitial.
 imgfiles.ru##[id^="bn"]>*
 ||imgix.ru/*.js|
