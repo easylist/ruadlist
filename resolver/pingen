@@ -1,18 +1,20 @@
 #!/bin/bash
-# Как это работает:
-#  * Первый SED:
-#    1. Заменить все строки, начинающиеся с буквы и содержащие ##, подстрокой от начала строки и до ## (оставляет адреса от правил скрытия).
-#    2. Заменить все строки, начинающиеся с || или protocol://, текстом после этих символов, но до символа /, $, ^ или * (оставляет адреса от правил блокировки доменов).
-#  * Второй SED
-#    1. Удаляем все строки начинающиеся не с текста, цифр или знака подчёркивания (знак подчёркивания не входит во множество \W).
-#    2. Удаляем все строки начинающиеся со знака подчёркивания (дочищаем после п.1).
-#    3. Удаляем все строки оканчивающиеся на точку (убиреам строки с не полными адресами).
-#  * Третий SED:
-#    1. Выполнять зацикленную обработку ввода до тех пор, пока не будет больше изменений.
-#    2. Заменить двойной переход на новую строку на одинарный (удаляем пустые строки).
-#    3. Заменить запятую на новую строку (разбивает списки доменов в списках правил скрытия).
-#    4. Заменяем удаляем тильды оставшиеся от исключений в правилах скрытия.
-#  * Сортируем получившийс список не смотря на регистр и удаляя дубликаты.
-#  * Результат сохраняем в файл.
-sed -r 's/^(\w[^#]*)##.*$/\1/g;s#^(\!\s\|{2}|\|{2}|\w*:?/{2})(\w[^/$^*]*).*$#\2#g' advblock.txt | sed -r 's#^\W.*$##g;s#^_.*$##g;s#^.*\.$##g' | sed ':a;N;$!ba;s/\n\n/\n/g;s/,/\n/g;s/~//g' | sort -fu > deadhosts.txt
+# How it works:
+#  * SED:
+#    1. Move lists of domains one row below to make sure they will pass to the last phase.
+#    2. Move hiding rules below lists of domains and mark them as trash
+#  * SED:
+#    1. Replace all rows starting with '||' or '! ||' or protocol://, with text starting after these characters but before /, $, ^ or * (blocking rules).
+#  * SED
+#    1. Remove all rows not starting with text, number, '~' or underscore (remove all garbage except things starting with underscore because it isn't in \W).
+#    2. Remove all rows starting with underscore (they are garbage as well).
+#    3. Remove all rows with dot in the end (incomplete domains).
+#  * SED:
+#    1. Repeate following commands until no more changes.
+#    2. Remove two <new row> characters with one (remove empty rows).
+#    3. Replace ',' with <new row> character (break lists of the domains from hiding rules).
+#    4. Remove '~' characters.
+#  * Sort things and remove clones.
+#  * Save result to file.
+sed 's/[$,]domain=/\n/g;s/##/\n!/g' advblock.txt | sed -r 's#^(\!\s\|{2}|\|{2}|\w*:?/{2})(\w[^/$^*]*).*$#\2#g' | sed -r 's#^(\W|~).*$##g;s#^_.*$##g;s#^.*\.$##g' | sed ':a;N;$!ba;s/\n\n/\n/g;s/[,|]/\n/g;s/~//g' | sort -fu > deadhosts.txt
 
