@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: rCsDBPjlr/I5OkHCQNDgjQ
-! Last modification time (GMT): 2011.12.08 00:35
+! Checksum: e7Svu5/jiX09GZuR/UdCaw
+! Last modification time (GMT): 2011.12.08 01:43
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -1847,14 +1847,57 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 !
 ! TeaserNET.com
 ||teasernet.com^$third-party
-! Подсеть: 88.85.93.###, адреса: 25, 34, 35, 100, 101
-! См. http://www.robtex.com/cnet/88.85.93.html и по конкретным IP.
+.com/ajax/?*=*&*=$third-party,script
+.com/ajax2/?*=*&*=$third-party,script
 .com/block.js|$third-party
-! .com/show6.php?b=$third-party
-! .com/step18.php?p=$third-party
+.com/javascript/$third-party,script
+.com/js/*.js?*&*=$third-party,script
+.com/modules/*?*=*&*=$third-party,script
+.com/modules.*?*=*&*=$third-party,script
 .com/_search.js|$third-party
-! Если прорывается один из /_search.js, то подгружается скрипт и фрейм с адресом вида imN-tub.com
-! IP-адреса (кроме im-tub.com): 78.140.152.30+N-1
+.com/show6.php?b=$third-party
+.com/step18.php?p=$third-party
+/i.*.com/*/160x160.gif|
+! //web.*.com/static/*/*.js|$script
+! Домены тизернета в зоне .com (чтоб наверняка и меньше зависеть от их постоянно меняющихся скриптов)
+||aerontre.com^
+||affarity.com^
+||agitazio.com^
+||ainstite.com^
+||aintegie.com^
+||aintes.com^
+||apocence.com^
+||aprelite.com^
+||archeurs.com^
+||associazio.com^
+||associeta.com^
+||attivertura.com^
+||bannuncio.com^
+||bilation.com^
+||campeut.com^
+||canalds.com^
+||caragots.com^
+||ciement.com^
+||clangere.com^
+||comunicazio.com^
+||connees.com^
+||daccroi.com^
+||daccroit.com^
+||daffaite.com^
+||daffices.com^
+||demanier.com^
+||detaires.com^
+||dificaux.com^
+||disterme.com^
+||donalise.com^
+||drontres.com^
+||ensepare.com^
+||emisses.com^
+||frestime.com^
+||ghaires.com^
+||hommisse.com^
+||ikersont.com^
+||illiages.com^
 ||im-tub.com^
 ||im1-tub.com^
 ||im2-tub.com^
@@ -1862,57 +1905,26 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||im4-tub.com^
 ||im5-tub.com^
 ||im6-tub.com^
-! Пачка доменов тизернета вида домен.com/javascript/%alphanumerical%.
-.com/ajax/?*=*&*=$third-party,script
-.com/ajax2/?*=*&*=$third-party,script
-.com/modules/*?*=*&*=$third-party,script
-.com/modules.*?*=*&*=$third-party,script
-.com/javascript/$third-party,script
-.com/js/*.js?*&*=$third-party,script
-! //web.*.com/static/*/*.js|$script
-! Основные домены с мусором
-||lacembre.com^
-||lacemme.com^
-||lacest.com^
-! Домены тизернета в зоне .com (чтоб наверняка и меньше зависеть от их постоянно меняющихся скриптов)
-||aerontre.com^
-||affarity.com^
-||ainstite.com^
-||aintegie.com^
-||aintes.com^
-||apocence.com^
-||archeurs.com^
-||attivertura.com^
-||bannuncio.com^
-||bilation.com^
-||canalds.com^
-||ciement.com^
-||comunicazio.com^
-||connees.com^
-||daccroi.com^
-||daccroit.com^
-||daffices.com^
-||detaires.com^
-||dificaux.com^
-||donalise.com^
-||ensepare.com^
-||emisses.com^
-||ghaires.com^
-||hommisse.com^
-||ikersont.com^
 ||imagans.com^
+||ivantat.com^
 ||kolitat.com^
 ||kolition.com^
 ||kolitter.com^
+||lacembre.com^
+||lacemme.com^
+||lacest.com^
 ||langueur.com^
 ||lavantat.com^
 ||lexament.com^
-||masterconvert.ru^
+||locandito.com^
+||sontere.com^
+||spechee.com^
 ||spechete.com^
 ||striere.com^
 ||striete.com^
 ||supertura.com^
 ||teaservizio.com^
+||tidentes.com^
 ||tierest.com^
 ||timonom.com^
 ||utilieur.com^
@@ -1921,6 +1933,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Прочие домены тизернета
 ||autotizer.ru^
 ||ddqq.com.ua^
+||masterconvert.ru^
+||nn.tmska.com^
 ||stats.internet-yadro.com^
 ||teasernet.ru^
 !
