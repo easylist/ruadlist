@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: LUGg/d0BD7eVNFVwbUoaIw
-! Last modification time (GMT): 2011.12.07 23:42
+! Checksum: rCsDBPjlr/I5OkHCQNDgjQ
+! Last modification time (GMT): 2011.12.08 00:35
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -37,8 +37,6 @@
 .info/sol/$other,popup
 ! $domain=flipflapflo.biz|flipflapflo.net|wt-rotator.biz|wts-rotator.com
 //uno.*/?t=$script,other,popup
-! $domain=livetraf.com|mediadar.ru|medianaft.ru|rutraff.org|traforet.ru
-/click/body.php?id=*&hash=$other,popup
 ! $domain=adonweb.ru|webunder.ru
 /adv_clk_redirect.php?$other,popup
 ||crusewind.net/click/direct.php?$other,popup
@@ -273,8 +271,6 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /some-ad.php
 /splash/page_header/*
 /topadvert.
-/traforet.
-.traforet.
 /vendshow/*
 /vsemayki_
 /warlog.
@@ -373,6 +369,51 @@ _tizer.
 ||smi2.ru/data/iframes/$third-party
 ||smigid.ru/informer/
 ||vsyako-razno.ru/engine/sblocks_informer.php?
+! - Биржи трафика -------------------------------------------------------------
+!#traff.bookmark
+! BodyClick.NET
+/banner.php?sid=*&bn=*&ad=
+/bodyclick.$~popup,popup
+.bodyclick.$~popup,popup
+/tizers2.
+||tizer6.net^
+||tizer7.net^
+||tizer8.net^
+||tizerbest.net^
+||tizerda.net^
+||tizergo.net^
+||tizermine.net^
+||tizerset.net^
+! Найдены по "/js/bodyclick.php?id=" и "/click/body.php?id=", но что через них только не распространяется.
+/click/body.php?id=*&hash=$other,popup
+/traforet.$~popup,popup
+.traforet.$~popup,popup
+||activepr.ru^$~popup,popup
+||alltizer.ru^$~popup,popup
+||bigtraff.com^$~popup,popup
+||bigtrafff.ru^$~popup,popup
+||clickspay.ru^$~popup,popup
+||good-traf.ru^$~popup,popup
+||gotraff.ru^$~popup,popup
+||hit-star.ru^$~popup,popup
+||libertytraffic.ru^$~popup,popup
+||livetraf.com^$~popup,popup
+||luxtraffic.ru^$~popup,popup
+||mediadar.ru^$~popup,popup
+||medianaft.ru^$~popup,popup
+||mytraff.net^$~popup,popup
+||pay-partner.ru^$~popup,popup
+||privattraff.ru^$~popup,popup
+||protrafv2.com^$~popup,popup
+||realtraf.ru^$~popup,popup
+||rutraff.org^$~popup,popup
+||traffru.ru^$~popup,popup
+||txtip.ru^$~popup,popup
+||vipmest.info^$~popup,popup
+||webmastak.net^$~popup,popup
+||wmip.ru^$~popup,popup
+||xertv.com^$~popup,popup
+//193.105.200.214/*$~popup,popup
 ! - Блокировка по именам файлов -----------------------------------------------
 !#name.bookmark
 /aika.swf
@@ -426,8 +467,6 @@ _tizer.
 //94.23.6.17:443/RP/*
 //95.168.161.173/www/*
 //188.72.225.106^
-! Traforet.ru
-//193.105.200.214/js/*
 //194.135.105.*/js/*
 //195.82.146.52^
 //195.161.119.239^
@@ -559,7 +598,6 @@ _tizer.
 ||allnokia.ru/img/*?*/click/?
 ||alloy.ru/auth.php?
 ||allsiemens.com^$third-party
-||alltizer.ru^$third-party
 ||alltraf.net^$third-party
 ||allwomens.ru^$third-party
 ||alpari.ru/static/files/alpari/img/partnership/bnrs/$third-party
@@ -1005,7 +1043,6 @@ _tizer.
 ||liveclix.net^$third-party
 ||liveinternet.ru/cgi-bin/adt.fcgi?
 ||liverec.com^$third-party
-||livetraf.com^$third-party
 ||loadmovie.ru^$third-party
 ||loadmult.ru/slider/$third-party
 ||loadpartners.com^$third-party
@@ -1050,10 +1087,8 @@ _tizer.
 ||media.carnage.ru^
 ||media.online.ua/all/gft/
 ||mediacontext.$third-party
-||mediadar.ru^$third-party
 ||mediaget.com^$third-party
 ||mediakadr.ru^$third-party
-||medianaft.ru^$third-party
 ||mediaportal.ru^$third-party
 ||mediarich.$third-party
 ||mediarotator.ru^$third-party
@@ -1341,7 +1376,6 @@ _tizer.
 ||rusmedserv.com^$third-party
 ||rustrackers.ru^$third-party
 ||rutor.org^$third-party
-||rutraff.org^$third-party
 ||ruvideo.net/obzor/
 ||ruwm.ru/links.php?
 ||s.agava.ru/cgi/actions/c.cgi?
@@ -1493,7 +1527,6 @@ _tizer.
 ||trafficmaxx.de/thx.php?
 ||traffikk.biz^$third-party
 ||traffmaster.ru^$third-party
-||traffru.ru^$third-party
 ||traffsale.com^$third-party
 ||traffsaler.com^$third-party
 ||traffstock.ru^$third-party
@@ -1548,7 +1581,6 @@ _tizer.
 ||videoplayerworld.com^$third-party
 ||videoslovo.ru^$third-party
 ||videotraff.ru/img
-||vipmest.info^$third-party
 ||viprelax.com.ua^$domain=~viprelax.com.ua
 ||viprip.net/banners/
 ||virwin.ru^$third-party
@@ -1587,7 +1619,6 @@ _tizer.
 ||webkrug.ru/images/bann
 ||weblist.ru/images/weblist
 ||weblog.com*/cnt
-||webmastak.net^$third-party
 ||webmedia.co.il^
 ||webnews.moy.su/rtr/
 ||webnewshost.com/do/adv.
@@ -1740,20 +1771,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! domain=intv.ru|lostcinema.ru
 ! ||flash.begun.ru/banner.jsp?*$object-subrequest
 !
-! BodyClick.NET
-/banner.php?sid=*&bn=*&ad=
-/bodyclick.
-.bodyclick.
-/tizers2.
-||tizer6.net^
-||tizer7.net^
-||tizer8.net^
-||tizerbest.net^
-||tizerda.net^
-||tizergo.net^
-||tizermine.net^
-||tizerset.net^
-!
 ! CashProm.ru
 ||cashprom.ru^$third-party
 ||microad.ru^
@@ -1890,6 +1907,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||langueur.com^
 ||lavantat.com^
 ||lexament.com^
+||masterconvert.ru^
 ||spechete.com^
 ||striere.com^
 ||striete.com^
