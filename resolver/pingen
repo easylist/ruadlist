@@ -1,20 +1,20 @@
 #!/bin/bash
 # How it works:
-#  * SED:
-#    1. Move lists of domains one row below to make sure they will pass to the last phase.
-#    2. Move hiding rules below lists of domains and mark them as trash
-#    3. Remove '@@' and '!' from exceptions and 'disabled' filters to extract domain names from them later.
-#  * SED:
-#    1. Replace all rows starting with '||' or '! ||' or protocol://, with text starting after these characters but before /, $, ^ or * (blocking rules).
-#  * SED
-#    1. Remove all rows not starting with text, number, '~' or underscore (remove all garbage except things starting with underscore because it isn't in \W).
-#    2. Remove all rows starting with underscore (they are garbage as well).
-#    3. Remove all rows with dot in the end (incomplete domains).
-#    4. Replace ',' and '|' with <new row> character (break lists of domains).
-#    5. Remove '~' characters.
-#    6. Remove rows without '.' character (obvious non-domains or first level domains like com/ru/ua/...).
-#    7. Remove emtpy rows.
+#  * SED #1: Initial cleanup.
+#    1. Remove '@@' from exceptions filters to extract domain names from them later.
+#    2. Remove '! ' from 'disabled' filters to extract domain names from them later.
+#    3. Move lists of domains one row below to process them later.
+#    4. Move hiding rules below lists of domains and mark them for removal.
+#  * SED #2: Replace all rows starting with '||' or protocol://, with text starting after these characters but before /, $, ^ or * (extract domains from blocking rules).
+#  * SED #3: Deail with lists of domains.
+#    1. Remove '~' characters.
+#    2. Replace ',' and '|' with <new row> character (break lists of domains).
+#  * SED #4: Cleanup.
+#    1. Remove all rows not starting with alphanumerical character (remove obvious non-domains).
+#    2. Remove all rows with dot in the end (incomplete domains).
+#    3. Remove rows without '.' character (obvious non-domains or first level domains like com/ru/ua/...).
+#    4. Remove emtpy rows.
 #  * Sort things and remove clones.
 #  * Save result to file.
-sed -r 's/[$,]domain=/\n/g;s/##/\n!/g;s/^(@@|\!\s?)\|{2}/||/g' advblock.txt | sed -r 's#^(\|{2}|\w*:?/{2})(\w[^/$^*]*).*$#\2#g' | sed -r '/^(\W|~).*$/d;/^_.*$/d;/^.*\.$/d;s/[,|]/\n/g;s/~//g;/^[^.]*$/d;/^ *$/d' | sort -fu > deadhosts.txt
+sed -r 's/^@@//g;s/^\!\s?\|\|/||/g;s/[$,]domain=/\n/g;s/##/\n!/g' advblock.txt | sed -r 's#^(\|{2}|\w*:?/{2})(\w[^/$^*]*).*$#\2#g' | sed -r 's/~//g;s/[,|]/\n/g' | sed -r '/^(\W|_)/d;/\.$/d;/^[^.]*$/d;/^ *$/d' | sort -fu > deadhosts.txt
 
