@@ -14,7 +14,10 @@
 #    2. Remove two <new row> characters with one (remove empty rows).
 #    3. Replace ',' with <new row> character (break lists of the domains from hiding rules).
 #    4. Remove '~' characters.
+#  * SED:
+#    1. Remove rows without '.' character (obvious non-domains or first level domains like com/ru/ua/...).
+#    2. Remove emtpy rows.
 #  * Sort things and remove clones.
 #  * Save result to file.
-sed 's/[$,]domain=/\n/g;s/##/\n!/g' advblock.txt | sed -r 's#^(\!\s\|{2}|\|{2}|\w*:?/{2})(\w[^/$^*]*).*$#\2#g' | sed -r 's#^(\W|~).*$##g;s#^_.*$##g;s#^.*\.$##g' | sed ':a;N;$!ba;s/\n\n/\n/g;s/[,|]/\n/g;s/~//g' | sort -fu > deadhosts.txt
+sed 's/[$,]domain=/\n/g;s/##/\n!/g' advblock.txt | sed -r 's#^(\!\s\|{2}|\|{2}|\w*:?/{2})(\w[^/$^*]*).*$#\2#g' | sed -r 's#^(\W|~).*$##g;s#^_.*$##g;s#^.*\.$##g' | sed ':a;N;$!ba;s/\n\n/\n/g;s/[,|]/\n/g;s/~//g' | sed -r '/^[^.]*$/d;/^ *$/d' | sort -fu > deadhosts.txt
 
