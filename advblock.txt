@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: B5OTC8kbB8Lbdm0UAEKJyA
-! Last modification time (GMT): 2011.12.08 22:14
+! Checksum: KE5+P/huMR06CzAgAcB07A
+! Last modification time (GMT): 2011.12.08 22:36
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -132,9 +132,8 @@
 ! Правило скрытия содержимого на порно-сайтах открывающихся в попапах.
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon. Скоро станет не нужным.
 devochki.cz,livejasmin.com,pornoshara.tv,vsesuper.in,x-uboino.net,x-uboino.ru##:root
-! Порно-сайты сети pokajem. Известные домены включая нерабочие:
-! nashevideo.info, pokajem.do.am, portvx.com, prodom2.com,
-! tele-dom2.com, telesekas.com, tvsxsite.com, videocinemax.com
+! Порно-сайты сети pokajem. Известные домены:
+! $domain=nashevideo.info|pokajem.do.am|portvx.com|prodom2.com|tele-dom2.com|telesekas.com|tvsxsite.com|videocinemax.com
 ||pokajem.*.*/$~popup,popup
 ||glopic.com$domain=nashevideo.info|pokajem.do.am|portvx.com
 nashevideo.info,pokajem.do.am,portvx.com##:root
@@ -273,8 +272,6 @@ www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 /vsemayki_
 /warlog.
 /webunder.
-! ad.jref.com, emotraffic.ru, gamersad.com, lerma.ru, muslimbanners.com, onads.com, pornobanner.ru, pornobanner.com, rg-be.ru, rgbe.ru, ricead.com, smol.me
-! /work.php?n=*&size=*&c=$third-party,script
 ! - Баннеры -------------------------------------------------------------------
 !#banner.bookmark
 .biz/banner/$third-party
@@ -541,7 +538,7 @@ _tizer.
 ||adme.ru^$third-party
 ||admixer.net^$third-party
 ||admoon.net^$third-party
-! admulti.com
+! ||admulti.com^
 ||admulti.$third-party
 ||adne.info^$third-party
 ||adonweb.ru^$~popup,popup
@@ -663,7 +660,6 @@ _tizer.
 ||binmedia.ru^$third-party
 ||bizua.com^$third-party
 ||bk.goodline.info^$third-party
-! Есть ещё blogam.ru и blogan.ru, но первый вроде тихий, а второго уже вроде и нет
 ||blogun.ru^$third-party
 ||bloha.net^
 ||blowclick.ru^$third-party
@@ -1218,7 +1214,7 @@ _tizer.
 ||popru.ru^$third-party
 ||poptraf.$third-party
 ||popularsite.ru/*.php?
-! popunder.ru
+! ||popunder.ru^
 ||popunder.$third-party
 ||popup2m.com^$third-party
 ||popuptraf.$third-party
@@ -1706,13 +1702,13 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /get.js?user_id=$script,third-party
 ||4allclick.ru^$~popup,popup
 ||clickunder.net^$~popup,popup
-! eroadvert.net, eroadvert.ru
+! $domain=eroadvert.net,eroadvert.ru
 ||eroadvert.$~popup,popup
 ||eropop.ru^$~popup,popup
 ||goallurl.ru^$~popup,popup
 ||gokliks.ru^$~popup,popup
 ||kliklink.ru^$~popup,popup
-! popupclick.ru, popupclick.com
+! $domain=popupclick.ru,popupclick.com
 ||popupclick.$~popup,popup
 ||ruklik.com^$~popup,popup
 ||tdstraff.ru^$~popup,popup
@@ -1723,7 +1719,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! tds.clickcashmoney.com
 ||clickcashmoney.com^$third-party
 ||dosug.cz^$~popup,popup
-! dosugcz.net, dosugcz.in, dosugcz.biz
+! $domain=dosugcz.net,dosugcz.in,dosugcz.biz
 ||dosugcz.$~popup,popup
 ||rusrestbest.com^$~popup,popup
 ||tvoi-dosug.com^$~popup,popup
