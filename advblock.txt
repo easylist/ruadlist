@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: e7Svu5/jiX09GZuR/UdCaw
-! Last modification time (GMT): 2011.12.08 01:43
+! Checksum: 84qYD1DbI1KG8D8btHKsTQ
+! Last modification time (GMT): 2011.12.08 02:21
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -48,7 +48,6 @@
 ||literedirect.com^*?__vc_pid=$other,popup
 ||mesvip.com^$other,popup
 ||myragon.ru^$other,popup
-||myredirector.net/?go=$other,popup
 ||peel-down.net/search.php?$other,popup
 ||redirecturl.ru^$other,popup
 ||rts.pgmediaserve.com/$other,popup
@@ -59,7 +58,6 @@
 ||traff-redir.info/redir.php?s=$other,popup
 ||trafflload.com^$~popup,popup
 ||war.noc.su/?$other,popup
-||wbr.dyndns-mail.com/?get_opener_code&$other,popup
 ||xn--80abg3be.net^$other,popup
 !  Super star - редирект на antivirusms.com и подобную гадость
 ||all4girl.net/main/$other,popup
@@ -135,11 +133,11 @@
 ! Имеет смысл только без расширения Adblock Plus Pop-up Addon. Скоро станет не нужным.
 devochki.cz,livejasmin.com,pornoshara.tv,vsesuper.in,x-uboino.net,x-uboino.ru##:root
 ! Порно-сайты сети pokajem. Известные домены включая нерабочие:
-! cooldevki.com, falosvideo.com, izvrasheniya.com, nashevideo.info, pokajem.do.am, portvx.com, prodom2.com,
-! tele-dom2.com, telesekas.com, tvdom2.com, tvsxsite.com, videocinemax.com, vkvideox.com
+! nashevideo.info, pokajem.do.am, portvx.com, prodom2.com,
+! tele-dom2.com, telesekas.com, tvsxsite.com, videocinemax.com
 ||pokajem.*.*/$~popup,popup
-||glopic.com$domain=izvrasheniya.com|nashevideo.info|pokajem.do.am|portvx.com
-izvrasheniya.com,nashevideo.info,pokajem.do.am,portvx.com##:root
+||glopic.com$domain=nashevideo.info|pokajem.do.am|portvx.com
+nashevideo.info,pokajem.do.am,portvx.com##:root
 !
 ! = Регулярные выражения ======================================================
 !#regexp.bookmark
@@ -449,7 +447,6 @@ _tizer.
 /bs.mybb.ru/*
 /bs.nigma.ru/*$domain=~nigma.ru
 !
-//77.91.228.66/banners/*
 //78.140.145.93^
 //78.140.145.178^
 //80.91.178.234^
@@ -470,16 +467,13 @@ _tizer.
 //194.135.105.*/js/*
 //195.82.146.52^
 //195.161.119.239^
-//195.239.111.200^
 ! Media-Click.RU
 //212.150.34.*.php?
 ! ProTizer.ru
 //212.150.34.116/
-//213.133.165.94^
 ! OpenX Ad Server
 //213.163.70.183^
 //213.186.217.210/banners/*
-//213.199.175.155^
 //217.170.78.*/banners/*
 !
 ||003.com.ua^$domain=~003.com.ua
@@ -491,11 +485,10 @@ _tizer.
 ||17teen.ru^$third-party
 ||1ha.ad.md^$third-party
 ||1invite.ru^$third-party
-||1pop.ru/$third-party
-||1popup.ru^$third-party
+||1pop.ru^$third-party
 ||1tizer.com^$third-party
 ||1traff.ru^$third-party
-||1txt.ru/$third-party
+||1txt.ru^$third-party
 ||2000zakazov.ru^$third-party
 ||24new.ru^$third-party
 ||24open.ru/*?from=
@@ -512,6 +505,7 @@ _tizer.
 ||4smi.ru/$third-party
 ||7rtv.com^$third-party
 ||8coins.net^$third-party
+||8coins.ru^$third-party
 ||8test.ru^$third-party
 ||8testov.ru^$third-party
 ||a-love.nninfo.ru^$third-party
@@ -550,7 +544,6 @@ _tizer.
 ! admulti.com
 ||admulti.$third-party
 ||adne.info^$third-party
-||adnew.for-ua.com^
 ||adonweb.ru^$~popup,popup
 ||adpath.ru^$third-party
 ! Домен не найден: ||adpower.com.ua^$third-party
@@ -558,9 +551,7 @@ _tizer.
 ||adrock.com.ua^
 ||adrock.ua^$third-party
 ||adru.net^$third-party
-||ads.gfsrv.net^$third-party
 ||ads68.ru^$third-party
-||adsell.me/b/
 ||adshop.ru/adshop/?
 ||adskape.ru^$third-party
 ||adsn24.ru^$third-party
@@ -598,7 +589,6 @@ _tizer.
 ||allnokia.ru/img/*?*/click/?
 ||alloy.ru/auth.php?
 ||allsiemens.com^$third-party
-||alltraf.net^$third-party
 ||allwomens.ru^$third-party
 ||alpari.ru/static/files/alpari/img/partnership/bnrs/$third-party
 ||alpari.ru/static/img/ib/$third-party
@@ -629,8 +619,7 @@ _tizer.
 ||autoreg.ru/images/
 ||autoua.com^$third-party
 ||avazone.ru^$third-party
-||aviafly.ru/js|
-||avifilm.ru/new/
+||avifilm.ru^
 ||awmpartners.com^$third-party
 ||azartcash.com/bns/
 ||azbukasexa.ru^$third-party
@@ -651,7 +640,6 @@ _tizer.
 ! Домен не найден: ||bannex.com.ua^$third-party
 ||bans.bride.ru^$third-party
 ||bantex.ru^$third-party
-||barbur.ru^$third-party
 ||base.kiwi.kz^$third-party
 ||bashnya.ru^$third-party
 ||basketfan.my1.ru^$third-party
@@ -690,19 +678,15 @@ _tizer.
 ||box.net.pl/strony/topsites/img.php?
 ||br.gcl.ru/cgi-bin/br/
 ||bt.kiev.ua^$domain=~bt.kiev.ua
-||buybanners.ru^$third-party
 ||bvf.ru/upchk/
 ||bw.pronto.ru^$third-party,domain=~job.ru
 ||bx.metka.ru^
-||c.ile.ru^
-||c2001.ent.spyrix.ru/user.aic?
 ||cachewww.euro-play.net/bnr/
 ||captainsofcrush.ru^$third-party
 ||cash.loadsex.ru^
 ||cash4ru.com^$third-party
 ||cashimtrap.com^$third-party
 ||casino-kaza.com^*/banners/
-||cat.clx.ru^$third-party
 ||catalog.deport.ru/btn.php?
 ||cdpartner.ru^$third-party
 ||cenovik.net^$third-party
@@ -719,13 +703,12 @@ _tizer.
 ||clickaider.com^$third-party
 ||clickburner.com/banners/
 ||clickbux.ru^$third-party
-||clickclickclick.asia^$third-party
 ||clickcoin.com^$third-party
 ||clickhere.ru^$third-party
-||clickopen.ru^$third-party
 ||clix.ru/js/
 ||clocklink.com/clocks/$object
 ||club-reseller.com^$third-party
+||clx.ru^$third-party
 ||cn.procontext.ru^
 ||co.cc/img/affiliates/
 ||com.com/*/Ads/
@@ -759,13 +742,10 @@ _tizer.
 ||dimpy.narod.ru^
 ||dircash-promo.com^$third-party
 ||dircash-promost.com^$third-party
-||direct.quasir.info^
 ||directadvert.ru^$third-party
 ||dirkino-*.ru^$third-party
-||dividend-bank.ru/img/$third-party
 ||dl2.ru/catalog.php?
 ||dndd.ru/$third-party
-||domika.msk.ru^
 ||doortrade.ru^$third-party
 ||dostavka.ru^$third-party
 ||dosugvip.ru^$third-party
@@ -802,7 +782,6 @@ _tizer.
 ||esc-team.com^$third-party
 ||eserver.ru/img/b/*.gif
 ||evilfighter.ru^$third-party
-||euro.dirius.info/images/ban
 ||eurosmi.ru/ad/
 ||ex6.ru/k/
 ||exaccess.ru^$third-party
@@ -823,7 +802,6 @@ _tizer.
 ||file-online.ru^$third-party
 ||filepost.ru^$third-party
 ||filmcool.ru^$third-party
-||filmfree.ru/images/
 ||filmplus.ru^$third-party
 ||finbs.ru^$third-party
 ||fip.net.ru/img/newsex/
@@ -840,7 +818,6 @@ _tizer.
 ||fotocash.ru^$third-party
 ||fotostrana.ru^$third-party,~subdocument
 ||free-lance.ru/*/contacts/
-||freeexchange.ru^$third-party
 ||freehd.com.ua^
 ||freeonlineusers.com^$third-party
 ||freewm.ru/js/bonus_code.php?
@@ -851,7 +828,6 @@ _tizer.
 ||fxcast.com^$third-party
 ||fxtrade.org.ru^
 ||galaxymeet.ru^$third-party
-||game-top.su/images/game-top
 ||gameleads.ru^$third-party,~popup,popup
 ||gamerpro.ru/images/adver/$image,object
 ||gamingpartners.org^$third-party
@@ -859,10 +835,8 @@ _tizer.
 ||geo.readlist.ru/traf.php
 ||getb.7ya.ru^
 ||giper.info^$third-party
-||girls.ss.ru^
 ||girlstalks.ru^$third-party
 ||giveawayoftheday.com/ticker/
-||glam-x.ru^$third-party
 ||glamursgirl.ru^$third-party
 ||glifuka.com^$third-party
 ||globalstars.ru^$third-party
@@ -873,7 +847,6 @@ _tizer.
 ||gnezdo.ru^$third-party
 ||go.bb.ru/images/
 ||go.jetswap.com^
-||go.media-x.ru^
 ||godudu.com/swf/
 ||gogo.ru/img/p/
 ||gold-click.info^$third-party
@@ -890,7 +863,6 @@ _tizer.
 ||govazd.am/cgi-bin/pro.cgi
 ||gramer.freehostia.com/statistics/
 ||grand-masters.ru^$third-party
-||grand-masters.tru^$third-party
 ||grebibablo.com^$third-party
 ||grind.fm/sites/grind.fm/userbar/bnr$third-party
 ||gsmonitor.ru^$third-party
@@ -924,10 +896,8 @@ _tizer.
 ||i-kinocash.com/banners/$third-party
 ||icq-window.$third-party
 ||icqmoney.com^$third-party
-||icqtraff.org^$third-party
 ||icqwindow.$third-party
-||id5.ru/system/
-||idge.ru/js_search.php?
+||id5.ru^$third-party
 ||iframe.mediaplazza.com^
 ||iframepay.com^$third-party
 ||igrun.com/banners/
@@ -936,7 +906,6 @@ _tizer.
 ||images.stardock.com/flash/
 ||images.stardock.com/store/
 ||imarker.ru^$third-party
-||img.8coins.ru^
 ||img.carnage.ru/i/main/$object
 ||img.mobilezzz.com^
 ||img.ruclicks.com/ruclicks
@@ -969,10 +938,8 @@ _tizer.
 ||itizer.ru^$third-party
 ||itsellservice.com.ua^$domain=~itsellservice.com.ua
 ||itsmygame.com.ua^$domain=~itsmygame.com.ua
-||jag.mews.ru^
 ||jet3.ayola.net/cn.php?
 ||job.ws/_bann/
-||jopandex.ru^$third-party
 ||js.einfo.by/?
 ||k2kapital.com/upload
 ||kachestvoo.ru^$third-party
@@ -1010,7 +977,6 @@ _tizer.
 ||kv.by/img/$object
 ||kvasu.net/*/$object
 ||kwot.biz^$third-party
-||kzporno.kz^$third-party
 ||ladycash.ru^$third-party
 ||ladyshopping.ru^$third-party
 ||leads.su^$third-party
@@ -1025,19 +991,14 @@ _tizer.
 ||liderus.ru^$third-party
 ||liex.ru/$third-party
 ||lif.yaicom.ru/*.php?tpl=
-||life4life.biz^$third-party
 ||lifepromo.biz^$third-party
-||limp.pp.ua^
-||link-ip.int.ru/in.php?
 ||link.ru/$third-party
 ||linkbuy.biz^$third-party
 ||linkexchange.$third-party
 ||linkme.org.ua^
-||linktraff.ru^$third-party
 ||linkwm.ru^$third-party
 ||linkzilla.ru/seo/
 ||linon.ru/links*.php?
-||lipcrus.biz^$third-party
 ||listsites.ru^$third-party
 ||litres.ru/pages/get_vidget/?
 ||liveclix.net^$third-party
@@ -1050,17 +1011,14 @@ _tizer.
 ||log.ru^$third-party
 ||logan.jino.ru^
 ||login.tracking101.com^
-||logtr4ry.ht-systems.ru^
 ||lol.bash.org.ru^
 ||lookszone.ru^$third-party
 ||loveadvert.ru^$third-party
-||lovely37.valuehost.ru^
 ||lovn.ru/$third-party
 ||lux-bn.com.ua^$domain=~lux-bn.com.ua
 ||luxcash.ru/contekst.*&luxcash_uid=
 ||luxup.ru^$third-party
 ||luxurycash.net^$third-party
-||lycee.explode.ru^
 ||lydiz.com^$third-party
 ||m2k.ru/cgi-bin/
 ||mabila.ua^$third-party
@@ -1083,8 +1041,7 @@ _tizer.
 ||mdesign.planet.ee^$third-party
 ||media-click.ru^$third-party
 ||media-code.info^$third-party
-||media-plans.ru^$third-party
-||media.carnage.ru^
+||media-x.ru^
 ||media.online.ua/all/gft/
 ||mediacontext.$third-party
 ||mediaget.com^$third-party
@@ -1129,7 +1086,6 @@ _tizer.
 ||money.loveplanet.ru/nb/
 ||money-job.ru^$third-party
 ||moneysyst.biz^$third-party
-||moneyteacher.ru^$third-party
 ||moogle.ru^$third-party
 ||moovy.ru/b*.php?
 ||moremont.ru/js
@@ -1153,14 +1109,12 @@ _tizer.
 ||mytraf.ru^$third-party
 ||narod.kz/img.php?
 ||nasf.ru/ad/
-||needtest.ru^$third-party
 ||negolist.com^$third-party
 ||nekki.ru/banner.php?
 ||neosap.ru^$third-party
 ||neosmi.ru^$third-party
 ||netporno.org^$third-party
 ||nettracker.jps.ru^
-||newbs.hutz.co.il/www/
 ||newclick.org^$third-party
 ||news.rin.ru^$third-party
 ||newsprom.ru/img/
@@ -1190,7 +1144,6 @@ _tizer.
 ||okoshechka.net^$third-party
 ||okinternet.ua^$third-party
 ||oldcombats.net/images_banner/
-||olegbiz.ru^$third-party
 ||ololo.tv/?$third-party
 ||one.ru/cgi-bin
 ||onlineresume.ru/banner*?
@@ -1233,14 +1186,12 @@ _tizer.
 ||penza-online.ru/cgi-bin/userstats.pl?
 ||people.1gb.ru^
 ||perezzz.ru^$third-party
-||photo-droch.net^$third-party
 ||piar.com.ua^
 ||picbay.ru^$third-party
 ||pickegg.com/wholesale-flash-banner/
 ||pindotrafforg.54.com1.ru^
 ||pingmedia.ru^$third-party
 ||pirojok.net^$third-party
-||piter.com/files/b_a_n_n_e_r_s/
 ||planetaua.net^$third-party
 ||platinumcode.net^$third-party
 ||play2.biz^$third-party
@@ -1264,23 +1215,16 @@ _tizer.
 ||pop.ru^$third-party
 ||popad.ru^$third-party
 ||popander.com^$third-party
-||popget.ru^$third-party
 ||popinads.com^$third-party
-||popon.ru^$third-party
 ||popru.ru^$third-party
-||popstart.ru^$third-party
 ||poptraf.$third-party
 ||popularsite.ru/*.php?
 ! popunder.ru
 ||popunder.$third-party
-||popup.su^$third-party
 ||popup2m.com^$third-party
-||popups.ru^$third-party
 ||popuptraf.$third-party
-||popvtop.ru^$third-party
 ||pornonochki.com^$third-party
 ||poshalim.$third-party
-||poza-69.ru^$third-party
 ||pozzitiv.ru^$third-party
 ||ppnd.ru/$third-party
 ||prbn.ru/$third-party
@@ -1328,8 +1272,6 @@ _tizer.
 ||rate.ee/pics/banners/
 ||rating.km.ua/*?
 ||rax.ru^$third-party
-||razdevau.com^$third-party
-||rb*.design.ru^
 ||rb.rfn.ru^
 ||rb.sport-express.ru^
 ||rbc.ru/img/bnmaker/$third-party
@@ -1397,14 +1339,11 @@ _tizer.
 ||searchmeta.webhost.ru^
 ||secure-it.imrworldwide.com/cgi-bin/m?
 ||sedoparking.com^$third-party
-||sekcygirl.ru^$third-party
-||sektor-sga.com/sga*.
 ||selectornews.com^$third-party
 ||seo-monster.ru/img_
 ||seo-sport.ru^$third-party
 ||seo24.com.ua^$domain=~seo24.com.ua
 ||seoliner.ru^$third-party
-||seoprcy.ru/img_*.$image
 ||seopult.ru^$third-party
 ||seorate.ru^$third-party
 ||seotechnology.ru/imgseo.php?
@@ -1422,13 +1361,11 @@ _tizer.
 ||sextizer.$third-party
 ||sexyfans.net.ru^
 ||sexyfriend.ru^$third-party
-||sexymafia.ru^$third-party
 ||sezam.nov.ru^
 ||show.multiclick.ru^$third-party
 ||sitetraff.ru^$third-party
 ||skylog.kz/img.php?
 ||slimp.net^$third-party
-||slivtraff.com^$third-party
 ||smart-soft.ru^$third-party
 ||smartb.2gsg.com^
 ||smarttraf.ru^$third-party
@@ -1504,7 +1441,6 @@ _tizer.
 ||tizzer.ru^$third-party
 ||tle.ru^$third-party
 ||tm-core.net^$third-party
-||tnafix.ru^$third-party
 ||tname.ru/img_*.gif
 ||tnx.net/$third-party
 ||todaymix.ru^$third-party
@@ -1528,7 +1464,6 @@ _tizer.
 ||traffikk.biz^$third-party
 ||traffmaster.ru^$third-party
 ||traffsale.com^$third-party
-||traffsaler.com^$third-party
 ||traffstock.ru^$third-party
 ||trafoed.com/promo/
 ||trafon.ru^$third-party
@@ -1563,7 +1498,6 @@ _tizer.
 ||usde.ru^$third-party
 ||utarget.ru^$third-party
 ||vareza.net^$third-party
-||vas.ppro.de/click/
 ||vba.ru^$third-party
 ||ventivmedia.com^$third-party
 ||vertucash.com^$third-party
@@ -1578,12 +1512,10 @@ _tizer.
 ||videoclik.$third-party
 ||videofan.ru^$third-party
 ||videoklass.ru^$third-party
-||videoplayerworld.com^$third-party
 ||videoslovo.ru^$third-party
 ||videotraff.ru/img
 ||viprelax.com.ua^$domain=~viprelax.com.ua
 ||viprip.net/banners/
-||virwin.ru^$third-party
 ||visitweb.com^$third-party
 ||vitr.alawar.ru^$third-party
 ||vladja.com^$third-party
@@ -1609,7 +1541,6 @@ _tizer.
 ||wave525.com.ua^$domain=~wave525.com.ua
 ||wbn.ru^$third-party
 ||wct.su/img/banner/
-||web-hack.ru/images/b/
 ||web-rom.ru/?get_code
 ||web-visor.$third-party
 ||webalta.ru/reliancebutton?url
@@ -1634,7 +1565,6 @@ _tizer.
 ||westbyte.com/scripts/bs/bc.php?bi=
 ||westtokyo.ru/download/west
 ||wewonurgold.ws^$third-party
-||whiteclab.ru/js.php?
 ||widgeo.net/compteur.php?
 ||wieistmeineip.de/ip-address/
 ||wizzzards.com^$third-party
@@ -1643,9 +1573,7 @@ _tizer.
 ||wmclickz.ru^$third-party
 ||wmirk.ru^$third-party
 ||wmlink.$third-party
-||wmlink2008.info^$third-party
 ||wmplace.ru/place.php?
-||wmunder.ru^$third-party
 ||wmzona.com^$third-party
 ||wolist.ru^$third-party
 ||womenclick.ru^$third-party
@@ -1735,9 +1663,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||7dvd.ru/$third-party
 ||adstock.ru^$third-party
 ||cdsuper.ru^$third-party
-||fasttrening.ru^$third-party
 ||getcd.ru^$third-party
-||kakdolgo.ru^$third-party
 ||superfastcomputer.ru^$third-party
 !
 ! AdvMaker.RU
@@ -2052,6 +1978,7 @@ autoua.net###footer-holding
 ||avata.ru/windows.gif
 ||avata.ru/images/240x400.png
 ||avatary.ru/smilebar/
+||aviafly.ru/js|
 azart.net.ua##A[href="/adv.php"]
 !
 ! B
@@ -2467,14 +2394,13 @@ ipicture.ru###sbnr
 ipm.ua##.gray_block.ng1
 ipm.ua##.gray_block.ng2
 ipm.ua##.gray_block.ng3
-||ipm.dn.ua/bn/g/?
+||ipm.ua/bn/g/?
 ||irk.ru/img/*/ibr/
 itc.ua##.b240x350
 itvcom.ru##.b240.rc4
 itvcom.ru##.colr > H4
 ||itvcom.ru/images/*sape
 hi-fi.itc.ua##.news
-ix06.su###welcome
 ixbt.com##.banner
 ixbt.com##H4#nl_header
 forum.ixbt.com##.dostavka
@@ -2489,7 +2415,6 @@ izvestia.ru##.right_banner_block
 ! J
 jeder.ru###colwrap > .module-notitle
 ||jetune.ru/images/760-90-
-||jimbot-portal.net.ru/*banners
 !
 ! K
 kadets.info###mc_728_90
@@ -2717,7 +2642,6 @@ newsazerbaijan.ru##.banner-middle
 ||newserials.net/ranetka.js
 ||newserials.net/cu.js
 ||s.newslab.ru/b/*
-newsobzor.com.ua##.fakedirect_block
 newsru.com,newsru.ru##TABLE[style$="pointer;"][onclick^="window.open"]
 ||ng.by/bimages/$object
 ||nifiga-sebe.ru/b_$image,object
@@ -2783,8 +2707,8 @@ opennet.ru###ibm_adv
 opennet.ru##IMG[width="240"][height="50"]
 opennet.ru##TD[width="130"][rowspan="3"]
 ||opennet.ru/adv_
-opensharing.ru,opensharing.org##IMG[height="120"][width="240"]
-||opensharing.$object
+opensharing.org##IMG[height="120"][width="240"]
+||opensharing.org^$object
 opentorrent.ru##.banner
 ||opentorrent.ru/images/banner/
 ||oper.ru/data/rennabs/
@@ -2815,6 +2739,7 @@ pingvinoff.net##.entry > DIV[style^="float:"]
 pirat.ca###sidebar2
 ||pirat.ca*/posters/
 ||piratski.ru/*_banner.
+||piter.com/files/b_a_n_n_e_r_s/
 ||glee.ucoz.ru^$domain=pirat.ca
 planetaua.net##.market
 ||deltamarket.com.ua^$domain=planetaua.net
@@ -3026,8 +2951,6 @@ sotovik.ru###banner
 ||sotovik.ru/files/banner/
 ||sotovik.ru/inc/banner_zone/
 ||sovsport.ru/ib/
-||spice-forum.biz/extensions/hcs_ads_manager/
-||spice-forum.biz/extensions/hcs_forum_image/
 ||sport.ua/images/$object
 sportbox.ru##.sb_c_adv_sm_bg_link
 sportbox.ru##.sb_c_adv_sm_bg_logo
@@ -3231,9 +3154,6 @@ vz.ru###social-network-panel
 !
 ! W
 ||warezlab.ru^*rotator
-webantivirus.ru##DIV[style*="468px;"][style*="60px;"]
-webantivirus.ru##DIV[style*="500px;"][style*="300px;"]
-webantivirus.ru##DIV[style*="700px;"][style*="237px;"]
 webapteka.ru##A.sa[target="_blank"]
 webapteka.ru##CENTER > A[target="_blank"] > IMG
 ||webfile.ru/*wiw
@@ -3257,7 +3177,6 @@ xyya.net##TD[align="center"][style="width:220px;"] + TD[valign="top"] > :not(#dl
 ||xyya.net/banner/
 !
 ! Y
-y4eba.net.ru##.log .bod
 yaplakal.com###top-line
 yaplakal.com##NOINDEX > A[target="_blank"] > IMG
 yaplakal.com###footer
