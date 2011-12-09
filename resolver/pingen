@@ -9,13 +9,13 @@
 #    2. Move hiding rules below lists of domains and mark them for removal.
 #  * SED #4: Cleanup.
 #    1. Remove all rows not starting with alphanumerical character (remove obvious non-domains).
-#    2. Remove all rows with dot in the end (incomplete domains).
-#  * SED #4: Deail with lists of domains. Part 2: Conquer.
+#    2. Remove emtpy rows.
+#  * SED #5: Deail with lists of domains. Part 2: Conquer.
 #    1. Remove '~' characters.
 #    2. Replace ',' and '|' with <new row> character (break lists of domains).
-#  * SED #5: Post-cleanup.
-#    1. Remove rows without '.' character (obvious non-domains or first level domains like com/ru/ua/...).
-#    2. Remove emtpy rows.
+#  * SED #6: Post-cleanup.
+#    1. Remove all rows with dot in the end (incomplete domains).
+#    2. Remove rows without '.' character (obvious non-domains or first level domains like com/ru/ua/...).
 #  * Sort things and remove clones.
 #  * Save result to file.
 sed -r 's/^@@//g;s/^\!\s?\|\|/||/g' advblock.txt | sed -r 's#^(\|\||([A-Za-z]:)?//)(\w[^/$^*]*).*$#\3#g' | sed -r 's/[$,]domain=/\n/g;s/##/\n!/g' | sed -r '/^(\W|_)/d;/^\s*$/d' | sed -r 's/~//g;s/[,|]/\n/g' | sed -r '/\.$/d;/^[^.]*$/d' | sort -fu > deadhosts.txt
