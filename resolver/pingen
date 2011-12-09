@@ -1,20 +1,22 @@
 #!/bin/bash
 # How it works:
 #  * SED #1: Initial cleanup.
-#    1. Remove '@@' from exceptions filters to extract domain names from them later.
-#    2. Remove '! ' from 'disabled' filters to extract domain names from them later.
-#    3. Move lists of domains one row below to process them later.
-#    4. Move hiding rules below lists of domains and mark them for removal.
+#    1. Remove '@@' from exception filters to extract domain names from them later.
+#    2. Remove '! ' from 'disabled' filters to 'enable' them.
 #  * SED #2: Replace all rows starting with '||' or protocol://, with text starting after these characters but before /, $, ^ or * (extract domains from blocking rules).
-#  * SED #3: Deail with lists of domains.
-#    1. Remove '~' characters.
-#    2. Replace ',' and '|' with <new row> character (break lists of domains).
+#  * SED #3: Deail with lists of domains. Part 1: Divide.
+#    1. Move lists of domains one row below to process them later.
+#    2. Move hiding rules below lists of domains and mark them for removal.
 #  * SED #4: Cleanup.
 #    1. Remove all rows not starting with alphanumerical character (remove obvious non-domains).
 #    2. Remove all rows with dot in the end (incomplete domains).
-#    3. Remove rows without '.' character (obvious non-domains or first level domains like com/ru/ua/...).
-#    4. Remove emtpy rows.
+#  * SED #4: Deail with lists of domains. Part 2: Conquer.
+#    1. Remove '~' characters.
+#    2. Replace ',' and '|' with <new row> character (break lists of domains).
+#  * SED #5: Post-cleanup.
+#    1. Remove rows without '.' character (obvious non-domains or first level domains like com/ru/ua/...).
+#    2. Remove emtpy rows.
 #  * Sort things and remove clones.
 #  * Save result to file.
-sed -r 's/^@@//g;s/^\!\s?\|\|/||/g;s/[$,]domain=/\n/g;s/##/\n!/g' advblock.txt | sed -r 's#^(\|{2}|\w*:?/{2})(\w[^/$^*]*).*$#\2#g' | sed -r 's/~//g;s/[,|]/\n/g' | sed -r '/^(\W|_)/d;/\.$/d;/^[^.]*$/d;/^ *$/d' | sort -fu > deadhosts.txt
+sed -r 's/^@@//g;s/^\!\s?\|\|/||/g' advblock.txt | sed -r 's#^(\|\||([A-Za-z]:)?//)(\w[^/$^*]*).*$#\3#g' | sed -r 's/[$,]domain=/\n/g;s/##/\n!/g' | sed -r '/^(\W|_)/d;/^\s*$/d' | sed -r 's/~//g;s/[,|]/\n/g' | sed -r '/\.$/d;/^[^.]*$/d' | sort -fu > deadhosts.txt
 
