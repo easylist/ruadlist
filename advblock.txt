@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: MaBHFTB4VWZWENdXZlcmWQ
-! Last modification time (GMT): 2011.12.13 10:52
+! Checksum: /Q0p1OmjEC3qtADnfsZe2w
+! Last modification time (GMT): 2011.12.13 15:24
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -1142,6 +1142,7 @@ _tizer.
 ||okinternet.ua^$third-party
 ||oldcombats.net/images_banner/
 ||ololo.tv/?$third-party
+||on-line-adv.com^$third-party
 ||one.ru/cgi-bin
 ||onlineresume.ru/banner*?
 ||only4men.ru^$third-party
@@ -1533,6 +1534,7 @@ _tizer.
 ||vsesumki.com^$third-party
 ||vsetv.com/pic/paid/
 ||vyatka-host.ru^$third-party
+||wapstart.ru^$third-party
 ||warezplatinum.com^$third-party
 ||warnet.ws/banners/
 ||wau.com.ua^$domain=~wau.com.ua
@@ -1778,6 +1780,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 .com/js/*.js?*&*=$third-party,script
 .com/modules/*?*=*&*=$third-party,script
 .com/modules.*?*=*&*=$third-party,script
+.com/rss/?$script,third-party
+.com/rssfeed.php?$script,third-party
 .com/_search.js|$third-party
 .com/show6.php?b=$third-party
 .com/step18.php?p=$third-party
@@ -1808,6 +1812,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||cientrer.com^
 ||clangere.com^
 ||clierets.com^
+||clievise.com^
 ||comunicazio.com^
 ||connees.com^
 ||daccroi.com^
@@ -2224,9 +2229,10 @@ filorama.ru###dle-content > TABLE:first-child
 ||filorama.ru/*/banner.swf
 finance.ua###banner-zone-top
 finance.ua###banner-zone-right
-fishki.net###readme
+fishki.net##.leftbox > .innerbox > A:not([href*="fishki"])
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
-||fishki.net/banner/
+||fishki.net^$subdocument
+||creep.ru^$domain=fishki.net
 ||medialand.$domain=fishki.net
 fontanka.ru##.ad
 football.kulichki.net##TABLE[bordercolor="#336633"][border="01"][bgcolor="#336633"]
