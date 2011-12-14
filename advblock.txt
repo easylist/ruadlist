@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: wATf/CPN0ZCmJ7yEDtaojQ
-! Last modification time (GMT): 2011.12.14 15:07
+! Checksum: oYw2JL6IrdGfogJTQTutJA
+! Last modification time (GMT): 2011.12.14 17:51
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -1777,6 +1777,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 .com/ajax/?*=*&*=$third-party,script
 .com/ajax2/?*=*&*=$third-party,script
 .com/block.js|$third-party
+.com/fz.js|$third-party
 .com/javascript/$third-party,script
 .com/js/*.js?*&*=$third-party,script
 .com/modules.*?*=*&*=$third-party,script
@@ -1786,11 +1787,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 .com/rssfeed.php?$script,third-party
 .com/rssfeed2.php?$script,third-party
 .com/show6.php?b=$third-party
-.com/static/80/$subdocument,script,third-party
+.com/static/*/*?*=*&*=$subdocument,third-party
 .com/step18.php?p=$third-party
 .com/wp-includes/js/jquery/jquery.js$third-party
 .com/_search.js|$third-party
 .com/*/160x160.gif|
+//i.*.com/static/*/$script,third-party
 ! Домены тизернета в зоне .com (чтоб наверняка и меньше зависеть от их постоянно меняющихся скриптов)
 ||aerontre.com^
 ||affarity.com^
@@ -1837,6 +1839,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||estiques.com^
 ||frestime.com^
 ||ghaires.com^
+||hannist.com^
 ||hommisse.com^
 ||ikersont.com^
 ||illiages.com^
