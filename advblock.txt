@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 1.3.5]
-! Checksum: gRGlAl4SEyfsU2cXHsL/9Q
-! Last modification time (GMT): 2011.12.15 08:44
+! Checksum: wrGDTRbOeWeDiLMSI6RNKQ
+! Last modification time (GMT): 2011.12.15 09:07
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -615,6 +615,7 @@ _tizer.
 ||atlassolutions.com^$third-party
 ||autocentre.ua^$subdocument,third-party
 ||autoreg.ru/images/
+||autotizer.ru^$third-party
 ||autoua.com^$third-party
 ||avangardonline.ru/banrotate.
 ||avazone.ru^$third-party
@@ -1776,7 +1777,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||podberi.tv^$third-party
 !
 ! TeaserNET.com
-||teasernet.com^$third-party
+! Общие правила
 .com/ajax/?*=*&*=$third-party,script
 .com/ajax2/?*=*&*=$third-party,script
 .com/block.js|$third-party
@@ -1797,10 +1798,25 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 //i.*.com/*/140x140.gif|
 //i.*.com/*/160x160.gif|
 //i.*.com/static/*/*$script,third-party
-! Домены тизернета в зоне .com (чтоб наверняка и меньше зависеть от их постоянно меняющихся скриптов)
+! Стабильные домены
+||teasernet.com^$third-party
+||teasernet.ru^
+||ddqq.com.ua^
+||im1-tub.com^
+||im2-tub.com^
+||im3-tub.com^
+||im4-tub.com^
+||im5-tub.com^
+||im6-tub.com^
+||im-tub.com^
+||masterconvert.ru^
+||nn.tmska.com^
+||attivertura.com^
+||comunicazio.com^
+||teaservizio.com^
+! Ротационные домены
 ||abusieux.com^
 ||aerontre.com^
-||affarity.com^
 ||agitazio.com^
 ||ainstite.com^
 ||aintegie.com^
@@ -1817,7 +1833,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||assantie.com^
 ||associazio.com^
 ||associeta.com^
-||attivertura.com^
 ||bannuncio.com^
 ||banquant.com^
 ||barraien.com^
@@ -1835,7 +1850,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||cliennes.com^
 ||clierets.com^
 ||clievise.com^
-||comunicazio.com^
 ||connees.com^
 ||daccroi.com^
 ||daccrois.com^
@@ -1875,16 +1889,9 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||illiage.com^
 ||illiages.com^
 ||illiap.com^
-||im1-tub.com^
-||im2-tub.com^
-||im3-tub.com^
-||im4-tub.com^
-||im5-tub.com^
-||im6-tub.com^
 ||imagans.com^
 ||impannon.com^
 ||imparfum.com^
-||im-tub.com^
 ||incielle.com^
 ||inctivee.com^
 ||ivancept.com^
@@ -1913,10 +1920,10 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||spechee.com^
 ||spechete.com^
 ||specisez.com^
+||stats.internet-yadro.com^
 ||striere.com^
 ||striete.com^
 ||supertura.com^
-||teaservizio.com^
 ||tidentes.com^
 ||tierest.com^
 ||timonom.com^
@@ -1934,13 +1941,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||vinregle.com^
 ||yandepit.com^
 ||zontrans.com^
-! Прочие домены тизернета
-||autotizer.ru^
-||ddqq.com.ua^
-||masterconvert.ru^
-||nn.tmska.com^
-||stats.internet-yadro.com^
-||teasernet.ru^
 !
 ! Tizy.ru
 ||tizy.ru^$third-party
