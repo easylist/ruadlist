@@ -3,7 +3,17 @@
 use Net::DNS;
 use feature "switch";
 
-open(INFILE, "<", "deadhosts.txt") or die("cannot open infile:  $!");
+$testloop = 0;
+$infile = "deadhosts.txt";
+
+foreach my $arg (@ARGV) {
+	given ($arg) {
+		when (/^-t/) { $testloop = 1; }
+		default      { $infile = $arg; }
+	}
+}
+
+open(INFILE, "<", $infile) or die("cannot open infile:  $!");
 
 my @ip_array = <INFILE>;
 
@@ -34,24 +44,26 @@ foreach $s (@ip_array) {
 	}	
 }
 
-open(OUTFILE, ">", "deadhosts.tmp") or die("unable to write output: $!");
+if($testloop = 0) {
+	open(OUTFILE, ">", "deadhosts.tmp") or die("unable to write output: $!");
 
-print OUTFILE "! NOERROR\n";
-foreach(sort @noerr) { print OUTFILE "$_\n" }
+	print OUTFILE "! NOERROR\n";
+	foreach(sort @noerr) { print OUTFILE "$_\n" }
 
-print OUTFILE "! SERVFAIL\n";
-foreach(sort @srvfl) { print OUTFILE "$_\n" }
+	print OUTFILE "! SERVFAIL\n";
+	foreach(sort @srvfl) { print OUTFILE "$_\n" }
 
-print OUTFILE "! NXDOMAIN\n";
-foreach(sort @nxdom) { print OUTFILE "$_\n" }
+	print OUTFILE "! NXDOMAIN\n";
+	foreach(sort @nxdom) { print OUTFILE "$_\n" }
 
-print OUTFILE "! Network issues or other\n";
-foreach(sort @other) { print OUTFILE "$_\n" }
+	print OUTFILE "! Network issues or other\n";
+	foreach(sort @other) { print OUTFILE "$_\n" }
 
-close(OUTFILE);
+	close(OUTFILE);
 
-unlink("deadhosts.txt");
-rename("deadhosts.tmp","deadhosts.txt");
+	unlink("deadhosts.txt");
+	rename("deadhosts.tmp","deadhosts.txt");
+}
 
 print "\n";
 print "NOERROR  A NOERROR indicates that the domain does exist", "\n";
