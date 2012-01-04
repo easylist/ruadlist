@@ -1,6 +1,6 @@
-﻿[Adblock Plus 1.3.5]
-! Checksum: 5dhyB4QjwaRfpr+Qjw7Jew
-! Last modification time (GMT): 2012.01.04 10:10
+﻿[Adblock Plus 2.0]
+! Checksum: G/xBRLsVJ7bvvG5llF470Q
+! Last modification time (GMT): 2012.01.04 14:45
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -26,76 +26,76 @@
 ! https://addons.mozilla.org/ru/firefox/addon/adblock-plus-pop-up-addon/
 ! 
 ! - Общие правила -------------------------------------------------------------
-/ad/popup/*$other,popup
-/popads/*$other,popup
-/popads.$other,popup
+/ad/popup/*$image,~image,popup
+/popads/*$image,~image,popup
+/popads.$image,~image,popup
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
 ! $ domain=myredirecter.info|redirnet.info
-.info/sol/$other,popup
+.info/sol/$image,~image,popup
 ! $domain=flipflapflo.biz|flipflapflo.net|wt-rotator.biz|wts-rotator.com
-//uno.*/?t=$script,other,popup
+//uno.*/?t=$script,popup
 ! $domain=adonweb.ru|webunder.ru
-/adv_clk_redirect.php?$other,popup
-||crusewind.net/click/direct.php?$other,popup
-||fileshare.in.ua^*?gogogo$other,popup
-||filonet.ru/engine/redirect.php?url=$other,popup
-||go.timedirect.ru^$other,popup
-||go.trafking.ru^$other,popup
-||ipchecker.ru/?id=$other,popup
-||literedirect.com^*?__vc_pid=$other,popup
-||mesvip.com^$other,popup
-||myragon.ru^$other,popup
-||peel-down.net/search.php?$other,popup
-||redirecturl.ru^$other,popup
-||rts.pgmediaserve.com/$other,popup
-||ruclicks.com/in/$other,popup
-||t1goto.info^$other,popup
-||t8good.info^$other,popup
-||traftiz.com/clck.php?g=*&tmz=$other,popup
-||traff-redir.info/redir.php?s=$other,popup
+/adv_clk_redirect.php?$image,~image,popup
+||crusewind.net/click/direct.php?$image,~image,popup
+||fileshare.in.ua^*?gogogo$image,~image,popup
+||filonet.ru/engine/redirect.php?url=$image,~image,popup
+||go.timedirect.ru^$image,~image,popup
+||go.trafking.ru^$image,~image,popup
+||ipchecker.ru/?id=$image,~image,popup
+||literedirect.com^*?__vc_pid=$image,~image,popup
+||mesvip.com^$image,~image,popup
+||myragon.ru^$image,~image,popup
+||peel-down.net/search.php?$image,~image,popup
+||redirecturl.ru^$image,~image,popup
+||rts.pgmediaserve.com/$image,~image,popup
+||ruclicks.com/in/$image,~image,popup
+||t1goto.info^$image,~image,popup
+||t8good.info^$image,~image,popup
+||traftiz.com/clck.php?g=*&tmz=$image,~image,popup
+||traff-redir.info/redir.php?s=$image,~image,popup
 ||trafflload.com^$~popup,popup
-||war.noc.su/?$other,popup
-||xn--80abg3be.net^$other,popup
+||war.noc.su/?$image,~image,popup
+||xn--80abg3be.net^$image,~image,popup
 !  Super star - редирект на antivirusms.com и подобную гадость
-||all4girl.net/main/$other,popup
-||greyred.net/sex/$other,popup
+||all4girl.net/main/$image,~image,popup
+||greyred.net/sex/$image,~image,popup
 ! - Прочее --------------------------------------------------------------------
 ! Flambo
 ! Подсеть: 91.213.175.### IP: 26, 27, 46
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
-||2011-ru.com^$other,popup
-||play-boom.com^$other,popup
-//kpup.*/?sid=$other,popup
+||2011-ru.com^$image,~image,popup
+||play-boom.com^$image,~image,popup
+//kpup.*/?sid=$image,~image,popup
 ! $domain=crazycola.ru|karosgame.ru|rzonline.ru|upslots.com|va-bank.com
-//promo.$other,popup
-||1001kupon.ru^$other,popup
-||9donline.ru/welcome/?mita=$other,popup
-||audance.ru*/promo/$other,popup
-||blinkogold.ru^$other,popup
-||chaplingames.ru$other,popup
-||darkorbit.bigpoint.com/?aid=$other,popup
-||fotostrana.ru^*/?$other,popup
-||funtest-ru.com^$other,popup
-||goodsbrowser.com^$other,popup
-||image2you.ru^$other,popup
-||letitbit.net/pop_up.$other,popup
-||lovecity3d.com/img/promo.$other,popup
-||link2you.ru^$other,popup
-||marketgid.com^*.html$other,popup
-||mycultures.ru^$other,popup
-||partypoker.com^*/videopop/$other,popup
-||pic4you.ru^$other,popup
-||pic5you.ru^$other,popup
-||pointblank.ru/?pid=$other,popup
-||pop.sn00.net^$other,popup
-||smi2.ru/data/pop/$other,popup
-||snailz.ru/promo/?$other,popup
-||travian.com.ua/landingpage/$other,popup
-||yapfiles.ru^*/rating_by_pop/$other,popup
+//promo.$image,~image,popup
+||1001kupon.ru^$image,~image,popup
+||9donline.ru/welcome/?mita=$image,~image,popup
+||audance.ru*/promo/$image,~image,popup
+||blinkogold.ru^$image,~image,popup
+||chaplingames.ru$image,~image,popup
+||darkorbit.bigpoint.com/?aid=$image,~image,popup
+||fotostrana.ru^*/?$image,~image,popup
+||funtest-ru.com^$image,~image,popup
+||goodsbrowser.com^$image,~image,popup
+||image2you.ru^$image,~image,popup
+||letitbit.net/pop_up.$image,~image,popup
+||lovecity3d.com/img/promo.$image,~image,popup
+||link2you.ru^$image,~image,popup
+||marketgid.com^*.html$image,~image,popup
+||mycultures.ru^$image,~image,popup
+||partypoker.com^*/videopop/$image,~image,popup
+||pic4you.ru^$image,~image,popup
+||pic5you.ru^$image,~image,popup
+||pointblank.ru/?pid=$image,~image,popup
+||pop.sn00.net^$image,~image,popup
+||smi2.ru/data/pop/$image,~image,popup
+||snailz.ru/promo/?$image,~image,popup
+||travian.com.ua/landingpage/$image,~image,popup
+||yapfiles.ru^*/rating_by_pop/$image,~image,popup
 ||zzima.com^$popup,domain=~zzima.com
 ! Мошенники. В основном блокируются на уровне редиректов, но лучше и так.
 ! Подделка сайта вопросов-ответов mail.ru
-/popua/*$other,popup
+/popua/*$image,~image,popup
 ||0tveti-mall.com^$~popup,popup
 ||mail-otvett6.in^$~popup,popup
 ||otvetru.ru^$~popup,popup
@@ -374,7 +374,7 @@ _tizer.
 ||tizermine.net^
 ||tizerset.net^
 ! Найдены по "/js/bodyclick.php?id=" и "/click/body.php?id=", но что через них только не распространяется.
-/click/body.php?id=*&hash=$other,popup
+/click/body.php?id=*&hash=$~popup,popup
 /traforet.$~popup,popup
 .traforet.$~popup,popup
 ||activepr.ru^$~popup,popup
