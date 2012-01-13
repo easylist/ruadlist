@@ -44,7 +44,9 @@ foreach $s (@ip_array) {
 	}	
 }
 
-if($testloop = 0) {
+if($testloop == 0) {
+	print "\n";
+	print "Writing output…", "\n";
 	open(OUTFILE, ">", "deadhosts.tmp") or die("unable to write output: $!");
 
 	print OUTFILE "! NOERROR\n";
@@ -66,6 +68,7 @@ if($testloop = 0) {
 }
 
 print "\n";
+print "Legend:", "\n";
 print "NOERROR  A NOERROR indicates that the domain does exist", "\n";
 print "         according to the root name servers and that the", "\n";
 print "         authoritative name servers are answering queries", "\n";
