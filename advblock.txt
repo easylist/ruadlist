@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: yKNqBz4cheDDr1zc14HeMA
-! Last modification time (GMT): 2012.01.22 15:51
+! Checksum: IfvYH/tNobdCCQkwjfuOwQ
+! Last modification time (GMT): 2012.01.22 16:00
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -2470,12 +2470,8 @@ ifun.ru##.ad
 igoods.com.ua##.bens
 igromania.ru##.bannerplace
 ||igromania.ru/*/banners/
-iguides.ru##.adsblock
-iguides.ru###container > A > IMG
-iguides.ru###vba_news4 > DIV[align="center"] > A[href^="http://"] > IMG
-iguides.ru##A[href^="http://"] > IMG[width="240"]
-! Что это вообще такое? www.iguides.ru##TD[width="240"] > DIV > DIV[style*="750px;"]
-iguides.ru###headermain > A.logo + A[target="_blank"]
+iguides.ru##SPAN[onclick^="window.location.href="] > IMG
+||iguides.ru^$object
 ||imagevenue.com/interstitial.
 imgfiles.ru##[id^="bn"]>*
 ||imgix.ru/*.js|
