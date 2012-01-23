@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: L6mYQhRd5Pgy1/d8QuiXtQ
-! Last modification time (GMT): 2012.01.23 12:30
+! Checksum: g+vs0qztAxHTxUgzF2jY+g
+! Last modification time (GMT): 2012.01.23 13:10
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -136,8 +136,7 @@ nashevideo.info,pokajem.do.am,portvx.com##:root
 ! = Регулярные выражения ======================================================
 !#regexp.bookmark
 ! Сайты городов и регионов России (огромное множество их)
-/\.ru\/([-.a-zA-Z0-9]*\/){4,5}$/$script
-@@||timeliner.ru/*/*/Gui/$script
+/\.ru\/([-.a-z0-9]{4,}\/){4,5}$/$script
 !
 ! = Общие CSS-фильтры =========================================================
 !#css.bookmark
