@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: mBj+FZ3vzZfaU9BdbCp7NQ
-! Last modification time (GMT): 2012.02.01 11:42
+! Checksum: b+UOwYFVERLXlz8sEkHeMw
+! Last modification time (GMT): 2012.02.01 12:58
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -67,19 +67,13 @@ _livejournal.gif
 !
 !------------ ВКонтакте -------------------------------------------------------
 ! Внимание!
-! Если требуется работа сервиса авторизации через ВКонтакте, то создайте у себя
-! следующие два фильтра-исключения:
-! @@/js/api/openapi.js$script
-! @@||api.vkontakte.ru^
-! Они разрешат доступ к модулям для взаимодействия внешних сайтов с вконтактом.
-! Ещё отключите фильтр ||userapi.com^, расположенное немного ниже в этом блоке.
+! Если требуется полная блокировка вконтакта, то создайте у себя два вот таких правила
+! ||vk.com^$third-party,script,subdocument
+! ||userapi.com^$third-party,domain=~vk.com
 ###vkshare0
 ##.vk-button
 ##.vk-share-button
-@@||vk.com/video_ext.php?
-@@||vk.com/js/api/xd_connection.js?
-||vk.com^$third-party,script,subdocument
-||userapi.com^$third-party,domain=~vk.com
+||vk.com/widget_$third-party
 /icons/vkontakte_
 /vkontakte_icon_
 _vkontakte.gif
