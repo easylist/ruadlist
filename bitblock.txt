@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: zsvcIhXDYc3T57mtJ1Gy2Q
-! Last modification time (GMT): 2012.02.02 20:55
+! Checksum: NknWpKl0IeflLk6aWJgxTg
+! Last modification time (GMT): 2012.02.02 21:05
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -62,9 +62,6 @@ _livejournal.gif
 !------------ LovePlanet ------------------------------------------------------
 ||loveplanet.ru^$third-party,domain=~loveplanet.ua
 !
-!------------ RuTvit ----------------------------------------------------------
-||rutvit.ru/js/share.js$third-party
-!
 !------------ ВКонтакте -------------------------------------------------------
 ! Внимание!
 ! Если требуется полная блокировка вконтакта, то создайте у себя два вот таких правила
@@ -97,34 +94,33 @@ _vkontakte.png
 !------------ Яndex -----------------------------------------------------------
 ##.yashare-auto-init
 ||lenta.yandex.ru/i/addfeed.
-||yandex.st/share/share.js
 !
 !- Универсальные --------------------------------------------------------------
 ##.addthis
-/addthis.try.js
 ||addthis.com^$third-party
+/addthis.try.js
 ###block_social_open
-###odnaknopka
+! /copy_to_blog_button_  и /copy_to_blog_icon_
+/copy_to_blog_*.gif
+_liveinternet.gif
 /odnaknopka/*
+###odnaknopka
 ||odnaknopka.ru^$third-party
 ||pip.qip.ru^$third-party
 ##.sexy-bookmarks
 ###sexy-bookmarks
+/share.js$third-party
 ##.smiletagging-button
 ##.soc-box
-##.soc_share
 ##.social
 ###social
-##.social_links
 ###socialblock
 ###socializ
-! /copy_to_blog_button_  и /copy_to_blog_icon_
-! К gif-версиям можно добавить _icon в начале.
-/copy_to_blog_*.gif
-/wp-content/plugins/russocialknopki-
-_liveinternet.gif
+##.social_links
+##.soc_share
 _twitter.gif
 _twitter.png
+/wp-content/plugins/russocialknopki-
 !
 !------------ Закладки --------------------------------------------------------
 ||bobrdobr.ru/images/buttons/$third-party
