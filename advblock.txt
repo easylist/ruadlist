@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: L9gqf5l1QbymwInuru8gIw
-! Last modification time (GMT): 2012.02.23 13:55
+! Checksum: 7yNOUC/IbTkZ3JGmOUcEbw
+! Last modification time (GMT): 2012.02.23 14:05
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -36,6 +36,8 @@
 //uno.*/?t=$script,popup
 ! $domain=adonweb.ru|webunder.ru
 /adv_clk_redirect.php?$image,~image,popup
+! $domain=playground.ru
+/popunder.$image,~image,popup
 ||crusewind.net/click/direct.php?$image,~image,popup
 ||fileshare.in.ua^*?gogogo$image,~image,popup
 ||filonet.ru/engine/redirect.php?url=$image,~image,popup
@@ -46,6 +48,7 @@
 ||mesvip.com^$image,~image,popup
 ||myragon.ru^$image,~image,popup
 ||peel-down.net/search.php?$image,~image,popup
+||playground.ru/popup/$image,~image,popup
 ||redirecturl.ru^$image,~image,popup
 ||rts.pgmediaserve.com/$image,~image,popup
 ||ruclicks.com/in/$image,~image,popup
@@ -233,6 +236,7 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 ! Начинают с загрузки /check.php, популярные значения mode: teaser и icq.
 /check.php?user_id=*&mode=*&domain=$third-party
 /clickheat.
+^clickunder^
 ^clickunder=
 /ctxtlink/*
 /event.ng
