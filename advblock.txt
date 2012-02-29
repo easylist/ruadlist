@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: L+oars5qp68JJAm3pOwrhw
-! Last modification time (GMT): 2012.02.29 07:11
+! Checksum: 2oH0xHS8P3HyisRnElX77w
+! Last modification time (GMT): 2012.02.29 07:31
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -264,9 +264,6 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 /warlog.
 /webunder.
 /wtsin.cgi?id=$~popup,popup
-! Рекламная сеть traffic.ru и возможно ещё чья-то:
-! $domain=listof.mobi|mob2web.com|mobatory.com|mobicont.com|mobyrol.com|rek.x-zona.org|robimobi.com|rx9aef.driver-id.ru|texasso.popunder.ru
-/yaim.php?ad=
 ! - Баннеры -------------------------------------------------------------------
 !#banner.bookmark
 .biz/banner/$third-party
@@ -746,6 +743,7 @@ _tizer.
 ||ehoo.ru/knopka/
 ||ej.ua/static/$third-party
 ||engine.adct.ru^$third-party
+||entercash.ru^$third-party
 ||eogli.com/1/
 ||epartner.ru^$third-party
 ||eradio.net.ua/ban/
@@ -1442,7 +1440,6 @@ _tizer.
 ||traf-birga.net^$third-party
 ||traf.biz^$third-party
 ||traf.spb.ru^$third-party
-||traffic.ru^$third-party
 ||trafficplayas.com^$third-party
 ||traffikk.biz^$third-party
 ||traffmaster.ru^$third-party
@@ -1998,6 +1995,23 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||tizy.ru^$third-party
 ||tjs1.ru^
 ||zipcash.ru^$third-party
+!
+! Рекламная сеть traffic.ru и возможно ещё чья-то:
+! $domain=listof.mobi|mob2web.com|mobatory.com|mobicont.com|mobyrol.com|robimobi.com
+! $domain=*.popunder.ru|*.driver-id.ru|1.miniporn.ru|ref.myrefs.org.ua|rek.x-zona.org|top.softweb.ru
+/yaim.php?ad=
+||traffic.ru^$third-party
+||listof.mobi^
+||mob2web.com^
+||mobatory.com^
+||mobicont.com^
+||mobyrol.com^
+||robimobi.com^
+||driver-id.ru^$third-party
+||miniporn.ru^$third-party
+||myrefs.org.ua^$third-party
+||softweb.ru^$third-party
+||x-zona.org^$third-party
 !
 ! Ucoz.net
 ||ucoz.*/img/ma/cv.gif
