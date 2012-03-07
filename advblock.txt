@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: ANTP82KA7oSJ9X+xyVkLIw
-! Last modification time (GMT): 2012.03.05 16:39
+! Checksum: f4G1UTGaRXnfCrmhAQbhUg
+! Last modification time (GMT): 2012.03.07 15:57
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -100,6 +100,8 @@
 ! Подделка сайта вопросов-ответов mail.ru
 /popua/*$image,~image,popup
 ||0tveti-mall.com^$~popup,popup
+! /otvet/
+||duits1.ru^$~popup,popup
 ||mail-otvett6.in^$~popup,popup
 ||otvetru.ru^$~popup,popup
 ||otwety-mail.com^$~popup,popup
@@ -430,6 +432,7 @@ _tizer.
 /popover.js$domain=~hotmail.com|~live.com
 /priceru_advert_
 /sun_*_ajax.js|
+/ucodes.ru.banners.js
 ! - Блокировка по размеру указанному в адресе ---------------------------------
 !#size.bookmark
 /120-600-
@@ -1028,7 +1031,6 @@ _tizer.
 ||mediaget.com^$third-party
 ||mediakadr.ru^$third-party
 ||mediaportal.ru^$third-party
-||mediarich.$third-party
 ||mediarotator.ru^$third-party
 ||mediaunder.us^$third-party
 ||mega-cash.net^$third-party
@@ -1055,7 +1057,6 @@ _tizer.
 ||mlgame.ru/wiki/attach/Referal/
 ||mnogo.ru^$third-party
 ||mobbit.info^$third-party
-||mobifobi.com^
 ||mobn.net^$third-party
 ||mochiads.com^~object-subrequest
 ||modastro.ee^$third-party
@@ -1541,7 +1542,6 @@ _tizer.
 ||weblist.ru/images/weblist
 ||weblog.com*/cnt
 ||webmedia.co.il^
-||webnews.moy.su/rtr/
 ||webnewshost.com/do/adv.
 ||weboborona.ru/pic/wban
 ||webplus.info/getres.php?
@@ -1747,6 +1747,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ###medialand_adland_inline_div_750
 ||content*.medialand.ru$~script
 ||popunder-mladnet.medialand.ru
+!
+! MediaRich.ru
+! $domain=mediarich.ru
+||mediarich.$third-party
+||codes-media.ru^$third-party
+||mediacod.in^$third-party
 !
 ! NewsAnons.ru — вроде как новости, но на сторонних сайтах — реклама
 ! Замечено на fastpic.ru и kino-dom.tv, вставляет скрипт с доменов user*click.ru
@@ -2006,12 +2012,14 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! $domain=*.popunder.ru|*.driver-id.ru|1.miniporn.ru|ref.myrefs.org.ua|rek.x-zona.org|top.softweb.ru
 /yaim.php?ad=
 ||traffic.ru^$third-party
-||listof.mobi^
-||mob2web.com^
-||mobatory.com^
-||mobicont.com^
-||mobyrol.com^
-||robimobi.com^
+||listof.mobi^$~popup,popup
+||mob2web.com^$~popup,popup
+||mobatory.com^$~popup,popup
+||mobicont.com^$~popup,popup
+||mobifobi.com^$~popup,popup
+||mobiledirectors.com^$~popup,popup
+||mobyrol.com^$~popup,popup
+||robimobi.com^$~popup,popup
 ||driver-id.ru^$third-party
 ||miniporn.ru^$third-party
 ||myrefs.org.ua^$third-party
@@ -2024,8 +2032,10 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||ucoz.*/bnr/
 ! Кнопка с предложением создать сайт на ucoz-овских доменах (справа-вверху).
 ###advtd
-! Судя по-всему не имеет отношения к самому Ucoz.net, а просто кросс-реклама между доменами.
-! Найдено на artpost.ucoz.ru, fortpostnews.ucoz.ru, notebene.ucoz.ru, tumbanew.ucoz.ru
+! Судя по-всему не имеет отношения к самому Ucoz.net, но таки какой-то рекламный движок.
+! Найдено на artpost.ucoz.ru, fortpostnews.ucoz.ru, notebene.ucoz.ru, tumbanew.ucoz.ru, vceknigi.ru
+||do.am/rtr/$script
+||moy.su/rtr/$script
 ||ucoz.ru/rtr/$script
 !
 ! Yadro.RU
