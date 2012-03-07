@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 79Vzl13xsXfyWCEF2gw2BA
-! Last modification time (GMT): 2012.03.07 16:09
+! Checksum: 2+xq2OfwlDKWbgTlwm/+Aw
+! Last modification time (GMT): 2012.03.07 16:14
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -2016,7 +2016,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! $domain=listof.mobi|mob2web.com|mobatory.com|mobicont.com|mobyrol.com|robimobi.com
 ! $domain=*.popunder.ru|*.driver-id.ru|1.miniporn.ru|ref.myrefs.org.ua|rek.x-zona.org|top.softweb.ru
 /yaim.php?ad=
-||traffic.ru^$third-party
+||traffic.ru^$third-party,~popup,popup
+||clickedget.com^$~popup,popup
 ||listof.mobi^$~popup,popup
 ||mob2web.com^$~popup,popup
 ||mobatory.com^$~popup,popup
@@ -2025,11 +2026,11 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||mobiledirectors.com^$~popup,popup
 ||mobyrol.com^$~popup,popup
 ||robimobi.com^$~popup,popup
-||driver-id.ru^$third-party
-||miniporn.ru^$third-party
-||myrefs.org.ua^$third-party
-||softweb.ru^$third-party
-||x-zona.org^$third-party
+||driver-id.ru^$third-party,~popup,popup
+||miniporn.ru^$third-party,~popup,popup
+||myrefs.org.ua^$third-party,~popup,popup
+||softweb.ru^$third-party,~popup,popup
+||x-zona.org^$third-party,~popup,popup
 !
 ! Ucoz.net
 ||ucoz.*/img/ma/cv.gif
