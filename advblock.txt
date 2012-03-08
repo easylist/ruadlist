@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 6fvek1RsOdguoYXyPRy3tA
-! Last modification time (GMT): 2012.03.08 23:23
+! Checksum: QTYJUObgroD36pJ36VBunA
+! Last modification time (GMT): 2012.03.08 23:37
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -99,25 +99,26 @@
 ||yapfiles.ru^*/rating_by_pop/$image,~image,popup
 ||zzima.com^$popup,domain=~zzima.com
 ! Мошенники. В основном блокируются на уровне редиректов, но лучше и так.
+||help2play.com^$~popup,popup
+||moneymaiker.ru^$~popup,popup
+||vmesterabotaem.ru^$~popup,popup
 ! Подделка сайта вопросов-ответов mail.ru
 /popua/*$image,~image,popup
 ||0tveti-mall.com^$~popup,popup
 ! /otvet/
 ||duits1.ru^$~popup,popup
-||mail-otvett6.in^$~popup,popup
 ||otvetru.ru^$~popup,popup
 ||otwety-mail.com^$~popup,popup
 ! Подделка сайта ВКонтакте
-||help2play.com^$~popup,popup
-||moneymaiker.ru^$~popup,popup
-||vmesterabotaem.ru^$~popup,popup
 ||vsemdeneg.ru^$~popup,popup
-||vsemtube.ru^$~popup,popup
 ||vzara.ru^$~popup,popup
 ||vzarabatke.ru^$~popup,popup
 ||vzarabotke.ru^$~popup,popup
+! Подделка сайта YouTube
+||voprosotvet.info^$~popup,popup
+||vsemtube.ru^$~popup,popup
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
-||youtube.$domain=help2play.com,otvetru.ru,vmesterabotaem.ru,vsemdeneg.ru,vsemtube.ru
+||youtube.com^$domain=help2play.com|otvetru.ru|vmesterabotaem.ru|vsemdeneg.ru|vsemtube.ru|voprosotvet.info
 ||vk.com^$domain=moneymaiker.ru,vmesterabotaem.ru
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
 ||devochki.cz^$third-party,~popup,popup
@@ -860,6 +861,7 @@ _tizer.
 ||govazd.am/cgi-bin/pro.cgi
 ||gramer.freehostia.com/statistics/
 ||grand-masters.ru^$third-party
+||gravdee.com^
 ||grebibablo.com^$third-party
 ||grind.fm/sites/grind.fm/userbar/bnr$third-party
 ||gsmonitor.ru^$third-party
@@ -2999,6 +3001,7 @@ maps.probki.net##[width="180"] > TBODY > TR:last-child
 ||probki.net/images$object
 prostopleer.com##.ad
 ||prostopleer.com/t.php?
+||ps3club.ru/bans/
 !
 ! Q
 qip.ru##.advertTop
