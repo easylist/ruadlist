@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: uJ4y77QUYCfclqYkUdPKDg
-! Last modification time (GMT): 2012.03.08 22:08
+! Checksum: 6fvek1RsOdguoYXyPRy3tA
+! Last modification time (GMT): 2012.03.08 23:23
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -76,6 +76,7 @@
 ||audance.ru*/promo/$image,~image,popup
 ||biglion.ru^$image,~image,popup
 ||blinkogold.ru^$image,~image,popup
+||bonsport.ru^$image,~image,popup
 ||chaplingames.ru$image,~image,popup
 ||darkorbit.bigpoint.com/?aid=$image,~image,popup
 ||fotostrana.ru/start/questpet/?$image,~image,popup
@@ -388,11 +389,21 @@ _tizer.
 ||tizermine.net^
 ||tizermy.net^
 ||tizerset.net^
-! Найдены по "/js/bodyclick.php?id=" и "/click/body.php?id="
-/click/body.php?id=*&hash=$~popup,popup
+! Traforet.RU
 /click/*.php?id=*&hash=*&cook=*&value=$~popup,popup
 /traforet.$~popup,popup
 .traforet.$~popup,popup
+.info/js/dojo.php?id=$third-party,script
+.info/js/prototype.php?id=$third-party,script
+||7muc.info^$~popup,popup
+||amus11.info^$~popup,popup
+||ekod.info^$~popup,popup
+||koi8r.info^$~popup,popup
+||nauch2.info^$~popup,popup
+||traf3.info^$~popup,popup
+||weru8.info^$~popup,popup
+! Прочие, найдены по "/js/bodyclick.php?id=" и "/click/body.php?id="
+/click/body.php?id=*&hash=$~popup,popup
 ||activepr.ru^$~popup,popup
 ||alltizer.ru^$~popup,popup
 ||bigtraff.com^$~popup,popup
@@ -400,7 +411,6 @@ _tizer.
 ||good-traf.ru^$~popup,popup
 ||gotraff.ru^$~popup,popup
 ||hit-star.ru^$~popup,popup
-||koi8r.info^$~popup,popup
 ||libertytraffic.ru^$~popup,popup
 ||livetraf.com^$~popup,popup
 ||luxtraffic.ru^$~popup,popup
@@ -418,7 +428,7 @@ _tizer.
 ||webmastak.net^$~popup,popup
 ||wmip.ru^$~popup,popup
 ||xertv.com^$~popup,popup
-//193.105.200.214/*$~popup,popup
+//193.105.200.214^$~popup,popup
 ! - Блокировка по именам файлов -----------------------------------------------
 !#name.bookmark
 /aika.swf
