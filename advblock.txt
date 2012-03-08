@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: WvGiAyVq6d2Dk1oMNubaig
-! Last modification time (GMT): 2012.03.08 12:53
+! Checksum: tzxlrJ5rEL8QD5EXnc3+lA
+! Last modification time (GMT): 2012.03.08 22:04
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -77,7 +77,7 @@
 ||blinkogold.ru^$image,~image,popup
 ||chaplingames.ru$image,~image,popup
 ||darkorbit.bigpoint.com/?aid=$image,~image,popup
-||fotostrana.ru^*/?$image,~image,popup
+||fotostrana.ru/start/questpet/?$image,~image,popup
 ||funtest-ru.com^$image,~image,popup
 ||goodsbrowser.com^$image,~image,popup
 ||image2you.ru^$image,~image,popup
@@ -387,8 +387,9 @@ _tizer.
 ||tizermine.net^
 ||tizermy.net^
 ||tizerset.net^
-! Найдены по "/js/bodyclick.php?id=" и "/click/body.php?id=", но что через них только не распространяется.
+! Найдены по "/js/bodyclick.php?id=" и "/click/body.php?id="
 /click/body.php?id=*&hash=$~popup,popup
+/click/b.php?id=*&hash=$~popup,popup
 /traforet.$~popup,popup
 .traforet.$~popup,popup
 ||activepr.ru^$~popup,popup
@@ -398,6 +399,7 @@ _tizer.
 ||good-traf.ru^$~popup,popup
 ||gotraff.ru^$~popup,popup
 ||hit-star.ru^$~popup,popup
+||koi8r.info^$~popup,popup
 ||libertytraffic.ru^$~popup,popup
 ||livetraf.com^$~popup,popup
 ||luxtraffic.ru^$~popup,popup
@@ -566,7 +568,7 @@ _tizer.
 ||adsn24.ru^$third-party
 ||adsocial.ru^$third-party
 ||adstark.ru^$third-party
-! $domain=adsyst.com|adsyst.ru
+! $domain=adsyst.biz|adsyst.com|adsyst.ru
 ||adsyst.$third-party
 ||adtaily.pl^$third-party
 ||adteaser.ru^$third-party
@@ -798,7 +800,7 @@ _tizer.
 ||forsage.biz/images/
 ||fotkidepo.ru^$script,third-party
 ||fotocash.ru^$third-party
-||fotostrana.ru^$third-party,~subdocument
+||fotostrana.ru/promo/
 ||free-lance.ru/*/contacts/
 ||freehd.com.ua^
 ||freeonlineusers.com^$third-party
@@ -2426,8 +2428,6 @@ forzajuve.ru##.block_links
 forzajuve.ru###column-left NOINDEX > .module-content
 forzajuve.ru###root-wrapper > .top-module-container
 ||forzajuve.ru/978x90.
-fotostrana.ru###fsad
-||fotostrana.ru/static/images/teaz/
 ||fp-tracker.ru/images/part/
 freakenergy.ru###menuforum
 freakenergy.ru##.headreklama
@@ -2443,8 +2443,6 @@ freesoft.ru##TABLE[bgcolor="#ff6300"]
 freesoft.ru##TABLE[cellspacing="3"][align="center"]:first-child
 freesoft.ru##TABLE[width="472"][align="center"]
 ||freesoft.ru/images/
-||freewallpapers.ru^*fotostrana.php
-||freewallpapers.ru^*icqbox
 fs.ua##.b-ad-resizable
 ||fs.ua/mid.htm
 fullgames.ru###left > DIV:not(#ms)
