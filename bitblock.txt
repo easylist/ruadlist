@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: C5wwYjoD+eX1Xt5jGaQCTg
-! Last modification time (GMT): 2012.03.11 13:29
+! Checksum: +ieQVQLJ+HdnVYYv0SQ/ww
+! Last modification time (GMT): 2012.03.11 14:11
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -124,7 +124,6 @@ _liveinternet.gif
 _twitter.gif
 _twitter.png
 /wp-content/plugins/russocialknopki-
-/wp-content/plugins/wp-cumulus/
 !
 !------------ Закладки --------------------------------------------------------
 ||bobrdobr.ru/images/buttons/$third-party
@@ -295,6 +294,11 @@ _lj_times_
 ||chatovod.ru/widget/$third-party
 ! Скрипт счётчика гуглоаналитики. Реальный счётчик и так блокируется, а это правило постоянно создаёт проблемы тут и там.
 ||google-analytics.com^$third-party,domain=~asus.com|~avast.com|~imageshack.us|~station.ru|~thisissand.com|~whorush.com
+! Виджет часов
+||clock-desktop.com^$third-party
+! Виджеты облака тэгов на флэше
+/flash/tagcloud.swf
+/wp-content/plugins/wp-cumulus/
 ! Далее идут правила для отдельных сайтов
 21region.org##.logo
 3dnews.ru###slider
@@ -411,6 +415,7 @@ kadets.info##DIV[id^="post_message_"] + DIV
 ! Встречаются не столько в подписях, сколько в самом тексте. Лучше и не видеть.
 !#smiles.bookmark
 ||smiles.clan.su^$third-party
+||smileycentral.com^$third-party
 !
 !- Общие правила блокировки линеечек и юзербаров ------------------------------
 !#lines,userbars.bookmark
