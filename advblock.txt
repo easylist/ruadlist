@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: /2ctvxwFtQdc5hYooYn8Ng
-! Last modification time (GMT): 2012.03.11 14:11
+! Checksum: XS5GuCVcBalNRW0g75fXDA
+! Last modification time (GMT): 2012.03.11 14:20
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -2105,12 +2105,13 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /click/*.php?id=*&hash=*&cook=*&value=$~popup,popup
 /traforet.$~popup,popup
 .traforet.$~popup,popup
-.info/js/dojo.php?id=$third-party,script
-.info/js/mootools.php?id=$third-party,script
-.info/js/prototype.php?id=$third-party,script
+! * = a, dojo, mootools, prototype, ...
+.info/js/*.php?id=$third-party,script
+||3file.info^$~popup,popup
 ||4imho.info^$~popup,popup
 ||7muc.info^$~popup,popup
 ||amus11.info^$~popup,popup
+||docmy.info^$~popup,popup
 ||ekod.info^$~popup,popup
 ||koi8r.info^$~popup,popup
 ||nauch2.info^$~popup,popup
@@ -2632,6 +2633,8 @@ hl-inside.ru###orphus
 hl-inside.ru##.right-block.rek
 hmn.ru##A > IMG[width="240"]
 ||ww.hmn.ru^
+horadric.ru##[id^="brand-"]
+||horadric.ru/styles/*/brand_
 hostingfailov.com###tablespons
 ||hostingfailov.com^*html|$~third-party,subdocument
 hotcharts.ru##[class$="_banner"]
