@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: fIkhVFxruQQU0UduBeo6fw
-! Last modification time (GMT): 2012.03.11 00:56
+! Checksum: g9jhxXr4C+D5DT87llcnyw
+! Last modification time (GMT): 2012.03.11 01:00
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -32,8 +32,6 @@
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
 ! $ domain=myredirecter.info|redirnet.info
 .info/sol/$image,~image,popup
-! $domain=flipflapflo.biz|flipflapflo.net|wt-rotator.biz|wts-rotator.com
-//uno.*/?t=$script,popup
 ! $domain=adonweb.ru|webunder.ru
 /adv_clk_redirect.php?$image,~image,popup
 ! $domain=playground.ru
@@ -2129,8 +2127,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||moy.su/rtr/$script
 ||ucoz.ru/rtr/$script
 !
-! Wizard-traffstock.COM
+! Wizard-TraffStock.COM
+//uno.*/?t=$script,popup
 ||wizard-traffstock.com^$third-party,~popup,popup
+||flipflapflo.biz^$~popup,popup
+||flipflapflo.net^$~popup,popup
+||wt-rotator.biz^$~popup,popup
 ||wt-rotator0.ru^$~popup,popup
 ||wt-rotator1.ru^$~popup,popup
 ||wt-rotator2.ru^$~popup,popup
@@ -2151,6 +2153,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||wt-rotator17.ru^$~popup,popup
 ||wt-rotator18.ru^$~popup,popup
 ||wt-rotator19.ru^$~popup,popup
+||wts-rotator.com^$~popup,popup
 !
 ! Yadro.RU
 ||aif.yadro.ru^
