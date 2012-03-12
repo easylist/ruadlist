@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: hxTPZDzrQOaj4CGJl7VmJA
-! Last modification time (GMT): 2012.03.12 12:45
+! Checksum: reGVpP4vLKKs2FKtsXNbFw
+! Last modification time (GMT): 2012.03.12 13:10
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -346,6 +346,7 @@ _tizer.
 ||autonet.ru/extra/autoclub_informer.aspx
 ||clipta.com/informer/
 ||cosmo.ru/cosmo_informers/
+||doramy.net/informer/
 ||faninternet.com.ua/informer.php?
 ||fark.ru/js/bannerLink.
 ||gold-music.ru/informer/
@@ -647,6 +648,7 @@ _tizer.
 ||br.gcl.ru^
 ||bt.kiev.ua^$domain=~bt.kiev.ua
 ||bubblesmedia.ru^$third-party
+||buy-link.ru^$third-party
 ||bvf.ru/upchk/
 ||bw.pronto.ru^$third-party,domain=~job.ru
 ||bx.metka.ru^
@@ -1419,10 +1421,9 @@ _tizer.
 ||tizzer.ru^$third-party
 ||tle.ru^$third-party
 ||tm-core.net^$third-party
-||tname.ru/img_*.gif
 ||tnx.net^$third-party
 ||todaymix.ru^$third-party
-||tofun.ru/traff/*.php
+||tofun.ru/traff/
 ||toget.ru^$third-party
 ||top-shop.ru^$third-party
 ||topadvert.ru^$third-party
@@ -1442,6 +1443,7 @@ _tizer.
 ||traffmaster.ru^$third-party
 ||traffsale.com^$third-party
 ||traffstock.ru^$third-party
+||traffworld.ru^$third-party
 ||trafoed.com/promo/
 ||trafogon.ru^$third-party
 ||trafon.ru^$third-party
@@ -2129,11 +2131,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||ucoz.*/bnr/
 ! Кнопка с предложением создать сайт на ucoz-овских доменах (справа-вверху).
 ###advtd
-! Судя по-всему не имеет отношения к самому Ucoz.net, но таки какой-то рекламный движок.
-! Найдено на artpost.ucoz.ru, fortpostnews.ucoz.ru, notebene.ucoz.ru, tumbanew.ucoz.ru, vceknigi.ru
-||do.am/rtr/$script
-||moy.su/rtr/$script
-||ucoz.ru/rtr/$script
+! Какой-то рекламный движок для ucoz-форумов.
+! $domain=artpost.ucoz.ru|fortpostnews.ucoz.ru|multiky.ru|notebene.ucoz.ru|tumbanew.ucoz.ru|uzumaki.kz|vceknigi.ru
+.am/rtr/$script
+.kz/rtr/$script
+.ru/rtr/$script
+.su/rtr/$script
 !
 ! Wizard-TraffStock.COM
 //uno.*/?t=$script,popup
@@ -2920,7 +2923,6 @@ mp3lemon.net##TD[style^="padding: 5px; border: 1px dashed "]
 ||mptron.com/img/
 mskd.ru##TABLE[width="600px"][align="center"]
 ||mskd.ru/img/*x*_
-||multiky.ru/rtr/
 multiki-online.net###teasers-top
 multiki-online.net###teasers-sidebar
 multiki-online.net##.more-teaser
@@ -3462,6 +3464,7 @@ utro.ru##.banner-right
 utro.ru##.conteiner-partner
 utro.ru##[id^="mlph"]
 ||utro.ru/*/banners/
+||uzumaki.kz/go?$script
 !
 !V
 v-info.ru###topbanners
