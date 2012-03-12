@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: Kk9BmE6A3yBZofDYFGx5QQ
-! Last modification time (GMT): 2012.03.12 08:09
+! Checksum: q+l3OFNxMZcLNfQQYru1gw
+! Last modification time (GMT): 2012.03.12 09:32
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -72,7 +72,6 @@
 ||1001kupon.ru^$image,~image,popup
 ||9donline.ru/welcome/?mita=$image,~image,popup
 ||audance.ru*/promo/$image,~image,popup
-||biglion.ru^$image,~image,popup
 ||blinkogold.ru^$image,~image,popup
 ||bonsport.ru^$image,~image,popup
 ||bookclub.ua^$image,~image,popup
@@ -336,27 +335,28 @@ _tizer.
 !#informer.bookmark
 .tv/_cron/js/informer$script
 /informer.js?
+||24smi.org/informer.php?
 ||aif.ru/iframes/
 ||afera.info/informer_
 ||all-news.net.ua/informers/
 ||analyzethis.ru/informer.cgi?
 ||auction.ua/informer.php?
 ||autonet.ru/extra/autoclub_informer.aspx
-||bigmir.net/informer/
 ||clipta.com/informer/
 ||cosmo.ru/cosmo_informers/
-||gold-music.ru/informer
-||informers.openmedia.com.ua/informer.php
-||informers.faninternet.com.ua/informer.php
+||faninternet.com.ua/informer.php?
+||fark.ru/js/bannerLink.
+||gold-music.ru/informer/
 ||meta.ua/informers/?
 ||missrich.net/informer.php?
 ||nyx.su/informers/
+||openmedia.com.ua/informer.php?
 ||otvali.ru/informer/
 ||protoplex.ru/cgi-bin/informer.pl?
 ||protoplex.ru/images/rating/
 ||rosinvest.com/informs/
 ||rssportal.ru/getinformer.php?
-||searchgid.ru/informer.
+! ||searchgid.ru/informer.
 ||seowebtools.ru/inform/infb.php?
 ||smigid.ru/informer/
 ||vsyako-razno.ru/engine/sblocks_informer.php?
@@ -628,7 +628,8 @@ _tizer.
 ||bestclick.ru^$third-party
 ||bezlimitvideo.com^$third-party
 ||bigbord.net^$third-party
-||biglion.ru^$third-party
+||biglion.ru^$third-party,~popup,popup
+||bigmir.net^third-party
 ||binimage.de^$third-party
 ||binmedia.ru^$third-party
 ||bizua.com^$third-party
@@ -2609,6 +2610,7 @@ gulyai.ru###dle-content > NOINDEX
 ||gulyai.ru/js/foto/
 ||guns.ru/i/
 guru.ua###adbns
+||guru.ua/white_menu/$object
 guzei.com##object[width="200"][height="100"]
 gzt.ru###bubble
 gzt.ru##.b-advertisement
@@ -2937,6 +2939,11 @@ myshows.ru###m-advert
 !N
 ||na-svyazi.ru/img/$object
 ||na-svyazi.ru/uploads/$object
+namba.kg###branding-html
+namba.kg###banners-top
+||namba.kg^$popup,domain=namba.kg
+||namba.kg/js/banner_fullscreen.js
+||namba.kg/www/base/
 narod.i.ua##.adv
 narodclub.net##.ammblock
 narodclub.net##DIV[onmouseout^="this.style.backgroundColor="][onmouseover^="this.style.backgroundColor="][style]
@@ -3089,6 +3096,7 @@ povarenok.ru##.banners_list
 ||povarenok.ru/banners_new/
 ||povarenok.ru/bn/
 pr-cy.ru###ad
+pravda.ru##.staticFragment
 ||pravdapskov.ru/upload/b/
 premiership.ru###banner
 ||premiership.ru/upload/adv/
