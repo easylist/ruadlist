@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: fa0FiE5wJlMtsqm/gIzg2A
-! Last modification time (GMT): 2012.03.12 12:19
+! Checksum: hxTPZDzrQOaj4CGJl7VmJA
+! Last modification time (GMT): 2012.03.12 12:45
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -305,6 +305,8 @@ _banner.gif
 /reklam/*
 /reklama.$domain=~reklama.rambler.ru|~reklama.ukr.net
 /reklama_$domain=~linux.ptz.ru
+/richbanner.
+.richbanner.
 /shared/promos/*
 /upload/banners/*
 /upload/bx/*$domain=~transbank.ru
@@ -392,12 +394,11 @@ _tizer.
 !#name.bookmark
 /aika.swf
 /datagroup.gif
-/Talky3D.gif
+/talky3d.gif
 ! - Популярные имена скриптов -------------------------------------------------
 !#script.bookmark
-.ru/_scripts/themes/sb.js|
+/adwolfScriptScroll.js
 /clk.js|
-/pseudocounter.js
 /cout.php?sid=$script
 ! $domain=4files.net|qiq.ru|qiq.ws
 /media/kalita1.js
@@ -407,6 +408,7 @@ _tizer.
 /popin4.js
 /popover.js$domain=~hotmail.com|~live.com
 /priceru_advert_
+/pseudocounter.js
 /sun_*_ajax.js|
 /ucodes.ru.banners.js
 ! - Блокировка по размеру указанному в адресе ---------------------------------
@@ -1005,6 +1007,7 @@ _tizer.
 ||marketgid.com^$third-party,~popup,popup
 ||masterpop.ru^$third-party
 ||mastertraffic.cn^$third-party
+||maxtrust.ru^$third-party
 ||mazuma.ru^$third-party
 ||mbanner.net^$third-party
 ||mbn.kr.ua^$third-party
@@ -1267,7 +1270,6 @@ _tizer.
 ||reklamnoedelo.com^$third-party
 ||revsci.net^$third-party
 ||ria.ru/frame?v
-||richbanner.ru^$third-party
 ||richclick.ru^$third-party
 ||richpopup.com^$third-party
 ||richtraffic.ru^$third-party
@@ -2630,6 +2632,10 @@ hdreactor.org###mc_240_400
 forum.hdtv.ru##.borderwrap > .ipbtable:nth-of-type(2)
 hh.by,hh.kz,hh.ru,hh.ua##.b-topbanner
 ||hh.ru/banners.
+hi-fi.ru##.logo + NOINDEX
+hi-fi.ru##DIV[style^="width: 900px; height: 90px;"]
+||hi-fi.ru^*.swf?flash_link=
+||hi-fi.ru/bitrix/images/
 hideme.ru##[id*="hidemead"]
 ||hideme.ru/ad.js
 hl-inside.ru###orphus
@@ -3119,6 +3125,7 @@ prowebber.ru##.bantop
 prowebber.ru##.lcol.mainside > CENTER > A[href^="/pw?"]
 ||proxyweb.net/js/dhtmlwindow.js
 ||ps3club.ru/bans/
+||pslan.com/banera/
 !
 !Q
 qip.ru##.advertTop
