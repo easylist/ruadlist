@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: Hc5mDUd7eGBTVnHkf6WlPQ
-! Last modification time (GMT): 2012.03.12 20:24
+! Checksum: 1+qF2McaL45H/9yOlJs+bA
+! Last modification time (GMT): 2012.03.13 00:07
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -614,7 +614,6 @@ _tizer.
 ||banage.ru^$third-party
 ||banner-in.net^$third-party
 ||banner.kiev.ua^$domain=~referatu.net.ua
-||banner.lbs.km.ru^
 ||banner.ua^$third-party
 ||banner.unian.net^
 ||bannerhost.ru^$third-party
@@ -1467,6 +1466,7 @@ _tizer.
 ||uaportal.com/bannes/
 ||ugly.ru/adv_frame.
 ||uicp.ru/?bn=
+||ujav.net^
 ||ukrbanner.net^$third-party
 ||ulitka.ru/logo$image
 ||umatno.ru/mm/
@@ -2114,7 +2114,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /click/*.php?id=*&hash=*&cook=*&value=$~popup,popup
 /traforet.$~popup,popup
 .traforet.$~popup,popup
-! * = a, dojo, mootools, prototype, ...
+! * == a, b, dojo, mootools, prototype, ...
 .info/js/*.php?id=$third-party,script
 ||3file.info^$~popup,popup
 ||4imho.info^$~popup,popup
@@ -3511,6 +3511,9 @@ vokrugsveta.ru###interchange
 ||volia.com/user/files/banners/
 ||vorum.ru/files/mpix/
 ||votkinsk.net/adv/
+voxpopuli.kz###brand_logo
+||voxpopuli.kz/css/site/images/*/background_
+||voxpopuli.kz/userfiles/banners/
 ||vozmi.net/img/*150x250
 vp.donetsk.ua##NOINDEX > A[rel="nofollow"] > IMG[width="255"]
 vremenno.net##.sidebarBlock:first-child
@@ -3629,9 +3632,11 @@ interfax.by##.banner
 ! KM.RU
 .lbs.km.ru/mod/_banners/*-240x200.
 .lbs.km.ru/mod/_banners/*?param1=
-banner.lbs.km.ru##A[target="_blank"] > IMG[width="310"]
+||banner.lbs.km.ru^
 km.ru##.top-banner
 km.ru##IFRAME[height="90"]
+km.ru###modalOverlay
+km.ru###modalContainer
 t2t.ru##.tbn
 !
 ! Mail.RU и Одноклассники
@@ -3656,6 +3661,8 @@ love.mail.ru##.banner_left
 love.mail.ru##.TopBannerSlot
 maps.mail.ru##IMG[width="200"][height="30"]
 my.mail.ru###directContent
+news.mail.ru###p-Ears-Cont
+news.mail.ru##.rb_blockPartners
 otvet.mail.ru##.direct
 rabota.mail.ru###banner1
 video.mail.ru##.lvi-r-ban

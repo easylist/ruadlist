@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: OArrIxQlT7CPL7CDw5yshA
-! Last modification time (GMT): 2012.03.12 20:24
+! Checksum: j6lUzWFcfiAfDNU1TC0+Pg
+! Last modification time (GMT): 2012.03.13 00:07
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -35,9 +35,11 @@
 ##.soc_fb_share
 ##[title$=" to Facebook"]
 ~facebook.com###facebook
-@@||connect.facebook.net^$third-party
-||facebook.$third-party,script,subdocument,domain=~facebook.com
-||fbcdn.net^$third-party,domain=~facebook.com,~image
+! @@||connect.facebook.net^$third-party
+! ||facebook.$third-party,script,subdocument,domain=~facebook.com
+! ||fbcdn.net^$third-party,domain=~facebook.com,~image
+||facebook.com/plugins/like.php?$third-party
+||graph.facebook.com/*&callback=
 /facebook_icon_
 _facebook.png
 _facebook.gif
@@ -62,6 +64,11 @@ _livejournal.gif
 !------------ QiP -------------------------------------------------------------
 ||pip.qip.ru^$domain=~pip.qip.ru
 !
+!------------ Twitter ---------------------------------------------------------
+||twitter.com/*/count.json?url=*&callback=
+_twitter.gif
+_twitter.png
+!
 !------------ ВКонтакте -------------------------------------------------------
 ! Внимание!
 ! Если требуется полная блокировка вконтакта, то создайте у себя два вот таких правила
@@ -71,7 +78,10 @@ _livejournal.gif
 ##.vk-button
 ##.vk-share-button
 ||vk.com/images/upload.gif$third-party
-||vk.com/widget_$third-party
+! ||vk.com/widget_$third-party
+||vk.com/widget_like.php?$third-party
+||vk.com/widget_comments.php?$third-party
+||vk.com/widget_community.php?
 /icons/vkontakte_
 /vkontakte_icon_
 _vkontakte.gif
@@ -97,35 +107,36 @@ _vkontakte.png
 ##.yashare-auto-init
 ||lenta.yandex.ru/i/addfeed.
 !
-!- Универсальные --------------------------------------------------------------
+!- Универсальные и прочее -----------------------------------------------------
 ##.addthis
 ||addthis.com^$third-party
 /addthis.try.js
+##.addzakl
+~appledevelopers.ru##.social
 ###block_social_open
 ! /copy_to_blog_button_  и /copy_to_blog_icon_
 /copy_to_blog_*.gif
+||inkoutbreak.com/bumper/
 _liveinternet.gif
 /odnaknopka/*
 ###odnaknopka
+/odnaknopka.js
 ||odnaknopka.ru^$third-party
 ||pip.qip.ru^$third-party
+/plugins/addzakl/*
+/plugins/russocialknopki-
 ##.sexy-bookmarks
 ###sexy-bookmarks
-/share.js$third-party
 /share42.js|
+/share.js$third-party
 ##.smiletagging-button
 ##.soc-box
-~appledevelopers.ru##.social
 ###social
 ###socialblock
 ###socializ
 ##.social_links
 ##.soc_share
-_twitter.gif
-_twitter.png
-/plugins/russocialknopki-
-/plugins/addzakl/*
-##.addzakl
+||viadeo.com/exec/recommend:getRecommend?$third-party
 !
 !------------ Закладки --------------------------------------------------------
 ||bobrdobr.ru/images/buttons/$third-party
@@ -351,6 +362,7 @@ iguides.ru##[id^="post_message_"] ~ DIV
 izvestia.ru##.topline
 ||levonevski.net^$object
 master-css.com###header1 > H2 > SPAN
+||metabar.ru^$third-party
 music.yandex.ru###js-banner
 ||muz.ru/content/banners/
 muz.ru##DIV[style*="400px;"][style$="240px;"]
