@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: nJ3Ut/XTdGmCNxCw8ezDCw
-! Last modification time (GMT): 2012.03.15 11:18
+! Checksum: icCbT4K843eOEpPOQAwSyg
+! Last modification time (GMT): 2012.03.15 15:52
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -395,6 +395,7 @@ _tizer.
 ||webmastak.net^$~popup,popup
 ||wmip.ru^$~popup,popup
 ||xertv.com^$~popup,popup
+||xltraff.net^$~popup,popup
 //193.105.200.214^$~popup,popup
 ! - Блокировка по именам файлов -----------------------------------------------
 !#name.bookmark
@@ -428,8 +429,14 @@ _tizer.
 ! Отличается отвратительной манерой плавать поверх всего и избегать любых общих
 ! правил. Появляется на многих сайтах и почти всегда под разными именами.
 ! Основной ареал обитания — варезники и порносайты.
-.php|$script,subdocument,domain=дсвлоад.рф|bape3.org|dsvload.net|manyclips.net|rapidzona.tv
-.php?id=$script,subdocument,domain=дсвлоад.рф|bape3.org|dsvload.net|manyclips.net|rapidzona.tv
+! Иногда вызывающий скрипт просто содержит .php в конце, иногда передаёт ?id=.
+/?get_code&template_uid=$script,third-party
+||дсвлоад.рф^*.php
+||bape3.org^*.php
+||dsvload.net^*.php
+||manyclips.net^*.php
+||nemezisworld.com^*.php
+||rapidzona.tv^*.php
 !
 ! - Игры ----------------------------------------------------------------------
 ||avangardonline.ru/banrotate.
@@ -1177,6 +1184,7 @@ _tizer.
 ||pen007.ru^$third-party
 ||penza-online.ru/cgi-bin/userstats.pl?
 ||people.1gb.ru^
+||people-group.eu^$third-party
 ||perezzz.ru^$third-party
 ||piar.com.ua^
 ||picbay.ru^$third-party
@@ -3005,6 +3013,7 @@ natural-medicine.ru###GNM30
 natural-medicine.ru##[id^="teaser"]
 ne-kurim.ru##.pad > NOINDEX
 ne-kurim.ru###panel
+nemezisworld.com##.banner_top
 ||neomaks.org/engine/*/amcu_*.js
 ||ners.ru/assets/_img/br/b_*.swf?url=
 ||b.netall.ru^
