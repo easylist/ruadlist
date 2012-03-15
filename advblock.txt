@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: k0lr8/TvsVskPIQmeRiM1A
-! Last modification time (GMT): 2012.03.14 21:58
+! Checksum: XUtzs8zO95LFMI7cOf6SDA
+! Last modification time (GMT): 2012.03.15 02:16
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -77,6 +77,7 @@
 ||bookclub.ua^$image,~image,popup
 ||chaplingames.ru$image,~image,popup
 ||darkorbit.bigpoint.com/?aid=$image,~image,popup
+||dofiga.net/?hotnews=$image,~image,popup
 ||fotostrana.ru/start/questpet/?$image,~image,popup
 ||funtest-ru.com^$image,~image,popup
 ||goodsbrowser.com^$image,~image,popup
@@ -300,6 +301,8 @@ _banner.gif
 /images/rek/*
 /images/rekl/*
 /img/bn/*
+/img/bnr-
+/img/bnr/*
 /img/rekl/*$domain=~softodrom.ru
 /imgads/*
 /mybaner/*
@@ -511,6 +514,8 @@ _tizer.
 ||ad.ir.ru/bb.cgi?
 ||ad.leongaming.com^$third-party
 ||ad.mail.ru^$third-party
+||ad.mail.ru/adj/
+||ad.one.lv^
 ! ||ad-words.ru/contextad/
 ||adbee.com.ua^$domain=~adbee.com.ua
 ||adbid.pl^$third-party
@@ -518,6 +523,7 @@ _tizer.
 ||adboon.ru^$third-party
 ||adcast.ru^$third-party,domain=~mts.ru
 ||add.in.ua^$third-party
+||addflow.ru^$third-party
 ||addisp.com^$third-party
 ||addnow.ru^$third-party
 ||addweb.ru^$third-party
@@ -543,6 +549,7 @@ _tizer.
 ||adrock.^$third-party
 ||adru.net^$third-party
 ||ads68.ru^$third-party
+||adsellers.net^$third-party
 ||adskape.ru^$third-party
 ||adsn24.ru^$third-party
 ||adsocial.ru^$third-party
@@ -612,6 +619,7 @@ _tizer.
 ||b2bcontext.ru^$third-party
 ||b2bvideo.ru^$third-party
 ||b81x63nc.ws.md^$third-party
+||babyclick.ru^$third-party
 ||banage.ru^$third-party
 ||banner-in.net^$third-party
 ||banner.kiev.ua^$domain=~referatu.net.ua
@@ -1000,6 +1008,7 @@ _tizer.
 ||m2k.ru/cgi-bin/
 ||mabila.ua^$third-party
 ||madbanner.$~object-subrequest
+||magna.ru^$third-party
 ||magnet.kiev.ua^$domain=~magnet.kiev.ua
 ||mail.banklife.ru^$third-party
 ||mambo.kiev.ua^$domain=~mambo.kiev.ua
@@ -1038,6 +1047,7 @@ _tizer.
 ||megawmr.ru^$third-party
 ||mercatos.ru^$third-party
 ||meta.ua/*/partn.$script,stylesheet
+||metaprofit.net^$third-party
 ||metod-online.com^*/promo/
 ||metroclick.ru^$third-party
 ||mhealth.ru^$third-party
@@ -1603,6 +1613,7 @@ _tizer.
 ||zclick.ru^$third-party
 ||zhurnaly.org.ua^$domain=~zhurnaly.org.ua
 ||zipmonster.ru^$third-party
+||zizu.lv^$third-party
 ||zna4ki.ru/nodel/zna4ki
 ||znews.su^$third-party
 ||zoda.ru^$third-party
@@ -1776,8 +1787,10 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||ladyclicks9.ru^$third-party
 !
 ! MediaLand.ru — партнёрская сеть компании «Медиа Мир».
-###medialand_adland_inline_div_750
-||content*.medialand.ru$~script
+! ###medialand_adland_inline_div_750
+! ||content*.medialand.ru$~script
+! Что-то я позабыл зачем нужно было оставлять всё это…
+||medialand.ru/code?
 ||popunder-mladnet.medialand.ru
 !
 ! MediaRich.ru
@@ -2233,6 +2246,7 @@ ag.ru###rotating_banners
 ag.ru###upadbg2
 ag.ru##IMG[width="120"][height="60"]
 ||ais.com.ua/usersimage/banners/
+akak.ru##.bnrs
 ||aldebaran.ru/images/recl/
 alive-ua.com##.col_l_b > TABLE:nth-of-type(3)
 alive-ua.com##.col_l_b > TABLE:nth-of-type(n+5)
@@ -2276,7 +2290,6 @@ forum.athlete.ru##.nopad
 autoclub-cerato.ru##.advert
 ||autoclub-cerato.ru/forum/ubar/
 ||neova.auto.ru^
-autonews.ru##[class^="banner_"]
 autoua.net###footer-holding
 ||avata.ru/windows.gif
 ||avata.ru/images/240x400.png
@@ -2411,6 +2424,9 @@ dni.ru##.column.ad
 dni.ru##.partners-links
 dni.ru###header-banner
 dni.ru##[id^="tieserBlock"] > [id^="tb_"]
+dofiga.net###i25b
+dofiga.net###nav_right
+dofiga.net##.left_banners
 forum.donfisher.ru##TD.windowbg3
 ||dontr.ru/upload/Banner/
 dostatok.ru###SR_PopOver
@@ -2460,7 +2476,11 @@ epidemz.net##A[target="_blank"][rel="nofollow"] > FONT[color]
 epidemz.net##[id^="cpa_rotator_block_"]
 epidemz.net##TD[style] > A[target="_blank"] > B
 ||epidemz.net^$object
+ekranka.tv###rrrFooter
+ekranka.tv###rrrHeader
+ekranka.tv###rrrToper
 erudition.ru##A[target="_blank"] > IMG[src^="http://www.erudition.ru/images/"]
+||eskhosting.ru/img/b/
 esquire.ru##.wilBranding-topAd
 esquire.ru##.wilBranding-toprow
 ||esquire.ru/images/*/banner/
@@ -2520,6 +2540,10 @@ file-tracker.net###sidebar2
 ||file-tracker.net/images/ad1/
 ||file-tracker.net/images/banner/
 fileclub.biz##.banner_top
+fileplanet.com.ua###main > DIV[style*="240px;"]
+||fileplanet.com.ua/?op=redirect_to&url=$image,~image,popup
+||fileplanet.com.ua/images/brand/
+||fileplanet.com.ua/player_vip.swf
 filorama.ru###dle-content > TABLE:first-child
 ||filorama.ru/*/banner.swf
 finance.ua###banner-zone-top
@@ -2698,6 +2722,7 @@ inedelya.ru##.top_banner
 inflora.ru##[class*="banner"]
 ||inflora.ru/*banner
 ||inflora.ru^$object
+||inform.kz/download/
 infox.ru##.idv3-popup-frame
 infox.ru###dmLarge
 inmoment.ru##CENTER > A[target="_blank"]
@@ -2836,6 +2861,7 @@ lib.rus.ec##IMG[width="240"][height="400"]
 lifehacker.ru##.rblock1
 lifehacker.ru##.rblock4
 ||lifehacker.ru/promo/
+lifenews.ru##.right_block_advert
 linecinema.org###news > DIV:not([id])
 linux.org.ru##.infoblock:not([id^="topic-"])
 ||linux.org.ru^$subdocument
@@ -2940,6 +2966,7 @@ musicfond.com##.NavItems>.InitaMenu
 musicfond.com##.SearchForm>NOINDEX
 ||musicforums.ru/*/knopki/
 ||musicforums.ru/pictures/casio_
+||musictube.ru/flash/
 muz.ru##.SEO
 muz.ru##TD:last-child > DIV[style*="400px;"][style$="240px;"]
 muz.ru###bs_placement2
@@ -3039,7 +3066,7 @@ ochevidec.net##A[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejou
 ||odessa-daily.com.ua/images/stories/banners/
 odnako.org##.main > .new_header_90.boxNoPadding3:first-child
 odnako.org##IMG[width="240"][height="25"]
-||old-games.ru/img/bnr/
+||old-games.ru/img/b/
 ||oldgames.ru/netcat_files/Image/$object
 ||ololo.fm/banners/
 ||onlime.ru/banners/banner_
@@ -3083,6 +3110,8 @@ ph4.ru###topadv
 ||photodoska.ru/content/banners/
 photoshop-master.ru###dropin
 phpbbguru.net##[href^="go.php?to="]
+pic2profit.com###referal
+||pic2profit.com/ppb.php?id=
 pindosoff.net###dle-content > TABLE:first-child TD.copy
 pindosoff.net##TD.nav A[target="_blank"]
 ||pindosoff.net/images/
@@ -3118,6 +3147,7 @@ pravda.ru##.staticFragment
 ||pravdapskov.ru/upload/b/
 premiership.ru###banner
 ||premiership.ru/upload/adv/
+||prestige-gaming.ru/styles/*/ptn/
 ||prikols.com.ru/eroru/
 probki.net##CENTER > A > IMG[width="160"]
 probki.net##TD[valign="top"] > A > IMG[width="160"]
@@ -3352,6 +3382,8 @@ styanulo.ru##.banner
 sudga.ru##IMG[width="180"][height="80"]
 sudga.ru##IMG[width="225"][height="80"]
 superhimik.com###login_popup
+sxnarod.com###tablespons
+||sxnarod.com/html/
 sysadmins.ru##NOINDEX > A[target="new"][rel="nofollow"]
 ||sysadmins.ru/adv/
 !
@@ -3364,6 +3396,7 @@ telestrekoza.com##UL.xoxo.blogroll
 terabit.biz##.module-one-search
 terabit.biz##.newsstory > NOINDEX
 ||terabit.biz^*_240x400
+teramult.org.ua##.banner
 tfile.ru###bLeft
 tfile.ru###foot_ban
 ||s.tfile.ru^$object
@@ -3424,6 +3457,8 @@ trinixy.ru##[rel="nofollow"] > FONT[color="#ff0000"]
 ||b.turbo.az^
 ||turbobit.net/files/
 ||turbobit.net/js/partner_
+tutu.ru##.overflow
+/ad*.tutu.ru^*_*.php|
 ||twistcasino.net^$third-party
 !
 !U
@@ -3524,6 +3559,7 @@ voxpopuli.kz###brand_logo
 vp.donetsk.ua##NOINDEX > A[rel="nofollow"] > IMG[width="255"]
 vremenno.net##.sidebarBlock:first-child
 vseosi.ru##.centercol > CENTER
+vsetv.com##.ban200
 vsetyt.us###promo
 ||vsetyt.us/uploads/ruscams.
 ||vsestroi.com/files/$object
@@ -3549,6 +3585,7 @@ webpark.ru##A[href^="http://www.mhealth.ru/#"]
 wiaderko.com###topbar
 ||wild-mistress.ru/wmbanner/
 ||winzoro.com/data/ba_ne_r/
+woman.ru##.banner
 womanbusiness.ru##TABLE[style*="2px dashed;"]
 ||world-art.ru/bipack/
 !
@@ -3603,6 +3640,7 @@ zh24.com###warning
 ||zh24.com/molodejj/
 zhmak.info##TD[width="180"]:first-child + TD[width="5"] + TD > :not([class="news"])
 ||zloy.im^$domain=zloy.bz
+znaikak.ru##.blockLinks
 ||zoda.ru/images/swf/
 ||api.zoomby.ru^$object-subrequest,~third-party
 !
@@ -3617,9 +3655,9 @@ fastpic.ru###top
 !
 ! GISMeteo BY/COM/LT/RU
 //a.gismeteo.
-gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru###ad-lb
-gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru###ad-rian
-gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.ru###rbc
+gismeteo.by,gismeteo.lt,gismeteo.ru###ad-lb
+gismeteo.by,gismeteo.ru###ad-rian
+gismeteo.by,gismeteo.lt,gismeteo.ru###rbc
 gismeteo.ua###ad-rbkua
 ||gismeteo.*/rian.html|
 ||gismeteo.*/static/app/*/*.gif
@@ -3788,27 +3826,21 @@ weather.rambler.ru###weather-ban-300
 !
 ! RBC (РБК)
 ##.rbcobmen
+autonews.ru##[class^="banner_"]
+autonews.ru##.advert2
 cnews.ru###mag_banner
-cnews.ru###rian_iformer
-cnews.ru###small_partners_header
 cnews.ru##.banner_wrapp
 rbc.ru##.iGlobeInf
 rbc.ru,rbc.ua##.column-ad
 rbc.ru,rbc.ua##.contentBox > .tac
-rbc.ru,rbc.ua##IFRAME[width="234"][height="200"]
-rbc.ru,rbc.ua##TABLE[bgcolor="#F7FAEF"]
-rbc.ru,rbc.ua,cnews.ru##[id^="flashrst_"]
-rbc.ru,rbc.ua,cnews.ru,~top.rbc.ru##[id^="flash_"]
 rbc.ru,rbc.ua,rbcdaily.ru##.banner
-rbc.ru,rbcnews.com##A[href^="http://banner.rbc.ru/"]
 rbcdaily.ru##.c-block_content_article_baner
 rbcdaily.ru##[class*="_adv"]
 ||cnews.ru/img/banner/
 ||cnews.ru/inc/banners/
 ||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
-||medialand.ru/code?*&oin=1$domain=rbc.ru|cnews.ru
+! ||medialand.ru/code?*&oin=1$domain=rbc.ru|cnews.ru
 ||pics.rbc.ru/img/banners/
-||pics.rbc.ru^*/img.*?
 ||zoom.cnews.ru/inc/bpic/
 !
 ! VK.com (ВКонтакте)
@@ -3976,6 +4008,7 @@ x-soft.tomsk.ru###shop
 @@||russia.ru/reklama/32x32.flv?link1=$object-subrequest,domain=vz.ru
 @@||rzd.ru/banner/$xmlhttprequest,domain=rzd.ru
 @@||semrush.com/m/scripts/reports/backlinks.$~third-party
+@@||statcounter.com/counter/counter.js$~third-party
 @@||sticker.yadro.ru/ad/3.xml?$object-subrequest,domain=rutv.ru
 @@||sticker.yadro.ru/i/ad_in_video.swf$domain=rutv.ru
 @@||stopgame.ru/www/delivery/afr.php?*&target=_top&$subdocument,domain=stopgame.ru

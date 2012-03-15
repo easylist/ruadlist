@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: CmwywoOaZWGKi4XvIrHWVg
-! Last modification time (GMT): 2012.03.13 18:10
+! Checksum: f5Swd/Z4MPh2sjFQKgxl9w
+! Last modification time (GMT): 2012.03.15 02:16
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -39,7 +39,7 @@
 ! @@||connect.facebook.net^$third-party
 ! ||facebook.$third-party,script,subdocument,domain=~facebook.com
 ! ||fbcdn.net^$third-party,domain=~facebook.com,~image
-||facebook.com/plugins/like.php?$third-party
+||facebook.com/plugins/comments.php?
 ||graph.facebook.com/*&callback=
 /facebook_icon_
 _facebook.png
@@ -80,9 +80,10 @@ _twitter.png
 ##.vk-share-button
 ||vk.com/images/upload.gif$third-party
 ! ||vk.com/widget_$third-party
-||vk.com/widget_like.php?$third-party
 ||vk.com/widget_comments.php?$third-party
 ||vk.com/widget_community.php?
+||vk.com/widget_like.php?$third-party
+||vk.com/widget_recommended.php?
 /icons/vkontakte_
 /vkontakte_icon_
 _vkontakte.gif
@@ -123,6 +124,7 @@ _liveinternet.gif
 ###odnaknopka
 /odnaknopka.js
 ||odnaknopka.ru^$third-party
+||pikabu.ru^$third-party
 ||pip.qip.ru^$third-party
 /plugins/addzakl/*
 /plugins/russocialknopki-
@@ -220,6 +222,7 @@ qiq.ws##A[onclick^="return addSoc"]
 ||rfpro.ru/images/icons/bookmark/
 ! discovery.rambler.ru и vision.rambler.ru
 rambler.ru##.b-share
+rambler.ru##.b-social-share
 rambler.ru##.v-favsites
 rbc.ru###socials
 ria.ru###facebook-userbar
