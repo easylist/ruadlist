@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: XUtzs8zO95LFMI7cOf6SDA
-! Last modification time (GMT): 2012.03.15 02:16
+! Checksum: 7IhlJxXA5wTTsPoKxa/7mg
+! Last modification time (GMT): 2012.03.15 09:35
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -1265,7 +1265,6 @@ _tizer.
 ||rax.ru^$third-party
 ||rb.rfn.ru^
 ||rb.sport-express.ru^
-||rbc.ru/img/bnmaker/$third-party
 ||rbe.ru^$third-party
 ! ||rclick.com.ua^
 ||readme.ru^$third-party,~popup,popup
@@ -3504,11 +3503,6 @@ urokinadivane.ru##[id^="bn_"]
 ||urokinadivane.ru/templates/GiGantika/images/swf/
 usde.biz,usde.ru##A[href^="/engine/redirect2.php?url="]
 usde.biz,usde.ru##A[href^="http://usde.ru/adult/go.php?"]
-utro.ru##.banner_bottom_art
-utro.ru##.banner-right
-utro.ru##.conteiner-partner
-utro.ru##[id^="mlph"]
-||utro.ru/*/banners/
 ||uzumaki.kz/go?$script
 !
 !V
@@ -3826,22 +3820,27 @@ weather.rambler.ru###weather-ban-300
 !
 ! RBC (РБК)
 ##.rbcobmen
-autonews.ru##[class^="banner_"]
 autonews.ru##.advert2
-cnews.ru###mag_banner
+autonews.ru##[class^="banner_"]
 cnews.ru##.banner_wrapp
+cnews.ru###mag_banner
+||cnews.ru/img/banner/
+||cnews.ru/inc/banners/
+||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
+||zoom.cnews.ru/inc/bpic/
+rbcdaily.ru##.c-block_content_article_baner
+rbcdaily.ru##[class*="_adv"]
 rbc.ru##.iGlobeInf
 rbc.ru,rbc.ua##.column-ad
 rbc.ru,rbc.ua##.contentBox > .tac
 rbc.ru,rbc.ua,rbcdaily.ru##.banner
-rbcdaily.ru##.c-block_content_article_baner
-rbcdaily.ru##[class*="_adv"]
-||cnews.ru/img/banner/
-||cnews.ru/inc/banners/
-||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
-! ||medialand.ru/code?*&oin=1$domain=rbc.ru|cnews.ru
+||rbc.ru/img/bnmaker/$third-party
 ||pics.rbc.ru/img/banners/
-||zoom.cnews.ru/inc/bpic/
+utro.ru##.banner_bottom_art
+utro.ru##.banner-middle
+utro.ru##.banner-right
+utro.ru##.conteiner-partner
+||utro.ru/*/banners/
 !
 ! VK.com (ВКонтакте)
 ! Реклама самого вконтактика и всех, кто на нём так или иначе пасётся
