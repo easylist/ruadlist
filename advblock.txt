@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 7IhlJxXA5wTTsPoKxa/7mg
-! Last modification time (GMT): 2012.03.15 09:35
+! Checksum: nJ3Ut/XTdGmCNxCw8ezDCw
+! Last modification time (GMT): 2012.03.15 11:18
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -719,7 +719,6 @@ _tizer.
 ||dimpy.narod.ru^
 ||dircash-promo.com^$third-party
 ||dircash-promost.com^$third-party
-||directadvert.ru^$third-party
 ||dirkino-*.ru^$third-party
 ||dl2.ru/catalog.php?
 ||dndd.ru^$third-party
@@ -1122,7 +1121,6 @@ _tizer.
 ||novosti.dn.ua^$object
 ||novostimira.com^$third-party
 ||novostimira.com.ua^$domain=~novostimira.com.ua
-||novoteka.ru$third-party
 ||nsoft-s.com^$third-party
 ||numberia.com^
 ||numbers.md^$third-party
@@ -1744,7 +1742,14 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||trafovik.ru^$~popup,popup
 ||xxxxxxxxxx.ru^$~popup,popup
 !
-! Dosug.cz и связанные с ними домены
+! Direct/ADVERT
+/show.cgi?adp=$domain=~adnetwork.pro|~novoteka.ru
+||directadvert.ru^$third-party
+||news.adnetwork.pro^$third-party
+||nnn.novoteka.ru^$third-party
+||vpered.ru^$third-party
+!
+! Dosug.cz и связанные с ними домены или
 ! «ТУТ НИЧЕГО НЕТ. НАХРЕНА ТЫ СЮДА ЗАШЕЛ? :-)»
 ! Общие правила
 /in.htm?wm=$popup
@@ -3045,7 +3050,6 @@ noob-club.ru##.advert_first
 novafilm.tv##.foot-partners
 ||shop.novafilm.tv^
 ||novayagazeta.ru/storage/banners/
-beta.novoteka.ru##.outBlockVertAddLinks__
 ||notebook-center.ru^$object
 ||novostimira.com.ua/n/
 nowa.cc###inlinemodform > CENTER
