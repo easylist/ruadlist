@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: YrH1rGjzA2JzGX3cIYX+3g
-! Last modification time (GMT): 2012.03.15 16:02
+! Checksum: WpEHx2d8Qyz3MytjD+CCQQ
+! Last modification time (GMT): 2012.03.16 18:06
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -800,6 +800,7 @@ _tizer.
 ||forsage.biz/images/
 ||fotkidepo.ru^$script,third-party
 ||fotocash.ru^$third-party
+||fotostrana.ru/banner?
 ||fotostrana.ru/promo/
 ||free-lance.ru/*/contacts/
 ||freehd.com.ua^
@@ -1753,6 +1754,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 !
 ! Direct/ADVERT
 /show.cgi?adp=$domain=~adnetwork.pro|~novoteka.ru
+||adnews.rambler.ru^$third-party
 ||directadvert.ru^$third-party
 ||news.adnetwork.pro^$third-party
 ||nnn.novoteka.ru^$third-party
@@ -2138,10 +2140,11 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||zipcash.ru^$third-party
 !
 ! Traforet.RU
-/click/*.php?id=*&hash=*&cook=*&value=$~popup,popup
 /traforet.$~popup,popup
 .traforet.$~popup,popup
-! * == a, b, dojo, mootools, prototype, ...
+! * == a, b, c, ga, js, node, prototype, qa, ui, ...
+.info/click/*.php?id=$image,~image,popup
+! * == a, b, c, dojo, jquery, mootools, ...
 .info/js/*.php?id=$third-party,script
 ||3file.info^$~popup,popup
 ||4imho.info^$~popup,popup
@@ -2149,8 +2152,10 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||amus11.info^$~popup,popup
 ||docmy.info^$~popup,popup
 ||ekod.info^$~popup,popup
+||http2.info^$~popup,popup
 ||koi8r.info^$~popup,popup
 ||mir17.ru^$~popup,popup
+||mu-m.info^$~popup,popup
 ||nauch2.info^$~popup,popup
 ||t-uks.info^$~popup,popup
 ||traf3.info^$~popup,popup
@@ -2604,8 +2609,8 @@ freesoft.ru##TABLE[bgcolor="#ff6300"]
 freesoft.ru##TABLE[cellspacing="3"][align="center"]:first-child
 freesoft.ru##TABLE[width="472"][align="center"]
 ||freesoft.ru/images/
-fs.ua##.b-ad-resizable
-||fs.ua/mid.htm
+fs.ua##[id^="bn_"] A[href^="http://clk."]
+@@||recreativ.ru/rcode.$domain=fs.ua
 fullgames.ru###left > DIV:not(#ms)
 fullgames.ru###main + #right
 fullgames.ru##CENTER > NOINDEX > A[target="_blank"]
