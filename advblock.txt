@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: yvbs3k4b9AA/6OXI/V7vAA
-! Last modification time (GMT): 2012.03.18 14:44
+! Checksum: WpeCrAu+6F19tikSdkfAwQ
+! Last modification time (GMT): 2012.03.18 19:21
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -212,37 +212,25 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 !
 ! = Общие правила блокировки ==================================================
 !#global.bookmark
-.bannerbank_
-.bannerbank.
-! vipaccess.su, goldentraffic.ru и, возможно, другие.
-.ru/code_id_*.js|$script
+?a_aid=testaff&
 /ad_click/*$object
-.swf?alink=
-.swf?banner_href=
-.swf?link1=$domain=~citydom.ru
-.swf?link=$domain=~ex-road.ru|~testoni.com
-.swf?lnk=
-.swf?path=
-.swf?target=_self&link
-.swf?target=_blank&
-/?get_code&template_uid=$script,third-party
-//b.*/iframe/*
-//mads.
 /adland.php
 /Ads.asmx/GetInfo?
-/adstil.
-/adv-out/?$script
-/adv_out.$script
 /ad_show.$script
+/adstil.
+/adv_out.$script
+/adv-out/?$script
 /backlinks.
+.bannerbank_
+.bannerbank.
 /bazar_fast/*
+//b.*/iframe/*
 /bitrix/spread.php?
 /by.banclk?
 /cgi-bin/adv.fcgi?
 /cgi-bin/iframe/*$domain=~rian.ru|~km.ru
 ! icqadvert.org, icqadvert.com, ultrapay.net
-! Начинают с загрузки /check.php, популярные значения mode: teaser и icq.
-/check.php?user_id=*&mode=*&domain=$third-party
+/check.php?user_id=*&mode=$third-party
 /clickheat.
 ^clickunder^
 ^clickunder=
@@ -250,13 +238,16 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 /event.ng
 /extadv/*
 /get_ads/*
+/?get_code&template_uid=$script,third-party
 /iframe/glomu.$subdocument
 /iframe/inosmi.$subdocument
+/imp.php?a_aid=
 /in.cgi?$subdocument,script,third-party
 /linkexchange/*
+//mads.
 /marketplace.asp?
 /mirmaek/*$image
-! Скрипт используемый для вставки рекламы сетями adfox.ru, adwolf.ru, kavanga.ru и ещё некоторыми менее известными
+! adfox.ru, adwolf.ru, kavanga.ru…
 /prepareCode?$match-case
 /redtram.
 /richarbuz.
@@ -265,10 +256,18 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 /slatefp.asp
 /some-ad.php
 /splash/page_header/*
+.swf?alink=
+.swf?banner_href=
+.swf?link1=$domain=~citydom.ru
+.swf?link=$domain=~ex-road.ru|~testoni.com
+.swf?lnk=
+.swf?path=
+.swf?target=_blank&
+.swf?target=_self&link
 /topadvert.
 /vendshow/*
-/vse-pricheski.$third-party
 /vsemayki_
+/vse-pricheski.$third-party
 /warlog.
 /webunder.
 /wtsin.cgi?id=$~popup,popup
@@ -278,7 +277,7 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 .ru/ban/
 .ru/banner/
 .ru/banners/
-.ru/uploads/banners/$domain=~digital.ru
+.ru/uploads/banners/$domain=~allwomens.ru|~digital.ru
 .ua/banner/
 .ua/banners/
 /adv/banners/*$domain=~artinvestment.ru
@@ -355,15 +354,21 @@ _tizers.
 ||aif.ru/iframes/
 ||afera.info/informer_
 ||all-news.net.ua/informers/
+||allday.ru/rbknews/
 ||analyzethis.ru/informer.cgi?
 ||auction.ua/informer.php?
 ||autonet.ru/extra/autoclub_informer.aspx
+||bigmir.net^third-party
 ||clipta.com/informer/
 ||cosmo.ru/cosmo_informers/
 ||doramy.net/informer/
+||fair.ru/*/i.php?
 ||faninternet.com.ua/informer.php?
 ||fark.ru/js/bannerLink.
+||from-ua.com^$third-party,subdocument
+||from-ua.com/adds/getinf.php?
 ||gold-music.ru/informer/
+||meta.ua/*/block.js|$third-party
 ||meta.ua/informers/?
 ||missrich.net/informer.php?
 ||nyx.su/informers/
@@ -479,184 +484,183 @@ _tizers.
 !
 ||003.com.ua^$domain=~003.com.ua
 ||1-traf.net^
-||1000zakazov.ru^$third-party
+||1000zakazov.ru^
 ||100projects.ru^
 ||123service.ru^$~script,third-party
-||17teen.ru^$third-party
-||1ha.ad.md^$third-party
-||1invite.ru^$third-party
-||1pop.ru^$third-party
+! ||17teen.ru^$third-party
+! ||1ha.ad.md^$third-party
+||1invite.ru^
+||1pop.ru^
 ||1popov.ru/rotator/
-||1tizer.com^$third-party
-||1traff.ru^$third-party
-||1txt.ru^$third-party
-||2000zakazov.ru^$third-party
+||1tizer.com^
+||1traff.ru^
+||1txt.ru^
+||2000zakazov.ru^
 ||24new.ru^$third-party
-! ||24open.ru/*?from=
-||24s.ru^$third-party
+||24open.ru^$third-party
+||24s.ru^
 ! $domain=24smile.net|24smile.org
 ||24smile.$third-party,~popup,popup
-||25hypnos.com^$third-party
+||25hypnos.com^
 ||2baksa.net^$third-party
 ||2da2.ru^$third-party
-||2x2.kz^$third-party
+||2x2.kz^
 ||3rs.ru^$third-party
 ||4-moto.ru/ad/
 ||468.vologdainfo.ru^
-||4smi.ru^$third-party
-||7rtv.com^$third-party
-||8coins.net^$third-party
-||8coins.ru^$third-party
-||8test.ru^$third-party
-||8testov.ru^$third-party
-||a-love.nninfo.ru^$third-party
+||4smi.ru^
+||7rtv.com^
+! $domain=8coins.net|8coins.ru
+||8coins.$third-party
+! ||8test.ru^$third-party
+! ||8testov.ru^$third-party
+||a-love.nninfo.ru^
 ||a.bankir.ru^
 ||a.fobos.tv^
-||a4retail.net^$third-party
-||abcfilm.org^$third-party
-||abnad.net^$third-party
-||aceventik.com^$third-party
+||a4retail.net^
+||abcfilm.org^
+||abnad.net^
+||aceventik.com^
 ||ad.ir.ru/bb.cgi?
-||ad.leongaming.com^$third-party
+||ad.leongaming.com^
 ||ad.mail.ru^$third-party
 ||ad.mail.ru/adj/
 ||ad.one.lv^
-! ||ad-words.ru/contextad/
-||adbee.com.ua^$domain=~adbee.com.ua
-||adbid.pl^$third-party
-||adbn.ru^$third-party
-||adboon.ru^$third-party
-||adcast.ru^$third-party,domain=~mts.ru
+||adbee.com.ua^
+||adbid.pl^
+||adbn.ru^
+||adboon.ru^
+||adcast.ru^
 ||add.in.ua^$third-party
-||addflow.ru^$third-party
-||addisp.com^$third-party
+||addflow.ru^
+||addisp.com^
 ||addnow.ru^$third-party
-||addweb.ru^$third-party
-||adforce.ru^$third-party
-||adfun.ru^$third-party
-||adgo-online.de^$third-party
-||adhands.ru^$third-party
-||adhub.ru^$third-party
-||adizer.ru^$third-party
-||adjes.ru^$third-party
-||adlabs.ru^$third-party
-||adland.ru^$third-party
+||addweb.ru^
+||adfog.ru^
+||adforce.ru^
+||adfun.ru^
+||adgo-online.de^
+||adhands.ru^
+||adhub.ru^
+||adizer.ru^
+||adjes.ru^
+||adlabs.ru^
+||adland.ru^
 ||adlog.com^$third-party
 ||adme.ru^$third-party
-||admixer.net^$third-party
+||admixer.net^
 ! $domain=admulti.com|admulti.ru
 ||admulti.$third-party
 ||adne.info^$third-party
 ||adonweb.ru^$~popup,popup
-||adpath.ru^$third-party
-||adpro.com.ua^$domain=~adpro.com.ua
+||adpath.ru^
+||adpro.com.ua^
 ! $domain=adrock.com.ua|adrock.ua
 ||adrock.^$third-party
-||adru.net^$third-party
+||adru.net^
 ||ads68.ru^$third-party
-||adsellers.net^$third-party
-||adskape.ru^$third-party
-||adsn24.ru^$third-party
-||adsocial.ru^$third-party
-||adstark.ru^$third-party
+||adsellers.net^
+||adskape.ru^
+! ||adsn24.ru^
+||adsocial.ru^
+||adstark.ru^
 ! $domain=adsyst.biz|adsyst.com|adsyst.ru
 ||adsyst.$third-party
-||adtaily.pl^$third-party
-||adteaser.ru^$third-party
-||adtidy.net^$third-party
-||adult-click.ru^$third-party
-||adulttraffic.ru^$third-party
-||adunit.chango.ca^$third-party
+||adtaily.pl^
+||adteaser.ru^
+||adtidy.net^
+||adtime.ru^
+||adult-click.ru^
+||adulttraffic.ru^
+||adunit.chango.ca^
 ||adv.hta.com.ua^
-||advbroker.ru^$third-party
-! $domain=advertbox.ru|advertbox.net|advertbox.us
+||advbroker.ru^
+! $domain=advertbox.net|advertbox.ru|advertbox.us
 ||advertbox.$third-party
+! $domain=advertpay.com|advertpay.net|advertpay.ru
 ||advertpay.$third-party
+! $domain=advertpro.com|advertpro.cz|advertpro.net|advertpro.ru
 ||advertpro.$third-party
-||advsense.info^$third-party
-||advxp.com^$third-party
-||adward.ru^$third-party
-||adwork.net.ua^$third-party
-||aedrvt.majordomo.ru^$third-party
-||agitmedia.com^$third-party
-||agro.net.ru^$domain=~agro.net.ru
+||advsense.info^
+||advxp.com^
+||adward.ru^
+||adwork.net.ua^
+||aedrvt.majordomo.ru^
+||agitmedia.com^
+||agro.net.ru^
 ||agrotv.ru^$third-party
-! ||agsat.com.ua/img$image,object
-||akabo.ru^$third-party
+||akabo.ru^
 ||akavita.com^$third-party
-||alfainternet.su^$third-party
+||alfainternet.su^
 ||all.by^$third-party
 ||allboxing.ru^$object
-||allday.ru/rbknews/$third-party
-||allmt.com^$third-party
+||allmt.com^
 ||allnewspoint.com^$third-party
-! ||allnokia.ru/img/*?*/click/?
+||allnokia.ru^$third-party
 ||allsiemens.com^$third-party
 ||allwomens.ru^$third-party
 ||alpari.ru/static/$third-party
-||alphacash.biz^$third-party
-||alvadu.ru^$third-party
-||amung.us^$third-party
-! ||analytics.*.*/*.php
+||alphacash.biz^
+||alvadu.ru^
 ||anastasia-international.com^$third-party
 ||animereactor.ru^$third-party
 ||animeyes.ru^$third-party
-||anyfiles.ru^$third-party
+||anyfiles.ru^$domain=~moi-progi.ru
 ||ap-jam.com^$third-party
-||arbocontext.ru^$third-party
-||artbanner.com.ua^$third-party
+||arbocontext.ru^
+||artbanner.com.ua^
 ||assessoria.hotbox.ru^
-! ||assets.myflashfetish.com/swf/
-||atlassolutions.com^$third-party
+||atlassolutions.com^
 ||autocentre.ua^$subdocument,third-party
 ||autoreg.ru^$third-party
-||autotizer.ru^$third-party
+||autotizer.ru^
 ||autoua.com^$third-party
 ||avazone.ru^$third-party
 ||avifilm.ru^
-||awmpartners.com^$third-party
-||azartcash.com^$third-party
+||awmpartners.com^
+||azartcash.com^
 ||azbukasexa.ru^$third-party
 ||b-one.com.ua^
 ||b.candy.vl.ru^
 ||b.madplace99.com^
 ||b.nwave.de^
-||b2bcontext.ru^$third-party
-||b2bvideo.ru^$third-party
-||b81x63nc.ws.md^$third-party
+||b2bcontext.ru^
+||b2bvideo.ru^
+||b81x63nc.ws.md^
 ||babyclick.ru^$third-party
 ||banage.ru^$third-party
-||banner-in.net^$third-party
+||banner-in.net^
 ||banner.kiev.ua^$domain=~referatu.net.ua
-||banner.ua^$third-party
+||banner.softswiss.com^
+||banner.ua^
 ||banner.unian.net^
-||bannerhost.ru^$third-party
-||bans.bride.ru^$third-party
-||bans.name^$third-party
-||bantex.ru^$third-party
-||base.kiwi.kz^$third-party
-||bashnya.ru^$third-party
+||bannerhost.ru^
+||bannerka.ua^
+||bans.bride.ru^
+||bans.name^
+||bantex.ru^
+||base.kiwi.kz^
+||bashnya.ru^
 ||basketfan.my1.ru^$third-party
-||bazar.penza.su^$third-party
+||bazar.penza.su^
 ||bb.stream24.ru^
 ||bbn.by/t.bbn?
 ||bbn.img.com.ua^
 ||bcontent.life.ru^
 ||be-mine.ru^$third-party
-||bepartner.ru^$third-party
-||bestclick.ru^$third-party
-||bezlimitvideo.com^$third-party
+||bepartner.ru^
+||bestclick.ru^
+||bezlimitvideo.com^
 ||bqhost.net/_rootimages/banners/
 ||bigbord.net^$third-party
 ||biglion.ru^$third-party,~popup,popup
-||bigmir.net^third-party
-||binimage.de^$third-party
-||binmedia.ru^$third-party
+||binimage.de^
+||binmedia.ru^
 ||bizua.com^$third-party
-||bk.goodline.info^$third-party
-||blogun.ru^$third-party
+||bk.goodline.info^
+||blogun.ru^
 ||bloha.net^
-||blowclick.ru^$third-party
+||blowclick.ru^
 ||bn.ohah.ru^
 ||bn.orthodoxy.ru^
 ||bongo-shop.com^$third-party
@@ -664,149 +668,136 @@ _tizers.
 ||bossmoney.ru^$third-party
 ||br.gcl.ru^
 ||bt.kiev.ua^$domain=~bt.kiev.ua
-||bubblesmedia.ru^$third-party
-||buy-link.ru^$third-party
+||bubblesmedia.ru^
+||buy-link.ru^
 ||bvf.ru/upchk/
-||bw.pronto.ru^$third-party,domain=~job.ru
+||bw.pronto.ru^$domain=~job.ru
 ||bx.metka.ru^
 ||captainsofcrush.ru^$third-party
-||cash.loadsex.ru^
-||cash4ru.com^$third-party
-||cashimtrap.com^$third-party
+! sedoparking$domain=cash.loadsex.ru
+||cash4ru.com^
+||cashimtrap.com^
 ||casino-kaza.com^$third-party
 ||cdpartner.ru^$third-party
-||cenovik.net^$third-party
-||chbn.ru^$third-party
+||cenovik.net^
+||chbn.ru^
 ! $domain=chitika.com|chitika.net|chitika.org
 ||chitika.$third-party
 ||citilink.ru^$third-party
-||cityads.ru^$third-party
-||citymovers.us^$third-party
-||cjconvert.com^$third-party
-||cleen.ru^$third-party
-||click4wm.ru^$third-party
+||cityads.ru^
+||citymovers.us^
+||cjconvert.com^
+||cleen.ru^
+||click4wm.ru^
 ||clickad.com.ua^$domain=~clickad.com.ua
-||clickaider.com^$third-party
-||clickburner.com^$third-party
+||clickburner.com^
 ||clickbux.ru^$third-party
-||clickcoin.com^$third-party
-||clickedget.com^$third-party
-||clickhere.ru^$third-party
-||clix.ru^$third-party
-||club-reseller.com^$third-party
+||clickcoin.com^
+||clickedget.com^
+||clickhere.ru^
+||club-reseller.com^
 ||clx.ru^$third-party
 ||cmexota.ru^$third-party
 ||co.cc/img/affiliates/
-||comp-ex.ru^$third-party
-||company.1ps.ru^$third-party
+||comp-ex.ru^
+||company.1ps.ru^
 ||content.relax.ru^
 ||context.hotline.ua^
 ||corporative.ru^$third-party
-||cqc.ru^$third-party
-||creativefiles.ru^$third-party
+||cqc.ru^
+||creativefiles.ru^
 ||crutop.nu^$third-party
 ||cshi.ru^
 ||csht.ru^
 ||cszz.ru^
 ||cyberstyle.ru^$third-party
-||cykahax.net^$third-party
+||cykahax.net^
 ||d2v58id5qi36gs.cloudfront.net^
-||dating-exchange.com^$third-party
+||dating-exchange.com^
 ||ddestiny.ru^$third-party
 ||ddkdr.ru^$third-party
-||dematom.com^$third-party,domain=~mozilla-russia.org
+||dematom.com^$third-party,~image
 ||dewis.h1.ru^
 ||dewis.spb.ru^
-||diagar.com/files/$image
+||diagar.com/files/$third-party
 ||diamondelectric.ru/partner_block.php?
 ||dietmake.ru^$third-party
-||digisat.ru/*.gif
-||dikm.ru^$third-party
+||dikm.ru^
 ||dimpy.narod.ru^
-||dircash-promo.com^$third-party
-||dircash-promost.com^$third-party
-||dirkino-*.ru^$third-party
-||dl2.ru/catalog.php?
-||dndd.ru^$third-party
+! $domain=dircash-promo.com|dircash-promost.com
+||dircash-$third-party
+! $domain=dirkino-pic.ru|dirkino-promo.ru|dirkino-traff.ru
+||dirkino-$third-party
+! ||dl2.ru/catalog.php?
+||dndd.ru^
 ||doortrade.ru^$third-party
 ||dostavka.ru^$third-party
-||dosugvip.ru^$third-party
-||dozory.goodoo.ru^$third-party
-||dreamlog.ru^$third-party
-||dreamsounds.net/uploads/site/
+! sedoparking$domain=dosugvip.ru
+||dozory.goodoo.ru^
+! ||dreamlog.ru^$third-party
+! ||dreamsounds.net/uploads/site/
 ||druzua.ru^$third-party
 ||drweb.com/pix/$object
+||dryzya.ru^$third-party
 ||duuw.nm.ru^
 ||dverizamki.org/bshow/
-||dvsign.net^$third-party
-||dyatel.tv/dtv*.
-||dynamic.dol.ru^
-||e-links.ru/pr/?
+||dvsign.net^
+||e-links.ru^
 ||e-mint.ru^$third-party
-||e-photo.ua/img/ban/
-||e-place.ru/v/
-||e-promoters.ru/indicator.php?
-||eads.to^$third-party
+! ||e-photo.ua/img/ban/
+||e-place.ru^
+||eads.to^
 ||earnnetmoney.narod.ru^$third-party
-||edu.ru/d/window/b/
-||effad.ru^$third-party
-||ehoo.ru/knopka/
-||ej.ua/static/$third-party
-||engine.adct.ru^$third-party
-||entercash.ru^$third-party
-||eogli.com/1/
-||epartner.ru^$third-party
+! ||edu.ru/d/window/b/
+||effad.ru^
+! ||ej.ua/static/$third-party
+! ||engine.adct.ru^$third-party
+||entercash.ru^
+! ||eogli.com/1/
+||epartner.ru^
 ||eradio.net.ua/ban/
 ||eroboard.ru^$third-party
-||eronsk.ru/b/
-||eropays2.com^$third-party
-||ervro.net^$third-party
+! ||eronsk.ru/b/
+||eropays2.com^
+! ||ervro.net^$third-party
 ||esc-team.com^$third-party
-||eserver.ru/img/b/*.gif
+||eserver.ru/img/b/
 ||evilfighter.ru^$third-party
 ||euro-play.net/bnr/
 ||eurosmi.ru/ad/
-||ex6.ru/k/
+! ||ex6.ru/k/
 ||exaccess.ru^$third-party
-||exchange.meta.ua/*/block.js|$third-party
-||extreme-dm.com^$third-party
-||f2.ru/iframe.txt?
-||fafduzu.net^$third-party
-||fair.ru/*/i.php?
-||fairlink.ru^$third-party
+! ||f2.ru/iframe.txt?
+||fafduzu.net^
+||fairlink.ru^
 ||fanat.kz^$third-party
 ||fanat.ru/versus/
 ||fantasy.d2.ru/showban*.php?
 ||farle.ru/?bn=
 ||fastcardtech.com^$third-party
-||faza.ru/img.php?
 ||fbs.for-ua.org.ua^
-||fialet.com^$third-party
+||fialet.com^
 ||file-online.ru^$third-party
 ||filepost.ru^$third-party
 ||filmcool.ru^$third-party
-||filmplus.ru^$third-party
-||finbs.ru^$third-party
-||fip.net.ru/img/newsex/
-||firefoxstabs.com^$third-party
-||flapoint.ru^$third-party
-||flasher.ru/data/images/swf/
-||flysat.com/resim
+! ||filmplus.ru^$third-party
+||finbs.ru^
+! ||fip.net.ru/img/newsex/
+! ||firefoxstabs.com^$third-party
+||flapoint.ru^
+! ||flysat.com/resim
 ||fmates.ru^$third-party
 ||fooder.ru^$third-party
 ||forex4you.org/flash/partners/
-||forsage.biz/images/
-||fotkidepo.ru^$script,third-party
-||fotocash.ru^$third-party
+||forsage.biz^$third-party
+||fotkidepo.ru^$script
+||fotocash.ru^
 ||fotostrana.ru/banner?
 ||fotostrana.ru/promo/
-||free-lance.ru/*/contacts/
-||freehd.com.ua^
-||freeonlineusers.com^$third-party
-||freewm.ru/js/bonus_code.php?
+! ||free-lance.ru/*/contacts/
+||freehd.com.ua^$third-party
+||freewm.ru^
 ||freshmac.ru^$third-party
-||from-ua.com^$third-party,subdocument
-||ft-online.info/img_
 ||funnation.ru^$third-party
 ||fxbn.fxcd.ru^
 ||fxcast.com^$third-party
@@ -814,7 +805,7 @@ _tizers.
 ||galaxymeet.ru^$third-party
 ||gameleads.ru^$third-party,~popup,popup
 ||gamerpro.ru/images/adver/$image,object
-||gamingpartners.org^$third-party
+||gamingpartners.org^
 ! ||gbe.net.ru^
 ||geo.readlist.ru/traf.php
 ||getb.7ya.ru^
@@ -836,6 +827,7 @@ _tizers.
 ||gogo.ru/img/p/
 ||gold-click.info^$third-party
 ||gold-traf.ru^$third-party
+||goldentraffic.ru^
 ||goldtizer.com^$third-party
 ||goldtraf.su^$third-party
 ||goodadvert.$third-party
@@ -1060,7 +1052,7 @@ _tizers.
 ||mhealth.ru^$third-party
 ||micro-win.com^$third-party
 ||mignews.in.ua/banerok/index.php?cmd=ad&
-||miniban.ru^$third-party
+||miniban.ru^
 ||miralinks.ru^$third-party
 ||mirmaek.ru^$third-party
 ||mirvolos.com$third-party
@@ -1078,7 +1070,7 @@ _tizers.
 ||monetizator.net^$third-party
 ||money.loveplanet.ru/nb/
 ||money-job.ru^$third-party
-||moneysyst.biz^$third-party
+||moneysyst.biz^
 ||moogle.ru^$third-party
 ||moovy.ru/b*.php?
 ||moremont.ru/js
@@ -1130,6 +1122,7 @@ _tizers.
 ||novostimira.com^$third-party
 ||novostimira.com.ua^$domain=~novostimira.com.ua
 ||nsoft-s.com^$third-party
+||nu-stars.com^$third-party
 ||numberia.com^
 ||numbers.md^$third-party
 ||o-o.kz/banners/$third-party
@@ -1288,9 +1281,11 @@ _tizers.
 ||reggun.ru/images/b*_
 ||reklama-port.com^
 ||reklamaster.com^$third-party
+||reklamist.ru^
 ||reklamnoedelo.com^$third-party
 ||revsci.net^$third-party
 ||ria.ru/frame?v
+||rich-banner.ru^
 ||richclick.ru^$third-party
 ||richpopup.com^$third-party
 ||richtraffic.ru^$third-party
@@ -1378,6 +1373,7 @@ _tizers.
 ||spbfp.atlant.ru^
 ||spbland.ru/bban/
 ||spitter.pauk.ru^
+||sportoboz.ru^$third-party
 ||sppromo.com/feed.php?$third-party
 ||sputnik1.ru^$third-party
 ||spytrack.tic.ru^
@@ -1517,6 +1513,7 @@ _tizers.
 ||videoslovo.ru^$third-party
 ||videotraff.ru/img
 ||vidigital.ru^$third-party
+||vipaccess.su^
 ||viprelax.com.ua^$domain=~viprelax.com.ua
 ||viprip.net/banners/
 ||visitweb.com^$third-party
@@ -2592,7 +2589,8 @@ fishki.net##.leftbox > .innerbox > A:not([href*="fishki"])
 fishki.net##A[target="_blank"][href^="http:"]:not([href*="fishki.net/"]):not([href*=".live"]):not([href*="photopodborka"])
 ||fishki.net^$subdocument
 ||creep.ru^$domain=fishki.net
-||medialand.$domain=fishki.net
+||relax.ru^$domain=fishki.net
+||flasher.ru/data/images/swf/
 fontanka.ru##.ad
 football.kulichki.net##TABLE[bordercolor="#336633"][border="01"][bgcolor="#336633"]
 football.ua##.header_b
@@ -2965,8 +2963,6 @@ megatorrents.org##.Adv468
 meta.ua##.ads_240
 meta.ua###rbn
 meteoprog.ua##.roz_block
-! ##DIV[id^="meta_news_block"] встречается на многих укр.сайтах, но блокируется правилом ||exchange.meta.ua/*/block.js|$third-party , а здесь оставалось слово "Загрузка". Если подобного будет много, можно сделать общим.
-meteoprog.ua##DIV[id^="meta_news_block"]
 micro-win.com##.bannerhead
 micro-win.com##.seoquake-nofollow
 micro-win.com###promo
@@ -4027,6 +4023,7 @@ x-soft.tomsk.ru###shop
 @@/cgi-bin/banners/*$domain=gzt.ru|km.ru
 @@/images/banners/*$domain=aida64.com|bakabt.com|danuradio.com|faberlic.ru|kingston.com|martgallery.ru|molodifest.ru|slinux.ru|vorbis.com|xxxxbar.ru
 @@/upload/rk/*$domain=bbk.ru|kykyryza.ru|qwerty.ru|radiorecord.ru
+@@||adcast.ru/mtsweb?$domain=mts.ru
 @@||adfox.ru^*&prr=$domain=infox.ru|rian.ru
 @@||adriver.ru/*.xml|$object-subrequest,domain=tsn.ua|tvjam.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru|tsn.ua|tvjam.ru
