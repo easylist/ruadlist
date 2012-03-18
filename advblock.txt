@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: k1E0/8V45qHUtODghdazrA
-! Last modification time (GMT): 2012.03.18 02:02
+! Checksum: aFoklx41nTHsl0SqVvfPSQ
+! Last modification time (GMT): 2012.03.18 02:26
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -225,7 +225,7 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 .swf?path=
 .swf?target=_self&link
 .swf?target=_blank&
-! |http://ad.$~object-subrequest,domain=~de|~edu|~eu|~my
+/?get_code&template_uid=$script,third-party
 //adv.$~object-subrequest,domain=~adv.ya.ru
 //b.*/iframe/*
 //mads.
@@ -427,18 +427,6 @@ _tizer.
 /468-60_
 /468-80-
 /700x70_
-! - Плавающий баннер что-то-там.php -------------------------------------------
-! Отличается отвратительной манерой плавать поверх всего и избегать любых общих
-! правил. Появляется на многих сайтах и почти всегда под разными именами.
-! Основной ареал обитания — варезники и порносайты.
-! Иногда вызывающий скрипт просто содержит .php в конце, иногда передаёт ?id=.
-/?get_code&template_uid=$script,third-party
-||дсвлоад.рф^*/index.php$script
-||bape3.org^*.php|
-||dsvload.net^*/index.php$script
-||manyclips.net^*.php?id=
-||nemezisworld.com^*.php|
-||rapidzona.tv^*.php|
 !
 ! - Игры ----------------------------------------------------------------------
 ||avangardonline.ru/banrotate.
@@ -2339,6 +2327,7 @@ bagnet.org##.banner
 ||bagnet.org/doc/images/
 @@||bagnet.org/doc/images/*/
 bape3.org##A[target="_blank"][href^="http"] > IMG
+||bape3.org^*.php|
 bash.org.ru##.quote > .text:first-child
 bash.org.ru##.quote > DIV[style]
 bash.org.ru###menubar > DIV[style^="float:"]
@@ -2476,6 +2465,8 @@ driver-id.ru##[class$="_hbanner_960"]
 drugasmuga.com##.bannerWrap
 ||drumandbass.ru/img*banner
 ! Мусор на сайтах маркетгида.
+||dsvload.net/78tdia64wez
+||дсвлоад.рф/78tdia64wez
 ||dt00.net/gjs/
 ||foreign.dt00.net^
 ||dump.ru/i/
@@ -2958,6 +2949,7 @@ megafile.mksat.net##[id^="text-short_"] + DIV[style*="width:980px; height:100px;
 ||megafon.ru/f/banner/
 megatorrents.org##.Adv468
 ||img.megatorrents.kz^$object
+||manyclips.net^*.php?id=
 meta.ua##.ads_240
 meta.ua###rbn
 meteoprog.ua##.roz_block
@@ -3044,6 +3036,7 @@ natural-medicine.ru##[id^="teaser"]
 ne-kurim.ru##.pad > NOINDEX
 ne-kurim.ru###panel
 nemezisworld.com##.banner_top
+||nemezisworld.com^*.php|
 ||neomaks.org/engine/*/amcu_*.js
 ||ners.ru/assets/_img/br/b_*.swf?url=
 ||b.netall.ru^
@@ -3229,6 +3222,7 @@ radiorecord.ru##.rotator
 rapidzona.com###dle-content NOINDEX
 rapidzona.com###main > NOINDEX
 ||rapidzona.com/*_200x400_
+||rapidzona.tv^*.php|
 forum.rcdesign.ru###lh_bar-product
 ||rd2d.com/adv/
 readmanga.ru##.baner
