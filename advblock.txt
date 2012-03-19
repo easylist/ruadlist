@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 83OuqLqJSVRss1IEQp557Q
-! Last modification time (GMT): 2012.03.19 00:45
+! Checksum: lukAY2FJwckqVlqgfyDRLg
+! Last modification time (GMT): 2012.03.19 23:04
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -65,7 +65,10 @@
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
 ||2011-ru.com^$image,~image,popup
 ||play-boom.com^$image,~image,popup
+||vazhno2011.com^$image,~image,popup
 //kpup.*/?sid=$image,~image,popup
+! Источники скрипта вызывающего их попап
+||onoff.in^$third-party
 ! $domain=crazycola.ru|karosgame.ru|rzonline.ru|upslots.com|va-bank.com
 //promo.$image,~image,popup
 ||1001kupon.ru^$image,~image,popup
@@ -336,6 +339,7 @@ _baner_
 /sextizer.
 .sextizer.
 ?teaser_
+/teaser/*
 /teaser.
 .teaser.
 /teasers/*$domain=~legionhardware.com
@@ -823,6 +827,7 @@ _tizers.
 ||gamingpartners.org^
 ! ||gbe.net.ru^
 ||geo.readlist.ru/traf.php
+||get-click.net^
 ||getb.7ya.ru^
 ||giper.info^$third-party
 ||gipertyerusu.com^
