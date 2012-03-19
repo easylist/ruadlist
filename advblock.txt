@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: lukAY2FJwckqVlqgfyDRLg
-! Last modification time (GMT): 2012.03.19 23:04
+! Checksum: IzURFjuWPmyrV1FKAZTW9w
+! Last modification time (GMT): 2012.03.19 23:42
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -702,7 +702,6 @@ _tizers.
 ! $domain=chitika.com|chitika.net|chitika.org
 ||chitika.$third-party
 ||citilink.ru^$third-party
-||cityads.ru^
 ||citymovers.us^
 ||cjconvert.com^
 ||cleen.ru^
@@ -822,7 +821,6 @@ _tizers.
 ||fxcast.com^$third-party
 ||fxtrade.org.ru^
 ||galaxymeet.ru^$third-party
-||gameleads.ru^$third-party,~popup,popup
 ||gamerpro.ru/images/adver/$image,object
 ||gamingpartners.org^
 ! ||gbe.net.ru^
@@ -1763,6 +1761,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||microads.ru^
 ||xiss.ru^
 .ru/cn/120x600.html?r=
+!
+! CityAds.ru
+/redirect2.php?d=$image,~image,popup
+||cityads.ru^~popup,popup
+||gameleads.ru^$~popup,popup
+||ileads.ru^$~popup,popup
 !
 ! ClickHide.net
 ||clickhide.net^$third-party
