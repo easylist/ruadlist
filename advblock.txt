@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 6W++DQp96lXyRk5ZiTsCQA
-! Last modification time (GMT): 2012.03.20 00:19
+! Checksum: WpELdyT8BwM3dJExx1JPGg
+! Last modification time (GMT): 2012.03.20 01:39
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -453,6 +453,7 @@ _tizers.
 /priceru_advert_
 /pseudocounter.js
 /sun_*_ajax.js|
+/traff.js
 /ucodes.ru.banners.js
 ! - Блокировка по размеру указанному в адресе ---------------------------------
 !#size.bookmark
@@ -1142,7 +1143,6 @@ _tizers.
 ||numberia.com^
 ||numbers.md^$third-party
 ||o-o.kz/banners/$third-party
-||obigre.ru^$third-party
 ||obmenniki.com/img/ban
 ||oboi.kards.ru/?
 ||ofdaft.com^$third-party
@@ -1634,7 +1634,6 @@ _tizers.
 ||zizu.lv^$third-party
 ||zna4ki.ru/nodel/zna4ki
 ||znews.su^$third-party
-||zoda.ru^$third-party
 ||zorkabiz.ru^$third-party
 ||zozocash.biz^$third-party
 ||zto.h16.ru^$third-party
@@ -1949,6 +1948,15 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /ekbn/src/*
 ||nadavi.$third-party
 ||podberi.tv^$third-party
+!
+! TIOnline.ru - реклама игры Total Influence на разных сайтах игровой тематики
+! emuplanet.ru,obigre.ru,yaport.ru,zoda.ru и все связанные с ними домены
+/tionline120x60.
+/tionline150x60.
+/tionline240x100.
+/tionline240x400.
+/topminigames.jpg|
+/swf/tionline/*
 !
 ! TizerMedia.net
 /tizermedia.
@@ -2567,6 +2575,7 @@ ekabu.ru##.triline_block
 ||ekabu.ru/cache/$object
 ||electrodance.org/slider/
 emuparadise.org###framework > TBODY > TR:first-child
+||emuplanet.ru/images/bb/
 epidemz.net##A[target="_blank"][rel="nofollow"] > FONT[color]
 epidemz.net##[id^="cpa_rotator_block_"]
 epidemz.net##TD[style] > A[target="_blank"] > B
@@ -2708,6 +2717,7 @@ gamer.ru##.br[style="width: 240px; height: 400px;"]
 gamer.ru##BR + TABLE[width="630"]
 games-archive.net##.cleared
 games-archive.net##.PostContent > NOINDEX > CENTER
+gameshare.com.ua##A[href*="li.ru/go?"]
 ||games-archive.net^$object
 games-tv.ru##.brandingh
 gazeta.ru##.vypolzen_out
@@ -3579,6 +3589,7 @@ ua-football.com##.roz_informers
 ||ua-football.com/interface/ads/
 ||ua-football.com/interface/emarket/
 ||ua-football.com/interface/obolon/
+uaplay.com##A[href*="li.ru/go?"]
 ||bs.uaplayer.com/get?
 ucrazy.ru,crazys.info##.banner
 ucrazy.ru,crazys.info###online_games
@@ -3744,7 +3755,6 @@ zh24.com###warning
 zhmak.info##TD[width="180"]:first-child + TD[width="5"] + TD > :not([class="news"])
 ||zloy.im^$domain=zloy.bz
 znaikak.ru##.blockLinks
-||zoda.ru/images/swf/
 ||api.zoomby.ru^$object-subrequest,~third-party
 !
 ! FastPic.ru
