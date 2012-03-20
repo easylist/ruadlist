@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: qTLEx/No+PzOh+RTxszt3Q
-! Last modification time (GMT): 2012.03.20 11:19
+! Checksum: LRwAMDCwyLsPNwoUF13YtA
+! Last modification time (GMT): 2012.03.20 12:08
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -2835,6 +2835,7 @@ inflora.ru##[class*="banner"]
 ||inflora.ru/*banner
 ||inflora.ru^$object
 ||inform.kz/download/
+infox.ru##.idv3-advert2
 infox.ru##.idv3-popup-frame
 infox.ru###dmLarge
 inmoment.ru##CENTER > A[target="_blank"]
@@ -3322,8 +3323,10 @@ referatu.net.ua##.banner468_60
 ||img.rg.ru/i/bnr/
 rghost.net###square_a
 ||rghost.ru/a/
+ria.ru###banners
 rian.ru###partners_block
-||rian.ru/cgi-bin/banner/$object
+||rian.ru/cgi-bin/iframe/*x90?
+||rian.ru/cgi-bin/iframe/*x90_
 ridus.ru##.b-banner__extra
 rin.ru##A > IMG[width="120"][height$="0"][src^="/images/"]
 ||rin.ru/bodyadv.
@@ -4095,15 +4098,16 @@ x-soft.tomsk.ru###shop
 ! Правила для отдельных сайтов
 @@.ru/banners/$domain=citydom.ru|onlime.ru|toptracker.ru|webnames.ru
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
+@@/adfox/*$image,object,domain=alfabank.ru
 @@/cgi-bin/banner/*$domain=adv.vz.ru|mb.interfax.ru|mb.rian.ru
 @@/cgi-bin/banners/*$domain=gzt.ru|km.ru
+@@/getCodeTest?$domain=alfabank.ru
 @@/images/banners/*$domain=aida64.com|bakabt.com|danuradio.com|faberlic.ru|kingston.com|martgallery.ru|molodifest.ru|slinux.ru|vorbis.com|xxxxbar.ru
+@@/prepareCode?$domain=alfabank.ru
 @@/upload/rk/*$domain=bbk.ru|kykyryza.ru|qwerty.ru|radiorecord.ru
 @@||adcast.ru/mtsweb?$domain=mts.ru
-@@||adfox.ru^*&prr=$domain=infox.ru|rian.ru
 @@||adriver.ru/*.xml|$object-subrequest,domain=tsn.ua|tvjam.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru|tsn.ua|tvjam.ru
-@@||ads.alfabank.ru^$domain=alfabank.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||ads.su^$~third-party
 @@||adsvk.com^$elemhide,image,~third-party
@@ -4115,6 +4119,7 @@ x-soft.tomsk.ru###shop
 @@||advertising.yandex.$~third-party
 @@||auth.tbn.ru^$domain=ifolder.ru
 @@||afisha.ru/proxy/$domain=afisha.ru
+@@||alfabank.ru/*/baner_$~third-party
 @@||alluregame.ru/Content/*/Advert$~third-party
 @@||bash.org.ru/faq|$elemhide
 @@||bash.org.ru/webmaster|$elemhide
