@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: DXpduwouRoF7tWtLhae17Q
-! Last modification time (GMT): 2012.03.21 21:13
+! Checksum: pRU7v4hWrGVOkgr12zEd+A
+! Last modification time (GMT): 2012.03.22 01:14
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -30,8 +30,10 @@
 /popads/*$image,~image,popup
 /popads.$image,~image,popup
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
-! $ domain=myredirecter.info|redirnet.info
+! $domain=myredirecter.info|redirnet.info
 .info/sol/$image,~image,popup
+! $domain=autoredirect.net
+.net/sol/$image,~image,popup
 ! $domain=adonweb.ru|webunder.ru
 /adv_clk_redirect.php?$image,~image,popup
 ! $domain=playground.ru
@@ -484,7 +486,6 @@ _tizers.
 //80.93.56.187^
 //81.177.7.6^
 //83.218.204.107/numbers.md/banners/*
-! //83.222.31.194/in.cgi?
 ! vipaccess.su
 //85.10.194.51^$third-party
 //89.108.72.16^
@@ -497,7 +498,9 @@ _tizers.
 //194.135.105.*/js/*
 //195.82.146.52^
 //195.161.119.239^
-! Media-Click.RU
+! Вставляет рекламу с megareliz.com
+//195.191.235.58/block?
+! Media-Click.ru
 //212.150.34.*.php?
 ! ProTizer.ru
 //212.150.34.116/*
@@ -1057,13 +1060,15 @@ _tizers.
 ||mediakadr.ru^$third-party
 ||mediaportal.ru^$third-party
 ||mediarotator.ru^$third-party
-||mediaunder.us^$third-party
+! $domain=mediaunder.org|mediaunder.us
+||mediaunder.$third-party
 ||mega-cash.net^$third-party
 ||megaban.com.ua^
 ||megacliks.com^$third-party
 ||megafingroup.com^$third-party
 ||megaline.kz/images/$object
 ||meganews.kiev.ua^$domain=~meganews.kiev.ua
+||megareliz.com^$third-party
 ||megastock.ru^$third-party
 ||megaweb.su/softblok/
 ||megawmr.ru^$third-party
@@ -1168,7 +1173,6 @@ _tizers.
 ||openlinks.ru^$third-party
 ||opensharing.org^$third-party
 ||opensharing.ru^$third-party
-! ||orentraff.cn/in.cgi?
 ||oru.ru^$third-party
 ||owebmoney.ru^$third-party
 ||oxysoft.ru^$third-party
@@ -1556,6 +1560,7 @@ _tizers.
 ||vsemp.ru^$third-party
 ||vsesumki.com^$third-party
 ||vsetv.com/pic/paid/
+||vtochku.net^
 ||vyatka-host.ru^$third-party
 ||wapstart.ru^$third-party
 ||warezplatinum.com^$third-party
@@ -1829,19 +1834,19 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||tvoi-dosug.com^$~popup,popup
 !
 ! Ero.ru и прочие связанные с ними сайты
-||ero.ru^$domain=~vpets.ru
-||ero-ru.net^
-||vboys.ru^
+||ero.ru^$third-party,domain=~vpets.ru
+||ero-ru.net^$third-party
+||vboys.ru^$third-party
 !
 ! LadyClicks.ru — реклама нацеленная на женскую аудиторию
 /showf.php?u=$subdocument
-||lady-clicks.ru^$third-party
-||ladyclicks.ru^$third-party
-||ladyclicks2.ru^$third-party
-||ladyclicks5.ru^$third-party
-||ladyclicks7.ru^$third-party
-||ladyclicks8.ru^$third-party
-||ladyclicks9.ru^$third-party
+||lady-clicks.ru^
+||ladyclicks.ru^
+||ladyclicks2.ru^
+||ladyclicks5.ru^
+||ladyclicks7.ru^
+||ladyclicks8.ru^
+||ladyclicks9.ru^
 !
 ! MediaLand.ru — партнёрская сеть компании «Медиа Мир».
 ! ###medialand_adland_inline_div_750
@@ -1851,11 +1856,20 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||popunder-mladnet.medialand.ru
 !
 ! MediaRich.ru
-! $domain=mediarich.ru
+/gask.cgi?ids=$third-party
+! $domain=mediarich.cc|mediarich.ru
 ||mediarich.$third-party
-||codes-media.ru^$third-party
-||mediacod.in^$third-party
-||richmedia-adspot.info^$third-party
+||advertising-richmedia.info^
+||codemediarich.ru^
+||code-mediarich.ru^
+||codes-media.ru^
+||media-code.info^
+||mediacod.in^
+||mediarich-code.ru^
+||mediarichcode.ru^
+||richmedia-adspot.info^
+! Прочее
+||glavrich.com^
 !
 ! NewsAnons.ru — вроде как новости, но на сторонних сайтах — реклама
 ! Замечено на fastpic.ru и kino-dom.tv, вставляет скрипт с доменов user*click.ru
@@ -1866,13 +1880,13 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||usermediaclick.ru^
 !
 ! Nolix.ru
-/jads.php?$third-party
+/jads.php?
 ||contextbar.ru^
-||nolix.ru^$third-party
+||nolix.ru^
 !
 ! PopUnder.ru
 ! У всех доменов есть субдомен zork, предлагающий ввести логин и пароль вида zork.domainname.com
-! На сайтах обычно встречается в форме http://domain.name/random_alphanumerical_string
+! На сайтах обычно встречается в форме third-party.name/alphanumerical или subdomain.first-party.name/alphanumerical
 ! http://www.domaincrawler.com/78.140.138.133
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
 /yaim.php?ad=
@@ -1914,22 +1928,17 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||nummobile.com^$~popup,popup
 ||robimobi.com^$~popup,popup
 ||youhave.mobi^$~popup,popup
-! Другие субдомены, но та же форма логина
-! 1
-||miniporn.ru^$third-party,~popup,popup
+! Субдомены на сайтах
+||1.miniporn.ru^
 ! as или вообще без субдомена, а на остальном выдаёт birg-traf.ru
-||tjoop.ru^$~popup,popup
-||birg-traf.ru^$third-party,~popup,popup
-! cls
-||roshu.ru^$~popup,popup
-! ref
-||myrefs.org.ua^$third-party,~popup,popup
-! rek
-||x-zona.org^$third-party,~popup,popup
-! rx9aef
-||driver-id.ru^$third-party,~popup,popup
-! top
-||softweb.ru^$third-party,~popup,popup
+||tjoop.ru^
+||birg-traf.ru^$third-party
+||cls.roshu.ru^$
+||ddd.rustorrents.net^
+||ref.myrefs.org.ua^
+||rek.x-zona.org^
+||rx9aef.driver-id.ru^
+||top.softweb.ru^
 !
 ! RealTraf.ru
 /js/banner.php?id=$third-party,subdocument
@@ -2226,13 +2235,17 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||ekod.info^$~popup,popup
 ||http2.info^$~popup,popup
 ||koi8r.info^$~popup,popup
-||mir17.ru^$~popup,popup
 ||mu-m.info^$~popup,popup
 ||nauch2.info^$~popup,popup
 ||t-uks.info^$~popup,popup
 ||traf3.info^$~popup,popup
 ||vdll.info^$~popup,popup
 ||weru8.info^$~popup,popup
+! Домены в зоне ru
+! domain.ru/js/number.js
+||cm11.ru^$~popup,popup
+||mir17.ru^$~popup,popup
+||tt51.ru^$~popup,popup
 !
 ! Ucoz.net
 ||ucoz.*/img/ma/cv.gif
@@ -3888,17 +3901,15 @@ meta.ua##.ads
 ! NGS.RU
 dom.ngs.ru###logo_banners
 he.ngs.ru,she.ngs.ru,relax.ngs.ru###logos
-mail.ngs.ru##A[class][style][target="_blank"][href^="/"] > IMG[src^="/"]
 ngs.ru###ads-fix
 ngs.ru###kemlc
 ngs.ru##.adv
 ngs.ru##.banner
 ngs.ru##.banner-center
 ngs.ru##.big-right
-ngs.ru##A[target="_blank"][href^="/"] > IMG[src^="http://static.ngs.ru/"]
-ngs.ru##DIV[class] > A[href^="/"] > IMG[src^="http://static.ngs.ru/"]
-rabota55.ru##DIV[class] > A[class][style][target="_blank"][href^="/"]
-rabota55.ru##TD[class^="td-"] > A[class][style][target="_blank"][href^="/"]
+ngs.ru##DIV[id^="big-"][class^="big-"]
+ngs.ru,ngs55.ru,rabota55.ru##A[target="_blank"][href^="/"] > IMG[src^="http://static."]
+ngs.ru,ngs55.ru,rabota55.ru##A[class][style*="height:"][target="_blank"][href^="/"]
 realty.ngs.ru###clients
 relax.ngs.ru###exclusive
 turizm.ngs.ru###logo-menu
