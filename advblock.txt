@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: efSaWw4+Lfzti4jdn6QYwg
-! Last modification time (GMT): 2012.03.22 11:44
+! Checksum: 0nsPEWXK0x8lyk0PkBYgrA
+! Last modification time (GMT): 2012.03.22 23:48
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -74,6 +74,7 @@
 ! $domain=crazycola.ru|karosgame.ru|rzonline.ru|upslots.com|va-bank.com
 //promo.$image,~image,popup
 ||1001kupon.ru^$image,~image,popup
+||24smile.net/smi.html|$image,~image,popup
 ||9donline.ru/welcome/?mita=$image,~image,popup
 ||audance.ru*/promo/$image,~image,popup
 ||blinkogold.ru^$image,~image,popup
@@ -97,7 +98,8 @@
 ||pic5you.ru^$image,~image,popup
 ||pointblank.ru/?pid=$image,~image,popup
 ||pop.sn00.net^$image,~image,popup
-||shopgid.2wwf.info^$image,~image,popup
+! Субдомены shopgid, quelle
+||2wwf.info^$image,~image,popup
 ||snailz.ru/promo/?$image,~image,popup
 ||travian.com.ua/landingpage/$image,~image,popup
 ||yapfiles.ru^*/rating_by_pop/$image,~image,popup
@@ -260,6 +262,7 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 /prepareCode?$match-case
 /redtram.
 /richarbuz.
+.ru/ads/
 /rnb.php?id=
 /servead.
 /servead/*
@@ -1170,6 +1173,7 @@ _tizers.
 ||oru.ru^$third-party
 ||owebmoney.ru^$third-party
 ||oxysoft.ru^$third-party
+||oyy.ru^
 ||ozenuydu.com/resim
 ||ozon.ru^$script,third-party
 ||p-rank.info^$third-party
@@ -1489,6 +1493,7 @@ _tizers.
 ||trusearch.net/affblock/
 ||trustlink.ru^$third-party
 ||tsr.cdns.com.ua^
+||tubestar.ru^
 ||turboroller.ru^$third-party
 ||turist.ru/turist.goods_pics/$third-party
 ||twevent.org.ua/bn/
@@ -1588,6 +1593,7 @@ _tizers.
 ||westbyte.com/scripts/bs/bc.php?bi=
 ||westtokyo.ru/download/west
 ||wewonurgold.ws^$third-party
+||whatyousay.ru^
 ||widgeo.net/compteur.php?
 ||wieistmeineip.de/ip-address/
 ||wizzzards.com^$third-party
@@ -1644,6 +1650,12 @@ _tizers.
 ||zozocash.biz^$third-party
 ||zto.h16.ru^$third-party
 ||zuni.tyndex.ru^$third-party
+!
+! 1sBiz.ru
+! alphanumerical.dyndns.tv/softo drom.php?id= и подобные адреса на бесплатных DNS.
+/softo%20drom.php?id=$third-party
+||1sbiz.ru^
+||menuse.ru^
 !
 ! 1Under.ru (все сидят на IP 89.208.145.156)
 .com/j15.php$script,third-party
@@ -2215,31 +2227,37 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||zipcash.ru^$third-party
 !
 ! Traforet.ru
-/traforet.$~popup,popup
-.traforet.$~popup,popup
-! * == a, b, c, ga, js, node, prototype, qa, ui, ...
+! * = a, b, c, ga, js, node, prototype, qa, ui, ...
 .info/click/*.php?id=$image,~image,popup
+.ru/click/*.php?id=$image,~image,popup
 ! * == a, b, c, dojo, jquery, mootools, ...
 .info/js/*.php?id=$third-party,script
-||3file.info^$~popup,popup
-||4imho.info^$~popup,popup
-||7muc.info^$~popup,popup
-||amus11.info^$~popup,popup
-||docmy.info^$~popup,popup
-||ekod.info^$~popup,popup
-||http2.info^$~popup,popup
+/traforet.$~popup,popup
+.traforet.$~popup,popup
+! Формат вызова: domain.name/js/number.js
+||3file.info^
+||4imho.info^
+||7muc.info^
+||amus11.info^
+||docmy.info^
+||ekod.info^
+||http2.info^
 ||koi8r.info^$~popup,popup
-||mu-m.info^$~popup,popup
-||nauch2.info^$~popup,popup
-||t-uks.info^$~popup,popup
-||traf3.info^$~popup,popup
-||vdll.info^$~popup,popup
-||weru8.info^$~popup,popup
+||lidenss.info^
+||macc5.info^
+||mu-m.info^
+||nauch2.info^
+||t-uks.info^
+||traf3.info^
+||uli10.info^
+||vdll.info^
+||weru8.info^
 ! Домены в зоне ru
-! domain.ru/js/number.js
-||cm11.ru^$~popup,popup
+||4chi.ru^
+||cm11.ru^
 ||mir17.ru^$~popup,popup
-||tt51.ru^$~popup,popup
+||tt51.ru^
+||umi1.ru^
 !
 ! Ucoz.net
 ||ucoz.*/img/ma/cv.gif
@@ -2376,7 +2394,6 @@ animenfo.com###topright
 anwiza.com###pop
 anwiza.com###popdim
 ||ap.by/up/banner/
-||apn.ru/ads/banners/
 ||apn-spb.ru/images/_banners
 apple-russia.ru###topbanner
 apple-russia.ru##.adv-main-right
@@ -2924,9 +2941,10 @@ kinobanda.net##.main-bg A[target="_blank"] > IMG
 ||kinobanda.net/adv/
 kinobaza.net##A.red
 kinobaza.net##A[href="/out.php"]
-||kinomir.kz^$object
+||kinofilms.tv/adv/
 ||kinobaza.net/babes/
 ||kinomatrix.com/banners/
+||kinomir.kz^$object
 kinopoisk.ru###loadb
 kinopoisk.ru##.brand
 kinopoisk.ru###branding_flash
@@ -3281,7 +3299,6 @@ premiership.ru###banner
 ||prikols.com.ru/eroru/
 probki.net##CENTER > A > IMG[width="160"]
 probki.net##TD[valign="top"] > A > IMG[width="160"]
-||protaksi.ru/ads/
 maps.probki.net##[width="180"] > TBODY > TR:last-child
 ||probki.net/banners/
 ||probki.net/images$object
@@ -3976,7 +3993,7 @@ utro.ru##.banner-right
 utro.ru##.conteiner-partner
 ||utro.ru/*/banners/
 !
-! VK.com (ВКонтакте)
+! VK.com (ВКонтакте, VKontakte)
 ! Реклама самого вконтактика и всех, кто на нём так или иначе пасётся
 ! vk.com###ad_box_ad_0
 ! vk.com###ad_box_ad_1
