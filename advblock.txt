@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 4T6h4J0J9HVvpaQHUX/y5Q
-! Last modification time (GMT): 2012.03.22 10:53
+! Checksum: wmVlkFYoVub2AadoExHAfg
+! Last modification time (GMT): 2012.03.22 10:58
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -293,7 +293,7 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 .biz/banner/$third-party
 .ru/ban/
 .ru/banner/
-.ru/banners/
+.ru/banners/$domain=~toptracker.ru
 .ru/uploads/banners/$domain=~allwomens.ru|~digital.ru
 .ua/banner/
 .ua/banners/
@@ -3566,6 +3566,7 @@ topnews.ru##.bn_ir
 topnews.ru##.headbanner
 topnews.ru##.newsOfPartners
 ||topnews.ru/iframe/
+||toptracker.ru/banners/*/
 ||my-topshop.kiev.ua^$domain=topshoptv.com.ua
 torg.ua##.ad_1000x90
 torg.ua##.ad_240x400
@@ -4106,7 +4107,7 @@ x-soft.tomsk.ru###shop
 ! Видео с yatv.ru, видео на kinopoisk.ru
 @@||adv.gpm-digital.com/crossdomain.xml$object-subrequest
 ! Правила для отдельных сайтов
-@@.ru/banners/$domain=citydom.ru|onlime.ru|toptracker.ru|webnames.ru
+@@.ru/banners/$domain=citydom.ru|onlime.ru|webnames.ru
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@/adfox/*$image,object,domain=alfabank.ru
 @@/cgi-bin/banner/*$domain=adv.vz.ru|mb.interfax.ru|mb.rian.ru
