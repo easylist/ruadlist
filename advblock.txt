@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: Qb6C51xXyYxJqF36dEn4+w
-! Last modification time (GMT): 2012.03.24 17:19
+! Checksum: etPTgaKs8TmpTOy5vOYwaw
+! Last modification time (GMT): 2012.03.24 22:55
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -199,6 +199,8 @@
 ##DIV[id^="rtn4p"]
 ##DIV[id^="Teaser_Block"]
 ##DIV[id^="togetInformer_"]
+! Предотвращает появление «спиннера» при блокировке скрипта. Попытка блокировать спиннер вызывает ложные срабатывания.
+##DIV[id^="sblock_inform_"]
 ##[class^="snBody"]
 ! Предлагают скачать торрент-клиент и торрент одним исполнимым файлом на некоторых трекерах.
 ##.mediaget
@@ -338,6 +340,7 @@ _banner.gif
 /richbanner.
 .richbanner.
 /shared/promos/*
+/showbanner.
 /upload/banners/*
 /upload/bx/*$domain=~transbank.ru
 /upload/rk/*$domain=~tsu.ru
@@ -379,9 +382,11 @@ _tizers.
 .viptizer.
 ! - Информеры (желтая пресса, реклама товаров и просто всякий мусор) ----------
 !#informer.bookmark
-.tv/_cron/js/informer$script
-/informer.js?
+! .tv/_cron/js/informer$script
+/adsnews.
+/informer.js
 /informer/script.php?id=
+/sblocks_informer.
 ||24smi.org/informer.php?
 ||66.ru/mod/news2/
 ||aif.ru/iframes/
@@ -395,6 +400,7 @@ _tizers.
 ||clipta.com/informer/
 ||cosmo.ru/cosmo_informers/
 ||doramy.net/informer/
+||exchangenews.ru^$match-case,third-party
 ||informer.grafru.ru^$third-party
 ||fair.ru/*/i.php?
 ||faninternet.com.ua/informer.php?
@@ -405,6 +411,7 @@ _tizers.
 ||meta.ua/*/block.js|$third-party
 ||meta.ua/informers/?
 ||missrich.net/informer.php?
+||nntx.ru^$third-party
 ||nyx.su/informers/
 ||openmedia.com.ua/informer.php?
 ||otvali.ru/informer/
@@ -412,10 +419,8 @@ _tizers.
 ||protoplex.ru/images/rating/
 ||rosinvest.com/informs/
 ||rssportal.ru/getinformer.php?
-! ||searchgid.ru/informer.
 ||seowebtools.ru/inform/infb.php?
 ||smigid.ru/informer/
-||vsyako-razno.ru/engine/sblocks_informer.php?
 ! - Биржи трафика -------------------------------------------------------------
 !#traff.bookmark
 ! Найдены по "/js/bodyclick.php?id=" и "/click/body.php?id="
@@ -504,6 +509,8 @@ _tizers.
 //92.241.185.16/banner/*
 //94.23.6.17:443/RP/*
 //95.168.161.173/www/*
+! promofor.me
+//188.40.18.172^
 //188.72.225.106^
 //194.135.105.*/js/*
 //195.82.146.52^
@@ -542,6 +549,7 @@ _tizers.
 ||2baksa.net^$third-party
 ||2da2.ru^$third-party
 ||2x2.kz^
+||3d-ero.com^$third-party
 ||3rs.ru^$third-party
 ||4-moto.ru/ad/
 ||468.vologdainfo.ru^
@@ -603,8 +611,6 @@ _tizers.
 ! ||adsn24.ru^
 ||adsocial.ru^
 ||adstark.ru^
-! $domain=adsyst.biz|adsyst.com|adsyst.ru
-||adsyst.$third-party
 ||adtaily.pl^
 ||adteaser.ru^
 ||adtidy.net^
@@ -719,6 +725,7 @@ _tizers.
 ||chbn.ru^
 ! $domain=chitika.com|chitika.net|chitika.org
 ||chitika.$third-party
+||cinemateka3d.ru^$third-party
 ||citilink.ru^$third-party
 ||citymovers.us^
 ||cjconvert.com^
@@ -864,6 +871,7 @@ _tizers.
 ||gold-click.info^
 ||gold-traf.ru^
 ||goldentraffic.ru^
+||goldfishkapartners.com^
 ||goldtizer.com^
 ||goldtraf.su^$third-party
 ||goodadvert.$third-party
@@ -1264,6 +1272,7 @@ _tizers.
 ||promo-reklama.ru^$third-party
 ||promoblock.$third-party
 ||promoblocks.ru^$third-party
+||promofor.me^
 ||promoheads.com^$third-party
 ||promoisland.net^$third-party
 ||promoloader.com^
@@ -1649,6 +1658,7 @@ _tizers.
 ||zamok911.com^$third-party
 ||zarabotki.ru^$third-party
 ||zclick.ru^$third-party
+||zez.su/ban/
 ||zhurnaly.org.ua^$domain=~zhurnaly.org.ua
 ||zipmonster.ru^$third-party
 ||zizu.lv^$third-party
@@ -1719,6 +1729,13 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||cdsuper.ru^$third-party
 ||getcd.ru^$third-party
 ||superfastcomputer.ru^$third-party
+!
+! AdSyst.ru
+/api/topl/*/*.js$third-party
+! $domain=adsyst.biz|adsyst.com|adsyst.ru
+||adsyst.$third-party
+||levrico.com^
+||lstay.com^
 !
 ! AdvMaker.ru
 ! IP: 95.169.186.164
@@ -2743,7 +2760,9 @@ freesoft.ru##TABLE[bgcolor="#ff6300"]
 freesoft.ru##TABLE[cellspacing="3"][align="center"]:first-child
 freesoft.ru##TABLE[width="472"][align="center"]
 ||freesoft.ru/images/
+fs.ua##.b-ad-resizable
 fs.ua##[id^="bn_"] A[href^="http://clk."]
+||fs.ua/*/block-banner-240x400-
 @@||recreativ.ru/rcode.$domain=fs.ua
 fullgames.ru###left > DIV:not(#ms)
 fullgames.ru###main + #right
@@ -3496,8 +3515,11 @@ soft-arena.ru##NOINDEX
 soft-best.ws##.mex_adv_inside_container
 soft-best.ws##.slink NOINDEX
 soft-best.ws###dle-content > NOINDEX
-||soft2soft.ru^$script
-@@||soft2soft.ru/engine/$script
+soft-i-kino.ru###pxsnazzy
+soft-i-kino.ru##.advertise
+soft-i-kino.ru##IMG[width="180"][height="400"]
+||soft-i-kino.ru/tiz.
+||soft2soft.ru/ajax.js
 soft4gadget.com##.centerside > .base2:last-child
 soft4gadget.com##.centersideinn > .base2:last-child
 soft4gadget.com###dle-content > .base2:first-child
@@ -3944,6 +3966,7 @@ forums.overclockers.ru##BR[clear="all"] + TABLE[align="center"][style*="1px"]
 forums.overclockers.ru##BR[clear="all"] + TABLE[align="center"][style*="2px"]
 overclockers.ru###contentplace > [class^="deco-block"]
 overclockers.ru###contentplace > [class^="decoblock"]
+overclockers.ru###contentplace > [class^="decob"]
 ! Таблица с рекламой над и под шапкой
 overclockers.ru##.rastyazka
 overclockers.ru###topbanners
