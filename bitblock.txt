@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: qvHub2WftdusG6gTscbmew
-! Last modification time (GMT): 2012.03.23 00:07
+! Checksum: RJUcJsbAOnJWaiydQOERNw
+! Last modification time (GMT): 2012.03.25 22:08
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -286,7 +286,8 @@ navitel.su##.extra_append:last-child
 ||lifenews.ru^$third-party
 ||marker.ru^$third-party
 ||mentalks.ru^$third-party
-||meteoprog.ua/informers/
+! /informers/*
+||meteoprog.ua^$third-party
 ||newportal.com.ua/informer/$domain=~newportal.com.ua
 ||pojelanie.ru/inf/$third-party
 ||rbc.ru/img/*.gif?$third-party
@@ -322,6 +323,7 @@ _lj_times_
 ||google-analytics.com^$third-party,domain=~asus.com|~avast.com|~imageshack.us|~station.ru|~thisissand.com|~whorush.com
 ! Виджет часов
 /mikuclock.swf
+||chasikov.net.ru^$third-party
 ||clock-desktop.com^$third-party
 ! Виджеты облака тэгов на флэше
 /tagcloud.swf

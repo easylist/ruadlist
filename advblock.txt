@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: LLJ5w2nfrIlUPHF6mWVWmQ
-! Last modification time (GMT): 2012.03.25 00:04
+! Checksum: 0IkjwXlmccWx0XmIViugWw
+! Last modification time (GMT): 2012.03.25 22:08
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -359,6 +359,7 @@ _baner_
 /teaser.
 .teaser.
 /teasers/*$domain=~legionhardware.com
+! /tiz/* ?
 _tizer.
 -tizer.
 /tizer-
@@ -380,6 +381,23 @@ _tizers.
 /utftizer.
 /viptizer.
 .viptizer.
+! Найдены по «/show/?block_id=». Судя по разношерстности сайтов это какой-то рекламный движок.
+! Скрипт: "var block = document.getElementById("teaser_NUMBER"); var text = '#NUMBER'; if(block){block.innerHTML = text;}"
+/show/?block_id=*&r=$script
+||advertlink.ru^
+||blackads.ru^
+||globalteaser.ru^
+||grandmediatizer.com^
+||grandtizer.com^
+||islamclick.ru^
+||medpiar.ru^
+||ruad.net^
+! $domain=rustiz.com|rustiz.ru
+||rustiz.$third-party
+||teasernews.ru^
+||teasertraffic.com^
+||tizernaya-reklama.ru^
+||tourteaser.ru^
 ! - Информеры (желтая пресса, реклама товаров и просто всякий мусор) ----------
 !#informer.bookmark
 ! .tv/_cron/js/informer$script
@@ -532,6 +550,7 @@ _tizers.
 ||100projects.ru^
 ||123service.ru^$~script,third-party
 ! ||17teen.ru^$third-party
+||1dollarinvestment.com^
 ! ||1ha.ad.md^$third-party
 ||1invite.ru^
 ||1pop.ru^
@@ -554,6 +573,7 @@ _tizers.
 ||4-moto.ru/ad/
 ||468.vologdainfo.ru^
 ||4smi.ru^
+||7ly.ru/reklama/
 ||7rtv.com^
 ! $domain=8coins.net|8coins.ru
 ||8coins.$third-party
@@ -595,6 +615,7 @@ _tizers.
 ||adland.ru^
 ||adlog.com^$third-party
 ||adme.ru^$third-party
+||admimsy.com^$third-party
 ||admixer.net^
 ! $domain=admulti.com|admulti.ru
 ||admulti.$third-party
@@ -649,6 +670,7 @@ _tizers.
 ||anastasia-international.com^$third-party
 ||animereactor.ru^$third-party
 ||animeyes.ru^$third-party
+||antmoney.com^$third-party
 ||anyfiles.ru^$domain=~moi-progi.ru
 ||ap-jam.com^$third-party
 ||arbocontext.ru^
@@ -672,6 +694,7 @@ _tizers.
 ||b2bvideo.ru^
 ||b81x63nc.ws.md^
 ||babyclick.ru^$third-party
+||baks-mail.ru^$third-party
 ||banage.ru^$third-party
 ||banner-in.net^
 ||banner-storage.fo.ru^
@@ -709,8 +732,10 @@ _tizers.
 ||boobzi.com^$third-party
 ||bossmoney.ru^$third-party
 ||br.gcl.ru^
+||bravohost.ru/volgaban.
 ||bt.kiev.ua^$domain=~bt.kiev.ua
 ||bubblesmedia.ru^
+||buxify-v2.com^$third-party
 ||buy-link.ru^
 ||bvf.ru/upchk/
 ||bw.pronto.ru^$domain=~job.ru
@@ -727,6 +752,7 @@ _tizers.
 ||chitika.$third-party
 ||cinemateka3d.ru^$third-party
 ||citilink.ru^$third-party
+||city-advertising.ru^$third-party
 ||citymovers.us^
 ||cjconvert.com^
 ||cleen.ru^
@@ -738,6 +764,7 @@ _tizers.
 ||clickedget.com^
 ||clickhere.ru^
 ||clickozavr.com^
+||clixsense.com/banners/
 ||club-reseller.com^
 ||clx.ru^$third-party
 ||cmexota.ru^$third-party
@@ -752,6 +779,7 @@ _tizers.
 ||crutop.nu^$third-party
 ||cshi.ru^
 ||csht.ru^
+||csstatic.com/banners/
 ||cszz.ru^
 ||cyberstyle.ru^$third-party
 ||cykahax.net^
@@ -774,6 +802,7 @@ _tizers.
 ! ||dl2.ru/catalog.php?
 ||dndd.ru^
 ||doortrade.ru^$third-party
+||doskki.com^$third-party
 ||dostavka.ru^$third-party
 ! sedoparking$domain=dosugvip.ru
 ||dozory.goodoo.ru^
@@ -859,7 +888,6 @@ _tizers.
 ||glamursgirl.ru^$third-party
 ||glifuka.com^
 ||globalstars.ru^
-||globalteaser.ru^
 ||globusgps.ru^$third-party
 ||glows.ru^
 ||glykur.net^
@@ -874,6 +902,7 @@ _tizers.
 ||goldfishkapartners.com^
 ||goldtizer.com^
 ||goldtraf.su^$third-party
+||goldzona.net.ua^$third-party
 ||goodadvert.$third-party
 ||goodbody.ru^$third-party
 ||google-analistyc.
@@ -946,6 +975,7 @@ _tizers.
 ||intimshop.ru^$third-party
 ||intimznaki.tomsk.ru^$third-party
 ||invest-pool.ru^$third-party
+||invest-system.net/banners/
 ||invictory.org/banners/
 ||ip2phrase.com/ip2phrase.asp?
 ||ipgold.ru^$third-party
@@ -963,6 +993,7 @@ _tizers.
 ||job.ws/_bann/
 ||js.einfo.by/?
 ||k2kapital.com/upload
+||ka7co.com^
 ||kachestvoo.ru^$third-party
 ||karabalikelektronik.com/images/reklam
 ||karambas.ru/flash
@@ -1025,6 +1056,7 @@ _tizers.
 ||litres.ru/pages/get_vidget/?
 ||liveclix.net^$third-party
 ||liverec.com^$third-party
+||livmi.net/image/$third-party
 ||loadmovie.ru^$third-party
 ||loadmult.ru/slider/$third-party
 ||loadpartners.com^$third-party
@@ -1094,6 +1126,7 @@ _tizers.
 ||micro-win.com^$third-party
 ||mignews.in.ua/banerok/index.php?cmd=ad&
 ||miniban.ru^
+||mir-games.org/uploads/$third-party
 ||miralinks.ru^$third-party
 ||mirmaek.ru^$third-party
 ||mirvolos.com$third-party
@@ -1334,6 +1367,7 @@ _tizers.
 ||rmbn.ru^$third-party
 ||rnbn.ru^$third-party
 ||rnd.yxo.ru^
+||roboforex.ru/files/banners/
 ||rookee.ru^$third-party
 ||rorer.ru^$third-party
 ||rot.rusoul.ru/rotator/
@@ -1349,7 +1383,6 @@ _tizers.
 ||rus-porno.ru^$third-party
 ||ruscontext.com^$third-party
 ||rusmedserv.com^$third-party
-||rustiz.ru^$third-party
 ||rustrackers.ru^$third-party
 ||rutor.org^$third-party
 ||ruvideo.net/obzor/
@@ -1385,6 +1418,7 @@ _tizers.
 ||seriouspartner.ru^$third-party
 ||servidormensseger.hotbox.ru^
 ||serving-sys.com^$third-party
+||sevensteps.biz^$third-party
 ||sex-finger.com^$third-party
 ||sexcashv2.com^$third-party
 ||sexfabrika.ru/*.gif
@@ -1510,10 +1544,12 @@ _tizers.
 ||trustlink.ru^$third-party
 ||tsr.cdns.com.ua^
 ||tubestar.ru^
+||turbobit.net/ref/
 ||turboroller.ru^$third-party
 ||turist.ru/turist.goods_pics/$third-party
 ||twevent.org.ua/bn/
 ||tx2.ru^$third-party
+||txtrk.com^
 ||tynt.com^$third-party
 ||ua-teens.com^$third-party
 ||uadvt.net^$third-party
@@ -1523,6 +1559,7 @@ _tizers.
 ||ugly.ru/adv_frame.
 ||uicp.ru/?bn=
 ||ujav.net^
+||ukraine.com.ua^*/img/banner/
 ||ukrbanner.net^$third-party
 ||ulitka.ru/logo$image
 ||umatno.ru/mm/
@@ -1577,8 +1614,10 @@ _tizers.
 ||vsesumki.com^$third-party
 ||vsetv.com/pic/paid/
 ||vsexshop.ru^$third-party
+||vtizr.com^
 ||vtochku.net^
 ||vyatka-host.ru^$third-party
+||wap-tds.in^
 ||wapstart.ru^$third-party
 ||warezplatinum.com^$third-party
 ||warnet.ws/banners/
@@ -1891,9 +1930,11 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! $domain=mediarich.cc|mediarich.ru
 ||mediarich.$third-party
 ||advertising-richmedia.info^
+||codemedia.info^
 ||codemediarich.ru^
 ||code-mediarich.ru^
 ||codes-media.ru^
+||marketingrichmedia.info^
 ||media-code.info^
 ||mediacod.in^
 ||mediarich-code.ru^
@@ -3109,6 +3150,7 @@ micro-win.com##.bannerhead
 micro-win.com##.seoquake-nofollow
 micro-win.com###promo
 ||mignews.com.ua/files/banners/
+mir-games.org##A[target="_blank"][rel="nofollow"][href^="/engine/download?"]
 mirmmo.ru##[id^="trumedia_holder_"]
 mirmmo.ru###banner-top
 mk.ru##.mk_right_block_body > .mk_insert
@@ -3524,6 +3566,7 @@ soft-i-kino.ru##IMG[width="180"][height="400"]
 soft4gadget.com##.centerside > .base2:last-child
 soft4gadget.com##.centersideinn > .base2:last-child
 soft4gadget.com###dle-content > .base2:first-child
+||soft4xp.ru/rss_news.php
 softarchive.net##.b728x90
 softnavigator.ru##:not(#dle-content) > .shortnews
 softnavigator.ru##.shortnews > .postfooter:first-child
@@ -3745,6 +3788,7 @@ voxpopuli.kz###brand_logo
 ||vozmi.net/img/*150x250
 vp.donetsk.ua##NOINDEX > A[rel="nofollow"] > IMG[width="255"]
 vremenno.net##.sidebarBlock:first-child
+vce-besplatno.ru##.banner
 vseosi.ru##.centercol > CENTER
 vsetv.com##.ban200
 vsetyt.us###promo
@@ -4215,6 +4259,7 @@ x-soft.tomsk.ru###shop
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 @@||vk.com/ads*.php?__query=$~third-party
 @@||volkswagen-nutzfahrzeuge.de^*/teaser/$~third-party
+@@||zeiss.com/content/*/teaser$domain=zeiss.com
 ! - Против «бесконечной загрузки страниц» -------------------------------------
 !#excompat.bookmark
 ! К сожалению скрипты сторонних рекламных сетей не всегда встраиваются аккуратно,
