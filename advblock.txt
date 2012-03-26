@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 6PGa7p0zaKeSdj8zVp4MMA
-! Last modification time (GMT): 2012.03.26 08:26
+! Checksum: HoylplgcNJq6ylliWfRKdQ
+! Last modification time (GMT): 2012.03.26 13:27
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -94,8 +94,8 @@
 ||nigheays.ru^$image,~image,popup
 ||partner.grand-casino.ru^$image,~image,popup
 ||partypoker.com^*/videopop/$image,~image,popup
-||pic4you.ru^$image,~image,popup
-||pic5you.ru^$image,~image,popup
+! ||pic4you.ru^$image,~image,popup
+! ||pic5you.ru^$image,~image,popup
 ||pointblank.ru/?pid=$image,~image,popup
 ||pop.sn00.net^$image,~image,popup
 ! Субдомены shopgid, quelle
@@ -116,11 +116,11 @@
 ! Подделка сайта вопросов-ответов mail.ru и других
 /popua/*$image,~image,popup
 ||0tveti-mall.com^$~popup,popup
-! /otvet/
 ||duits1.ru^$~popup,popup
 ||emmanuelchurchrdc.com^$~popup,popup
 ||otveti2012.ru^$~popup,popup
 ||otvetru.ru^$~popup,popup
+||otvllet-maiill.ru^$~popup,popup
 ||otwety-mail.com^$~popup,popup
 ! Подделка сайта ВКонтакте
 ||vsemdeneg.ru^$~popup,popup
@@ -342,6 +342,8 @@ _banner.gif
 .richbanner.
 /shared/promos/*
 /showbanner.
+! DataLife Engine forum module /engine/modules/
+/sprava_baner/*
 /upload/banners/*
 /upload/bx/*$domain=~transbank.ru
 /upload/rk/*$domain=~tsu.ru
@@ -404,16 +406,16 @@ _tizers.
 ! .tv/_cron/js/informer$script
 /adsnews.
 /informer.js
+! $domain=24smi.org|auction.ua|faninternet.com.ua|missrich.net|openmedia.com.ua
+/informer.php?
 /informer/script.php?id=
 /sblocks_informer.
-||24smi.org/informer.php?
 ||66.ru/mod/news2/
 ||aif.ru/iframes/
 ||afera.info/informer_
 ||all-news.net.ua/informers/
 ||allday.ru/rbknews/
 ||analyzethis.ru/informer.cgi?
-||auction.ua/informer.php?
 ||autonet.ru/extra/autoclub_informer.aspx
 ||bigmir.net^$third-party
 ||clipta.com/informer/
@@ -422,17 +424,14 @@ _tizers.
 ||exchangenews.ru^$match-case,third-party
 ||informer.grafru.ru^$third-party
 ||fair.ru/*/i.php?
-||faninternet.com.ua/informer.php?
 ||fark.ru/js/bannerLink.
 ||from-ua.com^$third-party,subdocument
 ||from-ua.com/adds/getinf.php?
 ||gold-music.ru/informer/
 ||meta.ua/*/block.js|$third-party
 ||meta.ua/informers/?
-||missrich.net/informer.php?
 ||nntx.ru^$third-party
 ||nyx.su/informers/
-||openmedia.com.ua/informer.php?
 ||otvali.ru/informer/
 ||protoplex.ru/cgi-bin/informer.pl?
 ||protoplex.ru/images/rating/
@@ -536,8 +535,6 @@ _tizers.
 //195.161.119.239^
 ! Вставляет рекламу с megareliz.com
 //195.191.235.58/block?
-! Media-Click.ru
-//212.150.34.*.php?
 ! ProTizer.ru
 //212.150.34.116/*
 ! OpenX Ad Server
@@ -881,6 +878,7 @@ _tizers.
 ! ||geo.readlist.ru/traf.php
 ||get-click.net^
 ||getb.7ya.ru^
+||gettraf.org^
 ||ggsaffiliates.com^
 ||giper.info^$third-party
 ||gipertyerusu.com^
@@ -1046,6 +1044,7 @@ _tizers.
 ||liex.ru^$third-party
 ||lif.yaicom.ru/*.php?tpl=
 ||lifepromo.biz^$third-party
+||limon.biz^
 ||link.ru^$third-party
 ||linkbuy.biz^$third-party
 ||linkexchange.$third-party
@@ -1097,7 +1096,6 @@ _tizers.
 ||mben.ru^$third-party
 ||mbn.kr.ua^$third-party
 ||mdesign.planet.ee^$third-party
-||media-click.ru^$third-party
 ||media-code.info^$third-party
 ||media-x.ru^
 ||media.online.ua/all/gft/
@@ -1348,6 +1346,7 @@ _tizers.
 ||red.by/redban
 ||redtram.com^$third-party
 ||refer.ru^$third-party
+||referalov.net^$third-party
 ||refo.ru^$third-party
 ||reforum.ru^$third-party
 ||reg.ru^$third-party
@@ -1381,7 +1380,9 @@ _tizers.
 ||rssnewser.ru/add
 ||ru-top.net/img/
 ||ru.gg/werbemittel/
+||rubanners.com^
 ||rus-porno.ru^$third-party
+||ruscams.com/video/banner/
 ||ruscontext.com^$third-party
 ||rusmedserv.com^$third-party
 ||rustrackers.ru^$third-party
@@ -1419,6 +1420,7 @@ _tizers.
 ||seriouspartner.ru^$third-party
 ||servidormensseger.hotbox.ru^
 ||serving-sys.com^$third-party
+||setlinks.ru^$third-party
 ||sevensteps.biz^$third-party
 ||sex-finger.com^$third-party
 ||sexcashv2.com^$third-party
@@ -1576,6 +1578,7 @@ _tizers.
 ||utarget.ru^$third-party
 ||vareza.net^$third-party
 ||vba.ru^$third-party
+||vdz.su^
 ||ventivmedia.com^$third-party
 ||vertucash.com^$third-party
 ||vezetmne.ru^$third-party
@@ -1854,7 +1857,9 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 !
 ! ClickUnder.net и подобные им сайты
 /get.js?user_id=$script,third-party
+/get.php?user_id=*&mode=$script,third-party
 ||4allclick.ru^$~popup,popup
+||adulttiz.com^$~popup,popup
 ||clickunder.net^$~popup,popup
 ! $domain=eroadvert.net,eroadvert.ru
 ||eroadvert.$~popup,popup
@@ -1917,6 +1922,14 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||ladyclicks7.ru^
 ||ladyclicks8.ru^
 ||ladyclicks9.ru^
+!
+! Media-Click.ru
+/runder.php?id=*&site=$script,third-party
+/under.php?id=*&site=$script,third-party
+! //212.150.34.*.php?
+||admedia-click.ru^$~popup,popup
+||media-click.ru^$~popup,popup
+||mediaip.ru^$~popup,popup
 !
 ! MediaLand.ru — партнёрская сеть компании «Медиа Мир».
 ! ###medialand_adland_inline_div_750
@@ -2570,6 +2583,7 @@ compulenta.ru###kph0
 compulenta.ru##A[href^="/bitrix/rk.php?"]
 cool-archive.ru##TD[width="556"] > :not(#dle-content)
 ||cool-archive.ru/*_adv.
+||coolinbox.ru/suprenta/
 coolsoch.ru###rich_media
 coolsoch.ru###xyz
 coolsoch.ru##NOINDEX
@@ -2988,6 +3002,8 @@ kanobu.ru##.wide-banner-place
 kanobu.ru###logline_banner
 kapriz.info###dle-info + NOINDEX
 ||kapriz.info/tiz/
+||karatel.org/js/ban
+||karatel.org/js/pop
 ||kartinka.com.ua/partner/load?
 ||katani.dp.ua/img2/
 katushka.net###banner_240_top
@@ -3394,6 +3410,7 @@ prowebber.ru##.lcol.mainside > CENTER > A[href^="/pw?"]
 ||proxyweb.net/js/dhtmlwindow.js
 ||ps3club.ru/bans/
 ||pslan.com/banera/
+||psywarez.com/banner/
 !
 !Q
 qip.ru##.advertTop
