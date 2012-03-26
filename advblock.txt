@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: HoylplgcNJq6ylliWfRKdQ
-! Last modification time (GMT): 2012.03.26 13:27
+! Checksum: o14qPeDGu6TRF58Uiva5ww
+! Last modification time (GMT): 2012.03.26 20:58
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -322,6 +322,7 @@ _banner.gif
 /bannerex.cgi/getbanner.js?id=
 /cgi-bin/banner/*
 /cgi-bin/banners/*
+/free/banners/*
 /images/adv/*$domain=~3k.mail.ru
 /images/ban/*
 /images/banners/*
@@ -336,7 +337,7 @@ _banner.gif
 /mybaner/*
 /reklam.
 /reklam/*
-/reklama.$domain=~reklama.rambler.ru|~reklama.ukr.net
+/reklama.$domain=~reklama.com.ua|~reklama.rambler.ru|~reklama.ukr.net
 /reklama_$domain=~linux.ptz.ru
 /richbanner.
 .richbanner.
@@ -421,8 +422,10 @@ _tizers.
 ||clipta.com/informer/
 ||cosmo.ru/cosmo_informers/
 ||doramy.net/informer/
+||exchange.meta.ua^
 ||exchangenews.ru^$match-case,third-party
 ||informer.grafru.ru^$third-party
+||informers.ukr.net^
 ||fair.ru/*/i.php?
 ||fark.ru/js/bannerLink.
 ||from-ua.com^$third-party,subdocument
@@ -431,6 +434,7 @@ _tizers.
 ||meta.ua/*/block.js|$third-party
 ||meta.ua/informers/?
 ||nntx.ru^$third-party
+||novinator.ukr.net^
 ||nyx.su/informers/
 ||otvali.ru/informer/
 ||protoplex.ru/cgi-bin/informer.pl?
@@ -505,13 +509,8 @@ _tizers.
 ||battlespace.ru/ad/
 !
 ! = Блокировка доменов ========================================================
-!#domains.bookmark
--iframe.com^$third-party
-//r*.auto.ru/*
-//r*.izvestia.ru/*
-/bs.mybb.ru/*
-/bs.nigma.ru/*$domain=~nigma.ru
-!
+! - IP ------------------------------------------------------------------------
+!#ip.bookmark
 //78.140.145.93^
 //78.140.145.178^
 //80.91.178.234^
@@ -542,6 +541,25 @@ _tizers.
 //213.186.217.210/banners/*
 //217.170.78.*/banners/*
 !
+! - WAP -----------------------------------------------------------------------
+!#wap.bookmark
+||adpix.ru^
+||eban.mobi^
+||kazban.su^
+||mbn.su^
+||nclick.ru^
+||neoban.su^
+||onban.ru^
+||owap.su^
+||payban.su^
+||rosban.su^
+||wbn.su^
+!
+! - Имена ---------------------------------------------------------------------
+!#domains.bookmark
+! -iframe.com^$third-party
+! //r*.auto.ru/*
+! //r*.izvestia.ru/*
 ||003.com.ua^$domain=~003.com.ua
 ||1-traf.net^
 ||1000zakazov.ru^
@@ -582,7 +600,6 @@ _tizers.
 ||a.fobos.tv^
 ||a4retail.net^
 ||abcfilm.org^
-||abnad.net^
 ||aceventik.com^
 ||ad.fantiki.net^
 ||ad.ir.ru/bb.cgi?
@@ -685,7 +702,8 @@ _tizers.
 ||azartcash.com^
 ||azbukasexa.ru^$third-party
 ||b-one.com.ua^
-||b.candy.vl.ru^
+! $domain=adrock.com.ua|adrock.ua
+||b.adrock.$third-party||b.candy.vl.ru^
 ||b.madplace99.com^
 ||b.nwave.de^
 ||b2bcontext.ru^
@@ -731,6 +749,8 @@ _tizers.
 ||bossmoney.ru^$third-party
 ||br.gcl.ru^
 ||bravohost.ru/volgaban.
+||bs.mybb.ru^
+||bs.nigma.ru^$third-party
 ||bt.kiev.ua^$domain=~bt.kiev.ua
 ||bubblesmedia.ru^
 ||buxify-v2.com^$third-party
@@ -874,6 +894,7 @@ _tizers.
 ||fxcast.com^$third-party
 ||fxtrade.org.ru^
 ||galaxymeet.ru^$third-party
+||gamblingbuilder.com^
 ||gamingpartners.org^
 ! ||geo.readlist.ru/traf.php
 ||get-click.net^
@@ -936,7 +957,7 @@ _tizers.
 ||houmekredit.ru^
 ||hq-films.ws^$third-party
 ||hyipsrating.com^$third-party
-||hypernews.ru^$script
+||hypernews.ru^
 ||i.j2j.ru^
 ||i-kinocash.com/banners/$third-party
 ||ibm.com/developerworks/everywhere/ew.js
@@ -1183,7 +1204,6 @@ _tizers.
 ||ngbn.net^$third-party
 ||nic.ua/i/b/
 ||nimp.org^$third-party
-||nirvana.fm/bx?$third-party
 ||noion.ru^$third-party
 ||nomer1.ru.ru^
 ||nostalgia.onego.ru^
@@ -1453,6 +1473,7 @@ _tizers.
 ||spitter.pauk.ru^
 ||sportoboz.ru^$third-party
 ||sppromo.com/feed.php?$third-party
+||sprotiv.com/bnr/
 ||sputnik1.ru^$third-party
 ||spytrack.tic.ru^
 ||srvdata.ru^$third-party
@@ -1564,6 +1585,7 @@ _tizers.
 ||ujav.net^
 ||ukraine.com.ua^*/img/banner/
 ||ukrbanner.net^$third-party
+||ukrbuy.com/partner/
 ||ulitka.ru/logo$image
 ||umatno.ru/mm/
 ||under-click.$third-party
@@ -1638,9 +1660,9 @@ _tizers.
 ||webex.ru^$third-party
 ||webkrug.ru/images/bann
 ||weblist.ru/images/weblist
-||weblog.com*/cnt
+! ||weblog.com*/cnt
 ||webmedia.co.il^
-||webnewshost.com/do/adv.
+! ||webnewshost.com/do/adv.
 ||weboborona.ru/pic/wban
 ||webplus.info/getres.php?
 ||webproficlub.ru^$third-party
@@ -1749,6 +1771,11 @@ _tizers.
 ||traftiz.com^$~popup,popup
 ||twitep.com^$~popup,popup
 ||yohioo.com^$~popup,popup
+!
+! ABN.com.ua
+||abn.com.ua^
+||abn-ad.com^
+||abnad.net^
 !
 ! AdFox.ru
 ||adwolf.ru^$third-party
@@ -2352,11 +2379,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Кнопка с предложением создать сайт на ucoz-овских доменах (справа-вверху).
 ###advtd
 ! Какой-то рекламный движок для ucoz-форумов.
-! $domain=artpost.ucoz.ru|fortpostnews.ucoz.ru|multiky.ru|notebene.ucoz.ru|tumbanew.ucoz.ru|uzumaki.kz|vceknigi.ru
+! $domain=artpost.ucoz.ru|fortpostnews.ucoz.ru|multiky.ru|notebene.ucoz.ru|tumbanew.ucoz.ru|uzumaki.kz|vceknigi.ru|...
 .am/rtr/$script
 .kz/rtr/$script
 .ru/rtr/$script
 .su/rtr/$script
+.ua/rtr/$script
 !
 ! VisitWeb.com
 //46.165.197.153^
@@ -2373,26 +2401,425 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||flipflapflo.biz^$~popup,popup
 ||flipflapflo.net^$~popup,popup
 ||wt-rotator.biz^$~popup,popup
-||wt-rotator0.ru^$~popup,popup
-||wt-rotator1.ru^$~popup,popup
-||wt-rotator2.ru^$~popup,popup
-||wt-rotator3.ru^$~popup,popup
-||wt-rotator4.ru^$~popup,popup
-||wt-rotator5.ru^$~popup,popup
-||wt-rotator6.ru^$~popup,popup
-||wt-rotator7.ru^$~popup,popup
-||wt-rotator8.ru^$~popup,popup
-||wt-rotator9.ru^$~popup,popup
-||wt-rotator10.ru^$~popup,popup
-||wt-rotator11.ru^$~popup,popup
-||wt-rotator12.ru^$~popup,popup
-||wt-rotator13.ru^$~popup,popup
-||wt-rotator14.ru^$~popup,popup
-||wt-rotator15.ru^$~popup,popup
-||wt-rotator16.ru^$~popup,popup
-||wt-rotator17.ru^$~popup,popup
-||wt-rotator18.ru^$~popup,popup
-||wt-rotator19.ru^$~popup,popup
+||wt-rotator0.ru^
+||wt-rotator1.ru^
+||wt-rotator2.ru^
+||wt-rotator3.ru^
+||wt-rotator4.ru^
+||wt-rotator5.ru^
+||wt-rotator6.ru^
+||wt-rotator7.ru^
+||wt-rotator8.ru^
+||wt-rotator9.ru^
+||wt-rotator10.ru^
+||wt-rotator11.ru^
+||wt-rotator12.ru^
+||wt-rotator13.ru^
+||wt-rotator14.ru^
+||wt-rotator15.ru^
+||wt-rotator16.ru^
+||wt-rotator17.ru^
+||wt-rotator18.ru^
+||wt-rotator19.ru^
+||wt-rotator101.ru^
+||wt-rotator102.ru^
+||wt-rotator103.ru^
+||wt-rotator104.ru^
+||wt-rotator105.ru^
+||wt-rotator106.ru^
+||wt-rotator107.ru^
+||wt-rotator108.ru^
+||wt-rotator109.ru^
+||wt-rotator110.ru^
+||wt-rotator111.ru^
+||wt-rotator112.ru^
+||wt-rotator113.ru^
+||wt-rotator114.ru^
+||wt-rotator115.ru^
+||wt-rotator116.ru^
+||wt-rotator117.ru^
+||wt-rotator118.ru^
+||wt-rotator119.ru^
+||wt-rotator120.ru^
+||wt-rotator121.ru^
+||wt-rotator122.ru^
+||wt-rotator123.ru^
+||wt-rotator124.ru^
+||wt-rotator125.ru^
+||wt-rotator126.ru^
+||wt-rotator127.ru^
+||wt-rotator128.ru^
+||wt-rotator129.ru^
+||wt-rotator130.ru^
+||wt-rotator131.ru^
+||wt-rotator132.ru^
+||wt-rotator133.ru^
+||wt-rotator134.ru^
+||wt-rotator135.ru^
+||wt-rotator136.ru^
+||wt-rotator137.ru^
+||wt-rotator138.ru^
+||wt-rotator139.ru^
+||wt-rotator140.ru^
+||wt-rotator141.ru^
+||wt-rotator142.ru^
+||wt-rotator143.ru^
+||wt-rotator144.ru^
+||wt-rotator145.ru^
+||wt-rotator146.ru^
+||wt-rotator147.ru^
+||wt-rotator148.ru^
+||wt-rotator149.ru^
+||wt-rotator150.ru^
+||wt-rotator151.ru^
+||wt-rotator152.ru^
+||wt-rotator153.ru^
+||wt-rotator154.ru^
+||wt-rotator155.ru^
+||wt-rotator156.ru^
+||wt-rotator157.ru^
+||wt-rotator158.ru^
+||wt-rotator159.ru^
+||wt-rotator160.ru^
+||wt-rotator161.ru^
+||wt-rotator162.ru^
+||wt-rotator163.ru^
+||wt-rotator164.ru^
+||wt-rotator165.ru^
+||wt-rotator166.ru^
+||wt-rotator167.ru^
+||wt-rotator168.ru^
+||wt-rotator169.ru^
+||wt-rotator170.ru^
+||wt-rotator171.ru^
+||wt-rotator172.ru^
+||wt-rotator173.ru^
+||wt-rotator174.ru^
+||wt-rotator175.ru^
+||wt-rotator176.ru^
+||wt-rotator177.ru^
+||wt-rotator178.ru^
+||wt-rotator179.ru^
+||wt-rotator180.ru^
+||wt-rotator181.ru^
+||wt-rotator182.ru^
+||wt-rotator183.ru^
+||wt-rotator184.ru^
+||wt-rotator185.ru^
+||wt-rotator186.ru^
+||wt-rotator187.ru^
+||wt-rotator188.ru^
+||wt-rotator189.ru^
+||wt-rotator190.ru^
+||wt-rotator191.ru^
+||wt-rotator192.ru^
+||wt-rotator193.ru^
+||wt-rotator194.ru^
+||wt-rotator195.ru^
+||wt-rotator196.ru^
+||wt-rotator197.ru^
+||wt-rotator198.ru^
+||wt-rotator199.ru^
+||wt-rotator200.ru^
+||wt-rotator201.ru^
+||wt-rotator202.ru^
+||wt-rotator203.ru^
+||wt-rotator204.ru^
+||wt-rotator205.ru^
+||wt-rotator206.ru^
+||wt-rotator207.ru^
+||wt-rotator208.ru^
+||wt-rotator209.ru^
+||wt-rotator210.ru^
+||wt-rotator211.ru^
+||wt-rotator212.ru^
+||wt-rotator213.ru^
+||wt-rotator214.ru^
+||wt-rotator215.ru^
+||wt-rotator216.ru^
+||wt-rotator217.ru^
+||wt-rotator218.ru^
+||wt-rotator219.ru^
+||wt-rotator220.ru^
+||wt-rotator221.ru^
+||wt-rotator222.ru^
+||wt-rotator223.ru^
+||wt-rotator224.ru^
+||wt-rotator225.ru^
+||wt-rotator226.ru^
+||wt-rotator227.ru^
+||wt-rotator228.ru^
+||wt-rotator229.ru^
+||wt-rotator230.ru^
+||wt-rotator231.ru^
+||wt-rotator232.ru^
+||wt-rotator233.ru^
+||wt-rotator234.ru^
+||wt-rotator235.ru^
+||wt-rotator236.ru^
+||wt-rotator237.ru^
+||wt-rotator238.ru^
+||wt-rotator239.ru^
+||wt-rotator240.ru^
+||wt-rotator241.ru^
+||wt-rotator242.ru^
+||wt-rotator243.ru^
+||wt-rotator244.ru^
+||wt-rotator245.ru^
+||wt-rotator246.ru^
+||wt-rotator247.ru^
+||wt-rotator248.ru^
+||wt-rotator249.ru^
+||wt-rotator250.ru^
+||wt-rotator251.ru^
+||wt-rotator252.ru^
+||wt-rotator253.ru^
+||wt-rotator254.ru^
+||wt-rotator255.ru^
+||wt-rotator256.ru^
+||wt-rotator257.ru^
+||wt-rotator258.ru^
+||wt-rotator259.ru^
+||wt-rotator260.ru^
+||wt-rotator261.ru^
+||wt-rotator262.ru^
+||wt-rotator263.ru^
+||wt-rotator264.ru^
+||wt-rotator265.ru^
+||wt-rotator266.ru^
+||wt-rotator267.ru^
+||wt-rotator268.ru^
+||wt-rotator269.ru^
+||wt-rotator270.ru^
+||wt-rotator271.ru^
+||wt-rotator272.ru^
+||wt-rotator273.ru^
+||wt-rotator274.ru^
+||wt-rotator275.ru^
+||wt-rotator276.ru^
+||wt-rotator277.ru^
+||wt-rotator278.ru^
+||wt-rotator279.ru^
+||wt-rotator280.ru^
+||wt-rotator281.ru^
+||wt-rotator282.ru^
+||wt-rotator283.ru^
+||wt-rotator284.ru^
+||wt-rotator285.ru^
+||wt-rotator286.ru^
+||wt-rotator287.ru^
+||wt-rotator288.ru^
+||wt-rotator289.ru^
+||wt-rotator290.ru^
+||wt-rotator291.ru^
+||wt-rotator292.ru^
+||wt-rotator293.ru^
+||wt-rotator294.ru^
+||wt-rotator295.ru^
+||wt-rotator296.ru^
+||wt-rotator297.ru^
+||wt-rotator298.ru^
+||wt-rotator299.ru^
+||wt-rotator300.ru^
+||wt-rotator301.ru^
+||wt-rotator302.ru^
+||wt-rotator303.ru^
+||wt-rotator304.ru^
+||wt-rotator305.ru^
+||wt-rotator306.ru^
+||wt-rotator307.ru^
+||wt-rotator308.ru^
+||wt-rotator309.ru^
+||wt-rotator310.ru^
+||wt-rotator311.ru^
+||wt-rotator312.ru^
+||wt-rotator313.ru^
+||wt-rotator314.ru^
+||wt-rotator315.ru^
+||wt-rotator316.ru^
+||wt-rotator317.ru^
+||wt-rotator318.ru^
+||wt-rotator319.ru^
+||wt-rotator320.ru^
+||wt-rotator321.ru^
+||wt-rotator322.ru^
+||wt-rotator323.ru^
+||wt-rotator324.ru^
+||wt-rotator325.ru^
+||wt-rotator326.ru^
+||wt-rotator327.ru^
+||wt-rotator328.ru^
+||wt-rotator329.ru^
+||wt-rotator330.ru^
+||wt-rotator331.ru^
+||wt-rotator332.ru^
+||wt-rotator333.ru^
+||wt-rotator334.ru^
+||wt-rotator335.ru^
+||wt-rotator336.ru^
+||wt-rotator337.ru^
+||wt-rotator338.ru^
+||wt-rotator339.ru^
+||wt-rotator340.ru^
+||wt-rotator341.ru^
+||wt-rotator342.ru^
+||wt-rotator343.ru^
+||wt-rotator344.ru^
+||wt-rotator345.ru^
+||wt-rotator346.ru^
+||wt-rotator347.ru^
+||wt-rotator348.ru^
+||wt-rotator349.ru^
+||wt-rotator350.ru^
+||wt-rotator351.ru^
+||wt-rotator352.ru^
+||wt-rotator353.ru^
+||wt-rotator354.ru^
+||wt-rotator355.ru^
+||wt-rotator356.ru^
+||wt-rotator357.ru^
+||wt-rotator358.ru^
+||wt-rotator359.ru^
+||wt-rotator360.ru^
+||wt-rotator361.ru^
+||wt-rotator362.ru^
+||wt-rotator363.ru^
+||wt-rotator364.ru^
+||wt-rotator365.ru^
+||wt-rotator366.ru^
+||wt-rotator367.ru^
+||wt-rotator368.ru^
+||wt-rotator369.ru^
+||wt-rotator370.ru^
+||wt-rotator371.ru^
+||wt-rotator372.ru^
+||wt-rotator373.ru^
+||wt-rotator374.ru^
+||wt-rotator375.ru^
+||wt-rotator376.ru^
+||wt-rotator377.ru^
+||wt-rotator378.ru^
+||wt-rotator379.ru^
+||wt-rotator380.ru^
+||wt-rotator381.ru^
+||wt-rotator382.ru^
+||wt-rotator383.ru^
+||wt-rotator384.ru^
+||wt-rotator385.ru^
+||wt-rotator386.ru^
+||wt-rotator387.ru^
+||wt-rotator388.ru^
+||wt-rotator389.ru^
+||wt-rotator390.ru^
+||wt-rotator391.ru^
+||wt-rotator392.ru^
+||wt-rotator393.ru^
+||wt-rotator394.ru^
+||wt-rotator395.ru^
+||wt-rotator396.ru^
+||wt-rotator397.ru^
+||wt-rotator398.ru^
+||wt-rotator399.ru^
+||wt-rotator400.ru^
+||wt-rotator401.ru^
+||wt-rotator402.ru^
+||wt-rotator403.ru^
+||wt-rotator404.ru^
+||wt-rotator405.ru^
+||wt-rotator406.ru^
+||wt-rotator407.ru^
+||wt-rotator408.ru^
+||wt-rotator409.ru^
+||wt-rotator410.ru^
+||wt-rotator411.ru^
+||wt-rotator412.ru^
+||wt-rotator413.ru^
+||wt-rotator414.ru^
+||wt-rotator415.ru^
+||wt-rotator416.ru^
+||wt-rotator417.ru^
+||wt-rotator418.ru^
+||wt-rotator419.ru^
+||wt-rotator420.ru^
+||wt-rotator421.ru^
+||wt-rotator422.ru^
+||wt-rotator423.ru^
+||wt-rotator424.ru^
+||wt-rotator425.ru^
+||wt-rotator426.ru^
+||wt-rotator427.ru^
+||wt-rotator428.ru^
+||wt-rotator429.ru^
+||wt-rotator430.ru^
+||wt-rotator431.ru^
+||wt-rotator432.ru^
+||wt-rotator433.ru^
+||wt-rotator434.ru^
+||wt-rotator435.ru^
+||wt-rotator436.ru^
+||wt-rotator437.ru^
+||wt-rotator438.ru^
+||wt-rotator439.ru^
+||wt-rotator440.ru^
+||wt-rotator441.ru^
+||wt-rotator442.ru^
+||wt-rotator443.ru^
+||wt-rotator444.ru^
+||wt-rotator445.ru^
+||wt-rotator446.ru^
+||wt-rotator447.ru^
+||wt-rotator448.ru^
+||wt-rotator449.ru^
+||wt-rotator450.ru^
+||wt-rotator451.ru^
+||wt-rotator452.ru^
+||wt-rotator453.ru^
+||wt-rotator454.ru^
+||wt-rotator455.ru^
+||wt-rotator456.ru^
+||wt-rotator457.ru^
+||wt-rotator458.ru^
+||wt-rotator459.ru^
+||wt-rotator460.ru^
+||wt-rotator461.ru^
+||wt-rotator462.ru^
+||wt-rotator463.ru^
+||wt-rotator464.ru^
+||wt-rotator465.ru^
+||wt-rotator466.ru^
+||wt-rotator467.ru^
+||wt-rotator468.ru^
+||wt-rotator469.ru^
+||wt-rotator470.ru^
+||wt-rotator471.ru^
+||wt-rotator472.ru^
+||wt-rotator473.ru^
+||wt-rotator474.ru^
+||wt-rotator475.ru^
+||wt-rotator476.ru^
+||wt-rotator477.ru^
+||wt-rotator478.ru^
+||wt-rotator479.ru^
+||wt-rotator480.ru^
+||wt-rotator481.ru^
+||wt-rotator482.ru^
+||wt-rotator483.ru^
+||wt-rotator484.ru^
+||wt-rotator485.ru^
+||wt-rotator486.ru^
+||wt-rotator487.ru^
+||wt-rotator488.ru^
+||wt-rotator489.ru^
+||wt-rotator490.ru^
+||wt-rotator491.ru^
+||wt-rotator492.ru^
+||wt-rotator493.ru^
+||wt-rotator494.ru^
+||wt-rotator495.ru^
+||wt-rotator496.ru^
+||wt-rotator497.ru^
+||wt-rotator498.ru^
+||wt-rotator499.ru^
 ||wts-rotator.com^$~popup,popup
 !
 ! Yadro.ru
@@ -2404,6 +2831,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 !#local.bookmark
 !
 ! #
+||1000sovetov.org.ua^*/banners/
 ||1000ukg.kz/uploads/banner/
 100let.net##[id^="SR_PopOver"]
 ||101.ru^*/banners/
@@ -2446,6 +2874,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 !
 !A
 adultmanga.ru##.baner
+!$domain=adverman.com|adverman.ua
+||adverman.*/banners/
 advesti.ru##IMG[width="170"][height="340"][border="0"]
 advesti.ru##IMG[width="570"][height="80"][border="0"]
 ||agronews.ru/images/*.gif
@@ -2550,12 +2980,6 @@ championat.com##[class^="banner-"]
 championat.com##.branding-link
 ||championat.net/s/branding/
 ||championat.com/static/banner/
-cheat-master.ru##NOINDEX > CENTER > A[target="_blank"] > IMG
-cheb.ru,na-svyazi.ru##TD[background]
-cheb.ru,na-svyazi.ru##TD#userlinks
-/img/bg/*$domain=cheb.ru|na-svyazi.ru
-||cheb.ru/img/$object
-||cheb.ru/uploads/$object
 ||chemport.ru^*_994x90.
 chesspro.ru##TABLE[style="width: 100%; height: 90; margin-bottom: 5px"]
 ||chesspro.ru/_banners/
@@ -2569,7 +2993,6 @@ citysmile.ru##NOFOLLOW > NOINDEX > A[target="_blank"]
 ||ckyka.ru/obzor/
 ||club.ru/banners.php$subdocument
 cmexota.ru##A[target="_blank"][href*="/link.php?"]
-cn.ru##[class*="rx"][class*="neta"]
 ||cobra.com.ua/_banners/
 comfysoft.ru##TABLE[align][frame="rhs"][style]
 ||comfysoft.ru/images/programmes/
@@ -2584,9 +3007,6 @@ compulenta.ru##A[href^="/bitrix/rk.php?"]
 cool-archive.ru##TD[width="556"] > :not(#dle-content)
 ||cool-archive.ru/*_adv.
 ||coolinbox.ru/suprenta/
-coolsoch.ru###rich_media
-coolsoch.ru###xyz
-coolsoch.ru##NOINDEX
 copypast.ru###calcs1
 ||copypast.ru/re*/$image,object
 cripo.com.ua###banner
@@ -2642,7 +3062,6 @@ dofiga.net##.left_banners
 forum.donfisher.ru##TD.windowbg3
 ||dontr.ru/upload/Banner/
 dostatok.ru###SR_PopOver
-dosuglend.ru##[id^="tibu_container_"]
 dreamprogs.net##.ntabs
 dreamprogs.net##.mainmenu A:not([href^="http://dream"])
 drevo.uaportal.com##BODY > CENTER:first-of-type
@@ -2651,8 +3070,8 @@ driver-id.ru##[class$="_hbanner_960"]
 drugasmuga.com##.bannerWrap
 ||drumandbass.ru/img*banner
 ! Мусор на сайтах маркетгида.
-||dsvload.net/78tdia64wez
-||дсвлоад.рф/78tdia64wez
+.dsvload.net/$script,~third-party
+.дсвлоад.рф/$script,~third-party
 ||dt00.net/gjs/
 ||foreign.dt00.net^
 ||dump.ru/i/
@@ -2704,7 +3123,6 @@ erudition.ru##A[target="_blank"] > IMG[src^="http://www.erudition.ru/images/"]
 esquire.ru##.wilBranding-topAd
 esquire.ru##.wilBranding-toprow
 ||esquire.ru/images/*/banner/
-||etorrent.ru/js/etorrent.ru.js
 euro-football.ru##[id^="topbanner"]
 ex.ua##A[href^="/ad_click/"]
 ||ex.ua/ad_show/
@@ -2765,8 +3183,6 @@ fileplanet.com.ua###main > DIV[style*="240px;"]
 ||fileplanet.com.ua/?op=redirect_to&url=$image,~image,popup
 ||fileplanet.com.ua/images/brand/
 ||fileplanet.com.ua/player_vip.swf
-filorama.ru###dle-content > TABLE:first-child
-||filorama.ru/*/banner.swf
 finance.ua###banner-zone-top
 finance.ua###banner-zone-right
 fishki.net##.leftbox > .innerbox > A:not([href*="fishki"])
@@ -2799,7 +3215,6 @@ forzajuve.ru##.block_links
 forzajuve.ru###column-left NOINDEX > .module-content
 forzajuve.ru###root-wrapper > .top-module-container
 ||forzajuve.ru/978x90.
-||fp-tracker.ru/images/part/
 freakenergy.ru###menuforum
 freakenergy.ru##.headreklama
 ||freakenergy.ru/imgpls/
@@ -2869,8 +3284,6 @@ gorod.cn.ua##MARQUEE[scrollamount]
 guitarplayer.ru##[class^="windowbg"] > NOINDEX
 guitarplayer.ru##[id^="ya_direct_"]
 ||guitarplayer.ru/b/
-gulyai.ru###dle-content > NOINDEX
-||gulyai.ru/js/foto/
 ||guns.ru/i/
 guru.ua###adbns
 ||guru.ua/white_menu/$object
@@ -2891,7 +3304,6 @@ haleava.net##CENTER > NOINDEX > A[target="_blank"]
 hdreactor.org###mc_240_400
 hi.dn.ua##.artbannersplus
 ||hqroom.ru/images/
-forum.hdtv.ru##.borderwrap > .ipbtable:nth-of-type(2)
 hh.by,hh.kz,hh.ru,hh.ua##.b-topbanner
 ||hh.ru/banners.
 hi-fi.ru##.logo + NOINDEX
@@ -2958,8 +3370,7 @@ inmoment.ru##CENTER > A[target="_blank"]
 inosmi.ru##.banners
 ||inspired.com.ua^$object
 inter.ua##.b-top-banner
-||internethalyava.ru/*/area_banners/
-||internethalyava.ru/sites/*/files/flash/
+||internethalyava.ru/sites/$object
 ||internetno.net/banners/
 investoday.ru##IMG[width="460"][height="60"]
 investoday.ru##.globalmesswarnwrap
@@ -3069,7 +3480,7 @@ kotomatrix.ru##A[target="_blank"] > IMG
 ||kozhuhovo.com/!images/banners/
 kp.by,kp.ru,~ufa.kp.ru###banner-after-menu
 kp.by,kp.ru,~ufa.kp.ru##.baner
-kp.by,kp.ru,~ufa.kp.ru##.banner-middle
+! kp.by,kp.ru,~ufa.kp.ru##.banner-middle
 kp.by,kp.ru,~ufa.kp.ru##.uslot_banner
 ||advert.kp.ru^$object
 ||krisha.kz^*/br/
@@ -3083,6 +3494,7 @@ kyivpost.ua###advert_full
 !
 !L
 ||lacucinaitaliana.ru/images/
+||ladyline.com.ua/images/banner
 ||lavteam.net/banners/
 letitbit.net##.lid-skymonk-div
 letitbit.net###img_button_game
@@ -3117,7 +3529,7 @@ lostfilm.tv###ta_link > A:not([href^="/browse.php?cat="])
 ||lostfilm.tv/tmpl/lostfilm/nimg/brand_
 lostpic.net##CENTER > A[target="_blank"] > IMG
 lovesoft.ru###dle-content > CENTER > A[target="_blank"]
-||lu4ok.ru/partnerearning/
+lu4ok.ws##A[rel="nofollow"][target="_blank"][href^="http://lu4ok.ws/go/?"]
 lurkmore.to###column-one IMG[src^="data:image/"]
 ||lurkmore.to/*?*=left$xmlhttprequest
 ||lurkmore.to/rdva.html
@@ -3191,6 +3603,7 @@ molchun.ru##CENTER > A[rel="nofollow"][target="_blank"] > IMG
 ||moto.kiev.ua/ads_banners/
 ||moto.kiev.ua/forum/banners/
 ||motonews.ru/ad/
+||motoua.net/i/$subdocument
 mozilla-russia.org###modex
 mozutil.mozilla-russia.org##.footer > SPAN > DIV[style="text-align: left;"] > DIV[style="text-align: right;"]
 mp3-online.com.ua###popupWnd
@@ -3204,8 +3617,6 @@ multiki-online.net###teasers-top
 multiki-online.net###teasers-sidebar
 multiki-online.net##.more-teaser
 multitran.ru###proverbum
-musicfond.com##.NavItems>.InitaMenu
-musicfond.com##.SearchForm>NOINDEX
 ||musicforums.ru/*/knopki/
 ||musicforums.ru/pictures/casio_
 ||musictube.ru/flash/
@@ -3224,8 +3635,6 @@ myshows.ru###m-advert
 ||mywed.ru/bnr/
 !
 !N
-||na-svyazi.ru/img/$object
-||na-svyazi.ru/uploads/$object
 namba.kg###branding-html
 namba.kg###banners-top
 ||namba.kg^$popup,domain=namba.kg
@@ -3238,7 +3647,6 @@ narodclub.net##DIV[onmouseout^="this.style.backgroundColor="][onmouseover^="this
 ||narodclub.net/getfile/
 ||nashgorod.ru/b/
 nashkiev.ua##.block-adv
-||nashkiev.ua/style/b/
 natural-medicine.ru###GNM30
 natural-medicine.ru##[id^="teaser"]
 ne-kurim.ru##.pad > NOINDEX
@@ -3247,7 +3655,7 @@ nemezisworld.com##.banner_top
 ||nemezisworld.com^*.php|
 ||neomaks.org/engine/*/amcu_*.js
 ||b.netall.ru^
-||neverfold.ru/opr/*_ad.
+neverfold.ru##IMG[width="138"][height="81"][src^="/opr/"]
 new-films.biz###dle-content > NOINDEX
 new-kino.net###dle-content > NOFOLLOW > NOINDEX > A[rel="nofollow"][target="_blank"]
 ||new-kino.net/ReklDC/
@@ -3266,7 +3674,8 @@ newsazerbaijan.ru##.banner-middle
 newsru.com,newsru.ru##TABLE[style$="pointer;"][onclick^="window.open"]
 ||ng.by/bimages/$object
 ||nifiga-sebe.ru/b_$image,object
-nightwarez.ru##TD[width="190"] + TD[width="100%"] > TABLE[width="100%"][cellspacing="0"][cellpadding="0"][border="0"]
+nightwarez.ru##.advert
+||nirvana.fm/bx?$third-party
 ||nirvana.fm/pic/kartinki/
 nm.ru##.advertTop
 ||nnbt.org/images/$object
@@ -3352,10 +3761,6 @@ photoshop-master.ru###dropin
 phpbbguru.net##[href^="go.php?to="]
 pic2profit.com###referal
 ||pic2profit.com/ppb.php?id=
-pindosoff.net###dle-content > TABLE:first-child TD.copy
-pindosoff.net##TD.nav A[target="_blank"]
-||pindosoff.net/images/
-||pindosoff.net/sclick.js
 pingvinoff.net###daos
 pingvinoff.net##.entry > DIV[style^="float:"]
 ||pingvinoff.net/bnr/
@@ -3392,11 +3797,6 @@ premiership.ru###banner
 ||premiership.ru/upload/adv/
 ||prestige-gaming.ru/styles/*/ptn/
 ||prikols.com.ru/eroru/
-probki.net##CENTER > A > IMG[width="160"]
-probki.net##TD[valign="top"] > A > IMG[width="160"]
-maps.probki.net##[width="180"] > TBODY > TR:last-child
-||probki.net/banners/
-||probki.net/images$object
 ||proelectro.ru/files/$object
 programki.net##.reclama_v
 ||promodeejay.net/branding/
@@ -3499,10 +3899,8 @@ rustorka.com###page_header > .maintitle
 ||rustrackers.ru/banner_
 rustrek.ru###bn-bot-wrap
 rustrek.ru##A[href^="/shop.php?"]
-||rutor.org/counter.
-||rutor.org/m/
+||rutor.org/counter.js
 rutracker.org###bn-bot-wrap
-rutracker.org##TR#f-11:last-child
 ||rutracker.ru/images/banner/
 ||moon.rutracker21.org^
 !
@@ -3538,7 +3936,6 @@ sega.ucoz.com###reklama
 segodnya.ua##.eh-stuff-informer
 ||seobuilding.ru/myimages/$object
 serial-on.clan.su##A[href^="http://www.ruclicks.com/"]
-||serial.co.ua/java/PopIn.js
 ||service-teplo.ru^$object
 ||service-teplo.ru/images/ban_
 ||seti.ee/*reklaam/
@@ -3552,8 +3949,6 @@ sibmail.com##.gray > CENTER > DIV[style*="125px;"]
 sibmail.com##CENTER > DIV[style*="200px;"]
 !tbd:skipped:end
 sinoptik.ua##.b-partners
-sinoptik.ua##.horo-block
-sinoptik.ua###leftCol > [class$="Block"]
 siropik.ru##.banner-bg
 siteua.org###banner_journals
 siteua.org##.friendsim
@@ -3708,8 +4103,6 @@ trinixy.ru##[rel="nofollow"] > FONT[color="#ff0000"]
 ||tumix.ru/*/banners/
 ||turbo.az/banners/
 ||b.turbo.az^
-||turbobit.net/files/
-||turbobit.net/js/partner_
 tutu.ru##.overflow
 /ad*.tutu.ru^*_*.php|
 ||twistcasino.net^$third-party
@@ -3827,10 +4220,8 @@ webapteka.ru##A.sa[target="_blank"]
 webapteka.ru##CENTER > A[target="_blank"] > IMG
 ||webfile.ru/*wiw
 ||weblancer.net/adver/
-webpark.ru###Experts
-webpark.ru###gameguru0
-webpark.ru###zinio
-webpark.ru##A[href^="http://www.mhealth.ru/#"]
+webpark.ru###TopBanner
+webpark.ru##.grey
 ||webpark.ru/*/mhealth
 wiaderko.com###topbar
 ||wild-mistress.ru/wmbanner/
@@ -3892,6 +4283,15 @@ zhmak.info##TD[width="180"]:first-child + TD[width="5"] + TD > :not([class="news
 znaikak.ru##.blockLinks
 zol.ru##TABLE[style="table-layout:fixed; border-collapse:collapse"]
 ||zol.ru/noteb/
+!
+! Cheb.ru
+cheb.ru,na-svyazi.ru##TD[background]
+cheb.ru,na-svyazi.ru##TD#userlinks
+/img/bg/*$domain=cheb.ru|na-svyazi.ru
+||cheb.ru/img/$object
+||cheb.ru/uploads/$object
+||na-svyazi.ru/img/$object
+||na-svyazi.ru/uploads/$object
 !
 ! FastPic.ru
 ! Периодически используется то одна часть этого списка, то другая
@@ -4080,7 +4480,7 @@ cnews.ru##.banner_wrapp
 cnews.ru###mag_banner
 ||cnews.ru/img/banner/
 ||cnews.ru/inc/banners/
-||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
+! ||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
 ||zoom.cnews.ru/inc/bpic/
 rbcdaily.ru##.c-block_content_article_baner
 rbcdaily.ru##[class*="_adv"]
@@ -4119,7 +4519,6 @@ utro.ru##.conteiner-partner
 @@||adsocial.ru/app/$script,object,domain=178.63.99.21
 !
 ! Ukr.NET
-||informers.ukr.net^
 search.ukr.net##.ads-header
 search.ukr.net##.ads-header + SPAN > .ad
 ||ukr.net/i/rozetka/
@@ -4186,7 +4585,6 @@ x-soft.tomsk.ru###shop
 ||gorod.tomsk.ru/i/b/
 ||kompstar.tomsk.ru^$third-party
 ||mp1.tomsk.ru/h/*
-||nirvana.tomsk.ru/pic/kartinki/
 ||tg.tomsk.ru/$third-party
 ||tomsk.ru/resources/content/
 ||tomsk.ru/ttt/
