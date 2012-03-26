@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: RJUcJsbAOnJWaiydQOERNw
-! Last modification time (GMT): 2012.03.25 22:08
+! Checksum: AHFkkH+/cV7RaL5+jtvR+Q
+! Last modification time (GMT): 2012.03.26 21:14
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -48,7 +48,9 @@ _facebook.gif
 !------------ Google ----------------------------------------------------------
 ##.g_plus
 ##button[class="gbil esw eswd"]
+/icons/gplus-
 ||gmodules.com/ig/images/plus_google.gif
+||google.*/cse/brand?form=
 ||translate.google.com/translate_a/element.js?
 !
 !------------ ICQ -------------------------------------------------------------
@@ -270,6 +272,7 @@ navitel.su##.extra_append:last-child
 !#informers.bookmark
 .ru/informer/$third-party
 //informers.$third-party
+/free/weather24.htm|
 ||bagnet.org/informer/$third-party
 ||bigmir.net/get_informers/
 ||calend.ru^$third-party
@@ -322,9 +325,11 @@ _lj_times_
 ! Скрипт счётчика гуглоаналитики. Реальный счётчик и так блокируется, а это правило постоянно создаёт проблемы тут и там.
 ||google-analytics.com^$third-party,domain=~asus.com|~avast.com|~imageshack.us|~station.ru|~thisissand.com|~whorush.com
 ! Виджет часов
+/clock.swf
 /mikuclock.swf
 ||chasikov.net.ru^$third-party
 ||clock-desktop.com^$third-party
+||flash-clocks.com^$third-party
 ! Виджеты облака тэгов на флэше
 /tagcloud.swf
 /wp-content/plugins/wp-cumulus/
@@ -349,6 +354,7 @@ autovisio.com.ua###globallasttd > DIV[class$="-block"] + DIV[style^="padding:250
 club.ru##.container-banners
 ||content.printdirect.ru^$third-party
 ||cybermusic.ru/*/flash_logo.swf
+||daily.com.ua/upload/banner/
 demotivators.ru###comments-wrap
 demotivators.ru###reply_form
 demotivators.ru##.commentsmessage
@@ -386,6 +392,7 @@ muz.ru##DIV[style*="400px;"][style$="240px;"]
 ||nix.ru^$object
 overclockers.ru###logo
 ozon.ru##.news_block
+||politarena.org.ua/reclama/
 ||promote.opera.com^$third-party
 russian-fiancee.com###top_logo
 rutor.org###toolbar

@@ -1,6 +1,6 @@
 [Adblock Plus 1.3.5]
-! Checksum: yaHY1hg50EGHoIntrBvwpQ
-! Last modification time (GMT): 2012.03.25 22:08
+! Checksum: o9m9kP2F+TEsGZ5XN9PpFQ
+! Last modification time (GMT): 2012.03.26 21:14
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -31,10 +31,13 @@
 ! о том, что пользователь читает в данный момент. Если мешают — выключите!
 ||facebook.com/plugins/comments.php?
 ||facebook.com/plugins/like.php?$third-party
+||facebook.com/plugins/likebox.php?$third-party
 ||viadeo.com/exec/recommend:getRecommend?$third-party
 ||vk.com/widget_comments.php?$third-party
+||vk.com/widget_community.php?
 ||vk.com/widget_like.php?$third-party
 ||vkontakte.ru/widget_comments.php?$third-party
+||vkontakte.ru/widget_community.php?
 ||vkontakte.ru/widget_like.php?$third-party
 !
 ! = Устранение бесконечной загрузки страниц из-за блокировки счётчика =========
@@ -93,8 +96,9 @@ _8831.gif
 /cnt-gif1x1.php?
 /count.php
 /counted/*
-! /counter.$~object-subrequest,domain=~humblebundle.com|~li.org|~mail.ru
 ^counter.$image,third-party
+!$domain=299.ru|c.a.ua
+/counter.php?$~object-subrequest
 /counter/*
 /counter?
 /counters/*
@@ -117,8 +121,6 @@ _8831.gif
 /xcount.php?
 |http://li.ru/*?
 |http://r.i.ua/s?
-||r.msn.com^
-! TBD
 ||agropoisk.ru/getbanner.php?
 ||ajur.info/cgi-bin/ac.fcgi?
 ||amung.us^$third-party
@@ -132,11 +134,13 @@ _8831.gif
 ||bname.ru^$third-party
 ||bonbone.ru/bon.php?
 ||burstnet.com^$third-party
+||business.if.ua/common/scripts/getstat.asp?
 ||c.2fly.kz^$third-party
 ||c.bigmir.net/?
 ||c.hit.ua^$third-party
 ||c.microsoft.com^$third-party
 ||c.toodoo.ru^$third-party
+||c.wen.ru^$third-party
 ||ch.rbc.ru/click?*
 ||circle.am/service/?
 ||clickaider.com^$third-party
@@ -168,6 +172,7 @@ _8831.gif
 ||fxmail.ru/rating/$third-party
 ||geovisite.com^$third-party
 ||getrank.net^$third-party
+||gigatop.net/c.php?
 ||gismeteo.*/static/js/xgemius*.js|
 ||google-add.com/button/
 ||google.com/uds/stats?
@@ -180,9 +185,11 @@ _8831.gif
 ||hit.meta.ua^
 ||hitbox.com^$third-party
 ||host-tracker.com^$third-party
+||hotblogs.org.ua^$third-party
 ||hotlog.ru^$third-party
 ||hsdn.org^$third-party
 ||i.bigmir.net/cnt/
+||i.online.ua/catalog/logo/
 ||i.webo.in^$third-party
 ||if6.ru/tools/$third-party
 ||ijes.ru^$third-party
@@ -218,6 +225,7 @@ _8831.gif
 ||ping-admin.ru^$third-party
 ||pinterest.com^$third-party
 ||pr-cy.catzone.ws/img_*.$image
+||pr-cy.ru/img-
 ||pr-cy.ru/partner/
 ||pr-cy.ru/prcy_$third-party
 ||prchecker.info/getpr.php?
@@ -229,6 +237,7 @@ _8831.gif
 ||proext.com^$third-party
 ||push2check.com^$third-party
 ||quantserve.$third-party
+||r.msn.com^
 ||radar.imgsmail.ru^
 ||rang.com.ua^$domain=~rang.com.ua
 ||rulink.de^$third-party
@@ -237,6 +246,7 @@ _8831.gif
 ||sedotracker.com^$third-party
 ||seemore.ru^$third-party
 ||seocounter.ru^$third-party
+||seogift.ru^$third-party
 ||seoprcy.ru^$third-party
 ||serank.ru/prinf/view.php?
 ||simpletop.net^$third-party
@@ -244,6 +254,7 @@ _8831.gif
 ||sitelog.forsite.ru^$third-party
 ||sitemeter.com^$third-party
 ||socratos.net^$third-party
+||spywap.net/ct/
 ||stat.su^$third-party
 ||stat24.com.ua^$domain=~stat24.com.ua
 ||stat24.com^$third-party
