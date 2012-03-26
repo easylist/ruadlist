@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: Q4FouPb4gZnh66sCdYtbOQ
-! Last modification time (GMT): 2012.03.26 07:52
+! Checksum: p7EDzH0oxKzs2dNfliiyKg
+! Last modification time (GMT): 2012.03.26 08:21
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -318,6 +318,9 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 /baners/*
 /banner.gif
 _banner.gif
+! /banner.php?sid=*&bn=*&ad=, /js/banner.php?id=$third-party,subdocument
+! ||rde.ru/banner.php?, ||soccer.ru/js/banner.php?
+/banner.php?
 /bannerex.cgi/getbanner.js?id=
 /cgi-bin/banner/*
 /cgi-bin/banners/*
@@ -1807,7 +1810,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! domain=intv.ru|lostcinema.ru
 !
 ! BodyClick.net
-/banner.php?sid=*&bn=*&ad=
 /bodyclick.$~popup,popup
 .bodyclick.$~popup,popup
 /clickunder.js
@@ -2020,7 +2022,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||top.softweb.ru^
 !
 ! RealTraf.ru
-/js/banner.php?id=$third-party,subdocument
 /js/peeldown.php?id=$third-party,script
 /js/popup.php?id=$third-party,script
 /js/slider.php?id=$third-party,script
@@ -3039,6 +3040,7 @@ kolesa.kz##.layout.pipes
 ||komcity.ru/i/commerce/
 ||koob.ru/*_reklama.
 ||koob.ru/*.php?*=$domain=klex.ru
+||koob.ru/cache/
 korrespondent.net##.box_info.iewid_doublecol
 korrespondent.net###mydrive_block
 korrespondent.net###realty_block
@@ -3556,7 +3558,6 @@ smotri.com###banner-header-bottom
 ||sobesednik.ru^$object
 soccer.ru##.linksblock
 soccer.ru##TD[width="120px"] > DIV[style] > NOINDEX
-||soccer.ru/js/banner.php?
 soft-arena.ru##NOINDEX
 soft-best.ws##.mex_adv_inside_container
 soft-best.ws##.slink NOINDEX
