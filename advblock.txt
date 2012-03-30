@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: ujKmSXHU991tdYzx+u59lg
-! Last modification time (GMT): 2012.03.30 20:05
+! Checksum: 2mYTV5ZYG2X1Jbnq+uktjg
+! Last modification time (GMT): 2012.03.30 20:40
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -105,7 +105,8 @@
 ||travian.com.ua/landingpage/$image,~image,popup
 ||yapfiles.ru^*/rating_by_pop/$image,~image,popup
 ||zzima.com^$popup,domain=~zzima.com
-! Мошенники. В основном блокируются на уровне редиректов, но лучше и так.
+! - Мошенники -----------------------------------------------------------------
+! В основном блокируются на уровне редиректов, но лучше и так.
 !#scam.bookmark
 ||help2play.com^$~popup,popup
 ||homebysiness.ru^$~popup,popup
@@ -116,15 +117,15 @@
 ||xn--80aadvsxamv.net^$~popup,popup
 ! Подделка сайта вопросов-ответов mail.ru и других
 /popua/*$image,~image,popup
-||0tveti-mall.com^$~popup,popup
 ! Если найдётся ещё где, можно сделать правило /otveti/$popup
-||avt0.info/otveti/$~popup,popup
+||avt0.info^$~popup,popup
 ||duits1.ru^$~popup,popup
 ||emmanuelchurchrdc.com^$~popup,popup
 ||otveti2012.ru^$~popup,popup
 ||otvetru.ru^$~popup,popup
 ||otvllet-maiill.ru^$~popup,popup
 ||otwety-mail.com^$~popup,popup
+||sportfanat.info^$~popup,popup
 ! Подделка сайта ВКонтакте
 ||vsemdeneg.ru^$~popup,popup
 ||vzara.ru^$~popup,popup
@@ -134,7 +135,7 @@
 ||voprosotvet.info^$~popup,popup
 ||vsemtube.ru^$~popup,popup
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
-||youtube.com^$domain=help2play.com|otveti2012.ru|otvetru.ru|vmesterabotaem.ru|vsemdeneg.ru|vsemtube.ru|voprosotvet.info|vseneveroyatnoprosto.info
+||youtube.com^$domain=help2play.com|otveti2012.ru|otvetru.ru|sportfanat.info|vmesterabotaem.ru|vsemdeneg.ru|vsemtube.ru|voprosotvet.info|vseneveroyatnoprosto.info
 ||vk.com^$domain=moneymaiker.ru,vmesterabotaem.ru
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
 ||devochki.cz^$third-party,~popup,popup
@@ -3447,7 +3448,7 @@ killfilms.ru##A[href^="http://dosugcz.biz/"]
 ||killfilms.ru/*/girls/
 kino.ukr.net##.bn
 kino-dom.tv###dle-info + DIV[align="center"] > :not(#dle-content)
-||kino-dom.tv/600x130_
+||kino-dom.tv^$object
 kino-online.org##IMG[height="120"][width="600"]
 kino-zal.tv##BLINK
 kinobanda.net##.main-bg A[target="_blank"] > IMG
@@ -4152,6 +4153,7 @@ uniongang.tv##.outer[align="center"] .block CENTER > A[target="_blank"] > IMG[bo
 uniongang.tv##.outer[align="center"] > BR
 uniongang.tv##[id^="bn_"]
 ||uniongang.tv^$object
+||unionpeer.org^$object
 ||unsorted.me/images/$object
 ||unlockers.ru/rotator.php
 upload.com.ua##.info_banner_block
