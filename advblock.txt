@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 8cjlsLgJakYhLJmItyoW+w
-! Last modification time (GMT): 2012.03.30 13:17
+! Checksum: wgxcN6SK8c64Zl3Z85y49Q
+! Last modification time (GMT): 2012.03.30 13:46
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -628,7 +628,6 @@ _tizers.
 ||adhub.ru^
 ||adizer.ru^
 ||adjes.ru^
-||adlabs.ru^$third-party
 ||adland.ru^
 ||adlog.com^$third-party
 ||adme.ru^$third-party
@@ -1094,7 +1093,6 @@ _tizers.
 ||lovn.ru^$third-party
 ||lux-bn.com.ua^$domain=~lux-bn.com.ua
 ||luxcash.ru/contekst.*&luxcash_uid=
-||luxup.ru^$third-party
 ||luxurycash.net^$third-party
 ||lydiz.com^$third-party
 ||m2k.ru/cgi-bin/
@@ -1968,6 +1966,10 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Что-то я позабыл зачем нужно было оставлять всё это…
 ||medialand.ru/code?
 ||popunder-mladnet.medialand.ru
+!
+! AdLabs.ru - разнопрофильная компания предоставляющая различные услоги включая рекламу.
+! Их собственный домен для распространения рекламы не используется.
+||luxup.ru^$third-party
 !
 ! MediaRich.ru
 /gask.cgi?ids=$third-party
@@ -2925,6 +2927,8 @@ appleinsider.ru##BODY > NOINDEX:first-child
 ||argumenti.ru/images/partners/
 ariom.ru##A > IMG[width="160"][height="120"]
 ||ariom.ru/img/$object
+astromeridian.ru##[id^="blok_verh_rekl"]
+||astromeridian.ru/assets/images/reklama2/
 athlete.ru##A[target="_blank"] > IMG[width="120"][border="0"][style]
 athlete.ru##A[target="_blank"] > IMG[height="90"][border="0"][alt]
 forum.athlete.ru##.nopad
@@ -4628,8 +4632,6 @@ x-soft.tomsk.ru###shop
 @@||adv.gpm-digital.com/crossdomain.xml$object-subrequest
 ! Домены Фольксвагена: $domain=volkswagen-nutzfahrzeuge.de|volkswagen.de
 @@.de/content/medialib/vwd4/*/homepage/teaser/
-! Скрипт adlabs.ru вставляющий на страницу промо-код. См. issue 127.
-@@||client.adlabs.ru^*/javascript/main.js
 ! Правила для отдельных сайтов
 @@.ru/banners/$domain=citydom.ru|onlime.ru|webnames.ru
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
