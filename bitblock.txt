@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: sgzS4s9mzX8WArIibJzTEw
-! Last modification time (GMT): 2012.03.31 01:21
+! Checksum: mEI+CZuz5GE9j2lYLhEPvQ
+! Last modification time (GMT): 2012.03.31 01:25
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -616,10 +616,6 @@ _userbar_$image
 ||zaers.ru^$third-party
 ||zelgan.ucoz.ru/Userbarss/
 ||zoometric.ru^$third-party
-!
-!------------------------------------------------------------------------------
-!- Дальнейшие правила взяты из подписки от fanboy и нацелены исключительно на -
-!- блокирокву мусора из социальных сетей. Не оптимальные правила удалены.     -
 !------------------------------------------------------------------------------
 ! Правила, аналогичные правилам из подписки фанбоя
 /digg.gif$domain=~digg.com
@@ -627,13 +623,18 @@ _userbar_$image
 /livejournal.png$domain=~livejournal.com
 /reddit.gif$domain=~reddit.com
 /technorati.gif$domain=~technorati.com
-/vkontakte.png$domain=~vkontakte.ru|~vk.com
+! Правила для иностранных сайтов
+tweaktown.com##.content-latestpost-socialbar > A > .tip
+!------------------------------------------------------------------------------
+!- Дальнейшие правила взяты из подписки от fanboy и нацелены исключительно на -
+!- блокирокву мусора из социальных сетей. Не оптимальные правила удалены.     -
+!------------------------------------------------------------------------------
 ! - Модифицированные правила
 ~z-music.ru###social_icons
 ~zippyshare.com###share_button
 ! Заменяет правила скрытия на юзерскриптсах
 ||userscripts.org/images/handycons/
-! - Остальные
+!------------------------------------------------------------------------------
 ! Fanboy's Annoyance list Addon
 ! Updated: 30 Mar 2012
 ! License: http://creativecommons.org/licenses/by/3.0/
