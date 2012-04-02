@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: c5nxROltUsbAWGE4PsXYhg
-! Last modification time (GMT): 2012.04.02 00:38
+! Checksum: ZnolMxKe7fQ8LQa0oumO8Q
+! Last modification time (GMT): 2012.04.02 00:53
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -625,7 +625,6 @@ _tizers.
 ||addnow.ru^$third-party
 ||addweb.ru^
 ||adfog.ru^
-||adforce.ru^
 ||adfun.ru^
 ||adgo-online.de^
 ||adhands.ru^
@@ -1790,6 +1789,12 @@ _tizers.
 /adfox.$script
 /adfox/*$image,object,script,subdocument
 !
+! AdGamble.ru
+/code/vkshow.php?id=$third-party
+||adforce.ru^
+! $domain=adgamble.net|adgamble.ru
+||adgamble.$third-party
+!
 ! AdRiver.ru
 ###ad_ph_1
 ###ad_ph_2
@@ -2072,10 +2077,10 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||top.softweb.ru^
 !
 ! RealTraf.ru
-/js/peeldown.php?id=$third-party,script
-/js/popup.php?id=$third-party,script
-/js/slider.php?id=$third-party,script
-/js/vkmessage.php?id=$third-party,script
+/js/peeldown.php?id=$third-party
+/js/popup.php?id=$third-party
+/js/slider.php?id=$third-party
+/js/vkmessage.php?id=$third-party
 ||mobi-traf.ru^$~popup,popup
 !$domain=realtraf.net|realtraf.ru
 ||realtraf.$third-party,~popup,popup
@@ -2387,6 +2392,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||tt51.ru^
 ||umi1.ru^
 ||unk3.ru^
+||uyuuqlss.ru^
 !
 ! Ucoz.net
 ||ucoz.*/img/ma/cv.gif
