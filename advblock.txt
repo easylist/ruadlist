@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: cMZ+pp93jpkOmXN/o2I8/g
-! Last modification time (GMT): 2012.04.02 11:14
+! Checksum: Z3ZgU5celaDs6vpeKmqInw
+! Last modification time (GMT): 2012.04.02 18:25
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -4649,18 +4649,20 @@ x-soft.tomsk.ru###shop
 ! - Против ложных срабатываний ------------------------------------------------
 !#exfalse.bookmark
 ! Исправление проблем возникших в результате работы подписки на отдельных сайтах
+! Без этого ломается интеграция с виджетом «ВКонтакте» на 3dnews.ru
+@@||3dnews.ru/www/delivery/ajs.$script,domain=3dnews.ru
+! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
+@@||ads.tomtel.ru/adjs.$script
+! Видео с yatv.ru, видео на kinopoisk.ru
+@@||adv.gpm-digital.com/crossdomain.xml$object-subrequest
+! Ложное срабатывание в видеоплеере RuTube.
+@@||rutube.ru/trackinfo/*?ad_ids=
 ! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
 @@||video.*.user.madbanner.ru^$object-subrequest
 ! Видео с own3d.tv, показываемое на других сайтах (goodgame.ru|sc2tv.ru)
 @@||vox-static.liverail.com/swf/*/admanager.swf$domain=ru
-! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
-@@||ads.tomtel.ru/adjs.$script
-! Без этого ломается интеграция с виджетом «ВКонтакте» на 3dnews.ru
-@@||3dnews.ru/www/delivery/ajs.$script,domain=3dnews.ru
 ! Игра MonsterWold на facebook'е
 @@||wooga.com/gardens/configurations/production/teaser.
-! Видео с yatv.ru, видео на kinopoisk.ru
-@@||adv.gpm-digital.com/crossdomain.xml$object-subrequest
 ! Домены Фольксвагена: $domain=volkswagen-nutzfahrzeuge.de|volkswagen.de
 @@.de/content/medialib/vwd4/*/homepage/teaser/
 ! Правила для отдельных сайтов
