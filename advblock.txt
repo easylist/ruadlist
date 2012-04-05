@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: j4uSWlXmu39E9f9CFdypwQ
-! Last modification time (GMT): 2012.04.04 10:49
+! Checksum: fwOcRPO6FjAgIxBdCv/S3A
+! Last modification time (GMT): 2012.04.05 09:53
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -38,6 +38,7 @@
 /adv_clk_redirect.php?$image,~image,popup
 ! $domain=playground.ru
 /popunder.$image,~image,popup
+_popunder.$image,~image,popup
 ||crusewind.net/click/direct.php?$image,~image,popup
 ||fileshare.in.ua^*?gogogo$image,~image,popup
 ||filonet.ru/engine/redirect.php?url=$image,~image,popup
@@ -272,7 +273,6 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 /mirmaek/*$image
 ! adfox.ru, adwolf.ru, kavanga.ru…
 /prepareCode?$match-case
-/redtram.
 /richarbuz.
 .ru/ads/
 /rnb.php?id=
@@ -419,6 +419,8 @@ _tizers.
 ! $domain=24smi.org|auction.ua|faninternet.com.ua|missrich.net|openmedia.com.ua
 /informer.php?
 /informer/script.php?id=
+/redtram.$domain=~redtram.com
+.redtram.$domain=~redtram.com
 /sblocks_informer.
 ||66.ru/mod/news2/
 ||afera.info/informer_
@@ -432,7 +434,6 @@ _tizers.
 ||cosmo.ru/cosmo_informers/
 ||doramy.net/informer/
 ||exchange.meta.ua^
-||exchangenews.ru^$match-case,third-party
 ||fair.ru/*/i.php?
 ||fark.ru/js/bannerLink.
 ||from-ua.com/adds/getinf.php?
@@ -724,7 +725,6 @@ _tizers.
 ||banner-storage.fo.ru^
 ||banner.ua^
 ||bannerhost.ru^
-||bannerka.ua^
 ||bans.bride.ru^
 ||bans.name^
 ||bantex.ru^
@@ -890,7 +890,7 @@ _tizers.
 ||fooder.ru^$third-party
 ||forex4you.org/flash/partners/
 ||forsage.biz^$third-party
-||fotkidepo.ru^$script
+||fotkidepo.ru^$third-party,script
 ||fotocash.ru^
 ||fotostrana.ru/banner?
 ||fotostrana.ru/promo/
@@ -958,7 +958,7 @@ _tizers.
 ||hitex.com.ua^$domain=~hitex.com.ua
 ||hitlist.ru^$third-party
 ! ||hitter.ru^
-||hmn.ru^$third-party
+||hmn.ru/mhmb_bs/viewb.js?
 ||holder.com.ua^
 ||host4media.com^$third-party
 ||hostmir.net^
@@ -1133,7 +1133,6 @@ _tizers.
 ||media.online.ua/all/gft/
 ||mediacontext.$third-party
 ||mediaget.com^$third-party
-||mediakadr.ru^$third-party
 ||mediaportal.ru^$third-party
 ||mediarotator.ru^$third-party
 ! $domain=mediaunder.org|mediaunder.us
@@ -1378,7 +1377,6 @@ _tizers.
 ||recreativ.com.ua^$third-party
 ||recreativ.ru^$third-party
 ||red.by/redban
-||redtram.com^$third-party
 ||refer.ru^$third-party
 ||referalov.net^$third-party
 ||refo.ru^$third-party
@@ -1477,6 +1475,7 @@ _tizers.
 ||smsbanner.ru^$third-party
 ||smsconvertv3.ru^$third-party
 ||smsfiles.ru/ban*.gif
+||smsvcash.ru^
 ||snimislivki.ua^$third-party
 ||soft-teleport.ru/uploads/ad/
 ||soft4dle.com^$third-party
@@ -1545,6 +1544,7 @@ _tizers.
 ||tizerget.net^$third-party
 ||tizerka.in^$third-party
 ||tizero.ru^$third-party
+||tizerplus.ru^
 ||tizerstock.com^$third-party
 ||tizzer.ru^$third-party
 ||tle.ru^$third-party
@@ -1826,6 +1826,14 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||adsyst.$third-party
 ||levrico.com^
 ||lstay.com^
+||mirskidok.net^
+!
+! AdvLand.ru
+.ru/r/get/?id=*&div=$third-party,script
+||advland.ru^$third-party
+||exchangenews.ru^$third-party
+||mediakadr.ru^$third-party
+||mediaskyline.ru^$third-party
 !
 ! AdvMaker.ru
 ! IP: 95.169.186.164
@@ -1991,20 +1999,24 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 !
 ! MediaRich.ru
 /gask.cgi?ids=$third-party
-! $domain=mediarich.cc|mediarich.ru
-||mediarich.$third-party
+||adsrichmedia.info^
 ||advertising-richmedia.info^
+||advertisingrichmedia.info^
 ||codemedia.info^
-||codemediarich.ru^
 ||code-mediarich.ru^
+||codemediarich.ru^
 ||codes-media.ru^
 ||marketingrichmedia.info^
 ||media-code.info^
 ||mediacod.in^
+! $domain=mediarich.cc|mediarich.ru
+||mediarich.$third-party
 ||mediarich-code.ru^
 ||mediarichcode.ru^
+||richadspot.info^
 ||richadvertisingspot.info^
 ||richmedia-adspot.info^
+||richmediaadspot.info^
 ! Прочее
 ||glavrich.com^
 !
@@ -2048,6 +2060,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||listof.mobi^$~popup,popup
 ||mabirol.com^$~popup,popup
 ||meinlist.com^$~popup,popup
+||mesopo.ru^$~popup,popup
 ||mob2web.com^$~popup,popup
 ||mobalives.com^$~popup,popup
 ||mobapeople.com^$~popup,popup
@@ -2079,6 +2092,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||birg-traf.ru^$third-party
 ||cls.roshu.ru^$
 ||ddd.rustorrents.net^
+||forum.dwnld.net.ua^
 ||ref.myrefs.org.ua^
 ||rek.x-zona.org^
 ||rx9aef.driver-id.ru^
@@ -2399,6 +2413,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||cm11.ru^
 ||fawer.ru^$~popup,popup
 ||mir17.ru^$~popup,popup
+||rraketa.ru^
 ||tt51.ru^
 ||umi1.ru^
 ||unk3.ru^
@@ -3338,21 +3353,17 @@ habrahabr.ru###topline
 habrahabr.ru##.windows_phone_htmlblock
 ||hacker-pro.net/banner/
 haleava.net##CENTER > NOINDEX > A[target="_blank"]
-||tracker.hdclub.com.ua/dox/$domain=hdclub.org,tracker.hdclub.com.ua
 hdreactor.org###mc_240_400
-hi.dn.ua##.artbannersplus
-||hqroom.ru/images/
 hh.by,hh.kz,hh.ru,hh.ua##.b-topbanner
 ||hh.ru/banners.
-hi-fi.ru##.logo + NOINDEX
-hi-fi.ru##DIV[style^="width: 900px; height: 90px;"]
-||hi-fi.ru/bitrix/images/
 hideme.ru##[id*="hidemead"]
 ||hideme.ru/ad.js
+hi.dn.ua##.artbannersplus
+hi-fi.ru##DIV[style^="width: 900px; height: 90px;"]
+hi-fi.ru##.logo + NOINDEX
+||hi-fi.ru/bitrix/images/
 hl-inside.ru###orphus
 hl-inside.ru##.right-block.rek
-hmn.ru##A > IMG[width="240"]
-||ww.hmn.ru^
 horadric.ru##[id^="brand-"]
 ||horadric.ru/styles/*/brand_
 hostingfailov.com###tablespons
@@ -3361,7 +3372,8 @@ hotcharts.ru##[class$="_banner"]
 ||hotcharts.ru/img/*_700x150
 hotsoft.net.ru##NOINDEX > TABLE[width="100%"]
 ||hottabych.net^$object
-||hyundai-club.com.ua/banner_
+||hqroom.ru/images/
+||htmlbook.ru/sites/default/files/$object
 ||hw-lab.com/uploads/adds/
 ||antec.com/*/web_banner/$domain=hw-lab.com
 ||noiseblocker.de^$domain=hw-lab.com
@@ -3369,6 +3381,8 @@ hwp.ru##[class^="promo"]
 hwp.ru##[class*="tbann"]
 hwp.ru##.l-article-wrapper > CENTER > A[target="_blank"] > IMG[border="0"]
 ||hwp.ru/images/mid/h-anons.
+||hyundai-club.com.ua/banner_
+||tracker.hdclub.com.ua/dox/$domain=hdclub.org,tracker.hdclub.com.ua
 !
 !I
 i.ua##.TopBanner730
@@ -3403,6 +3417,7 @@ inflora.ru##[class*="banner"]
 infox.ru##.idv3-advert2
 infox.ru##.idv3-popup-frame
 infox.ru###dmLarge
+||ingos.ru/common/img_ru/banners/
 inmoment.ru##CENTER > A[target="_blank"]
 ||inmoment.ru/img/$object
 inosmi.ru##.banners
@@ -3531,6 +3546,7 @@ kyivpost.ua##.banner
 kyivpost.ua###advert_full
 !
 !L
+||l2on.net/img/friends/
 ||lacucinaitaliana.ru/images/
 ||ladyline.com.ua/images/banner
 ||lavteam.net/banners/
@@ -3791,6 +3807,9 @@ oszone.net###rightcol-c > DIV > NOINDEX
 ||oszone.net/ibm.html
 !
 !P
+||panicnews.ru^$subdocument
+||panicnews.ru/js/popup.js
+||panicnews.ru/r.php?l=
 ||patria.md/i/partners/
 pc-user.ru###dropin
 ||pctuner.ru/plugins/bworks/files/
@@ -3810,6 +3829,8 @@ pirat.ca###sidebar2
 ||glee.ucoz.ru^$domain=pirat.ca
 planetaua.net##.market
 ||deltamarket.com.ua^$domain=planetaua.net
+platon.kz##.logo + #ja-search
+||platon.kz^$object
 playground.ru##.branding
 ||playground.ru/images/branding/
 ||playground.ru/images/*-branding-
@@ -3981,6 +4002,7 @@ serial-on.clan.su##A[href^="http://www.ruclicks.com/"]
 serviceguide.megafonmoscow.ru###leftMenuBanner
 ||seti.ee/*reklaam/
 ||severodvinsk.me^$domain=severodvinska.net
+||sexgamesbox.com/images/
 sfw.org.ua##.ws_main
 sfw.org.ua##CENTER > NOINDEX
 sfw.org.ua##[class$="-for-hueta"]
@@ -4028,6 +4050,8 @@ softnavigator.ru##.shortnews > .postfooter:first-child
 softnavigator.ru##.shortnews > .postfooter:first-child + TABLE
 softnewsportal.ru##.content > DIV:not(#dle-content) > .news
 softodrom.ru##.prgentry.nobottom
+softoroom.net###ipbwrapper > NOINDEX
+||softoroom.net/2pclick/
 softportal.com##.TblBorderCLR TD[width="25%"] + TD[width="75%"][style] > TABLE
 softportal.com##.TblOBan
 softportal.com##.TblTopBanCLR
@@ -4325,6 +4349,7 @@ zhmak.info##TD[width="180"]:first-child + TD[width="5"] + TD > :not([class="news
 znaikak.ru##.blockLinks
 zol.ru##TABLE[style="table-layout:fixed; border-collapse:collapse"]
 ||zol.ru/noteb/
+||zvezdakaraoke.com/*.php?id=
 !
 ! Cheb.ru
 cheb.ru,na-svyazi.ru##TD[background]
@@ -4665,6 +4690,8 @@ x-soft.tomsk.ru###shop
 @@||wooga.com/gardens/configurations/production/teaser.
 ! Домены Фольксвагена: $domain=volkswagen-nutzfahrzeuge.de|volkswagen.de
 @@.de/content/medialib/vwd4/*/homepage/teaser/
+! Медиаплеер soundcloud.com
+@@.soundcloud.com/player.swf?url=
 ! Правила для отдельных сайтов
 @@.ru/banners/$domain=citydom.ru|onlime.ru|webnames.ru
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
@@ -4675,6 +4702,9 @@ x-soft.tomsk.ru###shop
 @@/images/banners/*$domain=aida64.com|bakabt.com|danuradio.com|faberlic.ru|kingston.com|martgallery.ru|molodifest.ru|slinux.ru|tbt.ru|vorbis.com|xxxxbar.ru
 @@/prepareCode?$domain=alfabank.ru
 @@/upload/rk/*$domain=bbk.ru|kykyryza.ru|qwerty.ru|radiorecord.ru
+@@||7771000.ru/images/*/baners/$~third-party
+@@||900.md/ads/js/$~third-party
+@@||900.md/ads/images/$~third-party
 @@||a1.net/*/*/imgs/teaser/$domain=a1.net
 @@||adcast.ru/mtsweb?$domain=mts.ru
 @@||adriver.ru/*.xml|$object-subrequest,domain=tsn.ua|tvjam.ru
@@ -4709,6 +4739,7 @@ x-soft.tomsk.ru###shop
 @@||russia.ru/reklama/32x32.flv?link1=$object-subrequest,domain=vz.ru
 @@||rzd.ru/banner/$xmlhttprequest,domain=rzd.ru
 @@||semrush.com/m/scripts/reports/backlinks.$~third-party
+@@||sports.ru^*/skin/images/banners/$~third-party
 @@||statcounter.com/counter/counter.js$~third-party
 @@||sticker.yadro.ru/ad/3.xml?$object-subrequest,domain=rutv.ru
 @@||sticker.yadro.ru/i/ad_in_video.swf$domain=rutv.ru
@@ -4717,6 +4748,7 @@ x-soft.tomsk.ru###shop
 @@||stopgame.ru/www/images/$image,domain=stopgame.ru
 @@||teachvideo.ru/advert/$~third-party
 @@||teachvideo.ru/www/delivery/$~third-party
+@@||tut.by/*/ads1/*/params.php?uid=$object-subrequest,domain=tut.by
 @@||videonow.ru/ad_holder/$domain=molodejj.tv
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 @@||vk.com/ads*.php?__query=$~third-party
