@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: mY6tge2ZVk2I+4ryLUTUaA
-! Last modification time (GMT): 2012.02.07 08:18
+! Checksum: 13FZ2LRHQzqvj2hGSVLGVg
+! Last modification time (GMT): 2012.04.06 09:21
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -1808,6 +1808,7 @@ _tizers.
 ###ad_ph_2
 ###ad_ph_3
 ###adriver_middle
+###adriver_top
 ||ad.adriver.ru^$domain=player.rutv.ru
 compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /banners/*/*/0/index.$subdocument
@@ -3073,7 +3074,6 @@ cyberinfo.ru###bl_05
 cyberstyle.ru##.b-banner_600x90
 !
 !D
-d09032009.narod.ru##A[target="_blank"] > IMG
 danilidi.ru###Okoshko
 danilidi.ru##BODY > NOINDEX
 danilidi.ru##TABLE[width="1000"][height^="6"][bgcolor][align="center"]
@@ -3121,9 +3121,7 @@ drive.ru###banner240x400
 driver-id.ru##[class$="_hbanner_960"]
 drugasmuga.com##.bannerWrap
 ||drumandbass.ru/img*banner
-! Мусор на сайтах маркетгида.
 .dsvload.net/$script,~third-party
-.дсвлоад.рф/$script,~third-party
 ||dt00.net/gjs/
 ||foreign.dt00.net^
 ||dump.ru/i/
@@ -4174,51 +4172,36 @@ tutu.ru##.overflow
 ||twistcasino.net^$third-party
 !
 !U
-ua-football.com###adriver_top
 ua-football.com##.footer_bottom
-ua-football.com##.inf-emarket
-ua-football.com##.right-253px-column > .block
 ua-football.com##.roz_informers
 ||ua-football.com/interface/ads/
-||ua-football.com/interface/emarket/
-||ua-football.com/interface/obolon/
 uaplay.com##A[href*="li.ru/go?"]
-||bs.uaplayer.com/get?
+||uaplayer.com/get?
+ucrazy.ru,crazys.info##A[target="_blank"] > DIV > IMG[src^="http://img."]
 ucrazy.ru,crazys.info##.banner
 ucrazy.ru,crazys.info###online_games
-ucrazy.ru,crazys.info##A[target="_blank"] > DIV > IMG[src^="http://img."]
 /files/!modules/*$domain=crazys.info|ucrazy.ru
-udaff.com##BODY > DIV:first-child > CENTER
 udaff.com##NOINDEX > A > IMG
 ||udaff.com/image/$object
 ukrainianiphone.com##A[target="_blank"][href="http://www.mshop.in.ua/"]
-ukrinform.ua##.ad
-ukrinform.ua##.rightbar_text > A[target="_blank"]
-||ukrinform.ua/web/informer/uploaded/flash/
 ukrsoft.kiev.ua###dle-content > NOINDEX
 ||underverse.su/misc/
-unian.net###counters
-unian.net###rightban
-uniongang.tv##.outer[align="center"] > BR
-uniongang.tv##.outer[align="center"] > TABLE[width="100%"][border="0"]:first-child
-uniongang.tv##.outer[align="center"] > TABLE[width="100%"][border="0"]:nth-of-type(n+3):nth-of-type(-n+4)
+unian.info,unian.net,unian.ua###counters
+unian.info,unian.net,unian.ua###scroller240350
+uniongang.tv##A[href="http://seedbox.org.ua/"]
+uniongang.tv##.block BR
+uniongang.tv##.block[height="27"]
+uniongang.tv##DIV[target="_blank"][tooltip]
 uniongang.tv##[id^="bn_"]
+uniongang.tv##.outer > BR
 ||uniongang.tv^$object
 ||unionpeer.org^$object
-||unsorted.me/images/$object
-||unlockers.ru/rotator.php
+unsorted.me##TD:first-child + TD[valign="middle"][align="center"]
 upload.com.ua##.info_banner_block
 uploder.ws##CENTER:last-child
 ||uptracker.ru/images/casino/
 ||upweek.ru/wp-content/banners/
 ura-inform.com##IFRAME[width="468"][height="60"]
-urokinadivane.ru##.right_three_top + .left_three_center
-urokinadivane.ru##A[target="_blank"][href^="http://urokinadivane.ru/engine/go.php?url="]
-urokinadivane.ru##[class^="left_col_second_"]
-urokinadivane.ru##[id^="bn_"]
-||urokinadivane.ru/templates/GiGantika/images/swf/
-usde.biz,usde.ru##A[href^="/engine/redirect2.php?url="]
-usde.biz,usde.ru##A[href^="http://usde.ru/adult/go.php?"]
 ||uzumaki.kz/go?$script
 !
 !V
@@ -4352,6 +4335,13 @@ znaikak.ru##.blockLinks
 zol.ru##TABLE[style="table-layout:fixed; border-collapse:collapse"]
 ||zol.ru/noteb/
 ||zvezdakaraoke.com/*.php?id=
+!
+!RF
+город-кингисепп.рф###rek1
+город-кингисепп.рф###leftcolumn IMG[src^="http://img-fotki."]
+город-кингисепп.рф###rightcolumn IMG[src^="http://img-fotki."]
+.дсвлоад.рф/$script,~third-party
+уроки-на-диване.рф##.header-banner
 !
 ! Cheb.ru
 cheb.ru,na-svyazi.ru##TD[background]
@@ -4623,11 +4613,6 @@ yandex.ru,yandex.ua##DIV[id*=direct]
 ||yabs.yandex.*/resource/*.gif
 ||yandex.*/cy?base=0&host=
 !
-! Город Кингисепп
-город-кингисепп.рф###rek1
-город-кингисепп.рф###leftcolumn IMG[src^="http://img-fotki."]
-город-кингисепп.рф###rightcolumn IMG[src^="http://img-fotki."]
-!
 ! Томские ресурсы
 autotom.ru###shop
 desk.tomsk.ru##.right_cell > CENTER
@@ -4751,6 +4736,7 @@ x-soft.tomsk.ru###shop
 @@||teachvideo.ru/advert/$~third-party
 @@||teachvideo.ru/www/delivery/$~third-party
 @@||tut.by/*/ads1/*/params.php?uid=$object-subrequest,domain=tut.by
+@@||ukrainianiphone.com/baners/r/$~third-party
 @@||videonow.ru/ad_holder/$domain=molodejj.tv
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 @@||vk.com/ads*.php?__query=$~third-party
