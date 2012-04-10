@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: VmZHSwWeRPwv5gv86NES0w
-! Last modification time (GMT): 2012.04.09 08:30
+! Checksum: 88zXeyst+IIILlVd+kxIcQ
+! Last modification time (GMT): 2012.04.10 01:51
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -58,6 +58,7 @@ _facebook.gif
 !
 !------------ ICQ -------------------------------------------------------------
 ||icq.com/scripts/online.
+||online.mirabilis.com^
 ||status.icq.com/online.
 !
 !------------ LiveJournal -----------------------------------------------------
@@ -243,6 +244,7 @@ russia.ru##.append-other-applecations
 rutv.ru###btns
 ||safetygate.ru/themes/*/images/bookmarks/
 ||samlab.ws/share42/
+segodnya.ua##.like-button-container
 sfw.org.ua###footer
 sfw.org.ua###qipbtn
 timeout.ru###social-popup
@@ -309,12 +311,10 @@ navitel.su##.extra_append:last-child
 != Мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) =================
 ! Блоки с авторскими правами и, часто, мусором на многих сайтах.
 !#trash.bookmark
-~dw.de###copyright
-##.copyright
 ! Скролл-бар с картинками из постов на различных трекерах и подобном. Точнее это управление от них и автоскролл.
 /jquery.jcarousel.pack.js
 /highslide.$script,stylesheet,domain=~101.ru
-! Интернет-радио с флеш-плеером, разработчики которого не знают о том, что при открытии страницы их радио должно молчать в тряпочку.
+! Интернет-радио с флеш-плеером, разработчики которого не знают о том, что при открытии страницы их радио должно молчать
 ||icefm.ru^$third-party
 ! «Карта» Интернетов.
 ||internetmap.info^$third-party
@@ -322,7 +322,8 @@ navitel.su##.extra_append:last-child
 _lj_times_
 /ljtimes/*
 ! Чатики
-/mchat/*$subdocument
+###comment_error + #output
+/mchat/*
 ||chat.kino-dom.tv^$third-party
 ||chatango.com^$third-party
 ||chatovod.ru/widget/$third-party
@@ -335,7 +336,10 @@ _lj_times_
 ! Виджеты облака тэгов на флэше
 /tagcloud.swf
 /wp-content/plugins/wp-cumulus/
-! Целая куча бесполезных виджетов
+! Прочее
+~dw.de###copyright
+##.copyright
+||b.kavanga.ru/exp?$~object-subrequest
 ||mygold.pp.ua^$third-party
 ! Далее идут правила для отдельных сайтов
 21region.org##.logo
@@ -402,6 +406,8 @@ rutor.org###toolbar
 sfw.org.ua##IMG[width="350"][alt*="userbar"]
 ||shop.warforge.ru/rotation/
 ||static.newsru.*/img/bg.gif
+superhimik.com###login_popup
+superhimik.com##.headerbar
 terabit.biz##.cnt2l
 topgir.com.ua##.singing
 torrents.net.ua###smschatframe
@@ -455,6 +461,7 @@ kadets.info##DIV[id^="post_message_"] + DIV
 ! Встречаются не столько в подписях, сколько в самом тексте. Лучше и не видеть.
 !#smiles.bookmark
 ||colnyshko.ru^$third-party
+||smayli.ru^$third-party
 ||smiles.clan.su^$third-party
 ||smileycentral.com^$third-party
 !
