@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: JJWNIbNGMtAsb+1kzWlZ8g
-! Last modification time (GMT): 2012.04.10 09:42
+! Checksum: z2lzVCmo2NxWGYKPAyYkrg
+! Last modification time (GMT): 2012.04.10 10:51
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -1975,6 +1975,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||luxup.ru^$third-party
 !
 ! MediaRich.ru
+//95.169.186.139^
 /gask.cgi?ids=$third-party
 ||adsrichmedia.info^
 ||advertising-richmedia.info^
@@ -1984,11 +1985,16 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||codemediarich.ru^
 ||codes-media.ru^
 ||marketingrichmedia.info^
-||media-code.info^
+||media-clicks.info^
+! $domain=media-code.info|media-code.ru
+||media-code.$third-party
 ||mediacod.in^
-! $domain=mediarich.cc|mediarich.ru
+! $domain=media-rich.info|media-rich.ru
+||media-rich.$third-party
+! $domain=mediarich.cc|mediarich.in|mediarich.ru|mediarich.us
 ||mediarich.$third-party
-||mediarich-code.ru^
+! $domain=mediarich-code.info|mediarich-code.ru
+||mediarich-code.$third-party
 ||mediarichcode.ru^
 ||richadplace.info^
 ||rich-ad-spot.info^
@@ -1998,6 +2004,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||richmediaadspot.info^
 ! Прочее
 ||glavrich.com^
+! $domain=webrotator.net|webrotator.org
+||webrotator.$third-party
 !
 ! NewsAnons.ru — вроде как новости, но на сторонних сайтах — реклама
 ! Замечено на fastpic.ru и kino-dom.tv, вставляет скрипт с доменов user*click.ru
