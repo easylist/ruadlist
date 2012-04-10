@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: jyQzH6UHRGzbAafOKmzECw
-! Last modification time (GMT): 2012.04.10 04:48
+! Checksum: Lb8kfPKzU28VWr2qd9Dy8w
+! Last modification time (GMT): 2012.04.10 08:41
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -498,10 +498,11 @@ _tizers.
 /clk.js|
 /cout.php?sid=$script
 /fotocash.js
+! $randname.dyndns.info|tv/infob.php?i=
+/infob.php?i=$third-party,script
 /js/girls.php|
 ! $domain=4files.net|qiq.ru|qiq.ws
 /media/kalita1.js
-/out.php?sid=$script
 ! Два скрипта с popinbuilder.icoder.com
 /popin.js
 /popin4.js
@@ -1225,7 +1226,6 @@ _tizers.
 ||novosti.dn.ua^$object
 ||nsoft-s.com^$third-party
 ||nu-stars.com^$third-party
-||numberia.com^
 ||numbers.md^$third-party
 ||o-o.kz/banners/$third-party
 ||obmenniki.com/img/ban
@@ -1882,6 +1882,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /tizers3.
 /viewt.js$third-party
 ||clme.biz^
+||clunder.net^
 ||morenews1.net^
 ||morenews2.net^
 ||morenews3.net^
@@ -2022,6 +2023,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||mediarich-code.ru^
 ||mediarichcode.ru^
 ||richadplace.info^
+||rich-ad-spot.info^
 ||richadspot.info^
 ||richadvertisingspot.info^
 ||richmedia-adspot.info^
@@ -2053,10 +2055,16 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! У всех доменов есть субдомен zork, предлагающий ввести логин и пароль вида zork.domainname.com
 ! На сайтах обычно встречается в форме third-party.name/alphanumerical или subdomain.first-party.name/alphanumerical
 ! http://www.domaincrawler.com/78.140.138.133
+! http://www.webstatico.com/free-reverse-ip-website-check/popunder.ru
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
+//78.140.138.133^
+/out.php?sid=$script
+/popunder.php?id=
 /yaim.php?ad=
 ! ||pop-under.ru^
 ||pop-under.$third-party,~popup,popup
+! $domain=popander.in|popander.mobi
+||popander.$~popup,popup
 ! ||popunder.ru^
 ||popunder.$third-party,~popup,popup
 ||alemobile.ru^$~popup,popup
@@ -2090,19 +2098,29 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||moborobot.com^$~popup,popup
 ||mobraner.com^$~popup,popup
 ||mobyrol.com^$~popup,popup
+||numberia.com^$~popup,popup
 ||numberium.com^$~popup,popup
+||numking.com^$~popup,popup
 ||nummobile.com^$~popup,popup
 ||robimobi.com^$~popup,popup
 ||youhave.mobi^$~popup,popup
 ! Субдомены на сайтах
 ||1.miniporn.ru^
+||bn1.homefot.ru^
 ||cls.roshu.ru^$
 ||ddd.rustorrents.net^
 ||forum.dwnld.net.ua^
+||full.transformice.ru^
+||m.gold-liter.org.ua^
+||pop.erodjek.ru^
+||pop.kinofilez.ru^
+||pu.zipsites.ru^
+||pop.turnik.su^
 ||ref.myrefs.org.ua^
 ||rek.x-zona.org^
 ||rx9aef.driver-id.ru^
 ||top.softweb.ru^
+||www.x2.net.ua^
 !
 ! RealTraf.ru
 /js/peeldown.php?id=$third-party
