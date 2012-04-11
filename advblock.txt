@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: g40cTrYfMe42JADDKvEZxA
-! Last modification time (GMT): 2012.04.11 08:44
+! Checksum: 7wSPSqACdgLDnI9HqZL1/w
+! Last modification time (GMT): 2012.04.11 11:01
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -203,7 +203,6 @@ _popunder.$image,~image,popup
 ##DIV[id^="PC_Teaser_Block"]
 ##DIV[id^="rtn4p"]
 ##DIV[id^="Teaser_Block"]
-##DIV[id^="togetInformer_"]
 ! Предотвращает появление «спиннера» при блокировке скрипта. Попытка блокировать спиннер вызывает ложные срабатывания.
 ##DIV[id^="sblock_inform_"]
 ##[class^="snBody"]
@@ -452,6 +451,7 @@ _tizers.
 ||rssportal.ru/getinformer.php?
 ||seowebtools.ru/inform/infb.php?
 ||smigid.ru/informer/
+||toget.ru/informers/
 ! - Биржи трафика -------------------------------------------------------------
 !#traff.bookmark
 ! Найдены по "/js/bodyclick.php?id=" и "/click/body.php?id="
@@ -1009,6 +1009,7 @@ _tizers.
 ||kachestvoo.ru^$third-party
 ||karabalikelektronik.com/images/reklam
 ||karambas.ru/flash
+||kartinka.com.ua/partner/load?
 ||kaspersky.ru/images/miscellaneouses/468-
 ||kavanga.ru/cstore/$image
 ||kavanga.ru/event?*&banner=
@@ -1450,7 +1451,6 @@ _tizers.
 ||smsconvertv3.ru^$third-party
 ||smsfiles.ru/ban*.gif
 ||smsvcash.ru^
-||snimislivki.ua^$third-party
 ||soft-teleport.ru/uploads/ad/
 ||soft4dle.com^$third-party
 ||softbn.ru^$third-party
@@ -1528,7 +1528,6 @@ _tizers.
 ||tnx.net^$third-party
 ||todaymix.ru^$third-party
 ||tofun.ru/traff/
-||toget.ru^$third-party
 ||top-shop.ru^$third-party
 ||topadvert.ru^$third-party
 ||topcto.ru^$third-party
@@ -2045,8 +2044,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||popunder.$third-party,~popup,popup
 ||alemobile.ru^$~popup,popup
 ||bobrilla.com^$~popup,popup
-||contactsin.com^$~popup,popup
-||contactsin.mobi^$~popup,popup
+! $domain=contactsin.com|contactsin.mobi|contactsin.ru
+||contactsin.$third-party,~popup,popup
 ||contlist.com^$~popup,popup
 ||jerkngo.com^$~popup,popup
 ||linkpeoples.com^$~popup,popup
@@ -2435,6 +2434,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! $domain=artpost.ucoz.ru|fortpostnews.ucoz.ru|multiky.ru|notebene.ucoz.ru|tumbanew.ucoz.ru|uzumaki.kz|vceknigi.ru|...
 .am/rtr/$script
 .kz/rtr/$script
+.net/rtr/$script
 .ru/rtr/$script
 .su/rtr/$script
 .ua/rtr/$script
@@ -3449,87 +3449,57 @@ izvestia.ru##.right_banner_block
 !
 !J
 jeder.ru###colwrap > .module-notitle
-||jetune.ru/images/760-90-
 !
 !K
-kadets.info###mc_728_90
-||kaliningradnews.ru/adv.
 kanobu.ru##.banner
 kanobu.ru##.wide-banner-place
-kanobu.ru###logline_banner
-kapriz.info###dle-info + NOINDEX
+kapriz.info##A[target][href*="/go.php?url="] > IMG[src^="/"]
+||kapriz.info/img/
 ||kapriz.info/tiz/
-||karatel.org/js/ban
-||karatel.org/js/pop
-||kartinka.com.ua/partner/load?
 ||katani.dp.ua/img2/
-katushka.net###banner_240_top
-katushka.net###banner600x200
+katushka.net##.advert
 katushka.net###left_menu > .banner
-||katushka.net/banner.$object
 ||katushka.net/img/banners/
 keep4u.ru###r_bottom
 keep4u.ru###r_top
-keys-kas.ru##.bpartn
-keys-kas.ru##.badven
-keys-kas.ru##.bcounts
-kharkovforum.com##A[href^="http://banner.ua/"]
+keys-kas.ru##.bannerblock
 ||kiev-mama.com.ua/assets/banners/
 kiev2000.com##.left + .right
-killfilms.ru##A[href^="http://dosugcz.biz/"]
-||killfilms.ru/*/girls/
-kino.ukr.net##.bn
+||killfilms.ru^*/girls/
 kino-dom.tv###dle-info + DIV[align="center"] > :not(#dle-content)
 ||kino-dom.tv^$object
 @@||kino-dom.tv/mediaplayer5.swf|
 @@||kino-dom.tv/mediaplayerser.swf|
-kino-online.org##IMG[height="120"][width="600"]
 kino-zal.tv##BLINK
 kinobanda.net##.main-bg A[target="_blank"] > IMG
 ||kinobanda.net/adv/
 kinobaza.net##A.red
 kinobaza.net##A[href="/out.php"]
-||kinofilms.tv/adv/
 ||kinobaza.net/babes/
-||kinomatrix.com/banners/
-||kinomir.kz^$object
+||kinofilms.tv/adv/
 kinopoisk.ru###loadb
 kinopoisk.ru##.brand
-kinopoisk.ru###branding_flash
-kinopoisk.ru##.search_line_flash
 kinopoisk.ru##.superb
 ||kinopoisk.ru/*/top_banner.js?
 ||kinopoisk.ru/images/$object
-kinostok.net##.orange > A
-||kinotvonline.ru/templates/kinotvonline/images/
 kiwi.kz###banner1000_250
 kiwi.kz###banner300_250
-||kiwi.kz/banners/
-kodges.ru##.banner-fullstory
 kolesa.kz##.banner
-kolesa.kz##.board
-kolesa.kz##.layout.pipes
-||kolesa.kz/br-place/
 ||komcity.ru/i/commerce/
 ||koob.ru/*_reklama.
 ||koob.ru/*.php?*=$domain=klex.ru
 ||koob.ru/cache/
-korrespondent.net##.box_info.iewid_doublecol
-korrespondent.net###mydrive_block
-korrespondent.net###realty_block
+korrespondent.net##.obzorseti
 ||bm.img.com.ua^$domain=korrespondent.net
 ||bmu.img.com.ua^$domain=korrespondent.net
-korzik.net###dle-content > CENTER > TABLE > TBODY > TR > [bgcolor][style] > CENTER
 korzik.net###dle-content A[target="_blank"]
 korzik.net##A.menu[target="_blank"] > FONT[color="red"]
-korzik.net##[background="/templates/k1/images/logo_bg.gif"] > A[target="_blank"] > IMG
-||kotomatrix.ru/r/$object
 kotomatrix.ru##A[target="_blank"] > IMG
 ||kozhuhovo.com/!images/banners/
-kp.by,kp.ru,~ufa.kp.ru###banner-after-menu
-kp.by,kp.ru,~ufa.kp.ru##.baner
-! kp.by,kp.ru,~ufa.kp.ru##.banner-middle
+kp.ru,~ufa.kp.ru##.baner
+kp.ru,~ufa.kp.ru###banner-after-menu
 kp.by,kp.ru,~ufa.kp.ru##.uslot_banner
+bazar.kp.by##.banner_list
 ||advert.kp.ru^$object
 ||krisha.kz^*/br/
 ||kronverkcinema.ru/*attachment.rpc
