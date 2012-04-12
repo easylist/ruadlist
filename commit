@@ -17,8 +17,10 @@ echo     "Fix-it before commit" auto-generated block. Use Ctrl+C to stop commit.
 echo -------------------------------------------------------------------------------
 grep '^[^/!].*\^[^$*=]' *.txt
 echo -------------------------------------------------------------------------------
+# type commit message
+xterm -e nano -$ svn-commit.msg
 # ask for comments in separate window and commit
-svn --editor-cmd "xterm -e nano" commit
+svn commit -F svn-commit.msg
 # remove temporary files
 if [ $? = 0 ]; then
 	rm -rf svn-commit.*>&1|&1>&2
