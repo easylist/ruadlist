@@ -18,7 +18,7 @@ echo ---------------------------------------------------------------------------
 grep '^[^/!].*\^[^$*=]' *.txt
 echo -------------------------------------------------------------------------------
 # ask for comments in separate window and commit
-svn --editor-cmd "xterm -e nano" commit -F svn-commit.tmp
+svn --editor-cmd "xterm -e nano" commit
 # remove temporary files
 if [ $? = 0 ]; then
 	rm -rf svn-commit.*>&1|&1>&2
