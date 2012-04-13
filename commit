@@ -7,24 +7,27 @@ svn update
 ./hash.pl bitblock.txt
 ./hash.pl cntblock.txt
 # get diffs
-svn diff advblock.txt
-svn diff antinuha.txt
-svn diff bitblock.txt
-svn diff cntblock.txt
+echo -------------------------------------------------------------------------------
+echo - Diff-list.
+echo -------------------------------------------------------------------------------
+svn --diff-cmd "diff" -x "-u1" diff
 # check for common mistakes
 echo -------------------------------------------------------------------------------
-echo     "Fix-it before commit" auto-generated block. Use Ctrl+C to stop commit.
+echo - \"Fix-it before commit\" auto-generated block.
 echo -------------------------------------------------------------------------------
 grep '^[^/!].*\^[^$*=]' *.txt
-echo -------------------------------------------------------------------------------
+grep object_ *.txt
 # type commit message
+echo -------------------------------------------------------------------------------
+echo Type commit message, save and close nano or press Ctrl+C \(here\) to stop commit.
+echo -------------------------------------------------------------------------------
 xterm -e nano -$ svn-commit.msg
 if [ $? = 0 ]; then
 	# ask for comments in separate window and commit
 	svn commit -F svn-commit.msg
 	# remove temporary files
-	rm -f svn-commit.msg>&1|&1>&2
+	rm -f svn-commit.msg
 fi
-rm -rf *~>&1|&1>&2
-rm -rf *.save>&1|&1>&2
+rm -rf *~
+rm -rf *.save
 
