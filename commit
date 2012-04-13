@@ -19,7 +19,7 @@ grep '^[^/!].*\^[^$*=]' *.txt
 grep object_ *.txt
 # type commit message
 echo -------------------------------------------------------------------------------
-echo Type commit message, save and close nano or press Ctrl+C \(here\) to stop commit.
+echo Type commit message, save and close nano. Press Ctrl+C \(here\) to stop commit.
 echo -------------------------------------------------------------------------------
 xterm -e nano -$ svn-commit.msg
 if [ $? = 0 ]; then
