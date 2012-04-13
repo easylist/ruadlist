@@ -15,10 +15,10 @@ svn --diff-cmd "diff" -x "-u1" diff
 echo -------------------------------------------------------------------------------
 echo - \"Fix-it before commit\" auto-generated block.
 echo -------------------------------------------------------------------------------
-grep --color=auto '^[^/!].*\^[^$*=]' *.txt
+grep '^[^/!].*\^[^$*=]' *.txt | grep --color=auto '\^[^$*=]'
 grep --color=auto object_ *.txt
-grep --color=auto '^[^!].*domain=.*,' *.txt
-grep --color=auto '^[^!].*\$popup' *.txt
+grep '^[^!].*domain=.*,' *.txt | grep --color=auto 'domain=.*,'
+grep '^[^!].*\$popup' *.txt | grep --color=auto '\$popup'
 # type commit message
 echo -------------------------------------------------------------------------------
 echo Type commit message, save it \(Ctrl+O\) and close nano \(Ctrl+X\).
