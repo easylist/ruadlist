@@ -18,6 +18,7 @@ echo ---------------------------------------------------------------------------
 grep --color=auto '^[^/!].*\^[^$*=]' *.txt
 grep --color=auto object_ *.txt
 grep --color=auto '^[^!].*domain=.*,' *.txt
+grep --color=auto '^[^!].*\$popup' *.txt
 # type commit message
 echo -------------------------------------------------------------------------------
 echo Type commit message, save it \(Ctrl+O\) and close nano \(Ctrl+X\).
