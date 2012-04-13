@@ -11,7 +11,7 @@ echo ---------------------------------------------------------------------------
 echo - Diff-list.
 echo -------------------------------------------------------------------------------
 svn --diff-cmd "diff" -x "-u1" diff
-# check for common mistakes
+# check for common mistakes and unified style
 echo -------------------------------------------------------------------------------
 echo - \"Fix-it before commit\" auto-generated block.
 echo -------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ grep --color=auto '^[^!].*domain=.*,' *.txt
 echo -------------------------------------------------------------------------------
 echo Type commit message, save and close nano. Press Ctrl+C \(here\) to stop commit.
 echo -------------------------------------------------------------------------------
-xterm -e nano -$ svn-commit.msg
+xterm -e nano --softwrap svn-commit.msg
 if [ $? = 0 ]; then
 	# ask for comments in separate window and commit
 	svn commit -F svn-commit.msg
