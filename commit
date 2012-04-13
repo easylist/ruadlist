@@ -19,11 +19,11 @@ grep '^[^/!].*\^[^$*=]' *.txt
 echo -------------------------------------------------------------------------------
 # type commit message
 xterm -e nano -$ svn-commit.msg
-# ask for comments in separate window and commit
-svn commit -F svn-commit.msg
-# remove temporary files
 if [ $? = 0 ]; then
-	rm -rf svn-commit.*>&1|&1>&2
+	# ask for comments in separate window and commit
+	svn commit -F svn-commit.msg
+	# remove temporary files
+	rm -f svn-commit.msg>&1|&1>&2
 fi
 rm -rf *~>&1|&1>&2
 rm -rf *.save>&1|&1>&2
