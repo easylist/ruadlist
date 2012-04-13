@@ -20,14 +20,24 @@ grep --color=auto object_ *.txt
 grep --color=auto '^[^!].*domain=.*,' *.txt
 # type commit message
 echo -------------------------------------------------------------------------------
-echo Type commit message, save and close nano. Press Ctrl+C \(here\) to stop commit.
+echo Type commit message, save it \(Ctrl+O\) and close nano \(Ctrl+X\).
+if [ -e svn-commit.msg ]; then
+	echo Press Ctrl+C \(right here\) to stop commit.
+else
+	echo Do not save message or press Ctrl+C \(right here\) to stop commit.
+fi
 echo -------------------------------------------------------------------------------
 xterm -e nano --softwrap svn-commit.msg
 if [ $? = 0 ]; then
-	# ask for comments in separate window and commit
-	svn commit -F svn-commit.msg
-	# remove temporary files
-	rm -f svn-commit.msg
+	# perform commit if there is commit message
+	if [ -e svn-commit.msg ]; then
+		# ask for comments in separate window and commit
+		svn commit -F svn-commit.msg
+		# remove temporary files
+		rm -f svn-commit.msg
+	else
+		echo No commit message. Commit stopped.
+	fi
 fi
 rm -rf *~
 rm -rf *.save
