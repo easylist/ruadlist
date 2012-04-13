@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: chCH392LRoSXfIH9LgYfzw
-! Last modification time (GMT): 2012.04.13 10:09
+! Checksum: FQdnAd0otZ07Ukm0M7zLJQ
+! Last modification time (GMT): 2012.04.13 10:11
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -102,7 +102,7 @@ _popunder.$image,~image,popup
 ||travian.com.ua/landingpage/$image,~image,popup
 ||wardogs.ru/lp?ref=$image,~image,popup
 ||yapfiles.ru^*/rating_by_pop/$image,~image,popup
-||zzima.com^$popup,domain=~zzima.com
+||zzima.com^$image,~image,popup,domain=~zzima.com
 ! - Мошенники -----------------------------------------------------------------
 ! В основном блокируются на уровне редиректов, но лучше и так.
 !#scam.bookmark
@@ -1922,7 +1922,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Dosug.cz и связанные с ними домены или
 ! «ТУТ НИЧЕГО НЕТ. НАХРЕНА ТЫ СЮДА ЗАШЕЛ? :-)»
 ! Общие правила
-/in.htm?wm=$popup
+/in.htm?wm=$image,~image,popup
 /getThumbs?uid=$third-party,subdocument
 ||clickcashmoney.com^$~popup,popup
 ||devochki-dlya-tebya-na-dosuge.com^$~popup,popup
@@ -3682,7 +3682,7 @@ namba.kg###branding
 namba.kg###branding-html
 ||namba.kg/files/*/$object
 ||namba.kg/js/banner_fullscreen.js
-||namba.kg^$popup,domain=namba.kg
+||namba.kg^$image,~image,popup,domain=namba.kg
 ||namba.kg/www/base/
 narodclub.net##.ammblock
 narodclub.net##DIV[onmouseout^="this.style.backgroundColor="][onmouseover^="this.style.backgroundColor="][style]
