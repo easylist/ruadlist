@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: kKIJQMu8pP3tHOj1J6BKgA
-! Last modification time (GMT): 2012.04.15 17:19
+! Checksum: nA7S9thRn6NAq/8R6drr3w
+! Last modification time (GMT): 2012.04.15 22:09
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -315,8 +315,6 @@ navitel.su##.extra_append:last-child
 ! Скролл-бар с картинками из постов на различных трекерах и подобном. Точнее это управление от них и автоскролл.
 .jcarousel.$script
 /highslide.$script,stylesheet,domain=~101.ru
-! Скрипты kavanga.ru (блокировка иногда приводят к «недогрузке страницы» + там есть скрипты-счётчики вместо рекламы)
-||b.kavanga.ru^$~object-subrequest
 ! Интернет-радио с флеш-плеером, разработчики которого не знают о том, что при открытии страницы их радио должно молчать
 ||icefm.ru^$third-party
 ! «Карта» Интернетов.
@@ -343,7 +341,6 @@ _lj_times_
 ~dw.de###copyright
 ##.copyright
 ||2ip.ru/sbar/
-||b.kavanga.ru/exp?$~object-subrequest
 ||mygold.pp.ua^$third-party
 ! Далее идут правила для отдельных сайтов
 21region.org##.logo
