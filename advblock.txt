@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: zYDiULDtRqgbN90dWlRTUA
-! Last modification time (GMT): 2012.04.14 21:23
+! Checksum: yPrXNrldwS+/aWtOAgwtHw
+! Last modification time (GMT): 2012.04.15 12:11
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -37,8 +37,7 @@
 ! $domain=adonweb.ru|webunder.ru
 /adv_clk_redirect.php?$image,~image,popup
 ! $domain=playground.ru
-/popunder.$image,~image,popup
-_popunder.$image,~image,popup
+.tnt-online.ru/?utm_$image,~image,popup
 ||crusewind.net/click/direct.php?$image,~image,popup
 ||fileshare.in.ua^*?gogogo$image,~image,popup
 ||filonet.ru/engine/redirect.php?url=$image,~image,popup
@@ -92,8 +91,6 @@ _popunder.$image,~image,popup
 ||mycultures.ru^$image,~image,popup
 ||nigheays.ru^$image,~image,popup
 ||partypoker.com^*/videopop/$image,~image,popup
-! ||pic4you.ru^$image,~image,popup
-! ||pic5you.ru^$image,~image,popup
 ||pointblank.ru/?pid=$image,~image,popup
 ||pop.sn00.net^$image,~image,popup
 ! Субдомены shopgid, quelle
@@ -280,8 +277,8 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 .swf?click_url=
 .swf?flash_link=
 .swf?flash_url=
-.swf?link1=$domain=~citydom.ru
-.swf?link=$domain=~ex-road.ru|~testoni.com
+.swf?link1=
+.swf?link=
 .swf?lnk=
 .swf?path=
 .swf?target=_blank&
@@ -303,7 +300,7 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 .ru/banner/
 .ru/banner.
 .ru/banners/$domain=~toptracker.ru
-.ru/uploads/banners/$domain=~allwomens.ru|~digital.ru
+.ru/uploads/banners/
 .ru/i/banner/
 .ru/i/banners/
 .ua/banner/
@@ -311,13 +308,13 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 .ua/uploads/banners/
 .ua/i/banner/
 .ua/i/banners/
-/adv/banners/*$domain=~artinvestment.ru
+/adv/banners/*
 /adv/massage/*
 /afisha_banner/*
 /banners/*_*x*?
 /baner.
 /baner/*
-/baner_$domain=~rock-online.ru
+/baner_
 /baners/*
 /banner.gif
 _banner.gif
@@ -326,23 +323,23 @@ _banner.gif
 /cgi-bin/banner/*
 /cgi-bin/banners/*
 /free/banners/*
-/images/adv/*$domain=~3k.mail.ru
+/images/adv/*
 /images/ban/*
 /images/banners/*
-/images/bn/*$domain=~sims3club.ru
+/images/bn/*
 /images/rek/*
 /images/rekl/*
 /img/bn/*
 /img/bnr-
 /img/bnr/*
-/img/rekl/*$domain=~softodrom.ru
+/img/rekl/*
 /imgads/*
 /mybaner/*
 /partner/banner/*
 /reklam.
 /reklam/*
 /reklama.$domain=~reklama.com.ua|~reklama.rambler.ru|~reklama.ukr.net
-/reklama_$domain=~linux.ptz.ru
+/reklama_
 /richbanner.
 .richbanner.
 /shared/promos/*
@@ -350,8 +347,8 @@ _banner.gif
 ! DataLife Engine forum module /engine/modules/
 /sprava_baner/*
 /upload/banners/*
-/upload/bx/*$domain=~transbank.ru
-/upload/rk/*$domain=~tsu.ru
+/upload/bx/*
+/upload/rk/*
 /uploads/slider/col$script
 _baner.
 _baner_
@@ -366,7 +363,7 @@ _baner_
 /teaser/*
 /teaser.
 .teaser.
-/teasers/*$domain=~legionhardware.com
+/teasers/*
 /teasers.
 ! /tiz/* ?
 _tizer.
@@ -376,7 +373,7 @@ _tizer.
 .tizer-
 .tizer/
 .tizer.
-/tizer.$domain=~adv.vz.ru|~km.ru
+/tizer.
 _tizer2.
 /tizer2/*
 /tizerotator/*
@@ -385,7 +382,7 @@ _tizers.
 /tizers/*
 .tizers.
 /tizers2.
-/tizers.$domain=~bashtube.ru
+/tizers.
 /tizshow.
 /utftizer.
 /viptizer.
@@ -483,6 +480,7 @@ _tizers.
 ! - Блокировка по именам файлов -----------------------------------------------
 !#name.bookmark
 /aika.swf
+/b_bs_killdog_
 /datagroup.gif
 /talky3d.gif
 ! - Популярные имена скриптов -------------------------------------------------
@@ -1292,7 +1290,6 @@ _tizers.
 ||pop-wmz.ru^$third-party
 ||pop.ru^$third-party
 ||popad.ru^$third-party
-||popander.com^$third-party
 ||popinads.com^$third-party
 ||popru.ru^$third-party
 ||poptraf.$third-party
@@ -2056,14 +2053,14 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
 //78.140.138.133^
 /out.php?sid=$script
-/popunder.php?id=
+_popunder.$~popup,popup
+/popunder.$~popup,popup
+.popunder.$~popup,popup
 /yaim.php?ad=
 ! ||pop-under.ru^
 ||pop-under.$third-party,~popup,popup
-! $domain=popander.in|popander.mobi
-||popander.$~popup,popup
-! ||popunder.ru^
-||popunder.$third-party,~popup,popup
+! $domain=popander.com|popander.in|popander.mobi
+||popander.$third-party,~popup,popup
 ||alemobile.ru^$~popup,popup
 ||bobrilla.com^$~popup,popup
 ! $domain=contactsin.com|contactsin.mobi|contactsin.ru
@@ -2130,6 +2127,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||real2traf.ru^$~popup,popup
 ||real4traf.ru^$~popup,popup
 ||real5traf.ru^$~popup,popup
+||real6traf.ru^$~popup,popup
 !
 ! Smart BN
 /sbn2.js$third-party
@@ -3000,6 +2998,8 @@ appleinsider.ru##BODY > NOINDEX:first-child
 ||argumenti.ru/images/partners/
 ariom.ru##A > IMG[width="160"][height="120"]
 ||ariom.ru/img/$object
+artinvestment.ru###center > DIV[style="border: 1px solid black"]
+artinvestment.ru##.left-col > .info-block:not(:last-of-type)
 astromeridian.ru##[id^="blok_verh_rekl"]
 ||astromeridian.ru/assets/images/reklama2/
 athlete.ru##A[target="_blank"] > IMG[width="120"][border="0"][style]
@@ -3995,6 +3995,7 @@ soft-i-kino.ru##.advertise
 soft-i-kino.ru##IMG[width="180"][height="400"]
 soft-i-kino.ru###pxsnazzy
 ||soft-i-kino.ru/tiz.
+softodrom.ru##.google.center + TABLE[style="width: 100%"]
 softodrom.ru##.prgentry.nobottom
 softoroom.net###ipbwrapper > NOINDEX
 ||softoroom.net/2pclick/
@@ -4636,22 +4637,28 @@ x-soft.tomsk.ru###shop
 @@||alluregame.ru/Content/*/Advert$~third-party
 @@||bash.org.ru/faq|$elemhide
 @@||bash.org.ru/webmaster|$elemhide
+@@||bashtube.ru/images/tizers.png?$~third-party
 @@||cdn.now.ru/www/delivery/fc.php?$domain=now.ru
 @@||discover-club.com.ua^*/swf/preloader.swf?url=$domain=discover-club.com.ua
-@@||ertelecom.ru^*.swf?link1=$~third-party
+! Intranet domain
+@@||dnet.ua/uploads/banners/$~third-party
+@@||ertelecom.ru^*.swf?link1=$domain=domru.ru
 @@||fest-ry.ru/*/images/ad$image,domain=fest-ry.ru
 @@||games-tv.ru/openx/www/delivery/ajs.php?$script,domain=games-tv.ru
+@@||legionhardware.com/images/teasers/$~third-party
 @@||livejournal.com/js/??*?v=$script,domain=livejournal.com
 @@||nic.ru/styles/advertising.css$domain=nic.ru
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=allhockey.ru
 @@||ph4.ru/*/adsense$domain=ph4.ru
 @@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
 @@||renault.ru/_beta/banner_system/banner.php$domain=renault.ru
+@@||rock-online.ru/thema/rock/images/baner_$~third-party
 @@||rostcars.ru/css/advertisement.css$~third-party
 @@||russia.ru/reklama/32x32.flv?link1=$object-subrequest,domain=vz.ru
 @@||rzd.ru/banner/$xmlhttprequest,domain=rzd.ru
 @@||semrush.com/m/scripts/reports/backlinks.$~third-party
 @@||s5o.ru/common/css/teaser.css?$domain=sports.ru
+@@||sims3club.ru/images/bn/$~third-party
 @@||statcounter.com/counter/counter.js$~third-party
 @@||sticker.yadro.ru/ad/3.xml?$object-subrequest,domain=rutv.ru
 @@||sticker.yadro.ru/i/ad_in_video.swf$domain=rutv.ru
@@ -4660,6 +4667,8 @@ x-soft.tomsk.ru###shop
 @@||stopgame.ru/www/images/$image,domain=stopgame.ru
 @@||teachvideo.ru/advert/$~third-party
 @@||teachvideo.ru/www/delivery/$~third-party
+@@||transbank.ru/upload/bx/$~third-party
+@@||tsu.ru/upload/rk/$~third-party
 @@||tut.by/*/ads1/*/params.php?uid=$object-subrequest,domain=tut.by
 @@||tu-tu.ru/*/main/tizer/$domain=tutu.ru
 @@||ukrainianiphone.com/baners/r/$~third-party
