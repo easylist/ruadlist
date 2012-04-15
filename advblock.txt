@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: yPrXNrldwS+/aWtOAgwtHw
-! Last modification time (GMT): 2012.04.15 12:11
+! Checksum: mEQz368ZYlKjY+1hAISujQ
+! Last modification time (GMT): 2012.04.15 13:02
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -415,6 +415,7 @@ _tizers.
 .redtram.$domain=~redtram.com
 /sblocks_informer.
 ||24au.ru/*/24au_informer.js
+||24smi.org/i/$script
 ||66.ru/mod/news2/
 ||afera.info/informer_
 ||aif.ru/iframes/
@@ -1841,10 +1842,8 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ?begun=*&begun_referrer=*&begun_location=
 /begun.js
 ||begun.ru^$third-party
-! ||autocontext.begun.ru^$third-party
-! domain=kino-live.org
-! ||video.begun.ru^$third-party,object-subrequest,domain=~yatv.ru
-! domain=intv.ru|lostcinema.ru
+@@||video.begun.ru/crossdomain.xml|$domain=multxit.ru
+@@||video.begun.ru/flowplayer_begun_lib.swf|
 !
 ! BodyClick.net
 /bodyclick.$~popup,popup
@@ -2430,6 +2429,7 @@ _popunder.$~popup,popup
 ||weru8.info^
 ! Домены в зоне ru
 ||2gre.ru^
+||3idw.ru^
 ||2udod.ru^$~popup,popup
 ||4chi.ru^
 ||4utro.ru^$~popup,popup
@@ -3098,6 +3098,8 @@ cwer.ru###header .right
 cwer.ru##.nodecontent > NOINDEX > TABLE[width="100%"]
 cwer.ru##.round > NOINDEX
 ||cwer.ru^$subdocument
+cy-pr.com##.b-main_body > NOINDEX
+cy-pr.com##.l-header > #hb
 cyberinfo.ru###bl_05
 cyberstyle.ru##.b-banner_600x90
 !
@@ -3877,7 +3879,8 @@ referatu.net.ua##.banner468_60
 ||popup.relinka.net^
 ||restoclub.ru/pic/iblocks/
 ||restotv.ru/promo/$domain=restoclub.ru
-||img.rg.ru/i/bnr/
+rewalls.com##A[target="_blank"] > IMG[src^="/"]
+||rg.ru/i/bnr/
 rghost.net###square_a
 ||rghost.ru/a/
 ria.ru###banners
@@ -4397,6 +4400,7 @@ meta.ua##.ads
 ! NGS.RU
 dom.ngs.ru###logo_banners
 he.ngs.ru,she.ngs.ru,relax.ngs.ru###logos
+mail.ngs.ru,mail.ngs55.ru###td_body_right
 ngs.ru###ads-fix
 ngs.ru###kemlc
 ngs.ru##.adv
@@ -4592,7 +4596,7 @@ x-soft.tomsk.ru###shop
 ! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
 @@||ads.tomtel.ru/adjs.$script
 ! Видео с yatv.ru, видео на kinopoisk.ru
-@@||adv.gpm-digital.com/crossdomain.xml$object-subrequest
+@@||adv.gpm-digital.com/crossdomain.xml|$object-subrequest
 ! Ложное срабатывание в видеоплеере RuTube.
 @@||rutube.ru/trackinfo/*?ad_ids=
 ! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
@@ -4677,6 +4681,7 @@ x-soft.tomsk.ru###shop
 @@||vk.com/ads*.php?__query=$~third-party
 @@||zeiss.com/content/*/teaser$domain=zeiss.com
 !#detect.bookmark
+@@||kino-v-online.ru^$elemhide
 @@||kinomafia.com^$elemhide
 ! - Против «бесконечной загрузки страниц» -------------------------------------
 !#excompat.bookmark
