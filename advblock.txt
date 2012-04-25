@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 4k8cdc0xZTqgDioiAydPiw
-! Last modification time (GMT): 2012.04.25 12:28
+! Checksum: jCrZ3Iyg9dDOoeUNDrs7ZA
+! Last modification time (GMT): 2012.04.25 13:31
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -47,7 +47,6 @@
 ||ipchecker.ru/?id=$image,~image,popup
 ||mesvip.com^$image,~image,popup
 ||myragon.ru^$image,~image,popup
-||otliv.info^$image,~image,popup
 ||peel-down.net/search.php?$image,~image,popup
 ||playground.ru/popup/$image,~image,popup
 ||redirecturl.ru^$image,~image,popup
@@ -57,7 +56,6 @@
 ||t8good.info^$image,~image,popup
 ||traff-redir.info/redir.php?s=$image,~image,popup
 ||war.noc.su/?$image,~image,popup
-||xn--80abg3be.net^$image,~image,popup
 ! - Прочее --------------------------------------------------------------------
 ! Flambo
 ! Подсеть: 91.213.175.### IP: 26, 27, 46
@@ -94,8 +92,6 @@
 ||partypoker.com^*/videopop/$image,~image,popup
 ||pointblank.ru/?pid=$image,~image,popup
 ||pop.sn00.net^$image,~image,popup
-! Субдомены shopgid, quelle
-||2wwf.info^$image,~image,popup
 ||snailz.ru/promo/?$image,~image,popup
 ||travian.com.ua/landingpage/$image,~image,popup
 ||wardogs.ru/lp?ref=$image,~image,popup
@@ -104,15 +100,12 @@
 ! - Мошенники -----------------------------------------------------------------
 ! В основном блокируются на уровне редиректов, но лучше и так.
 !#scam.bookmark
-||chtonovogo.info^$~popup,popup
 ||goldenspace.ru^$~popup,popup
 ||help2play.com^$~popup,popup
 ||homebysiness.ru^$~popup,popup
 ||moneymaiker.ru^$~popup,popup
 ||roulettebotplus.com^$~popup,popup
 ||vmesterabotaem.ru^$~popup,popup
-||vseneveroyatnoprosto.info^$~popup,popup
-||xn--80aadvsxamv.net^$~popup,popup
 ! Подделка сайта вопросов-ответов mail.ru и других
 /popua/*$image,~image,popup
 ! Если найдётся ещё где, можно сделать правило /otveti/$popup
@@ -122,7 +115,6 @@
 ||otveti2012.ru^$~popup,popup
 ||otvetru.ru^$~popup,popup
 ||otwety-mail.com^$~popup,popup
-||sportfanat.info^$~popup,popup
 ! Подделка сайта ВКонтакте
 ||vsemdeneg.ru^$~popup,popup
 ||vzara.ru^$~popup,popup
@@ -132,12 +124,9 @@
 ||0dnoclassnki.info^$~popup,popup
 ||odnoklassniki.ru^$domain=0dnoclassnki.info
 ! Подделка сайта YouTube
-||voprosotvet.info^$~popup,popup
 ||vsemtube.ru^$~popup,popup
-||yatytbil.info^$~popup,popup
-||znaniyasila.info^$~popup,popup
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
-||youtube.com^$domain=chtonovogo.info|goldenspace.ru|help2play.com|otveti2012.ru|otvetru.ru|sportfanat.info|vmesterabotaem.ru|vsemdeneg.ru|vsemtube.ru|voprosotvet.info|vseneveroyatnoprosto.info|yatytbil.info|znaniyasila.info
+||youtube.com^$domain=goldenspace.ru|help2play.com|otveti2012.ru|otvetru.ru|vmesterabotaem.ru|vsemdeneg.ru|vsemtube.ru
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
 ||devochki.cz^$third-party,~popup,popup
 ||livejasmin.com^$third-party,~popup,popup
@@ -2545,6 +2534,11 @@ _popunder.$~popup,popup
 ||weru8.info^
 ||werus.info^
 ||zayca.info^
+! Редиректоры
+! http://xml.ssdsandbox.net/dnslookup-dnsdb/193.105.200.223
+! tds.traforet.ru
+||otliv.info^$~popup,popup
+||xn--80abg3be.net^$~popup,popup
 ! Домены в зоне ru
 ! http://xml.ssdsandbox.net/dnslookup-dnsdb/193.105.200.14
 ||2gre.ru^
@@ -2552,10 +2546,14 @@ _popunder.$~popup,popup
 ||2udod.ru^$~popup,popup
 ||3idw.ru^
 ||4chi.ru^
+||4mig.ru^
 ||4utro.ru^$~popup,popup
+||ad01.ru^
+||add5.ru^
 ||aur1.ru^
 ||bidbig.ru^
 ||cm11.ru^
+||df-gryt.ru^
 ||fawer.ru^$~popup,popup
 ||ido7.ru^
 ||mir17.ru^$~popup,popup
@@ -2570,8 +2568,64 @@ _popunder.$~popup,popup
 ||umi1.ru^
 ||unk3.ru^
 ||uyuuqlss.ru^
+||waerq.ru^
 ! Прочее
 ||rat.piratbit.net^
+! Домены мошенников, распространяемые trafOret-ом
+||2wwf.info^$~popup,popup
+||blogosporte.info^$~popup,popup
+||blogscash.info^$~popup,popup
+||blogstratega.info^$~popup,popup
+||cashtwitter.com^$~popup,popup
+||chtonovogo.info^$~popup,popup
+||chtootvetit.info^$~popup,popup
+||expertzar.info^$~popup,popup
+||fairrobbery.com^$~popup,popup
+||fanzona.info^$~popup,popup
+||fun-zona.info^$~popup,popup
+||igranachata.info^$~popup,popup
+||ligasports.info^$~popup,popup
+||metod-prost.info^$~popup,popup
+||mirigroka.info^$~popup,popup
+||mirotetov.info^$~popup,popup
+||mirpoleznogo.info^$~popup,popup
+||mirsporta.info^$~popup,popup
+||mirsportstavok.info^$~popup,popup
+||moizmetki.info^$~popup,popup
+||moneyraid.com^$~popup,popup
+||mymir-sports.info^$~popup,popup
+||myslytube.com^$~popup,popup
+||otkritiemira.info^$~popup,popup
+||otvetiti.info^$~popup,popup
+||otvetityt.info^$~popup,popup
+||poiskistiny.info^$~popup,popup
+||prosoeblizko.info^$~popup,popup
+||prostoetyt.info^$~popup,popup
+||prostovse.info^$~popup,popup
+||shkolaigr.info^$~popup,popup
+||sportfanat.info^$~popup,popup
+||sportvmeste.info^$~popup,popup
+||spotr-expert.info^$~popup,popup
+||tutistina.info^$~popup,popup
+||tytdengy.info^$~popup,popup
+||tytvseprosto.info^$~popup,popup
+||vdloge.info^$~popup,popup
+||vigrayvse.info^$~popup,popup
+||voprosimy.info^$~popup,popup
+||voprosotvet.info^$~popup,popup
+||voprosovnet.info^$~popup,popup
+||vseneveroyatnoprosto.info^$~popup,popup
+||vseprostoetut.info^$~popup,popup
+||vsetutprosto.info^$~popup,popup
+||xn--80aacfp6bknoh.net^$~popup,popup
+||xn--80aadvsxamv.net^$~popup,popup
+||xn--80agbbdcweqy9n.com^$~popup,popup
+||xn--90abj2axih.com^$~popup,popup
+||yastrateg.info^$~popup,popup
+||yatytbil.info^$~popup,popup
+||you-money.info^$~popup,popup
+||znaniyasila.info^$~popup,popup
+||youtube.com^$domain=blogosporte.info|cashtwitter.com|chtonovogo.info|fanzona.info|fun-zona.info|mirotetov.info|mirpoleznogo.info|mirsporta.info|mirsportstavok.info|myslytube.com|poiskistiny.info|prosoeblizko.info|prostoetyt.info|prostovse.info|sportfanat.info|sportvmeste.info|spotr-expert.info|tytvseprosto.info|voprosotvet.info|vseneveroyatnoprosto.info|vseprostoetut.info|vsetutprosto.info|xn--80aacfp6bknoh.net|xn--90abj2axih.com|you-money.info|znaniyasila.info
 !
 ! Ucoz.net
 ||ucoz.*/img/ma/cv.gif
