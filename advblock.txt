@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: FE7r8lFtVVG/ISqGKJ8bVA
-! Last modification time (GMT): 2012.04.25 12:08
+! Checksum: 4k8cdc0xZTqgDioiAydPiw
+! Last modification time (GMT): 2012.04.25 12:28
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -47,6 +47,7 @@
 ||ipchecker.ru/?id=$image,~image,popup
 ||mesvip.com^$image,~image,popup
 ||myragon.ru^$image,~image,popup
+||otliv.info^$image,~image,popup
 ||peel-down.net/search.php?$image,~image,popup
 ||playground.ru/popup/$image,~image,popup
 ||redirecturl.ru^$image,~image,popup
@@ -103,6 +104,7 @@
 ! - Мошенники -----------------------------------------------------------------
 ! В основном блокируются на уровне редиректов, но лучше и так.
 !#scam.bookmark
+||chtonovogo.info^$~popup,popup
 ||goldenspace.ru^$~popup,popup
 ||help2play.com^$~popup,popup
 ||homebysiness.ru^$~popup,popup
@@ -133,8 +135,9 @@
 ||voprosotvet.info^$~popup,popup
 ||vsemtube.ru^$~popup,popup
 ||yatytbil.info^$~popup,popup
+||znaniyasila.info^$~popup,popup
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
-||youtube.com^$domain=goldenspace.ru|help2play.com|otveti2012.ru|otvetru.ru|sportfanat.info|vmesterabotaem.ru|vsemdeneg.ru|vsemtube.ru|voprosotvet.info|vseneveroyatnoprosto.info|yatytbil.info
+||youtube.com^$domain=chtonovogo.info|goldenspace.ru|help2play.com|otveti2012.ru|otvetru.ru|sportfanat.info|vmesterabotaem.ru|vsemdeneg.ru|vsemtube.ru|voprosotvet.info|vseneveroyatnoprosto.info|yatytbil.info|znaniyasila.info
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
 ||devochki.cz^$third-party,~popup,popup
 ||livejasmin.com^$third-party,~popup,popup
@@ -434,6 +437,7 @@ _tizers.
 ||analyzethis.ru/informer.cgi?
 ||autonet.ru/extra/autoclub_informer.aspx
 ||banki.ru/_export/informers/
+||bash.org.ru/forweb/
 ||bigmir.net^$third-party
 ||clipta.com/informer/
 ||cnews.ru/inc/partners/rotator.php?
@@ -2581,6 +2585,7 @@ _popunder.$~popup,popup
 .am/rtr/$script
 .kz/rtr/$script
 .net/rtr/$script
+.org/rtr/$script
 .ru/rtr/$script
 .su/rtr/$script
 .ua/rtr/$script
