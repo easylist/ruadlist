@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: XSSitTOdKRoCoaz1omjSYQ
-! Last modification time (GMT): 2012.04.26 00:06
+! Checksum: i7a/WR9XmA12b7wxOH4d9g
+! Last modification time (GMT): 2012.04.26 00:31
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -546,8 +546,6 @@ _tizers.
 //195.161.119.239^
 ! Вставляет рекламу с megareliz.com
 //195.191.235.58/block?
-! ProTizer.ru
-//212.150.34.116/*
 ! OpenX Ad Server
 //213.163.70.183^
 //213.186.217.210/banners/*
@@ -1040,7 +1038,6 @@ _tizers.
 ||kupitraff.ru^$third-party
 ||kv.by/img/$object
 ||kvasu.net/*/$object
-||ladycash.ru^$third-party
 ||ladyshopping.ru^$third-party
 ||leads.su^$third-party
 ||lenty.ru^$third-party
@@ -1316,7 +1313,6 @@ _tizers.
 ||prospero.ru^$third-party
 ||prostootdam.ru/modules/about/
 ||protect-lab.com/promo/
-||protizer.$third-party
 ||protrafv2.com^$third-party
 ||prre.ru^
 ||pullcorn.com^$third-party
@@ -1881,7 +1877,9 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||popupclick.$~popup,popup
 ||ruklik.com^$~popup,popup
 ||tdstraff.ru^$~popup,popup
+||trafidet.ru^$~popup,popup
 ||trafovik.ru^$~popup,popup
+||vestraf.ru^$~popup,popup
 ||xxxxxxxxxx.ru^$~popup,popup
 !
 ! Direct/ADVERT
@@ -1925,13 +1923,15 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 !
 ! LadyClicks.ru — реклама нацеленная на женскую аудиторию
 /showf.php?u=$subdocument
-||lady-clicks.ru^
-||ladyclicks.ru^
+||ladycash.ru^
 ||ladyclicks2.ru^
 ||ladyclicks5.ru^
 ||ladyclicks7.ru^
 ||ladyclicks8.ru^
 ||ladyclicks9.ru^
+||lady-clicks.ru^
+||ladyclicks.ru^
+||ladykash.ru^
 !
 ! Media-Click.ru
 /runder.php?id=*&site=$script,third-party
@@ -2188,6 +2188,12 @@ _popunder.$~popup,popup
 ! ProTeaser.com
 ||proteaser.com^
 ||ptredir.com^
+!
+! ProTizer.ru
+//212.150.34.115^
+//212.150.34.116^
+||protizer.$third-party
+||trafers.ru^
 !
 ! RealTraf.ru
 /js/peeldown.php?id=$third-party
