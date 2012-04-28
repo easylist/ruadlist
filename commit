@@ -46,8 +46,7 @@ commit_script() {
 }
 
 STAT=`svn status | grep -v ^\?`
-echo $STAT
-if [ -z $STAT ]; then
+if [ -z '$STAT' ]; then
 	echo 'Nothing were changed. :)'
 else
 	commit_script
