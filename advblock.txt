@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: MJ4Aj/YnaD1Y9dyPPzjPfw
-! Last modification time (GMT): 2012.04.29 21:29
+! Checksum: 2BEy11OGNDeqEgora91IQw
+! Last modification time (GMT): 2012.04.30 18:30
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -1434,6 +1434,7 @@ _tizers.
 ||smart-soft.ru^$third-party
 ||smartb.2gsg.com^
 ||smi2.ru^$third-party,~popup,popup
+||smiar.ru^
 ||smile32.ru^$third-party
 ||smsbanner.ru^$third-party
 ||smsconvertv3.ru^$third-party
@@ -1589,7 +1590,6 @@ _tizers.
 ||viprelax.com.ua^$domain=~viprelax.com.ua
 ||viprip.net/banners/
 ||vitr.alawar.ru^$third-party
-||vkbot.ru/trash/
 ||vladja.com^$third-party
 ||vladkofe.ru^$third-party
 ||vladmag.ru^$third-party
@@ -4713,9 +4713,17 @@ utro.ru##.conteiner-partner
 ! Реклама игр в играх
 ||everall.ru/static/img/banners/
 ||referral.mesury.ru^$object-subrequest,domain=vk.com
+! Прочее
+||agentvkontakte.ru/admin/materials/banner_
+||vkbot.ru/trash/
 ! Исключения для приложений и игр
-! «Кто ты из аниме?» не работает без этого исключения
+! Необходимо для корректной работы сообщений
+@@||vk.com/ads*.php?__query=$~third-party
+! «Кто ты из аниме?»
 @@||adsocial.ru/app/$script,object,domain=178.63.99.21
+! «ТЕМА - объявления социальной сети»
+@@||adsvk.com/images/advertising/$~third-party
+@@||adsvk.com/scripts/advertise_$~third-party
 !
 ! Ukr.NET
 search.ukr.net##.ads-header
@@ -4832,8 +4840,6 @@ x-soft.tomsk.ru###shop
 @@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||ads.su^$~third-party
-@@||adsvk.com/images/advertising/$~third-party
-@@||adsvk.com/scripts/advertise_$~third-party
 @@||adv.gpm-digital.com/*/getCode$object-subrequest,domain=kinopoisk.ru
 @@||advert.akado.ru/$domain=akado.ru
 @@||advert.kp.ru^$~object,~third-party
@@ -4884,7 +4890,6 @@ x-soft.tomsk.ru###shop
 @@||ukrainianiphone.com/baners/r/$~third-party
 @@||videonow.ru/ad_holder/$domain=molodejj.tv
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
-@@||vk.com/ads*.php?__query=$~third-party
 @@||zeiss.com/content/*/teaser$domain=zeiss.com
 !#detect.bookmark
 @@||kino-v-online.ru^$elemhide
