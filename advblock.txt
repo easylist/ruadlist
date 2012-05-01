@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: Mepl+TfIJbeFtdgYVwBIng
-! Last modification time (GMT): 2012.05.01 02:00
+! Checksum: 2Xn/bn34aiIirKt8MCp0ag
+! Last modification time (GMT): 2012.05.01 02:10
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -100,12 +100,8 @@
 ! - Мошенники -----------------------------------------------------------------
 ! В основном блокируются на уровне редиректов, но лучше и так.
 !#scam.bookmark
-||goldenspace.ru^$~popup,popup
 ||help2play.com^$~popup,popup
-||homebysiness.ru^$~popup,popup
-||moneymaiker.ru^$~popup,popup
 ||roulettebotplus.com^$~popup,popup
-||vmesterabotaem.ru^$~popup,popup
 ! Подделка сайта вопросов-ответов mail.ru и других
 /popua/*$image,~image,popup
 ! Если найдётся ещё где, можно сделать правило /otveti/$popup
@@ -115,18 +111,12 @@
 ||otveti2012.ru^$~popup,popup
 ||otvetru.ru^$~popup,popup
 ||otwety-mail.com^$~popup,popup
-! Подделка сайта ВКонтакте
-||vsemdeneg.ru^$~popup,popup
-||vzara.ru^$~popup,popup
-||vzarabatke.ru^$~popup,popup
-||vzarabotke.ru^$~popup,popup
 ! Подделка сайта Одноклассники
 ||0dnoclassnki.info^$~popup,popup
 ||odnoklassniki.ru^$domain=0dnoclassnki.info
 ! Подделка сайта YouTube
-||vsemtube.ru^$~popup,popup
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
-||youtube.com^$domain=goldenspace.ru|help2play.com|otveti2012.ru|otvetru.ru|vmesterabotaem.ru|vsemdeneg.ru|vsemtube.ru
+||youtube.com^$domain=help2play.com|otveti2012.ru|otvetru.ru
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
 ||devochki.cz^$third-party,~popup,popup
 ||livejasmin.com^$third-party,~popup,popup
@@ -1232,7 +1222,6 @@ _tizers.
 ||palantir.in/showban*.php?
 ||pammru.net^$third-party
 ||parimatch.com/jss/$object
-||partner.2loto.com/banner/
 ||partner.allsoft.ru^
 ||partner.gameboss.ru^$third-party
 ||partner.join.com.ua^$third-party
@@ -2593,7 +2582,7 @@ _popunder.$~popup,popup
 ||yowrhbe.ru^
 ! Прочее
 ||rat.piratbit.net^
-! Домены мошенников, распространяемые trafOret-ом
+! Домены мошенников, распространяемые trafOret-ом, в зоне info
 ||2wwf.info^$~popup,popup
 ||blogosporte.info^$~popup,popup
 ||blogscash.info^$~popup,popup
@@ -2648,6 +2637,18 @@ _popunder.$~popup,popup
 ||you-money.info^$~popup,popup
 ||znaniyasila.info^$~popup,popup
 ||youtube.com^$domain=blogosporte.info|cashtwitter.com|chtonovogo.info|fanzona.info|fun-zona.info|mirotetov.info|mirpoleznogo.info|mirsporta.info|mirsportstavok.info|myslytube.com|poiskistiny.info|prosoeblizko.info|prostoetyt.info|prostovse.info|sportfanat.info|sportvmeste.info|spotr-expert.info|tytvseprosto.info|voprosotvet.info|vseneveroyatnoprosto.info|vseprostoetut.info|vsetutprosto.info|xn--80aacfp6bknoh.net|xn--90abj2axih.com|you-money.info|znaniyasila.info
+! Домены мошенников, распространяемые trafOret-ом, в зоне ru
+||goldenspace.ru^$~popup,popup
+||homebysiness.ru^$~popup,popup
+||moneymaiker.ru^$~popup,popup
+||partner.2loto.com^$~popup,popup
+||vmesterabotaem.ru^$~popup,popup
+||vsemdeneg.ru^$~popup,popup
+||vsemtube.ru^$~popup,popup
+||vzarabatke.ru^$~popup,popup
+||vzarabotke.ru^$~popup,popup
+||vzara.ru^$~popup,popup
+||youtube.com^$domain=goldenspace.ru|vmesterabotaem.ru|vsemdeneg.ru|vsemtube.ru
 !
 ! Ucoz.net
 ||ucoz.*/img/ma/cv.gif
