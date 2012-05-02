@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: b9fJ7YO/xEj1YouovkYMsw
-! Last modification time (GMT): 2012.05.01 22:23
+! Checksum: 4VoFvSLtmPtHodDTvHFpYA
+! Last modification time (GMT): 2012.05.02 21:02
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -721,6 +721,7 @@ _tizers.
 ||be-mine.ru^$third-party
 ||bepartner.ru^
 ||bestclick.ru^
+||bestexotic.com^
 ||bezlimitvideo.com^
 ||bqhost.net/_rootimages/banners/
 ||bigbord.net^$third-party
@@ -1231,7 +1232,6 @@ _tizers.
 ||partners.vsemayki.ru^$third-party
 ||pay-click.ru^
 ||pay-partner.ru^$third-party
-||paymonsters.biz^
 ||paytraf.ru^$third-party
 ||pbg.ru^$third-party
 ||pbid.iforex.com^$third-party
@@ -2009,7 +2009,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||neoreklama.com^
 !
 ! Neotizer.com и им подобные
-/mp3player.swf?file=*/bb2.mp3&startplay=true
 ||neotizer.com^
 ||new-promo2012.net^
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
@@ -2045,6 +2044,16 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /jads.php?
 ||contextbar.ru^
 ||nolix.ru^
+!
+! PayMonsters.biz
+/files/bb2.mp3|
+/mp3player.swf?file=*/bb2.mp3
+/vkcode.php?id=$script
+||paymonsters.biz^
+||pm00001.com^
+||pm00002.com^
+||pm00003.com^
+||pm00004.com^
 !
 ! People-Group.su
 ###pgeldiz
@@ -2579,6 +2588,11 @@ _popunder.$~popup,popup
 ||waerq.ru^
 ||wewt-gs.ru^
 ||yowrhbe.ru^
+! Домены в зоне ua
+||liurdat.if.ua^$~popup,popup
+||morlos.org.ua^
+||rikoli.org.ua^
+||udoppi.net.ua^
 ! Прочее
 ||rat.piratbit.net^
 ! Домены мошенников, распространяемые trafOret-ом, в зоне info
@@ -3397,6 +3411,7 @@ ekranka.tv###rrrHeader
 ekranka.tv###rrrToper
 ||electrodance.org/slider/
 ||emuplanet.ru/images/bb/
+epidemz.net##A[rel="nofollow"][href^="/go?"] > IMG
 epidemz.net##A[target="_blank"][rel="nofollow"] > FONT[color]
 epidemz.net###promo
 epidemz.net##TD[style] > A[target="_blank"] > B
@@ -3955,11 +3970,12 @@ online.ua###top_banner
 ! ###rBanFix  ##.fixed-reklama
 online.ua##[class*="reklama"]
 news.online.ua##IMG[class$="_link"]
-||i.online.ua/onlineua%20240_30.gif
-http://i.online.ua/teletrade
+||online.ua/onlineua%20240_30.gif
+||online.ua/teletrade
 ||onlinedisk.ru/bban/banner/
 onlyfilms.ru##.dircash_button
 onlyfilms.ru##NOINDEX > LI.m
+||onlinefilmx.ru/message/
 opennet.ru###adv2
 opennet.ru###adv3
 opennet.ru###ibm_adv
@@ -4222,6 +4238,9 @@ sr-week.ru##.sponsorslist
 stolica.ru###vst_mvideo
 stopgame.ru##.ban250
 stopgame.ru##.ban468w
+stopgame.ru###brandtop
+stopgame.ru##TD[onclick*="/ad.stopgame.ru/"]
+||stopgame.ru/partners/
 ||storyroom.ru/bbb/
 streamzone.org###menu-block-left
 sudga.ru###notifications_menu + .t1border
