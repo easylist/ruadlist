@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: puFuSs6wwVwCOij51W+5aw
-! Last modification time (GMT): 2012.05.04 19:23
+! Checksum: 9XGQ5fzSaZURIQZDZ5hTng
+! Last modification time (GMT): 2012.05.04 19:33
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -4651,8 +4651,7 @@ forums.overclockers.ru##BR[clear="all"] + TABLE[align="center"][style*="1p"]
 forums.overclockers.ru##BR[clear="all"] + TABLE[align="center"][style*="2p"]
 forums.overclockers.ru##BR[clear="all"] + TABLE[align="center"][style*="3p"]
 overclockers.ru###mainplace > TABLE:first-child:last-child TR:first-child
-overclockers.ru###contentplace > [class^="deco-block"]
-overclockers.ru###contentplace > [class^="deco_block"]
+overclockers.ru###contentplace > [class^="dec"][class*="block"]
 overclockers.ru###contentplace > [class^="decob"]
 ! Плейсхолдер под рекламный блок справа от форума.
 forums.overclockers.ru##TD:first-child + TD[width="240"]
@@ -4660,13 +4659,15 @@ forums.overclockers.ru##TD:first-child + TD[width="240"]
 overclockers.ru##.rastyazka
 overclockers.ru##.rast_yazka
 overclockers.ru##.rasty_azka
+overclockers.ru##TABLE[width="100%"][height^="6"]
+overclockers.ru##TABLE[width="100%"][height^="7"]
 overclockers.ru###topbanners
 overclockers.ru###top_banners
-overclockers.ru###blueline + DIV[align="center"] > TABLE[height="68"]
-! Реклама в шапке
-overclockers.ru###uhi
-! Картинка со ссылкой на adhands.ru в заголовке статей
+overclockers.ru###topb_anners
+! Ссылки
+overclockers.ru##A[href*=".ru/catalog/"][target="_blank"]
 overclockers.ru##A[href*="adhands.ru/click/?"]
+overclockers.ru##A.uho
 ! Колонка слева (кроме меню)
 overclockers.ru###leftplace > :not(.menu)
 ! Колонка справа
@@ -4675,6 +4676,13 @@ overclockers.ru###rightplace
 overclockers.ru###footer > DIV[style]
 ! Флэш-баннеры
 ||overclockers.ru/images/$object
+! Картинки
+||overclockers.ru/images/ASUS_
+||overclockers.ru/images/Intel_
+||overclockers.ru/images/*-logo
+||overclockers.ru/images/MSI_
+||overclockers.ru/images/Palit_
+||overclockers.ru/images/Sapphire_
 !
 ! Rambler.RU и их проекты
 autorambler.ru##.bannerInside
