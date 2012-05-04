@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 7LR1vIhLBqCsgFLDHgs3rw
-! Last modification time (GMT): 2012.05.04 11:43
+! Checksum: UlstmR5AQDxYc1zUhxRZTA
+! Last modification time (GMT): 2012.05.04 18:25
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -4645,10 +4645,11 @@ relax.ngs.ru###exclusive
 turizm.ngs.ru###logo-menu
 !
 ! Overclockers.RU
-! Блок анонсов и рекламы на форуме и в статьях (на главной странице пусть будет)
+! Блок анонсов и рекламы
 forums.overclockers.ru##BR[clear="all"] + TABLE[align="center"][style*="1p"]
 forums.overclockers.ru##BR[clear="all"] + TABLE[align="center"][style*="2p"]
 forums.overclockers.ru##BR[clear="all"] + TABLE[align="center"][style*="3p"]
+overclockers.ru###mainplace > TABLE:first-child:last-child TR:first-child
 overclockers.ru###contentplace > [class^="deco-block"]
 overclockers.ru###contentplace > [class^="deco_block"]
 overclockers.ru###contentplace > [class^="decob"]
@@ -4657,6 +4658,7 @@ forums.overclockers.ru##TD:first-child + TD[width="240"]
 ! Таблица с рекламой над и под шапкой
 overclockers.ru##.rastyazka
 overclockers.ru##.rast_yazka
+overclockers.ru##.rasty_azka
 overclockers.ru###topbanners
 overclockers.ru###top_banners
 overclockers.ru###blueline + DIV[align="center"] > TABLE[height="68"]
