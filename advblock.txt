@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: zn79pW7YLMYYqEp6hbGdag
-! Last modification time (GMT): 2012.05.09 12:06
+! Checksum: rbVH2YyHWpCDMFiAQYni8g
+! Last modification time (GMT): 2012.05.09 18:55
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -117,6 +117,7 @@
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
 ||youtube.com^$domain=help2play.com|otveti2012.ru|otvetru.ru
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
+||astaninki2.com^$third-party,~popup,popup
 ||devochki.cz^$third-party,~popup,popup
 ||livejasmin.com^$third-party,~popup,popup
 ||polezno-2011.org^$third-party,~popup,popup
@@ -322,6 +323,8 @@ _banner.gif
 /img/rekl/*
 ! $domain=sotoweek.ru|sotovik.ru
 /inc/banner_zone/*
+! mac.net.ua, wersi.ru (причём не только у них самих)
+/media/banners/*
 /mybaner/*
 /partner/banner/*
 /reklam.
@@ -1272,6 +1275,7 @@ _tizers.
 ||poshalim.$third-party
 ||pozzitiv.ru^$third-party
 ||ppnd.ru^$third-party
+||pr-inc.biz^
 ||pr-solution.ru^
 ||pressball.by/files/$object
 ||price.ua^$third-party
@@ -3705,6 +3709,8 @@ kinobaza.net##A.red
 kinobaza.net##A[href="/out.php"]
 ||kinobaza.net/babes/
 ||kinofilms.tv/adv/
+||kinomir.net/under1.js
+||kinomir.net/counter3.js
 kinopoisk.ru###loadb
 kinopoisk.ru##.brand
 kinopoisk.ru##.superb
@@ -3783,7 +3789,6 @@ luxurynet.ru##.artbannersplus
 !
 !M
 mac.net.ua##.advertize_horizontal
-||mac.net.ua/media/banners/
 maccentre.ru##DIV[id^="bn_"]
 macdigger.ru###top + DIV[style]
 macdigger.ru##DIV[style*="banner"]
@@ -4156,6 +4161,7 @@ season.ru##[class^="bnnr_bx_"]
 ! Правило для блокировки рекламы на securitylab.ru при заблокированном javascript
 ||securitylab.ru/bitrix/*_240x400_
 ||seedoff.net/adv/
+||seedoff.net/jscript/xbtit.js
 ||seedoff.net/partners/
 sega.ucoz.com###reklama
 segodnya.ua##.ah-stuff-informer
@@ -4667,6 +4673,7 @@ ferra.ru##.advertbox
 email.rambler.ru##.adWords
 ||ad.rambler.ru/static/green.min.js
 rambler.ru##.advertising
+rambler.ru##.b-article-aside__banner
 rambler.ru##.b-podmes
 rambler.ru##.begun
 rambler.ru##.bnr
@@ -4841,7 +4848,7 @@ x-soft.tomsk.ru###shop
 @@/adfox/*$image,object,domain=alfabank.ru
 @@/cgi-bin/banners/*$domain=gzt.ru|km.ru
 @@/getCodeTest?$domain=alfabank.ru
-@@/images/banners/*$domain=aida64.com|bakabt.com|danuradio.com|faberlic.ru|kingston.com|martgallery.ru|molodifest.ru|slinux.ru|tbt.ru|vorbis.com|xxxxbar.ru
+@@/images/banners/*$domain=aida64.com|bakabt.com|bakabt.me|danuradio.com|faberlic.ru|kingston.com|martgallery.ru|molodifest.ru|slinux.ru|tbt.ru|vorbis.com|xxxxbar.ru
 @@/prepareCode?$domain=alfabank.ru|kommersant.ru
 @@/upload/rk/*$domain=bbk.ru|kykyryza.ru|qwerty.ru|radiorecord.ru
 @@||7771000.ru/images/*/baners/$~third-party
