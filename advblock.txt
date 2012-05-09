@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: +CTYBxUt3GnKmiVlFJ6JqA
-! Last modification time (GMT): 2012.05.09 10:50
+! Checksum: sQW7TImQTzG+fWgrfIeYNA
+! Last modification time (GMT): 2012.05.09 10:54
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -4622,9 +4622,10 @@ turizm.ngs.ru###logo-menu
 ! Overclockers.RU
 ! Блок анонсов и рекламы
 forums.overclockers.ru##BR[clear="all"] ~ TABLE[align="center"]
-forums.overclockers.ru##[class^="annon"],[class^="anon_"],[class^="anons"]
+forums.overclockers.ru##[class^="annon"],[class^="anon_"],[class^="anons"],[class^="ano_n"][class^="a_non"]
 forums.overclockers.ru##TABLE[style$="115%"]
 overclockers.ru##.ad_blo,.adblo
+overclockers.ru##[class^="okak"]
 overclockers.ru###contentplace > [class*="bl"]
 overclockers.ru###contentplace > [class*="co"]
 overclockers.ru###contentplace > [class*="de"]
@@ -4637,9 +4638,9 @@ overclockers.ru##.rastyazka,.rast_yazka,.rasty_azka
 overclockers.ru##TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
 overclockers.ru###topbanners,#top_banners,#topb_anners
 ! Ссылки
-overclockers.ru##A[href*="citilink.ru/"]:not([class="postlink"])
-overclockers.ru##A[href*=".ru/catalog/"]:not([class="postlink"])
-overclockers.ru##A[href*="xpert.ru/"]:not([class="postlink"])
+overclockers.ru,~forums.overclockers.ru##A[href*="citilink.ru/"]
+overclockers.ru,~forums.overclockers.ru##A[href*=".ru/catalog/"]
+overclockers.ru,~forums.overclockers.ru##A[href*="xpert.ru/"]
 overclockers.ru##A.uho
 ! Колонка слева (кроме меню)
 overclockers.ru###leftplace > :not(.menu)
