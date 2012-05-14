@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: QZNAGnhxJySao1jIe5d+4g
-! Last modification time (GMT): 2012.05.14 10:51
+! Checksum: 6tX+HkcWihuxy1BWyM4pMA
+! Last modification time (GMT): 2012.05.14 15:22
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -4637,24 +4637,26 @@ forums.overclockers.ru##BR[clear="all"] ~ TABLE[class][border],BR[style] ~ TABLE
 forums.overclockers.ru##TABLE[cellspacing][style*="font-size:"]
 forums.overclockers.ru##TD[width][style*="padding"]
 overclockers.ru##.tags ~ TABLE,.tags ~ DIV:not(#optnav),.tags ~ #optnav:not(:last-child)
-overclockers.ru###hpath ~ STYLE ~ TABLE[class],#hpath ~ STYLE ~ DIV[class]:not([class="tags"])
+overclockers.ru###hpath ~ STYLE ~ DIV[class]:not([class="tags"])
+overclockers.ru###hpath ~ STYLE ~ DIV[id]:not([id="optnav"]):not([id="fixoldhtml"]):not([id="upmsg-selectable"]):not([id="navpages"]):not([id="vote_buttons"])
+overclockers.ru###hpath ~ STYLE ~ TABLE
 overclockers.ru##[class^="fifty-fifty"] > STYLE ~ *
 overclockers.ru##[class^="fifty-fifty"] > *:not([class="decoblock-content "]):not([class="decoblock-content decoblock-nopadding"]):not([class="decoblock"])
 ! Плейсхолдер под рекламный блок справа от форума.
 forums.overclockers.ru##TD:first-child + TD[width="240"]
 ! Таблица с рекламой над и под шапкой
-overclockers.ru##.rastyazka,.rast_yazka,.rasty_azka
 overclockers.ru##TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
 overclockers.ru###topbanners,#top_banners,#topb_anners
 ! Ссылки
+overclockers.ru##A[href*="overclockers.ru"][target="_blank"],A[href*="overclockers.ru"][target="_blank"] ~ *
 overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA),[onclick] A
 overclockers.ru##A[onclick]:not([href^="#"]):not([href^="."]):not([href^="/"]):not([onclick="toggleSmilies()"]):not([onclick="toggleQRFloatForm()"]):not([onclick^="prompt('"])
 overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA) ~ *,[onclick] A ~ *
 overclockers.ru##A[onclick]:not([href^="#"]):not([href^="."]):not([href^="/"]):not([onclick="toggleSmilies()"]):not([onclick="toggleQRFloatForm()"]):not([onclick^="prompt('"]) ~ *
-overclockers.ru##A.uho
-overclockers.ru##[width$="%"] > A[href*="citilink.ru/search/"],LI A[href*="citilink.ru/search/"]
-overclockers.ru##[width$="%"] > A[href*=".ru/catalog/"],LI A[href*=".ru/catalog/"]
-overclockers.ru##[width$="%"] > A[href*="xpert.ru/products."],LI A[href*="xpert.ru/products."]
+overclockers.ru##LI > *:not(A)
+overclockers.ru##LI A[href*="citilink.ru/search/"]
+overclockers.ru##LI A[href*=".ru/catalog/"]
+overclockers.ru##LI A[href*="xpert.ru/products."]
 ! Колонка слева (кроме меню)
 overclockers.ru###leftplace > :not(.menu)
 ! Колонка справа
