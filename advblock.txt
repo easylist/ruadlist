@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: EdzMSg1Go1iPGZrUqecdlg
-! Last modification time (GMT): 2012.05.14 16:09
+! Checksum: WlJXRBMK6GgPmeVNPuSirg
+! Last modification time (GMT): 2012.05.14 17:34
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -4646,6 +4646,7 @@ overclockers.ru##[class^="fifty-fifty"] > *:not([class="decoblock-content "]):no
 forums.overclockers.ru##TD:first-child + TD[width="240"]
 ! Таблица с рекламой над и под шапкой
 overclockers.ru##TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
+overclockers.ru###wrapper > STYLE ~ DIV[id]:not([class="clearfix"]):not([id="footer"])
 ! Ссылки
 overclockers.ru##A[href*="overclockers.ru"][target="_blank"],A[href*="overclockers.ru"][target="_blank"] ~ *
 overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA),[onclick] A
@@ -4656,6 +4657,7 @@ overclockers.ru##LI > *:not(A)
 overclockers.ru##LI A[href*="citilink.ru/search/"]
 overclockers.ru##LI A[href*=".ru/catalog/"]
 overclockers.ru##LI A[href*="xpert.ru/products."]
+overclockers.ru##NOINDEX > A[target="_blank"]
 ! Колонка слева (кроме меню)
 overclockers.ru###leftplace > :not(.menu)
 ! Колонка справа
@@ -4672,6 +4674,7 @@ overclockers.ru###footer > DIV[style]
 ||overclockers.ru/images/MSI_
 ||overclockers.ru/images/Palit_
 ||overclockers.ru/images/Sapphire_
+||overclockers.ru/partners/
 !
 ! Rambler.RU и их проекты
 autorambler.ru##.bannerInside
