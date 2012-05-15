@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: jaHuG3JVSAMaF3WFleioPw
-! Last modification time (GMT): 2012.05.15 14:54
+! Checksum: APGznodVUxwzUSpzihSQTw
+! Last modification time (GMT): 2012.05.15 15:04
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -4642,10 +4642,11 @@ forums.overclockers.ru##BR[clear="all"] ~ TABLE[class][border],BR[style] ~ TABLE
 forums.overclockers.ru##TABLE[cellspacing][style*="font-size:"]
 forums.overclockers.ru##TD[width][style*="padding"]
 forums.overclockers.ru###wrapcentre > BR ~ TABLE[class],#pagecontent > BR ~ TABLE[class]
+overclockers.ru###contentplace #decoblock-content UL
 overclockers.ru##[class^="fifty-fifty"] > *:not([class="decoblock-content "]):not([class="decoblock-content decoblock-nopadding"]):not([class="decoblock"])
 overclockers.ru##[class^="fifty-fifty"] > STYLE ~ *
-overclockers.ru###hpath ~ STYLE ~ DIV[class]:not([class="tags"])
-overclockers.ru###hpath ~ STYLE ~ DIV[id]:not([id="optnav"]):not([id="fixoldhtml"]):not([id="upmsg-selectable"]):not([id="navpages"]):not([id="vote_buttons"])
+! overclockers.ru###hpath ~ STYLE ~ DIV[id]:not([id="optnav"]):not([id="fixoldhtml"]):not([id="upmsg-selectable"]):not([id="navpages"]):not([id="vote_buttons"])
+overclockers.ru###hpath ~ STYLE ~ TABLE
 overclockers.ru###mainplace > TABLE:first-child > TBODY:first-child > TR:first-child
 overclockers.ru##.tags ~ TABLE,.tags ~ DIV:not(#optnav),.tags ~ #optnav:not(:last-child)
 ! Плейсхолдер под рекламный блок справа от форума.
@@ -4662,6 +4663,7 @@ overclockers.ru##[class^="decoblock"] A[href*="overclockers.ru"]:not([href^="htt
 overclockers.ru##LI A[href*="citilink.ru/search/"]
 overclockers.ru##LI A[href*=".ru/catalog/"]
 overclockers.ru##LI A[href*="xpert.ru/products."]
+overclockers.ru##LI > A[href^="http://www.overclockers.ru/"]
 overclockers.ru##LI > *:not(A)
 overclockers.ru##NOINDEX > A[target="_blank"]
 overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA) ~ *,[onclick] A ~ *
