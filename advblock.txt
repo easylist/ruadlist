@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: hO+kgsmuQYPzDqlbrfqDLA
-! Last modification time (GMT): 2012.05.15 08:47
+! Checksum: W+NitQZ2PBqUz7wpR4a9Wg
+! Last modification time (GMT): 2012.05.15 10:10
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -4633,33 +4633,36 @@ turizm.ngs.ru###logo-menu
 !
 ! Overclockers.RU
 ! Блок анонсов и рекламы
-overclockers.ru###mainplace > TABLE:first-child > TBODY:first-child > TR:first-child
 forums.overclockers.ru##BR[clear="all"] ~ TABLE[align="center"]
 forums.overclockers.ru##BR[clear="all"] ~ TABLE[class][border],BR[style] ~ TABLE[class][border]
 forums.overclockers.ru##TABLE[cellspacing][style*="font-size:"]
 forums.overclockers.ru##TD[width][style*="padding"]
-overclockers.ru##.tags ~ TABLE,.tags ~ DIV:not(#optnav),.tags ~ #optnav:not(:last-child)
+forums.overclockers.ru###wrapcentre > BR ~ TABLE[class],#pagecontent > BR ~ TABLE[class]
+overclockers.ru##[class^="fifty-fifty"] > *:not([class="decoblock-content "]):not([class="decoblock-content decoblock-nopadding"]):not([class="decoblock"])
+overclockers.ru##[class^="fifty-fifty"] > STYLE ~ *
 overclockers.ru###hpath ~ STYLE ~ DIV[class]:not([class="tags"])
 overclockers.ru###hpath ~ STYLE ~ DIV[id]:not([id="optnav"]):not([id="fixoldhtml"]):not([id="upmsg-selectable"]):not([id="navpages"]):not([id="vote_buttons"])
 overclockers.ru###hpath ~ STYLE ~ TABLE
-overclockers.ru##[class^="fifty-fifty"] > STYLE ~ *
-overclockers.ru##[class^="fifty-fifty"] > *:not([class="decoblock-content "]):not([class="decoblock-content decoblock-nopadding"]):not([class="decoblock"])
+overclockers.ru###mainplace > TABLE:first-child > TBODY:first-child > TR:first-child
+overclockers.ru##.tags ~ TABLE,.tags ~ DIV:not(#optnav),.tags ~ #optnav:not(:last-child)
 ! Плейсхолдер под рекламный блок справа от форума.
 forums.overclockers.ru##TD:first-child + TD[width="240"]
 ! Таблица с рекламой над и под шапкой
 overclockers.ru##TABLE[width="100%"][height^="6"],TABLE[width="100%"][height^="7"]
 overclockers.ru###wrapper > STYLE ~ DIV[id]:not([class="clearfix"]):not([id="footer"])
 ! Ссылки
+forums.overclockers.ru##TD[width$="%"] > A[href*="overclockers.ru"]
 overclockers.ru##A[href*="overclockers.ru"][target="_blank"],A[href*="overclockers.ru"][target="_blank"] ~ *
-overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA),[onclick] A
 overclockers.ru##A[onclick]:not([href^="#"]):not([href^="."]):not([href^="/"]):not([onclick="toggleSmilies()"]):not([onclick="toggleQRFloatForm()"]):not([onclick^="prompt('"])
-overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA) ~ *,[onclick] A ~ *
 overclockers.ru##A[onclick]:not([href^="#"]):not([href^="."]):not([href^="/"]):not([onclick="toggleSmilies()"]):not([onclick="toggleQRFloatForm()"]):not([onclick^="prompt('"]) ~ *
-overclockers.ru##LI > *:not(A)
+overclockers.ru##[class^="decoblock"] A[href*="overclockers.ru"]:not([href^="http://people.overclockers.ru/"]):not([href^="http://forums.overclockers.ru/viewtopic.php?t="])
 overclockers.ru##LI A[href*="citilink.ru/search/"]
 overclockers.ru##LI A[href*=".ru/catalog/"]
 overclockers.ru##LI A[href*="xpert.ru/products."]
+overclockers.ru##LI > *:not(A)
 overclockers.ru##NOINDEX > A[target="_blank"]
+overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA) ~ *,[onclick] A ~ *
+overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA),[onclick] A
 ! Колонка слева (кроме меню)
 overclockers.ru###leftplace > :not(.menu)
 ! Колонка справа
