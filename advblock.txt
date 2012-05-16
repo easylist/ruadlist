@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: N3VrrkYQ5GqM218V1ZdsRQ
-! Last modification time (GMT): 2012.05.16 11:08
+! Checksum: R2NBfyvFPWRGNOupMvfOvQ
+! Last modification time (GMT): 2012.05.16 11:21
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -4665,10 +4665,10 @@ overclockers.ru##LI A[href*="citilink.ru/search/"]
 overclockers.ru##LI A[href*=".ru/catalog/"]
 overclockers.ru##LI A[href*="xpert.ru/products."]
 overclockers.ru##LI > A[href^="http://www.overclockers.ru/"]
-overclockers.ru##LI > *:not(A)
+overclockers.ru###decoblock-content LI > *:not(A),.decoblock-content LI > *:not(A)
 overclockers.ru##NOINDEX > A[target="_blank"]
-overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA) ~ *,[onclick] A ~ *
-overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA),[onclick] A
+overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA):not(TD) ~ *,[onclick] A:not([href=^"./ucp.php?"]) ~ *
+overclockers.ru##[onclick]:not(A):not(INPUT):not(TEXTAREA):not(TD),[onclick] A:not([href=^"./ucp.php?"])
 ! Колонка слева (кроме меню)
 overclockers.ru###leftplace > :not(.menu)
 ! Колонка справа
