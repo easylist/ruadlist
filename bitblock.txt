@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: S4DqJwECKpj1j/8KwoXlGQ
-! Last modification time (GMT): 2012.05.17 20:35
+! Checksum: 9fO/AL7KIbhX7lYRKKzNtA
+! Last modification time (GMT): 2012.05.18 15:00
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -20,7 +20,6 @@
 @@||google.com/js/plusone.js|$domain=pikucha.ru
 @@||odnoklassniki.ru/share/odkl_share.js|$domain=ivi.ru
 @@||wdc.com/scripts/jquery.jcarousel.min.js|$domain=wdc.com
-@@||ws.audioscrobbler.com^$domain=tvoeradio.org
 @@||yandex.st/share/share.js$domain=pikucha.ru|yandex.by|yandex.com|yandex.com.tr|yandex.kz|yandex.ru|yandex.ua
 !
 != Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
@@ -640,6 +639,9 @@ tweaktown.com##.content-latestpost-socialbar > A > .tip
 !- Дальнейшие правила взяты из подписки от fanboy и нацелены исключительно на -
 !- блокирокву мусора из социальных сетей. Не оптимальные правила удалены.     -
 !------------------------------------------------------------------------------
+! - Исключения
+@@||addthis.com/js/250/addthis_widget.js$domain=tomtom.com
+@@||ws.audioscrobbler.com^$domain=tvoeradio.org
 ! - Модифицированные правила
 ~facebook.com,~pressa-online.com###fbContainer
 ~z-music.ru###social_icons
