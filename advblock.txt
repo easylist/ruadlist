@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: nJA17wWDP4+QLJTIse2StA
-! Last modification time (GMT): 2012.05.18 11:13
+! Checksum: mLU1IGb2yFBXgISoHErKbA
+! Last modification time (GMT): 2012.05.18 20:19
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -32,6 +32,7 @@
 /adv_clk_redirect.php?$image,~image,popup
 ! $domain=playground.ru
 .tnt-online.ru/?utm_$image,~image,popup
+||apb-re.ru/?pid=$image,~image,popup
 ||crusewind.net/click/direct.php?$image,~image,popup
 ||fileshare.in.ua^*?gogogo$image,~image,popup
 ||filonet.ru/engine/redirect.php?url=$image,~image,popup
@@ -1208,6 +1209,7 @@ _tizers.
 ||oyy.ru^
 ||ozenuydu.com/resim
 ||ozon.ru^$script,third-party
+||ozon.ru/graphics/img_ass/468/
 ||p-rank.info^$third-party
 ||p-search.org^$third-party
 ||palantir.in/showban*.php?
@@ -2579,6 +2581,7 @@ _popunder.$~popup,popup
 ||liurdat.if.ua^$~popup,popup
 ||mikera.if.ua^
 ||morlos.org.ua^
+||pokewashiop.net.ua^$~popup,popup
 ||rikoli.org.ua^
 ||udoppi.net.ua^
 ! Прочее
@@ -3235,9 +3238,12 @@ bagnet.org##.banner
 @@||bagnet.org/doc/images/*/
 bape3.org##A[target="_blank"][href^="http"] > IMG
 ||bape3.org^*.php|
-bash.im,bash.org.ru##.quote > .text:first-child
-bash.im,bash.org.ru##.quote > DIV[style]
-bash.im,bash.org.ru###menubar > DIV[style^="float:"]
+bash.im##.quote > .text:first-child
+bash.im##.quote > DIV[style]
+bash.im###menubar > DIV[style^="float:"]
+||bash.im/_ad.php?
+@@||bash.im/faq|$elemhide
+@@||bash.im/webmaster|$elemhide
 batzbatz.com###dle-content > SPAN > NOINDEX
 bbs.nashalife.ru###daos_outer
 beon.ru##.adbg
@@ -4848,8 +4854,6 @@ x-soft.tomsk.ru###shop
 @@||afisha.ru/proxy/$domain=afisha.ru
 @@||alfabank.ru/*/baner_$~third-party
 @@||alluregame.ru/Content/*/Advert$~third-party
-@@||bash.org.ru/faq|$elemhide
-@@||bash.org.ru/webmaster|$elemhide
 @@||bashtube.ru/images/tizers.png?$~third-party
 @@||cdn.now.ru/www/delivery/fc.php?$domain=now.ru
 @@||diplo.de/contentblob/*/Teaser/$domain=diplo.de
