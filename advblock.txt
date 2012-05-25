@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: t1A7XAQVX3uigP9UNTNqTg
-! Last modification time (GMT): 2012.05.24 11:46
+! Checksum: P3SJFbRzlmnKoTp/bTZB1Q
+! Last modification time (GMT): 2012.05.25 09:46
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -908,6 +908,7 @@ _tizers.
 ||grebibablo.com^
 ||gsmonitor.ru^
 ||gugla.net^
+||gzstore.ru/_mod_files/ce_images/BannerGZO/
 ! ||h12.ru/images/$third-party
 ||hd-tube.ru^$third-party
 ||headwood.com^$third-party
@@ -3538,7 +3539,10 @@ gagadget.com###corpMagnet
 gagadget.com###footer-holding
 gagadget.com##[style*="width: 240px"][style*="height: 350px"]
 ||galya.ru^*/clients/
-gamemag.ru##EMBED[width="600"][height="140"]
+gamemag.ru##A[href^="/out.php?site="] > IMG[width="600"][height="120"]
+gamemag.ru##A[style^="display:block;"][href*="/game.asp?id="]
+||gamemag.ru/admin/plugins/blog/layers/*/
+||gamemag.ru/admin/spaweditor/uploads/images/
 gamer.ru##.br[style="width: 240px; height: 400px;"]
 gamer.ru##BR + TABLE[width="630"]
 ||gamerpro.ru/images/adver/$image,object
