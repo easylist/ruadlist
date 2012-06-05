@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: Fw7Lf4ELao3J/RQ2Kjcq0Q
-! Last modification time (GMT): 2012.06.05 16:34
+! Checksum: wUzoVGJiNpceZFJYqZogVg
+! Last modification time (GMT): 2012.06.05 22:19
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -120,8 +120,7 @@
 ||vsesuper.in^$third-party,~popup,popup
 ||vstaet.net^$third-party,~popup,popup
 ||x-uboino.$third-party,~popup,popup
-! Порно-сайты сети pokajem. Известные домены:
-! $domain=nashevideo.info|pokajem.do.am|prodom2.com|tele-dom2.com|telesekas.com|tvsxsite.com|videocinemax.com
+! Порно-сайты сети pokajem.
 ||pokajem.*.*/$third-party,~popup,popup
 ||glopic.com$domain=nashevideo.info|pokajem.do.am
 !
@@ -195,7 +194,6 @@
 ! Реклама приватбанка
 ##BODY > #flydiv
 ! Реклама в поиске для партнёров Google.
-! www.google.com,www.google.ru##DIV[align] + TABLE[width="100%"][cellpadding="0"]
 www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 ! - Скрытие по размеру --------------------------------------------------------
 ##IMG[width="120"][height="600"]
@@ -353,7 +351,6 @@ _baner_
 .teaser.
 /teasers/*
 /teasers.
-! /tiz/* ?
 _tizer.
 -tizer.
 /tizer-
@@ -910,18 +907,14 @@ _tizers.
 ||gsmonitor.ru^
 ||gugla.net^
 ||gzstore.ru/_mod_files/ce_images/BannerGZO/
-! ||h12.ru/images/$third-party
 ||hd-tube.ru^$third-party
 ||headwood.com^$third-party
-! ||hellywood.ru^$third-party
 ||helper.clan.su^$third-party
 ||helpls.ru^
 ||heroeswm.ru^$third-party
-! ||hid24.com^
 ||hit-sales.ru^
 ||hitex.com.ua^$domain=~hitex.com.ua
 ||hitlist.ru^$third-party
-! ||hitter.ru^
 ||hmn.ru/mhmb_bs/viewb.js?
 ||holder.com.ua^
 ||homrus.net^
@@ -1615,9 +1608,7 @@ _tizers.
 ||webex.ru^$third-party
 ||webkrug.ru/images/bann
 ||weblist.ru/images/weblist
-! ||weblog.com*/cnt
 ||webmedia.co.il^
-! ||webnewshost.com/do/adv.
 ||weboborona.ru/pic/wban
 ||webplus.info/getres.php?
 ||webproficlub.ru^$third-party
@@ -1755,8 +1746,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 !
 ! AdStock.ru
 ! ##A[href*=".ru/fn.php?r="],##A[href*=".ru/newfn/?go="]
-! Похоже показ рекламы через этот IP давно не работает
-//89.108.72.16/rm/gb/*
 ||adstock.ru^
 ||superfastcomputer.ru^
 !
@@ -1924,24 +1913,18 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ! Media-Click.ru
 /runder.php?id=*&site=$script,third-party
 /under.php?id=*&site=$script,third-party
-! //212.150.34.*.php?
 ||admedia-click.ru^$~popup,popup
 ||media-click.ru^$~popup,popup
 ||mediaip.ru^$~popup,popup
 !
 ! MediaLand.ru — партнёрская сеть компании «Медиа Мир».
-! ###medialand_adland_inline_div_750
-! ||content*.medialand.ru$~script
-! Что-то я позабыл зачем нужно было оставлять всё это…
 ||medialand.ru/code?
 ||popunder-mladnet.medialand.ru
 !
 ! MadBanner.ru
 ! «Баннерный двигатель MadBanner»
 ||4smi.ru^
-! ||adv.vz.ru^
 ||arigami.ru^
-! admin.buildbull.ru
 ||buildbull.ru^
 ! $domain=madbanner.akado.ru|madbanner.com|madbanner.ru
 ||madbanner.$~object-subrequest
@@ -3987,7 +3970,6 @@ odnako.org##IMG[width="240"][height="25"]
 ||online.multilex.ru^*banner
 online.ua###ban_news_r
 online.ua###top_banner
-! ###rBanFix  ##.fixed-reklama
 online.ua##[class*="reklama"]
 news.online.ua##IMG[class$="_link"]
 ||online.ua/onlineua%20240_30.gif
@@ -4193,8 +4175,6 @@ samlab.ws##.soft-day:not(:first-child) > .box
 ||sat-digest.com/ag*/$object,image
 ||sat-digest.com.ua/ag*/$object,image
 season.ru##[class^="bnnr_bx_"]
-! Правило для блокировки рекламы на securitylab.ru при заблокированном javascript
-||securitylab.ru/bitrix/*_240x400_
 ||seedoff.net/adv/
 ||seedoff.net/jscript/xbtit.js
 ||seedoff.net/partners/
@@ -4296,8 +4276,6 @@ theplace.ru##[style*="dotted silver"]
 thevista.ru##.leftblinks
 thevista.ru##.pgbegun
 thevista.ru##.pgrightadv
-! ||thevista.ru^*_banners/
-! @@||thevista.ru^*/a_banners/
 thg.ru##.mm_item[style="height: 43px;"]
 ||thg.ru/adv_img/
 ||thg.ru/images/spons/
