@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: x1u/XcBTK2a5we7xUm4fPg
-! Last modification time (GMT): 2012.06.15 16:26
+! Checksum: tnWP+qyIK6aiQCvktA/YPQ
+! Last modification time (GMT): 2012.06.15 19:19
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -653,13 +653,12 @@ tweaktown.com##.content-latestpost-socialbar > A > .tip
 !------------------------------------------------------------------------------
 ! - Исключения
 @@||addthis.com/js/250/addthis_widget.js$domain=tomtom.com
+@@||bbci.co.uk/modules/sharetools/*/sharetools.js$domain=bbc.co.uk
 @@||ws.audioscrobbler.com^$domain=tvoeradio.org
 ! - Модифицированные правила
 ~facebook.com,~pressa-online.com###fbContainer
 ~z-music.ru###social_icons
 ~zippyshare.com###share_button
-~bbc.co.uk##.sharetools
-/modules/sharetools/*$script,domain=~bbc.co.uk
 ! Заменяет правила скрытия на юзерскриптсах
 ||userscripts.org/images/handycons/
 !------------------------------------------------------------------------------
@@ -914,6 +913,7 @@ tweaktown.com##.content-latestpost-socialbar > A > .tip
 /linkedin_36x
 /mobile_top_icon.
 /mod_socialslider/*
+/modules/sharetools/*$script
 /myspace-32x32.
 /myspace.gif|$domain=~myspace.com
 /myspace.png|$domain=~myspace.com
@@ -1960,6 +1960,7 @@ delfi.lv##.sbookmarks
 ##.shareThisShare
 ##.shareTool
 ##.ShareTools
+##.sharetools
 ##.sharing-box
 ##.sharing-counters
 ##.sharing-tools
