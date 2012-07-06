@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 4shtAjdISp/+T1r85UImyg
-! Last modification time (GMT): 2012.07.06 14:53
+! Checksum: mrsKR2cV0AKVLybctr9r9A
+! Last modification time (GMT): 2012.07.06 22:55
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -252,7 +252,9 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 /mirmaek/*$image
 /popup-domination/*
 ! adfox.ru, adwolf.ru, kavanga.ru…
-/prepareCode?$match-case
+/prepareCode?$match-case,domain=~gazeta.ru
+||gazeta.adfox.ru/prepareCode?
+||gazeta.adfox.ru//1693/prepareCode?
 /richarbuz.
 .ru/ads/
 /rnb.php?id=
@@ -3247,7 +3249,9 @@ games-archive.net##.PostContent > NOINDEX > CENTER
 gameshare.com.ua##A[href*="li.ru/go?"]
 ||games-archive.net^$object
 games-tv.ru##.brandingh
+gazeta.ru##.side-adv
 gazeta.ru##.vypolzen_out
+gazeta.ru##DIV[style^="overflow:hidden;background:url('http://a.content.adfox.ru/"]
 ||gde.ru/img/*320x1
 ||getalbums.ru^$object
 ||getitbit.net/ads/$~popup,popup
