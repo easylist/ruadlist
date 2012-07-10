@@ -22,7 +22,7 @@ commit_script() {
 	grep '^[^!].*[$,]domain=.*,' *.txt | grep --color=auto '[$,]domain=.*,'
 	grep '^[^!].*\$popup' *.txt | grep --color=auto '\$popup'
 	grep '^......*||' *.txt | grep --color=auto \|\|
-	grep '^(?:@@)?||\*' *.txt
+	grep -E '^(@@)?\|\|\*' *.txt
 	# type commit message
 	echo -------------------------------------------------------------------------------
 	echo Type commit message, save it \(Ctrl+O\) and close nano \(Ctrl+X\).
