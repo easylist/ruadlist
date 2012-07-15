@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: Z58AaZ97Usrv1DJG25SUOA
-! Last modification time (GMT): 2012.07.15 15:49
+! Checksum: ZQhjl05dPC1AkUMxnJY99g
+! Last modification time (GMT): 2012.07.15 16:50
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1830,6 +1830,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 @@||video.begun.ru/flowplayer_begun_lib.swf|
 !
 ! BinMedia.ru
+! 178.162.179.13
 /mp3player.swf?file=*/vk.mp3
 ||b21342.ru^
 ||binmedia.ru^
@@ -2098,6 +2099,7 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /mp3player.swf?file=*/bb2.mp3
 /vkcode.php?id=$script
 ||andrak.ru^
+||clickadvert.net^
 ||paymonsters.biz^
 ||pm00001.com^
 ||pm00002.com^
@@ -2542,11 +2544,7 @@ _popunder.$~popup,popup
 ||menuse.ru^
 !
 ! trafOret.ru
-! * = a, b, c, ga, js, node, prototype, qa, ui, ...
-.info/click/*.php?id=$image,~image,popup
-.ru/click/*.php?id=$image,~image,popup
-! * == a, b, c, dojo, jquery, mootools, ...
-.info/js/*.php?id=$third-party,script
+.ua/js/$script,third-party,domain=bigtorrent.org|filmin.ru|free-torrents.org|headsoft.kz|kinobanda.net|kinobomba.net|kino-live.org|kino-portal.net|kolyan.net|megaonlinez.net|megashara.com|megatorrents.org|mirknig.com|novinkionlain.ru|online-new-films.ru|otriva.net|piratbit.net|rapidzona.com|ru-admin.net|rutor.org|stepashka.com|torrent-games.net|turbobit.net|vidachok1.com|xtreme.ws|zerx.ru|zhmak.info
 //193.105.200.14^$~popup,popup
 //193.105.200.214^$~popup,popup
 /traforet.$~popup,popup
@@ -2646,36 +2644,53 @@ _popunder.$~popup,popup
 ||yowrhbe.ru^
 ! Домены в зоне ua
 ||alesandorit.net.ua^$~popup,popup
+||azjeropolitun.net.ua^
+||coperatisgdes.if.ua^
 ||dudet.org.ua^
+||gegerobutti.km.ua^
 ||gerotomil.if.ua^
 ||ghopolu.if.ua^
+||gorodizh.net.ua^
 ||hahalemer.if.ua^
+||hefenushok.net.ua^$~popup,popup
 ||igumekolv.net.ua^
 ||kabasdremui.net.ua^
-||kenodoro.km.ua^
 ||kenodoro.km.ua^
 ||kkjhulo.net.ua^$~popup,popup
 ||kolisnbr.ks.ua^
 ||ksenofoto.if.ua^$~popup,popup
-||ledonov.uz.ua^
+||lasamalabada.net.ua^
 ||lawer.if.ua^$~popup,popup
+||ledonov.uz.ua^
 ||liurdat.if.ua^$~popup,popup
 ||lublina.if.ua^
+||melipovwe.km.ua^
 ||mikera.if.ua^
 ||morlos.org.ua^
+||nutd.if.ua^
 ||opagunit.km.ua^
 ||platerfe.pl.ua^
+||plosikutin5.if.ua^
 ||pokewashiop.net.ua^$~popup,popup
 ||polishenrtop.net.ua^
+||polishqw.net.ua^
 ||polusikorudza.net.ua^$~popup,popup
 ||pooredium.net.ua^
+||reko2loter.rv.ua^
+||reservater.km.ua^
 ||rikoli.org.ua^
+||rnyyqe.net.ua^
+||rosteloport.km.ua^
+||rrwsty.net.ua^
+||rubikon6.if.ua^$~popup,popup
+||saenkovuz.if.ua^
 ||teneto.te.ua^
 ||tresurit7.net.ua^
 ||udoppi.net.ua^
 ||werunitr2.km.ua^
 ||wwaobad.if.ua^$~popup,popup
 ||yurist2.if.ua^
+||zhiznya8.km.ua^
 ! Прочее
 ||rat.piratbit.net^
 ! Сайты мошенников в доменной зоне info, распространяемые trafOret-ом
@@ -2747,8 +2762,14 @@ _popunder.$~popup,popup
 ||vzara.ru^$~popup,popup
 ||youtube.com^$domain=goldenspace.ru|vmesterabotaem.ru|vsemdeneg.ru|vsemtube.ru
 ! Сайты мошенников в доменной зоне ua, распространяемые trafOret-ом
-||antaris.net.ua$~popup,popup
+||antaris.net.ua^$~popup,popup
+||hohokkly.if.ua^$~popup,popup
 ||kilicop.if.ua^$~popup,popup
+||kolf.if.ua^$~popup,popup
+||mnyamer.km.ua^$~popup,popup
+||mokew.if.ua^$~popup,popup
+||netrromir.net.ua^$~popup,popup
+||reweanoty.if.ua^$~popup,popup
 !
 ! Ucoz.net
 ||ucoz.*/img/ma/cv.gif
@@ -3002,6 +3023,7 @@ cwer.ru###header .right
 cwer.ru##.nodecontent > NOINDEX > TABLE[width="100%"]
 cwer.ru##.round > NOINDEX
 ||cwer.ru^$subdocument
+||cwer.ru^$object
 cy-pr.com##.b-main_body > NOINDEX
 cy-pr.com##.l-header > #hb
 cyberinfo.ru###bl_05
