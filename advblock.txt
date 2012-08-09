@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: l59oLjfMkGARWxcUTtfH1w
-! Last modification time (GMT): 2012.08.09 19:51
+! Checksum: 8qX3oad5JyjGx4norgtLtw
+! Last modification time (GMT): 2012.08.09 19:55
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -3841,8 +3841,7 @@ planetaua.net##.market
 platon.kz##.logo + #ja-search
 ||platon.kz^$object
 playground.ru##.branding
-playground.ru###teaser
-||playground.ru/download/banner/
+playground.ru##[class^="teaser"] > A[target="_blank"][href*="playground.ru/redirect/"]:not([href*="/redirect/www.playground"])
 ||playground.ru/images/branding/
 ||playground.ru/images/*-branding-
 plohihmacov.net##.gdeslon-widget
