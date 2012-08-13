@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 9Yp9PmdyNw+gxDocBo9ECQ
-! Last modification time (GMT): 2012.08.13 18:27
+! Checksum: bbWpG4T/m1ISMtblMB/J/g
+! Last modification time (GMT): 2012.08.13 18:40
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -446,6 +446,7 @@ _tizers.
 ||informer.grafru.ru^$third-party
 ||informers.ukr.net^
 ||kinobzor.tv/_cron/js/informer
+||kinoshka.to/static/js/announce.js
 ||meta.ua/*/block.js|$third-party
 ||meta.ua/informers/?
 ||mhealth.ru^$third-party
@@ -2380,21 +2381,8 @@ _popunder.$~popup,popup
 ! TeaserNET.com
 ! Общие правила
 ! ##DIV[id^="teasernet_"]
-.com/ajax/?*=*&*=$third-party,script
-.com/ajax2/?*=*&*=$third-party,script
-.com/block.js|$third-party
-.com/fz.js|$third-party
-.com/modules.*?*=*&*=$third-party,script
-.com/modules/*?*=*&*=$third-party,script
-.com/rss/?$script,third-party
-.com/rss2/?$script,third-party
-.com/rss3/?$script,third-party
-.com/rss4/?$script,third-party
-.com/rss5/?$script,third-party
-.com/rss6/?$script,third-party
-.com/show6.php?b=$third-party
-.com/step18.php?p=$third-party
-.com/_search.js|$third-party
+.com/*&ref=$domain=demotivators.to
+.com/js/*.js?$domain=demotivators.to
 ^teasernet^
 ! Стабильные домены
 ||autotizer.ru^
@@ -3126,6 +3114,7 @@ demiart.ru##IMG[width="900"][height="100"]
 demotivation.me###add2_div
 demotivation.me##BODY > NOINDEX
 ||demotivation.me/banners/
+||demotivators.to/media/
 design-warez.ru##A[target="_blank"] > IMG[width="180"]
 djrogoff.ru##.cont_in_c > .item
 ||djrogoff.ru/img/r_
