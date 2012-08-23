@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: zgrUi4cL5byuSWT0THeaSw
-! Last modification time (GMT): 2012.08.23 15:59
+! Checksum: Pdrm2tb+zpT/BT6RT4/NOg
+! Last modification time (GMT): 2012.08.23 16:22
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1778,18 +1778,6 @@ _tizers.
 /adfox.$script
 /adfox/*$image,object,script,subdocument
 !
-! AdGamble.ru
-/code/vkshow.php?id=$third-party
-/code/click.php?id=$image,~image,popup
-||ad001.ru^$~popup,popup
-||ad0002.ru^$~popup,popup
-||ad03.ru^$~popup,popup
-||ad004.ru^$~popup,popup
-||adforce.ru^
-! $domain=adgamble.net|adgamble.ru
-||adgamble.$third-party
-||adpron.com^
-!
 ! AdRiver.ru
 ###ad_ph_1
 ###ad_ph_2
@@ -2110,20 +2098,6 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 /jads.php?
 ||contextbar.ru^
 ||nolix.ru^
-!
-! PayMonsters.biz
-/files/bb2.mp3|
-/mp3player.swf?file=*/bb1.mp3
-/mp3player.swf?file=*/bb2.mp3
-/vkcode.php?id=$script
-||andrak.ru^
-||clickadvert.net^
-||clicksadvert.info^
-||paymonsters.biz^
-||pm00001.com^
-||pm00002.com^
-||pm00003.com^
-||pm00004.com^
 !
 ! People-Group.su
 ###pgeldiz
@@ -2643,6 +2617,32 @@ _popunder.$~popup,popup
 /block_view.php?bid=$third-party
 ||newsmarket.pixarea.ru^
 ||visitweb.com^
+!
+! VKnotifier
+/code/click.php?id=$image,~image,popup
+/mp3player.swf?file=*/bb1.mp3
+/mp3player.swf?file=*/bb2.mp3
+/vkcode.php?id=$script,third-party
+/vknotifier1.php?id=$script,third-party
+/vkshow.php?id=$script,third-party
+&vk_t=*&adv_ids=
+||ad001.ru^$~popup,popup
+||ad0002.ru^$~popup,popup
+||ad03.ru^$~popup,popup
+||ad004.ru^$~popup,popup
+||ad05f.ru^$~popup,popup
+||adforce.ru^
+! $domain=adgamble.net|adgamble.ru
+||adgamble.$third-party
+||adpron.com^
+||andrak.ru^
+||clickadvert.net^
+||clicksadvert.info^
+||paymonsters.biz^
+||pm00001.com^
+||pm00002.com^
+||pm00003.com^
+||pm00004.com^
 !
 ! Wizard-TraffStock.com
 //uno.*/?t=$script,popup
