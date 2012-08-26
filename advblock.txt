@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: b5nuWBKqMKkRThLtRdxPTQ
-! Last modification time (GMT): 2012.08.25 16:00
+! Checksum: 5Za39zC2yVx7eamKC1mJoA
+! Last modification time (GMT): 2012.08.26 13:42
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1039,7 +1039,6 @@ _tizers.
 ||kinofilms.com.ua^$domain=~kinofilms.com.ua
 ||kinolib.com^$third-party
 ||kinoman.ru^$third-party
-||kinopromobase.ru^$third-party
 ||kinotraff.ru^$third-party
 ||kinozal.tv^$third-party
 ||kioskas.lt/rex/pop.php?
@@ -1833,6 +1832,11 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ##.pr-AVA2
 ||ava.com.ua^
 !
+! *-Bazar.net
+/go/?w=engine_show&wsid=
+||click-bazar.net^
+||pop-bazar.net^
+!
 ! Begun.ru
 /abnl/?begun=
 ?begun=*&begun_referrer=*&begun_location=
@@ -1843,9 +1847,12 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 !
 ! BinMedia.ru
 ! 178.162.179.13
+/js/code.php?id=
+/js/rot.php?id=
 /mp3player.swf?file=*/vk.mp3
 ||b21342.ru^
 ||binmedia.ru^
+||broils.ru^
 ||tinsvt.ru^
 ||trisol.ru^
 !
@@ -1957,6 +1964,11 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||ero.ru^$third-party,domain=~vpets.ru
 ||ero-ru.net^$third-party
 ||vboys.ru^$third-party
+!
+! KinoPromoBase
+/get_banner_flash.*&shop=
+||kinopromobase.ru^
+||kinopromobase2.ru^
 !
 ! LadyClicks.ru — реклама нацеленная на женскую аудиторию
 /showf.php?u=$subdocument
