@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: zJNu/u0Yg7n60R766B0/kw
-! Last modification time (GMT): 2012.08.26 23:23
+! Checksum: 9s5GhTbr7jGEvTtCo/77TQ
+! Last modification time (GMT): 2012.08.27 00:43
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -37,6 +37,7 @@ mirage.ru,wdc.com#@##mycarousel
 !------------ Facebook --------------------------------------------------------
 ##[alt$=" on Facebook"]
 ##.aol-faux-facebook-like
+##.facebook
 ##.fb_iframe_widget
 ##.soc_fb_share
 ##[title$=" to Facebook"]
@@ -50,6 +51,7 @@ _facebook.png
 _facebook.gif
 !
 !------------ Google ----------------------------------------------------------
+##.googleplus
 ##.g_plus
 ##button[class="gbil esw eswd"]
 /+1/fastbutton?url=
@@ -76,6 +78,7 @@ _livejournal.gif
 ||pip.qip.ru^$domain=~pip.qip.ru
 !
 !------------ Twitter ---------------------------------------------------------
+##.twitter
 ||twitter.com/*/count.json?url=*&callback=
 -tweet.png
 _twitter.gif
@@ -89,8 +92,9 @@ _twitter.png
 ! Если требуется полная блокировка вконтакта, то создайте у себя два вот таких правила
 ! ||vk.com^$third-party,script,subdocument
 ! ||userapi.com^$third-party,domain=~vk.com
-###vkshare0
 ##.vk-button
+##.vkontakte
+###vkshare0
 ##.vk-share-button
 ||vk.com/images/upload.gif$third-party
 ! ||vk.com/widget_$third-party
@@ -213,6 +217,7 @@ google.com##.entry-author > .entry-likers
 google.com##.entry-actions > .like
 google.com##.entry-actions > .broadcast
 google.com##.entry-actions > .broadcast-with-note
+||habrahabr.ru/images/share.
 homenet.beeline.ru,forum.f1news.ru##.topic_share
 homenet.beeline.ru###ed-0_toolbar_3
 homenet.beeline.ru###fast-reply_toolbar_3
