@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: ZGqWz9KZy3V1ZB8HPXmw2w
-! Last modification time (GMT): 2012.09.06 22:48
+! Checksum: bZPDJXOzNnrobT5Q30q6jQ
+! Last modification time (GMT): 2012.09.07 08:59
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -3175,13 +3175,12 @@ goha.ru##.pupupies
 ||goha.ru/imageshare/sites/brands/
 ||goha.ru/imageshare/sites/img/
 ||golosua.com/img/banners/
-goodgame.ru##.header_lnks
+goodgame.ru##.header_lnks > [class^="lnk_"]:not(.lnk_main)
 goodgame.ru##.outside_bot > .left
 goodgame.ru##.outside_bot > .right
-||goodgame.ru/datas/teams/
+||goodgame.ru/datas/teams/banners/
 ||goodgame.ru/images/ad$object
 ||goodgame.ru/images/bg.
-||goodgame.ru/images/header.
 gorockop.ru##.side_block
 gorod.cn.ua##.block_social
 gorod.cn.ua##[class^="bann_"]
@@ -3486,6 +3485,9 @@ mirmmo.ru###banner-top
 mk.ru##.mk_insert
 ||mlfun.org.ua/mlbanners/
 mmaps.net##CENTER > TABLE > TBODY > TR[valign="middle"]:first-child + TR:last-child
+mmogamez.ru##.shapka > A[target="_blank"]
+||mmogamez.ru/asda/
+||mmogamez.ru/assets/templates/Standart/images/mmogamez.
 ||mmohelper.ru^$object
 ||mmohelper.ru/wp-content/uploads/adv-
 mob39.ru##TD[width="190"] > .table[width="190"]
