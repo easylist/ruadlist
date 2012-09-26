@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: JEBwJO0NUbsnusHd+23h5w
-! Last modification time (GMT): 2012.09.25 19:46
+! Checksum: Z66/Zxqz3iy3BhBsUTYwQw
+! Last modification time (GMT): 2012.09.26 14:58
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1469,7 +1469,6 @@ _tizers.
 ||slimp.net^$third-party
 ||smart-soft.ru^$third-party
 ||smartb.2gsg.com^
-||smi2.ru^$third-party,~popup,popup
 ||smiar.ru^
 ||smile32.ru^$third-party
 ||smsbanner.ru^$third-party
@@ -2353,6 +2352,11 @@ _popunder.$~popup,popup
 //178.162.137.217/*
 ||smartbn.ru^$third-party
 !
+! SMI2/СМИ2
+echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
+||smi2.ru^$third-party,~popup,popup
+||smi2.ru/data/js/
+!
 ! Торговая система NADAVI
 ! e-katalog.com.ua, e-katalog.kiev.ua, e-katalog.ru, nadavi.com.ua, nadavi.ru, podberi.tv, pokupaj.com.ua, pokupaj.ru и прочие
 ###nadaviSpan
@@ -3017,7 +3021,6 @@ ebay-forum.ru##.col_c_ads
 ||ebay-forum.ru/phpBB2/uploads/rek/
 echo.msk.ru##.advtBlock
 echo.msk.ru##.banner240 > A:not([href*="echo.msk.ru/"]) > IMG[src^="/files/"]
-echo.msk.ru##[id^="smi2adblock_"]
 ||echo.msk.ru/att/element-*-misc-*.gif
 econo.com.ua##.banner
 eg.ru###banner3
@@ -3895,7 +3898,6 @@ siropik.ru##.banner-bg
 siteua.org##NOINDEX > [class$="-block"]
 slo.ru##[class^="adv_"]
 smartsoft.kiev.ua##TD[valign="top"] > NOINDEX > CENTER
-||smi2.ru/data/js/
 smotri.com###banner-header-bottom
 ||smusics.net^*/js/motiongallery.
 soccer.ru##.linksblock
