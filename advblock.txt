@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: ENxEOPscoFpIvhYzpEI/yQ
-! Last modification time (GMT): 2012.09.28 21:52
+! Checksum: IbeAm1bexw51FbpPcnO4OQ
+! Last modification time (GMT): 2012.09.28 22:17
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -24,6 +24,8 @@
 /go/clickunder/*$image,~image,popup
 /popads/*$image,~image,popup
 /popads.$image,~image,popup
+! Против попапов pageinxt.com, fileinxt.com, searchremagnified.com и ещё некоторых
+.com/?dn=*&prvtof=$image,~image,popup
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
 .info/?id=*&go=*&adult=$image,~image,popup
 ! $domain=myredirecter.info|redirnet.info
@@ -2025,12 +2027,13 @@ compulenta.ru,computerra.ru,gismeteo.ru##A[href^="http://ad.adriver."]
 ||zarabotki.ru^
 !
 ! MediaRich.ru
-/codes/*$third-party,script,domain=doublepunch.ru|torrentszona.com
+/codes/*$third-party,script,domain=doublepunch.ru|narodclub.net|torrentszona.com
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
 ! http://xml.ssdsandbox.net/dnslookup-dnsdb?name=95.169.186.139
 //95.169.186.139^
 /code.php?idsite=$third-party
 /gask.cgi?ids=$third-party
+||2tr45.net^
 ||adrichmedia.info^
 ||adspot-rich.info^
 ||adspotrich.info^
@@ -2208,7 +2211,7 @@ _popunder.$~popup,popup
 !#popunder.clients
 ! Яndex не пользуется их услугами, но похоже существует какойто вирус/адварь,
 ! который добавляет код этой пакости на стартовую страницу Яндекса у некоторых пользователей.
-?&*=http%3A//$script,domain=gold-liter.org.ua|kino1000.ru|russian-cheaters.com|santikov.net|transformice.ru|xxx-tracker.com|yandex.ru
+?&*=http%3A//$script,domain=gold-liter.org.ua|kino1000.ru|narodclub.net|russian-cheaters.com|santikov.net|transformice.ru|xxx-tracker.com|yandex.ru
 ||111.media-pleery.ru^
 ||123.fome.ru^
 ||aefewf.allsoftfiles.com^
@@ -2249,6 +2252,7 @@ _popunder.$~popup,popup
 ||pop.kinofilez.ru^
 ||pop.spy4.in^
 ||pop.turnik.su^
+||po.spynets.ru^
 ||qwerty.arenda263.ru^
 ||static2.asfile.com^
 ||top.softweb.ru^
