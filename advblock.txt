@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: f3yCJpZH6pDuaNHOhavzkg
-! Last modification time (GMT): 2012.09.28 17:14
+! Checksum: pwdhtxuC66S/Wa4TmQBNYA
+! Last modification time (GMT): 2012.09.28 21:41
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -3717,7 +3717,6 @@ planetaua.net##.market
 platon.kz##.logo + #ja-search
 ||platon.kz^$object
 playground.ru##.branding
-playground.ru##[class^="teaser"] > A[target="_blank"][href*="playground.ru/redirect/"]:not([href*="/redirect/www.playground"])
 ||playground.ru/images/branding/
 ||playground.ru/images/*-branding-
 plohihmacov.net##.gdeslon-widget
@@ -4588,8 +4587,9 @@ x-soft.tomsk.ru###shop
 @@||vox-static.liverail.com/swf/*/admanager.swf$domain=ru
 ! Игра MonsterWold на facebook'е
 @@||wooga.com/gardens/configurations/production/teaser.
-! Домены Фольксвагена: $domain=volkswagen-nutzfahrzeuge.de|volkswagen.de
+! Ложные срабатывания на teaser, вероятно стоит удалить совсем
 @@.de/content/medialib/vwd4/*/teaser/
+@@/teaser/*$domain=a1.net|diplo.de|gravis.de|hm.com|navigon.com|onboardvideo.com.ua|playground.ru
 ! Медиаплеер soundcloud.com
 @@.soundcloud.com/player.swf?url=
 ! Авторизация через tbn.ru на разных сайтах.
@@ -4607,7 +4607,6 @@ x-soft.tomsk.ru###shop
 @@||7771000.ru/images/*/baners/$~third-party
 @@||900.md/ads/images/$~third-party
 @@||900.md/ads/js/$~third-party
-@@||a1.net/*/*/imgs/teaser/$domain=a1.net
 @@||adcast.ru/mtsweb?$domain=mts.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru
 @@||adsbox.com.ua^$~third-party
@@ -4624,7 +4623,6 @@ x-soft.tomsk.ru###shop
 @@||alluregame.ru/Content/*/Advert$~third-party
 @@||bashtube.ru/images/tizers.png?$~third-party
 @@||cdn.now.ru/www/delivery/fc.php?$domain=now.ru
-@@||diplo.de/contentblob/*/Teaser/$domain=diplo.de
 @@||discover-club.com.ua^*/swf/preloader.swf?url=$domain=discover-club.com.ua
 ! Intranet domain
 @@||dnet.ua/uploads/banners/$~third-party
@@ -4632,14 +4630,10 @@ x-soft.tomsk.ru###shop
 @@||ertelecom.ru^*.swf?link1=$domain=domru.ru
 @@||fest-ry.ru/*/images/ad$image,domain=fest-ry.ru
 @@||games-tv.ru/openx/www/delivery/ajs.php?$script,domain=games-tv.ru
-@@||gravis.de/out/pictures/teaser/$~third-party
-@@||hm.com/hmprod?*/teaser/$domain=hm.com
 @@||legionhardware.com/images/teasers/$~third-party
 @@||livejournal.com/js/??*?v=$script,domain=livejournal.com
-@@||navigon.com/export/sites/default/common/images/teaser/$~third-party
 @@||nic.ru/styles/advertising.css$domain=nic.ru
 @@||now.ru/minify/index.php?$script,domain=now.ru
-@@||onboardvideo.com.ua/images/teaser/
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=allhockey.ru
 @@||ph4.ru/*/adsense$domain=ph4.ru
 @@||photodoska.ru/Content/dynamic/ads/$domain=photodoska.ru
