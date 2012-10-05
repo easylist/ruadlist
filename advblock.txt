@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: t/zTZ4QCevKUnszGLMpgvg
-! Last modification time (GMT): 2012.10.05 13:19
+! Checksum: Vziv4dUWu09ww0kBDpIfBw
+! Last modification time (GMT): 2012.10.05 15:35
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -2702,15 +2702,24 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||adforce.ru^
 ||adserv01.ru^
 !#paymonsters.main
-/java/?id=$script,third-party
-/java/?wmids=$script,third-party
+! Customers:$domain=krilia-lubvi.ucoz.ru
+/java/*&idadv=$script,third-party
+/javavk/*$script,third-party
+?wmids=*&charset=$script,third-party
+||1poiuoupd.info^
 ||23mfdoe32rs.ru^
+||2h45iu324.info^
+||34u6oiu13df.info^
+||j2k5j2j5jj.info^
 ||mdlo324fsd.ru^
+||p2m0001.com^
 ||paymonsters.biz^
 ||pm00001.com^
 ||pm00002.com^
 ||pm00003.com^
 ||pm00004.com^
+||ryehetywyt4.com^
+||sergh34ds.com^
 ||sof32dsso.ru^
 !#paymonsters.clients
 ||mp.soft11.ru^
