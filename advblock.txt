@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: nIRspfgJS6Qvv3RRXQYySA
-! Last modification time (GMT): 2012.10.08 18:54
+! Checksum: 6gA/YzqY6qo53B5B6fsS5Q
+! Last modification time (GMT): 2012.10.08 23:12
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -4614,8 +4614,14 @@ x-soft.tomsk.ru###shop
 @@||ads.tomtel.ru/adjs.$script
 ! Видео с yatv.ru, видео на kinopoisk.ru
 @@||adv.gpm-digital.com/crossdomain.xml|$object-subrequest
+! Scale of the Universe
+@@||amazonaws.com/c.swf?path=
+! Авторизация через tbn.ru на разных сайтах.
+@@||auth.tbn.ru^
 ! Ложное срабатывание в видеоплеере RuTube.
 @@||rutube.ru/trackinfo/*?ad_ids=
+! Медиаплеер soundcloud.com
+@@.soundcloud.com/player.swf?url=
 ! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
 @@||video.*.user.madbanner.ru^$object-subrequest
 ! Видео с own3d.tv, показываемое на других сайтах (goodgame.ru|sc2tv.ru)
@@ -4625,10 +4631,6 @@ x-soft.tomsk.ru###shop
 ! Ложные срабатывания на teaser, вероятно стоит удалить совсем
 @@.de/content/medialib/vwd4/*/teaser/
 @@/teaser/*$domain=a1.net|diplo.de|gravis.de|hm.com|navigon.com|onboardvideo.com.ua|playground.ru
-! Медиаплеер soundcloud.com
-@@.soundcloud.com/player.swf?url=
-! Авторизация через tbn.ru на разных сайтах.
-@@||auth.tbn.ru^
 ! Правила для отдельных сайтов
 @@.ru/banners/$domain=citydom.ru|onlime.ru|webnames.ru|wildberries.ru
 @@/adfox/*$image,object,domain=alfabank.ru
