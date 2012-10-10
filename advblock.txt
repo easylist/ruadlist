@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: nTrMx3wqsDZefXOTbjPQpQ
-! Last modification time (GMT): 2012.10.10 04:01
+! Checksum: aQ+dTsKFpmfNaLnlXjunwg
+! Last modification time (GMT): 2012.10.10 20:55
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -71,7 +71,7 @@
 ! $domain=crazycola.ru|karosgame.ru|rzonline.ru|upslots.com|va-bank.com
 //promo.$image,~image,popup
 ||1001kupon.ru^$image,~image,popup
-||24smile.net/smi.html|$image,~image,popup
+||24smile.$image,~image,popup
 ||9donline.ru/welcome/?mita=$image,~image,popup
 ||audance.ru*/promo/$image,~image,popup
 ||blinkogold.ru^$image,~image,popup
@@ -80,7 +80,6 @@
 ||chaplingames.ru^$image,~image,popup
 ||club-sale.ru^$image,~image,popup
 ||darkorbit.bigpoint.com/?aid=$image,~image,popup
-||dofiga.net/?hotnews=$image,~image,popup
 ||fotostrana.ru/start/*/?$image,~image,popup
 ||funtest-ru.com^$image,~image,popup
 ||gh4k.ru^$image,~image,popup
@@ -253,9 +252,7 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 /mediaget-
 /mirmaek/*$image
 ! adfox.ru, adwolf.ru, kavanga.ru…
-/prepareCode?$match-case,domain=~gazeta.ru
-||gazeta.adfox.ru/prepareCode?
-||gazeta.adfox.ru//1693/prepareCode?
+/prepareCode?$match-case
 /richarbuz.
 .ru/ads/
 /rnb.php?id=
@@ -293,18 +290,19 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 /8831_1.gif
 .biz/banner/$third-party
 .com/banners/
+.net/banners/
 .ru/ban/
 .ru/banner/
 .ru/banner.
 .ru/banners/$domain=~toptracker.ru
-.ru/uploads/banners/
 .ru/i/banner/
 .ru/i/banners/
+.ru/uploads/banners/
 .ua/banner/
 .ua/banners/
-.ua/uploads/banners/
 .ua/i/banner/
 .ua/i/banners/
+.ua/uploads/banners/
 /adv/*
 /afisha_banner/*
 /baner_
@@ -417,7 +415,7 @@ _tizers.
 ##.novinator
 /adsnews.
 /informer.js
-! $domain=24smi.org|auction.ua|missrich.net|openmedia.com.ua
+! $domain=24smi.org|24smile.net|24smile.org|auction.ua|limon.biz|missrich.net|openmedia.com.ua
 /informer.php?
 /informer/script.php?id=
 /redtram.$domain=~redtram.com
@@ -436,6 +434,7 @@ _tizers.
 ||bash.org.ru/forweb/
 ||bigmir.net/informers/
 ||clipta.com/informer/
+||cmexota.ru^$third-party
 ||cnews.ru/inc/partners/rotator.php?
 ||cosmo.ru/cosmo_informers/
 ||d.drive.ru/_/$script
@@ -471,11 +470,12 @@ _tizers.
 ||seowebtools.ru/inform/infb.php?
 ||shkolazhizni.ru/img/export/
 ||smigid.ru/informer/
-||toget.ru/informers/
+||toget.ru^$third-party
 ||tophot-news.com^$third-party
 ||video.909.su/feeds/feed.php?
 ||vtomske.ru/informer/
 ||w7.ru/show.php?bid=
+||wqa.ru/show/?inf=
 ! - Биржи трафика -------------------------------------------------------------
 !#traff.bookmark
 /click/body.php?id=*&hash=$~popup,popup
@@ -613,8 +613,6 @@ _tizers.
 ||2000zakazov.ru^
 ||24new.ru^$third-party
 ||24s.ru^
-! $domain=24smile.net|24smile.org
-||24smile.$third-party,~popup,popup
 ||2baksa.net^$third-party
 ||2da2.ru^$third-party
 ||2x2.kz^
@@ -673,6 +671,7 @@ _tizers.
 ||adrock.$third-party
 ||adru.net^
 ||ads68.ru^$third-party
+||adsclick.ru^
 ||adsellers.net^
 ||adsocial.ru^
 ||adstark.ru^
@@ -787,6 +786,7 @@ _tizers.
 ||cash4ru.com^
 ||cashimtrap.com^
 ||casino-kaza.com^$third-party
+||cbn.ru^
 ||cenovik.net^
 ||chbn.ru^
 ! $domain=chitika.com|chitika.net|chitika.org
@@ -808,7 +808,6 @@ _tizers.
 ||cloudastan.com^
 ||club-reseller.com^
 ||clx.ru^$third-party
-||cmexota.ru^$third-party
 ||co.cc/img/affiliates/
 ||code.barrior.ru^
 ||coinurl.com^
@@ -890,6 +889,7 @@ _tizers.
 ||filepost.ru^$third-party
 ||filmcool.ru^$third-party
 ||finbs.ru^
+||finmonitor.com.ua/freenet/go.php?sid=
 ||fire-casino.com^$third-party
 ||firefoxstabs.com^
 ||flapoint.ru^
@@ -946,6 +946,7 @@ _tizers.
 ! $domain=goodadvert.com.ua|goodadvert.ru
 ||goodadvert.$third-party
 ||goodbody.ru^$third-party
+||good-teasers.ru^
 ||google-analistyc.
 ||googlnet.info^
 ||goon.ru^$third-party
@@ -997,7 +998,6 @@ _tizers.
 ||inboobs.net^$third-party
 ||inetrek.com^
 ||info-dvd.ru/*/rotator/
-||info.webalta.net/reliancebutton?
 ||infocar.ru/media/$third-party,script
 ||inforesell.ru^$third-party
 ||infosec.ru/common/data/pub/images/articles/
@@ -1012,7 +1012,6 @@ _tizers.
 ||intimshop.ru^$third-party
 ||intimznaki.tomsk.ru^$third-party
 ||invest-pool.ru^$third-party
-||invest-system.net/banners/
 ||invictory.org/banners/
 ||ip2phrase.com/ip2phrase.asp?
 ||ipgold.ru^$third-party
@@ -1081,7 +1080,6 @@ _tizers.
 ||liex.ru^$third-party
 ||lif.yaicom.ru^
 ||lifepromo.biz^
-||limon.biz^
 ||link.ru^
 ||linkcase.ru^
 ! $domain=linkexchange.com|linkexchange.ru
@@ -1159,7 +1157,6 @@ _tizers.
 ||mir-games.org/uploads/$third-party
 ||miralinks.ru^$third-party
 ||mirmaek.ru^$third-party
-||mirohost.net/banners/
 ||mirvolos.com$third-party
 ||missbelle.ru^$third-party
 ||mlgame.ru/wiki/attach/Referal/
@@ -1595,42 +1592,38 @@ _tizers.
 ||uptracker.ru^$third-party
 ||usde.biz^$third-party
 ||utarget.ru^$third-party
-||vareza.net^$third-party
-||vba.ru^$third-party
+||vareza.net^
+||vba.ru^
 ||vdz.su^
-||ventivmedia.com^$third-party
-||vertucash.com^$third-party
-||vezetmne.ru^$third-party
+||ventivmedia.com^
+||vertucash.com^
+||vezetmne.ru^
 ||via-shop.ru^$third-party
-||viboom.ru^$third-party
+||viboom.ru^
 ||vicepiter.ru^$third-party
-||video-invest.net^$third-party
-||video-link.ru^$third-party
-||video-people.com^$third-party
 ||videoclick.$third-party
 ||videoclik.$third-party
 ||videofan.ru^$third-party
+||video-invest.net^
 ||videoklass.ru^$third-party
+||video-link.ru^
+||videonow.ru^
+||video-people.com^
 ||videoplaza.tv/creatives/assets/
-||videoslovo.ru^$third-party
-||videotraff.ru/img
-||vidigital.ru^$third-party
+||videotraff.ru^
 ||vipaccess.su^
 ||viprelax.com.ua^$domain=~viprelax.com.ua
-||viprip.net/banners/
-||vitr.alawar.ru^$third-party
+||vitr.alawar.ru^
 ||vladja.com^$third-party
 ||vladkofe.ru^$third-party
 ||vladmag.ru^$third-party
 ||vodkov.net^$third-party
-||voland-rocker.fatal.ru^
-||votegate.ru/m.php?
-||votetraffic.ru^$third-party
+||votetraffic.ru^
 ||voyna-plemyon.ru^$third-party
 ||vpsite.ru^$third-party
 ||vsekino.su^$third-party
-||vsem.ru^$third-party
 ||vsemp.ru^$third-party
+||vsem.ru^$third-party
 ||vsesumki.com^$third-party
 ||vsetv.com/pic/paid/
 ||vsexshop.ru^$third-party
@@ -1639,80 +1632,53 @@ _tizers.
 ||vyatka-host.ru^$third-party
 ||wap-click.net^
 ||wap-tds.in^
-||wapstart.ru^$third-party
+||wapstart.ru^
 ||warezplatinum.com^$third-party
 ||warnet.ws/banners/
 ||wau.com.ua^$domain=~wau.com.ua
 ||wave525.com.ua^$domain=~wave525.com.ua
-||wbn.ru^$third-party
 ||wct.su/img/banner/
-||web-rom.ru^$third-party
+||web-rom.ru^
 ||web-visor.$third-party
-||webalta.ru/reliancebutton?url
 ||webanalyzer.com.ua/download/wasape/
-||webangel.ru^$third-party
-||webasm.com^$third-party
+||webasm.com^
 ||webcase.com.ua^
 ||webex.ru^$third-party
-||webkrug.ru/images/bann
 ||weblist.ru/images/weblist
 ||webmedia.co.il^
 ||weboborona.ru/pic/wban
-||webplus.info/getres.php?
-||webproficlub.ru^$third-party
-||websiteseo.ru/blok.php?
+||webproficlub.ru^
 ||websurf.ru/?
-||webware.ru/*/clients/
-||weclever.ru/Block.php?$third-party
+||weclever.ru/block.php?
 ||westbyte.com/scripts/bs/bc.php?bi=
-||westtokyo.ru/download/west
 ||wewonurgold.ws^$third-party
-||whatyousay.ru^
-||widgeo.net/compteur.php?
-||wieistmeineip.de/ip-address/
-||wizzzards.com^$third-party
+||wizzzards.com^
 ||wm-help.net/b.php?
 ||wm-talk.org^$third-party
 ||wmirk.ru^$third-party
 ||wmlink.$third-party
-||wmplace.ru/place.php?
+||wmplace.ru^
 ||wmzona.com^$third-party
 ||wolist.ru^$third-party
-||womenclick.ru^$third-party
+||womenclick.ru^
 ||worldofrest.com.ua^$domain=~worldofrest.com.ua
-||wq3.ru/rm/
-||ws.md/c.png?
-||wtools.biz/sample2.php?
+||wq3.ru^
 ||wwwomen.ru^$third-party
 ||x-traf.ru^
-||x4u.ru^
-||xanax.cbn.ru^
+||x4u.ru^$third-party
 ||xap.ru^$script,third-party
-||xata.mk.ua/what/
-||xiti.com^$third-party
-||xmemory.ru^
 ||xxx-news.$third-party
-||xxx-tracker.com/pics/
-||yandas.ru/img.php?
 ||yandex-games.ru/ok/banners/
 ||yandexo.ru/rek/
 ||yellowmedia.biz^$third-party
-||yellowsearch.ru^$third-party
 ||yottos.com$third-party
-||yournewhosting.com/images
-||youseo.ru/img_*.gif
+||yournewhosting.com/images/$third-party
 ||yousticker.com/load/$third-party
-||yugecostroy.ru/images/pic/banner
-||yuwik.ru^$third-party
-||zahodi-ka.ru/wbmaster/index/schet.cgi?
 ||zamok911.com^$third-party
-||zclick.ru^$third-party
-||zegame.net/files/
 ||zez.su/ban/
 ||zhurnaly.org.ua^$domain=~zhurnaly.org.ua
 ||zipmonster.ru^$third-party
 ||zizu.lv^$third-party
-||zna4ki.ru/nodel/zna4ki
 ||znews.su^$third-party
 ||zorkabiz.ru^$third-party
 ||zozocash.biz^$third-party
@@ -1791,6 +1757,7 @@ _tizers.
 ###adriver_top
 compulenta.ru,computerra.ru,f1news.ru,gamemag.ru##A[href^="http://ad.adriver."]
 gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
+.adriver.$object-subrequest,domain=cybergame.tv
 /banners/*/*/0/index.$subdocument
 ||rle.ru^
 !
@@ -1989,7 +1956,7 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 !
 ! LinksCTRSystem.com
 ! /ctr.php?ref=, IP=77.95.230.16/21 and 78.41.200.94
-.com/view.php?title=*&referrer=$third-party,script
+.com/view.php|$third-party,script
 ||advertise-pro.com^
 ||adv-lance.com^
 ||adv-port.com^
@@ -2004,6 +1971,7 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||reklama-proff.com^
 ||sigma-teaser.com^
 ||sup-banner.com^
+||teaser2go.com^
 !
 ! Media-Click.ru
 /runder.php?id=*&site=$script,third-party
@@ -2036,12 +2004,13 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||zarabotki.ru^
 !
 ! MediaRich.ru
-/codes/*$third-party,script,domain=doublepunch.ru|narodclub.net|torrentszona.com
+/codes/*$third-party,script,domain=doublepunch.ru|narodclub.net|torrentszona.com|vodkov.net
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
 ! http://xml.ssdsandbox.net/dnslookup-dnsdb?name=95.169.186.139
 //95.169.186.139^
 /code.php?idsite=$third-party
 /gask.cgi?ids=$third-party
+||2-tr-45.net^
 ||2tr45.net^
 ||adrichmedia.info^
 ||adspot-rich.info^
@@ -2055,6 +2024,7 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||code-rich.info^
 ||codes-media.ru^
 ||glavrich.com^
+||ikk2gh.eu^
 ||koe-dv.net^
 ||marketingrichmedia.info^
 ||media-clicks.info^
@@ -2416,10 +2386,9 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ! TeaserNET.com
 ! Общие правила
 ! ##DIV[id^="teasernet_"]
-.com/rss$domain=dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
-.com/s$domain=dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
-/jquery1.$third-party,domain=dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
-/jquery.$third-party,domain=dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
+.com/rss$domain=cmexota.ru|dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|uptube.su|vodkov.net|x-zona.org
+.com/s$domain=cmexota.ru|dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|uptube.su|vodkov.net|x-zona.org
+/jquery.js$third-party,domain=cmexota.ru|dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|uptube.su|vodkov.net|x-zona.org
 ! Стабильные домены
 ! $domain=teasernet.com|teasernet.ru
 ||teasernet.$third-party
@@ -2465,6 +2434,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||assantie.com^
 ||associazio.com^
 ||associeta.com^
+||backromy.com^
 ||bannuncio.com^
 ||banquant.com^
 ||barraien.com^
@@ -2565,6 +2535,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||ivances.com^
 ||ivanie.com^
 ||ivantat.com^
+||jadedi.com^
 ||koliser.com^
 ||kolitat.com^
 ||kolites.com^
@@ -2591,7 +2562,6 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||masudel.com^
 ||mementes.com^
 ||menteret.com^
-||nn.tmska.com^
 ||outwitch.com^
 ||polimantu.com^
 ||poollast.com^
@@ -2606,6 +2576,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||showede.com^
 ||slopeac.com^
 ||snakeac.com^
+||solanog.com^
 ||sonnents.com^
 ||sontere.com^
 ||sovietit.com^
@@ -2646,6 +2617,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||zontrans.com^
 !#teasernet.clients
 ||adt.tubecontext.com^
+||nn.tmska.com^
 ||stats.internet-yadro.com^
 ||t.pornoload.ru^
 !#teasernet.other
@@ -2740,6 +2712,10 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 !#rulerclick.main
 /code/vk/?sid=$script,third-party
 ||rulerclick.ru^
+!#vkmonster.main
+||liolexina.com^
+||newlixica.com^
+||vkmonster.com^
 !
 ! Wizard-TraffStock.com
 //uno.*/?t=$script,popup
@@ -2959,7 +2935,11 @@ citysmile.ru##NOFOLLOW > NOINDEX > A[target="_blank"]
 ||clubvolvo.ru/crash/ban
 ||clubvolvo.ru/crash/$object
 ||club.ru/banners.php$subdocument
+cmexota.ru##A[href^="http://znews.su/go_"]
 cmexota.ru##A[target="_blank"][href*="/link.php?"]
+cmexota.ru##.topbrmenu
+||cmexota.ru/uploads/mini/nu_
+||cmexota.ru/uploads/$script
 ||cobra.com.ua/_banners/
 ||comicsbook.ru/promo/
 comfysoft.ru##TABLE[align][frame="rhs"][style]
@@ -3031,9 +3011,10 @@ dni.ru##.column.ad
 dni.ru##.partners-links
 dni.ru###header-banner
 dni.ru##[id^="tieserBlock"] > [id^="tb_"]
-dofiga.net###i25b
-dofiga.net###nav_right
 dofiga.net##.left_banners
+dofiga.net###nav_right
+dofiga.net###pbie_25
+||dofiga.net/images/trade
 forum.donfisher.ru##TD.windowbg3
 ||dontr.ru/upload/Banner/
 do.ru##.MyOpacity1
@@ -3219,6 +3200,8 @@ funlog.ru###rfunlog
 gagadget.com###corpMagnet
 gagadget.com###footer-holding
 gagadget.com##[style*="width: 240px"][style*="height: 350px"]
+galya.ru##.lr_block > IFRAME
+galya.ru###vp_main_520
 ||galya.ru^*/clients/
 gamemag.ru##TABLE[width="1000"] TD[align="center"][height="93"]
 ||gamemag.ru/admin/spaweditor/uploads/images/
@@ -3363,7 +3346,6 @@ inosmi.ru##.banners
 ||inspired.com.ua^$object
 inter.ua##.b-top-banner
 ||internethalyava.ru^*/area_banners/
-||internetno.net/banners/
 investoday.ru##IMG[width="460"][height="60"]
 investoday.ru##.globalmesswarnwrap
 investoday.ru##.row2 > SPAN[style^="float:"]
@@ -3418,6 +3400,10 @@ kino-dom.tv###dle-info + DIV[align="center"] > :not(#dle-content)
 ||kino-dom.tv^$object
 @@||kino-dom.tv/mediaplayer5.swf|
 @@||kino-dom.tv/mediaplayerser.swf|
+kino-govno.com##DIV[class^="ten_side_banner_"]
+kino-govno.com##.ten_col2 > NOINDEX
+kino-govno.com##.ten_frontrow
+||kino-govno.com/themes/*/*.jpg|
 kino-zal.tv##BLINK
 kinobanda.net##.main-bg A[target="_blank"] > IMG
 kinobaza.net##A.red
@@ -3467,7 +3453,6 @@ kyivpost.ua###advert_full
 ||lacucinaitaliana.ru/images/
 ||ladyline.com.ua/images/banner
 ||lanzone.info/rek/
-||lavteam.net/banners/
 lectro.ru###Popunder
 ||lectro.ru^*-pop-under-
 lenta.ru##.b-remove-m
@@ -3578,7 +3563,6 @@ mobile-review.com##BODY > DIV[style*="/_design/"]
 ||mobile-review.com/events/*/ad/
 mobiledevice.ru##DIV[style$="468px;"]
 ||mobiledevice.ru/banner_
-||modgames.net/banners/
 molchun.ru##CENTER > A[rel="nofollow"][target="_blank"] > IMG
 moscowsg.megafon.ru,serviceguide.megafonmoscow.ru##IMG[width="200"][height="400"]
 ||moto.kiev.ua/forum/banners/
@@ -3981,15 +3965,10 @@ sr-week.ru##.sponsorslist
 ||station.ru/upload/contents/*240x250
 ||stereohead.ru/_main_page/images/
 stolica.ru###vst_mvideo
-stopgame.ru##.ban250
-stopgame.ru##.ban468w
-stopgame.ru###brandtop
-stopgame.ru##TD[onclick*="/ad.stopgame.ru/"]
-||stopgame.ru/partners/
+stopgame.ru##.site-brand
 ||lp.longtailvideo.com^$domain=stopgame.ru
 ||storyroom.ru/bbb/
 streamzone.org###menu-left
-stopgame.ru##.site-brand
 sudga.ru###notifications_menu + .t1border
 sypermaster.ucoz.ru##SCRIPT[src^="http://your.girl-rus.com/"] + SCRIPT + TABLE
 sxnarod.com###tablespons
@@ -4167,10 +4146,12 @@ w7phone.ru##.partner-in-sidebar
 ||warezlab.ru^*rotator
 webapteka.ru##A.sa[target="_blank"]
 webapteka.ru##CENTER > A[target="_blank"] > IMG
+||webkrug.ru/images/bann
 ||weblancer.net/adver/
 webpark.ru###TopBanner
 webpark.ru##.grey
 ||webpark.ru/*/mhealth
+||webplus.info/getres.php?getadv=
 wiaderko.com###topbar
 ||wild-mistress.ru/wmbanner/
 ||winzoro.com/data/ba_ne_r/
@@ -4185,6 +4166,7 @@ x360-club.org##TABLE[background="themes/xbox/images/hhead.jpg"]
 x-console.com##DIV[style*="710px;"][style*="70px;"]
 xmages.net##.we-are-featured
 ||xmages.net/*/banner/
+||xxx-tracker.com/pics/
 xyya.net##TD[align="center"][style="width:220px;"] + TD[valign="top"] > :not(#dle-content)
 ||xyya.net/banner/
 !
@@ -4224,6 +4206,7 @@ zaycev.net##DIV > TABLE[width="750"][align="center"]
 zaycev.net##UL > NOINDEX
 forum.zaycev.net##.mb[width="180"] NOINDEX
 forum.zaycev.net##.mb[width="180"] TD[align="center"][colspan="3"]
+||zegame.net/files/
 zelenograd.ru##NOINDEX > TABLE[width="100%"][cellpadding="1"]
 zelenograd.ru##NOINDEX TD[width="40%"] > NOINDEX
 zelenograd.ru##TD[width="99%"] + TD:last-child
@@ -4643,6 +4626,7 @@ x-soft.tomsk.ru###shop
 @@||adcast.ru/mtsweb?$domain=mts.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru
 @@||adsbox.com.ua^$~third-party
+@@||ads.adfox.ru/crossdomain.xml$domain=molodejj.tv
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||ads.su^$~third-party
 @@||ads.vyborg-press.ru^$domain=vyborg-press.ru
@@ -4693,7 +4677,6 @@ x-soft.tomsk.ru###shop
 @@||tut.by/*/ads1/*/params.php?uid=$object-subrequest,domain=tut.by
 @@||tu-tu.ru/*/main/tizer/$domain=tutu.ru
 @@||ukrainianiphone.com/baners/r/$~third-party
-@@||videonow.ru/ad_holder/$domain=molodejj.tv
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 @@||zeiss.com/content/*/teaser$domain=zeiss.com
 !#detect.bookmark
