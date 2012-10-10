@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: z9immolqOfTTbLaEAMlzJg
-! Last modification time (GMT): 2012.10.10 01:25
+! Checksum: 8F72R5MlgbDdHKjoo+fkmA
+! Last modification time (GMT): 2012.10.10 01:59
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -2412,11 +2412,10 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ! TeaserNET.com
 ! Общие правила
 ! ##DIV[id^="teasernet_"]
-/150x150.gif|$third-party
-.com/rss$domain=imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
-.com/s$domain=imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
-/jquery1.$third-party,domain=imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
-/jquery.$third-party,domain=imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
+.com/rss$domain=dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
+.com/s$domain=dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
+/jquery1.$third-party,domain=dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
+/jquery.$third-party,domain=dir300.ru|imageban.ru|plus100500.ru|ru-admin.net|x-zona.org
 ! Стабильные домены
 ! $domain=teasernet.com|teasernet.ru
 ||teasernet.$third-party
@@ -2621,6 +2620,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||tidentes.com^
 ||tierest.com^
 ||timonom.com^
+||tolicando.com^
 ||tonopole.com^
 ||toujoute.com^
 ||toutiles.com^
@@ -2693,25 +2693,24 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 /code/click.php?id=$image,~image,popup
 /mp3player.swf?file=*/bb1.mp3
 /mp3player.swf?file=*/bb2.mp3
+/vknotifier1.php?id=$script,third-party
 /vkshow.php?id=$script,third-party
+/vkshow1.php?id=$script,third-party
 &vk_t=*&adv_ids=
+||adforce.ru^
 ! $domain=adgamble.net|adgamble.ru
 ||adgamble.$third-party
-||adpron.com^
 ||andrak.ru^
 ||clickadvert.net^
 ||clickgain.biz^
 ||clicksadvert.info^
 ||gainclick.co^
-!#adforce.main
-/vknotifier1.php?id=$script,third-party
-||ad001.ru^$~popup,popup
-||ad0002.ru^$~popup,popup
-||ad03.ru^$~popup,popup
+!#adpron.main.ip:91.228.155.16
 ||ad004.ru^$~popup,popup
 ||ad05f.ru^$~popup,popup
-||adforce.ru^
+||adpron.com^
 ||adserv01.ru^
+||adv758968.ru^
 !#paymonsters.main
 ||1poiuoupd.info^
 ||23mfdoe32rs.ru^
