@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: yIDr3xTEzt1jwEeYqdDWmA
-! Last modification time (GMT): 2012.10.10 21:12
+! Checksum: LEpwhZweBB3dLO2jzW7l2A
+! Last modification time (GMT): 2012.10.11 15:16
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -14,7 +14,7 @@
 !==============================================================================
 !
 ! Исключения
-mirage.ru,wdc.com#@##mycarousel
+mirage.ru,mos.ru,wdc.com#@##mycarousel
 @@/jquery.jcarousel.min.js$domain=battlefield.com|mirage.ru|wdc.com
 @@/wp-content/plugins/wp-minify/min/?f=$stylesheet,~third-party
 @@||194.186.171.75/images/default2/default/ui-userbar/
@@ -322,9 +322,6 @@ navitel.su##.extra_append:last-child
 !#trash.bookmark
 ! Google stuff
 ###gsr > DIV > #pushdown
-! Скролл-бар с картинками из постов на различных трекерах и подобном. Точнее это управление от них и автоскролл.
-###mycarousel
-.jcarousel.$script
 ! Интернет-радио с флеш-плеером, разработчики которого не знают о том, что при открытии страницы их радио должно молчать
 ||icefm.ru^$third-party
 ! «Карта» Интернетов.
@@ -461,6 +458,8 @@ unionpeer.org###page_header > #head
 wtracker.ru##.preview_lol
 !
 != Лента с обложками фильмов ==================================================
+.jcarousel.$script
+###mycarousel
 rus-torrents.ru###la_wrapper
 rustrek.ru,tapochek.net,unionpeer.org##.poster
 styanulo.net###lenta
