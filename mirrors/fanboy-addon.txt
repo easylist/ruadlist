@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: Y3BwVcn/O5JVmMx28I5HEw
+! Checksum: +I2gneIuLFwWDXb86ZGWSA
 ! Title: Fanboy's Annoyance List
-! Updated: 1 Oct 2012
+! Updated: 13 Oct 2012
 ! This list expires after 3 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -272,7 +272,9 @@
 /ic_stumbleupon.
 /ic_technorati.
 /ic_twitter.
+/icn-facebook.
 /icn-pinterest-
+/icn-twitter.
 /icn_googe_
 /ico-delicious.
 /ico-digg.
@@ -320,6 +322,7 @@
 /icon-rss-
 /icon-rss.
 /icon-share.
+/icon-social-
 /icon-steam.
 /icon-stumble.
 /icon-stumbleupon-
@@ -573,6 +576,7 @@
 /share_twitter.
 /shareaholic/*
 /shareArrow.
+/sharebar.
 /sharebuttons/*
 /sharedaddy/*
 /sharedaddy/*$script,image
@@ -952,10 +956,12 @@ _youtube-button.
 ||freetellafriend.com^$third-party
 ||fwix.com^$third-party
 ||getglue.com^$third-party
+||githubbadge.appspot.com^$third-party
 ||globalsign.com^$third-party
 ||google.com/buzz/$third-party
 ||google.com/js/plusone.js$third-party
 ||google.com/uds/?file=orkut&
+||gplusapi.appspot.com^$third-party
 ||graph.facebook.com/fql$third-party
 ||groupon.com^*/affiliate_widget/$third-party
 ||gstatic.com/images/icons/gplus-$domain=~google.com
@@ -1159,6 +1165,7 @@ _youtube-button.
 ||smarterfox.com/media/js/fastestfox-share.js
 ||space.com/images/site/social/
 ||space.com/social.
+||techcrunch.com^*/icn_Sharing-Sprite.png
 ||techdirt.com/images/email.png
 ||tsbmag.com^*/tsb_b31.jpg
 ||tuaw.com^*/related-slider.js
@@ -1224,7 +1231,7 @@ _youtube-button.
 @@||s7.addthis.com^*/addthis_widget.js$domain=bk.com|egotastic.com|whitehouse.gov|guildwars2.com
 @@||search.twitter.com/search.json?$domain=similarpages.com
 @@||search.twitter.com/search.json?$domain=thedailyshow.com|colbertnation.com
-@@||sharethis.com/button/buttons.js$domain=cnn.com
+@@||sharethis.com/button/buttons.js$domain=cnn.com|mangafox.me
 @@||sharethis.com/button/sharethis.js$domain=vogue.com|statefarm.com
 @@||sharethis.com^$domain=thedailyshow.com|thedailybeast.com|fox23.com|salon.com|imgur.com|cbslocal.com|fandango.com|colbertnation.com|money.cnn.com
 @@||static.bbci.co.uk/modules/*/sharetools.js$domain=bbc.co.uk
@@ -1242,7 +1249,7 @@ _youtube-button.
 !---------- Non-english Annoyances ----------
 !
 ||gree.jp^$third-party
-||img.mixi.net^$third-party
+||img.mixi.net^$third-party,domain=~mixi.jp
 ||odnoklassniki.ru^$third-party,~stylesheet
 ||pusha.se^$third-party
 ||share.gree.jp^$third-party
@@ -1277,6 +1284,10 @@ weltwoche.ch###alteAusgabenCovers
 weltwoche.ch##.navInner.fixed
 zaycev.net##.bookmarks
 !
+!---------- German Site Specific Hiding Rules ----------
+!
+androidnext.de###scrollbarbox
+!
 !---------- Dutch Site Specific Hiding Rules ----------
 !
 rtl.nl###rtl_cookie_small
@@ -1295,10 +1306,13 @@ ubr.ua##.story-nav
 !
 !---------- French Site Specific Hiding Rules ----------
 !
+challenges.fr###sf-minisite-toolbar
 closermag.fr###fancybox-overlay
 closermag.fr###fancybox-wrap
+habbotel.fr###topbar
 lemonde.fr###bandeau_bas
 lemonde.fr##.sociaux
+nutrilifeshop.com###nlp_popup
 !
 !---------- Spanish/Portuguese Site Specific Hiding Rules ----------
 !
@@ -1354,6 +1368,7 @@ ynet.co.il###leftspacertable
 ###art_social
 ###article-newsletter-side-module
 ###article_actions_socialmedia
+###article_sharing_footer
 ###article_tools_share
 ###articleNewsletterModule
 ###articleShare
@@ -1379,6 +1394,8 @@ ynet.co.il###leftspacertable
 ###block-social
 ###block-social_badges-0
 ###block-social_badges-1
+###blog-follow
+###blog-follow-wrapper
 ###blog-share-widget
 ###blog-stats
 ###blog-subscribe-block
@@ -1501,6 +1518,7 @@ ynet.co.il###leftspacertable
 ###fb_twitter_bar
 ###fbBox2
 ###fbBoxContent
+###fbfanbox
 ###FBFanBox
 ###fblike
 ###fblikebg
@@ -1519,6 +1537,7 @@ ynet.co.il###leftspacertable
 ###feedburneremailwidget-3
 ###feedbuttons
 ###FIN_facebook_fanbox
+###floating-share
 ###flwUsMod
 ###flyout-recirc
 ###flyoutWidget
@@ -1542,6 +1561,7 @@ ynet.co.il###leftspacertable
 ###follow_twitter
 ###follow_us
 ###follow_us_block
+###followBar
 ###followbigbutton
 ###followBox
 ###Followers1
@@ -1560,6 +1580,7 @@ ynet.co.il###leftspacertable
 ###footer_social
 ###getSocial
 ###gigyaTBToolbar
+###gkSocialAPI
 ###globalSocialPromoWrap
 ###gmm-panel-promo
 ###goog-plus
@@ -1644,13 +1665,16 @@ ynet.co.il###leftspacertable
 ###moduleSocialLinks
 ###more_sharing
 ###navigation-social-networking
+###network_floaty_icons
 ###networkedblogs_container
 ###networkedblogs_nwidget_container
 ###newsletter-box
 ###newsletter-module
 ###newsletter-panel
 ###newsletter-signup
+###newsletter-signup-sidebar
 ###newsletter-subscribe
+###newsletter_box_sidebar
 ###newsletter_promo
 ###newsletter_subscribe
 ###newsletter_subscription_box
@@ -1673,6 +1697,7 @@ ynet.co.il###leftspacertable
 ###orkut_share
 ###other-social-bar
 ###pageshare
+###pageShareTall
 ###panel-social
 ###panelSocial
 ###panoInfoShare
@@ -1771,6 +1796,7 @@ ynet.co.il###leftspacertable
 ###share_options
 ###share_popout
 ###share_side_bar
+###share_spot
 ###share_this
 ###share_top
 ###share_wrap
@@ -1812,6 +1838,7 @@ ynet.co.il###leftspacertable
 ###sharemenu-wrap
 ###shareOverlay
 ###SharePanel
+###sharePlugInBar
 ###sharepost
 ###sharer
 ###shareRail
@@ -1819,6 +1846,7 @@ ynet.co.il###leftspacertable
 ###ShareSidebar
 ###shareSideContainer
 ###shareSocial
+###sharestrip_bottom
 ###shareTab
 ###sharetab
 ###shareTags
@@ -1865,6 +1893,8 @@ ynet.co.il###leftspacertable
 ###social-bookmark-container
 ###social-box
 ###social-buttons
+###social-buttons-margin
+###social-buttons-margin-wrapper
 ###social-container
 ###social-context-container
 ###social-float
@@ -1888,6 +1918,7 @@ ynet.co.il###leftspacertable
 ###social-media-navigation
 ###social-media_ad-container
 ###social-menu
+###social-meta
 ###social-networking-images
 ###social-networks
 ###social-plugins
@@ -1919,6 +1950,7 @@ ynet.co.il###leftspacertable
 ###social_bookmarking_module
 ###social_bookmarks
 ###social_bookmarks_list
+###social_bottom
 ###social_bottom_float
 ###social_box
 ###Social_Box
@@ -1942,6 +1974,7 @@ ynet.co.il###leftspacertable
 ###social_share_actions
 ###social_share_bar
 ###social_sidebar
+###social_sidebar_container
 ###social_snap_bar
 ###socialAreaStoryBlog
 ###socialBanner
@@ -1958,6 +1991,7 @@ ynet.co.il###leftspacertable
 ###socialbtn_twitter
 ###socialbuttonnav
 ###socialButtons
+###socialbuttonsbox
 ###socialcount
 ###socialCounterWidget
 ###socialdock
@@ -2000,6 +2034,7 @@ ynet.co.il###leftspacertable
 ###socialNetworks
 ###SocialNetworks2
 ###socialprofiles-2
+###socials
 ###socialshare
 ###socialshare_btns
 ###socialsharing
@@ -2022,6 +2057,7 @@ ynet.co.il###leftspacertable
 ###socialWrapper2
 ###socialz
 ###sociobar1
+###socmediaBar
 ###st-social
 ###static-social
 ###stayConnectedBlock
@@ -2086,6 +2122,7 @@ ynet.co.il###leftspacertable
 ###twitterFollow
 ###twitterFollowBadge
 ###twitterModule
+###twitterSearch
 ###upprev_box
 ###vert-share
 ###vertical-social-bar
@@ -2098,6 +2135,7 @@ ynet.co.il###leftspacertable
 ###widget-newsletter-signup
 ###widget-social
 ###wp-share-wrap
+###wp_twitter_goodies_profile_widgets
 ###wpl-likebox
 ###xetv-top-links
 ###yahooBuzzBadge-form
@@ -2245,6 +2283,7 @@ ynet.co.il###leftspacertable
 ##.facebook-section
 ##.facebook-share-btn
 ##.facebook-sharer
+##.facebook-sidebar-outer
 ##.facebook-top-button
 ##.facebook-twitter-share
 ##.facebook_activity
@@ -2252,6 +2291,7 @@ ynet.co.il###leftspacertable
 ##.facebook_fanbox
 ##.facebook_icon
 ##.facebook_image
+##.facebook_indiv_widget
 ##.facebook_like_box
 ##.facebook_plugin_container
 ##.facebook_share
@@ -2282,16 +2322,19 @@ ynet.co.il###leftspacertable
 ##.fb-icon
 ##.fb-like
 ##.fb-like-box
+##.fb-like-box-wrapper
+##.fb-like-buttons
 ##.fb-like-holder
+##.fb-promo
 ##.fb-recommend
 ##.fb-share
 ##.fb-share-button
+##.fb-tweet
 ##.fb-widget
 ##.fb.icon
 ##.fb_badge
 ##.fb_bar
 ##.fb_box
-##.fb_button
 ##.fb_button_large
 ##.fb_content_loader
 ##.fb_edge_widget_with_comment
@@ -2312,6 +2355,7 @@ ynet.co.il###leftspacertable
 ##.fbilike
 ##.fbLikeBox
 ##.FBLikeBox
+##.fbliketop
 ##.fbook_like
 ##.fbRecommend
 ##.fbRecsSide
@@ -2350,6 +2394,7 @@ ynet.co.il###leftspacertable
 ##.follow-yahoo
 ##.follow_box
 ##.follow_container
+##.follow_right_block
 ##.follow_share
 ##.follow_twitter
 ##.follow_us
@@ -2373,6 +2418,7 @@ ynet.co.il###leftspacertable
 ##.footer_share
 ##.footer_social
 ##.footerShare
+##.full_share_container
 ##.fv_sharing
 ##.g-plus
 ##.g-plusone
@@ -2386,6 +2432,7 @@ ynet.co.il###leftspacertable
 ##.get-social
 ##.getsocial
 ##.gf_social
+##.gig-share-bar-container
 ##.gigya-sv
 ##.gigyaShareBottom
 ##.global-share
@@ -2614,6 +2661,7 @@ ynet.co.il###leftspacertable
 ##.share.stumble
 ##.share_and_discuss_box
 ##.share_bar
+##.share_bar_container
 ##.share_bottom
 ##.share_box
 ##.share_boxes_new
@@ -2660,6 +2708,7 @@ ynet.co.il###leftspacertable
 ##.shareButtons
 ##.shareButtonsHolder
 ##.shareButtonsSprite
+##.sharecontainer
 ##.shareContainer
 ##.sharedaddy
 ##.shareDiv
@@ -2712,6 +2761,7 @@ ynet.co.il###leftspacertable
 ##.ShareThisButton4
 ##.ShareThisMainPanel
 ##.ShareThisPage
+##.shareThisPost
 ##.shareThisShare
 ##.shareTitle
 ##.shareTool
@@ -2720,6 +2770,7 @@ ynet.co.il###leftspacertable
 ##.shareToolsItemFacebook
 ##.shareToolsItemGoogle
 ##.shareToolsItemTwitter
+##.shareTop
 ##.shareToSocial
 ##.shareWrap
 ##.sharing-box
@@ -2728,6 +2779,7 @@ ynet.co.il###leftspacertable
 ##.sharing-google-plus
 ##.sharing-links
 ##.sharing-printing
+##.sharing-tool
 ##.sharing-tools
 ##.sharing-twitter
 ##.sharing_box
@@ -2744,6 +2796,7 @@ ynet.co.il###leftspacertable
 ##.sharingPanel
 ##.sharingToolBar
 ##.sharingToolbar
+##.sharrre
 ##.shr-bookmarks
 ##.side-facebook
 ##.side-post-social
@@ -2758,6 +2811,7 @@ ynet.co.il###leftspacertable
 ##.sidebar-share-item-twitter
 ##.sidebar-subscribe
 ##.sidebar_social
+##.sidebarSocial
 ##.sidebarsocial
 ##.sidebartwitter
 ##.sideShareContainer
@@ -2771,6 +2825,7 @@ ynet.co.il###leftspacertable
 ##.single-share
 ##.single-social
 ##.single_like_box
+##.single_share
 ##.singlepost-like
 ##.singlepost_share
 ##.sm_share_badge
@@ -2871,6 +2926,7 @@ ynet.co.il###leftspacertable
 ##.social_btn_single
 ##.social_button
 ##.social_buttons_new
+##.social_buttons_top
 ##.Social_container
 ##.social_digg
 ##.social_email
@@ -2971,6 +3027,7 @@ ynet.co.il###leftspacertable
 ##.socialplugins
 ##.SocialPluginsWidget
 ##.socialpop-container
+##.socialPopup
 ##.socialPostBottomBar
 ##.socialright
 ##.SocialRing_Widget
@@ -2997,6 +3054,7 @@ ynet.co.il###leftspacertable
 ##.socmark_container
 ##.socmedia
 ##.socmedia-logo
+##.socShare
 ##.sphinn-button-single
 ##.st_digg_custom
 ##.st_email_custom
@@ -3098,6 +3156,7 @@ ynet.co.il###leftspacertable
 ##.widget-facebook
 ##.widget-newsletter
 ##.widget-subscribe
+##.widget_al2fb
 ##.widget_email_social_functions
 ##.widget_email_subscribe
 ##.widget_facebook_box
@@ -3110,6 +3169,7 @@ ynet.co.il###leftspacertable
 ##.widget_mybloglog
 ##.widget_newsletterwidget
 ##.widget_rss_links
+##.widget_rssiconwidget
 ##.widget_sdac_feedburner_widget
 ##.widget_social_links
 ##.widget_socialcount_widget
@@ -3126,6 +3186,7 @@ ynet.co.il###leftspacertable
 ##.wp-post-share
 ##.wp-post-share2
 ##.wp-share
+##.wp-social-icons
 ##.wpzoom-facebook-3
 ##.wrapp-soc-icons
 ##.wx-social-share-ls-wrapper
@@ -3209,6 +3270,7 @@ ynet.co.il###leftspacertable
 ##[alt="Zu Twitter senden"]
 ##[class^="social_button_"]
 ##[href="http://www.addtoany.com/share_save"]
+##[id^="gigya_inline_share_"]
 ##[name="Click to follow us on twitter"]
 ##[name="fb_share"]
 ##[original-title="Toggle to share your comment"]
@@ -3402,6 +3464,7 @@ allthingsd.com##.article-tools
 allthingsd.com##.fb_iframe_widget
 alluc.org##.bookmarktext
 allvoices.com###scrollingDiv
+alternativeto.net###bottomNotifier
 alternativeto.net##.delicious
 alternativeto.net##.fb
 alternativeto.net##.feed
@@ -3417,11 +3480,12 @@ alternet.org##div[style="min-height: 100px; margin-left: 5px; margin-top: 25px;"
 amandapeyton.com###share
 amazines.com###divStayTopLeft
 amazon.com###tafContainerDiv
-amazon.com###tafContainerDiv
 amazon.com##.mini-atf
+amazon.com##.tafSocialButton
 amd.com##.social
 americablog.com###floatdiv
 americanprofile.com###form_enews
+americantowns.com##div[style="margin:0 0 15px 0;border:1px solid #A2B5D3;width:218px;"]
 amodernmilitarymother.com###blog_subscription-4
 amosauto.com##.extra
 amosauto.com##.fby-tab
@@ -3505,6 +3569,7 @@ bbc.co.uk##.pagetools
 bbc.co.uk##.sharing
 bbc.com##.social
 beefjack.com###beefjack_share
+beefjack.com###social
 beemp3.com##.share
 beforeitsnews.com###bottom_float
 belfasttelegraph.co.uk###bm_div
@@ -3578,12 +3643,15 @@ bloomberg.com###story_tools_top
 bloomberg.com##.blp2_alert_widget
 bloomberg.com##.key_rates
 bloomberg.com##.story_inline
+bodyandsoul.com.au##.connect
 boingboing.net###sidebarsticky
 boombotix.com##.updates-tab
 boostinspiration.com###subs
 boostinspiration.com##.sharing
 boredpanda.com###do-you-like-box
 bornrich.com###slidebox
+bornrich.com##.navigatePerma
+bornrich.com##.Ticker
 bossip.com###bossipMobile
 bossip.com##.share
 bostinno.com###channel-cta
@@ -3903,6 +3971,7 @@ dailypioneer.com##.jv-social-share-button-contain
 dailyspark.com###exploreMoreWin
 dailystar.com.lb###slidebox
 dailystar.com.lb##table[style="width: 300px; height: 77px;"]
+dailyvoice.com###tender_button
 dallasobserver.com##.nl_widget
 damnlag.com##.twitterupdates
 dane101.com##.dane101Feeds
@@ -3930,6 +3999,7 @@ deadline.com###text-34
 deadspin.com##.twitter
 dealcanada.ca###simplemodal-container
 dealcanada.ca###simplemodal-overlay
+dealspwn.com##.icon
 dearblankpleaseblank.com###sharing
 debka.com###popup
 debka.com##.jqmOverlay
@@ -4007,6 +4077,10 @@ domaintools.com###whois-img-domaintools-for-windows
 dottech.org###dcssb-float
 dottech.org###dynamic-to-top
 dottech.org###ultimate-follow-me
+dreadcentral.com###block-block-16
+dreadcentral.com###block-block-8
+dreadcentral.com###slider
+dreadcentral.com##.scribol
 duluthnewstribune.com###sidebar2
 duluthnewstribune.com##.widget_box
 dumblittleman.com###advertise-now
@@ -4057,6 +4131,7 @@ eetimes.com###NNA_Comment
 eetimes.com###PartsSearch
 eetimes.com###PromoBox2
 egmnow.com###gp_game_list_badge
+egmnow.com###gp_pop_up
 egmnow.com##.ribbon_button_wrap_pad_google
 egotvonline.com###bookmark
 egotvonline.com###digg-widget-1278150568588
@@ -4194,6 +4269,7 @@ foodnetwork.com###global-toolbar
 foodnetwork.com##.fnmag-ad600
 foodnetwork.com##.geoAdvisoryPopup
 fooducate.com###sidetabs
+fooducate.com##.wpsr-floatbar-white
 fool.com###ecapShell
 fool.com###webTwoPointOh
 footy-boots.com###network-bar-wrap-bottom
@@ -4255,6 +4331,7 @@ fyiliving.com###text-9
 fyiliving.com##.news-signup
 g4tv.com##.share
 gajitz.com###headerMenuRSS
+gameinformer.com##.g-i-blog-links
 gamenguide.com###anotherBox
 gamenguide.com##.nw_cont
 gamepro.com###secondaryMenu
@@ -4446,6 +4523,8 @@ hitfix.com###custom-alert-signup
 hitfix.com##.promoboxee
 hitfix.com##.social
 hollywire.com###social
+hollywoodlife.com##.btn-holder
+hollywoodlife.com##.userconnect
 hollywoodnews.com###constant-contact
 hollywoodnews.com###constant-contact-2
 hollywoodnews.com###constant-contact-3
@@ -4659,6 +4738,7 @@ itworld.com##.pane-itw-blocks-itw-ad10-itjobs
 ivillage.com###follow-iv
 iwastesomuchtime.com###fixie_container
 ixquick.com###ix_promo_box
+jagranjosh.com###slidebox
 jalopnik.com##.welcome_form
 jamesdeenblog.com###follow
 javaworld.com###id_storytools_bottom
@@ -4772,6 +4852,7 @@ lifehacker.com##.share
 lifehacker.com##.twitter
 lifehacker.com.au###social
 lifehacker.com.au##.social
+lifelibertytech.com###leftcontainerBox
 lifescript.com###ConnectWidthLS
 lifescript.com###HPNewsletter
 lifescript.com##.DFNewsletterSignup
@@ -4794,6 +4875,7 @@ lunarsoft.net###Mod46
 luxury-insider.com###icon_box
 lynda.com###follow
 lyrics007.com###like_this
+m.techcrunch.com##DIV[style="padding:5px 10px;"]
 macgasm.net###text-10
 macgasm.net###text-13
 macgasm.net###text-14
@@ -4992,7 +5074,10 @@ mobilesyrup.com##.side300
 modamee.com###text-34
 modamee.com##.fb_iframe_widget
 mom.me##.social
+moneycontrol.com##.followMCF
 moneynews.com###nmSignUpContainer
+moneysavingmom.com###singlepagesubform
+moneysavingmom.com###subscribeform
 monster.co.uk###interMsgsW
 monster.com###divBAM
 monster.com###jqaAnsDetailFacebook
@@ -5111,10 +5196,12 @@ ndtv.com###cboxOverlay
 ndtv.com###collapseSocial
 ndtv.com###colorbox
 ndtv.com##.update_bg
+neoseeker.com##div[style="border: 1pt dashed #BBBAA7; background: #fcfcfc; font-family: arial,verdana, helvetica; padding: 2px; margin-bottom:5px;"]
 neowin.net###ajax-spinner
 neowin.net###ajax_loading
 neowin.net###hellobar-wrapper
 neowin.net###like-this
+neowin.net##.ipsLikeBar
 neowin.net##.social
 nerve.com###block-nerve_mailinglist-nerve_mailinglist_bottom_block
 nerve.com###follow-nerve
@@ -5141,6 +5228,7 @@ news.moviefone.ca##.margin_top_10
 news.moviefone.ca##.sbm-main-new
 news.moviefone.ca##.sidebarHeader
 news.moviefone.com##.like_box_news
+news.nationalpost.com###np-box-12
 news.yahoo.com###Daily-Ticket-newsletter-promo-8U
 news.yahoo.com###mediablistmixedlpcatemp
 news.yahoo.com##.yom-embedlink
@@ -5161,6 +5249,7 @@ newscientist.com###rbiCookiePolicy_pushDownBoxWrapper
 newscientist.com###skycol
 newsday.com###floatingbar
 newsday.com###topJobs
+newsday.com##.buzz
 newser.com###ToolsHider
 newser.com###welcomescreen
 newser.com##.headerPromos
@@ -5318,6 +5407,7 @@ parents.com###adtrafficright
 parents.com###slideshowPromo
 parents.com###stayConnected
 pastebin.com##.tweet
+pastemagazine.com###article-tools
 patch.com###previous_in_category_for_publication
 patch.com##.form-card
 patch.com##.modal_dialog_inner
@@ -5377,6 +5467,7 @@ people.com##.share
 people.com##.subscribe
 peoplestylewatch.com###getPeopleEverywhere
 peoplestylewatch.com###getPeopleFooter
+perezhilton.com##.postbottom
 perfectweddingguide.com##.bookmarkBar
 petapixel.com##.bottommargined
 petapixel.com##.related
@@ -5473,6 +5564,7 @@ pstc.ca###contactme_tabc
 ptf.com###bnr
 publicdomainreview.org##.visiblebox
 quickmeme.com##div[style="width: 105px; height:60px; position: relative; margin: 10px auto 0pt; padding:5px; box-shadow:0 0 5px #AAAAAA;"]
+quickmeme.com##div[style="width: 105px; height:60px; position: relative; margin: 15px auto 0pt; padding:5px; box-shadow:0 0 5px #AAAAAA;"]
 quora.com##.signup_bar_fixed
 quora.com##.signup_bubble
 raaga.com##div[style="padding-left:10px;padding-bottom:3px;"]
@@ -5482,6 +5574,7 @@ radbox.me##.social
 rahulbalyan.com###menu-topnav
 rahulbalyan.com###s2_form_widget-3
 ranker.com###followRanker
+ranker.com###peekaboo
 rasamalaysia.com##.cute_profiles_sprite
 rawstory.com###follow_container
 rawstory.com###raw-updates-signup
@@ -5515,6 +5608,11 @@ reason.com##.post-options
 reason.com##.reason-email-updates
 reason.com##.reason_on_x
 reason.com##.social
+recordonline.com###djDealsReviews
+recordonline.com###loginBarBtm
+recordonline.com###topHomesFrame
+recordonline.com###topJobFrame
+recordonline.com##div[id^="nimbleBuyWidget"]
 reddit.com##.share
 redferret.net###scdiv
 redmondpie.com##.twitterBarForSb
@@ -5664,6 +5762,8 @@ sheknows.com##div[style="border: 1px solid #e6e6e6; margin: 8px 0px; padding: 8p
 shelterpop.com###followUsRightHub
 shimory.com###banners
 shocktillyoudrop.com##.fb_iframe_widget
+shop4freebies.com###popup
+shop4freebies.com###popup_bg
 shoutmeloud.com###floating-count
 shoutmeloud.com###text-482895650
 shoutmeloud.com###text-482895670
@@ -5754,6 +5854,7 @@ southcoasttoday.com##div[id^="nimbleBuyWidget"]
 space.com###newsletterPop
 space.com###top_side
 spacecast.com##.sidePromo
+sparknotes.com##.social
 speedtest.net##.fb
 speedtest.net##.tw
 spinner.com###streampadBottomBar
@@ -5787,6 +5888,8 @@ stewpig.com###fancybox-wrap
 stickam.com##.awdSnsIcons
 stileproject.com###social
 stomp.com.sg###fb
+streetinsider.com###floating_footer
+streetinsider.com##.right_pod.premium_signup
 stripes.com##.inline-bookmarks
 stuff.co.nz###toolbox-gigya
 stuff.co.nz###uber_pointer
@@ -5904,6 +6007,7 @@ telegram.com###subscriptionHeader
 telegram.com##.topjobs_1
 tenthamendmentcenter.com###follow-tenthamendmentcenter-f
 thatsfit.com###follow
+thatvideogameblog.com##div[style="text-align:left;width:280px;color:#000000;background:#FFFFCC;border:1px solid #DFDFC2;padding:9px 9px 11px 8px;margin:0 0 20px 0;font-family:arial,tahoma,verdana;font-size:12px;line-height:14px;cursor:default"]
 the-diplomat.com###social
 the-hobbitmovie.com###cboxOverlay
 the-hobbitmovie.com###colorbox
@@ -5970,6 +6074,7 @@ thedigitalfix.com##.twitter
 thefablife.com###sendToMobile
 thefablife.com###sendtomobileswf
 thefablife.com##.promos
+thefastertimes.com###aboutnewsletter_newsletter
 thefreewarejunkie.com###Subscribe1
 thefrisky.com###daily-romp
 thefrisky.com###follow
@@ -5986,6 +6091,7 @@ theintelhub.com###dialog
 theintelhub.com###spmask
 thekit.ca###twitter
 thekit.ca##.bc_switcher
+thelocal.se###followswedenfixed
 thelocal.se##.options
 themittani.com##.pane-3
 thenation.com###dialog
@@ -6033,6 +6139,7 @@ thepostgame.com###footer-overlay-container
 theprovince.com###newsalert
 theprovince.com##.story_tool
 theregister.co.uk###whitepapers
+therichest.org##.subscribe
 theroot.com###theroot-social-panel
 theroot.com###theroot_mc_signup_cont
 theroot.com##.fb-onscroll
@@ -6241,6 +6348,8 @@ udreview.com##.subscribe
 ugo.com###fb_login
 ugo.com###fb_userbox
 ugo.com###liveintent_app_iframe
+ugo.com##.l-boxsocnetwork_new
+ugo.com##div[style="width:300px;height:155px;text-align:left;color:#000;font-size:11px;background: #e4e7ff;"]
 unhearit.com##.follow
 unhearit.com##.share
 unionleader.com##div[style="border:solid 1px #d6d6d6;padding:0px 3px 10px 3px;margin-bottom:10px"]
@@ -6257,8 +6366,10 @@ usatoday.com###section-nav
 usatoday.com##.editorialPromo
 usatoday.com##.info-extras
 usatoday.com##.promotion
+usatoday.com##.share
 usatoday.com##.sidebar_connect
 usatoday.com##.subscribe
+usatoday.com##.utility-wrap
 userscripts.org###uso
 userscripts.org###uvTab
 usmagazine.com###subscribe-now
@@ -6313,6 +6424,7 @@ video.yahoo.com##.media-network-provider
 video.yahoo.com##.yom-embed-and-link
 videobam.com###notice_bar
 videobash.com###companion
+videobash.com##div[style="width: 200px; height: 20px; bottom: 4px;"]
 videojug.com###content_functions_vertical
 videojug.com###content_functions_vertical_background
 videoweed.es##.share
@@ -6327,6 +6439,7 @@ visualeconomics.com##.ve2_joinbox
 visualnews.com###toHide
 vitalmtb.com###message_bar
 voanews.com##.socialNetwork
+voxy.co.nz###block-block-35
 voxy.co.nz##.service-links
 vr-zone.com###facepalm
 vr-zone.com##div[style="height: 225px"]
@@ -6406,6 +6519,8 @@ whatbrowser.org###share
 whatculture.com##p[style="font-weight:bold;font-size:20px;padding:10px;background:#f5ffd9;border:2px dashed #c7d4ae;border-radius:5px;-moz-border-radius:5px;color:#32450d;margin-top:50px;display:block;clear:both;line-height:1.25em;text-align:center;"]
 whatpeoplesayonline.com###social
 whistleout.com.au###bottomstrip-wo
+whosdatedwho.com##div[style="width:300px; height:190px; margin:0 auto; background:#fff; border:1px solid #ddd; margin-bottom:15px;"]
+wikia.com###WikiaBarWrapper
 wikia.com###WikiaNotifications
 wikihow.com###bonus_bubble
 wikihow.com###follow_table
@@ -6501,6 +6616,7 @@ youbeauty.com##.header
 youtube.com###yt-feedback
 yumsugar.com###sugar-post-cross-sell
 yumsugar.com###twitter-widget
+yycast.com##table[cellpadding="5"]
 zalaa.com##fieldset[style="background-color: rgb(223, 223, 223); width: 530px; padding: 10px;"]
 zap2it.com###twitter
 zap2it.com##.feedpromo
@@ -6528,6 +6644,7 @@ zimbio.com##.shFixedSidezmescience.com###contribute-zme
 ~boingboing.net##.sharebuttons
 ~boingboing.net##.twitter-share-button
 ~break.com###facebook_btn
+~celebuzz.com##.fb_button
 ~digg.com###digg-widget
 ~digg.com###digg_module
 ~digg.com###digg_upcoming_content

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sed -E '/(^.*[^#]|^)##[^.#].*$/d' fanboy-addon.txt |
+sed -E '/^.*##\.(facebook|fb_iframe_widget|googleplus|twitter|social)$/d' |
+sed -E '/^.*###(facebook|social)$/d' |
+sed -E '/^[^~].+##.socialize$/d' |
+sed -E '/^[^~].+##.google_plus$/d' |
+sed -E '/^\|\|vkontakte\.ru\^\$.*$/d' |
+sed -r '/^\s*$/d' > fanboy-addon-light.txt

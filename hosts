@@ -18,5 +18,11 @@
 #    2. Remove rows without '.' character (obvious non-domains or first level domains like com/ru/ua/...).
 #  * Sort things and remove clones.
 #  * Save result to file.
-sed -r 's/^@@//g;s/^\!\s?\|\|/||/g' advblock.txt | sed -r 's#^(\|\||(\|?[A-Za-z]*:)?//)(\w[^/$^*]*).*$#\3#g' | sed -r 's/[$,]domain=/\n/g;s/##/\n!/g' | sed -r '/^(\W|_)/d;/^\s*$/d' | sed -r 's/~//g;s/[,|]/\n/g' | sed -r '/\.$/d;/^[^.]*$/d' | sort -fu > hosts.txt
+sed -r 's/^@@//g;s/^\!\s?\|\|/||/g' advblock.txt |
+sed -r 's#^(\|\||(\|?[A-Za-z]*:)?//)(\w[^/$^*]*).*$#\3#g' |
+sed -r 's/[$,]domain=/\n/g;s/##/\n!/g' |
+sed -r '/^(\W|_)/d;/^\s*$/d' |
+sed -r 's/~//g;s/[,|]/\n/g' |
+sed -r '/\.$/d;/^[^.]*$/d' |
+sort -fu > hosts.txt
 
