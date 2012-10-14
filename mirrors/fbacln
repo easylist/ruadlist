@@ -1,9 +1,14 @@
 #!/bin/bash
 
+# Remove
 sed -E '/(^.*[^#]|^)##[^.#].*$/d' fanboy-addon.txt |
 sed -E '/^.*##\.(facebook|fb_iframe_widget|googleplus|twitter|social)$/d' |
 sed -E '/^.*###(facebook|social)$/d' |
 sed -E '/^[^~].+##.socialize$/d' |
 sed -E '/^[^~].+##.google_plus$/d' |
 sed -E '/^\|\|vkontakte\.ru\^\$.*$/d' |
+# Fix
+sed -E 's/^(.*)\$(domain=.*),(.*)$/\1$\3,\2/g' |
+sed -E 's/object_subrequest/object-subrequest/g' |
+# Clean and Write
 sed -r '/^\s*$/d' > fanboy-addon-light.txt
