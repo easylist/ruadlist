@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: PRpAdtkWodpFdTgRhA+amw
-! Last modification time (GMT): 2012.10.16 07:52
+! Checksum: cD2JPnxur1RMxSVRubcpVg
+! Last modification time (GMT): 2012.10.16 20:19
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -130,10 +130,11 @@
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
 ||youtube.com^$domain=2officialnik.biz|help2play.com|otveti2012.ru|otvetru.ru
 ! Попапы и редирект (мошенники) на turbobit.net
-||add5.ru^
-||dvadzat5.biz^
-||diaman4.info^
-||razmon.biz^
+||add5.ru^$~popup,popup
+||dvadzat5.biz^$~popup,popup
+||diaman4.info^$~popup,popup
+||razmon.biz^$~popup,popup
+||vsetutprosto.info^$~popup,popup
 add5.ru,dvadzat5.biz,diaman4.info,razmon.biz##*
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
 ||astaninki2.com^$third-party,~popup,popup
