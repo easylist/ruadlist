@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Checksum: +I2gneIuLFwWDXb86ZGWSA
+! Checksum: vGj1Lo3U/4uwb9F0ZsO6Sw
 ! Title: Fanboy's Annoyance List
-! Updated: 13 Oct 2012
+! Updated: 17 Oct 2012
 ! This list expires after 3 days
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -535,6 +535,7 @@
 /rss_icon_
 /rss_logo.
 /RSS_social.
+/rss_sprite.
 /rss_top_icon.
 /rssbutton.
 /rssfeed-85.
@@ -788,6 +789,7 @@
 /twitter_logo.
 /twitter_share.
 /Twitter_social.
+/twitter_sprite.
 /twitter_top_icon.
 /twitterbadge/*
 /twitterbutton-
@@ -1200,6 +1202,8 @@ _youtube-button.
 @@||eff.org/sites/default/files/twitter.png
 @@||eleximg.com/*/tmp/hot/Facebook.gif
 @@||examiner.com/sites/all/modules/custom/ex_omniture/s_code.js
+@@||facebook.com/plugins/facepile.php?$domain=gu-facebook.appspot.com
+@@||facebook.com/plugins/like.php?$domain=gu-facebook.appspot.com
 @@||facebook.com/plugins/likebox.php?$domain=thedailyshow.com|colbertnation.com
 @@||facebook.com/plugins/recommendations.php?$domain=techcrunch.com,subdocument
 @@||facebook.com/widgets/like.php?$domain=likearea.com|farmville.com
@@ -1231,7 +1235,7 @@ _youtube-button.
 @@||s7.addthis.com^*/addthis_widget.js$domain=bk.com|egotastic.com|whitehouse.gov|guildwars2.com
 @@||search.twitter.com/search.json?$domain=similarpages.com
 @@||search.twitter.com/search.json?$domain=thedailyshow.com|colbertnation.com
-@@||sharethis.com/button/buttons.js$domain=cnn.com|mangafox.me
+@@||sharethis.com/button/buttons.js$domain=cnn.com|mangafox.me|mangahere.com
 @@||sharethis.com/button/sharethis.js$domain=vogue.com|statefarm.com
 @@||sharethis.com^$domain=thedailyshow.com|thedailybeast.com|fox23.com|salon.com|imgur.com|cbslocal.com|fandango.com|colbertnation.com|money.cnn.com
 @@||static.bbci.co.uk/modules/*/sharetools.js$domain=bbc.co.uk
@@ -1306,6 +1310,7 @@ ubr.ua##.story-nav
 !
 !---------- French Site Specific Hiding Rules ----------
 !
+###sf-minisite-toolbar
 challenges.fr###sf-minisite-toolbar
 closermag.fr###fancybox-overlay
 closermag.fr###fancybox-wrap
@@ -1313,6 +1318,9 @@ habbotel.fr###topbar
 lemonde.fr###bandeau_bas
 lemonde.fr##.sociaux
 nutrilifeshop.com###nlp_popup
+video-buzz.eu##div[style="position:fixed;top:220px;left:0px;width:110px;-moz-border-radius:0px 5px 5px 0px;-webkit-border-radius:0px 5px 5px 0px;background-color:#ffffff;z-index:50;padding:10px;padding-left:0px;padding-top:50px;border:1px solid #000000;border-left:0px solid #000000;box-shadow: 1px 1px 4px #aaa;"]
+video-buzz.eu##div[style="position:relative;height:335px;background-color:#ebebeb;overflow:hidden;border:2px solid #222222;"]
+video-buzz.eu##div[style="position:relative;height:38px;background-color:#ebebeb;overflow:hidden;border:2px solid #222222;padding-top:15px;padding-left:56px;"]
 !
 !---------- Spanish/Portuguese Site Specific Hiding Rules ----------
 !
@@ -1446,6 +1454,9 @@ ynet.co.il###leftspacertable
 ###dd_ajax_float
 ###digg-widget-container
 ###divFacebook
+###divFacebookFollowMe
+###divShareURL
+###divTwitterFollowMe
 ###dmsocial
 ###dsq-reactions
 ###email-marketing-widget
@@ -1691,6 +1702,7 @@ ynet.co.il###leftspacertable
 ###ob_card
 ###ob_roadblock_bg
 ###ob_roadblock_container
+###offer_social
 ###omni-digg-most-dugg
 ###omni-fb-activity-feed
 ###orkut-button
@@ -1898,6 +1910,7 @@ ynet.co.il###leftspacertable
 ###social-container
 ###social-context-container
 ###social-float
+###social-floater
 ###social-foot
 ###social-grid-container
 ###social-header
@@ -2420,6 +2433,7 @@ ynet.co.il###leftspacertable
 ##.footerShare
 ##.full_share_container
 ##.fv_sharing
+##.fyre-notifier-container
 ##.g-plus
 ##.g-plusone
 ##.g-plusone-holder
@@ -2512,6 +2526,7 @@ ynet.co.il###leftspacertable
 ##.menu_share
 ##.menusocial
 ##.mod-facebook-fanbox
+##.mod-fb-connect
 ##.mod-simplyhired
 ##.mod-social
 ##.mod-socialmedia
@@ -2545,6 +2560,7 @@ ynet.co.il###leftspacertable
 ##.newslettersrssbox
 ##.npStoryShare
 ##.nrelate_flyout
+##.obs-block-follow
 ##.pane-follow-site
 ##.pane-storypage-sharethis
 ##.pane-subscribe-box
@@ -3450,6 +3466,7 @@ alexa.com##.social
 alexa.com##[alt="Bookmark"]
 alexa.com##[alt="Twitter"]
 alibris.com###email-signup-bar
+aliexpress.com###go-top
 aljazeera.com###ctl00_ctl03_layout2
 aljazeera.com###ctl00_ctl07_layout2
 aljazeera.com###mc_embed_signup
@@ -3965,6 +3982,7 @@ dailygood.org###subscribe
 dailyhaha.com##.social
 dailykos.com###simplemodal-container
 dailykos.com###simplemodal-overlay
+dailymail.co.uk###\5f em_stage__em
 dailymail.co.uk###fb-root
 dailymotion.com###share
 dailypioneer.com##.jv-social-share-button-contain
@@ -4427,6 +4445,8 @@ gq.com###ps2_fs2_yrail
 gq.com###sandbox_ps2_1
 gq.com##.utilities-bottom
 gq.com##.utility-share
+grantland.com###cboxOverlay
+grantland.com###colorbox
 grantland.com##.page-actions
 graphic.is###flshare
 gravity.com###follow
@@ -4459,6 +4479,10 @@ guardian.co.uk##.reader-offers
 guardian.co.uk##.toolbox-popup
 guardian.co.uk##.trail-icon
 guardianbookshop.co.uk##.moduleBookmarkLinks
+guide4bankexams.blogspot.co.nz###cboxOverlay
+guide4bankexams.blogspot.co.nz###colorbox
+guide4bankexams.blogspot.com###cboxOverlay
+guide4bankexams.blogspot.com###colorbox
 guidingtech.com###optincrusher
 guidingtech.com###text-3
 guildwars2.com##.social
@@ -4856,6 +4880,7 @@ lifelibertytech.com###leftcontainerBox
 lifescript.com###ConnectWidthLS
 lifescript.com###HPNewsletter
 lifescript.com##.DFNewsletterSignup
+liliputing.com##.box3
 linuxforu.com###text-5
 linuxforu.com##.unspoken-getconnected
 linuxplanet.com##.toolbox
@@ -5185,6 +5210,9 @@ naturalsociety.com###contentright
 naturalsociety.com###head-code
 naturalsociety.com##table[width="550"]
 nature.com###survey-message-placeholder
+natureworldnews.com###anotherBox
+natureworldnews.com##.nw_cont
+natureworldnews.com##.sns_box
 nbcmiami.com##.imwarelist
 nbcnews.com###left_ear
 nbcnews.com##.inlineCode
@@ -5373,6 +5401,7 @@ olympic.org##.iocShareLinks
 omegle.com###bar
 omg.yahoo.com##.yom-featured-list
 omgubuntu.co.uk###text-24
+onenewsnow.com###shownextstory
 onextrapixel.com##.fb_iframe_widget
 onextrapixel.com##.share
 onionsportsnetwork.com###connectbox

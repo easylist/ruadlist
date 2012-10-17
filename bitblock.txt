@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: XG+sHdfQCANO8VgpMBqApA
-! Last modification time (GMT): 2012.10.14 19:32
+! Checksum: dWvPNYelS/M9EGRMcd2YAQ
+! Last modification time (GMT): 2012.10.17 20:44
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -184,7 +184,6 @@ cwer.ws##A[href^="/goto/"] > IMG[width="150"][height="150"]
 delfi.ua##.sbookmarks
 ||drweb.com/static/js/redirect_to_facebook.js
 echo.msk.ru##.netWorkBlock
-elmir.ua###footer + #bottom_panel
 f1news.ru###bookmarkBlock
 fishki.net##.bloglinks
 fishki.net##.sociallinks
@@ -252,7 +251,6 @@ russia.ru##.append-other-applecations
 rutv.ru###btns
 safetygate.ru##.round-bs[class*="icon-"]
 ||samlab.ws/share42/
-sfw.org.ua###footer
 sfw.org.ua###qipbtn
 savefrom.net##.social-btn
 timeout.ru###social-popup
@@ -351,9 +349,6 @@ _lj_times_
 /plugins/quick-gush/*
 ! Кнопка в углу на ucoz-форумах, предлагающая создать сайт.
 ##.a-buttons.blue-but.a-check
-! Прочее
-~dw.de###copyright
-##.copyright
 1tv.ru##[id^="m_banner"]
 1tv.ru###METABAR_IFRAME
 ||1tv.ru/maintop/
@@ -389,7 +384,6 @@ experts-exchange.com##.allZones,.vqpsdBlurredAnswers,.copyrightFrame,.footnoteNo
 forum.ixbt.com##TD:first-child + TD[style$="240px;"]:last-child
 forums.warforge.ru###logostrip
 ||fotki.yandex.ru/get/*/wind-hide.
-freakenergy.ru###footer > NOINDEX
 freakenergy.ru##.sidebar > DIV > NOINDEX
 fullgames.ru###main > NOINDEX
 gismeteo.ru,gismeteo.ua###soft-promo
@@ -424,7 +418,6 @@ terabit.biz##.cnt2l
 topgir.com.ua##.singing
 torrents.net.ua###smschatframe
 vkontakte.ru###app_container_outer + DIV[style]
-yaplakal.com###footer
 ||yatv.ru/storage/userdata/*/banner_
 ||yatv.ru/storage/userdata/*/page_background_
 youtube.com##.homepage-side-block > :not(#stat-module-wrapper-statmodules_inbox):not(#homepage-whats-new)
@@ -437,10 +430,6 @@ mail.ru##.spu
 news.mail.ru##.placeForLayerToBlog + .actions
 !
 ! Сайты на движке TorrentPier
-data-torrents.com,freeisland.org,free-torrents.org,goldenshara.com###page_footer
-myy.su,nnbt.org,pirat.ca,pornolab.net,rus-torrents.ru,rustrek.ru###page_footer
-rutracker.org,rutracker.ru,tapochek.net,torrents.net.ua###page_footer
-underverse.su,unionpeer.org,wtracker.ru###page_footer
 file-tracker.net,pirat.ca,pornolab.net,rus-torrents.ru###logo
 rutracker.org,rutracker.ru,underverse.su###logo
 /images/logo/*$domain=nnbt.org|tapochek.net
@@ -466,6 +455,12 @@ rustrek.ru,tapochek.net,unionpeer.org##.poster
 styanulo.net###lenta
 vpsite.ru###informer
 vsekino.su##.lenta
+!
+!= Футеры и цопирайты =========================================================
+##.copyright
+~dw.de###copyright
+###footer
+###page_footer
 !
 != Мерцающего текста рассадники ===============================================
 !#glitter.bookmark
@@ -671,8 +666,8 @@ pressa-online.com#@##fbContainer
 @@||bbci.co.uk/modules/sharetools/*/sharetools.js$domain=bbc.co.uk
 @@||ws.audioscrobbler.com^$domain=tvoeradio.org
 !------------------------------------------------------------------------------
-! Fanboy's Annoyance list Addon
-! Updated: 13 Oct 2012
+! Fanboy's Annoyance List
+! Updated: 17 Oct 2012
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
 ! Email: fanboyadblock@googlegroups.com
@@ -1200,6 +1195,7 @@ pressa-online.com#@##fbContainer
 /rss_icon_
 /rss_logo.
 /RSS_social.
+/rss_sprite.
 /rss_top_icon.
 /rssbutton.
 /rssfeed-85.
@@ -1451,6 +1447,7 @@ pressa-online.com#@##fbContainer
 /twitter_logo.
 /twitter_share.
 /Twitter_social.
+/twitter_sprite.
 /twitter_top_icon.
 /twitterbadge/*
 /twitterbutton-
@@ -1862,6 +1859,8 @@ _youtube-button.
 @@||eff.org/sites/default/files/twitter.png
 @@||eleximg.com/*/tmp/hot/Facebook.gif
 @@||examiner.com/sites/all/modules/custom/ex_omniture/s_code.js
+@@||facebook.com/plugins/facepile.php?$domain=gu-facebook.appspot.com
+@@||facebook.com/plugins/like.php?$domain=gu-facebook.appspot.com
 @@||facebook.com/plugins/likebox.php?$domain=thedailyshow.com|colbertnation.com
 @@||facebook.com/plugins/recommendations.php?$subdocument,domain=techcrunch.com
 @@||facebook.com/widgets/like.php?$domain=likearea.com|farmville.com
@@ -1893,7 +1892,7 @@ _youtube-button.
 @@||s7.addthis.com^*/addthis_widget.js$domain=bk.com|egotastic.com|whitehouse.gov|guildwars2.com
 @@||search.twitter.com/search.json?$domain=similarpages.com
 @@||search.twitter.com/search.json?$domain=thedailyshow.com|colbertnation.com
-@@||sharethis.com/button/buttons.js$domain=cnn.com|mangafox.me
+@@||sharethis.com/button/buttons.js$domain=cnn.com|mangafox.me|mangahere.com
 @@||sharethis.com/button/sharethis.js$domain=vogue.com|statefarm.com
 @@||sharethis.com^$domain=thedailyshow.com|thedailybeast.com|fox23.com|salon.com|imgur.com|cbslocal.com|fandango.com|colbertnation.com|money.cnn.com
 @@||static.bbci.co.uk/modules/*/sharetools.js$domain=bbc.co.uk
@@ -1967,6 +1966,7 @@ ubr.ua##.story-nav
 !
 !---------- French Site Specific Hiding Rules ----------
 !
+###sf-minisite-toolbar
 challenges.fr###sf-minisite-toolbar
 closermag.fr###fancybox-overlay
 closermag.fr###fancybox-wrap
@@ -2104,6 +2104,9 @@ ynet.co.il###leftspacertable
 ###dd_ajax_float
 ###digg-widget-container
 ###divFacebook
+###divFacebookFollowMe
+###divShareURL
+###divTwitterFollowMe
 ###dmsocial
 ###dsq-reactions
 ###email-marketing-widget
@@ -2349,6 +2352,7 @@ ynet.co.il###leftspacertable
 ###ob_card
 ###ob_roadblock_bg
 ###ob_roadblock_container
+###offer_social
 ###omni-digg-most-dugg
 ###omni-fb-activity-feed
 ###orkut-button
@@ -2556,6 +2560,7 @@ ynet.co.il###leftspacertable
 ###social-container
 ###social-context-container
 ###social-float
+###social-floater
 ###social-foot
 ###social-grid-container
 ###social-header
@@ -3078,6 +3083,7 @@ ynet.co.il###leftspacertable
 ##.footerShare
 ##.full_share_container
 ##.fv_sharing
+##.fyre-notifier-container
 ##.g-plus
 ##.g-plusone
 ##.g-plusone-holder
@@ -3170,6 +3176,7 @@ ynet.co.il###leftspacertable
 ##.menu_share
 ##.menusocial
 ##.mod-facebook-fanbox
+##.mod-fb-connect
 ##.mod-simplyhired
 ##.mod-social
 ##.mod-socialmedia
@@ -3203,6 +3210,7 @@ ynet.co.il###leftspacertable
 ##.newslettersrssbox
 ##.npStoryShare
 ##.nrelate_flyout
+##.obs-block-follow
 ##.pane-follow-site
 ##.pane-storypage-sharethis
 ##.pane-subscribe-box
@@ -3929,6 +3937,7 @@ alarabiya.net##.frame-fb
 alarabiya.net##.img-caption-facebook-container
 alarabiya.net##.under-link-objects
 alibris.com###email-signup-bar
+aliexpress.com###go-top
 aljazeera.com###ctl00_ctl03_layout2
 aljazeera.com###ctl00_ctl07_layout2
 aljazeera.com###mc_embed_signup
@@ -4140,7 +4149,6 @@ businessweek.com###storyTools
 businesswire.com##.icons
 bustedcoverage.com###topnav
 buzzfeed.com###more-buzzfeed
-buzznet.com###footer
 buzznet.com###newsletter
 buzznet.com##.bing_tab_header
 buzzsugar.com###sugar-post-cross-sell
@@ -4372,6 +4380,7 @@ dailygalaxy.com###yahoo
 dailygood.org###subscribe
 dailykos.com###simplemodal-container
 dailykos.com###simplemodal-overlay
+dailymail.co.uk###\5f em_stage__em
 dailymail.co.uk###fb-root
 dailymotion.com###share
 dailypioneer.com##.jv-social-share-button-contain
@@ -4539,7 +4548,6 @@ english.rfi.fr###block-block-24
 english.rfi.fr###block-block-53
 english.rfi.fr###block-block-6
 enterprisenews.com###s_tool
-entireweb.com###footer
 epicurious.com###luxury_link_promo
 eric-richardson.com###follow
 espn.go.com###cboxOverlay[style="display: block; opacity: 0.7; cursor: pointer;"]
@@ -4768,6 +4776,8 @@ gq.com###ps2_fs2_yrail
 gq.com###sandbox_ps2_1
 gq.com##.utilities-bottom
 gq.com##.utility-share
+grantland.com###cboxOverlay
+grantland.com###colorbox
 grantland.com##.page-actions
 graphic.is###flshare
 gravity.com###follow
@@ -4797,6 +4807,10 @@ guardian.co.uk##.reader-offers
 guardian.co.uk##.toolbox-popup
 guardian.co.uk##.trail-icon
 guardianbookshop.co.uk##.moduleBookmarkLinks
+guide4bankexams.blogspot.co.nz###cboxOverlay
+guide4bankexams.blogspot.co.nz###colorbox
+guide4bankexams.blogspot.com###cboxOverlay
+guide4bankexams.blogspot.com###colorbox
 guidingtech.com###optincrusher
 guidingtech.com###text-3
 guistyles.com###Social
@@ -4840,7 +4854,6 @@ heavy.com###subscribe
 heavy.com##.page-tabs
 hellobeautiful.com##.open
 hellobeautiful.com##.toaster-panel
-hellofax.com###footer
 hellomagazine.com###share
 heraldnet.com###socialConnect
 heraldonline.com###widget_bundle
@@ -5130,6 +5143,7 @@ lifelibertytech.com###leftcontainerBox
 lifescript.com###ConnectWidthLS
 lifescript.com###HPNewsletter
 lifescript.com##.DFNewsletterSignup
+liliputing.com##.box3
 linuxforu.com###text-5
 linuxforu.com##.unspoken-getconnected
 linuxplanet.com##.toolbox
@@ -5410,6 +5424,9 @@ nationofchange.org##.emailSignupForm
 naturalsociety.com###contentright
 naturalsociety.com###head-code
 nature.com###survey-message-placeholder
+natureworldnews.com###anotherBox
+natureworldnews.com##.nw_cont
+natureworldnews.com##.sns_box
 nbcmiami.com##.imwarelist
 nbcnews.com###left_ear
 nbcnews.com##.inlineCode
@@ -5483,6 +5500,7 @@ newsok.com###leaderboard
 newsok.com###slidebox
 newsok.com##.color.bar
 newsok.com##.couponKit
+newsok.com##.fadeBack
 newsok.com##.fadeBack[style="padding: 5px 10px;"]
 newsok.com##.tools_toolbar
 newsolio.com###leftcontainerBox
@@ -5570,6 +5588,7 @@ olympic.org##.iocShareLinks
 omegle.com###bar
 omg.yahoo.com##.yom-featured-list
 omgubuntu.co.uk###text-24
+onenewsnow.com###shownextstory
 onextrapixel.com##.share
 onionsportsnetwork.com###connectbox
 onionsportsnetwork.com###tabcontent_facebook
