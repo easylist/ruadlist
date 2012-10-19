@@ -2,12 +2,13 @@
 
 # Remove
 sed -E '/(^.*[^#]|^)##[^.#].*$/d' fanboy-addon.txt |
-sed -E '/^.*##\.(facebook|fb_iframe_widget|googleplus|twitter|social)(\.|$)/d' |
-sed -E '/^.*###(facebook|footer|social)$/d' |
-sed -E '/^[^~].+##.socialize$/d' |
-sed -E '/^[^~].+##.google_plus$/d' |
+sed -E '/^\[.*$/d;/^!\sChecksum:.*$/d;/!\sThis\slist\sexpires.*$/d' |
+perl -pe 's/^(?!~).+##.*\.(facebook|fb_iframe_widget|google_?plus|twitter|social(ize)?)([.#[].*)?$//g' |
+perl -pe 's/^(?!~).+##.*#(facebook|footer|social|tweets)([.#[].*)?$//g' |
+sed -E '/^.*##.*\.(facebook|twitter)([.#[].*)?$/d' |
 sed -E '/^\|\|vkontakte\.ru\^\$.*$/d' |
 # Fix
+sed -E 's/^!\sTitle:/!/g' |
 sed -E 's/^(.*)\$(domain=.*),(.*)$/\1$\3,\2/g' |
 sed -E 's/object_subrequest/object-subrequest/g' |
 # Clean and Write
