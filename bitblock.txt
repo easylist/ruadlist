@@ -1,6 +1,670 @@
-! Fanboy's Annoyance List
-! Checksum: PjSmKWcKITe5Rq05JaOiYw
-! Last modification time (GMT): 2012.10.20 02:19
+[Adblock Plus 1.1]
+! Checksum: YIa+M2xiLsh+LpzosEd2ag
+! Last modification time (GMT): 2012.10.20 02:23
+! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
+! Homepage: http://ruadlist.googlecode.com/
+!
+! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
+! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
+! Целью проекта является блокировка всего популярного и совершенно не нужного,
+! а именно линеечек, юзербаров, мерцающих картинок, кнопочек и прочего мусора.
+! Подписка предназначена для тех, кто не желает всего этого видеть и
+! НЕ РЕКОМЕНДУЕТСЯ к установке по-умолчанию.
+! Включает фрагменты менее агрессивной подписки fanboy'а. Данные о ней ниже.
+!==============================================================================
+!
+! Исключения
+grooveshark.com#@##footer
+mirage.ru,mos.ru,privatbank.ru,privatbank.ua,wdc.com#@##mycarousel
+@@/jquery.jcarousel.$~third-party,domain=mirage.ru|privatbank.ru|privatbank.ua|wdc.com
+@@/wp-content/plugins/wp-minify/min/?f=$stylesheet,~third-party
+@@||194.186.171.75/images/default2/default/ui-userbar/
+@@||500px.com/unity/img/icons/userbar/
+@@||f1.mozillamessaging.com/share/panel/$document
+@@||google.com/js/plusone.js|$domain=pikucha.ru
+@@||odnoklassniki.ru^$domain=nevosoft.ru
+@@||yandex.st/share/share.js$domain=pikucha.ru|yandex.by|yandex.com|yandex.com.tr|yandex.kz|yandex.ru|yandex.ua
+!
+!= Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
+!#social.bookmark
+!= Тут не все правила - см. подписку фанбоя ниже.
+!
+!------------ Disqus ----------------------------------------------------------
+! Это не социальная сеть, а централизованный сервис для комментариев с логином
+! из любой крупной соц-сети и GMail. Сам он полезен, но не все их виджеты.
+###recent-disqus-comments
+||disqus.com^*/recent_comments_widget.
+!
+!------------ Facebook --------------------------------------------------------
+##[alt$=" on Facebook"]
+##.facebook
+##.fb_iframe_widget
+##.soc_fb_share
+##[title$=" to Facebook"]
+~facebook.com###facebook
+||facebook.com/method/fql.query?*&query=select*from*link_stat*where*url=
+||facebook.com/plugins/comments.php?
+||graph.facebook.com/*&callback=
+/facebook_icon_
+_facebook.gif
+!
+!------------ Google ----------------------------------------------------------
+##.googleplus
+##.g_plus
+##button[class="gbil esw eswd"]
+/+1/fastbutton?url=
+/plusone.js$domain=play.google.com
+/sprite4-a67f741843ffc4220554c34bd01bb0bb.png
+||gmodules.com/ig/images/plus_google.gif
+||google.com/translate_a/element.js?cb=googleTranslateElementInit|
+||google.*/cse/brand?form=
+!
+!------------ ICQ -------------------------------------------------------------
+||icq.com/scripts/online.
+||online.mirabilis.com^
+||status.icq.com/online.
+!
+!------------ LiveJournal -----------------------------------------------------
+/ljthis?
+_livejournal.gif
+!
+!------------ LovePlanet ------------------------------------------------------
+||loveplanet.ru^$third-party,domain=~loveplanet.ua
+!
+!------------ QiP -------------------------------------------------------------
+||pip.qip.ru^$domain=~pip.qip.ru
+!
+!------------ Twitter ---------------------------------------------------------
+##.twitter
+-tweet.png
+_twitter.gif
+_twitter.png
+!
+!------------ b̄ogi.ru ---------------------------------------------------------
+||bogi.ru/comments_widget.
+!
+!------------ ВКонтакте -------------------------------------------------------
+! Внимание!
+! Если требуется полная блокировка вконтакта, то создайте у себя два вот таких правила
+! ||vk.com^$third-party,script,subdocument
+! ||userapi.com^$third-party,domain=~vk.com
+##.vk-button
+##.vkontakte
+###vkshare0
+##.vk-share-button
+! ||vk.com/widget_$third-party
+||vk.com/widget_comments.php?$third-party
+||vk.com/widget_groups.php?
+||vk.com/widget_poll.php?$third-party
+||vk.com/widget_recommended.php?
+||vkontakte.ru/widget_comments.php?$third-party
+||vkontakte.ru/widget_groups.php?
+||vkontakte.ru/widget_poll.php?$third-party
+||vkontakte.ru/widget_recommended.php?
+/icons/vkontakte_
+/vkontakte_icon_
+_vkontakte.gif
+_vkontakte.png
+!
+!------------ Мой Мир (Mail.RU) -----------------------------------------------
+##.mrc__share
+||boom.mail.ru^
+||connect.mail.ru^$third-party
+@@||connect.mail.ru/js/loader.js|
+||imgsmail.ru/*_share_buttons_sprite.$third-party
+!
+!------------ Одноклассники ---------------------------------------------------
+##.odkl-klass
+##.odkl-klass-s
+##.odkl_share_stat
+/odnoklassniki/*
+!
+!------------ Яndex -----------------------------------------------------------
+##.b-col_share
+##.yashare-auto-init
+||lenta.yandex.ru/i/addfeed.
+!
+!- Универсальные и прочее -----------------------------------------------------
+##.addthis_table
+/addthis.try.js
+##.addzakl
+~appledevelopers.ru##.social
+###block_social_open
+||clix.ru^$third-party
+||contentwidgets.net/widget/
+/copy_to_blog_*.gif
+||inkoutbreak.com/bumper/
+_liveinternet.gif
+/odnaknopka/*
+###odnaknopka
+/odnaknopka.js
+||odnaknopka.ru^$third-party
+||pikabu.ru^$third-party
+/plugins/addzakl/*
+/plugins/russocialknopki-
+/share42.js|
+/share.js$third-party
+##.smiletagging-button
+##.soc-box
+###social
+###socialblock
+##.social-icons-big
+###socializ
+##.soc_share
+||viadeo.com/exec/recommend:getRecommend?$third-party
+||xat.com^$third-party
+||xatech.com^$third-party
+!
+!------------ Закладки --------------------------------------------------------
+||bobrdobr.ru/images/buttons/$third-party
+||memori.ru^$third-party
+||mister-wong.ru/img/*/buttons/$third-party
+||moemesto.ru/icons/$third-party
+!
+!- По-сайтам (частные) --------------------------------------------------------
+!#socpriv.bookmark
+3dnews.ru###article + .breadcrumbs
+3dnews.ru###socialtabs
+4pna.com##TABLE:first-child + BR + .tborder[cellspacing="1"][cellpadding="6"][align="center"]
+||a-comics.ru/pics5/1btn/
+aif.ru##.links + TABLE[align="center"]
+aif.ru##IFRAME[src^="http://www.facebook."] + BR + TABLE[border="0"]
+apple-russia.ru###bloghtml
+apple-russia.ru###bookmark
+autoclub-cerato.ru###socio_0
+autoclub-cerato.ru###socio_1
+247auto.ru,caredge.ru##.auth_vkontakte
+247auto.ru,caredge.ru##.bookmarks_list
+||bestrepack.net/forum/images/logo/*.gif
+||bin.com.ua/social/img/
+championat.ru##.livejournal
+cheklab.ru##.art-postcontent > .buttons
+cwer.ws##A[href^="/goto/"] > IMG[width="150"][height="150"]
+delfi.ua##.sbookmarks
+||drweb.com/static/js/redirect_to_facebook.js
+echo.msk.ru##.netWorkBlock
+f1news.ru###bookmarkBlock
+fishki.net##.bloglinks
+fishki.net##.sociallinks
+fishki.net##.undertopic > .imgmiddle
+forbes.ru##.block-social-dockable
+game-monitor.com##.bookmark
+||goha.ru/social/
+google.com###lhn-recommendations
+google.com###sub-tree-subscriptions
+google.com###lhn-friends
+google.com##.entry-actions > .email
+google.com##.entry-author > .entry-likers
+google.com##.entry-actions > .like
+google.com##.entry-actions > .broadcast
+google.com##.entry-actions > .broadcast-with-note
+||habrahabr.ru/images/share.
+homenet.beeline.ru,forum.f1news.ru##.topic_share
+homenet.beeline.ru###ed-0_toolbar_3
+homenet.beeline.ru###fast-reply_toolbar_3
+hqroom.ru##.sots-plugin
+inosmi.ru###left_sliding_block
+intv.ru##.bookmarks-container
+ipicture.ru###buton
+||i.li.ru/ReActive/i/blog/share2/serv.png
+kanobu.ru##.soc-embed
+kinopoisk.ru##.add_to
+kinopoisk.ru##.socRight
+korrespondent.net##.artpop_shad
+korrespondent.net##.footer_socialblock
+korrespondent.net##.unipopup
+kp.ru##.a_diffusion > .center > .left
+kp.ru##.cb_services-all
+kp.ru###fb_popup
+kp.ru###like_buttons
+||megaweb.su/softblok/
+mobiledevice.ru##.icons_bar_placeholder
+molodejj.ru###sharePanel
+newsinfo.ru###facebox
+||nifiga-sebe.ru/znachki/
+novafilm.tv##.news-entry > DIV:last-child
+novafilm.tv###vk_groups
+novafilm.tv##DIV[style*="40px;"]:last-child
+ntv.ru###btmsocialize
+ntv.ru##.podprint > UL[style*="370"]
+nvworld.ru##.buttons
+nya.sh##.q > .bottom
+opennet.ru###social_link
+pikucha.ru##.b-share
+piter.tv##.snet-links
+podrobnosti.ua##.b-news-share
+||pravda.ru/*/facebox
+qiq.ws##.buttonbox
+qiq.ws##A[onclick^="return addSoc"]
+||rfpro.ru/images/icons/bookmark/
+! discovery.rambler.ru и vision.rambler.ru
+rambler.ru##.b-share
+rambler.ru##.b-social-share
+rambler.ru##.v-favsites
+||rambler.ru/social_counters/
+rbcdaily.ru###popup_box
+rghost.net###share42
+ria.ru###facebook-userbar
+russia.ru##.append-other-applecations
+rutv.ru###btns
+safetygate.ru##.round-bs[class*="icon-"]
+||samlab.ws/share42/
+sfw.org.ua###qipbtn
+savefrom.net##.social-btn
+timeout.ru###social-popup
+tnua.info##.slink
+topnews.ru##.addto
+topnews.ru###bottom
+ua-football.com##.share
+||unian.net/img/social/social.
+utro.ru##.b-repost
+vedomosti.ru##.blogs_ico
+vesti.ru##.blog_wrapper
+vesti.ru##.live_container
+vesti.ru##.video_top_inner
+vk.com###pv_hh
+vz.ru##.append-other-applecations
+winreview.ru##.postmeta + NOINDEX
+x-torrents.org###bookmarks
+||allbest4free.ru/head.
+||cnews.ru/inc/images/feeds/
+||drugasmuga.com/images/bookmarks/
+||gamespotcdn.com/*/social_media.
+||msdn.com/CustomWidgets/SocialMediaSharingUC/
+navitel.su##.extra_append:last-child
+||novafilm.tv/static/icons/social-
+||overclockers.ru/images/buttons/
+||thevista.ru/*/img/soc/
+!
+!= Информеры ==================================================================
+!#informers.bookmark
+.ru/informer/$third-party
+//informers.$third-party
+/free/weather24.htm|
+||bagnet.org/informer/$third-party
+||bigmir.net/get_informers/
+||calend.ru^$third-party
+||cnews.ru/inc/$subdocument
+||export.gad.org.ua^
+||gismeteo.*/flash/$third-party
+###glavportInformer
+||glavport.net/finformer.php?
+||info.weather.yandex.net^$third-party
+||informer.gismeteo.$third-party
+||informer.ibcs-mail.com^$third-party
+||inforotor.net^$third-party
+||klerk.ru/*/informer/
+||lifenews.ru^$third-party
+||marker.ru^$third-party
+||mentalks.ru^$third-party
+! /informers/*
+||meteoprog.ua^$third-party
+||newportal.com.ua/informer/$domain=~newportal.com.ua
+||pojelanie.ru/inf/$third-party
+||qip.ru/informer.swf?file=
+||rbc.ru/img/*.gif?$third-party
+||regnum.ru/exports/
+||rp5.ua/informer/
+||sn00.net^$third-party
+||static.feed.rbc.ru^$third-party
+||supernews.com.ua/out/?
+||timeout.ru^$third-party
+||vesti.kz/informer.html
+||webdiscover.ru^$third-party
+||www.rb.ru^$third-party
+!
+!= Мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) =================
+! Блоки с авторскими правами и, часто, мусором на многих сайтах.
+!#trash.bookmark
+! Google stuff
+###gsr > DIV > #pushdown
+! Интернет-радио с флеш-плеером, разработчики которого не знают о том, что при открытии страницы их радио должно молчать
+||icefm.ru^$third-party
+! «Карта» Интернетов.
+||internetmap.info^$third-party
+! Назойливые новости на LiveJournal.
+_lj_times_
+/ljtimes/*
+! Чатики
+###comment_error + #output
+###MCaddFrm
+/mchat/*
+/minichat/*
+||chat.kino-dom.tv^$third-party
+||chatango.com^$third-party
+||chatovod.ru/widget/$third-party
+! Виджет часов и подобного мусора
+/clock.swf
+/mikuclock.swf
+/tagcloud.swf
+||bestof.ucoz.ru/servis/
+||chasikov.net.ru^$third-party
+||clock-desktop.com^$third-party
+||flash-clocks.com^$third-party
+! Плагины WordPress
+/plugins/wp-cumulus/*
+/plugins/quick-gush/*
+! Кнопка в углу на ucoz-форумах, предлагающая создать сайт.
+##.a-buttons.blue-but.a-check
+1tv.ru##[id^="m_banner"]
+1tv.ru###METABAR_IFRAME
+||1tv.ru/maintop/
+||1tv.ru/rotobanner/
+||2ip.ru/sbar/
+||mygold.pp.ua^$third-party
+! Далее идут правила для отдельных сайтов
+21region.org##.logo
+3dnews.ru###slider
+||3dnews.ru/*/images/slider/
+||a-comics.ru/fw/
+adultmanga.ru##.share_block
+||advbroker.ru^
+anidub.com##.art-header
+animelayer.ru###Wrapper > TABLE[width="100%"]:first-child
+autoclub-cerato.ru###outer_forum
+autovisio.com.ua###globallasttd > DIV[class$="-block"] + DIV[style^="padding:250px"]
+||awaps.yandex.
+||beeline.ru/pb_500x460.
+||cbox.ws/box/$third-party
+||clocklink.com/clocks/
+||club.ru/uploads/banners/
+club.ru##.container-banners
+||content.printdirect.ru^$third-party
+||cybermusic.ru/*/flash_logo.swf
+||daily.com.ua/upload/banner/
+demotivators.to###rtc
+||doroga.ua/Handlers/BannerObjectHandler.
+||easycom.com.ua/img/logo_rru.gif
+experts-exchange.com##.allZones,.vqpsdBlurredAnswers,.copyrightFrame,.footnoteNotice,#pageRight
+||experts-exchange.com^*/scripts/
+||forumkiev.com/flesh/
+forum.ixbt.com##TD:first-child + TD[style$="240px;"]:last-child
+forums.warforge.ru###logostrip
+||fotki.yandex.ru/get/*/wind-hide.
+freakenergy.ru##.sidebar > DIV > NOINDEX
+fullgames.ru###main > NOINDEX
+gismeteo.ru,gismeteo.ua###soft-promo
+||gismeteo.*/static/ny/
+||goha.ru^*/copyleft.js
+iguides.ru##[id^="post_message_"] ~ DIV
+||iguides.ru/forum/images/iguides_new/social/
+izvestia.ru##.topline
+||levonevski.net^$object
+master-css.com###header1 > H2 > SPAN
+||metabar.ru^$third-party
+||muz.ru/content/banners/
+muz.ru##DIV[style*="400px;"][style$="240px;"]
+newsdozor.ru##.news.normaltext .bbc_img
+||nix.ru^$object
+||onlainfilm.ucoz.ua/shapka.jpg
+ozon.ru##.news_block
+||politarena.org.ua/reclama/
+||promote.opera.com^$third-party
+russian-fiancee.com###top_logo
+rutor.org###toolbar
+russia.tv###adv_right + .b-mini_video
+||rutv.ru/index/iframe/*/mini/isPlay/true/
+sfw.org.ua##IMG[width="350"][alt*="userbar"]
+||shop.warforge.ru/rotation/
+||static.newsru.*/img/bg.gif
+streamzone.org##SPAN[style*="3.0em;"]
+superhimik.com###login_popup
+superhimik.com##.headerbar
+tapochek.net###sidebar1
+terabit.biz##.cnt2l
+topgir.com.ua##.singing
+torrents.net.ua###smschatframe
+vkontakte.ru###app_container_outer + DIV[style]
+||yatv.ru/storage/userdata/*/banner_
+||yatv.ru/storage/userdata/*/page_background_
+youtube.com##.homepage-side-block > :not(#stat-module-wrapper-statmodules_inbox):not(#homepage-whats-new)
+youtube.com##.share-panel-services
+! mail.ru - такое большое и жирное, что даже тут будет в отдельной группе -_-
+e.mail.ru##.rb_mmDivM
+mail.ru###firefox-offer
+mail.ru##.mf_smsTop
+mail.ru##.spu
+news.mail.ru##.placeForLayerToBlog + .actions
+!
+! Сайты на движке TorrentPier
+file-tracker.net,pirat.ca,pornolab.net,rus-torrents.ru###logo
+rutracker.org,rutracker.ru,underverse.su###logo
+/images/logo/*$domain=nnbt.org|tapochek.net
+! Дополнительно
+free-torrents.org##.catHead.bold.clickable
+free-torrents.org##.hlow
+free-torrents.org###latest_news > :not(#forums_list_wrap)
+free-torrents.org###sidebar1
+free-torrents.org##.spacer_8
+||free-torrents.org/forum/radio/
+||rustorka.com/forum/images/rustorka_
+||rustorka.com/forum/images/steam.
+||rustorka.com/forum/images/youtube.
+rutracker.ru###latest_news
+unionpeer.org###page_header > #head
+wtracker.ru##.preview_lol
+!
+!= Лента с обложками фильмов ==================================================
+.jcarousel.$script
+###mycarousel
+rus-torrents.ru###la_wrapper
+rustrek.ru,tapochek.net,unionpeer.org##.poster
+styanulo.net###lenta
+vpsite.ru###informer
+vsekino.su##.lenta
+!
+!= Футеры и цопирайты =========================================================
+##.copyright
+~dw.de###copyright
+###footer
+###page_footer
+!
+!= Мерцающего текста рассадники ===============================================
+!#glitter.bookmark
+||animashka.info^$third-party
+||best-animation.ru^$third-party
+||gifr.ru/data/gifs/$third-party
+||glitter-graphics.net^$third-party
+||glitterfy.com^$third-party
+||sparklee.com^$third-party
+!
+!= Блокировка мусора в подписях на форумах ====================================
+!- Правила скрытия блока подписей ---------------------------------------------
+!#signature.bookmark
+##.sig
+~oxymoronical.com##.signature
+##.forum-user-signature
+##.signatureView
+##.user_signature
+##.usersig
+kadets.info##DIV[id^="post_message_"] + DIV
+!
+!- Удивительно отвратительных анимированных смайлов рассадники ----------------
+! Встречаются не столько в подписях, сколько в самом тексте. Лучше и не видеть.
+!#smiles.bookmark
+||colnyshko.ru^$third-party
+||smayli.ru^$third-party
+||smiles.clan.su^$third-party
+||smileycentral.com^$third-party
+!
+!- Общие правила блокировки линеечек и юзербаров ------------------------------
+!#lines,userbars.bookmark
+.info/lines/$image
+.net/lines/$image
+.ru/line/$image
+.ru/lines/$image
+.ua/lines/$image
+//lines.$image
+/images/ubars/*
+/metric.$image
+/metric/*$image
+.ticker.$image
+/ticker.$image
+/ticker/*$image
+/tickers.$image
+/tickers/*$image
+/torrentbar.$image
+/torrentbar/*$image
+-userbar-$image
+-userbar.$image
+-userbar/$image
+.userbar-$image
+.userbar.$image
+.userbar/$image
+/userbar-$image
+/userbar.$image
+/userbar/*$image
+/userbar_$image
+_userbar.$image
+_userbar/$image
+_userbar_$image
+||gamercards.*.$third-party
+||line.*.$third-party
+!
+!- Блокировка отдельных источников линеечек и юзербаров -----------------------
+||2142-stats.com^$third-party
+||2ip.ru/bar/
+||2ip.ru/member_photo/
+||ametric.ru^$third-party
+||animating.ru^$third-party
+||autoclub-cerato.ru/forum/ubar/
+||autometric.ru^$third-party
+||avatarochka.ru/Calend/
+||avatarochka.ru/_ph/
+||baby.ru/images/dst/
+||babysfirstsite.org^$third-party
+||babyteva.ru/line_base/
+||babytoy.ru/im/
+||backloggery.com^$third-party
+||bars.funportal.info^
+||battletracker.com^$third-party
+||bf2sig.l0ser.net^$third-party
+||bigbars.ru^$third-party
+||bigworldclub.com/d_line/
+||blestki.com^$third-party
+||calendar.rodim.ru^
+||card.psnprofiles.com^$third-party
+||card.mmos.com^
+||catlover.m-sk.ru/lin/
+||clocklink.com^$third-party
+||clubnevest.ru/mules/lines/
+||cska-videohits.com/forum/lines/
+||daisypath.com^$third-party
+||danasoft.com/sig/
+||fantasiya.net/fon/line/$third-party
+||flines.ru^$third-party
+||forum-lines.ru^$third-party
+||freetickers.net^$third-party
+||g.bf3stats.com^$third-party
+||g.bfbcs.com^$third-party
+||galaxie.ru^$third-party
+||galya.ru/line1.
+||gamerhandles.com/sig/$third-party
+||gamersgate.com/ggtagi/
+||gametracker.com^$third-party
+||gta-real.com/fanzone/$third-party
+||halocharts.com^$third-party
+||hottabych.net/ubar/
+||hudeem-vmeste.ru/lin/
+||imagegen.last.fm^$third-party
+||informer.uinov.ru^$third-party
+||kiev-mama.com.ua/lines_holder/
+||kilat.ru^$third-party
+||lilypie.com^$third-party
+||line4auto.ru^$third-party
+||lineek.net^$third-party
+||lineika.info^$third-party
+||lines*.kukuzya.ru^
+||lines-metric.h16.ru^
+||love.romanticcollection.ru^
+||lusogamer.com^$third-party
+||malwarecity.com^*/fanzone/$third-party
+||mamainfo.ru/images/line.php?
+||mamalines.org.ua^$third-party
+||mamapluspapa.ru/*/lines/
+||mima.ru/im/
+||miniprofile.xfire.com^$third-party
+||minuskg.ru/informer/show/
+||mmohelper.ru/wp-content/uploads/sig/
+||mobilewallpapers.narod.ru/bar_
+||moikroha.ru/lines
+||mybaby.at.ua/bar/
+||mygamercard.net^$third-party
+||mygamercard.ru^$third-party
+||nadietah.ru/llines/
+||ne-kurim.ru/ncounter/
+||new-people.info/metric
+||nick-name.ru^$third-party
+||nomer.avtobeginner.ru^$third-party
+||ourlines.ru^$third-party
+||pchelenok.com/*/ruler.php?
+||playstation.com^*/psn/$third-party,image
+||playstation.com/psn/profile/$third-party,image
+||podpisi.net.ru^$third-party
+||pomni.exe.by^$third-party
+||pour-bientot.com^$third-party
+||pregnancy.org.ua/r_prcalendar_img.php?
+||progimp.ru/i/ub/
+||ps3trophies.com/card/
+||psnprofiles.com/card/$third-party
+||puzkarapuz.ru^$third-party
+||puzyaka.ru/metric
+||puzyaka.ru/ub/
+||qip.ru/images/sign/
+||raptr.com/badge/
+||rolki.ru/project/ubars/
+||rostovmama.ru/components/com_line/
+||ruler.autoserv.ru^
+||samforum.ws/signaturepics/
+||samlab.ws/img/*-bar.$image
+||schitalka.ru^$third-party
+||social.wakoopa.com^$third-party
+||speedtest.net/result/$third-party
+||statsverse.com^$third-party
+||steamcard.com^$third-party
+||surebaby.com/image.php?
+||tac.families.com^$third-party
+||tickercentral.com^$third-party
+||tickersbycindy.com^$third-party
+||torrent.proxylife.org^$third-party
+||traviangp.com^$third-party
+||ubars.ru^$third-party
+||ult-tex.net/counts/
+||userba.ru^$third-party
+||userbarov.net^$third-party
+||userbars.ru^$third-party
+||vsdi.net^$third-party
+||wibiya.com^$third-party
+||wunschkinder.net^$third-party
+||x-lines.ru^$third-party
+||xboxamerica.com/gamercards/$third-party
+||xboxgamertag.com^$third-party
+||xboxlc.com/cards/$third-party
+||yourgamercards.net^$third-party
+||zaers.ru^$third-party
+||zelgan.ucoz.ru/Userbarss/
+||zoometric.ru^$third-party
+!------------------------------------------------------------------------------
+! Правила, аналогичные правилам из подписки фанбоя
+/digg.gif$domain=~digg.com
+/google-buzz.png
+/livejournal.png$domain=~livejournal.com
+/reddit.gif$domain=~reddit.com
+/technorati.gif$domain=~technorati.com
+!------------------------------------------------------------------------------
+!- Дальнейшие правила взяты из подписки от fanboy и нацелены исключительно на -
+!- блокирокву мусора из социальных сетей. Не оптимальные правила удалены.     -
+!------------------------------------------------------------------------------
+! - Исключения
+kai-gebel.com#@#.social-bar
+kai-gebel.com#@#.social-bar-bottom
+pressa-online.com#@##fbContainer
+@@||addthis.com/js/250/addthis_widget.js$domain=tomtom.com
+@@||bbci.co.uk/modules/sharetools/*/sharetools.js$domain=bbc.co.uk
+@@||ws.audioscrobbler.com^$domain=tvoeradio.org
+@@||odnoklassniki.ru/share/odkl_share.js$domain=mreporter.ru
+!------------------------------------------------------------------------------
+! Fanboy's Annoyance List (FAL)
 ! Updated: 19 Oct 2012
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
