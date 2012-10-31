@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: FStBbMUMLPf7vy27WFQkRA
-! Last modification time (GMT): 2012.10.31 00:28
+! Checksum: LMY8ZKzmR2yBZCTXRYlYCg
+! Last modification time (GMT): 2012.10.31 00:34
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -14,9 +14,6 @@
 !==============================================================================
 !
 ! Исключения
-grooveshark.com,yotaplay.ru#@##footer
-! Меню в футере, но зачем?
-mozilla.org,vesti.ru,wordpress.com#@##footer
 mirage.ru,mos.ru,privatbank.ru,privatbank.ua,wdc.com#@##mycarousel
 @@/jquery.jcarousel.$~third-party,domain=mirage.ru|privatbank.ru|privatbank.ua|wdc.com
 @@/wp-content/plugins/wp-minify/min/?f=$stylesheet,~third-party
@@ -464,6 +461,10 @@ vsekino.su##.lenta
 ~dw.de###copyright
 ###footer
 ###page_footer
+! Иногда блокировка футера приводит к нежелательным последствиям для сайта
+grooveshark.com,yotaplay.ru#@##footer
+! Меню в футере, но зачем?
+mozilla.org,vesti.ru,wordpress.com#@##footer
 !
 != Мерцающего текста рассадники ===============================================
 !#glitter.bookmark
