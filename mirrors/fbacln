@@ -4,7 +4,7 @@
 sed -E '/(^.*[^#]|^)##[^.#].*$/d' fanboy-addon.txt |
 sed -E '/^\[.*$/d;/^!\sChecksum:.*$/d;/!\sThis\slist\sexpires.*$/d' |
 perl -pe 's/^(?!~).+##.*\.(facebook|fb_iframe_widget|google_?plus|twitter|social(ize)?)([.#[].*)?$//g' |
-perl -pe 's/^(?!~).+##.*#(facebook|footer|social|tweets)([.#[].*)?$//g' |
+perl -pe 's/^(?!~).+##.*#(facebook|social|tweets)([.#[].*)?$//g' |
 sed -E '/^.*##.*\.(facebook|twitter)([.#[].*)?$/d' |
 sed -E '/^\|\|vkontakte\.ru\^\$.*$/d' |
 # Fix
