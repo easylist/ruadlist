@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: BBjFrfxewsVLyQsFBiBIIA
-! Last modification time (GMT): 2012.11.07 15:23
+! Checksum: 8JAZ8tcjD53V+p3X9gvxIQ
+! Last modification time (GMT): 2012.11.07 15:45
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -759,7 +759,6 @@ _tizers.
 ||bannerhost.ru^
 ||banner-in.net^
 ||banner-storage.fo.ru^
-||banner-viewers.com^$third-party
 ||banner.ua^
 ||bans.bride.ru^
 ||bans.name^
@@ -2024,11 +2023,12 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||sliding-banner.net^
 !
 ! LinksCTRSystem.com
-! /ctr.php?ref=, IP=77.95.230.16/21 and 78.41.200.94
-.com/view.php|$third-party,script
+! /ctr.php?ref=, IP=77.95.230.16/21/42 and 78.41.200.94
+.com/read.php?title=*&referrer=|$third-party,script
 ||advertise-pro.com^
 ||adv-lance.com^
 ||adv-port.com^
+||banner-viewers.com^
 ||iehemond.com^
 ||keo-suppo.com^
 ||linksctrsystem.com^
@@ -3997,8 +3997,8 @@ samlab.ws##.soft-day:not(:first-child) > .box
 ||satsis.info^$object
 ||sc2tv.ru:8080/show/$subdocument
 season.ru##[class^="bnnr_bx_"]
-||cdn.seasonvar.ru/images/bodyg.jpg
-seasonvar.ru##.gamemacine > IMG[src^="http://cdn.seasonvar.ru/images/"]
+seasonvar.ru##.main-center-block > DIV:not([class="head-block"]):not([class="footer"]):not([class="content-center"]):not([class="content-center2"])
+||seasonvar.ru/images/body
 securitylab.ru###brleft
 ||seedoff.net/jscript/xbtit.js
 ||seedoff.net/partners/
