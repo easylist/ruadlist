@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 2zBn6NgTSDKLgg0s8/JxKg
-! Last modification time (GMT): 2012.11.10 00:11
+! Checksum: BMQA2dFmnB/f/IhpvE4PrA
+! Last modification time (GMT): 2012.11.10 02:26
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -265,6 +265,7 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 //mads.
 /marketplace.asp?
 /mediaget-
+/media/?t=*;f=http%$script
 /mirmaek/*$image
 ! adfox.ru, adwolf.ru, kavanga.ru…
 /prepareCode?$match-case
@@ -351,6 +352,7 @@ _banner.gif
 /img/rekl/*
 ! $domain=sotoweek.ru|sotovik.ru
 /inc/banner_zone/*
+/jban.js?idd=
 ! mac.net.ua, wersi.ru (причём не только у них самих)
 /media/banners/*$domain=~beeline.ru
 /mybaner/*
@@ -927,6 +929,7 @@ _tizers.
 ||fooder.ru^$third-party
 ||forex4you.org/flash/partners/
 ||forsage.biz^$third-party
+||fo.ru^*/affilate/
 ||fotkidepo.ru^$third-party,script
 ||fotocash.ru^
 ||fotostrana.ru/banner?
@@ -1171,6 +1174,7 @@ _tizers.
 ||media.online.ua/all/gft/
 ||mediacontext.$third-party
 ||mediaget.com^$third-party
+||medianaft.com^
 ||mediaportal.ru^$third-party
 ||mediatraffic.com.ua^
 ||mega-cash.net^$third-party
@@ -1501,6 +1505,7 @@ _tizers.
 ||slimp.net^$third-party
 ||smart-soft.ru^$third-party
 ||smartb.2gsg.com^
+||smartbucks.ru^
 ||smiar.ru^
 ||smile32.ru^$third-party
 ||smsbanner.ru^$third-party
@@ -1749,6 +1754,7 @@ _tizers.
 .com/j25.php$script,third-party
 .com/j35.php$script,third-party
 .com/j45.php$script,third-party
+.com/j65.php$script,third-party
 .com/clck.php?g=$image,~image,popup
 .com/on.php?id=$image,~image,popup
 &temz=clikundr&$~popup,popup
@@ -1776,6 +1782,7 @@ _tizers.
 ||trafsiz.com^$~popup,popup
 ||traftiz.com^$~popup,popup
 ||twitep.com^$~popup,popup
+||waogi.com^$~popup,popup
 ||yohioo.com^$~popup,popup
 !
 ! ABN.com.ua
@@ -1893,6 +1900,8 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 /mp3player.swf?file=*/vk.mp3
 ||b21342.ru^
 ||binmedia.ru^
+||bistr3.ru^
+||bitclx.ru^
 ||broils.ru^
 ||tinsvt.ru^
 ||trisol.ru^
@@ -1961,12 +1970,8 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||kliklink.ru^$~popup,popup
 ! $domain=popupclick.ru,popupclick.com
 ||popupclick.$~popup,popup
-||ruklik.com^$~popup,popup
 ||tdstraff.ru^$~popup,popup
 ||trafidet.ru^$~popup,popup
-||trafovik.ru^$~popup,popup
-||vestraf.ru^$~popup,popup
-||xxxxxxxxxx.ru^$~popup,popup
 !
 ! Direct/ADVERT
 /show.cgi?adp=$domain=~adnetwork.pro|~novoteka.ru
@@ -1981,7 +1986,9 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ! Общие правила
 /in.htm?wm=$image,~image,popup
 /getThumbs?uid=$third-party,subdocument
+/sticker?id=$third-party,script
 ||clickcashmoney.com^$~popup,popup
+||dev4enki.com^$~popup,popup
 ||devochki-dlya-tebya-na-dosuge.com^$~popup,popup
 ||dominas.femdomina.ru^$~popup,popup
 ||dosug.cz^$third-party,~popup,popup
@@ -2084,35 +2091,55 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 //95.169.186.139^
 /code.php?idsite=$third-party
 /gask.cgi?ids=$third-party
+!.eu domains
 ||212-sueper.eu^
 ||212sueper.eu^
 ||231good.eu^
 ||23ie7e.eu^
+||3oi3ue.eu^
+||4-w-4-new.eu^
+||cooleightds.eu^
+||ikk2gh.eu^
+||super12.eu^
+!.net domains
 ||2-tr-45.net^
 ||2tr45.net^
-||4-w-4-new.eu^
+||codeextrarich.net^
+||codexq.net^
+||koe-dv.net^
+||media-kod.net^
+||media-rotation.net^
+||mediarotator.net^
+||media-rotator.net^
+||message-site.net^
+||netrotator.net^
+||nihewfi.net^
+||nuigyin.net^
+||onlinerotator.net^
+||rotation-media.net^
+||rotation-message.net^
+||rotationmessage.net^
+||rotation-web.net^
+||web-rotation.net^
+||web-rotator.net^
+! other domains
 ||adrichmedia.info^
 ||adspot-rich.info^
 ||adspotrich.info^
 ||adsrichmedia.info^
 ||advertising-richmedia.info^
 ||advertisingrichmedia.info^
-||codeextrarich.net^
 ||codemedia.info^
 ||code-mediarich.ru^
 ||codemediarich.ru^
 ||code-rich.info^
 ||codes-media.ru^
-||codexq.net^
 ||glavrich.com^
-||ikk2gh.eu^
-||koe-dv.net^
 ||marketingrichmedia.info^
 ||media-clicks.info^
 ! $domain=media-code.info|media-code.ru
 ||media-code.$third-party
 ||mediacod.in^
-||media-kod.net^
 ||mediakode.in^
 ! $domain=media-rich.info|media-rich.ru
 ||media-rich.$third-party
@@ -2121,16 +2148,8 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ! $domain=mediarich-code.info|mediarich-code.ru
 ||mediarich-code.$third-party
 ||mediarichcode.ru^
-||media-rotation.net^
-||mediarotator.net^
-||media-rotator.net^
 ! $domain=mediaunder.org|mediaunder.us
 ||mediaunder.$third-party
-||message-site.net^
-||netrotator.net^
-||nihewfi.net^
-||nuigyin.net^
-||onlinerotator.net^
 ||richadplace.info^
 ||richads.info^
 ||rich-ad-spot.info^
@@ -2140,17 +2159,12 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||richadvertisingspot.info^
 ||richmedia-adspot.info^
 ||richmediaadspot.info^
-||rotation-media.net^
-||rotation-message.net^
-||rotationmessage.net^
-||rotation-web.net^
-||super12.eu^
-||web-rotation.net^
 ! $domain=webrotator.net|webrotator.org
 ||webrotator.$third-party
-||web-rotator.net^
 !#mediarich.clients
 _doublepunch.ru
+_haxa.ru
+_murmann.ru
 _narodclub.net
 _stock-exchange.ucoz.com
 _todayanekdot.ru
@@ -2281,7 +2295,7 @@ _popunder.$~popup,popup
 ||youhave.mobi^$~popup,popup
 ||wwwmobiroll.com^$~popup,popup
 !#popunder.clients
-?&*=http%3A//$script,domain=dsvload.net|football-tv.com.ua|gold-liter.org.ua|hentaichan.ru|kino1000.ru|lik-bez.com|narodclub.net|russian-cheaters.com|rutracker21.org|santikov.net|transformice.ru|xxx-tracker.com|yandex.ru|дсвлоад.рф
+=http%3A//$script,domain=dsvload.net|football-tv.com.ua|gold-liter.org.ua|hentaichan.ru|kino1000.ru|lik-bez.com|narodclub.net|russian-cheaters.com|rutracker21.org|santikov.net|transformice.ru|xxx-tracker.com|yandex.ru|дсвлоад.рф
 ||111.media-pleery.ru^
 ||123.fome.ru^
 ||aefewf.allsoftfiles.com^
@@ -2301,10 +2315,7 @@ _popunder.$~popup,popup
 ||dvasub.kipfilms.ru^
 ||forum.dwnld.net.ua^
 ||go.mega-games.org^
-||google.dsvload.net^
-||google.дсвлоад.рф^
 ||gov.hentaipix.ru^
-||home.hentaichan.ru^
 ||load.fan-guf.ru^
 ||news.movieworld.kz^
 ||pu.soft11.ru^
@@ -2313,16 +2324,13 @@ _popunder.$~popup,popup
 ||ref.myrefs.org.ua^
 ||rek.x-zona.org^
 ||rx9aef.driver-id.ru^
-||sailor.rutracker21.org^
 ||sctipt.prons.org^
 ||static2.ero2you.com^
-||yura.football-tv.com.ua^
 !#popunder.clients.indirect-or-unused
 ||1.miniporn.ru^
 ||anime.neco.su^
 ||chip.sci-web.info^
 ||menu.narodbit.net^
-||moon.rutracker21.org^
 ||pop.futurevideo.su^
 ||pop.kinofilez.ru^
 ||pop.spy4.in^
@@ -2331,7 +2339,6 @@ _popunder.$~popup,popup
 ||qwerty.arenda263.ru^
 ||static2.asfile.com^
 ||top.softweb.ru^
-||torrent3d.arsfu.ru^
 ||web.speedmen.ru^
 ||wiki.xxxsexvideo.info^
 ||www.clients.ads-masters.com^
@@ -2464,18 +2471,20 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ! TizerMedia.net
 /tizermedia.
 .tizermedia.
-/news.php?href=*&tm_mode=
-/news1.php|
+.htm?href=*&tm_mode=
 ||stableprofit4you.com^
 ! «Пe peaд peca ция paбoтaeт oтлич нo!»
-||area51.pixarea.ru^
-||dns1server.kazanova8.ru^
-||latest-news.palad.kiev.ua^
-||maerca.limon.pp.ua^
-||news.awab.ru^
-||t.fisthost.ru^
-||tizzz.arsfu.ru^
-||tor.slavaangel.ru^
+! =http правила успешно работают и против popunder
+=http*//arsfu.ru$script
+=http*//hottrash.ru$script
+=http*//kazanova8.ru$script
+=http*//murmann.ru$script
+=http*//softsnew.ru$script
+=http*//ublo.ru$script
+=http*//video-gorod.org.ua$script
+=http*//xqqx.ru$script
+=http*//xxx-story.ru$script
+=http*//zaebli.ru$script
 !
 ! Tizer Stock
 .com/js/check_blocks.js|$third-party
@@ -2602,6 +2611,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||gagenez.com^
 ||gagnifie.com^
 ||galleyn.com^
+||gatikus.com^
 ||ghaires.com^
 ||gingardo.com^
 ||globeac.com^
@@ -2646,10 +2656,12 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||lachee.com^
 ||lachest.com^
 ||langueur.com^
+||lareson.com^
 ||largelydi.com^
 ||lavantat.com^
 ||leashac.com^
 ||lexament.com^
+||lidicando.com^
 ||liendans.com^
 ||livingy.com^
 ||locandito.com^
@@ -2663,6 +2675,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||mementes.com^
 ||menteret.com^
 ||outwitch.com^
+||palandan.com^
 ||polimantu.com^
 ||poollast.com^
 ||priesty.com^
@@ -2700,6 +2713,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||toujoute.com^
 ||toutiles.com^
 ||traient.com^
+||trapasol.com^
 ||treprime.com^
 ||truenty.com^
 ||undere.com^
@@ -2717,9 +2731,9 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||zdenochary.com^
 ||zontrans.com^
 !#teasernet.clients
-.com/rss$script,domain=24warez.ru|cmexota.ru|demotivators.to|dir300.ru|imageban.ru|last.by|mp3prima.com|oplayer.org|plus100500.ru|ru-admin.net|uptube.su|vodkov.net|x-zona.org
-.com/s$script,domain=24warez.ru|cmexota.ru|demotivators.to|dir300.ru|imageban.ru|last.by|mp3prima.com|oplayer.org|plus100500.ru|ru-admin.net|uptube.su|vodkov.net|x-zona.org
-/jquery.js$third-party,domain=24warez.ru|cmexota.ru|demotivators.to|dir300.ru|imageban.ru|last.by|mp3prima.com|oplayer.org|plus100500.ru|ru-admin.net|uptube.su|vodkov.net|x-zona.org
+.com/rss$script,domain=24warez.ru|cmexota.ru|demotivators.to|dir300.ru|imageban.ru|last.by|mp3prima.com|oplayer.org|plus100500.ru|privsex.ru|ru-admin.net|softsnew.ru|uptube.su|vodkov.net|vodvore.net|vseblidynas.ru|xxxlili.ru|xxx-story.ru|x-zona.org
+.com/s$script,domain=24warez.ru|cmexota.ru|demotivators.to|dir300.ru|imageban.ru|last.by|mp3prima.com|oplayer.org|plus100500.ru|privsex.ru|ru-admin.net|softsnew.ru|uptube.su|vodkov.net|vodvore.net|vseblidynas.ru|xxxlili.ru|xxx-story.ru|x-zona.org
+/jquery.js$third-party,domain=24warez.ru|cmexota.ru|demotivators.to|dir300.ru|imageban.ru|last.by|mp3prima.com|oplayer.org|plus100500.ru|privsex.ru|ru-admin.net|softsnew.ru|uptube.su|vodkov.net|vodvore.net|vseblidynas.ru|xxxlili.ru|xxx-story.ru|x-zona.org
 ||adt.tubecontext.com^
 ||nn.tmska.com^
 ||stats.internet-yadro.com^
@@ -2774,9 +2788,10 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 /code/click.php?id=$image,~image,popup
 /mp3player.swf?file=*/bb1.mp3
 /mp3player.swf?file=*/bb2.mp3
+/vk_code.php?id=$script,third-party
 /vknotifier1.php?id=$script,third-party
-/vkshow.php?id=$script,third-party
 /vkshow1.php?id=$script,third-party
+/vkshow.php?id=$script,third-party
 &vk_t=*&adv_ids=
 ||adforce.ru^
 ! $domain=adgamble.net|adgamble.ru
@@ -2787,6 +2802,10 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||clicksadvert.info^
 ||gainclick.co^
 ||mubra.ru^
+||tagol2.ru^
+||taril1.ru^
+||taril2.ru^
+||taril3.ru^
 !#paymonsters.main
 ||1poiuoupd.info^
 ||23mfdoe32rs.ru^
