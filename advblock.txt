@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 0TFfylk91ZHzCutlbckY4A
-! Last modification time (GMT): 2012.11.20 01:47
+! Checksum: GMiK/uE0nubheufApr3lAQ
+! Last modification time (GMT): 2012.11.20 02:09
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1269,6 +1269,7 @@ _tizers.
 ||nsoft-s.com^$third-party
 ||nu-stars.com^$third-party
 ||numbers.md^$third-party
+||n.vipadvert.net^
 ||obmenniki.com/img/ban
 ||oboi.kards.ru/?
 ||ofdaft.com^$third-party
@@ -4704,8 +4705,12 @@ torrent*.com/afisha/*x$image
 ! Ukr.NET
 search.ukr.net##.ads-header
 search.ukr.net##.ads-header + SPAN > .ad
-||ukr.net/i/rozetka/
-||ukr.net/partner/
+search.ukr.net##.textAd_img
+ukr.net###baner-market
+ukr.net###b_job
+ukr.net##.b-top_right > NOINDEX > DIV[id][class]
+ukr.net##.column_1 > NOINDEX > DIV[id][class]:not(.favorites)
+||portal.un.net.ua/img*/commercial/
 !
 ! Сеть городских сайтов Украины
 ua##A[href^="/redirect/url?url="] > IMG[src^="/upload/jackets/"]
