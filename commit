@@ -17,11 +17,17 @@ commit_script() {
 	echo -------------------------------------------------------------------------------
 	echo - \"Fix-it before commit\" auto-generated block.
 	echo -------------------------------------------------------------------------------
+    # Simple check for rules with missing $
 	grep '^[^/!].*\^[^$*=]' *.txt | grep --color=auto '\^[^$*=]'
+	# I don't like object_subrequest, I like object-subrequest
 	grep --color=auto object_ *.txt
+	# I don't like when domain flag is not last + catch mistake with ',' between domains
 	grep '^[^!].*[$,]domain=.*,' *.txt | grep --color=auto '[$,]domain=.*,'
+	# Popup have to be declared as image,~image,popup or ~popup,popup
 	grep '^[^!].*\$popup' *.txt | grep --color=auto '\$popup'
-	grep '^......*||' *.txt | grep --color=auto \|\|
+	# Check for accidental rows concatenation
+    grep '^....*||' *.txt | grep --color=auto \|\|
+    # Rules with ||* combo have no meaning - remove this part
 	grep -E '^(@@)?\|\|\*' *.txt
 	# type commit message
 	echo -------------------------------------------------------------------------------
