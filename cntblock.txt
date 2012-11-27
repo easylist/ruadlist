@@ -1,47 +1,27 @@
 [Adblock Plus 1.3.5]
-! Checksum: xHn7VgWjgg8F7Xt0kB4VJA
-! Last modification time (GMT): 2012.11.27 14:38
+! Checksum: TyDk82asS0T3SjgAGukvqA
+! Last modification time (GMT): 2012.11.27 16:20
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
-! Дополнительная подписка фильтров RU CountersList (ruadlist.googlecode.com)
+! Дополнительная подписка фильтров RU Adlist: Counters (ruadlist.googlecode.com)
 ! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
 ! Проект создан DemonSat'ом на основе подписки от denis-ovs(denis-ovs.narod.ru)
 ! Включает в себя фрагменты подписки от Александра Михалкина и Алексея Солохина
-! Так же использованы фрагменты подписки fanboy'я.
-! На данный момент над подпиской работают: Lain_13
-! Помогают: MORPEH (Александр Михалкин) и другие пользователи подписки
+! Так же использованы фрагменты подписки fanboy'я и EasyPrivacy
+! На данный момент над подпиской работает: Lain_13
 !==============================================================================
-! Данная подписка создана для улучшения приватности пользователя в сети. Она
-! включает в себя счётчики посещаемости и сбора различных параметров компьютера
-! пользователя. Они не являются рекламой, а потому и не должны находиться в
-! основной анти-рекламной подписке, но при этом собирают данные о пользователе.
+! Подписка создана для блокировки малополезных для посетителей сайта скриптов,
+! предназначенных для сбора статистики о посещаемости и параметрах компьютера
+! посетителя. Они не являются рекламой и потому исключены из основной подписки.
+! Администраторы сайтов могут использовать статистику для улучшения сервиса и
+! потому в конечном счёте такая блокировка нежелательна, но положительно сказы-
+! вается на приватности пользователя в сети.
 !
 ! = Ложные срабатывания (исключения) ==========================================
-! Антитоп
-@@||altapress.ru/story/counter/
-@@||cnews.ru/news/top/print.shtml?$subdocument
-@@||imgsmail.ru/mail/*/images/*/_sp_top
-@@||kanobu.net/kanobu/modern/skin/*/content-top-bg.$domain=kanobu.ru
-@@||k.img.com.ua/img/top_in_arts/$domain=korrespondent.net
-! Прочее
 @@||yandex.ru/metrika/watch.js$domain=realty.yandex.ru
-!
-! = Устранение бесконечной загрузки страниц из-за блокировки счётчика =========
+! Устранение бесконечной загрузки страниц
 @@||magna.ru/xml_out/?*://top.rbc.ru/$domain=top.rbc.ru
-!
-! = Фильтры по регулярным выражениям ==========================================
-! Антитоп
-/[^a-z]top[^a-z][^.]*\.[^?]*\?/$image,script,subdocument,third-party
-! Счётчики и ссылки на дружественные ресурсы (последние обычно анимированы)
-/\D(?:3[123][-_x]88|88[-_x]3[123])\D/$domain=~money.yandex.ru
-/8831.gif
-_8831.gif
-!
-! = Общие правила скрытия =====================================================
-! ##[width="88"][height="31"]
-! ##[width="88"][height="32"]
-! ##[width="88"][height="33"]
 !
 ! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
 ://advstat.
@@ -54,14 +34,6 @@ _8831.gif
 ://stat.$~stylesheet,third-party
 ://top.$~stylesheet,~xmlhttprequest,third-party
 !
-! = Web-Bugs (картинки 1x1) ===================================================
-.googleusercontent.com/tracker/
-/1x1.gif
-/1x1.png
-/pixel.php?
-||addthis.com^*.gif?*&CXNID=
-||bin.clearspring.com^$object
-!
 ! = Общие фильтры =============================================================
 .ru/img.php?id
 .ru/stat/$domain=~metrika.yandex.ru|~sms-track.ru|~sports.ru
@@ -69,53 +41,69 @@ _8831.gif
 .ua/stat/$domain=~fotomag.com.ua
 .ru/cnt/?
 .ru/count/$domain=~yandex.ru
-.spylog.$image,script,third-party
-! Картинка вставляемая скриптом ga.js с сайта Google Analytics в параметрах которой передаются собранные данные.
-/__utm.gif
-! smart-ip.net,yoip.com.ua
-/_res/script/image.php?type=$image
+/1x1.gif
+/1x1.png
+/adlogger_tracker.js?
+/b/ss/*?aqb=1&ndh=
 /btn.php?id=$third-party
-! baptist411.com,globalvisionfaith.org,uucyc.ru,npoctop.ru,jcp.net.ua
-/button.php?u=$image
-! topvisibility.com,uucyc.net
 /button.php?id=$image
+/button.php?u=$image
 /cnt.cgi?
-/cnt.php?
 /cnt-gif1x1.php?
-/count.php
-/counted/*
-^counter.$image,third-party
-!$domain=299.ru|c.a.ua
-/counter.php?$~object-subrequest
-/counter/*
-/counter?
-/counters/*
-/counters?
+/cnt.php?
 /counter_
+/counter^
+^counter.$image,third-party
+/counter.php?$~object-subrequest
+/counters^
+/count.php
+/csi?v=*&action=
+/cycounter^
 /cycounter.
-/cycounter/*
-/cycounter?
-! 4oru.net,foryou.kherson.ua
+/dcs.gif?
+/elqnow/*
+/event.ng/*
+/foresee/*
+/ga_social_tracking.js
+/gemius/*
+/gemius.js
+/google-analyticator/*
+/library/svy/*/broker.js
 /l.php3?who=$image
-/pagerank.$image
+/mint/?js
+/mmcount3.dll?
+/modules/google_analytics/*
+^name=atatracker^
 /pagerank/*$image
-/p_cnt.fcgi?s=
-/rankem.cgi?action=
+/pagerank.$image
+/pixel.php?
+/quant.js
 /rating.cgi?id=
-! vk.com, vkontakte.ru
+/readcounter.
+/_res/script/image.php?type=$image
 /share.php?act=count&
 /top100.cnt?
-/top100_counter.php?
 /top100/*$domain=~radiorecord.ru|~top100.rambler.ru
-/xcount.php?
-|http://li.ru/*?
-|http://r.i.ua/s?
+/tracker.dll?
+/wp-slimstat/*
+/xgemius.js
+/xtcore.js
+|http://li.ru^$third-party
+|http://pr-cy.$third-party
+|http://r.i.ua^$third-party
+||2o7.net^$third-party
 ||2stat.net^
+||a-counter.kiev.ua^$third-party
+||addthis.com^*.gif?*&CXNID=
+||adlog.com.com^
 ||agropoisk.ru/getbanner.php?
 ||aimp.ru/data/counter.
 ||ajur.info/cgi-bin/ac.fcgi?
+||alexa.com/site_stats/
+||amazonaws.com/ki.js/
 ||amung.us^$third-party
 ||artvit.ru/cypr?
+||assoc-amazon.*^e/ir?t=$image
 ||autodealer.ru/includes/button.php?
 ||bemobile.ua/bug/
 ||bemobile.ua/pagestat/
@@ -123,38 +111,57 @@ _8831.gif
 ||bet365.com/DefaultAff.asp?affiliate=
 ||biblelamp.ru/www/$third-party,image
 ||bigsauron.ru^$third-party
+||bin.clearspring.com^$object
+||bits.wikimedia.org/geoiplookup
+||bkrtx.com^$third-party
 ||blograte.ru^$third-party
+||bluekai.com^$third-party
 ||bname.ru^$third-party
 ||bonbone.ru/bon.php?
+||brightcove.com/1pix.gif?
 ||burstnet.com^$third-party
 ||business.if.ua/common/scripts/getstat.asp?
 ||c.2fly.kz^$third-party
-||c.bigmir.net/?
+||catalog.metka.ru^$third-party
+||c.bigmir.net^
+||c.compete.com^
 ||c.hit.ua^$third-party
-||ch.rbc.ru/click?*
 ||circle.am/service/?
 ||clickaider.com^$third-party
 ||clicktale.net^$third-party
 ||clixpy.com^$third-party
-||c.microsoft.com^$third-party
+||clustrmaps.com^$third-party
+||c.microsoft.com^
 ||cn.procontext.ru^
 ||cnstats.ru^$third-party
 ||comstar.ru/cnstats/$third-party
 ||countby.com^$third-party
+||counters.gigya.com^
 ||countlog.com^$third-party
 ||cpanetwork.ru/tracki.asp?
+||crwdcntrl.net^$third-party
+||csi.gstatic.com^
 ||c.toodoo.ru^$third-party
 ||c.wen.ru^$third-party
 ||cy-pr.com^$third-party
 ||cys.ru/button.png?url=
+||d1ros97qkrwjf5.cloudfront.net^
+||demandbase.com^$third-party
+||dmtracker.com^$third-party
+||dnn506yrbagrg.cloudfront.net^
+||dw.com.com^
 ||eabafou.net^$third-party
 ||elitestat.ru^$third-party
 ||evangelie.ru/top/top100.
-||extreme-dm.com^$third-party,domain=~extremetracking.com
+||evolvemediametrics.com^$third-party
+||exelator.com^$third-party
+||extreme-dm.com^$third-party
 ||extremetracking.com^$third-party
 ||fastgoogle.ru/microcounter/$third-party
 ||faststart.ru^$third-party
+||feedburner.com/~r/
 ||feedjit.com^$third-party
+||feedsportal.com/c/
 ||flagcounter.com^$third-party
 ||forwebz.com^$third-party
 ||freeonlineusers.com^$third-party
@@ -163,13 +170,16 @@ _8831.gif
 ||ft-online.info/img_
 ||fundamentaltop500.com/ft500.php3?sid=
 ||fxmail.ru/rating/$third-party
+||gaug.es^$third-party
 ||gcmsite.ru/?pg=stat&
+||gemius.pl^$third-party
+||geoiplookup.wikimedia.org^
 ||geovisite.com^$third-party
+||geo.yahoo.com^
+||getclicky.com^$third-party
 ||getrank.net^$third-party
 ||gigatop.net/c.php?
 ||gismeteo.*/static/js/xgemius*.js|
-||google-add.com/button/
-||google.com/uds/stats?
 ||gostats.org^$third-party
 ||goto.kz/img.php?$third-party
 ||gws.ru/gwscnt/?
@@ -177,8 +187,6 @@ _8831.gif
 ||hiddenjs.ru^
 ||histats.com^$third-party
 ||hitbox.com^$third-party
-||hit.gemius.pl^
-||hit.meta.ua^
 ||hmn.ru/counterdb.php?
 ||host-tracker.com^$third-party
 ||hotblogs.org.ua^$third-party
@@ -187,12 +195,15 @@ _8831.gif
 ||i.bigmir.net/cnt/
 ||if6.ru/tools/$third-party
 ||ijes.ru^$third-party
+||imageshack.us/scripts/common/is-comscore.js
+||imrworldwide.com^$third-party
 ||imstat.ru/image.php?
 ||imtop.ru^$third-party
 ||inetlog.ru^$third-party
 ||inews.name/top.php?count=
+||inforotor.net/rotor/
 ||inkoutbreak.com/bumper/
-||internet-yadro.com^$third-party
+||intensedebate.com/remotevisit.php?
 ||interzet.ru/log.php?
 ||i.online.ua/catalog/logo/
 ||io.userlook.com^$third-party
@@ -203,52 +214,53 @@ _8831.gif
 ||kz24.net/top/?
 ||libo.ru/rat/img/
 ||lifestats.ru^$third-party
+||livejournal.com^*/pagestats/
 ||lstats.qip.ru^
+||luxup.ru^$third-party
 ||mapyourvisitors.com^$third-party
 ||maulnet.ru/tools/panel/get_counter/
 ||mcount.ru^$third-party
+||media-imdb.com/twilight/?
 ||megaindex.ru/?$third-party
 ||mipagerank.com^$third-party
 ||mobtop.ru^$third-party
+||mozilla.net^*/webtrends/
+||mycounter.ua^$third-party
 ||mypagerank.$third-party
+||mystat-in.net^$third-party
 ||mytopboard.ru^$third-party
 ||mytop-in.net^$third-party
 ||mytrix.com^$third-party
 ||nagval.ru^$third-party
 ||nedstatbasic.net^$third-party
+||ohnorobot.com/verify.pl?
 ||openstat.net^$third-party
+||optimizely.com^$third-party
 ||ournet-analytics.com^$third-party
-||pagestat.mmi.bemobile.ua^
 ||pics.rbc.ru^*/img.*?
+||pi.feedsportal.com^
 ||ping-admin.ru^$third-party
 ||p-rank.org/pr.php?
 ||prchecker.info/getpr.php?
-||pr-cy.catzone.ws/img_*.$image
 ||prcy-info.ru/informer.php?
-||prcy.myws.ru/img/
 ||prcyonline.info/img_
-||pr-cy.ru/img-
-||pr-cy.ru/partner/
-||pr-cy.ru/prcy_$third-party
-||prcy.ru/$third-party
-||prcy.su/img_*
+||prcy.$third-party
 ||proext.com^$third-party
 ||push2check.com^$third-party
 ||quantserve.$third-party
-||radar.imgsmail.ru^
 ||radarurl.com^$third-party
-||rambler.ru/cl?
-||rambler.ru/*/js/counters.
-||rambler.ru/p_stat?
-||rambler.ru/static/top100/tesla/
 ||rang.com.ua^$domain=~rang.com.ua
+||rbc.ru/click?
 ||rb.ondu.ru^$third-party
-||rcounter.rambler.ru^
+||reinvigorate.net^$third-party
 ||revolvermaps.com^$third-party
 ||r.msn.com^
+||rover.ebay.com^$image,object,script
 ||rulink.de^$third-party
 ||rutop.org^$third-party
+||s.agava.ru^
 ||saint-petersburg.ru/i.php?
+||scorecardresearch.com^$third-party
 ||sedotracker.com^$third-party
 ||seemore.ru^$third-party
 ||seliweb.com/info/nole.html?
@@ -261,23 +273,29 @@ _8831.gif
 ||sitelog.forsite.ru^$third-party
 ||sitemeter.com^$third-party
 ||site-rank.com^$third-party
+||skypeassets.com^*/wanalytics/
+||snippets.mozilla.com^
 ||socratos.net^$third-party
+||spylog.com^$third-party
+||spylog.ru^$third-party
 ||spywap.net/ct/
-||stat24.com^$third-party
-||stat24.com.ua^$domain=~stat24.com.ua
+||stat1.ukr.net^
+||stat24.$third-party
 ||stat70.ru/gather/?
 ||statcounter.com^$third-party
 ||statistics.wibiya.com^$third-party
 ||stats.indextools.com^
+||stats.internet-yadro.com^
 ||stat.su^$third-party
+||stats.wordpress.com^
 ||statuncore.com^$third-party
 ||stcounter.com^$third-party
 ||stts.rbc.ru^
-||tbe.tom.ru/?
+||tbe.tom.ru^$third-party
 ||t.delfi.ua/_
 ||thedownloadplanet.com/tools/supplemental.php
 ||tic-pr.$third-party
-||tns-counter.ru^$third-party,~object-subrequest
+||tns-counter.ru^$third-party
 ||top100.ezar.ru^$third-party
 ||top100.sec.ru/fscounter.cfm?
 ||top10.vl.ru*/hh.hit^
@@ -285,10 +303,13 @@ _8831.gif
 ||topshops.com.ua/images/buttons/
 ||toptj.com^$third-party
 ||toptracker.ru/details.php?id=
+||trafit.com^$third-party
+||triggertag.gorillanation.com^$third-party
+||tynt.com^$third-party
 ||uarating.com^$third-party
 ||uptime.ru^$third-party
 ||url-sub.ru^$third-party
-||video-stats.video.google.
+||utro.ru/utro_images/*empty.gif?
 ||vk.com/videostats.php?
 ||waplog.net^$third-party
 ||wapstats.net^$third-party
@@ -299,7 +320,9 @@ _8831.gif
 ||webanalizer.ru^$third-party
 ||weblog.com.ua^$domain=~weblog.com.ua
 ||webtrends.com^$third-party
+||webtrendslive.com^$third-party
 ||webvisor.$third-party
+||wikia-beacon.com^$third-party
 ||ws.md/c.png?
 ||wtools.biz/sample2.php?
 ||xiti.com^$third-party
@@ -307,9 +330,46 @@ _8831.gif
 ||youtorrents.net/button.php?
 ||zero.kz/c.php?
 !
-||genius.ru/i/*-logo.gif
+! Google
+/__utm.gif
+/generate_204
+||google-add.com/button/
+||google.*/client_204?
+||google.com/uds/stats?
+||google.*/gen204?
+||google.*/gen_204?$~xmlhttprequest
+||googleusercontent.com/tracker/
+||id.google.*/verify/*.gif
+||s2.youtube.com^
+||s.youtube.com^
+||video-stats.video.google.
+||www.google.*/imgevent?$script
+||www.google.*/imghover?$image
+||youtube.com/gen_204?
+||youtube.com/get_video?
+||youtube.com/player_204?
+||youtube.com/ptracking?
+||youtube.com/s?
+||youtube.com/set_awesome?
+||youtube-nocookie.com/gen_204?
+||youtube-nocookie.com/robots.txt?
 !
-! Форумы ucoz.net
+! Mail.ru
+||mail.ru/gstat?
+||mail.ru/ok?ok=
+||mail.ru/share_count?
+||ok.mail.ru^
+||radar.imgsmail.ru^
+!
+! Rambler
+||rambler.ru/cl?
+||rambler.ru/*/js/counters.
+||rambler.ru/p_stat?
+||rambler.ru/static/top100/tesla/
+||rcounter.rambler.ru^
+||scnt.rambler.ru^
+!
+! Ucoz.net
 ||a.ucoz.net^
 ||at.ua/stat/
 ||clicks.moy.su^
@@ -317,13 +377,7 @@ _8831.gif
 ||ucoz.*/stat/
 ||ucoz.*/main/?a=ustat;
 !
-! Mail.RU
-||mail.ru/gstat?
-||mail.ru/ok?ok=
-||mail.ru/share_count?
-||ok.mail.ru^
-!
-! Яndex
+! Yandex
 ||bs.yandex.
 ||button.blogs.yandex.
 ||clck.yandex.ru^$~other
@@ -331,29 +385,4 @@ _8831.gif
 ||metrika.yandex.$third-party
 ||yabs.yandex.*/count/$third-party
 ||yandex.ru/click/
-!
-! Правила заимствованные из русской части подписки fanboy'я и ещё не разобранные
-! https://secure.fanboy.co.nz/fanboy-tracking-intl.txt
-/fstat.swf
-/impression.cgi?
-/ixbtstat/*
-/mmcount3.dll?
-/ncounter.pl?
-/readcounter.
-/tag_counter/?
-/tracker.dll?
-||1link.ru^$third-party
-||a-counter.kiev.ua^$third-party
-||bigler.ru/bsystem/
-||c.domik.net^
-||catalog.metka.ru^$third-party
-||chance.ru/c/$image
-||rutvit.ru/?identifier
-||search.rg.ru/rgrucounter
-||stat1.ukr.net^
-||stat2.mc2.ru^$third-party
-||stat24.meta.ua^$third-party
-||t.pusk.ru^$third-party
-||tbe.tom.ru^$third-party
-||theplace.ru^*/vintage_
-||utro.ru/utro_images/*empty.gif?
+||yandex.ru/metrika/
