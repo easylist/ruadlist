@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: qXdyqoPEJ9FWCgydGhAvsw
-! Last modification time (GMT): 2012.11.28 16:33
+! Checksum: oNPbh0YKf7VDqdGnSCLVQw
+! Last modification time (GMT): 2012.11.28 20:34
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -341,12 +341,14 @@ _banner.gif
 /banners/*_*x*?
 /cgi-bin/banner/*
 /cgi-bin/banners/*
+/files/banner/*
 /free/banners/*
 /images/ban/*
 /images/banners/*
 /images/bn/*
 ! $domain=gts.tv|ntsk.ru|orsk.ru
 /images/bnz/*
+/images/partners/*
 /images/rek/*
 /images/rekl/*
 /img/bn/*
@@ -369,13 +371,12 @@ _banner.gif
 .richbanner.
 /shared/promos/*
 /showbanner.
-! DataLife Engine forum module /engine/modules/
 /sprava_baner/*
 /upload/banners/*
 /upload/bx/*
 /upload/rk/*
 /uploads/slider/col$script
-! domain=3434.ru|kchetverg.ru
+/userfiles/banners/*
 /wp-content/imgrekl/*
 ! - Тизеры --------------------------------------------------------------------
 !#tizer.bookmark
@@ -1537,7 +1538,6 @@ _tizers.
 ||statcontent.ru^$third-party
 ||static.terrhq.ru^
 ||stdate.ru^
-||steam-account.ru/files/banner/
 ||steam-sell.ru^$third-party
 ||steamaccs.com^$third-party
 ||steambuy.com^$third-party
@@ -1745,19 +1745,26 @@ _tizers.
 !
 ! [unknown] IP=68.178.232.99
 ||moderator-net.info^
+||networkserf.info^
 ||ping-moderator.info^
 ||ping-proxy.info^
 ||pop-proxy.info^
 ||tripadv.info^
 ||updouble.info^
 ! additional IP=188.64.174.56
+! keyword: favicon
 ||chikano.info^
+||nine.tv-best.net^
 !
 ! [unknown] IP=188.120.243.235
 ! .in/n1/js.php?i=
 ||sense-ns.in^
 ||sense-ok.in^
 ||wap-dns.in^
+!
+! [unknown] Размещается на ворохе субдоменов всяких Dynamic DNS.
+/advjump/*
+||status.changeip.name^
 !
 ! 1Under.ru (все сидят на IP 89.208.145.156)
 ! http://xml.ssdsandbox.net/dnslookup-dnsdb?name=89.208.145.156
@@ -2961,7 +2968,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 9sx.ru##MARQUEE[scrollamount]
 !
 !A
-adultmanga.ru##.baner
+adultmanga.ru##.top_ba
 adultmult.ru/630x200/
 !$domain=adverman.com|adverman.ua
 ||adverman.*/banners/
@@ -2969,40 +2976,29 @@ advesti.ru##IMG[width="170"][height="340"][border="0"]
 advesti.ru##IMG[width="570"][height="80"][border="0"]
 ||agronews.ru/images/*.gif
 ||agronews.ru/images/$object
-ag.ru###linkker1
+ag.ru##A[href^="http://www.ag.ru/go/outer_top/"]
 ag.ru###newlogo1
-||ag.ru/wot_
 ||agsat.com.ua/beuty/
 aif.ru##.adwrapper
 ||ais.com.ua/usersimage/banners/
 akak.ru##.bnrs
-||aldebaran.ru/images/recl/
 alive-ua.com##.col_l_b > TABLE:nth-of-type(3)
 alive-ua.com##.col_l_b > TABLE:nth-of-type(n+5)
-||all-library.com^*/promo/
-all-radio.ru##NOINDEX > TABLE[width="500"][align="center"]
-||all-yoga.ru/files/banner/
-||all-yoga.ru/userfiles/banners/
 ||all4nod.ru/files/$script
-allbest4free.ru##NOINDEX
+allboxing.ru##DIV[id^="block-views-banner_"]
 allboxing.ru##NOINDEX > A[rel="nofollow"][target="_blank"]
+||allboxing.ru/files/*.*.*/
+||allboxing.ru/files/$object
 ||allsat.biz/ban_
 altapress.ru##.mrkt-off
 anekdot.ru##.promo_head
 ||anekdot.ru/i/gallery/
-||anime-zone.ru/inc/600x90.js
-||anime-zone.ru/inc/pp/
-animelayer.ru##.headbrend
-||animelayer.ru/img/urbrend.
+||animechan.ru/fun/
 ||animelayer.ru^$object
 animenfo.com###topright
 ||animenfo.com/*/ads/
 ||antichat.ru/bn/
-||antistarforce.com/*banner
-anwiza.com###pop
-anwiza.com###popdim
 ||ap.by/up/banner/
-||apn-spb.ru/images/_banners
 apple-russia.ru###topbanner
 apple-russia.ru##.adv-main-right
 apple-russia.ru##.adv_small
@@ -3010,28 +3006,26 @@ apple-russia.ru##.bottom_adv
 apple-russia.ru##.left_adv
 appleinsider.ru##.a-position
 appleinsider.ru##.b-position
-appleinsider.ru##[id^="swiffycontainer"]
-||appstudio.org/banners/
+appleinsider.ru##A[href^="http://li.ru/go?"]:not([href*=".apple.com%2F"])
+appstudio.org##DIV[style^="width:500px;"]
 ||aquafanat.com.ua/forum/iUshki/
-||argumenti.ru/images/partners/
 ariom.ru##A > IMG[width="160"][height="120"]
 ||ariom.ru/img/$object
-arshavin.eu##NOINDEX > .txtlink
-arshavin.eu##A[href="http://www.taxi7000000.ru/about.html"]
 arshavin.eu##A[href="http://www.rocklandshop.spb.ru/"]
-||arshavin.eu/images/bnew_
 artinvestment.ru###center > DIV[style="border: 1px solid black"]
 artinvestment.ru##.left-col > .info-block:not(:last-of-type)
+astromeridian.ru##BODY > NOINDEX
 astromeridian.ru##[id^="blok_verh_rekl"]
+astromeridian.ru###menuright > NOINDEX
 ||astromeridian.ru/assets/images/reklama2/
 athlete.ru##A[target="_blank"] > IMG[width="120"][border="0"][style]
 athlete.ru##A[target="_blank"] > IMG[height="90"][border="0"][alt]
+athlete.ru##IMG[width="234"][height="234"]
 forum.athlete.ru##.nopad
 ||athlete.ru/pic/$object
 ||ati.su/images/adv_ban/
 autoclub-cerato.ru##.advert
-||autoclub-cerato.ru/forum/ubar/
-||neova.auto.ru^
+||auto.ru/get.php?args=
 autoua.net###footer-holding
 ||avata.ru/windows.gif
 ||avata.ru/images/240x400.png
@@ -3331,7 +3325,6 @@ forum-profit.ru##A[href^="vB.Sponsors/link.php?f="]
 forum-profit.ru###threadslist > TBODY:not([id]):last-child
 forum-profit.ru##[id^="edit"] > [id^="post"]:not(:first-child):last-child
 forum-profit.ru##[id^="edit"] > .tborder:not([id])
-||forum-profit.ru/images/partners/
 ||forum-profit.ru/images/nordfx/
 ||forumkiev.com/MEDimg/
 forums.drom.ru##.menu + * + .tborder
@@ -4155,7 +4148,6 @@ softru.ru##.left_block_bg_container + TD TD[width="340"]:first-child
 ||sonikelf.ru^$object
 soccer.ru##TD[style="width: 185px; text-align: center;"]>OBJECT
 sotovik.ru##.right_zone > #banner
-||sotovik.ru/files/banner/
 ||sovsport.ru/ib/
 !spa.ucoz.ua
 ||ucoz.net/cgi/uutils.fcg?a=ucozads_isoff&s=spa.ucoz.ua
@@ -4339,7 +4331,6 @@ vokrugsveta.ru###interchange
 ||vorum.ru/files/mpix/
 voxpopuli.kz###brand_logo
 ||voxpopuli.kz/css/site/images/*/background_
-||voxpopuli.kz/userfiles/banners/
 ||vozmi.net/img/*150x250
 vp.donetsk.ua##NOINDEX > A[rel="nofollow"] > IMG[width="255"]
 vremenno.net##.sidebarBlock:first-child
