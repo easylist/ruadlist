@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: jxx/5oLR1IcmNbuXSaKSjw
-! Last modification time (GMT): 2012.12.02 13:08
+! Checksum: i880QRx7mekDQ0mpKauAtQ
+! Last modification time (GMT): 2012.12.02 15:23
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -2002,7 +2002,6 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ! Direct/ADVERT
 /show.cgi?adp=$domain=~novoteka.ru
 ||adnetwork.pro^
-||adnews.rambler.ru^$third-party
 ||directadvert.ru^$third-party
 ||nnn.novoteka.ru^$third-party
 ||vpered.ru^$third-party
@@ -2985,10 +2984,6 @@ advesti.ru##IMG[width="170"][height="340"][border="0"]
 advesti.ru##IMG[width="570"][height="80"][border="0"]
 ||agronews.ru/images/*.gif
 ||agronews.ru/images/$object
-ag.ru##A[href^="http://www.ag.ru/go/outer_top"]
-ag.ru###newlogo1
-|http://www.ag.ru/*/bott
-|http://www.ag.ru/*/topp
 ||agsat.com.ua/beuty/
 aif.ru##.adwrapper
 ||ais.com.ua/usersimage/banners/
@@ -4632,15 +4627,22 @@ turizm.ngs.ru###logo-menu
 !
 ! Rambler.RU и их проекты
 ||ad.rambler.ru^
+ag.ru##A[href^="http://www.ag.ru/go/outer"]
+ag.ru###newlogo1
+|http://www.ag.ru/*/bott
+|http://www.ag.ru/*/topp
 autorambler.ru##.ad-item-paid
 autorambler.ru##.banner-board
 autorambler.ru##.bannerInside
 ferra.ru##.advertbox
+games.kanobu.ru##.branding
 kanobu.ru##.banner
 kanobu.ru##.b-top-banner
 kanobu.ru###logline_banner
+kanobu.ru###logline_link
 kanobu.ru##.wide-banner-place
 ||kanobu.ru/branding/
+||kanobu.ru/gertrude/
 lenta.ru##.b-banner-line
 nova.rambler.ru##[class^="b-podmes_"]
 ||price.ru/images/krt/
@@ -4649,9 +4651,11 @@ rambler.ru##.advertising
 rambler.ru##.adWords
 rambler.ru##.b-advertising
 rambler.ru##.b-article-aside__banner
+rambler.ru##.b-block-travels
 rambler.ru##.bnr
 rambler.ru##DIV[class^="b_banner_"]
 rambler.ru##.inbann
+rambler.ru###sidekickButton
 rambler.ru##.tp-bnpl
 ||rambler.ru^*.ban?
 ||rambler.ru/export/banners.
@@ -4659,6 +4663,7 @@ rambler.ru##.tp-bnpl
 ||rambler.ru/upl/ad/
 ||rambler.ru/upl/clients/
 ||rambler.ru/upl/partners/
+tv.rambler.ru##.h-promo
 weather.rambler.ru###prices
 weather.rambler.ru###weather-ban-300
 !
