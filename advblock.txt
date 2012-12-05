@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 8qTsQYdl79fqPU+HsP9b+A
-! Last modification time (GMT): 2012.12.05 06:52
+! Checksum: RPTZYzm8uD2VkHaCnxCMHg
+! Last modification time (GMT): 2012.12.05 09:08
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -2851,6 +2851,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 !
 ! VKnotifier
 ~vk.com##DIV[id$="notifiers_wrap"]
+~vk.com##.adf_notifier_baloon_wrap
 /code/click.php?id=$image,~image,popup
 /mp3player.swf?file=*/bb1.mp3
 /mp3player.swf?file=*/bb2.mp3
@@ -4452,6 +4453,8 @@ zh24.com###warning
 ||zh24.com/molodejj/
 zhmak.info##TD[width="180"]:first-child + TD[width="5"] + TD > :not([class="news"])
 ||zloy.im^$domain=zloy.bz
+||doom-place.info^$script,domain=znayka.net
+||doomsite.info^$script,domain=znayka.net
 znaikak.ru##.blockLinks
 zol.ru##TABLE[style="table-layout:fixed; border-collapse:collapse"]
 ||zol.ru/noteb/
