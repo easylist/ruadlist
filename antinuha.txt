@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: MC/8idJbB/cIqZv1lC9mwQ
-! Last modification time (GMT): 2012.12.07 10:42
+! Checksum: k2+b8gc8+Ny0IuD1/qnKqQ
+! Last modification time (GMT): 2012.12.07 11:52
 ! Expires: 3 days (подписка обновляется автоматически каждые 3 дня)
 ! Homepage: http://ruadlist.googlecode.com/
 ! Дополнительная подписка фильтров RU AntiPron List
@@ -32,6 +32,19 @@
 /(?:nas[iy]l|online(?:p(?:or|ro)n|trax)|p(?:or(?:evo|nphoto)|layboy|enthouse|izd[aeiuy]|rostitu)|razvrat|seks|(?:k|p|s)iski|tra[hx]nu|xvideo)/
 /(?:eropic|p(orn.{0,3}|utan.{0,2})|sex.?|xxx)[\.-]/
 /[-_=/.](?:dev(?:4|ch)[eo]n(?:k|ok)|e(?:bony|roti)|nude|p((?:or|ro)n|ro?:_eto\/)|порн|sex[\d/-])/
+/eroklassn|individ[uy]al(?:och)?k[ai]|orgazm|porn(?:girl|ofiles)|sexygirls|supertra[hx]|tra[hx]super/
+/xxx(?:clip|girl|lady|online)/
+! Вместо блока с || и короткими правилами
+/^(?:ht|f)tps?\/\/:(?:[a-z0-9-]+\.)*(?:allxxx|d(?:e[vw](?:chenok|ki|o(?k|4ki|chk)|ushk)|ro4)|eropic|ero[.-st]|myxxx|playgirl|(?:hot|mnogo|my|net|ru)porn|poshalim|orgasm|putan|se(?:kc|x)|tra[hx]|xxx)/
+/category(?:=ero|.*porn|=xxx)/
+category/ero/
+category/girl/
+category/girls/
+category/sensuality/
+/эроти|%D1%8D%D1%80%D0%BE%D1%82%D0%B8/
+/-xxx|xxx-/
+/xxx/*
+wallpapers/girls/
 ##A[href*="adult"]
 ##A[href*="cekc"]
 ##A[href*="deffki"]
@@ -152,80 +165,6 @@
 ##A[href*="xxxlady"]
 ##A[href*="xxxonline"]
 !=======================
-category/ero/
-category/girl/
-category/girls/
-category/sensuality/
-! Следующий блок надо собрать в регулярки.
-tp://allxxx
-tp://devki
-tp://devok
-tp://dro4
-tp://eropic
-tp://eros
-tp://erot
-tp://myporno
-tp://netporn
-tp://orgasm
-tp://putan
-tp://ruporn
-tp://sekc
-tp://sex
-tp://trah
-tp://trax
-tp://www.allxxx
-tp://www.defki
-tp://www.devki
-tp://www.devok
-tp://www.ero-
-tp://www.eropic
-tp://www.eros
-tp://www.erot
-tp://www.myporno
-tp://www.netporn
-tp://www.orgasm
-tp://www.putan
-tp://www.ruporn
-tp://www.sekc
-tp://www.sex
-tp://www.trah
-tp://www.trax
-tp://www.xxx
-tp://xxx
-||devchenok
-||devki
-||devo4ki
-||devochk
-||devstveni
-||devushk
-||dewchenk
-||dewochki
-||ero.
-||ero-
-||hotporno
-||mnogoporno
-||myxxx
-||playgirl
-||poshalim
-||sex
-||trah
-||trax
-/эроти|%D1%8D%D1%80%D0%BE%D1%82%D0%B8/
-/-xxx|xxx-/
-/xxx/*
-/category(?:=ero|.*porn|=xxx)/
-eroklassn
-/individ[uy]al(?:och)?k[ai]/
-orgazm
-porngirl
-pornofiles
-sexygirls
-supertrah
-supertrax
-trahsuper
-traxsuper
-wallpapers/girls/
-/xxx(?:clip|girl|lady|online)/
 ! Ещё неполный и неразобранный блок правил для адресов с кодировкой "кириллица Windows-1251". Встречал такое неоднократно. Во многих из этих правил первый знак шестнадцатеричного кода первой в слове буквы и % перед ним удалены, чтобы учитывать и верхний, и нижний регистр.
 
 ! дроч
