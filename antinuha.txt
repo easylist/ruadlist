@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: 3XHE7/vwjeubLKEAAO5iYw
-! Last modification time (GMT): 2012.12.08 16:39
+! Checksum: Myy/UA6hpRSaG2pRUXWESA
+! Last modification time (GMT): 2012.12.10 07:27
 ! Expires: 3 days (подписка обновляется автоматически каждые 3 дня)
 ! Homepage: http://ruadlist.googlecode.com/
 ! Дополнительная подписка фильтров RU AntiPron List
@@ -28,10 +28,10 @@
 /(?:(?:eroti|p(?:or|ro)n|se(?:x|ks)|trah|xxx).*){2,}/
 /(?:eroti|p(?:or|ro)n|seks|tra[hx]|xxx).*?(?:fot(?:ok?|ki)|film|video|tube)/
 /(?:fot(?:ok?|ki)|film|video|tube).*?(?:eroti|p(?:or|ro)n|seks|tra[hx]|xxx)/
-/(?:adult|blud|ceks|d((?:e(?:ff|v|w)(?:axi|k|o(?:k|chki)|stveni(?:c|ts)|chonk)[ai])|osuk|ro(?:4|ch))|e(?:bemsa|ro(?:ti|vid))|h(?:enta[ijy]|ustler)|incest|(?:[^p]r|[^r])intim|lesbi|moshonka)/$domain=~fintimes.km.ru
+/(?:adult|blud|ceks|d((?:e(?:ff|v|w)(?:axi|k|o(?:k|chki)|stveni(?:c|ts)|(?:4|ch)[eo]n(?:k|ok)))|osuk|ro(?:4|ch))|e(?:bemsa|ro(?:ti|vid))|h(?:enta[ijy]|ustler)|incest|(?:[^p]r|[^r])intim|lesbi|moshonka)/$domain=~fintimes.km.ru
 /(?:nas[iy]l|online(?:p(?:or|ro)n|trax)|p(?:or(?:evo|nphoto)|[ao]rnu[hx]a|layboy|enthouse|izd[aeiuy]|rostitu)|razvrat|s(?:eks|perma)|(?:k|p|s)iski|tra[hx]nu|xvideo)/
 /(?:eropic|p(orn.{0,3}|utan.{0,2})|sex.?|xxx)[\.-]/
-/[-_=/.](?:dev(?:4|ch)[eo]n(?:k|ok)|e(?:bony|roti)|nude|p((?:or|ro)n|ro?:_eto\/)|порн|sex[\d/-])/
+/[\W\d_](?:e(?:bony|roti)|nude|p((?:or|ro)n|ro_?eto)|порн|sex[\W\d_]/
 /eroklassn|individ[uy]al(?:och)?k[ai]|orgazm|porn(?:girl|ofiles)|sexygirls|supertra[hx]|tra[hx]super/
 /xxx(?:clip|girl|lady|online)/
 ! Вместо блока с || и короткими правилами
@@ -63,7 +63,7 @@ wallpapers/girls/
 ##A[href*="hentaj"]
 ##A[href*="hentay"]
 ##A[href*="hustler"]
-##A[href*="intim"]:not([href*="fintimes"])
+##A[href*="intim"]:not([href*="fintimes"]):not([href*="printim"])
 ##A[href*="incest"]
 ##A[href*="individualki"]
 ##A[href*="individualochka"]
@@ -501,16 +501,30 @@ narodclub.net##TABLE[width="200"]:nth-of-type(3)
 ##[title="БОЛЬШИЕ ЧЛЕН"]
 ##[title="Большие член"]
 ##[title="большие член"]
-##[alt^="ГЕЕ"]
-##[alt*=" ГЕЕ"]
-##[alt^="Гее"]
-##[alt*=" Гее"]
-##[alt*=" гее"]
-##[title^="ГЕЕ"]
-##[title*=" ГЕЕ"]
-##[title^="Гее"]
-##[title*=" Гее"]
-##[title*=" гее"]
+##[alt~="ГЕЕВ"]
+##[alt~="Геев"]
+##[alt~="геев"]
+##[title~="ГЕЕВ"]
+##[title~="Геев"]
+##[title~=" геев"]
+##[alt~="ГЕЕМ"]
+##[alt~="Геем"]
+##[alt~="геем"]
+##[title~="ГЕЕМ"]
+##[title~="Геем"]
+##[title~=" геем"]
+##[alt~="ГЕЮ"]
+##[alt~="Гею"]
+##[alt~="гею"]
+##[title~="ГЕЮ"]
+##[title~="Гею"]
+##[title~=" гею"]
+##[alt~="ГЕЯ"]
+##[alt~="Гея"]
+##[alt~=" гея"]
+##[title~="ГЕЯ"]
+##[title~="Гея"]
+##[title~=" гея"]
 ##[alt~="ГЕИ"]
 ##[alt~="Геи"]
 ##[alt~="геи"]
