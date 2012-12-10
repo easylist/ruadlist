@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: JqitA5+BGLzCqjrsbjqK0g
-! Last modification time (GMT): 2012.12.10 13:35
+! Checksum: wkmbclNC0N41c2gZ7hqBtQ
+! Last modification time (GMT): 2012.12.10 17:19
 ! Expires: 3 days (подписка обновляется автоматически каждые 3 дня)
 ! Homepage: http://ruadlist.googlecode.com/
 ! Дополнительная подписка фильтров RU AntiPron List
@@ -42,7 +42,6 @@ category/ero/
 category/girl/
 category/girls/
 category/sensuality/
-/эроти|%D1%8D%D1%80%D0%BE%D1%82%D0%B8|=порн|=%D0%BF%D0%BE%D1%80%D0%BD/
 /-xxx|xxx-/
 /xxx/*
 wallpapers/girls/
@@ -167,14 +166,16 @@ wallpapers/girls/
 ##A[href*="xxxonline"]
 !=======================
 ! Ещё неполный и неразобранный блок правил для адресов с кодировкой "кириллица Windows-1251". Встречал такое неоднократно. Во многих из этих правил первый знак шестнадцатеричного кода первой в слове буквы и % перед ним удалены, чтобы учитывать и верхний, и нижний регистр.
-
+/дроч|4%F0%EE%F7%|%D0%94%D1%80%D0%B0%D1%87(?!D1%91%D0%BD)|+ебет|%2B%E5%E1%E5%F2|%2B%C5%E1%E5%F2|+%D0%B5%D0%B1%D0%B5%D1%82|ебёт|8%E1%E5%F2|[\W\d_](?:порн|F%EE%F0%ED|%D0%BF%D0%BE%D1%80%D0%BD)|эроти|%D1%8D%D1%80%D0%BE%D1%82%D0%B8/
 ! дроч
-4%F0%EE%F7%
+##A[href*="%D0%94%D1%80%D0%B0%D1%87"]
+##a[href*="%d0%94%d1%80%d0%b0%d1%87"]
 ##A[href*="4%F0%EE%F7%"]
 ##a[href*="4%f0%ee%f7%"]
-! +ебет+
-%2B%E5%E1%E5%F2%2B
-%2B%C5%E1%E5%F2%2B
+http://yaca.yandex.ru/yca/cat/Entertainment/?text=%D0%B7%D0%BE%D0%BE%D0%BF%D0%BE%D1%80%D0%BD%D0%BE+%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C++%D0%BA%D0%BE%D0%BD%D1%8C+%D0%B5%D0%B1%D0%B5%D1%82+
+! +ебет
+##a[href*="+%D0%B5%D0%B1%D0%B5%D1%82"]
+##a[href*="+%d0%b5%d0%b1%d0%b5%d1%82"]
 ##A[href*="%2B%E5%E1%E5%F2%2B"]
 ##A[href*="%2B%C5%E1%E5%F2%2B"]
 ! ебёт
@@ -197,12 +198,39 @@ E%F2%EA%F0%EE%E2%E5%ED%ED
 4%E8%F1%F2%E8%ED
 ##A[href*="4%E8%F1%F2%E8%ED"]
 #a[href*="4%e8%f1%f2%e8%ed"]
-! порн, кроме ссылок на "опорн" и "спорн" (надо переделать)
-F%EE%F0%ED
-##A[href*="F%EE%F0%ED"]:not([href*="E%EF%EE%F0%ED"]):not([href*="F%EE%F0%ED"])
-##a[href*="f%ee%f0%ed"]:not([href*="e%ef%ee%f0%ed"]):not([href*="f%ee%f0%ed"])
-##A[href*="=%D0%BF%D0%BE%D1%80%D0%BD"]:not([href*="%D0%BE%D0%BF%D0%BE%D1%80%D0%BD"]):not([href*="%D1%81%D0%BF%D0%BE%D1%80%D0%BD"])
-##a[href*="=%d0%bf%d0%be%d1%80%d0%bd"]:not([href*="%d0%be%d0%bf%d0%be%d1%80%d0%bd"]):not([href*="%d1%81%d0%bf%d0%be%d1%80%d0%bd"])
+ ! порн после знака
+##A[href*="=F%EE%F0%ED"]
+##a[href*="=f%ee%f0%ed"]
+##A[href*="+F%EE%F0%ED"]
+##a[href*="+f%ee%f0%ed"]
+##A[href*="-F%EE%F0%ED"]
+##a[href*="-f%ee%f0%ed"]
+##A[href*="?F%EE%F0%ED"]
+##a[href*="?f%ee%f0%ed"]
+##A[href*="/F%EE%F0%ED"]
+##a[href*="/f%ee%f0%ed"]
+##A[href*="&F%EE%F0%ED"]
+##a[href*="&f%ee%f0%ed"]
+##A[href*="#F%EE%F0%ED"]
+##a[href*="#f%ee%f0%ed"]
+##A[href*="_F%EE%F0%ED"]
+##a[href*="_f%ee%f0%ed"]
+##A[href*="=%D0%BF%D0%BE%D1%80%D0%BD"]
+##a[href*="=%d0%bf%d0%be%d1%80%d0%bd"]
+##A[href*="+%D0%BF%D0%BE%D1%80%D0%BD"]
+##a[href*="+%d0%bf%d0%be%d1%80%d0%bd"]
+##A[href*="-%D0%BF%D0%BE%D1%80%D0%BD"]
+##a[href*="-%d0%bf%d0%be%d1%80%d0%bd"]
+##A[href*="?%D0%BF%D0%BE%D1%80%D0%BD"]
+##a[href*="?%d0%bf%d0%be%d1%80%d0%bd"]
+##A[href*="/%D0%BF%D0%BE%D1%80%D0%BD"]
+##a[href*="/%d0%bf%d0%be%d1%80%d0%bd"]
+##A[href*="&%D0%BF%D0%BE%D1%80%D0%BD"]
+##a[href*="&%d0%bf%d0%be%d1%80%d0%bd"]
+##A[href*="#%D0%BF%D0%BE%D1%80%D0%BD"]
+##a[href*="#%d0%bf%d0%be%d1%80%d0%bd"]
+##A[href*="_%D0%BF%D0%BE%D1%80%D0%BD"]
+##a[href*="_%d0%bf%d0%be%d1%80%d0%bd"]
 ! сисек
 %F1%E8%F1%E5%EA
 ##A[href*="%F1%E8%F1%E5%EA"]
