@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: pcfY+k1bcwb1tfmNYh5PUg
-! Last modification time (GMT): 2012.12.18 06:44
+! Checksum: 3vrK+HITD7fu8dFlExN08Q
+! Last modification time (GMT): 2012.12.18 10:36
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -3513,7 +3513,8 @@ ifun.ru##.ad
 igoods.com.ua##.bens
 igromania.ru##.bannerplace
 ||igromania.ru/*/banners/
-iguides.ru##A[href*="/www/delivery/"]:not([href*=".iguides.ru%2F"]):not([href*=".apple.com%2F"])
+iguides.ru##[class^="branding"] > A[target="_blank"]
+||iguides.ru^*-banner.indexed.
 ||ihead.ru/offers/
 imgfiles.ru##[id^="bn"]>*
 ||imgix.ru/*.js|
@@ -5012,7 +5013,6 @@ mts.ru#@#.wide-ad
 @@||zeiss.com/content/*/teaser$domain=zeiss.com
 !#detect.bookmark
 aqa.ru#@#div[id^="div-gpt-ad-"]
-@@||iguides.tv/scriptig/www/delivery/$script,domain=iguides.ru
 @@||kino-v-online.ru^$elemhide
 @@||kinomafia.com^$elemhide
 @@||liverail.com^*/admanager.swf|$domain=own3d.tv
