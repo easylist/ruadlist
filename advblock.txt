@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: MR/k7/+mL0L9sYDPLXvaMw
-! Last modification time (GMT): 2012.12.22 19:19
+! Checksum: njfY/H4CPYIQXbWEA5DdEQ
+! Last modification time (GMT): 2012.12.22 19:28
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -2046,6 +2046,11 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||ero.ru^$third-party,domain=~vpets.ru
 ||ero-ru.net^$third-party
 ||vboys.ru^$third-party
+!
+!
+###gaminator
+/gaminator-
+||x8.net/2/$domain=torrentino.com|unionpeer.org
 !
 ! KinoPromoBase
 /get_banner_flash.*&shop=
@@ -4134,11 +4139,8 @@ santikov.net##.full_story + CENTER
 ||sc2tv.ru:8080/show/$subdocument
 season.ru##[class^="bnnr_bx_"]
 seasonvar.ru##A[href*="/promo."]
-||cdn.seasonvar.ru/images/bs_
-||seasonvar.ru/images/branding
 seasonvar.ru##.main-center-block > DIV:not([class="head-block"]):not([class="footer"]):not([class="content-center"]):not([class="content-center2"])
-||seasonvar.ru/images/*body
-||seasonvar.ru/images/*gaminator
+||seasonvar.ru/swf/
 securitylab.ru###brleft
 ||seedoff.net/jscript/xbtit.js
 ||seedoff.net/partners/
@@ -4275,9 +4277,6 @@ topwar.ru##A[href^="http://cpm.worldoftanks.com?code="]
 torg.ua##.ad_1000x90
 torg.ua##.ad_240x400
 ||torrent-games.net/flash/flashgames/
-torrentino.com##A[href^="http://luckiestclick.com/goto."]
-||torrentino.com/assets/com/gaminator-
-||x8.net/2/$domain=torrentino.com
 torrents.net.ua###daos
 torrentszona.com##.content > P + NOINDEX
 ||torrentszona.com/afisha/banner_
