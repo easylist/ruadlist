@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: zxI4H9T6/zi94l66V4AWvQ
-! Last modification time (GMT): 2012.12.22 20:41
+! Checksum: Kwpk8gMVx+iaGBKMCa1IFg
+! Last modification time (GMT): 2012.12.22 20:50
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -169,17 +169,26 @@
 !
 ! = Общие CSS-фильтры =========================================================
 !#css.bookmark
+##.adbckgrnd
 ###ads_iframe
-~slider.kz###adv
-~mobile-review.com###advblock
+##.adv
+###adv
 ##.advblock
-###advertblock
+###advblock
 ##.advertblock
+###advertblock
 ###AFF_popup
 ##.ammblock
-! Общее правило для доменов promodj.ru (forum.mozilla-russia.org/viewtopic.php?pid=518991#p518991)
+##.b-banner
+##.bc-adv
+##.bc_adv_container
+##BODY[onload="popupInit();"] > #popUp
 ###branding_click
 ###cyberinfrm_18
+##DIV[id^="DIV_NNN_"]
+##DIV[id^="PC_Teaser_Block"]
+##DIV[id^="rtn4p"]
+##DIV[id^="Teaser_Block"]
 ###eropromo_icq
 ###export_test_inboobs
 ###floatyContent
@@ -188,44 +197,31 @@
 ###girlsBar
 ###h_24x4
 ###im_popupDiv
+##.madv
 ###magnaInformer
 ###marketgid
+~marketgid.com,~marketgid.ru,~marketgid.ua,~mgid.com##DIV[id^="MarketGid"]
+##.mc_cars_row
+##.mediaget
+##.merc_title
+##.merc_title_2
+##.module-one-search
+##.modul-search
 ###novem_billboard
 ###PopWin[onmousemove]
 ###radeant
-###SR_PopOver
-###SR_PopOverModalBackground
-###zhlobam_net_informer_console
-##.adbckgrnd
-##.adv
-~airmediacenter.com##.b-banner
-##.bc_adv_container
-##.bc-adv
-##.madv
-##.mc_cars_row
-##.modul-search
-##.module-one-search
 ##.reklam
 ##.reklama
-##.sp_search_table
 ##.sp_search2_table
 ##.sp_search3_table
+##.sp_search_table
+###SR_PopOver
+###SR_PopOverModalBackground
 ##.surbis_banner
 ##.topbaner
-##BODY[onload="popupInit();"] > #popUp
-~marketgid.com,~marketgid.ru,~marketgid.ua,~mgid.com##DIV[id^="MarketGid"]
-##DIV[id^="DIV_NNN_"]
-##DIV[id^="PC_Teaser_Block"]
-##DIV[id^="rtn4p"]
-##DIV[id^="Teaser_Block"]
+###zhlobam_net_informer_console
 ! Предотвращает появление «спиннера» при блокировке скрипта. Попытка блокировать спиннер вызывает ложные срабатывания.
 ##DIV[id^="sblock_inform_"]
-##[class^="snBody"]
-! Предлагают скачать торрент-клиент и торрент одним исполнимым файлом на некоторых трекерах.
-##.mediaget
-! Рекламные блоки Mercatos.RU на разных сайтах (nowa.cc, 3ppc.net)
-##.merc_title
-##.merc_title_2
 ! Реклама приватбанка
 ##BODY > #flydiv
 ! Реклама в поиске для партнёров Google.
@@ -2983,7 +2979,6 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 4pna.com##BODY > NOINDEX > CENTER
 ||5ka.ru/js/banners.
 ||5ka.ru/jscr/
-7ya.ru##.adv
 ||7ja.ru/imgb/
 ||7sl.ru/uploads/$object
 9sx.ru##MARQUEE[scrollamount]
@@ -3821,7 +3816,6 @@ namba.kg###branding-html
 ||namba.kg^$image,~image,popup,domain=namba.kg
 ||namba.kg/www/base/
 narodclub.net##CENTER > A[target="_blank"][rel="nofollow"]
-narod.i.ua##.adv
 ||nashgorod.ru/b/
 nashkiev.ua##.block-adv
 ne-kurim.ru##.pad > NOINDEX
@@ -3988,7 +3982,6 @@ pressa-online.com###po-vips
 programki.net##.reclama_v
 prokazan.ru###TopBanner
 ||prokazan.ru/manager/BannerSystem.php?
-prolineyup.ispace.in.th##.adv
 prolineyup.ispace.in.th##NOINDEX > A[onclick][href="#"] > IMG
 ||promodeejay.net/branding/
 propogodu.ru##TABLE.weather + NOINDEX
@@ -4264,7 +4257,6 @@ topgir.com.ua##DIV[id^="template_ad_"]
 topgir.com.ua##.informers
 topgir.com.ua###JobInformer
 ||topgir.com.ua/files/$object
-topnews.ru##.adv
 topnews.ru##.bn_ir
 topnews.ru##.headbanner
 topnews.ru##.newsOfPartners
@@ -4448,7 +4440,6 @@ yarportal.ru##[style$="height: 60px;"]
 yarportal.ru##TD.desc
 ||yarportal.ru/$image,object
 @@||yarportal.ru/*/$image
-ykt.ru##.adv
 ||ykt2.ru/inform/
 ||ykt.ru/session?
 ||ykt.ru/yaknet/image.asp?id=
@@ -4659,7 +4650,6 @@ he.ngs.ru,she.ngs.ru,relax.ngs.ru###logos
 mail.ngs.ru,mail.ngs55.ru###td_body_right
 ngs.ru###ads-fix
 ngs.ru###kemlc
-ngs.ru##.adv
 ngs.ru##.banner
 ngs.ru##.banner-center
 ngs.ru##.big-right
@@ -4999,7 +4989,6 @@ cheb.ru##TD[align][width="360"]
 @@||liveangarsk.ru/files/k/k-nikita.gif
 @@||legionhardware.com/images/teasers/$~third-party
 @@||livejournal.com/js/??*?v=$script,domain=livejournal.com
-mts.ru#@#.wide-ad
 @@||my.south.rt.ru^$document
 @@||nic.ru/styles/advertising.css$domain=nic.ru
 @@||now.ru/minify/index.php?$script,domain=now.ru
@@ -5036,6 +5025,10 @@ mts.ru#@#.wide-ad
 @@||ukrainianiphone.com/baners/r/$~third-party
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 @@||zeiss.com/content/*/teaser$domain=zeiss.com
+!#unhiding.bookmark
+airmediacenter.com#@#.b-banner
+mobile-review.com#@##advblock
+mts.ru#@#.wide-ad
 !#detect.bookmark
 aqa.ru#@#div[id^="div-gpt-ad-"]
 @@||kino-v-online.ru^$elemhide
