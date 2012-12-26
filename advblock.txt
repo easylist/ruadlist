@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: /3VZ/ondDLfp0qwgupAZgg
-! Last modification time (GMT): 2012.12.26 08:50
+! Checksum: XdIJYUC4rhxNXgz8mOSBJA
+! Last modification time (GMT): 2012.12.26 10:36
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -46,7 +46,6 @@
 ||hapend.biz/thread$image,~image,popup
 ||ipchecker.ru/?id=$image,~image,popup
 ||knowbot-wt.info^$image,~image,popup
-||luckiestclick.com^$image,~image,popup
 ||magblast.info^$image,~image,popup
 ||mesvip.com^$image,~image,popup
 ||peel-down.net/search.php?$image,~image,popup
@@ -2051,6 +2050,8 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ###gaminator
 /gaminator-
 torrentino.com,unionpeer.org,webpark.ru##A[href^="http://luckiestclick.com/goto."]
+radikal.ru##DIV[onclick*="//luckiestclick.com/goto."]
+||luckiestclick.com^$image,~image,popup
 ||x8.net/2/$domain=torrentino.com|unionpeer.org
 !
 ! KinoPromoBase
@@ -3936,12 +3937,11 @@ pingvinoff.net##.entry > DIV[style^="float:"]
 ||pingvinoff.net/bnr/
 piratbit.net##A[target="_blank"][href^="http://ad."]
 piratbit.net##DIV[id^="bn_"]
-pirat.ca##A[href^="http://luckiestclick.com/"]
 ||piratski.ru/*_banner.
 ||piter.com/files/b_a_n_n_e_r_s/
 ||piterhunt.ru/sponsor/banner/
 ||glee.ucoz.ru^$domain=pirat.ca
-||pirat.ca/images/posters/Ban$object
+||pirat.ca/images/posters/$object
 planetaua.net##.market
 ||deltamarket.com.ua^$domain=planetaua.net
 platon.kz##.logo + #ja-search
@@ -4013,7 +4013,6 @@ qwe.ru##TABLE + TABLE TR:last-child > TD:last-child > .border
 rada.com.ua###banner_top
 ||rada.com.ua/images/bs/
 radikal.ru##DIV[id^="left_ban"]
-radikal.ru##DIV[onclick*="//luckiestclick.com/goto."]
 radikal.ru###top_ban
 ||radikal.ru/static/brandir/
 radiorecord.ru##.banner

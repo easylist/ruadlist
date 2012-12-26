@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: pOoA2Do45YFZwNGJjxq8Yw
-! Last modification time (GMT): 2012.12.24 02:38
+! Checksum: 078Ey2HFOIHxBHcircOogg
+! Last modification time (GMT): 2012.12.26 10:36
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -27,10 +27,6 @@
 != Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
 !#social.bookmark
 != Тут не все правила - см. подписку фанбоя ниже.
-!
-!---AdFox-------------------------------------------------------------
-! Обычно рекламные скрипты
-/adfox.$script
 !
 !------------ Disqus ----------------------------------------------------------
 ! Это не социальная сеть, а централизованный сервис для комментариев с логином
@@ -71,23 +67,11 @@ _facebook.gif
 /ljthis?
 _livejournal.gif
 !
-!------------ LovePlanet ------------------------------------------------------
-||loveplanet.ru^$third-party,domain=~loveplanet.ua
-!
-!------------ QiP -------------------------------------------------------------
-||pip.qip.ru^$domain=~pip.qip.ru
-!
-!------------ Skype -----------------------------------------------------------
-||mystatus.skype.com^
-!
 !------------ Twitter ---------------------------------------------------------
 ##.twitter
 -tweet.png
 _twitter.gif
 _twitter.png
-!
-!------------ b̄ogi.ru ---------------------------------------------------------
-||bogi.ru/comments_widget.
 !
 !------------ ВКонтакте -------------------------------------------------------
 ! Внимание!
@@ -139,16 +123,24 @@ _vkontakte.png
 ##.addzakl
 ~appledevelopers.ru##.social
 ###block_social_open
+||bobrdobr.ru/images/buttons/$third-party
+||bogi.ru/comments_widget.
 ||clix.ru^$third-party
 ||contentwidgets.net/widget/
 /copy_to_blog_*.gif
 ||inkoutbreak.com/bumper/
 _liveinternet.gif
+||loveplanet.ru^$third-party,domain=~loveplanet.ua
+||memori.ru^$third-party
+||mister-wong.ru/img/*/buttons/$third-party
+||moemesto.ru/icons/$third-party
+||mystatus.skype.com^
 /odnaknopka/*
 ###odnaknopka
 /odnaknopka.js
 ||odnaknopka.ru^$third-party
 ||pikabu.ru^$third-party
+||pip.qip.ru^$domain=~pip.qip.ru
 /plugins/addzakl/*
 /plugins/russocialknopki-
 /share42-
@@ -164,14 +156,9 @@ _liveinternet.gif
 ###socializ
 ##.soc_share
 ||viadeo.com/exec/recommend:getRecommend?$third-party
+||vkrugudruzei.ru/x/button/get?
 ||xat.com^$third-party
 ||xatech.com^$third-party
-!
-!------------ Закладки --------------------------------------------------------
-||bobrdobr.ru/images/buttons/$third-party
-||memori.ru^$third-party
-||mister-wong.ru/img/*/buttons/$third-party
-||moemesto.ru/icons/$third-party
 !
 !- По-сайтам (частные) --------------------------------------------------------
 !#socpriv.bookmark
@@ -240,7 +227,6 @@ molodejj.ru###sharePanel
 newsinfo.ru###facebox
 ||nifiga-sebe.ru/znachki/
 novafilm.tv##.news-entry > DIV:last-child
-novafilm.tv###vk_groups
 novafilm.tv##DIV[style*="40px;"]:last-child
 ntv.ru###btmsocialize
 ntv.ru##.podprint > UL[style*="370"]
@@ -333,6 +319,8 @@ webpark.ru###sc-frame
 != Мусор на сайтах (огромные не нужные логотипы, флэш и т.п.) =================
 ! Блоки с авторскими правами и, часто, мусором на многих сайтах.
 !#trash.bookmark
+! Рекламный скрипт адфокса на сайтах. Периодически создаёт проблемы.
+/adfox.$script
 ! Google stuff
 ###gsr > DIV > #pushdown
 ! Интернет-радио с флеш-плеером, разработчики которого не знают о том, что при открытии страницы их радио должно молчать
@@ -685,7 +673,7 @@ pressa-online.com#@##fbContainer
 @@||odnoklassniki.ru/share/odkl_share.js$domain=mreporter.ru
 !------------------------------------------------------------------------------
 ! Fanboy's Annoyance List
-! Updated: 10 Dec 2012
+! Updated: 25 Dec 2012
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
 ! FAL Email: fanboyadblock@googlegroups.com
@@ -2004,6 +1992,7 @@ banki.ua##.b-fb-overlay
 banki.ua##.b-fb-popup
 itc.ua##.verticalPageNav
 ntv.ru##.popup_overlay
+rbc.ru###popup_box
 rbc.ru###popup_inner
 ubr.ua##.job-block
 ubr.ua##.story-nav
@@ -2028,6 +2017,7 @@ eleconomista.es###barra-nav
 eleconomista.es##.tbot
 record.xl.pt###apDiv2
 record.xl.pt###MenuDinamico
+sapo.pt###redesSociais
 terra.es###trr-root
 uol.com.br###follow
 !
@@ -2048,6 +2038,8 @@ etnews.com##.sns_btn
 auto.co.il###openButton
 auto.co.il##.searchbtn
 calcalist.co.il###CornerPromotionDiv
+gadgety.co.il###subscribefield
+gadgety.co.il##.facelike
 globes.co.il###GTV_VideoDetails
 globes.co.il##.footerN_box
 holesinthenet.co.il###bottombar
@@ -2055,6 +2047,7 @@ morfix.co.il###morfixInstallTB_main
 mouse.co.il##.fbox_main
 mouse.co.il##.hp_banners
 mouse.co.il##.mouseExtraContent
+tapuz.co.il###LikeTapuzImage
 tapuz.co.il##.tapuzShareBar
 themarker.com###bottom_navigator
 walla.co.il###inwise
@@ -2540,7 +2533,6 @@ ynet.co.il###leftspacertable
 ###share_buttons
 ###share_buttons_wrapper
 ###share_div_float
-###share_feed
 ###share_footer
 ###share_hub_box
 ###share_icons
@@ -2627,6 +2619,7 @@ ynet.co.il###leftspacertable
 ###sharingcolumn
 ###SharingComponentId
 ###ShowsRightSocial
+###shrbar
 ###side-social
 ###sidebar-facebook-activity
 ###sidebar-fb-social-reader
@@ -2930,6 +2923,7 @@ ynet.co.il###leftspacertable
 ##.addthis-button
 ##.addthis-footer
 ##.addthis-vertical-layout
+##.addthis_bar
 ##.addthis_button
 ##.addthis_button_compact
 ##.addthis_button_digg
@@ -2963,6 +2957,7 @@ ynet.co.il###leftspacertable
 ##.aptureTMMBar
 ##.article-share
 ##.article-social
+##.article-social-bar
 ##.article-social-bar-floating
 ##.article_sharing
 ##.articleShare
@@ -3009,6 +3004,7 @@ ynet.co.il###leftspacertable
 ##.btn_digg
 ##.btn_furl
 ##.btn_technorati
+##.btnSocial
 ##.btnTwitterConnect
 ##.button-share
 ##.buzz-link
@@ -3032,6 +3028,7 @@ ynet.co.il###leftspacertable
 ##.ct-top-sharing
 ##.customsocialmod
 ##.cxEmailNewsletter
+##.dailydeal_wrapper
 ##.dd-social
 ##.dd_ajax_float
 ##.dd_post_share
@@ -4020,6 +4017,7 @@ ynet.co.il###leftspacertable
 ##.undocked-share
 ##.utilities-fblike-twitter
 ##.utils_social_tracking
+##.vcrSocial
 ##.ve2_sharebox
 ##.vertical-social
 ##.vertical-social-icons
@@ -4148,6 +4146,7 @@ afterdawn.com##.go-next
 afterdawn.com##.go-prev
 airtet.in###joead2
 ajc.com##.cxArticleList
+al-akhbar.com###to-top
 al-monitor.com##.ui-dialog
 al.com##.share
 alarabiya.net##.advt + .panel
@@ -4338,10 +4337,12 @@ bloomberg.com###story_tools_top
 bloomberg.com##.blp2_alert_widget
 bloomberg.com##.key_rates
 bloomberg.com##.story_inline
+bmj.com##.bmj-cookie-noticebar-content
 bodyandsoul.com.au##.connect
 boingboing.net###sidebarsticky
 boldprogressives.org##.ui-dialog
 boldprogressives.org##.ui-widget-overlay
+bonjourlife.com###toHide
 booksnreview.com###anotherBox
 booksnreview.com##.nw_cont
 booksnreview.com##.rightbox1
@@ -4411,6 +4412,8 @@ cagle.com###cboxOverlay
 cagle.com###colorbox
 callingallgeeks.org###floating-count
 callingallgeeks.org###text-16
+cambio.com###user-bar-wrapper
+cambridge.org###lawEU
 canada.com###newsletterbox
 canada.com##.classifieds
 care2.com###care2_action_alerts
@@ -4455,6 +4458,7 @@ charitywater.org##.like2
 cheatcc.com###meerkat-wrap
 cheatcc.com###notice
 cheezburger.com###js-iscroll-footer
+cheezburger.com###js-registration-banner-header
 chillicothenews.com##.network_bucket
 chillinpanda.com##.face_popup
 chillinpanda.com##.lightbox_background
@@ -4737,7 +4741,7 @@ dispatch.com##.show-toolbar
 dlife.com##.contitle_content_actions_div
 dlife.com##.findUs
 dlife.com##.tabbedSynechronPanel
-do-while.com##.latestshowsocial
+do-while.com###slidebox
 doctortipster.com###like
 doctortipster.com###subscribe
 doctortipster.com###subscribe_email
@@ -4890,6 +4894,10 @@ fanexpocanada.com###top_bar
 fanpop.com###trophy_display_div
 fanpop.com##.fp_panel
 fareastgizmos.com###sticky-area-container
+fark.com###abPleaBar
+fark.com###gplus
+fark.com###rss
+fark.com###twitter
 farmersalmanac.com##.like-wrap
 fashionotes.com##.newsletter
 fastcompany.com###header_region
@@ -4997,6 +5005,7 @@ gajitz.com###headerMenuRSS
 gameinformer.com##.g-i-blog-links
 gamenguide.com###anotherBox
 gamenguide.com##.nw_cont
+gamenguide.com##.s_sns
 gamepro.com###secondaryMenu
 gamepro.com##.share
 gamerant.com###subbox
@@ -5090,7 +5099,6 @@ grantland.com##.page-actions
 graphic.is###flshare
 gravity.com###follow
 greatist.com##.widget_ns_mailchimp
-greatmensay.com##.widget-area.postbody
 greenbiz.com###floating-tools
 greencarreports.com###feedback-button
 greentechmedia.com###sticky-sidebar-wrapper
@@ -5303,6 +5311,7 @@ imm.io###fb
 imm.io###share
 imore.com###block-block-4
 impactwrestling.com##.topIcons
+in.com###nextslide
 in.com##.category_box
 in.com##.floating-box
 in.com##.utility_bar_block
@@ -5347,6 +5356,7 @@ instructables.com###modal
 instructables.com###modalMask
 internetevolution.com##.menudropdown
 internetnews.com###sblinks
+internetnews.com###sg-popup
 intomobile.com##.services
 intomobile.com##.share
 intomobile.com##.subscribe
@@ -5775,6 +5785,7 @@ myrls.me###text-14
 myspace.com##.footertools
 myspace.com##.subscriber
 naranjaja.com##.buttonfixed
+narr8.me##.share-txt
 nationalgeographic.com###dod_flyout
 nationalgeographic.com###follow_ng
 nationalgeographic.com###signMeUpDialog
@@ -5996,6 +6007,7 @@ overstock.com###cars-twitter
 oyetimes.com###uBarDiv
 paidcontent.org##.go_newsletter_widget
 paidcontent.org##.subscribe_box
+pandora.com##.tip_container
 pandora.tv##.quick
 parenting.com###scroll-box
 parents.com###adtrafficright
@@ -6053,6 +6065,7 @@ pcworld.in##.digg
 pcworld.in##.email
 pdnonline.com##.socialNetwork
 penguingroup.com###panelad2
+people-press.org###share
 people.com###flyingrecirc
 people.com###getPeopleEverywhere
 people.com##.cmad
@@ -6104,6 +6117,7 @@ pleaseshutup.com##.share
 plosone.org###share
 plus.google.com##.c-zh-Wf
 pocketnow.com##.head_function
+policymic.com###article-finished
 politico.com###bottomBar
 politico.com###widgetAlertLive
 politico.com###widgetConnect
@@ -6200,6 +6214,7 @@ recordonline.com###djDealsReviews
 recordonline.com###loginBarBtm
 recordonline.com###topHomesFrame
 recordonline.com###topJobFrame
+reddit.com##.goldvertisement
 reddit.com##.share
 redferret.net###scdiv
 redmondpie.com##.twitterBarForSb
@@ -6348,6 +6363,7 @@ shelterpop.com###followUsRightHub
 shimory.com###banners
 shop4freebies.com###popup
 shop4freebies.com###popup_bg
+shoutfactory.com##.right_last
 shoutmeloud.com###floating-count
 shoutmeloud.com###text-482895650
 shoutmeloud.com###text-482895670
@@ -6562,6 +6578,7 @@ techrepublic.com##.siu-vertical-cont
 techshout.com###stp-bg
 techshout.com###stp-main
 techshout.com##.subscribition
+techsplurge.com###pty_pkg
 techsplurge.com###sharing
 techsplurge.com###subscribe
 techsplurge.com##.xoxo
@@ -6847,6 +6864,7 @@ tractorbynet.com###exposeMask
 tractorbynet.com##.pop-up
 trade2win.com###fancybox-overlay
 trade2win.com###fancybox-wrap
+trademe.co.nz##.promo-spot
 trafficestimate.com##.stay-connected-wrapper
 traileraddict.com###catfish
 translate.google.com###gt-bbar
@@ -6857,6 +6875,8 @@ trendhunter.com###DOMWindow
 trendhunter.com###DOMWindowOverlay
 trendhunter.com###fixed-element
 tressugar.com###page-message
+tribune.com.pk###adjacent
+tribune.com.pk##.widget[style="height:300px"]
 tripadvisor.com##.ftr_mobile
 tripadvisor.com##.overlay
 tripod.com###tb_container
@@ -6977,6 +6997,7 @@ venturebeat.com##.widget_vb_search_social_tips
 vetstreet.com###newsletter
 vetstreet.com###top-products
 vh1.com##.bar
+vh1.com##.share
 vh1.com##.shareholder
 vibe.com###subscribe_abvfold
 vice.com##.primary
@@ -7130,6 +7151,7 @@ wsadirectory.com##.blockOverlay
 wsj.com###ArticleRRTest_JobListings
 wsj.com###FINSW_Jobs
 wsj.com###login_scrim
+wsj.com###subscribeNowMediumBar
 wsj.com###subscribeNowSmallBar
 wsj.com###valetTools-left
 wsj.com##.fbRecWidget
@@ -7172,6 +7194,7 @@ yourbittorrent.com###cnv
 yourtango.com###tango-newsletter-form
 yourtvseri.es###uvTab
 youtube.com###yt-feedback
+youtube.com###yt-hitchhiker-feedback
 yumsugar.com###gift-guide-widget
 yumsugar.com###sugar-post-cross-sell
 yumsugar.com###twitter-widget
@@ -7201,7 +7224,6 @@ zmescience.com###contribute-zme
 ~boingboing.net##.sharebuttons
 ~boingboing.net##.twitter-share-button
 ~break.com###facebook_btn
-~celebuzz.com##.fb_button
 ~digg.com###digg-widget
 ~digg.com###digg_module
 ~digg.com###digg_upcoming_content
@@ -7212,6 +7234,7 @@ zmescience.com###contribute-zme
 ~electnext.com##.twitter-share
 ~facebook.com###fb_header
 ~facebook.com###fbContainer
+~facebook.com###share_feed
 ~facebook.com##.connect_widget
 ~facebook.com##.facebook-widget
 ~facebook.com##.facebookLikeBox
