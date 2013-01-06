@@ -1649,7 +1649,6 @@ _tizers.
 ||ugly.ru/adv_frame.
 ||uicp.ru/?bn=
 ||ujav.net^
-||ucoz.com/rtr/
 ||ukrbanner.net^$third-party
 ||ukrbuy.com/partner/
 ||ulitka.ru/logo$image
@@ -2840,6 +2839,8 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ! $domain=artpost.ucoz.ru|fortpostnews.ucoz.ru|multiky.ru|notebene.ucoz.ru|tumbanew.ucoz.ru|uzumaki.kz|vceknigi.ru|...
 .am/rtr/$script
 .biz/rtr/$script
+.by/rtr/$script
+.com/rtr/$script
 .kz/rtr/$script
 .net/rtr/$script
 .org/rtr/$script
@@ -3338,6 +3339,8 @@ forum-profit.ru##[id^="edit"] > .tborder:not([id])
 forums.drom.ru##.menu + * + .tborder
 forums.heroesofnewerth.com###purchase_pref
 forums.ngemu.com##DIV[style*="920px;"][style*="250px;"]
+forum.superkot.com##TABLE:first-child + .tablebg + .tablebg + BR + .tablebg
+forum.superkot.com##TABLE:first-child + .tablebg + .tablebg + .tablebg
 ||forums.warforge.ru/style_images/ad/
 forzajuve.ru##.block_links
 forzajuve.ru###column-left NOINDEX > .module-content
@@ -3658,7 +3661,8 @@ lib.rus.ec,posters.ec##.content > P > A[target="_blank"] > IMG
 lib.rus.ec,posters.ec###logo-title > DIV > A[target="_blank"]
 lib.rus.ec,posters.ec##.slide_anons
 ||lib.rus.ec/sites/default/files/$object
-||liveangarsk.ru/files/k/
+||liveangarsk.ru/files/k
+||liveangarsk.ru/files/$object
 lifehacker.ru##.rblock1
 lifehacker.ru##.rblock4
 ||lifehacker.ru/promo/
@@ -4336,6 +4340,7 @@ vashgorod.ru##.job42
 ||vashgorod.ru/images/banner/
 ||vashgorod.ru/key/get?partner_id=
 vbsupport.org##A[href^="http://vbsupport.org/forum/rbs_banner."]
+||vfl.ru/images/b/
 v-info.ru###topbanners
 v-info.ru##.sidebanner
 ||v-info.ru/i_bann/
@@ -4866,6 +4871,7 @@ forum.tomsknet.ru##.banner.nocp
 ||tomsktracker.org/b/
 ||torrents.tomsk.ru/b/
 torrents.vtomske.ru##DIV[style^="padding-top"][style$="5px;"]
+vtomske.ru##.adv_sec
 vtomske.ru##.adv_side
 vtomske.ru##.adv_top
 vtomske.ru##DIV[style$="; height: 37px; padding: 0; margin: 0; overflow: hidden;"]
@@ -5063,8 +5069,14 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||zeiss.com/content/*/teaser$domain=zeiss.com
 !#unhiding.bookmark
 airmediacenter.com#@#.b-banner
+autorambler.ru#@#.ad-content
+filecheck.ru#@##contentAd
+irr.ru#@#.b-advert
 mobile-review.com#@##advblock
 mts.ru#@#.wide-ad
+ph4.ru#@##advert-1
+ph4.ru#@#.reklama
+vtomske.ru#@#.adtable
 !#detect.bookmark
 aqa.ru#@#div[id^="div-gpt-ad-"]
 @@||kino-v-online.ru^$elemhide
