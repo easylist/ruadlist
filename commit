@@ -38,7 +38,8 @@ commit_script() {
 		echo Do not save message or press Ctrl+C \(right here\) to stop commit.
 	fi
 	echo -------------------------------------------------------------------------------
-	xterm -e nano --softwrap svn-commit.msg
+	gedit svn-commit.msg
+	wait
 	if [ $? = 0 ]; then
 		# perform commit if there is commit message
 		if [ -e svn-commit.msg ]; then
