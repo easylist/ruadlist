@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: wljwo2y65jsY7hd+WiyuGw
-! Last modification time (GMT): 2013.01.21 10:09
+! Checksum: LnaVYy2Iu+GIiMKNRurB1A
+! Last modification time (GMT): 2013.01.21 22:52
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -4512,8 +4512,9 @@ zakonia.ru##.randomtable
 forum.zakonia.ru##TD[class^="alt"][align="left"] [style="float:right"]
 ||zakonia.ru/imgs/adshtml/
 ||zarium.ru/showweb.
-zaycev.net##.box.box-nogap
 zaycev.net##.box > CENTER
+zaycev.net##.box.box-nogap.clearfix > P
+zaycev.net##.box.box-nogap > H6
 zaycev.net##.unit-panel
 zaycev.net##A[href^="http://beboo.ru/"]
 zaycev.net##A[href^="http://www.azbukasexa.ru/"]
@@ -5007,6 +5008,8 @@ na-svyazi.ru##TD[width="320"][align="center"]
 ! Исправление проблем возникших в результате работы подписки на отдельных сайтах
 ! Без этого ломается интеграция с виджетом «ВКонтакте» на 3dnews.ru
 @@||3dnews.ru/www/delivery/ajs.$script,domain=3dnews.ru
+! Счетчик времени на letitbit.net
+@@||ad.propellerads.com^$domain=letitbit.net
 ! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
 @@||ads.tomtel.ru/adjs.$script
 ! Видео с yatv.ru, видео на kinopoisk.ru
