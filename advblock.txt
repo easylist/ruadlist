@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: LnaVYy2Iu+GIiMKNRurB1A
-! Last modification time (GMT): 2013.01.21 22:52
+! Checksum: 116jeTnelnCvTkHLn6Nsgg
+! Last modification time (GMT): 2013.01.22 06:13
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -144,8 +144,9 @@
 ||sbornix.ru^$~popup,popup
 ||sergey-mavrodi.com$~popup,popup
 ||vk.com.spam-fixer.$~popup,popup
+||vkonagt.com^$~popup,popup
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
-||youtube.com^$domain=2officialnik.biz|help2play.com|otveti2012.ru|otvetru.ru
+||youtube.com^$domain=2officialnik.biz|help2play.com|otveti2012.ru|otvetru.ru|vkonagt.com
 ! Попапы и редирект (мошенники) на turbobit.net
 ||add5.ru^$~popup,popup
 ||dvadzat5.biz^$~popup,popup
@@ -3609,9 +3610,8 @@ kapriz.info##A[target][href*="/go.php?url="] > IMG[src^="/"]
 katushka.net##.advert
 katushka.net###left_menu > .banner
 ||katushka.net/img/banners/
-keep4u.ru###r_bottom
-keep4u.ru###r_top
 ||keep4u.ru/partners/
+||keep4u.ru/r.php?
 keys-kas.ru##.bannerblock
 ||kiev-mama.com.ua/assets/banners/
 kiev2000.com##.left + .right
@@ -4512,14 +4512,12 @@ zakonia.ru##.randomtable
 forum.zakonia.ru##TD[class^="alt"][align="left"] [style="float:right"]
 ||zakonia.ru/imgs/adshtml/
 ||zarium.ru/showweb.
-zaycev.net##.box > CENTER
-zaycev.net##.box.box-nogap.clearfix > P
-zaycev.net##.box.box-nogap > H6
 zaycev.net##.unit-panel
 zaycev.net##A[href^="http://beboo.ru/"]
 zaycev.net##A[href^="http://www.azbukasexa.ru/"]
+zaycev.net##.box > CENTER
+zaycev.net##.box.box-nogap > H6
 zaycev.net##DIV > TABLE[width="750"][align="center"]
-zaycev.net##UL > NOINDEX
 forum.zaycev.net##.mb[width="180"] NOINDEX
 forum.zaycev.net##.mb[width="180"] TD[align="center"][colspan="3"]
 zaycev.fm###branding

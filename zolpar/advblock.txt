@@ -144,8 +144,9 @@
 ||sbornix.ru^$~popup,popup
 ||sergey-mavrodi.com$~popup,popup
 ||vk.com.spam-fixer.$~popup,popup
+||vkonagt.com^$~popup,popup
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
-||youtube.com^$domain=2officialnik.biz|help2play.com|otveti2012.ru|otvetru.ru
+||youtube.com^$domain=2officialnik.biz|help2play.com|otveti2012.ru|otvetru.ru|vkonagt.com
 ! Попапы и редирект (мошенники) на turbobit.net
 ||add5.ru^$~popup,popup
 ||dvadzat5.biz^$~popup,popup
@@ -1780,6 +1781,7 @@ _tizers.
 ||ping-proxy.info^
 ||polymovie.info^
 ||pop-proxy.info^
+||ranking-it.info^
 ||shelbycarter.info^
 ||sosilent.info^
 ||tripadv.info^
@@ -2893,6 +2895,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||clicksadvert.info^
 ||gainclick.co^
 ||mubra.ru^
+||some.demuz.ru^
 ||tagol2.ru^
 ||taril1.ru^
 ||taril2.ru^
@@ -3482,6 +3485,7 @@ habrahabr.ru##.block[class$="_htmlblock"]
 haleava.net##CENTER > NOINDEX > A[target="_blank"]
 hdclub.org,tracker.hdclub.com.ua##DIV[id^="myDiv"]
 headsoft.kz###promo
+||hh.ru/js/hh/BannerHandler.js?
 hideme.ru##[id*="hidemead"]
 ||hideme.ru/ad.js
 hi.dn.ua##.artbannersplus
@@ -3606,9 +3610,8 @@ kapriz.info##A[target][href*="/go.php?url="] > IMG[src^="/"]
 katushka.net##.advert
 katushka.net###left_menu > .banner
 ||katushka.net/img/banners/
-keep4u.ru###r_bottom
-keep4u.ru###r_top
 ||keep4u.ru/partners/
+||keep4u.ru/r.php?
 keys-kas.ru##.bannerblock
 ||kiev-mama.com.ua/assets/banners/
 kiev2000.com##.left + .right
@@ -3962,7 +3965,8 @@ phpbbguru.net##[href^="go.php?to="]
 pic2profit.com###referal
 ||pic2profit.com/img/putanap/
 ||pic2profit.com/ppb.php?id=
-||pic4pay.com/putana/
+||pic*pay.com/putana/
+||pic*pay.com/img/
 ||pic4pay.com/rt/
 pic4you.ru,pic5you.ru,picage.ru##.centerdiv
 .ru/rightdown/$domain=pic4you.ru|pic5you.ru|picage.ru
@@ -4107,10 +4111,10 @@ roem.ru##.banner
 rpod.ru###adv240x400
 ||rpod.ru/i/b/
 rsload.net##TD[width="230"]:first-child + TD:last-child > NOINDEX:first-of-type
+rtkorr.com##.topbanner
+||rtkorr.com/js/popup.js
 forum.ru-board.com##BODY > TABLE[cellpadding="2"] TD.sh1[align="left"]:first-child
 forum.ru-board.com##TD:not([class="lgf"]) > TABLE[width][cellpadding][bordercolor="#EEEEEE"][border="1"][bgcolor="#FFFFFF"]:not([width$="%"])
-! Для Fx 3.6 и предыдущих версий
-forum.ru-board.com##TD:not([class="lgf"]) > TABLE[width][cellpadding][bordercolor="#eeeeee"][border="1"][bgcolor="#ffffff"]:not([width$="%"])
 ||ru-board.com*/temp/
 ||ru-board.com*/xmtmp/
 ||ru-board.com/kupitraff.
@@ -4510,8 +4514,8 @@ forum.zakonia.ru##TD[class^="alt"][align="left"] [style="float:right"]
 ||zakonia.ru/imgs/adshtml/
 ||zarium.ru/showweb.
 zaycev.net##.unit-panel
-zaycev.net##A[href^="http://www.azbukasexa.ru/"]
 zaycev.net##A[href^="http://beboo.ru/"]
+zaycev.net##A[href^="http://www.azbukasexa.ru/"]
 zaycev.net##.box > CENTER
 zaycev.net##.box.box-nogap > H6
 zaycev.net##DIV > TABLE[width="750"][align="center"]
@@ -4861,6 +4865,7 @@ ua##A[href^="/redirect/url?url="] > IMG[src^="/upload/jackets/"]
 ||kiks.yandex.
 market.yandex.ru,market.yandex.ua##.spec-adv
 music.yandex.ru,music.yandex.ua###js-banner
+rasp.yandex.ru,rasp.yandex.ua##.b-yadirect
 ||yabs.yandex.*/resource/*.gif
 ||yabs.yandex.*/show/$third-party
 ||yandex.*/cy?base=0&host=
@@ -5002,6 +5007,8 @@ na-svyazi.ru##TD[width="320"][align="center"]
 ! Исправление проблем возникших в результате работы подписки на отдельных сайтах
 ! Без этого ломается интеграция с виджетом «ВКонтакте» на 3dnews.ru
 @@||3dnews.ru/www/delivery/ajs.$script,domain=3dnews.ru
+! Счетчик времени на letitbit.net
+@@||ad.propellerads.com^$domain=letitbit.net
 ! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
 @@||ads.tomtel.ru/adjs.$script
 ! Видео с yatv.ru, видео на kinopoisk.ru
@@ -5068,7 +5075,6 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||beeline.ru/media/banners/$domain=beeline.ru
 @@||cdn.now.ru/www/delivery/fc.php?$domain=now.ru
 @@||directadvert.ru/show.cgi?adp=31876&$script,domain=vseserialu.ucoz.ru
-@@||discover-club.com.ua^*/swf/preloader.swf?url=$domain=discover-club.com.ua
 @@||empik.ua/openx/www/delivery/ajs.php?$domain=empik.ua
 @@||ertelecom.ru^*.swf?link1=$domain=domru.ru
 @@||fest-ry.ru/*/images/ad$image,domain=fest-ry.ru
@@ -5111,6 +5117,7 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||tu-tu.ru/*/main/tizer/$domain=tutu.ru
 @@||ukrainianiphone.com/baners/r/$~third-party
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
+@@||volnorez.com^*/liveplayer.swf?url=
 @@||zeiss.com/content/*/teaser$domain=zeiss.com
 !#unhiding.bookmark
 airmediacenter.com#@#.b-banner
@@ -5123,7 +5130,6 @@ ph4.ru#@##advert-1
 ph4.ru#@#.reklama
 vtomske.ru#@#.adtable
 !#detect.bookmark
-firebit.org,firepic.org###adv-300 + DIV[class][style^="text-align:"]
 aqa.ru#@#div[id^="div-gpt-ad-"]
 @@||kino-v-online.ru^$elemhide
 @@||kinomafia.com^$elemhide
