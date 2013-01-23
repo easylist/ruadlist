@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: 11iY+PI0rOichfnrFzTu+w
-! Last modification time (GMT): 2013.01.22 17:24
+! Checksum: ZsPcACy5AXKARHbeFxgXOw
+! Last modification time (GMT): 2013.01.23 08:23
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -3876,7 +3876,6 @@ nnm-club.ru##A[href^="http://www.rookee.ru/?code=nnm_dialog_ban_"]
 nnm-club.ru##.copyright CENTER
 nnm-club.ru###mb_top_space
 ||nnm-club.ru^*/ads/
-nnm.ru###branding_link
 nnm.ru##A:not([href="http://nnm.ru/"]) > IMG[src^="/a/"]
 nnm.ru##DIV[class*="banner"]
 nnm.ru##DIV[id*="banner"]
@@ -4263,7 +4262,7 @@ taba.ru##.taba_rss_wr.rel.fl
 tagilcity.ru##.sbs_p
 ||im.tagilcity.ru^*?mt=
 ||takelink.org/engine/ajax/check.js
-tapochek.net##IMG[width="850"][height="130"]
+tapochek.net###body_container > A
 ||tapochek.net^$object
 telestrekoza.com##.xoxo.blogroll
 terabit.biz##.download_inner
@@ -5006,8 +5005,6 @@ na-svyazi.ru##TD[width="320"][align="center"]
 ! Исправление проблем возникших в результате работы подписки на отдельных сайтах
 ! Без этого ломается интеграция с виджетом «ВКонтакте» на 3dnews.ru
 @@||3dnews.ru/www/delivery/ajs.$script,domain=3dnews.ru
-! Счетчик времени на letitbit.net
-@@|http://ad.propellerads.com/ajs.php?zoneid=$domain=letitbit.net
 ! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
 @@||ads.tomtel.ru/adjs.$script
 ! Видео с yatv.ru, видео на kinopoisk.ru
@@ -5018,6 +5015,8 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||auth.tbn.ru^
 ! Одно из приложения для чатов chatovod.ru
 @@||partner.pladform.ru^$domain=video.mediachat.ru
+! Счетчик времени на letitbit.net
+@@||propellerads.com/ajs.php?zoneid=$domain=letitbit.net
 ! Ложное срабатывание в видеоплеере RuTube.
 @@||rutube.ru/trackinfo/*?ad_ids=
 ! Медиаплеер soundcloud.com

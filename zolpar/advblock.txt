@@ -1,6 +1,4 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: epaPDDbHJxFazRRxrIWpFg
-! Last modification time (GMT): 2013.01.22 05:44
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -3876,12 +3874,10 @@ nnm-club.ru##A[href^="http://www.rookee.ru/?code=nnm_dialog_ban_"]
 nnm-club.ru##.copyright CENTER
 nnm-club.ru###mb_top_space
 ||nnm-club.ru^*/ads/
-nnm.ru###branding_link
 nnm.ru##A:not([href="http://nnm.ru/"]) > IMG[src^="/a/"]
 nnm.ru##DIV[class*="banner"]
 nnm.ru##DIV[id*="banner"]
-nnm.ru##.head_assn
-://nnm.ru/a/
+||nnm.ru/a/$object
 ||assn.info^$image,~image,popup,domain=nnm.ru
 ||nnover.ru/hints/show/
 nn.ru,52.ru##.banner
@@ -4264,7 +4260,7 @@ taba.ru##.taba_rss_wr.rel.fl
 tagilcity.ru##.sbs_p
 ||im.tagilcity.ru^*?mt=
 ||takelink.org/engine/ajax/check.js
-tapochek.net##IMG[width="850"][height="130"]
+tapochek.net###body_container > A
 ||tapochek.net^$object
 telestrekoza.com##.xoxo.blogroll
 terabit.biz##.download_inner
@@ -5007,8 +5003,6 @@ na-svyazi.ru##TD[width="320"][align="center"]
 ! Исправление проблем возникших в результате работы подписки на отдельных сайтах
 ! Без этого ломается интеграция с виджетом «ВКонтакте» на 3dnews.ru
 @@||3dnews.ru/www/delivery/ajs.$script,domain=3dnews.ru
-! Счетчик времени на letitbit.net
-@@||ad.propellerads.com^$domain=letitbit.net
 ! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
 @@||ads.tomtel.ru/adjs.$script
 ! Видео с yatv.ru, видео на kinopoisk.ru
@@ -5019,6 +5013,8 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||auth.tbn.ru^
 ! Одно из приложения для чатов chatovod.ru
 @@||partner.pladform.ru^$domain=video.mediachat.ru
+! Счетчик времени на letitbit.net
+@@||propellerads.com/ajs.php?zoneid=$domain=letitbit.net
 ! Ложное срабатывание в видеоплеере RuTube.
 @@||rutube.ru/trackinfo/*?ad_ids=
 ! Медиаплеер soundcloud.com
