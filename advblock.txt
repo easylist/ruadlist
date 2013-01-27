@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: fV4EUd11C9wx6jTWBbVrRw
-! Last modification time (GMT): 2013.01.27 15:58
+! Checksum: 0gcS+InrVrjQJRQm6/n3nQ
+! Last modification time (GMT): 2013.01.27 17:02
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -38,7 +38,6 @@
 ||10host.ru/go.php?id=$image,~image,popup
 ||actionpay.ru^$image,~image,popup
 ||apb-re.ru/?pid=$image,~image,popup
-||bin.tenantbook.info^$image,~image,popup
 ||crusewind.net/click/direct.php?$image,~image,popup
 ||fileshare.in.ua^*?gogogo$image,~image,popup
 ||filonet.ru/engine/redirect.php?url=$image,~image,popup
@@ -802,6 +801,7 @@ _tizers.
 ||bezlimitvideo.com^
 ||bigbord.net^$third-party
 ||binimage.de^
+||bit.ly^$subdocument,third-party
 ||bizua.com^$third-party
 ||bk.goodline.info^
 ||blogun.ru^$third-party
@@ -1093,6 +1093,7 @@ _tizers.
 ||k2kapital.com/upload
 ||ka7co.com^
 ||kachestvoo.ru^$third-party
+||kadam.ru^
 ||karabalikelektronik.com/images/reklam
 ||karambas.ru/flash
 ||kartinka.com.ua/partner/load?
@@ -1126,6 +1127,7 @@ _tizers.
 ||kritka.kz^$third-party
 ||krokha.ru/partner_ads/
 ||krutilka.net^
+||krutilki.ru^
 ||kupitraff.ru^$third-party
 ||kv.by/img/$object
 ||kvasu.net/*/$object
@@ -1361,7 +1363,6 @@ _tizers.
 ||platinumcode.net^$third-party
 ||play2.biz^$third-party
 ||plesen.net/kp*.
-||kadam.ru^
 ||plus10sm.ru^$third-party
 ||pochta.ru^$third-party
 ||podro4u.ru/obzor/rek/
@@ -1773,11 +1774,9 @@ _tizers.
 ! [unknown]
 ! keyword: favicon
 ! keyword: реклама хостинга JooHost вместо сайта
-||chikano.info^
+! IP=50.63.202.*
 ||differentdesign.info^
 ||differenttypes.info^
-||doom-place.info^
-||doomsite.info^
 ||heavens-tree.info^
 ||moderator-net.info^
 ||networkserf.info^
@@ -1786,15 +1785,20 @@ _tizers.
 ||ping-proxy.info^
 ||polymovie.info^
 ||pop-proxy.info^
-||ranking-it.info^
 ||shelbycarter.info^
+! IP=184.168.221.*
+||doom-place.info^
+||doomsite.info^
+||ranking-it.info^
 ||sosilent.info^
-||tripadv.info^
+||tenantbook.info^
 ||updouble.info^
 !other
 ||chickenkiller.com^
+||chikano.info^
 ||nine.tv-best.net^
 ||nine.winimg.ru^
+||tripadv.info^
 !
 ! [unknown] IP=188.120.243.235
 ! .in/n1/js.php?i=
@@ -2073,14 +2077,17 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 !
 ! Gaminator
 ##A[href^="http://luckiestclick.com/goto."]
+##.gaminator
 ###gaminator
 /gaminator-
 /gaminator/*
-radikal.ru##DIV[onclick*="//luckiestclick.com/goto."]
 ||luckiestclick.com^$image,~image,popup
+radikal.ru##DIV[onclick*="//luckiestclick.com/goto."]
 ||rghost.ru/download/*/brand.
 ||x8.net/2/*_O.$domain=torrentino.com|torrentino.ru|unionpeer.org
 ||x8.net/images/
+zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
+||zerx.ru/templates/zerxnew/images/zerx_bg.
 !
 ! KinoPromoBase
 /get_banner_flash.*&shop=
@@ -2901,7 +2908,8 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||adgamble.$third-party
 ||andrak.ru^
 ||clickadvert.net^
-||clickgain.biz^
+! $domain=clickgain.biz|clickgain.info
+||clickgain.$third-party
 ||clicksadvert.info^
 ||gainclick.co^
 ||mubra.ru^
@@ -3952,6 +3960,7 @@ oru.ru##TD[width="10"] + TD[width="260"]:last-child
 ||osvete.ru/files/$object
 oszone.net###rightcol-c > DIV > NOINDEX
 ||otido.com.ua/banner_/
+||overclockers.ru/images/$object
 ||ozon.ru/graphics/img/
 ||ozon.ru/graphics/img_ban/
 ||oszone.net/ibm.html
@@ -4184,6 +4193,7 @@ santikov.net##.full_story + CENTER
 season.ru##[class^="bnnr_bx_"]
 seasonvar.ru##A[href*="/promo."]
 seasonvar.ru##.main-center-block > DIV:not([class="head-block"]):not([class="footer"]):not([class="content-center"]):not([class="content-center2"])
+||seasonvar.ru/images/*-top.jpg
 ||seasonvar.ru/swf/
 securitylab.ru###brleft
 ||seedoff.net/jscript/xbtit.js
@@ -4403,6 +4413,7 @@ vedomosti.ru##[class^=ears]
 velvet.by##.block-velcompany
 ||a.velvet.by^
 vesti.ru##[class*="banner"]
+||vesti.ru/banners_
 ||vestifinance.ru/img/banners/
 ||www.vesti.ru/i/*_vesti.$image
 videosaver.ru###ad
