@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: Mb6L5VFk/Ecg8IuK7SpAaA
-! Last modification time (GMT): 2013.01.29 14:25
+! Checksum: jffktRJg745K0PrnVi17hQ
+! Last modification time (GMT): 2013.01.29 18:55
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -2904,9 +2904,10 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||visitweb.com^
 !
 ! VKnotifier («Ваша страница ВКонтакте заблокирована»)
-##.notifier_baloon_wrap
-##DIV[id$="notifiers_wrap"]
-##.adf_notifier_baloon_wrap
+~vk.com##.adf_notifier_baloon_wrap
+~vk.com###adf_notifiers_wrap
+~vk.com##.notifier_baloon_wrap
+~vk.com###notifiers_wrap
 /code/click.php?id=$image,~image,popup
 /mp3player.swf?file=*/bb1.mp3
 /mp3player.swf?file=*/bb2.mp3
