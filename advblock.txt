@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Checksum: iWzlf2/Xq/Z/lnlvHuKpYQ
+! Checksum: KcSSdDvtIZkjXu4J8brbgQ
 ! Last modification time (GMT): 2013.01.28 16:34
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -212,8 +212,6 @@
 ##.merc_title_2
 ##.module-one-search
 ##.modul-search
-! «Ваша страница ВКонтакте заблокирована»
-##.notifier_baloon_wrap
 ###novem_billboard
 ###PopWin[onmousemove]
 ###radeant
@@ -2901,9 +2899,10 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||newsmarket.pixarea.ru^
 ||visitweb.com^
 !
-! VKnotifier
-~vk.com##DIV[id$="notifiers_wrap"]
-~vk.com##.adf_notifier_baloon_wrap
+! VKnotifier («Ваша страница ВКонтакте заблокирована»)
+##.notifier_baloon_wrap
+##DIV[id$="notifiers_wrap"]
+##.adf_notifier_baloon_wrap
 /code/click.php?id=$image,~image,popup
 /mp3player.swf?file=*/bb1.mp3
 /mp3player.swf?file=*/bb2.mp3
@@ -3049,6 +3048,7 @@ allboxing.ru##NOINDEX > A[rel="nofollow"][target="_blank"]
 ||allboxing.ru/files/*.*.*/
 ||allboxing.ru/files/$object
 allforpeople.net##.adblock
+||allforpeople.net/banner.
 ||allsat.biz/ban_
 ||almodi.org/comback/
 altapress.ru##.mrkt-off
