@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: BIHNt0kGTH6I4bbUlEWJsA
-! Last modification time (GMT): 2013.02.02 15:49
+! Checksum: v/KHd4PRtU9ek3qVx4UOjA
+! Last modification time (GMT): 2013.02.02 19:24
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1116,7 +1116,6 @@ _tizers.
 ||kinozal.tv^$third-party
 ||kioskas.lt/rex/pop.php?
 ||kleo.ru/cgi-bin/
-! ||klick.net.ua/show.php?
 ||klickmedia.ru^$third-party
 ||knstats.com^$third-party
 ||kolobok.us/button/
@@ -1130,6 +1129,7 @@ _tizers.
 ||krokha.ru/partner_ads/
 ||krutilka.net^
 ||krutilki.ru^
+||kset.kz/imgb/
 ||kupitraff.ru^$third-party
 ||kv.by/img/$object
 ||kvasu.net/*/$object
@@ -1610,9 +1610,7 @@ _tizers.
 ||timedirect.ru^
 ||timeweb.ru/img/b/
 ||titanpoker.com^$third-party
-! ||tizerbox.ru^
 ||tizerget.net^
-! ||tizerka.in^
 ||tizermedia.
 ||tizero.ru^
 ||tizerplus.ru^
@@ -2976,7 +2974,6 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||flipflapflo.biz^$~popup,popup
 ||flipflapflo.net^$~popup,popup
 ||wt-rotator.biz^$~popup,popup
-! ||wt-rotator — в принципе с этим сотнями доменов и общее правило успешно справляется. Пока выключу.
 ||wts-rotator.com^$~popup,popup
 !#wts.clients
 ||wt.lovfot.ru^
@@ -3312,6 +3309,8 @@ ex.ua##A[href^="/ad_click/"]
 ||ex.ua/*/index.css
 !
 !F
+f1cd.ru##.adBtm
+f1cd.ru##.banners
 f1news.ru###bannerBlock
 f1news.ru###left_pan,#right_pan
 f1news.ru###newsexch
@@ -3786,7 +3785,8 @@ megafile.mksat.net##[id^="text-short_"] + DIV[style*="width:980px; height:100px;
 ||megaimg.ru/clixundex.js
 ||megaimg.ru/img/handler.js
 megatorrents.org##.Adv468
-||img.megatorrents.kz^$object
+megatorrents.org###head > TABLE[width="100%"]
+||megatorrents.kz/forum/$object
 megaimg.ru##SCRIPT[src^="http://am10.ru/"] + CENTER
 ||orange-pic.net^$domain=megaimg.ru
 ||melt.ru/images/cms/_*0*_/
@@ -4824,7 +4824,6 @@ cnews.ru##.main > NOINDEX:last-child
 cnews.ru##.tizer_block
 cnews.ru###mag_banner
 ||cnews.ru/inc/banners/
-! ||filearchive.cnews.ru^*/cgi-bin/redirect.cgi?
 ||zoom.cnews.ru/inc/bpic/
 rbcdaily.ru##.c-block_content_article_baner
 rbcdaily.ru##[class*="_adv"]
