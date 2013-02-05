@@ -1,6 +1,8 @@
 #!/bin/bash
 # update files before commiting changes back
 hg pull
+hg update
+hg merge
 
 commit_script() {
     # re-generate hashes
