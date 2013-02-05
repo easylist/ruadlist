@@ -10,4 +10,5 @@ hash.pl bitblock.txt
 hash.pl cntblock.txt
 @echo * cntblock.txt
 @echo Внесение изменений на сервер...
-"%ProgramFiles%/TortoiseHg/thg.exe" commit
+start thg commit
+start thg sync
