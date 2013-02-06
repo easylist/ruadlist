@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Checksum: /oF6q1T659OCRtvtAgqU9g
+! Checksum: Gnu16EHnWdfUjVvMULusWg
 ! Last modification time (GMT): 2013.02.06 08:06
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -2910,8 +2910,8 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ! VKnotifier («Ваша страница ВКонтакте заблокирована»)
 ~vk.com##.adf_notifier_baloon_wrap
 ~vk.com###adf_notifiers_wrap
-~vk.com##.notifier_baloon_wrap
-~vk.com###notifiers_wrap
+~vk.com##[class*="notifier_baloon_"]
+~vk.com##[id$="notifiers_wrap"]
 /code/click.php?id=$image,~image,popup
 /mp3player.swf?file=*/bb1.mp3
 /mp3player.swf?file=*/bb2.mp3
@@ -4474,6 +4474,7 @@ voxpopuli.kz###brand_logo
 ||vozmi.net/img/*150x250
 vp.donetsk.ua##NOINDEX > A[rel="nofollow"] > IMG[width="255"]
 vremenno.net##.sidebarBlock:first-child
+vrhell.com##.zzz
 vce-besplatno.ru##.banner
 ||vseanime.ru/upload/$object
 vseosi.ru##.centercol > CENTER
