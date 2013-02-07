@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: qokCuH35a1uPOTezg0cqOw
-! Last modification time (GMT): 2013.02.06 21:59
+! Checksum: uYBrKQotPQTMmnP2fDr5bA
+! Last modification time (GMT): 2013.02.07 02:29
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -2089,14 +2089,15 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||vboys.ru^$third-party
 !
 ! Gaminator
+!.gaminator#global
 ##A[href^="http://luckiestclick.com/goto."]
 ##.gaminator
 ###gaminator
 /gaminator-
 /gaminator/*
+/gaminator.
 ||luckiestclick.com^$image,~image,popup
-radikal.ru##DIV[onclick*="//luckiestclick.com/goto."]
-||rghost.ru/download/*/brand.
+!.gaminator.local
 ||x8.net/2/*_O.$domain=torrentino.com|torrentino.ru|unionpeer.org
 ||x8.net/images/
 zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
@@ -3233,6 +3234,8 @@ depfile.com##.recl_vert
 ||depositfiles.com/images/zillya/
 depositfiles.com##[id^="ads_zone"]
 design-warez.ru##A[target="_blank"] > IMG[width="180"]
+dfiles.ru###branding
+||dfiles.ru/images/branding/
 djrogoff.ru##.cont_in_c > .item
 ||djrogoff.ru/img/r_
 diary.ru##.advertising
