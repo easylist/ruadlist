@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: 5tORccNTXA1xFmpVP8ugRg
-! Last modification time (GMT): 2013.02.11 07:12
+! Checksum: eD4XcvVdINxAamosQ7KLvw
+! Last modification time (GMT): 2013.02.11 12:21
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -524,37 +524,40 @@ _tizers.
 ||vtomske.ru/informer/
 ||w7.ru/show.php?bid=
 ||wqa.ru/show/?inf=
-! - Биржи трафика -------------------------------------------------------------
+! - Разные биржи трафика ------------------------------------------------------
 !#traff.bookmark
 /click/body.php?id=*&hash=$~popup,popup
-! /js/bodyclick.php?id=
+/js/bodyclick.php?id=
+/js/if.php?id=$third-party
 /js/peeldown.php?id=$third-party
 /js/popup.php?id=$third-party
 /js/slider.php?id=$third-party
 ||alltizer.ru^
 ||buy-traffic.org^
-||bigtraff.com^
 ||clickspay.ru^
+||devilclicks.com^
 ||gameadnet.ru^
 ||good-traf.ru^
 ||hit-star.ru^
-||livetraf.com^
+||live-advert.net^
 ||luxtraffic.ru^
 ||mediadar.ru^
-||medianaft.ru^
+! $domain=medianaft.com|medianaft.ru
+||medianaft.$third-party
 ||mestavip.ru^
-||opinionika.net^
-||protraf.us^
+||protrafv2.com^
 ||rutraff.org^
+||soft-pays.ru^
 ||traffru.ru^
-||txtip.ru^
-||under-click.$third-party
+||under-click.ru^
 ||vipmest.info^
 ||vipop.ru^
 ||w717.com^
 ||webmastak.net^
 ||wmbankir.ru^
 ||wmip.ru^
+||worldtraff.com^
+||wtraff1.ru^
 ! - Блокировка по именам файлов -----------------------------------------------
 !#name.bookmark
 /aika.swf
@@ -922,6 +925,7 @@ _tizers.
 ||earnnetmoney.narod.ru^$third-party
 ||ecosigara.com.ua/partners/
 ||effad.ru^
+||ekod.info^
 ||elephant.fotostrana.ru^
 ||emnodar.ru^
 ||entercash.ru^
@@ -1164,7 +1168,6 @@ _tizers.
 ||liny-ads.net^
 ||listsites.ru^$third-party
 ||litres.ru/pages/get_vidget/?
-||live-advert.net^
 ||liveclix.net^
 ||liverec.com^
 ||livmi.net/image/$third-party
@@ -1210,7 +1213,6 @@ _tizers.
 ||media.online.ua/all/gft/
 ||mediacontext.$third-party
 ||mediaget.com^$third-party
-||medianaft.com^
 ||mediaportal.ru^$third-party
 ||mediarealtor.ru^$third-party
 ||mediatraffic.com.ua^
@@ -1425,7 +1427,6 @@ _tizers.
 ||prospero.ru^$third-party
 ||prostootdam.ru/modules/about/
 ||protect-lab.com/promo/
-||protrafv2.com^$third-party
 ||prre.ru^
 ||pullcorn.com^$third-party
 ||puls.lv^$third-party
@@ -1981,8 +1982,6 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 !
 ! BodyClick.net
 ! http://xml.ssdsandbox.net/dnslookup-dnsdb?name=176.9.32.51
-/bodyclick.$~popup,popup
-.bodyclick.$~popup,popup
 /jstbt.js|$third-party
 /viewt.js$third-party
 ||clme.biz^
@@ -2885,10 +2884,6 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||1sbiz.ru^
 ||traffbiz.ru^
 ||menuse.ru^
-!
-! trafOret.ru
-||ekod.info^
-! $domain=bigtorrent.org|filmin.ru|free-torrents.org|headsoft.kz|kinobanda.net|kinobomba.net|kino-live.org|kino-portal.net|kolyan.net|megaonlinez.net|megashara.com|megatorrents.org|mirknig.com|novinkionlain.ru|online-new-films.ru|otriva.net|piratbit.net|rapidzona.com|ru-admin.net|rutor.org|stepashka.com|torrent-games.net|turbobit.net|vidachok1.com|xtreme.ws|zerx.ru|zhmak.info
 !
 ! Ucoz.net
 ||ucoz.*/img/ma/cv.gif
