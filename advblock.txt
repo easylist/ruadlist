@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: 1P8nY3s7y6Z/QazwwhYE9A
-! Last modification time (GMT): 2013.02.24 13:49
+! Checksum: qvrUTi2rzLdPlKD9zT4KYQ
+! Last modification time (GMT): 2013.02.24 14:36
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1176,6 +1176,7 @@ _tizers.
 ! $domain=linkexchange.com|linkexchange.ru
 ||linkexchange.$third-party
 ||linkme.org.ua^
+||linkslot.ru^
 ||linkwm.ru^$third-party
 ||linkzilla.ru/seo/
 ||liny-ads.net^
@@ -1377,6 +1378,7 @@ _tizers.
 ||peel-down.ru^$third-party
 ||pen007.ru^$third-party
 ||penza-online.ru/cgi-bin/userstats.pl?
+||penzensky.ru^$third-party
 ||people.1gb.ru^
 ||perezzz.ru^$third-party
 ||piar.com.ua^
@@ -1926,8 +1928,6 @@ _tizers.
 !
 ! AdPron IP=91.228.155.16
 /bshow.php?dimension=$third-party,script
-! Teasernet?
-.ru/rss6/?$third-party,script
 ||ad004.ru^
 ||ad05f.ru^
 ||adpron.com^
@@ -2186,11 +2186,13 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||teaser2go.com^
 !
 ! Media-Click.ru
-/runder.php?id=*&site=$script,third-party
-/under.php?id=*&site=$script,third-party
-||admedia-click.ru^$~popup,popup
-||media-click.ru^$~popup,popup
-||mediaip.ru^$~popup,popup
+||ru/text_show.php?id=$script,third-party
+||ru/tiz_show.php?id=$script,third-party
+||admedia-click.ru^
+||mediaclickru.dyndns.info^
+||media-click.ru^
+||mediaip.ru^
+||promedia-click.ru^
 !
 ! MediaLand.ru — партнёрская сеть компании «Медиа Мир».
 ||medialand.ru/code?
@@ -2231,6 +2233,7 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||2tr45.net^
 ||3oi3ue.eu^
 ||4-w-4-new.eu^
+||achievementeheight.biz^
 ||adrichmedia.info^
 ||adspot-rich.info^
 ||adspotrich.info^
@@ -2249,8 +2252,10 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||dfthplx.net^
 ||eijwpxc.net^
 ||fafggde.net^
+||fityjhnl.biz^
 ||fkhkjhj.biz^
 ||glavrich.com^
+||glue-length.biz^
 ||ikk2gh.eu^
 ||koe-dv.net^
 ||marketingrichmedia.info^
@@ -2286,6 +2291,7 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||super12.eu^
 ||web-rotation.net^
 ||web-rotator.net^
+||wregf.biz^
 ||xfnvb.biz^
 ||zqclick.net^
 ! $domain=media-code.info|media-code.ru
@@ -2307,20 +2313,20 @@ _doublepunch.ru
 _eroox.ru
 _gold-torrent.org
 _haxa.ru
+_ihomepages.hol.es
 _kipfilms.ru
 _murmann.ru
 _narodclub.net
 _ru-admin.net
 _saytturtsii.ru
 _softbaron.ru
-_spy2wc.org
 _stock-exchange.ucoz.com
 _todayanekdot.ru
 _torrentszona.com
 _vodkov.net
 ||eroox.ru^$third-party
+||extract.zz.mu^$third-party
 ||kipfilms.ru^$third-party
-||sololslol.ru^$third-party
 !
 ! Neotizer.com и им подобные
 /rotation/r.php?format=
@@ -2449,7 +2455,7 @@ _popunder.$~popup,popup
 ||rootinmyhead.ru^
 ||youformobile.ru^
 !#popunder.clients
-=http%3A//$script,domain=anime-box.ws|bookforall.ru|camelot.multilocal.ru|dsvload.net|filmsmusic.ru|football-tv.com.ua|gold-liter.org.ua|hentaichan.ru|imagepix.org|kino1000.ru|kinoplay.com.ua|lik-bez.com|narodclub.net|old-bukvaved.net|pic4pay.com|ru-admin.net|russian-cheaters.com|rustorka.com|rustorrents.net|rutracker21.org|santikov.net|screenhost.ru|transformice.ru|winimg.ru|winpic.ru|xxx-tracker.com|дсвлоад.рф
+=http%3A//$script,domain=anime-box.ws|bookforall.ru|bukvaved.net|camelot.multilocal.ru|doublepunch.ru|dsvload.net|filmsmusic.ru|football-tv.com.ua|gold-liter.org.ua|hentaichan.ru|imagepix.org|kino1000.ru|kinoplay.com.ua|lik-bez.com|narodclub.net|old-bukvaved.net|pic4pay.com|ru-admin.net|russian-cheaters.com|rustorka.com|rustorrents.net|rutracker21.org|santikov.net|screenhost.ru|transformice.ru|winimg.ru|winpic.ru|xxx-tracker.com|дсвлоад.рф
 ! =http правила успешно работают и против TizerMedia.net
 =http*/arsfu.ru$script
 =http*.arsfu.ru$script
@@ -2512,9 +2518,9 @@ _popunder.$~popup,popup
 ||po.spynets.ru^
 ||ppuru.10host.ru^
 ||qwerty.arenda263.ru^
+||sport.hudaem.ru^
 ||static2.asfile.com^
 ||top.softweb.ru^
-||tratataololol.ru^$third-party
 ||web.speedmen.ru^
 ||wiki.xxxsexvideo.info^
 ||www.clients.ads-masters.com^
@@ -2630,6 +2636,14 @@ _popunder.$~popup,popup
 echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||smi2.ru/data/js/
 !
+! spy2wc.org
+! С их судбдоменов распространяется MediaRich и PopUnder
+_spy2wc.org
+||med22iwqeq.ru^
+||sololslol.ru^
+||tilili007.ru^
+||tratataololol.ru^
+!
 ! Торговая система NADAVI
 ! e-katalog.com.ua, e-katalog.kiev.ua, e-katalog.ru, nadavi.com.ua, nadavi.ru, podberi.tv, pokupaj.com.ua, pokupaj.ru и прочие
 ###nadaviSpan
@@ -2652,6 +2666,8 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 .tizermedia.
 .htm?href=*&tm_mode=
 ||stableprofit4you.com^
+!.tizermedia#clients
+||nord.murmann.ru^
 !
 ! Tizer Stock
 .com/js/check_blocks.js|$third-party
@@ -2859,6 +2875,7 @@ echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||reunice.com^
 ||richthof.com^
 ||rtmain.com^
+||samiana.com^
 ||serveac.com^
 ||shotyfy.com^
 ||showdysl.com^
@@ -3363,6 +3380,7 @@ epidemz.net##.left > .left_block_mini:nth-child(n+2)
 epidemz.net##:not([id^="news-id-"]) > * > A[rel="nofollow"][href^="/go?"] > IMG
 epidemz.net###promo
 epidemz.net##.right > .left_block_mini:nth-child(n+3)
+||eroox.ru/blocks/
 erudition.ru##A[target="_blank"] > IMG[src^="http://www.erudition.ru/images/"]
 euro-football.ru##[id^="topbanner"]
 exler.ru###AdvertFieldCenter
@@ -3729,6 +3747,7 @@ kinopoisk.ru##.brand
 kinopoisk.ru##.superb
 ||kinopoisk.ru/*/top_banner.js?
 ||kinopoisk.ru/images/$object
+||kipfilms.ru/blocks/
 kiwi.kz###banner1000_250
 kiwi.kz###banner300_250
 kolesa.kz##.banner
