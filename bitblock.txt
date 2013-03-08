@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: TgW8iq4qeR37H+QATlUjNg
-! Last modification time (GMT): 2013.03.03 12:00
+! Checksum: /vKtz6ie1K0kk73t4rajAg
+! Last modification time (GMT): 2013.03.08 19:40
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -23,6 +23,17 @@
 @@||odnoklassniki.ru^$domain=nevosoft.ru
 @@||odnoklassniki.ru/share/odkl_share.js$domain=altapress.ru
 @@||yandex.st/share/share.js$domain=hip-hop.ru|pikucha.ru|yandex.by|yandex.com|yandex.com.tr|yandex.kz|yandex.ru|yandex.ua
+!
+!------------ «Тяжёлая артилерия» против хитрой рекламы -----------------------
+! Данные правила относятся к категории «медленных» и потенциально слишком
+! общих, а потому либо вовсе не подходят для основной подписки, либо требуют
+! некоторой предварительной обкатки.
+! Popunder
+///[^/]+/[a-z0-9]{32,42}$/$script
+! Teasernet
+///[a-z]{5,}\.com/([a-z0-9/]{12,24})$/$third-party,script
+! Скрипты MediaRich, вставленные через собственный субдомен
+///[^/.]+\.([^/]+)/.*_\1/$script
 !
 != Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
 !#social.bookmark
