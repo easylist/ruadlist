@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: LdzvozQDcIvatuqVeoYS4w
-! Last modification time (GMT): 2013.03.16 16:10
+! Checksum: 7J5N1IUuoeIoUUYcObrCHQ
+! Last modification time (GMT): 2013.03.18 11:58
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -29,11 +29,11 @@
 ! общих, а потому либо вовсе не подходят для основной подписки, либо требуют
 ! некоторой предварительной обкатки.
 ! Popunder
-///[^/]+/[a-z0-9]{32,42}$/$script
+/^[a-z]+://[^/]+/[a-z0-9]{25,42}$/$script
 ! Teasernet
-///[a-z]{5,}\.com/([a-z0-9/]{12,24})$/$third-party,script
+/^[a-z]+://[a-z]{5,}\.com/([a-z0-9/]{12,24})$/$third-party,script
 ! Скрипты MediaRich, вставленные через собственный субдомен
-///[^/.]+\.([^/]+)/.*_\1/$script
+/^[a-z]+://[^/.]+\.([^/]+)/.*_\1/$script
 !
 != Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
 !#social.bookmark
