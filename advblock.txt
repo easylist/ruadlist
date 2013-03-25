@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: Xe6BXJ5uKnC2u9U6heN6TQ
-! Last modification time (GMT): 2013.03.22 13:54
+! Checksum: T0t+Ku86BBgarCLI979nag
+! Last modification time (GMT): 2013.03.25 16:06
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1983,8 +1983,10 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ! AdvMaker.ru
 ! IP: 95.169.186.164
 /amcu_$script
+/bn.php?s=$script,third-party
 ||advmaker.ru^$third-party
 ||am11.ru^$~popup,popup
+||am15.net^
 ||web-leaders.ru^$third-party
 ! Popup windows
 ||advmaker.ru/go.php?$image,~image,popup
@@ -2143,6 +2145,9 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||x8.net/images/
 zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||zerx.ru/templates/zerxnew/images/zerx_bg.
+! $domain=filmix.net|serialu.net
+/css/branding.css
+/js/branding-rotator.js
 !
 ! i-traff.com/ru, ip=62.149.7.242
 /itraff.js
@@ -3438,7 +3443,6 @@ fileshare.in.ua###ifr
 ||file-tracker.net/images/banner/
 ||file-tracker.net/images/$object
 file-tracker.net###sidebar2
-||filmix.net/branding
 filmodrom.net###teaser-cc-cell
 filmx.com.ua##.modul-sp_main
 finance.ua###banner-zone-right
