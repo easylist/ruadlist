@@ -1,5 +1,8 @@
 @echo off
 @echo Обновление подписок...
+hg pull
+hg update --check
+hg merge
 @echo Расчёт контрольных сумм:
 hash.pl advblock.txt
 @echo * advblock.txt
@@ -10,5 +13,5 @@ hash.pl bitblock.txt
 hash.pl cntblock.txt
 @echo * cntblock.txt
 @echo Внесение изменений на сервер...
-start thg commit
-start thg sync
+hg commit
+hg push
