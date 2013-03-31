@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: zY0yfk+TMucnr7v8cXm4sQ
-! Last modification time (GMT): 2013.03.29 12:57
+! Checksum: 7SrnhFXt0XVVbAgqIvRy+A
+! Last modification time (GMT): 2013.03.31 14:31
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -3347,6 +3347,20 @@ dwg.ru##TD[background$="/img/back22.gif"] > TABLE
 ||dwg.ru/img*0_
 dynamo.kiev.ua##.hban
 !
+! DELFI
+@@||adocean.pl/files/js/ado.js$domain=delfi.lv
+@@||adocean.pl/*/key=uru/$script,domain=delfi.lv
+||ap.delfi.ua^
+delfi.lv##A[target="_blank"][href*="/shop/click.php?shop_id="]
+delfi.lv##.delfi_shop
+delfi.lv##DIV[id^="adocean"]
+delfi.lv###right > DIV[style$="248px;"]
+||delfi.lv/misc/xml_infoblocks/delfi_deal/
+delfi.ua##.articleBanner
+delfi.ua##.klucis
+delfi.ua##.wbhd
+||delphi.lv/wd/*.180x400.
+!
 !E
 e-flash.com.ua###Reclama
 ||e-flash.com.ua/templates/historylost/images/demo/
@@ -3508,6 +3522,16 @@ funmult.ru##[id^="icqwin_"]
 ||fuzz-magazine.ru/images/banners/
 ||pik-tv.com/embed/$domain=freshrecords.ru
 !
+! FastPic.ru
+! Периодически используется то одна часть этого списка, то другая
+fastpic.ru##A[target="_blank"][rel="nofollow"][href^="http://static."]
+fastpic.ru##BODY > DIV:first-child > A[style][href^="http://"]
+fastpic.ru###left
+fastpic.ru###right
+fastpic.ru###top
+||static.fastpic.ru/*_*.jpg|
+||static.fastpic.ru/js/*.js|
+!
 !G
 gagadget.com###corpMagnet
 gagadget.com###footer-holding
@@ -3592,6 +3616,17 @@ gzt.ru###bubble
 gzt.ru##.b-advertisement
 gzt.ru##.b-imported-advertisement
 gzt.ru##.soyuz_zhur
+!
+! GISMeteo domains
+gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru#@#.adv
+gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru##.news.item.links-black.links-blue
+gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru##.rframe[id^="ad-"]
+gismeteo.by,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru###rbc
+gismeteo.by,gismeteo.lv,gismeteo.ru###yandex
+gismeteo.by,gismeteo.ru,gismeteo.ua#@##ad-top
+gismeteo.ru###top_wide
+gismeteo.ua###ad-rbkua
+||gismeteo.*/rian.html|
 !
 !H
 habrahabr.ru##.banner
@@ -3718,6 +3753,25 @@ forum.ixbt.com##.top_ad2
 izone.ru##NOINDEX TABLE[width="100%"]
 izvestia.ru##.right_banner_block
 !
+! inbox.lv
+inbox.lv###inx-article > .row-2
+inbox.lv###inx-main-roof
+inbox.lv###inx-textAds
+mail.inbox.lv##.bxS-leftbar
+mail.inbox.lv##.bxS-text_link
+||inbox.lv/bxlib/
+!
+! Interfax (Домены группы «Интерфакс»)
+! BY: interfax.by
+! RU: best-money.ru,e-disclosure.ru,finmarket.ru,ideal.ru,ifx.ru,interfax.ru,interfax-russia.ru,
+!     pmoney.ru,rusbond.ru,rusbonds.ru,spark-interfax.ru,univer.ru,val.ru
+! COM: interfax.com,interfax-news.com
+/rcl/ban/*
+finmarket.ru,interfax.ru##[id^=bbInformer]
+finmarket.ru,pmoney.ru##A[href^="/RCL/TXT/"]
+interfax.by##.banner
+||interfax.by/files/$object
+!
 !J
 jeder.ru###colwrap > .module-notitle
 joyreactor.cc###branding-a
@@ -3792,6 +3846,16 @@ bazar.kp.by##.banner_list
 ||kurufin.ru/mayk_
 kyivpost.ua##.banner
 kyivpost.ua###advert_full
+!
+! KM.RU
+.lbs.km.ru/mod/_banners/*-240x200.
+.lbs.km.ru/mod/_banners/*?param1=
+||banner.lbs.km.ru^
+km.ru##.top-banner
+km.ru##IFRAME[height="90"]
+km.ru###modalOverlay
+km.ru###modalContainer
+t2t.ru##.tbn
 !
 !L
 ||l2on.net/img/friends/
@@ -3985,6 +4049,28 @@ muzofon.com###footer-placeholder
 myshows.ru###m-advert
 ||mywed.ru/bnr/
 !
+! Map.cn.ua
+map.cn.ua###adrenalin
+map.cn.ua###ais_niva
+map.cn.ua##.content + TD[width="250"] > BR
+map.cn.ua###nissan_
+map.cn.ua##.rightAdv
+map.cn.ua##.sModuleContent
+map.cn.ua##TD > TABLE[width="100%"][height="40px"]:first-child:last-child
+map.cn.ua##.topAdv
+||map.cn.ua/media/other/
+||map.cn.ua/media/promo/
+@@||map.cn.ua/media/*/tur/
+!
+! Meta.UA
+meta.ua###meta_banner_top
+meta.ua###meta_market_bottom
+meta.ua##.ads
+||meta.ua/f_new.*_teaser&
+||meta.ua/img/b/
+||meta.ua/img/banners/
+||metamarket.com.ua^$third-party
+!
 !N
 ||alpha.noob-club.ru^
 ||b.netall.ru^
@@ -4053,6 +4139,24 @@ ntv.ru##DIV[id^="flamur"]
 nwcod.com##TD[width="2"] + .slink[align="center"] > :not(#dle-content)
 nya.sh##A[style*="/imgs/a/"]
 ||nya.sh/imgs/a/
+!
+! NGS.RU
+dom.ngs.ru###logo_banners
+he.ngs.ru,she.ngs.ru,relax.ngs.ru###logos
+mail.ngs.ru,mail.ngs55.ru###td_body_right
+ngs.ru###ads-fix
+ngs.ru###kemlc
+ngs.ru##.banner
+ngs.ru##.banner-center
+ngs.ru##.big-right
+ngs.ru##DIV[id^="big-"][class^="big-"]
+ngs.ru,ngs24.ru,ngs55.ru###forms-ngs-block ~ TABLE[id]:not(#content):not(#footer)
+ngs.ru,ngs24.ru,ngs55.ru###mail_block + TD ~ TD[class]
+ngs.ru,ngs24.ru,ngs55.ru,rabota55.ru##A[class][style*="height:"][target="_blank"][href^="/"]
+ngs.ru,ngs24.ru,ngs55.ru,rabota55.ru##A[target="_blank"][href^="/"] > IMG[src^="http://static."]
+realty.ngs.ru###clients
+relax.ngs.ru###exclusive
+turizm.ngs.ru###logo-menu
 !
 !O
 ||objectiv.tv/templates/$object
@@ -4506,6 +4610,16 @@ tvigle.ru##.new-bgs-o
 ||tvigle.ru/resource/rf/rkm_disign/
 ||twirpx.com/resources/html/
 !
+! TVNet.lv
+tvnet.lv##DIV[class^="right_custom_ad_"]
+tvnet.lv##.banner
+tvnet.lv##.fp_horiz_ads_150x150
+tvnet.lv###footer_banner
+tvnet.lv##.list.customer A[href^="https://www.smscredit."]
+tvnet.lv##.list.customer A[href^="http://q.tvnet.lv/o/servlet/click/media?"]
+tvnet.lv###ad_175x300
+||b.itvnet.lv^
+!
 !U
 ua-football.com##.footer_bottom
 ua-football.com##.roz_informers
@@ -4520,6 +4634,14 @@ udaff.com##DIV[style="width:100%; background-color: #bbbd00"]
 udaff.com##NOINDEX > A > IMG
 ||udaff.com/image/$object
 ukrainianiphone.com##A[target="_blank"][href="http://www.mshop.in.ua/"]
+ukrlit.vn.ua,history.vn.ua##A[href^="http://wau.com.ua/"]
+ukrlit.vn.ua,history.vn.ua##A[target="_top"][href^="http://banner."]
+ukrlit.vn.ua,history.vn.ua##DIV[id^="bn_"]
+ukrlit.vn.ua,history.vn.ua##DIV[id^="tizerbox_"]
+ukrlit.vn.ua##.mag_tab
+ukrlit.vn.ua##.mag_tit
+ukrlit.vn.ua###rt_g193
+||ukrlit.vn.ua^$object
 ukrsoft.kiev.ua###dle-content > NOINDEX
 ||underverse.su/misc/
 unian.info,unian.net,unian.ua###counters
@@ -4544,6 +4666,15 @@ ura-inform.com##IFRAME[width="468"][height="60"]
 urod.ru##TD[width="613"] > A:not([href*="urod.ru"])
 urod.ru##TR[valign="top"] > TD[width="249"]
 ||uzumaki.kz/go?$script
+!
+! Ukr.NET
+search.ukr.net##.textAd_img
+ukr.net###baner-market
+ukr.net###b_job
+ukr.net##.b-top_right > NOINDEX > DIV[id][class]
+ukr.net##.column_1 > NOINDEX > DIV[id][class]:not(.favorites)
+ukr.net###Huy
+||portal.un.net.ua/img*/commercial/
 !
 !V
 vashgorod.ru##.job42
@@ -4584,14 +4715,6 @@ virpl.ru###logoslide
 virpl.ru##[id$="-banner"]
 vk.com###chrome_bar_content
 vkdiz.ru##.bannerbg
-history.vn.ua,ukrlit.vn.ua##A[target="_top"][href^="http://banner."]
-history.vn.ua,ukrlit.vn.ua##A[href^="http://wau.com.ua/"]
-history.vn.ua,ukrlit.vn.ua##DIV[id^="bn_"]
-history.vn.ua,ukrlit.vn.ua##DIV[id^="tizerbox_"]
-ukrlit.vn.ua##.mag_tab
-ukrlit.vn.ua##.mag_tit
-ukrlit.vn.ua###rt_g193
-||ukrlit.vn.ua^$object
 ||vlasti.net/i/ban/
 voffka.com##BR + NOINDEX
 voffka.com###links > DIV > NOINDEX
@@ -4738,74 +4861,14 @@ zol.ru##TABLE[style="table-layout:fixed; border-collapse:collapse"]
 championat.com##DIV[class^="l-popup"]
 delfi.lv###nagger-wrap
 rbcdaily.ru,rbc.ru###popup_box
+tvnet.lv###fancybox-overlay
+tvnet.lv###fancybox-wrap
 utro.ru###popup_box
 !
-! DELFI
-@@||adocean.pl/files/js/ado.js$domain=delfi.lv
-@@||adocean.pl/*/key=uru/$script,domain=delfi.lv
-||ap.delfi.ua^
-delfi.lv##A[target="_blank"][href*="/shop/click.php?shop_id="]
-delfi.lv##.delfi_shop
-delfi.lv##DIV[id^="adocean"]
-delfi.lv###right > DIV[style$="248px;"]
-||delfi.lv/misc/xml_infoblocks/delfi_deal/
-delfi.ua##.articleBanner
-delfi.ua##.klucis
-delfi.ua##.wbhd
-||delphi.lv/wd/*.180x400.
-!
-! FastPic.ru
-! Периодически используется то одна часть этого списка, то другая
-fastpic.ru##A[target="_blank"][rel="nofollow"][href^="http://static."]
-fastpic.ru##BODY > DIV:first-child > A[style][href^="http://"]
-fastpic.ru###left
-fastpic.ru###right
-fastpic.ru###top
-||static.fastpic.ru/*_*.jpg|
-||static.fastpic.ru/js/*.js|
-!
-! GISMeteo domains
-gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru#@#.adv
-gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru##.news.item.links-black.links-blue
-gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru##.rframe[id^="ad-"]
-gismeteo.by,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru###rbc
-gismeteo.by,gismeteo.lv,gismeteo.ru###yandex
-gismeteo.by,gismeteo.ru,gismeteo.ua#@##ad-top
-gismeteo.ru###top_wide
-gismeteo.ua###ad-rbkua
-||gismeteo.*/rian.html|
-!
-! inbox.lv
-inbox.lv###inx-article > .row-2
-inbox.lv###inx-main-roof
-inbox.lv###inx-textAds
-mail.inbox.lv##.bxS-leftbar
-mail.inbox.lv##.bxS-text_link
-||inbox.lv/bxlib/
-!
-! Interfax (Домены группы «Интерфакс»)
-! BY: interfax.by
-! RU: best-money.ru,e-disclosure.ru,finmarket.ru,ideal.ru,ifx.ru,interfax.ru,interfax-russia.ru,
-!     pmoney.ru,rusbond.ru,rusbonds.ru,spark-interfax.ru,univer.ru,val.ru
-! COM: interfax.com,interfax-news.com
-/rcl/ban/*
-finmarket.ru,interfax.ru##[id^=bbInformer]
-finmarket.ru,pmoney.ru##A[href^="/RCL/TXT/"]
-interfax.by##.banner
-||interfax.by/files/$object
-!
-! KM.RU
-.lbs.km.ru/mod/_banners/*-240x200.
-.lbs.km.ru/mod/_banners/*?param1=
-||banner.lbs.km.ru^
-km.ru##.top-banner
-km.ru##IFRAME[height="90"]
-km.ru###modalOverlay
-km.ru###modalContainer
-t2t.ru##.tbn
+! А далее идёт какой-то особый интернет…
 !
 ! Mail.ru и Одноклассники
-! Объединять правила с banner в конце не стоит — на самом деле там ещё классы перечислены часто.
+! Объединять правила с banner в конце не стоит — там ещё другие классы перечислены часто
 ! Скрытие по-разделам
 auto.mail.ru##.addMain2
 cards.mail.ru##.pt10.center
@@ -4896,46 +4959,6 @@ odnoklassniki.ru##.update-browser_container
 ! Потенциальное решение проблемы с играми в Одноклассниках
 @@||mail.ru/adi/2174?$domain=odnoklassniki.ru
 @@||mail.ru/adi/2247?$domain=odnoklassniki.ru
-!
-! Map.cn.ua
-map.cn.ua###adrenalin
-map.cn.ua###ais_niva
-map.cn.ua##.content + TD[width="250"] > BR
-map.cn.ua###nissan_
-map.cn.ua##.rightAdv
-map.cn.ua##.sModuleContent
-map.cn.ua##TD > TABLE[width="100%"][height="40px"]:first-child:last-child
-map.cn.ua##.topAdv
-||map.cn.ua/media/other/
-||map.cn.ua/media/promo/
-@@||map.cn.ua/media/*/tur/
-!
-! Meta.UA
-meta.ua###meta_banner_top
-meta.ua###meta_market_bottom
-meta.ua##.ads
-||meta.ua/f_new.*_teaser&
-||meta.ua/img/b/
-||meta.ua/img/banners/
-||metamarket.com.ua^$third-party
-!
-! NGS.RU
-dom.ngs.ru###logo_banners
-he.ngs.ru,she.ngs.ru,relax.ngs.ru###logos
-mail.ngs.ru,mail.ngs55.ru###td_body_right
-ngs.ru###ads-fix
-ngs.ru###kemlc
-ngs.ru##.banner
-ngs.ru##.banner-center
-ngs.ru##.big-right
-ngs.ru##DIV[id^="big-"][class^="big-"]
-ngs.ru,ngs24.ru,ngs55.ru###forms-ngs-block ~ TABLE[id]:not(#content):not(#footer)
-ngs.ru,ngs24.ru,ngs55.ru###mail_block + TD ~ TD[class]
-ngs.ru,ngs24.ru,ngs55.ru,rabota55.ru##A[class][style*="height:"][target="_blank"][href^="/"]
-ngs.ru,ngs24.ru,ngs55.ru,rabota55.ru##A[target="_blank"][href^="/"] > IMG[src^="http://static."]
-realty.ngs.ru###clients
-relax.ngs.ru###exclusive
-turizm.ngs.ru###logo-menu
 !
 ! Rambler.RU и их проекты
 ||ad.rambler.ru^
@@ -5053,15 +5076,6 @@ torrent*.com/afisha/*x$image
 ! «ТЕМА - объявления социальной сети»
 @@||adsvk.com/images/advertising/$~third-party
 @@||adsvk.com/scripts/advertise_$~third-party
-!
-! Ukr.NET
-search.ukr.net##.textAd_img
-ukr.net###baner-market
-ukr.net###b_job
-ukr.net##.b-top_right > NOINDEX > DIV[id][class]
-ukr.net##.column_1 > NOINDEX > DIV[id][class]:not(.favorites)
-ukr.net###Huy
-||portal.un.net.ua/img*/commercial/
 !
 ! Сеть городских сайтов Украины
 ua##A[href^="/redirect/url?url="] > IMG[src^="/upload/jackets/"]
