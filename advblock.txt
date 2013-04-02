@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: 1mnm+ET4t2AHbQq+Ahrpew
-! Last modification time (GMT): 2013.04.02 14:12
+! Checksum: drEqtI4ZVUhoDTCzDEQtmg
+! Last modification time (GMT): 2013.04.02 17:51
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -574,8 +574,6 @@ _tizers.
 /clk.js|
 /cout.php?sid=$script
 /fotocash.js
-! $randname.dyndns.info|tv/infob.php?i=
-/infob.php?i=$third-party,script
 /js/girls.php|
 ! $domain=4files.net|qiq.ru|qiq.ws
 /media/kalita$script
@@ -634,19 +632,15 @@ _tizers.
 //213.186.217.210/banners/*
 //217.170.78.*/banners/*
 !
-! - WAP -----------------------------------------------------------------------
-!#wap.bookmark
-||adpix.ru^
-||eban.mobi^
-||kazban.su^
-||mbn.su^
-||nclick.ru^
-||neoban.su^
-||onban.ru^
-||owap.su^
-||payban.su^
-||rosban.su^
-||wbn.su^
+! - FreeDNS -------------------------------------------------------------------
+!#freedns.bookmark
+! К сожалению их часто используют для распространения всяческой гадости.
+! $domain=dyndns.biz|dyndns.tv|dyndns.info|dyndns.org
+||dyndns.^$third-party,script,subdocument
+! $domain=dyndns-home.com|dyndns-office.com|dyndns-web.com|dyndns-blog.com
+||dyndns-^$third-party,script,subdocument
+||chickenkiller.com^$third-party,script,subdocument
+||quelliclub.ru^$third-party,script,subdocument
 !
 ! - Имена ---------------------------------------------------------------------
 !#domains.bookmark
@@ -726,6 +720,7 @@ _tizers.
 ||admulti.$third-party
 ||adne.info^$third-party
 ||adpath.ru^
+||adpix.ru^
 ||adpro.com.ua^
 ! $domain=adrock.com.ua|adrock.ua
 ||adrock.$third-party
@@ -933,9 +928,7 @@ _tizers.
 ||duuw.nm.ru^
 ||dverizamki.org/bshow/
 ||dvsign.net^
-||dyndns.*/js_if.php?id=
-||dyndns.$subdocument,third-party
-||dyndns-web.com/js_if.php?id=
+||eban.mobi^
 ||e-links.ru^
 ||e-mint.ru^$third-party
 ||e-place.ru^
@@ -1139,6 +1132,7 @@ _tizers.
 ||kavanga.ru/exp?$subdocument
 ||kavanga.ru/tpl/$third-party
 ||kavkazweb.net/tc.cgi?
+||kazban.su^
 ||ket.ru^$third-party
 ||kingpeon.com^$third-party
 ||kino-top.ru/images/ban*.gif
@@ -1235,7 +1229,8 @@ _tizers.
 ||mazuma.ru^$third-party
 ||mbanner.net^$third-party
 ||mben.ru^$third-party
-||mbn.kr.ua^$third-party
+||mbn.kr.ua^
+||mbn.su^
 ||mdesign.planet.ee^$third-party
 ||med.finsecret.ru^$third-party
 ||media-x.ru^
@@ -1304,9 +1299,11 @@ _tizers.
 ||myuniques.ru^
 ||narod.kz/img.php?
 ||nasf.ru/ad/
+||nclick.ru^
 ||neat-url.com^$third-party
 ||need2buy.1gb.ru^
 ||negolist.com^$third-party
+||neoban.su^
 ||neosap.ru^$third-party
 ||neosmi.ru^$third-party
 ||netporno.org^$third-party
@@ -1344,6 +1341,7 @@ _tizers.
 ||oldcombats.net/images_banner/
 ||ololo.tv/?$third-party
 ||on-line-adv.com^
+||onban.ru^
 ||one.ru/cgi-bin
 ||onlineresume.ru/banner*?
 ||only4men.ru^$third-party
@@ -1360,6 +1358,7 @@ _tizers.
 ||orthosmi.ru^$third-party
 ||oru.ru^$third-party
 ||otclick-adv.ru^
+||owap.su^
 ||owebmoney.ru^$third-party
 ||oxysoft.ru^$third-party
 ||oyy.ru^
@@ -1382,6 +1381,7 @@ _tizers.
 ||partners.mobiguru.ru^
 ||partners.otpusk.com^$third-party
 ||partners.vsemayki.ru^$third-party
+||payban.su^
 ||pay-click.ru^
 ||pay-hit.com^
 ||pay-partner.ru^$third-party
@@ -1510,6 +1510,7 @@ _tizers.
 ||rollad.ru^
 ||rookee.ru^$third-party
 ||rorer.ru^$third-party
+||rosban.su^
 ||rosphoto.com/img/
 ||rot.rusoul.ru/rotator/
 ||rotapost.ru^$third-party
@@ -1763,6 +1764,7 @@ _tizers.
 ||warnet.ws/banners/
 ||wau.com.ua^$domain=~wau.com.ua
 ||wave525.com.ua^$domain=~wave525.com.ua
+||wbn.su^
 ||web-rom.ru^
 ||web-visor.$third-party
 ||webanalyzer.com.ua/download/wasape/
@@ -1816,39 +1818,20 @@ _tizers.
 ||zuni.tyndex.ru^$third-party
 !
 ! [unknown]
+! keyword: 404
+||steampackforcats.info^
+||steampackformouse.info^
+!
+! [unknown]
 ! keyword: favicon
 ! keyword: реклама хостинга JooHost вместо сайта
 ||info/?*=$script,third-party
 ! IP=50.63.202.*
-! ||differentdesign.info^$~popup,popup
-! ||differenttypes.info^$~popup,popup
-! ||gateway-address.info^$~popup,popup
-! ||heavens-tree.info^$~popup,popup
-! ||image-processing.info^$~popup,popup
-! ||knowbot-wt.info^$~popup,popup
-! ||link-farm.info^$~popup,popup
-! ||moderator-net.info^$~popup,popup
-! ||networkserf.info^$~popup,popup
-! ||opposingban.info^$~popup,popup
-! ||ping-moderator.info^$~popup,popup
-! ||ping-proxy.info^$~popup,popup
-! ||polymovie.info^$~popup,popup
-! ||pop-proxy.info^$~popup,popup
-! ||shelbycarter.info^$~popup,popup
+! $domain=differentdesign.info|differenttypes.info|gateway-address.info|heavens-tree.info|image-processing.info|knowbot-wt.info|link-farm.info|moderator-net.info|networkserf.info|opposingban.info|ping-moderator.info|ping-proxy.info|polymovie.info|pop-proxy.info|shelbycarter.info
 ! IP=184.168.221.*
-! ||doom-place.info^
-! ||doomsite.info^
-! ||nameyour.info^
-! ||pollyproducts.info^
-! ||ranking-it.info^
-! ||sosilent.info^
-! ||tenantbook.info^
-! ||trailer-trash.info^
-! ||updouble.info^
+! $domain=doom-place.info|doomsite.info|nameyour.info|pollyproducts.info|ranking-it.info|sosilent.info|tenantbook.info|trailer-trash.info|updouble.info
 ! other
-||chickenkiller.com^
 ||chikano.info^
-||nine.tv-best.net^
 ||nine.winimg.ru^
 ||tripadv.info^
 !
@@ -2209,7 +2192,6 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||ru/text_show.php?id=$script,third-party
 ||ru/tiz_show.php?id=$script,third-party
 ||admedia-click.ru^
-||mediaclickru.dyndns.info^
 ||media-click.ru^
 ||mediaip.ru^
 ||promedia-click.ru^
@@ -3943,6 +3925,7 @@ mail.google.com##div.ae5
 marker.ru##.banner
 market.tut.ua###salut_splash
 market-pages.ru##.sovet
+masteroff.org##TD:first-child + TD[width="250"]
 materialscience.ru##.sape
 maulnet.ru##.top_banner
 maulnet.ru##CENTER > STRONG
