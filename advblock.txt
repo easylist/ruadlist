@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: drEqtI4ZVUhoDTCzDEQtmg
-! Last modification time (GMT): 2013.04.02 17:51
+! Checksum: hutSdHdVf/IJCpi7o1VysA
+! Last modification time (GMT): 2013.04.02 18:12
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -152,10 +152,10 @@
 ||vkonagt.com^$~popup,popup
 ||worldweather.tnebldc.org^$~popup,popup
 ! "Антивирус "Тревога" и тому подобное
-.info/alert/assets/
-.info/alert/banners.
-.info/alert/m.vk/
-.info/alert/vjb.html?
+! .info/alert/assets/
+! .info/alert/banners.
+! .info/alert/m.vk/
+! .info/alert/vjb.html?
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
 ||youtube.com^$domain=2officialnik.biz|help2play.com|otveti2012.ru|otvetru.ru|vkonagt.com
 ! Попапы и редирект (мошенники) на turbobit.net
@@ -554,7 +554,7 @@ _tizers.
 ||soft-pays.ru^
 ||traffru.ru^
 ||under-click.ru^
-||vipmest.info^
+! ||vipmest.info^
 ||vipop.ru^
 ||w717.com^
 ||webmastak.net^
@@ -632,9 +632,14 @@ _tizers.
 //213.186.217.210/banners/*
 //217.170.78.*/banners/*
 !
+! Домен первого уровня INFO
+! К сожалению на нём зарегистрировано просто чудовищное количество доменов для
+! распространения крайне навязчивой рекламы и вирусов.
+||info^$third-party,script,subdocument
+!
 ! - FreeDNS -------------------------------------------------------------------
 !#freedns.bookmark
-! К сожалению их часто используют для распространения всяческой гадости.
+! К сожалению часто используются для распространения крайне навязчивой рекламы и вирусов.
 ! $domain=dyndns.biz|dyndns.tv|dyndns.info|dyndns.org
 ||dyndns.^$third-party,script,subdocument
 ! $domain=dyndns-home.com|dyndns-office.com|dyndns-web.com|dyndns-blog.com
@@ -718,7 +723,7 @@ _tizers.
 ||admimsy.com^$third-party
 ! $domain=admulti.com|admulti.ru
 ||admulti.$third-party
-||adne.info^$third-party
+! ||adne.info^$third-party
 ||adpath.ru^
 ||adpix.ru^
 ||adpro.com.ua^
@@ -823,7 +828,7 @@ _tizers.
 ||binimage.de^
 ||bit.ly^$subdocument,third-party
 ||bizua.com^$third-party
-||bk.goodline.info^
+! ||bk.goodline.info^
 ||blogun.ru^$third-party
 ||bloha.net^
 ||blowclick.ru^
@@ -936,7 +941,7 @@ _tizers.
 ||earnnetmoney.narod.ru^$third-party
 ||ecosigara.com.ua/partners/
 ||effad.ru^
-||ekod.info^
+! ||ekod.info^
 ||elephant.fotostrana.ru^
 ||emnodar.ru^
 ||entercash.ru^
@@ -1006,7 +1011,7 @@ _tizers.
 ||gettraf.org^
 ||ggsaffiliates.com^
 ||gigamega.ru^
-||giper.info^$third-party
+! ||giper.info^$third-party
 ||gipertyerusu.com^
 ||girl-rus.com^$third-party
 ||girlstalks.ru^$third-party
@@ -1019,7 +1024,7 @@ _tizers.
 ||gnezdo.ru^
 ||go.bb.ru/images/
 ||go.jetswap.com^
-||gold-click.info^
+! ||gold-click.info^
 ||gold-traf.ru^
 ||goldentraffic.ru^
 ||goldfishkapartners.com^
@@ -1031,7 +1036,7 @@ _tizers.
 ||goodbody.ru^$third-party
 ||good-teasers.ru^
 ||google-analistyc.
-||googlnet.info^
+! ||googlnet.info^
 ||goon.ru^$third-party
 ||govazd.am^
 ||gravdee.com^
@@ -1047,7 +1052,7 @@ _tizers.
 ||helper.clan.su^$third-party
 ||helpls.ru^
 ||heroeswm.ru^$third-party
-||hiddenjs.info^
+! ||hiddenjs.info^
 ||hit-sales.ru^
 ||hitex.com.ua^$domain=~hitex.com.ua
 ||hitlist.ru^$third-party
@@ -1089,7 +1094,7 @@ _tizers.
 ||inheart.ru^$third-party
 ||inmoment.ru^$third-party
 ||inoe.name^$third-party
-||inshops.info^$third-party
+! ||inshops.info^$third-party
 ||instantcash.ru^$third-party
 ||intel.com/b/
 ||internalinspector.com^
@@ -1263,7 +1268,7 @@ _tizers.
 ||missbelle.ru^$third-party
 ||mlgame.ru/wiki/attach/Referal/
 ||mnogo.ru^$third-party
-||mobbit.info^$third-party
+! ||mobbit.info^$third-party
 ||mobn.net^$third-party
 ||modastro.ee^$third-party
 ||moifoto.ru/rek_
@@ -1365,7 +1370,7 @@ _tizers.
 ||ozenuydu.com/resim
 ||ozon.ru^$script,third-party
 ||ozon.ru/graphics/img_ass/468/
-||p-rank.info^$third-party
+! ||p-rank.info^$third-party
 ||p-search.org^$third-party
 ||palantir.in/showban*.php?
 ||pammru.net^$third-party
@@ -1411,7 +1416,7 @@ _tizers.
 ||plus10sm.ru^$third-party
 ||pochta.ru^$third-party
 ||podro4u.ru/obzor/rek/
-||podsmotri.info^$third-party
+! ||podsmotri.info^$third-party
 ||poisk.su/img.php?
 ||poisk.su/top.php?
 ||pokaifu.com/templates/
@@ -1505,7 +1510,7 @@ _tizers.
 ||rmbn.ru^$third-party
 ||rnbn.ru^$third-party
 ||rnd.yxo.ru^
-||robotext.info^
+! ||robotext.info^
 ||robottext.ru^
 ||rollad.ru^
 ||rookee.ru^$third-party
@@ -1581,7 +1586,7 @@ _tizers.
 ||sitetraff.ru^$third-party
 ||simplity.ru^$third-party
 ||skylog.kz/img.php?
-||slimnis.agrok.info^
+! ||slimnis.agrok.info^
 ||slimp.net^$third-party
 ||smart-soft.ru^$third-party
 ||smartb.2gsg.com^
@@ -1652,8 +1657,8 @@ _tizers.
 ||timeweb.ru/img/b/
 ||titanpoker.com^$third-party
 ||tizerget.net^
-||tizergid.info^
-||tizerman.info^
+! ||tizergid.info^
+! ||tizerman.info^
 ||tizero.ru^
 ||tizerplus.ru^
 ||tizertraf.ru
@@ -1817,23 +1822,22 @@ _tizers.
 ||zto.h16.ru^$third-party
 ||zuni.tyndex.ru^$third-party
 !
-! [unknown]
+! [unknown] IP=62.76.190.7
 ! keyword: 404
-||steampackforcats.info^
-||steampackformouse.info^
+/user_code/whatsone.php?avast=
+||iiiiiiioiiiiiii.com^
+! $domain=ioioioi.info|ioiiioi.info|usercode.info|usercode1.info|usercode2.info|usercode3.info|usercode4.info|usercode5.info|usercode6.info|usercode7.info|usercode8.info|usercode9.info|steampackforcats.info|steampackformouse.info
 !
 ! [unknown]
 ! keyword: favicon
 ! keyword: реклама хостинга JooHost вместо сайта
-||info/?*=$script,third-party
 ! IP=50.63.202.*
 ! $domain=differentdesign.info|differenttypes.info|gateway-address.info|heavens-tree.info|image-processing.info|knowbot-wt.info|link-farm.info|moderator-net.info|networkserf.info|opposingban.info|ping-moderator.info|ping-proxy.info|polymovie.info|pop-proxy.info|shelbycarter.info
 ! IP=184.168.221.*
 ! $domain=doom-place.info|doomsite.info|nameyour.info|pollyproducts.info|ranking-it.info|sosilent.info|tenantbook.info|trailer-trash.info|updouble.info
 ! other
-||chikano.info^
+! $domain=chikano.info|tripadv.info
 ||nine.winimg.ru^
-||tripadv.info^
 !
 ! [unknown] IP=188.120.243.235
 ! .in/n1/js.php?i=
@@ -2226,6 +2230,7 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 .asia^$script,domain=com|net|org|ru
 /code.php?idsite=$third-party
 /gask.cgi?ids=$third-party
+! $domain=adrichmedia.info|adspot-rich.info|adspotrich.info|adsrichmedia.info|advertising-richmedia.info|advertisingrichmedia.info|codemedia.info|code-rich.info|marketingrichmedia.info|media-clicks.info|richadplace.info|richads.info|rich-ad-spot.info|richadspot.info|richadvertising.info|richadvertisingspot.info|richmedia-adspot.info|richmediaadspot.info
 ||12-art-2-i.eu^
 ||212-sueper.eu^
 ||212sueper.eu^
@@ -2236,17 +2241,9 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||3oi3ue.eu^
 ||4-w-4-new.eu^
 ||achievementeheight.biz^
-||adrichmedia.info^
-||adspot-rich.info^
-||adspotrich.info^
-||adsrichmedia.info^
-||advertising-richmedia.info^
-||advertisingrichmedia.info^
 ||codeextrarich.net^
-||codemedia.info^
 ||code-mediarich.ru^
 ||codemediarich.ru^
-||code-rich.info^
 ||codes-media.ru^
 ||codexq.net^
 ||cooleightds.eu^
@@ -2260,8 +2257,6 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||glue-length.biz^
 ||ikk2gh.eu^
 ||koe-dv.net^
-||marketingrichmedia.info^
-||media-clicks.info^
 ||mediacod.in^
 ||mediakode.in^
 ||media-kod.net^
@@ -2277,15 +2272,7 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||nuigyin.net^
 ||onlinerotator.net^
 ||plus-2launch.biz^
-||richadplace.info^
-||richads.info^
-||rich-ad-spot.info^
-||richadspot.info^
 ||rich-adv-code.net^
-||richadvertising.info^
-||richadvertisingspot.info^
-||richmedia-adspot.info^
-||richmediaadspot.info^
 ||rotation-media.net^
 ||rotation-message.net^
 ||rotationmessage.net^
@@ -2506,7 +2493,7 @@ _popunder.$~popup,popup
 ||root.qw.su^
 ||sport.hudaem.ru^
 ||top.softweb.ru^
-||wiki.xxxsexvideo.info^
+! ||wiki.xxxsexvideo.info^
 ||xy.6gp.ru^
 ||zork.jerkngo.com^
 !
@@ -2976,7 +2963,7 @@ ihomepages.hol.es###nor_wrap
 ||clickadvert.net^
 ! $domain=clickgain.biz|clickgain.info
 ||clickgain.$third-party
-||clicksadvert.info^
+! ||clicksadvert.info^
 ||gainclick.co^
 ||mubra.ru^
 ||some.demuz.ru^
@@ -2985,13 +2972,13 @@ ihomepages.hol.es###nor_wrap
 ||taril2.ru^
 ||taril3.ru^
 !#paymonsters.main
-||1poiuoupd.info^
+! ||1poiuoupd.info^
 ||23mfdoe32rs.ru^
-||2h45iu324.info^
-||34u6oiu13df.info^
-||good-teaser.info^
-||j2k5j2j5jj.info^
-||jkk234-134.info^
+! ||2h45iu324.info^
+! ||34u6oiu13df.info^
+! ||good-teaser.info^
+! ||j2k5j2j5jj.info^
+! ||jkk234-134.info^
 ||jxrhjcb.biz^
 ||mdlo324fsd.ru^
 ||p2m0001.com^
