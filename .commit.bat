@@ -2,6 +2,7 @@
 @echo Обновление подписок...
 hg pull
 hg update --check
+hg update
 hg merge
 @echo Расчёт контрольных сумм:
 hash.pl advblock.txt
