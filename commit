@@ -40,17 +40,9 @@ commit_script() {
         echo Do not save message or press Ctrl+C \(right here\) to stop commit.
     fi
     echo -------------------------------------------------------------------------------
-    gedit hg-commit.msg
-    wait
+    hg commit
     if [ $? = 0 ]; then
-        # perform commit if there is commit message
-        if [ -e hg-commit.msg ]; then
-            hg commit -l hg-commit.msg
-            hg push
-            rm -f hg-commit.msg
-        else
-            echo No commit message. Commit stopped.
-        fi
+        hg push
     fi
 }
 
