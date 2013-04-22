@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: ah4DsQW5UFgEQXMCIUICjQ
-! Last modification time (GMT): 2013.04.17 12:33
+! Checksum: HOfVMJATnY2zvlV97iyQSQ
+! Last modification time (GMT): 2013.04.22 00:41
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -35,6 +35,7 @@
 /^[a-z]+://[a-z]{5,}\.com/([a-z0-9/]{12,24})$/$third-party,script
 ! Скрипты MediaRich, вставленные через собственный субдомен
 /^[a-z]+://[^/.]+\.([^/]+)/.*_\1/$script
+/^[a-z]+://[a-z-]{10,}\.[a-z]{2,4}/[a-zA-Z0-9/-]{10,16}/$/$third-party,script
 !
 != Социальные сеточки (выключайте те правила, которые вам не нужны) ===========
 !#social.bookmark
