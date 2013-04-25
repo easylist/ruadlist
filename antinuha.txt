@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: AnFrv4ke630HbK98mEuHTw
-! Last modification time (GMT): 2013.02.21 04:41
+! Checksum: kMufhGTrheaFRojrLN/Zyg
+! Last modification time (GMT): 2013.02.21 15:21
 ! Expires: 3 days (подписка обновляется автоматически каждые 3 дня)
 ! Homepage: http://ruadlist.googlecode.com/
 ! Дополнительная подписка фильтров RU AntiPron List
@@ -130,9 +130,9 @@ wallpapers/girls/
 ##A[href*="%fd%f0%ee%f2%e8"]
 ##A[href*="%FD%F0%EE%F2%E8"]
 ##A[href*="ero"][href*="fotki"]
-##A[href*="ero"][href*="foto"]
-##A[href*="ero"][href*="film"]
-##A[href*="ero"][href*="video"]
+##A[href*="ero"][href*="foto"]:not([title~="[href*="Aero"]"]):not([title~="[href*="aero"]"])
+##A[href*="ero"][href*="film"]:not([title~="[href*="Aero"]"]):not([title~="[href*="aero"]"])
+##A[href*="ero"][href*="video"]:not([title~="[href*="Aero"]"]):not([title~="[href*="aero"]"])
 ~severodvinska.net##A[href*="ero"][href*="tube"]
 ##A[href*="ero"][href*="porn"]
 ##A[href*="ero"][href*="sex"]
@@ -3516,3 +3516,4 @@ z-devka.edu.ms,zacada.my1.ru,zadok.at.ua,zadorno.com,zadrochi.ru,zadveryu.com,za
 photo.i.ua##A[href="/user/2890828/319730/"]
 ru-admin.net##A[href="/webmaster/"]
 ru-admin.net##A[href="http://ru-admin.net/mobile/"] + DIV + .mbl
+
