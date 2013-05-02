@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: 33Lis8lahmXDwPE0zKTwgA
-! Last modification time (GMT): 2013.05.01 20:41
+! Checksum: fwqEilgBKRHWOFVNXv0j4A
+! Last modification time (GMT): 2013.05.02 11:46
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -2949,10 +2949,11 @@ ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
 ||newsmarket.pixarea.ru^
 ||visitweb.com^
 !
-! VKnotifier («Ваша страница ВКонтакте заблокирована»)
-~vk.com##DIV[class*="notifier_baloon_"]
-~vk.com##DIV[id$="notifiers_wrap"]
-~vk.com###vkMsg
+! VKnotifier («Ваша страница ВКонтакте заблокирована, Вам … прислала сообщение»)
+##DIV[class*="notifier_baloon_"]
+##DIV[id$="notifiers_wrap"]
+###vkMsg
+###nor_wrap
 ihomepages.hol.es###nor_wrap
 /code/click.php?id=$image,~image,popup
 /mp3player.swf?file=*/bb1.mp3
@@ -2968,6 +2969,7 @@ ihomepages.hol.es###nor_wrap
 ||andrak.ru^
 ||clickadvert.net^
 ||clickgain.biz^
+||four8city.in^
 ||gainclick.co^
 ||mubra.ru^
 ||muzomuz.ru^
@@ -3202,6 +3204,7 @@ chatadelic.net##.ads
 chatadelic.net##.block_links
 ||chatme.ru/29_ylh/
 ||chatme.ru/im_rek/
+||cheklab.ru^$object
 ||chemport.ru^*_994x90.
 chesspro.ru##TABLE[style="width: 100%; height: 90; margin-bottom: 5px"]
 ||chesspro.ru/_banners/
@@ -4223,8 +4226,8 @@ pikabu.ru##.first_story:not(.pg)
 pingvinoff.net###daos
 pingvinoff.net##.entry > DIV[style^="float:"]
 ||pingvinoff.net/bnr/
-piratbit.net##A[target="_blank"][href^="http://ad."]
 piratbit.net##DIV[id^="bn_"]
+piratbit.net###ti1block
 ||piratski.ru/*_banner.
 pitbit.ru##DIV[id^="banner-right-inside"]
 ||piter.com/files/b_a_n_n_e_r_s/
