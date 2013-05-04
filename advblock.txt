@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: uv61aWC36ZUxkv7niQUY+A
-! Last modification time (GMT): 2013.05.02 13:47
+! Checksum: QCeZBhjZ/Vd3dxGkYg4mMQ
+! Last modification time (GMT): 2013.05.04 14:17
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -19,8 +19,7 @@
 ! = Сайты-попапы (самостоятельно открываются в новом окне) ====================
 !#popup.bookmark
 ! - Общие правила -------------------------------------------------------------
-///\d{5,}/$image,~image,popup
-@@||551772.ru^$image,~image,popup
+///\d{5,}\.[a-z0-9-]\./$image,~image,popup
 /ad/popup/*$image,~image,popup
 /popads/*$image,~image,popup
 /popads.$image,~image,popup
@@ -5403,3 +5402,4 @@ kinovizit.tv##BODY + DIV[align][style]
 @@||premium.mbn.com.ua^$script,domain=ura-inform.com
 @@||rbc.medialand.ru/code?*&oin=0&$domain=utro.ru
 @@||rbc.magna.ru/xml_out/?$domain=utro.ru
+
