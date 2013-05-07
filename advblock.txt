@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: h5hPjw96oPgAb/TATKM4uw
-! Last modification time (GMT): 2013.05.07 15:55
+! Checksum: +Kw03U/Bd3SzaETrxYh9zw
+! Last modification time (GMT): 2013.05.07 17:06
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -2839,6 +2839,7 @@ _spy2wc.org
 ||olizyr.com^
 ||outwitch.com^
 ||palandan.com^
+||pastilon.com^
 ||polimantu.com^
 ||poollast.com^
 ||priesty.com^
@@ -2857,6 +2858,7 @@ _spy2wc.org
 ||solanog.com^
 ||sonnents.com^
 ||sontere.com^
+||sopital.com^
 ||sourdi.com^
 ||sovietit.com^
 ||sparical.com^
@@ -2891,14 +2893,22 @@ _spy2wc.org
 ||vidustal.com^
 ||vietalle.com^
 ||vinregle.com^
+||waladon.com^
 ||wedgeac.com^
 ||yandepit.com^
 ||zdenochary.com^
 ||zontrans.com^
 !#teasernet.clients
-.com/rss*?*=*&*=*&*=$third-party,script
-.com/s$script,domain=24warez.ru|cmexota.ru|comp-inform.ru|demotivators.to|dir300.ru|eroox.ru|fivemusic.ru|gold-torrent.org|huyandex.com|imageban.ru|kinopod.ru|last.by|mp3prima.com|oplayer.org|palevo.com|pic4you.ru|plus100500.ru|privsex.ru|ru-admin.net|softsnew.ru|uptube.su|vodkov.net|vodvore.net|vseblidynas.ru|vtraxe.com|xxxlili.ru|xxx-story.ru|x-zona.org
-/jquery.js|$third-party,domain=24warez.ru|cmexota.ru|comp-inform.ru|demotivators.to|dir300.ru
+/^[a-z]+://[a-z]{5,}\.com/([a-z0-9/]{12,24})$/$third-party,script
+! .com/rss*?*=*&*=*&*=$third-party,script
+! .com/s$script,domain=24warez.ru|anidub.com|cmexota.ru|comp-inform.ru|demotivators.to|dir300.ru
+! .com/s$script,domain=eroox.ru|fivemusic.ru|gold-torrent.org|huyandex.com|imageban.ru
+! .com/s$script,domain=kinopod.ru|last.by|mp3prima.com|oplayer.org
+! .com/s$script,domain=palevo.com|pic4you.ru|plus100500.ru|privsex.ru
+! .com/s$script,domain=ru-admin.net|softsnew.ru|uptube.su
+! .com/s$script,domain=vodkov.net|vodvore.net|vseblidynas.ru|vtraxe.com
+! .com/s$script,domain=xxxlili.ru|xxx-story.ru|x-zona.org
+/jquery.js|$third-party,domain=24warez.ru|anidub.com|cmexota.ru|comp-inform.ru|demotivators.to|dir300.ru
 /jquery.js|$third-party,domain=eroox.ru|fivemusic.ru|gold-torrent.org|huyandex.com|imageban.ru
 /jquery.js|$third-party,domain=kinopod.ru|last.by|mp3prima.com|oplayer.org
 /jquery.js|$third-party,domain=palevo.com|pic4you.ru|plus100500.ru|privsex.ru
@@ -3221,8 +3231,9 @@ citysmile.ru##NOFOLLOW > NOINDEX > A[target="_blank"]
 ||clubvolvo.ru/crash/$object
 ||club.ru/banners.php$subdocument
 ||clubsexa.com/sopero.js
-cmexota.ru##A[href^="http://znews.su/go_"]
-cmexota.ru##A[target="_blank"][href*="/link.php?"]
+cmexota.ru##.fullnews > :not([id^="news-id-"])
+cmexota.ru##.menutop > TABLE[width="250"]
+cmexota.ru##.rightmenu
 cmexota.ru##.topbrmenu
 ||cmexota.ru/uploads/mini/nu_
 ||cmexota.ru/uploads/$script
