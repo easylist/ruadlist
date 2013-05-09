@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: gxjYsW2NSX41sARenPmxSg
-! Last modification time (GMT): 2013.05.08 17:19
+! Checksum: 047ljnuZ1gmYG0uh5DmnOQ
+! Last modification time (GMT): 2013.05.09 21:15
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1999,8 +1999,6 @@ gismeteo.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 /abnl/?begun=
 ?begun=*&begun_referrer=*&begun_location=
 /begun.js
-@@||video.begun.ru/crossdomain.xml|$domain=multxit.ru
-@@||video.begun.ru/flowplayer_begun_lib.swf|
 !
 ! BinMedia.ru
 ! 178.162.179.13
@@ -3061,8 +3059,10 @@ ihomepages.hol.es###nor_wrap
 ||21region.org/uploads/main/rb/
 ||24video.net/css/branding/
 24warez.ru##.hbanner
-||2baksa.net/download/
-@@||2baksa.net/download/images/~off/$image,~third-party
+2baksa.net##A[target="_blank"] > IMG[src^="/download/"]
+||2baksa.net/js/vivo.
+||2baksa.net/msg.
+||2baksa.net/newclk.
 2ch.hk,2ch.pm,2-ch.so##[class^="rek"]
 2ip.ru##.active[id^="adv"]
 2ip.ru##.ads + .nav
@@ -3153,16 +3153,13 @@ azart.net.ua##A[href="/adv.php"]
 !B
 babysaratov.ru##A[target="_blank"] > IMG[width="210"][height="115"]
 ||babysaratov.ru/img/$object
-bagnet.org##.banner
-||bagnet.org/doc/images/
-@@||bagnet.org/doc/images/*/
+bagnet.org###header-banner
+bagnet.org###top-banner-box
 bape3.org##A[target="_blank"][href^="http"] > IMG
 ||bape3.org^*.php|
 bash.im##.quote > .text:first-child
 bash.im##.quote > DIV[style]
 bash.im###menubar > DIV[style^="float:"]
-@@||bash.im/faq|$elemhide
-@@||bash.im/webmaster|$elemhide
 batzbatz.com###dle-content > SPAN > NOINDEX
 ||baumanki.net/templates/open-slaed/img/ban
 bbs.nashalife.ru###daos_outer
@@ -3337,8 +3334,6 @@ dwg.ru##TD[background$="/img/back22.gif"] > TABLE
 dynamo.kiev.ua##.hban
 !
 ! DELFI
-@@||adocean.pl/files/js/ado.js$domain=delfi.lv
-@@||adocean.pl/*/key=uru/$script,domain=delfi.lv
 ||ap.delfi.ua^
 delfi.lv##A[target="_blank"][href*="/shop/click.php?shop_id="]
 delfi.lv##.delfi_shop
@@ -3691,6 +3686,7 @@ iguides.ru##[class^="branding"] > A[target="_blank"]
 ||ihead.ru/offers/
 imagebam.com###redirect-ad
 imageban.ru##CENTER > A > IMG[src^="/img/"]
+imageup.ru##FIELDSET[style^="display: inline; width: 45%;"]
 ||imagepix.org/images/
 imgfiles.ru##[id^="bn"]>*
 ||imgix.ru/*.js|
@@ -3832,8 +3828,7 @@ kp.ru,~ufa.kp.ru###banner-after-menu
 bazar.kp.by##.banner_list
 ||advert.kp.ru^$object
 ||krisha.kz^*/br/
-||kronverkcinema.ru/*attachment.rpc
-@@||kronverkcinema.ru/*attachment.rpc*,
+||kronverkcinema.ru/sadm_files/banners/
 ||kubez.biz/banners/
 ||kukuzya.ru/bnrs/
 ||kulina.ru/bn/
@@ -4060,7 +4055,6 @@ map.cn.ua##TD > TABLE[width="100%"][height="40px"]:first-child:last-child
 map.cn.ua##.topAdv
 ||map.cn.ua/media/other/
 ||map.cn.ua/media/promo/
-@@||map.cn.ua/media/*/tur/
 !
 ! Meta.UA
 meta.ua###meta_banner_top
@@ -4557,8 +4551,6 @@ theplace.ru##.td_main > NOINDEX
 theplace.ru##[style*="dotted silver"]
 the-village.ru##.banner
 thevista.ru##.leftblinks
-||thevista.ru/img/*_banners/
-@@||thevista.ru/img/a_banners/
 thg.ru##.mm_item[style="height: 43px;"]
 ||thg.ru/adv_img/
 ||thg.ru/images/spons/
@@ -4810,8 +4802,8 @@ yaplakal.com###top-line
 ||yaplakal.com/html/$subdocument
 yarportal.ru##[style$="height: 60px;"]
 yarportal.ru##TD.desc
-||yarportal.ru/$image,object
-@@||yarportal.ru/*/$image
+yarportal.ru##[href*="/goto.php?id="][target="_blank"] > IMG[src^="http://yarportal.ru/"]
+||yarportal.ru^$object
 ||ykt2.ru/inform/
 ||ykt.ru/session?
 ||ykt.ru/yaknet/image.asp?id=
@@ -5258,6 +5250,8 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||rutube.ru/trackinfo/*?ad_ids=
 ! Медиаплеер soundcloud.com
 @@.soundcloud.com/player.swf?url=
+! Библиотека flowplayer, необходимая некоторым видео-плеерам.
+@@||video.begun.ru/flowplayer_begun_lib.swf|
 ! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
 @@||video.*.user.madbanner.ru^$object-subrequest
 ! Видео с own3d.tv, показываемое на других сайтах (goodgame.ru|sc2tv.ru)
@@ -5292,6 +5286,8 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||900.md/ads/js/$~third-party
 @@||adcast.ru/mtsweb?$domain=mts.ru
 @@||adman.com^$~third-party
+@@||adocean.pl/files/js/ado.js$domain=delfi.lv
+@@||adocean.pl/*/key=uru/$script,domain=delfi.lv
 @@||adriver.ru/cgi-bin/click.cgi?$subdocument,domain=surfingbird.com|surfingbird.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru
 @@||adriver.ru/cgi-bin/rle.cgi?$domain=transaero.ru
@@ -5312,6 +5308,7 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||alfabank.ru/*/baner_$~third-party
 @@||alluregame.ru/Content/*/Advert$~third-party
 @@||atlant-m.in.ua/uploads/banners/$domain=atlant-m.in.ua
+@@||bash.im/webmaster|$elemhide
 @@||bashtube.ru/images/tizers.png?$~third-party
 @@||beeline.ru/ban/$domain=beeline.ru
 @@||beeline.ru/media/banners/$domain=beeline.ru
@@ -5327,6 +5324,7 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||legionhardware.com/images/teasers/$~third-party
 @@||livejournal.com/js/??*?v=$script,domain=livejournal.com
 @@||magnet.kiev.ua/www/$domain=gagadget.com
+@@||map.cn.ua/media/*/tur/
 @@||my.south.rt.ru^$document
 @@||nic.ru/styles/advertising.css$domain=nic.ru
 @@||now.ru/minify/index.php?$script,domain=now.ru
@@ -5393,7 +5391,6 @@ fileplaneta.com,mediapapa.org,russerial.com#@##advert_mpu_1
 fileplaneta.com,mediapapa.org,russerial.com#@##mastad
 fileplaneta.com,mediapapa.org,russerial.com#@##news_advertorial_top
 fileplaneta.com,mediapapa.org,russerial.com#@##rightcolhouseads
-kinovizit.tv##BODY + DIV[align][style]
 ! - Против «бесконечной загрузки страниц» -------------------------------------
 !#excompat.bookmark
 ! К сожалению скрипты сторонних рекламных сетей не всегда встраиваются аккуратно,
