@@ -3,10 +3,12 @@
 # Remove
 sed -E '/(^.*[^#]|^)##[^.#].*$/d' fanboy-addon.txt |
 sed -E '/^\[.*$/d;/^!\sChecksum:.*$/d;/!\sThis\slist\sexpires.*$/d' |
-perl -pe 's/^(?!~).+##.*\.(facebook|fb_iframe_widget|google_?plus|twitter|social(ize)?)([.#[].*)?$//g' |
-perl -pe 's/^(?!~).+##.*#(facebook|social|tweets)([.#[].*)?$//g' |
+perl -pe 's/^(?!~).+##.*\.(facebook|fb_iframe_widget|google_?plus|latestshowsocial|twitter|social(ize)?)([.#[].*)?$//g' |
+perl -pe 's/^(?!~).+##.*#(facebook|social|socialBlock|tweets)([.#[].*)?$//g' |
 sed -E '/^.*##.*\.(facebook|twitter)([.#[].*)?$/d' |
 sed -E '/^\|\|vkontakte\.ru\^\$.*$/d' |
+sed -E '/^\/btn-share-fb\.$/d' |
+perl -pe 's/^(?!@@).*\/share\.js\$.*$//g' |
 # Fix
 sed -E 's/^!\sTitle:/!/g' |
 sed -E 's/^(.*)\$(domain=.*),(.*)$/\1$\3,\2/g' |
