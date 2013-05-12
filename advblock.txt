@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: kRyVOdXXOuiruk1AUSsvCQ
-! Last modification time (GMT): 2013.05.12 16:23
+! Checksum: +CVJX+L2J5GJAMU+QYlTOw
+! Last modification time (GMT): 2013.05.12 17:58
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -3127,6 +3127,8 @@ altapress.ru##.mrkt-off
 anekdot.ru##.promo_head
 ||anekdot.ru/i/gallery/
 ||animechan.ru/fun/
+animemaga.ru##NOINDEX > A[style][target="_blank"]
+||animemaga.ru/plugins/blog/layers/
 animenfo.com###topright
 ||animenfo.com/*/ads/
 ||antichat.ru/bn/
@@ -3532,7 +3534,7 @@ gagadget.com###footer-holding
 galya.ru##.lr_block > IFRAME
 galya.ru###vp_main_520
 ||galya.ru^*/clients/
-gamemag.ru##NOINDEX > A[href^="/out.php?site="] > IMG
+gamemag.ru##NOINDEX A[target="_blank"][href^="/out.php?site="]
 gamemag.ru##TABLE[width="1000"] TD[align="center"][height="93"]
 gamemag.ru##TD[valign="top"] > NOINDEX > DIV[align="center"]
 ||gamemag.ru/admin/spaweditor/uploads/images/
@@ -3796,6 +3798,7 @@ kinoafisha.spb.ru##.branding_header
 ||kino-cccp.net/images/banner/
 kino-dom.tv###dle-info + DIV[align="center"] > :not(#dle-content)
 kino-govno.com##DIV[class^="ten_side_banner_"]
+kino-govno.com##.ten_col2 > DIV[style^="height:"]
 kino-govno.com##.ten_footer_wrap
 kino-govno.com##.ten_front
 kino-zal.tv##BLINK

@@ -1,6 +1,6 @@
 [Adblock Plus 1.1]
-! Checksum: 8C2RKiBibURa26Uo5j0wpw
-! Last modification time (GMT): 2013.05.10 22:21
+! Checksum: 6REGOfdJa4SPL4Xy6e9ocQ
+! Last modification time (GMT): 2013.05.12 17:55
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: http://ruadlist.googlecode.com/
 !
@@ -94,10 +94,13 @@ _twitter.png
 ! Если требуется полная блокировка вконтакта, то создайте у себя два вот таких правила
 ! ||vk.com^$third-party,script,subdocument
 ! ||userapi.com^$third-party,domain=~vk.com
+###com_vk
 ##.vk-button
 ###vk_groups
 ###vk_groups2
+###vk_groups_q
 ##.vkontakte
+###vk_recommended
 ###vkshare0
 ##.vk-share-button
 ||vk.com/widget_comments.php?$third-party
@@ -424,6 +427,8 @@ iguides.ru##[id^="post_message_"] ~ DIV
 ||iguides.ru/forum/images/iguides_new/social/
 ||img.lastusja.ru/images/
 izvestia.ru##.topline
+kino-govno.com##.des_front
+||kino-govno.com/branding/*/bg_
 ||levonevski.net^$object
 lockerz.com###exposeMask
 lockerz.com###overlay
