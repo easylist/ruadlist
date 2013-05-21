@@ -16,3 +16,4 @@ hash.pl cntblock.txt
 @echo Внесение изменений на сервер...
 hg commit
 hg push
+pause
