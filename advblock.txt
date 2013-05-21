@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: yRoVar4io/LQtkMZ/kJOUw
-! Last modification time (GMT): 2013.05.21 16:11
+! Checksum: vDdBvh+4eBLEdYnOSP3Ijw
+! Last modification time (GMT): 2013.05.21 17:23
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -259,7 +259,6 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 /clickheat.
 ^clickunder^$~popup,popup
 ^clickunder-
-^clickunder.$~popup,popup
 .clickunder.$~popup,popup
 /ctxtlink/*
 /extadv/*
@@ -695,8 +694,7 @@ _tizers.
 ||adlog.com^$third-party
 ||admaster.net^
 ||admimsy.com^$third-party
-! $domain=admulti.com|admulti.ru
-||admulti.$third-party
+||admulti.ru^
 ||adpath.ru^
 ||adpix.ru^
 ||adpro.com.ua^
@@ -720,8 +718,8 @@ _tizers.
 ||adv578125.ru^
 ||advaction.ru^
 ||advertbox.ru^
-! $domain=advertpay.com|advertpay.net|advertpay.ru
-||advertpay.$third-party
+||advertpay.com^
+||advertpay.ru^
 ! $domain=advertpro.com|advertpro.cz|advertpro.net|advertpro.ru
 ||advertpro.$third-party
 ||advvideo.com^
@@ -1373,7 +1371,6 @@ _tizers.
 ||pomogi.org/urgent/1/
 ||ponsshop.ru^$third-party
 ||pop-banner.$third-party
-||pop-bazar.$third-party
 ||pop-parad.$third-party
 ||pop-wmz.ru^$third-party
 ||pop.ru^$third-party
@@ -1900,8 +1897,8 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 !
 ! AdSyst.ru
 /api/topl/*/*.js$third-party
-! $domain=adsyst.biz|adsyst.com|adsyst.ru
-||adsyst.$third-party
+||adsyst.com^
+||adsyst.ru^
 ||akashy.com^
 ||fulldl.net^
 ||hadoman.net^
@@ -2006,8 +2003,6 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 /get.php?user_id=*&mode=$script,third-party
 ||4allclick.ru^$~popup,popup
 ||gokliks.ru^$~popup,popup
-! $domain=popupclick.ru,popupclick.com
-||popupclick.$~popup,popup
 ||tdstraff.ru^$~popup,popup
 ||trafidet.ru^$~popup,popup
 !
@@ -2271,8 +2266,7 @@ _vodkov.net
 ||icqadv.net^
 ||icqadve.net^
 ||icqadver.net^
-! $domain=icqadvert.com|icqadvert.net|icqadvert.org
-||icqadvert.$third-party
+||icqadvert.net^
 ||ultrapay.net^
 !
 ! NewsAnons.ru
@@ -2307,9 +2301,6 @@ _vodkov.net
 ! http://xml.ssdsandbox.net/dnslookup-dnsdb/78.140.138.133
 //78.140.138.133^
 /out.php?sid=$script
-_popunder.$~popup,popup
-/popunder.$~popup,popup
-.popunder.$~popup,popup
 ! /yaim.php?ad=
 ||acronixshop.ru^
 ||alemobile.ru^
@@ -2498,7 +2489,6 @@ _popunder.$~popup,popup
 ! ProTizer.ru
 //212.150.34.115^
 //212.150.34.116^
-||protizer.$third-party
 ||trafers.ru^
 !
 ! RealTraf.ru
@@ -2914,7 +2904,6 @@ ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
 ||sof32dsso.ru^
 !#paymonsters.clients
 ! $domain=krilia-lubvi.ucoz.ru
-||mp.soft11.ru^
 ||pa.vzale.tv^
 ||pm1.get-tune.net^
 ||qwe.minizal.net^
@@ -2936,13 +2925,9 @@ ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
 /?t=rot&pid=$script
 /?t=*&noadult=1&pid=$script
 ||wizard-traffstock.com^$third-party,~popup,popup
-||flipflapflo.biz^$~popup,popup
-||flipflapflo.net^$~popup,popup
-||wt-rotator.biz^$~popup,popup
 ||wts-rotator.com^$~popup,popup
 !#wts.clients
 ||wt.lovfot.ru^
-||wtr2.soft11.ru^
 !
 ! Yadro.ru
 ||aif.yadro.ru^
@@ -4754,10 +4739,8 @@ zol.ru##TABLE[style="table-layout:fixed; border-collapse:collapse"]
 белру.рф##.big_banner
 белру.рф##.v_banner
 ||белру.рф/img/banners/
-город-кингисепп.рф###rek1
-город-кингисепп.рф###leftcolumn IMG[src^="http://img-fotki."]
-город-кингисепп.рф###rightcolumn IMG[src^="http://img-fotki."]
-уроки-на-диване.рф##.header-banner
+город-кингисепп.рф##.bannergroup
+||город-кингисепп.рф/images/banners/
 !
 !In your face!
 ! Или как не нужно просить себя зафрендить в соц-сеточках. -_-
