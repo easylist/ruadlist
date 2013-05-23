@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: mpPR5RnlryHhTOwkMBdt0A
-! Last modification time (GMT): 2013.05.23 11:16
+! Checksum: MkOtGk8bAYv7uJwtAcFJ5g
+! Last modification time (GMT): 2013.05.23 12:35
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -548,8 +548,7 @@ _tizers.
 /cout.php?sid=$script
 /fotocash.js
 /js/girls.php|
-! $domain=4files.net|qiq.ru|qiq.ws
-/media/kalita$script
+/oyy.js
 ! Два скрипта с popinbuilder.icoder.com
 /popin.js
 /popin4.js
@@ -1666,7 +1665,6 @@ _tizers.
 ||unlockers.ru^$third-party
 ||uptracker.ru^$third-party
 ||usde.biz^$third-party
-||utarget.ru^$~popup,popup
 ||vareza.net^
 ||vba.ru^
 ||vbm1.ru^
@@ -1856,6 +1854,31 @@ _tizers.
 ||traffpr.net^$~popup,popup
 ||xltraff.net^$~popup,popup
 !
+! AdForce
+/bshow.php?dimension=$third-party,script
+/vkshow1.php?$script,third-party
+! IP=5.187.3.144
+||adforce.ru^
+! IP=5.187.3.127, .7.147, .7.247
+||ad004.ru^
+||ad05f.ru^
+||adv225489.ru^
+||adv457895.ru^
+||adv481895.ru^
+||adv578125.ru^
+||adv679854.ru^
+||adv758968.ru^
+||adv859672.ru^
+||adv-first.ru^
+! IP=5.187.5.4
+||brandarium.ru^
+! IP=91.228.*
+||utarget.ru^
+||afterview.ru^
+||adserv01.ru^
+!#clients
+.ru/code/$script,domain=aphorisme.ru|kinopod.ru|mp3ray.ru|tusnya.net
+!
 ! AdFox.ru
 /adfox/*$image,object,script,subdocument
 !
@@ -1869,18 +1892,6 @@ _tizers.
 ||0ux.ru^
 ||2e0.ru^
 ||beeblebroks.ru^
-!
-! AdPron IP=91.228.155.16
-/bshow.php?dimension=$third-party,script
-||ad004.ru^
-||ad05f.ru^
-||adserv01.ru^
-||adv679854.ru^
-||adv758968.ru^
-||adv859672.ru^
-||adv-first.ru^
-!#adpron.clients
-.ru/code/$script,domain=efamily.ru|linecinema.org|oplayer.org|pslan.com|pslan.kiev.ua|solovey.moy.su|tekst-pesni.com|tusnya.net
 !
 ! AdRiver.ru
 ###ad_ph_2
@@ -1986,11 +1997,6 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||tizerset.net^
 ||ustats.ru^
 ||vmblock.net^
-!
-! Brandarium
-||adv578125.ru^
-||afterview.ru^
-||brandarium.ru^
 !
 ! CashProm.ru
 ||cashprom.ru^$third-party
@@ -2880,10 +2886,8 @@ ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
 /mp3player.swf?file=*/bb2.mp3
 /vk_code.php?id=$script,third-party
 /vknotifier1.php?id=$script,third-party
-/vkshow1.php?id=$script,third-party
 /vkshow.php?id=$script,third-party
 &vk_t=*&adv_ids=
-||adforce.ru^
 ! $domain=adgamble.net|adgamble.ru
 ||adgamble.$third-party
 ||andrak.ru^
@@ -3220,7 +3224,6 @@ do.ru##.MyOpacity1
 dota2.ru##.hadv1-sargona
 dota2.ru##.vadv1-single > A
 ||dota2.ru/img/$object
-||dota2.ru/oyy.js
 ||dprealty.ru/iframe/property4scroll/
 dreamprogs.net##.ntabs
 dreamprogs.net##.mainmenu A:not([href^="http://dream"])
@@ -3708,6 +3711,9 @@ kinoclub.org.ua#@#.item-ads
 ||kinomir.net/under1.js
 ||kinomir.net/counter3.js
 ||all.rutube.ru/*/gpmdigital/$object,domain=kinopoisk.ru
+kinopod.ru###top-banner
+||kinopod.ru/branding/
+||kinopod.ru/show/
 kinopoisk.ru###loadb
 kinopoisk.ru##.brand
 kinopoisk.ru##.superb
