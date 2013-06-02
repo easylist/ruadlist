@@ -16,13 +16,15 @@
 #  * SED #6: Post-cleanup.
 #    1. Remove all rows with dot in the end (incomplete domains).
 #    2. Remove rows without '.' character (obvious non-domains or first level domains like com/ru/ua/...).
+#    3. Remove rows with '*' character (incomplete non-domains).
+#    4. Remove rows with Russian characters (incompatible with current Resolver script).
 #  * Sort things and remove clones.
 #  * Save result to file.
 sed -r 's/^@@//g;s/^\!\s?\|\|/||/g' $1 |
-sed -r 's#^(\|\||(\|?[A-Za-z]*:)?//)(\w[^/$^*]*).*$#\3#g' |
-sed -r 's/[$,]domain=/\n/g;s/##/\n!/g' |
+sed -r 's#^(\|\||(\|?[A-Za-z]*:)?//)(\w[^/^$*]*).*$#\3#g' |
+sed -r 's/[$,]domain=/\n/g;s/#@?#/\n!/g' |
 sed -r '/^(\W|_)/d;/^\s*$/d' |
 sed -r 's/~//g;s/[,|]/\n/g' |
-sed -r '/\.$/d;/^[^.]*$/d' |
+sed -r '/\.$/d;/^[^.]*$/d;/\*/d;/[А-Яа-я]/d' |
 sort -fu > hosts.txt
 
