@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: aKVyfpCwHA2t8YC/qkDmIQ
-! Last modification time (GMT): 2013.06.03 02:52
+! Checksum: F7/RGKrdQpvsdGK4f41B7g
+! Last modification time (GMT): 2013.06.03 12:10
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -28,7 +28,6 @@
 ! Против попапов pageinxt.com, fileinxt.com, searchremagnified.com и ещё некоторых
 .com/?dn=*&prvtof=$image,~image,popup
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
-.info/?id=*&go=*&adult=$image,~image,popup
 ! $domain=adonweb.ru|webunder.ru
 /adv_clk_redirect.php?$image,~image,popup
 ! $domain=playground.ru
@@ -108,29 +107,17 @@
 ||help2play.com^$~popup,popup
 ||korovkasms.ru^$~popup,popup
 ||vkonagt.com^$~popup,popup
-! info
-||found-seg.go*.info/$image,~image,popup
-||login.go*.info/$image,~image,popup
-||spam-fixer.go*.info/$image,~image,popup
-! "Антивирус "Тревога" и тому подобное
-.info/alert/assets/
-.info/alert/banners.
-.info/alert/m.vk/
-.info/alert/vjb.html?
 ! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
 ||youtube.com^$domain=2officialnik.biz|dvadzat5.biz|help2play.com|razmon.biz|vkonagt.com|vsetutprosto.info
 ! Попапы и редирект (мошенники) на turbobit.net
 ||add5.ru^$~popup,popup
 ||dvadzat5.biz^$~popup,popup
-||diaman4.info^$~popup,popup
 ||razmon.biz^$~popup,popup
-||vsetutprosto.info^$~popup,popup
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
 ||astaninki2.com^$third-party,~popup,popup
 ||devochki.cz^$third-party,~popup,popup
 ||ero-spinula.ru^$~popup,popup
 ||my-eromir.net^$~popup,popup
-||pokajem.nashevideo.info^$~popup,popup
 ||sex-mambo.net^$~popup,popup
 ||x-uboino.$third-party,~popup,popup
 ||zarabotat-v-inete.com^$~popup,popup
@@ -403,7 +390,6 @@ _tizers.
 ||24au.ru/*/24au_informer.js
 ||24smi.org/i/$script
 ||66.ru/mod/news2/
-||afera.info/informer_
 ||aif.ru/iframes/
 ||all-news.net.ua/informers/
 ||analyzethis.ru/informer.cgi?
@@ -547,8 +533,8 @@ _tizers.
 ! Домены первого уровня
 ! К сожалению на них зарегистрировано просто чудовищное количество доменов для
 ! распространения крайне навязчивой рекламы и вирусов.
-||asia^$third-party,script,subdocument
-||info^$third-party,script,subdocument
+||asia^$third-party,script,subdocument,popup
+||info^$third-party,script,subdocument,popup
 @@||autogespot.info^$script,subdocument
 @@||avamd.info^$script,domain=ava.md
 @@||kuda-edu.info^$script,subdocument
@@ -887,26 +873,19 @@ _tizers.
 ||go.jetswap.com^
 ||goldfishkapartners.com^
 ||goldline.pro^$third-party
-||goldtraf.su^$third-party
 ||goodadvert.com.ua^
 ||goodbody.ru^$third-party
 ||good-teasers.ru^
-||google-analistyc.
 ||goon.ru^$third-party
 ||govazd.am^
 ||gravdee.com^
-||grebibablo.com^
 ||grifiins.ru^
 ||grt01.com^
 ||grt02.com^
 ||gsmonitor.ru^
-||gugla.net^
 ||gzonline.ru//upload/iblock/
 ||hata.nikolaev.ua^$third-party
 ||hd-tube.ru^$third-party
-||headwood.com^$third-party
-||helper.clan.su^$third-party
-||helpls.ru^
 ||heroeswm.ru^$third-party
 ||hit-sales.ru^
 ||hitex.com.ua^$domain=~hitex.com.ua
@@ -915,27 +894,18 @@ _tizers.
 ||holder.com.ua^
 ||homrus.net^
 ||host4media.com^$third-party
-||hostmir.net^
 ||hotels24.ua^$third-party
 ||hotinga.ru^
 ||hq-films.ws^$third-party
 ||hypernews.ru^
 ||hypo.ufanet.ru^$image
 ||i.j2j.ru^
-||ibm.com/developerworks/everywhere/ew.js
 ||ice-media.ru^
-||icq-window.$third-party
-||icqmoney.com^$third-party
-||icqwindow.$third-party
 ||id5.ru^$third-party
-||igorlite.ru^
 ||igrushek.net/ad/
 ||ilfumomoney.ru^$third-party
-||images.stardock.com/flash/
-||images.stardock.com/store/
 ||imarker.ru^$third-party
 ||img.carnage.ru/i/main/$object,third-party
-||img.mobilezzz.com^
 ||img.ruclicks.com/ruclicks
 ||imobilco.ru^$third-party
 ||inboobs.net^$third-party
@@ -947,7 +917,6 @@ _tizers.
 ||inmoment.ru^$third-party
 ||inoe.name^$third-party
 ||instantcash.ru^$third-party
-||intel.com/b/
 ||internalinspector.com^
 ||internetportal.ru/*.gif
 ||intim-magazin.com.ua/bn/
@@ -955,11 +924,9 @@ _tizers.
 ||intimznaki.tomsk.ru^$third-party
 ||invest-pool.ru^$third-party
 ||invictory.org/banners/
-||ip2phrase.com/ip2phrase.asp?
 ||ipgold.ru^$third-party
 ||iphone10gs.com^$third-party
 ||iphones.ru^$third-party
-||iphonetopsite.ru^$third-party
 ||ipru.ru^$third-party
 ||ipz.ru/cgi-bin/
 ||iso100.ru^$third-party
@@ -3286,6 +3253,7 @@ inmoment.ru##CENTER > A[target="_blank"]
 inmoment.ru##DIV[style="width: 200px;height: 300px;position: relative;"]
 inmoment.ru##.banner_left
 ||inmoment.ru/img/$object
+inoe.name##NOINDEX > DIV[id^="block"]
 inosmi.ru##.banners
 ||inspired.com.ua^$object
 instantcms.ru###footer > #wide_links
