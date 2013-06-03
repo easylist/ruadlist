@@ -87,12 +87,15 @@ if($testloop == 0) {
 
     if($write_alive_hosts = 1) {
         open(OUTFILE, ">", "livehosts.tmp") or die("Unable to write output: $!");
-        $prev = ''; $rpt = 0;
+        $prev = '';
         foreach(sort {$a->{ip} cmp $b->{ip}} @alive) {
             $now = $_->{ip};
-            if ($now eq $prev) { $rpt++; }
-            if ((not $now eq $prev) and ($rpt > 0)) { $rpt = 0; print OUTFILE "# ^\n"; }
-            print OUTFILE $_->{ip}." ".$_->{ad}."\n";
+            if ($now eq $prev) {
+                print OUTFILE " " x 16;
+                print OUTFILE $_->{ad}."\n";
+            } else {
+                print OUTFILE $_->{ip}." ".$_->{ad}."\n";
+            }
             $prev = $now;
         }
         close(OUTFILE);

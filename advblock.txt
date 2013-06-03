@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: lhUjaoi9VY0r0hHtmwZHjw
-! Last modification time (GMT): 2013.06.03 01:39
+! Checksum: aKVyfpCwHA2t8YC/qkDmIQ
+! Last modification time (GMT): 2013.06.03 02:52
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -461,6 +461,7 @@ _tizers.
 /js/peeldown.php?id=$third-party
 /js/popup.php?id=$third-party
 /js/slider.php?id=$third-party
+/js/vk.php?id=$script
 ||alltizer.ru^
 ||buy-traffic.org^
 ||clickspay.ru^
@@ -471,8 +472,8 @@ _tizers.
 ||live-advert.net^
 ||luxtraffic.ru^
 ||mediadar.ru^
-! $domain=medianaft.com|medianaft.ru
-||medianaft.$third-party
+||medianaft.com^
+||medianaft.ru^
 ||protrafv2.com^
 ||soft-pays.ru^
 ||traffru.ru^
@@ -898,7 +899,6 @@ _tizers.
 ||grifiins.ru^
 ||grt01.com^
 ||grt02.com^
-||grt02.org^
 ||gsmonitor.ru^
 ||gugla.net^
 ||gzonline.ru//upload/iblock/
@@ -991,12 +991,10 @@ _tizers.
 ||kazban.su^
 ||ket.ru^$third-party
 ||kingpeon.com^$third-party
-||kino-top.ru/images/ban*.gif
 ||kinoclub.org^$third-party
 ||kinofilms.com.ua^$domain=~kinofilms.com.ua
 ||kinolib.com^$third-party
 ||kinoman.$third-party
-||kinotraff.ru^$third-party
 ||kinozal.tv^$third-party
 ||kioskas.lt/rex/pop.php?
 ||kleo.ru/cgi-bin/
@@ -1690,6 +1688,7 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||adsyst.ru^
 ||akashy.com^
 ||fulldl.net^
+||grt02.org^
 ||hadoman.net^
 ||levrico.com^
 ||lstay.com^
@@ -1741,8 +1740,8 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||clme.biz^
 ||clme.net^
 ||clunder.net^
-||gredinatib.org^
 ||gredinatib.biz^
+||gredinatib.org^
 ||klonedaset.org^
 ||lapeduzis.org^
 ||moreget.net^
@@ -2220,29 +2219,16 @@ _vodkov.net
 //212.150.34.116^
 ||trafers.ru^
 !
-! RealTraf.ru
-/clic/body.php?id=$image,~image,popup
-/code/messagebox.php?id=$script,third-party
-/code/msgbox.php?id=$script,third-party
+! RealTraf
 /initRTv2.php?id=$script,third-party
-/js/vkmessage.php?id=$third-party
-/js/vk.php?id=$script
 ||realdomenclear.ru^
-!$domain=realtraf.net|realtraf.ru
+||realtraf.net^
 ||realtraf.$third-party,~popup,popup
 ||realtraf3.ru^
 ||realtraf9.ru^
-||real1traf.ru^
 ||real2clean.ru^
-||real2traf.ru^
-||real3traf.ru^
-||real4traf.ru^
-||real5traf.ru^
-||real6traf.ru^
-||real7traf.ru^
-||real8traf.ru^
 ||rtdns.ru^
-||ubuntugid.ru^$~popup,popup
+||rt-ns.ru^
 !
 ! Smart BN
 /sbn2.js$third-party
@@ -2922,7 +2908,6 @@ dreamprogs.net##.ntabs
 dreamprogs.net##.mainmenu A:not([href^="http://dream"])
 drevo.uaportal.com##BODY > CENTER:first-of-type
 drive.ru###banner240x400
-driver-id.ru##[class$="_hbanner_960"]
 drugasmuga.com##.bannerWrap
 ||drumandbass.ru/img*banner
 ||dt00.net/gjs/
