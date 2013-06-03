@@ -7,10 +7,10 @@ $testloop = 0;
 $infile = "deadhosts.txt";
 
 foreach my $arg (@ARGV) {
-	given ($arg) {
-		when (/^-t/) { $testloop = 1; }
-		default      { $infile = $arg; }
-	}
+    given ($arg) {
+        when (/^-t/) { $testloop = 1; }
+        default      { $infile = $arg; }
+    }
 }
 
 open(INFILE, "<", $infile) or die("cannot open infile:  $!");
@@ -24,47 +24,53 @@ chomp(@ip_array);
 $p = Net::DNS::Resolver->new;
 
 foreach $s (@ip_array) {
-	if($s =~ /^[^!].*$/) {
-		$q = $p->query($s);
-		if(not $q) {
-			printf "D %-8s %s\n", $p->errorstring, $s;
-			given ($p->errorstring) {
-				when (/^NOERROR/)  { push(@noerr,$s); }
-				when (/^SERVFAIL/) { push(@srvfl,$s); }
-				when (/^NXDOMAIN/) { push(@nxdom,$s); }
-				default            { push(@other,$s); }
-			}
-		} else {
-			print "A RESOLVED $s \n";
-			foreach my $rr ($q->answer)	{
-				next unless $rr->type eq "A";
-				print "Address: ", $rr->address, "\n";
-			}
-		}
-	}	
+    if($s =~ /^[^!].*$/) {
+        $w = "www.";
+        $q = $p->query("$w$s");
+        if(not $q) {
+            printf "D %-8s %s\n", $p->errorstring, "$w$s";
+            $w = "";
+            $q = $p->query($s);
+        }
+        if(not $q) {
+            printf "D %-8s %s\n", $p->errorstring, $s;
+            given ($p->errorstring) {
+                when (/^NOERROR/)  { push(@noerr,$s); }
+                when (/^SERVFAIL/) { push(@srvfl,$s); }
+                when (/^NXDOMAIN/) { push(@nxdom,$s); }
+                default            { push(@other,$s); }
+               }
+        } else {
+            print "A RESOLVED $w$s \n";
+            foreach my $rr ($q->answer)    {
+                next unless $rr->type eq "A";
+                print "Address: ", $rr->address, "\n";
+            }
+        }
+    }    
 }
 
 if($testloop == 0) {
-	print "\n";
-	print "Writing output…", "\n";
-	open(OUTFILE, ">", "deadhosts.tmp") or die("unable to write output: $!");
+    print "\n";
+    print "Writing output…", "\n";
+    open(OUTFILE, ">", "deadhosts.tmp") or die("unable to write output: $!");
 
-	print OUTFILE "! NOERROR\n";
-	foreach(sort @noerr) { print OUTFILE "$_\n" }
+    print OUTFILE "! NOERROR\n";
+    foreach(sort @noerr) { print OUTFILE "$_\n" }
 
-	print OUTFILE "! SERVFAIL\n";
-	foreach(sort @srvfl) { print OUTFILE "$_\n" }
+    print OUTFILE "! SERVFAIL\n";
+    foreach(sort @srvfl) { print OUTFILE "$_\n" }
 
-	print OUTFILE "! NXDOMAIN\n";
-	foreach(sort @nxdom) { print OUTFILE "$_\n" }
+    print OUTFILE "! NXDOMAIN\n";
+    foreach(sort @nxdom) { print OUTFILE "$_\n" }
 
-	print OUTFILE "! Network issues or other\n";
-	foreach(sort @other) { print OUTFILE "$_\n" }
+    print OUTFILE "! Network issues or other\n";
+    foreach(sort @other) { print OUTFILE "$_\n" }
 
-	close(OUTFILE);
+    close(OUTFILE);
 
-	unlink("deadhosts.txt");
-	rename("deadhosts.tmp","deadhosts.txt");
+    unlink("deadhosts.txt");
+    rename("deadhosts.tmp","deadhosts.txt");
 }
 
 print "\n";
