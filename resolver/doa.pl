@@ -92,10 +92,10 @@ if($testloop == 0) {
             $now = $_->{ip};
             if ($now eq $prev) {
                 print OUTFILE " " x 16;
-                print OUTFILE $_->{ad}."\n";
             } else {
-                print OUTFILE $_->{ip}." ".$_->{ad}."\n";
+                print OUTFILE $_->{ip};
             }
+            print OUTFILE $_->{ad}."\n";
             $prev = $now;
         }
         close(OUTFILE);
