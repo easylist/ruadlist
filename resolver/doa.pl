@@ -13,6 +13,11 @@ foreach my $arg (@ARGV) {
     }
 }
 
+$write_alive_hosts = 0;
+if($infile != "deadhosts.txt") {
+    $write_alive_hosts = 1;
+}
+
 open(INFILE, "<", $infile) or die("cannot open infile:  $!");
 
 my @ip_array = <INFILE>;
@@ -22,6 +27,13 @@ close(INFILE);
 chomp(@ip_array);
 
 $p = Net::DNS::Resolver->new;
+
+
+sub formatip {
+	@octets = split(/\./, @_[0]);
+	foreach $o (@octets) { while (length($o) < 3) { $o = '0' . $o; } }
+	return join('.',@octets);
+}
 
 foreach $s (@ip_array) {
     if($s =~ /^[^!].*$/) {
@@ -44,7 +56,8 @@ foreach $s (@ip_array) {
             print "A RESOLVED $w$s \n";
             foreach my $rr ($q->answer)    {
                 next unless $rr->type eq "A";
-                print "Address: ", $rr->address, "\n";
+                push(@alive, {ad => $s, ip => formatip($rr->address)});
+                print "Address: ", formatip($rr->address), "\n";
             }
         }
     }    
@@ -71,6 +84,21 @@ if($testloop == 0) {
 
     unlink("deadhosts.txt");
     rename("deadhosts.tmp","deadhosts.txt");
+
+    if($write_alive_hosts = 1) {
+        open(OUTFILE, ">", "livehosts.tmp") or die("Unable to write output: $!");
+        $prev = ''; $rpt = 0;
+        foreach(sort {$a->{ip} cmp $b->{ip}} @alive) {
+            $now = $_->{ip};
+            if ($now eq $prev) { $rpt++; }
+            if ((not $now eq $prev) and ($rpt > 0)) { $rpt = 0; print OUTFILE "# ^\n"; }
+            print OUTFILE $_->{ip}." ".$_->{ad}."\n";
+            $prev = $now;
+        }
+        close(OUTFILE);
+        unlink("livehosts.txt");
+        rename("livehosts.tmp","livehosts.txt");
+    }
 }
 
 print "\n";
