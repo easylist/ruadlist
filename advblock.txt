@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: fHoNFs/M7TzL2MvJ2PxPKg
-! Last modification time (GMT): 2013.06.05 09:07
+! Checksum: lAiqY1qvJ1LIzKdM6yCm1A
+! Last modification time (GMT): 2013.06.05 10:26
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -4790,6 +4790,9 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||amazonaws.com/c.swf?path=http
 ! Авторизация через tbn.ru на разных сайтах.
 @@||auth.tbn.ru^
+! Исключения для доменов телеканала ТНТ (tnt-online.ru, hb-show.tv, holostyak.ru, comedy-battle.ru, ...)
+@@||gpm-digital.com/172102/$script
+@@||rutube.ru^*.swf?link1=http%3A//adv%2Egpm%2Ddigital%2Ecom/172102/
 ! Одно из приложений для чатов chatovod.ru
 @@||partner.pladform.ru^$domain=video.mediachat.ru
 @@||stat.pladform.ru^$domain=video.mediachat.ru
@@ -4819,6 +4822,7 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||com/banners/$domain=akprior.com|eurobank-ua.com|maingear.com
 @@||ru/banner/$domain=peretz.ru|rzd.ru
 @@||ru/banners/$domain=citydom.ru|furfurmag.ru|onlime.ru|webnames.ru|wildberries.ru
+@@/adfox.$script,domain=alfabank.ru|mts.ru|rutube.ru|sports.ru
 @@/adfox/*$image,object,domain=alfabank.ru|rutube.ru
 @@://ads.$~third-party,domain=alfabank.ru|mts.ru
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
@@ -4866,7 +4870,6 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||fest-ry.ru/*/images/ad$image,domain=fest-ry.ru
 @@||foodzy.ru/i/b/$image,domain=foodzy.ru
 @@||games-tv.ru/openx/www/delivery/ajs.php?$script,domain=games-tv.ru
-@@||gpm-digital.com^$domain=rutube.ru|tnt-online.ru
 @@||igromania.ru/bitrix/templates/igromania/js/openxtag.js?$domain=igromania.ru
 @@||imgsmail.ru^*/btn/adv/$domain=mail.ru
 @@||irr.ru/ajax/*/submission/get_cat$domain=irr.ru
@@ -4891,7 +4894,6 @@ na-svyazi.ru##TD[width="320"][align="center"]
 @@||rostcars.ru/css/advertisement.css$~third-party
 @@||ruspor.ru^$~third-party
 @@||russia.ru/reklama/32x32.flv?link1=$object-subrequest,domain=vz.ru
-@@||rutube.ru^*.swf?link1=$domain=tnt-online.ru
 @@||s5o.ru/common/css/teaser.css?$domain=sports.ru
 @@||semrush.com/m/scripts/reports/backlinks.$~third-party
 @@||sims3club.ru/images/bn/$~third-party
