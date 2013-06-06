@@ -14,7 +14,7 @@ foreach my $arg (@ARGV) {
 }
 
 $write_alive_hosts = 0;
-if($infile != "deadhosts.txt") {
+if($infile == "deadhosts.txt") {
     $write_alive_hosts = 1;
 }
 
@@ -93,7 +93,7 @@ if($testloop == 0) {
             if ($now eq $prev) {
                 print OUTFILE " " x 16;
             } else {
-                print OUTFILE $_->{ip};
+                print OUTFILE $_->{ip}." ";
             }
             print OUTFILE $_->{ad}."\n";
             $prev = $now;
