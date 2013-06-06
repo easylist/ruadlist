@@ -14,7 +14,7 @@ foreach my $arg (@ARGV) {
 }
 
 $write_alive_hosts = 0;
-if($infile == "deadhosts.txt") {
+if(not ($infile == "deadhosts.txt")) {
     $write_alive_hosts = 1;
 }
 
@@ -85,7 +85,7 @@ if($testloop == 0) {
     unlink("deadhosts.txt");
     rename("deadhosts.tmp","deadhosts.txt");
 
-    if($write_alive_hosts = 1) {
+    if($write_alive_hosts == 1) {
         open(OUTFILE, ">", "livehosts.tmp") or die("Unable to write output: $!");
         $prev = '';
         foreach(sort {$a->{ip} cmp $b->{ip}} @alive) {
