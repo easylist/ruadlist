@@ -14,7 +14,7 @@ commit_script() {
     echo -------------------------------------------------------------------------------
     echo - Diff-list.
     echo -------------------------------------------------------------------------------
-    hg diff -U0 --nodates | grep -ve '^diff -r' -e '^+++ b/'
+    hg diff --nodates | grep -ve '^diff -r' -e '^+++ b/'
     # check for common mistakes and unified style
     echo -------------------------------------------------------------------------------
     echo - \"Fix-it before commit\" auto-generated block.
