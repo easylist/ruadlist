@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: 3rBKluHRt2caEv+1ZM3zIA
-! Last modification time (GMT): 2013.06.10 10:00
+! Checksum: hrf/Sp1HoUYoTZ0/GUN3ew
+! Last modification time (GMT): 2013.06.10 10:01
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -19,90 +19,90 @@
 ! = Сайты-попапы (самостоятельно открываются в новом окне) ====================
 !#popup.bookmark
 ! - Общие правила -------------------------------------------------------------
-///\d{5,}\.[a-z0-9-]{2,10}\./$image,~image,popup
-/ad/popup/*$image,~image,popup
-/popads/*$image,~image,popup
-/popads.$image,~image,popup
+///\d{5,}\.[a-z0-9-]{2,10}\./$popup
+/ad/popup/*$popup
+/popads/*$popup
+/popads.$popup
 ! Лжеобновления Firefox и подобное с доменов biz
 .biz/includes/js/css-1.2.5.min.js$third-party
 ! Против попапов pageinxt.com, fileinxt.com, searchremagnified.com и ещё некоторых
-.com/?dn=*&prvtof=$image,~image,popup
+.com/?dn=*&prvtof=$popup
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
 ! $domain=adonweb.ru|webunder.ru
-/adv_clk_redirect.php?$image,~image,popup
+/adv_clk_redirect.php?$popup
 ! $domain=playground.ru
-.tnt-online.ru/?utm_$image,~image,popup
-||10host.ru/go.php?id=$image,~image,popup
-||actionpay.ru^$image,~image,popup
+.tnt-online.ru/?utm_$popup
+||10host.ru/go.php?id=$popup
+||actionpay.ru^$popup
 ||advclx.net^$~popup,popup
-||apb-re.ru/?pid=$image,~image,popup
-||crusewind.net/click/direct.php?$image,~image,popup
-||go.timedirect.ru^$image,~image,popup
-||go.trafking.ru^$image,~image,popup
-||hapend.biz/thread$image,~image,popup
-||ipchecker.ru/?id=$image,~image,popup
+||apb-re.ru/?pid=$popup
+||crusewind.net/click/direct.php?$popup
+||go.timedirect.ru^$popup
+||go.trafking.ru^$popup
+||hapend.biz/thread$popup
+||ipchecker.ru/?id=$popup
 ||luckydir.ru^$~popup,popup
-||mesvip.com^$image,~image,popup
-||peel-down.net/search.php?$image,~image,popup
-||redirecturl.ru^$image,~image,popup
-||ruclicks.com/in/$image,~image,popup
-||war.noc.su/?$image,~image,popup
-||yandes.biz/in.cgi?$image,~image,popup
+||mesvip.com^$popup
+||peel-down.net/search.php?$popup
+||redirecturl.ru^$popup
+||ruclicks.com/in/$popup
+||war.noc.su/?$popup
+||yandes.biz/in.cgi?$popup
 ! - Прочее --------------------------------------------------------------------
-/vkshpion/?page=$image,~image,popup
-//kpup.*/?sid=$image,~image,popup
-//promo.$image,~image,popup
-||24smile.$third-party,image,~image,popup
-||9donline.ru/welcome/?mita=$image,~image,popup
-||audance.ru*/promo/$image,~image,popup
-||blinkogold.ru^$image,~image,popup
-||bonsport.ru^$image,~image,popup
-||bookclub.ua^$image,~image,popup
-||chaplingames.ru^$image,~image,popup
-||club-sale.ru^$image,~image,popup
-||clubrelaxxxx.com^$image,~image,popup
-||darkorbit.bigpoint.com/?aid=$image,~image,popup
-||diets.1tv-russia.com^$image,~image,popup
+/vkshpion/?page=$popup
+//kpup.*/?sid=$popup
+//promo.$popup
+||24smile.$third-party,popup
+||9donline.ru/welcome/?mita=$popup
+||audance.ru*/promo/$popup
+||blinkogold.ru^$popup
+||bonsport.ru^$popup
+||bookclub.ua^$popup
+||chaplingames.ru^$popup
+||club-sale.ru^$popup
+||clubrelaxxxx.com^$popup
+||darkorbit.bigpoint.com/?aid=$popup
+||diets.1tv-russia.com^$popup
 ||discovermore.ru/restorepassword$~popup,popup
-||fotostrana.ru/start/*/?$image,~image,popup
-||funtest-ru.com^$image,~image,popup
-||goodsbrowser.com^$image,~image,popup
-||image2you.ru^$image,~image,popup
-||kakprosto.ru^$image,~image,popup
-||link2you.ru^$image,~image,popup
-||lovecity3d.com/img/promo.$image,~image,popup
+||fotostrana.ru/start/*/?$popup
+||funtest-ru.com^$popup
+||goodsbrowser.com^$popup
+||image2you.ru^$popup
+||kakprosto.ru^$popup
+||link2you.ru^$popup
+||lovecity3d.com/img/promo.$popup
 ||mobruner.com^$~popup,popup
-||modnakasta.ua^$image,~image,popup
-||moi-goroskop.com^$image,~image,popup
-||motorpage.ru^$image,~image,popup
-||mycultures.ru^$image,~image,popup
-||partypoker.com^*/videopop/$image,~image,popup
-||pointblank.ru/?pid=$image,~image,popup
-||pop.sn00.net^$image,~image,popup
-||sapato.ru^$third-party,image,~image,popup
-||carnage.ru^$image,~image,popup,domain=~carnage.ru|~karnage.ru|~sesterce.ru
+||modnakasta.ua^$popup
+||moi-goroskop.com^$popup
+||motorpage.ru^$popup
+||mycultures.ru^$popup
+||partypoker.com^*/videopop/$popup
+||pointblank.ru/?pid=$popup
+||pop.sn00.net^$popup
+||sapato.ru^$third-party,popup
+||carnage.ru^$popup,domain=~carnage.ru|~karnage.ru|~sesterce.ru
 ||cpm.wargaming.net^$popup,domain=~worldoftanks.ru
-||say.tv/?actionpay=$image,~image,popup
-||skidka50.com.ua^$image,~image,popup
-||snailz.ru/promo/?$image,~image,popup
-||tankionline.com/ru/play$image,~image,popup
-||test-studio.ru^$image,~image,popup,third-party
-||travian.com.ua/landingpage/$image,~image,popup
-||panel.gemius.com.ua^$image,~image,popup
-||sbornix.ru^$image,~image,popup
-||sergey-mavrodi.com^$image,~image,popup
-||velcome-club.com^$image,~image,popup
-||wardogs.ru/lp?ref=$image,~image,popup
-||webarbitrage.ru/?$image,~image,popup
-||worldoftanks.eu/play/$image,~image,popup
-||w-raza.com^$image,~image,popup
-||yapfiles.ru^*/rating_by_pop/$image,~image,popup
-||zzima.com^$image,~image,popup,domain=~zzima.com
+||say.tv/?actionpay=$popup
+||skidka50.com.ua^$popup
+||snailz.ru/promo/?$popup
+||tankionline.com/ru/play$popup
+||test-studio.ru^$popup,third-party
+||travian.com.ua/landingpage/$popup
+||panel.gemius.com.ua^$popup
+||sbornix.ru^$popup
+||sergey-mavrodi.com^$popup
+||velcome-club.com^$popup
+||wardogs.ru/lp?ref=$popup
+||webarbitrage.ru/?$popup
+||worldoftanks.eu/play/$popup
+||w-raza.com^$popup
+||yapfiles.ru^*/rating_by_pop/$popup
+||zzima.com^$popup,domain=~zzima.com
 ! - Мошенники -----------------------------------------------------------------
 ! В основном блокируются на уровне редиректов, но лучше и так.
 ! Просьба не удалять нестандарные правила отсюда
 !#scam.bookmark
-/popua/*$image,~image,popup
+/popua/*$popup
 ||2officialnik.biz^$~popup,popup
 ||gaminatori.ru^$~popup,popup
 ||help2play.com^$~popup,popup
@@ -1550,7 +1550,7 @@ _tizers.
 !
 ! [unknown] IP=88.208.16.51-54
 ! ///[^/.]+\.com/[a-z0-9]{32}\.js$/
-||com/go.php?tid=*&hid=$image,~image,popup
+||com/go.php?tid=*&hid=$popup
 ||kadavara.com^
 ||tisapama.com^
 ||tozimoto.com^
@@ -1568,8 +1568,8 @@ _tizers.
 .com/j35.php$script,third-party
 .com/j45.php$script,third-party
 .com/j65.php$script,third-party
-.com/clck.php?g=$image,~image,popup
-.com/on.php?id=$image,~image,popup
+.com/clck.php?g=$popup
+.com/on.php?id=$popup
 &temz=clikundr&$~popup,popup
 ||1under.ru^$~popup,popup
 ||2lycosu.com^$~popup,popup
@@ -1686,8 +1686,8 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 /bn.php?s=$script,third-party
 ||web-leaders.ru^$third-party
 ! Popup windows
-||advmaker.ru/go.php?$image,~image,popup
-||web-leaders.ru/adv.$image,~image,popup
+||advmaker.ru/go.php?$popup
+||web-leaders.ru/adv.$popup
 !
 ! AVA.com.ua
 ##.pr-AVA
@@ -1769,7 +1769,7 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ! Dosug.cz и связанные с ними домены или
 ! «ТУТ НИЧЕГО НЕТ. НАХРЕНА ТЫ СЮДА ЗАШЕЛ? :-)»
 ! Общие правила
-/in.htm?wm=$image,~image,popup
+/in.htm?wm=$popup
 /getThumbs?uid=$third-party,subdocument
 /sticker?id=$third-party,script
 ||clickcashmoney.com^$~popup,popup
@@ -1809,8 +1809,8 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 /gaminator-
 /gaminator/*
 /gaminator.
-||luckiestclick.com^$image,~image,popup
-||winafterwin.com^$image,~image,popup
+||luckiestclick.com^$popup
+||winafterwin.com^$popup
 !.gaminator.local
 ||epidemz.net/bank/
 ||filmix.net/branding
@@ -2134,62 +2134,62 @@ _vodkov.net
 ||promoblocks.ru^
 !
 ! PromoDJ
-||promodj.$image,~image,popup,domain=~discomixes.ru|~djcosmonaut.ru|~promodj.com|~promodj.ru
-||pdj.$image,~image,popup
-||all.dj^$image,~image,popup
-||mixed.by^$image,~image,popup
-||remixed.by^$image,~image,popup
-||composed.by^$image,~image,popup
-||basser.ru^$image,~image,popup
-||bassmydrum.ru^$image,~image,popup
-||dbass.ru^$image,~image,popup
-||deeep.ru^$image,~image,popup
-||deejay-rank.com^$image,~image,popup
-||deejayrank.com^$image,~image,popup
-||djmp3.ru^$image,~image,popup
-||djrank.ru^$image,~image,popup
-||djspace.ru^$image,~image,popup
-||drumbr.ru^$image,~image,popup
-||electro1.ru^$image,~image,popup
-||electrohead.ru^$image,~image,popup
-||electroplay.ru^$image,~image,popup
-||electroslim.ru^$image,~image,popup
-||hiphoping.ru^$image,~image,popup
-||hiphopping.ru^$image,~image,popup
-||hiphopr.ru^$image,~image,popup
-||hiphopstreet.ru^$image,~image,popup
-||indahiphop.ru^$image,~image,popup
-||indaprogressive.ru^$image,~image,popup
-||indatrance.ru^$image,~image,popup
-||internet-dj.ru^$image,~image,popup
-||internetdj.ru^$image,~image,popup
-||milhouse.ru^$image,~image,popup
-||minimals.ru^$image,~image,popup
-||morehouse.ru^$image,~image,popup
-||mydeephouse.ru^$image,~image,popup
-||playdeep.ru^$image,~image,popup
-||playtrance.ru^$image,~image,popup
-||prgsv.ru^$image,~image,popup
-||promodeejay.$image,~image,popup
-||promomix.ru^$image,~image,popup
-||promopop.ru^$image,~image,popup
-||promoradio.ru^$image,~image,popup
-||promorank.ru^$image,~image,popup
-||promorap.ru^$image,~image,popup
-||promornb.ru^$image,~image,popup
-||promorock.ru^$image,~image,popup
-||rap2rap.ru^$image,~image,popup
-||rapme.ru^$image,~image,popup
-||rapsoul.ru^$image,~image,popup
-||respecter.ru^$image,~image,popup
-||rnbee.ru^$image,~image,popup
-||rnbface.ru^$image,~image,popup
-||rnbpeople.ru^$image,~image,popup
-||rnbr.ru^$image,~image,popup
-||rnbstreet.ru^$image,~image,popup
-||sexydj.ru^$image,~image,popup
-||trancr.ru^$image,~image,popup
-||yadj.ru^$image,~image,popup
+||promodj.$popup,domain=~discomixes.ru|~djcosmonaut.ru|~promodj.com|~promodj.ru
+||pdj.$popup
+||all.dj^$popup
+||mixed.by^$popup
+||remixed.by^$popup
+||composed.by^$popup
+||basser.ru^$popup
+||bassmydrum.ru^$popup
+||dbass.ru^$popup
+||deeep.ru^$popup
+||deejay-rank.com^$popup
+||deejayrank.com^$popup
+||djmp3.ru^$popup
+||djrank.ru^$popup
+||djspace.ru^$popup
+||drumbr.ru^$popup
+||electro1.ru^$popup
+||electrohead.ru^$popup
+||electroplay.ru^$popup
+||electroslim.ru^$popup
+||hiphoping.ru^$popup
+||hiphopping.ru^$popup
+||hiphopr.ru^$popup
+||hiphopstreet.ru^$popup
+||indahiphop.ru^$popup
+||indaprogressive.ru^$popup
+||indatrance.ru^$popup
+||internet-dj.ru^$popup
+||internetdj.ru^$popup
+||milhouse.ru^$popup
+||minimals.ru^$popup
+||morehouse.ru^$popup
+||mydeephouse.ru^$popup
+||playdeep.ru^$popup
+||playtrance.ru^$popup
+||prgsv.ru^$popup
+||promodeejay.$popup
+||promomix.ru^$popup
+||promopop.ru^$popup
+||promoradio.ru^$popup
+||promorank.ru^$popup
+||promorap.ru^$popup
+||promornb.ru^$popup
+||promorock.ru^$popup
+||rap2rap.ru^$popup
+||rapme.ru^$popup
+||rapsoul.ru^$popup
+||respecter.ru^$popup
+||rnbee.ru^$popup
+||rnbface.ru^$popup
+||rnbpeople.ru^$popup
+||rnbr.ru^$popup
+||rnbstreet.ru^$popup
+||sexydj.ru^$popup
+||trancr.ru^$popup
+||yadj.ru^$popup
 !
 ! ProTeaser.com
 ||proteaser.com^
@@ -2556,7 +2556,7 @@ ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
 ~vk.com##DIV[id$="notifiers_wrap"]
 ~vk.com###vkMsg
 ###nor_wrap
-/code/click.php?id=$image,~image,popup
+/code/click.php?id=$popup
 /mp3player.swf?file=*/bb1.mp3
 /mp3player.swf?file=*/bb2.mp3
 /vk_code.php?id=$script,third-party
@@ -3654,7 +3654,7 @@ namba.kg###branding
 namba.kg###branding-html
 ||namba.kg/files/*/$object
 ||namba.kg/js/banner_fullscreen.js
-||namba.kg^$image,~image,popup,domain=namba.kg
+||namba.kg^$popup,domain=namba.kg
 ||namba.kg/www/base/
 narodclub.net##CENTER > A[target="_blank"][rel="nofollow"]
 ||nashgorod.ru/b/
@@ -3689,7 +3689,7 @@ nnm.ru##A:not([href="http://nnm.ru/"]) > IMG[src^="/a/"]
 nnm.ru##DIV[class*="banner"]
 nnm.ru##DIV[id*="banner"]
 ||nnm.ru/a/$object
-||assn.info^$image,~image,popup,domain=nnm.ru
+||assn.info^$popup,domain=nnm.ru
 ||nnover.ru/hints/show/
 nn.ru,52.ru##.banner
 nn.ru,52.ru###body > TABLE > TBODY > TR > TD[width="10"] + TD[style^="width:20"]:last-child
