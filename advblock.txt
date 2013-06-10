@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: 5bFA1Wwhhg7uta2rMKzb9g
-! Last modification time (GMT): 2013.06.10 12:09
+! Checksum: iwzcJgwtq2WElnFfCiBp9Q
+! Last modification time (GMT): 2013.06.10 20:34
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -1607,6 +1607,7 @@ _tizers.
 !
 ! AdForce
 /bshow.php?dimension=$third-party,script
+/utarget.~popup,popup
 /vkshow1.php?$script,third-party
 ! IP=5.187.3.144
 ||adforce.ru^
@@ -1624,7 +1625,6 @@ _tizers.
 ! IP=5.187.5.4
 ||brandarium.ru^
 ! IP=91.228.*
-||utarget.ru^$~popup,popup
 ||afterview.ru^
 ||adserv01.ru^
 !#clients
@@ -4002,15 +4002,6 @@ rutracker.org###bn-tio-1
 !
 !S
 sakh.com##A[target="_blank"] > IMG[width="240"]
-||samforum.ws^$subdocument
-||samlab.ws/utarget.js
-samlab.ws###banner-top
-samlab.ws##CENTER > .box-shadow + TABLE:last-child
-samlab.ws###left > .box-shadow:nth-child(n+3)
-samlab.ws##.main > DIV:not(.about):first-child
-samlab.ws##.main > TABLE
-samlab.ws###right > .box-shadow:nth-child(n+3)
-samlab.ws##.soft-day:not(:first-child) > .box
 samru.ru##A[target="_blank"][href^="/go.php?id="]
 santikov.net##.full_story + CENTER
 ||sat-digest.com/ag*/$object,image
@@ -4108,6 +4099,17 @@ sudga.ru###notifications_menu + .t1border
 sxnarod.com###tablespons
 ||sxnarod.com/img/
 sysadmins.ru##NOINDEX > A[target="new"][rel="nofollow"]
+!
+! SamLab
+||samforum.ws^$subdocument
+samlab.ws##A[href^="http://www.kalita-finance.ru/promo/"]
+samlab.ws###banner-top
+samlab.ws##CENTER > .box-shadow + TABLE:last-child
+samlab.ws###left > .box-shadow:nth-child(n+3)
+samlab.ws##.main > DIV:not(.about):first-child
+samlab.ws##.main > TABLE
+samlab.ws###right > .box-shadow:nth-child(n+3)
+samlab.ws##.soft-day:not(:first-child) > .box
 !
 !T
 ||pladform.ru/player.swf$domain=tut-film.com
