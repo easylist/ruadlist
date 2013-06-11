@@ -14,7 +14,7 @@ hash.pl bitblock.txt
 hash.pl cntblock.txt
 @echo * cntblock.txt
 @echo Разница:
-hg diff -U0 --nodates
+hg diff --nodates
 @echo Внесение изменений на сервер...
 hg commit
 hg push
