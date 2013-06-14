@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: 7ozb+pAUKqvT92jBnQIeeQ
-! Last modification time (GMT): 2013.06.13 18:04
+! Checksum: GVzNaWiedXA4sGY9AjdJLA
+! Last modification time (GMT): 2013.06.14 13:38
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -24,9 +24,13 @@
 /popads/*$popup
 /popads.$popup
 ! Лжеобновления Firefox и подобное с доменов biz
-.biz/includes/js/css-1.2.5.min.js$third-party
+||biz/includes/js/css-1.2.5.min.js$third-party
 ! Против попапов pageinxt.com, fileinxt.com, searchremagnified.com и ещё некоторых
-.com/?dn=*&prvtof=$popup
+||com/?dn=*&prvtof=$popup
+||info/?id=*&go=*&adult=$popup
+||info/alert/$popup
+! Против попапов вроде vk.com.spam-fixer.inf144554694.info
+.*.*.*.info/$popup
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
 ! $domain=adonweb.ru|webunder.ru
 /adv_clk_redirect.php?$popup
@@ -113,12 +117,15 @@
 ! Попапы и редирект (мошенники) на turbobit.net
 ||add5.ru^$~popup,popup
 ||dvadzat5.biz^$~popup,popup
+||diaman4.info^$~popup,popup
 ||razmon.biz^$~popup,popup
+||vsetutprosto.info^$~popup,popup
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
 ||astaninki2.com^$third-party,~popup,popup
 ||devochki.cz^$third-party,~popup,popup
 ||ero-spinula.ru^$~popup,popup
 ||my-eromir.net^$~popup,popup
+||pokajem.nashevideo.info^$~popup,popup
 ||sex-mambo.net^$~popup,popup
 ||x-uboino.$third-party,~popup,popup
 ||zarabotat-v-inete.com^$~popup,popup
@@ -532,14 +539,13 @@ _tizers.
 ! К сожалению на них зарегистрировано просто чудовищное количество доменов для
 ! распространения крайне навязчивой рекламы и вирусов.
 ||asia^$third-party,script,subdocument
-||info^$third-party,script,subdocument,popup
+||info^$third-party,script,subdocument
 @@||autogespot.info^$script,subdocument
 @@||avamd.info^$script,domain=ava.md
-@@||info^$popup,domain=google.by|google.com|google.com.ru|google.com.ua|google.kz|google.ru|yandex.com|yandex.kz|yandex.ru|yandex.ua
 @@||kinoafisha.info/player/embed/$subdocument
 @@||kuda-edu.info^$script,subdocument
-@@||lostfilm.info^$popup,script,domain=lostfilm.tv
-@@||oplata.info^$popup,script
+@@||lostfilm.info^$script,domain=lostfilm.tv
+@@||oplata.info^$script
 @@||stells.info^$script
 !
 ! - FreeDNS -------------------------------------------------------------------
