@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Checksum: ibDED39qvyxC4mTak+s0BA
-! Last modification time (GMT): 2013.06.17 15:21
+! Checksum: Z8lu9cz5kHxIzjIg9l0PaQ
+! Last modification time (GMT): 2013.06.18 09:28
 ! Homepage: http://ruadlist.googlecode.com/
 !
 ! Дополнительная региональная подписка RU AdList к подписке EasyList
@@ -193,110 +193,71 @@ www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
 !
 ! = Общие правила блокировки ==================================================
 !#global.bookmark
+-240x400_
+/240x400_
+/468-80-
+/700x70_
+/8831_1.gif
 ?a_aid=testaff&
 /ad_click/*$object
 /adland.php
 /Ads.asmx/GetInfo?
 /adstil.
+/adv/*
 /adv_out.$script
 /adv-out/?$script
-/backlinks.
-/bannergzo/*
-.bannerbank_
-.bannerbank.
-/bazar_fast/*
-//b.*/iframe/*
-/bitrix/spread.php?
-/by.banclk?
-/cgi-bin/adt.fcgi?
-/cgi-bin/adv.fcgi?
-/check.php?user_id=*&mode=
-/clickheat.
-^clickunder^$~popup,popup
-^clickunder-
-.clickunder.$~popup,popup
-/ctxtlink/*
-/extadv/*
-/?get_code&template_uid=$script,third-party
-/iframe/glomu.$subdocument
-/iframe/inosmi.$subdocument
-/imp.php?a_aid=
-/in.cgi?$subdocument,script,third-party
-/linkexchange/*
-//mads.
-/marketplace.asp?
-/mediaget-
-/media/?t=*;f=http%$script
-/mirmaek/*$image
-! adfox.ru, adwolf.ru, kavanga.ru…
-/prepareCode?$match-case
-/richarbuz.
-.ru/ads/
-/rnb.php?id=
-/sexvodnokalssnikah/*
-/show_adv.php?page_id=
-/slatefp.asp
-/sphinx_*.gif|
-/splash/page_header/*
-.swf?alink=
-.swf?banner_href=
-.swf?click_url=
-.swf?flash_link=
-.swf?flash_url=
-.swf?href=
-.swf?lnk=
-.swf?path=http
-.swf?target=_blank&
-.swf?target=_self&link
-.swf?url=http
-.swf?*&link1=
-/t.bbn?$third-party
-/vendshow/*
-/vsemayki_
-/vse-pricheski.$third-party
-/warlog.
-/webunder_
-/webunder.$~popup,popup
-.webunder.$~popup,popup
-/wtsin.cgi?id=$~popup,popup
-! - Баннеры -------------------------------------------------------------------
-!#banner.bookmark
-/8831_1.gif
-||biz/banner/$third-party
-||net/banners/
-||ru/ban/
-||ru/banner/
-||ru/banner.
-||ru/banners/$domain=~toptracker.ru
-||ru/i/banner/
-||ru/i/banners/
-||ru/uploads/banners/
-||ua/banner/
-||ua/banners/
-||ua/i/banner/
-||ua/i/banners/
-||ua/uploads/banners/
-/adv/*
+/adwolfScriptScroll.js
 /afisha_banner/*
+/aika.swf
+/amcu_$script
+/backlinks.
 _baner_
 _baner.
 /baner_
 /baner/*
 /baner.
 /baners/*
-/banner_$object
-/bannerz.$object
 /banner2.gif
+.bannerbank_
+.bannerbank.
 /bannerex.cgi/getbanner.js?id=
 _banner.gif
 /banner.gif
+/bannergzo/*
+/banner_$object
 /banners.mvc?
 /banners/*_*x*?
+/bannerz.$object
+/bazar_fast/*
+/b_bs_killdog_
+//b.*/iframe/*
+/bitrix/spread.php?
+||biz/banner/$third-party
+/by.banclk?
+/cgi-bin/adt.fcgi?
+/cgi-bin/adv.fcgi?
 /cgi-bin/banner/*
 /cgi-bin/banners/*
+/check.php?user_id=*&mode=
+/clickheat.
+^clickunder-
+^clickunder^$~popup,popup
+.clickunder.$~popup,popup
+/clk.js|
+/cout.php?sid=$script
+/ctxtlink/*
+/datagroup.gif
+/erotizer.
+.erotizer.
+/extadv/*
 /files/banner/*
 /files/banners/*
+/fotocash.js
 /free/banners/*
+/?get_code&template_uid=$script,third-party
+/get_tiz.
+/iframe/glomu.$subdocument
+/iframe/inosmi.$subdocument
 /images/ban/*
 /images/bn/*
 /images/partners/*
@@ -307,31 +268,67 @@ _banner.gif
 /img/bnr-
 /img/bnr/*
 /img/rekl/*
+/imp.php?a_aid=
 /inc/banner_zone/*
+/in.cgi?$subdocument,script,third-party
 /jban.js?idd=
+/js/girls.php|
+/linkexchange/*
+//mads.
+/marketplace.asp?
 /media/banners/*
+/mediaget-
+/media/?t=*;f=http%$script
+/mirmaek/*$image
 /mybaner/*
+||net/banners/
+/oyy.js
 /partner/banner/*
 /partner/images/banners/*
-/reklama.$domain=~reklama.com.ua|~reklama.rambler.ru|~reklama.ukr.net
+/popin4.js
+/popin.js
+/popover.js$domain=~hotmail.com|~live.com
+/prepareCode?
+/priceru_advert_
+/pseudocounter.js
 /reklama_
+/reklama.$domain=~reklama.com.ua|~reklama.rambler.ru|~reklama.ukr.net
+/richarbuz.
 /richbanner.
 .richbanner.
-/shared/promos/*
-/sprava_baner/*
-/upload/banners/*
-/upload/bx/*
-/upload/rk/*
-/uploads/slider/col$script
-/userfiles/banners/*
-/wp-content/imgrekl/*
-! - Тизеры --------------------------------------------------------------------
-!#tizer.bookmark
-/erotizer.
-.erotizer.
-/get_tiz.
+/rnb.php?id=
+.ru/ads/
+||ru/ban/
+||ru/banner/
+||ru/banner.
+||ru/banners/$domain=~toptracker.ru
+||ru/i/banner/
+||ru/i/banners/
+||ru/uploads/banners/
 /sextizer.
 .sextizer.
+/sexvodnokalssnikah/*
+/shared/promos/*
+/show_adv.php?page_id=
+/slatefp.asp
+/sphinx_*.gif|
+/splash/page_header/*
+/sprava_baner/*
+/sun_*_ajax.js|
+.swf?alink=
+.swf?banner_href=
+.swf?click_url=
+.swf?flash_link=
+.swf?flash_url=
+.swf?href=
+.swf?*&link1=
+.swf?lnk=
+.swf?path=http
+.swf?target=_blank&
+.swf?target=_self&link
+.swf?url=http
+/talky3d.gif
+/t.bbn?$third-party
 ?teaser_
 /teaser/*
 /teaser.
@@ -342,8 +339,8 @@ _banner.gif
 /teasers.
 _tizer.
 -tizer.
-/tizer-
 /tizer_
+/tizer-
 /tizer/*
 /tizer.
 .tizer-
@@ -360,9 +357,30 @@ _tizers.
 /tizers2.
 /tizers3.
 /tizshow.
+/traff.js
+||ua/banner/
+||ua/banners/
+||ua/i/banner/
+||ua/i/banners/
+||ua/uploads/banners/
+/ucodes.ru.banners.js
+/upload/banners/*
+/upload/bx/*
+/upload/rk/*
+/uploads/slider/col$script
+/userfiles/banners/*
 /utftizer.
+/vendshow/*
 /viptizer.
 .viptizer.
+/vsemayki_
+/vse-pricheski.$third-party
+/warlog.
+/webunder_
+/webunder.$~popup,popup
+.webunder.$~popup,popup
+/wp-content/imgrekl/*
+/wtsin.cgi?id=$~popup,popup
 ! Найдены по «/show/?block_id=». Судя по разношерстности сайтов это какой-то рекламный движок.
 ! Скрипт: "var block = document.getElementById("teaser_NUMBER"); var text = '#NUMBER'; if(block){block.innerHTML = text;}"
 /show/?block_id=*&r=$script
@@ -382,7 +400,6 @@ _tizers.
 ##.novinator
 /adsnews.
 /informer.js
-! $domain=24smi.org|24smile.net|24smile.org|auction.ua|limon.biz|missrich.net|openmedia.com.ua
 /informer.php?
 /informer/script.php?id=
 /rbknews/*
@@ -472,39 +489,6 @@ _tizers.
 ||webmastak.net^
 ||wmbankir.ru^
 ||wmip.ru^
-! - Блокировка по именам файлов -----------------------------------------------
-!#name.bookmark
-/aika.swf
-/b_bs_killdog_
-/datagroup.gif
-/talky3d.gif
-! - Популярные имена скриптов -------------------------------------------------
-!#script.bookmark
-/adwolfScriptScroll.js
-/clk.js|
-/cout.php?sid=$script
-/fotocash.js
-/js/girls.php|
-/oyy.js
-! Два скрипта с popinbuilder.icoder.com
-/popin.js
-/popin4.js
-/popover.js$domain=~hotmail.com|~live.com
-/priceru_advert_
-/pseudocounter.js
-/sun_*_ajax.js|
-/traff.js
-/ucodes.ru.banners.js
-! - Блокировка по размеру указанному в адресе ---------------------------------
-!#size.bookmark
--240x400_
-/240x400_
-/468-80-
-/700x70_
-!
-! - Игры ----------------------------------------------------------------------
-||avangardonline.ru/banrotate.
-||battlespace.ru/ad/
 !
 ! = Блокировка доменов ========================================================
 ! - IP ------------------------------------------------------------------------
@@ -535,7 +519,8 @@ _tizers.
 //213.186.217.210/banners/*
 //217.170.78.*/banners/*
 !
-! Домены первого уровня
+! - Домены первого уровня -----------------------------------------------------
+!#1st.bookmark
 ! К сожалению на них зарегистрировано просто чудовищное количество доменов для
 ! распространения крайне навязчивой рекламы и вирусов.
 ||asia^$third-party,script,subdocument
@@ -705,7 +690,7 @@ _tizers.
 ||base.kiwi.kz^
 ||bashnya.ru^
 ||basketfan.my1.ru^$third-party
-||battlespace.ru^$third-party
+||battlespace.ru/ad/
 ||bbn.by^
 ||bbn.img.com.ua^
 ||bb.stream24.ru^
@@ -1678,15 +1663,6 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||exchangenews.ru^$third-party
 ||mediakadr.ru^$third-party
 ||mediaskyline.ru^$third-party
-!
-! AdvMaker.ru
-! IP: 95.169.186.164
-/amcu_$script
-/bn.php?s=$script,third-party
-||web-leaders.ru^$third-party
-! Popup windows
-||advmaker.ru/go.php?$popup
-||web-leaders.ru/adv.$popup
 !
 ! AVA.com.ua
 ##.pr-AVA
