@@ -1,0 +1,198 @@
+! Исправление проблем возникших в результате работы подписки на отдельных сайтах
+! Без этого ломается интеграция с виджетом «ВКонтакте» на 3dnews.ru
+@@||3dnews.ru/www/delivery/ajs.$script,domain=3dnews.ru
+! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
+@@||ads.tomtel.ru/adjs.$script
+! Scale of the Universe
+@@||amazonaws.com/c.swf?path=http
+! Авторизация через tbn.ru на разных сайтах.
+@@||auth.tbn.ru^
+! Видео с now.ru на нём самом и прочих сайтах (vk.com, например)
+@@||cdn.now.ru/www/delivery/fc.php?
+! Исключения для доменов телеканала ТНТ (tnt-online.ru, hb-show.tv, holostyak.ru, comedy-battle.ru, ...)
+@@||gpm-digital.com/172102/$script
+@@||rutube.ru^*.swf?link1=http%3A//adv%2Egpm%2Ddigital%2Ecom/172102/
+! Одно из приложений для чатов chatovod.ru
+@@||partner.pladform.ru^$domain=video.mediachat.ru
+@@||stat.pladform.ru^$domain=chatovod.ru|video.mediachat.ru
+! Некоторые фотографии на kharkov-guberniia.com.ua, xan.com.ua и других сайтах.
+@@||plektan.com/ad/$image
+! Отсчёт времени до пропуска рекламы на letitbit.net
+@@||propellerads.com/ajs.php?zoneid=$domain=goclips.tv|letitbit.net
+! Медиаплеер soundcloud.com
+@@.soundcloud.com/player.swf?url=
+! Библиотека flowplayer, необходимая некоторым видео-плеерам.
+@@||video.begun.ru/flowplayer_begun_lib.swf|
+! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
+@@||video.*.user.madbanner.ru^$object-subrequest
+! Видео с own3d.tv, показываемое на других сайтах (goodgame.ru|sc2tv.ru)
+@@||vox-static.liverail.com/swf/*/admanager.swf$domain=ru
+! Игра MonsterWold на facebook'е
+@@||wooga.com/gardens/configurations/production/teaser.
+! Иногда информер лучше самого сайта
+@@||myradio24.com/informer.php
+! Ложные срабатывания на teaser, вероятно стоит удалить совсем
+@@.de/content/medialib/vwd4/*/teaser/
+@@/teaser/*$domain=a1.net|diplo.de|gravis.de|hm.com|navigon.com|onboardvideo.com.ua|playground.ru|printio.ru
+! Промо-домены партнёров gamexp.ru (игры Karos, Rappelz, Фантазиум и прочие)
+@@||promo.gamexp.ru^
+@@||promo.static.gamexp.ru^
+! Правила для отдельных сайтов
+@@||com/banners/$domain=akprior.com|eurobank-ua.com|maingear.com
+@@||ru/banner/$domain=peretz.ru|rzd.ru
+@@||ru/banners/$domain=citydom.ru|furfurmag.ru|onlime.ru|webnames.ru|wildberries.ru
+@@/adfox.$script,domain=alfabank.ru|mts.ru|rutube.ru
+@@/adfox/*$image,object,domain=alfabank.ru|rutube.ru
+@@://ads.$~third-party,domain=alfabank.ru|mts.ru
+@@/ai/adbanner/*$domain=akado.ru|megafon.ru
+@@/cgi-bin/banners/*$domain=km.ru
+@@/files/banner/*$domain=movie-pocket.com
+@@/files/banners/*$domain=interzet.ru
+@@/images/partners/*$domain=scontinental.com|sctm.ru
+@@//promo.$~third-party,popup,domain=iguides.ru|yandex.ru
+@@/upload/rk/*$domain=211.ru|bbk.ru|biysk22.ru|fixiki.ru|kykyryza.ru|qwerty.ru|radiorecord.ru|tsu.ru|бийск.рф
+@@||7771000.ru/images/*/baners/$~third-party
+@@||900.md/ads/images/$~third-party
+@@||900.md/ads/js/$~third-party
+@@||adcast.ru/mtsweb?$domain=mts.ru
+@@||adman.com^$~third-party
+@@||adocean.pl/*/key=uru/$script,domain=delfi.lv
+@@||adriver.ru/cgi-bin/click.cgi?$subdocument,domain=surfingbird.com|surfingbird.ru
+@@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru
+@@||adriver.ru/cgi-bin/rle.cgi?$domain=transaero.ru
+@@||advert.starlightmedia.ua/crossdomain.xml$domain=stb.ua
+@@||adsbox.$domain=adsbox.com.ua|adsbox.ru
+@@||ads.adfox.ru/crossdomain.xml$domain=molodejj.tv
+@@||ads.ertelecom.ru^$domain=citydom.ru
+@@||ads.rb.ru/video_banner.php$object-subrequest
+@@||ads.su^$~third-party
+@@||ads.vyborg-press.ru^$domain=vyborg-press.ru
+@@||adv.d3.ru^$domain=adv.d3.ru
+@@||advert.akado.ru/$domain=akado.ru
+@@||advertising.yandex.$domain=adv.ya.ru
+@@||advertising.yandex.$~third-party
+@@||advert.kp.ru^$~object,~third-party
+@@||advert-technology.ru^$~third-party
+@@||adwolf.ru^$script,subdocument,domain=muz.ru
+@@||afisha.ru/proxy/$domain=afisha.ru
+@@||alfabank.ru/*/baner_$~third-party
+@@||alluregame.ru/Content/*/Advert$~third-party
+@@||am.ru/shared/minify.php?$script,stylesheet,domain=am.ru
+@@||atlant-m.in.ua/uploads/banners/$domain=atlant-m.in.ua
+@@||bash.im/webmaster|$elemhide
+@@||beeline.ru/ban/$domain=beeline.ru
+@@||beeline.ru/media/banners/$domain=beeline.ru
+@@||data.videonow.ru/$object-subrequest,domain=oper.ru
+@@||empik.ua/openx/www/delivery/ajs.php?$domain=empik.ua
+@@||ertelecom.ru^*.swf?link1=$domain=domru.ru
+@@||fest-ry.ru/*/images/ad$image,domain=fest-ry.ru
+@@||foodzy.ru/i/b/$image,domain=foodzy.ru
+@@||games-tv.ru/openx/www/delivery/ajs.php?$script,domain=games-tv.ru
+@@||igromania.ru/bitrix/templates/igromania/js/openxtag.js?$domain=igromania.ru
+@@||imgsmail.ru^*/btn/adv/$domain=mail.ru
+@@||irr.ru/ajax/*/submission/get_cat$domain=irr.ru
+@@||liveangarsk.ru/files/k/k-nikita.gif
+@@||legionhardware.com/images/teasers/$~third-party
+@@||livejournal.com/js/??*?v=$script,domain=livejournal.com
+@@||magnet.kiev.ua/www/$domain=gagadget.com
+@@||map.cn.ua/media/*/tur/
+@@||my.south.rt.ru^$document
+@@||nic.ru/styles/advertising.css$domain=nic.ru
+@@||now.ru/minify/index.php?$script,domain=now.ru
+@@||numbers.md/static/$script,domain=999.md
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=allhockey.ru
+@@||ph4.ru^*/show_ads.$~third-party
+@@||photodoska.ru/content/dynamic/ads/$domain=photodoska.ru
+@@||pgpru.com^$elemhide
+@@||pgpru.com^*/files?get=$domain=pgpru.com
+@@||prokazan.ru/sites/default/files/imagecache/tizer_$~third-party
+@@||rambler.ru/static/green2.min.js$domain=lenta.ru
+@@||renault.ru/_beta/banner_system/banner.php$domain=renault.ru
+@@||rock-online.ru/thema/rock/images/baner_$~third-party
+@@||rostcars.ru/css/advertisement.css$~third-party
+@@||ruspor.ru^$~third-party
+@@||russia.ru/reklama/32x32.flv?link1=$object-subrequest,domain=vz.ru
+@@||s5o.ru/common/css/teaser.css?$domain=sports.ru
+@@||semrush.com/m/scripts/reports/backlinks.$~third-party
+@@||sims3club.ru/images/bn/$~third-party
+@@||statcounter.com/counter/counter.js$~third-party
+@@||stopgame.ru/www/delivery/afr.php?*&target=_top&$subdocument,domain=stopgame.ru
+@@||stopgame.ru/www/delivery/ck.php?$subdocument,domain=stopgame.ru
+@@||stopgame.ru/www/images/$image,domain=stopgame.ru
+@@||swatch.com//images/*teaser$domain=swatch.com
+@@||tableterra.ru/wp-content/uploads/*/*/*-*x*.$image,domain=tableterra.ru
+@@||teachvideo.ru/advert/$~third-party
+@@||teachvideo.ru/www/delivery/$~third-party
+@@||teasers.gs-media.de^$domain=joindota.com
+@@||transbank.ru/upload/bx/$~third-party
+@@||tut.by/*/ads1/*/params.php?uid=$object-subrequest,domain=tut.by
+@@||tu-tu.ru/*/main/tizer/$domain=tutu.ru
+@@||ukrainianiphone.com/baners/r/$~third-party
+@@||vdmsti.ru/var/bansrc/$image,domain=vedomosti.ru
+@@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
+@@||vodyanoy.com.ua^*700_200.jpg|$domain=vodyanoy.com.ua
+@@||volnorez.com^*/liveplayer.swf?url=
+@@||yandex.ru/page/$domain=bestpersons.ru
+@@||yandex.ru/resource/$domain=bestpersons.ru
+@@||yandex.ru/system/context.js$domain=bestpersons.ru
+!#unhiding.bookmark
+airmediacenter.com#@#.b-banner
+am.ru#@#.adverts
+bestpersons.ru#@#.ya-partner_ads-up
+board.sibnet.ru#@#.adv
+filecheck.ru#@##contentAd
+irr.ru#@#.ad-block
+irr.ru#@#.b-advert
+metagames.ru#@#.adv_top
+mobile-review.com#@##advblock
+mts.ru#@#.wide-ad
+mygames.com.ua#@#.big-ads
+my.mail.ru#@#.adds
+my-serials.com#@##adverts
+ph4.ru#@##advert-1
+ph4.ru#@#.reklama
+photodoska.ru#@#.ad_large
+photodoska.ru#@#.ad_small
+stepashka.com#@##ad_header
+videoxq.com#@##adv-title
+vtomske.ru#@#.adtable
+!#detect.bookmark
+aqa.ru#@#div[id^="div-gpt-ad-"]
+@@||am10.ru/code.$domain=tv-serial.org
+@@||am15.net/bn.$script,domain=tv-serial.org
+@@||kinomafia.com^$elemhide
+@@||liverail.com^*/admanager.swf|$domain=own3d.tv
+@@||luxup.ru^$script,domain=99px.ru
+@@||raketa-tv.com/player/js/advertise.js|$domain=raketa-tv.com
+@@||visitweb.com^$script,domain=99px.ru
+! wordpress plugin no-adblock
+###ta8c
+@@#/ad160x600.$image,domain=fileplaneta.com|mediapapa.org|russerial.com
+fileplaneta.com,mediapapa.org,russerial.com#@##adBanner160x600
+fileplaneta.com,mediapapa.org,russerial.com#@##adSpace21
+fileplaneta.com,mediapapa.org,russerial.com#@##adskintop
+fileplaneta.com,mediapapa.org,russerial.com#@##advert_mpu_1
+fileplaneta.com,mediapapa.org,russerial.com#@##mastad
+fileplaneta.com,mediapapa.org,russerial.com#@##news_advertorial_top
+fileplaneta.com,mediapapa.org,russerial.com#@##rightcolhouseads
+@@||теплорасчет.рф/advertisement.js|$domain=теплорасчет.рф
+! - Против «бесконечной загрузки страниц» -------------------------------------
+!#excompat.bookmark
+! К сожалению скрипты сторонних рекламных сетей не всегда встраиваются аккуратно,
+! что приводит к эффекту «недогрузки» страниц. Реально всё содержимое загружено,
+! но индикатор загрузки продолжает показывать процесс загрузки и это состояние
+! часто влияет на работоспособность скриптов на таких страницах.
+! Этими двумя скриптами пользуется как adfox.ru, так и их же сайт adwolf.ru, и вроде как не их kavanga.ru
+@@/prepareCode?*&prr=*&dl=$script,domain=aif.ru|diary.ru|europaplus.ru|irr.ru|rosbalt.ru|soccer.ru|sport-express.ru|vesti.ru
+@@/prepareCode?*&prr=*&pdh=$script,domain=championat.com
+! С адривером не всё просто. Иногда эти скрипты нужны для закрытия записи на страницу, но иногда ситуация обратна и они только вредят (avito.ru, например).
+@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|aif.ru|cnews.ru|eg.ru|ex.ua|forum.tatfish.com|kinopoisk.ru|meta.ua|ozon.ru|ria.ru|rian.ru|thg.ru|vz.ru
+@@||adriver.ru/extender.js|$script,domain=vz.ru
+@@||adriver.ru/images/*/0/script.js?$script,domain=afisha.ru|aif.ru|cnews.ru|eg.ru|ex.ua|forum.tatfish.com|kinopoisk.ru|meta.ua|mobile-review.com|ozon.ru|ria.ru|rian.ru|thg.ru|vz.ru
+@@||advertpay.net/code?$script,domain=dic.academic.ru
+@@||adv.magna.ru/?id=*&rid=$script,domain=newstube.ru|soccer.ru
+@@||bw.pronto.ru/brick$script,domain=irr.ru
+@@||content.relax.ru^$script,domain=smotri.com
+@@||medialand.ru/code?*&oin=0&$script,domain=rbc.ru|smotri.com|utro.ru
+@@||premium.mbn.com.ua^$script,domain=ura-inform.com
+@@||rbc.magna.ru/xml_out/?$domain=utro.ru
