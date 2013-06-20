@@ -5,11 +5,6 @@ hg update
 hg merge
 
 commit_script() {
-    # re-generate hashes
-    ./hash.pl advblock.txt
-    ./hash.pl antinuha.txt
-    ./hash.pl bitblock.txt
-    ./hash.pl cntblock.txt
     # get diffs
     echo -------------------------------------------------------------------------------
     echo - Diff-list.
