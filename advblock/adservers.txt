@@ -1,4 +1,4 @@
-! [unknown] IP=88.208.16.51-54
+п»ї! [unknown] IP=88.208.16.51-54
 ! ///[^/.]+\.com/[a-z0-9]{32}\.js$/
 ||com/go.php?tid=*&hid=$popup
 ||kadavara.com^
@@ -11,7 +11,7 @@
 ||vogosita.com^
 ||zirikoni.com^
 !
-! 1Under.ru (все сидят на IP 89.208.145.156)
+! 1Under.ru (РІСЃРµ СЃРёРґСЏС‚ РЅР° IP 89.208.145.156)
 ! http://xml.ssdsandbox.net/dnslookup-dnsdb?name=89.208.145.156
 .com/j15.php$script,third-party
 .com/j25.php$script,third-party
@@ -88,7 +88,7 @@
 ||3c6.ru^
 ||mgogo.ru^
 ||slartibartfast.ru^
-! Домены, вставляемые скриптом, IP=77.120.107.6
+! Р”РѕРјРµРЅС‹, РІСЃС‚Р°РІР»СЏРµРјС‹Рµ СЃРєСЂРёРїС‚РѕРј, IP=77.120.107.6
 ||0ux.ru^
 ||2e0.ru^
 ||beeblebroks.ru^
@@ -196,7 +196,7 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||gameleads.ru^$third-party
 ||ileads.ru^$third-party
 !
-! ClickUnder.net и подобные им сайты
+! ClickUnder.net Рё РїРѕРґРѕР±РЅС‹Рµ РёРј СЃР°Р№С‚С‹
 /get.js?user_id=$script,third-party
 /get.php?user_id=*&mode=$script,third-party
 ||4allclick.ru^$~popup,popup
@@ -207,9 +207,9 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||nnn.novoteka.ru^$third-party
 ||vpered.ru^$third-party
 !
-! Dosug.cz и связанные с ними домены или
-! «ТУТ НИЧЕГО НЕТ. НАХРЕНА ТЫ СЮДА ЗАШЕЛ? :-)»
-! Общие правила
+! Dosug.cz Рё СЃРІСЏР·Р°РЅРЅС‹Рµ СЃ РЅРёРјРё РґРѕРјРµРЅС‹ РёР»Рё
+! В«РўРЈРў РќРР§Р•Р“Рћ РќР•Рў. РќРђРҐР Р•РќРђ РўР« РЎР®Р”Рђ Р—РђРЁР•Р›? :-)В»
+! РћР±С‰РёРµ РїСЂР°РІРёР»Р°
 /in.htm?wm=$popup
 /getThumbs?uid=$third-party,subdocument
 /sticker?id=$third-party,script
@@ -238,7 +238,7 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||sider.org.ru^$~popup,popup
 ! parked ||tvoi-dosug.com^$~popup,popup
 !
-! Ero.ru и прочие связанные с ними сайты
+! Ero.ru Рё РїСЂРѕС‡РёРµ СЃРІСЏР·Р°РЅРЅС‹Рµ СЃ РЅРёРјРё СЃР°Р№С‚С‹
 ||ero.ru^$third-party,domain=~vpets.ru
 ||vboys.ru^$third-party
 !
@@ -287,11 +287,11 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||mediaip.ru^
 ||promedia-click.ru^
 !
-! MediaLand.ru — партнёрская сеть компании «Медиа Мир».
+! MediaLand.ru вЂ” РїР°СЂС‚РЅС‘СЂСЃРєР°СЏ СЃРµС‚СЊ РєРѕРјРїР°РЅРёРё В«РњРµРґРёР° РњРёСЂВ».
 ||medialand.ru/code?
 ||popunder-mladnet.medialand.ru
 !
-! «Баннерный двигатель MadBanner»
+! В«Р‘Р°РЅРЅРµСЂРЅС‹Р№ РґРІРёРіР°С‚РµР»СЊ MadBannerВ»
 ||4smi.ru^
 ||advego.ru^$third-party
 ||advweb.ru^
@@ -401,7 +401,7 @@ _vodkov.net
 ||getout.besaba.com^
 ||kipfilms.ru^$third-party
 !
-! ICQAdvert и им подобные
+! ICQAdvert Рё РёРј РїРѕРґРѕР±РЅС‹Рµ
 /rotation/r.php?format=
 ||neotizer.com^
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
@@ -430,7 +430,7 @@ _vodkov.net
 ||ultrapay.net^
 !
 ! NewsAnons.ru
-! Замечено на fastpic.ru и kino-dom.tv, вставляет скрипт с доменов user*click.ru
+! Р—Р°РјРµС‡РµРЅРѕ РЅР° fastpic.ru Рё kino-dom.tv, РІСЃС‚Р°РІР»СЏРµС‚ СЃРєСЂРёРїС‚ СЃ РґРѕРјРµРЅРѕРІ user*click.ru
 ||houmekredit.ru^
 ||newsanons.ru^$third-party
 /newsanons/*?advert[]=
@@ -449,10 +449,10 @@ _vodkov.net
 ||the-people-group.$third-party
 !
 ! PopUnder.ru
-! Все домены — редирект на popunder.ru
-! Например: zork.beriche.ru/main/auth/ (zork — имя пользователя)
-! На сайтах обычно встречается в форме third-party.name/alphanumerical
-! или subdomain.first-party.name/alphanumerical
+! Р’СЃРµ РґРѕРјРµРЅС‹ вЂ” СЂРµРґРёСЂРµРєС‚ РЅР° popunder.ru
+! РќР°РїСЂРёРјРµСЂ: zork.beriche.ru/main/auth/ (zork вЂ” РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ)
+! РќР° СЃР°Р№С‚Р°С… РѕР±С‹С‡РЅРѕ РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ РІ С„РѕСЂРјРµ third-party.name/alphanumerical
+! РёР»Рё subdomain.first-party.name/alphanumerical
 ! http://www.domaincrawler.com/78.140.138.133
 ! http://www.webstatico.com/free-reverse-ip-website-check/popunder.ru
 ! http://www.yougetsignal.com/tools/web-sites-on-web-server/
@@ -523,8 +523,8 @@ _vodkov.net
 ||youhave.mobi^
 !#popunder.clients
 /^[a-z]+://[^/]+/[a-z0-9]{25,}\?.*=http%3A///
-! $domain=alltorrents.net|anime-box.ws|bookforall.ru|bukvaved.net|camelot.multilocal.ru|doublepunch.ru|dsvload.net|filmsmusic.ru|football-tv.com.ua|gfxstuff.ws|gold-liter.org.ua|hentaichan.ru|hottrash.ru|imagepix.org|kino1000.ru|kinoplay.com.ua|lik-bez.com|murmann.ru|narodclub.net|old-bukvaved.net|pic4pay.com|pic4you.ru|pic5you.ru|picforall.ru|pix-x.net|pornoshara.tv|ru-admin.net|russian-cheaters.com|rustorka.com|rustorrents.net|rutracker21.org|santikov.net|screenhost.ru|softsnew.ru|transformice.ru|winpic.ru|xxx-story.ru|xxx-tracker.com|zaebli.ru|дсвлоад.рф
-! Вероятно какой-то вирус
+! $domain=alltorrents.net|anime-box.ws|bookforall.ru|bukvaved.net|camelot.multilocal.ru|doublepunch.ru|dsvload.net|filmsmusic.ru|football-tv.com.ua|gfxstuff.ws|gold-liter.org.ua|hentaichan.ru|hottrash.ru|imagepix.org|kino1000.ru|kinoplay.com.ua|lik-bez.com|murmann.ru|narodclub.net|old-bukvaved.net|pic4pay.com|pic4you.ru|pic5you.ru|picforall.ru|pix-x.net|pornoshara.tv|ru-admin.net|russian-cheaters.com|rustorka.com|rustorrents.net|rutracker21.org|santikov.net|screenhost.ru|softsnew.ru|transformice.ru|winpic.ru|xxx-story.ru|xxx-tracker.com|zaebli.ru|РґСЃРІР»РѕР°Рґ.СЂС„
+! Р’РµСЂРѕСЏС‚РЅРѕ РєР°РєРѕР№-С‚Рѕ РІРёСЂСѓСЃ
 ! $domain=yandex.kz|yandex.ru|yandex.ua
 ||111.media-pleery.ru^
 ||ad.minecraft-mods.ru^
@@ -656,27 +656,27 @@ _vodkov.net
 //178.162.137.217/*
 ||smartbn.ru^$third-party
 !
-! SMI2/СМИ2
+! SMI2/РЎРњР2
 echo.msk.ru,tapochek.net##[id^="smi2adblock_"]
 ||smi2.ru/data/js/
 !
 ! spy2wc.org
-! С их судбдоменов распространяется MediaRich и PopUnder
+! РЎ РёС… СЃСѓРґР±РґРѕРјРµРЅРѕРІ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏРµС‚СЃСЏ MediaRich Рё PopUnder
 _spy2wc.org
 ||med22iwqeq.ru^
 ||sololslol.ru^
 ||tilili007.ru^
 ||tratataololol.ru^
 !
-! Торговая система NADAVI
-! e-katalog.com.ua, e-katalog.kiev.ua, e-katalog.ru, nadavi.com.ua, nadavi.ru, podberi.tv, pokupaj.com.ua, pokupaj.ru и прочие
+! РўРѕСЂРіРѕРІР°СЏ СЃРёСЃС‚РµРјР° NADAVI
+! e-katalog.com.ua, e-katalog.kiev.ua, e-katalog.ru, nadavi.com.ua, nadavi.ru, podberi.tv, pokupaj.com.ua, pokupaj.ru Рё РїСЂРѕС‡РёРµ
 ###nadaviSpan
 /ekbn/src/*
 ||nadavi.$third-party
 ||podberi.tv^$third-party
 !
-! TIOnline.ru - реклама игры Total Influence на разных сайтах игровой тематики
-! emuplanet.ru,obigre.ru,yaport.ru,zoda.ru и все связанные с ними домены
+! TIOnline.ru - СЂРµРєР»Р°РјР° РёРіСЂС‹ Total Influence РЅР° СЂР°Р·РЅС‹С… СЃР°Р№С‚Р°С… РёРіСЂРѕРІРѕР№ С‚РµРјР°С‚РёРєРё
+! emuplanet.ru,obigre.ru,yaport.ru,zoda.ru Рё РІСЃРµ СЃРІСЏР·Р°РЅРЅС‹Рµ СЃ РЅРёРјРё РґРѕРјРµРЅС‹
 /tionline120x60.
 /tionline150x60.
 /tionline240x100.
@@ -685,7 +685,7 @@ _spy2wc.org
 /swf/tionline/*
 !
 ! TizerMedia.net
-! «Пe peaд peca ция paбoтaeт oтлич нo!»
+! В«Рџe peaРґ peca С†РёСЏ paР±oС‚aeС‚ oС‚Р»РёС‡ РЅo!В»
 /tizermedia.
 .tizermedia.
 .htm?href=*&tm_mode=
@@ -701,7 +701,7 @@ _spy2wc.org
 ||gateway-04.com^
 !
 ! TeaserNET.com
-! Стабильные домены
+! РЎС‚Р°Р±РёР»СЊРЅС‹Рµ РґРѕРјРµРЅС‹
 ||teasernet.com.ua^
 ||im1-tub.com^
 ||im2-tub.com^
@@ -962,7 +962,7 @@ _spy2wc.org
 ||arkpressphoto.org^
 !
 ! TraffBiz.ru
-! alphanumerical.dyndns.tv/softo drom.php?id= и подобные адреса на бесплатных DNS.
+! alphanumerical.dyndns.tv/softo drom.php?id= Рё РїРѕРґРѕР±РЅС‹Рµ Р°РґСЂРµСЃР° РЅР° Р±РµСЃРїР»Р°С‚РЅС‹С… DNS.
 ||traffbiz.ru^
 ||menuse.ru^
 !
@@ -971,10 +971,10 @@ ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
 ||ucoz.*/img/ma/cv.gif
 ||ucoz.*/bnr/
 ||ucoz.*/uads/
-! Кнопки в углу ucoz-форумов
+! РљРЅРѕРїРєРё РІ СѓРіР»Сѓ ucoz-С„РѕСЂСѓРјРѕРІ
 ##.a-buttons.blue-but.a-check
 ##.a-buttons.green-but.a-clock
-! Какой-то рекламный движок для ucoz-форумов.
+! РљР°РєРѕР№-С‚Рѕ СЂРµРєР»Р°РјРЅС‹Р№ РґРІРёР¶РѕРє РґР»СЏ ucoz-С„РѕСЂСѓРјРѕРІ.
 ! $domain=artpost.ucoz.ru|fortpostnews.ucoz.ru|multiky.ru|notebene.ucoz.ru|tumbanew.ucoz.ru|uzumaki.kz|vceknigi.ru|...
 .am/rtr/$script
 .biz/rtr/$script
@@ -995,7 +995,7 @@ ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
 ||newsmarket.pixarea.ru^
 ||visitweb.com^
 !
-! VKnotifier («Ваша страница ВКонтакте заблокирована, Вам … прислала сообщение»)
+! VKnotifier (В«Р’Р°С€Р° СЃС‚СЂР°РЅРёС†Р° Р’РљРѕРЅС‚Р°РєС‚Рµ Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅР°, Р’Р°Рј вЂ¦ РїСЂРёСЃР»Р°Р»Р° СЃРѕРѕР±С‰РµРЅРёРµВ»)
 ~vk.com##DIV[class*="notifier_baloon_"]
 ~vk.com##DIV[id$="notifiers_wrap"]
 ~vk.com###vkMsg
