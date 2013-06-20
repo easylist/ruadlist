@@ -19,8 +19,8 @@
 !#popup.bookmark
 ! - Общие правила -------------------------------------------------------------
 /ad/popup/*$popup
-/popads/*$popup
 /popads.$popup
+/popads/*$popup
 ! Лжеобновления Firefox и подобное с доменов biz
 ||biz/includes/js/css-1.2.5.min.js$third-party
 ! Против попапов pageinxt.com, fileinxt.com, searchremagnified.com и ещё некоторых
@@ -51,18 +51,20 @@
 ||war.noc.su/?$popup
 ||yandes.biz/in.cgi?$popup
 ! - Прочее --------------------------------------------------------------------
-/vkshpion/?page=$popup
 //kpup.*/?sid=$popup
 //promo.$popup
+/vkshpion/?page=$popup
 ||24smile.$third-party,popup
 ||9donline.ru/welcome/?mita=$popup
 ||audance.ru*/promo/$popup
 ||blinkogold.ru^$popup
 ||bonsport.ru^$popup
 ||bookclub.ua^$popup
+||carnage.ru^$popup,domain=~carnage.ru|~karnage.ru|~sesterce.ru
 ||chaplingames.ru^$popup
 ||club-sale.ru^$popup
 ||clubrelaxxxx.com^$popup
+||cpm.wargaming.net^$popup,domain=~worldoftanks.ru
 ||darkorbit.bigpoint.com/?aid=$popup
 ||diets.1tv-russia.com^$popup
 ||discovermore.ru/restorepassword$~popup,popup
@@ -78,26 +80,24 @@
 ||moi-goroskop.com^$popup
 ||motorpage.ru^$popup
 ||mycultures.ru^$popup
+||panel.gemius.com.ua^$popup
 ||partypoker.com^*/videopop/$popup
 ||pointblank.ru/?pid=$popup
 ||pop.sn00.net^$popup
 ||sapato.ru^$third-party,popup
-||carnage.ru^$popup,domain=~carnage.ru|~karnage.ru|~sesterce.ru
-||cpm.wargaming.net^$popup,domain=~worldoftanks.ru
 ||say.tv/?actionpay=$popup
+||sbornix.ru^$popup
+||sergey-mavrodi.com^$popup
 ||skidka50.com.ua^$popup
 ||snailz.ru/promo/?$popup
 ||tankionline.com/ru/play$popup
-||test-studio.ru^$popup,third-party
+||test-studio.ru^$third-party,popup
 ||travian.com.ua/landingpage/$popup
-||panel.gemius.com.ua^$popup
-||sbornix.ru^$popup
-||sergey-mavrodi.com^$popup
 ||velcome-club.com^$popup
+||w-raza.com^$popup
 ||wardogs.ru/lp?ref=$popup
 ||webarbitrage.ru/?$popup
 ||worldoftanks.eu/play/$popup
-||w-raza.com^$popup
 ||yapfiles.ru^*/rating_by_pop/$popup
 ||zzima.com^$popup,domain=~zzima.com
 ! - Мошенники -----------------------------------------------------------------
@@ -114,8 +114,8 @@
 ||youtube.com^$domain=2officialnik.biz|dvadzat5.biz|help2play.com|razmon.biz|vkonagt.com|vsetutprosto.info
 ! Попапы и редирект (мошенники) на turbobit.net
 ||add5.ru^$~popup,popup
-||dvadzat5.biz^$~popup,popup
 ||diaman4.info^$~popup,popup
+||dvadzat5.biz^$~popup,popup
 ||razmon.biz^$~popup,popup
 ||vsetutprosto.info^$~popup,popup
 ! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
@@ -151,13 +151,13 @@
 ! - Информеры (желтая пресса, реклама товаров и просто всякий мусор) ----------
 !#informer.bookmark
 ##.novinator
+.redtram.$domain=~redtram.com
 /adsnews.
 /informer.js
 /informer.php?
 /informer/script.php?id=
 /rbknews/*
 /redtram.$domain=~redtram.com
-.redtram.$domain=~redtram.com
 /sblocks_informer.
 ||12-dd-2.net^
 ||1k.by/informers/
@@ -199,7 +199,7 @@
 ||nyx.su/informers/
 ||otvali.ru/informer/
 ||podfm.ru/informer/
-||pravda.ru/cache/cqc/$subdocument,third-party
+||pravda.ru/cache/cqc/$third-party,subdocument
 ||protoplex.ru/cgi-bin/informer.pl?
 ||protoplex.ru/images/rating/
 ||rosinvest.com/informs/

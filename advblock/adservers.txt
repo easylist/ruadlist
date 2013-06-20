@@ -13,14 +13,14 @@
 !
 ! 1Under.ru (все сидят на IP 89.208.145.156)
 ! http://xml.ssdsandbox.net/dnslookup-dnsdb?name=89.208.145.156
-.com/j15.php$script,third-party
-.com/j25.php$script,third-party
-.com/j35.php$script,third-party
-.com/j45.php$script,third-party
-.com/j65.php$script,third-party
-.com/clck.php?g=$popup
-.com/on.php?id=$popup
 &temz=clikundr&$~popup,popup
+.com/clck.php?g=$popup
+.com/j15.php$third-party,script
+.com/j25.php$third-party,script
+.com/j35.php$third-party,script
+.com/j45.php$third-party,script
+.com/j65.php$third-party,script
+.com/on.php?id=$popup
 ||1under.ru^$~popup,popup
 ||2lycosu.com^$~popup,popup
 ||2lycosy.com^$~popup,popup
@@ -57,12 +57,13 @@
 ! AdForce
 /bshow.php?dimension=$third-party,script
 /utarget.~popup,popup
-/vkshow1.php?$script,third-party
+/vkshow1.php?$third-party,script
 ! IP=5.187.3.144
 ||adforce.ru^
 ! IP=5.187.3.127, .7.147, .7.247
 ||ad004.ru^
 ||ad05f.ru^
+||adv-first.ru^
 ||adv225489.ru^
 ||adv457895.ru^
 ||adv481895.ru^
@@ -70,12 +71,11 @@
 ||adv679854.ru^
 ||adv758968.ru^
 ||adv859672.ru^
-||adv-first.ru^
 ! IP=5.187.5.4
 ||brandarium.ru^
 ! IP=91.228.*
-||afterview.ru^
 ||adserv01.ru^
+||afterview.ru^
 !#clients
 .ru/code/$script,domain=aphorisme.ru|kinopod.ru|mp3ray.ru|tusnya.net
 !
@@ -98,10 +98,9 @@
 ###ad_ph_3
 ###adriver_middle
 ###adriver_top
-compulenta.ru,computerra.ru,f1news.ru,gamemag.ru##A[href^="http://ad.adriver."]
-gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 .adriver.$object-subrequest,domain=cybergame.tv|fs.ua|smotri.com
 /banners/*/*/0/index.$subdocument
+compulenta.ru,computerra.ru,f1news.ru,gamemag.ru,gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##a[href^="http://ad.adriver."]
 ||rle.ru^
 !
 ! AdStock.ru
@@ -136,8 +135,8 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||ava.com.ua^
 !
 ! Begun.ru
-?begun=*&begun_referrer=*&begun_location=
 /begun.js
+?begun=*&begun_referrer=*&begun_location=
 !
 ! BinMedia.ru
 ! 178.162.179.13
@@ -169,11 +168,11 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||morenews3.net^
 ||morenews4.net^
 ||sochetat.net^
+||tizer12.net^
+||tizer13.net^
 ||tizer6.net^
 ||tizer7.net^
 ||tizer8.net^
-||tizer12.net^
-||tizer13.net^
 ||tizerbest.net^
 ||tizerda.net^
 ||tizerelite.net^
@@ -197,8 +196,8 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ||ileads.ru^$third-party
 !
 ! ClickUnder.net и подобные им сайты
-/get.js?user_id=$script,third-party
-/get.php?user_id=*&mode=$script,third-party
+/get.js?user_id=$third-party,script
+/get.php?user_id=*&mode=$third-party,script
 ||4allclick.ru^$~popup,popup
 ||gokliks.ru^$~popup,popup
 ||trafidet.ru^$~popup,popup
@@ -210,8 +209,8 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 ! Dosug.cz и связанные с ними домены или
 ! "ТУТ НИЧЕГО НЕТ. НАХРЕНА ТЫ СЮДА ЗАШЕЛ? :-)"
 ! Общие правила
-/in.htm?wm=$popup
 /getThumbs?uid=$third-party,subdocument
+/in.htm?wm=$popup
 /sticker?id=$third-party,script
 ||clickcashmoney.com^$~popup,popup
 ||dev4enki.com^$~popup,popup
@@ -244,28 +243,28 @@ gismeteo.ru,sovsport.ru,sportbox.ru,thg.ru##A[href^="http://ad.adriver."]
 !
 ! Gaminator
 !.gaminator#global
-##A[href^="http://luckiestclick.com/goto."]
-##.gaminator
 ###gaminator
+##.gaminator
+##a[href^="http://luckiestclick.com/goto."]
 /gaminator-
-/gaminator/*
 /gaminator.
+/gaminator/*
 ||luckiestclick.com^$popup
 ||winafterwin.com^$popup
 !.gaminator.local
+zerx.ru##a[href^="http://zerx.ru/engine/go.php?url="]
 ||epidemz.net/bank/
 ||filmix.net/branding
 ||minizal.net/js/brandminizal.js
 ||torrentino.com/assets/$object
 ||x8.net/2/*_O.$domain=torrentino.com|torrentino.ru|unionpeer.org
 ||x8.net/images/
-zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||zerx.ru/templates/zerxnew/images/zerx_bg.
 ! $domain=filmix.net|jo-jo.ru|kino-live.org|pornoshara.tv
-/branding/casino/*
+/branding-rotator.js
 /branding.css
 /branding.js
-/branding-rotator.js
+/branding/casino/*
 !
 ! KinoPromoBase
 /get_banner_flash.*&shop=
@@ -274,18 +273,18 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 !
 ! LadyClicks.ru
 /showf.php?u=$subdocument
+||lady-clicks.ru^
 ||ladycash.ru^
+||ladyclicks.ru^
 ||ladyclicks2.ru^
 ||ladyclicks8.ru^
-||lady-clicks.ru^
-||ladyclicks.ru^
 !
 ! Media-Click.ru
-||ru/text_show.php?id=$script,third-party
-||ru/tiz_show.php?id=$script,third-party
 ||admedia-click.ru^
 ||mediaip.ru^
 ||promedia-click.ru^
+||ru/text_show.php?id=$third-party,script
+||ru/tiz_show.php?id=$third-party,script
 !
 ! MediaLand.ru - партнёрская сеть компании "Медиа Мир".
 ||medialand.ru/code?
@@ -316,11 +315,11 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ###elemMovAdv
 //95.169.186.139^
 ||12-art-2-i.eu^
+||2-tr-45.net^
 ||212-sueper.eu^
 ||212sueper.eu^
 ||231good.eu^
 ||23ie7e.eu^
-||2-tr-45.net^
 ||2tr45.net^
 ||3oi3ue.eu^
 ||4-w-4-new.eu^
@@ -343,11 +342,11 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||ikk2gh.eu^
 ||koe-dv.net^
 ||media-kod.net^
-||mediarich-code.ru^
-||mediarichcode.ru^
 ||media-rich.ru^
 ||media-rotation.net^
 ||media-rotator.net^
+||mediarich-code.ru^
+||mediarichcode.ru^
 ||mediarotator.net^
 ||mediaunder.org^
 ||mediaunder.us^
@@ -362,8 +361,8 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ||rich-adv-code.net^
 ||rotation-media.net^
 ||rotation-message.net^
-||rotationmessage.net^
 ||rotation-web.net^
+||rotationmessage.net^
 ||super12.eu^
 ||various1down.biz^
 ||web-rotation.net^
@@ -376,6 +375,8 @@ zerx.ru##A[href^="http://zerx.ru/engine/go.php?url="]
 ! $domain=mediarich.cc|mediarich.ru|mediarich.us|mediarich.ws
 ||mediarich.$third-party
 !#mediarich.clients
+-murmann.ru
+-softin.ca
 _2krota.ru.js
 _camelot.multilocal.ru
 _camelot.userlan.ru
@@ -385,12 +386,10 @@ _gold-torrent.org
 _haxa.ru
 _kipfilms.ru
 _multiky.ru
--murmann.ru
 _narodclub.net
 _ru-admin.net
 _saytturtsii.ru
 _softbaron.ru
--softin.ca
 _stock-exchange.ucoz.com
 _todayanekdot.ru
 _torrentszona.com
@@ -431,9 +430,9 @@ _vodkov.net
 !
 ! NewsAnons.ru
 ! Замечено на fastpic.ru и kino-dom.tv, вставляет скрипт с доменов user*click.ru
+/newsanons/*?advert[]=
 ||houmekredit.ru^
 ||newsanons.ru^$third-party
-/newsanons/*?advert[]=
 ||usermediaclick.ru^
 !
 ! Nolix.ru
@@ -527,9 +526,9 @@ _vodkov.net
 ! Вероятно какой-то вирус
 ! $domain=yandex.kz|yandex.ru|yandex.ua
 ||111.media-pleery.ru^
+||a.gfxz.org^
 ||ad.minecraft-mods.ru^
 ||adr.alltorrents.net^
-||a.gfxz.org^
 ||bn1.homefot.ru^
 ||bookforall1.bookforall.ru^
 ||bt1.gutgirl.ru^
@@ -537,20 +536,20 @@ _vodkov.net
 ||dvasub.eroox.ru^
 ||dvasub.kipfilms.ru^
 ||forum.dwnld.net.ua^
-||gold.rustorka.com^
 ||go.mega-games.org^
+||gold.rustorka.com^
 ||gov.hentaipix.ru^
 ||news.movieworld.kz^
 ||plus.pornoshara.tv^
-||public.screenhost.ru^
 ||pu.zipsites.ru^
+||public.screenhost.ru^
 ||recloma.cssmod.ru^
 ||rek.x-zona.org^
 ||rikki.bukvaved.net^
 ||rx9aef.driver-id.ru^
 ||sailor.rutracker21.org^
-||sctipt.prons.org^
 ||scripts1.picforall.ru^
+||sctipt.prons.org^
 ||static2.ero2you.com^
 ||wells.murmann.ru^
 ||wolf.fan-guf.ru^
@@ -558,9 +557,9 @@ _vodkov.net
 ||1.miniporn.ru^
 ||anime.neco.su^
 ||kuhni.goodtrend2.ru^
+||po.spynets.ru^
 ||pop.spy4.in^
 ||pop.turnik.su^
-||po.spynets.ru^
 ||ppuru.10host.ru^
 ||qwerty.arenda263.ru^
 ||root.qw.su^
@@ -574,14 +573,10 @@ _vodkov.net
 ||promoblocks.ru^
 !
 ! PromoDJ
-||promodj.$popup,domain=~discomixes.ru|~djcosmonaut.ru|~promodj.com|~promodj.ru
-||pdj.$popup
 ||all.dj^$popup
-||mixed.by^$popup
-||remixed.by^$popup
-||composed.by^$popup
 ||basser.ru^$popup
 ||bassmydrum.ru^$popup
+||composed.by^$popup
 ||dbass.ru^$popup
 ||deeep.ru^$popup
 ||deejay-rank.com^$popup
@@ -605,12 +600,15 @@ _vodkov.net
 ||internetdj.ru^$popup
 ||milhouse.ru^$popup
 ||minimals.ru^$popup
+||mixed.by^$popup
 ||morehouse.ru^$popup
 ||mydeephouse.ru^$popup
+||pdj.$popup
 ||playdeep.ru^$popup
 ||playtrance.ru^$popup
 ||prgsv.ru^$popup
 ||promodeejay.$popup
+||promodj.$popup,domain=~discomixes.ru|~djcosmonaut.ru|~promodj.com|~promodj.ru
 ||promomix.ru^$popup
 ||promopop.ru^$popup
 ||promoradio.ru^$popup
@@ -621,6 +619,7 @@ _vodkov.net
 ||rap2rap.ru^$popup
 ||rapme.ru^$popup
 ||rapsoul.ru^$popup
+||remixed.by^$popup
 ||respecter.ru^$popup
 ||rnbee.ru^$popup
 ||rnbface.ru^$popup
@@ -641,19 +640,19 @@ _vodkov.net
 ||trafers.ru^
 !
 ! RealTraf
-/initRTv2.php?id=$script,third-party
+/initRTv2.php?id=$third-party,script
+||real2clean.ru^
 ||realdomenclear.ru^
-||realtraf.net^
 ||realtraf.$third-party,~popup,popup
+||realtraf.net^
 ||realtraf3.ru^
 ||realtraf9.ru^
-||real2clean.ru^
 ||rtdns.ru^
 ||www.rt-ns.ru^
 !
 ! Smart BN
-/sbn2.js$third-party
 //178.162.137.217/*
+/sbn2.js$third-party
 ||smartbn.ru^$third-party
 !
 ! SMI2/СМИ2
@@ -677,41 +676,41 @@ _spy2wc.org
 !
 ! TIOnline.ru - реклама игры Total Influence на разных сайтах игровой тематики
 ! emuplanet.ru,obigre.ru,yaport.ru,zoda.ru и все связанные с ними домены
+/swf/tionline/*
 /tionline120x60.
 /tionline150x60.
 /tionline240x100.
 /tionline240x400.
 /topminigames.jpg|
-/swf/tionline/*
 !
 ! TizerMedia.net
 ! "Пe peaд peca ция paбoтaeт oтлич нo!"
-/tizermedia.
-.tizermedia.
 .htm?href=*&tm_mode=
+.tizermedia.
+/tizermedia.
 ||stableprofit4you.com^
 !.tizermedia#clients
 ||nord.murmann.ru^
 !
 ! Tizer Stock
 .com/js/check_blocks.js|$third-party
-||tizerstock.com^
 ||gateway-02.com^
 ||gateway-03.com^
 ||gateway-04.com^
+||tizerstock.com^
 !
 ! TeaserNET.com
 ! Стабильные домены
-||teasernet.com.ua^
+||attivertura.com^
+||im-tub.com^
 ||im1-tub.com^
 ||im2-tub.com^
 ||im3-tub.com^
 ||im4-tub.com^
 ||im5-tub.com^
 ||im6-tub.com^
-||im-tub.com^
 ||masterconvert.ru^
-||attivertura.com^
+||teasernet.com.ua^
 !#teasernet.rotation
 ! http://trafficsize.com/ga/UA-23379474
 ! http://xml.ssdsandbox.net/dnslookup-dnsdb?name=88.85.93.x (x in [34,35,100,101])
@@ -939,23 +938,11 @@ _spy2wc.org
 ||zontrans.com^
 !#teasernet.clients
 ! /^[a-z]+://[a-z]{5,}\.com/([a-z0-9/]{12,24})$/$third-party,script
-||com/rss*?*=*&*=*&*=$third-party,script
-||com/s$script,domain=24warez.ru|anidub.com|cmexota.ru|comp-inform.ru|demotivators.to|dir300.ru
-||com/s$script,domain=eroox.ru|fivemusic.ru|gold-torrent.org|huyandex.com|imageban.ru
-||com/s$script,domain=kinopod.ru|last.by|mp3prima.com|oplayer.org
-||com/s$script,domain=palevo.com|pic4you.ru|plus100500.ru|pornovizion.com|privsex.ru
-||com/s$script,domain=ru-admin.net|softsnew.ru|uptube.su
-||com/s$script,domain=vodkov.net|vodvore.net|vseblidynas.ru|vtraxe.com|vzale.tv
-||com/s$script,domain=xxxlili.ru|xxx-story.ru|x-zona.org
-/jquery.js|$third-party,domain=24warez.ru|anidub.com|cmexota.ru|comp-inform.ru|demotivators.to|dir300.ru
-/jquery.js|$third-party,domain=eroox.ru|fivemusic.ru|gold-torrent.org|huyandex.com|imageban.ru
-/jquery.js|$third-party,domain=kinopod.ru|last.by|mp3prima.com|oplayer.org
-/jquery.js|$third-party,domain=palevo.com|pic4you.ru|plus100500.ru|pornovizion.com|privsex.ru
-/jquery.js|$third-party,domain=ru-admin.net|softsnew.ru|uptube.su
-/jquery.js|$third-party,domain=vodkov.net|vodvore.net|vseblidynas.ru|vtraxe.com|vzale.tv
-/jquery.js|$third-party,domain=xxxlili.ru|xxx-story.ru|x-zona.org
+/jquery.js|$third-party,domain=24warez.ru|anidub.com|cmexota.ru|comp-inform.ru|demotivators.to|dir300.ru|eroox.ru|fivemusic.ru|gold-torrent.org|huyandex.com|imageban.ru|kinopod.ru|last.by|mp3prima.com|oplayer.org|palevo.com|pic4you.ru|plus100500.ru|pornovizion.com|privsex.ru|ru-admin.net|softsnew.ru|uptube.su|vodkov.net|vodvore.net|vseblidynas.ru|vtraxe.com|vzale.tv|x-zona.org|xxx-story.ru|xxxlili.ru
 =http%3A%2F%2Fpornovizion.com
 =http%3A%2F%2Fwww.vzale.tv
+||com/rss*?*=*&*=*&*=$third-party,script
+||com/s$script,domain=24warez.ru|anidub.com|cmexota.ru|comp-inform.ru|demotivators.to|dir300.ru|eroox.ru|fivemusic.ru|gold-torrent.org|huyandex.com|imageban.ru|kinopod.ru|last.by|mp3prima.com|oplayer.org|palevo.com|pic4you.ru|plus100500.ru|pornovizion.com|privsex.ru|ru-admin.net|softsnew.ru|uptube.su|vodkov.net|vodvore.net|vseblidynas.ru|vtraxe.com|vzale.tv|x-zona.org|xxx-story.ru|xxxlili.ru
 ||nn.tmska.com^
 ||stats.internet-yadro.com^
 !#teasernet.other
@@ -963,13 +950,13 @@ _spy2wc.org
 !
 ! TraffBiz.ru
 ! alphanumerical.dyndns.tv/softo drom.php?id= и подобные адреса на бесплатных DNS.
-||traffbiz.ru^
 ||menuse.ru^
+||traffbiz.ru^
 !
 ! Ucoz.net
-ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
-||ucoz.*/img/ma/cv.gif
+ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##div[id^="ads_games_"]
 ||ucoz.*/bnr/
+||ucoz.*/img/ma/cv.gif
 ||ucoz.*/uads/
 ! Кнопки в углу ucoz-форумов
 ##.a-buttons.blue-but.a-check
@@ -996,17 +983,14 @@ ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
 ||visitweb.com^
 !
 ! VKnotifier ("Ваша страница ВКонтакте заблокирована, Вам ... прислала сообщение")
-~vk.com##DIV[class*="notifier_baloon_"]
-~vk.com##DIV[id$="notifiers_wrap"]
-~vk.com###vkMsg
 ###nor_wrap
+&vk_t=*&adv_ids=
 /code/click.php?id=$popup
 /mp3player.swf?file=*/bb1.mp3
 /mp3player.swf?file=*/bb2.mp3
-/vk_code.php?id=$script,third-party
-/vknotifier1.php?id=$script,third-party
-/vkshow.php?id=$script,third-party
-&vk_t=*&adv_ids=
+/vk_code.php?id=$third-party,script
+/vknotifier1.php?id=$third-party,script
+/vkshow.php?id=$third-party,script
 ||adgamble.net^
 ||andrak.ru^
 ||clickadvert.net^
@@ -1020,6 +1004,9 @@ ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
 ||taril1.ru^
 ||taril2.ru^
 ||taril3.ru^
+~vk.com###vkMsg
+~vk.com##div[class*="notifier_baloon_"]
+~vk.com##div[id$="notifiers_wrap"]
 !#paymonsters.main
 ||23mfdoe32rs.ru^
 ||jxrhjcb.biz^
@@ -1030,21 +1017,21 @@ ucoz.com,ucoz.kz,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua##DIV[id^="ads_games_"]
 ||sergh34ds.com^
 ||sof32dsso.ru^
 !#vkmonster.main
-||tm/rotator/$script,third-party
-||to/code/$script,third-party
-||to/rotator/$script,third-party
 ||liolexina.com^
 ||newlixica.com^
+||tm/rotator/$third-party,script
+||to/code/$third-party,script
+||to/rotator/$third-party,script
 ||vkmonster.com^
 !#vkmonster.clients
 ! ||ru/code/$domain=imageban.ru
 ||name.vauchane.ru^
 !
 ! Wizard-TraffStock.com
-//uno.*/?t=$script,popup
+//uno.*/?t=$popup,script
+/?t=*&noadult=1&pid=$script
 /?t=b&blockids=$script
 /?t=rot&pid=$script
-/?t=*&noadult=1&pid=$script
 ||wizard-traffstock.com^$third-party,~popup,popup
 ||wts-rotator.com^$~popup,popup
 !#wts.clients

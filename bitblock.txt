@@ -19,8 +19,8 @@
 @@||bittorrent.com/public/min/$stylesheet,domain=bittorrent.com
 @@||f1.mozillamessaging.com/share/panel/$document
 @@||google.com/js/plusone.js|$domain=get-tune.net|pikucha.ru
-@@||odnoklassniki.ru^$domain=nevosoft.ru
 @@||odnoklassniki.ru/share/odkl_share.js$domain=altapress.ru
+@@||odnoklassniki.ru^$domain=nevosoft.ru
 @@||twitter.com/widgets.js|$domain=slon.ru
 @@||yandex.st/share/share.js$domain=hip-hop.ru|pikucha.ru|yandex.by|yandex.com|yandex.com.tr|yandex.kz|yandex.ru|yandex.ua
 !
@@ -45,28 +45,28 @@
 ||disqus.com^*/recent_comments_widget.
 !
 !------------ Facebook --------------------------------------------------------
-##[alt$=" on Facebook"]
+~facebook.com###facebook
+facebook.com##._1yv[role="dialog"]
 ##.facebook
 ##.fb_iframe_widget
 ##.soc_fb_share
+##[alt$=" on Facebook"]
 ##[title$=" to Facebook"]
-facebook.com##._1yv[role="dialog"]
-~facebook.com###facebook
+_facebook.gif
 ||facebook.com/method/fql.query?*&query=select*from*link_stat*where*url=
 ||facebook.com/plugins/comments.php?
 ||graph.facebook.com/*&callback=
-_facebook.gif
 !
 !------------ Google ----------------------------------------------------------
-##.googleplus
 ##.g_plus
+##.googleplus
 ##button[class="gbil esw eswd"]
 /+1/fastbutton?url=
 /plusone.js$domain=play.google.com
 /sprite4-a67f741843ffc4220554c34bd01bb0bb.png
 ||gmodules.com/ig/images/plus_google.gif
-||google.com/translate_a/element.js?cb=googleTranslateElementInit|
 ||google.*/cse/brand?form=
+||google.com/translate_a/element.js?cb=googleTranslateElementInit|
 ! Панель справа в гуглопочте
 mail.google.com##.Bu + .Bu.yM + .Bu.y3
 !
@@ -91,14 +91,19 @@ _twitter.png
 ! ||vk.com^$third-party,script,subdocument
 ! ||userapi.com^$third-party,domain=~vk.com
 ###com_vk
-##.vk-button
 ###vk_groups
 ###vk_groups2
 ###vk_groups_q
-##.vkontakte
 ###vk_recommended
 ###vkshare0
+##.vk-button
 ##.vk-share-button
+##.vkontakte
+/icon-vkontakte.
+/icons/vkontakte_
+/vkontakte_icon_
+_vkontakte.gif
+_vkontakte.png
 ||vk.com/widget_comments.php?$third-party
 ||vk.com/widget_groups.php?
 ||vk.com/widget_poll.php?$third-party
@@ -109,17 +114,12 @@ _twitter.png
 ||vkontakte.ru/widget_poll.php?$third-party
 ||vkontakte.ru/widget_recommended.php?
 ||vkontakte.ru/widget_subscribe.php?$third-party
-/icons/vkontakte_
-/icon-vkontakte.
-/vkontakte_icon_
-_vkontakte.gif
-_vkontakte.png
 !
 !------------ Мой Мир (Mail.RU) -----------------------------------------------
 ##.mrc__share
+@@||connect.mail.ru/js/loader.js|
 ||boom.mail.ru^
 ||connect.mail.ru^$third-party
-@@||connect.mail.ru/js/loader.js|
 ||imgsmail.ru/*_share_buttons_sprite.$third-party
 !
 !------------ Одноклассники ---------------------------------------------------
@@ -134,41 +134,41 @@ _vkontakte.png
 ||lenta.yandex.ru/i/addfeed.
 !
 !- Универсальные и прочее -----------------------------------------------------
-##.addthis_table
-/addthis.try.js
-##.addzakl
-~appledevelopers.ru##.social
 ###block_social_open
+###odnaknopka
+###social
+###socialblock
+###socializ
+##.addthis_table
+##.addzakl
+##.pluso
+##.smiletagging-button
+##.soc-box
+##.soc_share
+~appledevelopers.ru##.social
+##.social-icons-big
+/addthis.try.js
+/copy_to_blog_*.gif
+/odnaknopka.js
+/odnaknopka/*
+/plugins/addzakl/*
+/plugins/russocialknopki-
+/share32.
+/share42-
+/share42/*
+_liveinternet.gif
 ||bobrdobr.ru/images/buttons/$third-party
 ||bogi.ru/comments_widget.
 ||clix.ru^$third-party
 ||contentwidgets.net/widget/
-/copy_to_blog_*.gif
-_liveinternet.gif
 ||loveplanet.ru^$third-party,domain=~loveplanet.ua
 ||memori.ru^$third-party
 ||mister-wong.ru/img/*/buttons/$third-party
 ||moemesto.ru/icons/$third-party
 ||mystatus.skype.com^
-/odnaknopka/*
-###odnaknopka
-/odnaknopka.js
 ||odnaknopka.ru^$third-party
 ||pikabu.ru^$third-party,~image
 ||pip.qip.ru^$domain=~pip.qip.ru
-/plugins/addzakl/*
-/plugins/russocialknopki-
-##.pluso
-/share32.
-/share42-
-/share42/*
-##.smiletagging-button
-##.soc-box
-###social
-###socialblock
-##.social-icons-big
-###socializ
-##.soc_share
 ||twittercounter.com^$third-party
 ||viadeo.com/exec/recommend:getRecommend?$third-party
 ||vkrugudruzei.ru/x/button/get?
@@ -178,138 +178,138 @@ _liveinternet.gif
 !
 !- По-сайтам (частные) --------------------------------------------------------
 !#socpriv.bookmark
-247auto.ru,caredge.ru##.auth_vkontakte
-247auto.ru,caredge.ru##.bookmarks_list
 3dnews.ru###article + .breadcrumbs
-3dnews.ru###socialtabs
-4pna.com##TABLE:first-child + BR + .tborder[cellspacing="1"][cellpadding="6"][align="center"]
-||a-comics.ru/pics5/1btn/
-afisha.ru##.b-share-list
-aif.ru##IFRAME[src^="http://www.facebook."] + BR + TABLE[border="0"]
-aif.ru##.links + TABLE[align="center"]
-||allbest4free.ru/head.
 apple-russia.ru###bloghtml
 apple-russia.ru###bookmark
+f1news.ru###bookmarkBlock
+ntv.ru###btmsocialize
+rutv.ru###btns
+ipicture.ru###buton
+homenet.beeline.ru###ed-0_toolbar_3
+ria.ru###facebook-userbar
+newsinfo.ru###facebox
+homenet.beeline.ru###fast-reply_toolbar_3
+kp.ru###fb_popup
+inosmi.ru###left_sliding_block
+google.com###lhn-friends
+google.com###lhn-recommendations
+kp.ru###like_buttons
+sfw.org.ua###qipbtn
+delfi.ua###sbookmarks_left
+satsis.info###share
+molodejj.ru###sharePanel
+opennet.ru###social_link
+3dnews.ru###socialtabs
 autoclub-cerato.ru###socio_0
 autoclub-cerato.ru###socio_1
-||bestrepack.net/forum/images/logo/*.gif
-||bin.com.ua/social/img/
-championat.ru##.livejournal
-cheklab.ru##.art-postcontent > .buttons
-||cnews.ru/inc/images/feeds/
-cwer.ws##A[href^="/goto/"] > IMG[width="150"][height="150"]
-||delfi.*/fbembed.
+google.com###sub-tree-subscriptions
+lightroom.kiev.ua###vk_comments
+lightroom.kiev.ua###vk_poll
+kp.ru##.a_diffusion > .center > .left
+kinopoisk.ru##.add_to
 delfi.ua##.after_body
-delfi.ua##.sbookmarks
-delfi.ua###sbookmarks_left
-||delphi.*/scms/?g=fbn&
-||drugasmuga.com/images/bookmarks/
-||drweb.com/static/js/redirect_to_facebook.js
-echo.msk.ru##.netWorkBlock
-f1news.ru###bookmarkBlock
-fishki.net##.bloglinks
-fishki.net##.undertopic > .imgmiddle
-fmates.ru##.bookmarkz
+kp.by,kp.ru##.all_open-graph[id^="fb_"]
+kp.ru##.all_partners
+russia.ru##.append-other-applecations
+cheklab.ru##.art-postcontent > .buttons
+korrespondent.net##.artpop_shad
+247auto.ru,caredge.ru##.auth_vkontakte
+podrobnosti.ua##.b-news-share
+pikucha.ru,rambler.ru##.b-share
+afisha.ru##.b-share-list
+rambler.ru##.b-social-share
 forbes.ru##.block-social-dockable
+fishki.net##.bloglinks
 game-monitor.com##.bookmark
-||gamespotcdn.com/*/social_media.
-||goha.ru/social/
+intv.ru##.bookmarks-container
+247auto.ru,caredge.ru##.bookmarks_list
+fmates.ru##.bookmarkz
+qiq.ws##.buttonbox
+nvworld.ru##.buttons
+kp.ru##.cb_services-all
 google.com##.entry-actions > .broadcast
 google.com##.entry-actions > .broadcast-with-note
 google.com##.entry-actions > .email
 google.com##.entry-actions > .like
 google.com##.entry-author > .entry-likers
-google.com###lhn-friends
-google.com###lhn-recommendations
-google.com###sub-tree-subscriptions
-||habrahabr.ru/images/share.
-homenet.beeline.ru###ed-0_toolbar_3
-homenet.beeline.ru###fast-reply_toolbar_3
-homenet.beeline.ru,forum.f1news.ru##.topic_share
+navitel.su##.extra_append:last-child
+korrespondent.net##.footer_socialblock
+mobiledevice.ru##.icons_bar_placeholder
+aif.ru##.links + table[align="center"]
+championat.ru##.livejournal
+echo.msk.ru##.netWorkBlock
+novafilm.tv##.news-entry > div:last-child
+ntv.ru##.podprint > ul[style*="370"]
+kurufin.ru##.polotno + .add1
+nya.sh##.q > .bottom
+safetygate.ru##.round-bs[class*="icon-"]
+delfi.ua##.sbookmarks
+piter.tv##.snet-links
+rutracker.org##.soc-buttons
+kanobu.ru##.soc-embed
+kinopoisk.ru##.socRight
 hqroom.ru##.sots-plugin
+forum.f1news.ru,homenet.beeline.ru##.topic_share
+fishki.net##.undertopic > .imgmiddle
+korrespondent.net##.unipopup
+rambler.ru##.v-favsites
+cwer.ws##a[href^="/goto/"] > img[width="150"][height="150"]
+qiq.ws##a[onclick^="return addSoc"]
+izvestia.ru##div[id^="fancybox-"]
+novafilm.tv##div[style*="40px;"]:last-child
+aif.ru##iframe[src^="http://www.facebook."] + br + table[border="0"]
+4pna.com##table:first-child + br + .tborder[cellspacing="1"][cellpadding="6"][align="center"]
+||a-comics.ru/pics5/1btn/
+||allbest4free.ru/head.
+||bestrepack.net/forum/images/logo/*.gif
+||bin.com.ua/social/img/
+||cnews.ru/inc/images/feeds/
+||delfi.*/fbembed.
+||delphi.*/scms/?g=fbn&
+||drugasmuga.com/images/bookmarks/
+||drweb.com/static/js/redirect_to_facebook.js
+||gamespotcdn.com/*/social_media.
+||goha.ru/social/
+||habrahabr.ru/images/share.
 ||i.li.ru/ReActive/i/blog/share2/serv.png
 ||inkoutbreak.com/bumper/
-inosmi.ru###left_sliding_block
-intv.ru##.bookmarks-container
-ipicture.ru###buton
-izvestia.ru##DIV[id^="fancybox-"]
-kanobu.ru##.soc-embed
-kinopoisk.ru##.add_to
-kinopoisk.ru##.socRight
-korrespondent.net##.artpop_shad
-korrespondent.net##.footer_socialblock
-korrespondent.net##.unipopup
-kp.by,kp.ru##.all_open-graph[id^="fb_"]
-kp.ru###fb_popup
-kp.ru###like_buttons
-kp.ru##.a_diffusion > .center > .left
-kp.ru##.all_partners
-kp.ru##.cb_services-all
-kurufin.ru##.polotno + .add1
-lightroom.kiev.ua###vk_comments
-lightroom.kiev.ua###vk_poll
 ||megaweb.su/softblok/
-mobiledevice.ru##.icons_bar_placeholder
-molodejj.ru###sharePanel
 ||msdn.com/CustomWidgets/SocialMediaSharingUC/
-navitel.su##.extra_append:last-child
-newsinfo.ru###facebox
 ||nifiga-sebe.ru/znachki/
-novafilm.tv##DIV[style*="40px;"]:last-child
-novafilm.tv##.news-entry > DIV:last-child
 ||novafilm.tv/static/icons/social-
-ntv.ru###btmsocialize
-ntv.ru##.podprint > UL[style*="370"]
-nvworld.ru##.buttons
-nya.sh##.q > .bottom
 ||odnoklassniki.ru^$domain=delfi.lv
-opennet.ru###social_link
 ||overclockers.ru/images/buttons/
-pikucha.ru##.b-share
-piter.tv##.snet-links
-podrobnosti.ua##.b-news-share
 ||pravda.ru/*/facebox
-qiq.ws##A[onclick^="return addSoc"]
-qiq.ws##.buttonbox
-rambler.ru##.b-share
-rambler.ru##.b-social-share
 ||rambler.ru/social_counters/
-rambler.ru##.v-favsites
 ||rfpro.ru/images/icons/bookmark/
-ria.ru###facebook-userbar
-russia.ru##.append-other-applecations
-rutracker.org##.soc-buttons
-rutv.ru###btns
-safetygate.ru##.round-bs[class*="icon-"]
-satsis.info###share
-sfw.org.ua###qipbtn
 !telegraf.com.ua
+x-torrents.org###bookmarks
+topnews.ru###bottom
+vk.com###pv_hh
+webpark.ru###sc-frame
+timeout.ru###social-popup
+topnews.ru##.addto
+vz.ru##.append-other-applecations
+utro.ru##.b-repost
+vesti.ru##.blog_wrapper
+vedomosti.ru##.blogs_ico
+vesti.ru##.live_container
+winreview.ru##.postmeta + noindex
+ua-football.com##.share
+vesti.ru##.slide_anons
+tnua.info##.slink
+videomore.ru##.track-shared
+vesti.ru##.video_top_inner
 ||telegrafcom.api.oneall.com/socialize/
 ||thevista.ru/*/img/soc/
-timeout.ru###social-popup
-tnua.info##.slink
-topnews.ru##.addto
-topnews.ru###bottom
-ua-football.com##.share
 ||unian.net/img/social/social.
-utro.ru##.b-repost
-vedomosti.ru##.blogs_ico
-vesti.ru##.blog_wrapper
-vesti.ru##.live_container
-vesti.ru##.slide_anons
-vesti.ru##.video_top_inner
-videomore.ru##.track-shared
-vk.com###pv_hh
-vz.ru##.append-other-applecations
-webpark.ru###sc-frame
-winreview.ru##.postmeta + NOINDEX
-x-torrents.org###bookmarks
 !
 != Информеры ==================================================================
 !#informers.bookmark
 .ru/informer/$third-party
 //informers.$third-party
 ! /informers/*
+###glavportInformer
 /free/weather24.htm|
 ||astrolab.ru/cgi-bin/informer/informer.cgi?
 ||bagnet.org/informer/$third-party
@@ -318,7 +318,6 @@ x-torrents.org###bookmarks
 ||cnews.ru/inc/$subdocument
 ||export.gad.org.ua^
 ||gismeteo.*/flash/$third-party
-###glavportInformer
 ||glavport.net/finformer.php?
 ||info.weather.yandex.net^$third-party
 ||informer.gismeteo.$third-party
@@ -349,7 +348,7 @@ x-torrents.org###bookmarks
 ! Блоки с авторскими правами и, часто, мусором на многих сайтах.
 !#trash.bookmark
 ! Google stuff
-###gsr > DIV > #pushdown
+###gsr > div > #pushdown
 ! Интернет-радио с флеш-плеером, разработчики которого не знают о том, что при открытии страницы их радио должно молчать
 ||icefm.ru^$third-party,object
 ||myradio24.com^$third-party,object
@@ -357,8 +356,8 @@ x-torrents.org###bookmarks
 ! "Карта" Интернетов.
 ||internetmap.info^$third-party
 ! Назойливые новости на LiveJournal.
-_lj_times_
 /ljtimes/*
+_lj_times_
 ! Чатики
 ###comment_error + #output
 ###MCaddFrm
@@ -380,25 +379,40 @@ _lj_times_
 ||clock-desktop.com^$third-party
 ||flash-clocks.com^$third-party
 ! Плагины WordPress
-/plugins/wp-cumulus/*
 /plugins/quick-gush/*
-1tv.ru##[id^="m_banner"]
+/plugins/wp-cumulus/*
 1tv.ru###METABAR_IFRAME
+1tv.ru##[id^="m_banner"]
 ||1tv.ru/maintop/
 ||1tv.ru/rotobanner/
 ||2ip.ru/sbar/
 ||mygold.pp.ua^$third-party
 ! Далее идут правила для отдельных сайтов
-21region.org##.logo
+animelayer.ru###Wrapper > table[width="100%"]:first-child
+lols.ru###dle-content td[style="padding-left:20px;"] > noindex
+lockerz.com###exposeMask
+autovisio.com.ua###globallasttd > div[class$="-block"] + div[style^="padding:250px"]
+forums.warforge.ru###logostrip
+fullgames.ru###main > noindex
+autoclub-cerato.ru###outer_forum
+lockerz.com###overlay
+demotivators.to###rtc
 3dnews.ru###slider
+gismeteo.ru,gismeteo.ua###soft-promo
+experts-exchange.com##.answerOverlayContainer
+anidub.com##.art-header
+experts-exchange.com##.bffr_trusted
+kino-govno.com##.des_front
+21region.org##.logo
+freakenergy.ru##.sidebar > div > noindex
+izvestia.ru##.topline
+experts-exchange.com##.viewQuestionBuffer
+iguides.ru##[id^="post_message_"] ~ div
+forum.ixbt.com##td:first-child + td[style$="240px;"]:last-child
 ||3dnews.ru/*/images/slider/
 ||a-comics.ru/fw/
 ||advbroker.ru^
-anidub.com##.art-header
-animelayer.ru###Wrapper > TABLE[width="100%"]:first-child
 ||asus.com^*/banner/
-autoclub-cerato.ru###outer_forum
-autovisio.com.ua###globallasttd > DIV[class$="-block"] + DIV[style^="padding:250px"]
 ||awaps.yandex.$~object,~subdocument
 ||beeline.ru/pb_500x460.
 ||cbox.*/box/$third-party
@@ -406,103 +420,87 @@ autovisio.com.ua###globallasttd > DIV[class$="-block"] + DIV[style^="padding:250
 ||content.printdirect.ru^$third-party
 ||cybermusic.ru/*/flash_logo.swf
 ||daily.com.ua/upload/banner/
-demotivators.to###rtc
 ||doroga.ua/Handlers/BannerObjectHandler.
 ||easycom.com.ua/img/logo_rru.gif
-experts-exchange.com##.answerOverlayContainer
-experts-exchange.com##.bffr_trusted
-experts-exchange.com##.viewQuestionBuffer
 ||experts-exchange.com^*/scripts/
 ||forumkiev.com/flesh/
-forum.ixbt.com##TD:first-child + TD[style$="240px;"]:last-child
-forums.warforge.ru###logostrip
 ||fotki.yandex.ru/get/*/wind-hide.
-freakenergy.ru##.sidebar > DIV > NOINDEX
-fullgames.ru###main > NOINDEX
-gismeteo.ru,gismeteo.ua###soft-promo
 ||gismeteo.*/static/ny/
 ||goha.ru^*/copyleft.js
-iguides.ru##[id^="post_message_"] ~ DIV
 ||iguides.ru/forum/images/iguides_new/social/
 ||img.lastusja.ru/images/
-izvestia.ru##.topline
-||kinobanda.net^*/images/heder.swf
-kino-govno.com##.des_front
 ||kino-govno.com/branding/*/bg_
+||kinobanda.net^*/images/heder.swf
 ||levonevski.net^$object
-lockerz.com###exposeMask
-lockerz.com###overlay
-lols.ru###dle-content TD[style="padding-left:20px;"] > NOINDEX
 ! Гороскоп в почте
-mail.ru##.informers.informers_second > TBODY > TR:first-child > .informers__column.informers__column_right
-master-css.com###header1 > H2 > SPAN
-||metabar.ru^$third-party
-||muz.ru/content/banners/
-muz.ru##DIV[style*="400px;"][style$="240px;"]
-||myradio.ua/img/button/
-newsdozor.ru##.news.normaltext .bbc_img
-||nix.ru^$object
-||onlainfilm.ucoz.ua/shapka.jpg
-ozon.ru##.news_block
-||politarena.org.ua/reclama/
-||promote.opera.com^$third-party
-russian-fiancee.com###top_logo
-rutor.org###toolbar
-russianpost.ru##TABLE[width="816"] > TBODY > TR:first-child + TR
-||russianpost.ru/?action=getimage&attachmentid=
 russia.tv###adv_right + .b-mini_video
-||rutv.ru/index/iframe/*/mini/isPlay/true/
-sfw.org.ua##IMG[width="350"][alt*="userbar"]
-||shop.warforge.ru/rotation/
+vk.com###app_container_outer + div[style]
+master-css.com###header1 > h2 > span
+superhimik.com###login_popup
+tapochek.net###sidebar1
+torrents.net.ua###smschatframe
+rutor.org###toolbar
+russian-fiancee.com###top_logo
+terabit.biz##.cnt2l
+superhimik.com##.headerbar
 sports.ru##.info-reg-block
+mail.ru##.informers.informers_second > tbody > tr:first-child > .informers__column.informers__column_right
+newsdozor.ru##.news.normaltext .bbc_img
+ozon.ru##.news_block
 sports.ru##.overlay[data-control="Common.Overlay"]
 sports.ru##.popup[data-control="Common.Compulsion"]
-||static.newsru.*/img/bg.gif
-streamzone.org##SPAN[style*="3.0em;"]
-superhimik.com###login_popup
-superhimik.com##.headerbar
-sxnarod.com##[href$="?act=acquaintance"] > IMG[src^="/image/"]
-tapochek.net###sidebar1
-terabit.biz##.cnt2l
 topgir.com.ua##.singing
-torrents.net.ua###smschatframe
+sxnarod.com##[href$="?act=acquaintance"] > img[src^="/image/"]
+muz.ru##div[style*="400px;"][style$="240px;"]
+sfw.org.ua##img[width="350"][alt*="userbar"]
+streamzone.org##span[style*="3.0em;"]
+russianpost.ru##table[width="816"] > tbody > tr:first-child + tr
+||metabar.ru^$third-party
+||muz.ru/content/banners/
+||myradio.ua/img/button/
+||nix.ru^$object
+||onlainfilm.ucoz.ua/shapka.jpg
+||politarena.org.ua/reclama/
+||promote.opera.com^$third-party
+||russianpost.ru/?action=getimage&attachmentid=
+||rutv.ru/index/iframe/*/mini/isPlay/true/
+||shop.warforge.ru/rotation/
+||static.newsru.*/img/bg.gif
 ||uppod.ru/player/logo/
-vk.com###app_container_outer + DIV[style]
 ||yatv.ru/storage/userdata/*/banner_
 ||yatv.ru/storage/userdata/*/page_background_
 ! mail.ru
-e.mail.ru##.rb_mmDivM
 mail.ru###firefox-offer
 mail.ru##.mf_smsTop
-mail.ru##.spu
 news.mail.ru##.placeForLayerToBlog + .actions
+e.mail.ru##.rb_mmDivM
+mail.ru##.spu
 !
 ! Сайты на движке TorrentPier
-file-tracker.net,pirat.ca,pornolab.cc,pornolab.net,rus-torrents.ru###logo
-rutracker.org,rutracker.ru,underverse.su###logo
-tapochek.net###page_header > BR + TABLE
+file-tracker.net,pirat.ca,pornolab.cc,pornolab.net,rus-torrents.ru,rutracker.org,rutracker.ru,underverse.su###logo
+tapochek.net###page_header > br + table
 /images/logo/*$domain=nnbt.org|tapochek.net
 ! Дополнительно
-free-torrents.org##.catHead.bold.clickable
-free-torrents.org##.hlow
+rutracker.ru###latest_news
 free-torrents.org###latest_news > :not(#forums_list_wrap)
 free-torrents.org###logo
 free-torrents.org###sidebar1
+free-torrents.org##.catHead.bold.clickable
+free-torrents.org##.hlow
+wtracker.ru##.preview_lol
 free-torrents.org##.spacer_8
 ||free-torrents.org/forum/radio/
 ||rustorka.com/forum/images/rustorka_
 ||rustorka.com/forum/images/steam.
 ||rustorka.com/forum/images/youtube.
-rutracker.ru###latest_news
-wtracker.ru##.preview_lol
 !
 != Лента с обложками новых раздач =============================================
-allforpeople.net###pichead
-rus-torrents.ru###la_wrapper
-rustrek.ru,tapochek.net,unionpeer.org##.poster
-styanulo.net###lenta
 vpsite.ru###informer
+rus-torrents.ru###la_wrapper
+styanulo.net###lenta
+allforpeople.net###pichead
 vsekino.su##.lenta
+rustrek.ru,tapochek.net,unionpeer.org##.poster
 !
 != Мерцающего текста рассадники ===============================================
 !#glitter.bookmark
@@ -514,21 +512,21 @@ vsekino.su##.lenta
 ||sparklee.com^$third-party
 !
 ! = 88x31 =====================================================================
-/\D(?:3[123][-_x]88|88[-_x]3[123])\D/$domain=~money.yandex.ru
 /8831.gif
+/\D(?:3[123][-_x]88|88[-_x]3[123])\D/$domain=~money.yandex.ru
 _8831.gif
 !
 != Блокировка мусора в подписях на форумах ====================================
 !- Правила скрытия блока подписей ---------------------------------------------
 !#signature.bookmark
-jquery.com,oxymoronical.com#@#.signature
+##.forum-user-signature
 ##.sig
 ##.signature
-##.forum-user-signature
+jquery.com,oxymoronical.com#@#.signature
 ##.signatureView
 ##.user_signature
 ##.usersig
-kadets.info##DIV[id^="post_message_"] + DIV
+kadets.info##div[id^="post_message_"] + div
 !
 !- Удивительно отвратительных анимированных смайлов рассадники ----------------
 ! Встречаются не столько в подписях, сколько в самом тексте. Лучше и не видеть.
@@ -540,28 +538,28 @@ kadets.info##DIV[id^="post_message_"] + DIV
 !
 !- Общие правила блокировки линеечек и юзербаров ------------------------------
 !#lines,userbars.bookmark
+-userbar-$image
+-userbar.$image
+-userbar/$image
 .info/lines/$image
 .net/lines/$image
 .ru/line/$image
 .ru/lines/$image
+.ticker.$image
 .ua/lines/$image
+.userbar-$image
+.userbar.$image
+.userbar/$image
 //lines.$image
 /images/ubars/*
 /metric.$image
 /metric/*$image
-.ticker.$image
 /ticker.$image
 /ticker/*$image
 /tickers.$image
 /tickers/*$image
 /torrentbar.$image
 /torrentbar/*$image
--userbar-$image
--userbar.$image
--userbar/$image
-.userbar-$image
-.userbar.$image
-.userbar/$image
 /userbar-$image
 /userbar.$image
 /userbar/*$image
@@ -580,8 +578,8 @@ _userbar_$image
 ||animating.ru^$third-party
 ||autoclub-cerato.ru/forum/ubar/
 ||autometric.ru^$third-party
-||avatarochka.ru/Calend/
 ||avatarochka.ru/_ph/
+||avatarochka.ru/Calend/
 ||baby.ru/images/dst/
 ||babysfirstsite.org^$third-party
 ||babyteva.ru/line_base/
@@ -595,8 +593,8 @@ _userbar_$image
 ||bigworldclub.com/d_line/
 ||blestki.com^$third-party
 ||calendar.rodim.ru^
-||card.psnprofiles.com^$third-party
 ||card.mmos.com^
+||card.psnprofiles.com^$third-party
 ||catlover.m-sk.ru/lin/
 ||centrfan.ru^$third-party
 ||clocklink.com^$third-party
@@ -650,8 +648,8 @@ _userbar_$image
 ||nomer.avtobeginner.ru^$third-party
 ||ourlines.ru^$third-party
 ||pchelenok.com/*/ruler.php?
-||playstation.com^*/psn/$third-party,image
 ||playstation.com/psn/profile/$third-party,image
+||playstation.com^*/psn/$third-party,image
 ||podpisi.net.ru^$third-party
 ||pomni.exe.by^$third-party
 ||pour-bientot.com^$third-party
@@ -709,16 +707,16 @@ _userbar_$image
 !- блокирокву мусора из социальных сетей. Не оптимальные правила удалены.     -
 !------------------------------------------------------------------------------
 ! - Исключения
-gifovina.ru#@##shareBox
 gifovina.ru#@##SharePanel
+pressa-online.com#@##fbContainer
+gifovina.ru#@##shareBox
+lenta.ru#@##socials
 kai-gebel.com#@#.social-bar
 kai-gebel.com#@#.social-bar-bottom
-lenta.ru#@##socials
-pressa-online.com#@##fbContainer
 @@||addthis.com/js/250/addthis_widget.js$domain=tomtom.com
 @@||bbci.co.uk/modules/sharetools/*/sharetools.js$domain=bbc.co.uk
-@@||ws.audioscrobbler.com^$domain=tvoeradio.org
 @@||odnoklassniki.ru/share/odkl_share.js$domain=mreporter.ru
+@@||ws.audioscrobbler.com^$domain=tvoeradio.org
 !------------------------------------------------------------------------------
 ! Fanboy's Annoyance List
 ! FAL License: http://creativecommons.org/licenses/by/3.0/
