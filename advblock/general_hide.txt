@@ -23,6 +23,10 @@ ru,ua##.adv
 ###fp_banner
 ###girlsBar
 ###h_24x4
+##IMG[width="120"][height="600"]
+##IMG[width="160"][height="600"]
+##IMG[width="468"][height="60"]
+##IMG[width="728"][height="90"]
 ###JobInformer
 ##.madv
 ###magnaInformer
@@ -45,16 +49,6 @@ ru,ua##.adv
 ##.surbis_banner
 ##.topbaner
 ###zhlobam_net_informer_console
-! Реклама приватбанка
 ##BODY > #flydiv
-! Предотвращает появление «спиннера» при блокировке скрипта. Попытка блокировать спиннер вызывает ложные срабатывания.
 ##DIV[id^="sblock_inform_"]
-! Ложные ссылки на скачивание на разных варезниках.
 ##NOINDEX > .search_result[class*="search_result_"]
-! Реклама в поиске для партнёров Google.
-www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
-! - Скрытие по размеру --------------------------------------------------------
-##IMG[width="120"][height="600"]
-##IMG[width="160"][height="600"]
-##IMG[width="468"][height="60"]
-##IMG[width="728"][height="90"]
