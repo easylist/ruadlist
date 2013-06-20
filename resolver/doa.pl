@@ -4,7 +4,7 @@ use Net::DNS;
 use feature "switch";
 
 $testloop = 0;
-$infile = "deadhosts.txt";
+$infile = "deadhosts.lst";
 
 foreach my $arg (@ARGV) {
     given ($arg) {
@@ -14,7 +14,7 @@ foreach my $arg (@ARGV) {
 }
 
 $write_alive_hosts = 0;
-if(not ($infile == "deadhosts.txt")) {
+if(not ($infile == "deadhosts.lst")) {
     $write_alive_hosts = 1;
 }
 
@@ -82,8 +82,8 @@ if($testloop == 0) {
 
     close(OUTFILE);
 
-    unlink("deadhosts.txt");
-    rename("deadhosts.tmp","deadhosts.txt");
+    unlink("deadhosts.lst");
+    rename("deadhosts.tmp","deadhosts.lst");
 
     if($write_alive_hosts == 1) {
         open(OUTFILE, ">", "livehosts.tmp") or die("Unable to write output: $!");
@@ -99,8 +99,8 @@ if($testloop == 0) {
             $prev = $now;
         }
         close(OUTFILE);
-        unlink("livehosts.txt");
-        rename("livehosts.tmp","livehosts.txt");
+        unlink("livehosts.lst");
+        rename("livehosts.tmp","livehosts.lst");
     }
 }
 
