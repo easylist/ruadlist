@@ -1,0 +1,59 @@
+###ads_iframe
+ru,ua##.adv
+###adv
+##.advblock
+###advblock
+##.advertblock
+###AF_kph0
+###AF_kph1
+##.ammblock
+##.b-banner
+##.bc-adv
+##.bc_adv_container
+###branding_click
+###cyberinfrm_18
+##DIV[id^="cpa_rotator_block"]
+##DIV[id^="DIV_NNN_"]
+##DIV[id^="PC_Teaser_Block"]
+##DIV[id^="rtn4p"]
+##DIV[id^="Teaser_Block"]
+###eropromo_icq
+###export_test_inboobs
+###fp_adv
+###fp_banner
+###girlsBar
+###h_24x4
+###JobInformer
+##.madv
+###magnaInformer
+###marketgid
+##.mc_cars_row
+##.mediaget
+##.merc_title
+##.merc_title_2
+##.module-one-search
+##.modul-search
+###novem_billboard
+###PopWin[onmousemove]
+###radeant
+##.sp_search2_table
+##.sp_search3_table
+##.sp_search_table
+###SR_PopOver
+###SR_PopOverModalBackground
+##.surbis_banner
+##.topbaner
+###zhlobam_net_informer_console
+! Реклама приватбанка
+##BODY > #flydiv
+! Предотвращает появление «спиннера» при блокировке скрипта. Попытка блокировать спиннер вызывает ложные срабатывания.
+##DIV[id^="sblock_inform_"]
+! Ложные ссылки на скачивание на разных варезниках.
+##NOINDEX > .search_result[class*="search_result_"]
+! Реклама в поиске для партнёров Google.
+www.google.com,www.google.ru##BODY > TABLE[style="border: 1px solid #369"]
+! - Скрытие по размеру --------------------------------------------------------
+##IMG[width="120"][height="600"]
+##IMG[width="160"][height="600"]
+##IMG[width="468"][height="60"]
+##IMG[width="728"][height="90"]
