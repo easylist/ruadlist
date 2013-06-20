@@ -1,0 +1,464 @@
+!
+! Правила для отдельных сайтов с разношерстными правилами или групп сайтов
+!
+! DELFI
+delfi.lv###right > div[style$="248px;"]
+delfi.ua##.articleBanner
+delfi.lv##.delfi_shop
+delfi.ua##.klucis
+delfi.ua##.wbhd
+delfi.lv##a[target="_blank"][href*="/shop/click.php?shop_id="]
+delfi.lv##div[id^="adocean"]
+||ap.delfi.ua^
+||delfi.lv/misc/xml_infoblocks/delfi_deal/
+||delphi.lv/wd/*.180x400.
+!
+! FastPic.ru
+! Периодически используется то одна часть этого списка, то другая
+fastpic.ru###brnd
+fastpic.ru###left
+fastpic.ru###right
+fastpic.ru###top
+fastpic.ru##a[target="_blank"][rel="nofollow"][href^="http://static."]
+fastpic.ru##body > div:first-child > a[style][href^="http://"]
+||static.fastpic.ru/*_*.jpg|
+||static.fastpic.ru/js/*.js|
+!
+! GISMeteo domains
+gismeteo.kz###ad-kp
+gismeteo.by,gismeteo.kz,gismeteo.ru,gismeteo.ua#@##ad-top
+gismeteo.by,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru###rbc
+gismeteo.ru###top_wide
+gismeteo.by,gismeteo.lv,gismeteo.ru###yandex
+gismeteo.ru##.ad_topper_cont
+gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru#@#.adv
+gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru##.news.item.links-black.links-blue
+gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru##.rframe[id^="ad-"]
+gismeteo.ru,gismeteo.ua##.side__i
+||gismeteo.*/rian.html|
+!
+! inbox.lv
+inbox.lv###inx-article > .row-2
+inbox.lv###inx-main-roof
+inbox.lv###inx-textAds
+inbox.lv###inxAds-imr
+mail.inbox.lv##.bxS-leftbar
+mail.inbox.lv##.bxS-text_link
+inbox.lv##div[id^="ctw-"]
+||b.inbox.lv^
+!
+! Interfax (Домены группы "Интерфакс")
+interfax.by##.banner
+finmarket.ru,interfax.ru##[id^=bbInformer]
+finmarket.ru,pmoney.ru##a[href^="/RCL/TXT/"]
+||interfax.by/files/$object
+!
+! IXBT.com
+forum.ixbt.com##.top_ad2
+ixbt.com##.banner
+ixbt.com##.clickable_zone
+ixbt.com##h4#nl_header
+||forum.ixbt.com/js/fotkidepo
+||ixbt.com/branding/
+||ixbt.com/include/ctx2.js
+||ixbt.com^*/branded_
+||rose.ixbt.com/cgi-bin/*banner
+||rose.ixbt.com^$~object-subrequest,~object
+!
+! KM.RU
+km.ru###modalContainer
+km.ru###modalOverlay
+.lbs.km.ru/mod/_banners/*-240x200.
+.lbs.km.ru/mod/_banners/*?param1=
+t2t.ru##.tbn
+km.ru##.top-banner
+km.ru##iframe[height="90"]
+||banner.lbs.km.ru^
+!
+! Комсомольская Правда
+kp.ru,~ufa.kp.ru###banner-after-menu
+kp.ru##.adprofy-adblock-wrap
+kp.by,kp.ru##.all_bblock
+kp.ru,~ufa.kp.ru##.baner
+bazar.kp.by##.banner_list
+kp.ru##div[id^="smi2adblock_"]
+||kpcdn.net^*/banner_img/
+!
+! Letitbit
+goclips.tv###video_player_content
+goclips.tv##.bottom_videos
+letitbit.net##.lid-counter_reminder
+letitbit.net##.lid-thanks_no_downloader
+||letitbit.net/images/rebrandings/
+||letitbit.net^*/bg_downloader_screen_
+!
+! Mail.ru и Одноклассники
+! Объединять правила с banner в конце не стоит - там ещё другие классы перечислены часто
+! Скрытие по-разделам
+e.mail.ru###AdLeftInformer
+e.mail.ru###SendMsgOkLeftSlot
+rabota.mail.ru###banner1
+news.mail.ru###p-Ears-Cont
+love.mail.ru##.TopBannerSlot
+m.mail.ru##.ad
+go.mail.ru##.ad-blk
+auto.mail.ru##.addMain2
+love.mail.ru##.adv-contacts
+hi-tech.mail.ru##.b-ad_200
+hi-tech.mail.ru##.b-foot_banner
+hi-tech.mail.ru##.b-htop__banner
+hi-tech.mail.ru##.b-mainphotocol
+hi-tech.mail.ru##.b-preview
+news.mail.ru##.ban
+rabota.mail.ru##.banner-wall-container
+love.mail.ru##.banner_left
+go.mail.ru##.block-goods
+lady.mail.ru##.bnr-240
+lady.mail.ru##.buy
+otvet.mail.ru##.direct
+e.mail.ru##.direct_top
+health.mail.ru##.fromPartners3
+love.mail.ru##.link-ad
+otvet.mail.ru##.logoDjangoHead
+video.mail.ru##.lvi-r-ban
+e.mail.ru##.portal-banner__marker
+cards.mail.ru##.pt10.center
+news.mail.ru##.rb_blockPartners
+rabota.mail.ru##.rmr-rightbanners
+lady.mail.ru##.slot
+hi-tech.mail.ru##.sony-text-wrap
+maps.mail.ru##img[width="200"][height="30"]
+health.mail.ru##img[width="240"][height="200"]
+! Общие правила скрытия
+mail.ru###ad-sputnik
+mail.ru###internet-offer
+mail.ru##.b-ad_text
+mail.ru##.b-head__banner
+mail.ru##.banner
+mail.ru##.goods
+mail.ru##.left_banner
+mail.ru##.portal-menu__banner
+mail.ru##.rb_banner
+mail.ru##.rb_body
+mail.ru##.rb_text
+mail.ru##.rekl_eburg
+mail.ru##.text-banner
+mail.ru##.text_adv
+mail.ru##.top_article_ban
+mail.ru##.w-banner
+mail.ru##a[class^="branding"]
+! cards.mail.ru,money.mail.ru,news.mail.ru,rabota.mail.ru
+mail.ru##img[width="240"][height="400"][src*=".mail.ru/b"]
+! Ссылка на левые сайты в меню навигации.
+mail.ru##.shMenu2 > span > a[target="_blank"][href^="http://r.mail.ru/"]
+! Блокировка ресурсов в основном на самом mail.ru
+//r.mail.ru/b$subdocument
+//rs.mail.ru/b$domain=e.mail.ru
+//rs.mail.ru/b$subdocument
+//rs.mail.ru/b*.swf|$domain=~my.mail.ru
+||imgsmail.ru/js/onair2.$script
+||imgsmail.ru/r/my/brands/
+||mail.ru/img/promo/
+||mamba.ru/images/*/promo/
+! Одноклассники
+odnoklassniki.ru###hook_Block_ForthColumnTopBanner
+odnoklassniki.ru###hook_Block_LeftColumnAdCustom
+odnoklassniki.ru###hook_SideBottomBaner_SideBottomBaner
+odnoklassniki.ru###hook_ViewportHeightAwareBanner_ViewportHeightAwareBannerInner
+odnoklassniki.ru##.sideadv
+odnoklassniki.ru##.topadv
+odnoklassniki.ru##div[id$="Adv"]
+||odnoklassniki.ru/res/*/promo/*/
+! Скрытие на сайте самих одноклассников предложения обновить браузер
+! Очень однобокая реклама Хрома + очень часто просят удалить
+odnoklassniki.ru##.update-browser_container
+! Блокировка ресурсов за пределами mail.ru
+//rs.mail.ru/b$third-party,domain=~km.ru
+||ad.mail.ru^$third-party
+||banners.mail.ru^$third-party
+||showbiz.mail.ru^$third-party
+||torg.mail.ru/prtnr/$third-party
+! Исключения
+@@||mail.ru/cgi-bin/counters?*&JSONP_call=__PHJSONPCallback_$domain=mail.ru
+! Потенциальное решение проблемы с играми в Одноклассниках
+@@||mail.ru/adi/2174?$domain=odnoklassniki.ru
+@@||mail.ru/adi/2247?$domain=odnoklassniki.ru
+!
+! NGS.RU
+ngs.ru###ads-fix
+realty.ngs.ru###clients
+relax.ngs.ru###exclusive
+ngs.ru,ngs24.ru,ngs55.ru###forms-ngs-block ~ table[id]:not(#content):not(#footer)
+ngs.ru###kemlc
+turizm.ngs.ru###logo-menu
+dom.ngs.ru###logo_banners
+he.ngs.ru,relax.ngs.ru,she.ngs.ru###logos
+ngs.ru,ngs24.ru,ngs55.ru###mail_block + td ~ td[class]
+mail.ngs.ru,mail.ngs55.ru###td_body_right
+ngs.ru##.banner
+ngs.ru##.banner-center
+ngs.ru##.big-right
+ngs.ru,ngs24.ru,ngs55.ru,rabota55.ru##a[class][style*="height:"][target="_blank"][href^="/"]
+ngs.ru,ngs24.ru,ngs55.ru,rabota55.ru##a[target="_blank"][href^="/"] > img[src^="http://static."]
+ngs.ru##div[id^="big-"][class^="big-"]
+!
+! Rambler.RU и их проекты
+ferra.ru###branding_top_link
+ag.ru###header-area
+kanobu.ru###log_line_link
+ag.ru###newlogo01
+weather.rambler.ru###prices
+rambler.ru###sidekickButton
+weather.rambler.ru###weather-ban-300
+autorambler.ru##.ad-item-paid
+rambler.ru##.adWords
+rambler.ru##.advertising
+rambler.ru##.b-advertising
+rambler.ru##.b-article-aside__banner
+lenta.ru##.b-banner-line
+rambler.ru##.b-block-travels
+autorambler.ru##.banner-board
+autorambler.ru##.bannerInside
+rambler.ru##.bnr
+games.kanobu.ru##.branding
+tv.rambler.ru##.h-promo
+rambler.ru##.inbann
+rambler.ru##.tp-bnpl
+nova.rambler.ru##[class^="b-podmes_"]
+ag.ru##a[href^="http://www.ag.ru/go/outer"]
+rambler.ru##div[class^="b_banner_"]
+||ag.ru/*/bottom_bg.jpg
+||ag.ru/*/flash.swf
+||ag.ru/*/top_bg.jpg
+||kanobu.ru/brand/
+||price.ru^$third-party
+||rambler.ru/*/js/direct.
+||rambler.ru/export/banners.
+||rambler.ru/upl/ad/
+||rambler.ru/upl/clients/
+||rambler.ru/upl/partners/
+||rambler.ru^*.ban?
+!
+! RBC (РБК)
+cnews.ru###mag_banner
+rbc.ru,rbc.ua,rbcdaily.ru##.banner
+utro.ru##.banner-middle
+utro.ru##.banner-right
+utro.ru##.banner_bottom_art
+cnews.ru##.banner_wrapp
+rbcdaily.ru##.c-block_content_article_baner
+utro.ru##.conteiner-partner
+cnews.ru##.main > noindex:last-child
+##.rbcobmen
+cnews.ru##.tizer_block
+rbcdaily.ru##[class*="_adv"]
+autonews.ru##[class^="banner_"]
+||cnews.ru/inc/banners/
+||rbc.ru/img/banners/
+||utro.ru/*/banners/
+||zoom.cnews.ru/inc/bpic/
+!
+! Rutracker.org
+rutracker.org###adriver-240x120
+rutracker.org###bn-bot-wrap
+rutracker.org###bn-tio-1
+rutracker.org###logo .bCenter
+//195.82.146.52^$object
+||rutracker.org/004/
+||rutracker.org/images/bn-stub-
+!
+! TorrentsZona.com и связанные с нею сайты
+funtorrents.com,listtorrents.com,luxtorrents.com,torrentsline.com,torrentszona.com###footer
+funtorrents.com,listtorrents.com,luxtorrents.com,torrentsline.com,torrentszona.com###poll
+funtorrents.com,listtorrents.com,luxtorrents.com,torrentsline.com,torrentszona.com##.block.first > .header
+torrent*.com/afisha/$object
+torrent*.com/afisha/*_$image
+torrent*.com/afisha/*x$image
+torrentszona.com###main > table[style]:first-child
+torrentszona.com##.topten
+||funtorrents.com^$subdocument,domain=torrentszona.com
+||kinovizor.com^$subdocument,domain=torrentszona.com
+||lifetorrents.com^$subdocument,domain=torrentszona.com
+||lifetorrents.com^*_life/img/banner
+||listtorrents.com^$subdocument,domain=torrentszona.com
+||luxtorrents.com^$subdocument,domain=torrentszona.com
+||onlinepsyholog.com^$subdocument,domain=torrentszona.com
+||torrentsfilm.com^$subdocument,domain=torrentszona.com
+||torrentsline.com^$subdocument,domain=torrentszona.com
+||torrentsporno.com^$subdocument,domain=torrentszona.com
+||vizortv.com/swf/
+||vizortv.com^$subdocument,domain=torrentszona.com
+!
+! Ukr.NET
+ukr.net##.commercial-left-block
+ukr.net##.commercial-right-block
+ukr.net##.karta
+||portal.un.net.ua/temp/blocks/
+!
+! VK.com (ВКонтакте, VKontakte)
+! Правила скрытия для vk.com переехали в EasyList
+! Нечто, добавляет свою рекламу слева на панели (VKMus? Get-Styles.ru?)
+||fireb1.com^
+||fireb2.com^
+||laughtill.net^
+||t800.org^
+||vkmus.com^$third-party
+! Добавляет расширение VkButton
+||vkbutton.com^$third-party
+||vladbazar.com/bbb/
+! Реклама игр в играх
+||everall.ru/static/img/banners/
+! Прочее
+||agentvkontakte.ru/admin/materials/banner_
+||vkbot.ru/trash/
+! Исключения для приложений и игр
+! Необходимо для корректной работы сообщений
+@@||vk.com/ads*.php?__query=$~third-party
+! "Кто ты из аниме?"
+@@||adsocial.ru/app/$object,script,domain=178.63.99.21
+! "ТЕМА - объявления социальной сети"
+@@||adsvk.com/images/advertising/$~third-party
+@@||adsvk.com/scripts/advertise_$~third-party
+!
+! Yandex (Яndex)
+###banner.b-banner__content
+music.yandex.kz,music.yandex.ru,music.yandex.ua###js-banner
+yandex.kz,yandex.ru,yandex.ua##.b-adv
+market.yandex.kz,market.yandex.ru,market.yandex.ua##.spec-adv
+##.ya-partner_ads-up
+music.yandex.kz,music.yandex.ru,music.yandex.ua##div:not([class$="-content"]) a.b-link[href^="http://awaps."]
+||an.yandex.$third-party
+||an.yandex.*/system/context.js|
+||awaps.yandex.$object,subdocument
+||awaps.yandex.*&swfcode=
+||bs.yandex.$script
+||kiks.yandex.
+||music.yandex.ru/specprojects/
+||yabs.yandex.*/show/$third-party
+! Яндекс.Директ
+! Директ вверху и внизу в поиске
+##.g-gap-vertical[class^="b-"][class*="_type_"]:not([class^="b-pager"])
+! Директ справа в поиске
+yandex.kz,yandex.ru,yandex.ua##.b-page-layout__column:last-of-type > .b-page-layout__column-proxy > div[class^="b-"] > div:first-of-type[class^="b-"]
+! Прочее
+yandex.kz,yandex.ru,yandex.ua##.b-direct
+rasp.yandex.kz,rasp.yandex.ru,rasp.yandex.ua##.b-yadirect
+!
+! Томские сайты
+x-soft.tomsk.ru###kompstar_block
+autotom.ru,x-soft.tomsk.ru###shop
+gorod.tomsk.ru###top-adv-container
+novo.tomsk.ru###top_b
+vtomske.ru##.adv_sec
+vtomske.ru##.adv_side
+forum.tomsknet.ru##.banner.nocp
+vtomske.ru##.dns_banner
+vtomske.ru##.expert-container
+novo.tomsk.ru##.right > br
+desk.tomsk.ru##.right_cell > center
+gorod.tomsk.ru##.topBan.w33.white
+vtomske.ru##.vtomske-body[style="height:37px;"]
+vtomske.ru##div[style$="; height: 37px; padding: 0; margin: 0; overflow: hidden;"]
+torrents.vtomske.ru##div[style^="padding-top"][style$="5px;"]
+vtomske.ru##div[style^="width: 310px; height: 7"]
+vtomske.ru##div[style^="width:200px; height:200px;"]
+vtomske.ru##div[style^="width:240px; height:140px;"]
+vtomske.ru##div[style^="width:307px; height:70px;"]
+vtomske.ru##div[style^="width:310px; height:7"]
+vtomske.ru##div[style^="width:468px; height:"]
+vtomske.ru##div[style^="width:600px; height:70px;"]
+novo.tomsk.ru##img[tooltip="РЕКЛАМА"]
+novo.tomsk.ru##img[width="300"][src^="/uploads/"]
+||autotom.ru/img/$object
+||autotom.ru/kompstar/
+||b.autotom.ru/img/
+||b.vtomske.ru^
+||be.vtomske.ru^
+||catalog.tomsk.ru/uay/
+||catalog.tomsk.ru/ubb/
+||dn.vtomske.ru/be/materials/
+||dn.vtomske.ru/neopodarok/
+||gardnet.tomsk.ru^$object
+||gorod.tomsk.ru/i/b/
+||kompstar.tomsk.ru^$third-party
+||mp1.tomsk.ru/h/
+||novo.tomsk.ru/uploads/up3/rkl/
+||rde.ru^$third-party
+||tehnomag.tomsk.ru/index.php?ukey=product_widget&$third-party
+||tg.tomsk.ru/$third-party
+||tomsk.ru/resources/content/
+||tomsk.ru/ttt/
+||tomsk.ru/tua/
+||tomsk.ru/tub/
+||tomsk.ru/tva/
+||tomsk.ru/tvb/
+||tomsk.ru09.ru/img/tomsk/ad/
+||tomsktracker.org/b/
+||torrents.tomsk.ru/b/
+||x-soft.tomsk.ru/dsa/
+!
+! Чебоксаркие сайты
+/img/bg/*$domain=cheb.ru|na-svyazi.ru
+21forum.ru,cheb.ru,na-svyazi.ru###user2s
+cheb.ru,na-svyazi.ru###f5img
+pokupki21.ru##.main_width > div[align="center"]
+zarulem.ws###begin #userlinks
+||cheb.ru/img/$object
+||cheb.ru/img/bg/
+||cheb.ru/uploads/$object
+||kugesi.ru/fl2s/
+||kugesi.ru/fl3s/
+||na-svyazi.ru/img/$object
+||na-svyazi.ru/uploads/$object
+! Привет!
+.ru/*.swf|$third-party,domain=21forum.ru|afisha21.ru|cheb.ru|cheb.ws|cheboksary.ws|kugesi.ru|na-svyazi.ru|zarulem.ws
+cheb.ru##div[style*="background:"][style*=".gif)"]
+21forum.ru,afisha21.ru,cheb.ru,cheb.ws,cheboksary.ws,kugesi.ru,na-svyazi.ru,zarulem.ws##td[align][height="200"]
+21forum.ru,afisha21.ru,cheb.ru,cheb.ws,cheboksary.ws,kugesi.ru,na-svyazi.ru,zarulem.ws##td[background$=".gif"]
+21forum.ru,forum.na-svyazi.ru##td[height="70"][align="center"]
+21forum.ru,afisha21.ru,cheb.ru,cheb.ws,cheboksary.ws,kugesi.ru,na-svyazi.ru,zarulem.ws##td[style*="background:"][style*=".gif)"]
+na-svyazi.ru##td[width="320"][align="center"]
+||212121.ru^
+||21dengi.ru^
+||21doctor.ru^
+||21pokupki.ru^
+||21sale.ru^
+||441555.ru^
+||adres.kozlovka.ru^
+||adres21.ru^
+||alexey.blog21.ru^
+||cheb-metro.ru^
+||cheb-rielt.ru^
+||chebfm.ru^
+||chebogsary.ru^
+||cheboksar.ru^
+||chebradio.ru^
+||chebru.ru^
+||chebtube.ru^
+||chebtv.ru^
+||chepaev.ru^
+||chuvashskoe.ru^
+||devki21.ru^
+||dns21.ru^
+||doloj.ru^
+||doroga.kugesi.ru^
+||echeb.ru^
+||gorod.shumerlya.ru^
+||host.torrent21.ru^
+||icheb.ru^
+||it-cheb.ru^
+||kino.afisha21.ru^
+||list.21forum.ru^
+||lubov21.ru^
+||my.megavstrecha.ru^
+||nedv21.ru^
+||procheb.ru^
+||randoom.ru^
+||serdce-volgi.ru^
+||sovch.ru^
+||sukterka.ru^
+||tatar.4kazan.ru^
+||uroki21.ru^
+||zaovrazhnoe.ru^
+||zavod.chuvaz.ru^
+||zlograd.ru^
