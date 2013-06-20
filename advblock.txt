@@ -134,7 +134,7 @@
 ! = Общие правила блокировки ==================================================
 %include advblock/general_block.txt%
 !
-! Найдены по «/show/?block_id=». Судя по разношерстности сайтов это какой-то рекламный движок.
+! Найдены по "/show/?block_id=". Судя по разношерстности сайтов это какой-то рекламный движок.
 ! Скрипт: "var block = document.getElementById("teaser_NUMBER"); var text = '#NUMBER'; if(block){block.innerHTML = text;}"
 /show/?block_id=*&r=$script
 ||advertlink.ru^
