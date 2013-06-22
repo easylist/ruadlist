@@ -2,7 +2,7 @@
 """ FOP
     Filter Orderer and Preener
     Copyright (C) 2011 Michael
-    Adjusted for RU Adlist by Lain Inverse
+    Adjusted for RU Adlist by Lain Inverse in 2013
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -63,8 +63,8 @@ KNOWNOPTIONS = ("collapse", "document", "elemhide",
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, update, merge, push")
-GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["commit", "-m"], ["pull"], ["update"], ["merge"], ["push"])
-HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["diff"], ["commit", "-m"], ["pull"], ["update"], ["merge"], ["push"])
+GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["commit", "-m"], ["pull"], ["update", "--check"], ["merge"], ["push"])
+HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["diff"], ["commit", "-m"], ["pull"], ["update", "--check"], ["merge"], ["push"])
 REPOTYPES = (GIT, HG)
 
 def start ():
