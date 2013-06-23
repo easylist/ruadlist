@@ -62,9 +62,9 @@ KNOWNOPTIONS = ("collapse", "document", "elemhide",
                 "stylesheet", "subdocument", "third-party", "xmlhttprequest")
 
 # List the supported revision control system commands
-REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, update, merge, push")
-GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["commit", "-m"], ["pull"], ["update", "--check"], ["merge"], ["push"])
-HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["diff"], ["commit", "-m"], ["pull"], ["update", "--check"], ["merge"], ["push"])
+REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, update, merge, commit, push")
+GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["pull"], ["update", "--check"], ["merge"], ["commit", "-m"], ["push"])
+HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["diff"], ["pull"], ["update", "--check"], ["merge"], ["commit", "-m"], ["push"])
 REPOTYPES = (GIT, HG)
 
 def start ():
@@ -346,12 +346,11 @@ def commit (repository, basecommand, userchanges):
 
     print("Comment \"{comment}\" accepted.".format(comment = comment))
     try:
-        # Commit the changes
-        command = basecommand + repository.commit + [comment]
-        subprocess.Popen(command).communicate()
         print("\nConnecting to server. Please enter your password if required.")
         # Update the server repository as required by the revision control system
-        for command in repository[7:]:
+        for command in repository[6:]:
+            if command == repository.commit:
+                command += [comment]
             command = basecommand + command
             subprocess.Popen(command).communicate()
             print()
