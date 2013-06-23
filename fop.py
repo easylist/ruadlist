@@ -62,9 +62,9 @@ KNOWNOPTIONS = ("collapse", "document", "elemhide",
                 "stylesheet", "subdocument", "third-party", "xmlhttprequest")
 
 # List the supported revision control system commands
-REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, update, merge, commit, push")
-GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["pull"], ["update", "--check"], ["merge"], ["commit", "-m"], ["push"])
-HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["diff"], ["pull"], ["update", "--check"], ["merge"], ["commit", "-m"], ["push"])
+REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
+GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["pull"], ["update", "--check"], ["update"], ["merge"], ["commit", "-m"], ["push"])
+HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["diff"], ["pull"], ["update", "--check"], ["update"], ["merge"], ["commit", "-m"], ["push"])
 REPOTYPES = (GIT, HG)
 
 def start ():
