@@ -27,6 +27,7 @@ kai-gebel.com#@#.social-bar-bottom
 @@||addthis.com/js/250/addthis_widget.js$domain=tomtom.com
 @@||bbci.co.uk/modules/sharetools/*/sharetools.js$domain=bbc.co.uk
 @@||bittorrent.com/public/min/$stylesheet,domain=bittorrent.com
+@@||connect.mail.ru/js/loader.js|
 @@||f1.mozillamessaging.com/share/panel/$document
 @@||google.com/js/plusone.js|$domain=get-tune.net|pikucha.ru
 @@||odnoklassniki.ru/share/odkl_share.js$domain=altapress.ru
@@ -50,31 +51,16 @@ kai-gebel.com#@#.social-bar-bottom
 != Тут не все правила - см. подписку фанбоя ниже.
 !
 !------------ Disqus ----------------------------------------------------------
-! Это не социальная сеть, а централизованный сервис для комментариев с логином
-! из любой крупной соц-сети и GMail. Сам он полезен, но не все их виджеты.
-###recent-disqus-comments
 ||disqus.com^*/recent_comments_widget.
 !
 !------------ Facebook --------------------------------------------------------
-~facebook.com###facebook
-facebook.com##._1yv[role="dialog"]
-##.facebook
-##.fb_iframe_widget
-##.soc_fb_share
-##[alt$=" on Facebook"]
-##[title$=" to Facebook"]
-_facebook.gif
 ||facebook.com/method/fql.query?*&query=select*from*link_stat*where*url=
 ||facebook.com/plugins/comments.php?
 ||graph.facebook.com/*&callback=
 !
 !------------ Google ----------------------------------------------------------
-##.g_plus
-##.googleplus
-##button[class="gbil esw eswd"]
-/+1/fastbutton?url=
+###recent-disqus-comments
 /plusone.js$domain=play.google.com
-/sprite4-a67f741843ffc4220554c34bd01bb0bb.png
 ||gmodules.com/ig/images/plus_google.gif
 ||google.*/cse/brand?form=
 ||google.com/translate_a/element.js?cb=googleTranslateElementInit|
@@ -86,35 +72,11 @@ mail.google.com##.Bu + .Bu.yM + .Bu.y3
 ||online.mirabilis.com^
 ||status.icq.com/online.
 !
-!------------ LiveJournal -----------------------------------------------------
-/ljthis?
-_livejournal.gif
-!
-!------------ Twitter ---------------------------------------------------------
-##.twitter
--tweet.png
-_twitter.gif
-_twitter.png
-!
 !------------ ВКонтакте -------------------------------------------------------
 ! Внимание!
 ! Если требуется полная блокировка вконтакта, то создайте у себя два вот таких правила
 ! ||vk.com^$third-party,script,subdocument
 ! ||userapi.com^$third-party,domain=~vk.com
-###com_vk
-###vk_groups
-###vk_groups2
-###vk_groups_q
-###vk_recommended
-###vkshare0
-##.vk-button
-##.vk-share-button
-##.vkontakte
-/icon-vkontakte.
-/icons/vkontakte_
-/vkontakte_icon_
-_vkontakte.gif
-_vkontakte.png
 ||vk.com/widget_comments.php?$third-party
 ||vk.com/widget_groups.php?
 ||vk.com/widget_poll.php?$third-party
@@ -127,48 +89,77 @@ _vkontakte.png
 ||vkontakte.ru/widget_subscribe.php?$third-party
 !
 !------------ Мой Мир (Mail.RU) -----------------------------------------------
-##.mrc__share
-@@||connect.mail.ru/js/loader.js|
 ||boom.mail.ru^
 ||connect.mail.ru^$third-party
 ||imgsmail.ru/*_share_buttons_sprite.$third-party
-!
-!------------ Одноклассники ---------------------------------------------------
-##.odkl-klass
-##.odkl-klass-s
-##.odkl_share_stat
-/odnoklassniki/*
-!
 !------------ Яндекс ----------------------------------------------------------
-###ya_share
-##.b-col_share
-##.yashare-auto-init
 ||lenta.yandex.ru/i/addfeed.
 !
 !- Универсальные и прочее -----------------------------------------------------
 ###block_social_open
+###com_vk
+~facebook.com###facebook
 ###odnaknopka
 ###social
 ###socialblock
 ###socializ
+###vk_groups
+###vk_groups2
+###vk_groups_q
+###vk_recommended
+###vkshare0
+###ya_share
+-tweet.png
+facebook.com##._1yv[role="dialog"]
 ##.addthis_table
 ##.addzakl
+##.b-col_share
+##.facebook
+##.fb_iframe_widget
+##.g_plus
+##.googleplus
+##.mrc__share
+##.odkl-klass
+##.odkl-klass-s
+##.odkl_share_stat
 ##.pluso
 ##.smiletagging-button
 ##.soc-box
+##.soc_fb_share
 ##.soc_share
 ~appledevelopers.ru##.social
 ##.social-icons-big
+##.twitter
+##.vk-button
+##.vk-share-button
+##.vkontakte
+##.yashare-auto-init
+/+1/fastbutton?url=
 /addthis.try.js
 /copy_to_blog_*.gif
+/icon-vkontakte.
+/icons/vkontakte_
+/ljthis?
 /odnaknopka.js
 /odnaknopka/*
+/odnoklassniki/*
 /plugins/addzakl/*
 /plugins/russocialknopki-
 /share32.
 /share42-
 /share42/*
+/sprite4-a67f741843ffc4220554c34bd01bb0bb.png
+/vkontakte_icon_
+##[alt$=" on Facebook"]
+##[title$=" to Facebook"]
+_facebook.gif
 _liveinternet.gif
+_livejournal.gif
+_twitter.gif
+_twitter.png
+_vkontakte.gif
+_vkontakte.png
+##button[class="gbil esw eswd"]
 ||bobrdobr.ru/images/buttons/$third-party
 ||bogi.ru/comments_widget.
 ||clix.ru^$third-party
