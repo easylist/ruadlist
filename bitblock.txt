@@ -19,6 +19,7 @@ gifovina.ru#@##shareBox
 lenta.ru#@##socials
 vk.com#@#.post_share
 jquery.com,oxymoronical.com#@#.signature
+appledevelopers.ru#@#.social
 kai-gebel.com#@#.social-bar
 kai-gebel.com#@#.social-bar-bottom
 @@/wp-content/plugins/wp-minify/min/?f=$stylesheet,~third-party
@@ -54,12 +55,12 @@ kai-gebel.com#@#.social-bar-bottom
 ||disqus.com^*/recent_comments_widget.
 !
 !------------ Facebook --------------------------------------------------------
+facebook.com##._1yv[role="dialog"]
 ||facebook.com/method/fql.query?*&query=select*from*link_stat*where*url=
 ||facebook.com/plugins/comments.php?
 ||graph.facebook.com/*&callback=
 !
 !------------ Google ----------------------------------------------------------
-###recent-disqus-comments
 /plusone.js$domain=play.google.com
 ||gmodules.com/ig/images/plus_google.gif
 ||google.*/cse/brand?form=
@@ -100,6 +101,7 @@ mail.google.com##.Bu + .Bu.yM + .Bu.y3
 ###com_vk
 ~facebook.com###facebook
 ###odnaknopka
+###recent-disqus-comments
 ###social
 ###socialblock
 ###socializ
@@ -110,7 +112,6 @@ mail.google.com##.Bu + .Bu.yM + .Bu.y3
 ###vkshare0
 ###ya_share
 -tweet.png
-facebook.com##._1yv[role="dialog"]
 ##.addthis_table
 ##.addzakl
 ##.b-col_share
@@ -127,7 +128,7 @@ facebook.com##._1yv[role="dialog"]
 ##.soc-box
 ##.soc_fb_share
 ##.soc_share
-~appledevelopers.ru##.social
+##.social
 ##.social-icons-big
 ##.twitter
 ##.vk-button
