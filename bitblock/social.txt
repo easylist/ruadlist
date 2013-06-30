@@ -1,0 +1,254 @@
+!#social.bookmark
+!------------ Disqus ----------------------------------------------------------
+||disqus.com^*/recent_comments_widget.
+!
+!------------ Facebook --------------------------------------------------------
+facebook.com##._1yv[role="dialog"]
+||facebook.com/method/fql.query?*&query=select*from*link_stat*where*url=
+||facebook.com/plugins/comments.php?
+||graph.facebook.com/*&callback=
+!
+!------------ Google ----------------------------------------------------------
+/plusone.js$domain=play.google.com
+||gmodules.com/ig/images/plus_google.gif
+||google.*/cse/brand?form=
+||google.com/translate_a/element.js?cb=googleTranslateElementInit|
+! Панель справа в гуглопочте
+mail.google.com##.Bu + .Bu.yM + .Bu.y3
+!
+!------------ ICQ -------------------------------------------------------------
+||icq.com/scripts/online.
+||online.mirabilis.com^
+||status.icq.com/online.
+!
+!------------ ВКонтакте -------------------------------------------------------
+! Внимание!
+! Если требуется полная блокировка вконтакта, то создайте у себя два вот таких правила
+! ||vk.com^$third-party,script,subdocument
+! ||userapi.com^$third-party,domain=~vk.com
+||vk.com/widget_comments.php?$third-party
+||vk.com/widget_groups.php?
+||vk.com/widget_poll.php?$third-party
+||vk.com/widget_recommended.php?
+||vk.com/widget_subscribe.php?$third-party
+||vkontakte.ru/widget_comments.php?$third-party
+||vkontakte.ru/widget_groups.php?
+||vkontakte.ru/widget_poll.php?$third-party
+||vkontakte.ru/widget_recommended.php?
+||vkontakte.ru/widget_subscribe.php?$third-party
+!
+!------------ Мой Мир (Mail.RU) -----------------------------------------------
+||boom.mail.ru^
+||connect.mail.ru^$third-party
+||imgsmail.ru/*_share_buttons_sprite.$third-party
+!------------ Яндекс ----------------------------------------------------------
+||lenta.yandex.ru/i/addfeed.
+!
+!- Универсальные и прочее -----------------------------------------------------
+###block_social_open
+###com_vk
+~facebook.com###facebook
+###odnaknopka
+###recent-disqus-comments
+###social
+###socialblock
+###socializ
+###vk_groups
+###vk_groups2
+###vk_groups_q
+###vk_recommended
+###vkshare0
+###ya_share
+-tweet.png
+##.addthis_table
+##.addzakl
+##.b-col_share
+##.facebook
+##.fb_iframe_widget
+##.g_plus
+##.googleplus
+##.mrc__share
+##.odkl-klass
+##.odkl-klass-s
+##.odkl_share_stat
+##.pluso
+##.smiletagging-button
+##.soc-box
+##.soc_fb_share
+##.soc_share
+##.social
+##.social-icons-big
+##.twitter
+##.vk-button
+##.vk-share-button
+##.vkontakte
+##.yashare-auto-init
+/+1/fastbutton?url=
+/addthis.try.js
+/copy_to_blog_*.gif
+/icon-vkontakte.
+/icons/vkontakte_
+/ljthis?
+/odnaknopka.js
+/odnaknopka/*
+/odnoklassniki/*
+/plugins/addzakl/*
+/plugins/russocialknopki-
+/share32.
+/share42-
+/share42/*
+/sprite4-a67f741843ffc4220554c34bd01bb0bb.png
+/vkontakte_icon_
+_facebook.gif
+_liveinternet.gif
+_livejournal.gif
+_twitter.gif
+_twitter.png
+_vkontakte.gif
+_vkontakte.png
+##button[class="gbil esw eswd"]
+||bobrdobr.ru/images/buttons/$third-party
+||bogi.ru/comments_widget.
+||clix.ru^$third-party
+||contentwidgets.net/widget/
+||loveplanet.ru^$third-party,domain=~loveplanet.ua
+||memori.ru^$third-party
+||mister-wong.ru/img/*/buttons/$third-party
+||moemesto.ru/icons/$third-party
+||mystatus.skype.com^
+||odnaknopka.ru^$third-party
+||pikabu.ru^$third-party,~image
+||pip.qip.ru^$domain=~pip.qip.ru
+||twittercounter.com^$third-party
+||viadeo.com/exec/recommend:getRecommend?$third-party
+||vkrugudruzei.ru/x/button/get?
+||vott.ru^$third-party
+||xat.com^$third-party
+||xatech.com^$third-party
+!
+!- По-сайтам (частные) --------------------------------------------------------
+!#socpriv.bookmark
+3dnews.ru###article + .breadcrumbs
+apple-russia.ru###bloghtml
+apple-russia.ru###bookmark
+f1news.ru###bookmarkBlock
+x-torrents.org###bookmarks
+topnews.ru###bottom
+ntv.ru###btmsocialize
+rutv.ru###btns
+ipicture.ru###buton
+homenet.beeline.ru###ed-0_toolbar_3
+ria.ru###facebook-userbar
+newsinfo.ru###facebox
+homenet.beeline.ru###fast-reply_toolbar_3
+kp.ru###fb_popup
+inosmi.ru###left_sliding_block
+google.com###lhn-friends
+google.com###lhn-recommendations
+kp.ru###like_buttons
+vk.com###pv_hh
+sfw.org.ua###qipbtn
+delfi.ua###sbookmarks_left
+webpark.ru###sc-frame
+satsis.info###share
+molodejj.ru###sharePanel
+timeout.ru###social-popup
+opennet.ru###social_link
+mk.ru###socialbar
+3dnews.ru###socialtabs
+autoclub-cerato.ru###socio_0
+autoclub-cerato.ru###socio_1
+google.com###sub-tree-subscriptions
+lightroom.kiev.ua###vk_comments
+lightroom.kiev.ua###vk_poll
+kp.ru##.a_diffusion > .center > .left
+kinopoisk.ru##.add_to
+topnews.ru##.addto
+delfi.ua##.after_body
+kp.by,kp.ru##.all_open-graph[id^="fb_"]
+kp.ru##.all_partners
+russia.ru,vz.ru##.append-other-applecations
+cheklab.ru##.art-postcontent > .buttons
+korrespondent.net##.artpop_shad
+247auto.ru,caredge.ru##.auth_vkontakte
+podrobnosti.ua##.b-news-share
+utro.ru##.b-repost
+pikucha.ru,rambler.ru##.b-share
+afisha.ru##.b-share-list
+rambler.ru##.b-social-share
+forbes.ru##.block-social-dockable
+vesti.ru##.blog_wrapper
+fishki.net##.bloglinks
+vedomosti.ru##.blogs_ico
+game-monitor.com##.bookmark
+intv.ru##.bookmarks-container
+247auto.ru,caredge.ru##.bookmarks_list
+fmates.ru##.bookmarkz
+qiq.ws##.buttonbox
+nvworld.ru##.buttons
+kp.ru##.cb_services-all
+google.com##.entry-actions > .broadcast
+google.com##.entry-actions > .broadcast-with-note
+google.com##.entry-actions > .email
+google.com##.entry-actions > .like
+google.com##.entry-author > .entry-likers
+navitel.su##.extra_append:last-child
+korrespondent.net##.footer_socialblock
+mobiledevice.ru##.icons_bar_placeholder
+aif.ru##.links + table[align="center"]
+vesti.ru##.live_container
+championat.ru##.livejournal
+echo.msk.ru##.netWorkBlock
+novafilm.tv##.news-entry > div:last-child
+ntv.ru##.podprint > ul[style*="370"]
+kurufin.ru##.polotno + .add1
+winreview.ru##.postmeta + noindex
+nya.sh##.q > .bottom
+safetygate.ru##.round-bs[class*="icon-"]
+delfi.ua##.sbookmarks
+ua-football.com##.share
+vesti.ru##.slide_anons
+tnua.info##.slink
+piter.tv##.snet-links
+rutracker.org##.soc-buttons
+kanobu.ru##.soc-embed
+kinopoisk.ru##.socRight
+hqroom.ru##.sots-plugin
+forum.f1news.ru,homenet.beeline.ru##.topic_share
+videomore.ru##.track-shared
+fishki.net##.undertopic > .imgmiddle
+korrespondent.net##.unipopup
+rambler.ru##.v-favsites
+vesti.ru##.video_top_inner
+cwer.ws##a[href^="/goto/"] > img[width="150"][height="150"]
+qiq.ws##a[onclick^="return addSoc"]
+izvestia.ru##div[id^="fancybox-"]
+novafilm.tv##div[style*="40px;"]:last-child
+aif.ru##iframe[src^="http://www.facebook."] + br + table[border="0"]
+4pna.com##table:first-child + br + .tborder[cellspacing="1"][cellpadding="6"][align="center"]
+||a-comics.ru/pics5/1btn/
+||allbest4free.ru/head.
+||bestrepack.net/forum/images/logo/*.gif
+||bin.com.ua/social/img/
+||cnews.ru/inc/images/feeds/
+||delfi.*/fbembed.
+||delphi.*/scms/?g=fbn&
+||drugasmuga.com/images/bookmarks/
+||drweb.com/static/js/redirect_to_facebook.js
+||gamespotcdn.com/*/social_media.
+||goha.ru/social/
+||habrahabr.ru/images/share.
+||i.li.ru/ReActive/i/blog/share2/serv.png
+||inkoutbreak.com/bumper/
+||megaweb.su/softblok/
+||msdn.com/CustomWidgets/SocialMediaSharingUC/
+||nifiga-sebe.ru/znachki/
+||novafilm.tv/static/icons/social-
+||odnoklassniki.ru^$domain=delfi.lv
+||overclockers.ru/images/buttons/
+||pravda.ru/*/facebox
+||rambler.ru/social_counters/
+||rfpro.ru/images/icons/bookmark/
+||telegrafcom.api.oneall.com/socialize/
+||thevista.ru/*/img/soc/
+||unian.net/img/social/social.
