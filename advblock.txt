@@ -57,6 +57,7 @@
 /vkshpion/?page=$popup
 ||24smile.$third-party,popup
 ||9donline.ru/welcome/?mita=$popup
+||astaninki2.com^$popup
 ||audance.ru*/promo/$popup
 ||blinkogold.ru^$popup
 ||bonsport.ru^$popup
@@ -67,8 +68,10 @@
 ||clubrelaxxxx.com^$popup
 ||cpm.wargaming.net^$popup,domain=~worldoftanks.ru
 ||darkorbit.bigpoint.com/?aid=$popup
+||devochki.cz^$popup
 ||diets.1tv-russia.com^$popup
 ||discovermore.ru/restorepassword$~popup,popup
+||ero-spinula.ru^$popup
 ||fileplaneta.com/?op=redirect_to&url=$popup
 ||fotostrana.ru/start/*/?$popup
 ||funtest-ru.com^$popup
@@ -81,16 +84,19 @@
 ||modnakasta.ua^$popup
 ||moi-goroskop.com^$popup
 ||motorpage.ru^$popup
+||my-eromir.net^$popup
 ||mycultures.ru^$popup
 ||panel.gemius.com.ua^$popup
 ||partypoker.com^*/videopop/$popup
 ||pointblank.ru/?pid=$popup
+||pokajem.nashevideo.info^$popup
 ||pop.sn00.net^$popup
 ||relaxmybody.ru^$popup
 ||sapato.ru^$third-party,popup
 ||say.tv/?actionpay=$popup
 ||sbornix.ru^$popup
 ||sergey-mavrodi.com^$popup
+||sex-mambo.net^$popup
 ||skidka50.com.ua^$popup
 ||snailz.ru/promo/?$popup
 ||tankionline.com/ru/play$popup
@@ -101,35 +107,28 @@
 ||wardogs.ru/lp?ref=$popup
 ||webarbitrage.ru/?$popup
 ||worldoftanks.eu/play/$popup
+||x-uboino.net^$popup
+||x-uboino.ru^$popup
 ||yapfiles.ru^*/rating_by_pop/$popup
 ||zzima.com^$popup,domain=~zzima.com
 ! - Мошенники -----------------------------------------------------------------
-! В основном блокируются на уровне редиректов, но лучше и так.
-! Просьба не удалять нестандарные правила отсюда
 !#scam.bookmark
 /popua/*$popup
 ||2officialnik.biz^$~popup,popup
 ||gaminatori.ru^$~popup,popup
 ||help2play.com^$~popup,popup
 ||korovkasms.ru^$~popup,popup
+||smelthelpfully.in^$~popup,popup
 ||vkonagt.com^$~popup,popup
-! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
-||youtube.com^$domain=2officialnik.biz|dvadzat5.biz|help2play.com|razmon.biz|vkonagt.com|vsetutprosto.info
 ! Попапы и редирект (мошенники) на turbobit.net
 ||add5.ru^$~popup,popup
 ||diaman4.info^$~popup,popup
 ||dvadzat5.biz^$~popup,popup
 ||razmon.biz^$~popup,popup
 ||vsetutprosto.info^$~popup,popup
-! - Сайты с контентом для взрослых и наименее желаемые в форме попапа ---------
-||astaninki2.com^$third-party,~popup,popup
-||devochki.cz^$third-party,~popup,popup
-||ero-spinula.ru^$~popup,popup
-||my-eromir.net^$~popup,popup
-||pokajem.nashevideo.info^$~popup,popup
-||sex-mambo.net^$~popup,popup
-||x-uboino.$third-party,~popup,popup
 ||zarabotat-v-inete.com^$~popup,popup
+! Блокировка рекламных роликов на доменах мошенников. Они их ещё и сразу запускают, кстати.
+||youtube.com^$domain=2officialnik.biz|dvadzat5.biz|help2play.com|razmon.biz|vkonagt.com|vsetutprosto.info
 !
 ! = Общие CSS-фильтры =========================================================
 %include advblock/general_hide.txt%
