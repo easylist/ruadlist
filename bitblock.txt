@@ -385,13 +385,8 @@ _lj_times_
 ! Плагины WordPress
 /plugins/quick-gush/*
 /plugins/wp-cumulus/*
-1tv.ru###METABAR_IFRAME
-1tv.ru##[id^="m_banner"]
-||1tv.ru/maintop/
-||1tv.ru/rotobanner/
-||2ip.ru/sbar/
-||mygold.pp.ua^$third-party
 ! Далее идут правила для отдельных сайтов
+1tv.ru,championat.com###METABAR_IFRAME
 animelayer.ru###Wrapper > table[width="100%"]:first-child
 lols.ru###dle-content td[style="padding-left:20px;"] > noindex
 lockerz.com###exposeMask
@@ -411,9 +406,13 @@ kino-govno.com##.des_front
 freakenergy.ru##.sidebar > div > noindex
 izvestia.ru##.topline
 experts-exchange.com##.viewQuestionBuffer
+1tv.ru##[id^="m_banner"]
 iguides.ru##[id^="post_message_"] ~ div
 bigtorrent.org##div[id^="div_torrentfiles-"] + .spoiler-wrap
 forum.ixbt.com##td:first-child + td[style$="240px;"]:last-child
+||1tv.ru/maintop/
+||1tv.ru/rotobanner/
+||2ip.ru/sbar/
 ||3dnews.ru/*/images/slider/
 ||a-comics.ru/fw/
 ||advbroker.ru^
@@ -437,6 +436,7 @@ forum.ixbt.com##td:first-child + td[style$="240px;"]:last-child
 ||kino-govno.com/branding/*/bg_
 ||kinobanda.net^*/images/heder.swf
 ||levonevski.net^$object
+||mygold.pp.ua^$third-party
 ! Гороскоп в почте
 russia.tv###adv_right + .b-mini_video
 vk.com###app_container_outer + div[style]
