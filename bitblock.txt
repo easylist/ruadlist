@@ -15,24 +15,47 @@
 ! FAL Homepage: http://www.fanboy.co.nz/
 ! FAL Forums: http://forums.fanboy.co.nz/
 !
-! = "Тяжёлая артиллерия" против хитрой рекламы ================================
-%include bitblock/magic.txt%
+! = Социальные сети ===========================================================
 !
-!= Социальные сети ============================================================
-!#social.bookmark
-%include bitblock/social.txt%
+! - Общие правила блокировки --------------------------------------------------
+%include bitblock/social_general_block.txt%
 %include easylist:fanboy-addon/fanboy_social_general_block.txt%
+!
+! - Общие правила скрытия -----------------------------------------------------
+%include bitblock/social_general_hide.txt%
 %include easylist:fanboy-addon/fanboy_social_general_hide.txt%
-%include easylist:fanboy-addon/fanboy_social_thirdparty.txt%
-%include easylist:fanboy-addon/fanboy_social_international.txt%
 %include easylist:fanboy-addon/fanboy_social_whitelist_general_hide.txt%
 !
-!= Мусор на сайтах (огромные логотипы, информеры, флэш и т.п.) ================
-%include bitblock/annoyance.txt%
+! - Скрипты и фремы с посторонних сайтов --------------------------------------
+%include bitblock/social_thirdparty.txt%
+%include easylist:fanboy-addon/fanboy_social_thirdparty.txt%
+%include easylist:fanboy-addon/fanboy_social_international.txt%
+!
+! - Частные правила -----------------------------------------------------------
+%include bitblock/social_specific_block.txt%
+%include bitblock/social_specific_hide.txt%
+!
+!= Мусор на сайтах (огромные логотипы, информеры, флэш и прочее) ==============
+!
+! - "Тяжёлая артиллерия" против хитрой рекламы --------------------------------
+%include bitblock/magic.txt%
+!
+! - Общие правила блокировки --------------------------------------------------
+%include bitblock/annoyance_general_block.txt%
 %include easylist:fanboy-addon/fanboy_annoyance_general_block.txt%
+!
+! - Общие правила скрытия -----------------------------------------------------
+%include bitblock/annoyance_general_hide.txt%
 %include easylist:fanboy-addon/fanboy_annoyance_general_hide.txt%
+!
+! - Скрипты и фремы с посторонних сайтов --------------------------------------
+%include bitblock/annoyance_thirdparty.txt%
 %include easylist:fanboy-addon/fanboy_annoyance_thirdparty.txt%
 %include easylist:fanboy-addon/fanboy_annoyance_international.txt%
+!
+! - Частные правила -----------------------------------------------------------
+%include bitblock/annoyance_specific_block.txt%
+%include bitblock/annoyance_specific_hide.txt%
 !
 ! = Исключения ================================================================
 %include easylist:fanboy-addon/fanboy_annoyance_whitelist.txt%
