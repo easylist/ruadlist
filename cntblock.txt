@@ -37,12 +37,6 @@
 ://top.$third-party,~stylesheet,~xmlhttprequest
 !
 ! = Общие фильтры =============================================================
-.ru/cnt/?
-.ru/count/$domain=~yandex.ru
-.ru/img.php?id
-.ru/stat/$domain=~metrika.yandex.ru|~sms-track.ru|~sports.ru
-.su/stat/
-.ua/stat/$domain=~fotomag.com.ua
 /1x1.gif
 /1x1.png
 /_res/script/image.php?type=$image
@@ -95,6 +89,13 @@
 ;0x0;0;0;-;0|
 ^counter.$third-party,image
 ^name=atatracker^
+||ru/cnt/?
+||ru/count/$domain=~yandex.ru
+||ru/img.php?id
+||ru/stat/$domain=~metrika.yandex.ru|~sms-track.ru|~sports.ru
+||su/stat/
+||ua/stat/$domain=~fotomag.com.ua
+! -- По сайтам --
 |http://li.ru^$third-party
 |http://pr-cy.$third-party
 |http://r.i.ua^$third-party
