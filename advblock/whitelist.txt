@@ -50,7 +50,6 @@
 @@/cgi-bin/banners/*$domain=km.ru
 @@/files/banner/*$domain=movie-pocket.com
 @@/files/banners/*$domain=interzet.ru
-@@/http://(?!(?:pagead2|mc\.yandex|www\.google(-analytics)?|surfingbird|widget|connect|platform|vk(ontakte)?)\.)/$script,stylesheet,domain=laplandia.org|ph4.ru
 @@/images/partners/*$domain=citynews.ca|scontinental.com|sctm.ru
 @@/img/banner/*$domain=imhonet.ru
 @@/reklama/*$domain=velochehol.com.ua|velosumka.com
@@ -193,6 +192,7 @@ mts.ru#@#.wide-ad
 bestpersons.ru#@#.ya-partner_ads-up
 !#detect.bookmark
 @@/advertisement.$object-subrequest,domain=megogo.net
+@@/http://(?!(?:bs\.yandex|connect|p(?:agead2|latform)|mc\.yandex|surfingbird|vk(ontakte)?|w(?:idget|ww\.google(?:-analytics)?))\.)/$script,stylesheet,domain=laplandia.org|ph4.ru
 @@||am10.ru/code.$domain=tv-serial.org
 @@||am15.net/bn$script,domain=tv-serial.org
 @@||kinomafia.com^$elemhide
