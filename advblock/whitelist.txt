@@ -9,6 +9,9 @@
 @@||auth.tbn.ru^
 ! Видео с now.ru на нём самом и прочих сайтах (vk.com, например)
 @@||cdn.now.ru/www/delivery/fc.php?
+! Плагин videoclick.ru для онлайн-плееров, без которого видео не играет
+@@||content.videoclick.ru/crossdomain.xml|$object-subrequest
+@@||content.videoclick.ru^*PlayerVideoClickPlugin$object-subrequest
 ! Исключения для доменов телеканала ТНТ (tnt-online.ru, hb-show.tv, holostyak.ru, comedy-battle.ru, ...)
 @@||gpm-digital.com/172102/$script
 @@||rutube.ru^*.swf?link1=http%3A//adv%2Egpm%2Ddigital%2Ecom/172102/
