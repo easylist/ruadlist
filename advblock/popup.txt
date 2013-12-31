@@ -1,13 +1,24 @@
 ! - Общие правила -------------------------------------------------------------
+&temz=clikundr&$popup
 &utm_campaign=CU_ru$popup
+.clickunder.$popup
+.webunder.$popup
 //kpup.*/?sid=$popup
 //promo.$popup
+//uno.*/?t=$popup,script
 /ad/popup/*$popup
 /adv_clk_redirect.php?$popup
+/click/body.php?id=*&hash=$popup
 /popads.$popup
 /popads/*$popup
 /popua/*$popup
+/utarget.$popup
 /vkshpion/?page=$popup
+/webunder.$popup
+/wtsin.cgi?id=$popup
+^clickunder^$popup
+||com/go.php?tid=*&hid=$popup
+||com/on.php?id=$popup
 ! Против попапов вроде vk.com.spam-fixer.inf144554694.info
 .*.*.*.info^$popup
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
@@ -62,6 +73,7 @@
 ||image2you.ru^$popup
 ||link2you.ru^$popup
 ||lovecity3d.com/img/promo.$popup
+||luckiestclick.com^$popup
 ||mobruner.com^$~popup,popup
 ||modnakasta.ua^$popup
 ||moi-goroskop.com^$popup
@@ -88,6 +100,7 @@
 ||w-raza.com^$popup
 ||wardogs.ru/lp?ref=$popup
 ||webarbitrage.ru/?$popup
+||winafterwin.com^$popup
 ||worldoftanks.eu/play/$popup
 ||x-uboino.net^$popup
 ||x-uboino.ru^$popup
