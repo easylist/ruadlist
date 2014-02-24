@@ -298,7 +298,14 @@ music.yandex.kz,music.yandex.ru,music.yandex.ua##div:not([class$="-content"]) a.
 ||yabs.yandex.*/show/$third-party
 ! Яндекс.Директ
 ! Директ вверху и внизу в поиске
-##.g-gap-vertical[class^="b-"][class*="_type_"]:not([class^="b-pager"])
+! ##.g-gap-vertical[class^="b-"][class*="_type_"]:not([class^="b-pager"])
+##.b-link[href*="//direct."]
+##.b-link[href*="//yabs."]
+##.b-serp-item__all + .b-serp-item__favicon
+##.b-serp-item__all ~ div[class^="b-serp-"]
+##.b-serp-item__direct
+##.b-serp-item__links[class="b-serp-item__links"]
+##.b-serp-item__title-link[href^="http://yabs.yandex.ru/"]
 ! Директ справа в поиске
 yandex.kz,yandex.ru,yandex.ua##.b-page-layout__column:last-of-type > .b-page-layout__column-proxy > div[class^="b-"] > div:first-of-type[class^="b-"]
 ! Прочее
