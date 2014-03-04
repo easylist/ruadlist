@@ -300,14 +300,10 @@ music.yandex.kz,music.yandex.ru,music.yandex.ua##div:not([class$="-content"]) a.
 ! Яндекс.Директ
 ! Директ вверху и внизу в поиске
 ! ##.g-gap-vertical[class^="b-"][class*="_type_"]:not([class^="b-pager"])
-##.b-link[href*="//direct."]
-##.b-link[href*="//yabs."]
-##.b-serp-item__all ~ .b-serp-item__favicon
-##.b-serp-item__all ~ .b-serp-item__text
 ##.b-serp-item__direct
-##.b-serp-item__links[class="b-serp-item__links"]
-##.b-serp-item__title-link[href*="//market-click"]
-##.b-serp-item__title-link[href*="//yabs."]
+##.b-serp-item__links:not(.b-serp-item__links_type_green-and-hover)
+##.b-serp-item__title-link[onmousedown*="/clck/"]:not([tabindex])
+##.b-serp-sitelinks__sitelinks-link[onmousedown*="/clck/"]:not([tabindex])
 ! Директ справа в поиске
 yandex.kz,yandex.ru,yandex.ua##.b-page-layout__column:last-of-type > .b-page-layout__column-proxy > div[class^="b-"] > div:first-of-type[class^="b-"]
 ! Прочее
