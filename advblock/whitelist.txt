@@ -162,9 +162,10 @@
 @@||video.gamer-info.com^*.mp4$domain=gamer-info.com
 @@||videoclick.ru/crossdomain.xml$domain=maxpark.com
 @@||videoclick.ru/JWPlayerVideoClickPlugin_$domain=maxpark.com
-@@||videonow.ru/crossdomain.xml$domain=kinonews.ru
+@@||videonow.ru/crossdomain.xml$domain=kino-govno.com|kinonews.ru
+@@||videonow.ru^*&movie_id=$domain=kino-govno.com
 @@||videonow.ru^*/ad_holder.$object-subrequest,domain=kinonews.ru
-@@||videonow.ru^*_vpaid.$object-subrequest,domain=kinonews.ru
+@@||videonow.ru^*_jwplayer_plugin_$domain=kino-govno.com|kinonews.ru
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 @@||vodyanoy.com.ua^*700_200.jpg|$domain=vodyanoy.com.ua
 @@||volnorez.com^*/liveplayer.swf?url=
