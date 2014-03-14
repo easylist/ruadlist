@@ -30,6 +30,13 @@
 @@||video.*.user.madbanner.ru^$object-subrequest
 ! Видео с own3d.tv, показываемое на других сайтах (goodgame.ru|sc2tv.ru)
 @@||vox-static.liverail.com/swf/*/admanager.swf$domain=ru
+! JWPlayer и некоторые другие + рекламный модуль VideoNow. На некоторых сайтах ломается воспроизведение.
+@@||data.videonow.ru/?profile_id=*&movie_id=$domain=~kinonews.ru
+@@||data.videonow.ru/crossdomain.xml
+@@||poligon.videonow.ru/crossdomain.xml
+@@||static.videonow.ru/crossdomain.xml
+@@||videonow.ru^*/ad_holder.
+@@||videonow.ru^*_jwplayer_plugin_
 ! Игра MonsterWold на facebook'е
 @@||wooga.com/gardens/configurations/production/teaser.
 ! Иногда информер лучше самого сайта
@@ -165,10 +172,6 @@
 @@||video.gamer-info.com^*.mp4$domain=gamer-info.com
 @@||videoclick.ru/crossdomain.xml$domain=maxpark.com
 @@||videoclick.ru/JWPlayerVideoClickPlugin_$domain=maxpark.com
-@@||videonow.ru/crossdomain.xml$domain=igromania.ru|kino-govno.com|kinonews.ru
-@@||videonow.ru^*&movie_id=$domain=kino-govno.com
-@@||videonow.ru^*/ad_holder.$object-subrequest,domain=igromania.ru|kinonews.ru
-@@||videonow.ru^*_jwplayer_plugin_$domain=kino-govno.com|kinonews.ru
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 @@||vodyanoy.com.ua^*700_200.jpg|$domain=vodyanoy.com.ua
 @@||volnorez.com^*/liveplayer.swf?url=
