@@ -13,24 +13,6 @@ gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru##.rfram
 gismeteo.ru,gismeteo.ua##.side__i
 ||gismeteo.*/rian.html|
 !
-! Interfax (Домены группы "Интерфакс")
-interfax.by##.banner
-finmarket.ru,interfax.ru##[id^=bbInformer]
-finmarket.ru,pmoney.ru##a[href^="/RCL/TXT/"]
-||interfax.by/files/$object
-!
-! IXBT.com
-forum.ixbt.com##.top_ad2
-ixbt.com##.banner
-ixbt.com##.clickable_zone
-ixbt.com##h4#nl_header
-||forum.ixbt.com/js/fotkidepo
-||ixbt.com/branding/
-||ixbt.com/include/ctx2.js
-||ixbt.com^*/branded_
-||rose.ixbt.com/cgi-bin/*banner
-||rose.ixbt.com^$~object-subrequest,~object
-!
 ! Letitbit
 goclips.tv###video_player_content
 goclips.tv##.bottom_videos
@@ -146,21 +128,22 @@ odnoklassniki.ru##.update-browser_container
 !
 ! NGS.RU
 ngs.ru###ads-fix
-realty.ngs.ru###clients
-relax.ngs.ru###exclusive
+gilcom.ru###botom-banner
+realty.ngs.ru###bottom-banner
+realty.ngs.ru###center-banners
 ngs.ru,ngs24.ru,ngs55.ru###forms-ngs-block ~ table[id]:not(#content):not(#footer)
-ngs.ru###kemlc
-turizm.ngs.ru###logo-menu
-dom.ngs.ru###logo_banners
-he.ngs.ru,relax.ngs.ru,she.ngs.ru###logos
-ngs.ru,ngs24.ru,ngs55.ru###mail_block + td ~ td[class]
-mail.ngs.ru,mail.ngs55.ru###td_body_right
+mail.ngs.ru,mail.ngs24.ru,mail.ngs55.ru###td_body_right
+realty.ngs.ru###top-banner
 ngs.ru##.banner
-ngs.ru##.banner-center
-ngs.ru##.big-right
-ngs.ru,ngs24.ru,ngs55.ru,rabota55.ru##a[class][style*="height:"][target="_blank"][href^="/"]
-ngs.ru,ngs24.ru,ngs55.ru,rabota55.ru##a[target="_blank"][href^="/"] > img[src^="http://static."]
-ngs.ru##div[id^="big-"][class^="big-"]
+gilcom.ru,ngs.ru##.banner-center
+gilcom.ru##.banner-r
+realty.ngs.ru##.banners
+ngs.ru,ngs24.ru,ngs55.ru##.ngs-forms-contain + table[id]:not(#content)
+rabota.ngs24.ru,rabota55.ru##.ra-top-banner
+relax.ngs.ru##.top_banner
+ngs.ru,ngs24.ru,ngs55.ru##a[onmousedown][target="_blank"]
+ngs.ru,ngs24.ru,ngs55.ru##div[id^="big-"][class^="big-"]
+gilcom.ru##td[id^="banner-top-"]
 !
 ! Rambler.RU и их проекты
 ag.ru###bottom_link
