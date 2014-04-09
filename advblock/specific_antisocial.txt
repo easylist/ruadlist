@@ -1,11 +1,9 @@
 ! Социальные фичи на сайтах, блокирующие доступ к странице.
 ! Это просто запредельно неудобно, особенно если cookies периодически удаляются.
-74.ru###fade
 tvnet.lv###fancybox-overlay
 tvnet.lv###fancybox-wrap
 delfi.lv###nagger-wrap
 rbc.ru,rbcdaily.ru,utro.ru###popup_box
-74.ru###popup_name
 muz-tv.ru###popup_overlay
 bvedomosti.ru###sbox-overlay
 bvedomosti.ru###sbox-window
@@ -13,6 +11,8 @@ sport-express.ru###socgroup
 trashbox.ru##.div_modal_like
 podrobnosti.ua##.jqmOverlay
 podrobnosti.ua##.jqmWindow.b-social-popup
+##.min-width-normal > #popup_container
+##.min-width-normal > #popup_container ~ #fade
 muz-tv.ru##.ovl_pf
 securitylab.ru##.ui-dialog[aria-describedby="social_dialog"]
 rbc.ru##.win-subscribe-popup-box
