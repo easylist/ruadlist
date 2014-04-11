@@ -24,7 +24,6 @@
 ! - Общие правила скрытия -----------------------------------------------------
 %include bitblock/social_general_hide.txt%
 %include easylist:fanboy-addon/fanboy_social_general_hide.txt%
-%include easylist:fanboy-addon/fanboy_social_whitelist_general_hide.txt%
 !
 ! - Скрипты и фремы с посторонних сайтов --------------------------------------
 %include bitblock/social_thirdparty.txt%
@@ -58,6 +57,8 @@
 %include bitblock/annoyance_specific_hide.txt%
 !
 ! = Исключения ================================================================
+%include easylist:fanboy-addon/fanboy_annoyance_whitelist_general_hide.txt%
 %include easylist:fanboy-addon/fanboy_annoyance_whitelist.txt%
+%include easylist:fanboy-addon/fanboy_social_whitelist_general_hide.txt%
 %include easylist:fanboy-addon/fanboy_social_whitelist.txt%
 %include bitblock/whitelist.txt%
