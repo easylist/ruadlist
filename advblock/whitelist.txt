@@ -41,6 +41,10 @@
 ! Промо-домены партнёров gamexp.ru (игры Karos, Rappelz, Фантазиум и прочие)
 @@||promo.gamexp.ru^
 @@||promo.static.gamexp.ru^
+! Медиа-плееры на разных сайтах (stb.ua, m1.tv и другие)
+@@||advert.starlightmedia.ua/crossdomain.xml
+@@||advert.starlightmedia.ua/ua/index/get-advert
+@@||mmi.bemobile.ua/lib/lib.js
 ! Правила для отдельных сайтов
 @@-teasers-$domain=rw.by
 @@.com/ads?$domain=uzblog.com|uzlist.com
@@ -88,8 +92,6 @@
 @@||advert-technology.ru^$~third-party
 @@||advert.akado.ru/$domain=akado.ru
 @@||advert.kp.ru^$~object,~third-party
-@@||advert.starlightmedia.ua/crossdomain.xml$domain=stb.ua
-@@||advert.starlightmedia.ua/ua/index/get-advert$domain=stb.ua
 @@||advertising.yandex.$domain=adv.ya.ru
 @@||advertising.yandex.$~third-party
 @@||adwolf.ru^$script,subdocument,domain=muz.ru
