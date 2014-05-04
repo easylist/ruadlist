@@ -1,12 +1,7 @@
-! Исправление проблем возникших в результате работы подписки на отдельных сайтах
-! Логин через аккаунт Google на info-доменах.
-@@||accounts.google.com/o/oauth2/auth?*.info^$popup
-! Панель меню провайдера ТомТел, встречается практически на всех их сайтах.
+! Исправление проблем, возникших в результате работы списка фильтров
 @@||ads.tomtel.ru/adjs.$script
-! Scale of the Universe
 @@||amazonaws.com/c.swf?path=http
-! Видео с now.ru на нём самом и прочих сайтах (vk.com, например)
-@@||cdn.now.ru/www/delivery/fc.php?
+@@||now.ru/www/delivery/fc.php?
 ! Плагин videoclick.ru для онлайн-плееров, без которого видео не играет
 @@||content.videoclick.ru/crossdomain.xml|$object-subrequest
 @@||content.videoclick.ru^*PlayerVideoClickPlugin$object-subrequest
@@ -268,17 +263,11 @@ planetaua.net#@##rightinfoad
 @@||rehab51.ru^$domain=ph4.info|ph4.ru
 ! - Против "бесконечной загрузки страниц" -------------------------------------
 !#excompat.bookmark
-! К сожалению скрипты сторонних рекламных сетей не всегда встраиваются аккуратно,
-! что приводит к эффекту "недогрузки" страниц. Реально всё содержимое загружено,
-! но индикатор загрузки продолжает показывать процесс загрузки и это состояние
-! часто влияет на работоспособность скриптов на таких страницах.
-! Этими двумя скриптами пользуется как adfox.ru, так и их же сайт adwolf.ru, и вроде как не их kavanga.ru
 @@/getCodeTest?$script,domain=livejournal.com
 @@/prepareCode?$script,domain=livejournal.com
 @@/prepareCode?*&pct=a&$domain=championat.com
 @@/prepareCode?*&prr=*&dl=$script,domain=aif.ru|diary.ru|europaplus.ru|irr.ru|lenta.ru|rosbalt.ru|soccer.ru|sport-express.ru|vesti.ru
 @@/prepareCode?*&puid1=|$domain=rg.ru
-! С адривером не всё просто. Иногда эти скрипты нужны для закрытия записи на страницу, но иногда ситуация обратна и они только вредят (avito.ru, например).
 @@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|aif.ru|cnews.ru|eg.ru|ex.ua|forum.tatfish.com|meta.ua|ozon.ru|ria.ru|rian.ru|thg.ru|vz.ru
 @@||adriver.ru/extender.js|$script,domain=vz.ru
 @@||adriver.ru/images/*/0/script.js?$script,domain=afisha.ru|aif.ru|cnews.ru|eg.ru|ex.ua|forum.tatfish.com|meta.ua|mobile-review.com|ozon.ru|ria.ru|rian.ru|thg.ru|vz.ru
