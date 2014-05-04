@@ -211,6 +211,7 @@ skodarapidclub.ru#@#.headerad
 mts.ru#@#.wide-ad
 bestpersons.ru#@#.ya-partner_ads-up
 !#detect.bookmark
+@@.png#$image,domain=evonews.org|planetaua.net
 @@/ads/banner.jpg?ad_height=$image,~third-party
 @@/advertise.js|$domain=raketa-tv.com
 @@/advertisement.js|$script,domain=kurs.com.ua|megogo.net|online.ua|raketa-tv.com|теплорасчет.рф
@@ -222,6 +223,7 @@ bestpersons.ru#@#.ya-partner_ads-up
 @@||forum.na-svyazi.ru^$elemhide
 @@||forum.zarulem.ws^$elemhide
 @@||gfhdkse.com^$script,domain=99px.ru
+@@||googlesyndication.com/pagead/$script,domain=blindage.org|evonews.org
 @@||kinomafia.com^$elemhide
 @@||liverail.com^*/admanager.swf|$domain=own3d.tv
 @@||luxup.ru^$script,domain=99px.ru
@@ -235,9 +237,26 @@ bestpersons.ru#@#.ya-partner_ads-up
 all-episodes.com##div[class^="bn_"]
 aqa.ru#@#div[id^="div-gpt-ad-"]
 debilizator.tv#@#.adsbygoogle
+evonews.org###l30c
+evonews.org#@##ad_bigbox
+evonews.org#@##ad_content
+evonews.org#@##ad_h3
+evonews.org#@##AdvertPanel
+evonews.org#@##blog-ad
+evonews.org#@##imPopup
+evonews.org#@##rhs_ads
+evonews.org,planetaua.net#@##adsense
 internetsms.org##.fade[class^="modal"]
 kinomafia.tv#@#div[id^="PC_Teaser_Block"]
 lost-alpha.com##.adb-dm
+planetaua.net###s9ee
+planetaua.net#@##ad_leader
+planetaua.net#@##Ads_BA_SKY
+planetaua.net#@##adspace-top
+planetaua.net#@##adStrip
+planetaua.net#@##c-adzone
+planetaua.net#@##csTopAd
+planetaua.net#@##rightinfoad
 ! ph4.ru/ph4.info
 ! @@/https?://(?!(?:www\.)?(?:[SwampFoxVoyagB][LouisCKsAPI][Ragnar.Oldi][Cygnets.DF]))/$script,stylesheet,domain=laplandia.org|ph4.ru
 @@||laplandia.org^$script,stylesheet,domain=laplandia.org|ph4.info|ph4.ru
@@ -247,37 +266,6 @@ lost-alpha.com##.adb-dm
 @@||print6x3.ru^$domain=ph4.info|ph4.ru
 @@||profcosmetic.com^$domain=ph4.info|ph4.ru
 @@||rehab51.ru^$domain=ph4.info|ph4.ru
-! script: no-adblock
-planetaua.net#@##Ads_BA_SKY
-evonews.org#@##AdvertPanel
-russerial.com#@##adBanner160x600
-russerial.com#@##adSpace21
-planetaua.net#@##adStrip
-evonews.org#@##ad_bigbox
-evonews.org#@##ad_content
-evonews.org#@##ad_h3
-planetaua.net#@##ad_leader
-evonews.org,planetaua.net#@##adsense
-russerial.com#@##adskintop
-planetaua.net#@##adspace-top
-russerial.com#@##advert_mpu_1
-evonews.org#@##blog-ad
-planetaua.net#@##c-adzone
-planetaua.net#@##csTopAd
-evonews.org#@##imPopup
-evonews.org###l30c
-russerial.com#@##mastad
-russerial.com#@##news_advertorial_top
-evonews.org#@##rhs_ads
-russerial.com#@##rightcolhouseads
-planetaua.net#@##rightinfoad
-planetaua.net###s9ee
-russerial.com###ta8c
-@@||evonews.org^*#$image,domain=evonews.org
-@@||googlesyndication.com/pagead/$script,domain=blindage.org
-@@||googlesyndication.com/pagead/$script,domain=evonews.org
-@@||planetaua.net^*#$image,domain=planetaua.net
-@@||russerial.com^*#$image,domain=russerial.com
 ! - Против "бесконечной загрузки страниц" -------------------------------------
 !#excompat.bookmark
 ! К сожалению скрипты сторонних рекламных сетей не всегда встраиваются аккуратно,
