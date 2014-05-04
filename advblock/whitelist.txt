@@ -1,49 +1,8 @@
 ! Исправление проблем, возникших в результате работы списка фильтров
-@@||ads.tomtel.ru/adjs.$script
-@@||amazonaws.com/c.swf?path=http
-@@||now.ru/www/delivery/fc.php?
-! Плагин videoclick.ru для онлайн-плееров, без которого видео не играет
-@@||content.videoclick.ru/crossdomain.xml|$object-subrequest
-@@||content.videoclick.ru^*PlayerVideoClickPlugin$object-subrequest
-! Исключения для доменов телеканала ТНТ (tnt-online.ru, hb-show.tv, holostyak.ru, comedy-battle.ru, ...)
-@@||gpm-digital.com/172102/$script
-@@||rutube.ru^*.swf?link1=http%3A//adv%2Egpm%2Ddigital%2Ecom/172102/
-! Одно из приложений для чатов chatovod.ru
-@@||partner.pladform.ru^$domain=video.mediachat.ru
-@@||stat.pladform.ru^$domain=chatovod.ru|video.mediachat.ru
-! Некоторые фотографии на kharkov-guberniia.com.ua, xan.com.ua и других сайтах.
-@@||plektan.com/ad/$image
-! Отсчёт времени до пропуска рекламы на letitbit.net
-@@||propellerads.com/ajs.php?zoneid=$domain=goclips.tv|letitbit.net
-! Медиаплеер soundcloud.com
-@@.soundcloud.com/player.swf?url=
-! Библиотека flowplayer, необходимая некоторым видео-плеерам.
-@@||video.begun.ru/flowplayer_begun_lib.swf|
-! Видео с madbanner блокируется правилом /cgi-bin/iframe/*
-@@||video.*.user.madbanner.ru^$object-subrequest
-! Видео с own3d.tv, показываемое на других сайтах (goodgame.ru|sc2tv.ru)
-@@||vox-static.liverail.com/swf/*/admanager.swf$domain=ru
-! JWPlayer и некоторые другие + рекламный модуль VideoNow. На некоторых сайтах ломается воспроизведение.
-@@||videonow.ru^*/ad_holder.
-! Игра MonsterWold на facebook'е
-@@||wooga.com/gardens/configurations/production/teaser.
-! Иногда информер лучше самого сайта
-@@||myradio24.com/informer.php
-! Демонстрационные игровые автоматы на сайтах-партнёрах gamble2fun.com
-@@||promo.gamble2fun.com^$subdocument
-! Промо-домены партнёров gamexp.ru (игры Karos, Rappelz, Фантазиум и прочие)
-@@||promo.gamexp.ru^
-@@||promo.static.gamexp.ru^
-! Медиа-плееры на разных сайтах (stb.ua, m1.tv и другие)
-@@||advert.starlightmedia.ua/crossdomain.xml
-@@||advert.starlightmedia.ua/ua/index/get-advert
-@@||mmi.bemobile.ua/lib/lib.js
-! Табличка матчей от sports.ru на by.tribuna.com и, наверное, где-нибудь ещё
-@@||s5o.ru/common/css/teaser.css?
-! Правила для отдельных сайтов
 @@-teasers-$domain=rw.by
 @@.com/ads?$domain=uzblog.com|uzlist.com
-@@//promo.$popup,~third-party,domain=bactistatin.com|iguides.ru|yandex.ru
+@@.soundcloud.com/player.swf?url=
+@@//promo.$popup,domain=bactistatin.com|gamexp.ru|iguides.ru|yandex.ru
 @@/adfox.$script,domain=alfabank.ru|mts.ru|rutube.ru
 @@/adfox/*$image,object,domain=alfabank.ru|rutube.ru
 @@/adriver.core.$domain=delfi.ua
@@ -79,6 +38,7 @@
 @@||ads.ertelecom.ru^$domain=citydom.ru
 @@||ads.rb.ru/video_banner.php$object-subrequest
 @@||ads.su^$~third-party
+@@||ads.tomtel.ru/adjs.$script
 @@||ads.vyborg-press.ru^$domain=vyborg-press.ru
 @@||adsbox.$domain=adsbox.com.ua|adsbox.ru
 @@||adv.d3.ru^$domain=adv.d3.ru
@@ -87,6 +47,8 @@
 @@||advert-technology.ru^$~third-party
 @@||advert.akado.ru/$domain=akado.ru
 @@||advert.kp.ru^$~object,~third-party
+@@||advert.starlightmedia.ua/crossdomain.xml
+@@||advert.starlightmedia.ua/ua/index/get-advert
 @@||advertising.yandex.$domain=adv.ya.ru
 @@||advertising.yandex.$~third-party
 @@||adwolf.ru^$script,subdocument,domain=muz.ru
@@ -94,12 +56,15 @@
 @@||alfabank.ru/*/baner_$~third-party
 @@||alluregame.ru/Content/*/Advert$~third-party
 @@||am.ru/shared/minify.php?$script,stylesheet,domain=am.ru
+@@||amazonaws.com/c.swf?path=http
 @@||atlant-m.in.ua/uploads/banners/$domain=atlant-m.in.ua
 @@||bash.im/webmaster|$elemhide
 @@||beeline.ru/ban/$domain=beeline.ru
 @@||beeline.ru/media/banners/$domain=beeline.ru
 @@||changecopyright.ru/bannersout/
 @@||com/banners/$domain=akprior.com|eurobank-ua.com|maingear.com
+@@||content.videoclick.ru/crossdomain.xml|$object-subrequest
+@@||content.videoclick.ru^*PlayerVideoClickPlugin$object-subrequest
 @@||efxi.ru/files/banner.gif|
 @@||empik.ua/openx/www/delivery/ajs.php?$domain=empik.ua
 @@||ertelecom.ru^*.swf?link1=$domain=domru.ru
@@ -119,19 +84,26 @@
 @@||madyar.net/baners/$domain=madyar.net
 @@||magnet.kiev.ua/www/$~object,domain=gagadget.com
 @@||map.cn.ua/media/*/tur/
+@@||mmi.bemobile.ua/lib/lib.js
 @@||my.south.rt.ru^$document
+@@||myradio24.com/informer.php
 @@||nic.ru/styles/advertising.css$domain=nic.ru
 @@||now.ru/minify/index.php?$script,domain=now.ru
+@@||now.ru/www/delivery/fc.php?
 @@||numbers.md/static/$script,domain=999.md
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=allhockey.ru
 @@||pgpru.com^$elemhide
 @@||pgpru.com^*/files?get=$domain=pgpru.com
 @@||photodoska.ru/content/dynamic/ads/$domain=photodoska.ru
+@@||plektan.com/ad/$image
 @@||porsche.com^*/teaser.js$domain=porsche.com
 @@||praca.by/files/adv/index-logos/$domain=praca.by
 @@||price.ru^$image,domain=tyndex.ru
 @@||prokazan.ru/sites/default/files/imagecache/tizer_$~third-party
+@@||promo.gamble2fun.com^$subdocument
 @@||promo.leadia.ru^$domain=zakonrf.info
+@@||promo.static.gamexp.ru^
+@@||propellerads.com/ajs.php?zoneid=$domain=goclips.tv|letitbit.net
 @@||renault.ru/_beta/banner_system/banner.php$domain=renault.ru
 @@||rf-mods.ru/uploads/banners/
 @@||rock-online.ru/thema/rock/images/baner_$~third-party
@@ -141,10 +113,11 @@
 @@||ru/banners/$domain=citydom.ru|furfurmag.ru|onlime.ru|webnames.ru|wildberries.ru
 @@||ruspor.ru^$~third-party
 @@||russia.ru/reklama/32x32.flv?link1=$object-subrequest,domain=vz.ru
-@@||s5o.ru/common/css/teaser.css?$domain=sports.ru
+@@||s5o.ru/common/css/teaser.css?
 @@||sarafannoeradio.org/images/stories/$domain=sarafannoeradio.org
 @@||semrush.com/m/scripts/reports/backlinks.$~third-party
 @@||sims3club.ru/images/bn/$~third-party
+@@||stat.pladform.ru^$domain=chatovod.ru
 @@||statcounter.com/counter/counter.js$~third-party
 @@||stopgame.ru/www/delivery/afr.php?*&target=_top&$subdocument,domain=stopgame.ru
 @@||stopgame.ru/www/delivery/ck.php?$subdocument,domain=stopgame.ru
@@ -161,9 +134,12 @@
 @@||tvnet.lv/o/servlet/view/banner/javascript/media?$script,domain=tvnet.lv
 @@||ukrainianiphone.com/baners/r/$~third-party
 @@||vdmsti.ru/var/bansrc/$image,domain=vedomosti.ru
+@@||video.*.user.madbanner.ru^$object-subrequest
+@@||video.begun.ru/flowplayer_begun_lib.swf|
 @@||video.gamer-info.com^*.mp4$domain=gamer-info.com
 @@||videoclick.ru/crossdomain.xml$domain=maxpark.com
 @@||videoclick.ru/JWPlayerVideoClickPlugin_$domain=maxpark.com
+@@||videonow.ru^*/ad_holder.
 @@||virpl.ru^*_advert.php$xmlhttprequest,domain=virpl.ru
 @@||vodyanoy.com.ua^*700_200.jpg|$domain=vodyanoy.com.ua
 @@||volnorez.com^*/liveplayer.swf?url=
