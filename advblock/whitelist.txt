@@ -182,6 +182,7 @@ skodarapidclub.ru#@#.headerad
 mts.ru#@#.wide-ad
 bestpersons.ru#@#.ya-partner_ads-up
 !#detect.bookmark
+@@#-page-peel/-text-ads.$image,domain=free-send.ru
 @@.png#$image,domain=evonews.org|planetaua.net
 @@/ads/banner.jpg?ad_height=$image,~third-party
 @@/advertise.js|$domain=raketa-tv.com
@@ -194,7 +195,7 @@ bestpersons.ru#@#.ya-partner_ads-up
 @@||forum.na-svyazi.ru^$elemhide
 @@||forum.zarulem.ws^$elemhide
 @@||gfhdkse.com^$script,domain=99px.ru
-@@||googlesyndication.com/pagead/$script,domain=blindage.org|evonews.org
+@@||googlesyndication.com/pagead/$script,domain=blindage.org|evonews.org|free-send.ru
 @@||kinomafia.com^$elemhide
 @@||liverail.com^*/admanager.swf|$domain=own3d.tv
 @@||luxup.ru^$script,domain=99px.ru
@@ -205,10 +206,8 @@ bestpersons.ru#@#.ya-partner_ads-up
 @@||recreativ.ru/rcode.$script,domain=all-episodes.com
 @@||ualinux.com/modules/mod_jpayday/js/advertisement.js$domain=ualinux.com
 @@||visitweb.com^$script,domain=99px.ru
-all-episodes.com##div[class^="bn_"]
 aqa.ru#@#div[id^="div-gpt-ad-"]
 debilizator.tv#@#.adsbygoogle
-evonews.org###l30c
 evonews.org#@##ad_bigbox
 evonews.org#@##ad_content
 evonews.org#@##ad_h3
@@ -216,11 +215,15 @@ evonews.org#@##AdvertPanel
 evonews.org#@##blog-ad
 evonews.org#@##imPopup
 evonews.org#@##rhs_ads
-evonews.org,planetaua.net#@##adsense
-internetsms.org##.fade[class^="modal"]
+evonews.org,free-send.ru,planetaua.net#@##adsense
+free-send.ru#@##ADSLOT_4
+free-send.ru#@##adsplace2
+free-send.ru#@##bottomMPU
+free-send.ru#@##GoogleAd
+free-send.ru#@##mainAd1
+free-send.ru#@##sideABlock
+free-send.ru#@##top_adv_728
 kinomafia.tv#@#div[id^="PC_Teaser_Block"]
-lost-alpha.com##.adb-dm
-planetaua.net###s9ee
 planetaua.net#@##ad_leader
 planetaua.net#@##Ads_BA_SKY
 planetaua.net#@##adspace-top
@@ -228,6 +231,13 @@ planetaua.net#@##adStrip
 planetaua.net#@##c-adzone
 planetaua.net#@##csTopAd
 planetaua.net#@##rightinfoad
+!+hide
+free-send.ru###c652
+evonews.org###l30c
+planetaua.net###s9ee
+lost-alpha.com##.adb-dm
+internetsms.org##.fade[class^="modal"]
+all-episodes.com##div[class^="bn_"]
 ! ph4.ru/ph4.info
 ! @@/https?://(?!(?:www\.)?(?:[SwampFoxVoyagB][LouisCKsAPI][Ragnar.Oldi][Cygnets.DF]))/$script,stylesheet,domain=laplandia.org|ph4.ru
 @@||laplandia.org^$script,stylesheet,domain=laplandia.org|ph4.info|ph4.ru
