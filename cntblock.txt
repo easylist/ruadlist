@@ -30,17 +30,6 @@
 ! Устранение бесконечной загрузки страниц
 @@||magna.ru/xml_out/?*://top.rbc.ru/$domain=top.rbc.ru
 !
-! = Блокировка поддоменов (счётчики, баннеры и подобное) ======================
-://advstat.
-://cnt.
-://count.
-://counter.
-://counting.
-://hit.$third-party
-://hits.$third-party
-://stat.$third-party,~stylesheet
-://top.$third-party,~stylesheet,~xmlhttprequest
-!
 ! = Общие фильтры =============================================================
 /1x1.gif
 /1x1.png
@@ -78,7 +67,11 @@
 /multishows/*/?rt=*&scr=$script
 /pagerank.$image
 /pagerank/*$image
-/piwik.$script
+/piwik-$domain=~piwik.org
+/piwik.js
+/piwik.php
+/piwik/*$domain=~piwik.org
+/piwikTracker.
 /pixel.php?
 /pr.php?ref=$third-party,image
 /quant.js
@@ -92,6 +85,16 @@
 /wp-slimstat/*
 /xgemius.js
 /xtcore.js
+://advstat.
+://cnt.
+://count.
+://counter.
+://counting.
+://hit.$third-party
+://hits.$third-party
+://piwik.$third-party
+://stat.$third-party,~stylesheet
+://top.$third-party,~stylesheet,~xmlhttprequest
 ;0x0;0;0;-;0|
 ^counter.$third-party,image
 ^name=atatracker^
