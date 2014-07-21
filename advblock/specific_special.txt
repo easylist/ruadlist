@@ -109,19 +109,10 @@ mail.ru##.shMenu2 > span > a[target="_blank"][href^="http://r.mail.ru/"]
 ||mradx.net/img/$object,subdocument
 ||tv.mail.ru/popup_banner/
 ! Одноклассники
-odnoklassniki.ru###bannerLoaderId
-odnoklassniki.ru###hook_Block_ForthColumnTopBanner
-odnoklassniki.ru###hook_Block_LeftColumnAdCustom
-odnoklassniki.ru###hook_Block_StickyBannerContainer
-odnoklassniki.ru###hook_SideBottomBaner_SideBottomBaner
-odnoklassniki.ru###hook_ViewportHeightAwareBanner_ViewportHeightAwareBannerInner
-odnoklassniki.ru##.sideadv
-odnoklassniki.ru##.topadv
-odnoklassniki.ru##div[id$="Adv"]
-||odnoklassniki.ru/res/*/promo/*/
-! Скрытие на сайте самих одноклассников предложения обновить браузер
+odnoklassniki.ru,ok.ru###hook_Block_ForthColumnTopBanner
+odnoklassniki.ru,ok.ru###hook_Block_StickyBannerContainer
 ! Очень однобокая реклама Хрома + очень часто просят удалить
-odnoklassniki.ru##.update-browser_container
+odnoklassniki.ru,ok.ru##.update-browser_container
 ! Блокировка ресурсов за пределами mail.ru
 //rs.mail.ru/b$third-party,domain=~km.ru
 ||banners.mail.ru^$third-party
@@ -129,8 +120,8 @@ odnoklassniki.ru##.update-browser_container
 ||torg.mail.ru/prtnr/$third-party
 ! Исключения
 ! Потенциальное решение проблемы с играми в Одноклассниках
-@@||mail.ru/adi/2174?$domain=odnoklassniki.ru
-@@||mail.ru/adi/2247?$domain=odnoklassniki.ru
+@@||mail.ru/adi/2174?$domain=odnoklassniki.ru|ok.ru
+@@||mail.ru/adi/2247?$domain=odnoklassniki.ru|ok.ru
 !
 ! ru.MSN.com
 ru.msn.com###bdp_ad_bgr
