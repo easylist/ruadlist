@@ -32,6 +32,7 @@
 @@||magna.ru/xml_out/?*://top.rbc.ru/$domain=top.rbc.ru
 !
 ! = Общие фильтры =============================================================
+.top100.$third-party
 /1x1.gif
 /1x1.png
 /_res/script/image.php?type=$image
@@ -81,8 +82,8 @@
 /readcounter.
 /stat.htm$subdocument
 /top/img.php?
-/top100.cnt?
-/top100/*$domain=~radiorecord.ru|~top100.rambler.ru
+/top100.$third-party
+/top100/*$third-party
 /top_counter.
 /tracker.dll?
 /ucounter.
@@ -192,7 +193,6 @@
 ||dw.com.com^
 ||elitestat.ru^$third-party
 ||emoment.net/cnt/
-||evangelie.ru/top/top100.
 ||evolvemediametrics.com^$third-party
 ||exelator.com^$third-party
 ||extreme-dm.com^$third-party
@@ -385,11 +385,6 @@
 ||top-fwz1.mail.ru^
 ||top.elec.ru/cnt?
 ||top10.vl.ru*/hh.hit^
-||top100.ezar.ru^$third-party
-||top100.ru/pack/
-||top100.rufox.ru^
-||top100.sec.ru/fscounter.cfm?
-||top100.vkirove.ru^$third-party
 ||top20.md/client/scripts/
 ||topshops.com.ua/images/buttons/
 ||toptj.com^$third-party
