@@ -23,7 +23,6 @@ spbit.ru###banners > a
 unionpeer.org###bg-banner
 delo.ua###bg-brander-promo
 topgame.su###bg_img
-pornolab.net###body_container > div:not(#page_container)
 tapochek.net###body_container > span
 overclockers.ru###box-link1
 overclockers.ru###box-link2
@@ -63,7 +62,6 @@ mega-tracker.net,nnm-club.me###mb_top_space
 mediapapa.org###mv
 vashdom.ru###out_banner
 yaplakal.com###p_row_0
-pornolab.net###page_container[class],#page_container[style]
 tapochek.net###page_header td[width="230"] + td
 overclockers.ru###pagecontent ~ [class^="decoblock"]
 programmersforum.ru###pagenav_menu + center
@@ -242,8 +240,7 @@ kinoafisha.ua##a.brandup
 joyreactor.cc##a[href*="/go.php?sid="]
 black-warez.ru##a[href*="/goto.php?file="]
 cwer.ws##a[href*="/goto/"] img
-pornolab.net##a[href*="/viewforum.php?f="]:not([href*="://pornolab.net/"]):not([href^="."]):not([href^="/"])
-pornolab.net##a[href*="/viewtopic.php?f="]:not([href*="://pornolab.net/"]):not([href^="."]):not([href^="/"])
+pornolab.net##a[href*="/view"][href*=".php?f="]:not([href*="://pornolab.net/"]):not([href^="."]):not([href^="/"])
 fastpic.ru,joyreactor.cc##a[href*="777-888.ru/"]
 ikinokz.net##a[href="http://hdserial.com"]
 cinemaxx.ru##a[href="http://imperia-casino.com/"]
