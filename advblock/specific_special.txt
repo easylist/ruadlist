@@ -24,12 +24,13 @@ goha.ru##.center-video iframe
 goha.ru##.rating ~ div
 ||bdoinfo.ru^$third-party,script
 ||ff14.ru^$third-party,script
+||forums.goha.ru/s$script
 ||forums.goha.ru^$script,domain=~forums.goha.ru|goha.ru
 ||goha.pro^$third-party,script
-||goha.ru/b$script
 ||goha.ru/imageshare/*/b1.jpg
-||goha.ru^*/data1.$script
-||goha.ru^*_cache/$script
+||goha.ru^$subdocument
+||goha.ru^*/dota2.$script
+||goha.ru^*_kosher/$script
 ||goharu.com^$third-party,script
 ||grind.fm^$third-party,script
 ||lineage2.ru^$third-party,script
@@ -38,6 +39,7 @@ goha.ru##.rating ~ div
 ||media08.goha.ru^
 ||medin.goha.ru^
 ||pub.goha.ru^$object
+||trumedia.goha.ru^
 ||wow.ru^$third-party,script
 !
 ! Letitbit
