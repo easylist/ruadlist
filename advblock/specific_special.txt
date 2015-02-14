@@ -14,13 +14,17 @@ gismeteo.ru,gismeteo.ua##.side__i
 ||gismeteo.*/rian.html|
 !
 ! Goha.ru
-.goha.ru%2F$domain=goha.ru
+goha.ru###column-right > .cr-w
 goha.ru###column-right > div[style*="width"]
-goha.ru###full-brand-footer > div:not(#page-wrapper)
-goha.ru##.center-video > div[class]
-goha.ru##.padding > div[style]
+goha.ru###column-right > div[style^="margin"][style*="px"]
+goha.ru###column-right a img[src*=".pub.goha.ru/"]
+goha.ru##.center-video > div:not(#video-window):not(#video-slider)
+goha.ru##.center-video iframe
+.goha.ru%2F$domain=goha.ru
+goha.ru##.rating ~ div
 ||bdoinfo.ru^$third-party,script
 ||ff14.ru^$third-party,script
+||forums.goha.ru^$script,domain=~forums.goha.ru|goha.ru
 ||goha.pro^$third-party,script
 ||goha.ru/b$script
 ||goha.ru/imageshare/*/b1.jpg
