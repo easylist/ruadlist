@@ -14,20 +14,24 @@ gismeteo.ru,gismeteo.ua##.side__i
 ||gismeteo.*/rian.html|
 !
 ! Goha.ru
-goha.ru###column-right > .cr-w
+goha.ru###column-right > div:not([class="vote"]):not([class="tags"]):not(:first-of-type)
 goha.ru###column-right > div[style*="width"]
-goha.ru###column-right > div[style^="margin"][style*="px"]
-goha.ru###column-right a img[src*=".pub.goha.ru/"]
+goha.ru###column-right a img
+goha.ru###column-right iframe
+goha.ru###full-brand-footer > div[style*=" width"]
+&geodata=$domain=goha.ru
+goha.ru##.center-video > :not(div)
 goha.ru##.center-video > div:not(#video-window):not(#video-slider)
 goha.ru##.center-video iframe
-.goha.ru%2F$domain=goha.ru
 goha.ru##.rating ~ div
 ||bdoinfo.ru^$third-party,script
 ||ff14.ru^$third-party,script
 ||forums.goha.ru/s$script
 ||forums.goha.ru^$script,domain=~forums.goha.ru|goha.ru
 ||goha.pro^$third-party,script
+||goha.ru/c$script,domain=~forums.goha.ru
 ||goha.ru/imageshare/*/b1.jpg
+||goha.ru/t$script
 ||goha.ru^$subdocument
 ||goha.ru^*/dota2.$script
 ||goha.ru^*_kosher/$script
