@@ -1,12 +1,7 @@
 ! Правила для отдельных сайтов с разношерстными правилами или групп сайтов
 !
 ! GameBomb
-@@||gamebomb.ru/files/galleries/*.jpg|$object-subrequest,domain=gamebomb.ru
-@@||gamebomb.ru/files/videos/flv/$object-subrequest,domain=gamebomb.ru
-@@||gamebomb.ru/files/videos/mp4/$object-subrequest,domain=gamebomb.ru
-@@||gamebomb.ru/images/player/logo.png|$domain=gamebomb.ru
-@@||gamebomb.ru/js/player/*.swf|$object,object-subrequest,domain=gamebomb.ru
-||gamebomb.ru^$object-subrequest,domain=gamebomb.ru
+/\/[^\.]+$/$object-subrequest,domain=gamebomb.ru
 !
 ! GISMeteo domains
 gismeteo.kz###ad-kp
