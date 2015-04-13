@@ -1,10 +1,12 @@
 ! Правила для отдельных сайтов с разношерстными правилами или групп сайтов
 !
 ! GameBomb
-/\/[^\.]+$/$object-subrequest,domain=gamebomb.ru
-/https?://gamebomb\.ru\/((?!(images|css/skins|files/galleries|js/player)/)/|(files(/galleries)?|images(?!/((button|header|searchbar|barfiller)_bg|logo)\.(png|gif))|js/player(?!(/flowplayer\.(analytics-3\.2\.9|commercial-3\.2\.7|controls-3\.2\.5|pseudostreaming-3\.2\.7|sharing-3\.2\.1)\.swf)))/[^/]+$)/$image,object
+gamebomb.ru##.container-medium[style]
 gamebomb.ru##.grid-100p-300-rc > :not([class="container-medium"]):not([class="container-medium container-side"]):not([class="container"])
+gamebomb.ru##.grid-100p-300-rc embed
 gamebomb.ru##.grid-100p-300-rc object
+/\/[^\.]+$/$object-subrequest,domain=gamebomb.ru
+/https?://gamebomb\.ru\/((?!(images|css/skins|files/galleries|js/player)/)/|(files(/galleries)?|images(?!/((button|header|searchbar|barfiller)_bg|logo)\.(png|gif))|js|js/player(?!(/flowplayer\.(analytics-3\.2\.9|commercial-3\.2\.7|controls-3\.2\.5|pseudostreaming-3\.2\.7|sharing-3\.2\.1)\.swf)))/[^/]+$)/$image,object
 gamebomb.ru##a[href^="http://1l-go.mail.ru/r/"]
 gamebomb.ru##a[href^="http://warthunder.ru/ru/register-"]
 ||gamebomb.ru/css/$object
