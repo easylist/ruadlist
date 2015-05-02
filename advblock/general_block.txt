@@ -41,7 +41,7 @@
 /?t=*&noadult=1&pid=$script
 /?t=b&blockids=$script
 /?t=rot&pid=$script
-/^[a-z]+://[^/]+/[a-z0-9]{15,}$/$script
+/^https?://[^/]+/[a-z0-9]{15,}$/$script
 /abnl/?ucozads^
 /ad_click/*$object
 /adfox/*$image,object,script,subdocument
