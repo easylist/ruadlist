@@ -47,6 +47,8 @@
 @@||adnxs.com/ttj?$script,domain=msn.com
 @@||adocean.pl/*/key=uru/$script,domain=delfi.lv
 @@||adocean.pl/files/js/ado.js|$domain=delfi.lv
+@@||adrcdn.com/ads/*.xml|$object-subrequest,domain=smotri.com
+@@||adrcdn.com/crossdomain.xml$domain=smotri.com
 @@||adriver.ru/cgi-bin/click.cgi?$subdocument,domain=surfingbird.com|surfingbird.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru
 @@||adriver.ru/cgi-bin/rle.cgi?$domain=transaero.ru
@@ -81,8 +83,8 @@
 @@||bash.im/webmaster|$elemhide
 @@||beeline.ru/ban/$domain=beeline.ru
 @@||beeline.ru/media/banners/$domain=beeline.ru
-@@||begun.ru/video.jsp?$domain=smotri.com|vidin.ru
-@@||begun.ru/vpaid_lib.swf|$domain=smotri.com|vidin.ru
+@@||begun.ru/video.jsp?$domain=vidin.ru
+@@||begun.ru/vpaid_lib.swf|$domain=vidin.ru
 @@||bestru.ru*/advertisements/$domain=bestru.ru
 @@||bestru.ru^*/advert_$domain=bestru.ru
 @@||changecopyright.ru/bannersout/
@@ -96,6 +98,9 @@
 @@||foodzy.ru/i/b/$image,domain=foodzy.ru
 @@||games-tv.ru/openx/www/delivery/ajs.php?$script,domain=games-tv.ru
 @@||gde-luchshe.ru/widget/$domain=2ip.ru
+@@||gpm-digital.com/crossdomain.xml$domain=smotri.com
+@@||gpm-digital.com^*/getCode?$object-subrequest,domain=smotri.com
+@@||gpm-digital.com^*/getCodeTest?$object-subrequest,domain=smotri.com
 @@||igromania.ru/bitrix/templates/igromania/js/openxtag.js?$domain=igromania.ru
 @@||igromania.ru/upload/iblock/*/baner_$image,domain=igromania.ru
 @@||imgsmail.ru^*/btn/adv/$domain=mail.ru
@@ -140,7 +145,6 @@
 @@||promo.leadia.ru^$domain=zakonrf.info
 @@||promo.static.gamexp.ru^
 @@||propellerads.com/ajs.php?zoneid=$domain=goclips.tv|letitbit.net
-@@||public.advarkads.com^$domain=smotri.com
 @@||rad.msn.com^$script,domain=msn.com
 @@||renault.ru/_beta/banner_system/banner.php$domain=renault.ru
 @@||rf-mods.ru/uploads/banners/
@@ -357,13 +361,10 @@ internetsms.org##.fade[class^="modal"]
 @@||adv.magna.ru/?id=*&rid=$script,domain=kp.ru|newstube.ru|soccer.ru
 @@||advertpay.net/code?$script,domain=dic.academic.ru
 @@||bw.pronto.ru/brick$script,domain=irr.ru
-@@||content.relax.ru^$script,domain=smotri.com
 @@||kavanga.ru/exp?$script,domain=baskino.com|biysk24.ru|kulturologia.ru|lokomotiv.info|russianfood.com|verstov.info
-@@||medialand.ru/code?*&oin=0&$script,domain=qip.ru|rbc.ru|smotri.com|utro.ru
-@@||medialand.ru/inline_redirect.$script,domain=smotri.com
+@@||medialand.ru/code?*&oin=0&$script,domain=qip.ru|rbc.ru|utro.ru
 @@||medialand.ru/t/$script,domain=qip.ru
 @@||medialand.ru/test?$script,domain=qip.ru|rbc.ru
-@@||medialand.ru/webtoolkit.$script,domain=smotri.com
 @@||medialand.ru^*/base.js?$script,domain=rbc.ru
 @@||medialand.ru^*/inline.js?$script,domain=rbc.ru
 @@||medialand.ru^*/magna.js$domain=glav.su|kp.ru
