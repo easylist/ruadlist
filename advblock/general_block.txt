@@ -42,7 +42,7 @@
 /?t=b&blockids=$script
 /?t=rot&pid=$script
 /^https?://[^/]+/[a-z0-9]{15,}$/$script
-/^https?://v\.[a-z]+\.(?:pw|biz)/v/[a-zA-Z0-9_-]{5,35}$/$third-party,script
+/^https?://[a-z]\.[a-z]+\.(?:pw|biz)/v/[a-zA-Z0-9_-]{5,35}$/$third-party,script
 /abnl/?ucozads^
 /ad_click/*$object
 /adfox/*$image,object,script,subdocument
