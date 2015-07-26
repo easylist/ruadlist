@@ -8,7 +8,7 @@
 @@/adfox.reload_code.$domain=rg.ru
 @@/adfox/*$image,object,domain=alfabank.ru|megafon.ru|sovsport.ru
 @@/adline.$domain=adline.by|adline.reformal.ru
-@@/adriver.core.$domain=delfi.ua|iguides.ru
+@@/adriver.core.$script,domain=delfi.ua|iguides.ru|wikimart.ru
 @@/adsense/*$domain=winxclub.com
 @@/adservice.$domain=adservice.kz
 @@/adstyle.$domain=adstyle.com.ua
@@ -49,8 +49,12 @@
 @@||adocean.pl/files/js/ado.js|$domain=delfi.lv
 @@||adrcdn.com/ads/*.xml|$object-subrequest,domain=smotri.com|video.reset.ru
 @@||adriver.ru/cgi-bin/click.cgi?$subdocument,domain=surfingbird.com|surfingbird.ru
+@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=wikimart.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru
+@@||adriver.ru/cgi-bin/merle.cgi?$script,domain=wikimart.ru
 @@||adriver.ru/cgi-bin/rle.cgi?$domain=transaero.ru
+@@||adriver.ru/images/$image,script,domain=wikimart.ru
+@@||adriver.ru/plugins/$script,domain=wikimart.ru
 @@||ads.rb.ru/video_banner.php$object-subrequest
 @@||ads.su^$~third-party
 @@||ads.tomtel.ru/adjs.$script
@@ -366,7 +370,7 @@ internetsms.org##.fade[class^="modal"]
 @@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|aif.ru|cnews.ru|ex.ua|forum.tatfish.com|grandars.ru|klops.ru|meta.ua|oceanvideo.ru|ozon.ru|ria.ru|rian.ru|thg.ru|vz.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&target=blank&tail$script,domain=eg.ru
 @@||adriver.ru/extender.js|$script,domain=vz.ru
-@@||adriver.ru/images/*/0/script.js?$script,domain=afisha.ru|aif.ru|cnews.ru|eg.ru|ex.ua|forum.tatfish.com|grandars.ru|klops.ru|meta.ua|mobile-review.com|ozon.ru|ria.ru|rian.ru|thg.ru|vz.ru
+@@||adriver.ru/images/$script,domain=afisha.ru|aif.ru|cnews.ru|eg.ru|ex.ua|forum.tatfish.com|grandars.ru|klops.ru|meta.ua|mobile-review.com|ozon.ru|ria.ru|rian.ru|thg.ru|vz.ru
 @@||adspynet.com/code?*&oin=0&$script,domain=fishki.net
 @@||adspynet.com/test?*&oin=0$script,domain=fishki.net
 @@||adv.magna.ru/?id=$script,domain=argumenti.ru|glav.su|kp.ru|newstube.ru|soccer.ru
