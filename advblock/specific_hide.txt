@@ -603,10 +603,11 @@ booksgid.com##a[target="_blank"][href*="besthosting.ua/"]
 glavpost.com##article div[style*="#EFEFEF"]
 allboxing.ru##article ~ div[style*="height"]
 magtimes.info##aside img[src^="http://magtimes.info/wp-content/uploads/"]
+fastpic.ru##body > #mainContainer > :not(table), body > #content > :not(#picContainer)
 kino-live.org##body > [id*="-line"]
 dota2.ru,hdkinoklub.ru##body > a[target="_blank"]
 filebase.ws##body > div[align="center"][style*="height:"]
-fastpic.ru##body > div[id]:not(#mainContainer):not(#content), body > div:not([id]), body > :not(div)
+fastpic.ru##body > div[id]:not(#mainContainer):not(#content), body > div:not([id]), body > :not(div):not(img)
 zakon.kz##body > div[onclick^="window.open"]
 thailandproperty.tv##body > div[style*="1240px"]
 film.ru##body > div[style^="height:"]
