@@ -294,6 +294,7 @@ anilost.com,baibako.tv,capricornus.cc,hdrezka.tv,life-film.ru,звонки.он�
 anilost.com,baibako.tv,capricornus.cc,hdrezka.tv,life-film.ru,звонки.онлайн#@#.text_ad
 anilost.com,baibako.tv,capricornus.cc,hdrezka.tv,life-film.ru,звонки.онлайн#@#.text_ads
 @@#$image,domain=adultmult.tv|free-send.ru|ivbt.ru|lostfilmonline.tv|planetaua.net
+@@/^https?://ad\.3dnews\.ru/[^/]*/ajs.php\?zoneid=/$script,domain=3dnews.ru
 @@/ads.js|$script,domain=kinomoov.net
 @@/advert.$domain=anistar.ru|bluesystem.ru|miuipro.ru|pesikot.org|piter.tv|polismed.ru|qrz.ru
 @@/advert.js|$script,domain=prisnilos.su|tree.tv
@@ -306,7 +307,7 @@ anilost.com,baibako.tv,capricornus.cc,hdrezka.tv,life-film.ru,звонки.он�
 @@/getCodeTest?$object-subrequest,domain=life.ru|smotri.com|video.reset.ru
 @@/index.php/adhandler/|$subdocument,domain=tapochek.net
 @@||37.1.207.27^$subdocument,domain=adultmult.tv
-@@||3dnews.ru/*/ajs.$script,domain=3dnews.ru
+@@||3dnews.ru/www/delivery/ajs.*&slot=single&$script,domain=3dnews.ru
 @@||3dnews.ru/www/images/$image,domain=3dnews.ru
 @@||adfox.ru/crossdomain.xml$domain=carambatv.ru|life.ru|molodejj.tv|out.pladform.ru
 @@||adfox.yandex.ru^$object-subrequest,domain=embed.life.ru
