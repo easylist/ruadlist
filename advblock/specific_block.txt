@@ -11,7 +11,7 @@ $third-party,script,domain=hentaichan.ru|nude-moon.com
 //195.82.146.52^$object,subdocument,domain=rutracker.org
 //94.198.53.135^$object,subdocument,domain=rutracker.org
 //www.vsevam.ru^$object
-/^http://mix\.dotua\.org/player\.js\?d=.{100,}/$script
+/^http://mix\.dotua\.org/player\.js\?d=(.{1,91}|.{93,})$/$script
 /ABDContent/*$~image,domain=f-picture.net|radikal.ru
 /ad*.tutu.ru^*_*.php|
 /banner_fullscreen.js|$domain=namba.kg|namba.tj
@@ -367,6 +367,7 @@ _advideo/$object-subrequest,domain=megogo.net
 ||freezpic.ru^*/code.js
 ||frost.noob-club.ru^
 ||frostbone.playground.ru^
+||fs.to/jsplayer.aspx?
 ||fsell.biz/images/$object
 ||fu.gk43.ru/media/
 ||fullgames.ru^$object
