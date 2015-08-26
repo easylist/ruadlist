@@ -10,7 +10,7 @@
 @@/adfox.reload_code.$domain=rg.ru
 @@/adfox/*$image,object,domain=alfabank.ru|megafon.ru|sovsport.ru
 @@/adline.$domain=adline.by|adline.reformal.ru
-@@/adriver.core.$script,domain=delfi.ua|iguides.ru|wikimart.ru
+@@/adriver.core.$script,domain=delfi.ua|iguides.ru|tvigle.ru|wikimart.ru
 @@/adsense/*$domain=winxclub.com
 @@/adservice.$domain=adservice.kz
 @@/adstyle.$domain=adstyle.com.ua
@@ -54,10 +54,10 @@
 @@||adriver.ru/cgi-bin/click.cgi?$subdocument,domain=surfingbird.com|surfingbird.ru
 @@||adriver.ru/cgi-bin/erle.cgi?$script,domain=ria.ru|wikimart.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&sz=$object-subrequest,domain=ivi.ru
-@@||adriver.ru/cgi-bin/merle.cgi?$script,domain=ria.ru|wikimart.ru
+@@||adriver.ru/cgi-bin/merle.cgi?$script,domain=ria.ru|tvigle.ru|wikimart.ru
 @@||adriver.ru/cgi-bin/rle.cgi?$domain=transaero.ru
-@@||adriver.ru/images/$image,script,domain=ria.ru|wikimart.ru
-@@||adriver.ru/plugins/$script,domain=ria.ru|wikimart.ru
+@@||adriver.ru/images/$image,script,domain=ria.ru|tvigle.ru|wikimart.ru
+@@||adriver.ru/plugins/$script,domain=ria.ru|tvigle.ru|wikimart.ru
 @@||ads.rb.ru/video_banner.php$object-subrequest
 @@||ads.su^$~third-party
 @@||ads.tomtel.ru/adjs.$script
@@ -82,6 +82,8 @@
 @@||am.ru/shared/minify.php?$script,stylesheet,domain=am.ru
 @@||amazonaws.com/c.swf?path=http
 @@||an.yandex.ru/crossdomain.xml
+@@||an.yandex.ru/resource/context_static_$script,domain=tvigle.ru
+@@||an.yandex.ru/system/context.js|$domain=tvigle.ru
 @@||an.yandex.ru/vcset/139995?*&client_type=flash
 @@||asg.vidigital.ru^$domain=ivi.ru|rutube.ru
 @@||astromeridian.ru/assets/images/reklama/$image,domain=astromeridian.ru
