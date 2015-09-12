@@ -7,12 +7,10 @@ free-torrent.org,free-torrents.org,game-torrent.info##a[href^="."] img
 free-torrent.org,free-torrents.org,game-torrent.info##a[href^="p"]:not([href^="profile.php?mode="]):not([href^="portal.php?mode="]):not([href^="posting.php?mode="]) img
 !
 ! FS.to
-brb.to,cxz.to,fs.to##.b-player-popup__content > div:not([class^="b-"]):not([class^="l-"]):not([class^="m-"])
 brb.to,cxz.to,fs.to##.l-body-branding-link
-brb.to,cxz.to,fs.to##.l-content > div:not([class^="b-"]):not([class^="l-"]):not([class^="m-"])
-brb.to,cxz.to,fs.to##.l-content-inner > div:not([class^="b-"]):not([class^="l-"]):not([class^="m-"])
-brb.to,cxz.to,fs.to##.l-tab-item-content > div:not([class^="b-"]):not([class^="l-"]):not([class^="m-"])
+brb.to,cxz.to,fs.to##.m-player-movie ~ div[class]
 @@/view_iframe/*$elemhide,domain=brb.to|cxz.to|fs.to
+brb.to,cxz.to,fs.to##div[id]:not([class]) + div:not([id]):not(.main):not([class^="b-"]):not([class^="l-"]):not([class^="m-"])
 brb.to,cxz.to,fs.to##div[id^="admixer_async_"]
 !
 ! GISMeteo domains
