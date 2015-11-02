@@ -1,15 +1,12 @@
 ! Правила для отдельных сайтов с разношерстными правилами или групп сайтов
 !
 ! 4PDA
-4pda.ru###main > * > :not(#twocolumns):not(.device-frame):not(.more-info):not(.product-list):not(.slider-news):not(.user-profile-list)
 4pda.ru###mediabanner
 4pda.ru##.ad-box
-4pda.ru##.device-frame a[target], .more-info:not(section) a[target], .product-list a[target], .slider-news a[target], .user-profile-list a[target]:not([href^="http://4pda.ru/devdb/"])
-4pda.ru##.device-frame:not(div), .more-info:not(div):not(section), .product-list:not(ul), .slider-news:not(div), .user-profile-list:not(ul)
 4pda.ru##.promo-box
 4pda.ru##.side-box:first-child
+4pda.ru##a[class][href*=".ubi.com"]
 4pda.ru##img[src$="/none.gif"]
-4pda.ru##section.more-info > :not(#content):not(#sidebar) a[target]
 !
 ! Free-Torrents
 free-torrent.org,free-torrents.org,game-torrent.info##a[href*="/forum/"]:not([href$="/forum/"]):not([href$="/forum/portal.php"]):not([href*="/forum/privmsg.php?mode="]) img
