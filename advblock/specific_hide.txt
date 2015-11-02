@@ -390,9 +390,8 @@ yaplakal.com##.darkrow1 + table[id]:not([id^="p_row_"])
 forums.overclockers.ru##.decoblock
 forums.overclockers.ru##.decoblock-content
 mediametrics.ru##.deposit-btn
-4pda.ru##.device-frame a[href*="/go/"], .more-info a[href*="/go/"], .product-list a[href*="/go/"], .slider-news a[href*="/go/"], .user-profile-list a[href*="/go/"]
-4pda.ru##.device-frame a[target], .more-info a[target], .product-list a[target], .slider-news a[target], .user-profile-list a[target]:not([href^="http://4pda.ru/devdb/"])
-4pda.ru##.device-frame:not(div), .more-info:not(div), .product-list:not(ul), .slider-news:not(div), .user-profile-list:not(ul)
+4pda.ru##.device-frame a[target], .more-info:not(section) a[target], .product-list a[target], .slider-news a[target], .user-profile-list a[target]:not([href^="http://4pda.ru/devdb/"])
+4pda.ru##.device-frame:not(div), .more-info:not(div):not(section), .product-list:not(ul), .slider-news:not(div), .user-profile-list:not(ul)
 dreamprogs.net##.dlogo td[align="center"]
 rl-team.net##.download_blue_yellow
 pirat.ca##.download_button
