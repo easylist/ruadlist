@@ -41,7 +41,7 @@
 /?t=*&noadult=1&pid=$script
 /?t=b&blockids=$script
 /?t=rot&pid=$script
-/^https?://([^.]+\.)+[a-z]+\.(?:pw|biz|ru)/v(/|\?[a-z0-9_-]+=)[a-z0-9_-]{5,35}\??$/$third-party,script
+/^https?://([^.]+\.)+[a-z]+\.(?:biz|ru)/[a-z](/|\?[a-z0-9_-]+=)[a-z0-9_-]{5,35}\[?&]?$/$third-party,script
 /^https?://[^/]+/[a-z0-9]{15,}(\?hope=.*)?$/$script
 /abnl/?ucozads^
 /ad_click/*$object
@@ -305,7 +305,6 @@ _tizers.
 ||info/vk2/
 ||madbanner.$~object-subrequest
 ||net/banners/
-||pw/v^$third-party,script
 ||ru/ads/
 ||ru/ban/
 ||ru/banner.
