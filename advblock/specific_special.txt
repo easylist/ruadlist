@@ -1,15 +1,5 @@
 ! Правила для отдельных сайтов с разношерстными правилами или групп сайтов
 !
-! 4PDA
-4pda.ru###dw-wrapper
-4pda.ru###mediabanner
-4pda.ru##.ad-box
-4pda.ru##.promo-box
-4pda.ru##.side-box:first-child
-4pda.ru##a[class][itemprop]
-4pda.ru##a[href^="http://4pda.ru/pages/"]:not([href^="http://4pda.ru/pages/go/?u=http"])
-4pda.ru##img[src$="/none.gif"]
-!
 ! Free-Torrents
 free-torrent.org,free-torrents.org,game-torrent.info##.post_body style ~ :not([class="attach bordered med"]):not(#thx-block):not(#sim)
 free-torrent.org,free-torrents.org,game-torrent.info##A :not(img):not(strong):not(b)
