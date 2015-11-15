@@ -41,7 +41,7 @@
 /?t=*&noadult=1&pid=$script
 /?t=b&blockids=$script
 /?t=rot&pid=$script
-/^https?://([^.]+\.)+[a-z]+\.(?:biz|ru|space)/[a-z]/[-a-z0-9_?&=]{5,45}$/$third-party,script
+/^https?://([^.]+\.)+[a-z]+\.(?:biz|ru|space)/[a-z](/|\?bid=)[-a-z0-9_?&=]{5,45}$/$third-party,script
 /^https?://[^/]+/[a-z0-9]{15,}(\?hope=.*)?$/$script
 /abnl/?ucozads^
 /ad_click/*$object
