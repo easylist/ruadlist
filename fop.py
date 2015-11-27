@@ -56,7 +56,7 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt", "antinuha.txt",
           "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
-KNOWNOPTIONS = ("collapse", "document", "elemhide",
+KNOWNOPTIONS = ("collapse", "document", "elemhide", "generichide", "genericblock",
                 "font", "image", "match-case", "object", "media",
                 "object-subrequest", "other", "popup", "script",
                 "stylesheet", "subdocument", "third-party", "xmlhttprequest")
