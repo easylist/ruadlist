@@ -325,7 +325,6 @@ baibako.tv,capricornus.cc,hdcdn.nl,life-film.ru,megogo.net,звонки.онла
 @@/advertise.js|$domain=raketa-tv.com
 @@/advertisement.js$domain=evrl.to|kinomoov.net|megogo.net|online.ua|only-paper.ru|raketa-tv.com|seriatv.ru|torrent-tv.ru|uakino.net|ualinux.com|теплорасчет.рф
 @@/advertisement_$script,domain=pic4you.ru
-@@/advertising.js$domain=cnews.ru
 @@/advertisment.js|$domain=allserial.tv|turbobitit.org|vidhost12.org
 @@/banner.jpg?ad_height=300&adzone=100&adserver=1&adType=32|$image
 @@/crossdomain.xml|$domain=megogo.net|smotri.com|video.reset.ru
@@ -357,7 +356,7 @@ baibako.tv,capricornus.cc,hdcdn.nl,life-film.ru,megogo.net,звонки.онла
 @@||am15.net/bn$script,domain=tv-serial.org
 @@||anistar.ru/adv/$domain=anistar.ru
 @@||anistar.ru^$generichide
-@@||cnews.ru^$elemhide
+@@||cnews.ru^$generichide
 @@||dotua.org/js/ads.js|$script,domain=fs.to
 @@||example.com^$image,subdocument,domain=izzylaif.com
 @@||fileplaneta.com^$generichide
@@ -410,6 +409,7 @@ lost-alpha.com##.adb-dm
 anistar.ru##.adsbygoogle
 internetsms.org##.fade[class^="modal"]
 fileplaneta.com,planetaua.net##div[id^="MarketGid"]
+cnews.ru##div[id^="div-gpt-ad-"]
 ! - Против "бесконечной загрузки страниц" -------------------------------------
 !#infiload.bookmark
 @@/adfox.asyn.code.$script,domain=interfax.ru
@@ -419,10 +419,10 @@ fileplaneta.com,planetaua.net##div[id^="MarketGid"]
 @@/prepareCode?*&dl=$script,domain=aif.ru|diary.ru|irr.ru|kakprosto.ru|lenta.ru|motor.ru|rosbalt.ru|rusplt.ru|sobesednik.ru|soccer.ru|sport-express.ru|vesti.ru
 @@/prepareCode?*&pct=a&$script,domain=7days.ru|championat.com|now.ru
 @@/prepareCode?*&puid1=|$domain=rg.ru
-@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|aif.ru|cnews.ru|ex.ua|fileplaneta.com|forum.tatfish.com|grandars.ru|klops.ru|meta.ua|oceanvideo.ru|ozon.ru|thg.ru|vz.ru
+@@||adriver.ru/cgi-bin/erle.cgi?$script,domain=afisha.ru|aif.ru|ex.ua|fileplaneta.com|forum.tatfish.com|grandars.ru|klops.ru|meta.ua|oceanvideo.ru|ozon.ru|thg.ru|vz.ru
 @@||adriver.ru/cgi-bin/erle.cgi?*&target=blank&tail$script,domain=eg.ru
 @@||adriver.ru/extender.js|$script,domain=vz.ru
-@@||adriver.ru/images/$script,domain=afisha.ru|aif.ru|cnews.ru|eg.ru|ex.ua|forum.tatfish.com|grandars.ru|klops.ru|meta.ua|mobile-review.com|ozon.ru|thg.ru|vz.ru
+@@||adriver.ru/images/$script,domain=afisha.ru|aif.ru|eg.ru|ex.ua|forum.tatfish.com|grandars.ru|klops.ru|meta.ua|mobile-review.com|ozon.ru|thg.ru|vz.ru
 @@||adspynet.com/code?*&oin=0&$script,domain=fishki.net
 @@||adspynet.com/test?*&oin=0$script,domain=fishki.net
 @@||adv.magna.ru/?id=$script,domain=aftershock.su|argumenti.ru|glav.su|kp.ru|newstube.ru|sobesednik.ru|soccer.ru
