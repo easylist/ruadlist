@@ -337,7 +337,6 @@ baibako.tv,capricornus.cc,hdcdn.nl,life-film.ru,megogo.net,звонки.онла
 @@||37.1.207.27^$subdocument,domain=adultmult.tv
 @@||3dnews.ru/www/delivery/ajs.*&slot=single&$script,domain=3dnews.ru
 @@||3dnews.ru/www/images/$image,domain=3dnews.ru
-@@||ad.admitad.com/3rd-party/$domain=adultmult.tv
 @@||ad.mail.ru/vast/$object-subrequest,domain=rutube.ru
 @@||adfox.ru/*/event?$object-subrequest,domain=megogo.net
 @@||adfox.ru/*/getCode?$object-subrequest,domain=megogo.net
@@ -349,7 +348,7 @@ baibako.tv,capricornus.cc,hdcdn.nl,life-film.ru,megogo.net,звонки.онла
 @@||admixer.net/getresponse.js?$script,domain=tree.tv
 @@||admixer.net/scriptlib/$script,domain=tree.tv
 @@||adrcdn.com/ads/*/megogo.xml$object-subrequest,domain=megogo.net
-@@||adultmult.tv^$elemhide,script,domain=adultmult.tv
+@@||adultmult.tv^$genericblock,generichide
 @@||advert.popunder.ru/banners/advert.php?type=banner_img|$image,subdocument,domain=rutracker.org.ua
 @@||alipromo.com/rotator/auto/$script,domain=trackitonline.ru
 @@||am10.ru/code.$domain=tv-serial.org
@@ -366,7 +365,7 @@ baibako.tv,capricornus.cc,hdcdn.nl,life-film.ru,megogo.net,звонки.онла
 @@||gfhdkse.com^$script,domain=99px.ru
 @@||googlesyndication.com/pagead/images/$domain=spruto.tv
 @@||googlesyndication.com/pagead/js/*/show_ads_impl.js$domain=adultmult.tv|free-send.ru|izzylaif.com|modfiles.ru|osettlers.com|trackitonline.ru
-@@||googlesyndication.com/pagead/js/adsbygoogle.js$domain=adultmult.ru|adultmult.tv|free-send.ru|modfiles.ru|osettlers.com
+@@||googlesyndication.com/pagead/js/adsbygoogle.js$domain=adultmult.tv|free-send.ru|modfiles.ru|osettlers.com
 @@||googlesyndication.com/pagead/show_ads.js$domain=adultmult.tv|izzylaif.com|trackitonline.ru
 @@||gpm-digital.com^*/getCode?$object-subrequest,domain=rutube.ru
 @@||ivbt.ru^$elemhide
@@ -379,7 +378,6 @@ baibako.tv,capricornus.cc,hdcdn.nl,life-film.ru,megogo.net,звонки.онла
 @@||moonwalk.cc^$script,domain=moonwalk.cc
 @@||moviki.ru/embed/$elemhide
 @@||mtrcss.com^$script,xmlhttprequest,domain=tree.tv
-@@||multonline.ru^$script,domain=adultmult.tv
 @@||mxpopad.com^$script,domain=tree.tv
 @@||olegon.ru^$elemhide
 @@||online.ua/adsence.js|$domain=online.ua
@@ -404,12 +402,8 @@ baibako.tv,capricornus.cc,hdcdn.nl,life-film.ru,megogo.net,звонки.онла
 kinomafia.tv#@#div[id^="PC_Teaser_Block"]
 aqa.ru#@#div[id^="div-gpt-ad-"]
 !+hide
-fileplaneta.com###winvideoPlayer
 lost-alpha.com##.adb-dm
-anistar.ru##.adsbygoogle
 internetsms.org##.fade[class^="modal"]
-fileplaneta.com,planetaua.net##div[id^="MarketGid"]
-cnews.ru##div[id^="div-gpt-ad-"]
 ! - Против "бесконечной загрузки страниц" -------------------------------------
 !#infiload.bookmark
 @@/adfox.asyn.code.$script,domain=interfax.ru
