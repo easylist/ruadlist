@@ -4,58 +4,14 @@
 ! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
-! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
-! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
-! Целью проекта является блокировка всего популярного и совершенно не нужного,
-! а именно линеечек, юзербаров, мерцающих картинок, кнопочек и прочего мусора.
-! Подписка предназначена для тех, кто не желает всего этого видеть и
-! НЕ РЕКОМЕНДУЕТСЯ к установке по умолчанию.
-! Включает фрагменты менее агрессивной подписки Fanboy's Annoyance List (FAL)
+! Данная версия включает в себя весь список фильтров Fanboy's Annoyance List.
 ! FAL License: http://creativecommons.org/licenses/by/3.0/
 ! FAL Email: fanboyadblock@googlegroups.com
 ! FAL Homepage: http://www.fanboy.co.nz/
 ! FAL Forums: http://forums.fanboy.co.nz/
 !
-! = Социальные сети ===========================================================
+! = BitBlock ==================================================================
+%include ruadlist:bitblockonly.txt%
 !
-! - Общие правила блокировки --------------------------------------------------
-%include ruadlist:bitblock/social_general_block.txt%
-!
-! - Общие правила скрытия -----------------------------------------------------
-%include ruadlist:bitblock/social_general_hide.txt%
-!
-! - Скрипты и фремы с посторонних сайтов --------------------------------------
-%include ruadlist:bitblock/social_thirdparty.txt%
-!
-! - Частные правила -----------------------------------------------------------
-%include ruadlist:bitblock/social_specific_block.txt%
-%include ruadlist:bitblock/social_specific_hide.txt%
-!
-!= Мусор на сайтах (огромные логотипы, информеры, флэш и прочее) ==============
-!
-! - "Тяжёлая артиллерия" против хитрой рекламы --------------------------------
-%include ruadlist:bitblock/magic.txt%
-!
-! - Общие правила блокировки --------------------------------------------------
-%include ruadlist:bitblock/annoyance_general_block.txt%
-!
-! - Общие правила скрытия -----------------------------------------------------
-%include ruadlist:bitblock/annoyance_general_hide.txt%
-!
-! - Скрипты и фремы с посторонних сайтов --------------------------------------
-%include ruadlist:bitblock/annoyance_thirdparty.txt%
-!
-! - Частные правила -----------------------------------------------------------
-%include ruadlist:bitblock/annoyance_specific_block.txt%
-%include ruadlist:bitblock/annoyance_specific_hide.txt%
-!
-! = Филиал Adblock Warning Removal List =======================================
-! Сюда попадают аккуратно оформленные и не выбивающиеся из общего оформления
-! сайта просьбы выключить адблок.
-%include ruadlist:bitblock/annoyance_awrl.txt%
-!
-! = Исключения ================================================================
-%include ruadlist:bitblock/whitelist.txt%
-!
-! = FAL =======================================================================
+! = Fanboy's Annoyance List ===================================================
 %include easylistcombinations:fanboy-annoyance.txt%

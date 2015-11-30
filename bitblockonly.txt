@@ -1,0 +1,37 @@
+[Adblock Plus 2.0]
+! Title: RU AdList: BitBlock без Fanboy's Annoyance List
+! Last modified: %timestamp%
+! Expires: 5 days (подписка обновляется автоматически каждые 5 дней)
+! Homepage: https://forums.lanik.us/viewforum.php?f=102
+!
+! Дополнительная подписка фильтров RU BitBlock List (ruadlist.googlecode.com)
+! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
+! Целью проекта является блокировка всего популярного и совершенно не нужного,
+! а именно линеечек, юзербаров, мерцающих картинок, кнопочек и прочего мусора.
+! Подписка предназначена для тех, кто не желает всего этого видеть и
+! НЕ РЕКОМЕНДУЕТСЯ к установке по умолчанию.
+!
+! - Социальные сети -----------------------------------------------------------
+%include ruadlist:bitblock/social_general_block.txt%
+%include ruadlist:bitblock/social_general_hide.txt%
+%include ruadlist:bitblock/social_thirdparty.txt%
+%include ruadlist:bitblock/social_specific_block.txt%
+%include ruadlist:bitblock/social_specific_hide.txt%
+!
+! - Мусор на сайтах (огромные логотипы, информеры, флэш и прочее) -------------
+%include ruadlist:bitblock/annoyance_general_block.txt%
+%include ruadlist:bitblock/annoyance_general_hide.txt%
+%include ruadlist:bitblock/annoyance_thirdparty.txt%
+%include ruadlist:bitblock/annoyance_specific_block.txt%
+%include ruadlist:bitblock/annoyance_specific_hide.txt%
+!
+! - "Тяжёлая артиллерия" против хитрой рекламы --------------------------------
+%include ruadlist:bitblock/magic.txt%
+!
+! - Филиал Adblock Warning Removal List ---------------------------------------
+! Сюда попадают аккуратно оформленные и не выбивающиеся из общего оформления
+! сайта просьбы выключить адблок.
+%include ruadlist:bitblock/annoyance_awrl.txt%
+!
+! - Исключения ----------------------------------------------------------------
+%include ruadlist:bitblock/whitelist.txt%
