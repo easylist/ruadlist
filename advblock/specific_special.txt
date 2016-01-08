@@ -1,6 +1,7 @@
 ! Правила для отдельных сайтов с разношерстными правилами или групп сайтов
 !
 ! FS.to
+fs.to##.l-content > div[id]:not([class]) + div[id][class^="b-"]
 brb.to,cxz.to##.m-content_state_without-gradient > div[class][id]
 @@/view_iframe/*$elemhide,domain=brb.to|cxz.to|fs.to
 fs.to##div[class^="b-"] div[id$="-inner"]
