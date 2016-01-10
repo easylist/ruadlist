@@ -1135,9 +1135,9 @@ ne-kurim.ru##.pad > noindex
 afisha.ru##.page_banner_top_container
 afisha.ru##.page_block_content_adv-header
 filmpro.ru##.page_lcol > div[style]
-filmpro.ru##.page_rcol > div[style*="background:#fff;"]
+filmpro.ru##.page_rcol > div[style*="background:#fff;"]:not(:last-child)
 filmpro.ru##.page_rcol > div[style*="height:400px;"]
-filmpro.ru##.page_rcol > h3
+filmpro.ru##.page_rcol > h3:nth-of-type(1)
 msn.com##.paging-container > .ad
 new-rutor.org##.panzar-wrapper
 fbr.info##.partner
