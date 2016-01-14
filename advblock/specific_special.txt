@@ -1,13 +1,11 @@
 ! Правила для отдельных сайтов с разношерстными правилами или групп сайтов
 !
 ! FS.to
-fs.to##.l-content > div[id]:not([class]) + div[id][class]
 cxz.to##.l-tab-item-content > div[id][class]
 brb.to,cxz.to##.m-content_state_without-gradient > div[class][id]
 @@/view_iframe/*$elemhide,domain=brb.to|cxz.to|fs.to
-fs.to##div[class^="b-"] div[id$="-inner"]
+fs.to##div[id]:not([class]) + div[class]
 cxz.to,fs.to##div[class^="b-adproxy"]
-fs.to##div[id]:not([class]) + div[id][class^="b-"]
 brb.to,cxz.to,fs.to##div[id^="admixer_async_"]
 !
 ! GISMeteo domains
