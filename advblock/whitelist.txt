@@ -1,13 +1,11 @@
 ! Исправление проблем, возникших в результате работы списка фильтров
 110km.ru#@##content_ads
 1tv.ru#@#.adv_1
-@@$image,domain=joyreactor.cc|reactor.cc
 @@-teasers-$domain=rw.by
 @@.com/ads?$domain=uzblog.com|uzlist.com
 @@.custom.min.js$script,domain=lenta.ru|mk.ru|news.rambler.ru
 @@.soundcloud.com/player.swf?url=
 @@.swf?purl=$domain=mimichatter.com
-@@/*luxup.ru^$script,domain=joyreactor.cc|reactor.cc
 @@//195.82.146.52/logo/*$domain=rutracker.org
 @@//promo.$popup,domain=bactistatin.com|gamexp.ru|iguides.ru|ingate.ru|yandex.ru
 @@/adfox.$script,domain=alfabank.ru|megafon.ru|mirtesen.ru
@@ -38,7 +36,6 @@
 @@/images/ads/*$domain=xn--80aqkgfb3b1a0a.xn--p1ai|пышмаинфо.рф
 @@/img/banner/*$domain=imhonet.ru
 @@/informer.php$image,domain=day-x.narod.ru
-@@/jquery.min.js$script,domain=joyreactor.cc|reactor.cc
 @@/media/adv/*$image,domain=xn--80atyad7e.xn--p1ai|кутята.рф
 @@/media/banners/*$domain=zakaz.ua|zapals.com
 @@/pagead2.$domain=2ip.ru|happy-hack.ru|php5lab.com
@@ -59,8 +56,6 @@
 @@://ads.$domain=ads.co.ua|alfabank.ru|mts.ru
 @@://ads.$popup,domain=sports.ru
 @@_ad.php?$domain=1obl.ru
-@@joyreactor.cc/$xmlhttprequest,domain=joyreactor.cc|reactor.cc
-@@reactor.cc/$xmlhttprequest,domain=joyreactor.cc|reactor.cc
 @@||2gis.ru^$generichide
 @@||2ip.ru^$generichide
 @@||37.220.36.15/upload/banners/$image,domain=37.220.36.15
@@ -195,6 +190,7 @@
 @@||irr.ru/ajax/*/submission/get_cat$domain=irr.ru
 @@||itinvest.ru/promo/adv$domain=itinvest.ru
 @@||joblib.ru/js/ads-$domain=joblib.ru
+@@||joyreactor.cc^$genericblock
 @@||joyreactor.cc^$generichide
 @@||kakprosto.ru/images/advertising/$domain=kakprosto.ru
 @@||kino-dom.org^$generichide
@@ -266,6 +262,7 @@
 @@||promo.static.gamexp.ru^
 @@||propellerads.com/ajs.php?zoneid=$domain=goclips.tv|letitbit.net
 @@||rad.msn.com^$script,domain=msn.com
+@@||reactor.cc^$genericblock
 @@||reactor.cc^$generichide
 @@||recreativ.ru/rcode.$script,domain=kapriz.tv
 @@||remoteshaman.com/templates/*/ads.js|$domain=remoteshaman.com
@@ -289,12 +286,12 @@
 @@||sellua.info^*/ad/$domain=sellua.info
 @@||semrush.com/m/scripts/reports/backlinks.$~third-party
 @@||seria-z.net^$generichide
-@@||show.ctrmanager.com/show$xmlhttprequest,domain=joyreactor.cc|reactor.cc
 @@||sims3club.ru/images/bn/$~third-party
 @@||sindom.ru/ads/searchF$xmlhttprequest,domain=sindom.ru
 @@||smartads.by^$domain=smartads.by
 @@||sn00.net^$domain=selectornews.com
 @@||softportal.com/advert/ushki/$image,domain=softportal.com
+@@||space/v/$domain=joyreactor.cc|reactor.cc
 @@||st.vtomske.ru/js/adv$script,domain=vtomske.ru
 @@||statcounter.com/counter/counter.js$~third-party
 @@||static*.banki.ru/upload/$image,domain=banki.ru
