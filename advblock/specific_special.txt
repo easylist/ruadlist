@@ -21,19 +21,21 @@ gismeteo.ru,gismeteo.ua##.side__i
 ||gismeteo.*/rian.html|
 !
 ! JoyReactor
-joyreactor.cc,~old.reactor.cc,pornreactor.cc,reactor.cc###Pagination > .pagination_main > :not([class="prev"]):not([class="next"]):not([class="pagination_toggler"]):not([class="pagination_expanded"])
+joyreactor.cc,~old.reactor.cc,pornreactor.cc,reactor.cc###Pagination > .pagination_main > :not([class="current prev"]):not([class="prev"]):not([class="next"]):not([class="pagination_toggler"]):not([class="pagination_expanded"])
 joyreactor.cc,~old.reactor.cc,pornreactor.cc,reactor.cc###Pagination > :not(.pagination_main)
 joyreactor.cc,pornreactor.cc,reactor.cc###Pagination table, #pageinner > * table[class]:not([class="polls_table"])
 joyreactor.cc,pornreactor.cc,reactor.cc###post_list :not([class="share_buttons"]) > a[href*=".pw"][href^="http"]:not([href*="reactor.cc/"])
-joyreactor.cc,pornreactor.cc,reactor.cc###post_list :not([class="share_buttons"]) > a[href*=".pw"][href^="http"][href*="&ref="]
+joyreactor.cc,pornreactor.cc,reactor.cc###post_list :not([class="share_buttons"]) > a[href*=".pw"][href^="http"][href*="&ref="]:not[href*="@"]
 joyreactor.cc,pornreactor.cc,reactor.cc###post_list ~ :not(#Pagination)
-joyreactor.cc,pornreactor.cc,reactor.cc##.postContainer + :not(.postContainer)
-joyreactor.cc,pornreactor.cc,reactor.cc##.prettyPhotoLink[href*=".%"]:not([href^="http://img"]),.prettyPhotoLink[href*=".p%"]:not([href^="http://img"]),.prettyPhotoLink[href*=".P%"]:not([href^="http://img"])
-joyreactor.cc,pornreactor.cc,reactor.cc##.prettyPhotoLink[href*=".Pw"]:not([href^="http://img"]),.prettyPhotoLink[href*=".pW"]:not([href^="http://img"])
-joyreactor.cc,pornreactor.cc,reactor.cc##.prettyPhotoLink[href*=".pw"]:not([href^="http://img"]),.prettyPhotoLink[href*=".PW"]:not([href^="http://img"])
-joyreactor.cc,pornreactor.cc,reactor.cc##.visitweb_ad, .visitweb_img, .visitweb_txt, .visitweb_cheat, a[href*=".pw/"], a[href="/"] img, a[href="/"][target="_blank"]
-joyreactor.cc,pornreactor.cc,reactor.cc##a[href^="http://ss."],a[href^="http://Ss."],a[href^="http://sS."],a[href^="http://SS."],a[href^="http://%"],a[href^="http://s%"]
-joyreactor.cc,pornreactor.cc,reactor.cc##img[src*="-"][width][height]:not([src^="http://img"])
+joyreactor.cc,pornreactor.cc,reactor.cc##.postContainer ~ :not(.postContainer)
+joyreactor.cc,pornreactor.cc,reactor.cc##.prettyPhotoLink[href*=".%"]:not([href^="http://img"]):not[href*="@"],.prettyPhotoLink[href*=".p%"]:not([href^="http://img"]):not[href*="@"],.prettyPhotoLink[href*=".P%"]:not([href^="http://img"]):not[href*="@"]
+joyreactor.cc,pornreactor.cc,reactor.cc##.prettyPhotoLink[href*=".Pw"]:not([href^="http://img"]):not[href*="@"],.prettyPhotoLink[href*=".pW"]:not([href^="http://img"]):not[href*="@"]
+joyreactor.cc,pornreactor.cc,reactor.cc##.prettyPhotoLink[href*=".pw"]:not([href^="http://img"]):not[href*="@"],.prettyPhotoLink[href*=".PW"]:not([href^="http://img"]):not[href*="@"]
+joyreactor.cc,pornreactor.cc,reactor.cc##.visitweb_ad, .visitweb_img, .visitweb_txt, .visitweb_cheat
+joyreactor.cc,pornreactor.cc,reactor.cc##a:not([href^="http://link.reactor.cc/"]):not([href*="@"]) b,a[href*="@"]:not([href*="@link.reactor.cc/"]) b
+joyreactor.cc,pornreactor.cc,reactor.cc##a[href*=".pw/"]:not[href*="@"], a[href="/"] img, a[href="/"][target="_blank"]
+joyreactor.cc,pornreactor.cc,reactor.cc##a[href^="http://ss."]:not[href*="@"],a[href^="http://Ss."]:not[href*="@"],a[href^="http://sS."]:not[href*="@"],a[href^="http://SS."]:not[href*="@"],a[href^="http://%"]:not[href*="@"],a[href^="http://s%"]:not[href*="@"]
+joyreactor.cc,pornreactor.cc,reactor.cc##img[src*="-"][width][height]:not([src^="http://img"]),img[src*="-"][width][height][src^="http://img"][src*="@"]
 !
 ! Letitbit
 goclips.tv###video_player_content
