@@ -56,10 +56,10 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt", "antinuha.txt",
           "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
-KNOWNOPTIONS = ("collapse", "document", "elemhide", "generichide", "genericblock",
-                "font", "image", "match-case", "object", "media",
-                "object-subrequest", "other", "popup", "script",
-                "stylesheet", "subdocument", "third-party", "xmlhttprequest")
+KNOWNOPTIONS = ("collapse", "document", "elemhide", "font", "generichide", "genericblock",
+                "image", "match-case", "media", "object", "object-subrequest", "other",
+				"ping", "popup", "script", "stylesheet", "subdocument",
+				"third-party", "xmlhttprequest")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
