@@ -7,9 +7,21 @@ brb.to,cxz.to,fs.to##.b-resizable-ads-area ~ *
 brb.to,cxz.to,fs.to##.b-resizable-ads-area ~ * *
 cxz.to##.l-tab-item-content > div[id][class]
 brb.to,cxz.to##.m-content_state_without-gradient > div[class][id]
-cxz.to,fs.to##div[class^="b-adproxy"]
+@@||brb.to^$genericblock
+@@||brb.to^$generichide
+@@||cxz.to^$genericblock
+@@||cxz.to^$generichide
+@@||fs.to^$genericblock
+@@||fs.to^$generichide
+brb.to,cxz.to,fs.to##[class*="adproxy"]
 brb.to,cxz.to,fs.to##div[id^="admixer_async_"]
+||admixer.net^$domain=brb.to|cxz.to|fs.to
 brb.to,cxz.to,fs.to##div[id^="adsProxy"]
+||adproxy2.com^$image,domain=brb.to|cxz.to|fs.to
+||google-analytics.com^$domain=brb.to|cxz.to|fs.to
+||trafmag.com^$domain=brb.to|cxz.to|fs.to
+||utarget.ru^$image,domain=brb.to|cxz.to|fs.to
+||yadro.ru^$domain=brb.to|cxz.to|fs.to
 !
 ! GISMeteo domains
 gismeteo.kz###ad-kp
