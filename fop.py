@@ -23,7 +23,7 @@ VERSION = 3.801
 import collections, filecmp, os, re, subprocess, sys
 
 # Check the version of Python for language compatibility and subprocess.check_output()
-MAJORREQUIRED = 3
+MAJORREQUIRED = 2
 MINORREQUIRED = 1
 if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
     raise RuntimeError("FOP requires Python {reqmajor}.{reqminor} or greater, but Python {ismajor}.{isminor} is being used to run this program.".format(reqmajor = MAJORREQUIRED, reqminor = MINORREQUIRED, ismajor = sys.version_info.major, isminor = sys.version_info.minor))
