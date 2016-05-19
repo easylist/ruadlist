@@ -267,6 +267,17 @@ ok.ru##.update-browser_container
 @@||mail.ru/adi/2174?$domain=ok.ru
 @@||mail.ru/adi/2247?$domain=ok.ru
 !
+!
+@@||naruto-base.ru/video_player/uppod|$object,domain=naruto-base.tv
+@@||naruto-base.tv/crossdomain.xml|$object-subrequest,domain=naruto-base.tv
+@@||naruto-base.tv/video_player/$object-subrequest,domain=naruto-base.tv
+@@||s2.naruto-base.ru^$subdocument,domain=naruto-base.tv
+||naruto-base.tv/*.htm
+||naruto-base.tv/Diz_nb/emn/
+||naruto-base.tv^$object
+||naruto-base.tv^*banner$image
+||narutobase.3dn.ru^$subdocument
+!
 ! NGS.RU
 ngs.ru###ads-fix
 gilcom.ru###botom-banner
