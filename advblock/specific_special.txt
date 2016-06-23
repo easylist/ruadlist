@@ -1,22 +1,21 @@
 ! Правила для отдельных сайтов с разношерстными правилами или групп сайтов
 !
 ! FS.to
-brb.to,cxz.to,fs.to##.b-aplayer-teasers > a
-brb.to,cxz.to,fs.to##.b-player-popup__content > div[class][style="position: relative;"]
-brb.to,cxz.to,fs.to##.b-resizable-ads-area ~ *
-brb.to,cxz.to,fs.to##.b-resizable-ads-area ~ * *
-cxz.to##.l-tab-item-content > div[id][class]
-brb.to,cxz.to##.m-content_state_without-gradient > div[class][id]
 @@||brb.to^$genericblock
 @@||brb.to^$generichide
 @@||cxz.to^$genericblock
 @@||cxz.to^$generichide
 @@||fs.to^$genericblock
 @@||fs.to^$generichide
+brb.to,cxz.to##.m-content_state_without-gradient > div[class][id]
+brb.to,cxz.to,fs.to##.b-aplayer-teasers > a
+brb.to,cxz.to,fs.to##.b-player-popup__content > div[class][style="position: relative;"]
+brb.to,cxz.to,fs.to##.b-resizable-ads-area ~ *
 brb.to,cxz.to,fs.to##[class*="-universalsmall_"]
 brb.to,cxz.to,fs.to##[class*="adproxy"]
 brb.to,cxz.to,fs.to##div[id^="admixer_async_"]
 brb.to,cxz.to,fs.to##div[id^="adsProxy"]
+cxz.to##.l-tab-item-content > div[id][class]
 ||admixer.net^$domain=brb.to|cxz.to|fs.to
 ||adproxy2.com^$domain=brb.to|cxz.to|fs.to
 ||doubleclick.net^$domain=brb.to|cxz.to|fs.to
@@ -308,7 +307,6 @@ pb.wtf,piratbit.org,piratbit.ru###main_content > div > div[style="padding-right:
 pb.wtf,piratbit.org,piratbit.ru##.bw_TRL.border.w100
 pb.wtf##.post_wp + div[id] > div[style]
 pb.wtf,piratbit.org,piratbit.ru##.post_wrap + div[id] > div[style]
-pb.wtf,piratbit.org,piratbit.ru##.post_wrap img[src][style*="visibility: visible !important; display: block ;"]
 pb.wtf,piratbit.org,piratbit.ru##[style*="important"]
 pb.wtf,piratbit.org,piratbit.ru##a[href*="/search?"][href*="pid="]
 pb.wtf,piratbit.org,piratbit.ru##a[href^="/ixt/"],a[href^="/ext/"]
@@ -390,7 +388,6 @@ rbc.ru##div[class][data-banner-id] *
 rbc.ru##div[id^="mlph"]
 ||banner.rbc.ru/
 ||cnews.ru/inc/banners/
-||pics.rbc.ru/img/banners/
 ||rbc.ru/img/banners/
 ||utro.ru/*/banners/
 ||zoom.cnews.ru/inc/bpic/
