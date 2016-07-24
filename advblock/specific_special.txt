@@ -441,8 +441,14 @@ rbc.ru##div[id^="mlph"]
 ||zoom.cnews.ru/inc/bpic/
 !
 ! Rustorka.ru
+rustorka.com###main_content_wrap > form > :not(div):not([class]) a[href]
+rustorka.com###page_container > :not(div):not([class]) a[href]
+rustorka.com###sidebar1-wrap > :not(div):not(li):not([class]) a[href]
+rustorka.com##.post_body > :not(div):not([class]):not([style]) a[href]
 rustorka.com##.post_body div[align="center"] > a[href]
+rustorka.com##.post_body span > :not(div):not([class]):not([style]) a[href]
 rustorka.com##center > a[href]
+rustorka.com##div[id][style="display: block;"]
 !
 ! SeasonVar.ru
 seasonvar.ru##.td-for-left-block
