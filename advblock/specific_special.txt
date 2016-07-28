@@ -300,20 +300,23 @@ ok.ru##.update-browser_container
 @@||mail.ru/adi/2247?$domain=ok.ru
 !
 ! Naruto
+@@||mail.ru/*video$subdocument,domain=naruto-base.tv
+@@||myvi.ru/player^$subdocument,domain=naruto-base.tv
 @@||naruto-base.ru/video_player/uppod|$object,domain=naruto-base.tv
 @@||naruto-base.tv/crossdomain.xml|$object-subrequest,domain=naruto-base.tv
 @@||naruto-base.tv/video_player/$object-subrequest,domain=naruto-base.tv
+@@||rutube.ru^$subdocument,domain=naruto-base.tv
 @@||s2.naruto-base.ru^$subdocument,domain=naruto-base.tv
-||clan.su^$subdocument,domain=naruto-base.tv
-||moy.su^$subdocument,domain=naruto-base.tv
+@@||video.meta.ua/iframe$subdocument,domain=naruto-base.tv
+@@||video.sibnet.ru/shell.php$subdocument,domain=naruto-base.tv
+@@||vk.com/video_ext.php$subdocument,domain=naruto-base.tv
+|http://$third-party,subdocument,domain=naruto-base.tv
 ||naruto-base.tv/*.htm
-||naruto-base.tv/Diz_nb/mrnr/
+||naruto-base.tv/Diz_nb/msr/
 ||naruto-base.tv/Script/mysir.js
 ||naruto-base.tv^$object
 ||naruto-base.tv^*banner$image
 ||narutobase.3dn.ru^$subdocument
-||ucoz.pl^$subdocument,domain=naruto-base.tv
-||ucoz.site^$subdocument,domain=naruto-base.tv
 ||usite.pro^$third-party,domain=naruto-base.tv
 !
 ! NGS.RU
