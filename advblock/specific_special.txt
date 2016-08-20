@@ -308,6 +308,7 @@ ok.ru##.update-browser_container
 @@||mail.ru/adi/2247?$domain=ok.ru
 !
 ! Naruto
+! Старый домен
 @@||easyvideo.me/gogo/$subdocument,domain=naruto-base.tv
 @@||fs.to/video/*iframeplayer$subdocument,domain=naruto-base.tv
 @@||mail.ru/*video$subdocument,domain=naruto-base.tv
@@ -339,6 +340,37 @@ naruto-base.tv##a[href*="goo.gl"]
 ||naruto-base.tv^*banner$image
 ||narutobase.3dn.ru^$subdocument
 ||usite.pro^$third-party,domain=naruto-base.tv
+! Новый домен
+@@||easyvideo.me/gogo/$subdocument,domain=naruto-base.su
+@@||fs.to/video/*iframeplayer$subdocument,domain=naruto-base.su
+@@||mail.ru/*video$subdocument,domain=naruto-base.su
+@@||me/embed^$subdocument,domain=naruto-base.su
+@@||moonwalk.cc/serial/*iframe$subdocument,domain=naruto-base.su
+@@||my.mail.ru/sdc?token=$subdocument,domain=naruto-base.su
+@@||myvi.ru/player^$subdocument,domain=naruto-base.su
+@@||naruto-base.ru/video_player/uppod|$object,domain=naruto-base.su
+@@||naruto-base.tv/crossdomain.xml|$object-subrequest,domain=naruto-base.su
+@@||naruto-base.tv/video_player/$object-subrequest,domain=naruto-base.su
+@@||ok.ru/videoembed/$subdocument,domain=naruto-base.su
+@@||rutube.ru^$subdocument,domain=naruto-base.su
+@@||s2.naruto-base.ru^$subdocument,domain=naruto-base.su
+@@||s2.naruto-base.tv^$subdocument,domain=naruto-base.su
+@@||video.meta.ua/iframe$subdocument,domain=naruto-base.su
+@@||video.sibnet.ru/shell.php$subdocument,domain=naruto-base.su
+@@||vk.com/doc-$subdocument,domain=naruto-base.su
+@@||vk.com/video_ext.php$subdocument,domain=naruto-base.su
+@@||vk.me^*/docs/$subdocument,domain=naruto-base.su
+@@||youtube.com/embed/$subdocument,domain=naruto-base.su
+naruto-base.su##a[href*="/clck.ru/"]
+naruto-base.su##a[href*="goo.gl"]
+|http://$third-party,script,subdocument,domain=naruto-base.su
+||naruto-base.su/*.htm
+||naruto-base.su/*mywars$script
+||naruto-base.su/Diz_nb/mmse/
+||naruto-base.su/Script/naruto.js
+||naruto-base.su^$object
+||naruto-base.su^*banner$image
+||narutobase.3dn.ru^$subdocument
 !
 ! NGS.RU
 ngs.ru###ads-fix
