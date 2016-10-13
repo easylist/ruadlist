@@ -17,7 +17,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.801
+VERSION = 3.802
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -59,7 +59,7 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt", "antinuha.txt",
 KNOWNOPTIONS = ("collapse", "document", "elemhide", "font", "generichide", "genericblock",
                 "image", "match-case", "media", "object", "object-subrequest", "other",
 				"ping", "popup", "script", "stylesheet", "subdocument",
-				"third-party", "xmlhttprequest")
+				"third-party", "websocket", "xmlhttprequest")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
