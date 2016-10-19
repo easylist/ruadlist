@@ -372,14 +372,10 @@ pb.wtf,piratbit.org,piratbit.ru##a[href*="/search?"][href*="pid="]
 pb.wtf,piratbit.org,piratbit.ru##img[style*="visibility"][style*="display"]
 !
 ! Pornolab.NET
-pornolab.net##.attach > tbody > tr.row1:last-of-type
-pornolab.net##.post_body + script + style ~ table
-pornolab.net##.post_body + style + script ~ table
-pornolab.net##.post_body script + style ~ table
-pornolab.net##.post_body style + script ~ table
-pornolab.net##tbody > .row3.tCenter ~ .row3
-pornolab.net##tbody > tr > td > style + div[class]
-pornolab.net##tr > td > script + style ~ div[class]
+pornolab.net##.post_body + style ~ table
+pornolab.net##.post_body style ~ table
+pornolab.net##tbody > .row3.tCenter ~ .row3 + *
+pornolab.net##tbody > tr > td > style + [class]
 !
 pornolab.net###pl-speedbar
 pornolab.net###sidebar1_wrap > div[style]
