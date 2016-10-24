@@ -385,10 +385,9 @@ pb.wtf,piratbit.org,piratbit.ru##a[href*="/search?"][href*="pid="]
 pb.wtf,piratbit.org,piratbit.ru##img[style*="visibility"][style*="display"]
 !
 ! Pornolab.NET
-pornolab.net##.post_body + style ~ table
-pornolab.net##.post_body style ~ table
-pornolab.net##tbody > .row3.tCenter ~ .row3 + *
-pornolab.net##tbody > tr > td > style + [class]
+pornolab.net##.attach > tbody > .row3 ~ .row3 ~ tr
+pornolab.net##.post_body > table[class]
+pornolab.net##tbody > tr > table + td + td
 !
 pornolab.net###pl-speedbar
 pornolab.net###sidebar1_wrap > div[style]
