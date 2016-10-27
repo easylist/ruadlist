@@ -222,10 +222,12 @@ love.mail.ru##.banner_left
 love.mail.ru##.link-ad
 ! Гороскопы
 horo.mail.ru##.box[class*=" rb_"]
+horo.mail.ru##.margin_top_20.nat_horo.nat
 horo.mail.ru##.p-box[class*=" rb_"]
 horo.mail.ru##.p-branding-top
 horo.mail.ru##.p-mimic
 horo.mail.ru##.p-top-banner
+horo.mail.ru##.rb
 ! Облако
 cloud.mail.ru##.content__left > div[id] > div[style="font-size: 13px;"] > div[style^="font-size: 90%;"]
 cloud.mail.ru##.w-public__content > .b-layout div[id][class][style="width: 240px;"]
@@ -241,6 +243,7 @@ go.mail.ru##.ad-blk
 games.mail.ru##.b-content__banner
 go.mail.ru##.block-goods
 realty.mail.ru##.box_special
+health.mail.ru##.branding-p
 health.mail.ru##.fromPartners3
 sport.mail.ru##.index-top__right
 games.mail.ru##.js-aab_target
@@ -251,6 +254,7 @@ video.mail.ru##.lvi-r-ban
 realty.mail.ru##.parallax
 afisha.mail.ru,auto.mail.ru,hi-tech.mail.ru##.pc-branding
 cards.mail.ru##.pt10.center
+health.mail.ru##.rb
 go.mail.ru##.responses__wrapper > div > [-abp-properties='width: 100%;']
 go.mail.ru##.responses__wrapper a[href="#"][target="_blank"] ~ div[class],.responses__wrapper a[href="#"][target="_blank"]
 realty.mail.ru##.spring-side
@@ -265,7 +269,7 @@ otvet.mail.ru##div[id^="adv-slot-"]
 maps.mail.ru##img[width="200"][height="30"]
 health.mail.ru##img[width="240"][height="200"]
 ! Блокировка ресурсов в основном на самом mail.ru
-$websocket,domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail.ru|hi-tech.mail.ru|lady.mail.ru|minigames.mail.ru|my.mail.ru|news.mail.ru|sport.mail.ru
+$websocket,domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail.ru|health.mail.ru|hi-tech.mail.ru|horo.mail.ru|lady.mail.ru|minigames.mail.ru|my.mail.ru|news.mail.ru|sport.mail.ru
 //r.mail.ru/b$subdocument
 //rs.mail.ru/b$domain=e.mail.ru
 //rs.mail.ru/b$subdocument
@@ -273,8 +277,9 @@ $websocket,domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail
 //rs.mail.ru/b*.swf|$domain=~my.mail.ru
 /brandingVideo.js$domain=mail.ru
 /mrg-context.$script,stylesheet,domain=mail.ru
+|blob:$script,domain=health.mail.ru|horo.mail.ru
 |blob:$script,subdocument,domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail.ru|hi-tech.mail.ru|lady.mail.ru|minigames.mail.ru|my.mail.ru|news.mail.ru|sport.mail.ru
-|ws*://$domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail.ru|hi-tech.mail.ru|lady.mail.ru|minigames.mail.ru|my.mail.ru|news.mail.ru|sport.mail.ru
+|ws*://$domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail.ru|health.mail.ru|hi-tech.mail.ru|horo.mail.ru|lady.mail.ru|minigames.mail.ru|my.mail.ru|news.mail.ru|sport.mail.ru
 ||bs.mail.ru^$image,domain=mail.ru
 ||c-cdn.coub.com^$script,domain=mail.ru
 ||imgsmail.ru/js/onair2.$script
