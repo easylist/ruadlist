@@ -203,7 +203,6 @@ $websocket,domain=176.114.0.126|176.114.0.132|193.106.30.70|193.106.30.84|24vide
 /^https?://goodgame\.ru/[a-z0-9]+$/$subdocument,domain=goodgame.ru
 /ad*.tutu.ru^*_*.php|
 /adb_checker$script,domain=coop-land.ru
-/aglwowfast-torrent$image,domain=fast-torrent.ru
 /apu.php?id=$script,domain=anistar.me
 /available.php$third-party,script,domain=onelike.tv|only-tv.org|tvizor.org
 /banner_fullscreen.js|$domain=namba.kg|namba.tj
@@ -685,6 +684,7 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 ||ckyka.ru/obzor/
 ||clicks.demotivators.to^
 ||clk.kaztorka.org^
+||cloud.fast-torrent.ru/
 ||cloudfront.net/*.swf$object,domain=windata.ru
 ||cloudfront.net^$domain=kinovideo.tv|leporno.org|raidcall.com|raidcall.com.ru|tapochek.net
 ||cloudleadia.com^$domain=101urist.com|astromera.ru|bib.social|business-poisk.com|businesswit.ru|creditzzz.ru|docload.ru|dogovor-obrazets.ru|dom-sonnik.ru|economic.social|fb.ru|finansiko.ru|finbazis.ru|finbook.news|freebooks.site|gadania-na-lubov.ru|goroskop.ru|hr-portal.ru|impravo.ru|inpot.ru|jofo.ru|kak-poznakomitsya-s-devushkoi.ru|knigi.link|kredit-sovet.ru|lawbook.online|lib.sale|medic.social|moylacetti.ru|myzooplanet.ru|nimbul.ru|online-photoshop.org|otravilsja.ru|plateginfo.com|podborkadrov.com|pozhalobam.ru|prav-net.ru|pravoin.com|rospravosudie.com|samogonpil.ru|scibook.net|sonnik-online.net|syl.ru|uristhome.ru|uristinfo.net|wefilms.ru|xn--80ahc0abogjs.com|zagrandok.ru|zhkhinfo.ru|медпортал.com
@@ -863,8 +863,7 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 ||faspiic.ru/js/go_re.js
 ||fast-torrent.ru/media/$object
 ||fast-torrent.ru/media/*banner
-||fast-torrent.ru/media/files^*/fast-torrent*.jpg
-||fast-torrent.ru/media^*/zonenohv.jpg
+||fast-torrent.ru/media/files/s1/zk/
 ||fastpic.ru^$domain=screenlist.ru
 ||fastpicc.ru^$third-party,script
 ||fbr.info/fbimage.php?
