@@ -141,6 +141,11 @@ militaryreview.su##.bbanerr
 ||ru/stat/$domain=~fb.ru|~metrika.yandex.ru|~sms-track.ru|~sports.ru|~wizardry-online.ruline.ru
 ||su/stat/
 ||ua/stat/$domain=~fotomag.com.ua
+! = Фильтры скрытия ===========================================================
+##a[href^="http://click.hotlog.ru/"]
+##a[href^="http://hitcounter.ru/top/stat.php"]
+##img[src^="/stat/"][width="88"][height="31"]
+!
 ! -- По сайтам --
 |http://li.ru^$third-party
 |http://pr-cy.$third-party
@@ -282,6 +287,7 @@ militaryreview.su##.bbanerr
 ||histats.com^$third-party
 ||hit.meta.ua^
 ||hitbox.com^$third-party
+||hitcounter.ru$third-party
 ||hmn.ru/counterdb.php?
 ||host-tracker.com^$third-party
 ||hotblogs.org.ua^$third-party
@@ -481,6 +487,7 @@ militaryreview.su##.bbanerr
 ||ttrating.com^$third-party
 ||tvigle.ru/img/stat.gif?
 ||tynt.com^$third-party
+||ucounter.ucoz.net^
 ||ukr.net/track.js?
 ||ukrnationalism.org.ua/get/img.cgi?n=
 ||ulogix.ru^$third-party
