@@ -55,7 +55,7 @@ militaryreview.su##.bbanerr
 ||google-analytics.com^$domain=smexo.tv
 ||mc.yandex.ru^$domain=smexo.tv
 !
-! = Общие фильтры =============================================================
+! = Общие фильтры (по маске) ==================================================
 .top100.$third-party
 /1x1.gif
 /1x1.png
@@ -132,21 +132,19 @@ militaryreview.su##.bbanerr
 ;0x0;0;0;-;0|
 ^counter.$third-party,image
 ^name=atatracker^
-||2tt2.ru^$third-party
-||intercounter.website^$third-party
-||keen.io^$third-party
 ||ru/cnt/?
 ||ru/count/$domain=~yandex.ru|~yandex.ua
 ||ru/img.php?id
 ||ru/stat/$domain=~fb.ru|~metrika.yandex.ru|~sms-track.ru|~sports.ru|~wizardry-online.ruline.ru
 ||su/stat/
 ||ua/stat/$domain=~fotomag.com.ua
-! = Фильтры скрытия ===========================================================
+!
+! = Общие фильтры (скрытие) ===================================================
 ##a[href^="http://click.hotlog.ru/"]
 ##a[href^="http://hitcounter.ru/top/stat.php"]
 ##img[src^="/stat/"][width="88"][height="31"]
 !
-! -- По сайтам --
+! = Общие блокировки (с использованием имени доменов) =========================
 |http://li.ru^$third-party
 |http://pr-cy.$third-party
 |http://r.i.ua^$third-party
@@ -154,6 +152,7 @@ militaryreview.su##.bbanerr
 ||2ip.ru^$third-party
 ||2o7.net^$third-party
 ||2stat.net^
+||2tt2.ru^$third-party
 ||3dnews.ru/track?
 ||a-counter.kiev.ua^$third-party
 ||a.sepyra.com^
@@ -313,6 +312,7 @@ militaryreview.su##.bbanerr
 ||intel.com/b/
 ||intencysrv.com^$third-party
 ||intensedebate.com/remotevisit.php?
+||intercounter.website^$third-party
 ||interzet.ru/log.php?
 ||io.userlook.com^$third-party
 ||ip2phrase.com^$third-party
@@ -322,6 +322,7 @@ militaryreview.su##.bbanerr
 ||jwpltx.com^*/ping.gif?
 ||kamnet.ru^$third-party
 ||katalog-chatov.ru/top/
+||keen.io^$third-party
 ||kinostok.net/stat/
 ||kissmetrics.com^$third-party
 ||krutilka.price.ru/count_
@@ -456,6 +457,7 @@ militaryreview.su##.bbanerr
 ||stats.internet-yadro.com^
 ||stats.seedr.ru^
 ||stats.wordpress.com^
+||stats.wp.com^$third-party
 ||statscreen.info^$third-party
 ||stattds.club^$third-party
 ||statuncore.com^$third-party
