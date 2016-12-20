@@ -420,6 +420,7 @@ kanobu.ru###log_line_link
 weather.rambler.ru###prices
 rambler.ru###sidekickButton
 weather.rambler.ru###weather-ban-300
+$websocket,domain=weather.rambler.ru
 autorambler.ru##.ad-item-paid
 rambler.ru##.adWords
 rambler.ru##.adfox-billboard
@@ -468,6 +469,8 @@ championat.com##div[class^="l-popup"]
 lenta.ru,motor.ru,rambler.ru##div[id^="AdFox_banner_"]
 lenta.ru,motor.ru##div[id^="AdFox_iframe_"]
 rambler.ru.yn-direct
+|blob:$script,domain=weather.rambler.ru
+|ws*://$domain=weather.rambler.ru
 ||ag.ru/*/bottom_bg.jpg
 ||ag.ru/*/flash.swf
 ||ag.ru/*/top_bg.jpg
