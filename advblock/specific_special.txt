@@ -493,6 +493,7 @@ rambler.ru.yn-direct
 !
 ! RBC (РБК)
 cnews.ru###mag_banner
+$websocket,domain=rbc.ru
 rbc.ru##.article__right-banners *
 autonews.ru,rbc.ru,rbc.ua,rbcdaily.ru##.banner
 utro.ru##.banner-middle
@@ -523,10 +524,13 @@ cnews.ru##div[class^="cnb_popup"]
 rbc.ru##div[class^="js-checkad"]
 cnews.ru##div[id^="div-gpt-ad-"]
 rbc.ru##div[id^="mlph"]
+|blob:$script,domain=rbc.ru
+|ws*://$domain=rbc.ru
 ||banner.rbc.ru/
 ||cnews.ru/inc/banners/
 ||rbc.ru/img/banners/
 ||rbc.ru/yabs/*?target-ref$xmlhttprequest
+||s.rbk.ru/files_static/rbc.ru/*toyota
 ||utro.ru/*/banners/
 ||yadirect.top.rbc.ru/
 ||zoom.cnews.ru/inc/bpic/
