@@ -41,7 +41,6 @@
 @@||tns-counter.ru^*/tmsec=yandex_videoplayershow/$object-subrequest
 @@||top.mail.ru/counter?*;rand=$domain=kp.ru
 @@||yastatic.net/metrika/*/counters/$domain=metrika.yandex.ru
-@@||zobiki.ru/img/1x1.png$image,domain=zobiki.ru
 @@||zona.mobi/js/build/app/modules/counters/liru.js$script,domain=zona.mobi
 ! Устранение бесконечной загрузки страниц
 @@||magna.ru/xml_out/?*://top.rbc.ru/$domain=top.rbc.ru
@@ -58,7 +57,7 @@ militaryreview.su##.bbanerr
 ! = Общие фильтры (по маске) ==================================================
 .top100.$third-party
 /1x1.gif
-/1x1.png
+/1x1.png$domain=~comfy.ua|~zobiki.ru
 /_res/script/image.php?type=$image
 /adlogger_tracker.js?
 /admp-tc.
