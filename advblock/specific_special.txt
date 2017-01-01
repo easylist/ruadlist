@@ -718,15 +718,14 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##.clearfix.content__top > .navigation-ci
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.content div[class*="info_pos_"] > .info__map > div[class]:first-child:not(.teaser-fox)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.content div[class*="info_pos_"] > .info__map > div[class]:first-child:not(.teaser-fox) ~ *
 ! Новости-Yandex
-news.yandex.ru##.auto-update a[href*="yandex.ru/clck/jsredir?"]
-news.yandex.ru##.auto-update a[href*="yandex.ru/clck/jsredir?"] ~ *
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.page-content__col > .widget_for_auto[data-bem]
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.page-content__extra-item > [class][data-bem]
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.page-content__left > .auto-update ~ [data-bem]
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.page-content__left > .quote__info ~ [data-bem]
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.page-content__right > [class][data-bem]
-news.yandex.ru##.page-content__right > div:not(.widget_for_media) a[href*="yandex.ru/clck/jsredir?"]
-news.yandex.ru##.page-content__right > div:not(.widget_for_media) a[href*="yandex.ru/clck/jsredir?"] ~ *
+news.yandex.ru##a[href*="yandex.ru/clck/jsredir?"]:not([data-counter])
+news.yandex.ru##a[href*="yandex.ru/clck/jsredir?"]:not([data-counter]) ~ *
+news.yandex.ru##div[class] > div[class] > div[class] > div[class$="_image_no"]
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##div[class][-abp-properties="display*block"]
 ! Yandex Music
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua###js-banner
