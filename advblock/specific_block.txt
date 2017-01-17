@@ -45,6 +45,7 @@ $websocket,domain=176.114.0.126|176.114.0.132|193.106.30.70|193.106.30.84|24vide
 .fast2img.ru^$script,domain=fast2img.ru
 .fast2picture.ru^$script,domain=fast2picture.ru
 .fasti2mages.ru^$script,domain=fasti2mages.ru
+.film-adult.com^$object-subrequest
 .film-online.org^$script,domain=film-online.org
 .filmix.net^$script,domain=filmix.net
 .findanime.ru^$script,domain=findanime.ru
@@ -919,7 +920,8 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 ||file-tracker.net/images/banner/
 ||fileplaneta.com/PlayerAdv/
 ||files.vse.kz/branding/$image
-||film-adult.com/js/$script
+||film-adult.com/templates^*/images/img/
+||film-adult.com/vdos/
 ||film-max.ru^*/bg.$image
 ||film.ru/i/branding/
 ||filmitorrent.org/brand
