@@ -542,22 +542,20 @@ rbc.ru##div[id^="mlph"]
 ||zoom.cnews.ru/inc/bpic/
 !
 ! Rustorka.ru
-@@|http://rustorka.com/forum/index.php|$popup,domain=rustorka.com
-@@|http://rustorka.com/forum/trans.php|$popup,domain=rustorka.com
 @@||rustorka.com/forum/misc/js/ajax.js$script,domain=rustorka.com
 @@||rustorka.com/forum/misc/js/bbcode.js$script,domain=rustorka.com
 @@||rustorka.com/forum/misc/js/ct1.jquery.js$script,domain=rustorka.com
-@@||rustorka.com/forum/misc/js/fancybox.js$script,domain=rustorka.com
-@@||rustorka.com/forum/misc/js/ifix.js$script,domain=rustorka.com
+@@||rustorka.com/forum/misc/js/fancybox.js|$script,domain=rustorka.com
+@@||rustorka.com/forum/misc/js/ifix.js|$script,domain=rustorka.com
 @@||rustorka.com/forum/misc/js/jquery.pack.js$script,domain=rustorka.com
 @@||rustorka.com/forum/misc/js/main.js$script,domain=rustorka.com
-@@||rustorka.com/forum/misc/js/scrolltopcontrol.js$script,domain=rustorka.com
+@@||rustorka.com/forum/misc/js/scrolltopcontrol.js|$script,domain=rustorka.com
 rustorka.com###page_container > div[style^="width"]:not([id]):not([class])
 rustorka.com##.post_body div[align="center"] > a[href]
 rustorka.com##a[href$=".php"]:not([class]):not([id]) > :not(img)
 rustorka.com##center > a[href]
 rustorka.com##div[class*="teaser"]
-||rustorka.com/*.php|$popup,domain=rustorka.com
+||rustorka.com/*.php?p=123453$popup
 ||rustorka.com^$script
 !
 ! Sports.ru
