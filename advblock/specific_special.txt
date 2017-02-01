@@ -76,6 +76,7 @@ gismeteo.kz,gismeteo.ru##div[id^="rek-gis-news"]
 ||iframestream.ru/*.js|$script
 ||intcdnstream.ru/*.js|$script
 ||ru/*.js$script,domain=hdgostream.xyz
+||ru/sts*/$script,~third-party
 !
 ! Mail.ru и Одноклассники
 ! Объединять правила с banner в конце не стоит - там ещё другие классы перечислены часто
