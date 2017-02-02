@@ -3,34 +3,6 @@
 ! Adblock fake subscribes
 37.220.36.15,cdnapponline.com,kinospy.net,moonwalk.cc,online.the-cinema.tv,onlinevideo.anilibria.tv,staticnlcdn.com,video.kodik.name,yallaneliera.com,zserials.me,zzonlinepleer.info##body > div[id][style="display: inline-block;"],a[href*="abp:subscribe"]
 !
-! FS.to
-@@||brb.to^$genericblock
-@@||brb.to^$generichide
-@@||cxz.to^$genericblock
-@@||cxz.to^$generichide
-@@||fs.to^$genericblock
-@@||fs.to^$generichide
-brb.to,cxz.to##.m-content_state_without-gradient > div[class][id]
-brb.to,cxz.to,fs.to##.b-aplayer-teasers > a
-brb.to,cxz.to,fs.to##.b-player-popup__content > div[class][style="position: relative;"]
-brb.to,cxz.to,fs.to##.b-resizable-ads-area ~ *
-brb.to,cxz.to,fs.to##[class*="-universalsmall_"]
-brb.to,cxz.to,fs.to##[class*="adproxy"]
-brb.to,cxz.to,fs.to##div[id^="admixer_async_"]
-brb.to,cxz.to,fs.to##div[id^="adsProxy"]
-brb.to,fs.to##.b-styled__item-central
-brb.to,fs.to##.b-styled__section-central
-brb.to,fs.to##.l-body-branding-link
-cxz.to##.l-tab-item-content > div[id][class]
-||admixer.net^$domain=brb.to|cxz.to|fs.to
-||adproxy2.com^$domain=brb.to|cxz.to|fs.to
-||doubleclick.net^$domain=brb.to|cxz.to|fs.to
-||google-analytics.com^$domain=brb.to|cxz.to|fs.to
-||marketgid.com^$domain=brb.to|cxz.to|fs.to
-||trafmag.com^$domain=brb.to|cxz.to|fs.to
-||utarget.ru^$domain=brb.to|cxz.to|fs.to
-||yadro.ru^$domain=brb.to|cxz.to|fs.to
-!
 ! GISMeteo domains
 gismeteo.by,gismeteo.kz,gismeteo.ru,gismeteo.ua#@##ad-top
 tourism.gismeteo.ru###box-banner
@@ -340,7 +312,6 @@ ok.ru##.update-browser_container
 ||naruto-base.su/sl_30/
 !
 @@||easyvideo.me/gogo/$subdocument,domain=naruto-base.su
-@@||fs.to/video/*iframeplayer$subdocument,domain=naruto-base.su
 @@||mail.ru/*video$subdocument,domain=naruto-base.su
 @@||me/embed^$subdocument,domain=naruto-base.su
 @@||moonwalk.cc^*iframe$subdocument,domain=naruto-base.su
