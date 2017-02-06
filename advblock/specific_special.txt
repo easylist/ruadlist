@@ -281,7 +281,8 @@ $websocket,domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail
 //rs.mail.ru/b*.swf|$domain=~my.mail.ru
 /brandingVideo.js$domain=mail.ru
 /mrg-context.$script,stylesheet,domain=mail.ru
-|blob:$domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail.ru|health.mail.ru|hi-tech.mail.ru|horo.mail.ru|lady.mail.ru|minigames.mail.ru|my.mail.ru|news.mail.ru|sport.mail.ru
+|blob:$script,domain=health.mail.ru|horo.mail.ru
+|blob:$script,subdocument,domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail.ru|hi-tech.mail.ru|lady.mail.ru|minigames.mail.ru|my.mail.ru|news.mail.ru|sport.mail.ru
 |ws*://$domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail.ru|health.mail.ru|hi-tech.mail.ru|horo.mail.ru|lady.mail.ru|minigames.mail.ru|my.mail.ru|news.mail.ru|sport.mail.ru
 ||bs.mail.ru^$image,domain=mail.ru
 ||c-cdn.coub.com^$script,domain=mail.ru
@@ -479,7 +480,7 @@ lenta.ru,motor.ru,rambler.ru##div[id^="AdFox_banner_"]
 lenta.ru,motor.ru##div[id^="AdFox_iframe_"]
 rambler.ru.yn-direct
 weather.rambler.ru##section
-|blob:$domain=weather.rambler.ru
+|blob:$script,domain=weather.rambler.ru
 |ws*://$domain=weather.rambler.ru
 ||ag.ru/*/bottom_bg.jpg
 ||ag.ru/*/flash.swf
@@ -529,7 +530,7 @@ cnews.ru##div[class^="cnb_popup"]
 rbc.ru##div[class^="js-checkad"]
 cnews.ru##div[id^="div-gpt-ad-"]
 rbc.ru##div[id^="mlph"]
-|blob:$domain=rbc.ru
+|blob:$script,domain=rbc.ru
 |ws*://$domain=rbc.ru
 ||banner.rbc.ru/
 ||cnews.ru/inc/banners/
