@@ -446,7 +446,6 @@ rambler.ru##.bnr
 games.kanobu.ru##.branding
 championat.com##.branding-link
 news.rambler.ru##.cemetery__item.partner
-weather.rambler.ru##.content > .row-flex > :not([class]):not([style]):not(div)
 championat.com##.fanside-goods-list
 motor.ru##.gallery-billboard
 tv.rambler.ru##.h-promo
@@ -460,8 +459,6 @@ news.rambler.ru##.middle.j-partner
 rambler.ru##.mixednews-item_partner
 rambler.ru##.mixednews__aside > :not(.mixednews-aside-item_traffic-informer)
 news.rambler.ru##.rnet.partner
-weather.rambler.ru##.row-flex > div[class^="column"] > .row > :not([class]):not([style]):not(div)
-weather.rambler.ru##.row-flex > div[class^="column"] > :not([class]):not([style]):not(div)
 championat.com##.subheader
 rambler.ru##.tp-bnpl
 rambler.ru##.yn-direct
@@ -473,7 +470,6 @@ rambler.ru##a[class$="__yad"]
 rambler.ru##a[class$="__yad"] ~ *
 rambler.ru##a[href*="sos-news.rambler.ru"]
 ag.ru##a[href^="http://www.ag.ru/go/outer"]
-weather.rambler.ru##body > .content > :not([class]):not([style]):not(div)
 weather.rambler.ru##div[class*="ad-fox-right-"]
 news.rambler.ru##div[class][data-partner*="24smi"]
 mail.rambler.ru##div[class^="adWords"]
@@ -483,6 +479,7 @@ championat.com##div[class^="l-popup"]
 lenta.ru,motor.ru,rambler.ru##div[id^="AdFox_banner_"]
 lenta.ru,motor.ru##div[id^="AdFox_iframe_"]
 rambler.ru.yn-direct
+weather.rambler.ru##section
 |blob:$script,domain=weather.rambler.ru
 |ws*://$domain=weather.rambler.ru
 ||ag.ru/*/bottom_bg.jpg
