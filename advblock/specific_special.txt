@@ -709,6 +709,8 @@ yandex.ru##.org__sidebar > .org__links + div[style^="margin-top"]
 ##.serp-adv
 ##.serp-list + .serp-list > .serp-adv__head
 ##.serp-list + .serp-list > .serp-adv__head ~ .serp-item
+##.serp-list_left_yes[aria-label="Результаты поиска"] > .t-construct-adapter__adv
+##.serp-list_left_yes[aria-label="Результаты поиска"] > li.serp-item:not([class*="t-construct-adapter"]):not([class*="z-"])
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.sidebar-view div[style*="!important"]:not([style*="font-size"])
 ##.spec-adv
 ##.stat_pixel_yes[onclick][class*="_layout_"][class*="_format_"]
