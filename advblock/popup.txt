@@ -59,14 +59,6 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 /wtsin.cgi?id=$~popup,popup
 ^clickunder^$~popup,popup
 |http://*cp.MTblock=true&tz$popup
-||accountant/*rd.php?id=$third-party,popup
-||com/go.php?tid=*&hid=$popup
-||com/on.php?id=$popup
-||online/*rd.php?id=$third-party,popup
-||site/*rd.php?id=$third-party,popup
-||www.*.club/*&key=$third-party,popup
-||www.*.xyz/*&key=$third-party,popup
-||xyz/*rd.php?id=$third-party,popup
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
 .tnt-online.ru/?utm_$popup
 /pablo-escobar$popup
@@ -92,6 +84,7 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||130.211.212.60^$popup
 ||176.114.0.131^$popup
 ||777-888.ru^$popup
+||accountant/*rd.php?id=$third-party,popup
 ||actionpay.ru^$third-party,~popup,popup
 ||ads2rtb.com^$popup
 ||adserv01.ru^$third-party,~popup,popup
@@ -114,6 +107,7 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||baiduccdn.org^$popup
 ||baiducdn.org^$popup
 ||baztors.com^$third-party,popup
+||bid/*rd.php?id=$third-party,popup
 ||bitpit.xyz^$popup
 ||brndrm.com^$popup
 ||bubblesmedia.ru/gocu/$popup
@@ -126,6 +120,8 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||cliclo-gateway.ru^$popup
 ||cliclo-useraction.ru^$popup
 ||club-vullkan.com^$third-party,popup
+||com/go.php?tid=*&hid=$popup
+||com/on.php?id=$popup
 ||compareiseries.in^$third-party,~popup,popup
 ||cpagette.com^$third-party,popup
 ||cpagettio.com^$third-party,popup
@@ -197,6 +193,7 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||ognivonews.ru^$popup
 ||ojvodom.info^$popup
 ||onclkds.com^$third-party,popup
+||online/*rd.php?id=$third-party,popup
 ||peel-down.net/search.php?$popup
 ||playermailer.net^$popup
 ||poleznietovari.info^$popup
@@ -222,6 +219,7 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||sdsd11.ru^$popup
 ||shakesclick.com^$popup
 ||shakesin.com^$popup
+||site/*rd.php?id=$third-party,popup
 ||social-leads.ru^$third-party,~popup,popup
 ||starcrowd.ru^$popup
 ||stirshakead.com^$popup
@@ -249,6 +247,9 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||wap-jump.com/jump_redirect?id=$popup
 ||war.noc.su/?$popup
 ||watchformytechstuff.com^$popup
+||www.*.club/*&key=$third-party,popup
+||www.*.xyz/*&key=$third-party,popup
+||xyz/*rd.php?id=$third-party,popup
 ||yandes.biz/in.cgi?$popup
 ! - Прочее --------------------------------------------------------------------
 /blog_strijenko/*$popup
