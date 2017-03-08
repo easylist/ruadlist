@@ -408,14 +408,14 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,progorod11.ru,progorod33.ru,progo
 rambler.ru###ban_ruler
 ferra.ru###branding_top_link
 championat.com###brend_link_add
-rambler.ru###directData
+rambler.ru,~weather.rambler.ru###directData
 lenta.ru###goodnews-banner
 kanobu.ru###log_line_link
 rambler.ru###sidekickButton
 $websocket,domain=weather.rambler.ru
 autorambler.ru##.ad-item-paid
 rambler.ru##.adWords
-rambler.ru##.adfox-ad
+rambler.ru,~weather.rambler.ru##.adfox-ad
 rambler.ru##.adfox-billboard
 rambler.ru##.adsense
 rambler.ru##.advertising
@@ -463,8 +463,6 @@ rambler.ru##a[class$="__yad"] ~ *
 rambler.ru##a[href*="sos-news.rambler.ru"]
 ag.ru##a[href^="http://www.ag.ru/go/outer"]
 weather.rambler.ru##div:not([class]):not([id]):not([style])
-weather.rambler.ru##div[class*="ad-fox-right-"]
-weather.rambler.ru##div[class*="ad-fox-right-"] + div
 news.rambler.ru##div[class][data-partner*="24smi"]
 mail.rambler.ru##div[class^="adWords"]
 rambler.ru##div[class^="adfox-ban_"]
