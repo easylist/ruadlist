@@ -277,7 +277,6 @@ people-ask.ru###contentBox > #right > #rightContent
 interfax.ru,sports.ru,svpressa.ru###contentShifter
 imgclick.ru###content_r
 alldonors.ru###content_r_box
-spaces.ru###content_wrap_move > div[hidden] ~ div[class]
 pornreactor.cc###contentinner > div[id][style="display: block;"]
 gagadget.com###corpMagnet
 unian.info,unian.net,unian.ua###counters
@@ -424,7 +423,6 @@ igromania.ru###igromania_full_screen_banner
 batpic.com###imRunetkiPop
 tutu.ru###index_left > div[style^="height:"]
 spaces.ru###index_page > .oh ~ div[class][id]
-spaces.ru###index_page > div[class*="widgets-group"]:last-child
 autonews.com.ua###infloading
 gamedayz.net###info-main-block
 newdeaf-online.net###info.section > div[style^="position: relative"]
@@ -471,7 +469,6 @@ fastpic.ru###left2
 mosgorzdrav.ru###left_banners > a[href="http://sod.mos.ru"]
 kinosklad.net###left_fix
 laststicker.ru###left_menu > div[style] > noindex
-spaces.ru###left_nav > div[class^="saa"]
 spaces.ru###left_nav > ul + div[class]
 pidruchniki.com###left_slide > #conteiner
 studbooks.net,studme.org###left_slide > #conteiner,#left_slide > noindex
@@ -746,6 +743,9 @@ postmoda.ru###sidebarinner > fieldset
 nezhatin.com.ua###site-container > #container > center
 wordpressinside.ru###site5top2
 wordpressinside.ru###site5top3
+spaces.ru###siteContent /deep/ div[style="display: block !important"]
+spaces.ru###siteContent /deep/ div[style="display: block !important"] *
+spaces.ru###siteContent > #main_content + div[class]:not([id]):not([style])
 softbesplatno.net###site_adguard
 hdkinoklub.com,kino-max.com,kinokong.cc###sky_video
 meta.ua###slando_s
@@ -1569,7 +1569,6 @@ glavcom.ua##.content_pagead
 kg-portal.ru##.content_side > .cough_block
 maanimo.com##.content_top_banner
 spaces.ru##.content_wrap > #siteContent + div:not(.coins_gift)
-spaces.ru##.content_wrap > #siteContent ~ div[class]:not(.coins_gift)
 kino-hd.in##.contentpaneopen span[style*="color: #00ff00"]
 meta.ua##.context
 avito.ru##.context-banner
@@ -2226,7 +2225,6 @@ gmbox.ru##.region-header > div[style*="height:"]
 anti-malware.ru##.region-top-content
 sex-empire.tv##.rek
 baginya.org##.rek1
-spaces.ru##.rek_bl
 kinogo-1080.net##.rek_off
 potolokspec.ru,shkolapola.ru,spinheal.ru,teplo.guru##.rek_teasers
 2ch.hk,lenfilm.tv,zhahach.com##.rekl
@@ -2932,8 +2930,6 @@ allking.ru,narutoplanet.ru,pc-torrents.net,pornoshara.tv,rapidzona.tv##a[href*="
 fitfan.ru##a[href*="mediatoday.ru"] > img
 xtool.ru##a[href*="megaindex.com"][target="_blank"]
 readovka.ru##a[href*="metrumgroup.ru"]
-spaces.ru##a[href*="mobiads.ru"]
-spaces.ru##a[href*="mobiads.ru"] + *
 doramakun.ru##a[href*="molypoly.ru"]
 izum.ua##a[href*="moneyveo.ua"]
 bloknot-khersona.ks.ua,osnovu-ved.ru##a[href*="moudom.ho.ua"]
@@ -3233,7 +3229,6 @@ fishki.net##a[href^="http://li.ru/go?"]
 mintmanga.com##a[href^="http://librebook.ru/"]
 metrprice.ru##a[href^="http://lite.baza-winner.ru/"]
 detstrana.ru##a[href^="http://lnd.m-mba.ru/"]
-spaces.ru##a[href^="http://m.mobiads.ru/r"] + div[class],a[href^="http://m.mobiads.ru/r"]
 uamovies.ru##a[href^="http://macnews.in.ua"]
 mainspy.ru##a[href^="http://mainspy.ru/banner/"]
 hentaiz.org##a[href^="http://malfart.do.am"]
