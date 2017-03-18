@@ -529,6 +529,13 @@ weather.rambler.ru##div:not([class]):not([id]):not([style])
 weather.rambler.ru##div[class*="ad-fox-right-"]
 |blob:$script,domain=weather.rambler.ru
 |ws*://$domain=weather.rambler.ru
+! Субботний Rambler
+weekend.rambler.ru##.b-rubrics__rubric-super-footer
+weekend.rambler.ru##.js-container > .l-content ~ *
+weekend.rambler.ru##.js-sidebar-wrapper > :not(.js-top-right-banners):not(.js-sticky-sidebar-wrapper)
+weekend.rambler.ru##.js-sticky-sidebar-container > .js-plista > .plista_widget_sidebar ~ *
+weekend.rambler.ru##.js-vertical-banners
+weekend.rambler.ru##.l-content > .b-section > :not(.l-column):not(.b-moods)
 !
 ! RBC (РБК)
 cnews.ru###mag_banner
