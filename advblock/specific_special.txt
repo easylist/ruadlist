@@ -428,15 +428,13 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,progorod11.ru,progorod33.ru,progo
 ||ru/userfiles/$script,domain=pg11.ru|pg12.ru|pg13.ru|pg21.ru|prochepetsk.ru|progorod11.ru|progorod33.ru|progorod43.ru|progorod58.ru|progorod59.ru|progorod76.ru|progorodnn.ru|progoroduhta.ru
 !
 ! Rambler.RU и их проекты
-weather.rambler.ru###adfox-billboard
 rambler.ru###ban_ruler
 ferra.ru###branding_top_link
 championat.com###brend_link_add
-~news.rambler.ru,rambler.ru,~weather.rambler.ru###directData
+rambler.ru###directData
 lenta.ru###goodnews-banner
 kanobu.ru###log_line_link
 rambler.ru###sidekickButton
-$websocket,domain=weather.rambler.ru
 autorambler.ru##.ad-item-paid
 rambler.ru##.adWords
 rambler.ru##.adfox-ad
@@ -491,7 +489,6 @@ rambler.ru##a[class$="__yad"]
 rambler.ru##a[class$="__yad"] ~ *
 rambler.ru##a[href*="sos-news.rambler.ru"]
 ag.ru##a[href^="http://www.ag.ru/go/outer"]
-weather.rambler.ru##div:not([class]):not([id]):not([style])
 news.rambler.ru##div[class][data-partner*="24smi"]
 mail.rambler.ru##div[class^="adWords"]
 rambler.ru##div[class^="adfox-ban_"]
@@ -501,8 +498,6 @@ championat.com##div[class^="l-popup"]
 lenta.ru,motor.ru,rambler.ru##div[id^="AdFox_banner_"]
 lenta.ru,motor.ru##div[id^="AdFox_iframe_"]
 rambler.ru.yn-direct
-|blob:$script,domain=weather.rambler.ru
-|ws*://$domain=weather.rambler.ru
 ||ag.ru/*/bottom_bg.jpg
 ||ag.ru/*/flash.swf
 ||ag.ru/*/top_bg.jpg
@@ -519,7 +514,19 @@ rambler.ru.yn-direct
 ||rambler.ru/upl/clients/
 ||rambler.ru/upl/partners/
 ||rambler.ru^*.ban?
-||ssp.rambler.ru/context.jsp?*Begun_Autocontext_$script,domain=~weather.rambler.ru
+||ssp.rambler.ru/context.jsp?*Begun_Autocontext_$script
+! Погода Rambler
+weather.rambler.ru###adfox-billboard
+$websocket,domain=weather.rambler.ru
+weather.rambler.ru##.row-flex > div[class^="column-"] > .forecast-n-days ~ :not(.geo-select):not(.footer-copyrights)
+weather.rambler.ru##.row-flex > div[class^="column-"] > .row > :not(.geo-select):not(.forecast-month):not(.footer-copyrights)
+weather.rambler.ru##.row-flex > div[class^="column-"] > .row ~ :not(.row):not(.geo-select):not(.forecast-month):not(.footer-copyrights)
+weather.rambler.ru##.row-flex > div[class^="column-"] > .row-flex ~ :not(.row):not(.footer-copyrights)
+weather.rambler.ru##.row-flex > div[class^="column-"] > .weather-detailed ~ :not(.geo-select):not(.footer-copyrights)
+weather.rambler.ru##div:not([class]):not([id]):not([style])
+weather.rambler.ru##div[class*="ad-fox-right-"]
+|blob:$script,domain=weather.rambler.ru
+|ws*://$domain=weather.rambler.ru
 !
 ! RBC (РБК)
 cnews.ru###mag_banner
