@@ -447,10 +447,6 @@ rambler.ru##.adfox-billboard
 rambler.ru##.adsense
 rambler.ru##.advertising
 motor.ru##.adverts-bottom
-news.rambler.ru##.article__adfox
-news.rambler.ru##.article__plista
-news.rambler.ru##.aside-banners__banner-fixed
-news.rambler.ru##.aside-banners__banner-static
 mail.rambler.ru##.asideBannerFrame
 rambler.ru##.b-advertising
 rambler.ru##.b-article-aside__banner
@@ -466,27 +462,19 @@ price.ru##.banner__migkredit
 rambler.ru##.bnr
 games.kanobu.ru##.branding
 championat.com##.branding-link
-news.rambler.ru##.cemetery__item.partner
-news.rambler.ru##.columns.j-columns > .columns-more ~ *
-news.rambler.ru##.columns.j-columns > aside.aside
-news.rambler.ru##.columns__adfox
 championat.com##.fanside-goods-list
 motor.ru##.gallery-billboard
 tv.rambler.ru##.h-promo
 rambler.ru##.inbann
-news.rambler.ru##.j-cluster-aside__item.cluster-aside__item.partner.active
 motor.ru##.js-adv
 motor.ru##.js-adverts
 motor.ru##.js-adverts-top
 ag.ru##.link1
-news.rambler.ru##.middle.j-partner
 rambler.ru##.mixednews-item_partner
 rambler.ru##.mixednews__aside > :not(.mixednews-aside-item_traffic-informer)
-news.rambler.ru##.rnet.partner
 championat.com##.subheader
 rambler.ru##.tp-bnpl
 rambler.ru##.yn-direct
-news.rambler.ru##[class][data-partner*="rexchange.begun.ru/banner"]
 nova.rambler.ru##[class^="b-context"][style*="!important"]
 nova.rambler.ru##[class^="b-podmes_"]
 championat.com##[class^="banner"]
@@ -494,7 +482,6 @@ rambler.ru##a[class$="__yad"]
 rambler.ru##a[class$="__yad"] ~ *
 rambler.ru##a[href*="sos-news.rambler.ru"]
 ag.ru##a[href^="http://www.ag.ru/go/outer"]
-news.rambler.ru##div[class][data-partner*="24smi"]
 mail.rambler.ru##div[class^="adWords"]
 rambler.ru##div[class^="adfox-ban_"]
 rambler.ru##div[class^="b-reklama"]
@@ -520,6 +507,7 @@ rambler.ru.yn-direct
 ||rambler.ru/upl/partners/
 ||rambler.ru^*.ban?
 ||ssp.rambler.ru/context.jsp?*Begun_Autocontext_$script
+!
 ! Погода Rambler
 weather.rambler.ru###adfox-billboard
 $websocket,domain=weather.rambler.ru
@@ -532,6 +520,28 @@ weather.rambler.ru##div:not([class]):not([id]):not([style])
 weather.rambler.ru##div[class*="ad-fox-right-"]
 |blob:$script,domain=weather.rambler.ru
 |ws*://$domain=weather.rambler.ru
+!
+!Новости Rambler
+news.rambler.ru##.article__adfox
+news.rambler.ru##.article__plista
+news.rambler.ru##.aside-banners__banner-fixed
+news.rambler.ru##.aside-banners__banner-static
+news.rambler.ru##.cemetery__item.partner
+news.rambler.ru##.columns.j-columns > .columns-more ~ *
+news.rambler.ru##.columns.j-columns > .columns__list > .j-columns__column > .columns__column_inner ~ *
+news.rambler.ru##.columns.j-columns > :not(.columns__list):not(.j-columns__more)
+news.rambler.ru##.columns.j-columns > aside.aside
+news.rambler.ru##.columns__adfox
+news.rambler.ru##.grid > .popular > :not(.popular__wrap)
+news.rambler.ru##.grid-overlay > .grid > .j-videos ~ :not(.stories)
+news.rambler.ru##.grid-overlay > .grid > .stories > :not(.rated):not(.stories__subject):not(.articles):not(.stories-more):not(.photos)
+news.rambler.ru##.j-cluster-aside__item.cluster-aside__item.partner.active
+news.rambler.ru##.media__adfox
+news.rambler.ru##.middle.j-partner
+news.rambler.ru##.rnet.partner
+news.rambler.ru##[class][data-partner*="rexchange.begun.ru/banner"]
+news.rambler.ru##div[class][data-partner*="24smi"]
+!
 ! Субботний Rambler
 weekend.rambler.ru##.b-rubrics__rubric-super-footer
 weekend.rambler.ru##.js-container > .l-content ~ *
