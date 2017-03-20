@@ -511,11 +511,15 @@ rambler.ru.yn-direct
 ! Погода Rambler
 weather.rambler.ru###adfox-billboard
 $websocket,domain=weather.rambler.ru
+weather.rambler.ru##.footer-copyrights > *
+weather.rambler.ru##.geo-select > :not(.tile__title):not(.geo-select__suggest):not(.geo-select__list)
 weather.rambler.ru##.row-flex > div[class^="column-"] > .forecast-n-days ~ :not(.geo-select):not(.footer-copyrights)
 weather.rambler.ru##.row-flex > div[class^="column-"] > .row > :not(.geo-select):not(.forecast-month):not(.footer-copyrights)
 weather.rambler.ru##.row-flex > div[class^="column-"] > .row ~ :not(.row):not(.geo-select):not(.forecast-month):not(.footer-copyrights)
 weather.rambler.ru##.row-flex > div[class^="column-"] > .row-flex ~ :not(.row):not(.footer-copyrights)
 weather.rambler.ru##.row-flex > div[class^="column-"] > .weather-detailed ~ :not(.geo-select):not(.footer-copyrights)
+weather.rambler.ru##.weather-today > :not(.tile__title):not([class^="weather-"]):not(.suggest):not(.tile__sub)
+weather.rambler.ru##body > .content > :not(.row):not(.row-flex)
 weather.rambler.ru##div:not([class]):not([id]):not([style])
 weather.rambler.ru##div[class*="ad-fox-right-"]
 |blob:$script,domain=weather.rambler.ru
