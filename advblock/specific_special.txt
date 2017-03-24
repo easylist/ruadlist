@@ -437,6 +437,7 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,progorod11.ru,progorod33.ru,progo
 ||ru/userfiles/$script,domain=pg11.ru|pg12.ru|pg13.ru|pg21.ru|prochepetsk.ru|progorod11.ru|progorod33.ru|progorod43.ru|progorod58.ru|progorod59.ru|progorod76.ru|progorodnn.ru|progoroduhta.ru
 !
 ! Rambler.RU и их проекты
+rambler.ru###adfox-billboard
 rambler.ru###ban_ruler
 ferra.ru###branding_top_link
 championat.com###brend_link_add
@@ -486,6 +487,7 @@ rambler.ru##a[class$="__yad"]
 rambler.ru##a[class$="__yad"] ~ *
 rambler.ru##a[href*="sos-news.rambler.ru"]
 ag.ru##a[href^="http://www.ag.ru/go/outer"]
+rambler.ru##div[class*="ad-fox-right-"]
 mail.rambler.ru##div[class^="adWords"]
 rambler.ru##div[class^="adfox-ban_"]
 rambler.ru##div[class^="b-reklama"]
@@ -512,20 +514,14 @@ rambler.ru.yn-direct
 ||rambler.ru^*.ban?
 ||ssp.rambler.ru/context.jsp?*Begun_Autocontext_$script
 !
-! Погода Rambler
-$websocket,domain=weather.rambler.ru
-weather.rambler.ru###adfox-billboard
-weather.rambler.ru##div[class*="ad-fox-right-"]
-|blob:$script,domain=weather.rambler.ru
-|ws*://$domain=weather.rambler.ru
-||weather.rambler.ru/abduces/
-||weather.rambler.ru/barflies/
-||weather.rambler.ru/reobtain/
-||weather.rambler.ru/suitor/
-||weather.rambler.ru/uniform/
-||weather.rambler.ru/weekend/
-||weather.rambler.ru/xmas/
-||weather.rambler.ru/yachted/
+||rambler.ru/abduces/$~third-party,xmlhttprequest,domain=news.rambler.ru|weather.rambler.ru|weekend.rambler.ru
+||rambler.ru/barflies/$~third-party,xmlhttprequest,domain=news.rambler.ru|weather.rambler.ru|weekend.rambler.ru
+||rambler.ru/reobtain/$~third-party,xmlhttprequest,domain=news.rambler.ru|weather.rambler.ru|weekend.rambler.ru
+||rambler.ru/suitor/$~third-party,xmlhttprequest,domain=news.rambler.ru|weather.rambler.ru|weekend.rambler.ru
+||rambler.ru/uniform/$~third-party,xmlhttprequest,domain=news.rambler.ru|weather.rambler.ru|weekend.rambler.ru
+||rambler.ru/weekend/$~third-party,xmlhttprequest,domain=news.rambler.ru|weather.rambler.ru|weekend.rambler.ru
+||rambler.ru/xmas/$~third-party,xmlhttprequest,domain=news.rambler.ru|weather.rambler.ru|weekend.rambler.ru
+||rambler.ru/yachted/$~third-party,xmlhttprequest,domain=news.rambler.ru|weather.rambler.ru|weekend.rambler.ru
 !
 !Новости Rambler
 news.rambler.ru##.article-slides__cover_aside_banner
@@ -539,27 +535,11 @@ news.rambler.ru##.latest__adfox
 news.rambler.ru##.media__adfox
 news.rambler.ru##.middle.j-partner
 news.rambler.ru##div[class][data-partner*="24smi"]
-||news.rambler.ru/abduces/
-||news.rambler.ru/barflies/
-||news.rambler.ru/reobtain/
-||news.rambler.ru/suitor/
-||news.rambler.ru/uniform/
-||news.rambler.ru/weekend/
-||news.rambler.ru/xmas/
-||news.rambler.ru/yachted/
 !
 ! Субботний Rambler
 weekend.rambler.ru##.b-rubrics__rubric-super-footer
 weekend.rambler.ru##.b-rubrics__section_right-banners
 weekend.rambler.ru##.js-vertical-banners
-||weekend.rambler.ru/abduces/
-||weekend.rambler.ru/barflies/
-||weekend.rambler.ru/reobtain/
-||weekend.rambler.ru/suitor/
-||weekend.rambler.ru/uniform/
-||weekend.rambler.ru/weekend/
-||weekend.rambler.ru/xmas/
-||weekend.rambler.ru/yachted/
 !
 ! RBC (РБК)
 cnews.ru###mag_banner
