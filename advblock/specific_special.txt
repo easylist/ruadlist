@@ -516,32 +516,12 @@ rambler.ru.yn-direct
 ||rambler.ru^*.ban?
 ||ssp.rambler.ru/context.jsp?*Begun_Autocontext_$script
 !
-||news.rambler.ru/abduces/
-||news.rambler.ru/barflies/
-||news.rambler.ru/reobtain/
-||news.rambler.ru/suitor/
-||news.rambler.ru/uniform/
-||news.rambler.ru/weekend/
-||news.rambler.ru/xmas/
-||news.rambler.ru/yachted/
-||weather.rambler.ru/abduces/
-||weather.rambler.ru/barflies/
-||weather.rambler.ru/reobtain/
-||weather.rambler.ru/suitor/
-||weather.rambler.ru/uniform/
-||weather.rambler.ru/weekend/
-||weather.rambler.ru/xmas/
-||weather.rambler.ru/yachted/
-||weekend.rambler.ru/abduces/
-||weekend.rambler.ru/barflies/
-||weekend.rambler.ru/reobtain/
-||weekend.rambler.ru/suitor/
-||weekend.rambler.ru/uniform/
-||weekend.rambler.ru/weekend/
-||weekend.rambler.ru/xmas/
-||weekend.rambler.ru/yachted/
+! Погода Rambler
+||weather.rambler.ru/*/?*=ey
+||weather.rambler.ru/*/ey
+||weather.rambler.ru/*/|$~script,~third-party
 !
-!Новости Rambler
+! Новости Rambler
 news.rambler.ru##.article-slides__cover_aside_banner
 news.rambler.ru##.article__adfox
 news.rambler.ru##.article__plista
@@ -552,12 +532,19 @@ news.rambler.ru##.columns__adfox
 news.rambler.ru##.latest__adfox
 news.rambler.ru##.media__adfox
 news.rambler.ru##.middle.j-partner
+@@||news.rambler.ru/ajax/backtime/|$xmlhttprequest,domain=news.rambler.ru
 news.rambler.ru##div[class][data-partner*="24smi"]
+||news.rambler.ru/*/?*=ey
+||news.rambler.ru/*/ey
+||news.rambler.ru/*/|$~script,~third-party
 !
 ! Субботний Rambler
 weekend.rambler.ru##.b-rubrics__rubric-super-footer
 weekend.rambler.ru##.b-rubrics__section_right-banners
 weekend.rambler.ru##.js-vertical-banners
+||weekend.rambler.ru/*/?*=ey
+||weekend.rambler.ru/*/ey
+||weekend.rambler.ru/*/|$~script,~third-party
 !
 ! RBC (РБК)
 cnews.ru###mag_banner
