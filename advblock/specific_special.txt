@@ -519,9 +519,9 @@ rambler.ru.yn-direct
 ||ssp.rambler.ru/context.jsp?*Begun_Autocontext_$script
 !
 ! Погода Rambler
-||weather.rambler.ru/*/?*=ey
-||weather.rambler.ru/*/ey
-||weather.rambler.ru/*/|$~script,~third-party
+@@||weather.rambler.ru/api/*/suggest/?query=$xmlhttprequest,domain=weather.rambler.ru
+@@||weather.rambler.ru/static/$script,domain=weather.rambler.ru
+||weather.rambler.ru/*/$script,~third-party,xmlhttprequest
 !
 ! Новости Rambler
 news.rambler.ru##.article-slides__cover_aside_banner
@@ -534,19 +534,17 @@ news.rambler.ru##.columns__adfox
 news.rambler.ru##.latest__adfox
 news.rambler.ru##.media__adfox
 news.rambler.ru##.middle.j-partner
-@@||news.rambler.ru/ajax/backtime/$xmlhttprequest,domain=news.rambler.ru
+@@||news.rambler.ru/ajax/$xmlhttprequest,domain=news.rambler.ru
+@@||news.rambler.ru/api/$xmlhttprequest,domain=news.rambler.ru
 news.rambler.ru##div[class][data-partner*="24smi"]
-||news.rambler.ru/*/?*=ey
-||news.rambler.ru/*/ey
-||news.rambler.ru/*/|$~script,~third-party
+||news.rambler.ru/*/$~third-party
 !
 ! Субботний Rambler
 weekend.rambler.ru##.b-rubrics__rubric-super-footer
 weekend.rambler.ru##.b-rubrics__section_right-banners
 weekend.rambler.ru##.js-vertical-banners
-||weekend.rambler.ru/*/?*=ey
-||weekend.rambler.ru/*/ey
-||weekend.rambler.ru/*/|$~script,~third-party
+@@||weekend.rambler.ru/assets/$script,domain=weekend.rambler.ru
+||weekend.rambler.ru/*/$script,~third-party,xmlhttprequest
 !
 ! RBC (РБК)
 cnews.ru###mag_banner
