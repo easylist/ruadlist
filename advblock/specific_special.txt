@@ -547,7 +547,8 @@ rambler.ru.yn-direct
 !
 ! Погода Rambler
 @@||weather.rambler.ru/api/*/suggest/?query=$xmlhttprequest,domain=weather.rambler.ru
-@@||weather.rambler.ru/static/$script,domain=weather.rambler.ru
+@@||weather.rambler.ru/static/*/dist/rambler-weather.$domain=weather.rambler.ru
+||news.rl0.ru^$~stylesheet,domain=weather.rambler.ru
 ||weather.rambler.ru/*/$script,~third-party,xmlhttprequest
 !
 ! Новости Rambler
