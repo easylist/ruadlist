@@ -552,6 +552,10 @@ rambler.ru.yn-direct
 @@||weather.rambler.ru/api/*/suggest/?query=$xmlhttprequest,domain=weather.rambler.ru
 @@||weather.rambler.ru/static/v*/dist/adfox/adfox-loader.min.js$script,domain=weather.rambler.ru
 @@||weather.rambler.ru/static/v*/dist/rambler-weather.$domain=weather.rambler.ru
+weather.rambler.ru##[href^="https://news.rl0.ru/"]
+weather.rambler.ru##img[src^="data:image"]:not(.header__logo-image)
+weather.rambler.ru##img[srcset]
+weather.rambler.ru##span:not([class])
 ||news.rl0.ru^$~image,~stylesheet,domain=weather.rambler.ru
 ||weather.rambler.ru/*/$script,~third-party,xmlhttprequest
 !
