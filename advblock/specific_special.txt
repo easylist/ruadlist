@@ -39,11 +39,13 @@ gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru##.rfram
 gismeteo.by##.side > .side__i
 gismeteo.by,gismeteo.ru##.side > noindex
 @@||a.votpusk.ru^$image,domain=tourism.gismeteo.ru
-gismeteo.ru##div[class*="crframe"]
+gismeteo.ru##body > div[id][class][-abp-properties="position: absolute"]
+gismeteo.ru##body > section:not([class]):not([id]):nth-of-type(1)
 gismeteo.kz##div[id^="rek-gis-news"]
 ||gismeteo.*/*weather-gis-news-alter$script
 ||gismeteo.*/rian.html|
 ||gismeteo.ru/assets/flat-ui/js/modules/MG.Media.js
+||static.criteo.net^$script,domain=gismeteo.ru
 !
 ! HDGO & Tushkan
 @@||ajax.googleapis.com/ajax/libs/$script,domain=hdgo.cc
