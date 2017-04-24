@@ -649,6 +649,7 @@ $websocket,domain=rbc.ru
 autonews.ru,rbc.ua,rbcdaily.ru##.banner
 utro.ru##.banner-middle
 utro.ru##.banner-right
+rbc.ru##.banner.g-zindex-top
 rbc.ru##.banner__container
 rbc.ru##.banner__filmstrip
 utro.ru##.banner_bottom_art
@@ -663,6 +664,7 @@ www.rbc.ru##.l-vertical-line > .l-row > div[id]:not([class])
 rbc.ru##.l-window > .teasers
 cnews.ru##.main > noindex:last-child
 rbc.ru##.project-event__partner.js-yandex-counter
+rbc.ru##.rbc_adv
 ##.rbcobmen
 rbc.ru##.rbcslider__data > div[style="display: block !important;"] div[style*="background-color: rgb"]
 cnews.ru##.tizer_block
@@ -680,7 +682,7 @@ rbc.ru##div[class^="js-checkad"]
 cnews.ru##div[id^="div-gpt-ad-"]
 rbc.ru##div[id^="mlph"]
 autonews.ru,rbc.ru,rbc.ua,rbcdaily.ru##div[id^="unit_"]
-|blob:$script,domain=rbc.ru
+|blob:$domain=rbc.ru
 |ws*://$domain=rbc.ru
 ||banner.rbc.ru/
 ||cnews.ru/inc/banners/
