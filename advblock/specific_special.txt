@@ -377,35 +377,6 @@ otvet.mail.ru##div[id^="adv-slot-"]
 maps.mail.ru##img[width="200"][height="30"]
 health.mail.ru##img[width="240"][height="200"]
 ! Блокировка ресурсов в основном на самом mail.ru
-! проверка видимости
-@@||afisha.mail.ru/ajax/$xmlhttprequest,domain=afisha.mail.ru
-@@||afisha.mail.ru/ext/adm/$xmlhttprequest,domain=afisha.mail.ru
-@@||auto.mail.ru/ajax/$xmlhttprequest,domain=auto.mail.ru
-@@||auto.mail.ru/comments/list/$xmlhttprequest,domain=auto.mail.ru
-@@||auto.mail.ru/content/get_articles_count/$xmlhttprequest,domain=auto.mail.ru
-@@||auto.mail.ru/forum/ajax/$xmlhttprequest,domain=auto.mail.ru
-@@||hi-tech.mail.ru/ajax/$xmlhttprequest,domain=hi-tech.mail.ru
-@@||lady.mail.ru/ajax/$xmlhttprequest,domain=lady.mail.ru
-@@||lady.mail.ru/poll*/quiz/$xmlhttprequest,domain=lady.mail.ru
-@@||news.mail.ru/ajax/$xmlhttprequest,domain=news.mail.ru
-@@||news.mail.ru/ext/most_shared_news/|$xmlhttprequest,domain=news.mail.ru
-@@||news.mail.ru/json/broadcast/get_channel.json$xmlhttprequest,domain=news.mail.ru
-@@||news.mail.ru/najax/api/comments/$xmlhttprequest,domain=news.mail.ru
-@@||sport.mail.ru/block/main/$xmlhttprequest,domain=sport.mail.ru
-||afisha.mail.ru/*/?$~third-party,xmlhttprequest
-||afisha.mail.ru/*/|$~third-party,xmlhttprequest
-||auto.mail.ru/*/?$~third-party,xmlhttprequest
-||auto.mail.ru/*/|$~third-party,xmlhttprequest
-||hi-tech.mail.ru/*/?$~third-party,xmlhttprequest
-||hi-tech.mail.ru/*/|$~third-party,xmlhttprequest
-||horo.mail.ru/*/?$~third-party,xmlhttprequest
-||horo.mail.ru/*/|$~third-party,xmlhttprequest
-||lady.mail.ru/*/?$~third-party,xmlhttprequest
-||lady.mail.ru/*/|$~third-party,xmlhttprequest
-||news.mail.ru/*/?$~third-party,xmlhttprequest
-||news.mail.ru/*/|$~third-party,xmlhttprequest
-||sport.mail.ru/*/?$~third-party,xmlhttprequest
-!
 $websocket,domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail.ru|health.mail.ru|hi-tech.mail.ru|horo.mail.ru|lady.mail.ru|minigames.mail.ru|my.mail.ru|news.mail.ru|sport.mail.ru
 //r.mail.ru/b$subdocument
 //rs.mail.ru/b$domain=e.mail.ru
