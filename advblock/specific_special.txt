@@ -214,18 +214,18 @@ gismeteo.kz##div[id^="rek-gis-news"]
 ! Объединять правила с banner в конце не стоит - там ещё другие классы перечислены часто
 ! Скрытие по-разделам
 ! Общие правила
-mail.ru,~news.mail.ru###ad-sputnik
-mail.ru,~news.mail.ru###internet-offer
-mail.ru,~news.mail.ru##.b-ad_text
-mail.ru,~news.mail.ru##.b-context
-mail.ru,~news.mail.ru##.b-direct-item
-mail.ru,~news.mail.ru##.b-head__banner
-mail.ru,~news.mail.ru##.ban
-mail.ru,~news.mail.ru##.banner
+~afisha.mail.ru,mail.ru,~news.mail.ru###ad-sputnik
+~afisha.mail.ru,mail.ru,~news.mail.ru###internet-offer
+~afisha.mail.ru,mail.ru,~news.mail.ru##.b-ad_text
+~afisha.mail.ru,mail.ru,~news.mail.ru##.b-context
+~afisha.mail.ru,mail.ru,~news.mail.ru##.b-direct-item
+~afisha.mail.ru,mail.ru,~news.mail.ru##.b-head__banner
+~afisha.mail.ru,mail.ru,~news.mail.ru##.ban
+~afisha.mail.ru,mail.ru,~news.mail.ru##.banner
 mail.ru##.bgshechka
 mail.ru##.branding-footer
 mail.ru##.daynews__banner
-mail.ru##.daynews__spring
+~afisha.mail.ru,mail.ru##.daynews__spring
 mail.ru##.direct
 mail.ru##.goods
 mail.ru##.js-banner
@@ -234,9 +234,10 @@ mail.ru##.js-popup_gallery .viewbox__side
 mail.ru##.layout__centercol__wrap > div[id^="slot_"][class="tgb"]
 mail.ru##.layout__promotoolbar
 mail.ru##.left_banner
-~horo.mail.ru,mail.ru,~news.mail.ru##.p-mimic
+~afisha.mail.ru,~horo.mail.ru,mail.ru,~news.mail.ru##.p-mimic
 mail.ru##.page-bottomad
 mail.ru##.page-topad
+mail.ru##.pc-mimic
 mail.ru##.portal-menu__banner
 mail.ru##.rb-container
 mail.ru##.rb-video-widget
