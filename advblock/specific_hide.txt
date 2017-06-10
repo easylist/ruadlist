@@ -3781,7 +3781,9 @@ censor.net.ua##body > header > aside
 politobzor.net##body > noindex > a[style][target="_blank"]
 4pna.com##body > noindex > center
 moto.kiev.ua##body > noindex > noindex
+pr-cy.ru##body > script + div[class] + span:not([style])
 daxab.com##body > script[src*=".php?zoneid="] ~ a[href]
+pr-cy.ru##body > span a[href][target="_blank"] > img
 dari-radost13.ru##body > table
 pixs.ru##body > table > tbody > tr > td[valign][width]
 tyndex.ru##body > table > tbody > tr:first-child > td:first-child + td[valign="top"][align="left"]
@@ -3899,7 +3901,6 @@ toster.ru##div[class^="adsbygoogle"]
 apple-russia.ru##div[class^="adv"]
 lovitut.ru##div[class^="advert"]
 myplaycity.ru##div[class^="advertisement"]
-pr-cy.ru##div[class^="afb-"]
 ekaraganda.kz##div[class^="aks-"]
 vc.ru##div[class^="b-adv-"]
 gdekluet.ru##div[class^="b-app-promoter"]
