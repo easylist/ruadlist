@@ -74,6 +74,7 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 /vkshpion/?page=$popup
 /webunder.$~popup,popup
 /wtsin.cgi?id=$~popup,popup
+=cpa&utm_campaign$popup
 ^clickunder^$~popup,popup
 |http://*cp.MTblock=true&tz$popup
 ! - Редиректоры (открываются в попапе и перекидывают на другой сайт) ----------
@@ -330,14 +331,17 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||astdn.ru^$third-party,popup
 ||audance.ru*/promo/$popup
 ||baz-tor.com^$popup
+||best-games.today^$popup
 ||blinkogold.ru^$popup
 ||bonsport.ru^$popup
+||bookofluck.net^$popup
 ||carnage.ru^$popup,domain=~carnage.ru|~karnage.ru|~sesterce.ru
 ||cashgift.club^$third-party,popup
 ||casino-x.com/?partner=$popup
 ||cdnet.tv/lockadb.$popup
 ||chaplingames.ru^$popup
 ||cityads.ru/click-$popup,domain=fayloobmennik.net|lovekinozal.ru|rusfolder.com|rutor.org
+||clbvpurple.com^$popup
 ||club-sale.ru^$popup
 ||clubrelaxxxx.com^$popup
 ||contactsin.mobi^$third-party,~popup,popup
@@ -356,9 +360,11 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||funtest-ru.com^$popup
 ||gamebomb.ru/gaming.$popup
 ||gameforge.com/landing$third-party,popup
+||gamesfortuna.com^$popup
 ||garmin.ru/virb/?$popup,domain=pikabu.ru
 ||gas-saver.org^$third-party,popup
 ||gemius.pl/popupredir$popup
+||getbonus.info^$popup
 ||goodsbrowser.com^$popup
 ||inet-dengi.net/?$popup
 ||kinoserver.pro^$third-party,popup
@@ -377,6 +383,7 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||moi-goroskop.com^$popup
 ||my-eromir.net^$popup
 ||mycultures.ru^$popup
+||olymptrade.com^*popander$third-party,popup
 ||panel.gemius.com.ua^$popup
 ||partypoker.com^*/videopop/$popup
 ||pi-c.ru/go.php?id=*&rref=$popup
@@ -404,6 +411,7 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||snailz.ru/promo/?$popup
 ||sub2.admitlead.ru/sb/clk$popup
 ||survey.gemius.com.ua^$popup
+||sysenvfiles.net^$popup
 ||tankionline.com/ru/play$popup
 ||test-studio.ru^$third-party,popup
 ||track.sharkgames.com^$third-party,popup
@@ -422,6 +430,7 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||worldoftanks.eu/play/$popup
 ||x-uboino.net^$popup
 ||x-uboino.ru^$popup
+||x-vulkan.net^$popup
 ||yapfiles.ru^*/rating_by_pop/$popup
 ||zzima.com^$popup,domain=~zzima.com
 ! - Попапы для мошенников ----------------------------------------------------------------
@@ -573,6 +582,7 @@ $popup,domain=101covet.com|176.114.0.126|176.114.0.132|24video.in|24video.sex|24
 ||morozisneg.ru^$popup
 ||mosblog24.ru^$popup
 ||mvdpmr.ru^$popup
+||my-story.info^$popup
 ||mytvblogs.ru^$popup
 ||mytvblogs24.ru^$popup
 ||naroda-blog.com^$popup
