@@ -533,13 +533,11 @@ myshows.ru###m-advert
 prestige-gaming.ru###m1-link[href]
 fullgames.ru###main + #right
 openssource.biz###main > .hide_btn
-spaces.ru###main > div > .strong_border
 filmix.me###main > div[class*="-"] > .container
 rapidzona.com###main > noindex
 seasonvar-hd.net###main-wrapper > noindex
 referatwork.ru###main2 > table
 forum.hdtv.ru,zadonbass.org###main_banner
-spaces.ru###main_content + div[class^="r"]
 free-torrent.org,free-torrent.pw,free-torrents.org,free-torrents.pw,game-torrent.info###main_content a[href^="http"][style*="color"]
 forum.tradelikeapro.ru###main_content_section > table > tbody > tr > td:nth-of-type(2)
 rugrad.eu###main_right_col > .section:not(.section_blogs)
@@ -788,6 +786,7 @@ nezhatin.com.ua###site-container > #container > center
 wordpressinside.ru###site5top2
 wordpressinside.ru###site5top3
 spaces.ru###siteContent > div:not([class]):not([id]):not([style]) + div[class]:not([id]):not([style])
+spaces.ru###siteContent.main > .clear ~ div[class]
 softbesplatno.net###site_adguard
 hdkinoklub.com,kino-max.com,kinokong.cc,kinovo.cc###sky_video
 meta.ua###slando_s
@@ -820,7 +819,7 @@ ibusiness.ru###substrate
 kirov-portal.ru###sushi_pokemon
 kinoshek.net###swf
 eurolab.ua,news.allcrimea.net###swiffycontainer
-spaces.ru###sz_gallery_loader > div[class^="r"]
+spaces.ru###sz_gallery_loader > .js-file_item ~ div[class]:not(.js-file_item)
 spaces.ru###sz_plain > div > .strong_border
 xn--80awhdeco3h.xn--p1ai,yarportal.ru,ярпортал.рф###table1
 lelang.ru###table_inviz
@@ -4076,6 +4075,7 @@ azbooki.ru,engisys.ru,zip1000.ru##div[id^="boom_bar"]
 progrib.ru##div[id^="bottom_block"]
 myscore.com.ua##div[id^="box-over-content"]
 taker.im##div[id^="bpe"]
+spaces.ru##div[id^="c"][class^="c"]:not([class*="content"])
 sonnik-online.net##div[id^="carousel_pos"]
 censor.net.ua##div[id^="censor_a"]
 check-host.net##div[id^="chadddos-guard"]
@@ -4123,7 +4123,6 @@ picforall.ru##div[id^="pay_thumb_"][id$="_side"]
 prostatitanet.com##div[id^="pg-aa-ad"]
 interfax.ru##div[id^="pl"][id*="_ban"]
 berdyansk.biz##div[id^="promo_banner"]
-spaces.ru##div[id^="r"][class^="r"]
 sport-express.ru##div[id^="rdminfrm_"]
 all-episodes.net##div[id^="recl"]
 nashol.com##div[id^="rek"][style]
