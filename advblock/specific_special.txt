@@ -969,12 +969,14 @@ yandex.ru##ymaps > div[class^="search-placemark-layout-connect_special"]
 ! Погода-Yandex
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.clearfix.content__top > .navigation-city_meteum > .title:not(h1)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.clearfix.content__top > .navigation-city_meteum > .title:not(h1) ~ *
-yandex.by,yandex.kz,yandex.ru,yandex.ua##.clearfix.content__top > div[class] > #dynamic
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.clearfix.content__top iframe
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.content div[class*="info_pos_"] > .info__map > .teaser-fox:not([class="teaser-fox"])
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.content div[class*="info_pos_"] > .info__map > .teaser-fox:not([class="teaser-fox"]) ~ *
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.forecast-detailed > .ad[class*="forecast-detailed"]
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.forecast-detailed > [class*="forecast-detailed"] + style[rel="stylesheet"] + div[class]:not([style]):not([id])
-yandex.by,yandex.kz,yandex.ru,yandex.ua##.info__ratatue div[class][style="display:block;visibility:visible"]
+/pogoda/cry/$subdocument,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
+yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="/pogoda/"] /deep/ div[style="display:block;visibility:visible"]
+yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="/pogoda/"] div[style="display:block;visibility:visible"]
 ! Новости-Yandex
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.page-content__col > .widget_for_auto[data-bem]
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.page-content__extra-item > [class][data-bem]
