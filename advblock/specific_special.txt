@@ -974,9 +974,15 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##div[data-block="banner-view"]
 yandex.ru##ymaps > div[class^="search-placemark-layout-connect_advert"]
 yandex.ru##ymaps > div[class^="search-placemark-layout-connect_special"]
 ! Погода-Yandex
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.clearfix.content__top > .navigation-city_meteum > .title:not(h1)
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.clearfix.content__top > .navigation-city_meteum > .title:not(h1) ~ *
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.clearfix.content__top > :not(.current-weather):not(.navigation-city):not(.graph-month)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.clearfix.content__top iframe
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.clearfix.content__top ~ div div[style=""]
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.content div[class*="info_pos_"] > .info__map > .teaser-fox:not([class="teaser-fox"])
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.content div[class*="info_pos_"] > .info__map > .teaser-fox:not([class="teaser-fox"]) ~ *
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.forecast-detailed > [class*="forecast-detailed"] + style[rel="stylesheet"] + div[class]:not([id])
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.forecast-detailed > [class*="forecast-detailed"] style[rel="stylesheet"] + div[class]:not([id])
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.info_pos_1.info > :not(.info__map):not(.info__more)
 /pogoda/cry/$subdocument,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="/pogoda/"] /deep/ div[style="display:block;visibility:visible"]
