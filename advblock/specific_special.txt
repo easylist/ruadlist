@@ -766,6 +766,7 @@ weekend.rambler.ru##.js-vertical-banners
 rbc.ru## .js-rbcslider-multi-news ~ style + div[class]
 cnews.ru###mag_banner
 $websocket,domain=rbc.ru
+www.rbc.ru##.article__right-banners .g-banner-hide-by-exclusive ~ :not(.js-rbcslider-sticky-second)
 autonews.ru,rbc.ua,rbcdaily.ru##.banner
 utro.ru##.banner-middle
 utro.ru##.banner-right
@@ -784,6 +785,7 @@ rbc.ru##.g-banner__height-250
 rbc.ru##.g-banner__news-footer div[class^="js-checkad"] + div[style^="position"]
 rbc.ru##.g-banner__padding
 rbc.ru##.indicators_vert__spec
+www.rbc.ru##.js-rbcslider-multi-news ~ div[class]:empty + div[class]
 www.rbc.ru##.l-col-main > .l-col-main__inner > div[id]:not([style])
 www.rbc.ru##.l-vertical-line > .l-row > div[id]:not([class])
 rbc.ru##.l-window > .teasers
@@ -794,6 +796,7 @@ rbc.ru##.rbc_adv
 cnews.ru##.tizer_block
 cnews.ru##.yandex_banner
 rbcdaily.ru##[class*="_adv"]
+rbc.ru##[class*="banner"] a[href*="/an.yandex.ru/count/"]
 autonews.ru##[class^="banner_"]
 rbc.ru##[data-yandex-name="offers"]
 rbc.ru##a[href*="RBC_Adblock"]
