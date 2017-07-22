@@ -11,13 +11,13 @@
 ||servebbs.net^$third-party,script,subdocument
 ||zavetiss.ru^$third-party
 !
-||asia^$third-party,script,subdocument
-||pw^$third-party,script,domain=~adwiz.pp.ua|~softpir.com|~xn--drakulastrem-b7e.com
-||xyz^$third-party,script,subdocument
+||asia^$third-party,script,subdocument,xmlhttprequest
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~softpir.com|~xn--drakulastrem-b7e.com
+||xyz^$third-party,script,subdocument,xmlhttprequest
 !
 ! Исключения
-@@||12go.asia^$script,subdocument,domain=tourister.ru
+@@||12go.asia^$domain=tourister.ru
 @@||1cdn.pw^$third-party
 @@||azvideo.asia^$domain=miwed.ru
-@@||callback.pw^$third-party,script
-@@||nyan.pw^$third-party,script
+@@||callback.pw^$third-party,script,xmlhttprequest
+@@||nyan.pw^$third-party,script,xmlhttprequest
