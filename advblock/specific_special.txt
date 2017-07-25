@@ -797,7 +797,6 @@ weekend.rambler.ru##.js-vertical-banners
 ||weekend.rambler.ru/*/$~image,~third-party
 !
 ! RBC (РБК)
-rbc.ru## .js-rbcslider-multi-news ~ style + div[class]
 cnews.ru###mag_banner
 $websocket,domain=rbc.ru
 www.rbc.ru##.article__right-banners .g-banner-hide-by-exclusive ~ :not(.js-rbcslider-sticky-second)
@@ -816,29 +815,19 @@ rbc.ru##.g-banner-hide-by-exclusive ~ style + div[class]
 rbc.ru##.g-banner__bg
 autonews.ru##.g-banner__columns
 rbc.ru##.g-banner__height-250
-rbc.ru##.g-banner__news-footer div[class^="js-checkad"] + div[style^="position"]
 rbc.ru##.g-banner__padding
-rbc.ru##.indicators_vert__spec
 www.rbc.ru##.js-rbcslider-multi-news + div[class]:empty + div[class]
-www.rbc.ru##.l-col-main > .l-col-main__inner > div[id]:not([style])
-www.rbc.ru##.l-vertical-line > .l-row > div[id]:not([class])
-rbc.ru##.l-window > .teasers
 cnews.ru##.main > noindex:last-child
-rbc.ru##.project-event__partner.js-yandex-counter
 rbc.ru##.rbc_adv
 ##.rbcobmen
+www.rbc.ru##.rbcslider__data.l-row > .g-hidden.js-article-topline + div[class]
 cnews.ru##.tizer_block
 cnews.ru##.yandex_banner
 rbcdaily.ru##[class*="_adv"]
 rbc.ru##[class*="banner"] a[href*="/an.yandex.ru/count/"]
 autonews.ru##[class^="banner_"]
-rbc.ru##[data-yandex-name="offers"]
-rbc.ru##a[href*="RBC_Adblock"]
-rbc.ru##a[href^="http://arvr.rbc.ru/"]
 cnews.ru##a[href^="http://cnb.cnews.ru/click.php"]
 rbc.ru##a[href^="https://direct.yandex.ru/?partner"]
-rbc.ru##body > div[id^="bra_"][id$="_outer"]
-rbc.ru##body > div[id^="brand_"]
 ~cash.rbc.ru,rbc.ru##div[class*="banner"] div[style*="display: block"]
 ~cash.rbc.ru,rbc.ru##div[class*="banner"] div[style*="display: block"] *
 ~cash.rbc.ru,~quote.rbc.ru,rbc.ru##div[class*="banner"] ~ div[style*="display: block"]
