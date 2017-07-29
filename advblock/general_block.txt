@@ -44,7 +44,7 @@
 /?t=b&blockids=$script
 /?t=rot&pid=$script
 /^https?://([^.]+\.)+[a-z]+\.(?:biz|ru|space)/[a-z][/?][-a-z0-9_?&=]{5,45}$/$third-party,script,domain=~hotcharts.ru|~myzuka.org
-/^https?://[^/]+/[a-z0-9]{15,}(\?hope=.*)?$/$script,domain=~coco.fr|~stumbleupon.com
+/^https?://[^/]+/[a-z0-9]{15,}(\?hope=.*)?$/$script,domain=~coco.fr|~stumbleupon.com|~tv.yandex.*
 /abnl/?ucozads^
 /ad_click/*$object
 /adfox/*$image,object,script,subdocument
