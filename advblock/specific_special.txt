@@ -507,14 +507,13 @@ rabota.mail.ru##.rmr-rightbanners
 ! Разное
 tv.mail.ru###banner_240x400
 go.mail.ru###js-kb-col-right > div[class$="_right-txt"]
-mmminigames.mail.ru###mm-wrap > div[class] > div[class] > div[class]
 go.mail.ru##.ad-blk
 games.mail.ru##.b-content__banner
 games.mail.ru##.b-pc__wrapper > a.b-bg[href^="https://r.mail.ru/redir/"][target="_blank"]
 go.mail.ru##.block-goods
 realty.mail.ru##.box_special
 health.mail.ru##.branding-p
-minigames.mail.ru##.container[id*="wrap"] > #portal-menu ~ iframe ~ div[class]:not([style]) > div[class] > div[class]:first-child:not(.top-block)
+minigames.mail.ru##.container[id*="wrap"] div[class][-abp-properties="margin*overflow"]
 health.mail.ru##.fromPartners3
 sport.mail.ru##.index-top__right
 games.mail.ru##.js-aab_target
@@ -539,12 +538,11 @@ go.mail.ru##.ya-bl
 go.mail.ru##[-abp-properties='width: 240px;']:not(.js-icard-imgs-img)
 go.mail.ru##a[data-pxt*="|premium|"]:not(#id)
 go.mail.ru##a[href^="http://an.yandex.ru/count/"]
-minigames.mail.ru##div[class][-abp-properties="padding-left*calc*padding-right*calc"]
 realty.mail.ru##div[class][data-module^="TopMail.Special."]
 otvet.mail.ru##div[id^="adv-slot-"]
 maps.mail.ru##img[width="200"][height="30"]
 health.mail.ru##img[width="240"][height="200"]
-minigames.mail.ru#?#div[class]:-abp-properties(padding-left*calc*padding-right*calc)
+minigames.mail.ru#?#.container[id*="wrap"] div[class]:-abp-properties(margin*overflow)
 ! Блокировка ресурсов в основном на самом mail.ru
 $websocket,domain=afisha.mail.ru|auto.mail.ru|cloud.mail.ru|e.mail.ru|games.mail.ru|health.mail.ru|hi-tech.mail.ru|horo.mail.ru|lady.mail.ru|minigames.mail.ru|my.mail.ru|news.mail.ru|sport.mail.ru
 //r.mail.ru/b$subdocument
