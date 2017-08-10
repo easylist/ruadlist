@@ -296,7 +296,6 @@ $websocket,domain=0day.kiev.ua|176.114.0.126|176.114.0.132|192.102.7.159|193.106
 /forum/images/*$object,domain=hvosty.ru|vsehvosty.ru
 /fruits.js$script,domain=nnm-club.me|nnm-club.name|nnm-club.to|nnmclub.to
 /galya.ru/clients/places/*
-/gazeta.ru/[a-z0-9]{15}/$xmlhttprequest,domain=gazeta.ru
 /getVast*preroll&license=$object-subrequest,domain=rutube.ru
 /gorilla.php?token$domain=pavlodar.news|pavon.kz
 /https?://(?!(mc\.yandex\.ru|www\.google-analytics\.com)/)/$third-party,script,subdocument,domain=massivmebel.by
@@ -371,6 +370,7 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 |http://*/c.js?v=$third-party,script,domain=newsvl.ru
 |http://*boltai.com/wp-content/themes/Grimag/assets/js/custom.js$script
 |https://$third-party,script,stylesheet,domain=rustorka.com
+|https://www.gazeta.ru^$xmlhttprequest,domain=www.gazeta.ru
 ||.t.ks.ua/sites/*300x300$image
 ||03-res.ru^$script,domain=zaqw.ru
 ||0532.ua/section/banners/
