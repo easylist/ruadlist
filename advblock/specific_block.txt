@@ -234,6 +234,7 @@ $websocket,domain=0day.kiev.ua|176.114.0.126|176.114.0.132|192.102.7.159|193.106
 .shiny2.ru^$script,domain=shiny2.ru
 .skolkovarim.ru^$script,domain=skolkovarim.ru
 .slavaangel.$script,domain=slavaangel.net|slavaangel.ru
+.sovets.net^$script
 .stmods.ru^$script,domain=stmods.ru
 .strela-online.net^$script
 .t-tv.org^$script,domain=t-tv.org
@@ -2345,6 +2346,7 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 ||seria-z.net/vast.php$object-subrequest,xmlhttprequest
 ||serpens.nl^$third-party,script
 ||server1.seti.ee/www/ender/
+||services/init.js$third-party,script
 ||servisvk.ru^$domain=igromania.ru
 ||servkino.ru/vast.xml
 ||seti-ceti.ru/assets/images/vsiaki/
@@ -2399,8 +2401,8 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 ||soptv.ru/scode.php?site=
 ||soundpark.su/banners/$image
 ||sovetnik.market.yandex.ru^$xmlhttprequest,domain=overclockers.ru
-||sovets.net/?r=$xmlhttprequest
-||sovets.net^*/modal-baner.css$stylesheet
+||sovets.net/news$xmlhttprequest
+||sovets.net/teaser/
 ||sovets24.ru/?r=$xmlhttprequest
 ||sovets24.ru^*/modal-baner.css$stylesheet
 ||sovsport.ru/ib/
