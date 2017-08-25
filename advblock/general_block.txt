@@ -45,7 +45,7 @@
 /?t=rot&pid=$script
 /\/[a-z]{1,3}\?zoneId\=\d{7}\-\d{7}$/$third-party,script
 /^https?://([^.]+\.)+[a-z]+\.(?:biz|ru|space)/[a-z][/?][-a-z0-9_?&=]{5,45}$/$third-party,script,domain=~hotcharts.ru
-/^https?://[^/]+/[a-z0-9]{15,}(\?hope=.*)?$/$script,domain=~coco.fr|~stumbleupon.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua
+/^https?://[^/]+/[a-z0-9]{15,}(\?hope=.*)?$/$script,domain=~coco.fr|~sap.com|~stumbleupon.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua
 /abnl/?ucozads^
 /ad_click/*$object
 /adfox/*$image,object,script,subdocument
