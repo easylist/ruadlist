@@ -283,6 +283,7 @@ $websocket,domain=0day.kiev.ua|176.114.0.126|176.114.0.132|192.102.7.159|193.106
 /^https?://(?!www\.)(?!forum)([^.]+\.)+?(qrz\.ru)[:/]/$script,domain=qrz.ru
 /^https?://(?!www\.)(?!static)([^.]+\.)+?(censor\.net\.ua)[:/]/$script,domain=censor.net.ua
 /^https?://(?!www\.)(?!static)([^.]+\.)+?(lostfilm\.tv)[:/]/$script,domain=www.lostfilm.tv
+/^https?://katushka\.org/img/[a-z]{1,3}[.][jpg]/$domain=katushka.org
 /ad*.tutu.ru^*_*.php|
 /adb_checker$script,domain=coop-land.ru
 /apu.php?id=$script,domain=anistar.me
@@ -1446,10 +1447,6 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 ||kapriz.info/img/
 ||kapriz.info/tiz/
 ||kartinka.in/img/handler.js
-||katushka.org/img/qwe.
-||katushka.org/img/rty.
-||katushka.org/img/tyu.
-||katushka.org/img/wer.
 ||katushka.org^*.png$image
 ||kavkazova.ru^*rtl1.org$xmlhttprequest
 ||kazanfirst.ru/storage/banners/
