@@ -395,14 +395,13 @@ gismeteo.kz##div[id^="rek-gis-news"]
 @@||goodgame.ru/oauth/auth/|$xmlhttprequest,domain=goodgame.ru
 @@||goodgame.ru/payments/gg_process/|$xmlhttprequest,domain=goodgame.ru
 @@||goodgame.ru/premium/keygen/$xmlhttprequest,domain=goodgame.ru
-@@||storage2.goodgame.ru/clips/*_*.mp4|$media,domain=goodgame.ru
 ||goodgame.ru/*/|$xmlhttprequest
 ||goodgame.ru/del/
 ||goodgame.ru/images/*branding$image
 ||goodgame.ru/|$xmlhttprequest
 ||goodgame.ru^*/www/
 ||goodgame.ru^*banner$object-subrequest,xmlhttprequest
-||storage2.goodgame.ru^$media
+||storage2.goodgame.ru/clips/*_hs0.mp4
 !
 ! Comedyportal.tv и Goblin-online.ru - (здесь только запросы)
 $third-party,script,domain=comedyportal.tv|goblin-online.ru
