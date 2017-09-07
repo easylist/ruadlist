@@ -954,16 +954,20 @@ autonews.ru##.g-banner__columns
 rbc.ru##.g-banner__height-250
 rbc.ru##.g-banner__padding
 www.rbc.ru##.g-print-full-width.l-col-main__inner > div[class]:nth-child(1):not([id]):not(.l-row):not(.rbcslider)
+www.rbc.ru##.g-print-full-width.l-col-main__inner > div[class]:nth-child(1):not([id]):not(.l-row):not(.rbcslider) *
 www.rbc.ru##.js-rbcslider-multi-news + div[class]:empty + div[class]
 rbc.ru##.l-col-w-390 [-abp-properties="display*block*!important"]
 rbc.ru##.l-col-w-390 a[href*="/an.yandex.ru/count/"]
 rbc.ru##.l-col-w-390 iframe
+rbc.ru##.l-row.rbcslider__data > .js-article-topline + div[class][style*="!important"]
+rbc.ru##.l-row.rbcslider__data > .js-article-topline + div[class][style*="!important"] *
 cnews.ru##.main > noindex:last-child
 rbc.ru##.rbc_adv
 ##.rbcobmen
 www.rbc.ru##.rbcslider__data.l-row > .g-hidden.js-article-topline + div[class]
 cnews.ru##.tizer_block
 cnews.ru##.yandex_banner
+/browser-updater$script,domain=rbc.ru
 rbcdaily.ru##[class*="_adv"]
 rbc.ru##[class*="banner"] a[href*="/an.yandex.ru/count/"]
 autonews.ru##[class^="banner_"]
