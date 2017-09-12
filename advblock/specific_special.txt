@@ -408,12 +408,13 @@ gismeteo.kz##div[id^="rek-gis-news"]
 !
 ! Goodgame.ru - здесь только запросы и связанные с ними исключения
 /^https?://goodgame\.ru/[a-z0-9]+$/$subdocument,domain=goodgame.ru
-@@||goodgame.ru/ajax/$xmlhttprequest,domain=goodgame.ru
+@@||goodgame.ru/ajax/*/$xmlhttprequest,domain=goodgame.ru
 @@||goodgame.ru/oauth/auth/|$xmlhttprequest,domain=goodgame.ru
 @@||goodgame.ru/payments/gg_process/|$xmlhttprequest,domain=goodgame.ru
 @@||goodgame.ru/premium/keygen/$xmlhttprequest,domain=goodgame.ru
 |blob:$~script,domain=goodgame.ru
 ||goodgame.ru/*/|$xmlhttprequest
+||goodgame.ru/ajax/$xmlhttprequest,domain=goodgame.ru
 ||goodgame.ru/del/
 ||goodgame.ru/images/*branding$image
 ||goodgame.ru/payments/gg_process
