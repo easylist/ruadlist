@@ -23,17 +23,21 @@ gismeteo.ua###weather-rbkua
 gismeteo.by###weather-rian
 gismeteo.by,gismeteo.com,gismeteo.kz,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru,gismeteo.ua###weather-right
 gismeteo.by,gismeteo.lv###yandex
+gismeteo.ru##.__frame.wrap_small
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru#@#.adv
 gismeteo.ru,gismeteo.ua##.extra
 tourism.gismeteo.ru##.footer-ban
 tourism.gismeteo.ru##.header-ban
 gismeteo.ru##.layout .side__i.ru
 gismeteo.ru##.links-blue
-gismeteo.by,gismeteo.ru##.media_frame
+gismeteo.by##.media_frame
+gismeteo.by,gismeteo.ru##.media_frame *
 gismeteo.ru##.media_frame + div
-gismeteo.by,gismeteo.ru##.media_middle
+gismeteo.by##.media_middle
+gismeteo.by,gismeteo.ru##.media_middle *
 gismeteo.ru##.media_middle + div
-gismeteo.by,gismeteo.ru##.media_top
+gismeteo.by##.media_top
+gismeteo.by,gismeteo.ru##.media_top *
 gismeteo.ru##.mframe
 gismeteo.by,gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru##.rframe[id^="ad-"]
 gismeteo.by##.side > .side__i
@@ -43,6 +47,7 @@ gismeteo.ru##body > #printME ~ div[class*=" "][id]
 gismeteo.ru##body > div[class][id] > .pageblock
 gismeteo.ru##body > div[class][id][style^="top"][style*="left"]
 gismeteo.ru##body > section:not([class]):not([id]):nth-of-type(1)
+gismeteo.ru##div[class="media_frame"]
 gismeteo.kz##div[id^="rek-gis-news"]
 ||gismeteo.*/*weather-gis-news-alter$script
 ||gismeteo.*/rian.html|
