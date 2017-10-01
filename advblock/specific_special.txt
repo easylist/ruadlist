@@ -457,7 +457,6 @@ gismeteo.kz##div[id^="rek-gis-news"]
 ! Goodgame.ru - здесь только запросы и связанные с ними исключения
 /^https?://goodgame\.ru/[a-z0-9]+$/$subdocument,domain=goodgame.ru
 /^https?://hls\.goodgame\.ru/hls/[0-9]{3}[-][0-9]{6}\.ts/$xmlhttprequest,domain=goodgame.ru
-/^https?://hls\.goodgame\.ru/hls/[0-9]{5}[-][0-9]{4}\.ts/$xmlhttprequest,domain=goodgame.ru
 /^https?://hls\.goodgame\.ru/hls/[0-9]{5}[-][0-9]{5}\.ts/$xmlhttprequest,domain=goodgame.ru
 @@||goodgame.ru/ajax/*/$xmlhttprequest,domain=goodgame.ru
 @@||goodgame.ru/oauth/auth/|$xmlhttprequest,domain=goodgame.ru
