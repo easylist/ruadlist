@@ -1,6 +1,9 @@
 ! Generated from CSS Fixes with following JS:
-! str.replace(/\/\*.+?\*\//g,'').replace(/[\n\r]*/g,'').replace(/\s+/g,' ').replace(/\s?@-moz-document\s/g,'\n').replace(/"\)\s?{\s?/g,'")#?#').replace(/domain\("([^"]+)"\)/g,'$1').replace(/,\s/g,',').replace(/\s?{\s?/g,':style(').replace(/;?\s?}}/g,')').replace(/;?\s?}\s?/g,'), ').replace(/\s?!/g,' !');
-! Disabled 1 @media rule and 2 regexp rules
+! str.replace(/\/\*.+?\*\//g,'').replace(/[\n\r]*/g,'')
+!    .replace(/\s+/g,' ').replace(/\s?@-moz-document\s/g,'\n').replace(/"\)\s?{\s?/g,'")#?#')
+!    .replace(/domain\("([^"]+)"\)/g,'$1').replace(/,\s/g,',').replace(/\s?{\s?/g,':style(')
+!    .replace(/;?\s?}}/g,')').replace(/;?\s?}\s?/g,'), ').replace(/\s?!/g,' !');
+! Disabled 1 @media rule and 2 regexp rules, fixed " !" -> "!"
 101.ru#?##layout:style(background: none !important)
 21forum.ru,forum.na-svyazi.ru,forum.zarulem.ws#?#TD[height="70"][style],#user2s[height="71"],#userlinks[height="70"]:style(display: none !important)
 24video.adult,24video.in#?#body:style(pointer-events: none !important), body > *:style(pointer-events: auto !important)
@@ -157,7 +160,7 @@ go.mail.ru#?#html:not(#id) body:not(#id) .responses__wrapper > div[id^="js-"][id
 hi-tech.mail.ru#?##portal-menu,.header-banner:style(margin: 0 !important)
 life.ru#?#div[class^="arcticmodal-"],.banner-mylife,.banner-mylife-backdrop:style(display: none !important), body:not(#id):style(overflow: auto !important; margin-right: auto !important)
 live-rutor.org#?#body:style(overflow: auto !important)
-mail.ru#?##doubleformat_down,.branding-p,div[data-module^="Slot.mimic."],noindex[style*=" !"]:style(transform: scale(0) !important; opacity: 0 !important; pointer-events: none !important; position: fixed !important; top: -1000px !important)
+mail.ru#?##doubleformat_down,.branding-p,div[data-module^="Slot.mimic."],noindex[style*="!"]:style(transform: scale(0) !important; opacity: 0 !important; pointer-events: none !important; position: fixed !important; top: -1000px !important)
 msn.com#?#.promobanner:style(display: none !important)
 ngs.ru,news.rambler.ru#?#.subscribe-popup__wrapper,.subscribe-popup-cover,.subscribe-popup,.social-popup:style(display: none !important)
 ok.ru#?#.dialogWrapperBanner:style(transform: scale(0) !important; opacity: 0 !important; pointer-events: none !important; position: fixed !important; top: -1000px !important)
