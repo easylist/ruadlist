@@ -9,7 +9,7 @@
 !    .replace(/\s+/g,' ').replace(/\s?@-moz-document\s/g,'\n').replace(/"\)\s?{\s?/g,'")#?#')
 !    .replace(/domain\("([^"]+)"\)/g,'$1').replace(/,\s/g,',').replace(/\s?{\s?/g,':style(')
 !    .replace(/;?\s?}}/g,')').replace(/;?\s?}\s?/g,'), ').replace(/\s?!/g,' !');
-! Disabled 1 @media rule and 2 regexp rules, fixed " !" -> "!"
+! Disabled 1 @media rule, 2 regexp rules and a couple of url-prefix rules, fixed " !" -> "!"
 101.ru#?##layout:style(background: none !important)
 21forum.ru,forum.na-svyazi.ru,forum.zarulem.ws#?#TD[height="70"][style],#user2s[height="71"],#userlinks[height="70"]:style(display: none !important)
 24video.adult,24video.in#?#body:style(pointer-events: none !important), body > *:style(pointer-events: auto !important)
@@ -150,9 +150,9 @@ sports.ru,tribuna.com#?#body.img-bg,#branding-layout:not(#id):style(padding-top:
 tfile-music.org#?#body:style(width: 100% !important)
 thg.ru#?#.top_banner,#left_adblock,#right_adblock:style(position: fixed !important; left: -10000px !important; transform: scale(0) !important; display: none !important), body:style(background: whitesmoke !important), body > div[style*='1010']:style(width: auto !important; margin-top: 0 !important)
 tnt-online.ru#?##all:not(#id):style(top:14px !important)
-url-prefix("http://fastpic.ru/"),url-prefix("https://fastpic.ru/")#?#html,body:style(pointer-events: none !important; height: 100% !important; cursor: auto !important; background-color: whitesmoke !important), #mainContainer,#content,#footer:style(position: static !important; margin-top: 0 !important), body>img,#mainContainer,#footerContainer,#content,#footer,#show-code-content:style(pointer-events: auto !important)
-url-prefix("http://old.reactor.cc/")#?##header:style(height: 88px !important)
-url-prefix("http://reactor.cc/"),url-prefix("http://old.reactor.cc/"),url-prefix("http://joy.reactor.cc/"),joyreactor.cc,pornreactor.cc#?#body:style(background: #fecc65 url(http://reactor.cc/images/reactor_bg_middle.jpg) no-repeat 50% 0 !important), #container:style(background: none !important; padding-top: 0 !important), #container > :not(#page) a[target^="_"]:style(display: none !important)
+! url-prefix("http://fastpic.ru/"),url-prefix("https://fastpic.ru/")#?#html,body:style(pointer-events: none !important; height: 100% !important; cursor: auto !important; background-color: whitesmoke !important), #mainContainer,#content,#footer:style(position: static !important; margin-top: 0 !important), body>img,#mainContainer,#footerContainer,#content,#footer,#show-code-content:style(pointer-events: auto !important)
+! url-prefix("http://old.reactor.cc/")#?##header:style(height: 88px !important)
+! url-prefix("http://reactor.cc/"),url-prefix("http://old.reactor.cc/"),url-prefix("http://joy.reactor.cc/"),joyreactor.cc,pornreactor.cc#?#body:style(background: #fecc65 url(http://reactor.cc/images/reactor_bg_middle.jpg) no-repeat 50% 0 !important), #container:style(background: none !important; padding-top: 0 !important), #container > :not(#page) a[target^="_"]:style(display: none !important)
 www.okino.ua#?#.fader-social:style(display: none !important), .social-open:style(overflow: auto !important)
 ! torrent-games.net#?#html:style(position:relative; top:-232px), #body1:before,#body1:after:style(display: block; position: fixed; content: ""; background: white; height: 100%; top: 0), #body1:before:style(width: 50px; left: 0px), #body1:after:style(width: calc(100% - 1130px); right:0px), @media (min-width: 1196px):style(#body1:before,#body1:after:style(width:calc((100% - 1080px) / 2)), )
 26-2.ru,arbitr-praktika.ru,budgetnik.ru,business.ru,cxychet.ru,dirsalona.ru,fd.ru,gazeta-unp.ru,gd.ru,gkh.ru,glavbukh.ru,golovbukh.ua,hr-director.ru,kadrovik01.com.ua,kdelo.ru,kom-dir.ru,lawyercom.ru,menobr.ru,nalogplan.ru,pro-goszakaz.ru,pro-personal.ru,resobr.ru,rnk.ru,stroychet.ru,trudohrana.ru,ugpr.ru,zarplata-online.ru,zdrav.ru#?#body:style(overflow: auto !important), div[class^="GbShadow"],.jqmWindow,.jqmOverlay,.megaShadow,._top_990x70:style(display: none !important)
@@ -194,4 +194,4 @@ zaycev.online#?#.content:not(#id):style(margin-top: 80px !important)
 zoneofgames.ru#?#.branding-bottom,.branding,div.logo:style(background: none !important; height: auto !important), .branding-bottom > div[style*="padding:"]:style(padding-top: 5px !important)
 zoomby.ru#?##global_wrapper_cont:style(padding: 0 !important), .wrapper:style(margin-top: 60px !important)
 ! regexp("^https?://anistar.ru/news(/(\?.*)?)?$")#?#.news:nth-child(1):style(display: none !important)
-url-prefix("https://reports.adblockplus.org/digest?")#?#html,body:style(height:100% !important; overflow:hidden), #reports:style(height:calc(100% - 50px) !important; width:calc(100% - 2px) !important)
+! url-prefix("https://reports.adblockplus.org/digest?")#?#html,body:style(height:100% !important; overflow:hidden), #reports:style(height:calc(100% - 50px) !important; width:calc(100% - 2px) !important)
