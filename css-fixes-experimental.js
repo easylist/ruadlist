@@ -17,7 +17,7 @@
         }
         parts = rule.split('#?#');
         domains = parts[0];
-        result.push(`! ${domains}`);
+        result.push(`! ---`);
         styles = parts[1].split(/,\s?(?!radial)(?!rgba)(?![^>]*#>)(?![^()]+\))/g);
         i = styles.length;
         activeStyle = null;
