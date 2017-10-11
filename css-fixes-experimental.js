@@ -24,7 +24,7 @@
         while (i--) {
             style = styles[i].trim();
             if (style.includes(':style')) {
-                activeStyle = style.match(/:style\(.*?\)/)[0];
+                activeStyle = style.match(/:style\(.*?\)$/)[0];
                 if (!/\(\s*display\s*:\s*none\s*!important\s*\)/.test(activeStyle))
                     result.push(`${domains}#?#${style}`);
                 else {
