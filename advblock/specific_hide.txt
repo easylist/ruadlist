@@ -556,6 +556,7 @@ zik.ua###longbans
 myshows.ru###m-advert
 prestige-gaming.ru###m1-link[href]
 fullgames.ru###main + #right
+vz.ru###main > #topdate ~ div[id]
 openssource.biz###main > .hide_btn
 filmix.me###main > div[class*="-"] > .container
 rapidzona.com###main > noindex
@@ -715,8 +716,6 @@ search.aviasales.ru###results_add_container .js-top-placement-ticket
 funlog.ru###rfunlog
 delfi.ee,fastpic.ru,pic-money.ru,pozdrav.ru,viknaodessa.od.ua###right
 samlab.ws###right > .box-shadow:nth-child(n+3)
-vz.ru###right > .fixed_wrap > div:not([id])
-vz.ru###right > .fixed_wrap > div[style^="margin"]
 n71.ru###right > .nofloat
 sun-news.ru###right > .sideblock > :not(#vk_groups):not(.fb-page)
 allbesta.cc,oceanvideo.ru###right noindex
@@ -2097,6 +2096,7 @@ sportfm.ru##.js-news-partners
 womanadvice.ru##.js-relap__item-inner > a[href*="https://relap.io/r?"] ~ *
 drive2.com,drive2.ru##.js-teaser
 obogrevguru.ru,termogurus.ru##.js_load
+vz.ru##.jscroll-inner > .mainnews ~ div[id][style^="margin"]
 ifreeapps.ru##.jvmod-pad.png > a[target="_blank"] > img
 sosista.live##.jw-overlays
 auto43.ru,dom43.ru,gorodkirov.ru,job43.ru##.kaka_zone
@@ -2331,6 +2331,7 @@ linux.org.ru##.newsblog-in > .infoblock:not([id^="topic-"])
 apostrophe.com.ua##.newscomp
 forseven.ru##.newss2 a[target="_blank"]
 mrutor.org##.newss_not_a_d_v
+vz.ru##.newtext.text > div[id][style^="margin"]
 zismo.biz##.nexus123ad
 zismo.biz##.nexusad123
 ngs.ru##.ngs-main-banner
@@ -4845,7 +4846,8 @@ searchengines.guru##td > #ads_header ~ div
 velikolepnyivek.com##td > .bc[align="center"]
 rulit.me##td > div[align="center"][style="height:300px"]
 soft-arena.ru##td > noindex
-vz.ru##td#right div:not([id]):not([class])[style*="width: 240px"]
+vz.ru##td#main ~ * .top_wrap ~ div:not([id])
+vz.ru##td#main ~ * .top_wrap ~ div[style^="margin"]
 fluence-club.ru##td.alt1Active > div > div[style="float:right"]
 xn--80awhdeco3h.xn--p1ai,yarportal.ru,ярпортал.рф##td.desc
 radioscanner.ru##td.td-2 > a[href] > img
@@ -4953,7 +4955,7 @@ overclockers.ru###topbanners > div > a[href]
 overclockers.ru##.ad_article
 spec-komp.com##.adb
 2ip.ru##.ads + .nav
-audio-hi-fi.ru,spec-komp.com,vz.ru##.adsbygoogle
+audio-hi-fi.ru,spec-komp.com##.adsbygoogle
 sitecoder.blogspot.ru##.adsbygoogle > *
 e1.ru##.adv-list-links-yandex
 2ip.ru##.advMenuTab
@@ -4988,7 +4990,7 @@ anistar.me##.roll-adbanner
 e1.ru##.wd-widget-e1
 baby.ru##.yandex
 rafkino.com##.ytp-ad-progress-list
-file-upload.cc,overclockers.ru,ph4.ru,pvpru.com,vz.ru##[id^="aswift_"]
+file-upload.cc,overclockers.ru,ph4.ru,pvpru.com##[id^="aswift_"]
 2ip.ru##[id^="aswift_"] > iframe
 hdkinoteatr.com##a[href*="/onvix.tv/promo/"][target=_blank]
 overclockers.ru##a[href*="banner"][target="_blank"]
@@ -5005,13 +5007,12 @@ liveinternet.ru##body > div[style^="position: fixed; z-index: 999999"]
 auto.e1.ru##div[class*="advlink-hide-"]
 anistar.me##div[class^="bgdewerfbgfg"]
 freerutor.org##div[class^="fr_"] div[class^="rec"]
-vz.ru##div[id*="R-A-"]
 liveinternet.ru##div[id*="yandex_ad"]
 hdkinoteatr.com##div[id][onclick][onmouseup]
 liveinternet.ru##div[id^="AdFox_banner"]
 joyreactor.cc,kubik3.ru,pornreactor.cc,reactor.cc##div[id^="M"][id*="Composite"]
 fileplaneta.com,hdkinoteatr.com,kubik3.ru,planetaua.net,rafkino.com##div[id^="MarketGid"]
-liveinternet.ru,ria.ru,vz.ru##div[id^="adfox_"]
+liveinternet.ru,ria.ru##div[id^="adfox_"]
 anistar.me,hdkinoteatr.com##div[id^="b_bn_"]
 freerutor.org,vnx.su##div[id^="bn_"]
 e1.ru##div[id^="div-gpt-ad"]
