@@ -525,50 +525,50 @@ $third-party,script,domain=comedyportal.tv|goblin-online.ru
 ! Объединять правила с banner в конце не стоит - там ещё другие классы перечислены часто
 ! Скрытие по-разделам
 ! Общие правила
-~afisha.mail.ru,mail.ru,~news.mail.ru###ad-sputnik
-~afisha.mail.ru,mail.ru,~news.mail.ru###internet-offer
-~afisha.mail.ru,mail.ru,~news.mail.ru##.b-ad_text
-~afisha.mail.ru,mail.ru,~news.mail.ru##.b-context
-~afisha.mail.ru,mail.ru,~news.mail.ru##.b-direct-item
-~afisha.mail.ru,mail.ru,~news.mail.ru##.b-head__banner
-~afisha.mail.ru,mail.ru,~news.mail.ru##.ban
-~afisha.mail.ru,mail.ru,~news.mail.ru##.banner
+mail.ru###external.banner
+mail.ru###grid\:top\:super > #toolbar
+mail.ru###tgb
 mail.ru##.bgshechka
 mail.ru##.branding-footer
 mail.ru##.daynews__banner
-~afisha.mail.ru,mail.ru##.daynews__spring
+mail.ru##.daynews__spring
 mail.ru##.direct
 mail.ru##.goods
+mail.ru##.grid__item_banner
 mail.ru##.js-banner
 mail.ru##.js-pbanner_cntr
 mail.ru##.js-popup_gallery .viewbox__side
+mail.ru##.js-springs__top
 mail.ru##.layout__centercol__wrap > div[id^="slot_"][class="tgb"]
 mail.ru##.layout__promotoolbar
 mail.ru##.left_banner
-mail.ru##.news__list > #news\:auto > a[href*="banner"]
-~afisha.mail.ru,~horo.mail.ru,mail.ru,~news.mail.ru##.p-mimic
 mail.ru##.page-bottomad
 mail.ru##.page-topad
 mail.ru##.pc-mimic
 mail.ru##.portal-menu__banner
 mail.ru##.rb-container
 mail.ru##.rb-video-widget
-~e.mail.ru,mail.ru##.rbVideoBanner
+mail.ru##.yadirect
 mail.ru##[class^="rb-million"]
 mail.ru##a[class^="branding"]
+mail.ru##a[id^="tb-"][class^="tb-"][target="_blank"]
 mail.ru##a[id^="tb-"][href*="://r.mail.ru/"]
 mail.ru##body > .ad
 mail.ru##div[class*="_branding"]
 mail.ru##div[class*="directhack"]
 mail.ru##div[class*="mimic-direct"]
-mail.ru##div[class*="rb-direct-"]
+mail.ru##div[class*="rb-direct"]
 mail.ru##div[class^="adv-slot-"]
 mail.ru##div[class^="trg-b-"]
 mail.ru##div[data-adq-id^="adqcontainer"]
 mail.ru##div[data-module^="Slot.Mimic"]
 mail.ru##div[data-type="direct"]
+mail.ru##div[id^="adqcontainer"]
 mail.ru##div[id^="direct__worm"]
 mail.ru##div[id^="yandex_"]
+mail.ru#?#.cols__inner > .js-fixed-panel .box:-abp-has([class*="cols_experimant"])
+mail.ru#?#.rb-slot:-abp-has([id*="yandex_"])
+mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
 ! Почта
 e.mail.ru###leftcol-banners
 e.mail.ru##.b-datalist div[-abp-properties="height: 23."]
@@ -585,7 +585,6 @@ news.mail.ru##.b-index-banner
 news.mail.ru##.b-index-spring
 news.mail.ru##.b-partner_million
 news.mail.ru##.branding-p
-news.mail.ru##.margin_bottom_20[class*="rb_"]
 news.mail.ru##.p-top-adplate
 news.mail.ru##.parallax:not(#specificity-fix)
 news.mail.ru##.rb_blockPartners
@@ -603,8 +602,6 @@ auto.mail.ru##.box[class*="rb_"][class*="_target"]
 auto.mail.ru##.cols__column_sidebar
 auto.mail.ru##.grid__item_banner
 auto.mail.ru##.js-slot-parallax-container
-auto.mail.ru##.mailru-visibility-check
-auto.mail.ru##.margin_bottom_20[class*="rb_"]
 auto.mail.ru##.rb
 auto.mail.ru##.shadow.margin
 auto.mail.ru##.spring_top-250
@@ -639,8 +636,6 @@ hi-tech.mail.ru##.b-preview
 hi-tech.mail.ru##.full-splash
 hi-tech.mail.ru##.header-banner
 hi-tech.mail.ru##.js-branding-target
-hi-tech.mail.ru##.margin_bottom_20[class*="rb_"]
-hi-tech.mail.ru##.sony-text-wrap
 ! Мой Мир
 my.mail.ru###adv_right_column
 my.mail.ru##.b-fourth-pseudo-column
@@ -659,7 +654,6 @@ love.mail.ru##.link-ad
 horo.mail.ru##.box[class*=" rb_"]
 horo.mail.ru##.cols__column_sidebar.cols__column > .cols__inner > :not(.p-nat)
 horo.mail.ru##.cols__inner > div[id^="mailru"]
-horo.mail.ru##.margin_top_20.nat_horo.nat
 horo.mail.ru##.p-box[class*=" rb_"]
 horo.mail.ru##.p-mimic.box
 horo.mail.ru##.p-top-banner
@@ -681,6 +675,7 @@ go.mail.ru###js-kb-col-right > div[class$="_right-txt"]
 minigames.mail.ru###sa-wrapper > div[id] > a[href][style*="display"]
 go.mail.ru##.ad-blk
 games.mail.ru##.b-content__banner
+games.mail.ru##.b-main__wrapper > a.b-bg[href^="https://r.mail.ru/"]
 games.mail.ru##.b-pc__wrapper > a.b-bg[href^="https://r.mail.ru/redir/"][target="_blank"]
 go.mail.ru##.block-goods
 realty.mail.ru##.box_special
@@ -692,7 +687,6 @@ games.mail.ru##.js-aab_target
 tv.mail.ru##.js-popup_banner
 sport.mail.ru##.js-slot-parallax-container
 cars.mail.ru##.js-springs__top
-go.mail.ru##.layout div[class][-abp-properties='display: block !important;']
 minigames.mail.ru##.left-advert-block
 minigames.mail.ru##.left-banner
 video.mail.ru##.lvi-r-ban
@@ -702,12 +696,11 @@ afisha.mail.ru,auto.mail.ru,hi-tech.mail.ru##.pc-branding
 cards.mail.ru##.pt10.center
 health.mail.ru##.rb
 minigames.mail.ru##.rb_box
-go.mail.ru##.responses__wrapper > div > [-abp-properties='width: 100%;']
+go.mail.ru##.responses__wrapper > div[id^="js"][id$="Block"] > div[class*="block"]
 realty.mail.ru##.spring-side
 sport.mail.ru##.sub-news_million
 otvet.mail.ru##.torg-answer-banner
 go.mail.ru##.ya-bl
-go.mail.ru##[-abp-properties='width: 240px;']:not(.js-icard-imgs-img)
 go.mail.ru##a[data-pxt*="|premium|"]:not(#id)
 go.mail.ru##a[href^="http://an.yandex.ru/count/"]
 realty.mail.ru##div[class][data-module^="TopMail.Special."]
