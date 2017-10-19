@@ -28,6 +28,7 @@ ain.ua,dugtor.ru,gametech.ru,gidonline.eu,gidonline.in,oblozhki.net,prostoporno.
 24video.adult,24video.in#?#body > :style(pointer-events: auto !important)
 24video.adult,24video.in#?#body:style(pointer-events: none !important)
 ! ---
+3dnews.ru#?#html:not([xmlns]) > body:style(background: radial-gradient(ellipse at center,#4e4e4e 0%,#1a1a1a 100%) !important)
 3dnews.ru#?##global-wrapper[style*="pointer"] > :style(pointer-events: auto !important)
 3dnews.ru#?##global-wrapper[style*="pointer"]:style(cursor: auto !important; padding-top: 0 !important; background: none !important; pointer-events: none !important)
 ! ---
@@ -387,6 +388,10 @@ podrobno.uz#?#.main:style(margin-top: 0 !important)
 ! ---
 politobzor.net#?#.banner:style(height: 90px !important)
 ! ---
+pornreactor.cc#?##container > :not(#page) a[target^="_"]:style(display: none !important)
+pornreactor.cc#?##container:style(background: none !important; padding-top: 0 !important)
+pornreactor.cc#?#body:style(background: #fecc65 url(http://reactor.cc/images/reactor_bg_middle.jpg) no-repeat 50% 0 !important)
+! ---
 povarenok.ru##.car_header
 povarenok.ru##.cont_foot
 povarenok.ru##.petushok
@@ -597,9 +602,5 @@ mail.ru#?#noindex[style*="!"]:style(transform: scale(0) !important; opacity: 0 !
 ! ---
 ok.ru#?#.dialogWrapperBanner:style(transform: scale(0) !important; opacity: 0 !important; pointer-events: none !important; position: fixed !important; top: -1000px !important)
 ! --- disabled ---
-! regexp("^https?://([^.]+\.)*?3dnews\.ru[:/](? !.*?/print$).*?")#?#body:style(background: radial-gradient(ellipse at center,#4e4e4e 0%,#1a1a1a 100%) !important)
 ! url-prefix("http://fastpic.ru/"),url-prefix("https://fastpic.ru/")#?#html,body:style(pointer-events: none !important; height: 100% !important; cursor: auto !important; background-color: whitesmoke !important), #mainContainer,#content,#footer:style(position: static !important; margin-top: 0 !important), body>img,#mainContainer,#footerContainer,#content,#footer,#show-code-content:style(pointer-events: auto !important)
-! url-prefix("http://reactor.cc/"),url-prefix("http://old.reactor.cc/"),url-prefix("http://joy.reactor.cc/"),joyreactor.cc,pornreactor.cc#?#body:style(background: #fecc65 url(http://reactor.cc/images/reactor_bg_middle.jpg) no-repeat 50% 0 !important), #container:style(background: none !important; padding-top: 0 !important), #container > :not(#page) a[target^="_"]:style(display: none !important)
-! url-prefix("http://old.reactor.cc/")#?##header:style(height: 88px !important)
-! regexp("^https?://anistar.ru/news(/(\?.*)?)?$")#?#.news:nth-child(1):style(display: none !important)
 ! url-prefix("https://reports.adblockplus.org/digest?")#?#html,body:style(height:100% !important; overflow:hidden), #reports:style(height:calc(100% - 50px) !important; width:calc(100% - 2px) !important)
