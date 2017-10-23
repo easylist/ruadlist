@@ -160,6 +160,20 @@ f-picture.net,radikal.ru#?#.render_body_main:style(width: auto !important; paddi
 fast-torrent.ru#?##container:style(margin-top:0 !important)
 fast-torrent.ru#?#body:style(background: white !important)
 ! ---
+fastpic.ru#?##content:style(pointer-events: auto !important)
+fastpic.ru#?##content:style(position: static !important; margin-top: 0 !important)
+fastpic.ru#?#.picinfo:style(width: 700px !important; word-wrap: break-word)
+fastpic.ru#?#body > img:style(pointer-events: auto !important)
+fastpic.ru#?#body:not([style]):style(pointer-events: none !important; height: 100% !important; cursor: auto !important; background-color: whitesmoke !important)
+fastpic.ru#?#html:style(pointer-events: none !important; height: 100% !important; cursor: auto !important; background-color: whitesmoke !important)
+fastpic.ru#?#show-code-content:style(pointer-events: auto !important)
+fastpic.ru#?##footer:style(pointer-events: auto !important)
+fastpic.ru#?##footer:style(position: static !important; margin-top: 0 !important)
+fastpic.ru#?##footerContainer:style(pointer-events: auto !important)
+fastpic.ru#?##mainContainer:style(pointer-events: auto !important)
+fastpic.ru#?##mainContainer:style(position: static !important; margin-top: 0 !important)
+fastpic.ru#?##summaryLinks:style(width: 700px !important; word-wrap: break-word)
+! ---
 firepic.org#?#.container:style(max-width: none !important)
 firepic.org#?#.container:style(width: 100% !important)
 firepic.org#?#.row:style(max-width: none !important)
@@ -601,6 +615,3 @@ mail.ru#?#div[data-module^="Slot.mimic."]:style(transform: scale(0) !important; 
 mail.ru#?#noindex[style*="!"]:style(transform: scale(0) !important; opacity: 0 !important; pointer-events: none !important; position: fixed !important; top: -1000px !important)
 ! ---
 ok.ru#?#.dialogWrapperBanner:style(transform: scale(0) !important; opacity: 0 !important; pointer-events: none !important; position: fixed !important; top: -1000px !important)
-! --- disabled ---
-! url-prefix("http://fastpic.ru/"),url-prefix("https://fastpic.ru/")#?#html,body:style(pointer-events: none !important; height: 100% !important; cursor: auto !important; background-color: whitesmoke !important), #mainContainer,#content,#footer:style(position: static !important; margin-top: 0 !important), body>img,#mainContainer,#footerContainer,#content,#footer,#show-code-content:style(pointer-events: auto !important)
-! url-prefix("https://reports.adblockplus.org/digest?")#?#html,body:style(height:100% !important; overflow:hidden), #reports:style(height:calc(100% - 50px) !important; width:calc(100% - 2px) !important)
