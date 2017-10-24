@@ -1,48 +1,11 @@
 [Adblock Plus 2.0]
-! Title: RU AdList + CSS Fixes
+! Title: RU AdList + Антисчётчик
+! Совмещённая версия списков фильтров RU AdList против рекламы и экспериментального
+! списка косметических стилей CSS Fixes.
+! На данный момент нормально работает только в uBlock Origin.
 ! Last modified: %timestamp%
+! Expires: 4 days (частота обновлений - раз в четыре дня)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
-! Дополнительная региональная подписка RU AdList к подписке EasyList
-! Лицензия CC-BY: http://creativecommons.org/licenses/by/3.0/
-! Проект создал Akuma (DemonSat) на основе списка фильтров denis-ovs.narod.ru.
-! Список содержит фрагменты списков MORPEH'а и Fanboy'я, результаты изучения
-! содержимого подписки UA-IX Banlist и некоторые правила из
-! Reek's Anti-Adblock Killer (https://github.com/reek/anti-adblock-killer)
-! Так же содержит стили, поддерживаемые пока только uBlock Origin
-! В разное время над списком фильтров работали: denis-ovs, Akuma, Radik245.
-! На данный момент над списком работают Lain_13 и dimisa.
-!
-! Если на вашем любимом сайте осталась реклама или подписка создаёт проблемы
-! в его работе, то свяжитесь с нами:
-! https://forums.lanik.us/viewforum.php?f=102
-!
-! = Сайты-попапы (самостоятельно открываются в новом окне) ====================
-%include advblock/popup.txt%
-!
-! = Общие CSS-фильтры =========================================================
-%include advblock/general_hide.txt%
-!
-! = Общие правила блокировки ==================================================
-%include advblock/general_block.txt%
-!
-! = Блокировка доменов ========================================================
-%include advblock/first_level.txt%
-! -----------------------------------------------------------------------------
-%include advblock/thirdparty.txt%
-! -----------------------------------------------------------------------------
-%include advblock/adservers.txt%
-!
-! = Частные правила для сайтов(блокировка и скрытие) ==========================
-%include advblock/specific_hide.txt%
-! -----------------------------------------------------------------------------
-%include advblock/specific_block.txt%
-! -----------------------------------------------------------------------------
-%include advblock/specific_special.txt%
-! -----------------------------------------------------------------------------
-%include advblock/specific_antisocial.txt%
-!
-! = Исключения ================================================================
-%include advblock/whitelist.txt%
-! = Экспериментальный CSS Fixes (пока только для uBlock Origin) ===============
+%include advblock.txt%
 %include css-fixes-experimental.txt%
