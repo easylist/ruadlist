@@ -157,7 +157,7 @@ fastpic.ru#?##content:style(pointer-events: auto !important)
 fastpic.ru#?##content:style(position: static !important; margin-top: 0 !important)
 fastpic.ru#?#.picinfo:style(width: 700px !important; word-wrap: break-word)
 fastpic.ru#?#body > img:style(pointer-events: auto !important)
-fastpic.ru#?#body:not[style]:style(pointer-events: none !important; height: 100% !important; cursor: auto !important; background-color: whitesmoke !important)
+fastpic.ru#?#body:not([style]):style(pointer-events: none !important; height: 100% !important; cursor: auto !important; background-color: whitesmoke !important)
 fastpic.ru#?#html:style(pointer-events: none !important; height: 100% !important; cursor: auto !important; background-color: whitesmoke !important)
 fastpic.ru#?##footer:style(pointer-events: auto !important)
 fastpic.ru#?##footer:style(position: static !important; margin-top: 0 !important)
@@ -395,6 +395,11 @@ podrobno.uz#?#.main:style(margin-top: 0 !important)
 ! ---
 politobzor.net#?#.banner:style(height: 90px !important)
 ! ---
+pornreactor.cc###container > :not(#page) a[target^="_"]
+pornreactor.cc#?##background:style(background: #6d1700 !important; padding-top: 0 !important)
+pornreactor.cc#?##container:style(background: #6d1700 !important; padding-top: 0 !important)
+pornreactor.cc#?#body:style(background: #6d1700 !important; padding-top: 0 !important)
+! ---
 povarenok.ru##.car_header
 povarenok.ru##.cont_foot
 povarenok.ru##.petushok
@@ -422,11 +427,6 @@ qrz.ru#?#.advertising:style(height: 1px !important; position: fixed !important; 
 qrz.ru#?#.sidebar_banner:style(height: 1px !important; position: fixed !important; transform: scale(0) !important)
 qrz.ru#?#div:not([id]):not([class])[style*="height:150px"]:style(height: 1px !important; position: fixed !important; transform: scale(0) !important)
 qrz.ru#?#iframe[src^="//ads.qrz.ru"]:style(height: 1px !important; position: fixed !important; transform: scale(0) !important)
-! ---
-pornreactor.cc###container > :not(#page) a[target^="_"]
-pornreactor.cc#?##background:style(background: #6d1700 !important; padding-top: 0 !important)
-pornreactor.cc#?##container:style(background: #6d1700 !important; padding-top: 0 !important)
-pornreactor.cc#?#body:style(background: #6d1700 !important; padding-top: 0 !important)
 ! ---
 ria.ru##.m-blur ~ #modalLayer
 ria.ru#?#.m-blur:style(filter: none !important; position: relative !important)
