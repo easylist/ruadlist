@@ -17,7 +17,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.804
+VERSION = 3.805
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -41,7 +41,10 @@ OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\
 SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z0-9]*)((?=([\[\]\^\*\$=:@#\.]))|(?=(\s(?:[+>~]|\*|[a-zA-Z][a-zA-Z0-9]*[\[:@\s#\.]|[#\.][a-zA-Z][a-zA-Z0-9]*))))")
 PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
 # (?!:-) - skip Adblock Plus' :-abp-... pseudoclasses, (?!:style\() - skip uBlock Origin's :style() pseudoclass
-REMOVALPATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))(\*)(?=([#\.\[\:]))(?!:-)(?!:style\()")
+REMOVE_AST_PATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))(\*)(?=([#\.\[\:]))(?!:-)(?!:style\()")
+SELECTORSTYLEPART = re.compile(r":style\(.+\)$")
+REMOVE_0PX_PATTERN = re.compile(r"((?<=([\:\s]0))(px)(?=([\s\!])))")
+BANGSPACEIMPORTANT = re.compile(r"(.)(\!\s)(important)")
 ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')")
 TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
 UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
@@ -283,7 +286,11 @@ def elementtidy (domains, separator, selector):
     if "," in domains:
         domains = ",".join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector with "@"
-    selector = "@{selector}@".format(selector = selector)
+    selectorandstyle = selector.split(':style(')
+    selector = "@{selector}@".format(selector = selectorandstyle[0])
+    stylepart = ""
+    if len(selectorandstyle) > 1:
+        stylepart = ":style({style}".format(style = selectorandstyle[1])
     each = re.finditer
     # Make sure we don't match items in strings (e.g., don't touch Width in ##[style="height:1px; Width: 123px;"])
     selectorwithoutstrings = selector
@@ -300,7 +307,7 @@ def elementtidy (domains, separator, selector):
         if replaceby == "   ": replaceby = " "
         selector = selector.replace(tree.group(0), "{g1}{replaceby}{g3}".format(g1 = tree.group(1), replaceby = replaceby, g3 = tree.group(3)), 1)
     # Remove unnecessary tags
-    for untag in each(REMOVALPATTERN, selector):
+    for untag in each(REMOVE_AST_PATTERN, selector):
         untagname = untag.group(4)
         if untagname in selectoronlystrings or not untagname in selectorwithoutstrings: continue
         bc = untag.group(2)
@@ -323,8 +330,19 @@ def elementtidy (domains, separator, selector):
         if pseudoclass in selectoronlystrings or not pseudoclass in selectorwithoutstrings: continue
         ac = pseudo.group(3)
         selector = selector.replace("{pclass}{after}".format(pclass = pseudoclass, after = ac), "{pclass}{after}".format(pclass = pseudoclass.lower(), after = ac), 1)
+    # Remove unnecessary 'px' in '0px'
+    if stylepart != "":
+        for un0px in each(REMOVE_0PX_PATTERN, stylepart):
+            bc = un0px.group(2)
+            ac = un0px.group(4)
+            stylepart = stylepart.replace("{before}{remove}{after}".format(before = bc, remove = un0px.group(3), after = ac), "{before}{after}".format(before = bc, after = ac), 1)
+        for bsi in each(BANGSPACEIMPORTANT, stylepart):
+            bc = bsi.group(1)
+            space = "" if bc == " " else " "
+            ac = bsi.group(3)
+            stylepart = stylepart.replace("{before}{bang}{after}".format(before = bc, bang = bsi.group(2), after = ac), "{before}{space}!{after}".format(before = bc, space = space, after = ac), 1)
     # Remove the markers from the beginning and end of the selector and return the complete rule
-    return "{domain}{separator}{selector}".format(domain = domains, separator = separator, selector = selector[1:-1])
+    return "{domain}{separator}{selector}{style}".format(domain = domains, separator = separator, selector = selector[1:-1], style = stylepart)
 
 def commit (repository, basecommand, userchanges):
     """ Commit changes to a repository using the commands provided."""
