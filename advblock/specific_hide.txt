@@ -3162,7 +3162,6 @@ border-fan.ru,dad-fan.ru,freehat.cc,grif-fan.ru,lalapaluza.ru,simp-fan.ru,sp-fan
 razlozhi.ru##[data-id^="R-"]
 tverigrad.ru##[data-info="mail"]:not([title="Написать в редакцию"])
 1kr.ua##[data-is-advert]
-softportal.com##[data-jswg-ghnz]
 myukraina.com.ua##[data-link*="goo.gl"]
 news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
@@ -4879,6 +4878,7 @@ biblprog.org.ua##script ~ [src][style="cursor: pointer;"]
 sftv.ru##script[src*="iwantyourpromo.com"] ~ div[align="center"]
 megaimg.ru##script[src^="http://am10.ru/"] + center
 cinema-hd.ru##script[src^="http://videoroll.net/"] + img
+softportal.com#?#td > div[id]:-abp-has(a[href][target="_blank"][rel="nofollow"] img)
 spaces.ru#?#div:-abp-has( > div > a[href^="http://spaces.ru/?Cl="])
 sp.mamask.ru##span[id^="banner"]
 buhoblik.org.ua##span[onclick*="banner"]
@@ -4932,6 +4932,7 @@ banki.ru##tbody[data-currency-list] > tr[data-widget-row]
 searchengines.guru##td > #ads_header ~ div
 velikolepnyivek.com##td > .bc[align="center"]
 rulit.me##td > div[align="center"][style="height:300px"]
+softportal.com##td > div[id] a[href][target="_blank"][rel="nofollow"] img
 soft-arena.ru##td > noindex
 vz.ru##td#main ~ * .top_wrap ~ div:not([id])
 vz.ru##td#main ~ * .top_wrap ~ div[style^="margin"]
