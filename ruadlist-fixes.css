@@ -1085,7 +1085,7 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    #header > *:not(.right.nav):not(.under-head) {
+    #header > *:not([class="right nav"]):not([class="under-head"]) {
         display:none !important
     }
     #rasp {
