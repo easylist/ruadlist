@@ -102,6 +102,7 @@
   domain("gametech.ru"),
   domain("gidonline.eu"),
   domain("gidonline.in"),
+  domain("kinohome.org"),
   domain("oblozhki.net"),
   domain("the-cinema.ru"),
   domain("torrentum.org"),
@@ -852,7 +853,8 @@
         width: 100% !important
     }
     .fullscreen_branding ~ .body_content_table {
-        margin-top: 0 !important
+        margin-top: 0 !important;
+        z-index: 0 !important
     }
 }
 
