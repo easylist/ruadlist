@@ -1,5 +1,16 @@
-(function(){
-    let str = `...`;
+let fs = require('fs');
+(async () => {
+    'use strict';
+    let str = await new Promise(
+        (r, j) => fs.readFile('./ruadlist-fixes.css', 'utf8', (err, data) => {
+            if (err)
+                return j(err);
+            return r(data);
+        })
+    ).catch((err) => console.log(err));
+    if (!str)
+        return;
+
     str = str.replace(/\/\*.+?\*\//g,'').replace(/[\n\r]+/g,'').replace(/\s+/g,' ')
              .replace(/@media[^{]+\{.*?\}\s?\}\s?/g, '')
              .replace(/\s?@-moz-document\s/g,'\n').replace(/"\)\s?{\s?/g,'")#?#')
@@ -39,5 +50,6 @@
             }
         }
     }
+    // TODO: either add template and generate fixes list with template or update existing file
     console.log(result.join('\n')+'\n\n! --- disabled ---\n'+disabled.join('\n'));
 })();

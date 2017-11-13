@@ -1,0 +1,1923 @@
+@-moz-document
+  domain("userstyles.org"), /* <- does nothing, just to trigger it on userstyles */
+  domain("aif.ru"),
+  domain("epravda.com.ua"),
+  domain("fastpic.ru"),
+  domain("film-max.ru"),
+  domain("hd720.biz"),
+  domain("ixbt.com"),
+  domain("kinogohd.net"),
+  domain("kinokrad.su"),
+  domain("kinotochka.club"),
+  domain("kinozadrot.net"),
+  domain("krasview.ru"),
+  domain("livejournal.com"),
+  domain("macdigger.ru"),
+  domain("newstudio.tv"),
+  domain("nnm.me"),
+  domain("nnm-club.me"),
+  domain("oblozhki.net"),
+  domain("oper.ru"),
+  domain("pure-t.ru"),
+  domain("rufootballtv.org"),
+  domain("sc2tv.ru"),
+  domain("smotri.com"),
+  domain("stopgame.ru"),
+  domain("torrentom.com"),
+  domain("torrentum.ru"),
+  domain("xatab-repack.net"),
+  domain("zakon.kz") {
+/* Популярный фильтр против картинки на фоне */
+    html:not(#id), body:not(#id) {
+        background-image: none !important
+    }
+}
+
+/* Популярный фильтр против пустого места в шапке */
+@-moz-document
+  domain("24video.adult"),
+  domain("24video.in"),
+  domain("all-episodes.net"),
+  domain("allfilmonline.co"),
+  domain("amovies.biz"),
+  domain("amovies.org"),
+  domain("baskino.co"),
+  domain("bigcinema-tv.club"),
+  domain("comedy-portal.net"),
+  domain("film-max.ru"),
+  domain("freerutor.com"),
+  domain("gameguru.ru"),
+  domain("gidonline.eu"),
+  domain("gidonline.in"),
+  domain("hd720.biz"),
+  domain("hdkinoklub.com"),
+  domain("hdrezka-online.me"),
+  domain("hdrezka.ag"),
+  domain("ikinohd.com"),
+  domain("itop-gear.ru"),
+  domain("ixbt.com"),
+  domain("kinopoisk.ru"),
+  domain("koshara.co"),
+  domain("kronverkcinema.ua"),
+  domain("krutor.org"),
+  domain("live-rutor.org"),
+  domain("moskva.fm"),
+  domain("mrutor.org"),
+  domain("my-tfile.org"),
+  domain("newstudio.tv"),
+  domain("nnm.me"),
+  domain("nnm-club.me"),
+  domain("ostfilm.tv"),
+  domain("pure-t.ru"),
+  domain("roem.ru"),
+  domain("tfile.co"),
+  domain("tfile.cc"),
+  domain("tfile-music.org"),
+  domain("tfilm.club"),
+  domain("tfilm.me"),
+  domain("tfilm.tv"),
+  domain("torentor.co"),
+  domain("vc.ru"),
+  domain("virusinfo.info"),
+  domain("wikianime.ru") {
+    html:not(#id), body:not(#id) {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("epravda.com.ua"),
+  domain("kino-dom.tv"),
+  domain("seasonvar.re"),
+  domain("seasonvar.ru"),
+  domain("unionpeer.com") {
+    html:not(#id), body:not(#id) {
+        padding: 0 !important
+    }
+}
+
+@-moz-document
+  domain("720hd.club"),
+  domain("ain.ua"),
+  domain("gametech.ru"),
+  domain("gidonline.eu"),
+  domain("gidonline.in"),
+  domain("oblozhki.net"),
+  domain("the-cinema.ru"),
+  domain("torrentum.org"),
+  domain("torrentum.ru"),
+  domain("virusinfo.info") {
+    html:not(#id), body:not(#id) {
+        margin-top: 0 !important
+    }
+}
+
+/* Прочее */
+@-moz-document domain("101.ru") {
+    #layout {
+        background: none !important
+    }
+}
+
+@-moz-document
+  domain("21forum.ru"),
+  domain("forum.na-svyazi.ru"),
+  domain("forum.zarulem.ws") {
+    TD[height="70"][style], #user2s[height="71"], #userlinks[height="70"] {
+        display: none !important
+    }
+}
+
+@-moz-document
+  domain("24video.adult"),
+  domain("24video.in") {
+    body {
+        pointer-events: none !important
+    }
+    body > * {
+        pointer-events: auto !important
+    }
+}
+
+@-moz-document domain("3dnews.ru") {
+    #global-wrapper[style*="pointer"] {
+        cursor: auto !important;
+        padding-top: 0 !important;
+        background: none !important;
+        pointer-events: none !important
+    }
+    #global-wrapper[style*="pointer"] > * {
+        pointer-events: auto !important
+    }
+    html:not([xmlns]) > body {
+        /* not supposed to work on pages formatted for printing */
+        background: radial-gradient(ellipse at center, #4e4e4e 0%, #1a1a1a 100%) !important
+    }
+}
+
+@-moz-document domain("aces.gg") {
+    body {
+        background: black !important;
+        cursor: default
+    }
+    #alert {
+    	pointer-events: none;
+    }
+    #alert > * {
+        pointer-events: auto
+    }
+}
+
+@-moz-document domain("adultmult.tv") {
+    .menuposition, .allsearch {
+	margin-top: 0 !important
+    }
+    .menusection {
+        position: static !important
+    }
+    body {
+    	background: black !important
+    }
+    .adsbygoogle, #aswift_0_expand {
+        display: none !important
+    }
+}
+
+@-moz-document domain("afisha.ru") {
+    .page_block_content {
+        width: 100% !important
+    }
+    .page_block_adv {
+        background: none !important
+    }
+}
+
+@-moz-document domain("ag.ru") {
+    #new_logo_helper01 {
+        top: 0 !important
+    }
+    #header-links {
+        display: none !important
+    }
+}
+
+@-moz-document domain("aif.ru") {
+    #container:not(#id) {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("ain.ua") {
+    body:not(#id) {
+        background: white !important
+    }
+}
+
+@-moz-document domain("all-episodes.net") {
+    .wrapper {
+        top: 0 !important
+    }
+    #ad3, :not(#ad3)>div[id^="bn_"] {
+        position: fixed !important;
+        top: -10000px !important;
+        left: -10000px !important
+    }
+}
+
+@-moz-document domain("allhockey.ru") {
+    .adr-top {
+        height: 0 !important;
+        min-height: 0 !important
+    }
+}
+
+@-moz-document domain("anime-rus.ru") {
+    .nav {
+        position: relative !important
+    }
+    #hide_show {
+        display: none !important
+    }
+}
+
+@-moz-document domain("animedia.tv") {
+    .promo__wrapper {
+        display: none !important
+    }
+}
+
+@-moz-document domain("animemovie.ru") {
+    header[role="banner"], body > .standard {
+        height: 100px !important;
+        background: transparent !important
+    }
+    nav[role="navigation"] > ul {
+        top: 0 !important
+    }
+    .htitle {
+        margin-left: 0 !important;
+        left: 150px !important
+    }
+    .logo {
+        margin-left: 0 !important;
+        left: 0 !important
+    }
+}
+
+@-moz-document domain("animeonline.su") {
+    #wrapper {
+        padding-top: 50px !important
+    }
+    #brandParallax {
+        display: none !important
+    }
+}
+
+@-moz-document domain("animevost.org") {
+    div[class^="headbg"] {
+        background-image: none !important;
+        height: auto !important
+    }
+    div[class^="headbg"] > .menu {
+        top: 0 !important
+    }
+    div[class^="headbg"] > .menu .sar {
+        bottom: auto !important;
+        top: 50px !important;
+        z-index: 100 !important;
+    }
+}
+
+@-moz-document domain("aniplay.tv") {
+    body {
+        cursor: auto !important
+    }
+    .ap2-main-header {
+        height: 30px !important
+    }
+    .ap2-main-header-banner {
+        display: none !important
+    }
+
+}
+
+@-moz-document domain("anistar.me") {
+    body > .clear + div:not(.main), .news-fixed {
+        display: none !important
+    }
+    .wrapper.width1200 {
+        margin-top: 0
+    }
+    .drowmenu {
+        z-index: 1999999999 !important
+    }
+}
+
+@-moz-document domain("anti-malware.ru") {
+    #header-bg-enf {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("auto.ru") {
+    .i-bem[data-bem*="\"ad\""], .card__ins-button-direct {
+        position: fixed !important;
+        top:-10000px !important
+    }
+}
+
+@-moz-document domain("bestpersons.ru") {
+    /* Fx compat fix */
+    #userTabs {
+        float: none !important
+    }
+}
+
+@-moz-document domain("binmovie.org") {
+    #content {
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        margin-left: 0 !important
+    }
+}
+
+@-moz-document domain("bvedomosti.ru") {
+    .art-Header {
+        display: none !important
+    }
+    #art-main {
+        background-image: none !important
+    }
+    .bg-top-menu {
+        top: 0 !important
+    }
+}
+
+@-moz-document domain("carambatv.ru") {
+    .content {
+        background: none !important;
+        padding: 0 !important
+    }
+}
+
+@-moz-document domain("cars.ru") {
+    #main {
+        margin-top: 0 !important
+    }
+    A[href*="/adclick.php?bannerid="] {
+        display: none !important
+    }
+}
+
+@-moz-document domain("casstudio.tv") {
+    .footer {
+        margin-bottom: 0 !important
+    }
+}
+
+@-moz-document domain("cf.ua") {
+    .hamburger__overlay.no-close {
+        display:none !important
+    }
+    body.overflow--hidden, .scroll-content.disable-scrolling {
+        overflow:auto !important
+    }
+}
+
+@-moz-document domain("championat.com") {
+    html:not(#id) {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("cinema-hd.ru") {
+    .wrap {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("creativportal.ru") {
+    .pocaz {
+        width: 10px !important;
+        height: 10px !important;
+        position: fixed !important;
+        top:-100px !important;
+    }
+}
+
+@-moz-document domain("cyberforum.ru") {
+    body>div[style*="width"][style*="margin"] {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("dota2.ru") {
+    body:not(#id),
+    body>div[class]:not(#id),
+    body>div[class]>div[class]:not(#id) {
+        background: black !important;
+        padding-top: 0 !important
+    }
+    #headerProxy {
+        height: 150px !important
+    }
+    .subline + style + div:not([id]) {
+        background: transparent !important;
+        position: fixed !important;
+        height: 1px !important
+    }
+    a[href*="go.mail.ru/r/"] {
+        display: none !important
+    }
+}
+
+@-moz-document domain("drahelas.ru") {
+    .adb, .navbar_notice {
+        position: fixed !important;
+        transform: scale(0) !important
+    }
+    .forumAd {
+        height: 1px !important
+    }
+}
+
+@-moz-document domain("drive.ru") {
+    body>div {
+        background: none !important;
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("drive2.ru") {
+    .c-slideshow__nav {
+        max-width: 40px !important
+    }
+}
+
+@-moz-document domain("dynamo.kiev.ua") {
+    .fader-social {
+        display: none !important
+    }
+    .social-open {
+        overflow: auto !important
+    }
+}
+
+@-moz-document domain("economistua.com") {
+    .wpmui-overlay,
+    .wdpu-container {
+		display: none !important
+    }
+    html, body {
+    	padding-top: 0 !important;
+        background: whitesmoke !important;
+        overflow: auto !important;
+        pointer-events: none
+    }
+    body > * {
+    	pointer-events: auto
+    }
+}
+
+@-moz-document domain("epravda.com.ua") {
+    body {
+        cursor: auto !important
+    }
+    body>div[align="center"] {
+        width: auto !important;
+        margin: 0 !important
+    }
+}
+
+@-moz-document
+  domain("f-picture.net"),
+  domain("radikal.ru") {
+    .base-page_wrapper, .render_body_main {
+        width: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    	background-position: center !important;
+    }
+    .no-advert_wrapper_top,
+    .no-advert_wrapper_bottom {
+        width: 830px !important;
+        margin: auto !important;
+    }
+}
+
+@-moz-document domain("fast-torrent.ru") {
+    body {
+        background: white !important
+    }
+    #container {
+        margin-top:0 !important
+    }
+}
+
+@-moz-document domain("fastpic.ru") {
+    html, body:not([style]) {
+        pointer-events: none !important;
+        height: 100% !important;
+        cursor: auto !important;
+        background-color: whitesmoke !important
+    }
+    #mainContainer,
+    #content, #footer {
+        position: static !important;
+        margin-top: 0 !important
+    }
+    body>img, /* support for https://github.com/Infocatcher/UserScripts/tree/master/Direct_Images */
+    #mainContainer,
+    #footerContainer,
+    #content, #footer,
+    #show-code-content {
+        pointer-events: auto !important
+    }
+    .picinfo, #summaryLinks {
+        width: 700px !important;
+        word-wrap: break-word
+    }
+}
+
+@-moz-document
+  domain("fb.ru"),
+  domain("hosgeldi.com") {
+    .adsbygoogle {
+    	position: fixed !important;
+        top: -10000px !important
+    }
+}
+
+@-moz-document domain("firepic.org") {
+    body {
+        padding: 0 !important;
+        background-image: none !important
+    }
+    .container,
+    .row {
+        max-width: none !important
+    }
+    .container {
+        width: 100% !important
+    }
+    .row {
+        padding: 30px !important;
+        margin: 0 !important
+    }
+    .span12 {
+        clear: both
+    }
+}
+
+@-moz-document domain("fishki.net") {
+    #container {
+        cursor: auto !important
+    }
+}
+
+@-moz-document domain("fototips.ru") {
+    .ftips-branding .td-main-page-wrap, .ftips-branding-ad + div,
+    .ftips-branding.td_category_template_1 .td-category-header {
+        padding-top: 5px !important;
+    }
+}
+
+@-moz-document
+  domain("dugtor.ru"),
+  domain("freehat.cc"),
+  domain("border-fan.ru"),
+  domain("dad-fan.ru"),
+  domain("grif-fan.ru"),
+  domain("lalapaluza.ru"),
+  domain("simp-fan.ru"),
+  domain("sp-fan.ru") {
+    body:not(#id) {
+        background: whitesmoke !important
+    }
+    #page {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("free-torrent.org"),
+  domain("free-torrent.pw"),
+  domain("free-torrents.org"),
+  domain("free-torrents.pw") {
+    #sidebar2 {
+        padding-top: 0 !important
+    }
+    #main-wrapper {
+        width: 100% !important;
+        top: 0 !important
+    }
+}
+
+@-moz-document domain("freerutor.com") {
+    .fr_wrapper {
+        width: auto !important;
+    }
+}
+
+@-moz-document domain("gamebomb.ru") {
+    #ssdfsd, .dfgdjkfgh {
+        background-image: none !important
+    }
+    #content {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        pointer-events: none
+    }
+    #basic-content-container > * {
+        pointer-events: auto
+    }
+}
+
+@-moz-document domain("gamer-info.com") {
+    #all-content-container {
+        padding: 0 !important
+    }
+}
+
+@-moz-document domain("gametech.ru") {
+    body {
+        background:#eee !important
+    }
+}
+
+@-moz-document domain("gastronom.ru") {
+    body {
+        cursor: auto !important
+    }
+    #wrapper {
+        max-width: none !important
+    }
+}
+
+@-moz-document
+  domain("get-tune.cc"),
+  domain("mp3.cc") {
+    #xx1 {
+        padding-top: 50px !important
+    }
+}
+
+@-moz-document
+  domain("gidonline.eu"),
+  domain("gidonline.in") {
+    #headerline {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("goclips.tv") {
+    .video_content {
+        height: auto !important
+    }
+}
+
+@-moz-document domain("goha.ru") {
+    #full-brand-footer>div[style*="fixed"], #head-tuppy>a {
+        display: none !important
+    }
+    #full-brand {
+        background-image: none !important
+    }
+    #head-tuppy {
+        height: 7px !important
+    }
+}
+
+@-moz-document domain("goodgame.ru") {
+    .main-block .main-inner-wrap {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("gotps3.ru") {
+    #Page {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("gstv.ru") {
+    .page-content {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("gtavicecity.ru") {
+    .body-container {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("happy-hack.ru") {
+    body > [id^="blockblock"] {
+        visibility: visible !important;
+        display: block !important
+    }
+    table[id^="blockblock"] {
+        display: none !important
+    }
+}
+
+@-moz-document domain("hdfilms.tv") {
+    #subheader {
+        padding-top: 1px !important
+    }
+}
+
+@-moz-document domain("hdkinoclub.com") {
+    #faac {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("hdrezka.ag") {
+    .b-post__mixedtext~style+div[id] {
+        display: none !important
+    }
+    .b-content__columns,
+    #top-nav + .b-container .b-content__inline_inner {
+        padding-right: 0 !important
+    }
+    #ownplayer, #videoplayer {
+        width: auto !important;
+        height: auto !important
+    }
+    #cdn-player, #youtubeplayer {
+        width: 960px !important;
+        height: 540px !important
+    }
+    .b-translator__item {
+        margin-left: 0 !important;
+        margin-right: 3px !important
+    }
+    .b-sidelist .b-content__inline_item {
+        width: 145px !important
+    }
+    .b-sidelist .b-content__inline_item a > img {
+        width: 137px !important;
+        height: auto !important
+    }
+    #vk_groups {
+        margin-left: -280px !important;
+        padding-top: 80px !important
+    }
+    .b-post__info {
+        width: 475px !important
+    }
+}
+
+@-moz-document domain("hideip.me") {
+    [style*="block"][style$="400px"],
+    [id^="numban"]:not(#id),
+    [id^="numlink"]:not(#id),
+    [class^="numlink"]:not(#id),
+    a[href*="/banner/purchase/"]:not(#id),
+    .region-highlighted .content > center:not(#id) {
+        width: 10px!important;
+        height:10px!important;
+        display: block !important;
+        transform: scale(0) !important;
+        position: fixed !important
+    }
+}
+
+@-moz-document domain("houzz.ru") {
+    .modal.in.modal-vc {
+        display: none !important
+    }
+    html, body.modal-open {
+        overflow: auto !important
+    }
+}
+
+@-moz-document domain("hs-manacost.ru") {
+    body {
+        pointer-events: none
+    }
+    body > * {
+        pointer-events: auto
+    }
+}
+
+@-moz-document domain("igromania.ru") {
+    body > .outer_outer > .outer_inner {
+        background: #dedede !important
+    }
+}
+
+@-moz-document domain("infomama.com.ua") {
+    #logo {
+        display:none !important
+    }
+    #headerMover #headerProxy {
+        height: 50px !important
+    }
+}
+
+@-moz-document domain("infpol.ru") {
+    .header__stick {
+        top: 0 !important
+    }
+    .header {
+        height: 60px !important
+    }
+}
+
+@-moz-document domain("iphones.ru") {
+    #contentShifter {
+        height: 127px !important
+    }
+}
+
+@-moz-document domain("ixbt.com") {
+    .b-content.b-content__breadcrumbs {
+        margin-top: 0 !important
+    }
+    .limiter {
+        padding-top: 0 !important;
+        margin-top: 0 !important
+    }
+    body {
+        background-color: white !important
+    }
+}
+@-moz-document domain("forum.ixbt.com") {
+    .body_content_table > .left.column {
+        margin-right: 0 !important;
+        width: 100% !important
+    }
+    .fullscreen_branding ~ .body_content_table {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("kaluga-poisk.ru") {
+    body:not(#id) {
+        background: whitesmoke !important
+    }
+}
+
+@-moz-document domain("katushka.org") {
+    #branding {
+        background: none !important;
+        pointer-events: none;
+        padding-top: 0 !important
+    }
+    #branding > * {
+        pointer-events: auto;
+    }
+}
+
+@-moz-document domain("kg-portal.ru") {
+    .ten_topbar + div:not(.ten_ears_wrap) {
+        display: none !important
+    }
+    .ten_ears_wrap {
+    	margin: 35px auto 0 auto
+    }
+    body {
+    	background-image: none !important
+    }
+}
+
+@-moz-document domain("kino-dom.tv") {
+    #main {
+        width: auto !important
+    }
+}
+
+@-moz-document domain("kino-serial.net") {
+    #header+div[style*="height"] {
+        height: 90px !important
+    }
+}
+
+@-moz-document domain("kino-v-online.tv") {
+    #global_content {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinoafisha.spb.ru") {
+    #branding_wrapper {
+        padding-right: 0 !important
+    }
+}
+
+@-moz-document domain("kinobars.net") {
+    .wrapper > .header {
+        padding: 30px !important
+    }
+}
+
+@-moz-document domain("kinobel.by") {
+    .bg-site {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinogb.co") {
+    body {
+    	background: whitesmoke !important
+    }
+    .header {
+    	height: 120px !important
+    }
+}
+
+@-moz-document
+  domain("kinogohd.net") {
+    body {
+        background-color: whitesmoke !important
+    }
+    .topmenu {
+        height: auto !important
+    }
+    .deepnavigation {
+        padding-top: 0 !important
+    }
+    .wrapper {
+        padding-top: 250px !important
+    }
+}
+
+@-moz-document domain("kinokrad.su") {
+    #wrapper:not(#id) {
+        margin-top: 46px !important
+    }
+}
+
+@-moz-document domain("kinopoisk.ru") {
+    body {
+        background: #d5d5d5 !important;
+        color: #333 !important
+    }
+    #top {
+        height: 57px !important;
+    }
+    #top_form,
+    #top .menu,
+    #top .png_block,
+    #external_header_wrapper {
+        top: 0 !important;
+    }
+    .brand,
+    .branding_flash {
+        display: none !important
+    }
+}
+
+@-moz-document domain("kinosklad.net") {
+    .margin-top#content_site {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinotochka.club") {
+    .center-box2 {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinozadrot.net") {
+    body.brending {
+        padding-top: 180px !important
+    }
+}
+
+@-moz-document domain("kirovnet.ru") {
+    .subbody2 {
+        margin-top: 0 !important
+    }
+    .bg_container {
+        padding-top:0 !important
+    }
+}
+
+@-moz-document domain("krasview.ru") {
+    #dynamic-content {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("livesport.ru") {
+    body > .container {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("lolzteam.net") {
+    .breadBoxTop {
+        margin-top: 3.5em !important
+    }
+}
+
+@-moz-document
+  domain("lostfilm.info"),
+  domain("lostfilm.tv") {
+    body {
+        background-image: none !important;
+        background-color: #1c1e1f !important
+    }
+}
+
+@-moz-document domain("macdigger.ru") {
+    #funnyWrapper {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("mail.rambler.ru") {
+    .appSearchBar, .appWindowWithBanner {
+        right: 0 !important
+    }
+}
+
+@-moz-document
+  domain("maxpark.com"),
+  domain("newsland.com") {
+    .b-branding__wrap {
+        padding: 0 !important
+    }
+}
+
+@-moz-document domain("mirf.ru") {
+    #cb-bg-to {
+        display: none !important
+    }
+    #cb-outer-container {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("movieshok.ru") {
+    .wrapp_content {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("muzland.ru") {
+    body {
+        filter:none !important
+    }
+    .googlefull {
+        height:1px !important
+    }
+}
+
+@-moz-document domain("muzofond.org") {
+    body.branding .container .content {
+        margin-top: 100px !important
+    }
+}
+
+@-moz-document domain("my-hit.org") {
+    .navbar-default {
+        margin-bottom: 0 !important
+    }
+}
+
+@-moz-document domain("naruto-base.su") {
+    #header .logo_bnr, #header .logo, #nav .nav-left {
+        display:none !important
+    }
+    #rasp {
+        left: 0 !important;
+        right: auto !important;
+        height: 116px !important
+    }
+    #rasp .side-r {
+        top:-4px !important
+    }
+    #header {
+        height: 157px !important;
+        background: rgb(255, 216, 138) !important
+    }
+    #header:before {
+        content: "";
+        position: absolute;
+        top: 7px; left: 0; right: 0; bottom: 0;
+        box-shadow: 0 -1px 5px 2px rgba(0, 0, 0, 0.3);
+        pointer-events: none;
+        /* Original pattern source: http://lea.verou.me/css3patterns/#seigaiha */
+        background-image:
+radial-gradient(circle at 100% 150%, #ff8840 24%, #ffecbe 25%, #ffecbe 28%, #ff8840 29%, #ff8840 35%, #ffecbe 36%, #ffecbe 39%, transparent 40%, transparent),
+radial-gradient(circle at 0    150%, #ff8840 24%, #ffecbe 25%, #ffecbe 28%, #ff8840 29%, #ff8840 35%, #ffecbe 36%, #ffecbe 39%, transparent 40%, transparent),
+radial-gradient(circle at 50%  100%, #ffecbe 10%, #ff8840 11%, #ff8840 23%, #ffecbe 24%, #ffecbe 30%, #ff8840 31%, #ff8840 43%, #ffecbe 44%, #ffecbe 50%, #ff8840 51%, #ff8840 63%, #ffecbe 64%, #ffecbe 70%, transparent 72%, transparent),
+radial-gradient(circle at 100% 50%, #ffecbe 5%, #ff8840 6%, #ff8840 15%, #ffecbe 16%, #ffecbe 20%, #ff8840 21%, #ff8840 30%, #ffecbe 31%, #ffecbe 35%, #ff8840 36%, #ff8840 45%, #ffecbe 46%, #ffecbe 49%, transparent 50%, transparent),
+radial-gradient(circle at 0    50%, #ffecbe 5%, #ff8840 6%, #ff8840 15%, #ffecbe 16%, #ffecbe 20%, #ff8840 21%, #ff8840 30%, #ffecbe 31%, #ffecbe 35%, #ff8840 36%, #ff8840 45%, #ffecbe 46%, #ffecbe 49%, transparent 50%, transparent) !important;
+        background-size: 60px 30px;
+        background-repeat: repeat
+    }
+    #header:after {
+        content: "";
+        position: absolute;
+        top: 7px; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(to bottom, rgba(255, 216, 138, 1) 0%, rgba(255, 216, 138, 1) 10%, rgba(255, 216, 138, 0) 100%);
+        pointer-events: none
+    }
+    .right.nav {
+        float: left !important;
+        margin-top: 126px !important;
+        margin-left: 0 !important;
+    }
+    .right.nav #nav {
+        border-top-right-radius: 5px !important
+    }
+    .under-head {
+        bottom: -118px !important
+    }
+    .under-head input {
+        padding: 6px !important
+    }
+    #container {
+    	margin-top: 30px !important
+    }
+    .shadow1, .shadow2 {
+        display: block !important
+    }
+}
+
+@-moz-document domain("naruto-brand.ru") {
+    #nqpR {
+        display:none !important
+    }
+}
+
+@-moz-document domain("nnm.me") {
+    body > #page {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("noob-club.ru") {
+    #header-new {
+        margin-bottom: 0 !important
+    }
+}
+
+@-moz-document domain("www.okino.ua") {
+    .fader-social {
+        display: none !important
+    }
+    .social-open {
+        overflow: auto !important
+    }
+}
+
+@-moz-document
+  domain("anidub-online.ru"),
+  domain("online.anidub.com") {
+    .background {
+        background: none !important
+    }
+    .background>script + div,
+    .background>script ~ div:not([id]):not([class]) + div[id][class] {
+        display: none !important
+    }
+}
+
+@-moz-document domain("online.animedia.tv") {
+    .promo {
+        display: none !important
+    }
+    .main-container {
+        margin-top: 80px !important
+    }
+}
+
+@-moz-document domain("oper.ru") {
+    #wrapper {
+        padding-bottom: 0 !important
+    }
+}
+
+@-moz-document domain("overclockers.ru") {
+    div[class^="rastyazka"], #topbanners, #crosssites > p, #uhi,
+    #mainplace > table > tbody > tr:first-child,
+    #contentplace > [class^="decoblock"],
+    .fifty-fifty-left > .decoblock_rnd1,
+    .fifty-fifty-left > .decoblock_rnd1 + .decoblock-content,
+    .fifty-fifty-right .decoblock_rnd1 ~ .decoblock_rnd1,
+    .fifty-fifty-right .decoblock_rnd1 ~ .decoblock_rnd1 + .decoblock-content {
+        position: fixed !important;
+        transform: scale(0) !important
+    }
+    .adsbygoogle {
+        height: 1px !important;
+        width: 1px !important
+    }
+}
+
+@-moz-document
+  domain("pb.wtf"),
+  domain("piratbit.org"),
+  domain("piratbit.ru") {
+    div[id] > div[class][style^="width: 24"] {
+        display: none !important
+    }
+}
+
+@-moz-document domain("peka2.tv") {
+    advert-header-banner,
+    .body--has-ad:before {
+        display: none !important
+    }
+    .body--has-ad {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("penzainform.ru") {
+    body {
+    	cursor: auto;
+        pointer-events: none;
+        background: whitesmoke !important
+    }
+	#divWrapper {
+    	pointer-events: none;
+    }
+    #divWrapper > * {
+        pointer-events: auto;
+    }
+}
+
+@-moz-document domain("playground.ru") {
+    #foundationWrapper {
+        background: #373737 !important
+    }
+}
+
+@-moz-document domain("podrobno.uz") {
+    .main {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("politobzor.net") {
+    .banner {
+        height: 90px !important
+    }
+}
+
+@-moz-document domain("pornreactor.cc") {
+    body, #background, #container {
+    	background: #6d1700 !important;
+        padding-top: 0 !important
+    }
+    #container > :not(#page) a[target^="_"] {
+    	display: none !important
+    }
+}
+
+@-moz-document domain("povarenok.ru") {
+    .car_content {
+        margin: 0 !important;
+        width: 100% !important
+    }
+    .car_recept {
+        width: 97% !important
+    }
+    .cont_head,
+    .cont_mid,
+    .car_footer {
+        background: none !important
+    }
+    .car_header,
+    .petushok,
+    .cont_foot {
+        display: none !important
+    }
+}
+
+@-moz-document domain("promodj.com") {
+    #topbrandingspot {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("prophotos.ru") {
+    body:not(#id) {
+        padding-top: 130px !important
+    }
+}
+
+@-moz-document
+  domain("prostoporno.club"),
+  domain("prostoporno.xxx") {
+    .has_adv .content_wrapper {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("pure-t.ru") {
+    .g1-header {
+        top: 0 !important;
+        position: relative !important
+    }
+}
+
+@-moz-document domain("pvpru.com") {
+    #ad_global_below_navbar,
+    #header ~ * {
+        position: fixed !important;
+        transform: scale(0) !important;
+        top: -10000px !important
+    }
+    .above_body > div[style] {
+        height: auto !important
+    }
+}
+
+@-moz-document domain("qrz.ru") {
+    iframe[src^="//ads.qrz.ru"],
+    .advertising, .advertising *, .sidebar_banner, .adsbygoogle,
+    div:not([id]):not([class])[style*="height:150px"] {
+    	height: 1px !important;
+        position: fixed !important;
+        transform: scale(0) !important
+    }
+
+}
+
+@-moz-document domain("ria.ru") {
+    .m-blur {
+        filter: none !important;
+        position: relative !important
+    }
+    .m-blur ~ #modalLayer {
+        display: none !important
+    }
+}
+
+@-moz-document domain("riotpixels.com") {
+    body {
+        background-image: none !important
+    }
+    .all-wrapper,
+    .bottom-bar {
+        top: 0 !important
+    }
+    .bottom-bar,
+    .action-menu {
+        position: fixed !important
+    }
+}
+
+@-moz-document domain("riper.am") {
+    #octo-set {
+        background-image: none !important;
+        padding-top: 0 !important
+    }
+    #main-wrapper {
+        width: auto !important
+    }
+}
+
+@-moz-document domain("rufilmtv.org") {
+    #content:not(#id) {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("rufootballtv.org") {
+    body > #branding {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("rusfootball.info") {
+    #wrap {
+        top:0 !important
+    }
+}
+
+@-moz-document domain("sc2tv.ru") {
+    .sub-frame, .low-frame, #wrapper {
+        position: static !important;
+        float: none !important;
+        width: 100% !important;
+    }
+    .main-frame {
+        background:none !important;
+        padding-top:0 !important;
+        cursor:auto !important;
+        pointer-events:none !important;
+    }
+    #wrapper > * {
+        pointer-events:auto !important;
+    }
+    #media {
+        padding-bottom:0 !important
+    }
+}
+
+@-moz-document
+  domain("seasonvar.re"),
+  domain("seasonvar.ru") {
+    body {
+        background-color: #707070 !important
+    }
+}
+
+@-moz-document domain("season-var.net") {
+    #main-wrapper {
+        top: 0 !important
+    }
+}
+
+@-moz-document domain("smotri.com") {
+    #wrapper>#all {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("smotri-filmi.net") {
+    .broda {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("snob.ru") {
+    .promotion .h-layoutWide {
+        cursor: auto !important
+    }
+}
+
+@-moz-document domain("soccer.ru") {
+    #beforecontent {
+        display: none !important
+    }
+    #left {
+        margin-top: 15px !important
+    }
+}
+
+@-moz-document
+  domain("sports.ru"),
+  domain("tribuna.com") {
+    body.img-bg, #branding-layout:not(#id) {
+        padding-top: 0 !important
+    }
+    .pageLayout {
+        top: 0 !important
+    }
+    #branding-layout > a {
+        width:0 !important;
+        height:0 !important;
+        left:-10000px !important
+    }
+}
+
+@-moz-document domain("sport-express.ru") {
+    #show-popup {
+        display:none !important
+    }
+    body.popup {
+        overflow:auto !important
+    }
+}
+
+@-moz-document
+  domain("my-tfile.org"),
+  domain("tfile.cc"),
+  domain("tfile.co") {
+    #head, #table_reduser {
+        width: 100% !important
+    }
+    .full #top_tools {
+        padding-left: 0 !important
+    }
+}
+
+@-moz-document domain("tfile-music.org") {
+    body {
+        width: 100% !important
+    }
+}
+
+@-moz-document domain("thg.ru") {
+    .top_banner, #left_adblock, #right_adblock {
+        position: fixed !important;
+        left: -10000px !important;
+        transform: scale(0) !important;
+        display: none !important
+    }
+    body {
+        background: whitesmoke !important;
+    }
+    body > div[style*='1010'] {
+        width: auto !important;
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("tnt-online.ru") {
+	#all:not(#id) {
+        top:14px !important
+    }
+}
+
+@-moz-document domain("torrent-games.net") {
+    html {
+        position:relative;
+        top:-232px;
+    }
+    #body1:before, #body1:after {
+        display: block;
+        position: fixed;
+        content: "";
+        background: white;
+        height: 100%;
+        top: 0;
+    }
+    #body1:before {
+        width: 50px;
+        left: 0px;
+    }
+    #body1:after {
+        width: calc(100% - 1130px);
+        right:0px;
+    }
+    @media (min-width: 1196px) {
+        #body1:before, #body1:after {
+            width:calc((100% - 1080px) / 2);
+        }
+    }
+}
+
+@-moz-document domain("torrentom.com") {
+    body, #footer_reklama {
+        pointer-events: none !important
+    }
+    body > *:not(#footer_reklama), #footer_reklama > * {
+        pointer-events: auto !important
+    }
+}
+
+@-moz-document domain("tort.fm") {
+    #topper_up {
+        height: 88px !important
+    }
+}
+
+@-moz-document domain("tracktor.tv") {
+    .pagebg {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("tree.tv") {
+    .wrapper {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("unionpeer.com") {
+    #br_block, .bg_link {
+        display: none !important
+    }
+}
+
+@-moz-document domain("valetudo.ru") {
+    body {
+        pointer-events: none !important
+    }
+    body > * {
+        pointer-events: auto !important
+    }
+}
+
+@-moz-document domain("vgtimes.ru") {
+    html:not(#html) .fixed_header {
+        margin-top: 0 !important
+    }
+    a[href^="/go/?http://ads.adfox.ru/"],
+    a[href^="/go/?https://ads.adfox.ru/"]{
+        display: none !important
+    }
+}
+
+@-moz-document domain("videomore.ru") {
+    body > .wrapper {
+        padding-top: 0 !important;
+        background-color: #ECEFF2 !important
+    }
+    .wrapper.adfoxClickable {
+        padding-top: 0 !important;
+        background-image: none !important;
+        pointer-events: none !important;
+        background-color: #ECEFF2 !important
+    }
+    .wrapper.adfoxClickable > div {
+        pointer-events: auto !important
+    }
+}
+
+@-moz-document domain("warfiles.ru") {
+    #header + .banner {
+        height: 100px !important
+    }
+}
+
+@-moz-document domain("webfile.ru") {
+    .p_wrap {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("wotspeak.ru") {
+    #popup-1 {
+        display: none !important
+    }
+    .wrap {
+        transform: none !important;
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("live-rutor.org") {
+    body {
+        overflow: auto !important
+    }
+}
+
+@-moz-document domain("xatab-repack.net") {
+    #content {
+        padding-top: 55px !important
+    }
+}
+
+@-moz-document
+  domain("yandex.by"),
+  domain("yandex.kz"),
+  domain("yandex.ru"),
+  domain("yandex.ua") {
+    div[style*=' !important'][style*='display'][style*='visibility'][style*='visible'] {
+        width: 0 !important;
+        min-width: 0 !important;
+        max-width: 0 !important;
+        height: 0 !important;
+        min-height: 0 !important;
+        max-height: 0 !important;
+        overflow: hidden !important
+    }
+    .serp-header {
+        margin-top: 0 !important
+    }
+    /* Исправление для горизонтальной прокрутки на Погоде по выходным */
+    .forecast-brief__item-temp-day {
+        width: auto !important
+    }
+    /* Пустое место от директа на tv.yandex */
+    .tv-grid__page > div[class^="tv-grid__item"], .tv-grid__page > .tv-sortable-item {
+        margin-right: auto !important
+    }
+}
+
+@-moz-document domain("yaplakal.com") {
+    #footer, #top-line {
+        background: none !important;
+        padding: 0 !important
+    }
+    #header,
+    #footer {
+        background-color: skyblue !important
+    }
+}
+
+@-moz-document domain("yummyanime.com") {
+    #top-block {
+        position: fixed !important;
+        height: 0 !important;
+        width: 0 !important
+    }
+}
+
+@-moz-document domain("zagonka.ru") {
+    .sitebox {
+        margin-top:0 !important
+    }
+}
+
+@-moz-document domain("zaycev.net") {
+    .body-branding {
+        background: none !important;
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("zaycev.online") {
+    .content:not(#id) {
+        margin-top: 80px !important
+    }
+}
+
+@-moz-document domain("zoneofgames.ru") {
+    .branding-bottom, .branding, div.logo {
+        background: none !important;
+        height: auto !important
+    }
+    .branding-bottom > div[style*="padding:"] {
+        padding-top: 5px !important
+    }
+}
+
+@-moz-document domain("zoomby.ru") {
+    #global_wrapper_cont {
+        padding: 0 !important
+    }
+    .wrapper {
+        margin-top: 60px !important
+    }
+}
+
+/* (anti-anti) Social filters */
+/* Basically, it's filters against asocial "social" features on some sites */
+/* like a modal popup "join our Facehook group" and other stuff like that. */
+@-moz-document
+  domain("eg.ru"),
+  domain("gagadget.com"),
+  domain("msn.com"),
+  domain("ngs.ru"),
+  domain("news.rambler.ru"),
+  domain("rbc.ru") {
+    html:not(#id), body:not(#id) {
+        overflow: auto !important
+    }
+}
+
+@-moz-document domain("autoua.net") {
+    .fader-social {
+    	display: none !important
+    }
+    .social-open {
+    	overflow: auto !important
+    }
+}
+
+@-moz-document domain("eg.ru") {
+    .facebook-bn_site-overlay {
+        display: none !important
+    }
+}
+
+@-moz-document domain("gagadget.com") {
+    .fader-social {
+        display:none !important
+    }
+}
+
+@-moz-document domain("life.ru") {
+    div[class^="arcticmodal-"],
+    .banner-mylife,
+    .banner-mylife-backdrop {
+        display: none !important
+    }
+    body:not(#id) {
+        overflow: auto !important;
+        margin-right: auto !important
+    }
+}
+
+@-moz-document domain("msn.com") {
+    .promobanner {
+        display: none !important
+    }
+}
+
+@-moz-document
+  domain("ngs.ru"),
+  domain("news.rambler.ru") {
+    .subscribe-popup__wrapper,
+    .subscribe-popup-cover,
+    .subscribe-popup,
+    .social-popup {
+        display: none !important
+    }
+}
+
+@-moz-document domain("rbc.ru") {
+    .popup_push {
+        display:none !important
+    }
+}
+/* Модальный оверлей на сайтах системы «Актион/Action» */
+@-moz-document
+  domain("26-2.ru"),
+  domain("arbitr-praktika.ru"),
+  domain("budgetnik.ru"),
+  domain("business.ru"),
+  domain("cxychet.ru"),
+  domain("dirsalona.ru"),
+  domain("fd.ru"),
+  domain("gazeta-unp.ru"),
+  domain("gd.ru"),
+  domain("gkh.ru"),
+  domain("glavbukh.ru"),
+  domain("golovbukh.ua"),
+  domain("hr-director.ru"),
+  domain("kadrovik01.com.ua"),
+  domain("kdelo.ru"),
+  domain("kom-dir.ru"),
+  domain("lawyercom.ru"),
+  domain("menobr.ru"),
+  domain("nalogplan.ru"),
+  domain("pro-goszakaz.ru"),
+  domain("pro-personal.ru"),
+  domain("resobr.ru"),
+  domain("rnk.ru"),
+  domain("stroychet.ru"),
+  domain("trudohrana.ru"),
+  domain("ugpr.ru"),
+  domain("zarplata-online.ru"),
+  domain("zdrav.ru") {
+    body {
+        overflow: auto !important
+    }
+    div[class^="GbShadow"], .jqmWindow, .jqmOverlay, .megaShadow, ._top_990x70 {
+        display: none !important
+    }
+}
+/* mail.ru -_- */
+@-moz-document domain("cloud.mail.ru") {
+    .content__left > style + div[id]:not(#breadcrumbs),
+    .b-layout__col_2_2 > style + div[id][class] {
+        transform: scale(0) !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        position: fixed !important;
+        top: -1000px !important
+    }
+}
+
+@-moz-document domain("e.mail.ru") {
+    #leftcol-banners, .b-rb, .message-sent__hr.message-sent__hr_big, .message-sent__hr.message-sent__hr_small, #preload_banner_1, .message-sent__ads, .message-sent__wrap:nth-of-type(4), .js-helper.direct-state {
+        transform: scale(0) !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        position: fixed !important;
+        top: -1000px !important
+    }
+}
+
+@-moz-document domain("go.mail.ru") {
+    html:not(#id) body:not(#id) .responses__wrapper > div[id^="js-"][id$="Block"] > div[class$="-block"] {
+        display: none !important;
+        opacity: 0 !important;
+        pointer-events:none !important;
+        height: 0 !important;
+    }
+}
+
+@-moz-document domain("hi-tech.mail.ru") {
+    #portal-menu, .header-banner {
+        margin: 0 !important
+    }
+}
+
+@-moz-document domain("sport.mail.ru") {
+    .index-top__left__inner {
+        padding-right: 0 !important
+    }
+}
+
+@-moz-document domain("mail.ru") {
+    #doubleformat_down, .branding-p,
+    div[data-module^="Slot.mimic."], noindex[style*="!"] {
+        transform: scale(0) !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        position: fixed !important;
+        top: -1000px !important
+    }
+}
+
+@-moz-document domain("ok.ru") {
+    .dialogWrapperBanner {
+        transform: scale(0) !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        position: fixed !important;
+        top: -1000px !important
+    }
+}
+
+/* Per-page rules */
+@-moz-document url-prefix("https://reports.adblockplus.org/digest?") {
+    html, body {
+        height:100% !important;
+        overflow:hidden
+    }
+    #reports {
+        height:calc(100% - 50px) !important;
+        width:calc(100% - 2px) !important
+    }
+}
+
+/* i really DON'T want this to be global */
