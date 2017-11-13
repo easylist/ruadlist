@@ -1,14 +1,18 @@
 let fs = require('fs');
 (async () => {
     'use strict';
-    let str = await new Promise(
-        (r, j) => fs.readFile('./ruadlist-fixes.css', 'utf8', (err, data) => {
+    const reader = filename => new Promise(
+        (r, j) => fs.readFile(filename, 'utf8', (err, data) => {
             if (err)
                 return j(err);
             return r(data);
         })
     ).catch((err) => console.log(err));
-    if (!str)
+
+    let str = await reader('./ruadlist-fixes.css');
+    let hdr = await reader('./css-fixes-experimental.header');
+
+    if (!str || !hdr)
         return;
 
     str = str.replace(/\/\*.+?\*\//g,'').replace(/[\n\r]+/g,'').replace(/\s+/g,' ')
@@ -51,5 +55,11 @@ let fs = require('fs');
         }
     }
     // TODO: either add template and generate fixes list with template or update existing file
-    console.log(result.join('\n')+'\n\n! --- disabled ---\n'+disabled.join('\n'));
+
+    hdr = hdr.replace('%filters%', result.join('\n')+'\n! --- disabled ---\n'+disabled.join('\n'))
+    fs.writeFile('./css-fixes-experimental.txt', hdr, (err) => {
+        if (err)
+            return console.log('Unable to save JS:', err);
+        console.log('Filters generated and saved.')
+    });
 })();

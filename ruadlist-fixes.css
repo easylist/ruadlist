@@ -1085,7 +1085,7 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    #header .logo_bnr, #header .logo, #nav .nav-left {
+    #header > *:not(.right.nav):not(.under-head) {
         display:none !important
     }
     #rasp {
