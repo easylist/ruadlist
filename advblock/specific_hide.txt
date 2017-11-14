@@ -2601,6 +2601,7 @@ medvesti.com##.rew-block
 matchtv.ru##.rexona_player_play
 pejnya.org##.ri
 meta.ua##.riaBanner
+lostfilm-online.ru##.right > noindex ~ .bb
 3vozrast.ru,club.foto.ru,l2anons.ws,l2oops.com,superhumor.ru,voffka.com##.right-banner
 pulscen.ru##.right-banners
 hl-inside.ru##.right-block.rek
@@ -3856,7 +3857,7 @@ gametech.ru,ixbt.com##a[href^="http://rose.ixbt.com/cgi-bin/click_i.cgi"][target
 rp-mechanics.ru##a[href^="http://rp-mechanics.ru/engine/go.php"]
 newstudio.tv##a[href^="http://ru.avxcore.com"]
 rutorrent.co##a[href^="http://rutorent.net/module.php"]
-gearshout.net,lostfilm-online.ru##a[href^="http://s.click.aliexpress.com/e/"]
+gearshout.net##a[href^="http://s.click.aliexpress.com/e/"]
 bratsk.org##a[href^="http://sberbank.ru/ru/person/promo/"]
 mapakids.net##a[href^="http://scorch5.com/"]
 hdclub.org,newstudio.tv,tracker.hdclub.com.ua##a[href^="http://seedbox.org.ua/"]
@@ -4142,6 +4143,8 @@ chelnyclub.ru##body > div[style*="width: 990px"]
 rasfokus.ru##body > div[style*="z-index"][style*="position"]
 wowjp.net##body > div[style*="z-index: 10000"]
 pr-cy.ru##body > div[style="text-align: center;"]
+lostfilm-online.ru##body > div[style] > div > div[class^="block_bottom"]
+lostfilm-online.ru##body > div[style] > div > noindex
 laststicker.ru##body > div[style] > noindex
 dokpro.club##body > div[style^="height"]:not([id]):not([class])
 film.ru##body > div[style^="height:"]
@@ -4800,6 +4803,10 @@ spaces.ru#?##left_nav > div[class]:-abp-has([id*="ScriptRoot"])
 fstreker.net##legend
 polochka.net##li[class^="ss-li-"]
 penzainform.ru##li[style="width: 140px; height: 280px; max-height: 280px;"]
+lostfilm-online.ru#?#body > div[style] > div > .block:-abp-has(.block_head:-abp-contains(Вам понравится))
+lostfilm-online.ru#?#body > div[style] > div > .block:-abp-has(.block_head:-abp-contains(Вас заинтересует))
+lostfilm-online.ru#?#body > div[style] > div > .block:-abp-has(.block_head:-abp-contains(Дешевле))
+lostfilm-online.ru#?#body > div[style] > div > .block:-abp-has(.block_head:-abp-contains(Интересное в сети))
 charming-face.ru##marquee
 9sx.ru##marquee[scrollamount]
 mob39.ru##meta + center > table[cellspacing="0"][cellpadding="0"][border="0"]
