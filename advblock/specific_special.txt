@@ -856,17 +856,16 @@ ok.ru##.update-browser_container
 @@||vk.com/video_ext.php$subdocument,domain=naruto-base.su
 @@||vk.me^*/docs/$subdocument,domain=naruto-base.su
 @@||youtube.com/embed/$subdocument,domain=naruto-base.su
-naruto-base.su##.ban_wrt
+naruto-base.su##[onclick][class*="ban"]
 naruto-base.su##a[href*="/clck.ru/"]
 naruto-base.su##a[href*="bit.ly"]
 naruto-base.su##a[href*="goo.gl"]
 naruto-base.su#?##rightbar > .block:-abp-has(.title:-abp-contains(Игры по Наруто))
 |http://$third-party,script,subdocument,domain=naruto-base.su
-||espritgames.ru^$popup,domain=naruto-base.su
+||aniga.me^$popup,domain=naruto-base.su
 ||naruto-base.su/*.htm
 ||naruto-base.su^$object
 ||naruto-base.su^*banner$image
-||naruto-base.su^*Reins
 ||narutobase.3dn.ru^$subdocument
 !
 ! NGS.RU
