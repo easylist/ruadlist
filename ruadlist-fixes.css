@@ -1085,7 +1085,7 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    #header > *:not([class="right nav"]):not([class="under-head"]) {
+    #sheader > *:not([class="right snav"]):not([class="search_h1"]) {
         display:none !important
     }
     #rasp {
@@ -1096,11 +1096,11 @@
     #rasp .side-r {
         top:-4px !important
     }
-    #header {
+    #sheader {
         height: 157px !important;
         background: rgb(255, 216, 138) !important
     }
-    #header:before {
+    #sheader:before {
         content: "";
         position: absolute;
         top: 7px; left: 0; right: 0; bottom: 0;
@@ -1116,32 +1116,29 @@ radial-gradient(circle at 0    50%, #ffecbe 5%, #ff8840 6%, #ff8840 15%, #ffecbe
         background-size: 60px 30px;
         background-repeat: repeat
     }
-    #header:after {
+    #sheader:after {
         content: "";
         position: absolute;
         top: 7px; left: 0; right: 0; bottom: 0;
         background: linear-gradient(to bottom, rgba(255, 216, 138, 1) 0%, rgba(255, 216, 138, 1) 10%, rgba(255, 216, 138, 0) 100%);
         pointer-events: none
     }
-    .right.nav {
+    .right.snav {
         float: left !important;
         margin-top: 126px !important;
         margin-left: 0 !important;
     }
-    .right.nav #nav {
+    .right.snav #nav {
         border-top-right-radius: 5px !important
     }
-    .under-head {
+    .search_h1 {
         bottom: -118px !important
     }
-    .under-head input {
+    .search_h1 input {
         padding: 6px !important
     }
-    #container {
+    #cont_1s {
     	margin-top: 30px !important
-    }
-    .shadow1, .shadow2 {
-        display: block !important
     }
 }
 
