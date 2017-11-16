@@ -7,3 +7,5 @@
 ! JS code located in css-fixes-experimental.js
 ! Removed 1 @media rule and disabled 1 url-prefix rule (placed at the end of the list)
 %filters%
+! --- specific deep rules ---
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.container__line.container__search + .heap_direction_column /deep/ style + div
