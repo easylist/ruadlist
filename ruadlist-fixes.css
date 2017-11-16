@@ -15,7 +15,6 @@
   domain("macdigger.ru"),
   domain("newstudio.tv"),
   domain("nnm.me"),
-  domain("nnm-club.me"),
   domain("oblozhki.net"),
   domain("oper.ru"),
   domain("pure-t.ru"),
@@ -66,7 +65,6 @@
   domain("my-tfile.org"),
   domain("newstudio.tv"),
   domain("nnm.me"),
-  domain("nnm-club.me"),
   domain("ostfilm.tv"),
   domain("pure-t.ru"),
   domain("roem.ru"),
@@ -102,6 +100,7 @@
   domain("gametech.ru"),
   domain("gidonline.eu"),
   domain("gidonline.in"),
+  domain("kinohome.net"),
   domain("kinohome.org"),
   domain("oblozhki.net"),
   domain("the-cinema.ru"),
@@ -303,8 +302,11 @@
 }
 
 @-moz-document domain("anistar.me") {
-    body > .clear + div:not(.main), .news-fixed {
+    body > .clear + div:not(.main) {
         display: none !important
+    }
+    body > header {
+        padding-bottom: 20px !important
     }
     .wrapper.width1200 {
         margin-top: 0
@@ -1148,6 +1150,15 @@ radial-gradient(circle at 0    50%, #ffecbe 5%, #ff8840 6%, #ff8840 15%, #ffecbe
     }
 }
 
+@-moz-document
+  domain("nnm-club.name"),
+  domain("nnm-club.to"),
+  domain("nnmclub.to") {
+    body > .wrap {
+        top: 0 !important
+    }
+}
+
 @-moz-document domain("nnm.me") {
     body > #page {
         padding-top: 0 !important
@@ -1650,6 +1661,9 @@ radial-gradient(circle at 0    50%, #ffecbe 5%, #ff8840 6%, #ff8840 15%, #ffecbe
 }
 
 @-moz-document domain("xatab-repack.net") {
+    #page {
+        background: none !important
+    }
     #content {
         padding-top: 55px !important
     }
