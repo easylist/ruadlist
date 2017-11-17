@@ -15,7 +15,7 @@ let fs = require('fs');
     if (!str || !hdr)
         return;
 
-    str = str.replace(/\/\*.+?\*\//g,'').replace(/[\n\r]+/g,'').replace(/\s+/g,' ')
+    str = str.replace(/\/\*[\w\W]+?\*\//g,'').replace(/[\n\r]+/g,'').replace(/\s+/g,' ')
              .replace(/@media[^{]+\{.*?\}\s?\}\s?/g, '')
              .replace(/\s?@-moz-document\s/g,'\n').replace(/"\)\s?{\s?/g,'")#?#')
              .replace(/domain\("([^"]+)"\)/g,'$1').replace(/,\s/g,',')
