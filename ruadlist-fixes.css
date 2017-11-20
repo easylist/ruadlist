@@ -12,6 +12,7 @@
   domain("epravda.com.ua"),
   domain("fastpic.ru"),
   domain("film-max.ru"),
+  domain("hd-720.com"),
   domain("hd720.biz"),
   domain("ixbt.com"),
   domain("kinogohd.net"),
@@ -108,6 +109,7 @@
   domain("gametech.ru"),
   domain("gidonline.eu"),
   domain("gidonline.in"),
+  domain("hd-720.com"),
   domain("kinohome.net"),
   domain("kinohome.org"),
   domain("oblozhki.net"),
@@ -501,22 +503,6 @@
     }
 }
 
-@-moz-document
-  domain("f-picture.net"),
-  domain("radikal.ru") {
-    .base-page_wrapper, .render_body_main {
-        width: auto !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    	background-position: center !important;
-    }
-    .no-advert_wrapper_top,
-    .no-advert_wrapper_bottom {
-        width: 830px !important;
-        margin: auto !important;
-    }
-}
-
 @-moz-document domain("fast-torrent.ru") {
     body {
         background: white !important
@@ -862,9 +848,15 @@
         margin-right: 0 !important;
         width: 100% !important
     }
+    .body_wrapper {
+        max-width: 100% !important
+    }
     .fullscreen_branding ~ .body_content_table {
         margin-top: 0 !important;
         z-index: 0 !important
+    }
+    .left.column > #question.dialog_thanks {
+        left: 67% !important
     }
 }
 
@@ -967,7 +959,8 @@
 @-moz-document domain("kinopoisk.ru") {
     body {
         background: #d5d5d5 !important;
-        color: #333 !important
+        color: #333 !important;
+        overflow: auto !important
     }
     #top {
         height: 57px !important;
@@ -979,8 +972,9 @@
         top: 0 !important;
     }
     .brand,
-    .branding_flash {
-        display: none !important
+    .branding_flash,
+    #partial_component__tickets-promo-popup {
+            display: none !important
     }
 }
 
