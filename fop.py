@@ -17,7 +17,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.805
+VERSION = 3.806
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -303,7 +303,9 @@ def elementtidy (domains, separator, selector):
     # Clean up tree selectors
     for tree in each(TREESELECTOR, selector):
         if tree.group(0) in selectoronlystrings or not tree.group(0) in selectorwithoutstrings: continue
-        replaceby = " {g2} ".format(g2 = tree.group(2))
+        # added check for case when tree selector were used in :-abp-has() and similar constructions at first position
+        # basically for cases like PARENT:-abp-has(> CHILD)
+        replaceby = "{sp}{g2} ".format(sp = ("" if tree.group(1) == "(" else " "), g2 = tree.group(2))
         if replaceby == "   ": replaceby = " "
         selector = selector.replace(tree.group(0), "{g1}{replaceby}{g3}".format(g1 = tree.group(1), replaceby = replaceby, g3 = tree.group(3)), 1)
     # Remove unnecessary tags
