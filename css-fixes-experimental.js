@@ -9,7 +9,8 @@ let fs = require('fs');
         })
     ).catch((err) => console.log(err));
 
-    let str = await reader('./ruadlist-fixes.css');
+    let css = await reader('./ruadlist-fixes.css');
+    let str = css;
     let hdr = await reader('./css-fixes-experimental.header');
 
     if (!str || !hdr)
@@ -54,12 +55,34 @@ let fs = require('fs');
             }
         }
     }
-    // TODO: either add template and generate fixes list with template or update existing file
 
     hdr = hdr.replace('%filters%', result.join('\n')+'\n! --- disabled ---\n'+disabled.join('\n'))
-    fs.writeFile('./css-fixes-experimental.txt', hdr, (err) => {
+    fs.writeFile('./css-fixes-experimental.txt', hdr, err => {
         if (err)
-            return console.log('Unable to save JS:', err);
+            return console.log('Unable to save filters:', err);
         console.log('Filters generated and saved.')
+    });
+
+    let versionPattern = /(@version\s+)(\d+)\.(\d+)\.(\d+)/;
+    let version = css.match(versionPattern);
+    if (version) {
+        let zero = version[2];
+        let oldDate = version[3];
+        let iteration = version[4];
+        let date = new Date();
+        let padLeft = (num, pad) => Array(pad - (num+'').length + 1).join('0') + num;
+        let newDate = `${date.getFullYear()}${padLeft(date.getMonth(), 2)}${padLeft(date.getDate(), 2)}`;
+        if (oldDate === newDate) {
+            iteration = parseInt(iteration) + 1 + '';
+        }
+        css = css.replace(versionPattern, `$1${zero}.${newDate}.${iteration}`);
+    } else {
+        console.log('Unable to update style version.');
+    }
+
+    fs.writeFile('./ruadlist-fixes.css', css, err => {
+        if (err)
+            return console.log('Unable to save CSS:', err);
+        console.log('CSS version updated.')
     });
 })();
