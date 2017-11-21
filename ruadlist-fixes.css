@@ -1884,7 +1884,7 @@ radial-gradient(circle at 0    50%, #ffecbe 5%, #ff8840 6%, #ff8840 15%, #ffecbe
 }
 
 @-moz-document domain("go.mail.ru") {
-    html:not(#id) body:not(#id) .responses__wrapper > div[id^="js-"][id$="Block"] > div[class$="-block"] {
+    html:not(#id) body:not(#id) .responses__wrapper > div[id^="js-"][id$="Block"] > [class$="-block"] {
         display: none !important;
         opacity: 0 !important;
         pointer-events:none !important;
