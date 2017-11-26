@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20171022.1
+@version 0.20171026.0
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -61,6 +61,7 @@
   domain("hdkinoklub.com"),
   domain("hdrezka-online.me"),
   domain("hdrezka.ag"),
+  domain("ikinohd.club"),
   domain("ikinohd.com"),
   domain("itop-gear.ru"),
   domain("ixbt.com"),
@@ -503,7 +504,9 @@
     }
 }
 
-@-moz-document domain("fast-torrent.ru") {
+@-moz-document
+  domain("fast-torrent.ru"),
+  domain("fasttorrent.ru") {
     body {
         background: white !important
     }
@@ -649,6 +652,12 @@
     }
     #wrapper {
         max-width: none !important
+    }
+}
+
+@-moz-document domain("gazeta.ru") {
+   .sausage-list-maintheme.maintheme-flow .sausage-list-item:first-child {
+       z-index: 1
     }
 }
 
@@ -907,9 +916,15 @@
     }
 }
 
-@-moz-document domain("kinoafisha.spb.ru") {
-    #branding_wrapper {
-        padding-right: 0 !important
+@-moz-document domain("kinoafisha.info") {
+    .popup-illumination {
+        display: none !important
+    }
+    .main_frame {
+        background: none !important
+    }
+    body.main:not(#id) {
+        background: #141414 !important
     }
 }
 
@@ -1761,6 +1776,7 @@ radial-gradient(circle at 0    50%, #ffecbe 5%, #ff8840 6%, #ff8840 15%, #ffecbe
 @-moz-document
   domain("eg.ru"),
   domain("gagadget.com"),
+  domain("kinoafisha.info"),
   domain("msn.com"),
   domain("ngs.ru"),
   domain("news.rambler.ru"),

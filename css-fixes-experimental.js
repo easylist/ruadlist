@@ -72,9 +72,7 @@ let fs = require('fs');
         let date = new Date();
         let padLeft = (num, pad) => Array(pad - (num+'').length + 1).join('0') + num;
         let newDate = `${date.getFullYear()}${padLeft(date.getMonth(), 2)}${padLeft(date.getDate(), 2)}`;
-        if (oldDate === newDate) {
-            iteration = parseInt(iteration) + 1 + '';
-        }
+        iteration = oldDate === newDate ? parseInt(iteration) + 1 + '' : '0';
         css = css.replace(versionPattern, `$1${zero}.${newDate}.${iteration}`);
     } else {
         console.log('Unable to update style version.');
