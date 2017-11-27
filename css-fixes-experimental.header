@@ -9,3 +9,4 @@
 %filters%
 ! --- specific deep rules ---
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.container__line.container__search + .heap_direction_column /deep/ style + div
+yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity-zen"] .widgets_js_inited > div[class]:last-child /deep/ style + div
