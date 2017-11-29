@@ -9,4 +9,7 @@
 %filters%
 ! --- specific deep rules ---
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.container__line.container__search + .heap_direction_column /deep/ style + div
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_domik"] .widgets_js_inited > div[class]:last-child /deep/ style + div
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_domik"] .widgets_js_inited > div[class] /deep/ div:-abp-has(iframe[src*="noscript"])
+yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_domik"] .widgets_js_inited > div[class] /deep/ div iframe[src*="noscript"]
+yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_domik"] .widgets_js_inited > div[class] /deep/ div > a[href^="https://yastatic.net/morda/"]
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_domik"] .widgets_js_inited > div[class] /deep/ div:-abp-has(a[href^="https://yastatic.net/morda/"])

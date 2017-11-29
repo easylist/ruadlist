@@ -633,4 +633,7 @@ ok.ru#?#.dialogWrapperBanner:style(transform: scale(0) !important; opacity: 0 !i
 ! url-prefix("https://reports.adblockplus.org/digest?")#?#html,body:style(height:100% !important; overflow:hidden), #reports:style(height:calc(100% - 50px) !important; width:calc(100% - 2px) !important)
 ! --- specific deep rules ---
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.container__line.container__search + .heap_direction_column /deep/ style + div
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_domik"] .widgets_js_inited > div[class]:last-child /deep/ style + div
+yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_domik"] .widgets_js_inited > div[class] /deep/ div > a[href^="https://yastatic.net/morda/"]
+yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_domik"] .widgets_js_inited > div[class] /deep/ div iframe[src*="noscript"]
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_domik"] .widgets_js_inited > div[class] /deep/ div:-abp-has(a[href^="https://yastatic.net/morda/"])
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_domik"] .widgets_js_inited > div[class] /deep/ div:-abp-has(iframe[src*="noscript"])
