@@ -176,6 +176,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|2000.ua
 .monkeypxls.ru^$script,domain=monkeypxls.ru
 .monpxls.ru^$script,domain=monpxls.ru
 .moonpix.ru^$script,domain=moonpix.ru
+.mp4|$domain=24video.adult|24video.in|russian-porn.online
 .mreadz.com^$script,domain=mreadz.com
 .multikonline.ru^$script,domain=multikonline.ru
 .multivarki-redmond.ru^$script,domain=multivarki-redmond.ru
@@ -315,7 +316,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|2000.ua
 .zz87.xyz^$script
 .zzzww.website^$script
 .легион.net^$script,domain=xn--c1adkjnf.net|легион.net
-/(?!24video.adult)(?!24video.in)(?!russian-porn.online)/[a-z]{1,3}$/$script,xmlhttprequest,domain=24video.adult|24video.in|russian-porn.online
+/(?!24video.adult)(?!24video.in)(?!russian-porn.online)/[^.]{1,9}$/$script,domain=24video.adult|24video.in|russian-porn.online
 /(fdsiegdfrnila.info/(?!php)(?!style))/$script,~third-party
 /(sovets.net\/(?!article)(?!profile))/$xmlhttprequest,domain=sovets.net
 /*.*.website^$script,domain=~protractedwar.website
