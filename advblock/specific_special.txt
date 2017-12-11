@@ -1340,8 +1340,8 @@ tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##div[id^="yandex_ad_"]
 ||yandex.net/get-direct/
 ||yastatic.net/daas/
 ! Главная яндекса
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_domik"] .widgets_js_inited > div div[class] ~ div[class] > div[class]:-abp-has(> script)
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_domik"] .widgets_js_inited > div div[class] ~ div[class] > div[class]:-abp-has(div[class] > div[class] > div:not([class]):empty)
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_domik"] .widgets_js_inited > div div[class] ~ div[class] > div[class]:not(.b-widget-data):-abp-has(> script)
 ||yastatic.net/morda/
 ! Прочее
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.BlaBlaCarSegment
