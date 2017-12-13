@@ -788,6 +788,7 @@ otzovik.com#@#.view_ad
 otzovik.com#@#.yaAds
 @@$xmlhttprequest,domain=player.3tv.im
 @@.dirty.ru/static/$domain=dirty.ru
+@@/(forum.ixbt.com/banners/)*\.[a-z]{2,3}$/$xmlhttprequest,domain=forum.ixbt.com
 @@/*marketgid.com/ws$websocket,domain=joyreactor.cc|pornreactor.cc|reactor.cc
 @@/^https?://ad\.3dnews\.ru/[^/]*/ajs.php\?zoneid=/$script,domain=3dnews.ru
 @@/adblock_detector.js$script,domain=forum.trainzup.net|oblozhki.net
@@ -871,8 +872,6 @@ otzovik.com#@#.yaAds
 @@||engine.rbc.medialand.ru/code?pid=*&gid=$script,domain=rbc.ru
 @@||et-code.ru/bens/vinos.js$script,domain=moviestape.com|smotri.com
 @@||example.com^$image,subdocument,domain=izzylaif.com
-@@||forum.ixbt.com/banners/*.cgi|$xmlhttprequest,domain=forum.ixbt.com
-@@||forum.ixbt.com/banners/*.pl|$xmlhttprequest,domain=forum.ixbt.com
 @@||forum.ixbt.com/js/fotkidepo/baners//*.js|$script,domain=forum.ixbt.com
 @@||free-send.ru^$elemhide
 @@||freefotohelp.ru/css/inc/*.js|$script,domain=freefotohelp.ru
