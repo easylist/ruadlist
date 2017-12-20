@@ -272,7 +272,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|2000.ua
 .zozi.ru^$script,domain=zozi.ru
 .zz87.xyz^$script
 .легион.net^$script,domain=xn--c1adkjnf.net|легион.net
-/(?!dlx3.24video.adult)/[0-9]{2,3}\.mp4/$domain=24video.adult|24video.in|russian-porn.online
+/(?!dlx3.24video.adult)/[0-9]{2,3}\/[0-9]{2,3}\/[\S]{1,30}\.mp4/$domain=24video.adult|24video.in|russian-porn.online
 /(fdsiegdfrnila.info/(?!php)(?!style))/$script,~third-party
 /(sovets.net\/(?!article)(?!profile))/$xmlhttprequest,domain=sovets.net
 /*.*pix.xyz^$script
@@ -981,7 +981,6 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 ||dleshka.org/go/
 ||dlstatic.ru/panners/
 ||dlx2.24video.in/
-||dlx3.24video.in/
 ||dlx3.russian-porn.online/
 ||dnepr.info/*banner
 ||dnvidov.ru/ajax/
