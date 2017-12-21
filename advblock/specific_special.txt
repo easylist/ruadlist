@@ -676,6 +676,8 @@ mail.ru##.daynews__banner
 mail.ru##.daynews__spring
 mail.ru##.direct
 mail.ru##.goods
+mail.ru##.grid-down__lcol
+mail.ru##.grid-top__rcol > :not(.games)
 mail.ru##.grid__item_banner
 mail.ru##.js-banner
 mail.ru##.js-pbanner_cntr
@@ -692,17 +694,15 @@ mail.ru##.portal-menu__banner
 mail.ru##.rb-container
 mail.ru##.rb-video-widget
 mail.ru##.rectangle-banner
-mail.ru##.s-linkedSearch .grid-middle__content > .news ~ div[class]:empty + div[class]
-mail.ru##.s-linkedSearch .grid__container > .grid-top__rcol > :not(.games)
-mail.ru##.s-linkedSearch .well.notify
 mail.ru##.yadirect
 mail.ru##[class^="rb-million"]
 mail.ru##[data-view^="SlotView.mimic"]
 mail.ru##a[class^="branding"]
 mail.ru##a[id^="tb-"][class^="tb-"][target="_blank"]
 mail.ru##a[id^="tb-"][href*="://r.mail.ru/"]
+mail.ru##body > #grid .grid-middle__content > .news ~ div[class]:empty + div[class]
+mail.ru##body > #grid .well.notify
 mail.ru##body > .ad
-mail.ru##body.s-linkedSearch .grid-down #notify
 mail.ru##div[class*="_branding"]
 mail.ru##div[class*="directhack"]
 mail.ru##div[class*="mimic-direct"]
@@ -718,8 +718,6 @@ mail.ru##div[id^="yandex_"]
 mail.ru#?##grid\:middle\:content div:-abp-has(> div[class]:-abp-contains(Реклама))
 mail.ru#?#.cols__inner > .js-fixed-panel .box:-abp-has([class*="cols_experimant"])
 mail.ru#?#.rb-slot:-abp-has([id*="yandex_"])
-mail.ru#?#.s-linkedSearch .grid-middle__content > div[class] ~ div:-abp-has(div > img[src^="data:image"])
-mail.ru#?#.s-linkedSearch .grid-top > .grid__container > div > div:-abp-has(div > img[src^="data:image"])
 mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
 ! Почта
 e.mail.ru###leftcol-banners
