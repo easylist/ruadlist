@@ -232,7 +232,7 @@ happy-hack.ru##table[id^="blockblock"]
 ! ---
 hd720kino.ru#?#.main.center:style(margin-top: 0 !important)
 hd720kino.ru#?#.wrap:style(background: none !important)
-!
+! ---
 hdfilms.tv#?##subheader:style(padding-top: 1px !important)
 ! ---
 hdkinoclub.com#?##faac:style(padding-top: 0 !important)
@@ -262,7 +262,8 @@ houzz.ru#?#body.modal-open:style(overflow: auto !important)
 houzz.ru#?#html:style(overflow: auto !important)
 ! ---
 hs-manacost.ru#?#body > *:style(pointer-events: auto)
-hs-manacost.ru#?#body:style(pointer-events: none; background-image: none !important; background-color: whitesmoke !important)
+hs-manacost.ru#?#body:style(background-image: none !important; background-color: whitesmoke !important)
+hs-manacost.ru#?#body:style(pointer-events: none)
 hs-manacost.ru#?##td-outer-wrap > *:style(pointer-events: auto)
 hs-manacost.ru#?##td-outer-wrap:style(pointer-events: none)
 ! ---
@@ -337,12 +338,12 @@ kirovnet.ru#?#.subbody2:style(margin-top: 0 !important)
 krasview.ru#?##dynamic-content:style(margin-top: 0 !important)
 ! ---
 livecars.ru,livesport.ru#?#.content:style(margin-top: 0 !important)
-livesport.ru#?#body > .container:style(padding-top: 0 !important)
 ! ---
 lolzteam.net#?#.breadBoxTop:style(margin-top: 3.5em !important)
 ! ---
 lostfilm.tv##body > a[onclick]
 lostfilm.tv##body > span
+! ---
 lostfilm.info,lostfilm.tv#?#body:style(background-image: none !important; background-color: #1c1e1f !important)
 ! ---
 macdigger.ru#?##funnyWrapper:style(padding-top: 0 !important)
@@ -413,6 +414,10 @@ overclockers.ru#?##topbanners:style(position: fixed !important; transform: scale
 overclockers.ru#?##uhi:style(position: fixed !important; transform: scale(0) !important)
 ! ---
 pb.wtf,piratbit.org,piratbit.ru##div[id] > div[class][style^="width: 24"]
+! ---
+peka2.tv##.body--has-ad:before
+peka2.tv##advert-header-banner
+peka2.tv#?#.body--has-ad:style(padding-top: 0 !important)
 ! ---
 penzainform.ru#?##divWrapper > *:style(pointer-events: auto)
 penzainform.ru#?##divWrapper:style(pointer-events: none)
@@ -498,7 +503,7 @@ semestr.ru#?##idbanner:style(max-height: 41px !important; opacity: 0 !important;
 semestr.ru#?##mainb:style(max-height: 41px !important; opacity: 0 !important; pointer-events: none !important)
 semestr.ru#?#.adsbygoogle:style(max-height: 1px !important)
 semestr.ru#?#.well-google:style(max-height: 41px !important; opacity: 0 !important; pointer-events: none !important)
-semestr.ru#?#body > .row:style(margin-right: 0 !important; margin-left: 0 !important)
+semestr.ru#?#body > .row:style(margin-left: 0 !important; margin-right: 0 !important)
 semestr.ru#?##soloway240:style(max-height: 41px !important; opacity: 0 !important; pointer-events: none !important)
 ! ---
 smotri.com#?##wrapper > #all:style(margin-top: 0 !important)
@@ -510,7 +515,8 @@ snob.ru#?#.promotion .h-layoutWide:style(cursor: auto !important)
 soccer.ru,soccer0010.com#?##site:style(margin-top: 0 !important)
 ! ---
 sports.ru,tribuna.com#?##branding-layout > a:style(width:0 !important; height:0 !important; left:-10000px !important)
-sports.ru,tribuna.com#?##branding-layout:not(#id):style(margin-top: 0 !important; padding-top: 0 !important)
+sports.ru,tribuna.com#?##branding-layout:not(#id):style(margin-top: 0 !important)
+sports.ru,tribuna.com#?##branding-layout:not(#id):style(padding-top: 0 !important)
 sports.ru,tribuna.com#?#.page-layout:style(margin-top: 0 !important)
 sports.ru,tribuna.com#?#[data-content-name="banner-static"]:style(pointer-events: none !important)
 sports.ru,tribuna.com#?#body.img-bg:style(padding-top: 0 !important)
@@ -573,6 +579,7 @@ xatab-repack.net#?##content:style(padding-top: 55px !important)
 xatab-repack.net#?##page:style(background: none !important)
 ! ---
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua#?#.grid-chunk > .grid__item_before-blank:style(margin-right: 0 !important)
+! ---
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.forecast-brief__item-temp-day:style(width: auto !important)
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.serp-header:style(margin-top: 0 !important)
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#div:not([style^="padding: 0px"][style*="content-box"])[style*=' !important'][style*='display'][style*='visibility'][style*='visible']:style(width: 0 !important; min-width: 0 !important; max-width: 0 !important; height: 0 !important; min-height: 0 !important; max-height: 0 !important; overflow: hidden !important)
