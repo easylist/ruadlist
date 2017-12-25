@@ -1373,7 +1373,6 @@ yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##div[id*="R-I-"]
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##div[id*="R-I-"] *
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##div[id^="yandex_ad_"]
-yandex.ru#?#mtre > div:not([class*="search"]) div[class]:-abp-has(div:empty + div:empty)
 ||an.yandex.$third-party
 ||an.yandex.ru/resource/context$script
 ||an.yandex.ru/system/context$script
@@ -1388,6 +1387,9 @@ yandex.ru#?#mtre > div:not([class*="search"]) div[class]:-abp-has(div:empty + di
 ||yadi.sk/direct.html
 ||yandex.net/get-direct/
 ||yastatic.net/daas/
+! Главная
+yandex.ru#?#body[class*="infinity-zen"] .widgets_js_inited > :not(div) :not(div) > div:not([class*="search"]) div[class]:-abp-has(  iframe:not([style]))
+yandex.ru#?#body[class*="infinity-zen"] .widgets_js_inited > :not(div) :not(div) > div:not([class*="search"]) div[class]:-abp-has(div:empty + div:empty)
 ! Прочее
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.BlaBlaCarSegment
 disk.yandex.by,disk.yandex.com,disk.yandex.com.tr,disk.yandex.kz,disk.yandex.ru,disk.yandex.ua##.b-awaps
