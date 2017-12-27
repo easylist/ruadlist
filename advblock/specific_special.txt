@@ -1392,8 +1392,8 @@ tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##div[id^="yandex_ad_"]
 ||yandex.net/get-direct/
 ||yastatic.net/daas/
 ! Главная
-yandex.ru#?#body[class*="infinity-zen"] .widgets_js_inited > :not(div) :not(div) > div:not([class*="search"]) div[class]:-abp-has(  iframe:not([style]))
-yandex.ru#?#body[class*="infinity-zen"] .widgets_js_inited > :not(div) :not(div) > div:not([class*="search"]) div[class]:-abp-has(div:empty + div:empty)
+yandex.ru#?#body[class*="infinity-zen"] .widgets_js_inited :not(div) > div:not([class*="search"]):not(.b-skin-bg__wrap) > div[class]:-abp-has(div:empty + div:empty)
+yandex.ru#?#body[class*="infinity-zen"] .widgets_js_inited :not(div) > div:not([class*="search"]):not(.b-skin-bg__wrap) > div[class]:-abp-has(iframe:not([style]))
 ! Прочее
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.BlaBlaCarSegment
 disk.yandex.by,disk.yandex.com,disk.yandex.com.tr,disk.yandex.kz,disk.yandex.ru,disk.yandex.ua##.b-awaps
