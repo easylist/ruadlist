@@ -5002,6 +5002,7 @@ cinema-hd.ru##script[src^="http://videoroll.net/"] + img
 spaces.ru#?##siteContent > .clear ~ [class]:-abp-has([src*=".ru"])
 spaces.ru#?#div:-abp-has(> div:not(.f-c_fll) > a[href*="spaces.ru/?Cl="])
 spaces.ru#?#div[class]:-abp-has(> a[href="#"] > div)
+spaces.ru#?#div[class]:-abp-has(> div[id] > a[href^="http://spaces.ru/?"] > .ico)
 sp.mamask.ru##span[id^="banner"]
 buhoblik.org.ua##span[onclick*="banner"]
 snow-motion.ru##span[style="cursor: pointer;"][onclick]:not([onclick*="snow-motion.ru"])
