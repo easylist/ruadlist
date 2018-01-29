@@ -416,7 +416,7 @@ seriatv.ru###google_box
 womanadvice.ru###googlerekl
 gamepedia.com###gp-pro-upsell
 trisosny.ru###grid-top
-hd-1080.com,hd-720.com###gs-back
+hd-1080.com###gs-back:not(#id)
 gts39.ru###gts-carousel
 gitaristu.ru###guitarist
 viknaodessa.od.ua###half_right
@@ -4767,7 +4767,6 @@ ilenta.com##div[style="margin:5px 0px; width:620px; height:350px"]
 baibako.tv##div[style="padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid #dfdfdf;"]
 photofacefun.com##div[style="position:absolute;width:100%;text-align:center;height:90px;top:10px;left:0"]
 referatwork.ru##div[style="rftk"]
-hd-720.com##div[style="text-align:center;"] > noindex
 minecraft-inside.ru##div[style="text-align:center;clear:both;"]
 penzainform.ru##div[style="width: 140px; height: 280px; max-height: 280px;"]
 inmoment.ru##div[style="width: 200px;height: 300px;position: relative;"]
@@ -5049,6 +5048,7 @@ uraltrack.net##strong > a[href*="falcoware.com"]
 nuriknur.ucoz.com##strong > span[style="color:red"]
 livelib.ru##style + div[class$="context"]
 gazeta.ru##style + div[class*=" "]:not(.right_preview_column_link)
+hd-1080.com##style ~ noindex
 qwe.ru##table + table tr:last-child > td:last-child > .border
 electrik.info##table > tbody > tr > td[valign="top"][align="left"][width="200"]
 propogodu.ru##table.weather + noindex
