@@ -2451,6 +2451,7 @@ novostroykin.ru##.ntgb_
 999.md##.numbers-placeholder
 point.md##.numbers-promo-placeholder
 drive2.com,drive2.ru##.o-grid__item > .c-rel-label,.o-grid__item > .c-rel-label + .c-post-card
+drive2.ru##.o-sticky.js-sticky
 infekc.ru##.obl
 korrespondent.net##.obzorseti
 cardiologiya.com,omastopatii.ru##.offblo
@@ -4801,6 +4802,8 @@ m24.ru##div[style^="width:240px;height:400px;"]
 anistar.me#?##dle-content > div.news:-abp-has(a[href^="https://anistar.me/engine/go.php?url="])
 drive2.com,drive2.ru#?#.c-block:-abp-has(.o-group .autoru-logo)
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item > div:-abp-has(.c-rel-label > a[href="https://www.drive.ru/ad#teasers"])
+drive2.ru#?#.js-page > div[class$="header "] + div > div[class]:-abp-has(div[class]:not(.js-sticky) > div[id] + script)
+drive2.ru#?#div[class$="content"] ~ div[class]:-abp-has(iframe:not([src]))
 e-news.pro#?#.side-block > div:-abp-contains(Реклама)
 imtw.ru##else > .noad
 prostolinux.ru##embed[src*="banner"]
@@ -5039,6 +5042,7 @@ biblprog.org.ua,programy.com.ua##script ~ img
 sftv.ru##script[src*="iwantyourpromo.com"] ~ div[align="center"]
 megaimg.ru##script[src^="http://am10.ru/"] + center
 cinema-hd.ru##script[src^="http://videoroll.net/"] + img
+drive2.ru##script[type="application/ld+json"] + div[class]
 seo-master.org,seosprint.net,vip-prom.net#?#span[class]:-abp-contains(Это может быть интересно)
 spaces.ru#?##siteContent > .clear ~ [class]:-abp-has([src*=".ru"])
 softportal.com#?#.TblBorderCLR td:-abp-has(> a[href][target="_blank"][rel="nofollow"] img)
