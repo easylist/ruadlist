@@ -4807,7 +4807,7 @@ m24.ru##div[style^="width:240px;height:400px;"]
 anistar.me#?##dle-content > div.news:-abp-has(a[href^="https://anistar.me/engine/go.php?url="])
 drive2.com,drive2.ru#?#.c-block:-abp-has(.o-group .autoru-logo)
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item > div:-abp-has(.c-rel-label > a[href="https://www.drive.ru/ad#teasers"])
-drive2.ru#?#.js-page > div[class$="header "] + div > div[class]:not([class*="column"]):-abp-has(div[class]:not(.js-sticky) > div[id] + script)
+drive2.ru#?#.js-page > div[class$="header "] + div > div[class]:not([class*="column"]):not([class*="content"]):-abp-has(div[class]:not(.js-sticky) > div[id] + script)
 drive2.ru#?#div[class$="content"] ~ div[class]:-abp-has(iframe:not([src]))
 e-news.pro#?#.side-block > div:-abp-contains(Реклама)
 imtw.ru##else > .noad
