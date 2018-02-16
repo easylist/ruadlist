@@ -4250,7 +4250,7 @@ progipertoniyu.ru##body > div[class*="modal"]
 votrube.ru##body > div[class]:last-of-type
 soccer365-1.xyz,soccer365.ru##body > div[class]:not([id]) > div[style^="background"]
 soccer365-1.xyz,soccer365.ru##body > div[class]:not([id]) > div[style^="background"] ~ *
-liveinternet.ru##body > div[class]:not([id]):not(.allpage):nth-child(-n+1)
+liveinternet.ru##body > div[class]:not([id]):not(.allpage):not(.footer):nth-child(n+1)
 pipec.ru##body > div[class]:not([id]):not([style]):not([class^="bottom"])
 badcinema.ru##body > div[class][style^="position: absolute"]
 finam.ru##body > div[class^="hidden-"]
@@ -5099,7 +5099,7 @@ spaces.ru#?#div[class]:-abp-has(> a[href="#"] > div)
 spaces.ru#?#div[class]:-abp-has(> div[id] > a[href^="http://spaces.ru/?"] > .ico)
 sp.mamask.ru##span[id^="banner"]
 buhoblik.org.ua##span[onclick*="banner"]
-liveinternet.ru##span[style*="240px"][style*="400px"]
+liveinternet.ru##span[style*="240px"][style*="400px"]:not(#id)
 snow-motion.ru##span[style="cursor: pointer;"][onclick]:not([onclick*="snow-motion.ru"])
 yepman.ru##span[style="font-size:14px;"]
 yepman.ru##span[style="font-size:14px;"] + *
