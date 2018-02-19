@@ -5094,7 +5094,7 @@ poiskvps.ru##script + td[width="80"]
 sftv.ru##script[src*="iwantyourpromo.com"] ~ div[align="center"]
 megaimg.ru##script[src^="http://am10.ru/"] + center
 cinema-hd.ru##script[src^="http://videoroll.net/"] + img
-drive2.ru##script[type="application/ld+json"] + div[class]
+drive2.ru##script[type="application/ld+json"] + div[class]:not([class*="column"])
 seo-master.org,seosprint.net,vip-prom.net#?#span[class]:-abp-contains(Это может быть интересно)
 spaces.ru#?##siteContent > .clear ~ [class]:-abp-has([src*=".ru"])
 softportal.com#?#.TblBorderCLR td:-abp-has(> a[href][target="_blank"][rel="nofollow"] img)
