@@ -1,5 +1,5 @@
 let fs = require('fs');
-(() => {
+(()=>{
     'use strict';
 
     console.log('Loading filters...')
@@ -7,13 +7,16 @@ let fs = require('fs');
     let fixesFileName = './ruadlist-fixes.css';
     let templateFileName = `${fixesFileName}.template`;
     let fileEncoding = 'utf8';
-    let data = fs.readFileSync(cssFileName, fileEncoding);
-    let fixes = fs.readFileSync(fixesFileName, fileEncoding);
-    let template = fs.readFileSync(templateFileName, fileEncoding);
-    if (!data || !template)
-        throw 'Failed to read files!';
-    let version = /@version\s([\d.]+)[\r\n]+/.exec(fixes)[1];
-    console.log('Current version:', version);
+    let oldVersion = null;
+    {
+        let fd = fs.openSync(fixesFileName, 'r');
+        let len = 256, buff = Buffer.alloc(len, ' ', fileEncoding);
+        fs.readSync(fd, buff, 0, len, 0);
+        oldVersion = /@version\s(\d+\.\d+\.\d+)[\r\n]+/.exec(buff.toString())[1];
+        fs.closeSync(fd);
+    }
+    let version = null;
+    console.log('Current version:', oldVersion);
     {
         let ctime = fs.statSync(cssFileName).ctime;
         let fmt = x => `${(x < 9 ? '0' : '')}${x}`;
@@ -21,8 +24,17 @@ let fs = require('fs');
         let [hr, mi] = [ctime.getHours(), ctime.getMinutes()];
         version = `0.${fmt(yr)}${fmt(mn)}${fmt(dy)}.${fmt(hr)}${fmt(mi)}`;
     }
-    template = template.replace('%version%', version);
     console.log('New version:', version)
+    if (version && oldVersion === version) {
+        console.log(`Source hasn't changed. Exit.`);
+        return;
+    }
+    let data = fs.readFileSync(cssFileName, fileEncoding);
+    let template = fs.readFileSync(templateFileName, fileEncoding);
+    if (!data || !template)
+        throw 'Failed to read files!';
+
+    template = template.replace('%version%', version);
 
     console.log('Parsing filters...')
     let filters = data.split(/[\r\n]+/);
