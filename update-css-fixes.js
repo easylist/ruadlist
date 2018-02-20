@@ -25,8 +25,10 @@ let fs = require('fs');
         version = `0.${fmt(yr)}${fmt(mn)}${fmt(dy)}.${fmt(hr)}${fmt(mi)}`;
     }
     console.log('New version:', version)
-    if (version && oldVersion === version) {
-        console.log(`Source hasn't changed. Exit.`);
+    if (!version || !oldVersion)
+        throw `Unable to determine version. Exit.`;
+    if (oldVersion === version) {
+        console.log(`Source didn't change. Exit.`);
         return;
     }
     let data = fs.readFileSync(cssFileName, fileEncoding);
