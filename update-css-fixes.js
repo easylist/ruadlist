@@ -8,10 +8,12 @@ let fs = require('fs');
     let templateFileName = `${fixesFileName}.template`;
     let fileEncoding = 'utf8';
     let data = fs.readFileSync(cssFileName, fileEncoding);
+    let fixes = fs.readFileSync(fixesFileName, fileEncoding);
     let template = fs.readFileSync(templateFileName, fileEncoding);
     if (!data || !template)
         throw 'Failed to read files!';
-    let version = '';
+    let version = /@version\s([\d.]+)[\r\n]+/.exec(fixes)[1];
+    console.log('Current version:', version);
     {
         let ctime = fs.statSync(cssFileName).ctime;
         let fmt = x => `${(x < 9 ? '0' : '')}${x}`;
@@ -20,6 +22,7 @@ let fs = require('fs');
         version = `0.${fmt(yr)}${fmt(mn)}${fmt(dy)}.${fmt(hr)}${fmt(mi)}`;
     }
     template = template.replace('%version%', version);
+    console.log('New version:', version)
 
     console.log('Parsing filters...')
     let filters = data.split(/[\r\n]+/);
@@ -66,6 +69,8 @@ let fs = require('fs');
     {
         let css = '';
         let rulecomp = (a, b) => strcomp(a.style, b.style) * 2 + strcomp(a.selector, b.selector);
+        // UserStyles doesn't accept some first-level domains from PeerName and similar DNS
+        let skipUnsupportedDomains = loc => !/\.lib$/.test(loc);
         for (let style of styles) {
             if (style.rules.length > 1) {
                 style.rules.sort(rulecomp);
@@ -87,7 +92,7 @@ let fs = require('fs');
                 }
                 style.rules = rules;
             }
-            style.location = style.location.split(',');
+            style.location = style.location.split(',').filter(skipUnsupportedDomains);
             // construct domains header
             css += `\n@-moz-document${style.location.length > 1 ? '\n  ' : ' '}domain("${style.location.join(`"),\n  domain("`)}") {`;
             for (let rule of style.rules) {
