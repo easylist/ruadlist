@@ -1027,8 +1027,6 @@ oper.ru###wrapper > a[href][target="_blank"]
 vidal.ru###wrapper > div[class^="banner"]
 waralbum.ru###wrapper > noindex
 newsko.ru###xtest-videoad
-syl.ru###ya_bot
-syl.ru###ya_top
 snatchnews.com###yandexBanner
 maxikarta.ru###yandex_sim
 yp.ru###yp-fullscreen[data-statclick-action*="banner"]
@@ -1255,6 +1253,7 @@ hi.dn.ua,luxurynet.ru##.artbannersplus
 newsoboz.org##.articl_center > noindex
 fb.ru##.article > .article__info ~ div[id]
 fb.ru##.article > .public-box ~ div[id]
+syl.ru##.article > div[class] > div[class][style]
 penzadoctor.ru##.article-banner
 espreso.tv##.articleContent > .recomendation_list + h2.block-title
 eg.ru##.article_bn
@@ -1771,7 +1770,7 @@ lostfilm.tv##.content > :not(#main-center-side) iframe:not(.ya_music)
 bragazeta.ru##.content > [class^="banner"]
 riperam.org##.content > a[href][target="_blank"]
 lostpic.net##.content > a[target="_blank"]
-syl.ru##.content > article > .share ~ div[id][class]
+syl.ru##.content > article > .share ~ div[id]
 anitokyo.tv##.content > div[style="height:120px"]
 tyurem.net##.content > noindex > :not([href*="tyurem.net"])
 torrentszona.com##.content > p + noindex
@@ -2135,7 +2134,7 @@ vgae.ru##.innerfade:not(#id)
 adme.ru##.inread-desktop-container
 animevost.org##.interDubBg
 loveradio.ru##.interactive__vk
-fb.ru##.intext
+fb.ru,syl.ru##.intext
 slivup.biz##.ipsA1d
 meat-expert.ru##.ipsPad_bottom
 story.neskromnie.ru##.iseeyou
@@ -2265,6 +2264,8 @@ fotokto.ru##.m2
 ppl.nnov.ru##.m_lbanner
 ukrlit.vn.ua##.mag_tab
 ukrlit.vn.ua##.mag_tit
+syl.ru##.main > .content > div[id]
+syl.ru##.main > .featured_articles + div[id]
 odnako.org##.main > .new_header_90.boxNoPadding3:first-child
 cameleo.xyz##.main > a[href*="bit.ly"] > img
 samlab.ws##.main > div:not(.about):first-child
@@ -4150,6 +4151,7 @@ rebill.me##a[target="blank"] > img
 kapriz.info##a[target][href*="/go.php?url="] > img[src^="/"]
 lostfilm.info##a[title="LostFilm.INFO"] > div[style*="height"]
 animelend.info#?#td > .base:-abp-has(.r-r)
+syl.ru##article > .article ~ div[id]
 censor.net.ua##article > .text > .innerevents
 glavpost.com##article div[style*="#EFEFEF"]
 tochka.net##article ~ div[id^="rsswidget"]
