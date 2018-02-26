@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180123.1808
+@version 0.20180126.0608
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -29,6 +29,7 @@
   domain("epravda.com.ua"),
   domain("fastpic.ru"),
   domain("film-max.ru"),
+  domain("gecid.com"),
   domain("hd720.biz"),
   domain("hdkinoklub.com"),
   domain("hdrezka.club"),
@@ -42,6 +43,11 @@
   domain("macdigger.ru"),
   domain("mynnm.ru"),
   domain("newstudio.tv"),
+  domain("nnm-club.me"),
+  domain("nnm-club.name"),
+  domain("nnm-club.tv"),
+  domain("nnmclub.to"),
+  domain("nnmclub.tv"),
   domain("oblozhki.net"),
   domain("oper.ru"),
   domain("pure-t.ru"),
@@ -101,6 +107,11 @@
   domain("mynnm.ru"),
   domain("new-rutor.org"),
   domain("newstudio.tv"),
+  domain("nnm-club.me"),
+  domain("nnm-club.name"),
+  domain("nnm-club.tv"),
+  domain("nnmclub.to"),
+  domain("nnmclub.tv"),
   domain("ostfilm.tv"),
   domain("pure-t.ru"),
   domain("roem.ru"),
@@ -118,7 +129,7 @@
   domain("virusinfo.info"),
   domain("wikianime.ru"),
   domain("zona-film.com") {
-    body:not(#id), html:not(#id) {
+    html:not(#id) {
         padding-top: 0 !important
     }
 }
@@ -127,6 +138,7 @@
   domain("24video.adult"),
   domain("24video.guru"),
   domain("24video.top"),
+  domain("gecid.com"),
   domain("kurkul.com"),
   domain("russian-porn.online"),
   domain("valetudo.ru") {
@@ -135,6 +147,73 @@
     }
     body {
         pointer-events: none !important
+    }
+}
+
+@-moz-document
+  domain("24video.guru"),
+  domain("24video.top"),
+  domain("all-episodes.tv"),
+  domain("allfilmonline.co"),
+  domain("amovies.ws"),
+  domain("baskino.co"),
+  domain("baskinonet.ru"),
+  domain("bigcinema-tv.club"),
+  domain("comedy-portal.net"),
+  domain("dnepr.info"),
+  domain("dugtor.ru"),
+  domain("enki.ua"),
+  domain("film-max.ru"),
+  domain("freerutor.com"),
+  domain("gameguru.ru"),
+  domain("gidonline.eu"),
+  domain("gidonline.in"),
+  domain("hd720.biz"),
+  domain("hdkinoklub.com"),
+  domain("hdrezka.ag"),
+  domain("hdrezka.club"),
+  domain("hdrezka.co"),
+  domain("hdrezka.su"),
+  domain("ikinohd.club"),
+  domain("ikinohd.com"),
+  domain("itop-gear.ru"),
+  domain("ixbt.com"),
+  domain("kinopoisk.ru"),
+  domain("koshara.co"),
+  domain("kronverkcinema.ua"),
+  domain("krutor.org"),
+  domain("live-rutor.org"),
+  domain("liverutor.org"),
+  domain("moskva.fm"),
+  domain("mrutor.org"),
+  domain("my-tfile.org"),
+  domain("mynnm.ru"),
+  domain("new-rutor.org"),
+  domain("newstudio.tv"),
+  domain("nnm-club.me"),
+  domain("nnm-club.name"),
+  domain("nnm-club.tv"),
+  domain("nnmclub.to"),
+  domain("nnmclub.tv.24video.adult"),
+  domain("ostfilm.tv"),
+  domain("pure-t.ru"),
+  domain("roem.ru"),
+  domain("russian-porn.online"),
+  domain("serialbox.org"),
+  domain("tfile-music.org"),
+  domain("tfile.cc"),
+  domain("tfile.co"),
+  domain("tfilm.club"),
+  domain("tfilm.me"),
+  domain("tfilm.tv"),
+  domain("the-rutor.org"),
+  domain("torentor.co"),
+  domain("vc.ru"),
+  domain("virusinfo.info"),
+  domain("wikianime.ru"),
+  domain("zona-film.com") {
+    body:not(#id) {
+        padding-top: 0 !important
     }
 }
 
@@ -256,6 +335,7 @@
 
 @-moz-document
   domain("ain.ua"),
+  domain("crocfilm.club"),
   domain("gametech.ru"),
   domain("gidonline.eu"),
   domain("gidonline.in"),
@@ -578,17 +658,6 @@
 @-moz-document domain("drive2.ru") {
     .c-slideshow__nav {
         max-width: 40px !important
-    }
-}
-
-@-moz-document
-  domain("dugtor-deer.pw"),
-  domain("nnm-club.me"),
-  domain("nnm-club.name"),
-  domain("nnm-club.tv"),
-  domain("nnmclub.to") {
-    body > .wrap {
-        top: 0 !important
     }
 }
 
@@ -1478,6 +1547,20 @@
     }
 }
 
+@-moz-document
+  domain("nnm-club.me"),
+  domain("nnm-club.name"),
+  domain("nnm-club.tv"),
+  domain("nnmclub.to"),
+  domain("nnmclub.tv") {
+    body > :first-child:not(div) {
+        display: none !important
+    }
+    body > .wrap {
+        top: 0 !important
+    }
+}
+
 @-moz-document domain("noob-club.ru") {
     #header-new {
         margin-bottom: 0 !important
@@ -1573,6 +1656,15 @@
 @-moz-document domain("politobzor.net") {
     .banner {
         height: 90px !important
+    }
+}
+
+@-moz-document
+  domain("pornolab.biz"),
+  domain("pornolab.cc"),
+  domain("pornolab.net") {
+    .post_wrap div:not([id]):not([class]):not([style]) > table > tbody > tr > td {
+        display: none !important
     }
 }
 
@@ -2027,6 +2119,13 @@
     .serp-header {
         margin-top: 0 !important
     }
+    .b-page {
+        padding-top: 0 !important
+    }
+    .head-stripe {
+        position: fixed !important;
+        transform: scale(0) !important
+    }
     div:not([style^="padding: 0px"][style*="content-box"])[style*=' !important'][style*='display'][style*='visibility'][style*='visible'] {
         width: 0 !important;
         min-width: 0 !important;
@@ -2060,8 +2159,8 @@
 }
 
 @-moz-document domain("zagonka.ru") {
-    .sitebox {
-        margin-top:0 !important
+    .sitebox:not(#id) {
+        margin-top: 0 !important
     }
 }
 
