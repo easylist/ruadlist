@@ -1030,7 +1030,6 @@ newsko.ru###xtest-videoad
 syl.ru###ya_bot
 syl.ru###ya_top
 snatchnews.com###yandexBanner
-fb.ru###yandex_bot
 maxikarta.ru###yandex_sim
 yp.ru###yp-fullscreen[data-statclick-action*="banner"]
 clubvolvo.ru###yui-gen50
@@ -1254,6 +1253,8 @@ nashashcola.ru##.art-sidebar2 > .widget_text
 osvita.ua##.artbanner
 hi.dn.ua,luxurynet.ru##.artbannersplus
 newsoboz.org##.articl_center > noindex
+fb.ru##.article > .article__info ~ div[id]
+fb.ru##.article > .public-box ~ div[id]
 penzadoctor.ru##.article-banner
 espreso.tv##.articleContent > .recomendation_list + h2.block-title
 eg.ru##.article_bn
@@ -1764,7 +1765,6 @@ novostioede.ru##.contdi
 novostioede.ru##.contdiv
 liveangarsk.ru##.conten
 papillomy.com##.content .custom-block
-fb.ru##.content > .breadcrumbs + div[id][class]
 mos.news##.content > .comment-block[style^="margin"]
 allhit.org##.content > .inner > div[align="center"]
 lostfilm.tv##.content > :not(#main-center-side) iframe:not(.ya_music)
@@ -1772,7 +1772,6 @@ bragazeta.ru##.content > [class^="banner"]
 riperam.org##.content > a[href][target="_blank"]
 lostpic.net##.content > a[target="_blank"]
 syl.ru##.content > article > .share ~ div[id][class]
-fb.ru##.content > article > .share_block ~ div[id][class]
 anitokyo.tv##.content > div[style="height:120px"]
 tyurem.net##.content > noindex > :not([href*="tyurem.net"])
 torrentszona.com##.content > p + noindex
@@ -1998,6 +1997,7 @@ pure-t.ru##.fullscreen-overlay
 wkino2.net##.fullstory ~ noindex .pleer
 anison.fm##.fw.topbanner
 66.ru##.g-48 canvas
+fb.ru##.g-holder > .content > div[id]
 kaifolog.ru##.gads
 glavpost.com##.gallery-center-ad-block
 splkirov.ru##.gallery-gusar
@@ -2135,6 +2135,7 @@ vgae.ru##.innerfade:not(#id)
 adme.ru##.inread-desktop-container
 animevost.org##.interDubBg
 loveradio.ru##.interactive__vk
+fb.ru##.intext
 slivup.biz##.ipsA1d
 meat-expert.ru##.ipsPad_bottom
 story.neskromnie.ru##.iseeyou
@@ -4149,7 +4150,6 @@ rebill.me##a[target="blank"] > img
 kapriz.info##a[target][href*="/go.php?url="] > img[src^="/"]
 lostfilm.info##a[title="LostFilm.INFO"] > div[style*="height"]
 animelend.info#?#td > .base:-abp-has(.r-r)
-fb.ru##article > .share_block ~ div[class] > div[class]:not(.fsb_box)
 censor.net.ua##article > .text > .innerevents
 glavpost.com##article div[style*="#EFEFEF"]
 tochka.net##article ~ div[id^="rsswidget"]
@@ -4247,6 +4247,7 @@ soccer365-1.xyz,soccer365.ru##body > div[class]:not([id]) > div[style^="backgrou
 soccer365-1.xyz,soccer365.ru##body > div[class]:not([id]) > div[style^="background"] ~ *
 pipec.ru##body > div[class]:not([id]):not([style]):not([class^="bottom"])
 liveinternet.ru##body > div[class]:not([style]):not([id]):not([class*="share"]):not([class*="notify"]):not(.GlSrv):not(.SrvIm):not([role="presentation"]):not(.allpage):not(.b-dialog):not(.li-j_wrapper):not(.footer):nth-child(n+1)
+fb.ru##body > div[class][style="display: block;"]
 badcinema.ru##body > div[class][style^="position: absolute"]
 finam.ru##body > div[class^="hidden-"]
 openssource.biz##body > div[class^="spu-"]
