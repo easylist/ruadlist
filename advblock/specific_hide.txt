@@ -2275,8 +2275,6 @@ zhukvesti.ru##.main-banners-item
 kinobanda.net##.main-bg a[target="_blank"] > img
 strana.ua##.main-branding-fon
 softpir.com##.main-center-block > div[style^="background"]
-vz.ru##.main-container > table > tbody > tr > td > div:not([id]):not([class]):not([style])
-vz.ru##.main-container > table[width="100%"] .shadow ~ :not([href="https://www.liveinternet.ru/click"]):not(#top100counter):not(#toplinks)
 hdkinomir.com##.main-dark > noindex
 sc2tv.ru##.main-frame > a[target="_blank"]
 monstrbit.ru##.main-header
@@ -5149,7 +5147,7 @@ for-ua.info##tbody > tr > td[width][valign="top"]
 omnibus.moy.su##tbody > tr[style="background-color: black"]
 tushkan.club##tbody > tr[style^="height: 39"]
 banki.ru##tbody[data-currency-list] > tr[data-widget-row]
-vz.ru##td + td ~ td div:not([id]):not([class]):not([style]) > div
+vz.ru##td + td ~ td > div > div:not(#top100counter):not(#toplinks)
 searchengines.guru##td > #ads_header ~ div
 velikolepnyivek.com##td > .bc[align="center"]
 rulit.me##td > div[align="center"][style="height:300px"]
