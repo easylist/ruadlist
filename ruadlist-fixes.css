@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180203.2124
+@version 0.20180207.0554
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -73,7 +73,7 @@
   domain("all-episodes.tv"),
   domain("allfilmonline.co"),
   domain("amovies.ws"),
-  domain("baskino.co"),
+  domain("baskino.me"),
   domain("baskinonet.ru"),
   domain("bigcinema-tv.club"),
   domain("comedy-portal.net"),
@@ -105,6 +105,7 @@
   domain("mrutor.org"),
   domain("my-tfile.org"),
   domain("mynnm.ru"),
+  domain("new-baskino.club"),
   domain("new-rutor.org"),
   domain("newstudio.tv"),
   domain("nnm-club.me"),
@@ -141,7 +142,7 @@
   domain("all-episodes.tv"),
   domain("allfilmonline.co"),
   domain("amovies.ws"),
-  domain("baskino.co"),
+  domain("baskino.me"),
   domain("baskinonet.ru"),
   domain("bigcinema-tv.club"),
   domain("comedy-portal.net"),
@@ -173,6 +174,7 @@
   domain("mrutor.org"),
   domain("my-tfile.org"),
   domain("mynnm.ru"),
+  domain("new-baskino.club"),
   domain("new-rutor.org"),
   domain("newstudio.tv"),
   domain("nnm-club.me"),
@@ -1174,9 +1176,6 @@
     .b-page-content:not(#id), .main > .container:not(#id) {
         background: #e5e5e5 !important
     }
-    .side-banner {
-        border: none !important
-    }
     .allContent > .screenGlide *, .b-page-content__branding * {
         display: none !important
     }
@@ -1598,6 +1597,7 @@
 
 @-moz-document domain("oper.ru") {
     #wrapper {
+        background-image: none !important;
         padding-bottom: 0 !important
     }
 }
@@ -1709,6 +1709,13 @@
     }
 }
 
+@-moz-document domain("pronpic.org") {
+    .content > div[id][style="display: block;"] {
+        position: fixed !important;
+        transform: scale(0) !important
+    }
+}
+
 @-moz-document domain("prophotos.ru") {
     body:not(#id) {
         padding-top: 130px !important
@@ -1791,10 +1798,7 @@
     body {
         background-image: none !important
     }
-    .action-menu, .bottom-bar {
-        position: fixed !important
-    }
-    .all-wrapper, .bottom-bar {
+    body:not(#id) .all-wrapper, body:not(#id) .bottom-bar {
         top: 0 !important
     }
 }
@@ -1933,6 +1937,9 @@
 @-moz-document
   domain("sports.ru"),
   domain("tribuna.com") {
+    html > body {
+        background: #a7a7a7 !important
+    }
     #branding-layout:not(#id), .page-layout {
         margin-top: 0 !important
     }
@@ -2115,6 +2122,12 @@
     }
     .social-open {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("www.zoneofgames.ru") {
+    html > body:not(#id) {
+        background-color: #707070 !important
     }
 }
 
