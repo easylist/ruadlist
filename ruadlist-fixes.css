@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180207.0554
+@version 0.20180211.1534
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -624,20 +624,12 @@
 }
 
 @-moz-document domain("dota2.ru") {
-    body > div[class] > div[class]:not(#id), body > div[class]:not(#id) {
-        background: black !important;
+    html:not(#id) > body > div[id]:not([class]) {
+        background-image: none !important;
         padding-top: 0 !important
     }
-    .subline + style + div:not([id]) {
-        background: transparent !important;
-        position: fixed !important;
-        height: 1px !important
-    }
-    a[href*="go.mail.ru/r/"] {
+    body > div[id]:not([class]) > div[class] > div:not([id]):not([class]):not([style]) > a[href][target="_blank"][id] {
         display: none !important
-    }
-    #headerProxy {
-        height: 150px !important
     }
 }
 
@@ -717,8 +709,8 @@
   domain("eg.ru"),
   domain("gagadget.com"),
   domain("msn.com"),
-  domain("news.rambler.ru"),
   domain("ngs.ru"),
+  domain("rambler.ru"),
   domain("rbc.ru") {
     body:not(#id), html:not(#id) {
         overflow: auto !important
@@ -798,6 +790,12 @@
     }
 }
 
+@-moz-document domain("filetor.org") {
+    html > body {
+        top: 0 !important
+    }
+}
+
 @-moz-document domain("firepic.org") {
     .span12 {
         clear: both
@@ -865,6 +863,12 @@
     #main-wrapper {
         width: 100% !important;
         top: 0 !important
+    }
+}
+
+@-moz-document domain("freeopenvpn.org") {
+    .adsbygoogle {
+        max-height: 1px !important
     }
 }
 
@@ -1542,15 +1546,9 @@
     }
 }
 
-@-moz-document domain("news.rambler.ru") {
-    .stopper > #boxbox, .stopper > #boxfade {
-        display: none !important
-    }
-}
-
 @-moz-document
-  domain("news.rambler.ru"),
-  domain("ngs.ru") {
+  domain("ngs.ru"),
+  domain("rambler.ru") {
     .social-popup, .subscribe-popup, .subscribe-popup-cover {
         display: none !important
     }
@@ -1757,6 +1755,12 @@
         height: 1px !important;
         position: fixed !important;
         transform: scale(0) !important
+    }
+}
+
+@-moz-document domain("rambler.ru") {
+    .stopper > #boxbox, .stopper > #boxfade {
+        display: none !important
     }
 }
 
