@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180211.1534
+@version 0.20180214.0154
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -88,6 +88,7 @@
   domain("hd720.biz"),
   domain("hdkinoklub.com"),
   domain("hdrezka.ag"),
+  domain("hdrezka.cc"),
   domain("hdrezka.club"),
   domain("hdrezka.co"),
   domain("hdrezka.su"),
@@ -157,6 +158,7 @@
   domain("hd720.biz"),
   domain("hdkinoklub.com"),
   domain("hdrezka.ag"),
+  domain("hdrezka.cc"),
   domain("hdrezka.club"),
   domain("hdrezka.co"),
   domain("hdrezka.su"),
@@ -272,6 +274,12 @@
     }
 }
 
+@-moz-document domain("4pda.ru") {
+    iframe[src*="utm_campaign"] {
+        display: none !important
+    }
+}
+
 @-moz-document domain("720hd.club") {
     #all {
         margin-top: 0 !important
@@ -346,6 +354,7 @@
   domain("kino-klub.org"),
   domain("kinohome.net"),
   domain("kinohome.org"),
+  domain("kinorezka.com"),
   domain("oblozhki.net"),
   domain("the-cinema.ru"),
   domain("torrentum.org"),
@@ -1065,12 +1074,6 @@
     }
 }
 
-@-moz-document domain("hdrezka.re") {
-    #wrap {
-        padding-top: 0 !important
-    }
-}
-
 @-moz-document domain("hentaiz.org") {
     body {
         background: #4ba1ba !important
@@ -1272,7 +1275,7 @@
         display: none !important
     }
     body:not(#id) > #top:not(#id) {
-        max-height: 120px !important
+        max-height: 90px !important
     }
     #external_header_wrapper:not(#id) {
         top: 0 !important
@@ -1963,6 +1966,21 @@
 @-moz-document domain("stratege.ru") {
     #wrapper > #content {
         padding-top: 40px !important
+    }
+}
+
+@-moz-document domain("tehnot.com") {
+    html > body {
+        background-image: none !important;
+        background-color: #e8e8e8 !important;
+        cursor: auto !important
+    }
+    body > #td-outer-wrap > * {
+        pointer-events: auto !important
+    }
+    body > #td-outer-wrap {
+        pointer-events: none !important;
+        cursor: auto !important
     }
 }
 
