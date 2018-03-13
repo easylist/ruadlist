@@ -815,7 +815,6 @@ medside.ru###side-banner
 drive.ru###side-dv
 ebooktime.net###sideLeft > .baza
 ikinohd.club###sideLeft > .serials.block
-newstudio.tv###sideLeft > script + .accordion-group[style="margin-left:5px;"]:nth-of-type(1)
 pravda.if.ua###sideRight > .green_block:first-of-type:not([id])
 kinokrad-hd720.ru###sideRight22[class*="plav"]
 happy-hack.ru###side_right > .block_r > .block_r_h
@@ -5097,6 +5096,7 @@ sftv.ru##script[src*="iwantyourpromo.com"] ~ div[align="center"]
 megaimg.ru##script[src^="http://am10.ru/"] + center
 cinema-hd.ru##script[src^="http://videoroll.net/"] + img
 seo-master.org,seosprint.net,vip-prom.net#?#span[class]:-abp-contains(Это может быть интересно)
+newstudio.tv#?##sideLeft > .accordion-group:-abp-has(.accordion-heading:-abp-contains(seedbox.org.ua))
 spaces.ru#?##siteContent > .clear ~ [class]:-abp-has([src*=".ru"])
 imgbum.net##small
 spaces.ru#?#div:-abp-has(> div:not(.f-c_fll) > a[href*="spaces.ru/?Cl="])
