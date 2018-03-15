@@ -5060,8 +5060,7 @@ izone.ru##noindex table[width="100%"]
 zelenograd.ru##noindex td[width="40%"] > noindex
 orenday.ru##noindex video
 orenday.ru##noindex video ~ *
-novayagazeta.ru#?#[data-code] > [data-reactid] > div[class]:-abp-has([id*="adfox_"])
-novayagazeta.ru#?#aside > [data-reactid] > div[class]:-abp-has([id*="criteo_"])
+novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
 nowa.cc#?#table:-abp-has(tbody > tr.alt1 > td:-abp-contains(Реклама))
 pornreactor.cc##object
 geonavigator.ge,navigator.az##object[data*="banner"]
