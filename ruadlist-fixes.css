@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180214.0154
+@version 0.20180216.1755
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -80,6 +80,8 @@
   domain("dnepr.info"),
   domain("dugtor.ru"),
   domain("enki.ua"),
+  domain("fast-torrent.ru"),
+  domain("fasttorrent.ru"),
   domain("film-max.ru"),
   domain("freerutor.com"),
   domain("gameguru.ru"),
@@ -150,6 +152,8 @@
   domain("dnepr.info"),
   domain("dugtor.ru"),
   domain("enki.ua"),
+  domain("fast-torrent.ru"),
+  domain("fasttorrent.ru"),
   domain("film-max.ru"),
   domain("freerutor.com"),
   domain("gameguru.ru"),
@@ -210,6 +214,7 @@
   domain("24video.adult"),
   domain("24video.guru"),
   domain("24video.top"),
+  domain("fainaidea.com"),
   domain("gecid.com"),
   domain("kurkul.com"),
   domain("russian-porn.online"),
@@ -848,6 +853,15 @@
     }
 }
 
+@-moz-document domain("forums.goha.ru") {
+    .branding-background {
+        background-image: none !important
+    }
+    .branding-bglink {
+        display: none !important
+    }
+}
+
 @-moz-document domain("forums.overclockers.ru") {
     .needblock {
         position: fixed !important;
@@ -1168,7 +1182,7 @@
     body {
         background-color: white !important
     }
-    .b-content.b-content__breadcrumbs, body:not(#id) > .b-content__pagecontent {
+    body:not(#id) > .b-content.b-content__breadcrumbs {
         margin-top: 0 !important
     }
 }
@@ -1249,6 +1263,12 @@
     }
     .header {
         height: 120px !important
+    }
+}
+
+@-moz-document domain("kinogo-hit.com") {
+    .contener {
+        padding-top: 0 !important
     }
 }
 
@@ -1394,6 +1414,13 @@
         background-image: none !important;
         padding-top: 0 !important;
         cursor: auto !important
+    }
+}
+
+@-moz-document domain("minigames.mail.ru") {
+    .rb_box, div[id^="slot"][id*="sitezone"] {
+        opacity: 0 !important;
+        pointer-events: none !important
     }
 }
 
