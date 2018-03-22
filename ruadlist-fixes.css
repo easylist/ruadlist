@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180217.1405
+@version 0.20180222.1117
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -22,9 +22,8 @@
 }
 
 @-moz-document
-  domain("24video.adult"),
   domain("24video.guru"),
-  domain("24video.top"),
+  domain("24video.sexy"),
   domain("aif.ru"),
   domain("epravda.com.ua"),
   domain("fastpic.ru"),
@@ -33,6 +32,7 @@
   domain("hd720.biz"),
   domain("hdkinoklub.com"),
   domain("hdrezka.club"),
+  domain("itog.info"),
   domain("ixbt.com"),
   domain("kino-full.ru"),
   domain("kinokrad.su"),
@@ -41,7 +41,6 @@
   domain("kv.by"),
   domain("livejournal.com"),
   domain("macdigger.ru"),
-  domain("mynnm.ru"),
   domain("newstudio.tv"),
   domain("nnm-club.me"),
   domain("nnm-club.name"),
@@ -67,9 +66,8 @@
 }
 
 @-moz-document
-  domain("24video.adult"),
   domain("24video.guru"),
-  domain("24video.top"),
+  domain("24video.sexy"),
   domain("all-episodes.tv"),
   domain("allfilmonline.co"),
   domain("amovies.ws"),
@@ -96,6 +94,7 @@
   domain("hdrezka.su"),
   domain("ikinohd.club"),
   domain("ikinohd.com"),
+  domain("itog.info"),
   domain("itop-gear.ru"),
   domain("ixbt.com"),
   domain("kinopoisk.ru"),
@@ -107,7 +106,6 @@
   domain("moskva.fm"),
   domain("mrutor.org"),
   domain("my-tfile.org"),
-  domain("mynnm.ru"),
   domain("new-baskino.club"),
   domain("new-rutor.org"),
   domain("newstudio.tv"),
@@ -133,87 +131,14 @@
   domain("virusinfo.info"),
   domain("wikianime.ru"),
   domain("zona-film.com") {
-    html:not(#id) {
+    body:not(#id), html:not(#id) {
         padding-top: 0 !important
     }
 }
 
 @-moz-document
-  domain("24video.adult"),
   domain("24video.guru"),
-  domain("24video.top"),
-  domain("all-episodes.tv"),
-  domain("allfilmonline.co"),
-  domain("amovies.ws"),
-  domain("baskino.me"),
-  domain("baskinonet.ru"),
-  domain("bigcinema-tv.club"),
-  domain("comedy-portal.net"),
-  domain("dnepr.info"),
-  domain("dugtor.ru"),
-  domain("enki.ua"),
-  domain("fast-torrent.ru"),
-  domain("fasttorrent.ru"),
-  domain("film-max.ru"),
-  domain("freerutor.com"),
-  domain("gameguru.ru"),
-  domain("gidonline.eu"),
-  domain("gidonline.in"),
-  domain("hd720.biz"),
-  domain("hdkinoklub.com"),
-  domain("hdrezka.ag"),
-  domain("hdrezka.cc"),
-  domain("hdrezka.club"),
-  domain("hdrezka.co"),
-  domain("hdrezka.su"),
-  domain("ikinohd.club"),
-  domain("ikinohd.com"),
-  domain("itop-gear.ru"),
-  domain("ixbt.com"),
-  domain("kinopoisk.ru"),
-  domain("koshara.co"),
-  domain("kronverkcinema.ua"),
-  domain("krutor.org"),
-  domain("live-rutor.org"),
-  domain("liverutor.org"),
-  domain("moskva.fm"),
-  domain("mrutor.org"),
-  domain("my-tfile.org"),
-  domain("mynnm.ru"),
-  domain("new-baskino.club"),
-  domain("new-rutor.org"),
-  domain("newstudio.tv"),
-  domain("nnm-club.me"),
-  domain("nnm-club.name"),
-  domain("nnm-club.tv"),
-  domain("nnmclub.to"),
-  domain("nnmclub.tv.24video.adult"),
-  domain("ostfilm.tv"),
-  domain("pure-t.ru"),
-  domain("roem.ru"),
-  domain("russian-porn.online"),
-  domain("serialbox.org"),
-  domain("tfile-music.org"),
-  domain("tfile.cc"),
-  domain("tfile.co"),
-  domain("tfilm.club"),
-  domain("tfilm.me"),
-  domain("tfilm.tv"),
-  domain("the-rutor.org"),
-  domain("torentor.co"),
-  domain("vc.ru"),
-  domain("virusinfo.info"),
-  domain("wikianime.ru"),
-  domain("zona-film.com") {
-    body:not(#id) {
-        padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("24video.adult"),
-  domain("24video.guru"),
-  domain("24video.top"),
+  domain("24video.sexy"),
   domain("fainaidea.com"),
   domain("gecid.com"),
   domain("kurkul.com"),
@@ -396,17 +321,6 @@
     }
     #trend {
         margin-bottom: 0 !important
-    }
-}
-
-@-moz-document
-  domain("anidub-online.ru"),
-  domain("online.anidub.com") {
-    .background {
-        background: none !important
-    }
-    .background > script + div {
-        display: none !important
     }
 }
 
@@ -674,7 +588,7 @@
 
 @-moz-document
   domain("dugtor.ru"),
-  domain("mynnm.ru") {
+  domain("itog.info") {
     body > #page {
         padding-top: 0 !important
     }
@@ -988,18 +902,6 @@
     }
 }
 
-@-moz-document domain("goha.ru") {
-    #full-brand {
-        background-image: none !important
-    }
-    #full-brand-footer > div[style*="fixed"], #head-tuppy > a {
-        display: none !important
-    }
-    #head-tuppy {
-        height: 7px !important
-    }
-}
-
 @-moz-document domain("goodgame.ru") {
     .main-block .main-inner-wrap {
         margin-top: 0 !important
@@ -1177,6 +1079,12 @@
 @-moz-document domain("iphones.ru") {
     #contentShifter {
         height: 127px !important
+    }
+}
+
+@-moz-document domain("itog.info") {
+    html > body:not(#id) {
+        background: #abc4a1 !important
     }
 }
 
@@ -1502,12 +1410,6 @@
     }
 }
 
-@-moz-document domain("mynnm.ru") {
-    html > body:not(#id) {
-        background: #abc4a1 !important
-    }
-}
-
 @-moz-document domain("naruto-base.su") {
     .right.snav #nav {
         border-top-right-radius: 5px !important
@@ -1613,6 +1515,15 @@
         pointer-events: none !important;
         position: fixed !important;
         top: -1000px !important
+    }
+}
+
+@-moz-document domain("online.anidub.com") {
+    .background {
+        background: none !important
+    }
+    .background > script + div {
+        display: none !important
     }
 }
 
@@ -1778,15 +1689,6 @@
         position: fixed !important;
         transform: scale(0) !important;
         top: -10000px !important
-    }
-}
-
-@-moz-document domain("qrz.ru") {
-    .adsbygoogle, .advertising, .advertising *, .sidebar_banner, 
-    div:not([id]):not([class])[style*="height:150px"] {
-        height: 1px !important;
-        position: fixed !important;
-        transform: scale(0) !important
     }
 }
 
@@ -2164,6 +2066,19 @@
     .wrap {
         transform: none !important;
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("www.goha.ru") {
+    #full-brand {
+        background-image: none !important
+    }
+    #column-right > div:first-child ~ :not(.vote):not(.tags):not(.counters), 
+    #full-brand-footer > div[style*="fixed"], #head-tuppy > a {
+        display: none !important
+    }
+    #head-tuppy {
+        height: 7px !important
     }
 }
 
