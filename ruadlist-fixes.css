@@ -523,7 +523,8 @@
 }
 
 @-moz-document domain("cloud.mail.ru") {
-    .b-layout__col_2_2 > style + div[id][class] {
+    .b-layout__col_2_2 > style + div[id][class], 
+    .content__left > style + div[id]:not(#breadcrumbs) {
         transform: scale(0) !important;
         opacity: 0 !important;
         pointer-events: none !important;
@@ -605,7 +606,8 @@
 
 @-moz-document domain("e.mail.ru") {
     #leftcol-banners, #preload_banner_1, .b-rb, .js-helper.direct-state, 
-    .message-sent__ads, .message-sent__hr.message-sent__hr_big {
+    .message-sent__ads, .message-sent__hr.message-sent__hr_big, 
+    .message-sent__hr.message-sent__hr_small, .message-sent__wrap:nth-of-type(4) {
         transform: scale(0) !important;
         opacity: 0 !important;
         pointer-events: none !important;
@@ -786,7 +788,8 @@
 }
 
 @-moz-document domain("fototips.ru") {
-    .ftips-branding .td-main-page-wrap, .ftips-branding-ad + div {
+    .ftips-branding .td-main-page-wrap, .ftips-branding-ad + div, 
+    .ftips-branding.td_category_template_1 .td-category-header {
         padding-top: 5px !important
     }
 }
@@ -1009,7 +1012,8 @@
 
 @-moz-document domain("hideip.me") {
     .region-highlighted .content > center:not(#id), [class^="numlink"]:not(#id), 
-    [id^="numban"]:not(#id), [id^="numlink"]:not(#id) {
+    [id^="numban"]:not(#id), [id^="numlink"]:not(#id), 
+    [style*="block"][style$="400px"], a[href*="/banner/purchase/"]:not(#id) {
         width: 10px !important;
         height:10px !important;
         display: block !important;
@@ -1092,7 +1096,8 @@
     body {
         background-color: white !important
     }
-    body:not(#id) > .b-content.b-content__breadcrumbs {
+    body:not(#id) > .b-content.b-content__breadcrumbs, 
+    body:not(#id) > .b-content__pagecontent {
         margin-top: 0 !important
     }
 }
@@ -1241,7 +1246,8 @@
 
 @-moz-document domain("life.ru") {
     .banner-mylife, .banner-mylife-backdrop, 
-    .banner-mylife-visible > div[class^="arcticmodal-"], .nagscreen {
+    .banner-mylife-visible > div[class^="arcticmodal-"], .nagscreen, 
+    body > .arcticmodal-overlay[style*="opacity: 0.6"] {
         display: none !important
     }
     body:not(#id) {
@@ -1302,7 +1308,8 @@
 }
 
 @-moz-document domain("mail.ru") {
-    #doubleformat_down, .branding-p, div[data-module^="Slot.mimic."] {
+    #doubleformat_down, .branding-p, div[data-module^="Slot.mimic."], 
+    noindex[style*="!"] {
         transform: scale(0) !important;
         opacity: 0 !important;
         pointer-events: none !important;
@@ -1483,7 +1490,8 @@
 @-moz-document
   domain("ngs.ru"),
   domain("rambler.ru") {
-    .social-popup, .subscribe-popup, .subscribe-popup-cover {
+    .social-popup, .subscribe-popup, .subscribe-popup-cover, 
+    .subscribe-popup__wrapper {
         display: none !important
     }
 }
@@ -1522,7 +1530,8 @@
     .background {
         background: none !important
     }
-    .background > script + div {
+    .background > script + div, 
+    .background > script ~ div:not([id]):not([class]) + div[id][class] {
         display: none !important
     }
 }
@@ -1614,7 +1623,8 @@
   domain("pornolab.biz"),
   domain("pornolab.cc"),
   domain("pornolab.net") {
-    .post_wrap div:not([id]):not([class]):not([style]) > table > tbody > tr > td {
+    .post_wrap div:not([id]):not([class]):not([style]) > table > tbody > tr > td, 
+    footer > a {
         display: none !important
     }
 }
@@ -2074,7 +2084,8 @@
         background-image: none !important
     }
     #column-right > div:first-child ~ :not(.vote):not(.tags):not(.counters), 
-    #full-brand-footer > div[style*="fixed"], #head-tuppy > a {
+    #full-brand-footer > div[style*="fixed"], #head-tuppy > a, 
+    div[class] > .adv_title + div[class] {
         display: none !important
     }
     #head-tuppy {

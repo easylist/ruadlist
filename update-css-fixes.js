@@ -128,8 +128,7 @@ let fs = require('fs');
                         selectors.push(str.slice(0, pos));
                         str = str.slice(pos + 1);
                     }
-                    if (selectors.length < 1)
-                        selectors.push(str);
+                    selectors.push(str);
                 }
                 let joinedSelectors = `\n    ${selectors.join(',\n    ')}`.replace(/,/g, ', ');
                 css += `${joinedSelectors} {${style}\n    }`;
