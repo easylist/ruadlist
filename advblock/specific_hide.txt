@@ -1759,12 +1759,14 @@ novostioede.ru##.contdi
 novostioede.ru##.contdiv
 liveangarsk.ru##.conten
 papillomy.com##.content .custom-block
+fb.ru##.content > .article > .public-box + [id]
 mos.news##.content > .comment-block[style^="margin"]
 allhit.org##.content > .inner > div[align="center"]
 lostfilm.tv##.content > :not(#main-center-side) iframe:not(.ya_music)
 bragazeta.ru##.content > [class^="banner"]
 riperam.org##.content > a[href][target="_blank"]
 lostpic.net##.content > a[target="_blank"]
+syl.ru##.content > article > .article + [id]
 anitokyo.tv##.content > div[style="height:120px"]
 tyurem.net##.content > noindex > :not([href*="tyurem.net"])
 torrentszona.com##.content > p + noindex
@@ -1984,7 +1986,7 @@ pure-t.ru##.fullscreen-overlay
 wkino2.net##.fullstory ~ noindex .pleer
 anison.fm##.fw.topbanner
 66.ru##.g-48 canvas
-fb.ru##.g-holder > .content > [id]:first-child
+fb.ru##.g-holder > .content > [id]
 kaifolog.ru##.gads
 glavpost.com##.gallery-center-ad-block
 splkirov.ru##.gallery-gusar
@@ -2159,6 +2161,7 @@ phonenumber.to##.js-ads
 checkadblock.ru##.js-ads-block
 megalyrics.ru##.js-banner
 blizko.ru##.js-barmen-loaded:not([data-barmen="Showcase"])
+fb.ru##.js-bn-right
 promodj.com##.js-core_branding
 infpol.ru##.js-floating-block
 e1.ru##.js-main-fixed-banner
@@ -3355,6 +3358,7 @@ euro-football.ru##[id^="topbanner"]
 mirmmo.ru##[id^="trumedia_holder_"]
 mirmmo.ru##[id^="trurlmedia_holder"]
 pravda-tv.ru##[id^="warta_ads-"]
+fb.ru,syl.ru##[id^="ya_"]
 guitarplayer.ru##[id^="ya_direct_"]
 yellowpages.uz##[onclick*="ClickOnAd"]
 yellowpages.uz##[onclick*="ClickOnBanner"]
@@ -4146,6 +4150,8 @@ kapriz.info##a[target][href*="/go.php?url="] > img[src^="/"]
 lostfilm.info##a[title="LostFilm.INFO"] > div[style*="height"]
 animelend.info#?#td > .base:-abp-has(.r-r)
 anistar.me#?#body > div[class]:-abp-has([onclick*="brend_click"])
+fb.ru##article > .content > [class]:not([div]) > [class] > :not(.js-tracker)
+fb.ru##article > .content ~ .article__info + [id]
 censor.net.ua##article > .text > .innerevents
 glavpost.com##article div[style*="#EFEFEF"]
 tochka.net##article ~ div[id^="rsswidget"]
@@ -4240,6 +4246,7 @@ soccer365-1.xyz,soccer365.ru##body > div[class]:not([id]) > div[style^="backgrou
 soccer365-1.xyz,soccer365.ru##body > div[class]:not([id]) > div[style^="background"] ~ *
 pipec.ru##body > div[class]:not([id]):not([style]):not([class^="bottom"])
 liveinternet.ru##body > div[class]:not([style]):not([id]):not([class*="share"]):not([class*="notify"]):not(.GlSrv):not(.SrvIm):not([role="presentation"]):not(.allpage):not([class*="dialog"]):not(.li-j_wrapper):not(.footer):nth-child(n+1)
+fb.ru##body > div[class][style="display: block;"]
 badcinema.ru##body > div[class][style^="position: absolute"]
 finam.ru##body > div[class^="hidden-"]
 openssource.biz##body > div[class^="spu-"]
@@ -4555,7 +4562,7 @@ spravportal.ru##div[id*="AdContainer"]
 get-tune.cc,iplayer.info,k1news.ru,market4game.ru,mp3cc.com,mp3cc.org,sexxx.name,vmuzice.me,xmusic.name,xmusik.me,xmuzic.me,yellowpages.uz##div[id*="Banner"]
 mirtesen.ru,myhistori.ru##div[id*="BannerSmiTwo"]
 domosedy.com##div[id*="TizerGroup"]
-avtovzglyad.ru,baby.ru,e1.ru,fb.ru,fishki.net,otzovik.com,regmarkets.ru,syl.ru##div[id*="_R-"]
+avtovzglyad.ru,baby.ru,e1.ru,fishki.net,otzovik.com,regmarkets.ru,syl.ru##div[id*="_R-"]
 zoneofgames.ru##div[id*="_adforum"]
 niv.ru##div[id*="_ban_"]
 kavkazova.ru##div[id*="actionteaser"]
