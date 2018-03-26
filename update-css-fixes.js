@@ -20,7 +20,7 @@ let fs = require('fs');
     {
         let ctime = fs.statSync(cssFileName).ctime;
         let fmt = x => `${(x < 9 ? '0' : '')}${x}`;
-        let [yr, mn, dy] = [ctime.getFullYear(), ctime.getMonth(), ctime.getDate()];
+        let [yr, mn, dy] = [ctime.getFullYear(), ctime.getMonth() + 1, ctime.getDate()];
         let [hr, mi] = [ctime.getHours(), ctime.getMinutes()];
         version = `0.${fmt(yr)}${fmt(mn)}${fmt(dy)}.${fmt(hr)}${fmt(mi)}`;
     }
