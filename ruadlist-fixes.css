@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180222.1117
+@version 0.20180226.1215
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -169,6 +169,7 @@
   domain("kadrovik01.com.ua"),
   domain("kdelo.ru"),
   domain("kom-dir.ru"),
+  domain("law.ru"),
   domain("lawyercom.ru"),
   domain("menobr.ru"),
   domain("nalogplan.ru"),
@@ -205,6 +206,7 @@
 }
 
 @-moz-document domain("4pda.ru") {
+    div[class]:not([id*="attach"]) > [attach_id][rel="nofollow"][href][target="_blank"] > img[src], 
     iframe[src*="utm_campaign"] {
         display: none !important
     }
@@ -1553,8 +1555,9 @@
 }
 
 @-moz-document domain("otzovik.com") {
-    .panel-bottom * {
-        height: auto !important
+    #ad_footer2, .object_bottom_2, .panel-bottom, .summary_right4, 
+    div[class^="rf"], div[id^="rf"] {
+        display: none !important
     }
 }
 
@@ -1623,8 +1626,7 @@
   domain("pornolab.biz"),
   domain("pornolab.cc"),
   domain("pornolab.net") {
-    .post_wrap div:not([id]):not([class]):not([style]) > table > tbody > tr > td, 
-    footer > a {
+    #tor-reged ~ div table, .post_body ~ div table, footer > a {
         display: none !important
     }
 }
