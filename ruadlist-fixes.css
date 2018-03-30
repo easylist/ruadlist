@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180329.2045
+@version 0.20180330.1534
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -2187,13 +2187,20 @@
     }
 }
 
-@-moz-document domain("yaplakal.com") {
-    #footer, #header {
-        background-color: skyblue !important
+@-moz-document
+  domain("yap.ru"),
+  domain("yaplakal.com") {
+    html > body:not(#id) {
+        background-color: #9ab9a7 !important
     }
-    #footer, #top-line {
+    #footer {
         background: none !important;
         padding: 0 !important
+    }
+    #top-line {
+        background: none !important;
+        padding: 0 !important;
+        height: auto !important
     }
 }
 
