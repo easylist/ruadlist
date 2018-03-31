@@ -321,6 +321,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|1kinobi
 /forum/images/*$object,domain=hvosty.ru|vsehvosty.ru
 /galya.ru/clients/places/*
 /generated/$domain=inforeactor.ru|nahnews.org|nation-news.ru|newinform.com|polit.info|politexpert.net
+/get-autoru-all/$domain=drive.ru|drive2.ru|drive2com
 /getVast*preroll&license=$object-subrequest,domain=rutube.ru
 /gorilla.php?token$domain=pavlodar.news|pavon.kz
 /gorod24popup/$domain=feo.ua|xn--e1asq.xn--p1ai
@@ -956,7 +957,6 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 ||cybersport.ru/assets/img/*banner
 ||cybersport.ru^*/branding
 ||czx.to/images/flama/
-||d.drive.ru^$script,domain=drive.ru|drive2.com|drive2.ru
 ||d2wl3qmk54t3ha.cloudfront.net^
 ||da.advooble.kz/
 ||da.rus-atlas.ru^$script,domain=rus-atlas.ru
@@ -1022,7 +1022,8 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 ||dprealty.ru/iframe/property4scroll/
 ||drive.ru/images/branding$image
 ||drive.ru/images/promo/
-||drive2.ru/*/*/*/*/*/$subdocument
+||drive2.ru/*/*/*/*/*/$subdocument,xmlhttprequest,domain=drive2.ru
+||drive2.ru^*/second_adb.js$domain=drive2.ru
 ||drochunov.net/pic/a/
 ||drumandbass.ru/img*banner
 ||dt00.net/gjs/
@@ -3036,7 +3037,6 @@ ucoz.ru##a[href*="amigo.mail"][target="_blank"]
 ||xyz^$third-party,domain=allhentai.ru|doramatv.ru|findanime.me|grouple.co|librebook.ru|mintmanga.com|readmanga.me|selflib.me|selfmanga.ru
 ||ya2016.com/tizers.html
 ||ya62.ru/images/flash/
-||yandex.net/get-autoru-all/$domain=drive.ru|drive2.ru|drive2com
 ||yandex.net^*/superbanner_$domain=kinopoisk.ru
 ||yandex51.ru/joketsuperstar$script
 ||yangteacher.ru/s.png

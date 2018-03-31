@@ -1678,6 +1678,7 @@ glav.su##.c-bl-ad
 glav.su##.c-bl-f[style="min-height: 100px;"]
 drive2.com,drive2.ru##.c-block__fake-gap
 inmyroom.ru##.c-commerce-banner
+drive2.ru##.c-post + script[type="application/ld+json"] + div[class]
 gramota.ru##.c4e745-block
 piccy.info##.c[width="300"]
 boxnews.com.ua##.caf0c6
@@ -2166,6 +2167,8 @@ promodj.com##.js-core_branding
 infpol.ru##.js-floating-block
 e1.ru##.js-main-fixed-banner
 sportfm.ru##.js-news-partners
+drive2.ru##.js-page .g-column-mid + div[class] > .c-block ~ div[class]:not(.c-block)
+drive2.ru##.js-page > div[class*="header"] + div[class] > div[class]:not([id]):not([class*="-"]) > div[class]:not([id]):not([class*="-"])
 womanadvice.ru##.js-relap__item-inner > a[href*="https://relap.io/r?"] ~ *
 baby.ru##.js-sidebar-content > div:not([id]):not([class])[style^="height"]
 obogrevguru.ru,stroitel-list.ru,termogurus.ru##.js_load
@@ -2459,8 +2462,6 @@ audiopoisk.narod.ru##.noun
 novostroykin.ru##.ntgb_
 999.md##.numbers-placeholder
 point.md##.numbers-promo-placeholder
-drive2.ru##.o-grid-row:not(.c-pager):not(.o-group) > :not(.c-button):not(.o-img):not(.c-user-card)
-drive2.ru##.o-sticky.js-sticky:not(.c-nav-block)
 infekc.ru##.obl
 korrespondent.net##.obzorseti
 cardiologiya.com,omastopatii.ru##.offblo
@@ -4544,8 +4545,7 @@ yp.ru##div[class^="yp-tgb-"]
 russianporno911.ru##div[class^="yved"]
 vk.com##div[data-ad-view]
 vk.com##div[data-ad]
-drive2.ru##div[data-adkind="drivedirect"] + div[class="o-columns"] > .o-columns__side
-drive2.ru##div[data-adkind="drivedirect"] .o-grid__item > [data-slot="recommendations.teaser"]
+drive2.com,drive2.ru##div[data-adkind="drivedirect"] + div[class="o-columns"] > .o-columns__side
 vk.com##div[data-ads]
 tut.by##div[data-atom-marker="kupi_block"]
 irr.by##div[data-banner-class]
@@ -4618,7 +4618,7 @@ andevice.ru##div[id^="ad_header"]
 indigomath.ru##div[id^="ad_id"]
 eg.ru##div[id^="ad_ph_"]
 imagenizr.net##div[id^="adblock-"]
-baby.ru,drive.ru,drive2.ru,ekabu.ru,forexpf.ru,hitfm.ru,inopressa.ru,kino-teatr.ru,liveinternet.ru,matchtv.ru,mirtesen.ru,myhistori.ru,news.sportbox.ru,playground.ru,ria.ru,seonews.ru,sport-express.ru,thequestion.ru##div[id^="adfox_"]
+baby.ru,drive.ru,drive2.com,drive2.ru,ekabu.ru,forexpf.ru,hitfm.ru,inopressa.ru,kino-teatr.ru,liveinternet.ru,matchtv.ru,mirtesen.ru,myhistori.ru,news.sportbox.ru,playground.ru,ria.ru,seonews.ru,sport-express.ru,thequestion.ru##div[id^="adfox_"]
 66.ru##div[id^="adlift_swf"]
 baginya.org,topmmo-games.ru##div[id^="admitad"]
 baby.ru,film.ru##div[id^="adriver_banner"]
@@ -4780,6 +4780,7 @@ businessman.ru,e1.ru,fishki.net,itchief.ru,kakprosto.ru,kinopoisk.ru,kurs.com.ua
 alcogolizm.com##div[id^="yazd_"]
 mega-stars.ru##div[id^="youtube_ad_"]
 litmir.co,litmir.info,litmir.me##div[jq^="ReadRightBanner"]
+drive2.ru##div[lang="ru"]
 fb.ru,syl.ru##div[lang="ru"]:not([itemtype^="http://schema.org/"])
 liveinternet.ru##div[lang="ru"]:not([itemtype^="http://schema.org/"]):not([role="presentation"])
 ura.news##div[ng-bind-html="item.right_banner"]
@@ -4844,6 +4845,8 @@ inmoment.ru##div[style^="width:199px;height:299px;"]
 m24.ru##div[style^="width:240px;height:400px;"]
 x.epidemz.co#?##dle-content > .shortstory:-abp-has([target="_blank"])
 anistar.me#?##dle-content > div.news:-abp-has(a[href^="https://anistar.me/engine/go.php?url="])
+drive2.ru#?#.c-block:-abp-has(.c-header ~ .c-dv-sns)
+drive2.ru#?#div[class]:not([id]):not([class*="-"]):-abp-has(> :not(html) > iframe:not([src]):not(#undefined))
 e-news.pro,e-news.su#?#.side-block > div:-abp-contains(Реклама)
 ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партнеров))
 imtw.ru##else > .noad
