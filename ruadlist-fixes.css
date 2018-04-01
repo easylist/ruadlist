@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180330.1534
+@version 0.20180401.1956
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -287,9 +287,9 @@
   domain("gidonline.in"),
   domain("hd-1080.com"),
   domain("kino-klub.org"),
+  domain("kino720.online"),
   domain("kinohome.net"),
   domain("kinohome.org"),
-  domain("kinorezka.com"),
   domain("oblozhki.net"),
   domain("the-cinema.ru"),
   domain("torrentum.org"),
@@ -831,7 +831,7 @@
 
 @-moz-document domain("freeopenvpn.org") {
     .adsbygoogle {
-        max-height: 1px !important
+        max-height: 2px !important
     }
 }
 
@@ -844,6 +844,15 @@
 @-moz-document domain("gagadget.com") {
     .fader-social {
         display: none !important
+    }
+}
+
+@-moz-document domain("game-pool.ru") {
+    body:not(#id) {
+        background-image: none !important
+    }
+    div[class^="container-content"] > div[class^="obolox"] {
+        margin-top: 52px !important
     }
 }
 
@@ -1143,7 +1152,8 @@
 
 @-moz-document domain("kg-portal.ru") {
     body {
-        background-image: none !important
+        background-image: none !important;
+        background: #bdbdbd !important
     }
     .ten_topbar + div:not(.ten_ears_wrap) {
         display: none !important
@@ -1218,6 +1228,12 @@
 @-moz-document domain("kinokrad.su") {
     #wrapper:not(#id) {
         margin-top: 46px !important
+    }
+}
+
+@-moz-document domain("kinomania.ru") {
+    .outer {
+        padding-top: 0 !important
     }
 }
 
@@ -1653,7 +1669,7 @@
   domain("pornolab.biz"),
   domain("pornolab.cc"),
   domain("pornolab.net") {
-    #tor-reged ~ div table, .post_body ~ div table, footer > a {
+    #tor-reged ~ div > table, .post_body ~ div > table, footer > a {
         display: none !important
     }
 }
@@ -2031,16 +2047,6 @@
     }
 }
 
-@-moz-document
-  domain("tv.yandex.by"),
-  domain("tv.yandex.kz"),
-  domain("tv.yandex.ru"),
-  domain("tv.yandex.ua") {
-    .grid-chunk > .grid__item_before-blank {
-        margin-right: 0 !important
-    }
-}
-
 @-moz-document domain("tvzavr.ru") {
     .page__inner_branding {
         background-image: none !important
@@ -2173,7 +2179,7 @@
         position: fixed !important;
         transform: scale(0) !important
     }
-    div:not([style^="padding: 0px"][style*="content-box"])[style*=' !important'][style*='display'][style*='visibility'][style*='visible'] {
+    div:not([style^="padding: 0px"]):not([style*="content-box"])[style*="!important"][style*="display"][style*="visibility"][style*="visible"] {
         width: 0 !important;
         min-width: 0 !important;
         max-width: 0 !important;
