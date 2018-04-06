@@ -597,7 +597,7 @@ live-rutor.org,liverutor.org,main-rutor.org,new-rutor.org,the-rutor.org###mirror
 pirat.ca###ml_code
 inforeactor.ru###mm_block
 mozilla-russia.org###modex
-fb.ru,syl.ru###moevid
+syl.ru###moevid
 ekaraganda.kz###moneyblock
 kinogo-onlaine.net###moonwalkTimer
 ru-clip.com,ruclip.com###morev
@@ -1762,7 +1762,6 @@ novostioede.ru##.contdi
 novostioede.ru##.contdiv
 liveangarsk.ru##.conten
 papillomy.com##.content .custom-block
-fb.ru##.content > .article > .public-box + [id]
 mos.news##.content > .comment-block[style^="margin"]
 allhit.org##.content > .inner > div[align="center"]
 lostfilm.tv##.content > :not(#main-center-side) iframe:not(.ya_music)
@@ -1991,7 +1990,6 @@ pure-t.ru##.fullscreen-overlay
 wkino2.net##.fullstory ~ noindex .pleer
 anison.fm##.fw.topbanner
 66.ru##.g-48 canvas
-fb.ru##.g-holder > .content > [id]
 kaifolog.ru##.gads
 glavpost.com##.gallery-center-ad-block
 splkirov.ru##.gallery-gusar
@@ -2163,7 +2161,6 @@ phonenumber.to##.js-ads
 checkadblock.ru##.js-ads-block
 megalyrics.ru##.js-banner
 blizko.ru##.js-barmen-loaded:not([data-barmen="Showcase"])
-fb.ru##.js-bn-right
 promodj.com##.js-core_branding
 infpol.ru##.js-floating-block
 e1.ru##.js-main-fixed-banner
@@ -2499,6 +2496,7 @@ filmpro.ru##.page_lcol > div[style]
 filmpro.ru##.page_rcol > div[style*="background:#fff;"]:not(:last-child)
 filmpro.ru##.page_rcol > div[style*="height:400px;"]
 filmpro.ru##.page_rcol > h3:nth-of-type(1)
+fb.ru##.pagewrap > [id]:not(div)
 msn.com##.paging-container > .ad
 km.ru##.pane-advertisment
 komarovskiy.net##.panel-body noindex
@@ -3312,7 +3310,6 @@ nntt.org##[href^="http://www.cenam.net"]
 virpl.ru##[id$="-banner"]
 xyu.tv##[id$="AdsAfterVideo"]
 kolesa.kz##[id*="Banner"]
-fb.ru,syl.ru##[id*="_R-"]
 floomby.ru##[id*="adsPlace"]
 lifenews.ru,lifenews78.ru##[id*="banner"]
 hideme.ru##[id*="hidemead"]
@@ -3351,7 +3348,7 @@ euro-football.ru##[id^="topbanner"]
 mirmmo.ru##[id^="trumedia_holder_"]
 mirmmo.ru##[id^="trurlmedia_holder"]
 pravda-tv.ru##[id^="warta_ads-"]
-fb.ru,syl.ru##[id^="ya_"]
+syl.ru##[id^="ya_"]
 guitarplayer.ru##[id^="ya_direct_"]
 yellowpages.uz##[onclick*="ClickOnAd"]
 yellowpages.uz##[onclick*="ClickOnBanner"]
@@ -4146,8 +4143,9 @@ kapriz.info##a[target][href*="/go.php?url="] > img[src^="/"]
 lostfilm.info##a[title="LostFilm.INFO"] > div[style*="height"]
 animelend.info#?#td > .base:-abp-has(.r-r)
 anistar.me#?#body > div[class]:-abp-has([onclick*="brend_click"])
-fb.ru##article > .article__info + [id]
-fb.ru##article > .content > [class]:not([div]) > [class] > :not(.js-tracker)
+fb.ru##article > #content > [class]:not(div):not(table)
+fb.ru##article > .article__info ~ [id]:not(div)
+fb.ru##article > .public-box ~ [id]:not(div)
 censor.net.ua##article > .text > .innerevents
 glavpost.com##article div[style*="#EFEFEF"]
 tochka.net##article ~ div[id^="rsswidget"]
@@ -4207,6 +4205,7 @@ privatfinance.com##body > .wrap
 zippyshare.com##body > :not(.container)
 fast-torrent.ru,fasttorrent.ru,online-life.club##body > :nth-child(-n+3):not(div)
 wikianime.ru##body > [class*="clickable"]
+fb.ru##body > [class][style="display: block;"]:not(div)
 riotpixels.com##body > [class^="side-url-"]
 edufuture.biz,xvatit.com##body > [onclick]
 torrents-club.org##body > [style*="fixed"]
@@ -4242,7 +4241,6 @@ votrube.ru##body > div[class]:last-of-type
 soccer365-1.xyz,soccer365.ru##body > div[class]:not([id]) > div[style^="background"]
 soccer365-1.xyz,soccer365.ru##body > div[class]:not([id]) > div[style^="background"] ~ *
 pipec.ru##body > div[class]:not([id]):not([style]):not([class^="bottom"])
-fb.ru##body > div[class][style="display: block;"]
 badcinema.ru##body > div[class][style^="position: absolute"]
 finam.ru##body > div[class^="hidden-"]
 openssource.biz##body > div[class^="spu-"]
@@ -4774,7 +4772,7 @@ alcogolizm.com##div[id^="yazd_"]
 mega-stars.ru##div[id^="youtube_ad_"]
 litmir.co,litmir.info,litmir.me##div[jq^="ReadRightBanner"]
 razlozhi.ru##div[lang="ru"]
-fb.ru,syl.ru##div[lang="ru"]:not([itemtype^="http://schema.org/"])
+syl.ru##div[lang="ru"]:not([itemtype^="http://schema.org/"])
 ura.news##div[ng-bind-html="item.right_banner"]
 avtonavideo.ru,chinimavto.ru,minecraftnavideo.ru,multivarki-redmond.ru,odezhda2.ru,piling.re,pol-video.ru,prigotovit.org,prohozhuigru.ru,remontnavideo.ru,shiny2.ru,televizor2.ru##div[onclick*="SkipR"]
 allserial.tv##div[onclick*="document.getElementById('ambn"]
