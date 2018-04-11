@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180405.1847
+@version 0.20180412.0035
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -71,7 +71,7 @@
   domain("24video.sexy"),
   domain("all-episodes.tv"),
   domain("allfilmonline.co"),
-  domain("amovies.ws"),
+  domain("amovies.cc"),
   domain("baskino.me"),
   domain("baskinonet.ru"),
   domain("bigcinema-tv.club"),
@@ -100,6 +100,7 @@
   domain("itog.info"),
   domain("itop-gear.ru"),
   domain("ixbt.com"),
+  domain("kinoaa.ru"),
   domain("koshara.co"),
   domain("kronverkcinema.ua"),
   domain("live-rutor.org"),
@@ -736,7 +737,8 @@
 
 @-moz-document
   domain("fb.ru"),
-  domain("hosgeldi.com") {
+  domain("hosgeldi.com"),
+  domain("syl.ru") {
     .adsbygoogle {
         position: fixed !important;
         top: -10000px !important
@@ -1087,6 +1089,7 @@
     body > .outer_outer > .outer_inner {
         background: #dedede !important
     }
+    .wrapper_outer > .wide_brand, 
     .wrapper_outer > .wide_brand ~ div:not([id]):not([class]) + style + div[class] {
         display: none !important
     }
@@ -1587,7 +1590,7 @@
 }
 
 @-moz-document domain("otzovik.com") {
-    #ad_footer2, .product-contents #panel-right > *, 
+    #ad_footer2, .adrev_block, .adsbygoogle, .product-contents #panel-right > *, 
     .product-contents .review-contents ~ div[class] > *, 
     .product-contents div[class*="bottom"] > *, .product-header-right, 
     .product-reviews-right > * {
@@ -1915,6 +1918,13 @@
 @-moz-document domain("softportal.com") {
     a[href^="prog"][target="_blank"], a[href^="prog"][target="_blank"] ~ * {
         display: none !important
+    }
+}
+
+@-moz-document domain("sovet.kidstaff.com.ua") {
+    body {
+        padding-top: 40px !important;
+        background-image: none !important
     }
 }
 
