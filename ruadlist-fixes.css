@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180412.0035
+@version 0.20180414.1357
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -24,51 +24,7 @@
 @-moz-document
   domain("24video.guru"),
   domain("24video.sexy"),
-  domain("aif.ru"),
-  domain("epravda.com.ua"),
-  domain("fastpic.ru"),
-  domain("film-max.ru"),
-  domain("gecid.com"),
-  domain("hd720.biz"),
-  domain("hdkinoklub.com"),
-  domain("hdrezka.club"),
-  domain("hdrezka.name"),
-  domain("itog.info"),
-  domain("ixbt.com"),
-  domain("kino-full.ru"),
-  domain("kinokrad.su"),
-  domain("kinotochka.club"),
-  domain("kurkul.com"),
-  domain("kv.by"),
-  domain("livejournal.com"),
-  domain("macdigger.ru"),
-  domain("newstudio.tv"),
-  domain("nnm-club.me"),
-  domain("nnm-club.name"),
-  domain("nnm-club.tv"),
-  domain("nnmclub.to"),
-  domain("nnmclub.tv"),
-  domain("oblozhki.net"),
-  domain("oper.ru"),
-  domain("pure-t.ru"),
-  domain("rufootballtv.org"),
-  domain("russian-porn.online"),
-  domain("sc2tv.ru"),
-  domain("smotri.com"),
-  domain("stopgame.ru"),
-  domain("torrentom.com"),
-  domain("torrentum.ru"),
-  domain("userstyles.org"),
-  domain("xatab-repack.net"),
-  domain("zakon.kz") {
-    body:not(#id), html:not(#id) {
-        background-image: none !important
-    }
-}
-
-@-moz-document
-  domain("24video.guru"),
-  domain("24video.sexy"),
+  domain("4watching.club"),
   domain("all-episodes.tv"),
   domain("allfilmonline.co"),
   domain("amovies.cc"),
@@ -135,6 +91,51 @@
   domain("zona-film.com") {
     body:not(#id), html:not(#id) {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("24video.guru"),
+  domain("24video.sexy"),
+  domain("aif.ru"),
+  domain("epravda.com.ua"),
+  domain("fastpic.ru"),
+  domain("film-max.ru"),
+  domain("gecid.com"),
+  domain("hd720.biz"),
+  domain("hdkinoklub.com"),
+  domain("hdrezka.club"),
+  domain("hdrezka.name"),
+  domain("itog.info"),
+  domain("ixbt.com"),
+  domain("kino-full.ru"),
+  domain("kinokrad.su"),
+  domain("kinotochka.club"),
+  domain("kurkul.com"),
+  domain("kv.by"),
+  domain("livejournal.com"),
+  domain("macdigger.ru"),
+  domain("newstudio.tv"),
+  domain("nnm-club.me"),
+  domain("nnm-club.name"),
+  domain("nnm-club.tv"),
+  domain("nnmclub.to"),
+  domain("nnmclub.tv"),
+  domain("oblozhki.net"),
+  domain("oper.ru"),
+  domain("pure-t.ru"),
+  domain("rufootballtv.org"),
+  domain("russian-porn.online"),
+  domain("sc2tv.ru"),
+  domain("smotri.com"),
+  domain("stopgame.ru"),
+  domain("torrentom.com"),
+  domain("torrentum.ru"),
+  domain("userstyles.org"),
+  domain("xatab-repack.net"),
+  domain("zakon.kz") {
+    body:not(#id), html:not(#id) {
+        background-image: none !important
     }
 }
 
@@ -600,12 +601,6 @@
     body > div {
         background: none !important;
         padding-top: 0 !important
-    }
-}
-
-@-moz-document domain("drive2.ru") {
-    .c-slideshow__nav {
-        max-width: 40px !important
     }
 }
 
@@ -1385,6 +1380,13 @@
     }
 }
 
+@-moz-document domain("mk.ru") {
+    div[class^="Banner_right"] {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important
+    }
+}
+
 @-moz-document domain("mobiltelefon.ru") {
     #main_tb {
         top: 0 !important
@@ -1603,7 +1605,7 @@
         height: 1px !important;
         width: 1px !important
     }
-    .material-inline-an, .top-an {
+    .mainlist-inline-an, .material-inline-an, .top-an {
         position: fixed !important;
         transform: scale(0) !important
     }
@@ -1956,7 +1958,10 @@
         padding-top: 0 !important
     }
     [data-content-name="banner-static"] {
-        pointer-events: none !important
+        position: fixed !important;
+        left: -10000px !important;
+        transform: scale(0) !important;
+        display: none !important
     }
     #branding-layout > a {
         width:0 !important;
