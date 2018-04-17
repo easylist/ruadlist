@@ -2471,7 +2471,6 @@ korrespondent.net##.obzorseti
 cardiologiya.com,omastopatii.ru##.offblo
 dermatitanet.ru##.offer-ac
 agro-biz.ru,ecology-of.ru##.offersblock
-mk.ru##.ok-extra
 osocionike.ru##.others
 karavan.tver.ru##.otstup
 stroy-telo.com##.ououou
@@ -3180,6 +3179,7 @@ smotretfilm.online##.workers
 livecars.ru##.wow_box
 travel3.ru##.wpInsert
 irr.by,irr.ru##.wrBanerPlace noindex
+mk.ru##.wrap > .hidden-xs + div[class]
 meteo-tv.ru##.wrap > [id^="bch"]
 avtosreda.ru##.wrap > noindex
 vse42.ru##.wrap-adplace-frame
@@ -4475,8 +4475,7 @@ gorod.cn.ua##div[class^="bann_"]
 deti.fm##div[class^="banner"]:not(#vk_groups)
 kaktutzhit.by##div[class^="banner"][class$="rightSide"] > .banner:nth-of-type(1)
 ura.news##div[class^="bannerPosition"]
-9tv.co.il,irr.by##div[class^="banner_"]
-mk.ru##div[class^="banner_"] > *
+9tv.co.il,irr.by,mk.ru##div[class^="banner_"]
 sport-express.ru##div[class^="banner_box"]
 mnmag.ru##div[class^="banner_right"]
 kino.vl.ru##div[class^="banners"]
@@ -5030,6 +5029,9 @@ charming-face.ru##marquee
 9sx.ru##marquee[scrollamount]
 mob39.ru##meta + center > table[cellspacing="0"][cellpadding="0"][border="0"]
 mk.ru#?#.right_block:-abp-has([id^="unit_"])
+mk.ru#?#.wrap > div:-abp-has(> div[style="display: table; margin: auto;"])
+mk.ru#?#aside div:-abp-has(> script:-abp-contains(adfox))
+mk.ru#?#div:-abp-has(> script:-abp-contains(adbdect))
 nastroyvse.ru#?#.saitbar_bock:-abp-has(.mpwidget)
 salex.ru##nobr > div > table
 kinogo-net-co.ru##nofollow > noindex
