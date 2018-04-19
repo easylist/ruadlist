@@ -1,6 +1,5 @@
 ivanovy.info###AutoNumber1
 smotri.com###BannerUnderBroPlayer
-liveinternet.ru###Bl-Sidebar > div[class] ~ div[class]:not([id])
 peeroff.net###DIV2 > noindex
 kinogo-onlaine.net###GoodTiny
 kinogo-onlaine.net,onlinemusic.com.ua###GoodVane
@@ -1050,7 +1049,6 @@ smotri.com##.BRecommend-right
 bobsoccer.ru,obninsk.name##.Banner
 ati.su##.BannerVertMargin7
 hqq.tv##.BetterJsPopOverlay
-liveinternet.ru##.BlInnrcomForm ~ script ~ div[id]
 ixbt.com##.Blocksmaster
 mail.google.com##.Bu.y3
 besplatnyeprogrammy.ru##.DaikosText
@@ -1059,6 +1057,7 @@ nulled.cc##.EstBS-bnContent
 fanfics.me##.FicHead.ContentTable > .left
 ex-fs.net##.FullstorySubForm > noindex
 m24.ru##.HeaderAdvStripe
+liveinternet.ru##.Inner > div[id]:last-of-type
 russiandc.com##.L
 rutorgame.org##.LBM
 tvtorrent.me##.MIXADVERT_NET ~ [src*="mixadvert"] + div
@@ -3054,7 +3053,7 @@ remontka.pro##.topadmobile
 overclockers.ru##.topadvert-wrap
 krisha.kz,liveresult.ru##.topb
 gubkinskiy.com##.topban
-forbes.ru,post-tracker.ru,rtkorr.com##.topbanner
+forbes.ru,liveinternet.ru,post-tracker.ru,rtkorr.com##.topbanner
 santikov.net##.topbannerbg
 news.tj##.topbanners
 mp3poisk.net##.topbnr
@@ -4186,7 +4185,6 @@ auto.ru#?#div:-abp-has(> script:-abp-contains(adfox))
 auto.ru#?#div[class*="__"][id]:-abp-has(div:-abp-contains(Реклама))
 bioware.ru#?#.sidebar__content-wrp:-abp-has(.sidebar__image > a[href^="http://gamazavr.ru/"])
 kino-zal.tv##blink
-liveinternet.ru##body #GlAllcount + style + div[id]
 kissfm.ua##body > #background
 fgh-game.com##body > #banner
 tourister.ru##body > #black
@@ -4409,8 +4407,6 @@ sveikata.lrytas.lt##div[class*="criteo"]
 alexnest.ru##div[class*="directadvert"]
 povarenok.ru##div[class*="evalar"]
 prnt.sc##div[class*="grundik"]
-liveinternet.ru##div[class*="header_v"] ~ div[class][style^="margin-top"]
-liveinternet.ru##div[class*="header_v"] ~ div[class][style^="margin-top"] ~ div[class] > div ~ div
 niscu.ru##div[class*="iw-modal"]
 kinopoisk.ru##div[class*="kp-direct-customize"]
 1parazit.ru##div[class*="popup"]
@@ -5024,9 +5020,9 @@ libertycity.ru#?#[class$="column"] table[width="100%"]:-abp-has(td[align="center
 litlib.net#?#noindex tr:-abp-has(td[class^="content"]:-abp-contains(Реклама))
 liveinternet.ru#?#div:-abp-has(> [action="https://www.technohelp.ru/"])
 liveinternet.ru#?#div:-abp-has(> [style="display:block; width:240px;height:400px;"])
-liveinternet.ru#?#div[class][style^="margin-top"] ~ div[class][style^="margin-top"]:-abp-has(.float100 + .headerlinks)
-liveinternet.ru#?#div[style="clear:both;"]:-abp-has(> ul > li > script:-abp-contains(Math.random))
-liveinternet.ru#?#span:-abp-has(> script:-abp-contains(banner))
+liveinternet.ru#?#div[style="margin-top:-5px;margin-bottom:-20px;"]:-abp-has(script:-abp-contains(/adfox/i))
+liveinternet.ru#?#span:-abp-has(> script:-abp-contains(/adfox|banner/i))
+liveinternet.ru#?#ul:-abp-has(> li [href="http://www.jjc.ru/"])
 lostfilm-online.ru#?#body > div[style] > div > .block:-abp-has(.block_head:-abp-contains(Вам понравится))
 lostfilm-online.ru#?#body > div[style] > div > .block:-abp-has(.block_head:-abp-contains(Вас заинтересует))
 lostfilm-online.ru#?#body > div[style] > div > .block:-abp-has(.block_head:-abp-contains(Дешевле))
