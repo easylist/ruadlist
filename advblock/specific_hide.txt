@@ -4852,6 +4852,7 @@ m24.ru##div[style^="width:240px;height:400px;"]
 x.epidemz.co#?##dle-content > .shortstory:-abp-has([target="_blank"])
 anistar.me#?##dle-content > div.news:-abp-has(a[href^="https://anistar.me/engine/go.php?url="])
 dni.ru#?#div:-abp-has(> div[id] + script:-abp-contains(/adblk/i))
+dni.ru#?#div[style="display: block;"]:-abp-has(> div[id] ~ script:-abp-contains(/adblk/i))
 drive2.com,drive2.ru#?#.c-block--content:-abp-has(.o-group--justify > .c-com-dv-label)
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(.c-rel-label)
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(> [data-slot="recommendations.teaser"])
