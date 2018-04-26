@@ -298,6 +298,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|1kinobi
 /^https?://(?!www\.)(?!forum)([^.]+\.)+?(qrz\.ru)[:/]/$script,domain=qrz.ru
 /^https?://(?!www\.)(?!static)([^.]+\.)+?(censor\.net\.ua)[:/]/$script,domain=censor.net.ua
 /^https?://contentbooster\.me+\/(?!manifest)[a-z0-9]{5,45}/$xmlhttprequest
+/^https?://fb\.ru/[^.]{100,}$/$script,domain=fb.ru
 /ad*.tutu.ru^*_*.php|
 /adb_checker$script,domain=coop-land.ru
 /api*iframe$subdocument,domain=get-tune.cc|iplayer.info|mp3cc.com|mp3cc.org|sexxx.name|xmusic.name
@@ -1115,7 +1116,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||fastpic.ru^$domain=pics-money.ru|screenlist.ru
 ||fastpicc.ru^$third-party,script
 ||favn.noob-club.ru/
-||fb.ru/*/*/*/*/*/*/*/*/*/*/*/*/*/*/$script
 ||fbr.info/fbimage.php?
 ||fc-amkar.org/images/b/
 ||fcdesna.3dn.ru^$object
