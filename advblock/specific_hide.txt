@@ -240,7 +240,7 @@ dugtor.ru###center-block > noindex + .greener
 dugtor.ru###center-block > noindex ~ div[style^="background-color"]
 xxx-base.org###center2 > .block
 bond007in.ucoz.ru###centerBlock > object
-tverigrad.ru###center_column ~ div .client_section > div > img
+tverigrad.ru###center_column ~ div div > img[src]
 kerch.fm###center_left > .informer
 rabota.kharkov.ua###central > table > tbody > tr > .noprint
 computerra.ru###change-ban
@@ -3231,6 +3231,7 @@ vrhell.com##.zzz
 2mm.ru#?#.rightblock > .shadowp:-abp-has(h3:-abp-contains(Интересное в сети))
 4pda.ru#?#div:-abp-has(> .yandex-adaptive)
 66.ru#?#.col > .news-grid:-abp-has([class*="adv-"])
+tverigrad.ru##:not(#social_menu_buttons) > div > a[href][target] > img[src]
 hryunomod.ru##:not(#topads) > .adsbygoogle
 meteo.by##:not(.blinks) > .ad
 vse42.ru##:not(.vse-slider-image) > .banner
@@ -4160,7 +4161,6 @@ history.vn.ua,ukrlit.vn.ua##a[target="_top"][href^="http://banner."]
 rebill.me##a[target="blank"] > img
 kapriz.info##a[target][href*="/go.php?url="] > img[src^="/"]
 lostfilm.info##a[title="LostFilm.INFO"] > div[style*="height"]
-tverigrad.ru##a[title="Твериград"]
 animelend.info#?#td > .base:-abp-has(.r-r)
 anistar.me#?#body > div[class]:-abp-has(a[href] script)
 glavpost.com##article div[style*="#EFEFEF"]
@@ -5279,7 +5279,7 @@ chem21.info##tr[height="250px"]
 raspisanie24.com##tr[onclick*="blablacar"]
 domsnov.ru##tr[style*="important"]
 tut.by#?#.m-hop > [class]:-abp-has(span:-abp-contains(Реклама))
-tverigrad.ru#?#.client_section:-abp-has(#mediametrics)
+tverigrad.ru#?#*:-abp-has(> #mediametrics)
 kino-v-online.tv##ul > noindex
 varlamov.ru#?#.j-l-alpha-content-subinner > .j-e-view-recent:-abp-has(.j-e-title--adv)
 varlamov.ru#?#.j-user-menu > .j-user-menu-item:-abp-has(a[href]:-abp-contains(Varlamov Box))
