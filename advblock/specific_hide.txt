@@ -1802,7 +1802,6 @@ xxx-russian.ru##.content5 > .rad5
 sexytales.org##.contentBox > noindex
 vesti.ru##.content__article__adv
 tsargrad.tv##.content__aside-banner
-kakprosto.ru##.content__billboard_mini
 kakprosto.ru##.content__body > :not([class^="content"]):not([class^="article"])
 auto.ru##.content__page > div[class*=" "][id]:not([class*="catalog"]):not([class*="listing"]):not([class*="services"]) > div[class*=" "][id]
 cassad.net##.content_banner
@@ -4290,7 +4289,6 @@ lostfilm-online.ru##body > div[style] > div > noindex
 laststicker.ru##body > div[style] > noindex
 dokpro.club##body > div[style^="height"]:not([id]):not([class])
 film.ru##body > div[style^="height:"]
-kakprosto.ru##body > div[style^="position: fixed"][style*=" z-index: 99999"]
 forum.smolensk.ws##body > div[style^="position:absolute"]
 peeroff.net##body > div[style^="width:1265px"]
 programmersforum.ru##body > form + br + center
@@ -4598,7 +4596,7 @@ newsvl.ru##div[id][style="height: 120px;"]
 newsvl.ru##div[id][style="height: 80px;"]
 censor.net.ua##div[id][style^="width"][style*="height"][style*="visibility"]
 ivbb.ru##div[id^="ADS_"]
-1tv.ru,2mm.ru,auto.vesti.ru,ctc.ru,echo.msk.ru,f1news.ru,irr.ru,kakprosto.ru,meduza.io,probirka.org,sobesednik.ru,sportbox.ru,tjournal.ru,tvc.ru##div[id^="AdFox_banner"]
+1tv.ru,2mm.ru,auto.vesti.ru,ctc.ru,echo.msk.ru,f1news.ru,irr.ru,meduza.io,probirka.org,sobesednik.ru,sportbox.ru,tjournal.ru,tvc.ru##div[id^="AdFox_banner"]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[id^="AdwolfBanner240x400_"]
 exler.ru##div[id^="Banner"]
 smotri.com##div[id^="Banner"][id$="Recommended"]
@@ -4997,6 +4995,8 @@ post-tracker.ru##img[width^="8"][height^="3"][src$=".gif"]
 infox.ru#?#h2:-abp-contains(Реклама)
 vjazhi.ru##ins[style^="display:inline-table;"]
 it-tehnik.ru#?#aside > div[id^="custom_html"]:-abp-has(div > script)
+kakprosto.ru#?#.content__body div:-abp-has(> div + script)
+kakprosto.ru#?#.sidebar div:-abp-has(> div + script)
 kanobu.ru#?#.news-list-item:-abp-has([href*="advert"])
 kinoafisha.info#?#div:-abp-has(> a[href*="bitcoinnews.ru"])
 kinoangel.club#?#.title_genres:-abp-contains(Это интересно)
