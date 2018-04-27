@@ -3240,7 +3240,7 @@ vrhell.com##.zzz
 2mm.ru#?#.rightblock > .shadowp:-abp-has(h3:-abp-contains(Интересное в сети))
 4pda.ru#?#div:-abp-has(> .yandex-adaptive)
 66.ru#?#.col > .news-grid:-abp-has([class*="adv-"])
-tverigrad.ru##:not(#social_menu_buttons) > div > a[href][target] > img[src]
+tverigrad.ru##:not(#social_menu_buttons) > div > a[href^="http"]:not([href^="https://tverigrad.ru/"]) > img
 hryunomod.ru##:not(#topads) > .adsbygoogle
 meteo.by##:not(.blinks) > .ad
 vse42.ru##:not(.vse-slider-image) > .banner
@@ -3589,6 +3589,7 @@ minecraft-mods.ru##a[href*="http://new-igry.ru/games/"] > img[src^="/uploads/pos
 cxem.net##a[href*="http://service-gsm.ru"]
 360tv.ru##a[href*="http://smi2.ru/"]
 hi.dn.ua##a[href*="http://vk.com/coffeelaktika_kramatorsk"]
+tverigrad.ru##a[href*="https://tverigrad.ru/?utm_source="]
 drochunov.net##a[href*="in.htm?"]
 infobank.by##a[href*="infobank.by/modules/astat/click.aspx"][target="_blank"]
 zhacker.net##a[href*="insorg.org"]
