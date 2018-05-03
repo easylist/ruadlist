@@ -271,11 +271,11 @@ peeroff.net###container_mediaget
 kosmetista.ru###content > .b-under-menu
 superhumor.ru,voffka.com###content > .blog
 kak-prosto.net###content > .container
-rp5.by,rp5.kz,rp5.ru,rp5.ua###content > .noprint + div[id] > div[id]:first-child
 forum.niiot.net###content > .unspecific.message
 delovoibiysk.ru###content > a[target="_blank"] > img[style]
 mobbit.info###content > center
 forum.saransk.ru###content > div > div[class^="zone_"]
+rp5.by,rp5.kz,rp5.ru,rp5.ua###content > div[class] + div[id] > div[id]:first-child
 pesni-tut.com###content > div[id^="mx"]
 border-fan.ru,dad-fan.ru,freehat.cc,grif-fan.ru,simp-fan.ru,sp-fan.ru###content > div[style="height:120px"]
 oddstyle.ru###content > div[style="margin-left: 15px; margin-top: 10px;"] > a > img
@@ -288,7 +288,6 @@ vsezdes.info###content h3[style] > span[style^="color"]
 praetorians.ws###content noindex a[href][target="_blank"]
 citrus.ua###content-right .banners
 rifey.ru###content-top
-rp5.by,rp5.kz,rp5.ru,rp5.ua###content-wrapper > #content + div[id]
 doranime.net,nnm-club.pw###content123
 people-ask.ru###contentBox > #right > #rightContent
 interfax.ru,sports.ru,svpressa.ru###contentShifter
@@ -5117,6 +5116,7 @@ pornogam.tv#?#.span4:-abp-has(.thumbnail > a[href*="/asd/"])
 remontka.pro#?#span:-abp-contains(Реклама)
 rgmechanics.ru#?#.block-dark:-abp-has(div[id^="advertur_"])
 sergeistrelec.ru#?##right > .bl0 > div[class]:-abp-has(div:-abp-contains(еклама))
+rp5.by,rp5.kz,rp5.ru,rp5.ua#?#div[id]:-abp-has(> [id^="crt-"])
 softodrom.ru##script + table .columns_table + .columns_table
 poiskvps.ru##script + td[width="80"]
 sftv.ru##script[src*="iwantyourpromo.com"] ~ div[align="center"]
