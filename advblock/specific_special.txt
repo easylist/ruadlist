@@ -53,6 +53,8 @@ gismeteo.ru##body > div[class][id][style^="top"][style*="left"]
 gismeteo.ru##body > section:not([class]):not([id]):nth-of-type(1)
 gismeteo.ru##div[class^="media_frame"]
 gismeteo.kz##div[id^="rek-gis-news"]
+gismeteo.ru#?#div:-abp-has(> #flix-state)
+gismeteo.ru#?#div:-abp-has(> script:-abp-contains(/advmanager|mg.media.data/i))
 ||gismeteo.*/*weather-gis-news-alter$script
 ||gismeteo.*/rian.html|
 ||gismeteo.ru/assets/flat-ui/js/modules/MG.Media.js
