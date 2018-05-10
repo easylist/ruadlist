@@ -4175,7 +4175,8 @@ vk.com##aside[aria-label="Актуальные новости"]
 auto.ru#?#div:-abp-has(> script[nonce]:not([type]):last-child)
 auto.ru#?#div[class*="__"][id]:-abp-has(div:-abp-contains(Реклама))
 baby.ru#?#div:-abp-has(> div + script:last-child)
-baskino.me,censor.net.ua,finance.i.ua,hronika.info,hvylya.net,kino-hd1080.ru,korrespondent.net,kriminal.tv,kurs.com.ru,kurs.com.ua,news.i.ua,newsyou.info,obozrevatel.com,sinoptik.com.ru,sinoptik.ua,vshkole.com#?#div:-abp-has(> iframe[style="display: none;"])
+baskino.me#?#.description [class]:-abp-has(> [class] > [class]:empty)
+baskino.me#?#.omega [class]:-abp-has(> [class] > [class]:empty)
 bioware.ru#?#.sidebar__content-wrp:-abp-has(.sidebar__image > a[href^="http://gamazavr.ru/"])
 kino-zal.tv##blink
 kissfm.ua##body > #background
@@ -4310,6 +4311,7 @@ all-tor.net,anti-block.org,big-tor.org,bit-tor.org,fast-bit.org,fast-tor.net,fil
 bt.kubyshka.org#?#td > .forabg:-abp-has(dt:-abp-contains(Проверенный выгодный обменник!))
 cameleo.xyz#?#p.main:-abp-has([href*="bit.ly"])
 flamp.ru##cat-banner
+censor.net.ua,finance.i.ua,hronika.info,hvylya.net,kino-hd1080.ru,korrespondent.net,kriminal.tv,kurs.com.ru,kurs.com.ua,news.i.ua,newsyou.info,obozrevatel.com,sinoptik.com.ru,sinoptik.ua,vshkole.com#?#div:-abp-has(> iframe[style="display: none;"])
 exnews.org##center + noindex
 turbobit.net##center > #download-main-info + div[style="width:100%;text-align:center;"]
 avtonavideo.ru,chinimavto.ru,minecraftnavideo.ru,multivarki-redmond.ru,odezhda2.ru,piling.re,pol-video.ru,prigotovit.org,prohozhuigru.ru,remontnavideo.ru,televizor2.ru##center > #vis
