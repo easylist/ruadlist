@@ -3223,6 +3223,7 @@ vrhell.com##.zzz
 2mm.ru#?#.rightblock > .shadowp:-abp-has(h3:-abp-contains(Интересное в сети))
 4pda.ru#?#*:-abp-has(> a[rel="nofollow"][href][target="_blank"] ~ div > img[src])
 4pda.ru#?#div[class]:-abp-has(> h2 ~ [class^="sidbar"] ~ script)
+4pda.ru#?#div[class]:-abp-has(> iframe + div > img[src])
 4pda.ru#?#div[style*="opacity: 0"]
 66.ru#?#.col > .news-grid:-abp-has([class*="adv-"])
 tverigrad.ru##:not(#social_menu_buttons) > div > a[href^="http"]:not([href^="https://tverigrad.ru/"]) > img
