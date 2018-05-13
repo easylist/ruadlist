@@ -298,6 +298,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|1kinobi
 /^https?://(?!static\.)([^.]+\.)+?fastpic\.ru[:/]/$script,domain=fastpic.ru
 /^https?://(?!www\.)(?!forum)([^.]+\.)+?(qrz\.ru)[:/]/$script,domain=qrz.ru
 /^https?://(?!www\.)(?!static)([^.]+\.)+?(censor\.net\.ua)[:/]/$script,domain=censor.net.ua
+/^https?://auto\.ru/[^.]{200,}$/$script,domain=auto.ru
 /^https?://contentbooster\.me+\/(?!manifest)[a-z0-9]{5,45}/$xmlhttprequest
 /^https?://fb\.ru/[^.]{100,}$/$script,domain=fb.ru
 /^https?://www\.kakprosto\.ru/[^.]{150,}$/$script,domain=kakprosto.ru
@@ -695,7 +696,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||audiopoisk.narod.ru/alexsoft.swf
 ||author24.ru^$third-party,domain=litsoch.ru
 ||auto.ria.com/images/branding/banner/
-||auto.ru/*awaps.yandex.net/$subdocument
 ||autoexpert.com.ua/uploads/banner/
 ||autogalaktika.ua/flash/
 ||autogalaktika.ua/image/data/banner

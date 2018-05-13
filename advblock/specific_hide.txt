@@ -1687,13 +1687,12 @@ piccy.info##.c[width="300"]
 boxnews.com.ua##.caf0c6
 sravni.ru##.calculator-branded-button
 greasyfork.org##.carbon-ad
-auto.ru##.card__content-left > div[class*=" "][id]:not([class*="card"]):not([class*="sale"]) > div[class*=" "][id]
-auto.ru##.card__header-top > .card__header-right > .card__price + .card__ins-button-wrapper > div[class*=" "][id]
+auto.ru##.card__content-left > div[class*=" "]:not([class*="card"]):not([class*="sale"])
+auto.ru##.card__ins-button-wrapper > div > div > :not(.sale-callback-button)
 edimdoma.ru##.card_commercial
 ria-m.tv##.caroufredsel_wrapper
 programy.com.ua##.cars2
 echosevera.ru##.cartoon
-auto.ru##.catalog__page > div[class*=" "][id]:not([class*="catalog"]):not([class*="listing"]):not([class*="services"]) > div[class*=" "][id]
 footballreview.ru##.center-adv
 reviewdetector.ru##.center_banner
 pornoshara.tv##.center_col > .layout
@@ -1795,7 +1794,6 @@ xxx-russian.ru##.content5 > .rad5
 sexytales.org##.contentBox > noindex
 vesti.ru##.content__article__adv
 tsargrad.tv##.content__aside-banner
-auto.ru##.content__page > div[class*=" "][id]:not([class*="catalog"]):not([class*="listing"]):not([class*="services"]) > div[class*=" "][id]
 cassad.net##.content_banner
 kriminal.tv##.content_banner > :not(#hypercomments_widget)
 kg-portal.ru##.content_side > .cough_block
@@ -1958,7 +1956,7 @@ mp3sort.biz##.forumlink
 airgun.org.ru##.forumrules > a[href]:not([href*="airgun.org.ru"])
 www.radioscanner.ru##.forums ~ table[cellpadding][cellspacing]
 izhevsk.ru##.forumsummary img[align="right"]
-auto.ru##.fotorama__nav > table *
+auto.ru##.fotorama__nav > :not([class^="fotorama__nav"])
 tvnet.lv##.fp_horiz_ads_150x150
 satsis.info##.fr-banners-main
 freerutor.me##.fr_white_t:nth-of-type(3)
@@ -2771,8 +2769,6 @@ gidonline.eu##.sbin
 tagilcity.ru##.sbs_p
 klanwin.ru,pi-c.ru##.scrollable
 sovets.net##.scrolled-adv
-auto.ru##.search-controller__content > div[class*="mmm-switcher"] ~ div[class][id][style^="margin"]
-auto.ru##.search-form-v2__listing > div[class*=" "][id]:not([class*="listing"]):not([class*="section"]):not([class*="sorting"])
 sletat.ru##.search-result__item[data-reactid*="adsHotelTour"]
 utkonos.mybb.ru##.section > #tn1
 mastergrad.com##.section-body > [itemprop="comment"] ~ div[style="margin-bottom: 15px;"]
@@ -4175,8 +4171,6 @@ cartoonsworld.net##aside.side
 postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
-auto.ru#?#div:-abp-has(> script[nonce]:not([type]):last-child)
-auto.ru#?#div[class*="__"][id]:-abp-has(div:-abp-contains(Реклама))
 baby.ru#?#div:-abp-has(> div + script:last-child)
 baskino.me#?#.description [class]:-abp-has(> [class] > [class]:empty)
 baskino.me#?#.description [class]:-abp-has(> [class] h1)
