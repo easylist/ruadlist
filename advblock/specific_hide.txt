@@ -4171,7 +4171,7 @@ cartoonsworld.net##aside.side
 postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
-baby.ru#?#div:-abp-has(> div + script:last-child)
+baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > div > iframe[id^="AdFox"])
 baskino.me#?#.description [class]:-abp-has(> [class] > [class]:empty)
 baskino.me#?#.description [class]:-abp-has(> [class] h1)
 baskino.me#?#.omega [class]:-abp-has(> [class] > [class]:empty)
