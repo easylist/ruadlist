@@ -1,5 +1,16 @@
-$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval',domain=filmix.co|filmix.info|igra-prestoloff.cx|the-cinema.club|zk.fm
-$csp=script-src 'self' * data: blob: 'unsafe-inline',domain=aftershock.news|dovidka.biz.ua|fermilon.ru|onlainfilm.club|online-life.club|u-news.com.ua
+! CSP filters
+||aftershock.news^$csp=script-src 'self' * data: blob: 'unsafe-inline'
+||dovidka.biz.ua^$csp=script-src 'self' * data: blob: 'unsafe-inline'
+||fermilon.ru^$csp=script-src 'self' * data: blob: 'unsafe-inline'
+||filmix.co^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
+||filmix.info^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
+||onlainfilm.club^$csp=script-src 'self' * data: blob: 'unsafe-inline'
+||online-life.club^$csp=script-src 'self' * data: blob: 'unsafe-inline'
+||the-cinema.club^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
+||u-news.com.ua^$csp=script-src 'self' * data: blob: 'unsafe-inline'
+||zk.fm^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
+|||igra-prestoloff.cx^$csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval'
+! ---
 $script,domain=simpsonsua.com.ua
 $third-party,domain=rusplt.ru
 $third-party,image,domain=gaykursk.ru|gaynsk.ru|novgay.ru
