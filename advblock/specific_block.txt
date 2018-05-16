@@ -1,4 +1,5 @@
 $csp=script-src 'self' * 'unsafe-inline' 'unsafe-eval',domain=filmix.co|filmix.info|zk.fm
+$csp=script-src 'self' * data: blob: 'unsafe-inline',domain=aftershock.news|onlainfilm.club|online-life.club|u-news.com.ua
 $script,domain=simpsonsua.com.ua
 $third-party,domain=rusplt.ru
 $third-party,image,domain=gaykursk.ru|gaynsk.ru|novgay.ru
@@ -573,7 +574,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||adverman.*/banners/
 ||advis.ru/upload/iblock/$image
 ||afisha.ru/dsn/google-
-||aftershock.news^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||agronews.ru/images/$object
 ||agsat.com.ua/beuty/
 ||aida64.ru^*/amigo$image
@@ -2058,10 +2058,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||on-line-teaching.com/iq.jpg
 ||onboardvideo.com.ua/images/adban/
 ||ongab.ru^*/img/ban/
-||onlainfilm.club^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||online-films.ckoro.ru/akter/1420.jpg
 ||online-life.*/oln/
-||online-life.club^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||online.anidub.com/*.php?_=$script
 ||online.anidub.com/uploads/fotos/$subdocument
 ||online.animedia.tv/img/espirit
@@ -2809,7 +2807,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||tyt.by^*/banner/
 ||tz.audioknigi.club/
 ||tz.topwar.ru/
-||u-news.com.ua^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||u-tv.ru/ajax?f=bigbaner_
 ||u-tv.ru/images/overlay/
 ||u-tv.ru/pic/promo/
