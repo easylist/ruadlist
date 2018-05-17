@@ -45,6 +45,8 @@ gismeteo.com,gismeteo.lt,gismeteo.lv,gismeteo.md##.rframe[id^="ad-"]
 gismeteo.by,gismeteo.ru##.right_col_1 .__frame.wrap_small
 gismeteo.by##.side > .side__i
 gismeteo.by,gismeteo.ru##.side > noindex
+/^https?://www\.gismeteo\.by/[^.]{120,}$/$script,domain=www.gismeteo.by
+/^https?://www\.gismeteo\.ru/[^.]{120,}$/$script,domain=www.gismeteo.ru
 @@||a.votpusk.ru^$image,domain=tourism.gismeteo.ru
 gismeteo.ru##a[href*="//ads.adfox.ru/"]
 gismeteo.ru##body > #printME ~ div[class*=" "][id]
@@ -55,6 +57,11 @@ gismeteo.ru##div[class^="media_frame"]
 gismeteo.kz##div[id^="rek-gis-news"]
 gismeteo.ru#?#div:-abp-has(> #flix-state)
 gismeteo.ru#?#div:-abp-has(> script:-abp-contains(/advmanager|mg.media.data/i))
+www.gismeteo.by#?#div:-abp-has(> div > div[id*="_R-"])
+www.gismeteo.by#?#div[class]:-abp-has(> div > [data-type] [data-ext-link])
+www.gismeteo.by#?#div[class]:-abp-has(> div > [id^="media-right-bottom"])
+www.gismeteo.ru#?#div:-abp-has(> div > div[id*="_R-"])
+www.gismeteo.ru#?#div[class]:-abp-has(> div > [data-type] [data-ext-link])
 ||gismeteo.*/*weather-gis-news-alter$script
 ||gismeteo.*/rian.html|
 ||gismeteo.ru/assets/flat-ui/js/modules/MG.Media.js
