@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180505.1045
+@version 0.20180517.1955
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -12,14 +12,16 @@
     }
 }
 
-@-moz-document domain("123box.ru") {
-    html > body:not(#id) {
-        background: #abc4a1 !important
+@-moz-document
+  domain("21forum.ru"),
+  domain("forum.na-svyazi.ru"),
+  domain("forum.zarulem.ws") {
+    #user2s[height="71"], #userlinks[height="70"], td[height="70"][style] {
+        display: none !important
     }
 }
 
 @-moz-document
-  domain("123box.ru"),
   domain("24video.guru"),
   domain("24video.sexy"),
   domain("4watching.club"),
@@ -42,11 +44,11 @@
   domain("gidonline.in"),
   domain("hd720.biz"),
   domain("hdkinoklub.com"),
-  domain("hdrezka-online.ru"),
   domain("hdrezka.ag"),
   domain("hdrezka.cc"),
   domain("hdrezka.club"),
   domain("hdrezka.co"),
+  domain("hdrezka.info"),
   domain("hdrezka.men"),
   domain("hdrezka.name"),
   domain("hdrezka.su"),
@@ -85,6 +87,7 @@
   domain("tfilm.tv"),
   domain("the-rutor.org"),
   domain("torentor.co"),
+  domain("txapela.ru"),
   domain("vc.ru"),
   domain("veleto.ru"),
   domain("virusinfo.info"),
@@ -96,7 +99,6 @@
 }
 
 @-moz-document
-  domain("123box.ru"),
   domain("24video.guru"),
   domain("24video.sexy"),
   domain("aif.ru"),
@@ -133,28 +135,12 @@
   domain("stopgame.ru"),
   domain("torrentom.com"),
   domain("torrentum.ru"),
+  domain("txapela.ru"),
   domain("userstyles.org"),
   domain("xatab-repack.net"),
   domain("zakon.kz") {
     body:not(#id), html:not(#id) {
         background-image: none !important
-    }
-}
-
-@-moz-document
-  domain("123box.ru"),
-  domain("dugtor.ru") {
-    body > #page {
-        padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("21forum.ru"),
-  domain("forum.na-svyazi.ru"),
-  domain("forum.zarulem.ws") {
-    #user2s[height="71"], #userlinks[height="70"], td[height="70"][style] {
-        display: none !important
     }
 }
 
@@ -228,7 +214,7 @@
 }
 
 @-moz-document domain("4pda.ru") {
-    div[class]:not([id*="attach"]) > [attach_id][rel="nofollow"][href][target="_blank"] > img[src], 
+    body[itemscope] [id]:first-child > style ~ a[href][target="_blank"], 
     iframe[src*="utm_campaign"] {
         display: none !important
     }
@@ -632,6 +618,14 @@
 @-moz-document domain("drive.ru") {
     body > div {
         background: none !important;
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("dugtor.ru"),
+  domain("txapela.ru") {
+    body > #page {
         padding-top: 0 !important
     }
 }
@@ -1195,6 +1189,12 @@
     }
 }
 
+@-moz-document domain("kinogid.me") {
+    body > .wrap {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("kinogo-hit.com") {
     .contener {
         padding-top: 0 !important
@@ -1672,15 +1672,6 @@
     }
 }
 
-@-moz-document
-  domain("pornolab.biz"),
-  domain("pornolab.cc"),
-  domain("pornolab.net") {
-    .post_wrap table > tbody > tr > th, header[style*="pointer-events: none;"] {
-        display: none !important
-    }
-}
-
 @-moz-document domain("pornreactor.cc") {
     #background, #container, body {
         background: #6d1700 !important;
@@ -2076,6 +2067,12 @@
     }
 }
 
+@-moz-document domain("txapela.ru") {
+    html > body:not(#id) {
+        background: #abc4a1 !important
+    }
+}
+
 @-moz-document domain("ua-cinema.com") {
     body {
         background: #091016 !important
@@ -2148,19 +2145,12 @@
 }
 
 @-moz-document domain("www.goha.ru") {
-    body:not(#id) {
-        background-color: #dedede !important
-    }
-    #full-brand {
-        background-image: none !important
-    }
-    #column-right > div:first-child ~ :not(.vote):not(.tags):not(.counters), 
-    #full-brand-footer > div[style*="fixed"], #head-tuppy > a, 
-    div[class] > .adv_title + div[class] {
+    #stickybar > div[style^="margin-top"], div[onclick^="truemedia_callback"], 
+    header.header {
         display: none !important
     }
-    #head-tuppy {
-        height: 7px !important
+    #site {
+        padding-top: 20px !important
     }
 }
 
