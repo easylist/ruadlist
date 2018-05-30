@@ -2536,6 +2536,7 @@ w7phone.ru##.partner-in-sidebar
 intvua.com##.partner_news
 pln-pskov.ru##.partner_news__container
 polit.info##.partner_news_sidebar
+mk.ru##.partner_on_mainpage
 censor.net.ua,mos.news,rybalka.com,twogarin.info,vesti-ukr.com,vesti42.ru,xsport.ua##.partners
 sportonline.ua##.partners-block
 24smi.org##.partners-line
@@ -4187,7 +4188,7 @@ history.vn.ua,ukrlit.vn.ua##a[target="_top"][href^="http://banner."]
 rebill.me##a[target="blank"] > img
 kapriz.info##a[target][href*="/go.php?url="] > img[src^="/"]
 lostfilm.info##a[title="LostFilm.INFO"] > div[style*="height"]
-aftershock.news,antisochinenie.ru,bouw.ru,dachadecor.ru,darkside.ru,edabez.ru,elektrik-a.su,familyspace.ru,farap.ru,free-news.su,gorodche.ru,iz-kirpicha.su,kinoafisha.info,kinogol.biz,kinosklad.net,km.ru,kramola.info,newkaliningrad.ru,pogreb-podval.ru,popcornnews.ru,seriali-online.su,svpressa.ru,talks.by,tsargrad.tv,tvcok.ru,txapela.ru,vjazanie.info,xn---2--mddxunv8a2esa.xn--p1ai,дом-2-эфиры.рф#?#div[class*=" "]:-abp-has(> div + style[type="text/css"])
+aftershock.news,antisochinenie.ru,bouw.ru,dachadecor.ru,darkside.ru,edabez.ru,elektrik-a.su,familyspace.ru,farap.ru,free-news.su,gorodche.ru,iz-kirpicha.su,kinoafisha.info,kinogol.biz,kinosklad.net,km.ru,kramola.info,mk.ru,newkaliningrad.ru,pogreb-podval.ru,popcornnews.ru,seriali-online.su,svpressa.ru,talks.by,tsargrad.tv,tvcok.ru,txapela.ru,vjazanie.info,xn---2--mddxunv8a2esa.xn--p1ai,дом-2-эфиры.рф#?#div[class*=" "]:-abp-has(> div + style[type="text/css"])
 animelend.info#?#td > .base:-abp-has(.r-r)
 anistar.me#?#body > div:-abp-has(a[href*="away"])
 glavpost.com##article div[style*="#EFEFEF"]
@@ -4195,7 +4196,6 @@ tochka.net##article ~ div[id^="rsswidget"]
 qip.ru##article[data-type="advert"]
 i-news.kz##aside .events-list ~ a[href][target="_blank"]
 showgid.tv##aside > .banner + .title
-mk.ru##aside > a[href="http://fsfest.ru"]
 mk.ru##aside > a[href="http://www.interun.ru/"]
 repetit-center.ru##aside > a[href][onclick="return !window.open(this.href)"]
 audit-it.ru##aside > div[class][style^="margin-bottom"]
@@ -4207,8 +4207,8 @@ postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
 auto.ru#?#div[class]:-abp-has(> div > div > div > div > a[href][target]:-abp-contains(Яндекс.Директ))
-auto.ru#?#div[class]:-abp-has(> div > iframe:not([src]))
 auto.ru#?#div[class]:-abp-has(> div[class] + script[src])
+auto.ru,mk.ru#?#div[class]:-abp-has(> div > iframe:not([src]))
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > div > iframe[id^="AdFox"])
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > script:-abp-contains(/adfox/i))
 bigtorrent.org#?#.block:-abp-has(div:-abp-contains(Интересное))
@@ -4471,7 +4471,7 @@ anwap.org##div[class] > a[href^="/"][target="_blank"]
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
 ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[class][data-element*="BANNER"]
-auto.ru,prnt.sc##div[class][style*="important"]
+auto.ru,mk.ru,prnt.sc##div[class][style*="important"]
 rlocman.ru##div[class][style="background-color:#fcfcee;padding:10px"]
 sportsdaily.ru##div[class^="Banner"]
 gameguru.ru,mobiguru.ru##div[class^="RELINK"]
@@ -5073,12 +5073,12 @@ repacksbyspecialist.blogspot.com,repacksbyspecialist.blogspot.ru#?##main > .Blog
 charming-face.ru##marquee
 9sx.ru##marquee[scrollamount]
 mob39.ru##meta + center > table[cellspacing="0"][cellpadding="0"][border="0"]
-mk.ru#?#.right_block:-abp-has([id^="unit_"])
 mk.ru#?#.wrap > div[class*=" "]:-abp-has(> center > script)
-mk.ru#?#aside > *:-abp-has([href*="4jiqzr.ru"])
 mk.ru#?#aside > [class]:-abp-has(div[style="margin-top:3px; margin-bottom:3px;"])
 mk.ru#?#aside div:-abp-has(> script:-abp-contains(/adbdect|adfox|advmanager/i))
+mk.ru#?#div:-abp-has(> .mkblock:-abp-contains(Популярно в соцсетях))
 mk.ru#?#div:-abp-has(> div[id]:first-of-type + script:-abp-contains(/adbdect|adfox|advmanager/i))
+mk.ru#?#div:-abp-has(> script:-abp-contains(blockId))
 myshared.ru#?#span:-abp-contains(Advertisements)
 nastroyvse.ru#?#.saitbar_bock:-abp-has(.mpwidget)
 salex.ru##nobr > div > table
