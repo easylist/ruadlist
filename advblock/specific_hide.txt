@@ -1688,10 +1688,9 @@ mail.inbox.lv##.bxS-leftbar
 mail.inbox.lv##.bxS-text_link
 glav.su##.c-bl-ad
 glav.su##.c-bl-f[style="min-height: 100px;"]
-drive2.ru##.c-block[data-target*="auto.ru"]
 drive2.ru##.c-block__fake-gap
 inmyroom.ru##.c-commerce-banner
-drive2.ru##.c-nav-block__item > [data-target*="auto.ru"] > *
+drive2.ru##.c-nav-block a[data-target*="auto.ru"]
 piccy.info##.c[width="300"]
 boxnews.com.ua##.caf0c6
 sravni.ru##.calculator-branded-button
@@ -2196,7 +2195,6 @@ bigmir.net##.l-footer > .b-net-preview
 gagadget.com##.l-inner > noindex
 kazanutlary.ru##.l-mainAdArea
 cy-pr.com##.l-navigation-i > noindex
-drive2.ru##.l-page-main > .o-columns > .o-columns__side
 obogrevguru.ru,termogurus.ru##.l2
 38mama.ru##.lad
 glavred.info##.large-banner
@@ -3338,6 +3336,7 @@ news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 malenkiy.ru##[data-role="sidebarAd"] > center
+drive2.ru##[data-target*="auto.ru"][data-target*="widget"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
 citrus.ua##[ga-mark="L.A.P.T.I."]
 zagonka.ru##[href*="/chrome.google.com/webstore/"]
@@ -4884,11 +4883,12 @@ x.epidemz.co#?##dle-content > .shortstory:-abp-has([target="_blank"])
 anistar.me#?##dle-content > div.news:-abp-has(a[href^="https://anistar.me/engine/go.php?url="])
 dni.ru#?#div:-abp-has(> div[id] + script:-abp-contains(/adblk/i))
 dni.ru#?#div[style="display: block;"]:-abp-has(> div[id] ~ script:-abp-contains(/adblk/i))
-drive2.com,drive2.ru#?#.c-block--content:-abp-has(.o-group--justify > .c-com-dv-label)
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(.c-rel-label)
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(> [data-slot="recommendations.teaser"])
+drive2.com,drive2.ru#?#[class*="content"]:-abp-has(> .o-group--justify > .c-com-dv-label)
+drive2.ru#?#*:-abp-has(> [id]:not(.feed):first-child ~ script:-abp-contains(/adfox|create|window/i))
 drive2.ru#?#.c-block:-abp-has(.c-header ~ .c-dv-sns)
-drive2.ru#?#div:-abp-has(> div[id]:not(.feed):first-child ~ script:-abp-contains(/adfox|create|window/i))
+drive2.ru#?#div[class]:-abp-has(> div > div > div > a[href][target]:-abp-contains(Яндекс.Директ))
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
 ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партнеров))
 imtw.ru##else > .noad
