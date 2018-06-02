@@ -170,6 +170,7 @@ rusnext.ru,rusvesna.su###block-block-22
 rusnext.ru,rusvesna.su###block-block-32
 ren.tv###block-block-66
 sobesednik.ru###block-sobesednik-advertising-infox
+aftershock.news###block-system-main ~ .block > :not(.content)
 zwezda.net###block-zwzd-partners
 klassnye-chasy.ru###block1
 klassnye-chasy.ru###block3
@@ -1554,7 +1555,6 @@ energyfm.ru##.black-footer
 live-sports101.org##.bloc0
 read-novels.ru##.block > .content > .rtecenter
 read-novels.ru##.block > .content a[href][target="_blank"]
-aftershock.news##.block > :empty
 gorod47.ru##.block > a > img[width]
 pravda.if.ua##.block > center > a[href][target="_blank"]
 hen-tai.ru##.block > noindex
@@ -1563,6 +1563,7 @@ ugorod.kr.ua##.block-banner
 evening-kazan.ru,govp.info##.block-block
 tokzamer.ru##.block-block [class^="cp"]
 tokzamer.ru##.block-block [id^="cp"]
+aftershock.news##.block-commentsblock ~ *
 znaj.ua##.block-custom-banners
 mover.uz##.block-info-vertical
 sberometer.ru##.block-locator > .content > :not(ol):not(.all-news-link)
@@ -2695,6 +2696,9 @@ kramola.info##.region-header > :empty
 gmbox.ru##.region-header > div[style*="height:"]
 hideip.me##.region-highlighted > .block > .content > center
 kramola.info##.region-sidebar-first > :empty
+aftershock.news##.region-sidebar-left .block > :not(.clearfix)
+aftershock.news##.region-sidebar-right .block > :not(.clearfix)
+aftershock.news##.region-sidebar-right > :not(.block)
 kv.by##.region-top-banner
 anti-malware.ru##.region-top-content
 kinogb.mobi##.reilka
