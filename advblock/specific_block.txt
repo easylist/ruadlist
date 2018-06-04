@@ -1,4 +1,5 @@
 ! CSP filters
+|http://ex-fs.net/$csp=script-src 'self' * data: blob: 'unsafe-eval'
 ||allday2.com^$csp=script-src 'self' * data:
 ||antisochinenie.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ||bouw.ru^$csp=script-src 'self' * 'unsafe-inline' data:
@@ -10,7 +11,6 @@
 ||ebalovo.com^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||edabez.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ||elektrik-a.su^$csp=script-src 'self' * 'unsafe-inline' data:
-||ex-fs.net^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||farap.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ||fastpic.ru^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||fb.ru/article/$csp=script-src 'self' * 'unsafe-inline' data:
