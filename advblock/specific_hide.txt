@@ -2700,8 +2700,9 @@ kramola.info##.region-header > :empty
 gmbox.ru##.region-header > div[style*="height:"]
 hideip.me##.region-highlighted > .block > .content > center
 kramola.info##.region-sidebar-first > :empty
-aftershock.news##.region-sidebar-left .block > :not(.clearfix)
-aftershock.news##.region-sidebar-right .block > :not(.clearfix)
+aftershock.news##.region-sidebar-left > .block > :not(.clearfix)
+aftershock.news##.region-sidebar-left > :not(.block)
+aftershock.news##.region-sidebar-right > .block > :not([class="aft-block clearfix"])
 aftershock.news##.region-sidebar-right > :not(.block)
 kv.by##.region-top-banner
 anti-malware.ru##.region-top-content
