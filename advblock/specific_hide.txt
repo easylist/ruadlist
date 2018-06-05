@@ -275,6 +275,7 @@ omskpress.ru###container > div[style^="position"]
 tophotels.ru###container > span[id^="advbroker_place_"]
 agilerussia.ru###container > style + ul[class]
 peeroff.net###container_mediaget
+txapela.ru###content > .article > :not(.clearfix):not(.post-breadcrumbs):not(.articleBody)
 kosmetista.ru###content > .b-under-menu
 superhumor.ru,voffka.com###content > .blog
 kak-prosto.net###content > .container
@@ -1262,10 +1263,8 @@ nashashcola.ru##.art-sidebar2 > .widget_text
 osvita.ua##.artbanner
 hi.dn.ua,luxurynet.ru##.artbannersplus
 newsoboz.org##.articl_center > noindex
-txapela.ru##.article > :empty:not(.clearfix)
 penzadoctor.ru##.article-banner
 dt.ua,zn.ua##.article-informer
-txapela.ru##.articleBody > [class]:nth-last-child(-n+2):empty
 espreso.tv##.articleContent > .recomendation_list + h2.block-title
 eg.ru##.article_bn
 maanimo.com##.article_end_banner
@@ -5394,6 +5393,7 @@ raspisanie24.com##tr[onclick*="blablacar"]
 domsnov.ru##tr[style*="important"]
 tut.by#?#.m-hop > [class]:-abp-has(span:-abp-contains(Реклама))
 tverigrad.ru#?#*:-abp-has(> #mediametrics)
+txapela.ru#?#.articleBody > [class]:nth-last-child(-n+2):-abp-has(> :empty)
 varlamov.ru#?#.j-l-alpha-content-subinner > .j-e-view-recent:-abp-has(.j-e-title--adv)
 varlamov.ru#?#.j-user-menu > .j-user-menu-item:-abp-has(a[href]:-abp-contains(Varlamov Box))
 vedomosti-ua.com#?#.main-sidebar > .row > div:-abp-has(.active:-abp-contains(Реклама))
