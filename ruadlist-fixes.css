@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180603.2218
+@version 0.20180608.1357
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -44,15 +44,13 @@
   domain("hd720.biz"),
   domain("hdkinoklub.com"),
   domain("hdrezka.ag"),
-  domain("hdrezka.cc"),
   domain("hdrezka.club"),
   domain("hdrezka.co"),
-  domain("hdrezka.info"),
   domain("hdrezka.lol"),
-  domain("hdrezka.men"),
   domain("hdrezka.name"),
   domain("hdrezka.su"),
   domain("hdrezka.tv"),
+  domain("hdrezka1.cc"),
   domain("ikinohd.club"),
   domain("ikinohd.com"),
   domain("itop-gear.ru"),
@@ -60,6 +58,7 @@
   domain("kino-hd1080.ru"),
   domain("kinoaa.ru"),
   domain("kinobe.club"),
+  domain("kinocoin.online"),
   domain("koshara.co"),
   domain("kronverkcinema.ua"),
   domain("live-rutor.org"),
@@ -95,7 +94,7 @@
   domain("virusinfo.info"),
   domain("wikianime.ru"),
   domain("zona-film.com") {
-    html:not(#id) {
+    body:not(#id), html:not(#id) {
         padding-top: 0 !important
     }
 }
@@ -160,84 +159,6 @@
     }
     body {
         pointer-events: none !important
-    }
-}
-
-@-moz-document
-  domain("24video.sexy"),
-  domain("4watching.club"),
-  domain("all-episodes.tv"),
-  domain("allfilmonline.co"),
-  domain("amovies.cc"),
-  domain("baskino.me"),
-  domain("baskinonet.ru"),
-  domain("bigcinema-tv.club"),
-  domain("comedy-portal.net"),
-  domain("dnepr.info"),
-  domain("dugtor.ru"),
-  domain("enki.ua"),
-  domain("fast-torrent.ru"),
-  domain("fasttorrent.ru"),
-  domain("film-max.ru"),
-  domain("gameguru.ru"),
-  domain("gidonline.eu"),
-  domain("gidonline.in"),
-  domain("hd720.biz"),
-  domain("hdkinoklub.com"),
-  domain("hdrezka.ag"),
-  domain("hdrezka.cc"),
-  domain("hdrezka.club"),
-  domain("hdrezka.co"),
-  domain("hdrezka.info"),
-  domain("hdrezka.lol"),
-  domain("hdrezka.men"),
-  domain("hdrezka.name"),
-  domain("hdrezka.su"),
-  domain("hdrezka.tv.24video.guru"),
-  domain("ikinohd.club"),
-  domain("ikinohd.com"),
-  domain("itop-gear.ru"),
-  domain("ixbt.com"),
-  domain("kino-hd1080.ru"),
-  domain("kinoaa.ru"),
-  domain("kinobe.club"),
-  domain("koshara.co"),
-  domain("kronverkcinema.ua"),
-  domain("live-rutor.org"),
-  domain("liverutor.org"),
-  domain("moskva.fm"),
-  domain("mrutor.org"),
-  domain("my-tfile.org"),
-  domain("new-baskino.club"),
-  domain("new-rutor.org"),
-  domain("newstudio.tv"),
-  domain("nnm-club.me"),
-  domain("nnm-club.name"),
-  domain("nnm-club.tv"),
-  domain("nnmclub.to"),
-  domain("nnmclub.tv"),
-  domain("ostfilm.tv"),
-  domain("pure-t.ru"),
-  domain("roem.ru"),
-  domain("russian-porn.online"),
-  domain("serialbox.org"),
-  domain("tabfilm.ru"),
-  domain("tfile-music.org"),
-  domain("tfile.cc"),
-  domain("tfile.co"),
-  domain("tfilm.club"),
-  domain("tfilm.me"),
-  domain("tfilm.tv"),
-  domain("the-rutor.org"),
-  domain("torentor.co"),
-  domain("txapela.ru"),
-  domain("vc.ru"),
-  domain("veleto.ru"),
-  domain("virusinfo.info"),
-  domain("wikianime.ru"),
-  domain("zona-film.com") {
-    body:not(#id) {
-        padding-top: 0 !important
     }
 }
 
@@ -1270,6 +1191,25 @@
     }
 }
 
+@-moz-document
+  domain("kino-hd1080.ru"),
+  domain("kinocoin.online") {
+    #wrapper .header {
+        position: relative !important
+    }
+}
+
+@-moz-document
+  domain("kino-hd1080.ru"),
+  domain("kinocoin.online"),
+  domain("tabfilm.ru") {
+    body > span * {
+        pointer-events: none !important;
+        background-image: none !important;
+        background: none !important
+    }
+}
+
 @-moz-document domain("kino-v-online.tv") {
     .header_l {
         margin-top: 0 !important
@@ -1630,6 +1570,13 @@
 @-moz-document domain("naruto-brand.ru") {
     #nqpR {
         display: none !important
+    }
+}
+
+@-moz-document domain("newsone.ua") {
+    body {
+        background-image: none !important;
+        background: none !important
     }
 }
 
