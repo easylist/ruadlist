@@ -1,6 +1,7 @@
 ! CSP filters
 /^https?://allboxing.ru\/(?!forum)/$csp=script-src 'self' * data:
 /^https?://mirknig.su\/(?!forum)/$csp=script-src 'self' * data:
+|https://filmix.co/|$csp=script-src 'self' * data:
 ||allday2.com^$csp=script-src 'self' * data:
 ||antisochinenie.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ||avitube.ru^$csp=script-src 'self' * 'unsafe-inline' data:
