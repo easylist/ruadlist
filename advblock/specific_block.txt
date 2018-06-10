@@ -1,6 +1,7 @@
 ! CSP filters
 /^https?://allboxing.ru\/(?!forum)/$csp=script-src 'self' * data:
 /^https?://mirknig.su\/(?!forum)/$csp=script-src 'self' * data:
+@@||tabfilm.ru/trailer-cdn/*/|$csp=script-src 'self' * data:
 |https://filmix.co/|$csp=script-src 'self' * data:
 ||allday2.com^$csp=script-src 'self' * data:
 ||antisochinenie.ru^$csp=script-src 'self' * 'unsafe-inline' data:
@@ -50,6 +51,7 @@
 ||psysovet24.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ||subject.com.ua^$csp=script-src 'self' * data:
 ||syl.ru^$csp=script-src 'self' * 'unsafe-inline' data:
+||tabfilm.ru^$csp=script-src 'self' * data:
 ||torrent-games.net^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||torrentom.com^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||txapela.ru^$csp=script-src 'self' * 'unsafe-inline' data:
