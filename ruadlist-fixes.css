@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180608.1357
+@version 0.20180612.1634
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -855,6 +855,10 @@
 }
 
 @-moz-document domain("forums.overclockers.ru") {
+    tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"] {
+        color: #004488 !important;
+        font-weight: 200 !important
+    }
     .needblock {
         position: fixed !important;
         transform: scale(0) !important
@@ -1171,7 +1175,8 @@
         background-image: none !important;
         background: #bdbdbd !important
     }
-    .ten_topbar + div:not(.ten_ears_wrap) {
+    .ten_topbar + div:not(.ten_ears_wrap), 
+    .ten_topbar ~ div[class]:not([id]):nth-child(-n+10):not(.ten_ears_wrap):not(content_wrap):not(.footer_wrap) {
         display: none !important
     }
     .ten_ears_wrap {
@@ -1668,7 +1673,7 @@
         height: 1px !important;
         width: 1px !important
     }
-    .mainlist-inline-an, .material-inline-an, .top-an {
+    .mainlist-inline-an > :not(.tag-trend), .material-inline-an, .top-an {
         position: fixed !important;
         transform: scale(0) !important
     }
@@ -1840,7 +1845,7 @@
 @-moz-document
   domain("rg-mechanics.org"),
   domain("xatab-repack.net") {
-    #dle-content > span {
+    #dle-content > span, .igra {
         display: none !important
     }
 }
