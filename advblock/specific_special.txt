@@ -58,8 +58,8 @@ gismeteo.ru##body > section:not([class]):not([id]):nth-of-type(1)
 gismeteo.ru##div[class^="media_frame"]
 gismeteo.kz##div[id^="rek-gis-news"]
 gismeteo.ru#?#div:-abp-has(> #flix-state)
-gismeteo.ru#?#div:-abp-has(> script:-abp-contains(/advmanager|mg.media.data/i))
 www.gismeteo.by#?#div[class]:-abp-has(> div > [id^="media-right-bottom"])
+www.gismeteo.by,www.gismeteo.ru#?#body[class*=" "] div:-abp-has(> div > script:-abp-contains(/advmanager|mg.media.data/i))
 www.gismeteo.by,www.gismeteo.ru#?#div:-abp-has(> div > div[id*="_R-"])
 www.gismeteo.by,www.gismeteo.ru#?#div[class]:-abp-has(> div > [data-type] a[target])
 ||gismeteo.*/*weather-gis-news-alter$script
