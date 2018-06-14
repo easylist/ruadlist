@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180612.1634
+@version 0.20180615.0227
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -91,6 +91,7 @@
   domain("txapela.ru"),
   domain("vc.ru"),
   domain("veleto.ru"),
+  domain("videoclub.men"),
   domain("virusinfo.info"),
   domain("wikianime.ru"),
   domain("zona-film.com") {
@@ -921,12 +922,6 @@
     }
 }
 
-@-moz-document domain("gamer-info.com") {
-    #all-content-container {
-        padding: 0 !important
-    }
-}
-
 @-moz-document domain("gametech.ru") {
     body {
         background:#eee !important
@@ -943,6 +938,10 @@
 }
 
 @-moz-document domain("gazeta.ru") {
+    #article_main_video.m_frame_fixed {
+        opacity: 0 !important;
+        height: 0 !important
+    }
     .sausage-list-maintheme.maintheme-flow .sausage-list-item:first-child {
         z-index: 1
     }
