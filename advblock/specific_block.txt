@@ -375,6 +375,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|1kinobi
 /^https?://(?!www\.)(?!static)([^.]+\.)+?(censor\.net\.ua)[:/]/$script,domain=censor.net.ua
 /^https?://businessman\.ru/[^.]{150,}$/$script,domain=businessman.ru
 /^https?://contentbooster\.me+\/(?!manifest)[a-z0-9]{5,45}/$xmlhttprequest
+/^https?://gamer-info.com\/(?!js)/$script
 /^https?://razlozhi\.ru/[^.]{150,}$/$script,domain=razlozhi.ru
 /^https?://www\.baby\.ru/[^.]{150,}$/$script,domain=baby.ru
 /^https?://www\.liveinternet\.ru/[^.]{300,}$/$subdocument,domain=liveinternet.ru
@@ -1293,8 +1294,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||gamegpu.com/images/banners/gamegpu_branding.
 ||gameguru.ru/*banners/prerolls/
 ||gameguru.ru^*/joint_new.
-||gamer-info.com/*.php?$script,domain=gamer-info.com
-||gamer-info.com/js/libs/mediaelement/plugins/
+||gamer-info.com/js/libs/mediaelement/$script
 ||gamer-mods.ru/images/igrovye_avtomaty.gif
 ||gamer.ru/*branding
 ||gamer.ru/assets/skins/
@@ -1765,6 +1765,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||lib.rus.ec/sites/default/files/$object
 ||libs.kub.ru/jquery-viewportchecker$script,domain=apteki.su
 ||life170.ru/img/main-bg-dn.png
+||life^$domain=gamer-info.com
 ||lifehacker.ru/promo/
 ||likemore-go.imgsmail.ru/widget.js$script,domain=talks.by
 ||link.ac/images/banner_
