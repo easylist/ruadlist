@@ -1049,6 +1049,7 @@ bobsoccer.ru,obninsk.name##.Banner
 hqq.tv##.BetterJsPopOverlay
 ixbt.com##.Blocksmaster
 mail.google.com##.Bu.y3
+auto.ru##.CardHead-module__line_3_right
 besplatnyeprogrammy.ru##.DaikosText
 euro2016.cc##.DmWidget
 nulled.cc##.EstBS-bnContent
@@ -1056,6 +1057,7 @@ fanfics.me##.FicHead.ContentTable > .left
 m24.ru##.HeaderAdvStripe
 russiandc.com##.L
 rutorgame.org##.LBM
+auto.ru##.LayoutSidebar [class*="CardSidebarNavigation__content"] ~ *
 tvtorrent.me##.MIXADVERT_NET ~ [src*="mixadvert"] + div
 kompravda.eu,kp.ru##.MainAdv
 meduza.io##.Material-banner
@@ -1712,8 +1714,6 @@ piccy.info##.c[width="300"]
 boxnews.com.ua##.caf0c6
 sravni.ru##.calculator-branded-button
 greasyfork.org##.carbon-ad
-auto.ru##.card__content-left > div[class*=" "]:not([class*="card"]):not([class*="sale"])
-auto.ru##.card__ins-button-wrapper > div > div > :not(.sale-callback-button)
 edimdoma.ru##.card_commercial
 ria-m.tv##.caroufredsel_wrapper
 programy.com.ua##.cars2
@@ -2000,7 +2000,6 @@ mp3sort.biz##.forumlink
 airgun.org.ru##.forumrules > a[href]:not([href*="airgun.org.ru"])
 www.radioscanner.ru##.forums ~ table[cellpadding][cellspacing]
 izhevsk.ru##.forumsummary img[align="right"]
-auto.ru##.fotorama__nav > :not([class^="fotorama__nav"])
 tvnet.lv##.fp_horiz_ads_150x150
 satsis.info##.fr-banners-main
 forum.watch.ru##.frm_linkwrap
@@ -2138,6 +2137,7 @@ infox.ru##.idv3-advert2
 infox.ru##.idv3-popup-frame
 abkhasiya.ru,aerostatstudio.ru,rp-mechanics.ru##.ignore-select
 moybrauzer.ru##.igrof
+auto.ru##.image-gallery-content > div > div:not([class*="gallery"])
 auto.ru##.image-gallery-slide-wrapper > :not([class^="image-gallery"])
 fairtop.in##.image-side
 waxfilm.net##.img-top
@@ -4265,7 +4265,7 @@ postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
 auto.ru#?#div[class]:-abp-has(> div > iframe:not([src]))
-auto.ru#?#div[class]:-abp-has(> div:not([class*="image-gallery"]) > div > div > div > a[href][target]:-abp-contains(Яндекс.Директ))
+auto.ru#?#div[class]:-abp-has(> div:not([class*="bottom"]) > div > div > div > a[href][target]:-abp-contains(Яндекс.Директ))
 auto.ru#?#div[class]:-abp-has(> div[class] + script[src])
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > div > iframe[id^="AdFox"])
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > script:-abp-contains(/adfox/i))
