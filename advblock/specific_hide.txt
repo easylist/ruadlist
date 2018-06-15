@@ -4676,7 +4676,7 @@ spravportal.ru##div[id*="AdContainer"]
 get-tune.cc,iplayer.info,k1news.ru,market4game.ru,mp3cc.com,mp3cc.org,sexxx.name,vmuzice.me,xmusic.name,xmusik.me,xmuzic.me,yellowpages.uz##div[id*="Banner"]
 mirtesen.ru,myhistori.ru##div[id*="BannerSmiTwo"]
 domosedy.com##div[id*="TizerGroup"]
-avtovzglyad.ru,e1.ru,fishki.net,forexpf.ru,pikabu.ru,regmarkets.ru##div[id*="_R-"]
+avtovzglyad.ru,e1.ru,fb.ru,fishki.net,forexpf.ru,pikabu.ru,regmarkets.ru,syl.ru##div[id*="_R-"]
 zoneofgames.ru##div[id*="_adforum"]
 niv.ru##div[id*="_ban_"]
 kavkazova.ru##div[id*="actionteaser"]
@@ -4984,7 +4984,9 @@ multikonline.ru,prostolinux.ru##embed[src*="banner"]
 euro-football.ru#?#.block__title:-abp-contains(Новости Партнёров)
 fainaidea.com#?#.widget:-abp-has(.block-title > span:-abp-contains(Новости партнера))
 fb.ru,syl.ru#?#*:-abp-has(> * > * > * > a[target]:-abp-contains(Яндекс.Директ))
-fb.ru,syl.ru#?#div:-abp-has(> div > script:-abp-contains(/advmanager/i))
+fb.ru,syl.ru#?#a[target]:-abp-contains(Яндекс.Директ)
+fb.ru,syl.ru#?#div[class]:-abp-has(> div > iframe:not([src]))
+fb.ru,syl.ru#?#div[class]:-abp-has(> div[id*="_R-"])
 imageup.ru##fieldset[style^="display: inline; width: 45%;"]
 znak.com##figure
 povar.co##figure[id^="attachment"]
