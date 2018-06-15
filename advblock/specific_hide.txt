@@ -2207,6 +2207,7 @@ phonenumber.to##.js-ads
 checkadblock.ru##.js-ads-block
 megalyrics.ru##.js-banner
 blizko.ru##.js-barmen-loaded:not([data-barmen="Showcase"])
+fb.ru##.js-btn--right
 promodj.com##.js-core_branding
 infpol.ru##.js-floating-block
 e1.ru##.js-main-fixed-banner
@@ -4252,6 +4253,7 @@ tochka.net##article ~ div[id^="rsswidget"]
 qip.ru##article[data-type="advert"]
 i-news.kz##aside .events-list ~ a[href][target="_blank"]
 showgid.tv##aside > .banner + .title
+syl.ru##aside > :not(.post):not(.notfixed)
 mk.ru##aside > a[href="http://www.interun.ru/"]
 repetit-center.ru##aside > a[href][onclick="return !window.open(this.href)"]
 audit-it.ru##aside > div[class][style^="margin-bottom"]
@@ -4263,7 +4265,7 @@ postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
 auto.ru#?#div[class]:-abp-has(> div > iframe:not([src]))
-auto.ru#?#div[class]:-abp-has(> div:not([class*="image-gallery"]) > div > div > div > a[href][target]:has-text(Яндекс.Директ))
+auto.ru#?#div[class]:-abp-has(> div:not([class*="image-gallery"]) > div > div > div > a[href][target]:-abp-contains(Яндекс.Директ))
 auto.ru#?#div[class]:-abp-has(> div[class] + script[src])
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > div > iframe[id^="AdFox"])
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > script:-abp-contains(/adfox/i))
@@ -4534,7 +4536,7 @@ anwap.org##div[class] > a[href^="/"][target="_blank"]
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
 ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[class][data-element*="BANNER"]
-auto.ru,drive2.ru,mk.ru,prnt.sc##div[class][style*="important"]
+auto.ru,drive2.ru,fb.ru,mk.ru,prnt.sc,syl.ru##div[class][style*="important"]
 rlocman.ru##div[class][style="background-color:#fcfcee;padding:10px"]
 sportsdaily.ru##div[class^="Banner"]
 gameguru.ru,mobiguru.ru##div[class^="RELINK"]
@@ -4982,6 +4984,8 @@ botanam.net,gdzputina.me##embed
 multikonline.ru,prostolinux.ru##embed[src*="banner"]
 euro-football.ru#?#.block__title:-abp-contains(Новости Партнёров)
 fainaidea.com#?#.widget:-abp-has(.block-title > span:-abp-contains(Новости партнера))
+fb.ru,syl.ru#?#*:-abp-has(> * > * > a[target]:-abp-contains(Яндекс.Директ))
+fb.ru,syl.ru#?#div:-abp-has(> div > script:-abp-contains(/advmanager/i))
 imageup.ru##fieldset[style^="display: inline; width: 45%;"]
 znak.com##figure
 povar.co##figure[id^="attachment"]
