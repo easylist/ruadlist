@@ -260,8 +260,8 @@ gstv.ru#?#.page-content:style(margin-top: 0 !important)
 ! ---
 gtavicecity.ru#?#.body-container:style(margin-top: 0 !important)
 ! ---
-happy-hack.ru#?#body > [id^="blockblock"]:style(visibility: visible !important; display: block !important)
-happy-hack.ru##table[id^="blockblock"]
+happy-hack.ru##body:not(#id) > table[id^="blockblock"]
+happy-hack.ru#?#body:not(#id) > [id^="blockblock"]:style(visibility: visible !important; display: block !important)
 ! ---
 hd720kino.ru#?#.main.center:style(margin-top: 0 !important)
 hd720kino.ru#?#.wrap:style(background: none !important)
