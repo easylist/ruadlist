@@ -1,6 +1,7 @@
 ! CSP filters
 /^https?://allboxing.ru\/(?!forum)/$csp=script-src 'self' * data:
 /^https?://mirknig.su\/(?!forum)/$csp=script-src 'self' * data:
+@@||blogs.pravda.com.ua^$csp=script-src 'self' * blob: data:
 @@||forum.pravda.com.ua^$csp=script-src 'self' * blob: data:
 @@||tabfilm.ru/trailer-cdn/*/|$csp=script-src 'self' * data:
 |https://filmix.co/|$csp=script-src 'self' * data:
