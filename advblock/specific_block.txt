@@ -391,6 +391,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|1kinobi
 /apu.php?id=$script,domain=anistar.me
 /arscode-ninja-popups/*$domain=animalreader.ru|mensgen.ru|vovetnam.su
 /async.php$third-party,xmlhttprequest,domain=newsvl.ru|vl.ru
+/ati.su/[^\s]{70,}$/$xmlhttprequest,domain=ati.su
 /auth|$xmlhttprequest,domain=zerx.club
 /b/?site=*&height$third-party,xmlhttprequest,domain=kinogo-film.cc|online.anidub.com
 /backgrounds/$domain=xn--80aikhbrhr.net|кинокрад.net
@@ -767,8 +768,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||astromeridian.ru/assets/images/reklama2/$~stylesheet
 ||asuma.ru/admachina/
 ||athlete.ru/pic/$object
-||ati.su/api/*=*=*=*=$xmlhttprequest
-||ati.su/api/*_*_*_*_$xmlhttprequest
 ||audioboo.ru/brand/
 ||audiopoisk.narod.ru/alexsoft.swf
 ||aum.news/themes/default/inc/djimageslider/
