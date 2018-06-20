@@ -5015,7 +5015,7 @@ leonkrevs.ucoz.ru##form[action*="wmcasher.ru"]
 megaimg.ru##form[name="show_image"] > center
 forum.cxem.net#?#form > article[id^="elComment_"]:-abp-has(strong[itemprop="name"] > a[title="Перейти в профиль Adver"])
 forum.ru-board.com#?#tbody > tr > td:-abp-has(a[href*="devline.ru"])
-forums.ati.su#?#div:-abp-has(> iframe[scrolling="no"][frameborder="0"])
+forums.ati.su#?#div:-abp-has(> iframe[scrolling="no"][frameborder="0"]:not([title="Login popup"]))
 free-torrent.org,free-torrents.org,game-torrent.info#?#center:-abp-has([href*=".gdn"])
 freehd.com.ua,hdpicture.ru,hdreactor.club,hdreactor.red,hdreactor.su#?#.sidebar > .menu-head:-abp-contains(Реклама)
 friday.ru#?#.rc2:-abp-has(div:first-child > #rc-bn)
@@ -5030,7 +5030,7 @@ adcdn.tv##iframe + div[style^="position: absolute; z-index"][style*="hidden"]
 sozdik.kz##iframe[id][src][tabindex]
 vz.ru##iframe[id^="AdFox_"]
 ek.ua##iframe[name*="banner"]
-ati.su##iframe[scrolling="no"][frameborder="0"]
+ati.su##iframe[scrolling="no"][frameborder="0"]:not([title="Login popup"])
 bigbang-tv.net##iframe[src*=".at.ua"]
 qrz.ru##iframe[src*="//ads.qrz.ru/"]
 kamchatinfo.com##iframe[src*="/images/banners/"]
