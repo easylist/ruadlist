@@ -2577,7 +2577,6 @@ polit.info##.partner_news_sidebar
 mk.ru##.partner_on_mainpage
 censor.net.ua,mos.news,rybalka.com,twogarin.info,vesti-ukr.com,vesti42.ru,xsport.ua##.partners
 sportonline.ua##.partners-block
-24smi.org##.partners-line
 vesti-ukr.com##.partners-news
 unian.net##.partners-news-section
 amic.ru##.partners_block
@@ -3318,6 +3317,9 @@ lfootball.ws##.zoneBanner
 livesport.ru##.zz_tizer
 livesport.ru##.zz_ya_twin *
 vrhell.com##.zzz
+24smi.org,auto.ru,businessman.ru,fb.ru,syl.ru#?#div[class]:-abp-has(> div > iframe:not([src]))
+24smi.org,businessman.ru,fb.ru,syl.ru#?#*:-abp-has(> * > * > * > a[target]:-abp-contains(.Директ))
+24smi.org,businessman.ru,fb.ru,syl.ru#?#a[target]:-abp-contains(.Директ)
 2ip.ru#?#.content-article > p:-abp-has(.adsbygoogle)
 2mm.ru#?#.rightblock > .shadowp:-abp-has([class*="7dach_block"])
 2mm.ru#?#.rightblock > .shadowp:-abp-has(h3:-abp-contains(Интересное в сети))
@@ -3407,6 +3409,7 @@ border-fan.ru,dad-fan.ru,freehat.cc,grif-fan.ru,lalapaluza.ru,simp-fan.ru,sp-fan
 razlozhi.ru##[data-id^="R-"]
 1kr.ua##[data-is-advert]
 myukraina.com.ua##[data-link*="goo.gl"]
+24smi.org##[data-md-yaad]
 news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
@@ -4281,7 +4284,6 @@ vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
 auto.ru#?#div[class]:-abp-has(> div:not([class*="bottom"]) > div > div > div > a[href][target]:-abp-contains(Яндекс.Директ))
 auto.ru#?#div[class]:-abp-has(> div[class] + script[src])
-auto.ru,businessman.ru,fb.ru,syl.ru#?#div[class]:-abp-has(> div > iframe:not([src]))
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > div > iframe[id^="AdFox"])
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > script:-abp-contains(/adfox/i))
 bigtorrent.org#?#.block:-abp-has(div:-abp-contains(Интересное))
@@ -4414,10 +4416,9 @@ chipfind.ru##body > table[height="80"]
 www.google.com,www.google.ru##body > table[style="border: 1px solid #369"]
 christianka.bratstvo.org##body > table[width="99%"] + p[align="center"]
 torrents-club.org##body > video
+24smi.org##body iframe:not([src])
 all-tor.net,anti-block.org,big-tor.org,bit-tor.org,fast-bit.org,fast-tor.net,film-tor.org,free-rutor.org,free-tor.org,freedom-tor.org,hd-bit.org,kino-tor.org,mega-tor.org,mirror-rutor.org,multi-tor.org,new-ru.org,new-tor.org,no-block.org,open-tor.org,proxy-rutor.org,ru-bit.com,ru-free-tor.org,ru-tor.net,rus-tor.com,rutor.info,rutor.is,rutor.org,super-tor.net,top-tor.org,tor-bit.net,tor-ru.net,tor-ru.org,tor-unblock.org,vip-tor.org,x-bit.net,zerkalo-rutor.org##body object
 bt.kubyshka.org#?#td > .forabg:-abp-has(dt:-abp-contains(Проверенный выгодный обменник!))
-businessman.ru,fb.ru,syl.ru#?#*:-abp-has(> * > * > * > a[target]:-abp-contains(.Директ))
-businessman.ru,fb.ru,syl.ru#?#a[target]:-abp-contains(.Директ)
 businessman.ru,fb.ru,syl.ru#?#div[class]:-abp-has(> div[id*="_R-"])
 cameleo.xyz#?#p.main:-abp-has([href*="bit.ly"])
 carrotblog.ru#?#.recomend-section:-abp-has(> .flex > :not([data-href^="http://carrotblog.ru/"]))
@@ -4555,7 +4556,7 @@ anwap.org##div[class] > a[href^="/"][target="_blank"]
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
 ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[class][data-element*="BANNER"]
-auto.ru,drive2.ru,fb.ru,mk.ru,prnt.sc,syl.ru##div[class][style*="important"]
+24smi.org,auto.ru,drive2.ru,fb.ru,mk.ru,prnt.sc,syl.ru##div[class][style*="important"]
 rlocman.ru##div[class][style="background-color:#fcfcee;padding:10px"]
 sportsdaily.ru##div[class^="Banner"]
 gameguru.ru,mobiguru.ru##div[class^="RELINK"]
@@ -4908,7 +4909,7 @@ anistar.me##div[id^="videoroll_autoplay"]
 pics-money.ru##div[id^="visitweb_container"]
 mamba.ru##div[id^="web-banners-search_form_brand_banner"]
 xn--c1adkjnf.net,легион.net##div[id^="widget_code_php"]
-24smi.org,mosday.ru##div[id^="yaad"]
+mosday.ru##div[id^="yaad"]
 kinopoisk.ru,soccer0100.com,spectehinfo.ru,trudbox.com.ua##div[id^="yandex_direct"]
 businessman.ru,e1.ru,fishki.net,itchief.ru,kinopoisk.ru,kurs.com.ru,kurs.com.ua,sdamgia.ru,soccer0100.com##div[id^="yandex_rtb"]
 alcogolizm.com##div[id^="yazd_"]
