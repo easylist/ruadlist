@@ -2549,6 +2549,7 @@ filmpro.ru##.page_lcol > div[style]
 filmpro.ru##.page_rcol > div[style*="background:#fff;"]:not(:last-child)
 filmpro.ru##.page_rcol > div[style*="height:400px;"]
 filmpro.ru##.page_rcol > h3:nth-of-type(1)
+echo.msk.ru##.pagecontent > div:not([id]):not([class]):not([style])
 msn.com##.paging-container > .ad
 km.ru##.pane-advertisment
 komarovskiy.net##.panel-body noindex
@@ -3316,8 +3317,8 @@ livesport.ru##.zz_tizer
 livesport.ru##.zz_ya_twin *
 vrhell.com##.zzz
 24smi.org,auto.ru,businessman.ru,fb.ru,syl.ru#?#div[class]:-abp-has(> div > iframe:not([src]))
-24smi.org,businessman.ru,fb.ru,liveinternet.ru,syl.ru#?#*:-abp-has(> * > * > * > a[target]:-abp-contains(.Директ))
-24smi.org,businessman.ru,fb.ru,liveinternet.ru,syl.ru#?#*:-abp-has(> * > * > a[target]:-abp-contains(.Директ))
+24smi.org,businessman.ru,echo.msk.ru,fb.ru,liveinternet.ru,syl.ru#?#*:-abp-has(> * > * > * > a[target]:-abp-contains(.Директ))
+24smi.org,businessman.ru,echo.msk.ru,fb.ru,liveinternet.ru,syl.ru#?#*:-abp-has(> * > * > a[target]:-abp-contains(.Директ))
 24smi.org,businessman.ru,fb.ru,syl.ru#?#a[target]:-abp-contains(.Директ)
 2ip.ru#?#.content-article > p:-abp-has(.adsbygoogle)
 2mm.ru#?#.rightblock > .shadowp:-abp-has([class*="7dach_block"])
@@ -3499,7 +3500,6 @@ yarportal.ru##[style$="height: 60px;"]
 theplace.ru##[style*="dotted silver"]
 penzainform.ru##[style*="height: 43px"][style*="max-height: 43px"]
 penzainform.ru##[style*="height: 50px"][style*="max-height: 50px"]
-businessman.ru##[style*="important"]
 pogoda.by##[style*="url(/promo/"]
 muzland.ru##[style="display: block;"] > a[target="_blank"]
 businessman.ru##[style="width:100%;min-height:250px"]
@@ -4419,6 +4419,7 @@ chipfind.ru##body > table[height="80"]
 www.google.com,www.google.ru##body > table[style="border: 1px solid #369"]
 christianka.bratstvo.org##body > table[width="99%"] + p[align="center"]
 torrents-club.org##body > video
+businessman.ru##body [style*="important"]
 24smi.org##body iframe:not([src])
 all-tor.net,anti-block.org,big-tor.org,bit-tor.org,fast-bit.org,fast-tor.net,film-tor.org,free-rutor.org,free-tor.org,freedom-tor.org,hd-bit.org,kino-tor.org,mega-tor.org,mirror-rutor.org,multi-tor.org,new-ru.org,new-tor.org,no-block.org,open-tor.org,proxy-rutor.org,ru-bit.com,ru-free-tor.org,ru-tor.net,rus-tor.com,rutor.info,rutor.is,rutor.org,super-tor.net,top-tor.org,tor-bit.net,tor-ru.net,tor-ru.org,tor-unblock.org,vip-tor.org,x-bit.net,zerkalo-rutor.org##body object
 bt.kubyshka.org#?#td > .forabg:-abp-has(dt:-abp-contains(Проверенный выгодный обменник!))
@@ -4559,7 +4560,7 @@ anwap.org##div[class] > a[href^="/"][target="_blank"]
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
 ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[class][data-element*="BANNER"]
-24smi.org,auto.ru,drive2.ru,fb.ru,mk.ru,prnt.sc,syl.ru##div[class][style*="important"]
+24smi.org,auto.ru,drive2.ru,echo.msk.ru,fb.ru,mk.ru,prnt.sc,syl.ru##div[class][style*="important"]
 rlocman.ru##div[class][style="background-color:#fcfcee;padding:10px"]
 sportsdaily.ru##div[class^="Banner"]
 gameguru.ru,mobiguru.ru##div[class^="RELINK"]
