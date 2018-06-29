@@ -4287,7 +4287,6 @@ postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
 auto.ru#?#div[class]:-abp-has(> div:not([class*="bottom"]) > div > div > div > a[href][target]:-abp-contains(Яндекс.Директ))
-auto.ru#?#div[class]:-abp-has(> div[class] + script[src])
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > div > iframe[id^="AdFox"])
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > script:-abp-contains(/adfox/i))
 bigtorrent.org#?#.block:-abp-has(div:-abp-contains(Интересное))
@@ -5465,6 +5464,7 @@ yap.ru,yaplakal.com#?#form > table[id^="p_row_"]:nth-of-type(2):-abp-has(*:-abp-
 yap.ru,yaplakal.com#?#form > table[id^="p_row_"]:nth-of-type(2):-abp-has(*:-abp-contains(member1438))
 zakon.kz#?#.ln_header:-abp-contains(Новости партнеров)
 zr.ru#?#.rotate-block:-abp-has(.b_banner)
+~24.auto.ru,auto.ru#?#div[class]:-abp-has(> div[class] + script[src])
 !
 ! Исправления после generichide
 postila.ru###ads_dummy
