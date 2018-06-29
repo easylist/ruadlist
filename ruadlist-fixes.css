@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180617.1419
+@version 0.20180630.0236
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -35,17 +35,18 @@
   domain("dnepr.info"),
   domain("dugtor.ru"),
   domain("enki.ua"),
+  domain("fast-torrent.club"),
   domain("fast-torrent.ru"),
-  domain("fasttorrent.ru"),
   domain("film-max.ru"),
+  domain("filmopotok.ru"),
   domain("gameguru.ru"),
-  domain("gidonline.eu"),
   domain("gidonline.in"),
   domain("hd720.biz"),
   domain("hdkinoklub.com"),
   domain("hdrezka.ag"),
   domain("hdrezka.club"),
   domain("hdrezka.co"),
+  domain("hdrezka.gift"),
   domain("hdrezka.lol"),
   domain("hdrezka.name"),
   domain("hdrezka.su"),
@@ -105,6 +106,7 @@
   domain("24video.sexy"),
   domain("aif.ru"),
   domain("epravda.com.ua"),
+  domain("fast-torrent.club"),
   domain("fastpic.ru"),
   domain("film-max.ru"),
   domain("filmfullhd.net"),
@@ -112,6 +114,7 @@
   domain("hd720.biz"),
   domain("hdkinoklub.com"),
   domain("hdrezka.club"),
+  domain("hdrezka.gift"),
   domain("hdrezka.lol"),
   domain("hdrezka.name"),
   domain("ixbt.com"),
@@ -295,7 +298,7 @@
   domain("crocfilm.club"),
   domain("filmfullhd.net"),
   domain("gametech.ru"),
-  domain("gidonline.eu"),
+  domain("gidonline-hd.me"),
   domain("gidonline.in"),
   domain("hd-1080.com"),
   domain("kino-hd720.net"),
@@ -500,6 +503,7 @@
   domain("freehat.cc"),
   domain("grif-fan.ru"),
   domain("lalapaluza.ru"),
+  domain("moviebuster.tv"),
   domain("simp-fan.ru"),
   domain("sp-fan.ru") {
     body:not(#id) {
@@ -578,7 +582,9 @@
     }
 }
 
-@-moz-document domain("cinema-hd.ru") {
+@-moz-document
+  domain("cinema-hd.ru"),
+  domain("filmshd.club") {
     .wrap {
         padding-top: 0 !important
     }
@@ -630,6 +636,12 @@
 
 @-moz-document domain("cyberforum.ru") {
     body > div[style*="width"][style*="margin"] {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("doramy.su") {
+    .wrapper > .main-menu {
         margin-top: 0 !important
     }
 }
@@ -758,8 +770,9 @@
 }
 
 @-moz-document
+  domain("fast-torrent.club"),
   domain("fast-torrent.ru"),
-  domain("fasttorrent.ru"),
+  domain("filmopotok.ru"),
   domain("veleto.ru") {
     body {
         background: white !important
@@ -862,10 +875,6 @@
         color: #004488 !important;
         font-weight: 200 !important
     }
-    .needblock {
-        position: fixed !important;
-        transform: scale(0) !important
-    }
 }
 
 @-moz-document domain("fototips.ru") {
@@ -958,9 +967,7 @@
     }
 }
 
-@-moz-document
-  domain("gidonline.eu"),
-  domain("gidonline.in") {
+@-moz-document domain("gidonline.in") {
     #headerline {
         margin-top: 0 !important
     }
@@ -1378,8 +1385,11 @@
 }
 
 @-moz-document domain("mail.rambler.ru") {
-    .appSearchBar, .appWindowWithBanner {
-        right: 0 !important
+    div[class*="WithRightBarWrapper"] > div[class*="AutoAppContainer"] ~ * {
+        display: none !important
+    }
+    div[class*="WithRightBarWrapper"] > div[class*="AutoAppContainer"] {
+        max-width: 100% !important
     }
 }
 
@@ -1640,7 +1650,9 @@
     }
 }
 
-@-moz-document domain("onlinemschool.com") {
+@-moz-document
+  domain("onlinemschool.com"),
+  domain("testserver.pro") {
     .adsbygoogle {
         opacity: 0 !important;
         height: 1px !important
@@ -1660,17 +1672,6 @@
     .product-contents div[class*="bottom"] > *, .product-header-right, 
     .product-reviews-right > * {
         display: none !important
-    }
-}
-
-@-moz-document domain("overclockers.ru") {
-    .adsbygoogle {
-        height: 1px !important;
-        width: 1px !important
-    }
-    .mainlist-inline-an > :not(.tag-trend), .material-inline-an, .top-an {
-        position: fixed !important;
-        transform: scale(0) !important
     }
 }
 
@@ -1803,12 +1804,6 @@
 
 @-moz-document domain("rambler.ru") {
     .stopper > #boxbox, .stopper > #boxfade {
-        display: none !important
-    }
-}
-
-@-moz-document domain("razlozhi.ru") {
-    body > div[class][style^="background:"] > div[class][style^="height"] {
         display: none !important
     }
 }
@@ -2124,6 +2119,15 @@
 @-moz-document domain("tree.tv") {
     .wrapper {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("turboserial.net") {
+    body > div[class^="arcticmodal-"] {
+        display: none !important
+    }
+    body:not(#id) {
+        overflow: auto !important
     }
 }
 
