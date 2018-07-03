@@ -70,18 +70,6 @@ www.gismeteo.by,www.gismeteo.ru#?#div[class]:-abp-has(> div > [data-type] a[targ
 ! Kodik 2018/1
 ||kodik.cc/video-advert/
 !
-! Goblin-online.ru - (здесь только запросы)
-$third-party,script,domain=goblin-online.ru
-@@||ajax.googleapis.com/ajax/libs/jquery$script,domain=goblin-online.ru
-@@||connect.facebook.net^$script,domain=goblin-online.ru
-@@||connect.mail.ru/js/loader.js|$domain=goblin-online.ru
-@@||connect.ok.ru/connect.js|$script,domain=goblin-online.ru
-@@||cse.google.com/cse.js$script,domain=goblin-online.ru
-@@||my2.imgsmail.ru/mail/ru/images/js/connect/$script,domain=goblin-online.ru
-@@||platform.twitter.com^$script,domain=goblin-online.ru
-@@||vk.com/js/api/$script,domain=goblin-online.ru
-@@||vk.com/share.php$script,domain=goblin-online.ru
-!
 ! Goodgame.ru - здесь только запросы и связанные с ними исключения
 /^https?://goodgame\.ru/[a-z0-9]+$/$subdocument,domain=goodgame.ru
 /^https?://hls\.goodgame\.ru/hls/[0-9]{3}[-][0-9]{6}\.ts/$xmlhttprequest,domain=goodgame.ru
