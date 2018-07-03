@@ -22,7 +22,7 @@ let fs = require('fs');
         let fmt = x => `${(x < 9 ? '0' : '')}${x}`;
         let [yr, mn, dy] = [ctime.getFullYear(), ctime.getMonth() + 1, ctime.getDate()];
         let [hr, mi] = [ctime.getHours(), ctime.getMinutes()];
-        version = `0.${fmt(yr)}${fmt(mn)}${fmt(dy)}.${fmt(hr)}${fmt(mi)}`;
+        version = `0.${yr}${fmt(mn)}${fmt(dy)}.${hr}${fmt(mi)}`;
     }
     console.log('New version:', version)
     if (!version || !oldVersion)
