@@ -365,6 +365,7 @@ gidonline-kino.com,kinozz-hd.ru###feik
 itop-gear.ru###fguru
 partarium.ru###filter-form a[href^="/redirect/"][target="_blank"]
 fishki.net###fishkinet300x250
+erofishki.cc###fishkinet300x600
 vesti.ru###fixed-adv-block
 uahunter.com.ua###fixed-footer-block
 woman.ru###fixed_ad
@@ -2564,6 +2565,7 @@ smolensk-i.ru##.parthners-block
 fbr.info,ura.news##.partner
 w7phone.ru##.partner-in-sidebar
 112.ua##.partner-news
+erofishki.cc##.partner-posts
 intvua.com##.partner_news
 pln-pskov.ru##.partner_news__container
 polit.info##.partner_news_sidebar
@@ -3384,7 +3386,7 @@ fishki.net##[class^="partner-post"]
 fishki.net##[class^="partner-post"] *
 hwp.ru##[class^="promo"]
 dokpro.club##[class^="rec_"]
-fishki.net##[class^="side"][class*="right"] div[class*="promo"]
+erofishki.cc,fishki.net##[class^="side"][class*="right"] div[class*="promo"]
 baskino.me##[class^="sitelinks"]
 all-tv.org##[class^="teaser"]
 moyskelet.ru,obrazovaka.ru##[class^="tizdiv"]
@@ -4993,6 +4995,8 @@ ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партн�
 imtw.ru##else > .noad
 botanam.net,gdzputina.me##embed
 multikonline.ru,prostolinux.ru##embed[src*="banner"]
+erofishki.cc,fishki.net#?#[class*="side"][class*="right"] *:-abp-has(> [href*="utm_campaign"])
+erofishki.cc,fishki.net,i-news.kz,iaropolch.ru,mediananny.com,tochka.net#?#h3:-abp-contains(Новости партнёров)
 euro-football.ru#?#.block__title:-abp-contains(Новости Партнёров)
 fainaidea.com#?#.widget:-abp-has(.block-title > span:-abp-contains(Новости партнера))
 fb.ru#?#div[class]:-abp-has(> div > iframe:not([src]):not(#body_ifr))
@@ -5005,7 +5009,6 @@ fishki.net#?#.drag_element:-abp-has(.content__text > b:-abp-contains(Рекла�
 fishki.net#?#.drag_element:-abp-has([href*="/profile/1499330"])
 fishki.net#?#.drag_element:-abp-has([href]:-abp-contains(Реклама))
 fishki.net,hvylya.net#?#h3:-abp-contains(Новости партнеров)
-fishki.net,i-news.kz,iaropolch.ru,mediananny.com,tochka.net#?#h3:-abp-contains(Новости партнёров)
 seriali-online.su##footer > :first-child:empty
 leonkrevs.ucoz.ru##form[action*="wmcasher.ru"]
 megaimg.ru##form[name="show_image"] > center
