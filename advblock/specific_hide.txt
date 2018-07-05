@@ -3312,8 +3312,8 @@ livesport.ru##.zz_tizer
 livesport.ru##.zz_ya_twin *
 vrhell.com##.zzz
 24smi.org,auto.ru,businessman.ru,syl.ru#?#div[class]:-abp-has(> div > iframe:not([src]))
-24smi.org,businessman.ru,echo.msk.ru,fb.ru,liveinternet.ru,razlozhi.ru,syl.ru#?#*:-abp-has(> * > * > * > a[target]:-abp-contains(.Директ))
-24smi.org,businessman.ru,echo.msk.ru,fb.ru,liveinternet.ru,razlozhi.ru,syl.ru#?#*:-abp-has(> * > * > a[target]:-abp-contains(.Директ))
+24smi.org,businessman.ru,echo.msk.ru,fb.ru,liveinternet.ru,razlozhi.ru,syl.ru#?#body *:-abp-has(> * > * > * > a[target]:-abp-contains(.Директ))
+24smi.org,businessman.ru,echo.msk.ru,fb.ru,liveinternet.ru,razlozhi.ru,syl.ru#?#body *:-abp-has(> * > * > a[target]:-abp-contains(.Директ))
 24smi.org,businessman.ru,fb.ru,syl.ru#?#a[target]:-abp-contains(.Директ)
 2ip.ru#?#.content-article > p:-abp-has(.adsbygoogle)
 2mm.ru#?#.rightblock > .shadowp:-abp-has([class*="7dach_block"])
@@ -4982,9 +4982,9 @@ dni.ru#?#div:-abp-has(> div[id] + script:-abp-contains(/adblk/i))
 dni.ru#?#div[style="display: block;"]:-abp-has(> div[id] ~ script:-abp-contains(/adblk/i))
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(.c-rel-label)
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(> [data-slot="recommendations.teaser"])
-drive2.ru#?#*:-abp-has(> [id]:not(.feed):not(.o-anchor):first-child ~ script:-abp-contains(/adfox|create|window/i))
 drive2.ru#?#.c-block:-abp-has(.c-header ~ .c-dv-sns)
 drive2.ru#?#[class]:-abp-has(> [class^="cpc-card"] + [class^="cpc-card"])
+drive2.ru#?#body *:-abp-has(> [id]:not(.feed):not(.o-anchor):first-child ~ script:-abp-contains(/adfox|create|window/i))
 drive2.ru#?#div:-abp-has(> .o-group--justify > .c-com-dv-label)
 drive2.ru#?#div[class]:-abp-has(> div > div > div > div > a[href][target]:-abp-contains(/Я.Директ/))
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
@@ -5000,7 +5000,7 @@ fb.ru#?#div[class]:-abp-has(> div > iframe:not([src]):not(#body_ifr))
 imageup.ru##fieldset[style^="display: inline; width: 45%;"]
 znak.com##figure
 povar.co##figure[id^="attachment"]
-filmix.co,filmix.cool,filmix.fun,filmix.gold,filmix.info#?#*:-abp-has(> .remove-sda-wrap)
+filmix.co,filmix.cool,filmix.fun,filmix.gold,filmix.info#?#body *:-abp-has(> .remove-sda-wrap)
 fishki.net#?#.content__sub-heading:-abp-contains(Новости партнёров)
 fishki.net#?#.drag_element:-abp-has(.content__text > b:-abp-contains(Реклама))
 fishki.net#?#.drag_element:-abp-has([href*="/profile/1499330"])
@@ -5015,9 +5015,9 @@ free-torrent.org,free-torrents.org,game-torrent.info#?#center:-abp-has([href*=".
 freehd.com.ua,hdpicture.ru,hdreactor.club,hdreactor.red,hdreactor.su#?#.sidebar > .menu-head:-abp-contains(Реклама)
 friday.ru#?#.rc2:-abp-has(div:first-child > #rc-bn)
 friday.ru#?#.rc2:-abp-has(div[id^="adfox_"])
-gamer-info.com#?#*:-abp-has(> a[href] *:-abp-contains(/браузерная|браузернaя|брaузерная|клиентская|клиентскaя|клиeнтская/i))
+gamer-info.com#?#body *:-abp-has(> a[href] *:-abp-contains(/браузерная|браузернaя|брaузерная|клиентская|клиентскaя|клиeнтская/i))
 glav.su#?#.blueHeader:-abp-contains(НОВОСТИ ПАРТНЕРОВ)
-gorodrabot.ru#?#*:-abp-has(> [id] + script:-abp-contains(/advmanager|direct/i))
+gorodrabot.ru#?#body *:-abp-has(> [id] + script:-abp-contains(/advmanager|direct/i))
 prosound.ixbt.com##header > div[style^="background"]
 headinsider.net#?#span:-abp-contains(Интересные новости)
 shazoo.ru#?##homeFeaturedContainer:-abp-has(a[href*="bit.ly"])
@@ -5136,7 +5136,7 @@ post-tracker.ru##img[width^="8"][height^="3"][src$=".gif"]
 infox.ru#?#h2:-abp-contains(Реклама)
 vjazhi.ru##ins[style^="display:inline-table;"]
 it-tehnik.ru#?#aside > div[id^="custom_html"]:-abp-has(div > script)
-kakprosto.ru#?#*:-abp-has(> [id] + [id] > script:-abp-contains(/advmanager|direct/i))
+kakprosto.ru#?#body *:-abp-has(> [id] + [id] > script:-abp-contains(/advmanager|direct/i))
 kanobu.ru#?#.news-list-item:-abp-has([href*="advert"])
 kino-live2.org,kino-live3.org#?#div[class^="right"] .ramka1:-abp-has(noindex)
 kinoafisha.info#?#div:-abp-has(> a[href*="bitcoinnews.ru"])
@@ -5247,7 +5247,7 @@ nn.by##object[width^="2"][height^="2"][style*="display:"]
 old.fishki.net#?#div[id^="post"]:-abp-has([href*="/profile/1499330"])
 old.fishki.net#?#div[id^="post"]:-abp-has([href*="/profile/543769"])
 old.fishki.net#?#div[id^="post"]:-abp-has([href]:-abp-contains(Реклама))
-online-life.club#?#*:-abp-has(> [data-cw])
+online-life.club#?#body *:-abp-has(> [data-cw])
 ppl.nnov.ru##p > a[href][target="_blank"]:not([href*="nnov.ru"]) > img[src*="/bannery/"]
 skmash.ru##p > script[src*="wmrfast.com"] ~ *
 onfoto.ru##p > table[cellspacing="5"][cellpadding="0"][width="100%"] > tbody > tr > td[width="50%"][style="border: 1px solid #000;"]
@@ -5265,7 +5265,7 @@ pikabu.ru#?#.stories > .story:-abp-has(.story__header-additional:-abp-contains(a
 pikabu.ru#?#.story:-abp-has([class*="sponsor"])
 pikabu.ru#?#.story:-abp-has(script:-abp-contains(/direct|adfox|advmanager/i))
 pornogam.tv#?#.span4:-abp-has(.thumbnail > a[href*="/asd/"])
-razlozhi.ru#?#*:-abp-has(> [data-id*="R-"])
+razlozhi.ru#?#body *:-abp-has(> [data-id*="R-"])
 remontka.pro#?#span:-abp-contains(Реклама)
 rgmechanics.ru#?#.block-dark:-abp-has(div[id^="advertur_"])
 sergeistrelec.ru#?##right > .bl0 > div[class]:-abp-has(div:-abp-contains(еклама))
@@ -5428,7 +5428,7 @@ chem21.info##tr[height="250px"]
 raspisanie24.com##tr[onclick*="blablacar"]
 domsnov.ru##tr[style*="important"]
 tut.by#?#.m-hop > [class]:-abp-has(span:-abp-contains(Реклама))
-tverigrad.ru#?#*:-abp-has(> #mediametrics)
+tverigrad.ru#?#body *:-abp-has(> #mediametrics)
 tvzvezda.ru#?#.other_smi:-abp-has(> .razdel_name:-abp-contains(/в других сми/i))
 varlamov.ru#?#.j-l-alpha-content-subinner > .j-e-view-recent:-abp-has(.j-e-title--adv)
 varlamov.ru#?#.j-user-menu > .j-user-menu-item:-abp-has(a[href]:-abp-contains(Varlamov Box))
