@@ -4,7 +4,7 @@ let fs = require('fs');
 
     console.log('Loading filters...')
     let cssFileName = './css-fixes-experimental.txt';
-    let fixesFileName = './ruadlist-fixes.css';
+    let fixesFileName = './ruadlist-fixes.user.css';
     let templateFileName = `${fixesFileName}.template`;
     let fileEncoding = 'utf8';
     let oldVersion = null;
