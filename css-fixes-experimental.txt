@@ -369,7 +369,9 @@ kinomania.ru#?#.outer:style(padding-top: 0 !important)
 ! ---
 kinopoisk.ru###top_superscreen
 kinopoisk.ru##.top-adv-toggle-button
+kinopoisk.ru##.top-adv-toggle-button ~ div[id]:not([style])
 kinopoisk.ru#?##external_header_wrapper:not(#id):style(top: 0 !important)
+kinopoisk.ru#?#div[id][data-metrika="superbanner_spot"]:style(display: block !important)
 kinopoisk.ru#?##top_3banners:style(display: block !important)
 widgets.kinopoisk.ru#?#.app-container > [data-reactroot] > div[class] > div[class]:style(border-radius: 0 !important)
 widgets.kinopoisk.ru#?#.app-container > [data-reactroot] > div[class]:style(border-radius: 0 !important)
