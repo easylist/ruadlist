@@ -3355,6 +3355,7 @@ vse.rv.ua##[class*="billboard"]
 expert.ru##[class*="box-partners"]
 maintracker.org,rutracker.cr,rutracker.net,rutracker.nl,rutracker.org,sssr-rutracker.org##[class*="brand-link"]
 mcrate.su##[class*="commerc_panel"]
+drive2.ru##[class*="fake-gap"]
 hd-kinogo.co,kinogo-720p.ru,kinogo-club.com,kinogo-net-2016.ru,kinogo-net-2017.co,kinogon.co,kinopov.com,kinoprofi.su,seasonvar.cc##[class*="foon"]
 puerrtto.livejournal.com##[class*="kupibilet"]
 kanobu.ru##[class*="list"] > [class*="side-block"]
@@ -3370,6 +3371,7 @@ pdalife.ru##[class*="winner"]
 livesport.ru##[class*="wow"]
 neosmi.ru##[class="0"] > .firstnews
 wotspeak.ru##[class][data-ad-client]
+drive2.ru##[class][style*="important"]
 kinosvit.tv##[class][style^="margin-top: -"]
 om1.ru##[class^="adlp"]
 slo.ru##[class^="adv_"]
@@ -4550,7 +4552,7 @@ anwap.org##div[class] > a[href^="/"][target="_blank"]
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
 ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[class][data-element*="BANNER"]
-24smi.org,auto.ru,drive2.ru,echo.msk.ru,fb.ru,mk.ru,prnt.sc,syl.ru##div[class][style*="important"]
+24smi.org,auto.ru,echo.msk.ru,fb.ru,mk.ru,prnt.sc,syl.ru##div[class][style*="important"]
 rlocman.ru##div[class][style="background-color:#fcfcee;padding:10px"]
 sportsdaily.ru##div[class^="Banner"]
 gameguru.ru,mobiguru.ru##div[class^="RELINK"]
@@ -4981,11 +4983,10 @@ dni.ru#?#div:-abp-has(> div[id] + script:-abp-contains(/adblk/i))
 dni.ru#?#div[style="display: block;"]:-abp-has(> div[id] ~ script:-abp-contains(/adblk/i))
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(.c-rel-label)
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(> [data-slot="recommendations.teaser"])
-drive2.ru#?#.c-block:-abp-has(.c-header ~ .c-dv-sns)
+drive2.com,drive2.ru#?#[class]:-abp-has(> .o-group--justify > .c-com-dv-label)
+drive2.ru#?#[class]:-abp-has(> .c-dv-label)
+drive2.ru#?#[class]:-abp-has(> [class][style*="important"])
 drive2.ru#?#[class]:-abp-has(> [class^="cpc-card"] + [class^="cpc-card"])
-drive2.ru#?#body *:-abp-has(> [id]:not(.feed):not(.o-anchor):first-child ~ script:-abp-contains(/adfox|create|window/i))
-drive2.ru#?#div:-abp-has(> .o-group--justify > .c-com-dv-label)
-drive2.ru#?#div[class]:-abp-has(> div > div > div > div > a[href][target]:-abp-contains(/Я.Директ/))
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
 e1.ru#?#div[class*=" "]:-abp-has(> script:-abp-contains(blockId))
 ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партнеров))
@@ -5023,6 +5024,7 @@ prosound.ixbt.com##header > div[style^="background"]
 headinsider.net#?#span:-abp-contains(Интересные новости)
 shazoo.ru#?##homeFeaturedContainer:-abp-has(a[href*="bit.ly"])
 adcdn.tv##iframe + div[style^="position: absolute; z-index"][style*="hidden"]
+drive2.ru##iframe:not([src])
 sozdik.kz##iframe[id][src][tabindex]
 vz.ru##iframe[id^="AdFox_"]
 ek.ua##iframe[name*="banner"]
