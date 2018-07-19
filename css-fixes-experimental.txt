@@ -514,8 +514,8 @@ pvpru.com#?##ad_global_below_navbar:style(position: fixed !important; transform:
 pvpru.com#?##header ~ *:style(position: fixed !important; transform: scale(0) !important; top: -10000px !important)
 pvpru.com#?#.above_body > div[style]:style(height: auto !important)
 ! ---
-qaru.site#?#.answer .descript:style(transform: none !important; direction: ltr !important)
-qaru.site##script + .answer .answer-row > .answer-text > .descript > :nth-child(-n+4)
+qaru.site#?#.answer [class^="descr"]:style(transform: none !important; direction: ltr !important)
+qaru.site##script + .answer .answer-row > .answer-text > [class^="descr"] > :nth-child(-n+4)
 ! ---
 realist.online#?#body.banner-top .panel-list > .slider:style(padding-top: 88px !important)
 realist.online#?#body.banner-top > .header:style(margin-top: 0 !important)
