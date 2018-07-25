@@ -1959,6 +1959,7 @@ toptracker.ru##.flash
 4damki.ru,allergiik.ru,attuale.ru,bezparazita.ru,cardioplanet.ru,electricvdele.ru,probakterii.ru,psysovet24.ru,yhogorlonos.com##.flat_ads_block
 4damki.ru,obinstrumente.ru,skiings.ru##.flat_pm_cross
 goldroyal.net##.floating
+dni.ru##.floating > :not(.block_all_day) > *
 factroom.ru##.floating.b-sidebar
 notik.ru##.floating_bnr
 kanobu.ru##.fluid-banner
@@ -2484,6 +2485,7 @@ kirov-portal.ru##.newsBanner
 topnews.ru##.newsOfPartners
 vesti-yamal.ru##.newsPartners
 tsargrad.tv##.news__partners
+dni.ru##.news__popular[style^="width"]
 ladyspecial.ru##.news_list1
 zarutor.org##.news_not_adv
 74.ru##.news_partners_item
@@ -4994,10 +4996,9 @@ inmoment.ru##div[style^="width:199px;height:299px;"]
 m24.ru##div[style^="width:240px;height:400px;"]
 x.epidemz.co#?##dle-content > .shortstory:-abp-has([target="_blank"])
 anistar.me#?##dle-content > div.news:-abp-has(a[href^="https://anistar.me/engine/go.php?url="])
-dni.ru#?#.floating_left > *:-abp-has([class*="container"][class*="partner"])
-dni.ru#?#.floating_left > *:-abp-has([id*="smi_teaser"])
-dni.ru#?#.right > .floating > *:-abp-has([class*="container"][class*="partner"])
-dni.ru#?#.right > .floating > *:-abp-has([id*="smi_teaser"])
+dni.ru#?#.floating_left > *:-abp-has(span:-abp-contains(партнеры))
+dni.ru#?#:not(.floating) > [class]:-abp-has(> [id] + script:-abp-contains(/adblk/i))
+dni.ru#?#h2:-abp-contains(новости партнеров)
 dota2.ru#?#.p-sidebar > div:-abp-has(a[href*="paripartners.ru"])
 dota2.ru#?#div:-abp-has(> a[href*="paripartners.ru"])
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(.c-rel-label)
