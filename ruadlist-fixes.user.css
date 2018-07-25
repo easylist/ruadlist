@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180721.1343
+@version 0.20180725.1511
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -315,6 +315,7 @@
   domain("kinohome.net"),
   domain("kinohome.org"),
   domain("oblozhki.net"),
+  domain("sportarena.com"),
   domain("the-cinema.ru"),
   domain("torrentum.org"),
   domain("torrentum.ru"),
@@ -514,6 +515,19 @@
     body:not(#id) {
         background: whitesmoke !important
     }
+}
+
+@-moz-document
+  domain("border-fan.ru"),
+  domain("dad-fan.ru"),
+  domain("dugtor.ru"),
+  domain("freehat.cc"),
+  domain("grif-fan.ru"),
+  domain("lalapaluza.ru"),
+  domain("moviebuster.tv"),
+  domain("simp-fan.ru"),
+  domain("sp-fan.ru"),
+  domain("turkcinema.org") {
     #page {
         margin-top: 0 !important
     }
@@ -906,6 +920,12 @@
 @-moz-document domain("freeopenvpn.org") {
     .adsbygoogle {
         max-height: 2px !important
+    }
+}
+
+@-moz-document domain("fullfilmhd.space") {
+    #wrapper {
+        margin-top: 0 !important
     }
 }
 
@@ -2087,6 +2107,17 @@
 @-moz-document domain("tfile-music.org") {
     body {
         width: 100% !important
+    }
+}
+
+@-moz-document
+  domain("the-village.com.ua"),
+  domain("the-village.ru") {
+    .page-content {
+        background-color: inherit !important
+    }
+    .page-content {
+        padding-top: 0 !important
     }
 }
 
