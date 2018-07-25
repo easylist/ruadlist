@@ -1787,7 +1787,6 @@ nashdisk.ru##.container > table[align]
 club.ru##.container-banners
 ant-top.ru##.container-fluid > .row:nth-of-type(2)
 mmotop.ru##.container-links
-dni.ru##.container__partners > *
 novostioede.ru##.contdi
 novostioede.ru##.contdiv
 liveangarsk.ru##.conten
@@ -2362,7 +2361,6 @@ bazatabletok.ru##.maincontentcell td[valign="top"]
 penzavzglyad.ru##.mainmenu-ads
 oboznik.ru##.mainrams > div[class^="cd"]
 argumentiru.com##.mainrub + style + div
-dni.ru##.mainslide div[class$="240x400"] > *
 sex-empire.tv##.maintable td#right
 lfootball.ws##.makeBet
 allhentai.ru,doramatv.ru,findanime.me,grouple.co,librebook.me,mintmanga.com,readmanga.me,selfmanga.ru##.manga_ba
@@ -3358,6 +3356,7 @@ vse.rv.ua##[class*="billboard"]
 expert.ru##[class*="box-partners"]
 maintracker.org,rutracker.cr,rutracker.net,rutracker.nl,rutracker.org,sssr-rutracker.org##[class*="brand-link"]
 mcrate.su##[class*="commerc_panel"]
+dni.ru##[class*="container"][class*="partner"]
 drive2.ru##[class*="fake-gap"]
 hd-kinogo.co,kinogo-720p.ru,kinogo-club.com,kinogo-net-2016.ru,kinogo-net-2017.co,kinogon.co,kinopov.com,kinoprofi.su,seasonvar.cc##[class*="foon"]
 puerrtto.livejournal.com##[class*="kupibilet"]
@@ -4994,8 +4993,10 @@ inmoment.ru##div[style^="width:199px;height:299px;"]
 m24.ru##div[style^="width:240px;height:400px;"]
 x.epidemz.co#?##dle-content > .shortstory:-abp-has([target="_blank"])
 anistar.me#?##dle-content > div.news:-abp-has(a[href^="https://anistar.me/engine/go.php?url="])
-dni.ru#?#div:-abp-has(> div[id] + script:-abp-contains(/adblk/i))
-dni.ru#?#div[style="display: block;"]:-abp-has(> div[id] ~ script:-abp-contains(/adblk/i))
+dni.ru#?#.floating_left > *:-abp-has([class*="container"][class*="partner"])
+dni.ru#?#.floating_left > *:-abp-has([id*="smi_teaser"])
+dni.ru#?#.right > .floating > *:-abp-has([class*="container"][class*="partner"])
+dni.ru#?#.right > .floating > *:-abp-has([id*="smi_teaser"])
 dota2.ru#?#.p-sidebar > div:-abp-has(a[href*="paripartners.ru"])
 dota2.ru#?#div:-abp-has(> a[href*="paripartners.ru"])
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(.c-rel-label)
