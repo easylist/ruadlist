@@ -1960,7 +1960,6 @@ toptracker.ru##.flash
 4damki.ru,allergiik.ru,attuale.ru,bezparazita.ru,cardioplanet.ru,electricvdele.ru,probakterii.ru,psysovet24.ru,yhogorlonos.com##.flat_ads_block
 4damki.ru,obinstrumente.ru,skiings.ru##.flat_pm_cross
 goldroyal.net##.floating
-dni.ru##.floating > :not(.block_all_day) > *
 factroom.ru##.floating.b-sidebar
 notik.ru##.floating_bnr
 kanobu.ru##.fluid-banner
@@ -2764,6 +2763,7 @@ fion.ru##.right-column .select-content[style="margin:9px auto;"]
 hdtochka.club##.right-side
 allboxing.ru##.right-sidebar-bannes
 tvnet.lv##.right-two-pics
+dni.ru##.right.article-reklame > * > :not(.block_all_day) > *
 terrikon.com##.right.col > div[style^="min-height"]
 terrikon.com##.right.col > div[style^="width:300px;"]
 chehov-vid.ru##.right.section_head
@@ -4999,8 +4999,7 @@ inmoment.ru##div[style^="width:199px;height:299px;"]
 m24.ru##div[style^="width:240px;height:400px;"]
 x.epidemz.co#?##dle-content > .shortstory:-abp-has([target="_blank"])
 anistar.me#?##dle-content > div.news:-abp-has(a[href^="https://anistar.me/engine/go.php?url="])
-dni.ru#?#.floating_left > *:-abp-has(span:-abp-contains(партнеры))
-dni.ru#?#:not(.floating) > [class]:-abp-has(> [id] + script:-abp-contains(/adblk/i))
+dni.ru#?#* > :not(.right) > * > [class]:-abp-has(> [id] + script:-abp-contains(/adblk/i))
 dni.ru#?#h2:-abp-contains(новости партнеров)
 dota2.ru#?#.p-sidebar > div:-abp-has(a[href*="paripartners.ru"])
 dota2.ru#?#div:-abp-has(> a[href*="paripartners.ru"])
@@ -5032,6 +5031,7 @@ fishki.net#?#.drag_element:-abp-has([href*="/profile/1499330"])
 fishki.net#?#.drag_element:-abp-has([href]:-abp-contains(Реклама))
 fishki.net,hvylya.net#?#h3:-abp-contains(Новости партнеров)
 seriali-online.su##footer > :first-child:empty
+dni.ru#?##for_fix > *:-abp-has(.titlebar > span:-abp-contains(партнеры))
 leonkrevs.ucoz.ru##form[action*="wmcasher.ru"]
 megaimg.ru##form[name="show_image"] > center
 forum.cxem.net#?#form > article[id^="elComment_"]:-abp-has(strong[itemprop="name"] > a[title="Перейти в профиль Adver"])
