@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180725.1511
+@version 0.20180729.2135
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -12,16 +12,17 @@
     }
 }
 
-@-moz-document
-  domain("21forum.ru"),
-  domain("forum.na-svyazi.ru"),
-  domain("forum.zarulem.ws") {
-    #user2s[height="71"], #userlinks[height="70"], td[height="70"][style] {
-        display: none !important
+@-moz-document domain("1plus1.ua") {
+    .main-slider {
+        margin-top: 0 !important
+    }
+    .nav-prime-top, body .head {
+        top: 0 !important
     }
 }
 
 @-moz-document
+  domain("1plus1.ua"),
   domain("24video.guru"),
   domain("24video.sexy"),
   domain("4watching.club"),
@@ -54,6 +55,7 @@
   domain("hdrezka.link"),
   domain("hdrezka.lol"),
   domain("hdrezka.name"),
+  domain("hdrezka.ooo"),
   domain("hdrezka.rest"),
   domain("hdrezka.run"),
   domain("hdrezka.su"),
@@ -67,7 +69,6 @@
   domain("kino-hd1080.ru"),
   domain("kinoaa.ru"),
   domain("kinobe.club"),
-  domain("kinocoin.online"),
   domain("koshara.co"),
   domain("kronverkcinema.ua"),
   domain("live-rutor.org"),
@@ -109,6 +110,15 @@
 }
 
 @-moz-document
+  domain("21forum.ru"),
+  domain("forum.na-svyazi.ru"),
+  domain("forum.zarulem.ws") {
+    #user2s[height="71"], #userlinks[height="70"], td[height="70"][style] {
+        display: none !important
+    }
+}
+
+@-moz-document
   domain("24video.guru"),
   domain("24video.sexy"),
   domain("aif.ru"),
@@ -129,6 +139,7 @@
   domain("hdrezka.link"),
   domain("hdrezka.lol"),
   domain("hdrezka.name"),
+  domain("hdrezka.ooo"),
   domain("hdrezka.rest"),
   domain("hdrezka.run"),
   domain("hdrezka.today"),
@@ -355,6 +366,12 @@
     }
     #trend {
         margin-bottom: 0 !important
+    }
+}
+
+@-moz-document domain("anime-best.com") {
+    #menubar {
+        padding-top: 0 !important
     }
 }
 
@@ -1235,9 +1252,7 @@
     }
 }
 
-@-moz-document
-  domain("kino-hd1080.ru"),
-  domain("kinocoin.online") {
+@-moz-document domain("kino-hd1080.ru") {
     body > span * {
         pointer-events: none !important;
         background-image: none !important;
