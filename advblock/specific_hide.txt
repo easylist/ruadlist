@@ -2552,6 +2552,7 @@ filmpro.ru##.page_rcol > div[style*="background:#fff;"]:not(:last-child)
 filmpro.ru##.page_rcol > div[style*="height:400px;"]
 filmpro.ru##.page_rcol > h3:nth-of-type(1)
 echo.msk.ru##.pagecontent > div:not([id]):not([class]):not([style])
+echo.msk.ru##.pagecontent > div[id] > div[id][class]:empty
 msn.com##.paging-container > .ad
 km.ru##.pane-advertisment
 komarovskiy.net##.panel-body noindex
@@ -5018,6 +5019,7 @@ drive2.ru#?#[class]:-abp-has(> [class^="cpc-card"] + [class^="cpc-card"])
 drive2.ru#?#[class]:-abp-has(> [id] > [id][class] > [class] iframe:not([src]))
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
 e1.ru#?#div[class*=" "]:-abp-has(> script:-abp-contains(blockId))
+echo.msk.ru#?#.pagecontent > div[id]:-abp-has(> div[id][class] + style)
 ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партнеров))
 imtw.ru##else > .noad
 botanam.net,gdzputina.me##embed
