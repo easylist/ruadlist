@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180729.2135
+@version 0.20180731.1239
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -168,7 +168,6 @@
   domain("stopgame.ru"),
   domain("torrent-games.net"),
   domain("torrentom.com"),
-  domain("torrentum.ru"),
   domain("txapela.ru"),
   domain("userstyles.org"),
   domain("xatab-repack.net"),
@@ -329,7 +328,6 @@
   domain("sportarena.com"),
   domain("the-cinema.ru"),
   domain("torrentum.org"),
-  domain("torrentum.ru"),
   domain("virusinfo.info") {
     body:not(#id), html:not(#id) {
         margin-top: 0 !important
@@ -432,6 +430,21 @@
     }
 }
 
+@-moz-document domain("animevost.in") {
+    #Navigation {
+        background-image: none !important;
+        height: auto !important
+    }
+    #Navigation > nav ul {
+        bottom: auto !important;
+        top: 50px !important;
+        z-index: 100 !important
+    }
+    #Navigation > nav {
+        top: 0 !important
+    }
+}
+
 @-moz-document domain("animevost.org") {
     div[class^="headbg"] {
         background-image: none !important;
@@ -460,9 +473,6 @@
 }
 
 @-moz-document domain("anistar.me") {
-    body:not([id]) {
-        padding-top: 60px !important
-    }
     .list-nav {
         z-index: 1 !important
     }
@@ -934,13 +944,17 @@
     }
 }
 
-@-moz-document domain("freeopenvpn.org") {
+@-moz-document
+  domain("freeopenvpn.org"),
+  domain("leninsw.info") {
     .adsbygoogle {
         max-height: 2px !important
     }
 }
 
-@-moz-document domain("fullfilmhd.space") {
+@-moz-document
+  domain("fullfilmhd.space"),
+  domain("torrentum.me") {
     #wrapper {
         margin-top: 0 !important
     }
@@ -1343,6 +1357,12 @@
     }
     #external_header_wrapper:not(#id) {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("kinorezka.net") {
+    body > .container {
+        padding-top: 0 !important
     }
 }
 
