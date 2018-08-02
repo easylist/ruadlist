@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180731.1239
+@version 0.20180802.1452
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -46,6 +46,7 @@
   domain("hdkinoklub.com"),
   domain("hdrezka-online.me"),
   domain("hdrezka.ag"),
+  domain("hdrezka.asia"),
   domain("hdrezka.buzz"),
   domain("hdrezka.city"),
   domain("hdrezka.club"),
@@ -97,6 +98,7 @@
   domain("tfilm.tv"),
   domain("the-rutor.org"),
   domain("torentor.co"),
+  domain("torrentum.me"),
   domain("txapela.ru"),
   domain("vc.ru"),
   domain("veleto.ru"),
@@ -131,6 +133,7 @@
   domain("hd720.biz"),
   domain("hdkinoklub.com"),
   domain("hdrezka-online.me"),
+  domain("hdrezka.asia"),
   domain("hdrezka.buzz"),
   domain("hdrezka.city"),
   domain("hdrezka.club"),
@@ -168,6 +171,7 @@
   domain("stopgame.ru"),
   domain("torrent-games.net"),
   domain("torrentom.com"),
+  domain("torrentum.me"),
   domain("txapela.ru"),
   domain("userstyles.org"),
   domain("xatab-repack.net"),
@@ -625,6 +629,14 @@
 @-moz-document domain("championat.com") {
     html:not(#id) {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("chita.ru") {
+    body {
+        background: none !important;
+        margin-top: 0 !important;
+        padding-top: 0 !impportant
     }
 }
 
@@ -1299,6 +1311,12 @@
 @-moz-document domain("kinobars.net") {
     .wrapper > .header {
         padding: 30px !important
+    }
+}
+
+@-moz-document domain("kinobos.org") {
+    .wrapper > .wrap {
+        margin-top: 0 !important
     }
 }
 
