@@ -3537,6 +3537,7 @@ kinoafisha.ua##a.brandup
 poker-wiki.ru##a.external[rel="nofollow"][href*="/go/?site="] > img[src$=".gif"]
 kinobaza.net##a.red
 www.zakon.kz##a.white_block[target="_blank"]
+dota2.ru##a:not([class])[href^="/"][href$="/"][target="_blank"]
 mama.kharkov.ua##a:not([href^="http://www.mama.kharkov.ua/"]) > img[src*=".ua/uploads/"]
 good73.net##a[\;] > img
 siliconrus.com##a[class*="b-menu__li__a-"]
@@ -3945,7 +3946,6 @@ tes-game.ru##a[href^="/go"][target="_blank"]
 bdsmplaneta.com,vozbuzhdaet.com##a[href^="/go.php"]
 pornoboss.tv##a[href^="/go.php?id="]
 kg-portal.ru##a[href^="/go.php?url=https://"]
-dota2.ru##a[href^="/go/"][target="_blank"]
 agroxxi.ru##a[href^="/gobanner"]
 goldenshara.net##a[href^="/goldenshara.net.php"]
 komcity.ru##a[href^="/goto/?idbanner="]
@@ -5013,8 +5013,8 @@ x.epidemz.co#?##dle-content > .shortstory:-abp-has([target="_blank"])
 anistar.me#?##dle-content > div.news:-abp-has(a[href^="https://anistar.me/engine/go.php?url="])
 dni.ru#?#* > :not(.right) > * > [class]:-abp-has(> [id] + script:-abp-contains(/adblk/i))
 dni.ru#?#h2:-abp-contains(новости партнеров)
-dota2.ru#?#.p-sidebar > div:-abp-has([href^="/go/"][target="_blank"])
-dota2.ru#?#div:-abp-has(> [href^="/go/"][target="_blank"])
+dota2.ru#?#.p-sidebar > div:-abp-has(a:not([class])[href^="/"][href$="/"][target="_blank"])
+dota2.ru#?#div:-abp-has(> a:not([class])[href^="/"][href$="/"][target="_blank"])
 drive2.com,drive2.ru#?#*:-abp-has(> [data-slot="recommendations.teaser"])
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(.c-rel-label)
 drive2.com,drive2.ru#?#[class]:-abp-has(> .o-group--justify > .c-com-dv-label)
