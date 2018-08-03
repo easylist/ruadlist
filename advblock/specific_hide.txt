@@ -3447,13 +3447,13 @@ virpl.ru##[id$="-banner"]
 xyu.tv##[id$="AdsAfterVideo"]
 kolesa.kz##[id*="Banner"]
 espreso.tv##[id*="ScriptRoot"]:not(.news-block-magick)
-liveinternet.ru##[id*="_"] > [id*="_"][class]:empty
 floomby.ru##[id*="adsPlace"]
 lifenews.ru,lifenews78.ru##[id*="banner"]
 hideme.ru##[id*="hidemead"]
 p-p.com.ua##[id*="redtram"]
 mychords.net,polaremont.ru,stokvod.ru##[id*="teaser"]
 livesport.ru##[id*="wow"]
+liveinternet.ru##[id]:not(div) > [id*="_"][class]:empty
 shoubiz.com.ua##[id^="DIV_DA_"]
 onlinetambov.ru##[id^="ad"][class*="ads"]
 depositfiles.com##[id^="ads_zone"]
@@ -5192,9 +5192,9 @@ libertycity.ru#?#[class$="column"] table[width="100%"]:-abp-has(td[align="center
 litlib.net#?#noindex tr:-abp-has(td[class^="content"]:-abp-contains(Реклама))
 liveinternet.ru#?#[class]:-abp-has(> [action="https://www.technohelp.ru/"])
 liveinternet.ru#?#[class][style="margin-top:-5px;margin-bottom:-20px;"]:-abp-has(script:-abp-contains(/./))
-liveinternet.ru#?#[id*="_"]:-abp-has(> [id*="_"][class] + style)
 liveinternet.ru#?#[id]:-abp-has(> [id] + script:-abp-contains(liru240))
 liveinternet.ru#?#[id]:-abp-has(> [id] + script:-abp-contains(liru728))
+liveinternet.ru#?#[id]:not(div):-abp-has(> [id*="_"][class] + style)
 liveinternet.ru#?#[style="text-align:center"]:-abp-has(> [id] + script:-abp-contains(Ya))
 liveinternet.ru#?#body > style[type="text/css"] + [id]:-abp-has(iframe)
 liveinternet.ru#?#div[class]:not([class*="dialog"]):not([role="presentation"]):-abp-has(> iframe)
