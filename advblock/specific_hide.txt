@@ -2360,6 +2360,7 @@ livesport.ws##.main_yandex_banner
 2ip.ru##.mainadv
 serialtime.net##.mainallsidebar
 dungeonmaster.ru##.mainbanner
+echo.msk.ru##.maincolumns ~ div[class] > div[id]
 the-cinema.club##.maincont > center
 autoexpert.com.ua##.maincont a[href][target="_blank"] > img
 bazatabletok.ru##.maincontentcell td[valign="top"]
@@ -4932,6 +4933,7 @@ pics-money.ru##div[id^="visitweb_container"]
 mamba.ru##div[id^="web-banners-search_form_brand_banner"]
 ogemorroe.com##div[id^="webapteka_"]
 xn--c1adkjnf.net,легион.net##div[id^="widget_code_php"]
+echo.msk.ru##div[id^="ya"]
 mosday.ru##div[id^="yaad"]
 kinopoisk.ru,soccer0100.com,spectehinfo.ru,trudbox.com.ua##div[id^="yandex_direct"]
 businessman.ru,e1.ru,fishki.net,itchief.ru,kinopoisk.ru,kurs.com.ru,kurs.com.ua,mir24.tv,sdamgia.ru,soccer0100.com##div[id^="yandex_rtb"]
@@ -4997,6 +4999,7 @@ ru-minecraft.ru##div[style^="background-color: #DADADA;"]
 risovach.ru##div[style^="background: url"]
 chelnyclub.ru##div[style^="clear: both"] a[href]:not([href*="chelnyclub.ru"])
 autoreview.ru##div[style^="clear:both; width:"]
+echo.msk.ru##div[style^="display:flex; justify-content:space-around;"] ~ div[class] > div[id]
 newizv.ru##div[style^="height: 400px; width: 240px;"]
 animevost.org##div[style^="height:125px; border: 1px solid #ffa20f"]
 sinoptik.ua##div[style^="margin"][style$="width: 300px;"]
@@ -5026,6 +5029,7 @@ drive2.ru#?#[class]:-abp-has(> [id] > [id][class] > [class] iframe:not([src]))
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
 e1.ru#?#div[class*=" "]:-abp-has(> script:-abp-contains(blockId))
 echo.msk.ru#?#.pagecontent > div[id]:-abp-has(> div[id][class] + style)
+echo.msk.ru#?#span:-abp-contains(/новости партнеров/i)
 ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партнеров))
 imtw.ru##else > .noad
 botanam.net,gdzputina.me##embed
