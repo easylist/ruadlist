@@ -97,9 +97,9 @@ www.gismeteo.by,www.gismeteo.ru#?#div:-abp-has(> div > div[id*="_R-"])
 @@||maitrupad.com/$~third-party,xmlhttprequest
 @@||malabhad.com/$~third-party,xmlhttprequest
 !
-/v/clone?$xmlhttprequest,domain=ortityiuret.site
-@@||ortityiuret.site/movie/$subdocument,domain=hdvb.cc
-ortityiuret.site##.flowplayer[data-configs*="ads"] div[class="fp-engine"]
+$third-party,subdocument,domain=hdvb.cc
+hdvb.cc##.flowplayer[data-configs*="ads"] div[class="fp-engine"]
+||hdvb.cc/v/clone?$xmlhttprequest
 !
 ! Goodgame.ru - здесь только запросы и связанные с ними исключения
 /^https?://goodgame\.ru/[a-z0-9]+$/$subdocument,domain=goodgame.ru
