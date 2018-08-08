@@ -4043,6 +4043,7 @@ nuriknur.ucoz.com##a[href^="http://df.halileo.com/"]
 4fun.mksat.net##a[href^="http://digit.com.ua/"]
 wotsite.net,wotspeak.ru##a[href^="http://disfing.com/"]
 punkt-a.info##a[href^="http://domzaton.ru/"]
+dota2.ru##a[href^="http://dota2.ru/"][target="_blank"] img
 world-ua.com##a[href^="http://drabynka.com/"]
 readovka.ru##a[href^="http://droidone.ru/"]
 cryptoworld.su##a[href^="http://epnclick.ru/"]
@@ -5019,7 +5020,9 @@ x.epidemz.co#?##dle-content > .shortstory:-abp-has([target="_blank"])
 anistar.me#?##dle-content > div.news:-abp-has(a[href^="https://anistar.me/engine/go.php?url="])
 dni.ru#?#* > :not(.right) > * > [class]:-abp-has(> [id] + script:-abp-contains(/adblk/i))
 dni.ru#?#h2:-abp-contains(новости партнеров)
+dota2.ru#?#.p-sidebar > div:-abp-has(a[href^="http://dota2.ru/"][target="_blank"] img)
 dota2.ru#?#.p-sidebar > div:-abp-has(a[href^="https://dota2.ru/"][target="_blank"] img)
+dota2.ru#?#div:-abp-has(> a[href^="http://dota2.ru/"][target="_blank"] img)
 dota2.ru#?#div:-abp-has(> a[href^="https://dota2.ru/"][target="_blank"] img)
 drive2.com,drive2.ru#?#*:-abp-has(> [data-slot="recommendations.teaser"])
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(.c-rel-label)
