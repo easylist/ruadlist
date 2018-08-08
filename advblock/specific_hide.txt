@@ -1712,7 +1712,7 @@ edimdoma.ru##.card_commercial
 ria-m.tv##.caroufredsel_wrapper
 programy.com.ua##.cars2
 echosevera.ru##.cartoon
-auto.ru##.catalog div[class*="content"] [class*="search-form"] > div[class*=" "]:not([class*="catalog"]):not([class*="-"])
+auto.ru##.catalog div[class*="content"] [class*="search-form"] > [class*=" "]:not(div):not([class*="catalog"]):not([class*="-"])
 footballreview.ru##.center-adv
 reviewdetector.ru##.center_banner
 pornoshara.tv##.center_col > .layout
@@ -2138,8 +2138,7 @@ infox.ru##.idv3-advert2
 infox.ru##.idv3-popup-frame
 abkhasiya.ru,aerostatstudio.ru,rp-mechanics.ru##.ignore-select
 moybrauzer.ru##.igrof
-auto.ru##.image-gallery-content > div > div:not([class*="gallery"])
-auto.ru##.image-gallery-slide-wrapper > :not([class^="image-gallery"])
+auto.ru##.image-gallery-content.fullscreen > .bottom > [class]:not(div):not([class*="gallery"])
 fairtop.in##.image-side
 waxfilm.net##.img-top
 mamcompany.ru##.img_ban
@@ -4311,7 +4310,6 @@ cartoonsworld.net##aside.side
 postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
-auto.ru#?#div[class]:-abp-has(> div:not([class*="bottom"]) > div > div > div > a[href][target]:-abp-contains(Яндекс.Директ))
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > div > iframe[id^="AdFox"])
 baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > script:-abp-contains(/adfox/i))
 bigtorrent.org#?#.block:-abp-has(div:-abp-contains(Интересное))
