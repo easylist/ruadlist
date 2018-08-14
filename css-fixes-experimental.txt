@@ -164,8 +164,12 @@ cyberforum.ru#?#body > div[style*="width"][style*="margin"]:style(margin-top: 0 
 ! ---
 doramy.su#?#.wrapper > .main-menu:style(margin-top: 0 !important)
 ! ---
-dota2.ru##body > div[id]:not([class]) > div[class] > div:not([id]):not([class]):not([style]) > a[href][target="_blank"][id]
-dota2.ru#?#html:not(#id) > body > div[id]:not([class]):style(background-image: none !important; padding-top: 0 !important)
+dota2.ru###dust
+dota2.ru##a[href^="/stone/"]
+dota2.ru##body > div[id]:not([style]) > div[class] > div:not([id]):not([class]):not([style]) > a[href][target="_blank"][id]
+dota2.ru##div[class*="bnp"]
+dota2.ru#?#html:not(#id) > body > div[id]:not([style]):style(background-image: none !important; padding-top: 0 !important)
+dota2.ru##header > .subline ~ style + div:not(#navigation)
 ! ---
 drahelas.ru#?#.adb:style(position: fixed !important; transform: scale(0) !important)
 drahelas.ru#?#.forumAd:style(height: 1px !important)
