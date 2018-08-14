@@ -19,10 +19,10 @@ let fs = require('fs');
     console.log('Current version:', oldVersion);
     {
         let ctime = fs.statSync(cssFileName).ctime;
-        let fmt = x => `${(x < 9 ? '0' : '')}${x}`;
+        let fmt = x => `${(x < 10 ? '0' : '')}${x}`;
         let [yr, mn, dy] = [ctime.getFullYear(), ctime.getMonth() + 1, ctime.getDate()];
         let [hr, mi] = [ctime.getHours(), ctime.getMinutes()];
-        version = `0.${yr}${fmt(mn)}${fmt(dy)}.${hr > 0 ? hr : ''}${fmt(mi)}`;
+        version = `0.${yr}${fmt(mn)}${fmt(dy)}.${hr > 0 ? hr : ''}${hr > 0 ? fmt(mi) : mi}`;
     }
     console.log('New version:', version)
     if (!version || !oldVersion)
