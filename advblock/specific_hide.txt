@@ -3417,7 +3417,6 @@ autodmir.ru##[class^="block_tgb"]
 animedub.ru##[class^="blokr"]
 season.ru##[class^="bnnr_bx_"]
 geonavigator.ge,navigator.az##[class^="brand"]
-kinopoisk.ru##[class^="content"] > [data-metrika="film_card"] ~ div[class]
 kinoafisha.info##[class^="illumination"]
 brainstorage.me,freelansim.ru,moikrug.ru,tmfeed.ru##[class^="menu"][class*="special"]
 gig-torrent.ru##[class^="mgetdown"]
@@ -4664,6 +4663,7 @@ zakon.kz##div[class^="clickcloud"]
 mobihobby.ru##div[class^="com-"]
 myanimecorner.ru##div[class^="commercials"]
 pc-radio.ru##div[class^="comscreen_"]
+www.kinopoisk.ru##div[class^="content"] > [data-metrika] ~ div > div[id][class]
 chita.ru##div[class^="cr_advert"]
 chita.ru##div[class^="cr_keywords"]
 finzz.ru##div[class^="dgd_"]
@@ -5216,6 +5216,7 @@ kanobu.ru#?#.news-list-item:-abp-has([href*="advert"])
 kino-live2.org,kino-live3.org#?#div[class^="right"] .ramka1:-abp-has(noindex)
 kinoafisha.info#?#div:-abp-has(> a[href*="bitcoinnews.ru"])
 kinoangel.club#?#.title_genres:-abp-contains(Это интересно)
+kinopoisk.ru#?#._noreachbanner_ > div > div:-abp-has(> div > div:empty)
 kinotan.ru#?#center:-abp-has(> p:-abp-contains(Реклама))
 sergeistrelec.ru#?##left > .bl0 > div[class]:-abp-has(div:-abp-contains(Bitcoin))
 sergeistrelec.ru#?##left > .bl0 > div[class]:-abp-has(div:-abp-contains(еклама))
