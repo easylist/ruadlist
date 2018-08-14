@@ -5052,6 +5052,7 @@ drive2.ru#?#[class]:-abp-has(> [class^="cpc-card"] + [class^="cpc-card"])
 drive2.ru#?#[class]:-abp-has(> [id] > [id][class] > [class] iframe:not([src]))
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
 e1.ru#?#div[class*=" "]:-abp-has(> script:-abp-contains(blockId))
+echo.msk.ru#?#.column [class]:not(div):-abp-has(> [id] + script:-abp-contains(/advmanager/i))
 echo.msk.ru#?#span:-abp-contains(/новости партнеров/i)
 ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партнеров))
 imtw.ru##else > .noad
