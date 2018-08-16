@@ -569,11 +569,6 @@ gta.com.ua###main_nav[style="height:80px"]
 rugrad.eu###main_right_col > .section:not(.section_blogs)
 zoneofgames.ru###mainbg
 ignio.com###mainnews
-echo.msk.ru###mainsidebar > [class*="iblock "]
-echo.msk.ru###mainsidebar > [class*="iblock"] > a:not([href^="/"]):not([href*="echo.msk.ru"])
-echo.msk.ru###mainsidebar > [class*="iblock"][style]
-echo.msk.ru###mainsidebar > [style*="240"]
-echo.msk.ru###mainsidebar > br
 mega-tracker.net###mb_top_space
 colorforum.ru###mbanners
 kino-full.ru###mc-right > noindex
@@ -2381,12 +2376,10 @@ livesport.ws##.main_yandex_banner
 2ip.ru##.mainadv
 serialtime.net##.mainallsidebar
 dungeonmaster.ru##.mainbanner
-echo.msk.ru##.maincolumns ~ [class]:not([class="onaircarousel"]) > [id]
 the-cinema.club##.maincont > center
 autoexpert.com.ua##.maincont a[href][target="_blank"] > img
 bazatabletok.ru##.maincontentcell td[valign="top"]
 penzavzglyad.ru##.mainmenu-ads
-echo.msk.ru##.mainpreview + script + [class]
 oboznik.ru##.mainrams > div[class^="cd"]
 argumentiru.com##.mainrub + style + div
 sex-empire.tv##.maintable td#right
@@ -2575,7 +2568,6 @@ businessman.ru##.page__fit-high
 afisha.ru##.page_banner_top_container
 afisha.ru##.page_block_content_adv-header
 djekxa.ru##.page_index.content > p a[href][target="_blank"] > img
-echo.msk.ru##.pagecontent > :not([class="header"]):not([class="main"]):not([class="footer"])
 msn.com##.paging-container > .ad
 km.ru##.pane-advertisment
 komarovskiy.net##.panel-body noindex
@@ -3313,6 +3305,7 @@ kurer-sreda.ru##.wrap-inf4x4
 prosadiogorod.ru##.wrap_flat_ads_block
 galka.if.ua##.wrapper .header-logo ~ *
 novy.tv##.wrapper > #header > a[href][target="_blank"] > img
+echo.msk.ru##.wrapper > aside ~ :not(section)
 megaresheba.ru##.wrapper > div[style^="display: block"]
 2whois.ru##.wrapper > div[style^="overflow:hidden"]
 feofan.net##.wrapper-outer > .background-cover
@@ -3430,6 +3423,11 @@ hwp.ru##[class^="promo"]
 dokpro.club##[class^="rec_"]
 darkwebs.ws##[class^="samCodeUnit"]
 erofishki.cc,fishki.net##[class^="side"][class*="right"] div[class*="promo"]
+echo.msk.ru##[class^="sidebar "] > [class*="iblock "]
+echo.msk.ru##[class^="sidebar"] > [class*="iblock"] > a:not([href^="/"]):not([href*="echo.msk.ru"])
+echo.msk.ru##[class^="sidebar"] > [class*="iblock"][style]
+echo.msk.ru##[class^="sidebar"] > [style*="240"]
+echo.msk.ru##[class^="sidebar"] > br
 baskino.me##[class^="sitelinks"]
 all-tv.org##[class^="teaser"]
 moyskelet.ru,obrazovaka.ru##[class^="tizdiv"]
@@ -3448,6 +3446,7 @@ razlozhi.ru##[data-id*="R-"]
 1kr.ua##[data-is-advert]
 myukraina.com.ua##[data-link*="goo.gl"]
 news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
+echo.msk.ru##[data-role="page"] > :not([class="header"]):not([class="main"]):not([class="footer"])
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 zoneofgames.ru##[data-role="sidebarAd"]
@@ -3544,7 +3543,6 @@ penzainform.ru##[style*="height: 43px"][style*="max-height: 43px"]
 penzainform.ru##[style*="height: 50px"][style*="max-height: 50px"]
 pogoda.by##[style*="url(/promo/"]
 businessman.ru##[style="width:100%;min-height:250px"]
-echo.msk.ru##[style^="display:flex; justify-content:space-around;"] ~ [class] > [id]
 molbuk.ua##[style^="height: 200px; left"][style*="position: absolute"]
 radiodacha.ru##[summary="content_table"] > tbody > tr > td[height="90"]
 lostfilm.tv##[title*="exe.ru"]
