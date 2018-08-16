@@ -3457,6 +3457,7 @@ local.com.ua##[href*="local.com.ua/banner"]
 podelki-doma.ru##[href*="ohnet.ru"]
 biblprog.org.ua##[href*="wgaffiliate.com"]
 ex-fs.net##[href="/ajpnepb.php"]
+dota2.ru##[href="/shop/"]
 phpbbguru.net##[href^="go.php?to="]
 nntt.org##[href^="http://numbuster.com"]
 simpalsid.com##[href^="http://simpalsid.com/ad/click?id"]
@@ -3930,8 +3931,8 @@ proshkolu.ru##a[href][title*="/1clickgain/"]
 domsovetof.ru##a[href][title="http://rek-chek.ru/"]
 ru-minecraft.ru##a[href][title="Хостинг"]
 poligon.by##a[href^=" https://vk.com/look_up_potolki"]
-dota2.ru##a[href^="/"][target="_blank"][class][style^="background"]
-dota2.ru##a[href^="/"][target="_blank"][id][class]
+dota2.ru##a[href^="/"]:not([rel])[target="_blank"][class]
+dota2.ru##a[href^="/"][target="_blank"][id]
 torrents.in.ua##a[href^="/"][target="_blank"][rel="nofollow"]
 picpic.online##a[href^="//"]
 lostfilm.tv##a[href^="//lostfilm.tv/shmrowse.php"]
@@ -4367,6 +4368,7 @@ cvid.kiev.ua##body > .viboom-overroll ~ *
 cvid.kiev.ua##body > .viboom-overroll ~ * *
 privatfinance.com##body > .wrap
 zippyshare.com##body > :not(.container)
+dota2.ru##body > :not([id="nakka"])
 wikianime.ru##body > [class*="clickable"]
 riotpixels.com##body > [class^="side-url-"]
 edufuture.biz,popgun.ru,xvatit.com##body > [onclick]
@@ -5090,7 +5092,7 @@ galka.if.ua#?#.main-sidebar > .widget:-abp-has(a[href]:not([href*="galka.if.ua"]
 glav.su#?#.blueHeader:-abp-contains(НОВОСТИ ПАРТНЕРОВ)
 glav.su#?#.c-bl-ad ~ .blueHeader ~ table:-abp-contains(/aftershock/i)
 gorodrabot.ru#?#body *:-abp-has(> [id] + script:-abp-contains(/advmanager|direct/i))
-dota2.ru##header > #navigation:not([class="page-width"])
+dota2.ru##header > .subline ~ style + div:not([id="navigation"]):not([class="page-width"])
 prosound.ixbt.com##header > div[style^="background"]
 headinsider.net#?#span:-abp-contains(Интересные новости)
 shazoo.ru#?##homeFeaturedContainer:-abp-has(a[href*="bit.ly"])
