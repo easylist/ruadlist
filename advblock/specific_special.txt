@@ -157,10 +157,12 @@ www.gismeteo.by,www.gismeteo.ru#?#div:-abp-has(> div > div[id*="_R-"])
 @@||tuballas.com/$~third-party,xmlhttprequest
 @@||yomichou.site/$~third-party,xmlhttprequest
 !
-$third-party,subdocument,domain=hdvb.cc
+$third-party,~script,~stylesheet,domain=hdvb.cc
 @@||cdn*hdvb.cc/vod/*.ts$xmlhttprequest,domain=hdvb.cc
 @@||hdvb.cc^*.m3u8|$xmlhttprequest,domain=hdvb.cc
+hdvb.cc##div[class*="fp-engine"]
 hdvb.cc##div[class="fp-engine"]
+||hdvb.cc^
 ||hdvb.cc^$xmlhttprequest
 ||kodik.cc/vadv/
 !
