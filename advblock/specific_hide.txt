@@ -3396,6 +3396,7 @@ neosmi.ru##[class="0"] > .firstnews
 drive2.ru##[class] + [class] [id] > [id][class]:empty
 wotspeak.ru##[class][data-ad-client]
 drive2.ru##[class][style*="important"]
+baby.ru##[class][style="min-height: 660px;max-height: 660px;overflow: hidden"]
 om1.ru##[class^="adlp"]
 slo.ru##[class^="adv_"]
 wot-news.com##[class^="adv_first"]
@@ -4316,8 +4317,8 @@ cartoonsworld.net##aside.side
 postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
-baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > div > iframe[id^="AdFox"])
-baby.ru#?#div[class^="header"] ~ div:-abp-has(> div > script:-abp-contains(/adfox/i))
+baby.ru#?#[class]:-abp-has(> .banner_google)
+baby.ru#?#[class][id]:-abp-has(> script:-abp-contains(/adfox/i))
 bigtorrent.org#?#.block:-abp-has(div:-abp-contains(Интересное))
 bioware.ru#?#.sidebar__content-wrp:-abp-has(.sidebar__image > a[href^="http://gamazavr.ru/"])
 kino-zal.tv##blink
