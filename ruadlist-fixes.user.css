@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180820.1147
+@version 0.20180823.1859
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -705,11 +705,15 @@
 }
 
 @-moz-document domain("dota2.ru") {
-    html:not(#id) > body > div[id="nakka"] {
+    html:not(#id) > body > [id]:not([style]) {
         background-image: none !important;
         padding-top: 0 !important
     }
-    body > [id="nakka"] > div[class] > div:not([id]):not([class]):not([style]) > a[href][target="_blank"], 
+    .main-b-right-c-right > .m-memes ~ *, 
+    .subline ~ :not([id="navigation"]):not([class="page-width"]), 
+    [class$="sidebar"] > :not(section):not(.section), 
+    a[href][target="_blank"][rel="nofollow"]:not([href="/news/rss/"]), 
+    body > [id] > div[class] > div:not([id]):not([class]):not([style]) > a[href][target="_blank"], 
     div[class^="b"][class*="anners"] {
         display: none !important
     }
@@ -849,7 +853,7 @@
     html > body {
         cursor: auto !important
     }
-    #bleft, #bright {
+    #bleft, #bright, #picContainer > img {
         display: none !important
     }
     #picContainer {
@@ -857,8 +861,11 @@
         margin-top: 0 !important;
         width: 600px !important
     }
-    #bcontent {
+    #bcontent, #foot-area, #footer {
         margin-top: 0 !important
+    }
+    #bfooter-container {
+        padding-top: 0 !important
     }
 }
 
