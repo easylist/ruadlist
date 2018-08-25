@@ -406,6 +406,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|1kinobi
 /^https?://proporno.org\/(?!templates|engine)/$script,domain=proporno.org
 /^https?://razlozhi\.ru/[^.]{150,}$/$script,domain=razlozhi.ru
 /^https?://www\.baby\.ru/[^.]{150,}$/$script,domain=baby.ru
+/_r*k*_frame_*.php?$domain=appmo.org|bookmo.org|eromo.org|muzmo.ru|picsmo.org|vidmo.org|vpopke.org
 /ad*.tutu.ru^*_*.php|
 /adb_checker$script,domain=coop-land.ru
 /api*iframe$subdocument,domain=get-tune.cc|iplayer.info|ipleer.fm|mp3-cc.com|sexxx.name|xmusic.name
@@ -2010,7 +2011,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||muzebra.com^*-240x400.
 ||muzico.ru//banners/
 ||muzika.ru/@/banner/$image
-||muzmo.ru^*.php?iframe_$subdocument
 ||muzoff.ru/html/
 ||muzoff.ru/rek/
 ||mxcount.com^$script,domain=gooool.org
