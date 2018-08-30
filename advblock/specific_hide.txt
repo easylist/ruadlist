@@ -3436,7 +3436,6 @@ muzofond.org##[data-cookie="mainBanner"]
 basaru.net.ru,lexxs.us##[data-dlebclicks]
 progrib.ru##[data-href*="adbl"]
 border-fan.ru,dad-fan.ru,freehat.cc,grif-fan.ru,lalapaluza.ru,simp-fan.ru,sp-fan.ru##[data-href*="branding"]
-razlozhi.ru##[data-id*="R-"]
 1kr.ua##[data-is-advert]
 myukraina.com.ua##[data-link*="goo.gl"]
 news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
@@ -4449,7 +4448,6 @@ chipfind.ru##body > table[height="80"]
 www.google.com,www.google.ru##body > table[style="border: 1px solid #369"]
 christianka.bratstvo.org##body > table[width="99%"] + p[align="center"]
 torrents-club.org##body > video
-razlozhi.ru##body [class][style*="important"]
 businessman.ru##body [style*="important"]
 all-tor.net,anti-block.org,big-tor.org,bit-tor.org,fast-bit.org,fast-tor.net,film-tor.org,free-rutor.org,free-tor.org,freedom-tor.org,hd-bit.org,kino-tor.org,mega-tor.org,mirror-rutor.org,multi-tor.org,new-ru.org,new-tor.org,no-block.org,open-tor.org,proxy-rutor.org,ru-bit.com,ru-free-tor.org,ru-tor.net,rus-tor.com,rutor.info,rutor.is,rutor.org,super-tor.net,top-tor.org,tor-bit.net,tor-ru.net,tor-ru.org,tor-unblock.org,vip-tor.org,x-bit.net,zerkalo-rutor.org##body object
 bookmo.org,eromo.org,muzmo.ru,picsmo.org,vidmo.org,vpopke.org#?#.items:-abp-has(> .item-card [src*="/images/pek.png"])
@@ -4458,8 +4456,8 @@ bt.kubyshka.org#?#td > .forabg:-abp-has(dt:-abp-contains(Проверенный 
 businessman.ru#?#div[class]:-abp-has(> div > iframe:not([src]))
 businessman.ru#?#div[class]:-abp-has(> div[id*="_R-"])
 businessman.ru,e1.ru#?#a[target]:-abp-contains(.Директ)
-businessman.ru,e1.ru,razlozhi.ru#?#body *:-abp-has(> * > * > * > a[target]:-abp-contains(.Директ))
-businessman.ru,e1.ru,razlozhi.ru#?#body *:-abp-has(> * > * > a[target]:-abp-contains(.Директ))
+businessman.ru,e1.ru#?#body *:-abp-has(> * > * > * > a[target]:-abp-contains(.Директ))
+businessman.ru,e1.ru#?#body *:-abp-has(> * > * > a[target]:-abp-contains(.Директ))
 cameleo.xyz#?#p.main:-abp-has([href*="bit.ly"])
 carrotblog.ru#?#.recomend-section:-abp-has(> .flex > :not([data-href^="http://carrotblog.ru/"]))
 flamp.ru##cat-banner
@@ -5031,6 +5029,7 @@ bless-news.com##div[style] > div[class*="Overlay"][id*="Overlay"]
 cqham.ru##div[style] > noindex a > img
 ru-minecraft.ru##div[style^="background-color: #DADADA;"]
 risovach.ru##div[style^="background: url"]
+razlozhi.ru##div[style^="background:"] > div > div[style^="height"]
 chelnyclub.ru##div[style^="clear: both"] a[href]:not([href*="chelnyclub.ru"])
 autoreview.ru##div[style^="clear:both; width:"]
 newizv.ru##div[style^="height: 400px; width: 240px;"]
@@ -5342,7 +5341,7 @@ pikabu.ru#?#.story:-abp-has([class*="sponsor"])
 pikabu.ru#?#.story:-abp-has(script:-abp-contains(/direct|adfox|advmanager/i))
 politexpert.net#?#h4:-abp-contains(Новости партнёров)
 pornogam.tv#?#.span4:-abp-has(.thumbnail > a[href*="/asd/"])
-razlozhi.ru#?#body *:-abp-has(> [data-id*="R-"])
+razlozhi.ru#?#div[class][id]:-abp-has(> div[class]:empty)
 remontka.pro#?#span:-abp-contains(Реклама)
 rgmechanics.ru#?#.block-dark:-abp-has(div[id^="advertur_"])
 riafan.ru#?#span:-abp-contains(Новости партнёров)
