@@ -5213,6 +5213,7 @@ infox.ru,radiorecord.fm,ria-m.tv#?#h2:-abp-contains(/реклама/i)
 vjazhi.ru##ins[style^="display:inline-table;"]
 it-tehnik.ru#?#aside > div[id^="custom_html"]:-abp-has(div > script)
 kakprosto.ru#?#body [class]:-abp-has(> [id] > script:-abp-contains(blockId))
+kakprosto.ru#?#body [class]:-abp-has(> [id] ~ script:-abp-contains(blockId))
 kanobu.ru#?#.news-list-item:-abp-has([href*="advert"])
 kino-live2.org,kino-live3.org#?#div[class^="right"] .ramka1:-abp-has(noindex)
 kino-zero.pro#?#.side-bt:-abp-contains(/новости/i)
