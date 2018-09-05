@@ -3304,6 +3304,11 @@ novy.tv##.wrapper > #header > a[href][target="_blank"] > img
 echo.msk.ru##.wrapper > aside ~ :not(section)
 megaresheba.ru##.wrapper > div[style^="display: block"]
 2whois.ru##.wrapper > div[style^="overflow:hidden"]
+echo.msk.ru##.wrapper aside > [class*="iblock "]
+echo.msk.ru##.wrapper aside > [class*="iblock"] > a:not([href^="/"]):not([href*="echo.msk.ru"])
+echo.msk.ru##.wrapper aside > [class*="iblock"][style]
+echo.msk.ru##.wrapper aside > [style*="240"]
+echo.msk.ru##.wrapper aside > br
 feofan.net##.wrapper-outer > .background-cover
 charter97.org##.wrapper-sponsors
 censor.net.ua##.wrapper:not(.home) > .right
@@ -3421,11 +3426,6 @@ hwp.ru##[class^="promo"]
 dokpro.club##[class^="rec_"]
 darkwebs.ws##[class^="samCodeUnit"]
 erofishki.cc,fishki.net##[class^="side"][class*="right"] div[class*="promo"]
-echo.msk.ru##[class^="sidebar "] > [class*="iblock "]
-echo.msk.ru##[class^="sidebar"] > [class*="iblock"] > a:not([href^="/"]):not([href*="echo.msk.ru"])
-echo.msk.ru##[class^="sidebar"] > [class*="iblock"][style]
-echo.msk.ru##[class^="sidebar"] > [style*="240"]
-echo.msk.ru##[class^="sidebar"] > br
 baskino.me##[class^="sitelinks"]
 all-tv.org##[class^="teaser"]
 moyskelet.ru,obrazovaka.ru##[class^="tizdiv"]
@@ -3444,8 +3444,7 @@ border-fan.ru,dad-fan.ru,freehat.cc,grif-fan.ru,lalapaluza.ru,simp-fan.ru,sp-fan
 1kr.ua##[data-is-advert]
 myukraina.com.ua##[data-link*="goo.gl"]
 news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
-echo.msk.ru##[data-role="page"] > :not([data-role])
-echo.msk.ru##[data-role="page"] > [data-role=""]
+echo.msk.ru##[data-role="page"] > :not([data-role="header"]):not([data-role="content"]):not([data-role="footer"])
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 zoneofgames.ru##[data-role="sidebarAd"]
