@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180904.157
+@version 0.20180905.1149
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -9,15 +9,6 @@
 @-moz-document domain("101.ru") {
     #layout {
         background: none !important
-    }
-}
-
-@-moz-document domain("1plus1.ua") {
-    .main-slider {
-        margin-top: 0 !important
-    }
-    .nav-prime-top, body .head {
-        top: 0 !important
     }
 }
 
@@ -1029,9 +1020,15 @@
     }
 }
 
+@-moz-document domain("gamemag.ru") {
+    body {
+        background: #121212 !important
+    }
+}
+
 @-moz-document domain("gametech.ru") {
     body {
-        background:#eee !important
+        background: #eee !important
     }
 }
 
