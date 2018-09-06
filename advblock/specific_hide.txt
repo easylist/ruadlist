@@ -3389,6 +3389,12 @@ varlamov.ru##[class*="mainbanner"]
 virusbase.ru.free-anti-spy.com##[class*="modal"]
 2ch.hk,filmytut.online##[class*="rekl"]
 online.ua##[class*="reklama"]
+echo.msk.ru##[class*="right"] > [class*="iblock "]
+echo.msk.ru##[class*="right"] > [class*="iblock"] > a:not([href^="/"]):not([href*="echo.msk.ru"])
+echo.msk.ru##[class*="right"] > [class*="iblock"] ~ br
+echo.msk.ru##[class*="right"] > [class*="iblock"][style]
+echo.msk.ru##[class*="right"] > [style*="240"]
+echo.msk.ru##[class*="right"] ~ section ~ :not(section)
 gubkinskiy.com,torrent-baza.com##[class*="rkl"]
 sexoporno.su##[class*="sam"][class*="pro"]
 hwp.ru##[class*="tbann"]
@@ -3439,8 +3445,6 @@ border-fan.ru,dad-fan.ru,freehat.cc,grif-fan.ru,lalapaluza.ru,simp-fan.ru,sp-fan
 1kr.ua##[data-is-advert]
 myukraina.com.ua##[data-link*="goo.gl"]
 news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
-echo.msk.ru##[data-role="page"] > :not([data-role="header"]):not([data-role="content"]):not([data-role="footer"])
-echo.msk.ru##[data-role="page"] > [id]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 zoneofgames.ru##[data-role="sidebarAd"]
@@ -4320,12 +4324,6 @@ poligon.by##aside#sidebar > a[href]
 cartoonsworld.net##aside.side
 postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
-echo.msk.ru##aside[class*="right"] > [class*="iblock "]
-echo.msk.ru##aside[class*="right"] > [class*="iblock"] > a:not([href^="/"]):not([href*="echo.msk.ru"])
-echo.msk.ru##aside[class*="right"] > [class*="iblock"][style]
-echo.msk.ru##aside[class*="right"] > [style*="240"]
-echo.msk.ru##aside[class*="right"] > br
-echo.msk.ru##aside[class*="right"] ~ :not(section)
 1tulatv.ru##aside[role="complementary"] > .banner
 baby.ru#?#[class]:-abp-has(> .banner_google)
 baby.ru#?#[class][id]:-abp-has(> script:-abp-contains(/adfox/i))
@@ -4371,6 +4369,8 @@ cvid.kiev.ua##body > .viboom-overroll ~ * *
 privatfinance.com##body > .wrap
 zippyshare.com##body > :not(.container)
 riotpixels.com##body > [class^="side-url-"]
+echo.msk.ru##body > [data-role] > :not(.header):not(.main):not(.footer)
+echo.msk.ru##body > [data-role] > [id]
 edufuture.biz,popgun.ru,xvatit.com##body > [onclick]
 torrents-club.org##body > [style*="fixed"]
 best-news.software##body > [style*="position: fixed"][style*="z-index"]
