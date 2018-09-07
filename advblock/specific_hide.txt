@@ -4538,6 +4538,7 @@ career.ru##div[class*="HHC-Banner-"]
 vedomosti-ural.ru##div[class*="_bnr_"] a[href^="http"]:not([href*="vedomosti-ural.ru"])
 svpressa.ru##div[class*="adfox_banner"]
 om1.ru##div[class*="adlift"]
+www.avito.ru##div[class*="ads"][id]
 regnum.ru##div[class*="ads_"]
 nuz.uz##div[class*="adv-"]
 gazeta.ru##div[class*="adv_grey"]
@@ -4764,6 +4765,7 @@ bel.ru,bitpump.ru,chem21.info,mirtesen.ru,pl.com.ua,propozitsiya.com,snow-motion
 propozitsiya.com##div[id*="bunner"]
 drom.ru,newsvl.ru,vl.ru##div[id*="candy"]
 akipress.org##div[id*="carousel"]
+www.avito.ru##div[id*="context_"] ~ *
 linux.org.ru##div[id*="interpag"]
 softbesplatno.net##div[id*="mediaget"]
 sat-digest.com##div[id*="nu_ban"]
@@ -5533,6 +5535,7 @@ wincore.ru#?#.box:-abp-has(> div > .adsbygoogle)
 vk.com#?##wk_content > #wl_post > div:-abp-has(.wall_marked_as_ads)
 world-knigi.ru#?#.module:-abp-contains(Реклама)
 www.afisha.ru#?#.selection-list__item:-abp-has(> [data-ad])
+www.avito.ru#?#div:-abp-has(> script:-abp-contains(/banner/i))
 www.goha.ru#?#div[id][class]:-abp-has(> div[id^="trurlmedia_"])
 yap.ru,yaplakal.com#?#form > table[id^="p_row_"]:nth-of-type(2):-abp-has(*:-abp-contains(Administration))
 yap.ru,yaplakal.com#?#form > table[id^="p_row_"]:nth-of-type(2):-abp-has(*:-abp-contains(member1438))
