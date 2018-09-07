@@ -3389,10 +3389,9 @@ varlamov.ru##[class*="mainbanner"]
 virusbase.ru.free-anti-spy.com##[class*="modal"]
 2ch.hk,filmytut.online##[class*="rekl"]
 online.ua##[class*="reklama"]
-echo.msk.ru##[class*="right"] > [class*="iblock "]
-echo.msk.ru##[class*="right"] > [class*="iblock"] > a:not([href^="/"]):not([href*="echo.msk.ru"])
-echo.msk.ru##[class*="right"] > [class*="iblock"] ~ br
-echo.msk.ru##[class*="right"] > [class*="iblock"][style]
+echo.msk.ru##[class*="right"] > [class] ~ br
+echo.msk.ru##[class*="right"] > [class][style] ~ [class] a:not([href^="/"]):not([href*="echo.msk.ru"])
+echo.msk.ru##[class*="right"] > [class][style]:not([id])
 echo.msk.ru##[class*="right"] > [style*="240"]
 echo.msk.ru##[class*="right"] ~ section ~ :not(section)
 gubkinskiy.com,torrent-baza.com##[class*="rkl"]
@@ -4369,8 +4368,8 @@ cvid.kiev.ua##body > .viboom-overroll ~ * *
 privatfinance.com##body > .wrap
 zippyshare.com##body > :not(.container)
 riotpixels.com##body > [class^="side-url-"]
-echo.msk.ru##body > [data-role] > :not(.header):not(.main):not(.footer)
-echo.msk.ru##body > [data-role] > [id]
+echo.msk.ru##body > [data-title] > :not(.header):not(.main):not(.footer)
+echo.msk.ru##body > [data-title] > [id]
 edufuture.biz,popgun.ru,xvatit.com##body > [onclick]
 torrents-club.org##body > [style*="fixed"]
 best-news.software##body > [style*="position: fixed"][style*="z-index"]
@@ -5069,6 +5068,7 @@ drive2.ru#?#[class]:-abp-has(> [id] > [id][class] > [class] iframe:not([src]))
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
 e1.ru#?#div[class*=" "]:-abp-has(> script:-abp-contains(blockId))
 echo.msk.ru#?#.column [class]:not(div):-abp-has(> [id] + script:-abp-contains(/advmanager/i))
+echo.msk.ru#?#[class*="right"] > [class][style] ~ [class]:-abp-has(script)
 echo.msk.ru#?#span:-abp-contains(/новости партнеров/i)
 ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партнеров))
 imtw.ru##else > .noad
