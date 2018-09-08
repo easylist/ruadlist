@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180905.1149
+@version 0.20180908.605
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -57,7 +57,7 @@
   domain("hdrezka.today"),
   domain("hdrezka.tv"),
   domain("hdrezka.win"),
-  domain("hdrezka1.cc"),
+  domain("hdrezka1.site"),
   domain("ikinohd.club"),
   domain("ikinohd.com"),
   domain("itop-gear.ru"),
@@ -301,7 +301,7 @@
 
 @-moz-document
   domain("aif.ru"),
-  domain("online-life.club") {
+  domain("onlinelife.club") {
     #container:not(#id) {
         margin-top: 0 !important
     }
@@ -870,25 +870,34 @@
 }
 
 @-moz-document domain("fastpic.ru") {
-    body:not(#id) {
-        background-image: none !important
-    }
     html > body {
         cursor: auto !important
     }
     #bleft, #bright, #picContainer > img {
         display: none !important
     }
+    #foot-area, #footer {
+        margin-top: 0 !important
+    }
     #picContainer {
-        margin-left: 300px !important;
+        margin: auto !important;
         margin-top: 0 !important;
         width: 600px !important
     }
-    #bcontent, #foot-area, #footer {
-        margin-top: 0 !important
+    #bcontent {
+        margin: auto !important;
+        margin-top: 0 !important;
+        width: 600px !important;
+        pointer-events: none !important)
     }
     #bfooter-container {
         padding-top: 0 !important
+    }
+    #bcontent > *, body > * {
+        pointer-events: auto !important
+    }
+    body {
+        pointer-events: none !important
     }
 }
 
@@ -1417,6 +1426,11 @@
     #show_adv ~ div:not(#top_3banners):not([data-metrika="superbanner_spot"]) {
         display: none !important
     }
+    .kp-direct-customize {
+        position: fixed !important;
+        top: -10000px !important;
+        left: -10000px !important
+    }
     #external_header_wrapper:not(#id) {
         top: 0 !important
     }
@@ -1790,18 +1804,18 @@
     }
 }
 
-@-moz-document domain("online-life.club") {
-    iframe#iframe[src*="player"] {
-        height: 630px !important
-    }
-}
-
 @-moz-document domain("online.animedia.tv") {
     .promo {
         display: none !important
     }
     .main-container {
         margin-top: 80px !important
+    }
+}
+
+@-moz-document domain("onlinelife.club") {
+    iframe#iframe[src*="player"] {
+        height: 630px !important
     }
 }
 
@@ -2174,6 +2188,10 @@
 }
 
 @-moz-document domain("stratege.ru") {
+    html:not(#id) {
+        background-image: none !important;
+        background: #dbdbdb !important
+    }
     #wrapper > #content {
         padding-top: 40px !important
     }
