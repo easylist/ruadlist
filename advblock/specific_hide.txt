@@ -1774,7 +1774,6 @@ alive-ua.com##.col_l_b
 itvcom.ru##.colr > h4
 bestgamer.ru##.colum_right > .blok_tb_gl:not(:last-child)
 xatab-repack.net##.colum_right noindex
-echo.msk.ru##.column > .actionBlock + script + [class]
 naurfo.ru##.column a[href][target="_blank"]
 fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmopotok.ru,pickfilm.ru,veleto.ru##.column div[style="margin: 0px;"]
 alser.kz##.columnBanner
@@ -5085,7 +5084,7 @@ drive2.ru#?#[class]:-abp-has(> [class^="cpc-card"] + [class^="cpc-card"])
 drive2.ru#?#[class]:-abp-has(> [id] > [id][class] > [class] iframe:not([src]))
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
 e1.ru#?#div[class*=" "]:-abp-has(> script:-abp-contains(blockId))
-echo.msk.ru#?#.column [class]:not(div):-abp-has(> [id] + script:-abp-contains(/advmanager/i))
+echo.msk.ru#?#.column [class*=" "]:-abp-has(> [id] + script)
 echo.msk.ru#?#[class*="right"] > [class][style] ~ [class]:-abp-has(script)
 echo.msk.ru#?#span:-abp-contains(/новости партнеров/i)
 ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партнеров))
