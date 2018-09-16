@@ -30,7 +30,7 @@ gismeteo.kz,gismeteo.lt,gismeteo.md,gismeteo.ru##[id^="weather-gis-news"]
 ! Новый дизайн gismeteo.ru и gismeteo.kz
 gismeteo.kz,gismeteo.ru##.frame_border
 gismeteo.kz,gismeteo.ru##[class^="media_"]:not(.media_with_map)
-gismeteo.kz,www.gismeteo.ru#?#body *:-abp-has(> * > * ~ script[src])
+gismeteo.kz,www.gismeteo.ru#?#body *:-abp-has(> * > * ~ script[src]:not([src="https://platform.twitter.com/widgets.js"]))
 gismeteo.kz,www.gismeteo.ru#?#body *:-abp-has(> * > [data-type] a)
 gismeteo.kzwww.gismeteo.ru#?#body :not([class]):-abp-has(> * > script:-abp-contains(abtest))
 www.gismeteo.ru#?#*:-abp-has(> #article-teaser-right)
