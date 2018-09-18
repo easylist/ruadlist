@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180911.321
+@version 0.20180918.1737
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -62,7 +62,6 @@
   domain("ikinohd.com"),
   domain("itop-gear.ru"),
   domain("ixbt.com"),
-  domain("kino-hd1080.ru"),
   domain("kinoaa.ru"),
   domain("kinobe.club"),
   domain("koshara.net"),
@@ -220,13 +219,19 @@
   domain("pro-personal.ru"),
   domain("resobr.ru"),
   domain("rnk.ru"),
+  domain("sop.com.ua"),
   domain("stroychet.ru"),
   domain("trudohrana.ru"),
   domain("ugpr.ru"),
   domain("zarplata-online.ru"),
   domain("zdrav.ru") {
-    ._top_990x70, .jqmOverlay, .jqmWindow, .megaShadow, div[class^="GbShadow"] {
+    .megaShadow, .paywall-activated, .topAdvertize {
         display: none !important
+    }
+    .body * {
+        opacity: 1 !important;
+        filter: none !important;
+        pointer-events: auto !important
     }
     body {
         overflow: auto !important
@@ -992,7 +997,7 @@
 
 @-moz-document
   domain("fullfilmhd.space"),
-  domain("kino-coin.online"),
+  domain("kino-hd1080.ru"),
   domain("torrentum.me") {
     #wrapper {
         margin-top: 0 !important
@@ -1081,11 +1086,8 @@
 }
 
 @-moz-document domain("go.mail.ru") {
-    html:not(#id) body:not(#id) .responses__wrapper > div[id^="js-"][id$="Block"] > [class$="-block"] {
-        display: none !important;
-        opacity: 0 !important;
-        pointer-events:none !important;
-        height: 0 !important
+    .responses__wrapper > div[id^="js-"][id$="Block"] > section {
+        display: none !important
     }
 }
 
@@ -1302,17 +1304,6 @@
 @-moz-document domain("kino-full.ru") {
     #wrapper {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document domain("kino-hd1080.ru") {
-    body > span * {
-        pointer-events: none !important;
-        background-image: none !important;
-        background: none !important
-    }
-    #wrapper .header {
-        position: relative !important
     }
 }
 
@@ -1674,7 +1665,7 @@
 }
 
 @-moz-document domain("my.mail.ru") {
-    .l-app__left, .l-app__right, .mimic {
+    .l-app__left, .l-app__right, div[class*="mimic"], div[class^="app-adv-"] {
         display: none !important
     }
 }
@@ -1753,6 +1744,15 @@
 
 @-moz-document domain("naruto-brand.ru") {
     #nqpR {
+        display: none !important
+    }
+}
+
+@-moz-document domain("newdeaf-online.net") {
+    .player-drop, .player-section {
+        display: block !important
+    }
+    .adv_kod_frame, .reklama.center.head {
         display: none !important
     }
 }
@@ -1973,6 +1973,12 @@
     }
 }
 
+@-moz-document domain("radikal.ru") {
+    .render_body_main {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("rambler.ru") {
     .stopper > #boxbox, .stopper > #boxfade {
         display: none !important
@@ -2110,6 +2116,13 @@
     }
     .adsbygoogle {
         max-height: 4px !important
+    }
+}
+
+@-moz-document domain("slushat-tekst-pesni.ru") {
+    .abp {
+        transform: none !important;
+        direction: ltr !important
     }
 }
 
