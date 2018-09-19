@@ -4323,6 +4323,7 @@ tochka.net##article ~ div[id^="rsswidget"]
 qip.ru##article[data-type="advert"]
 i-news.kz##aside .events-list ~ a[href][target="_blank"]
 showgid.tv##aside > .banner + .title
+kakprosto.ru##aside > :not(.block)
 mk.ru##aside > a[href="http://www.interun.ru/"]
 repetit-center.ru##aside > a[href][onclick="return !window.open(this.href)"]
 audit-it.ru##aside > div[class][style^="margin-bottom"]
@@ -4331,7 +4332,6 @@ hd-dream.ru##aside > noindex
 magtimes.info##aside img[src^="http://magtimes.info/wp-content/uploads/"]
 poligon.by##aside#sidebar > a[href]
 cartoonsworld.net##aside.side
-kakprosto.ru##aside.sidebar > :not(.block)
 postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
@@ -5121,6 +5121,7 @@ gorodrabot.ru#?#body *:-abp-has(> [id] + script:-abp-contains(/advmanager|direct
 graniru.org#?#h6:-abp-contains(Реклама)
 anitokyo.tv##header > a[href][target="_blank"]
 prosound.ixbt.com##header > div[style^="background"]
+kakprosto.ru##header ~ [class] > [class] > :not(section):not(aside)
 headinsider.net#?#span:-abp-contains(Интересные новости)
 shazoo.ru#?##homeFeaturedContainer:-abp-has(a[href*="bit.ly"])
 adcdn.tv##iframe + div[style^="position: absolute; z-index"][style*="hidden"]
@@ -5262,7 +5263,6 @@ lifehacker.ru#?#.widget_custom_html:-abp-has(div[id^="adfox_"])
 litlib.net#?#noindex tr:-abp-has(td[class^="content"]:-abp-contains(Реклама))
 lostfilmhd.ru#?#.block:-abp-has(.blocktitle:-abp-contains(Реклама))
 repack.app#?##main > .Blog > .blog-posts > .date-outer:-abp-has(a[href*="tinkoff.ru"][target="_blank"])
-kakprosto.ru##main > [class] > :not(section):not(aside)
 charming-face.ru##marquee
 9sx.ru##marquee[scrollamount]
 memesmix.net#?#div[id$="-menu"] [class*="module-body"]:-abp-has(> * > script[src]:not([src*="vk.com"]))
