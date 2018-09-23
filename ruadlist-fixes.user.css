@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180921.503
+@version 0.20180923.2202
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -17,6 +17,7 @@
   domain("24video.guru"),
   domain("24video.sexy"),
   domain("4watching.club"),
+  domain("adderall.ru"),
   domain("all-episodes.tv"),
   domain("allfilmonline.co"),
   domain("amovies.cc"),
@@ -95,7 +96,6 @@
   domain("the-rutor.org"),
   domain("torentor.co"),
   domain("torrentum.me"),
-  domain("txapela.ru"),
   domain("vc.ru"),
   domain("veleto.ru"),
   domain("videoclub.men"),
@@ -119,6 +119,7 @@
 @-moz-document
   domain("24video.guru"),
   domain("24video.sexy"),
+  domain("adderall.ru"),
   domain("aif.ru"),
   domain("epravda.com.ua"),
   domain("fast-torrent.club"),
@@ -169,7 +170,6 @@
   domain("torrent-games.net"),
   domain("torrentom.com"),
   domain("torrentum.me"),
-  domain("txapela.ru"),
   domain("userstyles.org"),
   domain("xatab-repack.net"),
   domain("zakon.kz") {
@@ -277,6 +277,20 @@
     }
     #alert {
         pointer-events: none
+    }
+}
+
+@-moz-document domain("adderall.ru") {
+    html > body:not(#id) {
+        background: #abc4a1 !important
+    }
+}
+
+@-moz-document
+  domain("adderall.ru"),
+  domain("dugtor.ru") {
+    body > #page {
+        padding-top: 0 !important
     }
 }
 
@@ -759,14 +773,6 @@
 @-moz-document domain("drive.ru") {
     body > div {
         background: none !important;
-        padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("dugtor.ru"),
-  domain("txapela.ru") {
-    body > #page {
         padding-top: 0 !important
     }
 }
@@ -1993,14 +1999,31 @@
 }
 
 @-moz-document domain("radikal.ru") {
+    body[style*="cursor"] {
+        background-image: none !important;
+        pointer-events: none !important;
+        position: relative !important
+    }
     .render_body_main {
         margin-top: 0 !important
+    }
+    body[style*="cursor"] .base-page_wrapper > * > * {
+        pointer-events: auto !important
     }
 }
 
 @-moz-document domain("rambler.ru") {
     .stopper > #boxbox, .stopper > #boxfade {
         display: none !important
+    }
+}
+
+@-moz-document domain("razlozhi.ru") {
+    body:not(#id) {
+        margin-right: 0 !important
+    }
+    body > div[class][style^="background"][style*="rgb"][style*="width"][style*="height"] {
+        width: 100% !important
     }
 }
 
@@ -2128,8 +2151,18 @@
         margin-left: 0 !important;
         margin-right: 0 !important
     }
-    #idbanner, #mainb, #soloway240, .well-google {
+    #SemestrBlock468 {
+        max-height: 11px !important;
+        opacity: 0 !important;
+        pointer-events: none !important
+    }
+    #idbanner, #mainb, .well-google {
         max-height: 41px !important;
+        opacity: 0 !important;
+        pointer-events: none !important
+    }
+    #soloway240 {
+        max-height: 42px !important;
         opacity: 0 !important;
         pointer-events: none !important
     }
@@ -2355,12 +2388,6 @@
     }
     .page__inner_branding {
         padding-top: 100px
-    }
-}
-
-@-moz-document domain("txapela.ru") {
-    html > body:not(#id) {
-        background: #abc4a1 !important
     }
 }
 
