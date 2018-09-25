@@ -188,8 +188,9 @@ news.mail.ru##.s-article__banner-place
 news.mail.ru##.s-article__spring-place
 news.mail.ru##.viewbox__slide-inner > .viewbox__side
 news.mail.ru##div[class*="rb-video-widget"]
-news.mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
-news.mail.ru#?#div[class]:-abp-has(> div > [href*="/target.my.com"])
+news.mail.ru#?#.cols__column > div > div > div[class]:-abp-has(div:-abp-contains(/директ|mytarget/i))
+news.mail.ru#?#.daynews__inner div[class]:-abp-has(div:-abp-contains(/директ|mytarget/i))
+news.mail.ru#?#.viewbox__slide-inner > div[class]:-abp-has(div:-abp-contains(/директ|mytarget/i))
 ! Погода-Mail
 pogoda.mail.ru###direct_bottom
 pogoda.mail.ru###right_300x300
