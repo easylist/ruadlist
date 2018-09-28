@@ -6,9 +6,19 @@ disk-space.ru,fortnite-battle-royale.ru,freetotalsoft.com##*
 ! Adblock fake subscribes
 37.220.36.15,cdnapponline.com,moonwalk.cc,onlinevideo.anilibria.tv,serpens.nl,staticnlcdn.com,video.kodik.name,yallaneliera.com,zserials.me,zzonlinepleer.info##body > div[id][style="display: inline-block;"],a[href*="abp:subscribe"]
 !
-! Dota2.ru
-dota2.ru##.bn-btm
-dota2.ru##a[href^="/plain/"]
+! Avito
+/^https?://www\.avito\.ru/[^\s]{500,}/$~image,~script,~stylesheet,domain=www.avito.ru
+avito.ru#?#body *:-abp-has(> * > * > * > a[href*="click"][target="_blank"])
+www.avito.ru##body * * iframe[scrolling]
+www.avito.ru##body div[id][class][lang="ru"]
+www.avito.ru##div[id*="_R-"]
+www.avito.ru##div[id^="ya_custom_block"]
+www.avito.ru##polygon[points]
+www.avito.ru#?#[class]:-abp-has(> * > * > * > * > polygon[points])
+www.avito.ru#?#[class]:-abp-has(> [class] > h2:-abp-contains(Реклама))
+www.avito.ru#?#body *:-abp-has(> * > * > iframe[scrolling])
+www.avito.ru#?#body.chrome div[class]:-abp-has(> div[id][class] + div[id][class]:empty)
+||avito.ru^*/dfp/px.js
 !
 ! GISMeteo domains
 gismeteo.md,gismeteo.ru###rbc
