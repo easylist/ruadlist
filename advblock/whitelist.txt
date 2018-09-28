@@ -105,6 +105,7 @@
 @@/728x90.$image,domain=gbsmp.ru
 @@/\:\/\/[a-z0-9]{5,}\.com\/[A-Za-z0-9]{3,}\/$/$third-party,script,stylesheet,xmlhttprequest,domain=callpy.com|kallpy.com
 @@/^https://ads.red/$popup
+@@/^https?://an\.yandex\.ru/[^\s]{5,55}$/$domain=www.avito.ru
 @@/adbox.$domain=adbox.one
 @@/adfox.$script,domain=alfabank.ru|megafon.ru
 @@/adfox.reload_code.$domain=rg.ru
@@ -913,9 +914,8 @@ mail.ru#@#.text-banner
 @@||am15.net^$script,domain=igra-prestoloff.cx|tvfru.org
 @@||an.yandex.ru/jserr/$domain=auto.ru
 @@||an.yandex.ru/jstracer|$domain=auto.ru
-@@||an.yandex.ru/system/context.js$domain=1tv.ru|auto.ru|by.tribuna.com|ctc.ru|kakprosto.ru|liveinternet.ru|minigames.mail.ru|music.yandex.ru|news.rambler.ru|news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua|radio.yandex.ru|rbc.ru|sports.ru|tv.yandex.by|tv.yandex.kz|tv.yandex.ru|tv.yandex.ua|videomore.ru|weather.rambler.ru|www.avito.ru|www.rusprofile.ru
+@@||an.yandex.ru/system/context.js$domain=1tv.ru|auto.ru|by.tribuna.com|ctc.ru|kakprosto.ru|liveinternet.ru|minigames.mail.ru|music.yandex.ru|news.rambler.ru|news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua|radio.yandex.ru|rbc.ru|sports.ru|tv.yandex.by|tv.yandex.kz|tv.yandex.ru|tv.yandex.ua|videomore.ru|weather.rambler.ru|www.rusprofile.ru
 @@||an.yandex.ru^$script,domain=tests24.ru
-@@||an.yandex.ru^$xmlhttprequest,domain=www.avito.ru
 @@||awaps.yandex.net^$script,domain=delovoe.tv|smexo.tv
 @@||awaps.yandex.net^*.gif$image,domain=1tv.ru
 @@||balashover.ru/ads/www/delivery/ajs.php$script,domain=balashover.ru
