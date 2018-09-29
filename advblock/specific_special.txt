@@ -246,6 +246,7 @@ lady.mail.ru##.bnr-240
 lady.mail.ru##.branding-p
 lady.mail.ru##.buy
 lady.mail.ru##.cols_clear > .cols__column_sidebar
+lady.mail.ru##.mailru-visibility-check
 lady.mail.ru##.p-top-banners
 lady.mail.ru##.parallax
 lady.mail.ru##.slot
@@ -255,7 +256,7 @@ lady.mail.ru##div[class*="spring rb_"]
 lady.mail.ru##div[class^="box rb_"]
 lady.mail.ru##div[class^="pc-bracing"]
 lady.mail.ru##div[data-module="PromoPopup"]
-lady.mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
+lady.mail.ru#?#div[class]:-abp-has(> div > div > div[data-id]:not(.comment):-abp-contains(/директ|mytarget/i))
 ! Hi-Tech
 hi-tech.mail.ru##.article-spec-wrap
 hi-tech.mail.ru##.b-ad_200
