@@ -5,6 +5,8 @@
 @@||cdn.ex-fs.net^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 @@||forum.pravda.com.ua^$csp=script-src 'self' * blob: data:
 @@||freebooks.site/embed/$csp=script-src 'self' * data: blob: 'unsafe-inline'
+@@||simpsonsua.com.ua/user/*/#|$csp=script-src 'self' * data:
+@@||simpsonsua.com.ua/user/*/|$csp=script-src 'self' * data:
 @@||tabfilm.online/trailer-cdn/*/|$csp=script-src 'self' * data:
 @@||zerofilm.ru/trailer-cdn/*/|$csp=script-src 'self' * data:
 ||0n-line.tv/*/|$csp=script-src 'self' * data: blob: 'unsafe-inline'
@@ -79,6 +81,7 @@
 ||russfilm.net^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||serialsite.ru^$csp=script-src 'self' * data:
 ||shaggyimg.pro^$csp=script-src 'self' * data:
+||simpsonsua.com.ua^$csp=script-src 'self' * data:
 ||snitsya-son.ru^$csp=script-src 'self' * blob: data:
 ||syl.ru/article/$csp=script-src 'self' * 'unsafe-inline' data:
 ||syl.ru/category/$csp=script-src 'self' * 'unsafe-inline' data:
@@ -106,7 +109,7 @@
 ||zerofilm.ru^$csp=script-src 'self' * data:
 ||дом-2-эфиры.рф^$csp=script-src 'self' * 'unsafe-inline' data:
 ! ---
-$script,domain=krutor.org|simpsonsua.com.ua|torrent-doza.me
+$script,domain=krutor.org|torrent-doza.me
 $third-party,image,domain=gaykursk.ru|gaynsk.ru|novgay.ru
 $third-party,object,subdocument,domain=piccash.net
 $third-party,object,subdocument,xmlhttprequest,domain=pic4you.ru|pic5you.ru
