@@ -9,14 +9,14 @@ disk-space.ru,fortnite-battle-royale.ru,freetotalsoft.com##*
 ! Avito
 /^https?://www\.avito\.ru/[^\s]{500,}/$~image,~script,~stylesheet,domain=www.avito.ru
 avito.ru#?#body *:-abp-has(> * > * > * > a[href*="click"][target="_blank"])
-www.avito.ru##body * * iframe[scrolling]
 www.avito.ru##body div[id][class][lang="ru"]
 www.avito.ru##div[id*="_R-"]
 www.avito.ru##div[id^="ya_custom_block"]
 www.avito.ru##polygon[points]
 www.avito.ru#?#[class]:-abp-has(> * > * > * > * > polygon[points])
 www.avito.ru#?#[class]:-abp-has(> [class] > h2:-abp-contains(Реклама))
-www.avito.ru#?#body *:-abp-has(> * > * > iframe[scrolling])
+www.avito.ru#?#body * * iframe[scrolling]:not([src^="https://www.google.com/recaptcha/"])
+www.avito.ru#?#body *:-abp-has(> * > * > iframe[scrolling]:not([src^="https://www.google.com/recaptcha/"]))
 www.avito.ru#?#body div[class]:-abp-has(> div[id][class] + div[id][class]:empty)
 ||avito.ru^*/dfp/px.js
 !
