@@ -898,6 +898,8 @@ zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.y
 zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__item:-abp-has(div:-abp-contains(Реkлама))
 ! Новости-Yandex
 /^https?://news\.yandex\.(by|kz|ru|ua)/[^\s]{500,}/$subdocument,xmlhttprequest,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
+! Погода
+/^https?://yandex\.(by|kz|ru|ua)/pogoda/[^\s]{500,}/$subdocument,~third-party,xmlhttprequest
 ! Yandex Music
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua###js-banner
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.ads-block *
