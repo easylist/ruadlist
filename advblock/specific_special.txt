@@ -871,9 +871,6 @@ yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 ||bs-meta.yandex.$script,xmlhttprequest
 ||bs.yandex.$script
 ||kiks.yandex.
-||tv.yandex.*/api/*?id=D$xmlhttprequest
-||tv.yandex.*/api/*?id=R$xmlhttprequest
-||tv.yandex.*/get-direct/
 ||yabs.yandex.*/show/$third-party
 ||yadi.sk^*direct?
 ||yandex.net/get-direct$domain=~direct.yandex.by|~direct.yandex.com|~direct.yandex.com.tr|~direct.yandex.fr|~direct.yandex.kz|~direct.yandex.ru|~direct.yandex.ua
@@ -900,6 +897,10 @@ zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.y
 /^https?://news\.yandex\.(by|kz|ru|ua)/[^\s]{500,}/$subdocument,xmlhttprequest,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
 ! Погода
 /^https?://yandex\.(by|kz|ru|ua)/pogoda/[^\s]{500,}/$subdocument,~third-party,xmlhttprequest
+! ТВ Yandex
+/^https?://tv\.yandex\.(by|kz|ru|ua)/[^\s]{500,}/$subdocument,~third-party,xmlhttprequest
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##div[class^="adv-manager"]
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##script[nonce] + script[nonce] + div[class]
 ! Yandex Music
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.ads-block
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.bar__driver-container
