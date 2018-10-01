@@ -894,16 +894,7 @@ yandex.ru##ymaps > div[class^="search-placemark-layout-connect_special"]
 zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__item:-abp-has([class]:-abp-contains(Yandex.Direct))
 zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__item:-abp-has(div:-abp-contains(Реkлама))
 ! Новости-Yandex
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.page-content__col_profit
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.page-content__fixed_footer-profit
-news.yandex.ru##a[href*="yandex.ru/clck/jsredir?"]:not([data-counter])
-news.yandex.ru##a[href*="yandex.ru/clck/jsredir?"]:not([data-counter]) ~ *
-news.yandex.ru##body > div:not([id]):not([class])[style*="position"][style*="padding-top"]
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##div[aria-label="Реклама"]
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#.page-content__left div[aria-label="Реклама"] ~ [class]:-abp-has(div:-abp-contains(Яндекс.Директ))
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#.stories-set:-abp-has(div:-abp-contains(Яндекс.Директ))
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#.story_view_normal:-abp-has(div:-abp-contains(Яндекс.Директ))
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#.widget:-abp-has(div:-abp-contains(Яндекс.Директ))
+/^https?://news\.yandex\.(by|kz|ru|ua)/[^\s]{500,}/$subdocument,xmlhttprequest,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
 ! Yandex Music
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua###js-banner
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.ads-block *
