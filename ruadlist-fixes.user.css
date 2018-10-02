@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20180923.2202
+@version 0.20181002.1233
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -65,6 +65,7 @@
   domain("itop-gear.ru"),
   domain("ixbt.com"),
   domain("kinoaa.ru"),
+  domain("kinobar.cc"),
   domain("kinobe.club"),
   domain("koshara.net"),
   domain("kronverkcinema.ua"),
@@ -147,6 +148,7 @@
   domain("hdrezka.win"),
   domain("ixbt.com"),
   domain("kino-full.ru"),
+  domain("kinobar.cc"),
   domain("kinokrad.su"),
   domain("kinotochka.club"),
   domain("kinotochka.pro"),
@@ -181,6 +183,7 @@
 @-moz-document
   domain("24video.guru"),
   domain("24video.sexy"),
+  domain("biqle.ru"),
   domain("fainaidea.com"),
   domain("gecid.com"),
   domain("kurkul.com"),
@@ -337,6 +340,7 @@
   domain("crocfilm.club"),
   domain("filmfullhd.net"),
   domain("gametech.ru"),
+  domain("gid-online.in"),
   domain("gidonline-hd.me"),
   domain("gidonline.in"),
   domain("hd-1080.com"),
@@ -522,7 +526,9 @@
     }
 }
 
-@-moz-document domain("audioboo.ru") {
+@-moz-document
+  domain("audioboo.info"),
+  domain("audioboo.ru") {
     .right-block-content > .slider {
         padding: 0 !important
     }
@@ -544,6 +550,14 @@
     .av-branding .page {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
+    }
+}
+
+@-moz-document domain("avito.ru") {
+    .avito-ads-container {
+        margin: 0 !important;
+        min-height: 0 !important;
+        padding-top: 0 !important
     }
 }
 
@@ -750,10 +764,9 @@
         background-image: none !important;
         padding-top: 0 !important
     }
-    .main-b-right-c-right > .m-memes ~ *, 
+    #adsincont, .main-b-right-c-right > .m-memes ~ *, 
     .subline ~ :not([id="navigation"]):not([class="page-width"]), 
     [class$="sidebar"] > :not(section):not(.section), 
-    a[href][target="_blank"][rel="nofollow"]:not([href="/news/rss/"]), 
     body > [id] > div[class] > div:not([id]):not([class]):not([style]) > a[href][target="_blank"], 
     div[class^="b"][class*="anners"] {
         display: none !important
@@ -884,6 +897,9 @@
     html > body {
         cursor: auto !important
     }
+    #picContainer > a[href] > img {
+        display: block !important
+    }
     #bleft, #bright, #picContainer > img {
         display: none !important
     }
@@ -900,6 +916,9 @@
         margin-top: 0 !important;
         width: 600px !important;
         pointer-events: none !important
+    }
+    #picContainer > img {
+        opacity: 1 !important
     }
     #bfooter-container {
         padding-top: 0 !important
