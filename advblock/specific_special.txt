@@ -355,7 +355,7 @@ games.mail.ru#?#[data-mywidget-id]:-abp-has(> [href*="//t.mail.ru/redir/"])
 health.mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
 maps.mail.ru##img[width="200"][height="30"]
 health.mail.ru##img[width="240"][height="200"]
-kino.mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
+kino.mail.ru#?#div[class]:-abp-has(> div > div > [data-id]:not(.comment):-abp-contains(/директ|mytarget/i))
 tv.mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
 ! Блокировка ресурсов в основном на самом mail.ru
 //r.mail.ru/b$subdocument
