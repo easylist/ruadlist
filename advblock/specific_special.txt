@@ -897,6 +897,26 @@ zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.y
 /^https?://yandex\.(by|kz|ru|ua)/images/(?!(search\?callback\=jQuery))[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 ! Новости-Yandex
 /^https?://news\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,xmlhttprequest,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
+@@||news.yandex.by/quotes/$csp=script-src 'self' * data:
+@@||news.yandex.by/story/$csp=script-src 'self' * data:
+@@||news.yandex.by/yandsearch?$csp=script-src 'self' * data:
+@@||news.yandex.kz/quotes/$csp=script-src 'self' * data:
+@@||news.yandex.kz/story/$csp=script-src 'self' * data:
+@@||news.yandex.kz/yandsearch?$csp=script-src 'self' * data:
+@@||news.yandex.ru/quotes/$csp=script-src 'self' * data:
+@@||news.yandex.ru/story/$csp=script-src 'self' * data:
+@@||news.yandex.ru/yandsearch?$csp=script-src 'self' * data:
+@@||news.yandex.ua/quotes/$csp=script-src 'self' * data:
+@@||news.yandex.ua/story/$csp=script-src 'self' * data:
+@@||news.yandex.ua/yandsearch?$csp=script-src 'self' * data:
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body * * div[class][id]:empty
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##polygon[points]
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#[class]:-abp-has(> * > * > * > * > polygon[points])
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body * * div[class][id]:-abp-has([href*="news.yandex"][target])
+||news.yandex.by^$csp=script-src 'self' * data:
+||news.yandex.kz^$csp=script-src 'self' * data:
+||news.yandex.ru^$csp=script-src 'self' * data:
+||news.yandex.ua^$csp=script-src 'self' * data:
 ! Погода
 /^https?://yandex\.(by|kz|ru|ua)/pogoda/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 ! ТВ Yandex
