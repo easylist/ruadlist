@@ -69,8 +69,6 @@ www.gismeteo.ru#?#*:-abp-has(> #article-teaser-right)
 ||storage2.goodgame.ru/comm/
 !
 ! Mail.ru и Одноклассники
-! Объединять правила с banner в конце не стоит - там ещё другие классы перечислены часто
-! Скрытие по-разделам
 ! Общие правила
 mail.ru###external.banner
 mail.ru###tgb
@@ -125,6 +123,11 @@ mail.ru#?#.cols__inner > .js-fixed-panel .box:-abp-has([class*="cols_experimant"
 mail.ru#?#.grid-middle__content div:-abp-has(> div:-abp-contains(Реклама))
 mail.ru#?#.rb-slot:-abp-has([id*="yandex_"])
 mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
+mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
+mail.ru#?#div[class]:-abp-has(> div > [href*="/target"])
+mail.ru#?#div[class]:-abp-has(> div > div > div[data-id]:not(.comment):-abp-contains(/директ|mytarget/i))
+mail.ru#?#div[class]:-abp-has(> div > div > div[data-id]:not(.comment):-abp-contains(Адрес и телефон))
+! Скрытие по-разделам
 ! Почта
 e.mail.ru###leftcol-banners
 e.mail.ru##.b-rb
@@ -150,7 +153,6 @@ news.mail.ru##.viewbox__slide-inner > .viewbox__side
 news.mail.ru##div[class*="rb-video-widget"]
 news.mail.ru#?#.daynews__inner div[class]:-abp-has(div:-abp-contains(/директ|mytarget/i))
 news.mail.ru#?#.viewbox__slide-inner > div[class]:-abp-has(div:-abp-contains(/директ|mytarget/i))
-news.mail.ru#?#div[class]:-abp-has(> div > div > div[data-id]:not(.comment):-abp-contains(/директ|mytarget/i))
 ! Погода-Mail
 pogoda.mail.ru###direct_bottom
 pogoda.mail.ru###right_300x300
@@ -159,7 +161,6 @@ pogoda.mail.ru##.forecast-branding-link
 pogoda.mail.ru##.informer_type-1-kstl
 pogoda.mail.ru##.mediaVertical
 pogoda.mail.ru##.sticky-springs > .advert
-pogoda.mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
 ! Auto
 auto.mail.ru##.addMain2
 auto.mail.ru##.box[class*="rb_"][class*="_target"]
@@ -172,7 +173,6 @@ auto.mail.ru##.rb-fs
 auto.mail.ru##.shadow.margin
 auto.mail.ru##.spring_top-250
 auto.mail.ru##[data-module="BrandingVideo"]
-auto.mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
 auto.mail.ru##div[class*="rb-video-widget"]
 auto.mail.ru##div[class][id^="mailru"]
 ! Afisha
@@ -195,7 +195,6 @@ lady.mail.ru##div[class*="spring rb_"]
 lady.mail.ru##div[class^="box rb_"]
 lady.mail.ru##div[class^="pc-bracing"]
 lady.mail.ru##div[data-module="PromoPopup"]
-lady.mail.ru#?#div[class]:-abp-has(> div > div > div[data-id]:not(.comment):-abp-contains(/директ|mytarget/i))
 ! Hi-Tech
 hi-tech.mail.ru##.article-spec-wrap
 hi-tech.mail.ru##.b-ad_200
@@ -235,7 +234,6 @@ horo.mail.ru##.p-top-banner
 horo.mail.ru##.rb
 horo.mail.ru##div[class^="p-branding"]
 horo.mail.ru#?#div:-abp-has(> script:-abp-contains(mimic))
-horo.mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
 ! Облако
 cloud.mail.ru##.content__left > div[id] > div[style="font-size: 13px;"] > div[style^="font-size: 90%;"]
 cloud.mail.ru##.js-layout__leftcol > div[onclick]
@@ -277,11 +275,9 @@ tv.mail.ru##div[class][id^="mailru"]
 otvet.mail.ru##div[id^="adv-slot-"]
 otvet.mail.ru##div[id^="adv-slot-"] *
 games.mail.ru#?#[data-mywidget-id]:-abp-has(> [href*="//t.mail.ru/redir/"])
-health.mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
 maps.mail.ru##img[width="200"][height="30"]
 health.mail.ru##img[width="240"][height="200"]
 kino.mail.ru#?#div[class]:-abp-has(> div > div > [data-id]:not(.comment):-abp-contains(/директ|mytarget/i))
-tv.mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
 ! Блокировка ресурсов в основном на самом mail.ru
 //r.mail.ru/b$subdocument
 //rs.mail.ru/b$domain=e.mail.ru
