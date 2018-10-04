@@ -809,7 +809,6 @@ yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.BlaBlaCarSegment
 zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body > div.article-block:not([class="article-block article-block-unstyled"]) > :not(.vk-video-post)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.b-direct
-realty.yandex.by,realty.yandex.ru,realty.yandex.ua##.b-guadeloupe
 rasp.yandex.by,rasp.yandex.kz,rasp.yandex.ru,rasp.yandex.ua##.b-yadirect
 yandex.ru,yandex.ua##.sidebar-panel-view__content div[class*="banner-layout"]
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.ua##.software-header-promo
@@ -820,12 +819,23 @@ yandex.ru##ymaps > div[class^="search-placemark-layout-connect_advert"]
 yandex.ru##ymaps > div[class^="search-placemark-layout-connect_special"]
 zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__item:-abp-has([class]:-abp-contains(Yandex.Direct))
 zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__item:-abp-has(div:-abp-contains(Реkлама))
-! Афиша-Яндекс
+! Яндекс.Афиша
 /^https?://afisha\.yandex\.(by|kz|ru|ua)/(?!api)[^\s]{300,}/$subdocument,xmlhttprequest,domain=afisha.yandex.by|afisha.yandex.kz|afisha.yandex.ru|afisha.yandex.ua
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##div[class][data-bem*="direct"]
 ! Яндекс.Картинки
 /^https?://yandex\.(by|kz|ru|ua)/images/(?!(search\?callback\=jQuery))[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
-! Новости-Yandex
+! Яндекс.Музыка
+music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.ads-block
+music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.bar__driver-container
+music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .d-overhead
+radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.slider > .slider__item_advert
+music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##[class^="audio-advert"]
+music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##div[class^="smalladv"]
+! Яндекс.Недвижимость
+realty.yandex.ru##.OffersSerpAd
+realty.yandex.ru##.b-guadeloupe
+/^https?://realty\.yandex\.ru/[^\s]{500,}/$subdocument,xmlhttprequest,domain=realty.yandex.ru
+! Яндекс.Новости
 /^https?://news\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,xmlhttprequest,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
 @@||news.yandex.by/quotes/$csp=script-src 'self' * data:
 @@||news.yandex.by/story/$csp=script-src 'self' * data:
@@ -847,13 +857,13 @@ news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body * * div[class
 ||news.yandex.kz^$csp=script-src 'self' * data:
 ||news.yandex.ru^$csp=script-src 'self' * data:
 ||news.yandex.ua^$csp=script-src 'self' * data:
-! Погода
+! Яндекс.Погода
 /^https?://yandex\.(by|kz|ru|ua)/pogoda/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="pogoda"] * * div[id]:empty
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="pogoda"] polygon[points]
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] * * div[class][id]:-abp-has([href*="pogoda"][target])
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] [class]:-abp-has(> * > * > * > * > polygon[points])
-! ТВ Yandex
+! Яндекс.Телепрограмма
 /^https?://tv\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##body * * div[class][id]:empty
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##div[class^="adv-manager"]
@@ -861,13 +871,6 @@ tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##polygon[points]
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##script[nonce] + script[nonce] + div[class]
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua#?#body * * div[class][id]:-abp-has([href*="tv.yandex"][target])
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua#?#body [class]:-abp-has(> * > * > * > * > polygon[points])
-! Yandex Music
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.ads-block
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.bar__driver-container
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .d-overhead
-radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.slider > .slider__item_advert
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##[class^="audio-advert"]
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##div[class^="smalladv"]
 !
 ! Сайты Блокнота
 bloknot-kamyshin.ru,bloknot-krasnodar.ru,bloknot-krasnoyarsk.ru,bloknot-lipetsk.ru,bloknot-moldova.md,bloknot-morozovsk.ru,bloknot-novocherkassk.ru,bloknot-rostov.ru,bloknot-shakhty.ru,bloknot-stavropol.ru,bloknot-taganrog.ru,bloknot-urupinsk.ru,bloknot-volgodonsk.ru,bloknot-volgograd.ru,bloknot-volzhsky.ru,bloknot-voronezh.ru,bloknot-yakutsk.ru###hozvo_adv
