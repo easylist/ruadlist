@@ -1071,12 +1071,10 @@ forums.sumy.ua##.Notices.PanelScroller
 forum.nag.ru##.OX[id^="OA_"]
 nahnews.org##.PSingleNews
 auto.ru##.PageCard-module__Card__creditAd
-auto.ru##.PageListingCars-module__container > :not(div):not(a) > :not(div):not(a)
-auto.ru##.PageListingCars-module__topScrollBoundary
-auto.ru##.PageListingCars-module__topScrollBoundary > :not(div):not(a)
 games-archive.net##.PostContent > noindex > center
 russiandc.com##.R
 gold-torrent.org##.RELINK
+auto.ru##.ReviewZenPromo
 therussianamerica.com##.RightColumn .Content > a
 muz.ru##.SEO
 forum.antichat.ru##.SamLink
@@ -2006,7 +2004,6 @@ poiskvps.ru##.forumbg.forumbg-table[style^="background-color:"]
 mp3sort.biz##.forumlink
 airgun.org.ru##.forumrules > a[href]:not([href*="airgun.org.ru"])
 www.radioscanner.ru##.forums ~ table[cellpadding][cellspacing]
-auto.ru##.fotorama--fullscreen [class]:not(div)[style="display: inline;"]
 mmgp.ru##.fotwdgt_bt_adw
 tvnet.lv##.fp_horiz_ads_150x150
 satsis.info##.fr-banners-main
@@ -2032,8 +2029,6 @@ ikinogo.net,kinogo.movie##.fullimg > noindex
 cmexota.ru##.fullnews > :not([id^="news-id-"])
 serial.wiki##.fullpanefn
 baskinonet.ru##.fullpost > noindex
-auto.ru##.fullscreen-modal a[href^="https://an.yandex.ru/count/"][rel="nofollow"]
-auto.ru##.fullscreen-modal a[href^="https://an.yandex.ru/count/"][rel="nofollow"] ~ *
 pure-t.ru##.fullscreen-overlay
 wkino2.net##.fullstory ~ noindex .pleer
 anison.fm##.fw.topbanner
@@ -4230,6 +4225,8 @@ zismo.biz##a[href^="http://zismo.biz/index.php?app="] > img
 vishivashka.ru##a[href^="http://zobiki.ru/"]
 rutvet.ru##a[href^="https://1ra.ru"]
 system-fx.ru##a[href^="https://adamantfinance.com/"]
+auto.ru##a[href^="https://an.yandex.ru/count/"][target]
+auto.ru##a[href^="https://an.yandex.ru/count/"][target] ~ *
 xboxland.net##a[href^="https://author24.ru/"]
 sitepokupok.ru##a[href^="https://citycard.ru/lucky"]
 study.ru##a[href^="https://inspeak.ru/"]
@@ -4333,6 +4330,7 @@ cartoonsworld.net##aside.side
 postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 1tulatv.ru##aside[role="complementary"] > .banner
+auto.ru#?#[class]:-abp-has(> * > * > a[href^="https://an.yandex.ru/count/"][target])
 baby.ru#?#[class]:-abp-has(> .banner_google)
 baby.ru#?#[class][id]:-abp-has(> script:-abp-contains(/adfox/i))
 bigtorrent.org#?#.block:-abp-has(div:-abp-contains(Интересное))
