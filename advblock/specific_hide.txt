@@ -4340,7 +4340,7 @@ bigtorrent.org#?#.block:-abp-has(div:-abp-contains(Интересное))
 bioware.ru#?#.sidebar__content-wrp:-abp-has(.sidebar__image > a[href^="http://gamazavr.ru/"])
 kino-zal.tv##blink
 2womans.ru,psysovet24.ru##blockquote
-fb.ru##body * div[id][class]:not([class*="fotorama"]):empty
+fb.ru,syl.ru##body * div[id][class]:not([class*="fotorama"]):empty
 kissfm.ua##body > #background
 fgh-game.com##body > #banner
 tourister.ru##body > #black
@@ -5390,6 +5390,8 @@ nuriknur.ucoz.com##strong > span[style="color:red"]
 livelib.ru##style + div[class$="context"]
 gazeta.ru##style + div[class*=" "]:not(.right_preview_column_link)
 hd-1080.com##style ~ noindex
+syl.ru#?#body *:-abp-has(> * > * > * > a[href^="https://www.syl.ru/"][target="_blank"])
+syl.ru#?#body *:-abp-has(> * > * > iframe[src^="https://www.syl.ru/"])
 qwe.ru##table + table tr:last-child > td:last-child > .border
 electrik.info##table > tbody > tr > td[valign="top"][align="left"][width="200"]
 antisochinenie.ru##table.text pre > [class]:empty
