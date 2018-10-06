@@ -4340,6 +4340,7 @@ bigtorrent.org#?#.block:-abp-has(div:-abp-contains(Интересное))
 bioware.ru#?#.sidebar__content-wrp:-abp-has(.sidebar__image > a[href^="http://gamazavr.ru/"])
 kino-zal.tv##blink
 2womans.ru,psysovet24.ru##blockquote
+fb.ru##body * div[id][class]:not([class*="fotorama"]):empty
 kissfm.ua##body > #background
 fgh-game.com##body > #banner
 tourister.ru##body > #black
@@ -5074,6 +5075,8 @@ erofishki.cc,fishki.net#?#[class*="side"][class*="right"] *:-abp-has(> [href*="u
 erofishki.cc,fishki.net,i-news.kz,iaropolch.ru,mediananny.com,tochka.net#?#h3:-abp-contains(Новости партнёров)
 euro-football.ru#?#.block__title:-abp-contains(Новости Партнёров)
 fainaidea.com#?#.widget:-abp-has(.block-title > span:-abp-contains(Новости партнера))
+fb.ru#?#body *:-abp-has(> * > * > * > a[href^="http://fb.ru/"][target="_blank"])
+fb.ru#?#body *:-abp-has(> * > * > iframe[src^="http://fb.ru/"])
 imageup.ru##fieldset[style^="display: inline; width: 45%;"]
 znak.com##figure
 povar.co##figure[id^="attachment"]
