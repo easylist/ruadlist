@@ -496,104 +496,41 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,progorod11.ru,progorod33.ru,progo
 ||ru/userfiles/$script,domain=pg11.ru|pg12.ru|pg13.ru|pg21.ru|prochepetsk.ru|progorod11.ru|progorod33.ru|progorod43.ru|progorod58.ru|progorod59.ru|progorod76.ru|progorodnn.ru|progoroduhta.ru
 !
 ! Rambler.RU и их проекты
-rambler.ru###adfox-billboard
-rambler.ru###ban_ruler
-ferra.ru###branding_top_link
-rambler.ru###directData
-rambler.ru###sidekickButton
+@@||autorambler.ru*/showads.js
+@@||palacesquare.rambler.ru^$domain=championat.com|gazeta.ru|lenta.ru|rambler.ru|rns.online
+@@||rambler.ru*/showads.js
+@@||ssp.rambler.ru/context.jsp?*Begun_Autocontext_$script,domain=rambler.ru
+@@||st.championat.com/shared/advertise.js|$script,domain=championat.com
+@@||static.gazeta.ru/nm2015/js/advertising.js$script,domain=www.gazeta.ru
+championat.com##.partners-content
+gazeta.ru###mediametrics
+gazeta.ru###rnet_gazeta_dzen
+gazeta.ru##.banner
+gazeta.ru#?#.sausage:-abp-contains(Новости партнеров)
+lenta.ru##div[id^="rnet_lenta"][id*="tizera"]
 mail.rambler.ru##.Direct-root-hG
-www.rambler.ru##._2Iif
-www.rambler.ru##.ad
-autorambler.ru##.ad-item-paid
-rambler.ru##.adWords
-rambler.ru##.adfox-ad
-rambler.ru##.adfox-billboard
-rambler.ru##.adsense
-rambler.ru##.advertising
-motor.ru##.adverts-bottom
+mail.rambler.ru##div[class^="Ad-root"]
+mail.rambler.ru##div[class^SentLetter-context"]
+mail.rambler.ru#@#.pub_300x250
+mail.rambler.ru#@#.pub_300x250m
+mail.rambler.ru#@#.pub_728x90
+mail.rambler.ru#@#.text-ad
+mail.rambler.ru#@#.text-ad-links
+mail.rambler.ru#@#.text-ads
+mail.rambler.ru#@#.text_ad
+mail.rambler.ru#@#.text_ads
+mail.rambler.ru#@#.textAd
+news.rambler.ru#?#.level__card:-abp-has(> [class*="banner"])
+nova.rambler.ru##.l-main-col > [class^="b-context"]
 rambler.ru##.article__banner
 rambler.ru##.article__partners
-rambler.ru##.article__read-also
-mail.rambler.ru##.asideBannerFrame
-rambler.ru##.b-advertising
-lenta.ru##.b-adverts-sidebar
-rambler.ru##.b-article-aside__banner
-lenta.ru##.b-banner-sidebar-rtb
-rambler.ru##.b-block-travels
-autorambler.ru##.banner-board
-autorambler.ru##.bannerInside
-price.ru##.banner__migkredit
-rambler.ru##.bnr
-motor.ru##.gallery-billboard
-tv.rambler.ru##.h-promo
-rambler.ru##.inbann
-motor.ru##.js-adv
-motor.ru##.js-adverts
-motor.ru##.js-adverts-top
-ag.ru##.link1
-rambler.ru##.mixednews-item_partner
-rambler.ru##.mixednews__aside > :not(.mixednews-aside-item_traffic-informer)
-rambler.ru##.news-partners
-championat.com##.partners-content
-rambler.ru##.top-topic__banner
-rambler.ru##.tp-bnpl
-rambler.ru##.vitrina_mainpage
-rambler.ru##.yn-direct
-nova.rambler.ru##[class^="b-context"][style*="!important"]
-nova.rambler.ru##[class^="b-podmes_"]
-championat.com##[class^="banner"]
-mail.rambler.ru##[data-addv]
-rambler.ru##a[class$="__yad"]
-rambler.ru##a[class$="__yad"] ~ *
-rambler.ru##a[href*="sos-news.rambler.ru"]
-ag.ru##a[href^="http://www.ag.ru/go/outer"]
-rambler.ru##div[class*="ad-fox-right-"]
-mail.rambler.ru##div[class*="adWrapper"]
-mail.rambler.ru##div[class^="adWords"]
-rambler.ru##div[class^="adfox-ban_"]
-rambler.ru##div[class^="b-reklama"]
-rambler.ru##div[class^="b_banner_"]
-championat.com##div[class^="l-popup"]
-mail.rambler.ru##div[class^="style-root"]
-lenta.ru,motor.ru,rambler.ru##div[id^="AdFox_banner_"]
-lenta.ru,motor.ru##div[id^="AdFox_iframe_"]
-lenta.ru##div[id^="rnet_lenta"][id*="tizera"]
-lenta.ru##div[id^="unit_"]
-rambler.ru.yn-direct
-www.rambler.ru#?#header ~ div[class^="_"] > div > div[class^="_"] > div[class^="_"] > div[class^="_"]:-abp-has([id^="adfox-"])
-||ag.ru/*/bottom_bg.jpg
-||ag.ru/*/flash.swf
-||ag.ru/*/top_bg.jpg
-||dsp.rambler.ru/js/html5-banner$script
-||price.ru^$third-party
-||price.ru^*/banners/migkredit$xmlhttprequest
-||rambler.ru/*/js/direct.
-||rambler.ru/export/banners.
-||rambler.ru/partner/marketgid/
-||rambler.ru/socket.io/
-||rambler.ru/upl/ad/
-||rambler.ru/upl/clients/
-||rambler.ru/upl/partners/
-||rambler.ru^*.ban?
-||ssp.rambler.ru/context.jsp?*Begun_Autocontext_$script
-!
-! Новости Rambler
-news.rambler.ru##.article-slides__cover_aside_banner
-news.rambler.ru##.article__adfox
-news.rambler.ru##.article__plista a:not([data-lpurl*="rambler.ru"])
-news.rambler.ru##.aside-banners__banner-fixed
-news.rambler.ru##.aside-banners__banner-static
-news.rambler.ru##.cemetery__item.partner
-news.rambler.ru##.columns__adfox
-news.rambler.ru##.latest__adfox
-news.rambler.ru##.media__adfox
-news.rambler.ru##.middle.j-partner
-news.rambler.ru##div[class][data-partner*="24smi"]
-!
-! Субботний Rambler
-weekend.rambler.ru##.b-rubrics__rubric-super-footer
-weekend.rambler.ru##.b-rubrics__section_right-banners
-weekend.rambler.ru##.js-vertical-banners
+rambler.ru##.comments__partners
+rambler.ru##.traffic-blocks[class*="intresting"]
+rns.online#?#div[id*="teaser-header"]:-abp-contains(Новости партнеров)
+www.rambler.ru##div[id^="adfox"]
+www.rambler.ru#?#main header ~ * div[class]:-abp-has(> div[id^="adfox"])
+www.rambler.ru#?#main header ~ * div[class^="_"] ~ div[class^="_"]:-abp-has(> div[class] > [id^="adfox"])
+||ssp.rambler.ru^$domain=autorambler.ru|championat.com|ferra.ru|gazeta.ru|lenta.ru|motor.ru|rambler.ru|rns.online|~ssp.rambler.ru
 !
 ! RBC (РБК)
 cnews.ru###mag_banner
