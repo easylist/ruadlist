@@ -391,7 +391,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|1kinobi
 /^https?://(?!static\.)([^.]+\.)+?fastpic\.ru[:/]/$script,domain=fastpic.ru
 /^https?://(?!www\.)(?!forum)([^.]+\.)+?(qrz\.ru)[:/]/$script,domain=qrz.ru
 /^https?://(?!www\.)(?!static)([^.]+\.)+?(censor\.net\.ua)[:/]/$script,domain=censor.net.ua
-/^https?://(?!www\.instagram\.com|platform\.instagram\.com|platform\.twitter\.com|connect\.facebook\.net|graph\.facebook\.com|apis\.google\.com|fonts\.googleapis\.com|connect\.ok\.ru|vk\.com|zen\.yandex\.ru|code\.giraff\.io|a\.giraff\.io)/$third-party,script,stylesheet,domain=erofishki.cc|fishki.net
+/^https?://(?!www\.instagram\.com|platform\.instagram\.com|platform\.twitter\.com|connect\.facebook\.net|graph\.facebook\.com|apis\.google\.com|fonts\.googleapis\.com|connect\.ok\.ru|vk\.com|vkontakte\.ru|code\.giraff\.io|a\.giraff\.io)/$third-party,script,stylesheet,domain=erofishki.cc|fishki.net|fox-fan.tv
 /^https?://[^\s]\.pikabu\.ru/[^\s]{300,}/$xmlhttprequest,domain=pikabu.ru
 /^https?://auto\.ru/[^\s]{300,}/$subdocument,xmlhttprequest,domain=auto.ru
 /^https?://contentbooster\.me+\/(?!manifest)[a-z0-9]{5,45}/$xmlhttprequest
