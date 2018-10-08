@@ -4376,6 +4376,7 @@ cvid.kiev.ua##body > .viboom-overroll ~ *
 cvid.kiev.ua##body > .viboom-overroll ~ * *
 privatfinance.com##body > .wrap
 zippyshare.com##body > :not(.container)
+auto.ru##body > [class*=" "]:not(div) > [class]:not(div)
 echo.msk.ru##body > [class] > script ~ :not(.header):not(.main):not(.footer)
 echo.msk.ru##body > [class] > script ~ [id]
 riotpixels.com##body > [class^="side-url-"]
@@ -4605,6 +4606,7 @@ konorama.ru##div[class="r"]
 filmon.in.ua##div[class="recepton"]
 foto.ua##div[class="side-banner"]
 seasonvar.ru##div[class="sidebar lside"] > :not(div)
+auto.ru##div[class] > [class*=" "]:not([id]):not(div) > [class]:not([id]):not(div):empty
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
 ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[class][data-element*="BANNER"]
