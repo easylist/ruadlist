@@ -132,7 +132,7 @@ mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
 mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
 mail.ru#?#div[class]:-abp-has(> div > [href*="/target"])
 mail.ru#?#div[class]:-abp-has(> div > div > div[data-id]:not(.comment):-abp-contains(Адрес и телефон))
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#div[class]:-abp-has(> div > div > div[data-id]:not(.comment):-abp-contains(/директ|mytarget/i))
+~auto.mail.ru,~e.mail.ru,mail.ru,~octavius.mail.ru#?#div[class]:-abp-has(> div > div > div[data-id]:not(.comment):-abp-contains(/директ|mytarget/i))
 ! Скрытие по-разделам
 ! Главная
 mail.ru#?#div[class^="grid"] div:-abp-has(> div > div > img[src^="data:image"][alt])
