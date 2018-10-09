@@ -4,9 +4,7 @@
 disk-space.ru,fortnite-battle-royale.ru,freetotalsoft.com##*
 !
 ! Avito
-/^https?:\/\/www\.avito\.ru\/(?!(js\/recommendations)|(js\/catalog))[^\s]{300,}/$~image,~script,~stylesheet,domain=www.avito.ru
-@@|https://www.avito.ru*/*/*?step=0|$xmlhttprequest,domain=www.avito.ru
-@@|https://www.avito.ru/payment$xmlhttprequest,domain=www.avito.ru
+/^https?://www\.avito\.ru/[^\s]{300,}/$subdocument,domain=www.avito.ru
 avito.ru#?#body *:-abp-has(> * > * > * > a[href*="click"][target="_blank"])
 www.avito.ru##body div[id][class][lang="ru"]
 www.avito.ru##div[id*="_R-"]
