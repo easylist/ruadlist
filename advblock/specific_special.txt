@@ -37,12 +37,12 @@ gismeteo.by,gismeteo.kz,gismeteo.ru##.frame_border
 gismeteo.by,gismeteo.kz,www.gismeteo.ru##.media_with_map > :not(.map_right)
 gismeteo.by,gismeteo.kz,www.gismeteo.ru##.right_col_1
 gismeteo.by,gismeteo.kz,www.gismeteo.ru##.right_col_2
-/^https?://www\.gismeteo\.(by|kz|ru)/[^.]{300,}/$xmlhttprequest,domain=www.gismeteo.by|www.gismeteo.kz|www.gismeteo.ru
+/^https?://www\.gismeteo\.(by|kz|ru)/[^.]{300,}/$subdocument,xmlhttprequest,domain=www.gismeteo.by|www.gismeteo.kz|www.gismeteo.ru
 gismeteo.by,gismeteo.kz,www.gismeteo.ru##[class^="media_"]:not(.media_with_map)
+gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body * * :not([class]) > :not([class]):-abp-has(script)
+gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body * *:-abp-has(> * > * > * > * > iframe[style="display: none !important;"])
 gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body *:-abp-has(> * > * ~ script[src^="https://www.gismeteo."])
 gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body *:-abp-has(> * > [data-type] a)
-gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body :not([class]):-abp-has(> * > script:-abp-contains(abtest))
-www.gismeteo.ru#?#*:-abp-has(> #article-teaser-right)
 !
 ! Временные фиксы для hdlight
 @@||$~third-party,xmlhttprequest,domain=37.220.36.15|blackoctopus.cc|cdn.720hd.club|cdn.ex-fs.net|cdn.ivvi.online|cdn.kinogid.me|cdn.kinogo-hq.ru|cdn.kinosky.net|cdn.profilms.top|cdnapponline.com|kino-stream.online|moon.hdkinoteatr.com|moonwalk.cc|moonwalk.center|mov.hiex.ru|online.1kinobig.ru|pandastream.cc|s1.kino-kingdom.com|serpens.nl|staticnlcdn.com|streamguard.cc|streamstorm.online|streamtomars.me|video.palevo.stream|video.showfilm.club
