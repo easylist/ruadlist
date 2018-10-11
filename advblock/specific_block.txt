@@ -396,6 +396,7 @@ $websocket,domain=0day.kiev.ua|192.102.7.159|193.106.30.70|193.106.30.84|1kinobi
 /^https?://(?!www\.instagram\.com|platform\.instagram\.com|platform\.twitter\.com|connect\.facebook\.net|graph\.facebook\.com|apis\.google\.com|fonts\.googleapis\.com|connect\.ok\.ru|vk\.com|vkontakte\.ru|code\.giraff\.io|a\.giraff\.io)/$third-party,script,stylesheet,domain=erofishki.cc|fishki.net|fox-fan.tv
 /^https?://[^\s]+\.razlozhi\.ru/[^\s]{300,}/$subdocument,xmlhttprequest,domain=razlozhi.ru
 /^https?://[^\s]\.pikabu\.ru/[^\s]{300,}/$xmlhttprequest,domain=pikabu.ru
+/^https?://aleshafilm\.com/+[0-9]{6,8}\./$script,domain=aleshafilm.com
 /^https?://auto\.ru/[^\s]{300,}/$subdocument,xmlhttprequest,domain=auto.ru
 /^https?://contentbooster\.me+\/(?!manifest)[a-z0-9]{5,45}/$xmlhttprequest
 /^https?://echo\.msk\.ru/[^\s]{500,}/$xmlhttprequest,domain=echo.msk.ru
