@@ -41,10 +41,13 @@ gismeteo.by,gismeteo.kz,www.gismeteo.ru##.right_col_2
 /^https?://www\.gismeteo\.(by|kz|ru)/[^.]{300,}/$subdocument,xmlhttprequest,domain=www.gismeteo.by|www.gismeteo.kz|www.gismeteo.ru
 /pwasw.js$domain=www.gismeteo.by|www.gismeteo.kz|www.gismeteo.ru
 gismeteo.by,gismeteo.kz,www.gismeteo.ru##[class^="media_"]:not(.media_with_map)
+gismeteo.by,gismeteo.kz,www.gismeteo.ru##[data-media-framed1]
+gismeteo.by,gismeteo.kz,www.gismeteo.ru##[data-media-middle2]
 gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#[class] ~ [class]:-abp-has(> [class] > [class] > :not([class]) > [class] > [data-type])
 gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body * * * * *:-abp-has(> * > * ~ script[src^="https://www.gismeteo."])
 gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body * * *:-abp-has(> * > [id] ~ * > script[src^="https://www.gismeteo."])
 gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body * * :not([class]) > :not([class]):-abp-has(script)
+gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body * *:-abp-has(> * > * > * > * > a[href*="/ref/?url="])
 gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body * *:-abp-has(> * > * > * > * > iframe[style="display: none !important;"])
 gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body *:-abp-has(> * > [data-type] a)
 ||criteo.net^$domain=www.gismeteo.by|www.gismeteo.kz|www.gismeteo.ru
