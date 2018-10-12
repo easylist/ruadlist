@@ -805,6 +805,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] * * div[class
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] * * div[class][id]:-abp-has([href*="pogoda"][target])
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] [class]:-abp-has(> * > * > * > * > polygon[points])
 ! Яндекс.Телепрограмма
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content__branding > .branding
 /^https?://tv\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##body * * div[class][id]:empty
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##div[class][data-url]
