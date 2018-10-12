@@ -740,8 +740,8 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##.sidebar-view div[style*="!important"]:
 /^https?://main\.zdevx\.yandex\.ru/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 yandex.ru##body[class*="b-page_infinity-zen"] a[href*="zdevx.yandex.ru"]
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_infinity-zen"] [class]:not(div):-abp-properties(background*https://yastatic.net/www/_/)
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_infinity-zen"] div[class]:-abp-properties(background*https://yastatic.net/www/_/)
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_infinity-zen"] [class]:not(div):-abp-properties(background*//yastatic.net/www/_/)
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_infinity-zen"] div[class]:-abp-properties(background*//yastatic.net/www/_/)
 yandex.ru#?#body[class*="b-page_infinity-zen"] .feed__item:-abp-has(> [class]:not([style]) > [class]:-abp-contains(/^Р/))
 ||an.yandex.$third-party
 ||an.yandex.ru/resource/context$script
