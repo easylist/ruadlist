@@ -135,8 +135,7 @@ mail.ru#?#.rb-slot:-abp-has([id*="yandex_"])
 mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
 mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
 mail.ru#?#div[class]:-abp-has(> div > [href*="/target"])
-mail.ru#?#div[class]:-abp-has(> div > div > div[data-id]:not(.comment):-abp-contains(Адрес и телефон))
-~auto.mail.ru,~e.mail.ru,mail.ru,~octavius.mail.ru#?#div[class]:-abp-has(> div > div > div[data-id]:not(.comment):-abp-contains(/директ|mytarget/i))
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#div[class]:-abp-has(> div > div > div:-abp-contains(/^адрес и телефон$|^18\+$|^директ$|^mytarget$/i))
 ! Скрытие по-разделам
 ! Главная
 mail.ru#?#div[class^="grid"] div:-abp-has(> div > div > img[src^="data:image"][alt])
@@ -164,8 +163,6 @@ news.mail.ru##.s-article__banner-place
 news.mail.ru##.s-article__spring-place
 news.mail.ru##.viewbox__slide-inner > .viewbox__side
 news.mail.ru##div[class*="rb-video-widget"]
-news.mail.ru#?#.daynews__inner div[class]:-abp-has(div:-abp-contains(/директ|mytarget/i))
-news.mail.ru#?#.viewbox__slide-inner > div[class]:-abp-has(div:-abp-contains(/директ|mytarget/i))
 ! Погода-Mail
 pogoda.mail.ru###direct_bottom
 pogoda.mail.ru###right_300x300
@@ -290,7 +287,6 @@ otvet.mail.ru##div[id^="adv-slot-"] *
 games.mail.ru#?#[data-mywidget-id]:-abp-has(> [href*="//t.mail.ru/redir/"])
 maps.mail.ru##img[width="200"][height="30"]
 health.mail.ru##img[width="240"][height="200"]
-kino.mail.ru#?#div[class]:-abp-has(> div > div > [data-id]:not(.comment):-abp-contains(/директ|mytarget/i))
 ! Блокировка ресурсов в основном на самом mail.ru
 //r.mail.ru/b$subdocument
 //rs.mail.ru/b$domain=e.mail.ru
