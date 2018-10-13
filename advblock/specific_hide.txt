@@ -504,6 +504,7 @@ allbesta.cc,allbesta.org###left noindex
 rabota.kharkov.ua###left-banners
 questtime.net###left-bot
 3dnews.ru###left-sidebar a[onclick*="/ad.3dnews.ru/www/delivery/ck.php"]
+thg.ru###left_adblock
 mail.ukr.net###left_banner
 mosgorzdrav.ru###left_banners > a[href="http://sod.mos.ru"]
 pesni-tut.com###left_block > div:not([id]):not([class])
@@ -744,6 +745,7 @@ tut.by###rightLinksBlock
 qip.ru###rightPanelBanner
 maxikarta.ru###rightRnd
 zn.ua###right_300x600
+thg.ru###right_adblock
 diary.ru###right_banner
 myvi.ru###right_banner_wrapper
 rk1.ru###right_banners img[width="230"]
@@ -1179,7 +1181,7 @@ vesti.ru##.adv-list > *
 fishki.net##.adv-placeholder-main
 demotivators.to##.adv-post
 pise4ka.net##.adv-wrapper
-tele.ru##.adv-youdo
+tele.ru,thg.ru##.adv-youdo
 promodj.com##.adv240x400
 orakul.ua##.advBlock
 orakul.ua##.advBlock ~ div
@@ -2429,7 +2431,6 @@ tonkosti.ru##.minibanner > a[href^="http://tonkosti.ru/link/"]
 trendymen.ru##.mirtesen-feed
 primanki.com##.mixma
 afisha.tut.by##.mm-main
-thg.ru##.mm_item[style="height: 43px;"]
 nur.kz##.mmc-holder-top
 dreamprogs.net##.mmenu a[href^="http"]:not([href^="http://dream"])
 huyandex.com##.mmm
@@ -5113,7 +5114,7 @@ gorodche.ru##iframe[src*="/mediametrics/"]
 maintracker.org,rutracker-org.appspot.com,rutracker.cr,rutracker.net,rutracker.nl,rutracker.org,sssr-rutracker.org##iframe[src*="/rutrk.org/iframe/"]
 hlamer.ru,kadu.ru##iframe[src*="24.avto.ru"]
 protdt.ru##iframe[src*="ADVERT"]
-mobile-review.com##iframe[src*="ad.adriver.ru"]
+mobile-review.com,thg.ru##iframe[src*="ad.adriver.ru"]
 novostroykin.ru##iframe[src*="adrai.novostroykin.ru/wow/go/"]
 liveresult.ru##iframe[src*="adserver"]
 vz.ru##iframe[src*="adv.zarabotki.ru"]
@@ -5505,6 +5506,7 @@ classic.newsru.com##td[width][valign="top"] > div[style*="overflow: hidden"]
 the-village.com.ua#?#.stk-grid:-abp-has(a[href^="https://www.facebook.com/"][target="_blank"]:not([href*="the-village"]))
 theins.ru#?#.content > .homepage_widget:-abp-has(.adsbygoogle)
 theins.ru#?#.content ~ #sidebar > .widget:-abp-contains(Опрос недели)
+thg.ru#?#table:-abp-has(> tbody > tr > td > span:-abp-contains(/^реклама$/i))
 tokino.me#?#.side-b > [class] [class]:-abp-has(> [class]:not(div) > [class]:empty)
 tokino.me#?#.tabsbox [class] [class]:-abp-has(> [class]:not(div) > [class]:empty)
 filmitorrent.org#?##torrents ~ table[style="width:100%;"] ~ *:-abp-has(a)
