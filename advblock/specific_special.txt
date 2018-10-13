@@ -782,7 +782,7 @@ news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body * * div[class
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##polygon[points]
 ! Яндекс.Погода
 /^https?://yandex\.(by|kz|ru)/pogoda/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
-/^https?://yandex\.(by|kz|ru|ua)/pogoda/[^\s]{300,}/$subdocument,~third-party
+/^https?://yandex\.ua/pogoda/[^\s]{300,}/$subdocument,~third-party
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="pogoda"] * * div[id] > :not([class]) > :not([class]) > :not(div):not([class]):empty
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="pogoda"] * * div[id] > :not([class]) > :not(div):not([class]):empty
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="pogoda"] * * div[id] > :not(div):not([class]):empty
