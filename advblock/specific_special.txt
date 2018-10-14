@@ -307,6 +307,8 @@ health.mail.ru##img[width="240"][height="200"]
 ||tv.mail.ru/popup_banner/
 !
 ! Одноклассники
+ok.ru###fourthColumnWrapper div[style="display: block; visibility: visible;"]
+ok.ru###fourthColumnWrapper div[style="visibility: visible;"]
 ok.ru###hook_Block_ForthColumnTopBanner
 ok.ru###hook_Block_LeftColumnAdCustom
 ok.ru###hook_Block_TargetBanner
@@ -323,9 +325,9 @@ ok.ru##div[data-btype*="LinkBanner"]
 ok.ru##div[data-log-click*="LinkBanner"]
 ok.ru##div[debug-fid*="BANNER"]
 ok.ru##div[id^="hook_Block_FrOln4thCol"]
-ok.ru##div[style="display: block; visibility: visible;"]
 ok.ru#?#.feed-list > div[class]:-abp-has(div[data-type*="Banner"])
 ok.ru#?#div:-abp-has(> .banner350)
+ok.ru#?#div:-abp-properties(width: 240px !important;)
 ! Очень однобокая реклама Хрома + очень часто просят удалить
 ok.ru##.update-browser_container
 ! Блокировка ресурсов за пределами mail.ru
