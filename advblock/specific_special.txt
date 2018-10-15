@@ -39,6 +39,7 @@ gismeteo.by,gismeteo.kz,www.gismeteo.ru##.media_with_map > :not(.map_right)
 gismeteo.by,gismeteo.kz,www.gismeteo.ru##.right_col_1
 gismeteo.by,gismeteo.kz,www.gismeteo.ru##.right_col_2
 gismeteo.by,gismeteo.kz,www.gismeteo.ru##[class^="media_"]:not(.media_with_map)
+gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body.page_base *:-abp-has(> * > * > * > * > a[href*="/ref/?url="])
 ! - Ловушка для обфусцированных запросов >
 /^https?://www\.gismeteo\.(by|kz|ru)/[^.]{300,}/$script,subdocument,domain=www.gismeteo.by|www.gismeteo.kz|www.gismeteo.ru
 !
