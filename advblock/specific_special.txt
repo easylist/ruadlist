@@ -104,7 +104,7 @@ mail.ru#?#.grid-middle__content div:-abp-has(> div:-abp-contains(Реклама)
 mail.ru#?#.rb-slot:-abp-has([id*="yandex_"])
 mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
 mail.ru#?#div[class]:-abp-has(> div > [href*="/adv/direct"])
-mail.ru#?#div[class]:-abp-has(> div > [href*="/target"])
+mail.ru#?#div[class]:-abp-has(> div > [href*="/target"]:not(.projects__item))
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#div[class]:-abp-has(> div > div > div:-abp-contains(/^адрес и телефон$|^18\+$|^директ$|^mytarget$/i))
 ! Скрытие по-разделам
 ! Главная
