@@ -200,16 +200,15 @@ spletnik.ru###webpush
 rambler.ru###ya-ramb-popup
 riafan.ru###yandex_widget_one
 rueconomics.ru###yawidgettext
-meduza.io##.GDPRPanel
+meduza.io##.GDPRPanel-root
 auto.ru##.IndexGetApp
-meduza.io##.Material-materialTopBar
-meduza.io##.Material-subscribe
+meduza.io##.MaterialPanel-ad
 superjob.ua##.NewMainDefaultFooter_right
 cnews.ru##.NewsBody > .video.img-block
-meduza.io##.NewsMaterial-banner
 rubukkit.org##.Notices.PanelScroller
 userstyles.org##.NotificationLine
 instagram.com##.ResponsiveBlock div:not([style]):not(:first-of-type)
+meduza.io##.Section-isBrief_subscription
 auto.ru##.StoBanner
 softportal.com##.TblRLCLR td > center > a[href] > img
 softportal.com##.TblTopBanCLR a[href="http://www.softportal.com/yabrowser.html"]
@@ -708,7 +707,7 @@ sfw.org.ua##img[width="350"][alt*="userbar"]
 kirov-portal.ru#?#div[style]:-abp-has(> div[style] > a[href="/news/akcii/"])
 lifehacker.ru#?#.flow-post:-abp-has(.meta-mark_advert)
 lifehacker.ru#?#.stripe__slot:-abp-has(.meta-mark_advert)
-meduza.io#?#.PageSection > .PageBlock:-abp-has(.MaterialTag:-abp-contains(партнерский материал))
+meduza.io#?#.Section-root > .Section-block:-abp-has(.Tag-root:-abp-contains(партнерский материал))
 motor.ru#?#div[class]:-abp-has(> [data-widget^="plista_widget"])
 newstudio.tv#?#span[class^="post"]:-abp-contains(При поддержке:)
 cnews.ru##noindex > .event_list
