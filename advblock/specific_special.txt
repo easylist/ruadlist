@@ -723,10 +723,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##.sidebar-view div[style*="!important"]:
 ##.stat_pixel_yes[onclick][class*="_layout_"][class*="_format_"]
 /^https?://main\.zdevx\.yandex\.ru/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 yandex.by,yandex.kz,yandex.ru,yandex.ua##a[href*="//ads.adfox.ru/"]
-yandex.ru##body[class*="b-page_infinity-zen"] a[href*="zdevx.yandex.ru"]
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_infinity-zen"] .widgets div[class]:not(.home-logo__default):not(.input__voice-search):-abp-properties(background*//yastatic.net/www/_/)
-yandex.ru#?#body[class*="b-page_infinity-zen"] .feed__item:-abp-has(> [class]:not([style]) > [class]:-abp-contains(/^р/i))
 ||an.yandex.ru^
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
@@ -755,6 +752,7 @@ afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##div[class][
 ! Яндекс.Дзен
 zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body > div.article-block:not([class="article-block article-block-unstyled"]) > :not(.vk-video-post):not(.youtube-embed)
 /^https?://zen\.yandex\.(by|com|com\.tr|fr|kz|ru|ua)/(?!api\/)[^\s]{300,}/$other,subdocument,~third-party,xmlhttprequest
+yandex.ru#?#body[class*="b-page_infinity"] .feed__item:-abp-has([class]:-abp-contains(/^реклама$/i))
 zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__item:-abp-has(*:-abp-contains(/^реклама$/i))
 ! Яндекс.Картинки
 /^https?://yandex\.(by|kz|ru|ua)/images/(?!(search\?callback\=jQuery)|(search\?exp_flags=)|(search\?serpid=)|(touch/search?))[^\s]{80,}/$subdocument,~third-party,xmlhttprequest
