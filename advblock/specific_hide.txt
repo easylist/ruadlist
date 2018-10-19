@@ -1950,7 +1950,6 @@ pravda.ru##.fark-message
 prostatitanet.com##.fasc-button
 villaved.ru##.fbln
 etcetera.media##.featured-entries ~ .widget_custom_html
-drive2.ru##.feed
 allboxing.ru##.fhb-banners
 twirpx.com##.file-download ~ div[class] a[href][rel="nofollow"][target="_blank"]
 libertycity.ru##.fileloadnew > .asrc
@@ -3394,7 +3393,6 @@ expert.ru##[class*="box-partners"]
 maintracker.org,rutracker.cr,rutracker.net,rutracker.nl,rutracker.org,sssr-rutracker.org##[class*="brand-link"]
 mcrate.su##[class*="commerc_panel"]
 dni.ru##[class*="container"][class*="partner"]
-drive2.ru##[class*="fake-gap"]
 hd-kinogo.co,kinogo-720p.ru,kinogo-club.com,kinogo-net-2016.ru,kinogo-net-2017.co,kinogon.co,kinopov.com,kinoprofi.su,seasonvar.cc##[class*="foon"]
 appleinsider.ru##[class*="home-credit"]
 ringside24.com##[class*="js-preload-"] > [class*=" "]:not(div)
@@ -3937,7 +3935,6 @@ best-torrentor.ru##a[href][target="_blank"][rel="nofollow"] > img
 galka.if.ua##a[href][target="_blank"][style*="block"]
 cybersport.ru##a[href][target="_blank"][style*="branding"]
 smapps.org##a[href][target="_blank"][style*="smapps.org/lead/banner/"]
-drive2.ru##a[href][target="_blank"][style^="height"]
 proshkolu.ru##a[href][target="_blank"][title*="potter.timepad.ru"]
 proshkolu.ru##a[href][target="_blank"][title="trudobr.ru"]
 drochunov.net##a[href][target="_blank"][tooltip]
@@ -5058,17 +5055,16 @@ x.epidemz.co#?##dle-content > .shortstory:-abp-has([target="_blank"])
 anistar.me#?##dle-content > div.news:-abp-has(.tags:-abp-contains(Категория: ---))
 dni.ru#?#* > :not(.right) > * > [class]:-abp-has(> [id] + script:-abp-contains(/adblk/i))
 dni.ru#?#h2:-abp-contains(новости партнеров)
-drive2.com,drive2.ru#?#*:-abp-has(> [data-slot="recommendations.teaser"])
 drive2.com,drive2.ru#?#.o-grid > .o-grid__item:-abp-has(.c-rel-label)
 drive2.com,drive2.ru#?#[class]:-abp-has(> .o-group--justify > .c-com-dv-label)
 drive2.com,drive2.ru#?#[class]:-abp-has(> [class] > [href="/promo"])
-drive2.com,drive2.ru#?#[data-mywidget-id] > [class]:-abp-has([href*="//t.mail.ru/redir/"])
-drive2.ru#?#[class]:-abp-has(> .c-header:-abp-contains(Реклама))
-drive2.ru#?#[class]:-abp-has(> [class] > .c-header:-abp-contains(Предложения компаний))
-drive2.ru#?#[class]:-abp-has(> [class][style*="important"]:not([style*="none"]))
-drive2.ru#?#[class]:-abp-has(> [class^="cpc-card"] + [class^="cpc-card"])
-drive2.ru#?#[class]:-abp-has(> [id] > [id][class] > [class] iframe:not([src]))
+drive2.com,drive2.ru#?#[data-mywidget-id] *:-abp-has(> [data-slot="recommendations.teaser"])
+drive2.com,drive2.ru#?#[data-mywidget-id] *:-abp-has([href*="//t.mail.ru/redir/"])
+drive2.ru#?#[class]:-abp-has(> [class] > h3:-abp-contains(/^предложения компаний/i))
+drive2.ru#?#[class]:-abp-has(> [class]:-abp-contains(/^реклама$/i))
 drive2.ru#?#[class]:-abp-has(> [id][class] > iframe:not([data-role]))
+drive2.ru#?#[class][style=""]:-abp-has([class]:-abp-contains(/^реклама$/i))
+drive2.ru#?#[id][class]:-abp-has([id] *:-abp-contains(/^[a-z]/))
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
 e1.ru#?#div[class*=" "]:-abp-has(> script:-abp-contains(blockId))
 echo.msk.ru#?#.column [class]:-abp-has(> [id] + script:-abp-contains(eval))
