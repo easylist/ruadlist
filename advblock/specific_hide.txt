@@ -5068,6 +5068,7 @@ drive2.ru#?#[class][style=""]:-abp-has([class]:-abp-contains(/^реклама$/i
 drive2.ru#?#[id][class]:-abp-has([id]:not(a) *:-abp-contains(/^[0-9]/))
 drive2.ru#?#[id][class]:-abp-has([id]:not(a) *:-abp-contains(/^[a-z]/i))
 drive2.ru#?#[id][class]:-abp-has([id]:not(a) *:-abp-contains(/^[а-я]/i))
+drive2.ru#?#body * [id][class]:-abp-has(> :not([id]):first-child > [class])
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
 e1.ru#?#div[class*=" "]:-abp-has(> script:-abp-contains(blockId))
 echo.msk.ru#?#.column [class]:-abp-has(> [id] + script:-abp-contains(eval))
