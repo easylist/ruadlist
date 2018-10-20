@@ -14,4 +14,6 @@
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.widgets.main > * div ~ div ~ div ~ div[class*=" "] > div[class*="_"]:style(background-image: none !important)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.widgets.main > * div ~ div ~ div ~ div[class] > div[class] > div:matches-css(cursor: pointer)
+www.drive2.ru##body * [id*="_"][class][style]:matches-css(display: block)
+www.drive2.ru##body * [id] > [id][class]:matches-css(display: block)
 ag,buzz,by,cc,city,club,co,com,gift,in,info,ink,kz,link,lol,me,name,net,online,org,pro,pw,re,rest,ru,run,su,today,tv,ua##script:inject(abort-current-inline-script.js, blur, mz_str)
