@@ -768,10 +768,10 @@ realty.yandex.ru##.b-guadeloupe
 /^https?://realty\.yandex\.ru/[^\s]{500,}/$subdocument,xmlhttprequest,domain=realty.yandex.ru
 ! Яндекс.Новости
 /^https?://news\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,xmlhttprequest,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##[id][class*="visible"]
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body * * div[class][id] > :not([class]) > :empty
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body * * div[class][id] > :not([class]) > :not([class]) > :empty
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##div[class*="i-bem"][class*="js_inited"][id^="uniq"]
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##div[id][class*="visible"]
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body * * div[class][id]:-abp-has([href*="news.yandex"][target])
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#div[class*="i-bem"][class*="js_inited"][id]:-abp-has(div:-abp-contains(/^[a-z]/))
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##polygon[points]
