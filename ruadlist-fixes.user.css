@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20181015.1904
+@version 0.20181023.2023
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -843,6 +843,12 @@
     }
 }
 
+@-moz-document domain("eksmo.ru") {
+    body {
+        overflow: auto !important
+    }
+}
+
 @-moz-document
   domain("enki.ua"),
   domain("hi-news.ru"),
@@ -1400,14 +1406,6 @@
     }
 }
 
-@-moz-document
-  domain("kinogid.me"),
-  domain("lordfilm.tv") {
-    body > .wrap {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("kinogo-hit.com") {
     .contener {
         padding-top: 0 !important
@@ -1476,6 +1474,14 @@
   domain("kinotochka.club"),
   domain("kinotochka.pro") {
     .center-box2 {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("kinoxa.me"),
+  domain("lordfilm.tv") {
+    body > .wrap {
         margin-top: 0 !important
     }
 }
@@ -2524,6 +2530,11 @@
         margin-top: 0 !important;
         max-height: 90px !important
     }
+    .branding {
+        position: fixed !important;
+        top: -10000px !important;
+        left: -10000px !important
+    }
     body > div[id^="appender_"] > div .tooltip_open {
         top: 53px !important
     }
@@ -2561,6 +2572,12 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.ua") {
+    .widgets.main > * div ~ div ~ div ~ div[class*=" "] > div[class*="_"] {
+        background-image: none !important
+    }
+    .widgets.main > * div ~ div ~ div ~ div[class*=" "] > div:not([class*=" "]):not([class*="_"]) {
+        display: none !important
+    }
     .serp-header {
         margin-top: 0 !important
     }
