@@ -786,7 +786,6 @@ mail.ru##.grid__rcol_aside.grid__rcol
 mail.ru##.js-autoupdate-notify__link
 news.mail.ru##.js-module > [class="block"] > .wrapper > div[class*=" "] > div > div[class*=" "]:not([class*="cols"]) > div > div > div:first-child:not(.box):not(.js-module)
 news.mail.ru##.js-module > [class="block"] > .wrapper > div[class*=" "] > div > div[class*=" "]:not([class*="cols"]) [class*=" box_double margin_bottom_20"] ~ .box_double.margin_bottom_20
-news.mail.ru##.js-module > [class="block"] > .wrapper > div[data-module="TrackBlocks"] table > tbody > tr > td > div:not(.daynews__item)
 mail.ru##.js-promo-popup[class*="promo"]
 my.mail.ru##.l-app__left
 my.mail.ru##.l-app__right
@@ -805,8 +804,12 @@ auto.mail.ru##.sticky-springs > .block_min-height-450
 mail.ru,sportmail.ru##.sticky[id^="notification"]
 mail.ru##.wrapper > .tbl[class*="tbl_width"]
 go.mail.ru##[class^="result__li y"]
+news.mail.ru##[data-module="FixedPanelView.Rubric"] > .block_collapse_bottom > .wrapper > div > div > div:not([class*="cols"]) > div > div > div:first-child
+news.mail.ru##[data-module="FixedPanelView.Rubric"] > .block_collapse_bottom > .wrapper > div > div > div:not([class*="cols"]) > div > div > div:first-child + div ~ div:not([name])
 mail.ru##[data-module="StickyPanel.TopButton"]
 mail.ru##[data-module="Subscription"]
+news.mail.ru##[href*="/css/p-currency-page.css"] ~ .block_collapse_top .cols__column_sidebar .margin_top_20 > div:first-child:not([class*="margin"])
+news.mail.ru##[href*="/css/p-currency-page.css"] ~ .block_collapse_top .cols__column_sidebar .margin_top_20 > div[class*="rb_"]
 mail.ru##a[id^="tb-"][class^="tb-"][target="_blank"]
 mail.ru##body > #grid a[href="//games.mail.ru"][target="_blank"]
 mail.ru##body > #grid a[href^="//minigames.mail.ru/"][target="_blank"]
@@ -825,6 +828,7 @@ sport.mail.ru##div[data-module="LazyLoad.PromoPopup"] .js-module
 news.mail.ru##div[data-module="LazyLoad.PromoPopup"] .js-module.block
 mail.ru##div[data-module="LazyLoad.PromoPopup"] .link-hdr
 mail.ru##div[data-module="LazyLoad.PromoPopup"] .link-hdr ~ *
+news.mail.ru##div[data-module="TrackBlocks"] table > tbody > tr > td > div:not(.daynews__item)
 pogoda.mail.ru##footer > div:not(:last-child)
 mail.ru#?#.cols__inner > .js-fixed-panel .box:-abp-has([class*="spring"])
 mail.ru#?#body > #grid .grid-top > .grid__container > div div[id][class]:-abp-has([href="//games.mail.ru"][target="_blank"])
