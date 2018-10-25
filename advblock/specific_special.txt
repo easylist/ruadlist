@@ -530,67 +530,39 @@ www.rambler.ru#?#main header ~ * div[class^="_"] ~ div[class^="_"]:-abp-has(> di
 !
 ! RBC (РБК)
 cnews.ru###mag_banner
-$websocket,domain=rbc.ru
-www.rbc.ru##.article__right-banners .g-banner-hide-by-exclusive ~ :not(.js-rbcslider-sticky-second)
-rbc.ru##.article__right-banners [style*="!important"]
-rbc.ru##.article__right-banners iframe
-autonews.ru,rbc.ua,rbcdaily.ru##.banner
+autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru#@##topadvert
+autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru#@#.adbottom
+autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru#@#.advert
+autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru#@#.advert__fullbanner
+autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru#@#.banner
 utro.ru##.banner-middle
 utro.ru##.banner-right
-rbc.ru##.banner.g-zindex-top
-rbc.ru,sportrbc.ru##.banner__container
-sportrbc.ru##.banner__container__link
-rbc.ru,sportrbc.ru##.banner__filmstrip
+rbc.ru,rbcplus.ru,sportrbc.ru##.banner__container
+rbc.ru,rbcplus.ru,sportrbc.ru##.banner__filmstrip
 utro.ru##.banner_bottom_art
 cnews.ru##.banner_wrapp
-rbcdaily.ru##.c-block_content_article_baner
 utro.ru##.conteiner-partner
-rbc.ru##.franchiseoffer-ownbusiness
-rbc.ru##.g-banner-hide-by-exclusive ~ style + div[class]
-rbc.ru##.g-banner__bg
 autonews.ru##.g-banner__columns
-rbc.ru,rbcplus.ru,sportrbc.ru##.g-banner__height-250
-rbc.ru##.g-banner__padding
-www.rbc.ru##.g-print-full-width.l-col-main__inner > div[class]:nth-child(1):not([id]):not(.l-row):not(.rbcslider)
-www.rbc.ru##.g-print-full-width.l-col-main__inner > div[class]:nth-child(1):not([id]):not(.l-row):not(.rbcslider) *
-rbcplus.ru##.item-big__partner
-www.rbc.ru##.js-rbcslider-multi-news + div[class]:empty + div[class]
-rbc.ru##.l-col-w-390 a[href*="/an.yandex.ru/count/"]
-rbc.ru##.l-col-w-390 iframe
-rbc.ru##.l-row.rbcslider__data > .js-article-topline + div[class][style*="!important"]
-rbc.ru##.l-row.rbcslider__data > .js-article-topline + div[class][style*="!important"] *
+autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru#@#.google_ads
 cnews.ru##.main > noindex:last-child
-rbc.ru##.rbc_adv
+autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru#@#.rbc_adv
 ##.rbcobmen
+autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru#@#.teasers
 cnews.ru##.tizer_block
+autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru#@#.topads
 cnews.ru##.yandex_banner
 /browser-updater$script,domain=rbc.ru
 /rbc.adproviders.js
-rbcdaily.ru##[class*="_adv"]
-rbc.ru##[class*="banner"] a[href*="/an.yandex.ru/count/"]
-autonews.ru##[class^="banner_"]
 cnews.ru##a[href^="http://cnb.cnews.ru/click.php"]
-rbc.ru##a[href^="https://direct.yandex.ru/?partner"]
-~cash.rbc.ru,rbc.ru##div[class*="banner"] div[style*="display: block"]
-~cash.rbc.ru,rbc.ru##div[class*="banner"] div[style*="display: block"] *
-~cash.rbc.ru,~quote.rbc.ru,rbc.ru##div[class*="banner"] ~ div[style*="display: block"]
-~cash.rbc.ru,~quote.rbc.ru,rbc.ru##div[class*="banner"] ~ div[style*="display: block"] *
-rbc.ru##div[class*="hide-by-exclusive"]
-www.rbc.ru##div[class] > [href^="https://direct.yandex.ru/?partner"] ~ div[class]
 sportrbc.ru##div[class^="bet-block"]
 cnews.ru##div[class^="cnb_popup"]
-rbc.ru##div[class^="js-checkad"]
-sportrbc.ru##div[data-banner-id="sport_shapka"]
-rbc.ru##div[id*="_R-"]
+##div[data-id^="div-gpt-ad-"]
 cnews.ru##div[id^="div-gpt-ad-"]
-rbc.ru##div[id^="mlph"]
-autonews.ru,rbc.ru,rbc.ua,rbcdaily.ru##div[id^="unit_"]
-|blob:$~script,domain=rbc.ru
+autonews.ru,rbc.ru,rbc.ua,rbcplus.ru,sportrbc.ru##div[id^="unit_"]
 ||banner.rbc.ru/
 ||cnews.ru/inc/banners/
 ||rbc.ru/img/banners/
 ||rbc.ru/yabs/*?target-ref$xmlhttprequest
-||s.rbk.ru/files_static/rbc.ru/*toyota
 ||utro.ru/*/banners/
 ||yadirect.top.rbc.ru/
 ||zoom.cnews.ru/inc/bpic/
