@@ -406,6 +406,7 @@ $xmlhttprequest,domain=mschistota.ru
 /^https?://www\.drive2\.ru/[^\s]{150,}/$xmlhttprequest,domain=www.drive2.ru
 /^https?://www\.e1\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.e1.ru
 /^https?://www\.kakprosto\.ru/[^\s]{500,}/$script,domain=www.kakprosto.ru
+/^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
 /^https?://www\.syl\.ru/[^\s]{500,}/$subdocument,xmlhttprequest,domain=syl.ru
 /_r*k*_frame_*.php?$domain=appmo.org|bookmo.org|eromo.org|muzmo.ru|picsmo.org|vidmo.org|vpopke.org
 /ad*.tutu.ru^*_*.php|
@@ -2691,6 +2692,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||stars.manystars.ru^
 ||start.parimatch.ru/bnr/
 ||stat.tvzavr.ru/advstat/
+||static-mon.yandex.net/static/main.js?pid=$domain=liveinternet.ru
 ||static.1927.kiev.ua/ads/
 ||static.1tv.ru/player/special/vast/
 ||static.apteki.su/img/banners/
