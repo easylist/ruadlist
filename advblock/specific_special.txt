@@ -713,7 +713,7 @@ afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##div[class][
 ! Яндекс.Дзен
 zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body > div.article-block:not([class="article-block article-block-unstyled"]) > :not(.vk-video-post):not(.youtube-embed)
 /^https?://zen\.yandex\.(by|com|com\.tr|fr|kz|ru|ua)/(?!api\/)[^\s]{300,}/$other,subdocument,~third-party,xmlhttprequest
-yandex.ru#?#body[class*="b-page_infinity"] .feed__item:-abp-has([class]:-abp-contains(/^реклама$/i))
+yandex.ru#?#body[class*="b-page_infinity"] .feed__item:-abp-has(> [class*="rtb"]:not([style]))
 zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__item:-abp-has(*:-abp-contains(/^реклама$/i))
 ! Яндекс.Картинки
 /^https?://yandex\.(by|kz|ru|ua)/images/(?!(search\?callback\=jQuery)|(search\?exp_flags=)|(search\?serpid=)|(touch/search?))[^\s]{80,}/$subdocument,~third-party,xmlhttprequest
