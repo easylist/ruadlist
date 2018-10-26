@@ -4377,7 +4377,6 @@ chita.ru##body > .background[style*="cursor:pointer"]
 idwl.cn##body > .brand
 novostiua.net##body > .brend
 rusporno.tv##body > .c_box > a
-gomel.today##body > .container
 comss.ru##body > .dlblock ~ .container[style="padding-top:12px;"]
 tutu.ru##body > .freespace
 2x2tv.ru##body > .gifimg
@@ -5115,6 +5114,8 @@ friday.ru#?#.rc2:-abp-has(div[id^="adfox_"])
 galka.if.ua#?#.main-sidebar > .widget:-abp-has(a[href]:not([href*="galka.if.ua"]))
 glav.su#?#.blueHeader:-abp-contains(НОВОСТИ ПАРТНЕРОВ)
 glav.su#?#.c-bl-ad ~ .blueHeader ~ table:-abp-contains(/aftershock/i)
+gomel.today#?#.article_left_block:-abp-has([id*="ScriptRoot"])
+gomel.today#?#.list-news:-abp-has(> h2:-abp-contains(/новости партнеров/i))
 gorodrabot.ru#?#body *:-abp-has(> [id] + script:-abp-contains(/advmanager|direct/i))
 graniru.org#?#h6:-abp-contains(Реклама)
 habr.com#?#.default-block_sidebar:-abp-has(.content-list_partners-block)
