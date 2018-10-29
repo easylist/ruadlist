@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20181023.2023
+@version 0.20181029.2014
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -50,6 +50,7 @@
   domain("hdrezka.link"),
   domain("hdrezka.loan"),
   domain("hdrezka.lol"),
+  domain("hdrezka.mba"),
   domain("hdrezka.name"),
   domain("hdrezka.ooo"),
   domain("hdrezka.rest"),
@@ -62,6 +63,7 @@
   domain("hdrezka1.site"),
   domain("ikinohd.club"),
   domain("ikinohd.com"),
+  domain("investxp.ru"),
   domain("itop-gear.ru"),
   domain("ixbt.com"),
   domain("kinoaa.ru"),
@@ -85,7 +87,6 @@
   domain("ostfilm.tv"),
   domain("pickfilm.ru"),
   domain("pure-t.ru"),
-  domain("rkna.xyz"),
   domain("roem.ru"),
   domain("russian-porn.online"),
   domain("serialbox.org"),
@@ -140,6 +141,7 @@
   domain("hdrezka.link"),
   domain("hdrezka.loan"),
   domain("hdrezka.lol"),
+  domain("hdrezka.mba"),
   domain("hdrezka.name"),
   domain("hdrezka.ooo"),
   domain("hdrezka.rest"),
@@ -147,6 +149,7 @@
   domain("hdrezka.today"),
   domain("hdrezka.top"),
   domain("hdrezka.win"),
+  domain("investxp.ru"),
   domain("ixbt.com"),
   domain("kino-full.ru"),
   domain("kinobar.cc"),
@@ -166,7 +169,6 @@
   domain("oblozhki.net"),
   domain("oper.ru"),
   domain("pure-t.ru"),
-  domain("rkna.xyz"),
   domain("rufootballtv.org"),
   domain("russian-porn.online"),
   domain("sc2tv.ru"),
@@ -220,6 +222,7 @@
   domain("kom-dir.ru"),
   domain("law.ru"),
   domain("lawyercom.ru"),
+  domain("medsprava.com.ua"),
   domain("menobr.ru"),
   domain("nalogplan.ru"),
   domain("pro-goszakaz.ru"),
@@ -902,10 +905,8 @@
     html > body {
         cursor: auto !important
     }
-    #picContainer > a[href] > img {
-        display: block !important
-    }
-    #bleft, #bright, #picContainer > img {
+    #bleft, #bright, #picContainer > a[href] > img:first-child, 
+    #picContainer > img {
         display: none !important
     }
     #foot-area, #footer {
@@ -921,9 +922,6 @@
         margin-top: 0 !important;
         width: 600px !important;
         pointer-events: none !important
-    }
-    #picContainer > img {
-        opacity: 1 !important
     }
     #bfooter-container {
         padding-top: 0 !important
@@ -1294,6 +1292,15 @@
     }
     body {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("investxp.ru") {
+    html > body:not(#id) {
+        background: #abc4a1 !important
+    }
+    body > #page {
+        padding-top: 0 !important
     }
 }
 
@@ -2118,15 +2125,6 @@
     }
 }
 
-@-moz-document domain("rkna.xyz") {
-    html > body:not(#id) {
-        background: #abc4a1 !important
-    }
-    body > #page {
-        padding-top: 0 !important
-    }
-}
-
 @-moz-document domain("root-nation.com") {
     body {
         cursor: auto !important
@@ -2575,7 +2573,9 @@
     .widgets.main > * div ~ div ~ div ~ div[class*=" "] > div[class*="_"] {
         background-image: none !important
     }
-    .widgets.main > * div ~ div ~ div ~ div[class*=" "] > div:not([class*=" "]):not([class*="_"]) {
+    .home-arrow__bottom, 
+    .widgets.main > * div ~ div ~ div ~ div[class*=" "] > div:not([class*=" "]):not([class*="_"]), 
+    div[aria-label="Реклама"] {
         display: none !important
     }
     .serp-header {
