@@ -1,3 +1,4 @@
+/^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,~third-party
 /_fixedPanel.js$script,domain=news.mail.ru
 /_parallax.js$script,domain=news.mail.ru
 /_relap.js$script,domain=mail.ru
@@ -117,6 +118,7 @@
 ||m24.ru/css/promo/
 ||mail.ru/cgi-bin/my/ajax?*.get_groups_popup_categories&
 ||mail.ru/push-worker.js
+||mail.yandex.*/monitoring_*?event=ads-blocked&type=
 ||mailinator.com^*/clouds-
 ||media*.goha.ru/*.js|$script
 ||meduza.io^*/specials/under-the-sun$xmlhttprequest
@@ -162,6 +164,7 @@
 ||snippets.mozilla.com^
 ||sociaplus.com^$third-party,domain=~www.yves-rocher.ru
 ||special.habrahabr.ru/api/toplink/
+||static-mon.yandex.net/static/main.js?pid=yandex_mail$xmlhttprequest
 ||static.hotjar.com^$domain=kopilkasovetov.com
 ||static.newsru.*/img/bg.gif
 ||static2.anidub.com/tracker/$domain=anime.anidub.com|online.anidub.com
