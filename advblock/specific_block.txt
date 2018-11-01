@@ -417,7 +417,8 @@ $xmlhttprequest,domain=howto-news.info|mschistota.ru
 /^https?://www\.baby\.ru/[^.]{150,}$/$script,domain=baby.ru
 /^https?://www\.drive2\.ru/[^\s]{150,}/$xmlhttprequest,domain=www.drive2.ru
 /^https?://www\.e1\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.e1.ru
-/^https?://www\.kakprosto\.ru/[^\s]{500,}/$script,xmlhttprequest,domain=www.kakprosto.ru
+/^https?://www\.kakprosto\.ru/[^\s]{300,}/$xmlhttprequest,domain=www.kakprosto.ru
+/^https?://www\.kakprosto\.ru/[^\s]{500,}/$script,domain=www.kakprosto.ru
 /^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
 /^https?://www\.syl\.ru/[^\s]{500,}/$subdocument,xmlhttprequest,domain=syl.ru
 /ad*.tutu.ru^*_*.php|
