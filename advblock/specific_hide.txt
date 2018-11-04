@@ -3426,10 +3426,12 @@ virusbase.ru.free-anti-spy.com##[class*="modal"]
 besplatka.ua##[class*="promotion"]
 2ch.hk,filmytut.online##[class*="rekl"]
 online.ua##[class*="reklama"]
+echo.msk.ru##[class*="right"] > [class*="240"]
+echo.msk.ru##[class*="right"] > [class*="240"] ~ [class] > script ~ a[href][target="_blank"]
 echo.msk.ru##[class*="right"] > [class] ~ br
 echo.msk.ru##[class*="right"] > [class][style] ~ [class] a:not([href^="/"]):not([href*="echo.msk.ru"])
 echo.msk.ru##[class*="right"] > [class][style]:not([id])
-echo.msk.ru##[class*="right"] > [style*="240"]
+echo.msk.ru##[class*="right"] > [style*="240"]:not([id])
 echo.msk.ru##[class*="right"] ~ section ~ :not(section)
 gubkinskiy.com,torrent-baza.com##[class*="rkl"]
 sexoporno.su##[class*="sam"][class*="pro"]
@@ -4843,6 +4845,7 @@ indigomath.ru##div[id^="ad_id"]
 eg.ru##div[id^="ad_ph_"]
 imagenizr.net##div[id^="adblock-"]
 menquestions.ru##div[id^="add_rek"]
+echo.msk.ru##div[id^="adfox_"]
 66.ru##div[id^="adlift_swf"]
 baginya.org,topmmo-games.ru##div[id^="admitad"]
 vesti-ukr.com##div[id^="adpartner-vunit"]
@@ -5012,6 +5015,7 @@ e1.ru,fishki.net,gdzplus.ru,itchief.ru,kurs.com.ru,kurs.com.ua,mir24.tv,onlinegd
 alcogolizm.com##div[id^="yazd_"]
 mega-stars.ru##div[id^="youtube_ad_"]
 fishki.net##div[id^="zcbclk"]
+echo.msk.ru##div[id^id="unit_"]
 litmir.co,litmir.info,litmir.me##div[jq^="ReadRightBanner"]
 ura.news##div[ng-bind-html="item.right_banner"]
 avtonavideo.ru,chinimavto.ru,minecraftnavideo.ru,multivarki-redmond.ru,odezhda2.ru,piling.re,pol-video.ru,prigotovit.org,prohozhuigru.ru,remontnavideo.ru,shiny2.ru,televizor2.ru##div[onclick*="SkipR"]
@@ -5096,7 +5100,6 @@ drive2.com,www.drive2.ru#?#[data-mywidget-id] *:-abp-has([href*="//t.mail.ru/red
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
 e1.ru#?#div[class*=" "]:-abp-has(> script:-abp-contains(blockId))
 echo.msk.ru#?#.column [class]:-abp-has(> [id] + script:-abp-contains(eval))
-echo.msk.ru#?#[class*="right"] > [class][style] ~ [class]:-abp-has(script)
 echo.msk.ru#?#span:-abp-contains(/новости партнеров/i)
 ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партнеров))
 imtw.ru##else > .noad
@@ -5615,7 +5618,7 @@ zoom.cnews.ru##.promo_block
 rafkino.com##.ytp-ad-progress-list
 hdkinoteatr.com##a[href*="/onvix.tv/promo/"][target=_blank]
 ria.ru##a[href][data-ad-link]
-kubik3.ru,vnx.su##div[id*="ScriptRoot"]
+echo.msk.ru,kubik3.ru,vnx.su##div[id*="ScriptRoot"]
 hdkinoteatr.com##div[id][onclick][onmouseup]
 football.kulichki.net,joyreactor.cc,kubik3.ru,reactor.cc##div[id^="M"][id*="Composite"]
 hdkinoteatr.com,kubik3.ru,planetaua.net,rafkino.com##div[id^="MarketGid"]
