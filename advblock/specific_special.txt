@@ -44,25 +44,13 @@ gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body.page_base *:-abp-has(> * > * > * 
 /^https?://www\.gismeteo\.(by|kz|ru)/[^.]{300,}/$script,subdocument,domain=www.gismeteo.by|www.gismeteo.kz|www.gismeteo.ru
 !
 ! HDLight
+$third-party,xmlhttprequest,domain=mastarti.com
 @@||$~third-party,xmlhttprequest,domain=37.220.36.15|blackoctopus.cc|cdn.720hd.club|cdn.ex-fs.net|cdn.ivvi.online|cdn.kinogo-hq.ru|cdn.kinosky.net|cdn.kinoxa.me|cdn.profilms.top|cdnapponline.com|kino-stream.online|moon.hdkinoteatr.com|moonwalk.cc|moonwalk.center|mov.hiex.ru|online.1kinobig.ru|pandastream.cc|s1.kino-kingdom.com|serpens.nl|staticnlcdn.com|streamguard.cc|streamstorm.online|streamtomars.me|video.palevo.stream|video.showfilm.club
-@@||actelecup.com^$xmlhttprequest
-@@||algidri.com^$xmlhttprequest
-@@||ampatcape.com^$xmlhttprequest
-@@||aquelosc.com^$xmlhttprequest
-@@||bielati.com^$xmlhttprequest
-@@||buchome.com^$xmlhttprequest
-@@||cecidio.com^$xmlhttprequest
+@@||185.38.12.*^$xmlhttprequest,domain=mastarti.com
+@@||37.220.39.*^$xmlhttprequest,domain=mastarti.com
+@@||backend.irsdn.net^$xmlhttprequest,domain=mastarti.com
 @@||empismaph.com^$xmlhttprequest
-@@||enduenood.com^$xmlhttprequest
-@@||fanfusar.com^$xmlhttprequest
-@@||intitupad.com^$xmlhttprequest
-@@||litodoer.com^$xmlhttprequest
-@@||lymocommy.com^$xmlhttprequest
-@@||palespe.com^$xmlhttprequest
-@@||rostoci.com^$xmlhttprequest
 @@||streamguard.cc^$xmlhttprequest,domain=streamstorm.online|streamtomars.me
-@@||striedmax.com^$xmlhttprequest
-@@||uppidareg.com^$xmlhttprequest
 !
 ! HDLight фикс для яндекса
 $third-party,xmlhttprequest,domain=streamguard.cc
