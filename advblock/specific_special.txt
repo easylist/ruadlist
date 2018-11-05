@@ -126,6 +126,10 @@ e.mail.ru##a[href*="/an.yandex.ru/count/"][target="_blank"]
 e.mail.ru#?#div:-abp-has(> * > * > * > * > [data-id]:-abp-contains(/^Директ$/))
 ||an.mail.ru/count/$image
 ! News
+! Скрытие при обходе блокировки рекламы с целью продвижения фейков и мошенников
+news.mail.ru##.js-module > .block > .wrapper > :not(.cols):not(.hdr):not(.p-grid-abs):not(.collections):not(.js-module)
+news.mail.ru##body > :not(#pratikabuSTTDiv):not([id="portal-headline"]):not([id="portal-menu"]):not(.js-popup_gallery):not([class="layout"])
+!
 news.mail.ru###doubleformat_down
 news.mail.ru###p-Ears-Cont
 news.mail.ru##.b-bannered
