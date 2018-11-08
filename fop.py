@@ -62,8 +62,8 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt", "antinuha.txt",
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = ("collapse", "document", "elemhide", "font", "generichide", "genericblock",
                 "image", "match-case", "media", "object", "object-subrequest", "other",
-				"ping", "popup", "script", "stylesheet", "subdocument",
-				"third-party", "websocket", "xmlhttprequest")
+                "ping", "popup", "script", "stylesheet", "subdocument",
+                "third-party", "websocket", "xmlhttprequest")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
@@ -268,6 +268,8 @@ def filtertidy (filterin):
             if option[0:7] == "domain=":
                 domainlist.extend(option[7:].split("|"))
                 removeentries.append(option)
+            elif option[0:8] == "rewrite=":
+                pass
             elif option.strip("~") not in KNOWNOPTIONS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
         # Sort all options other than domain alphabetically with a few exceptions
