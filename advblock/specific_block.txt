@@ -105,10 +105,8 @@
 ||www.seriali-online.su^$csp=script-src 'self' * 'unsafe-inline' data:
 ||www.zakon.kz/$csp=script-src 'self' * 'unsafe-inline' data:
 ||x-true.info^$csp=script-src 'self' * blob: data:
-||xn---2--mddxunv8a2esa.xn--p1ai^$csp=script-src 'self' * 'unsafe-inline' data:
 ||zdorovybudte.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ||zerofilm.ru^$csp=script-src 'self' * data:
-||дом-2-эфиры.рф^$csp=script-src 'self' * 'unsafe-inline' data:
 ! ---
 $script,domain=krutor.org|torrent-doza.me
 $subdocument,domain=appmo.org|bookmo.org|eromo.org|hitmo.org|muzmo.ru|nasimke.com|picsmo.org|vidmo.org|vpopke.org
@@ -403,7 +401,7 @@ $xmlhttprequest,domain=howto-news.info|mschistota.ru
 /^https?://(?!static\.)([^.]+\.)+?fastpic\.ru[:/]/$script,domain=fastpic.ru
 /^https?://(?!www\.)(?!forum)([^.]+\.)+?(qrz\.ru)[:/]/$script,domain=qrz.ru
 /^https?://(?!www\.)(?!static)([^.]+\.)+?(censor\.net\.ua)[:/]/$script,domain=censor.net.ua
-/^https?://(?!www\.instagram\.com|platform\.instagram\.com|platform\.twitter\.com|cdn\.syndication\.twimg\.com|cdn\.jsdelivr\.net|playercdn\.cdnvideo\.ru|connect\.facebook\.net|graph\.facebook\.com|apis\.google\.com|fonts\.googleapis\.com|connect\.ok\.ru|vk\.com|vkontakte\.ru|code\.giraff\.io|a\.giraff\.io)/$third-party,script,stylesheet,xmlhttprequest,domain=erofishki.cc|fishki.net|fox-fan.tv|sport-express.ru
+/^https?://(?!www\.instagram\.com|platform\.instagram\.com|platform\.twitter\.com|cdn\.syndication\.twimg\.com|cdn\.jsdelivr\.net|playercdn\.cdnvideo\.ru|connect\.facebook\.net|graph\.facebook\.com|apis\.google\.com|fonts\.googleapis\.com|connect\.ok\.ru|vk\.com|vkontakte\.ru|api\.vk\.com|code\.giraff\.io|a\.giraff\.io)/$third-party,script,stylesheet,xmlhttprequest,domain=erofishki.cc|fishki.net|fox-fan.tv|sport-express.ru|xn---2--mddxunv8a2esa.xn--p1ai|дом-2-эфиры.рф
 /^https?://24smi\.org/[^\s]{200,}/$script,xmlhttprequest,domain=24smi.org
 /^https?://[^\s]+\.razlozhi\.ru/[^\s]{300,}/$subdocument,xmlhttprequest,domain=razlozhi.ru
 /^https?://[^\s]\.pikabu\.ru/[^\s]{300,}/$xmlhttprequest,domain=pikabu.ru
