@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20181106.1618
+@version 0.20181111.2118
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -1145,7 +1145,7 @@
 }
 
 @-moz-document domain("gtavicecity.ru") {
-    .body-container {
+    .wrapper-body {
         margin-top: 0 !important
     }
 }
@@ -1485,7 +1485,7 @@
 }
 
 @-moz-document
-  domain("kinoxa.me"),
+  domain("kinoxa.net"),
   domain("lordfilm.tv") {
     body > .wrap {
         margin-top: 0 !important
@@ -2011,7 +2011,7 @@
     }
 }
 
-@-moz-document domain("prostoporno.sexy") {
+@-moz-document domain("prostoporno.vip") {
     .has_adv .content_wrapper {
         margin-top: 0 !important
     }
