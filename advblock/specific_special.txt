@@ -732,9 +732,10 @@ radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.slider > .slid
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##[class^="audio-advert"]
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##div[class^="smalladv"]
 ! Яндекс.Недвижимость
+realty.yandex.ru##.Ad
 realty.yandex.ru##.OffersSerpAd
 realty.yandex.ru##.b-guadeloupe
-/^https?://realty\.yandex\.ru/[^\s]{500,}/$subdocument,xmlhttprequest,domain=realty.yandex.ru
+/^https?://realty\.yandex\.ru/[^\s]{500,}/$subdocument,domain=realty.yandex.ru
 ! Яндекс.Новости
 /^https?://news\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,xmlhttprequest,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body * * div[class][id] > :not([class]) > :empty
