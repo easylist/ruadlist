@@ -5,13 +5,19 @@ disk-space.ru,fortnite-battle-royale.ru,freetotalsoft.com##*
 !
 ! Avito
 /^https?://www\.avito\.ru/[^\s]{300,}/$subdocument,domain=www.avito.ru
-www.avito.ru#?#[class]:-abp-has(> [class] > h2:-abp-contains(Pеклама))
-www.avito.ru#?#body *:-abp-has(> * > * > * > a[href^="https://www.avito.ru/"][target="_blank"])
-www.avito.ru#?#body *:-abp-has(> * > * > iframe[src^="https://www.avito.ru/"])
-www.avito.ru#?#body div[class]:-abp-has(> div[id][class] + div[id][class]:empty)
+www.avito.ru##a[href^="https://www.avito.ru/js"][target="_blank"]
+www.avito.ru#?#body *:-abp-has(> * > * > * > a[href^="https://www.avito.ru/js"][target="_blank"])
+www.avito.ru#?#body *:-abp-has(> * > * > * > div[id^="sf-"])
+www.avito.ru#?#body *:-abp-has(> * > * > a[href^="https://www.avito.ru/js"][target="_blank"])
+www.avito.ru#?#body *:-abp-has(> * > * > div[id^="sf-"])
+www.avito.ru#?#body *:-abp-has(> * > a[href^="https://www.avito.ru/js"][target="_blank"])
+www.avito.ru#?#body *:-abp-has(> * > div[id^="sf-"])
+www.avito.ru#?#body *:-abp-has(> a[href^="https://www.avito.ru/js"][target="_blank"])
+www.avito.ru#?#body *:-abp-has(> div[id^="sf-"])
 www.avito.ru##body div[id][class][lang="ru"]
-www.avito.ru##div[id*="_R-"]
-www.avito.ru##div[id^="ya_custom_block"]
+www.avito.ru#?#div:-abp-has(> [class] > h2:-abp-contains(Pеклама))
+www.avito.ru##div[id^="sf-"]
+avito.ru#$#hide-if-shadow-contains *
 ||avito.ru^*/dfp/px.js
 ||criteo.net^$domain=avito.ru
 ||taboola.com^$domain=avito.ru
