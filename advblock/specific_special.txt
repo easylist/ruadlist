@@ -716,8 +716,11 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##.sidebar-view div[style*="!important"]:
 ##.spec-adv
 ##.stat_pixel_yes[onclick][class*="_layout_"][class*="_format_"]
 /^https?://main\.zdevx\.yandex\.ru/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#[class]:-abp-has(> [class] > [id^="sf-"])
+yandex.by,yandex.kz,yandex.ru,yandex.ua##[id^="sf-"]
 yandex.by,yandex.kz,yandex.ru,yandex.ua##a[href*="//ads.adfox.ru/"]
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
+yandex.by,yandex.kz,yandex.ru,yandex.ua#$#hide-if-shadow-contains *
 ||an.yandex.ru^
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
@@ -742,7 +745,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##div[data-block="banner-view"]
 yandex.ru##ymaps > div[class^="search-placemark-layout-connect_advert"]
 yandex.ru##ymaps > div[class^="search-placemark-layout-connect_special"]
 ! Яндекс.Афиша
-afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##.grid__container > .i-metrika-timing
+afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##.i-metrika-timing
 /^https?://afisha\.yandex\.(by|kz|ru|ua)/(?!api)[^\s]{300,}/$subdocument,xmlhttprequest,domain=afisha.yandex.by|afisha.yandex.kz|afisha.yandex.ru|afisha.yandex.ua
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##div[class][data-bem*="direct"]:not([data-bem*="directions"])
 ! Яндекс.Дзен
@@ -766,26 +769,21 @@ realty.yandex.ru##.b-guadeloupe
 /^https?://realty\.yandex\.ru/[^\s]{500,}/$subdocument,domain=realty.yandex.ru
 ! Яндекс.Новости
 /^https?://news\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,xmlhttprequest,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body * * div[class][id] > :not([class]) > :empty
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body * * div[class][id] > :not([class]) > :not([class]) > :empty
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body * * div[class][id]:-abp-has([href*="news.yandex"][target])
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#div[class*="i-bem"][class*="js_inited"][id]:-abp-has(div:-abp-contains(/^[a-z]/))
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##div[class*="i-bem"][class*="js_inited"][id^="uniq"]
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##polygon[points]
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##a[href*="news.yandex"][target]
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > * > * > a[href*="news.yandex"][target])
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > * > a[href*="news.yandex"][target])
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > a[href*="news.yandex"][target])
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > a[href*="news.yandex"][target])
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> a[href*="news.yandex"][target])
 ! Яндекс.Погода
 /^https?://yandex\.(by|kz|ru)/pogoda/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 /^https?://yandex\.ua/pogoda/[^\s]{300,}/$subdocument,~third-party
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] * * div[class]:-abp-has(> div[id] ~ * script)
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] * * div[class][id]:-abp-has([href*="pogoda"][target])
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="pogoda"] * * div[id] > :not([class]) > :not([class]) > :not(div):not([class]):empty
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="pogoda"] * * div[id] > :not([class]) > :not(div):not([class]):empty
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="pogoda"] * * div[id] > :not(div):not([class]):empty
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="pogoda"] * * div[id]:empty
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] * *:-abp-has(> * > * > a[href][target="_blank"] > [class])
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] * *:-abp-has(> [id] > *:-abp-contains(/./))
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] * *:-abp-has(> [id][class] > iframe[src*="/pogoda/"])
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[data-bem*="pogoda"] [class]:-abp-has(> * > * > * > * > polygon[points])
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[data-bem*="pogoda"] polygon[points]
+yandex.by,yandex.kz,yandex.ru,yandex.ua##a[href*="/yandex"][href*="/pogoda/"][target]
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > * > * > a[href*="/yandex"][href*="/pogoda/"][target])
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > * > a[href*="/yandex"][href*="/pogoda/"][target])
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > a[href*="/yandex"][href*="/pogoda/"][target])
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > a[href*="/yandex"][href*="/pogoda/"][target])
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> a[href*="/yandex"][href*="/pogoda/"][target])
 ! Яндекс.Телепрограмма
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content__branding > .branding
 /^https?://tv\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
@@ -794,10 +792,8 @@ tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua#?#body * * div[class][id]:-a
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua#?#body * * div[class][id]:-abp-has(> :first-child:-abp-contains(/./))
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua#?#body * * div[class][id]:-abp-has([href*="tv.yandex"][target])
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##body * * div[class][id]:empty
-tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua#?#body [class]:-abp-has(> * > * > * > * > polygon[points])
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##div[class][data-url]
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##div[class^="adv-manager"]
-tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##polygon[points]
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##script[nonce] + script[nonce] + div[class]
 !
 ! Сайты Блокнота
