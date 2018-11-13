@@ -3,6 +3,26 @@
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО
 disk-space.ru,fortnite-battle-royale.ru,freetotalsoft.com##*
 !
+! Auto.ru
+auto.ru##.CardHead-module__container > .CardHead-module__line_3 > .CardHead-module__line_3_right > :not(div):not(a) > :not(div):not(a)
+auto.ru##.PageCard-module__Card__creditAd
+auto.ru##.ReviewZenPromo
+auto.ru##.TaxiDriverOffer-module__container
+auto.ru##.card__header-right > .card__price + .card__ins-button-wrapper
+/^https?://auto\.ru/[^\s]{300,}/$subdocument,xmlhttprequest,domain=auto.ru
+auto.ru##:not([class^="Card"]) > div:not([id]):not([class]) > div:not([id]):not([class]) > div:not([id]):not([class])
+auto.ru#?#[class]:-abp-has(> * > * > a[href^="https://an.yandex.ru/count/"][target])
+auto.ru##a[href^="https://an.yandex.ru/count/"][target]
+auto.ru##a[href^="https://an.yandex.ru/count/"][target] ~ *
+auto.ru#?#a[href^="https://auto.ru/"][target]:not([class="Footer__link"])
+auto.ru#?#body *:-abp-has(> * > * > * > a[href^="https://auto.ru/"][target]:not([class="Footer__link"]))
+auto.ru#?#body *:-abp-has(> * > * > a[href^="https://auto.ru/"][target]:not([class="Footer__link"]))
+auto.ru#?#body *:-abp-has(> * > * > iframe[src^="https://auto.ru/"])
+auto.ru#?#body *:-abp-has(> * > a[href^="https://auto.ru/"][target]:not([class="Footer__link"]))
+auto.ru#?#body *:-abp-has(> a[href^="https://auto.ru/"][target]:not([class="Footer__link"]))
+auto.ru#?#body [class*=" "]:not(div):-abp-has(> [class]:not(div) + [class*=" "]:not(div) > div:empty)
+auto.ru#$#hide-if-shadow-contains *
+!
 ! Avito
 /^https?://www\.avito\.ru/[^\s]{300,}/$subdocument,domain=www.avito.ru
 www.avito.ru##a[href^="https://www.avito.ru/js"][target="_blank"]
