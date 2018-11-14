@@ -780,12 +780,12 @@ news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> 
 ! Яндекс.Погода
 /^https?://yandex\.(by|kz|ru)/pogoda/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 /^https?://yandex\.ua/pogoda/[^\s]{300,}/$subdocument,~third-party
-yandex.by,yandex.kz,yandex.ru,yandex.ua##a[href*="/yandex"][href*="/pogoda/"][target]
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > * > * > a[href*="/yandex"][href*="/pogoda/"][target])
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > * > a[href*="/yandex"][href*="/pogoda/"][target])
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > a[href*="/yandex"][href*="/pogoda/"][target])
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > a[href*="/yandex"][href*="/pogoda/"][target])
-yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> a[href*="/yandex"][href*="/pogoda/"][target])
+~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua##a[href*="/yandex"][href*="/pogoda/"][target]
+~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > * > * > a[href*="/yandex"][href*="/pogoda/"][target])
+~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > * > a[href*="/yandex"][href*="/pogoda/"][target])
+~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > a[href*="/yandex"][href*="/pogoda/"][target])
+~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > a[href*="/yandex"][href*="/pogoda/"][target])
+~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> a[href*="/yandex"][href*="/pogoda/"][target])
 ! Яндекс.Телепрограмма
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content__branding > .branding
 /^https?://tv\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
