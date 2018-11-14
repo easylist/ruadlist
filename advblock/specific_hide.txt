@@ -3665,6 +3665,7 @@ tech-choice.net##[id^="nadavi"]
 underverse.me,underverse.su##[id^="noty_bottom"][id$="layout_container"]
 zismo.biz##[id^="numlink"]
 rst.ua##[id^="rst-page-banner-300x250"]
+www.kakprosto.ru##[id^="sf-"]
 kakprosto.ru##[id^="sj-"]
 motovolg.com##[id^="slider"][id*="ontent"] span.right
 delpc.ru,parazitovnetu.ru##[id^="smartrotator_ad"]
@@ -4495,12 +4496,16 @@ fb.ru#?#body * * div:-abp-has(> script)
 fb.ru,syl.ru##body * div[id]:not([class*="fotorama"]):empty
 fb.ru#?#body * div[id][class]:-abp-has(> div:not([id]):not([class]):not([style]))
 tverigrad.ru#?#body *:-abp-has(> #mediametrics)
+www.kakprosto.ru#?#body *:-abp-has(> * > * > * > [id^="sf-"])
 fb.ru#?#body *:-abp-has(> * > * > * > a[href^="http://fb.ru/"][target="_blank"])
 syl.ru#?#body *:-abp-has(> * > * > * > a[href^="https://www.syl.ru/"][target="_blank"])
+www.kakprosto.ru#?#body *:-abp-has(> * > * > [id^="sf-"])
 fb.ru#?#body *:-abp-has(> * > * > iframe[src^="http://fb.ru/"])
 syl.ru#?#body *:-abp-has(> * > * > iframe[src^="https://www.syl.ru/"])
+www.kakprosto.ru#?#body *:-abp-has(> * > [id^="sf-"])
 filmix.co,filmix.fun,filmix.gold,filmix.icu,filmix.info,filmix.nl,filmix.site#?#body *:-abp-has(> .remove-sda-wrap)
 gorodrabot.ru#?#body *:-abp-has(> [id] + script:-abp-contains(/advmanager|direct/i))
+www.kakprosto.ru#?#body *:-abp-has(> [id^="sf-"])
 kissfm.ua##body > #background
 fgh-game.com##body > #banner
 tourister.ru##body > #black
@@ -5246,7 +5251,7 @@ politexpert.net#?#h5:-abp-contains(Новости партнёров)
 graniru.org#?#h6:-abp-contains(Реклама)
 anitokyo.tv##header > a[href][target="_blank"]
 prosound.ixbt.com##header > div[style^="background"]
-razlozhi.ru#$#hide-if-shadow-contains *
+kakprosto.ru,razlozhi.ru#$#hide-if-shadow-contains *
 adcdn.tv##iframe + div[style^="position: absolute; z-index"][style*="hidden"]
 drive2.ru##iframe:not([src])
 sozdik.kz##iframe[id][src][tabindex]
