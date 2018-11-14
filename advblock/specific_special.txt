@@ -14,10 +14,12 @@ auto.ru##:not([class^="Card"]) > div:not([id]):not([class]) > div:not([id]):not(
 auto.ru#?#[class]:-abp-has(> * > * > a[href^="https://an.yandex.ru/count/"][target])
 auto.ru##a[href^="https://an.yandex.ru/count/"][target]
 auto.ru##a[href^="https://an.yandex.ru/count/"][target] ~ *
-auto.ru#?#a[href^="https://auto.ru/"][target]:not([class="Footer__link"])
+auto.ru##a[href^="https://auto.ru/"][target] [style*="background-image"]
+auto.ru#?#body *:-abp-has(> * > * > * > a[href^="https://auto.ru/"][target] [style*="background-image"])
+auto.ru#?#body *:-abp-has(> * > * > a[href^="https://auto.ru/"][target] [style*="background-image"])
 auto.ru#?#body *:-abp-has(> * > * > iframe[src^="https://auto.ru/"])
-auto.ru#?#body *:-abp-has(> * > a[href^="https://auto.ru/"][target]:not([class="Footer__link"]))
-auto.ru#?#body *:-abp-has(> a[href^="https://auto.ru/"][target]:not([class="Footer__link"]))
+auto.ru#?#body *:-abp-has(> * > a[href^="https://auto.ru/"][target] [style*="background-image"])
+auto.ru#?#body *:-abp-has(> a[href^="https://auto.ru/"][target] [style*="background-image"])
 auto.ru#?#body *:-abp-has(> div[id^="sf-"])
 auto.ru#?#body [class*=" "]:not(div):-abp-has(> [class]:not(div) + [class*=" "]:not(div) > div:empty)
 auto.ru##div[id^="sf-"]
