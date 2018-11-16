@@ -3541,6 +3541,7 @@ sovetromantica.com##[class*="kama"]
 puerrtto.livejournal.com##[class*="kupibilet"]
 varlamov.ru##[class*="mainbanner"]
 virusbase.ru.free-anti-spy.com##[class*="modal"]
+igrigo.net#?#[class*="navi_title"]:-abp-contains(/браузер|партнеры/i)
 besplatka.ua##[class*="promotion"]
 2ch.hk,filmytut.online##[class*="rekl"]
 online.ua##[class*="reklama"]
@@ -5391,7 +5392,7 @@ f1analytic.com,ringside24.com##noindex > [class*=" "]:not(div)
 macosworld.ru##noindex > a > [width="250"][height="250"]
 udaff.com##noindex > a > img
 radiola.audio##noindex > a[href*="//radiola.audio/reklama/"]
-igrigo.net##noindex > a[href*="/go.php"] > img[src^="/templates/"]
+igrigo.net##noindex > a[href*="/go.php"] > img:not([src="/uploads/vk.png"])
 guitarplayer.ru##noindex > a[href*="svetomuz.ru"]
 allsport-live.net##noindex > a[href="http://anekdotnow.ru"]
 game-torrento.org##noindex > a[href][onclick] > img[src]
