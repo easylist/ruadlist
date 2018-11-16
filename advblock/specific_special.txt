@@ -10,7 +10,7 @@ auto.ru##.PageCard-module__Card__creditAd
 auto.ru##.ReviewZenPromo
 auto.ru##.TaxiDriverOffer-module__container
 auto.ru##.card__header-right > .card__price + .card__ins-button-wrapper
-/^https?://auto\.ru/[^\s]{300,}/$subdocument,xmlhttprequest,domain=auto.ru
+/^https?://auto\.ru/[^\s]{300,}/$subdocument,domain=auto.ru
 auto.ru##:not([class^="Card"]) > div:not([id]):not([class]) > div:not([id]):not([class]) > div:not([id]):not([class])
 auto.ru#?#[class]:-abp-has(> * > * > a[href^="https://an.yandex.ru/count/"][target])
 auto.ru##a[href^="https://an.yandex.ru/count/"][target]
