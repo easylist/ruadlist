@@ -767,13 +767,18 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##div[data-block="banner-view"]
 yandex.ru##ymaps > div[class^="search-placemark-layout-connect_advert"]
 yandex.ru##ymaps > div[class^="search-placemark-layout-connect_special"]
 ! Яндекс.Афиша
-afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##.grid__container > :not([class="page-header"]):not([class="page-content"]):not([class="page-footer"])
+afisha.yandex.ru##.grid__container > :not(.page-header):not(.page-content):not(.page-footer):not(.content-promo-action):not(.promo-action-footer)
 /^https?://afisha\.yandex\.(by|kz|ru|ua)/(?!api)[^\s]{300,}/$subdocument,xmlhttprequest,domain=afisha.yandex.by|afisha.yandex.kz|afisha.yandex.ru|afisha.yandex.ua
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##a[href*="afisha.yandex"][target] img
+afisha.yandex.ru#?#body *:-abp-has(> * > * > * > * > a[href*="afisha.yandex"] * *)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua#?#body *:-abp-has(> * > * > * > * > a[href*="afisha.yandex"][target] img)
+afisha.yandex.ru#?#body *:-abp-has(> * > * > * > a[href*="afisha.yandex"] * *)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua#?#body *:-abp-has(> * > * > * > a[href*="afisha.yandex"][target] img)
+afisha.yandex.ru#?#body *:-abp-has(> * > * > a[href*="afisha.yandex"] * *)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua#?#body *:-abp-has(> * > * > a[href*="afisha.yandex"][target] img)
+afisha.yandex.ru#?#body *:-abp-has(> * > a[href*="afisha.yandex"] * *)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua#?#body *:-abp-has(> * > a[href*="afisha.yandex"][target] img)
+afisha.yandex.ru#?#body *:-abp-has(> a[href*="afisha.yandex"] * *)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua#?#body *:-abp-has(> a[href*="afisha.yandex"][target] img)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##div[class][data-bem*="direct"]:not([data-bem*="directions"])
 ! Яндекс.Дзен
