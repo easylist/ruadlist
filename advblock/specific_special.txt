@@ -808,8 +808,11 @@ realty.yandex.ru##.b-guadeloupe
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > * > * > a[href*="news.yandex"] * *)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > * > a[href*="news.yandex"] * *)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > a[href*="news.yandex"] * *)
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > iframe[src*="/news.yandex."])
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > a[href*="news.yandex"] * *)
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > iframe[src*="/news.yandex."])
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> a[href*="news.yandex"] * *)
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> iframe[src*="/news.yandex."])
 ! Яндекс.Погода
 /^https?://yandex\.(by|kz|ru)/pogoda/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 /^https?://yandex\.ua/pogoda/[^\s]{300,}/$subdocument,~third-party
