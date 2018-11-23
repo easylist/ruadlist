@@ -11,7 +11,6 @@ auto.ru##.ReviewZenPromo
 auto.ru##.TaxiDriverOffer-module__container
 auto.ru##.card__header-right > .card__price + .card__ins-button-wrapper
 /^https?://auto\.ru/(?!billing\/)[^\s]{200,}/$subdocument,domain=auto.ru
-auto.ru##:not([class^="Card"]) > div:not([id]):not([class]) > div:not([id]):not([class]) > div:not([id]):not([class])
 auto.ru#?#[class]:-abp-has(> * > * > a[href^="https://an.yandex.ru/count/"][target])
 auto.ru##a[href^="https://an.yandex.ru/count/"][target]
 auto.ru##a[href^="https://an.yandex.ru/count/"][target] ~ *
