@@ -28,7 +28,6 @@ auto.ru#?#body *:-abp-has(> a[href^="https://auto.ru/"][target][href*="click"])
 auto.ru#?#body *:-abp-has(> div[id^="sf-"])
 auto.ru#?#body [class*=" "]:not(div):-abp-has(> [class]:not(div) + [class*=" "]:not(div) > div:empty)
 auto.ru##div[id^="sf-"]
-auto.ru#$#hide-if-shadow-contains *
 !
 ! Avito
 /^https?://www\.avito\.ru/[^\s]{300,}/$subdocument,domain=www.avito.ru
@@ -49,7 +48,6 @@ www.avito.ru#?#body *:-abp-has(> iframe[src*="www.avito.ru/js"]:not([bordercolor
 www.avito.ru##body div[id][class][lang="ru"]
 www.avito.ru#?#div:-abp-has(> [class] > h2:-abp-contains(Pеклама))
 www.avito.ru##div[id^="sf-"]
-avito.ru#$#hide-if-shadow-contains *
 ||avito.ru^*/dfp/px.js
 ||criteo.net^$domain=avito.ru
 ||taboola.com^$domain=avito.ru
@@ -750,7 +748,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua#?#[class]:-abp-has(> [class] > [id^="sf-
 yandex.by,yandex.kz,yandex.ru,yandex.ua##[id^="sf-"]
 yandex.by,yandex.kz,yandex.ru,yandex.ua##a[href*="//ads.adfox.ru/"]
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
-yandex.by,yandex.kz,yandex.ru,yandex.ua#$#hide-if-shadow-contains *
 ||an.yandex.ru^
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
