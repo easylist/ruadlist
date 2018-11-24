@@ -11,6 +11,6 @@
 %include advblock.txt%
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other---
-onlinevideoconverter.com## + js(abort-on-property-read.js, eval)
+onlinevideoconverter.com##+js(abort-on-property-read.js, eval)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 ag,buzz,by,cc,city,club,co,com,gift,in,info,ink,kz,link,lol,me,name,net,online,org,pro,pw,re,rest,ru,run,su,today,tv,ua##script:inject(abort-current-inline-script.js, blur, mz_str)
