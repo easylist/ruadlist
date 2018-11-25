@@ -17,7 +17,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.808
+VERSION = 3.809
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -48,6 +48,7 @@ BANGSPACEIMPORTANT = re.compile(r"(.)(\!\s)(important)")
 ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')")
 TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
 UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
+NONSELECTOR = re.compile(r"^(\+js\(|script:inject\()")
 
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
@@ -287,6 +288,10 @@ def elementtidy (domains, separator, selector):
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
         domains = ",".join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~")))
+    # Skip non-selectors (uBO's JS injections and other)
+    if re.match(NONSELECTOR, selector) != None:
+        print(selector)
+        return "{domain}{separator}{selector}".format(domain = domains, separator = separator, selector = selector)
     # Mark the beginning and end of the selector with "@"
     selectorandstyle = selector.split(':style(')
     selector = "@{selector}@".format(selector = selectorandstyle[0])
