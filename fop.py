@@ -290,7 +290,6 @@ def elementtidy (domains, separator, selector):
         domains = ",".join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~")))
     # Skip non-selectors (uBO's JS injections and other)
     if re.match(NONSELECTOR, selector) != None:
-        print(selector)
         return "{domain}{separator}{selector}".format(domain = domains, separator = separator, selector = selector)
     # Mark the beginning and end of the selector with "@"
     selectorandstyle = selector.split(':style(')
