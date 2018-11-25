@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20181120.1651
+@version 0.20181125.2059
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -98,6 +98,7 @@
   domain("tfilm.me"),
   domain("tfilm.tv"),
   domain("the-rutor.org"),
+  domain("thehdrezka.com"),
   domain("torentor.co"),
   domain("torrentum.me"),
   domain("vc.ru"),
@@ -175,7 +176,7 @@
   domain("sc2tv.ru"),
   domain("smotri.com"),
   domain("stopgame.ru"),
-  domain("torrent-games.net"),
+  domain("torrent-games.info"),
   domain("torrentom.com"),
   domain("torrentum.me"),
   domain("userstyles.org"),
@@ -1442,25 +1443,6 @@
     }
 }
 
-@-moz-document domain("kinopoisk.ru") {
-    #top_3banners, div[id][data-metrika="superbanner_spot"] {
-        display: block !important
-    }
-    #show_adv ~ div > .top_index_switch, 
-    #show_adv ~ div > div[style="height: 267px;"], 
-    #show_adv ~ div:not(#top_3banners):not([data-metrika="superbanner_spot"]) {
-        display: none !important
-    }
-    .kp-direct-customize {
-        position: fixed !important;
-        top: -10000px !important;
-        left: -10000px !important
-    }
-    #external_header_wrapper:not(#id) {
-        top: 0 !important
-    }
-}
-
 @-moz-document domain("kinorezka.net") {
     body > .container {
         padding-top: 0 !important
@@ -2376,7 +2358,7 @@
     }
 }
 
-@-moz-document domain("torrent-games.net") {
+@-moz-document domain("torrent-games.info") {
     html {
         position:relative;
         top:-232px
@@ -2533,20 +2515,29 @@
     body > .app-container, html:not(#id) {
         background: none !important
     }
-    .app__content > .app__page {
-        margin-top: 0 !important
+    #top > div[id][style^="height: 210px"] {
+        display: none !important
+    }
+    .app_app-width_default .app__header_margin-bottom_brand {
+        margin-bottom: 0 !important
     }
     html:not(#id) > body:not(#id) > #top {
-        margin-top: 0 !important;
-        max-height: 90px !important
+        margin-bottom: auto !important
     }
-    .branding {
+    #top ~ .content > #content_block > table[style^="background-color"] {
+        margin-top: 0 !important
+    }
+    #top_3banners {
+        margin-top: 20px !important
+    }
+    .adfox, .branding, .kp-direct-customize {
         position: fixed !important;
         top: -10000px !important;
         left: -10000px !important
     }
-    body > div[id^="appender_"] > div .tooltip_open {
-        top: 53px !important
+    .profileInsertsMenu {
+        top: 10px !important;
+        margin-top: 0 !important
     }
 }
 
