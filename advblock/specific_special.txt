@@ -30,6 +30,7 @@ auto.ru#?#body [class*=" "]:not(div):-abp-has(> [class]:not(div) + [class*=" "]:
 auto.ru##div[id^="sf-"]
 !
 ! Avito
+www.avito.ru##.avito-ads-container
 /^https?://www\.avito\.ru/[^\s]{300,}/$subdocument,domain=www.avito.ru
 www.avito.ru##a[href^="https://www.avito.ru/js"][target="_blank"]
 www.avito.ru#?#body *:-abp-has(> * > * > * > * > iframe[src*="www.avito.ru/js"]:not([bordercolor]))
