@@ -408,6 +408,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|mschistota.ru
 /^https?://www\.kakprosto\.ru/[^\s]{200,}/$script,domain=www.kakprosto.ru
 /^https?://www\.kakprosto\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.kakprosto.ru
 /^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
+/^https?://www\.sport-express\.ru/+(?!(api\/|api_sock\/|apps\/|services\/))/$xmlhttprequest,domain=www.sport-express.ru
 /^https?://www\.syl\.ru/[^\s]{500,}/$subdocument,xmlhttprequest,domain=syl.ru
 /ad*.tutu.ru^*_*.php|
 /adb_checker$script,domain=coop-land.ru
