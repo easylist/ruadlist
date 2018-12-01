@@ -403,7 +403,6 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|mschistota.ru
 /^https?://www\.kakprosto\.ru/[^\s]{150,}/$script,domain=www.kakprosto.ru
 /^https?://www\.kakprosto\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.kakprosto.ru
 /^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
-/^https?://www\.sport-express\.ru/+(?!(api\/conversation\/threads\/|api_sock\/|apps\/|crossdata\/ajax\/sub-menu\/|services\/|socket\.io\/))/$xmlhttprequest,domain=www.sport-express.ru
 /^https?://www\.syl\.ru/[^\s]{500,}/$subdocument,xmlhttprequest,domain=syl.ru
 /ad*.tutu.ru^*_*.php|
 /adb_checker$script,domain=coop-land.ru
@@ -3098,6 +3097,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||www.4ernigiv.info^*/1ua/images/
 ||www.pornolenta.cc/js/
 ||www.sovsport.ru/*/*/*/*/*/*/*/$xmlhttprequest,domain=www.sovsport.ru
+||www.sport-express.ru/*/*/*/*/*/*/*/$xmlhttprequest,domain=www.sport-express.ru
 ||www.xxxsexpic.net^$script
 ||x.kurer-sreda.ru/
 ||xakep.ru/post/*_final.jpg
