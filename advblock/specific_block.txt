@@ -1,6 +1,5 @@
 ! CSP filters
 /^https?://allboxing.ru\/(?!forum)/$csp=script-src 'self' * data:
-/blamper/$csp=script-src
 @@||blogs.pravda.com.ua^$csp=script-src 'self' * blob: data:
 @@||forum.pravda.com.ua^$csp=script-src 'self' * blob: data:
 @@||freebooks.site/embed/$csp=script-src 'self' * data: blob: 'unsafe-inline'
@@ -78,6 +77,7 @@
 ||shaggyimg.pro^$csp=script-src 'self' * data:
 ||simpsonsua.com.ua^$csp=script-src 'self' * data:
 ||snitsya-son.ru^$csp=script-src 'self' * blob: data:
+||statchecker.yandex.ru^$csp=script-src 'self'
 ||sweetbook.net^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||syl.ru/article/$csp=script-src 'self' * 'unsafe-inline' data:
 ||syl.ru/category/$csp=script-src 'self' * 'unsafe-inline' data:
