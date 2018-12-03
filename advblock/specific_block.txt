@@ -1,5 +1,6 @@
 ! CSP filters
 /^https?://allboxing.ru\/(?!forum)/$csp=script-src 'self' * data:
+/blamper/$csp=script-src
 @@||blogs.pravda.com.ua^$csp=script-src 'self' * blob: data:
 @@||forum.pravda.com.ua^$csp=script-src 'self' * blob: data:
 @@||freebooks.site/embed/$csp=script-src 'self' * data: blob: 'unsafe-inline'
