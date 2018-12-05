@@ -394,7 +394,6 @@ $xmlhttprequest,domain=fastpic.ru|happy-block.info|howto-news.info|mschistota.ru
 /^https?://www\.kakprosto\.ru/[^\s]{150,}/$script,domain=www.kakprosto.ru
 /^https?://www\.kakprosto\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.kakprosto.ru
 /^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
-/^https?://www\.sovsport\.ru\/\?etc\=material\&use\=getMaterial\&id=[a-z0-9]{7,}/$xmlhttprequest,domain=www.sovsport.ru
 /ad*.tutu.ru^*_*.php|
 /adb_checker$script,domain=coop-land.ru
 /aip?ua=$~third-party,xmlhttprequest,domain=inforeactor.ru|nahnews.org|nation-news.ru|newinform.com|polit.info|politexpert.net|riafan.ru|rueconomics.ru|slovodel.com
@@ -3092,6 +3091,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||www.4ernigiv.info^*/1ua/images/
 ||www.pornolenta.cc/js/
 ||www.sovsport.ru/*/*/*/*/*/$xmlhttprequest,domain=www.sovsport.ru
+||www.sovsport.ru/?etc=material&use=getMaterial&id=|$xmlhttprequest,domain=www.sovsport.ru
 ||www.sport-express.ru/*/*/*/*/*/*/*/$xmlhttprequest,domain=www.sport-express.ru
 ||www.sport-express.ru/api/conversation/user/load/$xmlhttprequest,domain=www.sport-express.ru
 ||www.xxxsexpic.net^$script
