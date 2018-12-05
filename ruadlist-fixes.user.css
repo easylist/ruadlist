@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20181125.2059
+@version 0.20181205.205
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -157,7 +157,7 @@
   domain("kinobar.cc"),
   domain("kinokrad.su"),
   domain("kinotochka.club"),
-  domain("kinotochka.pro"),
+  domain("kinotochka.me"),
   domain("kurkul.com"),
   domain("kv.by"),
   domain("livejournal.com"),
@@ -177,6 +177,7 @@
   domain("smotri.com"),
   domain("stopgame.ru"),
   domain("torrent-games.info"),
+  domain("torrent-games.net"),
   domain("torrentom.com"),
   domain("torrentum.me"),
   domain("userstyles.org"),
@@ -1465,7 +1466,7 @@
 
 @-moz-document
   domain("kinotochka.club"),
-  domain("kinotochka.pro") {
+  domain("kinotochka.me") {
     .center-box2 {
         margin-top: 0 !important
     }
@@ -1924,6 +1925,15 @@
     }
 }
 
+@-moz-document
+  domain("picclick.ru"),
+  domain("picclock.ru"),
+  domain("picforall.ru") {
+    div[id^="pai_thumbz_"][id$="_side"] {
+        background: #363636 !important
+    }
+}
+
 @-moz-document domain("pikabu.ru") {
     header > .header__main {
         background-color: #8ac858 !important
@@ -2065,18 +2075,6 @@
   domain("sportrbc.ru") {
     .g-banner__news-footer {
         min-height: 0 !important
-    }
-}
-
-@-moz-document domain("realist.online") {
-    body.banner-top > .header, body.banner-top > .section-menu {
-        margin-top: 0 !important
-    }
-    body.banner-top > .section-main {
-        padding-top: 0 !important
-    }
-    body.banner-top .panel-list > .slider {
-        padding-top: 88px !important
     }
 }
 
@@ -2358,7 +2356,9 @@
     }
 }
 
-@-moz-document domain("torrent-games.info") {
+@-moz-document
+  domain("torrent-games.info"),
+  domain("torrent-games.net") {
     html {
         position:relative;
         top:-232px
@@ -2515,8 +2515,12 @@
     body > .app-container, html:not(#id) {
         background: none !important
     }
-    #top > div[id][style^="height: 210px"] {
+    #top > div[id][style^="height: 210px"], .rightTeaser > * {
         display: none !important
+    }
+    .rightTeaser {
+        height: 2px !important;
+        margin-top: 0 !important
     }
     .app_app-width_default .app__header_margin-bottom_brand {
         margin-bottom: 0 !important
@@ -2530,7 +2534,7 @@
     #top_3banners {
         margin-top: 20px !important
     }
-    .adfox, .branding, .kp-direct-customize {
+    .adblock-detector-partial-component, .adfox, .branding, .kp-direct-customize {
         position: fixed !important;
         top: -10000px !important;
         left: -10000px !important
