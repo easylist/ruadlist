@@ -373,7 +373,7 @@ $xmlhttprequest,domain=fastpic.ru|happy-block.info|howto-news.info|mschistota.ru
 /^https?://(?!static\.)([^.]+\.)+?fastpic\.ru[:/]/$script,domain=fastpic.ru
 /^https?://(?!www\.)(?!forum)([^.]+\.)+?(qrz\.ru)[:/]/$script,domain=qrz.ru
 /^https?://(?!www\.)(?!static)([^.]+\.)+?(censor\.net\.ua)[:/]/$script,domain=censor.net.ua
-/^https?://(?!www\.instagram\.com|platform\.instagram\.com|platform\.twitter\.com|cdn\.syndication\.twimg\.com|cdn\.jsdelivr\.net|playercdn\.cdnvideo\.ru|connect\.facebook\.net|graph\.facebook\.com|apis\.google\.com|fonts\.googleapis\.com|connect\.ok\.ru|vk\.com|login\.vk\.com|vkontakte\.ru|api\.vk\.com|code\.giraff\.io|a\.giraff\.io|sinst\.fwdcdn\.com|sinoptik\.ua/informers_js|code\.jquery\.com)/$third-party,script,stylesheet,xmlhttprequest,domain=bugaga.ru|erofishki.cc|fishki.net|fox-fan.tv|novosti-n.info|sport-express.ru|xn---2--mddxunv8a2esa.xn--p1ai|дом-2-эфиры.рф
+/^https?://(?!www\.instagram\.com|platform\.instagram\.com|platform\.twitter\.com|cdn\.syndication\.twimg\.com|cdn\.jsdelivr\.net|playercdn\.cdnvideo\.ru|connect\.facebook\.net|graph\.facebook\.com|apis\.google\.com|fonts\.googleapis\.com|connect\.ok\.ru|vk\.com|login\.vk\.com|vkontakte\.ru|api\.vk\.com|code\.giraff\.io|a\.giraff\.io|sinst\.fwdcdn\.com|sinoptik\.ua/informers_js|code\.jquery\.com)/$third-party,script,stylesheet,xmlhttprequest,domain=bugaga.ru|erofishki.cc|fishki.net|fox-fan.tv|novosti-n.info|xn---2--mddxunv8a2esa.xn--p1ai|дом-2-эфиры.рф
 /^https?://24smi\.org/[^\s]{120,}/$script,xmlhttprequest,domain=24smi.org
 /^https?://[^\s]+\.razlozhi\.ru/[^\s]{300,}/$subdocument,xmlhttprequest,domain=razlozhi.ru
 /^https?://[^\s]+\.sdamgia\.ru/[^\s]{100,}/$script,subdocument,xmlhttprequest,domain=sdamgia.ru
@@ -2464,7 +2464,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||ru-board.com*/xmtmp/
 ||ru-board.com/bnrs/
 ||ru-board.com/kupitraff.
-||ru/*/*/*/*/$third-party,script,xmlhttprequest,domain=allday2.com|car.ru|dzenkino.com|eg.ru|gryadki.com|hdkinofilm.online|kinolook.su|kinorezka.net|kofechay.com|luna-segodnja.ru|mnogo-krolikov.ru|newfilms1.online|newizv.ru|polexpert.ru|popcornnews.ru|primamedia.ru|proroofer.ru|rutracker-org.appspot.com|sheldontv.ru|sosed-domosed.ru|sovsport.ru|spac.me|spcs.me|strip2.me|svpressa.ru|tsargrad.tv|vazhno.ru|x-raydoctor.ru|xn--80ajgpcpbhkds4a4g.xn--p1ai|zaycev.gdn|сельхозпортал.рф
+||ru/*/*/*/*/$third-party,script,xmlhttprequest,domain=allday2.com|car.ru|dzenkino.com|eg.ru|gryadki.com|hdkinofilm.online|kinolook.su|kinorezka.net|kofechay.com|luna-segodnja.ru|mnogo-krolikov.ru|newfilms1.online|newizv.ru|polexpert.ru|popcornnews.ru|primamedia.ru|proroofer.ru|rutracker-org.appspot.com|sheldontv.ru|sosed-domosed.ru|sovsport.ru|spac.me|spcs.me|sport-express.ru|strip2.me|svpressa.ru|tsargrad.tv|vazhno.ru|x-raydoctor.ru|xn--80ajgpcpbhkds4a4g.xn--p1ai|zaycev.gdn|сельхозпортал.рф
 ||ru/*/*/*/*/$third-party,xmlhttprequest,domain=sobesednik.ru
 ||ru/inc/$subdocument,domain=vz.ru
 ||rublacklist.net/images/rutracker_
@@ -3086,8 +3086,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||www.4ernigiv.info^*/1ua/images/
 ||www.pornolenta.cc/js/
 ||www.sovsport.ru^$xmlhttprequest,domain=www.sovsport.ru
-||www.sport-express.ru/*/*/*/*/*/*/*/$xmlhttprequest,domain=www.sport-express.ru
-||www.sport-express.ru/api/conversation/user/load/$xmlhttprequest,domain=www.sport-express.ru
+||www.sport-express.ru/*/|$xmlhttprequest,domain=www.sport-express.ru
 ||www.xxxsexpic.net^$script
 ||x.kurer-sreda.ru/
 ||xakep.ru/post/*_final.jpg
