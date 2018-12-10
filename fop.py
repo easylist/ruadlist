@@ -17,7 +17,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.809
+VERSION = 3.810
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -269,7 +269,8 @@ def filtertidy (filterin):
             if option[0:7] == "domain=":
                 domainlist.extend(option[7:].split("|"))
                 removeentries.append(option)
-            elif option[0:8] == "rewrite=":
+            # pass known special options
+            elif option.split('=')[0] in ["csp", "rewrite"]:
                 pass
             elif option.strip("~") not in KNOWNOPTIONS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
