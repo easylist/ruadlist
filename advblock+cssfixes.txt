@@ -12,7 +12,7 @@
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other---
 drive2.ru##+js(abort-on-property-read.js, Ya)
-championat.com,gazeta.ru,lenta.ru,rambler.ru,rns.online##+js(abort-on-property-read.js, cxxb)
+championat.com,gazeta.ru,rambler.ru##+js(abort-on-property-read.js, atob)
 onlinevideoconverter.com##+js(abort-on-property-read.js, eval)
 radikal.ru##+js(abort-on-property-read.js, fetch)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
