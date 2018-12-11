@@ -312,7 +312,7 @@
 @@||clients*.google.com/pagead/drt/dn/$subdocument,domain=play.google.com
 @@||cloudflare.com/ajax/libs/fotorama/$script,domain=56orb.ru|nashgorod.ru
 @@||cloudfront.net/pcode/adfox/loader_rel.js|$script,domain=vc.ru
-@@||code.jquery.com/$script,domain=7ba.org|7ba.ru|daxab.com
+@@||code.jquery.com/$script,domain=7ba.org|7ba.ru|daxab.com|subject.com.ua
 @@||code7.ru/upload$image,domain=code7.ru
 @@||com/banners/$domain=akprior.com|eurobank-ua.com|maingear.com
 @@||combinat.pro/api/advert/$domain=combinat.pro
@@ -322,8 +322,7 @@
 @@||cpmstar.com^$object-subrequest,domain=zigry.net
 @@||craftstudio.ru^*/baner.$image,domain=craftstudio.ru
 @@||crazycloud.ru^$script,xmlhttprequest,domain=daxab.com
-@@||cse.google.com/cse.js$script,domain=myshared.ru|politeka.net|rvb.ru|ukrlib.com.ua|zhenskoe-mnenie.ru
-@@||cse.google.com/cse/element/*=google.search.$script,domain=myshared.ru|politeka.net|rvb.ru|ukrlib.com.ua|zhenskoe-mnenie.ru
+@@||cse.google.com/cse.js$script,domain=myshared.ru|politeka.net|rvb.ru|subject.com.ua|ukrlib.com.ua|zhenskoe-mnenie.ru
 @@||daitel.ru/api/web/adverts/$xmlhttprequest,domain=daitel.ru
 @@||darkteam.net/advertisement.js
 @@||demo.dle-news.ru/templates/Default/images/tmp/banner_300x250$image,domain=demo.dle-news.ru
@@ -377,7 +376,8 @@
 @@||glopart.ru^$domain=glopay.me
 @@||go.leadgid.ru/aff_c?offer_id$popup,domain=luckymir.ru
 @@||gomeltoday.by/uploads/ads/$domain=gomel.today
-@@||google.com/complete/search$script,domain=myshared.ru|politeka.net|rvb.ru|ukrlib.com.ua|zhenskoe-mnenie.ru
+@@||google.com/complete/search$script,domain=myshared.ru|politeka.net|rvb.ru|subject.com.ua|ukrlib.com.ua|zhenskoe-mnenie.ru
+@@||google.com/cse*element/*=$script,domain=myshared.ru|politeka.net|rvb.ru|subject.com.ua|ukrlib.com.ua|zhenskoe-mnenie.ru
 @@||google.com/uds/api/search/$script,domain=myshared.ru|politeka.net|rvb.ru|ukrlib.com.ua|zhenskoe-mnenie.ru
 @@||googleadservices.com/pagead/conversion/$image,domain=decathlon.ru
 @@||googleapis.com/customsearch/$script,domain=myshared.ru|politeka.net|rvb.ru|ukrlib.com.ua|zhenskoe-mnenie.ru
@@ -844,6 +844,7 @@ skodarapidclub.ru#@#.headerad
 slavyansk.biz#@#.advtext
 stepashka.com#@##ad_header
 stomsuper.com#@#.ad-item
+subject.com.ua#@#.adsbygoogle
 tasix.me#@#[id*="ScriptRoot"]
 teu-eurocara.com.ua#@#.adv-text
 texts.com.ua#@#.topAD
