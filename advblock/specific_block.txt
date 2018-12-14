@@ -381,7 +381,6 @@ $xmlhttprequest,domain=fastpic.ru|happy-block.info|howto-news.info|mschistota.ru
 /^https?://politpuzzle\.ru/(?!(counter\.php)|(wp-admin))/$xmlhttprequest,domain=politpuzzle.ru
 /^https?://porno-island.org\/(?!templates|engine)/$script,domain=porno-island.org
 /^https?://proporno.org\/(?!templates|engine)/$script,domain=proporno.org
-/^https?://radikal.ru\/+(?!(Img\/|VideoUpload\/))/$xmlhttprequest,domain=radikal.ru
 /^https?://www\.baby\.ru/[^.]{150,}$/$script,domain=baby.ru
 /^https?://www\.drive2\.ru/[^\s]{150,}/$xmlhttprequest,domain=www.drive2.ru
 /^https?://www\.e1\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.e1.ru
@@ -2382,6 +2381,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||rada.com.ua/images/bs/
 ||radikal.ru/*.gif|$domain=xn--24-7lcajlu.xn--p1ai|муром24.рф
 ||radikal.ru/Content/Images/Ko_komanda/
+||radikal.ru^$xmlhttprequest
 ||radiopotok.ru/f/b/$image
 ||radiorecord.ru/baners_
 ||raketa-tv.com/banner_
