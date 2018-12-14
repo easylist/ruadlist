@@ -11,9 +11,8 @@
 %include advblock.txt%
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other---
-auto.ru,drive2.ru,e1.ru,kakprosto.ru,razlozhi.ru##+js(abort-on-property-read.js, Ya)
+drive2.ru,e1.ru,kakprosto.ru,razlozhi.ru##+js(abort-on-property-read.js, Ya)
 championat.com,gazeta.ru,rambler.ru##+js(abort-on-property-read.js, atob)
 overclockers.ru##+js(abort-on-property-read.js, bqa, chkA)
 onlinevideoconverter.com##+js(abort-on-property-read.js, eval)
-radikal.ru##+js(abort-on-property-read.js, fetch)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
