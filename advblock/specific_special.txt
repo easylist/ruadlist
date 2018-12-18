@@ -91,12 +91,12 @@ beta.gismeteo.ru,gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body.page_base *:-abp
 /^https?://(www|beta)\.gismeteo\.(by|kz|ru)/[^.]{300,}/$script,subdocument,domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.ru
 !
 ! HDLight
-! Временные фиксы, связанные с поломкой на самом HDLight
-!$third-party,xmlhttprequest,domain=mastarti.com
-!@@||185.38.12.*^$xmlhttprequest,domain=mastarti.com
-!@@||37.220.36.*^$xmlhttprequest,domain=mastarti.com
-!@@||37.220.39.*^$xmlhttprequest,domain=mastarti.com
-!@@||backend.irsdn.net^$xmlhttprequest,domain=mastarti.com
+! Временные фиксы, связанные с поломками на самом HDLight
+$third-party,xmlhttprequest,domain=mastarti.com
+@@||185.38.12.*^$xmlhttprequest,domain=mastarti.com
+@@||37.220.36.*^$xmlhttprequest,domain=mastarti.com
+@@||37.220.39.*^$xmlhttprequest,domain=mastarti.com
+@@||backend.irsdn.net^$xmlhttprequest,domain=mastarti.com
 !
 @@||$~third-party,xmlhttprequest,domain=37.220.36.15|blackoctopus.cc|cdn.720hd.club|cdn.ex-fs.net|cdn.ivvi.online|cdn.kinogo-hq.ru|cdn.kinosky.net|cdn.profilms.top|cdnapponline.com|kino-stream.online|moon.hdkinoteatr.com|moonwalk.cc|moonwalk.center|mov.hiex.ru|online.1kinobig.ru|pandastream.cc|s1.kino-kingdom.com|serpens.nl|staticnlcdn.com|streamguard.cc|streamstorm.online|streamtomars.me|video.palevo.stream|video.showfilm.club
 @@||actelecup.com^$xmlhttprequest
@@ -141,6 +141,7 @@ beta.gismeteo.ru,gismeteo.by,gismeteo.kz,www.gismeteo.ru#?#body.page_base *:-abp
 @@||nomaig.com^$xmlhttprequest
 @@||nuriato.com^$xmlhttprequest
 @@||palespe.com^$xmlhttprequest
+@@||parnishob.com^$xmlhttprequest
 @@||pyrons.com^$xmlhttprequest
 @@||rahnjan.com^$xmlhttprequest
 @@||rostoci.com^$xmlhttprequest
