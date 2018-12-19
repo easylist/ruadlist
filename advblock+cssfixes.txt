@@ -14,10 +14,10 @@
 drive2.ru,e1.ru,echo.msk.ru,kakprosto.ru,razlozhi.ru##+js(abort-on-property-read.js, Ya)
 championat.com,gazeta.ru,rambler.ru##+js(abort-on-property-read.js, atob)
 overclockers.ru##+js(abort-on-property-read.js, bqa, chkA)
-primamedia.ru,radikal.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv##+js(abort-on-property-read.js, ccScriptSupport)
+amurmedia.ru,eaomedia.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,primamedia.ru,radikal.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-read.js, ccScriptSupport)
 onlinevideoconverter.com##+js(abort-on-property-read.js, eval)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
-@@$~third-party,xmlhttprequest,domain=primamedia.ru|radikal.ru|sovsport.ru|sport-express.ru|svpressa.ru|tsargrad.tv
+@@$~third-party,xmlhttprequest,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|radikal.ru|sakhalinmedia.ru|sevastopolmedia.ru|sovsport.ru|sport-express.ru|svpressa.ru|tsargrad.tv|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 4pda.ru##body > [id]:not(div) [id]:not(div):not([class]) ~ [class]:not(div) ~ [id]:not(div):not([class]):style(background-image: none !important)
 4pda.ru##body > [id]:not(div) [id]:not(div):not([style]):matches-css(height: 90px)
 4pda.ru##body > [id]:not(div) [id][class]:not(div) > div[class^="r"]:not([id]):first-child:has(:scope > * + a[href][target="_blank"])
