@@ -24,6 +24,7 @@ auto.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, 
 championat.com,gazeta.ru,lenta.ru,rambler.ru##+js(setInterval-defuser.js)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 @@$~third-party,xmlhttprequest,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|radikal.ru|sakhalinmedia.ru|sevastopolmedia.ru|sovsport.ru|svpressa.ru|tsargrad.tv|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
+@@||radikal.ru/*/$csp=style-src 'self' * data:
 4pda.ru##body > [id]:not(div) [id]:not(div):not([class]) ~ [class]:not(div) ~ [id]:not(div):not([class]):style(background-image: none !important)
 4pda.ru##body > [id]:not(div) [id]:not(div):not([style]):matches-css(height: 90px)
 4pda.ru##body > [id]:not(div) [id][class]:not(div) > div[class^="r"]:not([id]):first-child:has(:scope > * + a[href][target="_blank"])
