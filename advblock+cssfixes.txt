@@ -27,12 +27,13 @@ auto.ru##+js(abort-on-property-read.js, pcodeJsonp7266)
 auto.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, pcodeJsonp7267)
 auto.ru##+js(abort-on-property-read.js, pcodeJsonp7270)
 mail.ru##+js(abort-on-property-read.js, smokyTools)
-e.mail.ru##+js(cookie-remover.js)
+e.mail.ru,www.kinopoisk.ru##+js(cookie-remover.js)
 championat.com,gazeta.ru,lenta.ru,rambler.ru##+js(setInterval-defuser.js)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 @@$~third-party,xmlhttprequest,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|sovsport.ru|svpressa.ru|tsargrad.tv|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
 @@||radikal.ru/*/$csp=style-src 'self' * data:
+www.kinopoisk.ru##[class*="yandex-suggest-toast"][class*="__desktop-modals-container"]
 4pda.ru##body > [id]:not(div) [id]:not(div):not([class]) ~ [class]:not(div) ~ [id]:not(div):not([class]):style(background-image: none !important)
 4pda.ru##body > [id]:not(div) [id]:not(div):not([style]):matches-css(height: 90px)
 4pda.ru##body > [id]:not(div) [id][class]:not(div) > div[class^="r"]:not([id]):first-child:has(:scope > * + a[href][target="_blank"])
