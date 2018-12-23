@@ -796,7 +796,7 @@ zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.y
 /^https?://zen\.yandex\.(by|com|com\.tr|fr|kz|ru|ua)/(?!api\/)[^\s]{300,}/$other,subdocument,~third-party,xmlhttprequest
 yandex.ru#?#body[class*="b-page_infinity"] .feed__item:-abp-has(> [class*="rtb"]:not([style]))
 ! Яндекс.Картинки
-/^https?://yandex\.(by|kz|ru|ua)/images/(?!(search\?callback\=jQuery)|(search\?exp_flags=)|(search\?serpid=)|(touch/search?))[^\s]{80,}/$subdocument,~third-party,xmlhttprequest
+/^https?://yandex\.(by|kz|ru|ua)/images/(?!(search\?rpt=\imageview)|(search\?callback\=jQuery)|(search\?exp_flags=)|(search\?serpid=)|(touch/search?))[^\s]{80,}/$subdocument,~third-party,xmlhttprequest
 ! Яндекс.Музыка
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.ads-block
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.bar__driver-container
