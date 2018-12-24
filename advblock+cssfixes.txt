@@ -14,7 +14,7 @@
 $third-party,xmlhttprequest,domain=mastarti.com
 drive2.ru,e1.ru,echo.msk.ru,kakprosto.ru,liveinternet.ru,razlozhi.ru##+js(abort-on-property-read.js, Ya)
 overclockers.ru##+js(abort-on-property-read.js, bqa, chkA)
-amurmedia.ru,eaomedia.ru,fastpic.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,primamedia.ru,radikal.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-read.js, ccScriptSupport)
+aftershock.news,amurmedia.ru,eaomedia.ru,fastpic.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,primamedia.ru,radikal.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-read.js, ccScriptSupport)
 onlinevideoconverter.com##+js(abort-on-property-read.js, eval)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, pcodeJsonp6775)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, pcodeJsonp7198)
@@ -34,7 +34,7 @@ mail.ru##+js(abort-on-property-read.js, smokyTools)
 e.mail.ru,www.kinopoisk.ru##+js(cookie-remover.js)
 championat.com,gazeta.ru,lenta.ru,rambler.ru##+js(setInterval-defuser.js)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
-@@$~third-party,xmlhttprequest,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|sovsport.ru|svpressa.ru|tsargrad.tv|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
+@@$~third-party,xmlhttprequest,domain=aftershock.news|amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|sovsport.ru|svpressa.ru|tsargrad.tv|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
 @@||radikal.ru/*/$csp=style-src 'self' * data:
 www.kinopoisk.ru##[class*="yandex-suggest-toast"][class*="__desktop-modals-container"]
