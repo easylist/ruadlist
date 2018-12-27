@@ -12,6 +12,8 @@
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other---
 $third-party,xmlhttprequest,domain=mastarti.com
+championat.com,gazeta.ru,quto.ru,rambler.ru,rns.online##+js(abort-current-inline-script.js, Math.random, timerAdIsLoaded)
+lenta.ru##+js(abort-current-inline-script.js, setTimeout, timerAdIsLoaded)
 liveinternet.ru##+js(abort-on-property-read.js, IntersectionObserver)
 drive2.ru,e1.ru,kakprosto.ru##+js(abort-on-property-read.js, Ya)
 razlozhi.ru##+js(abort-on-property-read.js, advertSlice)
@@ -21,7 +23,6 @@ aftershock.news,amurmedia.ru,eaomedia.ru,fastpic.ru,irkutskmedia.ru,krasnodarmed
 onlinevideoconverter.com##+js(abort-on-property-read.js, eval)
 mail.ru##+js(abort-on-property-read.js, smokyTools)
 e.mail.ru,www.kinopoisk.ru##+js(cookie-remover.js)
-championat.com,gazeta.ru,lenta.ru,rambler.ru##+js(setInterval-defuser.js)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 @@$~third-party,xmlhttprequest,domain=aftershock.news|amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|sovsport.ru|svpressa.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
