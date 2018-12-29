@@ -13,6 +13,8 @@
 ! --- uBO scriptlets injection rules & other---
 $third-party,xmlhttprequest,domain=mastarti.com
 championat.com,gazeta.ru,quto.ru,rambler.ru,rns.online##+js(abort-current-inline-script.js, Math.random, timerAdIsLoaded)
+rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(abort-current-inline-script.js, ads_script)
+rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(abort-current-inline-script.js, antiadblock)
 lenta.ru##+js(abort-current-inline-script.js, setTimeout, timerAdIsLoaded)
 liveinternet.ru##+js(abort-on-property-read.js, IntersectionObserver)
 drive2.ru,e1.ru,kakprosto.ru##+js(abort-on-property-read.js, Ya)
@@ -22,6 +24,8 @@ overclockers.ru##+js(abort-on-property-read.js, bqa, chkA)
 aftershock.news,amurmedia.ru,eaomedia.ru,fastpic.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,primamedia.ru,radikal.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-read.js, ccScriptSupport)
 onlinevideoconverter.com##+js(abort-on-property-read.js, eval)
 mail.ru##+js(abort-on-property-read.js, smokyTools)
+rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(cookie-remover.js)
+yandex.ru##+js(cookie-remover.js, bltsr)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 @@$~third-party,xmlhttprequest,domain=aftershock.news|amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|sovsport.ru|svpressa.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
