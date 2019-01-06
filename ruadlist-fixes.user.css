@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20181221.313
+@version 0.20190106.2338
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -22,6 +22,7 @@
   domain("amovies.cc"),
   domain("baskino.me"),
   domain("baskinonet.ru"),
+  domain("besthdrezka.com"),
   domain("bigcinema-tv.club"),
   domain("bombardir.ru"),
   domain("comedy-portal.net"),
@@ -82,10 +83,7 @@
   domain("new-rutor.org"),
   domain("newstudio.tv"),
   domain("nnm-club.me"),
-  domain("nnm-club.name"),
-  domain("nnm-club.tv"),
   domain("nnmclub.to"),
-  domain("nnmclub.tv"),
   domain("ostfilm.tv"),
   domain("pickfilm.ru"),
   domain("pure-t.ru"),
@@ -106,6 +104,7 @@
   domain("veleto.ru"),
   domain("videoclub.men"),
   domain("virusinfo.info"),
+  domain("wehdrezka.com"),
   domain("wikianime.ru"),
   domain("zona-film.com") {
     body:not(#id), html:not(#id) {
@@ -126,6 +125,7 @@
   domain("24video.guru"),
   domain("24video.sexy"),
   domain("aif.ru"),
+  domain("besthdrezka.com"),
   domain("epravda.com.ua"),
   domain("fast-torrent.club"),
   domain("fastpic.ru"),
@@ -167,10 +167,7 @@
   domain("myshows.me"),
   domain("newstudio.tv"),
   domain("nnm-club.me"),
-  domain("nnm-club.name"),
-  domain("nnm-club.tv"),
   domain("nnmclub.to"),
-  domain("nnmclub.tv"),
   domain("oblozhki.net"),
   domain("oper.ru"),
   domain("pure-t.ru"),
@@ -184,6 +181,7 @@
   domain("torrentom.com"),
   domain("torrentum.me"),
   domain("userstyles.org"),
+  domain("wehdrezka.com"),
   domain("xatab-repack.net"),
   domain("zakarpatpost.net"),
   domain("zakon.kz") {
@@ -1289,6 +1287,10 @@
     .wrapper_outer > .wide_brand ~ div:not([id]):not([class]) + style + div[class] {
         display: none !important
     }
+    .outer_inner > .wrapper_outer > div[class] {
+        height: auto !important;
+        min-height: auto !important
+    }
 }
 
 @-moz-document domain("infocar.ua") {
@@ -1570,7 +1572,8 @@
         background: #1c1e1f !important;
         color: #fff !important
     }
-    body > a[onclick], body > div > div[style^="padding-top"], body > span, 
+    body > a[onclick], body > div > div[style^="padding-top"], 
+    body > div:not([id]):not([class]), body > span, 
     script + a[href][target] + div[style*="absolute"][style*="margin-left"] {
         display: none !important
     }
@@ -1844,10 +1847,7 @@
 
 @-moz-document
   domain("nnm-club.me"),
-  domain("nnm-club.name"),
-  domain("nnm-club.tv"),
-  domain("nnmclub.to"),
-  domain("nnmclub.tv") {
+  domain("nnmclub.to") {
     body > :first-child:not(div) {
         display: none !important
     }
@@ -2616,14 +2616,7 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.ua") {
-    .widgets.main > * div ~ div ~ div ~ div[class*=" "] > div[class*="_"] {
-        background-image: none !important
-    }
-    .home-arrow__bottom, 
-    .widgets.main > * div ~ div ~ div ~ div[class*=" "] > :not([class]), 
-    .widgets.main > * div ~ div ~ div ~ div[class*=" "] > :not(div), 
-    .widgets.main > * div ~ div ~ div ~ div[class*=" "] > [class^=" "], 
-    div[aria-label="Реклама"] {
+    .home-arrow__bottom, div[aria-label="Реклама"] {
         display: none !important
     }
     .serp-header {
@@ -2667,15 +2660,7 @@
     }
 }
 
-@-moz-document domain("yummyanime.com") {
-    #top-block {
-        position: fixed !important;
-        height: 0 !important;
-        width: 0 !important
-    }
-}
-
-@-moz-document domain("zagonka.ru") {
+@-moz-document domain("zagonka.tv") {
     .sitebox:not(#id) {
         margin-top: 0 !important
     }
