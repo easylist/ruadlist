@@ -17,7 +17,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.811
+VERSION = 3.812
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -247,6 +247,8 @@ def sortfunc (option):
     if option == "popup": return option + "}"
     # Also let third-party will always be first in the list
     if option.find("third-party") > -1: return "0" + option
+    # And let badfilter will always be last in the list
+    if option.find("badfilter") > -1: return "|" + option
     return option
 
 def filtertidy (filterin):
