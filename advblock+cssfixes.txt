@@ -30,6 +30,7 @@ rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(cookie-remover.js, /(u
 animelend.info##+js(set-constant.js, JSON.parse, noopFunc)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20px)
+@@$third-party,image,domain=www.kinopoisk.ru
 @@$~third-party,xmlhttprequest,domain=aftershock.news|amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|sovsport.ru|svpressa.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
 @@||inoreader.com/adv/$first-party,image,script,badfilter
