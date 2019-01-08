@@ -27,24 +27,7 @@ auto.ru##div[class$="__twoColumnsLeft"] > div ~ div:not([class*="__Card"])
 !
 ! Avito
 www.avito.ru##.avito-ads-container
-/^https?://www\.avito\.ru/[^\s]{300,}/$subdocument,domain=www.avito.ru
-www.avito.ru##a[href^="https://www.avito.ru/js"][target="_blank"]
-www.avito.ru#?#body *:-abp-has(> * > * > * > * > iframe[src*="www.avito.ru/js"]:not([bordercolor]))
-www.avito.ru#?#body *:-abp-has(> * > * > * > a[href^="https://www.avito.ru/js"][target="_blank"])
-www.avito.ru#?#body *:-abp-has(> * > * > * > div[id^="sf-"])
-www.avito.ru#?#body *:-abp-has(> * > * > * > iframe[src*="www.avito.ru/js"]:not([bordercolor]))
-www.avito.ru#?#body *:-abp-has(> * > * > a[href^="https://www.avito.ru/js"][target="_blank"])
-www.avito.ru#?#body *:-abp-has(> * > * > div[id^="sf-"])
-www.avito.ru#?#body *:-abp-has(> * > * > iframe[src*="www.avito.ru/js"]:not([bordercolor]))
-www.avito.ru#?#body *:-abp-has(> * > a[href^="https://www.avito.ru/js"][target="_blank"])
-www.avito.ru#?#body *:-abp-has(> * > div[id^="sf-"])
-www.avito.ru#?#body *:-abp-has(> * > iframe[src*="www.avito.ru/js"]:not([bordercolor]))
-www.avito.ru#?#body *:-abp-has(> a[href^="https://www.avito.ru/js"][target="_blank"])
-www.avito.ru#?#body *:-abp-has(> div[id^="sf-"])
-www.avito.ru#?#body *:-abp-has(> iframe[src*="www.avito.ru/js"]:not([bordercolor]))
-www.avito.ru##body div[id][class][lang="ru"]
 www.avito.ru#?#div:-abp-has(> [class] > h2:-abp-contains(Pеклама))
-www.avito.ru##div[id^="sf-"]
 ||avito.ru^*/dfp/px.js
 ||criteo.net^$domain=avito.ru
 ||taboola.com^$domain=avito.ru
