@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190106.2338
+@version 0.20190110.1956
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -62,6 +62,7 @@
   domain("hdrezka.top"),
   domain("hdrezka.tv"),
   domain("hdrezka.win"),
+  domain("hdrezka.wtf"),
   domain("hdrezka1.site"),
   domain("ihdrezka.com"),
   domain("ikinohd.club"),
@@ -131,7 +132,6 @@
   domain("fastpic.ru"),
   domain("film-max.ru"),
   domain("filmfullhd.net"),
-  domain("fotou.ru"),
   domain("gecid.com"),
   domain("hd720.biz"),
   domain("hdkinoklub.com"),
@@ -154,6 +154,7 @@
   domain("hdrezka.today"),
   domain("hdrezka.top"),
   domain("hdrezka.win"),
+  domain("hdrezka.wtf"),
   domain("ihdrezka.com"),
   domain("ixbt.com"),
   domain("kino-full.ru"),
@@ -168,6 +169,7 @@
   domain("newstudio.tv"),
   domain("nnm-club.me"),
   domain("nnmclub.to"),
+  domain("nootropos.ru"),
   domain("oblozhki.net"),
   domain("oper.ru"),
   domain("pure-t.ru"),
@@ -1005,15 +1007,6 @@
     .ftips-branding .td-main-page-wrap, .ftips-branding-ad + div, 
     .ftips-branding.td_category_template_1 .td-category-header {
         padding-top: 5px !important
-    }
-}
-
-@-moz-document domain("fotou.ru") {
-    html > body:not(#id) {
-        background: #abc4a1 !important
-    }
-    body > #page {
-        padding-top: 0 !important
     }
 }
 
@@ -1862,6 +1855,15 @@
     }
 }
 
+@-moz-document domain("nootropos.ru") {
+    html > body:not(#id) {
+        background: #abc4a1 !important
+    }
+    body > #page {
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("obozrevatel.com") {
     body > .header {
         margin-top: 0 !important
@@ -2375,14 +2377,6 @@
     body > div[style*='1010'] {
         width: auto !important;
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("tjournal.ru"),
-  domain("vc.ru") {
-    .stratumTele2 {
-        height: 0 !important
     }
 }
 
