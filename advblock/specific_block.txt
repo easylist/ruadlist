@@ -381,7 +381,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|mschistota.ru
 /^https?://porno-island.org\/(?!templates|engine)/$script,domain=porno-island.org
 /^https?://proporno.org\/(?!templates|engine)/$script,domain=proporno.org
 /^https?://www\.baby\.ru/[^.]{150,}$/$script,domain=baby.ru
-/^https?://www\.drive2\.ru/[^\s]{150,}/$xmlhttprequest,domain=www.drive2.ru
+/^https?://www\.drive2\.ru/(?!market\/search\?condition=)[^\s]{150,}/$xmlhttprequest,domain=www.drive2.ru
 /^https?://www\.e1\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.e1.ru
 /^https?://www\.kakprosto\.ru/[^\s]{115,}/$xmlhttprequest,domain=www.kakprosto.ru
 /^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
