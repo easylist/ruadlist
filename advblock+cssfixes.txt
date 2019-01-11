@@ -10,7 +10,7 @@
 !
 %include advblock.txt%
 %include css-fixes-experimental.txt%
-! --- uBO scriptlets injection rules & other---
+! --- uBO scriptlets injection rules & other ---
 $third-party,xmlhttprequest,domain=mastarti.com
 $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 championat.com,gazeta.ru,quto.ru,rambler.ru,rns.online##+js(abort-current-inline-script.js, Math.random, timerAdIsLoaded)
