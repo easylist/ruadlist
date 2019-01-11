@@ -12,33 +12,38 @@
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other---
 $third-party,xmlhttprequest,domain=mastarti.com
-championat.com,gazeta.ru,quto.ru,rambler.ru,rns.online##+js(abort-current-inline-script.js, Math.random, timerAdIsLoaded)
-baskino-z720.com,torrent-soft.net##+js(abort-current-inline-script.js, String.fromCharCode, var _0x)
-rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(abort-current-inline-script.js, ads_script)
-rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(abort-current-inline-script.js, antiadblock)
-money-pic.ru##+js(abort-current-inline-script.js, q330)
-lenta.ru##+js(abort-current-inline-script.js, setTimeout, timerAdIsLoaded)
-kakprosto.ru##+js(abort-on-property-read.js, Date.prototype.toUTCString)
-auto.ru##+js(abort-on-property-read.js, Element.prototype.attachShadow)
-liveinternet.ru##+js(abort-on-property-read.js, IntersectionObserver)
-drive2.ru,e1.ru##+js(abort-on-property-read.js, Ya)
-dok-film.net##+js(abort-on-property-read.js, adBlockDetected)
-razlozhi.ru##+js(abort-on-property-read.js, advertSlice)
-rutracker-org.appspot.com##+js(abort-on-property-read.js, alert)
-echo.msk.ru##+js(abort-on-property-read.js, atob)
-overclockers.ru##+js(abort-on-property-read.js, bqa, chkA)
-aftershock.news,amurmedia.ru,eaomedia.ru,fastpic.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,primamedia.ru,radikal.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-read.js, ccScriptSupport)
-onlinevideoconverter.com##+js(abort-on-property-read.js, eval)
-anidub.com##+js(abort-on-property-read.js, ogonek)
-mail.ru##+js(abort-on-property-read.js, smokyTools)
-kakprosto.ru##+js(abort-on-property-read.js, yaStatId)
-rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(cookie-remover.js, /(u_count|gophp|st2|st3)/)
-kakprosto.ru##+js(cookie-remover.js, /(yadb|crookie)/)
-animelend.info##+js(set-constant.js, JSON.parse, noopFunc)
+$~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
+@@$third-party,image,domain=www.kinopoisk.ru
+@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
 a-dot-kinozal-tv.appspot.com,kinozal-tv.appspot.com##+js(set-constant.js, String, trueFunc)
+aftershock.news,amurmedia.ru,eaomedia.ru,fastpic.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,popcornnews.ru,primamedia.ru,radikal.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-read.js, ccScriptSupport)
+anidub.com##+js(abort-on-property-read.js, ogonek)
+animelend.info##+js(set-constant.js, JSON.parse, noopFunc)
+argumenti.ru##+js(abort-on-property-read.js, ccScriptSupport)
+auto.ru##+js(abort-on-property-read.js, Element.prototype.attachShadow)
+baskino-z720.com,torrent-soft.net##+js(abort-current-inline-script.js, String.fromCharCode, var _0x)
+championat.com,gazeta.ru,quto.ru,rambler.ru,rns.online##+js(abort-current-inline-script.js, Math.random, timerAdIsLoaded)
+dok-film.net##+js(abort-on-property-read.js, adBlockDetected)
+drive2.ru,e1.ru##+js(abort-on-property-read.js, Ya)
+echo.msk.ru##+js(abort-on-property-read.js, atob)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20px)
-@@$third-party,image,domain=www.kinopoisk.ru
-@@$~third-party,xmlhttprequest,domain=aftershock.news|amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|sovsport.ru|svpressa.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
-@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
-@@||sovsport.ru^$csp=script-src 'self' * data:
+kakprosto.ru##+js(abort-on-property-read.js, Date.prototype.toUTCString)
+kakprosto.ru##+js(abort-on-property-read.js, yaStatId)
+kakprosto.ru##+js(cookie-remover.js, /(yadb|crookie)/)
+lenta.ru##+js(abort-current-inline-script.js, setTimeout, timerAdIsLoaded)
+liveinternet.ru##+js(abort-on-property-read.js, IntersectionObserver)
+mail.ru##+js(abort-on-property-read.js, smokyTools)
+money-pic.ru##+js(abort-current-inline-script.js, q330)
+onlinevideoconverter.com##+js(abort-on-property-read.js, eval)
+overclockers.ru##+js(abort-on-property-read.js, bqa, chkA)
+razlozhi.ru##+js(abort-on-property-read.js, advertSlice)
+rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(abort-current-inline-script.js, ads_script)
+rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(abort-current-inline-script.js, antiadblock)
+rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(cookie-remover.js, /(u_count|gophp|st2|st3)/)
+rutracker-org.appspot.com##+js(abort-on-property-read.js, alert)
+||aftershock.news^$xmlhttprequest,badfilter,domain=aftershock.news
+||sovsport.ru^$csp=script-src 'self' * data:,badfilter
+||svpressa.ru^$xmlhttprequest,badfilter,domain=svpressa.ru
+||www.popcornnews.ru^$xmlhttprequest,badfilter,domain=www.popcornnews.ru
+||www.sovsport.ru^$xmlhttprequest,badfilter,domain=www.sovsport.ru
