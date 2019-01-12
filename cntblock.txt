@@ -63,10 +63,14 @@
 fastpic.ru###picContainer > img
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net#?##tor-reged ~ *:-abp-has(a)
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net#?##tor-reged ~ *:-abp-has(img)
+$third-party,xmlhttprequest,domain=mastarti.com
 militaryreview.su##.bbanerr
 yakusubstudio.home-forum.com,yakusubstudio.ru##.contbaner
 segodnya.ua##.counters
+/^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$xmlhttprequest,domain=hdgo.cc
 /^https?://rkn\.gov\.ru\/(?!js\/)+[a-z0-9]{15,25}\.js\?+[0-9]{7,15}/$script,domain=rkn.gov.ru
+/assets/vendor*.xml?$third-party,xmlhttprequest,domain=kodik.cc
+@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
 mail.ru#?#body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div div:-abp-has(> div:-abp-contains(/[a-z]/))
 mail.ru##body > .zeropixel ~ * .search__container ~ [class] ~ [class] > :first-child
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##footer
@@ -84,8 +88,6 @@ pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##footer > a
 /_res/script/image.php?type=$image
 /adlogger_tracker.js?
 /admp-tc.
-/assets/vendor*.xml?externalsubid=*v=$third-party,xmlhttprequest
-/assets/vendor*.xml?v=$third-party,xmlhttprequest
 /awstats_misc_tracker.
 /b/ss/*?aqb=1&ndh=
 /bitrix/spread.php?
