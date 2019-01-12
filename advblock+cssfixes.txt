@@ -40,6 +40,7 @@ animelend.info##+js(set-constant.js, JSON.parse, noopFunc)
 a-dot-kinozal-tv.appspot.com,kinozal-tv.appspot.com##+js(set-constant.js, String, trueFunc)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20px)
+/^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$xmlhttprequest,domain=hdgo.cc
 @@$third-party,image,domain=www.kinopoisk.ru
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
 ||aftershock.news^$xmlhttprequest,badfilter,domain=aftershock.news
