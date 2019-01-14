@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190110.1956
+@version 0.20190114.2302
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -37,7 +37,6 @@
   domain("gameguru.ru"),
   domain("gidonline.in"),
   domain("hd720.biz"),
-  domain("hdkinoklub.com"),
   domain("hdkinozor.ru"),
   domain("hdrezka-online.me"),
   domain("hdrezka.ag"),
@@ -134,7 +133,6 @@
   domain("filmfullhd.net"),
   domain("gecid.com"),
   domain("hd720.biz"),
-  domain("hdkinoklub.com"),
   domain("hdrezka-online.me"),
   domain("hdrezka.asia"),
   domain("hdrezka.buzz"),
@@ -336,13 +334,11 @@
 
 @-moz-document
   domain("ain.ua"),
-  domain("crocfilm.club"),
   domain("filmfullhd.net"),
   domain("gametech.ru"),
   domain("gid-online.in"),
   domain("gidonline-hd.me"),
   domain("gidonline.in"),
-  domain("hd-1080.com"),
   domain("kino-hd720.net"),
   domain("kino-klub.org"),
   domain("kino720.online"),
@@ -355,6 +351,16 @@
   domain("virusinfo.info") {
     body:not(#id), html:not(#id) {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("alau.kz") {
+    .td-ad-background-link .td-outer-container > * {
+        pointer-events: auto !important
+    }
+    .td-ad-background-link #td-outer-wrap, 
+    .td-ad-background-link .td-outer-container {
+        pointer-events: none !important
     }
 }
 
@@ -1000,6 +1006,12 @@
     tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"] {
         color: #004488 !important;
         font-weight: 200 !important
+    }
+}
+
+@-moz-document domain("forums.rusmedserv.com") {
+    body > div[id][style="display: block;"] {
+        display: none !important
     }
 }
 
