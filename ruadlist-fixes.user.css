@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190114.2302
+@version 0.20190122.2317
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -177,7 +177,6 @@
   domain("smotri.com"),
   domain("stopgame.ru"),
   domain("torrent-games.info"),
-  domain("torrent-games.net"),
   domain("torrentom.com"),
   domain("torrentum.me"),
   domain("userstyles.org"),
@@ -385,6 +384,18 @@
     .adr-top {
         height: 0 !important;
         min-height: 0 !important
+    }
+}
+
+@-moz-document domain("allmmorpg.ru") {
+    body {
+        background-image: none !important
+    }
+    .td-ad-background-link > * {
+        pointer-events: auto !important
+    }
+    .td-ad-background-link {
+        pointer-events: none !important
     }
 }
 
@@ -802,7 +813,9 @@
     }
 }
 
-@-moz-document domain("dynamo.kiev.ua") {
+@-moz-document
+  domain("dynamo.kiev.ua"),
+  domain("ringside24.com") {
     .fader-social {
         display: none !important
     }
@@ -882,6 +895,15 @@
   domain("uniondht.org") {
     body:not(#id), html:not(#id) {
         padding: 0 !important
+    }
+}
+
+@-moz-document domain("fainaidea.com") {
+    body > .container-fluid > #td-outer-wrap > *, body > .container-fluid > * {
+        pointer-events: auto !important
+    }
+    body > .container-fluid, body > .container-fluid > #td-outer-wrap {
+        pointer-events: none !important
     }
 }
 
@@ -1639,6 +1661,15 @@
     }
 }
 
+@-moz-document domain("mel.fm") {
+    .i-layout_branding {
+        background-image: none !important
+    }
+    .i-layout__branding-content-wrapper {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("minigames.mail.ru") {
     .rb_box, div[id^="slot"][id*="sitezone"] {
         opacity: 0 !important;
@@ -2344,6 +2375,15 @@
     }
 }
 
+@-moz-document domain("tarkov-wiki.ru") {
+    html > div[class][style^="background-color: rgba"] {
+        display: none !important
+    }
+    html > body {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("tehnot.com") {
     html > body {
         background-image: none !important;
@@ -2401,9 +2441,7 @@
     }
 }
 
-@-moz-document
-  domain("torrent-games.info"),
-  domain("torrent-games.net") {
+@-moz-document domain("torrent-games.info") {
     html {
         position:relative;
         top:-232px
