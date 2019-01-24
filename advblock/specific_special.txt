@@ -145,6 +145,7 @@ mail.ru##div[id^="direct__worm"]
 mail.ru##div[id^="yandex_"]
 ! Скрытие по-разделам
 ! Главная
+mail.ru#?#body > .zeropixel ~ * div[class]:-abp-has(> div > div > p:-abp-contains(Delivery Club))
 mail.ru#?#div[class^="grid"] div[class]:-abp-has(> div > div > p:-abp-contains(Delivery Club))
 ! Почта
 e.mail.ru###leftcol-banners
