@@ -1844,7 +1844,7 @@ talkwebber.ru##.col_c_stats > a[href^="http://talkwebber.ru/go/?"]
 alive-ua.com##.col_l_b
 itvcom.ru##.colr > h4
 xatab-repack.net##.colum_right > :not([class="block"])
-echo.msk.ru##.column > div:not([id]):not([class])
+echo.msk.ru##.column > script ~ div > div:not([id]):not([class])
 echo.msk.ru#?#.column [class]:-abp-has(> [id] + script:-abp-contains(eval))
 naurfo.ru##.column a[href][target="_blank"]
 fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmopotok.ru,pickfilm.ru,veleto.ru##.column div[style="margin: 0px;"]
