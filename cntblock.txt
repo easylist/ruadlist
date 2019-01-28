@@ -61,7 +61,6 @@
 !
 ! = Частные фильтры ===========================================================
 fastpic.ru###picContainer > img
-inoreader.com###sinner_container
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net#?##tor-reged ~ *:-abp-has(a)
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net#?##tor-reged ~ *:-abp-has(img)
 $third-party,xmlhttprequest,domain=mastarti.com
@@ -74,7 +73,6 @@ segodnya.ua##.counters
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
 mail.ru#?#body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div div:-abp-has(> div:-abp-contains(/[a-z]/))
 mail.ru##body > .zeropixel ~ * .search__container ~ [class] ~ [class] > :first-child
-inoreader.com##body > div[class^="inno_dialog"]:not([id^="article_dialog"])
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##footer
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##footer > a
 4pda.ru##tbody > tr[valign="top"] > td[width="20%"] + td[class]
