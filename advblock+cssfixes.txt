@@ -12,7 +12,7 @@
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other ---
 $third-party,xmlhttprequest,domain=mastarti.com
-aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,car.ru,eaomedia.ru,fastpic.ru,irkutskmedia.ru,it-tehnik.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,moikolodets.ru,newsland.com,popcornnews.ru,primamedia.ru,radikal.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,theplace.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-current-inline-script.js, Math.floor, ccScriptSupport)
+$~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 baskino-z720.com,dc-marvel.org,gidonline.eu,tfile.me,tfile2.cc,torrent-soft.net##+js(abort-current-inline-script.js, String.fromCharCode, var _0x)
 championat.com,gazeta.ru,quto.ru,rambler.ru,rns.online##+js(abort-current-inline-script.js, Symbol, -Anti-AdBlock-is-adblock)
 rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(abort-current-inline-script.js, ads_script)
@@ -34,6 +34,7 @@ overclockers.ru##+js(abort-on-property-read.js, bqa, chkA)
 simpsonsua.com.ua,simpsonsua.tv##+js(abort-on-property-read.js, document.addEventListener, show_warning)
 dclans.ru##+js(abort-on-property-read.js, document.getElementById, mdl_adb)
 anidub.com##+js(abort-on-property-read.js, ogonek)
+aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,car.ru,eaomedia.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, ccScriptSupport)
 rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(cookie-remover.js, /(u_count|gophp|st2|st3)/)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover.js, /^blcrm|^bltsr/)
 www.liveinternet.ru##+js(cookie-remover.js, /bltsr|crookie/)
@@ -47,5 +48,16 @@ igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20p
 /assets/vendor*.xml?$third-party,xmlhttprequest,domain=kodik.cc
 @@$third-party,image,domain=www.kinopoisk.ru
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
+||aftershock.news^$xmlhttprequest,badfilter,domain=aftershock.news
+||alau.kz^$xmlhttprequest,badfilter,domain=alau.kz
+||argumenti.ru^$csp=script-src 'self' * data:,badfilter
+||argumenti.ru^$xmlhttprequest,badfilter,domain=argumenti.ru
+||car.ru/*/|$xmlhttprequest,badfilter,domain=car.ru
+||car.ru/|$xmlhttprequest,badfilter,domain=car.ru
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
+||moikolodets.ru^$xmlhttprequest,badfilter,domain=moikolodets.ru
 ||simpsonsua.com.ua^$csp=script-src 'self' * data:,badfilter
+||svpressa.ru^$xmlhttprequest,badfilter,domain=svpressa.ru
+||tsargrad.tv^$xmlhttprequest,badfilter,domain=tsargrad.tv
+||www.sovsport.ru^$xmlhttprequest,badfilter,domain=www.sovsport.ru
+||www.sport-express.ru^$xmlhttprequest,badfilter,domain=www.sport-express.ru
