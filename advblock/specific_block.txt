@@ -361,7 +361,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|mschistota.ru
 /^https?://(?!static\.)([^.]+\.)+?fastpic\.ru[:/]/$script,domain=fastpic.ru
 /^https?://(?!www\.)(?!forum)([^.]+\.)+?(qrz\.ru)[:/]/$script,domain=qrz.ru
 /^https?://(?!www\.)(?!static)([^.]+\.)+?(censor\.net\.ua)[:/]/$script,domain=censor.net.ua
-/^https?://(?!www\.instagram\.com|platform\.instagram\.com|platform\.twitter\.com|cdn\.syndication\.twimg\.com|cdn\.jsdelivr\.net|playercdn\.cdnvideo\.ru|connect\.facebook\.net|graph\.facebook\.com|apis\.google\.com|fonts\.googleapis\.com|connect\.ok\.ru|vk\.com|login\.vk\.com|vkontakte\.ru|api\.vk\.com|code\.giraff\.io|a\.giraff\.io|sinst\.fwdcdn\.com|sinoptik\.ua/informers_js|code\.jquery\.com|yandex\.st|mc\.yandex\.ru)/$third-party,script,stylesheet,xmlhttprequest,domain=bugaga.ru|cc-fan.tv|cn-fan.tv|doramy.net|erofishki.cc|fishki.net|fox-fan.tv|novosti-n.info|xn---2--mddxunv8a2esa.xn--p1ai|дом-2-эфиры.рф
+/^https?://(?!www\.instagram\.com|platform\.instagram\.com|platform\.twitter\.com|cdn\.syndication\.twimg\.com|cdn\.jsdelivr\.net|playercdn\.cdnvideo\.ru|connect\.facebook\.net|graph\.facebook\.com|apis\.google\.com|fonts\.googleapis\.com|connect\.ok\.ru|vk\.com|login\.vk\.com|vkontakte\.ru|api\.vk\.com|code\.giraff\.io|a\.giraff\.io|sinst\.fwdcdn\.com|sinoptik\.ua/informers_js|code\.jquery\.com|yandex\.st|mc\.yandex\.ru)/$third-party,script,stylesheet,xmlhttprequest,domain=bugaga.ru|cc-fan.tv|cn-fan.tv|doramy.net|eragun.org|erofishki.cc|fishki.net|fox-fan.tv|novosti-n.info|xn---2--mddxunv8a2esa.xn--p1ai|дом-2-эфиры.рф
 /^https?://[^\s]+\.razlozhi\.ru/[^\s]{300,}/$subdocument,xmlhttprequest,domain=razlozhi.ru
 /^https?://[^\s]+\.sdamgia\.ru/[^\s]{100,}/$script,subdocument,xmlhttprequest,domain=sdamgia.ru
 /^https?://[^\s]\.pikabu\.ru/[^\s]{300,}/$xmlhttprequest,domain=pikabu.ru
@@ -1138,6 +1138,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||energiyacosmosa.newbb.ru/tn$subdocument
 ||envybox.io^$domain=globuslife.ru
 ||epidemz.net/bank/
+||eragun.org/js/ae*.js|$script
 ||eralady.ru/ads.js
 ||erofishki.cc/informer$xmlhttprequest
 ||erofishki.cc/js/teaserlady.js
