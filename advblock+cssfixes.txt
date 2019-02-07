@@ -13,6 +13,7 @@
 ! --- uBO scriptlets injection rules & other ---
 $third-party,xmlhttprequest,domain=mastarti.com
 $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
+draug.ru,vargr.ru##+js(abort-current-inline-script.js, Math.floor, AdSense)
 baskino-z720.com,dc-marvel.org,gidonline.eu,tfile.me,tfile2.cc,torrent-soft.net##+js(abort-current-inline-script.js, String.fromCharCode, var _0x)
 rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(abort-current-inline-script.js, ads_script)
 rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(abort-current-inline-script.js, antiadblock)
@@ -45,9 +46,11 @@ gamehunt.net##+js(setTimeout-defuser.js, Adblock)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20px)
 /^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$xmlhttprequest,domain=hdgo.cc
+/^https?://vargr\.ru\/+(boars|eagles|modus)\.html$/$inline-script
 /assets/vendor*.xml?$third-party,xmlhttprequest,domain=kodik.cc
 @@$third-party,image,domain=www.kinopoisk.ru
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
+draug.ru##p:has-text(Для скачивания подождите отчет таймера...)
 ||aftershock.news^$xmlhttprequest,badfilter,domain=aftershock.news
 ||alau.kz^$xmlhttprequest,badfilter,domain=alau.kz
 ||argumenti.ru^$csp=script-src 'self' * data:,badfilter
