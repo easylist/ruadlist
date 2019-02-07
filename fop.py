@@ -62,8 +62,8 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt", "antinuha.txt",
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = ("collapse", "document", "elemhide", "font", "generichide", "genericblock",
-                "image", "match-case", "media", "object", "object-subrequest", "other",
-                "ping", "popup", "script", "stylesheet", "subdocument", "badfilter",
+                "image", "inline-script", "match-case", "media", "object", "object-subrequest",
+                "other", "ping", "popup", "script", "stylesheet", "subdocument", "badfilter",
                 "first-party", "third-party", "websocket", "xmlhttprequest")
 
 # List the supported revision control system commands
