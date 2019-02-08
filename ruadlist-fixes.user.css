@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190205.1915
+@version 0.20190208.2107
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -812,6 +812,17 @@
     }
 }
 
+@-moz-document
+  domain("draug.ru"),
+  domain("vargr.ru") {
+    #timer_2 {
+        display: block !important
+    }
+    #timer_1 {
+        display: none !important
+    }
+}
+
 @-moz-document domain("drive.ru") {
     body > div {
         background: none !important;
@@ -921,6 +932,15 @@
     }
 }
 
+@-moz-document
+  domain("euro-football.ru"),
+  domain("forums.rusmedserv.com"),
+  domain("liveresult.ru") {
+    body > div[id]:not([class])[style="display: block;"] {
+        display: none !important
+    }
+}
+
 @-moz-document domain("fainaidea.com") {
     body > .container-fluid > #td-outer-wrap > *, body > .container-fluid > * {
         pointer-events: auto !important
@@ -989,7 +1009,7 @@
     }
 }
 
-@-moz-document domain("filmitorrent.org") {
+@-moz-document domain("filmitorrent.xyz") {
     a[href^="/a"][href$="html"][target="_blank"] {
         display: none !important
     }
@@ -1042,12 +1062,6 @@
     tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"] {
         color: #004488 !important;
         font-weight: 200 !important
-    }
-}
-
-@-moz-document domain("forums.rusmedserv.com") {
-    body > div[id][style="display: block;"] {
-        display: none !important
     }
 }
 
@@ -1160,7 +1174,7 @@
 }
 
 @-moz-document domain("go.mail.ru") {
-    div[class^="responses_"][class$="_wrapper"] > div[id^="js-"][id$="Block"] > section {
+    div[class^="responses_"][class$="_wrapper"] > div[id^="js-"][id$="Block"] > :first-child {
         display: none !important
     }
 }
@@ -1389,6 +1403,13 @@
     }
 }
 
+@-moz-document domain("izzylaif.com") {
+    .adsbygoogle {
+        height: 1px !important;
+        opacity: 0 !important
+    }
+}
+
 @-moz-document domain("kaluga-poisk.ru") {
     body:not(#id) {
         background: whitesmoke !important
@@ -1504,6 +1525,15 @@
 @-moz-document domain("kinomania.ru") {
     .outer {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinoprofi.net") {
+    body .header {
+        padding-top: 0 !important
+    }
+    body .header .header-fixed {
+        top: 0 !important
     }
 }
 
@@ -1807,13 +1837,13 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    #wtfheader > [onclick], [onclick="goTo(this)"] > img {
+    #all > div[id*="header"] > [onclick], [onclick="goTo(this)"] > img {
         display: none !important
     }
-    #wtfheader {
+    #all > div[id*="header"] {
         height: 1px !important
     }
-    #wtfheader > .wtfnav {
+    #all > div[id*="header"] > .wtfnav {
         margin-top: 0 !important
     }
 }
@@ -2335,7 +2365,7 @@
   domain("sports.ru"),
   domain("tribuna.com") {
     html > body {
-        background: #a7a7a7 !important
+        background-color: #a7a7a7 !important
     }
     #branding-layout:not(#id), .page-layout {
         margin-top: 0 !important
