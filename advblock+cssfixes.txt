@@ -27,6 +27,7 @@ auto.ru,kinopoisk.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-prope
 drive2.ru,e1.ru,sdamgia.ru##+js(abort-on-property-read.js, Ya)
 dok-film.net##+js(abort-on-property-read.js, adBlockDetected)
 rg-mechanics.org,xatab-repack.net##+js(abort-on-property-read.js, ads)
+kinopoisk.ru##+js(abort-on-property-read.js, advBlock)
 razlozhi.ru##+js(abort-on-property-read.js, advertSlice)
 echo.msk.ru,gidonline.eu,liveinternet.ru,simpsonsua.com.ua##+js(abort-on-property-read.js, atob)
 overclockers.ru##+js(abort-on-property-read.js, bqa, chkA)
@@ -37,6 +38,7 @@ aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedi
 championat.com,gazeta.ru,quto.ru,rambler.ru,rns.online##+js(abort-on-property-write.js, pofa)
 lenta.ru##+js(abort-on-property-write.js, rfea)
 rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(cookie-remover.js, /(u_count|gophp|st2|st3)/)
+kinopoisk.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^cmtchd|^crookie|^kpunk)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover.js, /^blcrm|^bltsr|^mcBaGDt/)
 drive2.ru##+js(cookie-remover.js, /^bltsr/)
 www.liveinternet.ru##+js(cookie-remover.js, /^bltsr|^crookie/)
@@ -51,7 +53,6 @@ igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20p
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,~third-party
 /^https?://vargr\.ru\/+(boars|eagles|modus)\.html$/$inline-script
 /assets/vendor*.xml?$third-party,xmlhttprequest,domain=kodik.cc
-@@$third-party,image,domain=www.kinopoisk.ru
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
 draug.ru##p:has-text(Для скачивания подождите отчет таймера...)
 ||aftershock.news^$xmlhttprequest,badfilter,domain=aftershock.news
