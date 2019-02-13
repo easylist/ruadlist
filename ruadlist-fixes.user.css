@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190208.2107
+@version 0.20190213.2249
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -34,6 +34,7 @@
   domain("fast-torrent.su"),
   domain("film-max.ru"),
   domain("filmopotok.ru"),
+  domain("filmpotok.ru"),
   domain("gameguru.ru"),
   domain("gidonline.in"),
   domain("hd720.biz"),
@@ -176,6 +177,7 @@
   domain("rufootballtv.org"),
   domain("russian-porn.online"),
   domain("sc2tv.ru"),
+  domain("simhost.org"),
   domain("smotri.com"),
   domain("stopgame.ru"),
   domain("torrent-games.info"),
@@ -340,6 +342,7 @@
   domain("gid-online.in"),
   domain("gidonline-hd.me"),
   domain("gidonline.in"),
+  domain("gidonline.io"),
   domain("kino-hd720.net"),
   domain("kino-klub.org"),
   domain("kino720.online"),
@@ -850,17 +853,8 @@
 }
 
 @-moz-document domain("e.mail.ru") {
-    .application-mail__wrap > .layout > .layout__main-frame {
-        margin-right: 0 !important
-    }
-    #leftcol-banners, #preload_banner_1, .b-rb, .js-helper.direct-state, 
-    .message-sent__ads, .message-sent__hr.message-sent__hr_big, 
-    .message-sent__hr.message-sent__hr_small, .message-sent__wrap:nth-of-type(4) {
-        transform: scale(0) !important;
-        opacity: 0 !important;
-        pointer-events: none !important;
-        position: fixed !important;
-        top: -1000px !important
+    #LEGO #leftcol-banners, #LEGO .b-rb, #LEGO div[id^="preload_banner"] {
+        display: none !important
     }
 }
 
@@ -955,6 +949,7 @@
   domain("fast-torrent.ru"),
   domain("fast-torrent.su"),
   domain("filmopotok.ru"),
+  domain("filmpotok.ru"),
   domain("pickfilm.ru"),
   domain("veleto.ru") {
     body {
@@ -1038,6 +1033,12 @@
 @-moz-document domain("fishki.net") {
     #container {
         cursor: auto !important
+    }
+}
+
+@-moz-document domain("footballhd.ru") {
+    body > #header {
+        margin-top: 0 !important
     }
 }
 
@@ -1567,7 +1568,7 @@
 
 @-moz-document
   domain("kinoxa.net"),
-  domain("lordfilm.tv") {
+  domain("lordfilms.tv") {
     body > .wrap {
         margin-top: 0 !important
     }
@@ -1686,14 +1687,7 @@
 }
 
 @-moz-document domain("mail.ru") {
-    body > .grid_y-sm > .grid-middle, body > .grid_y-xs > .grid-middle {
-        top: 182px !important
-    }
-    body > [class*="grid_y"]:not([class*="sm"]):not([class*="xs"]) > .grid-middle {
-        top: 190px !important
-    }
-    #doubleformat_down, .branding-p, div[data-module^="Slot.mimic."], 
-    noindex[style*="!"] {
+    #doubleformat_down, .branding-p {
         transform: scale(0) !important;
         opacity: 0 !important;
         pointer-events: none !important;
@@ -1819,7 +1813,10 @@
 }
 
 @-moz-document domain("my.mail.ru") {
-    .l-app__left, .l-app__right, div[class*="mimic"], div[class^="app-adv-"] {
+    #history_container > div[style^="position"][style*="background-color"][style*="visible"], 
+    .l-app__left, .l-app__right, 
+    .mm-column-right div[style^="position"][style*="background-color"][style*="visible"], 
+    div[class*="mimic"], div[class^="app-adv-"] {
         display: none !important
     }
 }
@@ -1841,7 +1838,8 @@
         display: none !important
     }
     #all > div[id*="header"] {
-        height: 1px !important
+        height: 1px !important;
+        background: none !important
     }
     #all > div[id*="header"] > .wtfnav {
         margin-top: 0 !important
@@ -2306,6 +2304,12 @@
     }
 }
 
+@-moz-document domain("simhost.org") {
+    .main {
+        margin-top: 50px !important
+    }
+}
+
 @-moz-document domain("slushat-tekst-pesni.ru") {
     .abp {
         transform: none !important;
@@ -2622,34 +2626,41 @@
         background-color: #d5d5d5 !important;
         overflow: auto !important
     }
+    .randomMovie .movieBlock {
+        background-color: white !important
+    }
     body > .app-container, html:not(#id) {
         background: none !important
     }
-    #top > div[id][style^="height: 210px"], .rightTeaser > * {
+    #top > div[id][style^="height: 210px"], .rightTeaser > *, 
+    [class*="adblock-warning"], div[class^="aNL"], div[data-type="teaserspec"] {
         display: none !important
     }
     .rightTeaser {
         height: 2px !important;
         margin-top: 0 !important
     }
-    .app_app-width_default .app__header_margin-bottom_brand {
+    .app_app-width_default .app__header_margin-bottom_brand, 
+    .underheader-superbanner-wrapper, 
+    body > div[id]:not([class]):not([style]):not([id*="_"]):not(#popup) {
         margin-bottom: 0 !important
     }
     html:not(#id) > body:not(#id) > #top {
         margin-bottom: auto !important
     }
-    #top ~ .content > #content_block > table[style^="background-color"] {
+    #top ~ .content > #content_block > table[style^="background-color"], 
+    div[id][style*="min-height: 600px"] > table[style*="margin"] {
         margin-top: 0 !important
     }
     #top_3banners {
         margin-top: 20px !important
     }
-    .adblock-detector-partial-component, .adfox, .branding, .kp-direct-customize {
+    .branding, .kp-direct-customize {
         position: fixed !important;
         top: -10000px !important;
         left: -10000px !important
     }
-    .profileInsertsMenu {
+    .profileInserts, .profileInsertsMenu {
         top: 10px !important;
         margin-top: 0 !important
     }
