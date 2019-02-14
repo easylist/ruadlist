@@ -1,4 +1,4 @@
-/^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,~third-party
+/^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
 /_fixedPanel.js$script,domain=news.mail.ru
 /_parallax.js$script,domain=news.mail.ru
 /_relap.js$script,domain=mail.ru
