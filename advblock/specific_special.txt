@@ -541,28 +541,28 @@ www.rambler.ru#?#main header ~ * div[class^="_"] ~ div[class^="_"]:-abp-has(> di
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
 !
 ! RBC (РБК)
+cnews.ru###mag_banner
+utro.ru##.banner
+rbc.ru,rbcplus.ru,sportrbc.ru##.banner__container
+rbc.ru,rbcplus.ru,sportrbc.ru##.banner__filmstrip
+cnews.ru##.banner_wrapp
+autonews.ru##.g-banner__columns
+quote.rbc.ru##.header__project__info
+cnews.ru##.main > noindex:last-child
+utro.ru#?#.news-group__content > .news-group__item:-abp-has(> .banner)
 ##.rbcobmen
+cnews.ru##.tizer_block
+cnews.ru##.yandex_banner
 /browser-updater$script,domain=autonews.ru|rbc.ru|rbcplus.ru|sportrbc.ru
 /dfp_page$domain=autonews.ru|rbc.ru|rbcplus.ru|sportrbc.ru
 /dfp_site$domain=autonews.ru|rbc.ru|rbcplus.ru|sportrbc.ru
-autonews.ru##.g-banner__columns
-autonews.ru,rbc.ru,rbc.ua,rbcplus.ru,sportrbc.ru,utro.ru##[id^="unit_"]
-cnews.ru###mag_banner
-cnews.ru##.banner_wrapp
-cnews.ru##.main > noindex:last-child
-cnews.ru##.tizer_block
-cnews.ru##.yandex_banner
-cnews.ru##a[href^="http://cnb.cnews.ru/click.php"]
-cnews.ru##div[class^="cnb_popup"]
-cnews.ru##div[id^="div-gpt-ad-"]
-quote.rbc.ru##.header__project__info
-rbc.ru,rbcplus.ru,sportrbc.ru##.banner__container
-rbc.ru,rbcplus.ru,sportrbc.ru##.banner__filmstrip
-sportrbc.ru##div[class^="bet-block"]
-utro.ru##.banner
-utro.ru##div[class^="partners-block"]
-utro.ru#?#.news-group__content > .news-group__item:-abp-has(> .banner)
 utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
+autonews.ru,rbc.ru,rbc.ua,rbcplus.ru,sportrbc.ru,utro.ru##[id^="unit_"]
+cnews.ru##a[href^="http://cnb.cnews.ru/click.php"]
+sportrbc.ru##div[class^="bet-block"]
+cnews.ru##div[class^="cnb_popup"]
+utro.ru##div[class^="partners-block"]
+cnews.ru##div[id^="div-gpt-ad-"]
 ||cnews.ru/inc/banners/
 ||rbc.ru/dfp/
 ||rbc.ru/img/banners/
