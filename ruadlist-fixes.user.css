@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190213.2249
+@version 0.20190216.623
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -882,6 +882,7 @@
 @-moz-document
   domain("eg.ru"),
   domain("gagadget.com"),
+  domain("gazeta.ru"),
   domain("msn.com"),
   domain("ngs.ru"),
   domain("rambler.ru") {
@@ -1153,6 +1154,14 @@
     }
 }
 
+@-moz-document
+  domain("gazeta.ru"),
+  domain("rambler.ru") {
+    .stopper > #boxbox, .stopper > #boxfade {
+        display: none !important
+    }
+}
+
 @-moz-document domain("gazeta.ua") {
     #header-wrapper > header > *, body > * {
         pointer-events: auto !important
@@ -1175,7 +1184,7 @@
 }
 
 @-moz-document domain("go.mail.ru") {
-    div[class^="responses_"][class$="_wrapper"] > div[id^="js-"][id$="Block"] > :first-child {
+    [class^="responses_"][class$="_wrapper"] > div[id^="js-"][id$="Block"] > :first-child {
         display: none !important
     }
 }
@@ -1722,13 +1731,6 @@
     }
 }
 
-@-moz-document domain("minigames.mail.ru") {
-    .rb_box, div[id^="slot"][id*="sitezone"] {
-        opacity: 0 !important;
-        pointer-events: none !important
-    }
-}
-
 @-moz-document domain("mirf.ru") {
     #cb-bg-to {
         display: none !important
@@ -1815,6 +1817,7 @@
 @-moz-document domain("my.mail.ru") {
     #history_container > div[style^="position"][style*="background-color"][style*="visible"], 
     .l-app__left, .l-app__right, 
+    .l-app__wrap > div[style^="position"][style*="background-color"][style*="visible"], 
     .mm-column-right div[style^="position"][style*="background-color"][style*="visible"], 
     div[class*="mimic"], div[class^="app-adv-"] {
         display: none !important
@@ -2043,6 +2046,15 @@
     }
 }
 
+@-moz-document domain("pluggedin.ru") {
+    .banner-advertise {
+        margin-top: 0 !important
+    }
+    .open-main-container {
+        margin-top: 60px !important
+    }
+}
+
 @-moz-document domain("podrobno.uz") {
     #offerPopup {
         display: none !important
@@ -2143,9 +2155,9 @@
     }
 }
 
-@-moz-document domain("rambler.ru") {
-    .stopper > #boxbox, .stopper > #boxfade {
-        display: none !important
+@-moz-document domain("radiola.audio") {
+    .mh-container {
+        margin-top: 0 !important
     }
 }
 
