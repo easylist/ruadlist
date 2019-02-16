@@ -190,6 +190,7 @@ _pagespeed_beacon?
 !
 ! = Общие блокировки (и с использованием имени доменов) =========================
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
+/redir/stat/$domain=autonews.ru|rbc.ru|sportrbc.ru
 |http://li.ru^$third-party,~subdocument
 |http://pr-cy.$third-party
 |http://r.i.ua^$third-party
@@ -518,7 +519,6 @@ _pagespeed_beacon?
 ||ranking-hits.de^$third-party
 ||rankw.ru/pinger.php?
 ||rbc.ru/click?
-||rbc.ru/redir/stat/
 ||recostream.go.mail.ru^
 ||referrer.disqus.com^
 ||reinvigorate.net^$third-party
