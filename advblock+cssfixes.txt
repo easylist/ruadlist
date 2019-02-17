@@ -11,6 +11,7 @@
 %include advblock.txt%
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other ---
+$third-party,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
 $third-party,xmlhttprequest,domain=mastarti.com
 $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 draug.ru,vargr.ru##+js(abort-current-inline-script.js, Math.floor, AdSense)
@@ -55,7 +56,7 @@ igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20p
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
 /^https?://vargr\.ru\/+(boars|eagles|modus)\.html$/$inline-script
 /assets/vendor*.xml?$third-party,xmlhttprequest,domain=kodik.cc
-@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=mastarti.com
+@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
 championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online##^script:has-text(-Anti-AdBlock-is-adblock)
 mail.ru##body > .zeropixel ~ * .i-clearfix.feed-generic__container
 mail.ru##body > .zeropixel ~ div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div:style(display: block !important)
