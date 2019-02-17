@@ -2208,6 +2208,7 @@ wowhead.com##.header-nav-wowhead-premium
 sports.uz##.header-reklama
 votpusk.ru##.header-vt-bn
 gazeta-severny.ru##.header-widget
+baby.ru##.header-wrapper ~ script:not([type]) + [class*=" "]:nth-child(-n+6)
 cont.ws##.header2
 xvatit.com##.header2 > .header
 liveinternet.ru##.header[style*="margin-bottom:-20px;"][style*="margin-top:-5px;"]
@@ -3644,11 +3645,10 @@ pdalife.ru##[class*="winner"]
 livesport.ru##[class*="wow"]
 politexpert.net##[class*="zen_"]
 neosmi.ru##[class="0"] > .firstnews
-baby.ru#?#[class]:-abp-has(> .banner_google)
 drive2.com,www.drive2.ru#?#[class]:-abp-has(> .o-group--justify > .c-com-dv-label)
 www.drive2.ru#?#[class]:-abp-has(> [id][class] > iframe:not([data-role]))
 baby.ru#?#[class][id]:-abp-has(> script:-abp-contains(/adfox/i))
-baby.ru##[class][style="min-height: 660px;max-height: 660px;overflow: hidden"]
+baby.ru##[class][style*="min-height: 660px;"][style*="overflow: hidden"]
 slo.ru##[class^="adv_"]
 wot-news.com##[class^="adv_first"]
 sr-week.ru##[class^="advt"]
@@ -4867,7 +4867,7 @@ newbum.net##div[class^="ban"]
 aces.gg##div[class^="banaces"]
 soccer.ru,xn--h1aafgbicfmhn.xn--p1ai,смотримкино.рф##div[class^="baner"]
 gorod.cn.ua##div[class^="bann_"]
-101.ru,999.md,animeonline.su,asiarussia.ru,avtoblog.org.ua,baby.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzday.ru,calend.ru,clubvolvo.ru,dnepr.info,dom2stars.ru,dt.ua,feo.ua,gmod-fan.ru,goodhouse.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,infobank.by,kamchatinfo.com,kino-kingdom.com,kinogo-net-2016.ru,klops.ru,kuban24.tv,manga24.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,moya-semya.ru,musicforums.ru,myslo.ru,nlo-mir.ru,nn.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,studfiles.net,subscribe.ru,svxg.su,tele.ru,telegraf.in.ua,the-village.com.ua,the-village.ru,torrents.in.ua,trisosny.ru,trymobile.ru,tvzvezda.ru,ukrinform.ru,vdvsn.ru,vklybe.tv,vorle.ru,vse.sale,wincore.ru,womanhit.ru,worldofmods.ru,xn--e1asq.xn--p1ai,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
+101.ru,999.md,animeonline.su,asiarussia.ru,avtoblog.org.ua,bezparazita.ru,botinok.porn,bountymax.ru,buzday.ru,calend.ru,clubvolvo.ru,dnepr.info,dom2stars.ru,dt.ua,feo.ua,gmod-fan.ru,goodhouse.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,infobank.by,kamchatinfo.com,kino-kingdom.com,kinogo-net-2016.ru,klops.ru,kuban24.tv,manga24.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,moya-semya.ru,musicforums.ru,myslo.ru,nlo-mir.ru,nn.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,studfiles.net,subscribe.ru,svxg.su,tele.ru,telegraf.in.ua,the-village.com.ua,the-village.ru,torrents.in.ua,trisosny.ru,trymobile.ru,tvzvezda.ru,ukrinform.ru,vdvsn.ru,vklybe.tv,vorle.ru,vse.sale,wincore.ru,womanhit.ru,worldofmods.ru,xn--e1asq.xn--p1ai,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
 deti.fm##div[class^="banner"]:not(#vk_groups)
 kaktutzhit.by##div[class^="banner"][class$="rightSide"] > .banner:nth-of-type(1)
 ura.news##div[class^="bannerPosition"]
