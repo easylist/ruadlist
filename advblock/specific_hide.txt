@@ -1857,8 +1857,6 @@ talkwebber.ru##.col_c_stats > a[href^="http://talkwebber.ru/go/?"]
 alive-ua.com##.col_l_b
 itvcom.ru##.colr > h4
 xatab-repack.net##.colum_right > :not([class="block"])
-echo.msk.ru##.column > script ~ div > div:not([id]):not([class])
-echo.msk.ru#?#.column [class]:-abp-has(> [id] + script:-abp-contains(eval))
 naurfo.ru##.column a[href][target="_blank"]
 alser.kz##.columnBanner
 inforeactor.ru#?#.columnHeader:-abp-contains(Новости партнеров)
@@ -3630,19 +3628,13 @@ sovetromantica.com##[class*="kama"]
 puerrtto.livejournal.com##[class*="kupibilet"]
 varlamov.ru##[class*="mainbanner"]
 virusbase.ru.free-anti-spy.com##[class*="modal"]
+echo.msk.ru##[class*="narrow"] > [style*="overflow"]
+echo.msk.ru##[class*="narrow"] > [style*="overflow"] ~ * a:not([href^="/"]):not([href*="/dobroradio/"])
+echo.msk.ru##[class*="narrow"] > [style*="overflow"] ~ br
 igrigo.net#?#[class*="navi_title"]:-abp-contains(/браузер|партнеры/i)
 besplatka.ua##[class*="promotion"]
 2ch.hk##[class*="rekl"]
 online.ua##[class*="reklama"]
-echo.msk.ru##[class*="right"] .widget-container
-echo.msk.ru##[class*="right"] > [class] > [style*="240"]
-echo.msk.ru##[class*="right"] > [class] ~ br
-echo.msk.ru##[class*="right"] > [class][style] ~ * [class*="snob"]
-echo.msk.ru##[class*="right"] > [class][style] ~ * a:not([href^="/"]):not([href*="/dobroradio/"])
-echo.msk.ru##[class*="right"] > [class][style]:not([id])
-echo.msk.ru##[class*="right"] > [style*="240"]:not([id])
-echo.msk.ru#?#[class*="right"] > [style*="overflow"] ~ [class]:-abp-has(> script ~ script)
-echo.msk.ru##[class*="right"] ~ section ~ :not(section)
 gubkinskiy.com,torrent-baza.com##[class*="rkl"]
 sexoporno.su##[class*="sam"][class*="pro"]
 erofishki.cc,fishki.net#?#[class*="side"][class*="right"] *:-abp-has(> [href*="utm_campai"])
@@ -3754,6 +3746,7 @@ forexsystemsru.com##[id^="collapseobj_forumbit"] .alt1Active > div[style="float:
 yakusubstudio.home-forum.com,yakusubstudio.ru##[id^="criteoDiv"]
 echo.msk.ru##[id^="crt-"]
 funmult.ru##[id^="icqwin_"]
+echo.msk.ru##[id^="kursvalut-com-informer"]
 gamebomb.ru##[id^="mainbackground"]
 floradoma.com##[id^="my1kil_"]
 1927.kiev.ua,3dtoday.ru,5.ua,allboxing.ru,amic.ru,aratta-ukraine.com,astrovedus.com,belaruspartisan.org,bigmir.net,bilshe.com,book-neva.narod.ru,brovary.net.ua,comments.ua,dt.ua,dv-gazeta.info,echo.msk.ru,enovosty.com,fedpress.ru,football.by,from-ua.com,galinfo.com.ua,galka.if.ua,hdkinoteatr.com,hronika.info,i-news.kz,ictv.ua,infomir59.ru,inforesist.org,informat.com.ua,izmacity.com,korrespondent.net,liga.net,mediananny.com,megashara.com,mirmegashara.com,mskd-ru.net,neizvestniy-geniy.ru,news-front.info,newsone.ua,newspravda.com,niknews.mk.ua,noi.md,nwcod.com,petrogazeta.ru,planetanovosti.com,prostotech.com,qiqru.org,qrz.ru,railway.kanaries.ru,real-vin.com,rusdozor.ru,rusjev.net,segodnya.ua,shans.com.ua,smolensk-i.ru,sportfm.ru,subject.com.ua,tambovnet.org,tehnowar.ru,tochka.net,tyurem.net,uainfo.org,ucrazy.ru,unn.com.ua,vd-tv.ru,vedomosti-ural.ru,vgtimes.ru,volynnews.com,xsport.ua,yvision.kz,zakon.kz,zi.dn.ua,zn.ua,znaj.ua##[id^="n4p_"]
