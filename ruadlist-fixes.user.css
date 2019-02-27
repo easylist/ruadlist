@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190222.2022
+@version 0.20190227.2026
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -1198,7 +1198,7 @@
 }
 
 @-moz-document domain("go.mail.ru") {
-    [class^="responses_"][class$="_wrapper"] > [id^="js-"][id$="Block"] > :first-child {
+    [class^="response"][class$="_wrapper"] > [id^="js-"][id$="Block"] > :first-child {
         display: none !important
     }
 }
@@ -1549,6 +1549,12 @@
 @-moz-document domain("kinomania.ru") {
     .outer {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinopad.net") {
+    .nif-cont > div {
+        display: none !important
     }
 }
 
@@ -2243,6 +2249,16 @@
     }
 }
 
+@-moz-document
+  domain("rp5.by"),
+  domain("rp5.kz"),
+  domain("rp5.ru"),
+  domain("rp5.ua") {
+    #content > div[id]:nth-child(2) > div[id]:not([id*="-"]):not([class]):nth-child(2) {
+        min-height: 0 !important
+    }
+}
+
 @-moz-document domain("rufilmtv.org") {
     #content:not(#id) {
         padding-top: 0 !important
@@ -2637,6 +2653,17 @@
     }
 }
 
+@-moz-document domain("www.anilibria.tv") {
+    body > div[class]:not([id]):nth-child(-n+4) {
+        background: none !important;
+        height: auto !important
+    }
+    body > div[class] > #headercontent, 
+    body > div[class]:not([id]):nth-child(-n+4) > a[href] {
+        display: none !important
+    }
+}
+
 @-moz-document domain("www.goha.ru") {
     #stickybar > div[style^="margin-top"], div[onclick^="truemedia_callback"], 
     header.header {
@@ -2680,6 +2707,9 @@
     }
     #top_3banners {
         margin-top: 20px !important
+    }
+    .profileInserts ~ form {
+        margin-top: 30px !important
     }
     .branding, .kp-direct-customize {
         position: fixed !important;
