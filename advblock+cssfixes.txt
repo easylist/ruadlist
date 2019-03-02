@@ -85,11 +85,11 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||car.ru/*/|$xmlhttprequest,badfilter,domain=car.ru
 ||car.ru/|$xmlhttprequest,badfilter,domain=car.ru
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
-||mc.yandex.ru/metrika/watch.js$redirect=silent-noeval.js,script
+||mc.yandex.ru/metrika/watch.js$script,redirect=silent-noeval.js
 ||moikolodets.ru^$xmlhttprequest,badfilter,domain=moikolodets.ru
 ||recostream.go.mail.ru^
 ||simpsonsua.com.ua^$csp=script-src 'self' * data:,badfilter
-||static-mon.yandex.net/static/main.js$redirect=nooptext,xmlhttprequest
+||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
 ||svpressa.ru^$xmlhttprequest,badfilter,domain=svpressa.ru
 ||tsargrad.tv^$xmlhttprequest,badfilter,domain=tsargrad.tv
 ||www.sovsport.ru^$xmlhttprequest,badfilter,domain=www.sovsport.ru
