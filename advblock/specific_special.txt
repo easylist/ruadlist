@@ -5,9 +5,7 @@ adblockmetrics.ru,antiadblock.ru,clickscloud.net,disk-space.ru,fortnite-pvp.ru,k
 !
 ! Намеренное продвижение фейков и мошенников
 $~third-party,xmlhttprequest,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
-||7days.ru/*.htm|$xmlhttprequest,domain=7days.ru
-||7days.ru/*/|$xmlhttprequest,domain=7days.ru
-||7days.ru/|$xmlhttprequest,domain=7days.ru
+||7days.ru^$xmlhttprequest,domain=7days.ru
 ||aftershock.news^$xmlhttprequest,domain=aftershock.news
 ||alau.kz^$xmlhttprequest,domain=alau.kz
 ||argumenti.ru^$csp=script-src 'self' * data:
