@@ -27,6 +27,7 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 7days.ru,aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, ccScriptSupport)
 7streams.pro,sblive.online,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
+@@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 anidub.com##+js(abort-on-property-read.js, ogonek)
 animelend.info##+js(set-constant.js, JSON.parse, noopFunc)
 auto.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^from|^los$/)
@@ -53,6 +54,7 @@ inforeactor.ru,nahnews.org,politexpert.net,rueconomics.ru##+js(abort-current-inl
 kakprosto.ru##+js(abort-current-inline-script.js, document.createElement, renderTo)
 kinopoisk.ru##+js(abort-on-property-read.js, advBlock)
 kinopoisk.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^cmtchd|^crookie|^kpunk)
+kinoteatr.ru##html > body:style(margin-top: -230px !important)
 livesport.ws##+js(abort-current-inline-script.js, setTimeout, adblockwarn)
 mail.ru##body > .zeropixel ~ * .i-clearfix.feed-generic__container
 mail.ru##body > .zeropixel ~ div .well.notify
