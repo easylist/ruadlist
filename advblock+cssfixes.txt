@@ -16,17 +16,17 @@
 ||palacesquare.rambler.ru^$stylesheet,redirect=nooptext
 ||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
 !
-$third-party,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
+$third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
 $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
-/^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$xmlhttprequest,domain=hdgo.cc|vio.to
+/^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
 /^https?://vargr\.ru\/+(boars|eagles|modus)\.html$/$inline-script
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
-/assets/vendor*.xml?$third-party,xmlhttprequest,domain=kodik.cc
+/assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc
 24smi.org##+js(cookie-remover.js, has_adblock)
 7days.ru,aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, ccScriptSupport)
 7streams.pro,sblive.online,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
-@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
+@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
 anidub.com##+js(abort-on-property-read.js, ogonek)
 animelend.info##+js(set-constant.js, JSON.parse, noopFunc)
 auto.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^from|^los$/)
