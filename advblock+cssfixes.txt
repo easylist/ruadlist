@@ -11,7 +11,6 @@
 %include advblock.txt%
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other ---
-@@||mc.yandex.ru/metrika/watch.js|$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
 ||mc.yandex.ru/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 ||palacesquare.rambler.ru^$stylesheet,redirect=nooptext
 ||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
@@ -28,7 +27,9 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 7days.ru,aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, ccScriptSupport)
 7streams.pro,sblive.online,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
+@@||mc.yandex.ru/metrika/watch.js|$script,domain=afisha.yandex.by|afisha.yandex.kz|afisha.yandex.ru|afisha.yandex.ua|mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
+afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##+js(abort-on-property-read.js, IntersectionObserver)
 anidub.com##+js(abort-on-property-read.js, ogonek)
 animelend.info##+js(set-constant.js, JSON.parse, noopFunc)
 auto.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^from|^los$/)
