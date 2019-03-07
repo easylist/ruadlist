@@ -55,7 +55,6 @@ inforeactor.ru##+js(abort-current-inline-script.js, document.createElement, /dir
 kakprosto.ru##+js(abort-current-inline-script.js, document.createElement, renderTo)
 kinopoisk.ru##+js(abort-on-property-read.js, advBlock)
 kinopoisk.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^cmtchd|^crookie|^kpunk)
-kinoteatr.ru##html > body:style(margin-top: -230px !important)
 livesport.ws##+js(abort-current-inline-script.js, setTimeout, adblockwarn)
 mail.ru##body > .zeropixel ~ * .i-clearfix.feed-generic__container
 mail.ru##body > .zeropixel ~ div .well.notify
@@ -66,6 +65,7 @@ mail.ru,sportmail.ru##+js(abort-on-property-write.js, TRGB_S)
 mail.ru,sportmail.ru##+js(set-constant.js, smoky, noopFunc)
 mail.ru,sportmail.ru##+js(set-constant.js, smokySingleElement, noopFunc)
 mail.ru,sportmail.ru##+js(setTimeout-defuser.js, advBlock)
+minigames.mail.ru##+js(abort-on-property-write.js, MrgContext)
 money-pic.ru##+js(abort-current-inline-script.js, q330)
 n-torrents.org##+js(nano-setInterval-booster.js)
 nahnews.org##+js(abort-on-property-write.js, setTimeout)
