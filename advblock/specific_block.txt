@@ -1,4 +1,7 @@
 ! CSP filters
+/^https?://[^\s]+\.lentainform\.com/[^\s]{150,}/$csp=script-src
+/^https?://[^\s]+\.nahnews\.org/[^\s]{150,}/$csp=script-src
+/^https?://[^\s]+\.politexpert\.net/[^\s]{150,}/$csp=script-src
 /^https?://allboxing.ru\/(?!forum)/$csp=script-src 'self' * data:
 @@||blogs.pravda.com.ua^$csp=script-src 'self' * blob: data:
 @@||forum.pravda.com.ua^$csp=script-src 'self' * blob: data:
@@ -42,7 +45,6 @@
 ||kinosliva.net^$csp=script-src 'self' * blob: data:
 ||knigosite.org^$csp=script-src 'self' * data:
 ||kramola.info^$csp=script-src 'self' * 'unsafe-inline' data:
-||lentainform.com/pnews/$csp=script-src
 ||life-kino.top^$csp=script-src 'self' * blob: data:
 ||lostfilm-online.org^$csp=script-src 'self' * blob: data:
 ||megahead.org^$csp=script-src 'self' * data:
@@ -2011,7 +2013,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||new-kino.net/ReklDC/
 ||new-sebastopol.com/resources/$object
 ||news.mspravka.info/adverting/
-||news.nahnews.org/
 ||news.tj/adfiles?adid=
 ||news.zancor.ru/images/elvira$image
 ||news14.wifiram.ru/awin/
