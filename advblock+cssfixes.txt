@@ -11,18 +11,6 @@
 %include advblock.txt%
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other ---
-||an.yandex.ru^$script,redirect=silent-noeval.js
-||an.yandex.ru^$xmlhttprequest,redirect=nooptext
-||mc.yandex.ru/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
-||mc.yandex.ru/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
-||mc.yandex.ru/watch/*&callback*pogoda$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
-||palacesquare.rambler.ru^$stylesheet,redirect=nooptext,domain=championat.com|lenta.ru|quto.ru|rambler.ru|rns.online
-||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
-||yastatic.net/pcode/adfox/loader.js$script,redirect=silent-noeval.js,domain=auto.ru
-!
-!#if !env_firefox
-auto.ru,kinopoisk.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, Element.prototype.attachShadow)
-!#endif
 $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
 $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 /^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
@@ -96,6 +84,8 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||7days.ru^$xmlhttprequest,badfilter,domain=7days.ru
 ||aftershock.news^$xmlhttprequest,badfilter,domain=aftershock.news
 ||alau.kz^$xmlhttprequest,badfilter,domain=alau.kz
+||an.yandex.ru^$script,redirect=silent-noeval.js
+||an.yandex.ru^$xmlhttprequest,redirect=nooptext
 ||argumenti.ru^$csp=script-src 'self' * data:,badfilter
 ||argumenti.ru^$xmlhttprequest,badfilter,domain=argumenti.ru
 ||argumentiru.com^$csp=script-src 'self' * data:,badfilter
@@ -103,11 +93,20 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||car.ru/*/|$xmlhttprequest,badfilter,domain=car.ru
 ||car.ru/|$xmlhttprequest,badfilter,domain=car.ru
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
+||mc.yandex.ru/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
+||mc.yandex.ru/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
+||mc.yandex.ru/watch/*&callback*pogoda$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 ||moikolodets.ru^$xmlhttprequest,badfilter,domain=moikolodets.ru
+||palacesquare.rambler.ru^$stylesheet,redirect=nooptext,domain=championat.com|lenta.ru|quto.ru|rambler.ru|rns.online
 ||recostream.go.mail.ru^
 ||simpsonsua.com.ua^$csp=script-src 'self' * data:,badfilter
+||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
 ||svpressa.ru^$xmlhttprequest,badfilter,domain=svpressa.ru
 ||tsargrad.tv^$xmlhttprequest,badfilter,domain=tsargrad.tv
 ||www.sovsport.ru^$xmlhttprequest,badfilter,domain=www.sovsport.ru
+||yastatic.net/pcode/adfox/loader.js$script,redirect=silent-noeval.js,domain=auto.ru
 ~alice.yandex.ru,~appmetrica.yandex.by,~appmetrica.yandex.kz,~appmetrica.yandex.ru,~appmetrica.yandex.ua,~audience.yandex.by,~audience.yandex.kz,~audience.yandex.ru,~audience.yandex.ua,~avia.yandex.by,~avia.yandex.kz,~avia.yandex.ru,~avia.yandex.ua,~browser.yandex.by,~browser.yandex.kz,~browser.yandex.ru,~browser.yandex.ua,~calendar.yandex.ru,~cloud.yandex.ru,~connect.yandex.ru,~delivery.yandex.ru,~display.yandex.ru,~dns.yandex.ru,~education.yandex.ru,~ege.yandex.ru,~health.yandex.ru,~kassa.yandex.ru,~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,~market.yandex.ru,~mc.yandex.ru,~metrika.yandex.by,~metrika.yandex.kz,~metrika.yandex.ru,~metrika.yandex.ua,~money.yandex.ru,~music.yandex.by,~music.yandex.kz,~music.yandex.ru,~music.yandex.ua,~ofd.yandex.ru,~partner2.yandex.ru,~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,~plus.yandex.ru,~rabota.yandex.by,~rabota.yandex.kz,~rabota.yandex.ru,~rabota.yandex.ua,~radar.yandex.by,~radar.yandex.kz,~radar.yandex.ru,~radar.yandex.ua,~radio.yandex.by,~radio.yandex.kz,~radio.yandex.ru,~radio.yandex.ua,~realty.yandex.by,~realty.yandex.kz,~realty.yandex.ru,~realty.yandex.ua,~site.yandex.ru,~stat.yandex.by,~stat.yandex.kz,~stat.yandex.ru,~stat.yandex.ua,~surveys.yandex.ru,~taxi.yandex.by,~taxi.yandex.kz,~taxi.yandex.ru,~taxi.yandex.ua,~tech.yandex.ru,~telephony.yandex.ru,~toloka.yandex.ru,~trains.yandex.by,~trains.yandex.kz,~trains.yandex.ru,~trains.yandex.ua,~translate.yandex.by,~translate.yandex.kz,~translate.yandex.ru,~translate.yandex.ua,~travel.yandex.ru,~webmaster.yandex.ru,~xml.yandex.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua,~zen.yandex.by,~zen.yandex.kz,~zen.yandex.ru,~zen.yandex.ua##+js(abort-on-property-read.js, IntersectionObserver)
 ~alice.yandex.ru,~appmetrica.yandex.by,~appmetrica.yandex.kz,~appmetrica.yandex.ru,~appmetrica.yandex.ua,~audience.yandex.by,~audience.yandex.kz,~audience.yandex.ru,~audience.yandex.ua,~avia.yandex.by,~avia.yandex.kz,~avia.yandex.ru,~avia.yandex.ua,~browser.yandex.by,~browser.yandex.kz,~browser.yandex.ru,~browser.yandex.ua,~calendar.yandex.ru,~cloud.yandex.ru,~connect.yandex.ru,~delivery.yandex.ru,~display.yandex.ru,~dns.yandex.ru,~education.yandex.ru,~ege.yandex.ru,~health.yandex.ru,~kassa.yandex.ru,~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,~market.yandex.ru,~mc.yandex.ru,~metrika.yandex.by,~metrika.yandex.kz,~metrika.yandex.ru,~metrika.yandex.ua,~money.yandex.ru,~music.yandex.by,~music.yandex.kz,~music.yandex.ru,~music.yandex.ua,~ofd.yandex.ru,~partner2.yandex.ru,~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,~plus.yandex.ru,~rabota.yandex.by,~rabota.yandex.kz,~rabota.yandex.ru,~rabota.yandex.ua,~radar.yandex.by,~radar.yandex.kz,~radar.yandex.ru,~radar.yandex.ua,~radio.yandex.by,~radio.yandex.kz,~radio.yandex.ru,~radio.yandex.ua,~site.yandex.ru,~stat.yandex.by,~stat.yandex.kz,~stat.yandex.ru,~stat.yandex.ua,~surveys.yandex.ru,~taxi.yandex.by,~taxi.yandex.kz,~taxi.yandex.ru,~taxi.yandex.ua,~tech.yandex.ru,~telephony.yandex.ru,~toloka.yandex.ru,~trains.yandex.by,~trains.yandex.kz,~trains.yandex.ru,~trains.yandex.ua,~translate.yandex.by,~translate.yandex.kz,~translate.yandex.ru,~translate.yandex.ua,~travel.yandex.ru,~webmaster.yandex.ru,~xml.yandex.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua,~zen.yandex.by,~zen.yandex.kz,~zen.yandex.ru,~zen.yandex.ua##+js(set-constant.js, Math.random, trueFunc)
+!#if !env_firefox
+auto.ru,kinopoisk.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, Element.prototype.attachShadow)
+!#endif
