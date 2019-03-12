@@ -17,7 +17,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.812
+VERSION = 3.813
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -65,6 +65,8 @@ KNOWNOPTIONS = ("collapse", "document", "elemhide", "font", "generichide", "gene
                 "image", "inline-script", "match-case", "media", "object", "object-subrequest",
                 "other", "ping", "popup", "script", "stylesheet", "subdocument", "badfilter",
                 "first-party", "third-party", "websocket", "xmlhttprequest")
+# List of known key=value parameters (domain is not included)
+KNOWNPARAMETERS = ("csp", "rewrite", "redirect")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
@@ -247,8 +249,9 @@ def sortfunc (option):
     if option == "popup": return option + "}"
     # Also let third-party will always be first in the list
     if option.find("third-party") > -1: return "0" + option
-    # And let badfilter will always be last in the list
+    # And let badfilter and key=value parameters will always be last in the list
     if option.find("badfilter") > -1: return "|" + option
+    if option.split('=')[0] in KNOWNPARAMETERS: return "}" + option
     return option
 
 def filtertidy (filterin):
@@ -271,10 +274,7 @@ def filtertidy (filterin):
             if option[0:7] == "domain=":
                 domainlist.extend(option[7:].split("|"))
                 removeentries.append(option)
-            # pass known special options
-            elif option.split('=')[0] in ["csp", "rewrite"]:
-                pass
-            elif option.strip("~") not in KNOWNOPTIONS:
+            elif option.strip("~") not in KNOWNOPTIONS and option.split('=')[0] not in KNOWNPARAMETERS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
         # Sort all options other than domain alphabetically with a few exceptions
         optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = sortfunc)
