@@ -770,15 +770,12 @@ realty.yandex.ru##.b-guadeloupe
 /^https?://realty\.yandex\.ru/[^\s]{500,}/$subdocument,domain=realty.yandex.ru
 ! Яндекс.Новости
 /^https?://news\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,xmlhttprequest,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > * > * > a[href*="news.yandex"] * *)
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > * > a[href*="news.yandex"] * *)
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > a[href*="news.yandex"] * *)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > iframe[src*="/news.yandex."])
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > a[href*="news.yandex"] * *)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > iframe[src*="/news.yandex."])
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> a[href*="news.yandex"] * *)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> iframe[src*="/news.yandex."])
 ! Яндекс.Погода
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.climate-calendar-container__adv-wide
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.content__section_type_adv
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.weather-maps__ad_visible_yes
 /^https?://yandex\.(by|kz|ru)/pogoda/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
 /^https?://yandex\.ua/pogoda/[^\s]{300,}/$subdocument,~third-party
