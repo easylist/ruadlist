@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190227.2026
+@version 0.20190313.1314
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -63,6 +63,7 @@
   domain("hdrezka.tv"),
   domain("hdrezka.win"),
   domain("hdrezka.wtf"),
+  domain("hdrezka.zone"),
   domain("hdrezka1.site"),
   domain("ihdrezka.com"),
   domain("ikinohd.club"),
@@ -77,11 +78,12 @@
   domain("kronverkcinema.ua"),
   domain("live-rutor.org"),
   domain("liverutor.org"),
+  domain("lostfan.net"),
   domain("metahdrezka.com"),
   domain("moskva.fm"),
   domain("mrutor.org"),
   domain("my-tfile.org"),
-  domain("new-baskino.club"),
+  domain("myhdrezka.com"),
   domain("new-rutor.org"),
   domain("newstudio.tv"),
   domain("nnm-club.me"),
@@ -155,6 +157,7 @@
   domain("hdrezka.top"),
   domain("hdrezka.win"),
   domain("hdrezka.wtf"),
+  domain("hdrezka.zone"),
   domain("ihdrezka.com"),
   domain("ixbt.com"),
   domain("kino-full.ru"),
@@ -165,7 +168,9 @@
   domain("kurkul.com"),
   domain("kv.by"),
   domain("livejournal.com"),
+  domain("lostfan.net"),
   domain("metahdrezka.com"),
+  domain("myhdrezka.com"),
   domain("myshows.me"),
   domain("newstudio.tv"),
   domain("nnm-club.me"),
@@ -297,12 +302,9 @@
     }
 }
 
-@-moz-document domain("adultmult.tv") {
+@-moz-document domain("adultmult.ru") {
     body {
         background: black !important
-    }
-    #aswift_0_expand, .adsbygoogle {
-        display: none !important
     }
     .allsearch, .menuposition {
         margin-top: 0 !important
@@ -446,6 +448,12 @@
     }
 }
 
+@-moz-document domain("animedia.online") {
+    header.top {
+        margin-bottom: 0 !important
+    }
+}
+
 @-moz-document domain("animemovie.ru") {
     body > .standard, header[role="banner"] {
         height: 100px !important;
@@ -516,7 +524,7 @@
 }
 
 @-moz-document domain("anistar.me") {
-    html > body {
+    body > .main.wrapper {
         margin-top: 0 !important
     }
     body > header {
@@ -639,6 +647,19 @@
     }
 }
 
+@-moz-document domain("botanichka.ru") {
+    html > body {
+        background-image: none !important;
+        pointer-events: none !important
+    }
+    .td-banner-wrap-full {
+        display: none !important
+    }
+    html > body > * {
+        pointer-events: auto !important
+    }
+}
+
 @-moz-document domain("buh24.com.ua") {
     body > div[class^="mfp-"] {
         display: none !important
@@ -723,7 +744,8 @@
 
 @-moz-document
   domain("cinema-hd.ru"),
-  domain("filmshd.club") {
+  domain("filmshd.club"),
+  domain("hdlava.tv") {
     .wrap {
         padding-top: 0 !important
     }
@@ -1022,6 +1044,12 @@
 @-moz-document domain("filmitorrent.xyz") {
     a[href^="/a"][href$="html"][target="_blank"] {
         display: none !important
+    }
+}
+
+@-moz-document domain("films-online.club") {
+    .body-wrap > #content {
+        margin-top:42px !important
     }
 }
 
@@ -1558,7 +1586,7 @@
     }
 }
 
-@-moz-document domain("kinoprofi.org") {
+@-moz-document domain("kinoprofi.vip") {
     body .header {
         padding-top: 0 !important
     }
@@ -1583,6 +1611,19 @@
 
 @-moz-document domain("kinostark.com") {
     nofollow > .container {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinoteatr.ru") {
+    html > body {
+        background-image: none !important;
+        background-color: black !important
+    }
+    .branding-wrapper {
+        display: none !important
+    }
+    .header_container {
         margin-top: 0 !important
     }
 }
@@ -1832,9 +1873,19 @@
 }
 
 @-moz-document domain("my.mail.ru") {
-    .l-app__left, .l-app__right, div[class*="mimic"], div[class^="app-adv-"], 
-    div[style^="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"] {
+    .l-app__left, .l-app__right, 
+    :not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"], 
+    div[class*="mimic"], div[class^="app-adv-"], 
+    html.window-loaded .b-video-backscreen {
         display: none !important
+    }
+    html.window-loaded .b-video-controls__inside-play-button {
+        visibility: visible !important;
+        opacity: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
     }
 }
 
@@ -2630,6 +2681,12 @@
     }
 }
 
+@-moz-document domain("webdesign-master.ru") {
+    body > div[class] > p {
+        display: none !important
+    }
+}
+
 @-moz-document domain("webfile.ru") {
     .p_wrap {
         margin-top: 0 !important
@@ -2654,12 +2711,14 @@
 }
 
 @-moz-document domain("www.anilibria.tv") {
-    body > div[class]:not([id]):nth-child(-n+4) {
-        background: none !important;
+    body > div[class]:not([id]):nth-child(-n+5) > div[class] {
+        background-image: none !important
+    }
+    body > div[class]:not([id]):nth-child(-n+5) {
+        background-image: none !important;
         height: auto !important
     }
-    body > div[class] > #headercontent, 
-    body > div[class]:not([id]):nth-child(-n+4) > a[href] {
+    body > div[class]:not([id]):nth-child(-n+5) > a[href] {
         display: none !important
     }
 }
@@ -2671,6 +2730,18 @@
     }
     #site {
         padding-top: 20px !important
+    }
+}
+
+@-moz-document domain("www.ivi.ru") {
+    body.watch > div[class]:not([id]):not([style]):nth-child(-n+2) {
+        background: none !important
+    }
+    body.watch > div[class]:not([id]):not([style]):nth-child(-n+2) > style + .content {
+        display: none !important
+    }
+    body.watch > header.ivi-top {
+        top: 0 !important
     }
 }
 
@@ -2770,6 +2841,9 @@
     .head-stripe {
         position: fixed !important;
         transform: scale(0) !important
+    }
+    .map-container ~ #sidebar-container > .sidebar-view ~ .collapse-button {
+        top: 0 !important
     }
     div:not([style^="padding: 0px"]):not([style*="content-box"])[style*="!important"][style*="display"][style*="visibility"][style*="visible"] {
         width: 0 !important;
