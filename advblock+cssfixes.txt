@@ -86,6 +86,8 @@ www.liveinternet.ru##+js(cookie-remover.js, /^bltsr|^crookie/)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover.js, /^blcrm|^bltsr|^YvUVZgzQ|__/)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.widgets div ~ div ~ div ~ div ~ div div[class]:matches-css(height: 90px)
 ||7days.ru^$xmlhttprequest,badfilter,domain=7days.ru
+||adbutton.net^$badfilter,rewrite=1
+||adbutton.net^$script,redirect=noopjs
 ||aftershock.news^$xmlhttprequest,badfilter,domain=aftershock.news
 ||alau.kz^$xmlhttprequest,badfilter,domain=alau.kz
 ||an.yandex.ru^$script,redirect=silent-noeval.js
