@@ -4,8 +4,6 @@
 /^https?://[^\s]+\.politexpert\.net/[^\s]{150,}/$csp=script-src
 /^https?://allboxing.ru\/(?!forum)/$csp=script-src 'self' * data:
 /gateway/aHR0c$csp=script-src
-@@||blogs.pravda.com.ua^$csp=script-src 'self' * blob: data:
-@@||forum.pravda.com.ua^$csp=script-src 'self' * blob: data:
 @@||freebooks.site/embed/$csp=script-src 'self' * data: blob: 'unsafe-inline'
 @@||gra-prestoliv.in.ua/user/*/#|$csp=script-src 'self' * data:
 @@||gra-prestoliv.in.ua/user/*/|$csp=script-src 'self' * data:
