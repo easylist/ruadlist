@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190313.1314
+@version 0.20190317.1908
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -104,6 +104,7 @@
   domain("thehdrezka.com"),
   domain("torentor.co"),
   domain("torrentum.me"),
+  domain("tvhdrezka.com"),
   domain("vc.ru"),
   domain("veleto.ru"),
   domain("videoclub.men"),
@@ -188,6 +189,7 @@
   domain("torrent-games.info"),
   domain("torrentom.com"),
   domain("torrentum.me"),
+  domain("tvhdrezka.com"),
   domain("userstyles.org"),
   domain("wehdrezka.com"),
   domain("xatab-repack.net"),
@@ -883,6 +885,9 @@
 @-moz-document
   domain("e.mail.ru"),
   domain("octavius.mail.ru") {
+    .layout__column_right > :not(.feedback-banner) {
+        display: none !important
+    }
     .application-mail__wrap > .layout > .layout__main-frame {
         margin-right: 0 !important
     }
@@ -1099,6 +1104,12 @@
     }
     .body_wrapper {
         max-width: 100% !important
+    }
+}
+
+@-moz-document domain("forum.ru-board.com") {
+    .tpc > .post > a[href] {
+        word-break: break-all
     }
 }
 
@@ -1995,16 +2006,6 @@
     }
 }
 
-@-moz-document domain("ok.ru") {
-    .dialogWrapperBanner {
-        transform: scale(0) !important;
-        opacity: 0 !important;
-        pointer-events: none !important;
-        position: fixed !important;
-        top: -1000px !important
-    }
-}
-
 @-moz-document
   domain("online.animedia.tv"),
   domain("tt.animedia.tv") {
@@ -2437,7 +2438,8 @@
 }
 
 @-moz-document domain("softportal.com") {
-    a[href^="prog"][target="_blank"], a[href^="prog"][target="_blank"] ~ * {
+    a[href^="prog"][target="_blank"], a[href^="prog"][target="_blank"] ~ *, 
+    td[style="width:341px; padding-right:15px;"][valign="top"] {
         display: none !important
     }
 }
@@ -2805,6 +2807,13 @@
 @-moz-document domain("www.zoneofgames.ru") {
     html > body:not(#id) {
         background-color: #707070 !important
+    }
+    body > div[id][style*="margin-top"] {
+        margin-top: 0 !important
+    }
+    .ushki, div[class^="randshops"] {
+        width: unset !important;
+        height: unset !important
     }
 }
 
