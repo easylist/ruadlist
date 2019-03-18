@@ -90,6 +90,7 @@ www.liveinternet.ru##+js(cookie-remover.js, /^bltsr|^crookie/)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.widgets div ~ div ~ div ~ div ~ div div[class]:matches-css(height: 90px)
 ||1tv.ru/player/$image,redirect=1x1-transparent.gif,domain=1tv.ru
 ||7days.ru^$xmlhttprequest,badfilter,domain=7days.ru
+||ad.mail.ru/adp/$xmlhttprequest,redirect=nooptext
 ||adbutton.net^$badfilter,rewrite=1
 ||adbutton.net^$script,redirect=noopjs
 ||adriver.ru^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
@@ -105,6 +106,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||car.ru/|$xmlhttprequest,badfilter,domain=car.ru
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
 ||globuss24.ru^$xmlhttprequest,badfilter,domain=globuss24.ru
+||mail.ru/api-proxy/rb-mimic/$xmlhttprequest,redirect=nooptext
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||mc.yandex.ru/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 ||mc.yandex.ru/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
