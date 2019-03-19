@@ -19,6 +19,7 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
 24smi.org##+js(cookie-remover.js, has_adblock)
+3dnews.ru,baby.ru,dni.ru,drive2.ru,e1.ru,gorodrabot.ru,sdamgia.ru##+js(abort-on-property-read.js, Ya)
 7days.ru,aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, ccScriptSupport)
 7days.ru,aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, window.__AABStatus)
 7streams.pro,sblive.online,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
@@ -31,7 +32,6 @@ an.yandex.ru##+js(cookie-remover.js)
 anidub.com##+js(abort-on-property-read.js, ogonek)
 animelend.info##+js(set-constant.js, JSON.parse, noopFunc)
 auto.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^from|^los$/)
-baby.ru,dni.ru,drive2.ru,e1.ru,gorodrabot.ru,sdamgia.ru##+js(abort-on-property-read.js, Ya)
 baskino-z720.com,dc-marvel.org,gidonline.eu,kinogo-2016-net.ru,megatfile.cc,seasonvar.re,torrent-soft.net##+js(abort-current-inline-script.js, String.fromCharCode, var _0x)
 championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online##^script:has-text(-Anti-AdBlock-is-adblock)
 championat.com,gazeta.ru,lenta.ru,rambler.ru##body > div:not([id]):not([class]):not([style]) > [class]:style(display: block !important)
