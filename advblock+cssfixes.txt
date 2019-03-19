@@ -134,4 +134,5 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover.js, /^blcrm|^bltsr|^YvUVZgzQ|__/)
 !#if !env_firefox
 auto.ru,kinopoisk.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, Element.prototype.attachShadow)
+news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body > [class] > [class] + [class]:before:style(width: unset !important)
 !#endif
