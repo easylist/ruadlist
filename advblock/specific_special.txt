@@ -177,6 +177,11 @@ news.mail.ru##.viewbox__slide-inner > .viewbox__side
 /(adp-checker.ru|aHR0c|an.yandex.ru|blamper|gateway|media-gov.ru|utm_campaign)/$popup,domain=news.mail.ru
 news.mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-abp-contains(Реклама))
 news.mail.ru#?#div:-abp-has(> * > a[href*="t.mail.ru/redir"])
+news.mail.ru#?#div:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
+news.mail.ru#?#div:-abp-has(> div > [target="_blank"][href^="https://r.mail.ru/"])
+news.mail.ru#?#div:-abp-has(> div > div > [target="_blank"][href^="https://r.mail.ru/"])
+news.mail.ru#?#div:-abp-has(> div > div > div > [target="_blank"][href^="https://r.mail.ru/"])
+news.mail.ru#?#div:-abp-has(> div > div > div > div > [target="_blank"][href^="https://r.mail.ru/"])
 news.mail.ru##div[class*="rb-video-widget"]
 ! Погода-Mail
 pogoda.mail.ru###direct_bottom
