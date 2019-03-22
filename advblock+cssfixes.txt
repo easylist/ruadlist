@@ -36,6 +36,8 @@ baskino-z720.com,dc-marvel.org,gidonline.eu,kinogo-2016-net.ru,megatfile.cc,seas
 championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online##^script:has-text(-Anti-AdBlock-is-adblock)
 championat.com,gazeta.ru,lenta.ru,rambler.ru##body > div:not([id]):not([class]):not([style]) > [class]:style(display: block !important)
 championat.com,gazeta.ru,lenta.ru,rambler.ru##body > div:not([id]):not([class]):not([style]):style(display: block !important)
+championat.com,gazeta.ru,lenta.ru,rambler.ru##body > div[id][style^="width: 10px"] > [class]:style(display: block !important)
+championat.com,gazeta.ru,lenta.ru,rambler.ru##body > div[id][style^="width: 10px"]:style(display: block !important)
 championat.com,gazeta.ru,lenta.ru,rambler.ru##body > img[src]:style(display: block !important)
 dclans.ru##+js(abort-on-property-read.js, document.getElementById, mdl_adb)
 dok-film.net##+js(abort-on-property-read.js, adBlockDetected)
