@@ -103,8 +103,10 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||1internet.tv^$media,redirect=noopmp4-1s,domain=1tv.ru|mediavitrina.ru
 ||1tv.ru/player/$image,redirect=1x1-transparent.gif,domain=1tv.ru
 ||7days.ru^$xmlhttprequest,badfilter,domain=7days.ru
-||ad.mail.ru/adp/$xmlhttprequest,redirect=nooptext
-||ad.mail.ru/adq/$script,redirect=noopjs
+||ad.mail.ru/adp/$xmlhttprequest,redirect=nooptext,domain=~e.mail.ru|~octavius.mail.ru
+||ad.mail.ru/adq/$script,redirect=noopjs,domain=~e.mail.ru|~octavius.mail.ru
+||ad.mail.ru^$badfilter
+||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru
 ||adbutton.net^$script,redirect=noopjs
 ||adriver.ru^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
 ||aftershock.news^$xmlhttprequest,badfilter,domain=aftershock.news
