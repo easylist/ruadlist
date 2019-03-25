@@ -61,8 +61,8 @@ inoreader.com##.ad_title:style(display: block !important; position: fixed !impor
 inoreader.com##.adsbygoogle:style(display: block !important)
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 kakprosto.ru##+js(abort-current-inline-script.js, document.createElement, renderTo)
-kinopoisk.ru##+js(abort-on-property-read.js, advBlock)
-kinopoisk.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^cmtchd|^crookie|^kpunk)
+kinopoisk.ru##+js(abort-on-property-write.js, advBlock)
+kinopoisk.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^cmtchd|^crookie|^kpunk/)
 krolik.biz##+js(abort-current-inline-script.js, document.createElement)
 livesport.ws##+js(abort-current-inline-script.js, setTimeout, adblockwarn)
 mail.ru##body > .zeropixel ~ * .i-clearfix.feed-generic__container
