@@ -152,13 +152,13 @@ news.mail.ru##[data-view^="SlotView.mimic"]
 news.mail.ru##a[class^="branding"]
 news.mail.ru##a[id^="tb-"][class^="tb-"][target="_blank"]
 news.mail.ru##a[id^="tb-"][href*="://r.mail.ru/"]
+news.mail.ru#?#body * * * * * * * * * * * * div:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
+news.mail.ru#?#body * * * * * * * * * * * * div:-abp-has(> div > [target="_blank"][href^="https://r.mail.ru/"])
+news.mail.ru#?#body * * * * * * * * * * * * div:-abp-has(> div > div > [target="_blank"][href^="https://r.mail.ru/"])
+news.mail.ru#?#body * * * * * * * * * * * * div:-abp-has(> div > div > div > [target="_blank"][href^="https://r.mail.ru/"])
+news.mail.ru#?#body * * * * * * * * * * * * div:-abp-has(> div > div > div > div > [target="_blank"][href^="https://r.mail.ru/"])
 news.mail.ru##body > .ad
 news.mail.ru#?#div:-abp-has(> * > a[href*="t.mail.ru/redir"])
-news.mail.ru#?#div:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
-news.mail.ru#?#div:-abp-has(> div > [target="_blank"][href^="https://r.mail.ru/"])
-news.mail.ru#?#div:-abp-has(> div > div > [target="_blank"][href^="https://r.mail.ru/"])
-news.mail.ru#?#div:-abp-has(> div > div > div > [target="_blank"][href^="https://r.mail.ru/"])
-news.mail.ru#?#div:not([class="layout"]):-abp-has(> div > div > div > div > [target="_blank"][href^="https://r.mail.ru/"])
 news.mail.ru##div[class*="_branding"]
 news.mail.ru##div[class*="directhack"]
 news.mail.ru##div[class*="mimic-direct"]
