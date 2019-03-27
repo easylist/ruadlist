@@ -64,10 +64,7 @@ inoreader.com##.ad_title:style(display: block !important; position: fixed !impor
 inoreader.com##.adsbygoogle:style(display: block !important)
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 kakprosto.ru##+js(abort-current-inline-script.js, document.createElement, renderTo)
-kinopoisk.ru##+js(abort-on-property-read.js, __brandingCss)
-kinopoisk.ru##+js(abort-on-property-read.js, advBlock)
 kinopoisk.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^cmtchd|^crookie|^kpunk/)
-kinopoisk.ru##+js(set-constant.js, KP.branding, undefined)
 krolik.biz##+js(abort-current-inline-script.js, document.createElement)
 livesport.ws##+js(abort-current-inline-script.js, setTimeout, adblockwarn)
 mail.ru##body > .zeropixel ~ * .i-clearfix.feed-generic__container
@@ -106,6 +103,9 @@ rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(abort-current-inline-s
 rustorka.club,rustorka.com,rustorka.net,tapochek.net##+js(cookie-remover.js, /(u_count|gophp|st2|st3)/)
 tarkov-wiki.ru##+js(abort-on-property-read.js, CheckingUser)
 tvoyadres.ru##+js(setTimeout-defuser.js, adblock)
+www.kinopoisk.ru##+js(abort-on-property-read.js, __brandingCss)
+www.kinopoisk.ru##+js(abort-on-property-read.js, advBlock)
+www.kinopoisk.ru##+js(set-constant.js, KP.branding, undefined)
 www.liveinternet.ru##+js(cookie-remover.js, /^bltsr|^crookie/)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.widgets div ~ div ~ div ~ div ~ div div[class]:matches-css(height: 90px)
 ||1internet.tv^$media,domain=1tv.ru|mediavitrina.ru
