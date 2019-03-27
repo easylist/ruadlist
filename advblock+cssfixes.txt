@@ -20,8 +20,8 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
 24smi.org##+js(cookie-remover.js, has_adblock)
 3dnews.ru,baby.ru,dni.ru,drive2.ru,e1.ru,gorodrabot.ru,sdamgia.ru##+js(abort-on-property-read.js, Ya)
-7days.ru,aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, ccScriptSupport)
-7days.ru,aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, window.__AABStatus)
+7days.ru,aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, ccScriptSupport)
+7days.ru,aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, window.__AABStatus)
 7streams.pro,sblive.online,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
 @@||mc.yandex.ru/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
@@ -131,6 +131,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||car.ru/|$xmlhttprequest,badfilter,domain=car.ru
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
 ||globuss24.ru^$xmlhttprequest,badfilter,domain=globuss24.ru
+||mashintop.ru^$xmlhttprequest,badfilter,domain=mashintop.ru
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||mc.yandex.ru/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 ||mc.yandex.ru/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
