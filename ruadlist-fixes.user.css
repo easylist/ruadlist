@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190317.1908
+@version 0.20190327.545
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -17,6 +17,7 @@
   domain("24video.guru"),
   domain("24video.sexy"),
   domain("4watching.club"),
+  domain("ahdrezka.com"),
   domain("all-episodes.tv"),
   domain("allfilmonline.co"),
   domain("amovies.cc"),
@@ -33,12 +34,14 @@
   domain("fast-torrent.ru"),
   domain("fast-torrent.su"),
   domain("film-max.ru"),
+  domain("film-ua.com"),
   domain("filmopotok.ru"),
   domain("filmpotok.ru"),
   domain("gameguru.ru"),
   domain("gidonline.in"),
   domain("hd720.biz"),
   domain("hdkinozor.ru"),
+  domain("hdrezka-ag.com"),
   domain("hdrezka-online.me"),
   domain("hdrezka.ag"),
   domain("hdrezka.asia"),
@@ -77,8 +80,10 @@
   domain("koshara.net"),
   domain("kronverkcinema.ua"),
   domain("live-rutor.org"),
+  domain("livehdrezka.com"),
   domain("liverutor.org"),
   domain("lostfan.net"),
+  domain("mehdrezka.com"),
   domain("metahdrezka.com"),
   domain("moskva.fm"),
   domain("mrutor.org"),
@@ -92,6 +97,7 @@
   domain("pickfilm.ru"),
   domain("pure-t.ru"),
   domain("roem.ru"),
+  domain("rusporno.vip"),
   domain("russian-porn.online"),
   domain("serialbox.org"),
   domain("tfile-music.org"),
@@ -129,6 +135,7 @@
 @-moz-document
   domain("24video.guru"),
   domain("24video.sexy"),
+  domain("ahdrezka.com"),
   domain("aif.ru"),
   domain("besthdrezka.com"),
   domain("epravda.com.ua"),
@@ -138,6 +145,7 @@
   domain("filmfullhd.net"),
   domain("gecid.com"),
   domain("hd720.biz"),
+  domain("hdrezka-ag.com"),
   domain("hdrezka-online.me"),
   domain("hdrezka.asia"),
   domain("hdrezka.buzz"),
@@ -168,8 +176,10 @@
   domain("kinotochka.me"),
   domain("kurkul.com"),
   domain("kv.by"),
+  domain("livehdrezka.com"),
   domain("livejournal.com"),
   domain("lostfan.net"),
+  domain("mehdrezka.com"),
   domain("metahdrezka.com"),
   domain("myhdrezka.com"),
   domain("myshows.me"),
@@ -181,6 +191,7 @@
   domain("oper.ru"),
   domain("pure-t.ru"),
   domain("rufootballtv.org"),
+  domain("rusporno.vip"),
   domain("russian-porn.online"),
   domain("sc2tv.ru"),
   domain("simhost.org"),
@@ -276,18 +287,15 @@
     #global-wrapper[style*="pointer"] > * {
         pointer-events: auto !important
     }
+    #global-wrapper:not(#id) > #wrapper {
+        top: 0 !important
+    }
 }
 
 @-moz-document domain("4pda.ru") {
     body[itemscope] [id]:first-child > style ~ a[href][target="_blank"], 
     iframe[src*="utm_campaign"] {
         display: none !important
-    }
-}
-
-@-moz-document domain("720hd.club") {
-    #all {
-        margin-top: 0 !important
     }
 }
 
@@ -599,6 +607,16 @@
     }
 }
 
+@-moz-document
+  domain("axd.semestr.ru"),
+  domain("math.semestr.ru") {
+    .adsbygoogle, .well-google, .well-span {
+        max-height: 121px !important;
+        opacity: 0 !important;
+        pointer-events: none !important
+    }
+}
+
 @-moz-document domain("banki.ru") {
     .header--short.header {
         margin-top: 0 !important
@@ -880,12 +898,15 @@
     #LEGO #leftcol-banners, #LEGO .b-rb, #LEGO div[id^="preload_banner"] {
         display: none !important
     }
+    #LEGO > .b-sticky:first-child {
+        width: 100% !important
+    }
 }
 
 @-moz-document
   domain("e.mail.ru"),
   domain("octavius.mail.ru") {
-    .layout__column_right > :not(.feedback-banner) {
+    body.page .layout__column_right > :not(.feedback-banner) {
         display: none !important
     }
     .application-mail__wrap > .layout > .layout__main-frame {
@@ -1752,12 +1773,6 @@
     }
 }
 
-@-moz-document domain("macdigger.ru") {
-    body:not(#id) header {
-        margin-bottom: 20px !important
-    }
-}
-
 @-moz-document domain("mail.rambler.ru") {
     div[class*="WithRightBarWrapper"] > div[class*="AutoAppContainer"] ~ * {
         display: none !important
@@ -1768,7 +1783,7 @@
 }
 
 @-moz-document domain("mail.ru") {
-    .branding-p, body > .zeropixel ~ div .well.notify {
+    .grid__header > .toolbar, body > .zeropixel ~ div .well.notify {
         display: none !important
     }
 }
@@ -1953,8 +1968,9 @@
   domain("news.yandex.kz"),
   domain("news.yandex.ru"),
   domain("news.yandex.ua") {
-    .sticky_visible, [class*="_name_first"], [class*="_name_footer"], 
-    [class*="_name_main"], [class*="_name_more"], [class*="_name_top"] {
+    .sticky_visible, .widget_for_rubrics-top[aria-labelledby] ~ *, 
+    [class*="_name_first"], [class*="_name_footer"], [class*="_name_main"], 
+    [class*="_name_more"], [class*="_name_top"], [class*="_sticky_yes"] {
         display: none !important
     }
 }
@@ -2372,24 +2388,6 @@
         margin-left: 0 !important;
         margin-right: 0 !important
     }
-    #SemestrBlock468 {
-        max-height: 11px !important;
-        opacity: 0 !important;
-        pointer-events: none !important
-    }
-    #idbanner, #mainb, .well-google {
-        max-height: 41px !important;
-        opacity: 0 !important;
-        pointer-events: none !important
-    }
-    #soloway240 {
-        max-height: 42px !important;
-        opacity: 0 !important;
-        pointer-events: none !important
-    }
-    .adsbygoogle {
-        max-height: 4px !important
-    }
 }
 
 @-moz-document domain("sergeistrelec.ru") {
@@ -2644,11 +2642,11 @@
 }
 
 @-moz-document domain("vgtimes.ru") {
-    a[href^="/go/?http://ads.adfox.ru/"], a[href^="/go/?https://ads.adfox.ru/"] {
-        display: none !important
+    body {
+        background-image: none !important
     }
-    html:not(#html) .fixed_header {
-        margin-top: 0 !important
+    #bspromo, .adfshift, body > div[style^="position: absolute"] {
+        display: none !important
     }
 }
 
@@ -2774,15 +2772,17 @@
     html:not(#id) > body:not(#id) > #top {
         margin-bottom: auto !important
     }
-    #top ~ .content > #content_block > table[style^="background-color"], 
     div[id][style*="min-height: 600px"] > table[style*="margin"] {
         margin-top: 0 !important
     }
     #top_3banners {
         margin-top: 20px !important
     }
-    .profileInserts ~ form {
+    .profileInserts ~ form, .profileInserts ~ table[style] {
         margin-top: 30px !important
+    }
+    table[style="background-color: #fff; width: 850px; margin: 24px auto 0"] {
+        margin-top: auto !important
     }
     .branding, .kp-direct-customize {
         position: fixed !important;
@@ -2807,6 +2807,9 @@
 @-moz-document domain("www.zoneofgames.ru") {
     html > body:not(#id) {
         background-color: #707070 !important
+    }
+    .blocks > table[width="360px"] td[style="background-color:#ffffff"] {
+        background-color: unset !important
     }
     body > div[id][style*="margin-top"] {
         margin-top: 0 !important
