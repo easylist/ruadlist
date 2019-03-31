@@ -24,7 +24,6 @@ $~third-party,xmlhttprequest,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|kra
 ||www.sovsport.ru^$xmlhttprequest,domain=www.sovsport.ru
 !
 ! Auto.ru
-auto.ru##.PageCard-module__Card__creditAd
 auto.ru##.ReviewZenPromo
 auto.ru##.TaxiDriverOffer-module__container
 auto.ru##.fotorama__nav > [style="display: inline;"]
@@ -34,6 +33,7 @@ auto.ru#?#a[href][target]:-abp-contains(Яндекс.Директ)
 auto.ru#?#body [class*=" "]:not(div):-abp-has(> [class]:not(div) + [class*=" "]:not(div) > div:empty)
 auto.ru##div[class$="__container"] > div[class$="__line_3"] > div[class$="__line_3_right"] > :not(div):not(a) > :not(div):not(a)
 auto.ru##div[class$="__twoColumnsLeft"] > div ~ div:not([class*="__Card"])
+auto.ru##div[class*="__Card__creditAd"]
 !
 ! Avito
 www.avito.ru##.avito-ads-container
