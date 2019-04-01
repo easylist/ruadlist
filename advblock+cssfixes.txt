@@ -86,6 +86,7 @@ news.mail.ru#@#div:-abp-has(> div > [target="_blank"][href^="https://r.mail.ru/"
 news.mail.ru#@#div:-abp-has(> div > div > [target="_blank"][href^="https://r.mail.ru/"])
 news.mail.ru#@#div:-abp-has(> div > div > div > [target="_blank"][href^="https://r.mail.ru/"])
 news.mail.ru#@#div:-abp-has(> div > div > div > div > [target="_blank"][href^="https://r.mail.ru/"])
+news.mail.ru,sportmail.ru##+js(abort-on-property-write.js, myWidget)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.i-bem:matches-css(margin: 5px)
 ok.ru##+js(abort-on-property-write.js, mailruEnabled)
 ok.ru##div.dialogWrapperBanner:style(display: block !important)
