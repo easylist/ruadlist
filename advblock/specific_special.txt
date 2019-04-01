@@ -99,12 +99,15 @@ $third-party,other,xmlhttprequest,domain=streamguard.cc
 mail.ru#?#body > .zeropixel ~ * div[class]:-abp-has(> div > div > p:-abp-contains(Delivery Club))
 ! Auto
 auto.mail.ru##.box[class*=" rb_"]
+auto.mail.ru#?#.cols__wrapper div[style^="position"]:-abp-has([class*="height_400"])
+auto.mail.ru#?#.cols__wrapper div[style^="position"]:-abp-has([id^="mailru"])
 auto.mail.ru##.js-popup_gallery .viewbox__side
 auto.mail.ru##.js-slot-parallax-inner
 auto.mail.ru##.js-smoky-end
 auto.mail.ru##.mailru-visibility-check iframe
 auto.mail.ru##.mailru-visibility-check-counter + div
 auto.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
+auto.mail.ru##.r-source
 auto.mail.ru##[data-adq-id]
 auto.mail.ru##tr > .daynews__spring
 ! Гороскопы
