@@ -111,7 +111,7 @@ mail.ru##body:not(#id) > .zeropixel ~ div[style="position: absolute; visibility:
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.widgets div ~ div ~ div ~ div ~ div div[class]:matches-css(height: 90px)
 ok.ru##div.dialogWrapperBanner:style(display: block !important)
 rp5.by,rp5.kz,rp5.ru,rp5.ua##div:has(:scope > .adsbygoogle)
-hideip.me##div[style^="display"][style*="block"]:style(position: fixed !important; top: -10000px !important)
+hideip.me##div[style^="display"][style*="block"] > a[href]:style(position: fixed !important; top: -10000px !important)
 draug.ru##p:has-text(Для скачивания подождите отчет таймера...)
 ||1internet.tv^$media,domain=1tv.ru|mediavitrina.ru
 ||1internet.tv^$media,redirect=noopmp4-1s,domain=1tv.ru|mediavitrina.ru
