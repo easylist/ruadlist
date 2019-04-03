@@ -97,6 +97,7 @@ $third-party,other,xmlhttprequest,domain=streamguard.cc
 ! Главная
 |https://mail.ru/|$csp=connect-src
 ||mail.ru/apic/$domain=~3igames.mail.ru|~auto.mail.ru|~biz.mail.ru|~bonus.mail.ru|~calendar.mail.ru|~cloud.mail.ru|~dobro.mail.ru|~e.mail.ru|~esports.mail.ru|~games.mail.ru|~gibdd.mail.ru|~go.mail.ru|~health.mail.ru|~hi-tech.mail.ru|~horo.mail.ru|~kino.mail.ru|~lady.mail.ru|~love.mail.ru|mail.ru|~mailblog.mail.ru|~mcs.mail.ru|~minigames.mail.ru|~my.mail.ru|~news.mail.ru|~octavius.mail.ru|~okminigames.mail.ru|~otvet.mail.ru|~pets.mail.ru|~pogoda.mail.ru|~realty.mail.ru|~top-fwz1.mail.ru|~top.mail.ru|~touch.mail.ru|~tv.mail.ru
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru~,health.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~realty.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##body [class] [class] .news-item_tgb > *
 ! Auto
 auto.mail.ru#?#.cols__wrapper div[style^="position"]:-abp-has([class*="height_400"])
 auto.mail.ru#?#.cols__wrapper div[style^="position"]:-abp-has([id^="mailru"])
@@ -206,6 +207,7 @@ realty.mail.ru##div[id^="trg-"]
 realty.mail.ru##div[id^="yandex_ad"]
 realty.mail.ru##tr > .daynews__spring
 ! Новости
+news.mail.ru#?#.block [class]:-abp-has(> * > [class]:-abp-contains(/^Реклама/))
 news.mail.ru#?#.js-fixed-panel .box:-abp-has([class*="spring"])
 news.mail.ru##.js-fixed-panel > .box_collapse
 news.mail.ru##.js-fixed-panel > .js-smoky-single
