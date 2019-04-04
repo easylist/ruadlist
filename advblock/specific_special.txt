@@ -502,7 +502,9 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,progorod33.ru,progorod43.ru,progo
 championat.com##.banner
 championat.com##.partners-content
 gazeta.ru###mediametrics
+gazeta.ru###news-pants > noindex
 gazeta.ru##.banner
+gazeta.ru##.pb
 gazeta.ru##[id*="rnet_gazeta_dzen"]
 gazeta.ru##div[id^="unit_"]
 gazeta.ru#?#.sausage:-abp-contains(Новости партнеров)
@@ -537,6 +539,7 @@ www.rambler.ru##div[id^="adfox"]
 www.rambler.ru#?#main header ~ * div[class]:-abp-has(> div[id^="adfox"])
 www.rambler.ru#?#main header ~ * div[class^="_"] ~ div[class^="_"]:-abp-has(> div[class] > [id^="adfox"])
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
+||static.gazeta.ru/nm2015/*/zen.
 !
 ! RBC (РБК)
 cnews.ru###mag_banner
