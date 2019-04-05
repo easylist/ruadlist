@@ -107,11 +107,11 @@ auto.mail.ru##.js-smoky-end
 auto.mail.ru##.mailru-visibility-check iframe
 auto.mail.ru##.mailru-visibility-check-counter + div
 auto.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
-auto.mail.ru##.r-source
 @@||auto.mail.ru^$generichide
 auto.mail.ru##[class*="grid"] > .grid__item_banner
-auto.mail.ru##div[id^="trg-"]
-auto.mail.ru##div[id^="yandex_ad"]
+auto.mail.ru##body [class*="o"] .r-source
+auto.mail.ru##body [class*="o"] div[id^="trg-"]
+auto.mail.ru##body [class*="o"] div[id^="yandex_ad"]
 auto.mail.ru##tr > .daynews__spring
 ! Гороскопы
 horo.mail.ru##.box[class*=" rb_"]
@@ -136,8 +136,8 @@ deti.mail.ru##.js-popup_gallery .viewbox__side
 deti.mail.ru##.js-smoky-end > .rb_loaded
 deti.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
 @@||deti.mail.ru^$generichide
-deti.mail.ru##div[id^="trg-"]
-deti.mail.ru##div[id^="yandex_ad"]
+deti.mail.ru##body [class*="o"] div[id^="trg-"]
+deti.mail.ru##body [class*="o"] div[id^="yandex_ad"]
 deti.mail.ru##tr > .daynews__spring
 ! Здоровье
 health.mail.ru#?#.column_sidebar .margin_bottom_20:-abp-has([data-adq-id])
@@ -156,8 +156,8 @@ kino.mail.ru##.mailru-visibility-check-counter ~ div
 kino.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
 @@||kino.mail.ru^$generichide
 kino.mail.ru##body .block [class] > div[class*="commerc"]
-kino.mail.ru##div[id^="trg-"]
-kino.mail.ru##div[id^="yandex_ad"]
+kino.mail.ru##body [class*="o"] div[id^="trg-"]
+kino.mail.ru##body [class*="o"] div[id^="yandex_ad"]
 ! Lady
 lady.mail.ru##.block .cols .rb-video-widget
 lady.mail.ru##.js-popup_banner
@@ -167,8 +167,8 @@ lady.mail.ru##.mailru-visibility-check div[style*="250"]
 lady.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
 lady.mail.ru##.sticky-springs__item
 @@||lady.mail.ru^$generichide
-lady.mail.ru##div[id^="trg-"]
-lady.mail.ru##div[id^="yandex_ad"]
+lady.mail.ru##body [class*="o"] div[id^="trg-"]
+lady.mail.ru##body [class*="o"] div[id^="yandex_ad"]
 lady.mail.ru##tr > .daynews__spring
 ! Love
 love.mail.ru##.TopBannerSlot
@@ -202,9 +202,9 @@ realty.mail.ru##.js-smoky-end
 realty.mail.ru##.layout .js-module .rb
 realty.mail.ru##.sticky-springs
 @@||realty.mail.ru^$generichide
+realty.mail.ru##body [class*="o"] div[id^="trg-"]
+realty.mail.ru##body [class*="o"] div[id^="yandex_ad"]
 realty.mail.ru##div[class][data-module^="TopMail.Special."]
-realty.mail.ru##div[id^="trg-"]
-realty.mail.ru##div[id^="yandex_ad"]
 realty.mail.ru##tr > .daynews__spring
 ! Новости
 news.mail.ru#?#.block [class]:-abp-has(> * > [class]:-abp-contains(/^Реклама/))
@@ -214,16 +214,16 @@ news.mail.ru##.js-fixed-panel > .js-smoky-single
 news.mail.ru##.js-popup_gallery .viewbox__side
 news.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
 news.mail.ru#?#.mailru-visibility-check:-abp-has([href*="utm_campai"])
-news.mail.ru##.r-source
 news.mail.ru#?#.rb-slot:-abp-has([id*="yandex_"])
 news.mail.ru#?#.rb_banner:-abp-has(*)
 @@||news.mail.ru^$generichide
 news.mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-abp-contains(Реклама))
+news.mail.ru##body [class*="o"] .r-source
+news.mail.ru##body [class*="o"] div[id^="trg-"]
+news.mail.ru##body [class*="o"] div[id^="yandex_ad"]
 news.mail.ru#?#div:-abp-has(> * > .sourceInformer_bks)
 news.mail.ru#?#div:-abp-has(> * > a[href*="t.mail.ru/redir"])
 news.mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
-news.mail.ru##div[id^="trg-"]
-news.mail.ru##div[id^="yandex_ad"]
 news.mail.ru##tr > .daynews__spring
 ! Облако
 cloud.mail.ru##.content__left > div[id] > div[style="font-size: 13px;"] > div[style^="font-size: 90%;"]
@@ -258,10 +258,10 @@ sportmail.ru#?#.js-fixed-panel .box:-abp-has([class*="spring"])
 sportmail.ru##.js-fixed-panel > .box_collapse
 sportmail.ru##.js-popup_gallery .viewbox__side
 sportmail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
-sportmail.ru##.r-source
 @@||sportmail.ru^$generichide
-sportmail.ru##div[id^="trg-"]
-sportmail.ru##div[id^="yandex_ad"]
+sportmail.ru##body [class*="o"] .r-source
+sportmail.ru##body [class*="o"] div[id^="trg-"]
+sportmail.ru##body [class*="o"] div[id^="yandex_ad"]
 sportmail.ru##tr > .daynews__spring
 ! Хай-тек
 hi-tech.mail.ru##.box[class*=" rb_"]
