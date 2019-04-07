@@ -365,6 +365,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|mschistota.ru
 /^https?://porno-island.games\/(?!templates|engine)/$script,domain=porno-island.games
 /^https?://proporno.org\/(?!templates|engine)/$script,domain=proporno.org
 /^https?://torrents-club.net\/(?!library|styles)/$script,domain=torrents-club.net
+/^https?://tv\.animebest\.org+\/(?!vod\/|content\/)/$domain=tv.animebest.org
 /^https?://www\.drive2\.ru/(?!market\/search\?condition=)[^\s]{150,}/$xmlhttprequest,domain=www.drive2.ru
 /^https?://www\.e1\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.e1.ru
 /^https?://www\.kakprosto\.ru/[^\s]{115,}/$script,xmlhttprequest,domain=www.kakprosto.ru
@@ -672,7 +673,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||ani-mania.com/files/ban$subdocument
 ||ani-mania.com/seo_anime_
 ||anidub.com/uploads/fotos/$subdocument
-||animebest.org/revideo/
 ||animechan.ru/fun/
 ||animecult.me/*.js|$third-party,script
 ||animedia.tv/img/promo/
@@ -2861,7 +2861,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||turbobit.net^*/videojs-preroll/
 ||turbobit.ru/pics/
 ||turizm.ru/banners2/200
-||tv.animebest.org/rek
+||tv.animebest.org/*.mp4$domain=tv.animebest.org
 ||tveda.ru^*banner
 ||tverigrad.ru^*.swf
 ||tvernews.ru/kc6a/
