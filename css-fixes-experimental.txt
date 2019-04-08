@@ -811,9 +811,13 @@ xatab-repack.net##.btn-download[href^="http"]:not([href^="https://xatab-repack.n
 rg-mechanics.org##.buttondown[href^="http"]:not([href^="https://rg-mechanics.org/"]):not([href^="http://rg-mechanics.org"])
 ! ---
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.b-page:style(padding-top: 0 !important)
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_channel > .content__columns > .content__main ~ div[class*="content__"] > *
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_channel > .content__columns ~ div[class*="content__"] > *
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.forecast-brief__item-temp-day:style(width: auto !important)
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.grid__item ~ .grid__item ~ div:not(.grid__item)
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.head-stripe:style(position: fixed !important; transform: scale(0) !important)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.home-arrow__bottom
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.main-controller_grid-wrapper > .grid_period_now ~ * > *
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.map-container ~ #sidebar-container > .sidebar-view ~ .collapse-button:style(top: 0 !important)
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > div[class]:nth-child(-n+2)[style="display: block;"]
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.serp-header:style(margin-top: 0 !important)
@@ -825,7 +829,7 @@ news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##[class*="_name_main
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##[class*="_name_more"]
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##[class*="_name_top"]
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##[class*="_sticky_yes"]
-tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##body > div[id][class] > .container > script ~ div[class]:not(header):not(main):not(footer)
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##body > #mount > div[class] > :not(header):not(main):not(footer)
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_infinity"] .footer:style(margin-top: auto !important)
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_infinity"] .rows__row_last > [role="complementary"]:style(margin-top: auto !important)
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#div:not([style^="padding: 0px"]):not([style*="content-box"])[style*="!important"][style*="display"][style*="visibility"][style*="visible"]:style(width: 0 !important; min-width: 0 !important; max-width: 0 !important; height: 0 !important; min-height: 0 !important; max-height: 0 !important; overflow: hidden !important)
