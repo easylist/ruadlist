@@ -737,10 +737,8 @@ afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##.sidebar__d
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##body > * > div[class^="grid__"] > :not(.page-header):not(.page-content):not(.page-footer):not([class*="promo-action"])
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##div[class][data-bem*="direct"]:not([data-bem*="directions"])
 ! Яндекс.Дзен
-zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body > div.article-block:not([class="article-block article-block-unstyled"]) > :not(.vk-video-post):not(.youtube-embed)
-zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__item:-abp-has(*:-abp-contains(/^реклама$/i))
 /^https?://zen\.yandex\.(by|com|com\.tr|fr|kz|ru|ua)/(?!api\/)[^\s]{300,}/$other,subdocument,~third-party,xmlhttprequest
-yandex.ru#?#body[class*="b-page_infinity"] .feed__item:-abp-has(> [class*="rtb"]:not([style]))
+zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__item:-abp-has(*:-abp-contains(/^реклама$/i))
 ! Яндекс.Здоровье (yandex.*/health)
 yandex.by,yandex.kz,yandex.ru,yandex.ua###root .AdsColumn
 yandex.by,yandex.kz,yandex.ru,yandex.ua###root .bottom-banner
