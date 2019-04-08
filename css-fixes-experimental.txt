@@ -813,7 +813,8 @@ rg-mechanics.org##.buttondown[href^="http"]:not([href^="https://rg-mechanics.org
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body > div[class*=" "] > div[class][id]
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.b-page:style(padding-top: 0 !important)
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_channel > .content__columns > .content__main ~ div[class*="content__"] > *
-tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_channel > :not(.content__columns):not(.bread-crumbs) > *
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_channel > .content__columns ~ :not(.content__columns):not(.bread-crumbs) > *
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_channel > div[class]:not(.content__columns):not(.bread-crumbs) > :not(.content__header)
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_program > div[itemscope] > .content__columns > :not(.content__main) > *
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_program > div[itemscope] > :not(.content__columns):not(.program-header) > *
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item > div[class*=" "]:not([style])
