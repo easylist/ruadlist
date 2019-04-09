@@ -235,6 +235,10 @@ cloud.mail.ru##div[class*="directhack"]
 cloud.mail.ru##div[data-adq-id^="adqcontainer"]
 cloud.mail.ru##div[data-module^="Slot.Mimic"]
 cloud.mail.ru##div[id^="rb_banner"]
+! Ответы
+otvet.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"])
+@@||otvet.mail.ru^$generichide
+otvet.mail.ru##body > iframe[src*="blob:"]
 ! Погода
 pogoda.mail.ru###direct_bottom
 pogoda.mail.ru###right_300x300
@@ -287,18 +291,14 @@ games.mail.ru##.mailru-visibility-check
 cards.mail.ru##.pt10.center
 pets.mail.ru##.rb_banner
 tv.mail.ru##.rbtopblock
-otvet.mail.ru##.torg-answer-banner
 go.mail.ru##[class*="_trg"]
 mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-abp-contains(Реклама))
 pets.mail.ru##[data-name="bottom ad"]
 pets.mail.ru##[data-name="top ad"]
 tv.mail.ru##[data-rb]
 go.mail.ru##[id^="tb-"][class^="tb-"][class*="footer"]
-otvet.mail.ru##body > iframe[src*="blob:"]
 go.mail.ru##div[class*="right__banner"]
 tv.mail.ru##div[class][id^="mailru"]
-otvet.mail.ru##div[id^="adv-slot-"]
-otvet.mail.ru##div[id^="adv-slot-"] *
 minigames.mail.ru##div[id^="slot"][id*="sitezone"]
 maps.mail.ru##img[width="200"][height="30"]
 ! Блокировка ресурсов в основном на самом mail.ru
