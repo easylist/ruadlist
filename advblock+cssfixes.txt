@@ -100,7 +100,6 @@ inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed 
 igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20px)
 hideip.me##.region-footer a[href]:style(position: fixed !important; top: -10000px !important)
 hideip.me##.region-highlighted > .block > .content > center:style(position: fixed !important; top: -10000px !important)
-~e.mail.ru,mail.ru,octavius.mail.ru##.tgb_invisible
 /^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
 /^https?://vargr\.ru\/+(boars|eagles|modus)\.html$/$inline-script
@@ -111,6 +110,9 @@ hideip.me##.region-highlighted > .block > .content > center:style(position: fixe
 @@||mc.yandex.ru/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online##^script:has-text(-Anti-AdBlock-is-adblock)
+~e.mail.ru,mail.ru,~octavius.mail.ru##body > .grid .grid__rcol > .games
+~e.mail.ru,mail.ru,~octavius.mail.ru##body > .grid .rectangle-banner
+~e.mail.ru,mail.ru,~octavius.mail.ru##body > .grid .tgb_invisible
 mail.ru##body > .zeropixel ~ * .i-clearfix.feed-generic__container
 mail.ru##body > .zeropixel ~ div .well.notify
 ~3igames.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~dobro.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru~,health.mail.ru,~horo.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~okminigames.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~realty.mail.ru,sportmail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div > div:style(display: block !important)

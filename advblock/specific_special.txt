@@ -218,9 +218,9 @@ news.mail.ru#?#.rb-slot:-abp-has([id*="yandex_"])
 news.mail.ru#?#.rb_banner:-abp-has(*)
 @@||news.mail.ru^$generichide
 news.mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-abp-contains(Реклама))
-news.mail.ru##body [class*="o"] .r-source
-news.mail.ru##body [class*="o"] div[id^="trg-"]
-news.mail.ru##body [class*="o"] div[id^="yandex_ad"]
+news.mail.ru#?#body [class*="o"] .r-source:-abp-has(> * *)
+news.mail.ru#?#body [class*="o"] div[id^="trg-"]:-abp-has(> * *)
+news.mail.ru#?#body [class*="o"] div[id^="yandex_ad"]:-abp-has(> * *)
 news.mail.ru#?#div:-abp-has(> * > .sourceInformer_bks)
 news.mail.ru#?#div:-abp-has(> * > a[href*="t.mail.ru/redir"])
 news.mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
@@ -263,9 +263,9 @@ sportmail.ru##.js-fixed-panel > .box_collapse
 sportmail.ru##.js-popup_gallery .viewbox__side
 sportmail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
 @@||sportmail.ru^$generichide
-sportmail.ru##body [class*="o"] .r-source
-sportmail.ru##body [class*="o"] div[id^="trg-"]
-sportmail.ru##body [class*="o"] div[id^="yandex_ad"]
+sportmail.ru#?#body [class*="o"] .r-source:-abp-has(> * *)
+sportmail.ru#?#body [class*="o"] div[id^="trg-"]:-abp-has(> * *)
+sportmail.ru#?#body [class*="o"] div[id^="yandex_ad"]:-abp-has(> * *)
 sportmail.ru##tr > .daynews__spring
 ! Хай-тек
 hi-tech.mail.ru##.box[class*=" rb_"]
