@@ -46,7 +46,6 @@ dok-film.net##+js(abort-on-property-read.js, adBlockDetected)
 www.kinopoisk.ru##+js(abort-on-property-read.js, advBlock)
 amazinghis.ru##+js(abort-on-property-read.js, anOptions)
 gidonline.eu,kinopad.net,liveinternet.ru,nnm-club.lib,nnm-club.me,nnmclub.to,riends.in.ua,simpsonsua.com.ua##+js(abort-on-property-read.js, atob)
-vsthouse.ru##+js(abort-on-property-read.js, blockad)
 overclockers.ru##+js(abort-on-property-read.js, bqa, chkA)
 friends.in.ua,gra-prestoliv.in.ua,kinoguru.me,simpsonsua.com.ua,simpsonsua.tv##+js(abort-on-property-read.js, document.addEventListener, show_warning)
 dclans.ru##+js(abort-on-property-read.js, document.getElementById, mdl_adb)
@@ -72,6 +71,7 @@ ok.ru##+js(abort-on-property-write.js, mailruEnabled)
 news.mail.ru,sportmail.ru##+js(abort-on-property-write.js, myWidget)
 hitfm.ua,kissfm.ua,radiorelax.ua,radioroks.ua,rusradio.ua##+js(abort-on-property-write.js, prerole_length)
 aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,teleprogramma.pro,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, window.__AABStatus)
+vsthouse.ru##+js(bab-defuser.js)
 an.yandex.ru##+js(cookie-remover.js)
 rustorka.club,rustorka.com,rustorka.innal.top,rustorka.net,rustorkacom.lib,tapochek.net##+js(cookie-remover.js, /(u_count|gophp|st2|st3)/)
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover.js, /^blcrm|^bltsr/)
@@ -173,3 +173,14 @@ auto.ru,kinopoisk.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-prope
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body > [class] > [class] + [class]:before:style(width: unset !important)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body[class*="b-page"]:style(background-color: unset !important)
 !#endif
+!
+! vsthouse.ru
+@@$image,badfilter,domain=vsthouse.ru
+@@||crunchyroll.*/vast?$script,badfilter,domain=vsthouse.ru
+@@||ledsitling.pro/news.js|$script,badfilter,domain=vsthouse.ru
+@@||ox-d.*^auid=$script,badfilter,domain=vsthouse.ru
+@@||serve.*/promoload?$script,badfilter,domain=vsthouse.ru
+@@||torrentz.*/mgid/$script,badfilter,domain=vsthouse.ru
+@@||yahoo.*/serv?s=$script,badfilter,domain=vsthouse.ru
+@@||yasni.*/design/relaunch/gfx/elitepartner_$script,badfilter,domain=vsthouse.ru
+@@||zoover.*/shared/bannerpages/darttagsbanner.aspx?$script,badfilter,domain=vsthouse.ru
