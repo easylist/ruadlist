@@ -31,7 +31,6 @@ inforeactor.ru##+js(abort-current-inline-script.js, document.createElement, /dir
 fastpic.ru##+js(abort-current-inline-script.js, document.createElement, Math.random)
 nnm-club.lib,nnm-club.me,nnmclub.to,www.vesti.ru##+js(abort-current-inline-script.js, document.createElement, String.fromCharCode)
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##+js(abort-current-inline-script.js, document.createElement, appendTo)
-championat.com,gazeta.ru,lenta.ru,rambler.ru##+js(abort-current-inline-script.js, navigator.userAgent, getRandomBait)
 money-pic.ru##+js(abort-current-inline-script.js, q330)
 gazeta.ru##+js(abort-current-inline-script.js, setTimeout, /24smi\.net|infox\.sg|lentainform\.com/)
 livesport.ws##+js(abort-current-inline-script.js, setTimeout, adblockwarn)
@@ -107,7 +106,7 @@ hideip.me##.region-highlighted > .block > .content > center:style(position: fixe
 @@||mc.yandex.ru/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
 @@||mc.yandex.ru/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
-championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online##^script:has-text(-Anti-AdBlock-is-adblock)
+championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online##^script:has-text(detect-baits)
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body > .grid .grid__rcol > .games
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body > .grid .rectangle-banner
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body > .grid .tgb_invisible
@@ -153,6 +152,7 @@ draug.ru##p:has-text(Для скачивания подождите отчет �
 ||melodiafm.ua/prerole/$media,redirect=noopmp3-0.1s
 ||moatads.com^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
 ||moikolodets.ru^$xmlhttprequest,badfilter,domain=moikolodets.ru
+||palacesquare.rambler.ru^$badfilter
 ||recostream.go.mail.ru^
 ||simpsonsua.com.ua^$csp=script-src 'self' * data:,badfilter
 ||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext

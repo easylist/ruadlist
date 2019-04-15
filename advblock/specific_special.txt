@@ -496,8 +496,12 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,progorod33.ru,progorod43.ru,progo
 !
 ! Rambler.RU и их проекты
 @@||autorambler.ru*/showads.js
+@@||championat.com^$generichide
+@@||gazeta.ru^$generichide
+@@||lenta.ru^$generichide
 @@||rambler.ru/adsbygoogle.js|$script,domain=www.rambler.ru
 @@||rambler.ru/i/icons/icon-comment.svg?$image,domain=rambler.ru
+@@||rambler.ru^$generichide
 @@||ssp.rambler.ru/context.jsp?*Begun_Autocontext_$script,domain=rambler.ru
 @@||ssp.rambler.ru^$domain=kinoteatr.ru
 @@||st.championat.com/shared/advertise.js|$script,domain=championat.com
@@ -541,6 +545,8 @@ rns.online#?#div[id*="teaser-header"]:-abp-contains(Новости партне�
 www.rambler.ru##div[id^="adfox"]
 www.rambler.ru#?#main header ~ * div[class]:-abp-has(> div[id^="adfox"])
 www.rambler.ru#?#main header ~ * div[class^="_"] ~ div[class^="_"]:-abp-has(> div[class] > [id^="adfox"])
+||palacesquare.rambler.ru^
+||paracesquare.rambler.ru^
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
 ||static.gazeta.ru/nm2015/*/zen.
 !
