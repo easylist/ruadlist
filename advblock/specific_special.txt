@@ -110,9 +110,9 @@ auto.mail.ru##.mailru-visibility-check-counter + div
 auto.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
 @@||auto.mail.ru^$generichide
 auto.mail.ru##[class*="grid"] > .grid__item_banner
-auto.mail.ru##body [class*="o"] .r-source
-auto.mail.ru##body [class*="o"] div[id^="trg-"]
-auto.mail.ru##body [class*="o"] div[id^="yandex_ad"]
+auto.mail.ru#?#body [class*="o"] .r-source:-abp-has(> *)
+auto.mail.ru#?#body [class*="o"] div[id^="trg-"]:-abp-has(> *)
+auto.mail.ru#?#body [class*="o"] div[id^="yandex_ad"]:-abp-has(> *)
 auto.mail.ru##tr > .daynews__spring
 ! Гороскопы
 horo.mail.ru##.box[class*=" rb_"]
