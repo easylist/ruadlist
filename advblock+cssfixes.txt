@@ -105,8 +105,12 @@ hideip.me##.region-highlighted > .block > .content > center:style(position: fixe
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
+@@||championat.com^$generichide,badfilter
+@@||gazeta.ru^$generichide,badfilter
+@@||lenta.ru^$generichide,badfilter
 @@||mc.yandex.ru/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
 @@||mc.yandex.ru/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
+@@||rambler.ru^$generichide,badfilter
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online##^script:has-text(detect-baits)
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body > .grid .grid__rcol > .games
