@@ -157,8 +157,8 @@ kino.mail.ru##.mailru-visibility-check-counter ~ div
 kino.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
 @@||kino.mail.ru^$generichide
 kino.mail.ru##body .block [class] > div[class*="commerc"]
-kino.mail.ru##body [class*="o"] div[id^="trg-"]
-kino.mail.ru##body [class*="o"] div[id^="yandex_ad"]
+kino.mail.ru#?#body [class*="o"] div[id^="trg-"]:-abp-has(> *)
+kino.mail.ru#?#body [class*="o"] div[id^="yandex_ad"]:-abp-has(> *)
 ! Lady
 lady.mail.ru##.block .cols .rb-video-widget
 lady.mail.ru##.js-popup_banner
