@@ -213,6 +213,7 @@ news.mail.ru#?#.js-fixed-panel .box:-abp-has([class*="spring"])
 news.mail.ru##.js-fixed-panel > .box_collapse
 news.mail.ru##.js-fixed-panel > .js-smoky-single
 news.mail.ru##.js-popup_gallery .viewbox__side
+news.mail.ru##.mailru-visibility-check iframe
 news.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
 news.mail.ru#?#.mailru-visibility-check:-abp-has([href*="utm_campai"])
 news.mail.ru#?#.rb-slot:-abp-has([id*="yandex_"])
@@ -313,7 +314,6 @@ maps.mail.ru##img[width="200"][height="30"]
 /mimic/$domain=cloud.mail.ru
 /mrg-context.$script,stylesheet,domain=mail.ru
 @@||ad.mail.ru/adp/?q%*_siteid$domain=auto.mail.ru|deti.mail.ru|health.mail.ru|kino.mail.ru|lady.mail.ru|news.mail.ru|pets.mail.ru|realty.mail.ru|sportmail.ru
-|https://mail.ru/|$csp=connect-src
 ||ad.mail.ru/adq/$script,rewrite=abp-resource:blank-js,domain=otvet.mail.ru
 ||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~otvet.mail.ru
 ||bs.mail.ru^$image,domain=mail.ru
