@@ -90,8 +90,8 @@ news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.i-bem:matches-css(
 nnm-club.lib,nnm-club.me,nnmclub.to,www.vesti.ru##+js(abort-current-inline-script.js, document.createElement, String.fromCharCode)
 ok.ru##+js(abort-on-property-write.js, mailruEnabled)
 ok.ru##div.dialogWrapperBanner:style(display: block !important)
-otvet.mail.ru##+js(abort-on-property-read.js, $.adv.addMimic)
-otvet.mail.ru##+js(abort-on-property-read.js, SLOT_CONFIG)
+otvet.mail.ru##+js(abort-on-property-read.js, $.adv.mimic)
+otvet.mail.ru##+js(abort-on-property-read.js, $.adv.url)
 overclockers.ru##+js(abort-on-property-read.js, cardinals, chkA)
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##+js(abort-current-inline-script.js, document.createElement, appendTo)
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##+js(abort-on-property-write.js, goout)
@@ -117,7 +117,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||1tv.ru/player/$image,redirect=1x1-transparent.gif,domain=1tv.ru
 ||ad.mail.ru/adp/$xmlhttprequest,redirect=nooptext,domain=~e.mail.ru|~octavius.mail.ru
 ||ad.mail.ru/adq/$script,redirect=noopjs,domain=~e.mail.ru|~octavius.mail.ru
-||ad.mail.ru/adq/$script,redirect=silent-noeval.js,domain=otvet.mail.ru
 ||ad.mail.ru/vast/$xmlhttprequest,redirect=nooptext
 ||ad.mail.ru^$badfilter
 ||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~otvet.mail.ru
