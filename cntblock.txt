@@ -83,6 +83,8 @@ segodnya.ua##.counters
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=mastarti.com
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##[id*="adbloc"]
+championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online#?#body * *:-abp-has(> * > * > [href*="visit-monitor.yandex.ru/count/"])
+championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online#?#body * *:-abp-has(> * > [href^="https://direct.yandex.ru/"])
 mail.ru##body > .zeropixel ~ * .i-clearfix.feed-generic__container
 mail.ru#?#body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div div:-abp-has(> div:-abp-contains(/[a-z]/))
 mail.ru##body > .zeropixel ~ * .search__container ~ [class] ~ [class] > :first-child
