@@ -239,7 +239,7 @@ cloud.mail.ru##div[id^="rb_banner"]
 otvet.mail.ru#?#.mailru-visibility-check:-abp-has([target="_blank"])
 @@||otvet.mail.ru^$generichide
 otvet.mail.ru##body > iframe[src*="blob:"]
-otvet.mail.ru##body script ~ div * > iframe
+otvet.mail.ru##body script ~ div * > iframe:not([src^="https://my.mail.ru/"])
 ! Погода
 pogoda.mail.ru###direct_bottom
 pogoda.mail.ru###right_300x300
