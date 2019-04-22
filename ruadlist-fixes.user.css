@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190411.2005
+@version 0.20190422.1950
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -116,6 +116,7 @@
   domain("torentor.co"),
   domain("torrentum.me"),
   domain("tvhdrezka.com"),
+  domain("uphdrezka.com"),
   domain("vc.ru"),
   domain("veleto.ru"),
   domain("videoclub.men"),
@@ -209,6 +210,7 @@
   domain("torrentom.com"),
   domain("torrentum.me"),
   domain("tvhdrezka.com"),
+  domain("uphdrezka.com"),
   domain("userstyles.org"),
   domain("wehdrezka.com"),
   domain("xatab-repack.net"),
@@ -1050,7 +1052,9 @@
     }
 }
 
-@-moz-document domain("filmitorrent.xyz") {
+@-moz-document
+  domain("filmitorrent.net"),
+  domain("filmitorrent.xyz") {
     a[href^="/a"][href$="html"][target="_blank"] {
         display: none !important
     }
@@ -1243,6 +1247,14 @@
 @-moz-document domain("gidonline.in") {
     #headerline {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("gismeteo.ua") {
+    #weather-rbkua, #weather-right, #weather-top > *, .rframe#w-hor, 
+    [id^="weather-gis-news"] {
+        position: fixed !important;
+        top: -10000px !important
     }
 }
 
@@ -1909,14 +1921,14 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    #all > div[id*="header"] > [onclick], [onclick="goTo(this)"] > img {
+    [onclick="goTo(this)"] {
         display: none !important
     }
-    #all > div[id*="header"] {
+    #all > div[id*="eader"] {
         height: 1px !important;
         background: none !important
     }
-    #all > div[id*="header"] > .wtfnav {
+    #all > div[id*="eader"] > .right {
         margin-top: 0 !important
     }
 }
@@ -1996,15 +2008,6 @@
     }
 }
 
-@-moz-document domain("nootropos.ru") {
-    html > body:not(#id) {
-        background: #abc4a1 !important
-    }
-    body > #page {
-        padding-top: 0 !important
-    }
-}
-
 @-moz-document domain("obozrevatel.com") {
     body > .header {
         margin-top: 0 !important
@@ -2041,6 +2044,12 @@
     }
     #posts div[id^="ugolkrug"] {
         box-shadow: none !important
+    }
+}
+
+@-moz-document domain("otvet.mail.ru") {
+    div[class][style="top: 56px;"] > div > div ~ div {
+        display: none !important
     }
 }
 
@@ -2394,6 +2403,13 @@
     }
 }
 
+@-moz-document domain("sinoptik.ua") {
+    .informerTop, .rightAdvBox {
+        position: fixed !important;
+        top: -10000px !important
+    }
+}
+
 @-moz-document domain("slushat-tekst-pesni.ru") {
     .abp {
         transform: none !important;
@@ -2486,6 +2502,12 @@
         background-image: none !important;
         background: #dbdbdb !important
     }
+    .above_body {
+        margin-bottom: auto !important
+    }
+    #globalcontent {
+        padding-top: 0 !important
+    }
     #wrapper > #content {
         padding-top: 40px !important
     }
@@ -2497,6 +2519,15 @@
     }
     html > body {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("technogies.ru") {
+    html > body:not(#id) {
+        background: #abc4a1 !important
+    }
+    body > #page {
+        padding-top: 0 !important
     }
 }
 
@@ -2679,14 +2710,6 @@
     }
     .with-cookies-agreements .channels-line {
         top: calc(70px + 0px) !important
-    }
-}
-
-@-moz-document domain("virtualbrest.by") {
-    .header-right > div[class]:not([class*="header"]) a[href], 
-    .main-block > .search-panel + div[class]:not(#container), 
-    center > div[style="background: #ffffff; width: 700px+50px; padding-left: 10px;"] {
-        display: none !important
     }
 }
 
