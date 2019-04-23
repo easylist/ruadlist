@@ -25,9 +25,12 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 24smi.org,razlozhi.ru##+js(abort-on-property-read.js, yandex_metrika_callbacks)
 3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,gorodrabot.ru,hideip.me,sdamgia.ru##+js(abort-on-property-read.js, Ya)
 7streams.pro,sblive.online,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
+@@.js|$third-party,badfilter,domain=gismeteo.ua|sinoptik.ua
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
+@@||gismeteo.ua^$generichide,badfilter
 @@||mc.yandex.ru/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
 @@||mc.yandex.ru/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
+@@||sinoptik.ua^$generichide,badfilter
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##+js(abort-on-property-read.js, Ya.adfoxCode)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##+js(abort-on-property-read.js, Ya.Direct)
