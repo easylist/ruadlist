@@ -27,6 +27,7 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 7streams.pro,sblive.online,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
 @@.js|$third-party,badfilter,domain=gismeteo.ua|sinoptik.ua
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
+@@||facenews.ua^$generichide,badfilter
 @@||gismeteo.ua^$generichide,badfilter
 @@||mc.yandex.ru/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
 @@||mc.yandex.ru/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
@@ -54,6 +55,7 @@ draug.ru,vargr.ru##+js(abort-current-inline-script.js, Math.floor, AdSense)
 drive2.ru##+js(abort-current-inline-script.js, document.currentScript)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru##+js(abort-current-inline-script.js, Math.floor, adregain_wall)
+facenews.ua##+js(set-constant.js, URL.createObjectURL, undefined)
 fastpic.ru##+js(abort-current-inline-script.js, document.createElement, Math.random)
 friends.in.ua,gra-prestoliv.in.ua,kinoguru.me,simpsonsua.com.ua,simpsonsua.tv##+js(abort-on-property-read.js, document.addEventListener, show_warning)
 gamehunt.net##+js(setTimeout-defuser.js, Adblock)
