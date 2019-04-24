@@ -236,10 +236,10 @@ cloud.mail.ru##div[data-adq-id^="adqcontainer"]
 cloud.mail.ru##div[data-module^="Slot.Mimic"]
 cloud.mail.ru##div[id^="rb_banner"]
 ! Ответы
-otvet.mail.ru##.mailru-visibility-check-counter ~ *
 otvet.mail.ru#?#.mailru-visibility-check:-abp-has([target="_blank"])
 @@||otvet.mail.ru^$generichide
 otvet.mail.ru##body > iframe[src*="blob:"]
+otvet.mail.ru#?#div:-abp-has(> .mailru-visibility-check-counter)
 ! Погода
 pogoda.mail.ru###direct_bottom
 pogoda.mail.ru###right_300x300
