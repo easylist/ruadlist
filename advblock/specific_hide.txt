@@ -172,7 +172,6 @@ ketchuptv.ru###blink
 rusnext.ru,rusvesna.su###block-block-19
 rusnext.ru,rusvesna.su###block-block-22
 rusnext.ru,rusvesna.su###block-block-32
-ren.tv###block-block-66
 allboxing.ru###block-block-89
 zwezda.net###block-zwzd-partners
 klassnye-chasy.ru###block1
@@ -2973,7 +2972,7 @@ prikolin.ru##.red
 nashgorod.ru##.redtram-elem
 vse42.ru##.redtram-exchange
 telegraf.in.ua##.redtram_news
-ren.tv##.region ~ .block-block:nth-last-child(n+3)
+ren.tv#?#.region ~ .block-block:nth-last-child(n+3):-abp-has(> .content > :not([id^="grf_rentv"]))
 film.ru##.region-bottom-ads
 rifey.ru##.region-footer > #block-block-15
 kramola.info##.region-header > :empty
@@ -4897,6 +4896,7 @@ gorodvitebsk.by,kursktv.ru##div[class*="baner"]
 dressupmix.ru##div[class*="banner"]:not(.banner-vk)
 sia.ru,voxpopuli.kz##div[class*="banner_"]
 forum.krasmama.ru,kp40.ru,mycity.by##div[class*="banners"]
+ren.tv##div[class*="block_partner"]
 ctv7.ru##div[class*="bnrs-block"]
 diabet-med.com##div[class*="boxzilla"]
 priluki.city##div[class*="bunner"]
@@ -5213,6 +5213,7 @@ torrentino.me##div[id^="bbe"][style]
 list-org.com##div[id^="bl1"]
 film.ru##div[id^="block-adverts"]
 sport-tv.by##div[id^="block-block"] #swiffycontainer
+ren.tv##div[id^="block-block"]:-abp-has(> .content > #yandex_ad)
 newsroom.kh.ua##div[id^="block-nodeblock"]
 kharkov.info##div[id^="block-views-banner"]
 kharkov.info##div[id^="block-views-paid_place_slider-block"]
