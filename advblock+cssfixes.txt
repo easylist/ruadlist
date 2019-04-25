@@ -58,10 +58,10 @@ euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru##+js(abort
 facenews.ua##+js(set-constant.js, URL.createObjectURL, undefined)
 fastpic.ru##+js(abort-current-inline-script.js, document.createElement, Math.random)
 friends.in.ua,gra-prestoliv.in.ua,kinoguru.me,simpsonsua.com.ua,simpsonsua.tv##+js(abort-on-property-read.js, document.addEventListener, show_warning)
+gagadget.com,gismeteo.ua,newsyou.info,sinoptik.ua##+js(set-constant.js, Object.getPrototypeOf, undefined)
 gamehunt.net##+js(setTimeout-defuser.js, Adblock)
 gazeta.ru##+js(abort-current-inline-script.js, setTimeout, /24smi\.net|infox\.sg|lentainform\.com/)
 gidonline.eu,kinopad.net,liveinternet.ru,nnm-club.lib,nnm-club.me,nnmclub.to,riends.in.ua,simpsonsua.com.ua##+js(abort-on-property-read.js, atob)
-gismeteo.ua,newsyou.info,sinoptik.ua##+js(set-constant.js, Object.getPrototypeOf, undefined)
 helpsetup.ru##+js(abort-on-property-write.js, adregain_wall)
 hideip.me###highlighted:style(padding: 0 !important; border: 0 !important; margin-bottom: 0 !important)
 hideip.me###sidebar-second:style(position: fixed !important; top: -10000px !important)
@@ -140,6 +140,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||car.ru/|$xmlhttprequest,badfilter,domain=car.ru
 ||fermilon.ru^$xmlhttprequest,badfilter,domain=fermilon.ru
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
+||gagadget.com^$csp=script-src 'self' * blob: data: 'unsafe-eval',badfilter
 ||gismeteo.ua^$csp=script-src 'self' * data: 'unsafe-eval' 'unsafe-inline',badfilter
 ||globuss24.ru^$xmlhttprequest,badfilter,domain=globuss24.ru
 ||keenwilling.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
