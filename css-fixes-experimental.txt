@@ -226,9 +226,9 @@ www.drive2.ru##.dv-post-header
 www.drive2.ru##.g-full-size-post ~ [data-role] ~ div:last-child > div:first-child + div:last-child
 www.drive2.ru##.g-full-size-post ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child)
 www.drive2.ru##.js-page > div:not([class*="-header"]) > .g-column-mid:first-child + div[class]:last-child > div:not([class*="text"]):last-child
-www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > .js-market-indexmode + div[class] + div[class]:not([class*="collapse"])
-www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > div[class*="content"]:first-child + div[class]:not([class*="collapse"])
-www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > div[class]:not([class*="content"]):not([class*="grid"]):not([class*="slide"]):not([class*="column"]):first-child + div[class]:not([class*="collapse"])
+www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > .js-market-indexmode + div[class] ~ div:not([class*="collapse"])
+www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > div[class*="content"]:first-child + div:not([class*="collapse"])
+www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > div[class]:not([class*="content"]):not([class*="grid"]):not([class*="slide"]):not([class*="column"]):first-child ~ div:not([class*="collapse"])
 www.drive2.ru##.offer ~ div:not([class*="content"]):not([data-role]):not([class*="columns"])
 drive.ru#?#body > div:style(background: none !important; padding-top: 0 !important)
 www.drive2.ru##div[id]:not([class]) > div[class]:not([id])[style="width: 970px;"]
