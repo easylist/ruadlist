@@ -58,7 +58,7 @@ draug.ru,vargr.ru##+js(abort-current-inline-script.js, Math.floor, AdSense)
 dynamo.kiev.ua,gagadget.com,gismeteo.ua,ringside24.com,sinoptik.ua##+js(set-constant.js, Object.getPrototypeOf, undefined)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru##+js(abort-current-inline-script.js, Math.floor, adregain_wall)
-facenews.ua,newsyou.info,sinoptik.ua##+js(set-constant.js, URL.createObjectURL, undefined)
+facenews.ua,sinoptik.ua##+js(set-constant.js, URL.createObjectURL, undefined)
 fastpic.ru##+js(abort-current-inline-script.js, document.createElement, Math.random)
 friends.in.ua,gra-prestoliv.in.ua,kinoguru.me,simpsonsua.com.ua,simpsonsua.tv##+js(abort-on-property-read.js, document.addEventListener, show_warning)
 gamehunt.net##+js(setTimeout-defuser.js, Adblock)
@@ -95,6 +95,7 @@ muzlan.top##+js(nano-setInterval-booster.js, .numcard)
 news.mail.ru,sportmail.ru##+js(abort-on-property-read.js, ru.mail.smokyTools)
 news.mail.ru,sportmail.ru##+js(abort-on-property-write.js, myWidget)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.i-bem:matches-css(margin: 5px)
+newsyou.info##+js(abort-on-property-write.js, Math)
 nnm-club.lib,nnm-club.me,nnmclub.to,www.vesti.ru##+js(abort-current-inline-script.js, document.createElement, String.fromCharCode)
 ok.ru##+js(abort-on-property-write.js, mailruEnabled)
 ok.ru##div.dialogWrapperBanner:style(display: block !important)
@@ -154,7 +155,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||melodiafm.ua/prerole/$media,redirect=noopmp3-0.1s
 ||moatads.com^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
 ||moikolodets.ru^$xmlhttprequest,badfilter,domain=moikolodets.ru
-||newsyou.info^$csp=script-src 'self' * blob: data:,badfilter
 ||palacesquare.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||paracesquare.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||recostream.go.mail.ru^
