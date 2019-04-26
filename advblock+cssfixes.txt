@@ -32,9 +32,10 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 @@||gismeteo.ua^$generichide,badfilter
 @@||mc.yandex.ru/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
 @@||mc.yandex.ru/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
+@@||ringside24.com^$generichide,badfilter
 @@||sinoptik.ua^$generichide,badfilter
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
-@@||trafmag.com/*.js|$script,badfilter,domain=dynamo.kiev.ua|facenews.ua
+@@||trafmag.com/*.js|$script,badfilter,domain=dynamo.kiev.ua|facenews.ua|ringside24.com
 @@||www.facenews.ua^$image,badfilter,domain=www.facenews.ua
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##+js(abort-on-property-read.js, Ya.adfoxCode)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##+js(abort-on-property-read.js, Ya.Direct)
@@ -55,7 +56,7 @@ dclans.ru##+js(abort-on-property-read.js, document.getElementById, mdl_adb)
 dok-film.net##+js(abort-on-property-read.js, adBlockDetected)
 draug.ru##p:has-text(Для скачивания подождите отчет таймера...)
 draug.ru,vargr.ru##+js(abort-current-inline-script.js, Math.floor, AdSense)
-dynamo.kiev.ua,gagadget.com,gismeteo.ua,sinoptik.ua##+js(set-constant.js, Object.getPrototypeOf, undefined)
+dynamo.kiev.ua,gagadget.com,gismeteo.ua,ringside24.com,sinoptik.ua##+js(set-constant.js, Object.getPrototypeOf, undefined)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru##+js(abort-current-inline-script.js, Math.floor, adregain_wall)
 facenews.ua,newsyou.info,sinoptik.ua##+js(set-constant.js, URL.createObjectURL, undefined)
@@ -172,7 +173,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||weborama.fr^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
 ||www.sovsport.ru^$xmlhttprequest,badfilter,domain=www.sovsport.ru
 ||yastatic.net/pcode/adfox/loader.js$script,redirect=silent-noeval.js,domain=auto.ru
-||zmctrack.net^$third-party,domain=~dynamo.kiev.ua|~gagadget.com
+||zmctrack.net^$third-party,domain=~dynamo.kiev.ua|~gagadget.com|~ringside24.com
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru~,health.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~realty.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(cookie-remover.js, mrcu)
 ~3igames.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~connect.mail.ru,~dobro.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru~,health.mail.ru,~horo.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~realty.mail.ru,sportmail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div > div div:style(display: block !important)
 ~3igames.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~connect.mail.ru,~dobro.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru~,health.mail.ru,~horo.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~realty.mail.ru,sportmail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div > div:style(display: block !important)
