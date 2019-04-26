@@ -27,12 +27,14 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 7streams.pro,sblive.online,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
 @@.js|$third-party,badfilter,domain=gismeteo.ua|sinoptik.ua
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
+@@||dynamo.kiev.ua^$generichide,badfilter
 @@||facenews.ua^$generichide,badfilter
 @@||gismeteo.ua^$generichide,badfilter
 @@||mc.yandex.ru/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
 @@||mc.yandex.ru/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||sinoptik.ua^$generichide,badfilter
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
+@@||trafmag.com/*.js|$script,badfilter,domain=dynamo.kiev.ua|facenews.ua
 @@||www.facenews.ua^$image,badfilter,domain=www.facenews.ua
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##+js(abort-on-property-read.js, Ya.adfoxCode)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##+js(abort-on-property-read.js, Ya.Direct)
@@ -53,12 +55,12 @@ dclans.ru##+js(abort-on-property-read.js, document.getElementById, mdl_adb)
 dok-film.net##+js(abort-on-property-read.js, adBlockDetected)
 draug.ru##p:has-text(Для скачивания подождите отчет таймера...)
 draug.ru,vargr.ru##+js(abort-current-inline-script.js, Math.floor, AdSense)
+dynamo.kiev.ua,gagadget.com,gismeteo.ua,sinoptik.ua##+js(set-constant.js, Object.getPrototypeOf, undefined)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru##+js(abort-current-inline-script.js, Math.floor, adregain_wall)
 facenews.ua,newsyou.info,sinoptik.ua##+js(set-constant.js, URL.createObjectURL, undefined)
 fastpic.ru##+js(abort-current-inline-script.js, document.createElement, Math.random)
 friends.in.ua,gra-prestoliv.in.ua,kinoguru.me,simpsonsua.com.ua,simpsonsua.tv##+js(abort-on-property-read.js, document.addEventListener, show_warning)
-gagadget.com,gismeteo.ua,sinoptik.ua##+js(set-constant.js, Object.getPrototypeOf, undefined)
 gamehunt.net##+js(setTimeout-defuser.js, Adblock)
 gazeta.ru##+js(abort-current-inline-script.js, setTimeout, /24smi\.net|infox\.sg|lentainform\.com/)
 gidonline.eu,kinopad.net,liveinternet.ru,nnm-club.lib,nnm-club.me,nnmclub.to,riends.in.ua,simpsonsua.com.ua##+js(abort-on-property-read.js, atob)
@@ -140,7 +142,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||fermilon.ru^$xmlhttprequest,badfilter,domain=fermilon.ru
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
 ||gagadget.com^$csp=script-src 'self' * blob: data: 'unsafe-eval',badfilter
-||gismeteo.ua^$csp=script-src 'self' * data: 'unsafe-eval' 'unsafe-inline',badfilter
 ||globuss24.ru^$xmlhttprequest,badfilter,domain=globuss24.ru
 ||keenwilling.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||littlerepulsive.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
@@ -159,7 +160,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||recostream.go.mail.ru^
 ||redsquare.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||simpsonsua.com.ua^$csp=script-src 'self' * data:,badfilter
-||sinoptik.ua^$csp=script-src 'self' * data: 'unsafe-eval' 'unsafe-inline',badfilter
 ||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
 ||strm.yandex.ru^$media,redirect=noopmp4-1s,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
 ||svpressa.ru^$xmlhttprequest,badfilter,domain=svpressa.ru
@@ -172,7 +172,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||weborama.fr^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
 ||www.sovsport.ru^$xmlhttprequest,badfilter,domain=www.sovsport.ru
 ||yastatic.net/pcode/adfox/loader.js$script,redirect=silent-noeval.js,domain=auto.ru
-||zmctrack.net^$third-party,domain=~gagadget.com
+||zmctrack.net^$third-party,domain=~dynamo.kiev.ua|~gagadget.com
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru~,health.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~realty.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(cookie-remover.js, mrcu)
 ~3igames.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~connect.mail.ru,~dobro.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru~,health.mail.ru,~horo.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~realty.mail.ru,sportmail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div > div div:style(display: block !important)
 ~3igames.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~connect.mail.ru,~dobro.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru~,health.mail.ru,~horo.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~realty.mail.ru,sportmail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div > div:style(display: block !important)
