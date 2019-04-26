@@ -27,15 +27,13 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 7streams.pro,sblive.online,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
 @@||dynamo.kiev.ua^$generichide,badfilter
-@@||facenews.ua^$generichide,badfilter
 @@||gismeteo.ua^$generichide,badfilter
 @@||mc.yandex.ru/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
 @@||mc.yandex.ru/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||ringside24.com^$generichide,badfilter
 @@||sinoptik.ua^$generichide,badfilter
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
-@@||trafmag.com/*.js|$script,badfilter,domain=dynamo.kiev.ua|facenews.ua|gismeteo.ua|ringside24.com|sinoptik.ua
-@@||www.facenews.ua^$image,badfilter,domain=www.facenews.ua
+@@||trafmag.com/*.js|$script,badfilter,domain=dynamo.kiev.ua|gismeteo.ua|ringside24.com|sinoptik.ua
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##+js(abort-on-property-read.js, Ya.adfoxCode)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##+js(abort-on-property-read.js, Ya.Direct)
 aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,fermilon.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,teleprogramma.pro,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, ccScriptSupport)
