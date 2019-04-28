@@ -235,7 +235,6 @@ cloud.mail.ru##div[id^="rb_banner"]
 otvet.mail.ru#?#.mailru-visibility-check:-abp-has([target="_blank"])
 @@||otvet.mail.ru^$generichide
 otvet.mail.ru##body > iframe[src*="blob:"]
-otvet.mail.ru#?#div:-abp-has(> .mailru-visibility-check-counter)
 ! Погода
 pogoda.mail.ru###direct_bottom
 pogoda.mail.ru###right_300x300
@@ -330,6 +329,7 @@ maps.mail.ru##img[width="200"][height="30"]
 ||news.mail.ru^$popup,domain=news.mail.ru
 ||news.mail.ru^*.parallaxSlot.
 ||r.mail.ru/*=videoplayer$popup,domain=my.mail.ru
+||r.mradx.net/*link1=$subdocument
 ||realty.mail.ru^*parallax.js
 ||redatastore.ru^$csp=script-src
 ||stat.radar.imgsmail.ru^$~stylesheet,domain=e.mail.ru
