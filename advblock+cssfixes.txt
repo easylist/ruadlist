@@ -11,7 +11,7 @@
 %include advblock.txt%
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other ---
-$third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
+$third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 /^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
@@ -25,7 +25,7 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 24smi.org,razlozhi.ru##+js(abort-on-property-read.js, yandex_metrika_callbacks)
 3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,gorodrabot.ru,hideip.me,sdamgia.ru##+js(abort-on-property-read.js, Ya)
 7streams.pro,sblive.online,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
-@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc
+@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc|streamguard.cc|streamtojupiter.me
 @@||dynamo.kiev.ua^$generichide,badfilter
 @@||gagadget.com^$generichide,badfilter
 @@||gismeteo.ua^$generichide,badfilter
