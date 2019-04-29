@@ -28,13 +28,12 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc|streamguard.cc|streamtojupiter.me
 @@||dynamo.kiev.ua^$generichide,badfilter
 @@||gagadget.com^$generichide,badfilter
-@@||gismeteo.ua^$generichide,badfilter
 @@||mc.yandex.ru/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
 @@||mc.yandex.ru/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||ringside24.com^$generichide,badfilter
 @@||sinoptik.ua^$generichide,badfilter
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
-@@||trafmag.com/*.js|$script,badfilter,domain=dynamo.kiev.ua|gagadget.com|gismeteo.ua|ringside24.com|sinoptik.ua
+@@||trafmag.com/*.js|$script,badfilter,domain=dynamo.kiev.ua|gagadget.com|ringside24.com|sinoptik.ua
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##+js(abort-on-property-read.js, Ya.adfoxCode)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##+js(abort-on-property-read.js, Ya.Direct)
 aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,fermilon.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,teleprogramma.pro,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, ccScriptSupport)
@@ -54,7 +53,7 @@ dclans.ru##+js(abort-on-property-read.js, document.getElementById, mdl_adb)
 dok-film.net##+js(abort-on-property-read.js, adBlockDetected)
 draug.ru##p:has-text(Для скачивания подождите отчет таймера...)
 draug.ru,vargr.ru##+js(abort-current-inline-script.js, Math.floor, AdSense)
-dynamo.kiev.ua,gagadget.com,gismeteo.ua,ringside24.com,sinoptik.ua##+js(set-constant.js, Object.getPrototypeOf, undefined)
+dynamo.kiev.ua,gagadget.com,ringside24.com,sinoptik.ua##+js(set-constant.js, Object.getPrototypeOf, undefined)
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru##+js(abort-current-inline-script.js, Math.floor, adregain_wall)
 facenews.ua##+js(abort-on-property-read.js, XMLHttpRequest)
@@ -64,6 +63,7 @@ friends.in.ua,gra-prestoliv.in.ua,kinoguru.me,simpsonsua.com.ua,simpsonsua.tv##+
 gamehunt.net##+js(setTimeout-defuser.js, Adblock)
 gazeta.ru##+js(abort-current-inline-script.js, setTimeout, /24smi\.net|infox\.sg|lentainform\.com/)
 gidonline.eu,kinopad.net,liveinternet.ru,nnm-club.lib,nnm-club.me,nnmclub.to,riends.in.ua,simpsonsua.com.ua##+js(abort-on-property-read.js, atob)
+gismeteo.ua##+js(abort-current-inline-script.js, document.createElement)
 helpsetup.ru##+js(abort-on-property-write.js, adregain_wall)
 hideip.me###highlighted:style(padding: 0 !important; border: 0 !important; margin-bottom: 0 !important)
 hideip.me###sidebar-second:style(position: fixed !important; top: -10000px !important)
