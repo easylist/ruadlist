@@ -63,7 +63,7 @@ friends.in.ua,gra-prestoliv.in.ua,kinoguru.me,simpsonsua.com.ua,simpsonsua.tv##+
 gamehunt.net##+js(setTimeout-defuser.js, Adblock)
 gazeta.ru##+js(abort-current-inline-script.js, setTimeout, /24smi\.net|infox\.sg|lentainform\.com/)
 gidonline.eu,kinopad.net,liveinternet.ru,nnm-club.lib,nnm-club.me,nnmclub.to,riends.in.ua,simpsonsua.com.ua##+js(abort-on-property-read.js, atob)
-gismeteo.ua##+js(abort-current-inline-script.js, document.createElement)
+gismeteo.ua##^script:has-text(zmctrack)
 helpsetup.ru##+js(abort-on-property-write.js, adregain_wall)
 hideip.me###highlighted:style(padding: 0 !important; border: 0 !important; margin-bottom: 0 !important)
 hideip.me###sidebar-second:style(position: fixed !important; top: -10000px !important)
@@ -185,6 +185,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover.js, /^blcrm|^bltsr|^discussion$/)
 !#if !env_firefox
 auto.ru,kinopoisk.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, Element.prototype.attachShadow)
+gismeteo.ua##+js(abort-on-property-read.js, localStorage)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body > [class] > [class] + [class]:before:style(width: unset !important)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body[class*="b-page"]:style(background-color: unset !important)
 !#endif
