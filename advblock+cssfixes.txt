@@ -17,8 +17,8 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
 /^https?://vargr\.ru\/+(boars|eagles|modus)\.html$/$inline-script
 /^https?://yandex\.(by|kz|ru|ua)\/pogoda\/(compare\/)/$csp=script-src 'self' * data: blob: 'unsafe-eval'
-/^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=]{2,40}\/(details|month)/$csp=script-src 'self' * data: blob: 'unsafe-eval'
-/^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=]{2,}$/$csp=script-src 'self' * data: blob: 'unsafe-eval'
+/^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=*]{2,40}\/(details|month)/$csp=script-src 'self' * data: blob: 'unsafe-eval'
+/^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=*]{2,}$/$csp=script-src 'self' * data: blob: 'unsafe-eval'
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
 24smi.org##+js(cookie-remover.js, /has_adb/)
@@ -156,20 +156,28 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||mail.ru/api-proxy/rb-mimic/
 ||mashintop.ru^$xmlhttprequest,badfilter,domain=mashintop.ru
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
+||mc.yandex.bu/watch/*&callback*pogoda$script,redirect=silent-noeval.js,domain=yandex.by
 ||mc.yandex.by/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.by
 ||mc.yandex.by/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.by
+||mc.yandex.by/watch/*&page-ref=*pogoda%$xmlhttprequest,redirect=nooptext,domain=yandex.by
 ||mc.yandex.by/watch/*?wmode=*&page-ref=*&page-url=*yandex.by*sport$script,redirect=silent-noeval.js,domain=yandex.by
 ||mc.yandex.by/watch/*?wmode=*&page-ref=*&page-url=*yandex.by*sport$xmlhttprequest,redirect=nooptext,domain=yandex.by
 ||mc.yandex.kz/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.kz
 ||mc.yandex.kz/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.kz
+||mc.yandex.kz/watch/*&callback*pogoda$script,redirect=silent-noeval.js,domain=yandex.kz
+||mc.yandex.kz/watch/*&page-ref=*pogoda%$xmlhttprequest,redirect=nooptext,domain=yandex.kz
 ||mc.yandex.kz/watch/*?wmode=*&page-ref=*&page-url=*yandex.kz*sport$script,redirect=silent-noeval.js,domain=yandex.kz
 ||mc.yandex.kz/watch/*?wmode=*&page-ref=*&page-url=*yandex.kz*sport$xmlhttprequest,redirect=nooptext,domain=yandex.kz
 ||mc.yandex.ru/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 ||mc.yandex.ru/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
+||mc.yandex.ru/watch/*&callback*pogoda$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
+||mc.yandex.ru/watch/*&page-ref=*pogoda%$xmlhttprequest,redirect=nooptext,domain=yandex.ru
 ||mc.yandex.ru/watch/*?wmode=*&page-ref=*&page-url=*yandex.ru*sport$script,redirect=silent-noeval.js,domain=yandex.ru
 ||mc.yandex.ru/watch/*?wmode=*&page-ref=*&page-url=*yandex.ru*sport$xmlhttprequest,redirect=nooptext,domain=yandex.ru
 ||mc.yandex.ua/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.ua
 ||mc.yandex.ua/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.ua
+||mc.yandex.ua/watch/*&callback*pogoda$script,redirect=silent-noeval.js,domain=yandex.ua
+||mc.yandex.ua/watch/*&page-ref=*pogoda%$xmlhttprequest,redirect=nooptext,domain=yandex.ua
 ||mc.yandex.ua/watch/*?wmode=*&page-ref=*&page-url=*yandex.ua*sport$script,redirect=silent-noeval.js,domain=yandex.ua
 ||mc.yandex.ua/watch/*?wmode=*&page-ref=*&page-url=*yandex.ua*sport$xmlhttprequest,redirect=nooptext,domain=yandex.ua
 ||melodiafm.ua/prerole/$media,redirect=noopmp3-0.1s
