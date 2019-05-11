@@ -21,7 +21,7 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 /^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=*]{2,}$/$csp=script-src 'self' * data: blob: 'unsafe-eval'
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
-24smi.org##+js(cookie-remover.js, /has_adb/)
+24smi.org##+js(cookie-remover.js)
 24smi.org,razlozhi.ru##+js(abort-on-property-read.js, yandex_metrika_callbacks)
 3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,gorodrabot.ru,hideip.me,sdamgia.ru##+js(abort-on-property-read.js, Ya)
 777streams.pro,7streams.pro,hdstream365.com,sblive.online,sbsports.pro,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
