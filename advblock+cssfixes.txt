@@ -23,7 +23,6 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
 24smi.org##+js(abort-on-property-read.js, XMLHttpRequest)
 24smi.org##+js(cookie-remover.js, isab)
-24smi.org,razlozhi.ru##+js(abort-on-property-read.js, yandex_metrika_callbacks)
 3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,gorodrabot.ru,hideip.me,sdamgia.ru##+js(abort-on-property-read.js, Ya)
 777streams.pro,7streams.pro,hdstream365.com,sblive.online,sbsports.pro,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc|streamguard.cc|streamtojupiter.me
@@ -111,6 +110,7 @@ otvet.mail.ru##+js(abort-on-property-read.js, $.adv.show)
 overclockers.ru##+js(abort-on-property-read.js, cardinals, chkA)
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##+js(abort-current-inline-script.js, document.createElement, appendTo)
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##+js(abort-on-property-write.js, goout)
+razlozhi.ru##+js(abort-on-property-read.js, yandex_metrika_callbacks)
 rg-mechanics.org,xatab-repack.net##+js(abort-on-property-write.js, blocked)
 rp5.by,rp5.kz,rp5.ru,rp5.ua##+js(abort-on-property-read.js, sContainerBottom)
 rp5.by,rp5.kz,rp5.ru,rp5.ua##+js(cookie-remover.js, is_adblock)
