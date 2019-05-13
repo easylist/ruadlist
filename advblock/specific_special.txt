@@ -204,6 +204,7 @@ realty.mail.ru##div[class][data-module^="TopMail.Special."]
 realty.mail.ru##tr > .daynews__spring
 ! Новости
 news.mail.ru#?#.block [class]:-abp-has(> * > [class]:-abp-contains(/^Реклама/))
+news.mail.ru##.daynews > table tr > td:last-child
 news.mail.ru#?#.js-fixed-panel .box:-abp-has([class*="spring"])
 news.mail.ru##.js-fixed-panel > .box_collapse
 news.mail.ru##.js-fixed-panel > .js-smoky-single
@@ -213,6 +214,7 @@ news.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="http
 news.mail.ru#?#.mailru-visibility-check:-abp-has([href*="utm_campai"])
 news.mail.ru#?#.rb-slot:-abp-has([id*="yandex_"])
 news.mail.ru#?#.rb_banner:-abp-has(*)
+@@||ad.mail.ru/*.gif|$image,domain=news.mail.ru
 @@||news.mail.ru^$generichide
 news.mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-abp-contains(Реклама))
 news.mail.ru#?#body [class*="o"] .r-source:-abp-has(> * *)
@@ -221,7 +223,6 @@ news.mail.ru#?#body [class*="o"] div[id^="yandex_ad"]:-abp-has(> * *)
 news.mail.ru#?#div:-abp-has(> * > .sourceInformer_bks)
 news.mail.ru#?#div:-abp-has(> * > a[href*="t.mail.ru/redir"])
 news.mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
-news.mail.ru##tbody > tr > .daynews__spring
 ! Облако
 cloud.mail.ru##.content__left > div[id] > div[style="font-size: 13px;"] > div[style^="font-size: 90%;"]
 cloud.mail.ru##.js-layout__leftcol > div[onclick]
