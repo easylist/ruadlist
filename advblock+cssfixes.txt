@@ -15,7 +15,7 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 /^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
-/^https?://vargr\.ru\/+(boars|eagles|modus)\.html$/$inline-script
+/^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
 /^https?://yandex\.(by|kz|ru|ua)\/pogoda\/(compare\/)/$csp=script-src 'self' * data: blob: 'unsafe-eval'
 /^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=*]{2,40}\/(details|month)/$csp=script-src 'self' * data: blob: 'unsafe-eval'
 /^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=*]{2,}$/$csp=script-src 'self' * data: blob: 'unsafe-eval'
@@ -51,6 +51,7 @@ championat.com##+js(abort-on-property-read.js, brandingRenderFlag)
 championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online##^script:has-text(forceDetectAAB)
 dclans.ru##+js(abort-on-property-read.js, document.getElementById, mdl_adb)
 dok-film.net##+js(abort-on-property-read.js, adBlockDetected)
+draug.ru##+js(abort-on-property-read.js, hidesnow)
 draug.ru##p:has-text(Для скачивания подождите отчет таймера...)
 draug.ru,vargr.ru##+js(abort-current-inline-script.js, Math.floor, AdSense)
 dynamo.kiev.ua,gagadget.com,gismeteo.ua,hvylya.net,megacritic.ru,newsyou.info,ringside24.com,sinoptik.ua##+js(set-constant.js, Object.getPrototypeOf, undefined)
