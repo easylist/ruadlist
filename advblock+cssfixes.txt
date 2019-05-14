@@ -65,6 +65,7 @@ gamehunt.net##+js(abort-on-property-write.js, adBlockDetected)
 gazeta.ru##+js(abort-current-inline-script.js, setTimeout, /24smi\.net|infox\.sg|lentainform\.com/)
 gidonline.eu,kinopad.net,liveinternet.ru,nnm-club.lib,nnm-club.me,nnmclub.to,riends.in.ua,simpsonsua.com.ua##+js(abort-on-property-read.js, atob)
 gismeteo.ua##^script:has-text("zmctrack")
+gismeteo.ua#@##graph.rframe
 hideip.me###highlighted:style(padding: 0 !important; border: 0 !important; margin-bottom: 0 !important)
 hideip.me###sidebar-second:style(position: fixed !important; top: -10000px !important)
 hideip.me##.region-footer a[href]:style(position: fixed !important; top: -10000px !important)
@@ -142,6 +143,10 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||car.ru/|$xmlhttprequest,badfilter,domain=car.ru
 ||fermilon.ru^$xmlhttprequest,badfilter,domain=fermilon.ru
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
+||gismeteo.ua/ua/weather-$csp=sandbox allow-same-origin;,badfilter
+||gismeteo.ua/ua/|$csp=sandbox allow-same-origin;,badfilter
+||gismeteo.ua/weather-$csp=sandbox allow-same-origin;,badfilter
+||gismeteo.ua/|$csp=sandbox allow-same-origin;,badfilter
 ||globuss24.ru^$xmlhttprequest,badfilter,domain=globuss24.ru
 ||helpsetup.ru/js/ajaxup.js
 ||keenwilling.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
