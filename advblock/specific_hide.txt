@@ -2525,6 +2525,9 @@ odnako.org##.main > .new_header_90.boxNoPadding3:first-child
 nn.by##.main > .sp-block
 carsweek.ru##.main > :empty
 cameleo.xyz##.main > a[href*="bit.ly"] > img
+echo.msk.ru##.main > div > [id][class*=" "] > br
+echo.msk.ru#?#.main > div > [id][class*=" "] > br ~ [id]:-abp-contains(Курс валют)
+echo.msk.ru##.main > div > [id][class*=" "] > br ~ div ~ * a:not([href^="/"]):not([href*="/dobroradio/"])
 echo.msk.ru##.main > div > [id][class*=" "] > div[style*="overflow"]
 echo.msk.ru##.main > div > [id][class*=" "] > div[style*="overflow"] ~ * a:not([href^="/"]):not([href*="/dobroradio/"])
 echo.msk.ru##.main > div > [id][class*=" "] > div[style*="overflow"] ~ br
