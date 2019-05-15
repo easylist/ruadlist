@@ -12,7 +12,6 @@
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other ---
 $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
-$~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskmedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 /^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
@@ -35,8 +34,8 @@ $~third-party,xmlhttprequest,badfilter,domain=amurmedia.ru|eaomedia.ru|irkutskme
 @@||trafmag.com/*.js|$script,badfilter,domain=dynamo.kiev.ua|gagadget.com|hvylya.net|ringside24.com|sinoptik.ua
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##+js(abort-on-property-read.js, Ya.adfoxCode)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##+js(abort-on-property-read.js, Ya.Direct)
-aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,fermilon.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,teleprogramma.pro,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, ccScriptSupport)
-aftershock.news,alau.kz,amurmedia.ru,argumenti.ru,argumentiru.com,car.ru,eaomedia.ru,fermilon.ru,globuss24.ru,irkutskmedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sovsport.ru,sport-express.ru,svpressa.ru,teleprogramma.pro,tsargrad.tv,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##+js(abort-on-property-write.js, window.__AABStatus)
+aftershock.news,alau.kz,argumenti.ru,argumentiru.com,car.ru,fermilon.ru,globuss24.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,sovsport.ru,sport-express.ru,svpressa.ru,teleprogramma.pro,tsargrad.tv##+js(abort-on-property-write.js, ccScriptSupport)
+aftershock.news,alau.kz,argumenti.ru,argumentiru.com,car.ru,fermilon.ru,globuss24.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,sovsport.ru,sport-express.ru,svpressa.ru,teleprogramma.pro,tsargrad.tv##+js(abort-on-property-write.js, window.__AABStatus)
 amazinghis.ru##+js(abort-on-property-read.js, anOptions)
 an.yandex.ru##+js(cookie-remover.js)
 anidub.com##+js(abort-on-property-read.js, ogonek)
