@@ -26,6 +26,7 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 777streams.pro,7streams.pro,hdstream365.com,sblive.online,sbsports.pro,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc|streamguard.cc|streamtojupiter.me
 @@||hvylya.net^$generichide,badfilter
+@@||loadercdn.com^
 @@||mc.yandex.*/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
 @@||mc.yandex.*/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||mc.yandex.ru/metrika/tag.js|$script,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
@@ -148,6 +149,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||helpsetup.ru/js/ajaxup.js
 ||keenwilling.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||littlerepulsive.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
+||loadercdn.net^$badfilter,domain=dynamo.kiev.ua
 ||mail.ru/api-proxy/rb-mimic/
 ||mashintop.ru^$xmlhttprequest,badfilter,domain=mashintop.ru
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
