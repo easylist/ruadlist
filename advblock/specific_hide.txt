@@ -394,7 +394,6 @@ lyubov.perm.ru###footer a[href^="http://rlu.ru/"]
 dungeonmaster.ru,kino-klub.org###footer noindex
 2ip.ru###footer table.nav
 topfacts.com.ua###footer-menu-wrapper
-stratege.ru###footer-promo
 piki-trip.ru###footer-widgets .group.pad
 tvnet.lv###footer_banner
 dni.ru#?##for_fix > *:-abp-has(.titlebar > span:-abp-contains(партнеры))
@@ -1092,7 +1091,6 @@ oper.ru###wrapper > #bglink
 motorpuls.ru###wrapper > #header
 metodsilva.ru###wrapper > .fma-bg
 vidal.ru###wrapper > div[class^="banner"]
-stratege.ru###wrapper > div[id^="footer-"]:empty
 rasfokus.ru,waralbum.ru###wrapper > noindex
 newsko.ru###xtest-videoad
 snatchnews.com###yandexBanner
@@ -4724,7 +4722,6 @@ zippyshare.com##body > :not(.container)
 virtualbrest.by##body > :not([class="main-block"]):not([id="fb-root"]):not([title="Twitter settings iframe"])
 echo.msk.ru##body > [class] > script ~ :not(.header):not(.main):not(.footer)
 echo.msk.ru##body > [class] > script ~ [id]
-stratege.ru##body > [class]:not(div) > img[src] + div[id]:not([class]):not([style])
 riotpixels.com##body > [class^="side-url-"]
 edufuture.biz,popgun.ru,stratege.ru,xvatit.com##body > [onclick]
 anime.anidub.com,lostfilm.tv,online.anidub.com,xakep.ru##body > a
@@ -4749,6 +4746,7 @@ nadavi.com.ua,nadavi.ru##body > div > table[width="92%"]:not([class="top-region"
 imgbum.net##body > div > table[width="962"]
 anistar.org#?#body > div:-abp-has(> a[href*="vk.cc"])
 fast-film.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmopotok.ru,filmpotok.ru,pickfilm.ru,veleto.ru##body > div:empty
+stratege.ru#?#body > div:not([id]):not([class]) > [class]:not(div) > img[src] ~ div[id]:not([class]):not([style]):-abp-has(> span)
 4725.ru##body > div:not([id]):not([class])[style^="position: relative;z-index:"]
 remake.net.ru,subject.com.ua,ukrlit.net,zarlit.com##body > div[align="center"]
 filebase.ws##body > div[align="center"][style*="height:"]
@@ -4764,7 +4762,6 @@ finam.ru##body > div[class^="hidden-"]
 openssource.biz##body > div[class^="spu-"]
 gazgolder.com##body > div[g-popup-type="popup_ad"]
 bigtorrent.org##body > div[id*="layer"]
-stratege.ru##body > div[id]:not([class]):not([style]):empty
 radikal.ru##body > div[id][style*="cursor"][style*="background"]
 my-hit.org##body > div[id][style*="height"][style*="overflow"]
 myshared.ru##body > div[id][style*="position: absolute"]
@@ -4792,6 +4789,7 @@ biqle.ru##body > div[style^="z-index"][style*="background-image"]
 programmersforum.ru##body > form + br + center
 x-raydoctor.ru##body > iframe
 forums.rusmedserv.com##body > iframe[src*="rusmedserv.com"]
+stratege.ru#?#body > img[src] ~ div[class]:not([id]) > div:not([id]):not([class]) > div[id]:not([class]):not([style]):-abp-has(> span)
 allbesta.cc,allbesta.org,allsport-live.net,altapress.ru,amuzic.ru,apachan.net,astromeridian.ru,centr-molodosti.ru,classic.newsru.com,demotivation.me,e-libra.ru,elek.club,fast-torrent.co,gamemag.ru,gameru.net,gdzplus.ru,gossebanmen.ru,hi-fi.ru,igrigo.net,ikinohd.club,lostfan.net,miytvideo.ru,nowfilms.ru,relasko.ru,repackov.net,rg-mechanics.org,rogoff.club,rufilmtv.org,sexytal.com,sitandwatch.org,story-house.ru,telegraf.in.ua,tfilm.co,torrents-nn.cn,torrentum.org,tourister.ru,underverse.me,underverse.su,vorle.ru,womo.ua,zona-film.com##body > noindex
 4pna.com##body > noindex > center
 moto.kiev.ua##body > noindex > noindex
@@ -4876,7 +4874,7 @@ bhf.su##div[class$="-bannerContent"]
 grouple.co,readmanga.me##div[class$="-brand"]
 delfi.lt##div[class$="-infoblock"]
 vesdoloi.ru##div[class$="_ads"]
-stratege.ru#?#div[class$="_box"]:-abp-has(> div[class*="title"]:-abp-contains(Реклама))
+stratege.ru#?#div[class$="_box"]:-abp-has(> div[class*="title"]:-abp-contains(/Рекл/))
 thr.ru##div[class$="_branding"]
 kramola.info##div[class$="_size_240x400"]
 apple-russia.ru##div[class$="adv"]
@@ -5258,6 +5256,7 @@ bashskazki.ru##div[id^="eadvt_wrapper"]
 next-energy.forum2x2.ru##div[id^="fa_ticker"]
 finam.ru##div[id^="finamBanner_"]
 bashinform.ru##div[id^="fixed_bottom"]
+stratege.ru##div[id^="footer"]:empty
 esoreiter.ru##div[id^="getContent_esoreiter"]
 propochemu.ru##div[id^="gruptiz_"]
 lostfilm.info##div[id^="heraplper"] > a[href]
