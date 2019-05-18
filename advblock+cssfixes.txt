@@ -97,6 +97,7 @@ money-pic.ru##+js(abort-current-inline-script.js, q330)
 muzlan.top##+js(nano-setInterval-booster.js, .numcard)
 news.mail.ru,sportmail.ru##+js(abort-on-property-write.js, myWidget)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##.i-bem:matches-css(margin: 5px)
+newsyou.info#@#body > *:-abp-has([id][class] > [id][class] > [id][class] > [id][class] > [id][class] > [id][class] > [id][class] > [id][class] > [id][class] > [id][class] > [id][class] > [id][class] > [id][class] > [id][class])
 nnm-club.lib,nnm-club.me,nnmclub.to,www.vesti.ru##+js(abort-current-inline-script.js, document.createElement, String.fromCharCode)
 ok.ru##+js(abort-on-property-write.js, mailruEnabled)
 ok.ru##div.dialogWrapperBanner:style(display: block !important)
@@ -178,6 +179,8 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||melodiafm.ua/prerole/$media,redirect=noopmp3-0.1s
 ||moatads.com^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
 ||moikolodets.ru^$xmlhttprequest,badfilter,domain=moikolodets.ru
+||newsyou.info^$badfilter,csp=connect-src
+||newsyou.info^$csp=script-src data:,badfilter
 ||palacesquare.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||paracesquare.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||recostream.go.mail.ru^
