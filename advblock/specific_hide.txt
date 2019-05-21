@@ -188,7 +188,8 @@ v102.ru###bns-c > .photos
 turbobit.net###body-link
 kinohome.club,kinohome.net###bodyLefts > noindex
 kinohome.club,kinohome.net###bodyRight > noindex
-stratege.ru###body_box_label div > [class*="_"]:not(div) > img[src*="adriver"] ~ div:not([id="wrapper"])
+stratege.ru#?##body_box_label div:not([id]):not([class]) > [class*="_"]:not(div) > div[id*="_"]:-abp-has(> [style="display: none;"])
+stratege.ru#?##body_box_label div:not([id]):not([class]) > [class*="_"]:not(div) > div[id*="_"]:-abp-properties(cursor: pointer;)
 tapochek.net###body_container > center[style]
 lineageternal.ru###bordTop
 dom43.ru###bottom_ad_panel
@@ -4754,7 +4755,8 @@ fast-film.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmopotok.ru,fil
 remake.net.ru,subject.com.ua,ukrlit.net,zarlit.com##body > div[align="center"]
 filebase.ws##body > div[align="center"][style*="height:"]
 gamesisart.ru##body > div[align="left"][style^="position: fixed;"]
-stratege.ru##body > div[class*="_"] > img[src] ~ div:not([id]):not([class])
+stratege.ru#?#body > div[class*="_"] div:not([id]):not([class]) > div[id*="_"]:-abp-has(> [style="display: none;"])
+stratege.ru#?#body > div[class*="_"] div:not([id]):not([class]) > div[id*="_"]:-abp-properties(cursor: pointer;)
 999.md,delo.ua##body > div[class*="branding"]
 progipertoniyu.ru##body > div[class*="modal"]
 votrube.ru##body > div[class]:last-of-type
