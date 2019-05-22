@@ -215,11 +215,28 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover.js, /^blcrm|^bltsr|^discussion$/)
 !#if !env_firefox
 auto.ru,kinopoisk.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, Element.prototype.attachShadow)
-gismeteo.ua##+js(set-constant.js, eval, undefined)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body > [class] > [class] + [class]:before:style(width: unset !important)
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body[class*="b-page"]:style(background-color: unset !important)
 !#endif
 !
+! gismeteo.ua
+gismeteo.ua#@##ad_ph_1
+gismeteo.ua###ad_ph_1:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
+gismeteo.ua#@##w-hor
+gismeteo.ua###w-hor:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
+gismeteo.ua#@##weather-rbkua
+gismeteo.ua###weather-rbkua:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
+gismeteo.ua#@##weather-right
+gismeteo.ua###weather-right:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
+gismeteo.ua#@##weather-top > *
+gismeteo.ua###weather-top > *:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
+gismeteo.ua#@#.side__i
+gismeteo.ua##.side__i:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
+@@||gismeteo.ua^$generichide
+gismeteo.ua#@#[id^="weather-gis-news"]
+gismeteo.ua##[id^="weather-gis-news"]:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
+gismeteo.ua#@#div[id^="traffim-widget"]
+gismeteo.ua##div[id^="traffim-widget"]:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
 ! vsthouse.ru
 @@$image,badfilter,domain=vsthouse.ru
 @@||crunchyroll.*/vast?$script,badfilter,domain=vsthouse.ru
