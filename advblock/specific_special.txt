@@ -60,13 +60,13 @@ gismeteo.ru##.yandex_dzen_tiser_news
 @@||a.votpusk.ru^$image,domain=tourism.gismeteo.ru
 gismeteo.kz,gismeteo.lt,gismeteo.md,gismeteo.ru,gismeteo.ua##[id^="weather-gis-news"]
 !
-! Новый дизайн gismeteo.ru, gismeteo.kz, gismeteo.by, beta.gismeteo.ru
-beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.ru,gismeteo.ua##.frame_border
-beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.ua,www.gismeteo.ru##.media_with_map > :not(.map_right)
-beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.ua,www.gismeteo.ru##.right_col_1
-beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.ua,www.gismeteo.ru##.right_col_2
-beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.ua,www.gismeteo.ru##[class^="media_"]:not(.media_with_map)
-beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.ua,www.gismeteo.ru#?#body.page_base *:-abp-has(> * > * > * > * > a[href*="/ref/?url="])
+! Новый дизайн gismeteo.ru, gismeteo.kz, gismeteo.by, beta.gismeteo.ru, gismeteo.ua, gismeteo.md
+beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru,gismeteo.ua##.frame_border
+beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ua,www.gismeteo.ru##.media_with_map > :not(.map_right)
+beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ua,www.gismeteo.ru##.right_col_1
+beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ua,www.gismeteo.ru##.right_col_2
+beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ua,www.gismeteo.ru##[class^="media_"]:not(.media_with_map)
+beta.gismeteo.ru,gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ua,www.gismeteo.ru#?#body.page_base *:-abp-has(> * > * > * > * > a[href*="/ref/?url="])
 ! - Ловушка для обфусцированных запросов >
 /^https?://(www|beta)\.gismeteo\.(by|kz|ru)/[^.]{300,}/$script,subdocument,domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.ru
 !
