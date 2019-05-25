@@ -188,6 +188,7 @@ v102.ru###bns-c > .photos
 turbobit.net###body-link
 kinohome.club,kinohome.net###bodyLefts > noindex
 kinohome.club,kinohome.net###bodyRight > noindex
+stratege.ru###body_box_label div:not([id]):not([class]) > div:not([id]):not([class]) > style + div:not([id]):not([class])
 tapochek.net###body_container > center[style]
 lineageternal.ru###bordTop
 dom43.ru###bottom_ad_panel
@@ -4978,6 +4979,7 @@ filmon.in.ua##div[class="recepton"]
 foto.ua##div[class="side-banner"]
 seasonvar.ru##div[class="sidebar lside"] > :not(div)
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
+stratege.ru#?#div[class]:-abp-has(> [class*="title"]:-abp-contains(Pеклама))
 spac.me,spac1.me,spcs.me#?#div[class]:-abp-has(> a ~ a[href*="://spcs.me/?"] > div[class])
 novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
 mk.ru#?#div[class]:not(.content):-abp-has(> div > iframe:not([src]))
@@ -5010,7 +5012,6 @@ boxrec.com,lovitut.ru##div[class^="advert"]
 myplaycity.ru##div[class^="advertisement"]
 ekaraganda.kz##div[class^="aks-"]
 gamer.ru##div[class^="alarmalarm-banner"]
-stratege.ru##div[class^="alelt"][class*="_info_box"]
 mesjachnye.com##div[class^="article-mvideo"] > div[style^="background:"]
 vc.ru##div[class^="b-adv-"]
 gdekluet.ru##div[class^="b-app-promoter"]
@@ -5167,7 +5168,6 @@ epidemz.co,lalamus.cc,superhumor.ru,voffka.com##div[id*="teaser"]
 flowtation.ru##div[id*="tizer"]
 1tv.ru,4pda.ru,artem-kashkanov.ru,astrakhan-24.ru,baraholka.onliner.by,bigpicture.ru,energyfm.ru,fishki.net,galya.ru,gotovim-doma.ru,multitran.ru,qip.ru,telegraf.com.ua,vputilkovo.ru##div[id*="yandex_ad"]
 rp5.by,rp5.kz,rp5.ru,rp5.ua#?#div[id]:-abp-has(> [id^="crt-"])
-stratege.ru#?#div[id]:-abp-has(> a[href*="utm_campai"])
 stratege.ru#?#div[id]:-abp-properties(cursor: pointer;)
 1news.com.ua,cikavosti.com,depo.ua,dnews.dn.ua,liga.net,narodna-pravda.ua,pingvin.pro,pl.com.ua,real-vin.com,russianshowbiz.info,segodnya.ua,semobile.com.ua#?#div[id]:not([class]):not([style]):-abp-contains(/^загрузка.../i)
 kidpuz.ru,prohondroz.ru##div[id][block-id]
