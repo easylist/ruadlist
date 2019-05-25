@@ -33,6 +33,7 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 @@||mc.yandex.*/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
 @@||mc.yandex.*/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||mc.yandex.ru/metrika/tag.js|$script,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
+@@||newsyou.info^$badfilter,csp=script-src
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||trafmag.com/*.js|$script,badfilter,domain=gagadget.com|hvylya.net|ringside24.com
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##+js(abort-on-property-read.js, Ya.adfoxCode)
@@ -189,6 +190,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||moikolodets.ru^$xmlhttprequest,badfilter,domain=moikolodets.ru
 ||newsyou.info^$badfilter,csp=connect-src
 ||newsyou.info^$badfilter,csp=script-src
+||newsyou.info^$csp=script-src 'self',badfilter
 ||palacesquare.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||paracesquare.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||recostream.go.mail.ru^
