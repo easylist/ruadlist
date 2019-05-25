@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190422.1950
+@version 0.20190525.1519
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -27,6 +27,7 @@
   domain("besthdrezka.com"),
   domain("bigcinema-tv.club"),
   domain("bombardir.ru"),
+  domain("clubhdrezka.com"),
   domain("comedy-portal.net"),
   domain("dnepr.info"),
   domain("dugtor.org"),
@@ -46,7 +47,6 @@
   domain("hdkinozor.ru"),
   domain("hdrezka-ag.com"),
   domain("hdrezka-online.me"),
-  domain("hdrezka.ag"),
   domain("hdrezka.asia"),
   domain("hdrezka.buzz"),
   domain("hdrezka.city"),
@@ -68,6 +68,7 @@
   domain("hdrezka.today"),
   domain("hdrezka.top"),
   domain("hdrezka.tv"),
+  domain("hdrezka.vip"),
   domain("hdrezka.win"),
   domain("hdrezka.wtf"),
   domain("hdrezka.zone"),
@@ -78,6 +79,7 @@
   domain("investxp.ru"),
   domain("itop-gear.ru"),
   domain("ixbt.com"),
+  domain("jetsetter.ua"),
   domain("kinoaa.ru"),
   domain("kinobar.cc"),
   domain("kinobe.club"),
@@ -97,10 +99,13 @@
   domain("new-rutor.org"),
   domain("newstudio.tv"),
   domain("nnm-club.me"),
+  domain("nnmclub.ro"),
   domain("nnmclub.to"),
+  domain("nuhdrezka.com"),
   domain("ostfilm.tv"),
   domain("pickfilm.ru"),
   domain("pure-t.ru"),
+  domain("rezka.ag"),
   domain("roem.ru"),
   domain("rusporno.vip"),
   domain("russian-porn.online"),
@@ -122,7 +127,7 @@
   domain("videoclub.men"),
   domain("virusinfo.info"),
   domain("wehdrezka.com"),
-  domain("wikianime.ru"),
+  domain("wikianime.tv"),
   domain("zona-film.com") {
     body:not(#id), html:not(#id) {
         padding-top: 0 !important
@@ -145,6 +150,7 @@
   domain("ahdrezka.com"),
   domain("aif.ru"),
   domain("besthdrezka.com"),
+  domain("clubhdrezka.com"),
   domain("epravda.com.ua"),
   domain("fast-torrent.club"),
   domain("fastpic.ru"),
@@ -173,6 +179,7 @@
   domain("hdrezka.run"),
   domain("hdrezka.today"),
   domain("hdrezka.top"),
+  domain("hdrezka.vip"),
   domain("hdrezka.win"),
   domain("hdrezka.wtf"),
   domain("hdrezka.zone"),
@@ -183,6 +190,7 @@
   domain("kinokrad.su"),
   domain("kinotochka.club"),
   domain("kinotochka.me"),
+  domain("ko.com.ua"),
   domain("kurkul.com"),
   domain("kv.by"),
   domain("livehdrezka.com"),
@@ -194,11 +202,15 @@
   domain("myshows.me"),
   domain("newstudio.tv"),
   domain("nnm-club.me"),
+  domain("nnmclub.ro"),
   domain("nnmclub.to"),
   domain("nootropos.ru"),
+  domain("nuhdrezka.com"),
   domain("oblozhki.net"),
   domain("oper.ru"),
+  domain("playtor.tv"),
   domain("pure-t.ru"),
+  domain("rezka.ag"),
   domain("rufootballtv.org"),
   domain("rusporno.vip"),
   domain("russian-porn.online"),
@@ -210,6 +222,7 @@
   domain("torrentom.com"),
   domain("torrentum.me"),
   domain("tvhdrezka.com"),
+  domain("uateam.tv"),
   domain("uphdrezka.com"),
   domain("userstyles.org"),
   domain("wehdrezka.com"),
@@ -334,6 +347,16 @@
     }
 }
 
+@-moz-document
+  domain("afisha.yandex.by"),
+  domain("afisha.yandex.kz"),
+  domain("afisha.yandex.ru"),
+  domain("afisha.yandex.ua") {
+    .content-event_commercial_yes {
+        margin-top: auto !important
+    }
+}
+
 @-moz-document domain("ag.ru") {
     #header-links {
         display: none !important
@@ -370,10 +393,12 @@
   domain("kino720.online"),
   domain("kinohome.net"),
   domain("kinohome.org"),
+  domain("mma-today.net"),
   domain("oblozhki.net"),
   domain("sportarena.com"),
   domain("the-cinema.ru"),
   domain("torrentum.org"),
+  domain("uateam.tv"),
   domain("virusinfo.info") {
     body:not(#id), html:not(#id) {
         margin-top: 0 !important
@@ -390,11 +415,20 @@
     }
 }
 
+@-moz-document domain("alexfilm.cc") {
+    body > #heading.clickable {
+        max-height: 50px !important
+    }
+}
+
 @-moz-document domain("all-episodes.tv") {
     body {
         background-image: none !important
     }
-    #advtss {
+    .content > div[id="bip"] {
+        display: block !important
+    }
+    #advtss, #text3, div[id^="bn_"] {
         position: fixed !important;
         top: -10000px !important;
         left: -10000px !important
@@ -501,6 +535,21 @@
     }
 }
 
+@-moz-document domain("animerost.org") {
+    div[class^="headbg"] {
+        background-image: none !important;
+        height: auto !important
+    }
+    div[class^="headbg"] > .menu .sar {
+        bottom: auto !important;
+        top: 50px !important;
+        z-index: 100 !important
+    }
+    div[class^="headbg"] > .menu {
+        top: 0 !important
+    }
+}
+
 @-moz-document domain("animevost.in") {
     #Navigation {
         background-image: none !important;
@@ -512,21 +561,6 @@
         z-index: 100 !important
     }
     #Navigation > nav {
-        top: 0 !important
-    }
-}
-
-@-moz-document domain("animevost.org") {
-    div[class^="headbg"] {
-        background-image: none !important;
-        height: auto !important
-    }
-    div[class^="headbg"] > .menu .sar {
-        bottom: auto !important;
-        top: 50px !important;
-        z-index: 100 !important
-    }
-    div[class^="headbg"] > .menu {
         top: 0 !important
     }
 }
@@ -543,7 +577,7 @@
     }
 }
 
-@-moz-document domain("anistar.me") {
+@-moz-document domain("anistar.org") {
     html > body:not(#id) {
         background-image: none !important
     }
@@ -627,6 +661,12 @@
         max-height: 121px !important;
         opacity: 0 !important;
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("baibako.tv") {
+    .topserial {
+        height: auto !important
     }
 }
 
@@ -823,6 +863,12 @@
     }
 }
 
+@-moz-document domain("doramax.tv") {
+    .wrapper.full {
+        margin-top: 70px !important
+    }
+}
+
 @-moz-document domain("doramy.su") {
     .wrapper > .main-menu {
         margin-top: 0 !important
@@ -888,11 +934,14 @@
 @-moz-document
   domain("dynamo.kiev.ua"),
   domain("ringside24.com") {
-    .fader-social {
-        display: none !important
-    }
     .social-open {
         overflow: auto !important
+    }
+    .fader-social {
+        position: fixed !important;
+        top: -10000px !important;
+        opacity: 0 !important;
+        z-index: -9999 !important
     }
 }
 
@@ -913,6 +962,12 @@
     }
     .application-mail__wrap > .layout > .layout__main-frame {
         margin-right: 0 !important
+    }
+}
+
+@-moz-document domain("echo.msk.ru") {
+    .first[id][style*="height"] {
+        height: auto !important
     }
 }
 
@@ -1137,6 +1192,15 @@
 
 @-moz-document
   domain("freefotohelp.ru"),
+  domain("hosgeldi.com"),
+  domain("list-org.com") {
+    .adsbygoogle {
+        position: fixed !important;
+        top: -10000px !important
+    }
+}
+
+@-moz-document
   domain("freeopenvpn.org"),
   domain("leninsw.info") {
     .adsbygoogle {
@@ -1176,6 +1240,12 @@
     }
     div[class^="container-content"] > div[class^="obolox"] {
         margin-top: 52px !important
+    }
+}
+
+@-moz-document domain("game2day.ru") {
+    body > .container {
+        margin-top: 120px !important
     }
 }
 
@@ -1247,14 +1317,6 @@
 @-moz-document domain("gidonline.in") {
     #headerline {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("gismeteo.ua") {
-    #weather-rbkua, #weather-right, #weather-top > *, .rframe#w-hor, 
-    [id^="weather-gis-news"] {
-        position: fixed !important;
-        top: -10000px !important
     }
 }
 
@@ -1379,15 +1441,6 @@
     }
     #portal-menu, .header-banner {
         margin: 0 !important
-    }
-}
-
-@-moz-document
-  domain("hosgeldi.com"),
-  domain("list-org.com") {
-    .adsbygoogle {
-        position: fixed !important;
-        top: -10000px !important
     }
 }
 
@@ -1683,6 +1736,12 @@
     }
 }
 
+@-moz-document domain("ko.com.ua") {
+    .gbg {
+        top: auto !important
+    }
+}
+
 @-moz-document
   domain("kredos.com.ua"),
   domain("smartphone.ua") {
@@ -1715,6 +1774,12 @@
     body:not(#id) {
         overflow: auto !important;
         margin-right: auto !important
+    }
+}
+
+@-moz-document domain("lifetambov.ru") {
+    .theme-wrapper > .container > div {
+        padding-bottom: unset !important
     }
 }
 
@@ -1810,6 +1875,12 @@
     }
     .i-layout__branding-content-wrapper {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("minigames.mail.ru") {
+    #portal-headline {
+        margin-top: auto !important
     }
 }
 
@@ -1921,14 +1992,14 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    [onclick="goTo(this)"] {
+    #all > div[id*="der"] [onclick] {
         display: none !important
     }
-    #all > div[id*="eader"] {
+    #all > div[id*="der"] {
         height: 1px !important;
         background: none !important
     }
-    #all > div[id*="eader"] > .right {
+    #all > div[id*="der"] > .right {
         margin-top: 0 !important
     }
 }
@@ -1953,6 +2024,18 @@
 @-moz-document domain("newkaliningrad.ru") {
     #page-wrapper {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("news-sport.info") {
+    body > #page {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("news.mail.ru") {
+    .layout_footer > .block {
+        display: none !important
     }
 }
 
@@ -1993,10 +2076,8 @@
 
 @-moz-document
   domain("nnm-club.me"),
+  domain("nnmclub.ro"),
   domain("nnmclub.to") {
-    body > :first-child:not(div) {
-        display: none !important
-    }
     body > .wrap {
         top: 0 !important
     }
@@ -2010,6 +2091,12 @@
 
 @-moz-document domain("obozrevatel.com") {
     body > .header {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("omskbird.tv") {
+    .have-brand .wrap {
         margin-top: 0 !important
     }
 }
@@ -2062,12 +2149,12 @@
     }
 }
 
-@-moz-document
-  domain("pb.wtf"),
-  domain("piratbit.org"),
-  domain("piratbit.ru") {
-    div[id] > div[class][style^="width: 24"] {
-        display: none !important
+@-moz-document domain("overclockers.ru") {
+    .an-link-list, .main-wrap > .grid.ui > .sixteen.wide.column.container-block, 
+    .material-inline-an {
+        position: fixed !important;
+        top: -10000px !important;
+        left: -10000px !important
     }
 }
 
@@ -2118,6 +2205,12 @@
 @-moz-document domain("playground.ru") {
     #foundationWrapper {
         background: #373737 !important
+    }
+}
+
+@-moz-document domain("playtor.tv") {
+    .page-wrapper {
+        margin-top: 0 !important
     }
 }
 
@@ -2404,7 +2497,7 @@
 }
 
 @-moz-document domain("sinoptik.ua") {
-    .informerTop, .rightAdvBox {
+    #rightCol, .informerTop, .rightAdvBox {
         position: fixed !important;
         top: -10000px !important
     }
@@ -2444,7 +2537,9 @@
 }
 
 @-moz-document domain("softportal.com") {
-    a[href^="prog"][target="_blank"], a[href^="prog"][target="_blank"] ~ *, 
+    .TblBorderCLR > tbody > tr > td[style="padding:15px 0;"][align="center"], 
+    .TblTopBanCLR td > a[href] > img, a[href^="prog"][target="_blank"], 
+    a[href^="prog"][target="_blank"] ~ *, 
     td[style="width:341px; padding-right:15px;"][valign="top"] {
         display: none !important
     }
@@ -2498,7 +2593,8 @@
 }
 
 @-moz-document domain("stratege.ru") {
-    html:not(#id) {
+    #body_box_label div:not([id]):not([class]) > div[class], 
+    body > style + div[id]:not([class]) {
         background-image: none !important;
         background: #dbdbdb !important
     }
@@ -2671,6 +2767,14 @@
     }
 }
 
+@-moz-document domain("ua.news") {
+    body {
+        background-image: none !important;
+        background-color: #ffffff !important;
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("uniondht.org") {
     .colorAdmin {
         color: black !important;
@@ -2762,13 +2866,16 @@
 }
 
 @-moz-document domain("www.drive2.ru") {
+    .c-car-info ~ [data-role] ~ div:last-child > div:first-child + div:last-child, 
+    .c-car-info ~ div[class*="content"] + div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child), 
     .dv-post-header, 
-    .g-column-mid > .js-entity ~ .js-entity ~ div:last-child:not([class*="js-entity"]):not([class*="grid"]):not([class*="c-pager"]), 
-    .js-dvreveal + div, 
-    .js-page .c-car-info ~ [class*="content"] ~ div:not([class*="content"]):not([data-role]):not([class*="columns"]), 
-    .js-page .g-full-size-post ~ div:not([class*="content"]):not([data-role]):not([class*="columns"]), 
-    .js-page .offer ~ div:not([class*="content"]):not([data-role]):not([class*="columns"]), 
-    .js-page > div[class*="-header"] + div[class*=" "] > div[class]:not([class*="block"]):not(.text):not([class*="slide"]):not([class*="car"]) ~ div:not([class*="slide"]):not([class*="car"]):not([class*="market"]):not([class*="content"]):not([class*="collapse"]):not([data-role]):not([class*="columns"]) > div:not([class*="grid"]):not([class*="group"]), 
+    .g-full-size-post ~ [data-role] ~ div:last-child > div:first-child + div:last-child, 
+    .g-full-size-post ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child), 
+    .js-page > div:not([class*="-header"]) > .g-column-mid:first-child + div[class]:last-child > div:not([class*="text"]):not([class*="promo"]):last-child > div:not([class*="text"]), 
+    .js-page > div[class*="-header"] + div[class]:last-child > .o-grid-row:first-child + div[class] ~ div:not([class*="js-market-indexmode"]):not([class*="collapse"]), 
+    .js-page > div[class*="-header"] + div[class]:last-child > div[class*="content"]:first-child + div:not([class*="collapse"]), 
+    .js-page > div[class*="-header"] + div[class]:last-child > div[class]:not([class*="content"]):not([class*="grid"]):not([class*="slide"]):not([class*="column"]):first-child ~ div:not([class*="collapse"]), 
+    .offer ~ div:not([class*="content"]):not([data-role]):not([class*="columns"]), 
     div[id]:not([class]) > div[class]:not([id])[style="width: 970px;"] {
         display: none !important
     }
@@ -2903,7 +3010,19 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.ua") {
-    .home-arrow__bottom, div[aria-label="Реклама"] {
+    .adv_pos_compare-side, 
+    .climate-calendar-container > .climate-calendar-container__content ~ :last-child, 
+    .climate-calendar-container__adv-thin, 
+    .climate-header-fixed ~ .content .content__main + :last-child, 
+    .climate-header-fixed ~ .content > .content__section + :last-child, 
+    .content__section_climate-graph_yes ~ :last-child, 
+    .forecast-briefly + .content__bottom > .content__col > .content__row + :last-child, 
+    .forecast-briefly + .content__bottom > .content__col > .content__row > .content__elem + :last-child, 
+    .forecast-details > [class^="forecast-details__day"] ~ :not([class^="forecast-details__day"]), 
+    .forecast-details > [class^="forecast-details__day"] ~ [class*="adv_id"], 
+    .home-arrow__bottom, 
+    .weather-maps > .weather-maps__layer-buttons ~ :not([class^="weather-maps"]):not(.maps-tutorial), 
+    div[aria-label="Реклама"] {
         display: none !important
     }
     .serp-header {
@@ -2979,6 +3098,7 @@
   domain("zen.yandex.ru"),
   domain("zen.yandex.ua") {
     .article__body > div[class*=" "] > div[class][id], 
+    .feed__row .blackout-filter:empty, 
     .feed__row > .feed__item > div[class*=" "]:not([style]) {
         display: none !important
     }
