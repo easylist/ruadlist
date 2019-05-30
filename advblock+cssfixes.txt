@@ -20,7 +20,7 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 /^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=*]{2,}$/$csp=script-src 'self' * data: blob: 'unsafe-eval'
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
-/pagead2.$important,domain=dynamo.kiev.ua|okino.ua
+/pagead2.$important,domain=dynamo.kiev.ua|gagadget.com|okino.ua
 24smi.org##+js(abort-on-property-read.js, XMLHttpRequest)
 24smi.org##+js(cookie-remover.js, isab)
 3dn.ru,at.ua,clan.su,cliphq.ru,krasnickij.ru,narod.ru,novospasskoe-city.ru,paint-cars.com,pkrc.ru,ucoz.net,ucoz.org,ucoz.ru,xakevsoft.ru##+js(abort-on-property-read.js, adbetnet)
@@ -33,6 +33,8 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 @@||disqusads.com/ads-iframe/$subdocument,badfilter,domain=ringside24.com
 @@||dynamo.kiev.ua^$generichide,badfilter
 @@||facebook.com*/plugins/like.php?$badfilter,domain=dynamo.kiev.ua|ringside24.com
+@@||gagadget.com^$generichide,badfilter
+@@||gaua.hit.gemius.pl/xgemius.js$badfilter,domain=dynamo.kiev.ua
 @@||hit.ua/hit?$image,badfilter,domain=okino.ua
 @@||hvylya.net^$generichide,badfilter
 @@||loadercdn.com^
@@ -44,9 +46,10 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 @@||okino.ua^$generichide,badfilter
 @@||ringside24.com^$generichide,badfilter
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
-@@||stats.g.doubleclick.net/dc.js|$script,badfilter,domain=dynamo.kiev.ua|okino.ua|ringside24.com
+@@||stats.g.doubleclick.net/dc.js|$script,badfilter,domain=dynamo.kiev.ua|gagadget.com|okino.ua|ringside24.com
 @@||trafmag.com/*.js|$script,badfilter,domain=gagadget.com|hvylya.net|megacritic.ru|ringside24.com
 @@||ulogin.ru^*stats.$badfilter,domain=megacritic.ru
+@@||x.magnet.kiev.ua/www/delivery/$script,badfilter,domain=dynamo.kiev.ua|gagadget.com|ringside24.com
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##+js(abort-on-property-read.js, Ya.adfoxCode)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(abort-on-property-read.js, Ya.Direct)
 aftershock.news,alau.kz,argumenti.ru,argumentiru.com,car.ru,fermilon.ru,globuss24.ru,imperiyanews.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,sovsport.ru,sport-express.ru,svpressa.ru,teleprogramma.pro##+js(abort-on-property-write.js, ccScriptSupport)
