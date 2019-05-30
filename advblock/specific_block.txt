@@ -4,7 +4,6 @@
 /^https?://[^\s]+\.politexpert\.net/[^\s]{150,}/$csp=script-src
 /^https?://allboxing.ru\/(?!forum)/$csp=script-src 'self' * data:
 /gateway/aHR0c$csp=script-src
-@@||newsyou.info^$csp=script-src
 @@||simpsonsua.com.ua/user/*/#|$csp=script-src 'self' * data:
 @@||simpsonsua.com.ua/user/*/|$csp=script-src 'self' * data:
 @@||ukrlib.com.ua/search.php^$csp=script-src 'self' * blob: data:
@@ -49,9 +48,6 @@
 ||megahead.ru^$csp=script-src 'self' * data:
 ||nahnews.org^$csp=script-src 'self' * data:
 ||newdeaf-online.net^$csp=script-src 'self' 'unsafe-eval' data:
-||newsyou.info^$csp=connect-src
-||newsyou.info^$csp=script-src
-||newsyou.info^$csp=script-src 'self'
 ||onlainfilm.co^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||patrioty.org.ua^$csp=script-src 'self' * blob: data:
 ||pogoda21.ru^$csp=script-src 'self' * blob: data:

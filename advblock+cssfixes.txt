@@ -42,7 +42,6 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 @@||mc.yandex.*/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||mc.yandex.ru/metrika/tag.js|$script,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||megacritic.ru^$generichide,badfilter
-@@||newsyou.info^$badfilter,csp=script-src
 @@||okino.ua^$generichide,badfilter
 @@||ringside24.com^$generichide,badfilter
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
@@ -204,9 +203,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.wi
 ||melodiafm.ua/prerole/$media,redirect=noopmp3-0.1s
 ||moatads.com^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
 ||moikolodets.ru^$xmlhttprequest,badfilter,domain=moikolodets.ru
-||newsyou.info^$badfilter,csp=connect-src
-||newsyou.info^$badfilter,csp=script-src
-||newsyou.info^$csp=script-src 'self',badfilter
 ||palacesquare.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||paracesquare.rambler.ru^$badfilter,domain=~championat.com|~gazeta.ru|~lenta.ru|~rambler.ru
 ||recostream.go.mail.ru^
