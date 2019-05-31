@@ -78,8 +78,6 @@ gamehunt.net##+js(abort-on-property-write.js, adBlockDetected)
 gazeta.ru##+js(abort-current-inline-script.js, setTimeout, /24smi\.net|infox\.sg|lentainform\.com/)
 gidonline.eu,kinogo.eu,queen-time.ru##+js(abort-on-property-read.js, utarget_script)
 gismeteo.ua##^script:has-text("zmctrack")
-gismeteo.ua#@##graph.rframe
-gismeteo.ua,hvylya.net##+js(set-constant.js, Object.getPrototypeOf, undefined)
 hideip.me###highlighted:style(padding: 0 !important; border: 0 !important; margin-bottom: 0 !important)
 hideip.me###sidebar-second:style(position: fixed !important; top: -10000px !important)
 hideip.me##.region-footer a[href]:style(position: fixed !important; top: -10000px !important)
@@ -87,6 +85,7 @@ hideip.me##.region-highlighted > .block > .content > center:style(position: fixe
 hideip.me##div[style^="display"][style*="block"] > a[href]:style(position: fixed !important; top: -10000px !important)
 hideip.me#@#*
 horo.mail.ru,minigames.mail.ru,okminigames.mail.ru##+js(abort-on-property-write.js, MrgContext)
+hvylya.net##+js(set-constant.js, Object.getPrototypeOf, undefined)
 igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20px)
 inforeactor.ru##+js(abort-current-inline-script.js, document.createElement, /directadvert|infox|lentainform|mainews|marketgid|nnn|smi2/)
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
@@ -227,24 +226,6 @@ news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body > [class] > [c
 news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body[class*="b-page"]:style(background-color: unset !important)
 !#endif
 !
-! gismeteo.ua
-gismeteo.ua#@##ad_ph_1
-gismeteo.ua###ad_ph_1:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
-gismeteo.ua#@##w-hor
-gismeteo.ua###w-hor:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
-gismeteo.ua#@##weather-rbkua
-gismeteo.ua###weather-rbkua:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
-gismeteo.ua#@##weather-right
-gismeteo.ua###weather-right:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
-gismeteo.ua#@##weather-top > *
-gismeteo.ua###weather-top > *:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
-gismeteo.ua#@#.side__i
-gismeteo.ua##.side__i:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
-@@||gismeteo.ua^$generichide
-gismeteo.ua#@#[id^="weather-gis-news"]
-gismeteo.ua##[id^="weather-gis-news"]:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
-gismeteo.ua#@#div[id^="traffim-widget"]
-gismeteo.ua##div[id^="traffim-widget"]:style(position: fixed !important; top: -10000px !important; opacity: 0 !important)
 ! vsthouse.ru
 @@$image,badfilter,domain=vsthouse.ru
 @@||crunchyroll.*/vast?$script,badfilter,domain=vsthouse.ru
