@@ -72,7 +72,7 @@
 /^https?://[a-z0-9]+\.info/+[-a-z0-9_?&=]{9,}/$third-party,script
 /abnl/?ucozads^
 /ad_click/*$object
-/ad_iframe/$domain=~convert-video-online.com|~online-audio-converter.com
+/ad_iframe/*$domain=~convert-video-online.com|~online-audio-converter.com
 /adland.php
 /adlift.js
 /adliftQueue.js
@@ -128,7 +128,7 @@
 /branding/casino/*
 /branding/css/*$~object-subrequest,~object
 /branding/images/*-banners.
-/branding/js/$domain=~manualov.net|~vgamp.com
+/branding/js/*$domain=~manualov.net|~vgamp.com
 /bshow.php?dimension=$third-party,script
 /bstats.ashx?ck=*&rnd=
 /by.banclk?
@@ -191,12 +191,12 @@
 /cu2.php?*&ref=$script
 /cu2.php?block_$script
 /cu2.php?ref=$script
-/data/Siropu/images/
+/data/Siropu/images/*
 /datagroup.gif
 /delivery/fc2.
 /direct.php|$~third-party,xmlhttprequest
 /ekbn/src/*
-/external/adliftQueue/$domain=~66.ru|~gorodche.ru
+/external/adliftQueue/*$domain=~66.ru|~gorodche.ru
 /fgc.php?script=bannerTypeHtml
 /files/banner/*
 /files/banners/*
@@ -260,7 +260,7 @@
 /jstbt.js|$third-party
 /kmabiz/*
 /l*.php?pubId=$third-party,script
-/landing_btn/$script,stylesheet,~third-party,domain=~tmconsult.ru
+/landing_btn/*$script,stylesheet,~third-party,domain=~tmconsult.ru
 /lc?pubId=$third-party,script
 /lentainform_widget.json
 /linkexchange/*
@@ -281,13 +281,13 @@
 /news.php?sid=*&bn=$third-party,script
 /newsanons/*?advert[]=
 /out.php?sid=$script
-/output/index/$third-party,script
+/output/index/*$third-party,script
 /oyy.js
 /partner/banner/*
 /partner/images/banners/*
 /pixel2/video?$third-party,script
 /play/?ref=*/play/*$third-party,subdocument
-/plugins/adhelper/
+/plugins/adhelper/*
 /plz.somechange.js?
 /popin.js
 /popin4.js
@@ -295,7 +295,7 @@
 /ppndr/*
 /prepareCode?
 /priceru_advert_
-/protJS/$script
+/protJS/*$script
 /pseudocounter.js
 /push.js*utm_campaign=
 /r_show.php?b=
@@ -303,7 +303,7 @@
 /rbs_scripts/rbs_banner_
 /rcl/all/*
 /rcl/ban/*
-/redirect/cpa/
+/redirect/cpa/*
 /redtram.$domain=~redtram.com|~redtram.fm
 /reklama6.
 /reklama_
@@ -315,7 +315,7 @@
 /rotator/*.js|$third-party
 /rsi.php|$script,~third-party
 /rttr*.min.js|$script,~third-party
-/ru-n4p/$third-party
+/ru-n4p/*$third-party
 /sb.php?s=$script
 /sblocks_informer.
 /sbn2.js
@@ -377,7 +377,7 @@
 /topminigames.jpg|
 /traff.js
 /trsm.js$third-party
-/ua-n4p/$third-party
+/ua-n4p/*$third-party
 /ucodes.ru.banners.js
 /ucounter2.js?r=
 /ucoz/img/uads/*
@@ -406,10 +406,10 @@
 /warlog.
 /webunder_
 /wp-content/imgrekl/*
-/wp-content/plugins/adsplacer_pro/
-/wp-content/plugins/distr-adv/
+/wp-content/plugins/adsplacer_pro/*
+/wp-content/plugins/distr-adv/*
 /wp-content/plugins/distr/*/distr-adv-
-/wp-content/plugins/flat_pm/
+/wp-content/plugins/flat_pm/*
 /www/imgget/*$script
 /xhr_ab_block
 /ya-awaps2/*
