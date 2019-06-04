@@ -227,15 +227,10 @@ news.mail.ru#?#div:-abp-has(> * > a[href*="t.mail.ru/redir"])
 news.mail.ru#?#div:-abp-properties(width: 240px)
 news.mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
 ! Облако
-cloud.mail.ru##.content__left > div[id] > div[style="font-size: 13px;"] > div[style^="font-size: 90%;"]
-cloud.mail.ru##.js-layout__leftcol > div[onclick]
+cloud.mail.ru##.content__along > div[id]:not(#react-public-upload):not([title]):not([class]):not([data-classes])
+cloud.mail.ru##.public__content > div[id]:not(#react-public-upload):not([title]):not([class]):not([data-classes])
 cloud.mail.ru##.w-public__content > .b-layout div[id][class][style="width: 240px;"]
-cloud.mail.ru##.w-public__content div[id] > div[style="font-size: 13px;"] > div[style^="font-size: 90%;"]
-cloud.mail.ru##[data-view^="SlotView.mimic"]
-cloud.mail.ru##div[class*="directhack"]
-cloud.mail.ru##div[data-adq-id^="adqcontainer"]
-cloud.mail.ru##div[data-module^="Slot.Mimic"]
-cloud.mail.ru##div[id^="rb_banner"]
+@@||an.yandex.ru/system/context.js$domain=cloud.mail.ru
 ! Ответы
 otvet.mail.ru#?#.mailru-visibility-check:-abp-has([target="_blank"])
 @@||otvet.mail.ru^$generichide
