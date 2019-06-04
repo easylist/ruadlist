@@ -237,7 +237,7 @@ news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body[class*="b-page
 @@||zoover.*/shared/bannerpages/darttagsbanner.aspx?$script,badfilter,domain=vsthouse.ru
 !
 ! 4PDA > Тестовые правила
-4pda.ru##.slider-nav > ul > li:not(rec2):style(display: block !important)
+4pda.ru##.slider-nav > ul > li:not([rec2]):style(display: block !important)
 4pda.ru##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.ru##body > div[id^="r"] > div[id^="r"][href]
 4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class^="r"]:not(div) > div > [class]:not(div) ~ [class]:not(div) article[id]:first-child > article[itemscope]
