@@ -246,7 +246,7 @@ news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body[class*="b-page
 4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class^="r"]:not(div) > div > [class]:not(div) ~ [class]:not(div):style(background-image: none!important; background-color: #e6e7e9!important)
 4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class^="r"]:not(div) > div > div:not([id]):not([class]):not([style]) + [class]:not(div)
 4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:empty[style*="opacity"]
-4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:first-child
+4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:first-child:if-not(> .slider-list)
 4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:has(script:has-text(InitOXN))
 !
 ! Временные правила для подсчёта статистики ABP/AB
