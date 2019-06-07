@@ -237,11 +237,10 @@ auto.ru,kinopoisk.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-prope
 @@||zoover.*/shared/bannerpages/darttagsbanner.aspx?$script,badfilter,domain=vsthouse.ru
 !
 ! 4PDA > Тестовые правила
-4pda.ru##.slider-nav > ul > li:not([rec2]):style(display: block !important)
 4pda.ru##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.ru##body > div[id^="r"] > div[id^="r"][href]
+4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class^="r"]:not(div) > div > [class="menu"] ~ [id^="r"][class^="r"]:not(div):style(background-image: none!important; background-color: #e6e7e9!important)
 4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class^="r"]:not(div) > div > [class]:not(div) ~ [class]:not(div) article[id]:first-child > article[itemscope]
-4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class^="r"]:not(div) > div > [class]:not(div) ~ [class]:not(div):style(background-image: none!important; background-color: #e6e7e9!important)
 4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class^="r"]:not(div) > div > div:not([id]):not([class]):not([style]) + [class]:not(div)
 4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:empty[style*="opacity"]
 4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:first-child:if-not(> .slider-list)
