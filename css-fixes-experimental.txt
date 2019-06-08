@@ -782,16 +782,15 @@ sport-express.ru#?#body.popup:style(overflow:auto !important)
 ! ---
 spot.uz#?##header-dummy:not(#id):style(min-height: 70px !important)
 ! ---
-stratege.ru###body_box_label #content-top
-stratege.ru###body_box_label #wrapper > #content ~ div[id]:not([id="footer"])
-stratege.ru###body_box_label > div[class] > div:not([id]):not([class]) > style + div:not([id]):not([class])
-stratege.ru#?##body_box_label > div[class]:not([id]):not([title]):style(background-image: none !important; background-color: #dbdbdb !important)
+stratege.ru#?##body_box_label #content-wrapper:style(margin-top: 0 !important)
+stratege.ru###body_box_label #wrapper > #content ~ :not(#footer)
+stratege.ru###body_box_label > div:not([id]):not([class]) > div > style + div:not(#wrapper)
+stratege.ru#?##body_box_label > div:not([id]):not([class]) > div:not([title]):style(background-image: none !important; background-color: #dbdbdb !important)
 stratege.ru#?##globalcontent:style(padding-top: 0 !important)
-stratege.ru###profooter
-stratege.ru#?##wrapper > #content:style(padding-top: 40px !important)
 stratege.ru#?#.above_body:style(margin-bottom: auto !important)
-stratege.ru##body:not(#body_box_label) > style + div[id]:not([class]):not([title]):not([style]):not([id*="footer"]) > style + div[id]:not([class]):not(.above_body):not(#globalcontent)
-stratege.ru#?#body:not(#body_box_label) > style + div[id]:not([class]):not([title]):not([style]):not([id*="footer"]):style(background-image: none !important; background-color: #dbdbdb !important)
+stratege.ru##body:not(#body_box_label) > [id*="footer"]:not(#footer):not(#footer_morecopyright)
+stratege.ru##body:not(#body_box_label) > style ~ div[id]:not([class]):not([title]):not([style]):not([id*="footer"]):not([id*="_layer"]) > style + div[id]:not(#globalcontent)
+stratege.ru#?#body:not(#body_box_label) > style ~ div[id]:not([class]):not([title]):not([style]):not([id*="footer"]):not([id*="_layer"]):style(background-image: none !important; background-color: #dbdbdb !important)
 ! ---
 tarkov-wiki.ru#?#html > body:style(overflow: auto !important)
 tarkov-wiki.ru##html > div[class][style^="background-color: rgba"]
