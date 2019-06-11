@@ -857,14 +857,13 @@ xatab-repack.net#?##page:style(background: none !important)
 xatab-repack.net##.btn-download[href^="http"]:not([href^="https://xatab-repack.net/"]):not([href^="http://xatab-repack.net/"])
 rg-mechanics.org##.buttondown[href^="http"]:not([href^="https://rg-mechanics.org/"]):not([href^="http://rg-mechanics.org"])
 ! ---
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body > div[class*=" "] > div[class][id]
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.b-page:style(padding-top: 0 !important)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua#?#.content-event_commercial_yes:style(margin-top: auto !important)
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_channel > [class^="content__"] > .content__main ~ div[class*="content__"] > *
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_channel > [class^="content__"] ~ :not(.bread-crumbs) > *
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.content_program > div[itemscope] > [class^="content__"] > :not(.content__main) > *
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row .blackout-filter:empty
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item > div[class*=" "]:not([style])
+zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item-wrap > .feed__item > div[class]:not([style]):not([class*="card"]):not(.doc):not(.featuring-carousel):not(.similar-interests)
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__row > .feed__item-wrap div:after:style(background: transparent !important)
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.forecast-brief__item-temp-day:style(width: auto !important)
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.head-stripe:style(position: fixed !important; transform: scale(0) !important)
