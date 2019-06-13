@@ -278,7 +278,8 @@ sportmail.ru##.sub-news-list_rightcoll
 sportmail.ru#?#body [class*="o"] .r-source:-abp-has(> * *)
 sportmail.ru#?#body [class*="o"] div[id^="trg-"]:-abp-has(> * *)
 sportmail.ru#?#body [class*="o"] div[id^="yandex_ad"]:-abp-has(> * *)
-sportmail.ru#?#div:-abp-properties(width: 240px)
+sportmail.ru#?#div:not(.js-module) > [class]:-abp-properties(height: 400px;)
+sportmail.ru##div[class][style^="transform: translate3d"] > div:first-child
 sportmail.ru##tr > .daynews__spring
 ! Хай-тек
 hi-tech.mail.ru##.box[class*=" rb_"]
