@@ -231,7 +231,7 @@ news.mail.ru#?#div:-abp-has(> * > .sourceInformer_bks)
 news.mail.ru#?#div:-abp-has(> * > a[href*="t.mail.ru/redir"])
 news.mail.ru#?#div:not(.js-module) > div[class]:-abp-properties(height: 400px;)
 news.mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
-news.mail.ru##div[class][style^="transform: translate3d"] > div:first-child
+news.mail.ru##div[class][style^="transform: translate3d"]:not(.viewbox__slides) > div:first-child
 ! Облако
 cloud.mail.ru##.content__along > div[id]:not(#react-public-upload):not([title]):not([class]):not([data-classes])
 cloud.mail.ru##.public__content > div[id]:not(#react-public-upload):not([title]):not([class]):not([data-classes])
