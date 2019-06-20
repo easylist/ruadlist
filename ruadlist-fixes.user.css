@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190614.2115
+@version 0.20190620.2026
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -15,12 +15,11 @@
 @-moz-document
   domain("1plus1.ua"),
   domain("24video.guru"),
-  domain("24video.sexy"),
+  domain("24video.site"),
   domain("4watching.club"),
   domain("aghdrezka.com"),
   domain("ahdrezka.com"),
   domain("all-episodes.tv"),
-  domain("allfilmonline.co"),
   domain("amovies.cc"),
   domain("baskino.me"),
   domain("baskinonet.ru"),
@@ -145,7 +144,7 @@
 
 @-moz-document
   domain("24video.guru"),
-  domain("24video.sexy"),
+  domain("24video.site"),
   domain("aghdrezka.com"),
   domain("ahdrezka.com"),
   domain("aif.ru"),
@@ -236,7 +235,7 @@
 
 @-moz-document
   domain("24video.guru"),
-  domain("24video.sexy"),
+  domain("24video.site"),
   domain("biqle.ru"),
   domain("fainaidea.com"),
   domain("gecid.com"),
@@ -522,7 +521,9 @@
     }
 }
 
-@-moz-document domain("animerost.org") {
+@-moz-document
+  domain("animerost.org"),
+  domain("animevost1.org") {
     div[class^="headbg"] {
         background-image: none !important;
         height: auto !important
@@ -1861,7 +1862,10 @@
 }
 
 @-moz-document domain("mail.ru") {
+    body > .grid .grid__rcol > .games, body > .grid .news-item_tgb, 
+    body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
+    body > .zeropixel ~ * .i-clearfix.feed-generic__container, 
     body > .zeropixel ~ div .well.notify {
         display: none !important
     }
@@ -1978,10 +1982,10 @@
 }
 
 @-moz-document domain("my.mail.ru") {
+    #history_container > div[class][style*="display: block!important"], 
     .b-history__adv-post-carousel, .l-app__left, .l-app__right, 
     :not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"], 
-    div[class*="mimic"], div[class^="app-adv-"], 
-    html.window-loaded .b-video-backscreen {
+    div[class^="app-adv-"], html.window-loaded .b-video-backscreen {
         display: none !important
     }
     html.window-loaded .b-video-controls__inside-play-button {
@@ -2912,15 +2916,13 @@
 }
 
 @-moz-document domain("www.drive2.ru") {
-    .c-car-info ~ [data-role] ~ div:last-child > div:first-child + div:last-child, 
-    .c-car-info ~ div[class*="content"] + div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child), 
     .dv-post-header, 
     .g-full-size-post ~ [data-role] ~ div:last-child > div:first-child + div:last-child, 
     .g-full-size-post ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child), 
-    .js-page > div:not([class*="-header"]) > .g-column-mid:first-child + div[class]:last-child > div:not([class*="text"]):not([class*="promo"]):last-child > div:not([class*="text"]), 
-    .js-page > div[class*="-header"] + div[class]:last-child > .o-grid-row:first-child + div[class] ~ div:not([class*="js-market-indexmode"]):not([class*="collapse"]), 
-    .js-page > div[class*="-header"] + div[class]:last-child > div[class*="content"]:first-child + div:not([class*="collapse"]), 
-    .js-page > div[class*="-header"] + div[class]:last-child > div[class]:not([class*="content"]):not([class*="grid"]):not([class*="slide"]):not([class*="column"]):first-child ~ div:not([class*="collapse"]), 
+    .js-page > div[class*="-header"] + div[class]:last-child > .o-grid-row:first-child + div[class] + div[class]:not([class*="js-market-indexmode"]):not([class*="content"]):not([class*="grid"]):not([class*="group"]), 
+    .js-page > div[class*="-header"] + div[class]:last-child > .o-grid-row:first-child ~ div[class*="js-market-indexmode"] + div[class]:not([class*="content"]):not([class*="grid"]):not([class*="group"]), 
+    .js-page > div[class*="-header"] + div[class]:last-child > div[class*="content"] + div:not([class*="content"]):not([data-role]):not([class*="column"]), 
+    .js-page > div[class*="-header"] + div[class]:last-child > div[class]:not([class*="grid"]):not([class*="column"]):first-child + div[class]:not([class*="content"]):not([class*="grid"]):not([class*="group"]), 
     .offer ~ div:not([class*="content"]):not([data-role]):not([class*="columns"]), 
     div[id]:not([class]) > div[class]:not([id])[style="width: 970px;"] {
         display: none !important
@@ -3151,10 +3153,7 @@
     .feed__row > .feed__item-wrap div:after {
         background: transparent !important
     }
-    .feed__row .blackout-filter:empty, 
-    .feed__row > .feed__item-wrap > .feed__item > div[class*=" "][style=""], 
-    .feed__row > .feed__item-wrap > .feed__item > div[class="card-container"], 
-    .feed__row > .feed__item-wrap > .feed__item > div[class]:not([style]):not([class*="card"]):not(.doc):not(.featuring-carousel):not(.similar-interests) {
+    .feed__row .blackout-filter:empty {
         display: none !important
     }
 }
