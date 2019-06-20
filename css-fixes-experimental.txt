@@ -228,15 +228,12 @@ drahelas.ru#?#.navbar_notice:style(position: fixed !important; transform: scale(
 draug.ru,vargr.ru###timer_1
 draug.ru,vargr.ru#?##timer_2:style(display: block !important)
 ! ---
-www.drive2.ru##.c-car-info ~ [data-role] ~ div:last-child > div:first-child + div:last-child
-www.drive2.ru##.c-car-info ~ div[class*="content"] + div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child)
 www.drive2.ru##.dv-post-header
 www.drive2.ru##.g-full-size-post ~ [data-role] ~ div:last-child > div:first-child + div:last-child
 www.drive2.ru##.g-full-size-post ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child)
-www.drive2.ru##.js-page > div:not([class*="-header"]) > .g-column-mid:first-child + div[class]:last-child > div:not([class*="text"]):not([class*="promo"]):last-child > div:not([class*="text"])
-www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > .o-grid-row:first-child + div[class] ~ div:not([class*="js-market-indexmode"]):not([class*="collapse"])
-www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > div[class*="content"]:first-child + div:not([class*="collapse"])
-www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > div[class]:not([class*="content"]):not([class*="grid"]):not([class*="slide"]):not([class*="column"]):first-child ~ div:not([class*="collapse"])
+www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > .o-grid-row:first-child ~ div[class*="js-market-indexmode"] + div[class]:not([class*="content"]):not([class*="grid"]):not([class*="group"])
+www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > div[class*="content"] + div:not([class*="content"]):not([data-role]):not([class*="column"])
+www.drive2.ru##.js-page > div[class*="-header"] + div[class]:last-child > div[class]:not([class*="grid"]):not([class*="column"]):first-child + div[class]:not([class*="content"]):not([class*="grid"]):not([class*="group"])
 www.drive2.ru##.offer ~ div:not([class*="content"]):not([data-role]):not([class*="columns"])
 drive.ru#?#body > div:style(background: none !important; padding-top: 0 !important)
 www.drive2.ru##div[id]:not([class]) > div[class]:not([id])[style="width: 970px;"]
