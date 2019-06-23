@@ -810,8 +810,6 @@ news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> 
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.climate-calendar-container__adv-wide
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.content__section_type_adv
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.weather-maps__ad_visible_yes
-/^https?://yandex\.(by|kz|ru)/pogoda/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
-/^https?://yandex\.ua/pogoda/[^\s]{300,}/$subdocument,~third-party
 ~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > * > * > a[href*="/yandex"][href*="/pogoda/"][target] img[src*="pogoda"])
 ~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > * > a[href*="/yandex"][href*="/pogoda/"][target] img[src*="pogoda"])
 ~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > a[href*="/yandex"][href*="/pogoda/"][target] img[src*="pogoda"])
