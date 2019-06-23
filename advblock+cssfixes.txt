@@ -15,9 +15,6 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 /^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
-/^https?://yandex\.(by|kz|ru|ua)\/pogoda\/(compare\/)/$csp=script-src 'self' * data: blob: 'unsafe-eval'
-/^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=*]{2,40}\/(details|month)/$csp=script-src 'self' * data: blob: 'unsafe-eval'
-/^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=*]{2,}$/$csp=script-src 'self' * data: blob: 'unsafe-eval'
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
 /pagead2.$important,domain=okino.ua
