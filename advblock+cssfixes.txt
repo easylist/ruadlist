@@ -28,6 +28,8 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,gorodrabot.ru,otzovik.com,sdamgia.ru,sports.ru##+js(abort-on-property-read.js, Ya)
 777streams.pro,7streams.pro,channels247.net,hd365.ws,hdstream365.com,sblive.online,sbsports.pro,sbstreams.ws,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc|streamguard.cc|streamtojupiter.me
+@@/getCodeTest?$script,badfilter,domain=auto.vesti.ru|gubernia.com
+@@/prepareCode?$script,badfilter,domain=auto.vesti.ru|gubernia.com
 @@||counter.yadro.ru^$image,badfilter,domain=megacritic.ru|okino.ua
 @@||hit.ua/hit?$image,badfilter,domain=okino.ua
 @@||mc.yandex.*/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
@@ -48,6 +50,7 @@ anidub.com##+js(abort-on-property-read.js, ogonek)
 animelend.info##+js(set-constant.js, JSON.parse, noopFunc)
 artfile.me,artfile.ru,astrakhan.ru,gorodche.ru,informpskov.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read.js, kav_cn)
 auto.ru##+js(cookie-remover.js, /^blcrm|^bltsr|^from|^los$/)
+auto.vesti.ru,gubernia.com##+js(abort-on-property-read.js, AdFox)
 baskino-z720.com,dc-marvel.org,gidonline.eu,kinogo-2016-net.ru,megatfile.cc,newfilms.online,seasonvar.re,torrent-soft.net##+js(abort-current-inline-script.js, String.fromCharCode, var _0x)
 cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv##+js(abort-on-property-read.js, window.ab)
 championat.com##+js(abort-on-property-read.js, brandingRenderFlag)
