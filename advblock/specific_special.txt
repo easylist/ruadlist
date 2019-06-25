@@ -717,7 +717,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##.sidebar-view div[style*="!important"]:
 ##.stat_pixel_yes[onclick][class*="_layout_"][class*="_format_"]
 ##.yandex-rtb
 ##.yandex-rtb-block
-/^https?://main\.zdevx\.yandex\.ru/[^\s]{300,}/$subdocument,~third-party,xmlhttprequest
+@@://yandex.ru/|$generichide
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#[class]:-abp-has(> [class] > [id^="sf-"])
 yandex.by,yandex.kz,yandex.ru,yandex.ua##[id^="sf-"]
 yandex.by,yandex.kz,yandex.ru,yandex.ua##a[href*="//ads.adfox.ru/"]
@@ -736,7 +736,6 @@ yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 ||yandex.ru/maps/api/branding/
 ||yandex.ru/mapuid/$csp=script-src
 ||yastatic.net/daas/
-||zen.yandex.$domain=~zen.yandex.by|~zen.yandex.com|~zen.yandex.com.tr|~zen.yandex.fr|~zen.yandex.kz|~zen.yandex.ru|~zen.yandex.ua
 ! Прочее
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.BlaBlaCarSegment
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.ua,yadi.sk##.awaps__banner
@@ -761,24 +760,7 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body > #conte
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.article__body > div:-abp-has(iframe[src^="https://zen.yandex.ru/"][style*="opacity:"])
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body > div[class*=" "] > div[class]:not([class="youtube-embed"])
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body div[style*="min-height:"][style*="min-width:"][style*="max-width:"]
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__item > div[style] div:not([class]):not([id])
-zen.yandex.by,zen.yandex.com,zen.yandex.com.tr,zen.yandex.fr,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__item:-abp-has(*:-abp-contains(/^реклама$/i))
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item-wrap > .feed__item > div[class*=" "][style=""]
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item-wrap > .feed__item > div[class="card-container"]
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item-wrap > .feed__item > div[class]:not([style]):not([class*="card"]):not(.doc):not(.featuring-carousel):not(.similar-interests)
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item-wrap > .feed__item > div[class][style*="bb"]
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item-wrap > .feed__item > div[class][style="b1"]
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item-wrap > .feed__item > div[class][style="bI"]
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item-wrap > .feed__item > div[class][style="bl"]
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.feed__row > .feed__item-wrap > .feed__item > div[class][style^="a"]
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.feed__row > .feed__item-wrap > .feed__item:-abp-has(div:-abp-contains(/^Скрыть/))
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.floating-links
-yandex.by,yandex.kz,yandex.ru,yandex.ua##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class*=" "]:not(.placeholder-card)[style="aa"]
-yandex.by,yandex.kz,yandex.ru,yandex.ua##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class*=" "][style*="aa"]
-yandex.by,yandex.kz,yandex.ru,yandex.ua##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class*=" "][style*="bb"]
-yandex.by,yandex.kz,yandex.ru,yandex.ua##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class*=" "][style="bI"]
-yandex.by,yandex.kz,yandex.ru,yandex.ua##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class*=" "][style] div:not([class]):not([id])
-yandex.by,yandex.kz,yandex.ru,yandex.ua##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class*=" "][style^="a"]
 ! Яндекс.Здоровье (yandex.*/health)
 yandex.by,yandex.kz,yandex.ru,yandex.ua###root .AdsColumn
 yandex.by,yandex.kz,yandex.ru,yandex.ua###root .bottom-banner
