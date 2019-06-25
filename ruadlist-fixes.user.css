@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190620.2026
+@version 0.20190625.1558
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -565,7 +565,9 @@
     }
 }
 
-@-moz-document domain("anistar.org") {
+@-moz-document
+  domain("anistar.org"),
+  domain("anistar1.org") {
     html > body:not(#id) {
         background-image: none !important
     }
@@ -2011,14 +2013,14 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    #all > div[id*="der"] [onclick] {
+    #all > #ftwhedor [onclick] {
         display: none !important
     }
-    #all > div[id*="der"] {
+    #all > #ftwhedor {
         height: 1px !important;
         background: none !important
     }
-    #all > div[id*="der"] > .right {
+    #all > #ftwhedor > .right {
         margin-top: 0 !important
     }
 }
@@ -2165,6 +2167,7 @@
 }
 
 @-moz-document domain("otvet.mail.ru") {
+    .wrapper div[class^="adv-slot"], 
     div[class][style="top: 56px;"] > div > div ~ div {
         display: none !important
     }
@@ -3072,8 +3075,7 @@
     body > .b-page__container [class^="forecast-details__day"] ~ * [class*="adv_id"], 
     body > .b-page__container [class^="forecast-details__day"] ~ :last-child:not([class^="forecast-details"]), 
     body > .b-page__container [class^="forecast-details__day"] ~ [class*="adv_id"], 
-    div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class*=" "][style=""]:not([class="placeholder-card _size_free"]), 
-    div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class]:not([style]), 
+    div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Реклама"], 
     div[class*="climate-header-fixed"] ~ .content .content__section + :last-child {
         display: none !important
@@ -3153,7 +3155,8 @@
     .feed__row > .feed__item-wrap div:after {
         background: transparent !important
     }
-    .feed__row .blackout-filter:empty {
+    .feed__row .blackout-filter:empty, 
+    .feed__row > .feed__item-wrap > .feed__item > .ad-card {
         display: none !important
     }
 }
