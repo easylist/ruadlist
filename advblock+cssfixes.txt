@@ -138,7 +138,7 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, St
 ||an.yandex.ru^$xmlhttprequest,redirect=nooptext
 ||argumentiru.com^$csp=script-src 'self' * data:,badfilter
 ||argumentiru.com^$xmlhttprequest,badfilter,domain=argumentiru.com
-||fermilon.ru^$xmlhttprequest,badfilter,domain=fermilon.ru
+||fermilon.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
 ||helpsetup.ru/js/ajaxup.js
 ||imperiyanews.ru^$xmlhttprequest,badfilter,domain=imperiyanews.ru
