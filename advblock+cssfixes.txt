@@ -133,7 +133,7 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, St
 ||1tv.ru/player/$image,redirect=1x1-transparent.gif,domain=1tv.ru
 ||adbutton.net^$script,redirect=noopjs
 ||adriver.ru^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
-||alau.kz^$xmlhttprequest,badfilter,domain=alau.kz
+||alau.kz^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 ||an.yandex.ru^$script,redirect=noopjs
 ||an.yandex.ru^$xmlhttprequest,redirect=nooptext
 ||argumentiru.com^$csp=script-src 'self' * data:,badfilter
