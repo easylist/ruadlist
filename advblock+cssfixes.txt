@@ -42,8 +42,8 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 @@||trafmag.com/*.js|$script,badfilter,domain=megacritic.ru
 @@||ulogin.ru^*stats.$badfilter,domain=megacritic.ru
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##+js(abort-current-inline-script.js, document.currentScript)
-aftershock.news,alau.kz,argumenti.ru,argumentiru.com,car.ru,fermilon.ru,globuss24.ru,imperiyanews.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,sovsport.ru,sport-express.ru,svpressa.ru##+js(abort-on-property-write.js, ccScriptSupport)
-aftershock.news,alau.kz,argumenti.ru,argumentiru.com,car.ru,fermilon.ru,globuss24.ru,imperiyanews.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,sovsport.ru,sport-express.ru,svpressa.ru##+js(abort-on-property-write.js, window.__AABStatus)
+alau.kz,argumenti.ru,argumentiru.com,car.ru,fermilon.ru,globuss24.ru,imperiyanews.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,sovsport.ru,sport-express.ru,svpressa.ru##+js(abort-on-property-write.js, ccScriptSupport)
+alau.kz,argumenti.ru,argumentiru.com,car.ru,fermilon.ru,globuss24.ru,imperiyanews.ru,mashintop.ru,maxpark.com,moikolodets.ru,newsland.com,sovsport.ru,sport-express.ru,svpressa.ru##+js(abort-on-property-write.js, window.__AABStatus)
 amazinghis.ru##+js(abort-on-property-read.js, anOptions)
 an.yandex.ru##+js(cookie-remover.js)
 anidub.com##+js(abort-on-property-read.js, ogonek)
@@ -133,7 +133,6 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, St
 ||1tv.ru/player/$image,redirect=1x1-transparent.gif,domain=1tv.ru
 ||adbutton.net^$script,redirect=noopjs
 ||adriver.ru^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
-||aftershock.news^$xmlhttprequest,badfilter,domain=aftershock.news
 ||alau.kz^$xmlhttprequest,badfilter,domain=alau.kz
 ||an.yandex.ru^$script,redirect=noopjs
 ||an.yandex.ru^$xmlhttprequest,redirect=nooptext
