@@ -39,6 +39,7 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 @@||okino.ua^$generichide,badfilter
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||stats.g.doubleclick.net/dc.js|$script,badfilter,domain=okino.ua
+@@||studizba.com^$generichide,badfilter
 @@||trafmag.com/*.js|$script,badfilter,domain=megacritic.ru
 @@||ulogin.ru^*stats.$badfilter,domain=megacritic.ru
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##+js(abort-current-inline-script.js, document.currentScript)
@@ -110,6 +111,8 @@ rustorka.club,rustorka.com,rustorka.innal.top,rustorka.net,rustorkacom.lib,tapoc
 rustorka.club,rustorka.com,rustorka.innal.top,rustorka.net,rustorkacom.lib,tapochek.net##+js(abort-on-property-write.js, antiadblock)
 rustorka.club,rustorka.com,rustorka.innal.top,rustorka.net,rustorkacom.lib,tapochek.net##+js(cookie-remover.js, /(u_count|gophp|st2|st3)/)
 spcs.me,strip2.me##+js(abort-on-property-read.js, SpacesClickunder)
+studizba.com##+js(abort-on-property-read.js, m205)
+studizba.com##+js(nano-setInterval-booster.js, #timer)
 tarkov-wiki.ru##+js(abort-on-property-read.js, CheckingUser)
 tvoyadres.ru##+js(setTimeout-defuser.js, adblock)
 upload.ee##+js(abort-on-property-read.js, adcashMacros)
