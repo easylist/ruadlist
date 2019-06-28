@@ -86,7 +86,7 @@ livejournal.com##+js(abort-on-property-read.js, Begun)
 livesport.ws##+js(abort-current-inline-script.js, setTimeout, adblockwarn)
 melodiafm.ua###myPlay > .fa:not(.fa-stop):not(.fa-play):style(background: white !important; width: 26px !important; height: 26px !important)
 melodiafm.ua,n-torrents.org##+js(nano-setInterval-booster.js)
-meteoservice.ru##+js(abort-on-property-write.js, adregain_wall)
+meteoservice.ru,vsthouse.ru##+js(abort-on-property-write.js, adregain_wall)
 money-pic.ru##+js(abort-current-inline-script.js, q330)
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##+js(abort-on-property-read.js, Ya.Direct)
 muzlan.top##+js(nano-setInterval-booster.js, .numcard)
@@ -113,7 +113,6 @@ studizba.com##+js(nano-setInterval-booster.js, #timer)
 tarkov-wiki.ru##+js(abort-on-property-read.js, CheckingUser)
 tvoyadres.ru##+js(setTimeout-defuser.js, adblock)
 upload.ee##+js(abort-on-property-read.js, adcashMacros)
-vsthouse.ru##+js(bab-defuser.js)
 www.kinopoisk.ru##+js(abort-on-property-read.js, __brandingCss)
 www.kinopoisk.ru##+js(abort-on-property-read.js, advBlock)
 www.kinopoisk.ru##+js(set-constant.js, KP.branding, undefined)
@@ -210,17 +209,6 @@ mail.ru,sportmail.ru##+js(setTimeout-defuser.js, rbParams)
 ||limg.imgsmail.ru/informers/abp/px.js?ch=2$badfilter,domain=e.mail.ru
 ||mail.ru/api-proxy/rb-mimic/
 ||recostream.go.mail.ru^$domain=~pulse.mail.ru|~recostream.go.mail.ru
-!
-! vsthouse.ru
-@@$image,badfilter,domain=vsthouse.ru
-@@||crunchyroll.*/vast?$script,badfilter,domain=vsthouse.ru
-@@||ledsitling.pro/news.js|$script,badfilter,domain=vsthouse.ru
-@@||ox-d.*^auid=$script,badfilter,domain=vsthouse.ru
-@@||serve.*/promoload?$script,badfilter,domain=vsthouse.ru
-@@||torrentz.*/mgid/$script,badfilter,domain=vsthouse.ru
-@@||yahoo.*/serv?s=$script,badfilter,domain=vsthouse.ru
-@@||yasni.*/design/relaunch/gfx/elitepartner_$script,badfilter,domain=vsthouse.ru
-@@||zoover.*/shared/bannerpages/darttagsbanner.aspx?$script,badfilter,domain=vsthouse.ru
 !
 ! 4PDA > Тестовые правила
 4pda.ru##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
