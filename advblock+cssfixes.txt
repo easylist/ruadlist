@@ -212,9 +212,24 @@ mail.ru,sportmail.ru##+js(setTimeout-defuser.js, rbParams)
 ||recostream.go.mail.ru^$domain=~pulse.mail.ru|~recostream.go.mail.ru
 !
 ! Progorod и их сайты
-$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter,domain=pg11.ru|pg12.ru|pg13.ru|pg21.ru|prochepetsk.ru|progorod33.ru|progorod43.ru|progorod58.ru|progorod59.ru|progorod62.ru|progorod76.ru|progorodnn.ru|progorodnsk.ru|progorodsamara.ru|progoroduhta.ru|prokazan.ru
 pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progorodnsk.ru,progorodsamara.ru,progoroduhta.ru##+js(abort-on-property-write.js, __XABStatus)
 pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progorodnsk.ru,progorodsamara.ru,progoroduhta.ru##+js(abort-on-property-write.js, xSrcSupport)
+||pg11.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||pg12.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||pg13.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||pg21.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||prochepetsk.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||progorod33.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||progorod43.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||progorod58.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||progorod59.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||progorod62.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||progorod76.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||progorodnn.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||progorodnsk.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||progorodsamara.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||progoroduhta.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||prokazan.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 !
 ! 4PDA > Тестовые правила
 4pda.ru##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
