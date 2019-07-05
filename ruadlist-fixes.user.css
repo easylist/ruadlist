@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190705.1928
+@version 0.20190706.119
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -357,7 +357,10 @@
     }
 }
 
-@-moz-document domain("adultmult.net") {
+@-moz-document
+  domain("adultmult.net"),
+  domain("adultmult.ru"),
+  domain("adultmult.xyz") {
     body {
         background: black !important
     }
@@ -3092,15 +3095,14 @@
   domain("yandex.ru"),
   domain("yandex.ua") {
     .adv_pos_compare-bottom, .adv_pos_compare-side, 
-    .climate-calendar-container > .climate-calendar-container__content ~ :last-child, 
+    .climate-calendar-container > .climate-calendar-container__content ~ *, 
     .climate-calendar-container__adv-thin, 
-    .content__section_climate-graph_yes ~ :last-child, .home-arrow__bottom, 
-    .weather-maps > .weather-maps__layer-buttons ~ :not([class^="weather-maps"]):not(.maps-tutorial), 
-    body > .b-page__container > div[class*="webgl-checker"] ~ div[class^="content "] .content__right, 
-    body > .b-page__container > div[class*="webgl-checker"] ~ div[class^="content "] > div[class*="content__"] ~ :last-child:not([class*="content__"]), 
-    body > .b-page__container [class^="forecast-details__day"] ~ * [class*="adv_id"], 
-    body > .b-page__container [class^="forecast-details__day"] ~ :last-child:not([class^="forecast-details"]), 
-    body > .b-page__container [class^="forecast-details__day"] ~ [class*="adv_id"], 
+    .content__section_climate-graph_yes ~ :not([class="content__section"]), 
+    .home-arrow__bottom, 
+    .weather-maps > .weather-maps__layer-buttons ~ :not([class="weather-maps__timeline"]), 
+    body > .b-page__container > div[hidden] ~ div[class^="content "] .content__right, 
+    body > .b-page__container > div[hidden] ~ div[class^="content "] > div[class*="content__"] ~ :last-child:not([class*="content__"]), 
+    body > .b-page__container [class^="forecast-details__day"] ~ div:not([class="forecast-details__day"]):not([id]), 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Реклама"] {
         display: none !important
