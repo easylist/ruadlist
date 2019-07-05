@@ -905,15 +905,13 @@ music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##div[class^="sid
 ! Яндекс-погода
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.adv_pos_compare-bottom
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.adv_pos_compare-side
-yandex.by,yandex.kz,yandex.ru,yandex.ua##.climate-calendar-container > .climate-calendar-container__content ~ :last-child
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.climate-calendar-container > .climate-calendar-container__content ~ *
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.climate-calendar-container__adv-thin
-yandex.by,yandex.kz,yandex.ru,yandex.ua##.content__section_climate-graph_yes ~ :last-child
-yandex.by,yandex.kz,yandex.ru,yandex.ua##.weather-maps > .weather-maps__layer-buttons ~ :not([class^="weather-maps"]):not(.maps-tutorial)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body > .b-page__container > div[class*="webgl-checker"] ~ div[class^="content "] .content__right
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body > .b-page__container > div[class*="webgl-checker"] ~ div[class^="content "] > div[class*="content__"] ~ :last-child:not([class*="content__"])
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body > .b-page__container [class^="forecast-details__day"] ~ * [class*="adv_id"]
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body > .b-page__container [class^="forecast-details__day"] ~ :last-child:not([class^="forecast-details"])
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body > .b-page__container [class^="forecast-details__day"] ~ [class*="adv_id"]
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.content__section_climate-graph_yes ~ *
+yandex.by,yandex.kz,yandex.ru,yandex.ua##.weather-maps > .weather-maps__layer-buttons ~ div[class][style^="max-height"]
+yandex.by,yandex.kz,yandex.ru,yandex.ua##body > .b-page__container > div[hidden] ~ div[class^="content "] .content__right
+yandex.by,yandex.kz,yandex.ru,yandex.ua##body > .b-page__container > div[hidden] ~ div[class^="content "] > div[class*="content__"] ~ :last-child:not([class*="content__"])
+yandex.by,yandex.kz,yandex.ru,yandex.ua##body > .b-page__container [class^="forecast-details__day"] ~ div:not([class="forecast-details__day"]):not([id])
 ! ---
 yap.ru,yaplakal.com#?##footer:style(background: none !important; padding: 0 !important)
 yap.ru,yaplakal.com#?##top-line:style(background: none !important; padding: 0 !important; height: auto !important)
