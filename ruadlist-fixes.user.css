@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190625.1558
+@version 0.20190705.1928
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -286,6 +286,9 @@
     .megaShadow, .paywall-activated, .topAdvertize {
         display: none !important
     }
+    .topAdvertize__wrapper {
+        height: auto !important
+    }
     .body * {
         opacity: 1 !important;
         filter: none !important;
@@ -321,6 +324,26 @@
     }
 }
 
+@-moz-document
+  domain("a22.agorov.org"),
+  domain("animevost.org"),
+  domain("animevost1.org"),
+  domain("animevost2.org"),
+  domain("animevost3.org") {
+    div[class^="headbg"] {
+        background-image: none !important;
+        height: auto !important
+    }
+    div[class^="headbg"] > .menu .sar {
+        bottom: auto !important;
+        top: 50px !important;
+        z-index: 100 !important
+    }
+    div[class^="headbg"] > .menu {
+        top: 0 !important
+    }
+}
+
 @-moz-document domain("aces.gg") {
     body {
         background: black !important;
@@ -334,7 +357,7 @@
     }
 }
 
-@-moz-document domain("adultmult.ru") {
+@-moz-document domain("adultmult.net") {
     body {
         background: black !important
     }
@@ -521,23 +544,6 @@
     }
 }
 
-@-moz-document
-  domain("animerost.org"),
-  domain("animevost1.org") {
-    div[class^="headbg"] {
-        background-image: none !important;
-        height: auto !important
-    }
-    div[class^="headbg"] > .menu .sar {
-        bottom: auto !important;
-        top: 50px !important;
-        z-index: 100 !important
-    }
-    div[class^="headbg"] > .menu {
-        top: 0 !important
-    }
-}
-
 @-moz-document domain("animevost.in") {
     #Navigation {
         background-image: none !important;
@@ -567,7 +573,10 @@
 
 @-moz-document
   domain("anistar.org"),
-  domain("anistar1.org") {
+  domain("anistar1.org"),
+  domain("anistar2.org"),
+  domain("anistar3.org"),
+  domain("anistar4.org") {
     html > body:not(#id) {
         background-image: none !important
     }
@@ -908,6 +917,14 @@
 }
 
 @-moz-document
+  domain("drive2.com"),
+  domain("drive2.ru") {
+    [data-role="recommendations scrolltracking"] ~ .o-columns > div:first-child {
+        max-width: unset !important
+    }
+}
+
+@-moz-document
   domain("dugtor.org"),
   domain("dugtor.ru") {
     #left-block, #right-block {
@@ -941,11 +958,8 @@
 @-moz-document
   domain("e.mail.ru"),
   domain("octavius.mail.ru") {
-    .application-mail__wrap > .layout > .layout__main-frame ~ .layout__column_right {
+    #app-canvas .application-mail__wrap > .layout > .layout__main-frame ~ .layout__column_right > :not(.sidebar-search) {
         display: none !important
-    }
-    .application-mail__wrap > .layout > .layout__main-frame {
-        margin-right: 0 !important
     }
 }
 
@@ -1181,6 +1195,15 @@
 @-moz-document domain("forum.ru-board.com") {
     .tpc > .post > a[href] {
         word-break: break-all
+    }
+}
+
+@-moz-document domain("forums.goha.ru") {
+    .branding-background {
+        background-image: none !important
+    }
+    .branding-background a[href]:not([href="https://www.goha.ru"]) {
+        display: none !important
     }
 }
 
@@ -1868,6 +1891,8 @@
     body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .i-clearfix.feed-generic__container, 
+    body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]), 
+    body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]) ~ div, 
     body > .zeropixel ~ div .well.notify {
         display: none !important
     }
@@ -1944,7 +1969,7 @@
   domain("music.yandex.kz"),
   domain("music.yandex.ru"),
   domain("music.yandex.ua") {
-    .page-root > div[class]:nth-child(-n+2)[style="display: block;"], 
+    .page-root > div[class]:nth-child(-n+2)[style^="display: block;"], 
     div[class^="sidebar"] .no-ads {
         display: none !important
     }
@@ -2013,14 +2038,14 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    #all > #ftwhedor [onclick] {
+    #all > #ftwhetor [onclick] {
         display: none !important
     }
-    #all > #ftwhedor {
+    #all > #ftwhetor {
         height: 1px !important;
         background: none !important
     }
-    #all > #ftwhedor > .right {
+    #all > #ftwhetor > .right {
         margin-top: 0 !important
     }
 }
@@ -2611,6 +2636,7 @@
   domain("sports.ru"),
   domain("tribuna.com") {
     html > body {
+        background-image: none !important;
         background-color: #a7a7a7 !important
     }
     .page-layout {
@@ -3065,19 +3091,18 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.ua") {
-    .adv_pos_compare-side, 
+    .adv_pos_compare-bottom, .adv_pos_compare-side, 
     .climate-calendar-container > .climate-calendar-container__content ~ :last-child, 
     .climate-calendar-container__adv-thin, 
     .content__section_climate-graph_yes ~ :last-child, .home-arrow__bottom, 
     .weather-maps > .weather-maps__layer-buttons ~ :not([class^="weather-maps"]):not(.maps-tutorial), 
-    body > .b-page__container > div[class="content content_compressed"] .content__right, 
-    body > .b-page__container > div[class="content content_compressed"] > div[class*="content__"] ~ :last-child:not([class*="content__"]), 
+    body > .b-page__container > div[class*="webgl-checker"] ~ div[class^="content "] .content__right, 
+    body > .b-page__container > div[class*="webgl-checker"] ~ div[class^="content "] > div[class*="content__"] ~ :last-child:not([class*="content__"]), 
     body > .b-page__container [class^="forecast-details__day"] ~ * [class*="adv_id"], 
     body > .b-page__container [class^="forecast-details__day"] ~ :last-child:not([class^="forecast-details"]), 
     body > .b-page__container [class^="forecast-details__day"] ~ [class*="adv_id"], 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
-    div[aria-label="Реклама"], 
-    div[class*="climate-header-fixed"] ~ .content .content__section + :last-child {
+    div[aria-label="Реклама"] {
         display: none !important
     }
     .serp-header {
