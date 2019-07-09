@@ -583,9 +583,12 @@ tfile-music.org#?#body:style(width: 100% !important)
 namba.kz#?#body:style(background: #e8ecff !important)
 namba.kg#?#html > body:not(#id):style(overflow: auto !important)
 ! ---
-naruto-base.su#?##all > div[id^="rtw"] > .right:style(margin-top: 0 !important)
-naruto-base.su###all > div[id^="rtw"] [onclick]
-naruto-base.su#?##all > div[id^="rtw"]:style(height: 1px !important; background: none !important)
+naruto-base.su#?#body > #all > script[src] + * + div[id]:not([class]) > .right:style(margin-top: 0 !important)
+naruto-base.su##body > #all > script[src] + * + div[id]:not([class]) [onclick]
+naruto-base.su#?#body > #all > script[src] + * + div[id]:not([class]):style(height: 1px !important; background: none !important)
+naruto-base.su#?#body > #all > script[src] + div[id]:not([class]) > .right:style(margin-top: 0 !important)
+naruto-base.su##body > #all > script[src] + div[id]:not([class]) [onclick]
+naruto-base.su#?#body > #all > script[src] + div[id]:not([class]):style(height: 1px !important; background: none !important)
 ! ---
 naruto-brand.ru##[style^="background:url(/img"][style*="padding"]
 naruto-brand.ru##a[href*="/test/"][target="_blank"]
