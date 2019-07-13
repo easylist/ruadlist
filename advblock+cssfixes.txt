@@ -33,9 +33,6 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 @@/prepareCode?$script,badfilter,domain=auto.vesti.ru|gubernia.com
 @@||counter.yadro.ru^$image,badfilter,domain=megacritic.ru|okino.ua
 @@||hit.ua/hit?$image,badfilter,domain=okino.ua
-@@||mc.yandex.*/metrika/watch.js$domain=passport.yandex.by|passport.yandex.kz|passport.yandex.ru|passport.yandex.ua
-@@||mc.yandex.*/metrika/watch.js|$script,domain=~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|yandex.by|yandex.kz|yandex.ru|yandex.ua
-@@||mc.yandex.ru/metrika/tag.js|$script,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||megacritic.ru^$generichide,badfilter
 @@||okino.ua^$generichide,badfilter
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
@@ -47,7 +44,6 @@ afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,tv.yandex.by
 alau.kz,argumenti.ru,argumentiru.com,fastpic.ru,fermilon.ru,globuss24.ru,imperiyanews.ru,km.ru,mashintop.ru,maxpark.com,newsland.com,sovsport.ru,svpressa.ru,yconsult.ru##+js(abort-on-property-write.js, __XABStatus)
 alau.kz,argumenti.ru,argumentiru.com,fastpic.ru,fermilon.ru,globuss24.ru,imperiyanews.ru,km.ru,mashintop.ru,maxpark.com,newsland.com,sovsport.ru,svpressa.ru,yconsult.ru##+js(abort-on-property-write.js, xSrcSupport)
 amazinghis.ru##+js(abort-on-property-read.js, anOptions)
-an.yandex.ru##+js(cookie-remover.js)
 anidub.com,anidub.tv##+js(abort-on-property-read.js, ogonek)
 animelend.info##+js(set-constant.js, JSON.parse, noopFunc)
 artfile.me,artfile.ru,astrakhan.ru,gorodche.ru,informpskov.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read.js, kav_cn)
@@ -93,10 +89,7 @@ melodiafm.ua###myPlay > .fa:not(.fa-stop):not(.fa-play):style(background: white 
 melodiafm.ua,n-torrents.org##+js(nano-setInterval-booster.js)
 meteoservice.ru,vsthouse.ru##+js(abort-on-property-write.js, adregain_wall)
 money-pic.ru##+js(abort-current-inline-script.js, q330)
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua,tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,www.kinopoisk.ru##+js(abort-on-property-read.js, Ya.Direct)
 muzlan.top##+js(nano-setInterval-booster.js, .numcard)
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##+js(abort-current-inline-script.js, document.addEventListener)
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##+js(set-constant.js, Object.prototype.AdvManagerStatic, undefined)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to,radikal.ru,www.vesti.ru##+js(abort-current-inline-script.js, document.createElement, String.fromCharCode)
 overclockers.ru##+js(abort-on-property-read.js, cardinals, chkA)
 piratca.net##+js(remove-attr.js, onclick, [onclick^="window.open"])
@@ -118,15 +111,7 @@ www.kinopoisk.ru##+js(abort-on-property-read.js, __brandingCss)
 www.kinopoisk.ru##+js(abort-on-property-read.js, advBlock)
 www.kinopoisk.ru##+js(set-constant.js, KP.branding, undefined)
 www.liveinternet.ru##+js(cookie-remover.js, /^bltsr|^crookie/)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-current-inline-script.js, document.createElement, window.yandexContextAsyncIds)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, Ya.codeVer)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(set-constant.js, isAllowedRepeatAds, noopFunc)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(set-constant.js, Object.prototype._rtb, undefined)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(set-constant.js, Object.prototype.adUsageStorageVars.adFilterData, undefined)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(set-constant.js, Object.prototype.initYaContext, undefined)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(set-constant.js, Object.prototype.initYaDirect, undefined)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(set-constant.js, Object.prototype.yandexContextAsyncIds, undefined)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(set-constant.js, renderRtb, noopFunc)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.widgets div ~ div ~ div ~ div ~ div div[class]:matches-css(height: 90px)
 yandex.by,yandex.kz,yandex.ru,yandex.ua##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class][style]:has(> div[class*="__ad"])
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(abort-current-inline-script.js, document.addEventListener)
@@ -150,33 +135,10 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, St
 ||loadercdn.com^$important,script,redirect=noopjs
 ||mashintop.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
-||mc.yandex.bu/watch/*&callback*pogoda$script,redirect=silent-noeval.js,domain=yandex.by
-||mc.yandex.by/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.by
-||mc.yandex.by/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.by
-||mc.yandex.by/watch/*?wmode=*&page-ref=*&page-url=*yandex.by*sport$script,redirect=silent-noeval.js,domain=yandex.by
-||mc.yandex.by/watch/*?wmode=*&page-ref=*&page-url=*yandex.by*sport$xmlhttprequest,redirect=nooptext,domain=yandex.by
-||mc.yandex.by/watch/*page-*pogoda%$xmlhttprequest,redirect=nooptext,domain=yandex.by
-||mc.yandex.kz/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.kz
-||mc.yandex.kz/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.kz
-||mc.yandex.kz/watch/*&callback*pogoda$script,redirect=silent-noeval.js,domain=yandex.kz
-||mc.yandex.kz/watch/*?wmode=*&page-ref=*&page-url=*yandex.kz*sport$script,redirect=silent-noeval.js,domain=yandex.kz
-||mc.yandex.kz/watch/*?wmode=*&page-ref=*&page-url=*yandex.kz*sport$xmlhttprequest,redirect=nooptext,domain=yandex.kz
-||mc.yandex.kz/watch/*page-*pogoda%$xmlhttprequest,redirect=nooptext,domain=yandex.kz
-||mc.yandex.ru/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
-||mc.yandex.ru/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
-||mc.yandex.ru/watch/*&callback*pogoda$script,redirect=silent-noeval.js,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
-||mc.yandex.ru/watch/*?wmode=*&page-ref=*&page-url=*yandex.ru*sport$script,redirect=silent-noeval.js,domain=yandex.ru
-||mc.yandex.ru/watch/*?wmode=*&page-ref=*&page-url=*yandex.ru*sport$xmlhttprequest,redirect=nooptext,domain=yandex.ru
-||mc.yandex.ru/watch/*page-*pogoda%$xmlhttprequest,redirect=nooptext,domain=yandex.kz|yandex.ru
-||mc.yandex.ua/metrika/watch.js$script,redirect=silent-noeval.js,domain=yandex.ua
-||mc.yandex.ua/watch/*&callback*news.yandex.$script,redirect=silent-noeval.js,domain=news.yandex.ua
-||mc.yandex.ua/watch/*&callback*pogoda$script,redirect=silent-noeval.js,domain=yandex.ua
-||mc.yandex.ua/watch/*?wmode=*&page-ref=*&page-url=*yandex.ua*sport$script,redirect=silent-noeval.js,domain=yandex.ua
-||mc.yandex.ua/watch/*?wmode=*&page-ref=*&page-url=*yandex.ua*sport$xmlhttprequest,redirect=nooptext,domain=yandex.ua
-||mc.yandex.ua/watch/*page-*pogoda%$xmlhttprequest,redirect=nooptext,domain=yandex.ua
 ||melodiafm.ua/prerole/$media,redirect=noopmp3-0.1s
 ||simpsonsua.com.ua^$csp=script-src 'self' * data:,badfilter
 ||sovsport.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+||static-mon.yandex.net/static/main.js$redirect,redirect=noopjs
 ||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
 ||strm.yandex.ru^$media,redirect=noopmp4-1s,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
 ||svpressa.ru^$xmlhttprequest,badfilter,domain=svpressa.ru
@@ -188,7 +150,7 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, St
 ||www.km.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 ||yastatic.net/pcode/adfox/loader.js$script,redirect=silent-noeval.js,domain=auto.ru
 ||yconsult.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
-~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover.js, /^blcrm|^bltsr|^adequate|^ancQTZw|^KIykI|^mcBaGDt/)
+~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover.js, /^blcrm|^bltsr/)
 !#if !env_firefox
 auto.ru,kinopoisk.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read.js, Element.prototype.attachShadow)
 !news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua##body > [class] > [class] + [class]:before:style(width: unset !important)
