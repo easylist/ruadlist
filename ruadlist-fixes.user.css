@@ -1,16 +1,10 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190706.119
+@version 0.20190716.1943
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
-
-@-moz-document domain("101.ru") {
-    #layout {
-        background: none !important
-    }
-}
 
 @-moz-document
   domain("1plus1.ua"),
@@ -67,6 +61,7 @@
   domain("hdrezka.top"),
   domain("hdrezka.tv"),
   domain("hdrezka.vip"),
+  domain("hdrezka.website"),
   domain("hdrezka.win"),
   domain("hdrezka.wtf"),
   domain("hdrezka.zone"),
@@ -75,7 +70,6 @@
   domain("ikinohd.club"),
   domain("ikinohd.com"),
   domain("investxp.ru"),
-  domain("itop-gear.ru"),
   domain("ixbt.com"),
   domain("jetsetter.ua"),
   domain("kinoaa.ru"),
@@ -178,6 +172,7 @@
   domain("hdrezka.today"),
   domain("hdrezka.top"),
   domain("hdrezka.vip"),
+  domain("hdrezka.website"),
   domain("hdrezka.win"),
   domain("hdrezka.wtf"),
   domain("hdrezka.zone"),
@@ -324,26 +319,6 @@
     }
 }
 
-@-moz-document
-  domain("a22.agorov.org"),
-  domain("animevost.org"),
-  domain("animevost1.org"),
-  domain("animevost2.org"),
-  domain("animevost3.org") {
-    div[class^="headbg"] {
-        background-image: none !important;
-        height: auto !important
-    }
-    div[class^="headbg"] > .menu .sar {
-        bottom: auto !important;
-        top: 50px !important;
-        z-index: 100 !important
-    }
-    div[class^="headbg"] > .menu {
-        top: 0 !important
-    }
-}
-
 @-moz-document domain("aces.gg") {
     body {
         background: black !important;
@@ -358,6 +333,7 @@
 }
 
 @-moz-document
+  domain("adultmult.be"),
   domain("adultmult.net"),
   domain("adultmult.ru"),
   domain("adultmult.xyz") {
@@ -387,6 +363,26 @@
         display: none !important
     }
     #new_logo_helper01 {
+        top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("agorov.org"),
+  domain("animevost.org"),
+  domain("animevost1.org"),
+  domain("animevost2.org"),
+  domain("animevost3.org") {
+    div[class^="headbg"] {
+        background-image: none !important;
+        height: auto !important
+    }
+    div[class^="headbg"] > .menu .sar {
+        bottom: auto !important;
+        top: 50px !important;
+        z-index: 100 !important
+    }
+    div[class^="headbg"] > .menu {
         top: 0 !important
     }
 }
@@ -481,30 +477,34 @@
     }
 }
 
-@-moz-document domain("anime-rus.ru") {
-    #hide_show {
-        display: none !important
-    }
-    .nav {
-        position: relative !important
-    }
-}
-
-@-moz-document domain("anime.anidub.com") {
+@-moz-document
+  domain("anidub.tv"),
+  domain("anime.anidub.com") {
     body > script[src^="/ads.js"] ~ div:not([id]):not([class])[style^="position"][style*="z-index"] {
         display: none !important
     }
 }
 
 @-moz-document
+  domain("anidub.tv"),
   domain("anime.anidub.com"),
   domain("online.anidub.com") {
     body > div[style^="background"], html > body {
         background: none !important
     }
     .top_one ~ script ~ div[id]:not([class]):not([style]):not(#slideout), 
-    body > div[style^="background"] > script ~ div[id]:not([class]) {
+    body > div[style^="background"] > script ~ div[id]:not([class]), 
+    div[id][class]:not([style]) > div[id][class]:empty {
         display: none !important
+    }
+}
+
+@-moz-document domain("anime-rus.ru") {
+    #hide_show {
+        display: none !important
+    }
+    .nav {
+        position: relative !important
     }
 }
 
@@ -579,7 +579,12 @@
   domain("anistar1.org"),
   domain("anistar2.org"),
   domain("anistar3.org"),
-  domain("anistar4.org") {
+  domain("anistar4.org"),
+  domain("anistar5.org"),
+  domain("anistar6.org"),
+  domain("anistar7.org"),
+  domain("anistar8.org"),
+  domain("online-star.org") {
     html > body:not(#id) {
         background-image: none !important
     }
@@ -778,6 +783,16 @@
     }
 }
 
+@-moz-document
+  domain("cc-fan.tv"),
+  domain("cn-fan.tv"),
+  domain("fox-fan.tv"),
+  domain("nf-fan.tv") {
+    .left_panel_shop * {
+        height: 1px !important
+    }
+}
+
 @-moz-document domain("censor.net.ua") {
     body > .widget_header {
         padding-top: 60px !important
@@ -819,7 +834,7 @@
 
 @-moz-document
   domain("cinema-hd.ru"),
-  domain("filmshd.club"),
+  domain("filmshd.tv"),
   domain("hdlava.tv") {
     .wrap {
         padding-top: 0 !important
@@ -856,6 +871,18 @@
 @-moz-document domain("cyberforum.ru") {
     body > div[style*="width"][style*="margin"] {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("cybersport.ru") {
+    body {
+        background-image: none !important
+    }
+    body > a[href][target="_blank"] {
+        display: none !important
+    }
+    #header.position-fixed {
+        position: relative !important
     }
 }
 
@@ -1201,6 +1228,12 @@
     }
 }
 
+@-moz-document domain("forum.ruboard.ru") {
+    #content_container, #content_container #content {
+        margin-right: 0 !important
+    }
+}
+
 @-moz-document domain("forums.goha.ru") {
     .branding-background {
         background-image: none !important
@@ -1301,8 +1334,8 @@
 }
 
 @-moz-document domain("gamemag.ru") {
-    body:not([class]) {
-        background: #121212 !important
+    .top-branding {
+        max-height: 40rem !important
     }
 }
 
@@ -2041,14 +2074,17 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    #all > #ftwhetor [onclick] {
+    body > #all > script[src] + * + div[id]:not([class]) [onclick], 
+    body > #all > script[src] + div[id]:not([class]) [onclick] {
         display: none !important
     }
-    #all > #ftwhetor {
+    body > #all > script[src] + * + div[id]:not([class]), 
+    body > #all > script[src] + div[id]:not([class]) {
         height: 1px !important;
         background: none !important
     }
-    #all > #ftwhetor > .right {
+    body > #all > script[src] + * + div[id]:not([class]) > .right, 
+    body > #all > script[src] + div[id]:not([class]) > .right {
         margin-top: 0 !important
     }
 }
@@ -2060,12 +2096,11 @@
     }
 }
 
-@-moz-document domain("newdeaf-online.net") {
+@-moz-document domain("newdeaf.online") {
     .player-drop, .player-section {
         display: block !important
     }
-    .digit[style*="font-size"], 
-    .player-section[style="background:none;"] + .digit, .reklama.center.head {
+    .digit[style*="font-size"], .reklama.center.head {
         display: none !important
     }
 }
@@ -2899,6 +2934,16 @@
     }
 }
 
+@-moz-document domain("virtualbrest.by") {
+    .left-block > .central-top-events > center, 
+    .right-block > .central-top-events > div[align="center"], 
+    body > div[id][class] > .header > div > div:not([class^="header"]) > *, 
+    body > div[id][class] > .header ~ div[class] > ul > li[class]:not(.ttyyuu), 
+    center > div[style="background: #ffffff; width: 700px+50px; padding-left: 10px;"] {
+        display: none !important
+    }
+}
+
 @-moz-document domain("warfiles.ru") {
     #header + .banner {
         height: 100px !important
@@ -2952,7 +2997,6 @@
     .g-full-size-post ~ [data-role] ~ div:last-child > div:first-child + div:last-child, 
     .g-full-size-post ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child), 
     .js-page > div[class*="-header"] + div[class]:last-child > .o-grid-row:first-child + div[class] + div[class]:not([class*="js-market-indexmode"]):not([class*="content"]):not([class*="grid"]):not([class*="group"]), 
-    .js-page > div[class*="-header"] + div[class]:last-child > .o-grid-row:first-child ~ div[class*="js-market-indexmode"] + div[class]:not([class*="content"]):not([class*="grid"]):not([class*="group"]), 
     .js-page > div[class*="-header"] + div[class]:last-child > div[class*="content"] + div:not([class*="content"]):not([data-role]):not([class*="column"]), 
     .js-page > div[class*="-header"] + div[class]:last-child > div[class]:not([class*="grid"]):not([class*="column"]):first-child + div[class]:not([class*="content"]):not([class*="grid"]):not([class*="group"]), 
     .offer ~ div:not([class*="content"]):not([data-role]):not([class*="columns"]), 
@@ -3094,17 +3138,11 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.ua") {
-    .adv_pos_compare-bottom, .adv_pos_compare-side, 
-    .climate-calendar-container > .climate-calendar-container__content ~ *, 
-    .climate-calendar-container__adv-thin, 
-    .content__section_climate-graph_yes ~ :not([class="content__section"]), 
+    .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
     .home-arrow__bottom, 
-    .weather-maps > .weather-maps__layer-buttons ~ :not([class="weather-maps__timeline"]), 
-    body > .b-page__container > div[hidden] ~ div[class^="content "] .content__right, 
-    body > .b-page__container > div[hidden] ~ div[class^="content "] > div[class*="content__"] ~ :last-child:not([class*="content__"]), 
-    body > .b-page__container [class^="forecast-details__day"] ~ div:not([class="forecast-details__day"]):not([id]), 
+    div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > :not([style]):not(.placeholder-card), 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
-    div[aria-label="Реклама"] {
+    div[aria-label="Pеклама"], div[aria-label="Реклама"] {
         display: none !important
     }
     .serp-header {
