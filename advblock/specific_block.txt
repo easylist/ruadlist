@@ -92,7 +92,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|kinoplanet.
 .1gdz.ru^$script,domain=1gdz.ru
 .4watching.club^$script
 .aa1aa.xyz^$script
-.adriver.$object-subrequest,domain=cybergame.tv|smotri.com
+.adriver.$object,domain=cybergame.tv|smotri.com
 .adult-torrent.com^$script,domain=adult-torrent.com
 .ahs-online.net^$script,domain=ahs-online.net
 .all-best.pro^$script,domain=all-best.pro
@@ -132,7 +132,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|kinoplanet.
 .fast2picture.ru^$script,domain=fast2picture.ru
 .fasti2mages.ru^$script,domain=fasti2mages.ru
 .fetish-porn.online^$script
-.film-adult.com^$object-subrequest
+.film-adult.com^$object
 .film-online.org^$script,domain=film-online.org
 .filmy-2017.net^$script
 .filmy-2017.online^$script
@@ -398,7 +398,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|kinoplanet.
 /forum/images/*$object,domain=hvosty.ru|vsehvosty.ru
 /galya.ru/clients/places/*
 /gb.php?idb_=$domain=e-katalog.ru|ek.ua|m.ua
-/getVast*preroll&license=$object-subrequest,domain=rutube.ru
+/getVast*preroll&license=$object,domain=rutube.ru
 /gorilla.php?token$domain=pavlodar.news|pavon.kz
 /gorod24popup/$domain=feo.ua|xn--e1asq.xn--p1ai
 /https?://(?!(mc\.yandex\.ru|www\.google-analytics\.com)/)/$third-party,script,subdocument,domain=massivmebel.by
@@ -502,7 +502,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||13rus.ru/img/*/
 ||13rus.ru/img/luhban.jpg
 ||17reg.ru^$script
-||188.93.22.165/crossdomain.xml$object-subrequest
+||188.93.22.165/crossdomain.xml$object
 ||1bshop.ru^$third-party
 ||1in.am/banners/
 ||1istochnik.ru/attachments/bns/
@@ -550,7 +550,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||4pda.ru/ad/www/images/$image
 ||4rama.com/images/strus/
 ||50.7.134.117/*.mp4
-||50.7.134.117/ttv_omorp/vast.xml$object-subrequest
+||50.7.134.117/ttv_omorp/vast.xml$object
 ||5ka.ru/js/banners.
 ||5ka.ru/jscr/
 ||5terka.com^*/img/bg
@@ -588,7 +588,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||actualcomment.ru^*/banner/
 ||actualtraffic.ru/uploads/promo/
 ||ad.admitad.com^$domain=1track.ru|24warez.ru|2x2forum.ru|3porosenka.ru|5terka.com|alive-ua.com|appsgames.ru|audioknigi.club|bakemono.ru|bdobase.info|bigtorrent.org|bigtorrents.ru|bloknot-khersona.ks.ua|comodity.ru|dentv.ru|dokumentalkino.net|elektrosat.ru|etika-education.ru|filmitorrent.site|gameru.net|gidonline.one|gooool.org|goroskop.ru|igri-2012.ru|igui.mobi|ilenta.com|inform-ua.info|kino-govna.net|kritika24.ru|list-org.com|mywishlist.ru|ognennoetv.ru|ogribax.ru|onedivision.ru|osnovu-ved.ru|outsidethebox.ms|parazit24.me|pluggedin.ru|privatbankrf.ru|real-vin.com|revelationonlinedb.ru|rus-game.net|rusplt.ru|samelectric.ru|sovetremont.com|sshut.ru|steampass.ru|superg.ru|svxg.su|tmbw.ru|topmmo-games.ru|torrentigri.xyz|torrentiko.net|trackitonline.ru|tuttop.com|tvoilokony.ru|vizazh-2.ru|vklasse.org|volga.news|vsetop.org|webtoks.ru|zhaparova.ru
-||ad.adriver.ru^$object-subrequest,domain=onlineguru.ru|peers.tv|seasonvar.ru
+||ad.adriver.ru^$object,domain=onlineguru.ru|peers.tv|seasonvar.ru
 ||ad.babyblog.ru/
 ||ad.cbonds.info/
 ||ad.cheatsbase.ru/
@@ -604,11 +604,11 @@ igdz1.ru^$script,domain=igdz.ru
 ||adcdn.tv^$domain=tr.anidub.com
 ||adf.kinoprofi.su/
 ||adf.kinosky.net/
-||adfox.ru^$object-subrequest,domain=player.vgtrk.com
+||adfox.ru^$object,domain=player.vgtrk.com
 ||admeo.ru^$domain=ut3mk.at.ua
 ||admin-se.ru^*php?$script,xmlhttprequest
 ||ado.delfi.ee^
-||adriver.ru/cgi-bin/erle.cgi?$object-subrequest,domain=echo.msk.ru
+||adriver.ru/cgi-bin/erle.cgi?$object,domain=echo.msk.ru
 ||ads-u.depositfiles.com/
 ||ads-u.dfiles.ru/
 ||ads.echo.msk.ru/
@@ -900,7 +900,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||cc/banners/$domain=capricornus.cc|moonwalk.cc
 ||cdn.anison.fm/images$object
 ||cdn.igromania.ru/mnt/site_backgrounds/
-||cdn.ivi.ru/*vcp.digitalaccess.ru/$object-subrequest,domain=ivi.ru
+||cdn.ivi.ru/*vcp.digitalaccess.ru/$object,domain=ivi.ru
 ||cdn.kinozal.ga^$script
 ||cdn.muzofon.tech/banner/$image
 ||cdn.net.ru/config.js
@@ -1040,8 +1040,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||depositfiles.com/images/zillya/
 ||dermatitanet.ru/template/js/script.js
 ||design-for.net/uploads/banner/$image
-||dfs.digitalaccess.ru^$object-subrequest
-||dfs.vcp.ivi.ru/mp4-hi/*,*/f*.vcp.digitalaccess.ru/contents/*/*/*.mp4?sessionID=*.*&rand=0.$object-subrequest,domain=ivi.ru
+||dfs.digitalaccess.ru^$object
+||dfs.vcp.ivi.ru/mp4-hi/*,*/f*.vcp.digitalaccess.ru/contents/*/*/*.mp4?sessionID=*.*&rand=0.$object,domain=ivi.ru
 ||dgrad-host.com/banner.$domain=rootden.ru
 ||dialog.ua/img/300x300_
 ||diary.ru^*/diaryDefault728x90.
@@ -1370,7 +1370,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||gotps3.ru/images/a/*.gif|
 ||gotps3.ru/images/a/*.jpg|
 ||govoritmoskva.ru/static/ekstrimizm.gif
-||gpm-digital.com^$object-subrequest,domain=carambatv.ru|goodgame.ru
+||gpm-digital.com^$object,domain=carambatv.ru|goodgame.ru
 ||grandars.ru/img/kvartalkin.gif
 ||grani.ru/files/$object
 ||gsmbaza.ru/images/ownpictures/
@@ -1837,7 +1837,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||media.aso.altapress.ru/
 ||media.kaifolog.ru$script,domain=kaifolog.ru
 ||media.v102.ru/abs/
-||media.v102.ru/players/advplayer$object-subrequest
+||media.v102.ru/players/advplayer$object
 ||media1.noi.md/uploads/banner/
 ||mediametrics.ru/img/banners/$image
 ||mediananny.com^*/images/backgrounds/*unnamed.jpg
@@ -1951,7 +1951,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||motoua.net/i/$subdocument
 ||motovolg.com/assets/images/5.jpg
 ||mountain.ru/img.php?*/banner$image
-||mover.uz/*vast*=pre-roll$object-subrequest
+||mover.uz/*vast*=pre-roll$object
 ||mover.uz/adb/
 ||mover.uz/www/serving/
 ||mover.uz^*branding.
@@ -2238,7 +2238,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||planshetu.ru/i/abp/
 ||platimzafoto.ru/file.js
 ||platon.kz^$object
-||play.aniland.org^*.swf^$object-subrequest
+||play.aniland.org^*.swf^$object
 ||player.*.ru*/instreamatic.min.$script,stylesheet
 ||player.*.ru*/unisound.min.$script,stylesheet
 ||player.kinotreiler.com/media_adv/
@@ -2792,7 +2792,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||teremok.org.ua/partner/images/
 ||terrikon.com/i/ad/
 ||tes-game.ru^*/vulkan.gif
-||teslagear.ru^$object-subrequest,domain=pladform.ru|smotri.com
+||teslagear.ru^$object,domain=pladform.ru|smotri.com
 ||testkrok.org.ua/static/kmu.$image
 ||texnic.ru/img/a/$image
 ||textarchive.ru/abnormal.php
