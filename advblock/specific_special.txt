@@ -578,6 +578,8 @@ rns.online#?#div[id*="teaser-header"]:-abp-contains(Новости партне�
 www.rambler.ru##div[id^="adfox"]
 www.rambler.ru#?#main header ~ * div[class]:-abp-has(> div[id^="adfox"])
 www.rambler.ru#?#main header ~ * div[class^="_"] ~ div[class^="_"]:-abp-has(> div[class] > [id^="adfox"])
+||cumbersome.rambler.ru^$csp=script-src
+||cumbersome.rambler.ru^$popup
 ||keenwilling.rambler.ru^$csp=script-src
 ||keenwilling.rambler.ru^$popup
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
