@@ -4893,7 +4893,9 @@ echo.msk.ru##div > [media] ~ div[id][class] ~ div[id]:not([class]):last-child
 mail.google.com##div.ae5
 minfin.com.ua##div.au-administration-warning
 mport.ua##div.b-widgets
-redfm.ru##div.news.grid_16 > .banner ~ *
+redfm.ru#?#div.news.grid_16 > h3:-abp-has(span:-abp-contains(Реклама))
+redfm.ru#?#div.news.grid_16 > h3:-abp-has(span:-abp-contains(Реклама)) ~ a[href][target="_blank"]
+redfm.ru#?#div.news.grid_16 > h3:-abp-has(span:-abp-contains(Реклама)) ~ div[style="overflow: hidden;"]
 u-news.com.ua##div.side_block
 festima.ru,mydiv.net,vargr.ru#?#div:-abp-has(> .adsbygoogle)
 finversia.ru#?#div:-abp-has(> .banner-bdm )
@@ -5516,7 +5518,6 @@ infox.ru,radiorecord.fm,ria-m.tv#?#h2:-abp-contains(/реклама/i)
 dnews.dn.ua,newstube.ru#?#h2:-abp-contains(Новости партнеров)
 newsone.ua#?#h3:-abp-contains(/lentainform|mixadvert|redtram/i)
 5-tv.ru#?#h3:-abp-contains(/Новости СМИ2|Новости Лентаинформ/)
-redfm.ru#?#h3:-abp-contains(Банеры)
 apostrophe.ua,fishki.net,hvylya.net,inforeactor.ru#?#h3:-abp-contains(Новости партнеров)
 erofishki.cc,fishki.net,i-news.kz,iaropolch.ru,mediananny.com,tochka.net#?#h3:-abp-contains(Новости партнёров)
 putin-news.ru#?#h4:-abp-contains(Новости партнёров)
