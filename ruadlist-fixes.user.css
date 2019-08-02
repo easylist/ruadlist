@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190721.1654
+@version 0.20190802.1817
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -78,6 +78,7 @@
   domain("kinobar.cc"),
   domain("kinobe.club"),
   domain("kinoplanet.biz"),
+  domain("kintor.org"),
   domain("koshara.net"),
   domain("kronverkcinema.ua"),
   domain("live-rutor.org"),
@@ -338,6 +339,7 @@
 
 @-moz-document
   domain("adultmult.be"),
+  domain("adultmult.li"),
   domain("adultmult.net"),
   domain("adultmult.ru"),
   domain("adultmult.xyz") {
@@ -373,6 +375,7 @@
 
 @-moz-document
   domain("agorov.org"),
+  domain("animerost.org"),
   domain("animevost.org"),
   domain("animevost1.org"),
   domain("animevost2.org"),
@@ -566,18 +569,6 @@
     }
 }
 
-@-moz-document domain("aniplay.tv") {
-    body {
-        cursor: auto !important
-    }
-    .ap2-main-header-banner {
-        display: none !important
-    }
-    .ap2-main-header {
-        height: 30px !important
-    }
-}
-
 @-moz-document
   domain("anistar.org"),
   domain("anistar1.org"),
@@ -635,6 +626,18 @@
   domain("audioboo.ru") {
     .right-block-content > .slider {
         padding: 0 !important
+    }
+}
+
+@-moz-document
+  domain("autonews.ru"),
+  domain("rbc.ru"),
+  domain("rbcplus.ru"),
+  domain("sportrbc.ru") {
+    .banner, .banner__container, .banner__filmstrip {
+        position: absolute !important;
+        top: -10000px !important;
+        left: -10000px !important
     }
 }
 
@@ -952,8 +955,11 @@
 
 @-moz-document
   domain("drive2.com"),
-  domain("drive2.ru") {
-    [data-role="recommendations scrolltracking"] ~ .o-columns > div:first-child {
+  domain("www.drive2.ru") {
+    .o-columns > div:first-child ~ .o-columns__side {
+        display: none !important
+    }
+    .o-columns > div:first-child {
         max-width: unset !important
     }
 }
@@ -1802,7 +1808,7 @@
 
 @-moz-document
   domain("kinoxa.net"),
-  domain("lordsfilm.tv") {
+  domain("lordsfilms.tv") {
     body > .wrap {
         margin-top: 0 !important
     }
@@ -2217,12 +2223,6 @@
     }
 }
 
-@-moz-document domain("onlinelife.club") {
-    iframe#iframe[src*="player"] {
-        height: 630px !important
-    }
-}
-
 @-moz-document domain("oper.ru") {
     #wrapper {
         background-image: none !important;
@@ -2617,6 +2617,15 @@
     }
 }
 
+@-moz-document domain("sherdog.com") {
+    body > div[class]:not([id])[style^="background-color"][style$="z-index: 100000000;"] {
+        display: none !important
+    }
+    html, html > body {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("simhost.org") {
     .main {
         margin-top: 50px !important
@@ -2830,15 +2839,6 @@
     }
 }
 
-@-moz-document domain("torror.ru") {
-    html > body:not(#id) {
-        background: #abc4a1 !important
-    }
-    body > #page {
-        padding-top: 0 !important
-    }
-}
-
 @-moz-document domain("tort.fm") {
     #topper_up {
         height: 88px !important
@@ -3006,13 +3006,9 @@
 
 @-moz-document domain("www.drive2.ru") {
     .dv-post-header, 
-    .g-full-size-post ~ [data-role] ~ div:last-child > div:first-child + div:last-child, 
     .g-full-size-post ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child), 
-    .js-page > div[class*="-header"] + div[class]:last-child > .o-grid-row:first-child + div[class] + div[class]:not([class*="js-market-indexmode"]):not([class*="content"]):not([class*="grid"]):not([class*="group"]), 
-    .js-page > div[class*="-header"] + div[class]:last-child > div[class*="content"] + div:not([class*="content"]):not([data-role]):not([class*="column"]), 
-    .js-page > div[class*="-header"] + div[class]:last-child > div[class]:not([class*="grid"]):not([class*="column"]):first-child + div[class]:not([class*="content"]):not([class*="grid"]):not([class*="group"]), 
     .offer ~ div:not([class*="content"]):not([data-role]):not([class*="columns"]), 
-    div[id]:not([class]) > div[class]:not([id])[style="width: 970px;"] {
+    [class*="-base-mobile"] ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child) {
         display: none !important
     }
 }
@@ -3059,7 +3055,8 @@
     body > div.shadow.shadow-restyle {
         box-shadow: #333 0 0 15px !important
     }
-    #top > div[id][style^="height: 210px"], .rightTeaser > *, 
+    #top > div[id][style^="height: 210px"], 
+    .app__content div[class*="top-banner"], .rightTeaser > *, 
     [class*="adblock-warning"], div[class^="aNL"], div[data-type="teaserspec"] {
         display: none !important
     }
@@ -3111,7 +3108,7 @@
     }
 }
 
-@-moz-document domain("www.onlinelife.club") {
+@-moz-document domain("www.online-life.xyz") {
     html > body {
         color: #f1f1f1 !important
     }
@@ -3151,7 +3148,7 @@
   domain("yandex.ru"),
   domain("yandex.ua") {
     .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
-    .home-arrow__bottom, 
+    .direct-desktop_white, .home-arrow__bottom, 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > :not([style]):not(.placeholder-card), 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Pеклама"], div[aria-label="Реклама"] {
@@ -3208,6 +3205,15 @@
 @-moz-document domain("zagonka.tv") {
     .sitebox:not(#id) {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("zavtra.fun") {
+    html > body:not(#id) {
+        background: #abc4a1 !important
+    }
+    body > #page {
+        padding-top: 0 !important
     }
 }
 
