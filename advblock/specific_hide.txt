@@ -2547,10 +2547,8 @@ cameleo.xyz##.main > a[href*="bit.ly"] > img
 echo.msk.ru##.main > div > [id][class*=" "] > br
 echo.msk.ru#?#.main > div > [id][class*=" "] > br ~ [id]:-abp-contains(Курс валют)
 echo.msk.ru##.main > div > [id][class*=" "] > br ~ div ~ * a:not([href^="/"]):not([href*="/dobroradio/"])
-echo.msk.ru##.main > div > [id][class*=" "] > div[style*="overflow"]
-echo.msk.ru##.main > div > [id][class*=" "] > div[style*="overflow"] ~ * a:not([href^="/"]):not([href*="/dobroradio/"])
-echo.msk.ru##.main > div > [id][class*=" "] > div[style*="overflow"] ~ br
-echo.msk.ru##.main > div > [id][class*=" "] > div[style*="overflow"] ~ div:nth-of-type(-n+6)
+echo.msk.ru##.main > div > [id][class*=" "] > div:empty
+echo.msk.ru##.main > div > [id][class*=" "] > div[class*=" "]:nth-of-type(-n+7)
 mk.ru#?#.main > div:-abp-has(> script:-abp-contains(blockId))
 driveroff.net,samlab.ws##.main > div:first-child[style*="99%;"]
 gorod.cn.ua##.main > div[class$="-block"]
@@ -4768,6 +4766,7 @@ zippyshare.com##body > :not(.container)
 kaztorka.org##body > :not(div):not([id]):not([class]):not([style]):not(script)
 echo.msk.ru##body > [class] > script ~ :not(.header):not(.main):not(.footer)
 echo.msk.ru##body > [class] > script ~ [id]
+echo.msk.ru##body > [class] > script ~ center
 riotpixels.com##body > [class^="side-url-"]
 edufuture.biz,popgun.ru,xvatit.com##body > [onclick]
 anidub.tv,anime.anidub.com,lostfilm.tv,online.anidub.com,xakep.ru##body > a
