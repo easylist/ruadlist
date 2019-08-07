@@ -11,7 +11,7 @@
 %include advblock.txt%
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other ---
-$third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
+$third-party,other,xmlhttprequest,domain=alforenao.com|clastarti.cc|mastarti.com
 /^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
@@ -30,7 +30,7 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|mastarti.com
 777streams.pro,7streams.pro,channels247.net,hd24.pro,hd365.ws,hdstream365.com,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport7.biz,sportbar.biz,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
 7days.ru,7ogorod.ru,9111.ru,agrognom.ru,aif.ru,alau.kz,argumenti.ru,argumentiru.com,blamper.ru,etotprazdnik.ru,fastpic.ru,fermilon.ru,globuss24.ru,gorodche.ru,imperiyanews.ru,km.ru,koskomp.ru,mashintop.ru,maxpark.com,newsland.com,pasmi.ru,proroofer.ru,radarmedia.net,shtrafsud.ru,sobesednik.ru,sovsport.ru,svpressa.ru,tdnu.ru,theplace.ru,yconsult.ru##+js(abort-on-property-write.js, __XABStatus)
 7days.ru,7ogorod.ru,9111.ru,agrognom.ru,aif.ru,alau.kz,argumenti.ru,argumentiru.com,blamper.ru,etotprazdnik.ru,fastpic.ru,fermilon.ru,globuss24.ru,gorodche.ru,imperiyanews.ru,km.ru,koskomp.ru,mashintop.ru,maxpark.com,newsland.com,pasmi.ru,proroofer.ru,radarmedia.net,shtrafsud.ru,sobesednik.ru,sovsport.ru,svpressa.ru,tdnu.ru,theplace.ru,yconsult.ru##+js(abort-on-property-write.js, xSrcSupport)
-@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|mastarti.com|pandastream.cc|streamguard.cc|streamtojupiter.me
+@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|clastarti.cc|mastarti.com|pandastream.cc|streamguard.cc|streamtojupiter.me
 @@/getCodeTest?$script,badfilter,domain=auto.vesti.ru|gubernia.com
 @@/prepareCode?$script,badfilter,domain=auto.vesti.ru|gubernia.com
 @@||ads.adfox.ru/*/getBulkTest/$xmlhttprequest,domain=www.kinopoisk.ru
