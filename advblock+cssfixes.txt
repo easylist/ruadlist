@@ -78,6 +78,7 @@ gazeta.ru##+js(abort-current-inline-script.js, fetch, /24smi\.net|infox\.sg|lent
 gazeta.ru##+js(abort-current-inline-script.js, setTimeout, /24smi\.net|infox\.sg|lentainform\.com|mirtesen\.ru/)
 gidonline.eu,kinogo.eu,queen-time.ru##+js(abort-on-property-read.js, utarget_script)
 gismeteo.ua##^script:has-text("zmctrack")
+helpsetup.ru,meteoservice.ru,vsthouse.ru##+js(abort-on-property-write.js, adregain_wall)
 hideip.me#@#.node-promoted
 igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20px)
 inforeactor.ru##+js(abort-current-inline-script.js, document.createElement, /directadvert|infox|lentainform|mainews|marketgid|nnn|smi2/)
@@ -96,7 +97,6 @@ liveinternet.ru##+js(cookie-remover.js, /^bltsr|^crookie/)
 livejournal.com##+js(set-constant.js, Object.prototype._begun, undefined)
 livesport.ws##+js(abort-current-inline-script.js, setTimeout, adblockwarn)
 melodiafm.ua###myPlay > .fa:not(.fa-stop):not(.fa-play):style(background: white !important; width: 26px !important; height: 26px !important)
-meteoservice.ru,vsthouse.ru##+js(abort-on-property-write.js, adregain_wall)
 money-pic.ru##+js(abort-current-inline-script.js, q330)
 muzlan.top##+js(nano-setInterval-booster.js, .numcard)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to,radikal.ru,www.vesti.ru##+js(abort-current-inline-script.js, document.createElement, String.fromCharCode)
@@ -146,7 +146,6 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, St
 ||fermilon.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
 ||globuss24.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
-||helpsetup.ru/js/ajaxup.js
 ||imperiyanews.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 ||koskomp.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
 ||loadercdn.com^$important,script,redirect=noopjs
