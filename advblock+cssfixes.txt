@@ -11,6 +11,7 @@
 %include advblock.txt%
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other ---
+$popup,badfilter,domain=scrin.org
 $third-party,other,xmlhttprequest,domain=alforenao.com|clastarti.cc|mastarti.com
 /^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
 /^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
@@ -112,6 +113,7 @@ rustorka.club,rustorka.com,rustorka.innal.top,rustorka.net,rustorkacom.lib,tapoc
 rustorka.club,rustorka.com,rustorka.innal.top,rustorka.net,rustorkacom.lib,tapochek.net##+js(abort-on-property-write.js, antiadblock)
 rustorka.club,rustorka.com,rustorka.innal.top,rustorka.net,rustorkacom.lib,tapochek.net##+js(cookie-remover.js, /(u_count|gophp|st2|st3)/)
 scrin.org##+js(abort-on-property-read.js, Date.prototype.toUTCString)
+scrin.org##+js(remove-attr.js, href, [href*="redirect"])
 spac1.me,spcs.me,strip2.xxx##+js(abort-on-property-read.js, SpacesClickunder)
 studizba.com##+js(abort-on-property-read.js, m205)
 studizba.com##+js(nano-setInterval-booster.js, #timer)
