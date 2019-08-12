@@ -1,14 +1,13 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190802.1817
+@version 0.20190813.210
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
 
 @-moz-document
   domain("1plus1.ua"),
-  domain("24video.guru"),
   domain("24video.site"),
   domain("4watching.club"),
   domain("aghdrezka.com"),
@@ -140,7 +139,6 @@
 }
 
 @-moz-document
-  domain("24video.guru"),
   domain("24video.site"),
   domain("aghdrezka.com"),
   domain("ahdrezka.com"),
@@ -234,7 +232,6 @@
 }
 
 @-moz-document
-  domain("24video.guru"),
   domain("24video.site"),
   domain("biqle.ru"),
   domain("fainaidea.com"),
@@ -341,6 +338,7 @@
   domain("adultmult.be"),
   domain("adultmult.li"),
   domain("adultmult.net"),
+  domain("adultmult.pm"),
   domain("adultmult.ru"),
   domain("adultmult.xyz") {
     body {
@@ -572,6 +570,10 @@
 @-moz-document
   domain("anistar.org"),
   domain("anistar1.org"),
+  domain("anistar10.org"),
+  domain("anistar11.org"),
+  domain("anistar12.org"),
+  domain("anistar13.org"),
   domain("anistar2.org"),
   domain("anistar3.org"),
   domain("anistar4.org"),
@@ -579,6 +581,7 @@
   domain("anistar6.org"),
   domain("anistar7.org"),
   domain("anistar8.org"),
+  domain("anistar9.org"),
   domain("online-star.org") {
     html > body:not(#id) {
         background-image: none !important
@@ -1357,6 +1360,7 @@
 
 @-moz-document
   domain("gametech.ru"),
+  domain("gidonline.fun"),
   domain("gidonline.io"),
   domain("mma-today.net"),
   domain("oblozhki.net"),
@@ -1365,6 +1369,15 @@
   domain("virusinfo.info") {
     body:not(#id), html:not(#id) {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("gasolina-online.com") {
+    #facebook-modal, body.modal-open > .modal-backdrop {
+        display: none !important
+    }
+    body.modal-open {
+        overflow: auto !important
     }
 }
 
@@ -2016,7 +2029,8 @@
   domain("music.yandex.ru"),
   domain("music.yandex.ua") {
     .page-root > div[class]:nth-child(-n+2)[style^="display: block;"], 
-    div[class^="sidebar"] .no-ads {
+    div[class^="sidebar"] .no-ads, 
+    div[class^="sidebar"] .teaser-autoplaylist ~ .teaser ~ div[data-b] {
         display: none !important
     }
 }
@@ -2195,6 +2209,12 @@
 @-moz-document domain("obozrevatel.com") {
     body > .header {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("ok.ru") {
+    .feed-list > .feed-w > [class="feed h-mod"] {
+        display: none !important
     }
 }
 
@@ -2541,6 +2561,7 @@
 @-moz-document
   domain("rp5.by"),
   domain("rp5.kz"),
+  domain("rp5.md"),
   domain("rp5.ru"),
   domain("rp5.ua") {
     #content > div[id]:nth-child(2) > div[id]:not([id*="-"]):not([class]):nth-child(2) {
@@ -3066,9 +3087,12 @@
     }
     .app_app-width_default .app__header_margin-bottom_brand, 
     .app_app-width_default .app__header_margin-bottom_default, 
-    .underheader-superbanner-wrapper, 
     body > div[id]:not([class]):not([style]):not([id*="_"]):not(#popup) {
         margin-bottom: 0 !important
+    }
+    .underheader-superbanner-wrapper {
+        margin-bottom: 0 !important;
+        min-height: 0 !important
     }
     html:not(#id) > body:not(#id) > #top {
         margin-bottom: auto !important
@@ -3084,6 +3108,9 @@
     }
     table[style="background-color: #fff; width: 850px; margin: 24px auto 0"] {
         margin-top: auto !important
+    }
+    .app__content div[style="min-height:250px"] {
+        min-height: 0 !important
     }
     .branding, .kp-direct-customize {
         position: fixed !important;
