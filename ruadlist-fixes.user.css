@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190813.210
+@version 0.20190813.1846
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -2098,18 +2098,12 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    body > #all > script[src] + * + div[id]:not([class]) [onclick], 
-    body > #all > script[src] + div[id]:not([class]) [onclick] {
-        display: none !important
+    body > #all > script[src] ~ div[id]:not([class]) {
+        height: auto !important
     }
-    body > #all > script[src] + * + div[id]:not([class]), 
-    body > #all > script[src] + div[id]:not([class]) {
-        height: 1px !important;
-        background: none !important
-    }
-    body > #all > script[src] + * + div[id]:not([class]) > .right, 
-    body > #all > script[src] + div[id]:not([class]) > .right {
-        margin-top: 0 !important
+    body > #all > script[src] ~ div[id]:not([class]) > .right {
+        position: inherit !important;
+        margin-top: auto !important
     }
 }
 
