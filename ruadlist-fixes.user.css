@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190813.1846
+@version 0.20190819.1609
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -483,6 +483,7 @@
 }
 
 @-moz-document
+  domain("anidub.me"),
   domain("anidub.tv"),
   domain("anime.anidub.com") {
     body > script[src^="/ads.js"] ~ div:not([id]):not([class])[style^="position"][style*="z-index"] {
@@ -491,6 +492,7 @@
 }
 
 @-moz-document
+  domain("anidub.me"),
   domain("anidub.tv"),
   domain("anime.anidub.com"),
   domain("online.anidub.com") {
@@ -510,6 +512,17 @@
     }
     .nav {
         position: relative !important
+    }
+}
+
+@-moz-document domain("anime-vost.org") {
+    #Menu {
+        background: none !important;
+        height: 55px !important
+    }
+    #Menu > nav ul {
+        bottom: auto !important;
+        z-index: 100 !important
     }
 }
 
@@ -696,6 +709,18 @@
 @-moz-document domain("bestpersons.ru") {
     #userTabs {
         float: none !important
+    }
+}
+
+@-moz-document
+  domain("beta.gismeteo.ru"),
+  domain("www.gismeteo.by"),
+  domain("www.gismeteo.kz"),
+  domain("www.gismeteo.md"),
+  domain("www.gismeteo.ru") {
+    body[class*="-ru"] > .content > div[class]:last-child > div > div[class]:first-child ~ div:nth-child(n+1), 
+    body[class*="-ru"] > div[class]:not([id]):nth-child(-n+2) {
+        display: none !important
     }
 }
 
@@ -919,9 +944,7 @@
         background-image: none !important;
         padding-top: 0 !important
     }
-    #adsincont, .main-b-right-c-right > .m-memes ~ *, 
-    .subline ~ :not([id="navigation"]):not([class="page-width"]), 
-    [class$="sidebar"] > :not(section):not(.section), 
+    #adsincont, 
     body > [id] > div[class] > div:not([id]):not([class]):not([style]) > a[href][target="_blank"], 
     div[class^="b"][class*="anners"] {
         display: none !important
@@ -1490,6 +1513,12 @@
     }
 }
 
+@-moz-document domain("hdkinomir.cc") {
+    #wrapper > .menu {
+        margin-top: auto !important
+    }
+}
+
 @-moz-document domain("hdlava.me") {
     body > header {
         margin-bottom: 0 !important
@@ -1883,6 +1912,13 @@
     }
 }
 
+@-moz-document domain("list-org.com") {
+    .menu > #map ~ div {
+        background: transparent !important;
+        border: transparent !important;
+    }
+}
+
 @-moz-document
   domain("livecars.ru"),
   domain("livesport.ru") {
@@ -2098,12 +2134,14 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    body > #all > script[src] ~ div[id]:not([class]) {
-        height: auto !important
+    .footerLeft, .footerRight, body, html {
+        background-color: #fff7e3 !important
     }
-    body > #all > script[src] ~ div[id]:not([class]) > .right {
-        position: inherit !important;
-        margin-top: auto !important
+    body > [onclick], body > p {
+        display: none !important
+    }
+    #all {
+        margin-top: 0 !important
     }
 }
 
@@ -2203,12 +2241,6 @@
 @-moz-document domain("obozrevatel.com") {
     body > .header {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("ok.ru") {
-    .feed-list > .feed-w > [class="feed h-mod"] {
-        display: none !important
     }
 }
 
@@ -2613,6 +2645,12 @@
     }
 }
 
+@-moz-document domain("scrin.org") {
+    body > .box.radius[style*="804px"] {
+        left: calc(50% - 402px) !important
+    }
+}
+
 @-moz-document domain("season-var.net") {
     #main-wrapper {
         top: 0 !important
@@ -2989,13 +3027,6 @@
     }
 }
 
-@-moz-document domain("widgets.kinopoisk.ru") {
-    .app-container > [data-reactroot] > div[class], 
-    .app-container > [data-reactroot] > div[class] > div[class] {
-        border-radius: 0 !important
-    }
-}
-
 @-moz-document domain("wotspeak.ru") {
     #popup-1 {
         display: none !important
@@ -3057,63 +3088,15 @@
 }
 
 @-moz-document domain("www.kinopoisk.ru") {
-    html:not(#id) > body:not(#id) {
-        background-color: #d5d5d5 !important;
-        overflow: auto !important
+    body > .shadow {
+        box-shadow: 0 -8px 15px #333333 !important
     }
-    .randomMovie .movieBlock {
-        background-color: white !important
-    }
-    body > .app-container, html:not(#id) {
-        background: none !important
-    }
-    body > div.shadow.shadow-restyle {
-        box-shadow: #333 0 0 15px !important
-    }
-    #top > div[id][style^="height: 210px"], 
-    .app__content div[class*="top-banner"], .rightTeaser > *, 
     [class*="adblock-warning"], div[class^="aNL"], div[data-type="teaserspec"] {
         display: none !important
     }
-    .rightTeaser {
-        height: 2px !important;
-        margin-top: 0 !important
-    }
-    .app_app-width_default .app__header_margin-bottom_brand, 
-    .app_app-width_default .app__header_margin-bottom_default, 
-    body > div[id]:not([class]):not([style]):not([id*="_"]):not(#popup) {
-        margin-bottom: 0 !important
-    }
-    .underheader-superbanner-wrapper {
-        margin-bottom: 0 !important;
+    .app__content div[style="min-height:250px"], 
+    body > div[id]:not([class]) + div[class]:not([id]):nth-child(-n+5) {
         min-height: 0 !important
-    }
-    html:not(#id) > body:not(#id) > #top {
-        margin-bottom: auto !important
-    }
-    div[id][style*="min-height: 600px"] > table[style*="margin"] {
-        margin-top: 0 !important
-    }
-    #top_3banners {
-        margin-top: 20px !important
-    }
-    .profileInserts ~ form, .profileInserts ~ table[style] {
-        margin-top: 30px !important
-    }
-    table[style="background-color: #fff; width: 850px; margin: 24px auto 0"] {
-        margin-top: auto !important
-    }
-    .app__content div[style="min-height:250px"] {
-        min-height: 0 !important
-    }
-    .branding, .kp-direct-customize {
-        position: fixed !important;
-        top: -10000px !important;
-        left: -10000px !important
-    }
-    .profileInserts, .profileInsertsMenu {
-        top: auto !important;
-        margin-top: 0 !important
     }
     html > body {
         zoom: 98% !important
