@@ -2,7 +2,7 @@
 /^https?://[^\s]+\.lentainform\.com/[^\s]{150,}/$csp=script-src
 /^https?://[^\s]+\.nahnews\.org/[^\s]{150,}/$csp=script-src
 /^https?://[^\s]+\.politexpert\.net/[^\s]{150,}/$csp=script-src
-/^https?://scrin.org/[^\s]/$csp=script-src
+/^https?://scrin.org/[^\s]/$csp=sandbox allow-same-origin;
 /gateway/aHR0c$csp=script-src
 @@||simpsonsua.com.ua/user/*/#|$csp=script-src 'self' * data:
 @@||simpsonsua.com.ua/user/*/|$csp=script-src 'self' * data:
@@ -67,6 +67,7 @@
 ||tele.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ||top.24smi.info^$csp=script-src
 ||ukrlib.com.ua^$csp=script-src 'self' * blob: data:
+||utarget.ru^$csp=script-src
 ||vazhno.info^$csp=script-src 'self'
 ||vazhno.ru^$csp=script-src 'self'
 ||vseokrohe.ru^$csp=script-src 'self' * 'unsafe-inline' data:
