@@ -18,6 +18,7 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|clastarti.cc|mastarti.com
 /^https?://yandex\.(by|kz|ru|ua)\/pogoda\/(compare\/)/$csp=script-src 'self' * data: blob: 'unsafe-eval'
 /^https?://yandex\.(by|kz|ru|ua)\/pogoda\/[-a-z0-9._?&=*]{2,40}\/(details|month)/$csp=script-src 'self' * data: blob: 'unsafe-eval'
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
+/^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
 /pagead2.$important,domain=okino.ua
 24smi.org,gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru,kinopoisk.ru,liveinternet.ru##+js(set-constant.js, Object.prototype.initYaDirect, undefined)
@@ -110,6 +111,8 @@ rueconomics.ru##+js(abort-on-property-read.js, loaded_block_nnn)
 rustorka.club,rustorka.com,rustorka.innal.top,rustorka.net,rustorkacom.lib,tapochek.net##+js(abort-current-inline-script.js, ads_script)
 rustorka.club,rustorka.com,rustorka.innal.top,rustorka.net,rustorkacom.lib,tapochek.net##+js(abort-on-property-write.js, antiadblock)
 rustorka.club,rustorka.com,rustorka.innal.top,rustorka.net,rustorkacom.lib,tapochek.net##+js(cookie-remover.js, /(u_count|gophp|st2|st3)/)
+scrin.org##+js(setTimeout-defuser.js, msg_pop)
+scrin.org##.radius.box > font:has-text(/adblock/i)
 spac1.me,spcs.me,strip2.xxx##+js(abort-on-property-read.js, SpacesClickunder)
 studizba.com##+js(abort-on-property-read.js, m205)
 studizba.com##+js(nano-setInterval-booster.js, #timer)
