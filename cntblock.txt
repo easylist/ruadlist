@@ -84,6 +84,7 @@ ok.ru#?#.feed-list > .feed-w:-abp-has(.feed_ava ~ div div > [class] ~ [class] ~ 
 /^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
 /^https?://rkn\.gov\.ru\/(?!js\/)+[a-z0-9]{15,25}\.js\?+[0-9]{7,15}/$script,domain=rkn.gov.ru
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
+/v.php?id=$third-party,other,xmlhttprequest,domain=kodik.cc|kodik.info|kodikdb.com
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|clastarti.cc|mastarti.com|pandastream.cc|streamguard.cc|streamtojupiter.me
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##[id*="adbloc"]
@@ -292,7 +293,7 @@ _pagespeed_beacon?
 ||c.zero.kz^$third-party
 ||carline.ru/best-top/count?
 ||catalog.metka.ru^$third-party
-||cdn.jsdelivr.net/npm/yandex-metrica-watch/$domain=~kodik.cc|~kodikdb.com
+||cdn.jsdelivr.net/npm/yandex-metrica-watch/$domain=~kodik.cc|~kodik.info|~kodikdb.com
 ||cfv4.com^$third-party
 ||chartbeat.com^$third-party
 ||chatov.net/img.php?id=
