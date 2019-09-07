@@ -845,25 +845,14 @@ rasp.yandex.by,rasp.yandex.kz,rasp.yandex.ru,rasp.yandex.ua##.DirectSnippet
 rasp.yandex.by,rasp.yandex.kz,rasp.yandex.ru,rasp.yandex.ua##.ThreadLayout__topDirect
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.ua,yadi.sk##.awaps__banner
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.b-direct
-mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.ua##.mail-MessagesDirectLinePlaceholder
-yandex.ru,yandex.ua##.sidebar-panel-view__content div[class*="banner-layout"]
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.ua##.software-header-promo
 yandex.by,yandex.kz,yandex.ru,yandex.ua##div[class^="b-spec-adv"]
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.ua,yadi.sk##div[class^="direct"]
 yandex.by,yandex.kz,yandex.ru,yandex.ua##div[data-block="banner-view"]
 yandex.ru##ymaps > div[class^="search-placemark-layout-connect_advert"]
 yandex.ru##ymaps > div[class^="search-placemark-layout-connect_special"]
-! Яндекс.Афиша
-afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##.content-rubric > :not(.rubric-header):not(.content-rubric__content):not(.viewed-events-loader)
-afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##div[class*="adv-media"]
-afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##div[class*="afisha-profit"]
-afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua##div[class*="rich-media"]
 ! Яндекс.Дзен
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua###yabro-strip-element
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body > #content-ending ~ *
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua#?#.article__body > div:-abp-has(iframe[src^="https://zen.yandex.ru/"][style*="opacity:"])
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body > div[class*=" "] > div[class]:not([class="youtube-embed"])
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.article__body div[style*="min-height:"][style*="min-width:"][style*="max-width:"]
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##.floating-links
 ! Яндекс.Здоровье (yandex.*/health)
 yandex.ru##.advert-sticks
@@ -877,31 +866,12 @@ music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.bar__driver-co
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .d-overhead
 radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.slider > .slider__item_advert
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##[class^="audio-advert"]
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##div[class^="smalladv"]
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##div[id*="_R-A-"]
 ! Яндекс.Недвижимость
-realty.yandex.ru##.Ad
-realty.yandex.ru##.OffersSerpAd
-realty.yandex.ru##.b-guadeloupe
+realty.yandex.ru##.OffersSerpPromoItem
+realty.yandex.ru##.OffersSerp__list-item_type_ad
 /^https?://realty\.yandex\.ru/[^\s]{500,}/$subdocument,domain=realty.yandex.ru
 realty.yandex.ru##div[id$="-ad__rtb"]
-! Яндекс.Новости
-/^https?://news\.yandex\.(by|kz|ru|ua)/[^\s]{300,}/$subdocument,xmlhttprequest,domain=news.yandex.by|news.yandex.kz|news.yandex.ru|news.yandex.ua
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > * > iframe[src*="/news.yandex."])
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> * > iframe[src*="/news.yandex."])
-news.yandex.by,news.yandex.kz,news.yandex.ru,news.yandex.ua#?#body *:-abp-has(> iframe[src*="/news.yandex."])
 ! Яндекс.Погода
-yandex.by,yandex.kz,yandex.ru,yandex.ua##.climate-calendar-container__adv-wide
-yandex.by,yandex.kz,yandex.ru,yandex.ua##.content__section_type_adv
-yandex.by,yandex.kz,yandex.ru,yandex.ua##.weather-maps__ad_visible_yes
-~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > * > * > a[href*="/yandex"][href*="/pogoda/"][target] img[src*="pogoda"])
-~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > * > a[href*="/yandex"][href*="/pogoda/"][target] img[src*="pogoda"])
-~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > a[href*="/yandex"][href*="/pogoda/"][target] img[src*="pogoda"])
-~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > * > iframe[src*="/pogoda/"])
-~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > a[href*="/yandex"][href*="/pogoda/"][target] img[src*="pogoda"])
-~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> * > iframe[src*="/pogoda/"])
-~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> a[href*="/yandex"][href*="/pogoda/"][target] img[src*="pogoda"])
-~mail.yandex.by,~mail.yandex.kz,~mail.yandex.ru,~mail.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body *:-abp-has(> iframe[src*="/pogoda/"])
 yandex.by,yandex.kz,yandex.ru,yandex.ua##div[id^="rtb.async"]
 ! Яндекс.Телепрограмма
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua##.branding
