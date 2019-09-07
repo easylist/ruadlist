@@ -212,7 +212,7 @@ _pagespeed_beacon?
 ##img[src^="/stat/"][width="88"][height="31"]
 !
 ! = Общие блокировки (и с использованием имени доменов) =========================
-/^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{200,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
+/^https?://mail\.yandex\.(by|kz|ru|ua)/[^\s]{180,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua
 /redir/stat/*$domain=autonews.ru|rbc.ru|sportrbc.ru
 |http://li.ru^$third-party,~subdocument
 |http://pr-cy.$third-party
