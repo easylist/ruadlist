@@ -63,8 +63,6 @@ championat.com##+js(abort-on-property-read.js, brandingRenderFlag)
 championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.ru,rns.online##^script:has-text("bannerType")
 dclans.ru##+js(abort-on-property-read.js, document.getElementById, mdl_adb)
 dok-film.net##+js(abort-on-property-read.js, adBlockDetected)
-dokonlin.ru##+js(abort-on-property-read, String.prototype.charCodeAt)
-dokonlin.ru##+js(abort-on-property-read.js, btoa)
 dota2.ru##+js(abort-on-property-read.js, helpUsImproveSite)
 draug.ru##+js(abort-on-property-read.js, hidesnow)
 draug.ru##p:has-text(Для скачивания подождите отчет таймера...)
@@ -150,6 +148,7 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, St
 ||argumenti.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 ||argumentiru.com^$csp=script-src 'self' * data:,badfilter
 ||argumentiru.com^$xmlhttprequest,badfilter,domain=argumentiru.com
+||dopc.cz^$xmlhttprequest,redirect=nooptext,domain=dokonlin.ru
 ||etotprazdnik.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
 ||fermilon.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
