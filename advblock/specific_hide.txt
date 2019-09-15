@@ -215,8 +215,8 @@ rufootballtv.org###branding > a[href]
 foto.ua###branding-bg-pickit
 truba.com###branding-head-link
 namba.tj###branding-html
+pikabu.ru###branding_ad_comment
 pikabu.ru###branding_ad_footer
-pikabu.ru###branding_ad_header:not(#id)
 hdfilms.tv,kolyan.net,telegraf.in.ua,traffilm.net,vse.kz###branding_link
 telegraf.in.ua###branding_top
 ura-inform.com###branding_wrap
@@ -2849,11 +2849,7 @@ audit-it.ru##.page > .header > .col_r
 mmotop.ru##.page-header > .bg-one-server
 mmotop.ru##.page-header > .left
 mmotop.ru##.page-header > .right
-pikabu.ru#?#.page-story > .story:-abp-has(.story__header-additional-wrapper > .story__tags:-abp-contains(зaкрепленный пост))
-pikabu.ru#?#.page-story > .story:-abp-has(.story__header-additional-wrapper > .story__tags:-abp-contains(закрепленный пост))
-pikabu.ru#?#.page-story > .story:-abp-has(.story__header-additional-wrapper > .story__tags:-abp-contains(пaртнeрcкий пост))
-pikabu.ru#?#.page-story > .story:-abp-has(.story__header-additional-wrapper > .story__tags:-abp-contains(партнeрcкий пост))
-pikabu.ru#?#.page-story > .story:-abp-has(.story__header-additional-wrapper > .story__tags:-abp-contains(рекламный пост))
+pikabu.ru##.page-story__placeholder
 likemetr.ru##.page-wrapper > .analyzer-page > .subscriber
 bdf.ms##.pageContent > div[style^="outline"] > a[href]:not([href^="../threads/"])
 matematikalegko.ru##.page_Banner
@@ -2971,7 +2967,6 @@ tut.by##.prom-r
 allmoldova.com,audit-it.ru,infomir59.ru,pavlodar.news,pavon.kz,rentv-smolensk.ru,ubuntovod.ru,webmasters.ru##.promo
 expertcen.ru,prodota.ru##.promo-block
 v102.ru##.promo-left
-pikabu.ru##.promo-rocket
 360tv.ru##.promo-toolbar
 igry-bitva-zamkov.ru##.promo-top
 vbr.ru##.promo-trust
@@ -3270,12 +3265,12 @@ blizzardheroes.ru##.sidebar > div[class^="block"]
 vakhta-job.ru##.sidebar > div[style]
 nnovosti.info##.sidebar > div[style^="width:"]
 news-front.info,zdravotvet.ru##.sidebar > noindex
-pikabu.ru#?#.sidebar [class]:-abp-has(> * + script)
 medialeaks.ru#?#.sidebar-3col-wrapper:-abp-has([id^="crt-"][style])
 prostopleer.com##.sidebar-a330-content
 kanobu.ru,securitylab.ru,vostok.fm##.sidebar-banner
 glavpost.com##.sidebar-banner-block
 yummyanime.club#?#.sidebar-block:-abp-has(> .block-header:-abp-contains(Реклама))
+pikabu.ru##.sidebar-block_placeholder
 istorikonline.ru##.sidebar-content > .widget_custom_html ~ *
 raenza.ru##.sidebar-island.box-shadow
 my-hit.org##.sidebar-nav ~ div[id][style*="600px"]
@@ -3387,10 +3382,8 @@ za4eti.ru##.stl_d3 [class^="stl_"],.stl_d3 [class^="stl_"] + br
 infox.ru#?#.stlt:-abp-contains(Реклама)
 streamable.com,streamablevideo.com##.stm-ad-player
 igry-man.net##.stockgame
-pikabu.ru#?#.stories > .story:-abp-has(.story__header-additional:-abp-contains(ads))
+pikabu.ru#?#.stories-feed__message:-abp-has(> .widget-container)
 pikabu.ru#?#.story:-abp-has(* > [id] + script)
-pikabu.ru#?#.story:-abp-has([class*="sponsor"])
-pikabu.ru#?#.story:-abp-has([id^="crt-"])
 provladimir.ru#?#.stream-item-widget:-abp-contains(Реклама)
 xsport.ua##.stripped-back.expand
 promtu.ru##.strochka
@@ -3913,6 +3906,7 @@ optimakomp.ru##[data-link*="is.gd"]
 vladnews.ru##[data-newsb]
 tonkosti.ru##[data-norecl="true"]
 news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
+pikabu.ru##[data-placeholder-handled]
 rusplt.ru##[data-prod="banner"]
 softcatalog.info##[data-rel*="wgaffiliate.com"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
@@ -3998,6 +3992,7 @@ mydiv.net##[onclick*="/ya"]
 yellowpages.uz##[onclick*="ClickOnAd"]
 yellowpages.uz##[onclick*="ClickOnBanner"]
 soccer365-1.xyz,soccer365.ru##[onclick*="betfaq.ru"]
+pikabu.ru##[onclick*="branding_click"]
 sims-game.com##[onclick*="btsearch.me"]
 plateginfo.com##[onclick*="cashalot.su"]
 povarenok.ru,rutorgame.info,sims-game.com,skidows.com,vgtimes.ru##[onclick*="goo.gl"]
@@ -5205,7 +5200,6 @@ hqroom.ru##div[class^="vitrina"]
 goal24.live##div[class^="vjs-promo"]
 dailyhoro.ru##div[class^="whatever"]
 onlinetambov.ru##div[class^="wraprer"]
-pikabu.ru##div[class^="ya-advert"]
 yur-zakon.ru##div[class^="yarpp"]
 yarnovosti.com##div[class^="ynst"]
 yp.ru##div[class^="yp-tgb-"]
@@ -5237,7 +5231,7 @@ get-tune.cc,iplayer.info,ipleer.fm,k1news.ru,market4game.ru,mp3cc.biz,sexxx.name
 mirtesen.ru,myhistori.ru##div[id*="BannerSmiTwo"]
 domosedy.com##div[id*="TizerGroup"]
 math-prosto.ru##div[id*="Tutor"]
-e1.ru,fishki.net,pikabu.ru,profinance.ru,regmarkets.ru,spravkus.com##div[id*="_R-"]
+e1.ru,fishki.net,profinance.ru,regmarkets.ru,spravkus.com##div[id*="_R-"]
 zoneofgames.ru##div[id*="_adforum"]
 niv.ru##div[id*="_ban_"]
 kavkazova.ru##div[id*="actionteaser"]
