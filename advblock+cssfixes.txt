@@ -237,9 +237,8 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,progorod33.ru,progorod43.ru,progo
 ! 4PDA > Тестовые правила
 4pda.ru##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.ru##body > div[id^="r"] > div[id^="r"][href]
-4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class^="r"]:not(div) > div > [class="menu"] ~ [id^="r"][class^="r"]:not(div):style(background-image: none!important; background-color: #e6e7e9!important)
-4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class^="r"]:not(div) > div > [class]:not(div) ~ [class]:not(div) article[id]:first-child > article[itemscope]
-4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class^="r"]:not(div) > div > div:not([id]):not([class]):not([style]) + [class]:not(div)
+4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class]:not(div):not([id]) > div > [class]:not(div) ~ .menu ~ [class]:not(div):style(background-image: none!important; background-color: #e6e7e9!important)
+4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class]:not(div):not([id]) > div > [class]:not(div) ~ [class]:not(div) article[id]:first-child > article[itemscope]
+4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) > [class]:not(div):not([id]) > div > div:not([id]):not([class]):not([style]) + [class]:not(div)
 4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:empty[style*="opacity"]
-4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:first-child:if-not(> .slider-list)
-4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:has(script:has-text(InitOXN))
+4pda.ru##body > script ~ [id]:not(#ipbwrapper):not(div):not([class]) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:has(script:has-text(/opacity|undefined/))
