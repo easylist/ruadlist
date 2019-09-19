@@ -32,6 +32,13 @@ adblockmetrics.ru,antiadblock.ru,better-games.ru,clickscloud.net,disk-space.ru,f
 ||www.km.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:
 ||yconsult.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:
 !
+! 4pda.ru
+4pda.ru##body > script ~ [id]:not(#ipbwrapper) .menu ~ * article[id]:first-child > article[itemscope]
+4pda.ru##body > script ~ [id]:not(#ipbwrapper) > [class]:not(div):not([id]) > [class] > [class][style^="opacity:"]
+4pda.ru#?#body > script ~ [id]:not(#ipbwrapper) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
+4pda.ru#?#body > script ~ [id]:not(#ipbwrapper) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:-abp-has(script:-abp-contains(/"opa|ty"/))
+4pda.ru##body > script ~ [id]:not(#ipbwrapper) [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:empty[style*="opacity"]
+!
 ! Auto.ru
 auto.ru##.ReviewZenPromo
 auto.ru##.TaxiDriverOffer-module__container
