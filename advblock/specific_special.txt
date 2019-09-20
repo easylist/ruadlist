@@ -34,10 +34,10 @@ adblockmetrics.ru,antiadblock.ru,better-games.ru,clickscloud.net,disk-space.ru,f
 !
 ! 4pda.ru
 4pda.ru##body > * ~ [id] .menu ~ * article[id]:first-child > article[itemscope]
+4pda.ru#?#body > * ~ [id] .menu ~ * div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
+4pda.ru#?#body > * ~ [id] .menu ~ * div[class]:-abp-has(script:-abp-contains(/"opa|ty"/))
+4pda.ru##body > * ~ [id] .menu ~ * div[class]:empty[style*="opacity"]
 4pda.ru##body > * ~ [id] > [class]:not(div):not([id]) > [class] > [class][style^="opacity:"]
-4pda.ru#?#body > * ~ [id] [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
-4pda.ru#?#body > * ~ [id] [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:-abp-has(script:-abp-contains(/"opa|ty"/))
-4pda.ru##body > * ~ [id] [id^="r"]:not(div):not([class]) > [id^="r"][class]:not(div):first-child + [id^="r"][class^="r"]:not(div) > div[class]:empty[style*="opacity"]
 !
 ! Auto.ru
 auto.ru##.ReviewZenPromo
