@@ -33,11 +33,10 @@ adblockmetrics.ru,antiadblock.ru,better-games.ru,clickscloud.net,disk-space.ru,f
 ||yconsult.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:
 !
 ! 4pda.ru
-4pda.ru##body > * ~ [id] .menu ~ * article[id]:first-child > article[itemscope]
-4pda.ru#?#body > * ~ [id] .menu ~ * div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
-4pda.ru#?#body > * ~ [id] .menu ~ * div[class]:-abp-has(script:-abp-contains(/"opa|ty"/))
-4pda.ru##body > * ~ [id] .menu ~ * div[class]:empty[style*="opacity"]
-4pda.ru##body > * ~ [id] > [class]:not(div):not([id]) > [class] > [class][style^="opacity:"]
+4pda.ru##body > * ~ [id] article[id]:first-child > article[itemscope]
+4pda.ru#?#body > * ~ [id] div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
+4pda.ru#?#body > * ~ [id] div[class]:-abp-has(script:-abp-contains(/"opa|ty"/))
+4pda.ru##body > * ~ [id] div[class]:empty[style*="opacity"]
 !
 ! Auto.ru
 auto.ru##.ReviewZenPromo
