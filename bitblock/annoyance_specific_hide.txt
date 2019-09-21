@@ -768,7 +768,6 @@ translate.google.com,translate.google.com.ua,translate.google.ru,translate.googl
 segodnya.ua##body > #overlay
 stranamam.ru##body > #rukodelie-wrapper
 jo-jo.ru##body > #vk
-4pda.ru##body > * ~ [id] div ~ [id][class]:not(div)[style]
 live-rutor.org##body > .collapse
 unn.com.ua##body > .fancybox-opened
 securitylab.ru##body > .fancybox-overlay
@@ -804,6 +803,7 @@ seeyoupage.ru##body > iframe[id^="_pn_"]
 gameguru.ru,kulina.ru,wotsite.net##body > noindex
 tass.ru##body > noindex > .widge
 xakep.ru##body > strong
+4pda.ru##body [id] div ~ [id][class]:not(div)[style][data-revive-id]
 rambler.ru##body:not(#id) > div:not(#id):not([class]):not([style]) .popup--rambler-start
 kak-prosto.net##br + br
 driveroff.net,samlab.ws#?#center:-abp-has(iframe[src*="money.yandex.ru"])
