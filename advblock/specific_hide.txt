@@ -1288,6 +1288,7 @@ orakul.ua##.advBlock ~ div
 education.ua##.advOnTop
 splkirov.ru##.adv_240x400
 vestivrn.ru##.adv__horizontal
+argumenti.ru##.adv_after-news
 games-reviews.net##.adv_algn
 gurutestov.ru##.adv_collumn > h3
 gurutestov.ru##.adv_collumn > p:not([style])
@@ -1938,6 +1939,7 @@ livecars.ru##.col-z-right > #livecars_ru ~ *
 5-tv.ru##.col3.positionRelative
 ololo.fm##.col_1 > .block2
 korrespondent.net##.col__sidebar > .unit-side-informer
+argumenti.ru##.col_adv
 talkwebber.ru##.col_c_stats > a[href^="http://talkwebber.ru/go/?"]
 alive-ua.com##.col_l_b
 itvcom.ru##.colr > h4
@@ -3836,6 +3838,7 @@ dota2.ru##[class$="sidebar"]:not(.profile-sidebar) > :not(section):not(.section)
 kakprosto.ru##[class*="-recommend"][style="display:block!important"]
 libsib.ru##[class*="_a24"]
 banki.ru,scarabey.org##[class*="ad-block"]
+argumenti.ru##[class*="adv_"]
 drive.ru##[class*="autoRu"]
 drive.ru##[class*="autoRu"] + .hr
 galka.if.ua,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,old.amic.ru,opticlub.org,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
@@ -3844,6 +3847,7 @@ vse.rv.ua##[class*="billboard"]
 anna-news.info##[class*="blog-holder"] > noindex
 expert.ru##[class*="box-partners"]
 cccp-rutracker.org,rutracker-org.appspot.com,rutracker.net,rutracker.nl,rutracker.org##[class*="brand-link"]
+argumenti.ru##[class*="cc_adv"]
 sport-express.ru##[class*="column-left"] div[align="center"][style^="min-height"]
 mcrate.su##[class*="commerc_panel"]
 dni.ru##[class*="container"][class*="partner"]
@@ -3868,6 +3872,8 @@ pdalife.ru##[class*="winner"]
 livesport.ru##[class*="wow"]
 neosmi.ru##[class="0"] > .firstnews
 cccp-rutracker.org,rutracker-org.appspot.com,rutracker.net,rutracker.nl,rutracker.org##[class="attach bordered med"] > tbody > .row3 ~ .row3 > td *
+argumenti.ru#?#[class]:-abp-has(> [id^="yandex_rtb"])
+argumenti.ru#?#[class]:-abp-has(> a[href] [class*="partner"])
 baby.ru#?#[class][id]:-abp-has(> script:-abp-contains(/adfox/i))
 baby.ru##[class][style*="min-height: 660px;"][style*="overflow: hidden"]
 animedub.ru##[class^="adf"]
@@ -4111,6 +4117,7 @@ povarenok.ru##a[href*="/textclick/"]
 kinosok.org,kritka.su##a[href*="/u.to/"]
 pcpro100.info##a[href*="/wp-content/themes/pcpro100"]
 1tulatv.ru,omskpress.ru,penzavzglyad.ru,shazoo.ru##a[href*="://ad.adriver.ru/"]
+argumenti.ru##a[href*="://argumenti.ru/ad_informer/click/"]
 newstudio.tv##a[href*="://cutter.li"]
 hdseason.ru##a[href*="://ensurania.com/"]
 fast-torrent.tv##a[href*="://fast-torrent.tv/gomed.php"]
@@ -4488,7 +4495,6 @@ zhukvesti.ru##a[href^="http://aleks-dent.ru"]
 e-ink-reader.ru,for-ua.info,ruspdd.ru##a[href^="http://ali.pub/"]
 dl2kq.de##a[href^="http://antenna-su.ru/"]
 delfi.ee##a[href^="http://ap.delfi.ee/b?"]
-argumenti.ru##a[href^="http://argumenti.ru/ad_informer/click/"]
 cleverstudents.ru##a[href^="http://author24.ru/unreg-order/"]
 nuriknur.ucoz.com##a[href^="http://babnik.com/"]
 banki.ru##a[href^="http://bankiru.go2cloud.org/aff_c?offer_"]
@@ -5572,6 +5578,7 @@ forum.cxem.net#?#form > article[id^="elComment_"]:-abp-has(strong[itemprop="name
 yap.ru,yaplakal.com#?#form > table[id^="p_row_"]:nth-of-type(2):-abp-has(*:-abp-contains(Yap))
 leonkrevs.ucoz.ru##form[action*="wmcasher.ru"]
 megaimg.ru##form[name="show_image"] > center
+argumenti.ru#?#h2.namerub_new:-abp-contains(/реклама/i)
 infox.ru,radiorecord.fm,ria-m.tv#?#h2:-abp-contains(/реклама/i)
 dnews.dn.ua,newstube.ru,socportal.info#?#h2:-abp-contains(Новости партнеров)
 apostrophe.ua,fishki.net,hvylya.net,inforeactor.ru,sharknews.ru#?#h3:-abp-contains(/^Новости партнеров/i)
@@ -5704,6 +5711,8 @@ demiart.ru##img[width="900"][height="100"]
 post-tracker.ru##img[width^="8"][height^="3"][src$=".gif"]
 vjazhi.ru##ins[style^="display:inline-table;"]
 fstreker.net##legend
+argumenti.ru#?#li:-abp-has(> a[href] > .ourathors_img-partner)
+argumenti.ru#?#li:-abp-has(> span:-abp-contains(Новости партнеров))
 polochka.net##li[class^="ss-li-"]
 penzainform.ru##li[style^="width: 140px; height:"][style*="max-height"]
 charming-face.ru##marquee
