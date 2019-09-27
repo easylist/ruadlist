@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190917.1750
+@version 0.20190927.1805
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -192,6 +192,7 @@
   domain("lostfan.net"),
   domain("mehdrezka.com"),
   domain("metahdrezka.com"),
+  domain("mirkino.club"),
   domain("myhdrezka.com"),
   domain("myshows.me"),
   domain("newstudio.tv"),
@@ -202,6 +203,7 @@
   domain("nuhdrezka.com"),
   domain("oblozhki.net"),
   domain("oper.ru"),
+  domain("otxataba.net"),
   domain("playtor.tv"),
   domain("pure-t.ru"),
   domain("rezka.ag"),
@@ -449,6 +451,9 @@
 @-moz-document domain("allboxing.ru") {
     .content-wrapper {
         margin-top: 0 !important
+    }
+    body * {
+        transition: none !important
     }
 }
 
@@ -837,6 +842,12 @@
     }
     .bg-top-menu {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("car.ru") {
+    .header.header-wrapper {
+        padding-top: 15px !important
     }
 }
 
@@ -1574,6 +1585,16 @@
     }
 }
 
+@-moz-document
+  domain("health.mail.ru"),
+  domain("hi-tech.mail.ru"),
+  domain("news.mail.ru"),
+  domain("sportmail.ru") {
+    .branding-p {
+        display: none !important
+    }
+}
+
 @-moz-document domain("hentaiz.org") {
     body {
         background: #4ba1ba !important
@@ -2055,6 +2076,7 @@
     body > .zeropixel ~ * .i-clearfix.feed-generic__container, 
     body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]), 
     body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]) ~ div, 
+    body > .zeropixel ~ * .search__container ~ [class] ~ [class] > div:first-child, 
     body > .zeropixel ~ div .well.notify {
         display: none !important
     }
@@ -2246,6 +2268,7 @@
 }
 
 @-moz-document domain("news.mail.ru") {
+    #ratesTarget > div > div:first-child > div:first-child, 
     div[data-view="MyWidgetView.SmokyExtend"] {
         display: none !important
     }
@@ -2358,6 +2381,15 @@
         height: 0 !important;
         pointer-events: none !important;
         opacity: 0 !important
+    }
+}
+
+@-moz-document domain("otxataba.net") {
+    body {
+        background-color: #e5e5e5 !important
+    }
+    .page-wrapper {
+        margin-top: 0 !important
     }
 }
 
@@ -2796,6 +2828,12 @@
     }
     #site {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("sochi.camera") {
+    #cams_top_block, .banner {
+        height: 0 !important
     }
 }
 
