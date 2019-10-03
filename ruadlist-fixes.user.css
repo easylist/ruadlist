@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20190927.1805
+@version 0.20191003.1203
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -142,6 +142,7 @@
   domain("aghdrezka.com"),
   domain("ahdrezka.com"),
   domain("aif.ru"),
+  domain("ain.ua"),
   domain("besthdrezka.com"),
   domain("clubhdrezka.com"),
   domain("epravda.com.ua"),
@@ -190,6 +191,7 @@
   domain("livehdrezka.com"),
   domain("livejournal.com"),
   domain("lostfan.net"),
+  domain("mc.today"),
   domain("mehdrezka.com"),
   domain("metahdrezka.com"),
   domain("mirkino.club"),
@@ -415,6 +417,16 @@
 @-moz-document domain("ain.ua") {
     .big-ad-wrapper {
         height: auto !important
+    }
+    html > body:not(#id) > * {
+        pointer-events: auto !important
+    }
+    html > body:not(#id) {
+        pointer-events: none !important;
+        background-color: #eff1f2 !important
+    }
+    #subbody {
+        top: auto !important
     }
 }
 
@@ -1217,12 +1229,6 @@
     }
 }
 
-@-moz-document domain("filetor.org") {
-    html > body {
-        top: 0 !important
-    }
-}
-
 @-moz-document
   domain("filmitorrent.net"),
   domain("filmitorrent.xyz") {
@@ -1363,6 +1369,16 @@
     }
 }
 
+@-moz-document domain("fssprus.ru") {
+    .tingle-modal {
+        display: none !important
+    }
+    html > body {
+        overflow-y: auto !important;
+        position: static !important
+    }
+}
+
 @-moz-document
   domain("fullfilmhd.space"),
   domain("torrentum.me") {
@@ -1478,9 +1494,8 @@
     }
 }
 
-@-moz-document domain("gidoroom.ru") {
-    body > noindex > center > table, body > noindex > table {
-        height: 0 !important;
+@-moz-document domain("gidoroom.info") {
+    [id*="ScriptRoot"] {
         opacity: 0 !important
     }
 }
@@ -1936,8 +1951,8 @@
 
 @-moz-document
   domain("kinoxa.in"),
-  domain("lordfilms.pro"),
-  domain("lordsfilms.tv") {
+  domain("lordfilm1.tv"),
+  domain("lordfilms.pro") {
     body > .wrap {
         margin-top: 0 !important;
         padding-top: 0 !important
@@ -3080,15 +3095,6 @@
         color: black !important;
         font-weight: 100 !important;
         font-size: 8px !important
-    }
-}
-
-@-moz-document domain("vgtimes.ru") {
-    body {
-        background-image: none !important
-    }
-    #bspromo, .adfshift, body > div[style^="position: absolute"] {
-        display: none !important
     }
 }
 
