@@ -135,13 +135,14 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, St
 ||1internet.tv^$media,redirect=noopmp4-1s,domain=1tv.ru|mediavitrina.ru
 ||1tv.ru/player/$image,redirect=1x1-transparent.gif,domain=1tv.ru
 ||5edeb195868e2195.com^$third-party
-||7ogorod.ru/*.html|$xmlhttprequest,badfilter,domain=7ogorod.ru
+||7ogorod.ru^$xmlhttprequest,badfilter,domain=7ogorod.ru
 ||adbutton.net^$script,redirect=noopjs
 ||adriver.ru^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
 ||alau.kz/*/|$xmlhttprequest,badfilter,domain=alau.kz
 ||an.yandex.ru^$script,redirect=noopjs
 ||an.yandex.ru^$xmlhttprequest,redirect=nooptext
 ||argumenti.ru^$xmlhttprequest,badfilter,domain=argumenti.ru
+||argumentiru.com^$xmlhttprequest,badfilter,domain=argumentiru.com
 ||etotprazdnik.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
 ||fermilon.ru/*.html|$xmlhttprequest,badfilter,domain=fermilon.ru
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
@@ -151,13 +152,13 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, St
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||news.ru/*/|$xmlhttprequest,badfilter,domain=news.ru
 ||newsland.com/|$xmlhttprequest,badfilter
-||shtrafsud.ru/*.html|$xmlhttprequest,badfilter,domain=shtrafsud.ru
+||shtrafsud.ru^$xmlhttprequest,badfilter,domain=shtrafsud.ru
 ||simpsonsua.com.ua^$csp=script-src 'self' * data:,badfilter
 ||static-mon.yandex.net/static/main.js$script,redirect=noopjs
 ||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
 ||strm.yandex.ru/get/$script,redirect=silent-noeval.js,domain=yastatic.net
 ||strm.yandex.ru^$media,redirect=noopmp4-1s,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
-||teleprogramma.pro/*/|$xmlhttprequest,badfilter,domain=teleprogramma.pro
+||teleprogramma.pro^$xmlhttprequest,badfilter,domain=teleprogramma.pro
 ||videomore.ru^$media,redirect=noopmp4-1s,domain=1tv.ru|mediavitrina.ru
 ||vihub.ru^$media,redirect=noopmp4-1s,domain=1tv.ru|mediavitrina.ru
 ||vipk-cache.cdnvideo.ru^$media,redirect=noopmp4-1s,domain=1tv.ru
