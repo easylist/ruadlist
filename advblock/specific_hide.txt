@@ -3924,6 +3924,7 @@ sports.kz##[class^="xbet"]
 tests24.ru##[class^="yap-"] *
 ps4.in.ua##[data-ad-slot]
 vz.ru#?#[data-ad-slot]:-abp-contains()
+drive2.com,www.drive2.ru##[data-adkind]
 vse42.ru##[data-adplace-inited]
 youla.ru##[data-banner-type]
 sovets.net##[data-banner]
@@ -4979,6 +4980,7 @@ redfm.ru#?#div.news.grid_16 > h3:-abp-has(span:-abp-contains(Реклама)) ~ 
 u-news.com.ua##div.side_block
 festima.ru,mydiv.net,vargr.ru#?#div:-abp-has(> .adsbygoogle)
 finversia.ru#?#div:-abp-has(> .banner-bdm )
+drive2.com,www.drive2.ru#?#div:-abp-has(> .c-dv-label)
 selomoe.ru#?#div:-abp-has(> .title_also:-abp-contains(Партнерский контент))
 draug.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 photofuneditor.com#?#div:-abp-has(> [src*="pagead2."])
@@ -5095,6 +5097,7 @@ foto.ua##div[class="side-banner"]
 seasonvar.ru##div[class="sidebar lside"] > :not(div)
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
 spac.me,spac1.com,spac1.me,spcs.me#?#div[class]:-abp-has(> a ~ a[href*="://spcs.me/?"] > div[class])
+drive2.com,www.drive2.ru#?#div[class]:-abp-has(> div > div > [data-adkind])
 novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
 mk.ru#?#div[class]:not(.content):-abp-has(> div > iframe:not([src]))
 ytvideo.ru##div[class][data-aid]
