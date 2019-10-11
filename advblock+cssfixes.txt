@@ -154,7 +154,7 @@ zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, St
 ||loadercdn.com^$important,script,redirect=noopjs
 ||mashintop.ru^$xmlhttprequest,badfilter,domain=mashintop.ru
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
-||news.ru/*/|$xmlhttprequest,badfilter,domain=news.ru
+||news.ru^$csp=script-src 'self' * data:,badfilter
 ||newsland.com/|$xmlhttprequest,badfilter
 ||shtrafsud.ru^$xmlhttprequest,badfilter,domain=shtrafsud.ru
 ||simpsonsua.com.ua^$csp=script-src 'self' * data:,badfilter
