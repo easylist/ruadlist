@@ -200,7 +200,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|mschistota.
 .kirovnet.ru^$script,domain=kirovnet.ru
 .kontur-map.ru^$script
 .kubik3.ru^$script,domain=kubik3.ru
-.l2top.ru^$script,xmlhttprequest
+.l2top.ru^$script
 .last2images.ru^$script,domain=last2images.ru
 .libking.ru^$script
 .libreportal.net^$script,domain=libreportal.net
@@ -375,7 +375,6 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|mschistota.
 /^https?://gubkabob.net\/(?!wp-content|wp-includes)/$script,domain=gubkabob.net
 /^https?://infox\.sg+\/(?!static|\?force\_template\=)[^\s]{50}/$script,xmlhttprequest,domain=infox.sg
 /^https?://kaifolog.net\/(?!engine|templates)/$script,domain=kaifolog.net
-/^https?://l2top.ru\/(?!js)/$script,xmlhttprequest,domain=l2top.ru
 /^https?://maxpark\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,domain=maxpark.com
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,domain=newsland.com
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,domain=newsland.com
@@ -1739,6 +1738,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||l2on.net/img/friends/
 ||l2on.net/img/sponsors/
 ||l2top.ru/p*.php?id=$script
+||l2top.ru^$xmlhttprequest,domain=l2top.ru
 ||lacucinaitaliana.ru/images/
 ||lada-granta.net/button/
 ||ladyline.com.ua/images/banner
