@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191014.1633
+@version 0.20191020.1911
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -406,9 +406,7 @@
     }
 }
 
-@-moz-document
-  domain("aif.ru"),
-  domain("onlinelife.club") {
+@-moz-document domain("aif.ru") {
     #container:not(#id) {
         margin-top: 0 !important
     }
@@ -448,6 +446,15 @@
     }
     body > #heading.clickable {
         max-height: 50px !important
+    }
+}
+
+@-moz-document domain("aligency.ru") {
+    html > body:not(#id) {
+        background: #abc4a1 !important
+    }
+    body > #page {
+        padding-top: 0 !important
     }
 }
 
@@ -772,44 +779,6 @@
     }
 }
 
-@-moz-document domain("blogzona.ru") {
-    html > body:not(#id) {
-        background: #abc4a1 !important
-    }
-    body > #page {
-        padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("border-fan.ru"),
-  domain("dad-fan.ru"),
-  domain("freehat.cc"),
-  domain("grif-fan.ru"),
-  domain("lalapaluza.ru"),
-  domain("moviebuster.tv"),
-  domain("simp-fan.ru"),
-  domain("sp-fan.ru") {
-    body:not(#id) {
-        background: whitesmoke !important
-    }
-}
-
-@-moz-document
-  domain("border-fan.ru"),
-  domain("dad-fan.ru"),
-  domain("freehat.cc"),
-  domain("grif-fan.ru"),
-  domain("lalapaluza.ru"),
-  domain("moviebuster.tv"),
-  domain("simp-fan.ru"),
-  domain("sp-fan.ru"),
-  domain("turkcinema.org") {
-    #page {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("botanichka.ru") {
     html > body {
         background-image: none !important;
@@ -921,6 +890,10 @@
     html:not(#id) {
         padding-top: 0 !important
     }
+    .page-sidebar > .sticky-vertical {
+        position: relative !important;
+        top: 0 !important
+    }
 }
 
 @-moz-document domain("chita.ru") {
@@ -1007,7 +980,7 @@
 }
 
 @-moz-document domain("doramy.su") {
-    .wrapper > .main-menu {
+    .site {
         margin-top: 0 !important
     }
 }
@@ -1273,16 +1246,8 @@
 @-moz-document
   domain("filmix.cc"),
   domain("filmix.co"),
-  domain("filmix.cool"),
-  domain("filmix.fun"),
-  domain("filmix.gold"),
-  domain("filmix.icu"),
-  domain("filmix.info"),
-  domain("filmix.me"),
-  domain("filmix.nl"),
   domain("filmix.site"),
-  domain("filmix.today"),
-  domain("filmix.vip") {
+  domain("filmix.today") {
     .remove-sda-wrap {
         display: none !important
     }
@@ -1391,6 +1356,25 @@
     .adsbygoogle {
         position: fixed !important;
         top: -10000px !important
+    }
+}
+
+@-moz-document
+  domain("freehat.cc"),
+  domain("lalapaluza.ru"),
+  domain("moviebuster.tv") {
+    body:not(#id) {
+        background: whitesmoke !important
+    }
+}
+
+@-moz-document
+  domain("freehat.cc"),
+  domain("lalapaluza.ru"),
+  domain("moviebuster.tv"),
+  domain("turkcinema.org") {
+    #page {
+        margin-top: 0 !important
     }
 }
 
@@ -1761,6 +1745,15 @@
     }
 }
 
+@-moz-document domain("instagram.com") {
+    body > #react-root ~ #fb-root + div[class][role="presentation"] {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("investing.com") {
     #PromoteSignUpPopUp, #abPopup {
         display: none !important
@@ -1977,9 +1970,13 @@
 }
 
 @-moz-document
-  domain("kinoxa.in"),
+  domain("kinoxa.ws"),
   domain("lordfilm2.tv"),
-  domain("lordfilms.pro") {
+  domain("lordfilms.pw"),
+  domain("lordsfilms.online") {
+    html > body {
+        background-color: #e5e5e5 !important
+    }
     body > .wrap {
         margin-top: 0 !important;
         padding-top: 0 !important
@@ -2012,6 +2009,12 @@
 @-moz-document domain("kv.by") {
     #page {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("lenta.ru") {
+    .js-lower-column, .js-top-column {
+        position: relative !important
     }
 }
 
@@ -2178,7 +2181,23 @@
     }
 }
 
+@-moz-document domain("mobile-review.com") {
+    html > body {
+        background-color: white !important
+    }
+    body > .navbar {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("mobiltelefon.ru") {
+    html > body {
+        background-color: #f7f8f9 !important
+    }
+    #gl_pos1 {
+        min-width: 80px !important;
+        width: unset !important
+    }
     #main_tb {
         top: 0 !important
     }
@@ -2480,6 +2499,10 @@
 }
 
 @-moz-document domain("pikabu.ru") {
+    .footer__inner {
+        background-color: var(--color--app__bg) !important;
+        color: var(--color--app__text) !important
+    }
     header > .header__main {
         background-color: var(--color--header__bg) !important
     }
@@ -2632,6 +2655,12 @@
 @-moz-document domain("radiola.audio") {
     .mh-container {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("rambler.ru") {
+    .j-player > .player__video {
+        position: relative !important
     }
 }
 
@@ -3274,12 +3303,6 @@
     }
 }
 
-@-moz-document domain("www.online-life.xyz") {
-    html > body {
-        color: #f1f1f1 !important
-    }
-}
-
 @-moz-document domain("www.zoneofgames.ru") {
     html > body:not(#id) {
         background-color: #3a3a3a !important
@@ -3323,7 +3346,7 @@
     }
     .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
-    .serp-list > .incut > .direct, 
+    .serp-list > .incut > .direct, .sport-advert:empty, 
     body[class*="b-page_infinity"] .direct-desktop_white, 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > :not([style]):not(.placeholder-card), 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
