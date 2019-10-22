@@ -3902,6 +3902,10 @@ livesport.ru##[class*="wow"]
 neosmi.ru##[class="0"] > .firstnews
 cccp-rutracker.org,rutracker-org.appspot.com,rutracker.net,rutracker.nl,rutracker.org,zerkalo-torrent.tk##[class="attach bordered med"] > tbody > .row3 ~ .row3 > td *
 l2top.ru##[class="container shirt"] > :not(footer):not([class="content"])
+l2top.ru##[class="container shirt"] > [class="content"] > :first-child > :last-child > :not([class^="container"])
+l2top.ru##[class="container shirt"] > [class="content"] > :first-child > :last-child > [class^="container"] > :not([class]):not(footer)
+l2top.ru##[class="container shirt"] > [class="content"] > :first-child > :not([class="sticky-top"]):not(:last-child)
+l2top.ru##[class="container shirt"] > [class="content"] > :not(:first-child)
 animedub.ru#?#[class]:-abp-has(> [href*="mkvideoj.info"])
 animedub.ru,argumenti.ru#?#[class]:-abp-has(> [id^="yandex_rtb"])
 argumenti.ru#?#[class]:-abp-has(> a[href] [class*="partner"])
