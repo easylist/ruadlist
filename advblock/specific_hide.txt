@@ -1884,6 +1884,7 @@ glav.su##.c-bl-message
 severpost.ru##.c-box > a[href][target="_blank"]
 kanobu.ru##.c-branding_fon
 www.drive2.ru##.c-car-card-sa ~ div:not([class]) > div
+drive2.com,www.drive2.ru##.c-car-card-sa[data-adkind] > *
 inmyroom.ru##.c-commerce-banner
 kanobu.ru#?#.c-item:-abp-has(> div > [href*="advert"])
 kurs.com.ua##.cAlpariBanner
@@ -3946,7 +3947,7 @@ sports.kz##[class^="xbet"]
 tests24.ru##[class^="yap-"] *
 ps4.in.ua##[data-ad-slot]
 vz.ru#?#[data-ad-slot]:-abp-contains()
-drive2.com,www.drive2.ru##[data-adkind]
+drive2.com,www.drive2.ru##[data-adkind]:not(.c-car-card-sa)
 vse42.ru##[data-adplace-inited]
 youla.ru##[data-banner-type]
 sovets.net##[data-banner]
