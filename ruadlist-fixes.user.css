@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191021.126
+@version 0.20191027.2023
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -32,6 +32,7 @@
   domain("film-ua.com"),
   domain("filmopotok.ru"),
   domain("filmpotok.ru"),
+  domain("filmy-smotret.net"),
   domain("gethdrezka.com"),
   domain("hd720.biz"),
   domain("hdkinozor.ru"),
@@ -81,7 +82,7 @@
   domain("live-rutor.org"),
   domain("livehdrezka.com"),
   domain("liverutor.org"),
-  domain("lostfan.net"),
+  domain("lostfan.org"),
   domain("mehdrezka.com"),
   domain("metahdrezka.com"),
   domain("moskva.fm"),
@@ -190,7 +191,7 @@
   domain("kv.by"),
   domain("livehdrezka.com"),
   domain("livejournal.com"),
-  domain("lostfan.net"),
+  domain("lostfan.org"),
   domain("mc.today"),
   domain("mehdrezka.com"),
   domain("metahdrezka.com"),
@@ -1034,8 +1035,12 @@
 @-moz-document
   domain("drive2.com"),
   domain("www.drive2.ru") {
+    .c-car-card-sa[data-role*="scrolltrackingad"] {
+        box-shadow: none !important
+    }
+    .c-car-card-sa[data-role*="scrolltrackingad"] > *, 
     .o-columns > div:first-child ~ .o-columns__side, 
-    [data-role*="scrolltrackingad"] {
+    [data-role*="scrolltrackingad"]:not(.c-car-card-sa) {
         display: none !important
     }
     .o-columns > div:first-child {
@@ -1246,6 +1251,7 @@
 @-moz-document
   domain("filmix.cc"),
   domain("filmix.co"),
+  domain("filmix.ink"),
   domain("filmix.site"),
   domain("filmix.today") {
     .remove-sda-wrap {
@@ -1831,6 +1837,9 @@
 }
 
 @-moz-document domain("kino-teatr.ua") {
+    html:not(#id) {
+        background: none !important
+    }
     .imaband {
         display: none !important
     }
@@ -2125,6 +2134,14 @@
 }
 
 @-moz-document
+  domain("mail.ru"),
+  domain("sportmail.ru") {
+    .ph-balloon {
+        display: none !important
+    }
+}
+
+@-moz-document
   domain("maxpark.com"),
   domain("newsland.com") {
     .b-branding__wrap {
@@ -2191,8 +2208,11 @@
     html > body {
         background-color: #f7f8f9 !important
     }
+    #move_up[style*="left: -40px;"] {
+        left: 0 !important
+    }
     #gl_pos1 {
-        min-width: 80px !important;
+        min-width: auto !important;
         width: unset !important
     }
     #main_tb {
@@ -3101,7 +3121,7 @@
   domain("tv.yandex.ru"),
   domain("tv.yandex.ua") {
     #mount main > div[class^="content__"] > .content__main ~ div[class*="content__"] > *, 
-    #mount main > div[class^="content__"] ~ div:not(.zen):not(.bread-crumbs) > *, 
+    #mount main > div[class^="content__"] ~ div:not([class^="content__"]):not(.zen):not(.bread-crumbs) > *, 
     .content_program > div[itemscope] > [class^="content__"] > :not(.content__main) > *, 
     .main-controller__grid-wrapper > [class*="grid_period_"] ~ * > *, 
     .page_controller_channel main.content > div[class]:first-child > div:first-child[style*="background-image"], 
