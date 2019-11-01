@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191027.2023
+@version 0.20191101.1449
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -665,6 +665,12 @@
     }
 }
 
+@-moz-document domain("asienda.ru") {
+    #pagewrapper {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document
   domain("audioboo.info"),
   domain("audioboo.ru") {
@@ -1035,12 +1041,11 @@
 @-moz-document
   domain("drive2.com"),
   domain("www.drive2.ru") {
-    .c-car-card-sa[data-role*="scrolltrackingad"] {
-        box-shadow: none !important
-    }
-    .c-car-card-sa[data-role*="scrolltrackingad"] > *, 
-    .o-columns > div:first-child ~ .o-columns__side, 
-    [data-role*="scrolltrackingad"]:not(.c-car-card-sa) {
+    .dv-post-header, 
+    .g-full-size-post ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child), 
+    .o-columns > div:first-child + div, 
+    .offer[itemtype="http://schema.org/Product"] + div, 
+    [data-role="widget-inject scrolltrackingad"], [data-target^="drom_"] + div {
         display: none !important
     }
     .o-columns > div:first-child {
@@ -1082,7 +1087,7 @@
 @-moz-document
   domain("e.mail.ru"),
   domain("octavius.mail.ru") {
-    #app-canvas .application-mail__wrap > .layout > .layout__main-frame ~ .layout__column_right > :not(.sidebar-search) {
+    #app-canvas .layout_bordered > .layout__column_right .slot {
         display: none !important
     }
 }
@@ -1494,6 +1499,9 @@
         opacity: 0 !important;
         z-index: -10 !important
     }
+    .betting.onlineboard .m_slider-content {
+        padding-top: 10px !important
+    }
     .sausage-list-maintheme.maintheme-flow .sausage-list-item:first-child {
         z-index: 1
     }
@@ -1742,15 +1750,6 @@
     }
 }
 
-@-moz-document domain("infpol.ru") {
-    .header {
-        height: 60px !important
-    }
-    .header__stick {
-        top: 0 !important
-    }
-}
-
 @-moz-document domain("instagram.com") {
     body {
         overflow: auto !important
@@ -1882,18 +1881,6 @@
     }
 }
 
-@-moz-document domain("kinogb.mobi") {
-    body {
-        background: whitesmoke !important
-    }
-    .linheader {
-        display: none !important
-    }
-    .header {
-        height: 120px !important
-    }
-}
-
 @-moz-document domain("kinogo-hit.com") {
     .contener {
         padding-top: 0 !important
@@ -2019,6 +2006,13 @@
 }
 
 @-moz-document domain("lenta.ru") {
+    .b-board._olimp {
+        border-bottom: none !important;
+        margin-top: 30px !important
+    }
+    .b-board._olimp > .b-board__wrap {
+        margin-left: 0 !important
+    }
     .js-lower-column, .js-top-column {
         position: relative !important
     }
@@ -2128,7 +2122,7 @@
     body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]), 
     body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]) ~ div, 
     body > .zeropixel ~ * .search__container ~ [class] ~ [class] > div:first-child, 
-    body > .zeropixel ~ div .well.notify {
+    body > .zeropixel ~ div .well.notify, body > div > .pulse {
         display: none !important
     }
 }
@@ -2528,6 +2522,12 @@
     }
     .app > .app__inner[style*="padding-top"] {
         padding-top: 64px !important
+    }
+}
+
+@-moz-document domain("pimpletv.ru") {
+    body > #branding {
+        padding-top: 0 !important
     }
 }
 
@@ -3245,15 +3245,6 @@
     }
 }
 
-@-moz-document domain("www.drive2.ru") {
-    .dv-post-header, 
-    .g-full-size-post ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child), 
-    .offer ~ div:not([class*="content"]):not([data-role]):not([class*="columns"]), 
-    [class*="-base-mobile"] ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child) {
-        display: none !important
-    }
-}
-
 @-moz-document domain("www.eg.ru") {
     .facebook-bn_site-overlay {
         display: none !important
@@ -3276,6 +3267,9 @@
     }
     body.watch > div[class]:not([id]):not([style]):nth-child(-n+2) > style + .content {
         display: none !important
+    }
+    .page-wrapper > .content-main {
+        padding-top: 0 !important
     }
     body.watch > header.ivi-top {
         top: 0 !important
