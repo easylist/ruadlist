@@ -1100,7 +1100,6 @@ oper.ru###wrapper > div:not([id])[style^="position: absolute;"]
 vidal.ru###wrapper > div[class^="banner"]
 rasfokus.ru,waralbum.ru###wrapper > noindex
 newsko.ru###xtest-videoad
-365news.biz###ya-banner-container
 snatchnews.com###yandexBanner
 maxikarta.ru###yandex_sim
 vbsupport.org###yandexbot_post
@@ -1859,6 +1858,7 @@ games-tv.ru##.brndblock
 games-tv.ru##.brndlnk
 klanwin.ru,pi-c.ru##.browse
 templateinstant.ru##.bs-topbanner
+365news.biz#?#.bs-vc-sidebar-column > div > div:-abp-has([id^="yandex_rtb"])
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##.btTbl > tbody > .row1 > .genmed[align="center"] noindex
 sportarena.com##.btn-favbet
 mozhaysksg.ru,onlinelifetv.com##.btop
@@ -3285,7 +3285,7 @@ wikiwolrd.com##.sidebar > .flying
 freehd.com.ua,hdreactor.club,hdreactor.guru,hdreactor.su#?#.sidebar > .menu-head:-abp-contains(Реклама)
 freehd.com.ua,hdreactor.club,hdreactor.guru,hdreactor.su##.sidebar > .menu-head:first-child + .menu-head1
 vazremont.com##.sidebar > .widget_text
-newgoal.ru##.sidebar > .widget_text ~ .widget_text
+365news.biz,newgoal.ru##.sidebar > .widget_text ~ .widget_text
 bouw.ru##.sidebar > :empty
 womanhit.ru##.sidebar > :not(.card)
 happy-block.info,howto-news.info##.sidebar > :not(.widget)
@@ -3841,6 +3841,7 @@ kerch.fm#?#:not(#dle-content) > .shortstory:-abp-has(> a > div > .advs-label)
 tverigrad.ru##:not(#social_menu_buttons) > div > a[href^="http"]:not([href^="https://tverigrad.ru/"]) > img
 hryunomod.ru##:not(#topads) > .adsbygoogle
 meteo.by##:not(.blinks) > .ad
+365news.biz##:not(.sidebar) > .widget_text
 vesti.ru##:not(.vgtrk-a1-list_inner) > .vgtrk-a1
 vse42.ru##:not(.vse-slider-image) > .banner
 ogorod.ru##:not([class^="banner_top_"]) > div[id^="adfox_"]
@@ -5310,7 +5311,7 @@ epidemz.co,lalamus.cc,superhumor.ru,voffka.com##div[id*="teaser"]
 flowtation.ru##div[id*="tizer"]
 1tv.ru,4pda.ru,artem-kashkanov.ru,astrakhan-24.ru,baraholka.onliner.by,bigpicture.ru,energyfm.ru,fishki.net,galya.ru,gotovim-doma.ru,multitran.ru,qip.ru,telegraf.com.ua,vputilkovo.ru##div[id*="yandex_ad"]
 dv-gazeta.info#?#div[id] > [class]:-abp-contains(/^Новости партнеров/)
-1news.com.ua,cikavosti.com,depo.ua,dnews.dn.ua,dv-gazeta.info,fedpress.ru,glavnoe.ua,glavnoe24.ru,inforpost.com,kurskcity.ru,liga.net,narodna-pravda.ua,pingvin.pro,pl.com.ua,real-vin.com,russianshowbiz.info,semobile.com.ua,vchaspik.ua,volyninfo.com#?#div[id]:not([class]):not([style]):-abp-contains(/^загрузка.../i)
+1news.com.ua,365news.biz,cikavosti.com,depo.ua,dnews.dn.ua,dv-gazeta.info,fedpress.ru,glavnoe.ua,glavnoe24.ru,inforpost.com,kurskcity.ru,liga.net,narodna-pravda.ua,pingvin.pro,pl.com.ua,real-vin.com,russianshowbiz.info,semobile.com.ua,vchaspik.ua,volyninfo.com#?#div[id]:not([class]):not([style]):-abp-contains(/^загрузка.../i)
 kidpuz.ru,prohondroz.ru##div[id][block-id]
 progipertoniyu.ru##div[id][block-id][style]
 spinazdorov.ru##div[id][block]
