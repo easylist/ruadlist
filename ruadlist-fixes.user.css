@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191101.1550
+@version 0.20191107.1947
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -309,6 +309,9 @@
         padding-top: 0 !important;
         background: none !important;
         pointer-events: none !important
+    }
+    .huawei-menu, .vivo-gallery, .vivo-wide {
+        display: none !important
     }
     #global-wrapper[style*="pointer"] > * {
         pointer-events: auto !important
@@ -643,8 +646,12 @@
 }
 
 @-moz-document domain("anitokyo.tv") {
-    #header_h, body {
+    #header_h {
         background-image: none !important
+    }
+    body {
+        background-image: none !important;
+        background-color: #e4f1f6 !important
     }
     div[class^="header_bg"], header > a:not(.rss_ico) {
         display: none !important
@@ -749,6 +756,7 @@
   domain("gidonline.io"),
   domain("hokeyboom.net"),
   domain("imgrutor.com"),
+  domain("kinoboom.su"),
   domain("mma-today.net"),
   domain("oblozhki.net"),
   domain("sportarena.com"),
@@ -933,6 +941,12 @@
     }
 }
 
+@-moz-document domain("coop-land.ru") {
+    body:not(#id) > .header {
+        margin-bottom: auto !important
+    }
+}
+
 @-moz-document domain("coub.com") {
     header[class="header -transparent"] {
         background: #e0e0e0 !important
@@ -1042,15 +1056,18 @@
 @-moz-document
   domain("drive2.com"),
   domain("www.drive2.ru") {
-    .dv-post-header, 
-    .g-full-size-post ~ div:not([class*="content"]):not([data-role]):not([class*="column"]):not(:last-child), 
-    .o-columns > div:first-child + div, 
+    .c-dv-container--placeholder + div[class] > div:first-child + div[class], 
+    .c-post + div[class], .dv-post-header, 
     .offer[itemtype="http://schema.org/Product"] + div, 
-    [data-role="widget-inject scrolltrackingad"], [data-target^="drom_"] + div {
+    [data-role*="widget-inject"], [data-target^="drom_"] + div {
         display: none !important
     }
-    .o-columns > div:first-child {
+    .c-dv-container--placeholder + div[class] > div:first-child:not(:only-child) {
         max-width: unset !important
+    }
+    .c-car-card-sa[data-metrika] {
+        pointer-events: none !important;
+        opacity: 0 !important
     }
 }
 
@@ -1251,6 +1268,15 @@
   domain("filmitorrent.xyz") {
     a[href*="aHR0c"] {
         display: none !important
+    }
+}
+
+@-moz-document
+  domain("filmive-hd.net"),
+  domain("kinoshack.net"),
+  domain("tree.tv") {
+    body > .wrapper {
+        margin-top: 0 !important
     }
 }
 
@@ -1642,6 +1668,15 @@
     }
 }
 
+@-moz-document
+  domain("helpsetup.ru"),
+  domain("izzylaif.com") {
+    .adsbygoogle {
+        height: 1px !important;
+        opacity: 0 !important
+    }
+}
+
 @-moz-document domain("hentaiz.org") {
     body {
         background: #4ba1ba !important
@@ -1751,6 +1786,12 @@
     }
 }
 
+@-moz-document domain("inoprosport.ru") {
+    body > .page__wrapper {
+        padding-top: 60px !important
+    }
+}
+
 @-moz-document domain("instagram.com") {
     body {
         overflow: auto !important
@@ -1779,13 +1820,6 @@
     body:not(#id) > .b-content.b-content__breadcrumbs, 
     body:not(#id) > .b-content__pagecontent {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("izzylaif.com") {
-    .adsbygoogle {
-        height: 1px !important;
-        opacity: 0 !important
     }
 }
 
@@ -1922,14 +1956,6 @@
     }
 }
 
-@-moz-document
-  domain("kinoshack.net"),
-  domain("tree.tv") {
-    body > .wrapper {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("kinosky.pro") {
     #karkas {
         padding-top: 0 !important
@@ -1965,7 +1991,8 @@
 
 @-moz-document
   domain("kinoxa.ws"),
-  domain("lordfilm2.tv"),
+  domain("lordfilm.net"),
+  domain("lordfilm3.tv"),
   domain("lordfilms.pw"),
   domain("lordsfilms.online") {
     html > body {
@@ -2123,6 +2150,7 @@
     body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]), 
     body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]) ~ div, 
     body > .zeropixel ~ * .search__container ~ [class] ~ [class] > div:first-child, 
+    body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body > .zeropixel ~ div .well.notify, body > div > .pulse {
         display: none !important
     }
@@ -2131,7 +2159,7 @@
 @-moz-document
   domain("mail.ru"),
   domain("sportmail.ru") {
-    .ph-balloon {
+    #video-footer, .ph-balloon {
         display: none !important
     }
 }
@@ -2778,6 +2806,7 @@
   domain("rp5.by"),
   domain("rp5.co.uk"),
   domain("rp5.kz"),
+  domain("rp5.lv"),
   domain("rp5.md"),
   domain("rp5.ru"),
   domain("rp5.ua") {
@@ -3281,28 +3310,35 @@
     html:not(#id) {
         background-color: #e6e6e6 !important
     }
-    body > .shadow {
+    #header-info-bg {
+        background-color: transparent !important;
+        background-image: none !important
+    }
+    .film-seances-page, .shadow.shadow-restyle {
         box-shadow: 0 -8px 15px #333333 !important
     }
     #top > div[id][style^="height: 210px"], [class*="adblock-warning"], 
-    div[class^="aNL"], div[data-type="teaserspec"] {
+    aside.dialog, div[data-type="teaserspec"] {
         display: none !important
     }
-    .app__content div[style="min-height:250px"], 
-    body > div[id]:not([class]) + div[class]:not([id]):nth-child(-n+5) {
+    .page-content > #header-info-bg + div[id]:not([class]) {
+        margin-bottom: 40px !important
+    }
+    .app__content div[style="min-height:250px"], .top-banner-container, 
+    .underheader-superbanner-wrapper {
         min-height: 0 !important
     }
     html > body {
         overflow-x: hidden !important
-    }
-    html {
-        overflow: auto !important
     }
     .filmsListNew .info {
         padding-right: 116px !important
     }
     #actorListBlock {
         padding-right: 19px !important
+    }
+    .user-subscription-partial-component__subscription-item-text {
+        white-space: pre-wrap !important
     }
 }
 
