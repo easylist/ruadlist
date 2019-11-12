@@ -4887,6 +4887,7 @@ kaztorka.org##body > :not(div):not([id]):not([class]):not([style]):not(script)
 echo.msk.ru##body > [class] > script ~ :not(.header):not(.main):not(.footer)
 echo.msk.ru##body > [class] > script ~ [id]
 echo.msk.ru##body > [class] > script ~ center
+vgtimes.ru##body > [class]:not([id]):empty
 vgtimes.ru##body > [class]:not([id]):not(div)
 riotpixels.com##body > [class^="side-url-"]
 edufuture.biz,popgun.ru,xvatit.com##body > [onclick]
@@ -4906,6 +4907,7 @@ christianka.bratstvo.org##body > center:last-child
 forums.rusmedserv.com##body > center:nth-of-type(1)
 samlib.ru##body > center:nth-of-type(1) > table[bgcolor]:not([width])
 samlib.ru##body > center:nth-of-type(1) > table[width="100%"]
+vgtimes.ru##body > div > a:not(.browser_notifications)
 forum.watch.ru##body > div > div[style*="overflow"]
 nadavi.com.ua,nadavi.ru##body > div > table[width="92%"]:not([class="top-region"])
 imgbum.net##body > div > table[width="962"]
