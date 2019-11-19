@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191107.1947
+@version 0.20191119.2111
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -454,15 +454,6 @@
     }
 }
 
-@-moz-document domain("aligency.ru") {
-    html > body:not(#id) {
-        background: #abc4a1 !important
-    }
-    body > #page {
-        padding-top: 0 !important
-    }
-}
-
 @-moz-document domain("all-episodes.tv") {
     body {
         background-image: none !important
@@ -502,6 +493,12 @@
     }
     .td-ad-background-link {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("amedia.online") {
+    header.top {
+        margin-bottom: 0 !important
     }
 }
 
@@ -561,12 +558,6 @@
 @-moz-document domain("animebest.org") {
     #menubar {
         padding-top: 40px !important
-    }
-}
-
-@-moz-document domain("animedia.online") {
-    header.top {
-        margin-bottom: 0 !important
     }
 }
 
@@ -1992,7 +1983,7 @@
 @-moz-document
   domain("kinoxa.ws"),
   domain("lordfilm.net"),
-  domain("lordfilm3.tv"),
+  domain("lordfilm4.tv"),
   domain("lordfilms.pw"),
   domain("lordsfilms.online") {
     html > body {
@@ -2150,6 +2141,7 @@
     body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]), 
     body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]) ~ div, 
     body > .zeropixel ~ * .search__container ~ [class] ~ [class] > div:first-child, 
+    body > .zeropixel ~ * .search__container ~ div .eventbar, 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body > .zeropixel ~ div .well.notify, body > div > .pulse {
         display: none !important
@@ -2423,8 +2415,20 @@
     }
 }
 
+@-moz-document domain("nova.rambler.ru") {
+    section > article[class^="Direct__item"] {
+        display: none !important
+    }
+}
+
 @-moz-document domain("obozrevatel.com") {
     body > .header {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("ofxru.co") {
+    .wrapper > .main-content {
         margin-top: 0 !important
     }
 }
@@ -2961,6 +2965,12 @@
     }
 }
 
+@-moz-document domain("sovetromantica.com") {
+    .mainContainer {
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("sport-express.ru") {
     #show-popup {
         display: none !important
@@ -3317,8 +3327,12 @@
     .film-seances-page, .shadow.shadow-restyle {
         box-shadow: 0 -8px 15px #333333 !important
     }
-    #top > div[id][style^="height: 210px"], [class*="adblock-warning"], 
-    aside.dialog, div[data-type="teaserspec"] {
+    #top > div[id][style^="height: 210px"], 
+    .app__page > div[class*="-container_"]:not([class*="media"]):not([class*="content"]):first-child, 
+    .desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child, 
+    .media-post-page > div[class*="-container_"]:not([class*="media"]):first-child, 
+    .top-banner-container, [class*="adblock-warning"], aside.dialog, 
+    div[data-type="teaserspec"], div[id*="_superbanner_"] {
         display: none !important
     }
     .page-content > #header-info-bg + div[id]:not([class]) {
@@ -3400,7 +3414,8 @@
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Реклама"], 
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
-    div[class*="sidebar"] > .direct-snippet {
+    div[class*="sidebar"] > .direct-snippet, 
+    div[class*="sport-advert_type_"]:empty {
         display: none !important
     }
     .serp-header {
@@ -3440,7 +3455,7 @@
 }
 
 @-moz-document domain("zagonka.tv") {
-    .sitebox:not(#id) {
+    #sitebox:not(#id) {
         margin-top: 0 !important
     }
 }
