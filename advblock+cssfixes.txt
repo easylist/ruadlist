@@ -240,3 +240,10 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,progorod33.ru,progorod43.ru,progo
 ||progorodsamara.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 ||progoroduhta.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
 ||prokazan.ru^$csp=script-src 'self' * 'unsafe-inline' unsafe-eval' data:,badfilter
+!
+! VGTimes
+vgtimes.ru##body > div[class]:not([id]):not([style]) > a[class][href^="/"]:style(background-image: none !important)
+vgtimes.ru##body > div[class]:not([id]):not([style]) > div[class] > a[class][href^="/"]:style(background-image: none !important)
+vgtimes.ru##body > div[class]:not([id]):not([style]) > div[class] > div[class] > a[class][href^="/"]:style(background-image: none !important)
+vgtimes.ru##body > div[class]:not([id]):not([style]):matches-css(height: 300px)
+vgtimes.ru##body > div[class]:not([id]):not([style]):matches-css(top: 69px)
