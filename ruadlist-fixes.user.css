@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191119.2111
+@version 0.20191127.1532
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -34,6 +34,7 @@
   domain("filmpotok.ru"),
   domain("filmy-smotret.net"),
   domain("gethdrezka.com"),
+  domain("gordonua.com"),
   domain("gtorrent.ru"),
   domain("hd720.biz"),
   domain("hdkinozor.ru"),
@@ -670,9 +671,7 @@
     }
 }
 
-@-moz-document
-  domain("audioboo.info"),
-  domain("audioboo.ru") {
+@-moz-document domain("audioboo.ru") {
     .right-block-content > .slider {
         padding: 0 !important
     }
@@ -744,7 +743,6 @@
   domain("freerutor.com"),
   domain("gametech.ru"),
   domain("gidonline.fun"),
-  domain("gidonline.io"),
   domain("hokeyboom.net"),
   domain("imgrutor.com"),
   domain("kinoboom.su"),
@@ -998,7 +996,9 @@
     }
 }
 
-@-moz-document domain("dostfilms.net") {
+@-moz-document
+  domain("dostfilms.net"),
+  domain("wowskill.ru") {
     .header {
         margin-top: 0 !important
     }
@@ -1220,6 +1220,9 @@
         margin-top: 0 !important;
         width: 600px !important;
         pointer-events: none !important
+    }
+    #picContainer > a[title] > .image {
+        max-width: 590px !important
     }
     #bfooter-container {
         padding-top: 0 !important
@@ -1569,6 +1572,13 @@
 @-moz-document domain("goodgame.ru") {
     .main-block .main-inner-wrap {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("gordonua.com") {
+    html:not([class*=" mob"]) > body > .wrap {
+        width: 1170px !important;
+        padding: 20px !important
     }
 }
 
@@ -1947,6 +1957,12 @@
     }
 }
 
+@-moz-document domain("kinosezon.tv") {
+    #subheader {
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("kinosky.pro") {
     #karkas {
         padding-top: 0 !important
@@ -1985,12 +2001,20 @@
   domain("lordfilm.net"),
   domain("lordfilm4.tv"),
   domain("lordfilms.pw"),
+  domain("lordfilmtv.net"),
+  domain("lordfilmtv.vip"),
   domain("lordsfilms.online") {
     html > body {
         background-color: #e5e5e5 !important
     }
     body > .wrap {
         margin-top: 0 !important;
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinozoz.net") {
+    body > .wr {
         padding-top: 0 !important
     }
 }
@@ -2134,6 +2158,16 @@
 }
 
 @-moz-document domain("mail.ru") {
+    .search__btn_orange_default {
+        background-color: rgb(0, 95, 249) !important
+    }
+    #search.search_orange {
+        border-top-color: rgb(0, 95, 249) !important;
+        border-right-color: rgb(0, 95, 249) !important;
+        border-bottom-color: rgb(0, 95, 249) !important;
+        border-left-color: rgb(0, 95, 249) !important;
+        box-shadow: rgb(0, 95, 249) 0 0 0 10px inset !important
+    }
     #bubble-home, body > .grid .grid__rcol > .games, body > .grid .news-item_tgb, 
     body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
@@ -2699,6 +2733,12 @@
     }
     body[style*="cursor"] .base-page_wrapper > * > * {
         pointer-events: auto !important
+    }
+}
+
+@-moz-document domain("radioclub.ua") {
+    #js-content {
+        padding-top: 0 !important
     }
 }
 
