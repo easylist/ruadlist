@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191129.2333
+@version 0.20191202.1754
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -343,22 +343,6 @@
 }
 
 @-moz-document
-  domain("adultmult.be"),
-  domain("adultmult.li"),
-  domain("adultmultclub.com"),
-  domain("multonline.ru") {
-    body {
-        background: black !important
-    }
-    .allsearch, .menuposition {
-        margin-top: 0 !important
-    }
-    .menusection {
-        position: static !important
-    }
-}
-
-@-moz-document
   domain("afisha.yandex.by"),
   domain("afisha.yandex.kz"),
   domain("afisha.yandex.ru"),
@@ -513,30 +497,6 @@
     }
 }
 
-@-moz-document
-  domain("anidub.me"),
-  domain("anidub.tv"),
-  domain("anime.anidub.com") {
-    body > script[src^="/ads.js"] ~ div:not([id]):not([class])[style^="position"][style*="z-index"] {
-        display: none !important
-    }
-}
-
-@-moz-document
-  domain("anidub.me"),
-  domain("anidub.tv"),
-  domain("anime.anidub.com"),
-  domain("online.anidub.com") {
-    body > div[style^="background"], html > body {
-        background: none !important
-    }
-    .top_one ~ script ~ div[id]:not([class]):not([style]):not(#slideout), 
-    body > div[style^="background"] > script ~ div[id]:not([class]), 
-    div[id][class]:not([style]) > div[id][class]:empty {
-        display: none !important
-    }
-}
-
 @-moz-document domain("anime-rus.ru") {
     #hide_show {
         display: none !important
@@ -554,6 +514,20 @@
     #Menu > nav ul {
         bottom: auto !important;
         z-index: 100 !important
+    }
+}
+
+@-moz-document
+  domain("anime.anidub.life"),
+  domain("online.anidub.com") {
+    body > div[style^="background"], html > body {
+        background: none !important
+    }
+    .top_one ~ script ~ div[id]:not([class]):not([style]):not(#slideout), 
+    body > div[style^="background"] > script ~ div[id]:not([class]), 
+    body > script[src^="/ads.js"] ~ div:not([id]):not([class])[style^="position"][style*="z-index"], 
+    div[id][class]:not([style]) > div[id][class]:empty {
+        display: none !important
     }
 }
 
@@ -1208,22 +1182,29 @@
     #bcontent > div[style^="float"], #bleft, #picContainer > img {
         display: none !important
     }
-    #foot-area, #footer {
+    #show-code-content {
+        left: calc(50% - 335px) !important
+    }
+    #picContainer > [title="Нажмите для увеличения изображения"] > img {
+        margin-bottom: 0 !important
+    }
+    #footer {
         margin-top: 0 !important
+    }
+    #foot-area {
+        margin-top: 0 !important;
+        background: none !important
     }
     #picContainer {
         margin: auto !important;
         margin-top: 0 !important;
-        width: 600px !important
+        width: 620px !important
     }
     #bcontent {
         margin: auto !important;
         margin-top: 0 !important;
-        width: 600px !important;
+        width: 620px !important;
         pointer-events: none !important
-    }
-    #picContainer > a[title] > .image {
-        max-width: 590px !important
     }
     #bfooter-container {
         padding-top: 0 !important
@@ -1258,11 +1239,15 @@
     }
 }
 
-@-moz-document
-  domain("filmitorrent.net"),
-  domain("filmitorrent.xyz") {
+@-moz-document domain("filmitorrent.net") {
     a[href*="aHR0c"] {
         display: none !important
+    }
+}
+
+@-moz-document domain("filmitorrent.site") {
+    body > #container {
+        margin-top: 0 !important
     }
 }
 
@@ -1999,12 +1984,13 @@
 
 @-moz-document
   domain("kinoxa.ws"),
+  domain("lord-films.pw"),
   domain("lordfilm.net"),
-  domain("lordfilm4.tv"),
-  domain("lordfilms.pw"),
+  domain("lordfilm6.tv"),
   domain("lordfilmtv.net"),
   domain("lordfilmtv.vip"),
-  domain("lordsfilms.online") {
+  domain("lordsfilm.net"),
+  domain("lordsfilms.pro") {
     html > body {
         background-color: #e5e5e5 !important
     }
@@ -2053,6 +2039,10 @@
     .b-board._olimp {
         border-bottom: none !important;
         margin-top: 30px !important
+    }
+    .b-video-box__info {
+        margin-bottom: 0 !important;
+        border-bottom: none !important
     }
     .b-board._olimp > .b-board__wrap {
         margin-left: 0 !important
@@ -2178,7 +2168,7 @@
     body > .zeropixel ~ * .search__container ~ [class] ~ [class] > div:first-child, 
     body > .zeropixel ~ * .search__container ~ div .eventbar, 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
-    body > .zeropixel ~ div .well.notify, body > div > .pulse {
+    body > .zeropixel ~ div div[class*="notify"], body > div > .pulse {
         display: none !important
     }
 }
@@ -2273,6 +2263,18 @@
 @-moz-document domain("movieshok.ru") {
     .wrapp_content {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("multmania.club") {
+    body {
+        background: black !important
+    }
+    .allsearch, .menuposition {
+        margin-top: 0 !important
+    }
+    .menusection {
+        position: static !important
     }
 }
 
@@ -2750,7 +2752,7 @@
 }
 
 @-moz-document domain("rambler.ru") {
-    .j-player > .player__video {
+    .j-mini-player__container {
         position: relative !important
     }
 }
@@ -3247,6 +3249,23 @@
         color: black !important;
         font-weight: 100 !important;
         font-size: 8px !important
+    }
+}
+
+@-moz-document domain("vgtimes.ru") {
+    body[style] > .vgt_orig_bg {
+        display: block !important
+    }
+    .vgt_fullscreen {
+        display: none !important
+    }
+    html > body[style] > :not(.vgt_orig_bg) {
+        pointer-events: auto !important
+    }
+    html > body[style] {
+        pointer-events: none !important;
+        padding-top: 0 !important;
+        background-image: none !important
     }
 }
 
