@@ -93,10 +93,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##.sport-advert
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 /assets/vendor*.xml?$third-party,other,xmlhttprequest,domain=kodik.cc|kodikdb.com
 @@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|clastarti.cc|mastarti.com|pandastream.cc|streamguard.cc|streamtojupiter.me
-@@||bugelwoman.pronpic.org^$script,domain=pronpic.org
-@@||pronpic.org/ads/$image,domain=pronpic.org
-@@||pronpic.org^$csp=script-src 'self' data: blob: 'unsafe-inline' *.googleapis.com
-@@||pronpic.org^$third-party,image,domain=trupornolabs.org|uniondht.org
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#[class$="segment__container"] > div > .card:-abp-has(> div[class] div[id] + script)
 rutracker.appspot.com,rutracker.net,rutracker.nl,rutracker.org,zerkalo-torrent.tk##[class^="internal-promo-"]
