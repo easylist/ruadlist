@@ -94,8 +94,8 @@ beta.gismeteo.ru,gismeteo.ua,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md#?#body[class*="-"] div:-abp-has(> div > div > div[id] ~ script:-abp-contains(atob))
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru#?#div:-abp-has(> div > div[data-type="default"] > div a[href*="/ref/?url="])
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru#?#div:-abp-has(> div > div[data-type="rbc"])
-! - Ловушка для обфусцированных запросов >
-/^https?://(www|beta)\.gismeteo\.(by|kz|ru)/[^.]{300,}/$script,subdocument,domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.ru
+||ainads.ru^$third-party,domain=gismeteo.by|gismeteo.kz|gismeteo.md|gismeteo.ru
+||alfasense.com^$third-party,domain=gismeteo.by|gismeteo.kz|gismeteo.md|gismeteo.ru
 !
 ! HDLight
 ! Временные фиксы, связанные с поломками на самом HDLight
