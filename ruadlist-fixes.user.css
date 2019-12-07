@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191202.1754
+@version 0.20191207.2058
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -16,7 +16,6 @@
   domain("amovies.cc"),
   domain("baskino.me"),
   domain("baskinonet.ru"),
-  domain("besthdrezka.com"),
   domain("bigcinema-tv.club"),
   domain("bombardir.ru"),
   domain("clubhdrezka.com"),
@@ -40,22 +39,17 @@
   domain("hdkinozor.ru"),
   domain("hdrezka-ag.com"),
   domain("hdrezka-online.me"),
-  domain("hdrezka.asia"),
   domain("hdrezka.buzz"),
   domain("hdrezka.city"),
-  domain("hdrezka.club"),
   domain("hdrezka.co"),
-  domain("hdrezka.fail"),
   domain("hdrezka.gift"),
   domain("hdrezka.ink"),
   domain("hdrezka.link"),
   domain("hdrezka.live"),
   domain("hdrezka.loan"),
   domain("hdrezka.lol"),
-  domain("hdrezka.mba"),
   domain("hdrezka.monster"),
   domain("hdrezka.name"),
-  domain("hdrezka.ooo"),
   domain("hdrezka.rest"),
   domain("hdrezka.run"),
   domain("hdrezka.su"),
@@ -65,10 +59,7 @@
   domain("hdrezka.vip"),
   domain("hdrezka.website"),
   domain("hdrezka.win"),
-  domain("hdrezka.wtf"),
-  domain("hdrezka.zone"),
   domain("hdrezka1.site"),
-  domain("ihdrezka.com"),
   domain("ikinohd.club"),
   domain("ikinohd.com"),
   domain("investxp.ru"),
@@ -85,7 +76,6 @@
   domain("livehdrezka.com"),
   domain("liverutor.org"),
   domain("lostfan.org"),
-  domain("mehdrezka.com"),
   domain("metahdrezka.com"),
   domain("moskva.fm"),
   domain("mrutor.org"),
@@ -114,7 +104,6 @@
   domain("tfilm.tv"),
   domain("the-rutor.org"),
   domain("thehdrezka.com"),
-  domain("tophdrezka.com"),
   domain("torentor.co"),
   domain("torrentum.me"),
   domain("tvhdrezka.com"),
@@ -123,7 +112,6 @@
   domain("veleto.ru"),
   domain("videoclub.men"),
   domain("virusinfo.info"),
-  domain("wehdrezka.com"),
   domain("wikianime.tv"),
   domain("zona-film.com") {
     body:not(#id), html:not(#id) {
@@ -146,7 +134,6 @@
   domain("ahdrezka.com"),
   domain("aif.ru"),
   domain("ain.ua"),
-  domain("besthdrezka.com"),
   domain("clubhdrezka.com"),
   domain("epravda.com.ua"),
   domain("fast-torrent.club"),
@@ -157,21 +144,16 @@
   domain("hd720.biz"),
   domain("hdrezka-ag.com"),
   domain("hdrezka-online.me"),
-  domain("hdrezka.asia"),
   domain("hdrezka.buzz"),
   domain("hdrezka.city"),
-  domain("hdrezka.club"),
-  domain("hdrezka.fail"),
   domain("hdrezka.gift"),
   domain("hdrezka.ink"),
   domain("hdrezka.link"),
   domain("hdrezka.live"),
   domain("hdrezka.loan"),
   domain("hdrezka.lol"),
-  domain("hdrezka.mba"),
   domain("hdrezka.monster"),
   domain("hdrezka.name"),
-  domain("hdrezka.ooo"),
   domain("hdrezka.rest"),
   domain("hdrezka.run"),
   domain("hdrezka.today"),
@@ -179,9 +161,6 @@
   domain("hdrezka.vip"),
   domain("hdrezka.website"),
   domain("hdrezka.win"),
-  domain("hdrezka.wtf"),
-  domain("hdrezka.zone"),
-  domain("ihdrezka.com"),
   domain("ixbt.com"),
   domain("kino-full.ru"),
   domain("kinobar.cc"),
@@ -195,7 +174,6 @@
   domain("livejournal.com"),
   domain("lostfan.org"),
   domain("mc.today"),
-  domain("mehdrezka.com"),
   domain("metahdrezka.com"),
   domain("mirkino.club"),
   domain("myhdrezka.com"),
@@ -219,7 +197,6 @@
   domain("simhost.org"),
   domain("smotri.com"),
   domain("stopgame.ru"),
-  domain("tophdrezka.com"),
   domain("torrent-games.info"),
   domain("torrentom.com"),
   domain("torrentum.me"),
@@ -227,7 +204,6 @@
   domain("uateam.tv"),
   domain("uphdrezka.com"),
   domain("userstyles.org"),
-  domain("wehdrezka.com"),
   domain("xatab-repack.net"),
   domain("zakarpatpost.net"),
   domain("zakon.kz") {
@@ -368,7 +344,8 @@
   domain("animevost.org"),
   domain("animevost1.org"),
   domain("animevost2.org"),
-  domain("animevost3.org") {
+  domain("animevost3.org"),
+  domain("smotret-anime-365.ru") {
     div[class^="headbg"] {
         background-image: none !important;
         height: auto !important
@@ -1060,7 +1037,7 @@
 }
 
 @-moz-document domain("e.mail.ru") {
-    #LEGO #leftcol-banners, #LEGO .b-rb, #LEGO div[id^="preload_banner"] {
+    #LEGO .b-rb, #LEGO div[id^="preload_banner"], #theme #LEGO #leftcol-banners {
         display: none !important
     }
     #LEGO > .b-sticky:first-child {
@@ -1179,7 +1156,7 @@
     html, html > body {
         cursor: auto !important
     }
-    #bcontent > div[style^="float"], #bleft, #picContainer > img {
+    #bcontent > div[style^="float"], #picContainer > img {
         display: none !important
     }
     #show-code-content {
@@ -2898,6 +2875,18 @@
     }
 }
 
+@-moz-document
+  domain("rutracker.appspot.com"),
+  domain("rutracker.net"),
+  domain("rutracker.nl"),
+  domain("rutracker.org"),
+  domain("zerkalo-torrent.tk") {
+    [class^="internal-promo-"]:not(#id) {
+        color: #006699 !important;
+        font-weight: 100 !important
+    }
+}
+
 @-moz-document domain("sc2tv.ru") {
     .main-frame {
         background:none !important;
@@ -3301,6 +3290,21 @@
     body > div[id][class] > .header ~ div[class] > ul > li[class]:not(.ttyyuu), 
     center > div[style="background: #ffffff; width: 700px+50px; padding-left: 10px;"] {
         display: none !important
+    }
+}
+
+@-moz-document domain("vo-dela.su") {
+    #sidebar_column .scrolled {
+        top: auto !important
+    }
+}
+
+@-moz-document domain("volynpost.com") {
+    body > #layout-center > * {
+        pointer-events: auto !important
+    }
+    body > #layout-center {
+        pointer-events: none !important
     }
 }
 
