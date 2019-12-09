@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191207.2058
+@version 0.20191209.2138
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -1632,6 +1632,12 @@
     }
 }
 
+@-moz-document domain("hellomagazine.com") {
+    .footer {
+        position: relative !important
+    }
+}
+
 @-moz-document
   domain("helpsetup.ru"),
   domain("izzylaif.com") {
@@ -1902,6 +1908,12 @@
 @-moz-document domain("kinomania.ru") {
     .outer {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinometro.ru") {
+    body {
+        background-color: transparent !important
     }
 }
 
@@ -3395,14 +3407,17 @@
     .app__page > div[class*="-container_"]:not([class*="media"]):not([class*="content"]):first-child, 
     .desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child, 
     .media-post-page > div[class*="-container_"]:not([class*="media"]):first-child, 
-    .top-banner-container, [class*="adblock-warning"], aside.dialog, 
-    div[data-type="teaserspec"], div[id*="_superbanner_"] {
+    [class*="adblock-warning"], aside.dialog, div[data-type="teaserspec"], 
+    div[id*="_superbanner_"] {
         display: none !important
+    }
+    .top-banner-container {
+        height: 0 !important
     }
     .page-content > #header-info-bg + div[id]:not([class]) {
         margin-bottom: 40px !important
     }
-    .app__content div[style="min-height:250px"], .top-banner-container, 
+    .app__content div[style="min-height:250px"], 
     .underheader-superbanner-wrapper {
         min-height: 0 !important
     }
