@@ -11,9 +11,6 @@
 %include advblock.txt%
 %include css-fixes-experimental.txt%
 ! --- uBO scriptlets injection rules & other ---
-$third-party,other,xmlhttprequest,domain=alforenao.com|clastarti.cc|mastarti.com
-/*.php?id=$third-party,other,xmlhttprequest,domain=hdlizor.com|kodik.cc|kodik.info|kodikdb.com
-/^https?://[^\s]+\.(cc\/$|club|com|online|ru)/$other,xmlhttprequest,domain=hdgo.cc|vio.to
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
@@ -33,7 +30,6 @@ $third-party,other,xmlhttprequest,domain=alforenao.com|clastarti.cc|mastarti.com
 4pda.ru##body > div[id^="r"] > div[id^="r"][href]
 4pda.ru##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
 777streams.pro,7streams.pro,channels247.net,goool7.ws,hd24.pro,hd365.ws,hdstream365.com,mc.today,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport7.biz,sportbar.biz,sportbox.ws,stream365.pro,vip7stream.pw##+js(window.open-defuser.js)
-@@/^https?://[a-z]+\.com/+[^\s]{4,15}/$other,xmlhttprequest,domain=alforenao.com|clastarti.cc|mastarti.com|pandastream.cc|streamguard.cc|streamtojupiter.me
 @@||ads.adfox.ru/*/getBulk$xmlhttprequest,domain=widgets.kinopoisk.ru|www.kinopoisk.ru
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
@@ -153,12 +149,10 @@ yapx.ru##+js(cookie-remover.js, /adblock_/)
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(abort-current-inline-script.js, document.addEventListener)
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant.js, String.prototype.charCodeAt, trueFunc)
 znanija.com##+js(abort-on-property-write.js, getAdBlockType)
-||1bfc228b50a902db.com^$domain=hdlizor.com|kodik.cc|kodik.info|kodikdb.com|video.doramatv.su
 ||1internet.tv^$media,domain=1tv.ru|mediavitrina.ru
 ||1internet.tv^$media,redirect=noopmp4-1s,domain=1tv.ru|mediavitrina.ru
 ||1tv.ru/player/$image,redirect=1x1-transparent.gif,domain=1tv.ru
 ||24molnia.com^$xmlhttprequest,badfilter,domain=24molnia.com
-||5edeb195868e2195.com^$third-party
 ||7ogorod.ru^$xmlhttprequest,badfilter,domain=7ogorod.ru
 ||adbutton.net^$script,redirect=noopjs
 ||adriver.ru^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
