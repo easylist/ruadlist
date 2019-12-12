@@ -87,8 +87,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua#?#.mg-page-layout-item:-abp-has(:not([cl
 yandex.by,yandex.kz,yandex.ru,yandex.ua##.sport-advert
 /^https?://rkn\.gov\.ru\/(?!js\/)+[a-z0-9]{15,25}\.js\?+[0-9]{7,15}/$script,domain=rkn.gov.ru
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
-@@||ads.adfox.ru/*/getBulk$xmlhttprequest,domain=widgets.kinopoisk.ru|www.kinopoisk.ru
-@@||an.yandex.ru/jserr/1|$xmlhttprequest,domain=widgets.kinopoisk.ru|www.kinopoisk.ru
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#[class$="segment__container"] > div > .card:-abp-has(> div[class] div[id] + script)
 rutracker.appspot.com,rutracker.net,rutracker.nl,rutracker.org,zerkalo-torrent.tk##[class^="internal-promo-"]
@@ -114,6 +112,8 @@ yandex.*#?#+js(set-constant.js, __AAB__, false)
 ||checkadblock.ru^$csp=script-src 'self' * data:
 ||google-analytics.com^$domain=checkadblock.ru
 ||googletagmanager.com/gtm.js$domain=echo.msk.ru|gazeta.ru|nur.kz|tjournal.ru|vc.ru
+||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
+||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||livejournal.com^*&callback=*=$script,domain=livejournal.com
 ||strm.yandex.ru/get/$script,domain=yastatic.net
 !
