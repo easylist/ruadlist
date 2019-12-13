@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191209.2138
+@version 0.20191214.105
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -483,17 +483,6 @@
     }
 }
 
-@-moz-document domain("anime-vost.org") {
-    #Menu {
-        background: none !important;
-        height: 55px !important
-    }
-    #Menu > nav ul {
-        bottom: auto !important;
-        z-index: 100 !important
-    }
-}
-
 @-moz-document
   domain("anime.anidub.life"),
   domain("online.anidub.com") {
@@ -863,7 +852,7 @@
 
 @-moz-document
   domain("cinema-hd.ru"),
-  domain("filmshd.me"),
+  domain("filmshd.fun"),
   domain("hdlava.tv") {
     .wrap {
         padding-top: 0 !important
@@ -1050,6 +1039,9 @@
   domain("octavius.mail.ru") {
     #app-canvas .layout_bordered > .layout__column_right .slot {
         display: none !important
+    }
+    .layer-sent-page > .layer {
+        min-height: 0 !important
     }
 }
 
@@ -1515,7 +1507,8 @@
 }
 
 @-moz-document domain("go.mail.ru") {
-    [class^="response"][class$="_wrapper"] > [id^="js-"][id$="Block"] > :first-child {
+    [class^="response"][class$="_wrapper"] > [id^="js-"][id$="Bar"] > :first-child, 
+    div[class*="banner__right"] {
         display: none !important
     }
 }
@@ -3407,18 +3400,18 @@
     .app__page > div[class*="-container_"]:not([class*="media"]):not([class*="content"]):first-child, 
     .desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child, 
     .media-post-page > div[class*="-container_"]:not([class*="media"]):first-child, 
+    .page-content > div[id]:not(#header-info-bg):empty, .top-banner-container, 
     [class*="adblock-warning"], aside.dialog, div[data-type="teaserspec"], 
     div[id*="_superbanner_"] {
         display: none !important
     }
-    .top-banner-container {
-        height: 0 !important
-    }
-    .page-content > #header-info-bg + div[id]:not([class]) {
+    .page-content > #header-info-bg + div[id]:not([class]), 
+    .page-content > div[id]:not(#header-info-bg):empty + div[id]:not(#top) {
         margin-bottom: 40px !important
     }
     .app__content div[style="min-height:250px"], 
-    .underheader-superbanner-wrapper {
+    .underheader-superbanner-wrapper, 
+    div[class*="kinopoisk-media-container_pending"] {
         min-height: 0 !important
     }
     html > body {
