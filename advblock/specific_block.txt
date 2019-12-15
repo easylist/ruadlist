@@ -182,6 +182,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|mschistota.
 .imgpay.ru^$script,domain=imgpay.ru
 .imgshance.ru^$script
 .impicfree.ru^$script,domain=impicfree.ru
+.inforeactor.ru^$xmlhttprequest
 .ismnews.ru^$script
 .js?rt=$domain=antistarforce.com|psjailbreak.ru|rustorka.club|rustorka.com|rustorka.innal.top|rustorka.net|rustorkacom.lib
 .kino-filmov.net^$script,domain=kino-filmov.net
@@ -348,6 +349,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|mschistota.
 .zozi.ru^$script,domain=zozi.ru
 .zz87.xyz^$script
 .легион.net^$script,domain=xn--c1adkjnf.net|легион.net
+/(24smi|\/jsn\/|smi24)/$domain=inforeactor.ru|jpgazeta.ru|nahnews.org|nation-news.ru|newinform.com|polit.info|politexpert.net|riafan.ru|rueconomics.ru|slovodel.com
 /(fdsiegdfrnila.info/(?!php)(?!style))/$script,~third-party
 /(sovets.net\/(?!article)(?!profile))/$xmlhttprequest,domain=sovets.net
 /*.mp4$domain=letitbit.net|picusha.net
@@ -355,10 +357,8 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|mschistota.
 /*.php?uid=$script,domain=agorov.org|anidub.com|anidub.me|anidub.tv|animerost.org|animevost.biz|animevost.org|animevost1.org|animevost2.org|animevost3.org|audioknigi-online.com|lalapaluza.ru|multmania.club|smotret-anime-365.ru|yummyanime.club
 /*.php|$third-party,subdocument,domain=rutracker.appspot.com|rutracker.net|rutracker.nl|rutracker.org|zerkalo-torrent.tk
 /*_bann$subdocument,domain=agorov.org|animerost.org|animevost.biz|animevost.org|animevost1.org|animevost2.org|animevost3.org|smotret-anime-365.ru
-/*json$xmlhttprequest,domain=inforeactor.ru|nahnews.org|nation-news.ru|nevnov.ru|newinform.com|polit.info|politexpert.net|riafan.ru|rueconomics.ru|slovodel.com
 /*wows_$domain=agorov.org|animerost.org|animevost.biz|animevost.org|animevost1.org|animevost2.org|animevost3.org|smotret-anime-365.ru
 //www.vsevam.ru^$object
-/24smi/$domain=inforeactor.ru|jpgazeta.ru|nahnews.org|nation-news.ru|newinform.com|polit.info|politexpert.net|riafan.ru|rueconomics.ru|slovodel.com
 /75tr_*_edge.js$domain=xn----7sbaegss0bebjcb2g.xn--p1ai|нахабино-новое.рф
 /?ads_service=$domain=namba.kg|namba.kz
 /^https?://(?!image\.)([^.]+\.)+?fhserv\.ru/$domain=fishingsib.ru
@@ -396,9 +396,7 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|mschistota.
 /^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
 /ad*.tutu.ru^*_*.php|
 /afrsasync*.js$script,domain=auto.vesti.ru|gubernia.com
-/aip?ua=$~third-party,xmlhttprequest,domain=inforeactor.ru|nahnews.org|nation-news.ru|newinform.com|polit.info|politexpert.net|riafan.ru|rueconomics.ru|slovodel.com
 /api*iframe$subdocument,domain=get-tune.cc|iplayer.info|ipleer.fm|mp3cc.biz|sexxx.name|xmusic.name
-/api?ua=$~third-party,xmlhttprequest,domain=inforeactor.ru|nahnews.org|nation-news.ru|newinform.com|polit.info|politexpert.net|riafan.ru|rueconomics.ru|slovodel.com
 /app.js|$script,domain=livelib.ru|vesti.ru
 /arscode-ninja-popups/*$domain=animalreader.ru|mensgen.ru|vovetnam.su
 /async.php$third-party,xmlhttprequest,domain=newsvl.ru|vl.ru
@@ -410,7 +408,6 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|mschistota.
 /code/bshow.php$script,domain=futurevideo.pro|hd-720.biz|onlinemusic.com.ua
 /comebacker/$xmlhttprequest,domain=applesmile.ru|avtoportal34.ru|mercedesbenz124.ru
 /consultant-slider.js$script,domain=kursremonta.ru
-/data/informer?object=$script,domain=inforeactor.ru|nahnews.org|nation-news.ru|newinform.com|polit.info|politexpert.net|riafan.ru|rueconomics.ru|slovodel.com
 /default/vbanners/$domain=noi.md
 /do/$domain=myzuka.club
 /files/!modules/*$domain=crazys.info|ucrazy.ru
@@ -444,7 +441,6 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|mschistota.
 /js/module/isBlocked.js$script,domain=kompravda.eu|kp.by|kp.ru
 /js/pop*.js$script,domain=superhumor.ru|voffka.com
 /js/v.js$script,domain=superhumor.ru|voffka.com
-/jsn/$domain=inforeactor.ru|nahnews.org|nation-news.ru|newinform.com|polit.info|politexpert.net|riafan.ru|rueconomics.ru|slovodel.com
 /klama/$domain=superhumor.ru|voffka.com
 /load_ads.js$script,domain=torrents.net.ua
 /media/index.js$domain=gdz-putina.net|gdz.ru|gdzputina.com|gdzputina.ru|megaresheba.com|megaresheba.ru|resheba.com|reshebnik.com|stavcur.ru|zoobrilka.org
@@ -465,7 +461,6 @@ $xmlhttprequest,domain=happy-block.info|howto-news.info|kinohome.biz|mschistota.
 /Scripts/jquery.rbtify.min.js$domain=myzuka.club
 /Scripts/rcs.js$script,domain=rp5.by|rp5.co.uk|rp5.kz|rp5.lv|rp5.md|rp5.ru|rp5.ua
 /serial_adv_files/$image,domain=xn--80aacbuczbw9a6a.xn--p1ai|куражбамбей.рф
-/smi24/$domain=inforeactor.ru|nahnews.org|nation-news.ru|newinform.com|polit.info|politexpert.net|riafan.ru|rueconomics.ru|slovodel.com
 /static/banners/*$domain=gagadget.com|maxpark.com|vse-sto.com.ua
 /u_*.js|$script,~third-party,domain=afanasyevo.ucoz.ru|big-bang-online.ru|borgo.ucoz.ru|breaking-bad-online.ru|dh-online.ru|driveroff.net|gardri.narod.ru|gidonline.eu|griffiny.ru|grimm-all.ru|kinogo.eu|math-helper.ru|novospasskoe-city.ru|online-futurama.ru|online-simpsons.ru|online-south-park.ru|pkrc.ru|primecrime.ru|queen-time.ru|radikal.ru|sambirmajdan.at.ua|samlab.ws|scrin.org|ucoz.ru|uniongang.net|uniongang.org
 /upload/rk/*$domain=37.ru|62info.ru|afanasy.biz|agrostory.com|arsenaltula.ru|asn24.ru|automobili.ru|avtosreda.ru|bel.ru|bits.media|citrus.ua|con-med.ru|cryptolymp.ru|footballreview.ru|gorod48.ru|hi-fi.ru|innov.ru|k1news.ru|kluch.media|lgz.ru|marpravda.ru|matchfishing.ru|mediaryazan.ru|mk.tula.ru|mnmag.ru|mos.news|newkaliningrad.ru|newsroom24.ru|nmosktoday.com|ohranatruda.ru|onlinetambov.ru|paparazzi.ru|planetaseminarov.ru|portamur.ru|rabochy-put.ru|riavrn.ru|securitylab.ru|seonews.ru|sochi.com|sportfm.ru|telesputnik.ru|tvk6.ru|ural56.ru|vdvsn.ru|velikiynovgorod.ru|vladtv.ru|vt-inform.ru|x-race.info|ya62.ru|zebra-tv.ru|zi.dn.ua
