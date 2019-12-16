@@ -130,15 +130,13 @@ auto.mail.ru##.mailru-visibility-check iframe
 auto.mail.ru##.mailru-visibility-check-counter + div
 auto.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
 auto.mail.ru##.rb_loaded.rb_main-240x400.js-module
-auto.mail.ru#?#:not(.cols__wrapper) > div[class]:-abp-properties(width: 280px;)
 @@||auto.mail.ru^$generichide
 auto.mail.ru##[class*="grid"] > .grid__item_banner
 auto.mail.ru##body > div div > center div[class^="rb-criteo-"]
 auto.mail.ru#?#body [class*="o"] .r-source:-abp-has(> *)
 auto.mail.ru#?#body [class*="o"] div[id^="trg-"]:-abp-has(> *)
 auto.mail.ru#?#body [class*="o"] div[id^="yandex_ad"]:-abp-has(> *)
-auto.mail.ru#?#div[class]:-abp-properties(margin-left: 241px;)
-auto.mail.ru#?#div[class][style="position: static;"]:not(.margin_bottom_20):-abp-properties(margin-bottom: 20px;)
+auto.mail.ru##div[data-adq-id]
 auto.mail.ru##tr > .daynews__spring
 ! Гороскопы
 horo.mail.ru##.box[class*=" rb_"]
@@ -159,6 +157,7 @@ horo.mail.ru##div[class^="rb_"]
 horo.mail.ru##div[data-adq-id]
 horo.mail.ru##div[data-module^="Slot.Mimic"]
 ! Дети
+deti.mail.ru##.cols__inner > [data-module="Toggle.comments"] ~ div[class^="margin_bottom_"]
 deti.mail.ru##.js-popup_gallery .viewbox__side
 deti.mail.ru##.js-smoky-end > .rb_loaded
 deti.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="https://r.mail.ru/"])
@@ -169,13 +168,16 @@ deti.mail.ru##tr > .daynews__spring
 ! Здоровье
 health.mail.ru#?#.column_sidebar .margin_bottom_20:-abp-has([data-adq-id])
 health.mail.ru##.fromPartners3
+health.mail.ru##.js-banner
 health.mail.ru##.js-popup_gallery .viewbox__side
 @@||health.mail.ru^$generichide
 health.mail.ru##div[class*="page"] .rb
 health.mail.ru##div[class*="page"] div[data-adq-id]
+health.mail.ru##div[data-adq-id]
 health.mail.ru##img[width="240"][height="200"]
 health.mail.ru##tr > .daynews__spring
 ! Кино
+kino.mail.ru##.cols__inner > div[class*=" rb_"] ~ .padding_top_20
 kino.mail.ru##.js-popup_gallery .viewbox__side
 kino.mail.ru##.m-photo-stories__banner
 kino.mail.ru##.mailru-visibility-check div[style*="250"]
@@ -185,6 +187,7 @@ kino.mail.ru#?#.mailru-visibility-check:-abp-has(> [target="_blank"][href^="http
 kino.mail.ru##body .block [class] > div[class*="commerc"]
 kino.mail.ru#?#body [class*="o"] div[id^="trg-"]:-abp-has(> *)
 kino.mail.ru#?#body [class*="o"] div[id^="yandex_ad"]:-abp-has(> *)
+kino.mail.ru##div[class*=" rb_"]
 ! Lady
 lady.mail.ru##.block .cols .rb-video-widget
 lady.mail.ru##.js-popup_banner
@@ -195,8 +198,7 @@ lady.mail.ru##.sticky-springs__item
 @@||lady.mail.ru^$generichide
 lady.mail.ru##body [class*="o"] div[id^="trg-"]
 lady.mail.ru##body [class*="o"] div[id^="yandex_ad"]
-lady.mail.ru#?#div[class]:-abp-properties(width: 280px;)
-lady.mail.ru#?#td[class]:-abp-properties(width: 240px;)
+lady.mail.ru##div[class*=" rb_"]
 lady.mail.ru##tr > .daynews__spring
 ! Love
 love.mail.ru##.TopBannerSlot
@@ -246,14 +248,12 @@ news.mail.ru##.mailru-visibility-check
 news.mail.ru##.p-directhack
 news.mail.ru#?#.rb-slot:-abp-has([id*="yandex_"])
 news.mail.ru#?#.rb_banner:-abp-has(*)
-@@||ad.mail.ru/*.gif|$image,domain=news.mail.ru
 news.mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-abp-contains(Реклама))
 news.mail.ru#?#body [class*="o"] .r-source:-abp-has(> * *)
 news.mail.ru#?#body [class*="o"] div[id^="trg-"]:-abp-has(> * *)
 news.mail.ru#?#body [class*="o"] div[id^="yandex_ad"]:-abp-has(> * *)
 news.mail.ru#?#div:-abp-has(> * > .sourceInformer_bks)
 news.mail.ru#?#div:-abp-has(> * > a[href*="t.mail.ru/redir"])
-news.mail.ru#?#div:not(.js-module) > div[class]:-abp-properties(height: 400px;)
 news.mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
 news.mail.ru##div[class]:not(.leaflet-map-pane)[style^="transform: translate3d"]:not(.viewbox__slides) > div:first-child
 ! Облако
@@ -262,10 +262,9 @@ cloud.mail.ru##.public__content > div[id]:not(#react-public-upload):not([title])
 cloud.mail.ru##.w-public__content > .b-layout div[id][class][style="width: 240px;"]
 @@||an.yandex.ru/system/context.js$domain=cloud.mail.ru
 ! Ответы
+otvet.mail.ru#?#.mailru-visibility-check:-abp-has([target="_blank"])
 @@||otvet.mail.ru^$generichide
 otvet.mail.ru##body > iframe[src*="blob:"]
-otvet.mail.ru#?#.mailru-visibility-check:-abp-has([target="_blank"])
-||relap.io^$script,domain=otvet.mail.ru
 ! Погода
 pogoda.mail.ru###direct_bottom
 pogoda.mail.ru###right_300x300
@@ -283,7 +282,6 @@ pogoda.mail.ru##.p-directhack
 pogoda.mail.ru##.sticky-springs > .advert
 pogoda.mail.ru##[data-view^="SlotView.mimic"]
 pogoda.mail.ru#?#body [class*="o"] .r-source:-abp-has(> *)
-pogoda.mail.ru#?#div:-abp-properties(width: 240px)
 pogoda.mail.ru##div[class*="directhack"]
 pogoda.mail.ru##div[class*="rb-direct"]
 pogoda.mail.ru##div[data-adq-id]
@@ -305,27 +303,27 @@ sportmail.ru##.sub-news-list_rightcoll
 sportmail.ru#?#body [class*="o"] .r-source:-abp-has(> * *)
 sportmail.ru#?#body [class*="o"] div[id^="trg-"]:-abp-has(> * *)
 sportmail.ru#?#body [class*="o"] div[id^="yandex_ad"]:-abp-has(> * *)
-sportmail.ru#?#div:not(.js-module) > [class]:-abp-properties(height: 400px;)
 sportmail.ru##div[class][style^="transform: translate3d"]:not(.viewbox__slides) > div:first-child
 sportmail.ru##tr > .daynews__spring
 ! Хай-тек
 hi-tech.mail.ru##.box[class*=" rb_"]
 hi-tech.mail.ru##.branding-p
 hi-tech.mail.ru##.cols__column_right > .cols__inner > :not(.m-subscription)
+hi-tech.mail.ru##.grid__item_banner
+hi-tech.mail.ru##.js-banner
 hi-tech.mail.ru##.js-popup_gallery .viewbox__side
 hi-tech.mail.ru##.mailru-visibility-check
 hi-tech.mail.ru##.pc-branding
 hi-tech.mail.ru##.rb
 hi-tech.mail.ru##[data-view^="SlotView.mimic"]
-hi-tech.mail.ru#?#div[class]:-abp-properties(margin-bottom: 30px;)
-hi-tech.mail.ru#?#div[class]:-abp-properties(width: 280px;)
-hi-tech.mail.ru#?#td[class]:-abp-properties(width: 240px;)
+hi-tech.mail.ru##div[class="block block_collapse_top"]
 hi-tech.mail.ru##tr > .daynews__spring
 ! Разное
 go.mail.ru###mainFeedEmpty
 games.mail.ru##.b-content__banner
 games.mail.ru##.b-main__wrapper > a.b-bg[href^="https://r.mail.ru/"]
 games.mail.ru##.b-pc__wrapper > a[class^="b-bg"][href^="https://r.mail.ru/redir/"][target="_blank"]
+dom.mail.ru##.cols__inner > .article ~ .margin_top_20
 games.mail.ru##.js-aab_target
 tv.mail.ru##.js-popup_banner
 games.mail.ru,pets.mail.ru##.js-popup_gallery .viewbox__side
@@ -333,9 +331,11 @@ minigames.mail.ru##.left-advert-block
 minigames.mail.ru##.left-banner
 video.mail.ru##.lvi-r-ban
 games.mail.ru##.mailru-visibility-check
+mail.ru,sportmail.ru##.mywidget__link_advert
 cards.mail.ru##.pt10.center
 pets.mail.ru##.rb_banner
 tv.mail.ru##.rbtopblock
+dom.mail.ru##.sticky-springs__item
 go.mail.ru##[class*="_trg"]
 mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-abp-contains(Реклама))
 pets.mail.ru##[data-name="bottom ad"]
@@ -356,7 +356,6 @@ maps.mail.ru##img[width="200"][height="30"]
 /brandingVideo.js$domain=mail.ru
 /mimic/$domain=cloud.mail.ru
 /mrg-context.$script,stylesheet,domain=mail.ru
-@@||ad.mail.ru/adp/?q%*_siteid$domain=auto.mail.ru|deti.mail.ru|health.mail.ru|kino.mail.ru|lady.mail.ru|news.mail.ru|pets.mail.ru|realty.mail.ru|sportmail.ru
 ||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~otvet.mail.ru
 ||bs.mail.ru^$image,domain=mail.ru
 ||c-cdn.coub.com^$script,domain=mail.ru
@@ -380,6 +379,7 @@ maps.mail.ru##img[width="200"][height="30"]
 ||r.mradx.net/*link1=$subdocument
 ||realty.mail.ru^*parallax.js
 ||redatastore.ru^$csp=script-src
+||relap.io^$domain=mail.ru|sportmail.ru
 ||stepan-fe.go.mail.ru^$domain=go.mail.ru
 ||tv.mail.ru/popup_banner/
 !
