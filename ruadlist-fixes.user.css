@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191214.105
+@version 0.20191216.2222
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -619,6 +619,17 @@
 }
 
 @-moz-document
+  domain("auto.mail.ru"),
+  domain("horo.mail.ru"),
+  domain("kino.mail.ru"),
+  domain("lady.mail.ru"),
+  domain("tv.mail.ru") {
+    .cols__inner > noindex {
+        display: none !important
+    }
+}
+
+@-moz-document
   domain("autonews.ru"),
   domain("rbc.ru"),
   domain("rbcplus.ru"),
@@ -925,6 +936,12 @@
     }
 }
 
+@-moz-document domain("deti.mail.ru") {
+    .deti-slot_exchange {
+        display: none !important
+    }
+}
+
 @-moz-document domain("doramax.tv") {
     .wrapper.full {
         margin-top: 70px !important
@@ -954,6 +971,9 @@
     body > [id] > div[class] > div:not([id]):not([class]):not([style]) > a[href][target="_blank"], 
     div[class^="b"][class*="anners"] {
         display: none !important
+    }
+    .p-sidebar {
+        margin: auto !important
     }
 }
 
@@ -989,9 +1009,10 @@
   domain("drive2.com"),
   domain("www.drive2.ru") {
     .c-dv-container--placeholder + div[class] > div:first-child + div[class], 
-    .c-post + div[class], .dv-post-header, 
+    .c-post + div[class]:not(:last-child), .dv-post-header, 
     .offer[itemtype="http://schema.org/Product"] + div, 
-    [data-role*="widget-inject"], [data-target^="drom_"] + div {
+    [data-role*="widget-inject"], [data-target^="drom_"] + div, 
+    [data-ym-target="menu_WOT_click"] {
         display: none !important
     }
     .c-dv-container--placeholder + div[class] > div:first-child:not(:only-child) {
@@ -1507,9 +1528,14 @@
 }
 
 @-moz-document domain("go.mail.ru") {
-    [class^="response"][class$="_wrapper"] > [id^="js-"][id$="Bar"] > :first-child, 
-    div[class*="banner__right"] {
+    body > div[style^="z-index:"] {
         display: none !important
+    }
+    html > body:not(#id) #layout [class^="response"][class$="_wrapper"] > [id^="js-"][id$="Bar"] > :first-child, 
+    html > body:not(#id) #layout div[class*="banner__right"] {
+        display: none !important;
+        height: 0 !important;
+        transform: scale(0) !important
     }
 }
 
@@ -1756,7 +1782,7 @@
 }
 
 @-moz-document domain("instagram.com") {
-    body {
+    body[style*="overflow: hidden;"] {
         overflow: auto !important
     }
 }
@@ -3487,7 +3513,8 @@
     div[aria-label="Реклама"], 
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
     div[class*="sidebar"] > .direct-snippet, 
-    div[class*="sport-advert_type_"]:empty {
+    div[class*="sport-advert_type_"]:empty, 
+    script[data-message*="/turbo?"] ~ div div[class*="_rect"][class*="_placed_"] {
         display: none !important
     }
     .serp-header {
@@ -3499,6 +3526,9 @@
     }
     .b-page {
         padding-top: 0 !important
+    }
+    .mg-page-layout-item_pos_right div[class*="wrapper"] > div[class*="sport-advert_type"] {
+        padding: 0 !important
     }
     .head-stripe {
         position: fixed !important;
