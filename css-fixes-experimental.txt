@@ -1134,8 +1134,8 @@ otvet.mail.ru#?#div[class][style="top: 56px;"] > div > div ~ div:style(height: 0
 my.mail.ru##div[class^="app-adv-"]
 news.mail.ru,sportmail.ru##div[data-module="LazyLoad.PromoPopup"] .js-module.block
 news.mail.ru##div[data-view="MyWidgetView.SmokyExtend"]
-go.mail.ru##html > body:not(#id) #layout [class^="response"][class$="_wrapper"] > [id^="js-"][id$="Bar"] > :first-child:style(display: none !important; height: 0 !important; transform: scale(0) !important)
-go.mail.ru##html > body:not(#id) #layout div[class*="banner__right"]:style(display: none !important; height: 0 !important; transform: scale(0) !important)
+go.mail.ru#?#html > body:not(#id) #layout [class^="response"][class$="_wrapper"] > [id^="js-"][id*="section"] > :first-child:style(display: none !important; height: 0 !important; transform: scale(0) !important)
+go.mail.ru#?#html > body:not(#id) #layout div[class*="banner"][class*="right"]:style(display: none !important; height: 0 !important; transform: scale(0) !important)
 my.mail.ru##html.window-loaded .b-video-backscreen
 my.mail.ru#?#html.window-loaded .b-video-controls__inside-play-button:style(visibility: visible !important; opacity: 0 !important; width: 100% !important; height: 100% !important; top: 0 !important; left: 0 !important;)
 ! --- disabled ---
