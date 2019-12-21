@@ -19,6 +19,7 @@
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 1news.com.ua,365news.biz,4mama.ua,7days-ua.com,cikavosti.com,comments.ua,depo.ua,dnews.dn.ua,dv-gazeta.info,fedpress.ru,glavnoe.ua,glavnoe24.ru,inforpost.com,kurskcity.ru,liga.net,narodna-pravda.ua,pingvin.pro,pl.com.ua,real-vin.com,russianshowbiz.info,semobile.com.ua,unn.com.ua,vchaspik.ua,versii.if.ua,volyninfo.com,volynpost.com,womo.ua##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
+1tv.ru,mediavitrina.ru##+js(set-constant, window.EUMP.plugins.antiblock, noopFunc)
 24molnia.com,7days.ru,7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,etotprazdnik.ru,fermilon.ru,fishki.net,globuss24.ru,gorodche.ru,inforeactor.ru,kp.ru,mashintop.ru,maxpark.com,nation-news.ru,news.ru,newsland.com,ogodom.ru,pasmi.ru,politros.com,rueconomics.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
 24molnia.com,7days.ru,7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,etotprazdnik.ru,fermilon.ru,fishki.net,globuss24.ru,gorodche.ru,inforeactor.ru,kp.ru,mashintop.ru,maxpark.com,nation-news.ru,news.ru,newsland.com,ogodom.ru,pasmi.ru,politros.com,rueconomics.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 24smi.org,liveinternet.ru##+js(set-constant, Object.prototype.initYaDirect, undefined)
@@ -145,13 +146,9 @@ yapx.ru##+js(cookie-remover, /adblock_/)
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(abort-current-inline-script, document.addEventListener)
 zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant, String.prototype.charCodeAt, trueFunc)
 znanija.com##+js(abort-on-property-write, getAdBlockType)
-||1internet.tv^$media,domain=1tv.ru|mediavitrina.ru
-||1internet.tv^$media,redirect=noopmp4-1s,domain=1tv.ru|mediavitrina.ru
-||1tv.ru/player/$image,redirect=1x1-transparent.gif,domain=1tv.ru
 ||24molnia.com^$xmlhttprequest,badfilter,domain=24molnia.com
 ||7ogorod.ru^$xmlhttprequest,badfilter,domain=7ogorod.ru
 ||adbutton.net^$script,redirect=noopjs
-||adriver.ru^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
 ||alau.kz^$xmlhttprequest,badfilter,domain=alau.kz
 ||an.yandex.ru^$script,redirect=noopjs
 ||an.yandex.ru^$xmlhttprequest,redirect=nooptext
@@ -183,11 +180,6 @@ znanija.com##+js(abort-on-property-write, getAdBlockType)
 ||svpressa.ru^$csp=script-src 'self' * blob: data:,badfilter
 ||tele.ru^$xmlhttprequest,badfilter,domain=tele.ru
 ||teleprogramma.pro^$xmlhttprequest,badfilter,domain=teleprogramma.pro
-||videomore.ru^$media,redirect=noopmp4-1s,domain=1tv.ru|mediavitrina.ru
-||vihub.ru^$media,redirect=noopmp4-1s,domain=1tv.ru|mediavitrina.ru
-||vipk-cache.cdnvideo.ru^$media,redirect=noopmp4-1s,domain=1tv.ru
-||weborama.fr^$image,redirect=1x1-transparent.gif,domain=1tv.ru
-||weborama.fr^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
 ||yastatic.net/pcode/adfox/loader.js$script,redirect=silent-noeval.js,domain=auto.ru
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 !#if !env_firefox
