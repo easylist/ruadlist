@@ -179,7 +179,7 @@ znanija.com##+js(abort-on-property-write, getAdBlockType)
 ||static-mon.yandex.net/static/main.js$script,redirect=noopjs
 ||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
 ||strm.yandex.ru/get/$script,redirect=silent-noeval.js,domain=yastatic.net
-||strm.yandex.ru^$media,redirect=noopmp4-1s,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
+||strm.yandex.ru^$empty,important,media,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
 ||svpressa.ru^$csp=script-src 'self' * blob: data:,badfilter
 ||tele.ru^$xmlhttprequest,badfilter,domain=tele.ru
 ||teleprogramma.pro^$xmlhttprequest,badfilter,domain=teleprogramma.pro
