@@ -35,6 +35,7 @@
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||studizba.com^$generichide,badfilter
+all-episodes.org##+js(abort-on-property-write, pokazad)
 amazinghis.ru,moj-pes.ru##+js(abort-on-property-read, anOptions)
 anidub.com,anidub.life##+js(abort-on-property-read, ogonek)
 animelend.info##+js(set-constant, JSON.parse, noopFunc)
@@ -156,6 +157,7 @@ znanija.com##+js(abort-on-property-write, getAdBlockType)
 ||argumenti.ru^$csp=script-src 'self' * blob: data:,badfilter
 ||argumenti.ru^$xmlhttprequest,badfilter,domain=argumenti.ru
 ||argumentiru.com^$xmlhttprequest,badfilter,domain=argumentiru.com
+||cdn.braun634.com/libs/b.js$empty,important,domain=all-episodes.org
 ||etotprazdnik.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
 ||fermilon.ru^$xmlhttprequest,badfilter,domain=fermilon.ru
 ||fun/assets/vendor*.xml?$third-party,xmlhttprequest
