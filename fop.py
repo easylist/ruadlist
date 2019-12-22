@@ -17,7 +17,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.814
+VERSION = 3.815
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -61,7 +61,7 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt", "antinuha.txt",
           "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
-KNOWNOPTIONS = ("collapse", "document", "elemhide", "font", "generichide", "genericblock",
+KNOWNOPTIONS = ("empty", "collapse", "document", "elemhide", "font", "generichide", "genericblock",
                 "image", "important", "inline-script", "match-case", "media", "object", "object-subrequest",
                 "other", "ping", "popup", "script", "stylesheet", "subdocument", "badfilter",
                 "first-party", "third-party", "websocket", "xmlhttprequest")
