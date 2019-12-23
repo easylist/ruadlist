@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191216.2222
+@version 0.20191223.2141
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -12,6 +12,7 @@
   domain("4watching.club"),
   domain("aghdrezka.com"),
   domain("ahdrezka.com"),
+  domain("all-episodes.org"),
   domain("all-episodes.tv"),
   domain("amovies.cc"),
   domain("baskino.me"),
@@ -65,6 +66,7 @@
   domain("investxp.ru"),
   domain("ixbt.com"),
   domain("jetsetter.ua"),
+  domain("justhdrezka.com"),
   domain("kinoaa.ru"),
   domain("kinobar.cc"),
   domain("kinobe.club"),
@@ -162,6 +164,7 @@
   domain("hdrezka.website"),
   domain("hdrezka.win"),
   domain("ixbt.com"),
+  domain("justhdrezka.com"),
   domain("kino-full.ru"),
   domain("kinobar.cc"),
   domain("kinokrad.su"),
@@ -417,17 +420,39 @@
     }
 }
 
-@-moz-document domain("all-episodes.tv") {
-    body {
-        background-image: none !important
-    }
-    .content > div[id="bip"] {
-        display: block !important
-    }
-    #advtss, #text3, div[id^="bn_"] {
+@-moz-document domain("all-episodes.org") {
+    div[id^="advtss"] {
         position: fixed !important;
         top: -10000px !important;
         left: -10000px !important
+    }
+}
+
+@-moz-document
+  domain("all-episodes.org"),
+  domain("all-episodes.tv") {
+    body {
+        background-image: none !important
+    }
+}
+
+@-moz-document
+  domain("allbasketball.org"),
+  domain("basketboom.net"),
+  domain("freerutor.com"),
+  domain("gametech.ru"),
+  domain("gidonline.fun"),
+  domain("hokeyboom.net"),
+  domain("imgrutor.com"),
+  domain("kinoboom.su"),
+  domain("mma-today.net"),
+  domain("oblozhki.net"),
+  domain("sportarena.com"),
+  domain("sportboom.info"),
+  domain("uateam.tv"),
+  domain("virusinfo.info") {
+    body:not(#id), html:not(#id) {
+        margin-top: 0 !important
     }
 }
 
@@ -686,25 +711,6 @@
 
 @-moz-document domain("banki.ru") {
     .header--short.header {
-        margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("basketboom.net"),
-  domain("freerutor.com"),
-  domain("gametech.ru"),
-  domain("gidonline.fun"),
-  domain("hokeyboom.net"),
-  domain("imgrutor.com"),
-  domain("kinoboom.su"),
-  domain("mma-today.net"),
-  domain("oblozhki.net"),
-  domain("sportarena.com"),
-  domain("sportboom.info"),
-  domain("uateam.tv"),
-  domain("virusinfo.info") {
-    body:not(#id), html:not(#id) {
         margin-top: 0 !important
     }
 }
@@ -1007,15 +1013,17 @@
 
 @-moz-document
   domain("drive2.com"),
-  domain("www.drive2.ru") {
-    .c-dv-container--placeholder + div[class] > div:first-child + div[class], 
+  domain("drive2.ru") {
+    .c-dv-container, 
+    .c-dv-container[data-role] + div[class] > div:first-child + div[class], 
     .c-post + div[class]:not(:last-child), .dv-post-header, 
     .offer[itemtype="http://schema.org/Product"] + div, 
-    [data-role*="widget-inject"], [data-target^="drom_"] + div, 
+    .u-mobile-noselect[data-role="scrolltracking"][data-target], 
+    .u-mobile-noselect[data-role="scrolltracking"][data-target] + div, 
     [data-ym-target="menu_WOT_click"] {
         display: none !important
     }
-    .c-dv-container--placeholder + div[class] > div:first-child:not(:only-child) {
+    .c-dv-container[data-role] + div[class] > div:first-child:not(:only-child) {
         max-width: unset !important
     }
     .c-car-card-sa[data-metrika] {
@@ -1178,7 +1186,7 @@
     #picContainer > [title="Нажмите для увеличения изображения"] > img {
         margin-bottom: 0 !important
     }
-    #footer {
+    #footer, .pic-container > img {
         margin-top: 0 !important
     }
     #foot-area {
@@ -1406,6 +1414,7 @@
 
 @-moz-document
   domain("fullfilmhd.space"),
+  domain("kinocok.org"),
   domain("torrentum.me") {
     #wrapper {
         margin-top: 0 !important
@@ -1531,8 +1540,8 @@
     body > div[style^="z-index:"] {
         display: none !important
     }
-    html > body:not(#id) #layout [class^="response"][class$="_wrapper"] > [id^="js-"][id$="Bar"] > :first-child, 
-    html > body:not(#id) #layout div[class*="banner__right"] {
+    html > body:not(#id) #layout [class^="response"][class$="_wrapper"] > [id^="js-"][id*="section"] > :first-child, 
+    html > body:not(#id) #layout div[class*="banner"][class*="right"] {
         display: none !important;
         height: 0 !important;
         transform: scale(0) !important
@@ -2268,6 +2277,14 @@
     }
 }
 
+@-moz-document
+  domain("more.tv"),
+  domain("videomore.ru") {
+    button.info-bar__subscription {
+        display: none !important
+    }
+}
+
 @-moz-document domain("movieshok.ru") {
     .wrapp_content {
         margin-top: 0 !important
@@ -2382,7 +2399,8 @@
     .player-drop, .player-section {
         display: block !important
     }
-    .digit[style*="font-size"], .reklama.center.head {
+    .digit[style*="font-size"], .digit[style="display: block;"], 
+    .reklama.center.head {
         display: none !important
     }
 }
@@ -3269,6 +3287,15 @@
         color: black !important;
         font-weight: 100 !important;
         font-size: 8px !important
+    }
+}
+
+@-moz-document domain("uz.video") {
+    #blink7 {
+        -webkit-animation: none !important;
+        animation: none !important;
+        color: var(--color--normal) !important;
+        font-weight: normal !important
     }
 }
 
