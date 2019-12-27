@@ -341,6 +341,7 @@ mail.ru,sportmail.ru##.mywidget__link_advert
 cards.mail.ru##.pt10.center
 pets.mail.ru##.rb_banner
 tv.mail.ru##.rbtopblock
+go.mail.ru##.smack-market
 dom.mail.ru##.sticky-springs__item
 go.mail.ru##[class*="_trg"]
 mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-abp-contains(Реклама))
@@ -352,6 +353,8 @@ go.mail.ru##div[class*="right__banner"]
 tv.mail.ru##div[class][id^="mailru"]
 pulse.mail.ru#?#div[id^="_pcard_"]:-abp-has([href*="t.mail.ru/redir"])
 minigames.mail.ru##div[id^="slot"][id*="sitezone"]
+go.mail.ru##html > body:not(#id) #layout [class^="response"][class$="_wrapper"] > [id^="js-"]:not(.result) > :first-child *
+go.mail.ru##html > body:not(#id) #layout div[class*="banner"][class*="right"] *
 maps.mail.ru##img[width="200"][height="30"]
 ! Блокировка ресурсов в основном на самом mail.ru
 //r.mail.ru/b$subdocument
@@ -376,6 +379,7 @@ maps.mail.ru##img[width="200"][height="30"]
 ||mail.ru/js/common/vendor/
 ||mail.ru^*/rbBanner.js
 ||mamba.ru/images/*/promo/
+||market.yandex.ru/widget/$script,domain=go.mail.ru
 ||memytonsfor.ru^$csp=script-src
 ||minigames.imgsmail.ru/swf/stock/
 ||mradx.net/img/$object,subdocument
