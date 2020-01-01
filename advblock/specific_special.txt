@@ -65,6 +65,11 @@ www.avito.ru##div[class^="template_serp_"]
 ||criteo.net^$domain=avito.ru
 ||taboola.com^$domain=avito.ru
 !
+! Checkadblock - бесполезный псевдо-тест
+$third-party,image,script,xmlhttprequest,domain=checkadblock.ru
+||checkadblock.ru/js/
+||checkadblock.ru^$csp=script-src 'self' * data:
+!
 ! GISMeteo domains
 gismeteo.md,gismeteo.ru###rbc
 gismeteo.ua###w-hor
