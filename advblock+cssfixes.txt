@@ -71,6 +71,8 @@ friends.in.ua,gidonline.eu,kinopad.net,radikal.ru,simpsonsua.com.ua##+js(abort-o
 friends.in.ua,gra-prestoliv.in.ua,kinoguru.be,simpsonsua.com.ua,simpsonsua.tv##+js(abort-on-property-read, document.addEventListener, show_warning)
 gamehunt.net##+js(abort-on-property-write, adBlockDetected)
 gazeta.ru##+js(abort-on-property-read, g_GazetaNoExchange)
+gazeta.ru##+js(abort-on-property-read, Object.prototype.g_GazetaNoExchange)
+gazeta.ru##+js(set-constant, creepyVideo, noopFunc)
 gidonline.eu,kinogo.eu##+js(abort-on-property-read, target_script)
 gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.allowRepeatAds)
 gismeteo.ua##^script:has-text("zmctrack")
