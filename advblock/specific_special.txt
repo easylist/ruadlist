@@ -330,6 +330,7 @@ hi-tech.mail.ru##[data-view^="SlotView.mimic"]
 hi-tech.mail.ru##div[class="block block_collapse_top"]
 hi-tech.mail.ru##tr > .daynews__spring
 ! Разное
+go.mail.ru###js-kb-col-right > div[class*="right"] *
 go.mail.ru###layout #layout-content [class^="response"] .js-react > style ~ div *
 go.mail.ru###layout #layout-content [class^="response"] > * > nav:first-child *
 go.mail.ru###layout #layout-content [class^="response"] > .result > article:first-child *
@@ -364,6 +365,7 @@ pets.mail.ru##[data-name="bottom ad"]
 pets.mail.ru##[data-name="top ad"]
 tv.mail.ru##[data-rb]
 go.mail.ru##[id^="tb-"][class^="tb-"][class*="footer"]
+go.mail.ru#?#div:-abp-has(> div > div > .js-ad-label)
 tv.mail.ru##div[class][id^="mailru"]
 pulse.mail.ru#?#div[id^="_pcard_"]:-abp-has([href*="t.mail.ru/redir"])
 minigames.mail.ru##div[id^="slot"][id*="sitezone"]
