@@ -1,13 +1,41 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20191223.2141
+@version 0.20200110.2117
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
 
 @-moz-document
+  domain("1plus1.international"),
   domain("1plus1.ua"),
+  domain("1plus1.video"),
+  domain("2plus2.ua"),
+  domain("bigudi.tv"),
+  domain("paramountcomedy.com.ua"),
+  domain("plus-plus.tv"),
+  domain("tet.tv") {
+    .cookies {
+        display: none !important
+    }
+    body {
+        padding-top: 0 !important
+    }
+    .header {
+        top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("21forum.ru"),
+  domain("forum.na-svyazi.ru"),
+  domain("forum.zarulem.ws") {
+    #user2s[height="71"], #userlinks[height="70"], td[height="70"][style] {
+        display: none !important
+    }
+}
+
+@-moz-document
   domain("24video.site"),
   domain("4watching.club"),
   domain("aghdrezka.com"),
@@ -115,18 +143,10 @@
   domain("videoclub.men"),
   domain("virusinfo.info"),
   domain("wikianime.tv"),
+  domain("youhdrezka.com"),
   domain("zona-film.com") {
     body:not(#id), html:not(#id) {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("21forum.ru"),
-  domain("forum.na-svyazi.ru"),
-  domain("forum.zarulem.ws") {
-    #user2s[height="71"], #userlinks[height="70"], td[height="70"][style] {
-        display: none !important
     }
 }
 
@@ -200,7 +220,6 @@
   domain("simhost.org"),
   domain("smotri.com"),
   domain("stopgame.ru"),
-  domain("torrent-games.info"),
   domain("torrentom.com"),
   domain("torrentum.me"),
   domain("tvhdrezka.com"),
@@ -208,6 +227,7 @@
   domain("uphdrezka.com"),
   domain("userstyles.org"),
   domain("xatab-repack.net"),
+  domain("youhdrezka.com"),
   domain("zakarpatpost.net"),
   domain("zakon.kz") {
     body:not(#id), html:not(#id) {
@@ -290,7 +310,7 @@
         background: none !important;
         pointer-events: none !important
     }
-    .huawei-menu, .vivo-gallery, .vivo-wide {
+    .adteaser, .huawei-menu, .vivo-gallery, .vivo-wide {
         display: none !important
     }
     #global-wrapper[style*="pointer"] > * {
@@ -343,6 +363,7 @@
 @-moz-document
   domain("agorov.org"),
   domain("animerost.org"),
+  domain("animevost.am"),
   domain("animevost.biz"),
   domain("animevost.org"),
   domain("animevost1.org"),
@@ -438,14 +459,10 @@
 
 @-moz-document
   domain("allbasketball.org"),
-  domain("basketboom.net"),
   domain("freerutor.com"),
   domain("gametech.ru"),
   domain("gidonline.fun"),
-  domain("hokeyboom.net"),
-  domain("imgrutor.com"),
   domain("kinoboom.su"),
-  domain("mma-today.net"),
   domain("oblozhki.net"),
   domain("sportarena.com"),
   domain("sportboom.info"),
@@ -585,7 +602,8 @@
   domain("anistar7.org"),
   domain("anistar8.org"),
   domain("anistar9.org"),
-  domain("online-star.org") {
+  domain("online-star.org"),
+  domain("online-stars.org") {
     html > body:not(#id) {
         background-image: none !important
     }
@@ -888,6 +906,15 @@
     }
 }
 
+@-moz-document domain("cont.ws") {
+    body.modal-open > .modal {
+        display: none !important
+    }
+    body.modal-open {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("coop-land.ru") {
     body:not(#id) > .header {
         margin-bottom: auto !important
@@ -1144,6 +1171,12 @@
   domain("liveresult.ru") {
     body > div[id]:not([class])[style="display: block;"] {
         display: none !important
+    }
+}
+
+@-moz-document domain("eva.ru") {
+    body > .eva {
+        margin-top: 50px !important
     }
 }
 
@@ -1482,6 +1515,13 @@
     }
 }
 
+@-moz-document domain("gamma.mirtesen.ru") {
+    .aggregator-page {
+        pointer-events: none !important;
+        opacity: 0 !important
+    }
+}
+
 @-moz-document domain("gasolina-online.com") {
     #facebook-modal, body.modal-open > .modal-backdrop {
         display: none !important
@@ -1539,12 +1579,6 @@
 @-moz-document domain("go.mail.ru") {
     body > div[style^="z-index:"] {
         display: none !important
-    }
-    html > body:not(#id) #layout [class^="response"][class$="_wrapper"] > [id^="js-"][id*="section"] > :first-child, 
-    html > body:not(#id) #layout div[class*="banner"][class*="right"] {
-        display: none !important;
-        height: 0 !important;
-        transform: scale(0) !important
     }
 }
 
@@ -1841,6 +1875,7 @@
         background-image: none !important;
         background: #bdbdbd !important
     }
+    .content_wrap > div[class^="content_"] > div > a[href^="/go.php?id="], 
     .ten_topbar + div:not(.ten_ears_wrap), 
     .ten_topbar ~ div[class]:not([id]):nth-child(-n+10):not(.ten_ears_wrap):not(.content_wrap):not(.footer_wrap) {
         display: none !important
@@ -2003,10 +2038,10 @@
   domain("kinoxa.ws"),
   domain("lord-films.pw"),
   domain("lordfilm.net"),
-  domain("lordfilm6.tv"),
   domain("lordfilmtv.net"),
   domain("lordfilmtv.vip"),
   domain("lordsfilm.net"),
+  domain("lordsfilm.pro"),
   domain("lordsfilms.pro") {
     html > body {
         background-color: #e5e5e5 !important
@@ -2291,7 +2326,9 @@
     }
 }
 
-@-moz-document domain("multmania.club") {
+@-moz-document
+  domain("multmania.club"),
+  domain("multonline.ru") {
     body {
         background: black !important
     }
@@ -2395,6 +2432,12 @@
     }
 }
 
+@-moz-document domain("nashaplaneta.net") {
+    header > .body {
+        margin-top: 54px !important
+    }
+}
+
 @-moz-document domain("newdeaf.online") {
     .player-drop, .player-section {
         display: block !important
@@ -2479,7 +2522,8 @@
 }
 
 @-moz-document domain("nova.rambler.ru") {
-    section > article[class^="Direct__item"] {
+    div[class^="DirectMKB__root"], section > article[class^="Direct__item"], 
+    span[class^="Menu__browser--"] {
         display: none !important
     }
 }
@@ -2888,6 +2932,12 @@
     }
 }
 
+@-moz-document domain("ru-drivemusic.net") {
+    .main-wrapper {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("rufilmtv.org") {
     #content:not(#id) {
         padding-top: 0 !important
@@ -3033,9 +3083,13 @@
 @-moz-document domain("softportal.com") {
     .TblBorderCLR > tbody > tr > td[style="padding:15px 0;"][align="center"], 
     .TblTopBanCLR td > a[href] > img, a[href^="prog"][target="_blank"], 
-    a[href^="prog"][target="_blank"] ~ *, 
+    a[href^="prog"][target="_blank"] ~ *, div[class="mfp-bg mfp-ready"], 
+    div[class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready"], 
     td[style="width:341px; padding-right:15px;"][valign="top"] {
         display: none !important
+    }
+    html {
+        overflow: auto !important
     }
 }
 
@@ -3199,13 +3253,6 @@
     }
 }
 
-@-moz-document domain("torrent-games.info") {
-    html {
-        position:relative;
-        top:-232px
-    }
-}
-
 @-moz-document domain("torrentom.com") {
     #footer_reklama > *, body > :not(#footer_reklama) {
         pointer-events: auto !important
@@ -3224,6 +3271,15 @@
 @-moz-document domain("tracktor.tv") {
     .pagebg {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("translit.ru") {
+    .tBlurred {
+        -webkit-filter: none !important
+    }
+    #cookiesquestion {
+        display: none !important
     }
 }
 
@@ -3366,6 +3422,15 @@
     }
 }
 
+@-moz-document
+  domain("vserialy.com"),
+  domain("vserialy.me") {
+    #header_box {
+        height: auto !important;
+        min-height: auto !important
+    }
+}
+
 @-moz-document domain("warfiles.ru") {
     #header + .banner {
         height: 100px !important
@@ -3414,6 +3479,9 @@
 }
 
 @-moz-document domain("www.goha.ru") {
+    #goharu {
+        background-color: transparent !important
+    }
     #stickybar > div[style^="margin-top"], div[onclick^="truemedia_callback"], 
     header.header {
         display: none !important
@@ -3533,6 +3601,7 @@
     }
     .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
+    .mg-page-layout-item_pos_right div[class*="wrapper"] > div[class]:empty, 
     .serp-list > .incut > .direct, .sport-advert:empty, 
     body[class*="b-page_infinity"] .direct-desktop_white, 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > :not([style]):not(.placeholder-card), 
@@ -3554,7 +3623,8 @@
     .b-page {
         padding-top: 0 !important
     }
-    .mg-page-layout-item_pos_right div[class*="wrapper"] > div[class*="sport-advert_type"] {
+    .mg-page-layout-item_pos_right div[class*="wrapper"] > div, 
+    div[class*="sport-advert"] {
         padding: 0 !important
     }
     .head-stripe {
