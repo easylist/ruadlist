@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200112.1628
+@version 0.20200113.1948
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -1559,10 +1559,6 @@
 }
 
 @-moz-document domain("gazeta.ru") {
-    #article_main_video.m_frame_fixed {
-        opacity: 0 !important;
-        z-index: -10 !important
-    }
     .betting.onlineboard .m_slider-content {
         padding-top: 10px !important
     }
@@ -1818,6 +1814,10 @@
     .outer_inner > .wrapper_outer > div[class] {
         height: auto !important;
         min-height: auto !important
+    }
+    div.hmenu_box a.hmenu {
+        padding-right: 13px !important;
+        padding-left: 13px !important
     }
 }
 
@@ -2109,10 +2109,6 @@
     .b-board._olimp {
         border-bottom: none !important;
         margin-top: 30px !important
-    }
-    .b-video-box__info {
-        margin-bottom: 0 !important;
-        border-bottom: none !important
     }
     .b-board._olimp > .b-board__wrap {
         margin-left: 0 !important
@@ -2836,19 +2832,6 @@
 @-moz-document domain("radiola.audio") {
     .mh-container {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("rambler.ru") {
-    [class*="j-mini-player__container"] > .j-mini-player__close {
-        display: none !important
-    }
-    [class*="j-mini-player__container"] {
-        position: relative !important;
-        left: 0 !important;
-        bottom: 0 !important;
-        width: 100% !important;
-        height: 100% !important
     }
 }
 
