@@ -377,11 +377,13 @@ dom.mail.ru##.sticky-springs__item
 go.mail.ru##[class*=" js-d"]
 go.mail.ru##[class*=" js-e"]
 go.mail.ru##[class*=" js-f"]
+go.mail.ru##[class*=" js-g"]
 go.mail.ru##[class*="_trg"]
 go.mail.ru##[class*="tiem js-"]
 go.mail.ru#?#[class]:-abp-has(> [class] > [class*=" js-d"])
 go.mail.ru#?#[class]:-abp-has(> [class] > [class*=" js-e"])
 go.mail.ru#?#[class]:-abp-has(> [class] > [class*=" js-f"])
+go.mail.ru#?#[class]:-abp-has(> [class] > [class*=" js-g"])
 go.mail.ru#?#[class]:-abp-has(> [class] > [class*="tiem js-"])
 go.mail.ru#?#[class]:-abp-has(> div > div[class*=" js-a"])
 go.mail.ru#?#[class]:-abp-has(> div > div[class*=" js-b"])
@@ -415,8 +417,14 @@ maps.mail.ru##img[width="200"][height="30"]
 ||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~otvet.mail.ru
 ||bs.mail.ru^$image,domain=mail.ru
 ||c-cdn.coub.com^$script,domain=mail.ru
+||go.imgsmail.ru/*megarandom=
+||go.imgsmail.ru/showpxt?pxn=ya
+||go.mail.ru/csp-report
 ||go.mail.ru/recodumps/
+||go.mail.ru/sentry/
 ||go.mail.ru/yadimgproxy/
+||go.mail.ru/yadproxy/
+||google-analytics.com^$domain=go.mail.ru
 ||hiwoenrep.ru^$csp=script-src
 ||imgsmail.ru/*/video-html5/custom-preroll_
 ||imgsmail.ru/js/onair2.$script
