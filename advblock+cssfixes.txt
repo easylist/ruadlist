@@ -77,6 +77,7 @@ gazeta.ru##+js(set-constant, creepyVideo, noopFunc)
 gidonline.eu,kinogo.eu##+js(abort-on-property-read, target_script)
 gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.allowRepeatAds)
 gismeteo.ua##^script:has-text("zmctrack")
+go.mail.ru##[data-p]
 gorodrabot.ru##+js(abort-on-property-read, Object.prototype.Direct)
 helpsetup.ru##+js(abort-current-inline-script, setTimeout, /solnisko/)
 helpsetup.ru##+js(abort-on-property-read, adBlockFunction)
