@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200113.1948
+@version 0.20200117.2133
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -36,7 +36,7 @@
 }
 
 @-moz-document
-  domain("24video.site"),
+  domain("24video.vip"),
   domain("4watching.club"),
   domain("aghdrezka.com"),
   domain("ahdrezka.com"),
@@ -151,7 +151,7 @@
 }
 
 @-moz-document
-  domain("24video.site"),
+  domain("24video.vip"),
   domain("aghdrezka.com"),
   domain("ahdrezka.com"),
   domain("aif.ru"),
@@ -232,22 +232,6 @@
   domain("zakon.kz") {
     body:not(#id), html:not(#id) {
         background-image: none !important
-    }
-}
-
-@-moz-document
-  domain("24video.site"),
-  domain("biqle.ru"),
-  domain("fainaidea.com"),
-  domain("gecid.com"),
-  domain("kurkul.com"),
-  domain("russian-porn.online"),
-  domain("valetudo.ru") {
-    body > * {
-        pointer-events: auto !important
-    }
-    body {
-        pointer-events: none !important
     }
 }
 
@@ -764,6 +748,21 @@
         left: 0 !important;
         width: 100% !important;
         margin-left: 0 !important
+    }
+}
+
+@-moz-document
+  domain("biqle.ru"),
+  domain("fainaidea.com"),
+  domain("gecid.com"),
+  domain("kurkul.com"),
+  domain("russian-porn.online"),
+  domain("valetudo.ru") {
+    body > * {
+        pointer-events: auto !important
+    }
+    body {
+        pointer-events: none !important
     }
 }
 
@@ -1288,6 +1287,12 @@
     }
 }
 
+@-moz-document domain("filmishki.net") {
+    .wrap > .block {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("filmitorrent.net") {
     a[href*="aHR0c"] {
         display: none !important
@@ -1384,6 +1389,9 @@
 @-moz-document domain("forum.ru-board.com") {
     .tpc > .post > a[href] {
         word-break: break-all
+    }
+    .tpc > .post > table[width="75%"] > tbody > tr > .lgf {
+        word-break: break-word
     }
 }
 
@@ -2848,7 +2856,7 @@
 }
 
 @-moz-document domain("rbc.ru") {
-    .l-sticky-right-parent, .popup_push {
+    .l-sticky-right > style + div[class], .l-sticky-right-parent, .popup_push {
         display: none !important
     }
 }
@@ -3081,7 +3089,7 @@
     .TblTopBanCLR td > a[href] > img, a[href^="prog"][target="_blank"], 
     a[href^="prog"][target="_blank"] ~ *, div[class="mfp-bg mfp-ready"], 
     div[class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready"], 
-    td[style="width:341px; padding-right:15px;"][valign="top"] {
+    td[style="width:342px; padding-right:14px;"][valign="top"] {
         display: none !important
     }
     html {
@@ -3285,6 +3293,12 @@
     }
     body:not(#id) {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("tv-kanali.online") {
+    iframe.youtube-video:not([src*="//utraff.com/"]) {
+        display: block !important
     }
 }
 
