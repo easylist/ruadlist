@@ -65,10 +65,11 @@ www.avito.ru##div[class^="template_serp_"]
 ||criteo.net^$domain=avito.ru
 ||taboola.com^$domain=avito.ru
 !
-! Checkadblock - портфолио веб-мастера, выдаваемое за тест
-$third-party,image,script,xmlhttprequest,domain=checkadblock.ru
-checkadblock.ru##object,embed
-||checkadblock.ru/js/
+! Checkadblock (adblock-tester.com) - портфолио веб-мастера, выдаваемое за тест
+$third-party,image,script,xmlhttprequest,domain=adblock-tester.com|checkadblock.ru
+/banners/*$domain=adblock-tester.com|checkadblock.ru
+adblock-tester.com,checkadblock.ru##object,embed
+||adblock-tester.com^$csp=script-src 'self'
 ||checkadblock.ru^$csp=script-src 'self'
 !
 ! GISMeteo domains
