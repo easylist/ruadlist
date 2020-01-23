@@ -210,7 +210,7 @@ znanija.com##+js(abort-on-property-write, getAdBlockType)
 ||yastatic.net/pcode/adfox/loader.js$script,redirect=silent-noeval.js,domain=auto.ru
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 !#if !env_firefox
-auto.ru,kinopoisk.ru,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(abort-on-property-read, Element.prototype.attachShadow)
+auto.ru,kinopoisk.ru##+js(abort-on-property-read, Element.prototype.attachShadow)
 !#endif
 !
 ! Mail.RU
