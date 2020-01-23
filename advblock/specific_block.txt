@@ -376,7 +376,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://1progs\.ru\/(?!wp-content\/|wp-includes\/)/$script,domain=1progs.ru
 /^https?://24smi\.org/[^\s]{300,}/$xmlhttprequest,domain=24smi.org|dachnye-sovety.ru
 /^https?://[^\s]+\.razlozhi\.ru/[^\s]{300,}/$subdocument,xmlhttprequest,domain=razlozhi.ru
-/^https?://[a-z0-9]+\.com/+([^\s]{300,})/$third-party,script,stylesheet,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
+/^https?://[a-z0-9]+\.com/+([^\s]{300,})/$third-party,script,stylesheet,subdocument,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
 /^https?://aleshafilm\.com/+[0-9]{6,8}\./$script,domain=aleshafilm.com
 /^https?://best-girl.site\/(?!templates|engine)/$script,domain=best-girl.site
 /^https?://contentbooster\.me+\/(?!manifest)[a-z0-9]{5,45}/$xmlhttprequest
