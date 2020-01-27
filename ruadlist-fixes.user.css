@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200117.2133
+@version 0.20200127.1622
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -41,7 +41,6 @@
   domain("aghdrezka.com"),
   domain("ahdrezka.com"),
   domain("all-episodes.org"),
-  domain("all-episodes.tv"),
   domain("amovies.cc"),
   domain("baskino.me"),
   domain("baskinonet.ru"),
@@ -142,6 +141,7 @@
   domain("veleto.ru"),
   domain("videoclub.men"),
   domain("virusinfo.info"),
+  domain("vse-sezony.cc"),
   domain("wikianime.tv"),
   domain("youhdrezka.com"),
   domain("zona-film.com") {
@@ -301,9 +301,6 @@
         background: none !important;
         pointer-events: none !important
     }
-    .adteaser, .huawei-menu, .vivo-gallery, .vivo-wide {
-        display: none !important
-    }
     #global-wrapper[style*="pointer"] > * {
         pointer-events: auto !important
     }
@@ -433,18 +430,12 @@
 }
 
 @-moz-document domain("all-episodes.org") {
-    div[id^="advtss"] {
-        position: fixed !important;
-        top: -10000px !important;
-        left: -10000px !important
-    }
-}
-
-@-moz-document
-  domain("all-episodes.org"),
-  domain("all-episodes.tv") {
     body {
         background-image: none !important
+    }
+    div[id^="advtss"] {
+        pointer-events: none !important;
+        opacity: 0 !important
     }
 }
 
@@ -2064,7 +2055,7 @@
   domain("kinoxa.ws"),
   domain("lord-films.pw"),
   domain("lordfilm.net"),
-  domain("lordfilmtv.net"),
+  domain("lordfilm6.tv"),
   domain("lordfilmtv.vip"),
   domain("lordsfilm.net"),
   domain("lordsfilm.pro"),
@@ -2110,6 +2101,18 @@
 @-moz-document domain("kv.by") {
     #page {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("kwikeer.com") {
+    .__post-content-preview::after {
+        content: none !important
+    }
+    div[data-post-action-id^="#post_"] > .__post-content-btn {
+        display: none !important
+    }
+    div[id^="post_"][class="__post-content-preview"] {
+        max-height: none !important
     }
 }
 
@@ -2278,6 +2281,12 @@
     }
     .i-layout__branding-content-wrapper {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("meta.ua") {
+    .infobar > .info-block:not(.mail):not(.weather) {
+        border: none !important
     }
 }
 
@@ -2739,6 +2748,15 @@
 @-moz-document domain("politobzor.net") {
     .banner {
         height: 90px !important
+    }
+}
+
+@-moz-document
+  domain("pornolab.biz"),
+  domain("pornolab.cc"),
+  domain("pornolab.net") {
+    [id*="adbloc"] {
+        display: none !important
     }
 }
 
@@ -3252,8 +3270,8 @@
     body {
         background-color: #fff !important
     }
-    #all:not(#id) {
-        top:14px !important
+    #all:not(#id) > #content {
+        margin-top: 20px !important
     }
 }
 
@@ -3438,6 +3456,12 @@
     #header_box {
         height: auto !important;
         min-height: auto !important
+    }
+}
+
+@-moz-document domain("vsthouse.ru") {
+    .a-overlay {
+        display: none !important
     }
 }
 
