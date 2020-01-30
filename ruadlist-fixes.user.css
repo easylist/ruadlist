@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200127.1622
+@version 0.20200130.312
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -42,6 +42,7 @@
   domain("ahdrezka.com"),
   domain("all-episodes.org"),
   domain("amovies.cc"),
+  domain("baskino-site.icu"),
   domain("baskino.me"),
   domain("baskinonet.ru"),
   domain("bigcinema-tv.club"),
@@ -51,14 +52,8 @@
   domain("dnepr.info"),
   domain("dugtor.org"),
   domain("dugtor.ru"),
-  domain("fast-film.ru"),
-  domain("fast-torrent.club"),
-  domain("fast-torrent.ru"),
-  domain("fast-torrent.su"),
   domain("film-max.ru"),
   domain("film-ua.com"),
-  domain("filmopotok.ru"),
-  domain("filmpotok.ru"),
   domain("filmy-smotret.net"),
   domain("gethdrezka.com"),
   domain("gordonua.com"),
@@ -117,7 +112,6 @@
   domain("nnmclub.to"),
   domain("nuhdrezka.com"),
   domain("ostfilm.tv"),
-  domain("pickfilm.ru"),
   domain("pure-t.ru"),
   domain("rezka.ag"),
   domain("roem.ru"),
@@ -135,10 +129,10 @@
   domain("thehdrezka.com"),
   domain("torentor.co"),
   domain("torrentum.me"),
+  domain("tryhdrezka.com"),
   domain("tvhdrezka.com"),
   domain("uphdrezka.com"),
   domain("vc.ru"),
-  domain("veleto.ru"),
   domain("videoclub.men"),
   domain("virusinfo.info"),
   domain("vse-sezony.cc"),
@@ -158,7 +152,6 @@
   domain("ain.ua"),
   domain("clubhdrezka.com"),
   domain("epravda.com.ua"),
-  domain("fast-torrent.club"),
   domain("fastpic.ru"),
   domain("film-max.ru"),
   domain("gecid.com"),
@@ -222,6 +215,7 @@
   domain("stopgame.ru"),
   domain("torrentom.com"),
   domain("torrentum.me"),
+  domain("tryhdrezka.com"),
   domain("tvhdrezka.com"),
   domain("uateam.tv"),
   domain("uphdrezka.com"),
@@ -1194,23 +1188,6 @@
     }
     body > .container-fluid, body > .container-fluid > #td-outer-wrap {
         pointer-events: none !important
-    }
-}
-
-@-moz-document
-  domain("fast-film.ru"),
-  domain("fast-torrent.club"),
-  domain("fast-torrent.ru"),
-  domain("fast-torrent.su"),
-  domain("filmopotok.ru"),
-  domain("filmpotok.ru"),
-  domain("pickfilm.ru"),
-  domain("veleto.ru") {
-    body {
-        background: white !important
-    }
-    #container {
-        margin-top:0 !important
     }
 }
 
@@ -2613,7 +2590,7 @@
 }
 
 @-moz-document domain("otvet.mail.ru") {
-    .wrapper div[class^="adv-slot"], 
+    .wrapper div[class^="adv-slot"], [class*="layout"] div[class^="adv-slot"], 
     div[class][style="top: 56px;"] > div > div ~ div {
         height: 0 !important;
         pointer-events: none !important;
@@ -3599,13 +3576,10 @@
     #columns > .transparent {
         background-color: transparent !important
     }
-    .blocks > table[width="360px"] td[style="background-color:#ffffff"] {
-        background-color: unset !important
-    }
     body > div[id][style*="margin-top"] {
         margin-top: 0 !important
     }
-    .ushki, div[class^="randshops"] {
+    .ushki {
         width: unset !important;
         height: unset !important
     }
@@ -3727,12 +3701,9 @@
 }
 
 @-moz-document domain("zoneofgames.ru") {
-    .branding, .branding-bottom, .logo {
+    .branding, .logo {
         background: none !important;
         height: auto !important
-    }
-    .branding-bottom > div[style*="padding:"] {
-        padding-top: 5px !important
     }
 }
 
