@@ -835,6 +835,8 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua##.sidebar-view div[style*="!important"]:
 @@://yandex.ru/|$generichide
 yandex.by,yandex.kz,yandex.ru,yandex.ua##a[href*="//ads.adfox.ru/"]
 yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body > .serp_js_inited .serp-list > .serp-item:-abp-has(> div > div > .label:-abp-contains(/^реклама/i))
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_alt-widgets_yes"] ._item-type_rtb-card:-abp-has(.card-rtb__ad > div:empty)
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_infinity"] ._item-type_rtb-card:-abp-has(.card-rtb__ad > div:empty)
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 ##div[id^="yandex_rtb"]
 ||an.yandex.ru^$domain=~e.mail.ru
