@@ -39,6 +39,7 @@ all-episodes.org##+js(abort-on-property-write, pokazad)
 all-episodes.org##div[id^="advtss"]
 amazinghis.ru,moj-pes.ru##+js(abort-on-property-read, anOptions)
 anidub.com,anidub.life##+js(abort-on-property-read, ogonek)
+animedub.ru,online.animedia.tv,vsetut.su##+js(abort-on-property-read, zfgformats)
 animelend.info##+js(set-constant, JSON.parse, noopFunc)
 artfile.me,artfile.ru,astrakhan.ru,gorodche.ru,informpskov.ru,myjane.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read, kav_cn)
 auto.ru##+js(cookie-remover, /^blcrm|^bltsr|^from|^los$/)
@@ -119,7 +120,6 @@ nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, load
 obozrevatel.com##+js(remove-attr, autoplay, video)
 oldseedoff.zannn.top,seedoff.innal.top,seedoff.zannn.top,seedoff2.innal.top,seedoff3.innal.top,seedoff4.innal.top,seedoff5.innal.top,seedoff6.innal.top,seedoff7.innal.top,seedoff8.innal.top##+js(abort-current-inline-script, setTimeout, /x68\\x65\\x69\\x67\\x68\\x74/)
 oldseedoff.zannn.top,seedoff.innal.top,seedoff.zannn.top,seedoff2.innal.top,seedoff3.innal.top,seedoff4.innal.top,seedoff5.innal.top,seedoff6.innal.top,seedoff7.innal.top,seedoff8.innal.top#@#*
-online.animedia.tv,vsetut.su##+js(abort-on-property-read, zfgformats)
 overclockers.ru##+js(abort-on-property-read, cardinals, chkA)
 paratechnik.ru##+js(abort-on-property-read, ai_check_block)
 piratca.net##+js(remove-attr, onclick, [onclick^="window.open"])
