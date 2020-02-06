@@ -415,6 +415,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://www\.e1\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.e1.ru
 /^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
 /^https?://www\.livelib\.ru+\/(?!swnew)[a-z0-9]+\.js$/$domain=livelib.ru
+/^https?://www\.livelib\.ru+\/[a-z0-9]{5,}$/$xmlhttprequest,domain=livelib.ru
 /ad*.tutu.ru^*_*.php|
 /afrsasync*.js$script,domain=auto.vesti.ru|gubernia.com
 /api*iframe$subdocument,domain=get-tune.cc|iplayer.info|ipleer.fm|mp3cc.biz|sexxx.name|xmusic.name
@@ -1826,7 +1827,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||livejournal.com/services/scrollbanner.bml?
 ||livejournal.com^*&callback=*saveFeed$script,domain=livejournal.com
 ||livejournal.ru/i/reskining/
-||livelib.ru/dickert$domain=livelib.ru
 ||livelib.ru/img/promo/
 ||livelib.ru/side/index$xmlhttprequest
 ||livesport.pw/uppod/ads.json
