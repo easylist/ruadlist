@@ -14,7 +14,7 @@
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
-/^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
+/^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 1news.com.ua,365news.biz,4mama.ua,7days-ua.com,asiaplustj.info,cikavosti.com,comments.ua,depo.ua,dnews.dn.ua,dv-gazeta.info,fedpress.ru,glavnoe.ua,glavnoe24.ru,inforpost.com,kurskcity.ru,liga.net,narodna-pravda.ua,pingvin.pro,pl.com.ua,poltava365.com,real-vin.com,russianshowbiz.info,semobile.com.ua,unn.com.ua,vchaspik.ua,versii.if.ua,volyninfo.com,volynpost.com,womo.ua,wpristav.ru##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)
@@ -112,7 +112,7 @@ livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 mediavitrina.ru##+js(set-constant, Object.prototype.EUMP.plugins.antiblock, noopFunc)
 meteoservice.ru##+js(abort-on-property-write, adregain_wall)
 money-pic.ru##+js(abort-current-inline-script, q330)
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##+js(set-constant, Object.prototype.adUsageStorageVars, undefined)
+music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,music.yandex.uz##+js(set-constant, Object.prototype.adUsageStorageVars, undefined)
 muzlan.top##+js(nano-setInterval-booster, .numcard)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, decodeURIComponent)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, eval)
@@ -167,15 +167,12 @@ video.khl.ru##+js(set-constant, Object.prototype.adblockSettings, undefined)
 vo-dela.su##+js(set-constant, accept18, true)
 wowskill.ru##+js(nano-setInterval-booster, p)
 www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.AdfoxEvents)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body > .serp_js_inited .serp-list > .serp-item:has(:scope > div > div > .label_theme_direct)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_alt-widgets_yes"] .main.widgets div ~ div ~ div ~ div div[class]:matches-css(height: 90px)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_alt-widgets_yes"] .main.widgets div ~ div ~ div ~ div[class=""] ~ div[class=""]
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.widgets div ~ div ~ div ~ div div[class]:matches-css(height: 90px)
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.widgets div ~ div ~ div ~ div[class=""] ~ div[class=""]
-yandex.by,yandex.kz,yandex.ru,yandex.ua##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class][style]:has(> div[class*="__ad"])
-yandex.by,yandex.kz,yandex.ru,yandex.ua#@#body > .serp_js_inited .serp-list > .serp-item:has(:scope > div > div > .label:has-text(/^реклама/i))
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body > .serp_js_inited .serp-list > .serp-item:has(:scope > div > div > .label_theme_direct)
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page_alt-widgets_yes"] .main.widgets div ~ div ~ div ~ * div[class]:matches-css(height: 90px)
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page_alt-widgets_yes"] .main.widgets div ~ div ~ div ~ div[class=""] ~ :not(div) > * > :not([class*="widget"])
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class][style]:has(> div[class*="__ad"])
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#@#body > .serp_js_inited .serp-list > .serp-item:has(:scope > div > div > .label:has-text(/^реклама/i))
 yapx.ru##+js(cookie-remover, /adblock_/)
-zen.yandex.by,zen.yandex.kz,zen.yandex.ru,zen.yandex.ua##+js(set-constant, Object.prototype.direct, undefined)
 znanija.com##+js(abort-on-property-write, getAdBlockType)
 ||24molnia.com^$xmlhttprequest,badfilter,domain=24molnia.com
 ||7ogorod.ru^$xmlhttprequest,badfilter,domain=7ogorod.ru
@@ -212,7 +209,7 @@ znanija.com##+js(abort-on-property-write, getAdBlockType)
 ||tele.ru^$xmlhttprequest,badfilter,domain=tele.ru
 ||teleprogramma.pro^$xmlhttprequest,badfilter,domain=teleprogramma.pro
 ||yastatic.net/pcode/adfox/loader.js$script,redirect=silent-noeval.js,domain=auto.ru
-~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,yandex.by,yandex.kz,yandex.ru,yandex.ua##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
+~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 !#if !env_firefox
 auto.ru,kinopoisk.ru##+js(abort-on-property-read, Element.prototype.attachShadow)
 !#endif
