@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200204.1429
+@version 0.20200207.605
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -427,10 +427,6 @@
 @-moz-document domain("all-episodes.org") {
     body {
         background-image: none !important
-    }
-    div[id^="advtss"] {
-        pointer-events: none !important;
-        opacity: 0 !important
     }
 }
 
@@ -1568,9 +1564,14 @@
 }
 
 @-moz-document domain("go.mail.ru") {
-    .DirectContainer-container, body > div[style^="z-index:"], 
-    div[class^="RbSlot"] {
+    body > div[style^="z-index:"] {
         display: none !important
+    }
+    .DirectContainer-container, .DirectMedia-container, 
+    div[class^="DirectSide-"], div[class^="RbSlot"] {
+        height: 0 !important;
+        pointer-events: none !important;
+        opacity: 0 !important
     }
 }
 
@@ -3288,6 +3289,12 @@
     }
     #cookiesquestion {
         display: none !important
+    }
+}
+
+@-moz-document domain("trucks.ati.su") {
+    .grid-user-data > .user-data-grid {
+        background: none !important
     }
 }
 
