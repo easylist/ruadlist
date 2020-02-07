@@ -97,9 +97,7 @@ mail.ru##body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class]
 mail.ru##body > .zeropixel ~ * .search__container ~ [class] > .tabs + div[class] ~ div > div:first-child:not([name]) ~ div
 mail.ru##body > .zeropixel ~ * .search__container ~ div[class] ~ div[class]:last-of-type
 yandex.by,yandex.kz,yandex.ru,yandex.ua##body.b-page > .b-page__container .card.content__adv.card
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_alt-widgets_yes"] ._item-type_rtb-card
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] ._item-type_rtb-card
-yandex.by,yandex.kz,yandex.ru,yandex.ua##body[class*="b-page_infinity"] .main.widgets div ~ div ~ div ~ div[class=""] ~ div[class=""]
+yandex.by,yandex.kz,yandex.ru,yandex.ua#?#body[class*="b-page_alt-widgets_yes"] .feed > .feed__row:-abp-has([class*="rtb"])
 yandex.by,yandex.kz,yandex.ru,yandex.ua##div[class*="turbo-advert_type_"]
 wmj.ru,passion.ru,championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.*,rns.online,eda.ru#?#+js(set-constant.js, Object.prototype.getPrefixes, undefined)
 yandex.*#?#+js(abort-on-property-read.js, Object.prototype.loaderVer)
