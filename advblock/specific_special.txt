@@ -56,7 +56,7 @@ auto.ru#?#a[href][target]:-abp-contains(Яндекс.Директ)
 auto.ru#?#body [class*=" "]:not(div):-abp-has(> [class]:not(div) + [class*=" "]:not(div) > div:empty)
 auto.ru##div[class$="__container"] > div[class$="__line_3"] > div[class$="__line_3_right"] > :not(div):not(a) > :not(div):not(a)
 auto.ru##div[class$="__twoColumnsLeft"] > div ~ div:not([class*="__Card"])
-auto.ru##div[class*="__Card__creditAd"]
+auto.ru##div[class^="CardOfferHeader-module"] > .CardInfo ~ div[class^="CardOfferHeader-module"]
 !
 ! Avito
 www.avito.ru##.avito-ads-container
