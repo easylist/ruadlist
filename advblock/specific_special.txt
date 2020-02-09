@@ -50,6 +50,7 @@ auto.ru##.ReviewZenPromo
 auto.ru##.TaxiDriverOffer-module__container
 auto.ru##.fotorama__nav > [style="display: inline;"]
 /^https?://auto\.ru/(?!billing\/)[^\s]{200,}/$subdocument,domain=auto.ru
+auto.ru##:not(div)[class][style^="height:2"][style$="px;display:block"]:empty
 auto.ru#?#[class]:-abp-has(> * > * > a[href][target]:-abp-contains(Яндекс.Директ))
 auto.ru#?#a[href][target]:-abp-contains(Яндекс.Директ)
 auto.ru#?#body [class*=" "]:not(div):-abp-has(> [class]:not(div) + [class*=" "]:not(div) > div:empty)
