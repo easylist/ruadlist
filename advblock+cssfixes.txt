@@ -251,8 +251,11 @@ e.mail.ru,octavius.mail.ru##body:not(#id) > div[style="position: absolute; visib
 ||ad.mail.ru/adp/$empty,xmlhttprequest
 ||ad.mail.ru/adq/$empty,script
 ||ad.mail.ru/vast/$empty,xmlhttprequest
+||cdn.viqeo.tv/js/vq_starter.js$third-party,domain=mail.ru|sportmail.ru
 ||mail.ru/api-proxy/rb-mimic/
+||pubapi.viqeo.tv^$domain=mail.ru|sportmail.ru
 ||recostream.go.mail.ru^$domain=~pulse.mail.ru|~recostream.go.mail.ru
+||static.viqeo.tv/js/vq_starter.js$third-party,domain=mail.ru|sportmail.ru
 !
 ! Эксперимент на главной mail.ru, которая порой неоправданно долго грузится
 mail.ru##+js(set-constant, Object.prototype.ad/rectangle, undefined)
