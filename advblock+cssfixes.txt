@@ -14,6 +14,7 @@
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
+/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/|maps\/|news\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 1news.com.ua,365news.biz,4mama.ua,7days-ua.com,asiaplustj.info,cikavosti.com,comments.ua,depo.ua,dnews.dn.ua,dv-gazeta.info,fedpress.ru,glavnoe.ua,glavnoe24.ru,inforpost.com,kurskcity.ru,liga.net,narodna-pravda.ua,pingvin.pro,pl.com.ua,poltava365.com,real-vin.com,russianshowbiz.info,semobile.com.ua,unn.com.ua,vchaspik.ua,versii.if.ua,volyninfo.com,volynpost.com,womo.ua,wpristav.ru##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
