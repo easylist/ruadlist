@@ -1,10 +1,16 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200214.921
+@version 0.20200219.301
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
+
+@-moz-document domain("1informer.com") {
+    body {
+        cursor: auto !important
+    }
+}
 
 @-moz-document
   domain("1plus1.international"),
@@ -181,7 +187,6 @@
   domain("justhdrezka.com"),
   domain("kino-full.ru"),
   domain("kinobar.cc"),
-  domain("kinokrad.su"),
   domain("kinotochka.club"),
   domain("kinotochka.me"),
   domain("ko.com.ua"),
@@ -1423,7 +1428,7 @@
   domain("freeopenvpn.org"),
   domain("leninsw.info") {
     .adsbygoogle {
-        max-height: 2px !important
+        max-height: 6px !important
     }
 }
 
@@ -1962,12 +1967,6 @@
     }
 }
 
-@-moz-document domain("kinokrad.su") {
-    #wrapper:not(#id) {
-        margin-top: 46px !important
-    }
-}
-
 @-moz-document domain("kinomania.ru") {
     .outer {
         padding-top: 0 !important
@@ -2037,6 +2036,7 @@
 @-moz-document
   domain("kinoxa.ws"),
   domain("lord-films.pw"),
+  domain("lordfilm.in"),
   domain("lordfilm.net"),
   domain("lordfilm6.tv"),
   domain("lordfilm7.tv"),
@@ -2271,6 +2271,9 @@
 }
 
 @-moz-document domain("minigames.mail.ru") {
+    #like-buttons {
+        display: none !important
+    }
     #portal-headline {
         margin-top: auto !important
     }
@@ -2399,6 +2402,7 @@
 @-moz-document domain("my.mail.ru") {
     #history_container > div[class][style*="display: block!important"], 
     .b-history__adv-post-carousel, .l-app__left, .l-app__right, 
+    .sp-video__billboard, 
     :not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"], 
     div[class^="app-adv-"], html.window-loaded .b-video-backscreen {
         display: none !important
