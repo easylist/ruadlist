@@ -108,11 +108,11 @@ gismeteo.kz##div[class*="tizers_"]
 @@||yastatic.net/pcode/adfox/loader.js|$domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
 !
 ! Ловушка для обфусцированных запросов, если исключения обошли
-/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
-/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.by
-/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.kz
-/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/|maps\/)/$xmlhttprequest,badfilter,domain=gismeteo.md
-/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/|maps\/|mq\/articles\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
+/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/|maps\/)/$xmlhttprequest,domain=beta.gismeteo.ru
+/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.by
+/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.kz
+/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/|maps\/)/$xmlhttprequest,domain=gismeteo.md
+/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/|maps\/|mq\/articles\/)/$xmlhttprequest,domain=www.gismeteo.ru
 !
 ! Новый дизайн gismeteo.ru, gismeteo.kz, gismeteo.by, beta.gismeteo.ru, gismeteo.ua, gismeteo.md
 www.gismeteo.ru##.follow-zen
