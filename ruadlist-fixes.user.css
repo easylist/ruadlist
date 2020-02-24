@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200219.301
+@version 0.20200224.1717
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -124,6 +124,7 @@
   domain("rusporno.vip"),
   domain("russian-porn.online"),
   domain("serialbox.org"),
+  domain("smotret-film.net"),
   domain("smotret-filmy.net"),
   domain("tfile-music.org"),
   domain("tfile.cc"),
@@ -883,6 +884,7 @@
   domain("cinema-hd.ru"),
   domain("filmshd.fun"),
   domain("hdlava.tv"),
+  domain("kinomax.pro"),
   domain("newseries.club") {
     .wrap {
         padding-top: 0 !important
@@ -1582,7 +1584,7 @@
 }
 
 @-moz-document domain("goha.ru") {
-    #banner {
+    #banner, .adfox-banner-background, div[class^="foxyad"], div[id^="foxyad"] {
         display: none !important
     }
 }
@@ -1939,12 +1941,6 @@
 @-moz-document domain("kinoakter.net") {
     body > div[class^="wrapper"] {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("kinobars.net") {
-    .wrapper > .header {
-        padding: 30px !important
     }
 }
 
