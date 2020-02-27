@@ -26,6 +26,7 @@
 /^https?://www\.gismeteo\.ru/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
+08sportbar.com,777sportba.com,777streams.pro,7streams.pro,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,mc.today,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport7.biz,sportbar.biz,sportbox.ws,stream365.pro,vip7stream.pw##+js(window.open-defuser)
 1news.com.ua,365news.biz,4mama.ua,7days-ua.com,asiaplustj.info,cikavosti.com,comments.ua,depo.ua,dnews.dn.ua,dv-gazeta.info,fedpress.ru,glavnoe.ua,glavnoe24.ru,inforpost.com,kurskcity.ru,liga.net,narodna-pravda.ua,pingvin.pro,pl.com.ua,poltava365.com,real-vin.com,russianshowbiz.info,semobile.com.ua,sud.ua,unn.com.ua,vchaspik.ua,versii.if.ua,volyninfo.com,volynpost.com,womo.ua,wpristav.ru##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)
 1tv.ru##+js(set-constant, window.EUMP.plugins.antiblock, noopFunc)
@@ -40,7 +41,6 @@
 4pda.ru##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.ru##body > div[id^="r"] > div[id^="r"][href]
 4pda.ru##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
-777sportba.com,777streams.pro,7streams.pro,channels247.net,goool7.ws,hd24.pro,hd365.ws,hdstream365.com,mc.today,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport7.biz,sportbar.biz,sportbox.ws,stream365.pro,vip7stream.pw##+js(window.open-defuser)
 @@||ads.adfox.ru/*/getBulk/$xmlhttprequest,badfilter,domain=www.goha.ru
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
