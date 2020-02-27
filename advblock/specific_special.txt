@@ -99,6 +99,7 @@ gismeteo.kz##div[class*="tizers_"]
 ! Исключения для детектора
 @@||an.yandex.ru/system/context.js|$domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
 @@||beta.gismeteo.ru^$generichide
+@@||gaby.hit.gemius.pl/fpdata.js|$xmlhttprequest,domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
 @@||static-mon.yandex.net/static/main.js$xmlhttprequest,domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
 @@||www.gismeteo.by^$generichide
 @@||www.gismeteo.kz^$generichide
@@ -108,11 +109,11 @@ gismeteo.kz##div[class*="tizers_"]
 @@||yastatic.net/pcode/adfox/loader.js|$domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
 !
 ! Ловушка для обфусцированных запросов, если исключения обошли
-/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/|maps\/)/$xmlhttprequest,domain=beta.gismeteo.ru
-/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.by
-/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.kz
-/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/|maps\/)/$xmlhttprequest,domain=gismeteo.md
-/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/|maps\/|mq\/articles\/)/$xmlhttprequest,domain=www.gismeteo.ru
+/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,domain=beta.gismeteo.ru
+/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.by
+/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.kz
+/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,domain=gismeteo.md
+/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|mq\/articles\/)/$xmlhttprequest,domain=www.gismeteo.ru
 !
 ! Новый дизайн gismeteo.ru, gismeteo.kz, gismeteo.by, beta.gismeteo.ru, gismeteo.ua, gismeteo.md
 www.gismeteo.ru##.follow-zen
@@ -120,6 +121,7 @@ beta.gismeteo.ru,gismeteo.ua,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www
 beta.gismeteo.ru,gismeteo.ua,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##.media_with_map > :not(.map_right)
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md##.sticky_with_subnav
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md##.sticky_with_subsubnav
+gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##.top-media-placeholder
 gismeteo.ru##.widget-container
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md##.x250imp
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##.xby400
