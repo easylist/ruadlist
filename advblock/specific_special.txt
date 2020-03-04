@@ -111,14 +111,6 @@ gismeteo.kz##div[class*="tizers_"]
 ! Ловушка для обфусцированных запросов, если исключения обошли
 /^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,domain=beta.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,domain=beta.gismeteo.ru
-/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.by
-/^https?://www\.gismeteo\.by/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,domain=www.gismeteo.by
-/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.kz
-/^https?://www\.gismeteo\.kz/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,domain=www.gismeteo.kz
-/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,domain=gismeteo.md
-/^https?://www\.gismeteo\.md/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,domain=www.gismeteo.md
-/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|mq\/articles\/)/$xmlhttprequest,domain=www.gismeteo.ru
-/^https?://www\.gismeteo\.ru/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,domain=www.gismeteo.ru
 !
 ! Новый дизайн gismeteo.ru, gismeteo.kz, gismeteo.by, beta.gismeteo.ru, gismeteo.ua, gismeteo.md
 www.gismeteo.ru##.follow-zen
