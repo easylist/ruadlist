@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200302.612
+@version 0.20200304.2306
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -317,6 +317,12 @@
     }
 }
 
+@-moz-document domain("7days.ru") {
+    body {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("aces.gg") {
     body {
         background: black !important;
@@ -346,6 +352,25 @@
         display: none !important
     }
     #new_logo_helper01 {
+        top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("agorov.org"),
+  domain("animevost.am"),
+  domain("animevost.org"),
+  domain("smotret-anime-365.ru") {
+    div[class^="headbg"] {
+        background-image: none !important;
+        height: auto !important
+    }
+    div[class^="headbg"] > .menu .sar {
+        bottom: auto !important;
+        top: 50px !important;
+        z-index: 100 !important
+    }
+    div[class^="headbg"] > .menu {
         top: 0 !important
     }
 }
@@ -525,24 +550,6 @@
     }
     #wrapper {
         padding-top: 50px !important
-    }
-}
-
-@-moz-document
-  domain("animevost.am"),
-  domain("animevost.org"),
-  domain("smotret-anime-365.ru") {
-    div[class^="headbg"] {
-        background-image: none !important;
-        height: auto !important
-    }
-    div[class^="headbg"] > .menu .sar {
-        bottom: auto !important;
-        top: 50px !important;
-        z-index: 100 !important
-    }
-    div[class^="headbg"] > .menu {
-        top: 0 !important
     }
 }
 
@@ -2214,7 +2221,7 @@
 @-moz-document
   domain("mail.ru"),
   domain("sportmail.ru") {
-    #video-footer, .ph-balloon {
+    #video-footer, .ph-balloon, .pulse-lenta {
         display: none !important
     }
 }
@@ -2323,7 +2330,7 @@
 
 @-moz-document
   domain("multmania.club"),
-  domain("multonline.ru") {
+  domain("tlumtluda.pro") {
     body {
         background: black !important
     }
@@ -3313,7 +3320,6 @@
   domain("tv.yandex.uz") {
     #mount main > div[class^="content__"] > .content__main ~ div[class*="content__"] > *, 
     #mount main > div[class^="content__"] ~ div:not([class^="content__"]):not(.zen):not(.bread-crumbs) > *, 
-    .content_program > div[itemscope] > [class^="content__"] > :not(.content__main) > *, 
     .main-controller__grid-wrapper > [class*="grid_period_"] ~ * > *, 
     .page_controller_channel main.content > div[class]:first-child > div:first-child[style*="background-image"], 
     .zen, 
