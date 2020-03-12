@@ -92,9 +92,9 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.sport-advert
 /^https?://rkn\.gov\.ru\/(?!js\/)+[a-z0-9]{15,25}\.js\?+[0-9]{7,15}/$script,domain=rkn.gov.ru
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 4pda.*##+js(abort-current-inline-script.js, setTimeout, removeAttribute)
+4pda.*##html[style] > body :not(div) ~ :not(div)[class][id][style]:style(background-image: none !important)
 4pda.*##html[style] > body :not(div)[class][id][style]:matches-css(height: /^89\./)
 4pda.*##html[style] > body [class]:matches-css(height: /^403\./)
-4pda.*##html[style] > body script ~ :not(div) ~ :not(div)[class][id][style]:style(background-image: none !important)
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#[class$="segment__container"] > div > .card:-abp-has(> div[class] div[id] + script)
 rutracker.appspot.com,rutracker.net,rutracker.nl,rutracker.org,zerkalo-torrent.tk##[class^="internal-promo-"]
