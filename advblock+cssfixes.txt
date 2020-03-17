@@ -17,6 +17,7 @@
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
+/^https?:\/\/.*\.(xyz|site|pro|best|club|space|info|bid)\/.*/$third-party,image,script,subdocument,xmlhttprequest,badfilter
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 08sportbar.com,777sportba.com,777streams.pro,7streams.pro,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,mc.today,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport7.biz,sportbar.biz,sportbox.ws,stream365.pro,vip7stream.pw##+js(window.open-defuser)
 1news.com.ua,365news.biz,4mama.ua,7days-ua.com,asiaplustj.info,cheline.com.ua,cikavosti.com,comments.ua,depo.ua,dnews.dn.ua,dv-gazeta.info,fedpress.ru,glavnoe.ua,glavnoe24.ru,inforpost.com,kurskcity.ru,liga.net,narodna-pravda.ua,pingvin.pro,pl.com.ua,poltava365.com,real-vin.com,russianshowbiz.info,semobile.com.ua,sud.ua,unn.com.ua,vchaspik.ua,versii.if.ua,volyninfo.com,volynpost.com,womo.ua,wpristav.ru##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
