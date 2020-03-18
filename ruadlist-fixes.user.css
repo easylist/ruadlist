@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200304.2306
+@version 0.20200318.259
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -106,6 +106,7 @@
   domain("livehdrezka.com"),
   domain("liverutor.org"),
   domain("lostfan.org"),
+  domain("lotzon.co"),
   domain("metahdrezka.com"),
   domain("moskva.fm"),
   domain("mrutor.org"),
@@ -929,6 +930,16 @@
     }
 }
 
+@-moz-document
+  domain("crazyatomicgames.com"),
+  domain("xxx-igra.com"),
+  domain("yaldagames.com") {
+    .fon_site_pic {
+        background-image: none !important;
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("creativportal.ru") {
     .pocaz {
         width: 10px !important;
@@ -971,6 +982,12 @@
 @-moz-document domain("deti.mail.ru") {
     .deti-slot_exchange {
         display: none !important
+    }
+}
+
+@-moz-document domain("doefiratv.net") {
+    .b-cell > div[id] {
+        padding-top: 0 !important
     }
 }
 
@@ -1689,7 +1706,8 @@
 
 @-moz-document
   domain("helpsetup.ru"),
-  domain("izzylaif.com") {
+  domain("izzylaif.com"),
+  domain("so-wiki.ru") {
     .adsbygoogle {
         height: 1px !important;
         opacity: 0 !important
@@ -1857,6 +1875,12 @@
 @-moz-document domain("kaluga-poisk.ru") {
     body:not(#id) {
         background: whitesmoke !important
+    }
+}
+
+@-moz-document domain("kanobu.ru") {
+    .wrap > main:not(#id) {
+        margin-top: calc(-100vh + 10px) !important
     }
 }
 
@@ -2966,7 +2990,7 @@
 
 @-moz-document domain("rusfootball.info") {
     #wrap {
-        top:0 !important
+        margin-top: auto !important
     }
 }
 
