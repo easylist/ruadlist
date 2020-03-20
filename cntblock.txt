@@ -112,7 +112,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##div[class*="turbo-advert_type
 radioprofusion.com##footer > .counter
 4pda.ru##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 4pda.ru##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
-livejournal.*##+js(set-constant.js, Object.prototype.Adf, undefined)
+livejournal.*,varlamov.*##+js(set-constant.js, Object.prototype.Begun, undefined)
 wmj.ru,passion.ru,championat.com,gazeta.ru,lenta.ru,quto.ru,rambler.*,rns.online,eda.ru#?#+js(set-constant.js, Object.prototype.getPrefixes, undefined)
 yandex.*#?#+js(abort-on-property-read.js, Object.prototype.loaderVer)
 yandex.*#?#+js(abort-on-property-read.js, Ya.loaderVer)
@@ -125,6 +125,7 @@ yandex.*#?#+js(set-constant.js, __AAB__, false)
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||livejournal.com^*&callback=*=$script,xmlhttprequest,domain=livejournal.com
 ||strm.yandex.ru/get/$script,domain=yastatic.net
+||varlamov.ru^*&callback=*=$script,xmlhttprequest,domain=varlamov.ru
 !
 ! = Общие фильтры (блокировка по маске) =======================================
 .com/a.gif?
