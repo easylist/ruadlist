@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200318.259
+@version 0.20200324.234
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -1057,16 +1057,16 @@
 @-moz-document
   domain("drive2.com"),
   domain("drive2.ru") {
-    .c-dv-container, 
-    .c-dv-container[data-role] + div[class] > div:first-child + div[class], 
-    .c-post + div[class]:not(:last-child), .dv-post-header, 
+    .c-dv-container, .c-post + div[class]:not(:last-child), .dv-post-header, 
     .offer[itemtype="http://schema.org/Product"] + div, 
     .u-mobile-noselect[data-role="scrolltracking"][data-target], 
     .u-mobile-noselect[data-role="scrolltracking"][data-target] + div, 
-    [data-ym-target="menu_WOT_click"] {
+    form[action="/my/content/feed/editorial"] + div[class], 
+    script[data-type="recommendation"] + [data-role], 
+    script[data-type="recommendation"] + [data-role] + div[class] > div:first-child + div[class] {
         display: none !important
     }
-    .c-dv-container[data-role] + div[class] > div:first-child:not(:only-child) {
+    script[data-type="recommendation"] + [data-role] + div[class] > div:first-child:not(:only-child) {
         max-width: unset !important
     }
     .c-car-card-sa[data-metrika] {
@@ -1701,6 +1701,12 @@
 @-moz-document domain("hellomagazine.com") {
     .footer {
         position: relative !important
+    }
+}
+
+@-moz-document domain("helpsetup.ru") {
+    #blockajaxdown {
+        display: none !important
     }
 }
 
