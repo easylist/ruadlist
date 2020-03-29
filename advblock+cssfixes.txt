@@ -251,6 +251,7 @@ my.mail.ru##+js(set-constant, Object.prototype.runMimic, noopFunc)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.show_me_ads, undefined)
 mail.ru##+js(setTimeout-defuser, advBlock)
 mail.ru,sportmail.ru##+js(setTimeout-defuser, rbParams)
+mail.ru,~player-smotri.mail.ru,~smotri.mail.ru,sportmail.ru##.article__item_source_smotri
 mail.ru,sportmail.ru##.article__item_source_viqeo ~ .article__item_source_viqeo
 mail.ru,sportmail.ru##.article__item_source_viqeo:has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
 ok.ru##.feed-list > .feed-w:has(.feed_ava ~ div div > span ~ span ~ span ~ span ~ span ~ span)
@@ -264,7 +265,9 @@ e.mail.ru,octavius.mail.ru##body:not(#id) > div[style="position: absolute; visib
 ||ad.mail.ru/vast/$empty,xmlhttprequest
 ||cdn.viqeo.tv/js/vq_starter.js$third-party,domain=mail.ru|sportmail.ru
 ||mail.ru/api-proxy/rb-mimic/
+||player-smotri.mail.ru^$domain=~player-smotri.mail.ru|~smotri.mail.ru
 ||pubapi.viqeo.tv^$domain=mail.ru|sportmail.ru
+||pulse.mail.ru^$domain=~pulse.mail.ru
 ||recostream.go.mail.ru^$domain=~pulse.mail.ru|~recostream.go.mail.ru
 ||static.viqeo.tv/js/vq_starter.js$third-party,domain=mail.ru|sportmail.ru
 !
