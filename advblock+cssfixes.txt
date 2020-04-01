@@ -130,6 +130,7 @@ ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/prav
 paratechnik.ru##+js(abort-on-property-read, ai_check_block)
 phys-kids.com##+js(abort-on-property-write, fetch)
 piratca.net##+js(remove-attr, onclick, [onclick^="window.open"])
+playground.ru##+js(abort-on-property-read, PG.inxs)
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##+js(abort-current-inline-script, document.createElement, appendTo)
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##+js(abort-on-property-write, goout)
 radikal.ru,www.vesti.ru##+js(abort-current-inline-script, document.createElement, String.fromCharCode)
