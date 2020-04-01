@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200324.234
+@version 0.20200401.1308
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -51,6 +51,7 @@
   domain("baskino-site.icu"),
   domain("baskino.me"),
   domain("baskinonet.ru"),
+  domain("betahdrezka.com"),
   domain("bigcinema-tv.club"),
   domain("bombardir.ru"),
   domain("clubhdrezka.com"),
@@ -159,6 +160,7 @@
   domain("ahdrezka.com"),
   domain("aif.ru"),
   domain("ain.ua"),
+  domain("betahdrezka.com"),
   domain("clubhdrezka.com"),
   domain("epravda.com.ua"),
   domain("fastpic.ru"),
@@ -510,14 +512,8 @@
 @-moz-document
   domain("anime.anidub.life"),
   domain("online.anidub.com") {
-    body > div[style^="background"], html > body {
-        background: none !important
-    }
-    .top_one ~ script ~ div[id]:not([class]):not([style]):not(#slideout), 
-    body > div[style^="background"] > script ~ div[id]:not([class]), 
-    body > script[src^="/ads.js"] ~ div:not([id]):not([class])[style^="position"][style*="z-index"], 
-    div[id][class]:not([style]) > div[id][class]:empty {
-        display: none !important
+    .content, .content > .full {
+        padding-top: 0 !important
     }
 }
 
@@ -875,8 +871,7 @@
 
 @-moz-document
   domain("cinema-hd.ru"),
-  domain("filmshd.fun"),
-  domain("hdlava.tv"),
+  domain("filmshd.top"),
   domain("kinomax.pro"),
   domain("newseries.club") {
     .wrap {
@@ -1059,14 +1054,14 @@
   domain("drive2.ru") {
     .c-dv-container, .c-post + div[class]:not(:last-child), .dv-post-header, 
     .offer[itemtype="http://schema.org/Product"] + div, 
-    .u-mobile-noselect[data-role="scrolltracking"][data-target], 
-    .u-mobile-noselect[data-role="scrolltracking"][data-target] + div, 
+    div[data-role="scrolltracking"][data-target], 
+    div[data-role="scrolltracking"][data-target] + div, 
     form[action="/my/content/feed/editorial"] + div[class], 
     script[data-type="recommendation"] + [data-role], 
-    script[data-type="recommendation"] + [data-role] + div[class] > div:first-child + div[class] {
+    script[data-type="recommendation"] + [data-role] ~ div[class] > div:first-child + div[class] {
         display: none !important
     }
-    script[data-type="recommendation"] + [data-role] + div[class] > div:first-child:not(:only-child) {
+    script[data-type="recommendation"] + [data-role] ~ div[class] > div:first-child:not(:only-child) {
         max-width: unset !important
     }
     .c-car-card-sa[data-metrika] {
@@ -1094,6 +1089,18 @@
         top: -10000px !important;
         opacity: 0 !important;
         z-index: -9999 !important
+    }
+}
+
+@-moz-document domain("dyvys.info") {
+    .td-header-sp-logo {
+        max-height: 90px !important
+    }
+    body > * {
+        pointer-events: auto !important
+    }
+    body {
+        pointer-events: none !important
     }
 }
 
@@ -1266,6 +1273,12 @@
     }
     .fs-table__row {
         position: initial !important
+    }
+}
+
+@-moz-document domain("filebase.ws") {
+    body > .root {
+        top: 0 !important
     }
 }
 
@@ -1513,7 +1526,7 @@
 
 @-moz-document domain("gamemag.ru") {
     .top-branding {
-        max-height: 40rem !important
+        max-height: 50rem !important
     }
 }
 
@@ -1673,12 +1686,6 @@
     }
     body:not(#id) {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document domain("hdlava.me") {
-    body > header {
-        margin-bottom: 0 !important
     }
 }
 
@@ -2574,14 +2581,6 @@
     }
 }
 
-@-moz-document domain("okino.ua") {
-    .adsbygoogle, [id^="aswift_"], [id^="google_ads_iframe"] {
-        position: fixed !important;
-        top: -10000px !important;
-        left: -10000px !important
-    }
-}
-
 @-moz-document domain("omskbird.tv") {
     .have-brand .wrap {
         margin-top: 0 !important
@@ -2591,7 +2590,7 @@
 @-moz-document
   domain("online.animedia.tv"),
   domain("tt.animedia.tv") {
-    .promo__wrapper {
+    div[class^="promo__wrapper"] {
         display: none !important
     }
     .main-container {
@@ -2636,15 +2635,6 @@
     }
     .page-wrapper {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("otzovik.com") {
-    #ad_footer2, .adrev_block, .adsbygoogle, .product-contents #panel-right > *, 
-    .product-contents .review-contents ~ div[class] > *, 
-    .product-contents div[class*="bottom"] > *, .product-header-right, 
-    .product-reviews-right > * {
-        display: none !important
     }
 }
 
@@ -2713,7 +2703,14 @@
 
 @-moz-document domain("playground.ru") {
     #foundationWrapper {
-        background: #373737 !important
+        background: #373737 !important;
+        padding-top: 0 !important
+    }
+    #foundationWrapper > * {
+        pointer-events: auto !important
+    }
+    #foundationWrapper {
+        pointer-events: none !important
     }
 }
 
@@ -3359,17 +3356,6 @@
     }
 }
 
-@-moz-document
-  domain("tv.yandex.uz"),
-  domain("yandex.by"),
-  domain("yandex.kz"),
-  domain("yandex.ru"),
-  domain("yandex.ua") {
-    body[class*="b-page_alt-widgets_yes"] .direct-desktop_white {
-        display: none !important
-    }
-}
-
 @-moz-document domain("tvzavr.ru") {
     .page__inner_branding {
         background-image: none !important
@@ -3597,13 +3583,13 @@
     .page-content > div[id]:not(#header-info-bg):empty + div[id]:not(#top) {
         margin-bottom: 40px !important
     }
+    .content-container_app-width_wide {
+        max-width: 100% !important
+    }
     .app__content div[style="min-height:250px"], 
     .underheader-superbanner-wrapper, 
     div[class*="kinopoisk-media-container_pending"] {
         min-height: 0 !important
-    }
-    html > body {
-        overflow-x: hidden !important
     }
     .filmsListNew .info {
         padding-right: 116px !important
@@ -3671,6 +3657,9 @@
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
     .mg-page-layout-item_pos_right div[class*="wrapper"] > div[class]:empty, 
     .serp-list > .incut > .direct, .sport-advert:empty, .turbo-advert__loader, 
+    body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
+    body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
+    body[class*="logged "][class*=" b-page_"] .direct-desktop_white, 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > :not([style]):not(.placeholder-card), 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Реклама"], 
@@ -3683,8 +3672,8 @@
     .serp-header {
         margin-top: 0 !important
     }
-    body[class*="b-page_alt-widgets_yes"] .footer, 
-    body[class*="b-page_alt-widgets_yes"] .rows__row_last > [role="complementary"] {
+    body[class*="logged "][class*=" b-page_"] .footer, 
+    body[class*="logged "][class*=" b-page_"] .rows__row_last > [role="complementary"] {
         margin-top: auto !important
     }
     .b-page {
