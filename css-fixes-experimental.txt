@@ -1055,7 +1055,10 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="logged "][class*
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="logged "][class*=" b-page_"] .direct-desktop_white
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#body[class*="logged "][class*=" b-page_"] .footer:style(margin-top: auto !important)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#body[class*="logged "][class*=" b-page_"] .rows__row_last > [role="complementary"]:style(margin-top: auto !important)
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > :not([style]):not(.placeholder-card)
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([style]):not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) > div[class] > div:not([class])
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([style]):not([class*="card"]):not([class*="feed"]) > div[class]:not([style]):style(background-color: transparent !important)
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([style]):not([class*="card"]):not([class*="feed"]):after:style(background: transparent !important)
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([style]):not([class*="card"]):not([class*="feed"]):style(box-shadow: none !important)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##div[aria-label="Реклама"]
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"]
