@@ -154,7 +154,7 @@ afisha.ru###notifier-fixed
 forum-windows.net###ntf
 friday.ru,russian.rt.com###offers
 kinodema.com###okno[href]
-overclockers.ru#?##otherPageContent > #comments ~ .ui > .column:has(.divided > .material-near-feed)
+overclockers.ru#?##otherPageContent > #comments ~ .ui > .column:-abp-has(.divided > .material-near-feed)
 overclockers.ru###otherPageContent > .ui > .column > .divided
 autoclub-cerato.ru###outer_forum
 lockerz.com###overlay
@@ -1041,7 +1041,7 @@ my.mail.ru##.app-event-bubbles
 e.mail.ru,octavius.mail.ru##.application-mail__wrap .feedback-banner
 mail.ru,~player-smotri.mail.ru,~smotri.mail.ru,sportmail.ru##.article__item_source_smotri
 mail.ru,sportmail.ru##.article__item_source_viqeo ~ .article__item_source_viqeo
-mail.ru,sportmail.ru##.article__item_source_viqeo:has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
+mail.ru,sportmail.ru#?#.article__item_source_viqeo:-abp-has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
 my.mail.ru##.b-column-right__block-apps
 my.mail.ru##.b-column-right__block-sale
 games.mail.ru##.b-header__stripe
