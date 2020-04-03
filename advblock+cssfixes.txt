@@ -12,6 +12,7 @@
 %include css-fixes-experimental.txt%
 %include https://easylist-downloads.adblockplus.org/antiadblockfilters.txt%
 ! --- uBO scriptlets injection rules & other ---
+$script,redirect-rule=noopjs,domain=otzovik.com
 /^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
