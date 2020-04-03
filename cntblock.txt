@@ -113,7 +113,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##div[class*="turbo-advert_type
 radioprofusion.com##footer > .counter
 4pda.ru##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 4pda.ru##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
-livejournal.*,lena-miro.*,varlamov.*##+js(set-constant.js, Object.prototype.Begun, undefined)
+lena-miro.*,livejournal.*,levik.blog,varlamov.*#?#+js(set-constant.js, Object.prototype.Begun, undefined)
 yandex.*#?#+js(abort-on-property-read.js, Object.prototype.loaderVer)
 yandex.*#?#+js(abort-on-property-read.js, Ya.loaderVer)
 yandex.*#?#+js(abort-on-property-read.js, yaads.adRenderedCount)
@@ -124,6 +124,7 @@ yandex.*#?#+js(set-constant.js, __AAB__, false)
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||lena-miro.ru^*&callback=*=$script,xmlhttprequest,domain=lena-miro.ru
+||levik.blog^*&callback=*=$script,xmlhttprequest,domain=levik.blog
 ||livejournal.com^*&callback=*=$script,xmlhttprequest,domain=livejournal.com
 ||strm.yandex.ru/get/$script,domain=yastatic.net
 ||varlamov.ru^*&callback=*=$script,xmlhttprequest,domain=varlamov.ru
