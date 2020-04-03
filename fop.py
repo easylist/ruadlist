@@ -17,7 +17,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.815
+VERSION = 3.816
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -66,7 +66,7 @@ KNOWNOPTIONS = ("empty", "collapse", "document", "elemhide", "font", "generichid
                 "other", "ping", "popup", "script", "stylesheet", "subdocument", "badfilter",
                 "first-party", "third-party", "websocket", "xmlhttprequest")
 # List of known key=value parameters (domain is not included)
-KNOWNPARAMETERS = ("csp", "rewrite", "redirect")
+KNOWNPARAMETERS = ("csp", "rewrite", "redirect", "redirect-rule")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
