@@ -36,6 +36,7 @@ ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#[@$?]?#")
 FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[@$?]?#)([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
+REDIRECTOPTIONPATTERN = re.compile(r"^redirect(-rule)?=")
 
 # Compile regular expressions that match element tags and pseudo classes and strings and tree selectors; "@" indicates either the beginning or the end of a selector
 SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z0-9]*)((?=([\[\]\^\*\$=:@#\.]))|(?=(\s(?:[+>~]|\*|[a-zA-Z][a-zA-Z0-9]*[\[:@\s#\.]|[#\.][a-zA-Z][a-zA-Z0-9]*))))")
@@ -204,31 +205,32 @@ def fopsort (filename):
 
         for line in inputfile:
             line = line.strip()
-            if not re.match(BLANKPATTERN, line):
-                # Include comments verbatim and, if applicable, sort the preceding section of filters and save them in the new version of the file
-                if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
-                    if section:
-                        writefilters()
-                        section = []
-                        lineschecked = 1
-                        filterlines = elementlines = 0
-                    outputfile.write("{line}\n".format(line = line))
+            if re.match(BLANKPATTERN, line):
+                continue
+            # Include comments verbatim and, if applicable, sort the preceding section of filters and save them in the new version of the file
+            if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
+                if section:
+                    writefilters()
+                    section = []
+                    lineschecked = 1
+                    filterlines = elementlines = 0
+                outputfile.write("{line}\n".format(line = line))
+            else:
+                # Neaten up filters and, if necessary, check their type for the sorting algorithm
+                elementparts = re.match(ELEMENTPATTERN, line)
+                if elementparts:
+                    domains = elementparts.group(1).lower()
+                    if lineschecked <= CHECKLINES:
+                        elementlines += 1
+                        lineschecked += 1
+                    line = elementtidy(domains, elementparts.group(2), elementparts.group(3))
                 else:
-                    # Neaten up filters and, if necessary, check their type for the sorting algorithm
-                    elementparts = re.match(ELEMENTPATTERN, line)
-                    if elementparts:
-                        domains = elementparts.group(1).lower()
-                        if lineschecked <= CHECKLINES:
-                            elementlines += 1
-                            lineschecked += 1
-                        line = elementtidy(domains, elementparts.group(2), elementparts.group(3))
-                    else:
-                        if lineschecked <= CHECKLINES:
-                            filterlines += 1
-                            lineschecked += 1
-                        line = filtertidy(line)
-                    # Add the filter to the section
-                    section.append(line)
+                    if lineschecked <= CHECKLINES:
+                        filterlines += 1
+                        lineschecked += 1
+                    line = filtertidy(line)
+                # Add the filter to the section
+                section.append(line)
         # At the end of the file, sort and save any remaining filters
         if section:
             writefilters()
@@ -261,19 +263,21 @@ def filtertidy (filterin):
 
     if not optionsplit:
         # Remove unnecessary asterisks from filters without any options and return them
-        return removeunnecessarywildcards(filterin)
+        return removeunnecessarywildcards(filterin, False)
     else:
         # If applicable, separate and sort the filter options in addition to the filter text
-        filtertext = removeunnecessarywildcards(optionsplit.group(1))
         optionlist = optionsplit.group(2).lower().replace("_", "-").split(",")
 
         domainlist = []
         removeentries = []
+        isRedirect = False
         for option in optionlist:
             # Detect and separate domain options
             if option[0:7] == "domain=":
                 domainlist.extend(option[7:].split("|"))
                 removeentries.append(option)
+            elif re.match(REDIRECTOPTIONPATTERN, option):
+                isRedirect = True
             elif option.strip("~") not in KNOWNOPTIONS and option.split('=')[0] not in KNOWNPARAMETERS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
         # Sort all options other than domain alphabetically with a few exceptions
@@ -282,6 +286,11 @@ def filtertidy (filterin):
         if domainlist:
             optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key = lambda domain: domain.strip("~")))))
 
+        # according to uBO documentation redirect options must start either with * or ||
+        # so, it is not unnecessary wildcard in such case
+        filtertext = removeunnecessarywildcards(optionsplit.group(1), isRedirect)
+        if isRedirect and filtertext[0] != '*' and filtertext[:2] != '||':
+            print("Warning: Incorrect redirect filter \"{filterin}\". Such filters must start with either '*' or '||'.".format(filterin = filterin))
         # Return the full filter
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
 
@@ -399,7 +408,7 @@ def isglobalelement (domains):
             return False
     return True
 
-def removeunnecessarywildcards (filtertext):
+def removeunnecessarywildcards (filtertext, keepAsterisk):
     """ Where possible, remove unnecessary wildcards from the beginnings
     and ends of blocking filters."""
     whitelist = False
@@ -415,7 +424,9 @@ def removeunnecessarywildcards (filtertext):
         hadStar = True
     if hadStar and filtertext[0] == "/" and filtertext[-1] == "/":
         filtertext = "{filtertext}*".format(filtertext = filtertext)
-    if filtertext == "*":
+    if hadStar and keepAsterisk:
+        filtertext = "*{filtertext}".format(filtertext = filtertext)
+    if not keepAsterisk and filtertext == "*":
         filtertext = ""
     if whitelist:
         filtertext = "@@{filtertext}".format(filtertext = filtertext)
