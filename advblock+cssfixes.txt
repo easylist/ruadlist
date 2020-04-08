@@ -13,6 +13,7 @@
 %include https://easylist-downloads.adblockplus.org/antiadblockfilters.txt%
 ! --- uBO scriptlets injection rules & other ---
 *$script,redirect-rule=noopjs,domain=otzovik.com
+*$xmlhttprequest,redirect-rule=nooptext,domain=otzovik.com
 /^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
@@ -129,7 +130,7 @@ nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script,
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, atob)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, loaded_blocks_directadvert)
 obozrevatel.com##+js(remove-attr, autoplay, video)
-otzovik.com##+js(abort-on-property-read, Object.prototype.AdvLoadDone)
+otzovik.com##+js(abort-on-property-read, Object.prototype.createUrl)
 otzovik.com##+js(cookie-remover, ext_uid)
 overclockers.ru##+js(abort-on-property-read, cardinals, chkA)
 ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/pravila"])
