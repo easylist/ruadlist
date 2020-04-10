@@ -864,6 +864,7 @@ sports.ru#?#article > .news-item__content > p:-abp-has(a[href^="https://trbna.co
 animaunt.org##article > .sub-info > .sb-submit
 sports.ru#?#article.piwikTrackContent:-abp-has(a[href^="https://trbna.co/"])
 sports.ru#?#article.piwikTrackContent:-abp-has(span:-abp-contains(Спецпроект))
+www.fontanka.ru##aside + div > section + aside > div[class]:nth-of-type(-n+2)
 eg.ru##aside > noindex
 kino-teatr.ua##aside a[href^="https://play.google.com/"]
 www.kinopoisk.ru##aside.dialog
@@ -929,6 +930,8 @@ gamer-info.com##div[class*="ads"][class*="overlay"]
 1plus1.ua##div[class*="popup"][class*="subscribe"]
 1tv.ru##div[class*="promo"][class$="place"]
 gdekluet.ru##div[class*="ui-widget"]
+www.fontanka.ru#?#div[class]:-abp-has(> [href="/format/fproject/"] > h3)
+www.fontanka.ru#?#div[class]:-abp-has(> div > button + [href="/pressrelease/"])
 google.com,google.com.ua,google.ru##div[class][jsaction^="dismiss_warmup"]
 mail.rambler.ru##div[class^="NewsBlock-root"]
 mail.rambler.ru##div[class^="Profile-banner"]
