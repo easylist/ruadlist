@@ -550,30 +550,32 @@ kinomania.ru#?#.outer:style(padding-top: 0 !important)
 ! ---
 kinometro.ru#?#body:style(background-color: transparent !important)
 ! ---
-www.kinopoisk.ru#?##actorListBlock:style(padding-right: 19px !important)
 www.kinopoisk.ru#?##header-info-bg:style(background-color: transparent !important; background-image: none !important)
 www.kinopoisk.ru###top > div[id][style^="height: 210px"]
 www.kinopoisk.ru#?#.app__content div[style="min-height:250px"]:style(min-height: 0 !important)
-www.kinopoisk.ru#?#.content-container_app-width_wide:style(max-width: 100% !important)
 www.kinopoisk.ru#?#.film-seances-page:style(box-shadow: 0 -8px 15px #333333 !important)
-www.kinopoisk.ru#?#.filmsListNew .info:style(padding-right: 116px !important)
 www.kinopoisk.ru#?#.page-content > #header-info-bg + div[id]:not([class]):style(margin-bottom: 40px !important)
 www.kinopoisk.ru#?#.shadow.shadow-restyle:style(box-shadow: 0 -8px 15px #333333 !important)
 www.kinopoisk.ru#?#.top-banner-container
 www.kinopoisk.ru#?#.underheader-superbanner-wrapper:style(min-height: 0 !important)
 www.kinopoisk.ru#?#.user-subscription-partial-component__subscription-item-text:style(white-space: pre-wrap !important)
+www.kinopoisk.ru##[class*="adblock-warning"]
 www.kinopoisk.ru##aside.dialog
 www.kinopoisk.ru##div[data-type="teaserspec"]
 www.kinopoisk.ru#?#html:not(#id):not([style="height: 100%; width: 100%;"]):style(background-color: #e6e6e6 !important)
-!
+! правила для обфусцированной версии
 www.kinopoisk.ru##.app__page > div[class*="-container_"]:not([class*="media"]):not([class*="content"]):first-child
 www.kinopoisk.ru##.desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child
 www.kinopoisk.ru##.media-post-page > div[class*="-container_"]:not([class*="media"]):first-child
 www.kinopoisk.ru#?#.page-content > div[id]:not(#header-info-bg):empty
 www.kinopoisk.ru#?#.page-content > div[id]:not(#header-info-bg):empty + div[id]:not(#top):style(margin-bottom: 40px !important)
-www.kinopoisk.ru##[class*="adblock-warning"]
 www.kinopoisk.ru#?#div[class*="kinopoisk-media-container_pending"]:style(min-height: 0 !important)
 www.kinopoisk.ru##div[id*="_superbanner_"]
+! исправление ошибок оригинальной вёрстки
+www.kinopoisk.ru#?##actorListBlock:style(padding-right: 19px !important)
+www.kinopoisk.ru#?#.content-container_app-width_wide:style(max-width: 100% !important)
+www.kinopoisk.ru#?#.film-details-block > div > .items-spoiler > div:style(margin-right: 15px !important)
+www.kinopoisk.ru#?#.filmsListNew .info:style(padding-right: 116px !important)
 ! ---
 kinoprofi.vip#?#body .header .header-fixed:style(top: 0 !important)
 kinoprofi.vip#?#body .header:style(padding-top: 0 !important)
