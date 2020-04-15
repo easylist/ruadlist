@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200402.26
+@version 0.20200415.648
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -115,6 +115,7 @@
   domain("myhdrezka.com"),
   domain("new-rutor.org"),
   domain("newstudio.tv"),
+  domain("nexthdrezka.com"),
   domain("nnm-club.me"),
   domain("nnmclub.ro"),
   domain("nnmclub.to"),
@@ -137,7 +138,6 @@
   domain("the-rutor.org"),
   domain("thehdrezka.com"),
   domain("torentor.co"),
-  domain("torrentum.me"),
   domain("tryhdrezka.com"),
   domain("tvhdrezka.com"),
   domain("uphdrezka.com"),
@@ -205,6 +205,7 @@
   domain("myhdrezka.com"),
   domain("myshows.me"),
   domain("newstudio.tv"),
+  domain("nexthdrezka.com"),
   domain("nnm-club.me"),
   domain("nnmclub.ro"),
   domain("nnmclub.to"),
@@ -224,13 +225,11 @@
   domain("smotri.com"),
   domain("stopgame.ru"),
   domain("torrentom.com"),
-  domain("torrentum.me"),
   domain("tryhdrezka.com"),
   domain("tvhdrezka.com"),
   domain("uateam.tv"),
   domain("uphdrezka.com"),
   domain("userstyles.org"),
-  domain("xatab-repack.net"),
   domain("youhdrezka.com"),
   domain("zakarpatpost.net"),
   domain("zakon.kz") {
@@ -702,6 +701,15 @@
     }
 }
 
+@-moz-document domain("batenka.ru") {
+    body > .subscribe-popup {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("bestpersons.ru") {
     #userTabs {
         float: none !important
@@ -1052,16 +1060,15 @@
 @-moz-document
   domain("drive2.com"),
   domain("drive2.ru") {
-    .c-dv-container, .c-post + div[class]:not(:last-child), .dv-post-header, 
+    .c-dv-container, .c-post + div:not(:last-child), .dv-post-header, 
     .offer[itemtype="http://schema.org/Product"] + div, 
-    div[data-role="scrolltracking"][data-target], 
-    div[data-role="scrolltracking"][data-target] + div, 
-    form[action="/my/content/feed/editorial"] + div[class], 
-    script[data-type="recommendation"] + [data-role], 
-    script[data-type="recommendation"] + [data-role] ~ div[class] > div:first-child + div[class] {
+    div ~ div[data-role][data-showids] ~ div[class] > div:first-child + div[class], 
+    div ~ div[data-role][data-showids]:not([class="c-car-card-sa"]), 
+    div ~ div[data-role][data-target] + div, 
+    form[action="/my/content/feed/editorial"] + div {
         display: none !important
     }
-    script[data-type="recommendation"] + [data-role] ~ div[class] > div:first-child:not(:only-child) {
+    div ~ div[data-role][data-showids] ~ div[class] > div:first-child:not(:only-child) {
         max-width: unset !important
     }
     .c-car-card-sa[data-metrika] {
@@ -1312,6 +1319,7 @@
 @-moz-document
   domain("filmix.cc"),
   domain("filmix.co"),
+  domain("filmix.email"),
   domain("filmix.ink"),
   domain("filmix.site"),
   domain("filmix.today") {
@@ -1468,8 +1476,7 @@
 
 @-moz-document
   domain("fullfilmhd.space"),
-  domain("kinocok.org"),
-  domain("torrentum.me") {
+  domain("kinocok.org") {
     #wrapper {
         margin-top: 0 !important
     }
@@ -1762,7 +1769,7 @@
 
 @-moz-document
   domain("hlamer.ru"),
-  domain("zloekino.ru") {
+  domain("zloekino.com") {
     body {
         background-color: #596c84 !important
     }
@@ -2367,7 +2374,7 @@
 
 @-moz-document
   domain("multmania.club"),
-  domain("tlumtluda.pro") {
+  domain("tlumtluda.info") {
     body {
         background: black !important
     }
@@ -2590,7 +2597,7 @@
 @-moz-document
   domain("online.animedia.tv"),
   domain("tt.animedia.tv") {
-    div[class^="promo__wrapper"] {
+    div[class^="promo_"][class*="wrapper"] {
         display: none !important
     }
     .main-container {
@@ -2635,6 +2642,18 @@
     }
     .page-wrapper {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("otzovik.com") {
+    [class*="_no_abs"], [class*="_no_abs"] > * {
+        height: auto !important
+    }
+}
+
+@-moz-document domain("outlook.live.com") {
+    div[tabindex][role="region"][aria-label] ~ div[data-max-width][class] + div[class^="_3_"] {
+        display: none !important
     }
 }
 
@@ -2780,6 +2799,9 @@
     body {
         background: none !important
     }
+    .sp-header-block {
+        height: 50px !important
+    }
     .page-width {
         margin-top: 0 !important
     }
@@ -2902,12 +2924,6 @@
 @-moz-document domain("ren.tv") {
     #container-main, #sidebar, .main-with-sidebar {
         min-height: 0 !important
-    }
-}
-
-@-moz-document domain("rg-mechanics.org") {
-    .buttondown[href^="http"]:not([href^="https://rg-mechanics.org/"]):not([href^="http://rg-mechanics.org"]) {
-        display: none !important
     }
 }
 
@@ -3141,6 +3157,12 @@
     }
     body.popup {
         overflow:auto !important
+    }
+}
+
+@-moz-document domain("sportmail.ru") {
+    .layout_footer {
+        margin-top: 20px !important
     }
 }
 
@@ -3560,7 +3582,7 @@
 }
 
 @-moz-document domain("www.kinopoisk.ru") {
-    html:not(#id) {
+    html:not(#id):not([style="height: 100%; width: 100%;"]) {
         background-color: #e6e6e6 !important
     }
     #header-info-bg {
@@ -3582,6 +3604,9 @@
     .page-content > #header-info-bg + div[id]:not([class]), 
     .page-content > div[id]:not(#header-info-bg):empty + div[id]:not(#top) {
         margin-bottom: 40px !important
+    }
+    .film-details-block > div > .items-spoiler > div {
+        margin-right: 15px !important
     }
     .content-container_app-width_wide {
         max-width: 100% !important
@@ -3627,34 +3652,22 @@
     }
 }
 
-@-moz-document domain("xatab-repack.net") {
-    #page {
-        background: none !important
-    }
-    .btn-download[href^="http"]:not([href^="https://xatab-repack.net/"]):not([href^="http://xatab-repack.net/"]) {
-        display: none !important
-    }
-    #content {
-        padding-top: 55px !important
-    }
-}
-
 @-moz-document
   domain("yandex.by"),
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.ua"),
   domain("yandex.uz") {
-    div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([style]):not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) {
+    div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) {
         background-color: transparent !important
     }
     div[class*="sport-advert"] {
         background: none !important
     }
-    div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([style]):not([class*="card"]):not([class*="feed"]):after {
+    div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]):after {
         background: transparent !important
     }
-    div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([style]):not([class*="card"]):not([class*="feed"]) {
+    div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) {
         box-shadow: none !important
     }
     .serp-list_left_yes > .card__narrow {
@@ -3669,7 +3682,7 @@
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
     body[class*="logged "][class*=" b-page_"] .direct-desktop_white, 
-    div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([style]):not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) > div[class] > div:not([class]), 
+    div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) > div[class] > div:not([class]), 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Реклама"], 
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
