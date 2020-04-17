@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200415.648
+@version 0.20200417.1841
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -979,6 +979,13 @@
 @-moz-document domain("darkermagazine.ru") {
     body > .header {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("delovoymir.biz") {
+    body {
+        padding-top: 0 !important;
+        background-color: transparent !important
     }
 }
 
@@ -2392,8 +2399,8 @@
   domain("music.yandex.ru"),
   domain("music.yandex.ua"),
   domain("music.yandex.uz") {
-    .page-root > div[class]:nth-child(-n+2)[style^="display: block;"], 
-    div[class^="sidebar"] .no-ads {
+    body > div[style^="min-height"] > div[class][style="display: block;"], 
+    div[class*="sidebar"] .no-ads {
         display: none !important
     }
 }
