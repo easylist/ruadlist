@@ -3,6 +3,7 @@
 /^https?://[^\s]+\.nahnews\.org/[^\s]{150,}/$csp=script-src
 /^https?://[^\s]+\.politexpert\.net/[^\s]{150,}/$csp=script-src
 /^https?://scrin.org/[^\s]/$csp=sandbox allow-same-origin;
+/^https?://yandex\.ru\/turbo\?/*[^\s]+(news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
 /gateway/aHR0c$csp=script-src
 @@||simpsonsua.com.ua/user/*/#|$csp=script-src 'self' * data:
 @@||simpsonsua.com.ua/user/*/|$csp=script-src 'self' * data:
@@ -80,7 +81,6 @@
 ||vseokrohe.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ||windows-portal.pw/|$csp=script-src 'self' * blob: data:
 ||x-true.info^$csp=script-src 'self' * blob: data:
-||yandex.ru/turbo?*news.ru$csp=script-src
 ||yandex.ru^*blamper$csp=script-src 'self'
 ||zdorovybudte.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ! ---
@@ -2116,7 +2116,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||navigator.az/banner/
 ||navigator.az/img/brands/
 ||naviny.by/services/banner/
-||naydex.net^$domain=echo.msk.ru|fontanka.ru|pcpro100.info
+||naydex.net^$domain=echo.msk.ru|fontanka.ru|pcpro100.info|publy.ru
 ||ne-kurim.ru/templates/*images/background_$image
 ||ne-kurim.ru^*banners/
 ||needforvid.com/images/$object
