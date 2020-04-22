@@ -14,7 +14,6 @@
 ! --- uBO scriptlets injection rules & other ---
 *$script,redirect-rule=noopjs,domain=otzovik.com
 *$xmlhttprequest,redirect-rule=nooptext,domain=otzovik.com
-/^https?://24smi\.org/[^\s]{100,}/$xmlhttprequest,badfilter,domain=24smi.org
 /^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
@@ -29,8 +28,6 @@
 24molnia.com,7days.ru,7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,inforeactor.ru,kp.ru,mashintop.ru,maxpark.com,nation-news.ru,news.ru,newsland.com,ogodom.ru,paperdoc.ru,pasmi.ru,politros.com,rueconomics.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
 24molnia.com,7days.ru,7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,inforeactor.ru,kp.ru,mashintop.ru,maxpark.com,nation-news.ru,news.ru,newsland.com,ogodom.ru,paperdoc.ru,pasmi.ru,politros.com,rueconomics.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
-24smi.org#@#.js-header
-24smi.org#@#.js-progress
 24tv.ua,4mama.ua,autoua.net,avtovod.com.ua,besplatka.ua,buhgalter.com.ua,censor.net.ua,enovosty.com,epravda.com.ua,eurointegration.com.ua,eway.in.ua,facenews.ua,fakty.ua,football24.ua,gagadget.com,gdz4you.com,gismeteo.ua,glavcom.ua,gorod.dp.ua,hvylya.net,inforesist.org,internetua.com,isport.ua,kinoafisha.ua,kolobok.ua,kp.ua,kriminal.tv,lifedon.com.ua,liga.net,mama.ua,maximum.fm,megacritic.ru,mport.ua,newsyou.info,nnovosti.info,obozrevatel.com,obyava.ua,okino.ua,ostro.org,pogoda.meta.ua,pravda.com.ua,real-vin.com,ringside24.com,segodnya.ua,sinoptik.ua,smak.ua,socportal.info,strana.ua,tochka.net,toneto.net,tv.ua,tvgid.ua,ubr.ua,ukr.net,vesti.ua,vgorode.ua,www.bigmir.net,zaxid.net,zn.ua##+js(set-constant, String.prototype.charCodeAt, trueFunc)
 2gis.ru##div[style^="display:"][style*="flex;"][style*="height:"][style*="100%;"][style*="overflow:"][style*="hidden;"][style*="width:"] div[style^="position: absolute;"] div[class]:matches-css(background-color: rgb(255, 250, 235))
 3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,otzovik.com,sports.ru##+js(abort-on-property-read, Ya)
