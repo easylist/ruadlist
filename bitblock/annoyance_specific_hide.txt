@@ -191,7 +191,6 @@ ntv.ru###push_alert
 appleinsider.ru###pushbanner
 zakon.kz###pushsw-prompt-widget
 ryfma.com###rad-sticky-banner
-instagram.com#?##react-root ~ div[class*=" "][class$=" "][role="presentation"]:-abp-has(a[href^="/accounts/"][href*="signup/"])
 context.reverso.net###register-popup-bottom
 vesti.lv###reklama_wrapper ~ div[style^="float:"]
 tproger.ru###related-posts
@@ -931,7 +930,7 @@ tass.ru##body > noindex > .widge
 xakep.ru##body > strong
 4pda.ru##body [id] div ~ [id][class]:not(div)[style][data-revive-id]
 rambler.ru##body:not(#id) > div:not(#id):not([class]):not([style]) .popup--rambler-start
-instagram.com#?#body[style="overflow: hidden;"] > div[class][role="presentation"]:-abp-has(a[href="/accounts/emailsignup/"])
+instagram.com#?#body[style="overflow: hidden;"] > #react-root ~ div[class*=" "][class$=" "][role="presentation"]:-abp-has(div:-abp-contains(Войдите, чтобы продолжить))
 kak-prosto.net##br + br
 driveroff.net,samlab.ws#?#center:-abp-has(iframe[src*="money.yandex.ru"])
 1cont.ru##cookies-notice
