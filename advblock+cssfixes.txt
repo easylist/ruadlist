@@ -36,6 +36,7 @@
 4pda.ru##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
 7ogorod.ru##+js(abort-on-property-read, flat_pm_arr)
 @@||ads.adfox.ru/*/getBulk/$xmlhttprequest,badfilter,domain=www.goha.ru
+@@||s.zmctrack.net/z|$third-party,xmlhttprequest,badfilter,domain=forumodua.com
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||studizba.com^$generichide,badfilter
@@ -80,6 +81,8 @@ ferr-um.ucoz.ru,stalker-2-2012.ucoz.net##+js(setTimeout-defuser, getElementBy)
 film.ru##+js(remove-attr, autoplay|loop, video)
 fishki.net##+js(nano-setTimeout-booster, , 10000)
 fishki.net##+js(setTimeout-defuser, is_adblock)
+forumodua.com##body > div:not([id]):not([class]):not([style]):empty:remove()
+forumodua.com##head > iframe[name]:not([id]):not([class]):not([src]):remove()
 forums.goha.ru##+js(abort-on-property-read, AGVYRdCrkf)
 free-tor.info,korsars.info##+js(set-constant, String.fromCharCode, trueFunc)
 friends.in.ua,gidonline.eu,radikal.ru,simpsonsua.com.ua##+js(abort-on-property-read, atob)
