@@ -118,6 +118,8 @@ radioprofusion.com##footer > .counter
 lena-miro.*,livejournal.*,levik.blog,varlamov.*#?#+js(set-constant.js, Object.prototype.Begun, undefined)
 nova.rambler.*#?#+js(abort-on-property-read.js, Object.prototype.AdvManager)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#script[data-message*="/turbo"] ~ * div[class]:-abp-has(> [class^="loader"][class*="__loader"])
+yandex.*#?#+js(abort-on-property-read.js, Object.prototype.getHoneypot)
+yandex.*#?#+js(abort-on-property-read.js, Object.prototype.loaderVer)
 yandex.*#?#+js(abort-on-property-read.js, Ya.loaderVer)
 yandex.*#?#+js(set-constant.js, Object.prototype.AdvertPartner, falseFunc)
 yandex.*#?#+js(set-constant.js, Object.prototype.hasPreroll, noopFunc)
@@ -129,7 +131,6 @@ yandex.*#?#+js(set-constant.js, __AAB__, false)
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||strm.yandex.ru/get/$script,domain=yastatic.net
-~local.yandex.*,yandex.*#?#+js(abort-on-property-read.js, yaads.blocks)
 !
 ! = Общие фильтры (блокировка по маске) =======================================
 .com/a.gif?
