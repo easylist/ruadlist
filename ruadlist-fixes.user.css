@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200417.1841
+@version 0.20200428.640
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -57,12 +57,14 @@
   domain("clubhdrezka.com"),
   domain("comedy-portal.net"),
   domain("dnepr.info"),
+  domain("drhdrezka.com"),
   domain("dugtor.org"),
   domain("dugtor.ru"),
   domain("film-max.ru"),
   domain("film-ua.com"),
   domain("filmy-smotret.net"),
   domain("gethdrezka.com"),
+  domain("gidonline.io"),
   domain("gordonua.com"),
   domain("gtorrent.ru"),
   domain("hd720.biz"),
@@ -82,6 +84,7 @@
   domain("hdrezka.name"),
   domain("hdrezka.rest"),
   domain("hdrezka.run"),
+  domain("hdrezka.sh"),
   domain("hdrezka.su"),
   domain("hdrezka.today"),
   domain("hdrezka.top"),
@@ -147,7 +150,7 @@
   domain("vse-sezony.cc"),
   domain("wikianime.tv"),
   domain("youhdrezka.com"),
-  domain("zombie-film.org"),
+  domain("zombie-film.club"),
   domain("zona-film.com") {
     body:not(#id), html:not(#id) {
         padding-top: 0 !important
@@ -162,6 +165,7 @@
   domain("ain.ua"),
   domain("betahdrezka.com"),
   domain("clubhdrezka.com"),
+  domain("drhdrezka.com"),
   domain("epravda.com.ua"),
   domain("fastpic.ru"),
   domain("film-max.ru"),
@@ -182,6 +186,7 @@
   domain("hdrezka.name"),
   domain("hdrezka.rest"),
   domain("hdrezka.run"),
+  domain("hdrezka.sh"),
   domain("hdrezka.today"),
   domain("hdrezka.top"),
   domain("hdrezka.vip"),
@@ -629,6 +634,17 @@
     }
 }
 
+@-moz-document domain("audioportal.su") {
+    #blink2[color="red"] {
+        -webkit-animation: none !important;
+        color: #837e6e !important
+    }
+    div[id^="pos"] > a > img[src*="audioportal.su/!!!ads/!rotator/"] {
+        zoom: 0.1 !important;
+        filter: grayscale(1) !important
+    }
+}
+
 @-moz-document
   domain("auto.mail.ru"),
   domain("horo.mail.ru"),
@@ -1067,18 +1083,26 @@
 @-moz-document
   domain("drive2.com"),
   domain("drive2.ru") {
-    .c-dv-container, .c-post + div:not(:last-child), .dv-post-header, 
+    .c-dv-container, .c-post + div + div:not(:last-child), 
+    .c-post + div ~ div:last-child > div:first-child + div[class], 
+    .c-post + div:not(:last-child), .dv-post-header, 
     .offer[itemtype="http://schema.org/Product"] + div, 
-    div ~ div[data-role][data-showids] ~ div[class] > div:first-child + div[class], 
-    div ~ div[data-role][data-showids]:not([class="c-car-card-sa"]), 
-    div ~ div[data-role][data-target] + div, 
-    form[action="/my/content/feed/editorial"] + div {
+    .offer[itemtype="http://schema.org/Product"] + div + div, 
+    [itemscope] ~ div[data-role][data-target] + div, 
+    [itemscope] ~ div[data-role][data-target] + div + div:not(:last-child), 
+    [itemscope] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class], 
+    div[class$="content"] ~ div[data-role][data-target] + div, 
+    form[action="/my/content/feed/editorial"] + div, 
+    form[action="/my/content/feed/editorial"] + div + div:not(:last-child), 
+    form[action="/my/content/feed/editorial"] + div ~ div:last-child > div:first-child + div[class] {
         display: none !important
     }
-    div ~ div[data-role][data-showids] ~ div[class] > div:first-child:not(:only-child) {
+    .c-post + div ~ div:last-child > div:first-child:not(:only-child), 
+    [itemscope] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child:not(:only-child), 
+    form[action="/my/content/feed/editorial"] + div ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
     }
-    .c-car-card-sa[data-metrika] {
+    div[data-metrika="catalogcenter"] {
         pointer-events: none !important;
         opacity: 0 !important
     }
@@ -1400,7 +1424,8 @@
     .tpc > .post > a[href] {
         word-break: break-all
     }
-    .tpc > .post > table[width="75%"] > tbody > tr > .lgf {
+    .tpc > .post > table[width="75%"] > tbody > tr > .lgf, 
+    tr > .dats + .tpc > .post {
         word-break: break-word
     }
 }
@@ -1501,7 +1526,7 @@
   domain("ngs.ru"),
   domain("rambler.ru"),
   domain("www.eg.ru") {
-    body:not(#id), html:not(#id) {
+    body:not(#id) {
         overflow: auto !important
     }
 }
@@ -1522,6 +1547,9 @@
 }
 
 @-moz-document domain("gamebomb.ru") {
+    body {
+        background-color: #303030 !important
+    }
     #ssdfsd {
         background-image: none !important
     }
@@ -1776,7 +1804,8 @@
 
 @-moz-document
   domain("hlamer.ru"),
-  domain("zloekino.com") {
+  domain("zloekino.com"),
+  domain("zloekino.ru") {
     body {
         background-color: #596c84 !important
     }
@@ -2493,7 +2522,7 @@
     }
 }
 
-@-moz-document domain("newdeaf.online") {
+@-moz-document domain("newdeaf.club") {
     .player-drop, .player-section {
         display: block !important
     }
@@ -3215,13 +3244,13 @@
 }
 
 @-moz-document domain("stratege.ru") {
-    #body_box_label > div[class]:not([id]):not([title]), 
+    #body_box_label > [class]:not([id]):not([title]), 
     body:not(#body_box_label) > style ~ div[id]:not([class]):not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)) {
         background-image: none !important;
         background-color: #dbdbdb !important
     }
     #body_box_label #wrapper > #content ~ :not(#footer), 
-    #body_box_label > div[class]:not([id]):not([title]) > style + div[id]:not([class]):not(#wrapper), 
+    #body_box_label > [class]:not([id]):not([title]) > style + [id]:not([class]):not(#wrapper), 
     body:not(#body_box_label) > [id*="footer"]:not(#footer):not(#footer_morecopyright), 
     body:not(#body_box_label) > style ~ div[id]:not([class]):not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)) > style + div[id]:not(#globalcontent) {
         display: none !important
@@ -3243,6 +3272,18 @@
     }
     html > body {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("tasix.me") {
+    #embed-video > [id^="blink"], .publisher-name > [id^="blink"] {
+        -webkit-animation: none !important;
+        animation: none !important;
+        color: var(--color--normal) !important;
+        font-weight: normal !important
+    }
+    .navbart > a[href] > .spin {
+        animation-name: none !important
     }
 }
 
@@ -3419,15 +3460,6 @@
         color: black !important;
         font-weight: 100 !important;
         font-size: 8px !important
-    }
-}
-
-@-moz-document domain("uz.video") {
-    #blink7 {
-        -webkit-animation: none !important;
-        animation: none !important;
-        color: var(--color--normal) !important;
-        font-weight: normal !important
     }
 }
 
@@ -3695,7 +3727,7 @@
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
     div[class*="sidebar"] > .direct-snippet, 
     div[class*="sport-advert_type_"]:empty, 
-    script[data-message*="/turbo?"] ~ div div[class*="_rect"][class*="_placed_"] {
+    script[data-message*="/turbo"] ~ * [class^="loader"][class*="__loader"] {
         display: none !important
     }
     .serp-header {
