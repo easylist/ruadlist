@@ -104,7 +104,6 @@ gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Obj
 gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.yaads)
 gismeteo.ua##^script:has-text("zmctrack")
-go.mail.ru##[data-p]
 helpsetup.ru##+js(abort-on-property-write, adBlockFunction)
 hideip.me#@#.node-promoted
 igromania.ru##.outer_inner > .wrapper_outer > div[class]:matches-css(height: 20px)
@@ -265,6 +264,7 @@ mail.ru,sportmail.ru##.article__item_source_viqeo ~ .article__item_source_viqeo
 mail.ru,sportmail.ru##.article__item_source_viqeo:has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
 ok.ru##.feed-list > .feed-w:has(.feed_ava ~ div div > span ~ span ~ span ~ span ~ span ~ span)
 e.mail.ru#@#.layout_right-size_60 .layout__main-frame:style(margin-right: auto!important;)
+@@||ad.mail.ru/adp/|$xmlhttprequest,domain=minigames.mail.ru|okminigames.mail.ru
 @@||ad.mail.ru/adq/$script,domain=target.my.com
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
 e.mail.ru,octavius.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div > div:style(display: block !important)
