@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200428.640
+@version 0.20200505.1547
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -108,6 +108,7 @@
   domain("kronverkcinema.ua"),
   domain("live-rutor.org"),
   domain("livehdrezka.com"),
+  domain("livekinopoisk.com"),
   domain("liverutor.org"),
   domain("lostfan.org"),
   domain("lotzon.co"),
@@ -203,6 +204,7 @@
   domain("kv.by"),
   domain("livehdrezka.com"),
   domain("livejournal.com"),
+  domain("livekinopoisk.com"),
   domain("lostfan.org"),
   domain("mc.today"),
   domain("metahdrezka.com"),
@@ -452,11 +454,12 @@
   domain("gidonline.fun"),
   domain("kinoboom.su"),
   domain("oblozhki.net"),
+  domain("repackov.net"),
   domain("sportarena.com"),
   domain("sportboom.info"),
   domain("uateam.tv"),
   domain("virusinfo.info") {
-    body:not(#id), html:not(#id) {
+    body:not(#id) {
         margin-top: 0 !important
     }
 }
@@ -895,7 +898,7 @@
 
 @-moz-document
   domain("cinema-hd.ru"),
-  domain("filmshd.top"),
+  domain("filmshd.vip"),
   domain("kinomax.pro"),
   domain("newseries.club") {
     .wrap {
@@ -1848,6 +1851,16 @@
     }
 }
 
+@-moz-document domain("i.ua") {
+    .footer_container {
+        height: auto !important;
+        margin-top: auto !important
+    }
+    .body_container {
+        padding-bottom: unset !important
+    }
+}
+
 @-moz-document domain("ictv.ua") {
     .video-stream {
         background-image:none !important;
@@ -2295,6 +2308,9 @@
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body > .zeropixel ~ div div[class*="notify"], body > div > .pulse {
         display: none !important
+    }
+    body > .grid .grid__lcol.coronavirus {
+        margin-top: 55px !important
     }
 }
 
@@ -3259,7 +3275,8 @@
         margin-bottom: auto !important
     }
     #body_box_label #wrapper > #content {
-        margin-top: 0 !important
+        margin-top: 0 !important;
+        padding-top: 40px !important
     }
     #globalcontent {
         padding-top: 0 !important
@@ -3644,9 +3661,6 @@
     .page-content > div[id]:not(#header-info-bg):empty + div[id]:not(#top) {
         margin-bottom: 40px !important
     }
-    .film-details-block > div > .items-spoiler > div {
-        margin-right: 15px !important
-    }
     .content-container_app-width_wide {
         max-width: 100% !important
     }
@@ -3663,6 +3677,9 @@
     }
     .user-subscription-partial-component__subscription-item-text {
         white-space: pre-wrap !important
+    }
+    .desktop-layout-with-sidebar__content > div[class][data-tid] {
+        width: auto !important
     }
 }
 
