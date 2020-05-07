@@ -270,6 +270,7 @@ drive2.com,drive2.ru##[itemscope] ~ div[data-role][data-target] + div + div:not(
 drive2.com,drive2.ru##[itemscope] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class]
 drive2.com,drive2.ru#?#[itemscope] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
 drive.ru#?#body > div:style(background: none !important; padding-top: 0 !important)
+drive2.com,drive2.ru##div[class$="content"] ~ div[data-role][data-target] + div
 drive2.com,drive2.ru##div[class$="header"] + div[class] > div[class$="content"] + div + div:last-child
 drive2.com,drive2.ru#?#div[data-metrika="catalogcenter"]:style(pointer-events: none !important; opacity: 0 !important)
 drive2.com,drive2.ru##form[action="/my/content/feed/editorial"] + div
