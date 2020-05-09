@@ -3,7 +3,7 @@
 /^https?://[^\s]+\.nahnews\.org/[^\s]{150,}/$csp=script-src
 /^https?://[^\s]+\.politexpert\.net/[^\s]{150,}/$csp=script-src
 /^https?://scrin.org/[^\s]/$csp=sandbox allow-same-origin;
-/^https?://yandex\.ru\/turbo\?/*[^\s]+(fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
+/^https?://yandex\.ru\/turbo\?/*[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
 /gateway/aHR0c$csp=script-src
 @@||simpsonsua.com.ua/user/*/#|$csp=script-src 'self' * data:
 @@||simpsonsua.com.ua/user/*/|$csp=script-src 'self' * data:
@@ -2119,7 +2119,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||navigator.az/banner/
 ||navigator.az/img/brands/
 ||naviny.by/services/banner/
-||naydex.net^$domain=echo.msk.ru|fontanka.ru|pcpro100.info|publy.ru
+||naydex.net^$domain=dni24.com|echo.msk.ru|fontanka.ru|pcpro100.info|publy.ru
 ||ne-kurim.ru/templates/*images/background_$image
 ||ne-kurim.ru^*banners/
 ||needforvid.com/images/$object
