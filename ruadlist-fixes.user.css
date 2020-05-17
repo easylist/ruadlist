@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200505.1547
+@version 0.20200517.450
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -126,6 +126,7 @@
   domain("nuhdrezka.com"),
   domain("ostfilm.tv"),
   domain("pure-t.ru"),
+  domain("rehdrezka.com"),
   domain("rezka.ag"),
   domain("roem.ru"),
   domain("rusporno.vip"),
@@ -223,6 +224,7 @@
   domain("otxataba.net"),
   domain("playtor.tv"),
   domain("pure-t.ru"),
+  domain("rehdrezka.com"),
   domain("rezka.ag"),
   domain("rufootballtv.org"),
   domain("rusporno.vip"),
@@ -321,7 +323,8 @@
 
 @-moz-document domain("4pda.ru") {
     body[itemscope] [id]:first-child > style ~ a[href][target="_blank"], 
-    iframe[src*="utm_campaign"] {
+    iframe[src*="utm_campaign"], 
+    tbody > tr[valign="top"] > td[width*="%"] + td > a[href][target="_blank"] > img {
         display: none !important
     }
 }
@@ -565,6 +568,7 @@
 
 @-moz-document
   domain("anistar.org"),
+  domain("anistar.pro"),
   domain("anistar1.org"),
   domain("anistar10.org"),
   domain("anistar11.org"),
@@ -1045,13 +1049,16 @@
         background-image: none !important;
         padding-top: 0 !important
     }
-    #adsincont, 
-    body > [id] > div[class] > div:not([id]):not([class]):not([style]) > a[href][target="_blank"], 
-    div[class^="b"][class*="anners"] {
-        display: none !important
-    }
     .p-sidebar {
         margin: auto !important
+    }
+    div[class^="banner"] + section {
+        padding: unset !important;
+        margin: unset !important
+    }
+    div[class^="banner"] + section > div {
+        width: auto !important;
+        height: auto !important
     }
 }
 
@@ -1095,6 +1102,7 @@
     [itemscope] ~ div[data-role][data-target] + div + div:not(:last-child), 
     [itemscope] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class], 
     div[class$="content"] ~ div[data-role][data-target] + div, 
+    div[class$="header"] + div[class] > div[class$="content"] + div + div:last-child, 
     form[action="/my/content/feed/editorial"] + div, 
     form[action="/my/content/feed/editorial"] + div + div:not(:last-child), 
     form[action="/my/content/feed/editorial"] + div ~ div:last-child > div:first-child + div[class] {
@@ -1108,6 +1116,14 @@
     div[data-metrika="catalogcenter"] {
         pointer-events: none !important;
         opacity: 0 !important
+    }
+}
+
+@-moz-document domain("dtf.ru") {
+    .igrozhur-promo-ref {
+        padding: 0 !important;
+        background-color: transparent !important;
+        cursor: auto !important
     }
 }
 
@@ -1571,7 +1587,13 @@
 
 @-moz-document domain("gamemag.ru") {
     .top-branding {
-        max-height: 50rem !important
+        max-height: 45rem !important
+    }
+}
+
+@-moz-document domain("games.mail.ru") {
+    .b-pc-str {
+        width: auto !important
     }
 }
 
@@ -2010,6 +2032,20 @@
     }
 }
 
+@-moz-document
+  domain("kino.video"),
+  domain("tasix.me") {
+    #embed-video > [id^="blink"], .publisher-name > [id^="blink"] {
+        -webkit-animation: none !important;
+        animation: none !important;
+        color: var(--color--normal) !important;
+        font-weight: normal !important
+    }
+    .navbart > a[href] > .spin {
+        animation-name: none !important
+    }
+}
+
 @-moz-document domain("kinoafisha.info") {
     body.main:not(#id) {
         background: #141414 !important;
@@ -2253,21 +2289,23 @@
 
 @-moz-document
   domain("lostfilm.info"),
-  domain("lostfilm.tv") {
+  domain("lostfilm.tv"),
+  domain("lostfilm.tw") {
     body {
         background-image: none !important;
         background-color: #1c1e1f !important
     }
 }
 
-@-moz-document domain("lostfilm.tv") {
+@-moz-document
+  domain("lostfilm.tv"),
+  domain("lostfilm.tw") {
     .footer {
         background: #1c1e1f !important;
         color: #fff !important
     }
-    body > a[onclick], body > div > div[style^="padding-top"], 
-    body > div:not([id]):not([class]), body > span, 
-    script + a[href][target] + div[style*="absolute"][style*="margin-left"] {
+    body > * > div[style^="padding-top"], body > a[onclick], 
+    body > div:not([id]):not([class]), body > span {
         display: none !important
     }
 }
@@ -2305,12 +2343,10 @@
     body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class], 
     body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name]), 
     body > .zeropixel ~ * div .eventbar, 
+    body > .zeropixel ~ * div a[href*="aliexpress.com"], 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
-    body > .zeropixel ~ div div[class*="notify"], body > div > .pulse {
+    body > div > .pulse {
         display: none !important
-    }
-    body > .grid .grid__lcol.coronavirus {
-        margin-top: 55px !important
     }
 }
 
@@ -2640,6 +2676,22 @@
     }
 }
 
+@-moz-document
+  domain("oldseedoff.zannn.top"),
+  domain("seedoff.innal.top"),
+  domain("seedoff.zannn.top"),
+  domain("seedoff2.innal.top"),
+  domain("seedoff3.innal.top"),
+  domain("seedoff4.innal.top"),
+  domain("seedoff5.innal.top"),
+  domain("seedoff6.innal.top"),
+  domain("seedoff7.innal.top"),
+  domain("seedoff8.innal.top") {
+    table.lista[width="100%"][style] > tbody > tr > td.header[width="110px"] {
+        color: transparent !important
+    }
+}
+
 @-moz-document domain("omskbird.tv") {
     .have-brand .wrap {
         margin-top: 0 !important
@@ -2942,14 +2994,12 @@
 }
 
 @-moz-document domain("razlozhi.ru") {
-    body > span {
-        display: none !important
-    }
-    body:not(#id) {
-        margin-right: 0 !important
-    }
-    body > div[class][style^="background"][style*="rgb"][style*="width"][style*="height"] {
+    html > head ~ body {
         width: 100% !important
+    }
+    div[data-id][data-size] ~ div:not([data-id]) > div[class], 
+    html > body > div[class] {
+        width: auto !important
     }
 }
 
@@ -3017,17 +3067,10 @@
     .backstretch {
         display: none !important
     }
-    .td-header-sp-logo, 
-    .tdc-header-wrap > .td-header-wrap > :not(.td-banner-wrap-full), 
-    body > #td-outer-wrap > :not(.tdc-header-wrap) {
-        pointer-events: auto !important
-    }
-    .tdc-header-wrap, body > #td-outer-wrap {
-        pointer-events: none !important
-    }
 }
 
 @-moz-document
+  domain("rp5.am"),
   domain("rp5.by"),
   domain("rp5.co.uk"),
   domain("rp5.kz"),
@@ -3068,6 +3111,17 @@
 @-moz-document domain("russorosso.ru") {
     #wrapper > #header {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("rutracker.appspot.com"),
+  domain("rutracker.net"),
+  domain("rutracker.nl"),
+  domain("rutracker.org"),
+  domain("zerkalo-torrent.tk") {
+    #main-nav .floatR {
+        display: none !important
     }
 }
 
@@ -3253,6 +3307,18 @@
     }
 }
 
+@-moz-document
+  domain("stalker-mods.clan.su"),
+  domain("stalker-mods.su"),
+  domain("stalkerportaal.ru") {
+    #timer_2 {
+        display: block !important
+    }
+    #timer_1 {
+        display: none !important
+    }
+}
+
 @-moz-document domain("stranamam.ru") {
     .n-main-branding-container {
         margin-top: 0 !important
@@ -3289,18 +3355,6 @@
     }
     html > body {
         overflow: auto !important
-    }
-}
-
-@-moz-document domain("tasix.me") {
-    #embed-video > [id^="blink"], .publisher-name > [id^="blink"] {
-        -webkit-animation: none !important;
-        animation: none !important;
-        color: var(--color--normal) !important;
-        font-weight: normal !important
-    }
-    .navbart > a[href] > .spin {
-        animation-name: none !important
     }
 }
 
@@ -3717,9 +3771,6 @@
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) {
         background-color: transparent !important
     }
-    div[class*="sport-advert"] {
-        background: none !important
-    }
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]):after {
         background: transparent !important
     }
@@ -3734,7 +3785,8 @@
     .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
     .mg-page-layout-item_pos_right div[class*="wrapper"] > div[class]:empty, 
-    .serp-list > .incut > .direct, .sport-advert:empty, .turbo-advert__loader, 
+    .mini-suggest__item_subtype_ad, .serp-list > .incut > .direct, 
+    .turbo-advert__loader, 
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
     body[class*="logged "][class*=" b-page_"] .direct-desktop_white, 
@@ -3743,9 +3795,12 @@
     div[aria-label="Реклама"], 
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
     div[class*="sidebar"] > .direct-snippet, 
-    div[class*="sport-advert_type_"]:empty, 
     script[data-message*="/turbo"] ~ * [class^="loader"][class*="__loader"] {
         display: none !important
+    }
+    .mg-page-layout-item div[class^="sport-"], 
+    .monetization-group > .monetization-group__item {
+        height: auto !important
     }
     .serp-header {
         margin-top: 0 !important
@@ -3754,11 +3809,17 @@
     body[class*="logged "][class*=" b-page_"] .rows__row_last > [role="complementary"] {
         margin-top: auto !important
     }
+    .mg-page-layout-item div[class^="sport-"] div[class^="turbo-"] {
+        min-height: 0 !important
+    }
     .b-page {
         padding-top: 0 !important
     }
-    .mg-page-layout-item_pos_right div[class*="wrapper"] > div, 
-    div[class*="sport-advert"] {
+    .sport-event-layout-right-column__item > div {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important
+    }
+    .mg-page-layout-item_pos_right div[class*="wrapper"] > div {
         padding: 0 !important
     }
     .head-stripe {
