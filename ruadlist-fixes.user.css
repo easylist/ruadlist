@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200517.450
+@version 0.20200528.1728
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -60,6 +60,7 @@
   domain("drhdrezka.com"),
   domain("dugtor.org"),
   domain("dugtor.ru"),
+  domain("ezhdrezka.com"),
   domain("film-max.ru"),
   domain("film-ua.com"),
   domain("filmy-smotret.net"),
@@ -169,6 +170,7 @@
   domain("clubhdrezka.com"),
   domain("drhdrezka.com"),
   domain("epravda.com.ua"),
+  domain("ezhdrezka.com"),
   domain("fastpic.ru"),
   domain("film-max.ru"),
   domain("gecid.com"),
@@ -527,9 +529,11 @@
     }
 }
 
-@-moz-document domain("animebest.org") {
-    #menubar {
-        padding-top: 40px !important
+@-moz-document
+  domain("animebest.club"),
+  domain("animevost.club") {
+    #wr-bg {
+        padding-top: 60px !important
     }
 }
 
@@ -557,12 +561,6 @@
     }
     #wrapper {
         padding-top: 50px !important
-    }
-}
-
-@-moz-document domain("animevost.club") {
-    #wr-bg {
-        padding-top: 60px !important
     }
 }
 
@@ -772,6 +770,18 @@
     }
     body {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("bosch-home.ru") {
+    .cookielaw-modal-layer {
+        display: none !important
+    }
+    body.cookielaw-blur-background > * {
+        filter: none !important
+    }
+    html > head ~ body {
+        overflow-y: auto !important
     }
 }
 
@@ -1830,7 +1840,8 @@
 @-moz-document
   domain("hlamer.ru"),
   domain("zloekino.com"),
-  domain("zloekino.ru") {
+  domain("zloekino.ru"),
+  domain("zloekino.su") {
     body {
         background-color: #596c84 !important
     }
@@ -3090,9 +3101,9 @@
     }
 }
 
-@-moz-document domain("rufilmtv.org") {
-    #content:not(#id) {
-        padding-top: 0 !important
+@-moz-document domain("rufilmtv.pro") {
+    body > header {
+        margin-bottom: auto !important
     }
 }
 
@@ -3885,6 +3896,12 @@
 @-moz-document domain("zerofilm.ru") {
     .wrap-in {
         margin-top: 80px !important
+    }
+}
+
+@-moz-document domain("znak.com") {
+    .wrapper > header {
+        margin-top: 15px !important
     }
 }
 
