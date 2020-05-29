@@ -6264,6 +6264,7 @@ thg.ru#?#table:-abp-has(> tbody > tr > td > span:-abp-contains(/^реклама$
 nowa.cc#?#table:-abp-has(tbody > tr.alt1 > td:-abp-contains(Реклама))
 forum.superkot.com##table:first-child + .tablebg + .tablebg + .tablebg
 forum.superkot.com##table:first-child + .tablebg + .tablebg + br + .tablebg
+anchem.ru##table[align="center"][width="90%"] > tbody > tr > td[align="left"] + td[width="234"]
 sysadmins.ru##table[align="right"][valign="middle"] > tbody > tr > td[align="left"] ~ td
 comfysoft.ru##table[align][frame="rhs"][style]
 x360-club.org##table[background="themes/xbox/images/hhead.jpg"]
@@ -6298,6 +6299,9 @@ tushkan.club,tushkan.net##tbody > tr > td[style^="height: 39"]
 deti-obninsk.ru##tbody > tr > td[valign="top"][align="left"]
 goroskop.org##tbody > tr > td[width="100%"][valign="top"] + td
 crazyatomicgames.com,xxx-igra.com,yaldagames.com##tbody > tr > td[width="300"] ~ td[valign="top"] > noindex ~ noindex
+anchem.ru##tbody > tr > td[width="50%"][valign="top"] + td[width="120"][valign="top"]
+anchem.ru#?#tbody > tr:-abp-has(> td[valign="top"][width="130"] > font > [href="/advertising/"])
+anchem.ru#?#tbody > tr:-abp-has(> td[valign="top"][width="130"] > font > [href="/approach/"])
 omnibus.moy.su##tbody > tr[style="background-color: black"]
 tushkan.club##tbody > tr[style^="height: 39"]
 vz.ru##td + td ~ td > div > div:not(#top100counter):not(#toplinks):not(#widget-xdm-container):not(.author)
@@ -6355,6 +6359,7 @@ bigfangroup.org,freebfg.org#?#td[valign="top"][width="155"] > table:-abp-has(div
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to#?#td[valign="top"][width="80%"] > .pline:-abp-has(.genmed > b:-abp-contains(/Associate|Partner|Reklama/))
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to#?#td[valign="top"][width="80%"] > .pline:-abp-has(.genmed > b:-abp-contains(/Associate|Partner|Reklama/)) + br
 oru.ru##td[width="10"] + td[width="260"]:last-child
+anchem.ru##td[width="100%"][align="center"] > a[href] > img
 stulchik.net##td[width="120"][valign="top"] a[href][target="_blank"]
 izgr.ru##td[width="1260px"][align="center"] > table:nth-of-type(1)
 lada-granta.net,lkforum.ru##td[width="150"][align="right"][valign="top"]
@@ -6378,6 +6383,7 @@ unibytes.com##td[width="33%"]
 liveday.ru##td[width="367"] > noindex + table[width="367"]
 forum.zarulem.ws##td[width="469"][align="center"][height="70"]
 cool-archive.ru##td[width="556"] > :not(#dle-content)
+anchem.ru##td[width="600"] + td[width="250"] > center > a[href] > img
 forum.zarulem.ws##td[width="600"][align="center"][height="80"]
 flylady.ru##td[width="738"] noindex
 oplati.ru##td[width="90"]
