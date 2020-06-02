@@ -10,7 +10,8 @@
 !
 %include advblock.txt%
 %include css-fixes-experimental.txt%
-%include https://easylist-downloads.adblockplus.org/antiadblockfilters.txt%
+! --- Adblock Warning Removal List ---
+%include easylistcombinations:antiadblockfilters.txt%
 ! --- uBO scriptlets injection rules & other ---
 *$script,redirect-rule=noopjs,domain=otzovik.com
 *$xmlhttprequest,redirect-rule=nooptext,domain=otzovik.com
