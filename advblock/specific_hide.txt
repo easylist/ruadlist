@@ -4172,7 +4172,7 @@ online.ua##[class*="reklama"]
 yapx.ru##[class*="revenue-block"]
 gubkinskiy.com,torrent-baza.com##[class*="rkl"]
 sexoporno.su##[class*="sam"][class*="pro"]
-sdamgia.ru##[class*="search"] ~ .login ~ *
+sdamgia.ru##[class*="search"] ~ div[width="100%"] ~ *
 erofishki.cc,fishki.net#?#[class*="side"][class*="right"] *:-abp-has(> [href*="utm_campai"])
 sport-express.ru##[class*="sidebar"] div[align="center"][style^="min-height"]
 hwp.ru##[class*="tbann"]
@@ -4219,6 +4219,7 @@ guitarplayer.ru##[class^="windowbg"] > noindex
 sports.kz##[class^="xbet"]
 tests24.ru##[class^="yap-"] *
 ficbook.net##[data-ab-test-id]
+sdamgia.ru##[data-ad-client]
 ps4.in.ua##[data-ad-slot]
 vz.ru#?#[data-ad-slot]:-abp-contains()
 vse42.ru##[data-adplace-inited]
@@ -4364,6 +4365,7 @@ pcportal.org##[style*="width:336px;height:280px;display:inline-block"]
 pcportal.org##[style*="width:728px;height:90px;display:inline-block"]
 4pda.ru#?#[style=";background-image:none!important;background-color:transparent!important"] [style=";background-image:none!important;background-color:transparent!important"] > *:-abp-has(a[href][target="_blank"][style="display:none!important"])
 politexpert.net##[style="display: block !important"]
+sdamgia.ru##[style="display:inline-block;width:728px;height:90px"]
 molbuk.ua##[style^="height: 200px; left"][style*="position: absolute"]
 radiodacha.ru##[summary="content_table"] > tbody > tr > td[height="90"]
 cdmail.ru,izcity.com##[title*="быстрый браузер!"] > img
@@ -5259,7 +5261,7 @@ om1.ru##body div[class*="-branding"]
 all-tor.net,anti-block.org,big-tor.org,bit-tor.org,cool-tor.org,fast-bit.org,fast-tor.net,film-tor.org,free-ru.org,free-rutor.org,freedom-tor.org,hd-bit.org,kino-tor.org,mega-tor.org,mirror-rutor.org,multi-tor.org,new-ru.org,new-tor.org,no-block.org,open-tor.org,proxy-rutor.org,ru-bit.com,ru-free-tor.org,ru-tor.net,rus-tor.com,rutor.info,rutor.is,super-tor.net,top-tor.org,tor-bit.net,tor-ru.net,tor-ru.org,tor-unblock.org,vip-tor.org,x-bit.net,x-tor.org,zerkalo-rutor.org##body object
 windowsobraz.com##body.up > .wrapper > header
 prodota.ru##body:not([class*="ipsApp"]):not([data-role="externalEmbed"]) > :not(.main):not(iframe)
-sdamgia.ru##body:not([style]) > .warper > .con_warper > div:not([class="content"])
+sdamgia.ru##body:not([style]) > .warper > .header ~ div[class] > div:not([class="content"])
 newstube.ru##body[data-location] > div[id]:not([class]):not([style]):not(#wrapper)
 echo.msk.ru##br ~ [style="height:400px; width:240px;"]
 flamp.ru##cat-banner
@@ -5935,6 +5937,7 @@ gazetavv.com##div[style="margin-top:5px;height:90px;"]
 glav.su##div[style="margin: 0px 5px;"] > [style="min-height: 125px;"]
 intv.com##div[style="margin: 10px; text-align: center;"]
 ilenta.com##div[style="margin:5px 0px; width:620px; height:350px"]
+sdamgia.ru##div[style="margin:auto"] > center > div[id][class]:empty
 baibako.tv##div[style="padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid #dfdfdf;"]
 ru-torrent.org##div[style="padding-right:10px;width:290px;float:left"] > .nav > center
 alltor.me##div[style="position:absolute; top:65px; left:520px;"]
@@ -5975,7 +5978,7 @@ appstudio.org##div[style^="width:100%; height:90px;"]
 inmoment.ru##div[style^="width:199px;height:299px;"]
 m24.ru##div[style^="width:240px;height:400px;"]
 m24.ru##div[style^="width:300px;height:600px;background:#f2f2f2;"]
-sdamgia.ru##div[width="100%"] ins ~ div
+sdamgia.ru##div[width="100%"] [data-ad-client] ~ div
 jpgazeta.ru##dvi
 imtw.ru##else > .noad
 botanam.net,gdzputina.me##embed
@@ -6144,7 +6147,7 @@ prankota.com,spyware-ru.com##img[width="728px"][height="90px"]
 sarafannoeradio.org##img[width="829"][height="90"]
 demiart.ru##img[width="900"][height="100"]
 post-tracker.ru##img[width^="8"][height^="3"][src$=".gif"]
-finget.ru,sdamgia.ru##ins
+finget.ru##ins
 vjazhi.ru##ins[style^="display:inline-table;"]
 fstreker.net##legend
 blokino.org#?#li:-abp-has(> .preview > [href*="advg.agency"])
