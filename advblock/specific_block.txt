@@ -83,7 +83,6 @@
 ||zdorovybudte.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ! ---
 $subdocument,domain=appmo.org|bookmo.org|eromo.org|hitmo.org|muzmob.org|nasimke.com|picsmo.org|vidmo.org|vpopke.org
-$subdocument,~third-party,domain=agorov.org|animevost.am|animevost.org|smotret-anime-365.ru
 $third-party,domain=money-pic.ru|picclick.ru|picclock.ru|picforall.ru
 $third-party,image,domain=gaykursk.ru|gaynsk.ru|novgay.ru
 $third-party,media,other,xmlhttprequest,domain=videoframe.at
@@ -371,6 +370,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /?ads_service=$domain=namba.kg|namba.kz
 /^https?://(?!image\.)([^.]+\.)+?fhserv\.ru/$domain=fishingsib.ru|hunting.ru
 /^https?://(?!media5\.cdnbase\.com|[^\s]+\.facebook\.net|apis\.google\.com|[^\s]+\.twitter\.com|mc\.yandex\.ru|cdn\.connect\.mail\.ru|connect\.mail\.ru|my2\.imgsmail\.ru)/$third-party,script,domain=fast-film.org|fast-film.ru|fast-fiml.ru|fast-torrent.club|fast-torrent.ru|fast-torrent.su|fasttorent.su|filmopotok.ru|filmpotok.ru|kinomaniac.ru|pickfilm.ru|veleto.ru
+/^https?://(?!play\.animegost\.org)/$subdocument,domain=agorov.org|animevost.am|animevost.org|smotret-anime-365.ru
 /^https?://(?!static\.)([^.]+\.)+?fastpic\.ru[:/]/$script,domain=fastpic.ru
 /^https?://(?!www\.)(?!forum)([^.]+\.)+?(qrz\.ru)[:/]/$script,domain=qrz.ru
 /^https?://(?!www\.)(?!static)([^.]+\.)+?(censor\.net\.ua)[:/]/$script,domain=censor.net.ua
