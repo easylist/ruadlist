@@ -4173,7 +4173,6 @@ online.ua##[class*="reklama"]
 yapx.ru##[class*="revenue-block"]
 gubkinskiy.com,torrent-baza.com##[class*="rkl"]
 sexoporno.su##[class*="sam"][class*="pro"]
-sdamgia.ru##[class*="search"] ~ div[width="100%"] ~ *
 erofishki.cc,fishki.net#?#[class*="side"][class*="right"] *:-abp-has(> [href*="utm_campai"])
 sport-express.ru##[class*="sidebar"] div[align="center"][style^="min-height"]
 hwp.ru##[class*="tbann"]
@@ -4220,7 +4219,6 @@ guitarplayer.ru##[class^="windowbg"] > noindex
 sports.kz##[class^="xbet"]
 tests24.ru##[class^="yap-"] *
 ficbook.net##[data-ab-test-id]
-sdamgia.ru##[data-ad-client]
 ps4.in.ua##[data-ad-slot]
 vz.ru#?#[data-ad-slot]:-abp-contains()
 vse42.ru##[data-adplace-inited]
@@ -5261,7 +5259,6 @@ om1.ru##body div[class*="-branding"]
 all-tor.net,anti-block.org,big-tor.org,bit-tor.org,cool-tor.org,fast-bit.org,fast-tor.net,film-tor.org,free-ru.org,free-rutor.org,freedom-tor.org,hd-bit.org,kino-tor.org,mega-tor.org,mirror-rutor.org,multi-tor.org,new-ru.org,new-tor.org,no-block.org,open-tor.org,proxy-rutor.org,ru-bit.com,ru-free-tor.org,ru-tor.net,rus-tor.com,rutor.info,rutor.is,super-tor.net,top-tor.org,tor-bit.net,tor-ru.net,tor-ru.org,tor-unblock.org,vip-tor.org,x-bit.net,x-tor.org,zerkalo-rutor.org##body object
 windowsobraz.com##body.up > .wrapper > header
 prodota.ru##body:not([class*="ipsApp"]):not([data-role="externalEmbed"]) > :not(.main):not(iframe)
-sdamgia.ru##body:not([style]) > .warper > .header ~ div[class] > div:not([class="content"])
 newstube.ru##body[data-location] > div[id]:not([class]):not([style]):not(#wrapper)
 echo.msk.ru##br ~ [style="height:400px; width:240px;"]
 flamp.ru##cat-banner
@@ -5305,6 +5302,7 @@ echo.msk.ru##div > [media] ~ div[id][class] ~ div[id]:not([class]):last-child
 mail.google.com##div.ae5
 minfin.com.ua##div.au-administration-warning
 mport.ua##div.b-widgets
+sdamgia.ru##div.header + div[class] > div:not([class="content"])
 nashaplaneta.net##div.hide.margin32 > .ttle
 nashaplaneta.net##div.hide.margin32 > .ttle ~ *
 redfm.ru#?#div.news.grid_16 > h3:-abp-has(span:-abp-contains(Реклама))
@@ -5978,7 +5976,7 @@ appstudio.org##div[style^="width:100%; height:90px;"]
 inmoment.ru##div[style^="width:199px;height:299px;"]
 m24.ru##div[style^="width:240px;height:400px;"]
 m24.ru##div[style^="width:300px;height:600px;background:#f2f2f2;"]
-sdamgia.ru##div[width="100%"] [data-ad-client] ~ div
+sdamgia.ru##div[width="100%"] [class]:not(div)[style*="display:"] ~ div
 jpgazeta.ru##dvi
 imtw.ru##else > .noad
 botanam.net,gdzputina.me##embed
@@ -5990,6 +5988,7 @@ povar.co##figure[id^="attachment"]
 forum.cxem.net#?#form > article[id^="elComment_"]:-abp-has(strong[itemprop="name"] > a[title="Перейти в профиль Adver"])
 yap.ru,yaplakal.com#?#form > table[id^="p_row_"]:nth-of-type(2):-abp-has(*:-abp-contains(Yap))
 leonkrevs.ucoz.ru##form[action*="wmcasher.ru"]
+sdamgia.ru##form[class*="left_column"] ~ br ~ *
 megaimg.ru##form[name="show_image"] > center
 argumenti.ru#?#h2.namerub_new:-abp-contains(/реклама/i)
 dokumental.ru,infox.ru,radiorecord.fm,ria-m.tv#?#h2:-abp-contains(/^реклама/i)
