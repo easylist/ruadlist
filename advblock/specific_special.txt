@@ -396,7 +396,7 @@ mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-
 pets.mail.ru##[data-name="bottom ad"]
 pets.mail.ru##[data-name="top ad"]
 tv.mail.ru##[data-rb]
-minigames.mail.ru,okminigames.mail.ru##[href^="https://minigames.imgsmail.ru/static/css/social-likes."] ~ div[class][style="display: block;"]
+minigames.mail.ru,okminigames.mail.ru#?#[href^="https://minigames.imgsmail.ru/static/css/social-likes."] ~ div[class]:-abp-has([href*="/info/adblock"])
 tv.mail.ru##div[class][id^="mailru"]
 pulse.mail.ru#?#div[class^="pl_"]:-abp-has(> * > [href*="t.mail.ru/redir"])
 minigames.mail.ru##div[id^="slot"][id*="sitezone"]
