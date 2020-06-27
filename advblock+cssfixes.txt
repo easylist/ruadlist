@@ -279,7 +279,7 @@ my.mail.ru##+js(set-constant, Object.prototype.runMimic, noopFunc)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.show_me_ads, undefined)
 mail.ru##+js(setTimeout-defuser, advBlock)
 mail.ru,sportmail.ru##+js(setTimeout-defuser, rbParams)
-mail.ru,sportmail.ru#?#.article__item > *:-abp-contains(/^Вам может быть интересно:$|^И не пропусти интересное видео:$|^И не пропусти ролик:$|^Смотрите наши видео:$|видео ниже:/)
+mail.ru,sportmail.ru#?#.article__item > *:-abp-contains(/^Вам может быть интересно:$|^И не пропусти интересное видео:$|^И не пропусти ролик:$|^И не пропусти наш ролик:$|^Смотрите наши видео:$|видео ниже:/)
 mail.ru,~player-smotri.mail.ru,~smotri.mail.ru,sportmail.ru##.article__item_source_smotri
 mail.ru,sportmail.ru##.article__item_source_viqeo ~ .article__item_source_viqeo
 mail.ru,sportmail.ru##.article__item_source_viqeo:has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
