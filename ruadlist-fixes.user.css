@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200615.541
+@version 0.20200628.2135
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -60,6 +60,7 @@
   domain("drhdrezka.com"),
   domain("dugtor.org"),
   domain("dugtor.ru"),
+  domain("ehdrezka.com"),
   domain("ezhdrezka.com"),
   domain("film-max.ru"),
   domain("film-ua.com"),
@@ -71,9 +72,9 @@
   domain("hd720.biz"),
   domain("hdkinozor.ru"),
   domain("hdrezka-ag.com"),
-  domain("hdrezka-online.me"),
   domain("hdrezka.buzz"),
   domain("hdrezka.city"),
+  domain("hdrezka.club"),
   domain("hdrezka.co"),
   domain("hdrezka.gift"),
   domain("hdrezka.ink"),
@@ -95,8 +96,11 @@
   domain("hdrezka.win"),
   domain("hdrezka1.site"),
   domain("hdrezkablog.com"),
+  domain("hdrezkaweb.com"),
+  domain("hdrezkayou.com"),
   domain("ikinohd.club"),
   domain("ikinohd.com"),
+  domain("instahdrezka.com"),
   domain("investxp.ru"),
   domain("ixbt.com"),
   domain("jetsetter.ua"),
@@ -116,6 +120,7 @@
   domain("lotzon.co"),
   domain("metahdrezka.com"),
   domain("moskva.fm"),
+  domain("mrhdrezka.com"),
   domain("mrutor.org"),
   domain("my-tfile.org"),
   domain("myhdrezka.com"),
@@ -126,6 +131,7 @@
   domain("nnmclub.ro"),
   domain("nnmclub.to"),
   domain("nuhdrezka.com"),
+  domain("nukinopoisk.com"),
   domain("ostfilm.tv"),
   domain("pure-t.ru"),
   domain("rehdrezka.com"),
@@ -145,6 +151,7 @@
   domain("the-rutor.org"),
   domain("thehdrezka.com"),
   domain("torentor.co"),
+  domain("trupornolabs.org"),
   domain("tryhdrezka.com"),
   domain("tvhdrezka.com"),
   domain("uphdrezka.com"),
@@ -153,6 +160,8 @@
   domain("virusinfo.info"),
   domain("vse-sezony.cc"),
   domain("wikianime.tv"),
+  domain("xxxadulttorrent.org"),
+  domain("you-anime.ru"),
   domain("youhdrezka.com"),
   domain("zombie-film.club"),
   domain("zona-film.com") {
@@ -170,17 +179,17 @@
   domain("betahdrezka.com"),
   domain("clubhdrezka.com"),
   domain("drhdrezka.com"),
+  domain("ehdrezka.com"),
   domain("epravda.com.ua"),
   domain("ezhdrezka.com"),
-  domain("fastpic.ru"),
   domain("film-max.ru"),
   domain("gecid.com"),
   domain("gethdrezka.com"),
   domain("hd720.biz"),
   domain("hdrezka-ag.com"),
-  domain("hdrezka-online.me"),
   domain("hdrezka.buzz"),
   domain("hdrezka.city"),
+  domain("hdrezka.club"),
   domain("hdrezka.gift"),
   domain("hdrezka.ink"),
   domain("hdrezka.link"),
@@ -198,11 +207,14 @@
   domain("hdrezka.website"),
   domain("hdrezka.win"),
   domain("hdrezkablog.com"),
+  domain("hdrezkaweb.com"),
+  domain("hdrezkayou.com"),
+  domain("instahdrezka.com"),
   domain("ixbt.com"),
   domain("justhdrezka.com"),
   domain("kino-full.ru"),
   domain("kinobar.cc"),
-  domain("kinotochka.club"),
+  domain("kinotochka.co"),
   domain("kinotochka.me"),
   domain("ko.com.ua"),
   domain("kv.by"),
@@ -213,6 +225,7 @@
   domain("mc.today"),
   domain("metahdrezka.com"),
   domain("mirkino.club"),
+  domain("mrhdrezka.com"),
   domain("myhdrezka.com"),
   domain("myshows.me"),
   domain("newstudio.tv"),
@@ -222,6 +235,7 @@
   domain("nnmclub.to"),
   domain("nootropos.ru"),
   domain("nuhdrezka.com"),
+  domain("nukinopoisk.com"),
   domain("oblozhki.net"),
   domain("oper.ru"),
   domain("otxataba.net"),
@@ -376,6 +390,7 @@
   domain("agorov.org"),
   domain("animevost.am"),
   domain("animevost.org"),
+  domain("animevost.site"),
   domain("smotret-anime-365.ru") {
     div[class^="headbg"] {
         background-image: none !important;
@@ -569,6 +584,7 @@
 @-moz-document
   domain("anistar.org"),
   domain("anistar.pro"),
+  domain("anistar.world"),
   domain("anistar1.org"),
   domain("anistar10.org"),
   domain("anistar11.org"),
@@ -861,6 +877,21 @@
     }
 }
 
+@-moz-document
+  domain("cartoonka.art"),
+  domain("multmania.club"),
+  domain("tlumtluda.info") {
+    body {
+        background: black !important
+    }
+    div[style="clear:both;"] > div[class]:first-child {
+        margin-top: 0 !important
+    }
+    #wrap[class*="menu"] {
+        position: static !important
+    }
+}
+
 @-moz-document domain("casstudio.tv") {
     .footer {
         margin-bottom: 0 !important
@@ -1138,6 +1169,16 @@
     }
 }
 
+@-moz-document
+  domain("drlink.online"),
+  domain("picclick.ru"),
+  domain("picclock.ru"),
+  domain("picforall.ru") {
+    div[id^="pai_thumbz_"][id$="_side"] {
+        background: #363636 !important
+    }
+}
+
 @-moz-document domain("dtf.ru") {
     .igrozhur-promo-ref {
         padding: 0 !important;
@@ -1286,38 +1327,12 @@
 }
 
 @-moz-document domain("fastpic.ru") {
-    #foot-area {
-        background: none !important
-    }
-    html, html > body {
-        cursor: auto !important
-    }
-    #show-code-content {
-        left: calc(50% - 350px) !important;
-        padding: 15px !important;
-        width: 650px !important
-    }
-    #picContainer > [title="Нажмите для увеличения изображения"] > img {
-        margin-bottom: 0 !important
-    }
-    .pic-container > img {
-        margin-top: 0 !important
-    }
     #picContainer {
         margin-top: auto !important;
         margin-left: calc(50% - 320px) !important;
         padding: 0 !important;
         top: 0 !important;
         width: 620px !important
-    }
-    body > * {
-        pointer-events: auto !important
-    }
-    body {
-        pointer-events: none !important
-    }
-    #bfooter-container {
-        top: 20px !important
     }
 }
 
@@ -2154,7 +2169,7 @@
 }
 
 @-moz-document
-  domain("kinotochka.club"),
+  domain("kinotochka.co"),
   domain("kinotochka.me") {
     .center-box2 {
         margin-top: 0 !important
@@ -2310,6 +2325,7 @@
 
 @-moz-document
   domain("lostfilm.info"),
+  domain("lostfilm.run"),
   domain("lostfilm.tv"),
   domain("lostfilm.tw") {
     body {
@@ -2319,6 +2335,7 @@
 }
 
 @-moz-document
+  domain("lostfilm.run"),
   domain("lostfilm.tv"),
   domain("lostfilm.tw") {
     .footer {
@@ -2357,8 +2374,9 @@
         border-left-color: rgb(0, 95, 249) !important;
         box-shadow: rgb(0, 95, 249) 0 0 0 10px inset !important
     }
-    #bubble-home, body > .grid .grid__rcol > .games, body > .grid .news-item_tgb, 
-    body > .grid .rectangle-banner, 
+    #bubble-home, body > .grid .grid__rcol > .games, 
+    body > .grid .i-pull-left.coronavirus > .wrapper > .footer, 
+    body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .i-clearfix.feed-generic__container, 
     body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class], 
@@ -2368,6 +2386,9 @@
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body > div > .pulse {
         display: none !important
+    }
+    body > .grid .i-pull-left.coronavirus {
+        z-index: 999 !important
     }
 }
 
@@ -2489,20 +2510,6 @@
 @-moz-document domain("movieshok.ru") {
     .wrapp_content {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("multmania.club"),
-  domain("tlumtluda.info") {
-    body {
-        background: black !important
-    }
-    .allsearch, .menuposition {
-        margin-top: 0 !important
-    }
-    .menusection {
-        position: static !important
     }
 }
 
@@ -2837,15 +2844,6 @@
     }
 }
 
-@-moz-document
-  domain("picclick.ru"),
-  domain("picclock.ru"),
-  domain("picforall.ru") {
-    div[id^="pai_thumbz_"][id$="_side"] {
-        background: #363636 !important
-    }
-}
-
 @-moz-document domain("pikabu.ru") {
     .footer__inner {
         background-color: var(--color--app__bg) !important;
@@ -2975,9 +2973,11 @@
 }
 
 @-moz-document domain("pronpic.org") {
-    .content > div[id][style="display: block;"] {
-        position: fixed !important;
-        transform: scale(0) !important
+    div[style="color:red;font-size:25px;"],  .adblock_loock {
+        display: none !important
+    }
+    #vO5STmSLgNAkebzSluI8coxpDgsG97g {
+        height: 1px !important
     }
 }
 
@@ -3038,12 +3038,16 @@
 }
 
 @-moz-document domain("razlozhi.ru") {
+    div[data-id][data-size] ~ div[data-size]:not([style^="background-image:"]) {
+        margin-left: 0 !important
+    }
     html > head ~ body {
         width: 100% !important
     }
-    div[data-id][data-size] ~ div:not([style]) > div[class]:first-child, 
+    body > div[class][style^="background: url"][style*="bgpattern."] > div > div[style^="width:"][style*="height:"], 
+    div[data-id][data-size] ~ div[data-size]:not([style^="background-image:"]) > div[class]:first-child, 
     html > body > div[class], 
-    html > body > script ~ div[class]:nth-child(-n+5) > div[class]:first-child {
+    html > body > div[class]:nth-child(-n+5) > div[class]:first-child {
         width: auto !important
     }
 }
@@ -3160,25 +3164,15 @@
 }
 
 @-moz-document
-  domain("rutracker.appspot.com"),
   domain("rutracker.net"),
   domain("rutracker.nl"),
-  domain("rutracker.org"),
-  domain("zerkalo-torrent.tk") {
-    #main-nav .floatR {
-        display: none !important
-    }
-}
-
-@-moz-document
-  domain("rutracker.appspot.com"),
-  domain("rutracker.net"),
-  domain("rutracker.nl"),
-  domain("rutracker.org"),
-  domain("zerkalo-torrent.tk") {
+  domain("rutracker.org") {
     [class^="internal-promo-"]:not(#id) {
         color: #006699 !important;
         font-weight: 100 !important
+    }
+    #main-nav .floatR {
+        display: none !important
     }
 }
 
@@ -3401,6 +3395,7 @@
         background-color: #dbdbdb !important
     }
     #body_box_label #wrapper > #content > div:empty, 
+    #body_box_label #wrapper > #content ~ :not(#footer), 
     #body_box_label #wrapper > #footer > div[id]:not(.wrapper), 
     #body_box_label > [class]:not([title]) > style + [id]:not([class]):not(#wrapper), 
     body:not(#body_box_label) > [id*="footer"]:not(#footer):not(#footer_morecopyright), 
@@ -3597,6 +3592,19 @@
         color: black !important;
         font-weight: 100 !important;
         font-size: 8px !important
+    }
+}
+
+@-moz-document domain("uteka.ua") {
+    .fancybox-lock .fancybox-overlay {
+        display: none !important
+    }
+    .fancybox-lock body {
+        overflow: auto !important
+    }
+    #page {
+        webkit-filter:none !important;
+        filter: none !important
     }
 }
 
@@ -3850,7 +3858,7 @@
     .turbo-advert__loader, 
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
-    body[class*="logged "][class*=" b-page_"] .direct-desktop_white, 
+    body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) > div[class] > div:not([class]), 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Реклама"], 
@@ -3862,6 +3870,9 @@
     .mg-page-layout-item div[class^="sport-"], 
     .monetization-group > .monetization-group__item {
         height: auto !important
+    }
+    body[class*="b-page"] .main.widgets :not(div) > :not(div) > :not(div) > div[class] > div[class]:not([class*="widget"]) {
+        height: unset !important
     }
     .serp-header {
         margin-top: 0 !important
@@ -3889,6 +3900,15 @@
     }
     .map-container ~ #sidebar-container > .sidebar-view ~ .collapse-button {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("yandex.ru") {
+    .full-root > .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div:first-child {
+        display: none !important
+    }
+    .full-root > .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div {
+        min-height: 0 !important
     }
 }
 
