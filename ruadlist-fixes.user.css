@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200628.2135
+@version 0.20200628.2318
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -2232,12 +2232,12 @@
 }
 
 @-moz-document domain("kriminal.net.ua") {
+    #popup-manager.popup-show + #layout {
+        -webkit-filter: none !important;
+        filter: none !important
+    }
     #popup-manager.popup-show {
         display: none !important
-    }
-    #popup-manager.popup-show + #layout {
-        webkit-filter: none !important;
-        filter: none !important
     }
 }
 
@@ -3596,15 +3596,15 @@
 }
 
 @-moz-document domain("uteka.ua") {
+    #page {
+        -webkit-filter:none !important;
+        filter: none !important
+    }
     .fancybox-lock .fancybox-overlay {
         display: none !important
     }
     .fancybox-lock body {
         overflow: auto !important
-    }
-    #page {
-        webkit-filter:none !important;
-        filter: none !important
     }
 }
 
