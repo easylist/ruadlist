@@ -20,6 +20,14 @@
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
+/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.by
+/^https?://www\.gismeteo\.by/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.by
+/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.kz
+/^https?://www\.gismeteo\.kz/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.kz
+/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,badfilter,domain=gismeteo.md
+/^https?://www\.gismeteo\.md/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.md
+/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|inform-service\/|maps\/|mq\/articles\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
+/^https?://www\.gismeteo\.ru/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 08sportbar.com,777sportba.com,777streams.pro,7streams.pro,assiatv.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,live-stream365.com,mc.today,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport7.biz,sportbar.biz,sportbox.ws,stream365.pro,vip7stream.pw##+js(window.open-defuser)
@@ -107,10 +115,8 @@ gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 gazeta.ru##+js(set-constant, isAdFree, noopFunc)
 gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,gdzputina.ru,megaresheba.com,megaresheba.ru,resheba.me,spishi.fun,zoobrilka.net##+js(set-constant, app.book.external, null)
 gidonline.eu,kinogo.eu##+js(abort-on-property-read, target_script)
-gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.AdvManagerLoader)
-gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.Rtb)
 gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
-gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.yaads)
+gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(cookie-remover, /^ab_audience_/)
 gismeteo.ua##^script:has-text("zmctrack")
 hdkinoteatr.com##+js(no-setTimeout-if, getCookie, 3000)
 helpsetup.ru##+js(abort-on-property-write, adBlockFunction)
