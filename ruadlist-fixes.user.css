@@ -1,14 +1,18 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200629.1159
+@version 0.20200711.254
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
 
-@-moz-document domain("1informer.com") {
-    body {
-        cursor: auto !important
+@-moz-document
+  domain("1informer.com"),
+  domain("fainaidea.com"),
+  domain("housechief.ru"),
+  domain("root-nation.com") {
+    html > body {
+        cursor: default !important
     }
 }
 
@@ -28,6 +32,12 @@
         padding-top: 0 !important
     }
     .header {
+        top: 0 !important
+    }
+}
+
+@-moz-document domain("1plus1.video") {
+    body.show-cookies ._opo_-header {
         top: 0 !important
     }
 }
@@ -68,7 +78,7 @@
   domain("gethdrezka.com"),
   domain("gidonline.io"),
   domain("gordonua.com"),
-  domain("gtorrent.ru"),
+  domain("gtorrent.org"),
   domain("hd720.biz"),
   domain("hdkinozor.ru"),
   domain("hdrezka-ag.com"),
@@ -250,7 +260,6 @@
   domain("simhost.org"),
   domain("smotri.com"),
   domain("stopgame.ru"),
-  domain("torrentom.com"),
   domain("tryhdrezka.com"),
   domain("tvhdrezka.com"),
   domain("uateam.tv"),
@@ -823,6 +832,12 @@
     }
 }
 
+@-moz-document domain("btu.org.ua") {
+    .alltop1 {
+        margin-bottom: 30px !important
+    }
+}
+
 @-moz-document domain("budport.com.ua") {
     html > body > * {
         pointer-events: auto !important
@@ -944,7 +959,7 @@
 @-moz-document
   domain("cinema-hd.ru"),
   domain("filmshd.vip"),
-  domain("kinomax.pro"),
+  domain("kinomaxfilm.ru"),
   domain("newseries.club") {
     .wrap {
         padding-top: 0 !important
@@ -1317,22 +1332,6 @@
 @-moz-document domain("eva.ru") {
     body > .eva {
         margin-top: 50px !important
-    }
-}
-
-@-moz-document domain("fainaidea.com") {
-    html > body {
-        cursor: default !important
-    }
-}
-
-@-moz-document domain("fastpic.ru") {
-    #picContainer {
-        margin-top: auto !important;
-        margin-left: calc(50% - 320px) !important;
-        padding: 0 !important;
-        top: 0 !important;
-        width: 620px !important
     }
 }
 
@@ -1877,6 +1876,13 @@
     }
 }
 
+@-moz-document domain("housechief.ru") {
+    .td-main-content-wrap, 
+    .tdc-content-wrap > div[class*="vc_custom_"]:first-child {
+        margin-top: auto !important
+    }
+}
+
 @-moz-document domain("houzz.ru") {
     .modal.in.modal-vc {
         display: none !important
@@ -1961,6 +1967,12 @@
 @-moz-document domain("instagram.com") {
     body[style*="overflow: hidden;"] {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("intermedia.ru") {
+    html > body {
+        padding-top: unset !important
     }
 }
 
@@ -2715,6 +2727,12 @@
     }
 }
 
+@-moz-document domain("ogorod.ru") {
+    div[class="global-top-menus article_menu_type"] {
+        margin-top: auto !important
+    }
+}
+
 @-moz-document
   domain("oldseedoff.zannn.top"),
   domain("seedoff.innal.top"),
@@ -2737,10 +2755,19 @@
     }
 }
 
+@-moz-document domain("online.animedia.pro") {
+    .right-sidebar {
+        height: auto !important
+    }
+    .content > .media {
+        padding-bottom: unset !important
+    }
+}
+
 @-moz-document
-  domain("online.animedia.tv"),
+  domain("online.animedia.pro"),
   domain("tt.animedia.tv") {
-    div[class^="promo_"][class*="wrapper"] {
+    div[class^="promo"][class*="wrapper"] {
         display: none !important
     }
     .main-container {
@@ -3028,16 +3055,15 @@
 }
 
 @-moz-document domain("razlozhi.ru") {
-    div[data-id][data-size] ~ div[data-size]:not([style^="background-image:"]) {
+    div[data-id][data-size] ~ div:not([style^="background-image:"]):not(:last-child) {
         margin-left: 0 !important
     }
     html > head ~ body {
         width: 100% !important
     }
-    body > div[class][style^="background: url"][style*="bgpattern."] > div > div[style^="width:"][style*="height:"], 
-    div[data-id][data-size] ~ div[data-size]:not([style^="background-image:"]) > div[class]:first-child, 
-    html > body > div[class], 
-    html > body > div[class]:nth-child(-n+5) > div[class]:first-child {
+    body div[class][style^="background: url"][style*="bgpattern."][style*="width:"][style*="height:"], 
+    div[data-id][data-size] ~ div:not([style^="background-image:"]) > div[class]:first-child, 
+    html > body > div[class] {
         width: auto !important
     }
 }
@@ -3100,9 +3126,6 @@
 }
 
 @-moz-document domain("root-nation.com") {
-    body {
-        cursor: auto !important
-    }
     .backstretch {
         display: none !important
     }
@@ -3438,6 +3461,7 @@
 
 @-moz-document
   domain("the-village.com.ua"),
+  domain("the-village.me"),
   domain("the-village.ru") {
     .page-content {
         background-color: inherit !important
@@ -3477,15 +3501,6 @@
 @-moz-document domain("torrentinka.me") {
     .dwrp {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("torrentom.com") {
-    #footer_reklama > *, body > :not(#footer_reklama) {
-        pointer-events: auto !important
-    }
-    #footer_reklama, body {
-        pointer-events: none !important
     }
 }
 
@@ -3705,6 +3720,12 @@
     }
 }
 
+@-moz-document domain("windowsobraz.com") {
+    .timer-block ~ .wrapper > #example {
+        display: block !important
+    }
+}
+
 @-moz-document domain("wotspeak.ru") {
     #popup-1 {
         display: none !important
@@ -3779,7 +3800,8 @@
     }
     .app__content div[style="min-height:250px"], 
     .underheader-superbanner-wrapper, 
-    div[class*="kinopoisk-media-container_pending"] {
+    div[class*="kinopoisk-media-container_pending"], 
+    div[class^="styles_rootPending__"] {
         min-height: 0 !important
     }
     .filmsListNew .info {
@@ -3843,6 +3865,7 @@
     }
     .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
+    .map-copyrights ~ .sidebar-container .scroll__content .route-panel-form-view__content > div > div[class][style^="border-top"], 
     .mg-page-layout-item_pos_right div[class*="wrapper"] > div[class]:empty, 
     .mini-suggest__item_subtype_ad, .serp-list > .incut > .direct, 
     .turbo-advert__loader, 
@@ -3887,9 +3910,6 @@
     .head-stripe {
         position: fixed !important;
         transform: scale(0) !important
-    }
-    .map-container ~ #sidebar-container > .sidebar-view ~ .collapse-button {
-        top: 0 !important
     }
 }
 
