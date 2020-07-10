@@ -115,6 +115,8 @@ gismeteo.kz##div[class*="tizers_"]
 @@||yastatic.net/pcode/adfox/loader.js|$domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
 !
 ! Ловушка для обфусцированных запросов, если исключения обошли
+/^https?://www\.gismeteo\.ru\/maps\/(?!radar\/settings\/)/$xmlhttprequest,domain=www.gismeteo.ru
+/^https?://www\.gismeteo\.by\/maps\/(?!radar\/settings\/)/$xmlhttprequest,domain=www.gismeteo.by
 /^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,domain=beta.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,domain=beta.gismeteo.ru
 /^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.by
@@ -137,7 +139,7 @@ gismeteo.ru##.widget-container
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md##.x250imp
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##.xby400
 beta.gismeteo.ru,gismeteo.ua,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##[class^="media_"]:not(.media_with_map)
-gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md#?#body[class*="-"] div:-abp-has(> div > div > div[id] ~ span > script:-abp-contains(atob))
+gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md#?#body[class*="-"] div:-abp-has(> div > div > div[id] ~ span script:-abp-contains(atob))
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru#?#div:-abp-has(> div > div[data-type="default"] > div a[href*="/ref/?url="])
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru#?#div:-abp-has(> div > div[data-type="rbc"])
 gismeteo.ru##section > .feed-bg
