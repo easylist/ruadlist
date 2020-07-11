@@ -124,7 +124,7 @@ sport.ua###bann-240
 beholder.pro,cafe.imgradio.ru,chilla.imgradio.ru,cripo.com.ua,deti.imgradio.ru,etver.ru,fergananews.com,fresh.imgradio.ru,funk.imgradio.ru,infobank.by,live-gol.net,liveangarsk.ru,lm-games.com,ping-admin.ru,premiership.ru,qupier.org,radio.megaradio.pro,radio.ruhit.pro,readbookz.com,retrohit.pro,rurock.imgradio.ru,urod.ru,voxpopuli.kz,xtreme.ws###banner
 nsportal.ru###banner-ap
 gamexp.ru###banner-slider
-euro-football.ru,get-tune.net,mirmmo.ru,oneprogs.ru###banner-top
+get-tune.net,mirmmo.ru,oneprogs.ru###banner-top
 pn.com.ua###banner-top-stretching
 finance.ua###banner-zone-bottom
 finance.ua###banner-zone-content
@@ -783,6 +783,8 @@ torrent-filmi.net,torrent-filmi.xyz#?##right > .block:-abp-has(> .menu_title:-ab
 n71.ru###right > .nofloat
 sun-news.ru###right > .sideblock > :not(#vk_groups):not(.fb-page)
 torrentfilmi.co#?##right > [class*="block"]:-abp-has(> .rec)
+euro-football.ru###right > style:not([id]):not([class]) + .block > .block__title
+euro-football.ru###right > style:not([id]):not([class]) + .block > .block__title + table[width="100%"]
 allbesta.cc,allbesta.org###right noindex
 komplat.by###right-banner-container
 astromeridian.ru###right-column > noindex
@@ -1416,9 +1418,11 @@ espreso.tv##.articleContent > .recomendation_list + h2.block-title
 fb.ru##.article__annex
 tsargrad.tv##.article__banner
 segodnya.ua##.article__banner-container
+euro-football.ru##.article__content .source > a
 studopedia.net##.article__content > table[width="336"]
 vedomosti.ru##.article__metrics
 dnews.dn.ua##.article__partners
+euro-football.ru##.article__random
 eg.ru##.article_bn
 maanimo.com##.article_end_banner
 gomel.today#?#.article_left_block:-abp-has([id*="ScriptRoot"])
@@ -1681,7 +1685,6 @@ torrentiko.net##.bannerh
 micro-win.com##.bannerhead
 webmasters.ru##.bannerheader_header
 go-torrent.at.ua##.bannerin
-euro-football.ru##.bannerinner
 bvedomosti.ru##.banneritem
 ufamama.ru##.bannerline
 hctorpedo.ru##.bannermain
@@ -1781,6 +1784,7 @@ processer.media##.block-wrap-da
 zh24.com##.block.elite
 sotniktv.org##.block12 > a[target="_blank"]
 uniongang.net,uniongang.org#?#.block:-abp-has(> .block-title:-abp-contains(/Интересное|Наши друзья|Реклама|Сидбокс|MARKETGID/))
+euro-football.ru#?#.block:-abp-has(> .block__title ~ .block__content [data-relap-id])
 sunsurv.ru##.blockBottom
 sunsurv.ru##.blockLeft
 znaikak.ru##.blockLinks
@@ -1789,7 +1793,7 @@ sunsurv.ru##.blockRight
 politros.com##.blockScrollable
 aktobeinfo.kz##.block[id*="-banners-"]
 it-tehnik.ru##.block[id^="ai_"]
-euro-football.ru#?#.block__title:-abp-contains(Новости Партнёров)
+euro-football.ru#?#.block__title:-abp-contains(/новости партн/i)
 openssource.biz##.block_left
 chatadelic.net,db.chgk.info,dsvload.net,forzajuve.ru,gubkabob.net,podrobno.uz,prostomac.com,rap-text.ru,recensent.ru,seriatv.ru,volomy.ru##.block_links
 electrik.org##.block_r
@@ -1848,6 +1852,7 @@ forum.sibmama.info,forum.sibmama.ru##.bodyline > div[style*="height:90px"]
 tamboff.ru##.bodyline ~ td[style="width: 240px;vertical-align: top;"]
 46tv.ru##.bodywidthmin > div[class^="top"]
 factroom.ru##.boff
+euro-football.ru##.bonus
 footboom.com##.bonus-widget
 vklasse.online#?#.book-box:-abp-has(> [class*="banner"])
 etextlib.ru##.book_bl > div[style]:not([id]):not([class])
@@ -2035,6 +2040,7 @@ crashkino.net#?#.com_inform:-abp-has(> [class^="com_inform_title"]:-abp-contains
 politexpert.net##.comm-button
 news.tj##.comment-area .newsbox-outer-banner
 echo.msk.ru##.commentList ~ [id] > [class] > [id]
+euro-football.ru##.comment__body > [style*="background-color:"]
 profootball.ua##.comments ~ .anoserblock
 kirov.online##.comments ~ noindex
 24molnia.com##.comments-items
@@ -5071,7 +5077,7 @@ assessor.ru##a[href^="https://kontur.ru/extern"]
 itcrumbs.ru##a[href^="https://kwork.ru"]
 medved.us##a[href^="https://my.alfa-forex.ru/ru/registration/"]
 nashvancouver.com##a[href^="https://nashvancouver.com/linkout/"] > img[alt="tree"]
-inforeactor.ru,jpgazeta.ru,nation-news.ru,neva.today,nevnov.ru,newinform.com,peterburg2.ru,politexpert.net,rueconomics.ru,slovodel.com,tvtver.ru##a[href^="https://news.yandex.ru/index.html?from=rubric"]
+euro-football.ru,inforeactor.ru,jpgazeta.ru,nation-news.ru,neva.today,nevnov.ru,newinform.com,peterburg2.ru,politexpert.net,rueconomics.ru,slovodel.com,tvtver.ru##a[href^="https://news.yandex.ru/index.html?from=rubric"]
 oren.ru##a[href^="https://orenburg.metro-cc.ru/"]
 altai4u.com##a[href^="https://play.google.com/store/apps/details?id="]
 allboxing.ru,izvestia.ru,lifenews.ru,topwar.ru##a[href^="https://relap.io/"][data-ad-link]
@@ -5380,6 +5386,7 @@ koolinar.ru#?#div:-abp-has(> header ~ a[href][rel="sponsored"])
 rp5.am,rp5.by,rp5.co.uk,rp5.kz,rp5.lt,rp5.lv,rp5.md,rp5.ru,rp5.ua#?#div:-abp-has(> ins)
 draug.ru#?#div:-abp-has(> script:-abp-contains(snowsrc))
 football.kulichki.net#?#div:-abp-has(> table > tbody a[href*="kulichki.com/advert"])
+euro-football.ru##div:not([id]):not([class])[style] > div:not([id]):not([class])[style]
 tomat-pomidor.com##div:not([id]):not([class])[style^="min-height:"]
 vz.ru##div:not([id])[style*="margin"][style*="width: 240px"]
 darkmoney.at##div[align="center"] > a[href] > img[src*=".gif"]
@@ -6002,6 +6009,7 @@ au.ru##div[style="width:728px;height:90px;"]
 androeed.net,androeed.ru##div[style] > a[target="_blank"] > img
 center.bz##div[style] > center
 bless-news.com##div[style] > div[class*="Overlay"][id*="Overlay"]
+euro-football.ru##div[style] > div[style^="min-height:"]
 cqham.ru##div[style] > noindex a > img
 kirov-portal.ru#?#div[style]:-abp-has(> [id^="adfox_"])
 kirov-portal.ru#?#div[style]:-abp-has(> [id^="unit_"])
@@ -6045,6 +6053,8 @@ dokumental.ru,infox.ru,radiorecord.fm,ria-m.tv#?#h2:-abp-contains(/^реклам
 newstube.ru,socportal.info#?#h2:-abp-contains(Новости партнеров)
 apostrophe.ua,erofishki.cc,fishki.net,hvylya.net,i-news.kz,sharknews.ru,tochka.net#?#h3:-abp-contains(/^нов.+партн.+р.в$/i)
 5-tv.ru#?#h3:-abp-contains(/Новости Lentainform|Новости СМИ2|Новости Лентаинформ/)
+euro-football.ru#?#h3:-abp-contains(Делайте ставки на матч)
+euro-football.ru#?#h3:-abp-contains(Делайте ставки на матч) + table[width="100%"]
 fit4power.ru#?#h3:-abp-has(> span:-abp-contains(/реклама/i))
 putin-news.ru#?#h4:-abp-contains(Новости партнёров)
 bibe.ru#?#h4:-abp-contains(Реклама :)
