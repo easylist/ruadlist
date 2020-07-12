@@ -140,6 +140,7 @@ gismeteo.ru##.widget-container
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md##.x250imp
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##.xby400
 beta.gismeteo.ru,gismeteo.ua,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##[class^="media_"]:not(.media_with_map)
+gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##body > .media_top
 gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md#?#body[class*="-"] div:-abp-has(> div > div > div[id] ~ span script:-abp-contains(atob))
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru#?#div:-abp-has(> div > div[data-type="default"] > div a[href*="/ref/?url="])
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru#?#div:-abp-has(> div > div[data-type="rbc"])
@@ -742,10 +743,10 @@ utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
 ! RusTorka.com и зеркала
 rustorka.com,rustorka.innal.top,rustorka.naylo.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib###logo td > div[id]
 rustorka.com,rustorka.innal.top,rustorka.naylo.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib##.med.bordered.attach ~ table[width="100%"]
+/^https?://(?!rustorka\.)([^.]+\.)+?(naylo\.top)/$csp=sandbox allow-same-origin;
 rustorka.com,rustorka.innal.top,rustorka.naylo.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib##center > a[href]
 rustorka.com,rustorka.innal.top,rustorka.naylo.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib##noindex
 ||rustorka*/branding/$domain=innal.top|naylo.top|rustorka.com|rustorka.net|rustorkacom.lib
-/^https?://(?!rustorka\.)([^.]+\.)+?(naylo\.top)/$csp=sandbox allow-same-origin;
 !
 ! Sports.ru
 sports.ru,tribuna.com###branding-layout > a[href][target]
