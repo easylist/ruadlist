@@ -2,7 +2,6 @@
 """ FOP
     Filter Orderer and Preener
     Copyright (C) 2011 Michael
-    Adjusted for RU Adlist by Lain Inverse in 2013
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -17,7 +16,8 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.816
+VERSION = 3.916
+# Adjusted for RU Adlist by Lain Inverse in 2020
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -62,10 +62,11 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt", "antinuha.txt",
           "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
-KNOWNOPTIONS = ("empty", "collapse", "document", "elemhide", "font", "generichide", "genericblock",
-                "image", "important", "inline-script", "match-case", "media", "object", "object-subrequest",
-                "other", "ping", "popup", "script", "stylesheet", "subdocument", "badfilter",
-                "first-party", "third-party", "websocket", "xmlhttprequest")
+KNOWNOPTIONS = ("badfilter", "collapse", "document", "elemhide", "empty", "font",
+                "genericblock", "generichide", "image", "important", "inline-script",
+                "match-case", "media", "object", "object-subrequest", "other", "ping", "popup",
+                "script", "stylesheet", "subdocument",  "first-party", "third-party",
+                "websocket", "webrtc", "xmlhttprequest")
 # List of known key=value parameters (domain is not included)
 KNOWNPARAMETERS = ("csp", "rewrite", "redirect", "redirect-rule")
 
@@ -172,25 +173,30 @@ def fopsort (filename):
                 domains1 = re.search(DOMAINPATTERN, uncombinedFilters[i])
                 if i+1 < len(uncombinedFilters) and domains1:
                     domains2 = re.search(DOMAINPATTERN, uncombinedFilters[i+1])
-                if not domains1 or i+1 == len(uncombinedFilters) or not domains2 or len(domains1.group(1)) == 0 or len(domains2.group(1)) == 0:
+                    domain1str = domains1.group(1)
+                
+                if not domains1 or i+1 == len(uncombinedFilters) or not domains2 or len(domain1str) == 0 or len(domains2.group(1)) == 0:
                     # last filter or filter didn't match regex or no domains
                     combinedFilters.append(uncombinedFilters[i])
-                elif domains1.group(0).replace(domains1.group(1), domains2.group(1), 1) != domains2.group(0):
-                    # non-identical filters shouldn't be combined
-                    combinedFilters.append(uncombinedFilters[i])
-                elif re.sub(DOMAINPATTERN, "", uncombinedFilters[i]) == re.sub(DOMAINPATTERN, "", uncombinedFilters[i+1]):
-                    # identical filters. Try to combine them...
-                    newDomains = "{d1}{sep}{d2}".format(d1=domains1.group(1), sep=domainseparator, d2=domains2.group(1))
-                    newDomains = domainseparator.join(sorted(set(newDomains.split(domainseparator)), key = lambda domain: domain.strip("~")))
-                    if newDomains.count("~") > 0 and newDomains.count("~") != newDomains.count(domainseparator) + 1:
-                        # skip combining rules with both included and excluded domains. It can go wrong in many ways and is not worth the code needed to do it correctly
-                        combinedFilters.append(uncombinedFilters[i])
-                    else:
-                        domainssubstitute = domains1.group(0).replace(domains1.group(1), newDomains, 1)
-                        uncombinedFilters[i+1] = re.sub(DOMAINPATTERN, domainssubstitute, uncombinedFilters[i])
                 else:
-                    # non-identical filters shouldn't be combined
-                    combinedFilters.append(uncombinedFilters[i])
+                    domain2str = domains2.group(1)
+                    if domains1.group(0).replace(domain1str, domain2str, 1) != domains2.group(0):
+                        # non-identical filters shouldn't be combined
+                        combinedFilters.append(uncombinedFilters[i])
+                    elif re.sub(DOMAINPATTERN, "", uncombinedFilters[i]) == re.sub(DOMAINPATTERN, "", uncombinedFilters[i+1]):
+                        # identical filters. Try to combine them...
+                        newDomains = "{d1}{sep}{d2}".format(d1=domain1str, sep=domainseparator, d2=domain2str)
+                        newDomains = domainseparator.join(sorted(set(newDomains.split(domainseparator)), key = lambda domain: domain.strip("~")))
+                        if (domain1str.count("~") != domain1str.count(domainseparator) + 1) != (domain2str.count("~") != domain2str.count(domainseparator) + 1):
+                            # do not combine rules containing included domains with rules containing only excluded domains
+                            combinedFilters.append(uncombinedFilters[i])
+                        else:
+                            # either both contain one or more included domains, or both contain only excluded domains
+                            domainssubstitute = domains1.group(0).replace(domain1str, newDomains, 1)
+                            uncombinedFilters[i+1] = re.sub(DOMAINPATTERN, domainssubstitute, uncombinedFilters[i])
+                    else:
+                        # non-identical filters shouldn't be combined
+                        combinedFilters.append(uncombinedFilters[i])
             return combinedFilters
 
 
@@ -371,7 +377,11 @@ def commit (repository, basecommand, userchanges):
         print("\nNo changes have been recorded by the repository.")
         return
     print("\nThe following changes have been recorded by the repository:")
-    print(difference.decode("utf-8"))
+    try:
+        print(difference.decode("utf-8"))
+    except UnicodeEncodeError:
+        print("\nERROR: DIFF CONTAINED UNKNOWN CHARACTER(S). Showing unformatted diff instead:\n")
+        print(difference)
     try:
         # Persistently request a suitable comment
         while True:
@@ -411,15 +421,15 @@ def isglobalelement (domains):
 def removeunnecessarywildcards (filtertext, keepAsterisk):
     """ Where possible, remove unnecessary wildcards from the beginnings
     and ends of blocking filters."""
-    whitelist = False
+    allowlist = False
     hadStar = False
     if filtertext[0:2] == "@@":
-        whitelist = True
+        allowlist = True
         filtertext = filtertext[2:]
     while len(filtertext) > 1 and filtertext[0] == "*" and not filtertext[1] == "|" and not filtertext[1] == "!":
         filtertext = filtertext[1:]
         hadStar = True
-    while len(filtertext) > 1 and filtertext[-1] == "*" and not filtertext[-2] == "|":
+    while len(filtertext) > 1 and filtertext[-1] == "*" and not filtertext[-2] == "|" and not filtertext[-2] == " ":
         filtertext = filtertext[:-1]
         hadStar = True
     if hadStar and filtertext[0] == "/" and filtertext[-1] == "/":
@@ -428,7 +438,7 @@ def removeunnecessarywildcards (filtertext, keepAsterisk):
         filtertext = "*{filtertext}".format(filtertext = filtertext)
     if not keepAsterisk and filtertext == "*":
         filtertext = ""
-    if whitelist:
+    if allowlist:
         filtertext = "@@{filtertext}".format(filtertext = filtertext)
     return filtertext
 
