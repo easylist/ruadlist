@@ -15,6 +15,7 @@
 ! --- uBO scriptlets injection rules & other ---
 *$script,redirect-rule=noopjs,domain=otzovik.com
 *$xmlhttprequest,redirect-rule=nooptext,domain=otzovik.com
+dfiles.ru##+js(abort-on-property-read, ads_script)
 /^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
@@ -85,7 +86,7 @@ draug.ru##p:has-text(Для скачивания подождите отчет �
 draug.ru,vargr.ru##+js(abort-current-inline-script, Math.floor, AdSense)
 drive2.ru##+js(abort-on-property-read, Object.prototype.showBanner)
 drive2.ru##+js(abort-on-property-read, Object.prototype.YaadsBlockAdd)
-driveroff.net,radikal.ru,samlab.ws##+js(abort-on-property-read, ads_script)
+dfiles.ru,driveroff.net,radikal.ru,samlab.ws##+js(abort-on-property-read, ads_script)
 dtf.ru##+js(remove-attr, class, [data-igrozhur-promo])
 dtf.ru,tjournal.ru,vc.ru##+js(remove-attr, data-video-play-mode)
 eagleplatform.com##+js(set-constant, Object.prototype.options.autoplay, false)
