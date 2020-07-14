@@ -43,7 +43,7 @@
 24molnia.com,7days.ru,7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,inforeactor.ru,kp.ru,mashintop.ru,maxpark.com,nation-news.ru,news.ru,newsland.com,ogodom.ru,paperdoc.ru,pasmi.ru,politros.com,rueconomics.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 2gis.ru##div[style^="display:"][style*="flex;"][style*="height:"][style*="100%;"][style*="overflow:"][style*="hidden;"][style*="width:"] div[style^="position: absolute;"] div[class]:matches-css(background-color: rgb(255, 250, 235))
-3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,gorodrabot.ru,otzovik.com,sports.ru##+js(abort-on-property-read, Ya)
+3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,gorodrabot.ru,sports.ru##+js(abort-on-property-read, Ya)
 4pda.ru##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.ru##body > div[id^="r"] > div[id^="r"][href]
 4pda.ru##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
@@ -157,7 +157,8 @@ newstube.ru##+js(set-constant, Object.prototype.playerVisible, noopFunc)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, octob)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, String.fromCharCode, directadvert)
 obozrevatel.com##+js(remove-attr, autoplay, video)
-otzovik.com##+js(cookie-remover, /void$/)
+otzovik.com##+js(abort-on-property-read, Object.prototype.RtbManagerDataPreparedRtb)
+otzovik.com##+js(cookie-remover, /ext_uid$|void$/)
 otzovik.com##+js(no-setTimeout-if, pathname, 200)
 overclockers.ru##+js(abort-current-inline-script, document.createElement, /mamydirect.com/)
 overclockers.ru##+js(abort-on-property-read, cardinals, chkA)
