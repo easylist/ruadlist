@@ -15,7 +15,6 @@
 ! --- uBO scriptlets injection rules & other ---
 *$script,redirect-rule=noopjs,domain=otzovik.com
 *$xmlhttprequest,redirect-rule=nooptext,domain=otzovik.com
-dfiles.ru##+js(abort-on-property-read, ads_script)
 /^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
@@ -78,6 +77,7 @@ daz3d.ru##+js(abort-current-inline-script, decodeURIComponent, /63cc63/)
 daz3d.ru##+js(abort-on-property-read, lftrght)
 dc-marvel.org,gidonline.eu,megatfile.cc,seasonvar.re,torrent-soft.net##+js(abort-current-inline-script, String.fromCharCode, var _0x)
 dclans.ru##+js(abort-on-property-read, document.getElementById, mdl_adb)
+dfiles.ru,driveroff.net,radikal.ru,samlab.ws##+js(abort-on-property-read, ads_script)
 diplomsrazu.ru,igrozoom.ru##+js(nano-setInterval-booster, timer)
 dok-film.net##+js(abort-on-property-read, adBlockDetected)
 dota2.ru##+js(abort-on-property-read, helpUsImproveSite)
@@ -86,7 +86,6 @@ draug.ru##p:has-text(Для скачивания подождите отчет �
 draug.ru,vargr.ru##+js(abort-current-inline-script, Math.floor, AdSense)
 drive2.ru##+js(abort-on-property-read, Object.prototype.showBanner)
 drive2.ru##+js(abort-on-property-read, Object.prototype.YaadsBlockAdd)
-dfiles.ru,driveroff.net,radikal.ru,samlab.ws##+js(abort-on-property-read, ads_script)
 dtf.ru##+js(remove-attr, class, [data-igrozhur-promo])
 dtf.ru,tjournal.ru,vc.ru##+js(remove-attr, data-video-play-mode)
 eagleplatform.com##+js(set-constant, Object.prototype.options.autoplay, false)
