@@ -908,7 +908,6 @@ uptracker.ru###sidebar > div > a[href][target="_blank"]
 vipvideoclub.ru###sidebar > div:not(.module)
 kurs.com.ua###sidebar > div:not([class])
 strip2.in,strip2.xxx###sidebar > div[class]:last-child
-ironfriends.ru###sidebar > div[id]:not(:first-child)
 dom2.tw###sidebar > div[id^="container-space"]
 bikepost.ru###sidebar > div[style*="visibility: visible !important"]
 futbik.net###sidebar > div[style]:not(#rightmenu)
@@ -2441,7 +2440,7 @@ playua.net##.h-advert
 casstudio.tv##.h-top-pad
 ua-football.com#?#.h2:-abp-contains(Реклама)
 octavia-a5.ru##.h2o
-ukrrain.com#?#.h3:-abp-contains(/^нов.+партн.+р.в$/i)
+ukrrain.com#?#.h3:-abp-contains(/^нов. + партн. + р.в$/i)
 ubr.ua#?#.h4:-abp-contains(Новости партнеров)
 startgames.info##.hBanka
 rabota.md##.h_banner-container
@@ -5176,6 +5175,8 @@ tochka.net##article ~ div[id^="rsswidget"]
 qip.ru##article[data-type="advert"]
 ngnovoros.ru##article[style^="background-color: transparent; border: none;"][style*=" text-align: center;"]
 i-news.kz##aside .events-list ~ a[href][target="_blank"]
+ironfriends.ru#?#aside .widget:-abp-has(> .widget-container [class^="nadavi"])
+ironfriends.ru#?#aside .widget:-abp-has(> .widget-container [id^="ya_"])
 telik.top##aside .widget_custom_html
 businessua.com##aside > #vedomosti_block:nth-child(-n+6)
 showgid.tv##aside > .banner + .title
@@ -6074,7 +6075,7 @@ megaimg.ru##form[name="show_image"] > center
 argumenti.ru#?#h2.namerub_new:-abp-contains(/реклама/i)
 dokumental.ru,infox.ru,radiorecord.fm,ria-m.tv#?#h2:-abp-contains(/^реклама/i)
 newstube.ru,socportal.info#?#h2:-abp-contains(Новости партнеров)
-apostrophe.ua,erofishki.cc,fishki.net,hvylya.net,i-news.kz,sharknews.ru,tochka.net#?#h3:-abp-contains(/^нов.+партн.+р.в$/i)
+apostrophe.ua,erofishki.cc,fishki.net,hvylya.net,i-news.kz,sharknews.ru,tochka.net#?#h3:-abp-contains(/^нов. + партн. + р.в$/i)
 5-tv.ru#?#h3:-abp-contains(/Новости Lentainform|Новости СМИ2|Новости Лентаинформ/)
 euro-football.ru#?#h3:-abp-contains(Делайте ставки на матч)
 euro-football.ru#?#h3:-abp-contains(Делайте ставки на матч) + table[width="100%"]
