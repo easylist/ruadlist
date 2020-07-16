@@ -320,19 +320,19 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod
 gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##body[class*="-ru"] div[class]:has(:scope > div:not([id]):not([class]) > div[id]:not([class]) ~ script)
 !
-/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
+/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 !
-/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.by
+/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.by
 /^https?://www\.gismeteo\.by/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.by
 /^https?://www\.gismeteo\.by\/maps\/(?!radar\/settings\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.by
 !
-/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.kz
+/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.kz
 /^https?://www\.gismeteo\.kz/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.kz
 !
-/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|maps\/)/$xmlhttprequest,badfilter,domain=gismeteo.md
+/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,badfilter,domain=gismeteo.md
 /^https?://www\.gismeteo\.md/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.md
 !
-/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|inform-service\/|maps\/|mq\/articles\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
+/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|inform-service\/|api\/v\d{1}\/search/|maps\/|mq\/articles\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
 /^https?://www\.gismeteo\.ru/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
 /^https?://www\.gismeteo\.ru\/maps\/(?!radar\/settings\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
