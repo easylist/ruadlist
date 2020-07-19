@@ -405,7 +405,7 @@ def commit (repository, basecommand, userchanges):
             print()
     except(subprocess.CalledProcessError):
         print("Unexpected error with the command \"{command}\".".format(command = command))
-        raise subprocess.CalledProcessError("Aborting FOP.")
+        raise subprocess.CalledProcessError("Aborting FOP.", command)
     except(OSError):
         print("Unexpected error with the command \"{command}\".".format(command = command))
         raise OSError("Aborting FOP.")
