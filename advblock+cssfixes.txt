@@ -15,35 +15,23 @@
 ! --- uBO scriptlets injection rules & other ---
 *$script,redirect-rule=noopjs,domain=otzovik.com
 *$xmlhttprequest,redirect-rule=nooptext,domain=otzovik.com
-/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
-/^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
-/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.by
-/^https?://www\.gismeteo\.by/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.by
-/^https?://www\.gismeteo\.by\/maps\/(?!radar\/settings\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.by
-/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.kz
-/^https?://www\.gismeteo\.kz/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.kz
-/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,badfilter,domain=gismeteo.md
-/^https?://www\.gismeteo\.md/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.md
-/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|inform-service\/|maps\/|mq\/articles\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
-/^https?://www\.gismeteo\.ru/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
-/^https?://www\.gismeteo\.ru\/maps\/(?!radar\/settings\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 08sportbar.com,777sportba.com,777streams.pro,7streams.pro,assiatv.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,live-stream365.com,mc.today,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport7.biz,sportbar.biz,sportbox.ws,stream365.pro,vip7stream.pw##+js(window.open-defuser)
 112.ua,4mama.ua,autoua.net,avtovod.com.ua,buhgalter.com.ua,businessua.com,censor.net.ua,dengi.ua,ditey.com,eknigi.org,enovosty.com,epravda.com.ua,eurointegration.com.ua,facenews.ua,football24.ua,footballtransfer.com.ua,gagadget.com,gismeteo.ua,glavcom.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,internetua.com,isport.ua,kolobok.ua,kp.ua,kriminal.tv,lifedon.com.ua,liga.net,mama.ua,mport.ua,nashamama.com,newsyou.info,nnovosti.info,obyava.ua,okino.ua,ostro.org,~passport.i.ua,pogoda.meta.ua,pravda.com.ua,real-vin.com,ringside24.com,segodnya.ua,sinoptik.ua,smak.ua,socportal.info,strana.ua,stravy.net,telegraf.com.ua,tochka.net,tv.ua,tvgid.ua,udoktora.net,vesti.ua,vsetv.com,www.bigmir.net,zdorovia.com.ua,zn.ua##+js(set-constant, String.prototype.charCodeAt, trueFunc)
 112.ua,cikavosti.com,dialogs.org.ua,fakty.ua,newsone.ua,pingvin.pro,technoportal.com.ua,u-news.com.ua,uanews.org.ua,versii.if.ua,volynpost.com,zik.ua##+js(abort-on-property-read, weekCallbacks)
 1informer.com,fainaidea.com,housechief.ru,root-nation.com##+js(abort-on-property-read, td_ad_background_click_target)
-1news.com.ua,365news.biz,4mama.ua,7days-ua.com,asiaplustj.info,autotheme.info,cheline.com.ua,cikavosti.com,comments.ua,depo.ua,dnews.dn.ua,dv-gazeta.info,dyvys.info,economistua.com,expert.in.ua,fedpress.ru,fraza.com,glavnoe.ua,glavnoe24.ru,inforpost.com,kurskcity.ru,liga.net,narodna-pravda.ua,newsone.ua,novavlada.info,odessa-life.od.ua,pg11.ru,pingvin.pro,pl.com.ua,poltava365.com,real-vin.com,rusjev.net,russianshowbiz.info,semobile.com.ua,sud.ua,te.ua,ternopillive.com.ua,tverisport.ru,uainfo.org,uanews.org.ua,uatv.ua,unn.com.ua,vchaspik.ua,versii.if.ua,volnorez.com.ua,volyninfo.com,volynpost.com,womo.ua,wpristav.ru,zik.ua##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
+1news.com.ua,365news.biz,4mama.ua,7days-ua.com,asiaplustj.info,autotheme.info,cheline.com.ua,cikavosti.com,comments.ua,depo.ua,dnews.dn.ua,dv-gazeta.info,dyvys.info,economistua.com,expert.in.ua,fedpress.ru,fraza.com,glavnoe.ua,glavnoe24.ru,gov.ua,inforpost.com,kurskcity.ru,liga.net,narodna-pravda.ua,newsone.ua,novavlada.info,odessa-life.od.ua,pg11.ru,pingvin.pro,pl.com.ua,poltava365.com,real-vin.com,rusjev.net,russianshowbiz.info,semobile.com.ua,sud.ua,te.ua,ternopillive.com.ua,tverisport.ru,uainfo.org,uanews.org.ua,uatv.ua,unn.com.ua,vchaspik.ua,versii.if.ua,volnorez.com.ua,volyninfo.com,volynpost.com,womo.ua,wpristav.ru,zik.ua##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)
 1tv.ru##+js(set-constant, window.EUMP.plugins.antiblock, noopFunc)
 24molnia.com,7days.ru,7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,inforeactor.ru,kp.ru,mashintop.ru,maxpark.com,nation-news.ru,news.ru,newsland.com,ogodom.ru,paperdoc.ru,pasmi.ru,politros.com,rueconomics.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
 24molnia.com,7days.ru,7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,inforeactor.ru,kp.ru,mashintop.ru,maxpark.com,nation-news.ru,news.ru,newsland.com,ogodom.ru,paperdoc.ru,pasmi.ru,politros.com,rueconomics.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 2gis.ru##div[style^="display:"][style*="flex;"][style*="height:"][style*="100%;"][style*="overflow:"][style*="hidden;"][style*="width:"] div[style^="position: absolute;"] div[class]:matches-css(background-color: rgb(255, 250, 235))
-3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,gorodrabot.ru,otzovik.com,sports.ru##+js(abort-on-property-read, Ya)
+3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,gorodrabot.ru,sports.ru##+js(abort-on-property-read, Ya)
 4pda.ru##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.ru##body > div[id^="r"] > div[id^="r"][href]
 4pda.ru##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
@@ -67,7 +55,6 @@ auto.ru##+js(json-prune, rtb direct.ads)
 autoinfo24.ru,dropmefiles.com.ua,dropmefiles.net##+js(nano-setTimeout-booster)
 besplatka.ua,forumodua.com##body > div:not([id]):not([class]):not([style]):empty:remove()
 besplatka.ua,passport.i.ua,toneto.net,ubr.ua,ukr.net,woman.ua##body > iframe[name]:not([id]):not([class]):not([src]):remove()
-beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##body[class*="-ru"] div[class]:has(:scope > div:not([id]):not([class]) > div[id]:not([class]) ~ script)
 buzday.ru,hlamer.ru,lostpix.com,nsday.ru,ontivi.net,orenday.ru,perevolockday.ru,potokcdn.com,saltday.ru,sorochinskday.ru,uploadimagex.com,wowskill.ru,xittv.net,zloekino.com,zloekino.ru,zloekino.su##+js(abort-on-property-read, open)
 castle-tv.com##+js(abort-on-property-read, WebSocket)
 cdnvideo.ru##+js(set-constant, Object.prototype.autoPlay, false)
@@ -77,6 +64,7 @@ daz3d.ru##+js(abort-current-inline-script, decodeURIComponent, /63cc63/)
 daz3d.ru##+js(abort-on-property-read, lftrght)
 dc-marvel.org,gidonline.eu,megatfile.cc,seasonvar.re,torrent-soft.net##+js(abort-current-inline-script, String.fromCharCode, var _0x)
 dclans.ru##+js(abort-on-property-read, document.getElementById, mdl_adb)
+dfiles.ru,driveroff.net,radikal.ru,samlab.ws##+js(abort-on-property-read, ads_script)
 diplomsrazu.ru,igrozoom.ru##+js(nano-setInterval-booster, timer)
 dok-film.net##+js(abort-on-property-read, adBlockDetected)
 dota2.ru##+js(abort-on-property-read, helpUsImproveSite)
@@ -85,7 +73,6 @@ draug.ru##p:has-text(Для скачивания подождите отчет �
 draug.ru,vargr.ru##+js(abort-current-inline-script, Math.floor, AdSense)
 drive2.ru##+js(abort-on-property-read, Object.prototype.showBanner)
 drive2.ru##+js(abort-on-property-read, Object.prototype.YaadsBlockAdd)
-driveroff.net,radikal.ru,samlab.ws##+js(abort-on-property-read, ads_script)
 dtf.ru##+js(remove-attr, class, [data-igrozhur-promo])
 dtf.ru,tjournal.ru,vc.ru##+js(remove-attr, data-video-play-mode)
 eagleplatform.com##+js(set-constant, Object.prototype.options.autoplay, false)
@@ -117,8 +104,7 @@ gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 gazeta.ru##+js(set-constant, isAdFree, noopFunc)
 gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,gdzputina.ru,megaresheba.com,megaresheba.ru,resheba.me,spishi.fun,zoobrilka.net##+js(set-constant, app.book.external, null)
 gidonline.eu,kinogo.eu##+js(abort-on-property-read, target_script)
-gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
-gismeteo.ua##^script:has-text("zmctrack")
+glav.su##+js(abort-on-property-read, abd)
 hdkinoteatr.com##+js(no-setTimeout-if, getCookie, 3000)
 helpsetup.ru##+js(abort-on-property-write, adBlockFunction)
 hideip.me#@#.node-promoted
@@ -154,10 +140,11 @@ muzlan.top##+js(nano-setInterval-booster, .numcard)
 myshared.ru###download_form > .modal-body
 myshared.ru##+js(remove-attr, disabled, .uk-modal-footer > button)
 newstube.ru##+js(set-constant, Object.prototype.playerVisible, noopFunc)
-nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, octob)
+nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, Math.random, /bgrndi|brdmin/)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, String.fromCharCode, directadvert)
 obozrevatel.com##+js(remove-attr, autoplay, video)
-otzovik.com##+js(cookie-remover, /void$/)
+otzovik.com##+js(abort-on-property-read, Object.prototype.RtbManagerDataPreparedRtb)
+otzovik.com##+js(cookie-remover, /ext_uid$|void$/)
 otzovik.com##+js(no-setTimeout-if, pathname, 200)
 overclockers.ru##+js(abort-current-inline-script, document.createElement, /mamydirect.com/)
 overclockers.ru##+js(abort-on-property-read, cardinals, chkA)
@@ -170,16 +157,12 @@ pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##+js(abort-current-inline-scr
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##+js(abort-on-property-write, goout)
 radikal.ru,www.vesti.ru##+js(abort-current-inline-script, document.createElement, String.fromCharCode)
 rambler.ru##+js(remove-attr, class, .j-mini-player__video)
-razlozhi.ru##+js(abort-on-property-read, Object.prototype.Rtb)
-razlozhi.ru##+js(cookie-remover, /^yab/)
-razlozhi.ru##div:matches-css(z-index: 1000)
+razlozhi.ru##+js(abort-on-property-read, Object.prototype.AdvManager)
 remont-aud.net##+js(set-constant, window.ab, false)
 rns.online##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_position)
 rp5.*##+js(no-setTimeout-if, 0x)
 rustorka.com,rustorka.innal.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib,tapochek.net##+js(abort-on-property-read, ads_script)
 rustorka.com,rustorka.innal.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib,tapochek.net##+js(abort-on-property-read, antiadblock)
-rustorka.com,rustorka.innal.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib,tapochek.net##+js(cookie-remover, /([a-z0-9]{32}|gophp|sgt2|sgt3|st2|st3|u_count)/)
-rustorka.com,rustorka.net##+js(no-setTimeout-if, function, 9000)
 rutor.in##+js(abort-current-inline-script, document.createElement, ExternalChromePop)
 rutube.ru##+js(set-constant, Object.prototype.appearance.forbid_seek, undefined)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
@@ -202,6 +185,7 @@ studizba.com##+js(abort-on-property-read, m205)
 studizba.com##+js(nano-setInterval-booster, #timer)
 svpressa.ru#@#.b-content__main > .b-content__section > span.b-content__title_disabled
 svpressa.ru#@#[class^="b-comments"]
+tapochek.net##+js(cookie-remover, /(gophp|sgt2|sgt3|st2|st3|u_count)/)
 tarkov-wiki.ru##+js(abort-on-property-read, CheckingUser)
 tehnobzor.ru##+js(abort-on-property-read, mdpDeBlocker)
 tortuga.wtf##+js(set-constant, Object.prototype.hideab, undefined)
@@ -221,8 +205,7 @@ websdr.space##+js(no-setInterval-if, banner, 5000)
 websdr.space##+js(no-setInterval-if, clientHeight, 1000)
 websdr.space#@#*
 wowskill.ru##+js(nano-setInterval-booster, p)
-www.kinopoisk.ru##+js(set-constant, Object.prototype.BaseAdFox, null)
-www.kinopoisk.ru##+js(set-constant, Object.prototype.loadContextStatic, null)
+www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.hasImportantFlag)
 xxxtor.com##+js(abort-current-inline-script, document.querySelectorAll, popMagic)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body > .serp_js_inited .serp-list > .serp-item:has(:scope > div > div > .label_theme_direct)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .main.widgets :not(div) > :not(div) > :not(div) > div[class] > * ~ div[class]:not([class*="widget"])
@@ -255,7 +238,6 @@ znanija.com##+js(abort-on-property-write, getAdBlockType)
 ||mashintop.ru^$xmlhttprequest,badfilter,domain=mashintop.ru
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||nation-news.ru^$csp=script-src 'self' * blob: data:,badfilter
-||news.ru^$csp=script-src 'self' * data:,badfilter
 ||newsland.com/|$xmlhttprequest,badfilter
 ||paperdoc.ru^$xmlhttprequest,badfilter,domain=paperdoc.ru
 ||politros.com^$xmlhttprequest,badfilter,domain=politros.com
@@ -332,3 +314,24 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod
 3dn.ru,a-point.info,addfiles.ru,asia-tv.su,at.ua,autosimgames.ru,carproblem.ru,chernobyl-soul.com,clan.su,cliphq.ru,coop-lands.ru,crashkino.net,db-energo.ru,devdrivers.ru,do.am,doc-filmik.info,elegos.ru,elektrosat.ru,fireiser.org,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gamesdendy.ru,getmovie.me,giginfo.ru,gloria-cedric.ru,goldformat.ru,hack-port.ru,hero-empire.com,igrul-ka.ru,kinovego.ru,kp-pmr.ru,krasnickij.ru,krolmen.ru,megaclips.net,men-stalker.com,mod-rus.ru,moy.su,mp3songs.ru,mp4android.ru,mult-online.net,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,omsimclub.ru,online-supernatural.ru,onlinestargate.ru,others.name,paint-cars.com,pidru4nik.com,pkrc.ru,project-ss.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,selezen.site,skidrowcrack.ru,sobhd.ru,soft-game.net,stalker-zone.info,stalkermods.ru,stranded-deep.ru,svadbatomsk.ru,tes-game.ru,torm-egan.ru,torrent-file.top,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,vorozheja.ru,warcraftda.ru,x-proshivki.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,zona-stalkera.ru##+js(abort-on-property-read, Object.prototype.clunduse)
 3dn.ru,a-point.info,addfiles.ru,asia-tv.su,at.ua,autosimgames.ru,carproblem.ru,chernobyl-soul.com,clan.su,cliphq.ru,coop-lands.ru,crashkino.net,db-energo.ru,devdrivers.ru,do.am,doc-filmik.info,elegos.ru,elektrosat.ru,fireiser.org,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gamesdendy.ru,getmovie.me,giginfo.ru,gloria-cedric.ru,goldformat.ru,hack-port.ru,hero-empire.com,igrul-ka.ru,kinovego.ru,kp-pmr.ru,krasnickij.ru,krolmen.ru,megaclips.net,men-stalker.com,mod-rus.ru,moy.su,mp3songs.ru,mp4android.ru,mult-online.net,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,omsimclub.ru,online-supernatural.ru,onlinestargate.ru,others.name,paint-cars.com,pidru4nik.com,pkrc.ru,project-ss.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,selezen.site,skidrowcrack.ru,sobhd.ru,soft-game.net,stalker-zone.info,stalkermods.ru,stranded-deep.ru,svadbatomsk.ru,tes-game.ru,torm-egan.ru,torrent-file.top,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,vorozheja.ru,warcraftda.ru,x-proshivki.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,zona-stalkera.ru##+js(abort-on-property-write, ucoz_rndid)
 3dn.ru,a-point.info,addfiles.ru,asia-tv.su,at.ua,autosimgames.ru,carproblem.ru,chernobyl-soul.com,clan.su,cliphq.ru,coop-lands.ru,crashkino.net,db-energo.ru,devdrivers.ru,do.am,doc-filmik.info,elegos.ru,elektrosat.ru,fireiser.org,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gamesdendy.ru,getmovie.me,giginfo.ru,gloria-cedric.ru,goldformat.ru,hack-port.ru,hero-empire.com,igrul-ka.ru,kinovego.ru,kp-pmr.ru,krasnickij.ru,krolmen.ru,megaclips.net,men-stalker.com,mod-rus.ru,moy.su,mp3songs.ru,mp4android.ru,mult-online.net,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,omsimclub.ru,online-supernatural.ru,onlinestargate.ru,others.name,paint-cars.com,pidru4nik.com,pkrc.ru,project-ss.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,selezen.site,skidrowcrack.ru,sobhd.ru,soft-game.net,stalker-zone.info,stalkermods.ru,stranded-deep.ru,svadbatomsk.ru,tes-game.ru,torm-egan.ru,torrent-file.top,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,vorozheja.ru,warcraftda.ru,x-proshivki.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,zona-stalkera.ru##+js(setTimeout-defuser, u_global_data)
+!
+! Гисметео
+gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
+beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##body[class*="-ru"] div[class]:has(:scope > div:not([id]):not([class]) > div[id]:not([class]) ~ script)
+!
+/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
+/^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
+!
+/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.by
+/^https?://www\.gismeteo\.by/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.by
+/^https?://www\.gismeteo\.by\/maps\/(?!radar\/settings\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.by
+!
+/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.kz
+/^https?://www\.gismeteo\.kz/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.kz
+!
+/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,badfilter,domain=gismeteo.md
+/^https?://www\.gismeteo\.md/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.md
+!
+/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|inform-service\/|api\/v\d{1}\/search/|maps\/|mq\/articles\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
+/^https?://www\.gismeteo\.ru/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
+/^https?://www\.gismeteo\.ru\/maps\/(?!radar\/settings\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru

@@ -116,16 +116,20 @@ gismeteo.kz##div[class*="tizers_"]
 @@||yastatic.net/pcode/adfox/loader.js|$domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
 !
 ! Ловушка для обфусцированных запросов, если исключения обошли
-/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,domain=beta.gismeteo.ru
+/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,domain=beta.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,domain=beta.gismeteo.ru
-/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.by
+!
+/^https?://www\.gismeteo\.by/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.by
 /^https?://www\.gismeteo\.by/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,domain=www.gismeteo.by
 /^https?://www\.gismeteo\.by\/maps\/(?!radar\/settings\/)/$xmlhttprequest,domain=www.gismeteo.by
-/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.kz
+!
+/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/|news\/resource\/)/$xmlhttprequest,domain=gismeteo.kz
 /^https?://www\.gismeteo\.kz/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,domain=www.gismeteo.kz
-/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|maps\/)/$xmlhttprequest,domain=gismeteo.md
+!
+/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,domain=gismeteo.md
 /^https?://www\.gismeteo\.md/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,domain=www.gismeteo.md
-/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|inform-service\/|maps\/|mq\/articles\/)/$xmlhttprequest,domain=www.gismeteo.ru
+!
+/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|inform-service\/|api\/v\d{1}\/search/|maps\/|mq\/articles\/)/$xmlhttprequest,domain=www.gismeteo.ru
 /^https?://www\.gismeteo\.ru/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,domain=www.gismeteo.ru
 /^https?://www\.gismeteo\.ru\/maps\/(?!radar\/settings\/)/$xmlhttprequest,domain=www.gismeteo.ru
 !
@@ -456,13 +460,17 @@ mirtesen.ru##.top-block__ad
 mirtesen.ru#?#.topic-block:-abp-has(> [id^="adfox_"])
 mirtesen.ru##[id^="unit_"]
 mirtesen.ru##body > #__promoStickyButton
-||gamma.mirtesen.ru/aggregator|$domain=~mirtesen.ru
+||gamma.mirtesen.ru/aggregator$domain=~mirtesen.ru
 ||gamma.mirtesen.ru/jscripts/promo/
 ||gamma.mirtesen.ru/mtop
 ||mirtesen.ru/pa*/js/*&callback=news_
 ! общие
+###root > .app .adfox
+###root > .app .adfox-top
+###root > .app .brand-widget__right-cl
 ###root > .app > #layout > #very-right-column .aggregator__header
 ##.app.blog-post-page #blog-post-item-video-ad
+##.app.blog-post-page #right-column > .sticky
 ##.app.blog-post-page .secondary-header-ad-block
 ~mirtesen.ru,~smi2.ru##a[href*="://smi2.ru/newdata/news?ad="]
 ~smi2.ru##a[href*="://smi2.ru/newdata/news?ad="] *
@@ -741,12 +749,19 @@ utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
 ||zoom.cnews.ru/inc/bpic/
 !
 ! RusTorka.com и зеркала
+.android-mafia.com^$csp=sandbox allow-same-origin;
 rustorka.com,rustorka.innal.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib###logo td > div[id]
 rustorka.com,rustorka.innal.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib##.med.bordered.attach ~ table[width="100%"]
 rustorka.com,rustorka.innal.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib##center > a[href]
 rustorka.com,rustorka.innal.top,rustorka.net,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib##noindex
+||apad.top^$csp=sandbox allow-same-origin;
+||innal.top/goto/$csp=sandbox allow-same-origin;
+||innal.top/ranging/$csp=sandbox allow-same-origin;
 ||naylo.top^$csp=sandbox allow-same-origin;
 ||rustorka*/branding/$domain=innal.top|rustorka.com|rustorka.net|rustorkacom.lib
+! блокировка 1xbet в связи с агрессивным обходом на русторке >
+||1x-bet*$csp=sandbox allow-same-origin;
+||ccdnss.com^$third-party
 !
 ! Sports.ru
 sports.ru,tribuna.com###branding-layout > a[href][target]

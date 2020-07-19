@@ -50,6 +50,7 @@ eva.ru###cookie-agreement
 besplatka.ua###cookie-bottom
 inforesist.org###cookie-notice
 psychol-ok.ru###cookie_agreement_div
+dfiles.ru###cookie_popup
 softportal.com###cookie_wrapper
 tellows.ru###cookies
 livelib.ru###cookies-agree
@@ -74,6 +75,7 @@ nashvancouver.com###exit_content.modal
 nashvancouver.com###exit_content.modal ~ .modal-backdrop
 notino.ua###exponea-cookie-compliance
 lockerz.com###exposeMask
+olx.ua###favouritesBar
 changeua.com###fb-overlay
 3dnews.ru###feed-to-top
 vesti.ua###firstStickyWorkDiv > [href^="https://vesti.ua/discounts"]
@@ -271,7 +273,6 @@ diary.ru###w18p
 kurs.com.ua###weatherInformer
 povarenok.ru###web-push-sub
 spletnik.ru###webpush
-okna.ua###wideb
 inforuss.info###wpd-bubble-wrapper
 telegraf.com.ua###wrapperBlockUp
 ecology.md###wrappopup
@@ -506,8 +507,6 @@ kufar.by##.footer__scroll
 yodnews.ru##.footer_panel_links
 trudbox.com.ua##.form-group > .popover-yellow > .popover
 anistar.org,anistar.pro,anistar.world,anistar1.org,anistar10.org,anistar11.org,anistar12.org,anistar13.org,anistar2.org,anistar3.org,anistar4.org,anistar5.org,anistar6.org,anistar7.org,anistar8.org,anistar9.org,online-star.org,online-stars.org##.frends-list-site
-adme.ru##.fresh-separator
-animaunt.org##.full > .fbtn
 seasonvar.cc##.full-news > table:nth-of-type(2)
 moya-planeta.ru##.full_object_shop_article_recommend
 kinoservis.net##.fullstory > #blocking
@@ -877,7 +876,6 @@ provladimir.ru##.widget_youtube-widget
 sovetromantica.com##.working_button
 blackdesert-info.ru,kinobublik.net##.wp-super-snow-flake
 1jazz.ru##.wptpa_cvr_wrapper
-animaunt.org##.wrap > .slide_block
 telegraf.com.ua##.wrapper > #home_link
 telegraf.com.ua##.wrapper > .footerTitleTop
 multiurok.ru##.wrapper > div[style^="background:"][style*="videouroki.net"]
@@ -911,9 +909,13 @@ www.rambler.ru##[data-cerber-head="main::widgets::widget.games"]
 www.rambler.ru##[data-cerber-topline="promo"]
 sports.ru##[data-control="Common.WebpushSubscribe"]
 2gis.ru##[data-module="promoTooltip"]
+sberbank.ru##[data-pid^="CookieWarning-"]
 hotline.ua##[data-promo-products]
 ctc.ru##[data-react-class="GDPR"]
 fosshub.com##[data-section-content-type="donate"]
+adme.ru##[data-test-id="careers"]
+adme.ru##[data-test-id="install-app"]
+adme.ru##[data-test-id="subscription-block"]
 nv.ua##[data-type="advertising"]
 znak.com##[data-type="maillist_main"]
 sxnarod.com##[href$="?act=acquaintance"] > img[src^="/image/"]
@@ -949,8 +951,10 @@ sports.ru##a[href^="http://www.sports.ru/fantasy/promo/"]
 1strip2.me,gdespaces.com,spac.me,spac1.com,spac1.me,strip2.me##a[href^="https://mobtop.ru/"]
 nashvancouver.com##a[href^="https://nashvancouver.com/linkout/"] > img
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##a[onclick="return toggle_new_year();"]
+thebell.io##app-subscription-sticky-dialog
+thebell.io##app-widget-subscription
 sports.ru#?#article > .news-item__content > p:-abp-has(a[href^="https://trbna.co/"])
-animaunt.org##article > .sub-info > .sb-submit
+animaunt.org##article > .sub-info > .button
 sports.ru#?#article.piwikTrackContent:-abp-has(a[href^="https://trbna.co/"])
 sports.ru#?#article.piwikTrackContent:-abp-has(span:-abp-contains(Спецпроект))
 www.fontanka.ru##aside + div > section + aside > div[class]:nth-of-type(-n+2)
@@ -1071,7 +1075,12 @@ distribution.pladform.ru##footer ~ div[class^="_"]:last-child
 libertycity.ru##header > div[class^="fon"]
 bbc.com##header[role="banner"] > div[dir="ltr"][class^="Wrapper-"]
 azbooki.ru,engisys.ru,zip1000.ru##html > div[style^="color: rgb"]
+4pda.ru##html[style] .article a[href*="/4pda.ru/pages/go/?"]
 4pda.ru##html[style] a.green[href*="/4pda.ru/pages/go/?"]
+4pda.ru##html[style] a[href*="/4pda.ru/pages/go/?"][href*="ali.pub"]
+4pda.ru##html[style] a[href*="/4pda.ru/pages/go/?"][href*="clck.ru"]
+4pda.ru##html[style] a[href*="/4pda.ru/pages/go/?"][href*="goo.gl"]
+4pda.ru##html[style] a[href*="/4pda.ru/pages/go/?"][href*="is.gd"]
 www.championat.com##iframe[src*="bet.championat.com"]
 driveroff.net,samlab.ws##iframe[src*="money.yandex.ru"]
 igromania.ru##iframe[src*="player.twitch.tv/?channel=igromania"][src*="autoplay=true"]
@@ -1110,6 +1119,7 @@ youtube.com##ytd-popup-container > [force-close-on-outside-click="true"] > #cont
 ! - Сайты на движке TorrentPier -----------------------------------------------
 rutracker.ru###latest_news
 alltorrents.net,file-tracker.net,pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net,rutracker.ru###logo
+rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##.ali-promocode
 wtracker.ru##.preview_lol
 rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##.top-alert
 rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##[class^="internal-promo-"]
