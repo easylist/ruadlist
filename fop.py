@@ -50,6 +50,7 @@ ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?
 TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
 UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
 NONSELECTOR = re.compile(r"^(\+js\(|script:inject\()")
+SELECTORANDTAILPATTERN = re.compile(r"^(.*?)((:-abp-contains|:style)(.*))?$")
 
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
@@ -310,11 +311,13 @@ def elementtidy (domains, separator, selector):
     if re.match(NONSELECTOR, selector) != None:
         return "{domain}{separator}{selector}".format(domain = domains, separator = separator, selector = selector)
     # Mark the beginning and end of the selector with "@"
-    selectorandstyle = selector.split(':style(')
-    selector = "@{selector}@".format(selector = selectorandstyle[0])
-    stylepart = ""
-    if len(selectorandstyle) > 1:
-        stylepart = ":style({style}".format(style = selectorandstyle[1])
+    selectorandtail = re.match(SELECTORANDTAILPATTERN, selector) #selector.split(':style(')
+    splitterpart = ""
+    tailpart = ""
+    if selectorandtail.group(2) != None:
+        splitterpart = selectorandtail.group(3)
+        tailpart = selectorandtail.group(4)
+    selector = "@{selector}@".format(selector = selectorandtail.group(1))
     each = re.finditer
     # Make sure we don't match items in strings (e.g., don't touch Width in ##[style="height:1px; Width: 123px;"])
     selectorwithoutstrings = selector
@@ -354,21 +357,21 @@ def elementtidy (domains, separator, selector):
     for pseudo in each(PSEUDOPATTERN, selector):
         pseudoclass = pseudo.group(1)
         if pseudoclass in selectoronlystrings or not pseudoclass in selectorwithoutstrings: continue
-        ac = pseudo.group(3)
+        ac = pseudo.group(2)
         selector = selector.replace("{pclass}{after}".format(pclass = pseudoclass, after = ac), "{pclass}{after}".format(pclass = pseudoclass.lower(), after = ac), 1)
-    # Remove unnecessary 'px' in '0px'
-    if stylepart != "":
-        for un0px in each(REMOVE_0PX_PATTERN, stylepart):
+    # Remove unnecessary 'px' in '0px' and space in "! important"
+    if splitterpart == ":style" and tailpart != None:
+        for un0px in each(REMOVE_0PX_PATTERN, tailpart):
             bc = un0px.group(2)
             ac = un0px.group(4)
-            stylepart = stylepart.replace("{before}{remove}{after}".format(before = bc, remove = un0px.group(3), after = ac), "{before}{after}".format(before = bc, after = ac), 1)
-        for bsi in each(BANGSPACEIMPORTANT, stylepart):
+            tailpart = tailpart.replace("{before}{remove}{after}".format(before = bc, remove = un0px.group(3), after = ac), "{before}{after}".format(before = bc, after = ac), 1)
+        for bsi in each(BANGSPACEIMPORTANT, tailpart):
             bc = bsi.group(1)
             space = "" if bc == " " else " "
             ac = bsi.group(3)
-            stylepart = stylepart.replace("{before}{bang}{after}".format(before = bc, bang = bsi.group(2), after = ac), "{before}{space}!{after}".format(before = bc, space = space, after = ac), 1)
+            tailpart = tailpart.replace("{before}{bang}{after}".format(before = bc, bang = bsi.group(2), after = ac), "{before}{space}!{after}".format(before = bc, space = space, after = ac), 1)
     # Remove the markers from the beginning and end of the selector and return the complete rule
-    return "{domain}{separator}{selector}{style}".format(domain = domains, separator = separator, selector = selector[1:-1], style = stylepart)
+    return "{domain}{separator}{selector}{splitter}{tail}".format(domain = domains, separator = separator, selector = selector[1:-1], splitter = splitterpart, tail = tailpart)
 
 def commit (repository, basecommand, userchanges):
     """ Commit changes to a repository using the commands provided."""
