@@ -401,6 +401,9 @@ gazeta.ua#?#body:style(pointer-events: none !important)
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##body[class*="-ru"] > .content > div[class]:last-child > div > div[class]:first-child ~ div:nth-child(n+1)
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##body[class*="-ru"] > div[class]:not([id]):nth-child(-n+2)
 ! ---
+glav.su###js-l-h ~ div[class] > div:not([id]):not([class]):not([style])
+glav.su#?##js-l-h ~ div[class]:style(padding-top: unset !important; padding-bottom: unset !important)
+! ---
 glavnoe.ua#?##main-block > .content-block:style(margin: auto !important)
 ! ---
 goclips.tv#?#.video_content:style(height: auto !important)
