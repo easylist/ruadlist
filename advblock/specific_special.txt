@@ -394,6 +394,7 @@ games.mail.ru##.b-main__wrapper > a.b-bg[href^="https://r.mail.ru/"]
 games.mail.ru##.b-pc__wrapper > a[class^="b-bg"][href^="https://r.mail.ru/redir/"][target="_blank"]
 dom.mail.ru##.cols__inner > .article ~ .margin_top_20
 games.mail.ru##.js-aab_target
+dom.mail.ru##.js-fixed-panel > .box
 tv.mail.ru##.js-popup_banner
 games.mail.ru,pets.mail.ru##.js-popup_gallery .viewbox__side
 minigames.mail.ru##.left-advert-block
@@ -414,6 +415,7 @@ tv.mail.ru##[data-rb]
 minigames.mail.ru,okminigames.mail.ru#?#[href^="https://minigames.imgsmail.ru/static/css/social-likes."] ~ div[class]:-abp-has([href*="/info/adblock"])
 tv.mail.ru##div[class][id^="mailru"]
 pulse.mail.ru#?#div[class^="pl_"]:-abp-has(> * > [href*="t.mail.ru/redir"])
+dom.mail.ru##div[data-qa="ArticlesList"] > [data-qa="ArticleThumb"] ~ :not([data-qa="ArticleThumb"] )
 minigames.mail.ru##div[id^="slot"][id*="sitezone"]
 maps.mail.ru##img[width="200"][height="30"]
 ! Блокировка ресурсов в основном на самом mail.ru
