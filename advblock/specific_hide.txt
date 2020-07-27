@@ -5228,7 +5228,7 @@ bryansknovosti.ru##aside[data-alias="Слева"] .widget-area > .widget_text ~ 
 bryansknovosti.ru,novozybkov.su##aside[data-alias="Справа"] .widget-area > .widget_text ~ .widget_text
 kino-zal.tv##blink
 1progs.ru,2womans.ru,freepiks.ru,psysovet24.ru##blockquote
-otzovik.com#?#body * div:-abp-has(> div > script[type])
+otzovik.com#?#body * div:not([style="position: relative;"]):not(#content):not([itemprop]):-abp-has(> div > script)
 tverigrad.ru#?#body *:-abp-has(> #mediametrics)
 rockstargame.su##body > #a
 kissfm.ua##body > #background
