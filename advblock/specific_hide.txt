@@ -565,8 +565,7 @@ prestige-gaming.ru###m1-link[href]
 fullgames.ru###main + #right
 kaztorka.org###main > #logo + [class*=" "]
 igropoisk.com###main > #top
-anime.anidub.life,online.anidub.com###main > div:first-child:before
-anime.anidub.life,online.anidub.com###main > div:last-child:before
+anime.anidub.life,online.anidub.com###main > div:not(.wrap-main)
 agroter.com.ua###main > img[src][style]
 1000.menu###main-aside > .ib
 pnzstroi.ru###main-ban
@@ -4097,10 +4096,10 @@ livecars.ru##.wow_box
 levashove.ru##.wp-block-spacer
 travel3.ru##.wpInsert
 irr.by,irr.ru##.wrBanerPlace noindex
+anime.anidub.life,online.anidub.com##.wrap > .sticky-wrap + div:not([class="popular"])
 online.anidub.com##.wrap > .sticky-wrap + div[id]
 meteo-tv.ru##.wrap > [id^="bch"]
 mk.ru#?#.wrap > div[class*=" "]:-abp-has(> center > script)
-anime.anidub.life,online.anidub.com##.wrap > div[id]:empty
 kanobu.ru##.wrap > header ~ div[style*="background"] > a
 avtosreda.ru##.wrap > noindex
 vse42.ru##.wrap-adplace-frame
