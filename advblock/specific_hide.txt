@@ -5228,6 +5228,7 @@ bryansknovosti.ru##aside[data-alias="Слева"] .widget-area > .widget_text ~ 
 bryansknovosti.ru,novozybkov.su##aside[data-alias="Справа"] .widget-area > .widget_text ~ .widget_text
 kino-zal.tv##blink
 1progs.ru,2womans.ru,freepiks.ru,psysovet24.ru##blockquote
+razlozhi.ru#?#body * * div[class]:-abp-has(> div[class]:first-child ~ div[id]:empty)
 otzovik.com#?#body * div:not([class^="review"]):not([class^="comment"]):-abp-has(> div[id][class] > div:not([id]):first-child:last-child)
 tverigrad.ru#?#body *:-abp-has(> #mediametrics)
 rockstargame.su##body > #a
@@ -5539,7 +5540,6 @@ spafilms.me#?#div[class]:-abp-has(> a[title] > div[class])
 gdespaces.com,spac.me,spac1.com,spac1.me,spac1.net,spaces.im#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
 drive2.ru#?#div[class]:-abp-has(> div > div > .drom-logo)
 2gis.ru#?#div[class]:-abp-has(> div[class] > div[class]:-abp-contains(/^Организации рядом$|^Похожие организации$/))
-razlozhi.ru#?#div[class]:-abp-has(> div[class]:first-child ~ div[id]:empty)
 razlozhi.ru#?#div[class]:-abp-has(> div[id][class]:first-child > div[class]:first-child + div[id]:empty)
 novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
 glav.su#?#div[class]:-abp-has(> script:-abp-contains(/yandex|luxupcdnc/))
