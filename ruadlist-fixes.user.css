@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200711.254
+@version 0.20200730.1504
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -279,6 +279,7 @@
   domain("arbitr-praktika.ru"),
   domain("budgetnik.ru"),
   domain("budgetnyk.com.ua"),
+  domain("buhsoft.ru"),
   domain("business.ru"),
   domain("cxychet.ru"),
   domain("dirsalona.ru"),
@@ -307,7 +308,7 @@
   domain("ugpr.ru"),
   domain("zarplata-online.ru"),
   domain("zdrav.ru") {
-    .megaShadow, .paywall-activated, .topAdvertize, div[class^="GbShadow"] {
+    .megaShadow, .paywall-activated, .topAdvertize {
         display: none !important
     }
     .topAdvertize__wrapper {
@@ -320,6 +321,45 @@
     }
     body {
         overflow: auto !important
+    }
+}
+
+@-moz-document
+  domain("26-2.ru"),
+  domain("arbitr-praktika.ru"),
+  domain("budgetnik.ru"),
+  domain("budgetnyk.com.ua"),
+  domain("buhsoft.ru26-2.ru"),
+  domain("business.ru"),
+  domain("cxychet.ru"),
+  domain("dirsalona.ru"),
+  domain("fd.ru"),
+  domain("gazeta-unp.ru"),
+  domain("gd.ru"),
+  domain("gkh.ru"),
+  domain("glavbukh.ru"),
+  domain("golovbukh.ua"),
+  domain("hr-director.ru"),
+  domain("kadrovik01.com.ua"),
+  domain("kdelo.ru"),
+  domain("kom-dir.ru"),
+  domain("law.ru"),
+  domain("lawyercom.ru"),
+  domain("medsprava.com.ua"),
+  domain("menobr.ru"),
+  domain("nalogplan.ru"),
+  domain("pro-goszakaz.ru"),
+  domain("pro-personal.ru"),
+  domain("resobr.ru"),
+  domain("rnk.ru"),
+  domain("sop.com.ua"),
+  domain("stroychet.ru"),
+  domain("trudohrana.ru"),
+  domain("ugpr.ru"),
+  domain("zarplata-online.ru"),
+  domain("zdrav.ru") {
+    div[class^="GbShadow"] {
+        display: none !important
     }
 }
 
@@ -550,6 +590,10 @@
 @-moz-document
   domain("anime.anidub.life"),
   domain("online.anidub.com") {
+    #main > .wrap-main {
+        margin-left: auto !important;
+        margin-right: auto !important
+    }
     .content, .content > .full {
         padding-top: 0 !important
     }
@@ -560,6 +604,26 @@
   domain("animevost.club") {
     #wr-bg {
         padding-top: 60px !important
+    }
+}
+
+@-moz-document domain("animedia.pro") {
+    .right-sidebar {
+        height: auto !important
+    }
+    .content > .media {
+        padding-bottom: unset !important
+    }
+}
+
+@-moz-document
+  domain("animedia.pro"),
+  domain("tt.animedia.tv") {
+    div[class^="promo"][class*="wrapper"] {
+        display: none !important
+    }
+    .main-container {
+        margin-top: 80px !important
     }
 }
 
@@ -991,7 +1055,7 @@
     .popup[id*="-results-banner"] {
         display: none !important
     }
-    .blocked {
+    .blocked, .blocked .text {
         filter: none !important;
         -webkit-filter: none !important
     }
@@ -1369,12 +1433,6 @@
     }
 }
 
-@-moz-document domain("filmitorrent.net") {
-    a[href*="aHR0c"] {
-        display: none !important
-    }
-}
-
 @-moz-document domain("filmitorrent.site") {
     body > #container {
         margin-top: 0 !important
@@ -1678,6 +1736,16 @@
     }
 }
 
+@-moz-document domain("glav.su") {
+    #js-l-h ~ div[class] > div:not([id]):not([class]):not([style]) {
+        display: none !important
+    }
+    #js-l-h ~ div[class] {
+        padding-top: unset !important;
+        padding-bottom: unset !important
+    }
+}
+
 @-moz-document domain("glavnoe.ua") {
     #main-block > .content-block {
         margin: auto !important
@@ -1718,6 +1786,16 @@
 @-moz-document domain("gotps3.ru") {
     #Page {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("great-tv.ru"),
+  domain("vserialy.com"),
+  domain("vserialy.fun") {
+    #header_box {
+        height: auto !important;
+        min-height: auto !important
     }
 }
 
@@ -1929,8 +2007,7 @@
     body > .outer_outer > .outer_inner {
         background: #dedede !important
     }
-    .wrapper_outer > .wide_brand, 
-    .wrapper_outer > .wide_brand ~ div:not([id]):not([class]) + style + div[class] {
+    .wrapper_outer > .wide_brand {
         display: none !important
     }
     .outer_inner > .wrapper_outer > div[class] {
@@ -1954,6 +2031,15 @@
         display: none !important
     }
     #headerMover #headerProxy {
+        height: 50px !important
+    }
+}
+
+@-moz-document domain("infoua.biz") {
+    #id_box_r_y1, #idbbbad {
+        position: absolute !important;
+        top: -10000px !important;
+        left: -10000px !important;
         height: 50px !important
     }
 }
@@ -2354,6 +2440,9 @@
         background: #1c1e1f !important;
         color: #fff !important
     }
+    .lstfml .footer .links a {
+        color: #fff !important
+    }
     body > * > div[style^="padding-top"], body > a[onclick], 
     body > div:not([id]):not([class]), body > span {
         display: none !important
@@ -2616,6 +2705,14 @@
     }
 }
 
+@-moz-document
+  domain("nevasport.ru"),
+  domain("ru-drivemusic.net") {
+    .main-wrapper {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("newdeaf.club") {
     .player-drop, .player-section {
         display: block !important
@@ -2755,26 +2852,6 @@
     }
 }
 
-@-moz-document domain("online.animedia.pro") {
-    .right-sidebar {
-        height: auto !important
-    }
-    .content > .media {
-        padding-bottom: unset !important
-    }
-}
-
-@-moz-document
-  domain("online.animedia.pro"),
-  domain("tt.animedia.tv") {
-    div[class^="promo"][class*="wrapper"] {
-        display: none !important
-    }
-    .main-container {
-        margin-top: 80px !important
-    }
-}
-
 @-moz-document domain("oper.ru") {
     #wrapper {
         background-image: none !important;
@@ -2887,6 +2964,9 @@
     #foundationWrapper {
         background: #373737 !important;
         padding-top: 0 !important
+    }
+    #foundationWrapper > div {
+        height: auto !important
     }
     #foundationWrapper > * {
         pointer-events: auto !important
@@ -3146,12 +3226,6 @@
     }
 }
 
-@-moz-document domain("ru-drivemusic.net") {
-    .main-wrapper {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("rufilmtv.pro") {
     body > header {
         margin-bottom: auto !important
@@ -3167,6 +3241,15 @@
 @-moz-document domain("rusfootball.info") {
     #wrap {
         margin-top: auto !important
+    }
+}
+
+@-moz-document domain("rusprofile.ru") {
+    #subscription_banner_root {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
     }
 }
 
@@ -3687,15 +3770,6 @@
     }
 }
 
-@-moz-document
-  domain("vserialy.com"),
-  domain("vserialy.me") {
-    #header_box {
-        height: auto !important;
-        min-height: auto !important
-    }
-}
-
 @-moz-document domain("vsthouse.ru") {
     .a-overlay {
         display: none !important
@@ -3795,6 +3869,10 @@
     .page-content > div[id]:not(#header-info-bg):empty + div[id]:not(#top) {
         margin-bottom: 40px !important
     }
+    div[class*="styles_baseContainer"] {
+        max-width: -webkit-fill-available !important;
+        max-width: -moz-available !important
+    }
     .content-container_app-width_wide {
         max-width: 100% !important
     }
@@ -3849,6 +3927,11 @@
   domain("yandex.ru"),
   domain("yandex.ua"),
   domain("yandex.uz") {
+    .mg-sticky__inner > div[class^="neo-"][class*="type_partner"] > div {
+        animation: none !important;
+        -webkit-animation: none !important;
+        padding: unset !important
+    }
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) {
         background-color: transparent !important
     }
@@ -3867,8 +3950,10 @@
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
     .map-copyrights ~ .sidebar-container .scroll__content .route-panel-form-view__content > div > div[class][style^="border-top"], 
     .mg-page-layout-item_pos_right div[class*="wrapper"] > div[class]:empty, 
-    .mini-suggest__item_subtype_ad, .serp-list > .incut > .direct, 
-    .turbo-advert__loader, 
+    .mg-sticky__inner > div[class^="neo-"][class*="type_partner"] > div > div:empty, 
+    .mini-suggest__item_subtype_ad, 
+    .neo-app .news-app__content .news-top-rubric-heading > span, 
+    .serp-list > .incut > .direct, .turbo-advert__loader, 
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
     body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
@@ -3884,8 +3969,9 @@
     .monetization-group > .monetization-group__item {
         height: auto !important
     }
-    body[class*="b-page"] .main.widgets :not(div) > :not(div) > :not(div) > div[class] > div[class]:not([class*="widget"]) {
-        height: unset !important
+    div[class^="neo-"][class*="_type_native"] {
+        height: unset !important;
+        min-height: 0 !important
     }
     .serp-header {
         margin-top: 0 !important
@@ -3896,6 +3982,11 @@
     }
     .mg-page-layout-item div[class^="sport-"] div[class^="turbo-"] {
         min-height: 0 !important
+    }
+    .mg-sticky__inner > div[class^="neo-"][class*="type_partner"] {
+        min-height: 0 !important;
+        padding: unset !important;
+        will-change: unset !important
     }
     .b-page {
         padding-top: 0 !important
