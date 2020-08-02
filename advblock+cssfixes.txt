@@ -13,6 +13,8 @@
 ! --- Adblock Warning Removal List ---
 %include easylistcombinations:antiadblockfilters.txt%
 ! --- uBO scriptlets injection rules & other ---
+*$script,redirect-rule=noop.js,domain=otzovik.com
+*$xmlhttprequest,redirect-rule=noop.js,domain=otzovik.com
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
@@ -140,7 +142,6 @@ newstube.ru##+js(set-constant, Object.prototype.playerVisible, noopFunc)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, Math.random, /bgrndi|brdmin/)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, String.fromCharCode, directadvert)
 obozrevatel.com##+js(remove-attr, autoplay, video)
-otzovik.com##+js(no-setTimeout-if, , 200)
 otzovik.com##+js(set-constant, Math.random, trueFunc)
 overclockers.ru##+js(abort-current-inline-script, document.createElement, /mamydirect.com/)
 overclockers.ru##+js(abort-on-property-read, cardinals, chkA)
