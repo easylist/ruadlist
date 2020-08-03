@@ -41,6 +41,7 @@
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||studizba.com^$generichide,badfilter
+@@||utarget.ru/check_geo/|$script,badfilter,domain=memepedia.ru
 @@||yastatic.net/pcode-bundles/*/banner_background/banner_background.js|$script,badfilter,domain=www.goha.ru
 agorov.org,animevost.am,animevost.org,animevost.site,smotret-anime-365.ru##+js(abort-on-property-read, document.oncontextmenu)
 all-episodes.org##+js(set-constant, detdet, noopFunc)
@@ -250,6 +251,7 @@ znanija.com##+js(abort-on-property-write, getAdBlockType)
 ||svpressa.ru^$csp=script-src 'self' * blob: data:,badfilter
 ||tele.ru^$xmlhttprequest,badfilter,domain=tele.ru
 ||teleprogramma.pro^$xmlhttprequest,badfilter,domain=teleprogramma.pro
+||utarget.ru/check_geo/|$script,redirect=empty,domain=memepedia.ru
 ||vod.tvstitch.com^$xmlhttprequest,redirect=noop.txt,domain=player.starlight.digital
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 !
