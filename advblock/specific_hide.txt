@@ -5252,7 +5252,7 @@ bryansknovosti.ru##aside[data-alias="Слева"] .widget-area > .widget_text ~ 
 bryansknovosti.ru,novozybkov.su##aside[data-alias="Справа"] .widget-area > .widget_text ~ .widget_text
 kino-zal.tv##blink
 1progs.ru,2womans.ru,freepiks.ru,psysovet24.ru##blockquote
-razlozhi.ru#?#body * * div[class]:-abp-has(> div[class]:first-child ~ div[id]:empty)
+razlozhi.ru#?#body * * * div[class]:-abp-has(> div[id][class] > div[id][class] + div[id])
 glav.su#?#body * * div[class]:-abp-has(> script:-abp-contains(/yandex|luxupcdnc/))
 otzovik.com#?#body * div:not([class^="review"]):not([class^="comment"]):-abp-has(> div[id][class] > div:not([id]):first-child:last-child)
 tverigrad.ru#?#body *:-abp-has(> #mediametrics)
@@ -5325,7 +5325,6 @@ gamesisart.ru##body > div[align="left"][style^="position: fixed;"]
 dtf.ru##body > div[class$="-promo-popover"]
 999.md,delo.ua,nevasport.ru##body > div[class*="branding"]
 progipertoniyu.ru##body > div[class*="modal"]
-razlozhi.ru#?#body > div[class]:-abp-has(> div[class] ~ div[id]:empty)
 votrube.ru##body > div[class]:last-of-type
 soccer365-1.xyz,soccer365.ru##body > div[class]:not([id]) > div[style^="background"]
 soccer365-1.xyz,soccer365.ru##body > div[class]:not([id]) > div[style^="background"] ~ *
@@ -5564,7 +5563,6 @@ spafilms.me#?#div[class]:-abp-has(> a[title] > div[class])
 gdespaces.com,spac.me,spac1.com,spac1.me,spac1.net,spaces.im#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
 drive2.ru#?#div[class]:-abp-has(> div > div > .drom-logo)
 2gis.ru#?#div[class]:-abp-has(> div[class] > div[class]:-abp-contains(/^Организации рядом$|^Похожие организации$/))
-razlozhi.ru#?#div[class]:-abp-has(> div[id][class]:first-child > div[class]:first-child + div[id]:empty)
 novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
 ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[class][data-element*="BANNER"]
@@ -5796,6 +5794,7 @@ kidpuz.ru,prohondroz.ru##div[id][block-id]
 progipertoniyu.ru##div[id][block-id][style]
 spinazdorov.ru##div[id][block]
 1fenshui.ru##div[id][block][style]
+razlozhi.ru#?#div[id][class]:-abp-has(> div[id][class] + div[id])
 www.goha.ru#?#div[id][class]:-abp-has(> div[id^="trurlmedia_"])
 myshared.ru##div[id][class][style*="width"][style*="height"]
 otzovik.com##div[id][class][style^="width:"]
