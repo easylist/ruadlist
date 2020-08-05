@@ -5254,6 +5254,7 @@ kino-zal.tv##blink
 1progs.ru,2womans.ru,freepiks.ru,psysovet24.ru##blockquote
 razlozhi.ru#?#body * * * div[class]:-abp-has(> div[id][class] > div[id][class] + div[id])
 glav.su#?#body * * div[class]:-abp-has(> script:-abp-contains(/yandex|luxupcdnc/))
+razlozhi.ru#?#body * * div[id][class]:-abp-has(> div[id][class] + div[id])
 otzovik.com#?#body * div:not([class^="review"]):not([class^="comment"]):-abp-has(> div[id][class] > div:not([id]):first-child:last-child)
 tverigrad.ru#?#body *:-abp-has(> #mediametrics)
 rockstargame.su##body > #a
@@ -5794,7 +5795,6 @@ kidpuz.ru,prohondroz.ru##div[id][block-id]
 progipertoniyu.ru##div[id][block-id][style]
 spinazdorov.ru##div[id][block]
 1fenshui.ru##div[id][block][style]
-razlozhi.ru#?#div[id][class]:-abp-has(> div[id][class] + div[id])
 www.goha.ru#?#div[id][class]:-abp-has(> div[id^="trurlmedia_"])
 myshared.ru##div[id][class][style*="width"][style*="height"]
 otzovik.com##div[id][class][style^="width:"]
