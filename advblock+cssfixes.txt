@@ -143,6 +143,7 @@ newstube.ru##+js(set-constant, Object.prototype.playerVisible, noopFunc)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, Math.random, /bgrndi|brdmin/)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, String.fromCharCode, directadvert)
 obozrevatel.com##+js(remove-attr, autoplay, video)
+otzovik.com##+js(abort-on-property-read, Object.prototype.RtbManagerBeforeRenderDirect)
 otzovik.com##^script:has-text(an.yandex.)
 overclockers.ru##+js(abort-current-inline-script, document.createElement, /mamydirect.com/)
 overclockers.ru##+js(abort-on-property-read, cardinals, chkA)
@@ -238,7 +239,6 @@ znanija.com##+js(abort-on-property-write, getAdBlockType)
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||nation-news.ru^$csp=script-src 'self' * blob: data:,badfilter
 ||newsland.com/|$xmlhttprequest,badfilter
-||otzovik.com/reviews/$xmlhttprequest,badfilter
 ||paperdoc.ru^$xmlhttprequest,badfilter,domain=paperdoc.ru
 ||politros.com^$xmlhttprequest,badfilter,domain=politros.com
 ||pronpic.org^$third-party,badfilter
