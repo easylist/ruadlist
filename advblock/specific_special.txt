@@ -708,9 +708,7 @@ www.championat.com##[class*="coeffs-"]
 www.championat.com##[data-href^="https://www.fonbet.ru/"]
 www.championat.com##a[href^="https://www.fonbet.ru/"]
 www.rambler.ru##div[id^="adfox"]
-www.rambler.ru#?#div[class]:-abp-has(> .ad[style="display: block;"])
-www.rambler.ru#?#main header ~ * div[class]:-abp-has(> div[id^="adfox"])
-www.rambler.ru#?#main header ~ * div[class^="_"] ~ div[class^="_"]:-abp-has(> div[class] > [id^="adfox"])
+www.rambler.ru#?##main div:-abp-has(> div[class] > [style^="height:"] > div[class]:only-child)
 ||plista.com^$domain=wmj.ru
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
 !
