@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200730.1504
+@version 0.20200815.2226
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -116,7 +116,7 @@
   domain("jetsetter.ua"),
   domain("justhdrezka.com"),
   domain("kinoaa.ru"),
-  domain("kinobar.cc"),
+  domain("kinobar.me"),
   domain("kinobe.club"),
   domain("kinoplanet.biz"),
   domain("kintor.org"),
@@ -126,7 +126,7 @@
   domain("livehdrezka.com"),
   domain("livekinopoisk.com"),
   domain("liverutor.org"),
-  domain("lostfan.org"),
+  domain("lostserials.com"),
   domain("lotzon.co"),
   domain("metahdrezka.com"),
   domain("moskva.fm"),
@@ -223,7 +223,7 @@
   domain("ixbt.com"),
   domain("justhdrezka.com"),
   domain("kino-full.ru"),
-  domain("kinobar.cc"),
+  domain("kinobar.me"),
   domain("kinotochka.co"),
   domain("kinotochka.me"),
   domain("ko.com.ua"),
@@ -231,7 +231,7 @@
   domain("livehdrezka.com"),
   domain("livejournal.com"),
   domain("livekinopoisk.com"),
-  domain("lostfan.org"),
+  domain("lostserials.com"),
   domain("mc.today"),
   domain("metahdrezka.com"),
   domain("mirkino.club"),
@@ -365,7 +365,8 @@
 
 @-moz-document domain("2ip.ua") {
     .ipblockgradient > .ip + div[class]:not([class^="ip"]), 
-    .ipblockgrid div[class*="mini"], .result ~ [class*="mini"], .socks {
+    .ipblockgrid div[class*="mini"], .result ~ [class*="mini"], .socks, 
+    div[class^="custom_proxy"] {
         display: none !important
     }
 }
@@ -1222,29 +1223,29 @@
 @-moz-document
   domain("drive2.com"),
   domain("drive2.ru") {
-    .c-dv-container, .c-post + div + div:not(:last-child), 
-    .c-post + div ~ div:last-child > div:first-child + div[class], 
-    .c-post + div:not(:last-child), .dv-post-header, 
+    .js-page > div[class$="-header"] + div[class] > div[class]:not([class*="column"]):first-child + div[class]:last-child {
+        box-shadow: none !important
+    }
+    .c-dv-container, .dv-post-header, 
     .offer[itemtype="http://schema.org/Product"] + div, 
     .offer[itemtype="http://schema.org/Product"] + div + div, 
-    [itemscope] ~ div[data-role][data-target] + div, 
-    [itemscope] ~ div[data-role][data-target] + div + div:not(:last-child), 
-    [itemscope] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class], 
+    [itemtype="http://schema.org/Review"] + div[class$="content"] ~ div[class]:last-child > div[class$="content"]:first-child + div, 
+    [itemtype="http://schema.org/Review"] + div[class$="content"] ~ div[class]:not(:last-child), 
     div[class$="content"] ~ div[data-role][data-target] + div, 
-    div[class$="header"] + div[class] > div[class$="content"] + div + div:last-child, 
+    div[itemtype="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class], 
+    div[itemtype="http://schema.org/BlogPosting"] ~ div:not(:last-child), 
+    div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class], 
+    div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] ~ div:not(:last-child), 
     form[action="/my/content/feed/editorial"] + div, 
     form[action="/my/content/feed/editorial"] + div + div:not(:last-child), 
     form[action="/my/content/feed/editorial"] + div ~ div:last-child > div:first-child + div[class] {
         display: none !important
     }
-    .c-post + div ~ div:last-child > div:first-child:not(:only-child), 
-    [itemscope] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child:not(:only-child), 
+    [itemtype="http://schema.org/Review"] + div[class$="content"] ~ div[class]:last-child > div[class$="content"]:first-child:not(:only-child), 
+    [itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child:not(:only-child), 
+    div[itemtype="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child), 
     form[action="/my/content/feed/editorial"] + div ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
-    }
-    div[data-metrika="catalogcenter"] {
-        pointer-events: none !important;
-        opacity: 0 !important
     }
 }
 
@@ -1783,6 +1784,14 @@
     }
 }
 
+@-moz-document
+  domain("gorod.dp.ua"),
+  domain("intermedia.ru.sefon.cc") {
+    html > body {
+        padding-top: unset !important
+    }
+}
+
 @-moz-document domain("gotps3.ru") {
     #Page {
         margin-top: 0 !important
@@ -2053,12 +2062,6 @@
 @-moz-document domain("instagram.com") {
     body[style*="overflow: hidden;"] {
         overflow: auto !important
-    }
-}
-
-@-moz-document domain("intermedia.ru") {
-    html > body {
-        padding-top: unset !important
     }
 }
 
@@ -3457,6 +3460,12 @@
     }
 }
 
+@-moz-document domain("stadion.uz") {
+    #site_container {
+        margin-top: auto !important
+    }
+}
+
 @-moz-document
   domain("stalker-mods.clan.su"),
   domain("stalker-mods.su"),
@@ -3927,7 +3936,7 @@
   domain("yandex.ru"),
   domain("yandex.ua"),
   domain("yandex.uz") {
-    .mg-sticky__inner > div[class^="neo-"][class*="type_partner"] > div {
+    .mg-sticky__inner > div[class*="type_partner"] > div {
         animation: none !important;
         -webkit-animation: none !important;
         padding: unset !important
@@ -3950,10 +3959,9 @@
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
     .map-copyrights ~ .sidebar-container .scroll__content .route-panel-form-view__content > div > div[class][style^="border-top"], 
     .mg-page-layout-item_pos_right div[class*="wrapper"] > div[class]:empty, 
-    .mg-sticky__inner > div[class^="neo-"][class*="type_partner"] > div > div:empty, 
-    .mini-suggest__item_subtype_ad, 
-    .neo-app .news-app__content .news-top-rubric-heading > span, 
-    .serp-list > .incut > .direct, .turbo-advert__loader, 
+    .mg-sticky__inner > div[class*="type_partner"] > div > div:empty, 
+    .mini-suggest__item_subtype_ad, .serp-list > .incut > .direct, 
+    .turbo-advert__loader, 
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
     body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
@@ -3969,7 +3977,7 @@
     .monetization-group > .monetization-group__item {
         height: auto !important
     }
-    div[class^="neo-"][class*="_type_native"] {
+    .news-app .mg-grid__col > div[class*="_type_"] {
         height: unset !important;
         min-height: 0 !important
     }
@@ -3983,7 +3991,7 @@
     .mg-page-layout-item div[class^="sport-"] div[class^="turbo-"] {
         min-height: 0 !important
     }
-    .mg-sticky__inner > div[class^="neo-"][class*="type_partner"] {
+    .mg-sticky__inner > div[class*="type_partner"] {
         min-height: 0 !important;
         padding: unset !important;
         will-change: unset !important
@@ -4008,6 +4016,7 @@
     .full-root > .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div:first-child {
         display: none !important
     }
+    .full-root > .page-root > #page div[class^="_"] > div > script + section > div:not([class]) > div[class^="_"] ~ div[class^="_"] > div[class^="_"] ~ div > div:first-child, 
     .full-root > .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div {
         min-height: 0 !important
     }
