@@ -182,7 +182,6 @@ _pagespeed_beacon?
 ##img[src^="/stat/"][width="88"][height="31"]
 !
 ! = Общие блокировки (и с использованием имени доменов) =========================
-/^https?://mail\.yandex\.(by|kz|ru|ua|uz)/[^\s]{160,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.uz
 /redir/stat/*$domain=autonews.ru|rbc.ru|sportrbc.ru
 |http://li.ru^$third-party,~subdocument
 |http://pr-cy.$third-party
@@ -848,6 +847,7 @@ ivi.ru#?#+js(set-constant.js, Object.prototype.hasAdv, noopFunc)
 rutracker.lib,rutracker.net,rutracker.nl,rutracker.org#?#+js(set-constant.js, String.prototype.startsWith, noopFunc)
 rp5.am,rp5.by,rp5.co.uk,rp5.kz,rp5.lt,rp5.lv,rp5.md,rp5.ru,rp5.ua#?#+js(setTimeout-defuser.js, xvb)
 inoreader.com##.ad_title > a
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.b-page__container > footer ~ .b-statcounter + div[class]
 militaryreview.su##.bbanerr
 uniongang.net,uniongang.org#?#.block:-abp-has(> .block-title:-abp-contains(Счётчики))
 yakusubstudio.home-forum.com,yakusubstudio.ru##.contbaner
@@ -892,6 +892,7 @@ radioprofusion.com##footer > .counter
 4pda.ru##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
 lostfilm.tv,lostfilm.tw##img[width="1"][height="1"]
 lena-miro.ru,levik.blog,livejournal.*,olegmakarenko.ru,shakko.ru,varlamov.*#?#+js(set-constant.js, Object.prototype.Begun, undefined)
+mail.yandex.*##+js(set-constant.js, Object.prototype.isNativeDirectLineEnabled, null)
 nova.rambler.*#?#+js(abort-on-property-read.js, Object.prototype.AdvManager)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#script[data-message*="/turbo"] ~ * div[class]:-abp-has(> [class^="loader"][class*="__loader"])
 4pda.ru##tbody > tr[valign="top"] > td[width*="20"] + td[class]
