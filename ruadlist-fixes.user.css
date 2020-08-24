@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200815.2226
+@version 0.20200824.342
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -863,6 +863,12 @@
     }
 }
 
+@-moz-document domain("blogs.pravda.com.ua") {
+    body > .block0 {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("bosch-home.ru") {
     .cookielaw-modal-layer {
         display: none !important
@@ -1313,8 +1319,11 @@
 @-moz-document
   domain("e.mail.ru"),
   domain("octavius.mail.ru") {
-    #app-canvas .layout_bordered > .layout__column_right .slot {
+    #app-canvas .layout_bordered > .layout__column_right {
         display: none !important
+    }
+    #app-canvas .application-mail__wrap > .layout > .layout__main-frame {
+        margin-right: auto !important
     }
     .layer-sent-page > .layer {
         min-height: 0 !important
@@ -1394,6 +1403,12 @@
     }
 }
 
+@-moz-document domain("eurointegration.com.ua") {
+    .header.fixed .layout, header.header {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("eva.ru") {
     body > .eva {
         margin-top: 50px !important
@@ -1454,8 +1469,10 @@
   domain("filmix.co"),
   domain("filmix.email"),
   domain("filmix.ink"),
+  domain("filmix.ltd"),
   domain("filmix.site"),
-  domain("filmix.today") {
+  domain("filmix.today"),
+  domain("filmix.zone") {
     .remove-sda-wrap {
         display: none !important
     }
@@ -2077,6 +2094,12 @@
 @-moz-document domain("iphones.ru") {
     #contentShifter {
         height: 127px !important
+    }
+}
+
+@-moz-document domain("isport.ua") {
+    body > .layout {
+        margin-top: 0 !important
     }
 }
 
@@ -3087,9 +3110,9 @@
     }
 }
 
-@-moz-document domain("prostoporno.vip") {
-    .has_adv .content_wrapper {
-        margin-top: 0 !important
+@-moz-document domain("prostoporno.help") {
+    .content_wrapper {
+        padding-top: 0 !important
     }
 }
 
@@ -3276,22 +3299,14 @@
 }
 
 @-moz-document domain("sc2tv.ru") {
-    .main-frame {
-        background:none !important;
-        padding-top:0 !important;
-        cursor:auto !important;
-        pointer-events:none !important
+    .body--brranding > .content {
+        margin-top: unset !important
     }
-    #media {
-        padding-bottom:0 !important
+    html:not(#id) > body:not(#id) .body--brranding > * {
+        pointer-events: auto !important
     }
-    #wrapper > * {
-        pointer-events:auto !important
-    }
-    #wrapper, .low-frame, .sub-frame {
-        position: static !important;
-        float: none !important;
-        width: 100% !important
+    html:not(#id) > body:not(#id) .body--brranding {
+        pointer-events: none !important
     }
 }
 
@@ -3590,6 +3605,18 @@
     }
 }
 
+@-moz-document domain("tochka.net") {
+    .promobar {
+        margin-bottom: 0 !important
+    }
+    body > footer {
+        margin-top: 0 !important
+    }
+    #comments_block {
+        margin-top: unset !important
+    }
+}
+
 @-moz-document domain("torrentinka.me") {
     .dwrp {
         margin-top: 0 !important
@@ -3684,6 +3711,12 @@
     }
 }
 
+@-moz-document domain("uakino.com") {
+    header .container {
+        padding-top: 30px !important
+    }
+}
+
 @-moz-document domain("uniondht.org") {
     .colorAdmin {
         color: black !important;
@@ -3744,6 +3777,12 @@
     }
     .with-cookies-agreements .channels-line {
         top: calc(70px + 0px) !important
+    }
+}
+
+@-moz-document domain("videoredaktor.ru") {
+    div[style^="min-height: 100vh;"] {
+        min-height: 0 !important
     }
 }
 
@@ -3816,6 +3855,15 @@
     .wrap {
         transform: none !important;
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("www.bigmir.net") {
+    body > .page {
+        padding-top: 144px !important
+    }
+    body > #header {
+        top: 0 !important
     }
 }
 
@@ -3936,11 +3984,6 @@
   domain("yandex.ru"),
   domain("yandex.ua"),
   domain("yandex.uz") {
-    .mg-sticky__inner > div[class*="type_partner"] > div {
-        animation: none !important;
-        -webkit-animation: none !important;
-        padding: unset !important
-    }
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) {
         background-color: transparent !important
     }
@@ -3959,7 +4002,6 @@
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
     .map-copyrights ~ .sidebar-container .scroll__content .route-panel-form-view__content > div > div[class][style^="border-top"], 
     .mg-page-layout-item_pos_right div[class*="wrapper"] > div[class]:empty, 
-    .mg-sticky__inner > div[class*="type_partner"] > div > div:empty, 
     .mini-suggest__item_subtype_ad, .serp-list > .incut > .direct, 
     .turbo-advert__loader, 
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
@@ -3991,11 +4033,6 @@
     .mg-page-layout-item div[class^="sport-"] div[class^="turbo-"] {
         min-height: 0 !important
     }
-    .mg-sticky__inner > div[class*="type_partner"] {
-        min-height: 0 !important;
-        padding: unset !important;
-        will-change: unset !important
-    }
     .b-page {
         padding-top: 0 !important
     }
@@ -4013,11 +4050,8 @@
 }
 
 @-moz-document domain("yandex.ru") {
-    .full-root > .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div:first-child {
-        display: none !important
-    }
-    .full-root > .page-root > #page div[class^="_"] > div > script + section > div:not([class]) > div[class^="_"] ~ div[class^="_"] > div[class^="_"] ~ div > div:first-child, 
-    .full-root > .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div {
+    div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section > div:not([class]) > div[class^="_"] ~ div[class^="_"] > div[class^="_"] ~ div > div:first-child, 
+    div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div {
         min-height: 0 !important
     }
 }
