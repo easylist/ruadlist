@@ -5588,11 +5588,11 @@ wowskill.ru##div[class="side-blok"]
 seasonvar.ru##div[class="sidebar lside"] > :not(div)
 driver.ru##div[class] > a[href][target="_blank"] > img
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
+2gis.ru#?#div[class]:-abp-has(> [class] > span ~ a[href^="http://redirect.2gis.com/adv/"])
 spafilms.me#?#div[class]:-abp-has(> a[title] > div[class])
 gdespaces.com,spac.me,spac1.com,spac1.me,spac1.net,spaces.im#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
 drive2.ru#?#div[class]:-abp-has(> div > div > .drom-logo)
-2gis.ru#?#div[class]:-abp-has(> div[class] > div[class]:-abp-contains(/^Организации рядом$|^Похожие организации$/))
-2gis.ru#?#div[class]:-abp-has(> div[class] > span + a[href^="http://redirect.2gis.com/adv/"])
+2gis.ru#?#div[class]:-abp-has(> div[class] > [class]:-abp-contains(/^Организации рядом$|^Похожие организации$/))
 novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
 sdamgia.ru##div[class]:not([id]):first-child > div[class*=" "] > div[class*=" "] > div[class*=" "]
 ytvideo.ru##div[class][data-aid]
