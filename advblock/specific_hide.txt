@@ -1841,10 +1841,6 @@ oko-planet.su#?#.bltitle:-abp-contains(Реклама)
 dnepr.info##.blue-bann
 mediametrics.ru,ok-magazine.ru,s13.ru##.bn
 dota2.ru##.bn-btm
-novozybkov.su##.bn-content.bn-layout-cell > .widget
-novozybkov.su##.bn-sheet > div[align="center"]
-novozybkov.su##.bn-sidebar1 > :not([class*="comment"]):not(:last-child)
-novozybkov.su##.bn-sidebar2 > div[id^="search"] + div ~ :not(.widget_calendar):not(:last-child)
 mgorod.kz##.bn-slider
 kinoplex.ru##.bn-top10
 rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##.bn-topic
@@ -5280,8 +5276,8 @@ vk.com##aside[aria-label="Актуальные новости"]
 novozybkov.su##aside[data-alias="Заголовок"] .widget-area > .widget_text
 bryansknovosti.ru,novozybkov.su##aside[data-alias="Над новостями"]
 bryansknovosti.ru,novozybkov.su##aside[data-alias="Под меню"]
-novozybkov.su##aside[data-alias="Слева"] .widget-area > .widget_text
-bryansknovosti.ru##aside[data-alias="Слева"] .widget-area > .widget_text ~ .widget_text
+novozybkov.su##aside[data-alias="Слева 1"] .widget-area > .widget_text:nth-child(3) ~ .widget_text
+bryansknovosti.ru,novozybkov.su##aside[data-alias="Слева"] .widget-area > .widget_text ~ .widget_text
 bryansknovosti.ru,novozybkov.su##aside[data-alias="Справа"] .widget-area > .widget_text ~ .widget_text
 kino-zal.tv##blink
 1progs.ru,2womans.ru,freepiks.ru,psysovet24.ru##blockquote
