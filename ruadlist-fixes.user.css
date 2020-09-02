@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200824.342
+@version 0.20200902.2354
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -266,6 +266,7 @@
   domain("uphdrezka.com"),
   domain("userstyles.org"),
   domain("xatab-repack.com"),
+  domain("xatab-repack.org"),
   domain("youhdrezka.com"),
   domain("zakarpatpost.net"),
   domain("zakon.kz") {
@@ -404,7 +405,7 @@
 }
 
 @-moz-document domain("aces.gg") {
-    body {
+    html:not(#ublock0-epicker) body {
         background: black !important;
         cursor: default
     }
@@ -483,7 +484,7 @@
     html > body:not(#id) > * {
         pointer-events: auto !important
     }
-    html > body:not(#id) {
+    html:not(#ublock0-epicker) > body:not(#id) {
         pointer-events: none !important;
         background-color: #eff1f2 !important
     }
@@ -695,7 +696,7 @@
     #header_h {
         background-image: none !important
     }
-    body {
+    html:not(#ublock0-epicker) body {
         background-image: none !important;
         background-color: #e4f1f6 !important
     }
@@ -913,7 +914,7 @@
     html > body > * {
         pointer-events: auto !important
     }
-    html > body {
+    html:not(#ublock0-epicker) > body {
         pointer-events: none !important;
         background-image: none !important;
         background-color: rgb(236, 234, 225) !important
@@ -967,7 +968,7 @@
   domain("cartoonka.art"),
   domain("multmania.club"),
   domain("tlumtluda.info") {
-    body {
+    html:not(#ublock0-epicker) body {
         background: black !important
     }
     div[style="clear:both;"] > div[class]:first-child {
@@ -1219,13 +1220,6 @@
     }
 }
 
-@-moz-document domain("drive.ru") {
-    body > div {
-        background: none !important;
-        padding-top: 0 !important
-    }
-}
-
 @-moz-document
   domain("drive2.com"),
   domain("drive2.ru") {
@@ -1340,7 +1334,7 @@
     .wdpu-container, .wpmui-overlay {
         display: none !important
     }
-    body, html {
+    html:not(#ublock0-epicker), html:not(#ublock0-epicker) body {
         padding-top: 0 !important;
         background: whitesmoke !important;
         overflow: auto !important;
@@ -1510,6 +1504,15 @@
     }
 }
 
+@-moz-document
+  domain("flashscore.com.ua"),
+  domain("flashscore.kz"),
+  domain("flashscore.ru") {
+    [data-bookmaker-id], [onclick*="bookmaker"] {
+        pointer-events: none !important
+    }
+}
+
 @-moz-document domain("footballhd.ru") {
     body > #header {
         margin-top: 0 !important
@@ -1592,7 +1595,7 @@
   domain("freehat.cc"),
   domain("lalapaluza.ru"),
   domain("moviebuster.tv") {
-    body:not(#id) {
+    html:not(#ublock0-epicker) body:not(#id) {
         background: whitesmoke !important
     }
 }
@@ -1666,7 +1669,7 @@
 }
 
 @-moz-document domain("gamebomb.ru") {
-    body {
+    html:not(#ublock0-epicker) body {
         background-color: #303030 !important
     }
     #ssdfsd {
@@ -1698,7 +1701,7 @@
 }
 
 @-moz-document domain("gametech.ru") {
-    body {
+    html:not(#ublock0-epicker) body {
         background: #eee !important
     }
 }
@@ -1832,7 +1835,7 @@
 }
 
 @-moz-document domain("gta.com.ua") {
-    body {
+    html:not(#ublock0-epicker) body {
         background-image: none !important;
         background-color: #f5f5f5 !important
     }
@@ -1923,7 +1926,7 @@
 }
 
 @-moz-document domain("hentaiz.org") {
-    body {
+    html:not(#ublock0-epicker) body {
         background: #4ba1ba !important
     }
     .toporg {
@@ -1960,7 +1963,7 @@
   domain("zloekino.com"),
   domain("zloekino.ru"),
   domain("zloekino.su") {
-    body {
+    html:not(#ublock0-epicker) body {
         background-color: #596c84 !important
     }
 }
@@ -1997,7 +2000,7 @@
 }
 
 @-moz-document domain("hs-manacost.ru") {
-    body {
+    html:not(#ublock0-epicker) body {
         background-image: none !important;
         background-color: whitesmoke !important
     }
@@ -2104,7 +2107,7 @@
 }
 
 @-moz-document domain("ixbt.com") {
-    body {
+    html:not(#ublock0-epicker) body {
         background-color: white !important
     }
     body:not(#id) > .b-content.b-content__breadcrumbs, 
@@ -2114,7 +2117,7 @@
 }
 
 @-moz-document domain("kaluga-poisk.ru") {
-    body:not(#id) {
+    html:not(#ublock0-epicker) body:not(#id) {
         background: whitesmoke !important
     }
 }
@@ -2135,7 +2138,7 @@
 }
 
 @-moz-document domain("kg-portal.ru") {
-    body {
+    html:not(#ublock0-epicker) body {
         background-image: none !important;
         background: #bdbdbd !important
     }
@@ -2280,7 +2283,7 @@
 }
 
 @-moz-document domain("kinoteatr.ru") {
-    html > body {
+    html:not(#ublock0-epicker) > body {
         background-image: none !important;
         background-color: black !important
     }
@@ -2311,7 +2314,7 @@
   domain("lordsfilm.net"),
   domain("lordsfilm.pro"),
   domain("lordsfilms.pro") {
-    html > body {
+    html:not(#ublock0-epicker) > body {
         background-color: #e5e5e5 !important
     }
     body > .wrap {
@@ -2380,6 +2383,15 @@
     }
     div[id^="post_"][class="__post-content-preview"] {
         max-height: none !important
+    }
+}
+
+@-moz-document domain("latifundimag.com") {
+    body > .wrapper > * {
+        pointer-events: auto !important
+    }
+    body > .wrapper {
+        pointer-events: none !important
     }
 }
 
@@ -2452,7 +2464,7 @@
   domain("lostfilm.run"),
   domain("lostfilm.tv"),
   domain("lostfilm.tw") {
-    body {
+    html:not(#ublock0-epicker) body {
         background-image: none !important;
         background-color: #1c1e1f !important
     }
@@ -2546,6 +2558,12 @@
     }
 }
 
+@-moz-document domain("mediasat.info") {
+    .td-ad-background-link #td-outer-wrap {
+        cursor: default !important
+    }
+}
+
 @-moz-document domain("mel.fm") {
     .i-layout_branding {
         background-image: none !important
@@ -2593,7 +2611,7 @@
 }
 
 @-moz-document domain("mobile-review.com") {
-    html > body {
+    html:not(#ublock0-epicker) > body {
         background-color: white !important
     }
     body > .navbar {
@@ -2602,7 +2620,7 @@
 }
 
 @-moz-document domain("mobiltelefon.ru") {
-    html > body {
+    htmll:not(#ublock0-epicker) > body {
         background-color: #f7f8f9 !important
     }
     #move_up[style*="left: -40px;"] {
@@ -2707,7 +2725,8 @@
 }
 
 @-moz-document domain("naruto-base.su") {
-    .footerLeft, .footerRight, body, html {
+    .footerLeft, .footerRight, html:not(#ublock0-epicker), 
+    html:not(#ublock0-epicker) body {
         background-color: #fff7e3 !important
     }
     body > [onclick], body > p {
@@ -2911,8 +2930,9 @@
 
 @-moz-document
   domain("otxataba.net"),
-  domain("xatab-repack.com") {
-    body {
+  domain("xatab-repack.com"),
+  domain("xatab-repack.org") {
+    html:not(#ublock0-epicker) body {
         background-color: #e5e5e5 !important
     }
     .page-wrapper {
@@ -2951,7 +2971,7 @@
 }
 
 @-moz-document domain("penzainform.ru") {
-    body {
+    html:not(#ublock0-epicker) body {
         cursor: auto;
         pointer-events: none;
         background: whitesmoke !important
@@ -3055,7 +3075,7 @@
 }
 
 @-moz-document domain("pornreactor.cc") {
-    #background, #container, body {
+    #background, #container, html:not(#ublock0-epicker) body {
         background: #6d1700 !important;
         padding-top: 0 !important
     }
@@ -3161,14 +3181,10 @@
 }
 
 @-moz-document domain("razlozhi.ru") {
-    div[data-id][data-size] ~ div:not([style^="background-image:"]):not(:last-child) {
-        margin-left: 0 !important
-    }
     html > head ~ body {
         width: 100% !important
     }
     body div[class][style^="background: url"][style*="bgpattern."][style*="width:"][style*="height:"], 
-    div[data-id][data-size] ~ div:not([style^="background-image:"]) > div[class]:first-child, 
     html > body > div[class] {
         width: auto !important
     }
@@ -3293,7 +3309,7 @@
         color: #006699 !important;
         font-weight: 100 !important
     }
-    #main-nav .floatR {
+    #main-nav .floatR, #topic_main > [id^="post_"] ~ .hide-for-print {
         display: none !important
     }
 }
@@ -3443,7 +3459,7 @@
 @-moz-document
   domain("sports.ru"),
   domain("tribuna.com") {
-    html > body {
+    html:not(#ublock0-epicker) > body {
         background-image: none !important;
         background-color: #a7a7a7 !important
     }
@@ -3540,7 +3556,7 @@
 }
 
 @-moz-document domain("tehnot.com") {
-    html > body {
+    html:not(#ublock0-epicker) > body {
         background-image: none !important;
         background-color: #e8e8e8 !important;
         cursor: auto !important
@@ -3579,7 +3595,7 @@
 }
 
 @-moz-document domain("thg.ru") {
-    body {
+    html:not(#ublock0-epicker) body {
         background: whitesmoke !important
     }
     body > div[style*='1010'] {
@@ -3591,13 +3607,13 @@
 @-moz-document
   domain("tjournal.ru"),
   domain("vc.ru") {
-    body:not(#id) {
+    html:not(#ublock0-epicker) body:not(#id) {
         background-color: #f0f0f0 !important
     }
 }
 
 @-moz-document domain("tnt-online.ru") {
-    body {
+    html:not(#ublock0-epicker) body {
         background-color: #fff !important
     }
     #all:not(#id) > #content {
@@ -3695,7 +3711,7 @@
 }
 
 @-moz-document domain("ua-cinema.com") {
-    body {
+    html:not(#ublock0-epicker) body {
         background: #091016 !important
     }
     .head-top {
@@ -3704,7 +3720,7 @@
 }
 
 @-moz-document domain("ua.news") {
-    body {
+    html:not(#ublock0-epicker) body {
         background-image: none !important;
         background-color: #ffffff !important;
         padding-top: 0 !important
@@ -3902,7 +3918,7 @@
 }
 
 @-moz-document domain("www.kinopoisk.ru") {
-    html:not(#id):not([style="height: 100%; width: 100%;"]) {
+    html:not(#ublock0-epicker):not(#id):not([style="height: 100%; width: 100%;"]) {
         background-color: #e6e6e6 !important
     }
     #header-info-bg {
@@ -3963,7 +3979,7 @@
 }
 
 @-moz-document domain("www.zoneofgames.ru") {
-    html > body:not(#id) {
+    html:not(#ublock0-epicker) > body:not(#id) {
         background-color: #3a3a3a !important
     }
     #columns > .transparent {
@@ -4033,6 +4049,10 @@
     .mg-page-layout-item div[class^="sport-"] div[class^="turbo-"] {
         min-height: 0 !important
     }
+    body[data-bem*="/turbo/nzya/"] div[class$="rect"][id][data-name] {
+        min-height: 0 !important;
+        height: unset !important
+    }
     .b-page {
         padding-top: 0 !important
     }
@@ -4059,7 +4079,7 @@
 @-moz-document
   domain("yap.ru"),
   domain("yaplakal.com") {
-    html > body:not(#id) {
+    html:not(#ublock0-epicker) body:not(#id) {
         background-color: #9ab9a7 !important
     }
     #footer {
