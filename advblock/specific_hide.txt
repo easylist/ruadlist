@@ -5493,7 +5493,9 @@ koolinar.ru#?#div:-abp-has(> header ~ a[href][rel="sponsored"])
 rp5.am,rp5.by,rp5.co.uk,rp5.kz,rp5.lt,rp5.lv,rp5.md,rp5.ru,rp5.ua#?#div:-abp-has(> ins)
 draug.ru#?#div:-abp-has(> script:-abp-contains(snowsrc))
 football.kulichki.net#?#div:-abp-has(> table > tbody a[href*="kulichki.com/advert"])
+www.ukr.net##div:not([id]):not([class]):first-child > style ~ div div > style ~ div
 sdamgia.ru##div:not([id]):not([class]):first-child > style:first-child + div[class][style]
+www.ukr.net##div:not([id]):not([class]):first-child > style:first-child ~ div iframe
 tomat-pomidor.com##div:not([id]):not([class])[style^="min-height:"]
 vz.ru##div:not([id])[style*="margin"][style*="width: 240px"]
 darkmoney.at##div[align="center"] > a[href] > img[src*=".gif"]
