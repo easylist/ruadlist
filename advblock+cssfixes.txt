@@ -296,8 +296,8 @@ ok.ru##.feed-list > .feed-w:has(.feed_ava ~ div div > span ~ span ~ span ~ span 
 e.mail.ru#@#.layout_right-size_60 .layout__main-frame:style(margin-right: auto!important;)
 @@||ad.mail.ru/adq/$script,domain=target.my.com
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
-e.mail.ru,octavius.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div > div:style(display: block !important)
-e.mail.ru,octavius.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div:style(display: block !important)
+e.mail.ru,octavius.mail.ru##body:not(#id) > div[style*="position: absolute;"][style*="visibility: hidden;"][style*="top:"][style*="left:"] > div > div:style(display: block !important)
+e.mail.ru,octavius.mail.ru##body:not(#id) > div[style*="position: absolute;"][style*="visibility: hidden;"][style*="top:"][style*="left:"] > div:style(display: block !important)
 ||ad.mail.ru/adp/$redirect=empty
 ||ad.mail.ru/adq/$redirect=empty
 ||ad.mail.ru/vast/$redirect=empty
@@ -307,11 +307,6 @@ e.mail.ru,octavius.mail.ru##body:not(#id) > div[style="position: absolute; visib
 ||pulse.mail.ru^$domain=~pulse.mail.ru
 ||recostream.go.mail.ru^$domain=~pulse.mail.ru|~recostream.go.mail.ru
 ||static.viqeo.tv/js/vq_starter.js$third-party,domain=mail.ru|sportmail.ru
-!
-! Эксперимент на главной mail.ru, которая порой неоправданно долго грузится
-mail.ru##+js(set-constant, Object.prototype.ad/rectangle, undefined)
-mail.ru##+js(set-constant, Object.prototype.ad/tgb, undefined)
-mail.ru##+js(set-constant, Object.prototype.extension/bubble-home, undefined)
 !
 ! Progorod и их сайты
 pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progorodnsk.ru,progorodsamara.ru,progoroduhta.ru,prokazan.ru##+js(abort-on-property-write, __XRABStatus)
