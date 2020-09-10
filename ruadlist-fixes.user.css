@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200902.2354
+@version 0.20200910.1244
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -74,6 +74,7 @@
   domain("ezhdrezka.com"),
   domain("film-max.ru"),
   domain("film-ua.com"),
+  domain("filmitorrent.net"),
   domain("filmy-smotret.net"),
   domain("gethdrezka.com"),
   domain("gidonline.io"),
@@ -985,7 +986,7 @@
     }
 }
 
-@-moz-document domain("censor.net.ua") {
+@-moz-document domain("censor.net") {
     body > .widget_header {
         padding-top: 60px !important
     }
@@ -1155,13 +1156,7 @@
     }
 }
 
-@-moz-document domain("doefiratv.net") {
-    .b-cell > div[id] {
-        padding-top: 0 !important
-    }
-}
-
-@-moz-document domain("doramax.tv") {
+@-moz-document domain("doramax.net") {
     .wrapper.full {
         margin-top: 70px !important
     }
@@ -1226,7 +1221,7 @@
     .js-page > div[class$="-header"] + div[class] > div[class]:not([class*="column"]):first-child + div[class]:last-child {
         box-shadow: none !important
     }
-    .c-dv-container, .dv-post-header, 
+    .c-dv-container, .c-pager + div[class]:last-child, .dv-post-header, 
     .offer[itemtype="http://schema.org/Product"] + div, 
     .offer[itemtype="http://schema.org/Product"] + div + div, 
     [itemtype="http://schema.org/Review"] + div[class$="content"] ~ div[class]:last-child > div[class$="content"]:first-child + div, 
@@ -1322,6 +1317,9 @@
     .layer-sent-page > .layer {
         min-height: 0 !important
     }
+    #app-canvas .paginator-container {
+        right: 8px !important
+    }
 }
 
 @-moz-document domain("echo.msk.ru") {
@@ -1406,6 +1404,12 @@
 @-moz-document domain("eva.ru") {
     body > .eva {
         margin-top: 50px !important
+    }
+}
+
+@-moz-document domain("fastpic.ru") {
+    main#mainContainer {
+        max-width: unset !important
     }
 }
 
@@ -2429,6 +2433,12 @@
     }
 }
 
+@-moz-document domain("lifehacker.ru") {
+    .slider__item-image-link, a.article-card__cover {
+        background: none !important
+    }
+}
+
 @-moz-document domain("lifetambov.ru") {
     .theme-wrapper > .container > div {
         padding-bottom: unset !important
@@ -2513,7 +2523,7 @@
         border-left-color: rgb(0, 95, 249) !important;
         box-shadow: rgb(0, 95, 249) 0 0 0 10px inset !important
     }
-    #bubble-home, body > .grid .grid__rcol > .games, 
+    #bubble-home, body > .grid .grid__rcol, 
     body > .grid .i-pull-left.coronavirus > .wrapper > .footer, 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
@@ -3185,6 +3195,7 @@
         width: 100% !important
     }
     body div[class][style^="background: url"][style*="bgpattern."][style*="width:"][style*="height:"], 
+    body div[class][style^="background: url"][style*="bgpattern."][style*="width:"][style*="height:"] > div[class] > div[class][style^="width:"], 
     html > body > div[class] {
         width: auto !important
     }
