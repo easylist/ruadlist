@@ -867,6 +867,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#.news-app__feed > .mg-grid__
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.news-top-rubric-heading > span:only-child
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,tv.yandex.uz##.recommended-ott
 radioprofusion.com##.revolvermaps
+/^https?://mail\.yandex\.(by|kz|ru|ua|uz)/[^\s]{120,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|yandex.uz
 /^https?://rkn\.gov\.ru\/(?!js\/)+[a-z0-9]{15,25}\.js\?+[0-9]{7,15}/$script,domain=rkn.gov.ru
 /^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 4pda.*##html[style] > body :not(div) ~ :not(div)[class][id][style]:style(background-image: none !important)
@@ -898,7 +899,6 @@ radioprofusion.com##footer > .counter
 4pda.ru##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
 lostfilm.tv,lostfilm.tw##img[width="1"][height="1"]
 lena-miro.ru,levik.blog,livejournal.*,olegmakarenko.ru,shakko.ru,varlamov.*#?#+js(set-constant.js, Object.prototype.Begun, undefined)
-mail.yandex.*##+js(set-constant.js, Object.prototype.isNativeDirectLineEnabled, null)
 nova.rambler.*#?#+js(abort-on-property-read.js, Object.prototype.AdvManager)
 4pda.ru##tbody > tr[valign="top"] > td[width*="20"] + td[class]
 www.kinopoisk.*#?#+js(set-constant.js, Object.prototype.getMatchidManager, noopFunc)
