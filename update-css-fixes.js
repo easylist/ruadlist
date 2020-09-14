@@ -1,8 +1,10 @@
+// jshint esversion: 8
+// jshint unused: true
 let fs = require('fs');
 (()=>{
     'use strict';
 
-    console.log('Loading filters...')
+    console.log('Loading filters...');
     let cssFileName = './css-fixes-experimental.txt';
     let fixesFileName = './ruadlist-fixes.user.css';
     let templateFileName = `${fixesFileName}.template`;
@@ -24,7 +26,7 @@ let fs = require('fs');
         let [hr, mi] = [ctime.getHours(), ctime.getMinutes()];
         version = `0.${yr}${fmt(mn)}${fmt(dy)}.${hr > 0 ? hr : ''}${hr > 0 ? fmt(mi) : mi}`;
     }
-    console.log('New version:', version)
+    console.log('New version:', version);
     if (!version || !oldVersion)
         throw `Unable to determine version. Exit.`;
     if (oldVersion === version) {
@@ -38,7 +40,7 @@ let fs = require('fs');
 
     template = template.replace('%version%', version);
 
-    console.log('Parsing filters...')
+    console.log('Parsing filters...');
     let filters = data.split(/[\r\n]+/);
     let filterParts = /^([-\w.,]+)#\??#(.+?)(\:style\((.+)\))?\s*$/;
     let isDeep = /\/deep\//;
@@ -54,7 +56,7 @@ let fs = require('fs');
             if (!parts)
                 continue;
 
-            let [rule, location, selector, skip, style] = parts;
+            let [location, selector, style] = parts;
             style = style || 'display: none !important';
             if (!(location && selector) || isDeep.test(selector)) {
                 skipped.push(filter);
