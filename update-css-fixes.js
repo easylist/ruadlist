@@ -56,7 +56,7 @@ let fs = require('fs');
             if (!parts)
                 continue;
 
-            let [location, selector, style] = parts;
+            let [rule, location, selector, skip, style] = parts;
             style = style || 'display: none !important';
             if (!(location && selector) || isDeep.test(selector)) {
                 skipped.push(filter);
