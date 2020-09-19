@@ -80,6 +80,7 @@
 /^https?://[^/]+/[a-z0-9]{15,}(\?hope=.*)?$/$script,domain=~coco.fr|~ign.com|~justjared.com|~myorderbox.com|~namemc.com|~realtor.ca|~regway.com|~roblox.com|~sap.com|~spongemc.org|~spongepowered.org|~studio-svet.ru|~stumbleupon.com|~trueachievements.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~tv.yandex.ua|~wetteronline.de
 /^https?://[a-z0-9]+\.info/+[-a-z0-9_?&=]{9,}/$third-party,script
 /abnl/?ucozads^
+/ad/base.js?id=$third-party,script
 /ad_click/*$object
 /ad_iframe/*$domain=~convert-video-online.com|~online-audio-converter.com
 /adland.php
