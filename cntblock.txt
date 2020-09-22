@@ -894,6 +894,7 @@ yandex.ru##div > .banner-root ~ .page-root > #page div[class^="_"] > div > scrip
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##div[class*="turbo-advert_type_"]
 inoreader.com##div[id^="leaderboard_ad"] > *
 radioprofusion.com##footer > .counter
+horoscopes.rambler.*#?#+js(set-constant.js, Object.prototype.needShowAlicePopup, null)
 4pda.ru##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 4pda.ru##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
 4pda.ru##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
