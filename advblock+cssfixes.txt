@@ -36,7 +36,6 @@
 4pda.ru##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
 7ogorod.ru##+js(abort-on-property-read, flat_pm_arr)
 @@||ads.adfox.ru/*/getBulk/$xmlhttprequest,badfilter,domain=www.goha.ru
-@@||s.zmctrack.net/z|$third-party,xmlhttprequest,badfilter,domain=forumodua.com
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||studizba.com^$generichide,badfilter
@@ -319,8 +318,8 @@ u-news.com.ua##.side_adv:style(display: block !important; pointer-events: none !
 besplatka.ua,bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,forumodua.com,isport.ua,kolobok.ua,tochka.net,tvgid.ua##body > div:not([id]):not([class]):not([style]):empty:remove()
 besplatka.ua,bigmir.net,censor.net,isport.ua,kolobok.ua,passport.i.ua,tochka.net,toneto.net,ukr.net##body > iframe[name]:not([id]):not([class]):not([src]):remove()
 censor.net,epravda.com.ua,eurointegration.com.ua,forumodua.com,toneto.net,tvgid.ua##head > iframe[name]:not([id]):not([class]):not([src]):remove()
-besplatka.ua,censor.net,toneto.net##style:first-child + div[class]
-besplatka.ua,censor.net,toneto.net##style:first-child ~ slot ~ div[class]
+besplatka.ua,censor.net,forumodua.com,toneto.net##style:first-child + div[class]
+besplatka.ua,censor.net,forumodua.com,toneto.net##style:first-child ~ slot ~ div[class]
 !
 ! Гисметео
 gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
