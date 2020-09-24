@@ -155,7 +155,7 @@ radikal.ru,www.vesti.ru##+js(abort-current-inline-script, document.createElement
 rambler.ru##+js(remove-attr, class, .j-mini-player__video)
 razlozhi.ru##+js(abort-on-property-read, Object.prototype.setTimeout)
 razlozhi.ru##div[class]:matches-css(height: 250px) ~ div:matches-css(width: 1px) + div[class]
-razlozhi.ru##div[class]:matches-css(right: /^-\d|$\dpx/):matches-css(position: absolute):matches-css(display: block):remove()
+razlozhi.ru##div[class]:matches-css(right: /^-\d|$\dpx/):matches-css(box-sizing: border-box):matches-css(display: block):remove()
 remont-aud.net##+js(set-constant, window.ab, false)
 rns.online##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_position)
 rp5.*##+js(no-setTimeout-if, 0x)
