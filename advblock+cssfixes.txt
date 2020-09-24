@@ -217,13 +217,14 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#@#body > .serp_js_inited .serp
 yapx.ru##+js(cookie-remover, /adblock_/)
 zaruba.fun##+js(abort-on-property-read, clickNS4)
 znanija.com##+js(abort-on-property-read, localStorage)
+|http://argumenti.ru^$csp=script-src 'self' * blob: data:,badfilter
+|https://argumenti.ru^$csp=script-src 'self' * blob: data:,badfilter
 ||24molnia.com^$xmlhttprequest,badfilter,domain=24molnia.com
 ||7ogorod.ru^$xmlhttprequest,badfilter,domain=7ogorod.ru
 ||adbutton.net^$script,redirect=noopjs
 ||alau.kz^$xmlhttprequest,badfilter,domain=alau.kz
 ||an.yandex.ru^$domain=e.mail.ru
-||argumenti.ru^$csp=script-src 'self' * blob: data:,badfilter
-||argumenti.ru^$xmlhttprequest,badfilter,domain=argumenti.ru
+||argumenti.ru^$xmlhttprequest,badfilter,domain=argumenti.ru|~mt.argumenti.ru
 ||argumentiru.com^$xmlhttprequest,badfilter,domain=argumentiru.com
 ||bouw.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
 ||bouw.ru^$xmlhttprequest,badfilter,domain=bouw.ru
