@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.916
+VERSION = 3.917
 # Adjusted for RU Adlist by Lain Inverse in 2020
 
 # Import the key modules
@@ -73,7 +73,7 @@ KNOWNPARAMETERS = ("csp", "rewrite", "redirect", "redirect-rule")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
-GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["pull"], ["update", "--check"], ["update"], ["merge"], ["commit", "-m"], ["push"])
+GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["pull"], None, None, ["merge"], ["commit", "-am"], ["push"])
 HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["diff"], ["pull"], ["update", "--check"], ["update"], ["merge"], ["commit", "-m"], ["push"])
 REPOTYPES = (GIT, HG)
 
@@ -401,6 +401,8 @@ def commit (repository, basecommand, userchanges):
         print("\nConnecting to server. Please enter your password if required.")
         # Update the server repository as required by the revision control system
         for command in repository[6:]:
+            if command == None:
+                continue
             if command == repository.commit:
                 command += [comment]
             command = basecommand + command
