@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20200917.1319
+@version 0.20201002.1001
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -65,12 +65,14 @@
   domain("bigcinema-tv.club"),
   domain("bombardir.ru"),
   domain("clubhdrezka.com"),
+  domain("cokinopoisk.com"),
   domain("comedy-portal.net"),
   domain("dnepr.info"),
   domain("drhdrezka.com"),
   domain("dugtor.org"),
   domain("dugtor.ru"),
   domain("ehdrezka.com"),
+  domain("ekinopoisk.com"),
   domain("ezhdrezka.com"),
   domain("film-max.ru"),
   domain("film-ua.com"),
@@ -117,6 +119,7 @@
   domain("jetsetter.ua"),
   domain("justhdrezka.com"),
   domain("kinoaa.ru"),
+  domain("kinoafisha.ua"),
   domain("kinobar.me"),
   domain("kinobe.club"),
   domain("kinoplanet.biz"),
@@ -129,6 +132,7 @@
   domain("liverutor.org"),
   domain("lostserials.com"),
   domain("lotzon.co"),
+  domain("lotzon.pro"),
   domain("metahdrezka.com"),
   domain("moskva.fm"),
   domain("mrhdrezka.com"),
@@ -162,6 +166,8 @@
   domain("the-rutor.org"),
   domain("thehdrezka.com"),
   domain("torentor.co"),
+  domain("torrfan.org"),
+  domain("torrminator.com"),
   domain("trupornolabs.org"),
   domain("tryhdrezka.com"),
   domain("tvhdrezka.com"),
@@ -189,8 +195,10 @@
   domain("ain.ua"),
   domain("betahdrezka.com"),
   domain("clubhdrezka.com"),
+  domain("cokinopoisk.com"),
   domain("drhdrezka.com"),
   domain("ehdrezka.com"),
+  domain("ekinopoisk.com"),
   domain("epravda.com.ua"),
   domain("ezhdrezka.com"),
   domain("film-max.ru"),
@@ -733,7 +741,7 @@
 
 @-moz-document domain("app2top.ru") {
     body > .content, body > .content__full {
-        margin-top: 50px !important
+        margin-top: 0 !important
     }
 }
 
@@ -924,17 +932,6 @@
 @-moz-document domain("btu.org.ua") {
     .alltop1 {
         margin-bottom: 30px !important
-    }
-}
-
-@-moz-document domain("budport.com.ua") {
-    html > body > * {
-        pointer-events: auto !important
-    }
-    html:not(#ublock0-epicker) > body {
-        pointer-events: none !important;
-        background-image: none !important;
-        background-color: rgb(236, 234, 225) !important
     }
 }
 
@@ -1424,6 +1421,12 @@
 }
 
 @-moz-document domain("fastpic.ru") {
+    body > footer {
+        background: none !important
+    }
+    .justify-content-center > .col[id] {
+        max-width: max-content !important
+    }
     main#mainContainer {
         max-width: unset !important
     }
@@ -1688,27 +1691,10 @@
     }
 }
 
-@-moz-document domain("gamebomb.ru") {
-    html:not(#ublock0-epicker) body {
-        background-color: #303030 !important
-    }
-    #ssdfsd {
-        background-image: none !important
-    }
-    .dfgdjkfgh {
-        display: none !important
-    }
-    #content {
-        padding-top: 0 !important;
-        margin-top: 0 !important;
-        pointer-events: none
-    }
-    #basic-content-container > * {
-        pointer-events: auto
-    }
-}
-
 @-moz-document domain("gamemag.ru") {
+    .comment-background {
+        background: none !important
+    }
     .top-branding {
         max-height: 45rem !important
     }
@@ -1827,7 +1813,8 @@
 
 @-moz-document
   domain("gorod.dp.ua"),
-  domain("intermedia.ru.sefon.cc") {
+  domain("intermedia.ru"),
+  domain("sefon.cc") {
     html > body {
         padding-top: unset !important
     }
@@ -1989,6 +1976,12 @@
     }
 }
 
+@-moz-document domain("horoscopes.rambler.ru") {
+    a[data-horo$="::button"] {
+        width: auto !important
+    }
+}
+
 @-moz-document domain("horrorzone.ru") {
     body > .all {
         margin-top: 0 !important
@@ -2103,6 +2096,12 @@
 @-moz-document domain("instagram.com") {
     body[style*="overflow: hidden;"] {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("intermedia.ru") {
+    .general_block > a[href][target="_blank"] {
+        display: none !important
     }
 }
 
@@ -2371,6 +2370,12 @@
     }
 }
 
+@-moz-document domain("korabel.ru") {
+    div[id^="newsid_"] > .row0[style="margin-bottom:8px;"] {
+        pointer-events: none !important
+    }
+}
+
 @-moz-document
   domain("kredos.com.ua"),
   domain("smartphone.ua") {
@@ -2509,7 +2514,7 @@
         color: #fff !important
     }
     body > * > div[style^="padding-top"], body > a[onclick], 
-    body > div:not([id]):not([class]), body > span {
+    body > div:not([id]):not([class]), body > span:nth-child(-n+6) {
         display: none !important
     }
 }
@@ -2540,7 +2545,7 @@
         border-left-color: rgb(0, 95, 249) !important;
         box-shadow: rgb(0, 95, 249) 0 0 0 10px inset !important
     }
-    #bubble-home, body > .grid .grid__rcol, 
+    #bubble-home, .grid__lcol_mailbox .horoscope ~ div, body > .grid .grid__rcol, 
     body > .grid .i-pull-left.coronavirus > .wrapper > .footer, 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
@@ -2566,7 +2571,7 @@
         height: 80px !important
     }
     .grid .grid__ccol {
-        min-width: 600px !important
+        min-width: 640px !important
     }
     body > .grid .i-pull-left.coronavirus {
         z-index: 999 !important
@@ -2977,6 +2982,12 @@
     html:not(#ublock0-epicker) body {
         background-color: #e5e5e5 !important
     }
+    html:not(#ublock0-epicker) > body {
+        font-size: 0 !important
+    }
+    html:not(#ublock0-epicker) > body > * {
+        font-size: medium !important
+    }
     .page-wrapper {
         margin-top: 0 !important
     }
@@ -3352,11 +3363,9 @@
   domain("rutracker.net"),
   domain("rutracker.nl"),
   domain("rutracker.org") {
-    [class^="internal-promo-"]:not(#id) {
-        color: #006699 !important;
-        font-weight: 100 !important
-    }
-    #main-nav .floatR, #topic_main > [id^="post_"] ~ .hide-for-print {
+    #topic_main > [id^="post_"] ~ .hide-for-print, 
+    #topic_main > [id^="post_"] ~ tbody:not([id^="post_"]) > [class], 
+    [class^="internal-promo-"] {
         display: none !important
     }
 }
@@ -3503,6 +3512,15 @@
     }
 }
 
+@-moz-document domain("sports.ru") {
+    .x5-popup-overlay {
+        display: none !important
+    }
+    body.is-fixed {
+        overflow: auto !important
+    }
+}
+
 @-moz-document
   domain("sports.ru"),
   domain("tribuna.com") {
@@ -3518,6 +3536,12 @@
     }
     #branding-layout:not(#id), body.img-bg {
         padding-top: 0 !important
+    }
+    #branding-layout > * > * {
+        pointer-events: auto!important
+    }
+    #branding-layout {
+        pointer-events: none !important
     }
     [data-content-name="banner-static"] {
         position: fixed !important;
@@ -4053,6 +4077,9 @@
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]):after {
         background: transparent !important
     }
+    body[data-bem*="/turbo/nzya/"] .layout__left_sticky [class$="wrapper"] {
+        border: none !important
+    }
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) {
         box-shadow: none !important
     }
@@ -4070,6 +4097,8 @@
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
     body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
+    body[data-bem*="/turbo/nzya/"] div[class$="_status_show"] div[class*="__load-error "], 
+    body[data-bem*="/turbo/nzya/"] div[class*="__item_type_partner "]:empty ~ .loader, 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) > div[class] > div:not([class]), 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Реклама"], 
@@ -4086,6 +4115,10 @@
     .news-app .mg-grid__col > div[class*="banger"] {
         height: unset !important;
         min-height: 0 !important
+    }
+    body.b-page > .b-page__container .card.content__adv.card {
+        margin-bottom: unset !important;
+        padding: unset !important
     }
     .serp-header {
         margin-top: 0 !important
