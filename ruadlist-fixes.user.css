@@ -1,10 +1,19 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20201002.1001
+@version 0.20201009.1402
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
+
+@-moz-document domain("101.ru") {
+    .wrapper-branding {
+        display: none !important
+    }
+    .wrapper {
+        padding-top: 0 !important
+    }
+}
 
 @-moz-document
   domain("1informer.com"),
@@ -548,7 +557,6 @@
 @-moz-document
   domain("allbasketball.org"),
   domain("freerutor.com"),
-  domain("gametech.ru"),
   domain("gidonline.fun"),
   domain("kinoboom.su"),
   domain("oblozhki.net"),
@@ -1709,6 +1717,12 @@
 @-moz-document domain("gametech.ru") {
     html:not(#ublock0-epicker) body {
         background: #eee !important
+    }
+    .tm-wrapper > .tm {
+        margin-bottom: auto !important
+    }
+    body:not(#id) {
+        margin-top: 0 !important
     }
 }
 
@@ -2922,6 +2936,15 @@
     }
 }
 
+@-moz-document domain("ogorodniki.com") {
+    .b-mask {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
+    }
+}
+
 @-moz-document
   domain("oldseedoff.zannn.top"),
   domain("seedoff.innal.top"),
@@ -3134,6 +3157,20 @@
     }
     #container > :not(#page) a[target^="_"] {
         display: none !important
+    }
+}
+
+@-moz-document
+  domain("porus.ru"),
+  domain("ruporus.biz"),
+  domain("ruporus.cc"),
+  domain("ruporus.com"),
+  domain("ruporus.net"),
+  domain("ruporus.top"),
+  domain("ruporus.tv"),
+  domain("ruporus.xyz") {
+    div[class="article vid"] {
+        margin-top: auto !important
     }
 }
 
@@ -4077,7 +4114,7 @@
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]):after {
         background: transparent !important
     }
-    body[data-bem*="/turbo/nzya/"] .layout__left_sticky [class$="wrapper"] {
+    body[data-bem*="turboUid"] .layout__left_sticky [class$="wrapper"] {
         border: none !important
     }
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) {
@@ -4097,8 +4134,8 @@
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
     body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
-    body[data-bem*="/turbo/nzya/"] div[class$="_status_show"] div[class*="__load-error "], 
-    body[data-bem*="/turbo/nzya/"] div[class*="__item_type_partner "]:empty ~ .loader, 
+    body[data-bem*="turboUid"] div[class$="_status_show"] div[class*="__load-error "], 
+    body[data-bem*="turboUid"] div[class*="__item_type_partner "]:empty ~ .loader, 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) > div[class] > div:not([class]), 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Реклама"], 
@@ -4130,7 +4167,7 @@
     .mg-page-layout-item div[class^="sport-"] div[class^="turbo-"] {
         min-height: 0 !important
     }
-    body[data-bem*="/turbo/nzya/"] div[class$="rect"][id][data-name] {
+    body[data-bem*="turboUid"] div[class$="rect"][id][data-name] {
         min-height: 0 !important;
         height: unset !important
     }
