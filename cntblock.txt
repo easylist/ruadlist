@@ -38,7 +38,6 @@
 @@||mc.yandex.ru/metrika/tag.js|$script,domain=auto.ru|auto.yandex|iz.ru
 @@||mc.yandex.ru/metrika/watch.js$domain=amurmedia.ru|auto.ru|carambatv.ru|cashalot.su|chelyabinsk.74.ru|damprodam.ru|eaomedia.ru|irkutskmedia.ru|iz.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|muzofond.org|news.rambler.ru|player.1tv.com|primamedia.ru|sakhalinmedia.ru|samozapis-spb.ru|sevastopolmedia.ru|sherlock.store|sovsport.ru|sprinthost.ru|tvrain.ru|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru|yap.ru|yaplakal.com
 @@||mc.yandex.ru/metrika/watch_visor.js$script,domain=zebratelecom.ru
-@@||mc.yandex.ru/watch/$domain=auto.ru
 @@||mc.yandex.ru/webvisor^$domain=overclockers.ru
 @@||megafon.ru/static/?files=*/piwik.$domain=megafon.ru
 @@||notifications.onliner.by/counters?_=$xmlhttprequest,domain=onliner.by
@@ -841,6 +840,8 @@ yastatic.net#?#+js(abort-on-property-read.js, Ya.preloadVPAIDAd)
 yastatic.net#?#+js(abort-on-property-read.js, getVPAIDAd)
 rutube.ru#?#+js(json-prune.js, creative, creative.id)
 rutube.ru#?#+js(json-prune.js, interactives, interactives.0)
+auto.ru#?#div:matches-css-before(content: /Реклама/)
+auto.ru#?#div:matches-css-before(content: /Реклама/) ~ div
 !e.mail.ru,octavius.mail.ru#?#+js(set-constant.js, Object.prototype.delegateCount, null)
 ivi.ru#?#+js(set-constant.js, Object.prototype.hasAdv, noopFunc)
 rutracker.lib,rutracker.net,rutracker.nl,rutracker.org#?#+js(set-constant.js, String.prototype.startsWith, noopFunc)
