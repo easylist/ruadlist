@@ -424,15 +424,13 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://www\.e1\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.e1.ru
 /^https?://www\.kinopoisk\.ru/[^\s]{300,}/$popup,subdocument,domain=www.kinopoisk.ru
 /^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
-/^https?://www\.livelib\.ru+\/(?!swnew)[a-z0-9]+\.js$/$domain=livelib.ru
-/^https?://www\.livelib\.ru+\/[a-z0-9]{5,}$/$xmlhttprequest,domain=livelib.ru
 /^https?://x-video\.top\/(?!engine\/|templates\/)/$script,domain=x-video.top
 /^https?:\/\/(?!mplay\.agorov\.org\/|play\.agorov\.org\/|play\.animegost\.org\/|www\.wakanim\.tv\/)/$subdocument,domain=agorov.org|animevost.am|animevost.org|animevost.site|smotret-anime-365.ru
 /ad*.tutu.ru^*_*.php|
 /afrsasync*.js$script,domain=auto.vesti.ru|gubernia.com
 /api*iframe$subdocument,domain=get-tune.cc|iplayer.info|ipleer.fm|mp3cc.biz|mp3iq.com|sexxx.name|xmusic.name
 /api/branding/*$domain=lalafo.az|lalafo.kg
-/app.js|$script,domain=livelib.ru|vesti.ru
+/app.js|$script,domain=vesti.ru
 /arscode-ninja-popups/*$domain=animalreader.ru|mensgen.ru|vovetnam.su
 /assets/files/*$domain=buzday.ru|nsday.ru|orenday.ru|perevolockday.ru|saltday.ru|sorochinskday.ru
 /assets/vendor/*.xml$xmlhttprequest,domain=allohalive.com|aniqit.com|anivod.com|doefiratv.net|kodik.biz|kodik.cc|kodik.info|kodikdb.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.animejoy.ru|video.doramatv.su
@@ -1867,8 +1865,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||livejournal.com/services/scrollbanner.bml?
 ||livejournal.com^*&callback=*saveFeed$script,domain=livejournal.com
 ||livejournal.ru/i/reskining/
-||livelib.ru/img/promo/
-||livelib.ru/side/index$xmlhttprequest
+||livelib.ru/book/getpriceblock?
 ||livesport.pw/uppod/ads.json
 ||livesport.ru/i/v12/files/js/fly_wow.js
 ||livesport.ru/i/v12/files/js/z.js
@@ -2664,7 +2661,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||s-info.ru/img/recl/
 ||s-platoon.ru/barek/
 ||s-platoon.ru/rek/
-||s.livelib.ru/img/company/
 ||s13.ru/bframe/
 ||s1block.com^$third-party
 ||safe.vk-saver.in.ua^$domain=vk-saver.in.ua
