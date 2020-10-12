@@ -55,6 +55,7 @@ bryansknovosti.ru,novozybkov.su##+js(abort-on-property-read, stopPrntScr)
 buzday.ru,hlamer.ru,lostpix.com,nsday.ru,ontivi.net,orenday.ru,perevolockday.ru,potokcdn.com,prostoporno.help,saltday.ru,sorochinskday.ru,uploadimagex.com,wowskill.ru,xittv.net,zloekino.com,zloekino.ru,zloekino.su##+js(abort-on-property-read, open)
 castle-tv.com##+js(abort-on-property-read, WebSocket)
 cdnvideo.ru##+js(set-constant, Object.prototype.autoPlay, false)
+changeua.com,ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+js(set-constant, Object.prototype.AdvertisementManager, undefined)
 city.ogo.ua##+js(abort-on-property-read, myatu_bgm)
 comp-service.kiev.ua##+js(abort-on-property-read, window.alert)
 daz3d.ru##+js(abort-current-inline-script, decodeURIComponent, /63cc63/)
@@ -250,7 +251,6 @@ znanija.com##+js(abort-on-property-read, localStorage)
 ||rueconomics.ru^$csp=script-src 'self' * blob: data:,badfilter
 ||shtrafsud.ru^$xmlhttprequest,badfilter,domain=shtrafsud.ru
 ||simpsonsua.com.ua^$csp=script-src 'self' * data:,badfilter
-||starlight.digital/*format=preroll$xmlhttprequest,redirect=noop.txt,domain=player.starlight.digital
 ||static-mon.yandex.net/static/main.js$script,redirect=noopjs
 ||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
 ||strm.yandex.ru/get/$script,redirect=silent-noeval.js,domain=yandex.ru|yastatic.net
@@ -259,7 +259,6 @@ znanija.com##+js(abort-on-property-read, localStorage)
 ||tele.ru^$xmlhttprequest,badfilter,domain=tele.ru
 ||teleprogramma.pro^$xmlhttprequest,badfilter,domain=teleprogramma.pro
 ||utarget.ru/check_geo/|$script,redirect=empty,domain=memepedia.ru
-||vod.tvstitch.com^$xmlhttprequest,redirect=noop.txt,domain=player.starlight.digital
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 !
 ! Mail.RU
