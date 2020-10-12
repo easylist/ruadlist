@@ -1268,6 +1268,12 @@ e.mail.ru,octavius.mail.ru###app-canvas .layout_bordered > .layout__column_right
 e.mail.ru,octavius.mail.ru#?##app-canvas .paginator-container:style(right: 8px !important)
 e.mail.ru###theme #LEGO #leftcol-banners
 e.mail.ru,octavius.mail.ru#?#.layer-sent-page > .layer:style(min-height: 0 !important)
+!
+! временные правила, добавленные в связи с обходом, до выяснения (намеренный он или нет)
+e.mail.ru,octavius.mail.ru##.application-mail__wrap > div[class][style^="max-width:"] > div:first-child + div[class] + div[class]
+e.mail.ru,octavius.mail.ru##.application-mail__wrap > div[class][style^="max-width:"] > div:first-child + div[class]:style(margin-right: auto !important)
+e.mail.ru,octavius.mail.ru##.promo-block-letter + div[class]
+e.mail.ru,octavius.mail.ru##.spec-project-letter + div[class]
 ! ---
 mail.ru###bubble-home
 my.mail.ru###history_container > div[class][style*="display: block!important"]
