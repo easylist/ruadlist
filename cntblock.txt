@@ -838,8 +838,6 @@ e.mail.ru###theme #LEGO #leftcol-banners
 animedub.ru#@#*
 joyreactor.cc,pornreactor.cc,reactor.cc#?#+js(abort-on-property-read.js, Joyreactor.show_ads)
 auto.ru#?#+js(abort-on-property-read.js, Object.prototype.AdFilterData)
-yastatic.net#?#+js(abort-on-property-read.js, Ya.preloadVPAIDAd)
-yastatic.net#?#+js(abort-on-property-read.js, getVPAIDAd)
 rutube.ru#?#+js(json-prune.js, creative, creative.id)
 rutube.ru#?#+js(json-prune.js, interactives, interactives.0)
 auto.ru#?#div:matches-css-before(content: /Реклама/)
@@ -911,12 +909,12 @@ nova.rambler.*#?#+js(abort-on-property-read.js, Object.prototype.AdvManager)
 ||yastatic.net/*/front-maps-static/*/chunks/promo/
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$xmlhttprequest
 ~vh.yandex.ru,~yandex.net,yandex.*#?#+js(abort-on-property-read.js, Ya.loaderVer)
-~yandex.net,yandex.*#?#+js(abort-on-property-read.js, ya.mediaAd)
 ~yandex.net,yandex.*#?#+js(abort-on-property-read.js, yaads.renderBlock)
 ~yandex.net,yandex.*#?#+js(abort-on-property-read.js, yaads.renderWidget)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.getHoneypot, null)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.getYaads, null)
-~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.hasPreroll, noopFunc)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.initWidgetBlock, falseFunc)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.loaderVer, noopFunc)
+~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.useAbdBundle, false)
 ~yandex.net,yandex.*#?#+js(set-constant.js, __AAB__, false)
+~yandex.net,yastatic.net,yandex.*#?#+js(set-constant.js, Object.prototype.hasPreroll, noopFunc)
