@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20201015.2245
+@version 0.20201022.1128
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -575,6 +575,9 @@
 @-moz-document domain("allboxing.ru") {
     .content-wrapper {
         margin-top: 0 !important
+    }
+    body {
+        padding-top: 0 !important
     }
     body * {
         transition: none !important
@@ -1430,6 +1433,12 @@
     }
 }
 
+@-moz-document domain("fanserial.net") {
+    .wrapper main {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("fastpic.ru") {
     body > footer {
         background: none !important
@@ -1856,6 +1865,9 @@
     body {
         background-image: none !important;
         pointer-events: none !important
+    }
+    a[href*="utm_campai"] > div > img {
+        display: none !important
     }
     body > :not(a) {
         pointer-events: auto !important
@@ -2610,6 +2622,9 @@
 @-moz-document
   domain("mail.ru"),
   domain("sportmail.ru") {
+    .article__item_source_viqeo {
+        background-color: #f3f3f3 !important
+    }
     #video-footer, .ph-balloon, .pulse-lenta {
         display: none !important
     }
@@ -4190,10 +4205,6 @@
     .serp-header {
         margin-top: 0 !important
     }
-    body[class*="logged "][class*=" b-page_"] .footer, 
-    body[class*="logged "][class*=" b-page_"] .rows__row_last > [role="complementary"] {
-        margin-top: auto !important
-    }
     .mg-page-layout-item div[class^="sport-"] div[class^="turbo-"] {
         min-height: 0 !important
     }
@@ -4210,6 +4221,9 @@
     }
     .mg-page-layout-item_pos_right div[class*="wrapper"] > div {
         padding: 0 !important
+    }
+    .media-infinity-footer__content_sticky_yes {
+        position: fixed !important
     }
     .head-stripe {
         position: fixed !important;
