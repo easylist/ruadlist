@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20201022.1128
+@version 0.20201028.638
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -1337,8 +1337,8 @@
     #app-canvas .layout_bordered > .layout__column_right {
         display: none !important
     }
-    #app-canvas .application-mail__wrap > .layout > .layout__main-frame {
-        margin-right: auto !important
+    .application-mail__wrap > .application-mail__layout > .layout[style*="grid-template-columns:"] {
+        grid-template-columns: 232px 1fr 0 0 !important
     }
     .layer-sent-page > .layer {
         min-height: 0 !important
@@ -4204,6 +4204,9 @@
     }
     .serp-header {
         margin-top: 0 !important
+    }
+    .main .widgets__col_td_1 {
+        max-width: unset !important
     }
     .mg-page-layout-item div[class^="sport-"] div[class^="turbo-"] {
         min-height: 0 !important
