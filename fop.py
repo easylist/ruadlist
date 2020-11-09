@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.917
+VERSION = 3.918
 # Adjusted for RU Adlist by Lain Inverse in 2020
 
 # Import the key modules
@@ -63,13 +63,13 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt", "antinuha.txt",
           "enhancedstats-addon.txt", "fanboy-tracking", "firefox-regional", "other")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
-KNOWNOPTIONS = ("badfilter", "collapse", "document", "elemhide", "empty", "font",
+KNOWNOPTIONS = ("badfilter", "collapse", "doc", "document", "elemhide", "empty", "font",
                 "genericblock", "generichide", "image", "important", "inline-script",
                 "match-case", "media", "object", "object-subrequest", "other", "ping", "popup",
                 "script", "stylesheet", "subdocument",  "first-party", "third-party",
                 "websocket", "webrtc", "xmlhttprequest")
 # List of known key=value parameters (domain is not included)
-KNOWNPARAMETERS = ("csp", "rewrite", "redirect", "redirect-rule")
+KNOWNPARAMETERS = ("csp", "queryprune", "rewrite", "redirect", "redirect-rule")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
@@ -273,15 +273,19 @@ def filtertidy (filterin):
         return removeunnecessarywildcards(filterin, False)
     else:
         # If applicable, separate and sort the filter options in addition to the filter text
-        optionlist = optionsplit.group(2).lower().replace("_", "-").split(",")
+        optionlist = optionsplit.group(2).lower().split(",")
 
         domainlist = []
         removeentries = []
+        queryprune = ""
         isRedirect = False
         for option in optionlist:
             # Detect and separate domain options
             if option[0:7] == "domain=":
                 domainlist.extend(option[7:].split("|"))
+                removeentries.append(option)
+            elif option[0:11] == "queryprune=":
+                queryprune = option[11:]
                 removeentries.append(option)
             elif re.match(REDIRECTOPTIONPATTERN, option):
                 isRedirect = True
@@ -289,6 +293,11 @@ def filtertidy (filterin):
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
         # Sort all options other than domain alphabetically with a few exceptions
         optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = sortfunc)
+        # Replace underscore typo with hyphen-minus in options like third_party
+        optionlist = list(map(lambda option: option.replace("_", "-"), optionlist))
+        # Append queryprune back at the end (both to keep it at the end and skip underscore typo fix)
+        if queryprune:
+            optionlist.append("queryprune={queryprune}".format(queryprune = queryprune))
         # If applicable, sort domain restrictions and append them to the list of options
         if domainlist:
             optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key = lambda domain: domain.strip("~")))))
