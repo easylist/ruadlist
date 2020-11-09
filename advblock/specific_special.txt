@@ -725,7 +725,7 @@ www.rambler.ru##a[href*="://okko.tv/"]
 www.rambler.ru##div[id^="adfox"]
 www.rambler.ru##svg > defs + g
 www.rambler.ru##svg ~ img[src]
-www.rambler.ru#?##main div:-abp-has(> div[class] > [style^="height:"] > div:first-child:last-child)
+www.rambler.ru#?##main div:-abp-has(> div[class]:not([id^="player-"]) > [style^="height:"] > div:first-child:last-child)
 ||plista.com^$domain=wmj.ru
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
 !
