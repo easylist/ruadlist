@@ -174,10 +174,8 @@ rustorka.com,rustorka.innal.top,rustorka.net,rustorka2.innal.top,rustorka3.innal
 rutor.in##+js(abort-current-inline-script, document.createElement, ExternalChromePop)
 rutube.ru##+js(set-constant, Object.prototype.appearance.forbid_seek, undefined)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
-scrin.org###view-full-image:style(cursor: pointer !important)
-scrin.org##+js(remove-attr, href, [href*="utarget"])
-scrin.org##+js(remove-attr, onclick, [onclick*="utarget"])
-scrin.org##.radius.box > center:style(color: white !important)
+scrin.org##+js(abort-on-property-read, onload)
+scrin.org##+js(remove-attr, onclick, a)
 sdamgia.ru##+js(abort-on-property-read, Object.prototype.isDirect)
 sdamgia.ru##+js(cookie-remover, /^adb/)
 shrlink.top##+js(abort-on-property-read, app_vars.force_disable_adblock)
