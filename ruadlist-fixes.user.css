@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name RU AdList CSS Fixes
 @namespace userstyles.org/styles/101141/ru-adlist-css-fixes
-@version 0.20201105.242
+@version 0.20201112.1606
 @description Сборная солянка из стилей для внесения исправлений после блокировки рекламы средствами ABP и uBO. Сгенерировано из экспериментального списка фильтров для uBlock Origin.
 @author lainverse, dimisa
 ==/UserStyle== */
@@ -16,51 +16,9 @@
 }
 
 @-moz-document
-  domain("1informer.com"),
-  domain("fainaidea.com"),
-  domain("housechief.ru"),
-  domain("root-nation.com") {
-    html > body {
-        cursor: default !important
-    }
-}
-
-@-moz-document
-  domain("1plus1.international"),
-  domain("1plus1.ua"),
-  domain("1plus1.video"),
-  domain("2plus2.ua"),
-  domain("bigudi.tv"),
-  domain("paramountcomedy.com.ua"),
-  domain("plus-plus.tv"),
-  domain("tet.tv") {
-    .cookies {
-        display: none !important
-    }
-    body {
-        padding-top: 0 !important
-    }
-    .header {
-        top: 0 !important
-    }
-}
-
-@-moz-document domain("1plus1.video") {
-    body.show-cookies ._opo_-header {
-        top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("21forum.ru"),
-  domain("forum.na-svyazi.ru"),
-  domain("forum.zarulem.ws") {
-    #user2s[height="71"], #userlinks[height="70"], td[height="70"][style] {
-        display: none !important
-    }
-}
-
-@-moz-document
+  domain("101kinopoisk.com"),
+  domain("24video.adult"),
+  domain("24video.click"),
   domain("24video.vip"),
   domain("4watching.club"),
   domain("aghdrezka.com"),
@@ -162,7 +120,6 @@
   domain("rezka.ag"),
   domain("roem.ru"),
   domain("rusporno.vip"),
-  domain("russian-porn.online"),
   domain("serialbox.org"),
   domain("smotret-film.net"),
   domain("smotret-filmy.net"),
@@ -197,12 +154,16 @@
 }
 
 @-moz-document
+  domain("101kinopoisk.com"),
+  domain("24video.adult"),
+  domain("24video.click"),
   domain("24video.vip"),
   domain("aghdrezka.com"),
   domain("ahdrezka.com"),
   domain("aif.ru"),
   domain("ain.ua"),
   domain("betahdrezka.com"),
+  domain("budport.com.ua"),
   domain("clubhdrezka.com"),
   domain("cokinopoisk.com"),
   domain("drhdrezka.com"),
@@ -273,7 +234,6 @@
   domain("rezka.ag"),
   domain("rufootballtv.org"),
   domain("rusporno.vip"),
-  domain("russian-porn.online"),
   domain("sc2tv.ru"),
   domain("simhost.org"),
   domain("smotri.com"),
@@ -290,6 +250,51 @@
   domain("zakon.kz") {
     body:not(#id), html:not(#id) {
         background-image: none !important
+    }
+}
+
+@-moz-document
+  domain("1informer.com"),
+  domain("fainaidea.com"),
+  domain("housechief.ru"),
+  domain("root-nation.com") {
+    html > body {
+        cursor: default !important
+    }
+}
+
+@-moz-document
+  domain("1plus1.international"),
+  domain("1plus1.ua"),
+  domain("1plus1.video"),
+  domain("2plus2.ua"),
+  domain("bigudi.tv"),
+  domain("paramountcomedy.com.ua"),
+  domain("plus-plus.tv"),
+  domain("tet.tv") {
+    .cookies {
+        display: none !important
+    }
+    body {
+        padding-top: 0 !important
+    }
+    .header {
+        top: 0 !important
+    }
+}
+
+@-moz-document domain("1plus1.video") {
+    body.show-cookies ._opo_-header {
+        top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("21forum.ru"),
+  domain("forum.na-svyazi.ru"),
+  domain("forum.zarulem.ws") {
+    #user2s[height="71"], #userlinks[height="70"], td[height="70"][style] {
+        display: none !important
     }
 }
 
@@ -893,7 +898,6 @@
 @-moz-document
   domain("biqle.ru"),
   domain("gecid.com"),
-  domain("russian-porn.online"),
   domain("valetudo.ru") {
     body > * {
         pointer-events: auto !important
@@ -1592,8 +1596,7 @@
     .tpc > .post > a[href] {
         word-break: break-all
     }
-    .tpc > .post > table[width="75%"] > tbody > tr > .lgf, 
-    tr > .dats + .tpc > .post {
+    .tpc > .post > table[width="75%"] > tbody > tr > .lgf {
         word-break: break-word
     }
 }
@@ -2171,6 +2174,13 @@
     }
 }
 
+@-moz-document domain("it-actual.ru") {
+    [class*="bled"] > div > [class] {
+        background: none !important;
+        position: unset !important
+    }
+}
+
 @-moz-document domain("ixbt.com") {
     body {
         background-color: white !important
@@ -2588,13 +2598,12 @@
         box-shadow: rgb(0, 95, 249) 0 0 0 10px inset !important
     }
     #bubble-home, .grid__lcol_mailbox .horoscope ~ div, body > .grid .grid__rcol, 
-    body > .grid .i-pull-left.coronavirus > .wrapper > .footer, 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .i-clearfix.feed-generic__container, 
     body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class], 
     body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name]), 
-    body > .zeropixel ~ * div .eventbar, 
+    body > .zeropixel ~ * div .covid, body > .zeropixel ~ * div .eventbar, 
     body > .zeropixel ~ * div a[href*="aliexpress.com"], 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body > div > .pulse {
@@ -2614,9 +2623,6 @@
     }
     .grid .grid__ccol {
         min-width: 640px !important
-    }
-    body > .grid .i-pull-left.coronavirus {
-        z-index: 999 !important
     }
 }
 
@@ -3668,6 +3674,7 @@
     #body_box_label #wrapper > #content ~ :not(#footer), 
     #body_box_label #wrapper > #footer > div[id]:not(.wrapper), 
     #body_box_label > [class]:not([title]) > style + [id]:not([class]):not(#wrapper), 
+    body > div[id*="top-img"], 
     body:not(#body_box_label) > [id*="footer"]:not(#footer):not(#footer_morecopyright), 
     body:not(#body_box_label) > style ~ div[id]:not([class]):not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)) > style + div[id]:not(#globalcontent) {
         display: none !important
@@ -3971,6 +3978,12 @@
 @-moz-document domain("vsthouse.ru") {
     .a-overlay {
         display: none !important
+    }
+}
+
+@-moz-document domain("vtrahe.tube") {
+    .fullw > .view_video {
+        width: 85% !important
     }
 }
 
