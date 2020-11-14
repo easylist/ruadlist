@@ -371,6 +371,7 @@ e.mail.ru,octavius.mail.ru##.letter-list-item-adv
 @@||octavius.mail.ru^$generichide
 ! Спорт
 sportmail.ru##.article__item_conversionlink
+sportmail.ru##.article__item_source_viqeo
 sportmail.ru##.bannered__right
 sportmail.ru##.box_double ~ .box_double
 sportmail.ru#?#.js-fixed-panel .box:-abp-has([class*="spring"])
@@ -432,6 +433,7 @@ pulse.mail.ru#?#div[class^="pl_"]:-abp-has(> * > [href*="t.mail.ru/redir"])
 dom.mail.ru##div[data-qa="ArticlesList"] > [data-qa="ArticleThumb"] ~ :not([data-qa="ArticleThumb"] )
 minigames.mail.ru##div[id^="slot"][id*="sitezone"]
 maps.mail.ru##img[width="200"][height="30"]
+!
 ! Блокировка ресурсов в основном на самом mail.ru
 //r.mail.ru/b$subdocument
 //rs.mail.ru/b$domain=e.mail.ru
@@ -444,6 +446,7 @@ maps.mail.ru##img[width="200"][height="30"]
 ||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~otvet.mail.ru|~target.my.com
 ||bs.mail.ru^$image,domain=mail.ru
 ||c-cdn.coub.com^$script,domain=mail.ru
+||cdn.viqeo.tv^$domain=sportmail.ru
 ||hiwoenrep.ru^$csp=script-src
 ||imgsmail.ru/*/video-html5/custom-preroll_
 ||imgsmail.ru/js/onair2.$script

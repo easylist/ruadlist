@@ -286,8 +286,8 @@ mail.ru##+js(setTimeout-defuser, advBlock)
 ~e.mail.ru,mail.ru,~octavius.mail.ru,sportmail.ru##+js(setTimeout-defuser, document.title)
 mail.ru,sportmail.ru##+js(setTimeout-defuser, rbParams)
 mail.ru,sportmail.ru#?#.article__item > *:-abp-contains(/^Вам может быть интересно:$|^И не пропусти интересное видео:$|^И не пропусти ролик:$|^И не пропусти интересный ролик:$|^И не пропусти наш ролик:$|^Смотрите наши видео:$|видео ниже:/)
-mail.ru,sportmail.ru##.article__item_source_viqeo ~ .article__item_source_viqeo
-mail.ru,sportmail.ru##.article__item_source_viqeo:has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
+mail.ru##.article__item_source_viqeo ~ .article__item_source_viqeo
+mail.ru##.article__item_source_viqeo:has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
 ok.ru##.feed-list > .feed-w:has(.feed_ava ~ div div > span ~ span ~ span ~ span ~ span ~ span)
 e.mail.ru#@#.layout_right-size_60 .layout__main-frame:style(margin-right: auto!important;)
 @@||ad.mail.ru/adp/?_SITEZONE=*&isAtlas=$~third-party,xmlhttprequest
@@ -298,12 +298,12 @@ e.mail.ru,octavius.mail.ru##body:not(#id) > div[style*="position: absolute;"][st
 ||ad.mail.ru/adp/$redirect=empty
 ||ad.mail.ru/adq/$redirect=empty
 ||ad.mail.ru/vast/$redirect=empty
-||cdn.viqeo.tv/js/vq_starter.js$third-party,domain=lifehacker.ru|mail.ru|sportmail.ru
+||cdn.viqeo.tv/js/vq_starter.js$third-party,domain=lifehacker.ru|mail.ru
 ||mail.ru/api-proxy/rb-mimic/
 ||pubapi.viqeo.tv^$domain=mail.ru|sportmail.ru
 ||pulse.mail.ru^$domain=~pulse.mail.ru
 ||recostream.go.mail.ru^$domain=~pulse.mail.ru|~recostream.go.mail.ru
-||static.viqeo.tv/js/vq_starter.js$third-party,domain=mail.ru|sportmail.ru
+||static.viqeo.tv/js/vq_starter.js$third-party,domain=mail.ru
 !
 ! Progorod и их сайты
 pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progorodnsk.ru,progorodsamara.ru,progoroduhta.ru,prokazan.ru##+js(abort-on-property-write, __XRABStatus)
