@@ -366,6 +366,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /(sovets.net\/(?!article)(?!profile))/$xmlhttprequest,domain=sovets.net
 /*.mp4$domain=letitbit.net|picusha.net
 /*.php?uid=$script,domain=agorov.org|animevost.am|animevost.org|animevost.site|audioknigi-online.com|cartoonka.art|lalapaluza.ru|multmania.club|smotret-anime-365.ru|tlumtluda.info|yummyanime.club
+/*.php|$subdocument,domain=hackware.ru|kali.tools
 /*.php|$third-party,subdocument,domain=rutracker.lib|rutracker.net|rutracker.nl|rutracker.org
 /*/*/*.php|$third-party,script,domain=joyreactor.cc|reactor.cc
 /*banner*.php|$subdocument,domain=anistar.org|anistar.pro|anistar.world|anistar1.org|anistar10.org|anistar11.org|anistar12.org|anistar13.org|anistar2.org|anistar3.org|anistar4.org|anistar5.org|anistar6.org|anistar7.org|anistar8.org|anistar9.org|online-star.org|online-stars.org
@@ -1496,7 +1497,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||gzt.ru/upload/*.rklite/
 ||habracdn.net^*/yndx.js
 ||hacker-pro.net/banner/
-||hackware.ru/hw*.php
 ||haqqin.az/banners/
 ||hardstones.ru/js_content/
 ||hashflare.eu/banners/
@@ -1674,7 +1674,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||kadikama.ru^*.mp4|$domain=kadikama.ru
 ||kafa-info.com.ua/fbn
 ||kaktus.media^*/rekOlama.
-||kali.tools/kl*.php
 ||kamera.glazok.km.ua^$script
 ||kanobu.ru/adb_fallback/
 ||kanobu.ru/api/*-*-*/|$xmlhttprequest,domain=kanobu.ru
