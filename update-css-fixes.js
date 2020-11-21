@@ -14,7 +14,7 @@ let fs = require('fs');
         let fd = fs.openSync(fixesFileName, 'r');
         let len = 256, buff = Buffer.alloc(len, ' ', fileEncoding);
         fs.readSync(fd, buff, 0, len, 0);
-        oldVersion = /@version\s(\d+\.\d+\.\d+)[\r\n]+/.exec(buff.toString())[1];
+        oldVersion = /@version\s+(\d+\.\d+\.\d+)[\r\n]+/.exec(buff.toString())[1];
         fs.closeSync(fd);
     }
     let version = null;
