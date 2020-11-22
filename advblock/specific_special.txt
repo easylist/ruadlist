@@ -36,6 +36,16 @@ svpressa.ru##[class^="b-comments"]
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ||teleprogramma.pro^$xmlhttprequest,domain=teleprogramma.pro
 !
+! Плееры tubeproton@protonmail.com
+$script,~third-party,domain=fplay.online|playep.pro|playy.online|plplayer.online|toplay.biz|ttutu.biz
+/bundle-vast.min.js$domain=fplay.online|playep.pro|playy.online|plplayer.online|toplay.biz|ttutu.biz
+/bundle.vast.min.js$domain=fplay.online|playep.pro|playy.online|plplayer.online|toplay.biz|ttutu.biz
+/vast-bundle.min.js$domain=fplay.online|playep.pro|playy.online|plplayer.online|toplay.biz|ttutu.biz
+/vast.min.js$domain=fplay.online|playep.pro|playy.online|plplayer.online|toplay.biz|ttutu.biz
+/vpaid2.min.js$domain=fplay.online|playep.pro|playy.online|plplayer.online|toplay.biz|ttutu.biz
+@@/bundle.min.js$script,~third-party,domain=fplay.online|playep.pro|playy.online|plplayer.online|toplay.biz|ttutu.biz
+fplay.online,playep.pro,playy.online,plplayer.online,toplay.biz,ttutu.biz###vPreloader
+!
 ! 4pda.ru
 4pda.ru##.materials-box:empty
 4pda.ru##[data-revive-id][style="opacity: 0;"]
