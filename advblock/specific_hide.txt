@@ -5792,7 +5792,6 @@ driver.ru##div[class] > a[href][target="_blank"] > img
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
 theins.ru#?#div[class]:-abp-has(> .js-relap-anchor)
 2gis.ru#?#div[class]:-abp-has(> [class] > span ~ a[href^="http://redirect.2gis.com/adv/"])
-adme.ru#?#div[class]:-abp-has(> [data-adunit-type] ~ div > div:empty)
 spafilms.me#?#div[class]:-abp-has(> a[title] > div[class])
 gdespaces.com,spac.me,spac1.com,spac1.me,spac1.net,spaces-blogs.com,spaces.im#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
 drive2.ru#?#div[class]:-abp-has(> div > div > .drom-logo)
@@ -6018,6 +6017,7 @@ tut.by##div[data-io-title="Новости компаний"]
 banki.ru##div[data-name="custom:advertising.block"]
 echo.msk.ru##div[data-role=""]
 youla.ru#?#div[data-test-component="ProductOrAdCard"]:-abp-has(> [data-test-component="AdCardHolder"])
+adme.ru#?#div[data-test-id] > div > div[class*=" _"]:-abp-has(> [data-adunit-type])
 malagarusa.es##div[data-uk-slideshow]
 sbp-program.ru##div[id$="-ad"]
 memesmix.net#?#div[id$="-menu"] [class*="module-body"]:-abp-has(> script[src]:not([src*="vk.com"]))
@@ -6569,6 +6569,7 @@ polochka.net##li[class^="ss-li-"]
 penzainform.ru##li[style^="width: 140px; height:"][style*="max-height"]
 allcarz.ru#?#main > .container > .site-content:-abp-has(> .content-banner)
 besplatnyeprogrammy.ru#?#main > article.post:-abp-has(> header > .mainpage_title > [title^="InstallPack"])
+adme.ru#?#main > div[class*=" _"]:-abp-has(> [data-adunit-type])
 kurs.com.ua##main [onclick^="window.open"]
 flatfy.lun.ua#?#main ~ div[class]:-abp-has(> div > div > a[href*="/redirect-andromeda/"] ~ a[href*="/redirect-andromeda/"])
 charming-face.ru##marquee
