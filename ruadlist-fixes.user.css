@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20201121.220
+@version        0.20201126.1712
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -168,6 +168,7 @@
   domain("aif.ru"),
   domain("ain.ua"),
   domain("betahdrezka.com"),
+  domain("bit.ua"),
   domain("budport.com.ua"),
   domain("clubhdrezka.com"),
   domain("cokinopoisk.com"),
@@ -570,6 +571,7 @@
 
 @-moz-document
   domain("allbasketball.org"),
+  domain("bit.ua"),
   domain("freerutor.com"),
   domain("gidonline.fun"),
   domain("kinoboom.su"),
@@ -765,8 +767,8 @@
 }
 
 @-moz-document domain("app2top.ru") {
-    body > .content, body > .content__full {
-        margin-top: 0 !important
+    .page-wrapper {
+        padding-top: 0 !important
     }
 }
 
@@ -1400,6 +1402,24 @@
     }
 }
 
+@-moz-document domain("electric-house.ru") {
+    table[class^="header"] > tbody > tr > td ~ [class] {
+        display: none !important
+    }
+}
+
+@-moz-document
+  domain("electric-house.ru"),
+  domain("helpsetup.ru"),
+  domain("izzylaif.com"),
+  domain("so-wiki.ru"),
+  domain("stroi-help.ru") {
+    .adsbygoogle {
+        height: 1px !important;
+        opacity: 0 !important
+    }
+}
+
 @-moz-document domain("epravda.com.ua") {
     body {
         cursor: auto !important
@@ -1619,15 +1639,6 @@
     }
 }
 
-@-moz-document domain("forums.goha.ru") {
-    .branding-background {
-        background-image: none !important
-    }
-    .branding-background a[href]:not([href="https://www.goha.ru"]) {
-        display: none !important
-    }
-}
-
 @-moz-document domain("forums.overclockers.ru") {
     tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"] {
         color: #004488 !important;
@@ -1716,6 +1727,22 @@
 @-moz-document domain("game2day.ru") {
     body > .container {
         margin-top: 120px !important
+    }
+}
+
+@-moz-document domain("gamebomb.ru") {
+    body {
+        background-color: #303030 !important
+    }
+    body > div[id^="wrapper"] > div[id] {
+        background-image: none !important
+    }
+    body > div[id^="wrapper"] > div[id] > #content {
+        margin-top: 0 !important;
+        pointer-events: none
+    }
+    #basic-content-container > * {
+        pointer-events: auto
     }
 }
 
@@ -1823,12 +1850,6 @@
 @-moz-document domain("goclips.tv") {
     .video_content {
         height: auto !important
-    }
-}
-
-@-moz-document domain("goha.ru") {
-    #banner, .adfox-banner-background, div[class^="foxyad"], div[id^="foxyad"] {
-        display: none !important
     }
 }
 
@@ -1970,16 +1991,6 @@
 @-moz-document domain("helpsetup.ru") {
     #blockajaxdown {
         display: none !important
-    }
-}
-
-@-moz-document
-  domain("helpsetup.ru"),
-  domain("izzylaif.com"),
-  domain("so-wiki.ru") {
-    .adsbygoogle {
-        height: 1px !important;
-        opacity: 0 !important
     }
 }
 
@@ -3983,6 +3994,15 @@
     }
 }
 
+@-moz-document domain("vk.com") {
+    .JoinForm__notNow {
+        font-weight: bold !important;
+        color: red !important;
+        border: 3px solid red !important;
+        padding: 6px !important
+    }
+}
+
 @-moz-document domain("vo-dela.su") {
     #sidebar_column .scrolled {
         top: auto !important
@@ -4061,15 +4081,8 @@
 }
 
 @-moz-document domain("www.goha.ru") {
-    #goharu {
-        background-color: transparent !important
-    }
-    #stickybar > div[style^="margin-top"], div[onclick^="truemedia_callback"], 
-    header.header {
-        display: none !important
-    }
-    #site {
-        padding-top: 20px !important
+    #goharu > #site {
+        margin-top: 110px !important
     }
 }
 
