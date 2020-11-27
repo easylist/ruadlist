@@ -1307,10 +1307,6 @@ health.mail.ru,hi-tech.mail.ru,news.mail.ru,sportmail.ru##.branding-p
 auto.mail.ru,horo.mail.ru,kino.mail.ru,lady.mail.ru,tv.mail.ru##.cols__inner > noindex
 hi-tech.mail.ru##.cols_margin .link-hdr
 deti.mail.ru##.deti-slot_exchange
-mail.ru#?#.grid .grid__ccol:style(min-width: 640px !important)
-mail.ru#?#.grid .tabs-content__item > .news-main > .news-main__img:style(max-width: unset !important; height: 80px !important)
-mail.ru#?#.grid .tabs-content__item > .news-main > .news-main__text-wrapper:style(max-height: 80px !important; white-space: pre-wrap !important)
-mail.ru#?#.grid .tabs-content__item > .news-main:style(max-height: 80px !important; position: static !important)
 mail.ru##.grid__lcol_mailbox .horoscope ~ div
 hi-tech.mail.ru#?#.header-banner:style(margin: 0 !important)
 my.mail.ru##.l-app__left
@@ -1334,8 +1330,12 @@ mail.ru##body > .grid .rectangle-banner
 mail.ru##body > .grid > div[class^="grid"][class*="__header"] > .toolbar
 mail.ru##body > .zeropixel ~ * .i-clearfix.feed-generic__container
 mail.ru##body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class]
+mail.ru#?#body > .zeropixel ~ * .searchContainer ~ .tabs + div[class]:style(min-width: 640px !important)
 mail.ru##body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name])
 mail.ru##body > .zeropixel ~ * .searchContainer ~ div > a.dmb
+mail.ru#?#body > .zeropixel ~ * .tabs-content__item > [class*="news-main"] > .news-main__img:style(max-width: unset !important; height: 80px !important)
+mail.ru#?#body > .zeropixel ~ * .tabs-content__item > [class*="news-main"] > .news-main__text-wrapper:style(max-height: 80px !important; white-space: pre-wrap !important)
+mail.ru#?#body > .zeropixel ~ * .tabs-content__item > [class*="news-main"]:style(max-height: 80px !important; position: static !important)
 mail.ru##body > .zeropixel ~ * div .covid
 mail.ru##body > .zeropixel ~ * div .eventbar
 mail.ru##body > .zeropixel ~ * div a[href*="aliexpress.com"]
