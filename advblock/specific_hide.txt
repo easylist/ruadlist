@@ -2049,9 +2049,6 @@ journal-off.info##.bwrbs[style^="padding:8px"]
 mail.inbox.lv##.bxS-leftbar
 mail.inbox.lv##.bxS-text_link
 tsn.ua##.c-aside-embed
-glav.su##.c-bl-header
-glav.su##.c-bl-header + div[class]
-glav.su##.c-bl-message
 tomat-pomidor.com##.cPost + script + center
 piccy.info##.c[width="300"]
 boxnews.com.ua##.caf0c6
@@ -4158,6 +4155,7 @@ usa.one##.two-big-block
 expert.ru##.two-col ~ hr
 iz.ru##.two-col-with-advertise2__right
 iz.ru##.two-col-with-partner__inside__right
+glav.su##.txt-legend
 wowhead.com##.type-coupon-codes
 all-biography.ru##.tz-widget.container
 uznayvse.ru##.tzt
@@ -5479,7 +5477,6 @@ bryansknovosti.ru,novozybkov.su##aside[data-alias="Справа"] .widget-area >
 kino-zal.tv##blink
 1progs.ru,2womans.ru,anypictures.ru,pixcloud.ru,psysovet24.ru##blockquote
 sport.tut.by#?#blockquote:-abp-has(> p > strong:-abp-contains(Партнер))
-glav.su#?#body * * div[class]:-abp-has(> script:-abp-contains(/yandex|luxupcdnc/))
 rockstargame.su##body > #a
 kissfm.ua##body > #background
 fgh-game.com##body > #banner
@@ -5797,6 +5794,7 @@ driver.ru##div[class] > a[href][target="_blank"] > img
 vz.ru##div[class] > div[id]:not([class])[style^="margin"]
 theins.ru#?#div[class]:-abp-has(> .js-relap-anchor)
 2gis.ru#?#div[class]:-abp-has(> [class] > span ~ a[href^="http://redirect.2gis.com/adv/"])
+glav.su#?#div[class]:-abp-has(> [id^="ya-rtb"])
 spafilms.me#?#div[class]:-abp-has(> a[title] > div[class])
 gdespaces.com,spac.me,spac1.com,spac1.me,spac1.net,spaces-blogs.com,spaces.im#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
 drive2.ru#?#div[class]:-abp-has(> div > div > .drom-logo)
@@ -6190,7 +6188,6 @@ ru-an.info##div[id^="hme_ad_news"]
 isport.ua,korrespondent.net##div[id^="holder_"]
 mockva.ru##div[id^="infox_"]
 forum.littleone.ru##div[id^="inpage_"]
-glav.su##div[id^="js-ad"]
 tkaninfo.ru##div[id^="kazandrey"]
 zi.dn.ua##div[id^="kkountdown"]
 korabel.ru##div[id^="kodirect_"]
@@ -6402,10 +6399,10 @@ payeer-gift.ru##form > div[style^="width: 300px;"]
 yap.ru,yaplakal.com#?#form > table[id^="p_row_"]:nth-of-type(2):-abp-has(*:-abp-contains(Yap))
 leonkrevs.ucoz.ru##form[action*="wmcasher.ru"]
 megaimg.ru##form[name="show_image"] > center
-glav.su#?#h2 ~ [class]:-abp-has([href*="aftershock.news"])
 argumenti.ru#?#h2.namerub_new:-abp-contains(/реклама/i)
 dokumental.ru,infox.ru,radiorecord.fm,ria-m.tv#?#h2:-abp-contains(/^реклама/i)
 glav.su,newstube.ru,socportal.info#?#h2:-abp-contains(/новости партнеров/i)
+glav.su#?#h2:-abp-contains(/новости партнеров/i) ~ div
 apostrophe.ua,erofishki.cc,fishki.net,hvylya.net,i-news.kz,sharknews.ru,tochka.net,wworld.com.ua#?#h3:-abp-contains(/^нов.+партн.+р.в$/i)
 5-tv.ru#?#h3:-abp-contains(/Новости Lentainform|Новости СМИ2|Новости Лентаинформ/)
 euro-football.ru#?#h3:-abp-contains(Делайте ставки на матч)
