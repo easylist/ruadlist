@@ -2279,6 +2279,7 @@ fishki.net##.cycle-carousel-wrap > [style*="z-index: 100;"]
 ren.tv##.d-flex [class^="partners"]
 ren.tv#?#.d-flex:-abp-has(> div > [class^="partners"])
 nnovosti.info#?#.d-none:-abp-has(> .adsbygoogle)
+censor.net#?#.d-print-none:-abp-has(> script[src*=".censor.net/js/"])
 aptekamos.ru##.d-table-tr-adv
 vazhno.info##.da-h
 automoto.ua##.da-iframe
@@ -3551,6 +3552,8 @@ hdtochka.club##.right-side
 gorod48.ru#?#.right-side > .reading:-abp-has(> div > #MediaMetricsInject)
 sochinyashka.ru##.right-sidebar > .block
 vshkole.com##.right-sidebar > div > div[style^="margin-bottom: 20px; height:"]
+censor.net##.right-sidebar div[style^="width: 300px; height: "]
+censor.net#?#.right-sidebar__title_without_border:-abp-has(> div[style^="width: 300px; height: "])
 tvnet.lv##.right-two-pics
 dni.ru##.right.article-reklame > * > :not(.block_all_day) > *
 terrikon.com##.right.col > div[style^="min-height"]
@@ -4337,7 +4340,6 @@ prosadiogorod.ru##.wrap_flat_ads_block
 osvita.ua##.wrapbanner
 galka.if.ua##.wrapper .header-logo ~ *
 novy.tv##.wrapper > #header > a[href][target="_blank"] > img
-censor.net##.wrapper > .right div[style^="width: 300px; height: "]
 l2top.ru##.wrapper > :not([class="sticky-top"]):not([class="wrapper2"])
 2whois.ru##.wrapper > div[style^="overflow:hidden"]
 feofan.net##.wrapper-outer > .background-cover
