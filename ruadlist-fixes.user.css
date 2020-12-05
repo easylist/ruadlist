@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20201201.416
+@version        0.20201205.1815
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1558,8 +1558,10 @@
   domain("filmix.email"),
   domain("filmix.ink"),
   domain("filmix.ltd"),
+  domain("filmix.online"),
   domain("filmix.site"),
   domain("filmix.today"),
+  domain("filmix.wiki"),
   domain("filmix.zone") {
     .remove-sda-wrap {
         display: none !important
@@ -2635,7 +2637,7 @@
         border-left-color: rgb(0, 95, 249) !important;
         box-shadow: rgb(0, 95, 249) 0 0 0 10px inset !important
     }
-    #bubble-home, #mailbox-container ~ div > .horoscope ~ div, 
+    #bubble-home, #mailbox-container ~ div > .horoscope ~ [class], 
     #mailbox-container ~ div > .ok, .grid__lcol_mailbox .horoscope ~ div, 
     body > .grid .grid__rcol, body > .grid .news-item_tgb, 
     body > .grid .rectangle-banner, 
@@ -3863,6 +3865,12 @@
     }
 }
 
+@-moz-document domain("ts.kg") {
+    .main-container {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("turboserial.net") {
     body > div[class^="arcticmodal-"] {
         display: none !important
@@ -4096,6 +4104,12 @@
 }
 
 @-moz-document domain("www.goha.ru") {
+    body {
+        background-color: #efeded !important
+    }
+    #goharu > #site ~ div {
+        display: none !important
+    }
     #goharu > #site {
         margin-top: 110px !important
     }
