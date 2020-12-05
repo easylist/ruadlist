@@ -14,7 +14,7 @@
 %include easylistcombinations:antiadblockfilters.txt%
 ! --- uBO scriptlets injection rules & other ---
 *$script,redirect-rule=noop.js,domain=otzovik.com|www.ukr.net
-*$xmlhttprequest,redirect-rule=noop.js,domain=otzovik.com
+*$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.org|otzovik.com
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
@@ -43,7 +43,7 @@
 @@||studizba.com^$generichide,badfilter
 @@||utarget.ru/check_geo/|$script,badfilter,domain=memepedia.ru
 agorov.org,animevost.am,animevost.org,animevost.site,doefiratv.info,payeer-gift.ru,smotret-anime-365.ru##+js(abort-on-property-read, document.oncontextmenu)
-all-episodes.org##+js(no-setTimeout-if, detdet)
+all-episodes.org##+js(abort-on-property-read, advtss)
 allboxing.ru##+js(abort-current-inline-script, document.querySelector, open)
 amazinghis.ru,moj-pes.ru##+js(abort-on-property-read, anOptions)
 animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
