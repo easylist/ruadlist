@@ -1280,11 +1280,6 @@ my.mail.ru###history_container > .b-history__apps-carousel
 cloud.mail.ru###leftcol .portal-promo-manager
 cloud.mail.ru###leftcol .portal-promo-manager ~ div[onclick]
 ~e.mail.ru,mail.ru###logo > .logo__extension
-~e.mail.ru,mail.ru###mailbox-container ~ #projects
-~e.mail.ru,mail.ru###mailbox-container ~ div > .asteroid-widgets
-~e.mail.ru,mail.ru###mailbox-container ~ div > .ok
-~e.mail.ru,mail.ru###mailbox-container ~ div > .projects
-~e.mail.ru,mail.ru###mailbox-container ~ div > .projects ~ .promo
 ~e.mail.ru,mail.ru###news\:games > .news__tabpicture
 e.mail.ru,octavius.mail.ru###octavius-tooltip-sidebar-pay
 ~e.mail.ru,mail.ru###ph-extension-block
@@ -1336,7 +1331,6 @@ go.mail.ru##.footer-widget > div > :not(.footer__links)
 ~e.mail.ru,mail.ru##.grid__container > .tutorial-container
 ~e.mail.ru,mail.ru,~otvet.mail.ru##.grid__header > .toolbar
 ~e.mail.ru,mail.ru##.grid__lcol_mailbox .horoscope ~ div
-~e.mail.ru,mail.ru##.grid__rcol_aside
 ~e.mail.ru,mail.ru##.js-autoupdate-notify__link
 auto.mail.ru##.js-module .js-module[data-adq-id] > .rb_hide_by_parallax
 news.mail.ru##.js-module > [class="block"] > .wrapper > div[class*=" "] > div > div[class*=" "]:not([class*="cols"]) > div > div > div:first-child:not(.box):not(.js-module)
@@ -1349,6 +1343,7 @@ my.mail.ru##.l-app__right
 ~e.mail.ru,mail.ru##.layout__leftcol > #slidotype\:opener
 ~e.mail.ru,mail.ru##.layout__rightcol > .games_adaptive
 news.mail.ru,pogoda.mail.ru,sportmail.ru##.layout_footer > .block
+mail.ru##.mailbox-container ~ .horoscope ~ [class]
 auto.mail.ru,news.mail.ru##.mailru-visibility-check
 news.mail.ru##.margin_bottom_20 ~ .rb-slot ~ div[class]:not(.js-module)
 ~e.mail.ru,mail.ru##.news__styling
@@ -1392,12 +1387,10 @@ mail.ru#?#body > #grid .grid-top > .grid__container > div div[id][class]:-abp-ha
 pogoda.mail.ru##body > #layout div[id^="slot_"]
 ~e.mail.ru,mail.ru##body > .grid .logo__promo-tooltip
 ~e.mail.ru,mail.ru##body > .tooltip > .tooltip__box
-mail.ru##body > .zeropixel ~ * .i-clearfix.feed-generic__container
-mail.ru##body > .zeropixel ~ * .pulse
 mail.ru##body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class]
 mail.ru##body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name])
 mail.ru##body > .zeropixel ~ * div .eventbar
-mail.ru#?#body > .zeropixel ~ * div[class]:-abp-has(> div > div > p:-abp-contains(/Delivery Club|Агент|Браузер.Атом|Диск-О:|Штрафы ГИБДД/))
+mail.ru##body > .zeropixel ~ * div[class*="grid__rcol_aside"]
 mail.ru##body > .zeropixel ~ * div[class][style^="min-width"][style*="980"][style*="margin-right"]
 mail.ru##body > .zeropixel ~ div .well.notify
 mail.ru##body > div[id^="tb-"][class^="tb-"]
