@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20201205.1815
+@version        0.20201208.2240
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1090,6 +1090,12 @@
   domain("newseries.club") {
     .wrap {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("cloud.mail.ru") {
+    .public .b-layout__col_1_2 {
+        margin-right: auto !important
     }
 }
 
@@ -2637,19 +2643,14 @@
         border-left-color: rgb(0, 95, 249) !important;
         box-shadow: rgb(0, 95, 249) 0 0 0 10px inset !important
     }
-    #bubble-home, #mailbox-container ~ div > .horoscope ~ [class], 
-    #mailbox-container ~ div > .ok, .grid__lcol_mailbox .horoscope ~ div, 
-    body > .grid .grid__rcol, body > .grid .news-item_tgb, 
-    body > .grid .rectangle-banner, 
+    #bubble-home, .grid__lcol_mailbox .horoscope ~ div, 
+    .mailbox-container ~ .horoscope ~ [class], body > .grid .grid__rcol, 
+    body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
-    body > .zeropixel ~ * .i-clearfix.feed-generic__container, 
     body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class], 
     body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name]), 
     body > .zeropixel ~ * .searchContainer ~ div > a.dmb, 
-    body > .zeropixel ~ * div .covid, body > .zeropixel ~ * div .eventbar, 
-    body > .zeropixel ~ * div a[href*="aliexpress.com"], 
-    body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
-    body > div > .pulse {
+    body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"] {
         display: none !important
     }
     body > .zeropixel ~ * .tabs-content__item > [class*="news-main"] {
@@ -4107,7 +4108,7 @@
     body {
         background-color: #efeded !important
     }
-    #goharu > #site ~ div {
+    #goharu > #site ~ div, .badge {
         display: none !important
     }
     #goharu > #site {
