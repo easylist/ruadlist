@@ -410,6 +410,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://news\.ru\/(?!assets\/js-compress\/)/$script,domain=news.ru
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,domain=newsland.com
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,domain=newsland.com
+/^https?://okna\.ua\/(?!ajax_request/$)/$xmlhttprequest,domain=okna.ua
 /^https?://parnuxi\.biz\/(?!engine\/|templates\/)/$script,domain=parnuxi.biz
 /^https?://picusha.net\/(?!templates|engine|js)/$script,domain=picusha.net
 /^https?://politpuzzle\.ru/(?!(counter\.php)|(wp-admin))/$xmlhttprequest,domain=politpuzzle.ru
@@ -2254,7 +2255,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||ogemorroe.com/wp-content/plugins/boxzilla/
 ||ogolosha.ua^*/bs/banner/
 ||oka.fm/284
-||okna.ua/informer_ajax$xmlhttprequest
 ||old-games.ru/img/b/
 ||old.businessmens.ru/bnr/
 ||oldgames.ru/netcat_files/Image/$object
