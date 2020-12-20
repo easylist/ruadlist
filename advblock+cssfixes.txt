@@ -18,7 +18,7 @@
 /^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,badfilter,domain=newsland.com
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
-/^https?://yastatic\.net\/www\/_\/[^\s]{200,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
+/^https?://yastatic\.net\/www\/_\/[^\s]{170,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,cdnneedtv.ru,cdnpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport7.biz,sportbar.biz,sportbar.pm,sportbox.ws,sporting7.pw,stream365.pro,telecdn.net,vecdn.pw,vip7stream.pw##+js(window.open-defuser)
 112.ua,cikavosti.com,dialogs.org.ua,fakty.ua,newsone.ua,pingvin.pro,technoportal.com.ua,u-news.com.ua,uanews.org.ua,versii.if.ua,volynpost.com,zik.ua##+js(abort-on-property-read, weekCallbacks)
@@ -223,6 +223,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .main.w
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .main.widgets div[class] > div[class]:matches-css(height: 90px)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .main.widgets div[class] > div[class]:matches-css(padding-bottom: 90px)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .main.widgets div[class] > div[class]:matches-css(padding-top: 90px)
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .main.widgets div[class]:matches-css(margin-top: 16px)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > div[class][style]:has(> div[class*="__ad"])
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#@#body > .serp_js_inited .serp-list > .serp-item:has(:scope > div > div > .label:has-text(/^реклама/i))
 yapx.ru##+js(cookie-remover, /adblock_/)
