@@ -2138,11 +2138,13 @@ sdamgia.ru##.con_wraper > div[class]:not([class="content"])
 sdamgia.ru##.con_wraper ~ div[class] > div:not([class="content"])
 vsitv.org##.conrek
 docfilms.info##.cont > noindex
-myshows.me##.contAlt
 djrogoff.ru##.cont_in_c > .item
 comments.ua##.cont_station > .tags + .K_t_a
 tuchkatvsport.com##.container > #slides
 efxi.ru#?#.container > .footer:-abp-contains(реклама)
+myshows.me#?#.container > .marginBottomBase:-abp-contains(/Смотри на КиноПоиск HD|Watch on KinoPoisk HD/)
+myshows.me#?#.container > .marginBottomBase:-abp-contains(/Смотри на КиноПоиск HD|Watch on KinoPoisk HD/) + .row
+myshows.me#?#.container > .marginBottomBase:-abp-contains(/Смотри на КиноПоиск HD|Watch on KinoPoisk HD/) + .row + .contAlt
 mskins.net#?#.container > .row > .col:-abp-has(> .card script)
 dictat.net##.container > .sidebar
 solncevo.info##.container > a[href*="utm_campai"] ~ a[href][target="_blank"]
@@ -2783,6 +2785,7 @@ kg-portal.ru##.kg_promo
 hdzal.net##.kika
 kubik-v-kube.com##.kino-text > div[style^="clear:both;"]
 gaming-torrent.net##.kino-text a[target] > img
+myshows.me##.kinopoiskBanner
 animebest.club##.kinotarg
 kivvi.kz##.kivvi_social
 kloomba.com##.kl-ad-item
@@ -3601,6 +3604,7 @@ novgorod.ru##.root > .bigb
 matematikalegko.ru##.rotac_reklama
 officepackage.info,radiorecord.ru##.rotator
 milknet.ru##.rotator-wrap
+myshows.me#?#.row > .col3:-abp-has(> a[href*="://hd.kinopoisk.ru"])
 my-hit.org##.row > .hidden-sm.hidden-xs > :not([class])
 argumenti.ru#?#.row > article:-abp-has(> .slides)
 pingvin.pro#?#.row > div:-abp-has(> .card-blog script)
@@ -4641,6 +4645,7 @@ guitarplayer.ru##[id^="ya_direct_"]
 radidomapro.ru##[id^="zone_pub"]
 subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
 mydiv.net##[onclick*="/ya"]
+myshows.me##[onclick*="://hd.kinopoisk.ru/"]
 yellowpages.uz##[onclick*="ClickOnAd"]
 yellowpages.uz##[onclick*="ClickOnBanner"]
 animang.ru##[onclick*="advg.agency"]
@@ -6572,6 +6577,7 @@ argumenti.ru#?#li:-abp-has(> a[href] > .ourathors_img-partner)
 argumenti.ru#?#li:-abp-has(> span:-abp-contains(Новости партнеров))
 polochka.net##li[class^="ss-li-"]
 penzainform.ru##li[style^="width: 140px; height:"][style*="max-height"]
+myshows.me##main > .contAlt
 allcarz.ru#?#main > .container > .site-content:-abp-has(> .content-banner)
 besplatnyeprogrammy.ru#?#main > article.post:-abp-has(> header > .mainpage_title > [title^="InstallPack"])
 adme.ru#?#main > div[class*=" _"]:-abp-has(> [data-adunit-type])
