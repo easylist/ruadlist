@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20201219.39
+@version        0.20201224.1023
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -152,8 +152,7 @@
   domain("xxxadulttorrent.org"),
   domain("you-anime.ru"),
   domain("youhdrezka.com"),
-  domain("zombie-film.club"),
-  domain("zona-film.com") {
+  domain("zombie-film.club") {
     body:not(#id), html:not(#id) {
         padding-top: 0 !important
     }
@@ -722,6 +721,15 @@
 }
 
 @-moz-document
+  domain("animespirit.tv"),
+  domain("fullfilmhd.space"),
+  domain("kinocok.org") {
+    #wrapper {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document
   domain("anistar.org"),
   domain("anistar.pro"),
   domain("anistar.world"),
@@ -833,11 +841,16 @@
 }
 
 @-moz-document domain("autoua.net") {
-    .fader-social {
-        display: none !important
-    }
     .social-open {
         overflow: auto !important
+    }
+}
+
+@-moz-document
+  domain("autoua.net"),
+  domain("gagadget.com") {
+    .fader-social {
+        display: none !important
     }
 }
 
@@ -1566,6 +1579,7 @@
 
 @-moz-document
   domain("filmix.cc"),
+  domain("filmix.click"),
   domain("filmix.co"),
   domain("filmix.email"),
   domain("filmix.ink"),
@@ -1717,25 +1731,10 @@
 }
 
 @-moz-document
-  domain("fullfilmhd.space"),
-  domain("kinocok.org") {
-    #wrapper {
-        margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("gagadget.com") {
-    .fader-social {
-        display: none !important
-    }
-}
-
-@-moz-document
   domain("gagadget.com"),
   domain("gazeta.ru"),
   domain("ngs.ru"),
-  domain("rambler.ru"),
-  domain("www.eg.ru") {
+  domain("rambler.ru") {
     body:not(#id) {
         overflow: auto !important
     }
@@ -2665,9 +2664,11 @@
     .mailbox-container ~ .horoscope ~ [class], body > .grid .grid__rcol, 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
+    body > .zeropixel ~ * .rectangle-banner, 
     body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class], 
     body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name]), 
     body > .zeropixel ~ * .searchContainer ~ div > a.dmb, 
+    body > .zeropixel ~ * .skeleton-tgb, 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"] {
         display: none !important
     }
@@ -2691,7 +2692,8 @@
 @-moz-document
   domain("mail.ru"),
   domain("sportmail.ru") {
-    #video-footer, .ph-balloon, .pulse-lenta {
+    #video-footer, .ph-balloon, .pulse-lenta, 
+    a[id^="tb-"][class^="tb-"][target="_blank"] {
         display: none !important
     }
 }
@@ -3106,12 +3108,6 @@
     body {
         background-color: #e5e5e5 !important
     }
-    html > body {
-        font-size: 0 !important
-    }
-    html > body > * {
-        font-size: medium !important
-    }
     .page-wrapper {
         margin-top: 0 !important
     }
@@ -3294,6 +3290,9 @@
 }
 
 @-moz-document domain("promodj.com") {
+    html:not(#id) > body {
+        background-color: #fff !important
+    }
     #topbrandingspot {
         padding-top: 0 !important
     }
@@ -3317,6 +3316,16 @@
 @-moz-document domain("prostoporno.help") {
     .content_wrapper {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("protanki.tv") {
+    .ant-modal-mask, .ant-modal-wrap {
+        display: none !important
+    }
+    body {
+        overflow: auto !important;
+        padding-right: 0 !important
     }
 }
 
@@ -3378,6 +3387,9 @@
 @-moz-document domain("rbc.ru") {
     .l-sticky-right-parent, .popup_push {
         display: none !important
+    }
+    .l-col-100h {
+        min-height: 0 !important
     }
     #js_col_left > .l-sticky {
         position: relative !important;
@@ -4126,12 +4138,6 @@
     }
 }
 
-@-moz-document domain("www.eg.ru") {
-    .facebook-bn_site-overlay {
-        display: none !important
-    }
-}
-
 @-moz-document domain("www.goha.ru") {
     body {
         background-color: #efeded !important
@@ -4263,6 +4269,12 @@
     }
 }
 
+@-moz-document domain("xsport.ua") {
+    main.content {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document
   domain("yandex.by"),
   domain("yandex.kz"),
@@ -4293,6 +4305,7 @@
     .mini-suggest__item_subtype_ad, .serp-item div[class*="advanced-polaroid"], 
     .serp-list > .incut > .direct, .turbo-advert__loader, 
     .zen-lib__container .zenad-card-rtb, 
+    body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
     body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
