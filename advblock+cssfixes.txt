@@ -292,13 +292,12 @@ mail.ru##.article__item_source_viqeo:has(> div > .viqeo-embed > iframe[src^="htt
 ok.ru##.feed-list > .feed-w:has(.feed_ava ~ div div > span ~ span ~ span ~ span ~ span ~ span)
 e.mail.ru#@#.layout_right-size_60 .layout__main-frame:style(margin-right: auto!important;)
 @@||ad.mail.ru/adp/?_SITEZONE=*&isAtlas=$~third-party,xmlhttprequest
-@@||ad.mail.ru/adq/$script,domain=target.my.com
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
 e.mail.ru,octavius.mail.ru##body:not(#id) > div[style*="position: absolute;"][style*="visibility: hidden;"][style*="top:"][style*="left:"] > div div:style(display: block !important)
 e.mail.ru,octavius.mail.ru##body:not(#id) > div[style*="position: absolute;"][style*="visibility: hidden;"][style*="top:"][style*="left:"] > div:style(display: block !important)
-||ad.mail.ru/adp/$redirect=empty
-||ad.mail.ru/adq/$redirect=empty
-||ad.mail.ru/vast/$redirect=empty
+||ad.mail.ru/adp/$image,script,xmlhttprequest,redirect-rule=empty
+||ad.mail.ru/adq/$image,script,xmlhttprequest,redirect-rule=empty
+||ad.mail.ru/vast/$image,script,xmlhttprequest,redirect-rule=empty
 ||cdn.viqeo.tv/js/vq_starter.js$third-party,domain=lifehacker.ru|mail.ru
 ||mail.ru/api-proxy/rb-mimic/
 ||pubapi.viqeo.tv^$domain=mail.ru|sportmail.ru
