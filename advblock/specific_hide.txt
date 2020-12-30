@@ -1043,7 +1043,6 @@ mir-snov.net###text-html-widget-4
 translit.net###theBanner
 hqq.tv###this-pays-for-bandwidth-container-hor
 hitfm.ua,kissfm.ua,melodiafm.ua,radiorelax.ua,radioroks.ua,rusradio.ua,tavr.media,tavrmedia.ua###ticketsbox
-asn.in.ua###tiserblock
 russian.rt.com###today-media-article
 anime-free.net###toolbar > #Comm
 kerch.fm###toolsbar
@@ -2395,6 +2394,7 @@ allboxing.ru#?#.field-item > p:-abp-has(> noindex > [href*="fonbet.ru"])
 allboxing.ru#?#.field-item > p:-abp-has(> noindex > [href*="parimatch.ru"])
 allboxing.ru#?#.field-item > p:-abp-has(> noindex > [href*="utm_campaign"])
 fast-film.org,fast-film.ru,fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,fasttorent.su,filmopotok.ru,filmpotok.ru,kinomaniac.ru,pickfilm.ru,veleto.ru##.film_page > div:not([id]):not([class]) > center
+asn.in.ua##.filter-container
 nixp.ru##.firefox
 slivup.me##.firstPostRandomCode_wrapper
 finfront.ru##.first_block > .right_block
@@ -2850,12 +2850,15 @@ thevista.ru##.leftblinks
 docfilms.info##.leftcol > noindex
 smotriserial.me##.leftside > noindex
 the-cinema.online,the-cinema.tech##.leftside.lcolomn > .block:nth-of-type(1)
+asn.in.ua##.lenta > .clear_block
+asn.in.ua##.lenta > .clear_block + hr
 yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .newshead > div > .mainpage:first-child)
 yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .newshead > div > .mainpage:first-child) + tr
 yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .newshead > div > .mainpage:first-child) + tr + tr
 pohnews.org##.lentaInformInfScroll
 radiokp.ru##.lentainform-block
 point.md##.lentainform-widget
+asn.in.ua##.lentanewspost > .clear_block + hr
 big-games.info,small-games.info#?#.light:-abp-has([href="#hideRekCaption"])
 cwer.me,cwer.ru,cwer.su,cwer.ws##.like_hide
 homeporno.org##.line > a[href][target="_blank"] > *
@@ -3487,6 +3490,7 @@ cinema-24.pro,lenfilm.tv,sex-comics.mobi,youblogs.ru##.rekl
 hdtochka.club##.rekl-block
 minecraft-mod.su##.rekl_ad
 pogoda7.ru##.rekla_down_block
+asn.in.ua##.reklam_in_text
 tut.by##.reklama_links
 1pokirpichy.ru##.reklama_sidebar_ads
 nabat.news##.reklbanner
@@ -5908,6 +5912,9 @@ uznayvse.ru##div[class^="cls_placeholder_"]
 mobihobby.ru##div[class^="com-"]
 myanimecorner.ru##div[class^="commercials"]
 pc-radio.ru##div[class^="comscreen_"]
+asn.in.ua##div[class^="content-text"] > .content-text ~ hr
+asn.in.ua##div[class^="content-text"] > .opinion
+asn.in.ua##div[class^="content-text"] > div[style="min-height: 405px;"]
 igraemsa.ru##div[class^="content__banner"]
 walking-dead.me##div[class^="cpa"]
 inforeactor.ru##div[class^="da_container"]
@@ -6092,8 +6099,6 @@ korabel.ru##div[id^="BANNER"]
 exler.ru##div[id^="Banner"]
 smotri.com##div[id^="Banner"][id$="Recommended"]
 bookskeeper.ru##div[id^="BlockId"]
-asn.in.ua##div[id^="CNM"] ~ .news-head-border
-asn.in.ua##div[id^="CNM"] ~ .news-head-border + div[id]:not([class]):not([style])
 timeout.ru##div[id^="DIV_BSN_"]
 kontur-map.ru,ololo.fm##div[id^="DIV_DA"]
 vesti.ru##div[id^="DIV_SMI_"]
