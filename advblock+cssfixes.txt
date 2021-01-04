@@ -96,8 +96,8 @@ fishki.net##+js(setTimeout-defuser, is_adblock)
 football.ua,isport.ua,www.i.ua##+js(abort-current-inline-script, decodeURIComponent, getAdBlockStatus)
 football.ua,isport.ua,www.i.ua##+js(abort-current-inline-script, document.querySelector, /banner/)
 free-tor.info,korsars.info##+js(set-constant, String.fromCharCode, trueFunc)
-friends.in.ua,gidonline.eu,radikal.ru,simpsonsua.com.ua##+js(abort-on-property-read, atob)
-friends.in.ua,gra-prestoliv.in.ua,simpsonsua.com.ua,simpsonsua.tv##+js(abort-on-property-read, document.addEventListener)
+friends.in.ua,gidonline.eu,radikal.ru##+js(abort-on-property-read, atob)
+friends.in.ua,gra-prestoliv.in.ua,simpsonsua.tv##+js(abort-on-property-read, document.addEventListener)
 fssp.gov.ru##+js(abort-on-property-read, tingle)
 fssp.gov.ru,stroi-help.ru##+js(abort-on-property-write, document.oncontextmenu)
 fssp.gov.ru,stroi-help.ru##+js(abort-on-property-write, document.ondragstart)
@@ -260,7 +260,6 @@ znanija.com##+js(abort-on-property-read, localStorage)
 ||politros.com^$xmlhttprequest,badfilter,domain=politros.com
 ||pronpic.org^$third-party,badfilter
 ||shtrafsud.ru^$xmlhttprequest,badfilter,domain=shtrafsud.ru
-||simpsonsua.com.ua^$csp=script-src 'self' * data:,badfilter
 ||static-mon.yandex.net/static/main.js$script,redirect=noopjs
 ||static-mon.yandex.net/static/main.js$xmlhttprequest,redirect=nooptext
 ||strm.yandex.ru/get/$script,redirect=silent-noeval.js,domain=yandex.ru|yastatic.net

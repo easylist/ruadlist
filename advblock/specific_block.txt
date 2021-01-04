@@ -5,8 +5,6 @@
 /^https?://scrin.org/[^\s]/$csp=sandbox allow-same-origin;
 /^https?://yandex\.ru\/turbo\?/*[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
 /gateway/aHR0c$csp=script-src
-@@||simpsonsua.com.ua/user/*/#|$csp=script-src 'self' * data:
-@@||simpsonsua.com.ua/user/*/|$csp=script-src 'self' * data:
 ||0n-line.tv/*/|$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||60-fps.net/|$csp=script-src 'self' * blob: data:
 ||an.yandex.ru/count/$csp=script-src
@@ -54,7 +52,6 @@
 ||russfilm.net^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||serialsite.ru^$csp=script-src 'self' * data:
 ||shaggyimg.pro^$csp=script-src 'self' * data:
-||simpsonsua.com.ua^$csp=script-src 'self' * data:
 ||snitsya-son.ru^$csp=script-src 'self' * blob: data:
 ||sovetov.su/*/*utm_$csp=script-src
 ||sovetov.su/topne$csp=script-src
