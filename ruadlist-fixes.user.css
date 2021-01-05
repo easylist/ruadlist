@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20201224.1023
+@version        0.20210105.1104
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -30,9 +30,7 @@
   domain("amovies.cc"),
   domain("baskino-site.icu"),
   domain("baskino.me"),
-  domain("baskinonet.ru"),
   domain("betahdrezka.com"),
-  domain("bigcinema-tv.club"),
   domain("bombardir.ru"),
   domain("clubhdrezka.com"),
   domain("cokinopoisk.com"),
@@ -44,7 +42,6 @@
   domain("ehdrezka.com"),
   domain("ekinopoisk.com"),
   domain("ezhdrezka.com"),
-  domain("film-max.ru"),
   domain("film-ua.com"),
   domain("filmitorrent.net"),
   domain("filmy-smotret.net"),
@@ -53,7 +50,6 @@
   domain("gordonua.com"),
   domain("gtorrent.org"),
   domain("gtorrent.tv"),
-  domain("hd720.biz"),
   domain("hdkinozor.ru"),
   domain("hdrezka-ag.com"),
   domain("hdrezka.buzz"),
@@ -84,14 +80,12 @@
   domain("hdrezkablog.com"),
   domain("hdrezkaweb.com"),
   domain("hdrezkayou.com"),
-  domain("ikinohd.club"),
   domain("ikinohd.com"),
   domain("instahdrezka.com"),
   domain("investxp.ru"),
   domain("ixbt.com"),
   domain("jetsetter.ua"),
   domain("justhdrezka.com"),
-  domain("kinoaa.ru"),
   domain("kinoafisha.ua"),
   domain("kinobar.me"),
   domain("kinobe.club"),
@@ -177,10 +171,8 @@
   domain("ekinopoisk.com"),
   domain("epravda.com.ua"),
   domain("ezhdrezka.com"),
-  domain("film-max.ru"),
   domain("gecid.com"),
   domain("gethdrezka.com"),
-  domain("hd720.biz"),
   domain("hdrezka-ag.com"),
   domain("hdrezka.buzz"),
   domain("hdrezka.city"),
@@ -398,16 +390,23 @@
 @-moz-document
   domain("2ip.io"),
   domain("2ip.ru") {
-    .test-vpn a {
+    body:not([class]) .content-list > a[href^="https://krot.io"], 
+    body:not([class]) .ip-links a[href*="utm_"], 
+    body:not([class]) .ip-links_item > .ip-icon-link, 
+    body:not([class]) .page-speed > .speed_checker + style + div[class], 
+    body[class] #header > #nav > li:nth-child(2), 
+    body[class] .nav > li > a[href^="https://krot.io"] {
+        display: none !important
+    }
+    body:not([class]) .test-vpn > a {
         opacity: 0 !important;
         pointer-events: none !important
     }
 }
 
 @-moz-document domain("2ip.ru") {
-    .tabs > .advMenuTab {
-        opacity: 0 !important;
-        pointer-events: none !important
+    body:not([class]) .menu_isp__default > ul > li:nth-child(2) {
+        display: none !important
     }
 }
 
@@ -644,15 +643,6 @@
     }
 }
 
-@-moz-document domain("anime-rus.ru") {
-    #hide_show {
-        display: none !important
-    }
-    .nav {
-        position: relative !important
-    }
-}
-
 @-moz-document
   domain("anime.anidub.life"),
   domain("online.anidub.com") {
@@ -809,6 +799,15 @@
   domain("myjane.ru") {
     #pagewrapper {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("asn.in.ua") {
+    .lenta-wrap {
+        height: auto !important
+    }
+    .lenta-wrap > .lenta {
+        position: relative !important
     }
 }
 
@@ -988,6 +987,15 @@
     }
 }
 
+@-moz-document
+  domain("bugaga.ru"),
+  domain("zaycev.net") {
+    .body-branding {
+        background: none !important;
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("buh24.com.ua") {
     body > div[class^="mfp-"] {
         display: none !important
@@ -1033,8 +1041,7 @@
 
 @-moz-document
   domain("cartoonka.art"),
-  domain("multmania.club"),
-  domain("tlumtluda.info") {
+  domain("multmania.club") {
     body {
         background: black !important
     }
@@ -1232,6 +1239,12 @@
     }
     body.locked, html.locked {
         overflow:auto !important
+    }
+}
+
+@-moz-document domain("doefiratv.info") {
+    .b-cell > div[id] {
+        padding-top: 0 !important
     }
 }
 
@@ -1713,6 +1726,17 @@
 }
 
 @-moz-document
+  domain("freekeys.club"),
+  domain("trialnod.club") {
+    #keysbox {
+        display: block !important
+    }
+    #time {
+        display: none !important
+    }
+}
+
+@-moz-document
   domain("freeopenvpn.org"),
   domain("leninsw.info") {
     .adsbygoogle {
@@ -1966,12 +1990,6 @@
     }
     .main.center {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("hdfilms.tv") {
-    #subheader {
-        padding-top: 1px !important
     }
 }
 
@@ -2673,16 +2691,16 @@
         display: none !important
     }
     body > .zeropixel ~ * .tabs-content__item > [class*="news-main"] {
-        max-height: 80px !important;
+        max-height: 5em !important;
         position: static !important
     }
     body > .zeropixel ~ * .tabs-content__item > [class*="news-main"] > .news-main__text-wrapper {
-        max-height: 80px !important;
+        max-height: 5em !important;
         white-space: pre-wrap !important
     }
     body > .zeropixel ~ * .tabs-content__item > [class*="news-main"] > .news-main__img {
         max-width: unset !important;
-        height: 80px !important
+        height: 5em !important
     }
     body > .zeropixel ~ * .searchContainer ~ .tabs + div[class] {
         min-width: 640px !important
@@ -2861,8 +2879,8 @@
 
 @-moz-document domain("my.mail.ru") {
     #history_container > div[class][style*="display: block!important"], 
-    .b-history__adv-post-carousel, .l-app__left, .l-app__right, 
-    .sp-video__billboard, 
+    .app-event-bubbles, .b-history__adv-post-carousel, .l-app__left, 
+    .l-app__right, .sp-video__billboard, 
     :not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"], 
     div[class^="app-adv-"], html.window-loaded .b-video-backscreen {
         display: none !important
@@ -3086,21 +3104,6 @@
     }
 }
 
-@-moz-document domain("otvet.mail.ru") {
-    .wrapper div[class^="adv-slot"], .wrapper div[id^="trg-b"], 
-    [class*="layout"] div[class^="adv-slot"], 
-    [class*="layout"] div[id^="trg-b"], 
-    [class]:not([style]) > [class^="adv-slot"], 
-    [class]:not([style]) > [class^="banner-"], 
-    div[class][style="top: 56px;"] > div > div ~ div, 
-    div[class^="layout__contentCol1"] > div[class^="block_1"], 
-    footer > .mailru-visibility-check {
-        height: 0 !important;
-        pointer-events: none !important;
-        opacity: 0 !important
-    }
-}
-
 @-moz-document
   domain("otxataba.net"),
   domain("xatab-repack.com"),
@@ -3313,12 +3316,6 @@
     }
 }
 
-@-moz-document domain("prostoporno.help") {
-    .content_wrapper {
-        padding-top: 0 !important
-    }
-}
-
 @-moz-document domain("protanki.tv") {
     .ant-modal-mask, .ant-modal-wrap {
         display: none !important
@@ -3364,12 +3361,6 @@
 @-moz-document domain("radioclub.ua") {
     #js-content {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document domain("radiola.audio") {
-    .mh-container {
-        margin-top: 0 !important
     }
 }
 
@@ -3582,12 +3573,6 @@
     }
     .wrapper > #tm {
         margin-bottom: auto !important
-    }
-}
-
-@-moz-document domain("smotri-filmi.cc") {
-    .broda {
-        margin-top: 0 !important
     }
 }
 
@@ -3874,12 +3859,6 @@
     }
 }
 
-@-moz-document domain("tracktor.tv") {
-    .pagebg {
-        padding-top: 0 !important
-    }
-}
-
 @-moz-document domain("translit.ru") {
     .tBlurred {
         -webkit-filter: none !important
@@ -3893,6 +3872,15 @@
     body:not(#id) {
         background-color: #202030 !important;
         background-image: none !important
+    }
+}
+
+@-moz-document domain("trialnod.club") {
+    #modal-overlay, #modal-window {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
     }
 }
 
@@ -4389,16 +4377,18 @@
     }
 }
 
-@-moz-document domain("zagonka.tv") {
-    #sitebox:not(#id) {
-        margin-top: 0 !important
+@-moz-document domain("yk.kz") {
+    .top-line {
+        display: none !important
+    }
+    .top-line + header.main {
+        top: auto !important
     }
 }
 
-@-moz-document domain("zaycev.net") {
-    .body-branding {
-        background: none !important;
-        padding-top: 0 !important
+@-moz-document domain("zagonka.tv") {
+    #sitebox:not(#id) {
+        margin-top: 0 !important
     }
 }
 
@@ -4423,9 +4413,12 @@
     }
 }
 
-@-moz-document domain("zerofilm.ru") {
-    .wrap-in {
-        margin-top: 80px !important
+@-moz-document domain("zerno-ua.com") {
+    .branding_wrapper > * {
+        pointer-events: auto !important
+    }
+    .branding_wrapper {
+        pointer-events: none !important
     }
 }
 
