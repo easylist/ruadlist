@@ -957,6 +957,7 @@ nova.rambler.*#?#+js(abort-on-property-read.js, Object.prototype.AdvManager)
 ~yandex.net,yandex.*#?#+js(set-constant.js, __AAB__, false)
 !
 ! Экспериментальные правила для маркеров
+&ymclid=$document,queryprune=|
 /story/*?lang=$document,queryprune=|,domain=yandex.*
 =ukraine_news&utm_$document,queryprune=|utm_
 ?commercial=$document,queryprune=|,domain=ria.com
@@ -971,6 +972,7 @@ nova.rambler.*#?#+js(abort-on-property-read.js, Object.prototype.AdvManager)
 ?utm_source=recreativ$document,queryprune=|utm_
 ?utm_source=ukr$document,queryprune=|utm_
 ?utm_source=warfiles.ru$document,queryprune=|utm_
+?ymclid=$document,queryprune=|
 from=*_portal&lang=$document,queryprune=|,domain=yandex.*
 utm_$document,xmlhttprequest,queryprune=|utm_,domain=4pda.ru|auto.ru|autonews.ru|championat.com|esquire.ru|gazeta.ru|instagram.com|ivi.ru|kp.by|kp.kg|kp.kz|kp.md|kp.ru|kurs.com.ua|lenta.ru|livejournal.com|m24.ru|mail.ru|moslenta.ru|newstube.ru|nv.ua|rambler.ru|rbc.ru|rg.ru|ria.com|riafan.ru|rt.com|rueconomics.ru|sportrbc.ru|svpressa.ru|tass.ru|tvzvezda.ru|vz.ru
 utm_source=horoscopes$document,xmlhttprequest,queryprune=|utm_
