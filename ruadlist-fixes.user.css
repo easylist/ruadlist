@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210105.1104
+@version        0.20210114.234
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -15,139 +15,6 @@
         display: none !important
     }
     .wrapper {
-        padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("101kinopoisk.com"),
-  domain("24video.adult"),
-  domain("24video.click"),
-  domain("24video.vip"),
-  domain("4watching.club"),
-  domain("aghdrezka.com"),
-  domain("ahdrezka.com"),
-  domain("amovies.cc"),
-  domain("baskino-site.icu"),
-  domain("baskino.me"),
-  domain("betahdrezka.com"),
-  domain("bombardir.ru"),
-  domain("clubhdrezka.com"),
-  domain("cokinopoisk.com"),
-  domain("comedy-portal.net"),
-  domain("dnepr.info"),
-  domain("drhdrezka.com"),
-  domain("dugtor.org"),
-  domain("dugtor.ru"),
-  domain("ehdrezka.com"),
-  domain("ekinopoisk.com"),
-  domain("ezhdrezka.com"),
-  domain("film-ua.com"),
-  domain("filmitorrent.net"),
-  domain("filmy-smotret.net"),
-  domain("gethdrezka.com"),
-  domain("gidonline.io"),
-  domain("gordonua.com"),
-  domain("gtorrent.org"),
-  domain("gtorrent.tv"),
-  domain("hdkinozor.ru"),
-  domain("hdrezka-ag.com"),
-  domain("hdrezka.buzz"),
-  domain("hdrezka.city"),
-  domain("hdrezka.club"),
-  domain("hdrezka.cm"),
-  domain("hdrezka.co"),
-  domain("hdrezka.gift"),
-  domain("hdrezka.in"),
-  domain("hdrezka.ink"),
-  domain("hdrezka.link"),
-  domain("hdrezka.live"),
-  domain("hdrezka.loan"),
-  domain("hdrezka.lol"),
-  domain("hdrezka.monster"),
-  domain("hdrezka.name"),
-  domain("hdrezka.rest"),
-  domain("hdrezka.run"),
-  domain("hdrezka.sh"),
-  domain("hdrezka.su"),
-  domain("hdrezka.today"),
-  domain("hdrezka.top"),
-  domain("hdrezka.tv"),
-  domain("hdrezka.vip"),
-  domain("hdrezka.website"),
-  domain("hdrezka.win"),
-  domain("hdrezka1.site"),
-  domain("hdrezkablog.com"),
-  domain("hdrezkaweb.com"),
-  domain("hdrezkayou.com"),
-  domain("ikinohd.com"),
-  domain("instahdrezka.com"),
-  domain("investxp.ru"),
-  domain("ixbt.com"),
-  domain("jetsetter.ua"),
-  domain("justhdrezka.com"),
-  domain("kinoafisha.ua"),
-  domain("kinobar.me"),
-  domain("kinobe.club"),
-  domain("kinoplanet.biz"),
-  domain("kintor.org"),
-  domain("koshara.net"),
-  domain("kronverkcinema.ua"),
-  domain("live-rutor.org"),
-  domain("livehdrezka.com"),
-  domain("livekinopoisk.com"),
-  domain("liverutor.org"),
-  domain("lostserials.com"),
-  domain("lotzon.co"),
-  domain("lotzon.pro"),
-  domain("metahdrezka.com"),
-  domain("moskva.fm"),
-  domain("mrhdrezka.com"),
-  domain("mrutor.org"),
-  domain("my-tfile.org"),
-  domain("myhdrezka.com"),
-  domain("new-rutor.org"),
-  domain("newstudio.tv"),
-  domain("nexthdrezka.com"),
-  domain("nnm-club.me"),
-  domain("nnmclub.ro"),
-  domain("nnmclub.to"),
-  domain("nuhdrezka.com"),
-  domain("nukinopoisk.com"),
-  domain("ostfilm.tv"),
-  domain("pure-t.ru"),
-  domain("rehdrezka.com"),
-  domain("rezka.ag"),
-  domain("roem.ru"),
-  domain("rusporno.vip"),
-  domain("serialbox.org"),
-  domain("smotret-film.net"),
-  domain("smotret-filmy.net"),
-  domain("tfile-music.org"),
-  domain("tfile.cc"),
-  domain("tfile.co"),
-  domain("tfilm.club"),
-  domain("tfilm.me"),
-  domain("tfilm.tv"),
-  domain("the-rutor.org"),
-  domain("thehdrezka.com"),
-  domain("torentor.co"),
-  domain("torrfan.org"),
-  domain("torrminator.com"),
-  domain("trupornolabs.org"),
-  domain("tryhdrezka.com"),
-  domain("tvhdrezka.com"),
-  domain("uphdrezka.com"),
-  domain("vc.ru"),
-  domain("videoclub.men"),
-  domain("virusinfo.info"),
-  domain("vse-sezony.cc"),
-  domain("wikianime.tv"),
-  domain("xxxadulttorrent.org"),
-  domain("you-anime.ru"),
-  domain("youhdrezka.com"),
-  domain("zombie-film.club") {
-    body:not(#id), html:not(#id) {
         padding-top: 0 !important
     }
 }
@@ -250,6 +117,137 @@
   domain("zakon.kz") {
     body:not(#id), html:not(#id) {
         background-image: none !important
+    }
+}
+
+@-moz-document
+  domain("101kinopoisk.com"),
+  domain("24video.adult"),
+  domain("24video.click"),
+  domain("24video.vip"),
+  domain("aghdrezka.com"),
+  domain("ahdrezka.com"),
+  domain("baskino-site.icu"),
+  domain("baskino.me"),
+  domain("betahdrezka.com"),
+  domain("bombardir.ru"),
+  domain("clubhdrezka.com"),
+  domain("cokinopoisk.com"),
+  domain("comedy-portal.net"),
+  domain("dnepr.info"),
+  domain("drhdrezka.com"),
+  domain("dugtor.org"),
+  domain("dugtor.ru"),
+  domain("ehdrezka.com"),
+  domain("ekinopoisk.com"),
+  domain("ezhdrezka.com"),
+  domain("film-ua.com"),
+  domain("filmitorrent.net"),
+  domain("filmy-smotret.net"),
+  domain("gethdrezka.com"),
+  domain("gidonline.io"),
+  domain("gordonua.com"),
+  domain("gtorrent.me"),
+  domain("gtorrent.org"),
+  domain("hdkinozor.ru"),
+  domain("hdrezka-ag.com"),
+  domain("hdrezka.buzz"),
+  domain("hdrezka.city"),
+  domain("hdrezka.club"),
+  domain("hdrezka.cm"),
+  domain("hdrezka.co"),
+  domain("hdrezka.gift"),
+  domain("hdrezka.in"),
+  domain("hdrezka.ink"),
+  domain("hdrezka.link"),
+  domain("hdrezka.live"),
+  domain("hdrezka.loan"),
+  domain("hdrezka.lol"),
+  domain("hdrezka.monster"),
+  domain("hdrezka.name"),
+  domain("hdrezka.rest"),
+  domain("hdrezka.run"),
+  domain("hdrezka.sh"),
+  domain("hdrezka.su"),
+  domain("hdrezka.today"),
+  domain("hdrezka.top"),
+  domain("hdrezka.tv"),
+  domain("hdrezka.vip"),
+  domain("hdrezka.website"),
+  domain("hdrezka.win"),
+  domain("hdrezka1.site"),
+  domain("hdrezkablog.com"),
+  domain("hdrezkaweb.com"),
+  domain("hdrezkayou.com"),
+  domain("ikinohd.com"),
+  domain("instahdrezka.com"),
+  domain("investxp.ru"),
+  domain("ixbt.com"),
+  domain("jetsetter.ua"),
+  domain("justhdrezka.com"),
+  domain("kinoafisha.ua"),
+  domain("kinobar.me"),
+  domain("kinobe.club"),
+  domain("kinoplanet.biz"),
+  domain("kintor.org"),
+  domain("koshara.net"),
+  domain("kronverkcinema.ua"),
+  domain("live-rutor.org"),
+  domain("livehdrezka.com"),
+  domain("livekinopoisk.com"),
+  domain("liverutor.org"),
+  domain("lostserials.com"),
+  domain("lotzon.co"),
+  domain("lotzon.pro"),
+  domain("metahdrezka.com"),
+  domain("moskva.fm"),
+  domain("mrhdrezka.com"),
+  domain("mrutor.org"),
+  domain("my-tfile.org"),
+  domain("myhdrezka.com"),
+  domain("new-rutor.org"),
+  domain("newstudio.tv"),
+  domain("nexthdrezka.com"),
+  domain("nnm-club.me"),
+  domain("nnmclub.ro"),
+  domain("nnmclub.to"),
+  domain("nuhdrezka.com"),
+  domain("nukinopoisk.com"),
+  domain("ostfilm.tv"),
+  domain("pure-t.ru"),
+  domain("rehdrezka.com"),
+  domain("rezka.ag"),
+  domain("roem.ru"),
+  domain("rusporno.vip"),
+  domain("serialbox.org"),
+  domain("smotret-film.net"),
+  domain("smotret-filmy.net"),
+  domain("tfile-music.org"),
+  domain("tfile.cc"),
+  domain("tfile.co"),
+  domain("tfilm.club"),
+  domain("tfilm.me"),
+  domain("tfilm.tv"),
+  domain("the-rutor.org"),
+  domain("thehdrezka.com"),
+  domain("torentor.co"),
+  domain("torrfan.org"),
+  domain("torrminator.com"),
+  domain("trupornolabs.org"),
+  domain("tryhdrezka.com"),
+  domain("tvhdrezka.com"),
+  domain("uphdrezka.com"),
+  domain("vc.ru"),
+  domain("videoclub.men"),
+  domain("virusinfo.info"),
+  domain("vse-sezony.cc"),
+  domain("wikianime.tv"),
+  domain("xxxadulttorrent.org"),
+  domain("you-anime.ru"),
+  domain("youhdrezka.com"),
+  domain("zombie-film.club") {
+    body:not(#id), html:not(#id) {
+        padding-top: 0 !important
     }
 }
 
@@ -390,11 +388,13 @@
 @-moz-document
   domain("2ip.io"),
   domain("2ip.ru") {
+    body:not([class]) #content > .page_speed_result__share + style + div[class], 
     body:not([class]) .content-list > a[href^="https://krot.io"], 
     body:not([class]) .ip-links a[href*="utm_"], 
     body:not([class]) .ip-links_item > .ip-icon-link, 
     body:not([class]) .page-speed > .speed_checker + style + div[class], 
     body[class] #header > #nav > li:nth-child(2), 
+    body[class] .ip-info-entry > .ip a[href*="utm_"], 
     body[class] .nav > li > a[href^="https://krot.io"] {
         display: none !important
     }
@@ -447,6 +447,24 @@
 @-moz-document domain("7days.ru") {
     body {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("8fornod.net") {
+    .remodal-is-opened {
+        display: none !important
+    }
+    html {
+        overflow: auto !important
+    }
+}
+
+@-moz-document
+  domain("8fornod.net"),
+  domain("freekeys.club"),
+  domain("trialnod.club") {
+    body {
+        overflow: auto !important
     }
 }
 
@@ -1731,7 +1749,7 @@
     #keysbox {
         display: block !important
     }
-    #time {
+    #modal-overlay, #modal-window, #time {
         display: none !important
     }
 }
@@ -3520,6 +3538,12 @@
     }
 }
 
+@-moz-document domain("sdamgia.ru") {
+    .wrapper > div[class] > center[style*="red;"][style*="font-size:"] {
+        display: none !important
+    }
+}
+
 @-moz-document domain("season-var.net") {
     #main-wrapper {
         top: 0 !important
@@ -3875,15 +3899,6 @@
     }
 }
 
-@-moz-document domain("trialnod.club") {
-    #modal-overlay, #modal-window {
-        display: none !important
-    }
-    body {
-        overflow: auto !important
-    }
-}
-
 @-moz-document domain("trucks.ati.su") {
     .grid-user-data > .user-data-grid {
         background: none !important
@@ -3902,6 +3917,12 @@
     }
     body:not(#id) {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("tut.by") {
+    html[class] > body {
+        background-color: #e6e6e6 !important
     }
 }
 
@@ -4080,6 +4101,15 @@
 @-moz-document domain("vsthouse.ru") {
     .a-overlay {
         display: none !important
+    }
+}
+
+@-moz-document domain("vtimes.io") {
+    div[class^="cookies-modal"] {
+        display: none !important
+    }
+    body {
+        position: unset !important
     }
 }
 
