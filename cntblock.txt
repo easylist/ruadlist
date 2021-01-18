@@ -921,6 +921,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.turbo-embed_market_widget
 4pda.*##html[style] > body [class]:matches-css(height: /^403\./)
 4pda.*#?#+js(abort-current-inline-script.js, setTimeout, removeAttribute)
 @@/^https?://yandex\.ru\/turbo\?/*[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
+@@/adsense.png|$image,domain=freeopenvpn.org
 @@||inoreader.com^$generichide
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
 animedub.ru##a[href="https://animedub.ru/adblock.html"]
