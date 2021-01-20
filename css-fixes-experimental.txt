@@ -316,6 +316,9 @@ drive2.com,drive2.ru##div[itemtype="http://schema.org/BlogPosting"] ~ div:not(:l
 drive2.com,drive2.ru##div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class]
 drive2.com,drive2.ru##div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] ~ div:not(:last-child)
 ! ---
+driveroff.net##body > #right
+driveroff.net#?#body > #right ~ .middle:style(margin-right: 4px !important)
+! ---
 dtf.ru#?#.igrozhur-promo-ref:style(padding: 0 !important; background-color: transparent !important; cursor: auto !important)
 ! ---
 dugtor.org,dugtor.ru#?##left-block:style(min-height: 100% !important)
