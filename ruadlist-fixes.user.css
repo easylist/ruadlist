@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210114.234
+@version        0.20210122.11
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -741,19 +741,6 @@
   domain("anistar.org"),
   domain("anistar.pro"),
   domain("anistar.world"),
-  domain("anistar1.org"),
-  domain("anistar10.org"),
-  domain("anistar11.org"),
-  domain("anistar12.org"),
-  domain("anistar13.org"),
-  domain("anistar2.org"),
-  domain("anistar3.org"),
-  domain("anistar4.org"),
-  domain("anistar5.org"),
-  domain("anistar6.org"),
-  domain("anistar7.org"),
-  domain("anistar8.org"),
-  domain("anistar9.org"),
   domain("online-star.org"),
   domain("online-stars.org") {
     html > body:not(#id) {
@@ -1355,6 +1342,15 @@
     }
 }
 
+@-moz-document domain("driveroff.net") {
+    body > #right {
+        display: none !important
+    }
+    body > #right ~ .middle {
+        margin-right: 4px !important
+    }
+}
+
 @-moz-document
   domain("drlink.online"),
   domain("picclick.ru"),
@@ -1754,6 +1750,15 @@
     }
 }
 
+@-moz-document domain("freeopenvpn.org") {
+    body > a[href][target="_blank"] {
+        display: none !important
+    }
+    #advert {
+        height: 1px !important
+    }
+}
+
 @-moz-document
   domain("freeopenvpn.org"),
   domain("leninsw.info") {
@@ -1938,6 +1943,12 @@
 @-moz-document domain("gotps3.ru") {
     #Page {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("govoritmoskva.ru") {
+    .rightColumn > .darkPart, footer.pageContainer {
+        height: auto !important
     }
 }
 
@@ -3397,16 +3408,6 @@
     .l-sticky-right-parent, .popup_push {
         display: none !important
     }
-    .l-col-100h {
-        min-height: 0 !important
-    }
-    #js_col_left > .l-sticky {
-        position: relative !important;
-        top: 0 !important
-    }
-    .js-news-feed > .news-feed {
-        position: unset !important
-    }
 }
 
 @-moz-document
@@ -3414,6 +3415,17 @@
   domain("sportrbc.ru") {
     .g-banner__news-footer {
         min-height: 0 !important
+    }
+    .l-col-100h {
+        min-height: 0 !important;
+        height: auto !important
+    }
+    #js_col_left > .l-sticky {
+        position: relative !important;
+        top: 0 !important
+    }
+    .js-news-feed > .news-feed {
+        position: unset !important
     }
 }
 
@@ -3557,6 +3569,21 @@
     }
 }
 
+@-moz-document domain("senior.ua") {
+    .mfp-content {
+        background-color: #ddd !important
+    }
+    .mfp-bg, .subscribe-popup {
+        display: none !important
+    }
+    html {
+        overflow: auto !important
+    }
+    .mfp-wrap {
+        position: unset !important
+    }
+}
+
 @-moz-document domain("sergeistrelec.ru") {
     div[id][style^="background"][style*="fixed"][style*="z-index"] {
         display: none !important
@@ -3693,7 +3720,7 @@
     .page-layout {
         margin-top: 0 !important
     }
-    #branding-layout:not(#id) {
+    :not(.nba-global-nav-wrapper) + #branding-layout:not(#id) {
         margin-top: 96px !important
     }
     #branding-layout:not(#id), body.img-bg {
@@ -3869,6 +3896,9 @@
     #comments_block {
         margin-top: unset !important
     }
+    .embed-instagram > iframe {
+        max-width: unset !important
+    }
 }
 
 @-moz-document domain("torrentinka.me") {
@@ -4002,6 +4032,12 @@
     }
     .fancybox-lock body {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("vgae.ru") {
+    #cmain {
+        margin-left: unset !important
     }
 }
 
@@ -4319,7 +4355,6 @@
     .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
     .map-copyrights ~ .sidebar-container .scroll__content .route-panel-form-view__content > div > div[class][style^="border-top"], 
-    .mg-page-layout-item_pos_right div[class*="wrapper"] > div[class]:empty, 
     .mini-suggest__item_subtype_ad, .serp-item div[class*="advanced-polaroid"], 
     .serp-list > .incut > .direct, .turbo-advert__loader, 
     .zen-lib__container .zenad-card-rtb, 
@@ -4327,6 +4362,7 @@
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
     body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
+    body[data-bem*="turboUid"] .layout__left_sticky .loader__inner, 
     body[data-bem*="turboUid"] div[class$="_status_show"] div[class*="__load-error "], 
     body[data-bem*="turboUid"] div[class*="__item_type_partner "]:empty ~ .loader, 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) > div[class] > div:not([class]), 
@@ -4338,7 +4374,6 @@
         display: none !important
     }
     .media-grid .media-grid__row_visible_yes > div:empty, 
-    .mg-page-layout-item div[class^="sport-"], 
     .monetization-group > .monetization-group__item {
         height: auto !important
     }
@@ -4357,22 +4392,12 @@
     .main .widgets__col_td_1 {
         max-width: unset !important
     }
-    .mg-page-layout-item div[class^="sport-"] div[class^="turbo-"] {
-        min-height: 0 !important
-    }
     body[data-bem*="turboUid"] div[class$="rect"][id][data-name] {
         min-height: 0 !important;
         height: unset !important
     }
     .b-page {
         padding-top: 0 !important
-    }
-    .sport-event-layout-right-column__item > div {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important
-    }
-    .mg-page-layout-item_pos_right div[class*="wrapper"] > div {
-        padding: 0 !important
     }
     .media-infinity-footer__content_sticky_yes {
         position: fixed !important
