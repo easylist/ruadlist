@@ -898,6 +898,7 @@ ivi.ru#?#+js(set-constant.js, Object.prototype.hasAdv, noopFunc)
 yastatic.net#?#+js(set-constant.js, Object.prototype.hasPreroll, null)
 rutracker.lib,rutracker.net,rutracker.nl,rutracker.org#?#+js(set-constant.js, String.prototype.startsWith, noopFunc)
 rp5.am,rp5.by,rp5.co.uk,rp5.kz,rp5.lt,rp5.lv,rp5.md,rp5.ru,rp5.ua#?#+js(setTimeout-defuser.js, xvb)
+mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.ua,mail.yandex.uz##.PSHeader-Pro
 inoreader.com##.ad_title > a
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.b-statcounter + div[class] > div[id][class]
 militaryreview.su##.bbanerr
@@ -914,10 +915,11 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.news-app div[class*="_type_n
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#.news-app__feed > .mg-grid__col:-abp-has(> div[class*="_type_"] > div[class*="loader"] + div[id]:empty)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#.news-app__feed > .mg-grid__row > .mg-grid__col:-abp-has(> div[class*="_type_"] > div[class*="loader"] + div[id]:empty)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.news-top-rubric-heading > span:only-child
+mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.ua,mail.yandex.uz##.ns-view-mail-pro-left-column-button
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,tv.yandex.uz##.recommended-ott
 radioprofusion.com##.revolvermaps
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.turbo-embed_market_widget
-/^https?://mail\.yandex\.(by|kz|ru|ua|uz)/[^\s]{120,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|yandex.uz
+/^https?://mail\.yandex\.(by|kz|ru|ua|uz)/[^\s]{120,}/$script,domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.ua|mail.yandex.uz
 /^https?://rkn\.gov\.ru\/(?!js\/)+[a-z0-9]{15,25}\.js\?+[0-9]{7,15}/$script,domain=rkn.gov.ru
 /^https?://yastatic\.net\/www\/_\/[^\s]{170,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 4pda.*##html[style] > body :not(div) ~ :not(div)[class][id][style]:style(background-image: none !important)
