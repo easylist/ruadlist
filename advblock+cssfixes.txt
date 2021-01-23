@@ -28,7 +28,7 @@
 1plus1.video##+js(cookie-remover, _opov_sid_)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)
 1tv.ru##+js(set-constant, window.EUMP.plugins.antiblock, noopFunc)
-24boxing.com.ua,businessua.com,f1analytic.com,football-ukraine.com,footballgazeta.com,footballtransfer.com.ua,glianec.com,sportanalytic.com,stravy.net,zdorovia.com.ua##+js(abort-current-inline-script, setInterval, reload)
+24boxing.com.ua,businessua.com,f1analytic.com,football-ukraine.com,footballgazeta.com,footballtransfer.com.ua,glianec.com,nashamama.com,sportanalytic.com,stravy.net,zdorovia.com.ua##+js(abort-current-inline-script, setInterval, reload)
 24molnia.com,7days.ru,7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,maxpark.com,news.ru,newsland.com,ogodom.ru,paperdoc.ru,pasmi.ru,politros.com,rueconomics.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
 24molnia.com,7days.ru,7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,maxpark.com,news.ru,newsland.com,ogodom.ru,paperdoc.ru,pasmi.ru,politros.com,rueconomics.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
@@ -86,6 +86,8 @@ echo.msk.ru##+js(abort-on-property-read, Object.prototype.AdblockCookieMatchingT
 eksmo.ru##.fancybox-container:has([src*="/smv/popup/"])
 electric-house.ru##+js(abort-on-property-read, ads)
 electric-house.ru,euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru,stroi-help.ru##+js(abort-current-inline-script, Math.floor, adregain_wall)
+epravda.com.ua,football.ua,isport.ua,pravda.com.ua,www.i.ua##+js(abort-current-inline-script, decodeURIComponent, getAdBlockStatus)
+epravda.com.ua,football.ua,isport.ua,pravda.com.ua,www.i.ua##+js(abort-current-inline-script, document.querySelector, /banner/)
 fapreactor.com,pornreactor.cc##+js(abort-on-property-read, D4zz)
 fast-film.org,fast-film.ru,fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,fasttorent.su,filmopotok.ru,filmpotok.ru,kinomaniac.ru,pickfilm.ru,veleto.ru##+js(abort-current-inline-script, document.createElement, initb)
 fastpic.ru,~new.fastpic.ru##+js(abort-current-inline-script, document.createElement, Math.random)
@@ -94,8 +96,6 @@ ferr-um.ucoz.ru,stalker-2-2012.ucoz.net##+js(setTimeout-defuser, getElementBy)
 film.ru##+js(remove-attr, autoplay|loop, video)
 fishki.net##+js(abort-on-property-read, Object.prototype.fakeDetect)
 fishki.net##+js(setTimeout-defuser, is_adblock)
-football.ua,isport.ua,www.i.ua##+js(abort-current-inline-script, decodeURIComponent, getAdBlockStatus)
-football.ua,isport.ua,www.i.ua##+js(abort-current-inline-script, document.querySelector, /banner/)
 free-tor.info,korsars.info##+js(set-constant, String.fromCharCode, trueFunc)
 friends.in.ua,gidonline.eu,radikal.ru##+js(abort-on-property-read, atob)
 friends.in.ua,gra-prestoliv.in.ua,simpsonsua.tv##+js(abort-on-property-read, document.addEventListener)
@@ -329,20 +329,20 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod
 !
 ! Zmctrack
 segodnya.ua##+js(abort-current-inline-script, document.documentElement.clientWidth)
-112.ua,24boxing.com.ua,4mama.ua,autoua.net,avtovod.com.ua,beauty.ua,bilshe.com,buhgalter.com.ua,buhgalter911.com,businessua.com,dengi.ua,ditey.com,edinstvennaya.ua,eknigi.org,enovosty.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,football-ukraine.com,football24.ua,footballgazeta.com,footballtransfer.com.ua,gismeteo.ua,glianec.com,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,internetua.com,isport.ua,kolobok.ua,kp.ua,kriminal.tv,kzblow.info,lifedon.com.ua,liga.net,mama.ua,meteo.ua,mport.ua,nashamama.com,newsyou.info,nnovosti.info,nv.ua,okino.ua,orakul.com,ostro.org,~passport.i.ua,~pinformer.sinoptik.ua,pravda.com.ua,real-vin.com,segodnya.ua,sinoptik.ua,smak.ua,strana.ua,stravy.net,superdom.ua,telegraf.com.ua,tochka.net,tv.ua,tvgid.ua,tvoymalysh.com.ua,udoktora.net,viva.ua,vsetv.com,www.bigmir.net,zdorovia.com.ua##+js(set-constant, String.prototype.charCodeAt, trueFunc)
-u-news.com.ua##.counters:style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##.fixed-block > div[class] ~ div:style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-u-news.com.ua##.side_adv:style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-@@||u-news.com.ua^$generichide
+@@||s.zmctrack.net/z|$third-party,xmlhttprequest,badfilter,domain=~www.ukr.net
+@@||s.zmctrack.net/z|$third-party,xmlhttprequest,domain=~24boxing.com.ua|~www.ukr.net
 @@||www.ukr.net^$generichide
 www.ukr.net##a[href][id$="op"][style]:style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-besplatka.ua,bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,forumodua.com,isport.ua,kolobok.ua,tochka.net,tvgid.ua##body > div:not([id]):not([class]):not([style]):empty:remove()
-besplatka.ua,bigmir.net,censor.net,isport.ua,kolobok.ua,passport.i.ua,tochka.net,toneto.net,ukr.net##body > iframe[name]:not([id]):not([class]):not([src]):remove()
+112.ua,24boxing.com.ua,besplatka.ua,bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,football-ukraine.com,football24.ua,footballtransfer.com.ua,forumodua.com,gorod.dp.ua,i.ua,isport.ua,kolobok.ua,liga.net,nashamama.com,tochka.net,tvgid.ua,vsetv.com##body > div:not([id]):not([class]):not([style]):empty:remove()
+112.ua,24boxing.com.ua,4mama.ua,avtovod.com.ua,beauty.ua,besplatka.ua,bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,enovosty.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,football-ukraine.com,football24.ua,footballtransfer.com.ua,forumodua.com,gismeteo.ua,glianec.com,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,internetua.com,isport.ua,kolobok.ua,kp.ua,kriminal.tv,lifedon.com.ua,liga.net,mama.ua,meteo.ua,mport.ua,nashamama.com,newsyou.info,nnovosti.info,nv.ua,okino.ua,orakul.com,ostro.org,pravda.com.ua,real-vin.com,sinoptik.ua,smak.ua,sportanalytic.com,stravy.net,tochka.net,toneto.net,tv.ua,tvgid.ua,tvoymalysh.com.ua,u-news.com.ua,udoktora.net,ukr.net,vsetv.com,zdorovia.com.ua##body > iframe[name]:not([id]):not([class]):not([src]):remove()
+24boxing.com.ua##cv
 www.ukr.net##div[class^="fuel-"][class$="-banner"]:style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-censor.net,epravda.com.ua,eurointegration.com.ua,forumodua.com,toneto.net,tvgid.ua##head > iframe[name]:not([id]):not([class]):not([src]):remove()
-besplatka.ua,censor.net,forumodua.com,toneto.net,u-news.com.ua##style:first-child + div[class]
-besplatka.ua,censor.net,forumodua.com,toneto.net,u-news.com.ua##style:first-child ~ slot ~ div[class]
-||counter.yadro.ru^$image,redirect-rule=empty,domain=u-news.com.ua
+4mama.ua,beauty.ua,censor.net,epravda.com.ua,eurointegration.com.ua,forumodua.com,gismeteo.ua,internetua.com,mama.ua,newsyou.info,okino.ua,sinoptik.ua,toneto.net,tvgid.ua,tvoymalysh.com.ua,udoktora.net##head > iframe[name]:not([id]):not([class]):not([src]):remove()
+112.ua,24boxing.com.ua,4mama.ua,avtovod.com.ua,beauty.ua,besplatka.ua,bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,enovosty.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,football-ukraine.com,football24.ua,footballtransfer.com.ua,forumodua.com,gismeteo.ua,glianec.com,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,internetua.com,isport.ua,kolobok.ua,kp.ua,kriminal.tv,lifedon.com.ua,liga.net,mama.ua,meteo.ua,mport.ua,nashamama.com,newsyou.info,nnovosti.info,nv.ua,okino.ua,orakul.com,ostro.org,pravda.com.ua,real-vin.com,sinoptik.ua,smak.ua,sportanalytic.com,stravy.net,tochka.net,toneto.net,tv.ua,tvgid.ua,tvoymalysh.com.ua,u-news.com.ua,udoktora.net,vsetv.com,zdorovia.com.ua##style:first-child + div[class]
+112.ua,24boxing.com.ua,4mama.ua,avtovod.com.ua,beauty.ua.bigmir.net,besplatka.ua,bilshe.com,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,enovosty.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,football-ukraine.com,football24.ua,footballtransfer.com.ua,forumodua.com,gismeteo.ua,glianec.com,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,internetua.com,isport.ua,kolobok.ua,kp.ua,kriminal.tv,lifedon.com.ua,liga.net,mama.ua,meteo.ua,mport.ua,nashamama.com,newsyou.info,nnovosti.info,nv.ua,okino.ua,orakul.com,ostro.org,pravda.com.ua,real-vin.com,sinoptik.ua,smak.ua,sportanalytic.com,stravy.net,tochka.net,toneto.net,tv.ua,tvgid.ua,tvoymalysh.com.ua,u-news.com.ua,udoktora.net,vsetv.com,zdorovia.com.ua##style:first-child ~ slot ~ div[class]
+24boxing.com.ua##style:first-child ~ slot[style="display: block;"]
+sinoptik.ua##style:not(#id):style(all: inherit !important)
 !
 ! Гисметео
 gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
