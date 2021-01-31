@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210122.11
+@version        0.20210131.423
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -147,8 +147,8 @@
   domain("gethdrezka.com"),
   domain("gidonline.io"),
   domain("gordonua.com"),
-  domain("gtorrent.me"),
   domain("gtorrent.org"),
+  domain("gtorrent.pro"),
   domain("hdkinozor.ru"),
   domain("hdrezka-ag.com"),
   domain("hdrezka.buzz"),
@@ -222,6 +222,7 @@
   domain("serialbox.org"),
   domain("smotret-film.net"),
   domain("smotret-filmy.net"),
+  domain("sobaka.ru"),
   domain("tfile-music.org"),
   domain("tfile.cc"),
   domain("tfile.co"),
@@ -1010,6 +1011,12 @@
     }
 }
 
+@-moz-document domain("businessua.com") {
+    body {
+        background-color: white !important
+    }
+}
+
 @-moz-document domain("bvedomosti.ru") {
     #art-main {
         background-image: none !important
@@ -1096,6 +1103,12 @@
     .page-sidebar > .sticky-vertical {
         position: relative !important;
         top: 0 !important
+    }
+}
+
+@-moz-document domain("cherkassy-sport.com") {
+    #body {
+        margin-top: 0 !important
     }
 }
 
@@ -1266,7 +1279,7 @@
 }
 
 @-moz-document
-  domain("dostfilms.net"),
+  domain("dostfilms.org"),
   domain("liveresult.ru"),
   domain("wowskill.ru") {
     .header {
@@ -1488,6 +1501,9 @@
     body {
         cursor: auto !important
     }
+    .right_column_aside > .block {
+        margin-top: auto !important
+    }
     body > div[align="center"] {
         width: auto !important;
         margin: 0 !important
@@ -1526,8 +1542,11 @@
 }
 
 @-moz-document domain("eurointegration.com.ua") {
-    .header.fixed .layout, header.header {
+    .header.fixed .layout, .right_column_content > .block_news, header.header {
         margin-top: 0 !important
+    }
+    .fh .layout_main {
+        padding-top: 0 !important
     }
 }
 
@@ -1619,6 +1638,9 @@
     .remove-sda-wrap {
         display: none !important
     }
+    .page-wrapper {
+        margin-top: 0 !important
+    }
 }
 
 @-moz-document domain("films-online.club") {
@@ -1665,6 +1687,12 @@
 @-moz-document domain("footballhd.ru") {
     body > #header {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("footballtransfer.com.ua") {
+    center + br + div[style*="background-color: #ebebeb"] {
+        margin-top: auto !important
     }
 }
 
@@ -2155,6 +2183,12 @@
     }
     #td-outer-wrap, body {
         pointer-events: none
+    }
+}
+
+@-moz-document domain("hvylya.net") {
+    .right-column > .b-newsfeed > span {
+        margin-top: 0 !important
     }
 }
 
@@ -3811,6 +3845,13 @@
     }
 }
 
+@-moz-document domain("stravy.net") {
+    .right-sidebar {
+        margin-top: 0 !important;
+        overflow: hidden !important
+    }
+}
+
 @-moz-document domain("tarkov-wiki.ru") {
     html > div[class][style^="background-color: rgba"] {
         display: none !important
@@ -4014,6 +4055,12 @@
     }
 }
 
+@-moz-document domain("ukr.bio") {
+    #site {
+        top: 0 !important
+    }
+}
+
 @-moz-document domain("uniondht.org") {
     .colorAdmin {
         color: black !important;
@@ -4131,6 +4178,12 @@
     }
     body > #layout-center {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("vrtp.ru") {
+    td[width="100%"][valign="top"][class^="post"] > .postcolor > img {
+        max-width: 100% !important
     }
 }
 
