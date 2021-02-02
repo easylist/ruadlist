@@ -963,12 +963,13 @@ zen.yandex.*#?#.feed > .feed__row:-abp-has(.cutify-text-view)
 4pda.*##html[style] > body :not(div) ~ :not(div)[class][id][style]:style(background-image: none !important)
 4pda.*##html[style] > body :not(div)[class][id][style]:matches-css(height: /^89\./)
 4pda.*##html[style] > body [class]:matches-css(height: /^403\./)
+4pda.*##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article:not(.post) + article.post
 4pda.*#?#+js(abort-current-inline-script.js, setTimeout, removeAttribute)
-4pda.ru#?#body article ~ article[itemscope]:-abp-has(a[title][target="_blank"])
 4pda.ru##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 4pda.ru##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
 4pda.ru##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
 4pda.ru##tbody > tr[valign="top"] > td[width*="20"] + td[class]
+4pda.ru#?#body article ~ article[itemscope]:-abp-has(a[title][target="_blank"])
 !
 ! Экспериментальные правила для маркеров
 &ymclid=$document,queryprune=|
