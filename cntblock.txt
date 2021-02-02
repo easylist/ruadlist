@@ -972,7 +972,7 @@ zen.yandex.*#?#.feed > .feed__row:-abp-has(.cutify-text-view)
 4pda.ru#?#body article ~ article[itemscope]:-abp-has(a[title][target="_blank"])
 !
 ! Экспериментальные правила для маркеров
-&ymclid=$document,queryprune=|
+&ymclid=$document,queryprune=|,domain=~ozon.onelink.me
 /story/*?lang=$document,queryprune=|,domain=yandex.*
 =ukraine_news&utm_$document,queryprune=|utm_
 ?clid=$document,queryprune=|clid,domain=yandex.*
