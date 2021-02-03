@@ -921,6 +921,7 @@ www.rambler.*###main > div[class]:not([id]) > :first-child[style]:not(div):not([
 @@/^https?://yandex\.ru\/turbo\?/*[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
 mail.yandex.*##.ns-view-mail-pro-left-column-button
 mail.yandex.*##.PSHeader-Pro
+mail.yandex.*#?#+js(set-constant.js, Object.prototype.changeLinkHref, noopFunc)
 tv.yandex.*##.recommended-ott
 yandex.*###bk-container
 yandex.*##.b-statcounter + div[class] > div[id][class]
