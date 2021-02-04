@@ -312,6 +312,7 @@ auto.ru##.AppStoreBanner
 i.ua##.Disclaimer
 ren.tv##.Footer_2LPPF > .news-delimiter
 meduza.io##.GDPRPanel-root
+meduza.io##.Grid-root > .Grid-container ~ .Grid-container
 auto.ru##.ListingItemPromo-module__wrapper
 meduza.io##.MaterialPanel-ad
 cnews.ru##.NewsBody > .video.img-block
@@ -319,7 +320,7 @@ rubukkit.org##.Notices.PanelScroller
 userstyles.org##.NotificationLine
 hromadske.ua##.Questionnaire
 meduza.io##.Section-isBrief_subscription
-meduza.io#?#.Section-root > .Section-block:-abp-has(.Tag-root:-abp-contains(партнерский материал))
+meduza.io#?#.Section-root > .Section-block:-abp-has([class^="Tag-module_root"]:-abp-contains(партнерский материал))
 softportal.com##.TblBorderCLR > tbody > tr > td[style="padding:15px 0;"][align="center"]
 softportal.com##.TblTopBanCLR a[href*="yabrowser"]
 softportal.com##.TblTopBanCLR a[href*="yandeksbrauzer"]
