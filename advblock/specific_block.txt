@@ -3,7 +3,7 @@
 /^https?://[^\s]+\.nahnews\.org/[^\s]{150,}/$csp=script-src
 /^https?://[^\s]+\.politexpert\.net/[^\s]{150,}/$csp=script-src
 /^https?://scrin.org/[^\s]/$csp=sandbox allow-same-origin;
-/^https?://yandex\.ru\/turbo\?/*[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
+/^https?://yandex\.ru\/turbo[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
 /gateway/aHR0c$csp=script-src
 ||0n-line.tv/*/|$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||60-fps.net/|$csp=script-src 'self' * blob: data:
