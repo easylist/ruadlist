@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210131.423
+@version        0.20210209.2132
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -391,11 +391,12 @@
   domain("2ip.ru") {
     body:not([class]) #content > .page_speed_result__share + style + div[class], 
     body:not([class]) .content-list > a[href^="https://krot.io"], 
-    body:not([class]) .ip-links a[href*="utm_"], 
     body:not([class]) .ip-links_item > .ip-icon-link, 
+    body:not([class]) .page-privacy > #spy ~ style + div[class], 
     body:not([class]) .page-speed > .speed_checker + style + div[class], 
+    body:not([class]) [class^="ip-"] > a[href*="utm_"], 
     body[class] #header > #nav > li:nth-child(2), 
-    body[class] .ip-info-entry > .ip a[href*="utm_"], 
+    body[class] .ip-info-entry a[href*="utm_"], 
     body[class] .nav > li > a[href^="https://krot.io"] {
         display: none !important
     }
@@ -442,6 +443,15 @@
     iframe[src*="utm_campaign"], 
     tbody > tr[valign="top"] > td[width*="%"] + td > a[href][target="_blank"] > img {
         display: none !important
+    }
+}
+
+@-moz-document domain("4studio.com.ua") {
+    #wrapper {
+        padding-top: 0 !important
+    }
+    #wrapper > #header {
+        position: relative !important
     }
 }
 
@@ -1232,6 +1242,15 @@
     }
 }
 
+@-moz-document domain("delfi.ee") {
+    .C-ad-block-layer {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("delovoymir.biz") {
     body {
         padding-top: 0 !important;
@@ -1487,6 +1506,7 @@
 
 @-moz-document
   domain("electric-house.ru"),
+  domain("freefotohelp.ru"),
   domain("helpsetup.ru"),
   domain("izzylaif.com"),
   domain("so-wiki.ru"),
@@ -1748,13 +1768,9 @@
     }
 }
 
-@-moz-document
-  domain("freefotohelp.ru"),
-  domain("hosgeldi.com"),
-  domain("list-org.com") {
-    .adsbygoogle {
-        position: fixed !important;
-        top: -10000px !important
+@-moz-document domain("freefotohelp.ru") {
+    #T_Bottom {
+        width: auto !important
     }
 }
 
@@ -2009,6 +2025,15 @@
 @-moz-document domain("gstv.ru") {
     .page-content {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("gta-gaming.ru") {
+    #link-b {
+        display: block !important
+    }
+    .first-b {
+        display: none !important
     }
 }
 
@@ -2665,6 +2690,10 @@
         background: transparent !important;
         border: transparent !important;
     }
+    .adsbygoogle {
+        position: fixed !important;
+        top: -10000px !important
+    }
 }
 
 @-moz-document
@@ -3049,7 +3078,7 @@
     }
 }
 
-@-moz-document domain("newsone.ua") {
+@-moz-document domain("newsoneua.tv") {
     body {
         background: none !important
     }
@@ -3216,6 +3245,12 @@
     }
 }
 
+@-moz-document domain("peterburg2.ru") {
+    body > .a {
+        background-image: none !important
+    }
+}
+
 @-moz-document domain("pikabu.ru") {
     .footer__inner {
         background-color: var(--color--app__bg) !important;
@@ -3355,6 +3390,20 @@
     }
 }
 
+@-moz-document domain("proagro.com.ua") {
+    header > a[href="/"] {
+        display: block !important
+    }
+    .ban_head {
+        display: block !important;
+        background: none !important;
+        pointer-events: none !important
+    }
+    main {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("promodj.com") {
     html:not(#id) > body {
         background-color: #fff !important
@@ -3427,6 +3476,15 @@
     }
 }
 
+@-moz-document domain("radioromantika.ru") {
+    body > a[href][target] {
+        display: none !important
+    }
+    .main-wrapp__content {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("razlozhi.ru") {
     html > head ~ body {
         width: 100% !important
@@ -3441,6 +3499,9 @@
 @-moz-document domain("rbc.ru") {
     .l-sticky-right-parent, .popup_push {
         display: none !important
+    }
+    .js-forecast-passback {
+        height: auto !important
     }
 }
 
@@ -3562,6 +3623,7 @@
 }
 
 @-moz-document
+  domain("rutr.life"),
   domain("rutracker.net"),
   domain("rutracker.nl"),
   domain("rutracker.org") {
@@ -3631,7 +3693,7 @@
 }
 
 @-moz-document domain("sherdog.com") {
-    body > div[class]:not([id])[style^="background-color"][style$="z-index: 100000000;"] {
+    body > div[class]:not([id])[style^="background-color"][style*="z-index:"] {
         display: none !important
     }
     html, html > body {
@@ -4061,6 +4123,15 @@
     }
 }
 
+@-moz-document domain("ukrainianwall.com") {
+    body {
+        padding-top: unset !important
+    }
+    .navbar, .right-column > .sticky-box {
+        position: relative !important
+    }
+}
+
 @-moz-document domain("uniondht.org") {
     .colorAdmin {
         color: black !important;
@@ -4249,7 +4320,7 @@
     body {
         background-color: #efeded !important
     }
-    #goharu > #site ~ div, .badge {
+    .badge, footer ~ * {
         display: none !important
     }
     #goharu > #site {
@@ -4394,9 +4465,6 @@
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]):after {
         background: transparent !important
     }
-    body[data-bem*="turboUid"] .layout__left_sticky [class$="wrapper"] {
-        border: none !important
-    }
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) {
         box-shadow: none !important
     }
@@ -4416,7 +4484,6 @@
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
     body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
     body[data-bem*="turboUid"] .layout__left_sticky .loader__inner, 
-    body[data-bem*="turboUid"] div[class$="_status_show"] div[class*="__load-error "], 
     body[data-bem*="turboUid"] div[class*="__item_type_partner "]:empty ~ .loader, 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) > div[class]:not([style]) > div[class] > div:not([class]), 
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
@@ -4445,6 +4512,7 @@
     .main .widgets__col_td_1 {
         max-width: unset !important
     }
+    body[data-bem*="turboUid"] .layout__left_sticky div[class*="aside-left"], 
     body[data-bem*="turboUid"] div[class$="rect"][id][data-name] {
         min-height: 0 !important;
         height: unset !important
@@ -4458,6 +4526,9 @@
     .head-stripe {
         position: fixed !important;
         transform: scale(0) !important
+    }
+    body[data-bem*="turboUid"] div[class*="__load-error "] {
+        top: unset !important
     }
 }
 
@@ -4491,6 +4562,12 @@
     }
     .top-line + header.main {
         top: auto !important
+    }
+}
+
+@-moz-document domain("youtube.com") {
+    #columns > #secondary {
+        overflow: hidden !important
     }
 }
 
