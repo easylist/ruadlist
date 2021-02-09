@@ -942,6 +942,7 @@ yandex.*##body[class*="b-page"] .main.widgets :not(div) :not(div) :not(div) > di
 yandex.*##div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div:first-child
 yandex.*##div[class*="turbo-advert_type_"]
 yandex.*##div[class^="content "][data-bem] > .content__bottom ~ div[class*="card "]
+yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:first-child > div[class$="__content"] + div[class]
 yandex.*#?#.mg-page-layout[class*="sport"] .mg-page-layout-item:-abp-has(> .mg-page-layout-item__card > div[class*="_type_"])
 yandex.*#?#.mg-page-layout[class*="sport"] .mg-page-layout-item:-abp-has(> span > .mg-page-layout-item__card > div[class*="_type_"])
 yandex.*#?#.news-app__feed > .mg-grid__col:-abp-has(> div[class*="_type_"] > div[class*="loader"] + div[id]:empty)
