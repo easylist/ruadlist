@@ -375,8 +375,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://l2top.ru\/+(?!ajax\/|js\/|widget\.php\?id=)/$script,xmlhttprequest,domain=l2top.ru
 /^https?://maxpark\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,domain=maxpark.com
 /^https?://news\.ru\/(?!assets\/js-compress\/)/$script,domain=news.ru
-/^https?://newsland\.com/(communities|content|gidepark|hot|newsland)/$xmlhttprequest,domain=newsland.com
-/^https?://newsland\.com/[a-z]+\/[0-9]+\//$xmlhttprequest,domain=newsland.com
 /^https?://parnuxi\.biz\/(?!engine\/|templates\/)/$script,domain=parnuxi.biz
 /^https?://picusha.net\/(?!templates|engine|js)/$script,domain=picusha.net
 /^https?://politpuzzle\.ru/(?!(counter\.php)|(wp-admin))/$xmlhttprequest,domain=politpuzzle.ru
@@ -2108,7 +2106,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||newsland.*/public/img/viardo.
 ||newsland.com/banner_frame/
 ||newsland.com/public/img/branding/
-||newsland.com/|$xmlhttprequest
 ||newsmaker.md^*/banners/
 ||newsomsk.ru/ajax/hitsadv.php?
 ||newsomsk.ru/design/new/js/banner_new.js
