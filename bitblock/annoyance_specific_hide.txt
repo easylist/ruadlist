@@ -113,7 +113,6 @@ segodnya.ua###gdpr_cookies
 kidstaff.com.ua###gdpr_panel
 friday.ru###global-alert-queue
 autovisio.com.ua###globallasttd > div[class$="-block"] + div[style^="padding:250px"]
-4pda.ru###go_1 > :not(p):not(h4):not(.globalmesscontent)
 kinogo-hd.net###go_top
 kinoafisha.ua###goodbye-box
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai###gritter-notice-wrapper
@@ -722,9 +721,6 @@ khl.ru##.mastercard
 sports.ru##.material-list__item[data-control="Common.AnalyticsWatch"]
 www.kinopoisk.ru##.media-page-layout__trailer-promo
 liveinternet.ru##.mediametrics
-4pda.ru##.menu-main > [class="menu-main-item"] > a[href*="/4pda.ru/special/"]
-4pda.ru##.menu-main > li.menu-main-item > a[href][style*="important"]
-4pda.ru##.menu-main > li.menu-main-item[rec2]
 cybersport.ru##.menu__specials
 in-the-fog.ru##.message-alert
 funtik.tv,magicfilm.net##.message-block-player
@@ -893,7 +889,6 @@ ruskline.ru##.right_banner_inner_1
 video.sibnet.ru##.right_column > #menu_profile ~ .block1[style]
 liveinternet.ru##.rightcolumn > .news
 showjet.net##.rmp-waring-content
-4pda.ru##.rnd-slider
 vesti.ua##.rowFullSecond
 www.rambler.ru##.rui-ToplineAd-adPlace
 livejournal.com##.s-ljvideo
@@ -902,7 +897,6 @@ radio.i.ua##.scroll_container > .panel_about ~ :not(.weather):not(.other)
 mjusli.ru##.scrollingDisabled > div:not([id]):not([class])[style*="background-color"],#Rise-UI_Side
 islam-today.ru##.scrollup
 car.ru##.search-example
-4pda.ru##.second-menu > .menu-brands
 sport-express.ru##.secondscreen_popup
 nv.ua##.selfpromo_new
 avito.ru##.sendout
@@ -1111,7 +1105,6 @@ iguides.ru##[id^="post_message_"] ~ div
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai##[title="appstore"]
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai##[title="googleplay"]
 gamer-info.com##a.logo[href^="/"]
-4pda.ru#?#a.rounded[href][target="_blank"]:-abp-contains(/^Узнать больше/)
 torrentiko.net##a[class^="scroll_"]
 kp.by,kp.kg,kp.kz,kp.md,kp.ru##a[class^="styled__SubscriptionLink-"]
 youla.ru##a[href*=".com/"][href*="/app"][title][target="_blank"]
@@ -1213,7 +1206,6 @@ gameguru.ru,kulina.ru,wotsite.net##body > noindex
 mobiset.ru##body > noindex > #clickDiv
 tass.ru##body > noindex > .widge
 xakep.ru##body > strong
-4pda.ru##body [id] div ~ [id][class]:not(div)[style][data-revive-id]
 rambler.ru##body:not(#id) > div:not(#id):not([class]):not([style]) .popup--rambler-start
 instagram.com#?#body[style="overflow: hidden;"] > #react-root ~ div[class*=" "][class$=" "][role="presentation"]:-abp-has(div:-abp-contains(Войдите, чтобы продолжить))
 kak-prosto.net##br + br
@@ -1292,14 +1284,6 @@ elitesnooker.com##header > span[id]
 bbc.com##header[role="banner"] div[dir="ltr"][class*="-Wrapper "]:not([class*="-Banner "])
 www.kinopoisk.ru##header[style^="--header-height:"] > div[class]:first-child > div[class]:not([class*=" "]):first-child:not(:empty)
 azbooki.ru,engisys.ru,zip1000.ru##html > div[style^="color: rgb"]
-4pda.ru##html[style] .article a.green[href*="/4pda.ru/pages/go/?"]
-4pda.ru##html[style] a[href*="ali.pub"]
-4pda.ru##html[style] a[href*="bit.do"]
-4pda.ru##html[style] a[href*="clc.to"]
-4pda.ru##html[style] a[href*="clck.ru"]
-4pda.ru##html[style] a[href*="dada.link"]
-4pda.ru##html[style] a[href*="goo.gl"]
-4pda.ru##html[style] a[href*="is.gd"]
 driveroff.net,samlab.ws##iframe[src*="://yoomoney.ru/"]
 www.championat.com##iframe[src*="bet.championat.com"]
 igromania.ru##iframe[src*="player.twitch.tv/?channel=igromania"][src*="autoplay=true"]
@@ -1325,7 +1309,6 @@ streamzone.org##span[style*="3.0em;"]
 2baksa.ws##table[style*="important"][width="100%"][align="center"]
 vz.ru##table[width="100%"] > tbody > tr > td > div:not([id]):not([class]):not([style])
 russianpost.ru##table[width="816"] > tbody > tr:first-child + tr
-4pda.ru##tbody > tr[valign="top"] > td[width*="20"] + td[class]
 forums.overclockers.ru##td > #logo
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##td > a[href^="rss.php"]
 stalker-mods.clan.su,stalker-mods.su##td > table[width="302"][height="382"][align="center"]
@@ -1341,6 +1324,39 @@ forums.overclockers.ru##tr > td[valign="top"][width="100%"] ~ td[style^="max-wid
 benzclub.ru##tr > td[valign="top"][width="245"]
 leroymerlin.ru##uc-cookie-notification
 shiza-project.com##ul[class*="transparent-btns"]
+!
+! 4pda.ru
+! верхняя плашка
+4pda.ru##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
+! кликабельный элемент рекламного фона
+4pda.ru##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article:not(.post) + article.post
+! пустые и рекламные блоки в правой колонке
+4pda.ru##html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style*="display: block;"]
+4pda.ru#?#html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style]:-abp-has(a[href][target="_blank"] > img)
+4pda.ru##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
+4pda.ru#?#html[style] [id] div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
+! пустые и рекламные блоки в материалах
+4pda.ru#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class] > a[href][target="_blank"])
+4pda.ru#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class]:empty)
+4pda.ru##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(3)
+! различные рекламные ссылки, в основном в брендированных материалах
+4pda.ru##html[style] > body .menu-brands
+4pda.ru##html[style] > body .menu-main > li.menu-main-item > a[href][style*="important"]
+4pda.ru#?#html[style] > body a.rounded[href][target="_blank"]:-abp-contains(/^Узнать больше/)
+4pda.ru##html[style] > body a[href*="ali.pub"]
+4pda.ru##html[style] > body a[href*="bit.do"]
+4pda.ru##html[style] > body a[href*="clc.to"]
+4pda.ru##html[style] > body a[href*="clck.ru"]
+4pda.ru##html[style] > body a[href*="dada.link"]
+4pda.ru##html[style] > body a[href*="goo.gl"]
+4pda.ru##html[style] > body a[href*="is.gd"]
+4pda.ru##html[style] > body div[class$="-brand-header"]
+! анонс в шапке форума
+4pda.ru###go_1 > :not(p):not(h4):not(.globalmesscontent)
+! реклама в шапке форума
+4pda.ru##html:not([style]) tbody > tr[valign="top"] > td[width*="20"] + td[class]
+! реклама при скачивании на форуме
+4pda.ru##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 !
 ! - Сайты на движке TorrentPier -----------------------------------------------
 rutracker.ru###latest_news

@@ -962,17 +962,43 @@ zen.yandex.*#?#.feed > .feed__row:-abp-has(.cutify-text-view)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.initWidgetBlock, falseFunc)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.loaderVer, noopFunc)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.useAbdBundle, false)
-! 4pda
+!
+! 4pda.ru
+! верхняя плашка
+4pda.*##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
+! рекламный фон
 4pda.*##html[style] > body :not(div) ~ :not(div)[class][id][style]:style(background-image: none !important)
-4pda.*##html[style] > body :not(div)[class][id][style]:matches-css(height: /^89\./)
-4pda.*##html[style] > body [class]:matches-css(height: /^403\./)
+! кликабельный элемент рекламного фона
 4pda.*##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article:not(.post) + article.post
-4pda.*#?#+js(abort-current-inline-script.js, setTimeout, removeAttribute)
-4pda.ru##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
-4pda.ru##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
-4pda.ru##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
-4pda.ru##tbody > tr[valign="top"] > td[width*="20"] + td[class]
-4pda.ru#?#body article ~ article[itemscope]:-abp-has(a[title][target="_blank"])
+! эстетический отступ сверху
+4pda.*##html[style] > body div.holder-no-hidden:style(margin-bottom: 10px !important)
+! пустые и рекламные блоки в правой колонке
+4pda.*##html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style*="display: block;"]
+4pda.*##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
+4pda.*#?#html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style]:-abp-has(a[href][target="_blank"] > img)
+4pda.*#?#html[style] [id] div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
+! пустые и рекламные блоки в материалах
+4pda.*##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(3)
+4pda.*#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class] > a[href][target="_blank"])
+4pda.*#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class]:empty)
+! различные рекламные ссылки, в основном в брендированных материалах
+4pda.*##html[style] > body .menu-brands
+4pda.*##html[style] > body .menu-main > li.menu-main-item > a[href][style*="important"]
+4pda.*##html[style] > body a[href*="ali.pub"]
+4pda.*##html[style] > body a[href*="bit.do"]
+4pda.*##html[style] > body a[href*="clc.to"]
+4pda.*##html[style] > body a[href*="clck.ru"]
+4pda.*##html[style] > body a[href*="dada.link"]
+4pda.*##html[style] > body a[href*="goo.gl"]
+4pda.*##html[style] > body a[href*="is.gd"]
+4pda.*##html[style] > body div[class$="-brand-header"]
+4pda.*#?#html[style] > body a.rounded[href][target="_blank"]:-abp-contains(/^Узнать больше/)
+! анонс в шапке форума
+4pda.*###go_1 > :not(p):not(h4):not(.globalmesscontent)
+! реклама в шапке форума
+4pda.*##html:not([style]) tbody > tr[valign="top"] > td[width*="20"] + td[class]
+! реклама при скачивании на форуме
+4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 !
 ! Экспериментальные правила для маркеров
 &ymclid=$document,queryprune=|,domain=~ozon.onelink.me
