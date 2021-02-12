@@ -5507,7 +5507,7 @@ gre4ka.info#?#article > div[style]:-abp-has(> div:-abp-contains(Реклама))
 24boxing.com.ua#?#article > h3:-abp-contains(/реклама/i) + ul
 kavkaz-uzel.eu#?#article div:-abp-contains(/^Реклама$/)
 glavpost.com##article div[style*="#EFEFEF"]
-4pda.ru#?#article ~ article:-abp-has(> [class] > div[style="position: absolute; left: 0px; top: 0px; visibility: hidden;"]:first-child)
+4pda.ru#?#article ~ article:-abp-has(> [class] > div:only-child > img:first-child)
 tochka.net##article ~ div[id^="rsswidget"]
 qip.ru##article[data-type="advert"]
 mi100.info##article[id^="post-"] > .entry-meta + div[style^="padding-bottom:"]
