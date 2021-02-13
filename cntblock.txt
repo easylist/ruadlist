@@ -966,6 +966,7 @@ zen.yandex.*#?#.feed > .feed__row:-abp-has(.cutify-text-view)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.useAbdBundle, false)
 !
 ! 4pda.ru
+4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
 4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)
 ! верхняя плашка
 4pda.*##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
