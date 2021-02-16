@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210209.2132
+@version        0.20210216.1208
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -727,15 +727,6 @@
     }
     nav[role="navigation"] > ul {
         top: 0 !important
-    }
-}
-
-@-moz-document domain("animeonline.su") {
-    #brandParallax {
-        display: none !important
-    }
-    #wrapper {
-        padding-top: 50px !important
     }
 }
 
@@ -1508,7 +1499,6 @@
   domain("electric-house.ru"),
   domain("freefotohelp.ru"),
   domain("helpsetup.ru"),
-  domain("izzylaif.com"),
   domain("so-wiki.ru"),
   domain("stroi-help.ru") {
     .adsbygoogle {
@@ -1944,6 +1934,16 @@
     }
 }
 
+@-moz-document domain("glav.su") {
+    #js-l-h ~ div[class] > div:not([id]):not([class]):not([style]) {
+        display: none !important
+    }
+    #js-l-h ~ div[class*=" "] {
+        padding-top: unset !important;
+        padding-bottom: unset !important
+    }
+}
+
 @-moz-document domain("glavnoe.ua") {
     #main-block > .content-block {
         margin: auto !important
@@ -2314,6 +2314,22 @@
 @-moz-document domain("isport.ua") {
     body > .layout {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("itnews.com.ua") {
+    #right > div[style^="height:"] {
+        height: 0 !important
+    }
+    #content > #header {
+        height: 220px !important;
+        background-position-y: -100px !important
+    }
+    #content > #header > div[style^="height: 94px;"] {
+        height: 6px !important
+    }
+    td.left[width="200"][valign="top"] {
+        height: auto !important
     }
 }
 
@@ -4467,11 +4483,6 @@
     }
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row .feed__item > div:not([class*="card"]):not([class*="feed"]) {
         box-shadow: none !important
-    }
-    .serp-list_left_yes > .card__narrow {
-        box-shadow: none !important;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important
     }
     .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
