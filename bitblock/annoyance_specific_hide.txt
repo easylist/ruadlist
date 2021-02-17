@@ -1348,7 +1348,7 @@ shiza-project.com##ul[class*="transparent-btns"]
 ! пустые и рекламные блоки в материалах
 4pda.ru#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class] > a[href][target="_blank"])
 4pda.ru#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class]:empty)
-4pda.ru##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(3)
+4pda.ru##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(-n+3)
 ! различные рекламные ссылки, в основном в брендированных материалах
 4pda.ru##html[style] > body .menu-main > li.menu-main-item > a[href][style*="important"]
 4pda.ru##html[style] > body .second-menu

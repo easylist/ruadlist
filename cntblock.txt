@@ -983,7 +983,7 @@ zen.yandex.*#?#.feed > .feed__row:-abp-has(.cutify-text-view)
 4pda.*#?#html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style]:-abp-has(a[href][target="_blank"] > img)
 4pda.*#?#html[style] [id] div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
 ! пустые и рекламные блоки в материалах
-4pda.*##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(3)
+4pda.*##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(-n+3)
 4pda.*#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class] > a[href][target="_blank"])
 4pda.*#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class]:empty)
 ! различные рекламные ссылки, в основном в брендированных материалах
