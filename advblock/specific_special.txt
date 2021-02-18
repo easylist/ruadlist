@@ -1002,6 +1002,9 @@ realty.yandex.ru##.OffersSerpPromoItem
 realty.yandex.ru##.OffersSerp__list-item_type_ad
 /^https?://realty\.yandex\.ru/[^\s]{500,}/$subdocument,domain=realty.yandex.ru
 realty.yandex.ru##div[id$="-ad__rtb"]
+! Яндекс.Турбо
+yandex.ru#?#div[class$="_visible"]:-abp-has([class$="icon"] ~ [class]:-abp-contains(Рекламы нет))
+||yandex.ru/turbo/nzya/$image,xmlhttprequest
 ! Яндекс.Погода
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#.forecast-details > .card:-abp-has(> [class*="adv"])
 ! Яндекс.Телепрограмма
