@@ -1004,7 +1004,9 @@ realty.yandex.ru##.OffersSerp__list-item_type_ad
 realty.yandex.ru##div[id$="-ad__rtb"]
 ! Яндекс.Турбо
 yandex.ru#?#div[class$="_visible"]:-abp-has([class$="icon"] ~ [class]:-abp-contains(Рекламы нет))
-||yandex.ru/turbo/nzya/$image,xmlhttprequest
+yandex.ru##div[id][data-log-node] > div:empty ~ i > [class] > .loader__dots
+yandex.ru##div[id][data-log-node] > div:empty ~ i > [class] > .loader__text
+||turbo-yandex-ru.naydex.net^$~image
 ! Яндекс.Погода
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#.forecast-details > .card:-abp-has(> [class*="adv"])
 ! Яндекс.Телепрограмма
