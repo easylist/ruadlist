@@ -923,6 +923,8 @@ www.rambler.*###main > div[class]:not([id]) > :first-child[style]:not(div):not([
 /^https?://mail\.yandex\.[^\s]{125,}/$empty,script,~third-party
 /^https?://yastatic\.net\/www\/_\/[^\s]{170,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 @@/^https?://yandex\.ru\/turbo[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
+frontend.vh.yandex.*#?#+js(set-constant.js, Object.prototype._getAutoplay, noopFunc)
+frontend.vh.yandex.*#?#+js(set-constant.js, Object.prototype.togglePlaybackOnVisibilityChange, null)
 mail.yandex.*##.ns-view-mail-pro-left-column-button
 mail.yandex.*##.PSHeader-Pro
 mail.yandex.*#?#+js(set-constant.js, Object.prototype.changeLinkHref, noopFunc)
