@@ -933,6 +933,7 @@ yandex.*###bk-container
 yandex.*##.b-statcounter + div[class] > div[id][class]
 yandex.*##.dist-popup
 yandex.*##.mg-page-layout[class*="sport"] .mg-page-layout-item div[class*="_type_"]
+yandex.*##.news-app > div[class] > [class*="__row"] > div[class*="__col"]:last-child
 yandex.*##.news-app div[class*=" news-"][class*="_top "]
 yandex.*##.news-app div[class*="_banger"]
 yandex.*##.news-app div[class*="_type_native"]
@@ -949,7 +950,6 @@ yandex.*##div[class^="content "][data-bem] > .content__bottom ~ div[class*="card
 yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:first-child > div[class$="__content"] + div[class]
 yandex.*#?#.mg-page-layout[class*="sport"] .mg-page-layout-item:-abp-has(> .mg-page-layout-item__card > div[class*="_type_"])
 yandex.*#?#.mg-page-layout[class*="sport"] .mg-page-layout-item:-abp-has(> span > .mg-page-layout-item__card > div[class*="_type_"])
-yandex.*#?#.news-app > div[class] > [class*="__row"] > div[class*="__col"]:last-child
 yandex.*#?#.news-app__feed > div[class*="__col"]:-abp-has(> div[class*="_type_"] > div[class*="loader"] + div[id]:empty)
 yandex.*#?#.news-app__feed > div[class*="__row"] > div[class*="__col"]:-abp-has(> div[class*="_type_"] > div[class*="loader"] + div[id]:empty)
 yandex.*#?#body > .serp_js_inited .serp-list > .serp-item:-abp-has(> div > h2 > [data-event-required])
