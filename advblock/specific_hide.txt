@@ -4511,9 +4511,9 @@ patrioty.org.ua##:not(html) > iframe[style*="important"]:not([src^="https://disq
 123torrent.ru,37.1.204.76,5.45.65.153,5.45.70.162,berutor.site,blackrutor.site,extrutor.org,extrutor.site,fastrutor.site,herutor.org,listrutor.org,new-rutor.org,pipitor.org,prutor.site,r-tor.ru,rutor-live.tk,rutor1.site,tracker-rutor.tk,xrutor.org##:not(obhod-adblocka)
 csmania.ru##A[onclick^="countAdClick"]
 mediametrics.ru##[_onclick*="advert"]
-echo.msk.ru##[abcde] > [id]
-echo.msk.ru##[abcde] > br
-echo.msk.ru##[abcde] > div[class]:nth-of-type(-n+7)
+echo.msk.ru##[abcdef] > [id]
+echo.msk.ru##[abcdef] > br
+echo.msk.ru##[abcdef] > div:nth-of-type(-n+7)
 coub.com##[adfox-featured-banner]
 fluence-club.ru##[align="CENTER"] > a[href][target="_blank"]
 vsaduidoma.com##[align="center"] > a[href][target="_blank"]
@@ -5730,9 +5730,9 @@ dating.trans-admirer.com##center > table[bgcolor="CC0099"]
 softa-mnogo.ru##center > table[style="width:150px;"]
 world-art.ru##center > table[width="1000"][height="250"]
 iobit.com,megatrest.ru,ripik.net,sofirus.ru,softa-mnogo.ru,xakeroker.ws##center a > img
-echo.msk.ru##center.header
 7days-ua.com#?#center:-abp-has(> .adsbygoogle)
 kinotan.ru#?#center:-abp-has(> p:-abp-contains(Реклама))
+echo.msk.ru##center[class]
 post-tracker.ru##center[style*="margin-top"]
 nova-wings.ru##div > #yaMarket ~ table[width="100%"]
 parnuxi.com#?#div > .mainmenu:-abp-has(> a[href*="pornolavka.pw"])
@@ -5911,6 +5911,7 @@ novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="a
 glavagronom.ru#?#div[class]:first-child :-abp-properties(height: 29rem;) + div[class]:last-child
 www.kinopoisk.ru##div[class]:first-child > div[class*=" "] > div[id]:first-child ~ style[nonce] + div[class]:last-child
 echo.msk.ru##div[class]:first-child > div[class*=" "]:first-child > div + style + div[class*=" "]
+echo.msk.ru##div[class]:first-child > div[class*=" "]:first-child > style + div[class*=" "]
 ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[class][data-element*="BANNER"]
 echo.msk.ru##div[class][data-role=""]
