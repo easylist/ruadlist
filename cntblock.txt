@@ -903,8 +903,6 @@ freehd.com.ua,hdreactor.club,hdreactor.su#?#.sidebar > .menu-wrap > .menu-head:-
 @@||inoreader.com^$generichide
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
 animedub.ru##a[href="https://animedub.ru/adblock.html"]
-autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,motor.ru,passion.ru,quto.ru,rambler.*,rns.online,wmj.ru#?#+js(json-prune.js, Blocks)
-autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,motor.ru,passion.ru,quto.ru,rambler.*,rns.online,wmj.ru#?#^script:has-text("getPrefixes")
 auto.ru#?#div:matches-css-before(content: /Реклама/)
 auto.ru#?#div:matches-css-before(content: /Реклама/) ~ div
 inoreader.com##div[id^="leaderboard_ad"] > *
@@ -913,6 +911,8 @@ horoscopes.rambler.*#?#+js(set-constant.js, Object.prototype.needShowAlicePopup,
 lostfilm.tv,lostfilm.tw##img[width="1"][height="1"]
 lena-miro.ru,levik.blog,livejournal.*,olegmakarenko.ru,shakko.ru,varlamov.*#?#+js(set-constant.js, Object.prototype.Begun, undefined)
 nova.rambler.*#?#+js(abort-on-property-read.js, Object.prototype.AdvManager)
+www.afisha.*,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,motor.ru,passion.ru,quto.ru,rambler.*,rns.online,wmj.ru#?#+js(json-prune.js, Blocks)
+www.afisha.*,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,motor.ru,passion.ru,quto.ru,rambler.*,rns.online,wmj.ru#?#^script:has-text("getPrefixes")
 www.rambler.*###main > div[class]:not([id]) > :first-child[style]:not(div):not([class]):not([id])
 ||browserleaks.com/proxy$csp=script-src 'unsafe-inline'
 ||google-analytics.com^$domain=cdnvideo.ru|igromania.ru|rambler.ru
@@ -961,7 +961,7 @@ zen.yandex.*#?#.feed > .feed__row:-abp-has(.cutify-text-view)
 ~vh.yandex.ru,~yandex.net,yandex.*#?#+js(abort-on-property-read.js, Ya.loaderVer)
 ~yandex.net,yandex.*#?#+js(abort-on-property-read.js, yaads.renderBlock)
 ~yandex.net,yandex.*#?#+js(abort-on-property-read.js, yaads.renderWidget)
-~yandex.net,yandex.*#?#+js(json-prune, rtb seatbid)
+~yandex.net,yandex.*#?#+js(json-prune.js, rtb seatbid)
 ~yandex.net,yandex.*#?#+js(set-constant.js, __AAB__, false)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.getHoneypot, null)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.getYaads, null)
