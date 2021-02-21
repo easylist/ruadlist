@@ -4510,9 +4510,6 @@ patrioty.org.ua##:not(html) > iframe[style*="important"]:not([src^="https://disq
 123torrent.ru,37.1.204.76,5.45.65.153,5.45.70.162,berutor.site,blackrutor.site,extrutor.org,extrutor.site,fastrutor.site,herutor.org,listrutor.org,new-rutor.org,pipitor.org,prutor.site,r-tor.ru,rutor-live.tk,rutor1.site,tracker-rutor.tk,xrutor.org##:not(obhod-adblocka)
 csmania.ru##A[onclick^="countAdClick"]
 mediametrics.ru##[_onclick*="advert"]
-echo.msk.ru##[abcdef] > [id]
-echo.msk.ru##[abcdef] > br
-echo.msk.ru##[abcdef] > div:nth-of-type(-n+7)
 coub.com##[adfox-featured-banner]
 fluence-club.ru##[align="CENTER"] > a[href][target="_blank"]
 vsaduidoma.com##[align="center"] > a[href][target="_blank"]
@@ -4749,6 +4746,9 @@ youhack.ru##[onclick]:not([onclick^="window.open('https://youhack.ru/posts/"])
 enovosty.com##[onclick^="trackOutboundLink"]
 izum.ua##[onmousedown*="moneyveo.ua"]
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
+echo.msk.ru##[role] > div[class] > [class*=" "] > [id]
+echo.msk.ru##[role] > div[class] > [class*=" "] > br
+echo.msk.ru##[role] > div[class] > [class*=" "] > div:nth-of-type(-n+7)
 ozersk74.ru##[src*="/banner"]
 sexgirl.su##[src*="/styles/fonar/"]
 shans.com.ua##[src*="images/banners"]:not([src="images/banners/lin.gif"])
@@ -6476,6 +6476,7 @@ penzainform.ru##div[style="width: 140px; height: 280px; max-height: 280px;"]
 inmoment.ru##div[style="width: 200px;height: 300px;position: relative;"]
 allbest.ru##div[style="width: 600px; height: 90px; margin-left: auto; margin-right: auto;"]
 forum.gov-zakupki.ru##div[style="width: 970px; height: 90px;"]
+echo.msk.ru##div[style="width: 99%; height: 100%;"]
 ubr.ua##div[style="width:100%; height:280px;"]
 sdamgia.ru##div[style="width:160px;height: 205px;margin:auto;"]
 softobase.com##div[style="width:336px; height:280px;"]
