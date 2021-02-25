@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210216.1208
+@version        0.20210225.1839
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -283,6 +283,9 @@
 }
 
 @-moz-document domain("1plus1.video") {
+    ._opo_-container-playlist-player {
+        background-color: #1A1F24 !important
+    }
     body.show-cookies ._opo_-header {
         top: 0 !important
     }
@@ -1184,6 +1187,12 @@
     }
 }
 
+@-moz-document domain("cpa.rip") {
+    #page-wrapper > header {
+        margin-bottom: auto !important
+    }
+}
+
 @-moz-document
   domain("crazyatomicgames.com"),
   domain("xxx-igra.com"),
@@ -1325,9 +1334,7 @@
     }
 }
 
-@-moz-document
-  domain("draug.ru"),
-  domain("vargr.ru") {
+@-moz-document domain("draug.ru") {
     #timer_2 {
         display: block !important
     }
@@ -1634,6 +1641,7 @@
 }
 
 @-moz-document
+  domain("filmix.ac"),
   domain("filmix.cc"),
   domain("filmix.click"),
   domain("filmix.co"),
@@ -2343,6 +2351,13 @@
     }
 }
 
+@-moz-document domain("jut-su.net") {
+    body:not(#id) {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important
+    }
+}
+
 @-moz-document domain("kaluga-poisk.ru") {
     body:not(#id) {
         background: whitesmoke !important
@@ -2646,6 +2661,12 @@
     }
 }
 
+@-moz-document domain("l2top.ru") {
+    .container[style="max-width: unset;"] > .container {
+        margin-top: auto !important
+    }
+}
+
 @-moz-document domain("latifundimag.com") {
     body > .wrapper > * {
         pointer-events: auto !important
@@ -2755,6 +2776,9 @@
     body > div:not([id]):not([class]), body > span:nth-child(-n+6) {
         display: none !important
     }
+    .lf_need_help {
+        z-index: 10!important
+    }
 }
 
 @-moz-document domain("lostfilmhd.ru") {
@@ -2792,6 +2816,7 @@
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .rectangle-banner, 
     body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class], 
+    body > .zeropixel ~ * .searchContainer ~ .tabs + div[class] ~ div, 
     body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name]), 
     body > .zeropixel ~ * .searchContainer ~ div > a.dmb, 
     body > .zeropixel ~ * .skeleton-tgb, 
@@ -2808,7 +2833,9 @@
     }
     body > .zeropixel ~ * .tabs-content__item > [class*="news-main"] > .news-main__img {
         max-width: unset !important;
-        height: 5em !important
+        min-width: unset !important;
+        height: 5em !important;
+        width: 6.66em !important
     }
     body > .zeropixel ~ * .searchContainer ~ .tabs + div[class] {
         min-width: 640px !important
@@ -4042,7 +4069,7 @@
 }
 
 @-moz-document domain("trashbox.ru") {
-    body:not(#id) {
+    html[prefix] > body {
         background-color: #202030 !important;
         background-image: none !important
     }
@@ -4243,6 +4270,12 @@
         color: red !important;
         border: 3px solid red !important;
         padding: 6px !important
+    }
+}
+
+@-moz-document domain("vm.ru") {
+    .onair_wrapper.fixed {
+        position: relative !important
     }
 }
 
@@ -4500,18 +4533,13 @@
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Реклама"], div[class*=" news-"][class$="_mode_daas"], 
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
-    div[class*="sidebar"] > .direct-snippet, 
+    div[class*="sidebar"] > .direct-snippet, li[data-suggest-counter], 
     script[data-message*="/turbo"] ~ * [class^="loader"][class*="__loader"] {
         display: none !important
     }
     .media-grid .media-grid__row_visible_yes > div:empty, 
     .monetization-group > .monetization-group__item {
         height: auto !important
-    }
-    .news-app .mg-grid__col > div[class*="_type_"], 
-    .news-app .mg-grid__col > div[class*="banger"] {
-        height: unset !important;
-        min-height: 0 !important
     }
     body.b-page > .b-page__container .card.content__adv.card {
         margin-bottom: unset !important;
