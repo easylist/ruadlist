@@ -5921,6 +5921,8 @@ drive2.ru#?#div[class]:-abp-has(> div > div > .drom-logo)
 2gis.ru#?#div[class]:-abp-has(> div[class] > [class]:-abp-contains(/^Организации рядом$|^Похожие организации$/))
 novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
 glavagronom.ru#?#div[class]:first-child :-abp-properties(height: 29rem;) + div[class]:last-child
+sdamgia.ru##div[class]:first-child > [class*=" "] > style ~ [class*=" "]
+sdamgia.ru##div[class]:first-child > [class*=" "] ~ style ~ [class*=" "]
 www.kinopoisk.ru##div[class]:first-child > div[class*=" "] > div[id]:first-child ~ style[nonce] ~ div[class]:last-child
 echo.msk.ru##div[class]:first-child > div[class*=" "]:first-child > div + style + div[class*=" "]
 echo.msk.ru##div[class]:first-child > div[class*=" "]:first-child > style + div[class*=" "]
@@ -6210,7 +6212,7 @@ mind.ua##div[id][style="padding-bottom: 35px;"]
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##div[id][style^="display:"][style*="block"][style*="important"]
 vgae.ru##div[id][style^="min-height:100px;"]
 vgae.ru##div[id][style^="min-height:250px;"]
-sdamgia.ru##div[id][style^="width:"][style*="overflow:"]
+sdamgia.ru##div[id][style^="width:"][style*="159"]
 ivbb.ru##div[id^="ADS_"]
 1tv.ru,2mm.ru,auto.vesti.ru,ctc.ru,f1news.ru,irr.ru,probirka.org,sobesednik.ru,sportbox.ru,tjournal.ru,tvc.ru##div[id^="AdFox_banner"]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[id^="AdwolfBanner240x400_"]
