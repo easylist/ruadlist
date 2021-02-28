@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210228.1217
+@version        0.20210301.12
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4082,6 +4082,12 @@
     body {
         cursor: auto !important
     }
+    body > * {
+        pointer-events: auto !important
+    }
+    body {
+        pointer-events: none !important
+    }
 }
 
 @-moz-document domain("turboserial.net") {
@@ -4439,6 +4445,8 @@
     div[class*="kinopoisk-media-container_pending"] {
         min-height: 0 !important
     }
+    .modal-root div[class^="fullscreen-selector"], 
+    div > a[aria-label="КиноПоиск"] ~ div > button ~ div, 
     div[class*="user-bar"] > div > button ~ div {
         opacity: inherit !important
     }
