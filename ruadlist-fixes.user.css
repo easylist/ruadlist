@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210225.1839
+@version        0.20210228.1217
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -127,8 +127,8 @@
   domain("24video.vip"),
   domain("aghdrezka.com"),
   domain("ahdrezka.com"),
-  domain("baskino-site.icu"),
   domain("baskino.me"),
+  domain("baskino1.top"),
   domain("betahdrezka.com"),
   domain("bombardir.ru"),
   domain("clubhdrezka.com"),
@@ -2074,15 +2074,6 @@
     }
 }
 
-@-moz-document domain("hd720kino.ru") {
-    .wrap {
-        background: none !important
-    }
-    .main.center {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("hdkinomir.cc") {
     #wrapper > .menu {
         margin-top: auto !important
@@ -2506,7 +2497,7 @@
     }
 }
 
-@-moz-document domain("kinosezon.tv") {
+@-moz-document domain("kinosezon.net") {
     #subheader {
         padding-top: 0 !important
     }
@@ -4087,6 +4078,12 @@
     }
 }
 
+@-moz-document domain("tt-cup.com") {
+    body {
+        cursor: auto !important
+    }
+}
+
 @-moz-document domain("turboserial.net") {
     body > div[class^="arcticmodal-"] {
         display: none !important
@@ -4441,6 +4438,9 @@
     .underheader-superbanner-wrapper, [class^="styles_contentContainer"] > div, 
     div[class*="kinopoisk-media-container_pending"] {
         min-height: 0 !important
+    }
+    div[class*="user-bar"] > div > button ~ div {
+        opacity: inherit !important
     }
     .filmsListNew .info {
         padding-right: 116px !important
