@@ -279,7 +279,7 @@ def filtertidy (filterin):
         removeentries = []
         queryprune = ""
         rediwritelist = []
-        isRedwrite = False
+        isRediwrite = False
         for option in optionlist:
             # Detect and separate domain options
             if option[0:7] == "domain=":
@@ -289,7 +289,7 @@ def filtertidy (filterin):
                 queryprune = option[11:]
                 removeentries.append(option)
             elif re.match(REDIWRITEOPTIONPATTERN, option):
-                isRedwrite = True
+                isRediwrite = True
                 rediwritelist.append(option)
             elif option.strip("~") not in KNOWNOPTIONS and option.split('=')[0] not in KNOWNPARAMETERS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
@@ -309,8 +309,8 @@ def filtertidy (filterin):
 
         # according to uBO documentation redirect options must start either with * or ||
         # so, it is not unnecessary wildcard in such case
-        filtertext = removeunnecessarywildcards(optionsplit.group(1), isRedwrite)
-        if isRedwrite and filtertext[0] != '*' and filtertext[:2] != '||':
+        filtertext = removeunnecessarywildcards(optionsplit.group(1), isRediwrite)
+        if isRediwrite and filtertext[0] != '*' and filtertext[:2] != '||':
             print("Warning: Incorrect redirect/rewrite filter \"{filterin}\". Such filters must start with either '*' or '||'.".format(filterin = filterin))
         # Return the full filter
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
