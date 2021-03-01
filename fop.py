@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.918
+VERSION = 3.919
 # Adjusted for RU Adlist by Lain Inverse in 2020
 
 # Import the key modules
@@ -175,7 +175,7 @@ def fopsort (filename):
                 if i+1 < len(uncombinedFilters) and domains1:
                     domains2 = re.search(DOMAINPATTERN, uncombinedFilters[i+1])
                     domain1str = domains1.group(1)
-                
+
                 if not domains1 or i+1 == len(uncombinedFilters) or not domains2 or len(domain1str) == 0 or len(domains2.group(1)) == 0:
                     # last filter or filter didn't match regex or no domains
                     combinedFilters.append(uncombinedFilters[i])
@@ -278,6 +278,7 @@ def filtertidy (filterin):
         domainlist = []
         removeentries = []
         queryprune = ""
+        redirectrule = ""
         isRedirect = False
         for option in optionlist:
             # Detect and separate domain options
@@ -289,6 +290,8 @@ def filtertidy (filterin):
                 removeentries.append(option)
             elif re.match(REDIRECTOPTIONPATTERN, option):
                 isRedirect = True
+                redirectrule = option
+                removeentries.append(option)
             elif option.strip("~") not in KNOWNOPTIONS and option.split('=')[0] not in KNOWNPARAMETERS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
         # Sort all options other than domain alphabetically with a few exceptions
@@ -298,6 +301,9 @@ def filtertidy (filterin):
         # Append queryprune back at the end (both to keep it at the end and skip underscore typo fix)
         if queryprune:
             optionlist.append("queryprune={queryprune}".format(queryprune = queryprune))
+        # Append redirect rule back without underscore typo fix
+        if redirectrule:
+            optionlist.append(redirectrule)
         # If applicable, sort domain restrictions and append them to the list of options
         if domainlist:
             optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key = lambda domain: domain.strip("~")))))
