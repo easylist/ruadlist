@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.919
+VERSION = 3.920
 # Adjusted for RU Adlist by Lain Inverse in 2020
 
 # Import the key modules
@@ -36,7 +36,7 @@ ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#[@$?]?#")
 FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[@$?]?#)([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
-REDIRECTOPTIONPATTERN = re.compile(r"^redirect(-rule)?=")
+REDIWRITEOPTIONPATTERN = re.compile(r"^(redirect(-rule)?|rewrite)=")
 
 # Compile regular expressions that match element tags and pseudo classes and strings and tree selectors; "@" indicates either the beginning or the end of a selector
 SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z0-9]*)((?=([\[\]\^\*\$=:@#\.]))|(?=(\s(?:[+>~]|\*|[a-zA-Z][a-zA-Z0-9]*[\[:@\s#\.]|[#\.][a-zA-Z][a-zA-Z0-9]*))))")
@@ -278,8 +278,8 @@ def filtertidy (filterin):
         domainlist = []
         removeentries = []
         queryprune = ""
-        redirectrule = ""
-        isRedirect = False
+        rediwritelist = []
+        isRedwrite = False
         for option in optionlist:
             # Detect and separate domain options
             if option[0:7] == "domain=":
@@ -288,31 +288,30 @@ def filtertidy (filterin):
             elif option[0:11] == "queryprune=":
                 queryprune = option[11:]
                 removeentries.append(option)
-            elif re.match(REDIRECTOPTIONPATTERN, option):
-                isRedirect = True
-                redirectrule = option
-                removeentries.append(option)
+            elif re.match(REDIWRITEOPTIONPATTERN, option):
+                isRedwrite = True
+                rediwritelist.append(option)
             elif option.strip("~") not in KNOWNOPTIONS and option.split('=')[0] not in KNOWNPARAMETERS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
         # Sort all options other than domain alphabetically with a few exceptions
-        optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = sortfunc)
+        optionlist = sorted(set(filter(lambda option: (option not in removeentries) and (option not in rediwritelist), optionlist)), key = sortfunc)
         # Replace underscore typo with hyphen-minus in options like third_party
         optionlist = list(map(lambda option: option.replace("_", "-"), optionlist))
         # Append queryprune back at the end (both to keep it at the end and skip underscore typo fix)
         if queryprune:
             optionlist.append("queryprune={queryprune}".format(queryprune = queryprune))
         # Append redirect rule back without underscore typo fix
-        if redirectrule:
-            optionlist.append(redirectrule)
+        if rediwritelist:
+            optionlist.extend(rediwritelist)
         # If applicable, sort domain restrictions and append them to the list of options
         if domainlist:
             optionlist.append("domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist), key = lambda domain: domain.strip("~")))))
 
         # according to uBO documentation redirect options must start either with * or ||
         # so, it is not unnecessary wildcard in such case
-        filtertext = removeunnecessarywildcards(optionsplit.group(1), isRedirect)
-        if isRedirect and filtertext[0] != '*' and filtertext[:2] != '||':
-            print("Warning: Incorrect redirect filter \"{filterin}\". Such filters must start with either '*' or '||'.".format(filterin = filterin))
+        filtertext = removeunnecessarywildcards(optionsplit.group(1), isRedwrite)
+        if isRedwrite and filtertext[0] != '*' and filtertext[:2] != '||':
+            print("Warning: Incorrect redirect/rewrite filter \"{filterin}\". Such filters must start with either '*' or '||'.".format(filterin = filterin))
         # Return the full filter
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
 
