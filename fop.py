@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.920
+VERSION = 3.921
 # Adjusted for RU Adlist by Lain Inverse in 2020
 
 # Import the key modules
@@ -65,7 +65,7 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt", "antinuha.txt",
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = ("badfilter", "collapse", "doc", "document", "elemhide", "empty", "font",
                 "genericblock", "generichide", "image", "important", "inline-script",
-                "match-case", "media", "object", "object-subrequest", "other", "ping", "popup",
+                "match-case", "media", "object", "object-subrequest", "other", "ping", "popunder", "popup",
                 "script", "stylesheet", "subdocument",  "first-party", "third-party",
                 "websocket", "webrtc", "xmlhttprequest")
 # List of known key=value parameters (domain is not included)
@@ -279,7 +279,7 @@ def filtertidy (filterin):
         removeentries = []
         queryprune = ""
         rediwritelist = []
-        isRediwrite = False
+        keepAsterisk = False
         for option in optionlist:
             # Detect and separate domain options
             if option[0:7] == "domain=":
@@ -289,8 +289,10 @@ def filtertidy (filterin):
                 queryprune = option[11:]
                 removeentries.append(option)
             elif re.match(REDIWRITEOPTIONPATTERN, option):
-                isRediwrite = True
+                keepAsterisk = True
                 rediwritelist.append(option)
+            elif option == "popunder":
+                keepAsterisk = True
             elif option.strip("~") not in KNOWNOPTIONS and option.split('=')[0] not in KNOWNPARAMETERS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
         # Sort all options other than domain alphabetically with a few exceptions
@@ -309,9 +311,9 @@ def filtertidy (filterin):
 
         # according to uBO documentation redirect options must start either with * or ||
         # so, it is not unnecessary wildcard in such case
-        filtertext = removeunnecessarywildcards(optionsplit.group(1), isRediwrite)
-        if isRediwrite and filtertext[0] != '*' and filtertext[:2] != '||':
-            print("Warning: Incorrect redirect/rewrite filter \"{filterin}\". Such filters must start with either '*' or '||'.".format(filterin = filterin))
+        filtertext = removeunnecessarywildcards(optionsplit.group(1), keepAsterisk)
+        if keepAsterisk and filtertext[0] != '*' and filtertext[:2] != '||':
+            print("Warning: Incorrect filter \"{filterin}\". Such filters must start with either '*' or '||'.".format(filterin = filterin))
         # Return the full filter
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
 
