@@ -969,7 +969,6 @@ yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 ||yandex.ru/maps/api/branding/
 ||yandex.ru/mapuid/$csp=script-src
 ||yandex.ru/poll/video/$subdocument,domain=yastatic.net
-||yastatic.net/*/turbo-static/embed-sandbox/*smi2.ru
 ||yastatic.net/daas/
 ||yastatic.net/market-affiliate/$domain=zen.yandex.by|zen.yandex.kz|zen.yandex.ru|zen.yandex.ua|zen.yandex.uz
 ! Прочее
@@ -1010,10 +1009,13 @@ realty.yandex.ru##.OffersSerp__list-item_type_ad
 /^https?://realty\.yandex\.ru/[^\s]{500,}/$subdocument,domain=realty.yandex.ru
 realty.yandex.ru##div[id$="-ad__rtb"]
 ! Яндекс.Турбо
+yandex.ru##.custom-block > .ext-embed
 yandex.ru#?#div[class$="_visible"]:-abp-has([class$="icon"] ~ [class]:-abp-contains(Рекламы нет))
 yandex.ru##div[id][data-log-node] > div:empty ~ i > [class] > .loader__dots
 yandex.ru##div[id][data-log-node] > div:empty ~ i > [class] > .loader__text
 ||turbo-yandex-ru.naydex.net^$~image
+||yastatic.net/*/turbo-static/embed-sandbox/*lentainform.com
+||yastatic.net/*/turbo-static/embed-sandbox/*smi2.ru
 ! Яндекс.Погода
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#?#.forecast-details > .card:-abp-has(> [class*="adv"])
 ! Яндекс.Телепрограмма
