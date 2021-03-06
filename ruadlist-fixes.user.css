@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210301.12
+@version        0.20210306.1504
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -672,6 +672,12 @@
     }
     .nav-line {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("anilibria.life") {
+    #wr-bg {
+        padding-top: 70px !important
     }
 }
 
@@ -3214,6 +3220,15 @@
     }
 }
 
+@-moz-document domain("online-fix.me") {
+    #dtxsy {
+        height: 1px !important;
+        display: block !important;
+        opacity: 0 !important;
+        pointer-event: none !important
+    }
+}
+
 @-moz-document domain("oper.ru") {
     #wrapper {
         background-image: none !important;
@@ -4555,6 +4570,9 @@
     }
     .serp-header {
         margin-top: 0 !important
+    }
+    .mg-grid__col > .mg-card > .mg-card__text-content > .mg-card__text > .mg-card__link {
+        max-width: 100% !important
     }
     .main .widgets__col_td_1 {
         max-width: unset !important
