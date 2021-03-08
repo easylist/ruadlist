@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210306.1504
+@version        0.20210308.1419
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -112,6 +112,7 @@
   domain("userstyles.org"),
   domain("xatab-repack.com"),
   domain("xatab-repack.org"),
+  domain("xhdrezka.com"),
   domain("youhdrezka.com"),
   domain("zakarpatpost.net"),
   domain("zakon.kz") {
@@ -243,6 +244,7 @@
   domain("virusinfo.info"),
   domain("vse-sezony.cc"),
   domain("wikianime.tv"),
+  domain("xhdrezka.com"),
   domain("xxxadulttorrent.org"),
   domain("you-anime.ru"),
   domain("youhdrezka.com"),
@@ -2773,8 +2775,9 @@
     body > div:not([id]):not([class]), body > span:nth-child(-n+6) {
         display: none !important
     }
-    .lf_need_help {
-        z-index: 10!important
+    .lf_need_help[style="display: block;"] {
+        z-index: 10!important;
+        position: static !important
     }
 }
 
