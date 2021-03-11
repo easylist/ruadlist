@@ -160,10 +160,9 @@ myshared.ru##+js(remove-attr, disabled, .uk-modal-footer > button)
 newstube.ru##+js(set-constant, Object.prototype.setPlayerVisible, noopFunc)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, Math.random)
 obozrevatel.com##+js(remove-attr, autoplay, video)
-online-fix.me##.sidebar > .text-center > [id]:style(height: 200px !important; margin-top: -180px !important; display: block !important; opacity: 0 !important; pointer-events: none !important)
-online-fix.me##article > .center > [rel="noopener noreferrer"]
-online-fix.me#@#a[href*="://softmediya.ru/"]
-online-fix.me#@#a[href][target="_blank"][rel="noopener noreferrer"]
+online-fix.me##+js(no-setTimeout-if, fadeIn, 1110)
+online-fix.me##body * * a[href*="://softmediya.ru/"]:style(height: 200px !important; margin-top: -180px !important; display: block !important; opacity: 0 !important; pointer-events: none !important)
+online-fix.me##body * * a[href][target="_blank"][rel="noopener noreferrer"]:style(height: 200px !important; margin-top: -180px !important; display: block !important; opacity: 0 !important; pointer-events: none !important)
 ontivi.net##+js(window.open-defuser, /trafficbass/)
 otzovik.com##+js(no-setTimeout-if, , 250)
 otzovik.com##+js(noeval-if, ShadowRoot)
