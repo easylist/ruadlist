@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210308.1419
+@version        0.20210313.2011
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1559,7 +1559,6 @@
   domain("euro-football.ru"),
   domain("freehat.cc"),
   domain("lalapaluza.ru"),
-  domain("moviebuster.tv"),
   domain("turkcinema.org") {
     #page {
         margin-top: 0 !important
@@ -1704,7 +1703,8 @@
 @-moz-document
   domain("flashscore.com.ua"),
   domain("flashscore.kz"),
-  domain("flashscore.ru") {
+  domain("flashscore.ru"),
+  domain("livescore.in") {
     [data-bookmaker-id], [onclick*="bookmaker"] {
         pointer-events: none !important
     }
@@ -1782,9 +1782,8 @@
 
 @-moz-document
   domain("freehat.cc"),
-  domain("lalapaluza.ru"),
-  domain("moviebuster.tv") {
-    body:not(#id) {
+  domain("lalapaluza.ru") {
+    body:not(#id):not(:empty) {
         background: whitesmoke !important
     }
 }
@@ -2753,7 +2752,8 @@
   domain("lostfilm.info"),
   domain("lostfilm.run"),
   domain("lostfilm.tv"),
-  domain("lostfilm.tw") {
+  domain("lostfilm.tw"),
+  domain("lostfilm.uno") {
     body {
         background-image: none !important;
         background-color: #1c1e1f !important
@@ -2763,7 +2763,8 @@
 @-moz-document
   domain("lostfilm.run"),
   domain("lostfilm.tv"),
-  domain("lostfilm.tw") {
+  domain("lostfilm.tw"),
+  domain("lostfilm.uno") {
     .footer {
         background: #1c1e1f !important;
         color: #fff !important
@@ -2925,6 +2926,16 @@
     div[class^="Banner_right"] {
         margin-bottom: 0 !important;
         padding-bottom: 0 !important
+    }
+}
+
+@-moz-document domain("mmo13.ru") {
+    #page > * {
+        pointer-events: auto !important
+    }
+    #page {
+        pointer-events: none !important;
+        background-image: none !important
     }
 }
 
@@ -3220,15 +3231,6 @@
 @-moz-document domain("omskbird.tv") {
     .have-brand .wrap {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("online-fix.me") {
-    #dtxsy {
-        height: 1px !important;
-        display: block !important;
-        opacity: 0 !important;
-        pointer-event: none !important
     }
 }
 
