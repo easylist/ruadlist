@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210313.2011
+@version        0.20210314.1507
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2930,12 +2930,16 @@
 }
 
 @-moz-document domain("mmo13.ru") {
+    #page > div:nth-child(-n+2):not(#top):not(#content_shift) {
+        padding-top: 0 !important
+    }
     #page > * {
         pointer-events: auto !important
     }
     #page {
         pointer-events: none !important;
-        background-image: none !important
+        background-image: none !important;
+        background-color: inherit !important
     }
 }
 
@@ -3935,29 +3939,25 @@
 }
 
 @-moz-document domain("stratege.ru") {
-    #body_box_label > [class]:not([style]):not([title]), 
-    body:not(#body_box_label) > style ~ div[id]:not([class]):not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)) {
+    body:not([id*="body_box"]) > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
+    body[id*="body_box"] > div:not([id]):not([class]) > div {
         background-image: none !important;
         background-color: #dbdbdb !important
     }
-    #body_box_label #wrapper > #content > div:empty, 
-    #body_box_label #wrapper > #content ~ :not(#footer), 
-    #body_box_label #wrapper > #footer > div[id]:not(.wrapper), 
-    #body_box_label > [class]:not([title]) > style + [id]:not([class]):not(#wrapper), 
-    #xs-link, #xs-top-echo, .tlpf_info_box, 
-    body:not(#body_box_label) > [id*="footer"]:not(#footer):not(#footer_morecopyright), 
-    body:not(#body_box_label) > style ~ div[id]:not([class]):not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)) > style + div[id]:not(#globalcontent), 
-    div[class][id$="_content"] > div:not([id]):not([class]) > [class^="alelt_"][class$="_info"] {
+    body:not([id*="body_box"]) > style ~ div ~ :not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
+    body:not([id*="body_box"]) > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)) > style + div[id]:not(#globalcontent), 
+    body[id*="body_box"] #wrapper > #content > [id]:empty, 
+    body[id*="body_box"] #wrapper > #content ~ :not([id*="footer"]), 
+    body[id*="body_box"] .tlpf_info_box, 
+    body[id*="body_box"] > div:not([id]):not([class]) > div > style + [id]:not([class]):not(#wrapper), 
+    body[id*="body_box"] div[class][id$="_content"] > div:not([id]):not([class]) > [class^="alelt_"][class$="_info"] {
         display: none !important
     }
-    .above_body {
+    body:not([id*="body_box"]) .above_body {
         margin-bottom: auto !important
     }
-    .above_body > #header {
+    body:not([id*="body_box"]) #globalcontent {
         margin-top: 0 !important
-    }
-    #globalcontent {
-        padding-top: 0 !important
     }
 }
 
