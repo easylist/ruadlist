@@ -372,6 +372,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://kubik3.ru\/(?!js\/|.s\/)/$script,domain=kubik3.ru
 /^https?://l2top.ru\/+(?!ajax\/|js\/|widget\.php\?id=)/$script,xmlhttprequest,domain=l2top.ru
 /^https?://mmo13\.ru\/\w{3,}/$subdocument,domain=mmo13.ru
+/^https?://mmo13\.ru\/download\/content\/[^\s]+\/image_\d\.jpg/$image,domain=mmo13.ru
 /^https?://news\.ru\/(?!assets\/js-compress\/)/$script,domain=news.ru
 /^https?://parnuxi\.biz\/(?!engine\/|templates\/)/$script,domain=parnuxi.biz
 /^https?://picusha.net\/(?!templates|engine|js)/$script,domain=picusha.net
@@ -1963,7 +1964,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||mixnews.lv/uploads/banners/
 ||mixsoft.org/yandexbrowser.js
 ||mlfun.org.ua/mlbanners/
-||mmo13.ru/download/content/*/00/image_*.jpg$image
 ||mmogamez.info^*/pagebgtop.
 ||mmogamez.ru/asda/
 ||mmogamez.ru/assets/templates/Standart/images/mmogamez.
