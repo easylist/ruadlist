@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210314.1507
+@version        0.20210315.1518
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -233,6 +233,7 @@
   domain("the-rutor.org"),
   domain("thehdrezka.com"),
   domain("torentor.co"),
+  domain("torrentov.xyz"),
   domain("torrfan.org"),
   domain("torrminator.com"),
   domain("trupornolabs.org"),
@@ -2939,7 +2940,8 @@
     #page {
         pointer-events: none !important;
         background-image: none !important;
-        background-color: inherit !important
+        background-color: inherit !important;
+        padding-top: 0 !important
     }
 }
 
@@ -3940,7 +3942,7 @@
 
 @-moz-document domain("stratege.ru") {
     body:not([id*="body_box"]) > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
-    body[id*="body_box"] > div:not([id]):not([class]) > div {
+    body[id*="body_box"] div:not([id]):not([class]) > div {
         background-image: none !important;
         background-color: #dbdbdb !important
     }
@@ -3949,7 +3951,7 @@
     body[id*="body_box"] #wrapper > #content > [id]:empty, 
     body[id*="body_box"] #wrapper > #content ~ :not([id*="footer"]), 
     body[id*="body_box"] .tlpf_info_box, 
-    body[id*="body_box"] > div:not([id]):not([class]) > div > style + [id]:not([class]):not(#wrapper), 
+    body[id*="body_box"] div:not([id]):not([class]) > div > style + [id]:not([class]):not(#wrapper), 
     body[id*="body_box"] div[class][id$="_content"] > div:not([id]):not([class]) > [class^="alelt_"][class$="_info"] {
         display: none !important
     }
