@@ -916,8 +916,8 @@ lena-miro.ru,levik.blog,livejournal.*,olegmakarenko.ru,shakko.ru,varlamov.*#?#+j
 nova.rambler.*#?#+js(abort-on-property-read.js, Object.prototype.AdvManager)
 rambler.*##[data-blocks="rec_block"]
 rambler.*##body[style*="position:"] > #pushwoosh + div:not([id])
-rambler.*##body[style*="position:"] > script[async] + div:not([id])
 rambler.*##body[style*="position:"] > script[async] ~ div:not([id]):not([class])
+rambler.*##body[style*="position:"] > script[src] + div:not([id])
 www.afisha.*,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,motor.ru,passion.ru,quto.ru,rambler.*,rns.online,wmj.ru#?#+js(json-prune.js, Blocks)
 www.afisha.*,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,motor.ru,passion.ru,quto.ru,rambler.*,rns.online,wmj.ru#?#^script:has-text("getPrefixes")
 www.rambler.*###main > div[class]:not([id]) > :first-child[style]:not(div):not([class]):not([id])
