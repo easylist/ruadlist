@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210315.1518
+@version        0.20210321.2119
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -900,6 +900,12 @@
     }
 }
 
+@-moz-document domain("baby.ru") {
+    .wrapper-background {
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("baibako.tv") {
     .topserial {
         height: auto !important
@@ -1264,6 +1270,15 @@
     body {
         padding-top: 0 !important;
         background-color: transparent !important
+    }
+}
+
+@-moz-document domain("dentalmagazine.ru") {
+    .subscribe-modal {
+        display: none !important
+    }
+    html {
+        overflow: auto !important
     }
 }
 
@@ -2169,6 +2184,9 @@
 }
 
 @-moz-document domain("horoscopes.rambler.ru") {
+    body > #root > div {
+        min-height: 0 !important
+    }
     a[data-horo$="::button"] {
         width: auto !important
     }
@@ -2777,10 +2795,6 @@
     body > div:not([id]):not([class]), body > span:nth-child(-n+6) {
         display: none !important
     }
-    .lf_need_help[style="display: block;"] {
-        z-index: 10!important;
-        position: static !important
-    }
 }
 
 @-moz-document domain("lostfilmhd.ru") {
@@ -2931,6 +2945,9 @@
 }
 
 @-moz-document domain("mmo13.ru") {
+    #content > .recomend ~ div:last-child {
+        display: none !important
+    }
     #page > div:nth-child(-n+2):not(#top):not(#content_shift) {
         padding-top: 0 !important
     }
@@ -3092,12 +3109,8 @@
     }
 }
 
-@-moz-document domain("newdeaf.club") {
-    .player-drop, .player-section {
-        display: block !important
-    }
-    .digit[style*="font-size"], .digit[style="display: block;"], 
-    .reklama.center.head {
+@-moz-document domain("newdeaf.vip") {
+    .lft-rk #nado-mob {
         display: none !important
     }
 }
@@ -3545,6 +3558,26 @@
     }
 }
 
+@-moz-document domain("rambler.ru") {
+    [data-slow-scroll] div:empty {
+        display: none !important
+    }
+    [data-blocks] div[class]:empty, [data-slow-scroll] div {
+        min-height: 0 !important
+    }
+    [itemid="#articleBody"] > script + div[class] > div[style^="height"] > div {
+        position: initial !important;
+        transform: none !important;
+        width: inherit !important
+    }
+    body[style*="position:"] {
+        position: unset !important
+    }
+    [itemid="#articleBody"] > script + div[class] > div[style^="height"] {
+        width: 100% !important
+    }
+}
+
 @-moz-document domain("razlozhi.ru") {
     html > head ~ body {
         width: 100% !important
@@ -3942,7 +3975,7 @@
 
 @-moz-document domain("stratege.ru") {
     body:not([id*="body_box"]) > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
-    body[id*="body_box"] div:not([id]):not([class]) > div {
+    body[id*="body_box"] div:not([id]):not([class]) > div[id][class] {
         background-image: none !important;
         background-color: #dbdbdb !important
     }
@@ -4496,11 +4529,14 @@
 }
 
 @-moz-document domain("www.rambler.ru") {
-    div[style="height: 300px;"] {
+    div[style="height: 300px;"], div[style="height: 600px;"] {
         background-color: transparent !important
     }
     div[style*="margin-bottom"] > div[style^="height:"] {
         height: auto !important
+    }
+    div[style^="padding-bottom:"] > div {
+        height: unset !important
     }
 }
 
