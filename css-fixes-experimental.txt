@@ -786,12 +786,21 @@ lostfilm.info,lostfilm.run,lostfilm.tv,lostfilm.tw,lostfilm.uno#?#body:style(bac
 ! ---
 lostfilmhd.ru#?##wrap:style(background-image: none !important)
 ! ---
+rambler.ru#?#[data-blocks] div[class]:empty:style(min-height: 0 !important)
+rambler.ru##[data-slow-scroll] div:empty
+rambler.ru#?#[data-slow-scroll] div:style(min-height: 0 !important)
+rambler.ru#?#[itemid="#articleBody"] > script + div[class] > div[style^="height"] > div:style(position: initial !important; transform: none !important; width: inherit !important)
+rambler.ru#?#[itemid="#articleBody"] > script + div[class] > div[style^="height"]:style(width: 100% !important)
 horoscopes.rambler.ru#?#a[data-horo$="::button"]:style(width: auto !important)
+horoscopes.rambler.ru#?#body > #root > div:style(min-height: 0 !important)
+rambler.ru#?#body[style*="position:"]:style(position: unset !important)
 mail.rambler.ru##div[class*="WithRightBarWrapper"] > div[class*="AutoAppContainer"] ~ *
 mail.rambler.ru#?#div[class*="WithRightBarWrapper"] > div[class*="AutoAppContainer"]:style(max-width: 100% !important)
 nova.rambler.ru##div[class^="DirectMKB__root"]
 www.rambler.ru#?#div[style*="margin-bottom"] > div[style^="height:"]:style(height: auto !important)
 www.rambler.ru#?#div[style="height: 300px;"]:style(background-color: transparent !important)
+www.rambler.ru#?#div[style="height: 600px;"]:style(background-color: transparent !important)
+www.rambler.ru#?#div[style^="padding-bottom:"] > div:style(height: unset !important)
 nova.rambler.ru##section > article[class^="Direct__item"]
 nova.rambler.ru##span[class^="Menu__browser--"]
 ! ---
