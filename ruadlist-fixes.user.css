@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210321.2119
+@version        0.20210323.2001
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1208,6 +1208,12 @@
     }
 }
 
+@-moz-document domain("cq.ru") {
+    .box.content:not(#id) {
+        margin-top: 12px !important
+    }
+}
+
 @-moz-document
   domain("crazyatomicgames.com"),
   domain("xxx-igra.com"),
@@ -1665,6 +1671,7 @@
 
 @-moz-document
   domain("filmix.ac"),
+  domain("filmix.buzz"),
   domain("filmix.cc"),
   domain("filmix.click"),
   domain("filmix.co"),
@@ -1679,7 +1686,7 @@
     .remove-sda-wrap {
         display: none !important
     }
-    .page-wrapper {
+    .main-wrapper, .page-wrapper {
         margin-top: 0 !important
     }
 }
@@ -2830,7 +2837,7 @@
     .mailbox-container ~ .horoscope ~ [class], body > .grid .grid__rcol, 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
-    body > .zeropixel ~ * .rectangle-banner, 
+    body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .rectangle-banner, 
     body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class], 
     body > .zeropixel ~ * .searchContainer ~ .tabs + div[class] ~ div, 
     body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name]), 
@@ -4411,6 +4418,12 @@
     .wrap {
         transform: none !important;
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("wtftime.ru") {
+    body {
+        background-color: #f1f3f6 !important
     }
 }
 
