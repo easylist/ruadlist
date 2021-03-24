@@ -4705,7 +4705,7 @@ malenkiy.ru##[data-role="sidebarAd"] > center
 liveresult.ru##[data-target*="nus"]
 drive2.ru##[data-target^="drom_"]
 youla.ru##[data-test-component="AdCardHolder"]
-adme.ru#?#[data-test-id$="-recommended"] div[class*=" _"]:-abp-has(> [data-adunit-type])
+adme.ru#?#[data-test-id$="-recommended"] div[class*=" _"]:-abp-has(> div[class] > div[class]:empty)
 1fnl.ru##[data-tizer-id="partners"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
 drive2.com,drive2.ru##[data-ym-target="sitesearch-ad-click"]
@@ -6818,7 +6818,7 @@ myshows.me##main > .contAlt
 allcarz.ru#?#main > .container > .site-content:-abp-has(> .content-banner)
 besplatnyeprogrammy.ru#?#main > article.post:-abp-has(> header > .mainpage_title > [title^="InstallPack"])
 kurs.com.ua##main [onclick^="window.open"]
-adme.ru#?#main div[class*=" _"]:-abp-has(> [data-adunit-type])
+adme.ru#?#main div[class*=" _"]:-abp-has(> div[class*=" _"] > div[class]:empty)
 flatfy.lun.ua#?#main ~ div[class]:-abp-has(> div > div > a[href*="/redirect-andromeda/"] ~ a[href*="/redirect-andromeda/"])
 charming-face.ru##marquee
 9sx.ru##marquee[scrollamount]
