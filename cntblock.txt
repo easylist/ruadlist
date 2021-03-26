@@ -936,6 +936,7 @@ frontend.vh.yandex.*#?#+js(set-constant.js, Object.prototype.togglePlaybackOnVis
 mail.yandex.*##.ns-view-mail-pro-left-column-button
 mail.yandex.*##.PSHeader-Pro
 mail.yandex.*#?#+js(set-constant.js, Object.prototype.changeLinkHref, noopFunc)
+newssearch.yandex.*##.news-advert__column
 tv.yandex.*##.recommended-ott
 yandex.*###bk-container
 yandex.*##.b-statcounter + div[class] > div[id][class]
@@ -948,7 +949,7 @@ yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(d
 yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) a[href^="https://yastatic.net/www/_/"]
 yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) a[href^="https://yastatic.net/www/_/"] ~ div
 yandex.*##div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div:first-child
-yandex.*##div.media-grid__row[data-blockname="infinity_zen"] .feed__item > div[class^="card-wrapper_"][class*=" "]:not([style])
+yandex.*##div.media-grid__row[data-blockname="infinity_zen"] .feed__item > div[class^="card-wrapper"][class*=" "]:not([style])
 yandex.*##div[class*="-navigation-menu__"] + div[class] > [class*="__row"] > div[class*="__col"]:last-child
 yandex.*##div[class*="-navigation-menu__"] ~ div div[class*="_banger"]
 yandex.*##div[class*="turbo-advert_type_"]
@@ -958,8 +959,7 @@ yandex.*#?#.mg-page-layout[class*="sport"] .mg-page-layout-item:-abp-has(> .mg-p
 yandex.*#?#.mg-page-layout[class*="sport"] .mg-page-layout-item:-abp-has(> span > .mg-page-layout-item__card > div[class*="_type_"])
 yandex.*#?#body > .serp_js_inited .serp-list > .serp-item:-abp-has(> div > h2 > [data-event-required])
 yandex.*#?#div[class*="-navigation-menu__"] ~ div div[class*="__col"]:-abp-has(> div[class*="_type_"] > div[class*="loader"] + div[id]:empty)
-zen.yandex.*##.feed__item > div[class^="card-wrapper_"][class*=" "]:not([style])
-zen.yandex.*#?#.feed > .feed__row:-abp-has(.cutify-text-view)
+zen.yandex.*##.feed__item > div[class^="card-wrapper"][class*=" "]:not([style])
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
 ||yastatic.net/*/front-maps-static/*/chunks/promo/$empty
@@ -968,7 +968,7 @@ zen.yandex.*#?#.feed > .feed__row:-abp-has(.cutify-text-view)
 ~yandex.net,yandex.*#?#+js(abort-on-property-read.js, yaads.renderBlock)
 ~yandex.net,yandex.*#?#+js(abort-on-property-read.js, yaads.renderWidget)
 ~yandex.net,yandex.*#?#+js(abort-on-stack-trace.js, Object.prototype.ypParams, stackDepth:4)
-~yandex.net,yandex.*#?#+js(json-prune.js, rtb seatbid)
+~yandex.net,yandex.*#?#+js(json-prune.js, direct rtb seatbid)
 ~yandex.net,yandex.*#?#+js(set-constant.js, __AAB__, false)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype._hasAdblock, noopFunc)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.getHoneypot, null)
