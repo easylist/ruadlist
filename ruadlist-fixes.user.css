@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210323.2001
+@version        0.20210327.1736
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -99,6 +99,7 @@
   domain("pure-t.ru"),
   domain("rehdrezka.com"),
   domain("rezka.ag"),
+  domain("rezkion.com"),
   domain("rufootballtv.org"),
   domain("rusporno.vip"),
   domain("sc2tv.ru"),
@@ -218,6 +219,7 @@
   domain("pure-t.ru"),
   domain("rehdrezka.com"),
   domain("rezka.ag"),
+  domain("rezkion.com"),
   domain("roem.ru"),
   domain("rusporno.vip"),
   domain("serialbox.org"),
@@ -998,11 +1000,8 @@
 }
 
 @-moz-document domain("bst.bratsk.ru") {
-    #main-nav-wrap {
-        height: auto !important
-    }
-    #post-right-col > .theiaStickySidebar {
-        top: auto !important
+    #site-wrap > a[href] {
+        display: none !important
     }
 }
 
@@ -2329,7 +2328,9 @@
 }
 
 @-moz-document domain("investing.com") {
-    #PromoteSignUpPopUp, #abPopup {
+    #PromoteSignUpPopUp, #abPopup, div[class^="adBlock-popup"], 
+    div[class^="adBlock-popup_"] ~ div[class^="overlay_"], 
+    div[data-test="ad-slot-visible"] {
         display: none !important
     }
     body {
@@ -2883,6 +2884,9 @@
     div[data-zone-name="direct-ads-gallery"] {
         display: none !important
     }
+    div[data-zone-name="morda_context"] > div ~ div > div[data-tid] > div[class] > div[class]:not([data-tid]) > div[class]:not([data-tid]) {
+        width: unset !important
+    }
 }
 
 @-moz-document
@@ -2896,6 +2900,16 @@
 @-moz-document domain("mediasat.info") {
     .td-ad-background-link #td-outer-wrap {
         cursor: default !important
+    }
+}
+
+@-moz-document domain("mega.nz") {
+    .cookie-dialog, .fm-dialog-overlay {
+        display: none !important
+    }
+    .overlayed .bottom-page.scroll-block {
+        filter: none !important;
+        -webkit-filter: none !important
     }
 }
 
@@ -3627,6 +3641,12 @@
 @-moz-document domain("rbkgames.com") {
     .branding .main-content {
         margin-top: 60px !important
+    }
+}
+
+@-moz-document domain("relook.ru") {
+    #topcontainer {
+        margin-top: 40px !important
     }
 }
 
@@ -4612,7 +4632,8 @@
     div.media-grid__row[data-blockname="infinity_zen"] .feed__row > .feed__item > .ad-card, 
     div[aria-label="Реклама"], div[class*=" news-"][class$="_mode_daas"], 
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
-    div[class*="sidebar"] > .direct-snippet, li[data-suggest-counter], 
+    div[class*="sidebar"] > .direct-snippet, 
+    li[data-suggest-counter] > a[href*="%"], 
     script[data-message*="/turbo"] ~ * [class^="loader"][class*="__loader"] {
         display: none !important
     }
@@ -4634,7 +4655,7 @@
         max-width: unset !important
     }
     body[data-bem*="turboUid"] .layout__left_sticky div[class*="aside-left"], 
-    body[data-bem*="turboUid"] div[class$="rect"][id][data-name] {
+    body[data-bem*="turboUid"] div[class*="rect"][id][data-name] {
         min-height: 0 !important;
         height: unset !important
     }
