@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210327.1736
+@version        0.20210329.834
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2629,7 +2629,7 @@
   domain("kp.kz"),
   domain("kp.md"),
   domain("kp.ru") {
-    aside[class^="styled__Aside-"] > [type="article"] {
+    aside[class^="styled__Aside-"] > div {
         height: auto !important
     }
     div[class^="styled__Branding-"] {
@@ -4524,13 +4524,15 @@
     .page-content > div[id]:not(#header-info-bg):empty + div[id]:not(#top) {
         margin-bottom: 40px !important
     }
-    .content-container_app-width_wide, div[class^="styles_contentContainer__"], 
+    .content-container_app-width_wide, 
+    div[class*="styles_headerContainer"] + div[class^="styles_"], 
     div[class^="styles_footerContainer__"] {
         max-width: 100% !important
     }
     .app__content div[style="min-height:250px"], 
-    .underheader-superbanner-wrapper, [class^="styles_contentContainer"] > div, 
-    div[class*="kinopoisk-media-container_pending"] {
+    .underheader-superbanner-wrapper, 
+    div[class*="kinopoisk-media-container_pending"], 
+    div[class^="styles_pending_"] {
         min-height: 0 !important
     }
     .modal-root div[class^="fullscreen-selector"], 
