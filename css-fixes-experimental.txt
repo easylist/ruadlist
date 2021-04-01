@@ -803,8 +803,8 @@ mail.rambler.ru##div[class*="WithRightBarWrapper"] > div[class*="AutoAppContaine
 mail.rambler.ru#?#div[class*="WithRightBarWrapper"] > div[class*="AutoAppContainer"]:style(max-width: 100% !important)
 nova.rambler.ru##div[class^="DirectMKB__root"]
 www.rambler.ru#?#div[style*="margin-bottom"] > div[style^="height:"]:style(height: auto !important)
-www.rambler.ru#?#div[style="height: 300px;"]:style(background-color: transparent !important)
-www.rambler.ru#?#div[style="height: 600px;"]:style(background-color: transparent !important)
+www.rambler.ru#?#div[style^="height:"][style*="300px"]:style(background-color: transparent !important)
+www.rambler.ru#?#div[style^="height:"][style*="600px"]:style(background-color: transparent !important)
 www.rambler.ru#?#div[style^="padding-bottom:"] > div:style(height: unset !important)
 nova.rambler.ru##section > article[class^="Direct__item"]
 nova.rambler.ru##span[class^="Menu__browser--"]
