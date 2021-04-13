@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210329.834
+@version        0.20210413.841
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2190,7 +2190,7 @@
 }
 
 @-moz-document domain("horoscopes.rambler.ru") {
-    body > #root > div {
+    body > #root > div, body > #root > div:nth-child(-n+5) > div {
         min-height: 0 !important
     }
     a[data-horo$="::button"] {
@@ -2658,7 +2658,9 @@
     }
 }
 
-@-moz-document domain("kriminal.net.ua") {
+@-moz-document
+  domain("kriminal.net.ua"),
+  domain("news.dn.ua") {
     #popup-manager.popup-show + #layout {
         -webkit-filter: none !important;
         filter: none !important
@@ -2821,9 +2823,6 @@
 }
 
 @-moz-document domain("mail.ru") {
-    .article__item_source_viqeo {
-        background-color: #f3f3f3 !important
-    }
     .search__btn_orange_default {
         background-color: rgb(0, 95, 249) !important
     }
@@ -2833,6 +2832,9 @@
         border-bottom-color: rgb(0, 95, 249) !important;
         border-left-color: rgb(0, 95, 249) !important;
         box-shadow: rgb(0, 95, 249) 0 0 0 10px inset !important
+    }
+    .article__item_source_viqeo .article__container:before {
+        content: initial !important
     }
     #bubble-home, .grid__lcol_mailbox .horoscope ~ div, 
     .mailbox-container ~ .horoscope ~ [class], body > .grid .grid__rcol, 
@@ -2894,6 +2896,13 @@
   domain("newsland.com") {
     .b-branding__wrap {
         padding: 0 !important
+    }
+}
+
+@-moz-document domain("mc.today") {
+    .category-all #content {
+        background-image: none !important;
+        cursor: auto !important
     }
 }
 
@@ -2962,24 +2971,6 @@
     div[class^="Banner_right"] {
         margin-bottom: 0 !important;
         padding-bottom: 0 !important
-    }
-}
-
-@-moz-document domain("mmo13.ru") {
-    #content > .recomend ~ div:last-child {
-        display: none !important
-    }
-    #page > div:nth-child(-n+2):not(#top):not(#content_shift) {
-        padding-top: 0 !important
-    }
-    #page > * {
-        pointer-events: auto !important
-    }
-    #page {
-        pointer-events: none !important;
-        background-image: none !important;
-        background-color: inherit !important;
-        padding-top: 0 !important
     }
 }
 
@@ -3583,6 +3574,9 @@
     [data-slow-scroll] div:empty {
         display: none !important
     }
+    [itemid="#articleBody"] > script + div[class] > div[style^="height"] * {
+        height: inherit !important
+    }
     [data-blocks] div[class]:empty, [data-slow-scroll] div {
         min-height: 0 !important
     }
@@ -3595,7 +3589,8 @@
         position: unset !important
     }
     [itemid="#articleBody"] > script + div[class] > div[style^="height"] {
-        width: 100% !important
+        width: inherit !important;
+        height: inherit !important
     }
 }
 
@@ -3908,6 +3903,12 @@
     }
     body.popup {
         overflow:auto !important
+    }
+}
+
+@-moz-document domain("sport.ua") {
+    #outer-top {
+        padding-top: initial !important
     }
 }
 
@@ -4339,13 +4340,14 @@
     }
 }
 
-@-moz-document domain("virtualbrest.by") {
-    .left-block > .central-top-events > center, 
-    .right-block > .central-top-events > div[align="center"], 
+@-moz-document domain("virtualbrest.ru") {
     body > div[id][class] > .header > div > div:not([class^="header"]) > *, 
-    body > div[id][class] > .header ~ div[class] > ul > li[class]:not(.ttyyuu), 
-    center > div[style="background: #ffffff; width: 700px+50px; padding-left: 10px;"] {
+    body > div[id][class] > .header ~ div[class] > ul > li[class]:not(.ttyyuu) {
         display: none !important
+    }
+    ul.tabsmenuverch li {
+        padding-right: 2px !important;
+        padding-left: 2px !important
     }
 }
 
@@ -4564,7 +4566,7 @@
 }
 
 @-moz-document domain("www.rambler.ru") {
-    div[style="height: 300px;"], div[style="height: 600px;"] {
+    div[style^="height:"][style*="300px"], div[style^="height:"][style*="600px"] {
         background-color: transparent !important
     }
     div[style*="margin-bottom"] > div[style^="height:"] {
