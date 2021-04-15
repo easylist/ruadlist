@@ -6025,7 +6025,7 @@ drive2.ru#?#div[class]:-abp-has(> div > div > .drom-logo)
 2gis.ru#?#div[class]:-abp-has(> div[class] > [class]:-abp-contains(/^Организации рядом$|^Похожие организации$/))
 novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
 glavagronom.ru#?#div[class]:first-child :-abp-properties(height: 29rem;) + div[class]:last-child
-www.kinopoisk.ru##div[class]:first-child > div[class*=" "] > div:first-child + i + div[class*=" "]:last-child
+www.kinopoisk.ru##div[class]:first-child > div[class*=" "] > div:first-child + :not(div) + div[class*=" "]:last-child
 echo.msk.ru##div[class]:first-child > div[class*=" "]:first-child > div + style + div[class*=" "]
 echo.msk.ru##div[class]:first-child > div[class*=" "]:first-child > style + div[class*=" "]
 ytvideo.ru##div[class][data-aid]
@@ -6695,7 +6695,6 @@ sarov.info##iframe[data-src*="/reklama."]
 obozrevatel.com##iframe[id^="google"]
 ek.ua,m.ua##iframe[name*="banner"]
 qrz.ru##iframe[src*="//ads.qrz.ru/"]
-www.kinopoisk.ru##iframe[src*="//kinopoisk-ru.clstorage.net/"][marginheight]
 prodota.ru##iframe[src*="//prodota.ru/templates/"]
 x-minus.in##iframe[src*="/assets/rkl/"]
 newstube.ru##iframe[src*="/b/iframe?id="]
