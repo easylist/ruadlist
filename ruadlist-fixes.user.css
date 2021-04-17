@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210413.841
+@version        0.20210417.401
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1180,7 +1180,7 @@
     .popup[id*="-results-banner"] {
         display: none !important
     }
-    .blocked, .blocked .text {
+    .blocked, .blocked .text, .locked .example {
         filter: none !important;
         -webkit-filter: none !important
     }
@@ -1670,6 +1670,7 @@
 
 @-moz-document
   domain("filmix.ac"),
+  domain("filmix.biz"),
   domain("filmix.buzz"),
   domain("filmix.cc"),
   domain("filmix.click"),
@@ -2181,6 +2182,7 @@
 
 @-moz-document
   domain("hlamer.ru"),
+  domain("serialfilm.ru"),
   domain("zloekino.com"),
   domain("zloekino.ru"),
   domain("zloekino.su") {
@@ -2805,6 +2807,14 @@
     body > div:not([id]):not([class]), body > span:nth-child(-n+6) {
         display: none !important
     }
+    .gallery_img_preload {
+        position: absolute !important;
+        display: block !important;
+        opacity: 0 !important;
+        margin-top: 155px !important;
+        margin-left: 20px !important;
+        width: calc(100% - 40%);
+    }
 }
 
 @-moz-document domain("lostfilmhd.ru") {
@@ -2840,7 +2850,8 @@
     .mailbox-container ~ .horoscope ~ [class], body > .grid .grid__rcol, 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
-    body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .rectangle-banner, 
+    body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .new-tgb-wrap, 
+    body > .zeropixel ~ * .rectangle-banner, 
     body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class], 
     body > .zeropixel ~ * .searchContainer ~ .tabs + div[class] ~ div, 
     body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name]), 
@@ -4002,24 +4013,24 @@
 }
 
 @-moz-document domain("stratege.ru") {
-    body:not([id*="body_box"]) > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
-    body[id*="body_box"] div:not([id]):not([class]) > div[id][class] {
+    #vbulletin_html > body > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
+    html.home div:not([id]):not([class]) > div[id][class] {
         background-image: none !important;
         background-color: #dbdbdb !important
     }
-    body:not([id*="body_box"]) > style ~ div ~ :not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
-    body:not([id*="body_box"]) > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)) > style + div[id]:not(#globalcontent), 
-    body[id*="body_box"] #wrapper > #content > [id]:empty, 
-    body[id*="body_box"] #wrapper > #content ~ :not([id*="footer"]), 
-    body[id*="body_box"] .tlpf_info_box, 
-    body[id*="body_box"] div:not([id]):not([class]) > div > style + [id]:not([class]):not(#wrapper), 
-    body[id*="body_box"] div[class][id$="_content"] > div:not([id]):not([class]) > [class^="alelt_"][class$="_info"] {
+    #vbulletin_html > body > style ~ div ~ :not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
+    #vbulletin_html > body > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)) > style + div[id]:not(#globalcontent), 
+    html.home #wrapper > #content > [id]:empty, 
+    html.home #wrapper > #content ~ :not([id*="footer"]), 
+    html.home .tlpf_info_box, 
+    html.home div:not([id]):not([class]) > div > style + [id]:not([class]):not(#wrapper), 
+    html.home div[class][id$="_content"] > div:not([id]):not([class]) > [class^="alelt_"][class$="_info"] {
         display: none !important
     }
-    body:not([id*="body_box"]) .above_body {
+    #vbulletin_html .above_body {
         margin-bottom: auto !important
     }
-    body:not([id*="body_box"]) #globalcontent {
+    #vbulletin_html #globalcontent {
         margin-top: 0 !important
     }
 }
@@ -4627,6 +4638,7 @@
     .serp-list > .incut > .direct, .turbo-advert__loader, 
     .zen-lib__container .zenad-card-rtb, 
     body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
+    body > .route-tip-view, 
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
     body[class*="logged "][class*=" b-page_"] ._item-type_rtb-card, 
     body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
