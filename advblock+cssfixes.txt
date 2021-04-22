@@ -45,6 +45,7 @@
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||studizba.com^$generichide,badfilter
 @@||utarget.ru/check_geo/|$script,badfilter,domain=memepedia.ru
+@@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 agorov.org,animevost.am,animevost.org,animevost.site,doefiratv.info,payeer-gift.ru,smotret-anime-365.ru,turkish-tv-series.ru##+js(abort-on-property-read, document.oncontextmenu)
 all-episodes.org##+js(abort-on-property-read, advtss)
 allboxing.ru##+js(abort-current-inline-script, document.querySelector, open)
@@ -120,6 +121,7 @@ gidonline.eu,kinogo.eu##+js(abort-on-property-read, target_script)
 glav.su##+js(abort-on-property-read, abd)
 glavagronom.ru##div:not([id]):not([class]):has(> div + div + section + section) > div:first-child + div > div:only-child > div:first-child + div:last-child
 gorodrabot.ru##+js(abort-on-property-read, Object.prototype.ShadyDOM)
+gwss.ru##+js(abort-current-inline-script, fuckAdBlock, undefined)
 hdkinoteatr.com##+js(no-setTimeout-if, getCookie, 3000)
 helpsetup.ru##+js(abort-on-property-write, adBlockFunction)
 hideip.me#@#.node-promoted
