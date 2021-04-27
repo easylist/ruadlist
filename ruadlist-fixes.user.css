@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210424.1639
+@version        0.20210427.1752
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -698,6 +698,9 @@
     .content, .full {
         padding-top: 0 !important
     }
+    .popular-in {
+        padding-top: 80px !important
+    }
     .sticky-wrap {
         position: relative !important
     }
@@ -813,6 +816,18 @@
     html {
         position: relative !important;
         top: 0 !important
+    }
+}
+
+@-moz-document domain("app-time.ru") {
+    .native-brand {
+        height: 0 !important
+    }
+    .native-brand ~ section.main {
+        margin-top: 0 !important
+    }
+    header {
+        position: relative !important
     }
 }
 
@@ -2444,6 +2459,9 @@
     .ten_ears_wrap {
         margin: 35px auto 0 auto !important
     }
+    .comments_form {
+        min-height: 0 !important
+    }
     body > .menu_wrap {
         position: relative !important
     }
@@ -3570,13 +3588,11 @@
 }
 
 @-moz-document domain("rambler.ru") {
-    [data-slow-scroll] div:empty {
-        display: none !important
-    }
     [itemid="#articleBody"] > script + div[class] > div[style^="height"] * {
         height: inherit !important
     }
-    [data-blocks] div[class]:empty, [data-slow-scroll] div {
+    .commercial-branding > div[class][style^="order:"] div, 
+    [data-blocks] div[class]:empty {
         min-height: 0 !important
     }
     [itemid="#articleBody"] > script + div[class] > div[style^="height"] > div {
