@@ -46,6 +46,7 @@
 @@||studizba.com^$generichide,badfilter
 @@||utarget.ru/check_geo/|$script,badfilter,domain=memepedia.ru
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
+afisha.ru,film.ru##+js(remove-attr, autoplay|loop, video)
 agorov.org,animevost.am,animevost.org,animevost.site,doefiratv.info,payeer-gift.ru,smotret-anime-365.ru,turkish-tv-series.ru##+js(abort-on-property-read, document.oncontextmenu)
 all-episodes.org##+js(abort-on-property-read, advtss)
 allboxing.ru##+js(abort-current-inline-script, document.querySelector, open)
@@ -97,7 +98,6 @@ fastpic.ru,~new.fastpic.ru##+js(abort-current-inline-script, Math.random)
 fastpic.ru,~new.fastpic.ru##+js(abort-on-property-read, document.getElementsByTagName)
 fastpic.ru,~new.fastpic.ru##+js(abort-on-property-read, Math.floor)
 ferr-um.ucoz.ru,stalker-2-2012.ucoz.net##+js(setTimeout-defuser, getElementBy)
-film.ru##+js(remove-attr, autoplay|loop, video)
 fishki.net##+js(abort-on-property-read, Object.prototype.fakeDetect)
 fishki.net##+js(setTimeout-defuser, is_adblock)
 forum.overclockers.ua##+js(abort-on-property-read, a_urls)
