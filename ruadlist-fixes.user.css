@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210427.1752
+@version        0.20210507.1144
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -65,6 +65,7 @@
   domain("hdrezkablog.com"),
   domain("hdrezkaweb.com"),
   domain("hdrezkayou.com"),
+  domain("ikinopoisk.com"),
   domain("instahdrezka.com"),
   domain("ixbt.com"),
   domain("justhdrezka.com"),
@@ -181,6 +182,7 @@
   domain("hdrezkaweb.com"),
   domain("hdrezkayou.com"),
   domain("ikinohd.com"),
+  domain("ikinopoisk.com"),
   domain("instahdrezka.com"),
   domain("investxp.ru"),
   domain("ixbt.com"),
@@ -550,6 +552,20 @@
         pointer-events: auto !important
     }
     html > body {
+        pointer-events: none !important
+    }
+}
+
+@-moz-document
+  domain("agronom.com.ua"),
+  domain("tt-cup.com") {
+    body {
+        cursor: auto !important
+    }
+    body > * {
+        pointer-events: auto !important
+    }
+    body {
         pointer-events: none !important
     }
 }
@@ -1165,7 +1181,6 @@
   domain("cinema-hd.ru"),
   domain("dc-marvel.org"),
   domain("filmshd.vip"),
-  domain("kinomaxfilm.ru"),
   domain("newseries.club") {
     .wrap {
         padding-top: 0 !important
@@ -1805,6 +1820,15 @@
     }
 }
 
+@-moz-document domain("forums.drom.ru") {
+    #dromRightCol {
+        display: none !important
+    }
+    .contentWrap .lcWrap {
+        padding-right: unset !important
+    }
+}
+
 @-moz-document domain("forums.overclockers.ru") {
     tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"] {
         color: #004488 !important;
@@ -2229,7 +2253,7 @@
 }
 
 @-moz-document domain("horoscopes.rambler.ru") {
-    body > #root > div, body > #root > div:nth-child(5) div {
+    div[class]:empty {
         min-height: 0 !important
     }
     a[data-horo$="::button"] {
@@ -2789,7 +2813,8 @@
   domain("lostfilm.tv"),
   domain("lostfilm.tw"),
   domain("lostfilm.uno"),
-  domain("lostfilm.win") {
+  domain("lostfilm.win"),
+  domain("lostfilmtv.site") {
     body {
         background-image: none !important;
         background-color: #1c1e1f !important
@@ -2801,7 +2826,8 @@
   domain("lostfilm.tv"),
   domain("lostfilm.tw"),
   domain("lostfilm.uno"),
-  domain("lostfilm.win") {
+  domain("lostfilm.win"),
+  domain("lostfilmtv.site") {
     .footer {
         background: #1c1e1f !important;
         color: #fff !important
@@ -3784,7 +3810,7 @@
 }
 
 @-moz-document domain("sdamgia.ru") {
-    .wrapper > div[class] > center[style*="red;"][style*="font-size:"] {
+    .wrapper > div[class] > [style*="red;"][style*="font-size:"] {
         display: none !important
     }
 }
@@ -4031,6 +4057,7 @@
 
 @-moz-document domain("stratege.ru") {
     #vbulletin_html > body > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
+    html.home > body > div[id][class]:not([style]), 
     html.home div:not([id]):not([class]) > div[id][class] {
         background-image: none !important;
         background-color: #dbdbdb !important
@@ -4040,6 +4067,7 @@
     html.home #wrapper > #content > [id]:empty, 
     html.home #wrapper > #content ~ :not([id*="footer"]), 
     html.home .tlpf_info_box, 
+    html.home > body > div[id][class] > style + [id]:not([class]):not(#wrapper), 
     html.home div:not([id]):not([class]) > div > style + [id]:not([class]):not(#wrapper), 
     html.home div[class][id$="_content"] > div:not([id]):not([class]) > [class^="alelt_"][class$="_info"] {
         display: none !important
@@ -4180,18 +4208,6 @@
 @-moz-document domain("ts.kg") {
     .main-container {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("tt-cup.com") {
-    body {
-        cursor: auto !important
-    }
-    body > * {
-        pointer-events: auto !important
-    }
-    body {
-        pointer-events: none !important
     }
 }
 
@@ -4489,6 +4505,9 @@
     }
     #goharu > #site {
         margin-top: 110px !important
+    }
+    #content-container {
+        padding-top: 0 !important
     }
 }
 
