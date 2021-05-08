@@ -13,6 +13,7 @@
 ! --- Adblock Warning Removal List ---
 %include easylistcombinations:antiadblockfilters.txt%
 ! --- uBO scriptlets injection rules & other ---
+*$image,redirect-rule=32x32.png,domain=www.ukr.net
 *$script,redirect-rule=noop.js,domain=otzovik.com|www.ukr.net
 *$subdocument,redirect-rule=noopframe,domain=www.ukr.net
 *$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.org|otzovik.com
