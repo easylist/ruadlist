@@ -605,7 +605,7 @@ _pagespeed_beacon?
 ||rutop.org^$third-party
 ||rutube.ru/dbg/player_stat?
 ||rutube.ru/partner-analytics.js
-||s.4pda.to/*.js?_=0.9|$script
+||s.4pda.to/*.js?_=0.9$script
 ||s.agava.ru^
 ||saint-petersburg.ru/i.php?
 ||savedwebhistory.org/rank.php?s=
@@ -994,7 +994,7 @@ yandex.*#?#div[class*="-navigation-menu__"] ~ div div[class*="__col"]:-abp-has(>
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.loaderVer, noopFunc)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.useAbdBundle, false)
 !
-! 4pda.ru
+! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
 4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)
 ! верхняя плашка

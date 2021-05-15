@@ -1409,40 +1409,40 @@ benzclub.ru##tr > td[valign="top"][width="245"]
 leroymerlin.ru##uc-cookie-notification
 shiza-project.com##ul[class*="transparent-btns"]
 !
-! 4pda.ru
+! 4pda.to (ранее 4pda.ru)
 ! верхняя плашка
-4pda.ru##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
+4pda.to##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
 ! кликабельный элемент рекламного фона
-4pda.ru##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article:not(.post) + article.post
+4pda.to##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article:not(.post) + article.post
 ! пустые и рекламные блоки в правой колонке
-4pda.ru##html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style*="display: block;"]
-4pda.ru#?#html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style]:-abp-has(a[href][target="_blank"] > img)
-4pda.ru##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
-4pda.ru#?#html[style] [id] div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
+4pda.to##html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style*="display: block;"]
+4pda.to#?#html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style]:-abp-has(a[href][target="_blank"] > img)
+4pda.to##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
+4pda.to#?#html[style] [id] div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
 ! пустые и рекламные блоки в материалах
-4pda.ru#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class] > a[href][target="_blank"])
-4pda.ru#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class]:empty)
-4pda.ru##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(-n+3)
+4pda.to#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class] > a[href][target="_blank"])
+4pda.to#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class]:empty)
+4pda.to##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(-n+3)
 ! различные рекламные ссылки, в основном в брендированных материалах
-4pda.ru##html[style] > body .menu-main > li.menu-main-item > a[href][style*="important"]
-4pda.ru##html[style] > body .second-menu
-4pda.ru##html[style] > body .slick-dotted
-4pda.ru#?#html[style] > body a.rounded[href][target="_blank"]:-abp-contains(/^Узнать больше/)
-4pda.ru##html[style] > body a[href*="ali.pub"]
-4pda.ru##html[style] > body a[href*="bit.do"]
-4pda.ru##html[style] > body a[href*="bit.ly"]
-4pda.ru##html[style] > body a[href*="clc.to"]
-4pda.ru##html[style] > body a[href*="clck.ru"]
-4pda.ru##html[style] > body a[href*="dada.link"]
-4pda.ru##html[style] > body a[href*="goo.gl"]
-4pda.ru##html[style] > body a[href*="is.gd"]
-4pda.ru##html[style] > body div[class$="-brand-header"]
+4pda.to##html[style] > body .menu-main > li.menu-main-item > a[href][style*="important"]
+4pda.to##html[style] > body .second-menu
+4pda.to##html[style] > body .slick-dotted
+4pda.to#?#html[style] > body a.rounded[href][target="_blank"]:-abp-contains(/^Узнать больше/)
+4pda.to##html[style] > body a[href*="ali.pub"]
+4pda.to##html[style] > body a[href*="bit.do"]
+4pda.to##html[style] > body a[href*="bit.ly"]
+4pda.to##html[style] > body a[href*="clc.to"]
+4pda.to##html[style] > body a[href*="clck.ru"]
+4pda.to##html[style] > body a[href*="dada.link"]
+4pda.to##html[style] > body a[href*="goo.gl"]
+4pda.to##html[style] > body a[href*="is.gd"]
+4pda.to##html[style] > body div[class$="-brand-header"]
 ! анонс в шапке форума
-4pda.ru###go_1 > :not(p):not(h4):not(.globalmesscontent)
+4pda.to###go_1 > :not(p):not(h4):not(.globalmesscontent)
 ! реклама в шапке форума
-4pda.ru##html:not([style]) tbody > tr[valign="top"] > td[width*="20"] + td[class]
+4pda.to##html:not([style]) tbody > tr[valign="top"] > td[width*="20"] + td[class]
 ! реклама при скачивании на форуме
-4pda.ru##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
+4pda.to##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 !
 ! - Сайты на движке TorrentPier -----------------------------------------------
 rutracker.ru###latest_news
