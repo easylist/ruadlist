@@ -889,61 +889,66 @@ _pagespeed_beacon?
 ||spotify.com/*/login/?$image
 !
 ! = Частные и экспериментальные фильтры =======================================
-sinoptik.ua###bigmirTop
-lurkmo.re,lurkmore.to###p-counters
-games-pc.top,rustorka.com,rustorka.innal.top,rustorka.net,rustorka.top,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib###page_footer > .copyright > center:first-child
-fastpic.ru###picContainer > img
-happy-hack.ru#?##side_right > .block_r:-abp-has(noindex > center)
-animedub.ru#@#*
-joyreactor.cc,pornreactor.cc,reactor.cc#?#+js(abort-on-property-read.js, Joyreactor.show_ads)
-auto.ru#?#+js(abort-on-property-read.js, Object.prototype.AdFilterData)
-auto.ru#?#+js(json-prune.js, ads)
-rutube.ru#?#+js(json-prune.js, creative, creative.id)
-rutube.ru#?#+js(json-prune.js, interactives, interactives.0)
-buhgalter.com.ua#?#+js(no-setTimeout-if.js, /b-buy-access/)
-online-fix.me#?#+js(no-setTimeout-if.js, vid_vpaut_div)
-ivi.ru#?#+js(set-constant.js, Object.prototype.hasAdv, noopFunc)
-yastatic.net#?#+js(set-constant.js, Object.prototype.hasPreroll, null)
-rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org#?#+js(set-constant.js, String.prototype.startsWith, noopFunc)
-rp5.am,rp5.by,rp5.co.uk,rp5.kz,rp5.lt,rp5.lv,rp5.md,rp5.ru,rp5.ua#?#+js(setTimeout-defuser.js, xvb)
-rambler.ru##._3S8wP > div:first-child + div
-inoreader.com#@#.ad_title
-inoreader.com##.ad_title > a
-militaryreview.su##.bbanerr
-ingrus.net##.bcounts
-uniongang.net,uniongang.org#?#.block:-abp-has(> .block-title:-abp-contains(Счётчики))
-kanobu.ru##.c-liveinternet
-yakusubstudio.home-forum.com,yakusubstudio.ru##.contbaner
-segodnya.ua##.counters
-rambler.ru##.disableAdvButton__container
-ok.ru#?#.feed-list > .feed-w:-abp-has(.feed_ava ~ div div > [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
-virtualbrest.ru#?#.footer [id]:-abp-has(> b)
-ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,wmj.ru#?#.heading:-abp-contains(Рекомендуем ещё)
-sinoptik.ua##.liveinternet
-samlab.ws##.main > #footer ~ table
-radioprofusion.com##.revolvermaps
-freehd.com.ua,hdreactor.club,hdreactor.su#?#.sidebar > .menu-wrap > .menu-head:-abp-contains(Счетчики)
-freehd.com.ua,hdreactor.club,hdreactor.su#?#.sidebar > .menu-wrap > .menu-head:-abp-contains(Счетчики) + div
 /^https?://rkn\.gov\.ru\/(?!js\/)+[a-z0-9]{15,25}\.js\?+[0-9]{7,15}/$script,domain=rkn.gov.ru
 @@/adsense.png|$image,domain=freeopenvpn.org
 @@||inoreader.com^$generichide
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
-rambler.ru##[data-blocks="top_news_block"] ~ div[style="margin-bottom:15px"]
 animedub.ru##a[href="https://animedub.ru/adblock.html"]
+animedub.ru#@#*
+auto.ru#?#+js(abort-on-property-read.js, Object.prototype.AdFilterData)
+auto.ru#?#+js(json-prune.js, ads)
 auto.ru#?#div:matches-css-before(content: /Реклама/)
 auto.ru#?#div:matches-css-before(content: /Реклама/) ~ div
-inoreader.com##div[id^="leaderboard_ad"] > *
-radioprofusion.com##footer > .counter
+buhgalter.com.ua#?#+js(no-setTimeout-if.js, /b-buy-access/)
+fastpic.ru###picContainer > img
+ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,wmj.ru#?#.heading:-abp-contains(Рекомендуем ещё)
+freehd.com.ua,hdreactor.club,hdreactor.su#?#.sidebar > .menu-wrap > .menu-head:-abp-contains(Счетчики)
+freehd.com.ua,hdreactor.club,hdreactor.su#?#.sidebar > .menu-wrap > .menu-head:-abp-contains(Счетчики) + div
+games-pc.top,rustorka.com,rustorka.innal.top,rustorka.net,rustorka.top,rustorka2.innal.top,rustorka3.innal.top,rustorka4.innal.top,rustorka5.innal.top,rustorka6.innal.top,rustorkacom.lib###page_footer > .copyright > center:first-child
+happy-hack.ru#?##side_right > .block_r:-abp-has(noindex > center)
 horoscopes.rambler.*#?#+js(set-constant.js, Object.prototype.needShowAlicePopup, null)
-lostfilm.tv,lostfilm.tw##img[width="1"][height="1"]
+ingrus.net##.bcounts
+inoreader.com##.ad_title > a
+inoreader.com##div[id^="leaderboard_ad"] > *
+inoreader.com#@#.ad_title
+ivi.ru#?#+js(set-constant.js, Object.prototype.hasAdv, noopFunc)
+joyreactor.cc,pornreactor.cc,reactor.cc#?#+js(abort-on-property-read.js, Joyreactor.show_ads)
+kanobu.ru##.c-liveinternet
 lena-miro.ru,levik.blog,livejournal.*,olegmakarenko.ru,shakko.ru,varlamov.*#?#+js(set-constant.js, Object.prototype.Begun, undefined)
+lostfilm.tv,lostfilm.tw##img[width="1"][height="1"]
+lurkmo.re,lurkmore.to###p-counters
+militaryreview.su##.bbanerr
 nova.rambler.*#?#+js(abort-on-property-read.js, Object.prototype.AdvManager)
+ok.ru#?#.feed-list > .feed-w:-abp-has(.feed_ava ~ div div > [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
+online-fix.me#?#+js(no-setTimeout-if.js, vid_vpaut_div)
+radioprofusion.com##.revolvermaps
+radioprofusion.com##footer > .counter
 rambler.*##[data-blocks="rec_block"]
 rambler.*,~www.rambler.*#?#.pub_300x250.text-ad-links.adbanner.ad.text_ad.pub_728x90.text-ad.nav-ad.text-ads.textAd.ad-banner.text_ads.pub_300x250m:style(display: block !important)
+rambler.ru##._3S8wP > div:first-child + div
+rambler.ru##.disableAdvButton__container
+rambler.ru##[data-blocks="top_news_block"] ~ div[style="margin-bottom:15px"]
+razlozhi.*#?#+js(no-setTimeout-if.js, X-Set-Adblock)
+razlozhi.*#?#div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"] > div > div[style*="height:"][style*="width:"]:style(width: 100% !important)
+razlozhi.*#?#div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"] > div[class][style^="top: "] ~ div[class]:not([style]):style(right: -100% !important)
+razlozhi.*#?#div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"] > div[style*="px;"]:style(width: 100% !important)
+razlozhi.*#?#div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"]:style(width: 100% !important)
+rp5.am,rp5.by,rp5.co.uk,rp5.kz,rp5.lt,rp5.lv,rp5.md,rp5.ru,rp5.ua#?#+js(setTimeout-defuser.js, xvb)
+rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org#?#+js(set-constant.js, String.prototype.startsWith, noopFunc)
+rutube.ru#?#+js(json-prune.js, creative, creative.id)
+rutube.ru#?#+js(json-prune.js, interactives, interactives.0)
+samlab.ws##.main > #footer ~ table
+segodnya.ua##.counters
+sinoptik.ua###bigmirTop
+sinoptik.ua##.liveinternet
+uniongang.net,uniongang.org#?#.block:-abp-has(> .block-title:-abp-contains(Счётчики))
+virtualbrest.ru#?#.footer [id]:-abp-has(> b)
 www.afisha.*,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,motor.ru,passion.ru,quto.ru,rambler.*,rns.online,wmj.ru#?#+js(json-prune.js, Blocks)
 www.afisha.*,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,motor.ru,passion.ru,quto.ru,rambler.*,rns.online,wmj.ru#?#^script:has-text("getPrefixes")
 www.rambler.*###main > div[class]:not([id]) > :first-child[style]:not(div):not([class]):not([id])
 www.rambler.*##body[style*="position:"] > script[src] + div:not([id])
+yakusubstudio.home-forum.com,yakusubstudio.ru##.contbaner
+yastatic.net#?#+js(set-constant.js, Object.prototype.hasPreroll, null)
 ||browserleaks.com/proxy$csp=script-src 'unsafe-inline'
 ||google-analytics.com^$domain=cdnvideo.ru|igromania.ru|rambler.ru
 ||googletagmanager.com/gtm.js$domain=censor.net|dtf.ru|gazeta.ru|lifehacker.ru|livejournal.com|motor.ru|nur.kz|rambler.ru|rutube.ru|tjournal.ru|tut.by|vc.ru

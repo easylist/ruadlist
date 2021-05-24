@@ -197,8 +197,6 @@ pravvest.ru##+js(abort-on-property-read, document.body.oncopy)
 radikal.ru,www.vesti.ru##+js(abort-current-inline-script, document.createElement, String.fromCharCode)
 rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 razlozhi.ru##+js(json-prune, rtb direct.ads)
-razlozhi.ru##div[class]:matches-css(height: 250px) ~ div[class]:matches-css(width: /^\dpx/) + div[class]
-razlozhi.ru##div[class]:matches-css(width: 340px):matches-css(box-sizing: border-box):remove()
 remont-aud.net##+js(set-constant, window.ab, false)
 rns.online##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_position)
 rp5.*##+js(no-setTimeout-if, 0x)
