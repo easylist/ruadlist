@@ -4784,6 +4784,9 @@ liveresult.ru##[data-target*="nus"]
 drive2.ru##[data-target^="drom_"]
 youla.ru##[data-test-component="AdCardHolder"]
 adme.ru#?#[data-test-id$="-recommended"] div[class*=" _"]:-abp-has(> div[class] > div[class]:empty)
+echo.msk.ru##[data-title="Эхо Москвы"] > div:first-child
+echo.msk.ru##[data-title="Эхо Москвы"] > script:first-child + div
+echo.msk.ru##[data-title="Эхо Москвы"] div[id]:not([class]):first-child
 echo.msk.ru##[data-title] center
 1fnl.ru##[data-tizer-id="partners"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
@@ -5918,6 +5921,7 @@ salonav.com#?#div:-abp-has(> .mom-ads-wrap)
 selomoe.ru#?#div:-abp-has(> .title_also:-abp-contains(Партнерский контент))
 forumhouse.ru#?#div:-abp-has(> [class$="relap-block"])
 obozrevatel.com#?#div:-abp-has(> [data-bk-name])
+echo.msk.ru#?#div:-abp-has(> [id*="svoboda"])
 draug.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 photofuneditor.com#?#div:-abp-has(> [src*="pagead2."])
 reshebnik.com#?#div:-abp-has(> [src="/img/blocked.png"])
@@ -5940,6 +5944,7 @@ fragrantica.ru#?#div:-abp-has(> sup)
 football.kulichki.net#?#div:-abp-has(> table > tbody a[href*="kulichki.com/advert"])
 sdamgia.ru##div:first-child > [class*=" "] > style ~ [class*=" "]
 sdamgia.ru##div:first-child > [class*=" "] ~ style ~ [class*=" "]
+echo.msk.ru##div:first-child > div[style^="width: "][style*="%; height:"]
 tomat-pomidor.com##div:not([id]):not([class])[style^="min-height:"]
 vz.ru##div:not([id])[style*="margin"][style*="width: 240px"]
 dtf.ru,tjournal.ru,vc.ru##div[air-module="module.boosterPromo"]
@@ -6676,6 +6681,7 @@ megaobuchalka.ru##div[style="width: 80%; align-items: center;"] > center
 forum.gov-zakupki.ru##div[style="width: 970px; height: 90px;"]
 ubr.ua##div[style="width:100%; height:280px;"]
 www.afisha.ru##div[style="width:143px;height:24px"]:empty
+echo.msk.ru##div[style="width:236px;height:100px;"][id]
 softobase.com##div[style="width:336px; height:280px;"]
 for-ua.com##div[style="width:540px;height:90px;overflow:hidden;display:block;margin-top:10px"]
 au.ru##div[style="width:728px;height:90px;"]
@@ -6700,7 +6706,7 @@ rivne.media##div[style^="margin-bottom"] > a[href][onclick]
 freesoft.ru##div[style^="margin-left:"] > a[href="#"]
 smart-lab.ru##div[style^="min-height: 250px;"][style*="font-size: 0;"]
 liveposts.ru##div[style^="min-height: 700px;"]
-echo.msk.ru##div[style^="padding:"][style$="px 0px 0px 0px;"]
+echo.msk.ru##div[style^="padding:"][style*="0px 0px 0px;"]
 1pnz.ru##div[style^="position: relative; width: 230px; height: 400px"]
 lostfilmstv.com##div[style^="promo"]
 kinonews.ru##div[style^="text-align:"][style$="center;height:300px;"]
