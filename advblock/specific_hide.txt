@@ -4818,7 +4818,8 @@ kakprosto.ru##[id*="-advice-block"]
 kakprosto.ru##[id*="-offers-block"]
 cools.biz,cools.dj,get-tune.cc,intermusic.name,iplayer.info,ipleer.fm,k1news.ru,kolesa.kz,market4game.ru,mp3cc.biz,mp3iq.com,vmuzice.me,yellowpages.uz##[id*="Banner"]
 espreso.tv##[id*="ScriptRoot"]:not(.news-block-magick)
-liveinternet.ru,livejournal.com,sdamgia.ru##[id*="_R-A-"]
+liveinternet.ru,livejournal.com##[id*="_R-A-"]
+sdamgia.ru##[id*="_R-A-"]:empty
 liveangarsk.ru##[id*="abovecontent"]
 floomby.ru##[id*="adsPlace"]
 sia.ru##[id*="banana"]
@@ -5944,8 +5945,6 @@ rp5.am,rp5.by,rp5.co.nz,rp5.co.uk,rp5.kz,rp5.lt,rp5.lv,rp5.md,rp5.ru,rp5.ua#?#di
 draug.ru#?#div:-abp-has(> script:-abp-contains(snowsrc))
 fragrantica.ru#?#div:-abp-has(> sup)
 football.kulichki.net#?#div:-abp-has(> table > tbody a[href*="kulichki.com/advert"])
-sdamgia.ru##div:first-child > [class*=" "] > style ~ [class*=" "]
-sdamgia.ru##div:first-child > [class*=" "] ~ style ~ [class*=" "]
 echo.msk.ru##div:first-child > div[style^="width: "][style*="%; height:"]
 tomat-pomidor.com##div:not([id]):not([class])[style^="min-height:"]
 vz.ru##div:not([id])[style*="margin"][style*="width: 240px"]
@@ -6372,7 +6371,6 @@ lalamus.cc,superhumor.ru,voffka.com##div[id*="teaser"]
 flowtation.ru##div[id*="tizer"]
 1tv.ru,4pda.to,artem-kashkanov.ru,astrakhan-24.ru,baraholka.onliner.by,bigpicture.ru,energyfm.ru,galya.ru,gotovim-doma.ru,multitran.ru,qip.ru,telegraf.com.ua,vputilkovo.ru##div[id*="yandex_ad"]
 dv-gazeta.info#?#div[id] > [class]:-abp-contains(/^Новости партнеров/)
-sdamgia.ru##div[id]:first-child > [id] > [id]
 gorodrabot.ru##div[id]:not([class]):not([style])[aria-hidden="true"]
 kidpuz.ru,prohondroz.ru##div[id][block-id]
 progipertoniyu.ru##div[id][block-id][style]
@@ -6715,8 +6713,6 @@ kinonews.ru##div[style^="text-align:"][style$="center;height:300px;"]
 wallegend.net##div[style^="text-align:center;line-height:0;display:block;height:"]
 echo.msk.ru##div[style^="width: "][style$="%; height: 100%;"]
 e-reading.club##div[style^="width:"] > noindex
-sdamgia.ru##div[style^="width:"][style*="159"]
-sdamgia.ru##div[style^="width:"][style*="160"]
 echo.msk.ru##div[style^="width:"][style*="height:"][style*="."]
 vse-shutochki.ru##div[style^="width:100%; height:280px; padding:"]
 appstudio.org##div[style^="width:100%; height:90px;"]
