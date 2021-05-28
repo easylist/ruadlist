@@ -6715,6 +6715,7 @@ rivne.media##div[style^="margin-bottom"] > a[href][onclick]
 freesoft.ru##div[style^="margin-left:"] > a[href="#"]
 smart-lab.ru##div[style^="min-height: 250px;"][style*="font-size: 0;"]
 liveposts.ru##div[style^="min-height: 700px;"]
+echo.msk.ru##div[style^="min-width:"][style*="height:"]
 echo.msk.ru##div[style^="padding:"][style*="0px 0px 0px;"]
 1pnz.ru##div[style^="position: relative; width: 230px; height: 400px"]
 lostfilmstv.com##div[style^="promo"]
@@ -7014,6 +7015,8 @@ omskzdes.ru##object[id^="banner"]
 ria-m.tv##object[name="videoblock"]
 sibmama.info,sibmama.ru##object[width="150"][height="100"]
 guzei.com##object[width="200"][height="100"]
+echo.msk.ru##p + div div[id]:empty
+echo.msk.ru##p + div[id]:empty
 y-games.ru##p > .ContentTitle[style="height: 20px;"]
 y-games.ru##p > .ContentTitle[style="height: 20px;"] + .ContentText
 ppl.nnov.ru##p > a[href][target="_blank"]:not([href*="nnov.ru"]) > img[src*="/bannery/"]
