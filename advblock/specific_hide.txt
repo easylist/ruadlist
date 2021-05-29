@@ -1248,9 +1248,11 @@ mk.ru#?#*:-abp-has(> .mkblock:-abp-contains(Популярно в соцсетя
 bookskeeper.ru#?#*:-abp-has(> [id^="BlockId"])
 ruero.com#?#*:-abp-has(> a[href*="prostitutkixxx"])
 onedivision.ru##.-hidden-adv
+myshows.me##.AdBlock
 ua-ix.biz##.Advertising
 meduza.io##.App-bannerBottom
 meduza.io##.App-bannerTop
+myshows.me#?#.AsideHeading:-abp-contains(/kinopoiskhd/i)
 obninsk.name,www.zoneofgames.ru##.Banner
 hqq.tv##.BetterJsPopOverlay
 ndn.info##.BigBlock
@@ -1263,7 +1265,9 @@ euro2016.cc##.DmWidget
 nulled.cc##.EstBS-bnContent
 fanfics.me##.FicHead.ContentTable > .left
 sdamgia.ru##.Footer-Partner
+myshows.me#?#.Grid-in > .GridItem:-abp-has(> .ShowItem > [href*="hd.kinopoisk.ru"])
 razvitierebenka.com#?#.HTML:-abp-has(> .widget-content > .adsbygoogle)
+myshows.me#?#.Home-section:-abp-has(> div > .ShowsKP)
 russiandc.com##.L
 meduza.io##.Layout-bannerTop
 spot.uz##.LeaderBoard
@@ -1277,6 +1281,7 @@ russiandc.com##.R
 gold-torrent.org##.RELINK
 therussianamerica.com##.RightColumn .Content > a
 muz.ru##.SEO
+myshows.me##.ShowsKP
 tonkosti.ru##.SkyscannerFormInContent
 softportal.com##.TblBorderCLR2 center > a[href][target="_blank"]
 softportal.com##.TblOBan
@@ -2073,7 +2078,7 @@ forum.rarib.ag##.brand-top
 citydog.by##.brandLink
 ekaraganda.kz##.brand_a
 mixnews.lv##.brandbox
-agropolit.com,altapress.ru,egamersworld.com,elevatorist.com,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,molodejj.tv,myshows.me,obozrevatel.com,osp.ru,podfm.ru,popcornnews.ru,superagronom.com##.branding
+agropolit.com,altapress.ru,egamersworld.com,elevatorist.com,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,molodejj.tv,myshows.me,obozrevatel.com,old.myshows.me,osp.ru,podfm.ru,popcornnews.ru,superagronom.com##.branding
 tut.by##.branding > a
 agrarii-razom.com.ua##.branding--wrapper
 banki.ru##.branding-bg
@@ -2246,9 +2251,9 @@ cxem.net##.cont_left > p > a[href^="http"]:not([href*="://cxem.net/"])
 comments.ua##.cont_station > .tags ~ .K_t_a ~ .K_t_a
 tuchkatvsport.com##.container > #slides
 efxi.ru#?#.container > .footer:-abp-contains(реклама)
-myshows.me#?#.container > .marginBottomBase:-abp-contains(/Смотри на КиноПоиск HD|Watch on KinoPoisk HD/)
-myshows.me#?#.container > .marginBottomBase:-abp-contains(/Смотри на КиноПоиск HD|Watch on KinoPoisk HD/) + .row
-myshows.me#?#.container > .marginBottomBase:-abp-contains(/Смотри на КиноПоиск HD|Watch on KinoPoisk HD/) + .row + .contAlt
+old.myshows.me#?#.container > .marginBottomBase:-abp-contains(/Смотри на КиноПоиск HD|Watch on KinoPoisk HD/)
+old.myshows.me#?#.container > .marginBottomBase:-abp-contains(/Смотри на КиноПоиск HD|Watch on KinoPoisk HD/) + .row
+old.myshows.me#?#.container > .marginBottomBase:-abp-contains(/Смотри на КиноПоиск HD|Watch on KinoPoisk HD/) + .row + .contAlt
 mskins.net#?#.container > .row > .col:-abp-has(> .card script)
 dictat.net##.container > .sidebar
 solncevo.info##.container > a[href*="utm_campai"] ~ a[href][target="_blank"]
@@ -2910,7 +2915,8 @@ tvernews.ru##.kc6a
 kg-portal.ru##.kg_promo
 kubik-v-kube.com##.kino-text > div[style^="clear:both;"]
 gaming-torrent.org##.kino-text a[target] > img
-myshows.me##.kinopoiskBanner
+myshows.me##.kinopoisk
+old.myshows.me##.kinopoiskBanner
 kivvi.kz##.kivvi_social
 kloomba.com##.kl-ad-item
 kanobu.ru#?#.knb-grid-layout > .knb-grid-cell:-abp-has(> [class*="banner"])
@@ -3774,7 +3780,6 @@ officepackage.info,radiorecord.ru##.rotator
 milknet.ru##.rotator-wrap
 bestradio.fm##.row .panel-danger
 5-tv.ru##.row > .col3.positionRelative
-myshows.me#?#.row > .col3:-abp-has(> a[href*="://hd.kinopoisk.ru"])
 my-hit.org##.row > .hidden-sm.hidden-xs > :not([class])
 argumenti.ru#?#.row > article:-abp-has(> .slides)
 pingvin.pro#?#.row > div:-abp-has(> .card-blog script)
@@ -4888,7 +4893,7 @@ radidomapro.ru##[id^="zone_pub"]
 subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
 egamersworld.com##[name="odds"]
 mydiv.net##[onclick*="/ya"]
-myshows.me##[onclick*="://hd.kinopoisk.ru/"]
+myshows.me##[onclick*=":hd.kinopoisk.ru"]
 yellowpages.uz##[onclick*="ClickOnAd"]
 yellowpages.uz##[onclick*="ClickOnBanner"]
 animang.ru##[onclick*="advg.agency"]
@@ -5143,6 +5148,7 @@ for-ua.info,pogodnik.com##a[href*="got.by"]
 vsezdes.info##a[href*="grovieavtomati.vip"]
 v-zlom.ru##a[href*="hacknet-service.com"]
 islamnews.ru##a[href*="halaleda.me"]
+myshows.me##a[href*="hd.kinopoisk.ru"]
 ignio.com##a[href*="helpix.ru"]
 minecraft-mods.ru##a[href*="http://new-igry.ru/games/"] > img[src^="/uploads/posts/"]
 playua.net##a[href*="https://patreon.com/"]
@@ -6957,7 +6963,7 @@ argumenti.ru#?#li:-abp-has(> a[href] > .ourathors_img-partner)
 argumenti.ru#?#li:-abp-has(> span:-abp-contains(Новости партнеров))
 polochka.net##li[class^="ss-li-"]
 penzainform.ru##li[style^="width: 140px; height:"][style*="max-height"]
-myshows.me##main > .contAlt
+old.myshows.me##main > .contAlt
 allcarz.ru#?#main > .container > .site-content:-abp-has(> .content-banner)
 besplatnyeprogrammy.ru#?#main > article.post:-abp-has(> header > .mainpage_title > [title^="InstallPack"])
 kurs.com.ua##main [onclick^="window.open"]
