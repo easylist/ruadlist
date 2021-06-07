@@ -2261,7 +2261,7 @@ mskins.net#?#.container > .row > .col:-abp-has(> .card script)
 dictat.net##.container > .sidebar
 solncevo.info##.container > a[href*="utm_campai"] ~ a[href][target="_blank"]
 saratovnews.ru##.container > div > object
-ip-games.ru##.container > div:first-child
+ip-games.ru##.container > div:not([class="bl_adv_server"]):not([class="row content"])
 imagenizr.net##.container > div[id^="adblock-"] ~ .row
 nashdisk.ru##.container > table[align]
 club.ru##.container-banners
@@ -5047,6 +5047,7 @@ flatfy.lun.ua##a[href*="/redirect-andromeda/"]
 soccer.ru##a[href*="/redirect.php?destination"]
 djvu-reader.info,igrigo.net,repackov.net,trackeroc.info,trackeroc.ru,trackerock.ru,utorrentinfo.ru,wintorrents.ru##a[href*="/sb/clk/"]
 docfilms.info##a[href*="/search?"][href*="pid="]
+ip-games.ru##a[href*="/services/r"]
 chezasite.com##a[href*="/stat/click-"][target="_blank"]
 irr.ua##a[href*="/statistic_advertising/"]
 ant-top.ru##a[href*="/teasers/"]
@@ -5438,7 +5439,6 @@ moyareklama.by,moyareklama.ru##a[href^="/redirect.php?bid="]
 fapl.ru##a[href^="/redirect/"][target="_blank"] > img[alt][title]
 bashinform.ru##a[href^="/rk.php"]
 gageno.ru,pikapo.ru##a[href^="/s"][target="_blank"]
-ip-games.ru##a[href^="/services/r.php"]
 gunsbroker.ru##a[href^="/sp.php?id="]
 rusradio.ru##a[href^="/target/"]
 bigfangroup.org,freebfg.org##a[href^="/trh"]
