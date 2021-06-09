@@ -215,8 +215,8 @@ shazoo.ru##html:not(#id) > body:not(#id):has(> .headerContainer:matches-css-befo
 shazoo.ru##html:not(#id) > body:not(#id):has(> .headerContainer:matches-css-before(background-color: rgb(255, 255, 255))):style(background-color: rgb(243, 245, 246) !important)
 shrlink.top##+js(abort-on-property-read, app_vars.force_disable_adblock)
 smotrim.ru##.dialog-wrapper
-softportal.com##+js(abort-on-property-read, checkPopupCookie)
 softportal.com##+js(abort-on-property-read, window.block)
+softportal.com##+js(no-setTimeout-if, toUTCString)
 softportal.com##+js(set-constant, timeEnd, 1)
 softportal.com##.st-browser__timer
 sorokam.ru##+js(nano-setInterval-booster, .track-download__timer)
