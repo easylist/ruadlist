@@ -5761,6 +5761,7 @@ bitcryptonews.ru##aside > noindex
 jooble.org##aside > section[class^="ad"]
 stankiexpert.ru##aside a[id][href][target="_blank"]
 riwkus.pro##aside a[onclick^="yaCounter"]
+fontanka.ru#?#aside div:-abp-has(> div[id^="div-gpt-ad-"])
 mk.ru#?#aside div:-abp-has(> script:-abp-contains(/adbdect|adfox|advmanager/i))
 mk.ru#?#aside div:-abp-has(> script:-abp-contains(blockId))
 magtimes.info##aside img[src^="http://magtimes.info/wp-content/uploads/"]
@@ -6789,7 +6790,7 @@ znak.com##figure
 dyvys.info##figure > div > img[src*="/var-min.jpg"]
 proidei.com##figure.wp-block-image
 povar.co##figure[id^="attachment"]
-fontanka.ru#?#footer ~ div[class]:-abp-has(> div[class] > div[id^="div-gpt-ad-"])
+fontanka.ru#?#footer ~ div:-abp-has(> div[class] > div[id^="div-gpt-ad-"])
 forum.cxem.net#?#form > article[id^="elComment_"]:-abp-has(strong[itemprop="name"] > a[title="Перейти в профиль Adver"])
 payeer-gift.ru##form > div[style^="width: 300px;"]
 yap.ru,yaplakal.com#?#form > table[id^="p_row_"]:nth-of-type(2):-abp-has(*:-abp-contains(Yap))
@@ -7092,7 +7093,7 @@ sftv.ru##script[src*="iwantyourpromo.com"] ~ div[align="center"]
 megaimg.ru##script[src^="http://am10.ru/"] + center
 car72.ru##section > .container-fluid > div[style^="width:"][style$="%"]
 fontanka.ru#?#section > div > :not(article) div:-abp-has(> div > [id^="adfox_"])
-fontanka.ru#?#section div[class]:-abp-has(> div[class] > div[id^="div-gpt-ad-"])
+fontanka.ru#?#section div:-abp-has(> div[class] > div[id^="div-gpt-ad-"])
 superdom.ua#?#section:-abp-has(> h2:-abp-contains(/новости партн/i))
 bbc.com##section[aria-label^="Реклама"]
 vikka.ua##section[id^="ctup_ads-"]

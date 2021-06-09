@@ -1321,6 +1321,7 @@ glavpahar.ru##div > a[href="//www.facebook.com/GlavPahar"]
 glavpahar.ru##div > a[href="//www.facebook.com/GlavPahar"] ~ a
 glavagronom.ru##div > a[href="https://www.facebook.com/GlavAgronom/"]
 glavagronom.ru##div > a[href="https://www.facebook.com/GlavAgronom/"] ~ a
+fontanka.ru#?#div > article ~ div[class] > div:-abp-has(a[href*="share"])
 tengrinews.kz##div.tn-shared
 gorod24.online,kinovidos.com,print-post.com#?#div:-abp-has(> #vk_groups)
 inter.ua#?#div:-abp-has(> .footer-social)
@@ -1329,6 +1330,7 @@ barneos22.ru#?#div:-abp-has(> .soc1)
 gageno.ru,radiorecord.ru#?#div:-abp-has(> .ya-share2)
 zasekin.ru#?#div:-abp-has(> .yashare-auto-init)
 youla.ru#?#div:-abp-has(> [data-test-component="SocialShare"])
+fontanka.ru#?#div:-abp-has(> [title="ВКонтакте"] ~ [title="Яндекс.Zen"])
 fontanka.ru#?#div:-abp-has(> ul > [data-rg-name="lj"])
 traktorist.ua#?#div:not([id]):not([class]):-abp-has(> a[href="https://t.me/traktoristua"])
 stalker-mods.clan.su,stalker-mods.su#?#div[align="center"]:-abp-contains(Поделиться в социальных сетях)
