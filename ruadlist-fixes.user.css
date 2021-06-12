@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210529.1933
+@version        0.20210612.452
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -98,6 +98,7 @@
   domain("pure-t.ru"),
   domain("rehdrezka.com"),
   domain("rezka.ag"),
+  domain("rezkery.com"),
   domain("rezkion.com"),
   domain("rufootballtv.org"),
   domain("rusporno.vip"),
@@ -114,8 +115,7 @@
   domain("xatab-repack.org"),
   domain("xhdrezka.com"),
   domain("youhdrezka.com"),
-  domain("zakarpatpost.net"),
-  domain("zakon.kz") {
+  domain("zakarpatpost.net") {
     body:not(#id), html:not(#id) {
         background-image: none !important
     }
@@ -219,6 +219,7 @@
   domain("pure-t.ru"),
   domain("rehdrezka.com"),
   domain("rezka.ag"),
+  domain("rezkery.com"),
   domain("rezkion.com"),
   domain("roem.ru"),
   domain("rusporno.vip"),
@@ -674,12 +675,6 @@
     body {
         background-image: none !important
     }
-    .td-ad-background-link > * {
-        pointer-events: auto !important
-    }
-    .td-ad-background-link {
-        pointer-events: none !important
-    }
 }
 
 @-moz-document domain("amedia.online") {
@@ -756,6 +751,12 @@
     }
     .main-container {
         margin-top: 80px !important
+    }
+}
+
+@-moz-document domain("animemobi.ru") {
+    .wrapper {
+        margin-top: 0 !important
     }
 }
 
@@ -992,6 +993,13 @@
     }
 }
 
+@-moz-document domain("bin.ua") {
+    div[style="position:absolute;left:0px;top:0px;width:240px;margin-top:660px"] {
+        position: relative !important;
+        margin-top: auto !important
+    }
+}
+
 @-moz-document domain("binmovie.org") {
     #content {
         top: 0 !important;
@@ -1222,8 +1230,10 @@
     }
 }
 
-@-moz-document domain("cont.ws") {
-    body.modal-open > .modal {
+@-moz-document
+  domain("cont.ws"),
+  domain("kraj.by") {
+    body.modal-open > [class^="modal"] {
         display: none !important
     }
     body.modal-open {
@@ -1665,6 +1675,15 @@
     }
 }
 
+@-moz-document domain("factor.ua") {
+    .b-access__auth, .b-access__overlay {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("fanserial.net") {
     .wrapper main {
         margin-top: 0 !important
@@ -1806,6 +1825,18 @@
 @-moz-document domain("footballtransfer.com.ua") {
     center + br + div[style*="background-color: #ebebeb"] {
         margin-top: auto !important
+    }
+}
+
+@-moz-document
+  domain("footboom.by"),
+  domain("footboom.com"),
+  domain("footboom.kz") {
+    .b-footer__footer-links > .b-footer-links__footer-col:nth-child(3), 
+    .b-hideable-table, .b-news-open__tags ~ div:not([class*="-"]), 
+    .b-page__right-col > :not(.b-right-col__block):not(.informer-placeholder), 
+    .b-sw__table, .bet-informer__widget {
+        display: none !important
     }
 }
 
@@ -1979,9 +2010,6 @@
     .comment-background, .main-content {
         background: none !important
     }
-    .top-branding {
-        max-height: 45rem !important
-    }
 }
 
 @-moz-document domain("games.mail.ru") {
@@ -2054,6 +2082,12 @@
     }
 }
 
+@-moz-document domain("gdetraffic.com") {
+    .main.with-top-menu {
+        padding-top: 100px !important
+    }
+}
+
 @-moz-document domain("glav.su") {
     #js-l-h ~ div[class] > div:not([id]):not([class]):not([style]) {
         display: none !important
@@ -2067,6 +2101,12 @@
 @-moz-document domain("glavnoe.ua") {
     #main-block > .content-block {
         margin: auto !important
+    }
+}
+
+@-moz-document domain("glavred.info") {
+    .newsfeed {
+        height: auto !important
     }
 }
 
@@ -2241,6 +2281,9 @@
 @-moz-document domain("hi-fi.ru") {
     body {
         background: none !important
+    }
+    .page-branded {
+        margin-top: 0 !important
     }
 }
 
@@ -2845,7 +2888,7 @@
         color: #fff !important
     }
     body > * > div[style^="padding-top"], body > a[onclick], 
-    body > div:not([id]):not([class]), body > span:nth-child(-n+6) {
+    body > div:not([id]):not([class]):not([style]), body > span:nth-child(-n+6) {
         display: none !important
     }
     .gallery_img_preload {
@@ -3277,6 +3320,9 @@
 @-moz-document domain("obozrevatel.com") {
     body > .header {
         margin-top: 0 !important
+    }
+    .videoOfDa div[id^="video_"][id$="-float-container"] {
+        position: relative !important
     }
 }
 
@@ -3924,10 +3970,12 @@
 @-moz-document domain("softportal.com") {
     .TblBorderCLR > tbody > tr > td[style="padding:15px 0;"][align="center"], 
     .TblTopBanCLR td > a[href] > img, a[href^="prog"][target="_blank"], 
-    a[href^="prog"][target="_blank"] ~ *, div[class="mfp-bg mfp-ready"], 
-    div[class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready"], 
+    a[href^="prog"][target="_blank"] ~ *, 
     td[style="width:342px; padding-right:14px;"][valign="top"] {
         display: none !important
+    }
+    .cardPageDescMain > div[style*="min-height:"] {
+        min-height: 0 !important
     }
     html {
         overflow: auto !important
@@ -4181,6 +4229,12 @@
 
 @-moz-document domain("torrentinka.me") {
     .dwrp {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("torrentss.ru") {
+    .header_bottom {
         margin-top: 0 !important
     }
 }
