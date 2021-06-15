@@ -13,9 +13,9 @@
 ! --- Adblock Warning Removal List ---
 %include easylistcombinations:antiadblockfilters.txt%
 ! --- uBO scriptlets injection rules & other ---
-*$image,redirect-rule=32x32.png,domain=www.ukr.net
-*$script,redirect-rule=noop.js,domain=otzovik.com|www.ukr.net
-*$subdocument,redirect-rule=noopframe,domain=www.ukr.net
+*$image,redirect-rule=32x32.png,domain=ukr.net
+*$script,redirect-rule=noop.js,domain=otzovik.com|ukr.net
+*$subdocument,redirect-rule=noopframe,domain=ukr.net
 *$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.org|otzovik.com
 /^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
@@ -380,7 +380,7 @@ mail.ukr.net###top_banner:not(#id):style(display: block !important; pointer-even
 ukr.net##.adv-news:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 mail.ukr.net##.advt:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##.fixed-block > div[class] ~ div:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-@@||s.zmctrack.net/ads.js|$script,domain=jail.fwdcdn.com
+@@||s.zmctrack.net/ads.js|$third-party,script
 @@||www.ukr.net^$generichide
 www.ukr.net##a[href][id$="op"][style]:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##div[class^="fuel-"][class$="-banner"]:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
