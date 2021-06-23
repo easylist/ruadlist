@@ -69,7 +69,7 @@ KNOWNOPTIONS = ("badfilter", "collapse", "doc", "document", "elemhide", "empty",
                 "script", "stylesheet", "subdocument",  "first-party", "third-party",
                 "websocket", "webrtc", "xmlhttprequest")
 # List of known key=value parameters (domain is not included)
-KNOWNPARAMETERS = ("csp", "header", "queryprune", "rewrite", "redirect", "redirect-rule")
+KNOWNPARAMETERS = ("csp", "header", "queryprune", "removeparam", "rewrite", "redirect", "redirect-rule")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
@@ -277,7 +277,7 @@ def filtertidy (filterin):
 
         domainlist = []
         removeentries = []
-        queryprune = ""
+        removeparam = ""
         rediwritelist = []
         keepAsterisk = False
         for option in optionlist:
@@ -286,7 +286,10 @@ def filtertidy (filterin):
                 domainlist.extend(option[7:].split("|"))
                 removeentries.append(option)
             elif option[0:11] == "queryprune=":
-                queryprune = option[11:]
+                removeparam = option[11:]
+                removeentries.append(option)
+            elif option[0:12] == "removeparam=":
+                removeparam = option[12:]
                 removeentries.append(option)
             elif re.match(REDIWRITEOPTIONPATTERN, option):
                 keepAsterisk = True
@@ -300,8 +303,8 @@ def filtertidy (filterin):
         # Replace underscore typo with hyphen-minus in options like third_party
         optionlist = list(map(lambda option: option.replace("_", "-"), optionlist))
         # Append queryprune back at the end (both to keep it at the end and skip underscore typo fix)
-        if queryprune:
-            optionlist.append("queryprune={queryprune}".format(queryprune = queryprune))
+        if removeparam:
+            optionlist.append("removeparam={removeparam}".format(removeparam = removeparam))
         # Append redirect rule back without underscore typo fix
         if rediwritelist:
             optionlist.extend(rediwritelist)
