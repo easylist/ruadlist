@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210623.2034
+@version        0.20210626.140
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1733,12 +1733,6 @@
     }
 }
 
-@-moz-document domain("fanserial.net") {
-    .wrapper main {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("fastpic.ru") {
     body > footer {
         background: none !important
@@ -3237,6 +3231,12 @@
     }
 }
 
+@-moz-document domain("myseria.co") {
+    .wrapper main {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("myshows.me") {
     .DefaultLayout-main {
         margin-top: 0 !important
@@ -3758,6 +3758,11 @@
 }
 
 @-moz-document domain("rbc.ru") {
+    .g-icon-big.g-play:after {
+        bottom: calc(50% - 55px) !important;
+        left: calc(50% - 55px) !important;
+        cursor: pointer !important
+    }
     .l-sticky-right-parent, .popup_push {
         display: none !important
     }
@@ -3781,7 +3786,7 @@
         top: 0 !important
     }
     .js-news-feed > .news-feed {
-        position: unset !important
+        top: 160px !important
     }
 }
 
