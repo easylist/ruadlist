@@ -1097,7 +1097,9 @@ zen.yandex.*##div[class*="yandex-direct"]
 ?commercial=$document,removeparam=|,domain=ria.com
 ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*
 ?fbclid=$document,removeparam=|fbclid
+?fm=1&amp$document,removeparam=|,domain=mail.ru
 ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|autonews.ru|kommersant.ru|ntv.ru|rbc.ru|sportrbc.ru
+?from=menu$document,removeparam=|from,domain=mail.ru
 ?from=tabbar$document,removeparam=|from,domain=yandex.*
 ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*
 ?previewToken=$document,removeparam=|,domain=maximonline.ru
