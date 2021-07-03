@@ -37,6 +37,8 @@
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 24smi.org##+js(cookie-remover, isab)
 2gis.ru##div[style^="display:"][style*="flex;"][style*="height:"][style*="100%;"][style*="overflow:"][style*="hidden;"][style*="width:"] div[style^="position: absolute;"] div[class]:matches-css(background-color: rgb(255, 250, 235))
+3dnews.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
+3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
 3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,sports.ru##+js(abort-on-property-read, Ya)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
@@ -307,6 +309,7 @@ znanija.com##+js(abort-on-property-read, localStorage)
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|
 ||utarget.ru/check_geo/|$script,redirect=empty,domain=memepedia.ru
 ||youtube.com/embed/*?autoplay=1$subdocument,removeparam=|,domain=112ua.tv|1news.com.ua|factor.ua|gamasexual.com|gamasexual.ru|igromania.ru|kanobu.ru|newsoneua.tv|zikua.tv
+||youtube.com/embed/?enablejsapi=1&origin=*3dnews.ru&widgetid=1$subdocument,badfilter,domain=3dnews.ru
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 !
 ! Mail.RU
