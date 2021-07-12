@@ -1041,11 +1041,11 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.useAbdBundle, false)
 ! мобильная версия
 yandex.*##[data-bem*="search-select-promo"]
-yandex.*##[data-bem*="type"][data-bem*="banner"]:not(body)
 yandex.*##div[class*="Advert_container__"]
 yandex.*##div[id*="page"] div[class*="_banner_"]
 yandex.*##div[id^="ADVERT_"]
 zen.yandex.*##div[class*="yandex-direct"]
+~afisha.yandex.*,yandex.*##[data-bem*="type"][data-bem*="banner"]:not(body)
 !
 ! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
