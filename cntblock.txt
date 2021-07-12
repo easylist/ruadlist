@@ -996,6 +996,7 @@ zannn.top#@?#this-is-a-malicious-site
 @@/^https?://yandex\.ru\/turbo[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
 frontend.vh.yandex.*#?#+js(set-constant.js, Object.prototype._getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant.js, Object.prototype.togglePlaybackOnVisibilityChange, null)
+mail.yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"]
 mail.yandex.*##.ns-view-mail-pro-left-column-button
 mail.yandex.*##.PSHeader-Pro
 mail.yandex.*#?#+js(set-constant.js, Object.prototype.changeLinkHref, noopFunc)
