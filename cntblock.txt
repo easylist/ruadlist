@@ -997,6 +997,7 @@ zannn.top#@?#this-is-a-malicious-site
 frontend.vh.yandex.*#?#+js(set-constant.js, Object.prototype._getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant.js, Object.prototype.togglePlaybackOnVisibilityChange, null)
 mail.yandex.*#?#+js(set-constant.js, Object.prototype.changeLinkHref, noopFunc)
+mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.ua,mail.yandex.uz,mail.yandex.*#?#+js(abort-on-property-read.js, Object.prototype.AdvPresenter)
 newssearch.yandex.*##.news-advert__column
 tv.yandex.*##.recommended-ott
 yandex.*###bk-container
@@ -1025,7 +1026,6 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ||yastatic.net/*/front-maps-static/*/chunks/promo/$empty
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
 ~vh.yandex.ru,~yandex.net,yandex.*#?#+js(abort-on-property-read.js, Ya.loaderVer)
-~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"]
 ~yandex.net,mail.yandex.*,yandex.*##.ns-view-mail-pro-left-column-button
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro
 ~yandex.net,yandex.*#?#+js(abort-on-property-read.js, yaads.renderBlock)
