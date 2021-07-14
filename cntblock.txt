@@ -214,6 +214,7 @@ _pagespeed_beacon?
 ||ag.ru/*/info/info.php?
 ||agropoisk.ru/getbanner.php?
 ||aidata.io^$third-party
+||ainews.kz/api/track/
 ||ajur.info^$third-party
 ||akavita.com^$third-party
 ||alexa.com/site_stats/
@@ -1119,7 +1120,7 @@ $document,removeparam=utm_term
 ?e=lfm$document,removeparam=|,domain=sports.ru
 ?fm=$document,removeparam=|fm,domain=mail.ru
 ?fr=$document,removeparam=|fr,domain=mail.ru
-?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|autonews.ru|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru
+?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru
 ?from=tabbar$document,removeparam=|from,domain=yandex.*
 ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*
 ?previewToken=$document,removeparam=|,domain=maximonline.ru
@@ -1132,6 +1133,7 @@ $document,removeparam=utm_term
 fbclid=$document,removeparam=fbclid
 from=*_portal&lang=$document,removeparam=|,domain=yandex.*
 utm_$document,xmlhttprequest,removeparam=|utm_,domain=auto.ru|autonews.ru|championat.com|esquire.ru|gazeta.ru|goha.ru|instagram.com|interfax.ru|ivi.ru|iz.ru|kommersant.ru|kp.by|kp.kg|kp.kz|kp.md|kp.ru|kurs.com.ua|lenta.ru|letidor.ru|livejournal.com|m24.ru|mail.ru|maximonline.ru|moslenta.ru|motor.ru|newstube.ru|nv.ua|pleer.ru|rambler.ru|rbc.ru|rg.ru|riafan.ru|rt.com|rueconomics.ru|sovsport.ru|sport-express.ru|sportmail.ru|sportrbc.ru|sports.ru|svpressa.ru|tass.ru|tribuna.com|tut.by|tvzvezda.ru|vz.ru|wmj.ru|wtftime.ru|www.1tv.ru
+||habr.com/?_ga=$document,removeparam=|
 ||imdb.com/*pf_rd_$document,removeparam=|pf_rd_,domain=imdb.com
 ||imdb.com/*ref_=$document,removeparam=|ref,domain=imdb.com
 ||mail.ru^*exp_id=$document,removeparam=|,domain=mail.ru
