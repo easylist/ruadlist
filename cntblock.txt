@@ -1096,6 +1096,7 @@ zen.yandex.*##div[class*="yandex-direct"]
 4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 !
 ! Экспериментальные правила для маркеров
+&feature=emb_imp_woyt$document,removeparam=|feature=emb_imp_woyt,domain=youtube.com
 &ymclid=$document,removeparam=|,domain=~ozon.onelink.me
 .html?spm=$document,removeparam=spm,domain=aliexpress.*
 .ru/?spm=$document,removeparam=spm,domain=aliexpress.*
