@@ -1117,7 +1117,6 @@ zen.yandex.*##div[class*="yandex-direct"]
 ?e=lfm$document,removeparam=|,domain=sports.ru
 ?fm=$document,removeparam=|fm,domain=mail.ru
 ?fr=$document,removeparam=|fr,domain=mail.ru
-?frm=$document,removeparam=|frm,domain=mail.ru
 ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru
 ?from=tabbar$document,removeparam=|from,domain=yandex.*
 ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*
@@ -1129,7 +1128,9 @@ zen.yandex.*##div[class*="yandex-direct"]
 ?topblock$document,removeparam=|,domain=3dnews.ru
 ?ymclid=$document,removeparam=|
 fbclid=$document,removeparam=fbclid
+frm=$document,removeparam=|frm,domain=mail.ru
 from=*_portal&lang=$document,removeparam=|,domain=yandex.*
+smotri_id=$document,removeparam=|smotri_id,domain=mail.ru
 utm_$document,xmlhttprequest,removeparam=|utm_,domain=auto.ru|autonews.ru|championat.com|esquire.ru|gazeta.ru|goha.ru|instagram.com|interfax.ru|ivi.ru|iz.ru|kommersant.ru|kp.by|kp.kg|kp.kz|kp.md|kp.ru|kurs.com.ua|lenta.ru|letidor.ru|livejournal.com|m24.ru|mail.ru|maximonline.ru|moslenta.ru|motor.ru|newstube.ru|nv.ua|pleer.ru|rambler.ru|rbc.ru|rg.ru|riafan.ru|rt.com|rueconomics.ru|sovsport.ru|sport-express.ru|sportmail.ru|sportrbc.ru|sports.ru|svpressa.ru|tass.ru|tribuna.com|tut.by|tvzvezda.ru|vz.ru|wmj.ru|wtftime.ru|www.1tv.ru
 utm_campaign$document,removeparam=|,domain=~campaign.aliexpress.com|~click.aliexpress.com
 utm_campaing$document,removeparam=|
