@@ -1036,7 +1036,7 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro
 ~yandex.net,yandex.*#?#+js(abort-on-property-read.js, yaads.renderBlock)
 ~yandex.net,yandex.*#?#+js(abort-on-property-read.js, yaads.renderWidget)
-~yandex.net,yandex.*#?#+js(json-prune.js, direct rtb seatbid)
+~yandex.net,yandex.*#?#+js(json-prune.js, direct rtb seatbid.*)
 ~yandex.net,yandex.*#?#+js(remove-attr, data-counter, .serp-list a)
 ~yandex.net,yandex.*#?#+js(set-constant.js, __AAB__, false)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype._hasAdblock, noopFunc)
