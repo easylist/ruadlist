@@ -509,6 +509,7 @@ _pagespeed_beacon?
 ||mail.ru/direct.gif?
 ||mail.ru/grstat?
 ||mail.yandex.*/monitoring_*?event=ads-blocked&type=
+||mail.yandex.*/monitoring_liza.txt
 ||mainspy.ru/tic/
 ||maploco.com/vmap/
 ||mapyourvisitors.com^$third-party
@@ -1032,6 +1033,7 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ||yastatic.net/*/front-maps-static/*/chunks/promo/$empty
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
 ~vh.yandex.ru,~yandex.net,yandex.*#?#+js(abort-on-property-read.js, Ya.loaderVer)
+~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div
 ~yandex.net,mail.yandex.*,yandex.*##.ns-view-mail-pro-left-column-button
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro
 ~yandex.net,yandex.*#?#+js(abort-on-property-read.js, yaads.renderBlock)
