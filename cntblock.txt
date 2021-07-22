@@ -1117,8 +1117,12 @@ $removeparam=utm_source
 $removeparam=utm_term
 &feature=emb_imp_woyt$document,removeparam=|feature=emb_imp_woyt,domain=youtube.com
 &ymclid=$document,removeparam=|,domain=~ozon.onelink.me
+.com/?_ga=$document,removeparam=|
 .html?spm=$document,removeparam=spm,domain=aliexpress.*
+.net/?_ga=$document,removeparam=|
+.ru/?_ga=$document,removeparam=|
 .ru/?spm=$document,removeparam=spm,domain=aliexpress.*
+.ua/?_ga=$document,removeparam=|
 /*&sid=$document,removeparam=|sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
 /?amp;utm_*ukr$document,removeparam=|
 /?f=ukr.net$document,removeparam=|
@@ -1127,7 +1131,6 @@ $removeparam=utm_term
 /story/*?lang=$document,removeparam=|,domain=yandex.*
 =ukraine_news&utm_$document,removeparam=|utm_
 ?*r_audience=$document,removeparam=|,domain=ria.com
-?aff_fcid=$document,removeparam=|,domain=aliexpress.com|aliexpress.ru
 ?amp;test_id=$document,removeparam=|,domain=mail.ru
 ?clid=$document,removeparam=|clid,domain=yandex.*
 ?commercial=$document,removeparam=|,domain=ria.com
@@ -1146,6 +1149,7 @@ $removeparam=utm_term
 ?sub_confirmation=1$document,removeparam=|,domain=youtube.com
 ?topblock$document,removeparam=|,domain=3dnews.ru
 ?ymclid=$document,removeparam=|
+aff_fcid=$document,removeparam=|,domain=aliexpress.*
 fbclid=$document,removeparam=fbclid
 frm=$document,removeparam=|frm,domain=mail.ru
 from=*_portal&lang=$document,removeparam=|,domain=yandex.*
@@ -1153,7 +1157,6 @@ mt_click$document,removeparam=|,domain=mail.ru|ok.ru
 mt_sub$document,removeparam=|,domain=mail.ru|ok.ru
 smotri_id=$document,removeparam=|smotri_id,domain=mail.ru
 utm_$document,removeparam=ig_rid,domain=instagram.com
-||habr.com/?_ga=$document,removeparam=|
 ||imdb.com/*pf_rd_$document,removeparam=|pf_rd_,domain=imdb.com
 ||imdb.com/*ref_=$document,removeparam=|ref,domain=imdb.com
 ||mail.ru^*exp_id=$document,removeparam=|,domain=mail.ru
