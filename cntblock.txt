@@ -1108,6 +1108,13 @@ zen.yandex.*##div[class*="yandex-direct"]
 4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 !
 ! Экспериментальные правила для маркеров
+$removeparam=utm_campaign
+$removeparam=utm_campaing
+$removeparam=utm_content
+$removeparam=utm_medium
+$removeparam=utm_referrer
+$removeparam=utm_source
+$removeparam=utm_term
 &feature=emb_imp_woyt$document,removeparam=|feature=emb_imp_woyt,domain=youtube.com
 &ymclid=$document,removeparam=|,domain=~ozon.onelink.me
 .html?spm=$document,removeparam=spm,domain=aliexpress.*
@@ -1142,18 +1149,12 @@ fbclid=$document,removeparam=fbclid
 frm=$document,removeparam=|frm,domain=mail.ru
 from=*_portal&lang=$document,removeparam=|,domain=yandex.*
 smotri_id=$document,removeparam=|smotri_id,domain=mail.ru
-utm_$document,xmlhttprequest,removeparam=|utm_,domain=auto.ru|autonews.ru|championat.com|esquire.ru|gazeta.ru|goha.ru|instagram.com|interfax.ru|ivi.ru|iz.ru|kommersant.ru|kp.by|kp.kg|kp.kz|kp.md|kp.ru|kurs.com.ua|lenta.ru|letidor.ru|livejournal.com|m24.ru|mail.ru|maximonline.ru|moslenta.ru|motor.ru|newstube.ru|nv.ua|pleer.ru|rambler.ru|rbc.ru|rg.ru|riafan.ru|rt.com|rueconomics.ru|sovsport.ru|sport-express.ru|sportmail.ru|sportrbc.ru|sports.ru|svpressa.ru|tass.ru|tribuna.com|tut.by|tvzvezda.ru|vz.ru|wmj.ru|wtftime.ru|www.1tv.ru
-utm_campaign$document,removeparam=|,domain=~campaign.aliexpress.com|~click.aliexpress.com
-utm_campaing$document,removeparam=|
-utm_content$document,removeparam=|
-utm_medium$document,removeparam=|
-utm_referrer$document,removeparam=|
-utm_source$document,removeparam=|,domain=~youtube.com
-utm_term$document,removeparam=|
+utm_$document,removeparam=ig_rid,domain=instagram.com
 ||habr.com/?_ga=$document,removeparam=|
 ||imdb.com/*pf_rd_$document,removeparam=|pf_rd_,domain=imdb.com
 ||imdb.com/*ref_=$document,removeparam=|ref,domain=imdb.com
 ||mail.ru^*exp_id=$document,removeparam=|,domain=mail.ru
 ||mail.ru^*frommail=1$document,removeparam=|frommail=1,domain=mail.ru
+||ok.ru/?mt_sub$document,removeparam=|,domain=ok.ru
 ||sportmail.ru^*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
 ||sportmail.ru^*frommail=1$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
