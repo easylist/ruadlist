@@ -1149,6 +1149,8 @@ $removeparam=utm_term
 fbclid=$document,removeparam=fbclid
 frm=$document,removeparam=|frm,domain=mail.ru
 from=*_portal&lang=$document,removeparam=|,domain=yandex.*
+mt_click$document,removeparam=|,domain=mail.ru|ok.ru
+mt_sub$document,removeparam=|,domain=mail.ru|ok.ru
 smotri_id=$document,removeparam=|smotri_id,domain=mail.ru
 utm_$document,removeparam=ig_rid,domain=instagram.com
 ||habr.com/?_ga=$document,removeparam=|
@@ -1156,6 +1158,5 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||imdb.com/*ref_=$document,removeparam=|ref,domain=imdb.com
 ||mail.ru^*exp_id=$document,removeparam=|,domain=mail.ru
 ||mail.ru^*frommail=1$document,removeparam=|frommail=1,domain=mail.ru
-||ok.ru/?mt_sub$document,removeparam=|,domain=ok.ru
 ||sportmail.ru^*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
 ||sportmail.ru^*frommail=1$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
