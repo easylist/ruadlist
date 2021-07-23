@@ -1,5 +1,14 @@
 ! Социальные и анонсовые фичи на сайтах, блокирующие доступ к странице.
 ! Это просто запредельно неудобно, особенно если cookies периодически удаляются.
+!
+! it-actual.ru
+it-actual.ru###main > :not(#primary.site-content):not(#leftbar.widget-area):not(#seecondary.widget-area)
+it-actual.ru###menu-block > :not([class="widget widget_search"]):not([class="widget_ widget_menu"]):not([class="widget_pl popular-posts"]):not([class="widget widget_comments"]):not([class="widget widget_taag_cloud"]):not([class="widget_f widget__scr_lp"]):not([class="sbar"])
+it-actual.ru###page > :not(header#masthead.site-header):not(div#main.wrapper):not(footer#colophon[role="contentinfo"])
+it-actual.ru###primary > :not(#content[role="main"])
+it-actual.ru###seecondary > :not([id="menu-block"])
+it-actual.ru##body > :not(#page.site)
+!
 ! --- Скрытие
 popmech.ru###_sim_popup
 newrezume.org###all > #popup
@@ -166,7 +175,6 @@ velosipedinfo.ru##body > .b-modal
 liga.net##body > .show.overlay
 bs-life.ru##body > .ui-widget.ui-dialog
 dowlatow.ru##body > .wid-fb
-it-actual.ru##body > [class^="wrap"],.show
 gosvopros.ru##body > div[class$="-subscr"]
 factroom.ru##body > div[class^="facebook-"]
 roscontrol.com##body > div[class^="promo"]

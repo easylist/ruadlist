@@ -53,6 +53,7 @@ fb.ru###comments > #comments_typers
 fb.ru###comments_list > div[id^="comment-f-"]
 thequestion.ru###content > .informer
 moya-planeta.ru###content > .white_header_text
+it-actual.ru###content > article ~ :not(article):not(.zap):not(#comments.comments-area):not(nav#nav-below.navigation)
 auto.kufar.by###content > div[class^="ft-"] + div[class^="kfa-"]:not([id]):not([style])
 3dnews.ru###content-column > .white.margin-bottom.margin-top
 7ya.ru###content_container > div[class*="specprojects"]
@@ -1202,7 +1203,7 @@ ixbt.com##[aria-label="cookieconsent"]
 www.kinopoisk.ru##[class*="footer"] > [class*="content-links"] + div[class]
 www.kinopoisk.ru##[class*="kinopoisk-header-"] a[href*="utm_campai"]
 auto.ru##[class*="special"][class$="-sales"]
-it-actual.ru##[class*="widget_scr"]
+it-actual.ru##[class="widget_f widget__scr_lp"]
 kanobu.ru##[class^="SubscribeForm_subscribe_"]
 silver.ru##[class^="button-subscribe_news"]
 onlinemschool.com##[class^="oms_gp"]
