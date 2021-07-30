@@ -33,6 +33,29 @@ adblockmetrics.ru,antiadblock.ru,better-games.ru,clickscloud.net,disk-space.ru,f
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ||teleprogramma.pro^$xmlhttprequest,domain=teleprogramma.pro
 !
+! Плеер venom, в основном для ua-юзеров, примеры >
+! http://kindkino.ru/load/serials/bruklin_9_9_smotret_onlajn_hd_720p/2-1-0-30
+! https://sverhestestvennoe.info/episodes/2-sezon-19-seriya/
+! https://zfilm-hd.net/2822-v-poiskah-nemo-2100730132.html
+!
+/vpaid.js|$third-party,script
+||cdn.jsdelivr.net/*/hdzavr/
+! ads domain
+||0001.best^$third-party
+||43100i.cyou^$third-party
+||711u03.top^$third-party
+||884y23.club^$third-party
+||8sjdlsf.club^$third-party
+||923kf.club^$third-party
+||bumbum.club^$third-party
+||f8s.club^$third-party
+||isksds.club^$third-party
+||sg6sada.club^$third-party
+||trampam.club^$third-party
+||trysnd.fun^$third-party
+||watchmen-the-movie.com^$third-party
+||z5002.top^$third-party
+!
 ! Плееры tubeproton@protonmail.com
 $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|playep.pro|playy.online|plplayer.online|plwork.net|sorb.info|toplay.biz|ttutu.biz
 /bundle-vast.min.js$domain=defileb.com|fplay.online|hovels.info|likelol.online|playep.pro|playy.online|plplayer.online|plwork.net|sorb.info|toplay.biz|ttutu.biz
