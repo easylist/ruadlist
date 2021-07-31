@@ -1022,13 +1022,13 @@ tv.yandex.*##.recommended-ott
 yandex.*###bk-container
 yandex.*##.b-statcounter + div[class] > div[id][class]
 yandex.*##.dist-popup
-yandex.*##.news-top-rubric-heading > h1:if-not(> a)
 yandex.*##.turbo-embed_market_widget
 yandex.*##[class*="segment__container"] > div > [class^="card "][class*="_"]
 yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]):not([class^="services"]):not([class*="search"]):not([class*="home"])
 yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) a[href^="https://yastatic.net/www/_/"]
 yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) a[href^="https://yastatic.net/www/_/"] ~ div
 yandex.*##div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div:first-child
+yandex.*##div ~ .news-top-rubric-heading > h1:only-child:if-not(> a)
 yandex.*##div[class*="-header"] ~ div[id*="page"] > div > div[class*="__"] + div[class] > [class*="__row"] > div[class*="__col"]:last-child
 yandex.*##div[class*="-header"] ~ div[id*="page"] div[class*="_banger"]
 yandex.*##div[class*="-header"] ~ div[id*="page"] div[class*="_banner_"]
