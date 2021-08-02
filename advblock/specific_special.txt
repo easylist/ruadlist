@@ -38,10 +38,11 @@ adblockmetrics.ru,antiadblock.ru,better-games.ru,clickscloud.net,disk-space.ru,f
 ! https://sverhestestvennoe.info/episodes/2-sezon-19-seriya/
 ! https://zfilm-hd.net/2822-v-poiskah-nemo-2100730132.html
 !
-@@||0001.best/abp|$xmlhttprequest
-@@||cdn.jsdelivr.net/npm/*/ads/bait-ad-24x24.ico?ads=$image
+/^https?://(?![^\s]+\.streamvid\.club|cdn\.jsdelivr\.net\/npm\/venom-player)/$third-party,domain=ameytools.club|buildplayer.com|delivembed.cc|embedstorage.net|kinogram.best|mir-dikogo-zapada.com|multikland.net|placehere.link|synchroncode.com|tobaco.ws
 cosmolot24.com.ua##:not(obhod_adblocka)
+||actlz.github.io/actualize.js
 ||cosmolot24.com.ua/?refcode=$popup
+||kinogram.best^$third-party
 ||kosmo.link^$popup
 ! ads domain
 ||0001.best^$third-party
@@ -53,6 +54,7 @@ cosmolot24.com.ua##:not(obhod_adblocka)
 ||bumbum.club^$third-party
 ||f8s.club^$third-party
 ||isksds.club^$third-party
+||kafar4.club^$third-party
 ||kajf8.club^$third-party
 ||sg6sada.club^$third-party
 ||trampam.club^$third-party
