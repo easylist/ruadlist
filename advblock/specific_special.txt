@@ -38,11 +38,12 @@ adblockmetrics.ru,antiadblock.ru,better-games.ru,clickscloud.net,disk-space.ru,f
 ! https://sverhestestvennoe.info/episodes/2-sezon-19-seriya/
 ! https://zfilm-hd.net/2822-v-poiskah-nemo-2100730132.html
 !
+/^https?://(?![^\s]+\.streamvid\.club|api\.kinogram\.best\/embed\/|cdn\.jsdelivr\.net\/npm\/venom-player)/$third-party,xmlhttprequest,domain=kindkino.ru
 /^https?://(?![^\s]+\.streamvid\.club|cdn\.jsdelivr\.net\/npm\/venom-player)/$third-party,domain=ameytools.club|buildplayer.com|delivembed.cc|embedstorage.net|kinogram.best|mir-dikogo-zapada.com|multikland.net|placehere.link|synchroncode.com|tobaco.ws
 cosmolot24.com.ua##:not(obhod_adblocka)
-||actlz.github.io/actualize.js
+||actlz.github.io/actualize.js$domain=~kindkino.ru
 ||cosmolot24.com.ua/?refcode=$popup
-||kinogram.best^$third-party
+||kinogram.best^$third-party,domain=~kindkino.ru
 ||kosmo.link^$popup
 ! ads domain
 ||0001.best^$third-party
@@ -57,6 +58,7 @@ cosmolot24.com.ua##:not(obhod_adblocka)
 ||kafar4.club^$third-party
 ||kajf8.club^$third-party
 ||sg6sada.club^$third-party
+||stiven-king.com^$third-party
 ||trampam.club^$third-party
 ||trysnd.fun^$third-party
 ||watchmen-the-movie.com^$third-party
