@@ -17,7 +17,6 @@
 *$script,redirect-rule=noop.js,domain=otzovik.com|ukr.net
 *$subdocument,redirect-rule=noopframe,domain=ukr.net
 *$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.org|otzovik.com
-/^https?://vargr\.ru\/+(autumn|hagal|vinter)\.html$/$inline-script
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnneedtv.ru,cdnpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport7.biz,sportbar.biz,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,stream365.pro,telecdn.net,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
@@ -82,11 +81,10 @@ dc-marvel.org,gidonline.eu,megatfile.cc,seasonvar.re,torrent-soft.net##+js(abort
 dclans.ru##+js(abort-on-property-read, document.getElementById, mdl_adb)
 dfiles.ru,driveroff.net,radikal.ru,samlab.ws##+js(abort-on-property-read, ads_script)
 diplomsrazu.ru,igrozoom.ru,ru-minecraft.ru,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
+dmod.cc,draug.ru,modsforwot.ru##+js(abort-current-script, Math.floor, AdSense)
+dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 doramy.club,newdeaf.vip,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
 dota2.ru##+js(abort-on-property-read, helpUsImproveSite)
-draug.ru##+js(abort-on-property-read, hidesnow)
-draug.ru##p:has-text(Для скачивания подождите отчет таймера...)
-draug.ru,vargr.ru##+js(abort-current-inline-script, Math.floor, AdSense)
 drive2.ru##+js(abort-on-property-read, Object.prototype.YA)
 drlink.online##+js(abort-current-inline-script, Math.random, toString)
 dtf.ru##+js(remove-attr, class, [data-igrozhur-promo])
@@ -138,7 +136,7 @@ hideip.me#@#.node-promoted
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.vip,sexitorrent.com,sextor.org,torrent-pirat.com,xtorrent.net,xxxrip.net,xxxtor.com##+js(abort-current-inline-script, document.querySelectorAll, popMagic)
 iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
-infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,vargr.ru,wallegend.net##+js(nano-setInterval-booster)
+infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 inoreader.com###reader_pane:style(padding-right: unset !important)
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 inoreader.com##.ad_title:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
