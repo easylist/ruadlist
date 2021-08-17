@@ -1047,6 +1047,7 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ||strm.yandex.ru/get/*?sid=*&vsid=
 ||yastatic.net/*/front-maps-static/*/chunks/promo/$empty
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
+~market.yandex.*,~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.adConfig, false)
 ~vh.yandex.ru,~yandex.net,yandex.*#?#+js(abort-on-property-read.js, Ya.loaderVer)
 ~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div
 ~yandex.net,mail.yandex.*,yandex.*##.ns-view-mail-pro-left-column-button
@@ -1057,7 +1058,6 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ~yandex.net,yandex.*#?#+js(remove-attr, data-counter, .serp-list a)
 ~yandex.net,yandex.*#?#+js(set-constant.js, __AAB__, false)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype._hasAdblock, noopFunc)
-~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.adConfig, false)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.getHoneypot, null)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.getYaads, null)
 ~yandex.net,yandex.*#?#+js(set-constant.js, Object.prototype.initWidgetBlock, falseFunc)
