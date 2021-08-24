@@ -1843,6 +1843,8 @@ google.by,google.com,google.com.ua,google.kz,google.ru##mobile-promo > [aria-lab
 www.google.*##+js(abort-current-inline-script, String, consentCookiePayload)
 !
 ! - Экспериментальные правила, добавлять только для доменов, на которых нет :-abp, либо изолировать
+market.yandex.*#?#div[data-zone-name="morda_context"] > div > div:nth-child(-n+2) > div[data-tid] > div[class] > div[class]:not([data-tid]) > div[class]:not([data-tid]):first-child + div:style(width: inherit !important)
+market.yandex.*#?#div[data-zone-name="morda_context"] > div > div:nth-child(-n+2) > div[data-tid] > div[class] > div[class]:not([data-tid]) > div[class]:not([data-tid]):first-child:style(padding-right: unset !important; width: inherit !important; max-width: 100% !important)
 www.kinopoisk.*#?##kinopoisk-header-sticky-container:style(top: 0 !important)
 www.kinopoisk.*#?#.app__header[style^="--header-height:"]:style(top: 0 !important)
 www.kinopoisk.*#?#.desktop-layout-with-sidebar__header[style^="--header-height:"]:style(top: 0 !important)
