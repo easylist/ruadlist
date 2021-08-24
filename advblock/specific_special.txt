@@ -788,6 +788,7 @@ www.rambler.ru##:not([data-cerber]) > svg > defs + g
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
 www.championat.com##[class*="coeffs-"]
 rambler.ru##[data-ad-marker]
+rambler.ru##[data-blocks="top_news_block"] > div:first-child + div > div > div:first-child
 www.championat.com##[data-href^="https://www.fonbet.ru/"]
 rambler.ru##[data-special*=":okko:"]
 sport.rambler.ru##[href^="https://www.fonbet.ru/"]
@@ -811,6 +812,7 @@ gazeta.ru##div[id^="native"]
 quto.ru##div[id^="partner_news_"]
 lenta.ru,wmj.ru##div[id^="rnet_"]
 gazeta.ru##div[id^="rnet_gazeta_"]
+rambler.ru##div[style="display:none"] + div[style="width:100%;height:315px"]:empty
 www.rambler.ru##div[style="height:250px"]
 lenta.ru##iframe[src*="://audiosalute.lenta.ru/"]
 www.rambler.ru##svg ~ img[src]
