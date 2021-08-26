@@ -1336,20 +1336,26 @@ wtftime.ru#?#body:style(background-color: #f1f3f6 !important)
 xsport.ua#?#.site:style(margin-top: 0 !important)
 ! ---
 ! Yandex
+! афиша
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,afisha.yandex.uz#?#.content-event_commercial_yes:style(margin-top: auto !important)
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.ua,afisha.yandex.uz#?#div[class*="_tld_"][id^="uniq"]:empty:style(height: unset !important)
 ! ---
+! диск
+disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.ua,disk.yandex.uz##[target][class*="fullscreen-banner"]
+disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.ua,disk.yandex.uz##div[class^="direct-public"]
+! ---
+! карты
+yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.sidebar-container .search-advert-badge
+! ---
+! маркет
 market.yandex.by,market.yandex.kz,market.yandex.ru,market.yandex.ua,market.yandex.uz##div[data-zone-name="direct-ads-gallery"]
 ! ---
+! музыка
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,music.yandex.uz##body > div[style^="min-height"] > div[class][style="display: block;"]
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,music.yandex.uz#?#body.no-scroll:style(overflow: visible !important)
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,music.yandex.uz##div[class*="sidebar"] .no-ads
 ! ---
-newssearch.yandex.by,newssearch.yandex.kz,newssearch.yandex.ru,newssearch.yandex.ua,newssearch.yandex.uz##.mg-advert__column
-! ---
-! карты
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.sidebar-container .search-advert-badge
-!
+! тв
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,tv.yandex.uz###mount main > div[class^="content__"] > .content__main ~ div[class*="content__"] > *
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,tv.yandex.uz###mount main > div[class^="content__"] ~ div:not([class^="content__"]):not(.zen):not(.bread-crumbs) > *
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,tv.yandex.uz##.main-controller__grid-wrapper > [class*="grid_period_"] ~ * > *
@@ -1357,6 +1363,8 @@ tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,tv.yandex.uz##.page_controll
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,tv.yandex.uz##.zen
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,tv.yandex.uz##[class*="grid_period_"] > div[class] > div[class^="grid__"] ~ div:not([class^="grid__"])
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.ua,tv.yandex.uz##body > #mount > div[class] > :not(header):not(main):not(footer):not(.metrika-loader)
+! ---
+newssearch.yandex.by,newssearch.yandex.kz,newssearch.yandex.ru,newssearch.yandex.ua,newssearch.yandex.uz##.mg-advert__column
 ! ---
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.adv_pos_compare-bottom
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.adv_pos_compare-side
