@@ -1039,7 +1039,7 @@ yandex.*##div[class*="turbo-advert_type_"]
 yandex.*##div[class^="content "][data-bem] > .content__bottom ~ div[class*="card "]
 yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:first-child > div[class$="__content"] + div[class]
 yandex.*#?#.feed__row[id^="zen-row-"] .feed__item-wrap > .feed__item:-abp-has(.card-rtb-stub)
-yandex.*#?#.feed__row[id^="zen-row-"] .feed__item-wrap:-abp-has(> .feed__item .zen-ui-channel-info__subtitle-text:-abp-contains(промо))
+yandex.*#?#.feed__row[id^="zen-row-"] .feed__item-wrap:-abp-has(> .feed__item [class^="zen-ui-channel-info"][class$="subtitle-text"]:-abp-contains(промо))
 yandex.*#?#body > .serp_js_inited .serp-list > .serp-item:-abp-has(> div > h2 > [data-event-required])
 yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
 ||market.yandex.ru/widget/$empty,domain=zen.yandex.by|zen.yandex.kz|zen.yandex.ru|zen.yandex.ua|zen.yandex.uz
