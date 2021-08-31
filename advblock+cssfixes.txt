@@ -311,7 +311,6 @@ znanija.com##+js(abort-on-property-read, localStorage)
 ||m.mixadvert.com/show/$important,script
 ||mashintop.ru^$xmlhttprequest,badfilter,domain=mashintop.ru
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
-||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|
 ||paperdoc.ru^$xmlhttprequest,badfilter,domain=paperdoc.ru
 ||politros.com^$xmlhttprequest,badfilter,domain=politros.com
 ||pronpic.org^$third-party,badfilter
@@ -368,6 +367,8 @@ e.mail.ru,octavius.mail.ru##body:not(#id) > div[style*="position: absolute;"][st
 ||ad.mail.ru/vast/$image,script,xmlhttprequest,redirect-rule=empty
 ||cdn.viqeo.tv/js/vq_starter.js$third-party,domain=~dom.mail.ru|lifehacker.ru|mail.ru
 ||mail.ru/api-proxy/rb-mimic/
+||ok.ru/res/js/app/VideoEmbed_*.js|$script
+||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|
 ||pubapi.viqeo.tv^$domain=mail.ru|sportmail.ru
 ||pulse.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~pulse.mail.ru
 ||r.mradx.net/img/*.js|$empty,script
