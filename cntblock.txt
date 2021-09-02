@@ -904,7 +904,7 @@ _pagespeed_beacon?
 ||clck.yandex.ru^$~other
 ||mc.yandex.ru^
 ||metrika.yandex.$third-party
-||yabs.yandex.*/count/$third-party,domain=~yandex.by|~yandex.kz|~yandex.ru|~yandex.ua|~yandex.uz
+||yabs.yandex.ru/count/
 ||yandex.*/clck/
 ||yandex.ru/click/
 ||yandex.ru/metrika/
@@ -1128,6 +1128,8 @@ $removeparam=utm_medium
 $removeparam=utm_referrer
 $removeparam=utm_source
 $removeparam=utm_term
+$removeparam=yaclid
+$removeparam=yclid
 &clid=$document,removeparam=|clid,domain=yandex.*
 &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com
 &ymclid=$document,removeparam=|,domain=~ozon.onelink.me
