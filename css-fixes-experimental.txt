@@ -1498,7 +1498,6 @@ my.mail.ru##.l-app__left
 my.mail.ru##.l-app__right
 news.mail.ru,pogoda.mail.ru,sportmail.ru##.layout_footer > .block
 sportmail.ru#?#.layout_footer:style(margin-top: 20px !important)
-mail.ru##.mailbox-container ~ .horoscope ~ [class]
 mail.ru,sportmail.ru##.ph-balloon
 mail.ru##.ph-ext
 cloud.mail.ru#?#.public .b-layout__col_1_2:style(margin-right: auto !important)
@@ -1516,18 +1515,17 @@ mail.ru##body > .grid > div[class^="grid"][class*="__header"] > .toolbar
 mail.ru##body > .zeropixel ~ * .balloon
 mail.ru##body > .zeropixel ~ * .new-tgb-wrap
 mail.ru##body > .zeropixel ~ * .rectangle-banner
-mail.ru##body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class]
-mail.ru#?#body > .zeropixel ~ * .searchContainer ~ .tabs + div[class] > .grid__ccol:style(min-width: 640px !important)
-mail.ru##body > .zeropixel ~ * .searchContainer ~ .tabs + div[class] ~ div
-mail.ru#?#body > .zeropixel ~ * .searchContainer ~ .tabs + div[class]:style(min-width: 640px !important)
-mail.ru##body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name])
-mail.ru##body > .zeropixel ~ * .searchContainer ~ div > a.dmb
 mail.ru##body > .zeropixel ~ * .skeleton-tgb
 mail.ru#?#body > .zeropixel ~ * .tabs-content > :first-child > [class*="news-main"] > .news-main__img:style(max-width: unset !important; min-width: unset !important; height: 5em !important; width: 6.66em !important)
 mail.ru#?#body > .zeropixel ~ * .tabs-content > :first-child > [class*="news-main"] > .news-main__text-wrapper:style(max-height: 5em !important; white-space: pre-wrap !important)
 mail.ru#?#body > .zeropixel ~ * .tabs-content > :first-child > [class*="news-main"]:style(max-height: 5em !important; position: static !important)
 mail.ru##body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"]
 go.mail.ru##body > div[style^="z-index:"]
+mail.ru##body:not(.js-module) .horoscope ~ [class]
+mail.ru##body:not(.js-module) .searchContainer ~ div > a.dmb
+mail.ru#?#body:not(.js-module) .tabs + div[class] > .grid__ccol:style(min-width: 640px !important)
+mail.ru#?#body:not(.js-module) .tabs + div[class]:style(min-width: 640px !important)
+mail.ru##body:not(.js-module) .tabs-content ~ div > div:first-child:not([name])
 go.mail.ru##div[class^="Direct"]
 go.mail.ru##div[class^="RbSlot"]
 my.mail.ru##div[class^="app-adv-"]
