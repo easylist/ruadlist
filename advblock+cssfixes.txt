@@ -16,7 +16,7 @@
 *$image,redirect-rule=32x32.png,domain=ukr.net
 *$script,redirect-rule=noop.js,domain=otzovik.com|ukr.net
 *$subdocument,redirect-rule=noopframe,domain=ukr.net
-*$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.org|otzovik.com
+*$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.club|otzovik.com
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnneedtv.ru,cdnpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport7.biz,sportbar.biz,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,stream365.pro,telecdn.net,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
@@ -53,7 +53,7 @@
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 afisha.ru,film.ru##+js(remove-attr, autoplay|loop, video)
 agorov.org,animevost.am,animevost.org,animevost.site,doefiratv.info,payeer-gift.ru,smotret-anime-365.ru,turkish-tv-series.ru##+js(abort-on-property-read, document.oncontextmenu)
-all-episodes.org##+js(abort-on-property-read, advtss)
+all-episodes.club##+js(abort-on-property-read, advtss)
 allboxing.ru##+js(abort-current-inline-script, document.querySelector, open)
 amazinghis.ru,moj-pes.ru##+js(abort-on-property-read, anOptions)
 anidub.com,anidub.life,loveanime.live,myanime.online##+js(abort-on-property-read, adblock)
