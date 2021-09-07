@@ -387,10 +387,10 @@ news.mail.ru#?#div:-abp-has(> * > a[href*="t.mail.ru/redir"])
 news.mail.ru##div[article-item-type="conversionlink"]
 news.mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
 ! Облако
-cloud.mail.ru##.content__along > div[id]:not(#react-public-upload):not([title]):not([class]):not([data-classes])
-cloud.mail.ru##.public__content > div[id]:not(#react-public-upload):not([title]):not([class]):not([data-classes])
-cloud.mail.ru##.w-public__content > .b-layout div[id][class][style="width: 240px;"]
-@@||an.yandex.ru/system/context.js$domain=cloud.mail.ru
+cloud.mail.ru##.content__along > .content__row
+cloud.mail.ru##.public__content > .public__content__row
+cloud.mail.ru##.public_shove > div[class^="shove"][style^="background:"]
+cloud.mail.ru##[class*="content__noads"]
 ! Ответы
 @@||otvet.mail.ru^$generichide
 otvet.mail.ru##div[class*="wrapper"] > div[class^="block_"] > div:empty
