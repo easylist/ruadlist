@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210830.2239
+@version        0.20210909.433
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -316,6 +316,7 @@
   domain("1informer.com"),
   domain("fainaidea.com"),
   domain("housechief.ru"),
+  domain("itech.co.ua"),
   domain("root-nation.com") {
     html > body {
         cursor: default !important
@@ -369,6 +370,7 @@
   domain("business.ru"),
   domain("cxychet.ru"),
   domain("dirsalona.ru"),
+  domain("dzakupivli.com.ua"),
   domain("fd.ru"),
   domain("gazeta-unp.ru"),
   domain("gd.ru"),
@@ -420,6 +422,7 @@
   domain("business.ru"),
   domain("cxychet.ru"),
   domain("dirsalona.ru"),
+  domain("dzakupivli.com.ua"),
   domain("fd.ru"),
   domain("gazeta-unp.ru"),
   domain("gd.ru"),
@@ -690,7 +693,7 @@
     }
 }
 
-@-moz-document domain("all-episodes.org") {
+@-moz-document domain("all-episodes.club") {
     body {
         background-image: none !important
     }
@@ -790,6 +793,15 @@
     }
     .wrap > .popular {
         visibility: visible !important
+    }
+}
+
+@-moz-document domain("anime777.ru") {
+    .vsemayki-banner {
+        display: none !important
+    }
+    .need-friends {
+        margin-top: 125px !important
     }
 }
 
@@ -1287,9 +1299,6 @@
 }
 
 @-moz-document domain("cloud.mail.ru") {
-    [class*="public__content__noads"] {
-        display: none !important
-    }
     .public .b-layout__col_1_2 {
         margin-right: auto !important
     }
@@ -3048,18 +3057,17 @@
     .article__item_source_viqeo .article__container:before {
         content: initial !important
     }
-    #bubble-home, .grid__lcol_mailbox .horoscope ~ div, 
-    .mailbox-container ~ .horoscope ~ [class], .ph-ext, body > .grid .grid__rcol, 
-    body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
+    #bubble-home, .grid__lcol_mailbox .horoscope ~ div, .ph-ext, 
+    body > .grid .grid__rcol, body > .grid .news-item_tgb, 
+    body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .new-tgb-wrap, 
     body > .zeropixel ~ * .rectangle-banner, 
-    body > .zeropixel ~ * .searchContainer ~ .ssr-main ~ div[class] ~ div[class], 
-    body > .zeropixel ~ * .searchContainer ~ .tabs + div[class] ~ div, 
-    body > .zeropixel ~ * .searchContainer ~ [class] > .tabs-content ~ div > div:first-child:not([name]), 
-    body > .zeropixel ~ * .searchContainer ~ div > a.dmb, 
     body > .zeropixel ~ * .skeleton-tgb, 
-    body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"] {
+    body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
+    body:not(.js-module) .horoscope ~ [class], 
+    body:not(.js-module) .searchContainer ~ div > a.dmb, 
+    body:not(.js-module) .tabs-content ~ div > div:first-child:not([name]) {
         display: none !important
     }
     body > .zeropixel ~ * .tabs-content > :first-child > [class*="news-main"] {
@@ -3076,8 +3084,8 @@
         height: 5em !important;
         width: 6.66em !important
     }
-    body > .zeropixel ~ * .searchContainer ~ .tabs + div[class], 
-    body > .zeropixel ~ * .searchContainer ~ .tabs + div[class] > .grid__ccol {
+    body:not(.js-module) .tabs + div[class], 
+    body:not(.js-module) .tabs + div[class] > .grid__ccol {
         min-width: 640px !important
     }
 }
@@ -3305,7 +3313,7 @@
     }
 }
 
-@-moz-document domain("myseria.co") {
+@-moz-document domain("myseria.live") {
     .wrapper main {
         margin-top: 0 !important
     }
@@ -3890,6 +3898,10 @@
         min-height: 0 !important;
         height: auto !important
     }
+    #js_col_left > .l-sticky {
+        position: relative !important;
+        top: 0 !important
+    }
     .js-news-feed > .news-feed {
         position: relative !important;
         top: unset !important
@@ -3915,7 +3927,7 @@
 }
 
 @-moz-document domain("reshebnik.com") {
-    #message-error-page > p {
+    div[id*="-error-page"] > p {
         height: 0 !important;
         opacity: 0 !important
     }
@@ -4033,7 +4045,7 @@
 
 @-moz-document domain("sdamgia.ru") {
     .wrapper > div[class] > [style*="red;"][style*="font-size:"], 
-    div[style="height: 205px;margin: 0 auto;"] {
+    div[style^="height: 205px;"][style*="margin: 0 auto;"] {
         display: none !important
     }
     .PageLayout-Main > section ~ div[class*=" "] > div, 
@@ -4936,8 +4948,7 @@
 }
 
 @-moz-document domain("yandex.ru") {
-    div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section > div:not([class]) > div[class^="_"] ~ div[class^="_"] > div[class^="_"] ~ div > div:first-child, 
-    div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section div[class^="_"] > [data-id] + div[class^="_"]:not([data-id]) > div {
+    div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section > div:first-child + div div ~ div ~ div ~ div > div {
         min-height: 0 !important
     }
 }
