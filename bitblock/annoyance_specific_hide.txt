@@ -1466,6 +1466,9 @@ youla.ru#?#div[width="0.25"]:-abp-has(> div > a[href*=".com/"][href*="/app"][tit
 nashaplaneta.net##footer > a ~ p
 online.sberbank.ru#?#footer div + div:-abp-has([href*="/personal_policy"])
 ngnovoros.ru##footer div[class][style="color:#fff"] + div[class][style="color:#fff"] > div[class]:not([style])
+www.afisha.ru#?#footer div[style^="grid-column"]:-abp-has(> div > div > [alt="QR код для скачивания приложения Afisha"])
+www.afisha.ru#?#footer div[style^="grid-column"]:-abp-has(> div:empty)
+www.afisha.ru#?#footer div[style^="grid-column"]:-abp-has([class]:-abp-contains(/Рассылка|Подписаться/))
 distribution.pladform.ru##footer ~ div[class^="_"]:last-child
 itechua.com#?#h4:-abp-has(> span > a[href^="https://news.google.com/publications/"])
 libertycity.ru##header > div[class^="fon"]

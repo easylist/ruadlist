@@ -1409,6 +1409,7 @@ glavagronom.ru##div > a[href="https://www.facebook.com/GlavAgronom/"] ~ a
 fontanka.ru#?#div > article ~ div[class] > div:-abp-has(a[href*="share"])
 tengrinews.kz##div.tn-shared
 gorod24.online,kinovidos.com,print-post.com#?#div:-abp-has(> #vk_groups)
+www.afisha.ru#?#div:-abp-has(> .container-review-share)
 inter.ua#?#div:-abp-has(> .footer-social)
 barneos22.ru#?#div:-abp-has(> .soc1)
 4book.org#?#div:-abp-has(> .uSocial-Share)
@@ -1490,6 +1491,7 @@ forum.cxem.net##footer > .ipsLayout_container > noindex
 nova.rambler.ru##footer > div > ul + div
 hardwareluxx.ru#?#footer > h4:-abp-contains(Социальные сети)
 rambler.ru#?#footer div:-abp-has(> div > [data-blocks="vkontakte"])
+www.afisha.ru#?#footer div[style^="grid-column"]:-abp-has(> div > div > [href*="instagram"])
 yap.ru,yaplakal.com##form[method="POST"] + .row4[style="padding:6px;"][align="center"]
 footballtransfer.com.ua#?#h3:-abp-contains(Вконтакте)
 vse42.ru#?#h3:-abp-contains(Мы в соцсетях)
@@ -1498,6 +1500,7 @@ mignews.com,mignews.ru#?#h5:-abp-contains(Поделиться)
 novayagazeta.ru##header + div[class] div[style^="position: relative"]
 gordonua.com##header .icons
 kuban24.tv##header .icons > .search ~ [class]
+www.afisha.ru##header > div:first-child > div:first-child ~ div ~ div > div
 armeniasputnik.am,sputnik-abkhazia.info,sputnik-abkhazia.ru,sputnik-georgia.com,sputnik-georgia.ru,sputnik-news.ee,sputnik-ossetia.com,sputnik-ossetia.ru,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputnik.kz,sputnik.md,sputniknews-uz.com,sputniknews.cn,sputniknews.com,sputniknews.gr,sputniknews.lt,sputniknewslv.com##iframe[src*="/files/tgparser/"]
 me3.com.ua##iframe[src*="/plugins/likebox."]
 echo.msk.ru##iframe[src*="iconosquare.com"]
