@@ -349,20 +349,20 @@ drive2.com,drive2.ru##.c-dv-container
 drive2.com,drive2.ru##.c-pager + div[class]:last-child
 drive2.com,drive2.ru##.dv-post-header
 drive2.com,drive2.ru#?#.js-page > div[class$="-header"] + div[class] > div[class]:not([class*="column"]):first-child + div[class]:last-child:style(box-shadow: none !important)
-drive2.com,drive2.ru##.offer[itemtype="http://schema.org/Product"] + div
-drive2.com,drive2.ru##.offer[itemtype="http://schema.org/Product"] + div + div
-drive2.com,drive2.ru#?#[itemtype="http://schema.org/Review"] + div ~ div[class]:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
-drive2.com,drive2.ru#?#[itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
+drive2.com,drive2.ru##.offer[itemtype*="http://schema.org/Product"] + div
+drive2.com,drive2.ru##.offer[itemtype*="http://schema.org/Product"] + div + div
+drive2.com,drive2.ru#?#[itemtype*="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
+drive2.com,drive2.ru#?#[itemtype*="http://schema.org/Review"] + div ~ div[class]:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 drive2.com,drive2.ru##div[class$="content"] ~ div[data-role][data-target] + div
 drive2.com,drive2.ru##div[class*="--content article "] + div
 drive2.com,drive2.ru##div[class*="--content article "] + div + div:not(:last-child)
 drive2.com,drive2.ru##div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class]
 drive2.com,drive2.ru#?#div[class*="--content article "] + div ~ div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
-drive2.com,drive2.ru##div[itemtype="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class]
-drive2.com,drive2.ru#?#div[itemtype="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
-drive2.com,drive2.ru#?#div[itemtype="http://schema.org/BlogPosting"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
-drive2.com,drive2.ru##div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class]
-drive2.com,drive2.ru##div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div:not(:last-child)
+drive2.com,drive2.ru##div[itemtype*="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class]
+drive2.com,drive2.ru##div[itemtype*="http://schema.org/"] ~ div[data-role][data-target] + div:not(:last-child)
+drive2.com,drive2.ru##div[itemtype*="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class]
+drive2.com,drive2.ru#?#div[itemtype*="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
+drive2.com,drive2.ru#?#div[itemtype*="http://schema.org/BlogPosting"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 ! ---
 driveroff.net##body > #right
 driveroff.net#?#body > #right ~ .middle:style(margin-right: 4px !important)
