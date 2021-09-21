@@ -200,7 +200,7 @@ oboz.ua,obozrevatel.com##+js(remove-attr, class|style, .videoOfDay div[id^="vide
 obozrevatel.com##+js(remove-attr, autoplay, video)
 online-fix.me##body * * a[href*="://softmediya.ru/"]:style(height: 200px !important; margin-top: -180px !important; display: block !important; opacity: 0 !important; pointer-events: none !important)
 online-fix.me##body * * a[href][target="_blank"][rel="noopener noreferrer"]:style(height: 200px !important; margin-top: -180px !important; display: block !important; opacity: 0 !important; pointer-events: none !important)
-only-paper.ru##+js(no-setTimeout-if, disablePostLinks)
+only-paper.ru##+js(abort-current-script, $, decodeURIComponent)
 ontivi.net##+js(window.open-defuser, /trafficbass/)
 otzovik.com##+js(no-setTimeout-if, , 250)
 otzovik.com##+js(noeval-if, ShadowRoot)
