@@ -1120,6 +1120,7 @@ zen.yandex.*##div[class*="yandex-direct"]
 4pda.*##html[style] > body div[class$="-brand-header"]
 4pda.*#?#html[style] > body a.rounded[href][target="_blank"]:-abp-contains(/^Узнать больше/)
 ! анонс в мобильно-планшетной версии макета
+4pda.*##html[style] > body > script[src*="devapps.ru/"][src*=".js?_=0.9"] ~ * > [class][style*="zoom:"]
 4pda.*##html[style] > body > script[src*="devapps.ru/"][src*=".js?_=0.9"] ~ [class][style*="zoom:"]
 ! анонс в шапке форума
 4pda.*###go_1 > :not(p):not(h4):not(.globalmesscontent)
