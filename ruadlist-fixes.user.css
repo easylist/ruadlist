@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210909.433
+@version        0.20210926.1817
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -100,6 +100,7 @@
   domain("rezka.ag"),
   domain("rezkance.com"),
   domain("rezkery.com"),
+  domain("rezkify.com"),
   domain("rezkion.com"),
   domain("rufootballtv.org"),
   domain("rusporno.vip"),
@@ -224,6 +225,7 @@
   domain("rezka.ag"),
   domain("rezkance.com"),
   domain("rezkery.com"),
+  domain("rezkify.com"),
   domain("rezkion.com"),
   domain("roem.ru"),
   domain("rusporno.vip"),
@@ -1554,25 +1556,28 @@
         box-shadow: none !important
     }
     .c-dv-container, .c-pager + div[class]:last-child, .dv-post-header, 
-    .offer[itemtype="http://schema.org/Product"] + div, 
-    .offer[itemtype="http://schema.org/Product"] + div + div, 
+    .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child + div[class] ~ div:not(:last-child), 
+    .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"] + div, 
+    .offer[itemtype*="http://schema.org/Product"] + div, 
+    .offer[itemtype*="http://schema.org/Product"] + div + div, 
     div[class$="content"] ~ div[data-role][data-target] + div, 
     div[class*="--content article "] + div, 
     div[class*="--content article "] + div + div:not(:last-child), 
     div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class], 
-    div[itemtype="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class], 
-    div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class], 
-    div[itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div:not(:last-child) {
+    div[itemtype*="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class], 
+    div[itemtype*="http://schema.org/"] ~ div[data-role][data-target] + div:not(:last-child), 
+    div[itemtype*="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class] {
         display: none !important
     }
-    [itemtype^="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child:not(:only-child), 
+    .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"], 
+    [itemtype*="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child:not(:only-child), 
     div[class*="--content article "] + div ~ div:last-child > div:first-child:not(:only-child), 
-    div[itemtype="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child) {
+    div[itemtype*="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
     }
     .article ~ div:not(:last-child), 
-    [itemtype="http://schema.org/Review"] + div ~ div[class]:not(:last-child), 
-    div[itemtype="http://schema.org/BlogPosting"] ~ div:not(:last-child) {
+    [itemtype*="http://schema.org/Review"] + div ~ div[class]:not(:last-child), 
+    div[itemtype*="http://schema.org/BlogPosting"] ~ div:not(:last-child) {
         min-height: 0 !important;
         padding-top: unset !important;
         padding-bottom: unset !important;
@@ -2104,11 +2109,12 @@
         background-color: #303030 !important;
         background-image: none !important
     }
-    #header ~ div[style]:not([id]):not([class]) {
-        display: none !important
+    body > div[id] > div[id] {
+        background-image: none !important
     }
     #content.site-max-width {
-        margin-top: 0 !important
+        margin-top: 0 !important;
+        padding-top: 0 !important
     }
 }
 
@@ -2483,6 +2489,12 @@
     }
     .body_container {
         padding-bottom: unset !important
+    }
+}
+
+@-moz-document domain("ibigdan.livejournal.com") {
+    #page > .layout {
+        padding-top: 103px !important
     }
 }
 
@@ -4417,6 +4429,12 @@
     }
 }
 
+@-moz-document domain("torent-igruha.com") {
+    body > .header-menu-bg {
+        margin-bottom: 0 !important
+    }
+}
+
 @-moz-document domain("torrentinka.me") {
     .dwrp {
         margin-top: 0 !important
@@ -4663,6 +4681,12 @@
     }
     body > #layout-center {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("vp.rambler.ru") {
+    .eplayer-skin-buttons-center {
+        visibility: visible !important
     }
 }
 
