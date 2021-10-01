@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20210926.2241
+@version        0.20211001.1335
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4472,6 +4472,9 @@
 }
 
 @-moz-document domain("ts.kg") {
+    body {
+        background-color: inherit !important
+    }
     .main-container {
         margin-top: 0 !important
     }
