@@ -325,6 +325,8 @@ znanija.com##+js(abort-on-property-read, localStorage)
 ||strm.yandex.ru^$media,redirect=empty,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
 ||tele.ru^$xmlhttprequest,badfilter,domain=tele.ru
 ||teleprogramma.pro^$xmlhttprequest,badfilter,domain=teleprogramma.pro
+||ts.kg/olol*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=ts.kg
+||ts.kg/olol*.mp4$media,redirect=noop-0.1s.mp3
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|
 ||utarget.ru/check_geo/|$script,redirect=empty,domain=memepedia.ru
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=|,domain=112ua.tv|1news.com.ua|factor.ua|gamasexual.com|gamasexual.ru|igromania.ru|kanobu.ru|newsoneua.tv|sledcom.ru|zikua.tv
