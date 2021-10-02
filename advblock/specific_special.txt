@@ -756,7 +756,7 @@ rambler.ru##.article__read-also
 lenta.ru##.b-board__brand-logo
 lenta.ru##.b-board__coef
 lenta.ru##.b-header-inner__banner
-gazeta.ru##.b_rightcol > div[style*="position:"][style*="relative;"][style*="height:"]
+gazeta.ru##.b_rightcol > div:not([style*="position:"][style*="relative;"][style*="height:"]) + div[style*="position:"][style*="relative;"][style*="height:"]
 gazeta.ru,quto.ru##.banner
 rambler.ru##.banner--container
 championat.com##.banner-parallax
