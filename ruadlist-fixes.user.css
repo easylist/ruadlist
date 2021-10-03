@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211001.1335
+@version        0.20211004.132
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -252,7 +252,6 @@
   domain("utorrentfilmi.com"),
   domain("utorrentfilmi.org"),
   domain("vc.ru"),
-  domain("videoclub.men"),
   domain("virusinfo.info"),
   domain("vse-sezony.cc"),
   domain("wikianime.tv"),
@@ -1679,9 +1678,6 @@
 }
 
 @-moz-document domain("echo.msk.ru") {
-    div[style^="padding:"][style*="px 0px 0px;"] {
-        display: none !important
-    }
     .first[id][style*="height"] {
         height: auto !important
     }
