@@ -130,6 +130,32 @@ www.avito.ru##div[class^="template_serp_"]
 ||criteo.net^$domain=avito.ru
 ||taboola.com^$domain=avito.ru
 !
+! Эхо Москвы
+! исходный макет
+echo.msk.ru###comments-ad
+echo.msk.ru###sound_ad
+echo.msk.ru##.ad-silverrain
+echo.msk.ru##.bannerBlock
+echo.msk.ru##aside > div[class^="ad iblock"] ~ br
+echo.msk.ru##aside > div[class^="ad iblock"]:nth-of-type(-n+7)
+echo.msk.ru##div[class][style^="overflow: visible"]
+echo.msk.ru##div[class^="ad iblock"][id]
+echo.msk.ru##div[style^="padding:"][style*=" 0px 0px;"]
+! обфусцированный макет
+echo.msk.ru##[class$="-svoboda"]
+echo.msk.ru##[data-container]
+echo.msk.ru##[data-relap-id]
+echo.msk.ru##[role]:not([id]) > div[class] > [class*=" "] > [id]
+echo.msk.ru##[role]:not([id]) > div[class] > [class*=" "] > div:nth-of-type(-n+7)
+echo.msk.ru#?#div:-abp-has(> [id*="svoboda"])
+echo.msk.ru#?#div:-abp-has(> span > script:-abp-contains(trk=))
+echo.msk.ru##div[class][id] ~ span > br
+echo.msk.ru##div[style*="!important; "][style$=" !important;"]
+echo.msk.ru##div[style="width:236px;height:100px;"][id]
+echo.msk.ru##iframe[src*="echomsk.static-storage.net"]
+echo.msk.ru#?#section:-abp-has(> span > script:-abp-contains(trk=))
+echo.msk.ru#?#span:-abp-contains(/новости партнеров/i)
+!
 ! Checkadblock (adblock-tester.com) - портфолио веб-мастера, выдаваемое за тест
 $third-party,image,script,xmlhttprequest,domain=adblock-tester.com|checkadblock.ru
 /banners/*$domain=adblock-tester.com|checkadblock.ru
