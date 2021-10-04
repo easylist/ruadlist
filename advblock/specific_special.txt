@@ -148,12 +148,11 @@ echo.msk.ru##[data-relap-id]
 echo.msk.ru##[role]:not([id]) > div[class] > [class*=" "] > [id]
 echo.msk.ru##[role]:not([id]) > div[class] > [class*=" "] > div:nth-of-type(-n+7)
 echo.msk.ru#?#div:-abp-has(> [id*="svoboda"])
-echo.msk.ru#?#div:-abp-has(> span > script:-abp-contains(trk=))
 echo.msk.ru##div[class][id] ~ span > br
 echo.msk.ru##div[style*="!important; "][style$=" !important;"]
 echo.msk.ru##div[style="width:236px;height:100px;"][id]
 echo.msk.ru##iframe[src*="echomsk.static-storage.net"]
-echo.msk.ru#?#section:-abp-has(> span > script:-abp-contains(trk=))
+echo.msk.ru##span > script:first-child + section
 echo.msk.ru#?#span:-abp-contains(/новости партнеров/i)
 !
 ! Checkadblock (adblock-tester.com) - портфолио веб-мастера, выдаваемое за тест
