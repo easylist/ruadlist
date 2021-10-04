@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211004.1219
+@version        0.20211005.117
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3863,6 +3863,11 @@
     [data-blocks] div[class]:empty, [data-blocks^="cluster_"] > div:empty ~ div, 
     div[style="order:-1"] > div > div {
         min-height: 0 !important
+    }
+    #bigColumn + div[class] > div:first-child + div > div > div:first-child + div div, 
+    [data-blocks="top_news_block"] > div:first-child + div > div div {
+        min-height: 0 !important;
+        border-bottom: unset !important
     }
     #bigColumn script + div[class] > div[style^="height"] > div {
         position: initial !important;
