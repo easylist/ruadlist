@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211004.132
+@version        0.20211004.1219
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4358,6 +4358,12 @@
     body > #td-outer-wrap {
         pointer-events: none !important;
         cursor: auto !important
+    }
+}
+
+@-moz-document domain("teleprogramma.pro") {
+    iframe[src*="://cdn.viqeo.tv/embed/"] {
+        width: inherit !important
     }
 }
 
