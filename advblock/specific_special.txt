@@ -207,6 +207,7 @@ gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru,gismeteo.ua##[id^="weather-gis-n
 /^https?://www\.gismeteo\.ru\/maps\/(?!radar\/settings\/)/$xmlhttprequest,domain=www.gismeteo.ru
 !
 ! Новый дизайн gismeteo.ru, gismeteo.kz, gismeteo.by, beta.gismeteo.ru, gismeteo.ua, gismeteo.md
+gismeteo.by##.column2 > .section-rss
 www.gismeteo.ru##.follow-zen
 beta.gismeteo.ru,gismeteo.ua,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##.frame_border
 beta.gismeteo.ru,gismeteo.ua,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##.media_with_map > :not(.map_right)
@@ -220,11 +221,9 @@ beta.gismeteo.ru,gismeteo.lt,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md##.x
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##.xby400
 beta.gismeteo.ru,gismeteo.lt,gismeteo.lv,gismeteo.ua,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##[class^="media_"]:not(.media_with_map)
 gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##body > .media_top
-gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md#?#body[class*="-"] div:-abp-has(> div > div > div[id] ~ span script:-abp-contains(atob))
-beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru#?#div:-abp-has(> div > div[data-type="default"] > div a[href*="/ref/?url="])
-beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru#?#div:-abp-has(> div > div[data-type="rbc"])
+beta.gismeteo.ru,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru#?#div:-abp-has(> div > div[data-type="default"] > div a[href*="/ref/?url="])
+beta.gismeteo.ru,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru#?#div:-abp-has(> div > div[data-type="rbc"])
 gismeteo.ru##section > .feed-bg
-||ainads.ru^$third-party,domain=gismeteo.by|gismeteo.kz|gismeteo.md|gismeteo.ru
 !
 ! Kino-live
 $third-party,script,xmlhttprequest,domain=kino-live2.org|kino-live8.biz
