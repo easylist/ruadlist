@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211005.117
+@version        0.20211006.1215
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3195,6 +3195,16 @@
 @-moz-document domain("mirkino.club") {
     body > header {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("mirvracha.ru") {
+    [class*="LayoutGuest_blur__"] {
+        -webkit-filter: none !important;
+        filter: none !important
+    }
+    .mobile-registration-form, [class*="LayoutGuest_blur__"]:before {
+        display: none !important
     }
 }
 
