@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211006.1405
+@version        0.20211008.1808
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4907,6 +4907,9 @@
     }
     div[style^="padding-bottom:"] > div {
         height: unset !important
+    }
+    main > div[class] {
+        min-height: 0 !important
     }
 }
 
