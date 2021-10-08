@@ -151,8 +151,8 @@ echo.msk.ru##div[class][id] ~ span > br
 echo.msk.ru##div[style*="!important; "][style$=" !important;"]
 echo.msk.ru##div[style="width:236px;height:100px;"][id]
 echo.msk.ru##iframe[src*="echomsk.static-storage.net"]
-echo.msk.ru##span > script:first-child + span > div:first-child
 echo.msk.ru#?#span:-abp-contains(/новости партнеров/i)
+echo.msk.ru##style ~ script + span > div:first-child
 !
 ! Checkadblock (adblock-tester.com) - портфолио веб-мастера, выдаваемое за тест
 $third-party,image,script,xmlhttprequest,domain=adblock-tester.com|checkadblock.ru
