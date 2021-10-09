@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211009.2326
+@version        0.20211010.16
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -308,7 +308,7 @@
   domain("tolyatty.ru"),
   domain("ufa1.ru"),
   domain("v1.ru") {
-    .right-column-container > .right-column > div {
+    .right-column-container > .right-column > div, noindex > div[class]:empty {
         height: auto !important
     }
 }
