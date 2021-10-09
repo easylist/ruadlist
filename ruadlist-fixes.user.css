@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211009.1300
+@version        0.20211009.2156
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -606,9 +606,7 @@
 @-moz-document
   domain("agorov.org"),
   domain("animevost.am"),
-  domain("animevost.org"),
-  domain("animevost.site"),
-  domain("smotret-anime-365.ru") {
+  domain("animevost.org") {
     div[class^="headbg"] {
         background-image: none !important;
         height: auto !important
@@ -2987,6 +2985,7 @@
 }
 
 @-moz-document domain("liveinternet.ru") {
+    [class*="header"] ~ .float100 ~ div > div ~ *, 
     script + div[id] > div[style="min-width: 100%;"] {
         display: none !important
     }
