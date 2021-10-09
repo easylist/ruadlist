@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211008.1808
+@version        0.20211009.1300
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2983,6 +2983,12 @@
   domain("livesport.ru") {
     .content {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("liveinternet.ru") {
+    script + div[id] > div[style="min-width: 100%;"] {
+        display: none !important
     }
 }
 
