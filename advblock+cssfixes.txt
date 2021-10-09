@@ -136,6 +136,7 @@ gdespaces.com,spac.me,spac1.com,spac1.me,spac1.net,spaces-blogs.com,spaces.im,st
 gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,gdzputina.ru,megaresheba.com,megaresheba.ru,resheba.me,spishi.fun,zoobrilka.net##+js(set-constant, app.book.external, null)
 gfycat.com##+js(remove-attr, autoplay, video, stay)
 gidonline.eu,kinogo.eu##+js(abort-on-property-read, target_script)
+gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 glav.su##+js(abort-on-property-read, abd)
 glavagronom.ru##div:not([id]):not([class]):has(> div + div + section + section) > div:first-child + div > div:only-child > div:first-child + div:last-child
 gorodrabot.ru##+js(abort-on-property-read, Object.prototype.ShadyDOM)
@@ -408,17 +409,3 @@ www.ukr.net##.fixed-block > div[class] ~ div:not(#id):style(display: block !impo
 www.ukr.net##a[href][id$="op"][style]:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##body > .advert
 www.ukr.net##div[class^="fuel-"][class$="-banner"]:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-!
-! Гисметео
-gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
-beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##body[class*="-ru"] div[class]:has(:scope > div:not([id]):not([class]) > div[id]:not([class]) ~ script)
-!
-/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
-/^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
-!
-/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,badfilter,domain=gismeteo.md
-/^https?://www\.gismeteo\.md/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.md
-!
-/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|inform-service\/|api\/v\d{1}\/search/|maps\/|mq\/articles\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
-/^https?://www\.gismeteo\.ru/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.ru
-/^https?://www\.gismeteo\.ru\/maps\/(?!radar\/settings\/)/$xmlhttprequest,badfilter,domain=www.gismeteo.ru

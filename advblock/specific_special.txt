@@ -162,6 +162,7 @@ adblock-tester.com,checkadblock.ru##object,embed
 ||checkadblock.ru^$csp=script-src 'self'
 !
 ! GISMeteo domains
+! Старый дизайн
 gismeteo.md,gismeteo.ru###rbc
 gismeteo.ua###w-hor
 gismeteo.lt###weather-alfa
@@ -179,29 +180,6 @@ gismeteo.ru,gismeteo.ua,www.gismeteo.by##.side__i
 gismeteo.ru##.yandex_dzen_tiser_news
 @@||a.votpusk.ru^$image,domain=tourism.gismeteo.ru
 gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru,gismeteo.ua##[id^="weather-gis-news"]
-!
-! Исключения для детектора
-@@||an.yandex.ru/system/context.js|$domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
-@@||beta.gismeteo.ru^$generichide
-@@||gaby.hit.gemius.pl/fpdata.js|$xmlhttprequest,domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
-@@||static-mon.yandex.net/static/main.js$xmlhttprequest,domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
-@@||www.gismeteo.by^$generichide
-@@||www.gismeteo.kz^$generichide
-@@||www.gismeteo.md^$generichide
-@@||www.gismeteo.ru^$generichide
-@@||yastatic.net/pcode/adfox/header-bidding.js|$domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
-@@||yastatic.net/pcode/adfox/loader.js|$domain=beta.gismeteo.ru|www.gismeteo.by|www.gismeteo.kz|www.gismeteo.md|www.gismeteo.ru
-!
-! Ловушка для обфусцированных запросов, если исключения обошли
-/^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,domain=beta.gismeteo.ru
-/^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,domain=beta.gismeteo.ru
-!
-/^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,domain=gismeteo.md
-/^https?://www\.gismeteo\.md/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,domain=www.gismeteo.md
-!
-/^https?://www\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|inform-service\/|api\/v\d{1}\/search/|maps\/|mq\/articles\/)/$xmlhttprequest,domain=www.gismeteo.ru
-/^https?://www\.gismeteo\.ru/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,domain=www.gismeteo.ru
-/^https?://www\.gismeteo\.ru\/maps\/(?!radar\/settings\/)/$xmlhttprequest,domain=www.gismeteo.ru
 !
 ! Новый дизайн gismeteo.ru, gismeteo.kz, gismeteo.by, beta.gismeteo.ru, gismeteo.ua, gismeteo.md
 gismeteo.by,gismeteo.kz##.column2 > .section-rss
