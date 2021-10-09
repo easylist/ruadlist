@@ -416,9 +416,6 @@ beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 /^https?://beta\.gismeteo\.ru/\api\/informer\/[^\s]{70,}/$xmlhttprequest,badfilter,domain=beta.gismeteo.ru
 !
-/^https?://www\.gismeteo\.kz/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/|news\/resource\/)/$xmlhttprequest,badfilter,domain=gismeteo.kz
-/^https?://www\.gismeteo\.kz/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.kz
-!
 /^https?://www\.gismeteo\.md/(?!ajax\/|api\/informer\/getconstructorinformer\/|api\/v\d{1}\/geoip/$|api\/v\d{1}\/search/|maps\/)/$xmlhttprequest,badfilter,domain=gismeteo.md
 /^https?://www\.gismeteo\.md/\api\/informer\/getconstructorinformer\/[^\s]{40,}/$xmlhttprequest,badfilter,domain=www.gismeteo.md
 !
