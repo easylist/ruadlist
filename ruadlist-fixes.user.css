@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211010.136
+@version        0.20211010.1659
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -267,7 +267,6 @@
 
 @-moz-document
   domain("116.ru"),
-  domain("mosk.ru"),
   domain("14.ru"),
   domain("161.ru"),
   domain("164.ru"),
@@ -294,6 +293,7 @@
   domain("93.ru"),
   domain("e1.ru"),
   domain("mgorsk.ru"),
+  domain("mosk.ru"),
   domain("ngs.ru"),
   domain("ngs22.ru"),
   domain("ngs24.ru"),
@@ -2064,6 +2064,15 @@
   domain("leninsw.info") {
     .adsbygoogle {
         max-height: 6px !important
+    }
+}
+
+@-moz-document domain("freetp.org") {
+    .menu ul li a {
+        height: auto !important
+    }
+    .menu > li[style^="padding-left:"] {
+        padding-left: unset !important
     }
 }
 
