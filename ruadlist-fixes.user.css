@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211011.1311
+@version        0.20211011.1513
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1553,32 +1553,30 @@
 @-moz-document
   domain("drive2.com"),
   domain("drive2.ru") {
-    .js-page > div[class$="-header"] + div[class] > div[class]:not([class*="column"]):first-child + div[class]:last-child {
-        box-shadow: none !important
-    }
     .c-dv-container, .c-pager + div[class]:last-child, .dv-post-header, 
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child + div[class] ~ div:not(:last-child), 
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"] + div, 
     .offer[itemtype*="http://schema.org/Product"] + div, 
     .offer[itemtype*="http://schema.org/Product"] + div + div, 
-    div[class$="content"] ~ div[data-role][data-target] + div, 
     div[class*="--content article "] + div, 
     div[class*="--content article "] + div + div:not(:last-child), 
     div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class], 
-    div[itemtype*="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child + div[class], 
-    div[itemtype*="http://schema.org/"] ~ div[data-role][data-target] + div:not(:last-child), 
-    div[itemtype*="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class] {
+    div[itemtype*="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class], 
+    div[itemtype*="http://schema.org/Product"] ~ div:last-child > div:first-child + div[class], 
+    div[itemtype*="http://schema.org/Review"] ~ div:last-child > div:first-child + div[class] {
         display: none !important
     }
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"], 
-    [itemtype*="http://schema.org/"] ~ div[data-role][data-target] + div ~ div:last-child > div:first-child:not(:only-child), 
     div[class*="--content article "] + div ~ div:last-child > div:first-child:not(:only-child), 
-    div[itemtype*="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child) {
+    div[itemtype*="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child), 
+    div[itemtype*="http://schema.org/Product"] ~ div:last-child > div:first-child:not(:only-child), 
+    div[itemtype*="http://schema.org/Review"] ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
     }
-    .article ~ div:not(:last-child), 
-    [itemtype*="http://schema.org/Review"] + div ~ div[class]:not(:last-child), 
-    div[itemtype*="http://schema.org/BlogPosting"] ~ div:not(:last-child) {
+    .js-page > div[class$="-header"] + div[class] > div[class$="content"] + div + div[class]:last-child, 
+    div[itemtype*="http://schema.org/BlogPosting"] ~ div:not(:last-child), 
+    div[itemtype*="http://schema.org/Product"] ~ div:not(:last-child), 
+    div[itemtype*="http://schema.org/Review"] ~ div:not(:last-child) {
         min-height: 0 !important;
         padding-top: unset !important;
         padding-bottom: unset !important;
