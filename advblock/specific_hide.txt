@@ -3611,6 +3611,9 @@ pickupforum.ru#?#.post_wrap:-abp-has(> #post_body_b)
 setup.pp.ua##.postabove
 paparazzi.ru##.poster > .poster-content + p
 agrotimes.ua##.poster-modal
+denzadnem.com.ua##.postmeta-primary ~ .hr1[style="border-bottom-color:#eee"]
+denzadnem.com.ua#?#.postmeta-primary ~ [class^="subhead-"] ~ div:-abp-has(> div > script)
+denzadnem.com.ua#?#.postmeta-primary ~ [class^="subhead-"]:-abp-contains(/партнер/i)
 anadyr.org#?#.posts-container > .card:-abp-has(> div > [id^="yandex_rtb_"])
 anadyr.org#?#.posts-container > .card:-abp-has(> iframe[src*="/banners/"])
 the-village.com.ua,the-village.me,the-village.ru##.posts-sidebar
