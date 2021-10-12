@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211011.1513
+@version        0.20211012.1227
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1558,6 +1558,7 @@
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"] + div, 
     .offer[itemtype*="http://schema.org/Product"] + div, 
     .offer[itemtype*="http://schema.org/Product"] + div + div, 
+    div[class$="content"] ~ div[data-role][data-target] + div, 
     div[class*="--content article "] + div, 
     div[class*="--content article "] + div + div:not(:last-child), 
     div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class], 
@@ -1573,7 +1574,6 @@
     div[itemtype*="http://schema.org/Review"] ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
     }
-    .js-page > div[class$="-header"] + div[class] > div[class$="content"] + div + div[class]:last-child, 
     div[itemtype*="http://schema.org/BlogPosting"] ~ div:not(:last-child), 
     div[itemtype*="http://schema.org/Product"] ~ div:not(:last-child), 
     div[itemtype*="http://schema.org/Review"] ~ div:not(:last-child) {
