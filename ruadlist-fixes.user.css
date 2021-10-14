@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211013.1811
+@version        0.20211014.2159
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4342,7 +4342,7 @@
 
 @-moz-document domain("stratege.ru") {
     #vbulletin_html > body > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
-    html.home body > div[class]:not([class*="-"])[id*="-"], 
+    html.home div[class*="-"][id*="-"] > div[class]:not([class*="-"])[id*="-"], 
     html.home div[class*="-"][id*="-"] > div[class]:not([class*="-"])[id*="-"] {
         background-image: none !important;
         background-color: #dbdbdb !important
@@ -4352,7 +4352,7 @@
     html.home #wrapper > #content > :not(div), 
     html.home #wrapper > #content > [id]:empty, 
     html.home #wrapper > #content ~ :not(#footer), html.home .tlpf_info_box, 
-    html.home div > img[src*="://ad.adriver.ru/"] ~ style + [id]:not(#wrapper), 
+    html.home div[class*="-"][id*="-"] > div[class]:not([class*="-"])[id*="-"] > img[src] ~ style + [id]:not(#wrapper), 
     html.home div[class][id$="_content"] > div:not([id]):not([class]) > [class^="alelt_"][class$="_info"] {
         display: none !important
     }
