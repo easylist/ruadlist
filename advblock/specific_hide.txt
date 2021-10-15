@@ -7227,7 +7227,7 @@ sftv.ru##script[src*="iwantyourpromo.com"] ~ div[align="center"]
 megaimg.ru##script[src^="http://am10.ru/"] + center
 car72.ru##section > .container-fluid > div[style^="width:"][style$="%"]
 fontanka.ru#?#section > div > :not(article) div:-abp-has(> div > [id^="adfox_"])
-fontanka.ru#?#section div:-abp-has(> div[class] > div[id^="div-gpt-ad-"])
+fontanka.ru#?#section noindex ~ div div:-abp-has(> div[class] > div[id^="div-gpt-ad-"])
 superdom.ua#?#section:-abp-has(> h2:-abp-contains(/новости партн/i))
 bbc.com##section[aria-label^="Реклама"]
 vikka.ua##section[id^="ctup_ads-"]
