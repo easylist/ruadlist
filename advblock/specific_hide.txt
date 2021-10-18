@@ -7381,7 +7381,6 @@ yakusubstudio.forum2x2.ru##td[valign="top"][width="100%"] > table[class^="foruml
 bigfangroup.org,freebfg.org#?#td[valign="top"][width="155"] > table:-abp-has(div[id*="Composite"])
 bigfangroup.org,freebfg.org#?#td[valign="top"][width="155"] > table:-abp-has(div[id^="bn_"])
 oru.ru##td[width="10"] + td[width="260"]:last-child
-mirknig.su#?#td[width="100%"] > table[width="100%"]:-abp-has(noindex > .adsbygoogle)
 anchem.ru##td[width="100%"][align="center"] > a[href] > img
 stulchik.net##td[width="120"][valign="top"] a[href][target="_blank"]
 lada-granta.net,lkforum.ru##td[width="150"][align="right"][valign="top"]
@@ -7396,8 +7395,9 @@ grinkod.spb.ru#?#td[width="210"] > center > table:-abp-has(center > b:-abp-conta
 freezpic.ru##td[width="210"][align="left"]
 www.ruhim.ru##td[width="231"][height="100"]
 rlocman.ru##td[width="240"] > table[class="tab-right"]
-mirknig.su#?#td[width="240"] > table[width="240"]:-abp-has(noindex > .adsbygoogle)
+mirknig.su#?#td[width="240"] > table[width="240"] ~ table[width="240"]:-abp-has(noindex > .adsbygoogle)
 media-online.ru##td[width="240"] a[href^="go.php3?id="]
+mirknig.su##td[width="240"] ~ td[width="100%"] > table[width="100%"][align="center"]
 radiodacha.ru##td[width="240"][valign="top"] > div[style="height: 250px;"]
 liveinternet.ru##td[width="240"][valign="top"] > p ~ *
 hitline.org.ua##td[width="245"][align="left"][valign="top"] > div[style^="height:"]
