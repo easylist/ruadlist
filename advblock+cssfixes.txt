@@ -50,6 +50,7 @@
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||studizba.com^$generichide,badfilter
 @@||utarget.ru/check_geo/|$script,badfilter,domain=memepedia.ru
+@@||videoroll.net/js/vid_vpaut_script.js|$script,domain=online-fix.me
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 afisha.ru,film.ru##+js(remove-attr, autoplay|loop, video, stay)
 agorov.org,animevost.am,animevost.org,animevost.site,doefiratv.info,payeer-gift.ru,smotret-anime-365.ru,turkish-tv-series.ru##+js(abort-on-property-read, document.oncontextmenu)
@@ -203,7 +204,6 @@ newdeaf.vip##+js(addEventListener-defuser, contextmenu, preventDefault)
 nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(addEventListener-defuser, load, appendChild)
 oboz.ua,obozrevatel.com##+js(remove-attr, class|style, .videoOfDay div[id^="video_"][id$="-float-container"], stay)
 obozrevatel.com##+js(remove-attr, autoplay, video)
-online-fix.me##+js(no-setInterval-if, document.cookie.match)
 online-fix.me##body * * a[href][target="_blank"][rel="noopener noreferrer"]:style(height: 200px !important; margin-top: -180px !important; display: block !important; opacity: 0 !important; pointer-events: none !important)
 ontivi.net##+js(window.open-defuser, /trafficbass/)
 otzovik.com##+js(no-setTimeout-if, , 250)
