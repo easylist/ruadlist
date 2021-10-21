@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211016.2002
+@version        0.20211021.2145
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -135,7 +135,6 @@
   domain("bombardir.ru"),
   domain("clubhdrezka.com"),
   domain("cokinopoisk.com"),
-  domain("comedy-portal.net"),
   domain("dnepr.info"),
   domain("drhdrezka.com"),
   domain("dugtor.org"),
@@ -1681,11 +1680,14 @@
 }
 
 @-moz-document domain("echo.msk.ru") {
+    .abcd, .cREWUr {
+        display: none !important
+    }
     .first[id][style*="height"] {
         height: auto !important
     }
-    div[id]:empty {
-        min-height: 0 !important;
+    div[id] {
+        min-height: 0 !important
     }
 }
 
@@ -3355,7 +3357,9 @@
     }
 }
 
-@-moz-document domain("myseria.live") {
+@-moz-document
+  domain("myseason.club"),
+  domain("myseria.live") {
     .wrapper main {
         margin-top: 0 !important
     }
