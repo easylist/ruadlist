@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211021.2145
+@version        0.20211023.2119
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1320,7 +1320,8 @@
 
 @-moz-document
   domain("cont.ws"),
-  domain("kraj.by") {
+  domain("kraj.by"),
+  domain("profile.ru") {
     body.modal-open > [class^="modal"] {
         display: none !important
     }
@@ -4973,7 +4974,9 @@
     .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
     .mini-suggest__item > a[href^="http://"], 
     .serp-item div[class*="advanced-polaroid"], .serp-list > .incut > .direct, 
-    .sidebar-container .search-advert-badge, .turbo-advert__loader, 
+    .sidebar-container .search-advert-badge, 
+    .sport-app__layout > .mg-grid__col:first-child + div:not(:last-child) > .mg-sticky, 
+    .turbo-advert__loader, 
     body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
     body > .route-tip-view, 
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
