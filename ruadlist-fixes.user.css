@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211024.2117
+@version        0.20211026.1256
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -85,9 +85,6 @@
   domain("myhdrezka.com"),
   domain("newstudio.tv"),
   domain("nexthdrezka.com"),
-  domain("nnm-club.me"),
-  domain("nnmclub.ro"),
-  domain("nnmclub.to"),
   domain("nootropos.ru"),
   domain("nuhdrezka.com"),
   domain("nukinopoisk.com"),
@@ -1939,14 +1936,16 @@
   domain("footboom.by"),
   domain("footboom.com"),
   domain("footboom.kz") {
-    a[href*="/betting"]:not(#id) {
+    div[class^="b-betting"]:not(#id) {
         display: block !important;
         position: fixed !important;
         top: -10000px !important;
         left: -10000px !important
     }
-    .b-sw__table, .bet-informer__widget, .bonus-bk, .bookie-rating, 
-    .bookmakers-game, .m-special, .match-action {
+    .b-news-open__tags + style[id] + div, 
+    .b-page__right-col > .m-special + style[id] + div, .b-sw__table, .bonus-bk, 
+    .m-special, .mc_match a[href*="/betting"], footer a[href*="/betting"], 
+    header a[href*="/betting"] {
         display: none !important
     }
 }
@@ -3511,6 +3510,9 @@
   domain("nnm-club.me"),
   domain("nnmclub.ro"),
   domain("nnmclub.to") {
+    body {
+        background: none !important
+    }
     body > .wrap {
         top: 0 !important
     }
