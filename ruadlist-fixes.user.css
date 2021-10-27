@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211027.1642
+@version        0.20211027.2231
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -601,24 +601,6 @@
 }
 
 @-moz-document
-  domain("agorov.org"),
-  domain("animevost.am"),
-  domain("animevost.org") {
-    div[class^="headbg"] {
-        background-image: none !important;
-        height: auto !important
-    }
-    div[class^="headbg"] > .menu .sar {
-        bottom: auto !important;
-        top: 50px !important;
-        z-index: 100 !important
-    }
-    div[class^="headbg"] > .menu {
-        top: 0 !important
-    }
-}
-
-@-moz-document
   domain("agronews.ua"),
   domain("volyninfo.com") {
     html > body {
@@ -860,6 +842,24 @@
   domain("kinokong.org") {
     #wrapper {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("animevost.am"),
+  domain("animevost.org"),
+  domain("vost.pw") {
+    div[class^="headbg"] {
+        background-image: none !important;
+        height: auto !important
+    }
+    div[class^="headbg"] > .menu .sar {
+        bottom: auto !important;
+        top: 50px !important;
+        z-index: 100 !important
+    }
+    div[class^="headbg"] > .menu {
+        top: 0 !important
     }
 }
 
