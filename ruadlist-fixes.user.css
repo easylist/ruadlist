@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211026.1256
+@version        0.20211027.1642
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1155,7 +1155,9 @@
     }
 }
 
-@-moz-document domain("buh24.com.ua") {
+@-moz-document
+  domain("buh24.com.ua"),
+  domain("ppt.ru") {
     body > div[class^="mfp-"] {
         display: none !important
     }
