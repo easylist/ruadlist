@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211029.1238
+@version        0.20211030.1838
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4931,16 +4931,17 @@
 }
 
 @-moz-document domain("www.rambler.ru") {
-    div[style^="height:"][style*="300px"], div[style^="height:"][style*="600px"] {
+    div[style*="height:"][style*="300px"], div[style*="height:"][style*="600px"] {
         background-color: transparent !important
     }
     div[style*="margin-bottom"] > div[style^="height:"] {
         height: auto !important
     }
     div[style^="padding-bottom:"] > div {
-        height: unset !important
+        height: unset !important;
+        min-height: 0 !important
     }
-    main > div[class] {
+    div[style^="min-height:"], main > div[class] {
         min-height: 0 !important
     }
 }
