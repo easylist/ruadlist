@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211031.1447
+@version        0.20211031.2252
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3596,6 +3596,12 @@
 @-moz-document domain("ohotniki.ru") {
     .adv-banner__right {
         min-height: 0 !important
+    }
+}
+
+@-moz-document domain("online-fix.me") {
+    .quote a.btn {
+        pointer-events: auto !important
     }
 }
 
