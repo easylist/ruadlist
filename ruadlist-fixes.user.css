@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211030.1838
+@version        0.20211031.1422
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3135,6 +3135,19 @@
     #video-footer, .ph-balloon, .pulse-lenta, 
     a[id^="tb-"][class^="tb-"][target="_blank"], div[data-mp*="LazyPulse"] {
         display: none !important
+    }
+}
+
+@-moz-document
+  domain("mail.yandex.by"),
+  domain("mail.yandex.com"),
+  domain("mail.yandex.kz"),
+  domain("mail.yandex.ru"),
+  domain("mail.yandex.ua"),
+  domain("mail.yandex.uz") {
+    [class*="ComposeDoneScreen"] * {
+        height: auto !important;
+        min-height: 0 !important
     }
 }
 
