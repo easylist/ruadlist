@@ -1259,10 +1259,10 @@ bookskeeper.ru#?#*:-abp-has(> [id^="BlockId"])
 ruero.com#?#*:-abp-has(> a[href*="prostitutkixxx"])
 obozrevatel.com##.--readToo:empty
 onedivision.ru##.-hidden-adv
-myshows.me##.AdBlock
 ua-ix.biz##.Advertising
 meduza.io##.App-bannerBottom
 meduza.io##.App-bannerTop
+myshows.me##.AppPromo
 myshows.me#?#.AsideHeading:-abp-contains(/kinopoiskhd/i)
 obninsk.name,www.zoneofgames.ru##.Banner
 hqq.tv##.BetterJsPopOverlay
@@ -1276,9 +1276,9 @@ euro2016.cc##.DmWidget
 nulled.cc##.EstBS-bnContent
 fanfics.me##.FicHead.ContentTable > .left
 sdamgia.ru##.Footer-Partner
-myshows.me#?#.Grid-in > .GridItem:-abp-has(> .ShowItem > [href*="hd.kinopoisk.ru"])
+myshows.me#?#.Grid-in .GridItem:-abp-has(> div > [href*="hd.kinopoisk.ru"])
 razvitierebenka.com#?#.HTML:-abp-has(> .widget-content > .adsbygoogle)
-myshows.me#?#.Home-section:-abp-has(> div > .ShowsKP)
+myshows.me#?#.Home-section:-abp-has(> div .title .online-promo-kp__logo)
 russiandc.com##.L
 meduza.io##.Layout-bannerTop
 spot.uz##.LeaderBoard
@@ -1292,7 +1292,6 @@ russiandc.com##.R
 gold-torrent.org##.RELINK
 therussianamerica.com##.RightColumn .Content > a
 muz.ru##.SEO
-myshows.me##.ShowsKP
 tonkosti.ru##.SkyscannerFormInContent
 softportal.com##.TblBorderCLR2 center > a[href][target="_blank"]
 softportal.com##.TblOBan
@@ -1373,7 +1372,7 @@ vmo24.ru##.adaptive_banners
 stroi-help.ru##.adaptive_image_2000
 allinfo.kz,kinoriver.org,leroymerlin-jeb.ru##.adb
 beon.ru##.adbg
-433175.ru,allforpeople.net,govp.info,naurfo.ru##.adblock
+433175.ru,allforpeople.net,govp.info,myshows.me,naurfo.ru##.adblock
 jaomix.ru##.adblock-service
 agri-gator.com.ua,versii.if.ua##.adcontainer
 msn.com##.adcontainer > iframe
@@ -2990,7 +2989,6 @@ tvernews.ru##.kc6a
 kg-portal.ru##.kg_promo
 kubik-v-kube.com##.kino-text > div[style^="clear:both;"]
 gaming-torrent.org##.kino-text a[target] > img
-myshows.me##.kinopoisk
 old.myshows.me##.kinopoiskBanner
 kivvi.kz##.kivvi_social
 kloomba.com##.kl-ad-item
