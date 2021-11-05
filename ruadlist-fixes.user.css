@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211105.1305
+@version        0.20211106.152
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -848,6 +848,7 @@
 @-moz-document
   domain("animevost.am"),
   domain("animevost.org"),
+  domain("animevost.top"),
   domain("vost.pw") {
     div[class^="headbg"] {
         background-image: none !important;
@@ -2746,6 +2747,12 @@
 @-moz-document domain("kinoakter.net") {
     body > div[class^="wrapper"] {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinogo-net.org") {
+    .wr {
+        padding-top: 64px !important
     }
 }
 
