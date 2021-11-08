@@ -775,15 +775,17 @@ championat.com##.partners-content
 championat.com##.plista-block
 rambler.ru#?#.side-content:-abp-has(> .side-content__header:-abp-contains(/новости партн/i))
 passion.ru##.sideColumn .wrapper > div[style^="padding-bottom:"] + div[style^="padding-bottom:"]
+wmj.ru##.sideColumn .wrapper ~ div[style] + div
 passion.ru##.sideColumn .wrapper ~ div[style^="padding-bottom:"] ~ div
 moslenta.ru##.sideColumn > div[class] > div[class]:first-child
+wmj.ru#?#.sideColumn div:-abp-has(> div + [id^="rnet_"])
 ferra.ru##.sideColumn div[style] > .headline
 ferra.ru##.sideColumn div[style] ~ .headline
 motor.ru##.sideColumn form + div[style] + div
 motor.ru##.sideColumn form + div[style] ~ div .heading:not(.header)
 moslenta.ru##.sideColumn form ~ div
 gazeta.ru##.smi24__informer
-letidor.ru,quto.ru,secretmag.ru,wmj.ru#?#.swiper-slide-active:-abp-has(> div > [data-render-state])
+letidor.ru,quto.ru,secretmag.ru#?#.swiper-slide-active:-abp-has(> div > [data-render-state])
 lenta.ru##.theme_type_longgrid
 rambler.ru##.traffic-blocks[class*="intresting"]
 afisha.ru##.yandex-dzen
@@ -798,6 +800,7 @@ rambler.ru##[data-blocks="top_news_block"] > div:first-child + div > div > div:f
 www.championat.com##[data-href^="https://www.fonbet.ru/"]
 rambler.ru##[data-special*=":okko:"]
 sport.rambler.ru##[href^="https://www.fonbet.ru/"]
+wmj.ru##[qaid="topic"] ~ div a[href^="https://zen.yandex.ru/"]
 gazeta.ru,lenta.ru,rambler.ru##a[href*="://sber180.lenta.ru/"]
 www.rambler.ru##a[href*="clck.ru"]
 ~mail.rambler.ru,~nova.rambler.ru,rambler.ru##a[href*="okko.sport"]
