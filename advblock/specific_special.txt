@@ -779,9 +779,11 @@ passion.ru##.sideColumn .wrapper ~ div[style^="padding-bottom:"] ~ div
 moslenta.ru##.sideColumn > div[class] > div[class]:first-child
 ferra.ru##.sideColumn div[style] > .headline
 ferra.ru##.sideColumn div[style] ~ .headline
+motor.ru##.sideColumn form + div[style] + div
+motor.ru##.sideColumn form + div[style] ~ div .heading:not(.header)
 moslenta.ru##.sideColumn form ~ div
 gazeta.ru##.smi24__informer
-letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru#?#.swiper-slide-active:-abp-has(> div > [data-render-state])
+letidor.ru,quto.ru,secretmag.ru,wmj.ru#?#.swiper-slide-active:-abp-has(> div > [data-render-state])
 lenta.ru##.theme_type_longgrid
 rambler.ru##.traffic-blocks[class*="intresting"]
 afisha.ru##.yandex-dzen
@@ -800,6 +802,7 @@ www.rambler.ru##a[href*="clck.ru"]
 ~mail.rambler.ru,~nova.rambler.ru,rambler.ru##a[href*="okko.sport"]
 ~mail.rambler.ru,~nova.rambler.ru,rambler.ru##a[href*="okko.tv"]
 www.championat.com##a[href^="https://www.fonbet.ru/"]
+motor.ru#?#article div:-abp-has(> .heading + [id^="rnet_"])
 championat.com##div.banner[class*=" "]
 rambler.ru#?#div:-abp-has(> [id^="adfox-"] + div > div:only-child)
 mail.rambler.ru##div[class*="Ad-direct"]
