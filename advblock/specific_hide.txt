@@ -6139,6 +6139,7 @@ rp5.am,rp5.by,rp5.co.nz,rp5.co.uk,rp5.kz,rp5.lt,rp5.lv,rp5.md,rp5.ru,rp5.ua#?#di
 fragrantica.ru#?#div:-abp-has(> sup)
 football.kulichki.net#?#div:-abp-has(> table > tbody a[href*="kulichki.com/advert"])
 only-paper.ru#?#div:not(.adv-wrapper):-abp-has(> ins)
+glavagronom.ru#?#div:not([id]):not([class]):-abp-has(> div + div + section + section) > div:first-child + div > div:only-child > div:first-child + div:last-child
 tomat-pomidor.com##div:not([id]):not([class])[style^="min-height:"]
 vz.ru##div:not([id])[style*="margin"][style*="width: 240px"]
 dtf.ru,tjournal.ru,vc.ru##div[air-module="module.boosterPromo"]
@@ -6288,7 +6289,6 @@ gdespaces.com,spac.me,spac1.com,spac1.me,spac1.net,spaces-blogs.com,spaces.im#?#
 drive2.ru#?#div[class]:-abp-has(> div > div > .drom-logo)
 2gis.ru#?#div[class]:-abp-has(> div[class] > [class]:-abp-contains(/^Организации рядом$|^Похожие организации$/))
 novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
-glavagronom.ru#?#div[class]:first-child :-abp-properties(height: 29rem;) + div[class]:last-child
 www.kinopoisk.ru##div[class]:first-child > div[class*=" "] > div:first-child + :not(div) + div[class*=" "]:last-child
 ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru,sportfm.ru##div[class][data-element*="BANNER"]
