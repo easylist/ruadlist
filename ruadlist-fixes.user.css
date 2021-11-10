@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211109.1652
+@version        0.20211110.1914
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -738,6 +738,14 @@
     }
     .nav-line {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("anicat.ru"),
+  domain("hlamer.ru") {
+    body {
+        background-color: #596c84 !important
     }
 }
 
@@ -2432,17 +2440,6 @@
     }
     #portal-menu, .header-banner {
         margin: 0 !important
-    }
-}
-
-@-moz-document
-  domain("hlamer.ru"),
-  domain("serialfilm.ru"),
-  domain("zloekino.com"),
-  domain("zloekino.ru"),
-  domain("zloekino.su") {
-    body {
-        background-color: #596c84 !important
     }
 }
 
