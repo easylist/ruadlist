@@ -371,6 +371,7 @@ ok.ru##.feed-list > .feed-w:has(.feed_ava ~ div div > span ~ span ~ span ~ span 
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~realty.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru#@#.i-pull-left .news-item_tgb
 @@||ad.mail.ru/adp/?_SITEZONE=*&isAtlas=$~third-party,xmlhttprequest
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
+e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div:style(display: block !important)
 ||ad.mail.ru/$image,script,xmlhttprequest,redirect=empty
 ||ad.mail.ru/dist/
 ||cdn.viqeo.tv/js/vq_starter.js$third-party,domain=~dom.mail.ru|lifehacker.ru|mail.ru|teleprogramma.pro
@@ -382,6 +383,7 @@ ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !imp
 ||r.mradx.net/img/*.js|$empty,script
 ||recostream.go.mail.ru^$domain=~pulse.mail.ru|~recostream.go.mail.ru
 ||static.viqeo.tv/js/vq_starter.js$third-party,domain=~dom.mail.ru|mail.ru
+!e.mail.ru##+js(set-constant, Object.prototype.SLOT_BLOCKS, undefined)
 !
 ! Progorod и их сайты
 pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progorodnsk.ru,progorodsamara.ru,progoroduhta.ru,prokazan.ru##+js(abort-on-property-write, __XRABStatus)
