@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211110.1914
+@version        0.20211111.1552
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -846,8 +846,7 @@
 @-moz-document
   domain("animespirit.tv"),
   domain("fullfilmhd.space"),
-  domain("kinocok.org"),
-  domain("kinokong.org") {
+  domain("kinocok.org") {
     #wrapper {
         margin-top: 0 !important
     }
@@ -2769,6 +2768,12 @@
     .b-background {
         background: none !important;
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinokong.org") {
+    #wrapper:not(#id) {
+        margin-top: 67px !important
     }
 }
 
