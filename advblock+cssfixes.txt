@@ -326,6 +326,8 @@ znanija.com##+js(abort-on-property-read, localStorage)
 ||paperdoc.ru^$xmlhttprequest,badfilter,domain=paperdoc.ru
 ||politros.com^$xmlhttprequest,badfilter,domain=politros.com
 ||pronpic.org^$third-party,badfilter
+||s-cdn.org/promo/*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=player-films.online
+||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||shtrafsud.ru^$xmlhttprequest,badfilter,domain=shtrafsud.ru
