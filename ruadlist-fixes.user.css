@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211111.1552
+@version        0.20211112.1830
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4151,7 +4151,7 @@
 
 @-moz-document domain("sdamgia.ru") {
     .wrapper > div[class] > [style*="red;"][style*="font-size:"], 
-    div[style^="height: 205px;"][style*="margin: 0 auto;"] {
+    div[id^="rotator"], div[style^="height: 20"][style*="margin: 0 auto;"] {
         display: none !important
     }
     .PageLayout-Main > section ~ div[class*=" "] > div, 
