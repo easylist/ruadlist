@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211112.1830
+@version        0.20211114.1852
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3351,8 +3351,7 @@
   domain("music.yandex.ru"),
   domain("music.yandex.ua"),
   domain("music.yandex.uz") {
-    body > div[style^="min-height"] > div[class][style="display: block;"], 
-    div[class*="sidebar"] .no-ads {
+    .page-root > .d-overhead, div[class*="sidebar"] .no-ads {
         display: none !important
     }
     body.no-scroll {
@@ -3630,6 +3629,13 @@
 @-moz-document domain("online-fix.me") {
     .quote a.btn {
         pointer-events: auto !important
+    }
+}
+
+@-moz-document domain("only-paper.ru") {
+    .adsbygoogle:not(#id) {
+        display: block !important;
+        height: 10px !important
     }
 }
 
