@@ -1,7 +1,7 @@
 ! Правила для отдельных сайтов с разношерстными правилами или групп сайтов
 !
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
-clickscloud.net,mediaget.guru,torrentigruha.org,where-game.ru##*
+mediaget.guru,torrentigruha.org,where-game.ru##*
 !
 ~forum.zannn.top,zannn.top##:not(this-is-a-malicious-site)
 ~forum.zannn.top,zannn.top##this-is-a-malicious-site
@@ -163,34 +163,30 @@ adblock-tester.com,checkadblock.ru##object,embed
 !
 ! GISMeteo domains
 ! Старый дизайн
-gismeteo.md,gismeteo.ru###rbc
+gismeteo.ru###rbc
 gismeteo.ua###w-hor
-gismeteo.lt###weather-alfa
-gismeteo.de,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru###weather-lb
-gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru###weather-left
+gismeteo.de,gismeteo.ru###weather-lb
+gismeteo.ru###weather-left
 gismeteo.ru###weather-news .news.links-blue
 gismeteo.ua###weather-rbkua
-gismeteo.de,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru,gismeteo.ua###weather-right
-gismeteo.de,gismeteo.lt,gismeteo.md,gismeteo.ru,gismeteo.ua###weather-top > *
-gismeteo.lv###yandex
+gismeteo.de,gismeteo.ru,gismeteo.ua###weather-right
+gismeteo.de,gismeteo.ru,gismeteo.ua###weather-top > *
 gismeteo.ru##.content-column .section-item > noindex
 gismeteo.ru,gismeteo.ua##.extra
 gismeteo.ru##.section__zen
 gismeteo.ru,gismeteo.ua,www.gismeteo.by##.side__i
 gismeteo.ru##.yandex_dzen_tiser_news
 @@||a.votpusk.ru^$image,domain=tourism.gismeteo.ru
-gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru,gismeteo.ua##[id^="weather-gis-news"]
+gismeteo.ru,gismeteo.ua##[id^="weather-gis-news"]
 !
 ! Новый дизайн gismeteo.ru, gismeteo.kz, gismeteo.by, beta.gismeteo.ru, gismeteo.ua, gismeteo.md
-gismeteo.by,gismeteo.kz##.column2 > .section-rss
+gismeteo.by,gismeteo.kz,gismeteo.lt,gismeteo.lv,gismeteo.md##.column2 > .section-rss
 www.gismeteo.ru##.follow-zen
 beta.gismeteo.ru,gismeteo.ua,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##.frame_border
 beta.gismeteo.ru,gismeteo.ua,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##.media_with_map > :not(.map_right)
-gismeteo.by,gismeteo.kz,gismeteo.lt##.section-media
+gismeteo.by,gismeteo.kz,gismeteo.lt,gismeteo.lv,gismeteo.md##.section-media
 gismeteo.by,gismeteo.kz,gismeteo.lt##.sticky > .section
-beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md##.sticky_with_subnav
-beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md##.sticky_with_subsubnav
-gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##.top-media-placeholder
+gismeteo.by,gismeteo.kz,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru##.top-media-placeholder
 gismeteo.ru##.widget-container
 beta.gismeteo.ru,gismeteo.lt,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md##.x250imp
 beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##.xby400
