@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211116.1634
+@version        0.20211117.1403
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3629,16 +3629,6 @@
 @-moz-document domain("online-fix.me") {
     .quote a.btn {
         pointer-events: auto !important
-    }
-}
-
-@-moz-document domain("only-paper.ru") {
-    .adsbygoogle:not(#id) {
-        display: block !important;
-        height: 10px !important
-    }
-    [id^="aswift_"] {
-        height: 0 !important
     }
 }
 
