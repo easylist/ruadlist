@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211117.1403
+@version        0.20211118.1715
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2984,6 +2984,12 @@
   domain("rambler.ru") {
     .subscribe-popup {
         display: none !important
+    }
+}
+
+@-moz-document domain("libertycity.ru") {
+    .downloada {
+        display: block !important
     }
 }
 
