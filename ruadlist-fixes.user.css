@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211119.123
+@version        0.20211119.1742
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -347,15 +347,6 @@
     }
     body.show-cookies ._opo_-header {
         top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("21forum.ru"),
-  domain("forum.na-svyazi.ru"),
-  domain("forum.zarulem.ws") {
-    #user2s[height="71"], #userlinks[height="70"], td[height="70"][style] {
-        display: none !important
     }
 }
 
@@ -3286,6 +3277,16 @@
     }
 }
 
+@-moz-document domain("mivmeste.info") {
+    #SITE_PAGES > div > div[id] {
+        min-height: auto !important
+    }
+    [data-mesh-id] {
+        min-height: auto !important;
+        height: auto !important
+    }
+}
+
 @-moz-document domain("mk.ru") {
     div[class^="Banner_right"] {
         margin-bottom: 0 !important;
@@ -3891,9 +3892,6 @@
 }
 
 @-moz-document domain("protanki.tv") {
-    .ant-modal-mask, .ant-modal-wrap {
-        display: none !important
-    }
     body {
         overflow: auto !important;
         padding-right: 0 !important
