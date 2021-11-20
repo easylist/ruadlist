@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211119.1742
+@version        0.20211120.1404
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3983,7 +3983,8 @@
         left: calc(50% - 55px) !important;
         cursor: pointer !important
     }
-    .l-sticky-right-parent, .popup_push {
+    .l-sticky-right-parent, .popup_push, 
+    body > [data-yandex-name="blockad_click"] {
         display: none !important
     }
     .js-forecast-passback {
@@ -5037,7 +5038,8 @@
   domain("yandex.ua"),
   domain("yandex.uz") {
     .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
-    .blocks-grid__item_static > .direct_type_stripe, .home-arrow__bottom, 
+    .blocks-grid__item_static > .direct_type_stripe, 
+    .home-arrow [data-bem*="yabrowser-promo"], .home-arrow__bottom, 
     .mini-suggest__item > a[href^="http://"], 
     .serp-item div[class*="advanced-polaroid"], .serp-list > .incut > .direct, 
     .sidebar-container .search-advert-badge, 
