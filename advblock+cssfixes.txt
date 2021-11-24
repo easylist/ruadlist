@@ -17,6 +17,7 @@
 *$script,redirect-rule=noop.js,domain=otzovik.com|ukr.net
 *$subdocument,redirect-rule=noopframe,domain=ukr.net
 *$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.club|otzovik.com
+/^https?://frontend\.vh\.yandex\.ru\/player\/[^\s]+\autoplay=1(?![^\s]+service=ya-sport$)/$subdocument,removeparam=|
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnneedtv.ru,cdnpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport7.biz,sportbar.biz,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,stream365.pro,telecdn.net,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
@@ -317,7 +318,6 @@ znanija.com##+js(abort-on-property-read, localStorage)
 ||clustrmaps.com/counter/$image,redirect-rule=32x32.png
 ||etotprazdnik.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
 ||fermilon.ru^$xmlhttprequest,badfilter,domain=fermilon.ru
-||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|
 ||globuss24.ru^$xmlhttprequest,badfilter,domain=globuss24.ru
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
