@@ -189,6 +189,8 @@ _pagespeed_beacon?
 !
 ! = Общие блокировки (и с использованием имени доменов) =========================
 //stats.myangular.life^$third-party
+/cdn-cgi/bm/cv/*.js$script
+/cgi-bin/bm/cv/*.js$script
 /redir/stat/*$domain=autonews.ru|rbc.ru|sportrbc.ru
 ://a.pr-cy.ru^$third-party
 |http://li.ru^$third-party,~subdocument
@@ -322,6 +324,7 @@ _pagespeed_beacon?
 ||creativecdn.com/tags?
 ||criteo.com^$third-party
 ||crm-analytics.imweb.ru^$third-party
+||crm-tracker.liga.net^
 ||crsspxl.com^$third-party
 ||crwdcntrl.net^$third-party
 ||csi.gstatic.com^
@@ -495,6 +498,7 @@ _pagespeed_beacon?
 ||l.ivi.ru/logger/px/
 ||l2.io/ip.js
 ||libo.ru/rat/img/
+||licdn.com/*.lms-analytics/$third-party
 ||lifestats.ru^$third-party
 ||listatic.ru^$third-party
 ||livejournal.com^*/pagestats/
