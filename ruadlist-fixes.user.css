@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211125.1415
+@version        0.20211125.1433
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2649,6 +2649,14 @@
 }
 
 @-moz-document domain("ixbt.games") {
+    .main {
+        margin-top: 2px !important
+    }
+}
+
+@-moz-document
+  domain("ixbt.games"),
+  domain("smb.ixbt.com") {
     body {
         background: #eee !important
     }
@@ -2658,8 +2666,13 @@
     body:not(#id) {
         margin-top: 0 !important
     }
-    .main {
-        margin-top: 2px !important
+}
+
+@-moz-document
+  domain("ixbt.market"),
+  domain("www.ixbt.com") {
+    #page-wrapper .container {
+        max-width: 100% !important
     }
 }
 
@@ -4917,9 +4930,6 @@
     }
     #page-wrapper > #header, #page-wrapper > .tm-wrapper > .tm {
         margin-bottom: auto !important
-    }
-    #page-wrapper .container {
-        max-width: 100% !important
     }
     #page-wrapper > #wrapper {
         padding-top: 0 !important
