@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211123.1416
+@version        0.20211125.1415
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2143,18 +2143,6 @@
     }
 }
 
-@-moz-document domain("gametech.ru") {
-    body {
-        background: #eee !important
-    }
-    .tm-wrapper > .tm {
-        margin-bottom: auto !important
-    }
-    body:not(#id) {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("gamma.mirtesen.ru") {
     .aggregator-page {
         pointer-events: none !important;
@@ -2657,6 +2645,21 @@
     body:not(#id) > .b-content.b-content__breadcrumbs, 
     body:not(#id) > .b-content__pagecontent {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("ixbt.games") {
+    body {
+        background: #eee !important
+    }
+    .tm-wrapper > .tm {
+        margin-bottom: auto !important
+    }
+    body:not(#id) {
+        margin-top: 0 !important
+    }
+    .main {
+        margin-top: 2px !important
     }
 }
 
@@ -3768,6 +3771,12 @@
     }
     .open-main-container {
         margin-top: 60px !important
+    }
+}
+
+@-moz-document domain("pochta.ru") {
+    div[id][class*=" BannerPlace-"] {
+        filter: grayscale(1) !important
     }
 }
 
