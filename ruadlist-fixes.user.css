@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211127.1951
+@version        0.20211129.1648
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -253,6 +253,7 @@
   domain("xxxadulttorrent.org"),
   domain("you-anime.ru"),
   domain("youhdrezka.com"),
+  domain("yummyanime.tv"),
   domain("zombie-film.live") {
     body:not(#id), html:not(#id) {
         padding-top: 0 !important
@@ -1874,6 +1875,12 @@
         display: none !important
     }
     .main-wrapper, .page-wrapper {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("filmozavr.net") {
+    .maincontent {
         margin-top: 0 !important
     }
 }
@@ -5024,6 +5031,11 @@
 @-moz-document domain("www.ukr.net") {
     .right-banner > div {
         height: auto !important
+    }
+    a[href*="adpool.bet/"] {
+        pointer-events: none !important;
+        opacity: 0 !important;
+        height: 0 !important
     }
 }
 
