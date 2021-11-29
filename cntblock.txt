@@ -1149,6 +1149,7 @@ zen.yandex.*##div[class*="yandex-direct"]
 4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 !
 ! Экспериментальные правила для маркеров
+$removeparam=admitad_uid
 $removeparam=mt_click_id
 $removeparam=utm_campaign
 $removeparam=utm_campaing
