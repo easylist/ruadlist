@@ -14,7 +14,7 @@
 %include easylistcombinations:antiadblockfilters.txt%
 ! --- uBO scriptlets injection rules & other ---
 *$image,redirect-rule=32x32.png,domain=ukr.net
-*$script,redirect-rule=noop.js,domain=otzovik.com|ukr.net
+*$script,redirect-rule=noop.js,domain=all-episodes.club|otzovik.com|ukr.net
 *$subdocument,redirect-rule=noopframe,domain=ukr.net
 *$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.club|otzovik.com
 /^https?://frontend\.vh\.yandex\.ru\/player\/[^\s]+\autoplay=1(?![^\s]+service=ya-sport$)/$subdocument,removeparam=|
