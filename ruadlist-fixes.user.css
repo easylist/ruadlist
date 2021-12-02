@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211202.142
+@version        0.20211202.1451
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -32,7 +32,6 @@
   domain("budport.com.ua"),
   domain("clubhdrezka.com"),
   domain("cokinopoisk.com"),
-  domain("getkinopoisk.com"),
   domain("drhdrezka.com"),
   domain("ehdrezka.com"),
   domain("ekinopoisk.com"),
@@ -40,6 +39,7 @@
   domain("ezhdrezka.com"),
   domain("gecid.com"),
   domain("gethdrezka.com"),
+  domain("getkinopoisk.com"),
   domain("hdrezka-ag.com"),
   domain("hdrezka.buzz"),
   domain("hdrezka.city"),
@@ -133,7 +133,6 @@
   domain("bombardir.ru"),
   domain("clubhdrezka.com"),
   domain("cokinopoisk.com"),
-  domain("getkinopoisk.com"),
   domain("dnepr.info"),
   domain("drhdrezka.com"),
   domain("dugtor.org"),
@@ -145,6 +144,7 @@
   domain("filmitorrent.net"),
   domain("filmy-smotret.net"),
   domain("gethdrezka.com"),
+  domain("getkinopoisk.com"),
   domain("gidonline.io"),
   domain("gordonua.com"),
   domain("gtorrent.org"),
@@ -1773,9 +1773,6 @@
     .header.fixed .layout, .right_column_content > .block_news, header.header {
         margin-top: 0 !important
     }
-    .fh .layout_main {
-        padding-top: 0 !important
-    }
 }
 
 @-moz-document domain("eva.ru") {
@@ -1921,8 +1918,8 @@
 
 @-moz-document
   domain("flashscore.com.ua"),
-  domain("flashscore.kz"),
-  domain("flashscore.ru"),
+  domain("flashscore.ru.com"),
+  domain("flashscorekz.com"),
   domain("livescore.in") {
     [data-bookmaker-id], [onclick*="bookmaker"] {
         pointer-events: none !important
