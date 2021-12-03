@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211202.1451
+@version        0.20211204.1
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3558,6 +3558,13 @@
     }
     body {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("nezavisim.tv") {
+    html:not(#id) * {
+        -webkit-filter: none !important;
+        filter: none !important
     }
 }
 
