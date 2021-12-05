@@ -49,6 +49,7 @@
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
 7ogorod.ru##+js(abort-on-property-read, flat_pm_arr)
 80-e.ru##+js(abort-on-property-read, yaContextCb)
+@@||m.rp5.*/mobile/scripts/*.js$script,domain=m.rp5.*
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||studizba.com^$generichide,badfilter
@@ -194,6 +195,7 @@ livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 lostfilm.pro,lostfilm.run,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site##+js(remove-attr, oncontextmenu, [class], stay)
 lostfilm.pro,lostfilm.run,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
 lrepacks.net,shanson320.ru,vesti.ua##+js(abort-current-inline-script, document.createElement, atob)
+m.rp5.*#@#.adsbygoogle
 mag.relax.by##+js(remove-class, b-global-branding, html)
 marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
 medicina.ua##+js(abort-on-property-read, blocked_action)
