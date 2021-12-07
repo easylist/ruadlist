@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211204.1
+@version        0.20211207.1331
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3998,7 +3998,8 @@
     div[style="order:-1"] > div > div {
         min-height: 0 !important
     }
-    #bigColumn + div[class] > div:first-child + div > div > div:first-child + div div, 
+    #bigColumn + div[class] > div:first-child + div > div div, 
+    #bigColumn + div[class] > div:first-child article ~ div div, 
     [data-blocks="top_news_block"] > div:first-child + div > div div {
         min-height: 0 !important;
         border-bottom: unset !important
@@ -5168,6 +5169,7 @@
 
 @-moz-document
   domain("zagonka.net"),
+  domain("zogonka.org"),
   domain("zagonka.tv") {
     #sitebox:not(#id) {
         margin-top: 0 !important
