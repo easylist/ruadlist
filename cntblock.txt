@@ -1167,7 +1167,6 @@ $removeparam=utm_source
 $removeparam=utm_term
 $removeparam=yaclid
 $removeparam=yclid
-&block_click$removeparam=block_click,domain=rambler.ru
 &clid=$document,removeparam=|clid,domain=yandex.*
 &feature=emb_$document,removeparam=|feature=emb_,domain=youtube.com
 &ymclid=$document,removeparam=|,domain=~ozon.onelink.me
@@ -1214,6 +1213,7 @@ $removeparam=yclid
 ?ymclid=$document,removeparam=|
 aff_fcid=$document,removeparam=|,domain=aliexpress.*|~campaign.aliexpress.com
 algo_pvid=$document,removeparam=|,domain=aliexpress.*
+block_click=$removeparam=block_click,domain=rambler.ru
 fbclid=$document,removeparam=fbclid
 frm=$document,removeparam=|frm,domain=mail.ru
 from=*_portal&lang=$document,removeparam=|,domain=yandex.*
