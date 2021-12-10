@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211208.1954
+@version        0.20211210.1707
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3061,7 +3061,6 @@
 @-moz-document
   domain("lostfilm.info"),
   domain("lostfilm.pro"),
-  domain("lostfilmtv2.site"),
   domain("lostfilm.run"),
   domain("lostfilm.tv"),
   domain("lostfilm.tw"),
@@ -3069,7 +3068,8 @@
   domain("lostfilm.win"),
   domain("lostfilmtv.site"),
   domain("lostfilmtv.uno"),
-  domain("lostfilmtv1.site") {
+  domain("lostfilmtv1.site"),
+  domain("lostfilmtv2.site") {
     body {
         background-image: none !important;
         background-color: #1c1e1f !important
@@ -3078,7 +3078,6 @@
 
 @-moz-document
   domain("lostfilm.pro"),
-  domain("lostfilmtv2.site"),
   domain("lostfilm.run"),
   domain("lostfilm.tv"),
   domain("lostfilm.tw"),
@@ -3086,7 +3085,8 @@
   domain("lostfilm.win"),
   domain("lostfilmtv.site"),
   domain("lostfilmtv.uno"),
-  domain("lostfilmtv1.site") {
+  domain("lostfilmtv1.site"),
+  domain("lostfilmtv2.site") {
     .footer {
         background: #1c1e1f !important;
         color: #fff !important
@@ -4905,6 +4905,12 @@
     }
     body > #header {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("www.gismeteo.ru") {
+    .section-map-grid {
+        margin-bottom: 20px !important
     }
 }
 
