@@ -185,7 +185,7 @@ kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 krolik.biz##+js(abort-current-inline-script, document.createElement)
 kurs.com.ua##+js(abort-current-inline-script, document.documentElement.clientWidth)
 l2top.ru##+js(abort-current-inline-script, $, get)
-lenta.ru##+js(abort-on-property-read, _lentaData.infinityScroll)
+lenta.ru##+js(addEventListener-defuser, scroll, window.location.href)
 lenta.ru##+js(remove-attr, class, .js-video-box__container)
 lenta.ru##.scroll-to-site
 libertycity.ru##+js(nano-setInterval-booster, download_timer)
