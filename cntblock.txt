@@ -1255,4 +1255,6 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||www.google.*/search?$removeparam=ved
 ||www.google.*/search?client=$removeparam=client
 ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*
+||yandex.*/news*?from=main$document,removeparam=|,domain=yandex.*
+||yandex.*/news*msid$document,removeparam=|,domain=yandex.*
 ||yandex.ru/?clid=$document,removeparam=|,domain=yandex.*
