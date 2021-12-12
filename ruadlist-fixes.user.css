@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211210.1707
+@version        0.20211212.1601
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4778,9 +4778,9 @@
     div[style^="min-height: 100vh;"] {
         min-height: 0 !important
     }
-    .bbbOwner {
+    div[class$="Owner"] {
         min-height: 0 !important;
-        height: 0 !important
+        height: unset !important
     }
 }
 
@@ -5117,10 +5117,15 @@
     .main .widgets__col_td_1 {
         max-width: unset !important
     }
-    body.page_url-replacement div[class*="_type_"], 
-    body.page_url-replacement div[class*="rect"][id][data-name] {
+    body[class*="turbopages"] div[class*="_type_"], 
+    body[class*="turbopages"] div[class*="rect"][id][data-name] {
         min-height: 0 !important;
         height: unset !important
+    }
+    body[class*="turbopages"] div[class*="turbo-"][class*="load-error"] {
+        min-height: 0 !important;
+        margin-top: unset !important;
+        margin-bottom: unset !important
     }
     .feed__row[id^="zen-row-"] .feed__item-wrap > .feed__item {
         min-height: auto !important
