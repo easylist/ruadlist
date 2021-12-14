@@ -439,6 +439,7 @@ www.ukr.net##^script:has-text(zmc|loader|track)
 mail.ukr.net##head > iframe[name]:not([id]):not([class]):not([src]):remove()
 !#endif
 mail.ukr.net###top_banner:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
+www.ukr.net##+js(abort-on-property-read, window.googletag)
 www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
 mail.ukr.net##+js(set-constant, Object.prototype.37690, noopFunc)
 ukr.net##.adv-news:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
