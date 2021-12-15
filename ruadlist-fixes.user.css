@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211214.1940
+@version        0.20211215.1627
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1300,8 +1300,16 @@
 }
 
 @-moz-document domain("cloud.mail.ru") {
+    .public .b-layout__col_1_2 + .b-layout__col_2_2, 
+    div[class^="Datalistinfo__root"], div[class^="Worm__root-"] {
+        display: none !important
+    }
+    .public__content__inner#datalist {
+        height: unset !important
+    }
     .public .b-layout__col_1_2 {
-        margin-right: auto !important
+        margin-right: auto !important;
+        max-width: unset !important
     }
 }
 
