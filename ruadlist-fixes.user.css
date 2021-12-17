@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211216.1353
+@version        0.20211217.1145
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2698,6 +2698,14 @@
     }
 }
 
+@-moz-document
+  domain("kakoysegodnyaprazdnik.ru"),
+  domain("xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai") {
+    .prazdnik_main {
+        min-height: auto !important
+    }
+}
+
 @-moz-document domain("kaluga-poisk.ru") {
     body:not(#id) {
         background: whitesmoke !important
@@ -4552,14 +4560,6 @@
     body > div[style*='1010'] {
         width: auto !important;
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("tjournal.ru"),
-  domain("vc.ru") {
-    body:not(#id) {
-        background-color: #f0f0f0 !important
     }
 }
 
