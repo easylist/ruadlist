@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211217.1336
+@version        0.20211217.2018
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3293,15 +3293,6 @@
     }
 }
 
-@-moz-document domain("mirf.ru") {
-    #cb-bg-to {
-        display: none !important
-    }
-    #cb-outer-container {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("mirkino.club") {
     body > header {
         margin-top: 0 !important
@@ -5025,6 +5016,12 @@
     }
     .desktop-layout-with-sidebar__content > div[class][data-tid] {
         width: auto !important
+    }
+}
+
+@-moz-document domain("www.mirf.ru") {
+    main[style^="background-color:"] {
+        background-color: inherit !important
     }
 }
 
