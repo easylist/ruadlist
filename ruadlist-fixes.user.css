@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211217.1145
+@version        0.20211217.1336
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2701,6 +2701,9 @@
 @-moz-document
   domain("kakoysegodnyaprazdnik.ru"),
   domain("xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai") {
+    div[style="margin:10px;text-align:right;"] {
+        display: none !important
+    }
     .prazdnik_main {
         min-height: auto !important
     }
