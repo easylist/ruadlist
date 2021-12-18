@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211217.2018
+@version        0.20211218.1651
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3062,7 +3062,8 @@
 }
 
 @-moz-document domain("liveinternet.ru") {
-    .float100 ~ .float100 ~ div > div ~ * {
+    [style="margin-top:-25px;"] ~ .leftcolumn > div ~ div, 
+    [style="margin-top:-25px;"] ~ br + div {
         display: none !important
     }
 }
