@@ -241,8 +241,8 @@ pravvest.ru##+js(abort-current-inline-script, clickExplorer)
 pravvest.ru##+js(abort-on-property-read, document.body.oncopy)
 radikal.ru,www.vesti.ru##+js(abort-current-inline-script, document.createElement, String.fromCharCode)
 razlozhi.ru##+js(json-prune, rtb direct.ads)
+rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
-rbc.ru##+js(abort-on-property-read, Object.prototype.isAutostartInViewport)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
 remont-aud.net##+js(set-constant, window.ab, false)
 rp5.*##+js(no-setTimeout-if, 0x)
@@ -340,6 +340,7 @@ znanija.com##+js(abort-on-property-read, localStorage)
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||paperdoc.ru^$xmlhttprequest,badfilter,domain=paperdoc.ru
 ||pronpic.org^$third-party,badfilter
+||rbk.ru/*/_videoAutoplayRecommend.js
 ||s-cdn.org/promo/*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=player-films.online
