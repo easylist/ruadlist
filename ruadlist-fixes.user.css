@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211218.1651
+@version        0.20211221.1456
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5075,6 +5075,14 @@
     .ushki {
         width: unset !important;
         height: unset !important
+    }
+}
+
+@-moz-document
+  domain("xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai"),
+  domain("kakoysegodnyaprazdnik.ru") {
+    .adsbygoogle {
+        height: auto !important
     }
 }
 
