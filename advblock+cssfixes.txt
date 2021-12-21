@@ -433,6 +433,7 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod
 sinoptik.ua##style:not(#id):style(all: inherit !important)
 ! ukr.net
 !#if env_firefox
+mail.ukr.net##+js(abort-on-property-read, app.initializePromise)
 @@||counter.ukr.net/*/cnt.php|$image,domain=mail.ukr.net
 www.ukr.net##^script:has-text(zmc|loader|track)
 mail.ukr.net##head > iframe[name]:not([id]):not([class]):not([src]):remove()
