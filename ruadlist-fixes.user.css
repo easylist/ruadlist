@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211221.1456
+@version        0.20211224.101
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1670,20 +1670,17 @@
     html:root {
         --vkui--octavius_size_headline_height--regular: 36px !important
     }
-    #app-canvas .layout_bordered > .layout__column_right {
-        display: none !important
-    }
     .application-mail__wrap > .application-mail__layout > .layout[style*="grid-template-columns:"] {
         grid-template-columns: 232px 1fr 0 0 !important
-    }
-    #app-canvas .application-mail__wrap > .layout > .layout__main-frame {
-        margin-right: auto !important
     }
     .layer-sent-page > .layer {
         min-height: 0 !important
     }
     #app-canvas .paginator-container {
         right: 8px !important
+    }
+    #app-canvas .application-mail__layout .layout__column_right {
+        width: auto !important
     }
 }
 
@@ -2703,6 +2700,9 @@
   domain("xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai") {
     div[style="margin:10px;text-align:right;"] {
         display: none !important
+    }
+    .adsbygoogle {
+        height: auto !important
     }
     .prazdnik_main {
         min-height: auto !important
@@ -5075,14 +5075,6 @@
     .ushki {
         width: unset !important;
         height: unset !important
-    }
-}
-
-@-moz-document
-  domain("xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai"),
-  domain("kakoysegodnyaprazdnik.ru") {
-    .adsbygoogle {
-        height: auto !important
     }
 }
 
