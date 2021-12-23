@@ -146,6 +146,7 @@ echo.msk.ru##[role1] > div[class] > [class*=" "]:not(div) > [id]
 echo.msk.ru##[role1] > div[class] > [class*=" "]:not(div) > div:nth-of-type(-n+7)
 echo.msk.ru#?#div:-abp-has(> [id*="svoboda"])
 echo.msk.ru##div[class][id] ~ span > br
+echo.msk.ru##div[id^="under_article"]
 echo.msk.ru##div[style*="!important; "][style$=" !important;"]
 echo.msk.ru##div[style="width:236px;height:100px;"][id]
 echo.msk.ru##iframe[src*="echomsk.static-storage.net"]
