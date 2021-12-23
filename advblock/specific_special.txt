@@ -142,8 +142,8 @@ echo.msk.ru##div[style^="padding:"][style*=" 0px 0px;"]
 ! обфусцированный макет
 echo.msk.ru##[class$="-svoboda"]
 echo.msk.ru##[data-relap-id]
-echo.msk.ru##[role] > div[class] > [class*=" "]:not(div) > [id]
-echo.msk.ru##[role] > div[class] > [class*=" "]:not(div) > div:nth-of-type(-n+7)
+echo.msk.ru##[role1] > div[class] > [class*=" "]:not(div) > [id]
+echo.msk.ru##[role1] > div[class] > [class*=" "]:not(div) > div:nth-of-type(-n+7)
 echo.msk.ru#?#div:-abp-has(> [id*="svoboda"])
 echo.msk.ru##div[class][id] ~ span > br
 echo.msk.ru##div[style*="!important; "][style$=" !important;"]
