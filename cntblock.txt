@@ -419,6 +419,7 @@ _pagespeed_beacon?
 ||gloxstore.com^$third-party
 ||go-mpulse.net^$third-party
 ||go.freeanalyzer.ru^
+||go.imgsmail.ru/0c.gif?megarandom=
 ||goha.ru*/event?hash=
 ||goha.ru^*&geodata=
 ||google-analytics.com/collect?
@@ -615,6 +616,7 @@ _pagespeed_beacon?
 ||pv.pjtsu.com^$third-party
 ||quantserve.$third-party
 ||r.i.ua^$third-party
+||r.mail.ru/|$subdocument
 ||r.msn.com^
 ||r3.mail.ru/k?
 ||radarurl.com^$third-party
@@ -1158,6 +1160,19 @@ zen.yandex.*##div[class*="yandex-direct"]
 4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 !
 ! Экспериментальные правила для маркеров
+$document,removeparam=fm,domain=go.mail.ru|r.mail.ru
+$document,removeparam=fr,domain=go.mail.ru|r.mail.ru
+$document,removeparam=frm,domain=go.mail.ru|r.mail.ru
+$document,removeparam=hasnavig,domain=go.mail.ru|r.mail.ru
+$document,removeparam=sbmt,domain=go.mail.ru|r.mail.ru
+$document,removeparam=src,domain=go.mail.ru|r.mail.ru
+$document,removeparam=test_id,domain=go.mail.ru|r.mail.ru
+$document,removeparam=us,domain=go.mail.ru|r.mail.ru
+$document,removeparam=ushq,domain=go.mail.ru|r.mail.ru
+$document,removeparam=usln,domain=go.mail.ru|r.mail.ru
+$document,removeparam=usqid,domain=go.mail.ru|r.mail.ru
+$document,removeparam=usstr,domain=go.mail.ru|r.mail.ru
+$document,removeparam=ustq,domain=go.mail.ru|r.mail.ru
 $removeparam=admitad_uid
 $removeparam=afclid
 $removeparam=gclid
@@ -1194,14 +1209,11 @@ $removeparam=yclid
 ://aliexpress.*.htm?spm=$document,removeparam=|,domain=aliexpress.*
 =ukraine_news&utm_$document,removeparam=|utm_
 ?*r_audience=$document,removeparam=|,domain=ria.com
-?amp;test_id=$document,removeparam=|,domain=mail.ru
 ?clid=$document,removeparam=|clid,domain=yandex.*
 ?commercial=$document,removeparam=|,domain=ria.com
 ?country_code=$document,removeparam=|,domain=zen.yandex.*
 ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*
 ?e=lfm$document,removeparam=|,domain=sports.ru
-?fm=$document,removeparam=|fm,domain=mail.ru
-?fr=$document,removeparam=|fr,domain=mail.ru
 ?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru
 ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru
 ?from=tabbar$document,removeparam=|from,domain=yandex.*
@@ -1221,7 +1233,6 @@ aff_fcid=$document,removeparam=|,domain=aliexpress.*|~campaign.aliexpress.com
 algo_pvid=$document,removeparam=|,domain=aliexpress.*
 block_click=$removeparam=block_click,domain=rambler.ru
 fbclid=$document,removeparam=fbclid
-frm=$document,removeparam=|frm,domain=mail.ru
 from=*_portal&lang=$document,removeparam=|,domain=yandex.*
 mt_click$document,removeparam=|,domain=mail.ru|ok.ru
 mt_sub$document,removeparam=|,domain=mail.ru|ok.ru
