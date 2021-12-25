@@ -896,6 +896,11 @@ _pagespeed_beacon?
 ||youtube.com/ptracking?
 ||youtube.com/s?
 ||youtube.com/set_awesome?
+!#if env_firefox
+google.*##+js(remove-attr.js, data-jsarwt, #rcnt [data-ved] a)
+!#endif
+www.google.*##+js(remove-attr, jsaction, #islmp .isv-r > a)
+www.google.*##+js(remove-attr, jsaction, #islsp c-wiz a[data-ved], stay)
 !
 ! Mail.ru
 ||mail.ru/gstat?
@@ -1011,7 +1016,6 @@ auto.ru#?#div:matches-css-before(content: /Реклама/)
 auto.ru#?#div:matches-css-before(content: /Реклама/) ~ div
 inoreader.com##div[id^="leaderboard_ad"] > *
 radioprofusion.com##footer > .counter
-google.*##+js(remove-attr.js, data-jsarwt, #search [data-async-context] a)
 horoscopes.rambler.*#?#+js(set-constant.js, Object.prototype.needShowAlicePopup, null)
 lostfilm.tv,lostfilm.tw##img[width="1"][height="1"]
 nova.rambler.*##div[class^="DirectMKB"]
