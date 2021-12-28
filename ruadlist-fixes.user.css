@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211224.101
+@version        0.20211228.2053
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -783,6 +783,15 @@
     }
 }
 
+@-moz-document domain("animecos.ru") {
+    .headb {
+        height: auto !important
+    }
+    .wrap {
+        margin-top: unset !important
+    }
+}
+
 @-moz-document domain("animedia.pro") {
     .right-sidebar {
         height: auto !important
@@ -800,6 +809,13 @@
     }
     .main-container {
         margin-top: 80px !important
+    }
+}
+
+@-moz-document domain("animedub.ru") {
+    article.full > div .skrin ~ div {
+        border: unset !important;
+        background-color: unset !important
     }
 }
 
@@ -2226,7 +2242,7 @@
 }
 
 @-moz-document domain("go.mail.ru") {
-    body > div[style^="z-index:"], div[class^="Direct"], div[class^="RbSlot"] {
+    .AdvContainer-container, .AdvSide-content, body > div[style^="z-index:"] {
         display: none !important
     }
 }
