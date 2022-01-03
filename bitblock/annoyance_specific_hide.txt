@@ -1623,6 +1623,9 @@ shiza-project.com##ul[class*="transparent-btns"]
 4pda.to##html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style*="display: block;"]
 4pda.to#?#html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style]:-abp-has(a[href][target="_blank"] > img)
 4pda.to##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
+4pda.to##html[style] [id] .slider-list[style] ~ div[class]:empty
+4pda.to##html[style] [id] .slider-list[style] ~ div[class]:not([id]) > [style=""]
+4pda.to#?#html[style] [id] .slider-list[style] ~ div[class]:not([id]):-abp-has(> :only-child:not(div):not([id]):not([class]))
 4pda.to#?#html[style] [id] div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
 ! пустые и рекламные блоки в материалах
 4pda.to#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class] > a[href][target="_blank"])
