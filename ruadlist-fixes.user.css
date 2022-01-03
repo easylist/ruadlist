@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20211228.2053
+@version        0.20220103.2334
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -70,6 +70,7 @@
   domain("ixbt.com"),
   domain("justhdrezka.com"),
   domain("kinobar.me"),
+  domain("kinopub.me"),
   domain("kinotochka.co"),
   domain("kinotochka.me"),
   domain("ko.com.ua"),
@@ -192,6 +193,7 @@
   domain("kinobar.me"),
   domain("kinobe.club"),
   domain("kinoplanet.biz"),
+  domain("kinopub.me"),
   domain("kintor.org"),
   domain("koshara.net"),
   domain("kronverkcinema.ua"),
@@ -2845,6 +2847,12 @@
     }
 }
 
+@-moz-document domain("kinorium.com") {
+    body {
+        margin-top: auto !important
+    }
+}
+
 @-moz-document domain("kinosezon.net") {
     #subheader {
         padding-top: 0 !important
@@ -4386,6 +4394,12 @@
 @-moz-document domain("sportarena.com") {
     .admineditor-menu {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("sportkp.ru") {
+    .header-middle-wrapper {
+        height: auto !important
     }
 }
 
