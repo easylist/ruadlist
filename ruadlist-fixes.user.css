@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220103.2334
+@version        0.20220104.2255
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1976,6 +1976,12 @@
     .m-special, .mc_match a[href*="/betting"], footer a[href*="/betting"], 
     header a[href*="/betting"] {
         display: none !important
+    }
+}
+
+@-moz-document domain("forbes.ru") {
+    .UNoyu {
+        height: calc(var(--vh, 1vh)*100 - 1px) !important
     }
 }
 
@@ -4992,8 +4998,8 @@
 }
 
 @-moz-document domain("www.kinopoisk.ru") {
-    html:not(#id):not([style="height: 100%; width: 100%;"]) {
-        background-color: #e6e6e6 !important
+    .app div[class^="device"][class*=" page-main__content"] {
+        background-color: black !important
     }
     div[class^="styles_emptyItems__"] div {
         background-color: transparent !important
