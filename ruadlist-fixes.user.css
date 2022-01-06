@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220104.2358
+@version        0.20220106.2035
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4167,6 +4167,9 @@
 }
 
 @-moz-document domain("root-nation.com") {
+    body {
+        background-color: inherit !important
+    }
     .backstretch {
         display: none !important
     }
