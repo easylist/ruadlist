@@ -406,6 +406,7 @@ ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !imp
 ||pulse.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~pulse.mail.ru
 ||r.mradx.net/img/*.js|$empty,script
 ||recostream.go.mail.ru^$domain=~pulse.mail.ru|~recostream.go.mail.ru
+||ru/count/$image,important,redirect-rule=1x1.gif,domain=mail.ru|sportmail.ru
 ||static.viqeo.tv/js/vq_starter.js$third-party,domain=~dom.mail.ru|mail.ru
 ! старый интерфейс почты
 e.mail.ru##+js(json-prune, [].slot)
