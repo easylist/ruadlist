@@ -1981,6 +1981,9 @@ google.by,google.com,google.com.ua,google.kz,google.ru##mobile-promo
 !#if env_chromium
 www.google.*##+js(abort-current-script, String, consentCookiePayload)
 !#endif
+!#if env_edge
+www.google.*##+js(abort-current-script, String, consentCookiePayload)
+!#endif
 !#if env_firefox
 www.google.*##^script:has-text(/consentCookiePayload.*nidCookiePayload/)
 !#endif
