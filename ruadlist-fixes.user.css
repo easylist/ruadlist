@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220107.1209
+@version        0.20220111.1948
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -310,6 +310,9 @@
   domain("v1.ru") {
     .right-column-container > .right-column > div, noindex > div[class]:empty {
         height: auto !important
+    }
+    body > .l-wrapper > div[style^="position: absolute; width: 30px; height: 30px; bottom: 13px; left: 10px;"] {
+        opacity: unset !important
     }
 }
 
@@ -1311,7 +1314,7 @@
   domain("cinema-hd.ru"),
   domain("dc-marvel.org"),
   domain("filmshd.vip"),
-  domain("newseries.club") {
+  domain("newseries.me") {
     .wrap {
         padding-top: 0 !important
     }
