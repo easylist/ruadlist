@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220111.1948
+@version        0.20220113.1737
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1734,7 +1734,6 @@
 
 @-moz-document
   domain("eksmo.ru"),
-  domain("lenta.ru"),
   domain("live-rutor.org"),
   domain("liverutor.org"),
   domain("new-rutor.org"),
@@ -2131,6 +2130,7 @@
 @-moz-document
   domain("gagadget.com"),
   domain("gazeta.ru"),
+  domain("lenta.ru"),
   domain("ngs.ru"),
   domain("rambler.ru") {
     body:not(#id) {
@@ -2222,11 +2222,8 @@
 }
 
 @-moz-document domain("gazeta.ua") {
-    #header-wrapper > header > *, body > * {
-        pointer-events: auto !important
-    }
-    #header-wrapper > header, body {
-        pointer-events: none !important
+    #ad-300 + .w {
+        margin-top: unset !important
     }
 }
 
