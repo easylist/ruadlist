@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220113.1810
+@version        0.20220113.1816
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -197,11 +197,9 @@
   domain("kintor.org"),
   domain("koshara.net"),
   domain("kronverkcinema.ua"),
-  domain("live-rutor.org"),
   domain("livehdrezka.com"),
   domain("liveivi.com"),
   domain("livekinopoisk.com"),
-  domain("liverutor.org"),
   domain("lostserials.com"),
   domain("lotzon.co"),
   domain("lotzon.pro"),
@@ -211,7 +209,6 @@
   domain("mrutor.org"),
   domain("my-tfile.org"),
   domain("myhdrezka.com"),
-  domain("new-rutor.org"),
   domain("newstudio.tv"),
   domain("nexthdrezka.com"),
   domain("nnm-club.me"),
@@ -239,7 +236,6 @@
   domain("tfilm.club"),
   domain("tfilm.me"),
   domain("tfilm.tv"),
-  domain("the-rutor.org"),
   domain("thehdrezka.com"),
   domain("torentor.co"),
   domain("torrfan.org"),
@@ -2120,8 +2116,8 @@
   domain("gazeta.ru"),
   domain("lenta.ru"),
   domain("ngs.ru"),
-  domain("rns.online"),
-  domain("rambler.ru") {
+  domain("rambler.ru"),
+  domain("rns.online") {
     body:not(#id) {
         overflow: auto !important
     }
@@ -3075,16 +3071,6 @@
     .adsbygoogle {
         position: fixed !important;
         top: -10000px !important
-    }
-}
-
-@-moz-document
-  domain("live-rutor.org"),
-  domain("liverutor.org"),
-  domain("new-rutor.org"),
-  domain("the-rutor.org") {
-    body {
-        overflow: auto !important
     }
 }
 
