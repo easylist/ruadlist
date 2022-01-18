@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220115.2156
+@version        0.20220118.1858
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3869,9 +3869,6 @@
   domain("pornolab.biz"),
   domain("pornolab.cc"),
   domain("pornolab.net") {
-    [id*="adbloc"] {
-        display: none !important
-    }
     .site-logo {
         max-height: 90px !important;
         width: auto !important
@@ -4282,6 +4279,12 @@
 @-moz-document domain("shaiba.kz") {
     .page-layout-without-banner {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("shazoo.ru") {
+    html:not(.dark) > body {
+        background: initial !important
     }
 }
 
