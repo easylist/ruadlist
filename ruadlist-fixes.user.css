@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220120.1159
+@version        0.20220120.1346
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1082,6 +1082,12 @@
     body[class*="-ru"] > .content > div[class]:last-child > div > div[class]:first-child ~ div:nth-child(n+1), 
     body[class*="-ru"] > div[class]:not([id]):nth-child(-n+2) {
         display: none !important
+    }
+}
+
+@-moz-document domain("bigboss.video") {
+    video {
+        filter: none !important
     }
 }
 
