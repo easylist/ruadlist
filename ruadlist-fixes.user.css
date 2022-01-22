@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220121.2156
+@version        0.20220122.1655
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -21,7 +21,6 @@
 
 @-moz-document
   domain("101kinopoisk.com"),
-  domain("thekinopoisk.com"),
   domain("24video.adult"),
   domain("24video.in"),
   domain("99kinopoisk.com"),
@@ -109,6 +108,7 @@
   domain("sc2tv.ru"),
   domain("smotri.com"),
   domain("stopgame.ru"),
+  domain("thekinopoisk.com"),
   domain("tryhdrezka.com"),
   domain("tvhdrezka.com"),
   domain("uateam.tv"),
@@ -127,7 +127,6 @@
 
 @-moz-document
   domain("101kinopoisk.com"),
-  domain("thekinopoisk.com"),
   domain("24video.adult"),
   domain("24video.in"),
   domain("99kinopoisk.com"),
@@ -243,6 +242,7 @@
   domain("tfilm.me"),
   domain("tfilm.tv"),
   domain("thehdrezka.com"),
+  domain("thekinopoisk.com"),
   domain("torentor.co"),
   domain("torrfan.org"),
   domain("trupornolabs.org"),
@@ -5144,6 +5144,8 @@
     .blocks-grid__item_static > .direct_type_stripe, 
     .home-arrow [data-bem*="yabrowser-promo"], .home-arrow__bottom, 
     .mini-suggest__item > a[href*="://yabs.yandex."][href*="/count/"], 
+    .mini-suggest__item > a[href*="://yandex."][href*="/clck/"], 
+    .mini-suggest__item > a[href][target="_blank"], 
     .serp-item div[class*="advanced-polaroid"], .serp-list > .incut > .direct, 
     .sidebar-container .search-advert-badge, 
     .sport-app__layout > .mg-grid__col:first-child + div:not(:last-child) > .mg-sticky, 
