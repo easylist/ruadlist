@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220122.1655
+@version        0.20220122.1809
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5141,6 +5141,7 @@
   domain("yandex.ua"),
   domain("yandex.uz") {
     .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
+    .b-page.overlay[data-bem*="serp-metrika"] > .DistrSplashscreen, 
     .blocks-grid__item_static > .direct_type_stripe, 
     .home-arrow [data-bem*="yabrowser-promo"], .home-arrow__bottom, 
     .mini-suggest__item > a[href*="://yabs.yandex."][href*="/count/"], 
@@ -5189,6 +5190,9 @@
     }
     .feed__row[id^="zen-row-"] .feed__item-wrap > .feed__item {
         min-height: auto !important
+    }
+    .b-page.overlay[data-bem*="serp-metrika"] {
+        overflow-y: auto !important
     }
     .b-page {
         padding-top: 0 !important
