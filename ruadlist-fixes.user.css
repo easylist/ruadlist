@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220125.1536
+@version        0.20220127.1844
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2743,8 +2743,8 @@
 
 @-moz-document
   domain("kaluga-poisk.ru"),
-  domain("yola-poisk.ru"),
-  domain("yasniy-city.ru") {
+  domain("yasniy-city.ru"),
+  domain("yola-poisk.ru") {
     body:not(#id) {
         background: whitesmoke !important
     }
@@ -4590,6 +4590,7 @@
 }
 
 @-moz-document
+  domain("the-village-kz.com"),
   domain("the-village.com.ua"),
   domain("the-village.me"),
   domain("the-village.ru") {
