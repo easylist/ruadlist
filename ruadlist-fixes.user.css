@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220128.1356
+@version        0.20220128.1450
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4266,6 +4266,9 @@
     .PageLayout-Main > section ~ div[class*=" "] > div, 
     aside > div[class]:first-child {
         height: auto !important
+    }
+    div[class$="_fixH"] {
+        min-height: 0 !important
     }
 }
 
