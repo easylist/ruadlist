@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220127.1844
+@version        0.20220128.1356
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1375,6 +1375,14 @@
     .blocked, .blocked .text, .locked .example {
         filter: none !important;
         -webkit-filter: none !important
+    }
+}
+
+@-moz-document domain("conversion.im") {
+    #mainContainer {
+        cursor: auto !important;
+        padding-top: unset !important;
+        background-color: inherit !important
     }
 }
 
@@ -4651,6 +4659,15 @@
 @-moz-document domain("tort.fm") {
     #topper_up {
         height: 88px !important
+    }
+}
+
+@-moz-document domain("tourpom.ru") {
+    .modal-open .adv_modal, .modal-open > .modal-backdrop {
+        display: none !important
+    }
+    .modal-open {
+        overflow: auto !important
     }
 }
 
