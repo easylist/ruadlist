@@ -391,7 +391,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://radikal\.ru\/[a-z0-9]+\.js$/$script,domain=radikal.ru
 /^https?://rsload\.net\/(?!engine\/|templates\/)/$script,domain=rsload.net
 /^https?://rsload\.net\/engine\/(?!classes\/min\/index\.php)/$script,domain=rsload.net
-/^https?://serveradmin\.ru\/(?!wp-content\/|wp-includes\/js\/)/$script,domain=serveradmin.ru
 /^https?://soft-windows\.info\/(?!engine\/|templates\/)/$script,domain=soft-windows.info
 /^https?://sverhestestvennoe\.info\/(?!wp-content\/|wp-includes\/)/$script,domain=sverhestestvennoe.info
 /^https?://toreents\.club\/(?!templates\/|engine\/)/$script,domain=toreents.club
@@ -410,6 +409,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://www\.kinopoisk\.ru/[^\s]{300,}/$popup,subdocument,domain=www.kinopoisk.ru
 /^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
 /^https?://x-video\.top\/(?!engine\/|templates\/)/$script,domain=x-video.top
+/^https?:\/\/(?!serveradmin.ru\/wp-admin\/js\/password-strength-meter.min.js$|serveradmin.ru\/wp-admin\/js\/user-profile.min.js$|serveradmin.ru\/wp-includes\/js\/backbone.min.js$|serveradmin.ru\/wp-includes\/js\/comment-reply.min.js$|serveradmin.ru\/wp-includes\/js\/dist\/hooks.min.js$|serveradmin.ru\/wp-includes\/js\/dist\/i18n.min.js$|serveradmin.ru\/wp-includes\/js\/dist\/vendor\/regenerator-runtime.min.js$|serveradmin.ru\/wp-includes\/js\/dist\/vendor\/wp-polyfill.min.js$|serveradmin.ru\/wp-includes\/js\/jquery\/jquery-migrate.min.js$|serveradmin.ru\/wp-includes\/js\/jquery\/jquery.min.js$|serveradmin.ru\/wp-includes\/js\/jquery\/suggest.min.js$|serveradmin.ru\/wp-includes\/js\/mediaelement\/wp-mediaelement.min.js$|serveradmin.ru\/wp-includes\/js\/mediaelement\/mediaelement-migrate.min.js$|serveradmin.ru\/wp-includes\/js\/mediaelement\/mediaelement-and-player.min.js$|serveradmin.ru\/wp-includes\/js\/mediaelement\/wp-playlist.min.js$|serveradmin.ru\/wp-includes\/js\/underscore.min.js$|serveradmin.ru\/wp-includes\/js\/wp-util.min.js$|serveradmin.ru\/wp-includes\/js\/wp-emoji-release.min.js$|serveradmin.ru\/wp-includes\/js\/zxcvbn-async.min.js$|serveradmin.ru\/wp-includes\/js\/zxcvbn.min.js$|serveradmin.ru\/wp-content\/plugins\/dk-pdf\/assets\/js\/frontend.js$|serveradmin.ru\/wp-content\/plugins\/luckywp-table-of-contents\/front\/assets\/main.min.js$|serveradmin.ru\/wp-content\/plugins\/table-of-contents-plus\/front.min.js$|serveradmin.ru\/wp-content\/plugins\/wp-user-avatar\/assets\/flatpickr\/flatpickr.min.js$|serveradmin.ru\/wp-content\/plugins\/wp-user-avatar\/assets\/js\/frontend.min.js$|serveradmin.ru\/wp-content\/plugins\/wpforo\/wpf-assets\/js\/ajax.js$|serveradmin.ru\/wp-content\/plugins\/wpforo\/wpf-assets\/js\/frontend.js$|serveradmin.ru\/wp-content\/plugins\/wpforo\/wpf-themes\/classic\/phrases.js$|serveradmin.ru\/wp-content\/themes\/sahifa\/js\/ilightbox.packed.js$|serveradmin.ru\/wp-content\/themes\/sahifa\/js\/postviews-cache.js$|serveradmin.ru\/wp-content\/themes\/sahifa\/js\/tie-scripts.js$)/$script,domain=serveradmin.ru|~wpt.serveradmin.ru
 /^https?:\/\/www\.internet-technologies\.ru\/(?!ajax\.php)/$xmlhttprequest,domain=internet-technologies.ru
 /^https?:\/\/www\.liveinternet\.ru\/[^\s]{56,}\.js$/$script,domain=www.liveinternet.ru
 /ad*.tutu.ru^*_*.php|
@@ -2779,7 +2779,6 @@ lada.kz/uploads/banners/
 ||seopult.ru^*/_img/banners/
 ||sergeistrelec.ru/templates/sstr^$script
 ||server1.seti.ee/www/ender/
-||serveradmin.ru/*/ww
 ||servers-samp.ru^*.php$script
 ||servisvk.ru^$domain=igromania.ru
 ||seti.ee*/reklaam/
