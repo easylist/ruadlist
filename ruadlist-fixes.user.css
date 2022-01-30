@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220128.1450
+@version        0.20220130.1502
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3780,6 +3780,12 @@
         position: fixed !important;
         top: -10000px !important;
         left: -10000px !important
+    }
+}
+
+@-moz-document domain("partnerkin.com") {
+    .header-clear {
+        margin-bottom: 0 !important
     }
 }
 
