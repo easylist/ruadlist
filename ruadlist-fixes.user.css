@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220130.1502
+@version        0.20220131.1532
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2959,13 +2959,13 @@
 }
 
 @-moz-document
-  domain("kp.by"),
   domain("kp.kg"),
   domain("kp.kz"),
   domain("kp.md"),
   domain("kp.ru") {
     aside[class^="styled__Aside-"] > div, 
-    div[class^="styled__AsideWrapper-"] > div {
+    div[class^="styled__AsideWrapper-"] > div, 
+    div[class^="styled__RightCol-"] > div {
         height: auto !important
     }
     div[class^="styled__Branding-"] {

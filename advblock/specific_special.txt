@@ -220,6 +220,35 @@ $third-party,script,xmlhttprequest,domain=kino-live2.org|kino-live8.biz
 @@||googleads.g.doubleclick.net/$xmlhttprequest,domain=kino-live2.org|kino-live8.biz
 kino-live2.org,kino-live8.biz#?#div[class^="right"] .ramka1:-abp-has(noindex)
 !
+! Комсомольская правда
+kp.kg,kp.kz,kp.md,kp.ru##div[class^="styled__LentaWrapper-"]
+kp.kg,kp.kz,kp.md,kp.ru##div[class^="styled__SlideContainer-"]
+kp.kg,kp.kz,kp.md,kp.ru##div[class^="styled__TopBarLinks-"] > a[href^="https://advert.kp.ru"]
+kp.kg,kp.kz,kp.md,kp.ru##div[data-slot-name]
+! спецпроекты, типа отдых в россии
+kp.ru##.kupi-reklamu-btn
+kp.ru##.rcard_link
+! путеводитель
+kp.ru###sidebar-block-top
+kp.ru##.serial-content_container:empty
+! гид потребителя
+kp.ru###HTML1.image_header
+kp.ru#?##allrecords > div[id^=rec]:-abp-has([href*="/ad.admitad.com/"])
+kp.ru#?##allrecords > div[id^=rec]:-abp-has([id^="marketWidget"])
+kp.ru###saContent .boxFrame
+kp.ru###saContent .kprCont
+kp.ru##.cmn_r
+kp.ru##.kplContTxt > img[src*="//qpicture.ru/"]
+kp.ru##div[id^="rec"] > div div[style="align-items:center;"]
+||kp.ru/guide/js/brp.js
+! афиша
+kp.ru##.afisha-r__block
+kp.ru##.page-header_tell[href*="/reklama/"]
+! sport
+kp.ru##.grid-container[style*="height:"][style*="250px"]
+kp.ru##.page-header__menu-button--icon-loudspeaker
+kp.ru##div[class^="ad-slot__"]
+!
 ! Mail.ru
 ! Скрытие по-разделам
 ! Главная
