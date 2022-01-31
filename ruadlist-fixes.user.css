@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220131.1535
+@version        0.20220131.1732
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -265,6 +265,13 @@
   domain("zombie-film.live") {
     body:not(#id), html:not(#id) {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("1080kino.net") {
+    .wrap {
+        padding-top: 0 !important;
+        top: 0 !important
     }
 }
 
