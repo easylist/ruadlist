@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220131.2210
+@version        0.20220201.2330
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4354,6 +4354,18 @@
     }
 }
 
+@-moz-document domain("smartmama.com.ua") {
+    body {
+        background-image: none !important
+    }
+    body > a {
+        display: none !important
+    }
+    #page {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("smb.ixbt.com") {
     .smb-bg {
         background: none !important
@@ -5285,8 +5297,8 @@
 @-moz-document
   domain("zagonka.net"),
   domain("zagonka.tv"),
-  domain("zogonka.org"),
-  domain("zagonko.org") {
+  domain("zagonko.org"),
+  domain("zogonka.org") {
     #sitebox:not(#id) {
         margin-top: 0 !important
     }
