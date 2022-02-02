@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220202.1411
+@version        0.20220202.1713
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5243,7 +5243,8 @@
     .feed__row[id^="zen-row-"] .feed__item-wrap > .feed__item {
         min-height: auto !important
     }
-    .b-page.overlay[data-bem*="serp-metrika"] {
+    .b-page.overlay[data-bem*="serp-metrika"], 
+    .document_infinity-zen-loading_yes:not(.document_modal_yes) body {
         overflow-y: auto !important
     }
     .b-page {
