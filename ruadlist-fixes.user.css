@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220201.2330
+@version        0.20220202.1411
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3421,6 +3421,14 @@
     }
 }
 
+@-moz-document
+  domain("modernrock.ru"),
+  domain("newsoneua.tv") {
+    body {
+        background: none !important
+    }
+}
+
 @-moz-document domain("more.tv") {
     .framework__subscription {
         display: none !important
@@ -3600,12 +3608,6 @@
   domain("sportmail.ru") {
     div[data-module="LazyLoad.PromoPopup"] .js-module.block {
         display: none !important
-    }
-}
-
-@-moz-document domain("newsoneua.tv") {
-    body {
-        background: none !important
     }
 }
 
