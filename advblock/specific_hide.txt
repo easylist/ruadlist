@@ -100,6 +100,7 @@ arminfo.info,pogoda.by###animation_container
 thequestion.ru###answers div[style*="overflow:hidden"]
 komedra.com###apext
 zaycev.net###app > .spa-wrapper ~ div
+www.fontanka.ru###app > div > div[class] > div[class]:first-child > div[class]:first-child
 old.cfts.org.ua###app-view > script + .row > article ~ .col-md-3
 ecology.md###article > .right-block
 mk.ru###article-left-adds
@@ -1297,12 +1298,10 @@ ixbt.com##.Blocksmaster
 unews.pro#?#.BodyNewsStyle:-abp-has(> div > [id^="yandex_rtb"])
 f1analytic.com##.BoxVideo.clear ~ .BoxVideo.clear
 mail.google.com##.Bu.y3
-www.fontanka.ru##.C-ad
 meduza.io##.DFPBanner-root
 euro2016.cc##.DmWidget
 vk.com##.EcommFeedItemsBlock
 nulled.cc##.EstBS-bnContent
-fontanka.ru##.FPad
 fanfics.me##.FicHead.ContentTable > .left
 sdamgia.ru##.Footer-Partner
 myshows.me#?#.Grid-in .GridItem:-abp-has(> div > [href*="hd.kinopoisk.ru"])
@@ -6132,7 +6131,6 @@ bitcryptonews.ru##aside > noindex
 jooble.org##aside > section[class^="ad"]
 stankiexpert.ru##aside a[id][href][target="_blank"]
 riwkus.pro##aside a[onclick^="yaCounter"]
-fontanka.ru#?#aside div:-abp-has(> div[id^="div-gpt-ad-"])
 mk.ru#?#aside div:-abp-has(> script:-abp-contains(/adbdect|adfox|advmanager/i))
 mk.ru#?#aside div:-abp-has(> script:-abp-contains(blockId))
 magtimes.info##aside img[src^="http://magtimes.info/wp-content/uploads/"]
@@ -6366,6 +6364,7 @@ rusprofile.ru#?#div:-abp-has(> div > [id^="adfox_"])
 rusprofile.ru#?#div:-abp-has(> div > [id^="yandex_rtb"])
 okna.ua#?#div:-abp-has(> div[id][data-url])
 silver.ru#?#div:-abp-has(> div[id^="M"][id*="Composite"])
+fontanka.ru#?#div:-abp-has(> div[id^="div-gpt-ad-"])
 koolinar.ru#?#div:-abp-has(> header ~ a[href][rel="sponsored"])
 kanobu.ru#?#div:-abp-has(> iframe[title="igromania"])
 gdzguru.com#?#div:-abp-has(> img[src*="ops."])
@@ -7531,14 +7530,12 @@ liveinternet.ru##script + div[id] > div[style^="width:"]
 sftv.ru##script[src*="iwantyourpromo.com"] ~ div[align="center"]
 megaimg.ru##script[src^="http://am10.ru/"] + center
 car72.ru##section > .container-fluid > div[style^="width:"][style$="%"]
-fontanka.ru#?#section > div > :not(article) div:-abp-has(> div > [id^="adfox_"])
-fontanka.ru#?#section noindex ~ div div:-abp-has(> div[class] > div[id^="div-gpt-ad-"])
 superdom.ua#?#section:-abp-has(> h2:-abp-contains(/новости партн/i))
 bbc.com##section[aria-label^="Реклама"]
 www.fontanka.ru##section[class] > div:not([class]) > div:first-child + div + div > div:first-child
 www.fontanka.ru##section[class] > div:not([class]) > div:first-child > div:first-child + div > noindex + div + div > div:first-child + div + div
 vikka.ua##section[id^="ctup_ads-"]
-www.fontanka.ru#?#section[itemprop="articleBody"] > div > div:-abp-has(> div[class] > div[id^="div-gpt-ad-"])
+www.fontanka.ru##section[itemprop="articleBody"] > div[class] > div:not([class])
 bhf.io##span > a[href][target="_blank"][rel="nofollow"]
 sport.tut.by#?#span > small:-abp-contains(Приведённые букмекерские коэффициенты)
 vmgu.ru#?#span.articles_info > b:-abp-contains(Реклама:)
