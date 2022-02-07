@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220202.1713
+@version        0.20220207.1514
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4137,8 +4137,14 @@
 }
 
 @-moz-document domain("rbkgames.com") {
+    html[xmlns] {
+        background-image: none !important
+    }
     .branding .main-content {
-        margin-top: 60px !important
+        margin-top: 90px !important
+    }
+    .poster-grid-item > a[target="_blank"]:first-child {
+        pointer-events: none !important
     }
 }
 
@@ -5243,9 +5249,12 @@
     .feed__row[id^="zen-row-"] .feed__item-wrap > .feed__item {
         min-height: auto !important
     }
-    .b-page.overlay[data-bem*="serp-metrika"], 
-    .document_infinity-zen-loading_yes:not(.document_modal_yes) body {
+    .b-page.overlay[data-bem*="serp-metrika"] {
         overflow-y: auto !important
+    }
+    .document_infinity-zen-loading_yes:not(.document_modal_yes), 
+    .document_infinity-zen-loading_yes:not(.document_modal_yes) > body {
+        overflow-y: unset !important
     }
     .b-page {
         padding-top: 0 !important
@@ -5288,12 +5297,6 @@
     }
     .top-line + header.main {
         top: auto !important
-    }
-}
-
-@-moz-document domain("youtube.com") {
-    #columns > #secondary {
-        overflow: hidden !important
     }
 }
 
