@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220207.1514
+@version        0.20220210.121
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1971,6 +1971,12 @@
     }
 }
 
+@-moz-document domain("footballhub.com.ua") {
+    .page-container {
+        top: 0 !important
+    }
+}
+
 @-moz-document domain("footballtransfer.com.ua") {
     center + br + div[style*="background-color: #ebebeb"] {
         margin-top: auto !important
@@ -1991,6 +1997,15 @@
     .b-page__right-col > .m-special + style[id] + div, .b-sw__table, .bonus-bk, 
     .m-special, .mc_match a[href*="/betting"], footer a[href*="/betting"], 
     header a[href*="/betting"] {
+        display: none !important
+    }
+}
+
+@-moz-document domain("footboom.com") {
+    .best-coeffs, .bet-informer-content__wrapper, .bet-informer-name__container, 
+    .match-center__slider-wrapper, .outcomes-wrap, .owl-loaded, 
+    .right-column > [class^="bookie-rating"] + div, .unit-coefficients, 
+    [class^="bookie-rating"], body > #tooltip {
         display: none !important
     }
 }
