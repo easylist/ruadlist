@@ -1184,8 +1184,8 @@ zen.yandex.*##div[class*="yandex-direct"]
 ! реклама в шапке форума
 4pda.*##html:not([style]) tbody > tr[valign="top"] > td[width*="20"] + td[class]
 ! реклама при скачивании на форуме
-4pda.*###lbOverlay
 4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
+4pda.*#?##lbOverlay:style(background: none !important)
 !
 ! Экспериментальные правила для маркеров
 $document,removeparam=fm,domain=go.mail.ru|r.mail.ru
