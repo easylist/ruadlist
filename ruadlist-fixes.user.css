@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220210.121
+@version        0.20220210.1254
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4367,6 +4367,12 @@
 @-moz-document domain("simhost.org") {
     .top_bg {
         height: 0 !important
+    }
+}
+
+@-moz-document domain("sinema.top") {
+    #wrp {
+        margin-top: 0 !important
     }
 }
 
