@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220210.1254
+@version        0.20220210.1300
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2338,25 +2338,6 @@
     #header_box {
         height: auto !important;
         min-height: auto !important
-    }
-}
-
-@-moz-document domain("grippua.com.ua") {
-    body {
-        background-image: none !important;
-        pointer-events: none !important
-    }
-    body > div {
-        background: none !important
-    }
-    a[href*="utm_campai"] > div > img {
-        display: none !important
-    }
-    body > :not(a) {
-        pointer-events: auto !important
-    }
-    a[href*="utm_campai"] {
-        pointer-events: none !important
     }
 }
 
