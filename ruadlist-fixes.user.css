@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220210.1300
+@version        0.20220212.440
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2669,6 +2669,12 @@
     }
     .entry-content > [class*=" "][style="text-align: center;"] {
         display: none !important
+    }
+}
+
+@-moz-document domain("itc.ua") {
+    a[href*="utm_campai"] {
+        pointer-events: none !important
     }
 }
 
