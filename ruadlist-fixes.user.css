@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220213.1303
+@version        0.20220214.119
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3067,8 +3067,21 @@
     .b-board._olimp > .b-board__wrap {
         margin-left: 0 !important
     }
+    div[class="board _winline _rubric"] {
+        margin-right: unset !important
+    }
+    .layout__content, .layout__footer {
+        padding-right: unset !important
+    }
     .js-lower-column, .js-top-column {
         position: relative !important
+    }
+    .main-page__section > div[class^="slider"] {
+        right: unset !important;
+        min-width: unset !important
+    }
+    .header__my {
+        width: unset !important
     }
 }
 
