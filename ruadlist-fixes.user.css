@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220214.119
+@version        0.20220215.1227
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2977,6 +2977,9 @@
   domain("kp.kz"),
   domain("kp.md"),
   domain("kp.ru") {
+    div[class^="styled__TopBarLinks-"] > a[href^="https://advert.kp.ru"] {
+        display: none !important
+    }
     aside[class^="styled__Aside-"] > div, 
     div[class^="styled__AsideWrapper-"] > div, 
     div[class^="styled__RightCol-"] > div {
