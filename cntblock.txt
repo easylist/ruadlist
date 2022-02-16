@@ -1075,6 +1075,7 @@ zannn.top#@?#this-is-a-malicious-site
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 @@/^https?://yandex\.ru\/turbo[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
 @@://yandex.*/news/$generichide
+@@://yandex.*/news|$generichide
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype._getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
 mail.yandex.*#?#+js(abort-on-property-read, Object.prototype.AdvPresenter)
