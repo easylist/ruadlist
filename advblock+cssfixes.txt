@@ -378,6 +378,7 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ~e.mail.ru,mail.ru###projects [data-alias="mra"]
 webagent.mail.ru#@#+js()
 ok.ru##+js(abort-on-property-read, OK.hooks)
+ok.ru##+js(abort-on-property-read, globalAuthLoginPopupCounter)
 ok.ru##+js(abort-on-property-write, mailruEnabled)
 minigames.mail.ru,okminigames.mail.ru##+js(no-setTimeout-if, advBlock)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.ENABLE_SMOKESCREEN, undefined)
