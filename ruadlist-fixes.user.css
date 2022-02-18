@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220215.1232
+@version        0.20220218.1414
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2840,9 +2840,12 @@
     }
 }
 
-@-moz-document domain("kinogo-net.org") {
+@-moz-document
+  domain("kinogo-net.org"),
+  domain("senpai.cc") {
     .wr {
-        padding-top: 64px !important
+        padding-top: 64px !important;
+        margin-top: unset !important
     }
 }
 
