@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220219.1515
+@version        0.20220220.1536
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5068,6 +5068,9 @@
     }
     #content-container {
         padding-top: 0 !important
+    }
+    a[href^="https://www.goha.ru/~"] {
+        pointer-events: none !important
     }
     #content-container > div:empty {
         position: unset !important
