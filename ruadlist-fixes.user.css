@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220221.2011
+@version        0.20220221.2016
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -966,6 +966,19 @@
 @-moz-document domain("app2top.ru") {
     .page-wrapper {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("asienda.ru"),
+  domain("diets.ru"),
+  domain("mycharm.ru"),
+  domain("myjane.ru"),
+  domain("povarenok.ru"),
+  domain("relook.ru"),
+  domain("stranamam.ru") {
+    body {
+        background-color: inherit !important
     }
 }
 
@@ -3973,9 +3986,6 @@
 }
 
 @-moz-document domain("povarenok.ru") {
-    body {
-        background: none !important
-    }
     .sp-header-block {
         height: 50px !important
     }
