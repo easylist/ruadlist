@@ -5173,7 +5173,6 @@ goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 zoneofgames.ru##[data-role="sidebarAd"]
 malenkiy.ru##[data-role="sidebarAd"] > center
 drive2.ru##[data-target^="drom_"]
-youla.ru##[data-test-component="AdCardHolder"]
 adme.ru#?#[data-test-id$="-recommended"] div[class*=" _"]:-abp-has(> div[class] > div[class]:empty)
 1fnl.ru##[data-tizer-id="partners"]
 my.ua##[data-top-iid]
@@ -6812,7 +6811,6 @@ irr.by##div[data-banner-class]
 bombardir.ru##div[data-banner_id]
 ex-press.by##div[data-class-name="ads_engine"]
 kufar.by##div[data-container-id^="adfox_"]
-youla.ru##div[data-container="AdTopBannerContainer"]
 gitarist05.jimdo.com##div[data-container="sidebar"] div[class*="j-imageSubtitle"]
 gitarist05.jimdo.com##div[data-container="sidebar"] div[class*="j-text"]
 anime.anidub.life,online.anidub.com#?#div[data-dlebviews]:-abp-has(> center > [id^="adfox_"])
@@ -6827,7 +6825,7 @@ internet-technologies.ru##div[data-region="main-bottom"]
 internet-technologies.ru##div[data-region=aside-left]:empty
 internet-technologies.ru##div[data-region=aside-sticking]:empty
 kinokrad.co##div[data-sticky_column]
-youla.ru#?#div[data-test-component="ProductOrAdCard"]:-abp-has(> [data-test-component="AdCardHolder"])
+youla.ru##div[data-test-component="ProductOrAdCard"] > span[data-debug-info]
 olx.kz,olx.ua,olx.uz##div[data-testid="qa-advert-slot"]
 forbes.ru##div[data-title="Реклама на Forbes"]
 malagarusa.es##div[data-uk-slideshow]
