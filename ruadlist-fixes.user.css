@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220222.1929
+@version        0.20220222.2005
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1911,6 +1911,7 @@
 
 @-moz-document
   domain("filmix.ac"),
+  domain("filmix.love"),
   domain("filmix.beer"),
   domain("filmix.biz"),
   domain("filmix.buzz"),
@@ -1926,9 +1927,6 @@
   domain("filmix.today"),
   domain("filmix.wiki"),
   domain("filmix.zone") {
-    .remove-sda-wrap {
-        display: none !important
-    }
     .main-wrapper, .page-wrapper {
         margin-top: 0 !important
     }
