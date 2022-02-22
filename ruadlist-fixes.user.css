@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220221.2016
+@version        0.20220222.1929
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5061,6 +5061,12 @@
     }
     body > #header {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("www.cnews.ru") {
+    .mt-auto {
+        margin-top: unset !important
     }
 }
 
