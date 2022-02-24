@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220223.1920
+@version        0.20220224.1956
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1379,8 +1379,8 @@
 
 @-moz-document
   domain("cont.ws"),
-  domain("kurs.com.ua"),
   domain("kraj.by"),
+  domain("kurs.com.ua"),
   domain("profile.ru") {
     body.modal-open > [class^="modal"] {
         display: none !important
@@ -4141,23 +4141,17 @@
     body > [data-yandex-name="blockad_click"] {
         display: none !important
     }
-    .js-forecast-passback {
-        height: auto !important
-    }
     .l-small-width-top-padding {
         padding-top: unset !important
-    }
-    .l-news-feed-top-padding .news-feed__container[style="top: 212px;"] {
-        top: 212px !important
-    }
-    .l-news-feed-top-padding .news-feed__container[style="top: 45px;"] {
-        top: 45px !important
     }
 }
 
 @-moz-document
   domain("rbc.ru"),
   domain("sportrbc.ru") {
+    .g-relative >.forecast {
+        height: auto !important
+    }
     .g-banner__news-footer {
         min-height: 0 !important
     }
@@ -4166,12 +4160,7 @@
         height: auto !important
     }
     #js_col_left > .l-sticky {
-        position: relative !important;
-        top: 0 !important
-    }
-    .js-news-feed > .news-feed {
-        position: relative !important;
-        top: unset !important
+        position: relative !important
     }
 }
 
