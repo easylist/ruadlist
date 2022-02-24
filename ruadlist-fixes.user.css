@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220224.1956
+@version        0.20220224.2015
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2224,6 +2224,9 @@
 }
 
 @-moz-document domain("gamer-info.com") {
+    body > div:not([id]):not([class]) > div[class] > div[class] {
+        background-image: none !important
+    }
     body > div:not([id]):not([class]) > div[class] {
         padding-top: unset !important;
         background-color: inherit !important
@@ -4149,7 +4152,7 @@
 @-moz-document
   domain("rbc.ru"),
   domain("sportrbc.ru") {
-    .g-relative >.forecast {
+    .g-relative > .forecast {
         height: auto !important
     }
     .g-banner__news-footer {
