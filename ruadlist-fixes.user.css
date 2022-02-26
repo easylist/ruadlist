@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220224.2118
+@version        0.20220226.1536
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2211,6 +2211,15 @@
     #content.site-max-width {
         margin-top: 0 !important;
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("gameguru.ru") {
+    body {
+        background-color: inherit !important
+    }
+    #mainContent > section:first-of-type {
+        margin-top: unset !important
     }
 }
 
