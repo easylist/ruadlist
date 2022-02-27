@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220226.1536
+@version        0.20220227.1420
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4213,6 +4213,24 @@
     }
 }
 
+@-moz-document
+  domain("reshuoge.ru"),
+  domain("reshuege.ru"),
+  domain("sdamgia.ru") {
+    div[id^="rota"], 
+    div[style^="height:"][style*="width:"][style*="margin: 0 auto;"] {
+        display: none !important
+    }
+    .menu[role="navigation"] > div[style*="height:"], 
+    aside > div[class]:first-child, aside > div[class]:first-child > div {
+        height: auto !important
+    }
+    .PageLayout-Main > div[class*=" "] {
+        min-height: auto !important;
+        height: auto !important
+    }
+}
+
 @-moz-document domain("ria.ru") {
     .m-blur ~ #modalLayer {
         display: none !important
@@ -4327,16 +4345,8 @@
 }
 
 @-moz-document domain("sdamgia.ru") {
-    .wrapper > div[class] > [style*="red;"][style*="font-size:"], 
-    div[id^="rotator"], div[style^="height: 20"][style*="margin: 0 auto;"] {
+    .wrapper > div[class] > [style*="red;"][style*="font-size:"] {
         display: none !important
-    }
-    .PageLayout-Main > section ~ div[class*=" "] > div, 
-    aside > div[class]:first-child {
-        height: auto !important
-    }
-    div[class$="_fixH"] {
-        min-height: 0 !important
     }
 }
 
