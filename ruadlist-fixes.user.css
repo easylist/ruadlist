@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220301.1212
+@version        0.20220301.1741
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4392,6 +4392,9 @@
 }
 
 @-moz-document domain("shazoo.ru") {
+    html.dark > body {
+        background-color: #171717 !important
+    }
     html:not(.dark) > body {
         background: initial !important
     }
