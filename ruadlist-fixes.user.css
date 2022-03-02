@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220301.1741
+@version        0.20220302.2019
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2327,6 +2327,12 @@
 @-moz-document domain("goclips.tv") {
     .video_content {
         height: auto !important
+    }
+}
+
+@-moz-document domain("gol.ru") {
+    .wrapper__content-inner:not(#id) {
+        padding-top: 0 !important
     }
 }
 
