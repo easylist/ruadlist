@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220303.1943
+@version        0.20220304.245
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4087,12 +4087,6 @@
     }
 }
 
-@-moz-document domain("quote.rbc.ru") {
-    #js_col_left > .l-sticky {
-        top: unset !important
-    }
-}
-
 @-moz-document domain("radikal.ru") {
     body[style*="cursor"] {
         background-image: none !important;
@@ -4184,7 +4178,8 @@
         height: auto !important
     }
     #js_col_left > .l-sticky {
-        position: relative !important
+        position: relative !important;
+        top: unset !important
     }
 }
 
