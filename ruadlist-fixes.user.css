@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220304.245
+@version        0.20220305.1120
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1746,18 +1746,6 @@
     }
     #app-canvas .application-mail__layout .layout__column_right {
         width: auto !important
-    }
-}
-
-@-moz-document domain("echo.msk.ru") {
-    .abcd, .cREWUr, [bcdef] > [id], [bcdef] > div:nth-of-type(-n+7) {
-        display: none !important
-    }
-    .first[id][style*="height"] {
-        height: auto !important
-    }
-    div[id] {
-        min-height: 0 !important
     }
 }
 
@@ -5345,6 +5333,9 @@
 }
 
 @-moz-document domain("yandex.ru") {
+    .stack div[class^="modal-R-A"] {
+        display: none !important
+    }
     div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section > div:first-child + div div ~ div ~ div ~ div > div {
         min-height: 0 !important
     }
