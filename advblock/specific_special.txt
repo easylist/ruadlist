@@ -114,6 +114,7 @@ auto.ru##.TaxiDriverOffer-module__container
 auto.ru##.fotorama__nav > [style="display: inline;"]
 /^https?://auto\.ru/(?!billing\/)[^\s]{200,}/$subdocument,domain=auto.ru
 auto.ru##:not(div)[class][style*="height:"][style*="display:block !important"]
+@@://auto.ru/$generichide
 auto.ru##a[href^="https://auto.ru/promo/osago/"]
 auto.ru##div[class$="__container"] > div[class$="__line_3"] > div[class$="__line_3_right"] > :not(div):not(a) > :not(div):not(a)
 auto.ru##div[name="credit"]
@@ -1075,7 +1076,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##img[src*="yandex.net/get-dire
 ||bs.yandex.$script
 ||jstracer.yandex.ru/jstracer?videodirect=
 ||kiks.yandex.
-||static-mon.yandex.net/static/main.js
+||static-mon.yandex.net/static/main.js$domain=~auto.ru
 ||strm.yandex.ru/get/$media,domain=yastatic.net
 ||yabs.yandex.*/show/$third-party
 ||yadi.sk^*direct?
