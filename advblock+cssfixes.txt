@@ -251,6 +251,7 @@ root-nation.com##^body > a
 rp5.*##+js(no-setTimeout-if, 0x)
 rutor.in##+js(abort-current-inline-script, document.createElement, ExternalChromePop)
 rutube.ru##+js(set-constant, Object.prototype.appearance.forbid_seek, undefined)
+samelectric.ru##+js(abort-on-property-read, XMLHttpRequest)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
 scrin.org##+js(abort-on-property-read, windowprops)
 scrin.org##+js(remove-attr, onclick, a)
