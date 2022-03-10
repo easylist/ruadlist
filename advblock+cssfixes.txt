@@ -59,7 +59,7 @@
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 afisha.ru,film.ru##+js(remove-attr, autoplay|loop, video, stay)
 all-episodes.club##+js(abort-on-property-read, advtss)
-allapteki.ru##+js(abort-on-property-read, localStorage)
+allapteki.ru##+js(no-setTimeout-if, vita_modal)
 allboxing.ru##+js(abort-current-inline-script, document.querySelector, open)
 amazinghis.ru,moj-pes.ru##+js(abort-on-property-read, anOptions)
 anicat.ru,buzday.ru,freehat.cc,hlamer.ru,lostpix.com,nsday.ru,orenday.ru,perevolockday.ru,potokcdn.com,prostoporno.help,saltday.ru,sorochinskday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
