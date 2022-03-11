@@ -1304,6 +1304,7 @@ forum.niiot.net##.modal
 clan-soprano.ru##.popupBlock
 maximum.ru,montecarlo.ru##.wrap-ad-blocked-message
 /*.js|$script,~third-party,domain=cyberpedia.su|infopedia.su|lektsii.org|megaobuchalka.ru|poisk-ru.ru|studopedia.info|studopedia.net|studopedia.org|studopedia.su
+/^https?://codes\.webwintop\.ru\/wp-content\/plugins\/(?!copy-the-code\/|contact-form-7\/)/$script,domain=codes.webwintop.ru
 /a-detector/$domain=docfilms.info|green-teatv.com|vesjoloevideo.ru
 /fck-ab-code.js$domain=the-office.su
 /ggl/*$script,~third-party,domain=lektsii.org|megaobuchalka.ru|mydocx.ru|studopedia.com.ua|studopedia.net|studopedia.org|studopedia.ru|studopedia.su
@@ -1330,7 +1331,6 @@ informator.ua#?#div[id^="brid-player"] ~ p:-abp-contains(AdBlock)
 joyreactor.cc,pornreactor.cc,reactor.cc##div[style="background:none!important"]
 rt02.ru##img[alt*="реклам"]
 ||anivisual.net/back/scss.js
-||codes.webwintop.ru/wp-content/*wp-*.js|$script
 ||csgohelp.ru/assets/app/js/checkIn.js
 ||in-english.club/statistic/my.js
 ||pcnews.ru/js/blockadblock.js
