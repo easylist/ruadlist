@@ -164,6 +164,14 @@
 ||widget.onlinetv.ru^
 ||www.rb.ru^$third-party
 !
+! - Фреймы twitch.tv с автозапуском, только для ABP, в uBO работает disableAutoplay
+!#if ext_abp
+gameinside.ua,igromania.ru,kanobu.ru,www.goha.ru##iframe[src*="player.twitch.tv/?channel="][src*="autoplay=true"]
+rbkgames.com##iframe[src^="https://player.twitch.tv?autoplay=true"][src*="rbkgames"]
+||player.twitch.tv/?autoplay=true&channel=rbkgames$subdocument,domain=rbkgames.com
+||player.twitch.tv/?channel=*&autoplay=true$subdocument,domain=gameinside.ua|igromania.ru|kanobu.ru|www.goha.ru
+!#endif
+!
 ! - Прочее --------------------------------------------------------------------
 ||101widgets.com^$third-party
 ||2142-stats.com^$third-party
