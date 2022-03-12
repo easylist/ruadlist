@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220312.1819
+@version        0.20220312.1825
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -595,6 +595,9 @@
   domain("afisha.yandex.ru"),
   domain("afisha.yandex.ua"),
   domain("afisha.yandex.uz") {
+    [data-banner-id] {
+        display: none !important
+    }
     div[class*="_tld_"][id^="uniq"]:empty {
         height: unset !important
     }
