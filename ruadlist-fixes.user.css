@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220310.2206
+@version        0.20220312.1819
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -771,14 +771,6 @@
     }
     .nav-line {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("anicat.ru"),
-  domain("hlamer.ru") {
-    body {
-        background-color: #596c84 !important
     }
 }
 
@@ -2510,6 +2502,14 @@
     }
     #portal-menu, .header-banner {
         margin: 0 !important
+    }
+}
+
+@-moz-document
+  domain("hlamer.ru"),
+  domain("wseries.ru") {
+    body {
+        background-color: #596c84 !important
     }
 }
 
