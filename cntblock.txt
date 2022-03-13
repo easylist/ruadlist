@@ -1087,7 +1087,7 @@ zannn.top#@?#this-is-a-malicious-site
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#+js(json-prune, Blocks)
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#^script:has-text('getPrefixes')
 ! yandex
-/^https?://(?!turbo-yandex-ru)[^\s]+\.clstorage\.net\/[^\s]+\.js$/$script,redirect=empty
+/^https?://(?!turbo-yandex-ru)[^\s]+\.clstorage\.net\/[^\s]+\.js$/$script
 /^https?://mail\.yandex\.[^\s]{125,}/$empty,script,~third-party
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 @@/^https?://yandex\.ru\/turbo[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
