@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220313.2033
+@version        0.20220314.1805
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4087,20 +4087,6 @@
         position: fixed !important;
         transform: scale(0) !important;
         top: -10000px !important
-    }
-}
-
-@-moz-document domain("radikal.ru") {
-    body[style*="cursor"] {
-        background-image: none !important;
-        pointer-events: none !important;
-        position: relative !important
-    }
-    .render_body_main {
-        margin-top: 0 !important
-    }
-    body[style*="cursor"] .base-page_wrapper > * > * {
-        pointer-events: auto !important
     }
 }
 
