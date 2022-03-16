@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220315.1556
+@version        0.20220316.1833
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3803,6 +3803,12 @@
     }
 }
 
+@-moz-document domain("old.sport-tv.by") {
+    #page {
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("online-fix.me") {
     .quote a.btn {
         pointer-events: auto !important
@@ -4514,6 +4520,12 @@
     }
     body.popup {
         overflow:auto !important
+    }
+}
+
+@-moz-document domain("sport-tv.by") {
+    .main {
+        padding-top: 0 !important
     }
 }
 
