@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220321.1317
+@version        0.20220321.2102
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1672,16 +1672,6 @@
     }
 }
 
-@-moz-document
-  domain("drlink.online"),
-  domain("picclick.ru"),
-  domain("picclock.ru"),
-  domain("picforall.ru") {
-    div[id^="pai_thumbz_"][id$="_side"] {
-        background: #363636 !important
-    }
-}
-
 @-moz-document domain("dtf.ru") {
     .igrozhur-promo-ref {
         padding: 0 !important;
@@ -1940,26 +1930,6 @@
     }
 }
 
-@-moz-document domain("firepic.org") {
-    .span12 {
-        clear: both
-    }
-    .container, .row {
-        max-width: none !important
-    }
-    body {
-        padding: 0 !important;
-        background-image: none !important
-    }
-    .row {
-        padding: 30px !important;
-        margin: 0 !important
-    }
-    .container {
-        width: 100% !important
-    }
-}
-
 @-moz-document domain("fishki.net") {
     #container {
         cursor: auto !important
@@ -2146,6 +2116,20 @@
   domain("leninsw.info") {
     .adsbygoogle {
         max-height: 6px !important
+    }
+}
+
+@-moz-document
+  domain("freescreens.ru"),
+  domain("imgbase.ru"),
+  domain("imgcach.ru"),
+  domain("imgclick.ru"),
+  domain("payforpic.ru"),
+  domain("picclick.ru"),
+  domain("picclock.ru"),
+  domain("picforall.ru") {
+    div[id^="pai_thumbz_"][id$="_side"] {
+        background: #363636 !important
     }
 }
 
@@ -4080,15 +4064,6 @@
     }
     #topbrandingspot {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document domain("pronpic.org") {
-    div[style="color:red;font-size:25px;"],  .adblock_loock {
-        display: none !important
-    }
-    #vO5STmSLgNAkebzSluI8coxpDgsG97g {
-        height: 1px !important
     }
 }
 
