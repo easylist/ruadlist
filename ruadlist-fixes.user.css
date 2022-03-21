@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220319.1319
+@version        0.20220321.1317
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3771,6 +3771,9 @@
 @-moz-document domain("nrj.ua") {
     .wrapper > .header {
         height: 150px !important
+    }
+    .main__slider img[alt] {
+        max-height: 300px !important
     }
 }
 
