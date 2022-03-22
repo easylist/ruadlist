@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220321.2102
+@version        0.20220322.1452
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -473,8 +473,9 @@
     body:not([class]) .ip-links_item > .ip-icon-link, 
     body:not([class]) .page-privacy > #spy ~ style + div[class], 
     body:not([class]) .page-speed > .speed_checker + style + div[class], 
+    body:not([class]) .page_whois > style + div, 
     body:not([class]) [class^="ip-"] > a[href*="utm_"], 
-    body[class] #header > #nav > li:nth-child(2), 
+    body[class] #header > #nav > li:nth-child(2), body[class] .advMenuTab, 
     body[class] .ip-info-entry a[href*="utm_"], 
     body[class] .nav > li > a[href^="https://krot.io"] {
         display: none !important
