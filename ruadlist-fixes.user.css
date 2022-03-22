@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220322.1747
+@version        0.20220322.1922
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4066,6 +4066,16 @@
     }
     #topbrandingspot {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("pronpic.org") {
+    div[style="color:red;font-size:25px;"],  .adblock_loock {
+        display: none !important
+    }
+    #vO5STmSLgNAkebzSluI8coxpDgsG97g {
+        height: 1px !important;
+        min-height: 1px !important
     }
 }
 
