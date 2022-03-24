@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220323.1950
+@version        0.20220324.1742
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3767,6 +3767,9 @@
 }
 
 @-moz-document domain("nv.ua") {
+    .nts-float-container {
+        all: inherit !important
+    }
     #home_page {
         max-width: 100% !important
     }
