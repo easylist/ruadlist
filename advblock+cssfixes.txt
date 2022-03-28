@@ -137,6 +137,7 @@ freescreens.ru,imgbase.ru,imgcach.ru,imgclick.ru,payforpic.ru,picclick.ru,picclo
 freetp.org,online-fix.me##+js(nano-setTimeout-booster, timer)
 friends.in.ua,gidonline.eu##+js(abort-on-property-read, atob)
 friends.in.ua,gra-prestoliv.in.ua,simpsonsua.tv##+js(abort-on-property-read, document.addEventListener)
+frontend.vh.yandex.ru,yastatic.net##+js(set-constant, Object.prototype.videoAd, noopFunc)
 fssp.gov.ru##+js(abort-on-property-read, tingle)
 fssp.gov.ru,southpark.su,stroi-help.ru,turkcinema.org##+js(abort-on-property-write, document.oncontextmenu)
 fssp.gov.ru,southpark.su,stroi-help.ru,turkcinema.org##+js(abort-on-property-write, document.ondragstart)
@@ -326,7 +327,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .widget
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .widgets[role="main"] div[class]:matches-css(margin-top: 24px)
 yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#@#body > .serp_js_inited .serp-list > .serp-item:has(:scope > div > div > .label:has-text(/^реклама/i))
 yapx.ru##+js(cookie-remover, /adblock_/)
-yastatic.net##+js(set-constant, Object.prototype.videoAd, noopFunc)
 zaruba.fun##+js(abort-on-property-read, clickNS4)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
 |http://argumenti.ru^$csp=script-src 'self' * blob: data:,badfilter
