@@ -1308,8 +1308,10 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||imdb.com/*ref_=$document,removeparam=|ref,domain=imdb.com
 ||mail.ru^*exp_id=$document,removeparam=|,domain=mail.ru
 ||mail.ru^*frommail=1$document,removeparam=|frommail=1,domain=mail.ru
+||mail.ru^*frommail=ft_ml$document,removeparam=|frommail=ft_ml,domain=mail.ru|sportmail.ru
 ||sportmail.ru^*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
 ||sportmail.ru^*frommail=1$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
+||sportmail.ru^*frommail=ft_ml$document,removeparam=|frommail=ft_ml,domain=mail.ru|sportmail.ru
 ||www.google.*/search?$removeparam=aqs
 ||www.google.*/search?$removeparam=authuser
 ||www.google.*/search?$removeparam=bih
