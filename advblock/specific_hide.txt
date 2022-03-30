@@ -2247,7 +2247,6 @@ kulichki.net##.bunner_container
 hr-portal.ru##.burger_b
 knigi-chitaty.ru##.button[href^="/download.php?q="]
 needtext.ru##.buttons
-smi2.ru##.buy-currency-button
 7days2die.info##.buy-game
 online.zakon.kz##.buy-sidebar
 kinobanda.net##.buyframe
@@ -5181,6 +5180,7 @@ gdetraffic.com##[data-gcat="ads"]
 gamer-info.com##[data-gmimplid]
 dtf.ru,tjournal.ru,vc.ru##[data-gtm*="inkoff"]
 progrib.ru##[data-href*="adbl"]
+smi2.ru##[data-id^="exAd_"]
 app2top.ru##[data-information]
 myukraina.com.ua##[data-link*="goo.gl"]
 rocketdockfree.ru##[data-msetup]
@@ -6606,8 +6606,11 @@ glav.su#?#div[class]:-abp-has(> [id] > .__lxGc__)
 bitcryptonews.ru,forum.materinstvo.ru,vse-shutochki.ru#?#div[class]:-abp-has(> [id^="yandex_rtb_"])
 spafilms.me#?#div[class]:-abp-has(> a[title] > div[class])
 gdespaces.com,spac.me,spac1.com,spac1.me,spac1.net,spaces-blogs.com,spaces.im#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
+smi2.ru#?#div[class]:-abp-has(> div > [data-id^="adfox-"])
+smi2.ru#?#div[class]:-abp-has(> div > [data-id^="exAd_"])
 drive2.ru#?#div[class]:-abp-has(> div > div > .drom-logo)
 2gis.ru#?#div[class]:-abp-has(> div[class] > [class]:-abp-contains(/^Организации рядом$|^Похожие организации$/))
+smi2.ru#?#div[class]:-abp-has(> div[font-size] > span:-abp-contains(/опрос/i))
 novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
 www.kinopoisk.ru##div[class]:first-child > div[class*=" "] > div:first-child + :not(div) + div[class*=" "]:last-child
 ytvideo.ru##div[class][data-aid]
@@ -7222,7 +7225,6 @@ autonevod.ru##div[style="height:250px"]
 crazygames.ru##div[style="height:250px;width:100%;display:block"]
 dublikat.one##div[style="height:5px;"]
 joker.ykt.ru#?#div[style="margin-left:21px;"]:-abp-has(.opros:-abp-contains(Реклама))
-smi2.ru##div[style="margin-right: 5px; float: left;width: 245px;height: 405px"]
 gazetavv.com##div[style="margin-top:5px;height:90px;"]
 gamebomb.ru##div[style="margin: 10px auto; width: 970px; height: 250px"]
 intv.com##div[style="margin: 10px; text-align: center;"]
