@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220329.1740
+@version        0.20220330.1552
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4640,6 +4640,9 @@
 }
 
 @-moz-document domain("stratege.ru") {
+    html.home {
+        background-color: #dbdbdb !important
+    }
     #vbulletin_html > body > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
     html.home body > div[class][id], 
     html.home div[class*="-"][id*="-"] > div[class]:not([class*="-"])[id*="-"] {
