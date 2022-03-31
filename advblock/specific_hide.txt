@@ -5200,7 +5200,7 @@ goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 zoneofgames.ru##[data-role="sidebarAd"]
 malenkiy.ru##[data-role="sidebarAd"] > center
 drive2.ru##[data-target^="drom_"]
-adme.ru#?#[data-test-id$="-recommended"] div[class*=" _"]:-abp-has(> div[class] > div[class]:empty)
+adme.ru#?#[data-test-id$="-recommended"] div[class]:-abp-has(> div[class] > div[class]:empty)
 1fnl.ru##[data-tizer-id="partners"]
 my.ua##[data-top-iid]
 meta-ratings.com.ua,metaratings.ru##[data-type*="banner"]
@@ -7536,8 +7536,8 @@ old.myshows.me##main > .contAlt
 allcarz.ru#?#main > .container > .site-content:-abp-has(> .content-banner)
 protanki.tv##main > .hidden
 besplatnyeprogrammy.ru#?#main > article.post:-abp-has(> header > .mainpage_title > [title^="InstallPack"])
+adme.ru##main > div[data-sharing-target] ~ div:nth-child(-n+9):not([data-sharing-target])
 drivenn.ru#?#main > h3:-abp-contains(/Новости партнёров|Популярное в сети/)
-adme.ru#?#main div[class*=" _"]:-abp-has(> div[class*=" _"] > div[class]:empty)
 flatfy.lun.ua#?#main ~ div[class]:-abp-has(> div > div > a[href*="/redirect-andromeda/"] ~ a[href*="/redirect-andromeda/"])
 bezzamorochek.com##mark > strong
 charming-face.ru##marquee
