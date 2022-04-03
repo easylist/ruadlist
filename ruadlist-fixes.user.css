@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220402.1343
+@version        0.20220403.1638
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5320,6 +5320,9 @@
     }
     .main .widgets__col_td_1 {
         max-width: unset !important
+    }
+    .sidebar-container .business-card-view__main-wrapper > div[style^="min-height:"] {
+        min-height: 0 !important
     }
     body[class*="turbopages"] div[class*="_type_"], 
     body[class*="turbopages"] div[class*="rect"][id][data-name] {
