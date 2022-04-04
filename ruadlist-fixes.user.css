@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220404.1611
+@version        0.20220405.26
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3009,7 +3009,7 @@
     div[class^="styled__RightCol"] > div[class^="styled__WeatherWrapper"] {
         margin-top: 0 !important
     }
-    div[class*="styled__"] > div[class^="styled__SuspendableElement"] {
+    div[class*="styled__"]:not([class*="styled__MainContent"]) > div[class^="styled__SuspendableElement"] {
         min-height: 0 !important
     }
 }
