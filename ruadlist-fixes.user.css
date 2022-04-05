@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220405.26
+@version        0.20220405.1522
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -780,16 +780,7 @@
 }
 
 @-moz-document
-  domain("anilibria.life"),
-  domain("animebest.tv"),
-  domain("animego.life"),
-  domain("animevost.tv") {
-    #wr-bg {
-        padding-top: 60px !important
-    }
-}
-
-@-moz-document
+  domain("anidub.club"),
   domain("anime.anidub.life"),
   domain("online.anidub.com") {
     .content > .sect-header {
@@ -810,6 +801,16 @@
     }
     .wrap > .popular {
         visibility: visible !important
+    }
+}
+
+@-moz-document
+  domain("anilibria.life"),
+  domain("animebest.tv"),
+  domain("animego.life"),
+  domain("animevost.tv") {
+    #wr-bg {
+        padding-top: 60px !important
     }
 }
 
