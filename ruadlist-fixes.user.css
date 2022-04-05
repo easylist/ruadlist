@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220405.1641
+@version        0.20220405.1720
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -368,17 +368,6 @@
     }
     body.show-cookies ._opo_-header {
         top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("24tv.ua"),
-  domain("nv.ua"),
-  domain("oboz.ua"),
-  domain("obozrevatel.com"),
-  domain("pravda.com.ua") {
-    .nts-float-container {
-        all: inherit !important
     }
 }
 
@@ -4887,6 +4876,20 @@
     }
     .navbar, .right-column > .sticky-box {
         position: relative !important
+    }
+}
+
+@-moz-document
+  domain("unian.ua"),
+  domain("unian.info"),
+  domain("unian.net"),
+  domain("24tv.ua"),
+  domain("nv.ua"),
+  domain("oboz.ua"),
+  domain("obozrevatel.com"),
+  domain("pravda.com.ua") {
+    .nts-float-container {
+        all: inherit !important
     }
 }
 
