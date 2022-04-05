@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220405.1522
+@version        0.20220405.1611
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3743,14 +3743,21 @@
 }
 
 @-moz-document domain("nv.ua") {
-    .nts-float-container {
-        all: inherit !important
-    }
     #home_page {
         max-width: 100% !important
     }
     body {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("nv.ua"),
+  domain("pravda.com.ua"),
+  domain("oboz.ua"),
+  domain("obozrevatel.com") {
+    .nts-float-container {
+        all: inherit !important
     }
 }
 
