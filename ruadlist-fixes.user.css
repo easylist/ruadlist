@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220408.2034
+@version        0.20220409.1604
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -21,7 +21,6 @@
 
 @-moz-document
   domain("101kinopoisk.com"),
-  domain("hdrezkazxc.org"),
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
@@ -70,6 +69,7 @@
   domain("hdrezkablog.com"),
   domain("hdrezkaweb.com"),
   domain("hdrezkayou.com"),
+  domain("hdrezkazxc.org"),
   domain("ikinopoisk.com"),
   domain("instahdrezka.com"),
   domain("ixbt.com"),
@@ -130,7 +130,6 @@
 
 @-moz-document
   domain("101kinopoisk.com"),
-  domain("hdrezkazxc.org"),
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
@@ -193,6 +192,7 @@
   domain("hdrezkablog.com"),
   domain("hdrezkaweb.com"),
   domain("hdrezkayou.com"),
+  domain("hdrezkazxc.org"),
   domain("ikinohd.com"),
   domain("ikinopoisk.com"),
   domain("instahdrezka.com"),
@@ -3820,6 +3820,15 @@
 @-moz-document domain("online-fix.me") {
     .quote a.btn {
         pointer-events: auto !important
+    }
+}
+
+@-moz-document domain("opennet.ru") {
+    html.dark-mode > body {
+        filter: invert(90%) !important
+    }
+    html.dark-mode {
+        filter: none !important
     }
 }
 
