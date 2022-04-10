@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220409.1604
+@version        0.20220410.1157
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3827,7 +3827,7 @@
     html.dark-mode > body {
         filter: invert(90%) !important
     }
-    html.dark-mode {
+    html.dark-mode, html.dark-mode > iframe {
         filter: none !important
     }
 }
