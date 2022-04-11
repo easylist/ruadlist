@@ -1090,7 +1090,6 @@ zannn.top#@?#this-is-a-malicious-site
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#+js(json-prune, Blocks)
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#^script:has-text('getPrefixes')
 ! yandex
-/^https?://(?!turbo-yandex-ru)[^\s]+\.clstorage\.net\/[^\s]+\.js$/$empty,script
 /^https?://mail\.yandex\.[^\s]{125,}/$empty,script,~third-party
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
 @@/^https?://yandex\.ru\/turbo[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
@@ -1132,9 +1131,10 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
 ||market.yandex.ru/widget/$empty,domain=zen.yandex.by|zen.yandex.kz|zen.yandex.ru|zen.yandex.ua|zen.yandex.uz
 ||naydex.net^*.js|$script,redirect=empty
-||static-storage.net/*.js|$script,redirect=empty
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
+||yandex-news.clstorage.net/$script,redirect=empty
+||yandex-sport.naydex.net/$script,redirect=empty
 ||yastatic.net/*/front-maps-static/*/chunks/promo/$empty
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
 ~vh.yandex.ru,~yandex.net,yandex.*#?#+js(abort-on-property-read, Ya.loaderVer)
