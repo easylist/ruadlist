@@ -1076,7 +1076,6 @@ www.rambler.*##body[style*="position:"] > script[src] + div:not([id])
 www.rambler.*#?#+js(no-setInterval-if, catch, 500)
 zannn.top#@?#:not(this-is-a-malicious-site)
 zannn.top#@?#this-is-a-malicious-site
-||autoru.naydex.net^$script,domain=auto.ru
 ||browserleaks.com/proxy$csp=script-src 'unsafe-inline'
 ||cxense.com^$third-party,domain=delfi.lt
 ||footboom.com/dist/app/js/antiAdBlock-
@@ -1085,7 +1084,7 @@ zannn.top#@?#this-is-a-malicious-site
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||rcm.rambler.ru^$domain=rambler.ru
-||yastatic.net/naydex/*.js|$script,redirect=empty,domain=~zen.yandex.ru
+||yastatic.net/naydex/autoru/$script,redirect=empty
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#+js(abort-on-stack-trace, Object.prototype.getBaseFingerprint, inlineScript)
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#+js(json-prune, Blocks)
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#^script:has-text('getPrefixes')
@@ -1130,7 +1129,6 @@ yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-event-required])
 yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > .root123)
 yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
 ||market.yandex.ru/widget/$empty,domain=zen.yandex.by|zen.yandex.kz|zen.yandex.ru|zen.yandex.ua|zen.yandex.uz
-||naydex.net^*.js|$script,redirect=empty
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
 ||yandex-news.clstorage.net/$script,redirect=empty
