@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220411.1440
+@version        0.20220413.1711
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -379,10 +379,10 @@
   domain("oboz.ua"),
   domain("obozrevatel.com"),
   domain("pravda.com.ua"),
-  domain("zaxid.net"),
   domain("unian.info"),
   domain("unian.net"),
-  domain("unian.ua") {
+  domain("unian.ua"),
+  domain("zaxid.net") {
     .nts-float-container {
         all: inherit !important
     }
@@ -3504,9 +3504,7 @@
     }
 }
 
-@-moz-document
-  domain("modernrock.ru"),
-  domain("newsoneua.tv") {
+@-moz-document domain("modernrock.ru") {
     body {
         background: none !important
     }
