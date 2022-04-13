@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220413.1711
+@version        0.20220413.1927
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3262,6 +3262,12 @@
 @-moz-document domain("lostfilmhd.ru") {
     #wrap {
         background-image: none !important
+    }
+}
+
+@-moz-document domain("lrepacks.net") {
+    [href*="poluchenie-premium-dostupa.html"] > b > .fa-spin {
+        animation: none !important
     }
 }
 
