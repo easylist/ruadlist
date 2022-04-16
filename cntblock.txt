@@ -165,7 +165,7 @@ _pagespeed_beacon?
 ||analytics.*.*/pixel.php?h=
 ||kz/js/analytic
 ||ru/cnt/?
-||ru/count/$domain=~yandex.by|~yandex.kz|~yandex.ru|~yandex.ua|~yandex.uz
+||ru/count/$domain=~yandex.by|~yandex.kz|~yandex.ru|~yandex.uz
 ||ru/img.php?id
 ||ru/stat/$domain=~allsocial.ru|~barcodes.olegon.ru|~be1.ru|~metrika.yandex.ru|~proships.ru|~sms-track.ru|~sports.ru|~textovod.com|~wordstat.yandex.ru
 ||su/stat/
@@ -1093,7 +1093,7 @@ zannn.top#@?#this-is-a-malicious-site
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#^script:has-text('getPrefixes')
 ! yandex
 /^https?://mail\.yandex\.[^\s]{125,}/$empty,script,~third-party
-/^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
+/^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@/^https?://yandex\.ru\/turbo[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
 @@://yandex.*/news/$generichide
 @@://yandex.*/news|$generichide
@@ -1101,7 +1101,7 @@ frontend.vh.yandex.*#?#+js(set-constant, Object.prototype._getAutoplay, noopFunc
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
 mail.yandex.*#?#+js(abort-on-property-read, Object.prototype.AdvPresenter)
 mail.yandex.*#?#+js(remove-attr, data-link-id, a, stay)
-mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.ua,mail.yandex.uz,mail.yandex.*#?#+js(abort-on-property-read, Object.prototype.AdvPresenter)
+mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*#?#+js(abort-on-property-read, Object.prototype.AdvPresenter)
 music.yandex.*#?#+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column
 tv.yandex.*##.recommended-ott
@@ -1131,7 +1131,7 @@ yandex.*#?#.feed__row[id^="zen-row-"] .feed__item-wrap:-abp-has(> .feed__item [c
 yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-event-required])
 yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > .root123)
 yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
-||market.yandex.ru/widget/$empty,domain=zen.yandex.by|zen.yandex.kz|zen.yandex.ru|zen.yandex.ua|zen.yandex.uz
+||market.yandex.ru/widget/$empty,domain=zen.yandex.by|zen.yandex.kz|zen.yandex.ru|zen.yandex.uz
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
 ||yandex-news.clstorage.net/$script,redirect=empty

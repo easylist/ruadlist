@@ -19,7 +19,7 @@
 *$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.club|otzovik.com
 .pronpic.org^$script,domain=pronpic.org
 /^https?://frontend\.vh\.yandex\.ru\/player\/[^\s]+\autoplay=1(?![^\s]+service=ya-sport$)/$subdocument,removeparam=|
-/^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua|yandex.uz
+/^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /^https?:\/\/scrin.org\/[^\s]/$csp=sandbox allow-same-origin;,badfilter
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnneedtv.ru,cdnpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,s7yours.com,sbautumn.com,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport365hd.net,sport7.biz,sportbar.biz,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,spotless365.net,stream365.pro,telecdn.net,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
 116.ru,14.ru,161.ru,164.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,e1.ru,mgorsk.ru,mosk.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs38.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru##+js(set-constant, Object.prototype.disableVideoStart, true)
@@ -99,7 +99,7 @@ dclans.ru##+js(abort-on-property-read, document.getElementById, mdl_adb)
 delfi.lt##+js(no-setTimeout-if, UnblockedBanner)
 dfiles.ru,driveroff.net,samlab.ws,tapochek.net##+js(abort-on-property-read, ads_script)
 diplomsrazu.ru,igrozoom.ru,ru-minecraft.ru,softomania.net,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
-disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.ua,disk.yandex.uz##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
+disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
 dmod.cc,draug.ru,modsforwot.ru##+js(abort-current-script, Math.floor, AdSense)
 dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 doramy.club,newdeaf.vip,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
@@ -212,7 +212,7 @@ molitvy.guru,nizhny.ru,pro100hobbi.ru,samelectric.ru,svadba.expert##+js(abort-on
 motorpage.ru##+js(remove-class, noscroll, body)
 mp3crown.cc##+js(nano-setInterval-booster, .time)
 mp3spy.cc##+js(abort-current-inline-script, JSON.parse, atob)
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,music.yandex.uz##+js(set-constant, Object.prototype.adUsageStorageVars, undefined)
+music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.uz##+js(set-constant, Object.prototype.adUsageStorageVars, undefined)
 musify.club##+js(abort-on-property-read, get_ya_browser)
 muzlan.top##+js(nano-setInterval-booster, .numcard)
 my-expert.ru##+js(abort-current-inline-script, disableSelection, reEnable)
@@ -311,15 +311,15 @@ www.rambler.ru##+js(remove-attr, target, a[href*="#rcmrclid"], stay)
 www.vesti.ru##+js(abort-current-inline-script, document.createElement, String.fromCharCode)
 xsport.ua##+js(set-constant, Object.prototype.adPlaying, null)
 xsport.ua##+js(set-constant, Object.prototype.PLAYED, null)
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.mg-grid__col > div ~ div[class$="__heading"]:has(~ div[class*="_type_native"] [class*="_type_card"] > div > div:empty)
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.mini-suggest__item:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.mini-suggest__item:has(> a[href*="://yandex."][href*="/clck/"]):remove()
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##.mini-suggest__item:has(> a[href][target="_blank"]):remove()
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div):first-child ~ :not(div) :not(div) > div[class]:not([class*="widget"]):not([class^="services"]):not([class*="search"]):not([class*="news"]):not([class*="home"]) > div[class]:not([class*="widget"]):not([class^="services"]):not([class*="search"]):not([class*="news"]):not([class*="home"]):style(padding-bottom: unset !important)
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .widgets[role="main"] div[class] > div[class]:matches-css(padding-top: 90px)
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .widgets[role="main"] div[class]:matches-css(margin-top: 16px)
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##body[class*="b-page"] .widgets[role="main"] div[class]:matches-css(margin-top: 24px)
-yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz#@#body > .serp_js_inited .serp-list > .serp-item:has(:scope > div > div > .label:has-text(/^реклама/i))
+yandex.by,yandex.kz,yandex.ru,yandex.uz##.mg-grid__col > div ~ div[class$="__heading"]:has(~ div[class*="_type_native"] [class*="_type_card"] > div > div:empty)
+yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
+yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item:has(> a[href*="://yandex."][href*="/clck/"]):remove()
+yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item:has(> a[href][target="_blank"]):remove()
+yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div):first-child ~ :not(div) :not(div) > div[class]:not([class*="widget"]):not([class^="services"]):not([class*="search"]):not([class*="news"]):not([class*="home"]) > div[class]:not([class*="widget"]):not([class^="services"]):not([class*="search"]):not([class*="news"]):not([class*="home"]):style(padding-bottom: unset !important)
+yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page"] .widgets[role="main"] div[class] > div[class]:matches-css(padding-top: 90px)
+yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page"] .widgets[role="main"] div[class]:matches-css(margin-top: 16px)
+yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page"] .widgets[role="main"] div[class]:matches-css(margin-top: 24px)
+yandex.by,yandex.kz,yandex.ru,yandex.uz#@#body > .serp_js_inited .serp-list > .serp-item:has(:scope > div > div > .label:has-text(/^реклама/i))
 yapx.ru##+js(cookie-remover, /adblock_/)
 zaruba.fun##+js(abort-on-property-read, clickNS4)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
@@ -369,7 +369,7 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.ru&widgetid=1$subdocument,badfilter,domain=3dnews.ru
 ~1yar.tv,bonus-tv.ru,eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
-~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.ua,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.ua,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
+~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 !
 ! Mail.RU
 ~e.mail.ru,mail.ru###projects [data-alias="market"]
