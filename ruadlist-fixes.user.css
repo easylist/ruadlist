@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220416.2202
+@version        0.20220417.1134
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5208,7 +5208,8 @@
     .app__content div[style="min-height:250px"], 
     .underheader-superbanner-wrapper, 
     div[class*="kinopoisk-media-container_pending"], 
-    div[class^="styles_pending_"], div[style="min-width:1px"] {
+    div[class^="styles_pending_"], div[style="min-width: 1px;"], 
+    div[style="min-width:1px"] {
         min-height: 0 !important
     }
     .modal-root div[class^="fullscreen-selector"], 

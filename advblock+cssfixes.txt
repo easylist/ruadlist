@@ -454,3 +454,9 @@ www.ukr.net##.fixed-block > div[class] ~ div:not(#id):style(display: block !impo
 www.ukr.net##a[href][id$="op"][style]:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##body > .advert
 www.ukr.net##div[class^="fuel-"][class$="-banner"]:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
+!
+! Правила для компенсации отсутствия Scriptlet Doctor
+!#if env_firefox
+www.kinopoisk.ru##.cREWUr
+www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
+!#endif
