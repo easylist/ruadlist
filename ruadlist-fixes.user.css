@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220417.1134
+@version        0.20220418.1925
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4655,23 +4655,17 @@
 }
 
 @-moz-document domain("stratege.ru") {
-    html.home {
-        background-color: #dbdbdb !important
-    }
     #vbulletin_html > body > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
-    html.home body > div[class][id], 
-    html.home div[class*="-"][id*="-"] > div[class]:not([class*="-"])[id*="-"] {
+    html.home > body > [class]:not([class*="-"])[id*="-"], 
+    html.home [class][id] > [class]:not([class*="-"])[id*="-"] {
         background-image: none !important;
         background-color: #dbdbdb !important
     }
     #vbulletin_html > body > style ~ div ~ :not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
     #vbulletin_html > body > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)) > style + div[id]:not(#globalcontent), 
-    html.home #wrapper > #content > :not(div), 
-    html.home #wrapper > #content > [id]:empty, 
-    html.home #wrapper > #content ~ :not(#footer), html.home .tlpf_info_box, 
-    html.home body > div[class][id] > img[src] ~ style + [id], 
-    html.home div[class*="-"][id*="-"] > div[class]:not([class*="-"])[id*="-"] > img[src] ~ style + [id]:not(#wrapper), 
-    html.home div[class][id$="_content"] > div:not([id]):not([class]) > [class^="alelt_"][class$="_info"] {
+    html.home #wrapper > #content > :not(#content-wrapper), 
+    html.home #wrapper > #content ~ [class], 
+    html.home [class][id] > img[src] ~ style + [id]:not(#wrapper) {
         display: none !important
     }
     #vbulletin_html .above_body {
