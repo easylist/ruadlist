@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220418.1927
+@version        0.20220419.1318
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4239,9 +4239,8 @@
   domain("reshuoge.ru"),
   domain("reshuvpr.ru"),
   domain("sdamgia.ru") {
-    div.no_dark, div[class$="-Zone"], 
-    div[style*="height:"][style*="width:"][style*="margin: 0 auto;"], 
-    old_school > .App > div > [color="red"] {
+    #old_school > .App > div > [color="red"], div.no_dark, div[class$="-Zone"], 
+    div[style*="height:"][style*="width:"][style*="margin: 0 auto;"] {
         display: none !important
     }
     .menu[role="navigation"] > div[style*="height:"], 
