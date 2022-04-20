@@ -1832,12 +1832,11 @@ e.mail.ru###b-announcements
 my.mail.ru###history_container > .b-history__apps-best
 my.mail.ru###history_container > .b-history__apps-carousel
 ~e.mail.ru,mail.ru###layout\:rightcol > .games
-cloud.mail.ru###leftcol .portal-promo-manager
-cloud.mail.ru###leftcol .portal-promo-manager ~ div[onclick]
 ~e.mail.ru,mail.ru###news\:games > .news__tabpicture
 e.mail.ru,octavius.mail.ru###octavius-tooltip-sidebar-pay
 mail.ru,sportmail.ru###playerRoot
 ~e.mail.ru,mail.ru###portal-headline > #extension-bubble
+cloud.mail.ru###portal-menu-promo
 deti.mail.ru###root_subscription_form-block
 mail.ru###search\:example
 ~e.mail.ru,mail.ru###set-homepage
@@ -1944,7 +1943,7 @@ news.mail.ru#?#[href*="/css/p-currency-page.css"] ~ .block_collapse_top .cols__c
 news.mail.ru##[href*="/css/p-currency-page.css"] ~ .block_collapse_top .cols__column_sidebar .margin_top_20 > div:first-child:not([class*="margin"])
 news.mail.ru##[href*="/css/p-currency-page.css"] ~ .block_collapse_top .cols__column_sidebar .margin_top_20 > div[class*="rb_"]
 mail.ru,sportmail.ru##a[id^="tb-"][class^="tb-"][target="_blank"]
-e.mail.ru,octavius.mail.ru##a[title="Экосистема VK"]
+cloud.mail.ru,e.mail.ru,octavius.mail.ru##a[title="Экосистема VK"]
 mail.ru#?#body > #grid .grid-top > .grid__container > div div[id][class]:-abp-has([href="//games.mail.ru"][target="_blank"])
 ~e.mail.ru,mail.ru##body > #grid a[href="//games.mail.ru"][target="_blank"]
 ~e.mail.ru,mail.ru##body > #grid a[href^="//minigames.mail.ru/"][target="_blank"]
@@ -1962,6 +1961,8 @@ go.mail.ru##body > div[style^="z-index:"]
 mail.ru##body:not(.js-module) .horoscope ~ [class]
 mail.ru##body:not(.js-module) .tabs-content ~ div > div:first-child:not([name])
 hi-tech.mail.ru#?#div:-abp-has(> .m-subscription_sidebar)
+cloud.mail.ru##div[class*="Space__root_marketingPromo"] > div[class^="Space__payment"]
+cloud.mail.ru##div[class*="Space__root_marketingPromo"] div[class^="Space__subscriptions"]
 cloud.mail.ru##div[class*="Tooltip__base"]
 hi-tech.mail.ru##div[class*="rb_"][class*="margin_bottom"]
 news.mail.ru##div[class="block block_collapse_bottom"] > [class="wrapper"] #comments ~ div > div:not([class*="box"])

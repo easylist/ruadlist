@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220420.1348
+@version        0.20220420.1350
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1404,6 +1404,9 @@
     .public .b-layout__col_1_2 {
         margin-right: auto !important;
         max-width: unset !important
+    }
+    div[class*="Space__root_marketingPromo"] {
+        min-height: 0 !important
     }
 }
 
