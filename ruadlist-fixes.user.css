@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220419.1318
+@version        0.20220420.1348
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -485,30 +485,25 @@
   domain("2ip.io"),
   domain("2ip.ru") {
     .consent__notice, .consent__notice ~ .body-blackout, 
-    body:not([class]) #content > .page_speed_result__share + style + div[class], 
-    body:not([class]) .content-list > a[href^="https://krot.io"], 
-    body:not([class]) .ip-links_item > .ip-icon-link, 
-    body:not([class]) .page-privacy > #spy ~ style + div[class], 
-    body:not([class]) .page-speed > .speed_checker + style + div[class], 
-    body:not([class]) .page_whois > style + div, 
-    body:not([class]) [class^="ip-"] > a[href*="utm_"], 
-    body[class] #header > #nav > li:nth-child(2), body[class] .advMenuTab, 
-    body[class] .ip-info-entry a[href*="utm_"], 
-    body[class] .nav > li > a[href^="https://krot.io"] {
+    body > #wrapper #header > #nav > li:nth-child(2), 
+    body > #wrapper .advMenuTab, body > #wrapper .ip-info-entry a[href*="utm_"], 
+    body > #wrapper .nav > li > a[href^="https://krot.io"], 
+    body > .page-wrapper #content > .page_speed_result__share + style + div[class], 
+    body > .page-wrapper .content-list > a[href^="https://krot.io"], 
+    body > .page-wrapper .ip-links_item > .ip-icon-link, 
+    body > .page-wrapper .menu_isp__default > ul > li:nth-child(2), 
+    body > .page-wrapper .page-privacy > #spy ~ style + div[class], 
+    body > .page-wrapper .page-speed > .speed_checker + style + div[class], 
+    body > .page-wrapper .page_whois > style + div, 
+    body > .page-wrapper [class^="ip-"] > a[href*="utm_"] {
         display: none !important
     }
-    body:not([class]) .test-vpn > a {
+    body > .page-wrapper .test-vpn > a {
         opacity: 0 !important;
         pointer-events: none !important
     }
     body {
         overflow: auto !important
-    }
-}
-
-@-moz-document domain("2ip.ru") {
-    body:not([class]) .menu_isp__default > ul > li:nth-child(2) {
-        display: none !important
     }
 }
 
