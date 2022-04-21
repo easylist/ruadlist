@@ -53,6 +53,7 @@
 7ogorod.ru,autonevod.ru##+js(abort-on-property-read, flat_pm_arr)
 80-e.ru,examenpdd.com##+js(abort-on-property-read, yaContextCb)
 @@||m.rp5.*/mobile/scripts/*.js$script,domain=m.rp5.*
+@@||only-paper.ru/*.js|$script,badfilter,domain=only-paper.ru
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||studizba.com^$generichide,badfilter
@@ -224,6 +225,7 @@ myshared.ru##+js(remove-attr, disabled, .uk-modal-footer > button)
 newdeaf.vip##+js(addEventListener-defuser, contextmenu, preventDefault)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
 obozrevatel.com##+js(remove-attr, autoplay, video)
+only-paper.ru##+js(abort-on-property-read, alert)
 ontivi.net##+js(window.open-defuser, /trafficbass/)
 otzovik.com##+js(no-setTimeout-if, , 250)
 otzovik.com##+js(noeval-if, ShadowRoot)
