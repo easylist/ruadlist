@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220421.1446
+@version        0.20220422.1410
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -370,21 +370,6 @@
     }
     body.show-cookies ._opo_-header {
         top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("24tv.ua"),
-  domain("nv.ua"),
-  domain("oboz.ua"),
-  domain("obozrevatel.com"),
-  domain("pravda.com.ua"),
-  domain("unian.info"),
-  domain("unian.net"),
-  domain("unian.ua"),
-  domain("zaxid.net") {
-    .nts-float-container {
-        all: inherit !important
     }
 }
 
@@ -906,8 +891,8 @@
 @-moz-document
   domain("animespirit.tv"),
   domain("fullfilmhd.space"),
-  domain("kinocok.org"),
-  domain("igry-online.net") {
+  domain("igry-online.net"),
+  domain("kinocok.org") {
     #wrapper {
         margin-top: 0 !important
     }
