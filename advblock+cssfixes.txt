@@ -64,7 +64,7 @@ all-episodes.club##+js(abort-on-property-read, advtss)
 allapteki.ru##+js(no-setTimeout-if, _modal)
 allboxing.ru##+js(abort-current-inline-script, document.querySelector, open)
 amazinghis.ru,moj-pes.ru##+js(abort-on-property-read, anOptions)
-anime.anidub.life,loveanime.live,myanime.online,online.anidub.club,online.anidub.com,rusanime.ru##+js(abort-on-property-read, adblock)
+anidub.link,anime.anidub.life,loveanime.live,myanime.online,online.anidub.club,online.anidub.com,rusanime.ru##+js(abort-on-property-read, adblock)
 animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 animejoy.ru##+js(abort-on-property-read, AdManager)
 animejoy.ru##+js(abort-on-property-read, R)
@@ -346,7 +346,7 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||loadercdn.com^$important,script,redirect=noopjs
-||loveanime.live^$media,redirect=noopmp3-0.1s,domain=anime.anidub.life|loveanime.live|myanime.online|online.anidub.club|online.anidub.com|rusanime.ru
+||loveanime.live^$media,redirect=noopmp3-0.1s,domain=anidub.link|anime.anidub.life|loveanime.live|myanime.online|online.anidub.club|online.anidub.com|rusanime.ru
 ||m.mixadvert.com/show/$important,script
 ||mashintop.ru^$xmlhttprequest,badfilter,domain=mashintop.ru
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
