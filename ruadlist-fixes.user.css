@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220424.1818
+@version        0.20220426.1309
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2237,16 +2237,6 @@
 @-moz-document domain("gdetraffic.com") {
     .main.with-top-menu {
         padding-top: 100px !important
-    }
-}
-
-@-moz-document domain("glav.su") {
-    #js-l-h ~ div[class] > div:not([id]):not([class]):not([style]) {
-        display: none !important
-    }
-    #js-l-h ~ div[class*=" "] {
-        padding-top: unset !important;
-        padding-bottom: unset !important
     }
 }
 
