@@ -1135,7 +1135,6 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ||market.yandex.ru/widget/$empty,domain=zen.yandex.by|zen.yandex.kz|zen.yandex.ru|zen.yandex.uz
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
-||yandex-news.clstorage.net/$script,redirect=empty
 ||yandex-sport.naydex.net/$script,redirect=empty
 ||yastatic.net/*/front-maps-static/*/chunks/promo/$empty
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
@@ -1157,6 +1156,12 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype.loaderVer, noopFunc)
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype.los, null)
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype.useAbdBundle, false)
+!#if env_chromium
+||yandex-news.clstorage.net/$script,redirect=empty
+!#endif
+!#if env_edge
+||yandex-news.clstorage.net/$script,redirect=empty
+!#endif
 ! мобильная версия
 yandex.*##[data-bem*="search-select-promo"]
 yandex.*##div[class*="Advert_container__"]
