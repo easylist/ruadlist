@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220426.1309
+@version        0.20220427.1801
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3217,10 +3217,10 @@
 }
 
 @-moz-document domain("mail.ru") {
-    .searchContainer > .search > .search__btn {
+    div[id="search:container"] > .search > .search__btn {
         background-color: rgb(0, 95, 249) !important
     }
-    .searchContainer > .search {
+    div[id="search:container"] > .search {
         border-top-color: rgb(0, 95, 249) !important;
         border-right-color: rgb(0, 95, 249) !important;
         border-bottom-color: rgb(0, 95, 249) !important;
