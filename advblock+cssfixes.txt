@@ -264,6 +264,7 @@ shrlink.top##+js(abort-on-property-read, app_vars.force_disable_adblock)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /pobeda/)
 sibnet.ru##+js(no-setTimeout-if, Adblock)
 silvercube12.xyz##+js(window-close-if, /dispatch)
+skam.online##+js(abort-current-script, document.getElementById, composedPath)
 smotrim.ru##.dialog-wrapper
 softportal.com##+js(abort-on-property-read, window.block)
 softportal.com##+js(no-setTimeout-if, toUTCString)
@@ -358,6 +359,7 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||s-club.tv/promo/*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||shtrafsud.ru^$xmlhttprequest,badfilter,domain=shtrafsud.ru
+||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:,badfilter
 ||sportrecs.com/embed/*autoplay=1$subdocument,removeparam=|
 ||strm.yandex.ru/get/$script,redirect=silent-noeval.js,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru^$media,redirect=empty,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
