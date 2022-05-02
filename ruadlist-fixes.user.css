@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220501.2154
+@version        0.20220502.1534
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4918,8 +4918,21 @@
 }
 
 @-moz-document domain("vm.ru") {
-    .onair_wrapper.fixed {
-        position: relative !important
+    .onair[style^="height:"] > .onair_wrapper > [name="btn_air_close"] {
+        opacity: unset !important
+    }
+    .vjs-poster {
+        position: inherit !important
+    }
+    .onair_wrapper {
+        position: relative !important;
+        bottom: unset !important;
+        right: unset !important;
+        -webkit-animation: none !importan;
+        animation: none !important
+    }
+    .ly.header {
+        top: 34px !important
     }
 }
 

@@ -1420,7 +1420,10 @@ virtualbrest.ru#?#ul.tabsmenuverch li:style(padding-right: 2px !important; paddi
 ! ---
 vk.com#?#.JoinForm__notNow:style(font-weight: bold !important; color: red !important; border: 3px solid red !important; padding: 6px !important)
 ! ---
-vm.ru#?#.onair_wrapper.fixed:style(position: relative !important)
+vm.ru##.ly.header:style(top: 34px !important)
+vm.ru#?#.onair[style^="height:"] > .onair_wrapper > [name="btn_air_close"]:style(opacity: unset !important)
+vm.ru#?#.onair_wrapper:style(position: relative !important; bottom: unset !important; right: unset !important; -webkit-animation: none !importan; animation: none !important)
+vm.ru#?#.vjs-poster:style(position: inherit !important)
 ! ---
 vrtp.ru#?#td[width="100%"][valign="top"][class^="post"] > .postcolor > img:style(max-width: 100% !important)
 ! ---
