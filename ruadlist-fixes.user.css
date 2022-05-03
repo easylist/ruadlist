@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220503.1356
+@version        0.20220503.1730
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4661,6 +4661,16 @@
     }
 }
 
+@-moz-document
+  domain("tm.ati.su"),
+  domain("loads.ati.su"),
+  domain("trucks.ati.su") {
+    div[class*="user-data-grid"] {
+        background: none !important;
+        height: auto !important
+    }
+}
+
 @-moz-document domain("tnt-online.ru") {
     body {
         background-color: #fff !important
@@ -4719,6 +4729,12 @@
     html[prefix] > body {
         background-color: #202030 !important;
         background-image: none !important
+    }
+}
+
+@-moz-document domain("trucks.ati.su") {
+    #root {
+        min-height: 0 !important
     }
 }
 
