@@ -1093,17 +1093,17 @@ zannn.top#@?#this-is-a-malicious-site
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#+js(abort-on-stack-trace, Object.prototype.getBaseFingerprint, inlineScript)
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#+js(json-prune, Blocks)
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#^script:has-text('getPrefixes')
+!
 ! yandex
 /^https?://mail\.yandex\.[^\s]{125,}/$empty,script,~third-party
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@/^https?://yandex\.ru\/turbo[^\s]+(dni24\.com|fishki\.net|news\.ru|publy\.ru|tsargrad\.tv)/$csp=script-src
 @@://yandex.*/news/$generichide
 @@://yandex.*/news|$generichide
-frontend.vh.yandex.*#?#+js(set-constant, Object.prototype._getAutoplay, noopFunc)
+frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
-mail.yandex.*#?#+js(abort-on-property-read, Object.prototype.AdvPresenter)
 mail.yandex.*#?#+js(remove-attr, data-link-id, a, stay)
-mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*#?#+js(abort-on-property-read, Object.prototype.AdvPresenter)
+mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*#?#+js(set-constant, Daria.AdvPresenter._config, {})
 music.yandex.*#?#+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column
 tv.yandex.*##.recommended-ott
@@ -1157,12 +1157,7 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype.loaderVer, noopFunc)
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype.los, null)
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype.useAbdBundle, false)
-!#if env_chromium
-||yandex-news.clstorage.net/$script,redirect=empty
-!#endif
-!#if env_edge
-||yandex-news.clstorage.net/$script,redirect=empty
-!#endif
+!
 ! мобильная версия
 yandex.*##[data-bem*="search-select-promo"]
 yandex.*##div[class*="Advert_container__"]
@@ -1174,6 +1169,26 @@ yandex.*#?#.touch-feed > div > .feed-item[id^="zen-row-"]:-abp-has([class^="zen-
 zen.yandex.*##[data-ad-id]
 zen.yandex.*##div[class*="yandex-direct"]
 ~afisha.yandex.*,yandex.*##[data-bem*="type"][data-bem*="banner"]:not(body):not(form):not(.content)
+!
+! Альтернативное решение для старых браузеров
+~yandex.net,yandex.*#?#+js(set-constant, home.export.adb, {})
+!yandex.ru##+js(no-setTimeout-if, b-spec-adv)
+!yandex.ru##+js(no-setTimeout-if, antiadb, home)
+@@||an.yandex.ru/jserr/1|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/mapuid/yandex/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/meta/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/partner-code-bundles/*.js|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/resource/spacer.gif|$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/system/context.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yandex.ru/ads/page/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yandex.ru/ads/system/context.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yandex.ru/ads/system/header-bidding.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yastatic.net/daas/atom.js|$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.uz
+@@||yastatic.net/pcode/adfox/header-bidding.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yastatic.net/pcode/adfox/loader.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+~yandex.net,yandex.*#?#body.b-page > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
+~yandex.net,yandex.*#?#body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
 !
 ! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
