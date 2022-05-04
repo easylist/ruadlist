@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220503.1730
+@version        0.20220504.1312
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3131,6 +3131,22 @@
 }
 
 @-moz-document
+  domain("loads.ati.su"),
+  domain("tm.ati.su"),
+  domain("trucks.ati.su") {
+    div[class*="user-data-grid"] {
+        background: none !important;
+        height: auto !important
+    }
+}
+
+@-moz-document domain("lostfilm.info") {
+    #neheraplper_9000 > a[href] > span {
+        display: none !important
+    }
+}
+
+@-moz-document
   domain("lostfilm.info"),
   domain("lostfilm.pro"),
   domain("lostfilm.run"),
@@ -4658,16 +4674,6 @@
     body > div[style*='1010'] {
         width: auto !important;
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("tm.ati.su"),
-  domain("loads.ati.su"),
-  domain("trucks.ati.su") {
-    div[class*="user-data-grid"] {
-        background: none !important;
-        height: auto !important
     }
 }
 
