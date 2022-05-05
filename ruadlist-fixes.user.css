@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220505.1355
+@version        0.20220505.1420
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1531,6 +1531,12 @@
     }
     body.locked, html.locked {
         overflow:auto !important
+    }
+}
+
+@-moz-document domain("doctorpiter.ru") {
+    body > .l-wrapper > div[style^="position: absolute; width: 30px; height: 30px; bottom: 13px; left: 10px;"] {
+        opacity: unset !important
     }
 }
 
