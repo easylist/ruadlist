@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220505.1420
+@version        0.20220505.2114
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -502,6 +502,21 @@
 @-moz-document domain("7days.ru") {
     body {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("7days.ru"),
+  domain("doctorpiter.ru"),
+  domain("kp.kg"),
+  domain("kp.kz"),
+  domain("kp.md"),
+  domain("kp.ru"),
+  domain("radiokp.ru"),
+  domain("spletnik.ru"),
+  domain("wday.ru") {
+    body > .l-wrapper > div[style^="position: absolute; width: 30px; height: 30px; bottom: 13px; left: 10px;"] {
+        opacity: unset !important
     }
 }
 
@@ -1531,12 +1546,6 @@
     }
     body.locked, html.locked {
         overflow:auto !important
-    }
-}
-
-@-moz-document domain("doctorpiter.ru") {
-    body > .l-wrapper > div[style^="position: absolute; width: 30px; height: 30px; bottom: 13px; left: 10px;"] {
-        opacity: unset !important
     }
 }
 
