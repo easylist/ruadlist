@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220506.1108
+@version        0.20220507.1446
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -513,9 +513,9 @@
   domain("kp.md"),
   domain("kp.ru"),
   domain("radiokp.ru"),
-  domain("woman.ru"),
   domain("spletnik.ru"),
-  domain("wday.ru") {
+  domain("wday.ru"),
+  domain("woman.ru") {
     body > .l-wrapper > div[style^="position: absolute; width: 30px; height: 30px; bottom: 13px; left: 10px;"] {
         opacity: unset !important
     }
@@ -3157,26 +3157,8 @@
     #neheraplper_9000 > a[href] > span {
         display: none !important
     }
-}
-
-@-moz-document
-  domain("lostfilm.info"),
-  domain("lostfilm.pro"),
-  domain("lostfilm.run"),
-  domain("lostfilm.tv"),
-  domain("lostfilm.tw"),
-  domain("lostfilm.uno"),
-  domain("lostfilm.win"),
-  domain("lostfilmtv.site"),
-  domain("lostfilmtv.uno"),
-  domain("lostfilmtv1.site"),
-  domain("lostfilmtv2.site"),
-  domain("lostfilmtv3.site"),
-  domain("lostfilmtv4.site"),
-  domain("lostfilmtv5.site") {
-    body {
-        background-image: none !important;
-        background-color: #1c1e1f !important
+    .footer-logo, img[src="/vision/footer-logo.png"] {
+        filter: invert(0.8) !important
     }
 }
 
@@ -3194,6 +3176,10 @@
   domain("lostfilmtv3.site"),
   domain("lostfilmtv4.site"),
   domain("lostfilmtv5.site") {
+    body {
+        background-image: none !important;
+        background-color: #1c1e1f !important
+    }
     .footer {
         background: #1c1e1f !important;
         color: #fff !important
