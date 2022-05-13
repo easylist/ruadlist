@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220512.1503
+@version        0.20220513.1235
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3763,6 +3763,16 @@
 @-moz-document domain("online-fix.me") {
     .quote a.btn {
         pointer-events: auto !important
+    }
+}
+
+@-moz-document domain("open3dmodel.com") {
+    .post-info > div[style^="width: 730px;"][style*="#f9f9f9"] {
+        background-color: #333 !important
+    }
+    .downloadlink a {
+        color: #09c !important;
+        text-decoration: underline !important
     }
 }
 
