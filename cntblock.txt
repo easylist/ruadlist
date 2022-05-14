@@ -829,6 +829,7 @@ _pagespeed_beacon?
 ||tracking.eurosport.com^
 ||tracking.gpm-rtv.ru^$third-party
 ||tracking.olx-st.com^
+||trafffgen.rambler.ru^
 ||trafit.com^$third-party
 ||traidet.com^$third-party
 ||trendstat.ru^$third-party
@@ -1085,7 +1086,7 @@ www.rambler.*###main > div[class]:not([id]) > :first-child[style]:not(div):not([
 www.rambler.*##body[style*="position:"] > iframe[src] + div:not([id])
 www.rambler.*##body[style*="position:"] > noscript + div:not([class]):not([id])
 www.rambler.*##body[style*="position:"] > script[src] + div:not([id])
-www.rambler.*#?#+js(no-setInterval-if, catch, 500)
+www.rambler.*#?#+js(set-constant, Object.prototype._blocker_hidden, true)
 zannn.top#@?#:not(this-is-a-malicious-site)
 zannn.top#@?#this-is-a-malicious-site
 ||browserleaks.com/proxy$csp=script-src 'unsafe-inline'
