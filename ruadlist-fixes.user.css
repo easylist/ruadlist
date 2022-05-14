@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220513.1755
+@version        0.20220514.1754
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2476,9 +2476,6 @@
 }
 
 @-moz-document domain("horoscopes.rambler.ru") {
-    div[class] {
-        min-height: 0 !important
-    }
     a[data-horo$="::button"] {
         width: auto !important
     }
@@ -5028,6 +5025,14 @@
 @-moz-document domain("warfiles.ru") {
     #header + .banner {
         height: 100px !important
+    }
+}
+
+@-moz-document
+  domain("weather.rambler.ru"),
+  domain("horoscopes.rambler.ru") {
+    div[class] {
+        min-height: 0 !important
     }
 }
 
