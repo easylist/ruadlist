@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220514.1754
+@version        0.20220516.1807
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2481,6 +2481,14 @@
     }
 }
 
+@-moz-document
+  domain("horoscopes.rambler.ru"),
+  domain("weather.rambler.ru") {
+    div[class] {
+        min-height: 0 !important
+    }
+}
+
 @-moz-document domain("horrorzone.ru") {
     body > .all {
         margin-top: 0 !important
@@ -4130,6 +4138,13 @@
     body > [data-yandex-name="blockad_click"] {
         display: none !important
     }
+    .video-gallery-popup.single .video-gallery-popup__body {
+        left: 200px !important;
+        right: 200px !important
+    }
+    .video-gallery-popup.single .video-gallery-popup__wrap {
+        max-width: 100% !important
+    }
     .l-small-width-top-padding {
         padding-top: unset !important
     }
@@ -5025,14 +5040,6 @@
 @-moz-document domain("warfiles.ru") {
     #header + .banner {
         height: 100px !important
-    }
-}
-
-@-moz-document
-  domain("weather.rambler.ru"),
-  domain("horoscopes.rambler.ru") {
-    div[class] {
-        min-height: 0 !important
     }
 }
 
