@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220516.1807
+@version        0.20220517.1604
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4486,6 +4486,15 @@
 }
 
 @-moz-document domain("sport-express.ru") {
+    .se-onair-popup:not([class*="active"]) > .se-onair {
+        background: #292e35 !important
+    }
+    .se-onair-popup:not([class*="active"]) {
+        bottom: 10px !important;
+        right: 0 !important;
+        width: 155px !important;
+        top: 22px !important
+    }
     #show-popup {
         display: none !important
     }
