@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220517.1737
+@version        0.20220517.2048
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4096,6 +4096,9 @@
 }
 
 @-moz-document domain("rambler.ru") {
+    #rootWrapper div[style="min-height: 500px;"] ~ div div {
+        background-color: transparent !important
+    }
     #bigColumn script + div[class] > div[style^="height"] * {
         height: inherit !important
     }
