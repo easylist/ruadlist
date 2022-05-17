@@ -1262,6 +1262,7 @@ $removeparam=_openstat
 $removeparam=admitad_uid
 $removeparam=afclid
 $removeparam=fref
+$removeparam=frommail,domain=mail.ru|sportmail.ru
 $removeparam=gclid
 $removeparam=gtm
 $removeparam=irclickid
@@ -1294,7 +1295,9 @@ $removeparam=ysclid
 .ua/?_ga=$document,removeparam=|
 /*purchase-referrer=$document,removeparam=|,domain=market.yandex.*
 /?amp;utm_*ukr$document,removeparam=|
+/?cr=$removeparam=cr,domain=mail.ru|sportmail.ru
 /?f=ukr.net$document,removeparam=|
+/?from=$removeparam=from,domain=mail.ru|sportmail.ru
 /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru
 /?readmore$document,xmlhttprequest,removeparam=|,domain=rambler.ru
 /story/*?lang=$document,removeparam=|,domain=yandex.*
@@ -1338,11 +1341,7 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||imdb.com/*pf_rd_$document,removeparam=|pf_rd_,domain=imdb.com
 ||imdb.com/*ref_=$document,removeparam=|ref,domain=imdb.com
 ||mail.ru^*exp_id=$document,removeparam=|,domain=mail.ru
-||mail.ru^*frommail=1$document,removeparam=|frommail=1,domain=mail.ru
-||mail.ru^*frommail=ft_ml$document,removeparam=|frommail=ft_ml,domain=mail.ru|sportmail.ru
 ||sportmail.ru^*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
-||sportmail.ru^*frommail=1$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
-||sportmail.ru^*frommail=ft_ml$document,removeparam=|frommail=ft_ml,domain=mail.ru|sportmail.ru
 ||www.google.*/search?$removeparam=aqs
 ||www.google.*/search?$removeparam=authuser
 ||www.google.*/search?$removeparam=bih
