@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220517.2048
+@version        0.20220518.2207
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5364,6 +5364,9 @@
         width: 13.8% !important;
         -webkit-flex-basis: 13.8% !important;
         flex-basis: 13.8% !important
+    }
+    .b-page_type_maps div[class$="__content"] > [class$="__ad"] > div {
+        width: unset !important
     }
 }
 

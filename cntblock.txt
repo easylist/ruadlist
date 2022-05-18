@@ -1138,6 +1138,8 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ||yandex-sport.naydex.net/$script,redirect=empty
 ||yastatic.net/*/front-maps-static/*/chunks/promo/$empty
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
+~mail.yandex.*,~vh.yandex.ru,~yandex.net,yandex.*#?#+js(no-setTimeout-if, t.apply(n, 25)
+~mail.yandex.*,~vh.yandex.ru,~yandex.net,yandex.*#?#+js(no-setTimeout-if, Ya.Rum.getSetting, 15)
 ~vh.yandex.ru,~yandex.net,yandex.*#?#+js(abort-on-property-read, Ya.loaderVer)
 ~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div
 ~yandex.net,mail.yandex.*,yandex.*##.ns-view-mail-pro-left-column-button
@@ -1174,16 +1176,19 @@ zen.yandex.*##div[class*="yandex-direct"]
 !yandex.ru##+js(no-setTimeout-if, b-spec-adv)
 !yandex.ru##+js(no-setTimeout-if, antiadb, home)
 @@||an.yandex.ru/jserr/1|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/mapuid/tnscounter/?from=yan_oo-rtb-direct|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/mapuid/yandex/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/meta/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/meta/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/partner-code-bundles/*.js|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/resource/spacer.gif|$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/system/context.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yandex.ru/ads/page/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/context.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/header-bidding.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||yastatic.net/daas/atom.js|$domain=mail.yandex.by|mail.yandex.kz|mail.yandex.ru|mail.yandex.uz
+@@||yastatic.net/daas/atom.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/pcode/adfox/header-bidding.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/pcode/adfox/loader.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 ~yandex.net,yandex.*#?#body.b-page > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
