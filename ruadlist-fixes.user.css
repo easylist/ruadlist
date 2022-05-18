@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220518.2207
+@version        0.20220518.2209
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -561,7 +561,8 @@
   domain("afisha.yandex.ru"),
   domain("afisha.yandex.uz") {
     [data-banner-id], div[class$="-banner"], 
-    div[data-bem*="height"][data-bem*="R-A-"] {
+    div[data-bem*="height"][data-bem*="R-A-"], 
+    main > .rubric-type-landing__section [data-component="RubricLandingContentDesktop"] {
         display: none !important
     }
     div[class*="_tld_"][id^="uniq"]:empty {
