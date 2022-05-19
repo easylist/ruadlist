@@ -1327,7 +1327,7 @@ $removeparam=ysclid
 ?topblock$document,removeparam=|,domain=3dnews.ru
 ?utm_partner_id=$document,removeparam=|,domain=mail.ru|sportmail.ru
 ?ymclid=$document,removeparam=|
-@@/forum/login.php?logout=$removeparam,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
+@@/forum\/(login|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
 aff_fcid=$document,removeparam=|,domain=aliexpress.*|~campaign.aliexpress.com
 algo_pvid=$document,removeparam=|,domain=aliexpress.*
 block_click=$removeparam=block_click,domain=rambler.ru
