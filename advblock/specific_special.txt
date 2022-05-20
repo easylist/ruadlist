@@ -193,17 +193,21 @@ $third-party,script,xmlhttprequest,domain=kino-live2.org|kino-live8.biz
 kino-live2.org,kino-live8.biz#?#div[class^="right"] .ramka1:-abp-has(noindex)
 !
 ! Комсомольская правда
-kp.by,kp.kg,kp.kz,kp.md,kp.ru##div[class^="styled__SlideContainer-"]
-kp.by,kp.kg,kp.kz,kp.md,kp.ru##div[class^="styled__SmiWrapper-"]
-kp.by,kp.kg,kp.kz,kp.md,kp.ru##div[class^="styled__SuspendableElement"] > div[class*="styled__DigestGrid-"]
-kp.by,kp.kg,kp.kz,kp.md,kp.ru##div[data-name]
+kp.kg,kp.kz,kp.md,kp.ru##[data-without-height]
+kp.kg,kp.kz,kp.md,kp.ru,radiokp.ru##a[href^="https://zen.yandex.ru/"]
+kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-has(> div > [data-smi-blockid])
+kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-has(> div:first-child + div > div:first-child > div:first-child + section > div > div > script[data-key])
+kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div[class]:-abp-has(> a[draggable="false"][href^="https://zen.yandex.ru/"])
+kp.kg,kp.kz,kp.md,kp.ru##div[data-name]
 ! спецпроекты, типа отдых в россии
 kp.ru##.inner-layout > div[style*="250px"]
 kp.ru##.kupi-reklamu-btn
 kp.ru##.rcard_link
 ! путеводитель
 kp.ru###sidebar-block-top
+kp.ru##.kion__wrapper
 kp.ru##.serial-content_container:empty
+kp.ru##div[style="width: 100%; margin: 30px 0; height: 250px;"]
 ! гид потребителя
 kp.ru###HTML1.image_header
 kp.ru#?##allrecords > div[id^=rec]:-abp-has([href*="/ad.admitad.com/"])
@@ -216,15 +220,18 @@ kp.ru##.tgb_block
 kp.ru##div[id^="rec"] > div div[style="align-items:center;"]
 ||kp.ru/guide/js/brp.js
 ! эксперт
+/market-static/*$domain=kp.kg|kp.kz|kp.md|kp.ru
 kp.ru##.ya-market
-||kp.ru/expert/expert-market/
+||kp.ru/*/expert-market/
 ! афиша
 kp.ru##.afisha-r__block
 kp.ru##.page-header_tell[href*="/reklama/"]
-! sport
-kp.ru##.grid-container[style*="height:"][style*="250px"]
-kp.ru##.page-header__menu-button--icon-loudspeaker
-kp.ru##div[class^="ad-slot__"]
+! sport и радио
+kp.ru###se-sidebar
+radiokp.ru,sportkp.ru##.dna-adfox-block
+radiokp.ru##.dummy-yandex-zen-channel-block
+radiokp.ru##.lentainform-block
+sportkp.ru##a[href="/advertising"]
 !
 ! Mail.ru
 ! Скрытие по-разделам
