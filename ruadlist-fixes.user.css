@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220520.1430
+@version        0.20220521.2301
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2730,6 +2730,9 @@
     #page-wrapper .container {
         max-width: 100% !important
     }
+    #page-wrapper > #wrapper {
+        padding-top: 0 !important
+    }
 }
 
 @-moz-document domain("jut-su.net") {
@@ -2977,7 +2980,7 @@
         margin-top: auto !important
     }
     [data-test-id="News_SpecialArticle"] + div[class]:not(:empty), 
-    [data-test-id="News_SpecialArticle"] + div[class]:not(:empty) +div[class]:not(:empty), 
+    [data-test-id="News_SpecialArticle"] + div[class]:not(:empty) + div[class]:not(:empty), 
     [data-test-id="News_SpecialArticle"] ~ div[class]:empty + div[class]:not(:empty), 
     [data-test-id="News_SpecialArticle"] ~ div[class]:empty + div[class]:not(:empty) + div[class]:not(:empty) {
         min-height: auto !important
@@ -5132,9 +5135,6 @@
     }
     #page-wrapper > #header, #page-wrapper > .tm-wrapper > .tm {
         margin-bottom: auto !important
-    }
-    #page-wrapper > #wrapper {
-        padding-top: 0 !important
     }
 }
 
