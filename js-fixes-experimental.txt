@@ -436,7 +436,7 @@ sinoptik.ua##style:not(#id):style(all: inherit !important)
 !#if env_firefox
 mail.ukr.net##+js(abort-on-property-read, app.initializePromise)
 @@||counter.ukr.net/*/cnt.php|$image,domain=mail.ukr.net
-www.ukr.net##^script:has-text(zmc|loader|track)
+www.ukr.net##^script:has-text(znc|track)
 mail.ukr.net##head > iframe[name]:not([id]):not([class]):not([src]):remove()
 !#endif
 mail.ukr.net###top_banner:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
