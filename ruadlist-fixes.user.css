@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220521.2301
+@version        0.20220522.2306
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1897,7 +1897,9 @@
     }
 }
 
-@-moz-document domain("filmozavr.net") {
+@-moz-document
+  domain("filmozavr.com"),
+  domain("filmozavr.net") {
     .maincontent {
         margin-top: 0 !important
     }
