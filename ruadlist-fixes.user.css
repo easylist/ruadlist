@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220524.1330
+@version        0.20220524.1336
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -775,8 +775,8 @@
   domain("animebest.tv"),
   domain("animego.life"),
   domain("animevost.tv"),
-  domain("senpai.cc"),
   domain("kinogo-net.la"),
+  domain("senpai.cc"),
   domain("yummyanime.life") {
     #wr-bg {
         padding-top: 60px !important;
@@ -1557,6 +1557,26 @@
 
 @-moz-document domain("doefiratv.info") {
     .b-cell > div[id] {
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("doktor-stoun.ru"),
+  domain("hunter-x-hunter.ru"),
+  domain("reinkarnatsiya-bezrabotnogo.ru"),
+  domain("magicheskaya-bitva.ru"),
+  domain("bungou-stray-dogs.ru"),
+  domain("haikyu.ru"),
+  domain("borutoplanet.ru"),
+  domain("anime-naruto.ru"),
+  domain("tokiyskie-mstiteli.ru"),
+  domain("my-hero-academia.ru"),
+  domain("blich.ru"),
+  domain("one-pieces.ru"),
+  domain("klinok-rassekayuschiy-demonov.ru"),
+  domain("anime-naruto.ru") {
+    .home, .single {
         padding-top: 0 !important
     }
 }
