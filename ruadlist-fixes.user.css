@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220524.1325
+@version        0.20220524.1326
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -774,9 +774,12 @@
   domain("anilibria.life"),
   domain("animebest.tv"),
   domain("animego.life"),
-  domain("animevost.tv") {
+  domain("animevost.tv"),
+  domain("senpai.cc"),
+  domain("yummyanime.life") {
     #wr-bg {
-        padding-top: 60px !important
+        padding-top: 60px !important;
+        margin-top: unset !important
     }
 }
 
@@ -2832,15 +2835,6 @@
 @-moz-document domain("kinoakter.net") {
     body > div[class^="wrapper"] {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("kinogo-net.org"),
-  domain("senpai.cc") {
-    .wr {
-        padding-top: 64px !important;
-        margin-top: unset !important
     }
 }
 
