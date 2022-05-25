@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220524.1336
+@version        0.20220525.1900
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -784,6 +784,25 @@
     }
 }
 
+@-moz-document
+  domain("anime-naruto.ru"),
+  domain("blich.ru"),
+  domain("borutoplanet.ru"),
+  domain("bungou-stray-dogs.ru"),
+  domain("doktor-stoun.ru"),
+  domain("haikyu.ru"),
+  domain("hunter-x-hunter.ru"),
+  domain("klinok-rassekayuschiy-demonov.ru"),
+  domain("magicheskaya-bitva.ru"),
+  domain("my-hero-academia.ru"),
+  domain("one-pieces.ru"),
+  domain("reinkarnatsiya-bezrabotnogo.ru"),
+  domain("tokiyskie-mstiteli.ru") {
+    .home, .single {
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("anime777.ru") {
     .vsemayki-banner {
         display: none !important
@@ -1557,26 +1576,6 @@
 
 @-moz-document domain("doefiratv.info") {
     .b-cell > div[id] {
-        padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("doktor-stoun.ru"),
-  domain("hunter-x-hunter.ru"),
-  domain("reinkarnatsiya-bezrabotnogo.ru"),
-  domain("magicheskaya-bitva.ru"),
-  domain("bungou-stray-dogs.ru"),
-  domain("haikyu.ru"),
-  domain("borutoplanet.ru"),
-  domain("anime-naruto.ru"),
-  domain("tokiyskie-mstiteli.ru"),
-  domain("my-hero-academia.ru"),
-  domain("blich.ru"),
-  domain("one-pieces.ru"),
-  domain("klinok-rassekayuschiy-demonov.ru"),
-  domain("anime-naruto.ru") {
-    .home, .single {
         padding-top: 0 !important
     }
 }
@@ -4623,23 +4622,10 @@
     html {
         background-color: #dbdbdb !important
     }
-    #vbulletin_html > body > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
-    html.home > body > [class]:not([class*="-"])[id*="-"], 
-    html.home [class][id] > [class]:not([class*="-"])[id*="-"] {
-        background-image: none !important;
-        background-color: #dbdbdb !important
-    }
-    #vbulletin_html > body > style ~ div ~ :not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)), 
-    #vbulletin_html > body > style ~ div:not([title]):not([id*="footer"]):not(:nth-last-child(-n+5)) > style + div[id]:not(#globalcontent), 
-    html.home #wrapper > #content > :not(#content-wrapper), 
-    html.home #wrapper > #content ~ [class], 
-    html.home [class][id] > img[src] ~ style + [id]:not(#wrapper) {
-        display: none !important
-    }
     #vbulletin_html .above_body {
         margin-bottom: auto !important
     }
-    #vbulletin_html #globalcontent {
+    #footer {
         margin-top: 0 !important
     }
 }
