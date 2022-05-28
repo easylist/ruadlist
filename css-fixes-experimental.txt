@@ -1628,6 +1628,10 @@ e.mail.ru,octavius.mail.ru#?#.layer-sent-page > .layer:style(min-height: 0 !impo
 e.mail.ru#?#.ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"]:style(pointer-events: none !important)
 e.mail.ru,octavius.mail.ru#?#html:root:style(--vkui--octavius_size_headline_height--regular: 36px !important)
 ! ---
+cloud.mail.ru#?##app > #public > #content:style(width: 100% !important)
+cloud.mail.ru###app > #public > .shove
+cloud.mail.ru#?##app > #public:style(width: 100% !important)
+cloud.mail.ru#?##app:style(background: none !important)
 mail.ru###bubble-home
 my.mail.ru###history_container > div[class][style*="display: block!important"]
 minigames.mail.ru###like-buttons
@@ -1654,9 +1658,6 @@ news.mail.ru,pogoda.mail.ru,sportmail.ru##.layout_footer > .block
 sportmail.ru#?#.layout_footer:style(margin-top: 20px !important)
 mail.ru,sportmail.ru##.ph-balloon
 mail.ru##.ph-ext
-cloud.mail.ru##.public .b-layout__col_1_2 + .b-layout__col_2_2
-cloud.mail.ru#?#.public .b-layout__col_1_2:style(margin-right: auto !important; max-width: unset !important)
-cloud.mail.ru#?#.public__content__inner#datalist:style(height: unset !important)
 mail.ru,sportmail.ru##.pulse-lenta
 my.mail.ru##.sp-video__billboard
 my.mail.ru##:not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"]
@@ -1681,8 +1682,11 @@ mail.ru##body:not(.js-module) .searchContainer ~ div > a.dmb
 mail.ru#?#body:not(.js-module) .tabs + div[class] > .grid__ccol:style(min-width: 680px !important)
 mail.ru#?#body:not(.js-module) .tabs + div[class]:style(min-width: 680px !important)
 mail.ru##body:not(.js-module) .tabs-content ~ div > div:first-child:not([name])
-cloud.mail.ru#?#div[class*="Space__root_marketingPromo"]:style(min-height: 0 !important)
 cloud.mail.ru##div[class^="Datalistinfo__root"]
+cloud.mail.ru##div[class^="Public-desktop__rightCol-"]
+cloud.mail.ru##div[class^="Public-desktop__worm-"]
+cloud.mail.ru##div[class^="ReactViewer__bottominfoWrapper-"]
+cloud.mail.ru#?#div[class^="ReactViewer__root-"]:style(--bottom-banner-height: 0 !important)
 cloud.mail.ru##div[class^="Worm__root-"]
 my.mail.ru##div[class^="app-adv-"]
 news.mail.ru,sportmail.ru##div[data-module="LazyLoad.PromoPopup"] .js-module.block

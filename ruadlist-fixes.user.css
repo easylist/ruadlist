@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220528.1558
+@version        0.20220528.2016
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1374,19 +1374,20 @@
 }
 
 @-moz-document domain("cloud.mail.ru") {
-    .public .b-layout__col_1_2 + .b-layout__col_2_2, 
-    div[class^="Datalistinfo__root"], div[class^="Worm__root-"] {
+    div[class^="ReactViewer__root-"] {
+        --bottom-banner-height: 0px !important
+    }
+    #app {
+        background: none !important
+    }
+    #app > #public > .shove, div[class^="Datalistinfo__root"], 
+    div[class^="Public-desktop__rightCol-"], 
+    div[class^="Public-desktop__worm-"], 
+    div[class^="ReactViewer__bottominfoWrapper-"], div[class^="Worm__root-"] {
         display: none !important
     }
-    .public__content__inner#datalist {
-        height: unset !important
-    }
-    .public .b-layout__col_1_2 {
-        margin-right: auto !important;
-        max-width: unset !important
-    }
-    div[class*="Space__root_marketingPromo"] {
-        min-height: 0 !important
+    #app > #public, #app > #public > #content {
+        width: 100% !important
     }
 }
 
@@ -3781,8 +3782,8 @@
 }
 
 @-moz-document
-  domain("opennet.ru"),
-  domain("opennet.me") {
+  domain("opennet.me"),
+  domain("opennet.ru") {
     html.dark-mode > body {
         filter: invert(90%) !important
     }
