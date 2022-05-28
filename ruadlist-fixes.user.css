@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220525.1900
+@version        0.20220528.1558
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3780,7 +3780,9 @@
     }
 }
 
-@-moz-document domain("opennet.ru") {
+@-moz-document
+  domain("opennet.ru"),
+  domain("opennet.me") {
     html.dark-mode > body {
         filter: invert(90%) !important
     }
