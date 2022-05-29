@@ -2195,3 +2195,6 @@ www.google.*##^script:has-text(/consentCookiePayload.*nidCookiePayload/)
 ! - Экспериментальные правила, добавлять только для доменов, на которых нет :-abp, либо изолировать
 market.yandex.*#?#div[data-zone-name="morda_context"] > div > div:nth-child(-n+2) > div[data-tid] > div[class] > div[class]:not([data-tid]) > div[class]:not([data-tid]):first-child + div:style(width: inherit !important)
 market.yandex.*#?#div[data-zone-name="morda_context"] > div > div:nth-child(-n+2) > div[data-tid] > div[class] > div[class]:not([data-tid]) > div[class]:not([data-tid]):first-child:style(padding-right: unset !important; width: inherit !important; max-width: 100% !important)
+!
+www.kinopoisk.*#?#header[style*="--header-height:"][style*="150px"] > .header-navigation:style(margin-top: 0 !important)
+www.kinopoisk.*#?#header[style*="--header-height:"][style*="150px"] > div > img
