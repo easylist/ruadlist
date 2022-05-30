@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220530.1157
+@version        0.20220530.2303
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1849,6 +1849,15 @@
     }
 }
 
+@-moz-document domain("fbsearch.ru") {
+    #search_panel > .panel-body {
+        display: block !important
+    }
+    #search_panel > .panel-body ~ div {
+        display: none !important
+    }
+}
+
 @-moz-document domain("fclmnews.ru") {
     .site {
         margin-top: 0 !important
@@ -2485,6 +2494,14 @@
     }
     #portal-menu, .header-banner {
         margin: 0 !important
+    }
+}
+
+@-moz-document
+  domain("hlamer.ru"),
+  domain("oveg.ru") {
+    body {
+        background-color: #596c84 !important
     }
 }
 
@@ -3827,14 +3844,6 @@
 @-moz-document domain("outlook.live.com") {
     div[tabindex][role="region"][aria-label] ~ div[data-max-width][class] + div[class^="_3_"] {
         display: none !important
-    }
-}
-
-@-moz-document
-  domain("oveg.ru"),
-  domain("hlamer.ru") {
-    body {
-        background-color: #596c84 !important
     }
 }
 
