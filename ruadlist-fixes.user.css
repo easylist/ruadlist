@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220530.2303
+@version        0.20220531.217
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1375,7 +1375,7 @@
 
 @-moz-document domain("cloud.mail.ru") {
     div[class^="ReactViewer__root-"] {
-        --bottom-banner-height: 0 !important
+        --bottom-banner-height: 1px !important
     }
     #app {
         background: none !important
@@ -1383,6 +1383,7 @@
     #app > #public > .shove, div[class^="Datalistinfo__root"], 
     div[class^="Public-desktop__rightCol-"], 
     div[class^="Public-desktop__worm-"], 
+    div[class^="ReactViewer__attachesinfo-"], 
     div[class^="ReactViewer__bottominfoWrapper-"], div[class^="Worm__root-"] {
         display: none !important
     }
