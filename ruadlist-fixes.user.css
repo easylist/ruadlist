@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220531.217
+@version        0.20220531.1249
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3280,6 +3280,10 @@
     body:not(.js-module) .searchContainer ~ div > a.dmb, 
     body:not(.js-module) .tabs-content ~ div > div:first-child:not([name]) {
         display: none !important
+    }
+    body > .zeropixel ~ * .stripe-wrapper {
+        height: auto !important;
+        margin-top: unset !important
     }
     body > .zeropixel ~ * .tabs-content > :first-child > [class*="news-main"] {
         max-height: 5em !important;
