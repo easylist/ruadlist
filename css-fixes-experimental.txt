@@ -240,7 +240,9 @@ batenka.ru#?#body:style(overflow: auto !important)
 ! ---
 bestpersons.ru#?##userTabs:style(float: none !important)
 ! ---
-bigboss.video#?#video:style(filter: none !important)
+! bigboss.video и зеркала
+1bigboss.com,bigboss.video#?##oframeflashcontent > pjsdiv[style*="transition: transform"]:style(transform: none !important)
+1bigboss.com,bigboss.video#?#video:style(filter: none !important)
 ! ---
 www.bigmir.net#?#body > #header:style(top: 0 !important)
 www.bigmir.net#?#body > .page:style(padding-top: 144px !important)

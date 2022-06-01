@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220531.1249
+@version        0.20220601.2128
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -75,6 +75,17 @@
     }
     body > .l-wrapper > div[style^="position: absolute; width: 30px; height: 30px; bottom: 13px; left: 10px;"] {
         opacity: unset !important
+    }
+}
+
+@-moz-document
+  domain("1bigboss.com"),
+  domain("bigboss.video") {
+    video {
+        filter: none !important
+    }
+    #oframeflashcontent > pjsdiv[style*="transition: transform"] {
+        transform: none !important
     }
 }
 
@@ -1126,12 +1137,6 @@
     body[class*="-ru"] > .content > div[class]:last-child > div > div[class]:first-child ~ div:nth-child(n+1), 
     body[class*="-ru"] > div[class]:not([id]):nth-child(-n+2) {
         display: none !important
-    }
-}
-
-@-moz-document domain("bigboss.video") {
-    video {
-        filter: none !important
     }
 }
 
