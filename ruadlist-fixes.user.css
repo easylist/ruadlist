@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220603.1421
+@version        0.20220603.1701
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1407,7 +1407,8 @@
     div[class^="Public-desktop__rightCol-"], 
     div[class^="Public-desktop__worm-"], 
     div[class^="ReactViewer__attachesinfo-"], 
-    div[class^="ReactViewer__bottominfoWrapper-"], div[class^="Worm__root-"] {
+    div[class^="ReactViewer__bottominfoWrapper-"], div[class^="Worm__root-"], 
+    iframe[src^="https://o2.mail.ru/"] ~ div div[class^="ViewerHeader__closeIcon--"] {
         display: none !important
     }
     #app > #public, #app > #public > #content {
