@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220603.246
+@version        0.20220603.1421
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -868,6 +868,18 @@
 @-moz-document domain("animegid.online") {
     .header {
         padding-block-start: 0 !important
+    }
+}
+
+@-moz-document domain("animego.online") {
+    body > .wrapper {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important
+    }
+    body {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        background-image: none !important
     }
 }
 
