@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220605.1327
+@version        0.20220605.2320
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4225,14 +4225,15 @@
   domain("reshuvpr.ru"),
   domain("sdamgia.ru") {
     #old_school > .App > div > [color="red"], div.no_dark, div[class$="-Zone"], 
-    div[style*="height:"][style*="width:"][style*="margin: 0 auto;"] {
+    div[style*="height:"][style*="width:"][style*="margin: 0 auto;"], 
+    div[style^="width: fit-content"] > a > img {
         display: none !important
     }
-    .menu[role="navigation"] > div[style*="height:"], 
+    .menu[role="navigation"] div[style*="height:"], 
     aside > div[class]:first-child, aside > div[class]:first-child > div {
         height: auto !important
     }
-    .PageLayout-Main > div[class*=" "] {
+    main > div[class*=" "] {
         min-height: auto !important;
         height: auto !important
     }
@@ -4342,12 +4343,6 @@
     }
     html:not(#id) > body:not(#id) .body--brranding {
         pointer-events: none !important
-    }
-}
-
-@-moz-document domain("sdamgia.ru") {
-    .wrapper > div[class] > [style*="red;"][style*="font-size:"] {
-        display: none !important
     }
 }
 
