@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220605.135
+@version        0.20220605.1327
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -133,7 +133,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezkagghrt2.net"),
   domain("3ivi.com"),
   domain("aif.ru"),
   domain("ain.ua"),
@@ -168,6 +167,7 @@
   domain("hdrezka.win"),
   domain("hdrezka19139.org"),
   domain("hdrezkacvb.org"),
+  domain("hdrezkagghrt2.net"),
   domain("hdrezkame.com"),
   domain("hdrezkaonline.com"),
   domain("hdrezkap3g.org"),
@@ -223,7 +223,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezkagghrt2.net"),
   domain("3ivi.com"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
@@ -272,6 +271,7 @@
   domain("hdrezka.win"),
   domain("hdrezka19139.org"),
   domain("hdrezkacvb.org"),
+  domain("hdrezkagghrt2.net"),
   domain("hdrezkame.com"),
   domain("hdrezkaonline.com"),
   domain("hdrezkap3g.org"),
@@ -965,18 +965,11 @@
 }
 
 @-moz-document domain("anitokyo.tv") {
-    #header_h {
+    .topside::after, .topside::before {
         background-image: none !important
     }
-    body {
-        background-image: none !important;
-        background-color: #e4f1f6 !important
-    }
-    div[class^="header_bg"], header > a:not(.rss_ico) {
-        display: none !important
-    }
-    #wrapper, header {
-        padding-top: 0 !important
+    .container > header {
+        margin-top: 10px !important
     }
 }
 
