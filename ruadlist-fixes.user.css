@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220606.8
+@version        0.20220606.1535
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -133,7 +133,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezkaqwe.org"),
   domain("3ivi.com"),
   domain("aif.ru"),
   domain("ain.ua"),
@@ -174,6 +173,7 @@
   domain("hdrezkap3g.org"),
   domain("hdrezkapez.org"),
   domain("hdrezkapoi.org"),
+  domain("hdrezkaqwe.org"),
   domain("hdrezkarty.org"),
   domain("hdrezkayou.com"),
   domain("hdrezkazxc.org"),
@@ -224,7 +224,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezkaqwe.org"),
   domain("3ivi.com"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
@@ -279,6 +278,7 @@
   domain("hdrezkap3g.org"),
   domain("hdrezkapez.org"),
   domain("hdrezkapoi.org"),
+  domain("hdrezkaqwe.org"),
   domain("hdrezkarty.org"),
   domain("hdrezkayou.com"),
   domain("hdrezkazxc.org"),
@@ -4226,13 +4226,14 @@
   domain("reshuoge.ru"),
   domain("reshuvpr.ru"),
   domain("sdamgia.ru") {
-    #old_school > .App > div > [color="red"], div.no_dark, div[class$="-Zone"], 
+    #old_school > .App > div > [color="red"], div.no_dark, 
     div[style*="height:"][style*="width:"][style*="margin: 0 auto;"], 
     div[style^="width: fit-content"] > a > img {
         display: none !important
     }
     .menu[role="navigation"] div[style*="height:"], 
-    aside > div[class]:first-child, aside > div[class]:first-child > div {
+    aside > div[class]:first-child, aside > div[class]:first-child > div, 
+    aside center > div[style*="height:"] {
         height: auto !important
     }
     main > div[class*=" "] {
