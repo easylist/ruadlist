@@ -43,7 +43,6 @@
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||studizba.com^$generichide,badfilter
-@@||utarget.ru/check_geo/|$script,badfilter,domain=memepedia.ru
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 afisha.ru,film.ru##+js(remove-attr, autoplay|loop, video, stay)
 all-episodes.club##+js(abort-on-property-read, advtss)
@@ -356,7 +355,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||ts.kg/olol*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=ts.kg
 ||ts.kg/olol*.mp4$media,redirect=noop-0.1s.mp3
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|
-||utarget.ru/check_geo/|$script,redirect=empty,domain=memepedia.ru
 ||video.matchtv.ru/iframe/feed/*&skin_name=mpartner&autostart=1$subdocument,removeparam=/autostart|skin_name/
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=|,domain=1news.com.ua|7days.ru|factor.ua|gamasexual.com|gamasexual.ru|go.mail.ru|igromania.ru|kanobu.ru|segodnya.ua|sledcom.ru|sport-express.ru|u24.ua|xn--b1ats.xn--80asehdb
