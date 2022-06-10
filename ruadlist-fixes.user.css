@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220609.1312
+@version        0.20220610.1517
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -133,7 +133,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezka.re"),
   domain("3ivi.com"),
   domain("aif.ru"),
   domain("ain.ua"),
@@ -158,6 +157,7 @@
   domain("hdrezka.loan"),
   domain("hdrezka.me"),
   domain("hdrezka.name"),
+  domain("hdrezka.re"),
   domain("hdrezka.rest"),
   domain("hdrezka.run"),
   domain("hdrezka.sh"),
@@ -227,7 +227,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezka.re"),
   domain("3ivi.com"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
@@ -264,6 +263,7 @@
   domain("hdrezka.loan"),
   domain("hdrezka.me"),
   domain("hdrezka.name"),
+  domain("hdrezka.re"),
   domain("hdrezka.rest"),
   domain("hdrezka.run"),
   domain("hdrezka.sh"),
@@ -2859,6 +2859,12 @@
     }
     body > .menu_wrap {
         position: relative !important
+    }
+}
+
+@-moz-document domain("kharkovforum.com") {
+    body > table > tbody > tr > td[align="center"] {
+        display: none !important
     }
 }
 
