@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220612.2227
+@version        0.20220613.1351
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -133,7 +133,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezkapzm.org"),
   domain("3ivi.com"),
   domain("aif.ru"),
   domain("ain.ua"),
@@ -176,6 +175,7 @@
   domain("hdrezkap3g.org"),
   domain("hdrezkapez.org"),
   domain("hdrezkapoi.org"),
+  domain("hdrezkapzm.org"),
   domain("hdrezkaqwe.org"),
   domain("hdrezkarty.org"),
   domain("hdrezkayou.com"),
@@ -228,7 +228,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezkapzm.org"),
   domain("3ivi.com"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
@@ -285,6 +284,7 @@
   domain("hdrezkap3g.org"),
   domain("hdrezkapez.org"),
   domain("hdrezkapoi.org"),
+  domain("hdrezkapzm.org"),
   domain("hdrezkaqwe.org"),
   domain("hdrezkarty.org"),
   domain("hdrezkayou.com"),
@@ -2353,6 +2353,12 @@
 @-moz-document domain("goclips.tv") {
     .video_content {
         height: auto !important
+    }
+}
+
+@-moz-document domain("goha.ru") {
+    a[href="https://www.goha.ru/live"] > span[class*="pulse"]:before {
+        animation: none !important
     }
 }
 
@@ -5148,20 +5154,8 @@
 }
 
 @-moz-document domain("www.goha.ru") {
-    .animation-pulse:before {
-        animation: none !important
-    }
-    #goharu > #site {
-        margin-top: 110px !important
-    }
-    #content-container {
-        padding-top: 0 !important
-    }
     a[href^="https://www.goha.ru/~"] {
         pointer-events: none !important
-    }
-    #content-container > div:empty {
-        position: unset !important
     }
 }
 
