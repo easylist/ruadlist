@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220613.1351
+@version        0.20220614.1501
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4134,6 +4134,13 @@
         position: fixed !important;
         transform: scale(0) !important;
         top: -10000px !important
+    }
+}
+
+@-moz-document domain("quote.ru") {
+    #js_col_left > .l-sticky {
+        position: relative !important;
+        top: unset !important
     }
 }
 

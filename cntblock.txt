@@ -198,7 +198,7 @@ _pagespeed_beacon?
 /cdn-cgi/bm/cv/*.js$script
 /cgi-bin/bm/cv/*.js$script
 /metrics.js$domain=maximum.ru|montecarlo.ru
-/redir/stat/*$domain=autonews.ru|rbc.ru|sportrbc.ru
+/redir/stat/*$domain=autonews.ru|quote.ru|rbc.ru|sportrbc.ru
 /yandex-metrika.js$domain=dfm.ru|hitfm.ru|maximum.ru|montecarlo.ru|rusradio.ru
 ://a.pr-cy.ru^$third-party
 |http://li.ru^$third-party,~subdocument
@@ -1318,7 +1318,7 @@ $removeparam=ysclid
 ?country_code=$document,removeparam=|,domain=zen.yandex.*
 ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*
 ?e=lfm$document,removeparam=|,domain=sports.ru
-?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|rbc.ru|sportrbc.ru|sports.ru
+?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|quote.ru|rbc.ru|sportrbc.ru|sports.ru
 ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru
 ?from=tabbar$document,removeparam=|from,domain=yandex.*
 ?from=yanews$document,removeparam=|
@@ -1327,7 +1327,7 @@ $removeparam=ysclid
 ?previewToken=$document,removeparam=|,domain=maximonline.ru
 ?rcmd_$document,removeparam=|rcmd_,domain=ria.ru
 ?referrer_block=$document,removeparam=|referrer_,domain=mail.ru|sportmail.ru
-?ruid=$document,removeparam=|ruid,domain=autonews.ru|rbc.ru|sportrbc.ru
+?ruid=$document,removeparam=|ruid,domain=autonews.ru|quote.ru|rbc.ru|sportrbc.ru
 ?source=ukrnet$document,removeparam=|
 ?sub_confirmation=1$document,removeparam=|,domain=youtube.com
 ?topblock$document,removeparam=|,domain=3dnews.ru
