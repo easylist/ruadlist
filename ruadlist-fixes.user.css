@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220616.1329
+@version        0.20220616.1634
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3230,8 +3230,8 @@
 @-moz-document
   domain("lostfilm.pro"),
   domain("lostfilm.run"),
-  domain("lostfilm.tv"),
   domain("lostfilm.today"),
+  domain("lostfilm.tv"),
   domain("lostfilm.tw"),
   domain("lostfilm.uno"),
   domain("lostfilm.win"),
@@ -3336,6 +3336,9 @@
         height: auto !important;
         margin-top: unset !important
     }
+    body > .grid .grid__rcol {
+        margin-left: 0 !important
+    }
     body > .zeropixel ~ * .tabs-content > :first-child > [class*="news-main"] {
         max-height: 5em !important;
         position: static !important
@@ -3349,6 +3352,10 @@
         min-width: unset !important;
         height: 5em !important;
         width: 6.66em !important
+    }
+    body:not(.js-module) .tabs + div[class], 
+    body:not(.js-module) .tabs + div[class] > .grid__ccol {
+        min-width: 676px !important
     }
     body > .zeropixel ~ * .tabs-content > :first-child > a::after {
         position: unset !important
