@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220616.1634
+@version        0.20220617.137
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -181,6 +181,7 @@
   domain("hdrezkarty.org"),
   domain("hdrezkayou.com"),
   domain("hdrezkayt7810.net"),
+  domain("hdrezkayyt43d.net"),
   domain("hdrezkazxc.org"),
   domain("instahdrezka.com"),
   domain("ixbt.com"),
@@ -291,6 +292,7 @@
   domain("hdrezkarty.org"),
   domain("hdrezkayou.com"),
   domain("hdrezkayt7810.net"),
+  domain("hdrezkayyt43d.net"),
   domain("hdrezkazxc.org"),
   domain("ikinohd.com"),
   domain("instahdrezka.com"),
@@ -4716,6 +4718,12 @@
     }
     html > body {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("tass.ru") {
+    aside > div[class^="NavPanel_nav"] {
+        width: unset !important
     }
 }
 
