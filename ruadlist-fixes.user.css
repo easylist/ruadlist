@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220614.1902
+@version        0.20220616.1327
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3317,9 +3317,10 @@
         padding: 8px 0 12px !important;
         border-top: 1px solid #f0f1f3 !important
     }
-    #bubble-home, .grid__lcol_mailbox .horoscope ~ div, .ph-ext, 
-    body > .grid .grid__rcol, body > .grid .news-item_tgb, 
-    body > .grid .rectangle-banner, 
+    #bubble-home, .grid__lcol_mailbox .horoscope ~ div, 
+    .grid__main-col > .tgb-wrapper, .ph-ext, 
+    body > .grid .grid__rcol > :not(.weather):not(.rates), 
+    body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .new-tgb-wrap, 
     body > .zeropixel ~ * .rectangle-banner, 
@@ -3347,10 +3348,6 @@
         min-width: unset !important;
         height: 5em !important;
         width: 6.66em !important
-    }
-    body:not(.js-module) .tabs + div[class], 
-    body:not(.js-module) .tabs + div[class] > .grid__ccol {
-        min-width: 680px !important
     }
     body > .zeropixel ~ * .tabs-content > :first-child > a::after {
         position: unset !important
