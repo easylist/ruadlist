@@ -7721,7 +7721,7 @@ megaimg.ru##script[src^="http://am10.ru/"] + center
 car72.ru##section > .container-fluid > div[style^="width:"][style$="%"]
 stopgame.ru#?#section > div[class^="_content-wrapper_"]:-abp-has(> div > a[href="/razbor/new"]) ~ div[class^="_content-wrapper_"] a[href^="/to?http"]
 eanews.ru#?#section > section:-abp-has(> [class^="styled__AdvLink-sc-"])
-fontanka.ru#?#section article div:-abp-has(> div > [id^="adv_"])
+fontanka.ru#?#section article div:has(> div:first-child > [id^="adv_"])
 fontanka.ru#?#section article ~ div div:-abp-has(> div > [id^="adv_"])
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 superdom.ua#?#section:-abp-has(> h2:-abp-contains(/новости партн/i))

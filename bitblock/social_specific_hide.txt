@@ -1647,6 +1647,9 @@ vgolos.ua##[data-key="index_in_lviv"]
 kufar.by##[data-name="share-button"]
 all-episodes.club##[data-permalink="https://all-episodes.club/news/telegramanonce"]
 sheensay.ru##[data-pr^="Поделиться"]
+fontanka.ru##[data-rg-name="tlg"]
+fontanka.ru##[data-rg-name="twi"]
+fontanka.ru##[data-rg-name="vk"]
 mediazona.by,mediazona.ca,zona.media##[data-share-id]
 kp.kg,kp.kz,kp.md,kp.ru,stopgame.ru##[data-share]
 www.drive2.ru#?#[data-slot="share.root"]:-abp-has(> .c-share__label + button:not([data-target="drive"]))
@@ -1791,7 +1794,7 @@ youla.ru#?#div:-abp-has(> [data-test-component="SocialShare"])
 fontanka.ru#?#div:-abp-has(> [title="ВКонтакте"] ~ [title="Яндекс.Zen"])
 nsn.fm#?#div:-abp-has(> a[href*="//telegram.me/"])
 letidor.ru,moslenta.ru,passion.ru,secretmag.ru,wmj.ru#?#div:-abp-has(> a[target="_blank"] > div > div > span[href] > span)
-fontanka.ru#?#div:-abp-has(> div > span > [alt="Поделиться"])
+fontanka.ru#?#div:-abp-has(> div:first-child > span > [alt="Поделиться"])
 okko.tv#?#div:-abp-has(> span:-abp-contains(Поделиться:))
 traktorist.ua#?#div:not([id]):not([class]):-abp-has(> a[href="https://t.me/traktoristua"])
 stalker-mods.clan.su,stalker-mods.su#?#div[align="center"]:-abp-contains(Поделиться в социальных сетях)
@@ -1966,6 +1969,7 @@ the-village.ru##section[class*="-SocialBlock-"]
 1plus1tv.tv,latino-serialo.tv,latinochka.ru,loveserial.net,mundo-latino.ru#?#span:-abp-contains(Поделитесь фильмом с друзьями в соцсетях)
 1plus1tv.tv,latino-serialo.tv,latinochka.ru,loveserial.net,mundo-latino.ru#?#span:-abp-contains(Понравилось видео?)
 gazeta.ua#?#span:-abp-contains(литись:)
+fontanka.ru#?#span:-abp-has(> [alt="Поделиться"])
 korrespondent.net#?#span:-abp-has(> em > a[href^="https://t.me/"])
 glavagronom.ru,glavpahar.ru,traktorist.ua##svg > path[fill][d^="M248"]
 glavagronom.ru,glavpahar.ru,traktorist.ua##svg > path[fill][d^="M444"]
