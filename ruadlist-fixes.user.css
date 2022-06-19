@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220617.1422
+@version        0.20220619.1804
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -31,6 +31,7 @@
   domain("14.ru"),
   domain("161.ru"),
   domain("164.ru"),
+  domain("178.ru"),
   domain("26.ru"),
   domain("29.ru"),
   domain("35.ru"),
@@ -52,13 +53,14 @@
   domain("86.ru"),
   domain("89.ru"),
   domain("93.ru"),
+  domain("chita.ru"),
   domain("e1.ru"),
+  domain("ircity.ru"),
   domain("mgorsk.ru"),
-  domain("mosk.ru"),
+  domain("msk1.ru"),
   domain("ngs.ru"),
   domain("ngs22.ru"),
   domain("ngs24.ru"),
-  domain("ngs38.ru"),
   domain("ngs42.ru"),
   domain("ngs55.ru"),
   domain("ngs70.ru"),
@@ -778,6 +780,21 @@
 }
 
 @-moz-document
+  domain("anidub.best"),
+  domain("anilibria.life"),
+  domain("animebest.tv"),
+  domain("animego.life"),
+  domain("animevost.tv"),
+  domain("kinogo-net.la"),
+  domain("senpai.cc"),
+  domain("yummyanime.life") {
+    #wr-bg {
+        padding-top: 60px !important;
+        margin-top: unset !important
+    }
+}
+
+@-moz-document
   domain("anidub.club"),
   domain("anidub.link"),
   domain("anime.anidub.life"),
@@ -800,21 +817,6 @@
     }
     .wrap > .popular {
         visibility: visible !important
-    }
-}
-
-@-moz-document
-  domain("anilibria.life"),
-  domain("animebest.tv"),
-  domain("animego.life"),
-  domain("animevost.tv"),
-  domain("anidub.best"),
-  domain("kinogo-net.la"),
-  domain("senpai.cc"),
-  domain("yummyanime.life") {
-    #wr-bg {
-        padding-top: 60px !important;
-        margin-top: unset !important
     }
 }
 
