@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220619.1804
+@version        0.20220620.1407
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -170,6 +170,7 @@
   domain("hdrezka.win"),
   domain("hdrezka19139.org"),
   domain("hdrezka1wn.org"),
+  domain("hdrezka2mwgm.org"),
   domain("hdrezka63hhty.net"),
   domain("hdrezkacvb.org"),
   domain("hdrezkagghrt2.net"),
@@ -281,6 +282,7 @@
   domain("hdrezka.win"),
   domain("hdrezka19139.org"),
   domain("hdrezka1wn.org"),
+  domain("hdrezka2mwgm.org"),
   domain("hdrezka63hhty.net"),
   domain("hdrezkacvb.org"),
   domain("hdrezkagghrt2.net"),
@@ -549,6 +551,7 @@
   domain("kp.ru"),
   domain("radiokp.ru"),
   domain("spletnik.ru"),
+  domain("teleprogramma.pro"),
   domain("wday.ru"),
   domain("woman.ru") {
     body > .l-wrapper > div[style^="position: absolute; width: 30px; height: 30px; bottom: 13px; left: 10px;"] {
@@ -4742,12 +4745,6 @@
     body > #td-outer-wrap {
         pointer-events: none !important;
         cursor: auto !important
-    }
-}
-
-@-moz-document domain("teleprogramma.pro") {
-    iframe[src*="://cdn.viqeo.tv/embed/"] {
-        width: inherit !important
     }
 }
 
