@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220620.1407
+@version        0.20220620.2007
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3061,7 +3061,8 @@
     [data-test-id="News_SpecialArticle"] + div[class]:not(:empty), 
     [data-test-id="News_SpecialArticle"] + div[class]:not(:empty) + div[class]:not(:empty), 
     [data-test-id="News_SpecialArticle"] ~ div[class]:empty + div[class]:not(:empty), 
-    [data-test-id="News_SpecialArticle"] ~ div[class]:empty + div[class]:not(:empty) + div[class]:not(:empty) {
+    [data-test-id="News_SpecialArticle"] ~ div[class]:empty + div[class]:not(:empty) + div[class]:not(:empty), 
+    [data-test-id="News_SpecialArticle"]:empty {
         min-height: auto !important
     }
     body > #app [data-branding-wrapper] {
