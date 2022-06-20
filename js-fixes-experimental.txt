@@ -389,7 +389,7 @@ e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.onLinkMouseDown, 
 my.mail.ru##+js(set-constant, Object.prototype.runMimic, noopFunc)
 news.mail.ru,pogoda.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.useMimic, noopFunc)
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~realty.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, document.title, null)
-~dom.mail.ru,mail.ru,sportmail.ru#?#.article__item > *:-abp-contains(/^Вам может быть интересно:$|^И не пропусти интересное видео:$|^И не пропусти ролик:$|^И не пропусти интересный ролик:$|^И не пропусти наш ролик:$|^Смотрите наши видео:$|видео ниже:/)
+~dom.mail.ru,mail.ru,sportmail.ru#?#.article__item > *:-abp-contains(/^Вам может быть интересно:$|^И не пропусти интересное видео:$|^И не пропусти ролик:$|^И не пропусти интересный ролик:$|^И не пропусти наш ролик:$|^Смотрите наши видео:$|^Смотрите видео:$|видео ниже:/)
 ~dom.mail.ru,mail.ru##.article__item_source_viqeo ~ .article__item_source_viqeo
 ~dom.mail.ru,mail.ru##.article__item_source_viqeo:has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
 ok.ru##.feed-list > .feed-w:has(.feed_ava ~ div div > span ~ span ~ span ~ span ~ span ~ span)
