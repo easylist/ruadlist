@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220621.2159
+@version        0.20220622.40
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2348,7 +2348,9 @@
     }
 }
 
-@-moz-document domain("glavred.info") {
+@-moz-document
+  domain("glavred.info"),
+  domain("glavred.net") {
     .newsfeed {
         height: auto !important
     }
