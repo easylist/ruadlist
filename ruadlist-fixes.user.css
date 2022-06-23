@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220622.40
+@version        0.20220623.1307
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5325,6 +5325,19 @@
 }
 
 @-moz-document
+  domain("ya.ru"),
+  domain("yandex.by"),
+  domain("yandex.kz"),
+  domain("yandex.ru"),
+  domain("yandex.uz") {
+    .mini-suggest__item > a[href*="://yabs.yandex."][href*="/count/"], 
+    .mini-suggest__item > a[href*="://yandex."][href*="/clck/"], 
+    .mini-suggest__item > a[href][target="_blank"] {
+        display: none !important
+    }
+}
+
+@-moz-document
   domain("yandex.by"),
   domain("yandex.kz"),
   domain("yandex.ru"),
@@ -5335,9 +5348,6 @@
     .blocks-grid__item_static > .direct_type_stripe, 
     .home-arrow [data-bem*="yabrowser-promo"], .home-arrow__bottom, 
     .media-grid > [data-blockname="banner-slider"], 
-    .mini-suggest__item > a[href*="://yabs.yandex."][href*="/count/"], 
-    .mini-suggest__item > a[href*="://yandex."][href*="/clck/"], 
-    .mini-suggest__item > a[href][target="_blank"], 
     .serp-item div[data-type="ecommerce_carousel"], 
     .serp-list .incut_type_direct, .sidebar-container .search-advert-badge, 
     .sport-app__layout > .mg-grid__col:first-child + div:not(:last-child) > .mg-sticky, 
