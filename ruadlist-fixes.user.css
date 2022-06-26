@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220623.1307
+@version        0.20220627.111
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1417,6 +1417,7 @@
   domain("cinema-hd.ru"),
   domain("dc-marvel.org"),
   domain("filmshd.vip"),
+  domain("goodfilms.su"),
   domain("newseries.me"),
   domain("yummyanime.best") {
     .wrap {
@@ -2051,10 +2052,11 @@
 
 @-moz-document domain("footboom.com") {
     .best-coeffs, .bet-informer-content__wrapper, .bet-informer-name__container, 
-    .forecasts a[href*="/betting/go/"], .match-center__slider-wrapper, 
-    .middle-column a[href*="/betting/go/"], .outcomes-wrap, .owl-loaded, 
-    .right-column > [class^="bookie-rating"] + div, .unit-coefficients, 
-    [class^="bookie-rating"], body > #tooltip {
+    .bonus-bk__item, .forecasts a[href*="/betting/go/"], 
+    .match-center__slider-wrapper, .middle-column a[href*="/betting/go/"], 
+    .outcomes-wrap, .owl-loaded, .right-column > [class^="bookie-rating"] + div, 
+    .unit-coefficients, [class^="bookie-rating"], body > #tooltip, 
+    div[class^="redesign-desktop-"][style="overflow:hidden"] {
         display: none !important
     }
 }
