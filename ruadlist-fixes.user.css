@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220628.205
+@version        0.20220628.214
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5490,7 +5490,7 @@
   domain("zen.yandex.kz"),
   domain("zen.yandex.ru"),
   domain("zen.yandex.uz") {
-    .panel-loadable-view__feed > .video-viewer-video-card ~ div:not([class*="-view"]), 
+    .panel-loadable-view__feed > .video-viewer-video-card ~ div:not([class*="-view"]):not(:last-child), 
     .video-viewer-content__ad, .video-viewer-sidebar__ad {
         display: none !important
     }
