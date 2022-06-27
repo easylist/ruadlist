@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220627.2237
+@version        0.20220628.154
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -135,7 +135,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezkasdf.org"),
   domain("3ivi.com"),
   domain("aif.ru"),
   domain("ain.ua"),
@@ -183,6 +182,7 @@
   domain("hdrezkapzm.org"),
   domain("hdrezkaqwe.org"),
   domain("hdrezkarty.org"),
+  domain("hdrezkasdf.org"),
   domain("hdrezkayou.com"),
   domain("hdrezkayt7810.net"),
   domain("hdrezkayyt43d.net"),
@@ -234,7 +234,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezkasdf.org"),
   domain("3ivi.com"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
@@ -296,6 +295,7 @@
   domain("hdrezkapzm.org"),
   domain("hdrezkaqwe.org"),
   domain("hdrezkarty.org"),
+  domain("hdrezkasdf.org"),
   domain("hdrezkayou.com"),
   domain("hdrezkayt7810.net"),
   domain("hdrezkayyt43d.net"),
@@ -5482,6 +5482,17 @@
 @-moz-document domain("zaycev.online") {
     .content:not(#id) {
         margin-top: 80px !important
+    }
+}
+
+@-moz-document
+  domain("zen.yandex.by"),
+  domain("zen.yandex.kz"),
+  domain("zen.yandex.ru"),
+  domain("zen.yandex.uz") {
+    .panel-loadable-view__feed > .video-viewer-video-card ~ div:not(.video-viewer-video-card), 
+    .video-viewer-content__ad, .video-viewer-sidebar__ad {
+        display: none !important
     }
 }
 
