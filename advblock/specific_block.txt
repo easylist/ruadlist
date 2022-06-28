@@ -318,7 +318,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://[a-z0-9]+\.com/+([^\s]{300,})/$third-party,media,script,stylesheet,subdocument,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
 /^https?://[a-z0-9]+\.in\.net/+[-a-z0-9_?&=]{25,}/$third-party,xmlhttprequest,domain=aniqit.com|anivod.com|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.animejoy.ru|video.doramatv.su
 /^https?://aleshafilm\.com/+[0-9]{6,8}\./$script,domain=aleshafilm.com
-/^https?://ero\.mota\.ru\/(?!minify\/)/$script,domain=ero.mota.ru
 /^https?://erolub\.com\/(?!templates\/|engine\/|playerjs\.js$)/$script,domain=erolub.com
 /^https?://free-porn.games\/(?!templates|engine)/$script,domain=free-porn.games
 /^https?://game-roblox\.ru\/(?!wp-content\/|wp-includes\/)/$script,domain=game-roblox.ru
@@ -1234,6 +1233,7 @@ lada.kz/uploads/banners/
 ||eragun.org/js/ae*.js|$script
 ||eralady.ru/ads.js
 ||ero-top.info/uploads/banner
+||ero.mota.ru^$script,domain=ero.mota.ru
 ||erofishki.cc/js/teaserlady.js
 ||eroox.ru/blocks/
 ||erosmotr.ru^*/bg.$image
