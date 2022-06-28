@@ -10,7 +10,6 @@
 *$subdocument,redirect-rule=noopframe,domain=ukr.net
 *$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.club|otzovik.com
 .pronpic.org^$script,domain=pronpic.org
-/^https?://frontend\.vh\.yandex\.ru\/player\/[^\s]+\autoplay=1(?![^\s]+service=ya-sport$)/$subdocument,removeparam=|
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnneedtv.ru,cdnpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,s7yours.com,sbautumn.com,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport365hd.net,sport7.biz,sportbar.biz,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,spotless365.net,stream365.pro,telecdn.net,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
@@ -38,6 +37,7 @@
 7days.ru,doctorpiter.ru,kp.kg,kp.kz,kp.md,kp.ru,radiokp.ru,spletnik.ru,teleprogramma.pro,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 7ogorod.ru,autonevod.ru##+js(abort-on-property-read, flat_pm_arr)
 80-e.ru,examenpdd.com##+js(abort-on-property-read, yaContextCb)
+@@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport|$subdocument,removeparam=|
 @@||m.rp5.*/mobile/scripts/*.js$script,domain=m.rp5.*
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
@@ -334,6 +334,7 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||etotprazdnik.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
 ||fermilon.ru^$xmlhttprequest,badfilter,domain=fermilon.ru
 ||footboom.com/dist/app/js/antiAdBlock-
+||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|
 ||globuss24.ru^$xmlhttprequest,badfilter,domain=globuss24.ru
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
