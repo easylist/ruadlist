@@ -1270,8 +1270,6 @@ kg-portal.ru##.social_login > .ulogin ~ .caution
 gibdd-gai.ru##.warning
 hitfm.ru,maximum.ru,montecarlo.ru##.wrap-ad-blocked-message
 /*.js|$script,~third-party,domain=cyberpedia.su|infopedia.su|lektsii.org|megaobuchalka.ru|poisk-ru.ru|studopedia.info|studopedia.net|studopedia.org|studopedia.su
-/^https?://blog\.webwintop\.ru\/wp-content\/plugins\/(?!copy-the-code\/|contact-form-7\/)/$script,domain=blog.webwintop.ru
-/^https?://codes\.webwintop\.ru\/wp-content\/plugins\/(?!copy-the-code\/|contact-form-7\/)/$script,domain=codes.webwintop.ru
 /a-detector/$domain=docfilms.info|green-teatv.com|vesjoloevideo.ru
 /fck-ab-code.js$domain=the-office.su
 /ggl/*$script,~third-party,domain=lektsii.org|megaobuchalka.ru|mydocx.ru|studopedia.com.ua|studopedia.net|studopedia.org|studopedia.ru|studopedia.su
@@ -1280,6 +1278,8 @@ hitfm.ru,maximum.ru,montecarlo.ru##.wrap-ad-blocked-message
 /jquery.menu.min.js|$script,domain=bstudy.net|studbooks.net|studme.org|studref.com|studwood.net|studwood.ru|vuzlit.com|xstud.ru
 /static/libs/adetector/*$domain=cigarexpert.ru|swizz.ru|ulnar.ru|uxxa.ru
 @@||ddnk.advertur.ru/*/loader.js|$script
+@@||webwintop.ru/wp-content/plugins/contact-form-7/includes/js/index.js|$script,domain=webwintop.ru
+@@||webwintop.ru/wp-content/plugins/copy-the-code/assets/js/copy-the-code.js|$script,domain=webwintop.ru
 warhead.su##[data-modal="adBlock"]
 pikabu.ru##[data-role="adb-warning"]
 channels247.net,goool7.ws,sport7.biz,sportbar.biz,sportbarchik88.com,sporting77.com#?#[id^="oframe"] > pjsdiv:-abp-has(> pjsdiv > img[src$="/adblock.png"])
@@ -1309,7 +1309,7 @@ onliner.by##img[src="https://content.onliner.by/news/1100x5616/eb7d2f564b229c0da
 ||rybolov.ee/forum/Themes/RealPopup/
 ||starserial.ru/img/adblock.png
 ||texnic.ru/jq/san.js
-||webwintop.ru/wp-content/plugins/eazy-ad-unblocker/
+||webwintop.ru/wp-content/plugins/$script
 ||yagramotniy.ru/templates/edv/js/_extra/
 !
 ! - Против "бесконечной загрузки страниц" -------------------------------------
