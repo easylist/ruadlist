@@ -317,7 +317,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://aleshafilm\.com/+[0-9]{6,8}\./$script,domain=aleshafilm.com
 /^https?://infox\.sg+\/(?!static|\?force\_template\=)[^\s]{50}/$script,xmlhttprequest,domain=infox.sg
 /^https?://mmo13\.ru\/\w{3,}/$subdocument,domain=mmo13.ru
-/^https?://proporno.org\/(?!templates|engine)/$script,domain=proporno.org
 /^https?://rintor\.info\/(?!engine\/|templates\/)/$script,domain=rintor.info
 /^https?://rintor\.net\/(?!engine\/|templates\/)/$script,domain=rintor.net
 /^https?://rsload\.net\/(?!engine\/|templates\/)/$script,domain=rsload.net
@@ -2493,6 +2492,7 @@ lada.kz/uploads/banners/
 ||pronpix.ru/*under.js
 ||properm.ru/*banner$script
 ||prophotos.ru/data/brandings/
+||proporno.org^*.php|$script,domain=proporno.org
 ||prosadiogorod.ru/offer/
 ||prosports.kz/pm_brand_
 ||prostatitanet.com/wp-content/plugins/pg-advanced-ads/
@@ -3408,6 +3408,7 @@ lada.kz/uploads/banners/
 ||you-anime.ru/vg/
 ||youhack.ru^$object
 ||yourlink.in^$third-party,script
+||youtube-nocookie.com^$domain=proporno.org
 ||youtube.com/embed/$domain=4put.ru|androeed.ru|anime-365.ru|compendium.su|fbsearch.ru|hdrabbit.ru|kinotochka.co|kinotochka.me|lostpix.com|mister-robot.tv|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|uraltrack.net|virus-stop.com.ua|zarlit.com
 ||youtube.com^*modestbranding$subdocument,domain=moevideo.net|penzainform.ru|playreplay.me|playreplay.net|playvideolink.com|thesame.tv|tjournal.ru|videochart.net
 ||yp.ru/content/Banners/
