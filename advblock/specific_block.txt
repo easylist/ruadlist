@@ -322,7 +322,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://trackerock\.ru\/(?!library\/|misc\/|templates\/)/$script,domain=trackerock.ru
 /^https?://vsetor\.org\/(?!cdn-cgi\/|engine\/|templates\/)/$script,domain=vsetor.org
 /^https?://vstx\.org\/(?!wp-content\/|wp-includes\/)/$script,domain=vstx.org
-/^https?://windowspro\.ru\/(?!engine\/|templates\/)/$script,domain=windowspro.ru
 /^https?://www\.e1\.ru/[^\s]{500,}/$xmlhttprequest,domain=www.e1.ru
 /^https?://www\.kinopoisk\.ru/[^\s]{300,}/$popup,subdocument,domain=www.kinopoisk.ru
 /^https?://www\.liveinternet\.ru/[^\s]{200,}/$xmlhttprequest,domain=www.liveinternet.ru
@@ -3308,6 +3307,8 @@ lada.kz/uploads/banners/
 ||windows-driver.net/img/yad
 ||windows-program.com/img/yad
 ||windows64.net/123456.jpg
+||windowspro.ru/universa*.js
+||windowspro.ru^*.php|$script,domain=windowspro.ru
 ||winksplay.ru/fmnr.js
 ||wiselawyer.ru^*.php$script,domain=wiselawyer.ru
 ||wkino4.net/templates/wkino4/images/body.
