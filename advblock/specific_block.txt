@@ -1,4 +1,5 @@
 ! CSP and Header filters
+.infox.sg^$csp=script-src
 /^https?://[^\s]+\.lentainform\.com/[^\s]{150,}/$csp=script-src
 /^https?://[^\s]+\.politexpert\.net/[^\s]{150,}/$csp=script-src
 /gateway/aHR0c$csp=script-src
@@ -21,7 +22,6 @@
 ||driverpack.io^$csp=sandbox allow-same-origin;
 ||edabez.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ||ex.24smi.info^$csp=script-src
-||ex.infox.sg^$csp=script-src
 ||exoclick.com^$csp=sandbox allow-same-origin;
 ||folltiz.site^$csp=script-src
 ||gastris.ru^$csp=script-src 'self' * blob: data:
@@ -48,7 +48,6 @@
 ||pogoda21.ru^$csp=script-src 'self' * blob: data:
 ||pogreb-podval.ru^$csp=script-src 'self' * 'unsafe-inline' data:
 ||psysovet24.ru^$csp=script-src 'self' * blob: data:
-||rb.infox.sg^$csp=script-src
 ||runewslenta.com^$csp=sandbox allow-same-origin;
 ||russfilm.net^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||serialsite.ru^$csp=script-src 'self' * data:
@@ -315,7 +314,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|kinohom
 /^https?://[a-z0-9]+\.com/+([^\s]{300,})/$third-party,media,script,stylesheet,subdocument,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
 /^https?://[a-z0-9]+\.in\.net/+[-a-z0-9_?&=]{25,}/$third-party,xmlhttprequest,domain=aniqit.com|anivod.com|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.animejoy.ru|video.doramatv.su
 /^https?://aleshafilm\.com/+[0-9]{6,8}\./$script,domain=aleshafilm.com
-/^https?://infox\.sg+\/(?!static|\?force\_template\=)[^\s]{50}/$script,xmlhttprequest,domain=infox.sg
 /^https?://mmo13\.ru\/\w{3,}/$subdocument,domain=mmo13.ru
 /^https?://www\.kinopoisk\.ru/[^\s]{300,}/$popup,subdocument,domain=www.kinopoisk.ru
 /ad*.tutu.ru^*_*.php|
@@ -1576,7 +1574,6 @@ lada.kz/uploads/banners/
 ||infoindustria.com.ua^*/background.jpg
 ||inform.kz/download/
 ||informburo.kz^*/banners$xmlhttprequest
-||infox.sg/static/Detect
 ||infpol.ru/upload/rk/*.swf$object
 ||ingos.ru/common/img_ru/banners/
 ||ingrus.net/Data_Base/$image
