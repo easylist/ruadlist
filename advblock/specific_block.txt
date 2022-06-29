@@ -1,6 +1,5 @@
 ! CSP and Header filters
 /^https?://[^\s]+\.lentainform\.com/[^\s]{150,}/$csp=script-src
-/^https?://[^\s]+\.nahnews\.org/[^\s]{150,}/$csp=script-src
 /^https?://[^\s]+\.politexpert\.net/[^\s]{150,}/$csp=script-src
 /gateway/aHR0c$csp=script-src
 ||0n-line.tv/*/|$csp=script-src 'self' * data: blob: 'unsafe-inline'
