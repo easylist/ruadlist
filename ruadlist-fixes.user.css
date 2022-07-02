@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220702.1409
+@version        0.20220702.1439
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1696,6 +1696,7 @@
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"] + div, 
     .offer[itemtype*="http://schema.org/Product"] + div, 
     .offer[itemtype*="http://schema.org/Product"] + div + div, 
+    div[class$="content"] ~ div + div[class*=" "][class$="--mh"], 
     div[class$="content"] ~ div[data-role][data-target] + div, 
     div[class*="--content article "] + div, 
     div[class*="--content article "] + div + div:not(:last-child), 
