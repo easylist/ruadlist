@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220629.1831
+@version        0.20220702.1409
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2056,7 +2056,7 @@
 
 @-moz-document domain("footboom.com") {
     .best-coeffs, .bet-informer-content__wrapper, .bet-informer-name__container, 
-    .bonus-bk__item, .forecasts a[href*="/betting/go/"], 
+    .bonus-bk__item, .forecasts a[href*="/betting/go/"], .head-menu__bonus, 
     .match-center__slider-wrapper, .middle-column a[href*="/betting/go/"], 
     .outcomes-wrap, .owl-loaded, .right-column > [class^="bookie-rating"] + div, 
     .unit-coefficients, [class^="bookie-rating"], body > #tooltip, 
@@ -4160,6 +4160,12 @@
         position: fixed !important;
         transform: scale(0) !important;
         top: -10000px !important
+    }
+}
+
+@-moz-document domain("quote.ru") {
+    .l-col-container > .l-table {
+        width: calc(100% - 4px) !important
     }
 }
 
