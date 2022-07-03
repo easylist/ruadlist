@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220703.1521
+@version        0.20220703.2016
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4686,6 +4686,15 @@
     }
     #timer_1 {
         display: none !important
+    }
+}
+
+@-moz-document domain("star-wars-film.ru") {
+    .main_background {
+        display: none !important
+    }
+    body {
+        padding-top: 0 !important
     }
 }
 
