@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220702.1439
+@version        0.20220703.1521
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2230,7 +2230,6 @@
   domain("gagadget.com"),
   domain("gazeta.ru"),
   domain("lenta.ru"),
-  domain("ngs.ru"),
   domain("rambler.ru"),
   domain("rns.online") {
     body:not(#id) {
@@ -3162,7 +3161,6 @@
 
 @-moz-document
   domain("lenta.ru"),
-  domain("ngs.ru"),
   domain("rambler.ru") {
     .subscribe-popup {
         display: none !important
@@ -3748,14 +3746,6 @@
     }
 }
 
-@-moz-document
-  domain("ngs.ru"),
-  domain("rambler.ru") {
-    .social-popup, .subscribe-popup-cover, .subscribe-popup__wrapper {
-        display: none !important
-    }
-}
-
 @-moz-document domain("nn.by") {
     #mainWrapper {
         background: none !important;
@@ -4198,6 +4188,9 @@
 @-moz-document domain("rambler.ru") {
     #rootWrapper div[style="min-height: 500px;"] ~ div div {
         background-color: transparent !important
+    }
+    .social-popup, .subscribe-popup-cover, .subscribe-popup__wrapper {
+        display: none !important
     }
     #bigColumn script + div[class] > div[style^="height"] * {
         height: inherit !important
