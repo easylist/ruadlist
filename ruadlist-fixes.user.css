@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220705.1831
+@version        0.20220706.1811
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -910,6 +910,17 @@
 }
 
 @-moz-document
+  domain("animejapan.tv"),
+  domain("crazyatomicgames.com"),
+  domain("xxx-igra.com"),
+  domain("yaldagames.com") {
+    .fon_site_pic {
+        background-image: none !important;
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document
   domain("animemobi.ru"),
   domain("euro-football.ru"),
   domain("onlinestreams.ru") {
@@ -1503,16 +1514,6 @@
 @-moz-document domain("cq.ru") {
     .box[class*="content"] {
         margin-top: auto !important
-    }
-}
-
-@-moz-document
-  domain("crazyatomicgames.com"),
-  domain("xxx-igra.com"),
-  domain("yaldagames.com") {
-    .fon_site_pic {
-        background-image: none !important;
-        padding-top: 0 !important
     }
 }
 
