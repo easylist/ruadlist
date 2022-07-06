@@ -5290,6 +5290,7 @@ nntt.org##[href^="http://numbuster.com"]
 nntt.org##[href^="http://www.cenam.net"]
 game2day.ru##[href^="https://p2d.ru/"]
 divxplayer.ml,haes.tech,hcdn.online,hqq.tv,metaverseid.tk,player.cvary.org##[href^="https://t.me/"]
+forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=50761"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
 virpl.ru##[id$="-banner"]
 xyu.tv##[id$="AdsAfterVideo"]
 kakprosto.ru##[id*="-advice-block"]
@@ -6433,6 +6434,7 @@ www.google.com,www.google.ru##body > table[style="border: 1px solid #369"]
 christianka.bratstvo.org##body > table[width="99%"] + p[align="center"]
 payeer-gift.ru##body div .banner
 om1.ru##body div[class*="-branding"]
+forum.ru-board.com#?#body:-abp-has(> table > tbody > tr > .dats > [href="misc.cgi?action=printtopic&forum=5&topic=50761"]) > .content > .obertka > img
 prodota.ru##body:not([class*="ipsApp"]):not([data-role="externalEmbed"]) > :not(.main):not(iframe)
 hi-fi.ru##body[data-pageid] #ipsLayout_sidebar
 flamp.ru##cat-banner
