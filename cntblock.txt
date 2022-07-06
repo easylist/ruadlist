@@ -1156,8 +1156,8 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ~mail.yandex.*,~vh.yandex.ru,~yandex.net,yandex.*#?#+js(no-setTimeout-if, Ya.Rum.getSetting, 15)
 ~vh.yandex.ru,~yandex.net,yandex.*#?#+js(abort-on-property-read, Ya.loaderVer)
 ~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div
-~yandex.net,mail.yandex.*,yandex.*##.ns-view-mail-pro-left-column-button
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro
+~yandex.net,mail.yandex.*,yandex.*##div[class^="DisableAdsButton"]
 ~yandex.net,yandex.*#?#+js(abort-on-property-read, yaads.renderBlock)
 ~yandex.net,yandex.*#?#+js(abort-on-property-read, yaads.renderWidget)
 ~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
