@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220706.1958
+@version        0.20220707.1350
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1539,14 +1539,8 @@
 }
 
 @-moz-document domain("cybersport.ru") {
-    body {
-        background-image: none !important
-    }
-    body > a[href][target="_blank"] {
-        display: none !important
-    }
-    #header.position-fixed {
-        position: relative !important
+    .page-layout > main {
+        padding-top: 0 !important
     }
 }
 
