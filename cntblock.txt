@@ -1260,8 +1260,8 @@ zen.yandex.*##div[class*="yandex-direct"]
 ! реклама при скачивании на форуме
 4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
 4pda.*#?##lbOverlay:style(background: none !important)
-! реклама в QMS
-4pda.*##.logo-in-qms a[href*="utm_"]
+! реклама в QMS и мобильной версии сайта
+4pda.*##.menu-main-mobile > [style="display:none;"]
 !
 ! Экспериментальные правила для маркеров
 $document,removeparam=fm,domain=go.mail.ru|r.mail.ru
