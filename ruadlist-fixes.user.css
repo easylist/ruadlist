@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220707.1755
+@version        0.20220708.1244
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2559,6 +2559,16 @@
     }
 }
 
+@-moz-document domain("hi-tech.ua") {
+    body {
+        background-image: none !important;
+        padding-top: 0 !important
+    }
+    body > noindex {
+        display: none !important
+    }
+}
+
 @-moz-document
   domain("hlamer.ru"),
   domain("oveg.ru") {
@@ -4675,8 +4685,8 @@
 @-moz-document
   domain("stalker-mods.clan.su"),
   domain("stalker-mods.su"),
-  domain("top-mods.ru"),
-  domain("stalkerportaal.ru") {
+  domain("stalkerportaal.ru"),
+  domain("top-mods.ru") {
     #timer_2 {
         display: block !important
     }
