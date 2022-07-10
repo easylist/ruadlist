@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220709.1216
+@version        0.20220710.1019
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -135,7 +135,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezkajjfhr5.net"),
   domain("3ivi.com"),
   domain("aif.ru"),
   domain("ain.ua"),
@@ -175,6 +174,7 @@
   domain("hdrezka63hhty.net"),
   domain("hdrezkacvb.org"),
   domain("hdrezkagghrt2.net"),
+  domain("hdrezkajjfhr5.net"),
   domain("hdrezkame.com"),
   domain("hdrezkaonline.com"),
   domain("hdrezkap3g.org"),
@@ -236,7 +236,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("2rezka.ru"),
-  domain("hdrezkajjfhr5.net"),
   domain("3ivi.com"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
@@ -290,6 +289,7 @@
   domain("hdrezka63hhty.net"),
   domain("hdrezkacvb.org"),
   domain("hdrezkagghrt2.net"),
+  domain("hdrezkajjfhr5.net"),
   domain("hdrezkame.com"),
   domain("hdrezkaonline.com"),
   domain("hdrezkap3g.org"),
@@ -1215,6 +1215,12 @@
     }
     body {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("blackwot.ru") {
+    div[class^="blackwot-"][style] {
+        display: none !important
     }
 }
 
