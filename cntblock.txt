@@ -1117,10 +1117,8 @@ zannn.top#@?#this-is-a-malicious-site
 docs.yandex.*##a[href^="https://360.yandex."][href$="/?from=documents-header-360"]
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
-mail.yandex.*##html.with-widgets .PSHeaderLogo360-360
 mail.yandex.*#?#+js(remove-attr, data-link-id, a, stay)
 mail.yandex.*#?#html.with-widgets .mail-App-Footer-Group_reverse > .mail-App-Footer-Item > [href^="https://yandex."]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
-mail.yandex.*#?#html.with-widgets .PSHeaderLogo360-Ya[href*="/?from=mail-header-360"]:style(pointer-events: none !important)
 mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*#?#+js(set-constant, Daria.AdvPresenter._config, {})
 music.yandex.*#?#+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column
@@ -1132,6 +1130,8 @@ yandex.*##.dist-popup
 yandex.*##.mg-grid__col > div[class*="_type_native"]
 yandex.*##.mini-suggest__item > a[href^="http://"]
 yandex.*##.mini-suggest__item:has(> a[href^="http://"]):remove()
+yandex.*##.PSHeaderLogo360 > a[href^="https://360.yandex."]:style(pointer-events: none !important)
+yandex.*##.PSHeaderLogo360-360
 yandex.*##.turbo-embed_market_widget
 yandex.*##[class*="segment__container"] > div > [class^="card "][class*="_"]
 yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]):not([class^="services"]):not([class*="search"]):not([class*="home"])
