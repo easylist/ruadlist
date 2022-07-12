@@ -1148,7 +1148,7 @@ yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:firs
 yandex.*##section ~ .news-top-rubric-heading > h1:only-child:if-not(> a)
 yandex.*#?#.feed__row[id^="zen-row-"] .feed__item-wrap:-abp-has(> .feed__item [class$="header-subtitle"]:-abp-contains(реклама))
 yandex.*#?#.feed__row[id^="zen-row-"] .feed__item-wrap:-abp-has(> .feed__item [class^="zen-ui-channel-info"][class$="subtitle-text"]:-abp-contains(промо))
-yandex.*#?#.serp-list > .serp-item:-abp-has(> .bno)
+yandex.*#?#.serp-list > .serp-item:-abp-has(> .bno ~ style)
 yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-event-required])
 yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > .root123)
 yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
