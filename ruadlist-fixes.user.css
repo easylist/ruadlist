@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220710.1019
+@version        0.20220712.1216
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4927,12 +4927,6 @@
     [class*="grid_period_"] > div[class] > div[class^="grid__"] ~ div:not([class^="grid__"]), 
     body > #mount > div[class] > :not(header):not(main):not(footer):not(.metrika-loader) {
         display: none !important
-    }
-}
-
-@-moz-document domain("tvzavr.ru") {
-    .page__inner {
-        padding-top: 59px !important
     }
 }
 
