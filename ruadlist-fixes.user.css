@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220712.2146
+@version        0.20220713.2047
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3356,6 +3356,7 @@
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .new-tgb-wrap, 
     body > .zeropixel ~ * .rectangle-banner, 
+    body > .zeropixel ~ * .skeleton + div[style], 
     body > .zeropixel ~ * .skeleton-tgb, 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body:not(.js-module) .horoscope ~ [class], 
