@@ -893,6 +893,8 @@ livecars.ru,livesport.ru#?#.content:style(margin-top: 0 !important)
 ! ---
 liveinternet.ru##[style="margin-top:-25px;"] ~ .leftcolumn > div ~ div
 liveinternet.ru##[style="margin-top:-25px;"] ~ br + div
+! исправление ошибок и косяков обфусцированной вёрстки
+liveinternet.ru#?#.allpageinner > div:not(.header) > div[class*=" "] ~ .logo > a > span:style(top: inherit !important; left: inherit !important; font-size: x-large !important; font-weight: bold !important; color: #0183cb !important)
 ! ---
 livesport.ws##body > div:not([id]):not([class]) + div:not([id]):not([class]) + div:not([id]):not([class]) + div:not([id]):not([class]) ~ div[id]:not([class])
 livesport.ws#?#body:style(padding-top: 0 !important)
