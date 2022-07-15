@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220715.1607
+@version        0.20220715.2125
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4209,6 +4209,7 @@
     #rootWrapper div[style="min-height: 500px;"] ~ div div {
         background-color: transparent !important
     }
+    #bigColumn script + div[class] > div[style^="height"] > div > div[id^="cluster-"] ~ div:empty, 
     .social-popup, .subscribe-popup-cover, .subscribe-popup__wrapper {
         display: none !important
     }
