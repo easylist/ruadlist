@@ -6245,7 +6245,7 @@ glavpost.com##article div[style*="#EFEFEF"]
 4pda.to#?#article ~ article:-abp-has(> [class] > div:only-child > img:first-child)
 fontanka.ru##article ~ div + div[class] ~ div
 fontanka.ru#?#article ~ div:-abp-has(> div + noindex)
-life.ru##article ~ div[class*="styles_comments_"] + div ~ div
+life.ru##article ~ div[class^="styles_newComments"] + div ~ div
 qip.ru##article[data-type="advert"]
 mi100.info##article[id^="post-"] > .entry-meta + div[style^="padding-bottom:"]
 i-news.kz##aside .events-list ~ a[href][target="_blank"]
