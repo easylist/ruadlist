@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220714.1331
+@version        0.20220715.1607
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3358,17 +3358,16 @@
     }
     #bubble-home, .grid__lcol_mailbox .horoscope ~ div, 
     .grid__main-col > .tgb-wrapper, .ph-ext, 
+    [data-testid="news-tabs"] ~ div > div ~ div, 
     body > .grid .grid__rcol > :not(.weather):not(.rates), 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .new-tgb-wrap, 
     body > .zeropixel ~ * .rectangle-banner, 
-    body > .zeropixel ~ * .skeleton + div[style], 
     body > .zeropixel ~ * .skeleton-tgb, 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body:not(.js-module) .horoscope ~ [class], 
-    body:not(.js-module) .searchContainer ~ div > a.dmb, 
-    body:not(.js-module) .tabs-content ~ div > div:first-child:not([name]) {
+    body:not(.js-module) .searchContainer ~ div > a.dmb {
         display: none !important
     }
     body > .zeropixel ~ * .stripe-wrapper {
@@ -3378,22 +3377,22 @@
     body > .grid .grid__rcol {
         margin-left: 0 !important
     }
-    body > .zeropixel ~ * .tabs-content > :first-child > [class*="news-main"] {
+    body > .zeropixel ~ * .tabs-content > :first-child > a {
         max-height: 5em !important;
         position: static !important
     }
-    body > .zeropixel ~ * .tabs-content > :first-child > [class*="news-main"] > .news-main__text-wrapper {
+    body > .zeropixel ~ * .tabs-content > :first-child > a > .news-main__text-wrapper {
         max-height: 5em !important;
-        white-space: pre-wrap !important
+        white-space: unset !important
     }
-    body > .zeropixel ~ * .tabs-content > :first-child > [class*="news-main"] > .news-main__img {
+    body > .zeropixel ~ * .tabs-content > :first-child > a > .news-main__img {
         max-width: unset !important;
         min-width: unset !important;
         height: 5em !important;
         width: 6.66em !important
     }
     body:not(.js-module) .tabs + div[class], 
-    body:not(.js-module) .tabs + div[class] > .grid__ccol {
+    body:not(.js-module) .tabs + div[class] > :first-child {
         min-width: 676px !important
     }
     body > .zeropixel ~ * .tabs-content > :first-child > a::after {
