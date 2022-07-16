@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220715.2125
+@version        0.20220716.1510
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4210,7 +4210,8 @@
         background-color: transparent !important
     }
     #bigColumn script + div[class] > div[style^="height"] > div > div[id^="cluster-"] ~ div:empty, 
-    .social-popup, .subscribe-popup-cover, .subscribe-popup__wrapper {
+    .social-popup, .subscribe-popup-cover, .subscribe-popup__wrapper, 
+    [data-blocks="mini_video_player::close_button"] {
         display: none !important
     }
     #bigColumn script + div[class] > div[style^="height"] * {
