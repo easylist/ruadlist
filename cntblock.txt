@@ -1267,7 +1267,6 @@ zen.yandex.*##div[class*="yandex-direct"]
 4pda.*##.menu-main-mobile > [style="display:none;"]
 !
 ! Экспериментальные правила для маркеров
-$document,removeparam=fm,domain=go.mail.ru|r.mail.ru
 $document,removeparam=fr,domain=go.mail.ru|r.mail.ru
 $document,removeparam=frm,domain=go.mail.ru|r.mail.ru
 $document,removeparam=hasnavig,domain=go.mail.ru|r.mail.ru
@@ -1288,6 +1287,7 @@ $removeparam=_gl
 $removeparam=_openstat
 $removeparam=admitad_uid
 $removeparam=afclid
+$removeparam=fm,domain=mail.ru|sportmail.ru
 $removeparam=fref
 $removeparam=frommail,domain=mail.ru|sportmail.ru
 $removeparam=gclid
@@ -1296,8 +1296,10 @@ $removeparam=irclickid
 $removeparam=irgwc
 $removeparam=mt_click_id
 $removeparam=pulse_traffic
+$removeparam=ref,domain=mail.ru|sportmail.ru
 $removeparam=ref_src
 $removeparam=ref_url
+$removeparam=rf,domain=mail.ru|sportmail.ru
 $removeparam=rtclick
 $removeparam=sid,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|rutor.in
 $removeparam=utm_campaign
