@@ -1306,6 +1306,7 @@ $removeparam=utm_cmpaign
 $removeparam=utm_content
 $removeparam=utm_id
 $removeparam=utm_medium
+$removeparam=utm_partner_id,domain=mail.ru|sportmail.ru
 $removeparam=utm_referrer
 $removeparam=utm_source
 $removeparam=utm_term
@@ -1355,7 +1356,6 @@ $removeparam=ysclid
 ?source=ukrnet$document,removeparam=|
 ?sub_confirmation=1$document,removeparam=|,domain=youtube.com
 ?topblock$document,removeparam=|,domain=3dnews.ru
-?utm_partner_id=$document,removeparam=|,domain=mail.ru|sportmail.ru
 ?ymclid=$document,removeparam=|
 @@/forum\/(login|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
 aff_fcid=$document,removeparam=|,domain=aliexpress.*|~campaign.aliexpress.com
