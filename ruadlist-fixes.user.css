@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220721.1239
+@version        0.20220721.1422
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -134,7 +134,6 @@
 @-moz-document
   domain("24video.adult"),
   domain("24video.in"),
-  domain("2rezka.ru"),
   domain("3ivi.com"),
   domain("aif.ru"),
   domain("ain.ua"),
@@ -236,7 +235,6 @@
 @-moz-document
   domain("24video.adult"),
   domain("24video.in"),
-  domain("2rezka.ru"),
   domain("3ivi.com"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
@@ -1696,6 +1694,9 @@
 @-moz-document
   domain("drive2.com"),
   domain("drive2.ru") {
+    .u-extend-fix {
+        background: center / 100% 100% no-repeat #515151 var(--res-logo) !important
+    }
     .c-dv-container, .c-pager + div[class]:last-child, .dv-post-header, 
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child + div[class] ~ div:not(:last-child), 
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"] + div, 
@@ -1729,14 +1730,6 @@
         padding-top: unset !important;
         padding-bottom: unset !important;
         box-shadow: inherit !important
-    }
-}
-
-@-moz-document
-  domain("drive2.ru"),
-  domain("drive2.com") {
-    .u-extend-fix {
-        background: center / 100% 100% no-repeat #515151 var(--res-logo) !important
     }
 }
 
