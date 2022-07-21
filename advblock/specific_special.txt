@@ -557,10 +557,13 @@ maps.mail.ru##img[width="200"][height="30"]
 ||tv.mail.ru/popup_banner/
 !
 ! МирТесен и Глагол
+mirtesen.ru###very-right-column
 mirtesen.ru##.aggregator__header
 glagol.press##.no24_teaser
+mirtesen.ru##.partner-block-wrapper
 mirtesen.ru##.post-data > div[id^="pad_b"]
 mirtesen.ru##.top-block__ad
+mirtesen.ru#?#.topic-block:-abp-has(> .partner-block-wrapper)
 mirtesen.ru#?#.topic-block:-abp-has(> [id^="adfox_"])
 mirtesen.ru##[id^="unit_"]
 ||gamma.mirtesen.ru/aggregator$domain=~glagol.press|~mirtesen.ru
@@ -568,15 +571,14 @@ mirtesen.ru##[id^="unit_"]
 ||gamma.mirtesen.ru/mtop
 ||mirtesen.ru/pa*/js/*&callback=news_
 ! общие
+###root > .app #very-right-column
 ###root > .app .adfox
 ###root > .app .adfox-top
 ###root > .app .brand-widget__right-cl
+###root > .app .partner-block-wrapper
 ###root > .app .sportrecs
-###root > .app > #layout > #very-right-column .aggregator__header
-###root > .app > #layout > #very-right-column > .aggregator > .aggregator__items
 ###root > .app > .sticky-button
 ##.app.blog-post-page #blog-post-item-video-ad
-##.app.blog-post-page #right-column > .sticky
 ##.app.blog-post-page .secondary-header-ad-block
 ##a[href*="://news.mirtesen.ru/newdata/"]
 ~mirtesen.ru,~smi2.ru##a[href*="://smi2.ru/newdata/news?ad="]
