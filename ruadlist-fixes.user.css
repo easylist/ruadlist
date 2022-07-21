@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220720.1433
+@version        0.20220721.1239
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1729,6 +1729,14 @@
         padding-top: unset !important;
         padding-bottom: unset !important;
         box-shadow: inherit !important
+    }
+}
+
+@-moz-document
+  domain("drive2.ru"),
+  domain("drive2.com") {
+    .u-extend-fix {
+        background: center / 100% 100% no-repeat #515151 var(--res-logo) !important
     }
 }
 
