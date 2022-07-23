@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220723.158
+@version        0.20220723.1338
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1696,7 +1696,8 @@
   domain("drive2.com"),
   domain("drive2.ru") {
     .u-extend-fix {
-        background: center / 100% 100% no-repeat #515151 var(--res-logo) !important
+        background: center / 100% 100% no-repeat #515151 var(--res-logo) !important;
+        border-radius: 6px !important
     }
     .c-dv-container, .c-pager + div[class]:last-child, .dv-post-header, 
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child + div[class] ~ div:not(:last-child), 
