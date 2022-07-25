@@ -34,7 +34,7 @@
 4studio.com.ua,cikavosti.com,dialogs.org.ua,fakty.ua,gorodkiev.com.ua,informator.ua,kriminal.tv,mignews.com.ua,pingvin.pro,technoportal.com.ua,u-news.com.ua,uanews.org.ua,versii.if.ua,volynpost.com##+js(abort-on-property-read, weekCallbacks)
 595.ucoz.net,freesoft.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,vsthemes.org,wallegend.net##+js(nano-setInterval-booster)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
-7days.ru,doctorpiter.ru,kp.kg,kp.kz,kp.md,kp.ru,radiokp.ru,teleprogramma.pro,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+7days.ru,doctorpiter.ru,dom.mail.ru,kp.kg,kp.kz,kp.md,kp.ru,lady.mail.ru,radiokp.ru,teleprogramma.pro,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 7ogorod.ru,autonevod.ru##+js(abort-on-property-read, flat_pm_arr)
 80-e.ru,examenpdd.com##+js(abort-on-property-read, yaContextCb)
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport|$subdocument,removeparam=|
@@ -329,7 +329,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||argumentiru.com^$xmlhttprequest,badfilter,domain=argumentiru.com
 ||bouw.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
 ||bouw.ru^$xmlhttprequest,badfilter,domain=bouw.ru
-||cdn.viqeo.tv/js/vq_starter.js$third-party,domain=dni.ru
 ||clustrmaps.com/counter/$image,redirect-rule=32x32.png
 ||etotprazdnik.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
 ||fermilon.ru^$xmlhttprequest,badfilter,domain=fermilon.ru
@@ -398,7 +397,7 @@ touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
 ||ad.mail.ru/$image,script,xmlhttprequest,redirect=empty
 ||ad.mail.ru/dist/
-||cdn.viqeo.tv/js/vq_starter.js$third-party,domain=~dom.mail.ru|lifehacker.ru|mail.ru
+||cdn.viqeo.tv/js/vq_starter.js$third-party,script,domain=dni.ru|~dom.mail.ru|lifehacker.ru|mail.ru
 ||limg.imgsmail.ru/re/j/d-*.js|$script,domain=~3igames.mail.ru|~auto.mail.ru|~biz.mail.ru|~bonus.mail.ru|~calendar.mail.ru|~cloud.mail.ru|~deti.mail.ru|~dobro.mail.ru|~e.mail.ru|~esports.mail.ru|~games.mail.ru|~gibdd.mail.ru|~go.mail.ru|~health.mail.ru|~help.mail.ru|~hi-tech.mail.ru|~horo.mail.ru|~kino.mail.ru|~lady.mail.ru|~love.mail.ru|mail.ru|~mailblog.mail.ru|~mcs.mail.ru|~minigames.mail.ru|~my.mail.ru|~news.mail.ru|~octavius.mail.ru|~okminigames.mail.ru|~otvet.mail.ru|~pets.mail.ru|~pogoda.mail.ru|~realty.mail.ru|~top.mail.ru|~touch.mail.ru|~tv.mail.ru
 ||mail.ru/api-proxy/rb-mimic/
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
