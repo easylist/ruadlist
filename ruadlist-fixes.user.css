@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220725.1911
+@version        0.20220726.1314
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -554,13 +554,13 @@
 
 @-moz-document
   domain("7days.ru"),
-  domain("dom.mail.ru"),
-  domain("lady.mail.ru"),
   domain("doctorpiter.ru"),
+  domain("dom.mail.ru"),
   domain("kp.kg"),
   domain("kp.kz"),
   domain("kp.md"),
   domain("kp.ru"),
+  domain("lady.mail.ru"),
   domain("radiokp.ru"),
   domain("teleprogramma.pro"),
   domain("wday.ru"),
@@ -1954,6 +1954,12 @@
 @-moz-document domain("filebase.ws") {
     body > .root {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("filmhd1080.me") {
+    .have-brand .obertka-in {
+        margin-top: 70px !important
     }
 }
 
