@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220726.1314
+@version        0.20220727.1108
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5279,6 +5279,9 @@
     .page-content > div[id]:not(#header-info-bg):empty + div[id]:not(#top) {
         margin-bottom: 40px !important
     }
+    div[class*=" styles_videoContainer"] {
+        margin-top: 0 !important
+    }
     .content-container_app-width_wide, .header-navigation, 
     div[class*="styles_headerContainer"] + div[class^="styles_"], 
     div[class^="styles_footerContainer__"] {
@@ -5301,6 +5304,10 @@
     }
     #actorListBlock {
         padding-right: 19px !important
+    }
+    div[class*=" styles_basicInfoSection"], 
+    div[class*=" styles_basicMediaSection"] {
+        padding-top: 40px !important
     }
     .user-subscription-partial-component__subscription-item-text {
         white-space: pre-wrap !important
