@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220727.1642
+@version        0.20220728.1802
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3401,18 +3401,26 @@
         max-height: 5em !important;
         white-space: unset !important
     }
+    body > .zeropixel ~ * .tabs-content > :first-child {
+        max-width: 750px !important
+    }
     body > .zeropixel ~ * .tabs-content > :first-child > a > .news-main__img {
         max-width: unset !important;
         min-width: unset !important;
         height: 5em !important;
         width: 6.66em !important
     }
-    body:not(.js-module) .tabs + div[class], 
-    body:not(.js-module) .tabs + div[class] > :first-child {
-        min-width: 676px !important
+    body:not(.js-module) .tabs + div[class] {
+        min-width: fit-content !important
+    }
+    body:not(.js-module) .tabs > .tabs__item {
+        padding: 0 9px !important
     }
     body > .zeropixel ~ * .tabs-content > :first-child > a::after {
         position: unset !important
+    }
+    body:not(.js-module) .tabs + div[class] > :first-child {
+        width: 100% !important
     }
 }
 
