@@ -475,7 +475,10 @@ www.ukr.net##iframe[src*="/safemore.ukr.net/pframe/"]:style(height: 0 !important
 !
 ! Правила для компенсации отсутствия Scriptlet Doctor
 !#if env_firefox
-www.kinopoisk.ru##.cREWUr:remove()
 /^https?:\/\/strm\.yandex\.ru\/get\/[^\s]{1300,}$/$xmlhttprequest,domain=widgets.kinopoisk.ru|yastatic.net
+www.kinopoisk.ru##div[class*=" styles_additionalInformationSection__"] > div[class^="styles_root"] > div:remove()
+www.kinopoisk.ru##div[class*="__sidebar-content"] div[id][class*="__container"]
+www.kinopoisk.ru##div[class^="styles_sticky__"] > div[class^="styles_root"] > div:remove()
+www.kinopoisk.ru##div[id][class^="styles_container__"] > div[id][class]
 www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 !#endif
