@@ -53,7 +53,7 @@
 ||snitsya-son.ru^$csp=script-src 'self' * blob: data:
 ||sovetov.su/*/*utm_$csp=script-src
 ||sovetov.su/topne$csp=script-src
-||spletnik.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.facebook.com *.instagram.com telegram.org *.twitter.com
+||spletnik.ru^$document,csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' *.facebook.com telegram.org *.twitter.com
 ||statusklic.info^$csp=sandbox allow-same-origin;
 ||sweetbook.net^$csp=script-src 'self' * data: blob: 'unsafe-inline'
 ||syndication.exosrv.com^$csp=sandbox allow-same-origin;
