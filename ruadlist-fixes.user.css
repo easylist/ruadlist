@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220728.1802
+@version        0.20220729.1202
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2252,6 +2252,15 @@
   domain("rns.online") {
     body:not(#id) {
         overflow-y: auto !important
+    }
+}
+
+@-moz-document domain("galka.if.ua") {
+    #fb-modal, body.modal-open > .modal-backdrop {
+        display: none !important
+    }
+    body.modal-open {
+        overflow: auto !important
     }
 }
 
