@@ -415,17 +415,17 @@ e.mail.ru##.b-letter_thread > div > div:matches-css(height: 39px):remove()
 e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div:style(display: block !important)
 ! VK-брендинг на главной
 ! min-width: 1317px and more >>>
-mail.ru##.grid__lcol .logo__img--vk > .logo__text:matches-media((min-width: 1317px)):style(display: block !important; width: 78px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
-mail.ru##.grid__lcol .logo__img--vk:matches-media((min-width: 1317px)):style(background-size: auto 40px !important; background-position: 90px 50% !important)
+mail.ru##.grid__lcol .logo__img--vk:not([title*="день"]) > .logo__text:matches-media((min-width: 1317px)):style(display: block !important; width: 78px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
+mail.ru##.grid__lcol .logo__img--vk:not([title*="день"]):matches-media((min-width: 1317px)):style(background-size: auto 40px !important; background-position: 90px 50% !important)
 ! min-width: 1253px >>>
-mail.ru##.grid__lcol .logo__img--vk > .logo__text:matches-media((max-width: 1316px)):style(display: block !important; width: 60px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
-mail.ru##.grid__lcol .logo__img--vk:matches-media((max-width: 1316px)):style(background-size: auto 40px !important; background-position: 75px 50% !important)
+mail.ru##.grid__lcol .logo__img--vk:not([title*="день"]) > .logo__text:matches-media((max-width: 1316px)):style(display: block !important; width: 60px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
+mail.ru##.grid__lcol .logo__img--vk:not([title*="день"]):matches-media((max-width: 1316px)):style(background-size: auto 40px !important; background-position: 75px 50% !important)
 ! min-width: 1189px >>>
-mail.ru##.grid__lcol .logo__img--vk > .logo__text:matches-media((max-width: 1252px)):style(display: block !important; width: 60px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
-mail.ru##.grid__lcol .logo__img--vk:matches-media((max-width: 1252px)):style(background-size: auto 40px !important; background-position: 75px 50% !important)
+mail.ru##.grid__lcol .logo__img--vk:not([title*="день"]) > .logo__text:matches-media((max-width: 1252px)):style(display: block !important; width: 60px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
+mail.ru##.grid__lcol .logo__img--vk:not([title*="день"]):matches-media((max-width: 1252px)):style(background-size: auto 40px !important; background-position: 75px 50% !important)
 ! min-width: 1069px >>>
-mail.ru##.grid__lcol .logo__img--vk > .logo__text:matches-media((max-width: 1188px)):style(display: block !important; width: 60px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
-mail.ru##.grid__lcol .logo__img--vk:matches-media((max-width: 1188px)):style(background-size: auto 40px !important; background-position: 60px 50% !important)
+mail.ru##.grid__lcol .logo__img--vk:not([title*="день"]) > .logo__text:matches-media((max-width: 1188px)):style(display: block !important; width: 60px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
+mail.ru##.grid__lcol .logo__img--vk:not([title*="день"]):matches-media((max-width: 1188px)):style(background-size: auto 40px !important; background-position: 60px 50% !important)
 ! VK-брендинг на остальных
 mail.ru,sportmail.ru##.pm-menu__left__vk-logo
 cloud.mail.ru,e.mail.ru,octavius.mail.ru##a[title="Экосистема VK"]
