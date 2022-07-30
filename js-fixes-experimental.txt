@@ -43,8 +43,6 @@
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 adme.media##+js(no-xhr-if, /wl-analytics\.tsp\.li/)
 afisha.ru,film.ru##+js(remove-attr, autoplay|loop, video, stay)
-alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
-alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 all-episodes.club##+js(abort-on-property-read, advtss)
 allapteki.ru##+js(no-setTimeout-if, _modal)
 allboxing.ru##+js(abort-current-inline-script, atob, void)
@@ -56,6 +54,8 @@ animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 animekun.ru,doramakun.ru,fastpic.org,~new.fastpic.org,nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, utarget_script)
 animelend.info##+js(set-constant, JSON.parse, noopFunc)
 animevost.am,animevost.org,animevost.site,animevost.top,doefiratv.info,payeer-gift.ru,sinema.top,smotret-anime-365.ru,turkish-tv-series.ru,vost.pw##+js(abort-on-property-read, document.oncontextmenu)
+argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
+argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 artfile.me,artfile.ru,astrakhan.ru,gorodche.ru,informpskov.ru,myjane.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read, kav_cn)
 asn.in.ua##+js(abort-current-inline-script, $, contextmenu)
 asteriatm.ru,sudya-dredd.ru,tehnobzor.ru##+js(abort-on-property-read, mdpDeBlocker)
@@ -320,7 +320,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 |https://argumenti.ru^$csp=script-src 'self' * blob: data:,badfilter
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
 ||adbutton.net^$script,redirect=noopjs
-||alau.kz^$xmlhttprequest,badfilter,domain=alau.kz
 ||an.yandex.ru^$domain=e.mail.ru
 ||aniqit.com^$subdocument,removeparam=geoblock
 ||argumenti.ru^$xmlhttprequest,badfilter,domain=argumenti.ru|~mt.argumenti.ru
