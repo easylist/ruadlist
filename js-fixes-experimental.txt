@@ -33,8 +33,6 @@
 595.ucoz.net,freesoft.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,vsthemes.org,wallegend.net##+js(nano-setInterval-booster)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
 7days.ru,doctorpiter.ru,dom.mail.ru,kp.kg,kp.kz,kp.md,kp.ru,lady.mail.ru,radiokp.ru,teleprogramma.pro,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
-7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
-7ogorod.ru,agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 7ogorod.ru,autonevod.ru##+js(abort-on-property-read, flat_pm_arr)
 80-e.ru,examenpdd.com##+js(abort-on-property-read, yaContextCb)
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport|$subdocument,removeparam=|
@@ -45,6 +43,8 @@
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 adme.media##+js(no-xhr-if, /wl-analytics\.tsp\.li/)
 afisha.ru,film.ru##+js(remove-attr, autoplay|loop, video, stay)
+agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
+agrognom.ru,alau.kz,argumenti.ru,argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 all-episodes.club##+js(abort-on-property-read, advtss)
 allapteki.ru##+js(no-setTimeout-if, _modal)
 allboxing.ru##+js(abort-current-inline-script, atob, void)
@@ -319,7 +319,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 |http://argumenti.ru^$csp=script-src 'self' * blob: data:,badfilter
 |https://argumenti.ru^$csp=script-src 'self' * blob: data:,badfilter
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
-||7ogorod.ru^$xmlhttprequest,badfilter,domain=7ogorod.ru
 ||adbutton.net^$script,redirect=noopjs
 ||alau.kz^$xmlhttprequest,badfilter,domain=alau.kz
 ||an.yandex.ru^$domain=e.mail.ru
