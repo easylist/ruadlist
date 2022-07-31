@@ -54,8 +54,8 @@ animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 animekun.ru,doramakun.ru,fastpic.org,~new.fastpic.org,nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, utarget_script)
 animelend.info##+js(set-constant, JSON.parse, noopFunc)
 animevost.am,animevost.org,animevost.site,animevost.top,doefiratv.info,payeer-gift.ru,sinema.top,smotret-anime-365.ru,turkish-tv-series.ru,vost.pw##+js(abort-on-property-read, document.oncontextmenu)
-argumentiru.com,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
-argumentiru.com,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
+argumentiru.com,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
+argumentiru.com,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 artfile.me,artfile.ru,astrakhan.ru,informpskov.ru,myjane.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read, kav_cn)
 asn.in.ua##+js(abort-current-inline-script, $, contextmenu)
 asteriatm.ru,sudya-dredd.ru,tehnobzor.ru##+js(abort-on-property-read, mdpDeBlocker)
@@ -329,7 +329,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||loadercdn.com^$important,script,redirect=noopjs
 ||loveanime.live^$media,redirect=noopmp3-0.1s,domain=anidub.link|anime.anidub.life|loveanime.live|myanime.online|online.anidub.club|online.anidub.com|rusanime.ru
 ||m.mixadvert.com/show/$important,script
-||mashintop.ru^$xmlhttprequest,badfilter,domain=mashintop.ru
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||paperdoc.ru^$xmlhttprequest,badfilter,domain=paperdoc.ru
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
