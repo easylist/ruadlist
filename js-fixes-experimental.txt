@@ -54,8 +54,8 @@ animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 animekun.ru,doramakun.ru,fastpic.org,~new.fastpic.org,nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, utarget_script)
 animelend.info##+js(set-constant, JSON.parse, noopFunc)
 animevost.am,animevost.org,animevost.site,animevost.top,doefiratv.info,payeer-gift.ru,sinema.top,smotret-anime-365.ru,turkish-tv-series.ru,vost.pw##+js(abort-on-property-read, document.oncontextmenu)
-argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
-argumentiru.com,bouw.ru,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
+argumentiru.com,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
+argumentiru.com,etotprazdnik.ru,fermilon.ru,globuss24.ru,gorodche.ru,mashintop.ru,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 artfile.me,artfile.ru,astrakhan.ru,gorodche.ru,informpskov.ru,myjane.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read, kav_cn)
 asn.in.ua##+js(abort-current-inline-script, $, contextmenu)
 asteriatm.ru,sudya-dredd.ru,tehnobzor.ru##+js(abort-on-property-read, mdpDeBlocker)
@@ -321,8 +321,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||an.yandex.ru^$domain=e.mail.ru
 ||aniqit.com^$subdocument,removeparam=geoblock
 ||argumentiru.com^$xmlhttprequest,badfilter,domain=argumentiru.com
-||bouw.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
-||bouw.ru^$xmlhttprequest,badfilter,domain=bouw.ru
 ||clustrmaps.com/counter/$image,redirect-rule=32x32.png
 ||etotprazdnik.ru^$csp=script-src 'self' * 'unsafe-inline' data:,badfilter
 ||fermilon.ru^$xmlhttprequest,badfilter,domain=fermilon.ru
