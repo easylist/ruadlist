@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220730.2039
+@version        0.20220731.1126
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3319,6 +3319,16 @@
 @-moz-document domain("lrepacks.net") {
     [href*="poluchenie-premium-dostupa.html"] > b > .fa-spin {
         animation: none !important
+    }
+}
+
+@-moz-document domain("lurkmore.rip") {
+    #siteNotice {
+        background: none !important
+    }
+    #localNotice > .floatleft > a > img {
+        height: 70px !important;
+        width: auto !important
     }
 }
 
