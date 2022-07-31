@@ -270,8 +270,8 @@ studizba.com##+js(nano-setInterval-booster, #timer)
 svoboda.org##+js(remove-attr, data-autoplay, video)
 tapochek.net##+js(abort-on-property-read, web_script)
 tarkov-wiki.ru##+js(abort-on-property-read, CheckingUser)
-tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
-tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
+teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
+teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
 tortuga.wtf##+js(set-constant, Object.prototype.hideab, undefined)
 turkish-tv-series.ru##+js(abort-on-property-read, document.onkeydown)
@@ -339,7 +339,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||sportrecs.com/embed/*autoplay=1$subdocument,removeparam=|
 ||strm.yandex.ru/get/$script,redirect=silent-noeval.js,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru^$media,redirect=empty,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
-||tele.ru^$xmlhttprequest,badfilter,domain=tele.ru
 ||ts.kg/olol*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=ts.kg
 ||ts.kg/olol*.mp4$media,redirect=noop-0.1s.mp3
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|
