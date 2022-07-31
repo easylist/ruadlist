@@ -33,7 +33,7 @@
 595.ucoz.net,freesoft.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,vsthemes.org,wallegend.net##+js(nano-setInterval-booster)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
 7days.ru,doctorpiter.ru,dom.mail.ru,kp.kg,kp.kz,kp.md,kp.ru,lady.mail.ru,radiokp.ru,teleprogramma.pro,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
-7ogorod.ru,autonevod.ru##+js(abort-on-property-read, flat_pm_arr)
+7ogorod.ru,autonevod.ru,shtrafsud.ru##+js(abort-on-property-read, flat_pm_arr)
 80-e.ru,examenpdd.com##+js(abort-on-property-read, yaContextCb)
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport|$subdocument,removeparam=|
 @@||m.rp5.*/mobile/scripts/*.js$script,domain=m.rp5.*
@@ -250,8 +250,6 @@ sdamgia.ru##+js(cookie-remover, /^bda|^bltsr/)
 shaiba.kz##+js(abort-current-inline-script, $, 1xbet)
 shanson320.ru,vesti.ua##+js(abort-current-inline-script, document.createElement, atob)
 shrlink.top##+js(abort-on-property-read, app_vars.force_disable_adblock)
-shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
-shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /pobeda/)
 sibnet.ru##+js(no-setTimeout-if, Adblock)
 silvercube12.xyz##+js(window-close-if, /dispatch)
@@ -270,6 +268,8 @@ startgamer.ru##+js(nano-setInterval-booster, js-game-loader-block, 1000, 0.0001)
 studizba.com##+js(abort-on-property-read, m205)
 studizba.com##+js(nano-setInterval-booster, #timer)
 svoboda.org##+js(remove-attr, data-autoplay, video)
+svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
+svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 tapochek.net##+js(abort-on-property-read, web_script)
 tarkov-wiki.ru##+js(abort-on-property-read, CheckingUser)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
@@ -335,7 +335,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
-||shtrafsud.ru^$xmlhttprequest,badfilter,domain=shtrafsud.ru
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:,badfilter
 ||sportrecs.com/embed/*autoplay=1$subdocument,removeparam=|
 ||strm.yandex.ru/get/$script,redirect=silent-noeval.js,domain=yandex.ru|yastatic.net
