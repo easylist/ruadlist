@@ -54,8 +54,6 @@ animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 animekun.ru,doramakun.ru,fastpic.org,~new.fastpic.org,nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, utarget_script)
 animelend.info##+js(set-constant, JSON.parse, noopFunc)
 animevost.am,animevost.org,animevost.site,animevost.top,doefiratv.info,payeer-gift.ru,sinema.top,smotret-anime-365.ru,turkish-tv-series.ru,vost.pw##+js(abort-on-property-read, document.oncontextmenu)
-argumentiru.com,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
-argumentiru.com,ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 artfile.me,artfile.ru,astrakhan.ru,informpskov.ru,myjane.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read, kav_cn)
 asn.in.ua##+js(abort-current-inline-script, $, contextmenu)
 asteriatm.ru,sudya-dredd.ru,tehnobzor.ru##+js(abort-on-property-read, mdpDeBlocker)
@@ -216,6 +214,8 @@ myshared.ru###download_form > .modal-body
 myshared.ru##+js(remove-attr, disabled, .uk-modal-footer > button)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
 obozrevatel.com##+js(remove-attr, autoplay, video)
+ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
+ogodom.ru,paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 ontivi.net##+js(window.open-defuser, /trafficbass/)
 otzovik.com##+js(no-setTimeout-if, , 250)
 otzovik.com##+js(noeval-if, ShadowRoot)
@@ -320,7 +320,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||adbutton.net^$script,redirect=noopjs
 ||an.yandex.ru^$domain=e.mail.ru
 ||aniqit.com^$subdocument,removeparam=geoblock
-||argumentiru.com^$xmlhttprequest,badfilter,domain=argumentiru.com
 ||clustrmaps.com/counter/$image,redirect-rule=32x32.png
 ||footboom.com/dist/app/js/antiAdBlock-
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|
