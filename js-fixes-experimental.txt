@@ -221,8 +221,8 @@ otzovik.com##^script:has-text(an.yan)
 overclockers.ru##+js(abort-on-property-read, cardinals)
 overclockers.ru##+js(addEventListener-defuser, load, mamydirect)
 ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/pravila"])
-paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
-paperdoc.ru,pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
+pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, __XRABStatus)
+pasmi.ru,shtrafsud.ru,svpressa.ru,tele.ru,teleprogramma.pro##+js(abort-on-property-write, xRSrcSupport)
 passport.yandex.ru#@#+js()
 pb.wtf,piratbit.fun,piratbit.org,piratbit.pw,piratbit.top,vidak.icu#?#.table > tbody[id^="post_"]:-abp-has(a[style="position: relative;left: 13px; font-size: 16px; background: yellow;"])
 peers.tv##+js(set-constant, ADV_BLOCKED, false)
@@ -329,7 +329,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||loveanime.live^$media,redirect=noopmp3-0.1s,domain=anidub.link|anime.anidub.life|loveanime.live|myanime.online|online.anidub.club|online.anidub.com|rusanime.ru
 ||m.mixadvert.com/show/$important,script
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
-||paperdoc.ru^$xmlhttprequest,badfilter,domain=paperdoc.ru
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||rbk.ru/*/_videoAutoplayRecommend.js
 ||s-cdn.org/promo/*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=player-films.online
