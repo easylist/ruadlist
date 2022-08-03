@@ -1,11 +1,7 @@
-! Title: RU AdList for uBO only
+! Title: RU AdList
 ! Last modified: %timestamp%
 ! Expires: 2 days (фильтр обновляется автоматически каждые 2 дня)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
-!
-! Комбинированная версия списков фильтров RU AdList против рекламы
-! и экспериментальных списков RU AdList CSS Fixes и RU AdList JS Fixes
-! На данный момент нормально работает только в uBlock Origin
 !
 ! --- RU AdList Classic ---
 !#include advblock/adservers.txt
@@ -19,12 +15,3 @@
 !#include advblock/specific_special.txt
 !#include advblock/thirdparty.txt
 !#include advblock/whitelist.txt
-!
-! --- RU AdList CSS Fixes---
-!#include css-fixes-experimental.txt
-!
-! --- RU AdList JS Fixes---
-!#include js-fixes-experimental.txt
-!
-! --- AWRL-non-sync---
-!#include AWRL-non-sync.txt
