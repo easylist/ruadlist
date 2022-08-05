@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220803.2114
+@version        0.20220805.2243
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -244,7 +244,6 @@
   domain("baskino1.top"),
   domain("bestivi.com"),
   domain("betahdrezka.com"),
-  domain("bombardir.ru"),
   domain("dnepr.info"),
   domain("drhdrezka.com"),
   domain("dugtor.org"),
@@ -1233,6 +1232,12 @@
     }
 }
 
+@-moz-document domain("bombardir.ru") {
+    .branding {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("bosch-home.ru") {
     .cookielaw-modal-layer {
         display: none !important
@@ -1336,6 +1341,41 @@
     }
     .bg-top-menu {
         top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("by.tribuna.com"),
+  domain("sports.ru") {
+    html > body {
+        background-image: none !important;
+        background-color: #a7a7a7 !important
+    }
+    .page-layout {
+        margin-top: 0 !important
+    }
+    :not(.nba-global-nav-wrapper) + #branding-layout:not(#id) {
+        margin-top: 96px !important
+    }
+    #branding-layout:not(#id), body.img-bg {
+        padding-top: 0 !important
+    }
+    #branding-layout > * > * {
+        pointer-events: auto !important
+    }
+    #branding-layout {
+        pointer-events: none !important
+    }
+    [data-content-name="banner-static"] {
+        position: fixed !important;
+        left: -10000px !important;
+        transform: scale(0) !important;
+        display: none !important
+    }
+    #branding-layout > a {
+        width: 0 !important;
+        height: 0 !important;
+        left:-10000px !important
     }
 }
 
@@ -4024,6 +4064,9 @@
     #foundationWrapper > div {
         height: auto !important
     }
+    .gp-game-card .user-profile-sidebar {
+        max-width: unset !important
+    }
     .content_aside-container > .content-column {
         padding-left: 0 !important;
         padding-right: 40px !important
@@ -4680,41 +4723,6 @@
     }
     body.is-fixed {
         overflow: auto !important
-    }
-}
-
-@-moz-document
-  domain("sports.ru"),
-  domain("by.tribuna.com") {
-    html > body {
-        background-image: none !important;
-        background-color: #a7a7a7 !important
-    }
-    .page-layout {
-        margin-top: 0 !important
-    }
-    :not(.nba-global-nav-wrapper) + #branding-layout:not(#id) {
-        margin-top: 96px !important
-    }
-    #branding-layout:not(#id), body.img-bg {
-        padding-top: 0 !important
-    }
-    #branding-layout > * > * {
-        pointer-events: auto !important
-    }
-    #branding-layout {
-        pointer-events: none !important
-    }
-    [data-content-name="banner-static"] {
-        position: fixed !important;
-        left: -10000px !important;
-        transform: scale(0) !important;
-        display: none !important
-    }
-    #branding-layout > a {
-        width: 0 !important;
-        height: 0 !important;
-        left:-10000px !important
     }
 }
 
