@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220807.1234
+@version        0.20220807.1307
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3411,13 +3411,6 @@
     .article__item_source_viqeo .article__container:before {
         content: initial !important
     }
-    .grid-middle > [class*="grid__lcol svelte-"] > .weather > .weather__block_extended {
-        display: flex !important;
-        justify-content: space-between !important;
-        margin: 0 20px !important;
-        padding: 8px 0 12px !important;
-        border-top: 1px solid #f0f1f3 !important
-    }
     #bubble-home, .grid__main-col > .tgb-wrapper, 
     .mailbox-container ~ .asteroid-widgets, 
     .mailbox-container ~ .asteroid-widgets ~ [class], .ph-ext, 
@@ -3439,6 +3432,10 @@
     }
     body > .grid .grid__rcol {
         margin-left: 0 !important
+    }
+    #search\:container, [data-testid="grid-left-col"] > .logo {
+        margin-top: 4px !important;
+        margin-bottom: 4px !important
     }
     body > .zeropixel ~ * .tabs-content > :first-child > a {
         max-height: 5em !important;
