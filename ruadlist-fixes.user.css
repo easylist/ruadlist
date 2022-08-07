@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220807.1307
+@version        0.20220807.2102
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3641,6 +3641,15 @@
 @-moz-document domain("more.tv") {
     .framework__subscription {
         display: none !important
+    }
+}
+
+@-moz-document domain("moscowtimes.eu") {
+    .contribute-modal {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
     }
 }
 
