@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220807.2102
+@version        0.20220808.1252
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -135,6 +135,7 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("3ivi.com"),
+  domain("hdrezka334dfx.net"),
   domain("aif.ru"),
   domain("ain.ua"),
   domain("bestivi.com"),
@@ -239,6 +240,7 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("3ivi.com"),
+  domain("hdrezka334dfx.net"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
   domain("baskino1.top"),
@@ -3644,16 +3646,9 @@
     }
 }
 
-@-moz-document domain("moscowtimes.eu") {
-    .contribute-modal {
-        display: none !important
-    }
-    body {
-        overflow: auto !important
-    }
-}
-
-@-moz-document domain("moscowtimes.ru") {
+@-moz-document
+  domain("moscowtimes.eu"),
+  domain("moscowtimes.ru") {
     .contribute-modal {
         display: none !important
     }
