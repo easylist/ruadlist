@@ -1108,7 +1108,9 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 ||yastatic.net/market-affiliate/$domain=zen.yandex.by|zen.yandex.kz|zen.yandex.ru|zen.yandex.uz
 ! Прочее
 rasp.yandex.by,rasp.yandex.kz,rasp.yandex.ru,rasp.yandex.uz##.SearchSegments__blablacar
-rasp.yandex.by,rasp.yandex.kz,rasp.yandex.ru,rasp.yandex.uz##.SearchSegments__row
+rasp.yandex.by,rasp.yandex.kz,rasp.yandex.ru,rasp.yandex.uz#?#.SearchSegments__row:-abp-has([class*="banner"])
+rasp.yandex.by,rasp.yandex.kz,rasp.yandex.ru,rasp.yandex.uz#?#.SearchSegments__row:-abp-has([id*="banner"])
+rasp.yandex.by,rasp.yandex.kz,rasp.yandex.ru,rasp.yandex.uz##.ThreadLayout__topDirect
 uslugi.yandex.ru##.WebBanner
 turbopages.org##.advert
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##.awaps__banner
