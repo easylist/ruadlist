@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220808.1252
+@version        0.20220808.1255
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -135,7 +135,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("3ivi.com"),
-  domain("hdrezka334dfx.net"),
   domain("aif.ru"),
   domain("ain.ua"),
   domain("bestivi.com"),
@@ -171,6 +170,7 @@
   domain("hdrezka19139.org"),
   domain("hdrezka1wn.org"),
   domain("hdrezka2mwgm.org"),
+  domain("hdrezka334dfx.net"),
   domain("hdrezka63hhty.net"),
   domain("hdrezkabbdh4d.net"),
   domain("hdrezkacvb.org"),
@@ -240,7 +240,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("3ivi.com"),
-  domain("hdrezka334dfx.net"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
   domain("baskino1.top"),
@@ -289,6 +288,7 @@
   domain("hdrezka19139.org"),
   domain("hdrezka1wn.org"),
   domain("hdrezka2mwgm.org"),
+  domain("hdrezka334dfx.net"),
   domain("hdrezka63hhty.net"),
   domain("hdrezkabbdh4d.net"),
   domain("hdrezkacvb.org"),
@@ -4176,6 +4176,15 @@
   domain("ruporus.xyz") {
     div[class="article vid"] {
         margin-top: auto !important
+    }
+}
+
+@-moz-document domain("postimees.ee") {
+    .cookie-paywall-visible div > .article-body-content ~ .article-body-content {
+        display: flex !important
+    }
+    .cookie-paywall-visible .cookie-paywall {
+        display: none !important
     }
 }
 
