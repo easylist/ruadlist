@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220808.2054
+@version        0.20220809.1948
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4868,6 +4868,15 @@
     }
     .page-content {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("thebell.io") {
+    .post_content.newsletter ~ .post_subscribe {
+        display: none !important
+    }
+    .post_content.newsletter {
+        max-height: unset !important
     }
 }
 
