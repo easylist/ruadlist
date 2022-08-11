@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.921
+VERSION = 3.922
 # Adjusted for RU Adlist by Lain Inverse in 2020
 
 # Import the key modules
