@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220811.2241
+@version        0.20220812.1144
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -606,6 +606,15 @@
     }
     #alert {
         pointer-events: none
+    }
+}
+
+@-moz-document domain("adme.media") {
+    body.ReactModal__Body--open > div[style^="z-index: 999; position: absolute;"] {
+        display: none !important
+    }
+    body.ReactModal__Body--open {
+        overflow: auto !important
     }
 }
 
