@@ -332,15 +332,12 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||rbk.ru/*/_videoAutoplayRecommend.js
-||s-cdn.org/promo/*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
-||s-club.tv/promo/*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:,badfilter
 ||sportrecs.com/embed/*autoplay=1$subdocument,removeparam=|
 ||strm.yandex.ru/get/$script,redirect=silent-noeval.js,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru^$media,redirect=empty,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
-||ts.kg/olol*.mp4$badfilter,rewrite=abp-resource:blank-mp4,domain=ts.kg
 ||ts.kg/olol*.mp4$media,redirect=noop-0.1s.mp3
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|
 ||video.matchtv.ru/iframe/feed/*&skin_name=mpartner&autostart=1$subdocument,removeparam=/autostart|skin_name/

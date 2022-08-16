@@ -2638,8 +2638,6 @@ lada.kz/uploads/banners/
 ||rz.com.ua/sites/default/files/*_*.jpg|$image
 ||rz.com.ua/sites/default/files/baneri-
 ||s*.website^$third-party,script
-||s-cdn.org/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
-||s-club.tv/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-info.ru/img/recl/
 ||s-platoon.ru/forfon/$subdocument
 ||s13.ru/bframe/
@@ -3037,7 +3035,6 @@ lada.kz/uploads/banners/
 ||trymobile.ru/tizery_moi/
 ||ts.kg/ad/
 ||ts.kg/olol$~media
-||ts.kg/olol*.mp4$rewrite=abp-resource:blank-mp4,domain=ts.kg
 ||ts.kg/oops/
 ||tsargrad.tv/img/*-bg.jpg
 ||tt-cup.com/static/clients/$image
@@ -3423,3 +3420,10 @@ lada.kz/uploads/banners/
 ||zvezdakaraoke.com/*.php?id=
 ||zzap.ru^$domain=octavia-a5.ru
 ||zzsites.ru^$script
+!
+! Rewrite rules
+!#if ext_abp
+||s-cdn.org/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
+||s-club.tv/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
+||ts.kg/olol*.mp4$rewrite=abp-resource:blank-mp4,domain=ts.kg
+!#endif
