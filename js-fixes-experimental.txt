@@ -47,9 +47,9 @@ all-episodes.club##+js(abort-on-property-read, advtss)
 allapteki.ru##+js(no-setTimeout-if, _modal)
 allboxing.ru##+js(abort-current-inline-script, atob, void)
 amazinghis.ru,moj-pes.ru##+js(abort-on-property-read, anOptions)
-anidub.club,anidub.life,anidub.link,online.anidub.com##+js(abort-on-property-read, brblob)
-anidub.link,anime.anidub.life,loveanime.live,myanime.online,online.anidub.club,online.anidub.com,rusanime.ru##+js(abort-on-property-read, adblock)
-anidub.link,anime.anidub.life,loveanime.live,myanime.online,online.anidub.club,online.anidub.com,rusanime.ru##+js(no-fetch-if, /code\.moviead55\./)
+anidub.club,anidub.life,anidub.link,anime.anidub.com,online.anidub.com##+js(abort-on-property-read, brblob)
+anidub.link,anime.anidub.com,anime.anidub.life,loveanime.live,myanime.online,online.anidub.club,online.anidub.com,rusanime.ru##+js(abort-on-property-read, adblock)
+anidub.link,anime.anidub.com,anime.anidub.life,loveanime.live,myanime.online,online.anidub.club,online.anidub.com,rusanime.ru##+js(no-fetch-if, /code\.moviead55\./)
 anifap.com,anipoisk.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
 animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 animekun.ru,doramakun.ru,nnm-club.lib,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, utarget_script)
@@ -327,7 +327,7 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||loadercdn.com^$important,script,redirect=noopjs
-||loveanime.live^$media,redirect=noopmp3-0.1s,domain=anidub.link|anime.anidub.life|loveanime.live|myanime.online|online.anidub.club|online.anidub.com|rusanime.ru
+||loveanime.live^$media,redirect=noopmp3-0.1s,domain=anidub.link|anime.anidub.com|anime.anidub.life|loveanime.live|myanime.online|online.anidub.club|online.anidub.com|rusanime.ru
 ||m.mixadvert.com/show/$important,script
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
