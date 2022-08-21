@@ -1408,5 +1408,7 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*
 ||yandex.*/news*?from=main$document,removeparam=|,domain=yandex.*
 ||yandex.*/news*msid$document,removeparam=|,domain=yandex.*
+||yandex.*/search/$document,removeparam=msid,domain=yandex.*
+||yandex.*/search/$document,removeparam=search_source,domain=yandex.*
 ||yandex.ru/?clid=$document,removeparam=|,domain=yandex.*
 ||ykt.ru^$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru
