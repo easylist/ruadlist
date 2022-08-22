@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220820.208
+@version        0.20220822.1205
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -812,28 +812,9 @@
 }
 
 @-moz-document
-  domain("anime-naruto.ru"),
-  domain("blich.ru"),
-  domain("borutoplanet.ru"),
-  domain("bungou-stray-dogs.ru"),
-  domain("doktor-stoun.ru"),
-  domain("haikyu.ru"),
-  domain("hunter-x-hunter.ru"),
-  domain("klinok-rassekayuschiy-demonov.ru"),
-  domain("magicheskaya-bitva.ru"),
-  domain("my-hero-academia.ru"),
-  domain("one-pieces.ru"),
-  domain("reinkarnatsiya-bezrabotnogo.ru"),
-  domain("tokiyskie-mstiteli.ru") {
-    .home, .single {
-        padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("anime.anidub.com"),
   domain("anidub.club"),
   domain("anidub.link"),
+  domain("anime.anidub.com"),
   domain("anime.anidub.life"),
   domain("online.anidub.com"),
   domain("online.anidub.life") {
@@ -855,6 +836,25 @@
     }
     .wrap > .popular {
         visibility: visible !important
+    }
+}
+
+@-moz-document
+  domain("anime-naruto.ru"),
+  domain("blich.ru"),
+  domain("borutoplanet.ru"),
+  domain("bungou-stray-dogs.ru"),
+  domain("doktor-stoun.ru"),
+  domain("haikyu.ru"),
+  domain("hunter-x-hunter.ru"),
+  domain("klinok-rassekayuschiy-demonov.ru"),
+  domain("magicheskaya-bitva.ru"),
+  domain("my-hero-academia.ru"),
+  domain("one-pieces.ru"),
+  domain("reinkarnatsiya-bezrabotnogo.ru"),
+  domain("tokiyskie-mstiteli.ru") {
+    .home, .single {
+        padding-top: 0 !important
     }
 }
 
@@ -4698,6 +4698,12 @@
     }
 }
 
+@-moz-document domain("sport-interfax.ru") {
+    .tab__sport a[href^="https://www.championat.com/"] {
+        pointer-events: none !important
+    }
+}
+
 @-moz-document domain("sport-tv.by") {
     .main {
         padding-top: 0 !important
@@ -5393,6 +5399,12 @@
         pointer-events: none !important;
         opacity: 0 !important;
         height: 0 !important
+    }
+}
+
+@-moz-document domain("www.vesti.ru") {
+    .page-wrap {
+        margin-right: unset !important
     }
 }
 
