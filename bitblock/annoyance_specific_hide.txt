@@ -2296,6 +2296,7 @@ youtube.com##iron-overlay-backdrop
 youtube.com##tp-yt-iron-overlay-backdrop
 www.youtube.*###lightbox[class*="ytd-consent-bump-"]
 www.youtube.*###lightbox[class*="ytd-consent-bump-"]:remove()
+www.youtube.*#?#+js(set-constant, Object.prototype.eomEssentialCookieMsgItems, false)
 youtube.com##ytd-mealbar-promo-renderer
 youtube.com##ytd-popup-container > [force-close-on-outside-click="true"] > #contentWrapper > [position-type^="OPEN_POPUP_POSITION_"]
 youtube.com#?#ytd-popup-container > tp-yt-paper-dialog:-abp-has(> yt-upsell-dialog-renderer > #dialog > #content > yt-formatted-string > a[href*="://support.google.com/youtube/?p=sign_in"])
