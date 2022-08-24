@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220824.1434
+@version        0.20220824.1436
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2594,6 +2594,13 @@
     }
     .main .header {
         padding-top: 94px !important
+    }
+}
+
+@-moz-document domain("hentaiz.org") {
+    .short-poster > img {
+        filter: none !important;
+        -webkit-filter: none !important
     }
 }
 
