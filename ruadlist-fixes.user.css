@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220824.23
+@version        0.20220824.1434
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2037,12 +2037,12 @@
 }
 
 @-moz-document
-  domain("filmix.tech"),
   domain("filmix.ac"),
   domain("filmix.biz"),
   domain("filmix.cc"),
   domain("filmix.gay"),
   domain("filmix.love"),
+  domain("filmix.tech"),
   domain("filmix.zone") {
     .main-wrapper, .page-wrapper {
         margin-top: 0 !important
@@ -2444,7 +2444,7 @@
 }
 
 @-moz-document domain("goha.ru") {
-    a[href="https://www.goha.ru/live"] > span[class*="pulse"]:before {
+    .layout-menu-header__links span[class*="pulse"]:before {
         animation: none !important
     }
 }
