@@ -1102,8 +1102,6 @@ zannn.top#@?#this-is-a-malicious-site
 ||footboom.com/dist/app/js/antiAdBlock-
 ||google-analytics.com^$domain=cdnvideo.ru|igromania.ru|rambler.ru
 ||googletagmanager.com/gtm.js$domain=5-tv.ru|censor.net|dtf.ru|gazeta.ru|ixbt.com|ixbt.games|ixbt.market|ixbt.video|kp.kg|kp.kz|kp.md|kp.ru|lifehacker.ru|livejournal.com|motor.ru|nur.kz|rambler.ru|rbkgames.com|rutube.ru|tjournal.ru|tsn.ua|tut.by|vc.ru
-||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
-||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||rcm.rambler.ru^$domain=rambler.ru
 ||yastatic.net/naydex/autoru/$script,redirect=empty
 ~vp.rambler.ru,~id.rambler.ru,www.afisha.*,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.*,motor.*,passion.*,quto.*,rambler.*,rns.online,wmj.*#?#+js(abort-on-stack-trace, Object.prototype.getBaseFingerprint, inlineScript)
@@ -1352,7 +1350,7 @@ $removeparam=ysclid
 ?country_code=$document,removeparam=|,domain=zen.yandex.*
 ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*
 ?e=lfm$document,removeparam=|,domain=sports.ru
-?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|quote.ru|rbc.ru|ridus.ru|sportrbc.ru|sports.ru
+?from=$document,removeparam=|from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|kommersant.ru|mail.ru|ntv.ru|quote.ru|rbc.ru|ridus.ru|sportrbc.ru|sports.ru|www.kinopoisk.ru
 ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru
 ?from=tabbar$document,removeparam=|from,domain=yandex.*
 ?from=yanews$document,removeparam=|

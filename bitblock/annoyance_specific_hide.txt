@@ -13,7 +13,6 @@ animelayer.ru###Wrapper > table[width="100%"]:first-child
 liveinternet.ru###\:gl_Bar
 iviche.com###__next > .MuiContainer-maxWidthLg
 culture.ru#?##__next > div > main > div > div:-abp-has(span:-abp-contains(Подпишитесь на рассылку))
-www.kinopoisk.ru###__next > div[class*=" styles_rootWithBanner"]
 wefilms.ru###adfoxPromo
 ficbook.net###adultCoverWarning
 aliexpress.ru###ae-ru-privacy-banner
@@ -1334,6 +1333,7 @@ tutu.ru,tutu.travel##.style__disclaimer
 kufar.by##.styles_component_show__h_EOG
 kufar.by##.styles_last_layout_wrapper__e02rb
 life.ru##.styles_root__95QNR
+www.kinopoisk.ru##.styles_root__HSrFS
 kufar.by##.styles_wrapper__YA4CR
 gamemag.ru##.sub-alphabet
 seonews.ru##.sub-mailing-wrapper
@@ -2330,5 +2330,7 @@ www.google.*##^script:has-text(/consentCookiePayload.*nidCookiePayload/)
 market.yandex.*#?#div[data-zone-name="morda_context"] > div > div:nth-child(-n+2) > div[data-tid] > div[class] > div[class]:not([data-tid]) > div[class]:not([data-tid]):first-child + div:style(width: inherit !important)
 market.yandex.*#?#div[data-zone-name="morda_context"] > div > div:nth-child(-n+2) > div[data-tid] > div[class] > div[class]:not([data-tid]) > div[class]:not([data-tid]):first-child:style(padding-right: unset !important; width: inherit !important; max-width: 100% !important)
 !
+www.kinopoisk.*#?#div[class^="styles_sidebarContainer_"] > div[style^="position: sticky; top:"]:style(top: 0 !important)
 www.kinopoisk.*#?#header[style*="--header-height:"][style*="150px"] > .header-navigation:style(margin-top: 0 !important)
 www.kinopoisk.*#?#header[style*="--header-height:"][style*="150px"] > div > img
+www.kinopoisk.*#?#header[style*="--header-height:"][style*="150px"] div[class^="styles_logoContainer"] a[href*="utm_"]:not([href^="/"]):not([href^="www.kinopoisk.ru"]):style(pointer-events: none !important)
