@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220826.1406
+@version        0.20220827.1450
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -135,7 +135,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("3ivi.com"),
-  domain("hdrezkaygzp2t.net"),
   domain("aif.ru"),
   domain("ain.ua"),
   domain("bestivi.com"),
@@ -192,6 +191,7 @@
   domain("hdrezkarty.org"),
   domain("hdrezkasdf.org"),
   domain("hdrezkaxvb323.net"),
+  domain("hdrezkaygzp2t.net"),
   domain("hdrezkayou.com"),
   domain("hdrezkayt7810.net"),
   domain("hdrezkayyt43d.net"),
@@ -243,7 +243,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("3ivi.com"),
-  domain("hdrezkaygzp2t.net"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
   domain("baskino1.top"),
@@ -312,6 +311,7 @@
   domain("hdrezkarty.org"),
   domain("hdrezkasdf.org"),
   domain("hdrezkaxvb323.net"),
+  domain("hdrezkaygzp2t.net"),
   domain("hdrezkayou.com"),
   domain("hdrezkayt7810.net"),
   domain("hdrezkayyt43d.net"),
@@ -1114,6 +1114,36 @@
   domain("tv.mail.ru") {
     .cols__inner > noindex {
         display: none !important
+    }
+}
+
+@-moz-document
+  domain("autorambler.ru"),
+  domain("rambler.ru") {
+    #bigColumn script + div[class] > div[style^="height"] > div > div[id^="cluster-"] ~ div:empty, 
+    [data-blocks="mini_video_player::close_button"] {
+        display: none !important
+    }
+    #bigColumn script + div[class] > div[style^="height"] * {
+        height: inherit !important
+    }
+    [data-blocks] div[class]:empty, [data-blocks^="cluster_"] > div:empty ~ div, 
+    div[style="order:-1"] > div > div {
+        min-height: 0 !important
+    }
+    #bigColumn + div[class] > div:first-child + div > div div, 
+    [data-blocks="top_news_block"] > div:first-child + div > div div {
+        min-height: 0 !important;
+        border-bottom: unset !important
+    }
+    #bigColumn script + div[class] > div[style^="height"] > div {
+        position: initial !important;
+        transform: none !important;
+        width: inherit !important
+    }
+    #bigColumn script + div[class] > div[style^="height"] {
+        width: inherit !important;
+        height: inherit !important
     }
 }
 
@@ -2294,8 +2324,7 @@
   domain("gagadget.com"),
   domain("gazeta.ru"),
   domain("lenta.ru"),
-  domain("rambler.ru"),
-  domain("rns.online") {
+  domain("rambler.ru") {
     body:not(#id) {
         overflow-y: auto !important
     }
@@ -4292,40 +4321,20 @@
     #rootWrapper div[style="min-height: 500px;"] ~ div div {
         background-color: transparent !important
     }
-    #bigColumn script + div[class] > div[style^="height"] > div > div[id^="cluster-"] ~ div:empty, 
-    .social-popup, .subscribe-popup-cover, .subscribe-popup__wrapper, 
-    [data-blocks="mini_video_player::close_button"] {
+    .social-popup, .subscribe-popup-cover, .subscribe-popup__wrapper {
         display: none !important
-    }
-    #bigColumn script + div[class] > div[style^="height"] * {
-        height: inherit !important
     }
     #bigColumn > div[class]:nth-of-type(3) {
         height: unset !important;
         margin-top: unset !important;
         margin-bottom: unset !important
     }
-    [data-blocks] div[class]:empty, [data-blocks^="cluster_"] > div:empty ~ div, 
-    div[style="order:-1"] > div > div {
-        min-height: 0 !important
-    }
-    #bigColumn + div[class] > div:first-child + div > div div, 
-    #bigColumn + div[class] > div:first-child article ~ div div, 
-    [data-blocks="top_news_block"] > div:first-child + div > div div {
+    #bigColumn + div[class] > div:first-child article ~ div div {
         min-height: 0 !important;
         border-bottom: unset !important
     }
-    #bigColumn script + div[class] > div[style^="height"] > div {
-        position: initial !important;
-        transform: none !important;
-        width: inherit !important
-    }
     body[style*="position:"] {
         position: unset !important
-    }
-    #bigColumn script + div[class] > div[style^="height"] {
-        width: inherit !important;
-        height: inherit !important
     }
 }
 
@@ -4437,12 +4446,6 @@
 @-moz-document domain("riperam.org") {
     #main-wrapper > #wrap {
         padding: 0 10px !important
-    }
-}
-
-@-moz-document domain("rns.online") {
-    #boxbox, #boxfade {
-        display: none !important
     }
 }
 
