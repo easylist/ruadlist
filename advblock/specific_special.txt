@@ -730,7 +730,7 @@ m.gazeta.ru###in-read
 gazeta.ru###parallax
 championat.com###plista_block
 sport.rambler.ru###rootWrapper > script + div[class]:not([data-blocks])
-rambler.ru###rootWrapper div[style="min-height: 500px;"]
+autorambler.ru,rambler.ru###rootWrapper div[style="min-height: 500px;"]
 gazeta.ru###superfooter
 lenta.ru,m.gazeta.ru###top-banner
 mail.rambler.ru##.Direct-root-hG
@@ -754,6 +754,7 @@ gazeta.ru##.banners
 daily.afisha.ru#?#.billboard__item:-abp-has(> .adv-daily)
 rambler.ru##.comments__partners
 www.rambler.ru##.commercial-branding > div:first-child > script + div > div + div
+autorambler.ru#?#.commercial-branding div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
 rambler.ru##.finance__banner
 rambler.ru##.finance__partners
 rambler.ru##.gallery__item--banner
@@ -804,7 +805,7 @@ letidor.ru,quto.ru##article a[href^="https://zen.yandex.ru/"]
 championat.com##div.banner[class*=" "]
 rambler.ru#?#div:-abp-has(> [id^="adfox-"] + div > div:only-child)
 quto.ru#?#div:-abp-has(> div + [id^="rnet_"])
-rambler.ru,sport.rambler.ru#?#div:-abp-has(> div > [data-rnet])
+autorambler.ru,rambler.ru,sport.rambler.ru#?#div:-abp-has(> div > [data-rnet])
 mail.rambler.ru##div[class*="Ad-direct"]
 lenta.ru##div[class="board _winline"]
 mail.rambler.ru##div[class^="Ad-root"]
