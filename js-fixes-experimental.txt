@@ -6,9 +6,9 @@
 !
 ! --- uBO scriptlets injection rules & other ---
 *$image,redirect-rule=32x32.png,domain=ukr.net
-*$script,redirect-rule=noop.js,domain=all-episodes.club|otzovik.com|ukr.net
+*$script,redirect-rule=noopjs,domain=all-episodes.club|otzovik.com|ukr.net
 *$subdocument,redirect-rule=noopframe,domain=ukr.net
-*$xmlhttprequest,redirect-rule=noop.js,domain=all-episodes.club|otzovik.com
+*$xmlhttprequest,redirect-rule=noopjs,domain=all-episodes.club|otzovik.com
 .pronpic.org^$script,domain=pronpic.org
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnneedtv.ru,cdnpotok.com,cdntvpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,s7yours.com,sbautumn.com,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport365hd.net,sport7.biz,sportbar.biz,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,spotless365.net,stream365.pro,telecdn.net,tv-assia.org,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
@@ -345,6 +345,7 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||yandex.ru/ads/system/context.js|$important,script,domain=playground.ru
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=|,domain=1news.com.ua|7days.ru|factor.ua|gamasexual.com|gamasexual.ru|go.mail.ru|gor-master.ru|igromania.ru|kanobu.ru|segodnya.ua|sledcom.ru|sport-express.ru|u24.ua|xn--b1ats.xn--80asehdb
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.ru&widgetid=1$subdocument,badfilter,domain=3dnews.ru
+||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|eda.ru|gazeta.ru|lenta.ru|letidor.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
 ~1yar.tv,bonus-tv.ru,eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
