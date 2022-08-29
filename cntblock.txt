@@ -1294,6 +1294,9 @@ $removeparam=fref
 $removeparam=frommail,domain=mail.ru|sportmail.ru
 $removeparam=gclid
 $removeparam=gtm
+$removeparam=ila_camaign
+$removeparam=ila_context
+$removeparam=ila_location
 $removeparam=irclickid
 $removeparam=irgwc
 $removeparam=mt_click_id
@@ -1356,6 +1359,7 @@ $removeparam=ysclid
 ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru
 ?from=tabbar$document,removeparam=|from,domain=yandex.*
 ?from=yanews$document,removeparam=|
+?media&ila_camaign=$document,removeparam=media
 ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*
 ?pokupki=$document,removeparam=|,domain=market.yandex.*
 ?previewToken=$document,removeparam=|,domain=maximonline.ru
@@ -1382,6 +1386,7 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||finance.ua/*?mpl=$document,removeparam=|,domain=finance.ua
 ||imdb.com/*pf_rd_$document,removeparam=|pf_rd_,domain=imdb.com
 ||imdb.com/*ref_=$document,removeparam=|ref,domain=imdb.com
+||livejournal.com/*.html?media|$removeparam=|media,domain=livejournal.com
 ||mail.ru^*exp_id=$document,removeparam=|,domain=mail.ru
 ||my.mail.ru/apps$document,removeparam=ref,domain=my.mail.ru
 ||sportmail.ru^*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
