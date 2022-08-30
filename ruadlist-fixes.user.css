@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220828.1302
+@version        0.20220830.1452
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -922,6 +922,15 @@
         padding-top: 0 !important;
         padding-bottom: 0 !important;
         background-image: none !important
+    }
+}
+
+@-moz-document domain("animego.space") {
+    body {
+        background-image: none !important
+    }
+    .wrapper {
+        top: 0 !important
     }
 }
 
