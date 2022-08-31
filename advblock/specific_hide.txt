@@ -5335,11 +5335,11 @@ divxplayer.ml,haes.tech,hcdn.online,hqq.tv,metaverseid.tk,player.cvary.org##[hre
 forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=50761"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
 virpl.ru##[id$="-banner"]
 xyu.tv##[id$="AdsAfterVideo"]
+sm.news##[id*="-I-"]
 kakprosto.ru##[id*="-advice-block"]
 kakprosto.ru##[id*="-offers-block"]
 cools.biz,cools.dj,get-tune.cc,intermusic.name,iplayer.info,ipleer.fm,k1news.ru,kolesa.kz,market4game.ru,mp3cc.biz,mp3iq.com,vmuzice.me,yellowpages.uz##[id*="Banner"]
 espreso.tv##[id*="ScriptRoot"]:not(.news-block-magick)
-sm.news##[id*="_R-"]
 liveinternet.ru,livejournal.com##[id*="_R-A-"]
 reshuege.ru,reshuoge.ru,reshuvpr.ru,sdamgia.ru##[id*="_R-A-"]:empty
 liveangarsk.ru##[id*="abovecontent"]
@@ -6281,7 +6281,7 @@ gre4ka.info#?#article > div[style]:-abp-has(> div:-abp-contains(Реклама))
 24boxing.com.ua#?#article > h3:-abp-contains(/реклама/i) + ul
 tengrinews.kz#?#article > p:-abp-has(> a[href^="https://t.me/"])
 kavkaz-uzel.eu#?#article div:-abp-contains(/^Реклама$/)
-sm.news#?#article div:-abp-has(> [id*="_R-"])
+sm.news#?#article div:-abp-has(> [id*="-I-"])
 glavpost.com##article div[style*="#EFEFEF"]
 4pda.to#?#article ~ article:-abp-has(> [class] > div:only-child > img:first-child)
 fontanka.ru##article ~ div + div[class] ~ div
