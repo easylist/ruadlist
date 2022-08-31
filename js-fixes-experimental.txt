@@ -11,6 +11,7 @@
 *$xmlhttprequest,redirect-rule=noopjs,domain=all-episodes.club|otzovik.com
 .pronpic.org^$script,domain=pronpic.org
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+/sm\.news/[^\s]{80,}/$xmlhttprequest,badfilter,domain=sm.news
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnneedtv.ru,cdnpotok.com,cdntvpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,s7yours.com,sbautumn.com,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport365hd.net,sport7.biz,sportbar.biz,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,spotless365.net,stream365.pro,telecdn.net,tv-assia.org,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,www.fontanka.ru##+js(no-xhr-if, /hits/event/, method:POST)
@@ -23,7 +24,7 @@
 24smi.org##+js(cookie-remover, isab)
 2gis.ru##div[style^="display:"][style*="flex;"][style*="height:"][style*="100%;"][style*="overflow:"][style*="hidden;"][style*="width:"] div[style^="position: absolute;"] div[class]:matches-css(background-color: rgb(255, 250, 235))
 3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
-3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,drive2.ru,e1.ru,sports.ru,www.goha.ru##+js(abort-on-property-read, Ya)
+3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,drive2.ru,e1.ru,sm.news,sports.ru,www.goha.ru##+js(abort-on-property-read, Ya)
 3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
@@ -257,6 +258,8 @@ sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /pobeda/)
 sibnet.ru##+js(no-setTimeout-if, Adblock)
 silvercube12.xyz##+js(window-close-if, /dispatch)
 skam.online##+js(abort-current-script, document.getElementById, composedPath)
+sm.news##+js(abort-on-property-read, jsfile)
+sm.news##+js(no-xhr-if, method:GET)
 sm.news,spletnik.ru,web-shpargalka.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 smotrim.ru##.dialog-wrapper
 softportal.com##+js(abort-on-property-read, window.block)
