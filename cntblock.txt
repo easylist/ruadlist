@@ -1074,7 +1074,7 @@ pb.wtf,piratbit.org,piratbit.pw,piratbit.top,vidak.icu#?#.table > tbody[id^="pos
 auto.ru##[class*="_direct_view_gallery"]
 tass.ru##[class^="Footer_liveinternet"]
 auto.*#@#.ImageGalleryFullscreenVertical__ad
-autorambler.*,rambler.*,~www.rambler.*#?#.pub_300x250.text-ad-links.adbanner.ad.text_ad.pub_728x90.text-ad.nav-ad.text-ads.textAd.ad-banner.text_ads.pub_300x250m:style(display: block !important)
+autorambler.*,rambler.*,~www.rambler.*##.pub_300x250.text-ad-links.adbanner.ad.text_ad.pub_728x90.text-ad.nav-ad.text-ads.textAd.ad-banner.text_ads.pub_300x250m:style(display: block !important)
 auto.ru#?#div:matches-css-before(content: /Реклама/)
 auto.ru#?#div:matches-css-before(content: /Реклама/) ~ div
 inoreader.com##div[id^="leaderboard_ad"] > *
@@ -1088,12 +1088,12 @@ nova.rambler.*##section > article[class^="DirectNew"]
 nova.rambler.*#?#+js(abort-on-property-read, Object.prototype.AdvManager)
 only-paper.*#@#.adbanner
 rambler.*##[data-blocks="rec_block"]
+razlozhi.*##div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"] > div > div[style*="height:"][style*="width:"]:style(width: 100% !important)
+razlozhi.*##div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"] > div[class][style^="top: "] ~ div[class]:not([style]):style(right: -100% !important)
+razlozhi.*##div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"] > div[style*="px;"]:style(width: 100% !important)
+razlozhi.*##div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"]:style(width: 100% !important)
 razlozhi.*#?#+js(abort-on-property-read, yaContextCb)
 razlozhi.*#?#+js(no-setTimeout-if, X-Set-Adblock)
-razlozhi.*#?#div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"] > div > div[style*="height:"][style*="width:"]:style(width: 100% !important)
-razlozhi.*#?#div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"] > div[class][style^="top: "] ~ div[class]:not([style]):style(right: -100% !important)
-razlozhi.*#?#div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"] > div[style*="px;"]:style(width: 100% !important)
-razlozhi.*#?#div[class][style*="width:"][style*="height"][style*="/themes/default/bg.png"]:style(width: 100% !important)
 rp5.*#?#+js(setTimeout-defuser, xvb)
 top100.rambler.*##body > div:not([id])[style="position: absolute; z-index: 10000;"]
 zannn.top#@?#:not(this-is-a-malicious-site)
@@ -1120,8 +1120,8 @@ disk.yandex.*,mail.yandex.*##.Base-Onboarding
 docs.yandex.*##a[href^="https://360.yandex."][href$="/?from=documents-header-360"]
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
+mail.yandex.*##html.with-widgets .mail-App-Footer-Group_reverse > .mail-App-Footer-Item > [href^="https://yandex."]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
 mail.yandex.*#?#+js(remove-attr, data-link-id, a, stay)
-mail.yandex.*#?#html.with-widgets .mail-App-Footer-Group_reverse > .mail-App-Footer-Item > [href^="https://yandex."]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
 mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*#?#+js(set-constant, Daria.AdvPresenter._config, {})
 music.yandex.*#?#+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column
@@ -1214,8 +1214,8 @@ zen.yandex.*##div[class*="yandex-direct"]
 @@||yastatic.net/daas/atom.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/pcode/adfox/header-bidding.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/pcode/adfox/loader.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-~yandex.net,yandex.*#?#body.b-page > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
-~yandex.net,yandex.*#?#body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
+~yandex.net,yandex.*##body.b-page > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
+~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
 !
 ! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
@@ -1263,8 +1263,8 @@ zen.yandex.*##div[class*="yandex-direct"]
 ! реклама в шапке форума
 4pda.*##html:not([style]) tbody > tr[valign="top"] > td[width*="20"] + td[class]
 ! реклама при скачивании на форуме
+4pda.*###lbOverlay:style(background: none !important)
 4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
-4pda.*#?##lbOverlay:style(background: none !important)
 ! реклама в QMS и мобильной версии сайта
 4pda.*##.menu-main-mobile > [style="display:none;"]
 !
