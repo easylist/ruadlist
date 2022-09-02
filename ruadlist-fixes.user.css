@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220901.2126
+@version        0.20220902.1445
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -135,7 +135,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("3ivi.com"),
-  domain("rd8j1em1zxge.org"),
   domain("aif.ru"),
   domain("ain.ua"),
   domain("bestivi.com"),
@@ -219,6 +218,7 @@
   domain("otxataba.net"),
   domain("playtor.tv"),
   domain("pure-t.ru"),
+  domain("rd8j1em1zxge.org"),
   domain("rehdrezka.com"),
   domain("rezka.ag"),
   domain("rezkery.com"),
@@ -244,7 +244,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("3ivi.com"),
-  domain("rd8j1em1zxge.org"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
   domain("baskino1.top"),
@@ -345,6 +344,7 @@
   domain("nnmclub.ro"),
   domain("nnmclub.to"),
   domain("pure-t.ru"),
+  domain("rd8j1em1zxge.org"),
   domain("rehdrezka.com"),
   domain("rezka.ag"),
   domain("rezkery.com"),
@@ -1318,6 +1318,18 @@
     }
     html > body > * {
         pointer-events: auto !important
+    }
+}
+
+@-moz-document domain("brestcity.com") {
+    #content-padding > * {
+        color: black !important
+    }
+    #content-padding {
+        color: white !important
+    }
+    #content-padding > #content ~ hr ~ * {
+        display: none !important
     }
 }
 
