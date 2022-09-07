@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220907.2019
+@version        0.20220908.108
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4177,6 +4177,10 @@
 }
 
 @-moz-document domain("overclockers.ru") {
+    a.over-hiddenlink-html[href*="citilink.ru"] {
+        pointer-events: none !important;
+        color: inherit !important
+    }
     .an-link-list, .main-wrap > .grid.ui > .sixteen.wide.column.container-block, 
     .material-inline-an {
         position: fixed !important;
