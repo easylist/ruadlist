@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220906.2311
+@version        0.20220907.2019
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -927,8 +927,8 @@
   domain("anidub.best"),
   domain("anilibria.life"),
   domain("animebest.tv"),
-  domain("animego.life"),
   domain("animedia.life"),
+  domain("animego.life"),
   domain("animevost.tv"),
   domain("kinogo-net.la"),
   domain("senpai.cc"),
@@ -5683,7 +5683,7 @@
 }
 
 @-moz-document domain("yandex.ru") {
-    .stack div[class^="modal-R-A"] {
+    .stack .sticky-banner-container, .stack div[class^="modal-R-A"] {
         display: none !important
     }
     div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section > div:first-child + div div ~ div ~ div ~ div > div {
