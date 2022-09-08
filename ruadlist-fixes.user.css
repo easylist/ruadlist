@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220908.1241
+@version        0.20220908.2223
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -135,7 +135,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("3ivi.com"),
-  domain("hdrezkawer.org"),
   domain("aif.ru"),
   domain("ain.ua"),
   domain("bestivi.com"),
@@ -194,6 +193,7 @@
   domain("hdrezkaqwe.org"),
   domain("hdrezkarty.org"),
   domain("hdrezkasdf.org"),
+  domain("hdrezkawer.org"),
   domain("hdrezkaxvb323.net"),
   domain("hdrezkaygzp2t.net"),
   domain("hdrezkayou.com"),
@@ -249,7 +249,6 @@
   domain("24video.adult"),
   domain("24video.in"),
   domain("3ivi.com"),
-  domain("hdrezkawer.org"),
   domain("baskino-2021.uno"),
   domain("baskino.me"),
   domain("baskino1.top"),
@@ -320,6 +319,7 @@
   domain("hdrezkaqwe.org"),
   domain("hdrezkarty.org"),
   domain("hdrezkasdf.org"),
+  domain("hdrezkawer.org"),
   domain("hdrezkaxvb323.net"),
   domain("hdrezkaygzp2t.net"),
   domain("hdrezkayou.com"),
@@ -396,7 +396,6 @@
   domain("24video.in"),
   domain("2pay-day.ru"),
   domain("3ivi.com"),
-  domain("hdrezkawer.org"),
   domain("4video.adult"),
   domain("aif.ru"),
   domain("ain.ua"),
@@ -456,6 +455,7 @@
   domain("hdrezkaqwe.org"),
   domain("hdrezkarty.org"),
   domain("hdrezkasdf.org"),
+  domain("hdrezkawer.org"),
   domain("hdrezkaxvb323.net"),
   domain("hdrezkaygzp2t.net"),
   domain("hdrezkayou.com"),
@@ -4553,20 +4553,9 @@
     }
 }
 
-@-moz-document
-  domain("reshuege.ru"),
-  domain("reshuoge.ru"),
-  domain("reshuvpr.ru"),
-  domain("sdamgia.ru") {
-    #old_school > .App > div > [color="red"], div.no_dark, 
-    div[style*="height:"][style*="width:"][style*="margin: 0 auto;"], 
-    div[style^="width: fit-content"] > a > img {
+@-moz-document domain("reshuct.by") {
+    div.no_dark {
         display: none !important
-    }
-    .menu[role="navigation"] div[style*="height:"], 
-    aside > div[class]:first-child, aside > div[class]:first-child > div, 
-    aside center > div[style*="height:"] {
-        height: auto !important
     }
     main > div[class*=" "] {
         min-height: auto !important;
@@ -4672,6 +4661,23 @@
     }
     html:not(#id) > body:not(#id) .body--brranding {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("sdamgia.ru") {
+    #old_school > .App > div > [color="red"], div.no_dark, 
+    div[style*="height:"][style*="width:"][style*="margin:"][style*="auto;"] > *  > a > img, 
+    div[style*="width: fit-content"] > a > img {
+        display: none !important
+    }
+    .menu[role="navigation"] div[style*="height:"], 
+    aside > div[class]:first-child, aside > div[class]:first-child > div, 
+    aside center > div[style*="height:"] {
+        height: auto !important
+    }
+    main > div[class*=" "] {
+        min-height: auto !important;
+        height: auto !important
     }
 }
 
