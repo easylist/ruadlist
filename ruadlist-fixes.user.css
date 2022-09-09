@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220908.2223
+@version        0.20220909.1952
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1933,32 +1933,32 @@
     .c-dv-container, .c-pager + div[class]:last-child, .dv-post-header, 
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child + div[class] ~ div:not(:last-child), 
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"] + div, 
-    .offer[itemtype*="http://schema.org/Product"] + div, 
-    .offer[itemtype*="http://schema.org/Product"] + div + div, 
+    .offer[itemtype*="://schema.org/Product"] + div, 
+    .offer[itemtype*="://schema.org/Product"] + div + div, 
     div[class$="content"] ~ div + div[class*=" "][class$="--mh"], 
     div[class$="content"] ~ div[data-role][data-target] + div, 
     div[class*="--content article "] + div, 
     div[class*="--content article "] + div + div:not(:last-child), 
     div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class], 
-    div[itemtype*="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class], 
-    div[itemtype*="http://schema.org/Product"] ~ div:last-child > div:first-child + div[class], 
-    div[itemtype*="http://schema.org/Review"] ~ div:last-child > div:first-child + div[class] {
+    div[itemtype*="://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class], 
+    div[itemtype*="://schema.org/Product"] ~ div:last-child > div:first-child + div[class], 
+    div[itemtype*="://schema.org/Review"] ~ div:last-child > div:first-child + div[class] {
         display: none !important
     }
     .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"], 
     div[class*="--content article "] + div ~ div:last-child > div:first-child:not(:only-child), 
-    div[itemtype*="http://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child), 
-    div[itemtype*="http://schema.org/Product"] ~ div:last-child > div:first-child:not(:only-child), 
-    div[itemtype*="http://schema.org/Review"] ~ div:last-child > div:first-child:not(:only-child) {
+    div[itemtype*="://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child), 
+    div[itemtype*="://schema.org/Product"] ~ div:last-child > div:first-child:not(:only-child), 
+    div[itemtype*="://schema.org/Review"] ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
     }
     .js-page > div[class$="-header"] + div[class]:last-child > div:first-child:not([class*="column"]) + div:last-child {
         min-height: 0 !important;
         box-shadow: unset !important
     }
-    div[itemtype*="http://schema.org/BlogPosting"] ~ div:not(:last-child), 
-    div[itemtype*="http://schema.org/Product"] ~ div:not(:last-child), 
-    div[itemtype*="http://schema.org/Review"] ~ div:not(:last-child) {
+    div[itemtype*="://schema.org/BlogPosting"] ~ div:not(:last-child), 
+    div[itemtype*="://schema.org/Product"] ~ div:not(:last-child), 
+    div[itemtype*="://schema.org/Review"] ~ div:not(:last-child) {
         min-height: 0 !important;
         padding-top: unset !important;
         padding-bottom: unset !important;
@@ -4553,7 +4553,9 @@
     }
 }
 
-@-moz-document domain("reshuct.by") {
+@-moz-document
+  domain("reshuct.by"),
+  domain("sdamgia.ru") {
     div.no_dark {
         display: none !important
     }
@@ -4665,7 +4667,7 @@
 }
 
 @-moz-document domain("sdamgia.ru") {
-    #old_school > .App > div > [color="red"], div.no_dark, 
+    #old_school > .App > div > [color="red"], 
     div[style*="height:"][style*="width:"][style*="margin:"][style*="auto;"] > *  > a > img, 
     div[style*="width: fit-content"] > a > img {
         display: none !important
@@ -4673,10 +4675,6 @@
     .menu[role="navigation"] div[style*="height:"], 
     aside > div[class]:first-child, aside > div[class]:first-child > div, 
     aside center > div[style*="height:"] {
-        height: auto !important
-    }
-    main > div[class*=" "] {
-        min-height: auto !important;
         height: auto !important
     }
 }
