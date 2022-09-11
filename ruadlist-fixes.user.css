@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220911.1043
+@version        0.20220911.2202
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2014,6 +2014,29 @@
     }
     body {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("dzen.ru") {
+    div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
+    html._browser-name_firefox div[class^="dzen-desktop__dzenDesktop-"] > div:not([id]):not([class]) {
+        display: none !important
+    }
+    html._browser-name_firefox > body[style="overflow: hidden;"] {
+        overflow-y: unset !important
+    }
+}
+
+@-moz-document
+  domain("dzen.ru"),
+  domain("zen.yandex.by"),
+  domain("zen.yandex.kz"),
+  domain("zen.yandex.ru"),
+  domain("zen.yandex.uz") {
+    .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
+    .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
+    div[class*="video-viewer-sidebar__ad"] {
+        display: none !important
     }
 }
 
@@ -5742,19 +5765,6 @@
 @-moz-document domain("zaycev.online") {
     .content:not(#id) {
         margin-top: 80px !important
-    }
-}
-
-@-moz-document
-  domain("zen.yandex.by"),
-  domain("zen.yandex.kz"),
-  domain("zen.yandex.ru"),
-  domain("zen.yandex.uz"),
-  domain("dzen.ru") {
-    .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
-    .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
-    div[class*="video-viewer-sidebar__ad"] {
-        display: none !important
     }
 }
 
