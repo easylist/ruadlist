@@ -1043,7 +1043,6 @@ mail.ukr.net#?#+js(remove-attr, data-safe-proxy-url, a, stay)
 rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org#?#+js(set-constant, BB.disableRefLinks, true)
 ivi.ru#?#+js(set-constant, Object.prototype.canShowMoreAds, noopFunc)
 ivi.ru#?#+js(set-constant, Object.prototype.hasAdv, noopFunc)
-frontend.vh.yandex.ru,widgets.kinopoisk.ru,yastatic.net#?#+js(set-constant, Object.prototype.hasPreroll, null)
 rambler.ru##._3S8wP > div:first-child + div
 inoreader.com#@#.ad_title
 inoreader.com##.ad_title > a
@@ -1079,6 +1078,7 @@ autorambler.*,rambler.*,~www.rambler.*##.pub_300x250.text-ad-links.adbanner.ad.t
 auto.ru#?#div:matches-css-before(content: /Реклама/)
 auto.ru#?#div:matches-css-before(content: /Реклама/) ~ div
 inoreader.com##div[id^="leaderboard_ad"] > *
+dzen.*,frontend.vh.yandex.ru,widgets.kinopoisk.ru,yastatic.net#?#+js(set-constant, Object.prototype.hasPreroll, null)
 radioprofusion.com##footer > .counter
 horoscopes.rambler.*#?#+js(set-constant, Object.prototype.needShowAlicePopup, null)
 lostfilm.tv,lostfilm.tw##img[width="1"][height="1"]
@@ -1119,6 +1119,10 @@ zannn.top#@?#this-is-a-malicious-site
 @@://yandex.*/news|$generichide
 disk.yandex.*,mail.yandex.*##.Base-Onboarding
 docs.yandex.*##a[href^="https://360.yandex."][href$="/?from=documents-header-360"]
+dzen.*##.climate-calendar-container__adv-wide
+dzen.*##.content__adv
+dzen.*##.feed__item > article[class^="card-wrapper"][class*="  "] > div[class*="_theme_"]:not([style])
+dzen.*,~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
 mail.yandex.*##html.with-widgets .mail-App-Footer-Group_reverse > .mail-App-Footer-Item > [href^="https://yandex."]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
@@ -1170,7 +1174,6 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ~yandex.net,mail.yandex.*,yandex.*##div[class^="DisableAdsButton"]
 ~yandex.net,yandex.*#?#+js(abort-on-property-read, yaads.renderBlock)
 ~yandex.net,yandex.*#?#+js(abort-on-property-read, yaads.renderWidget)
-~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
 ~yandex.net,yandex.*#?#+js(remove-attr, data-counter, .serp-list a)
 ~yandex.net,yandex.*#?#+js(set-constant, __AAB__, false)
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype._getAdConfig, noopFunc)
@@ -1348,7 +1351,7 @@ $removeparam=ysclid
 /?from_block=$document,removeparam=from_block,domain=www.kinopoisk.ru
 /?gm&$document,removeparam=gm,domain=116.ru|14.ru|161.ru|164.ru|178.ru|26.ru|29.ru|35.ru|43.ru|45.ru|48.ru|51.ru|53.ru|56.ru|59.ru|60.ru|62.ru|63.ru|68.ru|71.ru|72.ru|74.ru|76.ru|86.ru|89.ru|93.ru|chita.ru|e1.ru|ircity.ru|mgorsk.ru|msk1.ru|ngs.ru|ngs22.ru|ngs24.ru|ngs42.ru|ngs55.ru|ngs70.ru|nn.ru|proizhevsk.ru|provoronezh.ru|sochi1.ru|sterlitamak1.ru|tolyatty.ru|ufa1.ru|v1.ru
 /?readmore$document,xmlhttprequest,removeparam=|,domain=rambler.ru
-/story/*?lang=$document,removeparam=|,domain=yandex.*
+/story/*?lang=$document,removeparam=|,domain=dzen.*|yandex.*
 ://aliexpress.*.htm?spm=$document,removeparam=|,domain=aliexpress.*
 =ukraine_news&utm_$document,removeparam=|utm_
 ?*r_audience=$document,removeparam=|,domain=ria.com
@@ -1377,7 +1380,7 @@ aff_fcid=$document,removeparam=|,domain=aliexpress.*|~campaign.aliexpress.com
 algo_pvid=$document,removeparam=|,domain=aliexpress.*
 block_click=$removeparam=block_click,domain=rambler.ru
 fbclid=$document,removeparam=fbclid
-from=*_portal&lang=$document,removeparam=|,domain=yandex.*
+from=*_portal&lang=$document,removeparam=|,domain=dzen.*|yandex.*
 mt_click$document,removeparam=|,domain=mail.ru|ok.ru
 mt_sub$document,removeparam=|,domain=mail.ru|ok.ru
 smotri_id=$document,removeparam=|smotri_id,domain=mail.ru
