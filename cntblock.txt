@@ -1126,7 +1126,7 @@ dzen.*##.feed__item > article[class^="card-wrapper"][class*="  "] > div[class*="
 dzen.*,~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
-mail.yandex.*##html.with-widgets .mail-App-Footer-Group_reverse > .mail-App-Footer-Item > [href^="https://yandex."]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
+mail.yandex.*##html.with-widgets .mail-App-Footer-Group_reverse > .mail-App-Footer-Item > [href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
 mail.yandex.*#?#+js(remove-attr, data-link-id, a, stay)
 mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*#?#+js(set-constant, Daria.AdvPresenter._config, {})
 music.yandex.*#?#+js(set-constant, Object.prototype.showBranding, noopFunc)
