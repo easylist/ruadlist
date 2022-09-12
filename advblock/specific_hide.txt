@@ -743,7 +743,7 @@ kinosezon.net###page > #overlay
 kv.by###page > .region-secondary-content
 carsweek.ru###page > :empty
 allunix.ru###page > center
-brestcity.com###page > div > a[target="_blank"] > img
+brestcity.com###page > div > a:not([href^="/"]):not([href*="://brestcity.com/"])
 praetorians.ws###page > noindex a[href][target="_blank"]:not([href^="http://praetorians.ws/forum/"])
 forum.baginya.org###page-body > .bg2.post:not([id])
 zx-pk.com#?##page-body > .post:-abp-has([class="username-coloured"]:-abp-contains(Advertiser))
