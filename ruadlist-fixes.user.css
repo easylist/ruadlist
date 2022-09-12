@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220912.1306
+@version        0.20220912.2341
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2018,12 +2018,24 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    div[class^="dzen-desktop__dzenDesktop-"] > div:not([id]):not([class]), 
-    div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"] {
-        display: none !important
-    }
     body[style="overflow: hidden;"] {
         overflow-y: unset !important
+    }
+}
+
+@-moz-document
+  domain("dzen.ru"),
+  domain("yandex.by"),
+  domain("yandex.kz"),
+  domain("yandex.ru"),
+  domain("yandex.uz") {
+    .climate-calendar__cell {
+        width: 13.8% !important;
+        -webkit-flex-basis: 13.8% !important;
+        flex-basis: 13.8% !important
+    }
+    .b-page_type_maps div[class$="__content"] > [class$="__ad"] > div {
+        width: unset !important
     }
 }
 
@@ -5706,14 +5718,6 @@
     body > .services-new__more-popup {
         top: 23px !important
     }
-    .climate-calendar__cell {
-        width: 13.8% !important;
-        -webkit-flex-basis: 13.8% !important;
-        flex-basis: 13.8% !important
-    }
-    .b-page_type_maps div[class$="__content"] > [class$="__ad"] > div {
-        width: unset !important
-    }
 }
 
 @-moz-document domain("yandex.ru") {
@@ -5765,6 +5769,17 @@
 @-moz-document domain("zaycev.online") {
     .content:not(#id) {
         margin-top: 80px !important
+    }
+}
+
+@-moz-document
+  domain("zen.yandex.by"),
+  domain("zen.yandex.kz"),
+  domain("zen.yandex.ru"),
+  domain("zen.yandex.uz") {
+    div[id^="R-A-"] .video-card-stub-view > div:empty, 
+    div[id^="R-A-"] .video-card-stub-view__content > [class]:empty {
+        display: none !important
     }
 }
 

@@ -1120,9 +1120,15 @@ zannn.top#@?#this-is-a-malicious-site
 @@://yandex.*/news|$generichide
 disk.yandex.*,mail.yandex.*##.Base-Onboarding
 docs.yandex.*##a[href^="https://360.yandex."][href$="/?from=documents-header-360"]
+dzen.*##._is-header-after-player > div:not([id]):not([class])
 dzen.*##.climate-calendar-container__adv-wide
 dzen.*##.content__adv
 dzen.*##.feed__item > article[class^="card-wrapper"][class*="  "] > div[class*="_theme_"]:not([style])
+dzen.*##.panel-loadable-view__feed > div[class*="-video-"] ~ div:not([class*="-video-"]):not(:last-child)
+dzen.*##div[class*="-sidebar__ad"]
+dzen.*##div[id*="page"] > div > div + div[class*="__"] > [class*="__row"] > div[class*="__col"]:last-child
+dzen.*##section ~ .news-top-rubric-heading > h1:only-child:if-not(> a)
+dzen.*,yandex.*##.mg-grid__col div[class*="_type_native"]
 dzen.*,~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
@@ -1136,7 +1142,6 @@ yandex.*###bk-container
 yandex.*##.b-statcounter + div[class] > div[id][class]
 yandex.*##.card-rtb-one-column-stub
 yandex.*##.dist-popup
-yandex.*##.mg-grid__col > div[class*="_type_native"]
 yandex.*##.mini-suggest__item > a[href^="http://"]
 yandex.*##.mini-suggest__item:has(> a[href^="http://"]):remove()
 yandex.*##.PSHeaderLogo360 > a[href^="https://360.yandex."]:style(pointer-events: none !important)
@@ -1203,24 +1208,24 @@ zen.yandex.*##div[class*="yandex-direct"]
 ~yandex.net,yandex.*#?#+js(set-constant, home.export.adb, {})
 !yandex.ru##+js(no-setTimeout-if, b-spec-adv)
 !yandex.ru##+js(no-setTimeout-if, antiadb, home)
-@@||an.yandex.ru/jserr/1|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/jserr/1|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/mapuid/tnscounter/?from=yan_oo-rtb-direct|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||an.yandex.ru/mapuid/yandex/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/mapuid/yandex/$image,domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/meta/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/meta/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||an.yandex.ru/partner-code-bundles/*.js|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/partner-code-bundles/*.js|$xmlhttprequest,domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/resource/spacer.gif|$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||an.yandex.ru/system/context.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/system/context.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||yandex.ru/ads/system/context.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||yandex.ru/ads/system/header-bidding.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yandex.ru/ads/system/context.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yandex.ru/ads/system/header-bidding.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/daas/atom.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||yastatic.net/pcode/adfox/header-bidding.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||yastatic.net/pcode/adfox/loader.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yastatic.net/pcode/adfox/header-bidding.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yastatic.net/pcode/adfox/loader.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+dzen.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
 ~yandex.net,yandex.*##body.b-page > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
-~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
 !
 ! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
