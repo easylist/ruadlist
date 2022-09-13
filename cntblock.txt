@@ -1120,6 +1120,7 @@ zannn.top#@?#this-is-a-malicious-site
 @@://yandex.*/news|$generichide
 disk.yandex.*,mail.yandex.*##.Base-Onboarding
 docs.yandex.*##a[href^="https://360.yandex."][href$="/?from=documents-header-360"]
+dzen.*##+js(set-constant, Object.prototype.shouldShowServiceChangesPopup, undefined)
 dzen.*##._is-header-after-player > div:not([id]):not([class])
 dzen.*##.climate-calendar-container__adv-wide
 dzen.*##.content__adv
