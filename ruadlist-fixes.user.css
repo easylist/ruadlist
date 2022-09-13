@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220913.10
+@version        0.20220913.1325
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4703,7 +4703,8 @@
 
 @-moz-document domain("sdamgia.ru") {
     #old_school > .App > div > [color="red"], 
-    a[href*="://reshuege.ru/"] > img[title] {
+    div[style*="width:"][style*="fit-content"] > a > img, 
+    div[style*="width:"][style*="margin:"][style*="auto;"] > *  > a > img {
         display: none !important
     }
     .menu[role="navigation"] div[style*="height:"], 
