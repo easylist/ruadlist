@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220913.1325
+@version        0.20220913.1440
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5572,6 +5572,13 @@
     }
     .social-open {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("www.onliner.by") {
+    .adfox-banner-background ~ .layout-container {
+        max-width: unset !important;
+        top: unset !important
     }
 }
 
