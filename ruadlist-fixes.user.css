@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220913.1440
+@version        0.20220913.1527
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2018,6 +2018,10 @@
 }
 
 @-moz-document domain("dzen.ru") {
+    div[class^="dzen-desktop__dzenDesktop-"] > div:not([id]):not([class]), 
+    div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"] {
+        display: none !important
+    }
     body[style="overflow: hidden;"] {
         overflow-y: unset !important
     }
