@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220913.2310
+@version        0.20220914.2057
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -928,12 +928,12 @@
 
 @-moz-document
   domain("anidub.best"),
-  domain("anistar.su"),
   domain("anilibria.life"),
   domain("animebest.tv"),
   domain("animedia.life"),
   domain("animego.life"),
   domain("animevost.tv"),
+  domain("anistar.su"),
   domain("kinogo-net.la"),
   domain("senpai.cc"),
   domain("yummyanime.life") {
@@ -2293,8 +2293,9 @@
   domain("flashscore.com.ua"),
   domain("flashscore.ru.com"),
   domain("flashscorekz.com"),
-  domain("livescore.in") {
-    [data-bookmaker-id], [onclick*="bookmaker"] {
+  domain("livescore.in"),
+  domain("soccerstand.com") {
+    [data-bookmaker-id] {
         pointer-events: none !important
     }
 }
