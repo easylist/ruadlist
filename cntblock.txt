@@ -1133,6 +1133,7 @@ dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3
 dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3n"]:first-child > div:not([class]) > div[id]:not([class]):first-child
 dzen.*##div[id*="page"] > div > div + div[class*="__"] > [class*="__row"] > div[class*="__col"]:last-child
 dzen.*##section ~ .news-top-rubric-heading > h1:only-child:if-not(> a)
+dzen.*#?#div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
 dzen.*,yandex.*##.mg-grid__col div[class*="_type_native"]
 dzen.*,~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.getAutoplay, noopFunc)
@@ -1170,7 +1171,6 @@ yandex.*#?#.feed__row[id^="zen-row-"] .feed__item-wrap:-abp-has(> .feed__item [c
 yandex.*#?#.serp-list > .serp-item:-abp-has(> .bno .serp-adv__counter)
 yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-event-required])
 yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > .root123)
-yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
 ||market.yandex.ru/widget/$empty,domain=zen.yandex.by|zen.yandex.kz|zen.yandex.ru|zen.yandex.uz
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
