@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220916.1046
+@version        0.20220916.1819
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3247,13 +3247,9 @@
     }
 }
 
-@-moz-document domain("kinokong.pro") {
-    #wrapper:not(#id) {
-        margin-top: 67px !important
-    }
-}
-
-@-moz-document domain("kinokrad.cc") {
+@-moz-document
+  domain("kinokong.pro"),
+  domain("kinokrad.cc") {
     #wrapper:not(#id) {
         margin-top: 67px !important
     }
@@ -5668,7 +5664,6 @@
     .home-arrow [data-bem*="yabrowser-promo"], .home-arrow__bottom, 
     .media-grid > [data-blockname="banner-slider"], 
     .serp-list .incut_type_direct, .sidebar-container .search-advert-badge, 
-    .sport-app__layout > .mg-grid__col:first-child + div:not(:last-child) > .mg-sticky, 
     .turbo-advert__loader, 
     body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
     body > .route-tip-view, 
