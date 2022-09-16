@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220915.1551
+@version        0.20220916.1046
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3248,6 +3248,12 @@
 }
 
 @-moz-document domain("kinokong.pro") {
+    #wrapper:not(#id) {
+        margin-top: 67px !important
+    }
+}
+
+@-moz-document domain("kinokrad.cc") {
     #wrapper:not(#id) {
         margin-top: 67px !important
     }
