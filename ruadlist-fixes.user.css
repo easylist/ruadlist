@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220917.1223
+@version        0.20220920.1716
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5447,6 +5447,13 @@
 @-moz-document domain("wtftime.ru") {
     body {
         background-color: #f1f3f6 !important
+    }
+}
+
+@-moz-document domain("www.1tv.ru") {
+    div[class^="Branding_container_"] {
+        margin-top: unset !important;
+        height: auto !important
     }
 }
 
