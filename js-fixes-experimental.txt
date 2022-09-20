@@ -96,6 +96,7 @@ dtf.ru,tjournal.ru,vc.ru##+js(remove-attr, data-video-play-mode)
 dynamo.kiev.ua##.video-scroll:remove()
 dynamo.kiev.ua,epravda.com.ua,football.ua,isport.ua,liga.net,pravda.com.ua,www.i.ua##+js(abort-current-inline-script, decodeURIComponent, getAdBlockStatus)
 dynamo.kiev.ua,epravda.com.ua,football.ua,isport.ua,liga.net,pravda.com.ua,www.i.ua##+js(abort-current-inline-script, document.querySelector, /banner/)
+dzen.ru,zen.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 eagleplatform.com##+js(set-constant, player.options.scroll, false)
 electric-house.ru,euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru,smolensk-auto.site,stroi-help.ru##+js(abort-current-inline-script, Math.floor, adregain_wall)
 electric-house.ru,stroi-help.ru##+js(abort-on-property-read, ads)
@@ -320,7 +321,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page"] .widgets[role="ma
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page"] .widgets[role="main"] div[class]:matches-css(margin-top: 24px)
 yapx.ru##+js(cookie-remover, /adblock_/)
 zaruba.fun##+js(abort-on-property-read, clickNS4)
-zen.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
 ||adbutton.net^$script,redirect=noopjs
