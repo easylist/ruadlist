@@ -2299,7 +2299,8 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="desktop-interview-modal"]
 dzen.ru##div[class*="short-modal-download__overlay"]
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.uz##div[class*="sidebar"] .no-ads
 dzen.ru##div[class^="dzen-header-desktop__header-"] + div:not(:last-child) > div[id]
-dzen.ru##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3n"]:first-child > div:first-child > div[id]:first-child
+dzen.ru##div[class^="loading-boundary-stacked-layout__content-"] > div:not([id]):not([class]):first-child > div[id]
+dzen.ru##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3n"] > div:first-child > div[id]:first-child
 market.yandex.by,market.yandex.kz,market.yandex.ru,market.yandex.uz##div[data-apiary-widget-name="@MarketNode/EntryPointPopup"]
 market.yandex.by,market.yandex.kz,market.yandex.ru,market.yandex.uz##div[data-apiary-widget-name="@marketplace/WebimChat"]
 market.yandex.by,market.yandex.kz,market.yandex.ru,market.yandex.uz,~pokupki.market.yandex.ru##div[data-apiary-widget-name^="@"][data-apiary-widget-name*="Promo"]:not([data-apiary-widget-name*="PromocodeForm"])

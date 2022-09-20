@@ -1130,8 +1130,10 @@ dzen.*##.panel-loadable-view__feed > div[class*="-video-"] ~ div:not([class*="-v
 dzen.*##div[class*=" adv_pos_index-"]
 dzen.*##div[class*="-sidebar__ad"]
 dzen.*##div[class^="dzen-header-desktop__header-"] + div:not(:last-child) > div[id]
-dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3n"]:first-child > div:first-child > div[id]:first-child
-dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3n"]:first-child > div:not([class]) > div[id]:first-child
+dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div:not([id]):not([class]) > div[id]
+dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div:not([id]):not([class]):first-child > div[id]
+dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3n"] > div:first-child > div[id]:first-child
+dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3n"] > div:not([class]) > div[id]:first-child
 dzen.*##div[id*="page"] > div > div + div[class*="__"] > [class*="__row"] > div[class*="__col"]:last-child
 dzen.*##section ~ .news-top-rubric-heading > h1:only-child:if-not(> a)
 dzen.*#?#div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
