@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220920.1716
+@version        0.20220921.2158
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4493,6 +4493,9 @@
         position: relative !important;
         top: unset !important
     }
+    .topline__branding__wrapper {
+        width: 0 !important
+    }
 }
 
 @-moz-document domain("radioclub.ua") {
@@ -4537,7 +4540,7 @@
         left: calc(50% - 55px) !important;
         cursor: pointer !important
     }
-    .l-sticky-right-parent, .popup_push, 
+    .fox-fallback, .l-sticky-right-parent, .popup_push, 
     body > [data-yandex-name="blockad_click"] {
         display: none !important
     }
@@ -4550,9 +4553,6 @@
     }
     .l-small-width-top-padding {
         padding-top: unset !important
-    }
-    .topline__branding__wrapper {
-        width: 0 !important
     }
 }
 
