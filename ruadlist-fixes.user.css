@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220921.2158
+@version        0.20220922.1243
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3282,12 +3282,6 @@
     }
 }
 
-@-moz-document domain("kinosezon.net") {
-    #subheader {
-        padding-top: 0 !important
-    }
-}
-
 @-moz-document domain("kinoteatr.ru") {
     html > body {
         background-image: none !important;
@@ -4655,6 +4649,12 @@
   domain("rp5.ua") {
     #FheaderContent > div[id]:not([class]) {
         min-height: 0 !important
+    }
+}
+
+@-moz-document domain("rserials.net") {
+    #subheader {
+        padding-top: 0 !important
     }
 }
 
