@@ -2316,6 +2316,11 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id^="BlogPost"][data-state*="/promo
 yandex.by,yandex.kz,yandex.ru,yandex.uz#?#header:-abp-has(.serp-user__registration-link) ~ .Modal .ImagesViewer-Container .Share-Item ~ [class]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##main.serp > .Root > div[class*="_layout_flat"]:not(.DistrPopup)
 yandex.*##.services-new__list > .services-new__list-item > .services-new__promo:remove()
+!#if ext_abp
+/^https?:\/\/dzen\.ru\/[^\s]{2100,}$/$script,domain=dzen.ru
+/^https?:\/\/strm\.yandex\.ru\/get\/[^\s]{1300,}$/$xmlhttprequest,domain=dzen.ru
+dzen.ru#?#.feed__item:-abp-has(> .card-wrapper > div:first-child + div + div:last-child > div > div > div > [class$="header-subtitle"])
+!#endif
 !
 ! - Youtube -
 youtube.com###alert-banner
