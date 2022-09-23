@@ -5607,7 +5607,6 @@ allboxing.ru##a[href*="://aff1xstavka.com/"]
 rutracker.ru,wuxiaworld.ru##a[href*="://ali.ski/"]
 anifors.ru,anigang.org,animecos.ru,animesos.ru,shinigami.tv##a[href*="://animedub.ru/"]
 argumenti.ru##a[href*="://argumenti.ru/ad_informer/click/"]
-fontanka.ru##a[href*="://auto.ru/"][title]
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[href*="://b.povarenok.ru/"]
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[href*="://beta.mediafort.ru/textclick.php?id="]
 rsload.net##a[href*="://bit.do/"]
@@ -5615,7 +5614,6 @@ programmersforum.ru#?#a[href*="://clck.ru/"] ~ *:-abp-contains(https://)
 kinobase.org##a[href*="://clcr.me/"]
 opennet.me,opennet.ru##a[href*="://click.opennet.ru/cgi-bin/"]
 newstudio.tv##a[href*="://cutter.li"]
-fontanka.ru##a[href*="://doctorpiter.ru/"][title]
 fast-torrent.tv##a[href*="://fast-torrent.tv/gomed.php"]
 smartmama.com.ua,virus-stop.com.ua##a[href*="://flavovir.ua"] > img
 bestsoft.club,rsload.net##a[href*="://go.click2bit.net/"]
@@ -6349,7 +6347,9 @@ repetit-center.ru##aside > a[href][onclick="return !window.open(this.href)"]
 obozrevatel.com##aside > article:empty
 point.md#?#aside > div:-abp-has(> [id*="banner"])
 fontanka.ru#?#aside > div:-abp-has(> [id^="adv_"])
+fontanka.ru#?#aside > div:-abp-has(> div > [id^="adv_"])
 bitcryptonews.ru#?#aside > div:-abp-has(script)
+www.fontanka.ru##aside > div:not([id]):not([class])
 audit-it.ru##aside > div[class][style^="margin-bottom"]
 finbalance.com.ua##aside > div[style] > a[href^="http"]:not([href*="finbalance.com.ua"])
 bitcryptonews.ru##aside > noindex
@@ -6595,7 +6595,6 @@ photoshop-besplatno.org#?#div:-abp-has(> div > [href*="bit.ly"])
 nonameno.com#?#div:-abp-has(> div > [href*="dex.browser"])
 rusprofile.ru,tvin.su#?#div:-abp-has(> div > [id^="adfox_"])
 rusprofile.ru#?#div:-abp-has(> div > [id^="yandex_rtb"])
-fontanka.ru#?#div:-abp-has(> div > a[href*="yandex."][href*="news"][href*="favid"])
 okna.ua#?#div:-abp-has(> div[id][data-url])
 silver.ru#?#div:-abp-has(> div[id^="M"][id*="Composite"])
 fontanka.ru#?#div:-abp-has(> div[id^="div-gpt-ad-"])
