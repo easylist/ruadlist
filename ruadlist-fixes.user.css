@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220922.1243
+@version        0.20220925.1328
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5670,8 +5670,9 @@
     .blocks-grid__item_static > .direct_type_stripe, 
     .home-arrow [data-bem*="yabrowser-promo"], .home-arrow__bottom, 
     .media-grid > [data-blockname="banner-slider"], 
-    .serp-list .incut_type_direct, .sidebar-container .search-advert-badge, 
-    .turbo-advert__loader, 
+    .serp-list .incut_type_direct, 
+    .serp.main__carousel:not([data-bem*="collectionId"]), 
+    .sidebar-container .search-advert-badge, .turbo-advert__loader, 
     body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
     body > .route-tip-view, 
     body[class*="logged "][class*=" b-page_"] #rtb-inserts, 
