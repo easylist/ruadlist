@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220925.1328
+@version        0.20220926.1308
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5009,6 +5009,12 @@
     .right-sidebar {
         margin-top: 0 !important;
         overflow: hidden !important
+    }
+}
+
+@-moz-document domain("study.ru") {
+    #header, .header-inner {
+        height: 94px !important
     }
 }
 
