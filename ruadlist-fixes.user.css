@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220926.1308
+@version        0.20220926.1411
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3463,6 +3463,9 @@
 @-moz-document domain("libertycity.ru") {
     .downloada {
         display: block !important
+    }
+    .down_link > .wl:not([style]) {
+        display: none !important
     }
 }
 
