@@ -1,5 +1,11 @@
 ! Правила для отдельных сайтов с разношерстными правилами или групп сайтов
 !
+! Специфические только для ABP/AB правила
+!#if ext_abp
+cq.ru#?#div:-abp-properties(content: "Реклама")
+fontanka.ru#?#section div:-abp-properties(content: "Реклама")
+!#endif
+!
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
 60-fps.net,inferno.games,mediaget.guru,soft-windows.info,torrent-soft.net,torrent-word.ru,torrentigruha.org,where-game.ru,windows-soft.info##:not(this-site-promotes-malware)
 !
