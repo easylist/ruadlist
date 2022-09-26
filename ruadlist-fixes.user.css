@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220926.1411
+@version        0.20220926.1842
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5672,9 +5672,11 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.uz") {
-    .ImagesViewerDirectStripe, .MediaViewer .DirectInline, 
-    .Root > .ECommerceCarousel, ._map_ready .search-advert-badge__advert, 
-    .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
+    .ImagesViewerDirectStripe, 
+    .JustifierRowLayout-Incut[style="margin-bottom: 4px; margin-right: 4px;"], 
+    .MediaViewer .DirectInline, .Root > .ECommerceCarousel, 
+    ._map_ready .search-advert-badge__advert, .adv_pos_compare-bottom, 
+    .adv_pos_compare-side, .adv_pos_popup, 
     .b-page.overlay[data-bem*="serp-metrika"] > .DistrSplashscreen, 
     .blocks-grid__item_static > .direct_type_stripe, 
     .home-arrow [data-bem*="yabrowser-promo"], .home-arrow__bottom, 
@@ -5689,7 +5691,7 @@
     body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
     div[aria-label="Реклама"], div[class*=" news-"][class$="_mode_daas"], 
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
-    div[class*="sidebar"] > .direct-snippet {
+    div[class*="sidebar"] > .direct-snippet, div[id^="viewer_direct_stripe_"] {
         display: none !important
     }
     .media-grid .media-grid__row_visible_yes > div:empty, 
