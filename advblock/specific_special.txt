@@ -113,21 +113,10 @@ auto.ru##vertisads-catalog-special
 ||auto.ru/wwwboards/img/banner_
 !
 ! Avito
-www.avito.ru##.avito-ads-container
-www.avito.ru##.avito-ads-content
-www.avito.ru##.avito-ads-item-mid
-www.avito.ru##.avito-ads-placeholder
-www.avito.ru##.avito-ads-serp-wrapper
-www.avito.ru##.avito-ads-template
-www.avito.ru##.item-price-banner
-www.avito.ru##.item-view-ads
-www.avito.ru#?#div:-abp-has(> [class] > h2:-abp-contains(Pеклама))
-www.avito.ru##div[class^="items-ads-"]
+www.avito.ru##div[class^="advert-mimicry-"]
 www.avito.ru##div[class^="style-ads"]
-www.avito.ru##div[class^="styles-desktop-mimicry"]
-www.avito.ru#?#div[class^="styles-root"]:-abp-has(> div > div[class^="avito-ads"])
-www.avito.ru#?#div[class^="styles-root"]:-abp-has(> div[class^="avito-ads"])
-www.avito.ru##div[class^="template_serp_"]
+www.avito.ru#?#div[class^="styles-item-"]:-abp-has(> [data-marker="bx-recommendations-block-item"] > div[class^="body-actions-"]:empty)
+www.avito.ru#?#div[class^="styles-item-"]:-abp-has(> div[class^="advert-mimicry-"])
 ||a5el.ml^$third-party
 ||avito.ru^*/dfp/px.js
 ||criteo.net^$domain=avito.ru
