@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20220930.1746
+@version        0.20221002.2029
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -688,6 +688,12 @@
     }
     body > #heading.clickable {
         max-height: 50px !important
+    }
+}
+
+@-moz-document domain("alexua.tv") {
+    .static_content {
+        min-height: 0 !important
     }
 }
 
