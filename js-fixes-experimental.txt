@@ -392,7 +392,7 @@ ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !imp
 ||ad.mail.ru/$image,script,xmlhttprequest,redirect=empty
 ||ad.mail.ru/dist/
 ||cdn.viqeo.tv/js/vq_starter.js$third-party,script,domain=dni.ru|~dom.mail.ru|~lady.mail.ru|lifehacker.ru|mail.ru
-||limg.imgsmail.ru/re/j/d-*.js|$script,domain=~3igames.mail.ru|~auto.mail.ru|~biz.mail.ru|~bonus.mail.ru|~calendar.mail.ru|~cloud.mail.ru|~deti.mail.ru|~dobro.mail.ru|~e.mail.ru|~esports.mail.ru|~games.mail.ru|~gibdd.mail.ru|~go.mail.ru|~health.mail.ru|~help.mail.ru|~hi-tech.mail.ru|~horo.mail.ru|~kino.mail.ru|~lady.mail.ru|~love.mail.ru|mail.ru|~mailblog.mail.ru|~mcs.mail.ru|~minigames.mail.ru|~my.mail.ru|~news.mail.ru|~octavius.mail.ru|~okminigames.mail.ru|~otvet.mail.ru|~pets.mail.ru|~pogoda.mail.ru|~realty.mail.ru|~top.mail.ru|~touch.mail.ru|~tv.mail.ru
+||imgsmail.ru/re*j/d-*.js|$script,domain=~3igames.mail.ru|~auto.mail.ru|~biz.mail.ru|~bonus.mail.ru|~calendar.mail.ru|~cloud.mail.ru|~deti.mail.ru|~dobro.mail.ru|~e.mail.ru|~esports.mail.ru|~games.mail.ru|~gibdd.mail.ru|~go.mail.ru|~health.mail.ru|~help.mail.ru|~hi-tech.mail.ru|~horo.mail.ru|~kino.mail.ru|~lady.mail.ru|~love.mail.ru|mail.ru|~mailblog.mail.ru|~mcs.mail.ru|~minigames.mail.ru|~my.mail.ru|~news.mail.ru|~octavius.mail.ru|~okminigames.mail.ru|~otvet.mail.ru|~pets.mail.ru|~pogoda.mail.ru|~realty.mail.ru|~top.mail.ru|~touch.mail.ru|~tv.mail.ru
 ||mail.ru/api-proxy/rb-mimic/
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|
@@ -407,20 +407,7 @@ e.mail.ru##+js(json-prune, [].slot)
 e.mail.ru##.b-datalist > div:matches-css(height: 39px):remove()
 e.mail.ru##.b-letter_thread > div > div:matches-css(height: 39px):remove()
 e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div:style(display: block !important)
-! VK-брендинг на главной
-! min-width: 1317px and more >>>
-mail.ru##.grid__lcol .logo__img--vk[href="//mail.ru"] > .logo__text:matches-media((min-width: 1317px)):style(display: block !important; width: 78px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
-mail.ru##.grid__lcol .logo__img--vk[href="//mail.ru"]:matches-media((min-width: 1317px)):style(background-size: auto 40px !important; background-position: 90px 50% !important)
-! min-width: 1253px >>>
-mail.ru##.grid__lcol .logo__img--vk[href="//mail.ru"] > .logo__text:matches-media((max-width: 1316px)):style(display: block !important; width: 60px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
-mail.ru##.grid__lcol .logo__img--vk[href="//mail.ru"]:matches-media((max-width: 1316px)):style(background-size: auto 40px !important; background-position: 75px 50% !important)
-! min-width: 1189px >>>
-mail.ru##.grid__lcol .logo__img--vk[href="//mail.ru"] > .logo__text:matches-media((max-width: 1252px)):style(display: block !important; width: 60px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
-mail.ru##.grid__lcol .logo__img--vk[href="//mail.ru"]:matches-media((max-width: 1252px)):style(background-size: auto 40px !important; background-position: 75px 50% !important)
-! min-width: 1069px >>>
-mail.ru##.grid__lcol .logo__img--vk[href="//mail.ru"] > .logo__text:matches-media((max-width: 1188px)):style(display: block !important; width: 60px !important; height: 40px !important; opacity: 1 !important; position: absolute !important; right: 0 !important; top: 15px !important; background-color: #005ff9 !important)
-mail.ru##.grid__lcol .logo__img--vk[href="//mail.ru"]:matches-media((max-width: 1188px)):style(background-size: auto 40px !important; background-position: 60px 50% !important)
-! VK-брендинг на остальных
+! VK-брендинг (кроме главной)
 mail.ru,sportmail.ru##.pm-menu__left__vk-logo
 calendar.mail.ru##[data-test-id="ecosystem-logo"]
 cloud.mail.ru,e.mail.ru,octavius.mail.ru##a[title="Экосистема VK"]
