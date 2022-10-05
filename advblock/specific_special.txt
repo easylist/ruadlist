@@ -386,6 +386,11 @@ news.mail.ru#?#div:-abp-has(> * > .sourceInformer_bks)
 news.mail.ru#?#div:-abp-has(> * > a[href*="t.mail.ru/redir"])
 news.mail.ru##div[article-item-type="conversionlink"]
 news.mail.ru#?#div[class*="rb_"]:-abp-has([id*="yandex_"])
+! Новости dzen  (пустые места)
+dzen.ru#?#.mg-grid__item_type_card:-abp-has(> div[class*="loader_animated"])
+dzen.ru#?#.news-app__heading:-abp-has(> h1:-abp-contains(Реклама))
+dzen.ru#?#div:-abp-has(> .mg-grid__item_type_card > div[class*="loader_animated"])
+dzen.ru##div[class*="column_myTarget"]
 ! Облако
 cloud.mail.ru##.content__along > .content__row
 cloud.mail.ru##.public__content > .public__content__row
