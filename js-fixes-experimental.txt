@@ -350,7 +350,7 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||strm.yandex.ru^$media,redirect=empty,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
 ||ts.kg/olol*.mp4$media,redirect=noop-0.1s.mp3
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|
-||video.matchtv.ru/iframe/feed/*&skin_name=mpartner&autostart=1$subdocument,removeparam=/autostart|skin_name/
+||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=/autostart|skin_name/
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||widgets.kinopoisk.ru^*&loop=1&autoplay=1$subdocument,removeparam=|,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js|$important,script,domain=playground.ru
