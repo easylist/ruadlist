@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221006.1427
+@version        0.20221006.1813
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4044,7 +4044,7 @@
 }
 
 @-moz-document domain("otvet.mail.ru") {
-    body div div div div[class^="adv-slot-"] {
+    body div div div div[class*="adv-slot-"] {
         display: none !important
     }
 }
