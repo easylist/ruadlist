@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221006.1813
+@version        0.20221007.1057
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -626,20 +626,6 @@
     }
     #new_logo_helper01 {
         top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("agronews.ua"),
-  domain("volyninfo.com") {
-    html > body {
-        background-image: none !important
-    }
-    html > body > * {
-        pointer-events: auto !important
-    }
-    html > body {
-        pointer-events: none !important
     }
 }
 
@@ -5241,6 +5227,18 @@
     .block-type-widget-area {
         min-height: 0 !important;
         box-shadow: none !important
+    }
+}
+
+@-moz-document domain("volyninfo.com") {
+    html > body {
+        background-image: none !important
+    }
+    html > body > * {
+        pointer-events: auto !important
+    }
+    html > body {
+        pointer-events: none !important
     }
 }
 
