@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221008.1128
+@version        0.20221009.1356
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4559,10 +4559,12 @@
     div[style*="width:"][style*="margin:"][style*="auto;"] > *  > a > img {
         display: none !important
     }
-    .menu[role="navigation"] div[style*="height:"], 
-    aside > div[class]:first-child, aside > div[class]:first-child > div, 
-    aside center > div[style*="height:"] {
+    .menu[role="navigation"] div[style*="px"], aside > div[class]:first-child, 
+    aside > div[class]:first-child > div, aside center > div[style*="height:"] {
         height: auto !important
+    }
+    main div[style="margin: auto;"] div[id] {
+        min-height: 0 !important
     }
 }
 
