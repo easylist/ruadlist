@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221013.1436
+@version        0.20221013.1556
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3427,13 +3427,12 @@
     #bubble-home, .grid__main-col > .tgb-wrapper, 
     .mailbox-container ~ .asteroid-widgets, 
     .mailbox-container ~ .asteroid-widgets ~ [class], .ph-ext, 
-    [data-testid="news-tabs"] ~ div > div ~ div, 
-    body > .grid .grid__rcol > :not(.weather):not(.rates), 
+    [data-testid="news-tabs"] ~ div > div > div[style="position:relative;"], 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
-    body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .new-tgb-wrap, 
-    body > .zeropixel ~ * .rectangle-banner, 
+    body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .rectangle-banner, 
     body > .zeropixel ~ * .skeleton-tgb, body > .zeropixel ~ * .stripe-wrapper, 
+    body > .zeropixel ~ * [class*="tgb-wrap"], 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body:not(.js-module) .horoscope ~ [class], 
     body:not(.js-module) .searchContainer ~ div > a.dmb {

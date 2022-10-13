@@ -1735,15 +1735,13 @@ mail.ru,sportmail.ru##.pulse-lenta
 my.mail.ru##.sp-video__billboard
 my.mail.ru##:not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"]
 mail.ru##[data-testid="grid-left-col"] > .logo:style(margin-top: 4px !important; margin-bottom: 4px !important)
-mail.ru##[data-testid="news-tabs"] ~ div > div ~ div
+mail.ru##[data-testid="news-tabs"] ~ div > div > div[style="position:relative;"]
 mail.ru,sportmail.ru##a[id^="tb-"][class^="tb-"][target="_blank"]
-mail.ru##body > .grid .grid__rcol > :not(.weather):not(.rates)
 mail.ru##body > .grid .grid__rcol:style(margin-left: 0 !important)
 mail.ru##body > .grid .news-item_tgb
 mail.ru##body > .grid .rectangle-banner
 mail.ru##body > .grid > div[class^="grid"][class*="__header"] > .toolbar
 mail.ru##body > .zeropixel ~ * .balloon
-mail.ru##body > .zeropixel ~ * .new-tgb-wrap
 mail.ru##body > .zeropixel ~ * .rectangle-banner
 mail.ru##body > .zeropixel ~ * .skeleton-tgb
 mail.ru##body > .zeropixel ~ * .stripe-wrapper
@@ -1752,6 +1750,7 @@ mail.ru##body > .zeropixel ~ * .tabs-content > :first-child > a > .news-main__te
 mail.ru##body > .zeropixel ~ * .tabs-content > :first-child > a::after:style(position: unset !important)
 mail.ru##body > .zeropixel ~ * .tabs-content > :first-child > a:style(max-height: 5em !important; position: static !important)
 mail.ru##body > .zeropixel ~ * .tabs-content > :first-child:style(max-width: 750px !important)
+mail.ru##body > .zeropixel ~ * [class*="tgb-wrap"]
 mail.ru##body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"]
 go.mail.ru##body > div[style^="z-index:"]
 otvet.mail.ru##body div div div div[class*="adv-slot-"]
