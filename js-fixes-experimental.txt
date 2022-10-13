@@ -97,7 +97,7 @@ dtf.ru,vc.ru##+js(remove-attr, data-video-play-mode)
 dynamo.kiev.ua##.video-scroll:remove()
 dynamo.kiev.ua,epravda.com.ua,football.ua,isport.ua,liga.net,pravda.com.ua,www.i.ua##+js(abort-current-inline-script, decodeURIComponent, getAdBlockStatus)
 dynamo.kiev.ua,epravda.com.ua,football.ua,isport.ua,liga.net,pravda.com.ua,www.i.ua##+js(abort-current-inline-script, document.querySelector, /banner/)
-dzen.ru,zen.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
+dzen.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 eagleplatform.com##+js(set-constant, player.options.scroll, false)
 electric-house.ru,euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru,smolensk-auto.site,stroi-help.ru##+js(abort-current-inline-script, Math.floor, adregain_wall)
 electric-house.ru,stroi-help.ru##+js(abort-on-property-read, ads)
@@ -357,7 +357,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||yandex.ru/ads/system/context.js|$important,script,domain=playground.ru
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=|,domain=1news.com.ua|7days.ru|factor.ua|gamasexual.com|gamasexual.ru|go.mail.ru|gor-master.ru|igromania.ru|kanobu.ru|segodnya.ua|sledcom.ru|sm.news|sport-express.ru|u24.ua|xn--b1ats.xn--80asehdb
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.ru&widgetid=1$subdocument,badfilter,domain=3dnews.ru
-||zen.yandex.ru/embed/*autoplay=1$third-party,subdocument,removeparam=|
 ||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|eda.ru|gazeta.ru|lenta.ru|letidor.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
 ~1yar.tv,bonus-tv.ru,eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
