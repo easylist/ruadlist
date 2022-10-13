@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221013.1556
+@version        0.20221013.2306
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1826,6 +1826,9 @@
 }
 
 @-moz-document domain("dzen.ru") {
+    .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
+    .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
+    div[class*="video-viewer-sidebar__ad"], 
     div[class^="dzen-desktop__dzenDesktop-"] > div:not([id]):not([class]), 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"] {
         display: none !important
@@ -1848,19 +1851,6 @@
     }
     .b-page_type_maps div[class$="__content"] > [class$="__ad"] > div {
         width: unset !important
-    }
-}
-
-@-moz-document
-  domain("dzen.ru"),
-  domain("zen.yandex.by"),
-  domain("zen.yandex.kz"),
-  domain("zen.yandex.ru"),
-  domain("zen.yandex.uz") {
-    .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
-    .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
-    div[class*="video-viewer-sidebar__ad"] {
-        display: none !important
     }
 }
 
@@ -3427,7 +3417,7 @@
     #bubble-home, .grid__main-col > .tgb-wrapper, 
     .mailbox-container ~ .asteroid-widgets, 
     .mailbox-container ~ .asteroid-widgets ~ [class], .ph-ext, 
-    [data-testid="news-tabs"] ~ div > div > div[style="position:relative;"], 
+    [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .rectangle-banner, 
@@ -5584,17 +5574,6 @@
 @-moz-document domain("zaycev.online") {
     .content:not(#id) {
         margin-top: 80px !important
-    }
-}
-
-@-moz-document
-  domain("zen.yandex.by"),
-  domain("zen.yandex.kz"),
-  domain("zen.yandex.ru"),
-  domain("zen.yandex.uz") {
-    div[id^="R-A-"] .video-card-stub-view > div:empty, 
-    div[id^="R-A-"] .video-card-stub-view__content > [class]:empty {
-        display: none !important
     }
 }
 
