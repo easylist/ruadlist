@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221011.1350
+@version        0.20221013.1436
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -142,13 +142,11 @@
   domain("gecid.com"),
   domain("hdrezka.re"),
   domain("ixbt.com"),
-  domain("kinobar.me"),
   domain("kinotochka.co"),
   domain("kinotochka.me"),
   domain("ko.com.ua"),
   domain("kv.by"),
   domain("livejournal.com"),
-  domain("lostserials.com"),
   domain("mc.today"),
   domain("mirkino.club"),
   domain("newstudio.tv"),
@@ -158,9 +156,7 @@
   domain("otxataba.net"),
   domain("pay-day.ru"),
   domain("playtor.tv"),
-  domain("pure-t.ru"),
   domain("rufootballtv.org"),
-  domain("rusporno.vip"),
   domain("sc2tv.ru"),
   domain("smotri.com"),
   domain("stopgame.ru"),
@@ -177,71 +173,41 @@
 @-moz-document
   domain("24video.adult"),
   domain("24video.in"),
-  domain("baskino-2021.uno"),
   domain("baskino.me"),
-  domain("baskino1.top"),
   domain("dnepr.info"),
-  domain("dugtor.org"),
   domain("dugtor.ru"),
   domain("film-ua.com"),
   domain("filmitorrent.net"),
-  domain("filmy-smotret.net"),
   domain("gidonline.io"),
   domain("gordonua.com"),
   domain("gtorrent.pro"),
   domain("gtorrent.xyz"),
-  domain("hdkinozor.ru"),
   domain("hdrezka.re"),
-  domain("ikinohd.com"),
-  domain("investxp.ru"),
   domain("ixbt.com"),
   domain("jetsetter.ua"),
   domain("kinoafisha.ua"),
-  domain("kinobar.me"),
-  domain("kinobe.club"),
-  domain("kinoplanet.biz"),
+  domain("kinobar.vip"),
   domain("kintor.org"),
-  domain("koshara.net"),
-  domain("kronverkcinema.ua"),
-  domain("lostserials.com"),
-  domain("lotzon.co"),
-  domain("lotzon.pro"),
   domain("moskva.fm"),
-  domain("mrutor.org"),
-  domain("my-tfile.org"),
   domain("newstudio.tv"),
   domain("nnm-club.me"),
   domain("nnmclub.ro"),
   domain("nnmclub.to"),
   domain("pay-day.ru"),
-  domain("pure-t.ru"),
   domain("roem.ru"),
-  domain("rusporno.vip"),
-  domain("serialbox.org"),
-  domain("smotret-film.net"),
-  domain("smotret-filmy.net"),
-  domain("sobaka.ru"),
-  domain("tfile-music.org"),
-  domain("tfile.cc"),
-  domain("tfile.co"),
-  domain("tfilm.club"),
-  domain("tfilm.me"),
-  domain("tfilm.tv"),
   domain("torentor.co"),
-  domain("torra.xyz"),
-  domain("torrfan.org"),
   domain("trupornolabs.org"),
+  domain("utorr.xyz"),
   domain("utorrentfilmi.com"),
   domain("utorrentfilmi.org"),
   domain("vc.ru"),
   domain("virusinfo.info"),
-  domain("vse-sezony.cc"),
   domain("wikianime.tv"),
   domain("xxxadulttorrent.org"),
   domain("you-anime.ru"),
   domain("yummyanime.tv"),
   domain("zombie-film.live") {
-    body:not(#id), html:not(#id) {
+    body:not(#id) {
         padding-top: 0 !important
     }
 }
@@ -258,13 +224,11 @@
   domain("gecid.com"),
   domain("hdrezka.re"),
   domain("ixbt.com"),
-  domain("kinobar.me"),
   domain("kinotochka.co"),
   domain("kinotochka.me"),
   domain("ko.com.ua"),
   domain("kv.by"),
   domain("livejournal.com"),
-  domain("lostserials.com"),
   domain("mc.today"),
   domain("mirkino.club"),
   domain("newstudio.tv"),
@@ -273,9 +237,7 @@
   domain("oper.ru"),
   domain("otxataba.net"),
   domain("playtor.tv"),
-  domain("pure-t.ru"),
   domain("rufootballtv.org"),
-  domain("rusporno.vip"),
   domain("sc2tv.ru"),
   domain("smotri.com"),
   domain("stopgame.ru"),
@@ -1831,9 +1793,7 @@
     }
 }
 
-@-moz-document
-  domain("dugtor.org"),
-  domain("dugtor.ru") {
+@-moz-document domain("dugtor.ru") {
     #left-block, #right-block {
         min-height: 100% !important
     }
@@ -2679,8 +2639,7 @@
 
 @-moz-document
   domain("hi-news.ru"),
-  domain("kino-teatr.ua"),
-  domain("serialbox.org") {
+  domain("kino-teatr.ua") {
     body {
         background: none !important
     }
@@ -3739,18 +3698,6 @@
     }
 }
 
-@-moz-document
-  domain("my-tfile.org"),
-  domain("tfile.cc"),
-  domain("tfile.co") {
-    .full #top_tools {
-        padding-left: 0 !important
-    }
-    #head, #table_reduser {
-        width: 100% !important
-    }
-}
-
 @-moz-document domain("my.mail.ru") {
     #history_container > div[class][style*="display: block!important"], 
     .app-event-bubbles, .b-history__adv-post-carousel, .l-app__left, 
@@ -4299,13 +4246,6 @@
     }
 }
 
-@-moz-document domain("pure-t.ru") {
-    .g1-header {
-        top: 0 !important;
-        position: relative !important
-    }
-}
-
 @-moz-document domain("pvpru.com") {
     .above_body > div[style] {
         height: auto !important
@@ -4678,6 +4618,12 @@
     }
 }
 
+@-moz-document domain("sobaka.ru") {
+    .b-site-body {
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("soccer.ru") {
     #main_body > .block {
         height: auto !important
@@ -4903,12 +4849,6 @@
 @-moz-document domain("texterra.ru") {
     html {
         overflow: auto !important
-    }
-}
-
-@-moz-document domain("tfile-music.org") {
-    body {
-        width: 100% !important
     }
 }
 
