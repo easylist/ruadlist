@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221013.2306
+@version        0.20221014.2159
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4032,6 +4032,9 @@
 }
 
 @-moz-document domain("peterburg2.ru") {
+    body {
+        background-color: inherit !important
+    }
     body > .a {
         background-image: none !important
     }
