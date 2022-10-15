@@ -174,6 +174,7 @@ iz.ru##+js(set-constant, Object.prototype.autoplay, false)
 joyreactor.cc,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 kakprosto.ru##+js(cookie-remover, yadb)
+kanobu.ru##+js(json-prune, results.fixed)
 kinescope.io##+js(set-constant, playerOptions.behaviour.autoPlay, false)
 kinogo.cc,livesx.online,xn--80aikhbrhr.xn--j1amh##+js(abort-current-inline-script, document.createElement, isBlob)
 kinokong.pro##+js(set-constant, Object.prototype.disableSelection, noopFunc)
@@ -392,7 +393,7 @@ touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
 ||ad.mail.ru/$image,script,xmlhttprequest,redirect=empty
 ||ad.mail.ru/dist/
-||cdn.viqeo.tv/js/vq_starter.js$third-party,script,domain=dni.ru|~dom.mail.ru|~lady.mail.ru|lifehacker.ru|mail.ru
+||cdn.viqeo.tv/js/vq_starter.js$third-party,script,domain=dni.ru|~dom.mail.ru|kanobu.ru|~lady.mail.ru|lifehacker.ru|mail.ru
 ||imgsmail.ru/re*j/d-*.js|$script,domain=~3igames.mail.ru|~auto.mail.ru|~biz.mail.ru|~bonus.mail.ru|~calendar.mail.ru|~cloud.mail.ru|~deti.mail.ru|~dobro.mail.ru|~e.mail.ru|~esports.mail.ru|~games.mail.ru|~gibdd.mail.ru|~go.mail.ru|~health.mail.ru|~help.mail.ru|~hi-tech.mail.ru|~horo.mail.ru|~kino.mail.ru|~lady.mail.ru|~love.mail.ru|mail.ru|~mailblog.mail.ru|~mcs.mail.ru|~minigames.mail.ru|~my.mail.ru|~news.mail.ru|~octavius.mail.ru|~okminigames.mail.ru|~otvet.mail.ru|~pets.mail.ru|~pogoda.mail.ru|~realty.mail.ru|~top.mail.ru|~touch.mail.ru|~tv.mail.ru
 ||mail.ru/api-proxy/rb-mimic/
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
