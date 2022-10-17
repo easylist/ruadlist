@@ -1134,13 +1134,12 @@ dzen.*##.climate-calendar-container__adv-wide
 dzen.*##.content__adv
 dzen.*##.feed__item > article[class^="card-wrapper"][class*="  "] > div[class*="_theme_"]:not([style])
 dzen.*##.panel-loadable-view__feed > div[class*="-video-"] ~ div:not([class*="-video-"]):not(:last-child)
+dzen.*##.zen-page .content > div:not([id]):not([class]) > div:not([id]):not([class]) > div[id]
+dzen.*##.zen-page .content div[class$="-3n"] > div:first-child > div[id]:first-child
+dzen.*##.zen-page .content div[class$="-3n"] > div:not([class]) > div[id]:first-child
 dzen.*##div[class*=" adv_pos_index-"]
 dzen.*##div[class*="-sidebar__ad"]
 dzen.*##div[class^="dzen-header-desktop__header-"] + div:not(:last-child) > div[id]
-dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div:not([id]):not([class]) > div[id]
-dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div:not([id]):not([class]):first-child > div[id]
-dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3n"] > div:first-child > div[id]:first-child
-dzen.*##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3n"] > div:not([class]) > div[id]:first-child
 dzen.*##section ~ .news-top-rubric-heading > h1:only-child:if-not(> a)
 dzen.*#?#div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
 dzen.*,yandex.*##.mg-grid__col div[class*="_type_native"]

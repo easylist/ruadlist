@@ -2284,6 +2284,9 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.yabrowser-promo
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##.yabs_type_banners
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.z-default-search
 translate.goog,yandex.by,yandex.kz,yandex.ru,yandex.uz##.zalogin-smart
+dzen.ru##.zen-page .content > div:not([id]):not([class]) > div:not([id]):not([class]) > div[id]
+dzen.ru##.zen-page .content div[class$="-3n"] > div:first-child > div[id]:first-child
+dzen.ru##.zen-page .content div[class$="-3n"] > div:not([class]) > div[id]:first-child
 dzen.ru#?#.zen-ui-modal:-abp-has(> div[class*="short-modal-download__overlay"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="desk-notif-card"] > [data-statlog*="plus"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="desk-notif-card"] > a[href*="/plus.yandex"]
@@ -2309,8 +2312,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="desktop-interview-modal"]
 dzen.ru##div[class*="short-modal-download__overlay"]
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.uz##div[class*="sidebar"] .no-ads
 dzen.ru##div[class^="dzen-header-desktop__header-"] + div:not(:last-child) > div[id]
-dzen.ru##div[class^="loading-boundary-stacked-layout__content-"] > div:not([id]):not([class]):first-child > div[id]
-dzen.ru##div[class^="loading-boundary-stacked-layout__content-"] > div[class$="-3n"] > div:first-child > div[id]:first-child
 market.yandex.by,market.yandex.kz,market.yandex.ru,market.yandex.uz##div[data-apiary-widget-name="@MarketNode/EntryPointPopup"]
 market.yandex.by,market.yandex.kz,market.yandex.ru,market.yandex.uz##div[data-apiary-widget-name="@marketplace/WebimChat"]
 market.yandex.by,market.yandex.kz,market.yandex.ru,market.yandex.uz,~pokupki.market.yandex.ru##div[data-apiary-widget-name^="@"][data-apiary-widget-name*="Promo"]:not([data-apiary-widget-name*="PromocodeForm"])
