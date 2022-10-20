@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221015.1621
+@version        0.20221020.1624
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1476,6 +1476,7 @@
   domain("dc-marvel.org"),
   domain("filmshd.vip"),
   domain("goodfilms.su"),
+  domain("kinoxa.cc"),
   domain("newseries.me"),
   domain("yummyanime.best") {
     .wrap {
@@ -3086,26 +3087,6 @@
   domain("kinotochka.me") {
     .center-box2 {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("kinoxa.win"),
-  domain("lord-films.pw"),
-  domain("lordfilm.in"),
-  domain("lordfilm.net"),
-  domain("lordfilm6.tv"),
-  domain("lordfilm7.tv"),
-  domain("lordfilmtv.vip"),
-  domain("lordsfilm.net"),
-  domain("lordsfilm.pro"),
-  domain("lordsfilms.pro") {
-    html > body {
-        background-color: #e5e5e5 !important
-    }
-    body > .wrap {
-        margin-top: 0 !important;
-        padding-top: 0 !important
     }
 }
 
@@ -4792,12 +4773,6 @@
 @-moz-document domain("study.ru") {
     #header, .header-inner {
         height: 94px !important
-    }
-}
-
-@-moz-document domain("tabfil.me") {
-    .wrap {
-        margin-top: 0 !important
     }
 }
 
