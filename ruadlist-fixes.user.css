@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221021.1257
+@version        0.20221021.1419
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5394,6 +5394,12 @@
 @-moz-document domain("xsport.ua") {
     .site {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("ya.ru") {
+    .link-bro {
+        display: none !important
     }
 }
 
