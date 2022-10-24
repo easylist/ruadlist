@@ -1197,6 +1197,7 @@ yandex.*#?#div[class*="-header"] ~ div[id*="page"] div[class*="__col"]:-abp-has(
 ~yandex.net,mail.yandex.*,yandex.*##div[class^="DisableAdsButton"]
 ~yandex.net,yandex.*#?#+js(abort-on-property-read, yaads.renderBlock)
 ~yandex.net,yandex.*#?#+js(abort-on-property-read, yaads.renderWidget)
+~yandex.net,yandex.*#?#+js(cookie-remover, tvoid)
 ~yandex.net,yandex.*#?#+js(remove-attr, data-counter, .serp-list a)
 ~yandex.net,yandex.*#?#+js(set-constant, __AAB__, false)
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype._getAdConfig, noopFunc)
