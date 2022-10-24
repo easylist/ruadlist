@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221021.1419
+@version        0.20221024.2246
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5421,8 +5421,6 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.uz") {
-    .ImagesViewerDirectStripe, 
-    .JustifierRowLayout-Incut[style^="margin-bottom: 4px;"], 
     .MediaViewer .DirectInline, .Root > .ECommerceCarousel, 
     ._map_ready .search-advert-badge__advert, .adv_pos_compare-bottom, 
     .adv_pos_compare-side, .adv_pos_popup, 
@@ -5430,7 +5428,7 @@
     .blocks-grid__item_static > .direct_type_stripe, 
     .home-arrow [data-bem*="yabrowser-promo"], .home-arrow__bottom, 
     .media-grid > [data-blockname="banner-slider"], 
-    .serp-list .incut_type_direct, .serp.main__carousel .Label_theme_direct, 
+    .serp.main__carousel .Label_theme_direct, 
     .serp.main__carousel:not([data-bem*="collectionId"]), 
     .sidebar-container .search-advert-badge, .turbo-advert__loader, 
     body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
@@ -5440,7 +5438,7 @@
     body[class*="logged "][class*=" b-page_"] div[class*="direct-desktop_"], 
     div[aria-label="Реклама"], div[class*=" news-"][class$="_mode_daas"], 
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
-    div[class*="sidebar"] > .direct-snippet, div[id^="viewer_direct_stripe_"] {
+    div[class*="sidebar"] > .direct-snippet {
         display: none !important
     }
     .media-grid .media-grid__row_visible_yes > div:empty, 
@@ -5503,7 +5501,10 @@
 }
 
 @-moz-document domain("yandex.ru") {
-    .stack .sticky-banner-container, .stack div[class^="modal-R-A"] {
+    .MMSidebar-Card div[class$="-Incut"][style^="margin-bottom: 4px;"], 
+    .MediaViewer-LayoutFooter div[class$="-PCodeContainer"], 
+    .serp-list [data-state*="directType"], .stack .sticky-banner-container, 
+    .stack div[class^="modal-R-A"] {
         display: none !important
     }
     div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section > div:first-child + div div ~ div ~ div ~ div > div {
