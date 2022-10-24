@@ -1531,12 +1531,11 @@ yandex.ru##.stack .sticky-banner-container
 yandex.ru##.stack div[class^="modal-R-A"]
 ! ---
 ! картинки
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.ImagesViewerDirectStripe
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.MediaViewer .DirectInline
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.serp-list .incut_type_direct
 ! обфускация
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.JustifierRowLayout-Incut[style^="margin-bottom: 4px;"]
-yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id^="viewer_direct_stripe_"]
+yandex.ru##.MMSidebar-Card div[class$="-Incut"][style^="margin-bottom: 4px;"]
+yandex.ru##.MediaViewer-LayoutFooter div[class$="-PCodeContainer"]
+yandex.ru##.serp-list [data-state*="directType"]
 ! ---
 ! карты
 yandex.by,yandex.kz,yandex.ru,yandex.uz##._map_ready .search-advert-badge__advert
