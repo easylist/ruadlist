@@ -2,7 +2,13 @@
 !
 ! Специфические только для ABP/AB правила
 !#if ext_abp
+/^https?://amedia\.online/[^\s]{70,}/$script,domain=amedia.online
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
+amedia.online##body > [href*="/crpd/"] ~ div .film-section-two
+amedia.online##body > [href*="/crpd/"] ~ div .main-section-one > .section ~ .section ~ .section
+amedia.online##body > [href*="/crpd/"] ~ div .players-section > [class^="tabs"]
+amedia.online##body > [href*="/crpd/"] ~ div .topnews
+amedia.online##body > [href*="/crpd/"] ~ div header > nav ~ *
 cq.ru#?#div:-abp-properties(content: "Реклама")
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
