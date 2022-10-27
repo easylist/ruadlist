@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221024.2246
+@version        0.20221027.2154
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2340,6 +2340,12 @@
     #content.site-max-width {
         margin-top: 0 !important;
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("gamegpu.com") {
+    a[href*="://artline.ua/"], a[href*="://bit.ly/"] {
+        pointer-events: none !important
     }
 }
 
