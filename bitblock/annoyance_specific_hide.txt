@@ -559,7 +559,6 @@ ilikenews.com##.block-type-signboard
 news.ngs.ru##.block-wday
 ixbt.com##.block__recommend
 relizua.com##.block_cont > noindex
-2baksa.ws##.block_tex
 texterra.ru##.blog-popup-block
 mirtesen.ru##.blog-post__subscribe
 varlamov.ru##.blog__footer_wrap:first-child
@@ -1437,8 +1436,10 @@ tv2.today##.t-news-page__donate
 aum.news##.t3-module[style="margin-top:40px;"]
 u-r-so.com##.tce_gdpr
 portaltele.com.ua##.td-footer-wrapper
-2baksa.ws#?#.td_blocks .leftblock:-abp-contains(/рекла/i)
-2baksa.ws#?#.td_blocks .leftblock:-abp-contains(/рекла/i) + div
+2baksa.ws#?#.td_blocks .leftblock:-abp-contains(/кла/i)
+2baksa.ws#?#.td_blocks .leftblock:-abp-contains(/кла/i) + div
+2baksa.ws##.td_blocks > [src*="/i/header."] + div
+2baksa.ws##.td_blocks > [src*="/i/header."] + div + div
 2baksa.ws##.td_blocks > center + div
 2baksa.ws##.td_blocks > center + div + div
 atlex.ru##.terms-popup
@@ -1560,9 +1561,6 @@ livesport.ru##.zz_cars_twin
 erofishki.cc##:not(.author):not(.avatar-a) > .subscribe_link
 widgets.kinopoisk.ru,www.kinopoisk.ru##:not(div[class*="styles_watchOnlineButtonPurchased"]):not([class*="watch-online-button"]) > [class*="watch-online-button"]
 0calc.es,0calc.fr,0calc.in,0calc.ru,0rechner.de,nu.nl,web2.0calc.com,web2.0calc.ru##[action="/cookieconsent"]
-2baksa.ws##[alt="header"] + div
-2baksa.ws##[alt="header"] + div + font
-2baksa.ws##[alt="header"] + font + div
 mbclub.ru##[alt="Клубный сервис"]
 semestr.ru##[alt="Рынок студенческих работ на заказ"]
 fosshub.com##[aria-label="Advertisement"]
@@ -1955,8 +1953,7 @@ goha.ru##span[id^="scrollto"]
 streamzone.org##span[style*="3.0em;"]
 2baksa.ws##table[style*="important"][width="100%"][align="center"]
 2baksa.ws##table[style="width: 468px; border-collapse: collapse; height: 60px;"]
-2baksa.ws##table[style="width: 99%; border-spacing: 1px !important; table-layout: auto;background-color: #FF8F0F !important; cellpadding="]
-nowa.cc##table[style^="width:"][style$="border-spacing: 1px !important; table-layout: auto;background-color: #FF8F0F !important; cellpadding="]
+2baksa.ws,nowa.cc##table[style^="width:"][style$="border-spacing: 1px !important; table-layout: auto;background-color: #FF8F0F !important; cellpadding="]
 vz.ru##table[width="100%"] > tbody > tr > td > div:not([id]):not([class]):not([style])
 russianpost.ru##table[width="816"] > tbody > tr:first-child + tr
 forums.overclockers.ru##td > #logo
