@@ -1432,10 +1432,10 @@ tv2.today##.t-news-page__donate
 aum.news##.t3-module[style="margin-top:40px;"]
 u-r-so.com##.tce_gdpr
 portaltele.com.ua##.td-footer-wrapper
-2baksa.ws#?#.td_blocks .leftblock:-abp-contains(/кла/i)
-2baksa.ws#?#.td_blocks .leftblock:-abp-contains(/кла/i) + div
-2baksa.ws##.td_blocks > [src*="/i/header."] + div
-2baksa.ws##.td_blocks > [src*="/i/header."] + div + div
+2baksa.ws#?#.td_blocks .leftblock:-abp-contains(/кла|клa/i)
+2baksa.ws#?#.td_blocks .leftblock:-abp-contains(/кла|клa/i) + div
+2baksa.ws##.td_blocks > [src] + div
+2baksa.ws##.td_blocks > [src] + div + div
 2baksa.ws##.td_blocks > center + div
 2baksa.ws##.td_blocks > center + div + div
 atlex.ru##.terms-popup
@@ -1949,8 +1949,8 @@ habr.com##section[id^="promo_block_"]
 goha.ru##span[id^="scrollto"]
 streamzone.org##span[style*="3.0em;"]
 2baksa.ws##table[style*="important"][width="100%"][align="center"]
-2baksa.ws##table[style="width: 468px; border-collapse: collapse; height: 60px;"]
-2baksa.ws,nowa.cc##table[style^="width:"][style$="border-spacing: 1px !important; table-layout: auto;background-color: #FF8F0F !important; cellpadding="]
+2baksa.ws##table[style*="width: 468px;"][style*="border-collapse: collapse;"][style*="height: 60px;"]
+2baksa.ws,nowa.cc##table[style="width : 100%; border-spacing: 1px !important; table-layout: auto;background-color: #FF8F0F !important; cellpadding="]
 vz.ru##table[width="100%"] > tbody > tr > td > div:not([id]):not([class]):not([style])
 russianpost.ru##table[width="816"] > tbody > tr:first-child + tr
 forums.overclockers.ru##td > #logo
