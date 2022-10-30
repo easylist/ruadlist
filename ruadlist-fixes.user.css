@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221027.2154
+@version        0.20221030.319
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -521,27 +521,6 @@
     }
 }
 
-@-moz-document
-  domain("8fornod.net"),
-  domain("freekeys.club"),
-  domain("trialnod.club"),
-  domain("w98008mo.beget.tech") {
-    body {
-        overflow: auto !important
-    }
-}
-
-@-moz-document
-  domain("8fornod.net"),
-  domain("noddb.ru") {
-    .remodal-is-opened {
-        display: none !important
-    }
-    html {
-        overflow: auto !important
-    }
-}
-
 @-moz-document domain("aces.gg") {
     body {
         background: black !important;
@@ -677,7 +656,6 @@
 @-moz-document
   domain("allbasketball.org"),
   domain("bit.ua"),
-  domain("freerutor.com"),
   domain("gidonline.fun"),
   domain("greenpost.ua"),
   domain("kinoboom.su"),
@@ -1024,12 +1002,6 @@
     }
     .lenta-wrap > .lenta {
         position: relative !important
-    }
-}
-
-@-moz-document domain("audioboo.ru") {
-    .right-block-content > .slider {
-        padding: 0 !important
     }
 }
 
@@ -1934,10 +1906,6 @@
 
 @-moz-document
   domain("epravda.com.ua"),
-  domain("fast-torrent.co"),
-  domain("online-freebee.club"),
-  domain("seasonvar.be"),
-  domain("seasonvar.re"),
   domain("seasonvar.ru"),
   domain("uniondht.org") {
     body:not(#id), html:not(#id) {
@@ -2222,9 +2190,7 @@
     }
 }
 
-@-moz-document
-  domain("freekeys.club"),
-  domain("trialnod.club") {
+@-moz-document domain("freekeys.club") {
     #keysbox {
         display: block !important
     }
@@ -2235,10 +2201,12 @@
 
 @-moz-document
   domain("freekeys.club"),
-  domain("trialnod.club"),
   domain("w98008mo.beget.tech") {
     #modal-overlay, #modal-window {
         display: none !important
+    }
+    body {
+        overflow: auto !important
     }
 }
 
@@ -2573,12 +2541,6 @@
 
 @-moz-document domain("hdru.net") {
     .page {
-        margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("hdtochka.club") {
-    body > .wrapp {
         margin-top: 0 !important
     }
 }
@@ -3830,6 +3792,15 @@
     }
 }
 
+@-moz-document domain("noddb.ru") {
+    .remodal-is-opened {
+        display: none !important
+    }
+    html {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("noob-club.ru") {
     #header-b {
         margin-bottom: 11px !important
@@ -4923,15 +4894,6 @@
     }
     .main-container {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("turboserial.net") {
-    body > div[class^="arcticmodal-"] {
-        display: none !important
-    }
-    body:not(#id) {
-        overflow: auto !important
     }
 }
 
