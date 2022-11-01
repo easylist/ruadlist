@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221030.319
+@version        0.20221101.1814
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3373,7 +3373,8 @@
     body > .grid .grid__rcol {
         margin-left: 0 !important
     }
-    #search\:container, [data-testid="grid-left-col"] > .logo {
+    [data-testid="grid-left-col"] > .logo, 
+    div[slot="main-column"] > .search-container {
         margin-top: 4px !important;
         margin-bottom: 4px !important
     }
