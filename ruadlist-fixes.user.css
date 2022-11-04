@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221104.1358
+@version        0.20221104.1615
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -470,10 +470,10 @@
   domain("rezkify.com"),
   domain("upivi.com") {
     body:not(#id) {
-        background-image: none !important
-    }
-    body:not(#id) {
         padding-top: 0 !important
+    }
+    body.active-brand > [id$="er"]:nth-child(-n+3) {
+        width: unset !important
     }
 }
 
