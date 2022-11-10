@@ -88,6 +88,8 @@ diplomsrazu.ru,igrozoom.ru,ru-minecraft.ru,softomania.net,windows-driver.net,win
 disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
 dmod.cc,draug.ru,modsforwot.ru##+js(abort-current-script, Math.floor, AdSense)
 dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
+docs-python.ru##+js(abort-on-property-read, ublock)
+docs-python.ru##div[id^="yandex_rtb_"]:remove()
 doctorrouter.ru,ranobe-novels.ru##+js(abort-on-property-write, ai_front)
 doramy.club,quote.ru,rbc.ru,sportrbc.ru,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
 dota2.ru##+js(abort-on-property-read, helpUsImproveSite)
@@ -338,6 +340,7 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 ||an.yandex.ru^$domain=e.mail.ru
 ||aniqit.com^$subdocument,removeparam=geoblock
 ||clustrmaps.com/counter/$image,redirect-rule=32x32.png
+||docs-python.ru^$csp=script-src 'self' * 'unsafe-eval',badfilter
 ||footboom.com/dist/app/js/antiAdBlock-
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru

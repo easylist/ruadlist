@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221110.2014
+@version        0.20221110.2015
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1638,6 +1638,13 @@
     }
     body.locked, html.locked {
         overflow:auto !important
+    }
+}
+
+@-moz-document domain("docs-python.ru") {
+    pre:not(.highlight) {
+        color: rgb(33, 37, 41) !important;
+        user-select: text !important
     }
 }
 
