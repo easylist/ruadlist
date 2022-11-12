@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221111.1900
+@version        0.20221112.1333
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1642,6 +1642,11 @@
 }
 
 @-moz-document domain("docs-python.ru") {
+    #donate-row {
+        background-color: #eeeeee !important;
+        filter: grayscale(1) !important;
+        font-size: initial !important
+    }
     pre:not(.highlight) {
         color: rgb(33, 37, 41) !important;
         user-select: text !important
