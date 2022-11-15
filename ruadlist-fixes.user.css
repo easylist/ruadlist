@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221114.1940
+@version        0.20221115.1933
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -498,24 +498,6 @@
 @-moz-document domain("7days.ru") {
     body {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("7days.ru"),
-  domain("doctorpiter.ru"),
-  domain("dom.mail.ru"),
-  domain("kp.kg"),
-  domain("kp.kz"),
-  domain("kp.md"),
-  domain("kp.ru"),
-  domain("lady.mail.ru"),
-  domain("radiokp.ru"),
-  domain("teleprogramma.pro"),
-  domain("wday.ru"),
-  domain("woman.ru") {
-    body > .l-wrapper > div[style^="position: absolute; width: 30px; height: 30px; bottom: 13px; left: 10px;"] {
-        opacity: unset !important
     }
 }
 
@@ -4618,6 +4600,25 @@
 @-moz-document domain("sovetromantica.com") {
     .mainContainer {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("spletnik.ru"),
+  domain("7days.ru"),
+  domain("doctorpiter.ru"),
+  domain("dom.mail.ru"),
+  domain("kp.kg"),
+  domain("kp.kz"),
+  domain("kp.md"),
+  domain("kp.ru"),
+  domain("lady.mail.ru"),
+  domain("radiokp.ru"),
+  domain("teleprogramma.pro"),
+  domain("wday.ru"),
+  domain("woman.ru") {
+    .l-wrapper > div[style^="position: absolute;"][style*="width: 30px;"][style*="height: 30px;"][style*="bottom: 13px;"][style*="left: 10px;"] {
+        opacity: unset !important
     }
 }
 
