@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221117.1307
+@version        0.20221118.1741
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -719,33 +719,6 @@
     #wr-bg {
         padding-top: 60px !important;
         margin-top: unset !important
-    }
-}
-
-@-moz-document
-  domain("anidub.club"),
-  domain("anidub.life"),
-  domain("anidub.link"),
-  domain("anime.anidub.com"),
-  domain("online.anidub.com") {
-    .content > .sect-header {
-        margin-bottom: 0 !important
-    }
-    #main > .wrap-center {
-        margin-left: auto !important;
-        margin-right: auto !important
-    }
-    .content, .full {
-        padding-top: 0 !important
-    }
-    .popular-in {
-        padding-top: 80px !important
-    }
-    .sticky-wrap {
-        position: relative !important
-    }
-    .wrap > .popular {
-        visibility: visible !important
     }
 }
 
@@ -4400,6 +4373,34 @@
 @-moz-document domain("rufootballtv.org") {
     body > #branding {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("rusanime.ru"),
+  domain("anidub.club"),
+  domain("anidub.life"),
+  domain("anidub.link"),
+  domain("anime.anidub.com"),
+  domain("online.anidub.com") {
+    .content > .sect-header {
+        margin-bottom: 0 !important
+    }
+    #main > .wrap-center {
+        margin-left: auto !important;
+        margin-right: auto !important
+    }
+    .content, .full {
+        padding-top: 0 !important
+    }
+    .popular-in {
+        padding-top: 80px !important
+    }
+    .sticky-wrap {
+        position: relative !important
+    }
+    .wrap > .popular {
+        visibility: visible !important
     }
 }
 
