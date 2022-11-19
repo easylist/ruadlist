@@ -5,9 +5,7 @@
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
 ! --- uBO scriptlets injection rules & other ---
-*$image,redirect-rule=32x32.png,domain=ukr.net
-*$script,redirect-rule=noopjs,domain=all-episodes.club|otzovik.com|ukr.net
-*$subdocument,redirect-rule=noopframe,domain=ukr.net
+*$script,redirect-rule=noopjs,domain=all-episodes.club|otzovik.com
 *$xmlhttprequest,redirect-rule=noopjs,domain=all-episodes.club|otzovik.com
 .pronpic.org^$script,domain=pronpic.org
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
@@ -455,31 +453,22 @@ softportal.com##+js(addEventListener-defuser, load, screenshotsItems)
 sinoptik.ua##style:not(#id):style(all: inherit !important)
 ! exceptions
 radio.nv.ua#@#style:first-child + div[class]:not([class*=" "]):not([class*="-"]):not([class*="_"]):not(.container)
+!
 ! ukr.net
+mail.ukr.net###top_banner:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
+www.ukr.net##+js(abort-on-property-read, window.googletag)
+www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
+mail.ukr.net##+js(set-constant, Object.prototype.AdvertisingManager, noopFunc)
+mail.ukr.net##.advt:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
+www.ukr.net##body > .wrapper > #main:style(overflow: hidden !important)
+www.ukr.net##div[class*=" "]:first-child + div[class*=" "]:last-child > div[class*=" "] > div[class*=" "]:first-child:empty ~ div[class*=" "]
 !#if env_mobile
 www.ukr.net#@#+js(abort-on-property-read, window.googletag)
 www.ukr.net##.lazy-load-banner
 !#endif
 !#if env_firefox
-mail.ukr.net##+js(abort-on-property-read, app.initializePromise)
-@@||counter.ukr.net/*/cnt.php|$image,domain=mail.ukr.net
 www.ukr.net##^script:has-text(znc|track)
-mail.ukr.net##head > iframe[name]:not([id]):not([class]):not([src]):remove()
 !#endif
-mail.ukr.net###top_banner:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-www.ukr.net##+js(abort-on-property-read, window.googletag)
-www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
-ukr.net##.adv-news:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-mail.ukr.net##.advt:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-www.ukr.net##.fixed-block > div[class] ~ div:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-@@||s.zmctrack.net/ads.js|$third-party,script
-@@||www.ukr.net^$generichide
-www.ukr.net##a[href][id$="op"][style]:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-www.ukr.net##body > .advert
-www.ukr.net##body > .wrapper > #main:style(overflow: hidden !important)
-www.ukr.net##div[class*=" "]:first-child + div[class*=" "]:last-child > div[class*=" "] > div[class*=" "]:first-child:empty ~ div[class*=" "]
-www.ukr.net##div[class^="fuel-"][class$="-banner"]:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
-www.ukr.net##iframe[src*="/safemore.ukr.net/pframe/"]:style(height: 0 !important)
 !
 ! Правила для компенсации отсутствия Scriptlet Doctor
 !#if env_firefox
