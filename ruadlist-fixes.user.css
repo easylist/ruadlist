@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221118.1741
+@version        0.20221119.1550
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -719,6 +719,34 @@
     #wr-bg {
         padding-top: 60px !important;
         margin-top: unset !important
+    }
+}
+
+@-moz-document
+  domain("anidub.club"),
+  domain("anidub.life"),
+  domain("anidub.link"),
+  domain("anime.anidub.com"),
+  domain("online.anidub.com"),
+  domain("rusanime.ru") {
+    .content > .sect-header {
+        margin-bottom: 0 !important
+    }
+    #main > .wrap-center {
+        margin-left: auto !important;
+        margin-right: auto !important
+    }
+    .content, .full {
+        padding-top: 0 !important
+    }
+    .popular-in {
+        padding-top: 80px !important
+    }
+    .sticky-wrap {
+        position: relative !important
+    }
+    .wrap > .popular {
+        visibility: visible !important
     }
 }
 
@@ -1781,6 +1809,7 @@
     .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     div[class*="video-viewer-sidebar__ad"], 
+    div[class^="dzen-desktop__bannerMain"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"] {
         display: none !important
     }
@@ -4373,34 +4402,6 @@
 @-moz-document domain("rufootballtv.org") {
     body > #branding {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("rusanime.ru"),
-  domain("anidub.club"),
-  domain("anidub.life"),
-  domain("anidub.link"),
-  domain("anime.anidub.com"),
-  domain("online.anidub.com") {
-    .content > .sect-header {
-        margin-bottom: 0 !important
-    }
-    #main > .wrap-center {
-        margin-left: auto !important;
-        margin-right: auto !important
-    }
-    .content, .full {
-        padding-top: 0 !important
-    }
-    .popular-in {
-        padding-top: 80px !important
-    }
-    .sticky-wrap {
-        position: relative !important
-    }
-    .wrap > .popular {
-        visibility: visible !important
     }
 }
 
