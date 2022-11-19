@@ -11,6 +11,7 @@ vm.ru###onair > img[data-src="/img/player_cover.svg"]
 inoreader.com###reader_pane:style(padding-right: unset !important)
 3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
+pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
 kolizhanka.com.ua##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,passport.yandex.ru#@#+js()
 shaiba.kz##+js(abort-current-inline-script, $, 1xbet)
@@ -290,7 +291,6 @@ hideip.me#@#.node-promoted
 vm.ru##.onair_wrapper > [name="btn_air_close"]
 igromania.ru##.page_article:has(> .page_article_info > .pmarker) .universal_content > div:not(.uninote):not(:last-child) a[target="_blank"]:style(pointer-events: none !important)
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
-.pronpic.org^$script,domain=pronpic.org
 lenta.ru##.scroll-to-site
 softportal.com##.st-browser__timer
 gtavicecity.ru##.stop-waiting
@@ -298,6 +298,7 @@ pb.wtf,piratbit.fun,piratbit.org,piratbit.pw,piratbit.top,vidak.icu#?#.table > t
 dynamo.kiev.ua##.video-scroll:remove()
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
+pronpic.org#@#:not(obhod-adblocka)
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport$subdocument,removeparam=|
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
@@ -307,6 +308,7 @@ dynamo.kiev.ua##.video-scroll:remove()
 root-nation.com##^.td-a-rec
 root-nation.com##^body > a
 otzovik.com##^script:has-text(an.yan)
+trupornolabs.org#@#a[href*="://pronpic.org/"]
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.to##body > div[id^="r"] > div[id^="r"][href]
@@ -320,6 +322,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page"] .widgets[role="ma
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 docs-python.ru##div[id^="yandex_rtb_"]:remove()
+pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 m.rp5.*#@#.adsbygoogle
@@ -345,6 +348,7 @@ rp5.*##+js(no-setTimeout-if, 0x)
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||my.mail.ru/video/embed/*autoplay=1$subdocument,removeparam=autoplay
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
+||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
