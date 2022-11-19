@@ -5,8 +5,8 @@
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
 ! --- uBO scriptlets injection rules & other ---
-*$script,redirect-rule=noopjs,domain=all-episodes.club|otzovik.com
-*$xmlhttprequest,redirect-rule=noopjs,domain=all-episodes.club|otzovik.com
+*$script,redirect-rule=noopjs,domain=otzovik.com
+*$xmlhttprequest,redirect-rule=noopjs,domain=otzovik.com
 .pronpic.org^$script,domain=pronpic.org
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
@@ -41,7 +41,7 @@
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 adme.media##+js(no-xhr-if, /wl-analytics\.tsp\.li/)
 afisha.ru,film.ru##+js(remove-attr, autoplay|loop, video, stay)
-all-episodes.club##+js(abort-on-property-read, advtss)
+all-episodes.one##+js(abort-on-property-read, advtss)
 allapteki.ru##+js(no-setTimeout-if, _modal)
 allboxing.ru##+js(abort-current-inline-script, atob, void)
 amazinghis.ru,moj-pes.ru##+js(abort-on-property-read, anOptions)

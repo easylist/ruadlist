@@ -644,7 +644,6 @@ edgecenter.ru##.confirmed_cookie
 imageban.ru#?#.container > .row:-abp-has(> div > a > [alt="Get it on Google Play"])
 slavyanskaya-kultura.ru##.containerban
 internet-technologies.ru#?#.content > div:-abp-has(> div div > iframe[src*="://yoomoney.ru/"])
-all-episodes.org##.content > noindex
 habr.com##.content-list > .content-list__item_news-block
 habr.com##.content-list > .content-list__item_post:not([id^="post"])
 hi-tech.ua##.content-single-part > #disqus_thread ~ *
@@ -1602,7 +1601,7 @@ delonghi.ru##[data-js-unit="CookieAgreeUnit"]
 avito.ru##[data-marker*="notification"]
 2gis.ru##[data-module="promoTooltip"]
 economistua.com##[data-owo-type]
-all-episodes.org##[data-permalink="https://all-episodes.org/news/telegramanonce"]
+all-episodes.one##[data-permalink^="https://all-episodes."][data-permalink$="/news/telegramanonce"]
 sberbank.ru##[data-pid^="CookieWarning-"]
 fosshub.com##[data-section-content-type="donate"]
 ictvukraine.tv##[data-storage-item*="cookiename_"]
