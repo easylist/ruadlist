@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221119.2342
+@version        0.20221121.1557
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5264,7 +5264,7 @@
         max-width: 100% !important
     }
     div[class*="kinopoisk-media-container_pending"], 
-    div[class*="styles_baseContainer"] > div[class*="height250"], 
+    div[class*="styles_baseContainer"] > div[class]:first-child, 
     div[style="min-width: 1px;"], div[style="min-width:1px"] {
         min-height: 0 !important
     }
