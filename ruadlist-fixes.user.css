@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221125.1112
+@version        0.20221126.1825
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -510,6 +510,7 @@
   domain("kp.md"),
   domain("kp.ru"),
   domain("lady.mail.ru"),
+  domain("mk.ru"),
   domain("radiokp.ru"),
   domain("spletnik.ru"),
   domain("teleprogramma.pro"),
@@ -1644,11 +1645,6 @@
 }
 
 @-moz-document domain("docs-python.ru") {
-    #donate-row {
-        background-color: #eeeeee !important;
-        filter: grayscale(1) !important;
-        font-size: initial !important
-    }
     pre:not(.highlight) {
         color: rgb(33, 37, 41) !important;
         user-select: text !important
