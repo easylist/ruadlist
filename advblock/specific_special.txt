@@ -1159,8 +1159,8 @@ yandex.ru##ymaps > div[class^="search-placemark-layout-connect_special"]
 ! Яндекс.Афиша
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##.afisha-profit-banner
 ! Яндекс.Видео
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.VideoViewer-DirectStubUnderRelated
-yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.VideoViewer-Info + div[class*="_placement_"]:-abp-has(> div[id]:empty)
+yandex.by,yandex.kz,yandex.ru,yandex.uz##.VideoViewer .Viewer-ScrollContainer > div[class]:first-child > div[id][class]:first-child:empty + div
+yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.VideoViewer-Block > div[class*="_placement_"]:-abp-has(> div[id]:empty)
 ! Яндекс.Здоровье (yandex.*/health)
 yandex.ru##.advert-sticks
 yandex.ru##.pharmacy-page-view__top-banner
