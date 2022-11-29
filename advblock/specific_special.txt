@@ -407,6 +407,16 @@ cloud.mail.ru##[class*="content__noads"]
 ! Ответы
 @@||otvet.mail.ru^$generichide
 otvet.mail.ru##div[class*="wrapper"] > div[class^="block_"] > div:empty
+! Питомцы
+pets.mail.ru##.pm-toolbar__group ~ .pm-toolbar__group .pm-toolbar__banner ~ .js-button [class]
+pets.mail.ru##.pypo-slot
+pets.mail.ru##.rb_banner
+pets.mail.ru##.sticky-springs__item .root-block-for-BlockSubscription
+pets.mail.ru##.top-ad-wrap
+pets.mail.ru##[data-name="bottom ad"]
+pets.mail.ru##[data-name="top ad"]
+pets.mail.ru#?#[data-qa="ArticlesList"] > div:-abp-has(> .pypo-slot)
+pets.mail.ru##div[class^="Gallery__slideSide_"]
 ! Погода
 pogoda.mail.ru###direct_bottom
 pogoda.mail.ru###right_300x300
@@ -493,23 +503,17 @@ video.mail.ru##.lvi-r-ban
 games.mail.ru##.mailru-visibility-check
 mail.ru,sportmail.ru##.mywidget__link_advert
 games.mail.ru##.navigation__promo
-pets.mail.ru##.pm-toolbar__group ~ .pm-toolbar__group .pm-toolbar__banner ~ .js-button [class]
 cards.mail.ru##.pt10.center
 dom.mail.ru##.rb
 mail.ru,sportmail.ru##.rb-relap
-pets.mail.ru##.rb_banner
 tv.mail.ru##.rb_body
 tv.mail.ru##.rbtopblock
 dom.mail.ru##.sticky-springs__item
-pets.mail.ru##.top-ad-wrap
 mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-abp-contains(Реклама))
-pets.mail.ru##[data-name="bottom ad"]
-pets.mail.ru##[data-name="top ad"]
 tv.mail.ru##[data-rb]
 minigames.mail.ru,okminigames.mail.ru#?#[href^="https://minigames.imgsmail.ru/static/css/social-likes."] ~ div[class]:-abp-has([href*="/info/adblock"])
 dom.mail.ru##div[article-item-type="conversionlink"]
 tv.mail.ru##div[class][id^="mailru"]
-pets.mail.ru##div[class^="Gallery__slideSide_"]
 pulse.mail.ru#?#div[class^="pl_"]:-abp-has(> * > [href*="t.mail.ru/redir"])
 pulse.mail.ru##div[data-partner-id]
 dom.mail.ru##div[data-qa="ArticlesList"] > [data-qa="ArticleThumb"] ~ :not([data-qa="ArticleThumb"] )
