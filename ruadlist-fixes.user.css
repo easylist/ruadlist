@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221126.1825
+@version        0.20221129.1345
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2412,6 +2412,12 @@
 @-moz-document domain("glavnoe.ua") {
     #main-block > .content-block {
         margin: auto !important
+    }
+}
+
+@-moz-document domain("glavpost.ua") {
+    #navbar {
+        position: relative !important
     }
 }
 
