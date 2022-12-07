@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221203.227
+@version        0.20221207.1417
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4753,6 +4753,12 @@
 }
 
 @-moz-document domain("tass.ru") {
+    div[class^="PageLayout_top_sticky_box"] {
+        position: relative !important
+    }
+    div[class*="PageLayout_top_sticky_box--large"] > div[class^="tass_pkg_compact_wrapper"] {
+        width: auto !important
+    }
     aside > div[class^="NavPanel_nav"] {
         width: unset !important
     }
