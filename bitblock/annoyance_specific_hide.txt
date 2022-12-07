@@ -1837,7 +1837,6 @@ hightech.plus##div[class^="moneyTeaser"]
 eanews.ru##div[class^="styled__Notice-sc-"]
 parlament.ua##div[class^="subscribe-text-block"]
 forklog.com##div[class^="subscribe_blk"]
-tass.ru##div[class^="tass_pkg_standard_widget-"]
 userstyles.org#?#div[class^="us-stylecard--"]:-abp-has(> .fallbackDiv)
 bibliofond.ru##div[class^="widget-promo"]
 shotam.info##div[class^="wp-block-ugb-"],div[class^="wp-block-ugb-"] + div
@@ -2414,3 +2413,7 @@ www.kinopoisk.*##div[class^="styles_sidebarContainer_"] > div[style^="position: 
 www.kinopoisk.*##header[style*="--header-height:"][style*="150px"] > .header-navigation:style(margin-top: 0 !important)
 www.kinopoisk.*##header[style*="--header-height:"][style*="150px"] > div > img
 www.kinopoisk.*##header[style*="--header-height:"][style*="150px"] div[class^="styles_logoContainer"] a[href*="utm_"]:not([href^="/"]):not([href^="www.kinopoisk.ru"]):style(pointer-events: none !important)
+! Специфические только для ABP/AB правила
+!#if ext_abp
+tass.ru##div[class^="tass_pkg_standard_widget-"]
+!#endif

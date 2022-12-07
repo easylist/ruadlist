@@ -66,7 +66,6 @@
 ||cdn.tnt-online.ru/masha_layer/index.html
 ||cdn.uxfeedback.ru/widget.js
 ||cdn.viqeo.tv/js/vq_starter.js$third-party,script,domain=dni.ru|~dom.mail.ru|~lady.mail.ru|lifehacker.ru|mail.ru
-||cdnvideo.ru/newtass/libs/jwplayer.js$script,domain=tass.ru
 ||champion.com.ua/get_battle_list$xmlhttprequest
 ||chastnik-m.ru/images/bg/
 ||chita.ru/common/*/subscription_news.php?action=check&
@@ -343,3 +342,8 @@
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.ru&widgetid=1$subdocument,domain=3dnews.ru
 ||youtube.com/get_endscreen?
 ||youtube.com^*modestbranding$subdocument,domain=depo.ua|igromania.ru|kanobu.ru
+!
+! Специфические только для ABP/AB правила
+!#if ext_abp
+||cdnvideo.ru/newtass/libs/jwplayer.js$script,domain=tass.ru
+!#endif
