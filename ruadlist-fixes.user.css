@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221208.1342
+@version        0.20221209.1234
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -581,6 +581,12 @@
     }
     body {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("agroreview.com") {
+    .main {
+        cursor: auto !important
     }
 }
 
