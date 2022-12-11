@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221209.1334
+@version        0.20221211.1451
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -373,15 +373,6 @@
     .ipblockgrid div[class*="mini"], .result ~ [class*="mini"], .socks, 
     div[class^="custom_proxy"] {
         display: none !important
-    }
-}
-
-@-moz-document domain("360tv.ru") {
-    #telegram-subscribe-container {
-        display: none !important
-    }
-    .subscribe_padding {
-        padding-top: 60px !important
     }
 }
 
@@ -1317,41 +1308,6 @@
     }
     .bg-top-menu {
         top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("by.tribuna.com"),
-  domain("sports.ru") {
-    html > body {
-        background-image: none !important;
-        background-color: #a7a7a7 !important
-    }
-    .page-layout {
-        margin-top: 0 !important
-    }
-    :not(.nba-global-nav-wrapper) + #branding-layout:not(#id) {
-        margin-top: 96px !important
-    }
-    #branding-layout:not(#id), body.img-bg {
-        padding-top: 0 !important
-    }
-    #branding-layout > * > * {
-        pointer-events: auto !important
-    }
-    #branding-layout {
-        pointer-events: none !important
-    }
-    [data-content-name="banner-static"] {
-        position: fixed !important;
-        left: -10000px !important;
-        transform: scale(0) !important;
-        display: none !important
-    }
-    #branding-layout > a {
-        width: 0 !important;
-        height: 0 !important;
-        left:-10000px !important
     }
 }
 
@@ -4667,11 +4623,41 @@
 }
 
 @-moz-document domain("sports.ru") {
+    html > body {
+        background-image: none !important;
+        background-color: #a7a7a7 !important
+    }
     .x5-popup-overlay {
         display: none !important
     }
+    .page-layout {
+        margin-top: 0 !important
+    }
+    :not(.nba-global-nav-wrapper) + #branding-layout:not(#id) {
+        margin-top: 96px !important
+    }
     body.is-fixed {
         overflow: auto !important
+    }
+    #branding-layout:not(#id), body.img-bg {
+        padding-top: 0 !important
+    }
+    #branding-layout > * > * {
+        pointer-events: auto !important
+    }
+    #branding-layout {
+        pointer-events: none !important
+    }
+    [data-content-name="banner-static"] {
+        position: fixed !important;
+        left: -10000px !important;
+        transform: scale(0) !important;
+        display: none !important
+    }
+    #branding-layout > a {
+        width: 0 !important;
+        height: 0 !important;
+        left:-10000px !important
     }
 }
 
