@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221211.1451
+@version        0.20221212.1528
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3704,6 +3704,9 @@
     #ratesTarget > div > div:first-child > div:first-child, 
     div[data-view="MyWidgetView.SmokyExtend"] {
         display: none !important
+    }
+    .layout > .block > .tag {
+        z-index: 1400 !important
     }
 }
 
