@@ -981,6 +981,9 @@ sports.ru##.news > .short-news > br
 sports.ru#?#.news > .short-news > p:-abp-has(> .advert_material)
 sports.ru#?#.news > .short-news > p:-abp-has(> .betting_insider)
 sports.ru##.place-for-ad
+sports.ru##.poll-variant__coeff
+sports.ru##.poll__ad-label
+sports.ru##.poll__bookmaker-link
 cyber.sports.ru##.polling
 sports.ru##.promo-link
 sports.ru#?#.recommendations__list > .recommendations__item:-abp-has([href*="promo"])
@@ -991,12 +994,9 @@ cyber.sports.ru##.teaser-bookmaker
 @@||r.sprts.ru/recommender/|$xmlhttprequest,domain=www.sports.ru
 sports.ruby.##[class*="parimatch"]
 sports.ru##[data-content-name="banner-dfp"]
-sports.ru##[data-control="Banners.AdFox"]
-sports.ru##[data-control="Banners.DFP"]
-sports.ru##[data-control="Banners.Direct"]
-sports.ru##[data-control="Banners.Smi2"]
-sports.ru##[data-control="Banners.Yandex"]
 sports.ru##[data-control^="Aliens."]
+sports.ru##[data-control^="Banners."]
+sports.ru##[data-is-ad-poll] .bookmaker-info
 sports.ru##[id*="ScriptRoot"]
 sports.ru##[id^="dfp-fullscreen-"]
 sports.ru##[id^="unit_"]
@@ -1008,13 +1008,13 @@ sports.ru##a[href*="click"][target="_blank"][style^="display"]
 sports.ru,tribuna.com##a[href*="utm_campai"]
 sports.ru##a[href="https://trbna.co/2u3V2dO"]
 cyber.sports.ru##a[href^="https://sprts.cc/"]
+sports.ru##a[href^="https://zen.yandex.ru/"]
 sports.ru##div[class*="SALES"] > .accordion__handle
 tribuna.com##div[class^="BookmakerGift_bookmaker-gift_"]
 tribuna.com##div[class^="Main_main-layout__empty-block"]
 sports.ru##div[data-control-noinit="Common.BetsTabs"]
 sports.ru##div[data-control="Common.AutoInit"]
-sports.ru##div[data-control="Common.BetsOnline"]
-sports.ru##div[data-control="Common.BetsTabs"]
+sports.ru##div[data-control^="Common.Bets"]
 sports.ru##img[src*="s5o.ru/source/_desktop/aliens/"]
 sports.ru##p > a[rel="nofollow"] > img[height][width]
 sports.ru##p > strong > [href^="https://sprts.cc/"]
