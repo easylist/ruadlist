@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221212.1947
+@version        0.20221214.2031
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -504,7 +504,6 @@
   domain("mk.ru"),
   domain("radiokp.ru"),
   domain("spletnik.ru"),
-  domain("teleprogramma.pro"),
   domain("wday.ru"),
   domain("woman.ru") {
     .l-wrapper > div[style^="position: absolute;"][style*="width: 30px;"][style*="height: 30px;"][style*="bottom: 13px;"][style*="left: 10px;"] {
@@ -4772,6 +4771,12 @@
     }
 }
 
+@-moz-document domain("teleprogramma.pro") {
+    .page-header {
+        height: auto !important
+    }
+}
+
 @-moz-document domain("texterra.ru") {
     html {
         overflow: auto !important
@@ -5072,7 +5077,7 @@
         animation: none !important
     }
     .ly.header {
-        top: 34px !important
+        top: -1px !important
     }
 }
 
