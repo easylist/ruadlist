@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221214.2031
+@version        0.20221215.1817
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4717,11 +4717,17 @@
     html {
         background-color: #dbdbdb !important
     }
+    #vbulletin_html body > div[id][class], html.home > body idiv[class][id] {
+        background: none !important
+    }
     #vbulletin_html .above_body {
         margin-bottom: auto !important
     }
     #footer {
         margin-top: 0 !important
+    }
+    #vbulletin_html #globalcontent {
+        margin-top: unset !important
     }
 }
 
