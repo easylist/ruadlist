@@ -432,7 +432,7 @@ pogoda.mail.ru##.pm-logo > .pm-logo__link + .pm-logo__link > .pm-logo__name__tit
 auto.mail.ru,deti.mail.ru,dom.mail.ru,kino.mail.ru,lady.mail.ru,tv.mail.ru##.pm-logo > .pm-logo__link + .pm-logo__link > .pm-logo__name__title:style(opacity: 1 !important; background-color: #005ff9 !important; top: 0 !important; right: -9px !important; height: 35px !important; width: 75px !important; z-index: 9999 !important; font-size: 0 !important; box-shadow: none !important)
 otvet.mail.ru##.pm-logo__link:style(width: auto !important; height: 36.6px !important; padding-top: 6px !important; overflow: hidden !important)
 otvet.mail.ru##.pm-logo__link__pic:matches-css(height: 39px):style(display: block !important)
-otvet.mail.ru##.pm-logo__link__pic:style(height: 39px; display: none !important)
+otvet.mail.ru##.pm-logo__link__pic:not([src*="/logo_ny/"]):style(height: 39px; display: none !important)
 mail.ru,sportmail.ru##.pm-menu__left__vk-logo
 calendar.mail.ru##[data-test-id="ecosystem-logo"]
 cloud.mail.ru,e.mail.ru,octavius.mail.ru##a[title="Экосистема VK"]
