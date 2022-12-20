@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221216.41
+@version        0.20221220.2114
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5186,6 +5186,19 @@
 @-moz-document domain("www.cnews.ru") {
     .mt-auto {
         margin-top: unset !important
+    }
+}
+
+@-moz-document domain("www.e1.ru") {
+    .columns-wrapper[class*="_branding"] {
+        background-color: white !important
+    }
+    ._branding.global-wrapper > .appHeader {
+        box-shadow: 1000px 0 0 0 #00204c, -1000px 0 0 0 #00204c !important
+    }
+    ._branding.global-wrapper {
+        max-width: 1280px !important;
+        padding-top: 0 !important
     }
 }
 
