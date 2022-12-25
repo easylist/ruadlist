@@ -306,6 +306,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /^https?://[^\s]+(\/eu_widget|\/news_widget\/|\/widget\/)/$third-party,subdocument,domain=agroter.com.ua|cvnews.cv.ua|ifnews.org.ua|lvnews.org.ua|rvnews.rv.ua|tenews.org.ua|ternopillive.com|uanews.org.ua
 /^https?://[a-z0-9]+\.in\.net/+[-a-z0-9_?&=]{25,}/$third-party,xmlhttprequest,domain=aniqit.com|anivod.com|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.animejoy.ru|video.doramatv.su
 /^https?://www\.spletnik\.ru/[^\s]{70,}/$script,xmlhttprequest,domain=spletnik.ru
+/^https?://www\.stratege\.ru\/misc\/[a-z0-9]{25,}/$image,domain=stratege.ru
 /ad*.tutu.ru^*_*.php|
 /adata/*$domain=pindosoff.net|pornosvideo.info|pornovkisku.com|teplomontag.net
 /add.php|$xmlhttprequest,domain=domonosok.tk|haes.tech|hqq.to|hqq.tv|porn-watch.ru|vidxhot.net
@@ -2849,7 +2850,6 @@ lada.kz/uploads/banners/
 ||stranamam.ru/i/*/*.jpg
 ||stranamam.ru^*/sp/
 ||stranaru.ru/media/ban/
-||stratege.ru/misc/e8f4c21f979cd92506d0bf8653eb13e4.jpg
 ||stream.1tv.ru/api/com-inject.json?r$script,domain=1tv.ru
 ||stream.1tv.ru/embed|$subdocument,domain=vz.ru
 ||streamapps.ru^$script
