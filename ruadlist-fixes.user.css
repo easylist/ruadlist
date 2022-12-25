@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221221.1631
+@version        0.20221225.1402
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -371,7 +371,9 @@
     }
 }
 
-@-moz-document domain("3dnews.ru") {
+@-moz-document
+  domain("3dnews.kz"),
+  domain("3dnews.ru") {
     html[lang="ru"] > body {
         background: radial-gradient(ellipse at center,#4e4e4e 0%,#1a1a1a 100%) !important
     }
