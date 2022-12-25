@@ -10,7 +10,7 @@ docs-python.ru###container-share-error:style(visibility: unset !important)
 myshared.ru###download_form > .modal-body
 vm.ru###onair > img[data-src="/img/player_cover.svg"]
 inoreader.com###reader_pane:style(padding-right: unset !important)
-3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
+3dnews.kz,3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
 kolizhanka.com.ua##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
@@ -91,7 +91,7 @@ vk.com,vk.ru##+js(abort-on-property-read, Unauthorized)
 vk.com,vk.ru##+js(abort-on-property-read, Unauthorized2)
 castle-tv.com##+js(abort-on-property-read, WebSocket)
 coderlessons.com,fixx.one,its-kids.ru,molitvy.guru,nizhny.ru,pro100hobbi.ru,publy.ru,samelectric.ru,svadba.expert,vibir.ru##+js(abort-on-property-read, XMLHttpRequest)
-3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,sm.news,sports.ru,www.goha.ru##+js(abort-on-property-read, Ya)
+3dnews.kz,3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,e1.ru,sm.news,sports.ru,www.goha.ru##+js(abort-on-property-read, Ya)
 forum.overclockers.ua##+js(abort-on-property-read, a_urls)
 sm.news##+js(abort-on-property-read, aab)
 vgtimes.ru##+js(abort-on-property-read, adblock_availability_check)
@@ -266,7 +266,7 @@ tortuga.wtf##+js(set-constant, Object.prototype.hideab, undefined)
 quote.ru,rbc.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
 vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopFunc)
-3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
+3dnews.kz,3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
 gismeteo.by,gismeteo.kz,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru,gismeteo.ua##+js(set-constant, Object.prototype.sendCHParams, noopFunc)
 frontend.vh.yandex.ru,widgets.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.videoAd, noopFunc)
 free-tor.info,korsars.info##+js(set-constant, String.fromCharCode, trueFunc)
@@ -382,7 +382,7 @@ rp5.*##+js(no-setTimeout-if, 0x)
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js|$important,script,domain=playground.ru
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=|,domain=1news.com.ua|7days.ru|factor.ua|gamasexual.com|gamasexual.ru|go.mail.ru|gor-master.ru|igromania.ru|kanobu.ru|segodnya.ua|sledcom.ru|sm.news|sport-express.ru|sports.ru|u24.ua|xn--b1ats.xn--80asehdb
-||youtube.com/embed/?enablejsapi=1&origin=*3dnews.ru&widgetid=1$subdocument,badfilter,domain=3dnews.ru
+||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.kz|3dnews.ru
 ||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|eda.ru|gazeta.ru|lenta.ru|letidor.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
 !
 ! Mail.RU
