@@ -1406,7 +1406,6 @@ $removeparam=ysclid
 ?sub_confirmation=1$document,removeparam=|,domain=youtube.com
 ?topblock$document,removeparam=|,domain=3dnews.kz|3dnews.ru
 ?ymclid=$document,removeparam=|
-@@/forum\/(login|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
 aff_fcid=$document,removeparam=|,domain=aliexpress.*|~campaign.aliexpress.com
 algo_pvid=$document,removeparam=|,domain=aliexpress.*
 block_click=$removeparam=block_click,domain=rambler.ru
@@ -1454,3 +1453,9 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||yandex.*/search/$document,removeparam=search_source,domain=yandex.*
 ||yandex.ru/?clid=$document,removeparam=|,domain=yandex.*
 ||ykt.ru^$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru
+! исключения
+@@/forum\/(login|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
+@@|https://www.sravni.ru/$subdocument,removeparam=utm_campaign
+@@|https://www.sravni.ru/$subdocument,removeparam=utm_content
+@@|https://www.sravni.ru/$subdocument,removeparam=utm_medium
+@@|https://www.sravni.ru/$subdocument,removeparam=utm_source
