@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221225.1402
+@version        0.20221227.1617
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -125,6 +125,12 @@
     }
     body.show-cookies ._opo_-header {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("24smi.org") {
+    .out__inner > header {
+        visibility: inherit !important
     }
 }
 
@@ -678,6 +684,9 @@
 @-moz-document domain("amedia.online") {
     header.top {
         margin-bottom: 0 !important
+    }
+    .film-desc {
+        min-height: unset !important
     }
 }
 
