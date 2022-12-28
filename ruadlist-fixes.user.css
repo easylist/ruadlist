@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221227.2101
+@version        0.20221229.105
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -99,31 +99,11 @@
     }
 }
 
-@-moz-document
-  domain("1plus1.international"),
-  domain("1plus1.ua"),
-  domain("1plus1.video"),
-  domain("2plus2.ua"),
-  domain("bigudi.tv"),
-  domain("paramountcomedy.com.ua"),
-  domain("plus-plus.tv"),
-  domain("tet.tv") {
+@-moz-document domain("1plus1.international") {
     .cookies {
         display: none !important
     }
-    body {
-        padding-top: 0 !important
-    }
     .header {
-        top: 0 !important
-    }
-}
-
-@-moz-document domain("1plus1.video") {
-    ._opo_-container-playlist-player {
-        background-color: #1A1F24 !important
-    }
-    body.show-cookies ._opo_-header {
         top: 0 !important
     }
 }
@@ -374,6 +354,15 @@
     .ipblockgrid div[class*="mini"], .result ~ [class*="mini"], .socks, 
     div[class^="custom_proxy"] {
         display: none !important
+    }
+}
+
+@-moz-document domain("2plus2.ua") {
+    body {
+        padding-top: 0 !important
+    }
+    .header {
+        top: 0 !important
     }
 }
 
@@ -1143,6 +1132,15 @@
     body[class*="-ru"] > .content > div[class]:last-child > div > div[class]:first-child ~ div:nth-child(n+1), 
     body[class*="-ru"] > div[class]:not([id]):nth-child(-n+2) {
         display: none !important
+    }
+}
+
+@-moz-document domain("bigudi.tv") {
+    body {
+        padding-top: 0 !important
+    }
+    .header {
+        top: 0 !important
     }
 }
 
@@ -4036,6 +4034,15 @@
     }
     .open-main-container {
         margin-top: 60px !important
+    }
+}
+
+@-moz-document domain("plus-plus.tv") {
+    body {
+        padding-top: 0 !important
+    }
+    .header {
+        top: 0 !important
     }
 }
 
