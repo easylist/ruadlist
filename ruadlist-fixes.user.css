@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221229.105
+@version        0.20221229.1339
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -103,6 +103,13 @@
     .cookies {
         display: none !important
     }
+}
+
+@-moz-document
+  domain("1plus1.international"),
+  domain("2plus2.ua"),
+  domain("bigudi.tv"),
+  domain("plus-plus.tv") {
     .header {
         top: 0 !important
     }
@@ -357,12 +364,12 @@
     }
 }
 
-@-moz-document domain("2plus2.ua") {
+@-moz-document
+  domain("2plus2.ua"),
+  domain("bigudi.tv"),
+  domain("plus-plus.tv") {
     body {
         padding-top: 0 !important
-    }
-    .header {
-        top: 0 !important
     }
 }
 
@@ -1132,15 +1139,6 @@
     body[class*="-ru"] > .content > div[class]:last-child > div > div[class]:first-child ~ div:nth-child(n+1), 
     body[class*="-ru"] > div[class]:not([id]):nth-child(-n+2) {
         display: none !important
-    }
-}
-
-@-moz-document domain("bigudi.tv") {
-    body {
-        padding-top: 0 !important
-    }
-    .header {
-        top: 0 !important
     }
 }
 
@@ -3356,18 +3354,21 @@
         margin-top: 4px !important;
         margin-bottom: 4px !important
     }
-    body > .zeropixel ~ * .tabs-content > :first-child > a {
+    .tabs-content > :first-child > a {
         max-height: 5em !important;
         position: static !important
     }
-    body > .zeropixel ~ * .tabs-content > :first-child > a > .news-main__text-wrapper {
+    .tabs-content > :first-child > a > .news-main__text-wrapper {
         max-height: 5em !important;
         white-space: pre-line !important
     }
-    body > .zeropixel ~ * .tabs-content > :first-child {
+    .tabs-content > :first-child ~ li {
+        max-width: 660px !important
+    }
+    .tabs-content > :first-child {
         max-width: 750px !important
     }
-    body > .zeropixel ~ * .tabs-content > :first-child > a > .news-main__img {
+    .tabs-content > :first-child > a > .news-main__img {
         max-width: unset !important;
         min-width: unset !important;
         height: 5em !important;
@@ -3379,8 +3380,11 @@
     body:not(.js-module) .tabs > .tabs__item {
         padding: 0 7px !important
     }
-    body > .zeropixel ~ * .tabs-content > :first-child > a::after {
+    .tabs-content > :first-child > a::after {
         position: unset !important
+    }
+    .tabs-content .news-item_regular > a {
+        white-space: pre-line !important
     }
     body:not(.js-module) .tabs + div[class] > :first-child {
         width: 100% !important
@@ -4034,15 +4038,6 @@
     }
     .open-main-container {
         margin-top: 60px !important
-    }
-}
-
-@-moz-document domain("plus-plus.tv") {
-    body {
-        padding-top: 0 !important
-    }
-    .header {
-        top: 0 !important
     }
 }
 
