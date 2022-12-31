@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20221230.1349
+@version        0.20221231.1540
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -485,11 +485,14 @@
   domain("city"),
   domain("club"),
   domain("co"),
+  domain("com"),
   domain("in"),
   domain("ink"),
   domain("loan"),
   domain("me"),
   domain("name"),
+  domain("net"),
+  domain("org"),
   domain("rest"),
   domain("run"),
   domain("sh"),
@@ -497,10 +500,7 @@
   domain("tv"),
   domain("vip"),
   domain("website"),
-  domain("win"),
-  domain("org"),
-  domain("net"),
-  domain("com") {
+  domain("win") {
     body[class^="has-brand active-brand"][class*="fixed-header"] {
         padding-top: 0 !important
     }
@@ -3294,6 +3294,7 @@
     }
     #asteroid-cloud, #asteroid-games, #bubble-home, 
     .grid__main-col > .tgb-wrapper, .ph-ext, 
+    .tabs-content .news-item_regular > a::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
@@ -4402,12 +4403,6 @@
     }
     .mfp-wrap {
         position: unset !important
-    }
-}
-
-@-moz-document domain("sergeistrelec.ru") {
-    div[id][style^="background"][style*="fixed"][style*="z-index"] {
-        display: none !important
     }
 }
 
