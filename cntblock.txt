@@ -1153,8 +1153,8 @@ dzen.*##.zen-page .content div[class*="__bannerMain"]
 dzen.*##div[class*=" adv_pos_index-"]
 dzen.*##div[class*="-sidebar__ad"]
 dzen.*#?#div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
+dzen.*,ya.*,~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
 dzen.*,yandex.*##.mg-grid__col div[class*="_type_native"]
-dzen.*,~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
 mail.yandex.*##html.with-widgets .mail-App-Footer-Group_reverse > .mail-App-Footer-Item > [href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
@@ -1230,17 +1230,17 @@ yandex.*#?#.touch-feed > div > .feed-item[id^="zen-row-"]:-abp-has([class^="zen-
 @@||an.yandex.ru/meta/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/meta/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/partner-code-bundles/*.js|$xmlhttprequest,domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||an.yandex.ru/resource/spacer.gif|$image,domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/resource/spacer.gif|$image,domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/system/context.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||yandex.ru/ads/system/context.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yandex.ru/ads/system/context.js|$domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/header-bidding.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/daas/atom.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||yastatic.net/pcode/adfox/header-bidding.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||yastatic.net/pcode/adfox/loader.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
-dzen.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
+@@||yastatic.net/pcode/adfox/header-bidding.js|$domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yastatic.net/pcode/adfox/loader.js|$domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+dzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
 ~yandex.net,yandex.*##body.b-page > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
 !
 ! 4pda.to (ранее 4pda.ru)
