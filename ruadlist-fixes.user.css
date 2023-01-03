@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230102.2018
+@version        0.20230103.1549
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1237,6 +1237,12 @@
         width: auto !important;
         position: unset !important;
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("burninghut.ru") {
+    .layout-default__content--brand {
+        margin-top: 0 !important
     }
 }
 
@@ -2896,12 +2902,6 @@
     }
 }
 
-@-moz-document domain("kino-teatr.ru") {
-    nav > #menu_line {
-        top: 3rem !important
-    }
-}
-
 @-moz-document domain("kino-teatr.ua") {
     html:not(#id) {
         background: none !important
@@ -3149,6 +3149,12 @@
     body:not(#id) {
         overflow: auto !important;
         margin-right: auto !important
+    }
+}
+
+@-moz-document domain("lifehacker.ru") {
+    .recipes-layout__content {
+        margin-top: 0 !important
     }
 }
 
@@ -5371,9 +5377,13 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.uz") {
+    .MMSidebar-Card div[class$="-Incut"][style^="margin-bottom: 4px;"], 
+    .MediaViewer .DirectInline, 
+    .MediaViewer-LayoutFooter div[class$="-PCodeContainer"], 
     .mini-suggest__item > a[href*="://yabs.yandex."][href*="/count/"], 
     .mini-suggest__item > a[href*="://yandex."][href*="/clck/"], 
-    .mini-suggest__item > a[href][target="_blank"] {
+    .mini-suggest__item > a[href][target="_blank"], .serp-list .MastHead, 
+    .serp-list [data-state*="directType"] {
         display: none !important
     }
 }
@@ -5393,9 +5403,8 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.uz") {
-    .MediaViewer .DirectInline, .Root > .ECommerceCarousel, 
-    ._map_ready .search-advert-badge__advert, .adv_pos_compare-bottom, 
-    .adv_pos_compare-side, .adv_pos_popup, 
+    .Root > .ECommerceCarousel, ._map_ready .search-advert-badge__advert, 
+    .adv_pos_compare-bottom, .adv_pos_compare-side, .adv_pos_popup, 
     .b-page.overlay[data-bem*="serp-metrika"] > .DistrSplashscreen, 
     .blocks-grid__item_static > .direct_type_stripe, 
     .serp.main__carousel .Label_theme_direct, 
@@ -5403,6 +5412,7 @@
     .sidebar-container ._id_branding_tele2, 
     .sidebar-container .card-providers-view__item._big, 
     .sidebar-container .search-advert-badge, 
+    .sidebar-container a[class*="_id_campaign_"], 
     .sidebar-container div[class^="banner-placeholder"], .turbo-advert__loader, 
     body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
     body > .route-tip-view, div[aria-label="Реклама"], 
@@ -5447,10 +5457,7 @@
 }
 
 @-moz-document domain("yandex.ru") {
-    .MMSidebar-Card div[class$="-Incut"][style^="margin-bottom: 4px;"], 
-    .MediaViewer-LayoutFooter div[class$="-PCodeContainer"], 
-    .serp-list [data-state*="directType"], .stack .sticky-banner-container, 
-    .stack div[class^="modal-R-A"] {
+    .stack .sticky-banner-container, .stack div[class^="modal-R-A"] {
         display: none !important
     }
     div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section > div:first-child + div div ~ div ~ div ~ div > div {
