@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230103.1749
+@version        0.20230105.1929
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -679,16 +679,12 @@
 }
 
 @-moz-document
-  domain("anidub.club"),
-  domain("anidub.life"),
-  domain("anidub.link"),
-  domain("anime.anidub.com"),
-  domain("online.anidub.com"),
-  domain("rusanime.ru") {
+  domain("anidub.vip"),
+  domain("anidubonline.com") {
     .content > .sect-header {
         margin-bottom: 0 !important
     }
-    #main > .wrap-center {
+    main > .wrap-center {
         margin-left: auto !important;
         margin-right: auto !important
     }
