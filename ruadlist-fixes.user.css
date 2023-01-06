@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230106.1505
+@version        0.20230106.1624
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1428,6 +1428,9 @@
 }
 
 @-moz-document domain("coop-land.ru") {
+    #snow {
+        animation: none !important
+    }
     body:not(#id) > .header {
         margin-bottom: auto !important
     }
