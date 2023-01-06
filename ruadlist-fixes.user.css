@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230105.1929
+@version        0.20230106.1505
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3270,6 +3270,15 @@
     .sitenotice > .floatleft > a > img {
         height: 70px !important;
         width: auto !important
+    }
+}
+
+@-moz-document domain("mag.auto.ru") {
+    .page > .Backdrop[role="button"] {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
     }
 }
 
