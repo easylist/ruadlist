@@ -1030,7 +1030,6 @@ tulapressa.ru##.news_image_social
 crimea-news.com##.news_info > .tags
 chas.cv.ua##.news_portal_social_media
 pravda.com.ua##.news_social_buttons
-aimp.ru##.news_story > a ~ b ~ a > img[src^="/images/"][src$=".gif"]
 vesti.ru##.newsfooter > em
 kursk-izvestia.ru##.newsimg_soc
 glavnoe.ua##.newssocial-label
@@ -1945,6 +1944,7 @@ armtorg.ru##a[itemprop="sameAs"][rel="noreferrer nofollow"]
 gazeta.uz##a[onclick*="TelegramChannel"]
 toptracker.ru##a[onclick^="content_share"]
 qiq.ws##a[onclick^="return addSoc"]
+aimp.ru##a[target="_blank"] > img[src*="/images/logo-"]
 docs.cntd.ru##a[title="Facebook"]
 currenttime.tv##a[title="Telegram"]
 docs.cntd.ru##a[title="ВКонтакте"]
@@ -1984,7 +1984,6 @@ itsider.com.ua##aside div[class*="kpvmzjg"]
 vcrti.com.ua##aside#gkInset
 bessarabiainform.com#?#aside:-abp-has(> .execphpwidget > iframe[src*="facebook.com"])
 gta.com.ua#?#b:-abp-contains(Поделиться:)
-aimp.ru#?#b:-abp-contains(Присоединяйтесь к нам)
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app [data-gtm-el="content-body"] > p:-abp-has(> a[href*="/t.me/"])
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-has(> a[href^="https://invite.viber.com/"])
 browserss.ru##body > #container + [id*="_master_header"] > [id$="header_Container"] > [id^="wb_Image"]
