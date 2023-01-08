@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230106.2252
+@version        0.20230108.1236
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1956,8 +1956,8 @@
 @-moz-document
   domain("filmix.ac"),
   domain("filmix.gay"),
-  domain("filmix.life"),
   domain("filmix.homes"),
+  domain("filmix.life"),
   domain("filmix.tech"),
   domain("filmix.zone") {
     .main-wrapper, .page-wrapper {
@@ -2369,7 +2369,7 @@
 }
 
 @-moz-document domain("goha.ru") {
-    .layout-menu-header__links span[class*="pulse"]:before {
+    .layout-menu-header__links span[class*="pulse"]::before {
         animation: none !important
     }
 }
@@ -2593,7 +2593,7 @@
 }
 
 @-moz-document domain("hotline.ua") {
-    .reset-scroll:before, div[data-lightbox-id="product-fast-question"] {
+    .reset-scroll::before, div[data-lightbox-id="product-fast-question"] {
         display: none !important
     }
     .reset-scroll {
@@ -3304,12 +3304,13 @@
 }
 
 @-moz-document domain("mail.ru") {
-    .article__item_source_viqeo .article__container:before {
+    .article__item_source_viqeo .article__container::before {
         content: initial !important
     }
     #asteroid-cloud, #asteroid-games, #bubble-home, 
     .grid__main-col > .tgb-wrapper, .ph-ext, 
     .tabs-content .news-item_regular::after, 
+    .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
@@ -3320,6 +3321,9 @@
     body:not(.js-module) .horoscope ~ [class], 
     body:not(.js-module) .searchContainer ~ div > a.dmb {
         display: none !important
+    }
+    .weather_right-column .weather__block {
+        height: auto !important
     }
     body > .grid .grid__rcol {
         margin-left: 0 !important
@@ -3471,7 +3475,7 @@
         -webkit-filter: none !important;
         filter: none !important
     }
-    .mobile-registration-form, [class*="LayoutGuest_blur__"]:before {
+    .mobile-registration-form, [class*="LayoutGuest_blur__"]::before {
         display: none !important
     }
 }
@@ -3554,7 +3558,7 @@
 }
 
 @-moz-document domain("motorpage.ru") {
-    body.noscroll:before {
+    body.noscroll::before {
         content: none !important
     }
     body.noscroll {
@@ -3918,15 +3922,6 @@
     }
 }
 
-@-moz-document domain("peka2.tv") {
-    .body--has-ad:before, advert-header-banner {
-        display: none !important
-    }
-    .body--has-ad {
-        padding-top: 0 !important
-    }
-}
-
 @-moz-document domain("penzainform.ru") {
     body {
         cursor: auto !important;
@@ -4198,7 +4193,7 @@
 }
 
 @-moz-document domain("rbc.ru") {
-    .g-icon-big.g-play:after {
+    .g-icon-big.g-play::after {
         bottom: calc(50% - 55px) !important;
         left: calc(50% - 55px) !important;
         cursor: pointer !important
