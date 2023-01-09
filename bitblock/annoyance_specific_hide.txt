@@ -2250,6 +2250,7 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz,mail
 yandex.by,yandex.com,yandex.kz,yandex.ru,yandex.uz##.CbirPanel-OboardingDrag
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.DistrPopup
 yandex.by,yandex.com,yandex.kz,yandex.ru,yandex.uz##.MMUnauthPopup
+yandex.by,yandex.kz,yandex.ru,yandex.uz##.NewYearCursors
 taxi.yandex.by,taxi.yandex.kz,taxi.yandex.ru,taxi.yandex.uz##.Promotion
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.RknPrevention
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.Warning_type_roskomnadzor
@@ -2381,6 +2382,9 @@ dzen.ru##.zen-page .content div[class*="__bannerMain"]
 dzen.ru#?#div:-abp-has(> .mg-grid__item_type_card > div[class*="loader_animated"])
 dzen.ru##div[class*="column_myTarget"]
 !#endif
+! специфические для uBO правила
+~yandex.net,yandex.*##:matches-path(/search/) .SerpFooter-Carriage
+~yandex.net,yandex.*##:matches-path(/search/) .SerpFooter:remove-class(SerpFooter_ny)
 !
 ! - Youtube -
 youtube.com###alert-banner
