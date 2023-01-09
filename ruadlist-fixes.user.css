@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230108.1236
+@version        0.20230109.1357
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5417,7 +5417,9 @@
     .sidebar-container .card-providers-view__item._big, 
     .sidebar-container .search-advert-badge, 
     .sidebar-container a[class*="_id_campaign_"], 
-    .sidebar-container div[class^="banner-placeholder"], .turbo-advert__loader, 
+    .sidebar-container div[class^="banner-placeholder"], 
+    .stack .sticky-banner-container, .stack div[class^="modal-R-A"], 
+    .turbo-advert__loader, 
     body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
     body > .route-tip-view, div[aria-label="Реклама"], 
     div[class*=" news-"][class$="_mode_daas"], 
@@ -5461,9 +5463,6 @@
 }
 
 @-moz-document domain("yandex.ru") {
-    .stack .sticky-banner-container, .stack div[class^="modal-R-A"] {
-        display: none !important
-    }
     div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section > div:first-child + div div ~ div ~ div ~ div > div {
         min-height: 0 !important
     }
