@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230109.2255
+@version        0.20230110.1659
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -631,6 +631,12 @@
     }
     body * {
         transition: none !important
+    }
+}
+
+@-moz-document domain("alllyr.ru") {
+    .fancybox-enabled {
+        overflow: auto !important
     }
 }
 
@@ -1735,6 +1741,20 @@
     }
     body[style="overflow: hidden;"] {
         overflow-y: unset !important
+    }
+}
+
+@-moz-document
+  domain("dzen.ru"),
+  domain("ya.ru"),
+  domain("yandex.by"),
+  domain("yandex.kz"),
+  domain("yandex.ru"),
+  domain("yandex.uz") {
+    .mini-suggest__item > a[href*="://yabs.yandex."][href*="/count/"], 
+    .mini-suggest__item > a[href*="://yandex."][href*="/clck/"], 
+    .mini-suggest__item > a[href][target="_blank"] {
+        display: none !important
     }
 }
 
@@ -5384,10 +5404,8 @@
     .MMSidebar-Card div[class$="-Incut"][style^="margin-bottom: 4px;"], 
     .MediaViewer .DirectInline, 
     .MediaViewer-LayoutFooter div[class$="-PCodeContainer"], 
-    .mini-suggest__item > a[href*="://yabs.yandex."][href*="/count/"], 
-    .mini-suggest__item > a[href*="://yandex."][href*="/clck/"], 
-    .mini-suggest__item > a[href][target="_blank"], .serp-list .MastHead, 
-    .serp-list [data-state*="directType"], .serp-list [data-state*="offersData"] {
+    .serp-list .MastHead, .serp-list [data-state*="directType"], 
+    .serp-list [data-state*="offersData"] {
         display: none !important
     }
 }
