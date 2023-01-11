@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230110.1659
+@version        0.20230111.2048
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3784,7 +3784,7 @@
 }
 
 @-moz-document domain("nova.rambler.ru") {
-    span[class^="Menu__browser--"] {
+    div[class^="LayoutSearch__serp"] > section > article[class*=" Serp__item"]:not([class^=" Serp__item"]) {
         display: none !important
     }
     html > body:not(#id) {
