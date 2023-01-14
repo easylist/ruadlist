@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230113.1451
+@version        0.20230114.1456
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -463,16 +463,10 @@
   domain("afisha.yandex.kz"),
   domain("afisha.yandex.ru"),
   domain("afisha.yandex.uz") {
-    [data-banner-id], div[class$="-banner"], 
-    div[data-bem*="height"][data-bem*="R-A-"], 
-    main > .rubric-type-landing__section [data-component="RubricLandingContentDesktop"] {
+    div[class$="-banner"], div[data-bem*="height"][data-bem*="R-A-"], 
+    div[id][style="display: block; position: static; opacity: 1;"], 
+    div[style^="width:100%;height:2"][style$="px;display:block"] {
         display: none !important
-    }
-    div[class*="_tld_"][id^="uniq"]:empty {
-        height: unset !important
-    }
-    .content-event_commercial_yes {
-        margin-top: auto !important
     }
 }
 
@@ -1114,17 +1108,6 @@
         left: 0 !important;
         width: 100% !important;
         margin-left: 0 !important
-    }
-}
-
-@-moz-document
-  domain("biqle.ru"),
-  domain("valetudo.ru") {
-    body > * {
-        pointer-events: auto !important
-    }
-    body {
-        pointer-events: none !important
     }
 }
 
@@ -4994,6 +4977,15 @@
     }
     .fancybox-lock body {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("valetudo.ru") {
+    body > * {
+        pointer-events: auto !important
+    }
+    body {
+        pointer-events: none !important
     }
 }
 
