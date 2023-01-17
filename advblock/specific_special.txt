@@ -2,7 +2,6 @@
 !
 ! Специфические только для ABP/AB правила
 !#if ext_abp
-/^https?://24smi\.org/*[/]*[/][^\s]{70,}/$xmlhttprequest,domain=24smi.org
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://amedia\.online/[^\s]{70,}/$script,domain=amedia.online
 /^https?://irecommend\.ru/*[/]*[/][^\s]{10,145}$/$xmlhttprequest,domain=irecommend.ru
@@ -20,6 +19,7 @@ docs-python.ru###msg-email
 docs-python.ru##.text-danger.nav-link
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
+||24smi.org^$xmlhttprequest,domain=24smi.org
 ||amedia.online^$xmlhttprequest,domain=amedia.online
 ||docs-python.ru^$csp=script-src 'self' * 'unsafe-eval'
 !#endif
