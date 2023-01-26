@@ -5,13 +5,9 @@
 !#if ext_abp
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://amedia\.online/[^\s]{70,}/$script,domain=amedia.online
-/^https?://irecommend\.ru/*[/]*[/][^\s]{80,}/$script,domain=irecommend.ru
 @@||code.moviead55.ru/jmap.php$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
 @@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
 @@||code.moviead55.ru/vast2?key=|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
-@@||irecommend.ru/sites/all/libraries/jquery.overlayScrollbars/jquery.overlayScrollbars.js$script,domain=irecommend.ru
-@@||irecommend.ru/sites/all/libraries/mini-upload-form/assets/js/jquery.iframe-transport.js$script,domain=irecommend.ru
-@@||irecommend.ru/sites/all/modules/_custom/imagefield_zip/uploader_ckeditor/plugin.js$script,domain=irecommend.ru
 amedia.online###loading-layer
 amedia.online##.js-custom-navigation
 cq.ru#?#div:-abp-properties(content: "Реклама")
@@ -22,7 +18,6 @@ kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(
 ||24smi.org^$xmlhttprequest,domain=24smi.org
 ||amedia.online^$xmlhttprequest,domain=amedia.online
 ||docs-python.ru^$csp=script-src 'self' * 'unsafe-eval'
-||irecommend.ru^$xmlhttprequest,domain=irecommend.ru
 !#endif
 !
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
