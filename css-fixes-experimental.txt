@@ -1561,6 +1561,11 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-container .search-advert-badge
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-container a[class*="_id_campaign_"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-container div[class^="banner-placeholder"]
 ! ---
+! кью
+yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div + div > div[style] > div[style] > div > div:last-child div:style(min-height: 0 !important)
+yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > div:style(min-height: 0 !important)
+yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > span ~ div > div[class]:style(min-height: 0 !important)
+! ---
 ! маркет
 market.yandex.by,market.yandex.kz,market.yandex.ru,market.yandex.uz##div[data-zone-name="direct-ads-gallery"]
 ! ---
@@ -1610,7 +1615,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##body.b-page > .b-page__container .card.
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="exp_ym-referrer-original-url"] div[class*="_type_"]:style(min-height: 0 !important; height: unset !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="exp_ym-referrer-original-url"] div[class*="rect"][id][data-name]:style(min-height: 0 !important; height: unset !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="exp_ym-referrer-original-url"] div[class*="turbo-"][class*="load-error"]:style(min-height: 0 !important; margin-top: unset !important; margin-bottom: unset !important)
-yandex.ru##div > .banner-root ~ .page-root > #page div[class^="_"] > div > script + section > div:first-child + div div ~ div ~ div ~ div > div:style(min-height: 0 !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##div[aria-label="Реклама"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*=" news-"][class$="_mode_daas"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"]
