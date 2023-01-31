@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230130.1842
+@version        0.20230131.2149
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2960,8 +2960,10 @@
 }
 
 @-moz-document domain("kinometro.ru") {
-    body {
-        background-color: transparent !important
+    body > .wrapper {
+        background: none !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important
     }
 }
 
@@ -4372,6 +4374,12 @@
     }
 }
 
+@-moz-document domain("s13.ru") {
+    body > .wrapper {
+        top: 0 !important
+    }
+}
+
 @-moz-document domain("sc2tv.ru") {
     .body--brranding > .content {
         margin-top: unset !important
@@ -5481,9 +5489,9 @@
 }
 
 @-moz-document domain("yandex.ru") {
-    div > .banner-root ~ .page-root > #page >  div[class]:first-child > div[class]:first-child + div + div > div[style] > div[style] > div > div:last-child div, 
-    div > .banner-root ~ .page-root > #page >  div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > div, 
-    div > .banner-root ~ .page-root > #page >  div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > span ~ div > div[class] {
+    div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div + div > div[style] > div[style] > div > div:last-child div, 
+    div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > div, 
+    div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > span ~ div > div[class] {
         min-height: 0 !important
     }
 }
