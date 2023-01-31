@@ -387,6 +387,7 @@ rp5.*##+js(no-setTimeout-if, 0x)
 ||strm.yandex.ru^$media,redirect=empty,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
 ||ts.kg/olol*.mp4$media,redirect=noop-0.1s.mp3
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|
+||v*.plrjs.org/*.xml$important,xmlhttprequest,redirect=noop.txt
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=autostart
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
 ||viqeo.tv/*/vq_starter.js$third-party,script,domain=dni.ru|~dom.mail.ru|kanobu.ru|~lady.mail.ru|lifehacker.ru|mail.ru|pravda.ru|sportmail.ru|womanhit.ru
