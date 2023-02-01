@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230201.1715
+@version        0.20230202.44
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4280,7 +4280,7 @@
 }
 
 @-moz-document domain("rg.ru") {
-    div[class^="EditorialBlock_spiegelWrapper"] {
+    div[class*="_spiegelWrapper"] {
         padding-top: 0 !important
     }
 }
