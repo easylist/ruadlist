@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230202.44
+@version        0.20230202.1610
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3185,6 +3185,9 @@
     [style="margin-top:-24px;"] ~ .leftcolumn > div ~ div, 
     [style="margin-top:-24px;"] ~ br + div {
         display: none !important
+    }
+    .allpage .currency a {
+        pointer-events: none !important
     }
     .allpageinner > div:not(.header) > div[class*=" "] ~ .logo > a > span {
         top: inherit !important;
