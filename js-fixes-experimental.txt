@@ -485,6 +485,9 @@ sinoptik.ua##style:not(#id):style(all: inherit !important)
 radio.nv.ua#@#style:first-child + div[class]:not([class*=" "]):not([class*="-"]):not([class*="_"]):not(.container)
 !
 ! ukr.net
+!#if !env_firefox
+www.ukr.net#@##portal-tags a:style(white-space: pre-wrap !important)
+!#endif
 mail.ukr.net###top_banner:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##+js(abort-on-property-read, vpb)
 www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
