@@ -332,6 +332,7 @@ dynamo.kiev.ua##.video-scroll:remove()
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
 pronpic.org#@#:not(obhod-adblocka)
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport$subdocument,removeparam=|
+@@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-video$subdocument,removeparam=|
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||st.top100.ru/top100/top100.js|$script,badfilter,domain=auto.rambler.ru|news.rambler.ru
