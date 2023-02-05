@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230204.2242
+@version        0.20230205.1835
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1084,18 +1084,6 @@
 @-moz-document domain("bestpersons.ru") {
     #userTabs {
         float: none !important
-    }
-}
-
-@-moz-document
-  domain("beta.gismeteo.ru"),
-  domain("www.gismeteo.by"),
-  domain("www.gismeteo.kz"),
-  domain("www.gismeteo.md"),
-  domain("www.gismeteo.ru") {
-    body[class*="-ru"] > .content > div[class]:last-child > div > div[class]:first-child ~ div:nth-child(n+1), 
-    body[class*="-ru"] > div[class]:not([id]):nth-child(-n+2) {
-        display: none !important
     }
 }
 
@@ -2340,6 +2328,24 @@
 @-moz-document domain("gdetraffic.com") {
     .main.with-top-menu {
         padding-top: 100px !important
+    }
+}
+
+@-moz-document domain("gismeteo.ru") {
+    .maps .maps-list {
+        display: inherit !important
+    }
+    .section-map-grid {
+        display: unset !important
+    }
+    .maps .maps-block {
+        height: auto !important
+    }
+    .section-map-grid {
+        margin-bottom: 20px !important
+    }
+    .project-maps .wrap, .project-weather .wrap {
+        max-width: 1010px !important
     }
 }
 
@@ -5223,12 +5229,6 @@
     ._branding.global-wrapper {
         max-width: 1280px !important;
         padding-top: 0 !important
-    }
-}
-
-@-moz-document domain("www.gismeteo.ru") {
-    .section-map-grid {
-        margin-bottom: 20px !important
     }
 }
 

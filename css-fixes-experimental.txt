@@ -591,10 +591,14 @@ gazeta.ua###ad-300 + .w:style(margin-top: unset !important)
 ! ---
 gdetraffic.com##.main.with-top-menu:style(padding-top: 100px !important)
 ! ---
-beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##body[class*="-ru"] > .content > div[class]:last-child > div > div[class]:first-child ~ div:nth-child(n+1)
-beta.gismeteo.ru,www.gismeteo.by,www.gismeteo.kz,www.gismeteo.md,www.gismeteo.ru##body[class*="-ru"] > div[class]:not([id]):nth-child(-n+2)
+! унификация дизайна русского домена с остальными
+gismeteo.ru##.maps .maps-block:style(height: auto !important)
+gismeteo.ru##.maps .maps-list:style(display: inherit !important)
+gismeteo.ru##.project-maps .wrap:style(max-width: 1010px !important)
+gismeteo.ru##.project-weather .wrap:style(max-width: 1010px !important)
+gismeteo.ru##.section-map-grid:style(display: unset !important)
 ! исправление ошибок и косяков оригинальной вёрстки
-www.gismeteo.ru##.section-map-grid:style(margin-bottom: 20px !important)
+gismeteo.ru##.section-map-grid:style(margin-bottom: 20px !important)
 ! ---
 glavnoe.ua###main-block > .content-block:style(margin: auto !important)
 ! ---
