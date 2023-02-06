@@ -111,6 +111,7 @@ avtovod.com.ua###pblock
 video.kinogo.lu###pjs_share_link_player ~ pjsdiv
 youtube.com###player a.ytp-share-panel-service-button.ytp-button
 zagonk.com,zagonka.net,zagonka.tv,zagonko.org,zogonka.org###podel
+afisha.ru###popmechanic-snippet
 windowspro.ru#?##popular:-abp-has(#vk_groups)
 volzsky.ru###popup
 vk.com###pv_hh
@@ -808,7 +809,6 @@ obozrevatel.com##.headerTopLine_socialItem > a:not([href*="obozrevatel.com/"])
 obozrevatel.com##.headerTopLine_socialItem > a:not([href*="obozrevatel.com/"]) ~ img
 tsargrad.tv##.header__aside
 1prime.ru##.header__buttons
-afisha.ru##.header__left > div > [class*="social"] ~ div
 slk.kh.ua##.header__networks
 islam-today.ru##.header__other-buttons
 thepage.ua##.header__right-column .social-icon__link
@@ -830,7 +830,6 @@ bilshe.com##.header_soclinks
 fotopoisk.com.ua##.header_top_image
 acc.cv.ua,pogliad.ua##.headermenusocial
 rbc.ru,rbclife.ru#?#.headline-4-short:-abp-contains(Поделиться)
-afisha.ru##.headline__bottom--social-rotation
 dilo.net.ua##.heateor_ffc_facebook_comments
 real-vin.com##.heateor_sss_sharing_container
 humor.fm##.hfm-social-groups
@@ -1309,7 +1308,6 @@ psychologies.ru##.side-block_soc-tabs
 gadgetstyle.com.ua#?#.side-blok:-abp-has(.twitter-timeline )
 coldfilm.biz#?#.side-box:-abp-has(#vk_groups)
 kinohype.me#?#.side-box:-abp-has(> .side-bc > .vk)
-daily.afisha.ru##.side-popular__social
 uakino.club##.side-tabs > .box > div[style^="display:"]
 uakino.club##.side-tabs > .tabs
 guland.com.ua##.sidebar
@@ -1868,6 +1866,7 @@ ainews.kz##[class^="Footer_socials"]
 dron.media##[class^="HeaderTop_headerTop__socialIcons"]
 kanobu.ru##[class^="KanobuSocialCommunities_"]
 atas.info,bel.ru##[class^="LeftcolSocials_item"]
+daily.afisha.ru##[class^="SocialMedia_Link"]
 novayagazeta.ru##[class^="SocialsBlock_social"]
 meduza.io##[class^="Toolbar-module_list"] > [class^="Toolbar-module_item"]:not(:nth-last-child(-n+2))
 rg.ru##[class^="UmbrellaSocial_root_"]
@@ -1906,13 +1905,14 @@ ibb.co##[data-target="modal-share"]
 youla.ru##[data-test-component="SocialShare"]
 kp.kg,kp.kz,kp.md,kp.ru##[data-test-id="Menu_MenuSocials"]
 adme.media##[data-test-id="join-us"]
+www.afisha.ru##[data-test="BUTTON SHARE-BUTTON"]
+www.afisha.ru##[data-test="STICKY"] [data-test^="BUTTON FAVORITE"] ~ [data-test="BUTTON"]
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru#?#[data-test="list-dropdown"] > li:-abp-has(> a[href][title^="Мы "])
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru#?#[data-test="list-dropdown"] > li:-abp-has(> a[href][title^="Наш"])
 fontanka.ru##[data-test="report-news-vk"]
 eurosport.ru##[data-testid="share-icons"]
 maanimo.com##[data-text-after="Мы в социальных сетях"]
 ngnovoros.ru##[data-tip="Репост в соцсети"]
-afisha.ru##[data-title-anchor] .rambler-share ~ div
 1fnl.ru##[data-tizer-id="vk"]
 rbc.ru##[data-type="share"]
 rbc.ru##[data-type="social"]
@@ -2049,7 +2049,6 @@ bloknot-astrakhan.ru,bloknot-gelendzhik.ru,bloknot-kamyshin.ru,bloknot-krasnodar
 tengrinews.kz##div.tn-shared
 hostingkartinok.com#?#div:-abp-has(> #vk_comments)
 gorod24.online,hostingkartinok.com,kinovidos.com,print-post.com,softbesplatno.net#?#div:-abp-has(> #vk_groups)
-www.afisha.ru#?#div:-abp-has(> .container-review-share)
 inter.ua#?#div:-abp-has(> .footer-social)
 barneos22.ru#?#div:-abp-has(> .soc1)
 4book.org#?#div:-abp-has(> .uSocial-Share)
@@ -2093,6 +2092,7 @@ news.finance.ua##div[class^="ArticleShares"]
 dron.media##div[class^="Banner_banner"][style^="background-image:url(/_next/static/media/banner_bg."]
 kanobu.ru##div[class^="CommonInnerHeader_header_pagetitle_right"]
 kanobu.ru##div[class^="Copyright_social_"] > a[target="_blank"]
+daily.afisha.ru#?#div[class^="Footer_Block"]:-abp-has(> div[class^="Footer_Menu"] > div[class^="Social_"])
 tribuna.com##div[class^="Footer_footer__social-media"]
 360tv.ru##div[class^="Footer_socialBox"]
 1tv.ru##div[class^="Footer_socialIcons"]
@@ -2100,12 +2100,14 @@ diletant.media##div[class^="Footer_social__media"]
 tass.ru##div[class^="Footer_wrapper__social_links"]
 ctc.ru##div[class^="HeaderVerticalNav_socialLinkSet"]
 tass.ru##div[class^="Menu_social_outer"]
+daily.afisha.ru##div[class^="ShareFriends_Container"]
 tass.ru##div[class^="ShareLinks_wrapper"]
 trmzk.ru##div[class^="SharePost__"]
 mywebpc.ru##div[class^="SharePost__ShareButton"]
 360tv.ru##div[class^="Share_shareButton"]
 tribuna.com##div[class^="SharedSocialButtons"]
 www.1tv.ru##div[class^="SocialBlock_"]
+daily.afisha.ru##div[class^="Social_Container"]
 atas.info,bel.ru##div[class^="Socials"]
 atas.info,bel.ru##div[class^="Subscribe_subscribe"]
 news.finance.ua##div[class^="Subscriptions"]
@@ -2190,7 +2192,7 @@ banki.ru##footer a[target="_blank"][rel][data-title]
 rambler.ru#?#footer div:-abp-has(> div > [data-blocks="vkontakte"])
 eda.ru#?#footer div:-abp-has(> div > [title="vkontakte"])
 fontanka.ru#?#footer div:nth-child(5):-abp-has([href^="https://vk.com/fontanka"])
-www.afisha.ru#?#footer div[style^="grid-column"]:-abp-has(> div > div > [href*="instagram"])
+www.afisha.ru#?#footer div[style^="grid-column"]:-abp-has(> div > div > [href*="://t.me/"])
 yap.ru,yaplakal.com##form[method="POST"] + .row4[style="padding:6px;"][align="center"]
 om1.ru#?#h1:-abp-contains(/в соцсетях/)
 bigmir.net#?#h2:-abp-contains(Мы в соцсетях)
@@ -2207,7 +2209,6 @@ mignews.com,mignews.ru#?#h6:-abp-contains(/мы на facebook/i)
 mignews.com,mignews.ru#?#h6:-abp-contains(/поделиться/i)
 zenit-fk.ru##h6[class="posts__title text-center mb-4"]
 gordonua.com##header .icons
-www.afisha.ru##header > div:first-child > div:first-child ~ div ~ div > div
 armeniasputnik.am,sputnik-abkhazia.info,sputnik-abkhazia.ru,sputnik-georgia.com,sputnik-georgia.ru,sputnik-news.ee,sputnik-ossetia.com,sputnik-ossetia.ru,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputnik.kz,sputnik.md,sputniknews-uz.com,sputniknews.cn,sputniknews.com,sputniknews.gr,sputniknews.lt,sputniknewslv.com##iframe[src*="/files/tgparser/"]
 me3.com.ua##iframe[src*="/plugins/likebox."]
 aif.ru##iframe[src^="http://www.facebook."] + br + table[border="0"]
