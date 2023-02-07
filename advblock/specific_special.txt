@@ -973,6 +973,7 @@ sports.ru###top-ad
 sports.ru###top-banner-place
 sports.ru##.ad
 sports.ru##.aliens
+sports.ru#?#.aside-news-list__item:-abp-has(> .aside-news-list__advert ~ a[href^="https://sprts.cc/"])
 sports.ru#?#.aside-news-list__item:-abp-has(> .aside-news-list__advert:-abp-contains(Реклама))
 sports.ru#?#.aside-news-list__item:-abp-has(> [href*="utm_campaign"])
 sports.ru##.bets-popup-wrapper
@@ -984,9 +985,6 @@ sports.ru##.itemLinkPET
 sports.ru##.js-active.aliens[data-control]
 sports.ru##.middle-banner-place
 sports.ru##.nav-list__widget-wrapper .promo-block
-sports.ru##.news > .short-news > br
-sports.ru#?#.news > .short-news > p:-abp-has(> .advert_material)
-sports.ru#?#.news > .short-news > p:-abp-has(> .betting_insider)
 sports.ru##.place-for-ad
 sports.ru##.poll-variant__coeff
 sports.ru##.poll__ad-label
@@ -994,16 +992,18 @@ sports.ru##.poll__bookmaker-link
 cyber.sports.ru##.polling
 sports.ru##.promo-link
 sports.ru#?#.recommendations__list > .recommendations__item:-abp-has([href*="promo"])
+sports.ru##.record-widget__bookmaker
 sports.ru##.rightPart > .mB20
+sports.ru##.social-links__zn
 sports.ru##.teaser-before-links__adv-label
 cyber.sports.ru##.teaser-bookmaker
-/system/context.js?$domain=sports.ru
 @@||r.sprts.ru/recommender/|$xmlhttprequest,domain=www.sports.ru
 sports.ru##[class*="parimatch"]
 sports.ru##[data-content-name="banner-dfp"]
 sports.ru##[data-control^="Aliens."]
 sports.ru##[data-control^="Banners."]
 sports.ru##[data-is-ad-poll] .bookmaker-info
+sports.ru##[data-type="reklama"]
 sports.ru##[id*="ScriptRoot"]
 sports.ru##[id^="dfp-fullscreen-"]
 sports.ru##[id^="unit_"]
@@ -1014,9 +1014,10 @@ tribuna.com##a[href*="bit.ly"]
 sports.ru##a[href*="click"][target="_blank"][style^="display"]
 sports.ru,tribuna.com##a[href*="utm_campai"]
 sports.ru##a[href="https://trbna.co/2u3V2dO"]
-cyber.sports.ru##a[href^="https://sprts.cc/"]
+sports.ru##a[href^="https://sprts.cc/"]
 sports.ru##a[href^="https://zen.yandex.ru/"]
 sports.ru##div[class*="SALES"] > .accordion__handle
+sports.ru#?#div[class*="material-list--additional-block"] > .material-list__item:-abp-has(a[href^="https://sprts.cc/"])
 tribuna.com##div[class^="BookmakerGift_bookmaker-gift_"]
 tribuna.com##div[class^="Main_main-layout__empty-block"]
 sports.ru##div[data-control-noinit="Common.BetsTabs"]
@@ -1024,7 +1025,6 @@ sports.ru##div[data-control="Common.AutoInit"]
 sports.ru##div[data-control^="Common.Bets"]
 sports.ru##img[src*="s5o.ru/source/_desktop/aliens/"]
 sports.ru##p > a[rel="nofollow"] > img[height][width]
-sports.ru##p > strong > [href^="https://sprts.cc/"]
 sports.ru#?#p:-abp-has(> a[href]:-abp-contains(М.Видео))
 sports.ru##style:first-child ~ [class^="gift__"]
 ||s5o.ru/source/_desktop/aliens/$~image
