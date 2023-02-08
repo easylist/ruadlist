@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230205.1835
+@version        0.20230208.1442
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4153,25 +4153,6 @@
     }
 }
 
-@-moz-document domain("quote.ru") {
-    .l-col-container > .l-table {
-        width: calc(100% - 4px) !important
-    }
-}
-
-@-moz-document
-  domain("quote.ru"),
-  domain("rbc.ru"),
-  domain("sportrbc.ru") {
-    #js_col_left > .l-sticky {
-        position: relative !important;
-        top: unset !important
-    }
-    .topline__branding__wrapper {
-        width: 0 !important
-    }
-}
-
 @-moz-document domain("radioclub.ua") {
     #js-content {
         padding-top: 40px !important
@@ -4242,6 +4223,13 @@
     .l-col-100h {
         min-height: 0 !important;
         height: auto !important
+    }
+    #js_col_left > .l-sticky {
+        position: relative !important;
+        top: unset !important
+    }
+    .topline__branding__wrapper {
+        width: 0 !important
     }
 }
 
