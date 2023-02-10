@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230208.1442
+@version        0.20230210.1705
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1553,6 +1553,9 @@
     pre:not(.highlight) {
         color: rgb(33, 37, 41) !important;
         user-select: text !important
+    }
+    body {
+        overflow: auto !important
     }
     aside, nav {
         visibility: unset !important
