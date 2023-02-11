@@ -1214,6 +1214,7 @@ context.reverso.net##.locked .example:style(filter: none !important; -webkit-fil
 context.reverso.net##.popup[id*="-results-banner"]
 ! ---
 rg.ru##div[class*="_spiegelWrapper"]:style(padding-top: 0 !important)
+rg.ru##div[class^="Page_main"][style*="min-height:"]:style(min-height: 0 !important)
 ! ---
 ria.ru##.m-blur ~ #modalLayer
 ria.ru##.m-blur:style(filter: none !important; position: relative !important)
