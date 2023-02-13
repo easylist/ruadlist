@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230211.1711
+@version        0.20230213.2017
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4264,9 +4264,6 @@
 @-moz-document
   domain("reshuct.by"),
   domain("sdamgia.ru") {
-    div.no_dark {
-        display: none !important
-    }
     main > div[class*=" "] {
         min-height: auto !important;
         height: auto !important
@@ -4397,16 +4394,14 @@
 
 @-moz-document domain("sdamgia.ru") {
     #old_school > .App > div > [color="red"], 
-    div[style*="width:"][style*="fit-content"] > a > img, 
-    div[style*="width:"][style*="margin:"][style*="auto;"] > *  > a > img {
+    .menu[role="navigation"] img[onclick^="javascript:window.location"], 
+    aside img[onclick^="javascript:window.location"], 
+    div[style*="width:"][style*="fit-content"] > img[onclick^="javascript:window.location"] {
         display: none !important
     }
-    .menu[role="navigation"] div[style*="px"], aside > div[class]:first-child, 
-    aside > div[class]:first-child > div, aside center > div[style*="height:"] {
+    .menu[role="navigation"] div[style*="margin:"], 
+    aside > div[class]:first-child > div {
         height: auto !important
-    }
-    main div[style="margin: auto;"] div[id] {
-        min-height: 0 !important
     }
 }
 
@@ -5441,7 +5436,7 @@
     .sidebar-container .search-advert-badge, 
     .sidebar-container a[class*="_id_campaign_"], 
     .sidebar-container div[class^="banner-placeholder"], 
-    .stack .sticky-banner-container, .stack div[class^="modal-R-A"], 
+    .stack .sticky-banner-container, .stack div[class*="modal"][class*="-R-A"], 
     .turbo-advert__loader, 
     body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
     body > .route-tip-view, div[aria-label="Реклама"], 
