@@ -1282,6 +1282,7 @@ dzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75
 4pda.*##html[style] > body a[href*="goo.gl"]
 4pda.*##html[style] > body a[href*="is.gd"]
 4pda.*##html[style] > body div[class$="-brand-header"]
+4pda.*#?#.article div[style^="background-color:"]:-abp-has(> a[href*="bit.ly"])
 4pda.*#?#[itemprop="articleBody"] > div[style^="background-color:"]:-abp-has(> a[href*="://s.zbanx.com/r/"])
 4pda.*#?#html[style] > body a.rounded[href][target="_blank"]:-abp-contains(/^Узнать /)
 ! анонс в мобильно-планшетной версии макета
