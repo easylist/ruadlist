@@ -1996,6 +1996,7 @@ shiza-project.com##ul[class*="transparent-btns"]
 !
 ! 4pda.to (ранее 4pda.ru)
 ! верхняя плашка
+4pda.to##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id][style^="min-height:"][style$="px;"]
 4pda.to##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
 ! кликабельный элемент рекламного фона
 4pda.to##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article:not(.post) + article.post
@@ -2012,6 +2013,7 @@ shiza-project.com##ul[class*="transparent-btns"]
 4pda.to#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class]:empty)
 4pda.to##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(-n+3)
 ! различные рекламные ссылки, в основном в брендированных материалах
+4pda.to#?#[itemprop="articleBody"] > div[style^="background-color:"]:-abp-has(> a[href*="://s.zbanx.com/r/"])
 4pda.to##html[style] > body .menu-main > li.menu-main-item > a[href][style*="important"]
 4pda.to##html[style] > body .second-menu
 4pda.to##html[style] > body .slick-dotted
