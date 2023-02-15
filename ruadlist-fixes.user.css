@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230213.2017
+@version        0.20230215.1904
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4648,6 +4648,12 @@
         width: 0 !important;
         height: 0 !important;
         left:-10000px !important
+    }
+}
+
+@-moz-document domain("sportsdaily.ru") {
+    #branding-wrapper {
+        padding-top: 0 !important
     }
 }
 
