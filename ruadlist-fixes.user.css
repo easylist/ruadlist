@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230215.1904
+@version        0.20230216.1915
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2879,6 +2879,12 @@
     }
 }
 
+@-moz-document domain("kanaldom.tv") {
+    body > .playerlive {
+        display: none !important
+    }
+}
+
 @-moz-document domain("kaztorka.org") {
     #main {
         max-width: 100% !important
@@ -5163,6 +5169,12 @@
 @-moz-document domain("webfile.ru") {
     .p_wrap {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("weukraine.tv") {
+    .eael-sticky-video-wrapper > #videobox {
+        all: inherit !important
     }
 }
 
