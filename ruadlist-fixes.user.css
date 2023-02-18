@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230216.1915
+@version        0.20230218.2158
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2799,6 +2799,12 @@
     }
     td.left[width="200"][valign="top"] {
         height: auto !important
+    }
+}
+
+@-moz-document domain("ivanovonews.ru") {
+    body > .layout {
+        padding-top: 50px !important
     }
 }
 
