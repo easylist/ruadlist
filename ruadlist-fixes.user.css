@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230218.2158
+@version        0.20230222.1845
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1546,19 +1546,6 @@
     }
     body.locked, html.locked {
         overflow:auto !important
-    }
-}
-
-@-moz-document domain("docs-python.ru") {
-    pre:not(.highlight) {
-        color: rgb(33, 37, 41) !important;
-        user-select: text !important
-    }
-    body {
-        overflow: auto !important
-    }
-    aside, nav {
-        visibility: unset !important
     }
 }
 
@@ -3294,10 +3281,7 @@
 }
 
 @-moz-document domain("lurkmore.wtf") {
-    #siteNotice {
-        background: none !important
-    }
-    .sitenotice > .floatleft > a > img {
+    #localNotice .floatleft img {
         height: 70px !important;
         width: auto !important
     }
@@ -4989,6 +4973,12 @@
         color: black !important;
         font-weight: 100 !important;
         font-size: 8px !important
+    }
+}
+
+@-moz-document domain("ura.news") {
+    div[class^="right-block"][style^="min-height:"] {
+        min-height: 0 !important
     }
 }
 
