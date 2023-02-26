@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230223.1422
+@version        0.20230226.1456
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3900,6 +3900,13 @@
     .downloadlink a {
         color: #09c !important;
         text-decoration: underline !important
+    }
+    body [class^="mdp-deblocker-"] {
+        display: none !important
+    }
+    body > div {
+        filter: none !important;
+        -webkit-filter: none !important
     }
 }
 
