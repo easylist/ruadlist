@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230226.1456
+@version        0.20230301.2049
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -407,9 +407,8 @@
 }
 
 @-moz-document domain("2ip.ua") {
-    .hmi-hmi-new, .ipblockgradient > .ip + .border-effect, 
-    .ipblockgrid div[class*="mini"], .result ~ [class*="mini"], .socks, 
-    div[class^="custom_proxy"] {
+    .hmi-hmi-new, .ipblockgrid div[class*="mini"], .result ~ [class*="mini"], 
+    .socks, div[class^="custom_proxy"] {
         display: none !important
     }
 }
