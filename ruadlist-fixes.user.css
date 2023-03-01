@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230301.2049
+@version        0.20230302.17
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2366,6 +2366,16 @@
 @-moz-document domain("gdetraffic.com") {
     .main.with-top-menu {
         padding-top: 100px !important
+    }
+}
+
+@-moz-document domain("gecid.com") {
+    body {
+        cursor: default !important;
+        pointer-events: none !important
+    }
+    body > * {
+        pointer-events: auto !important
     }
 }
 
