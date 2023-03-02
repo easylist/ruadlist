@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230302.17
+@version        0.20230302.1429
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -403,6 +403,14 @@
     }
     body {
         overflow: auto !important
+    }
+}
+
+@-moz-document
+  domain("2ip.ru"),
+  domain("2ip.io") {
+    .alert-link, .sidebar-adv {
+        display: none !important
     }
 }
 
