@@ -1259,7 +1259,9 @@ sdamgia.ru##.menu[role="navigation"] img[onclick^="javascript:window.location"]
 sdamgia.ru##aside > div[class]:first-child > div:style(height: auto !important)
 sdamgia.ru##aside img[onclick^="javascript:window.location"]
 sdamgia.ru##div[style*="width:"][style*="fit-content"] > img[onclick^="javascript:window.location"]
-reshuct.by,sdamgia.ru##main > div[class*=" "]:style(min-height: auto !important; height: auto !important)
+sdamgia.ru##main > div[class*=" "] > div:style(margin-bottom: auto !important)
+sdamgia.ru##main > div[class*=" "] div:empty:style(min-height: auto !important; height: auto !important)
+sdamgia.ru##main > div[class*=" "]:style(min-height: auto !important; height: auto !important; margin-bottom: auto !important)
 ! ---
 sc2tv.ru##.body--brranding > .content:style(margin-top: unset !important)
 sc2tv.ru##html:not(#id) > body:not(#id) .body--brranding > *:style(pointer-events: auto !important)

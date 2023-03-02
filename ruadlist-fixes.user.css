@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230302.1429
+@version        0.20230302.2206
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -383,8 +383,8 @@
 @-moz-document
   domain("2ip.io"),
   domain("2ip.ru") {
-    .consent__notice, .consent__notice ~ .body-blackout, 
-    body > #wrapper #header > #nav > li:nth-child(2), 
+    .alert-link, .consent__notice, .consent__notice ~ .body-blackout, 
+    .sidebar-adv, body > #wrapper #header > #nav > li:nth-child(2), 
     body > #wrapper .advMenuTab, body > #wrapper .ip-info-entry a[href*="utm_"], 
     body > #wrapper .nav > li > a[href^="https://krot.io"], 
     body > .page-wrapper #content > .page_speed_result__share + style + div[class], 
@@ -403,14 +403,6 @@
     }
     body {
         overflow: auto !important
-    }
-}
-
-@-moz-document
-  domain("2ip.ru"),
-  domain("2ip.io") {
-    .alert-link, .sidebar-adv {
-        display: none !important
     }
 }
 
@@ -4330,15 +4322,6 @@
     }
 }
 
-@-moz-document
-  domain("reshuct.by"),
-  domain("sdamgia.ru") {
-    main > div[class*=" "] {
-        min-height: auto !important;
-        height: auto !important
-    }
-}
-
 @-moz-document domain("rg.ru") {
     div[class^="Page_main"][style*="min-height:"] {
         min-height: 0 !important
@@ -4471,6 +4454,18 @@
     .menu[role="navigation"] div[style*="margin:"], 
     aside > div[class]:first-child > div {
         height: auto !important
+    }
+    main > div[class*=" "] > div {
+        margin-bottom: auto !important
+    }
+    main > div[class*=" "] div:empty {
+        min-height: auto !important;
+        height: auto !important
+    }
+    main > div[class*=" "] {
+        min-height: auto !important;
+        height: auto !important;
+        margin-bottom: auto !important
     }
 }
 
