@@ -5,6 +5,8 @@
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://amedia\.online/[^\s]{70,}/$script,domain=amedia.online
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=rg.ru
+2ip.ua##.sidebar-nav
+2ip.ua##div[class*=" ip"]:empty
 @@||code.moviead55.ru/jmap.php$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
 @@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
 @@||code.moviead55.ru/vast2?key=|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
@@ -13,6 +15,8 @@ cq.ru#?#div:-abp-properties(content: "Реклама")
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 ||24smi.org^$xmlhttprequest,domain=24smi.org
+||2ip.ua/ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval'
+||2ip.ua/ua/|$csp=script-src 'unsafe-inline' 'unsafe-eval'
 ||amedia.online/engine/ajax/controller.php|$xmlhttprequest,domain=amedia.online
 !#endif
 !
