@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230303.1635
+@version        0.20230305.1439
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2372,7 +2372,8 @@
 @-moz-document domain("gecid.com") {
     body {
         cursor: default !important;
-        pointer-events: none !important
+        pointer-events: none !important;
+        background-color: transparent !important
     }
     body > * {
         pointer-events: auto !important
