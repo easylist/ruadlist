@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230306.1802
+@version        0.20230307.2126
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5209,6 +5209,15 @@
     }
 }
 
+@-moz-document domain("vtb-league.com") {
+    body.home > [class*="modal"] {
+        display: none !important
+    }
+    body.home {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("vtimes.io") {
     div[class^="cookies-modal"] {
         display: none !important
@@ -5638,6 +5647,9 @@
 @-moz-document domain("zr.ru") {
     .rotate-block {
         display: table !important
+    }
+    aside > div[class^="styled__SidebarWrap-"] {
+        height: auto !important
     }
 }
 
