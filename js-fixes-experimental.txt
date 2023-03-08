@@ -469,6 +469,10 @@ cloud.mail.ru,e.mail.ru,octavius.mail.ru##a[title="Экосистема VK"]
 todo.mail.ru##div[class^="Logo_base__"] > svg > g
 mail.ru##img[src*="/logo_2021_region"]
 !
+!#if env_mobile
+mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
+!#endif
+!
 ! Softportal - https://github.com/uBlockOrigin/uBlock-issues/issues/2246
 !#if env_firefox
 softportal.com##+js(addEventListener-defuser, load, screenshotsItems)
