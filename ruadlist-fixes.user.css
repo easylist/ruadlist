@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230307.2126
+@version        0.20230309.2018
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4798,6 +4798,16 @@
 @-moz-document domain("study.ru") {
     #header, .header-inner {
         height: 94px !important
+    }
+}
+
+@-moz-document domain("surl.li") {
+    #redirect-button > #timer {
+        display: none !important
+    }
+    .redirect-button {
+        pointer-events: auto !important;
+        opacity: 1 !important
     }
 }
 
