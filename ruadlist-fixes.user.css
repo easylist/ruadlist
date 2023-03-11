@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230310.1436
+@version        0.20230311.1434
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1747,6 +1747,7 @@
 }
 
 @-moz-document domain("dzen.ru") {
+    #ya-dist, 
     .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     div[class*="video-viewer-sidebar__ad"], 
@@ -2269,6 +2270,20 @@
     }
 }
 
+@-moz-document
+  domain("game4you.top"),
+  domain("games-pc.top"),
+  domain("innal.top"),
+  domain("naylo.top"),
+  domain("rustorka.com"),
+  domain("rustorka.net"),
+  domain("rustorka.top") {
+    div#body_container {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important
+    }
+}
+
 @-moz-document domain("gamebomb.ru") {
     body {
         background-color: #303030 !important;
@@ -2766,6 +2781,14 @@
         top: -10000px !important;
         left: -10000px !important;
         height: 50px !important
+    }
+}
+
+@-moz-document domain("infourok.ru") {
+    .footer-slow-download__btn {
+        color: #57a216 !important;
+        font-size: 19px !important;
+        font-weight: bold !important
     }
 }
 
