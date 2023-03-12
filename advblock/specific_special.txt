@@ -7,6 +7,7 @@
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=rg.ru
 2ip.ua##.sidebar-nav
 2ip.ua##div[class*=" ip"]:empty
+@@/clickunder.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 @@||code.moviead55.ru/jmap.php$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
 @@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
 @@||code.moviead55.ru/vast2?key=|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
@@ -955,16 +956,6 @@ cnews.ru##div[id^="div-gpt-ad-"]
 ||rbk.ru^*/_yaDirect.js
 ||utro.ru/*/banners/
 ||zoom.cnews.ru/inc/bpic/
-!
-! RusTorka.com и зеркала
-game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##iframe[src*="://hd.hnoph.top/"]
-||bid/goto/*/*/$csp=sandbox allow-same-origin;
-||hd.hnoph.top^$subdocument,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
-||info/goto/*/*/$csp=sandbox allow-same-origin;
-||popadon.com/goto/$csp=sandbox allow-same-origin;
-||refpawqpttex.top^
-||rustorka.*/goto/*/*/$csp=sandbox allow-same-origin;
-||top/goto/*/*/$csp=sandbox allow-same-origin;
 !
 ! Spaces и зеркала
 gdespaces.com,gdespaces.net,spac.me,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs.global,spcs.life,spcs.me,spcs.news,spcs.pro,spcs.pub,spcs.social,strip2.in,strip2.xxx,usersporn.com###page_rightbar .widgets-group:not(.sidebar-loginform)
