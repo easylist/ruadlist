@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230314.1702
+@version        0.20230315.1951
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2854,6 +2854,11 @@
 @-moz-document domain("itc.ua") {
     a[href*="utm_campai"] {
         pointer-events: none !important
+    }
+    a[href*="://telemart.ua/"] {
+        pointer-events: none !important;
+        color: unset !important;
+        border-bottom: none !important
     }
 }
 
