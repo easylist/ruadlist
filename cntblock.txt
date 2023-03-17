@@ -222,6 +222,7 @@ _pagespeed_beacon?
 ||2o7.net^$third-party
 ||2stat.net^
 ||2tt2.ru^$third-party
+||4pda.to/s/*:|$xmlhttprequest
 ||5edeb195868e2195.com^$third-party
 ||7days.ru/statistics/*/hit?id=
 ||a-counter.kiev.ua^$third-party
@@ -1292,8 +1293,8 @@ dzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75
 4pda.*#?#a.rounded[href][target="_blank"]:-abp-contains(/^Узнать больше/)
 4pda.*#?#html[style] > body a.rounded[href][target="_blank"]:-abp-contains(/^Узнать /)
 ! анонс в мобильно-планшетной версии макета
-4pda.*##html[style] > body > script[src*=".js?_=0.9"] ~ * > [class][style*="zoom:"]
-4pda.*##html[style] > body > script[src*=".js?_=0.9"] ~ [class][style*="zoom:"]
+4pda.*##html[style] > body > script[src*=".js?_="] ~ * > [class][style*="zoom:"]
+4pda.*##html[style] > body > script[src*=".js?_="] ~ [class][style*="zoom:"]
 ! анонс в шапке форума
 4pda.*###go_1 > :not(p):not(h4):not(.globalmesscontent)
 ! реклама в шапке форума
@@ -1304,7 +1305,7 @@ dzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75
 ! реклама в QMS и мобильной версии сайта
 4pda.*##.menu-main-mobile > [style="display:none;"]
 ! редирект
-||4pda.to/s/*.js?_=0.9$script,redirect=empty
+4pda.*##+js(abort-on-property-read, document.referrer)
 !
 ! Экспериментальные правила для маркеров
 $document,removeparam=fr,domain=go.mail.ru|r.mail.ru
