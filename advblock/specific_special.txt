@@ -701,6 +701,11 @@ e1.ru##li[class="e1-nav__item _auto"]
 ||ngs.ru/static/js/uglify/dfpScript.js
 ||reklama*.ngs.ru/$script
 ||static.ngs.ru/jtnews/*/asdk
+! обфускация
+www.e1.ru##.undefined
+www.e1.ru#?#[itemprop="articleBody"] > div:-abp-has(> div > [id^="adv_"] )
+www.e1.ru#?#section:-abp-has(> div[class]:empty + div[class]:empty + div[class]:empty + div[class]:empty)
+||naydex.net^$domain=e1.ru
 !
 ! Overclockers.ru
 forums.overclockers.ru##.adsbygoogle
