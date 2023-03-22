@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230315.1951
+@version        0.20230322.1638
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -548,7 +548,8 @@
   domain("website"),
   domain("win") {
     body[class^="has-brand active-brand"][class*="fixed-header"] {
-        padding-top: 0 !important
+        padding-top: 0 !important;
+        background-color: inherit !important
     }
     body[class^="has-brand active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3) {
         width: unset !important
@@ -1854,8 +1855,6 @@
 
 @-moz-document
   domain("electric-house.ru"),
-  domain("freefotohelp.ru"),
-  domain("so-wiki.ru"),
   domain("stroi-help.ru"),
   domain("vseprosto.top") {
     .adsbygoogle {
@@ -2140,12 +2139,6 @@
     }
 }
 
-@-moz-document domain("freefotohelp.ru") {
-    #T_Bottom {
-        width: auto !important
-    }
-}
-
 @-moz-document
   domain("freehat.cc"),
   domain("lalapaluza.ru") {
@@ -2190,11 +2183,6 @@
     #advert {
         height: 1px !important
     }
-}
-
-@-moz-document
-  domain("freeopenvpn.org"),
-  domain("leninsw.info") {
     .adsbygoogle {
         max-height: 6px !important
     }
@@ -3237,12 +3225,21 @@
     }
 }
 
-@-moz-document domain("libertycity.ru") {
+@-moz-document
+  domain("libertycity.net"),
+  domain("libertycity.ru") {
     .downloada {
         display: block !important
     }
     .down_link > .wl:not([style]) {
         display: none !important
+    }
+    .downloada > .btn {
+        font-size: large !important;
+        color: #b4ff00 !important
+    }
+    .main_shift {
+        height: 100px !important
     }
 }
 
