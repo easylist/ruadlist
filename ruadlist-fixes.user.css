@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230322.1638
+@version        0.20230322.1720
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -392,12 +392,12 @@
     body > #wrapper .nav > li > a[href^="https://krot.io"], 
     body > .page-wrapper #content > .page_speed_result__share + style + div[class], 
     body > .page-wrapper .content-list > a[href^="https://krot.io"], 
-    body > .page-wrapper .ip-links_item > .ip-icon-link, 
-    body > .page-wrapper .menu_isp__default > ul > li:nth-child(2), 
+    body > .page-wrapper .ip-links-container > div[class^="ip-links_item "]:not([class*="speed"]), 
     body > .page-wrapper .page-privacy > #spy ~ style + div[class], 
     body > .page-wrapper .page-speed > .speed_checker + style + div[class], 
     body > .page-wrapper .page_whois > style + div, 
-    body > .page-wrapper [class^="ip-"] > a[href*="utm_"] {
+    body > .page-wrapper [class^="ip-"] > a[href*="utm_"], 
+    body > .page-wrapper nav > ul > li:nth-child(2) {
         display: none !important
     }
     body > .page-wrapper .test-vpn > a {
