@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230324.1458
+@version        0.20230324.1511
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -406,6 +406,9 @@
     }
     body {
         overflow: auto !important
+    }
+    body > .page-wrapper .ip-links-container .ip-links_item {
+        top: unset !important
     }
 }
 
