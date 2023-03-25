@@ -82,6 +82,9 @@
 /button.php?u=$image
 /c.gif?*&udc=
 /c.gif?*rnd=
+/cdn-cgi/apps/head/*$script,~third-party
+/cdn-cgi/bm/cv/*.js$script
+/cgi-bin/bm/cv/*.js$script
 /cnt-gif1x1.php?
 /cnt.cgi?
 /cnt.php?
@@ -99,6 +102,7 @@
 /elqnow/*
 /EmbedAsyncLogger.
 /foresee/*
+/front-metrics/?rnd=
 /ga_social_tracking.js
 /gemius.js
 /gemius/*
@@ -205,10 +209,6 @@ _pagespeed_beacon?
 !
 ! = Общие блокировки (и с использованием имени доменов) =========================
 //stats.myangular.life^$third-party
-/cdn-cgi/apps/head/*$script,~third-party
-/cdn-cgi/bm/cv/*.js$script
-/cgi-bin/bm/cv/*.js$script
-/front-metrics/?rnd=
 /metrics.js$domain=maximum.ru|montecarlo.ru
 /redir/stat/*$domain=autonews.ru|rbc.ru|sportrbc.ru
 /yandex-metrika.js$domain=dfm.ru|hitfm.ru|maximum.ru|montecarlo.ru|rusradio.ru
@@ -545,6 +545,7 @@ _pagespeed_beacon?
 ||iplis.ru^$third-party
 ||iplookup.vvdev.ru^$third-party
 ||irecommend.ru^*superstat/
+||ishowyoufuture.com^$third-party
 ||j.uralweb.ru/
 ||join.com.ua/count.cgi?
 ||jsblom.com^$third-party
