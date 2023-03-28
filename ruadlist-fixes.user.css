@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230324.1528
+@version        0.20230328.1240
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1405,8 +1405,8 @@
   domain("filmshd.vip"),
   domain("goodfilms.su"),
   domain("kinoxa.cc"),
-  domain("newseries.me"),
   domain("lordserial.run"),
+  domain("newseries.me"),
   domain("yummyanime.best") {
     .wrap {
         padding-top: 0 !important
@@ -5488,9 +5488,6 @@
         opacity: 0 !important;
         height: 0 !important
     }
-    #portal-tags a {
-        white-space: pre-wrap !important
-    }
 }
 
 @-moz-document domain("www.vesti.ru") {
@@ -5568,8 +5565,8 @@
     .sidebar-container .search-advert-badge, 
     .sidebar-container a[class*="_id_campaign_"], 
     .sidebar-container div[class^="banner-placeholder"], 
-    .stack .sticky-banner-container, .stack div[class*="modal"][class*="-R-A"], 
-    .turbo-advert__loader, 
+    .stack [class*="sticky"][class*="banner"], 
+    .stack div[class*="modal"][class*="-R-A"], .turbo-advert__loader, 
     body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
     body > .route-tip-view, div[aria-label="Реклама"], 
     div[class*=" news-"][class$="_mode_daas"], 
