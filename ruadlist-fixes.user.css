@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230328.1240
+@version        0.20230328.2019
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4059,6 +4059,9 @@
     }
     .footer {
         height: auto !important
+    }
+    .sidebar-block > [class], .sidebar-block > [class] > [class] {
+        min-height: unset !important
     }
     .app > .app__inner[style*="padding-top"] {
         padding-top: 64px !important
