@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230328.2019
+@version        0.20230329.1944
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2953,7 +2953,9 @@
     }
 }
 
-@-moz-document domain("kanaldom.tv") {
+@-moz-document
+  domain("kanaldim.tv"),
+  domain("uatv.ua") {
     body > .playerlive {
         display: none !important
     }
