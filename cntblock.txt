@@ -1308,7 +1308,7 @@ dzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75
 4pda.*##html:not([style]) tbody > tr[valign="top"] > td[width*="20"] + td[class]
 ! реклама при скачивании на форуме
 4pda.*###lbOverlay:style(background: none !important)
-4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [href^="http"]
+4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [id][href]
 ! реклама в QMS и мобильной версии сайта
 4pda.*##.menu-main-mobile > [style="display:none;"]
 ! редирект
