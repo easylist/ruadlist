@@ -3,7 +3,6 @@
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
-/^https?://amedia\.online/[^\s]{70,}/$image,script,domain=amedia.online
 /^https?://relax-fm\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=relax-fm.ru
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=rg.ru
 2ip.ua##.sidebar-nav
@@ -12,8 +11,6 @@
 @@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
 @@||code.moviead55.ru/vast2?key=|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
 all-episodes.one##:not(my-obnaruzhili-blokirovshchik)
-amedia.online##link[rel="stylesheet"][href^="https://amedia.online/"] ~ div
-amedia.online#?#a[href^="https://amedia.online/"]:-abp-properties(position: absolute)
 cq.ru#?#div:-abp-properties(content: "Реклама")
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
