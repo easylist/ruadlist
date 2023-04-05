@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230405.2102
+@version        0.20230405.2234
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3924,6 +3924,15 @@
 @-moz-document domain("online-fix.me") {
     .quote a.btn {
         pointer-events: auto !important
+    }
+}
+
+@-moz-document domain("onlinemultfilmy.ru") {
+    .video-box[style="display: none;"] {
+        display: block !important
+    }
+    .video-box ~ .ageBlock {
+        display: none !important
     }
 }
 
