@@ -2475,7 +2475,6 @@ list-org.com#?#.content > .card ~ div:-abp-has(> center > [id^="adfox_"])
 mos.news##.content > .comment-block[style^="margin"]
 theins.ru#?#.content > .homepage_widget:-abp-has(.adsbygoogle)
 www.i.ua##.content > .news > div > #news_cont ~ [class]
-forum.ru-board.com##.content > .obertka > [href^="topic.cgi?forum=5&topic=50761"] ~ img
 poimel.live##.content > .text-block.form-wrap
 irad.ru##.content > div[align="right"][style^="float:"]
 royallib.com##.content > div[style="width:100%; text-align: center;"]
@@ -5403,6 +5402,8 @@ comss.ru##[href="download/page.php?id=5511"]
 surgeryzone.net##[href="http://surgeryzone.net/knigi-po-medicine"]
 mobiset.ru##[href="http://www.ivlim.ru/"]
 fishki.net##[href="https://servers.ru"]
+forum.ru-board.com##[href="postings.cgi?action=edit&forum=5&topic=51141&postno=1"] ~ .post > .mtext
+forum.ru-board.com##[href="postings.cgi?action=edit&forum=5&topic=51141&postno=1"] ~ .post > br + br + br + br:nth-last-child(-n+2)
 allbest.ru##[href="union/advert.htm"]
 animeonline.cc##[href][target="_blank"][class]:empty
 phpbbguru.net##[href^="go.php?to="]
@@ -5410,7 +5411,6 @@ nntt.org##[href^="http://numbuster.com"]
 nntt.org##[href^="http://www.cenam.net"]
 game2day.ru##[href^="https://p2d.ru/"]
 divxplayer.ml,haes.tech,hcdn.online,hqq.tv,metaverseid.tk,player.cvary.org##[href^="https://t.me/"]
-forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=50761"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
 virpl.ru##[id$="-banner"]
 xyu.tv##[id$="AdsAfterVideo"]
 cools.biz,cools.dj,get-tune.cc,intermusic.name,iplayer.info,ipleer.fm,k1news.ru,kolesa.kz,market4game.ru,mp3cc.biz,mp3iq.com,vmuzice.me,yellowpages.uz##[id*="Banner"]
@@ -6664,7 +6664,6 @@ forumhouse.ru#?#div:-abp-has(> [class$="relap-block"])
 wday.ru#?#div:-abp-has(> [data-block-after="productSet"])
 liveresult.ru#?#div:-abp-has(> [data-has-bookmaker-odds])
 gdzguru.com,reshebnik.com#?#div:-abp-has(> [href*="://gdz-ru.work/"])
-forum.ru-board.com#?#div:-abp-has(> [href^="postings.cgi?action=edit&forum=5&topic=50761"]:not([href$="postno=1"])) ~ .post img:not([src*="://forum.ru-board.com/board/"])
 7themes.su,yakutsk.ru#?#div:-abp-has(> [id^="adfox_"])
 dmod.cc,draug.ru,emdigital.ru,modsforwot.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 photofuneditor.com#?#div:-abp-has(> [src*="pagead2."])
