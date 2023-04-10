@@ -709,6 +709,11 @@ www.e1.ru#?#section:-abp-has(> div[class]:empty + div[class]:empty + div[class]:
 ||naydex.net^$domain=e1.ru
 ! баннер в хидере мобильной версии
 116.ru,72.ru,e1.ru,ngs55.ru##[data-ref="sticky-header-wrap"] > [data-test="sticky-header"] ~ div
+! новый дизайн главной e1
+www.e1.ru###app > [data-cms-place] + div[class] > div:first-child:not(:only-child)
+www.e1.ru#?#.gridContainer div[class]:-abp-has(> [data-cms-place])
+www.e1.ru##a[href*="prinzip.su"][href*="from=menu"]
+www.e1.ru##a[href*="prinzip.su"][href*="from=menu"] + div
 !
 ! Overclockers.ru
 forums.overclockers.ru##.adsbygoogle
