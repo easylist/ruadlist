@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230406.1952
+@version        0.20230410.1659
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1039,9 +1039,15 @@
 @-moz-document
   domain("autorambler.ru"),
   domain("rambler.ru") {
+    #rootWrapper article > nav + div div[class][style^="height:"][style$="px;"] div {
+        background-color: transparent !important
+    }
     #bigColumn script + div[class] > div[style^="height"] > div > div[id^="cluster-"] ~ div:empty, 
     [data-blocks="mini_video_player::close_button"] {
         display: none !important
+    }
+    #rootWrapper article > nav + div div[class][style^="height:"][style$="px;"] {
+        height: auto !important
     }
     #bigColumn script + div[class] > div[style^="height"] * {
         height: inherit !important
@@ -1405,8 +1411,8 @@
   domain("filmshd.vip"),
   domain("goodfilms.su"),
   domain("kinoxa.cc"),
-  domain("lordserial.run"),
   domain("lordfilm.lu"),
+  domain("lordserial.run"),
   domain("newseries.me"),
   domain("yummyanime.best") {
     .wrap {
