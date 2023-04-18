@@ -349,7 +349,6 @@ vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
 lenta.ru##.scroll-to-site
 tapochek.net#@#.scrollable:style(overflow-x: auto !important; padding-bottom: 16px !important)
-pikabu.ru##.sidebar-block [class]:matches-css(min-height: 600px)
 softportal.com##.st-browser__timer
 gtavicecity.ru##.stop-waiting
 pb.wtf,piratbit.fun,piratbit.org,piratbit.pw,piratbit.top,vidak.icu#?#.table > tbody[id^="post_"]:-abp-has(a[style*="position: relative;left: 13px; font-size: 16px; background: yellow;"])
@@ -369,6 +368,7 @@ root-nation.com##^body > a
 otzovik.com##^script:has-text(an.yan)
 pikabu.ru##^script:has-text(new AdContainer)
 trupornolabs.org#@#a[href*="://pronpic.org/"]
+pikabu.ru##aside > div[class="sidebar-block"] > div:matches-css(all: /^/)
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.to##body > div[id^="r"] > div[id^="r"][href]
