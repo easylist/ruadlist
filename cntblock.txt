@@ -1509,6 +1509,8 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||yandex.*/news*msid$document,removeparam=|,domain=yandex.*
 ||yandex.*/search/$document,removeparam=msid,domain=yandex.*
 ||yandex.*/search/$document,removeparam=search_source,domain=yandex.*
+||yandex.*/search/$document,removeparam=src,domain=yandex.*
+||yandex.*/search/$document,removeparam=suggest_reqid,domain=yandex.*
 ||yandex.ru/?clid=$document,removeparam=|,domain=yandex.*
 ||ykt.ru^$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru
 ! исключения
