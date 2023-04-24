@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230419.1718
+@version        0.20230424.1309
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5481,6 +5481,9 @@
 @-moz-document domain("www.rambler.ru") {
     div[style*="height:"][style*="600px"] {
         background-color: transparent !important
+    }
+    footer {
+        max-width: 100% !important
     }
     #app > div, div[style^="min-height:"] {
         min-height: 0 !important
