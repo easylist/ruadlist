@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230424.1309
+@version        0.20230424.1918
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5196,6 +5196,13 @@
         color: red !important;
         border: 3px solid red !important;
         padding: 6px !important
+    }
+    body.video_showcase #page_body, body.video_showcase .VideoLayout, 
+    body.video_showcase .VideoSearchInput {
+        max-width: 100% !important
+    }
+    body.video_showcase .VideoGrid.video_items_list {
+        max-width: 97% !important
     }
 }
 
