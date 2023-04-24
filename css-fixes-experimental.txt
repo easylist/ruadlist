@@ -1206,6 +1206,8 @@ www.rambler.ru##div[style*="height:"][style*="600px"]:style(background-color: tr
 www.rambler.ru##div[style^="min-height:"]:style(min-height: 0 !important)
 autorambler.ru,rambler.ru##div[style^="order:"][style*="-1"] > div > div:style(min-height: 0 !important)
 nova.rambler.ru##html > body:not(#id):style(overflow: unset !important)
+! исправление ошибок и косяков оригинальной вёрстки
+www.rambler.ru##footer:style(max-width: 100% !important)
 ! ---
 rbkgames.com##.branding .main-content:style(margin-top: 90px !important)
 rbkgames.com##.poster-grid-item > a[target="_blank"]:first-child:style(pointer-events: none !important)
