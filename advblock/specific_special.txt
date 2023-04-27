@@ -2,19 +2,18 @@
 !
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
+anidub.vip,anidubonline.com##.plyr__menu
+anidub.vip,anidubonline.com##.plyr__progress__buffer
+pikabu.ru#?#.sidebar-block [class]:-abp-properties(/min-height: 59[0-9]px|min-height: 60[0-9]px/)
+2ip.ua##.sidebar-nav
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://relax-fm\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=relax-fm.ru
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=rg.ru
-2ip.ua##.sidebar-nav
-2ip.ua##div[class*=" ip"]:empty
-@@||code.moviead55.ru/jmap.php?|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
-@@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
-@@||code.moviead55.ru/vast2|$xmlhttprequest,domain=anidub.vip|anidubonline.com|loveanime.live
 all-episodes.one##:not(my-obnaruzhili-blokirovshchik)
-cq.ru#?#div:-abp-properties(content: "Реклама")
-fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
-pikabu.ru#?#.sidebar-block [class]:-abp-properties(/min-height: 59[0-9]px|min-height: 60[0-9]px/)
+cq.ru#?#div:-abp-properties(content: "Реклама")
+2ip.ua##div[class*=" ip"]:empty
+fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 ||24smi.org^$xmlhttprequest,domain=24smi.org
 ||2ip.ua/ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval'
 ||2ip.ua/ua/|$csp=script-src 'unsafe-inline' 'unsafe-eval'
