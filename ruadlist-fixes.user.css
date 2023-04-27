@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230425.1222
+@version        0.20230427.2354
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -23,58 +23,6 @@
     .wrap {
         padding-top: 0 !important;
         top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("116.ru"),
-  domain("14.ru"),
-  domain("161.ru"),
-  domain("164.ru"),
-  domain("178.ru"),
-  domain("26.ru"),
-  domain("29.ru"),
-  domain("35.ru"),
-  domain("43.ru"),
-  domain("45.ru"),
-  domain("48.ru"),
-  domain("51.ru"),
-  domain("53.ru"),
-  domain("56.ru"),
-  domain("59.ru"),
-  domain("60.ru"),
-  domain("62.ru"),
-  domain("63.ru"),
-  domain("68.ru"),
-  domain("71.ru"),
-  domain("72.ru"),
-  domain("74.ru"),
-  domain("76.ru"),
-  domain("86.ru"),
-  domain("89.ru"),
-  domain("93.ru"),
-  domain("chita.ru"),
-  domain("e1.ru"),
-  domain("fontanka.ru"),
-  domain("ircity.ru"),
-  domain("mgorsk.ru"),
-  domain("msk1.ru"),
-  domain("ngs.ru"),
-  domain("ngs22.ru"),
-  domain("ngs24.ru"),
-  domain("ngs42.ru"),
-  domain("ngs55.ru"),
-  domain("ngs70.ru"),
-  domain("nn.ru"),
-  domain("proizhevsk.ru"),
-  domain("provoronezh.ru"),
-  domain("sochi1.ru"),
-  domain("sterlitamak1.ru"),
-  domain("tolyatty.ru"),
-  domain("ufa1.ru"),
-  domain("v1.ru") {
-    .l-wrapper > div[style^="position: absolute;"][style*="width: 30px;"][style*="height: 30px;"][style*="bottom: 13px;"][style*="left: 10px;"] {
-        opacity: unset !important
     }
 }
 
@@ -478,6 +426,7 @@
   domain("7days.ru"),
   domain("doctorpiter.ru"),
   domain("dom.mail.ru"),
+  domain("fontanka.ru"),
   domain("kp.kg"),
   domain("kp.kz"),
   domain("kp.md"),
@@ -4487,8 +4436,8 @@
     div[style*="width:"][style*="fit-content"] > img[onclick^="javascript:window.location"] {
         display: none !important
     }
-    .menu[role="navigation"] div[style*="margin:"], 
-    aside > div[class]:first-child > div, aside div[style*="height"] {
+    .menu[role="navigation"] div[style], aside > div[class]:first-child > div, 
+    aside div[style*="height"] {
         height: auto !important
     }
     main > div[class*=" "] > div {
@@ -5586,7 +5535,8 @@
     body > .route-tip-view, div[aria-label="Реклама"], 
     div[class*=" news-"][class$="_mode_daas"], 
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
-    div[class*="sidebar"] > .direct-snippet {
+    div[class*="sidebar"] > .direct-snippet, 
+    div[class="serp-item RsyaGuarantee"] {
         display: none !important
     }
     .monetization-group > .monetization-group__item {
