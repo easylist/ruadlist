@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230427.2354
+@version        0.20230428.1113
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -614,6 +614,7 @@
   domain("gidonline.fun"),
   domain("greenpost.ua"),
   domain("kinoboom.su"),
+  domain("kinogo-720.net"),
   domain("oblozhki.net"),
   domain("repackov.net"),
   domain("sportboom.info"),
@@ -3375,6 +3376,9 @@
     }
     body > .grid .grid__rcol {
         margin-left: 0 !important
+    }
+    body > .grid .grid__lcol > .footer {
+        margin-top: 10px !important
     }
     [data-testid="grid-left-col"] > .logo, 
     div[slot="main-column"] .search-container {
