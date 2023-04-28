@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230428.1113
+@version        0.20230428.2259
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -892,8 +892,12 @@
 }
 
 @-moz-document domain("anitokyo.tv") {
-    .topside::after, .topside::before {
+    .topside::after {
         background-image: none !important
+    }
+    .topside::before {
+        background-image: none !important;
+        width: unset !important
     }
     .container > header {
         margin-top: 10px !important
