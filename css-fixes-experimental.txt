@@ -200,8 +200,9 @@ anistar.org,astar.bz,online-star.org,online-stars.org##body > header:style(top: 
 anistar.org,astar.bz,online-star.org,online-stars.org##html > body:not(#id):style(background-image: none !important)
 ! ---
 anitokyo.tv##.container > header:style(margin-top: 10px !important)
-anitokyo.tv##.topside::after:style(background-image: none !important)
-anitokyo.tv##.topside::before:style(background-image: none !important; width: unset !important)
+anitokyo.tv##.topside::after
+anitokyo.tv##.topside::before
+anitokyo.tv##.topside:style(max-width: 99.8% !important)
 ! ---
 anti-malware.ru##body > header:style(margin-top: 0 !important)
 ! ---
