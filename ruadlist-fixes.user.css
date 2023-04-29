@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230428.2259
+@version        0.20230429.1111
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -892,15 +892,14 @@
 }
 
 @-moz-document domain("anitokyo.tv") {
-    .topside::after {
-        background-image: none !important
-    }
-    .topside::before {
-        background-image: none !important;
-        width: unset !important
+    .topside::after, .topside::before {
+        display: none !important
     }
     .container > header {
         margin-top: 10px !important
+    }
+    .topside {
+        max-width: 99.8% !important
     }
 }
 
@@ -1389,6 +1388,12 @@
     }
     #app > #public, #app > #public > #content {
         width: 100% !important
+    }
+}
+
+@-moz-document domain("club.dns-shop.ru") {
+    .header-space {
+        max-width: 100% !important
     }
 }
 
@@ -2614,15 +2619,6 @@
     }
 }
 
-@-moz-document domain("hotline.ua") {
-    .reset-scroll::before, div[data-lightbox-id="product-fast-question"] {
-        display: none !important
-    }
-    .reset-scroll {
-        overflow: auto !important
-    }
-}
-
 @-moz-document domain("housechief.ru") {
     .td-main-content-wrap, 
     .tdc-content-wrap > div[class*="vc_custom_"]:first-child {
@@ -3131,18 +3127,6 @@
     }
 }
 
-@-moz-document domain("kwikeer.com") {
-    .__post-content-preview::after {
-        content: none !important
-    }
-    div[data-post-action-id^="#post_"] > .__post-content-btn {
-        display: none !important
-    }
-    div[id^="post_"][class="__post-content-preview"] {
-        max-height: none !important
-    }
-}
-
 @-moz-document domain("l2top.ru") {
     .container[style="max-width: unset;"] > .container {
         margin-top: auto !important
@@ -3523,16 +3507,6 @@
 @-moz-document domain("mirkino.club") {
     body > header {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("mirvracha.ru") {
-    [class*="LayoutGuest_blur__"] {
-        -webkit-filter: none !important;
-        filter: none !important
-    }
-    .mobile-registration-form, [class*="LayoutGuest_blur__"]::before {
-        display: none !important
     }
 }
 
