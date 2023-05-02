@@ -101,6 +101,7 @@
 ##[onclick^="window.open('http://ok.ru/dk?st.cmd=addShare"]
 ~ok##a[href*="connect.ok.ru/dk?st.cmd="][href*="share"]
 ~ok.ru##a[href*="odnoklassniki.ru/dk?st.cmd=addShare"]
+~twitter.com##a[href^="//twitter.com/share"]
 ~vk.com##a[href^="//vk.com/share.php?"]
 ##a[href^="http://connect.mail.ru/share"]
 ~ok.ru##a[href^="http://ok.ru/dk?st.cmd=addShare"]
@@ -122,6 +123,7 @@
 ~ok.ru##a[onclick*="connect.ok.ru/offer?"]
 ~facebook.com##a[onclick*="facebook.com/sharer.php?"]
 ~vk.com##a[onclick^="window.open('http"][onclick*="://vk.com/share.php?"]
+~twitter.com##body .twitter-share-button
 ##body > [src*="/MySeria/"] ~ div .block-small-login-social
 ##button[class="gbil esw eswd"]
 ##div[id^="vk_comments"]
