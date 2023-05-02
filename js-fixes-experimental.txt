@@ -357,6 +357,7 @@ dynamo.kiev.ua##.video-scroll:remove()
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
 pronpic.org#@#:not(obhod-adblocka)
+@@/fuckadblock.$script,domain=aniboom.one
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport$subdocument,removeparam=|
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-video$subdocument,removeparam=|
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
