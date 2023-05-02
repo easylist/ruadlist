@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230429.1111
+@version        0.20230502.1611
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -360,13 +360,6 @@
     }
 }
 
-@-moz-document domain("2ip.ua") {
-    .ipblock .showip_mod div[class*=" ip"] {
-        background-image: none !important;
-        cursor: default !important
-    }
-}
-
 @-moz-document
   domain("2plus2.ua"),
   domain("bigudi.tv"),
@@ -436,6 +429,7 @@
   domain("ohotniki.ru"),
   domain("radiokp.ru"),
   domain("spletnik.ru"),
+  domain("sportkp.ru"),
   domain("wday.ru"),
   domain("woman.ru") {
     .l-wrapper > div[style^="position: absolute;"][style*="width: 30px;"][style*="height: 30px;"][style*="bottom: 13px;"][style*="left: 10px;"] {
@@ -844,8 +838,7 @@
 @-moz-document
   domain("animespirit.tv"),
   domain("fullfilmhd.space"),
-  domain("igry-online.net"),
-  domain("kinocok.org") {
+  domain("igry-online.net") {
     #wrapper {
         margin-top: 0 !important
     }
@@ -5553,6 +5546,9 @@
     .head-stripe {
         position: fixed !important;
         transform: scale(0) !important
+    }
+    .app__wrapper div[style^="width: calc(100% "] {
+        width: unset !important
     }
 }
 
