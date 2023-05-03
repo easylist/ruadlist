@@ -1,15 +1,11 @@
 [Adblock Plus 2.0]
-! Checksum: jaDDZ0uiqXom+KClopCiPA
-! Version: 202208012204
+! Checksum: iuoG3gP4wv5fF5UU44ETjA
+! Version: 202305030940
 ! Title: Adblock Warning Removal List
-! Last modified: 01 Aug 2022 22:04 UTC
+! Last modified: 03 May 2023 09:40 UTC
 ! Expires: 1 days (update frequency)
-! Homepage: https://easylist.to/
+! Homepage: https://github.com/easylist/antiadblockfilters
 ! Licence: https://easylist.to/pages/licence.html
-!
-! Please report any unblocked obtrusive anti adblock messages or problems
-! in the forums (https://forums.lanik.us/) or via e-mail (easylist.subscription+anti@gmail.com).
-! Please check our guidelines before reporting: https://easylist.to/2013/05/10/anti-adblock-guide-for-site-admins
 !
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_arabic.txt ***
 !
@@ -170,6 +166,7 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 mediafire.com###abnotify
 llifle.com###ad_blocker_found
 flightradar24.com###bottomRightPanel
+audiotag.info###dclaim
 videofun.me###flowplayer > div[class][style]:first-child
 abc-fonts.me###galepro-core-adb-enabled
 yocast.tv###ra9e
@@ -182,6 +179,7 @@ biggestplayer.me##.adblock + *
 nexusmods.com##.areplacer
 hearthhead.com,wowhead.com##.block-bg
 wowhead.com##.block-bgimg
+audiotag.info##.dialog-fog
 euroiphone.eu##.div-download-h
 euroiphone.eu##.div-download-v
 findretros.com##.fuck-adblock
@@ -237,6 +235,7 @@ shadbase.com##img[alt="adblock"]
 /adblock_erreur.
 /adblock_gate/images/animated.gif?
 /adblock_notify.js
+/adblockDetector.
 /adblocker-detected.
 /adblocker-feature?
 /adblocker/modal.
@@ -251,13 +250,16 @@ shadbase.com##img[alt="adblock"]
 /disable-adblock.
 /google-adblock.
 /inc/antiblock.
+/levelmaxblock.js
 /nonAdBlock/*
 /popup/adblocker
 /SvgAdblockDetected/*
 /testAB.bundle.
 /wdbloogablock.js
 /wp-content/plugins/ad-block-defender/*
+/wp-content/plugins/adunblocker/*
 /wp-content/plugins/deadblocker/*
+/wp-content/plugins/deblocker/*
 /wp-content/uploads/an-temp/*$script,stylesheet
 /wutime_adblock/*
 _adblock_killer.
@@ -356,6 +358,7 @@ _adblocker_detected
 ###advertisementjsalert
 ###anti_adblock
 ###box-adblocker-wrap
+###checkadblockernow
 ###content_adblock_message
 ###detectAdblock
 ###detectadblock
@@ -366,6 +369,7 @@ _adblocker_detected
 ###gothamadblock_msg
 ###gothamadblock_overlayh_n
 ###js-popup-blocker
+###mdp-deblocker-ads
 ###mdp-deblocker-js-disabled
 ###message_adblock
 ###modal-adblocker
@@ -398,6 +402,7 @@ _adblocker_detected
 ##.ad_block_off
 ##.ad_blocker
 ##.adace-popup-detector
+##.adb-detect.simple-alert-boxes
 ##.adb-enabled
 ##.adbd-background
 ##.adbd-message
@@ -483,7 +488,7 @@ debrideurstream.fr#@##pubdirecte
 ot-boutique.fr#@##publicite
 iwin.com#@##sponsorText
 fairytailmx.com#@##sponsored-ad
-hypebeast.com#@#.ad-blocked
+hypebeast.com,hypebeast.kr#@#.ad-blocked
 forum.virtualdjing.com#@#.adFrame
 gamaniak.com#@#.adsbygoogle
 dealerdunet.fr#@#.text_ads
