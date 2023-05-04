@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230502.1611
+@version        0.20230504.1559
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -412,28 +412,6 @@
 @-moz-document domain("7days.ru") {
     body {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("7days.ru"),
-  domain("doctorpiter.ru"),
-  domain("dom.mail.ru"),
-  domain("fontanka.ru"),
-  domain("kp.kg"),
-  domain("kp.kz"),
-  domain("kp.md"),
-  domain("kp.ru"),
-  domain("lady.mail.ru"),
-  domain("mk.ru"),
-  domain("ohotniki.ru"),
-  domain("radiokp.ru"),
-  domain("spletnik.ru"),
-  domain("sportkp.ru"),
-  domain("wday.ru"),
-  domain("woman.ru") {
-    .l-wrapper > div[style^="position: absolute;"][style*="width: 30px;"][style*="height: 30px;"][style*="bottom: 13px;"][style*="left: 10px;"] {
-        opacity: unset !important
     }
 }
 
@@ -3081,6 +3059,16 @@
     }
     body > #app [data-branding-wrapper] {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("kp.kg"),
+  domain("kp.kz"),
+  domain("kp.md"),
+  domain("ru") {
+    .l-wrapper > div[style^="position: absolute;"][style*="width: 30px;"][style*="height: 30px;"][style*="bottom: 13px;"][style*="left: 10px;"] {
+        opacity: unset !important
     }
 }
 
