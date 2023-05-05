@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230504.1559
+@version        0.20230505.2013
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5236,6 +5236,20 @@
     div[class^="Branding_container_"] {
         margin-top: unset !important;
         height: auto !important
+    }
+}
+
+@-moz-document
+  domain("www.aviasales.md"),
+  domain("www.aviasales.ru"),
+  domain("www.aviasales.kg"),
+  domain("www.aviasales.uz"),
+  domain("www.aviasales.ua"),
+  domain("www.aviasales.by") {
+    [data-test-id="avia_form"] > div[class*="footer"] label {
+        zoom: 2 !important;
+        color: #f57c00 !important;
+        font-weight: bold !important
     }
 }
 
