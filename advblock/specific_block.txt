@@ -1,4 +1,5 @@
 ! CSP and Header filters
+$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.amazonaws.com *.cloudflare.com apis.google.com cse.google.com www.google.com *.google.com/complete/ *.googleapis.com *.googletagmanager.com *.net *.highcharts.com *.io *.jquery.com *.jivosite.com *.keycaptcha.com *.ru *.twitter.com *.ua vk.com,domain=vikna.tv|kurs.com.ua
 .infox.sg^$csp=script-src
 /gateway/aHR0c$csp=script-src
 |http*//fastpic.org/$csp=frame-src 'self'
@@ -19,7 +20,6 @@
 ||forum.ru-board.com/*.cgi?*=5&topic=51141$csp=img-src 'self' addons.mozilla.org raw.githubusercontent.com
 ||gdz-ru.work/subscribe/$csp=sandbox allow-same-origin;
 ||idealmedia.io$csp=script-src
-||kurs.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.cloudfront.net *.highcharts.com *.polyfill.io *.googleapis.com apis.google.com *.jquery.com *.jivosite.com *.keycaptcha.com vk.com yastatic.net *.yandex.ru *.bemobile.ua *.twitter.com
 ||lentapronews.com^$csp=script-src
 ||lis-gor.com/$csp=sandbox allow-same-origin;
 ||modfix.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data:
