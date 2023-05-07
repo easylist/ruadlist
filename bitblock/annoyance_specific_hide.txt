@@ -2200,7 +2200,6 @@ e.mail.ru,octavius.mail.ru##.application-mail__wrap .feedback-banner
 ~dom.mail.ru,mail.ru,sportmail.ru#?#.article__item > *:-abp-contains(/^Вам может быть интересно:$|^И не пропусти интересное видео:$|^И не пропусти ролик:$|^И не пропусти интересный ролик:$|^И не пропусти наш ролик:$|^Смотрите наши видео:$|^Смотрите видео:$|видео ниже:/)
 ~dom.mail.ru,mail.ru##.article__item_source_viqeo ~ .article__item_source_viqeo
 ~dom.mail.ru,mail.ru#?#.article__item_source_viqeo:-abp-has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
-hi-tech.mail.ru#?#.article__text > .box:-abp-has(> div div > .js-subscription__button)
 my.mail.ru##.b-column-right__block-apps
 my.mail.ru##.b-column-right__block-sale
 my.mail.ru##.b-head__alerts
@@ -2212,22 +2211,17 @@ cloud.mail.ru##.b-promo-banner
 cloud.mail.ru##.b-promo-banner__content
 otvet.mail.ru##.banner-anonymous-email
 auto.mail.ru##.block > .wrapper > .cols > .cols__wrapper > div:not([class*="cols"]) [style^="position"] > div:not([class*="box"])
-hi-tech.mail.ru##.block > .wrapper table > tbody > tr > td:nth-child(3):last-child
 otvet.mail.ru##.block-portal-footer > div[id^="mailru"]
 torg.mail.ru##.block-target_horizontal
 auto.mail.ru##.block_recomendations
 deti.mail.ru,health.mail.ru,pets.mail.ru##.block_separated_top > .wrapper
 mail.ru,sportmail.ru##.cmpboxWelcomeGDPR
 auto.mail.ru##.cols.cols_clear .cols__wrapper > :not([class*="cols"])
-hi-tech.mail.ru##.cols__column_sidebar .rb
-hi-tech.mail.ru##.cols__column_sidebar .spring
 sportmail.ru##.cols__column_sidebar > .cols__inner > div[class*=" "] > .box_double ~ .box_double
 sportmail.ru#?#.cols__column_sidebar > .cols__inner > div[class*=" "] > div:-abp-has(> div:not(.box):not([class*="_"]):not(.js-module))
 sportmail.ru##.cols__column_sidebar > .cols__inner > div[class*=" "] > div:first-child:not(.box):not(.js-module)
 auto.mail.ru##.cols__column_sidebar > .cols__inner [style^="position"] > div:not([class*="box"])
 horo.mail.ru##.cols__column_sidebar.cols__column > .cols__inner
-hi-tech.mail.ru#?#.cols__wrapper > .cols__column_wrap div:-abp-has(> .rb)
-hi-tech.mail.ru##.cols_margin .link-hdr
 ~e.mail.ru,mail.ru##.cols_margin noindex
 ~e.mail.ru,mail.ru##.daynews table > tbody > tr > td:nth-child(3):last-child
 games.mail.ru##.download-button-cloud-wrap
@@ -2286,6 +2280,7 @@ go.mail.ru##.smack-market-model
 auto.mail.ru##.sticky-springs > .block_min-height-450
 auto.mail.ru#?#.sticky-springs div[class]:-abp-has(> [id^="mailru"] ~ script:-abp-contains(/parallax/i))
 ~e.mail.ru,mail.ru,sportmail.ru##.sticky[id^="notification"]
+hi-tech.mail.ru##.the-cookie
 e.mail.ru,octavius.mail.ru##.thread__footer
 mail.ru,sportmail.ru#?#.viewbox__holder div:-abp-has(> .viewbox__side-loader)
 otvet.mail.ru##.vue-floating-notifications
@@ -2293,6 +2288,7 @@ otvet.mail.ru##.vue-floating-notifications
 otvet.mail.ru##.wrapper div[class^="adv-slot"]
 love.mail.ru#?#[class]:-abp-has(> [data-name="cookie-message-close-action"])
 go.mail.ru##[class^="result__li y"]
+hi-tech.mail.ru##[data-logger-parent="footer"] > div
 mail.ru,~media-golos.mail.ru,sportmail.ru##[data-logger="AudioPlayer"]
 auto.mail.ru##[data-module="ProgressivePaging.Testdrives"] .js-pgng_cont .grid__item_banner
 auto.mail.ru#?#[data-module="ProgressivePaging.Testdrives"] .js-pgng_cont > div[class*=" "]:not([class*="__"]) > div:first-child + div:-abp-has(> div:not([class*="__"]))
@@ -2321,14 +2317,13 @@ mail.ru##body > .zeropixel ~ div .well.notify
 mail.ru##body > div[id^="tb-"][class^="tb-"]
 go.mail.ru##body > div[style^="z-index:"]
 mail.ru##body:not(.js-module) .tabs-content ~ div > div:first-child:not([name])
-hi-tech.mail.ru#?#div:-abp-has(> .m-subscription_sidebar)
 cloud.mail.ru##div[class*="Space__root_marketingPromo"] > div[class^="Space__payment"]
 cloud.mail.ru##div[class*="Space__root_marketingPromo"] div[class^="Space__subscriptions"]
-hi-tech.mail.ru##div[class*="rb_"][class*="margin_bottom"]
 news.mail.ru##div[class="block block_collapse_bottom"] > [class="wrapper"] #comments ~ div > div:not([class*="box"])
 sportmail.ru#?#div[class]:-abp-has(> [data-module="MyWidgetModel"])
 todo.mail.ru##div[class^="Logo_base__"] > svg > g
 ~e.mail.ru,mail.ru##div[data-adq-id^="adqcontainer"]
+hi-tech.mail.ru##div[data-logger="hitech__SubscriptionSidebar"]
 news.mail.ru##div[data-module="LazyLoad.PromoPopup"] .block_separated_top
 sportmail.ru##div[data-module="LazyLoad.PromoPopup"] .js-module
 news.mail.ru##div[data-module="LazyLoad.PromoPopup"] .js-module.block
