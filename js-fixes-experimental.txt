@@ -367,10 +367,6 @@ pronpic.org#@#:not(obhod-adblocka)
 @@||st.top100.ru/top100/top100.js|$script,badfilter,domain=auto.rambler.ru|news.rambler.ru
 @@||studizba.com^$generichide,badfilter
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
-root-nation.com##^.td-a-rec
-root-nation.com##^body > a
-otzovik.com##^script:has-text(an.yan)
-pikabu.ru##^script:has-text(new AdContainer)
 trupornolabs.org#@#a[href*="://pronpic.org/"]
 pikabu.ru##aside > div[class="sidebar-block"] > div:matches-css(all: /^/)
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
@@ -538,10 +534,6 @@ www.ukr.net##body > .wrapper > #main:style(overflow: hidden !important)
 www.ukr.net##div[class*=" "]:first-child + div[class*=" "]:last-child > div[class*=" "] > div[class*=" "]:first-child:empty ~ div[class*=" "]
 !#if env_mobile
 www.ukr.net##.lazy-load-banner
-!#endif
-!#if env_firefox
-www.ukr.net##^script:has-text(znc|track)
-!#endif
 !
 ! Правила для компенсации отсутствия Scriptlet Doctor
 !#if env_firefox
@@ -556,6 +548,12 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 ! Фоксо-специфичные случаи >
 !#if env_firefox
 @@$cname,domain=360tv.ru|games-pc.top|innal.top|kyiv.ua
+root-nation.com##^.td-a-rec
+root-nation.com##^body > a
+ritsatv.ru##^script:has(fetch)
+otzovik.com##^script:has-text(an.yan)
+pikabu.ru##^script:has-text(new AdContainer)
+www.ukr.net##^script:has-text(znc|track)
 !#endif
 !
 ! MV3-специфичные случаи >
