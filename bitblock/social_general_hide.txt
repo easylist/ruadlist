@@ -128,6 +128,7 @@
 ~facebook.com##a[onclick*="facebook.com/sharer.php?"]
 ~vk.com##a[onclick^="window.open('http"][onclick*="://vk.com/share.php?"]
 ~twitter.com##body .twitter-share-button
+##body > #fb-root.fb_reset
 ##body > [src*="/MySeria/"] ~ div .block-small-login-social
 ##button[class="gbil esw eswd"]
 ##div[id^="vk_comments"]
