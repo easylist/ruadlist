@@ -1194,6 +1194,7 @@ dzen.*##div[class*=" adv_pos_index-"]
 dzen.*##div[class*="-sidebar__ad"]
 dzen.*#?#div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
 dzen.*,ya.*,~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
+dzen.*,yandex.*##.b-statcounter + div[class] > div[id][class]
 dzen.*,yandex.*##.mg-grid__col div[class*="_type_native"]
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
@@ -1206,7 +1207,6 @@ music.yandex.*#?#+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column
 tv.yandex.*##.recommended-ott
 yandex.*###bk-container
-yandex.*##.b-statcounter + div[class] > div[id][class]
 yandex.*##.card-rtb-one-column-stub
 yandex.*##.dist-popup
 yandex.*##.MediaViewer div[class$="-FooterContent"]
