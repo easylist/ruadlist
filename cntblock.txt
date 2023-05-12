@@ -1274,8 +1274,7 @@ dzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75
 4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
 4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)
 ! верхняя плашка
-4pda.*##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id][style^="min-height:"][style$="px;"]
-4pda.*##html[style] > body [class]:not([id]):not(div):not([style]) > div ~ :not(div)[id][class][style=""]
+4pda.*##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id]:not([style]) > script:first-child + [class] a[target="_blank"] > img
 ! рекламный фон
 4pda.*##html[style] > body :not(div) ~ :not(div)[class][id][style]:style(background-image: none !important)
 ! кликабельный элемент рекламного фона

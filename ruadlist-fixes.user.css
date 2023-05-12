@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230512.1251
+@version        0.20230512.1748
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -396,6 +396,10 @@
     iframe[src*="utm_campaign"], 
     tbody > tr[valign="top"] > td[width*="%"] + td > a[href][target="_blank"] > img {
         display: none !important
+    }
+    html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id] {
+        min-height: 0 !important;
+        height: unset !important
     }
 }
 
