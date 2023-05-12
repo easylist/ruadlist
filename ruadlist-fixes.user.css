@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230512.1748
+@version        0.20230513.216
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5170,6 +5170,15 @@
     }
 }
 
+@-moz-document domain("vsthemes.org") {
+    .autoload-content.hidding {
+        display: block !important
+    }
+    .autoload-wait, .msg.success {
+        display: none !important
+    }
+}
+
 @-moz-document domain("vsthouse.ru") {
     .a-overlay {
         display: none !important
@@ -5215,6 +5224,15 @@
 @-moz-document domain("weukraine.tv") {
     .eael-sticky-video-wrapper > #videobox {
         all: inherit !important
+    }
+}
+
+@-moz-document domain("winzoro.net") {
+    .dpbAll {
+        display: block !important
+    }
+    .dpbTimeOut {
+        display: none !important
     }
 }
 
