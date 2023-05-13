@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230513.216
+@version        0.20230513.1546
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3026,6 +3026,12 @@
     }
     .bg_container {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("klops.ru") {
+    .page-detail .section-detail-news {
+        margin-left: 0 !important
     }
 }
 
