@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230518.1801
+@version        0.20230518.2336
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5463,8 +5463,7 @@
 
 @-moz-document domain("www.zoneofgames.ru") {
     html > body:not(#id) {
-        background-color: #3a3a3a !important;
-        padding-top: 0 !important
+        background-color: #3a3a3a !important
     }
     #columns > .transparent {
         background-color: transparent !important
@@ -5472,6 +5471,9 @@
     .branding, .logo {
         background: none !important;
         height: auto !important
+    }
+    body[style="padding-top:250px !important"] {
+        margin-top: -250px !important
     }
 }
 
