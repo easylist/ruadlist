@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230519.1717
+@version        0.20230520.1131
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1298,7 +1298,7 @@
 }
 
 @-moz-document domain("champion.com.ua") {
-    body > #app {
+    .l-wrapper {
         margin-top: 0 !important
     }
 }
@@ -2673,15 +2673,6 @@
 @-moz-document domain("infocar.ua") {
     #totalbg {
         background-image: none !important
-    }
-}
-
-@-moz-document domain("infomama.com.ua") {
-    #logo {
-        display: none !important
-    }
-    #headerMover #headerProxy {
-        height: 50px !important
     }
 }
 
@@ -5177,6 +5168,9 @@
     }
     .autoload-wait, .msg.success {
         display: none !important
+    }
+    .app[style="overflow: hidden;"] {
+        overflow: auto !important
     }
 }
 
