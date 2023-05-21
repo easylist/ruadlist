@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230520.1131
+@version        0.20230521.2043
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5463,7 +5463,7 @@
         background: none !important;
         height: auto !important
     }
-    body[style="padding-top:250px !important"] {
+    body[style^="padding-top:"][style*="250px"][style*="!important"] {
         margin-top: -250px !important
     }
 }
