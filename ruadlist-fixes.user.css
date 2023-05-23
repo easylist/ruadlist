@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230521.2043
+@version        0.20230523.1409
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3782,9 +3782,6 @@
     .wrapper > .header {
         height: 150px !important
     }
-    .main__slider img[alt] {
-        max-height: 300px !important
-    }
 }
 
 @-moz-document domain("nv.ua") {
@@ -5159,18 +5156,6 @@
 @-moz-document domain("vrtp.ru") {
     td[width="100%"][valign="top"][class^="post"] > .postcolor > img {
         max-width: 100% !important
-    }
-}
-
-@-moz-document domain("vsthemes.org") {
-    .autoload-content.hidding {
-        display: block !important
-    }
-    .autoload-wait, .msg.success {
-        display: none !important
-    }
-    .app[style="overflow: hidden;"] {
-        overflow: auto !important
     }
 }
 
