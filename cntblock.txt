@@ -1211,6 +1211,9 @@ mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*#?#+js(
 music.yandex.*#?#+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column
 tv.yandex.*##.recommended-ott
+ya.*,yandex.*#?#.serp-list > .serp-item:-abp-has(> .bno .serp-adv__counter)
+ya.*,yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-event-required])
+ya.*,~yandex.net,yandex.*#?#+js(remove-attr, data-counter, .serp-list a)
 yandex.*###bk-container
 yandex.*##.card-rtb-one-column-stub
 yandex.*##.dist-popup
@@ -1225,8 +1228,6 @@ yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(d
 yandex.*##div[class*="turbo-advert_type_"]
 yandex.*##div[class^="content "][data-bem] > .content__bottom ~ div[class*="card "]
 yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:first-child > div[class$="__content"] + div[class]
-yandex.*#?#.serp-list > .serp-item:-abp-has(> .bno .serp-adv__counter)
-yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-event-required])
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
 ||ya.ru/portal/proxy?blocks=feed_banner
@@ -1239,7 +1240,6 @@ yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-event-required])
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro
 ~yandex.net,mail.yandex.*,yandex.*##div[class^="DisableAdsButton"]
 ~yandex.net,yandex.*#?#+js(cookie-remover, tvoid)
-~yandex.net,yandex.*#?#+js(remove-attr, data-counter, .serp-list a)
 ~yandex.net,yandex.*#?#+js(set-constant, __AAB__, false)
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype._getAdConfig, noopFunc)
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype.getHoneypot, null)
@@ -1273,7 +1273,7 @@ yandex.*#?#.touch-feed > div > .feed-item[id^="zen-row-"]:-abp-has([class^="zen-
 @@||yastatic.net/daas/atom.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/safeframe-bundles/*/host.js|$xmlhttprequest,domain=ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 dzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
-~yandex.net,yandex.*##body.b-page > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
+ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
 !
 ! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(abort-current-inline-script, document.querySelectorAll, outerHeight)
