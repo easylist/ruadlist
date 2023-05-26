@@ -569,3 +569,8 @@ www.ukr.net##^script:has-text(znc|track)
 !#if env_mv3
 afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
 !#endif
+!
+! Экспериментальные правила для development build
+!#if ext_devbuild
+root-nation.com##+js(replace-node-text, style, /body[\s]{1}{[\s][\t][\t]*background-color:/)
+!#endif
