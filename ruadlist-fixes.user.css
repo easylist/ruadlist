@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230526.1408
+@version        0.20230530.2205
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -111,6 +111,12 @@
   domain("plus-plus.tv") {
     .header {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("1plus1.video") {
+    div[class^="playlist-player-branding-"] ~ .playlist-player {
+        max-width: 1155px !important
     }
 }
 
@@ -2721,8 +2727,7 @@
 }
 
 @-moz-document domain("investing.com") {
-    #PromoteSignUpPopUp, #abPopup, div[class^="adBlock-popup"], 
-    div[class^="adBlock-popup_"] ~ div[class^="overlay_"], 
+    #PromoteSignUpPopUp, #__next > .fixed, #abPopup, 
     div[data-test="ad-slot-visible"] {
         display: none !important
     }
