@@ -378,10 +378,6 @@ my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 tass.ru##div[class^="PageLayout_top_sticky"] > div:style(width: auto !important)
-igromania.ru##div[class^="page_"]:has(.pmarker) .universal_content > a[target="_blank"]:style(pointer-events: none !important)
-igromania.ru##div[class^="page_"]:has(.pmarker) .universal_content > div:not(.uninote):not(:last-child) a[target="_blank"]:not([href*="igromania"]):not([href*="www.youtube.com"]):style(pointer-events: none !important)
-igromania.ru##div[class^="page_"]:has(.pmarker) .universal_content a[href*="=refer"]:style(pointer-events: none !important)
-igromania.ru##div[class^="page_"]:has(.pmarker) .universal_content a[href*="utm_campaign"]:style(pointer-events: none !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
@@ -392,6 +388,7 @@ porno365.*##+js(abort-on-property-read, bc_blocks)
 porno365.*##+js(abort-on-stack-trace, Object.prototype.parallax, window.onload)
 pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorrent.com,sextor.org,domahatv.com,torrent-pirat.com,xtorrent.net,rapidzona.tv,xxxrip.net,xxxtor.com,hentai-share.one##+js(abort-current-inline-script, document.querySelectorAll, popMagic)
 rp5.*##+js(no-setTimeout-if, 0x)
+igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
 ||adbutton.net^$script,redirect=noopjs
 ||amedia.online/templates/Animedia/js/libs.js$script,removeparam=|
