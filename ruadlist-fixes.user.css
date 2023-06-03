@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230530.2205
+@version        0.20230603.1950
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -559,7 +559,7 @@
     }
 }
 
-@-moz-document domain("all-episodes.one") {
+@-moz-document domain("all-episodes.fun") {
     body {
         background-image: none !important
     }
@@ -2649,23 +2649,6 @@
     }
     .video-stream > * {
         pointer-events: auto !important
-    }
-}
-
-@-moz-document domain("igromania.ru") {
-    body > .outer_outer > .outer_inner {
-        background: #dedede !important
-    }
-    .wrapper_outer > .wide_brand {
-        display: none !important
-    }
-    .outer_inner > .wrapper_outer > div[class] {
-        height: auto !important;
-        min-height: auto !important
-    }
-    div.hmenu_box a.hmenu {
-        padding-right: 13px !important;
-        padding-left: 13px !important
     }
 }
 
