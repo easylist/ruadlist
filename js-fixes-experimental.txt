@@ -350,10 +350,9 @@ vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
 lenta.ru##.scroll-to-site
 tapochek.net#@#.scrollable:style(overflow-x: auto !important; padding-bottom: 16px !important)
-pikabu.ru##.sidebar-block [class]:matches-css(min-height: /[0-9]{3}px/)
 softportal.com##.st-browser__timer
 gtavicecity.ru##.stop-waiting
-pikabu.ru##.stories-feed__container > .story:has([class]:matches-css(min-height: /[0-9]{3}px/))
+pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story:not([data-author-name])
 pb.wtf,piratbit.fun,piratbit.org,piratbit.pw,piratbit.top,vidak.icu#?#.table > tbody[id^="post_"]:-abp-has(a[style*="position: relative;left: 13px; font-size: 16px; background: yellow;"])
 dynamo.kiev.ua##.video-scroll:remove()
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz

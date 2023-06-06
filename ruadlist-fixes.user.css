@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230605.1311
+@version        0.20230606.1116
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3960,6 +3960,10 @@
     }
     header > .header__main {
         background-color: var(--color--header__bg) !important
+    }
+    aside > .sidebar-block > div, aside > .sidebar-block > div > div, 
+    aside > .sidebar-block > div > div > div {
+        min-height: unset !important
     }
     .app > .app__inner[style*="padding-top"] {
         padding-top: 64px !important

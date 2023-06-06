@@ -11,6 +11,8 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(/
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=rg.ru
 ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+pikabu.ru##[data-ssr]
+pikabu.ru#?#aside > .sidebar-block:-abp-has(> div[id])
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 cq.ru#?#div:-abp-properties(content: "Реклама")
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
