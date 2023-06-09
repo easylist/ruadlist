@@ -5,10 +5,8 @@
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru##.sidebar-block [style=""]
-pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(/min-height: [0-9]{3}px/))
-pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: 99px))
-pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(/min-height: [0-9]{3}px/))
-pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(min-height: 99px))
+pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(/min-height: 99px|min-height: [0-9]{3}px|min-height: [0-9]{1,}\./))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(/min-height: 99px|min-height: [0-9]{3}px|min-height: [0-9]{1,}\./))
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=rg.ru
 ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
