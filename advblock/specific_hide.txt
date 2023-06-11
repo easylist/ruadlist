@@ -5334,6 +5334,7 @@ app2top.ru##[data-information]
 forbes.ru##[data-interval] > li div[style="min-height: 64px;"]
 om1.ru##[data-io-article-url] .content-block
 forbes.ru#?#[data-io-article-url] > footer > div[class]:-abp-has(> .undefined)
+ozon.ru##[data-lcp-name*="anner-"]
 myukraina.com.ua##[data-link*="goo.gl"]
 rocketdockfree.ru##[data-msetup]
 woman.ru##[data-name*="Banner"]
@@ -5351,6 +5352,8 @@ odds.ru##[data-popup="bonus"]
 fishki.net#?#[data-post-id]:-abp-has([content="Реклама"])
 fishki.net#?#[data-post-id]:-abp-has([href*="/profile/543769"])
 cheezu.ru##[data-provider="yandex"]
+ozon.ru##[data-replace-layout-path] > div[style="height:300px;"]
+ozon.ru##[data-replace-layout-path] > div[style="height:700px;"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 zoneofgames.ru##[data-role="sidebarAd"]
@@ -7112,6 +7115,7 @@ youla.ru##div[data-test-component="ProductOrAdCard"] > span[data-debug-info]
 olx.kz,olx.ua,olx.uz##div[data-testid="qa-advert-slot"]
 forbes.ru##div[data-title="Реклама на Forbes"]
 malagarusa.es##div[data-uk-slideshow]
+ozon.ru##div[data-widget="banner"]
 sbp-program.ru##div[id$="-ad"]
 memesmix.net#?#div[id$="-menu"] [class*="module-body"]:-abp-has(> script[src]:not([src*="vk.com"]))
 zoneofgames.ru##div[id$="_AD2"]
@@ -7425,6 +7429,7 @@ rugame.mobi##div[style*="/reklama.gif"]
 doefiratv.info##div[style*="339px;"]
 x-console.com##div[style*="710px;"][style*="70px;"]
 forums.ngemu.com##div[style*="920px;"][style*="250px;"]
+ozon.ru#?#div[style*="background-color:"]:-abp-has(> span:-abp-contains(Реклама))
 bikepost.ru##div[style*="block"][style*="center"][style*="width:"][style*="height:"]
 dumskaya.net##div[style*="display:inline-bl1ock"]
 softportal.com##div[style*="float:left;"][style*="position:relative;"] > a[rel="nofollow"] > span
@@ -7468,6 +7473,7 @@ soccer365-1.xyz,soccer365.ru##div[style="height:200px"]
 unews.pro##div[style="height:20px;"]:empty
 autonevod.ru##div[style="height:250px"]
 unian.info,unian.net,unian.ua##div[style="height:260px;clear:both;"]
+ozon.ru##div[style="height:32px;"] div[style*="background-color:"]
 dublikat.one##div[style="height:5px;"]
 unian.info,unian.net,unian.ua##div[style="height:600px"]
 chudo-povar.com##div[style="height:auto;min-height:300px;"]
@@ -7591,9 +7597,8 @@ popcake.tv#?#h5:-abp-contains(Новости партнёров)
 graniru.org#?#h6:-abp-contains(/^реклама/i)
 chelseanews.ru,mignews.com,mignews.ru#?#h6:-abp-contains(/новости партнеров/i)
 dachnye-sovety.ru#?#h6:-abp-contains(РЕКОМЕНДУЕМ ПОЧИТАТЬ:)
-ozon.ru##header + [data-replace-layout-path] > div[style^="border-radius:"]
-ozon.ru##header + [data-replace-layout-path] > div[style^="border-radius:"] ~ [data-widget="separator"] + [data-widget="separator"]
-ozon.ru##header + [data-widget="container"] > div[style^="border-radius:"]
+ozon.ru##header + [data-replace-layout-path] > div:not([class])
+ozon.ru##header + [data-replace-layout-path] > div[style*="min-height:"]
 agronomy.com.ua##header .size-75
 finecooking.ru##header > .container-fluid
 proagro.com.ua##header > a
