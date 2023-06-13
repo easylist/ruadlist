@@ -6,7 +6,7 @@
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
 /^https?://pikabu\.ru\/ajax\/[^\s]{1}key=[A-Za-z0-9]{32}-\d{8}[^\s](?!&vn_buff=)/$xmlhttprequest,domain=pikabu.ru
-/^https?://pikabu\.ru\/ajax\/[^\s]{1}key=[A-Za-z0-9]{32}-\d{9}\&vn_buff=\d/$xmlhttprequest,domain=pikabu.ru
+/^https?://pikabu\.ru\/ajax\/[^\s]{1}key=[A-Za-z0-9]{32}-\d{8}[^\s]{1}\&vn_buff=\d/$xmlhttprequest,domain=pikabu.ru
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=rg.ru
 ||24smi.org^$xmlhttprequest,domain=24smi.org
 ||ritsatv.ru^$~document
