@@ -9,6 +9,7 @@
 /^https?://pikabu\.ru\/ajax\/[^\s]{1}key=[A-Za-z0-9]{32}-\d{8}[^\s]{1}\&vn_buff=\d/$xmlhttprequest,domain=pikabu.ru
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=rg.ru
 ||24smi.org^$xmlhttprequest,domain=24smi.org
+||pikabu.ru/ajax/?key=*4&vn_buff=%$xmlhttprequest,domain=pikabu.ru
 ||ritsatv.ru^$~document
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
