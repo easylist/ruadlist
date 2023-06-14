@@ -2538,15 +2538,7 @@ google.by,google.com,google.com.ua,google.kz,google.ru##div[class^="gb_"] > div[
 google.by,google.com,google.com.ua,google.kz,google.ru##div[class^="gb_"][data-ogsr-up] > div[style*="overflow: hidden;"][style*="position: absolute;"][style*="z-index: "][style*="overflow: hidden;"][style*="margin-right: 25px;"]
 google.by,google.com,google.com.ua,google.kz,google.ru##div[jscontroller] [href*="?utm_source=googlehpfooter"]
 google.by,google.com,google.com.ua,google.kz,google.ru##mobile-promo
-!#if env_chromium
-www.google.*##+js(abort-current-script, String, consentCookiePayload)
-!#endif
-!#if env_edge
-www.google.*##+js(abort-current-script, String, consentCookiePayload)
-!#endif
-!#if env_firefox
-www.google.*##^script:has-text(/consentCookiePayload.*nidCookiePayload/)
-!#endif
+www.google.*##+js(remove-node-text, script, cookieUpdateConsentUrl)
 !
 ! - Экспериментальные правила, добавлять только для доменов, на которых нет :-abp, либо изолировать
 market.yandex.*##div[data-zone-name="morda_context"] > div > div:nth-child(-n+2) > div[data-tid] > div[class] > div[class]:not([data-tid]) > div[class]:not([data-tid]):first-child + div:style(width: inherit !important)
