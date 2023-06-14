@@ -3,7 +3,7 @@
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 ! запросы
-&vn_buff=%5B10317413%5&page=2&_=$xmlhttprequest,domain=pikabu.ru
+/\&vn_buff=[^\s]+\&page=2&_=[^\s]{1,}[a-z]/$xmlhttprequest,domain=pikabu.ru
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
 /^https?://pikabu\.ru\/ajax\/[^\s]{1}key=[A-Za-z0-9]{32}-\d{8}[^\s](?!&vn_buff=)/$xmlhttprequest,domain=pikabu.ru
@@ -14,15 +14,14 @@
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru##.sidebar-block [style=""]
 pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(/min-height: 99px|min-height: [0-9]{3}px|min-height: [0-9]{1,}\./))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(/min-height: 99px|min-height: [0-9]{3}px|min-height: [0-9]{1,}\./))
 ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
-pikabu.ru##[data-ssr]
 pikabu.ru#?#aside > .sidebar-block:-abp-has(> div[id])
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 cq.ru#?#div:-abp-properties(content: "Реклама")
+pikabu.ru##div:first-child > style:first-child + div
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
 !
