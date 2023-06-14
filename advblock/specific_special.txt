@@ -3,7 +3,7 @@
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 ! запросы
-/\&vn_buff=[^\s]+\&page=[^\s]{1}&_=[^\s]{1,}[a-z]/$xmlhttprequest,domain=pikabu.ru
+/\&vn_buff=[^\s]+\&page=[^\s]{1}&_=[^\s]{15,}/$xmlhttprequest,domain=pikabu.ru
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
 /^https?://pikabu\.ru\/ajax\/[^\s]{1}key=[A-Za-z0-9]{32}-\d{8}[^\s](?!&vn_buff=)/$xmlhttprequest,domain=pikabu.ru
