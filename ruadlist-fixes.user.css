@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230612.1524
+@version        0.20230614.2317
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5163,6 +5163,13 @@
 @-moz-document domain("vsthouse.ru") {
     .a-overlay {
         display: none !important
+    }
+}
+
+@-moz-document domain("vsviti.com.ua") {
+    body.td-animation-stack-type0 .post img, 
+    body.td-animation-stack-type0 .td-animation-stack .entry-thumb {
+        opacity: unset !important
     }
 }
 
