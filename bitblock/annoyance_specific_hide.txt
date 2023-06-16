@@ -2542,7 +2542,7 @@ google.by,google.com,google.com.ua,google.kz,google.ru##mobile-promo
 www.google.*##+js(remove-node-text, script, cookieUpdateConsentUrl)
 !#endif
 !#if env_firefox
-www.google.*##^script:has-text(/consentCookiePayload.*nidCookiePayload/)
+www.google.*##^script:has-text(cookieUpdateConsentUrl)
 !#endif
 !
 ! - Экспериментальные правила, добавлять только для доменов, на которых нет :-abp, либо изолировать
