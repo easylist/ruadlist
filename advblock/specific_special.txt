@@ -6,6 +6,7 @@
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=rg.ru
+/^https?://www\.sports\.ru/*[/]*[/][^\s]{1000,}/$xmlhttprequest,domain=sports.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com
 ||24smi.org^$xmlhttprequest,domain=24smi.org
 ||ritsatv.ru^$~document
@@ -988,6 +989,7 @@ sports.ru##.headerLayout > div[style*="margin-top: 20px;"]
 sports.ru##.in-read-placement
 sports.ru##.itemLinkPET
 sports.ru##.js-active.aliens[data-control]
+sports.ru##.js-ad-label
 sports.ru#?#.material-list__item:-abp-has(> .content-label:-abp-contains(Реклама))
 sports.ru##.middle-banner-place
 sports.ru##.nav-list__widget-wrapper .promo-block
@@ -1042,18 +1044,19 @@ sports.ru##style:first-child ~ [class^="gift__"]
 ||s5o.ru/source/special/
 ||s5o.ru/storage/dumpster/$~image
 ||s5o.ru/storage/dumpster/*.jpg|
+||senoval.sports.ru/adblock-checker/
+||senoval.sports.ru/cross-recommender/
 ||sports.ru/core/bookmaker/marathon/
 ||sports.ru/css/promo.
 ||sports.ru/desktop/aliens/
 ||sports.ru/desktop/special/*-slider/
+||sports.ru/embed/home-page/layout-image/|$xmlhttprequest,domain=sports.ru
 ||sports.ru^*/banners/
 ||taboola.com^$domain=sports.ru|tribuna.com
-||www.sports.ru/embed/football/the-best-goals-of-the-month/|$xmlhttprequest,domain=sports.ru
 ! обфускация
-sports.ru##.js-ad-label
 sports.ru##.videonow-section
-sports.ru##[data-content-name="undefined"]
-sports.ru##div[data-control*="AdFox"]
+sports.ru##[data-initialized]
+sports.ru##[data-initialized] + div
 !
 ! Thematicnews.com и связанные домены
 all-for-woman.com,back-in-ussr.com,budtezdorovy.net,domosedy.com,edalnya.com,kaksekonomit.com,klikabol.com,klubnichka.xyz,malyutka.net,mistika.xyz,myprikol.com,pisez.com,pitomzy.com,rulenta.com,sci-hit.com,showbizzz.net,slovobozhie.com,tursputnik.com,videohit.info,ya-superpuper.com,zakon-i-poryadok.com##.game-drv

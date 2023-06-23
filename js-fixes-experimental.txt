@@ -200,6 +200,7 @@ uma.media##+js(json-prune, appearance.extended_auto_start)
 ivanovonews.ru##+js(json-prune, banner.ytcode)
 pikabu.ru##+js(json-prune, data, errors)
 1plus1.video##+js(json-prune, dl bpas)
+sports.ru##+js(json-prune, documents, get_arguments)
 cq.ru##+js(json-prune, gift-desktop featured-stream-desktop branding-desktop content-1-desktop content-2-desktop content-3-desktop catfish-desktop fullscreen-desktop)
 pikabu.ru##+js(json-prune, isVideoAutoplayMode)
 igromania.ru,kanobu.ru##+js(json-prune, results.fixed)
@@ -353,6 +354,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item:has(>
 hideip.me#@#.node-promoted
 vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
+sports.ru##.right-first-banner-place + div
 lenta.ru##.scroll-to-site
 tapochek.net#@#.scrollable:style(overflow-x: auto !important; padding-bottom: 16px !important)
 softportal.com##.st-browser__timer
@@ -366,7 +368,6 @@ pronpic.org#@#:not(obhod-adblocka)
 @@/fuckadblock.$script,domain=aniboom.one
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport$subdocument,removeparam=|
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-video$subdocument,removeparam=|
-@@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,badfilter,domain=by.tribuna.com|ua.tribuna.com|www.sports.ru
 @@||ssp.rambler.ru^$badfilter,domain=kinoteatr.ru
 @@||st.top100.ru/top100/top100.js|$script,badfilter,domain=auto.rambler.ru|news.rambler.ru
 @@||studizba.com^$generichide,badfilter
