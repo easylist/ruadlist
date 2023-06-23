@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230622.2146
+@version        0.20230623.1717
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3330,6 +3330,10 @@
     .weather_right-column .weather__block {
         height: auto !important
     }
+    div[slot="main-column"] > .micro-widgets {
+        height: auto !important;
+        margin: auto !important
+    }
     body > .grid .grid__rcol {
         margin-left: 0 !important
     }
@@ -4791,6 +4795,12 @@
     body > #td-outer-wrap {
         pointer-events: none !important;
         cursor: auto !important
+    }
+}
+
+@-moz-document domain("teleport2001.ru") {
+    body:not(.path-frontpage) .page-main {
+         min-height: unset !important
     }
 }
 
