@@ -6358,8 +6358,8 @@ vsthemes.org##article > div:not([class])
 winzoro.net#?#article > div[id]:-abp-has(> img ~ style)
 24boxing.com.ua#?#article > h2:-abp-contains(/реклама/i)
 24boxing.com.ua#?#article > h2:-abp-contains(/реклама/i) + ul
-24boxing.com.ua#?#article > h3:-abp-contains(/реклама/i)
-24boxing.com.ua#?#article > h3:-abp-contains(/реклама/i) + ul
+24boxing.com.ua#?#article > h3:-abp-contains(/реклама|партнер|яндекс/i)
+24boxing.com.ua#?#article > h3:-abp-contains(/реклама|партнер|яндекс/i) + ul
 tengrinews.kz#?#article > p:-abp-has(> a[href^="https://t.me/"])
 kavkaz-uzel.eu#?#article div:-abp-contains(/^Реклама$/)
 glavpost.com##article div[style*="#EFEFEF"]
