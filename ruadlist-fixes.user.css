@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230625.2200
+@version        0.20230627.2057
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1846,6 +1846,12 @@
     }
 }
 
+@-moz-document domain("expertcen.ru") {
+    header .light-line {
+        height: unset !important
+    }
+}
+
 @-moz-document domain("factor.ua") {
     .b-access__auth, .b-access__overlay {
         display: none !important
@@ -2295,11 +2301,8 @@
 }
 
 @-moz-document domain("gastronom.ru") {
-    body {
-        cursor: auto !important
-    }
-    #wrapper {
-        max-width: none !important
+    body > div[class^="js-nh"] {
+        margin-top: 115px !important
     }
 }
 
