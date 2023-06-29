@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230627.2057
+@version        0.20230629.2158
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3339,6 +3339,13 @@
     div[slot="main-column"] > .micro-widgets {
         height: auto !important;
         margin: auto !important
+    }
+    .headline_crossnav [class^="ph-"] {
+        height: unset !important
+    }
+    .headline_crossnav {
+        height: unset !important;
+        padding-top: 5px !important
     }
     body > .grid .grid__rcol {
         margin-left: 0 !important
