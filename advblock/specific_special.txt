@@ -91,20 +91,11 @@ $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|
 ##body.has-brand .b-content__main > div[style^="height: 250px; overflow: hidden;"]
 !
 ! 2ip.ru и 2ip.io
-! Новый дизайн
-2ip.io,2ip.ru##body:not([class]) .add-top
-2ip.io,2ip.ru##body:not([class]) div[data-id="krot"]
-! Старый дизайн
-2ip.io,2ip.ru##body[class] #footer table.nav
-2ip.io,2ip.ru##body[class] #ip-info-helper
-2ip.io,2ip.ru##body[class] #wrap > .service-block
-2ip.io,2ip.ru#?#body[class] .content-article > p:-abp-has(.adsbygoogle)
-2ip.io,2ip.ru##body[class] .mainadv
-2ip.io,2ip.ru#?#body[class] .related-content-links-root > li:-abp-has(> a[href^="https://krot.io"])
-2ip.io,2ip.ru#?#body[class] .related-content-links-root > li:-abp-has(> a[href^="https://krot.io"]) + div
-2ip.io,2ip.ru#?#body[class] .related-content-links:-abp-has(> div[class^="ad_result"])
-2ip.io,2ip.ru##body[class] .review__ad
-2ip.io,2ip.ru##body[class] div[class^="ad_result"]
+2ip.io,2ip.ru#?#.content-article p:-abp-has(> .adsbygoogle)
+2ip.io,2ip.ru#?#.narrow-column > style + div > div:-abp-has(a[target="_blank"])
+2ip.io,2ip.ru##.test-vpn
+2ip.io,2ip.ru##a[href*="aHR0c"]
+2ip.io,2ip.ru##nav li a[target="_blank"]
 !
 ! Auto.ru
 auto.ru##.BankCardForm
