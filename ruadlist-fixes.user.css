@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230630.1625
+@version        0.20230630.1917
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1684,6 +1684,7 @@
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"] {
         display: none !important
     }
+    .mg-advert__content:not(:first-child), 
     .mg-grid__col > div[style^="margin-top:"] {
         margin-top: unset !important
     }
