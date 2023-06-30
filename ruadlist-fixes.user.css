@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230629.2158
+@version        0.20230630.1625
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -339,29 +339,11 @@
 @-moz-document
   domain("2ip.io"),
   domain("2ip.ru") {
-    .alert-link, .consent__notice, .consent__notice ~ .body-blackout, 
-    .sidebar-adv, body > #wrapper #header > #nav > li:nth-child(2), 
-    body > #wrapper .advMenuTab, body > #wrapper .ip-info-entry a[href*="utm_"], 
-    body > #wrapper .nav > li > a[href^="https://krot.io"], 
-    body > .page-wrapper #content > .page_speed_result__share + style + div[class], 
-    body > .page-wrapper .content-list > a[href^="https://krot.io"], 
-    body > .page-wrapper .ip-links-container > div[class^="ip-links_item "]:not([class*="speed"]), 
-    body > .page-wrapper .page-privacy > #spy ~ style + div[class], 
-    body > .page-wrapper .page-speed > .speed_checker + style + div[class], 
-    body > .page-wrapper .page_whois > style + div, 
-    body > .page-wrapper [class^="ip-"] > a[href*="utm_"], 
-    body > .page-wrapper nav > ul > li:nth-child(2) {
+    .consent__notice, .consent__notice ~ .body-blackout {
         display: none !important
-    }
-    body > .page-wrapper .test-vpn > a {
-        opacity: 0 !important;
-        pointer-events: none !important
     }
     body {
         overflow: auto !important
-    }
-    body > .page-wrapper .ip-links-container .ip-links_item {
-        top: unset !important
     }
 }
 
@@ -1695,12 +1677,15 @@
     .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     [class^="tsar-banner__container"], 
-    div[class*="_position_bottom "][class*="_color_"] + div, 
-    div[class*="_position_right "][class*="_color_"] + div, 
+    div[class*="_bottom "][class*="_color_"] + div, 
+    div[class*="_right "][class*="_color_"] + div, 
     div[class*="video-viewer-sidebar__ad"], 
     div[class^="dzen-desktop__bannerMain"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"] {
         display: none !important
+    }
+    .mg-grid__col > div[style^="margin-top:"] {
+        margin-top: unset !important
     }
     body[style="overflow: hidden;"] {
         overflow-y: unset !important
