@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230630.1917
+@version        0.20230701.1031
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3223,7 +3223,6 @@
 
 @-moz-document
   domain("lostfilm.pro"),
-  domain("lostfilm.run"),
   domain("lostfilm.today"),
   domain("lostfilm.tv"),
   domain("lostfilm.tw"),
@@ -3687,7 +3686,7 @@
     div[data-view="MyWidgetView.SmokyExtend"] {
         display: none !important
     }
-    .layout > .block > .tag {
+    body > .block > .tag {
         z-index: 1400 !important;
         cursor: pointer !important
     }
