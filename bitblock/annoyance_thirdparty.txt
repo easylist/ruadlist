@@ -169,6 +169,7 @@
 !
 ! - Фреймы twitch.tv с автозапуском, только для ABP, в uBO работает disableAutoplay
 !#if ext_abp
+goha.ru##.twitch-tile__overlay
 gameinside.ua,igromania.ru,kanobu.ru,www.goha.ru##iframe[src*="player.twitch.tv/?channel="][src*="autoplay=true"]
 rbkgames.com##iframe[src^="https://player.twitch.tv?autoplay=true"][src*="rbkgames"]
 ||player.twitch.tv/?autoplay=true&channel=rbkgames$subdocument,domain=rbkgames.com
