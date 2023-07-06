@@ -679,8 +679,10 @@ e1.ru##li[class="e1-nav__item _auto"]
 ||reklama*.ngs.ru/$script
 ||static.ngs.ru/jtnews/*/asdk
 ! обфускация
-e1.ru##[class*=" undefine"]
-www.e1.ru#?#[itemprop="articleBody"] > div:-abp-has(> div > [id*="adv_"])
+e1.ru##[class*=" undefin"]
+www.e1.ru#?#[itemprop] > div:-abp-has(> div > [id*="adv_"])
+www.e1.ru##a[href*="://prinzip.su/"]
+www.e1.ru#?#div:-abp-has(> a[href*="://prinzip.su/"])
 www.e1.ru#?#section:-abp-has(> div[class]:empty + div[class]:empty + div[class]:empty + div[class]:empty)
 ||naydex.net^$domain=e1.ru
 ! баннер в хидере мобильной версии
@@ -688,8 +690,6 @@ www.e1.ru#?#section:-abp-has(> div[class]:empty + div[class]:empty + div[class]:
 ! новый дизайн главной e1 и др.
 chita.ru,www.e1.ru###app > [data-cms-place] + div[class] > div:first-child:not(:only-child)
 chita.ru,ngs.ru,www.e1.ru#?#.gridContainer div[class]:-abp-has(> [data-cms-place])
-www.e1.ru##a[href*="prinzip.su"][href*="from=menu"]
-www.e1.ru##a[href*="prinzip.su"][href*="from=menu"] + div
 !
 ! Overclockers.ru
 forums.overclockers.ru##.adsbygoogle
