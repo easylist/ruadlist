@@ -6,7 +6,7 @@
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=rg.ru
-/^https?://www\.e1\.ru/*[/]*[/][^\s]{80,}/$xmlhttprequest,domain=www.e1.ru
+/^https?://www\.e1\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.e1.ru
 /^https?://www\.sports\.ru/*[/]*[/][^\s]{1000,}/$xmlhttprequest,domain=sports.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com
 ||24smi.org^$xmlhttprequest,domain=24smi.org
@@ -682,7 +682,7 @@ e1.ru##li[class="e1-nav__item _auto"]
 ||static.ngs.ru/jtnews/*/asdk
 ! обфускация
 e1.ru##[class*=" undefi"]
-www.e1.ru#?#[itemprop] > div:-abp-has(> div > [id*="adv"])
+www.e1.ru#?#[itemprop] > div:-abp-has(> div > [id*="ad"])
 www.e1.ru##a[href*="://prinzip.su/"]
 www.e1.ru#?#div:-abp-has(> a[href*="://prinzip.su/"])
 www.e1.ru#?#section:-abp-has(> div[class]:empty + div[class]:empty + div[class]:empty + div[class]:empty)
