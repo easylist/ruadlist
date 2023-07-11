@@ -21,6 +21,7 @@ android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.t
 pikabu.ru#?#aside > .sidebar-block:-abp-has(> div[id])
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 relax-fm.ru##body > div[style*="px"]
+www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 cq.ru#?#div:-abp-properties(content: "Реклама")
 pikabu.ru##div:first-child > style:first-child + div
 relax-fm.ru##div[class*="300_600"]
@@ -683,6 +684,7 @@ e1.ru##li[class="e1-nav__item _auto"]
 ! обфускация
 e1.ru##[class*=" undefi"]
 www.e1.ru#?#[itemprop] > div:-abp-has(> div > [id*="ad"])
+www.e1.ru#?#[itemprop] > div:-abp-has(> div > [id*="inline"])
 www.e1.ru##a[href*="://prinzip.su/"]
 www.e1.ru#?#div:-abp-has(> a[href*="://prinzip.su/"])
 www.e1.ru#?#section:-abp-has(> div[class]:empty + div[class]:empty + div[class]:empty + div[class]:empty)
