@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230709.2353
+@version        0.20230711.2338
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4840,6 +4840,18 @@
     body > div[style*='1010'] {
         width: auto !important;
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("timeweb.cloud") {
+    .has-top-liner .layout > div > .cc {
+        display: none !important
+    }
+    .has-top-liner {
+        padding-top: unset !important
+    }
+    .has-top-liner .ln__topliner {
+        top: unset !important
     }
 }
 
