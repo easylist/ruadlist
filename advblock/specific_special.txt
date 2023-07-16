@@ -5,6 +5,7 @@
 ! запросы
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
+/^https?://relax-fm\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=relax-fm.ru
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=rg.ru
 /^https?://www\.e1\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.e1.ru
 /^https?://www\.sports\.ru/*[/]*[/][^\s]{1000,}/$xmlhttprequest,domain=sports.ru
@@ -20,11 +21,9 @@ dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru#?#aside > .sidebar-block:-abp-has(> div[id])
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
-relax-fm.ru##body > div[style*="px"]
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 cq.ru#?#div:-abp-properties(content: "Реклама")
 pikabu.ru##div:first-child > style:first-child + div
-relax-fm.ru##div[class*="300_600"]
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
 !
