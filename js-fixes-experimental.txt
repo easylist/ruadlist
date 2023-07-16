@@ -63,7 +63,7 @@ htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 fapreactor.com,joyreactor.cc,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
 tarkov-wiki.ru##+js(abort-on-property-read, CheckingUser)
 anifap.com,anipoisk.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
-24smi.org,relax-fm.ru,rg.ru,sm.news,ura.news,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
+relax-fm.ru,rg.ru,sm.news,ura.news,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
 rutor.org##+js(abort-on-property-read, Light.Popup)
 drive2.ru##+js(abort-on-property-read, Object.prototype.AdfoxXhrRequestPrepared)
@@ -373,6 +373,7 @@ pronpic.org#@#:not(obhod-adblocka)
 @@||studizba.com^$generichide,badfilter
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 sports.ru##[class*="_label "]
+24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
