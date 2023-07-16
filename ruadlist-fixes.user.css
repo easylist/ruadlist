@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230711.2338
+@version        0.20230716.1349
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3763,7 +3763,7 @@
 
 @-moz-document domain("nova.rambler.ru") {
     div[class^="DirectMKB"], 
-    div[class^="LayoutSearch__serp"] > section > article[class*=" Serp__item"]:not([class^=" Serp__item"]) {
+    div[class^="LayoutSearch"] section > article[class*=" Serp__item"]:not([class^=" Serp__item"]) {
         display: none !important
     }
     html > body:not(#id) {
@@ -3981,9 +3981,16 @@
 }
 
 @-moz-document domain("playground.ru") {
+    body#userNotAuthorized .bonus-landing-page .panel-collapse > .panel-body, 
+    body#userNotAuthorized .bonus-landing-page .panel-default > .panel-heading {
+        background-color: white !important
+    }
     #foundationWrapper {
         background: #373737 !important;
         padding-top: 0 !important
+    }
+    body#userNotAuthorized .bonus-landing-page-faq > .title {
+        color: white !important
     }
     .content_aside-container {
         flex-direction: unset !important
