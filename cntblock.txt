@@ -1231,6 +1231,8 @@ yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(d
 yandex.*##div[class*="turbo-advert_type_"]
 yandex.*##div[class^="content "][data-bem] > .content__bottom ~ div[class*="card "]
 yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:first-child > div[class$="__content"] + div[class]
+yandex.com##.RelatedImagesDirect
+yandex.com##.serp-list .Root[id]
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
 ||ya.ru/portal/proxy?blocks=feed_banner
@@ -1250,11 +1252,14 @@ yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:firs
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype.los, null)
 !
 ! мобильная версия
+yandex.*##.justifier__col > div[class*="_type_direct"]
+yandex.*##.tiled-images__items > div[class*="rim-direct-"]
 yandex.*##[data-bem*="search-select-promo"]
 yandex.*##div[class*=" AdvertEcom_"]
 yandex.*##div[class*="Advert_container__"]
 yandex.*##div[class^="Card_container__"][class*=" err_none "]
 yandex.*##div[class^="Card_container__"][class*="state_loaded Advert_fullScreenContainer"]
+yandex.*##div[class^="images-viewer-content"] > div[class*="behavioral-direct"]
 yandex.*##div[id*="page"] div[class*="_banner_"]
 yandex.*##div[id^="ADVERT_"]
 yandex.*#?#.touch-feed > div > .feed-item[id^="zen-row-"]:-abp-has([class^="zen-ui-channel-info"][class$="subtitle-text"]:-abp-contains(промо))
