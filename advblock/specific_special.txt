@@ -3,14 +3,13 @@
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 ! запросы
-/^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
+/^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
 /^https?://relax-fm\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=relax-fm.ru
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=rg.ru
 /^https?://www\.e1\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.e1.ru
 /^https?://www\.sports\.ru/*[/]*[/][^\s]{1000,}/$xmlhttprequest,domain=sports.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com
-||24smi.org^$xmlhttprequest,domain=24smi.org
 ||ritsatv.ru^$~document
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
