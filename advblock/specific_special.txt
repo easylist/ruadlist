@@ -3,6 +3,7 @@
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 ! запросы
+/^https?://(cyber|www)\.sports\.ru/*[/]*[/][^\s]{80,}/$script,domain=sports.ru
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
 /^https?://relax-fm\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=relax-fm.ru
