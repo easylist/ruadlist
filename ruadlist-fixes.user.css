@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230723.2206
+@version        0.20230723.2241
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2736,11 +2736,11 @@
 }
 
 @-moz-document domain("itc.ua") {
-    a[href*="://rdr.fmcgsd.net/in/offer/"], a[href*="utm_campai"], 
-    a[href^="https://ek.ua/ua/"] {
+    a[href*="utm_campai"] {
         pointer-events: none !important
     }
-    a[href*="://telemart.ua/"] {
+    a[href*="://rdr.fmcgsd.net/in/offer/"], a[href*="://telemart.ua/"], 
+    a[href^="https://ek.ua/ua/"] {
         pointer-events: none !important;
         color: unset !important;
         border-bottom: none !important
