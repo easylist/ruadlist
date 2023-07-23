@@ -11,10 +11,13 @@
 /^https?://www\.e1\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.e1.ru
 /^https?://www\.liveinternet\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.liveinternet.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com
+||2ip.ua/ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval'
+||2ip.ua/ua/|$csp=script-src 'unsafe-inline' 'unsafe-eval'
 ||ritsatv.ru^$~document
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
+2ip.ua##.sidebar-nav
 pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(/min-height: 99px|min-height: [0-9]{3}px|min-height: [0-9]{1,}\./))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(/min-height: 99px|min-height: [0-9]{3}px|min-height: [0-9]{1,}\./))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
