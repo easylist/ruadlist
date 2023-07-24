@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230723.2241
+@version        0.20230724.1903
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1673,7 +1673,7 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #ya-dist, .adv-ecom, .feed__row ~ .feed__row article[class*="   "], 
+    #ya-dist, .adv-ecom, 
     .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     [class^="tsar-banner__container"], 
@@ -1681,7 +1681,8 @@
     div[class*="_right "][class*="_color_"] + div, 
     div[class*="video-viewer-sidebar__ad"], 
     div[class^="dzen-desktop__bannerMain"], 
-    div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"] {
+    div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
+    div[id][class^="feed__row"] ~ div[id][class^="feed__row"] article[class*="   "] {
         display: none !important
     }
     .mg-advert__content:not(:first-child), 
@@ -3186,7 +3187,7 @@
     .allpage .currency a {
         pointer-events: none !important
     }
-    .allpageinner > div:not(.header) > div[class*=" "] ~ .logo > a > span {
+    .allpage > :not(.allpageinner) > :not(.header) > .logo > a[href="/"] > span {
         top: inherit !important;
         left: inherit !important;
         font-size: x-large !important;
