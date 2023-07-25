@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230725.44
+@version        0.20230725.1717
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3184,13 +3184,6 @@
     .allpage .currency a {
         pointer-events: none !important
     }
-    .allpage > :not(.allpageinner) > :not(.header) > .logo > a[href="/"] > span {
-        top: inherit !important;
-        left: inherit !important;
-        font-size: x-large !important;
-        font-weight: bold !important;
-        color: #0183cb !important
-    }
 }
 
 @-moz-document domain("livesport.ws") {
@@ -5411,6 +5404,16 @@
     }
     .desktop-layout-with-sidebar__content > div[class][data-tid] {
         width: auto !important
+    }
+}
+
+@-moz-document domain("www.liveinternet.ru") {
+    :not(.allpageinner) > :not(.header) > .logo > a[href="/"] > span {
+        top: inherit !important;
+        left: inherit !important;
+        font-size: x-large !important;
+        font-weight: bold !important;
+        color: #0183cb !important
     }
 }
 
