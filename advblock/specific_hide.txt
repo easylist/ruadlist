@@ -6463,6 +6463,7 @@ poligon.by##body > #container > div[style]
 sportarena.com##body > #fb-root
 savepic.ru##body > #feed
 myusli.ru##body > #layout > .fixed
+livetvstream.pro,me##body > #localpp[onclick*="window.open"]
 palantinbest.ru,pojrem.ru##body > #overlay
 pensioneram.info##body > #page ~ *
 sakhalin.info##body > #promo-popup
@@ -6599,6 +6600,9 @@ christianka.bratstvo.org##body > table[width="99%"] + p[align="center"]
 payeer-gift.ru##body div .banner
 om1.ru##body div[class*="-branding"]
 prodota.ru##body:not([class*="ipsApp"]):not([data-role="externalEmbed"]) > :not(.main):not(iframe)
+livetvstream.pro,me##body[bgcolor] > #adbtm
+livetvstream.pro,me##body[bgcolor] > div[id="ads"][style^="position: absolute;"]
+livetvstream.pro,me##body[bgcolor] > div[id^="iframe-container"]
 hi-fi.ru##body[data-pageid] #ipsLayout_sidebar
 nsportal.ru##body[onload*="download"] [class*="header"] ~ *
 flamp.ru##cat-banner
