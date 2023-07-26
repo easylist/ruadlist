@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230725.1717
+@version        0.20230726.1258
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4623,6 +4623,9 @@
     }
     :not(.nba-global-nav-wrapper) + #branding-layout:not(#id) {
         margin-top: 96px !important
+    }
+    .columns-layout__right > div > div[id][class] {
+        min-height: 0 !important
     }
     body.is-fixed {
         overflow: auto !important
