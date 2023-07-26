@@ -189,7 +189,6 @@ lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
 relax-fm.ru,rg.ru,sm.news,ura.news##+js(cookie-remover, /^bda|^bltsr/)
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 yapx.ru##+js(cookie-remover, /adblock_/)
-sports.ru##+js(cookie-remover, aablc)
 24smi.org##+js(cookie-remover, isab)
 www.e1.ru##+js(cookie-remover, jtnews_a_template)
 kakprosto.ru##+js(cookie-remover, yadb)
@@ -268,6 +267,7 @@ www.rambler.ru##+js(remove-attr, target, a[href*="#rcmrclid"], stay)
 mag.relax.by##+js(remove-class, b-global-branding, html)
 disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
 motorpage.ru##+js(remove-class, noscroll, body)
+sports.ru##+js(remove-node-text, script, AdBlocker)
 2ip.ua##+js(remove-node-text, script, hidemy.name)
 root-nation.com##+js(remove-node-text, style, /body[\s]{1}{[\s][\t][\t]*background-color:|body{background-color:/)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,www.fontanka.ru##+js(set, Object.prototype.changeVisible, noopFunc)
@@ -581,6 +581,7 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 !
 ! Фоксо-специфичные случаи >
 !#if env_firefox
+sports.ru##+js(cookie-remover, aablc)
 @@$cname,domain=360tv.ru|games-pc.top|innal.top|kyiv.ua|sports.ru
 root-nation.com##^.td-a-rec
 root-nation.com##^body > a
