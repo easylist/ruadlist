@@ -10,15 +10,12 @@
 /^https?://relax-fm\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=relax-fm.ru
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=rg.ru
 /^https?://www\.e1\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.e1.ru
+/^https?://www\.liveinternet\.ru/(?!utf\/|q\/js\/|js\/|4Ek/JS/diary/main/nav/regoradd.js|autosave.js|cgi-bin/rpls.fcgi?|ckeditor\/|ckfinder\/|main_new_1251.js|share/js/share.js|spell/spell.js|uploader\/|vbcode.js|vbcode_language.js)/$script,domain=www.liveinternet.ru
 /^https?://www\.liveinternet\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.liveinternet.ru
-/^https?://www\.liveinternet\.ru/[^\/]{5,}[/][^\/]{1,}/$script,domain=www.liveinternet.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com
 ||2ip.ua/ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval'
 ||2ip.ua/ua/|$csp=script-src 'unsafe-inline' 'unsafe-eval'
 ||ritsatv.ru^$~document
-||www.liveinternet.ru/*//$script
-||www.liveinternet.ru/_$script,domain=www.liveinternet.ru
-||www.liveinternet.ru/no/$script,domain=www.liveinternet.ru
 ! селекторы
 pikabu.ru#?#.page-story__story > div:-abp-properties(display: block)
 anidub.vip,anidubonline.com##.plyr__menu
