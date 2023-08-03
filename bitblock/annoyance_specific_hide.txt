@@ -2373,7 +2373,7 @@ cloud.mail.ru##iframe[src^="https://o2.mail.ru/"] ~ div [data-qa-id="publish"]
 !
 ! - Yandex -
 yandex.by,yandex.kz,yandex.ru,yandex.uz###bk-container
-yandex.by,yandex.kz,yandex.ru,yandex.uz###distr-pcode-container
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz###distr-pcode-container
 yandex.by,yandex.kz,yandex.ru,yandex.uz###search-result > [data-fast-name="multiusurveys"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz###yabro-strip-element
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.AliceFabContainer
@@ -2517,11 +2517,12 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz#?#header:-abp-has(.serp-user__registrati
 yandex.by,yandex.kz,yandex.ru,yandex.uz##main.serp > .Root > div[class*="_layout_flat"]:not(.DistrPopup)
 !#if ext_abp
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.MediaViewer div[class$="-FooterContent"]
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.MediaViewer div[class$="-Incut"][style^="margin-bottom: 4px;"]
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.MediaViewer div[class$="-Incut"][style^="margin-bottom: 4px;"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.MediaViewer div[id^="viewer_rim_direct_"]
 dzen.ru#?#.mg-grid__item_type_card:-abp-has(> div[class*="loader_animated"])
 dzen.ru#?#.news-app__heading:-abp-has(> h1:-abp-contains(Реклама))
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.serp-list div[class*=" incut_position_"]
+ya.ru##.serp-list div[class*="_type_direct"]
 dzen.ru##.zen-page .content div[class*="__bannerMain"]
 /^https?:\/\/dzen\.ru\/[^\s]{2100,}$/$script,domain=dzen.ru
 /^https?:\/\/strm\.yandex\.ru\/get\/[^\s]{1300,}$/$xmlhttprequest,domain=dzen.ru
