@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230802.1331
+@version        0.20230806.1240
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3361,7 +3361,7 @@
     .tabs-content > :first-child > a::after {
         position: unset !important
     }
-    .tabs-content .news-item_regular > a {
+    .tabs-content .news-item_regular > a:not([data-testid="news-prefix"]) {
         white-space: pre-line !important
     }
     body:not(.js-module) .tabs + div[class] > :first-child {
