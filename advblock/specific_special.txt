@@ -983,8 +983,6 @@ sports.ru###top-ad
 sports.ru###top-banner-place
 sports.ru##.ad
 sports.ru##.aliens
-sports.ru#?#.aside-news-list__item:-abp-has(> .aside-news-list__advert ~ a[href^="https://sprts.cc/"])
-sports.ru#?#.aside-news-list__item:-abp-has(> .aside-news-list__advert:-abp-contains(Реклама))
 sports.ru#?#.aside-news-list__item:-abp-has(> [href*="utm_campaign"])
 sports.ru##.banner
 sports.ru##.bets-popup-wrapper
@@ -1022,6 +1020,8 @@ sports.ru##.teaser-before-links__adv-label
 cyber.sports.ru##.teaser-bookmaker
 @@||r.sprts.ru/recommender/|$xmlhttprequest,domain=www.sports.ru
 sports.ru##[class*="parimatch"]
+sports.ru#?#[class]:-abp-has(> .aside-news-list__advert ~ a[href^="https://sprts.cc/"])
+sports.ru#?#[class]:-abp-has(> .aside-news-list__advert:-abp-contains(Реклама))
 sports.ru##[data-banner-id]
 sports.ru##[data-content-name="banner-dfp"]
 sports.ru##[data-control^="Aliens."]
