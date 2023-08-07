@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230806.1240
+@version        0.20230807.1428
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1682,8 +1682,12 @@
     div[class*="video-viewer-sidebar__ad"], 
     div[class^="dzen-desktop__bannerMain"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
-    div[id][class^="feed__ro"] ~ div[id][class^="feed__ro"] article[class*="   "] {
+    div[class^="dzen-wrapper-with-top-content-desktop__topContent-"][class*="hasFloors"] > div[class^="dzen-wrapper-with-top-content-desktop__bannerContainer-"], 
+    div[id][class^="feed"] article[class*="   "] {
         display: none !important
+    }
+    div[class^="dzen-wrapper-with-top-content-desktop__topContent-"][class*="hasFloors"] {
+        grid-template-columns: inherit !important
     }
     .mg-advert__content:not(:first-child), 
     .mg-grid__col > div[style^="margin-top:"] {
@@ -4755,15 +4759,6 @@
     }
     .scrollable > #thumbs {
         width: max-content !important
-    }
-}
-
-@-moz-document domain("tarkov-wiki.ru") {
-    html > div[class][style^="background-color: rgba"] {
-        display: none !important
-    }
-    html > body {
-        overflow: auto !important
     }
 }
 
