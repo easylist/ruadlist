@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230807.1629
+@version        0.20230807.2204
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4988,6 +4988,12 @@
     }
     .navbar, .right-column > .sticky-box {
         position: relative !important
+    }
+}
+
+@-moz-document domain("ukrfootball.ua") {
+    .main-container {
+        margin-top: 0 !important
     }
 }
 
