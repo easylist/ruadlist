@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230807.1428
+@version        0.20230807.1629
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -524,14 +524,9 @@
     }
 }
 
-@-moz-document
-  domain("alexfilm.cc"),
-  domain("alexfilm.org") {
-    body > .page {
-        background-color: rgba(253,253,253,1) !important
-    }
-    body > #heading.clickable {
-        max-height: 50px !important
+@-moz-document domain("alexfilm.org") {
+    main > .container {
+        margin-top: 50px !important
     }
 }
 
