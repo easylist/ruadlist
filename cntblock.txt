@@ -1193,7 +1193,7 @@ zannn.top#@?#this-is-a-malicious-site
 @@://yandex.*/news|$generichide
 disk.yandex.*,mail.yandex.*##.Base-Onboarding
 docs.yandex.*##a[href^="https://360.yandex."][href$="/?from=documents-header-360"]
-dzen.*##+js(set-constant, Object.prototype.shouldShowServiceChangesPopup, undefined)
+dzen.*##+js(set-constant, Object.prototype.initDeps, undefined)
 dzen.*##._is-header-after-player > div:not([id]):not([class])
 dzen.*##.climate-calendar-container__adv-wide
 dzen.*##.content__adv
@@ -1201,9 +1201,10 @@ dzen.*##.feed__item > article[class^="card-wrapper"][class*="  "] > div[class*="
 dzen.*##.panel-loadable-view__feed > div[class*="-video-"] ~ div:not([class*="-video-"]):not(:last-child)
 dzen.*##.zen-page .content > div[class*="__container"] > div:not(:last-child) > div[id]:first-child
 dzen.*##.zen-page .content div[class*="__bannerMain"]
-dzen.*##div[class*=" adv_pos_index-"]
+dzen.*##div[aria-label*="екламн"]
+dzen.*##div[class*="-placeholder__root"]
 dzen.*##div[class*="-sidebar__ad"]
-dzen.*##div[class^="article-"][class*="-placeholder__root"]
+dzen.*##div[class*="_pos_index-"]
 dzen.*#?#div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
 dzen.*,ya.*,~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
 dzen.*,yandex.*##.b-statcounter + div[class] > div[id][class]
