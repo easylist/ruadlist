@@ -9,6 +9,7 @@
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
 /^https?://relax-fm\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=relax-fm.ru
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=rg.ru
+/^https?://tech\.onliner\.by/*[/]*[/][^\s]{40,}/$script
 /^https?://www\.e1\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.e1.ru
 /^https?://www\.liveinternet\.ru/(?!utf\/|q\/js\/|js\/|4Ek/JS/diary/main/nav/regoradd.js|autosave.js|cgi-bin/rpls.fcgi?|ckeditor\/|ckfinder\/|main_new_1251.js|share/js/share.js|spell/spell.js|uploader\/|vbcode.js|vbcode_language.js)/$script,domain=www.liveinternet.ru
 /^https?://www\.liveinternet\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.liveinternet.ru
@@ -35,6 +36,7 @@ pikabu.ru#?#aside > .sidebar-block:-abp-has(> div[id])
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 cq.ru#?#div:-abp-properties(content: "Реклама")
+tech.onliner.by##div[class*="_fixed-height"]
 pikabu.ru##div[class]:first-child > p:first-child + div[class]:last-child div div
 rg.ru##div[id][class*="__"]:empty
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
