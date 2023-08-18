@@ -403,7 +403,7 @@ anime-chan.me##body > div[style^="pointer-events: none;"][style*="visible;"]
 4pda.to##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
-sdamgia.ru##div > main > div:has(script:has-text(rotator_changed)):remove()
+sdamgia.ru##div > main > div:has(script:contains(window.rotator)):style(position: fixed !important; top: -10000px !important; opacity: 0 !important; z-index: -9999 !important)
 www.e1.ru##div:has(> [id] ~ script):style(min-height: 0 !important)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 tass.ru##div[class^="PageLayout_top_sticky"] > div:style(width: auto !important)
