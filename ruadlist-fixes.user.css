@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230815.1447
+@version        0.20230821.38
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2398,13 +2398,6 @@
     }
 }
 
-@-moz-document domain("gordonua.com") {
-    html:not([class*=" mob"]) > body > .wrap {
-        width: 1170px !important;
-        padding: 20px !important
-    }
-}
-
 @-moz-document
   domain("gorod.dp.ua"),
   domain("intermedia.ru"),
@@ -3083,6 +3076,12 @@
         filter: none !important
     }
     #popup-manager.popup-show {
+        display: none !important
+    }
+}
+
+@-moz-document domain("kufar.by") {
+    div[class*=" styles_empty_collapse"] {
         display: none !important
     }
 }
@@ -4779,6 +4778,12 @@
     }
     aside > div[class^="NavPanel_nav"] {
         width: unset !important
+    }
+}
+
+@-moz-document domain("tech.onliner.by") {
+    .g-container-outer > div {
+        height: auto !important
     }
 }
 
