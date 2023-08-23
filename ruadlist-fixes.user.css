@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230823.1628
+@version        0.20230823.1715
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1673,7 +1673,8 @@
     .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     .publication-columns-layout__columns-container [class*="-embed_"] + div, 
     .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
-    [class^="tsar-banner__container"], 
+    [class^="tsar-banner__container"], a[href*="://yandex.ru/an/count/"], 
+    a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     div[class*="_bottom "][class*="_color_"] + div, 
     div[class*="_right "][class*="_color_"] + div, 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
