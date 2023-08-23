@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230822.2009
+@version        0.20230823.1628
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -71,7 +71,8 @@
   domain("sterlitamak1.ru"),
   domain("tolyatty.ru"),
   domain("ufa1.ru"),
-  domain("v1.ru") {
+  domain("v1.ru"),
+  domain("vladivostok1.ru") {
     .right-column-container > .right-column > div, noindex > div[class]:empty {
         height: auto !important
     }
@@ -2055,12 +2056,6 @@
     }
     .tpc > .post > table[width] > tbody > tr > .lgf {
         word-break: break-word
-    }
-}
-
-@-moz-document domain("forum.ruboard.ru") {
-    #content_container, #content_container #content {
-        margin-right: 0 !important
     }
 }
 
@@ -5520,9 +5515,6 @@
     .market-banner_js_inited, .market-feed {
         display: none !important
     }
-    .b-page.overlay[data-bem*="serp-metrika"] {
-        overflow-y: auto !important
-    }
 }
 
 @-moz-document
@@ -5538,6 +5530,9 @@
     .serp-list [data-state*="offersData"], 
     .serp.main__carousel:not([data-bem*="collectionId"]) {
         display: none !important
+    }
+    .b-page.overlay[data-bem*="serp-metrika"] {
+        overflow-y: auto !important
     }
 }
 
@@ -5599,9 +5594,6 @@
         min-height: 0 !important;
         margin-top: unset !important;
         margin-bottom: unset !important
-    }
-    .b-page.overlay[data-bem*="serp-metrika"] {
-        overflow-y: auto !important
     }
     .b-page {
         padding-top: 0 !important
