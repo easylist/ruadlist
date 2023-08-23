@@ -24,7 +24,7 @@
 
 #### Используемые фильтры (Used filters):
 
-<!-- List active filters or take a screenshot showing them. -->
+<!-- Перечислите активные фильтры или сделайте скриншот с их отображением. List active filters or take a screenshot showing them. -->
 
 #### Предотвращение конфликтов (Conflict prevention):
 
