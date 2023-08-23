@@ -26,6 +26,6 @@
 
 <!-- Перечислите активные фильтры или сделайте скриншот с их отображением. List active filters or take a screenshot showing them. -->
 
-#### Предотвращение конфликтов (Conflict prevention):
+<!-- Предотвращение конфликтов (Conflict prevention): -->
 
 <!-- Убедитесь, что вы используете только один блокировщик рекламы. Отключите NoScript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger, и прочие подобные средства. Make sure you only use one ad blocker. Disable NoScript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger, and other similar tools. -->
