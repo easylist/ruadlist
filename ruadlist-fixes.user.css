@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230823.1715
+@version        0.20230824.1951
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2892,6 +2892,14 @@
     }
     .imaband {
         display: none !important
+    }
+}
+
+@-moz-document domain("kino.tricolor.tv") {
+    html.bx-no-touch button[data-analytics$="-watch-with-ads-btn"] {
+        min-width: 0 !important;
+        max-width: 19% !important;
+        overflow: hidden !important
     }
 }
 
