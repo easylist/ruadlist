@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230824.1951
+@version        0.20230825.1657
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2146,14 +2146,13 @@
     }
 }
 
-@-moz-document domain("freetp.org") {
-    .menu ul li a {
-        height: auto !important
+@-moz-document
+  domain("freetp.org"),
+  domain("freetp.ru") {
+    body {
+        padding-top: 50px !important
     }
-    .menu > li[style^="padding-left:"] {
-        padding-left: unset !important
-    }
-    .fix_block {
+    .fix_block, .fix_block > nav {
         position: relative !important
     }
 }
@@ -2898,8 +2897,10 @@
 @-moz-document domain("kino.tricolor.tv") {
     html.bx-no-touch button[data-analytics$="-watch-with-ads-btn"] {
         min-width: 0 !important;
-        max-width: 19% !important;
-        overflow: hidden !important
+        max-width: unset !important;
+        width: 115px !important;
+        overflow: hidden !important;
+        padding-left: 15px !important
     }
 }
 
