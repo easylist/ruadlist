@@ -369,12 +369,11 @@ auto.ru##.DealerCreditForm
 i.ua##.Disclaimer
 smpbank.ru##.E_KUV0ozvj
 myshows.me##.Footer-apps
-meduza.io##.Footer-form
 ren.tv##.Footer_2LPPF > .news-delimiter
-meduza.io##.GDPRPanel-root
 auto.ru##.GalleryBestPriceFooter
 auto.ru##.IndexSelectorCreditAutoBanner
 meduza.io##.InfoPanel-informer
+meduza.io##.Layout-module-banner
 auto.ru##.ListingItemPromo-module__wrapper
 auto.ru##.Modal_has-animation
 sportrecs.com##.MuiContainer-disableGutters
@@ -386,8 +385,6 @@ userstyles.org##.NotificationLine
 citilink.ru##.PersonalDataConfirm
 hromadske.ua##.PostPublication-donate-redirect
 hromadske.ua##.Questionnaire
-meduza.io##.SaveMeduza-button
-meduza.io#?#.Section-block:-abp-has(> .SignalBlock-root)
 softportal.com##.TblBorderCLR > tbody > tr > td[style="padding:15px 0;"][align="center"]
 softportal.com##.TblTopBanCLR a[href*="yabrowser"]
 softportal.com##.TblTopBanCLR a[href*="yandeksbrauzer"]
@@ -1680,6 +1677,7 @@ it-actual.ru##[class="widget_f widget__scr_lp"]
 daily.afisha.ru##[class^="AfishaSidebarBanner"]
 sber.ru##[class^="Cookies_cookie-warning_"]
 igromania.ru##[class^="IgromaniaChannel_mania_"]
+meduza.io##[class^="SaveMeduza"]
 igromania.ru,kanobu.ru##[class^="SubscribeForm_subscribe_"]
 stopgame.ru##[class^="_boosty_"]
 silver.ru##[class^="button-subscribe_news"]
@@ -1928,16 +1926,20 @@ ainews.kz##div[class^="Confirm_root"]
 metaratings.ru##div[class^="CookieAllowance"]
 novayagazeta.eu##div[class^="CookiesInformer_"]
 tass.ru##div[class^="Cookies_container"]
+meduza.io##div[class^="Footer"][class*="form"]
 ctc.ru##div[class^="Footer_externalLinks"]
 tribuna.com##div[class^="Footer_footer__apps"]
 tass.ru##div[class^="Footer_sources"]
+meduza.io##div[class^="GDPRPanel"]
 loads.ati.su##div[class^="Media_container"]
 rg.ru##div[class^="NewsFeed_adsTop_"] > div
 rg.ru##div[class^="PageIndexFascicles_download"]
 mail.rambler.ru##div[class^="Profile-banner"]
 nova.rambler.ru##div[class^="RabotaWidget"]
 nova.rambler.ru##div[class^="SearchWidget"]
+meduza.io#?#div[class^="Section"][class*="block"]:-abp-has(> div[class^="SignalBlock"])
 nova.rambler.ru##div[class^="SerpWarning__warning-"]
+meduza.io##div[class^="SignalBlock"]
 1tv.ru##div[class^="StandardAdvert_main_"]
 rg.ru##div[class^="Subscribe_formSub"]
 mag.auto.ru##div[class^="SubscriptionForm"]
