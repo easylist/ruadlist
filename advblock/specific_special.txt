@@ -3,7 +3,7 @@
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 ! запросы
-/^https?://(cyber|www)\.sports\.ru/*[/]*[/][^\s]{80,}/$script,domain=sports.ru
+/^https?://(cyber|www)\.sports\.ru/*[/]*[/][^\s]{73,}/$script,domain=sports.ru
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
@@ -994,7 +994,6 @@ sports.ru###top-banner-place
 sports.ru##.ad
 sports.ru##.aliens
 sports.ru#?#.aside-news-list__item:-abp-has(> [href*="utm_campaign"])
-sports.ru##.banner
 sports.ru##.bets-popup-wrapper
 sports.ru##.betting-bar
 sports.ru##.comment-ads
@@ -1006,6 +1005,7 @@ sports.ru##.in-read-yadv
 sports.ru##.itemLinkPET
 sports.ru##.js-active.aliens[data-control]
 sports.ru##.js-ad-label
+cyber.sports.ru##.match-teaser__betting-bar
 sports.ru#?#.material-list__item:-abp-has(> .content-label:-abp-contains(Реклама))
 sports.ru##.middle-banner-place
 sports.ru##.nav-list__widget-wrapper .promo-block
@@ -1029,6 +1029,7 @@ sports.ru##.social-links__zn
 sports.ru##.teaser-before-links__adv-label
 cyber.sports.ru##.teaser-bookmaker
 @@||r.sprts.ru/recommender/|$xmlhttprequest,domain=www.sports.ru
+cyber.sports.ru##[class*="okko"]
 sports.ru##[class*="parimatch"]
 sports.ru#?#[class]:-abp-has(> .aside-news-list__advert ~ a[href^="https://sprts.cc/"])
 sports.ru#?#[class]:-abp-has(> .aside-news-list__advert:-abp-contains(Реклама))
@@ -1051,6 +1052,7 @@ sports.ru##a[href="https://trbna.co/2u3V2dO"]
 sports.ru##a[href^="https://sprts.cc/"]
 sports.ru##a[href^="https://zen.yandex.ru/"]
 sports.ru##div[class*="SALES"] > .accordion__handle
+sports.ru##div[class*="banner"]
 sports.ru#?#div[class*="material-list--additional-block"] > .material-list__item:-abp-has(a[href^="https://sprts.cc/"])
 tribuna.com##div[class*="rb-widget"]
 tribuna.com##div[class^="BookmakerGift_bookmaker-gift_"]
