@@ -3,7 +3,7 @@
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 ! запросы
-/^https?://(cyber|www)\.sports\.ru/*[/]*[/][^\s]{73,}/$script,domain=sports.ru
+/^https?://(cyber|www)\.sports\.ru/*[/]*[/][^\s]{70,}/$script,domain=sports.ru
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
@@ -1083,7 +1083,7 @@ sports.ru##style:first-child ~ [class^="gift__"]
 sports.ru##.in-read-wrapper
 www.sports.ru##.poll__footer > .poll-share ~ div
 sports.ru##[data-content-piece="adfox"]
-sports.ru##[data-init-by-float]
+sports.ru##[data-init2-by-float]
 sports.ru##[data-refresh]
 sports.ru##[data-refresh] + div
 !
