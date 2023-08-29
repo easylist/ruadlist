@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230826.1344
+@version        0.20230829.2051
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1675,8 +1675,8 @@
     .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     [class^="tsar-banner__container"], a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    div[class*="_bottom "][class*="_color_"] + div, 
-    div[class*="_right "][class*="_color_"] + div, 
+    div[class*="article"][class*="ight "][class*="_color_"] + div, 
+    div[class*="article"][class*="ottom "][class*="_color_"] + div, 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class^="dzen-desktop__bannerMain"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
@@ -1691,7 +1691,7 @@
     .mg-grid__col > div[style^="margin-top:"] {
         margin-top: unset !important
     }
-    body[style="overflow: hidden;"] {
+    body {
         overflow-y: unset !important
     }
 }
@@ -2023,7 +2023,7 @@
 }
 
 @-moz-document domain("forbes.ru") {
-    .UNoyu {
+    .jnrGz {
         height: calc(var(--vh, 1vh)*100 - 1px) !important
     }
 }
