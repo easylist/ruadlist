@@ -31,8 +31,8 @@ pikabu.ru#?#.page-story__story > div:-abp-properties(display: block)
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 2ip.ua##.sidebar-nav
-pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(/min-height: 99px|min-height: [0-9]{3}px|min-height: [0-9]{1,}\./))
-pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(/min-height: 99px|min-height: [0-9]{3}px|min-height: [0-9]{1,}\./))
+pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(600px)))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(min-height: calc(300px)))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru#?#aside > .sidebar-block:-abp-has(> div[id])
@@ -40,7 +40,7 @@ kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 cq.ru#?#div:-abp-properties(content: "Реклама")
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
-pikabu.ru##div[class]:first-child > p:first-child + div[class]:last-child div div
+pikabu.ru##div[class]:first-child > pre:first-child + div[class]:last-child div div
 rg.ru##div[id][class*="__"]:empty
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
