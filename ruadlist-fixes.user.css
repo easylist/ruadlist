@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230829.2051
+@version        0.20230830.1826
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4557,8 +4557,8 @@
 
 @-moz-document domain("softportal.com") {
     .TblBorderCLR > tbody > tr > td[style="padding:15px 0;"][align="center"], 
-    .TblTopBanCLR td > a[href] > img, a[href^="prog"][target="_blank"], 
-    a[href^="prog"][target="_blank"] ~ *, 
+    .TblTopBanCLR td > a[href] > img, .btn-download > .submit-spinner, 
+    a[href^="prog"][target="_blank"], a[href^="prog"][target="_blank"] ~ *, 
     td[style="width:342px; padding-right:14px;"][valign="top"] {
         display: none !important
     }
