@@ -383,6 +383,7 @@ pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story:not([dat
 pb.wtf,piratbit.fun,piratbit.org,piratbit.pw,piratbit.top,vidak.icu#?#.table > tbody[id^="post_"]:-abp-has(a[style*="position: relative;left: 13px; font-size: 16px; background: yellow;"])
 player.twitch.tv##.ubo-overlay > .player-ad-notice
 dynamo.kiev.ua##.video-scroll:remove()
+/(aniqit|kodik)./$subdocument,removeparam=geoblock
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
 pronpic.org#@#:not(obhod-adblocka)
@@ -425,7 +426,6 @@ igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[cl
 ||adbutton.net^$script,redirect=noopjs
 ||amedia.online/templates/Animedia/js/libs.js$script,removeparam=|
 ||an.yandex.ru^$domain=e.mail.ru
-||aniqit.com^$subdocument,removeparam=geoblock
 ||clustrmaps.com/counter/$image,redirect=32x32.png
 ||connect.facebook.net/*/fbevents.js|$third-party
 ||cosmonova-broadcast.tv/player?autoplay=$subdocument,removeparam=autoplay
@@ -436,7 +436,6 @@ igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[cl
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
 ||gidonline.io/wp-content/themes/gidonline/js/cloudi.js
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
-||kodik.info^$subdocument,removeparam=geoblock
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||loadercdn.com^$important,script,redirect=noopjs
