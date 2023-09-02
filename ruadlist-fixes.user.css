@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230830.1826
+@version        0.20230902.1537
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1531,6 +1531,15 @@
 @-moz-document domain("doefiratv.info") {
     .b-cell > div[id] {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("doramafox.ru") {
+    .post-singl + .infos {
+        display: none !important
+    }
+    .yaoy-poster .s-poster {
+        filter: none !important
     }
 }
 
