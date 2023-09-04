@@ -4,7 +4,8 @@
 !#if ext_abp
 ! запросы
 *://pikabu.ru/*/*/*/$rewrite=abp-resource:blank-js,domain=pikabu.ru
-/^https?://(cyber|www)\.sports\.ru/*[/]*[/][^\s]{70,}/$script,domain=sports.ru
+/^https?://(cyber|www)\.sports\.ru/*[/]*[/][^\s]{198,}/$xmlhttprequest,domain=sports.ru
+/^https?://(cyber|www)\.sports\.ru/*[/]*[/][^\s]{71,}/$script,domain=sports.ru
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
@@ -1041,6 +1042,7 @@ sports.ru#?#[class]:-abp-has(> .aside-news-list__advert ~ a[href^="https://sprts
 sports.ru#?#[class]:-abp-has(> .aside-news-list__advert:-abp-contains(Реклама))
 sports.ru##[data-banner-id]
 sports.ru##[data-content-name="banner-dfp"]
+sports.ru##[data-control*="Videonow"]
 sports.ru##[data-control^="Aliens."]
 sports.ru##[data-control^="Banners."]
 sports.ru##[data-is-ad-poll] .bookmaker-info
@@ -1082,7 +1084,7 @@ sports.ru##style:first-child ~ [class^="gift__"]
 ||sports.ru/css/promo.
 ||sports.ru/desktop/aliens/
 ||sports.ru/desktop/special/*-slider/
-||sports.ru/embed/saudi-pro-league/ronaldo/best-assists/|$xmlhttprequest
+||sports.ru/embed/*/|$xmlhttprequest
 ||sports.ru^*/banners/
 ||taboola.com^$domain=sports.ru|tribuna.com
 ! обфускация
