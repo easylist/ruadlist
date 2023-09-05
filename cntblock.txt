@@ -1168,6 +1168,8 @@ auto.ru#?#div:matches-css-before(content: /Реклама/) ~ div
 inoreader.com##div[id^="leaderboard_ad"] > *
 dzen.*,frontend.vh.yandex.ru,widgets.kinopoisk.ru,yastatic.net#?#+js(set-constant, Object.prototype.hasPreroll, null)
 radioprofusion.com##footer > .counter
+forum.ruboard.*#@#:not(my-obnaruzhili-blokirovshchik)
+forum.ruboard.*#@#div[id^="yandex_rtb"]
 horoscopes.rambler.*#?#+js(set-constant, Object.prototype.needShowAlicePopup, null)
 otzovik.com##img[alt="liru"]
 lostfilm.tv,lostfilm.tw##img[width="1"][height="1"]
