@@ -276,6 +276,7 @@ www.rambler.ru##+js(remove-attr, target, a[href*="#rcmrclid"], stay)
 mag.relax.by##+js(remove-class, b-global-branding, html)
 disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
 motorpage.ru##+js(remove-class, noscroll, body)
+inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 2ip.ua##+js(remove-node-text, script, hidemy.name)
 root-nation.com##+js(remove-node-text, style, /body[\s]{1}{[\s][\t][\t]*background-color:|body{background-color:/)
@@ -436,6 +437,7 @@ igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[cl
 ||franecki.net/js/lib.js$important,script,redirect=noop.js
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
 ||gidonline.io/wp-content/themes/gidonline/js/cloudi.js
+||googletagmanager.com/gtag/js?id=UA-$important,script,domain=inforesist.org
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
@@ -602,6 +604,7 @@ sports.ru##+js(cookie-remover, aablc)
 @@$cname,domain=360tv.ru|games-pc.top|innal.top|kyiv.ua|sports.ru
 root-nation.com##^.td-a-rec
 root-nation.com##^body > a
+inforesist.org##^script:has-text(/gtag\('event'/)
 otzovik.com##^script:has-text(an.yan)
 hvylya.net,i.ua,ivona.ua,kriminal.tv,meteofor.com.ua,mport.ua,zv.zp.ua##^script:has-text(attachShadow)
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##^script:has-text(dimisa)
