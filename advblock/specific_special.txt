@@ -29,6 +29,8 @@ forum.ruboard.ru##:not(my-obnaruzhili-blokirovshchik)
 ||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 ||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! селекторы
+pikabu.ru##.habsdk
+pikabu.ru##.habsdk ~ div
 2ip.ua#?#.ipblockmap > div > div:-abp-properties(cursor: pointer)
 pikabu.ru#?#.page-story__before-comments div:-abp-properties(min-height: 250px)
 pikabu.ru#?#.page-story__story > div:-abp-properties(display: block)
@@ -39,15 +41,16 @@ pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(mi
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(min-height: calc(300px)))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+pikabu.ru##[data-container="outer"]
+pikabu.ru##[data-name*="banner"]
 pikabu.ru#?#aside > .sidebar-block:-abp-has(> div[id])
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 cq.ru#?#div:-abp-properties(content: "Реклама")
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
-pikabu.ru##div[class]:first-child > pre:first-child + div[class]:last-child div div
-pikabu.ru##div[class]:first-child > span:first-child + div[class]:last-child div div
-pikabu.ru##div[href]
 rg.ru##div[id][class*="__"]:empty
+pikabu.ru##div[style*="important"] > div[style*="important"]
+pikabu.ru##div[style*="important"] > div[style*="important"] ~ div
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
 !
