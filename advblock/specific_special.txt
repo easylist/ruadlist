@@ -30,11 +30,12 @@ forum.ruboard.ru##:not(my-obnaruzhili-blokirovshchik)
 ||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! селекторы
 2ip.ua#?#.ipblockmap > div > div:-abp-properties(cursor: pointer)
+pikabu.ru##.page-story__before-comments > div[style=""]
 pikabu.ru#?#.page-story__before-comments div:-abp-properties(min-height: 250px)
 pikabu.ru#?#.page-story__story > div:-abp-properties(display: block)
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru##.sidebar-block div[id] > [style="width: 100%;"]
+pikabu.ru##.sidebar-block div:not([class])[style="width: 100%;"]
 2ip.ua##.sidebar-nav
 pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(600px)))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(min-height: calc(300px)))
@@ -48,8 +49,7 @@ www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:
 cq.ru#?#div:-abp-properties(content: "Реклама")
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 rg.ru##div[id][class*="__"]:empty
-pikabu.ru##div[style*="important"] > div[style*="important"]
-pikabu.ru##div[style*="important"] > div[style*="important"] ~ div
+pikabu.ru##div[style*="important;"]
 pikabu.ru##p[href]
 pikabu.ru##p[href] ~ div
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
