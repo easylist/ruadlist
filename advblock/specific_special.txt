@@ -4,7 +4,6 @@
 forum.ruboard.ru##:not(my-obnaruzhili-blokirovshchik)
 !#if ext_abp
 ! запросы
-*://pikabu.ru/*/*/*/$rewrite=abp-resource:blank-js,domain=pikabu.ru
 /^https?://(cyber|www)\.sports\.ru/*[/]*[/][^\s]{198,}/$xmlhttprequest,domain=sports.ru
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
@@ -14,6 +13,7 @@ forum.ruboard.ru##:not(my-obnaruzhili-blokirovshchik)
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=rg.ru
 /^https?://tech\.onliner\.by/*[/]*[/][^\s]{40,}/$script,domain=tech.onliner.by
 /^https?://www\.e1\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.e1.ru
+://pikabu.ru/*/*/*/$script,subdocument,xmlhttprequest
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com
 @@||s.zfctrack.net/z|$xmlhttprequest,domain=hvylya.net|kriminal.tv
 @@||s.zmctrack.net/z|$xmlhttprequest,domain=i.ua|ivona.ua|meteo.ua|panno4ka.net
@@ -29,13 +29,12 @@ forum.ruboard.ru##:not(my-obnaruzhili-blokirovshchik)
 ||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 ||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! селекторы
-pikabu.ru##.habsdk
-pikabu.ru##.habsdk ~ div
 2ip.ua#?#.ipblockmap > div > div:-abp-properties(cursor: pointer)
 pikabu.ru#?#.page-story__before-comments div:-abp-properties(min-height: 250px)
 pikabu.ru#?#.page-story__story > div:-abp-properties(display: block)
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
+pikabu.ru##.sidebar-block div[id] > [style="width: 100%;"]
 2ip.ua##.sidebar-nav
 pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(600px)))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(min-height: calc(300px)))
@@ -51,6 +50,8 @@ pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 rg.ru##div[id][class*="__"]:empty
 pikabu.ru##div[style*="important"] > div[style*="important"]
 pikabu.ru##div[style*="important"] > div[style*="important"] ~ div
+pikabu.ru##p[href]
+pikabu.ru##p[href] ~ div
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
 !
