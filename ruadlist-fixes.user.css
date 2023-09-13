@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230904.1227
+@version        0.20230913.2042
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1690,7 +1690,9 @@
     div[class^="dzen-desktop__bannerMain"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"][class*="hasFloors"] > div[class^="dzen-wrapper-with-top-content-desktop__bannerContainer-"], 
-    div[id][class^="feed"] article[class*="  "], div[id^="D-"], div[id^="R-"] {
+    div[id][class^="feed"] article[class*="  "], 
+    div[id][class^="feed"] article[class*="_theme_"], div[id^="D-"], 
+    div[id^="R-"] {
         display: none !important
     }
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"][class*="hasFloors"] {
@@ -4577,9 +4579,6 @@
     a[href^="prog"][target="_blank"], a[href^="prog"][target="_blank"] ~ *, 
     td[style="width:342px; padding-right:14px;"][valign="top"] {
         display: none !important
-    }
-    .cardPageDescMain > div[style*="min-height:"] {
-        min-height: 0 !important
     }
     .btn-download {
         opacity: 1 !important;
