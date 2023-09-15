@@ -13,7 +13,7 @@ forum.ruboard.ru##:not(my-obnaruzhili-blokirovshchik)
 /^https?://rg\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=rg.ru
 /^https?://tech\.onliner\.by/*[/]*[/][^\s]{40,}/$script,domain=tech.onliner.by
 /^https?://www\.e1\.ru/*[/]*[/][^\s]{80,}/$script,xmlhttprequest,domain=www.e1.ru
-://pikabu.ru/*/*/*/$script,subdocument,xmlhttprequest
+://pikabu.ru/$csp=script-src 'self' * 'unsafe-inline' data:
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com
 @@||s.zfctrack.net/z|$xmlhttprequest,domain=hvylya.net|kriminal.tv
 @@||s.zmctrack.net/z|$xmlhttprequest,domain=i.ua|ivona.ua|meteo.ua|panno4ka.net
@@ -30,14 +30,15 @@ forum.ruboard.ru##:not(my-obnaruzhili-blokirovshchik)
 ||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! селекторы
 2ip.ua#?#.ipblockmap > div > div:-abp-properties(cursor: pointer)
-pikabu.ru##.page-story__before-comments > div[style=""]
 pikabu.ru#?#.page-story__before-comments div:-abp-properties(min-height: 250px)
+pikabu.ru#?#.page-story__before-comments:-abp-has(> [id]:first-child)
 pikabu.ru#?#.page-story__story > div:-abp-properties(display: block)
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru##.sidebar-block div:not([class])[style="width: 100%;"]
 2ip.ua##.sidebar-nav
 pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(600px)))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__left ~ .story__main > div:first-child)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(min-height: calc(300px)))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
@@ -48,10 +49,9 @@ kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 cq.ru#?#div:-abp-properties(content: "Реклама")
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
+pikabu.ru##div[href]
 rg.ru##div[id][class*="__"]:empty
 pikabu.ru##div[style*="important;"]
-pikabu.ru##p[href]
-pikabu.ru##p[href] ~ div
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
 !
