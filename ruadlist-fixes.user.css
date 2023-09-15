@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230914.1419
+@version        0.20230915.1725
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1682,6 +1682,7 @@
     .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     .publication-columns-layout__columns-container [class*="-embed_"] + div, 
     .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
+    [class*="hasFloors"] div[id][class^="feed"] article[class*="_theme_"], 
     [class^="tsar-banner__container"], a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     div[class*="article"][class*="ight "][class*="_color_"] + div, 
@@ -1690,9 +1691,7 @@
     div[class^="dzen-desktop__bannerMain"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"][class*="hasFloors"] > div[class^="dzen-wrapper-with-top-content-desktop__bannerContainer-"], 
-    div[id][class^="feed"] article[class*="  "], 
-    div[id][class^="feed"] article[class*="_theme_"], div[id^="D-"], 
-    div[id^="R-"] {
+    div[id][class^="feed"] article[class*="  "], div[id^="D-"], div[id^="R-"] {
         display: none !important
     }
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"][class*="hasFloors"] {
@@ -3980,8 +3979,8 @@
     header > .header__main {
         background-color: var(--color--header__bg) !important
     }
-    .page-story__before-comments {
-        display: none !important
+    .page-story__before-comments div {
+        min-height: 0 !important
     }
     aside > .sidebar-block > div, aside > .sidebar-block > div > div, 
     aside > .sidebar-block > div > div > div, 
