@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230915.1725
+@version        0.20230915.1846
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4071,6 +4071,12 @@
     }
     body {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("pogoda.mail.ru") {
+    .forecast-rb-bg {
+        background-image: none !important
     }
 }
 
