@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230915.1846
+@version        0.20230916.1202
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -443,6 +443,7 @@
 
 @-moz-document
   domain("ag"),
+  domain("biz"),
   domain("buzz"),
   domain("by"),
   domain("city"),
@@ -464,11 +465,11 @@
   domain("vip"),
   domain("website"),
   domain("win") {
-    body[class^="has-brand active-brand"][class*="fixed-header"] {
+    body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] {
         padding-top: 0 !important;
         background-color: inherit !important
     }
-    body[class^="has-brand active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3) {
+    body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3) {
         width: unset !important
     }
 }
