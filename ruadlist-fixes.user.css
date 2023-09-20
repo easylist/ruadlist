@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230919.1338
+@version        0.20230920.1057
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -962,7 +962,8 @@
     #bigColumn script + div[class] > div[style^="height"] * {
         height: inherit !important
     }
-    [data-blocks] div[class]:empty, [data-blocks^="cluster_"] > div:empty ~ div, 
+    #rootWrapper > div > script ~ div > div, [data-blocks] div[class]:empty, 
+    [data-blocks^="cluster_"] > div:empty ~ div, 
     div[style^="order:"][style*="-1"] > div > div {
         min-height: 0 !important
     }
