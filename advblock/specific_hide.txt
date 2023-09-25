@@ -1642,8 +1642,8 @@ sm.news##.aside > [id][class]
 efir.plus##.aside > div ~ div
 sm.news##.aside div[id][class]:empty
 iz.ru##.aside-advertising
-kinoblog.tv##.aside-block > div[style^="margin-top: 0px"][style*="height:"]
 auto43.ru#?#.aside-block:-abp-has(> .media_aside_our-partners)
+kinoblog.tv#?#.aside-block:-abp-has(div[class^="adfinity_block_"])
 news-tape.ru#?#.aside-col > .moduletable:-abp-has(> .inner > .box-ct > .adsbygoogle)
 reporter.ua##.aside-column > a > img[src*="/home/banners/"]
 u24.ua##.aside-gab
@@ -8027,6 +8027,7 @@ sysadmins.ru##table[align="right"][valign="middle"] > tbody > tr > td[align="lef
 comfysoft.ru##table[align][frame="rhs"][style]
 x360-club.org##table[background="themes/xbox/images/hhead.jpg"]
 samlib.ru##table[border][style^="border: solid #8e5373"][style$="margin-bottom: 3px;"]
+kinoblog.tv#?#table[height="300"]:-abp-has(div[class^="adfinity_block_"])
 goroskop.org##table[height="90"]
 picplus.ru##table[height][bgcolor="#e9e9e9"]
 ru.gg##table[id^="ad-"]
