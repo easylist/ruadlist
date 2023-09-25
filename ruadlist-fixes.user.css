@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230921.1930
+@version        0.20230925.1528
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1672,18 +1672,19 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #ya-dist, .adv-ecom, .article__content_limited, 
+    #teaser, #ya-dist, .adv-ecom, .article__content_limited, 
     .panel-loadable-view__feed > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
     .publication-columns-layout__columns-container [class*="-embed_"] + div, 
     .video-viewer-content > div[class*="video-viewer-"] ~ div:not([class*="-view"]):not(:last-child), 
-    [class*="article"][class*="ight "] .sticky-container, 
-    [class*="hasFloors"] div[id][class^="feed"] article[class*="_theme_"], 
+    [class*="article"][class*="ight "] [class$="sticky"], 
+    [class*="hasFloors"] div[id][class^="feed"] article[class*="_theme_"]:not(#card-wrapper-short-carousel), 
     [class^="tsar-banner__container"], a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class^="dzen-desktop__bannerMain"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"][class*="hasFloors"] > div[class^="dzen-wrapper-with-top-content-desktop__bannerContainer-"], 
+    div[id][class^="feed"] article[class$="_dzen-feed"], 
     div[id][class^="feed"] article[class*="_with_big_"], div[id^="D-"], 
     div[id^="N-"], div[id^="R-"] {
         display: none !important
@@ -4169,13 +4170,6 @@
 @-moz-document domain("prophotos.ru") {
     body:not(#id) {
         padding-top: 130px !important
-    }
-}
-
-@-moz-document domain("protanki.tv") {
-    body {
-        overflow: auto !important;
-        padding-right: 0 !important
     }
 }
 
