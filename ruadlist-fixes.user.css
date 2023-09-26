@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230925.1916
+@version        0.20230926.1307
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1423,6 +1423,15 @@
 @-moz-document domain("ctv7.ru") {
     body > .site {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("cursorinfo.co.il") {
+    #cmp-iframe {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
     }
 }
 
