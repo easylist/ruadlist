@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20230926.1307
+@version        0.20230927.654
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1755,11 +1755,11 @@
 @-moz-document
   domain("e.mail.ru"),
   domain("octavius.mail.ru") {
-    html:root {
-        --vkui--octavius_size_headline_height--regular: 36px !important
-    }
     .application-mail__wrap > .application-mail__layout > .layout[style*="grid-template-columns:"] {
         grid-template-columns: 232px 1fr 0 0 !important
+    }
+    .letter-list {
+        height: inherit !important
     }
     .layer-sent-page > .layer {
         min-height: 0 !important
