@@ -1071,12 +1071,13 @@ www.google.*##+js(remove-attr, jsaction, #islsp c-wiz a[href^="http"][data-ved][
 ||ucoz.*/main/?a=ustat;
 ||ucoz.*/stat/
 !
-! Yandex
+! Yandex и Dzen
 @@||clck.yandex.ru/redir/dtype=clck/lid=wcat.razdel.
 @@||yandex.ru/metrika/watch.js$domain=maxidom.ru
 @@||yandex.ru/metrika/watch_visor.js$domain=sports.ru
 ||bs.yandex.$~script
 ||button.blogs.yandex.
+||clck.dzen.ru/click|
 ||clck.yandex.ru^$~other
 ||mc.yandex.com^
 ||mc.yandex.ru^
@@ -1420,6 +1421,7 @@ $removeparam=redirect_ts,domain=ya.ru
 $removeparam=ref,domain=dtf.ru|mail.ru|sportmail.ru|vc.ru
 $removeparam=ref_src
 $removeparam=ref_url
+$removeparam=referrer_clid
 $removeparam=rf,domain=mail.ru|sportmail.ru
 $removeparam=rid,domain=dzen.ru
 $removeparam=rtclick
