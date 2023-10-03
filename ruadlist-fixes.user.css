@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231001.2220
+@version        0.20231003.1800
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -337,6 +337,12 @@
     }
     body {
         overflow: auto !important
+    }
+    a[onclick*="trapABClick"] {
+        position: absolute !important;
+        top: -9999px !important;
+        opacity: 0 !important;
+        z-index: -9999 !important
     }
 }
 
