@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231003.1800
+@version        0.20231005.1906
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1978,7 +1978,9 @@
     }
 }
 
-@-moz-document domain("finance.mail.ru") {
+@-moz-document
+  domain("finance.mail.ru"),
+  domain("vfokuse.mail.ru") {
     aside > div > div {
         min-height: 0 !important
     }
