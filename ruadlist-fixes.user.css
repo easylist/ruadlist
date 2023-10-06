@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231005.1906
+@version        0.20231006.1143
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2313,6 +2313,12 @@
 @-moz-document domain("gastronom.ru") {
     body > div[class^="js-nh"] {
         margin-top: 115px !important
+    }
+}
+
+@-moz-document domain("gazeta.ru") {
+    .b_header {
+        max-width: 100% !important
     }
 }
 
