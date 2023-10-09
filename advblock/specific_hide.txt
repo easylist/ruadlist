@@ -289,7 +289,6 @@ minfin.com.ua###container-deposit
 ua-electro.com###content .metaslider
 kosmetista.ru###content > .b-under-menu
 sport-tv.by#?##content > .block:-abp-has(a[href][target="_blank"] > img)
-superhumor.ru,voffka.com###content > .blog
 kak-prosto.net###content > .container
 rz.com.ua###content > .container > #page-header
 wotsite.net###content > .info-box
@@ -2104,6 +2103,7 @@ wotspeak.org##.blockmainkv
 turkru.tv##.blockreclam
 unvan.az##.blockreklam
 poltavaforum.com##.blocksubhead.righttb + a[style^="z-index:1000;"]
+superhumor.ru,voffka.com#?#.blog > .blogbody:-abp-has([href*="utm_"])
 wotsite.net##.blog-cat > .box[style^="height:"]
 zakon.ru##.blogtbg
 papillomy.com##.blok1
@@ -3330,6 +3330,7 @@ ria.ru##.m-ya
 fotokto.ru##.m2
 ppl.nnov.ru##.m_lbanner
 tonkosti.ru##.magnifique-header__partners
+superhumor.ru,voffka.com##.mailform > div[align="center"]
 raenza.ru##.main > .container > .row .placeholder
 tvmag.ru#?#.main > .container:-abp-has(> div:empty ~ script)
 odnako.org##.main > .new_header_90.boxNoPadding3:first-child
@@ -6421,6 +6422,8 @@ bessarabiainform.com##aside > .execphpwidget video
 jstack.ru##aside > .profile-inner + a[href][target="_blank"] > img
 fanat1k.ru##aside > .row > .text-center
 pikabu.ru##aside > .sidebar-block:empty
+superhumor.ru,voffka.com#?#aside > .sidetitle:-abp-contains(Партнеры)
+superhumor.ru,voffka.com#?#aside > .sidetitle:-abp-contains(Партнеры) + br + .side
 vladday.ru##aside > .text-center
 subbota.ua##aside > .w-nt.primary-sidebar-widget
 cikavosti.com#?#aside > .widget:-abp-has(h4:-abp-contains(/^Новини$|Реклама/))
@@ -7208,7 +7211,7 @@ f-igri.ru##div[id*="result"]
 narutoplanet.ru##div[id*="script"]
 mirnov.ru#?#div[id*="sidebar"] > div[class*="module"]:-abp-has(> [class*="moduletitle"]:-abp-contains(/^актуально|финам$|сми2$|marketgid|^интересные|гнездо.ру/i))
 infobank.by##div[id*="swiffycontainer"]
-lalamus.cc,superhumor.ru,voffka.com##div[id*="teaser"]
+lalamus.cc##div[id*="teaser"]
 flowtation.ru##div[id*="tizer"]
 1tv.ru,4pda.to,artem-kashkanov.ru,astrakhan-24.ru,baraholka.onliner.by,bigpicture.ru,energyfm.ru,galya.ru,gotovim-doma.ru,multitran.ru,qip.ru,vputilkovo.ru##div[id*="yandex_ad"]
 mivmeste.info#?#div[id]:-abp-has(> wix-iframe)
