@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231011.1806
+@version        0.20231013.1654
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2390,12 +2390,6 @@
     }
 }
 
-@-moz-document domain("go.mail.ru") {
-    .AdvContainer-container, .AdvSide-content, body > div[style^="z-index:"] {
-        display: none !important
-    }
-}
-
 @-moz-document domain("goclips.tv") {
     .video_content {
         height: auto !important
@@ -3341,8 +3335,7 @@
     .article__item_source_viqeo .article__container::before {
         content: initial !important
     }
-    #asteroid-cloud, #asteroid-games, #bubble-home, 
-    .grid__main-col > .tgb-wrapper, .ph-ext, 
+    #bubble-home, .asteroid-widgets, .grid__main-col > .tgb-wrapper, .ph-ext, 
     .tabs-content .news-item_regular::after, 
     .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
