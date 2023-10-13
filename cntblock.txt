@@ -737,7 +737,6 @@ _pagespeed_beacon?
 ||rankw.ru/pinger.php?
 ||rbc.ru/click?
 ||rbc.ru^*/geoinfo/by-ip/
-||recostream.go.mail.ru^$domain=~recostream.go.mail.ru
 ||redditstatic.com/ads/pixel.js
 ||referrer.disqus.com^
 ||reinvigorate.net^$third-party
@@ -1122,7 +1121,6 @@ happy-hack.net#?##side_right > .block_r:-abp-has(> div [href*="liveinternet.ru/"
 online-fix.me#@#*
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib#?#+js(abort-on-stack-trace, document.querySelectorAll, inlineScript)
 otvet.mail.ru#?#+js(addEventListener-defuser, click, externalLink)
-go.mail.ru#?#+js(addEventListener-defuser, mousedown, [native code])
 auto.ru#?#+js(cookie-remover, /bltsr|crookie/)
 auto.ru#?#+js(json-prune, ads)
 online-fix.me#?#+js(no-setTimeout-if, / d[0-9]{1}/)
@@ -1359,20 +1357,20 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 4pda.*##+js(abort-on-property-read, document.referrer)
 !
 ! Экспериментальные правила для маркеров
-$document,removeparam=fr,domain=go.mail.ru|r.mail.ru
-$document,removeparam=frm,domain=go.mail.ru|r.mail.ru
-$document,removeparam=hasnavig,domain=go.mail.ru|r.mail.ru
+$document,removeparam=fr,domain=r.mail.ru
+$document,removeparam=frm,domain=r.mail.ru
+$document,removeparam=hasnavig,domain=r.mail.ru
 $document,removeparam=partner_user_id,domain=dzen.ru
 $document,removeparam=rid,domain=dzen.ru
-$document,removeparam=sbmt,domain=go.mail.ru|r.mail.ru
-$document,removeparam=src,domain=go.mail.ru|r.mail.ru
-$document,removeparam=test_id,domain=go.mail.ru|r.mail.ru
-$document,removeparam=us,domain=go.mail.ru|r.mail.ru
-$document,removeparam=ushq,domain=go.mail.ru|r.mail.ru
-$document,removeparam=usln,domain=go.mail.ru|r.mail.ru
-$document,removeparam=usqid,domain=go.mail.ru|r.mail.ru
-$document,removeparam=usstr,domain=go.mail.ru|r.mail.ru
-$document,removeparam=ustq,domain=go.mail.ru|r.mail.ru
+$document,removeparam=sbmt,domain=r.mail.ru
+$document,removeparam=src,domain=r.mail.ru
+$document,removeparam=test_id,domain=r.mail.ru
+$document,removeparam=us,domain=r.mail.ru
+$document,removeparam=ushq,domain=r.mail.ru
+$document,removeparam=usln,domain=r.mail.ru
+$document,removeparam=usqid,domain=r.mail.ru
+$document,removeparam=usstr,domain=r.mail.ru
+$document,removeparam=ustq,domain=r.mail.ru
 $document,removeparam=via,domain=dzen.*|yandex.*
 $removeparam=/cdom/i,domain=3dnews.kz|3dnews.ru
 $removeparam=?utm_source
