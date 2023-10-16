@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231016.1534
+@version        0.20231016.1630
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3500,7 +3500,9 @@
     }
 }
 
-@-moz-document domain("mintmanga.live") {
+@-moz-document
+  domain("mintmanga.live"),
+  domain("selfmanga.live") {
     .hide-dn img {
         filter: none !important
     }
