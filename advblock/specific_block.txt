@@ -274,6 +274,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /*aHR0c$third-party,domain=fenglish.site|ling-online.com|www.mp4upload.com
 /*banner*.php|$subdocument,domain=anistar.org|astar.bz|online-star.org|online-stars.org
 /*baxter*/olx*.min.js$domain=olx.kz|olx.ua|olx.uz
+/*docking*eaglecdn$subdocument,domain=livejournal.com
 /*vue-chunk.booster.$script,domain=dtf.ru|vc.ru
 /75tr_*_edge.js$domain=xn----7sbaegss0bebjcb2g.xn--p1ai
 /?ads_service=$domain=namba.kg|namba.kz
@@ -2797,7 +2798,7 @@ lada.kz/uploads/banners/
 ||streamapps.ru^$script
 ||streamguard.cc^*.js|$script
 ||strikes.ru/steamtrade_net$image
-||strm.yandex.ru^$domain=1tv.ru|karaoke.ru|mediavitrina.ru
+||strm.yandex.ru^$domain=1tv.ru|karaoke.ru|livejournal.com|mediavitrina.ru
 ||stroitel-lab.ru/js_content/
 ||stroy-podskazka.ru/adfallback/
 ||stroy.ykt.ru/themes/default/js/owlcarousel/
@@ -3341,6 +3342,7 @@ lada.kz/uploads/banners/
 !
 ! Rewrite rules
 !#if ext_abp
+||livejournal.com/video/check?recordId=$xmlhttprequest,rewrite=abp-resource:blank-text,domain=livejournal.com
 ||s-cdn.org/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-club.tv/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||ts.kg/olol*.mp4$rewrite=abp-resource:blank-mp4,domain=ts.kg

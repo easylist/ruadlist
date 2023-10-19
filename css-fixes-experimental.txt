@@ -916,6 +916,12 @@ liveinternet.ru##[style="margin-top:-24px;"] ~ br + div
 ! исправление ошибок и косяков обфусцированной вёрстки
 www.liveinternet.ru##:not(.allpageinner) > :not(.header) > .logo > a[href="/"] > span:style(top: inherit !important; left: inherit !important; font-size: x-large !important; font-weight: bold !important; color: #0183cb !important)
 ! ---
+! LiveJournal
+www.livejournal.com##.mainpage > div[class]:style(min-height: 0 !important)
+lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
+livejournal.com##.s-layout > div[class]:style(min-height: 0 !important)
+lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##header > div[class]:style(min-height: 0 !important)
+! ---
 livesport.ws##body > div:not([id]):not([class]) + div:not([id]):not([class]) + div:not([id]):not([class]) + div:not([id]):not([class]) ~ div[id]:not([class])
 livesport.ws##body:style(padding-top: 0 !important)
 ! ---
