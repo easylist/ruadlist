@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231016.1630
+@version        0.20231019.1915
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3143,6 +3143,20 @@
     }
 }
 
+@-moz-document
+  domain("lena-miro.ru"),
+  domain("levik.blog"),
+  domain("livejournal.com"),
+  domain("olegmakarenko.ru"),
+  domain("periskop.su"),
+  domain("shakko.ru"),
+  domain("shiro-kino.ru"),
+  domain("vadimrazumov.ru") {
+    .mdspost > div[class], header > div[class] {
+        min-height: 0 !important
+    }
+}
+
 @-moz-document domain("lenta.ru") {
     .b-board._olimp {
         border-bottom: none !important;
@@ -3221,6 +3235,12 @@
     }
     .allpage .currency a {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("livejournal.com") {
+    .s-layout > div[class] {
+        min-height: 0 !important
     }
 }
 
@@ -5473,6 +5493,12 @@
         font-size: x-large !important;
         font-weight: bold !important;
         color: #0183cb !important
+    }
+}
+
+@-moz-document domain("www.livejournal.com") {
+    .mainpage > div[class] {
+        min-height: 0 !important
     }
 }
 
