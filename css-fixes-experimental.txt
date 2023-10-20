@@ -1596,12 +1596,14 @@ dzen.ru##.adv-ecom
 dzen.ru##.article__content_limited
 dzen.ru##.mg-advert__content:not(:first-child):style(margin-top: unset !important)
 dzen.ru##.mg-grid__col > div[style^="margin-top:"]:style(margin-top: unset !important)
+dzen.ru##.video-site-app [data-testid^="feed-row-"] > div[class*="heme"]
 dzen.ru##[class*="Floors"] div[id][class^="feed"] article[data-testid] ~ article:not([data-testid])
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
 dzen.ru##body:style(overflow-y: unset !important)
 dzen.ru##body[class*="desktop"] [class*="article"][class*="ight "] [class$="sticky"]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
+dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ div:not([aria-label="Карточка рекомендованного видео"]) > div[id][class]
 dzen.ru##div[class*="-content "] > div[class*="-content__player"] ~ div[class*="withDomainHover"]
 dzen.ru##div[class*="video-viewer-sidebar__ad"]
 dzen.ru##div[class*="videoCardAd"]
