@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231019.1915
+@version        0.20231020.1353
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1688,11 +1688,13 @@
 
 @-moz-document domain("dzen.ru") {
     #teaser, #ya-dist, .adv-ecom, .article__content_limited, 
+    .video-site-app [data-testid^="feed-row-"] > div[class*="heme"], 
     [class*="Floors"] div[id][class^="feed"] article[data-testid] ~ article:not([data-testid]), 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     body[class*="desktop"] [class*="article"][class*="ight "] [class$="sticky"], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
+    div[aria-label="Карточка рекомендованного видео"] ~ div:not([aria-label="Карточка рекомендованного видео"]) > div[id][class], 
     div[class*="-content "] > div[class*="-content__player"] ~ div[class*="withDomainHover"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class^="dzen-desktop__bannerMain"], 
