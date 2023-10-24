@@ -34,7 +34,7 @@ pikabu.ru#?#.page-story__story > div:-abp-properties(display: block)
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru##.sidebar-block div:not([class])[style="width: 100%;"]
-pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(line-height: 0))
+pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(line-height: calc(0)))
 pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(600px)))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__left ~ .story__main:last-child > div:first-child)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(min-height: calc(300px)))
@@ -52,6 +52,8 @@ pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 pikabu.ru##div[href]
 rg.ru##div[id][class*="__"]:empty
 pikabu.ru##div[style*="important;"]
+pikabu.ru##p[href]
+pikabu.ru##p[href] ~ div
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
 !
