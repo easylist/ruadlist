@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231021.1425
+@version        0.20231024.2101
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -891,6 +891,15 @@
 @-moz-document domain("app2top.ru") {
     .page-wrapper {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("artfile.ru") {
+    center > noindex > div[style*="height:"] {
+        display: none !important
+    }
+    body > a.bsec[href="#"] {
+        top: 31px !important
     }
 }
 
