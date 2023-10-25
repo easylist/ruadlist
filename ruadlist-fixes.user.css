@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231025.1313
+@version        0.20231025.1838
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4272,6 +4272,16 @@
     }
     body[style*="position:"] {
         position: unset !important
+    }
+}
+
+@-moz-document
+  domain("rasp.yandex.by"),
+  domain("rasp.yandex.kz"),
+  domain("rasp.yandex.ru"),
+  domain("rasp.yandex.uz") {
+    .StationPage__centralArea {
+        margin-top: 20px !important
     }
 }
 
