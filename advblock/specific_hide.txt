@@ -1602,6 +1602,7 @@ mk.ru##.article-grid__good-top
 euro-football.ru##.article-item > .article__footer ~ :not(.article__footer):not(.comments-container)
 viva.ua##.article-partners
 4mama.ua,tvoymalysh.com.ua##.article-partners-news
+vedomosti.ru##.article-recommendation
 wotsite.net#?#.article-right > div:-abp-contains(Реклама)
 games.24tv.ua#?#.article-text > .insert:-abp-has(a[rel*="sponsored"])
 korrespondent.net#?#.article:-abp-has(> .article__title > a > .advertising)
@@ -1621,6 +1622,7 @@ tsargrad.tv##.article__dzen
 1istochnik.ru##.article__dzen-share
 kanalukraina.tv##.article__footer_adv
 vedomosti.ru##.article__metrics
+vedomosti.ru#?#.article__sticky > div[class^="adfox"]:-abp-has(.teaser-commerce)
 krym.news,novostivl.ru,ryazan.life,v-tatarstane.ru,yakutsk.ru##.article_ads_section
 deita.ru#?#.article_block:-abp-has(> [id^="unit_"])
 kinoafisha.info##.article_contentroll
@@ -5240,6 +5242,7 @@ androidinsider.ru,appleinsider.ru,hi-news.ru##[class*="af_advert_"]
 drive.ru##[class*="autoRu"]
 drive.ru##[class*="autoRu"] + .hr
 amic.ru,anime-bit.ru,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
+vedomosti.ru#?#[class*="banner"]:-abp-has(.teaser-commerce)
 info.sibnet.ru##[class*="banner__brand"]
 disgustingmen.com##[class*="bg_banner"]
 vse.rv.ua##[class*="billboard"]
