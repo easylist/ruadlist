@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231026.1824
+@version        0.20231029.1355
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4487,8 +4487,7 @@
     div[style*="height:"] > a[target="_blank"] > img[src^="data:"] {
         display: none !important
     }
-    .menu[role="navigation"] div[style], .menu[role="navigation"] div[style], 
-    aside > div[class]:first-child > div, aside > div[class]:first-child > div {
+    .menu[role="navigation"] div[style], aside > div[class]:first-child > div {
         height: auto !important
     }
     main > div[class*=" "] > div {
@@ -5608,7 +5607,7 @@
   domain("yandex.ru"),
   domain("yandex.uz") {
     .MMSidebar-Card div[class$="-Incut"][style^="margin-bottom: 4px;"], 
-    .MediaViewer .DirectInline, 
+    .MMSidebar-Card_bottomAdv, .MediaViewer .DirectInline, 
     .MediaViewer-LayoutFooter div[class$="-PCodeContainer"], 
     .serp-list .MastHead, .serp-list [data-state*="directType"], 
     .serp-list [data-state*="offersData"], 
