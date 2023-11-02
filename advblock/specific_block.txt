@@ -1,6 +1,7 @@
 ! CSP and Header filters
 .infox.sg^$csp=script-src
 /gateway/aHR0c$csp=script-src
+://poizdato.net/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.dev *.io *.net *.org *.ru *.ua
 |http*//fastpic.org/$csp=frame-src 'self'
 |http*//fastpic.org/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org
 ||24smi-*/top/$csp=script-src
@@ -40,6 +41,7 @@
 ||nsportal.ru/download/$csp=frame-src 'self'
 ||ontvtime.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.googleapis.com *.googletagmanager.com *.gstatic.com *.ok.ru vk.com
 ||orbit-games.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: date: static.addtoany.com *.googletagmanager.com *.facebook.com *.keycaptcha.com
+||poezdato.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.dev *.io *.net *.org *.ru *.ua
 ||psysovet24.ru^$csp=script-src 'self' * blob: data:
 ||runewslenta.com^$csp=sandbox allow-same-origin;
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:
@@ -2291,7 +2293,6 @@ lada.kz/uploads/banners/
 ||pobedagame.sibnet.ru^$domain=~pobedagame.sibnet.ru
 ||podfm.ru/content/promo/
 ||podfm.ru/images/branding/
-||poezdato.net/js/carsc.js
 ||poezone.ru/poepoints/
 ||poglyad.te.ua/wp-content/uploads/
 ||pogoda.by/promo
