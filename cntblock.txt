@@ -1237,6 +1237,7 @@ tv.yandex.*##.recommended-ott
 ya.*,yandex.*##.RsyaOrganic
 ya.*,yandex.*#?#.serp-list > .serp-item:-abp-has(> .bno .serp-adv__counter)
 ya.*,yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-event-required])
+ya.*,yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-vnl*="advertiser"])
 ya.*,~yandex.net,yandex.*#?#+js(remove-attr, data-counter, .serp-list a)
 yandex.*###bk-container
 yandex.*##.card-rtb-one-column-stub
@@ -1363,10 +1364,13 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 4pda.*##+js(abort-on-property-read, document.referrer)
 !
 ! Экспериментальные правила для маркеров
+$document,removeparam=clid,domain=dzen.ru|ya.ru|yandex.*
 $document,removeparam=fr,domain=r.mail.ru
 $document,removeparam=frm,domain=r.mail.ru
 $document,removeparam=hasnavig,domain=r.mail.ru
+$document,removeparam=nr,domain=ya.ru|yandex.*
 $document,removeparam=partner_user_id,domain=dzen.ru
+$document,removeparam=redirect_ts,domain=ya.ru|yandex.*
 $document,removeparam=rid,domain=dzen.ru
 $document,removeparam=sbmt,domain=r.mail.ru
 $document,removeparam=src,domain=r.mail.ru
@@ -1461,7 +1465,6 @@ $removeparam=yaclid
 $removeparam=yclid
 $removeparam=yredirect
 $removeparam=ysclid
-&clid=$document,removeparam=|clid,domain=yandex.*
 &ymclid=$document,removeparam=|,domain=~ozon.onelink.me
 .com/?_ga=$document,removeparam=|
 .html?gps-id=$document,removeparam=|,domain=aliexpress.*
@@ -1471,6 +1474,8 @@ $removeparam=ysclid
 .ru/?_ga=$document,removeparam=|
 .ru/?spm=$document,removeparam=spm,domain=aliexpress.*
 .ua/?_ga=$document,removeparam=|
+/*=tabbar$document,removeparam=from,domain=ya.ru|yandex.*
+/*=tabbar$document,removeparam=source,domain=ya.ru|yandex.*
 /*from=$document,removeparam=from,domain=116.ru|14.ru|161.ru|164.ru|178.ru|26.ru|29.ru|35.ru|43.ru|45.ru|48.ru|51.ru|53.ru|56.ru|59.ru|60.ru|62.ru|63.ru|68.ru|71.ru|72.ru|74.ru|76.ru|86.ru|89.ru|93.ru|chita.ru|e1.ru|ircity.ru|mgorsk.ru|msk1.ru|ngs.ru|ngs22.ru|ngs24.ru|ngs42.ru|ngs55.ru|ngs70.ru|nn.ru|proizhevsk.ru|provoronezh.ru|sochi1.ru|sterlitamak1.ru|tolyatty.ru|ufa1.ru|v1.ru|vladivostok1.ru
 /*purchase-referrer=$document,removeparam=|,domain=market.yandex.*
 /?amp;utm_*ukr$document,removeparam=|
@@ -1483,18 +1488,21 @@ $removeparam=ysclid
 /?gm&$document,removeparam=gm,domain=116.ru|14.ru|161.ru|164.ru|178.ru|26.ru|29.ru|35.ru|43.ru|45.ru|48.ru|51.ru|53.ru|56.ru|59.ru|60.ru|62.ru|63.ru|68.ru|71.ru|72.ru|74.ru|76.ru|86.ru|89.ru|93.ru|chita.ru|e1.ru|ircity.ru|mgorsk.ru|msk1.ru|ngs.ru|ngs22.ru|ngs24.ru|ngs42.ru|ngs55.ru|ngs70.ru|nn.ru|proizhevsk.ru|provoronezh.ru|sochi1.ru|sterlitamak1.ru|tolyatty.ru|ufa1.ru|v1.ru|vladivostok1.ru
 /?readmore$document,xmlhttprequest,removeparam=|,domain=rambler.ru
 /?ref=tg$document,removeparam=ref
+/search/*$document,removeparam=msid,domain=ya.ru|yandex.*
+/search/*$document,removeparam=redircnt,domain=ya.ru|yandex.*
+/search/*$document,removeparam=search_domain,domain=ya.ru|yandex.*
+/search/*$document,removeparam=search_source,domain=ya.ru|yandex.*
+/search/*$document,removeparam=src,domain=ya.ru|yandex.*
+/search/*$document,removeparam=suggest_reqid,domain=ya.ru|yandex.*
 /story/*?lang=$document,removeparam=|,domain=dzen.*|yandex.*
 ://aliexpress.*.htm?spm=$document,removeparam=|,domain=aliexpress.*
 =ukraine_news&utm_$document,removeparam=|utm_
 ?*r_audience=$document,removeparam=|,domain=ria.com
-?clid=$document,removeparam=|clid,domain=dzen.ru|yandex.*
 ?commercial=$document,removeparam=|,domain=ria.com
 ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*
 ?e=lfm$document,removeparam=|,domain=sports.ru
 ?from=$document,removeparam=|from,domain=3dnews.kz|3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|habr.com|igromania.ru|klops.ru|kommersant.ru|mail.ru|mk.ru|ntv.ru|quote.ru|rbc.ru|rbclife.ru|ridus.ru|sportrbc.ru|sports.ru
 ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru
-?from=tabbar$document,removeparam=|from,domain=ya.ru|yandex.*
-?from=yanews$document,removeparam=|
 ?media&ila_camaign=$document,removeparam=media
 ?nid=*show-uid=$document,removeparam=|,domain=market.yandex.*
 ?pokupki=$document,removeparam=|,domain=market.yandex.*
@@ -1554,14 +1562,6 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||www.google.*/search?$removeparam=uact
 ||www.google.*/search?$removeparam=ved
 ||www.google.*/search?client=$removeparam=client
-||yandex.*/images/search?text=*&from=$document,removeparam=|from,domain=yandex.*
-||yandex.*/news*?from=main$document,removeparam=|,domain=yandex.*
-||yandex.*/news*msid$document,removeparam=|,domain=yandex.*
-||yandex.*/search/$document,removeparam=msid,domain=yandex.*
-||yandex.*/search/$document,removeparam=search_source,domain=yandex.*
-||yandex.*/search/$document,removeparam=src,domain=yandex.*
-||yandex.*/search/$document,removeparam=suggest_reqid,domain=yandex.*
-||yandex.ru/?clid=$document,removeparam=|,domain=yandex.*
 ||ykt.ru^$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru
 ||youtube.com/embed/$subdocument,removeparam=iv_load_policy
 ||youtube.com/embed/$subdocument,removeparam=rel
