@@ -3,7 +3,6 @@
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 ! запросы
-/^https?://(cyber|www)\.sports\.ru/*[/]*[/][^\s]{198,}/$xmlhttprequest,domain=sports.ru
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 /^https?://24smi\.org/*[/]*[/][^\s]{80,}/$script,domain=24smi.org
 /^https?://[a-z0-9]+\.razlozhi\.ru\/[^\s]{45,}/$script,domain=razlozhi.ru
@@ -1066,7 +1065,6 @@ sports.ru##a[href="https://trbna.co/2u3V2dO"]
 sports.ru##a[href^="https://sprts.cc/"]
 sports.ru##a[href^="https://zen.yandex.ru/"]
 sports.ru##div[class*="SALES"] > .accordion__handle
-sports.ru##div[class*="banner"]
 sports.ru#?#div[class*="material-list--additional-block"] > .material-list__item:-abp-has(a[href^="https://sprts.cc/"])
 tribuna.com##div[class*="rb-widget"]
 tribuna.com##div[class^="BookmakerGift_bookmaker-gift_"]
