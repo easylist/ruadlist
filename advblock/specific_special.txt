@@ -40,7 +40,8 @@ pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(li
 pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(599px)))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__left ~ .story__main:last-child > div:first-child)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(min-height: calc(300px)))
-pikabu.ru##.story_tags-at-top ~ :not(.story_tags-at-top)
+pikabu.ru##.stories-feed__container > .story[data-recom-coef] ~ .story:not([data-recom-coef])
+pikabu.ru##.stories-feed__container > .story_tags-at-top ~ :not(.story_tags-at-top)
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru##[data-container="outer"]
