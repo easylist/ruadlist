@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231107.1543
+@version        0.20231109.1333
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1697,14 +1697,13 @@
 
 @-moz-document domain("dzen.ru") {
     #teaser, #ya-dist, .adv-ecom, 
-    .video-site-app [data-testid^="feed-row-"] > div[class*="heme"], 
-    [class*="Floors"] div[id][class^="feed"] div[class^="kebab-button-mailru-wrapper"] ~ article, 
+    .viewer-layout__content div[class*="content__player"] ~ div[class*="heme"], 
+    [class*="Floors"] div[id][class^="feed"] div[class*="wrapper-"] ~ article, 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside.article__right > div[class*="_"], 
+    aside[id^="article_"][class*="right"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[aria-label="Карточка рекомендованного видео"] ~ div:not([aria-label="Карточка рекомендованного видео"]) > div[id][class], 
-    div[class*="-content "] > div[class*="-content__player"] ~ div[class*="withDomainHover"], 
     div[class*="article__content"] > .undefined ~ div[class*="__middle"] > div[id][class], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class^="dzen-desktop__bannerMain"], 
