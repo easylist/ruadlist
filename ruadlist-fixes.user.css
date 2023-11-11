@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231109.1333
+@version        0.20231111.2254
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4609,6 +4609,14 @@
     }
     #site {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("soccer365.com.ua"),
+  domain("soccer365.ru") {
+    .header_top {
+        padding-top: 0 !important
     }
 }
 
