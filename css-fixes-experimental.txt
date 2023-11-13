@@ -1593,14 +1593,14 @@ dzen.ru##.adv-ecom
 dzen.ru##.mg-advert__content:not(:first-child):style(margin-top: unset !important)
 dzen.ru##.mg-grid__col > div[style^="margin-top:"]:style(margin-top: unset !important)
 dzen.ru##.viewer-layout__content div[class*="content__player"] ~ div[class*="heme"]
-dzen.ru##[class*="Floors"] div[id][class^="feed"] div[class*="wrapper-"] ~ article
+dzen.ru##[class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ [class*="wrapper"]:not([aria-label])
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
 dzen.ru##aside[id^="article_"][class*="right"] > div[class]
 dzen.ru##body:style(overflow-y: unset !important)
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ div:not([aria-label="Карточка рекомендованного видео"]) > div[id][class]
-dzen.ru##div[class*="article__content"] > .undefined ~ div[class*="__middle"] > div[id][class]
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id][class]
 dzen.ru##div[class*="video-viewer-sidebar__ad"]
 dzen.ru##div[class*="videoCardAd"]
 dzen.ru##div[class^="dzen-desktop__bannerMain"]
@@ -1609,9 +1609,7 @@ dzen.ru##div[class^="dzen-desktop__teaser-"]
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"]
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
 dzen.ru##div[id][class$="__ad"]
-dzen.ru##div[id][class^="feed"] article[class$="_dzen-feed"]
-dzen.ru##div[id][class^="feed"] article[class*="_with-border "]
-dzen.ru##div[id][class^="feed"] article[class*="_with_big_"]
+dzen.ru##div[id][class^="feed"] article[class*="_with-boder "]
 ! ---
 ! игры
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:style(width: unset !important)

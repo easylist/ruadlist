@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231113.8
+@version        0.20231113.1815
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -352,24 +352,6 @@
   domain("plus-plus.tv") {
     body {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document domain("3dnews.ru") {
-    html[lang="ru"] > body {
-        background: radial-gradient(ellipse at center,#4e4e4e 0%,#1a1a1a 100%) !important
-    }
-    #global-wrapper[style*="pointer"] {
-        cursor: auto !important;
-        padding-top: 0 !important;
-        background: none !important;
-        pointer-events: none !important
-    }
-    #global-wrapper[style*="pointer"] > * {
-        pointer-events: auto !important
-    }
-    #global-wrapper:not(#id) > #wrapper {
-        top: 0 !important
     }
 }
 
@@ -1696,20 +1678,19 @@
 @-moz-document domain("dzen.ru") {
     #teaser, #ya-dist, .adv-ecom, 
     .viewer-layout__content div[class*="content__player"] ~ div[class*="heme"], 
-    [class*="Floors"] div[id][class^="feed"] div[class*="wrapper-"] ~ article, 
+    [class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ [class*="wrapper"]:not([aria-label]), 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     aside[id^="article_"][class*="right"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[aria-label="Карточка рекомендованного видео"] ~ div:not([aria-label="Карточка рекомендованного видео"]) > div[id][class], 
-    div[class*="article__content"] > .undefined ~ div[class*="__middle"] > div[id][class], 
+    div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id][class], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class^="dzen-desktop__bannerMain"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
-    div[id][class$="__ad"], div[id][class^="feed"] article[class$="_dzen-feed"], 
-    div[id][class^="feed"] article[class*="_with-border "], 
-    div[id][class^="feed"] article[class*="_with_big_"] {
+    div[id][class$="__ad"], 
+    div[id][class^="feed"] article[class*="_with-boder "] {
         display: none !important
     }
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] {
