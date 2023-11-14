@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231113.1815
+@version        0.20231114.1920
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1076,6 +1076,14 @@
 @-moz-document domain("blogs.pravda.com.ua") {
     body > .block0 {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("bombafilms.ru"),
+  domain("hlamer.ru") {
+    body {
+        background-color: #596c84 !important
     }
 }
 
@@ -2435,6 +2443,12 @@
     }
 }
 
+@-moz-document domain("growhow.in.ua") {
+    body {
+        background-color: inherit !important
+    }
+}
+
 @-moz-document domain("gstv.ru") {
     .page-content {
         margin-top: 0 !important
@@ -2566,14 +2580,6 @@
     }
     body > noindex {
         display: none !important
-    }
-}
-
-@-moz-document
-  domain("hlamer.ru"),
-  domain("oveg.ru") {
-    body {
-        background-color: #596c84 !important
     }
 }
 
