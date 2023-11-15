@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231114.2243
+@version        0.20231115.1806
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1693,9 +1693,10 @@
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[aria-label="Карточка рекомендованного видео"] ~ div:not([aria-label="Карточка рекомендованного видео"]) > div[id][class], 
     div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id][class], 
-    div[class*="bannerMain"], div[class*="video-viewer-sidebar__ad"], 
-    div[class*="videoCardAd"], div[class^="dzen-desktop__link_bro-"], 
-    div[class^="dzen-desktop__teaser-"], 
+    div[class*="bannerMain"], 
+    div[class*="geo-and-currency-widget__hasBanner"] > div[class*="underWidget"], 
+    div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
+    div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
     div[id][class$="__ad"], 
     div[id][class^="feed"] article[class*="_with-boder "] {
