@@ -29,7 +29,7 @@
 ||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! селекторы
 pikabu.ru#?#.page-story__before-comments div:-abp-has([class]:-abp-properties(line-height: calc(0px)))
-pikabu.ru#?#.page-story__before-comments div:-abp-properties(min-height: 249px)
+pikabu.ru#?#.page-story__before-comments div:-abp-properties(min-height: 248px)
 pikabu.ru##.page-story__before-comments div[style=""]
 pikabu.ru#?#.page-story__before-comments:-abp-has(> [id]:first-child)
 pikabu.ru#?#.page-story__story > div:-abp-properties(display: block)
@@ -38,7 +38,7 @@ anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru##.sidebar-block div:not([class])[style="width: 100%;"]
 pikabu.ru#?#.sidebar__inner > .sidebar-block div:-abp-properties(line-height: 0)
 pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(line-height: calc(0px)))
-pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(599px)))
+pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(598px)))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__left ~ .story__main:last-child > div:first-child)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(min-height: calc(300px)))
 pikabu.ru##.stories-feed__container > .story[data-recom-coef] ~ .story:not([data-recom-coef])
@@ -53,15 +53,15 @@ kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
+pikabu.ru##div:first-child > div:first-child + div > div:first-child > div:first-child + div:last-child
+pikabu.ru##div:first-child > div:first-child + style + div
+pikabu.ru##div:first-child > div:first-child > style:first-child ~ div
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 sdamgia.ru##div[class^="google_ad_left"]
-pikabu.ru##div[href]
 rg.ru##div[id][class*="__"]:empty
 sdamgia.ru##div[id^="yandex_vario"]
 pikabu.ru##div[style*="important;"][style*="width:"][style*="height:"]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
-pikabu.ru##p[href]
-pikabu.ru##p[href] ~ div
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
 !
