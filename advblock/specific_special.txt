@@ -28,40 +28,35 @@
 ||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 ||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! селекторы
-pikabu.ru#?#.page-story__before-comments div:-abp-has([class]:-abp-properties(line-height: calc(0px)))
-pikabu.ru#?#.page-story__before-comments div:-abp-properties(min-height: 248px)
-pikabu.ru##.page-story__before-comments div[style=""]
-pikabu.ru#?#.page-story__before-comments:-abp-has(> [id]:first-child)
+pikabu.ru#?#.page-story__pre-comments div:-abp-properties(min-height: 248px)
+pikabu.ru##.page-story__pre-comments div[style=""]
 pikabu.ru#?#.page-story__story > div:-abp-properties(display: block)
+pikabu.ru##.page-story__story ~ .page-story__story
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru##.sidebar-block div:not([class])[style="width: 100%;"]
-pikabu.ru#?#.sidebar__inner > .sidebar-block div:-abp-properties(line-height: 0)
-pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(line-height: calc(0px)))
-pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(600px)))
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__left ~ .story__main:last-child > div:first-child)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has([class]:-abp-properties(min-height: calc(300px)))
-pikabu.ru##.stories-feed__container > .story[data-recom-coef] ~ .story:not([data-recom-coef])
-pikabu.ru##.stories-feed__container > .story_tags-at-top ~ :not(.story_tags-at-top)
+pikabu.ru##.sidebar-block_vacancies ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
+pikabu.ru#?#.sidebar__inner > .sidebar-block div:-abp-properties(min-height: calc(600px))
+pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
+pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has(> div > div:not([id]):not([class]))
+pikabu.ru##.stories-feed__container > .story[data-rating] ~ .story:not([data-rating])
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
-pikabu.ru,sdamgia.ru##[data-container]
-pikabu.ru##[data-name*="banner"]
-pikabu.ru,sdamgia.ru##[data-name="partial-container"]
-pikabu.ru#?#aside > .sidebar-block:-abp-has(> div[id])
+sdamgia.ru##[data-container]
+sdamgia.ru##[data-name="partial-container"]
+pikabu.ru##a[href][class] > div > div
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
-pikabu.ru##div:first-child > div:first-child + style + div
-pikabu.ru##div:first-child > div:first-child > style:first-child ~ div
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 sdamgia.ru##div[class^="google_ad_left"]
+pikabu.ru##div[data-ad-id]
 sdamgia.ru##div[data-name="adWrapper"]
 rg.ru##div[id][class*="__"]:empty
 sdamgia.ru##div[id^="yandex_vario"]
 pikabu.ru##div[style*="important;"][style*="width:"][style*="height:"]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
+pikabu.ru##div[style^="width: 300px; height:"]
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
 !
