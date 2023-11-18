@@ -426,7 +426,8 @@ hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagNam
 hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
-sdamgia.ru##main > div > div:has-text(rotator):remove()
+sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
+sdamgia.ru##main > div:has(~ div:has-text(rotator)):empty:style(margin-bottom: -185px)
 mult-porno.*,sex-studentki.*,cosplay-porn.*##+js(set-constant, biads.initCli, undefined)
 dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 porno365.*##+js(abort-on-property-read, bc_blocks)
