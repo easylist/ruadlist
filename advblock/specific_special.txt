@@ -904,9 +904,10 @@ gazeta.ru,lenta.ru,rambler.ru,wmj.ru##div[id^="rnet_"]
 motor.ru##div[id^="rnet_id_"] ~ div[style^="margin-top:"] + div
 rambler.ru##div[style^="display:"][style*="none"] + div[style^="width:"][style*="100%;"][style*="height:"][style*="315px"]:empty
 lenta.ru##iframe[src*="://audiosalute.lenta.ru/"]
+lenta.ru##iframe[src*="icdn.lenta.ru"][src*="banner"]
 ||audiosalute.lenta.ru/
 ||championat.com/embed/custom.css
-||icdn.lenta.ru/b/
+||icdn.lenta.ru^*/banner
 ||img.championat.com/brand/
 ||plista.com^$domain=wmj.ru
 ||rambler.ru/*/okko-metrics
