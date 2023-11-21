@@ -33,10 +33,10 @@
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc\([569]{2}[0-9]{1}/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}/)
 pikabu.ru##.sidebar-block_vacancies ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
-pikabu.ru##.stories-feed__container > .story[data-text-length] ~ .story:not([data-text-length])
+pikabu.ru##.stories-feed__container > .story[data-visited="true"]
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 sdamgia.ru##[data-container]
@@ -46,8 +46,8 @@ www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}/)
 sdamgia.ru##div[class^="google_ad_left"]
-pikabu.ru#?#div[class^="page-story__"] div:-abp-properties(/min-height: [245]{2}[0-9]{1}/)
 pikabu.ru##div[class^="page-story__"] div[style=""]
 sdamgia.ru##div[data-name="adWrapper"]
 rg.ru##div[id][class*="__"]:empty
