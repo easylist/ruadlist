@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231121.1517
+@version        0.20231122.1910
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1759,11 +1759,11 @@
 @-moz-document
   domain("e.mail.ru"),
   domain("octavius.mail.ru") {
+    .application_new-toolbar .application-mail:not(.application-mail_webview-mobile) .letter-list[class*="adv"] {
+        --letter-list-top-toolbar-height: inherit !important
+    }
     .application-mail__wrap > .application-mail__layout > .layout[style*="grid-template-columns:"] {
         grid-template-columns: 232px 1fr 0 0 !important
-    }
-    .letter-list {
-        height: inherit !important
     }
     .layer-sent-page > .layer {
         min-height: 0 !important
