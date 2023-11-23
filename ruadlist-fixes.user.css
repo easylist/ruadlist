@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231122.1910
+@version        0.20231123.1711
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4012,10 +4012,11 @@
     header > .header__main {
         background-color: var(--color--header__bg) !important
     }
-    .page-story__before-comments div {
+    div[class*="page-story"][class*="ments"] div {
         min-height: 0 !important
     }
-    aside > .sidebar-block > div, aside > .sidebar-block > div > div, 
+    aside > .sidebar-block, aside > .sidebar-block > div, 
+    aside > .sidebar-block > div > div, 
     aside > .sidebar-block > div > div > div, 
     aside > .sidebar-block > div > div > div > div {
         min-height: unset !important
@@ -5600,7 +5601,8 @@
     .DirectInline, .MMSidebar-Card_bottomAdv, .MediaViewer div[class*="_filled"], 
     .SerpPage div[class*="_filled"], 
     .serp.main__carousel:not([data-bem*="collectionId"]), 
-    div[class*="Images"] .SimpleSkeleton, div[id*="Images"] .SimpleSkeleton {
+    [data-vnl*="rsya_guarantee"], div[class*="Images"] .SimpleSkeleton, 
+    div[class="serp-item RsyaGuarantee"], div[id*="Images"] .SimpleSkeleton {
         display: none !important
     }
     .b-page.overlay[data-bem*="serp-metrika"] {
@@ -5640,8 +5642,7 @@
     body > .route-tip-view, div[aria-label="Реклама"], 
     div[class*=" news-"][class$="_mode_daas"], 
     div[class*="cl-teaser cl-teaser_card cl-teaser_fixed"] ~ div[class="cl-teaser cl-teaser_card cl-teaser_fixed"], 
-    div[class*="sidebar"] > .direct-snippet, 
-    div[class="serp-item RsyaGuarantee"] {
+    div[class*="sidebar"] > .direct-snippet {
         display: none !important
     }
     .monetization-group > .monetization-group__item {
