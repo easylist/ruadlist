@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231201.1656
+@version        0.20231201.2210
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -667,6 +667,7 @@
   domain("anilib.one"),
   domain("anilib.top"),
   domain("anilibria.iss.one"),
+  domain("anilib.moe"),
   domain("anilibria.tv") {
     .new-header {
         display: none !important
@@ -1709,22 +1710,22 @@
 @-moz-document domain("dzen.ru") {
     #teaser, #ya-dist, .adv-ecom, 
     .viewer-layout__content div[class*="content__player"] ~ div[class*="heme"], 
-    [class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ [class*="wrapper"]:not([aria-label]), 
+    [class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label]), 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside[id^="article_"][class*="right"] > div[class], 
+    aside[id^="article_"][class*="righ"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[aria-label="Карточка рекомендованного видео"] ~ div:not([aria-label="Карточка рекомендованного видео"]) > div[id][class], 
-    div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id][class], 
+    div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
+    div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
+    div[class*="article__"] > .undefined ~ div[class*="__mid"] > div[id][class], 
     div[class*="bannerMain"], div[class*="video-viewer-sidebar__ad"], 
-    div[class*="videoCardAd"], 
-    div[class*="widget__hasBanner"] div[class*="underWidget"], 
+    div[class*="videoCardAd"], div[class*="widget__hasBanner"] > div ~ div, 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
-    div[class^="video-showcase-feed"] div[class^="grid__row"] > div[class*="heme"], 
     div[id][class$="__ad"], 
-    div[id][class^="feed"] article[class*="_with-boder "] {
+    div[id][class^="feed"] article[class*="_with-border "] {
         display: none !important
     }
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] {
