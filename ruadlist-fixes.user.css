@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231130.1737
+@version        0.20231201.1656
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -660,6 +660,16 @@
     }
     .wrap > .popular {
         visibility: visible !important
+    }
+}
+
+@-moz-document
+  domain("anilib.one"),
+  domain("anilib.top"),
+  domain("anilibria.iss.one"),
+  domain("anilibria.tv") {
+    .new-header {
+        display: none !important
     }
 }
 
