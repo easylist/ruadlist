@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231201.2210
+@version        0.20231202.2301
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -451,6 +451,7 @@
   domain("rest"),
   domain("run"),
   domain("sh"),
+  domain("so"),
   domain("today"),
   domain("tv"),
   domain("vip"),
@@ -664,10 +665,10 @@
 }
 
 @-moz-document
+  domain("anilib.moe"),
   domain("anilib.one"),
   domain("anilib.top"),
   domain("anilibria.iss.one"),
-  domain("anilib.moe"),
   domain("anilibria.tv") {
     .new-header {
         display: none !important
@@ -2583,6 +2584,7 @@
 
 @-moz-document
   domain("hi-news.ru"),
+  domain("itechua.com"),
   domain("kino-teatr.ua") {
     body {
         background: none !important
