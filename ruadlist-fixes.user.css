@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231203.1836
+@version        0.20231203.2153
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -609,9 +609,9 @@
   domain("ampercar.com"),
   domain("hi-news.ru"),
   domain("itechua.com"),
-  domain("uamotors.com.ua"),
   domain("kino-teatr.ua"),
-  domain("mmr.net.ua") {
+  domain("mmr.net.ua"),
+  domain("uamotors.com.ua") {
     body {
         background: none !important
     }
@@ -976,7 +976,7 @@
 @-moz-document
   domain("autorambler.ru"),
   domain("rambler.ru") {
-    #rootWrapper article > nav + div > div:last-child .undefined {
+    #rootWrapper article > div > div:first-child + div + div div {
         background-color: transparent !important
     }
     #bigColumn script + div[class] > div[style^="height"] > div > div[id^="cluster-"] ~ div:empty, 
