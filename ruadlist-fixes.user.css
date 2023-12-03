@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231203.1750
+@version        0.20231203.1836
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -602,6 +602,18 @@
     }
     .film-desc {
         min-height: unset !important
+    }
+}
+
+@-moz-document
+  domain("ampercar.com"),
+  domain("hi-news.ru"),
+  domain("itechua.com"),
+  domain("uamotors.com.ua"),
+  domain("kino-teatr.ua"),
+  domain("mmr.net.ua") {
+    body {
+        background: none !important
     }
 }
 
@@ -2579,15 +2591,6 @@
     }
     .page-branded {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("hi-news.ru"),
-  domain("itechua.com"),
-  domain("kino-teatr.ua") {
-    body {
-        background: none !important
     }
 }
 
