@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231203.1525
+@version        0.20231203.1750
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3098,7 +3098,7 @@
   domain("kp.kz"),
   domain("kp.md"),
   domain("ru") {
-    .l-wrapper > div[style^="position: absolute;"][style*="width: 30px;"][style*="height: 30px;"][style*="bottom: 13px;"][style*="left: 10px;"] {
+    .buttonContainer[data-name="play"][style*="left: 10px;"] {
         opacity: unset !important
     }
 }
