@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231204.1456
+@version        0.20231204.2057
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -492,6 +492,17 @@
 @-moz-document domain("agroreview.com") {
     .main {
         cursor: auto !important
+    }
+}
+
+@-moz-document
+  domain("aida64.com.ua"),
+  domain("aida64russia.com") {
+    body.q-body--prevent-scroll > .q-dialog--modal {
+        display: none !important
+    }
+    body.q-body--prevent-scroll {
+        position: unset !important
     }
 }
 
