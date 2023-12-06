@@ -1177,7 +1177,7 @@ autorambler.*,rambler.*,~www.rambler.*##.pub_300x250.text-ad-links.adbanner.ad.t
 auto.ru#?#div:matches-css-before(content: /Реклама/)
 auto.ru#?#div:matches-css-before(content: /Реклама/) ~ div
 inoreader.com##div[id^="leaderboard_ad"] > *
-dzen.*,frontend.vh.yandex.ru,widgets.kinopoisk.ru,yastatic.net#?#+js(set-constant, Object.prototype.hasPreroll, null)
+dzen.*,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,yastatic.net#?#+js(set-constant, Object.prototype.hasPreroll, null)
 radioprofusion.com##footer > .counter
 horoscopes.rambler.*#?#+js(set-constant, Object.prototype.needShowAlicePopup, null)
 otzovik.com##img[alt="liru"]
@@ -1239,6 +1239,7 @@ newssearch.yandex.*##.news-advert__column
 tv.yandex.*##.recommended-ott
 ya.*,yandex.*##.RsyaOrganic
 ya.*,yandex.*##.SerpListFeature > .SearchBlock ~ :not(.SearchBlock)
+ya.*,yandex.*##.VideoViewer div[class*="_placement_"]
 ya.*,yandex.*#?#+js(set-constant, Object.prototype.initDeps, undefined)
 ya.*,yandex.*#?#.serp-list > .serp-item:-abp-has(> .bno .serp-adv__counter)
 ya.*,yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-event-required])
