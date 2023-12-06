@@ -27,11 +27,11 @@
 ||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 ||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/ajax/?*&vn_buff=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*vn_buff=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: [0-9].lh/)
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http:$/))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
@@ -43,7 +43,7 @@ www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc./)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: [0-9].lh/)
 pikabu.ru##div[class*="page-story__"] div[style=""]
 sdamgia.ru##div[class^="google_ad_left"]
 pikabu.ru##div[class^="sidebar-block "] ~ .sidebar-block_border ~ .sidebar-block_border ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
