@@ -1125,7 +1125,6 @@ fastpic.ru###picContainer > img
 autorambler.ru,rambler.ru###rootWrapper > [style="height:1px"] + div > div:first-child + div[style*="position:"]:empty
 autorambler.ru,rambler.ru###rootWrapper div[style^="--rc-loader-strokeDashoffset"]
 happy-hack.net#?##side_right > .block_r:-abp-has(> div [href*="liveinternet.ru/"])
-online-fix.me#@#*
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib#?#+js(abort-on-stack-trace, document.querySelectorAll, inlineScript)
 otvet.mail.ru#?#+js(addEventListener-defuser, click, externalLink)
 auto.ru#?#+js(cookie-remover, /bltsr|crookie/)
@@ -1185,6 +1184,7 @@ lostfilm.tv,lostfilm.tw##img[width="1"][height="1"]
 lena-miro.ru,levik.blog,livejournal.*,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru#?#+js(set-constant, Object.prototype.Begun, undefined)
 lena-miro.ru,levik.blog,livejournal.*,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru#?#+js(set-constant, Object.prototype.antiadblock, false)
 nova.rambler.*#?#+js(abort-on-property-read, Object.prototype.AdvManager)
+online-fix.*#@#a[href*=":2053"]:remove-class(btn)
 only-paper.*#@#.adbanner
 rambler.*##[data-blocks="rec_block"]
 rp5.*#?#+js(setTimeout-defuser, xvb)

@@ -234,7 +234,6 @@ fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 aniu.ru,liveball.uno##+js(no-setInterval-if, debugger)
 anime-chan.me##+js(no-setInterval-if, move_string)
 volyninfo.com##+js(no-setInterval-if, replaceWith)
-online-fix.me##+js(no-setTimeout-if, #dle-content)
 otzovik.com##+js(no-setTimeout-if, , 250)
 sibnet.ru##+js(no-setTimeout-if, Adblock)
 life.ru##+js(no-setTimeout-if, SHOW_PUSH_MODAL)
@@ -375,6 +374,7 @@ inoreader.com##.adsbygoogle:style(display: block !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:remove-attr(style)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
+online-fix.me##.content > .errors
 smotrim.ru##.dialog-wrapper
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
@@ -416,6 +416,7 @@ sports.ru##[class*="_label "]
 www.sports.ru##[data-noinit]
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]
+online-fix.me##a[href*=":2053"]:remove-class(btn)
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.to##body > div[id^="r"] > div[id^="r"][href]
