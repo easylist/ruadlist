@@ -86,6 +86,8 @@
 /^https?://[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$third-party,script
 /^https?://[^/]+/[a-z0-9]{15,}(\?hope=.*)?$/$script,domain=~coco.fr|~greenmangaming.com|~ign.com|~justjared.com|~live-tennis.eu|~myorderbox.com|~namemc.com|~novinky.cz|~o2.pl|~onet.pl|~realtor.ca|~regway.com|~roblox.com|~sap.com|~spongemc.org|~spongepowered.org|~studio-svet.ru|~stumbleupon.com|~trueachievements.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~wetteronline.de|~wp.pl
 /^https?://[a-z0-9]+\.info/+[-a-z0-9_?&=]{9,}/$third-party,script,domain=~dusk.com.au|~profi.ru|~reckon.com
+/a/ipn/js/*$third-party,script
+/a/pop/js/*$third-party,script
 /abnl/?ucozads^
 /ad/base.js?id=$third-party,script
 /ad_click/*$object
