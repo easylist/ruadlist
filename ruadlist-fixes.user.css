@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231204.2057
+@version        0.20231212.1618
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -492,17 +492,6 @@
 @-moz-document domain("agroreview.com") {
     .main {
         cursor: auto !important
-    }
-}
-
-@-moz-document
-  domain("aida64.com.ua"),
-  domain("aida64russia.com") {
-    body.q-body--prevent-scroll > .q-dialog--modal {
-        display: none !important
-    }
-    body.q-body--prevent-scroll {
-        position: unset !important
     }
 }
 
@@ -1734,7 +1723,7 @@
 @-moz-document domain("dzen.ru") {
     #teaser, #ya-dist, .adv-ecom, 
     .viewer-layout__content div[class*="content__player"] ~ div[class*="heme"], 
-    [class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label]), 
+    [class*="loors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label]), 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     aside[id^="article_"][class*="righ"] > div[class], 
