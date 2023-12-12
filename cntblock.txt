@@ -1216,7 +1216,7 @@ dzen.*##.feed__item > article[class^="card-wrapper"][class*="  "] > div[class*="
 dzen.*##.panel-loadable-view__feed > div[class*="-video-"] ~ div:not([class*="-video-"]):not(:last-child)
 dzen.*##.zen-page .content > div[class*="__container"] > div:not(:last-child) > div[id]:first-child
 dzen.*##.zen-page .content div[class*="__bannerMain"]
-dzen.*##[aria-label="Лента Дзена"] .card-wrapper:has(> div:matches-css(display: none))
+dzen.*##[aria-label="Лента Дзена"] article:has(> div:matches-css(display: none))
 dzen.*##div[aria-label*="екл"][aria-label*="мн"]
 dzen.*##div[class*="-placeholder__root"]
 dzen.*##div[class*="-sidebar__ad"]
