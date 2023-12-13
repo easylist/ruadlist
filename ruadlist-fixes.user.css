@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231212.2346
+@version        0.20231213.1329
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1735,6 +1735,7 @@
     div[class*="videoCardAd"], div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
+    div[class^="feed__ro"] article > div:first-child + div + div, 
     div[id][class$="__ad"], 
     div[id][class^="feed"] article[class*="_with-border "] {
         display: none !important
