@@ -599,11 +599,13 @@ www.ukr.net##div[class*=" "]:first-child + div[class*=" "]:last-child > div[clas
 www.ukr.net##.lazy-load-banner
 !#endif
 ! mail.ukr.net
+!#if !env_mobile
+mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child:style(height: unset !important)
+!#endif
 mail.ukr.net###page:style(padding-top: 0 !important)
 mail.ukr.net##.sidebar:style(top: 0 !important)
 mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:not(:only-child)
 mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:not(:only-child) ~ div[class]:not([id])
-mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child:style(height: unset !important)
 ||mail.ukr.net^$csp=connect-src 'self' *.ukr.net *.fwdcdn.com
 !
 ! Правила для компенсации отсутствия Scriptlet Doctor
