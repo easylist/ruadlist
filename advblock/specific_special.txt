@@ -31,13 +31,14 @@
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|lh|mm|pt)/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: 200px|min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|lh|mm|pt)/)
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
 pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|[a-z].{1,3}$|\s$|:$|:.{1,20}$/))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:empty)
-pikabu.ru##.stories-feed__container > .story[style]
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: calc(299px)))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru##[data-block-name]
