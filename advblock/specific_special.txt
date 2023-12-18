@@ -51,7 +51,7 @@ www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: [0-9].lh|height: 250px/)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|lh)|height: 250px/)
 pikabu.ru##div[class*="page-story__"] div[style=""]
 pikabu.ru##div[class*="sidebar-block_border"][style*="border"]
 sdamgia.ru##div[class^="google_ad_left"]
