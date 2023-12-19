@@ -5553,6 +5553,7 @@ gorod.cn.ua##[src*="gorod.cn.ua/image/upload/"]
 shans.com.ua##[src*="images/banners"]:not([src="images/banners/lin.gif"])
 7themes.su##[src*="promo_res"]
 sibnet.ru##[src*="sibnet.ru/iframe-wink"]
+forum.zoneofgames.ru,shazoo.ru##[src*="trk.mail.ru/"]
 clubsandero.ru##[src="//an.yandex.ru/system/context.js"] ~ iframe
 rutor.org.ru##[src="/download32.png"]
 linux.org.ru##[src^="/adv/"]
@@ -6463,14 +6464,13 @@ repetit-center.ru##aside > a[href][onclick="return !window.open(this.href)"]
 fontanka.ru#?#aside > div:-abp-has(> [id^="adv_"])
 point.md#?#aside > div:-abp-has(> a[href*="utm_campai"])
 fontanka.ru#?#aside > div:-abp-has(> div > [id^="adv_"])
-shazoo.ru#?#aside > div:-abp-has(> iframe[src*="://goodgame.ru/html/embed-player/"])
 bitcryptonews.ru#?#aside > div:-abp-has(script)
 www.fontanka.ru##aside > div:not([id]):not([class])
 point.md#?#aside > div[class]:-abp-has(> div > [id*="adsense"])
 audit-it.ru##aside > div[class][style^="margin-bottom"]
 hibiny.ru##aside > div[class^="margintop"]
 finbalance.com.ua##aside > div[style] > a[href^="http"]:not([href*="finbalance.com.ua"])
-shazoo.ru##aside > iframe[src*="://vkplay.live/"] + p[style]
+shazoo.ru##aside > iframe[src] + p[style]
 bitcryptonews.ru##aside > noindex
 jooble.org##aside > section[class^="ad"]
 stankiexpert.ru##aside a[id][href][target="_blank"]
@@ -7744,7 +7744,6 @@ fapl.ru##iframe[src*="/upload/fapl_"]
 gazeta.uz##iframe[src*="/www/delivery/"]
 s-platoon.ru##iframe[src*="://s-platoon.ru/forfon/"]
 ekovolga.com,imenie-home.ru,news-tape.ru,vamrecipes.ru##iframe[src*="://vamproducts.ru/"]
-shazoo.ru##iframe[src*="://vkplay.live/"]
 yk.kz##iframe[src*="://yk.kz/"][src$="/"]
 protdt.ru##iframe[src*="ADVERT"]
 finversia.ru,lr-club.com,mobile-review.com,pogoda.ru,severinform.ru,thg.ru##iframe[src*="ad.adriver.ru"]
@@ -7986,7 +7985,6 @@ sibmama.info,sibmama.ru##object[width="150"][height="100"]
 guzei.com##object[width="200"][height="100"]
 y-games.ru##p > .ContentTitle[style="height: 20px;"]
 y-games.ru##p > .ContentTitle[style="height: 20px;"] + .ContentText
-forum.zoneofgames.ru##p > [src*="trk.mail.ru/"]
 ppl.nnov.ru##p > a[href][target="_blank"]:not([href*="nnov.ru"]) > img[src*="/bannery/"]
 skmash.ru##p > script[src*="wmrfast.com"] ~ *
 benzin-price.ru#?#p > strong:-abp-contains(реклама)
