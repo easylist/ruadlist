@@ -1371,6 +1371,8 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 4pda.*##.menu-main-mobile > [style="display:none;"]
 ! редирект
 4pda.*##+js(abort-on-property-read, document.referrer)
+! стили в брендированных материалах
+||4pda.*/s/*.css?_=1666636587$empty,stylesheet
 !
 ! Экспериментальные правила для маркеров
 $document,removeparam=clid,domain=dzen.ru|ya.ru|yandex.*
