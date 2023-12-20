@@ -1322,7 +1322,8 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 ! верхняя плашка в мобильном макете 534×854
 4pda.*##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id][style^="min-height:"][style$="px;"]
 ! рекламный фон
-4pda.*##html[style] > body :not(div) ~ :not(div)[class][id][style]:style(background-image: none !important)
+4pda.*##html[style] > body :not(div) ~ :not(div)[class][id][style]:style(background: none !important)
+4pda.*##html[style] > body:style(background-color :#E6E7E9 !important)
 ! кликабельный элемент рекламного фона
 4pda.*##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article:not(.post) + article.post
 ! эстетический отступ сверху
@@ -1371,8 +1372,6 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 4pda.*##.menu-main-mobile > [style="display:none;"]
 ! редирект
 4pda.*##+js(abort-on-property-read, document.referrer)
-! стили в брендированных материалах
-||4pda.*/s/*.css?_=1666636587$empty,stylesheet
 !
 ! Экспериментальные правила для маркеров
 $document,removeparam=clid,domain=dzen.ru|ya.ru|yandex.*
