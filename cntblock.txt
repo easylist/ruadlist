@@ -1326,6 +1326,7 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 ! рекламный фон
 4pda.*##.icon-up-small:style(color: inherit !important)
 4pda.*##html[style] > body :not(div) div[class][id] ~ div[class][id]:not(:empty):style(background: none !important)
+4pda.*##html[style] > body :not(div)[class][id] ~ section[class][id]:not(:empty):style(background: none !important)
 4pda.*##html[style] > body:style(background-color :#E6E7E9 !important)
 ! кликабельный элемент рекламного фона
 4pda.*##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article:not(.post) + article.post
