@@ -502,7 +502,8 @@ e.mail.ru,octavius.mail.ru##+js(href-sanitizer, [data-cke-saved-href^="https://c
 light.mail.ru##+js(href-sanitizer, [href^="https://checklink.mail.ru/proxy?"], ?url)
 light.mail.ru##+js(href-sanitizer, [href^="https://click.mail.ru/redir?u="], ?u)
 ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
-~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(remove-node-text, script, adblock_detected)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-fetch-if, /ad.mail.ru/adp/.*notgb|\/res\//)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-xhr-if, /ad.mail.ru/adp/.*notgb|\/res\//)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.ENABLE_SMOKESCREEN, undefined)
 otvet.mail.ru##+js(set-constant, Object.prototype._Mimic, undefined)
@@ -521,6 +522,7 @@ news.mail.ru,pogoda.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.use
 ~dom.mail.ru,~lady.mail.ru,mail.ru##.article__item_source_viqeo:has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
 touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]):not([id]):not([class])
 ok.ru##[data-module*="banner"]
+mail.ru##[slot="main-column"] > div:matches-css(height: 90px)
 ~e.mail.ru,mail.ru##body > .grid .user__dropdown
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
 ok.ru##div[class*="__banner-feed"]
@@ -629,7 +631,6 @@ root-nation.com##^.td-a-rec
 root-nation.com##^body > a
 inforesist.org##^script:has-text(/gtag\('event'/)
 allboxing.ru##^script:has-text(/this\[atob\(/)
-~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##^script:has-text(adblock_detected)
 pikabu.ru##^script:has-text(addPlaceholder)
 otzovik.com##^script:has-text(an.yan)
 hvylya.net,i.ua,ivona.ua,kriminal.tv,meteofor.com.ua,mport.ua,nv.ua,zv.zp.ua##^script:has-text(attachShadow)
