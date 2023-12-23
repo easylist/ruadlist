@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231219.2352
+@version        0.20231223.1527
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3385,7 +3385,6 @@
     .tabs-content .news-item_regular::after, 
     .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
-    [slot="main-column"] > div:first-child + div + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"]), 
     body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .rectangle-banner, 
@@ -5249,12 +5248,6 @@
     }
 }
 
-@-moz-document domain("vo-dela.su") {
-    #sidebar_column .scrolled {
-        top: auto !important
-    }
-}
-
 @-moz-document domain("volnorez.com.ua") {
     .block-type-widget-area {
         min-height: 0 !important;
@@ -5280,6 +5273,16 @@
 @-moz-document domain("vrtp.ru") {
     td[width="100%"][valign="top"][class^="post"] > .postcolor > img {
         max-width: 100% !important
+    }
+}
+
+@-moz-document
+  domain("vse-pro-sport.com.ua"),
+  domain("vseprosport.by"),
+  domain("vseprosport.kz"),
+  domain("vseprosport.ru") {
+    .full-banner-page {
+        padding-top: 0 !important
     }
 }
 
