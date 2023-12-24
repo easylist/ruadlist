@@ -1165,7 +1165,6 @@ freehd.com.ua,hdreactor.club,hdreactor.su#?#.sidebar > .menu-wrap > .menu-head:-
 pb.wtf,piratbit.org,piratbit.pw,piratbit.top,vidak.icu#?#.table > tbody[id^="post_"]:-abp-has(a[target="_blank"] > strong)
 /manifest.json$domain=eapteka.ru
 @@/adsense.png|$image,domain=freeopenvpn.org
-@@||forum.ruboard.$generichide
 @@||inoreader.com^$generichide
 @@||only-paper.ru/*/$script,domain=only-paper.ru
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
@@ -1550,6 +1549,7 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||mail.ru^*exp_id=$document,removeparam=|,domain=mail.ru
 ||market.yandex.$removeparam=mclid
 ||my.mail.ru/apps$document,removeparam=ref,domain=my.mail.ru
+||ruboard.website^*?s$document,removeparam=|
 ||sportmail.ru^*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
 ||vk.com/widget_comments.php$subdocument,removeparam=referrer
 ||www.google.*/search?$removeparam=aqs
