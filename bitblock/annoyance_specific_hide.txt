@@ -2167,11 +2167,11 @@ bbc.com#?#ul[role="list"] > li:-abp-has(> [data-testid^="frosted-promo-"] > div 
 !
 ! 4pda.to (ранее 4pda.ru)
 ! верхняя плашка
-4pda.to##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id]:not([style]) > script:first-child + [class] a[target="_blank"] > img
+4pda.to##html[style] :not(div):not([id]) > :not(div)[id][class] > div[id][class]:not(:empty)
 ! верхняя плашка в мобильном макете 534×854
 4pda.to##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id][style^="min-height:"][style$="px;"]
 ! кликабельный элемент рекламного фона
-4pda.to##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article:not(.post) + article.post
+4pda.to##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article + article.post
 ! пустые и рекламные блоки в правой колонке
 4pda.to##html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style*="display: block;"]
 4pda.to#?#html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style]:-abp-has(a[href][target="_blank"] > img)
@@ -2214,15 +2214,6 @@ bbc.com#?#ul[role="list"] > li:-abp-has(> [data-testid^="frosted-promo-"] > div 
 4pda.to##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [id][href]
 ! реклама в QMS и мобильной версии сайта
 4pda.to##.menu-main-mobile > [style="display:none;"]
-! временные правила
-! фон и кликабельность
-4pda.*##[id][class]:has(> script:has-text(d.querySelector)):style(background: none! important)
-4pda.*##a[target="_blank"]:matches-css(position: absolute)
-4pda.*##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article + article.post
-! верхняя плашка
-4pda.*##[class]:has(> a[target="_blank"]:matches-css(height: 90px))
-4pda.*##[class]:has(> a[target="_blank"]:matches-css(height: 90px)):remove()
-4pda.*##div[id][class]:has(> script:has-text(document.querySelector))
 !
 ! Kinopoisk
 www.kinopoisk.ru###editorial-format-block + div[style^="min-width:"][style*="1px"]
