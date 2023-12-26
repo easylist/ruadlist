@@ -1318,13 +1318,13 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 ! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)
 ! верхняя плашка
-4pda.*##html[style] :not(div):not([id]) > :not(div)[id][class] > div[id][class]:not(:empty)
+4pda.*##html[style]:not([style=""]) :not(div):not([id]) > :not(div)[id][class] > div[id][class]:not(:empty)
 ! верхняя плашка в мобильном макете 534×854
 4pda.*##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id][style^="min-height:"][style$="px;"]
 ! рекламный фон
 4pda.*##.icon-up-small:style(color: inherit !important)
-4pda.*##html[style] > body:style(background-color :#E6E7E9 !important)
 4pda.*##html[style] [class]:not(div):not([id]) > :not(div)[id][class] > div[id][class] ~ :not(div)[id][class] ~ :not(div)[id][class]:not(:empty):style(background: none !important)
+4pda.*##html[style]:not([style=""]) > body:style(background-color :#E6E7E9 !important)
 ! кликабельный элемент рекламного фона
 4pda.*##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article + article.post
 ! эстетический отступ сверху
