@@ -29,12 +29,12 @@
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?*_buf$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*_bf$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*x*key=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pc|pt|Q)/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|em|in|lh|mm|pc|pt|Q)/)
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
 pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
@@ -43,6 +43,7 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:firs
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|[a-z].{1,3}$|\s$|:$|:.{1,20}$/))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:empty)
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 29.px/))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: calc.29.px/))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: 300px))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: calc(300px)))
