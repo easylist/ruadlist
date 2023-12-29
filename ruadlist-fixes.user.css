@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231228.1337
+@version        0.20231229.1247
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5622,12 +5622,12 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.uz") {
-    .DirectInline, .MediaViewer div[class*="_filled"], 
-    .SerpPage div[class*="_filled"], 
-    .serp.main__carousel:not([data-bem*="collectionId"]), 
+    .DirectInline, .serp.main__carousel:not([data-bem*="collectionId"]), 
     [data-vnl*="rsya_guarantee"], div[class*="Images"] .SimpleSkeleton, 
     div[class*="Images"] div[class*="-Card_bottomAdv"], 
-    div[class="serp-item RsyaGuarantee"], div[id*="Images"] .SimpleSkeleton {
+    div[class*="Images"] div[class*="_filled"][style^="max-width:"], 
+    div[class="serp-item RsyaGuarantee"], div[id*="Images"] .SimpleSkeleton, 
+    div[id*="Images"] div[class*="_filled"][style^="max-width:"] {
         display: none !important
     }
     .b-page.overlay[data-bem*="serp-metrika"] {
