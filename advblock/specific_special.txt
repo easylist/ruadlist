@@ -834,7 +834,6 @@ championat.com##.banner-parallax
 gazeta.ru##.banners
 rambler.ru##.comments__partners
 www.rambler.ru##.commercial-branding > div:first-child > script + div > div + div
-autorambler.ru#?#.commercial-branding div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
 vp.rambler.ru##.eagleplayer-advertisement-remain-time
 vp.rambler.ru##.eplayer-time-to-ad
 rambler.ru##.finance__banner
@@ -927,8 +926,8 @@ lenta.ru##iframe[src*="icdn.lenta.ru"][src*="banner"]
 ||trafffgen.rambler.ru^
 ||winline.rambler.ru/
 ! Непонятные пустые места, новый и старый дизайн
+autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
 autorambler.ru,rambler.ru#?#.commercial-branding aside:-abp-has(div[id^="adfox-"])
-rambler.ru#?#.commercial-branding div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
 rambler.ru#?#article ~ article ~ div[class]:-abp-has(div > div[class][style="display: none !important;"])
 rambler.ru#?#article ~ article ~ div[class]:-abp-has(div > div[class^="banner--native-partner--"])
 !
