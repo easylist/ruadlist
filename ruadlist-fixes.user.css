@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20231229.1247
+@version        0.20231229.2051
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3289,16 +3289,8 @@
     }
 }
 
-@-moz-document domain("lostfilm.info") {
-    #neheraplper_9000 > a[href] > span {
-        display: none !important
-    }
-    .footer-logo, img[src="/vision/footer-logo.png"] {
-        filter: invert(0.8) !important
-    }
-}
-
 @-moz-document
+  domain("lostfilm.download"),
   domain("lostfilm.pro"),
   domain("lostfilm.today"),
   domain("lostfilm.tv"),
@@ -3334,6 +3326,15 @@
         margin-top: 155px !important;
         margin-left: 20px !important;
         width: calc(100% - 40%);
+    }
+}
+
+@-moz-document domain("lostfilm.info") {
+    #neheraplper_9000 > a[href] > span {
+        display: none !important
+    }
+    .footer-logo, img[src="/vision/footer-logo.png"] {
+        filter: invert(0.8) !important
     }
 }
 
@@ -4294,6 +4295,16 @@
   domain("rasp.yandex.uz") {
     .StationPage__centralArea {
         margin-top: 20px !important
+    }
+}
+
+@-moz-document domain("rayon.in.ua") {
+    body.lock #subscribes {
+        display: none !important
+    }
+    body.lock {
+        overflow: auto !important;
+        padding-right: 0 !important
     }
 }
 
