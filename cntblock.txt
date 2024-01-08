@@ -1246,10 +1246,9 @@ ya.*,yandex.*##.RsyaOrganic
 ya.*,yandex.*##.SerpListFeature > .SearchBlock ~ :not(.SearchBlock)
 ya.*,yandex.*##.VideoViewer div[class*="_placement_"]
 ya.*,yandex.*#?#+js(set-constant, Object.prototype.initDeps, undefined)
-ya.*,yandex.*#?#.serp-list > .serp-item:-abp-has(> .bno .serp-adv__counter)
-ya.*,yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-event-required])
-ya.*,yandex.*#?#.serp-list > .serp-item:-abp-has(> div > div > [data-vnl*="advertiser"])
-ya.*,~yandex.net,yandex.*#?#+js(remove-attr, data-counter, .serp-list a)
+ya.*,yandex.*#?#[class*="_left_yes"] > .serp-item:-abp-has(> div > div > [data-event-required])
+ya.*,yandex.*#?#[class*="_left_yes"] > .serp-item:-abp-has(> div [data-vnl*="advertiser"])
+ya.*,~yandex.net,yandex.*#?#+js(remove-attr, data-counter, #search-result > .serp-item a)
 yandex.*###bk-container
 yandex.*##.card-rtb-one-column-stub
 yandex.*##.dist-popup
