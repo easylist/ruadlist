@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240103.2017
+@version        0.20240109.1924
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2751,7 +2751,7 @@
 @-moz-document domain("investing.com") {
     #PromoteSignUpPopUp, #__next > .fixed, #abPopup, .ad-blocker-popup, 
     .js-general-overlay, .wrapper > style + div[class]:not([id]), 
-    div[data-test="ad-slot-visible"] {
+    div[class^="desktop"] > .hidden {
         display: none !important
     }
     body {
@@ -3291,9 +3291,9 @@
 
 @-moz-document
   domain("lostfilm.download"),
-  domain("lostfilm.space"),
   domain("lostfilm.life"),
   domain("lostfilm.pro"),
+  domain("lostfilm.space"),
   domain("lostfilm.today"),
   domain("lostfilm.tv"),
   domain("lostfilm.tw"),
