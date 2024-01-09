@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240109.1924
+@version        0.20240109.2157
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2749,9 +2749,9 @@
 }
 
 @-moz-document domain("investing.com") {
-    #PromoteSignUpPopUp, #__next > .fixed, #abPopup, .ad-blocker-popup, 
-    .js-general-overlay, .wrapper > style + div[class]:not([id]), 
-    div[class^="desktop"] > .hidden {
+    #PromoteSignUpPopUp, #__next > .fixed, 
+    #__next > style + div[class]:not([id]), #abPopup, .ad-blocker-popup, 
+    .js-general-overlay, div[class^="desktop"] > .hidden {
         display: none !important
     }
     body {
