@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240109.2157
+@version        0.20240116.2151
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1116,14 +1116,6 @@
     }
 }
 
-@-moz-document
-  domain("bombafilms.ru"),
-  domain("hlamer.ru") {
-    body {
-        background-color: #596c84 !important
-    }
-}
-
 @-moz-document domain("bombardir.ru") {
     .branding {
         margin-top: 0 !important
@@ -1139,6 +1131,14 @@
     }
     html > head ~ body {
         overflow-y: auto !important
+    }
+}
+
+@-moz-document
+  domain("bossfilm.ru"),
+  domain("hlamer.ru") {
+    body {
+        background-color: #596c84 !important
     }
 }
 
@@ -4651,10 +4651,8 @@
 }
 
 @-moz-document domain("softportal.com") {
-    .TblBorderCLR > tbody > tr > td[style="padding:15px 0;"][align="center"], 
-    .TblTopBanCLR td > a[href] > img, .btn-download > .submit-spinner, 
-    a[href^="prog"][target="_blank"], a[href^="prog"][target="_blank"] ~ *, 
-    td[style="width:342px; padding-right:14px;"][valign="top"] {
+    .btn-download > .submit-spinner, .cardPageDescMain > div[id][style], 
+    a[href^="prog"][target="_blank"], a[href^="prog"][target="_blank"] ~ * {
         display: none !important
     }
     .btn-download {
