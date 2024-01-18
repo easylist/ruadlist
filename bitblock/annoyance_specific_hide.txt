@@ -909,6 +909,8 @@ topvideo.tj##.google_play
 matchpremier.ru,matchtv.ru,sportbox.ru##.gpm-cookie-accepted
 site.ua##.grid > .news-hover ~ div:not(.news-hover)
 gamebomb.ru##.grid-100p-301-rc > .container[style^="background-color"]
+fontanka.ru#?#.gridFullLaptop:-abp-has(> div > [href="/format/fproject/"])
+fontanka.ru#?#.gridFullLaptop:-abp-has(> div > [href^="/pressrelease"])
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,www.e1.ru#?#.gridMinHeight:-abp-has(> div > div > section > div:empty)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,www.e1.ru#?#.gridMinHeight:-abp-has(> div > div div:empty + a)
 interfax.ru,sport-interfax.ru##.group-btns
@@ -1330,6 +1332,7 @@ prufy.ru##.recomend
 iz.ru##.recommendation-block > div > div
 iz.ru##.recommendation-block-header
 championat.com##.recommender-block
+www.fontanka.ru#?#.record > div[class]:-abp-has(> div > [href="/pressrelease/"])
 c-s.net.ua##.reg_mess_bg
 usba.com.ua##.region-footer > [id^="block-nasikontakti"] > .field > p ~ *
 rayon.in.ua##.region-header__form
@@ -1761,7 +1764,6 @@ anime-best.com,za4emeto.ru##[id^="oframevideoplayer"] > [style*="anirem.org/info
 anime-best.com,za4emeto.ru##[id^="oframevideoplayer"] > [style*="opacity: 0."]:not([style*="height: 48px;"])
 anime-best.com,za4emeto.ru##[id^="oframevideoplayer"] > [style*="top: 29px;"]
 hideogenius.com#?#[id^="oframevideoplayer"] > pjsdiv:-abp-has(> pjsdiv:-abp-contains(/понравился сайт/i))
-fontanka.ru#?#[itemprop="articleBody"] > div > div > section:-abp-has(> a ~ a ~ a)
 fraza.com#?#[itemprop="articleBody"] > div:-abp-has(a[href^="https://news.google.com/publications/"])
 vk-smi.ru##[itemprop="articleBody"] ~ .text-center
 itsider.com.ua,mmr.net.ua##[itemtype="https://schema.org/WPAdBlock"] > a[href][target="_blank"]
@@ -1857,7 +1859,7 @@ sports.ru#?#article.piwikTrackContent:-abp-has(a[href^="https://trbna.co/"])
 sports.ru#?#article.piwikTrackContent:-abp-has(span:-abp-contains(Спецпроект))
 livejournal.com##article[class*="entryunit--feedpromo"]
 livejournal.com##article[id^="b-friendstimes-item-ad-"]
-www.fontanka.ru##aside + div > section + aside > div[class]:nth-of-type(-n+2)
+www.fontanka.ru##aside + div > section + aside > div[class]:nth-of-type(-n+3)
 sportsdaily.ru##aside > .info ~ [class*="-mini"]
 100pdf.club##aside > .widget_search ~ .widget_text
 app2top.ru##aside > [class^="vacancies"]
@@ -1953,7 +1955,6 @@ gdekluet.ru##div[class*="ui-widget"]
 mashina.kg##div[class="download-app-header top-header"]
 bazar.kg,house.kg##div[class="footer-cont footer-top"]
 urologypro.ru##div[class="su-eb visible"]
-www.fontanka.ru#?#div[class]:-abp-has(> [href="/format/fproject/"] > h3)
 www.fontanka.ru#?#div[class]:-abp-has(> div > button + [href="/pressrelease/"])
 kp.kg,kp.kz,kp.md,kp.ru#?#div[class]:-abp-has(> div[class] > div[class] > input[type="email"])
 ctc.ru##div[class^="AcceptCookie_placeholder"]
@@ -2080,7 +2081,7 @@ nashaplaneta.net##footer > a ~ p
 banki.ru#?#footer > div[class]:-abp-has([href="/privacy/"])
 online.sberbank.ru#?#footer div + div:-abp-has([href*="/personal_policy"])
 ozon.ru#?#footer div:-abp-has(> img[src*="/qr-code_"])
-www.fontanka.ru#?#footer div:nth-child(2):-abp-has([href*="/app"])
+fontanka.ru#?#footer div:nth-child(2):-abp-has([href*="/app"])
 ngnovoros.ru##footer div[class][style="color:#fff"] + div[class][style="color:#fff"] > div[class]:not([style])
 agents.media##footer-columns
 1yar.tv##form[name="subscribe"]
