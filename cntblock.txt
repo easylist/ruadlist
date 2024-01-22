@@ -1442,6 +1442,10 @@ $removeparam=irgwc
 $removeparam=mailday,domain=mail.ru
 $removeparam=mt_click_id
 $removeparam=mt_link_id,domain=vkplay.ru
+$removeparam=mt_sub,domain=mail.ru|ok.ru|sportmail.ru
+$removeparam=mt_sub1,domain=mail.ru|ok.ru|sportmail.ru
+$removeparam=mt_sub2,domain=mail.ru|ok.ru|sportmail.ru
+$removeparam=mt_sub3,domain=mail.ru|ok.ru|sportmail.ru
 $removeparam=nr,domain=ya.ru
 $removeparam=partner,domain=steambuy.com
 $removeparam=pclid
@@ -1539,7 +1543,6 @@ block_click=$removeparam=block_click,domain=rambler.ru
 fbclid=$document,removeparam=fbclid
 from=*_portal&lang=$document,removeparam=|,domain=dzen.*|yandex.*
 mt_click$document,removeparam=|,domain=mail.ru|ok.ru
-mt_sub$document,removeparam=|,domain=mail.ru|ok.ru
 smotri_id=$document,removeparam=|smotri_id,domain=mail.ru
 utm_$document,removeparam=ig_rid,domain=instagram.com
 ||afisha.yandex.*/$removeparam=source
