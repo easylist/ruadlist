@@ -1193,9 +1193,9 @@ music.youtube.*##+js(no-fetch-if, /generate_204)
 nova.rambler.*#?#+js(abort-on-property-read, Object.prototype.AdvManager)
 online-fix.*#@#a[href*=":2053"]:remove-class(btn)
 only-paper.*#@#.adbanner
-rambler.*##[data-blocks="rec_block"]
+rambler.*##[data-blocks="rec_block"]:style(display: none !important)
 rp5.*#?#+js(setTimeout-defuser, xvb)
-top100.rambler.*##body > div:not([id])[style="position: absolute; z-index: 10000;"]
+top100.rambler.*##body > div:not([id])[style="position: absolute; z-index: 10000;"]:style(display: none !important)
 zannn.top#@?#:not(this-is-a-malicious-site)
 zannn.top#@?#this-is-a-malicious-site
 ||browserleaks.com/proxy$csp=script-src 'unsafe-inline'
@@ -1213,61 +1213,61 @@ zannn.top#@?#this-is-a-malicious-site
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@://yandex.*/news/$generichide
 @@://yandex.*/news|$generichide
-disk.yandex.*,mail.yandex.*##.Base-Onboarding
-docs.yandex.*##a[href^="https://360.yandex."][href$="/?from=documents-header-360"]
+disk.yandex.*,mail.yandex.*##.Base-Onboarding:style(display: none !important)
+docs.yandex.*##a[href^="https://360.yandex."][href$="/?from=documents-header-360"]:style(display: none !important)
 dzen.*##+js(set-constant, Object.prototype.useExperimentFlag, undefined)
-dzen.*##._is-header-after-player > div:not([id]):not([class])
-dzen.*##.climate-calendar-container__adv-wide
-dzen.*##.content__adv
-dzen.*##.feed__item > article[class^="card-wrapper"][class*="  "] > div[class*="_theme_"]:not([style])
-dzen.*##.panel-loadable-view__feed > div[class*="-video-"] ~ div:not([class*="-video-"]):not(:last-child)
-dzen.*##.zen-page .content > div[class*="__container"] > div:not(:last-child) > div[id]:first-child
-dzen.*##.zen-page .content div[class*="__bannerMain"]
+dzen.*##._is-header-after-player > div:not([id]):not([class]):style(display: none !important)
+dzen.*##.climate-calendar-container__adv-wide:style(display: none !important)
+dzen.*##.content__adv:style(display: none !important)
+dzen.*##.feed__item > article[class^="card-wrapper"][class*="  "] > div[class*="_theme_"]:not([style]):style(display: none !important)
+dzen.*##.panel-loadable-view__feed > div[class*="-video-"] ~ div:not([class*="-video-"]):not(:last-child):style(display: none !important)
+dzen.*##.zen-page .content > div[class*="__container"] > div:not(:last-child) > div[id]:first-child:style(display: none !important)
+dzen.*##.zen-page .content div[class*="__bannerMain"]:style(display: none !important)
 dzen.*##[aria-label="Лента Дзена"] article:has(> div:matches-css(display: none))
-dzen.*##div[aria-label*="екл"][aria-label*="мн"]
-dzen.*##div[class*="-placeholder__root"]
-dzen.*##div[class*="-sidebar__ad"]
-dzen.*##div[class*="_pos_index-"]
-dzen.*##div[class*="linkBro-"]
-dzen.*##div[class*="widgetContainer"] div[style^="padding-top:"][style*="position:"][style*="relative"]
-dzen.*#?#div[class*="__col"]:-abp-has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"])
+dzen.*##div[aria-label*="екл"][aria-label*="мн"]:style(display: none !important)
+dzen.*##div[class*="-placeholder__root"]:style(display: none !important)
+dzen.*##div[class*="-sidebar__ad"]:style(display: none !important)
+dzen.*##div[class*="_pos_index-"]:style(display: none !important)
+dzen.*##div[class*="linkBro-"]:style(display: none !important)
+dzen.*##div[class*="widgetContainer"] div[style^="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
+dzen.*#?#div[class*="__col"]:has(> div[class*="-feed__"][class*="_type_"] > div[class*="loader"]):style(display: none !important)
 dzen.*,ya.*,~yandex.net,yandex.*#?#+js(json-prune, direct rtb seatbid)
-dzen.*,yandex.*##.b-statcounter + div[class] > div[id][class]
-dzen.*,yandex.*##.mg-grid__col div[class*="_type_native"]
+dzen.*,yandex.*##.b-statcounter + div[class] > div[id][class]:style(display: none !important)
+dzen.*,yandex.*##.mg-grid__col div[class*="_type_native"]:style(display: none !important)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 frontend.vh.yandex.*#?#+js(set-constant, Object.prototype.initialAutoplay, false)
 mail.yandex.*##.mail-App-Footer-Item > [href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
 mail.yandex.*#?#+js(remove-attr, data-link-id, a, stay)
-mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*##.mail-DirectLineContainer
-mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*##.mail-Layout-Content > div:first-child + div div[style="height: 36px !important;"]
+mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*##.mail-DirectLineContainer:style(display: none !important)
+mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*##.mail-Layout-Content > div:first-child + div div[style="height: 36px !important;"]:style(display: none !important)
 mail.yandex.by,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz,mail.yandex.*#?#+js(set-constant, Daria.AdvPresenter._config, {})
 music.yandex.*#?#+js(set-constant, Object.prototype.showBranding, noopFunc)
-newssearch.yandex.*##.news-advert__column
-tv.yandex.*##.recommended-ott
-ya.*,yandex.*##.DirectInline
-ya.*,yandex.*##.RsyaOrganic
-ya.*,yandex.*##.SerpListFeature > .SearchBlock ~ :not(.SearchBlock)
-ya.*,yandex.*##.VideoViewer div[class*="_placement_"]
+newssearch.yandex.*##.news-advert__column:style(display: none !important)
+tv.yandex.*##.recommended-ott:style(display: none !important)
+ya.*,yandex.*##.DirectInline:style(display: none !important)
+ya.*,yandex.*##.RsyaOrganic:style(display: none !important)
+ya.*,yandex.*##.SerpListFeature > .SearchBlock ~ :not(.SearchBlock):style(display: none !important)
+ya.*,yandex.*##.VideoViewer div[class*="_placement_"]:style(display: none !important)
 ya.*,yandex.*#?#+js(set-constant, Object.prototype.initDeps, undefined)
-ya.*,yandex.*#?#[class*="_left_yes"] > .serp-item:-abp-has(> div > div > [data-event-required])
-ya.*,yandex.*#?#[class*="_left_yes"] > .serp-item:-abp-has(> div [data-vnl*="advertiser"])
+ya.*,yandex.*#?#[class*="_left_yes"] > .serp-item:has(> div > div > [data-event-required]):style(display: none !important)
+ya.*,yandex.*#?#[class*="_left_yes"] > .serp-item:has(> div [data-vnl*="advertiser"]):style(display: none !important)
 ya.*,~yandex.net,yandex.*#?#+js(remove-attr, data-counter, #search-result > .serp-item a)
-yandex.*###bk-container
-yandex.*##.card-rtb-one-column-stub
-yandex.*##.dist-popup
-yandex.*##.MediaViewer div[class$="-FooterContent"]
+yandex.*###bk-container:style(display: none !important)
+yandex.*##.card-rtb-one-column-stub:style(display: none !important)
+yandex.*##.dist-popup:style(display: none !important)
+yandex.*##.MediaViewer div[class$="-FooterContent"]:style(display: none !important)
 yandex.*##.PSHeaderLogo360 > a[href^="https://360.yandex."]:style(pointer-events: none !important)
-yandex.*##.PSHeaderLogo360-360
-yandex.*##.turbo-embed_market_widget
-yandex.*##[class*="segment__container"] > div > [class^="card "] ~ [class*="_pos_index"]
-yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]):not([class^="services"]):not([class*="search"]):not([class*="home"])
-yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) a[href^="https://yastatic.net/www/_/"]
-yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) a[href^="https://yastatic.net/www/_/"] ~ div
-yandex.*##div[class*="turbo-advert_type_"]
-yandex.*##div[class^="content "][data-bem] > .content__bottom ~ div[class*="card "]
-yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:first-child > div[class$="__content"] + div[class]
-yandex.com##.RelatedImagesDirect
-yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]
+yandex.*##.PSHeaderLogo360-360:style(display: none !important)
+yandex.*##.turbo-embed_market_widget:style(display: none !important)
+yandex.*##[class*="segment__container"] > div > [class^="card "] ~ [class*="_pos_index"]:style(display: none !important)
+yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]):not([class^="services"]):not([class*="search"]):not([class*="home"]):style(display: none !important)
+yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) a[href^="https://yastatic.net/www/_/"] ~ div:style(display: none !important)
+yandex.*##body[class*="b-page"] .widgets[role="main"] :not(div) :not(div) :not(div) > div[class]:not([class*="widget"]) > div[class]:not([class*="widget"]) a[href^="https://yastatic.net/www/_/"]:style(display: none !important)
+yandex.*##div[class*="turbo-advert_type_"]:style(display: none !important)
+yandex.*##div[class^="content "][data-bem] > .content__bottom ~ div[class*="card "]:style(display: none !important)
+yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:first-child > div[class$="__content"] + div[class]:style(display: none !important)
+yandex.com##.RelatedImagesDirect:style(display: none !important)
+yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: none !important)
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
 ||ya.ru/portal/proxy?blocks=feed_banner
@@ -1276,9 +1276,9 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
 ~mail.yandex.*,~vh.yandex.ru,~yandex.net,yandex.*#?#+js(no-setTimeout-if, Ya.Rum.getSetting, 15)
 ~vh.yandex.ru,~yandex.net,yandex.*#?#+js(abort-on-property-read, Ya.loaderVer)
-~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div
-~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro
-~yandex.net,mail.yandex.*,yandex.*##div[class^="DisableAdsButton"]
+~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div:style(display: none !important)
+~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro:style(display: none !important)
+~yandex.net,mail.yandex.*,yandex.*##div[class^="DisableAdsButton"]:style(display: none !important)
 ~yandex.net,yandex.*#?#+js(cookie-remover, tvoid)
 ~yandex.net,yandex.*#?#+js(set-constant, __AAB__, false)
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype._getAdConfig, noopFunc)
@@ -1287,18 +1287,18 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]
 ~yandex.net,yandex.*#?#+js(set-constant, Object.prototype.los, null)
 !
 ! мобильная версия
-yandex.*##.justifier__col > div[class*="_type_direct"]
-yandex.*##.tiled-images__items > div[class*="rim-direct-"]
-yandex.*##[data-bem*="search-select-promo"]
-yandex.*##div[class*=" AdvertEcom_"]
-yandex.*##div[class*="Advert_container__"]
-yandex.*##div[class^="Card_container__"][class*=" err_none "]
-yandex.*##div[class^="Card_container__"][class*="state_loaded Advert_fullScreenContainer"]
-yandex.*##div[class^="images-viewer-content"] > div[class*="behavioral-direct"]
-yandex.*##div[id*="page"] div[class*="_banner_"]
-yandex.*##div[id^="ADVERT_"]
-yandex.*#?#.touch-feed > div > .feed-item[id^="zen-row-"]:-abp-has([class^="zen-ui-channel-info"][class$="subtitle-text"]:-abp-contains(промо))
-~afisha.yandex.*,yandex.*##[data-bem*="type"][data-bem*="banner"]:not(body):not(form):not(.content)
+yandex.*##.justifier__col > div[class*="_type_direct"]:style(display: none !important)
+yandex.*##.tiled-images__items > div[class*="rim-direct-"]:style(display: none !important)
+yandex.*##[data-bem*="search-select-promo"]:style(display: none !important)
+yandex.*##div[class*=" AdvertEcom_"]:style(display: none !important)
+yandex.*##div[class*="Advert_container__"]:style(display: none !important)
+yandex.*##div[class^="Card_container__"][class*=" err_none "]:style(display: none !important)
+yandex.*##div[class^="Card_container__"][class*="state_loaded Advert_fullScreenContainer"]:style(display: none !important)
+yandex.*##div[class^="images-viewer-content"] > div[class*="behavioral-direct"]:style(display: none !important)
+yandex.*##div[id*="page"] div[class*="_banner_"]:style(display: none !important)
+yandex.*##div[id^="ADVERT_"]:style(display: none !important)
+yandex.*#?#.touch-feed > div > .feed-item[id^="zen-row-"]:has([class^="zen-ui-channel-info"][class$="subtitle-text"]:has-text(промо)):style(display: none !important)
+~afisha.yandex.*,yandex.*##[data-bem*="type"][data-bem*="banner"]:not(body):not(form):not(.content):style(display: none !important)
 !
 ! Альтернативное решение для старых браузеров
 @@||an.yandex.ru/jserr/1|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
@@ -1323,59 +1323,59 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 ! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)
 ! верхняя плашка
-4pda.*##html[style]:not([style=""]) :not(div):not([id]) > :not(div)[id][class] > div[id][class]:not(:empty)
+4pda.*##html[style]:not([style=""]) :not(div):not([id]) > :not(div)[id][class] > div[id][class]:not(:empty):style(display: none !important)
 ! верхняя плашка в мобильном макете 534×854
-4pda.*##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id][style^="min-height:"][style$="px;"]
+4pda.*##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id][style^="min-height:"][style$="px;"]:style(display: none !important)
 ! рекламный фон
 4pda.*##.icon-up-small:style(color: inherit !important)
 4pda.*##html[style] [class]:not(div):not([id]) > :not(div)[id][class] > div[id][class] ~ :not(div)[id][class] ~ :not(div)[id][class]:not(:empty):style(background: none !important)
 4pda.*##html[style]:not([style=""]) > body:style(background-color :#E6E7E9 !important)
 ! кликабельный элемент рекламного фона
-4pda.*##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article + article.post
+4pda.*##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article + article.post:style(display: none !important)
 ! эстетический отступ сверху
 4pda.*##html[style] > body div.holder-no-hidden:style(margin-bottom: 10px !important)
 ! пустые и рекламные блоки в правой колонке
-4pda.*##html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style*="display: block;"]
-4pda.*##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]
-4pda.*##html[style] [id] .slider-list[style] ~ div[class]:empty
-4pda.*##html[style] [id] .slider-list[style] ~ div[class]:not([id]) > [style=""]
-4pda.*#?#html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style]:-abp-has(a[href][target="_blank"] > img)
-4pda.*#?#html[style] [id] .slider-list[style] ~ div[class]:not([id]):-abp-has(> :only-child:not(div):not([id]):not([class]))
-4pda.*#?#html[style] [id] div[class]:-abp-has(> h2 ~ script:-abp-contains(/return/))
+4pda.*##html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style*="display: block;"]:style(display: none !important)
+4pda.*##html[style] > body:not([style=";background-color:#E6E7E9!important"]) [id][class] > .slider-list:nth-child(-n+5) + div[class]:style(display: none !important)
+4pda.*##html[style] [id] .slider-list[style] ~ div[class]:empty:style(display: none !important)
+4pda.*##html[style] [id] .slider-list[style] ~ div[class]:not([id]) > [style=""]:style(display: none !important)
+4pda.*#?#html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style]:has(a[href][target="_blank"] > img):style(display: none !important)
+4pda.*#?#html[style] [id] .slider-list[style] ~ div[class]:not([id]):has(> :only-child:not(div):not([id]):not([class])):style(display: none !important)
+4pda.*#?#html[style] [id] div[class]:-abp-has(> h2 ~ script:has-text(/return/)):style(display: none !important)
 ! пустые и рекламные блоки в материалах
-4pda.*##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(-n+3)
-4pda.*#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class] a[href][target="_blank"])
-4pda.*#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):-abp-has(> [class]:empty)
+4pda.*##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(-n+3):style(display: none !important)
+4pda.*#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):has(> [class] a[href][target="_blank"]):style(display: none !important)
+4pda.*#?#html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):has(> [class]:empty):style(display: none !important)
 ! различные рекламные ссылки, в основном в брендированных материалах
-4pda.*##.infinix-nav
-4pda.*##html[style] > body .menu-main > li.menu-main-item > a[href][style*="important"]
-4pda.*##html[style] > body .second-menu
-4pda.*##html[style] > body .slick-dotted
-4pda.*##html[style] > body a[href*="ali.pub"]
-4pda.*##html[style] > body a[href*="bit.do"]
-4pda.*##html[style] > body a[href*="bit.ly"]
-4pda.*##html[style] > body a[href*="clc.to"]
-4pda.*##html[style] > body a[href*="clck.ru"]
-4pda.*##html[style] > body a[href*="dada.link"]
-4pda.*##html[style] > body a[href*="goo.gl"]
-4pda.*##html[style] > body a[href*="is.gd"]
-4pda.*##html[style] > body div[class$="-brand-header"]
-4pda.*#?#.article > div[style^="background-color:"]:-abp-has(> span + a[id][href][target="_blank"])
-4pda.*#?#[itemprop="articleBody"] > div[style^="background-color:"]:-abp-has(> span + a[id][href][target="_blank"])
-4pda.*#?#a.rounded[href][target="_blank"]:-abp-contains(/^Узнать больше/)
-4pda.*#?#html[style] > body a.rounded[href][target="_blank"]:-abp-contains(/^Узнать /)
+4pda.*##.infinix-nav:style(display: none !important)
+4pda.*##html[style] > body .menu-main > li.menu-main-item > a[href][style*="important"]:style(display: none !important)
+4pda.*##html[style] > body .second-menu:style(display: none !important)
+4pda.*##html[style] > body .slick-dotted:style(display: none !important)
+4pda.*##html[style] > body a[href*="ali.pub"]:style(display: none !important)
+4pda.*##html[style] > body a[href*="bit.do"]:style(display: none !important)
+4pda.*##html[style] > body a[href*="bit.ly"]:style(display: none !important)
+4pda.*##html[style] > body a[href*="clc.to"]:style(display: none !important)
+4pda.*##html[style] > body a[href*="clck.ru"]:style(display: none !important)
+4pda.*##html[style] > body a[href*="dada.link"]:style(display: none !important)
+4pda.*##html[style] > body a[href*="goo.gl"]:style(display: none !important)
+4pda.*##html[style] > body a[href*="is.gd"]:style(display: none !important)
+4pda.*##html[style] > body div[class$="-brand-header"]:style(display: none !important)
+4pda.*#?#.article > div[style^="background-color:"]:has(> span + a[id][href][target="_blank"]):style(display: none !important)
+4pda.*#?#[itemprop="articleBody"] > div[style^="background-color:"]:has(> span + a[id][href][target="_blank"]):style(display: none !important)
+4pda.*#?#a.rounded[href][target="_blank"]:has-text(/^Узнать больше/):style(display: none !important)
+4pda.*#?#html[style] > body a.rounded[href][target="_blank"]:has-text(/^Узнать /):style(display: none !important)
 ! анонс в мобильно-планшетной версии макета
-4pda.*##html[style] > body > script[src*=".js?_="] ~ * > [class][style*="zoom:"]
-4pda.*##html[style] > body > script[src*=".js?_="] ~ [class][style*="zoom:"]
+4pda.*##html[style] > body > script[src*=".js?_="] ~ * > [class][style*="zoom:"]:style(display: none !important)
+4pda.*##html[style] > body > script[src*=".js?_="] ~ [class][style*="zoom:"]:style(display: none !important)
 ! анонс в шапке форума
-4pda.*###go_1 > :not(p):not(h4):not(.globalmesscontent)
+4pda.*###go_1 > :not(p):not(h4):not(.globalmesscontent):style(display: none !important)
 ! реклама в шапке форума
-4pda.*##html:not([style]) tbody > tr[valign="top"] > td[width*="20"] + td[class]
+4pda.*##html:not([style]) tbody > tr[valign="top"] > td[width*="20"] + td[class]:style(display: none !important)
 ! реклама при скачивании на форуме
 4pda.*###lbOverlay:style(background: none !important)
-4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [id][href]
+4pda.*##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [id][href]:style(display: none !important)
 ! реклама в QMS и мобильной версии сайта
-4pda.*##.menu-main-mobile > [style="display:none;"]
+4pda.*##.menu-main-mobile > [style="display:none;"]:style(display: none !important)
 ! редирект
 4pda.*##+js(abort-on-property-read, document.referrer)
 !
