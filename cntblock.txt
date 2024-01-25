@@ -1223,7 +1223,7 @@ dzen.*##.feed__item > article[class^="card-wrapper"][class*="  "] > div[class*="
 dzen.*##.panel-loadable-view__feed > div[class*="-video-"] ~ div:not([class*="-video-"]):not(:last-child):style(display: none !important)
 dzen.*##.zen-page .content > div[class*="__container"] > div:not(:last-child) > div[id]:first-child:style(display: none !important)
 dzen.*##.zen-page .content div[class*="__bannerMain"]:style(display: none !important)
-dzen.*##[aria-label="Лента Дзена"] article:has(> div:matches-css(display: none))
+dzen.*##[aria-label*="Лент"] article:has(> div:matches-css(display: none)):style(display: none !important)
 dzen.*##div[aria-label*="екл"][aria-label*="мн"]:style(display: none !important)
 dzen.*##div[class*="-placeholder__root"]:style(display: none !important)
 dzen.*##div[class*="-sidebar__ad"]:style(display: none !important)
