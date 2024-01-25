@@ -1190,9 +1190,11 @@ autorambler.ru,rambler.ru###bigColumn script + div[class] > div[style^="height"]
 autorambler.ru,rambler.ru###bigColumn script + div[class] > div[style^="height"] > div > div[id^="cluster-"] ~ div:empty
 autorambler.ru,rambler.ru###bigColumn script + div[class] > div[style^="height"] > div:style(position: initial !important; transform: none !important; width: inherit !important)
 autorambler.ru,rambler.ru###bigColumn script + div[class] > div[style^="height"]:style(width: inherit !important; height: inherit !important)
+autorambler.ru,rambler.ru###root div[style^="order:"][style*="-1"]:style(min-height: 0 !important)
 autorambler.ru,rambler.ru###rootWrapper > div > script ~ div > div:style(min-height: 0 !important)
 autorambler.ru,rambler.ru###rootWrapper article > div > div:first-child + div + div div:style(background-color: transparent !important)
 rambler.ru###rootWrapper div[style="min-height: 500px;"] ~ div div:style(background-color: transparent !important)
+autorambler.ru,rambler.ru###rootWrapper div[style^="min-height:"]:style(min-height: 0 !important)
 vp.rambler.ru##.eplayer-skin-buttons-center:style(visibility: visible !important)
 autorambler.ru,rambler.ru##[data-blocks="mini_video_player::close_button"]
 autorambler.ru,rambler.ru##[data-blocks="top_news_block"] > div:first-child + div > div div:style(min-height: 0 !important; border-bottom: unset !important)

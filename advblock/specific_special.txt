@@ -926,7 +926,7 @@ lenta.ru##iframe[src*="icdn.lenta.ru"][src*="banner"]
 ||trafffgen.rambler.ru^
 ||winline.rambler.ru/
 ! Непонятные пустые места, новый и старый дизайн
-autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
+autorambler.ru,rambler.ru#?##rootWrapper div[class]:-abp-has(> div[id^="adfox-"]:only-child)
 autorambler.ru,rambler.ru#?#.commercial-branding aside:-abp-has(div[id^="adfox-"])
 rambler.ru#?#article ~ article ~ div[class]:-abp-has(div > div[class][style="display: none !important;"])
 rambler.ru#?#article ~ article ~ div[class]:-abp-has(div > div[class^="banner--native-partner--"])
