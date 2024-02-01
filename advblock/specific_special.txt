@@ -803,26 +803,20 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod
 !
 ! Rambler.RU и их проекты
 eda.ru###__next > section
-www.rambler.ru###app > .ad
-rambler.ru###bigColumn + div[class] > div:first-child + div > div > div:first-child
 eda.ru,gazeta.ru,lenta.ru###billboard
-rambler.ru#?##carousel .undefined:-abp-has([id^="adfox-"])
 m.gazeta.ru###footer-banner
 m.gazeta.ru###in-read
 gazeta.ru###parallax
 championat.com###plista_block
-autorambler.ru,rambler.ru###rootWrapper article > div div > aside
+autorambler.ru,rambler.ru#?##summary ~ div:-abp-contains(Продолжение истории после рекламы)
 gazeta.ru###superfooter
 lenta.ru,m.gazeta.ru,www.afisha.ru###top-banner
-mail.rambler.ru##.Direct-root-hG
 gazeta.ru##._is_adfree
 championat.com##._live-fonbet
 lenta.ru#?#._longgrid:-abp-has(> [class*="info"] > [class*="_ad-title"])
 lenta.ru##._sticked > ._branded
 lenta.ru##._tinkoff
 rambler.ru##.article__banner
-rambler.ru##.article__partners
-rambler.ru##.article__read-also
 lenta.ru##.avito
 lenta.ru##.b-board__brand-logo
 lenta.ru##.b-board__coef
@@ -832,22 +826,16 @@ gazeta.ru,lenta.ru,quto.ru##.banner
 rambler.ru##.banner--container
 championat.com##.banner-parallax
 gazeta.ru##.banners
-rambler.ru##.comments__partners
-www.rambler.ru##.commercial-branding > div:first-child > script + div > div + div
 vp.rambler.ru##.eagleplayer-advertisement-remain-time
 vp.rambler.ru##.eplayer-time-to-ad
 rambler.ru##.finance__banner
 rambler.ru##.finance__partners
 rambler.ru##.gallery__item--banner
 lenta.ru##.header__twenty-ideas
-news.rambler.ru##.j-sticky-banner > div[class*="feed__banner"]
 lenta.ru##.layout::before
-news.rambler.ru#?#.level__card:-abp-has(> [class*="banner"])
 championat.com##.livetable-bar__bonus
 gazeta.ru##.m_banner
-sport.rambler.ru##.match-center__partners
 lenta.ru##.okko
-rambler.ru##.okko-banner__container
 championat.com##.partners-content
 championat.com##.plista-block
 championat.com##.recommender-block + .banner + div
@@ -873,16 +861,13 @@ lenta.ru##.yandex-games
 www.afisha.ru##[aria-label="Реклама"]
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
 www.afisha.ru##[data-ad-fallback]
-rambler.ru##[data-ad-marker]
 daily.afisha.ru##[data-block-type="AdContainer"]
-rambler.ru##[data-blocks="top_news_block"] > div:first-child + div > div > div:first-child
+weather.rambler.ru##[data-block="seo"]
 championat.com##[data-goal-label*="_fonbet"]
 championat.com##[data-href*="offer"]
 championat.com##[data-href*="okko.sport"]
-rambler.ru##[data-news_media-desktop*="rnet_widget"]
-rambler.ru##[data-special*=":okko:"]
+autorambler.ru,rambler.ru##[data-news_media-desktop*="rnet_widget"]
 www.afisha.ru##[data-test="LINK OKKO-BUTTON"]
-sport.rambler.ru##[href^="https://www.fonbet.ru/"]
 letidor.ru,moslenta.ru,passion.ru,quto.ru##[id^="unit_"]
 wmj.ru##[qaid="topic"] ~ div a[href^="https://zen.yandex.ru/"]
 championat.com##a[href*="fon.bet/"]
@@ -890,11 +875,10 @@ championat.com##a[href*="fon.bet/"]
 ~mail.rambler.ru,~nova.rambler.ru,rambler.ru,www.afisha.ru##a[href*="okko.tv"]
 letidor.ru,quto.ru##article a[href^="https://zen.yandex.ru/"]
 championat.com##div.banner[class*=" "]
-finance.rambler.ru#?#div:-abp-has(> a[href*="?erid="])
-autorambler.ru,rambler.ru,sport.rambler.ru#?#div:-abp-has(> div > [data-rnet])
-rambler.ru#?#div:-abp-has(> div > [id^="adfox-"] + div > div:only-child)
+autorambler.ru,rambler.ru#?#div:-abp-has(> div > [data-rnet])
 quto.ru#?#div:-abp-has(> div[style] + [id^="rnet_"])
 mail.rambler.ru##div[class*="Ad-direct"]
+autorambler.ru,rambler.ru##div[class*="banner--native-"]
 lenta.ru##div[class*="goodnews"][class*=" "]
 lenta.ru##div[class="board _winline"]
 mail.rambler.ru##div[class^="Ad-root"]
@@ -904,7 +888,7 @@ mail.rambler.ru##div[class^="AppContainer-adWrapper"]
 r0.ru##div[class^="News__adv"]
 mail.rambler.ru##div[class^="SentLetter-context"]
 afisha.ru##div[data-ad="true"]
-rambler.ru##div[data-marker-observer]
+autorambler.ru,rambler.ru##div[data-news_media-mobile^="partner_block"]
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##div[data-render-state] > div[style*="min-height:"]
 ferra.expert##div[data-render-state][style*="min-height:"]
 rambler.ru##div[data-rnet]
@@ -914,7 +898,6 @@ m.gazeta.ru##div[id^="ban-content-mobile"]
 quto.ru##div[id^="partner_news_"]
 gazeta.ru,lenta.ru,rambler.ru,wmj.ru##div[id^="rnet_"]
 motor.ru##div[id^="rnet_id_"] ~ div[style^="margin-top:"] + div
-rambler.ru##div[style^="display:"][style*="none"] + div[style^="width:"][style*="100%;"][style*="height:"][style*="315px"]:empty
 lenta.ru##iframe[src*="://audiosalute.lenta.ru/"]
 lenta.ru##iframe[src*="icdn.lenta.ru"][src*="banner"]
 ||audiosalute.lenta.ru/
@@ -926,11 +909,6 @@ lenta.ru##iframe[src*="icdn.lenta.ru"][src*="banner"]
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
 ||trafffgen.rambler.ru^
 ||winline.rambler.ru/
-! Непонятные пустые места, новый и старый дизайн
-autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
-autorambler.ru,rambler.ru#?#.commercial-branding aside:-abp-has(div[id^="adfox-"])
-rambler.ru#?#article ~ article ~ div[class]:-abp-has(div > div[class][style="display: none !important;"])
-rambler.ru#?#article ~ article ~ div[class]:-abp-has(div > div[class^="banner--native-partner--"])
 !
 ! RBC (РБК)
 cnews.ru###mag_banner

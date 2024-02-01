@@ -1133,8 +1133,6 @@ sinoptik.ua###bigmirTop
 lurkmo.re,lurkmore.to###p-counters
 game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_footer > .copyright > center:first-child
 fastpic.ru###picContainer > img
-autorambler.ru,rambler.ru###rootWrapper > [style="height:1px"] + div > div:first-child + div[style*="position:"]:empty
-autorambler.ru,rambler.ru###rootWrapper div[style^="--rc-loader-strokeDashoffset"]
 happy-hack.net#?##side_right > .block_r:-abp-has(> div [href*="liveinternet.ru/"])
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-on-stack-trace, document.querySelectorAll, inlineScript)
 otvet.mail.ru##+js(addEventListener-defuser, click, externalLink)
@@ -1186,6 +1184,7 @@ autorambler.*,rambler.*,~www.rambler.*##.pub_300x250.text-ad-links.adbanner.ad.t
 auto.ru##div:matches-css-before(content: /Реклама/)
 auto.ru##div:matches-css-before(content: /Реклама/) ~ div
 inoreader.com##div[id^="leaderboard_ad"] > *
+autorambler.ru,rambler.ru##div[style^="--rc-loader-strokeDashoffset"]
 dzen.*,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.hasPreroll, null)
 radioprofusion.com##footer > .counter
 horoscopes.rambler.*##+js(set-constant, Object.prototype.needShowAlicePopup, null)

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240129.1656
+@version        0.20240201.1122
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -976,36 +976,13 @@
 @-moz-document
   domain("autorambler.ru"),
   domain("rambler.ru") {
-    #rootWrapper article > div > div:first-child + div + div div {
-        background-color: transparent !important
-    }
-    #bigColumn script + div[class] > div[style^="height"] > div > div[id^="cluster-"] ~ div:empty, 
-    [data-blocks="mini_video_player::close_button"] {
+    #app div[style*="min-height:"][style*="250px"], .commercial-branding aside {
         display: none !important
     }
-    #bigColumn script + div[class] > div[style^="height"] * {
-        height: inherit !important
-    }
-    #root div[style^="order:"][style*="-1"], 
-    #rootWrapper > div > script ~ div > div, 
-    #rootWrapper div[style^="min-height:"], [data-blocks] div[class]:empty, 
-    [data-blocks^="cluster_"] > div:empty ~ div, 
-    div[style^="order:"][style*="-1"] > div > div {
+    .commercial-branding > div script ~ div > div, 
+    .commercial-branding div[style^="min-height:"], 
+    div[style^="order:"][style*="-1"] {
         min-height: 0 !important
-    }
-    #bigColumn + div[class] > div:first-child + div > div div, 
-    [data-blocks="top_news_block"] > div:first-child + div > div div {
-        min-height: 0 !important;
-        border-bottom: unset !important
-    }
-    #bigColumn script + div[class] > div[style^="height"] > div {
-        position: initial !important;
-        transform: none !important;
-        width: inherit !important
-    }
-    #bigColumn script + div[class] > div[style^="height"] {
-        width: inherit !important;
-        height: inherit !important
     }
 }
 
@@ -1133,14 +1110,6 @@
     }
     html > head ~ body {
         overflow-y: auto !important
-    }
-}
-
-@-moz-document
-  domain("bossfilm.ru"),
-  domain("hlamer.ru") {
-    body {
-        background-color: #596c84 !important
     }
 }
 
@@ -1576,6 +1545,14 @@
 @-moz-document domain("doefiratv.info") {
     .b-cell > div[id] {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("dofilms.ru"),
+  domain("hlamer.ru") {
+    body {
+        background-color: #596c84 !important
     }
 }
 
@@ -2618,20 +2595,6 @@
 @-moz-document domain("holod.media") {
     .article__bg {
         left: 49% !important
-    }
-}
-
-@-moz-document domain("horoscopes.rambler.ru") {
-    a[data-horo$="::button"] {
-        width: auto !important
-    }
-}
-
-@-moz-document
-  domain("horoscopes.rambler.ru"),
-  domain("weather.rambler.ru") {
-    div[class] {
-        min-height: 0 !important
     }
 }
 
@@ -4258,23 +4221,8 @@
 }
 
 @-moz-document domain("rambler.ru") {
-    #rootWrapper div[style="min-height: 500px;"] ~ div div {
-        background-color: transparent !important
-    }
     .social-popup, .subscribe-popup-cover, .subscribe-popup__wrapper {
         display: none !important
-    }
-    #bigColumn > div[class]:nth-of-type(3) {
-        height: unset !important;
-        margin-top: unset !important;
-        margin-bottom: unset !important
-    }
-    #bigColumn + div[class] > div:first-child article ~ div div {
-        min-height: 0 !important;
-        border-bottom: unset !important
-    }
-    body[style*="position:"] {
-        position: unset !important
     }
 }
 
@@ -5043,6 +4991,15 @@
 }
 
 @-moz-document
+  domain("tv.rambler.ru"),
+  domain("horoscopes.rambler.ru"),
+  domain("weather.rambler.ru") {
+    div[class] {
+        min-height: 0 !important
+    }
+}
+
+@-moz-document
   domain("tv.yandex.by"),
   domain("tv.yandex.kz"),
   domain("tv.yandex.ru"),
@@ -5261,12 +5218,6 @@
     }
     body > #layout-center {
         pointer-events: none !important
-    }
-}
-
-@-moz-document domain("vp.rambler.ru") {
-    .eplayer-skin-buttons-center {
-        visibility: visible !important
     }
 }
 
@@ -5560,13 +5511,10 @@
 }
 
 @-moz-document domain("www.rambler.ru") {
-    div[style*="height:"][style*="600px"] {
-        background-color: transparent !important
-    }
     footer {
         max-width: 100% !important
     }
-    #app > div, div[style^="min-height:"] {
+    #app > div {
         min-height: 0 !important
     }
 }
