@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240201.1123
+@version        0.20240201.1255
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2596,6 +2596,16 @@
 @-moz-document domain("holod.media") {
     .article__bg {
         left: 49% !important
+    }
+}
+
+@-moz-document domain("horoscopes.rambler.ru") {
+    .ad_branding_main > div[class]:first-child {
+        margin-left: 0 !important
+    }
+    .ad_branding_main, .ad_branding_main > div[class], 
+    .ad_branding_main > div[class]:first-child > div {
+        max-width: 100% !important
     }
 }
 
