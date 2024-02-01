@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240201.1507
+@version        0.20240201.1519
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -332,7 +332,9 @@
 @-moz-document
   domain("2ip.io"),
   domain("2ip.ru") {
-    .consent__notice, .consent__notice ~ .body-blackout {
+    .consent__notice, .consent__notice ~ .body-blackout, 
+    .data_item > .ip-icon-port-scaner ~ div a, 
+    .data_item > .ip-icon-proxy ~ div a, .ip-links-container a[target="_blank"] {
         display: none !important
     }
     body {
