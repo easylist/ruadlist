@@ -394,9 +394,6 @@ rbc.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:
 ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/pravila"])
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
-dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
-dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item:has(> a[href*="://yandex."][href*="/clck/"]):remove()
-dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item:has(> a[href][target="_blank"]):remove()
 hideip.me#@#.node-promoted
 vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
@@ -423,6 +420,9 @@ pronpic.org#@#:not(obhod-adblocka)
 @@||studizba.com^$generichide,badfilter
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 sports.ru##[class*="_label "]
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
 www.sports.ru##[data-noinit]
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]

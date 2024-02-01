@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240201.2021
+@version        0.20240201.2230
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1740,9 +1740,9 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.uz") {
-    .mini-suggest__item > a[href*="://yabs.yandex."][href*="/count/"], 
-    .mini-suggest__item > a[href*="://yandex."][href*="/clck/"], 
-    .mini-suggest__item > a[href][target="_blank"] {
+    [class*="mini-suggest__item"] > a[href*="://yabs.yandex."][href*="/count/"], 
+    [class*="mini-suggest__item"] > a[href*="://yandex."][href*="/clck/"], 
+    [class*="mini-suggest__item"] > a[href][target="_blank"] {
         display: none !important
     }
 }
