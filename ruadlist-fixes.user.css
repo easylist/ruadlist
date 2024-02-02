@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240202.1217
+@version        0.20240202.1829
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1547,14 +1547,6 @@
 @-moz-document domain("doefiratv.info") {
     .b-cell > div[id] {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("dofilms.ru"),
-  domain("hlamer.ru") {
-    body {
-        background-color: #596c84 !important
     }
 }
 
@@ -3931,6 +3923,14 @@
     }
     #posts div[id^="ugolkrug"] {
         box-shadow: none !important
+    }
+}
+
+@-moz-document
+  domain("otfilm.ru"),
+  domain("hlamer.ru") {
+    body {
+        background-color: #596c84 !important
     }
 }
 
