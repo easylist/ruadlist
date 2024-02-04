@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240202.1829
+@version        0.20240205.54
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1813,6 +1813,15 @@
     }
 }
 
+@-moz-document domain("edenland.com.ua") {
+    .socials-popup {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("electric-house.ru") {
     table[class^="header"] > tbody > tr > td ~ [class] {
         display: none !important
@@ -2582,6 +2591,14 @@
     }
     body > noindex {
         display: none !important
+    }
+}
+
+@-moz-document
+  domain("hlamer.ru"),
+  domain("otfilm.ru") {
+    body {
+        background-color: #596c84 !important
     }
 }
 
@@ -3923,14 +3940,6 @@
     }
     #posts div[id^="ugolkrug"] {
         box-shadow: none !important
-    }
-}
-
-@-moz-document
-  domain("otfilm.ru"),
-  domain("hlamer.ru") {
-    body {
-        background-color: #596c84 !important
     }
 }
 
