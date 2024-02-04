@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240205.54
+@version        0.20240205.112
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1704,8 +1704,10 @@
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
     div[class*="article__"] > .undefined ~ div[class*="_nlld"] > div[id][class], 
-    div[class*="bannerMain"], div[class*="video-viewer-sidebar__ad"], 
-    div[class*="videoCardAd"], div[class^="auto-slide-ad__container"], 
+    div[class*="bannerMain"], 
+    div[class*="idjed__container"] > div[class*="idjed__"] ~ div, 
+    div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
+    div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
     div[class^="feed__"] > article > div:first-child + div + div, 
@@ -4404,11 +4406,11 @@
     }
 }
 
-@-moz-document domain("rudub.net") {
+@-moz-document domain("rudub.pw") {
     .details__bg {
         display: none !important
     }
-    body > section[class="section details"] {
+    body > section[class*="section details"] {
         padding-top: 70px !important
     }
 }
