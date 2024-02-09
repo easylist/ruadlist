@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240209.1312
+@version        0.20240210.118
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -333,8 +333,8 @@
   domain("2ip.io"),
   domain("2ip.ru") {
     .consent__notice, .consent__notice ~ .body-blackout, 
-    .data_item > .ip-icon-port-scaner ~ div a, 
-    .data_item > .ip-icon-proxy ~ div a, .ip-links-container a[target="_blank"] {
+    .data_item > .ip-icon-small ~ div a, .ip-info a[target="_blank"], 
+    nav li a[class] {
         display: none !important
     }
     body {
@@ -882,6 +882,21 @@
 @-moz-document domain("anti-malware.ru") {
     body > header {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("apad2.top"),
+  domain("game4you.top"),
+  domain("games-pc.top"),
+  domain("innal.top"),
+  domain("naylo.top"),
+  domain("rustorka.com"),
+  domain("rustorka.net"),
+  domain("rustorka.top") {
+    div#body_container {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important
     }
 }
 
@@ -2239,20 +2254,6 @@
 @-moz-document domain("game2day.ru") {
     body > .container {
         margin-top: 120px !important
-    }
-}
-
-@-moz-document
-  domain("game4you.top"),
-  domain("games-pc.top"),
-  domain("innal.top"),
-  domain("naylo.top"),
-  domain("rustorka.com"),
-  domain("rustorka.net"),
-  domain("rustorka.top") {
-    div#body_container {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important
     }
 }
 
