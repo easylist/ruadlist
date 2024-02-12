@@ -6543,8 +6543,6 @@ gamesisart.ru##body > div[align="left"][style^="position: fixed;"]
 siver.com.ua##body > div[align="right"] > span
 999.md,delo.ua,nevasport.ru##body > div[class*="branding"]
 progipertoniyu.ru##body > div[class*="modal"]
-povarenok.ru##body > div[class]:empty[style="height: 100%;"]
-povarenok.ru##body > div[class]:empty[style="height: 100%;"] + div a
 votrube.ru##body > div[class]:last-of-type
 anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##body > div[class]:not([id]):nth-child(-n+5) > a[href]
 russian.rt.com##body > div[class^="Popup-"]
@@ -6611,6 +6609,8 @@ christianka.bratstvo.org##body > table[width="99%"] + p[align="center"]
 payeer-gift.ru##body div .banner
 om1.ru##body div[class*="-branding"]
 forum.flprog.ru##body.section-index .sidebar
+povarenok.ru##body:not([id]) > div[class]:empty:not([style])
+povarenok.ru##body:not([id]) > div[class]:empty:not([style]) + div a
 livetvstream.pro,me##body[bgcolor] > #adbtm
 livetvstream.pro,me##body[bgcolor] > div[id="ads"][style^="position: absolute;"]
 livetvstream.pro,me##body[bgcolor] > div[id^="iframe-container"]
