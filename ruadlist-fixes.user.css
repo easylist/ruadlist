@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240211.1124
+@version        0.20240213.1809
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -431,6 +431,41 @@
     div[id][style="display: block; position: static; opacity: 1;"], 
     div[style^="width:100%;height:2"][style$="px;display:block"] {
         display: none !important
+    }
+}
+
+@-moz-document
+  domain("ag"),
+  domain("biz"),
+  domain("buzz"),
+  domain("by"),
+  domain("city"),
+  domain("club"),
+  domain("co"),
+  domain("com"),
+  domain("in"),
+  domain("ink"),
+  domain("kim"),
+  domain("loan"),
+  domain("me"),
+  domain("name"),
+  domain("net"),
+  domain("org"),
+  domain("rest"),
+  domain("run"),
+  domain("sh"),
+  domain("so"),
+  domain("today"),
+  domain("tv"),
+  domain("vip"),
+  domain("website"),
+  domain("win") {
+    body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] {
+        padding-top: 0 !important;
+        background-color: inherit !important
+    }
+    body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3) {
+        width: unset !important
     }
 }
 
@@ -1528,6 +1563,15 @@
 @-moz-document domain("doefiratv.info") {
     .b-cell > div[id] {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("domovita.by") {
+    body.blocked > #modalCookies, body.blocked > div[class*="modal-overlay"] {
+        display: none !important
+    }
+    body.blocked {
+        overflow: auto !important
     }
 }
 
@@ -2883,41 +2927,6 @@
 @-moz-document domain("kharkovforum.com") {
     body > table > tbody > tr > td[align="center"] {
         display: none !important
-    }
-}
-
-@-moz-document
-  domain("kim"),
-  domain("ag"),
-  domain("biz"),
-  domain("buzz"),
-  domain("by"),
-  domain("city"),
-  domain("club"),
-  domain("co"),
-  domain("com"),
-  domain("in"),
-  domain("ink"),
-  domain("loan"),
-  domain("me"),
-  domain("name"),
-  domain("net"),
-  domain("org"),
-  domain("rest"),
-  domain("run"),
-  domain("sh"),
-  domain("so"),
-  domain("today"),
-  domain("tv"),
-  domain("vip"),
-  domain("website"),
-  domain("win") {
-    body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] {
-        padding-top: 0 !important;
-        background-color: inherit !important
-    }
-    body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3) {
-        width: unset !important
     }
 }
 
