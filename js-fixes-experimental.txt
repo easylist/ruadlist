@@ -518,7 +518,6 @@ ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-fetch-if, /ad.mail.ru/adp/.*notgb|\/res\//)
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-xhr-if, /ad.mail.ru/adp/.*notgb|\/res\//)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
-e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.ENABLE_SMOKESCREEN, undefined)
 otvet.mail.ru##+js(set-constant, Object.prototype._Mimic, undefined)
 player-smotri.mail.ru##+js(set-constant, Object.prototype.autoPlayParams, false)
 ok.ru##+js(set-constant, Object.prototype.autoplayScrollHandler, noopFunc)
@@ -556,8 +555,8 @@ e.mail.ru##.b-datalist > div:matches-css(height: 39px):remove()
 e.mail.ru##.b-letter_thread > div > div:matches-css(height: 39px):remove()
 e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div:style(display: block !important)
 ! newapp
+e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, 'slot:fail')
 e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, NO_MIMIC_ON_)
-e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, siteZone, 100)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlockWhiteList, false)
 ! VK-брендинг
 otvet.mail.ru###portal-menu [title="Ответы Mail.ru"] > a > svg > g
