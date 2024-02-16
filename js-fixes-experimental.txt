@@ -576,6 +576,12 @@ e.mail.ru##a[href^="/payment/center/"][class^="logo"]:style(width: 133px !import
 cloud.mail.ru,e.mail.ru,octavius.mail.ru##a[title="Экосистема VK"]
 todo.mail.ru##div[class^="Logo_base__"] > svg > g
 mail.ru##img[src*="/logo_2021_region"]
+! Фикс для маленьких экранов
+mail.ru##.grid__header .ph-auth:matches-media((max-width: 1280px)):style(height: 37px !important)
+mail.ru##.grid__header .ph-container:matches-media((max-width: 1280px)):style(height: 40px !important)
+mail.ru##.grid__header > .headline:matches-media((max-width: 1280px)):style(height: 40px !important)
+mail.ru##[slot="main-column"] .news-item:matches-media((max-width: 1280px)):style(line-height: 19px !important)
+mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(height: 20px !important)
 !
 !#if env_mobile
 mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
