@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240217.1027
+@version        0.20240217.1058
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3382,10 +3382,9 @@
     .tabs-content .news-item_regular::after, 
     .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
-    body > .grid .news-item_tgb, body > .grid .rectangle-banner, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
-    body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .rectangle-banner, 
-    body > .zeropixel ~ * .skeleton-tgb, body > .zeropixel ~ * .stripe-wrapper, 
+    body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .skeleton-tgb, 
+    body > .zeropixel ~ * .stripe-wrapper, 
     body > .zeropixel ~ * [class*="tgb-wrap"], 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body:not(.js-module) .searchContainer ~ div > a.dmb {
@@ -3445,6 +3444,9 @@
     }
     .tabs-content > :first-child > a::after {
         position: unset !important
+    }
+    .grid__header .ph-modal-projects-overlay {
+        top: inherit !important
     }
     .tabs-content .news-item_regular > a:not([data-testid="news-prefix"]) {
         white-space: pre-line !important
