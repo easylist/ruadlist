@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240218.1356
+@version        0.20240218.2056
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3335,6 +3335,12 @@
     #localNotice .floatleft img {
         height: 70px !important;
         width: auto !important
+    }
+}
+
+@-moz-document domain("m24.ru") {
+    .vjs-big-play-button {
+        background: #0fc3c3 !important
     }
 }
 
