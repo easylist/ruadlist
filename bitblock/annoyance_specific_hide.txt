@@ -1133,7 +1133,6 @@ obozrevatel.com##.newsFull_header_donations
 sportsdaily.ru##.news__container .match-mini
 sportsdaily.ru##.news__container .match-mini ~ #NewsSubscribe
 caravan.kz##.news_aggregator
-ozon.ru##.news_block
 profinance.ru##.news_signature
 autoreview.ru,mkset.ru##.newsletter
 mel.fm##.newsletter-card
@@ -1728,7 +1727,9 @@ banki.ru##[data-gtm-view*="view_subscribe_"]
 horoscopes.rambler.ru##[data-horo*=":alisa"]
 delonghi.ru##[data-js-unit="CookieAgreeUnit"]
 economistua.com##[data-owo-type]
+ozon.ru##[data-paginator-loader]
 poltavawave.com.ua##[data-platform]
+ozon.ru##[data-replace-layout-path="[2][0][1][0][1][0]"] > div:first-child:not([data-widget])
 fosshub.com##[data-section-content-type="donate"]
 ictvukraine.tv,obozrevatel.com,zahid-sad.com##[data-storage-item*="cookiename_"]
 adme.media##[data-test-id="article-content"] > a[href^="/"]
@@ -1744,7 +1745,7 @@ rbc.ru##[data-vr-zone="Витрина Pro"]
 rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href^="https://pro.rbc.ru/"])
 warspot.ru##[data-wgcds-place]
-ozon.ru##[data-widget="skuAdvSearchShelf"]
+ozon.ru##[data-widget="skuShelfGoods"]
 kp.kg,kp.kz,kp.md,kp.ru##[data-without-height] + div
 nv.ua##[data-youtube-promo-for-remove]
 sxnarod.com##[href$="?act=acquaintance"] > img[src^="/image/"]
@@ -2071,6 +2072,7 @@ price.ua##div[style="font-size:x-large;text-align:center;margin:10px;background-
 kirov-portal.ru#?#div[style]:-abp-has(> div[style] > a[href="/news/akcii/"])
 autorambler.ru,rambler.ru##div[style^="--rc-loader-strokeDashoffset"]
 gamer-mods.ru##div[style^="height:"][style*="gamer-mods.ru/Noviygod"][style*=".gif"]
+ozon.ru##div[style^="padding-top"] > [data-replace-layout-path] > [style="height:156px;"]
 outlook.live.com##div[tabindex][role="region"][aria-label] > div + div > div > .ms-FocusZone ~ div[class]:not([role]) > button
 youla.ru#?#div[width="0.25"]:-abp-has(> div > a[href*=".com/"][href*="/app"][title][target="_blank"])
 socportal.info##div[x-lazyload*="g-ytsubscribe"]

@@ -4965,7 +4965,6 @@ vprognoze.ru##.vp-bonus
 oblgazeta.ru##.vr_mobile_right_block
 bvedomosti.ru##.vtem_bannergroup
 dermatitanet.ru##.vtizer
-ozon.ru##.vu3
 kinomania.ru##.w-banner
 vgorodekirove.ru##.w_back_shapes
 livecars.ru,livesport.ru##.wall
@@ -5389,7 +5388,7 @@ satellitetvforum.info##[data-phpbb-ads-id]
 odds.ru##[data-popup="bonus"]
 cheezu.ru##[data-provider="yandex"]
 ozon.ru##[data-replace-layout-path] > div[style="height:300px;"]
-ozon.ru##[data-replace-layout-path] > div[style="height:700px;"]
+ozon.ru##[data-replace-layout-path]:only-child > div[style^="min-width:"][style*="height:"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 zoneofgames.ru##[data-role="sidebarAd"]
@@ -5408,6 +5407,8 @@ slukh.media##[data-vc-parallax]
 nv.ua##[data-vr-zone="Баннер"]
 ozon.ru##[data-widget="advBanner"]
 ozon.ru##[data-widget="advVideoBanner"]
+ozon.ru#?#[data-widget="freshIsland"]:-abp-has(> div > [data-widget="banner"])
+ozon.ru#?#[data-widget="freshIsland"]:-abp-has(> div > [data-widget="objectBannerList"])
 pravda.cn.ua##[data-widget_type="image.default"]
 photos-models.com##[gnezdo_container_id]
 pikabu.ru##[href*="/acceptable-ads"]
@@ -5564,6 +5565,7 @@ radiodacha.ru##[summary="content_table"] > tbody > tr > td[height="90"]
 root-nation.com##[swg-standard-button="contribution"]
 cdmail.ru,izcity.com##[title*="быстрый браузер!"] > img
 zx-pk.com##[title="Yandex Direct"]
+ozon.ru##[title="Реклама"]
 www.film.ru##[title="Яндекс Дзен"]
 ruboard.website##[vid_vpaut_pl]
 lost-abc.ru##[width="630"][height="90"]
@@ -7490,7 +7492,6 @@ rugame.mobi##div[style*="/reklama.gif"]
 doefiratv.info##div[style*="339px;"]
 x-console.com##div[style*="710px;"][style*="70px;"]
 forums.ngemu.com##div[style*="920px;"][style*="250px;"]
-ozon.ru#?#div[style*="background-color:"]:-abp-has(> span:-abp-contains(Реклама))
 bikepost.ru##div[style*="block"][style*="center"][style*="width:"][style*="height:"]
 dumskaya.net##div[style*="display:inline-bl1ock"]
 kinogo.ru.net##div[style*="fyi5fimf."]
@@ -7532,7 +7533,6 @@ kirov-portal.ru##div[style="height: 90px; font-size: 1px; line-height: 1px;"]
 unews.pro##div[style="height:20px;"]:empty
 autonevod.ru##div[style="height:250px"]
 unian.info,unian.net,unian.ua##div[style="height:260px;clear:both;"]
-ozon.ru##div[style="height:32px;"] div[style*="background-color:"]
 dublikat.one##div[style="height:5px;"]
 unian.info,unian.net,unian.ua##div[style="height:600px"]
 chudo-povar.com##div[style="height:auto;min-height:300px;"]
@@ -7657,7 +7657,6 @@ popcake.tv#?#h5:-abp-contains(Новости партнёров)
 mignews.com#?#h6:-abp-contains(/новости партнеров|знакомства/i)
 dachnye-sovety.ru#?#h6:-abp-contains(РЕКОМЕНДУЕМ ПОЧИТАТЬ:)
 ozon.ru##header + [data-replace-layout-path] > div[class]:not([data-widget]):first-child
-ozon.ru##header + [data-replace-layout-path] > div[style*="min-height:"]
 agronomy.com.ua##header .size-75
 finecooking.ru##header > .container-fluid
 proagro.com.ua##header > a
