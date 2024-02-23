@@ -141,9 +141,14 @@ $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|
 !
 ! 2ip.ru и 2ip.io
 2ip.io,2ip.ru#?#.content-article p:-abp-has(> .adsbygoogle)
-2ip.io,2ip.ru#?#.narrow-column > style ~ div > div:-abp-has(a[style^="color:"])
-2ip.io,2ip.ru##.st-ad
-2ip.io,2ip.ru##.test-vpn
+2ip.io,2ip.ru##a[href*="://fineproxy.org"]
+||go.onelink.me^$popup,domain=2ip.io|2ip.ru
+! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru и 2ip.io ~>
+||fineproxy.org^$third-party,popup
+||finevpn.org^$third-party,popup
+||hidemn.org^$third-party,popup
+||hidemy.name^$third-party,popup
+||proxyelite.info^$third-party,popup
 !
 ! Auto.ru
 auto.ru##.BankCardForm

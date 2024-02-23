@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240220.1518
+@version        0.20240223.1239
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -332,19 +332,11 @@
 @-moz-document
   domain("2ip.io"),
   domain("2ip.ru") {
-    .consent__notice, .consent__notice ~ .body-blackout, 
-    .data_item > .ip-icon-small ~ div a, .ip-info a[target="_blank"], 
-    nav li a[class] {
+    .consent__notice, .consent__notice ~ .body-blackout {
         display: none !important
     }
     body {
         overflow: auto !important
-    }
-    a[onclick*="trapABClick"] {
-        position: absolute !important;
-        top: -9999px !important;
-        opacity: 0 !important;
-        z-index: -9999 !important
     }
 }
 
@@ -4540,12 +4532,6 @@
 @-moz-document domain("simhost.org") {
     .top_bg {
         height: 0 !important
-    }
-}
-
-@-moz-document domain("sinema.top") {
-    #wrp {
-        margin-top: 0 !important
     }
 }
 
