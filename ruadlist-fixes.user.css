@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240223.1239
+@version        0.20240224.1532
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2301,12 +2301,6 @@
     }
 }
 
-@-moz-document domain("games.mail.ru") {
-    .b-pc-str {
-        width: auto !important
-    }
-}
-
 @-moz-document domain("gamma.mirtesen.ru") {
     .aggregator-page {
         pointer-events: none !important;
@@ -3965,8 +3959,7 @@
 }
 
 @-moz-document domain("overclockers.ru") {
-    a.over-hiddenlink-html[data-link*="citilink.ru"], 
-    a.over-hiddenlink-html[data-link*="regard.ru"] {
+    a.over-hiddenlink-html[target="_blank"] {
         pointer-events: none !important;
         color: inherit !important
     }
