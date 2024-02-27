@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240226.1447
+@version        0.20240227.2210
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4458,7 +4458,7 @@
 
 @-moz-document domain("sdamgia.ru") {
     #old_school > .App > div > [color="red"], 
-    div[style*="height:"] > a[target="_blank"] > img[src^="data:"] {
+    div[style] > a[target="_blank"] > img[src^="data:"] {
         display: none !important
     }
     .menu[role="navigation"] div[style], aside > div[class]:first-child div {
