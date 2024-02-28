@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240227.2210
+@version        0.20240228.1358
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1709,13 +1709,13 @@
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
     div[class*="article__"] > .undefined ~ div[class*="mid"] > div[id][class], 
-    div[class*="bannerMain"], 
+    div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="idjed__container"] > div[class*="idjed__"] ~ div, 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
-    div[class^="feed__"] > article > div:first-child + div + div, 
+    div[class^="feed__"] > article > div:first-child ~ div, 
     div[id][class$="__ad"] {
         display: none !important
     }

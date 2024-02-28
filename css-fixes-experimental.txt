@@ -1585,6 +1585,7 @@ dzen.ru##body:style(overflow-y: unset !important)
 dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"]
 dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"]
 dzen.ru##div[class*="bannerMain"]
+dzen.ru##div[class*="card-video-promo__root"]
 dzen.ru##div[class*="video-viewer-sidebar__ad"]
 dzen.ru##div[class*="videoCardAd"]
 dzen.ru##div[class^="auto-slide-ad__container"]
@@ -1601,7 +1602,7 @@ dzen.ru##aside[id^="article_"][class*="_right"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mid"] > div[id][class]
 dzen.ru##div[class*="idjed__container"] > div[class*="idjed__"] ~ div:style(display: none !important)
-dzen.ru##div[class^="feed__"] > article > div:first-child + div + div
+dzen.ru##div[class^="feed__"] > article > div:first-child ~ div
 ! ---
 ! игры
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:style(width: unset !important)
