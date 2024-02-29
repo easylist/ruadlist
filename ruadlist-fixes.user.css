@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240301.204
+@version        0.20240301.235
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -983,6 +983,8 @@
         display: none !important
     }
     .commercial-branding > div script ~ div > div, 
+    .commercial-branding > div script ~ div > div:last-child div:first-child, 
+    .commercial-branding article > div > div + div + div div, 
     .commercial-branding div[style^="min-height:"], 
     div[style^="order:"][style*="-1"] {
         min-height: 0 !important
