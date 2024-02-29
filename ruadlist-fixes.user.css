@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240229.1100
+@version        0.20240301.204
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1845,6 +1845,15 @@
     }
 }
 
+@-moz-document domain("eplus.by") {
+    #cookiesAgreementNotice {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
+    }
+}
+
 @-moz-document domain("epravda.com.ua") {
     body {
         cursor: auto !important
@@ -3351,7 +3360,8 @@
     .article__item_source_viqeo .article__container::before {
         content: initial !important
     }
-    #bubble-home, .asteroid-widgets, .grid__main-col > .tgb-wrapper, .ph-ext, 
+    #bubble-home, .asteroid-widgets, .grid__main-col > .tgb-wrapper, 
+    .mailbox-container ~ [class] .widget__container, .ph-ext, 
     .tabs-content .news-item_regular::after, 
     .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
