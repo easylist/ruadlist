@@ -1134,8 +1134,6 @@ fastpic.ru###picContainer > img
 happy-hack.net#?##side_right > .block_r:-abp-has(> div [href*="liveinternet.ru/"])
 apad2.top,game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-on-stack-trace, document.querySelectorAll, inlineScript)
 otvet.mail.ru##+js(addEventListener-defuser, click, externalLink)
-auto.ru##+js(cookie-remover, /bltsr|crookie/)
-auto.ru##+js(json-prune, ads)
 online-fix.me##+js(no-setTimeout-if, / d[0-9]{1}/)
 buhgalter.com.ua##+js(no-setTimeout-if, /b-buy-access/)
 search.ukr.net##+js(remove-attr, data-cturl, .searchresults a, stay)
@@ -1172,15 +1170,12 @@ pb.wtf,piratbit.org,piratbit.pw,piratbit.top,vidak.icu#?#.table > tbody[id^="pos
 @@||inoreader.com^$generichide
 @@||only-paper.ru/*/$script,domain=only-paper.ru
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
-auto.ru##[class*="_direct_view_gallery"]
 tass.ru##[class^="Footer_liveinternet"]
 auto.*#@#.ImageGalleryFullscreenVertical__ad
 autorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(abort-on-stack-trace, Object.prototype.getBaseFingerprint, inlineScript)
 autorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(json-prune, Blocks)
 autorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##^script:has-text('getPrefixes')
 autorambler.*,rambler.*,~www.rambler.*##.pub_300x250.text-ad-links.adbanner.ad.text_ad.pub_728x90.text-ad.nav-ad.text-ads.textAd.ad-banner.text_ads.pub_300x250m:style(display: block !important)
-auto.ru##div:matches-css-before(content: /Реклама/)
-auto.ru##div:matches-css-before(content: /Реклама/) ~ div
 inoreader.com##div[id^="leaderboard_ad"] > *
 autorambler.ru,rambler.ru##div[style^="--rc-loader-strokeDashoffset"]
 dzen.*,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.hasPreroll, null)
