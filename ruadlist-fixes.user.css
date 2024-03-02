@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240301.1354
+@version        0.20240302.1534
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1706,7 +1706,7 @@
     [class*="floo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label]), 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside[id^="article_"][class*="_right"] > div[class], 
+    aside[id^="article_"][class*="_rlght"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
@@ -3328,15 +3328,6 @@
 @-moz-document domain("m24.ru") {
     .vjs-big-play-button {
         background: #0fc3c3 !important
-    }
-}
-
-@-moz-document domain("mag.auto.ru") {
-    .page > .Backdrop[role="button"] {
-        display: none !important
-    }
-    body {
-        overflow: auto !important
     }
 }
 
