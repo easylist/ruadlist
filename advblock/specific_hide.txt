@@ -5423,8 +5423,6 @@ comss.ru##[href="download/page.php?id=5511"]
 surgeryzone.net##[href="http://surgeryzone.net/knigi-po-medicine"]
 mobiset.ru##[href="http://www.ivlim.ru/"]
 fishki.net##[href="https://servers.ru"]
-forum.ru-board.com##[href="postings.cgi?action=edit&forum=5&topic=51141&postno=1"] ~ .post > .mtext
-forum.ru-board.com##[href="postings.cgi?action=edit&forum=5&topic=51141&postno=1"] ~ .post > br + br + br + br:nth-last-child(-n+2)
 allbest.ru##[href="union/advert.htm"]
 animeonline.cc##[href][target="_blank"][class]:empty
 phpbbguru.net##[href^="go.php?to="]
@@ -5432,7 +5430,6 @@ nntt.org##[href^="http://numbuster.com"]
 nntt.org##[href^="http://www.cenam.net"]
 game2day.ru##[href^="https://p2d.ru/"]
 divxplayer.ml,haes.tech,hcdn.online,hqq.tv,metaverseid.tk,player.cvary.org##[href^="https://t.me/"]
-forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=51141"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
 virpl.ru##[id$="-banner"]
 xyu.tv##[id$="AdsAfterVideo"]
 cools.biz,cools.dj,get-tune.cc,intermusic.name,iplayer.info,ipleer.fm,k1news.ru,kolesa.kz,market4game.ru,mp3cc.biz,mp3iq.com,vmuzice.me,yellowpages.uz##[id*="Banner"]
@@ -6614,7 +6611,6 @@ dari-radost13.ru##body > table
 itnews.com.ua##body > table > tbody > tr > td[style^="height:112px;"]
 pixs.ru##body > table > tbody > tr > td[valign][width]
 tyndex.ru##body > table > tbody > tr:first-child > td:first-child + td[valign="top"][align="left"]
-forum.ru-board.com##body > table[cellpadding="2"] td.sh1[align="left"]:first-child
 chipfind.ru##body > table[height="80"]
 www.google.com,www.google.ru##body > table[style="border: 1px solid #369"]
 christianka.bratstvo.org##body > table[width="99%"] + p[align="center"]
@@ -8097,7 +8093,6 @@ slovarozhegova.ru##td[align="center"] > p[align="center"][valign="bottom"] ~ p[a
 xyya.net##td[align="center"][style="width:220px;"] + td[valign="top"] > :not(#dle-content)
 synonymizer.ru##td[align="center"][valign="top"] > form ~ p > font > a[href]
 calc.ru##td[align="center"][valign="top"][width="48%"]
-forum.ru-board.com##td[align="left"] + td[align="right"] > a[href*="goo.gl"] > img
 bigfangroup.org,freebfg.org#?#td[align="left"]:-abp-has(> div[id^="bb"] > [id*="ScriptRoot"])
 poiskvps.ru##td[align="left"][valign="top"] > noindex
 bestgardener.ru##td[align="left"][valign="top"][class^="t"]
@@ -8132,7 +8127,6 @@ smartsoft.kiev.ua##td[valign="top"] > noindex > center
 bwtorrents.ru#?#td[valign="top"] > table.tborder[width="240"] ~ table.tborder[width]:-abp-has(td.tcat:-abp-contains(/наши друзья|реклама/i))
 hen-tay.com#?#td[valign="top"] > table:-abp-has(a[href*="/go.php"][target="_blank"])
 ackordofmine.ru##td[valign="top"] > table[height="180px"]
-forum.ru-board.com##td[valign="top"][align="right"] > a[href*="banner"]
 pejnya.me,pejnya.net##td[valign="top"][align="right"] a[href][target="_blank"] > font[color="red"]
 pejnya.me,pejnya.net##td[valign="top"][align="right"] a[href][target="_blank"] > font[color="red"] ~ img
 dietaonline.ru##td[valign="top"][style^="background"] tr[height]
