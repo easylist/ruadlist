@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240303.1212
+@version        0.20240303.1238
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -181,8 +181,6 @@
   domain("kinobar.vip"),
   domain("moskva.fm"),
   domain("newstudio.tv"),
-  domain("nnm-club.me"),
-  domain("nnmclub.ro"),
   domain("nnmclub.to"),
   domain("pay-day.ru"),
   domain("roem.ru"),
@@ -3786,10 +3784,7 @@
     }
 }
 
-@-moz-document
-  domain("nnm-club.me"),
-  domain("nnmclub.ro"),
-  domain("nnmclub.to") {
+@-moz-document domain("nnmclub.to") {
     body {
         background: none !important
     }
