@@ -320,7 +320,6 @@ iz.ru##+js(set-constant, Object.prototype.autoplay, false)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
 7days.ru,doctorpiter.ru,dom.mail.ru,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,lady.mail.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
-tass.ru##+js(set-constant, Object.prototype.compactMode, true)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 russia-tv.online##+js(set-constant, Object.prototype.detectAdb, noopFunc)
@@ -437,7 +436,6 @@ my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
 www.e1.ru##div:has(> [id] ~ script):style(min-height: 0 !important)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
-tass.ru##div[class^="PageLayout_top_sticky"] > div:style(width: auto !important)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
