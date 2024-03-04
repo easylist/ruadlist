@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240304.1016
+@version        0.20240304.1549
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1172,6 +1172,27 @@
     }
     html {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("buhgalter911.com") {
+    .b-chat {
+        margin-bottom: 0 !important
+    }
+}
+
+@-moz-document
+  domain("buhgalter911.com"),
+  domain("buhgalter.com.ua") {
+    body.access div[id^="access-au"] {
+        display: none !important
+    }
+    body.access * {
+        filter: none !important
+    }
+    body.access {
+        overflow: auto !important;
+        position: relative !important
     }
 }
 
