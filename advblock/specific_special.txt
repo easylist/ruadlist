@@ -38,14 +38,11 @@
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.29.px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(content: "")
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
-pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
 pikabu.ru#?#.stories-feed__container > .story div:-abp-properties(/min-height: .+.cm/)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:first-child + div)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:only-child)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|[a-z].{1,3}$|\s$|:$|:.{1,20}$/))
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:empty)
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> div > header[class*=" "])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: calc.29.px/))
 dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
@@ -62,7 +59,6 @@ pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{
 pikabu.ru##div[class*="page-story__"] div[style=""]
 pikabu.ru##div[class*="sidebar-block_border"][style*="border"]
 sdamgia.ru##div[class^="google_ad_left"]
-pikabu.ru##div[class^="sidebar-block "] ~ .sidebar-block_border ~ .sidebar-block_border ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
 liveinternet.ru,pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
 pikabu.ru##div[href]
 rg.ru##div[id][class*="__"]:empty
