@@ -1641,6 +1641,7 @@ inter.ua,ntn.ua##.warning
 hindcine.tv##.warning-adblock
 onlineguru.ru##.warning-cookie-block
 d3-group.ru##.wd-cookies-popup
+rutube.ru#?#.wdp-showcase-module__wdp-showcase:-abp-has(> [aria-label^="Галерея Yappy:"])
 porodakoshki.ru##.webnavoz_notificationbox
 eecmedical.ru##.welcome
 gsminfo.com.ua##.wenews
@@ -1944,10 +1945,9 @@ homecredit.ru##div[class*="BlockCookies-"]
 www.1tv.ru##div[class*="Footer_footerApplications"] > div:first-child
 sberindex.ru##div[class*="Layout__cookiePanel"]
 24smi.org#?#div[class*="__col"]:-abp-has(> .subscription)
-rutube.ru##div[class*="__player__"] > div[class*="disclaimer"]
+rutube.ru##div[class*="__player__"] div[class*="disclaimer"]
 lifehacker.ru#?#div[class*="container"] div[class*="article-card__"]:-abp-has(> [class*="article-card"] .lh-article-card-meta__partner)
 lifehacker.ru#?#div[class*="container"] div[class*="article-card__"]:-abp-has(> [class*="article-card"] .lh-article-card-meta__promo)
-rutube.ru#?#div[class*="freyja_char-menu-section-container"]:-abp-has(> [class*="freyja_char-menu-app__list"])
 ntop.tv##div[class*="header-banner"]
 stratege.ru##div[class*="info"] > div[class$="_title"] + div[class$="_outer"]
 gameout.ru##div[class*="mailpoet_form"]
@@ -2152,6 +2152,7 @@ pikabu.*##.snowflakes-container:remove()
 rozetka.com.ua##rz-top-page-banner
 hardwareluxx.ru##section > aside ~ aside:nth-child(-n+4)
 nsn.fm#?#section:-abp-has(> div > div > form)
+rutube.ru##section[aria-label="Cкачать приложения"]
 allsks.ru##section[class*="a-cookies"]
 habr.com##section[id^="promo_block_"]
 goha.ru##span[id^="scrollto"]
