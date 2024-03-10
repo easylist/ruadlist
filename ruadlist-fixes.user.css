@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240306.1236
+@version        0.20240310.1434
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1358,19 +1358,15 @@
     div[class^="ReactViewer__root-"] {
         --bottom-banner-height: 1px !important
     }
-    #app {
-        background: none !important
-    }
-    #app > #public > .shove, div[class^="Datalistinfo__root"], 
+    div[class^="Datalistinfo__root"], div[class^="Folder__worm"], 
     div[class^="Public-desktop__rightCol-"], 
-    div[class^="Public-desktop__worm-"], 
     div[class^="ReactViewer__attachesinfo-"], 
     div[class^="ReactViewer__bottominfoWrapper-"], div[class^="Worm__root-"], 
     iframe[src^="https://o2.mail.ru/"] ~ div div[class^="ViewerHeader__closeIcon--"] {
         display: none !important
     }
-    #app > #public, #app > #public > #content {
-        width: 100% !important
+    div[class^="Public__folderContent"] {
+        padding-right: 0 !important
     }
 }
 
