@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240313.2011
+@version        0.20240314.104
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1746,7 +1746,7 @@
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
-    div[class^="feed__"] > article > div:first-child ~ div, 
+    div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div, 
     div[id][class$="__ad"] {
         display: none !important
     }

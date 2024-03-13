@@ -1613,7 +1613,7 @@ dzen.ru##aside[id^="article_"][class*="_rgiht"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midll"] > div[id][class]
 dzen.ru##div[class*="idjet__container"] > div[class*="idjet__"] ~ div:style(display: none !important)
-dzen.ru##div[class^="feed__"] > article > div:first-child ~ div
+dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
 ! ---
 ! игры
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:style(width: unset !important)
