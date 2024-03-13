@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240312.1253
+@version        0.20240313.2011
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -508,6 +508,14 @@
     }
     #subbody {
         top: auto !important
+    }
+}
+
+@-moz-document
+  domain("alarfilm.ru"),
+  domain("hlamer.ru") {
+    body {
+        background-color: #596c84 !important
     }
 }
 
@@ -2616,14 +2624,6 @@
     }
 }
 
-@-moz-document
-  domain("hlamer.ru"),
-  domain("qmovies.ru") {
-    body {
-        background-color: #596c84 !important
-    }
-}
-
 @-moz-document domain("holod.media") {
     .article__bg {
         left: 49% !important
@@ -4344,6 +4344,14 @@
     }
     .poster-grid-item > a[target="_blank"]:first-child {
         pointer-events: none !important
+    }
+}
+
+@-moz-document
+  domain("regnum.news"),
+  domain("regnum.ru") {
+    .page-column > div[class*="-adv-container"] {
+        top: 100px !important
     }
 }
 
