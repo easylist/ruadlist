@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240314.1237
+@version        0.20240315.1242
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -131,110 +131,6 @@
 }
 
 @-moz-document
-  domain("24video.adult"),
-  domain("24video.in"),
-  domain("aif.ru"),
-  domain("ain.ua"),
-  domain("bit.ua"),
-  domain("budport.com.ua"),
-  domain("epravda.com.ua"),
-  domain("hdrezka.re"),
-  domain("ixbt.com"),
-  domain("kinotochka.co"),
-  domain("kinotochka.me"),
-  domain("ko.com.ua"),
-  domain("kv.by"),
-  domain("livejournal.com"),
-  domain("mc.today"),
-  domain("mirkino.club"),
-  domain("newstudio.tv"),
-  domain("nootropos.ru"),
-  domain("oblozhki.net"),
-  domain("oper.ru"),
-  domain("otxataba.net"),
-  domain("pay-day.ru"),
-  domain("playtor.tv"),
-  domain("rufootballtv.org"),
-  domain("sc2tv.ru"),
-  domain("stopgame.ru"),
-  domain("uateam.tv"),
-  domain("userstyles.org"),
-  domain("xatab-repack.com"),
-  domain("xatab-repack.org"),
-  domain("zakarpatpost.net") {
-    body:not(#id) {
-        background-image: none !important
-    }
-}
-
-@-moz-document
-  domain("24video.adult"),
-  domain("24video.in"),
-  domain("baskino.me"),
-  domain("dnepr.info"),
-  domain("dugtor.ru"),
-  domain("filmitorrent.net"),
-  domain("hdrezka.re"),
-  domain("ixbt.com"),
-  domain("jetsetter.ua"),
-  domain("kinoafisha.ua"),
-  domain("kinobar.vip"),
-  domain("moskva.fm"),
-  domain("newstudio.tv"),
-  domain("nnmclub.to"),
-  domain("pay-day.ru"),
-  domain("roem.ru"),
-  domain("trupornolabs.org"),
-  domain("vc.ru"),
-  domain("virusinfo.info"),
-  domain("wikianime.tv"),
-  domain("xxxadulttorrent.org"),
-  domain("you-anime.ru"),
-  domain("yummyanime.tv"),
-  domain("zombie-film.live") {
-    body:not(#id) {
-        padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("24video.in"),
-  domain("2pay-day.ru"),
-  domain("4video.adult"),
-  domain("aif.ru"),
-  domain("ain.ua"),
-  domain("bit.ua"),
-  domain("budport.com.ua"),
-  domain("epravda.com.ua"),
-  domain("hdrezka.re"),
-  domain("ixbt.com"),
-  domain("kinotochka.co"),
-  domain("kinotochka.me"),
-  domain("ko.com.ua"),
-  domain("kv.by"),
-  domain("livejournal.com"),
-  domain("mc.today"),
-  domain("mirkino.club"),
-  domain("newstudio.tv"),
-  domain("nootropos.ru"),
-  domain("oblozhki.net"),
-  domain("oper.ru"),
-  domain("otxataba.net"),
-  domain("playtor.tv"),
-  domain("rufootballtv.org"),
-  domain("sc2tv.ru"),
-  domain("stopgame.ru"),
-  domain("uateam.tv"),
-  domain("userstyles.org"),
-  domain("xatab-repack.com"),
-  domain("xatab-repack.org"),
-  domain("zakarpatpost.net") {
-    html:not(#id) {
-        background-image: none !important
-    }
-}
-
-@-moz-document
   domain("26-2.ru"),
   domain("arbitr-praktika.ru"),
   domain("budgetnik.ru"),
@@ -335,6 +231,30 @@
     }
     body {
         overflow: auto !important
+    }
+}
+
+@-moz-document
+  domain("2pay-day.ru"),
+  domain("4video.adult"),
+  domain("aif.ru"),
+  domain("ain.ua"),
+  domain("bit.ua"),
+  domain("budport.com.ua"),
+  domain("epravda.com.ua"),
+  domain("ixbt.com"),
+  domain("ko.com.ua"),
+  domain("kv.by"),
+  domain("livejournal.com"),
+  domain("mc.today"),
+  domain("newstudio.tv"),
+  domain("oper.ru"),
+  domain("sc2tv.ru"),
+  domain("stopgame.ru"),
+  domain("userstyles.org"),
+  domain("zakarpatpost.net") {
+    html:not(#id) {
+        background-image: none !important
     }
 }
 
@@ -500,6 +420,29 @@
     }
 }
 
+@-moz-document
+  domain("aif.ru"),
+  domain("ain.ua"),
+  domain("bit.ua"),
+  domain("budport.com.ua"),
+  domain("epravda.com.ua"),
+  domain("ixbt.com"),
+  domain("ko.com.ua"),
+  domain("kv.by"),
+  domain("livejournal.com"),
+  domain("mc.today"),
+  domain("newstudio.tv"),
+  domain("oper.ru"),
+  domain("pay-day.ru"),
+  domain("sc2tv.ru"),
+  domain("stopgame.ru"),
+  domain("userstyles.org"),
+  domain("zakarpatpost.net") {
+    body:not(#id) {
+        background-image: none !important
+    }
+}
+
 @-moz-document domain("ain.ua") {
     .big-ad-wrapper {
         height: auto !important
@@ -574,10 +517,8 @@
   domain("greenpost.ua"),
   domain("kinoboom.su"),
   domain("kinogo-720.net"),
-  domain("oblozhki.net"),
   domain("repackov.net"),
   domain("sportboom.info"),
-  domain("uateam.tv"),
   domain("urologypro.ru"),
   domain("virusinfo.info") {
     body:not(#id) {
@@ -1060,6 +1001,33 @@
 @-moz-document domain("banki.ru") {
     .header--short.header {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("baskino.me"),
+  domain("dnepr.info"),
+  domain("dugtor.ru"),
+  domain("filmitorrent.net"),
+  domain("ixbt.com"),
+  domain("jetsetter.ua"),
+  domain("kinoafisha.ua"),
+  domain("kinobar.vip"),
+  domain("moskva.fm"),
+  domain("newstudio.tv"),
+  domain("nnmclub.to"),
+  domain("pay-day.ru"),
+  domain("roem.ru"),
+  domain("trupornolabs.org"),
+  domain("vc.ru"),
+  domain("virusinfo.info"),
+  domain("wikianime.tv"),
+  domain("xxxadulttorrent.org"),
+  domain("you-anime.ru"),
+  domain("yummyanime.tv"),
+  domain("zombie-film.live") {
+    body:not(#id) {
+        padding-top: 0 !important
     }
 }
 
@@ -3040,9 +3008,7 @@
     }
 }
 
-@-moz-document
-  domain("kinotochka.co"),
-  domain("kinotochka.me") {
+@-moz-document domain("kinovibe.co") {
     .center-box2 {
         margin-top: 0 !important
     }
@@ -3570,12 +3536,6 @@
     }
 }
 
-@-moz-document domain("mirkino.club") {
-    body > header {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("mivmeste.info") {
     #SITE_PAGES > div > div[id] {
         min-height: auto !important
@@ -3966,18 +3926,6 @@
     }
 }
 
-@-moz-document
-  domain("otxataba.net"),
-  domain("xatab-repack.com"),
-  domain("xatab-repack.org") {
-    body {
-        background-color: #e5e5e5 !important
-    }
-    .page-wrapper {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("otzovik.com") {
     [class*="_no_abs"], [class*="_no_abs"] > * {
         height: auto !important
@@ -4092,12 +4040,6 @@
     }
     #foundationWrapper {
         pointer-events: none !important
-    }
-}
-
-@-moz-document domain("playtor.tv") {
-    .page-wrapper {
-        margin-top: 0 !important
     }
 }
 
@@ -4443,12 +4385,6 @@
     }
     body > section[class*="section details"] {
         padding-top: 70px !important
-    }
-}
-
-@-moz-document domain("rufootballtv.org") {
-    body > #branding {
-        padding-top: 0 !important
     }
 }
 
