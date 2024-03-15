@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240315.1242
+@version        0.20240315.1832
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -241,7 +241,6 @@
   domain("ain.ua"),
   domain("bit.ua"),
   domain("budport.com.ua"),
-  domain("epravda.com.ua"),
   domain("ixbt.com"),
   domain("ko.com.ua"),
   domain("kv.by"),
@@ -425,7 +424,6 @@
   domain("ain.ua"),
   domain("bit.ua"),
   domain("budport.com.ua"),
-  domain("epravda.com.ua"),
   domain("ixbt.com"),
   domain("ko.com.ua"),
   domain("kv.by"),
@@ -1005,7 +1003,7 @@
 }
 
 @-moz-document
-  domain("baskino.me"),
+  domain("baskino.film"),
   domain("dnepr.info"),
   domain("dugtor.ru"),
   domain("filmitorrent.net"),
@@ -1865,28 +1863,6 @@
     }
     body {
         overflow: auto !important
-    }
-}
-
-@-moz-document domain("epravda.com.ua") {
-    body {
-        cursor: auto !important
-    }
-    .right_column_aside > .block {
-        margin-top: auto !important
-    }
-    body > div[align="center"] {
-        width: auto !important;
-        margin: 0 !important
-    }
-}
-
-@-moz-document
-  domain("epravda.com.ua"),
-  domain("seasonvar.ru"),
-  domain("uniondht.org") {
-    body:not(#id), html:not(#id) {
-        padding: 0 !important
     }
 }
 
@@ -4458,6 +4434,14 @@
 @-moz-document domain("season-var.net") {
     #main-wrapper {
         top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("seasonvar.ru"),
+  domain("uniondht.org") {
+    body:not(#id), html:not(#id) {
+        padding: 0 !important
     }
 }
 
