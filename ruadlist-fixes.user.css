@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240316.1232
+@version        0.20240316.2209
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1007,6 +1007,7 @@
   domain("dnepr.info"),
   domain("dugtor.ru"),
   domain("filmitorrent.net"),
+  domain("filmitorrent.site"),
   domain("ixbt.com"),
   domain("jetsetter.ua"),
   domain("kinoafisha.ua"),
@@ -1017,6 +1018,7 @@
   domain("pay-day.ru"),
   domain("roem.ru"),
   domain("trupornolabs.org"),
+  domain("utorr.cc"),
   domain("vc.ru"),
   domain("virusinfo.info"),
   domain("wikianime.tv"),
@@ -1959,7 +1961,10 @@
     }
 }
 
-@-moz-document domain("filmitorrent.site") {
+@-moz-document
+  domain("filmitorrent.net"),
+  domain("filmitorrent.site"),
+  domain("utorr.cc") {
     body > #container {
         margin-top: 0 !important
     }
