@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240316.1016
+@version        0.20240316.1232
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1325,7 +1325,6 @@
 
 @-moz-document
   domain("cinema-hd.ru"),
-  domain("dc-marvel.org"),
   domain("filmshd.vip"),
   domain("goodfilms.su"),
   domain("kinoxa.cc"),
@@ -5330,6 +5329,12 @@
     }
     [data-test="sticky-header"] > div {
         max-width: 1280px !important
+    }
+}
+
+@-moz-document domain("www.fontanka.ru") {
+    #onesignal-promt-target > div:first-child {
+        display: none !important
     }
 }
 
