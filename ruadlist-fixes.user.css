@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240317.2332
+@version        0.20240318.1606
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1702,25 +1702,25 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #teaser, #ya-dist, .adv-ecom, 
+    #dzen-header ~ [id*="teaser"], #teaser, #ya-dist, .adv-ecom, 
     .article-recommender__feed-container article > div + div, 
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
-    [class*="folo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label]), 
+    [class*="foolo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label]), 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside[id^="article_"][class*="_rgiht"] > div[class], 
+    aside[id^="article_"][class*="_riht"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
-    div[class*="article__"] > .undefined ~ div[class*="midll"] > div[id][class], 
+    div[class*="article__"] > .undefined ~ div[class*="midldle"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
-    div[class*="idjet__container"] > div[class*="idjet__"] ~ div, 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
+    div[class*="widiet__container"] > div[class*="widiet__"] ~ div, 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
     div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div, 
-    div[id][class$="__ad"] {
+    div[id*="splashscreen"], div[id][class$="__ad"] {
         display: none !important
     }
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] {
