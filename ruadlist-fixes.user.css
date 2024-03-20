@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240319.2013
+@version        0.20240320.1914
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2145,26 +2145,6 @@
   domain("turkcinema.org") {
     #page {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("freekeys.club") {
-    #keysbox {
-        display: block !important
-    }
-    #time {
-        display: none !important
-    }
-}
-
-@-moz-document
-  domain("freekeys.club"),
-  domain("w98008mo.beget.tech") {
-    #modal-overlay, #modal-window {
-        display: none !important
-    }
-    body {
-        overflow: auto !important
     }
 }
 
@@ -5235,6 +5215,15 @@
     }
     body {
         position: unset !important
+    }
+}
+
+@-moz-document domain("w98008mo.beget.tech") {
+    #modal-overlay, #modal-window {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
     }
 }
 
