@@ -121,7 +121,6 @@ sport.ua###b_sport_240
 prestige-gaming.ru###back_brd
 westudents.com.ua###ban > #lin
 westudents.com.ua###ban noindex
-meteonova.ru###ban_200
 meteonova.ru###ban_500
 online.ua###ban_news_r
 sport.ua###bann-240
@@ -2083,6 +2082,12 @@ lfl.ru##.block_sidebar.banner-video ~ .block
 bfm.ru##.block_smi
 kvnews.ru##.block_sponsor
 igrhost.ru##.block_top
+meteonova.ru#?#.block_top:-abp-has(> .block_title > .title > b:-abp-contains(РЕКЛАМА))
+meteonova.ru#?#.block_top:-abp-has(> .block_title > .title > b:-abp-contains(РЕКЛАМА)) + .block_content
+meteonova.ru#?#.block_top:-abp-has(> .block_title > .title > b:-abp-contains(РЕКЛАМА)) + .block_content + .block_bottom
+meteonova.ru#?#.block_top:-abp-has(> div:empty)
+meteonova.ru#?#.block_top:-abp-has(> div:empty) + div
+meteonova.ru#?#.block_top:-abp-has(> div:empty) + div + .block_bottom
 isport.ua##.block_top_banner
 armourbook.com#?#.blocklite:-abp-has(> div > [class]:-abp-contains(Реклама))
 pogodavtomske.ru#?#.blockm:-abp-has(> #sela)
@@ -3359,6 +3364,7 @@ avtoradio.ua##.main__row > .tns-outer + .controls
 nrj.ua##.main__slider
 dv-gazeta.info##.main_ad728x90
 csgolife.ru##.main_block > center > .slider
+meteonova.ru##.main_container[style*="90px"]
 vbryanske.com##.main_content > noindex
 uvelir.info##.main_frame > div[style="float:left; width:245px; height:130px;"]
 fbc.biz.ua##.main_header > .full_width > a[target="_blank"] > img
