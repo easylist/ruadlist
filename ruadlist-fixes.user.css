@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240321.1133
+@version        0.20240323.1457
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3153,18 +3153,6 @@
     }
     .main_shift {
         height: 100px !important
-    }
-}
-
-@-moz-document domain("life.ru") {
-    .banner-mylife, .banner-mylife-backdrop, 
-    .banner-mylife-visible > div[class^="arcticmodal-"], .nagscreen, 
-    body > .arcticmodal-overlay[style*="opacity: 0.6"] {
-        display: none !important
-    }
-    body:not(#id) {
-        overflow: auto !important;
-        margin-right: auto !important
     }
 }
 
