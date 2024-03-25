@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240325.1326
+@version        0.20240325.2033
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4870,6 +4870,15 @@
 @-moz-document domain("torent-igruha.com") {
     body > .header-menu-bg {
         margin-bottom: 0 !important
+    }
+}
+
+@-moz-document domain("tornado.3dn.ru") {
+    .wrap {
+        cursor: default !important
+    }
+    .wraps {
+        margin-top: 0 !important
     }
 }
 
