@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240323.1457
+@version        0.20240325.1326
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -73,8 +73,8 @@
   domain("v1.ru"),
   domain("vladivostok1.ru"),
   domain("voronezh1.ru") {
-    .right-column-container > .right-column > div, noindex > div[class]:empty {
-        height: auto !important
+    div[class^="articleBlockViqeo_"][class*="notReady_"] {
+        padding-bottom: unset !important
     }
 }
 
