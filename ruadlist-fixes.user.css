@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240326.1130
+@version        0.20240327.1237
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5519,7 +5519,8 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.uz") {
-    .DirectInline, .serp.main__carousel:not([data-bem*="collectionId"]), 
+    #rsya-guarantee, .DirectInline, 
+    .serp.main__carousel:not([data-bem*="collectionId"]), 
     [data-vnl*="rsya_guarantee"], div[class*="Images"] .SimpleSkeleton, 
     div[class*="Images"] div[class*="-Card_bottomAdv"], 
     div[class*="Images"] div[class*="_filled"][style^="max-width:"], 
