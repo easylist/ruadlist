@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240329.1245
+@version        0.20240330.1430
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -456,14 +456,6 @@
     }
     #subbody {
         top: auto !important
-    }
-}
-
-@-moz-document
-  domain("alarfilm.ru"),
-  domain("hlamer.ru") {
-    body {
-        background-color: #596c84 !important
     }
 }
 
@@ -1947,6 +1939,14 @@
 @-moz-document domain("filebase.ws") {
     body > .root {
         top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("filma24.ru"),
+  domain("hlamer.ru") {
+    body {
+        background-color: #596c84 !important
     }
 }
 
