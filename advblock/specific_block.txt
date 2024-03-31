@@ -21,7 +21,7 @@
 ||clickthis.blog^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.reddit.com *.twitter.com *.wp.com *.io *.net *.org
 ||coollib.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.dev *.io *.net *.org *.ru
 ||crossout.net/*free?*&r=$csp=sandbox allow-same-origin;
-||d3ward.github.io/toolz/adblock$csp=connect-src 'self'
+||d3ward.github.io/toolz/adblock$csp=connect-src 'self'; script-src https://d3ward.github.io/toolz/js/adblock.js
 ||drive.google.com/file/d/1VmzdhLB_-DcnBtUbKfQPnNvsEp_2gnsy/$csp=script-src
 ||driverpack.io^$csp=sandbox allow-same-origin;
 ||driverpaksolution.ru^$csp=sandbox allow-same-origin;
@@ -1034,7 +1034,6 @@ lada.kz/uploads/banners/
 ||cyberstatic.net/clientscript/edu/prtnrsWidget
 ||czx.to/images/flama/
 ||d2wl3qmk54t3ha.cloudfront.net^
-||d3ward.github.io/toolz/js/partner.ads.js
 ||da.advooble.kz/
 ||da.rus-atlas.ru^$script,domain=rus-atlas.ru
 ||da.rus-map.ru/
