@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240404.1113
+@version        0.20240405.152
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1707,6 +1707,8 @@
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
     div[class*="article__"] > .undefined ~ div[class*="mldlle"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
+    div[class*="grid__adaptiveGridContainer"] > div > article:not([aria-label]), 
+    div[class*="hasBlackHeader"] > div[class^="header-widgets"] ~ div, 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class*="widjet__container"] > div[class*="widjet__"] ~ div, 
     div[class^="auto-slide-ad__container"], 
