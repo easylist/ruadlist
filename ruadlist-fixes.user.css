@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240403.2152
+@version        0.20240404.1113
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2390,6 +2390,13 @@
 @-moz-document domain("gol.ru") {
     .wrapper__content-inner:not(#id) {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("goodfon.ru") {
+    .wallpapers > [class^="wallpapers__item"] {
+        margin-right: unset !important;
+        width: 320px !important
     }
 }
 
