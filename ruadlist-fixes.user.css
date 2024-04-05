@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240405.1412
+@version        0.20240405.1451
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1431,14 +1431,6 @@
     }
 }
 
-@-moz-document
-  domain("cunofilms.ru"),
-  domain("hlamer.ru") {
-    body {
-        background-color: #596c84 !important
-    }
-}
-
 @-moz-document domain("cursorinfo.co.il") {
     #cmp-iframe {
         display: none !important
@@ -2568,6 +2560,14 @@
     }
     body > noindex {
         display: none !important
+    }
+}
+
+@-moz-document
+  domain("hlamer.ru"),
+  domain("ru") {
+    body[style*="://image.krasview.ru/channel"] {
+        background-color: #596c84 !important
     }
 }
 
