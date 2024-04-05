@@ -1746,7 +1746,8 @@ rbc.ru##[data-vr-zone="Витрина Pro"]
 rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href^="https://pro.rbc.ru/"])
 warspot.ru##[data-wgcds-place]
-ozon.ru##[data-widget="skuShelfGoods"]
+ozon.ru##[data-widget-disallow] > [data-widget="skuGrid"]
+ozon.ru##[data-widget="skuShelfGoods"] + [data-widget="skuShelfGoods"]
 kp.kg,kp.kz,kp.md,kp.ru##[data-without-height] + div
 nv.ua##[data-youtube-promo-for-remove]
 sxnarod.com##[href$="?act=acquaintance"] > img[src^="/image/"]
@@ -2097,6 +2098,7 @@ sport.ua##header > div[class^="help"]
 elitesnooker.com##header > span[id]
 azbooki.ru,engisys.ru,zip1000.ru##html > div[style^="color: rgb"]
 ozon.ru##html:not([style*="overflow:"]) [data-widget="skuGrid"]
+ozon.ru##html:not([style*="overflow:"]) [data-widget="skuShelfGoods"]:not(:only-child)
 computer76.ru##iframe[data-src^="https://forms.yandex.ru/"]
 forums.ati.su,loads.ati.su,tm.ati.su,trucks.ati.su##iframe[src*="//news.ati.su/external/last-news/"]
 currenttime.tv##iframe[src*="/a/signup-sidebar-widget/"]
