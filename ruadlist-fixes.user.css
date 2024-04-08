@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240408.1118
+@version        0.20240408.2306
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -502,11 +502,8 @@
 }
 
 @-moz-document domain("allbasketball.org") {
-    .page-content {
+    .page-content, aside > div.overflow-hidden + .block-sidebar-wrapper {
         margin-top: 0 !important
-    }
-    aside > div.overflow-hidden + .block-sidebar-wrapper {
-        margin-top: 0px !important
     }
 }
 
@@ -3748,6 +3745,9 @@
 @-moz-document domain("nnmclub.to") {
     body {
         background: none !important
+    }
+    .postquotehref {
+        position: inherit !important
     }
     body > .wrap {
         top: 0 !important
