@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240405.1451
+@version        0.20240408.1118
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -501,19 +501,12 @@
     }
 }
 
-@-moz-document
-  domain("allbasketball.org"),
-  domain("bit.ua"),
-  domain("gidonline.fun"),
-  domain("greenpost.ua"),
-  domain("kinoboom.su"),
-  domain("kinogo-720.net"),
-  domain("repackov.net"),
-  domain("sportboom.info"),
-  domain("urologypro.ru"),
-  domain("virusinfo.info") {
-    body:not(#id) {
+@-moz-document domain("allbasketball.org") {
+    .page-content {
         margin-top: 0 !important
+    }
+    aside > div.overflow-hidden + .block-sidebar-wrapper {
+        margin-top: 0px !important
     }
 }
 
@@ -1052,6 +1045,21 @@
         left: 0 !important;
         width: 100% !important;
         margin-left: 0 !important
+    }
+}
+
+@-moz-document
+  domain("bit.ua"),
+  domain("gidonline.fun"),
+  domain("greenpost.ua"),
+  domain("kinoboom.su"),
+  domain("kinogo-720.net"),
+  domain("repackov.net"),
+  domain("sportboom.info"),
+  domain("urologypro.ru"),
+  domain("virusinfo.info") {
+    body:not(#id) {
+        margin-top: 0 !important
     }
 }
 
@@ -4100,6 +4108,15 @@
     }
     .page-width {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("praca.by") {
+    body.modal-open > #cookie-confirm, body.modal-open > .modal-backdrop {
+        display: none !important
+    }
+    body.modal-open {
+        overflow: auto !important
     }
 }
 
