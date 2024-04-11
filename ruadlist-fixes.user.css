@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240410.1204
+@version        0.20240411.1423
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1703,7 +1703,7 @@
     #dzen-header ~ [id*="teaser"], #teaser, #ya-dist, .adv-ecom, 
     .article-recommender__feed-container article > div + div, 
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
-    [class*="foloors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]), 
+    [class*="foloors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id]), 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     aside[id^="article_"][class*="_rhgd"] > div[class], 
@@ -1713,6 +1713,7 @@
     div[class*="adaptiveGridContainer"] > div > article:not([aria-label]), 
     div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
+    div[class*="hasBlackHeader"] > [id*="teaser"], 
     div[class*="hasBlackHeader"] > div[class^="header-widgets"] ~ div, 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class*="widjet__container"] > div[class*="widjet__"] ~ div, 
