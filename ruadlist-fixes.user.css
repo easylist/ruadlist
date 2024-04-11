@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240411.1423
+@version        0.20240411.2216
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3716,6 +3716,12 @@
   domain("sportmail.ru") {
     div[data-module="LazyLoad.PromoPopup"] .js-module.block {
         display: none !important
+    }
+}
+
+@-moz-document domain("newsland.com") {
+    .main__branding {
+        margin-top: 0 !important
     }
 }
 
