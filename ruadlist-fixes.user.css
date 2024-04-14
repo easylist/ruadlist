@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240414.1346
+@version        0.20240415.108
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -993,7 +993,6 @@
   domain("dugtor.ru"),
   domain("filmitorrent.net"),
   domain("filmitorrent.site"),
-  domain("ixbt.com"),
   domain("jetsetter.ua"),
   domain("kinoafisha.ua"),
   domain("kinobar.vip"),
@@ -2793,9 +2792,10 @@
     body {
         background-color: white !important
     }
+    .b-content__pagecontent > .b-content--wrapper > .g-grid, 
     body:not(#id) > .b-content.b-content__breadcrumbs, 
     body:not(#id) > .b-content__pagecontent {
-        margin-top: 0 !important
+        margin-top: unset !important
     }
 }
 
