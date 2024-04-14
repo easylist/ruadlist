@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240414.1315
+@version        0.20240414.1341
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -562,7 +562,6 @@
   domain("animebest.tv"),
   domain("animedia.life"),
   domain("animevost.best"),
-  domain("anistar.ru"),
   domain("kinogo-net.la"),
   domain("senpai.cc"),
   domain("yummyanime.life") {
@@ -782,6 +781,13 @@
     }
     .drowmenu {
         z-index: 1999999999 !important
+    }
+}
+
+@-moz-document domain("anistars.ru") {
+    #wr-bg {
+        padding-top: 60px !important;
+        margin-top: unset !important
     }
 }
 
