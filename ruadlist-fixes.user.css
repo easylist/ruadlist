@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240415.1224
+@version        0.20240415.1814
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3722,6 +3722,14 @@
 }
 
 @-moz-document domain("newsland.com") {
+    .news-line > .news-line__block {
+        -webkit-animation: none !important;
+        animation: none !important
+    }
+    .news-line > .news-line__block:hover {
+        -webkit-animation: scroll 30s linear 0s infinite !important;
+        animation: scroll 30s linear 0s infinite !important
+    }
     .main__branding {
         margin-top: 0 !important
     }
