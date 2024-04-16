@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240416.1341
+@version        0.20240416.2154
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4599,6 +4599,12 @@
     }
     body.popup {
         overflow:auto !important
+    }
+}
+
+@-moz-document domain("sport-express.ua") {
+    .main-container {
+        margin-top: 0 !important
     }
 }
 
