@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240420.1605
+@version        0.20240424.1052
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1705,19 +1705,18 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #dzen-header ~ [id*="teaser"], #teaser, #ya-dist, .adv-ecom, 
-    .article-recommender__feed-container article > div + div, 
+    #dzen-header ~ [id*="teaser"], #teaser, #ya-dist, ._is-floor-with-ds-cards, 
+    .adv-ecom, .article-recommender__feed-container article > div + div, 
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
-    [class*="fololors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id]), 
+    [class*="foloolors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id]), 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside[id^="article_"][class*="_rhpd"] > div[class], 
+    aside[id^="article_"][class*="rlhpdt"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="BlackHeader"] > div[class^="header-widgets"] ~ div, 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
-    div[class*="adaptiveGridContainer"] > div > article:not([aria-label]), 
-    div[class*="article__"] > .undefined ~ div[class*="midlie"] > div[id][class], 
+    div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="hasBlackHeader"] > [id*="teaser"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
