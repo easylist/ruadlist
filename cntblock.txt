@@ -1231,8 +1231,6 @@ dzen.*##div[class*="widgetContainer"] div[style^="padding-top:"][style*="positio
 dzen.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid)
 dzen.*,yandex.*##.b-statcounter + div[class] > div[id][class]:style(display: none !important)
 dzen.*,yandex.*##.mg-grid__col div[class*="_type_native"]:style(display: none !important)
-frontend.vh.yandex.*##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
-frontend.vh.yandex.*##+js(set-constant, Object.prototype.initialAutoplay, false)
 mail.yandex.*##+js(remove-attr, data-link-id, a, stay)
 mail.yandex.*##+js(set-constant, Daria.AdvPresenter._config, {})
 mail.yandex.*##.mail-App-Footer-Item > [href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
