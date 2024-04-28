@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240424.1751
+@version        0.20240428.1734
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1069,6 +1069,12 @@
     }
 }
 
+@-moz-document domain("blisch.by") {
+    #page {
+        padding-top: 0 !important
+    }
+}
+
 @-moz-document domain("blitz.if.ua") {
     aside#sidebar {
         min-height: auto !important
@@ -1716,6 +1722,7 @@
     div[class*="BlackHeader"] > div[class^="header-widgets"] ~ div, 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
+    div[class*="__widjed-"] > [class*="__container"] > div[class*="__"] ~ div, 
     div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="hasBlackHeader"] > [id*="teaser"], 
@@ -2936,7 +2943,7 @@
 
 @-moz-document
   domain("kinokong.pro"),
-  domain("kinokrad.cc") {
+  domain("kinokrad.film") {
     #wrapper:not(#id) {
         margin-top: 67px !important
     }
@@ -4276,7 +4283,7 @@
 @-moz-document
   domain("regnum.news"),
   domain("regnum.ru") {
-    .page-column > div[class*="-adv-container"] {
+    .page-column > .right-adv-container {
         top: 100px !important
     }
 }
@@ -4871,10 +4878,6 @@
 @-moz-document domain("thg.ru") {
     body {
         background: whitesmoke !important
-    }
-    body > div[style*='1010'] {
-        width: auto !important;
-        margin-top: 0 !important
     }
 }
 
