@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240429.2212
+@version        0.20240430.121
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3338,7 +3338,8 @@
     body > .zeropixel ~ * .stripe-wrapper, 
     body > .zeropixel ~ * [class*="tgb-wrap"], 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
-    body:not(.js-module) .searchContainer ~ div > a.dmb {
+    body:not(.js-module) .searchContainer ~ div > a.dmb, 
+    main#grid > .grid-middle ~ div:not([class]):not([id]) {
         display: none !important
     }
     .weather_right-column .weather__block {
