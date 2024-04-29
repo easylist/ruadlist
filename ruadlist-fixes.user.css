@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240428.1734
+@version        0.20240429.1412
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1003,6 +1003,7 @@
   domain("nnmclub.to"),
   domain("pay-day.ru"),
   domain("roem.ru"),
+  domain("rusfootball.info"),
   domain("trupornolabs.org"),
   domain("utorr.cc"),
   domain("vc.ru"),
@@ -1733,7 +1734,7 @@
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
-    div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div, 
+    div[class^="feed__"] > div:not([class]) > article:not([aria-label]) > div:first-child ~ div, 
     div[id*="splashscreen"], div[id][class$="__ad"] {
         display: none !important
     }
@@ -4370,12 +4371,6 @@
     }
     body > section[class*="section details"] {
         padding-top: 70px !important
-    }
-}
-
-@-moz-document domain("rusfootball.info") {
-    #wrap {
-        margin-top: auto !important
     }
 }
 
