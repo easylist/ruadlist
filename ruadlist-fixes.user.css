@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240429.1614
+@version        0.20240429.2212
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5367,9 +5367,13 @@
 }
 
 @-moz-document domain("www.ivi.ru") {
+    .headerNotify_hasUnread .nbl-simpleControlButton {
+        animation: none !important
+    }
     body.watch > div[class]:not([id]):not([style]):nth-child(-n+2) {
         background: none !important
     }
+    .rollPlus, 
     body.watch > div[class]:not([id]):not([style]):nth-child(-n+2) > style + .content {
         display: none !important
     }
