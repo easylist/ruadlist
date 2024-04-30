@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240430.121
+@version        0.20240430.1736
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3611,7 +3611,7 @@
 @-moz-document domain("my.mail.ru") {
     #history_container > div[class][style*="display: block!important"], 
     .app-event-bubbles, .b-history__adv-post-carousel, .l-app__left, 
-    .l-app__right, .sp-video__billboard, 
+    .l-app__right, 
     :not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"], 
     div[class^="app-adv-"], html.window-loaded .b-video-backscreen {
         display: none !important
@@ -4814,6 +4814,15 @@
     }
     aside > div[class^="NavPanel_nav"] {
         width: unset !important
+    }
+}
+
+@-moz-document domain("techinsider.ru") {
+    .preview-section .vertical-video__loader {
+        display: none !important
+    }
+    .preview-section .vertical-video__play-icon-wrapper {
+        display: unset !important
     }
 }
 
