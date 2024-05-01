@@ -177,7 +177,7 @@ blackwot.ru##+js(abort-on-stack-trace, document.getElementsByTagName, adsBlocked
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
-autonews.co.ua,liveball.cc,liveball.uno##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
+autonews.co.ua,liveball.cc,liveball.uno,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /smartweek/)
