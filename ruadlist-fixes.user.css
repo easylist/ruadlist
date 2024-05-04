@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240430.1736
+@version        0.20240504.2300
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1712,26 +1712,28 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #dzen-header ~ [id*="teaser"], #teaser, #ya-dist, ._is-floor-with-ds-cards, 
-    .adv-ecom, .article-recommender__feed-container article > div + div, 
+    #dzen-header ~ [id*="teaser"], #teaser, #ya-dist, 
+    ._feed-type_article_showcase div[class*="intersected"], 
+    ._is-floor-with-ds-cards, .adv-ecom, 
+    .article-recommender__feed-container article > div + div, 
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
-    [class*="foloolors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id]), 
+    [class*="fllors"] div[id][class^="feed"] article[aria-label] ~ div, 
     [data-testid] div[class^="adaptive-card-grid__container"] > div[class=""], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside[id^="article_"][class*="rlhpdt"] > div[class], 
+    aside[id^="article_"][class*="rlphdt"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="BlackHeader"] > div[class^="header-widgets"] ~ div, 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
     div[class*="__widjed-"] > [class*="__container"] > div[class*="__"] ~ div, 
-    div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class], 
+    div[class*="article__"] > .undefined ~ div[class*="mldlei"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="hasBlackHeader"] > [id*="teaser"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
-    div[class*="widgets__container"] > div[class*="widgets__"] ~ div, 
-    div[class^="article-header"][class*="adWrapper"], 
-    div[class^="article-header"][class*="myTarget"], 
+    div[class*="wldjed"] > div[class*="container"] > div ~ div, 
+    div[class^="article-page"] [class*="adWrapper"], 
+    div[class^="article-page"] [class*="myTarget"], 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
@@ -3635,6 +3637,10 @@
 @-moz-document domain("myshows.me") {
     .DefaultLayout-main {
         margin-top: 0 !important
+    }
+    body {
+        padding-right: unset !important;
+        overflow: auto !important
     }
 }
 
