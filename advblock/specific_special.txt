@@ -35,17 +35,10 @@
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.29.px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
-pikabu.ru#?#.sidebar-block div:-abp-properties(content: "")
-pikabu.ru##.sidebar-block_border[style*="transparent"]
-pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
-pikabu.ru#?#.stories-feed__container > .story div:-abp-properties(/min-height: .+.cm/)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> div > header[class*=" "])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: calc.29.px/))
+pikabu.ru#?#.story__header:-abp-has(> div:empty)
 fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
-pikabu.ru##[data-block-name]
 liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
@@ -55,16 +48,12 @@ cq.ru#?#div:-abp-properties(content: "Реклама")
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm|pt)|height: 250px/)
 pikabu.ru##div[class*="page-story__"] div[style=""]
-pikabu.ru##div[class*="sidebar-block_border"][style*="border"]
 sdamgia.ru##div[class^="google_ad_left"]
 liveinternet.ru,pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
-pikabu.ru##div[href]
 rg.ru##div[id][class*="__"]:empty
 sdamgia.ru##div[id^="yandex_vario"]
 liveinternet.ru##div[style*="!important; "]
-pikabu.ru##div[style*="important;"][style*="width:"][style*="height:"]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
-pikabu.ru##div[style^="width: 300px; height:"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
