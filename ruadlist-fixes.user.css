@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240504.2300
+@version        0.20240507.1333
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4133,15 +4133,6 @@
     }
 }
 
-@-moz-document domain("praca.by") {
-    body.modal-open > #cookie-confirm, body.modal-open > .modal-backdrop {
-        display: none !important
-    }
-    body.modal-open {
-        overflow: auto !important
-    }
-}
-
 @-moz-document domain("prikol.ru") {
     html > body {
         background-image:none !important;
@@ -5603,10 +5594,9 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.uz") {
-    .Root > .ECommerceCarousel, ._map_ready .search-advert-badge__advert, 
-    ._map_ready .search-list-view__advert-offer-banner, .adv_pos_compare-bottom, 
-    .adv_pos_compare-side, .adv_pos_popup, 
-    .blocks-grid__item_static > .direct_type_stripe, 
+    .Root > .ECommerceCarousel, .adv_pos_compare-bottom, .adv_pos_compare-side, 
+    .adv_pos_popup, .blocks-grid__item_static > .direct_type_stripe, 
+    .search-advert-badge__advert, .search-list-view__advert-offer-banner, 
     .serp.main__carousel .Label_theme_direct, 
     .sidebar-container ._id_branding_tele2, 
     .sidebar-container .card-providers-view__item._big, 
