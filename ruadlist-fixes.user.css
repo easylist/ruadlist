@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240507.1333
+@version        0.20240509.1301
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1717,17 +1717,18 @@
     ._is-floor-with-ds-cards, .adv-ecom, 
     .article-recommender__feed-container article > div + div, 
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
-    [class*="fllors"] div[id][class^="feed"] article[aria-label] ~ div, 
+    [class*="flloros"] div[id][class^="feed"] article[aria-label] ~ div, 
     [data-testid] div[class^="adaptive-card-grid__container"] > div[class=""], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside[id^="article_"][class*="rlphdt"] > div[class], 
+    aside[id^="article_"][class*="rilphdt"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="BlackHeader"] > div[class^="header-widgets"] ~ div, 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
-    div[class*="__widjed-"] > [class*="__container"] > div[class*="__"] ~ div, 
-    div[class*="article__"] > .undefined ~ div[class*="mldlei"] > div[id][class], 
+    div[class*="__wildjed-"] > [class*="__container"] > div[class*="__"] ~ div, 
+    div[class*="_articleUnderHeaderTop"], 
+    div[class*="article__"] > .undefined ~ div[class*="mlldlei"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="hasBlackHeader"] > [id*="teaser"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
@@ -3241,6 +3242,7 @@
 @-moz-document
   domain("lostfilm.download"),
   domain("lostfilm.life"),
+  domain("lostfilm.one"),
   domain("lostfilm.pro"),
   domain("lostfilm.space"),
   domain("lostfilm.today"),
@@ -3250,10 +3252,8 @@
   domain("lostfilm.win"),
   domain("lostfilmtv.site"),
   domain("lostfilmtv.uno"),
-  domain("lostfilmtv1.site"),
   domain("lostfilmtv2.site"),
   domain("lostfilmtv3.site"),
-  domain("lostfilmtv4.site"),
   domain("lostfilmtv5.site") {
     body {
         background-image: none !important;
