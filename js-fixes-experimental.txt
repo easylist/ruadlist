@@ -211,6 +211,7 @@ lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 vz.ru##+js(href-sanitizer, a[href^="/redir/"], ?exturl)
 vz.ru##+js(href-sanitizer, a[href^="/redir/"], ?vzurl)
+nsportal.ru##+js(href-sanitizer, a[href^="https://www.google.com/url?q="])
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
 uma.media##+js(json-prune, appearance.extended_auto_start)
 ivanovonews.ru##+js(json-prune, banner.ytcode)
