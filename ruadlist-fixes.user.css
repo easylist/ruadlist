@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240517.1834
+@version        0.20240520.1156
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1728,7 +1728,7 @@
     div[class*="_articleUnderHeaderTop"], 
     div[class*="article__"] > .undefined ~ div[class*="mlildlei"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
-    div[class*="hasBlackHeader"] > [id*="teaser"], 
+    div[class*="hasBlackHeader"] > [id*="teaser"], div[class*="shouldShow"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class*="witejet"] > div[class*="container"] > div ~ div, 
     div[class^="article-page"] [class*="adWrapper"], 
@@ -1737,7 +1737,9 @@
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
     div[class^="feed__"] > div:not([class]) > article:not([aria-label]) > div:first-child ~ div, 
-    div[id*="splashscreen"], div[id][class$="__ad"] {
+    div[class^="floor-card-"] [style="width: 100%;"], 
+    div[class^="floor-card-"] div[class*="-flouurs-"], div[id*="splashscreen"], 
+    div[id][class$="__ad"] {
         display: none !important
     }
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] {
