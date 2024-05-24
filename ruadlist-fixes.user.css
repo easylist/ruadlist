@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240524.1350
+@version        0.20240524.2033
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1720,7 +1720,7 @@
     .article-page-layout div[class*="-top-"] > div[class*="_position_"], 
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
     [class*="desktop"] ~ [id*="teaser"], 
-    [class*="foros"] div[id][class^="feed"] article[aria-label] ~ div, 
+    [class^="card-part-wrapper"] ~ div[class=""], 
     [class^="dzen-desktop"] ~ div[id$="-popup"], 
     [data-testid="recommend-auth-popup"], 
     [data-testid] div[class^="adaptive-card-grid__container"] > div[class=""], 
