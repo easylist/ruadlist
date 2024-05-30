@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240530.1106
+@version        0.20240530.1132
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1252,20 +1252,6 @@
     }
     #main {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("cartoonka.art"),
-  domain("multmania.club") {
-    body {
-        background: black !important
-    }
-    div[style="clear:both;"] > div[class]:first-child {
-        margin-top: 0 !important
-    }
-    #wrap[class*="menu"] {
-        position: static !important
     }
 }
 
