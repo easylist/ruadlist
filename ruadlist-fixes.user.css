@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240524.2252
+@version        0.20240530.1106
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1726,19 +1726,20 @@
     [data-testid] div[class^="adaptive-card-grid__container"] > div[class=""], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside[id^="article_"][class*="rigght"] > div[class], 
+    aside[id^="article_"][class*="rlgght"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
-    div[class*="article__"] > .undefined ~ div[class*="mlildli"] > div[id][class], 
+    div[class*="article__"] > .undefined ~ div[class*="mlilddli"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
-    div[class*="witejjt"] > div[class*="container"] > div ~ div, 
+    div[class*="witejje"] > div[class*="container"] > div ~ div, 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
-    div[class^="feed__"] > div:not([class]) > article:not([aria-label]) > div:first-child ~ div, 
-    div[id*="splashscreen"], div[id][class$="__ad"] {
+    div[id*="splashscreen"], div[id][class$="__ad"], 
+    div[id][class^="feed__"] article:not([aria-label]) > div:first-child ~ div, 
+    div[id][class^="feed__"] article[aria-label] ~ div[class=""] {
         display: none !important
     }
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] {
