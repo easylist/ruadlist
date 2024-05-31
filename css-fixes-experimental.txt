@@ -1609,7 +1609,6 @@ dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[cl
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
 dzen.ru##div[id][class$="__ad"]
 ! обфускация
-dzen.ru##._feed-type_article_showcase article:not([class*="card-"])
 dzen.ru##._is-for-video-floor
 dzen.ru##.article-page-layout div[class*="-top-"] > div[class*="_position_"]
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
@@ -1619,6 +1618,7 @@ dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
 dzen.ru##[data-testid="recommend-auth-popup"]
 dzen.ru##aside[id^="article_"][class*="rlgght"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
+dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card-"])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlilddli"] > div[id][class]
 dzen.ru##div[class*="witejje"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="splashscreen"]

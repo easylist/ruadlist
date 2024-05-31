@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240530.1132
+@version        0.20240531.1321
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1699,10 +1699,8 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #teaser, #ya-dist, 
-    ._feed-type_article_showcase article:not([class*="card-"]), 
-    ._is-floor-with-ds-cards, ._is-for-article-floor, ._is-for-video-floor, 
-    .adv-ecom, 
+    #teaser, #ya-dist, ._is-floor-with-ds-cards, ._is-for-article-floor, 
+    ._is-for-video-floor, .adv-ecom, 
     .article-page-layout div[class*="-top-"] > div[class*="_position_"], 
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
     [class*="desktop"] ~ [id*="teaser"], 
@@ -1716,6 +1714,7 @@
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
+    div[class*="_feed-type_article_"] article:not([class*="card-"]), 
     div[class*="article__"] > .undefined ~ div[class*="mlilddli"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
