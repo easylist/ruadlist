@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240531.1321
+@version        0.20240602.1134
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1717,6 +1717,7 @@
     div[class*="_feed-type_article_"] article:not([class*="card-"]), 
     div[class*="article__"] > .undefined ~ div[class*="mlilddli"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
+    div[class*="isFloorsFeed"] ~ article[id] ~ article:not([id]), 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class*="witejje"] > div[class*="container"] > div ~ div, 
     div[class^="auto-slide-ad__container"], 
