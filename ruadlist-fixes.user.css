@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240602.1134
+@version        0.20240605.1233
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2396,6 +2396,12 @@
   domain("sefon.cc") {
     html > body {
         padding-top: unset !important
+    }
+}
+
+@-moz-document domain("gotennis.ru") {
+    .page {
+        padding-top: 0 !important
     }
 }
 
