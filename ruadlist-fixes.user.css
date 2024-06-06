@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240606.1909
+@version        0.20240606.2257
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -57,6 +57,7 @@
   domain("chita.ru"),
   domain("e1.ru"),
   domain("ircity.ru"),
+  domain("izh1.ru"),
   domain("mgorsk.ru"),
   domain("msk1.ru"),
   domain("ngs.ru"),
@@ -66,7 +67,6 @@
   domain("ngs55.ru"),
   domain("ngs70.ru"),
   domain("nn.ru"),
-  domain("izh1.ru"),
   domain("sochi1.ru"),
   domain("sterlitamak1.ru"),
   domain("tolyatty.ru"),
@@ -1700,7 +1700,8 @@
 
 @-moz-document domain("dzen.ru") {
     #teaser, #ya-dist, ._is-floor-with-ds-cards, ._is-for-article-floor, 
-    ._is-for-video-floor, .adv-ecom, .article-page-layout div[class*="-top-"], 
+    ._is-for-video-floor, .adv-ecom, 
+    .article-page-layout > .main-container > div > div[id], 
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
     [class*="desktop"] ~ [id*="teaser"], 
     [class^="card-part-wrapper"] ~ div[class=""], 
@@ -1709,19 +1710,19 @@
     [data-testid] div[class^="adaptive-card-grid__container"] > div[class=""], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside[id^="article_"][class*="rlgght"] > div[class], 
+    aside[id^="article_"][class*="rilgght"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
     div[class*="_feed-type_article_"] article:not([class*="card-"]), 
-    div[class*="article__"] > .undefined ~ div[class*="mlilddli"] > div[id][class], 
+    div[class*="article__"] > .undefined ~ div[class*="mlilddlei"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
-    div[class*="isFloorsFeed"] ~ article[id] ~ article:not([id]), 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
-    div[class*="witejje"] > div[class*="container"] > div ~ div, 
+    div[class*="witedjjet"] > div[class*="container"] > div ~ div, 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
+    div[id*="long_video_floor"] article[id] ~ article:not([id]), 
     div[id*="splashscreen"], div[id][class$="__ad"], 
     div[id][class^="feed__"] article:not([aria-label]) > div:first-child ~ div, 
     div[id][class^="feed__"] article[aria-label] ~ div[class=""] {
