@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240606.2257
+@version        0.20240610.117
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -914,21 +914,6 @@
     }
 }
 
-@-moz-document
-  domain("autorambler.ru"),
-  domain("rambler.ru") {
-    #app div[style*="min-height:"][style*="250px"], .commercial-branding aside {
-        display: none !important
-    }
-    .commercial-branding > div script ~ div > div, 
-    .commercial-branding > div script ~ div > div:last-child div:first-child, 
-    .commercial-branding article > div > div + div + div div, 
-    .commercial-branding div[style^="min-height:"], 
-    div[style^="order:"][style*="-1"] {
-        min-height: 0 !important
-    }
-}
-
 @-moz-document domain("autoua.net") {
     .social-open {
         overflow: auto !important
@@ -1835,12 +1820,6 @@
     }
 }
 
-@-moz-document domain("eda.ru") {
-    #__next > div > section {
-        min-height: 0 !important
-    }
-}
-
 @-moz-document domain("edenland.com.ua") {
     .socials-popup {
         display: none !important
@@ -2293,14 +2272,6 @@
 @-moz-document domain("gazeta.ru") {
     #_id_main_content, .b_header {
         max-width: 100% !important
-    }
-}
-
-@-moz-document
-  domain("gazeta.ru"),
-  domain("rambler.ru") {
-    .stopper > #boxbox, .stopper > #boxfade {
-        display: none !important
     }
 }
 
@@ -3128,23 +3099,8 @@
 }
 
 @-moz-document domain("lenta.ru") {
-    .b-board._olimp {
-        border-bottom: none !important;
-        margin-top: 30px !important
-    }
     .longgrid-list__box {
         justify-content: unset !important
-    }
-    .b-board._olimp > .b-board__wrap {
-        margin-left: 0 !important
-    }
-}
-
-@-moz-document
-  domain("lenta.ru"),
-  domain("rambler.ru") {
-    .subscribe-popup {
-        display: none !important
     }
 }
 
@@ -3787,10 +3743,6 @@
 }
 
 @-moz-document domain("nova.rambler.ru") {
-    div[class^="DirectMKB"], 
-    div[class^="LayoutSearch"] section > article[class*=" Serp__item"]:not([class^=" Serp__item"]) {
-        display: none !important
-    }
     html > body:not(#id) {
         overflow: unset !important
     }
@@ -4187,12 +4139,6 @@
     }
     .main-wrapp__content {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("rambler.ru") {
-    .social-popup, .subscribe-popup-cover, .subscribe-popup__wrapper {
-        display: none !important
     }
 }
 

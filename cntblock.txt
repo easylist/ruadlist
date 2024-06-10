@@ -308,6 +308,7 @@ _pagespeed_beacon?
 ||auto.ru/static/yafp.html
 ||autodealer.ru/includes/button.php?
 ||avito.ru/stat/
+||avtorambler.com/metrics/
 ||awsync.yandex.ru^$third-party
 ||b2b.ainews.kz^$third-party
 ||banstat.nadavi.net^
@@ -599,7 +600,6 @@ _pagespeed_beacon?
 ||kinostok.net/stat/
 ||kissmetrics.com^$third-party
 ||konvert.guru^$third-party
-||kraken.rambler.ru^$third-party
 ||krutilka.price.ru/count_
 ||kz24.net/top/?
 ||l-shrcnt.livejournal.net^$third-party
@@ -1141,7 +1141,8 @@ lurkmo.re,lurkmore.to###p-counters
 game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_footer > .copyright > center:first-child
 fastpic.ru###picContainer > img
 happy-hack.net#?##side_right > .block_r:-abp-has(> div [href*="liveinternet.ru/"])
-apad2.top,game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-on-stack-trace, document.querySelectorAll, inlineScript)
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-on-stack-trace, document.head.appendChild, inlineScript)
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-on-stack-trace, document.querySelectorAll, inlineScript)
 otvet.mail.ru##+js(addEventListener-defuser, click, externalLink)
 online-fix.me##+js(no-setTimeout-if, / d[0-9]{1}/)
 search.ukr.net##+js(remove-attr, data-cturl, .searchresults a, stay)
@@ -1179,14 +1180,14 @@ pb.wtf,piratbit.org,piratbit.pw,piratbit.top,vidak.icu#?#.table > tbody[id^="pos
 @@||only-paper.ru/*/$script,domain=only-paper.ru
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
 tass.ru##[class^="Footer_liveinternet"]
-rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container-"])
+avtorambler.com,rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container-"])
 auto.*#@#.ImageGalleryFullscreenVertical__ad
-autorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(abort-on-stack-trace, Object.prototype.getBaseFingerprint, inlineScript)
-autorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(json-prune, Blocks)
-autorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##^script:has-text('getPrefixes')
-autorambler.*,rambler.*,~www.rambler.*##.pub_300x250.text-ad-links.adbanner.ad.text_ad.pub_728x90.text-ad.nav-ad.text-ads.textAd.ad-banner.text_ads.pub_300x250m:style(display: block !important)
+avtorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(abort-on-stack-trace, Object.prototype.getBaseFingerprint, inlineScript)
+avtorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(json-prune, Blocks)
+avtorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##^script:has-text('getPrefixes')
+avtorambler.*,rambler.*,~www.rambler.*##.pub_300x250.text-ad-links.adbanner.ad.text_ad.pub_728x90.text-ad.nav-ad.text-ads.textAd.ad-banner.text_ads.pub_300x250m:style(display: block !important)
 inoreader.com##div[id^="leaderboard_ad"] > *
-autorambler.ru,rambler.ru##div[style^="--rc-loader-strokeDashoffset"]
+avtorambler.com,rambler.ru##div[style^="--rc-loader-strokeDashoffset"]
 dzen.*,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.hasPreroll, null)
 radioprofusion.com##footer > .counter
 horoscopes.rambler.*##+js(set-constant, Object.prototype.needShowAlicePopup, null)
@@ -1199,13 +1200,14 @@ nova.rambler.*##+js(abort-on-property-read, Object.prototype.AdvManager)
 online-fix.*#@#a[href*=":2053"]:remove-class(btn)
 only-paper.*#@#.adbanner
 rambler.*##[data-blocks="rec_block"]:style(display: none !important)
+avtorambler.com,rambler.ru#?#section > nav ~ div div:-abp-has(> div > [id^="rcmw-container-"])
 top100.rambler.*##body > div:not([id])[style="position: absolute; z-index: 10000;"]:style(display: none !important)
 ||browserleaks.com/proxy$csp=script-src 'unsafe-inline'
 ||footboom.com/dist/app/js/antiAdBlock-
 ||google-analytics.com^$domain=4pda.to|cdnvideo.ru|igromania.ru|rambler.ru
 ||googletagmanager.com/gtm.js$domain=5-tv.ru|censor.net|citilink.ru|dtf.ru|gazeta.ru|ixbt.com|ixbt.games|ixbt.market|ixbt.video|kp.kg|kp.kz|kp.md|kp.ru|kufar.by|lifehacker.ru|livejournal.com|motor.ru|nur.kz|point.md|rambler.ru|rbkgames.com|rutube.ru|sbermegamarket.ru|sports.ru|tsn.ua|tut.by|vc.ru
-||rcm.rambler.ru^$domain=championat.com|gazeta.ru|lenta.ru|rambler.ru
-||rcmjs.rambler.ru^$domain=autorambler.ru|championat.com|gazeta.ru|lenta.ru|rambler.ru
+||rcm.rambler.ru^$domain=avtorambler.com|rambler.ru|secretmag.ru
+||rcmjs.rambler.ru^$domain=avtorambler.com|rambler.ru
 ||storage.mds.yandex.net/get-canvas-html5/*.html?link1=$empty,subdocument
 ||yastatic.net/naydex/autoru/$script,redirect=empty
 !
