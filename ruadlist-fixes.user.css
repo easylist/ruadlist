@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240610.117
+@version        0.20240610.1228
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -943,6 +943,14 @@
         margin: 0 !important;
         min-height: 0 !important;
         padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("avtorambler.com"),
+  domain("rambler.ru") {
+    .commercial-branding > div script ~ div > div {
+        min-height: 0 !important
     }
 }
 
