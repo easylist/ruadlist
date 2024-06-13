@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240610.1228
+@version        0.20240613.1431
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -951,16 +951,6 @@
   domain("rambler.ru") {
     .commercial-branding > div script ~ div > div {
         min-height: 0 !important
-    }
-}
-
-@-moz-document
-  domain("axd.semestr.ru"),
-  domain("math.semestr.ru") {
-    .adsbygoogle, .well-google, .well-span {
-        max-height: 121px !important;
-        opacity: 0 !important;
-        pointer-events: none !important
     }
 }
 
@@ -4388,13 +4378,6 @@
   domain("uniondht.org") {
     body:not(#id), html:not(#id) {
         padding: 0 !important
-    }
-}
-
-@-moz-document domain("semestr.ru") {
-    body > .row {
-        margin-left: 0 !important;
-        margin-right: 0 !important
     }
 }
 
