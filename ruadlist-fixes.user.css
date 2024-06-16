@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240614.2116
+@version        0.20240616.1900
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -903,17 +903,6 @@
     }
 }
 
-@-moz-document
-  domain("auto.mail.ru"),
-  domain("horo.mail.ru"),
-  domain("kino.mail.ru"),
-  domain("lady.mail.ru"),
-  domain("tv.mail.ru") {
-    .cols__inner > noindex {
-        display: none !important
-    }
-}
-
 @-moz-document domain("autoua.net") {
     .social-open {
         overflow: auto !important
@@ -1324,11 +1313,9 @@
     div[class^="ReactViewer__root-"] {
         --bottom-banner-height: 1px !important
     }
-    div[class^="Datalistinfo__root"], div[class^="Folder__worm"], 
-    div[class^="Public-desktop__rightCol-"], 
+    div[class^="Datalistinfo__root"], div[class^="Public-desktop__rightCol-"], 
     div[class^="ReactViewer__attachesSidebarinfo-"], 
     div[class^="ReactViewer__attachesinfo-"], 
-    div[class^="ReactViewer__bottominfoWrapper-"], div[class^="Worm__root-"], 
     iframe[src^="https://o2.mail.ru/"] ~ div div[class^="ViewerHeader__closeIcon--"] {
         display: none !important
     }
@@ -1467,12 +1454,6 @@
     }
     html {
         overflow: auto !important
-    }
-}
-
-@-moz-document domain("deti.mail.ru") {
-    .deti-slot_exchange {
-        display: none !important
     }
 }
 
@@ -1754,14 +1735,8 @@
 }
 
 @-moz-document domain("e.mail.ru") {
-    #LEGO .b-rb, #LEGO div[id^="preload_banner"], #theme #LEGO #leftcol-banners {
-        display: none !important
-    }
     .ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"] {
         pointer-events: none !important
-    }
-    #LEGO > .b-sticky:first-child {
-        width: 100% !important
     }
 }
 
@@ -2465,16 +2440,6 @@
     }
 }
 
-@-moz-document
-  domain("health.mail.ru"),
-  domain("hi-tech.mail.ru"),
-  domain("news.mail.ru"),
-  domain("sportmail.ru") {
-    .branding-p {
-        display: none !important
-    }
-}
-
 @-moz-document domain("hellomagazine.com") {
     .footer {
         position: relative !important
@@ -2510,9 +2475,6 @@
 }
 
 @-moz-document domain("hi-tech.mail.ru") {
-    .cols_margin .link-hdr {
-        display: none !important
-    }
     #portal-menu, .header-banner {
         margin: 0 !important
     }
@@ -3274,8 +3236,8 @@
     }
     #bubble-home, #grid .feed__content, .asteroid-widgets, 
     .grid__main-col > .tgb-wrapper, 
-    .mailbox-container ~ [class] .widget__container, .ph-ext, 
-    .tabs-content .news-item_regular::after, 
+    .mailbox-container ~ [class] .widget__container, .mailbox__add-btn-logo, 
+    .ph-ext, .tabs-content .news-item_regular::after, 
     .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
@@ -3359,8 +3321,7 @@
 @-moz-document
   domain("mail.ru"),
   domain("sportmail.ru") {
-    #video-footer, .ph-balloon, a[id^="tb-"][class^="tb-"][target="_blank"], 
-    div[data-mp*="LazyPulse"] {
+    a[id^="tb-"][class^="tb-"][target="_blank"], div[data-mp*="LazyPulse"] {
         display: none !important
     }
 }
@@ -3555,8 +3516,7 @@
 
 @-moz-document domain("my.mail.ru") {
     #history_container > div[class][style*="display: block!important"], 
-    .app-event-bubbles, .b-history__adv-post-carousel, .l-app__left, 
-    .l-app__right, 
+    .app-event-bubbles, 
     :not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"], 
     div[class^="app-adv-"], html.window-loaded .b-video-backscreen {
         display: none !important
@@ -3648,10 +3608,6 @@
 }
 
 @-moz-document domain("news.mail.ru") {
-    #ratesTarget > div > div:first-child > div:first-child, 
-    div[data-view="MyWidgetView.SmokyExtend"] {
-        display: none !important
-    }
     body > .block > .tag {
         z-index: 1400 !important;
         cursor: pointer !important
@@ -4580,6 +4536,11 @@
 @-moz-document domain("sportmail.ru") {
     .layout_footer {
         margin-top: 20px !important
+    }
+    .p-article-bookmakers ~ div a[href^="https://r.mail.ru/"] {
+        pointer-events: none !important;
+        text-decoration: none !important;
+        color: inherit !important
     }
 }
 
