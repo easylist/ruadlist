@@ -398,9 +398,11 @@ love.mail.ru##.link-ad
 !
 ! Блокировка ресурсов в основном на самом mail.ru
 //r.mail.ru/b$subdocument
+//rs.mail.ru/b$third-party,domain=~km.ru
 ||1l-hit.mail.ru^
 ||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru
 ||an.mail.ru/count/$domain=~e.mail.ru|~o2.mail.ru
+||banners.mail.ru^$third-party
 ||bs.mail.ru^$image,domain=mail.ru
 ||horo.mail.ru/*/fast-slot.js
 ||mamba.ru/images/*/promo/
@@ -414,8 +416,10 @@ love.mail.ru##.link-ad
 ||r.mradx.net/r/$script
 ||radar.imgsmail.ru^
 ||rs.mail.ru^$domain=~account.mail.ru|~o2.mail.ru
+||showbiz.mail.ru^$third-party
 ||t.mail.ru/redir/$popup,domain=~e.mail.ru
 ||top-fwz1.mail.ru^$domain=~account.mail.ru|~o2.mail.ru
+||torg.mail.ru/prtnr/$third-party
 ||trk.mail.ru^$image,ping,script,xmlhttprequest
 ||xray.mail.ru^
 !
@@ -486,13 +490,9 @@ ok.ru##div[id^="hook_Block_FrOln4thCol"]
 ! Очень однобокая реклама Хрома + очень часто просят удалить
 ok.ru##.update-browser_container
 ! Блокировка
-//rs.mail.ru/b$third-party,domain=~km.ru
-||banners.mail.ru^$third-party
 ||ok.ru/dk|$xmlhttprequest
 ||ok.ru/res/js/app/RightColumn_*.js
-||showbiz.mail.ru^$third-party
 ||st.mycdn.me/res/i/anonym/jakobs/$image
-||torg.mail.ru/prtnr/$third-party
 ! Реклама, встроенная расширением OkTools)
 ok.ru##iframe[src^="//oktools.ru/page/static/"]
 ||oktools.ru/page/static/
