@@ -569,9 +569,8 @@ e.mail.ru##.b-datalist > div:matches-css(height: 39px):remove()
 e.mail.ru##.b-letter_thread > div > div:matches-css(height: 39px):remove()
 e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div:style(display: block !important)
 ! newapp
-e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if.js, 'slot:fail')
-e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if.js, NO_MIMIC_ON_)
-e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlockWhiteList, false)
+e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
+e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
 ! VK-брендинг
 otvet.mail.ru###portal-menu [title="Ответы Mail.ru"] > a > svg > g
 otvet.mail.ru###portal-menu [title="Ответы Mail.ru"] > a > svg:style(transform: none !important; padding-top: 16px !important)
