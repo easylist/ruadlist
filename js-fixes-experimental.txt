@@ -669,7 +669,7 @@ cq.ru##^script:has-text(window.initBanners)
 www.ukr.net##^script:has-text(znc|track)
 gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
 gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
-||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru
+||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru|rambler.ru|~vp.rambler.ru
 !#endif
 !
 ! MV3-специфичные случаи >
