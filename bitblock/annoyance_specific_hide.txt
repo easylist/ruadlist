@@ -2348,7 +2348,7 @@ mail.ru,~media-golos.mail.ru,sportmail.ru##[data-logger="AudioPlayer"]
 ~e.mail.ru,mail.ru##[data-module="StickyPanel.TopButton"]
 ~e.mail.ru,mail.ru##[data-module="Subscription"]
 news.mail.ru,sportmail.ru##[data-module="TrackBlocks"] table > tbody > tr > td:nth-child(3):last-child
-news.mail.ru##[data-reactroot] [data-qa="MoreList"] > div > div:first-child:not(:only-child)
+news.mail.ru##[data-reactroot] [data-qa^="MoreList"] > div > div:first-child:not(:only-child)
 calendar.mail.ru##[data-test-id="ecosystem-logo"]
 cloud.mail.ru,e.mail.ru,octavius.mail.ru##a[title="Экосистема VK"]
 ~e.mail.ru,mail.ru##body > .grid .logo__promo-tooltip
