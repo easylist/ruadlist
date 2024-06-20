@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240618.1115
+@version        0.20240620.1814
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4056,10 +4056,11 @@
 
 @-moz-document domain("promodj.com") {
     html:not(#id) > body {
-        background-color: #fff !important
+        background: none !important
     }
     #topbrandingspot {
-        padding-top: 0 !important
+        padding-top: 0 !important;
+        background: none !important
     }
 }
 
