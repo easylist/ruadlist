@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240620.1814
+@version        0.20240621.1838
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1765,15 +1765,6 @@
 @-moz-document domain("e.otruda.ru") {
     body > .page-wrapper-common ~ div[id][class=""] {
         display: none !important
-    }
-}
-
-@-moz-document domain("e1.ru") {
-    .page-type-article.branding {
-        margin-top: 0 !important
-    }
-    .global-wrapper._branding {
-        padding-top: 0 !important
     }
 }
 
@@ -4250,6 +4241,17 @@
 @-moz-document domain("rserials.net") {
     #subheader {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("ru") {
+    [data-ns-portal] .page-type-article.branding {
+        --grid-breakpoint-lg: unset !important;
+        margin-top: unset !important;
+        width: 100% !important
+    }
+    [data-ns-portal] .page-type-article.branding div[class^="content_"] > div[class^="bottom"] {
+        max-width: 100% !important
     }
 }
 
