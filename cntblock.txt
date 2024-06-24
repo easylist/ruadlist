@@ -1517,7 +1517,7 @@ $~third-party,removeparam=/cdom/i,domain=3dnews.kz|3dnews.ru
 /?amp;utm_*ukr$document,removeparam=|
 /?cr=$removeparam=cr,domain=mail.ru|sportmail.ru
 /?f=ukr.net$document,removeparam=|
-/?from=$removeparam=from,domain=mail.ru|sportmail.ru|vkplay.ru
+/?from=$document,removeparam=from,domain=mail.ru|sportmail.ru|vkplay.ru
 /?from=RCM-$document,xmlhttprequest,queryprune,domain=rambler.ru
 /?from=smm|$removeparam=from
 /?from=yanews$removeparam=from
