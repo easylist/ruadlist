@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240621.1838
+@version        0.20240624.103
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -970,6 +970,7 @@
   domain("jetsetter.ua"),
   domain("kinoafisha.ua"),
   domain("kinobar.vip"),
+  domain("konohatv.org"),
   domain("moskva.fm"),
   domain("newstudio.tv"),
   domain("nnmclub.to"),
@@ -3236,6 +3237,8 @@
     body > .zeropixel ~ * [class*="tgb-wrap"], 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body:not(.js-module) .searchContainer ~ div > a.dmb, 
+    div[slot="main-column"] > .header, 
+    div[slot="main-column"] > .header ~ .swiper, 
     main#grid > .grid-middle ~ div:not([class]):not([id]) {
         display: none !important
     }
