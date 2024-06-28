@@ -684,5 +684,8 @@ gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position:
 !
 !#if env_mv3
 afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
+e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
+e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
+e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
 !#endif
