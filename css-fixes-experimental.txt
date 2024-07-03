@@ -1599,20 +1599,21 @@ dzen.ru##div[id][class$="__ad"]
 ! обфускация
 dzen.ru##._is-for-video-floor
 dzen.ru##.article-page-layout > main > div > div[id]
+dzen.ru##.article-recomender__feed-container article > div:first-child ~ div
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]
 dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
 dzen.ru##[data-testid="recommend-auth-popup"]
 dzen.ru##aside[id^="article_"][class*="rilght"] > div[class]
+dzen.ru##aside[id^="article_"][class*="riljht"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card-"])
-dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midldei"] > div[id][class]
-dzen.ru##div[class*="witdjejet"] > div[class*="container"] > div ~ div
-dzen.ru##div[id*="long_video_floor"] article[id] ~ article:not([id])
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mididei"] > div[id][class]
+dzen.ru##div[class*="widtdjejet"] > div[class*="container"] > div ~ div
+dzen.ru##div[id*="long_video_floor"] article[aria-label="Карточка этажа"] ~ :not([aria-label="Карточка этажа"])
+dzen.ru##div[id*="native_floor"] article[aria-label="Карточка этажа"] ~ :not([aria-label="Карточка этажа"])
 dzen.ru##div[id*="splashscreen"]
-dzen.ru##div[id][class^="feed__"] article:not([aria-label]) > div:first-child ~ div
-dzen.ru##div[id][class^="feed__"] article[aria-label] ~ div[class=""]
 ! ---
 ! игры
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:style(width: unset !important)
