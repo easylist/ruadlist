@@ -570,6 +570,7 @@ e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; to
 ! newapp
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
 e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
+e.mail.ru,octavius.mail.ru##body > div[style*="top:"][style*="position:"][style*="visibility:"] #app-canvas div:style(display: block !important)
 ! VK-брендинг
 otvet.mail.ru###portal-menu [title="Ответы Mail.ru"] > a > svg > g
 otvet.mail.ru###portal-menu [title="Ответы Mail.ru"] > a > svg:style(transform: none !important; padding-top: 16px !important)
