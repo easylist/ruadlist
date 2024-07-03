@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240628.1254
+@version        0.20240703.326
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1125,9 +1125,7 @@
     }
 }
 
-@-moz-document
-  domain("bugaga.ru"),
-  domain("zaycev.net") {
+@-moz-document domain("bugaga.ru") {
     .body-branding {
         background: none !important;
         padding-top: 0 !important
@@ -1673,6 +1671,7 @@
 @-moz-document domain("dzen.ru") {
     #teaser, #ya-dist, ._is-floor-with-ds-cards, ._is-for-article-floor, 
     ._is-for-video-floor, .adv-ecom, .article-page-layout > main > div > div[id], 
+    .article-recomender__feed-container article > div:first-child ~ div, 
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
     [class*="desktop"] ~ [id*="teaser"], 
     [class^="card-part-wrapper"] ~ div[class=""], 
@@ -1682,21 +1681,21 @@
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     aside[id^="article_"][class*="rilght"] > div[class], 
+    aside[id^="article_"][class*="riljht"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
     div[class*="_feed-type_article_"] article:not([class*="card-"]), 
-    div[class*="article__"] > .undefined ~ div[class*="midldei"] > div[id][class], 
+    div[class*="article__"] > .undefined ~ div[class*="mididei"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
-    div[class*="witdjejet"] > div[class*="container"] > div ~ div, 
+    div[class*="widtdjejet"] > div[class*="container"] > div ~ div, 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
-    div[id*="long_video_floor"] article[id] ~ article:not([id]), 
-    div[id*="splashscreen"], div[id][class$="__ad"], 
-    div[id][class^="feed__"] article:not([aria-label]) > div:first-child ~ div, 
-    div[id][class^="feed__"] article[aria-label] ~ div[class=""] {
+    div[id*="long_video_floor"] article[aria-label="Карточка этажа"] ~ :not([aria-label="Карточка этажа"]), 
+    div[id*="native_floor"] article[aria-label="Карточка этажа"] ~ :not([aria-label="Карточка этажа"]), 
+    div[id*="splashscreen"], div[id][class$="__ad"] {
         display: none !important
     }
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] {
@@ -3274,7 +3273,7 @@
         margin-top: 4px !important;
         margin-bottom: 4px !important
     }
-    div[slot="main-column"] > .micro-widgets ~ .tabs {
+    div[slot="main-column"] .tabs {
         margin-top: 5px !important
     }
     .tabs-content > :first-child > a {
