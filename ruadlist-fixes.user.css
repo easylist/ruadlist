@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240704.1901
+@version        0.20240707.1641
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1676,9 +1676,7 @@
     [class*="desktop"] ~ [id*="teaser"], 
     [class^="card-part-wrapper"] ~ div[class=""], 
     [class^="dzen-desktop"] ~ div[id$="-popup"], 
-    [data-testid="recommend-auth-popup"], 
-    [data-testid] div[class^="adaptive-card-grid__container"] > div[class=""], 
-    a[href*="://yandex.ru/an/count/"], 
+    [data-testid="recommend-auth-popup"], a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     aside[id^="article_"][class*="rilght"] > div[class], 
     aside[id^="article_"][class*="riljht"] > div[class], 
@@ -1927,8 +1925,8 @@
 }
 
 @-moz-document
-  domain("filmix.fm"),
   domain("filmix.date"),
+  domain("filmix.fm"),
   domain("filmix.life"),
   domain("filmix.pub"),
   domain("filmix.tech"),
