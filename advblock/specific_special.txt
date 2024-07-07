@@ -49,6 +49,7 @@ sdamgia.ru##center > div[id][style]
 dzen.ru#?#div:-abp-has(> style:-abp-contains(yatag))
 cq.ru#?#div:-abp-properties(content: "Реклама")
 dzen.ru#?#div:-abp-properties(min-height: 600px)
+dzen.ru#?#div:-abp-properties(position: relative !important)
 dzen.ru##div:has(> style:-abp-contains(yatag)) {remove:true;}
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm|pt)|height: 250px/)

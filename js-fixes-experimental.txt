@@ -441,6 +441,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__it
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
+dzen.ru##[data-microappname="TopMicroApp" ] div[style*="height: 0;"]:style(padding-top: unset !important)
 www.sports.ru##[data-noinit]
 online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(btn)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
