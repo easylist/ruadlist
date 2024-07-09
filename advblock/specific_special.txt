@@ -41,6 +41,7 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-
 pikabu.ru#?#.story__header:-abp-has(> div:empty)
 fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+dzen.ru#?#[class]:-abp-properties(/--banner-color:/)
 liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
 liveinternet.ru##[data-wrapper]
@@ -51,9 +52,7 @@ www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 sdamgia.ru##center > div[id][style]
 dzen.ru#?#div:-abp-has(> style:-abp-contains(yatag))
 cq.ru#?#div:-abp-properties(content: "Реклама")
-dzen.ru#?#div:-abp-properties(min-height: 600px)
 dzen.ru#?#div:-abp-properties(position: relative !important)
-dzen.ru##div:has(> style:-abp-contains(yatag)) {remove:true;}
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm|pt)|height: 250px/)
 pikabu.ru##div[class*="page-story__"] div[style=""]
