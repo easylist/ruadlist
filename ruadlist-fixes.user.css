@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240707.1641
+@version        0.20240713.2302
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3231,15 +3231,12 @@
         content: initial !important
     }
     #bubble-home, #grid .feed__content, .asteroid-widgets, 
-    .grid__main-col > .tgb-wrapper, 
     .mailbox-container ~ [class] .widget__container, .mailbox__add-btn-logo, 
     .ph-ext, .tabs-content .news-item_regular::after, 
     .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
-    body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .skeleton-tgb, 
-    body > .zeropixel ~ * .stripe-wrapper, 
-    body > .zeropixel ~ * [class*="tgb-wrap"], 
+    body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .stripe-wrapper, 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body:not(.js-module) .searchContainer ~ div > a.dmb, 
     div[slot="main-column"] > .header, 
@@ -5468,7 +5465,7 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.uz") {
-    #rsya-guarantee, .DirectInline, 
+    #rsya-guarantee, .DirectInline, .DirectSnippet, 
     .serp.main__carousel:not([data-bem*="collectionId"]), 
     [data-vnl*="rsya_guarantee"], div[class*="Images"] .SimpleSkeleton, 
     div[class*="Images"] div[class*="-Card_bottomAdv"], 
