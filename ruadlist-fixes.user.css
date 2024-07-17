@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240717.2018
+@version        0.20240717.2347
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -974,8 +974,8 @@
   domain("konohatv.org"),
   domain("moskva.fm"),
   domain("newstudio.tv"),
-  domain("nnmclub.to"),
   domain("nnmclub.ro"),
+  domain("nnmclub.to"),
   domain("pay-day.ru"),
   domain("roem.ru"),
   domain("rusfootball.info"),
@@ -1679,21 +1679,20 @@
     [class^="dzen-desktop"] ~ div[id$="-popup"], 
     [data-testid="recommend-auth-popup"], a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside[id^="article_"][class*="rilght"] > div[class], 
-    aside[id^="article_"][class*="riljht"] > div[class], 
+    aside[id^="article_"][class*="rihggt"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
     div[class*="_feed-type_article_"] article:not([class*="card-"]), 
-    div[class*="article__"] > .undefined ~ div[class*="mididei"] > div[id][class], 
+    div[class*="article__"] > .undefined ~ div[class*="millde"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
-    div[class*="widtdjejet"] > div[class*="container"] > div ~ div, 
+    div[class*="wigdet"] > div[class*="container"] > div ~ div, 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
-    div[id*="long_video_floor"] article[aria-label="Карточка этажа"] ~ :not([aria-label="Карточка этажа"]), 
-    div[id*="native_floor"] article[aria-label="Карточка этажа"] ~ :not([aria-label="Карточка этажа"]), 
+    div[id*="long_video_floor"] .card-video ~ :not(.card-video), 
+    div[id*="native_floor"] .card-article ~ :not(.card-article), 
     div[id*="splashscreen"], div[id][class$="__ad"] {
         display: none !important
     }
