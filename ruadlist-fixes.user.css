@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240714.2303
+@version        0.20240717.2018
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -975,6 +975,7 @@
   domain("moskva.fm"),
   domain("newstudio.tv"),
   domain("nnmclub.to"),
+  domain("nnmclub.ro"),
   domain("pay-day.ru"),
   domain("roem.ru"),
   domain("rusfootball.info"),
@@ -2268,9 +2269,6 @@
 }
 
 @-moz-document domain("gismeteo.ru") {
-    .maps .maps-list {
-        display: inherit !important
-    }
     .section-map-grid {
         display: unset !important
     }
@@ -3664,7 +3662,9 @@
     }
 }
 
-@-moz-document domain("nnmclub.to") {
+@-moz-document
+  domain("nnmclub.ro"),
+  domain("nnmclub.to") {
     body {
         background: none !important
     }

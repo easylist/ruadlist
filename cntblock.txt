@@ -1476,7 +1476,7 @@ $removeparam=rf,domain=mail.ru|sportmail.ru
 $removeparam=rtclick
 $removeparam=searchid,domain=kufar.by
 $removeparam=short_domain,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
-$removeparam=sid,domain=nnmclub.to|rutor.in
+$removeparam=sid,domain=nnmclub.ro|nnmclub.to|rutor.in
 $removeparam=source_ve_path,domain=youtube.com
 $removeparam=stid,domain=dzen.ru
 $removeparam=tt_content,domain=twitch.tv
@@ -1609,7 +1609,7 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||youtube.com/embed/$subdocument,removeparam=iv_load_policy
 ||youtube.com/embed/$subdocument,removeparam=rel
 ! исключения
-@@/forum\/(login|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnmclub.to
+@@/forum\/(login|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnmclub.ro|nnmclub.to
 @@|https://www.sravni.ru/$subdocument,removeparam=utm_campaign
 @@|https://www.sravni.ru/$subdocument,removeparam=utm_content
 @@|https://www.sravni.ru/$subdocument,removeparam=utm_medium
