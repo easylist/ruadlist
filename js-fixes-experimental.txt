@@ -594,7 +594,7 @@ mail.ru##img[src*="/logo_2021_region"]
 ! Фикс для маленьких экранов
 mail.ru##.grid__header .ph-auth:matches-media((max-width: 1280px)):style(height: 37px !important)
 mail.ru##.grid__header .ph-container:matches-media((max-width: 1280px)):style(height: 40px !important)
-mail.ru##.grid__header > .headline:matches-media((max-width: 1280px)):style(height: 40px !important)
+mail.ru##.grid__header > .headline:matches-media((max-width: 1280px)):style(height: 40px !important; min-height: 40px !important)
 mail.ru##[slot="main-column"] .news-item:matches-media((max-width: 1280px)):style(line-height: 19px !important)
 mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(height: 20px !important)
 !
