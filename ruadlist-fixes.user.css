@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240719.1745
+@version        0.20240722.2334
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1671,20 +1671,17 @@
 
 @-moz-document domain("dzen.ru") {
     #teaser, #ya-dist, ._is-floor-with-ds-cards, ._is-for-article-floor, 
-    ._is-for-video-floor, .adv-ecom, .article-page-layout > main > div > div[id], 
-    .article-recomender__feed-container article > div:first-child ~ div, 
+    ._is-for-video-floor, .adv-ecom, 
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
     [class*="desktop"] ~ [id*="teaser"], 
     [class^="card-part-wrapper"] ~ div[class=""], 
     [class^="dzen-desktop"] ~ div[id$="-popup"], 
     [data-testid="recommend-auth-popup"], a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    aside[id^="article_"][class*="rihggt"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
     div[class*="_feed-type_article_"] article:not([class*="card-"]), 
-    div[class*="article__"] > .undefined ~ div[class*="millde"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
     div[class*="wigdet"] > div[class*="container"] > div ~ div, 
