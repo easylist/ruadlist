@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240724.1258
+@version        0.20240725.2028
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1680,15 +1680,15 @@
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
-    div[class*="_feed-type_article_"] article:not([class*="card-"]), 
+    div[class*="_feed-type_article_"] article:not([class*="card"]), 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
-    div[class*="wigdet"] > div[class*="container"] > div ~ div, 
+    div[class*="wigddet"] > div[class*="container"] > div ~ div, 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
-    div[id*="long_video_floor"] .card-video ~ :not(.card-video), 
-    div[id*="native_floor"] .card-article ~ :not(.card-article), 
+    div[id*="long_video_floor"] [class*="__video-"] ~ :not([class*="__video-"]), 
+    div[id*="native_floor"] [class*="cardPartWrapper"] ~ :not([class*="cardPartWrapper"]), 
     div[id*="splashscreen"], div[id][class$="__ad"] {
         display: none !important
     }
