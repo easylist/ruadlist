@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240725.2028
+@version        0.20240726.30
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3223,9 +3223,11 @@
     .article__item_source_viqeo .article__container::before {
         content: initial !important
     }
-    #bubble-home, #grid .feed__content, .asteroid-widgets, 
-    .mailbox-container ~ [class] .widget__container, .mailbox__add-btn-logo, 
-    .ph-ext, .tabs-content .news-item_regular::after, 
+    #bubble-home, #grid .widget__container > .calendar-container, 
+    #grid .widget__container > .event-list-widget, 
+    #grid .widget__container > .games-widget, 
+    #grid .widget__container > .progress-bar-widget, #grid div[class^="feed__"], 
+    .mailbox__add-btn-logo, .ph-ext, .tabs-content .news-item_regular::after, 
     .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
