@@ -1601,10 +1601,10 @@ dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]
 dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
 dzen.ru##[data-testid="recommend-auth-popup"]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
-dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card-"])
-dzen.ru##div[class*="wigdet"] > div[class*="container"] > div ~ div
-dzen.ru##div[id*="long_video_floor"] .card-video ~ :not(.card-video)
-dzen.ru##div[id*="native_floor"] .card-article ~ :not(.card-article)
+dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card"])
+dzen.ru##div[class*="wigddet"] > div[class*="container"] > div ~ div
+dzen.ru##div[id*="long_video_floor"] [class*="__video-"] ~ :not([class*="__video-"])
+dzen.ru##div[id*="native_floor"] [class*="cardPartWrapper"] ~ :not([class*="cardPartWrapper"])
 dzen.ru##div[id*="splashscreen"]
 ! ---
 ! игры
