@@ -671,9 +671,9 @@ hvylya.net,i.ua,ivona.ua,kriminal.tv,meteofor.com.ua,mport.ua,nv.ua,zv.zp.ua##^s
 cq.ru##^script:has-text(window.initBanners)
 www.ukr.net##^script:has-text(znc|track)
 eurointegration.com.ua##^script[onload*="error-report.com"]
-gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
-gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
-||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru|rambler.ru|~vp.rambler.ru
+gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
+gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
+||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
 !#endif
 !
 ! MV3-специфичные случаи >
