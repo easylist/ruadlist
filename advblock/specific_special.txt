@@ -188,6 +188,30 @@ checkadblock.ru##.warning
 ||adblock-tester.com^$csp=script-src 'self'
 ||checkadblock.ru^$csp=script-src 'self'
 !
+! Footboom
+footboom1.com##.ads-insert
+footboom1.com##.bet-informer__widget
+footboom1.com##.bk-notification ~ .nav__top
+footboom1.com##.bonus-bk
+footboom1.com##.footer-info__links-column._pwa-disable
+footboom1.com##.head-menu__bonus
+footboom1.com##.match-action
+footboom1.com##.special-projects
+footboom1.com##.without-content
+footboom1.com##[class^="bookie-"]
+footboom1.com##[data-popper-placement]
+footboom1.com##a[href="/betting/bonus"]
+footboom1.com##a[href="/betting/bookmakers"]
+footboom1.com##a[href="https://www.footboom1.com/betting"]
+footboom1.com##a[href="https://www.footboom1.com/betting/bookmakers"]
+footboom1.com##a[href="https://www.footboom1.com/casino/review?burgermenucasino"]
+footboom1.com##a[href^="/betting/"][target="_blank"]
+footboom1.com##div[class*="_bookie"]
+||cdn.footboom.net/img/bet/
+||footboom*/dist/app/js/antiAdBlock.js
+||footboom*/dist/app/js/email-popup.js
+||footboom*/dist/app/js/menuBonus.js
+!
 ! GISMeteo domains
 gismeteo.ru#?#.cities-popular:-abp-has(> .list:empty)
 gismeteo.by##.column2 > .section-rss
