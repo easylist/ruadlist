@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240802.1353
+@version        0.20240804.1926
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4293,6 +4293,7 @@
 
 @-moz-document domain("sdamgia.ru") {
     #old_school > .App > div > [color="red"], 
+    [role="main"] div[style^="position: absolute; top: 0px; "][style*="cursor: pointer"], 
     div[style] > a[target="_blank"] > img[src^="data:"] {
         display: none !important
     }
