@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240806.1241
+@version        0.20240807.1157
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3208,7 +3208,6 @@
     #grid .widget__container > .games-widget, 
     #grid .widget__container > .progress-bar-widget, #grid div[class^="feed__"], 
     .mailbox__add-btn-logo, .ph-ext, .resplash-btn.noadsButton, 
-    .tabs-content .news-item_regular::after, 
     .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
@@ -3280,9 +3279,6 @@
     }
     .grid__header .ph-modal-projects-overlay {
         top: inherit !important
-    }
-    .tabs-content .news-item_regular > a:not([data-testid="news-prefix"]) {
-        white-space: pre-line !important
     }
     body:not(.js-module) .tabs + div[class] > :first-child {
         width: 100% !important
