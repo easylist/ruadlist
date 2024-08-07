@@ -301,9 +301,9 @@ game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
+dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
-dtf.ru,vc.ru##+js(set-attr, video, controls, true)
 3dnews.kz,3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
@@ -410,6 +410,7 @@ rbc.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:
 ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/pravila"])
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
+dtf.ru,vc.ru##.media > .andropov-video > video:remove-attr(autoplay)
 gamemag.ru##.news-view:has(> .overview > .overview__overview:has-text(Реклама)) .content-text a[href]:style(color: inherit !important; pointer-events: none !important)
 hideip.me#@#.node-promoted
 vm.ru##.onair_wrapper > [name="btn_air_close"]
@@ -478,7 +479,6 @@ pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorre
 eurointegration.com.ua##script[id][data-sdk]:remove()
 kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://kanobu.ru/"]):style(color: inherit !important; pointer-events: none !important)
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
-dtf.ru,vc.ru##video:remove-attr(autoplay)
 3dnews.kz,3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
