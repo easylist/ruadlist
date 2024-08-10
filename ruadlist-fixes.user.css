@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240809.1302
+@version        0.20240810.1009
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2401,14 +2401,6 @@
     }
 }
 
-@-moz-document
-  domain("hdrezka.fun"),
-  domain("kinokrad.us") {
-    .have-brand .wrap {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("hdru.net") {
     .page {
         margin-top: 0 !important
@@ -2835,8 +2827,8 @@
 }
 
 @-moz-document
-  domain("kinokong.pro"),
-  domain("kinokrad.film") {
+  domain("kinokong.bz"),
+  domain("kinokrad.ac") {
     #wrapper:not(#id) {
         margin-top: 67px !important
     }
@@ -4159,6 +4151,12 @@
     div[id*="-error-page"] > p {
         height: 0 !important;
         opacity: 0 !important
+    }
+}
+
+@-moz-document domain("rezkahd.life") {
+    .have-brand .wrap {
+        margin-top: 0 !important
     }
 }
 
