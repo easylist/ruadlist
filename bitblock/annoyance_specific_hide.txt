@@ -2628,7 +2628,7 @@ google.by,google.com,google.com.ua,google.kz,google.ru##div[class^="gb_"][data-o
 google.by,google.com,google.com.ua,google.kz,google.ru##div[jscontroller] [href*="?utm_source=googlehpfooter"]
 google.by,google.com,google.com.ua,google.kz,google.ru##mobile-promo
 www.google.*##html[itemtype="http://schema.org/SearchResultsPage"][style^="top: "] #main > #cnt > #lb:has(update-location):style(display: none !important)
-www.google.*##html[itemtype="http://schema.org/SearchResultsPage"][style^="top: "]:style(overflow: auto !important)
+www.google.*##html[itemtype="http://schema.org/SearchResultsPage"][style^="top: "]:style(overflow: auto !important; position: relative !important)
 !#if !env_firefox
 www.google.*##+js(remove-node-text, script, cookieUpdateConsentUrl)
 !#endif
