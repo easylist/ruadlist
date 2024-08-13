@@ -41,8 +41,11 @@ pikabu.ru#?#.story__header:-abp-has(> div:empty)
 fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 dzen.ru#?#[class]:-abp-properties(/--banner-color:/)
+www.drive2.ru##[data-container="outer"]
 liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
+www.drive2.ru##[data-sticky-adtune]
+www.drive2.ru##[data-test="AdKebabAndLabel--adLabelContent"]
 liveinternet.ru##[data-wrapper]
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
@@ -70,6 +73,8 @@ sdamgia.ru##div[id^="yandex_vario"]
 liveinternet.ru##div[style*="!important; "]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 eurointegration.com.ua##iframe[src="about:blank"] {remove:true;}
+www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
+www.drive2.ru##iframe[style="opacity: 1;"]
 eurointegration.com.ua##script[id][data-sdk] {remove:true;}
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
