@@ -1582,6 +1582,7 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||market.yandex.$removeparam=mclid
 ||my.mail.ru/apps$document,removeparam=ref,domain=my.mail.ru
 ||sportmail.ru^*exp_id=$document,xmlhttprequest,removeparam=|,domain=sportmail.ru
+||vk.com/*search_track_code=$document,subdocument,removeparam=/from|search_track_code/
 ||vk.com/widget_comments.php$subdocument,removeparam=referrer
 ||www.google.*/search?$removeparam=aqs
 ||www.google.*/search?$removeparam=authuser
