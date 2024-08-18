@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240818.259
+@version        0.20240818.1412
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3741,6 +3741,13 @@
     }
 }
 
+@-moz-document domain("onliner.by") {
+    .adfox-banner-background ~ .layout-container {
+        max-width: unset !important;
+        top: unset !important
+    }
+}
+
 @-moz-document domain("open3dmodel.com") {
     .post-info > div[style^="width: 730px;"][style*="#f9f9f9"] {
         background-color: #333 !important
@@ -5368,13 +5375,6 @@
     }
     .social-open {
         overflow: auto !important
-    }
-}
-
-@-moz-document domain("www.onliner.by") {
-    .adfox-banner-background ~ .layout-container {
-        max-width: unset !important;
-        top: unset !important
     }
 }
 
