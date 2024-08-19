@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240818.1412
+@version        0.20240820.210
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1685,6 +1685,7 @@
     [class^="dzen-desktop"] ~ div[id$="-popup"], 
     [data-testid="recommend-auth-popup"], a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
+    article[class*="card"][class*="-promo"], 
     aside[id^="article_"][class*="rihggt"] > div[class], 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="Container"] > div[style="opacity: 1;"] > div[class*="articleRight"][style^="max-height:"], 
@@ -1700,13 +1701,12 @@
     div[class^="article__article-"] > div[class^="article-item"] > div[id], 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
-    div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"], 
     div[id*="long_video_floor"] [class*="__video-"] ~ :not([class*="__video-"]), 
     div[id*="native_floor"] [class*="cardPartWrapper"] ~ :not([class*="cardPartWrapper"]), 
     div[id*="splashscreen"], div[id][class$="__ad"] {
         display: none !important
     }
-    div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] {
+    div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
         grid-template-columns: inherit !important
     }
     .mg-advert__content:not(:first-child), 
