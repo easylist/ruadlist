@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240820.210
+@version        0.20240822.1947
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5328,6 +5328,9 @@
     div > a[aria-label="КиноПоиск"] ~ div > button ~ div, 
     div[class*="user-bar"] > div > button ~ div {
         opacity: inherit !important
+    }
+    body[class*="styles_body"] {
+        overflow: auto !important
     }
     .filmsListNew .info {
         padding-right: 116px !important
