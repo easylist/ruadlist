@@ -1713,7 +1713,7 @@ mamba.ru##[data-name="install-pwa-banner"]
 economistua.com##[data-owo-type]
 ozon.ru##[data-paginator-loader]
 poltavawave.com.ua##[data-platform]
-ozon.ru##[data-replace-layout-path="[2][0][1][0][1][0]"] > div:nth-child(-n+2):not([data-widget])
+ozon.ru#?#[data-replace-layout-path] > [data-widget="container"] > [data-widget="island"]:-abp-has(> div > [data-widget="seasonWidget"])
 fosshub.com##[data-section-content-type="donate"]
 ictvukraine.tv,obozrevatel.com,zahid-sad.com##[data-storage-item*="cookiename_"]
 adme.media##[data-test-id="article-content"] > a[href^="/"]
@@ -1731,6 +1731,7 @@ rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href^="https://pro.rbc.ru/"])
 warspot.ru##[data-wgcds-place]
 ozon.ru##[data-widget-disallow] > [data-widget="skuGrid"]
+ozon.ru#?#[data-widget="island"]:-abp-has(> div > [data-widget="objectBannerList"])
 ozon.ru##[data-widget="skuShelfGoods"] + [data-widget="skuShelfGoods"]
 www.ozon.ru##[data-widget="webFeedbackForm"]
 kp.kg,kp.kz,kp.md,kp.ru##[data-without-height] + div
@@ -2069,7 +2070,6 @@ zfilm-hd.org,zfilm1977.site,zfilme-hd1.site,zhinka.tv##div[style=" background-co
 price.ua##div[style="font-size:x-large;text-align:center;margin:10px;background-color:#ffe6e6"]
 kirov-portal.ru#?#div[style]:-abp-has(> div[style] > a[href="/news/akcii/"])
 gamer-mods.ru##div[style^="height:"][style*="gamer-mods.ru/Noviygod"][style*=".gif"]
-ozon.ru##div[style^="padding-top"] > [data-replace-layout-path] > [style="height:156px;"]
 outlook.live.com##div[tabindex][role="region"][aria-label] > div + div > div > .ms-FocusZone ~ div[class]:not([role]) > button
 youla.ru#?#div[width="0.25"]:-abp-has(> div > a[href*=".com/"][href*="/app"][title][target="_blank"])
 socportal.info##div[x-lazyload*="g-ytsubscribe"]
