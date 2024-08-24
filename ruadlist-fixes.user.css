@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240822.1947
+@version        0.20240824.1353
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5404,6 +5404,15 @@
 @-moz-document domain("www.vesti.ru") {
     .page-wrap {
         margin-right: unset !important
+    }
+}
+
+@-moz-document domain("www.xcom-shop.ru") {
+    html {
+        overflow-y: auto !important
+    }
+    body {
+        overflow-y: hidden !important
     }
 }
 
