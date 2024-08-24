@@ -330,7 +330,7 @@ frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
-kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,www.fontanka.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,womanhit.ru,www.fontanka.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
@@ -523,7 +523,6 @@ kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ||v*.plrjs.org/*.xml|$important,xmlhttprequest,redirect=noop.txt
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=autostart
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
-||viqeo.tv/*/vq_starter.js$third-party,script,domain=dni.ru|~dom.mail.ru|kanobu.ru|~lady.mail.ru|lifehacker.ru|mail.ru|pravda.ru|sportmail.ru|womanhit.ru
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
 ||vk.com/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
