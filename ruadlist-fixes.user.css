@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240824.1353
+@version        0.20240826.1311
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4906,15 +4906,15 @@
     }
 }
 
-@-moz-document domain("uakino.club") {
-    body > .all-wrap {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document domain("uakino.com") {
     header .container {
         padding-top: 30px !important
+    }
+}
+
+@-moz-document domain("uakino.me") {
+    body > .all-wrap {
+        margin-top: 0 !important
     }
 }
 
