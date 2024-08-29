@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240829.2100
+@version        0.20240829.2240
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3870,9 +3870,8 @@
     body#userNotAuthorized .bonus-landing-page .panel-default > .panel-heading {
         background-color: white !important
     }
-    #foundationWrapper {
-        background: #999999 !important;
-        padding-top: 0 !important
+    body {
+        background: #242424 !important
     }
     body#userNotAuthorized .bonus-landing-page-faq > .title {
         color: white !important
@@ -3880,21 +3879,12 @@
     .content_aside-container {
         flex-direction: unset !important
     }
-    #foundationWrapper > div {
-        height: auto !important
-    }
     .gp-game-card .user-profile-sidebar {
         max-width: unset !important
     }
     .content_aside-container > .content-column {
         padding-left: 0 !important;
         padding-right: 40px !important
-    }
-    #foundationWrapper > * {
-        pointer-events: auto !important
-    }
-    #foundationWrapper {
-        pointer-events: none !important
     }
 }
 
