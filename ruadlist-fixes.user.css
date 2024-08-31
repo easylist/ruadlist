@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240829.2240
+@version        0.20240831.1433
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1641,6 +1641,14 @@
     }
     body > #right ~ .middle {
         margin-right: 4px !important
+    }
+}
+
+@-moz-document
+  domain("dtf.ru"),
+  domain("vc.ru") {
+    html {
+        --layout-header-height-large: 60px !important
     }
 }
 
