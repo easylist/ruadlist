@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240831.1433
+@version        0.20240901.1616
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3367,6 +3367,18 @@
     }
 }
 
+@-moz-document
+  domain("mentoday.ru"),
+  domain("thevoicemag.ru"),
+  domain("techinsider.ru") {
+    .preview-section .vertical-video__loader {
+        display: none !important
+    }
+    .preview-section .vertical-video__play-icon-wrapper {
+        display: unset !important
+    }
+}
+
 @-moz-document domain("meta.ua") {
     .infobar > .info-block:not(.mail):not(.weather) {
         border: none !important
@@ -4687,15 +4699,6 @@
     }
     aside > div[class^="NavPanel_nav"] {
         width: unset !important
-    }
-}
-
-@-moz-document domain("techinsider.ru") {
-    .preview-section .vertical-video__loader {
-        display: none !important
-    }
-    .preview-section .vertical-video__play-icon-wrapper {
-        display: unset !important
     }
 }
 
