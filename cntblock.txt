@@ -1257,6 +1257,7 @@ ya.*,yandex.*##[id][aria-label] > [class*="_card"]:has(> div > div > [data-event
 ya.*,yandex.*##[id][aria-label] > [class*="_card"]:has(> div [data-vnl*="advertiser"]):style(display: none !important)
 ya.*,~yandex.net,yandex.*##+js(remove-attr, data-counter, #search-result > .serp-item a)
 yandex.*###bk-container:style(display: none !important)
+yandex.*##+js(set-constant, Object.prototype._directAdvStyles, undefined)
 yandex.*##.card-rtb-one-column-stub:style(display: none !important)
 yandex.*##.dist-popup:style(display: none !important)
 yandex.*##.MediaViewer div[class$="-FooterContent"]:style(display: none !important)
