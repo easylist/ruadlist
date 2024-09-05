@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240901.1616
+@version        0.20240905.1231
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3369,8 +3369,8 @@
 
 @-moz-document
   domain("mentoday.ru"),
-  domain("thevoicemag.ru"),
-  domain("techinsider.ru") {
+  domain("techinsider.ru"),
+  domain("thevoicemag.ru") {
     .preview-section .vertical-video__loader {
         display: none !important
     }
@@ -4353,6 +4353,12 @@
     }
     .mfp-wrap {
         position: unset !important
+    }
+}
+
+@-moz-document domain("seolik.ru") {
+    body > div[style^="background-color:"] {
+        height: unset !important
     }
 }
 
