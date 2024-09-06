@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240905.1231
+@version        0.20240906.2218
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1534,12 +1534,15 @@
     }
 }
 
-@-moz-document domain("doramalive.ru") {
+@-moz-document domain("dorama.live") {
     .block-content > .ageLimit ~ .block-player {
         display: block !important
     }
     .block-content > .ageLimit {
         display: none !important
+    }
+    .block-content {
+        min-height: unset !important
     }
 }
 
