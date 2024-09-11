@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240906.2218
+@version        0.20240912.1
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4172,6 +4172,13 @@
     }
 }
 
+@-moz-document domain("repack.me") {
+    main > .container {
+        padding-top: 0 !important;
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("reshebnik.com") {
     div[id*="-error-page"] > p {
         height: 0 !important;
@@ -5475,6 +5482,10 @@
     }
     .b-page.overlay {
         overflow-y: auto !important
+    }
+    .b-page[style*="padding-right:"] {
+        overflow-y: auto !important;
+        padding-right: 0 !important
     }
 }
 
