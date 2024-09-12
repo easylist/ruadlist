@@ -515,8 +515,13 @@ mirtesen.ru##[id^="unit_"]
 ~mirtesen.ru,~smi2.ru##a[href*="://smi2.ru/newdata/news?ad="]
 ~smi2.ru##a[href*="://smi2.ru/newdata/news?ad="] *
 !
-! зеркала MySeria.NET
+! зеркала MySeria.NET https://vk.com/myserianet
 ##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+fanserial.fun,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+##.flex-promo-series > .right-col a[href][target="_blank"]
+fanserial.fun,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
+.xml?rand=$domain=fanserial.fun|fanserialstv.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserialstv.net
 !
 ! Одноклассники
 ok.ru###hook_Block_AvatarPromoMenu
