@@ -26,7 +26,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/*%*.*?*=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/*.*=*?*=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -518,8 +518,8 @@ mirtesen.ru##[id^="unit_"]
 ! зеркала MySeria.NET https://vk.com/myserianet
 fanserial.fun,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
 ##.article-aside-promo a[href][target="_blank"]
-##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
 fanserial.fun,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
 fanserial.fun,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
 ##.flex-promo-series > .right-col a[href][target="_blank"]
 .xml?rand=$domain=fanserial.fun|fanserialstv.net
