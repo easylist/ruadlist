@@ -522,7 +522,6 @@ kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ||strm.yandex.ru^$media,redirect=empty,domain=1tv.ru|karaoke.ru|mediavitrina.ru|yastatic.net
 ||ts.kg/olol*.mp4$media,redirect=noop-0.1s.mp3
 ||u-stream.in/start/*&autoplay=1$subdocument,removeparam=|
-||v*.plrjs.org/*.xml$important,xmlhttprequest,redirect=noopvast-3.0
 ||v*.plrjs.org/*.xml|$important,xmlhttprequest,redirect=noop.txt
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=autostart
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
@@ -669,6 +668,10 @@ eurointegration.com.ua,pravda.com.ua##^script[onload*="error-report.com"]
 gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
 gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
 ||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
+!#endif
+!
+!#if !env_firefox
+||v*.plrjs.org/*.xml$important,xmlhttprequest,redirect=noopvast-3.0
 !#endif
 !
 ! MV3-специфичные случаи >
