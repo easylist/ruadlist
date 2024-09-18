@@ -36,7 +36,7 @@ pikabu.ru#?#.story__header:-abp-has(> div:empty)
 fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 @@||ozon.ru/highlight/kursk-$elemhide
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"]:not([class*="tabContent"]) [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"] [class] [data-asset-click])
 dzen.ru#?#[class]:-abp-properties(/--banner-color:/)
 www.drive2.ru##[data-container="outer"]
 liveinternet.ru,sdamgia.ru##[data-container]
@@ -47,7 +47,7 @@ dzen.ru,liveinternet.ru##[data-wrapper]
 dzen.ru##[data_name]
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
-dzen.ru##a[href^="https://dzen.ru/"]:not([class*="tabContent"]) [class] > [class] > [class] > [class]
+dzen.ru##a[href^="https://dzen.ru/"] [class] [data-asset-click]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
@@ -1253,13 +1253,10 @@ dzen.ru##div[style*=" !important; "][style$=" !important;"]
 /*ylecd=$popup,domain=dzen.ru
 /*yleed=$popup,domain=dzen.ru
 /*yllcd=$popup,domain=dzen.ru
-/*ypppel=$popup,domain=dzen.ru
-/*ypqqel=$popup,domain=dzen.ru
+/*yp*el=$popup,domain=dzen.ru
+/*yq*el=$popup,domain=dzen.ru
 /*yqilp=$popup,domain=dzen.ru
 /*yqipl=$popup,domain=dzen.ru
-/*yqppel=$popup,domain=dzen.ru
-/*yqqpel=$popup,domain=dzen.ru
-/*yqqqel=$popup,domain=dzen.ru
 =mytarget$popup,domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=dzen.ru
 !
