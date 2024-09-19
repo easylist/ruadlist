@@ -1,4 +1,5 @@
 ! CSP and Header filters
+$csp=script-src-attr 'none',domain=volyn.com.ua
 .infox.sg^$csp=script-src
 /gateway/aHR0c$csp=script-src
 |http*//fastpic.org/$csp=frame-src 'self'
