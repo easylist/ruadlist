@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240915.1154
+@version        0.20240919.1442
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1698,11 +1698,11 @@
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     article[class*="card"][class*="-promo"], 
     aside[id^="article_"][class*="rihggt"] > div[class], 
+    div[aria-label="Заголовок этажа"] ~ article[class^="dzen-desktop"] ~ article:not([class^="dzen-desktop"]), 
     div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
     div[class*="Container"] > div[style="opacity: 1;"] > div[class*="articleRight"][style^="max-height:"], 
     div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
     div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
-    div[class*="_feed-type_article_"] article:not([class*="card"]), 
     div[class*="article__"] > .undefined ~ div[class*="millde"] > div[id][class], 
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="video"] [aria-label="Табы рекомендаций"] ~ [aria-label*="карта"], 
@@ -1711,8 +1711,6 @@
     div[class^="article__article-"] > div[class^="article-item"] > div[id], 
     div[class^="auto-slide-ad__container"], 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
-    div[id*="long_video_floor"] [class*="__video-"] ~ :not([class*="__video-"]), 
-    div[id*="native_floor"] [class*="cardPartWrapper"] ~ :not([class*="cardPartWrapper"]), 
     div[id*="splashscreen"], div[id][class$="__ad"] {
         display: none !important
     }
