@@ -36,7 +36,7 @@ pikabu.ru#?#.story__header:-abp-has(> div:empty)
 fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 @@||ozon.ru/highlight/kursk-$elemhide
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="super"] [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="_link"][class*="_tabContent"] [class] > [class] > [class] > [class])
 www.drive2.ru##[data-container="outer"]
 liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
@@ -46,7 +46,7 @@ dzen.ru,liveinternet.ru##[data-wrapper]
 dzen.ru##[data_name]
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
-dzen.ru#?#a[href^="https://dzen.ru/"][class*="super"] [class] > [class] > [class] > [class]
+dzen.ru##a[href^="https://dzen.ru/"][class*="_link"][class*="_tabContent"] [class] > [class] > [class] > [class]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
@@ -1194,8 +1194,8 @@ dzen.ru##div[class*="card-widh-ad_"]
 dzen.ru##div[class*="card-with-ad__"]
 dzen.ru##div[class*="piacehoder"]:empty
 dzen.ru##div[class*="tsar__container"]
-dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
 dzen.ru##div[class^="advert-panel"]
+dzen.ru##div[class^="dzen-desktop--header-widgets"] div[class^="dzen-desktop--top-micro-app"]
 dzen.ru##div[class^="floor-card-rtb_"]
 dzen.ru##div[class^="floor-skeleton-card__skeletonCardWrapper"]
 dzen.ru#?#div[class^="grid__row-"]:-abp-has(> div[class^="video-card-ad"])
@@ -1217,6 +1217,7 @@ dzen.ru##div[style*=" !important; "][style$=" !important;"]
 /*pil=$popup,domain=dzen.ru
 /*y*el=$popup,domain=dzen.ru
 /*y*le=$popup,domain=dzen.ru
+/*y*li=$popup,domain=dzen.ru
 /*ychid=$popup,domain=dzen.ru
 /*ychyd=$popup,domain=dzen.ru
 /*yciild=$popup,domain=dzen.ru
