@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240926.1948
+@version        0.20240930.1243
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5258,7 +5258,7 @@
 }
 
 @-moz-document domain("www.fontanka.ru") {
-    #onesignal-promt-target > div:first-child {
+    #onesignal-promt-target > div:first-child, header > div[class^="funding_"] {
         display: none !important
     }
 }
