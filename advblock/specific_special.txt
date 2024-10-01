@@ -30,6 +30,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
+e.mail.ru##.react-async div[class]:empty
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
@@ -69,6 +70,7 @@ liveinternet.ru##div[style*="!important; "]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
 www.drive2.ru##iframe[style="opacity: 1;"]
+e.mail.ru##span[style*="--sidebar-column-width:"] > div:last-child
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
@@ -323,7 +325,6 @@ e.mail.ru,octavius.mail.ru##.layout__content div[data-test-id="promt-tooltip"]
 e.mail.ru,octavius.mail.ru##.letter-list-item-adv
 @@||e.mail.ru^$generichide
 @@||octavius.mail.ru^$generichide
-e.mail.ru,octavius.mail.ru##span[style*="--sidebar-column-width:"] > div:empty
 ! Новости
 news.mail.ru##.m-fixed-panel
 news.mail.ru##.r-source
