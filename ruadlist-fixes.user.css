@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20240930.1243
+@version        0.20241002.2003
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1706,8 +1706,8 @@
     div[class^="article-item__articleItem-"] > div[class*="subscribeBanner"] + div:not([class]), 
     div[class^="article__article-"] > div[class^="article-item"] > div[id], 
     div[class^="auto-slide-ad__container"], 
+    div[class^="dzen-"][class*="feed_"] article[class^="dzen-desktop--"] ~ article:not([class^="dzen-desktop--"]), 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
-    div[class^="dzen-feed_"] article[class^="dzen-desktop--"] ~ article:not([class^="dzen-desktop--"]), 
     div[id*="splashscreen"], div[id][class$="__ad"] {
         display: none !important
     }
