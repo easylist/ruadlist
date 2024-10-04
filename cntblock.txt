@@ -1393,12 +1393,9 @@ $document,removeparam=hasnavig,domain=r.mail.ru
 $document,removeparam=npr,domain=ya.ru|yandex.*
 $document,removeparam=nr,domain=ya.ru|yandex.*
 $document,removeparam=partner_user_id,domain=dzen.ru
-$document,removeparam=recordid,domain=fontanka.ru
 $document,removeparam=redirect_ts,domain=ya.ru|yandex.*
-$document,removeparam=regionid,domain=fontanka.ru
 $document,removeparam=rid,domain=dzen.ru
 $document,removeparam=sbmt,domain=r.mail.ru
-$document,removeparam=source,domain=fontanka.ru
 $document,removeparam=src,domain=r.mail.ru
 $document,removeparam=test_id,domain=r.mail.ru
 $document,removeparam=us,domain=r.mail.ru
@@ -1585,6 +1582,9 @@ utm_$document,removeparam=ig_rid,domain=instagram.com
 ||facebook.com^*/?hc_ref$removeparam=|,domain=facebook.com
 ||facebook.com^*/?ref=$removeparam=|,domain=facebook.com
 ||finance.ua/*?mpl=$document,removeparam=|,domain=finance.ua
+||fontanka.ru/*/comments/$document,removeparam=|recordid,domain=fontanka.ru
+||fontanka.ru/*/comments/$document,removeparam=|regionid,domain=fontanka.ru
+||fontanka.ru/*/comments/$document,removeparam=|source,domain=fontanka.ru
 ||imdb.com/*pf_rd_$document,removeparam=|pf_rd_,domain=imdb.com
 ||imdb.com/*ref_=$document,removeparam=|ref_,domain=imdb.com
 ||livejournal.com/*.html?media|$removeparam=|media,domain=livejournal.com
