@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241008.2213
+@version        0.20241009.2148
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -980,6 +980,7 @@
   domain("kinoafisha.ua"),
   domain("kinobar.vip"),
   domain("konohatv.org"),
+  domain("ladys.media"),
   domain("moskva.fm"),
   domain("newstudio.tv"),
   domain("nnmclub.ro"),
@@ -995,7 +996,6 @@
   domain("xxxadulttorrent.org"),
   domain("you-anime.ru"),
   domain("yummyanime.tv"),
-  domain("ladys.media"),
   domain("zombie-film.live") {
     body:not(#id) {
         padding-top: 0 !important
@@ -1691,7 +1691,9 @@
     [class*="desktop"] ~ [id*="teaser"], 
     [class^="card-part-wrapper"] ~ div[class=""], 
     [class^="dzen-desktop"] ~ div[id$="-popup"], 
-    [data-testid="recommend-auth-popup"], a[href*="://yandex.ru/an/count/"], 
+    [data-testid="recommend-auth-popup"], 
+    [id*="_floor_"] article[class]:not(._is-desktop) ~ article._is-desktop, 
+    a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     article[class*="-promo"], 
     aside[id^="article_"][class*="rihggt"] > div[class], 
@@ -1706,7 +1708,6 @@
     div[class^="article-item__articleItem-"] > div[class*="subscribeBanner"] + div:not([class]), 
     div[class^="article__article-"] > div[class^="article-item"] > div[id], 
     div[class^="auto-slide-ad__container"], 
-    div[class^="dzen-"][class*="feed_"] article[class^="dzen-desktop--"] ~ article:not([class^="dzen-desktop--"]), 
     div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
     div[id*="splashscreen"], div[id][class$="__ad"] {
         display: none !important
