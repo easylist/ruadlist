@@ -1762,6 +1762,7 @@ mail.ru###grid .widget__container > .progress-bar-widget
 mail.ru###grid div[class^="feed__"]
 my.mail.ru###history_container > div[class][style*="display: block!important"]
 minigames.mail.ru###like-buttons
+mail.ru###mailbox:style(visibility: unset !important; pointer-events: unset !important)
 minigames.mail.ru###portal-headline:style(margin-top: auto !important)
 hi-tech.mail.ru###portal-menu:style(margin: 0 !important)
 mail.ru###user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:first-child
@@ -1816,6 +1817,7 @@ mail.ru##div[slot="main-column"] .tabs:style(margin-top: 5px !important)
 mail.ru##div[slot="main-column"] > .header
 mail.ru##div[slot="main-column"] > .header ~ .swiper
 mail.ru##div[slot="main-column"] > .micro-widgets:style(height: auto !important; margin: auto !important)
+mail.ru##div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
 my.mail.ru##html.window-loaded .b-video-backscreen
 my.mail.ru##html.window-loaded .b-video-controls__inside-play-button:style(visibility: visible !important; opacity: 0 !important; width: 100% !important; height: 100% !important; top: 0 !important; left: 0 !important)
 cloud.mail.ru##iframe[src^="https://o2.mail.ru/"] ~ div div[class^="ViewerHeader__closeIcon--"]
