@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241011.1657
+@version        0.20241011.2115
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3293,7 +3293,8 @@
     .grid__header .ph-modal-projects-overlay {
         top: inherit !important
     }
-    #mailbox, div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class] {
+    #mailbox:not(#id), 
+    div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class] {
         visibility: unset !important;
         pointer-events: unset !important
     }
