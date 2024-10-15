@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241011.2115
+@version        0.20241015.1222
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1733,7 +1733,8 @@
   domain("yandex.uz") {
     [class*="mini-suggest__item"] > a[href*="://yabs.yandex."][href*="/count/"], 
     [class*="mini-suggest__item"] > a[href*="://yandex."][href*="/clck/"], 
-    [class*="mini-suggest__item"] > a[href][target="_blank"] {
+    [class*="mini-suggest__item"] > a[href][target="_blank"], 
+    [id^="suggest-item-"] > a[href*="://yabs.yandex."][href*="/count/"] {
         display: none !important
     }
 }
@@ -5462,7 +5463,7 @@
 }
 
 @-moz-document domain("ya.ru") {
-    .market-banner_js_inited, .market-feed {
+    .market-feed, [class^="main-home-"][class*="__content "] {
         display: none !important
     }
 }
