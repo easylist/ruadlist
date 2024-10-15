@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241015.1937
+@version        0.20241015.2015
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1767,11 +1767,16 @@
     .application_new-toolbar .application-mail:not(.application-mail_webview-mobile) .letter-list[class*="adv"] {
         --letter-list-top-toolbar-height: inherit !important
     }
-    #popup-placeholder, .advert-column, .letter-list-item-adv__container {
+    #popup-placeholder, .advert-column {
         display: none !important
     }
     .application-mail__wrap > .application-mail__layout > .layout[style*="grid-template-columns:"] {
         grid-template-columns: 232px 1fr 0 0 !important
+    }
+    .letter-list-item-adv__container {
+        height: 0 !important;
+        opacity: 0 !important;
+        pointer-events: none !important
     }
     .layer-sent-page > .layer {
         min-height: 0 !important
