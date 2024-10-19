@@ -5,6 +5,7 @@
 ! --- uBO scriptlets injection rules & other ---
 gazeta.ru###_id_flowup
 tapochek.net###aposnow
+growhow.in.ua###custom-background-css:remove()
 myshared.ru###download_form > .modal-body
 vm.ru###onair > img[data-src="/img/player_cover.svg"]
 inoreader.com###reader_pane:style(padding-right: unset !important)
@@ -159,6 +160,7 @@ tapochek.net##+js(abort-on-property-read, web_script)
 4studio.com.ua,cikavosti.com,dialogs.org.ua,fakty.ua,gorodkiev.com.ua,informator.ua,kriminal.tv,pingvin.pro,technoportal.com.ua,u-news.com.ua,uanews.org.ua,volynpost.com##+js(abort-on-property-read, weekCallbacks)
 bombardir.ru,comp-service.kiev.ua,inforesist.org,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
 softportal.com##+js(abort-on-property-read, window.block)
+growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
 tornado.3dn.ru##+js(abort-on-property-read, wrapper.addEventListener)
 80-e.ru,doramatv.live,examenpdd.com,rg.ru,ura.news##+js(abort-on-property-read, yaContextCb)
 animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
