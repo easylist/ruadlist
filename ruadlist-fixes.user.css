@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241020.1327
+@version        0.20241020.1629
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1706,6 +1706,7 @@
     div[class*="bannerMain"], div[class*="card-video-promo__root"], 
     div[class*="video"] [aria-label="Табы рекомендаций"] ~ [aria-label*="карта"], 
     div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
+    div[class*="widget"] > div[class*="container"] > div ~ div, 
     div[class^="article-item__articleItem-"] > div[class*="subscribeBanner"] + div:not([class]), 
     div[class^="article__article-"] > div[class^="article-item"] > div[id], 
     div[class^="auto-slide-ad__container"], 
