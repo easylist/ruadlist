@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241020.1629
+@version        0.20241021.1315
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5008,6 +5008,12 @@
         pointer-events: auto !important
     }
     body {
+        pointer-events: none !important
+    }
+}
+
+@-moz-document domain("versii.if.ua") {
+    .fb-sidebar__main > a[href] {
         pointer-events: none !important
     }
 }
