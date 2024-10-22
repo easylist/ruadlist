@@ -3591,6 +3591,8 @@ onliner.by##.news-media__preview > a:not([href*="onliner.by/"]) > img
 1plus1.ua##.news-partners-add
 onliner.by#?#.news-promo:-abp-has(> .news-promo__details)
 onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href*="banner"])
+onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href]:not([href*=".onliner.by/"]))
+onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href^="https://catalog.onliner.by/"])
 armyinform.com.ua##.news-section_items > li.link > a[target="_blank"] > img
 onliner.by##.news-text > * > a[href^="https://catalog.onliner.by/"][href*="utm_"]
 football24.ua#?#.news-text > .insert:-abp-has(> a[target="_blank"])
