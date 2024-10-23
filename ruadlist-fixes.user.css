@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241021.1315
+@version        0.20241023.1036
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4146,6 +4146,9 @@
 @-moz-document
   domain("rbc.ru"),
   domain("sportrbc.ru") {
+    .news-feed a[href*="utm_campaign"] {
+        display: none !important
+    }
     .g-relative > .forecast {
         height: auto !important
     }
