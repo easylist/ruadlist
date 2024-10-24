@@ -586,6 +586,7 @@ e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; to
 ! newapp
 e.mail.ru,octavius.mail.ru##+js(addEventListener-defuser, /click|destroy|mousedown/, , elements, .html-fishing)
 e.mail.ru,octavius.mail.ru##+js(href-sanitizer, [data-cke-saved-href^="https://checklink.mail.ru/proxy?"])
+e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, MIMIC_FORCE)
 e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, _runBatch, 100)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
 e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
