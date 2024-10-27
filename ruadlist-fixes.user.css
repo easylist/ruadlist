@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241026.217
+@version        0.20241027.1612
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1600,39 +1600,33 @@
         background: center / 100% 100% no-repeat #515151 var(--res-logo) !important;
         border-radius: 6px !important
     }
-    .c-dv-container, .c-pager + div[class]:last-child, .dv-post-header, 
-    .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child + div[class] ~ div:not(:last-child), 
-    .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"] + div, 
-    .offer[itemtype*="://schema.org/Product"] + div, 
-    .offer[itemtype*="://schema.org/Product"] + div + div, 
     div[class$="content"] ~ div + div[class*=" "][class$="--mh"], 
     div[class*="--content article "] + div, 
     div[class*="--content article "] + div + div:not(:last-child), 
-    div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class], 
-    div[itemtype*="://schema.org/BlogPosting"] ~ div:last-child > div:first-child + div[class], 
-    div[itemtype*="://schema.org/Product"] ~ div:last-child > div:first-child + div[class], 
-    div[itemtype*="://schema.org/Review"] ~ div:last-child > div:first-child + div[class] {
+    div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class] {
         display: none !important
     }
-    .js-page > div[class$="-header"] + div[class] > span.o-anchor[id]:first-child ~ div:last-child > div[class*="--content"], 
     div[class*="--content article "] + div ~ div:last-child > div:first-child:not(:only-child), 
-    div[itemtype*="://schema.org/BlogPosting"] ~ div:last-child > div:first-child:not(:only-child), 
-    div[itemtype*="://schema.org/Product"] ~ div:last-child > div:first-child:not(:only-child), 
+    div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child:not(:only-child), 
+    div[itemtype*="://schema.org/Photograph"] > div:last-child > div:first-child:not(:only-child), 
     div[itemtype*="://schema.org/Review"] ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
     }
-    .js-page > div[class$="-header"] + div[class]:last-child > div:first-child:not([class*="column"]) + div:last-child {
-        min-height: 0 !important;
-        box-shadow: unset !important
-    }
     [data-track], 
-    div[itemtype*="://schema.org/BlogPosting"] ~ div:not(:last-child), 
+    div[itemtype*="://schema.org/BlogPosting"] > div:not(:last-child), 
+    div[itemtype*="://schema.org/Photograph"] > div:not(:last-child), 
     div[itemtype*="://schema.org/Product"] ~ div:not(:last-child), 
     div[itemtype*="://schema.org/Review"] ~ div:not(:last-child) {
         min-height: 0 !important;
         padding-top: unset !important;
         padding-bottom: unset !important;
         box-shadow: inherit !important
+    }
+    div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child + div[class], 
+    div[itemtype*="://schema.org/Photograph"] > div:last-child > div:first-child + div[class], 
+    div[itemtype*="://schema.org/Review"] ~ div:last-child > div:first-child + div[class] {
+        width: unset !important;
+        margin-left: unset !important
     }
 }
 
@@ -3227,7 +3221,8 @@
     #grid .widget__container > .progress-bar-widget, #grid div[class^="feed__"], 
     #user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:first-child, 
     #user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:last-child, 
-    .mailbox__add-btn-logo, .ph-ext, .resplash-btn.noadsButton, 
+    .balloon-anchor > .balloon, .mailbox__add-btn-logo, .ph-ext, 
+    .resplash-btn.noadsButton, 
     .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
