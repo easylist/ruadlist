@@ -1170,6 +1170,7 @@ virtualbrest.ru#?#.footer [id]:-abp-has(> b)
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,wmj.ru#?#.heading:-abp-contains(Рекомендуем ещё)
 sinoptik.ua##.liveinternet
 samlab.ws##.main > #footer ~ table
+mail.ru##.ph-logo_doodle[href^="https://universal-link.mail.ru/"]
 istmat.org#?#.region-sidebar-first > .block:-abp-has(> .content > [href*="metrika"])
 radioprofusion.com##.revolvermaps
 sibnet.ru##.sibnet-footer__counters
@@ -1390,8 +1391,11 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 !
 ! Экспериментальные правила для маркеров
 $document,removeparam=/[a-z]\=1$/,domain=svpressa.ru
-$document,removeparam=back,domain=e.mail.ru
+$document,removeparam=app_id_mytracker,domain=mail.ru
+$document,removeparam=authid,domain=mail.ru
+$document,removeparam=back,domain=mail.ru
 $document,removeparam=clid,domain=dzen.ru|ya.ru|yandex.*
+$document,removeparam=dwhsplit,domain=mail.ru
 $document,removeparam=fr,domain=r.mail.ru
 $document,removeparam=frm,domain=r.mail.ru
 $document,removeparam=hasnavig,domain=r.mail.ru
@@ -1411,6 +1415,7 @@ $document,removeparam=usqid,domain=r.mail.ru
 $document,removeparam=usstr,domain=r.mail.ru
 $document,removeparam=ustq,domain=r.mail.ru
 $document,removeparam=via,domain=dzen.*|yandex.*
+$document,removeparam=x-login-auth,domain=mail.ru
 $removeparam=?utm_source
 $removeparam=_1ld,domain=vkplay.ru
 $removeparam=_1lp,domain=vkplay.ru
