@@ -37,10 +37,6 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-
 howdyho.net,howdyho.pro##:not(my-obnaruzhili-adblock)
 fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
-~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] :not(a) > span:-abp-properties(overflow-x: hidden)
-~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] article:-abp-properties(overflow-x: hidden)
-~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] p:-abp-properties(overflow-x: hidden)
-~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] section:-abp-properties(overflow-x: hidden)
 @@||ozon.ru/highlight/kursk-$elemhide
 dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class])
 drive2.ru##[data-container="outer"]
@@ -57,6 +53,10 @@ pikabu.ru##article.story[data-text-length="1"]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a) > span:-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-properties(overflow-x: hidden)
 sdamgia.ru##center > div[id][style]
 dzen.ru#?#div:-abp-has(> div:first-child > style + div a span)
 cq.ru#?#div:-abp-properties(content: "Реклама")
