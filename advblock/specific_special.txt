@@ -55,6 +55,10 @@ www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a) > span:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > article
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > p
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > section
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > span:not(.container)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-properties(overflow-x: hidden)
 sdamgia.ru##center > div[id][style]
