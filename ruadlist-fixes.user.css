@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241031.1837
+@version        0.20241031.2235
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -980,6 +980,7 @@
   domain("jetsetter.ua"),
   domain("kinoafisha.ua"),
   domain("kinobar.vip"),
+  domain("kinoukr.com"),
   domain("konohatv.org"),
   domain("ladys.media"),
   domain("moskva.fm"),
@@ -988,7 +989,6 @@
   domain("nnmclub.to"),
   domain("pay-day.ru"),
   domain("roem.ru"),
-  domain("kinoukr.com"),
   domain("rusfootball.info"),
   domain("trupornolabs.org"),
   domain("utorr.cc"),
@@ -5481,7 +5481,7 @@
 }
 
 @-moz-document domain("ya.ru") {
-    .i-mini-bem[style], .market-feed, .multifeed {
+    .i-mini-bem[style], .market-feed, [id*="rythm"] {
         display: none !important
     }
 }
