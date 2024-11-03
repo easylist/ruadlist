@@ -840,14 +840,13 @@ weather.rambler.ru#?#div:-abp-properties(min-height: 600px)
 avtorambler.com,rambler.ru#?#div:-abp-has(> div[style^="min-height:"]) > p ~ div:-abp-contains(Продолжение истории после рекламы)
 !
 ! RBC (РБК)
-cnews.ru###mag_banner
 cnews.ru,utro.ru##.banner
-cnews.ru##.banner_wrapp
 sportrbc.ru##.bet-block
 rbc.ru##.countdown
 rbc.ru##.deposit-block
 autonews.ru##.g-banner__columns
 rbc.ru,sportrbc.ru##.g-banner__news-footer > div[class="js-rbcslider-multi-news"]
+safe.cnews.ru##.header-brand-logo
 pro.rbc.ru##.header__partner
 rbc.ru#?#.item-in-article:-abp-has([href*="erid="])
 sportrbc.ru##.js-header-slider-container
@@ -856,14 +855,16 @@ rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
 cash.rbc.ru##.js-one-office.premium
 rbc.ru##.js-video-player-ad-skip
 rbc.ru#?#.l-col-100h:-abp-has(> div [href*="banner"])
-cnews.ru##.main > noindex:last-child
 rbc.ru##.mts-promo
 utro.ru#?#.news-group__content > .news-group__item:-abp-has(> .banner)
+cnews.ru##.objects_row > .cnb-zone > a:not([href*="cnews.ru"])
 quote.rbc.ru##.partner
 rbc.ru,rbclife.ru##.rbc-header-hide-banners
 rbc.ru,rbclife.ru##.rbc-header-project-image
 ##.rbcobmen
 rbc.ru##.right-promo-block
+cnews.ru#?#.section_mainnews > .container:-abp-has(> .line_pattern > a[href^="https://market.cnews.ru/"])
+www.cnews.ru##.section_widget_market
 rbc.ru##.shopping-card-button
 rbc.ru##.showcase-collection__logo,.showcase-collection__subtitle
 rbc.ru##.simple-promo-card
@@ -874,7 +875,6 @@ autonews.ru,rbc.ru##.topline__branding__wrapper
 autonews.ru,rbc.ru,sportrbc.ru##.topline__disable-adv__button
 autonews.ru,rbc.ru,sportrbc.ru##.topline__item__image-block
 rbc.ru##.video-player__controls__ad-countdown
-cnews.ru##.yandex_banner
 /browser-updater$script,domain=autonews.ru|rbc.ru|sportrbc.ru
 /rbcbanners-*/_fullscreen.js$script,domain=autonews.ru|rbc.ru|sportrbc.ru
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=autonews.ru|rbc.ru|sportrbc.ru
@@ -891,15 +891,14 @@ rbc.ru##a.video-player__details[target="_blank"]
 quote.ru##a[href*="bannersdisable_button"]
 sportrbc.ru##a[href*="erid="][target="_blank"]
 quote.ru##a[href="https://quote.ru/?utm_source=topline"] img
-cnews.ru##a[href^="http://cnb.cnews.ru/click.php"]
+cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__container
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
-cnews.ru##div[class^="cnb_popup"]
 autonews.ru,rbc.ru,rbclife.ru,sportrbc.ru##div[class^="fox-tail"]
 rbc.ru##div[class^="item-slider__partner"]
 utro.ru##div[class^="partners-block"]
-cnews.ru##div[id^="div-gpt-ad-"]
-||cnews.ru/inc/banners/
+||cnews.ru/inc/js/height_max_banner.js
+||market.cnews.ru/widget$domain=www.cnews.ru
 ||rbk.ru/*/_mtsFloorAida.js
 ||rbk.ru/*/_renderAggregator.js
 ||rbk.ru/*_videoCommercial.
