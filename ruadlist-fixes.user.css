@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241102.1927
+@version        0.20241103.1648
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5647,6 +5647,15 @@
 @-moz-document domain("znak.com") {
     .wrapper > header {
         margin-top: 15px !important
+    }
+}
+
+@-moz-document domain("zoom.cnews.ru") {
+    .main_content {
+        margin-top: 12px !important
+    }
+    .article_inner.news_content_inner + .sidebar {
+        top: 0 !important
     }
 }
 
