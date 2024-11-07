@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241103.1648
+@version        0.20241108.215
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4071,6 +4071,15 @@
 @-moz-document domain("prophotos.ru") {
     body:not(#id) {
         padding-top: 130px !important
+    }
+}
+
+@-moz-document domain("proxima.net.ua") {
+    body.modal-open #ft_custom_modal, body.modal-open > .modal-backdrop {
+        display: none !important
+    }
+    body.modal-open {
+        overflow: auto !important
     }
 }
 
