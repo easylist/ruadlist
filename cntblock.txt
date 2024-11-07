@@ -1485,7 +1485,7 @@ $removeparam=nr,domain=ya.ru
 $removeparam=partner,domain=steambuy.com
 $removeparam=pclid
 $removeparam=perehod,domain=ozon.ru
-$removeparam=persistent_id,domain=dzen.ru
+$removeparam=persistent_id,domain=dzen.ru|sportsdzen.ru
 $removeparam=pulse_traffic
 $removeparam=rank,domain=kufar.by
 $removeparam=redirect_ts,domain=ya.ru
@@ -1559,7 +1559,7 @@ $~third-party,removeparam=/cdom/i,domain=3dnews.kz|3dnews.ru
 /search/*$document,removeparam=search_source,domain=ya.ru|yandex.*
 /search/*$document,removeparam=src,domain=ya.ru|yandex.*
 /search/*$document,removeparam=suggest_reqid,domain=ya.ru|yandex.*
-/story/*?lang=$document,removeparam=|,domain=dzen.*|yandex.*
+/story/*?lang=$document,removeparam=|,domain=dzen.*|sportsdzen.*|yandex.*
 ://aliexpress.*.htm?spm=$document,removeparam=|,domain=aliexpress.*
 =ukraine_news&utm_$document,removeparam=|utm_
 ?*r_audience=$document,removeparam=|,domain=ria.com
