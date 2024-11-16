@@ -315,6 +315,7 @@ pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
 dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
+fontanka.ru##+js(set-attr, [class^="articleBlockVideo_"] video, controls, true)
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
 joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 3dnews.kz,3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
@@ -458,6 +459,7 @@ sports.ru##[class*="_label "]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
+fontanka.ru##[class^="articleBlockVideo_"] video ~ button
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
 www.sports.ru##[data-noinit]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
@@ -501,6 +503,7 @@ kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
 ||adbutton.net^$script,redirect=noopjs
 ||an.yandex.ru^$domain=e.mail.ru
+||cdn.hsmedia.ru/ump-webapp-public/dist/client/assets/ArticleBlockVideo-$script,domain=fontanka.ru
 ||clustrmaps.com/counter/$image,redirect=32x32.png
 ||connect.facebook.net/*/fbevents.js|$third-party
 ||cosmonova-broadcast.tv/player?autoplay=$subdocument,removeparam=autoplay
