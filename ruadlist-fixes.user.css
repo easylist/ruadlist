@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241109.1516
+@version        0.20241118.1404
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -416,14 +416,6 @@
     }
 }
 
-@-moz-document
-  domain("ahen.me"),
-  domain("mintmanga.one") {
-    img[src] {
-        filter: none !important
-    }
-}
-
 @-moz-document domain("aif.ru") {
     #container:not(#id) {
         margin-top: 0 !important
@@ -526,6 +518,14 @@
     }
     body * {
         transition: none !important
+    }
+}
+
+@-moz-document
+  domain("allhen.online"),
+  domain("mintmanga.one") {
+    img[src] {
+        filter: none !important
     }
 }
 
@@ -1536,8 +1536,8 @@
     }
 }
 
-@-moz-document domain("dorama.live") {
-    .block-content > .ageLimit ~ .block-player {
+@-moz-document domain("doramalive.news") {
+    .block-content > .ageLimit ~ [class$="-player"] {
         display: block !important
     }
     .block-content > .ageLimit {
@@ -2595,6 +2595,9 @@
   domain("zannn.top") {
     table.lista[width="100%"][style] > tbody > tr > td.header[width="110px"] {
         color: transparent !important
+    }
+    body {
+        margin-top: 0 !important
     }
     div#main {
         margin-top: 0 !important;
