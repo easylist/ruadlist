@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241118.1404
+@version        0.20241119.2247
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3266,7 +3266,8 @@
         margin-top: 4px !important;
         margin-bottom: 4px !important
     }
-    div[slot="main-column"] .tabs {
+    .grid__ccol > .tabs-content, div[slot="main-column"] .tabs, 
+    div[slot="main-column"] > .tabs__container {
         margin-top: 5px !important
     }
     .ph-project__user-icon-mask {
