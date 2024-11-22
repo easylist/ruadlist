@@ -375,7 +375,7 @@ inpot.ru###ezobann
 bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] .mads_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mads_noClickarea)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onclick*="ads_params:"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onmouseover*="AdsLight"])
@@ -7428,7 +7428,7 @@ prostatitanet.com##div[id^="pg-aa-ad"]
 interfax.ru,sport-interfax.ru##div[id^="pl"][id*="_ban"]
 xn---2--mddxunv8a2esa.xn--p1ai##div[id^="post"] > .tech-info + :empty
 tavrijci.org##div[id^="post-"] > div[class="a-divide-entry"]
-vk.com,vk.ru##div[id^="post-"][onmousedown="wall.postClickStat(event)"]
+vk.com,vk.ru##div[id^="post-"][onmousedown^="wall.postClickStat(event)"]
 minfin.com.ua##div[id^="premium-"]
 smartphone.ua##div[id^="premium-banner"]
 sm.news##div[id^="prog_adv_"]
