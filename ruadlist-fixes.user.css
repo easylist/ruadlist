@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241121.2228
+@version        0.20241125.1750
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3237,7 +3237,7 @@
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body:not(.js-module) .searchContainer ~ div > a.dmb, 
     div[slot="main-column"] > .header, 
-    div[slot="main-column"] > .header ~ .swiper, 
+    div[slot="main-column"] > .header ~ .swiper, main#grid .promo-news, 
     main#grid > .grid-middle ~ div:not([class]):not([id]) {
         display: none !important
     }
