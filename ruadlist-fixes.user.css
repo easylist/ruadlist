@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241125.1750
+@version        0.20241201.1157
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1497,21 +1497,6 @@
     }
 }
 
-@-moz-document
-  domain("dmod.cc"),
-  domain("draug.ru"),
-  domain("modsforwot.ru") {
-    #timer_2 {
-        display: block !important
-    }
-    #timer_1 {
-        display: none !important
-    }
-    body {
-        overflow: auto !important
-    }
-}
-
 @-moz-document domain("doba.te.ua") {
     #popup-root {
         display: none !important
@@ -1594,6 +1579,20 @@
     .adb, .navbar_notice {
         position: fixed !important;
         transform: scale(0) !important
+    }
+}
+
+@-moz-document
+  domain("draug.ru"),
+  domain("modsforwot.ru") {
+    #timer_2 {
+        display: block !important
+    }
+    #timer_1 {
+        display: none !important
+    }
+    body {
+        overflow: auto !important
     }
 }
 
