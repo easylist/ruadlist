@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241207.2308
+@version        0.20241209.1833
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1948,10 +1948,10 @@
 }
 
 @-moz-document
-  domain("filmix.me"),
   domain("filmix.date"),
   domain("filmix.fm"),
   domain("filmix.life"),
+  domain("filmix.me"),
   domain("filmix.pub"),
   domain("filmix.tech"),
   domain("filmix.zone") {
@@ -2347,6 +2347,19 @@
 @-moz-document domain("govoritmoskva.ru") {
     .rightColumn > .darkPart, footer.pageContainer {
         height: auto !important
+    }
+}
+
+@-moz-document
+  domain("grazia.ru"),
+  domain("mentoday.ru"),
+  domain("techinsider.ru"),
+  domain("thevoicemag.ru") {
+    .preview-section .vertical-video__loader {
+        display: none !important
+    }
+    .preview-section .vertical-video__play-icon-wrapper {
+        display: unset !important
     }
 }
 
@@ -3385,18 +3398,6 @@
     }
     .i-layout__branding-content-wrapper {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("mentoday.ru"),
-  domain("techinsider.ru"),
-  domain("thevoicemag.ru") {
-    .preview-section .vertical-video__loader {
-        display: none !important
-    }
-    .preview-section .vertical-video__play-icon-wrapper {
-        display: unset !important
     }
 }
 
