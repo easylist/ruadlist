@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241209.1833
+@version        0.20241210.1326
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1754,6 +1754,9 @@
 }
 
 @-moz-document domain("e.mail.ru") {
+    .ph-project__link[href^="https://cloud.mail.ru/promo/"] {
+        display: none !important
+    }
     .ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"] {
         pointer-events: none !important
     }
