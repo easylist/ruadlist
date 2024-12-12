@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241211.1331
+@version        0.20241212.2222
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -307,6 +307,18 @@
 @-moz-document domain("7days.ru") {
     body {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("abw.by") {
+    .cookie-modal {
+        display: none !important
+    }
+    body.stop-scroll {
+        position: relative !important
+    }
+    .app-branding {
+        transform: none !important
     }
 }
 
