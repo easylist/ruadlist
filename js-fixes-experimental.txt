@@ -550,6 +550,7 @@ ya.ru,yandex.*##.dist-overlay__popup:remove()
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.kz|3dnews.ru
 !
 ! Mail.RU
+mail.ru###grid div[class^="feed__"]:remove()
 webagent.mail.ru#@#+js()
 minigames.mail.ru##+js(abort-current-inline-script, $, blockWarnClass)
 mmminigames.mail.ru##+js(abort-current-inline-script, $, mimicTopClass)
@@ -580,7 +581,6 @@ ok.ru##div[class*="__banner-feed"]
 ||ad.mail.ru/$image,script,xmlhttprequest,redirect=empty
 ||ad.mail.ru/dist/
 ||mail.ru/api-proxy/rb-mimic/
-||media-trend.mail.ru/embed/$domain=~media-trend.mail.ru
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|
 ||ok.ru/web-api/*/hobby/getMailRuHobbyFeedScriptSrc$domain=mail.ru
