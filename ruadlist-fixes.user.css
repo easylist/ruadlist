@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241215.1239
+@version        0.20241216.1532
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -921,6 +921,13 @@
     div[id^="pos"] > a > img[src*="audioportal.su/!!!ads/!rotator/"] {
         zoom: 0.1 !important;
         filter: grayscale(1) !important
+    }
+}
+
+@-moz-document domain("autosport.com.ru") {
+    body {
+        padding-top: 0 !important;
+        background-color: transparent !important
     }
 }
 
