@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241216.1532
+@version        0.20241216.1554
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -925,7 +925,7 @@
 }
 
 @-moz-document domain("autosport.com.ru") {
-    body {
+    body:not(#id) {
         padding-top: 0 !important;
         background-color: transparent !important
     }
