@@ -20,6 +20,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
+||news.mail.ru/-/
 ||pikabu.ru/ajax/hcNwyd7dzApDeJa.$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
@@ -34,6 +35,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ! селекторы
 growhow.in.ua###custom-background-css {remove:true;}
 e.mail.ru##.layout__column_right-indented
+news.mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
@@ -345,6 +347,9 @@ news.mail.ru##.r-source
 news.mail.ru##.reference-page__card ~ span:last-child
 news.mail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
 dzen.ru##[id*="_tsar"]
+news.mail.ru##aside div > div:first-child:empty ~ div
+news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
+news.mail.ru##body > div > style + div[id]
 dzen.ru##div[class*=" news-site--"][class*="__desktop"]
 dzen.ru##div[class*="news-advert"]
 ! Дзен новости Mail-edition
@@ -482,6 +487,7 @@ love.mail.ru##.link-ad
 ||help.mail.ru/mail/faq/adblock$popup,~third-party
 ||horo.mail.ru/*/fast-slot.js
 ||mamba.ru/images/*/promo/
+||media-advcycle.imgsmail.ru^$third-party
 ||media-stat.mail.ru^
 ||mradx.net/img/$subdocument
 ||pets.mail.ru/my/pets/add
