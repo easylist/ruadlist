@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241219.1309
+@version        0.20241219.1506
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3362,6 +3362,10 @@
   domain("sportmail.ru") {
     a[id^="tb-"][class^="tb-"][target="_blank"], div[data-mp*="LazyPulse"] {
         display: none !important
+    }
+    .media-ui-slider-track div:first-child +div:not([style]):last-child {
+        min-height: 0 !important;
+        width: unset !important
     }
 }
 
