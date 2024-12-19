@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241216.1554
+@version        0.20241219.1309
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2086,6 +2086,9 @@
         color: #004488 !important;
         font-weight: 200 !important
     }
+    body > div[id^="yandex_ad"] {
+        display: block !important
+    }
 }
 
 @-moz-document domain("fototips.ru") {
@@ -3644,6 +3647,10 @@
 }
 
 @-moz-document domain("news.mail.ru") {
+    #article-root section > main + [class] > div div:not([style]) {
+        min-height: 0 !important;
+        padding: unset !important
+    }
     body > .block > .tag {
         z-index: 1400 !important;
         cursor: pointer !important
