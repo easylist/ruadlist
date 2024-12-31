@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241231.46
+@version        0.20241231.1304
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -870,12 +870,6 @@
 @-moz-document domain("app2top.ru") {
     .page-wrapper {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document domain("arbitr-praktika.ru") {
-    div[id][class=""][style=""] {
-        display: none !important
     }
 }
 
@@ -1776,6 +1770,12 @@
     }
     .b-page_type_maps div[class$="__content"] > [class$="__ad"] > div {
         width: unset !important
+    }
+}
+
+@-moz-document domain("e.arbitr-praktika.ru") {
+    body > div[id][class=""][style] {
+        display: none !important
     }
 }
 
