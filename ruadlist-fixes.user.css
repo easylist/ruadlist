@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20241231.1304
+@version        0.20250102.1809
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2480,6 +2480,14 @@
     }
     .main .header {
         padding-top: 94px !important
+    }
+}
+
+@-moz-document
+  domain("hentailib.me"),
+  domain("slashlib.me") {
+    img[src^="https://cover.imglib.info/uploads/"] {
+        filter: none !important
     }
 }
 
