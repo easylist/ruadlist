@@ -308,7 +308,6 @@ myshared.ru##+js(remove-attr, disabled, .uk-modal-footer > button)
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##+js(remove-attr, oncontextmenu, [class], stay)
 stalker-mods.clan.su,stalker-mods.su##+js(remove-attr, oncontextmenu|oncopy|onselectstart)
 mag.relax.by##+js(remove-class, b-global-branding, html)
-disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
 motorpage.ru##+js(remove-class, noscroll, body)
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
@@ -334,7 +333,6 @@ tv-gubernia.ru##+js(set-constant, Object.prototype.MediaReady, noopFunc)
 xsport.ua##+js(set-constant, Object.prototype.PLAYED, null)
 1tv.ru##+js(set-constant, Object.prototype._currentAgeRestriction, null)
 vk.com,vk.ru##+js(set-constant, Object.prototype.adChoices, undefined)
-music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.uz##+js(set-constant, Object.prototype.adUsageStorageVars, undefined)
 api-video.khl.ru##+js(set-constant, Object.prototype.adblockSettings, undefined)
 razlozhi.ru##+js(set-constant, Object.prototype.advert, null)
 rutube.ru##+js(set-constant, Object.prototype.advert, undefined)
@@ -484,6 +482,7 @@ anime-chan.me##body > div[style^="pointer-events: none;"][style*="visible;"]
 volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
+disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
@@ -497,6 +496,7 @@ reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщ
 reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div > div
 reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; height: 86px !important; margin-bottom: -80px !important)
 mult-porno.*,sex-studentki.*,cosplay-porn.*##+js(set-constant, biads.initCli, undefined)
+music.yandex.ru,music.yandex.*##+js(set-constant, Object.prototype.adUsageStorageVars, undefined)
 draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 tvzvezda.ru##pjsdiv[id^="oframe"] > pjsdiv[style*="opacity: 0.1;"]:empty
 tvzvezda.ru##pjsdiv[id^="oframe"] [style="animation-play-state: running;"]
