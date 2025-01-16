@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250114.1433
+@version        0.20250116.1443
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2214,7 +2214,7 @@
 
 @-moz-document domain("gameguru.ru") {
     body {
-        background-color: inherit !important
+        background-image: none !important
     }
     #mainContent > section:first-of-type {
         margin-top: unset !important
@@ -4261,6 +4261,15 @@
     div[id*="-error-page"] > p {
         height: 0 !important;
         opacity: 0 !important
+    }
+}
+
+@-moz-document domain("retail.ru") {
+    .header-container {
+        height: auto !important
+    }
+    header[class^="header--standard"] {
+        margin-top: unset !important
     }
 }
 
