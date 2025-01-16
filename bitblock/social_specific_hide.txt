@@ -331,6 +331,7 @@ bst.bratsk.ru##.article ~ .block > .title-medium-container
 ichip.ru##.article-action
 ctrana.one,strana.news,strana.one,strana.today,u-news.com.ua##.article-afterbody
 delfi.lv##.article-body .shadow
+tvc.ru#?#.article-body > p:-abp-has(> strong > a[href^="https://t.me/"])
 lifehacker.ru##.article-card-actions__share
 xn--90aivcdt6dxbc.xn--p1ai##.article-detail__share
 www.sport.ru##.article-extra
@@ -2472,6 +2473,7 @@ youla.ru#?#div:-abp-has(> [data-test-component="SocialShare"])
 nsn.fm#?#div:-abp-has(> a[href*="//telegram.me/"])
 letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru#?#div:-abp-has(> a[target="_blank"] > div > div > span[href] > span)
 www.e1.ru#?#div:-abp-has(> div > a[href*="/e1news"])
+tvc.ru#?#div:-abp-has(> h2:-abp-contains(Поделиться))
 fontanka.ru#?#div:-abp-has(> h4 ~ div > a[href*="share"])
 agroxxi.ru#?#div:-abp-has(> span ~ [href^="https://t.me/"])
 okko.tv#?#div:-abp-has(> span:-abp-contains(Поделиться:))
@@ -2641,6 +2643,7 @@ poltavske.tv##footer > .container > .row > .d-md-block ~ .d-md-block
 epochtimes.com.ua##footer > .container > .row ~ .row > div > .justify-content-center
 sport-tv.by##footer > .nav > .top > .right
 thetruestory.news##footer > a.framed[target="_blank"]
+tvc.ru#?#footer > div:-abp-has(> div > nav > a[class*=" bg-icon-"][target="_blank"])
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#footer > div:-abp-has(> section > h4:-abp-contains(Мы в соцсетях))
 culture.ru##footer > div:first-child > div > div:last-child > div > div:last-child
 hardwareluxx.ru#?#footer > h4:-abp-contains(Социальные сети)
@@ -2671,6 +2674,7 @@ tverlife.ru#?#h5:-abp-contains(/поделись/i)
 mignews.com#?#h6:-abp-contains(/мы на facebook|поделиться/i)
 zenit-fk.ru##h6[class="posts__title text-center mb-4"]
 libertycity.net,libertycity.ru##header > div[class^="fon"]
+tvc.ru##header nav > a[class*=" bg-icon-"][target="_blank"]
 armeniasputnik.am,sputnik-abkhazia.info,sputnik-abkhazia.ru,sputnik-georgia.com,sputnik-georgia.ru,sputnik-news.ee,sputnik-ossetia.com,sputnik-ossetia.ru,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputnik.kz,sputnik.md,sputniknews-uz.com,sputniknews.cn,sputniknews.com,sputniknews.gr##iframe[src*="/files/tgparser/"]
 me3.com.ua##iframe[src*="/plugins/likebox."]
 aif.ru##iframe[src^="http://www.facebook."] + br + table[border="0"]
