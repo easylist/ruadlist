@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250118.1214
+@version        0.20250119.1507
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1707,7 +1707,7 @@
     .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
     [class*="desktop"] ~ [id*="teaser"], 
     [class^="card-part-wrapper"] ~ div[class=""], 
-    [class^="dzen-desktop"] ~ div[id$="-popup"], 
+    [class^="dzen-desktop"] ~ div[id$="-popup"], [data-testid="dzenpro-banner"], 
     [data-testid="recommend-auth-popup"], 
     [id*="_floor_"] article[class]:not(._is-desktop) ~ article._is-desktop, 
     a[href*="://yandex.ru/an/count/"], 
