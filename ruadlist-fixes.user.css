@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250122.1319
+@version        0.20250122.1746
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1634,7 +1634,7 @@
     div[itemtype*="://schema.org/Review"] ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
     }
-    [data-track], 
+    [data-track]:not(a), 
     div[itemtype*="://schema.org/BlogPosting"] > div:not(:last-child), 
     div[itemtype*="://schema.org/Photograph"] > div:not(:last-child), 
     div[itemtype*="://schema.org/Product"] ~ div:not(:last-child), 
