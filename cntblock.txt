@@ -1251,12 +1251,11 @@ mail.yandex.*###js-layout-inner ~ div a[href*="/premium-"]:style(display: none !
 mail.yandex.*###js-mail-layout-content-header > .message-list-banner-portal + div[id]:empty
 mail.yandex.*##+js(remove-attr, data-link-id, a, stay)
 mail.yandex.*##+js(set-constant, Object.prototype.allowAdv, false)
-mail.yandex.*##.mail-App-Footer-Item > [href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
 mail.yandex.*##.mail-Layout-Content > div:first-child + div div[style="height: 36px !important;"]:style(display: none !important)
-mail.yandex.*##.mail-Page-Body .Popup2 > .Tooltip-Content:has-text(2001—2024)
-mail.yandex.*##.PSHeaderLogo360:style(width: 30px !important; !important; overflow: hidden !important)
-mail.yandex.*##.qa-LeftColumn-Footer > [href="https://ya.ru"] *:style(display: none !important)
-mail.yandex.*##.qa-LeftColumn-Footer > [href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
+mail.yandex.*##.mail-Page-Body .Popup2 > .Tooltip-Content:has-text(2001—202)
+mail.yandex.*##.PSHeaderLogo360 a[href^="https://360.yandex."]:style(pointer-events: none !important)
+mail.yandex.*##.qa-LeftColumn-Footer > [href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; width: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
+mail.yandex.*##[data-test-id="ps-header-logo-free-badge-link"]
 music.yandex.*##+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column:style(display: none !important)
 tv.yandex.*##.recommended-ott:style(display: none !important)
