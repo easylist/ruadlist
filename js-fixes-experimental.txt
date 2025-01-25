@@ -347,7 +347,7 @@ partnerkin.com##+js(set-constant, Object.prototype.autoPopups, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
-vk.com,vk.ru##+js(set-constant, Object.prototype.banner, undefined)
+vk.com,vk.ru##+js(set-constant, Object.prototype.banner, null)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
@@ -428,6 +428,7 @@ lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfil
 online-fix.me##.content > .errors
 playground.ru##.dfp-container:remove()
 smotrim.ru##.dialog-wrapper
+vk.com,vk.ru##.feed_row:matches-prop(innerHTML=/_mailru/)
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
 lenta.ru##.js-scroll-to-site-container:remove()
