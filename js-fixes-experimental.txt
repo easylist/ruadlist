@@ -9,7 +9,7 @@ tapochek.net###aposnow
 growhow.in.ua###custom-background-css:remove()
 playground.ru###dfpPrerollDelay:remove()
 myshared.ru###download_form > .modal-body
-vk.com,vk.ru###feed_rows > .feed_row > div[class^="page_block "]
+vk.com,vk.ru###feed_rows > .feed_row > div[class^="page_block "]:remove()
 vm.ru###onair > img[data-src="/img/player_cover.svg"]
 inoreader.com###reader_pane:style(padding-right: unset !important)
 3dnews.kz,3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
@@ -428,6 +428,7 @@ lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfil
 online-fix.me##.content > .errors
 playground.ru##.dfp-container:remove()
 smotrim.ru##.dialog-wrapper
+vk.com,vk.ru##.feed_row:matches-prop(innerHTML="/media_on_/")
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
 lenta.ru##.js-scroll-to-site-container:remove()
