@@ -561,16 +561,16 @@ mirtesen.ru##[id^="unit_"]
 !
 ! зеркала MySeria.NET https://vk.com/myserianet
 ! частные
-fanserial.fun,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
-fanserial.fun,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
-fanserial.fun,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
+fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
+fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
 ! общие
 ##.article-aside-promo a[href][target="_blank"]
 ##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
 ##.flex-promo-series > .right-col a[href][target="_blank"]
 ! запросы
-/player/fan.xml$domain=fanserial.fun|fanserialstv.net
-@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserialstv.net
+/player/fan.xml$domain=fanserial.fun|fanserial.pw|fanserial.tv|fanserialstv.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserial.pw|fanserial.tv|fanserialstv.net
 !
 ! Одноклассники
 ok.ru###hook_Block_AsideColumn img:first-child ~ div:not(#hook_Block_CompactFooter)
