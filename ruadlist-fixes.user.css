@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250122.1746
+@version        0.20250128.1806
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3083,6 +3083,12 @@
     }
     body > .wrapper {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("leingpt.ru") {
+    .m-container > #yandex_rtb_R {
+        display: block !important
     }
 }
 
