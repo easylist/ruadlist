@@ -1228,7 +1228,10 @@ top100.rambler.*##body > div:not([id])[style="position: absolute; z-index: 10000
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@://yandex.*/news/$generichide
 @@://yandex.*/news|$generichide
+disk.yandex.*##.footer__copyright a[href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; width: 36px !important; position: fixed !important; z-index: 90 !important; opacity: 0 !important)
+disk.yandex.*##[data-test-id^="ps-header-logo-"] svg ~ svg
 disk.yandex.*,mail.yandex.*##.Base-Onboarding:style(display: none !important)
+disk.yandex.*,mail.yandex.*##[data-test-id="ps-header-logo-free-badge-link"]
 docs.yandex.*##a[href^="https://360.yandex."][href$="/?from=documents-header-360"]:style(display: none !important)
 dzen.*##+js(set-constant, Object.prototype.useExperimentFlag, undefined)
 dzen.*##._is-header-after-player > div:not([id]):not([class]):style(display: none !important)
@@ -1258,7 +1261,6 @@ mail.yandex.*##.mail-Layout-Content > div:first-child + div div[style="height: 3
 mail.yandex.*##.mail-Page-Body .Popup2 > .Tooltip-Content:has-text(2001—202)
 mail.yandex.*##.PSHeaderLogo360 a[href^="https://360.yandex."]:style(pointer-events: none !important)
 mail.yandex.*##.qa-LeftColumn-Footer > [href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; width: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
-mail.yandex.*##[data-test-id="ps-header-logo-free-badge-link"]
 music.yandex.*##+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column:style(display: none !important)
 tv.yandex.*##.recommended-ott:style(display: none !important)
