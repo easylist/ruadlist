@@ -45,13 +45,14 @@ howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
 growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
+vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
 vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains(/[Реклама]/))
 vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([data-post-id])
 the-geek.ru###wp-custom-css {remove:true;}
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
-vk.com,vk.ru#?#._post_content:-abp-has(.PostHeaderInfo > div ~ div)
 vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
+vk.com,vk.ru##._post_content[style=""]
 vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post-"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_content"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"]:not([data-post-author-id])
