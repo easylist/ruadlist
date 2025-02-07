@@ -66,7 +66,6 @@ htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 fapreactor.com,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
 anifap.com,anipoisk.org,anitokyo.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
-vk.com,vk.ru##+js(abort-on-property-read, Element.prototype.attachShadow)
 vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
 rutor.org##+js(abort-on-property-read, Light.Popup)
 drive2.ru##+js(abort-on-property-read, Object.prototype.AdfoxXhrRequestPrepared)
@@ -184,7 +183,7 @@ phys-kids.com##+js(abort-on-property-write, fetch)
 gamemag.ru##+js(abort-on-property-write, keepAdblock)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.bannerShowed, evalWithLogging)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.onMrcShow, /injectedScript|inlineScript/)
 blackwot.ru##+js(abort-on-stack-trace, document.getElementsByTagName, adsBlocked)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
@@ -330,6 +329,7 @@ joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 3dnews.kz,3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
+vk.com,vk.ru##+js(set-constant, Element.prototype.attachShadow, noopFunc)
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
 ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+js(set-constant, Object.prototype.AdvertisementManager, undefined)
 dzen.ru##+js(set-constant, Object.prototype.DirectProduct, undefined)
@@ -519,6 +519,7 @@ kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ya.ru,yandex.*##.dist-overlay__popup:remove()
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
 ||adbutton.net^$script,redirect=noopjs
+||ads.vk.com/public/leadform?$important,popup
 ||an.yandex.ru^$domain=e.mail.ru
 ||cdn.hsmedia.ru/ump-webapp-public/dist/client/assets/ArticleBlockVideo-$script,domain=fontanka.ru
 ||clustrmaps.com/counter/$image,redirect=32x32.png
