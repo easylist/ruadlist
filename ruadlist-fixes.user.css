@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250202.200
+@version        0.20250208.1801
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -381,6 +381,7 @@
   domain("sh"),
   domain("so"),
   domain("space"),
+  domain("su"),
   domain("today"),
   domain("tv"),
   domain("vip"),
@@ -1352,8 +1353,7 @@
         --bottom-banner-height: 1px !important
     }
     div[class^="Datalistinfo__root"], div[class^="Public-desktop__rightCol-"], 
-    div[class^="ReactViewer__attachesinfo-"], 
-    iframe[src^="https://o2.mail.ru/"] ~ div div[class^="ViewerHeader__closeIcon--"] {
+    div[class^="ReactViewer__attachesinfo-"] {
         display: none !important
     }
     div[class^="Public__folderContent"] {
