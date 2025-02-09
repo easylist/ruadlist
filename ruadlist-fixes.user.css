@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250208.1801
+@version        0.20250209.1208
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1047,15 +1047,6 @@
     div[style="position:absolute;left:0px;top:0px;width:240px;margin-top:660px"] {
         position: relative !important;
         margin-top: auto !important
-    }
-}
-
-@-moz-document domain("binmovie.org") {
-    #content {
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        margin-left: 0 !important
     }
 }
 
@@ -4281,6 +4272,12 @@
         height: auto !important
     }
     header[class^="header--standard"] {
+        margin-top: unset !important
+    }
+}
+
+@-moz-document domain("rezka.biz") {
+    #content {
         margin-top: unset !important
     }
 }
