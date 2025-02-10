@@ -42,7 +42,7 @@ howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
 ||yandex.$domain=howdyho.net|howdyho.pro
 ||yastatic.$domain=howdyho.net|howdyho.pro
 !
-vk.*#?#head > style:-abp-contains(/adchoice/i) {remove:true;}
+vk.*##head > style:-abp-contains(/adchoice/i) {remove:true;}
 ! селекторы
 growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
@@ -54,12 +54,13 @@ the-geek.ru###wp-custom-css {remove:true;}
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
 vk.com,vk.ru#?#._post_content:-abp-has(.Efxztiz1tCs6S5IDhTuN)
+vk.com,vk.ru#?#._post_content:-abp-has(.g03FJ4dTToqroympKAMc)
 vk.com,vk.ru#?#._post_content:-abp-has(.l2Q63U68RkAXQkXEoJnJ)
-vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
+vk.com,vk.ru#?#._post_content:-abp-has([src*="mradx."])
 vk.com,vk.ru##._post_content[style=""]
-vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post-"])
-vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_content"])
-vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"]:not([data-post-author-id])
+vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post"])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"] > :not([class="_post_content"])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"]:not([post_view_hash])
 vk.com,vk.ru#?#.feed_row > [id^="post-"] > ._post_content:-abp-has(> :first-child:not(.PostHeader))
 vk.com,vk.ru##.feed_row > div[class$=" post"]
 e.mail.ru##.layout__column_right-indented
