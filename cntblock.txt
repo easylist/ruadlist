@@ -1214,6 +1214,7 @@ online-fix.*#@#a[href*=":2053"]:remove-class(btn)
 only-paper.*#@#.adbanner
 rambler.*##[data-blocks="rec_block"]:style(display: none !important)
 avtorambler.com,rambler.ru#?#section > nav ~ div div:-abp-has(> div > [id^="rcmw-container-"])
+shedevrum.*##div[class*="-container relative"]:style(display: none !important)
 top100.rambler.*##body > div:not([id])[style="position: absolute; z-index: 10000;"]:style(display: none !important)
 ||browserleaks.com/proxy$csp=script-src 'unsafe-inline'
 ||footboom.com/dist/app/js/antiAdBlock-
@@ -1249,7 +1250,7 @@ dzen.*##div[class*="__col"]:has(> div[class*="-feed__"][class*="_type_"] > div[c
 dzen.*##div[class*="_pos_index-"]:style(display: none !important)
 dzen.*##div[class*="linkBro-"]:style(display: none !important)
 dzen.*##div[class*="widgetContainer"] div[style^="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
-dzen.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid)
+dzen.*,shedevrum.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid)
 dzen.*,yandex.*##.b-statcounter + div[class] > div[id][class]:style(display: none !important)
 dzen.*,yandex.*##.mg-grid__col div[class*="_type_native"]:style(display: none !important)
 mail.yandex.*###js-layout-inner + div:nth-child(2):style(width: unset !important)
