@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250209.1208
+@version        0.20250212.2152
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4480,6 +4480,12 @@
     }
     html:not(.dark) > body {
         background: initial !important
+    }
+}
+
+@-moz-document domain("shedevrum.ai") {
+    #app > .items-center > .items-center {
+        height: unset !important
     }
 }
 
