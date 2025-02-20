@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250219.2239
+@version        0.20250220.1846
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -551,6 +551,23 @@
 }
 
 @-moz-document
+  domain("amedias.ru"),
+  domain("anibests.ru"),
+  domain("anijutsu.ru"),
+  domain("animegofans.ru"),
+  domain("animesenpai.ru"),
+  domain("anistars.ru"),
+  domain("jutsubest.ru"),
+  domain("kinogo-net.la"),
+  domain("softbox.life") {
+    #wr-bg {
+        padding-top: 60px !important;
+        margin-top: unset !important;
+        top: unset !important
+    }
+}
+
+@-moz-document
   domain("ampercar.com"),
   domain("hi-news.ru"),
   domain("itechua.com"),
@@ -577,21 +594,6 @@
     }
     .nav-line {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("anibests.ru"),
-  domain("anilibria.life"),
-  domain("animedia.life"),
-  domain("animegofans.ru"),
-  domain("animesenpai.ru"),
-  domain("anistars.ru"),
-  domain("kinogo-net.la") {
-    #wr-bg {
-        padding-top: 60px !important;
-        margin-top: unset !important;
-        top: unset !important
     }
 }
 
@@ -1005,7 +1007,6 @@
   domain("utorr.cc"),
   domain("vc.ru"),
   domain("virusinfo.info"),
-  domain("wikianime.tv"),
   domain("xxxadulttorrent.org"),
   domain("you-anime.ru"),
   domain("yummyanime.tv"),
