@@ -1266,6 +1266,7 @@ mail.yandex.*##.qa-LeftColumn-Footer > [href="https://ya.ru"]:style(top: 12px !i
 music.yandex.*##+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column:style(display: none !important)
 tv.yandex.*##.recommended-ott:style(display: none !important)
+ya.*,yandex.*##+js(no-xhr-if, yabs.yandex.ru/count/)
 ya.*,yandex.*##+js(set-constant, Object.prototype.initDeps, undefined)
 ya.*,yandex.*##.content__right div:has(> div > button:matches-attr(/[a-z0-9]/=/advertiser/)):style(display: none !important)
 ya.*,yandex.*##.DirectInline:style(display: none !important)
@@ -1273,9 +1274,9 @@ ya.*,yandex.*##.DirectSnippet:style(display: none !important)
 ya.*,yandex.*##.RsyaOrganic:style(display: none !important)
 ya.*,yandex.*##.SerpListFeature > .SearchBlock ~ :not(.SearchBlock):style(display: none !important)
 ya.*,yandex.*##.VideoViewer div[class*="_placement_"]:style(display: none !important)
-ya.*,yandex.*##[id][aria-label] > [class*="_card"]:has(> div > button:matches-attr(/[a-z0-9]/=/advertiser/)):style(display: none !important)
 ya.*,yandex.*##[id][aria-label] > [class*="_card"]:has(> div > div > [data-event-required]):style(display: none !important)
 ya.*,yandex.*##[id][aria-label] > [class*="_card"]:has(> div [data-vnl*="advertiser"]):style(display: none !important)
+ya.*,yandex.*##[id][aria-label] > [class]:has(> div > button:matches-attr(/[a-z0-9]/=/advertiser/)):style(display: none !important)
 ya.*,~yandex.net,yandex.*##+js(remove-attr, data-counter, #search-result > .serp-item a)
 yandex.*###bk-container:style(display: none !important)
 yandex.*##+js(set-constant, Object.prototype._directAdvStyles, undefined)
@@ -1331,7 +1332,7 @@ yandex.*##div[id^="ADVERT_"]:style(display: none !important)
 @@||an.yandex.ru/meta/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/meta/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/resource/spacer.gif|$image,domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||an.yandex.ru/system/context.js|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/system/context.js|$domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||mc.yandex.ru/metrika/advert.gif|$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
