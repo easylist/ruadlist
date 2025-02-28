@@ -80,7 +80,6 @@ reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##+js(abort-on-property-read, Objec
 gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.me,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##+js(abort-on-property-read, Object.prototype.initOnPlay)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
-ya.ru##+js(abort-on-property-read, Object.prototype.marketFeedMix)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 drive2.ru,razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
@@ -184,6 +183,7 @@ gamemag.ru##+js(abort-on-property-write, keepAdblock)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkOvv, /feed|set/)
+ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 blackwot.ru##+js(abort-on-stack-trace, document.getElementsByTagName, adsBlocked)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
@@ -265,7 +265,6 @@ freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
 reshu.by,sdamgia.ru##+js(nano-setTimeout-booster, {return f(!1)}, 20000)
 volley.ru##+js(no-fetch-if, /buzzoola\.com|plrjs\.org/)
 animix.lol##+js(no-fetch-if, doubleclick.net)
-ya.ru##+js(no-fetch-if, rythm)
 fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 aniu.ru,liveball.uno##+js(no-setInterval-if, debugger)
 anime-chan.me##+js(no-setInterval-if, move_string)
@@ -517,6 +516,7 @@ smaxim.*##+js(set-constant, flashvars.protect_block, '')
 3dnews.kz,3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ya.ru,yandex.*##.dist-overlay__popup:remove()
+ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
 ||adbutton.net^$script,redirect=noopjs
 ||ads.vk.com/public/leadform?$important,popup
@@ -560,6 +560,7 @@ ya.ru,yandex.*##.dist-overlay__popup:remove()
 ||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
+||yastatic.net/s3/home-static/feeds/$domain=ya.ru
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~kinoafisha.info|~pikabu.ru
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.kz|3dnews.ru
