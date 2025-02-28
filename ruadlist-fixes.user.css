@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250227.2220
+@version        0.20250228.2349
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5543,6 +5543,9 @@
     #rythm-feed, .i-mini-bem[style], .market-feed, [id*="feed"][id*="_"], 
     html[class*="morda"] .body__content > .content__informers-bg ~ div[style] {
         display: none !important
+    }
+    .document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body {
+        overflow-y: unset !important
     }
 }
 
