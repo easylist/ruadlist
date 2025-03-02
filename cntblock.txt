@@ -1312,17 +1312,18 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 ~yandex.net,yandex.*##+js(set-constant, Object.prototype.los, null)
 !
 ! мобильная версия
+dzen.*,yandex.*##div[class*=" Advert_relativeLoaded"]:style(display: none !important)
+dzen.*,yandex.*##div[class*=" AdvertEcom_"]:style(display: none !important)
+dzen.*,yandex.*##div[class*="Advert_container__"]:style(display: none !important)
+dzen.*,yandex.*##div[id^="ADVERT_"]:style(display: none !important)
 yandex.*##.justifier__col > div[class*="_type_direct"]:style(display: none !important)
 yandex.*##.tiled-images__items > div[class*="rim-direct-"]:style(display: none !important)
 yandex.*##.touch-feed > div > .feed-item[id^="zen-row-"]:has([class^="zen-ui-channel-info"][class$="subtitle-text"]:has-text(промо)):style(display: none !important)
 yandex.*##[data-bem*="search-select-promo"]:style(display: none !important)
-yandex.*##div[class*=" AdvertEcom_"]:style(display: none !important)
-yandex.*##div[class*="Advert_container__"]:style(display: none !important)
 yandex.*##div[class^="Card_container__"][class*=" err_none "]:style(display: none !important)
 yandex.*##div[class^="Card_container__"][class*="state_loaded Advert_fullScreenContainer"]:style(display: none !important)
 yandex.*##div[class^="images-viewer-content"] > div[class*="behavioral-direct"]:style(display: none !important)
 yandex.*##div[id*="page"] div[class*="_banner_"]:style(display: none !important)
-yandex.*##div[id^="ADVERT_"]:style(display: none !important)
 ~afisha.yandex.*,yandex.*##[data-bem*="type"][data-bem*="banner"]:not(body):not(form):not(.content):style(display: none !important)
 !
 ! Альтернативное решение для старых браузеров
