@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250228.2349
+@version        0.20250302.2103
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -428,6 +428,12 @@
 @-moz-document domain("agroxxi.ru") {
     .sidebarfix {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("ai-next.ru") {
+    [role="tabpanel"] > div.MuiBox-root {
+        min-height: 0 !important
     }
 }
 
@@ -1053,12 +1059,6 @@
     }
 }
 
-@-moz-document domain("blackwot.ru") {
-    div[class^="blackwot-"][style] {
-        display: none !important
-    }
-}
-
 @-moz-document domain("blisch.by") {
     #page {
         padding-top: 0 !important
@@ -1521,13 +1521,13 @@
 }
 
 @-moz-document domain("doramalive.news") {
-    .block-content > .ageLimit ~ [class$="-player"] {
+    .dl-content > .ageLimit ~ [class$="-player"] {
         display: block !important
     }
-    .block-content > .ageLimit {
+    .dl-content > .ageLimit {
         display: none !important
     }
-    .block-content {
+    .dl-content {
         min-height: unset !important
     }
 }
