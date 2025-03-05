@@ -9,11 +9,11 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||24smi-*/top/$csp=script-src
 ||24smi.*/top/$csp=script-src
 ||24top.*/top/$csp=script-src
+||adblock.turtlecute.org^$csp=connect-src 'self'; script-src https://adblock.turtlecute.org/js/index.js
 ||an.yandex.ru/count/$csp=script-src
 ||azbne.net^$csp=sandbox allow-same-origin;
 ||betnetmed.advertserve.com^$csp=sandbox allow-same-origin;
 ||crossout.net/*free?*&r=$csp=sandbox allow-same-origin;
-||d3ward.github.io/toolz/adblock$csp=connect-src 'self'; script-src https://d3ward.github.io/toolz/js/adblock.js
 ||drive.google.com/file/d/1VmzdhLB_-DcnBtUbKfQPnNvsEp_2gnsy/$csp=script-src
 ||driverpack.io^$csp=sandbox allow-same-origin;
 ||driverpaksolution.ru^$csp=sandbox allow-same-origin;
