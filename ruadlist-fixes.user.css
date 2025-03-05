@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250302.2103
+@version        0.20250305.2101
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2426,6 +2426,13 @@
 @-moz-document domain("h-chan.me") {
     img[style^="filter: blur"] {
         filter: none !important
+    }
+}
+
+@-moz-document domain("hardwareluxx.ru") {
+    [href^="https://ya.cc/"] {
+        pointer-events: none !important;
+        color: inherit !important
     }
 }
 
