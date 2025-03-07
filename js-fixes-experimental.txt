@@ -323,8 +323,8 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
-tapochek.net##+js(remove-node-text, script, document.head.appendChild)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
+tapochek.net##+js(remove-node-text, script, setRequestHeader)
 dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 fontanka.ru##+js(set-attr, [class^="articleBlockVideo_"] video, controls, true)
@@ -545,6 +545,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||m.mixadvert.com/show/$important,script
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||my.mail.ru/video/embed/*autoplay=1$subdocument,removeparam=autoplay
+||paintejuke.com^$popunder
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
