@@ -29,6 +29,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||modsfire.com/download/*/$csp=script-src 'unsafe-eval' data:
 ||news-sphere.com^$csp=script-src
 ||nsportal.ru/download/$csp=frame-src 'self'
+||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self';
 ||opensharing.org/img/images/$csp=script-src 'unsafe-inline' 'unsafe-eval' opensharing.org/img/
 ||psysovet24.ru^$csp=script-src 'self' * blob: data:
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:
