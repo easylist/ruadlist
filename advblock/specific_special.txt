@@ -22,8 +22,6 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportana
 @@||s.zmctrack.net/z|$xmlhttprequest
 @@||s.znctrack.net/z|$xmlhttprequest
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
-@@||tapochek.net/ajax.php|$xmlhttprequest,domain=tapochek.net
-@@||tapochek.net/torinfo.php|$xmlhttprequest,domain=tapochek.net
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
@@ -32,7 +30,6 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
-||tapochek.net^$xmlhttprequest
 ! howdyho - набор правил для проверки таймаута рецидивов
 @@||yandex.ru/ads/meta/*?target-ref=$xmlhttprequest,domain=howdyho.net|howdyho.pro
 @@||yandex.ru/ads/system/context.js|$script,domain=howdyho.net|howdyho.pro
