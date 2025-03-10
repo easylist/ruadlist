@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250305.2101
+@version        0.20250310.1910
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1403,6 +1403,10 @@
 @-moz-document domain("cq.ru") {
     .box[class*="content"] {
         margin-top: auto !important
+    }
+    article[data-post-url^="https://cq.ru/articles/tech/"] .cq-code-block a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]) {
+        pointer-events: none !important;
+        color: inherit !important
     }
 }
 
