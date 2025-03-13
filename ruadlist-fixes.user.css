@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250311.2216
+@version        0.20250313.1901
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1657,6 +1657,12 @@
 @-moz-document domain("dugtor.ru") {
     #left-block, #right-block {
         min-height: 100% !important
+    }
+}
+
+@-moz-document domain("dumka.poltava.ua") {
+    .page-element__ads {
+        pointer-events: none !important
     }
 }
 
