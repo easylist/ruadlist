@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250313.1901
+@version        0.20250314.1641
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1563,17 +1563,6 @@
         background-image: none !important;
         padding-top: 0 !important
     }
-    .p-sidebar {
-        margin: auto !important
-    }
-    div[class^="banner"] + section {
-        padding: unset !important;
-        margin: unset !important
-    }
-    div[class^="banner"] + section > div {
-        width: auto !important;
-        height: auto !important
-    }
 }
 
 @-moz-document domain("drahelas.ru") {
@@ -2296,12 +2285,6 @@
     }
     .project-maps .wrap, .project-weather .wrap {
         max-width: 1010px !important
-    }
-}
-
-@-moz-document domain("glavnoe.ua") {
-    #main-block > .content-block {
-        margin: auto !important
     }
 }
 
