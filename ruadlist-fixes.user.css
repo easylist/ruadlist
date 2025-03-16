@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250316.1821
+@version        0.20250316.1901
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1688,12 +1688,11 @@
     [data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class^="content--article"] > div[id], 
     [data-testid="dzenpro-banner"], a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    article[data-card-type*="-promo"], div[class*="__bannerContainer"], 
-    div[class*="adContentWrapper"], 
+    article[data-card-type*="-promo"], div[class*="--corner-banner_"], 
+    div[class*="__bannerContainer"], div[class*="adContentWrapper"], 
     div[class*="article-item__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div, 
     div[class*="bannerMain"], div[class*="dzenProBanner"], 
-    div[class*="widget"] > div[class*="container"] > div ~ div, 
-    div[class^="content--corner-banner_"], div[id$="-rtb"], 
+    div[class*="widget"] > div[class*="container"] > div ~ div, div[id$="-rtb"], 
     div[id*="splashscreen"], div[id^="ad-"][class*=" news-"] {
         display: none !important
     }
@@ -1713,6 +1712,14 @@
     }
     .b-page_type_maps div[class$="__content"] > [class$="__ad"] > div {
         width: unset !important
+    }
+}
+
+@-moz-document
+  domain("dzen.ru"),
+  domain("sportsdzen.ru") {
+    div[class^="news-site-"][class*="skeleton"] {
+        background-color: transparent !important
     }
 }
 
@@ -4656,14 +4663,6 @@
 @-moz-document domain("sportsdaily.ru") {
     #branding-wrapper {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("sportsdzen.ru"),
-  domain("dzen.ru") {
-    div[class^="news-site-"][class*="skeleton"] {
-        background-color: transparent !important
     }
 }
 
