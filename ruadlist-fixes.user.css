@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250314.2108
+@version        0.20250316.1821
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1682,43 +1682,37 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #teaser, #ya-dist, ._is-floor-with-ds-cards, ._is-for-article-floor, 
-    ._is-for-video-floor, .adv-ecom, .article-page-layout > main > div > div[id], 
-    .viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class]), 
-    [class*="desktop"] ~ [id*="teaser"], 
-    [class^="card-part-wrapper"] ~ div[class=""], 
-    [class^="dzen-desktop"] ~ div[id$="-popup"], [data-testid="dzenpro-banner"], 
-    [data-testid="recommend-auth-popup"], 
-    [id*="_floor_"] article[class]:not(._is-desktop) ~ article._is-desktop, 
-    a[href*="://yandex.ru/an/count/"], 
+    .adv-ecom, [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
+    [class^="video-site--"] > [id][class*="-content__fullWidth-"], 
+    [class^="video-site--"][class*="skeleton"], 
+    [data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class^="content--article"] > div[id], 
+    [data-testid="dzenpro-banner"], a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    article[class*="-promo"], 
-    aside[id^="article_"][class*="rihggt"] > div[class], 
-    div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"]), 
-    div[class*="Container"] > div[style="opacity: 1;"] > div[class*="articleRight"][style^="max-height:"], 
-    div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"], 
-    div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"], 
-    div[class*="article__"] > .undefined ~ div[class*="millde"] > div[id][class], 
-    div[class*="bannerMain"], div[class*="card-video-promo__root"], 
-    div[class*="video"] [aria-label="Табы рекомендаций"] ~ [aria-label*="карта"], 
-    div[class*="video-viewer-sidebar__ad"], div[class*="videoCardAd"], 
+    article[data-card-type*="-promo"], div[class*="__bannerContainer"], 
+    div[class*="adContentWrapper"], 
+    div[class*="article-item__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div, 
+    div[class*="bannerMain"], div[class*="dzenProBanner"], 
     div[class*="widget"] > div[class*="container"] > div ~ div, 
-    div[class^="article-item__articleItem-"] > div[class*="subscribeBanner"] + div:not([class]), 
-    div[class^="article__article-"] > div[class^="article-item"] > div[id], 
-    div[class^="auto-slide-ad__container"], 
-    div[class^="dzen-desktop__link_bro-"], div[class^="dzen-desktop__teaser-"], 
-    div[id*="splashscreen"], div[id][class$="__ad"] {
+    div[class^="content--corner-banner_"], div[id$="-rtb"], 
+    div[id*="splashscreen"], div[id^="ad-"][class*=" news-"] {
         display: none !important
     }
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
         grid-template-columns: inherit !important
     }
-    .mg-advert__content:not(:first-child), 
-    .mg-grid__col > div[style^="margin-top:"] {
-        margin-top: unset !important
-    }
     body {
         overflow-y: unset !important
+    }
+    #LayoutTopMicroRoot div[style*="%"] {
+        padding-top: unset !important
+    }
+    .climate-calendar__cell {
+        width: 13.8% !important;
+        -webkit-flex-basis: 13.8% !important;
+        flex-basis: 13.8% !important
+    }
+    .b-page_type_maps div[class$="__content"] > [class$="__ad"] > div {
+        width: unset !important
     }
 }
 
@@ -4662,6 +4656,14 @@
 @-moz-document domain("sportsdaily.ru") {
     #branding-wrapper {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document
+  domain("sportsdzen.ru"),
+  domain("dzen.ru") {
+    div[class^="news-site-"][class*="skeleton"] {
+        background-color: transparent !important
     }
 }
 

@@ -1569,48 +1569,37 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##[ta
 disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div[class^="direct-public"]
 ! ---
 ! дзен
-dzen.ru###teaser
-dzen.ru###ya-dist
-dzen.ru##._is-floor-with-ds-cards
-dzen.ru##._is-for-article-floor
-dzen.ru##.adv-ecom
-dzen.ru##.mg-advert__content:not(:first-child):style(margin-top: unset !important)
-dzen.ru##.mg-grid__col > div[style^="margin-top:"]:style(margin-top: unset !important)
-dzen.ru##[data-testid="dzenpro-banner"]
+! главная
+dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important)
+dzen.ru##[class*="card-rtb"]
+dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
+dzen.ru##article[data-card-type*="-promo"]
 dzen.ru##body:style(overflow-y: unset !important)
-dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"]
-dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"]
-dzen.ru##div[class*="bannerMain"]
-dzen.ru##div[class*="card-video-promo__root"]
-dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
-dzen.ru##div[class*="video-viewer-sidebar__ad"]
-dzen.ru##div[class*="videoCardAd"]
-dzen.ru##div[class^="auto-slide-ad__container"]
-dzen.ru##div[class^="dzen-desktop__link_bro-"]
-dzen.ru##div[class^="dzen-desktop__teaser-"]
-dzen.ru##div[id][class$="__ad"]
-! обфускация
-dzen.ru##._is-for-video-floor
-dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
-dzen.ru##[class*="desktop"] ~ [id*="teaser"]
-dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]
-dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
-dzen.ru##[data-testid="recommend-auth-popup"]
-dzen.ru##[id*="_floor_"] article[class]:not(._is-desktop) ~ article._is-desktop
-dzen.ru##article[class*="-promo"]
-dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
-dzen.ru##div[class*="Container"] > div[style="opacity: 1;"] > div[class*="articleRight"][style^="max-height:"]
-dzen.ru##div[class*="video"] [aria-label="Табы рекомендаций"] ~ [aria-label*="карта"]
+dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
-dzen.ru##div[class^="article-item__articleItem-"] > div[class*="subscribeBanner"] + div:not([class])
-dzen.ru##div[class^="article__article-"] > div[class^="article-item"] > div[id]
+dzen.ru##div[class^="content--corner-banner_"]
 dzen.ru##div[id*="splashscreen"]
-! incognito
-dzen.ru##.article-page-layout > main > div > div[id]
-dzen.ru##aside[id^="article_"][class*="rihggt"] > div[class]
-dzen.ru##div[class*="article__"] > .undefined ~ div[class*="millde"] > div[id][class]
+! видео
+dzen.ru##[class^="video-site--"] > [id][class*="-content__fullWidth-"]
+dzen.ru##[class^="video-site--"][class*="skeleton"]
+! статьи
+dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class^="content--article"] > div[id]
+dzen.ru##[data-testid="dzenpro-banner"]
+dzen.ru##div[class*="adContentWrapper"]
+dzen.ru##div[class*="article-item__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
+dzen.ru##div[class*="bannerMain"]
+dzen.ru##div[class*="dzenProBanner"]
+dzen.ru##div[id$="-rtb"]
+! новости
+dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[id^="ad-"][class*=" news-"]
+! погода
+dzen.ru##.adv-ecom
+dzen.ru##.b-page_type_maps div[class$="__content"] > [class$="__ad"] > div:style(width: unset !important)
+dzen.ru##.climate-calendar__cell:style(width: 13.8% !important; -webkit-flex-basis: 13.8% !important; flex-basis: 13.8% !important)
+dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
 ! ---
 ! игры
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:style(width: unset !important)
