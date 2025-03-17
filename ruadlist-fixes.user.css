@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250316.1901
+@version        0.20250317.1625
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1772,8 +1772,10 @@
 @-moz-document
   domain("e.mail.ru"),
   domain("octavius.mail.ru") {
-    .application_new-toolbar .application-mail:not(.application-mail_webview-mobile) .letter-list[class*="adv"] {
-        --letter-list-top-toolbar-height: inherit !important
+    .application_new-toolbar .application-mail:not(.application-mail_webview-mobile) [class*="top-line-adv"] {
+        --letter-list-top-toolbar-height: inherit !important;
+        --letter-list-top-native-adv-height: inherit !important;
+        --scrollable-top-native-adv-height: inherit !important
     }
     #popup-placeholder {
         display: none !important
