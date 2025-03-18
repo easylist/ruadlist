@@ -1193,8 +1193,6 @@ yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 market.yandex.ru,market.yandex.*##.layout_type_search.headline__footer
 ya.ru,yandex.*##.main-home-banner
-ya.ru,yandex.ru,yandex.*##.t-construct-adapter__adv
-ya.ru,yandex.ru,yandex.*#?##search-result > .serp-item:-abp-has(> .AdvLabel)
 |https://dzen.ru/*/*/*/$subdocument,domain=dzen.ru
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
@@ -1301,13 +1299,15 @@ dzen.ru##div[class*="_rightAdWrapper"]
 dzen.ru##div[class*="tsar__container"]
 dzen.ru#?#div[data-testid="article-showcase-card"]:-abp-has(> [data-testid="card-rtb"])
 !
-! dzen мобильная версия
+! dzen и ya/yandex - мобильная версия
 dzen.ru##.article-render-mobile__embed_embed-type_yandex-direct
 dzen.ru##[data-ssr]
 dzen.ru##div[class^="ad-link"]
 dzen.ru##div[class^="dzen-mobile__"] > div[id$="-fullscreen"]
 dzen.ru##div[class^="dzen-mobile__topContentBackgroundBottom"]
 dzen.ru##div[style*=" !important; "][style$=" !important;"]
+ya.ru,yandex.ru,yandex.*##.t-construct-adapter__adv
+ya.ru,yandex.ru,yandex.*#?##search-result > .serp-item:-abp-has(> .AdvLabel)
 ! переходы
 /*clyd=$popup,domain=dzen.ru
 /*icllcd=$popup,domain=dzen.ru
