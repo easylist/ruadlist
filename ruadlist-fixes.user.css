@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250318.2157
+@version        0.20250320.1420
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3933,25 +3933,18 @@
 }
 
 @-moz-document domain("playground.ru") {
-    body#userNotAuthorized .bonus-landing-page .panel-collapse > .panel-body, 
-    body#userNotAuthorized .bonus-landing-page .panel-default > .panel-heading {
+    .bonus-landing-page .panel-collapse > .panel-body, 
+    .bonus-landing-page .panel-default > .panel-heading {
         background-color: white !important
     }
-    body {
+    body[data-user-id] {
         background: #242424 !important
     }
-    body#userNotAuthorized .bonus-landing-page-faq > .title {
+    .bonus-landing-page-faq > .title {
         color: white !important
-    }
-    .content_aside-container {
-        flex-direction: unset !important
     }
     .gp-game-card .user-profile-sidebar {
         max-width: unset !important
-    }
-    .content_aside-container > .content-column {
-        padding-left: 0 !important;
-        padding-right: unset !important
     }
 }
 
