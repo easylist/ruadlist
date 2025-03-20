@@ -1766,7 +1766,6 @@ mail.ru###grid .widget__container > .progress-bar-widget
 mail.ru###grid div[class^="feed__"]
 my.mail.ru###history_container > div[class][style*="display: block!important"]
 minigames.mail.ru###like-buttons
-mail.ru###mailbox:not(#id):style(visibility: unset !important; pointer-events: unset !important)
 minigames.mail.ru###portal-headline:style(margin-top: auto !important)
 hi-tech.mail.ru###portal-menu:style(margin: 0 !important)
 mail.ru###user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:first-child
@@ -1778,6 +1777,8 @@ mail.ru##.grid__ccol > .tabs-content:style(margin-top: 5px !important)
 mail.ru##.grid__header .ph-modal-projects-overlay:style(top: inherit !important)
 mail.ru##.grid__main-col .eventbar-wrapper:style(margin-top: 0 !important)
 mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
+mail.ru##.grid_blocked #mailbox:not(#id):style(visibility: unset !important; pointer-events: unset !important)
+mail.ru##.grid_blocked div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
 hi-tech.mail.ru##.header-banner:style(margin: 0 !important)
 news.mail.ru,pogoda.mail.ru,sportmail.ru##.layout_footer > .block
 sportmail.ru##.layout_footer:style(margin-top: 20px !important)
@@ -1826,7 +1827,6 @@ mail.ru##div[slot="main-column"] > .header
 mail.ru##div[slot="main-column"] > .header ~ .swiper
 mail.ru##div[slot="main-column"] > .micro-widgets:style(height: auto !important; margin: auto !important)
 mail.ru##div[slot="main-column"] > .tabs__container:style(margin-top: 5px !important)
-mail.ru##div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
 my.mail.ru##html.window-loaded .b-video-backscreen
 my.mail.ru##html.window-loaded .b-video-controls__inside-play-button:style(visibility: visible !important; opacity: 0 !important; width: 100% !important; height: 100% !important; top: 0 !important; left: 0 !important)
 mail.ru##main#grid .promo-news
