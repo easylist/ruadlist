@@ -679,12 +679,12 @@ sinoptik.ua##head > style:empty:style(all: inherit !important)
 ! ukr.net
 mail.ukr.net###top_banner:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##+js(abort-on-property-read, vpb)
-www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
 mail.ukr.net##+js(set-constant, Object.prototype.AdvertisingManager, noopFunc)
 mail.ukr.net##.advt:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##body > .wrapper > #main:style(overflow: hidden !important)
 www.ukr.net##div[class*=" "]:first-child + div[class*=" "]:last-child > div[class*=" "] > div[class*=" "]:first-child:empty ~ div[class*=" "]
 !#if env_mobile
+www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
 www.ukr.net##.lazy-load-banner
 !#endif
 ! mail.ukr.net
