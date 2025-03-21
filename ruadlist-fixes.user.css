@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250320.1930
+@version        0.20250321.2343
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3250,11 +3250,11 @@
         content: initial !important
     }
     #bubble-home, #grid .asteroid-widgets, 
-    #grid .widget__container .promo-with-text, 
     #grid .widget__container > .calendar-container, 
     #grid .widget__container > .event-list-widget, 
     #grid .widget__container > .games-widget, 
-    #grid .widget__container > .progress-bar-widget, #grid div[class^="feed__"], 
+    #grid .widget__container > .progress-bar-widget, 
+    #grid .widget__container [class*="promo"], #grid div[class^="feed__"], 
     #user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:first-child, 
     #user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:last-child, 
     .balloon-anchor > .balloon, .mailbox__add-btn-logo, .ph-ext, 
