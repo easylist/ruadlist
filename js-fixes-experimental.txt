@@ -684,11 +684,11 @@ mail.ukr.net##.advt:not(#id):style(display: block !important; pointer-events: no
 www.ukr.net##body > .wrapper > #main:style(overflow: hidden !important)
 www.ukr.net##div[class*=" "]:first-child + div[class*=" "]:last-child > div[class*=" "] > div[class*=" "]:first-child:empty ~ div[class*=" "]
 !#if env_mobile
-www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
 www.ukr.net##.lazy-load-banner
 !#endif
-! mail.ukr.net
+! только десктопы
 !#if !env_mobile
+www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
 mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child:style(height: unset !important)
 !#endif
 mail.ukr.net###page:style(padding-top: 0 !important)
