@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250322.1637
+@version        0.20250322.1912
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1691,18 +1691,21 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    .adv-ecom, [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
+    .adv-ecom, .news-rubric-desktop__adv-column, [class*="card-rtb"], 
+    [class*="desktop"] ~ [id*="teaser"], [class*="withStickyAdOnArticle"], 
     [class^="video-site--"] > [id][class*="-content__fullWidth-"], 
     [class^="video-site--"][class*="skeleton"], 
-    [data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class^="content--article"] > div[id], 
-    [data-testid="dzenpro-banner"], a[href*="://yandex.ru/an/count/"], 
+    [data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class] > div[id], 
+    [data-testid="dzenpro-banner"], [id*="card-rtb"], 
+    a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     article[data-card-type*="-promo"], div[class*="--corner-banner_"], 
+    div[class*="__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div, 
     div[class*="__bannerContainer"], div[class*="adContentWrapper"], 
-    div[class*="article-item__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div, 
     div[class*="bannerMain"], div[class*="dzenProBanner"], 
-    div[class*="widget"] > div[class*="container"] > div ~ div, div[id$="-rtb"], 
-    div[id*="splashscreen"], div[id^="ad-"][class*=" news-"] {
+    div[class*="widget"] > div[class*="container"] > div ~ div, 
+    div[class^="news-site--news-top-"], div[id$="-rtb"], div[id*="splashscreen"], 
+    div[id^="ad-"][class*=" news-"] {
         display: none !important
     }
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {

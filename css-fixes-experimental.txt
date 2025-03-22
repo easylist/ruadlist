@@ -1567,6 +1567,7 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important)
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
+dzen.ru##[id*="card-rtb"]
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
 dzen.ru##article[data-card-type*="-promo"]
@@ -1579,15 +1580,18 @@ dzen.ru##div[id*="splashscreen"]
 dzen.ru##[class^="video-site--"] > [id][class*="-content__fullWidth-"]
 dzen.ru##[class^="video-site--"][class*="skeleton"]
 ! статьи
-dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class^="content--article"] > div[id]
+dzen.ru##[class*="withStickyAdOnArticle"]
+dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class] > div[id]
 dzen.ru##[data-testid="dzenpro-banner"]
+dzen.ru##div[class*="__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
 dzen.ru##div[class*="adContentWrapper"]
-dzen.ru##div[class*="article-item__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
 dzen.ru##div[class*="bannerMain"]
 dzen.ru##div[class*="dzenProBanner"]
 dzen.ru##div[id$="-rtb"]
 ! новости
+dzen.ru##.news-rubric-desktop__adv-column
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[class^="news-site--news-top-"]
 dzen.ru##div[id^="ad-"][class*=" news-"]
 ! погода
 dzen.ru##.adv-ecom
