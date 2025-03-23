@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250322.1912
+@version        0.20250323.1425
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1107,8 +1107,17 @@
 }
 
 @-moz-document domain("braz-rus.pro") {
+    [id^="oframeplayer-"] {
+        background-color: transparent !important
+    }
     video {
         filter: none !important
+    }
+    .player-preview {
+        filter: none !important;
+        opacity: unset !important;
+        transform: none !important;
+        padding: 1px !important
     }
     [id^="oframeplayer-"] > pjsdiv[style*="scaleX(1.1)"] {
         transform: none !important
