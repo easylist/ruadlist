@@ -28,7 +28,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?rry6w=$xmlhttprequest
+||pikabu.ru/ajax/*?rty6w=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -119,7 +119,6 @@ e.mail.ru##div[class=""] > div[class=""] > div[class=""]
 sdamgia.ru##div[class^="google_ad_left"]
 drive2.ru,liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 rg.ru##div[id][class*="__"]:empty
-pikabu.ru##div[id^="bal_"] {remove:true;}
 shedevrum.ai##div[id^="header_block_"]
 sdamgia.ru##div[id^="yandex_vario"]
 liveinternet.ru##div[style*="!important; "]
