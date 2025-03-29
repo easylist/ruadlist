@@ -2258,7 +2258,7 @@ prsport.net#?#p:-abp-has(> em > strong > a[href^="https://news.google.com/public
 podillyanews.com#?#p:-abp-has(> i > a[href^="https://news.google.com/publications/"])
 techblogua.com#?#p:-abp-has(> span > mark > a[href^="https://news.google.com/publications/"])
 benzin-price.ru##p:first-child + p > table[align="center"]
-pikabu.*##.snowflakes-container:remove()
+pikabu.*##.snowflakes-container {remove:true;}
 rozetka.com.ua##rz-top-page-banner
 hardwareluxx.ru##section > aside ~ aside:nth-child(-n+4)
 avtorambler.com,rambler.ru#?#section > nav ~ div div:-abp-has(> div > [id^="rcmw-container-"])
