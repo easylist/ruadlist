@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250329.2240
+@version        0.20250330.1723
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4344,7 +4344,7 @@
     }
 }
 
-@-moz-document domain("rudub.online") {
+@-moz-document domain("rudub.vip") {
     .details__bg {
         display: none !important
     }
@@ -4924,6 +4924,12 @@
 @-moz-document domain("trucks.ati.su") {
     #root {
         min-height: 0 !important
+    }
+}
+
+@-moz-document domain("trychatgpt.ru") {
+    [class*="!container"] > span {
+        min-height: unset !important
     }
 }
 
