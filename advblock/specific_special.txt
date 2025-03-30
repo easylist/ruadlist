@@ -16,7 +16,10 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportana
 ://mail.ru$csp=img-src 'self' https:
 ://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
 ://pikabu.ru/$csp=script-src 'self' * 'unsafe-inline' data:
+@@||dmp.mpsuadv.ru/promer$xmlhttprequest,domain=trychatgpt.ru
 @@||imasdk.googleapis.com/$xmlhttprequest,domain=volley.ru
+@@||mpsuadv.ru/event/$xmlhttprequest,domain=trychatgpt.ru
+@@||mpsuadv.ru/sbor$xmlhttprequest,domain=trychatgpt.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com
 @@||s.zfctrack.net/z|$xmlhttprequest
 @@||s.zhctrack.net/z|$xmlhttprequest
@@ -55,6 +58,7 @@ vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([id^="feed_repos
 vk.com,vk.ru###main_feed:not(.feed_submit_only_shown) div:first-child:not(.page_block) ~ .feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
 flightsim.su###tie-popup-adblock {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
+trychatgpt.ru##.\!min-h-72
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
 vk.com,vk.ru#?#._post_content:-abp-has(.Efxztiz1tCs6S5IDhTuN)
