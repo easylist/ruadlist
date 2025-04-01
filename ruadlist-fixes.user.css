@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250330.1723
+@version        0.20250401.1251
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3289,6 +3289,7 @@
     .resplash-btn.noadsButton, 
     .weather_right-column .weather__description::after, 
     [data-testid="news-tabs"] ~ div > div ~ div > div[style], 
+    body > #grid:not(.grid) .widget__container:nth-child(3) ~ .widget__container, 
     body > .grid > div[class^="grid"][class*="__header"] > .toolbar, 
     body > .zeropixel ~ * .balloon, body > .zeropixel ~ * .stripe-wrapper, 
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
@@ -4305,6 +4306,12 @@
     }
 }
 
+@-moz-document domain("ritsatv.ru") {
+    body[style*="overflow-x: hidden"] {
+        overflow-x: unset !important
+    }
+}
+
 @-moz-document domain("root-nation.com") {
     html:not(#id) > body:not(#id) {
         background: none !important
@@ -4924,12 +4931,6 @@
 @-moz-document domain("trucks.ati.su") {
     #root {
         min-height: 0 !important
-    }
-}
-
-@-moz-document domain("trychatgpt.ru") {
-    [class*="!container"] > span {
-        min-height: unset !important
     }
 }
 
