@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250401.1251
+@version        0.20250402.2057
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1706,21 +1706,30 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    .adv-ecom, .news-rubric-desktop__adv-column, [class*="card-rtb"], 
-    [class*="desktop"] ~ [id*="teaser"], [class*="withStickyAdOnArticle"], 
-    [class^="video-site--"] > [id][class*="-content__fullWidth-"], 
+    #ad-feed, .adv-ecom, .article-container div[class*="AdBlock"], 
+    .news-page-layout__content > #header-rubricator ~ [id], 
+    .news-page-layout__content > div[class*="position"], 
+    .news-rubric-desktop__adv-column, 
+    .news-secondary-layout-column__secondary div[id], [class*="CardRtb"], 
+    [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
+    [class*="withStickyAdOnArticle"], 
+    [class^="news-site--InfiniteStoryAdColumnItem-desktop__content"] > div[id*="-column_top"], 
     [class^="video-site--"][class*="skeleton"], 
-    [data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class] > div[id], 
+    [data-microappname] > [aria-label] > div[class] > div[id], 
     [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    article[data-card-type*="-promo"], div[class*="--corner-banner_"], 
-    div[class*="__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div, 
+    article[data-card-type*="-promo"], 
+    div:not([class]) > [class^="video-site--"][aria-label] > div[id], 
+    div[class*="--corner-banner_"], 
+    div[class*="__articleItem-"] > div > [aria-label="Социальный блок"] ~ div, 
     div[class*="__bannerContainer"], div[class*="adContentWrapper"], 
     div[class*="bannerMain"], div[class*="dzenProBanner"], 
     div[class*="widget"] > div[class*="container"] > div ~ div, 
+    div[class^="news-site--Feed-desktop__list-"] > div[id], 
+    div[class^="news-site--Story-"] > section ~ [id], 
     div[class^="news-site--news-top-"], div[id$="-rtb"], div[id*="splashscreen"], 
-    div[id^="ad-"][class*=" news-"] {
+    div[id^="ad-"][class*=" news-"], div[id^="article-showcase-"] {
         display: none !important
     }
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
@@ -1729,7 +1738,7 @@
     body {
         overflow-y: unset !important
     }
-    #LayoutTopMicroRoot div[style*="%"] {
+    #SECOND_CHUNK_APP_CONTAINER_MicroRoot div[style*="%"] {
         padding-top: unset !important
     }
     .climate-calendar__cell {
