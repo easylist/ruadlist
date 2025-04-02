@@ -1566,7 +1566,8 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 ! ---
 ! дзен
 ! главная
-dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important)
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[style*="%"]:style(padding-top: unset !important)
+dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[id*="card-rtb"]
@@ -1579,20 +1580,29 @@ dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="splashscreen"]
 ! видео
-dzen.ru##[class^="video-site--"] > [id][class*="-content__fullWidth-"]
 dzen.ru##[class^="video-site--"][class*="skeleton"]
+dzen.ru##div:not([class]) > [class^="video-site--"][aria-label] > div[id]
 ! статьи
+dzen.ru##.article-container div[class*="AdBlock"]
 dzen.ru##[class*="withStickyAdOnArticle"]
-dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class] > div[id]
+dzen.ru##[data-microappname] > [aria-label] > div[class] > div[id]
 dzen.ru##[data-testid="dzenpro-banner"]
-dzen.ru##div[class*="__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
+dzen.ru##div[class*="__articleItem-"] > div > [aria-label="Социальный блок"] ~ div
 dzen.ru##div[class*="adContentWrapper"]
 dzen.ru##div[class*="bannerMain"]
 dzen.ru##div[class*="dzenProBanner"]
 dzen.ru##div[id$="-rtb"]
+dzen.ru##div[id^="article-showcase-"]
 ! новости
+dzen.ru###ad-feed
+dzen.ru##.news-page-layout__content > #header-rubricator ~ [id]
+dzen.ru##.news-page-layout__content > div[class*="position"]
 dzen.ru##.news-rubric-desktop__adv-column
+dzen.ru##.news-secondary-layout-column__secondary div[id]
+dzen.ru##[class^="news-site--InfiniteStoryAdColumnItem-desktop__content"] > div[id*="-column_top"]
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[class^="news-site--Feed-desktop__list-"] > div[id]
+dzen.ru##div[class^="news-site--Story-"] > section ~ [id]
 dzen.ru##div[class^="news-site--news-top-"]
 dzen.ru##div[id^="ad-"][class*=" news-"]
 ! погода

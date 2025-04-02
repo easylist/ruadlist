@@ -1244,18 +1244,19 @@ disk.yandex.*,docs.yandex.*##.footer__copyright:style(color: transparent !import
 disk.yandex.*,docs.yandex.*##[data-test-id^="ps-header-logo-"] svg ~ svg
 disk.yandex.*,docs.yandex.*,mail.yandex.*##[data-test-id="ps-header-logo-free-badge-link"]
 disk.yandex.*,mail.yandex.*##.Base-Onboarding:style(display: none !important)
-dzen.*##+js(set-constant, Object.prototype.useExperimentFlag, undefined)
+dzen.*##+js(set-constant, Object.prototype.loadAdvManager, undefined)
 dzen.*##.climate-calendar-container__adv-wide:style(display: none !important)
 dzen.*##.content__adv:style(display: none !important)
 dzen.*##:matches-path(articles) div[id]:has(> article[id]):style(display: none !important)
 dzen.*##[aria-label*="Лент"] article:has(> div:matches-css(display: none)):style(display: none !important)
 dzen.*##[itemtype="https://www.schema.org/Article"] > div > div[id]:style(display: none !important)
+dzen.*##article[class*="_zenad"]:style(display: none !important)
 dzen.*##div:matches-attr(/[a-z0-9]/=/media-banner/):style(display: none !important)
 dzen.*##div[aria-label*="екл"][aria-label*="мн"]:style(display: none !important)
-dzen.*##div[class*="-p"][class*="ace"][class*="ho"][class*="der__root"]:style(display: none !important)
+dzen.*##div[class*="-placeholder_"]:style(display: none !important)
 dzen.*##div[class*="_pos_index-"]:style(display: none !important)
 dzen.*##div[class*="linkBro-"]:style(display: none !important)
-dzen.*##div[class*="widgetContainer"] div[style^="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
+dzen.*##div[class*="widgetContainer"] div[style*="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
 dzen.*##div[class^="video-site--panel-view_"] [aria-label] > div[id]:style(display: none !important)
 dzen.*##div[class^="video-site--video-view-sidebar__skeleton-"]:style(display: none !important)
 dzen.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid)
@@ -1346,6 +1347,7 @@ yandex.*##div[id*="page"] div[class*="_banner_"]:style(display: none !important)
 @@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yandex.ru/ads/system/context.js?|$script,domain=dzen.ru
 @@||yandex.ru/ads/system/context.js|$domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/header-bidding.js|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/daas/atom.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
