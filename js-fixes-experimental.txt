@@ -353,6 +353,7 @@ ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+j
 player.vgtrk.com##+js(set-constant, Object.prototype.IS_CHECK_REGISTRATION, false)
 tv-gubernia.ru##+js(set-constant, Object.prototype.MediaReady, noopFunc)
 xsport.ua##+js(set-constant, Object.prototype.PLAYED, null)
+dzen.ru##+js(set-constant, Object.prototype.ProtectedNames, undefined)
 1tv.ru##+js(set-constant, Object.prototype._currentAgeRestriction, null)
 api-video.khl.ru##+js(set-constant, Object.prototype.adblockSettings, undefined)
 razlozhi.ru##+js(set-constant, Object.prototype.advert, null)
@@ -517,6 +518,7 @@ sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="back
 cosplay-porn.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
 cosplay-porn.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
+dzen.ru##div:matches-attr(/data-[a-z0-9]/=bottom-ad)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
