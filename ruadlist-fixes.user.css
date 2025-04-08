@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250408.1448
+@version        0.20250408.2051
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1346,6 +1346,13 @@
   domain("yummyanime.best") {
     .wrap {
         padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("click-or-die.ru") {
+    a[href*="://kik.cat/"] {
+        pointer-events: none !important;
+        color: inherit !important
     }
 }
 
