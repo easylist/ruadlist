@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250404.2012
+@version        0.20250408.1448
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1308,9 +1308,6 @@
 }
 
 @-moz-document domain("championat.com") {
-    .header-logo__link > img {
-        display: block !important
-    }
     html:not(#id) {
         padding-top: 0 !important
     }
@@ -1706,30 +1703,30 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #ad-feed, .adv-ecom, .article-container div[class*="AdBlock"], 
-    .news-page-layout__content > #header-rubricator ~ [id], 
+    #ad-feed, .adv-ecom, .news-page-layout__content > [id^="header-"] ~ [id], 
     .news-page-layout__content > div[class*="position"], 
     .news-rubric-desktop__adv-column, 
+    .news-rubric-desktop__news > section > div > div[id], 
     .news-secondary-layout-column__secondary div[id], 
-    .page_article [aria-label] > div[class] > div[id], [class*="CardRtb"], 
-    [class*="MultiTheme"], [class*="card-rtb"], 
-    [class*="desktop"] ~ [id*="teaser"], [class*="withStickyAdOnArticle"], 
-    [class^="news-site--InfiniteStoryAdColumnItem-desktop__content"] > div[id*="-column_top"], 
-    [class^="video-site--"][class*="skeleton"], [data-testid="dzenpro-banner"], 
-    [id*="card-rtb"], a[href*="://yandex.ru/an/count/"], 
+    .page_article [aria-label] > div[class] > div[id], 
+    .page_article [aria-label] div[class*="sideColumn"], [class*="CardRtb"], 
+    [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
+    [class*="withStickyAdOnArticle"], 
+    [class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"], 
+    [data-testid="dzenpro-banner"], [id*="card-rtb"], 
+    a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    article[data-card-type*="-promo"], 
-    div:not([class]) > [class^="video-site--"][aria-label] > div[id], 
-    div[class*="--corner-banner_"], 
-    div[class*="__articleItem-"] > div > [aria-label="Социальный блок"] ~ div, 
+    article[data-card-type*="-promo"], div[class*="--corner-banner_"], 
+    div[class*="__articleItem-"] > div > [class*="social"] ~ div, 
     div[class*="__bannerContainer"], div[class*="adContentWrapper"], 
     div[class*="adSplitEmbed"], div[class*="bannerMain"], 
-    div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
+    div[class*="dzenProBanner"], div[class*="guat"], 
+    div[class*="multiEmbedMode"], 
+    div[class*="videoSite"] [aria-label] > div[id], 
     div[class*="widget"] > div[class*="container"] > div ~ div, 
-    div[class^="news-site--Feed-desktop__list-"] > div[id], 
-    div[class^="news-site--Story-"] > section ~ [id], 
-    div[class^="news-site--news-top-"], div[id$="-rtb"], div[id*="splashscreen"], 
-    div[id^="ad-"][class*=" news-"], div[id^="article-showcase-"] {
+    div[class^="news-site--"] > section ~ [id], div[id$="-rtb"], 
+    div[id*="splashscreen"], div[id^="ad-"][class*=" news-"], 
+    div[id^="article-showcase-"] {
         display: none !important
     }
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
