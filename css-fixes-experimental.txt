@@ -1570,7 +1570,6 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
-dzen.ru##[id*="_MicroRoot"] div[style*="important"]:style(padding-top: unset !important)
 dzen.ru##[id*="card-rtb"]
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
@@ -1578,14 +1577,17 @@ dzen.ru##article[data-card-type*="-promo"]
 dzen.ru##body:style(overflow-y: unset !important)
 dzen.ru##div[class*="--corner-banner_"]
 dzen.ru##div[class*="__bannerContainer"]
-dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
+dzen.ru##div[class*="dzen-"][class*="-banner-"]
+dzen.ru##div[class^="dzen-desktop"] > [id] > div[style*="important"]:style(padding-top: unset !important)
 dzen.ru##div[id*="splashscreen"]
+dzen.ru##div[style*="important"] div[class*="__main"]
 ! видео
 dzen.ru##div[class*="videoSite"] [aria-label] > div[id]
 ! статьи
 dzen.ru##.page_article [aria-label] > div[class] > div[id]
 dzen.ru##.page_article [aria-label] div[class*="sideColumn"]
 dzen.ru##[class*="withStickyAdOnArticle"]
+dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
 dzen.ru##div[class*="__articleItem-"] > div > [class*="social"] ~ div
 dzen.ru##div[class*="adContentWrapper"]
@@ -1598,7 +1600,8 @@ dzen.ru##div[id^="article-showcase-"]
 ! новости
 dzen.ru###ad-feed
 dzen.ru##.news-page-layout__content > div[class*="position"]
-dzen.ru##.news-page-layout__content [id^="header-"] ~ div:not(:nth-last-child(-n+2))
+dzen.ru##.news-page-layout__rubricator ~ [id]
+dzen.ru##.news-page-layout__rubricator ~ div:not(:nth-last-child(-n+2))
 dzen.ru##.news-rubric-desktop__adv-column
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
