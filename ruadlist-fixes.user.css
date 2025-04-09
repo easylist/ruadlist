@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250408.2121
+@version        0.20250409.1418
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1711,8 +1711,8 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #ad-feed, .adv-ecom, .news-page-layout__content > [id^="header-"] ~ [id], 
-    .news-page-layout__content > div[class*="position"], 
+    #ad-feed, .adv-ecom, .news-page-layout__content > div[class*="position"], 
+    .news-page-layout__content [id^="header-"] ~ div:not(:nth-last-child(-n+2)), 
     .news-rubric-desktop__adv-column, 
     .news-rubric-desktop__news > section > div > div[id], 
     .news-secondary-layout-column__secondary div[id], 
@@ -1728,8 +1728,7 @@
     div[class*="__articleItem-"] > div > [class*="social"] ~ div, 
     div[class*="__bannerContainer"], div[class*="adContentWrapper"], 
     div[class*="adSplitEmbed"], div[class*="bannerMain"], 
-    div[class*="dzenProBanner"], div[class*="guat"], 
-    div[class*="multiEmbedMode"], 
+    div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
     div[class*="videoSite"] [aria-label] > div[id], 
     div[class*="widget"] > div[class*="container"] > div ~ div, 
     div[class^="news-site--"] > section ~ [id], div[id$="-rtb"], 
