@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250409.1418
+@version        0.20250409.2213
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1434,7 +1434,7 @@
     .box[class*="content"] {
         margin-top: auto !important
     }
-    article[data-post-url^="https://cq.ru/articles/tech/"] .cq-code-block a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]) {
+    article[data-post-url^="https://cq.ru/articles/tech/"] a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]) {
         pointer-events: none !important;
         color: inherit !important
     }
@@ -1712,14 +1712,15 @@
 
 @-moz-document domain("dzen.ru") {
     #ad-feed, .adv-ecom, .news-page-layout__content > div[class*="position"], 
-    .news-page-layout__content [id^="header-"] ~ div:not(:nth-last-child(-n+2)), 
+    .news-page-layout__rubricator ~ [id], 
+    .news-page-layout__rubricator ~ div:not(:nth-last-child(-n+2)), 
     .news-rubric-desktop__adv-column, 
     .news-rubric-desktop__news > section > div > div[id], 
     .news-secondary-layout-column__secondary div[id], 
     .page_article [aria-label] > div[class] > div[id], 
     .page_article [aria-label] div[class*="sideColumn"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
-    [class*="withStickyAdOnArticle"], 
+    [class*="withStickyAdOnArticle"], [class*="yandex-direct"], 
     [class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"], 
     [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
@@ -1728,12 +1729,12 @@
     div[class*="__articleItem-"] > div > [class*="social"] ~ div, 
     div[class*="__bannerContainer"], div[class*="adContentWrapper"], 
     div[class*="adSplitEmbed"], div[class*="bannerMain"], 
-    div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
+    div[class*="dzen-"][class*="-banner-"], div[class*="dzenProBanner"], 
+    div[class*="multiEmbedMode"], 
     div[class*="videoSite"] [aria-label] > div[id], 
-    div[class*="widget"] > div[class*="container"] > div ~ div, 
     div[class^="news-site--"] > section ~ [id], div[id$="-rtb"], 
     div[id*="splashscreen"], div[id^="ad-"][class*=" news-"], 
-    div[id^="article-showcase-"] {
+    div[id^="article-showcase-"], div[style*="important"] div[class*="__main"] {
         display: none !important
     }
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
@@ -1742,7 +1743,7 @@
     body {
         overflow-y: unset !important
     }
-    [id*="_MicroRoot"] div[style*="important"] {
+    div[class^="dzen-desktop"] > [id] > div[style*="important"] {
         padding-top: unset !important
     }
     .climate-calendar__cell {
