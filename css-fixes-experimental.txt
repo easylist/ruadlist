@@ -1585,7 +1585,7 @@ dzen.ru##div[style*="important"] div[class*="__main"]
 dzen.ru##div[class*="videoSite"] [aria-label] > div[id]
 ! статьи
 dzen.ru##.page_article [aria-label] > div[class] > div[id]
-dzen.ru##.page_article [aria-label] div[class*="sideColumn"]
+dzen.ru##.page_article [aria-label] div[style^="max-height:"]
 dzen.ru##[class*="withStickyAdOnArticle"]
 dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
@@ -1605,6 +1605,7 @@ dzen.ru##.news-page-layout__rubricator ~ div:not(:nth-last-child(-n+2))
 dzen.ru##.news-rubric-desktop__adv-column
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
+dzen.ru##.news-story-page__app .news-page-layout__rubricator + div[class*=" "]
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site--"] > section ~ [id]

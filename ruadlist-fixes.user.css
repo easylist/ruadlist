@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250409.2213
+@version        0.20250410.2126
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1717,8 +1717,9 @@
     .news-rubric-desktop__adv-column, 
     .news-rubric-desktop__news > section > div > div[id], 
     .news-secondary-layout-column__secondary div[id], 
+    .news-story-page__app .news-page-layout__rubricator + div[class*=" "], 
     .page_article [aria-label] > div[class] > div[id], 
-    .page_article [aria-label] div[class*="sideColumn"], [class*="CardRtb"], 
+    .page_article [aria-label] div[style^="max-height:"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="withStickyAdOnArticle"], [class*="yandex-direct"], 
     [class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"], 
