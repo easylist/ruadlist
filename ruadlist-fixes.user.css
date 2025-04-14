@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250411.2022
+@version        0.20250414.2313
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1113,24 +1113,6 @@
     }
 }
 
-@-moz-document domain("braz-rus.pro") {
-    [id^="oframeplayer-"] {
-        background-color: transparent !important
-    }
-    video {
-        filter: none !important
-    }
-    .player-preview {
-        filter: none !important;
-        opacity: unset !important;
-        transform: none !important;
-        padding: 1px !important
-    }
-    [id^="oframeplayer-"] > pjsdiv[style*="scaleX(1.1)"] {
-        transform: none !important
-    }
-}
-
 @-moz-document domain("brestcity.com") {
     #content-padding > * {
         color: black !important
@@ -1246,6 +1228,24 @@
     }
     .bg-top-menu {
         top: 0 !important
+    }
+}
+
+@-moz-document domain("bzrus.pro") {
+    [id^="oframeplayer-"] {
+        background-color: transparent !important
+    }
+    pjsdiv[style*="blur"], video {
+        filter: none !important
+    }
+    .player-preview {
+        filter: none !important;
+        opacity: unset !important;
+        transform: none !important;
+        padding: 1px !important
+    }
+    [id^="oframeplayer-"] > pjsdiv[style*="scaleX(1.1)"] {
+        transform: none !important
     }
 }
 
