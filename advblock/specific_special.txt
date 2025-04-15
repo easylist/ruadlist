@@ -11,7 +11,7 @@
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*_$script
 ||static.dzeninfra.ru/s3/zen-lib/*/news-site/*_$script
 !
-$csp=script-src-attr 'none',domain=eurointegration.com.ua|newsyou.info|pravda.com.ua|sportanalytic.com
+$csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
 ://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
@@ -31,6 +31,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
+||newsyou.info^$csp=script-src-elem 'self' https:
 ||pikabu.ru/ajax/*?dmk7r=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
@@ -75,6 +76,7 @@ vk.com,vk.ru##.feed_row > [data-post-id][id^="post"] > :not([class="_post_conten
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"]:not([post_view_hash])
 vk.com,vk.ru#?#.feed_row > [id^="post-"] > ._post_content:-abp-has(> :first-child:not(.PostHeader))
 vk.com,vk.ru##.feed_row > div[class$=" post"]
+newsyou.info##.langblock
 e.mail.ru##.layout__column_right-indented
 mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 freesoft.ru##.modal-backdrop
