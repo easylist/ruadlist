@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250424.1314
+@version        0.20250426.1457
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1433,10 +1433,6 @@
 @-moz-document domain("cq.ru") {
     .box[class*="content"] {
         margin-top: auto !important
-    }
-    article[data-post-url^="https://cq.ru/articles/tech/"] a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]) {
-        pointer-events: none !important;
-        color: inherit !important
     }
 }
 
@@ -3017,6 +3013,18 @@
     }
 }
 
+@-moz-document
+  domain("kp.kg"),
+  domain("kp.kz"),
+  domain("kp.md"),
+  domain("media"),
+  domain("ru"),
+  domain("russian.rt.com") {
+    .buttonContainer[data-name="play"][style*="left: 10px;"] {
+        opacity: unset !important
+    }
+}
+
 @-moz-document domain("kp.ru") {
     .page-wrapper > .page-inner {
         margin-top: auto !important
@@ -4372,18 +4380,6 @@
     }
     body {
         overflow: auto !important
-    }
-}
-
-@-moz-document
-  domain("russian.rt.com"),
-  domain("kp.kg"),
-  domain("kp.kz"),
-  domain("kp.md"),
-  domain("media"),
-  domain("ru") {
-    .buttonContainer[data-name="play"][style*="left: 10px;"] {
-        opacity: unset !important
     }
 }
 
