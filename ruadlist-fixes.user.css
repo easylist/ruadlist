@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250426.1457
+@version        0.20250430.1932
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3992,6 +3992,17 @@
     }
     body > #page {
         margin-top: 65px !important
+    }
+}
+
+@-moz-document domain("playvillage.ru") {
+    ._1z_ {
+        background: none !important
+    }
+    ._1z_ ._21_ {
+        width: 1000% !important;
+        height: 1000% !important;
+        position: absolute !important
     }
 }
 
