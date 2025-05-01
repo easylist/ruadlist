@@ -41,6 +41,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||statusklic.info^$csp=sandbox allow-same-origin;
 ||syndication.exosrv.com^$csp=sandbox allow-same-origin;
 ||t1mcapp.com^$csp=script-src
+||tapochek.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:
 ||tdsclicks2.ru^$csp=script-src
 ||utarget.ru^$csp=sandbox allow-same-origin;
 ||utarget.ru^$csp=script-src
