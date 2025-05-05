@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250501.1634
+@version        0.20250505.1814
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4242,6 +4242,12 @@
     }
     .poster-grid-item > a[target="_blank"]:first-child {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("redheadsound.studio") {
+    .page__text > div[style^="color:"] + p {
+        margin-bottom: unset !important
     }
 }
 
