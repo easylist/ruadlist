@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250506.1619
+@version        0.20250508.1610
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5107,6 +5107,10 @@
     }
     html > body[style] > :not(.vgt_orig_bg) {
         pointer-events: auto !important
+    }
+    a[href^="https://keysforgamers.com/"] {
+        pointer-events: none !important;
+        color: inherit !important
     }
     html > body[style] {
         pointer-events: none !important;
