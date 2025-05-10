@@ -543,6 +543,7 @@ stranamam.ru###last-ad-link-block
 mp4upload.com###lay.lay
 volynpost.com###layout-center > a[target]
 sergeistrelec.name###left > .bl0 ~ .bl0:not(:nth-last-child(2))
+novate.ru###left > .post ~ .bordered
 fullgames.ru###left > div:not(#ms)
 oper.ru###left a[href*="://opershop.ru"]
 irtafax.com.ua###left a[rel="dofollow"]
@@ -840,13 +841,17 @@ funlog.ru###rfunlog
 google.by,google.com,google.com.ua,google.kz,google.ru###rhs_block .xpdopen div[data-ved] > .mod:not([data-attrid])
 pozdrav.ru,viknaodessa.od.ua###right
 sergeistrelec.name###right > .bl0 ~ .bl0:not(:nth-last-child(-n+2))
+novate.ru###right > .bordered + br + .bordered
+novate.ru###right > .bordered ~ .bordered ~ .bordered
 filmitorrent.net,utorr.cc###right > .colorstrip
 n71.ru###right > .nofloat
 sun-news.ru###right > .sideblock > :not(#vk_groups):not(.fb-page)
 kinokong.sk###right > div[style*="height:"][style*="255px"]
 itnews.com.ua###right > div[style^="height:"]
-kulturologia.ru#?##right > h2:-abp-contains(Рекомендуем)
+novate.ru###right > h2 ~ div + br + br + h2
+kulturologia.ru,novate.ru#?##right > h2:-abp-contains(Рекомендуем)
 kulturologia.ru#?##right > h2:-abp-contains(Рекомендуем) + .bordered
+novate.ru###right > noindex ~ .bordered
 komplat.by###right-banner-container
 astromeridian.ru###right-column > noindex
 aptekamos.ru###right-data-container [bannerid]
@@ -3552,6 +3557,7 @@ naked-science.ru##.naked-banner
 namba.kg##.nambafood
 argumentiru.com#?#.namerub:-abp-contains(/гнездо/i)
 argumentiru.com#?#.namerub:-abp-contains(/новости|партнер/i)
+novate.ru##.native > h2
 floristics.info##.native-ads
 app-time.ru##.native-brand > div
 chistosex.org##.nav > .menu-part
