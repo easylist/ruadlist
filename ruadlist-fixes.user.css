@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250511.2022
+@version        0.20250512.1356
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3278,12 +3278,12 @@
     .article__item_source_viqeo .article__container::before {
         content: initial !important
     }
-    #bubble-home, #grid .asteroid-widgets, 
-    #grid .widget__container > .calendar-container, 
+    #bubble-home, #grid .widget__container > .calendar-container, 
     #grid .widget__container > .event-list-widget, 
     #grid .widget__container > .games-widget, 
     #grid .widget__container > .progress-bar-widget, 
-    #grid .widget__container [class*="promo"], #grid div[class^="feed__"], 
+    #grid .widget__container [class*="promo"], #grid [class^="asteroid-"], 
+    #grid div[class^="feed__"], 
     #user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:first-child, 
     #user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:last-child, 
     .balloon-anchor > .balloon, .mailbox__add-btn-logo, .ph-ext, 
@@ -4786,12 +4786,11 @@
 }
 
 @-moz-document domain("tapochek.net") {
-    .scrollable {
-        overflow-x: auto !important;
-        padding-bottom: 16px !important
+    .lenta_scrollable.poster {
+        border: none !important
     }
-    .scrollable > #thumbs {
-        width: max-content !important
+    .lenta-tooltips-container > .tooltip-container {
+        top: 43px !important
     }
 }
 
