@@ -409,6 +409,7 @@ in-poland.com##+js(set-constant, adsenseIsLoaded, true)
 gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,megaresheba.com,megaresheba.ru,resheba.me,spishi.fun,zoobrilka.net##+js(set-constant, app.book.external, null)
 razlozhi.ru##+js(set-constant, cadb, false)
 audioportal.su##+js(set-constant, clicks, 2)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(set-constant, countdownNum, 0)
 ~spec.tass.ru,tass.ru##+js(set-constant, frames.innerWidth, {})
 gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 gazeta.ru##+js(set-constant, isAdFree, noopFunc)
@@ -504,6 +505,7 @@ fontanka.ru##[class^="articleBlockVideo_"] video ~ button
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
 www.sports.ru##[data-noinit]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[value="Скачать"]:remove-attr(disabled)
 online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(btn)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]
