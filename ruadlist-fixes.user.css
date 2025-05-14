@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250512.1356
+@version        0.20250514.1408
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -136,43 +136,31 @@
   domain("26-2.ru"),
   domain("arbitr-praktika.ru"),
   domain("budgetnik.ru"),
-  domain("budgetnyk.com.ua"),
   domain("buhsoft.ru"),
   domain("business.ru"),
   domain("cxychet.ru"),
   domain("dirsalona.ru"),
-  domain("dzakupivli.com.ua"),
   domain("fd.ru"),
   domain("gazeta-unp.ru"),
   domain("gd.ru"),
-  domain("gkh.ru"),
   domain("glavbukh.ru"),
-  domain("golovbukh.ua"),
   domain("hr-director.ru"),
-  domain("kadrovik01.com.ua"),
   domain("kdelo.ru"),
   domain("kom-dir.ru"),
   domain("law.ru"),
-  domain("lawyercom.ru"),
-  domain("medsprava.com.ua"),
   domain("menobr.ru"),
-  domain("nalogplan.ru"),
   domain("pro-goszakaz.ru"),
   domain("pro-personal.ru"),
   domain("resobr.ru"),
   domain("rnk.ru"),
   domain("sekretariat.ru"),
-  domain("sop.com.ua"),
   domain("stroychet.ru"),
   domain("trudohrana.ru"),
   domain("ugpr.ru"),
   domain("zarplata-online.ru"),
   domain("zdrav.ru") {
-    .megaShadow, .paywall-activated, .topAdvertize {
+    .megaShadow, .paywall-activated {
         display: none !important
-    }
-    .topAdvertize__wrapper {
-        height: auto !important
     }
     .body * {
         opacity: 1 !important;
@@ -181,47 +169,6 @@
     }
     body {
         overflow: auto !important
-    }
-}
-
-@-moz-document
-  domain("26-2.ru"),
-  domain("arbitr-praktika.ru"),
-  domain("budgetnik.ru"),
-  domain("budgetnyk.com.ua"),
-  domain("buhsoft.ru26-2.ru"),
-  domain("business.ru"),
-  domain("cxychet.ru"),
-  domain("dirsalona.ru"),
-  domain("dzakupivli.com.ua"),
-  domain("fd.ru"),
-  domain("gazeta-unp.ru"),
-  domain("gd.ru"),
-  domain("gkh.ru"),
-  domain("glavbukh.ru"),
-  domain("golovbukh.ua"),
-  domain("hr-director.ru"),
-  domain("kadrovik01.com.ua"),
-  domain("kdelo.ru"),
-  domain("kom-dir.ru"),
-  domain("law.ru"),
-  domain("lawyercom.ru"),
-  domain("medsprava.com.ua"),
-  domain("menobr.ru"),
-  domain("nalogplan.ru"),
-  domain("pro-goszakaz.ru"),
-  domain("pro-personal.ru"),
-  domain("resobr.ru"),
-  domain("rnk.ru"),
-  domain("sekretariat.ru"),
-  domain("sop.com.ua"),
-  domain("stroychet.ru"),
-  domain("trudohrana.ru"),
-  domain("ugpr.ru"),
-  domain("zarplata-online.ru"),
-  domain("zdrav.ru") {
-    div[class^="GbShadow"] {
-        display: none !important
     }
 }
 
