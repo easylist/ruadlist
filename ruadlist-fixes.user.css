@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250514.1855
+@version        0.20250515.2349
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1651,16 +1651,13 @@
     .news-rubric-desktop__news > section > div > div[id], 
     .news-secondary-layout-column__secondary div[id], 
     .news-story-page__app .news-page-layout__rubricator + div[class*=" "], 
-    .page_article [aria-label] > div[class] > div[id], 
-    .page_article [aria-label] div[style^="max-height:"], [class*="CardRtb"], 
-    [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
+    [class*="CardRtb"], [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="withStickyAdOnArticle"], [class*="yandex-direct"], 
     [class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"], 
     [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     article[data-card-type*="-promo"], div[class*="--corner-banner_"], 
-    div[class*="__articleItem-"] > div > [class*="social"] ~ div, 
     div[class*="__bannerContainer"], div[class*="adContentWrapper"], 
     div[class*="adSplitEmbed"], div[class*="bannerMain"], 
     div[class*="dzen-"][class*="-banner-"], div[class*="dzenProBanner"], 
@@ -1677,7 +1674,7 @@
     body {
         overflow-y: unset !important
     }
-    div[class^="dzen-desktop"] > [id] > div[style*="important"] {
+    div[class] > [id] > div[style*="important"] {
         padding-top: unset !important
     }
     .climate-calendar__cell {
@@ -5491,7 +5488,7 @@
 
 @-moz-document domain("ya.ru") {
     #rythm-feed, .i-mini-bem[style], .market-feed, [id*="feed"][id*="_"], 
-    html[class*="morda"] .body__content > .content__informers-bg ~ div[style] {
+    html[class*="morda"] .body__content > [class*="informers"] ~ div[style] {
         display: none !important
     }
     .document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body {
