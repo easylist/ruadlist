@@ -1266,7 +1266,7 @@ dzen.*##div[class*="linkBro-"]:style(display: none !important)
 dzen.*##div[class*="widgetContainer"] div[style*="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
 dzen.*##div[class^="video-site--panel-view_"] [aria-label] > div[id]:style(display: none !important)
 dzen.*##div[class^="video-site--video-view-sidebar__skeleton-"]:style(display: none !important)
-dzen.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid)
+dzen.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid data.*.attributes.blockId)
 mail.yandex.*###js-layout-inner + div:nth-child(2):style(width: unset !important)
 mail.yandex.*###js-layout-inner ~ div a[href*="/premium-"]:style(display: none !important)
 mail.yandex.*###js-mail-layout-content-header > .message-list-banner-portal + div[id]:empty
@@ -1353,11 +1353,11 @@ yandex.*##div[id*="page"] div[class*="_banner_"]:style(display: none !important)
 @@||an.yandex.ru/mapuid/tnscounter/?from=yan_oo-rtb-direct|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/mapuid/yandex/$image,domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/meta/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||an.yandex.ru/meta/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||an.yandex.ru/resource/spacer.gif|$image,domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||an.yandex.ru/system/context.js|$domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||an.yandex.ru/meta/*target-ref=*pogoda$xmlhttprequest,domain=yandex.*|yandex.ru
+@@||an.yandex.ru/resource/spacer.gif|$image,domain=dzen.ru|ya.ru|yandex.*|yandex.ru
+@@||an.yandex.ru/system/context.js|$domain=dzen.ru|ya.ru|yandex.*|yandex.ru
 @@||mc.yandex.ru/metrika/advert.gif|$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.*|yandex.ru
 @@||yandex.ru/ads/page/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*pogoda$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/context.js|$domain=dzen.ru|ya.ru|yandex.*|yandex.ru
