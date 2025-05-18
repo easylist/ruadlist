@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250515.2349
+@version        0.20250518.1257
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4129,7 +4129,7 @@
         left: calc(50% - 55px) !important;
         cursor: pointer !important
     }
-    .fox-fallback, .l-sticky-right-parent, .popup_push, 
+    .l-sticky-right-parent, .popup_push, 
     body > [data-yandex-name="blockad_click"] {
         display: none !important
     }
@@ -4148,9 +4148,6 @@
 @-moz-document
   domain("rbc.ru"),
   domain("sportrbc.ru") {
-    .news-feed a[href*="utm_campaign"] {
-        display: none !important
-    }
     .g-relative > .forecast {
         height: auto !important
     }
@@ -4367,6 +4364,7 @@
 
 @-moz-document domain("sdamgia.ru") {
     #old_school > .App > div > [color="red"], 
+    [role="main"] div[style^="position: absolute; top: 0px; "], 
     center > div[style^="position: absolute; top: 0px; "], 
     div[style] > a[target="_blank"] > img[src^="data:"] {
         display: none !important
