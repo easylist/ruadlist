@@ -924,6 +924,7 @@ cnews.ru,utro.ru##.banner
 sportrbc.ru##.bet-block
 rbc.ru##.countdown
 rbc.ru##.deposit-block
+rbc.ru##.fox-fallback
 autonews.ru##.g-banner__columns
 rbc.ru,sportrbc.ru##.g-banner__news-footer > div[class="js-rbcslider-multi-news"]
 safe.cnews.ru##.header-brand-logo
@@ -931,12 +932,17 @@ pro.rbc.ru##.header__partner
 rbc.ru##.header__project__info
 rbc.ru#?#.item-in-article:-abp-has([href*="erid="])
 sportrbc.ru##.js-header-slider-container
+rbc.ru##.js-index-central-column .item_promo-card
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([data-pixels-on-show*="adfox"])
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
+rbc.ru##.js-index-central-column > [data-publisher-index] .list-slider-item [href^="https://pro.rbc.ru/"]
+rbc.ru#?#.js-index-central-column > [data-publisher-index]:-abp-has(.item__bottom > [href^="https://pro.rbc.ru"])
+rbc.ru##.js-index-doscroll-pro
 cash.rbc.ru##.js-one-office.premium
 rbc.ru##.js-video-player-ad-skip
 rbc.ru#?#.l-col-100h:-abp-has(> div [href*="banner"])
 rbc.ru##.mts-promo
+rbc.ru##.news-feed a[href*="utm_campaign"]
 utro.ru#?#.news-group__content > .news-group__item:-abp-has(> .banner)
 cnews.ru##.objects_row > .cnb-zone > a:not([href*="cnews.ru"])
 rbc.ru,rbclife.ru##.rbc-header-hide-banners
@@ -962,6 +968,7 @@ rbc.ru##.video-player__controls__ad-countdown
 utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
 rbc.ru##[data-placement]
 rbc.ru##[data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
+rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
 rbc.ru##[data-yandex-name^="selfpromo_"]
 rbc.ru##[data-yandex-show="cards_marketplace_show"]
@@ -977,8 +984,10 @@ autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
 autonews.ru,rbc.ru,rbclife.ru,sportrbc.ru##div[class^="fox-tail"]
 rbc.ru##div[class^="item-slider__partner"]
 utro.ru##div[class^="partners-block"]
+||api.mindbox.ru/scripts/*/tracker.$domain=rbc.ru
 ||cnews.ru/inc/js/height_max_banner.js
 ||market.cnews.ru/widget$domain=www.cnews.ru
+||rbc.ru/*/social-networks/
 ||rbk.ru/*/_mtsFloorAida.js
 ||rbk.ru/*/_renderAggregator.js
 ||rbk.ru/*_videoCommercial.
