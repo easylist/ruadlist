@@ -1240,7 +1240,6 @@ top100.rambler.*##body > div:not([id])[style="position: absolute; z-index: 10000
 ||yastatic.net/naydex/autoru/$script,redirect=empty
 !
 ! yandex
-/^https?://mail\.yandex\.[^\s]{125,}/$empty,script,~third-party
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@://yandex.*/news/$generichide
 @@://yandex.*/news|$generichide
@@ -1270,12 +1269,14 @@ dzen.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid data.*.attr
 mail.yandex.*###js-layout-inner + div:nth-child(2):style(width: unset !important)
 mail.yandex.*###js-layout-inner ~ div a[href*="/premium-"]:style(display: none !important)
 mail.yandex.*###js-mail-layout-content-header > .message-list-banner-portal + div[id]:empty
+mail.yandex.*###js-mail-layout-content-header > div:style(--direct-line-min-height: 0 !important; margin-top: unset !important)
 mail.yandex.*##+js(remove-attr, data-link-id, a, stay)
-mail.yandex.*##+js(set-constant, Object.prototype.hasAds, false)
+mail.yandex.*##+js(set, Object.prototype.disable-adv, {})
 mail.yandex.*##.mail-Layout-Content > div:first-child + div div[style="height: 36px !important;"]:style(display: none !important)
 mail.yandex.*##.mail-Page-Body .Popup2 > .Tooltip-Content:has-text(2001—202)
 mail.yandex.*##.qa-LeftColumn-Footer > [href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; width: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
 mail.yandex.*##div[class^="MidgetsPanel"]:style(display: none !important)
+mail.yandex.*##div[class^="PageLayout-m__body--"] > div:style(--banners-block-width: 0 !important)
 music.yandex.*##+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column:style(display: none !important)
 tv.yandex.*##.recommended-ott:style(display: none !important)
@@ -1311,10 +1312,12 @@ yandex.*##div[class^="content "][data-bem] > .content__bottom ~ div[class*="card
 yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:first-child > div[class$="__content"] + div[class]:style(display: none !important)
 yandex.com##.RelatedImagesDirect:style(display: none !important)
 yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: none !important)
+||mail.yandex.*/u2709/$empty,script,~third-party
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
 ||ya.ru/portal/proxy?blocks=feed_banner
 ||yandex-sport.naydex.net/$script,redirect=empty
+||yastatic.net/naydex/yandex-mail/$empty,script
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
 ~mail.yandex.*,~vh.yandex.ru,~yandex.net,yandex.*##+js(no-setTimeout-if, Ya.Rum.getSetting, 15)
 ~vh.yandex.ru,~yandex.net,yandex.*##+js(abort-on-property-read, Ya.loaderVer)
