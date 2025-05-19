@@ -967,6 +967,8 @@ rbc.ru##.video-player__controls__ad-countdown
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=autonews.ru|~cash.rbc.ru|rbc.ru|sportrbc.ru
 utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
 rbc.ru##[data-placement]
+rbc.ru##[data-vr-zone="Главная новость"] a[href^="https://pro.rbc.ru/"]
+rbc.ru##[data-vr-zone="Главная новость"]::before
 rbc.ru##[data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
 rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
