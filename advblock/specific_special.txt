@@ -105,7 +105,6 @@ www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
 drive2.ru#?#div:-abp-properties(min-height: 555px)
-otvet.mail.ru#?#div:empty:-abp-properties(content: "Реклама")
 drive2.ru##div[class$="--equal"] > div[class] > div:not([class]):not([id])
 drive2.ru##div[class$="--equal"] > div[class] > div[id]:not(:empty)
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
@@ -445,11 +444,9 @@ pets.mail.ru##.pypo-springs-sticky
 pets.mail.ru#?#[data-qa="ArticlesList"] > div:-abp-has(> .pypo-slot)
 pets.mail.ru##div[class^="Gallery__slideSide_"]
 ! Ответы
-otvet.mail.ru##a[href^="https://t.mail.ru/redir/"]
 otvet.mail.ru##body div div[class*="adv-slot-"]
+otvet.mail.ru##div[class*="_block_"]
 otvet.mail.ru##div[data-pos]
-otvet.mail.ru#?#div[style^="top: "]:-abp-has(> div > div[class=""]:empty)
-otvet.mail.ru##div[style^="top:"] ~ div[style^="top:"] > div > div[class=""] + div:last-child
 ! Дети
 deti.mail.ru##.cols__wrapper > aside
 deti.mail.ru##.deti-slot_exchange

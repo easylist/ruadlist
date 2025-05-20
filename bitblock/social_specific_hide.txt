@@ -2898,9 +2898,10 @@ mail.ru##.sharelist
 mail.ru,sportmail.ru##.sharelist__items
 auto.mail.ru##.sharelist_justify
 pets.mail.ru##a[class*="VKAppBanner__root"]
-otvet.mail.ru##a[title="Поделиться"]
 deti.mail.ru#?#button:-abp-has(> .button__inner:-abp-contains(Поделиться))
 mail.ru,sportmail.ru##button[title="Поделиться"]
+otvet.mail.ru##div[class*=" _PostItemVotes_"] > button + [class^="_wrapper_"] + [class^="_wrapper_"]
+otvet.mail.ru##div[class*=" _ReplyItemActionButtons"] > div[class^="_wrapper_"]:first-child
 player-smotri.mail.ru##div[class^="SharingOptionsScrollContainer-"]
 player-smotri.mail.ru##div[class^="WrapperPersonalRatingButton-"]
 my.mail.ru##div[class^="sp-video__item-page-new__share"]
@@ -2908,6 +2909,7 @@ auto.mail.ru#?#div[data-module="FixedPanel"] > div[class="block"]:-abp-has(#vk_c
 lady.mail.ru##div[data-module="Shares.Compact"]
 cloud.mail.ru##div[data-name="socialsShare"]
 mail.ru,sportmail.ru##div[data-qa="SocialButtons"]
+otvet.mail.ru##footer > [class^="_social_"]
 !
 ! Исправления после generichide
 omsi2mod.ru###share
