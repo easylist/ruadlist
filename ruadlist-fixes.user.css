@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250518.1257
+@version        0.20250521.1427
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1564,6 +1564,9 @@
     div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class] {
         display: none !important
     }
+    div[itemtype*="://schema.org/Product"] ~ div #comments {
+        max-width: 100% !important
+    }
     div[class*="--content article "] + div ~ div:last-child > div:first-child:not(:only-child), 
     div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child:not(:only-child), 
     div[itemtype*="://schema.org/Photograph"] > div:last-child > div:first-child:not(:only-child), 
@@ -1579,6 +1582,9 @@
         padding-top: unset !important;
         padding-bottom: unset !important;
         box-shadow: inherit !important
+    }
+    div[itemtype*="://schema.org/Product"] ~ div #comments ~ div {
+        width: unset !important
     }
     div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child + div[class], 
     div[itemtype*="://schema.org/Photograph"] > div:last-child > div:first-child + div[class], 
