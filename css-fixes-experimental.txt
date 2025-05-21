@@ -398,6 +398,8 @@ drive2.com,drive2.ru##div[itemtype*="://schema.org/Photograph"] > div:last-child
 drive2.com,drive2.ru##div[itemtype*="://schema.org/Photograph"] > div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
 drive2.com,drive2.ru##div[itemtype*="://schema.org/Photograph"] > div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 !
+drive2.com,drive2.ru##div[itemtype*="://schema.org/Product"] ~ div #comments ~ div:style(width: unset !important)
+drive2.com,drive2.ru##div[itemtype*="://schema.org/Product"] ~ div #comments:style(max-width: 100% !important)
 drive2.com,drive2.ru##div[itemtype*="://schema.org/Product"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 !
 drive2.com,drive2.ru##div[class*="--content article "] + div
