@@ -920,7 +920,6 @@ sportrbc.ru##.bet-block
 rbc.ru##.countdown
 rbc.ru##.deposit-block
 rbc.ru##.fox-fallback
-autonews.ru##.g-banner__columns
 rbc.ru,sportrbc.ru##.g-banner__news-footer > div[class="js-rbcslider-multi-news"]
 safe.cnews.ru##.header-brand-logo
 pro.rbc.ru##.header__partner
@@ -952,14 +951,12 @@ rbc.ru##.simple-promo-card
 sportrbc.ru##.statistics__footer
 rbc.ru,rbclife.ru##.swiper-wrapper > .swiper-slide a[href*="utm_campaign"]
 cnews.ru##.tizer_block
-autonews.ru,rbc.ru##.topline__branding__wrapper
-autonews.ru,rbc.ru,sportrbc.ru##.topline__disable-adv__button
-autonews.ru,rbc.ru,sportrbc.ru##.topline__item__image-block
+autodaily.ru,autonews.ru,rbc.ru##.topline__branding__wrapper
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##.topline__disable-adv__button
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##.topline__item__image-block
 rbc.ru##.video-player__controls__ad-countdown
-/browser-updater$script,domain=autonews.ru|rbc.ru|sportrbc.ru
-/rbcbanners-*/_fullscreen.js$script,domain=autonews.ru|rbc.ru|sportrbc.ru
-@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=autonews.ru|rbc.ru|sportrbc.ru
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=autonews.ru|~cash.rbc.ru|rbc.ru|sportrbc.ru
+/browser-updater$script,domain=autodaily.ru|autonews.ru|rbc.ru|sportrbc.ru
+/rbcbanners-*/_fullscreen.js$script,domain=autodaily.ru|autonews.ru|rbc.ru|sportrbc.ru
 utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
 rbc.ru##[data-placement]
 rbc.ru##[data-vr-zone="Главная новость"] a[href^="https://pro.rbc.ru/"]
@@ -970,15 +967,15 @@ rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_camp
 rbc.ru##[data-yandex-name^="selfpromo_"]
 rbc.ru##[data-yandex-show="cards_marketplace_show"]
 rbc.ru##[data-yandex-show^="commercial_cards_"]
-autonews.ru,rbc.ru,rbc.ua,sportrbc.ru,utro.ru##[id^="unit_"]
+autodaily.ru,autonews.ru,rbc.ru,rbc.ua,sportrbc.ru,utro.ru##[id^="unit_"]
 rbc.ru##a.video-player__details[target="_blank"]
 quote.ru##a[href*="bannersdisable_button"]
 sportrbc.ru##a[href*="erid="][target="_blank"]
 quote.ru##a[href="https://quote.ru/?utm_source=topline"] img
 cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
-autonews.ru,rbc.ru,sportrbc.ru##body div .banner__container
-autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
-autonews.ru,rbc.ru,rbclife.ru,sportrbc.ru##div[class^="fox-tail"]
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##body div .banner__container
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
+autodaily.ru,autonews.ru,rbc.ru,rbclife.ru,sportrbc.ru##div[class^="fox-tail"]
 rbc.ru##div[class^="item-slider__partner"]
 utro.ru##div[class^="partners-block"]
 ||api.mindbox.ru/scripts/*/tracker.$domain=rbc.ru

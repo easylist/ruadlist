@@ -217,7 +217,7 @@ _pagespeed_beacon?
 ! = Общие блокировки (и с использованием имени доменов) =========================
 //stats.myangular.life^$third-party
 /metrics.js$domain=maximum.ru|montecarlo.ru
-/redir/stat/*$domain=autonews.ru|rbc.ru|sportrbc.ru
+/redir/stat/*$domain=autodaily.ru|autonews.ru|rbc.ru|sportrbc.ru
 /yandex-metrika.js
 /ypxl*?fmt=$domain=yap.ru|yaplakal.com
 ://a.pr-cy.ru^$third-party
@@ -1613,7 +1613,7 @@ $~third-party,removeparam=/cdom/i,domain=3dnews.kz|3dnews.ru
 ?commercial=$document,removeparam=|,domain=ria.com
 ?cpc=*show-uid=$document,removeparam=|,domain=market.yandex.*
 ?e=lfm$document,removeparam=|,domain=sports.ru
-?from=$document,removeparam=|from,domain=3dnews.kz|3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autonews.ru|autopilot.ru|habr.com|igromania.ru|klops.ru|kommersant.ru|mail.ru|mk.ru|ntv.ru|ozon.ru|quote.ru|rbc.ru|rbclife.ru|ridus.ru|sportrbc.ru|sports.ru
+?from=$document,removeparam=|from,domain=3dnews.kz|3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autodaily.ru|autonews.ru|autopilot.ru|habr.com|igromania.ru|klops.ru|kommersant.ru|mail.ru|mk.ru|ntv.ru|ozon.ru|quote.ru|rbc.ru|rbclife.ru|ridus.ru|sportrbc.ru|sports.ru
 ?from=$document,xmlhttprequest,removeparam=from,domain=vedomosti.ru
 ?from=shapka$document,xmlhttprequest,removeparam=|,domain=auto.ru
 ?media&ila_camaign=$document,removeparam=media
@@ -1623,7 +1623,7 @@ $~third-party,removeparam=/cdom/i,domain=3dnews.kz|3dnews.ru
 ?prov=ukrnet$removeparam=prov
 ?rcmd_$document,removeparam=|rcmd_,domain=ria.ru
 ?referrer_block=$document,removeparam=|referrer_,domain=mail.ru|sportmail.ru
-?ruid=$document,removeparam=|ruid,domain=autonews.ru|rbc.ru|sportrbc.ru
+?ruid=$document,removeparam=|ruid,domain=autodaily.ru|autonews.ru|rbc.ru|sportrbc.ru
 ?source=tableau_tv$document,removeparam=|,domain=yandex.*
 ?source=ukrnet$document,removeparam=|
 ?sub_confirmation=1$document,removeparam=|,domain=youtube.com
