@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250528.4
+@version        0.20250529.1559
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -910,6 +910,10 @@
   domain("rambler.ru") {
     .commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div {
         box-shadow: none !important
+    }
+    .commercial-branding {
+        margin-top: unset !important;
+        margin-bottom: unset !important
     }
     .commercial-branding > div script ~ div > div, 
     .commercial-branding > div script ~ div > div:last-child div {
