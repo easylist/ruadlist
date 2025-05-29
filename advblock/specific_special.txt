@@ -796,6 +796,7 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod
 !
 ! Rambler.RU и их проекты
 www.rambler.ru###app > .ad
+auto.rambler.ru,avtorambler.com###app > .ad_branding_header ~ div[class] > div[class]:empty
 www.rambler.ru###app > script + div
 eda.ru###billboard
 daily.afisha.ru###partners-news-container
@@ -812,6 +813,7 @@ championat.com##.banner-announce
 championat.com##.banner-parallax
 avtorambler.com,rambler.ru##.commercial-branding [id^="rambler-currency-converter-container:"] + div[class]
 avtorambler.com,rambler.ru##.commercial-branding article > div:only-child > div:first-child + div + div:last-child
+avtorambler.com,rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
 lenta.ru##.custom-banner
 vp.rambler.ru##.eagleplayer-advertisement-remain-time
 vp.rambler.ru##.eplayer-time-to-ad
@@ -862,6 +864,7 @@ avtorambler.com,rambler.ru#?#aside:-abp-has(> div > [class^="banner--native-part
 finance.rambler.ru##body[data-finance_media-desktop="main"] .commercial-branding > nav ~ div > div > script ~ div > div:last-child
 gazeta.ru#?#div:-abp-has(> .b_telegram)
 horoscopes.rambler.ru#?#div:-abp-has(> [id^="rcmw-container-"])
+avtorambler.com,rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
 mail.rambler.ru##div[class*="Ad-direct"]
 mail.rambler.ru##div[class*="Ad-root"]
 mail.rambler.ru##div[class*="AddBillboard"]
