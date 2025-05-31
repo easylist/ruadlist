@@ -225,7 +225,6 @@ yapx.ru##+js(cookie-remover, /adblock_/)
 24smi.org##+js(cookie-remover, isab)
 shedevrum.ai##+js(cookie-remover, shedevrum-aab)
 kakprosto.ru##+js(cookie-remover, yadb)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(disable-newtab-links)
 mp3party.net##+js(href-sanitizer, [href*="?url=https"], ?url)
 portalvirtualreality.ru##+js(href-sanitizer, a[href*="&link=https://"], ?link)
 softoroom.org##+js(href-sanitizer, a[href*=".php?go="], ?go)
@@ -477,9 +476,6 @@ hideip.me#@#.node-promoted
 vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
 pikabu.ru##.pub300x250.pub300x250m.pub728x90.text-ad.textAd.textad.textads.text-ads.text-ad-links:style(display: block !important; position: absolute !important; top: -10000px !important; left: -10000px !important)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it .relise
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it:remove-attr(style)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it:style(display: inline-block !important)
 sports.ru##.right-first-banner-place + div
 lenta.ru##.scroll-to-site
 softportal.com##.st-browser__timer
@@ -539,6 +535,9 @@ cosplay-porn.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verif
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=bottom-ad)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:remove-attr(style)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:style(display: inline-block !important)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .relis
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
