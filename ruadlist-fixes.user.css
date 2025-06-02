@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250529.1559
+@version        0.20250602.1441
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2948,13 +2948,6 @@
     }
     body > #app div[style="display:block !important"] > div:first-child > div:first-child + div > div:first-child + div > div[data-name]:first-child + div {
         margin-top: auto !important
-    }
-    [data-test-id="News_SpecialArticle"] + div[class]:not(:empty), 
-    [data-test-id="News_SpecialArticle"] + div[class]:not(:empty) + div[class]:not(:empty), 
-    [data-test-id="News_SpecialArticle"] ~ div[class]:empty + div[class]:not(:empty), 
-    [data-test-id="News_SpecialArticle"] ~ div[class]:empty + div[class]:not(:empty) + div[class]:not(:empty), 
-    [data-test-id="News_SpecialArticle"]:empty {
-        min-height: auto !important
     }
     body > #app [data-branding-wrapper] {
         padding-top: 0 !important
