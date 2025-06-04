@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250604.2027
+@version        0.20250605.38
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5480,8 +5480,8 @@
 }
 
 @-moz-document domain("ya.ru") {
-    #rythm-feed, .i-mini-bem[style], .market-feed, [id*="feed"][id*="_"], 
-    html[class*="morda"] .body__content > [class*="informers"] ~ div[style] {
+    .i-mini-bem[style], .market-feed, .reasoning-section, [id*="feed"][id*="_"], 
+    [id^="rythm-fee"], html[class*="morda"] .body__content > aside ~ div[style] {
         display: none !important
     }
     .document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body {
