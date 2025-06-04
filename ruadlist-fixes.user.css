@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250604.1657
+@version        0.20250604.2027
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5332,13 +5332,15 @@
     .film-seances-page, .shadow.shadow-restyle {
         box-shadow: 0 -8px 15px #333333 !important
     }
+    #modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]), 
     #top > div[id][style^="height: 210px"], 
     .app__page > div[class*="-container_"]:not([class*="media"]):not([class*="content"]):first-child, 
     .desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child, 
     .media-post-page > div[class*="-container_"]:not([class*="media"]):first-child, 
     .page-content > div[id]:not(#header-info-bg):empty, .top-banner-container, 
     a[href^="https://kinopoisk.ru/special/"][href*="utm_campaign="], 
-    aside.dialog, div[class^="styles_adBlockWarningRoot"], 
+    aside.dialog, div[class*="__AMNhR styles_"], 
+    div[class^="styles_adBlockWarningRoot"], 
     div[class^="styles_themeTopBanner"], div[class^="toaster-container"], 
     div[data-type="teaserspec"], div[id*="_superbanner_"] {
         display: none !important
@@ -5358,6 +5360,7 @@
     div[class*="kinopoisk-media-container_pending"], 
     div[class*="styles_baseContainer"] > div[class]:first-child, 
     div[class*="styles_baseContainer"] > div[class]:first-child > div[class]:first-child, 
+    div[class*="styles_middleContainer"] > div[class]:first-child, 
     div[class^="styles_wideContentContainer"] > div[class]:first-child, 
     div[style="min-width: 1px;"], div[style="min-width:1px"] {
         min-height: 0 !important
