@@ -21,6 +21,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||driverpaksolution.ru^$csp=sandbox allow-same-origin;
 ||ex.24smi.info^$csp=script-src
 ||exoclick.com^$csp=sandbox allow-same-origin;
+||fap-guru.$csp=connect-src 'self' blob: data:
 ||folltiz.site^$csp=script-src
 ||forum.ru-board.com/*.cgi?*=5&topic=51141$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
 ||forums.rusmedserv.com/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: https://forums.rusmedserv.com/clientscript/ cse.google.com *.google.com/cse/ *.googleapis.com
@@ -1165,6 +1166,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||fairtop.in/image/upload/
 ||fakty.ua/js/_d.js
 ||fans-fcsm.ru/block.js
+||fap-guru.*/front/js/unwanted.js
 ||fapl.ru/upload/fapl_$subdocument
 ||faspiic.ru/js/go_re.js
 ||fastpic.org/view/$script
