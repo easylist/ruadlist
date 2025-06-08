@@ -1291,7 +1291,7 @@ ya.*,yandex.*##.SerpListFeature > .SearchBlock ~ :not(.SearchBlock):style(displa
 ya.*,yandex.*##.VideoViewer div[class*="_placement_"]:style(display: none !important)
 ya.*,yandex.*##[id][aria-label] > [class*="_card"]:has(> div > div > [data-event-required]):style(display: none !important)
 ya.*,yandex.*##[id][aria-label] > [class*="_card"]:has(> div [data-vnl*="advertiser"]):style(display: none !important)
-ya.*,yandex.*##[id][aria-label] > [class]:has(> div > button:matches-attr(/[a-z0-9]/=/advertiser/)):style(display: none !important)
+ya.*,yandex.*##[id][aria-label] > [class]:has(> div > button:matches-attr(/[a-z0-9]/=/abuseLink|advertiser/)):style(display: none !important)
 ya.*,~yandex.net,yandex.*##+js(remove-attr, data-counter, #search-result > .serp-item a)
 yandex.*###bk-container:style(display: none !important)
 yandex.*##+js(set-constant, Object.prototype._directAdvStyles, undefined)
