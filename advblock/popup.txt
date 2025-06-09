@@ -7,7 +7,6 @@ $third-party,popup,domain=2ip.ru
 /redirect/cpa/*$popup,domain=rt02.ru
 ://pikabu.ru/*/*/*/*--$popup
 |http://li.ru/go?$popup,domain=fishki.net
-||ad.adriver.ru^$popup,domain=gamebomb.ru
 ||catcut.net^$popup,domain=mobile-4at-obshenie.chatovod.ru|mobile-chat-obshenie.jimdo.com
 ||com/?id=*&t=direct^$popup
 ||gemius.pl^$popup,domain=terrikon.com
@@ -44,6 +43,7 @@ $third-party,popup,domain=2ip.ru
 &temz=clikundr&$popup
 &tz=*&key=$popup
 &utm_campaign=CU_ru$popup
+--autotargeting&$third-party,popup
 .clickunder.$popup
 .me/js/pop.js|$script
 .webunder.$popup
@@ -76,6 +76,7 @@ $third-party,popup,domain=2ip.ru
 =propellerads$popup
 =recreativ&utm_medium=$popup
 =tovarro&utm_campaign=$popup
+=yandex*context_$third-party,popup
 ^clickunder^$popup
 |http://*cp.MTblock=true&tz$popup
 ||r0.mail.ru/redir/$popup
@@ -101,6 +102,7 @@ $third-party,popup,domain=2ip.ru
 ||aabd.ru^$popup
 ||accountant/*rd.php?id=$third-party,popup
 ||actionpay.net^$third-party,popup
+||ad.adriver.ru^$third-party,popup
 ||adfill.me^$popup
 ||adservone.com^$popup
 ||adsmedia-provider.com^$third-party,popup
