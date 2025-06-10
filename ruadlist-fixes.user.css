@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250605.1807
+@version        0.20250610.2213
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -44,6 +44,7 @@
   domain("56.ru"),
   domain("59.ru"),
   domain("60.ru"),
+  domain("62.ru"),
   domain("63.ru"),
   domain("68.ru"),
   domain("71.ru"),
@@ -72,8 +73,7 @@
   domain("ufa1.ru"),
   domain("v1.ru"),
   domain("vladivostok1.ru"),
-  domain("voronezh1.ru"),
-  domain("ya62.ru") {
+  domain("voronezh1.ru") {
     div[class^="articleBlockViqeo_"][class*="notReady_"] {
         padding-bottom: unset !important
     }
@@ -4715,7 +4715,8 @@
         border: none !important
     }
     .lenta-tooltips-container > .tooltip-container {
-        top: 43px !important
+        top: 43px !important;
+        position: fixed !important
     }
 }
 
@@ -5332,7 +5333,7 @@
     .film-seances-page, .shadow.shadow-restyle {
         box-shadow: 0 -8px 15px #333333 !important
     }
-    #modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]), 
+    #modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"]), 
     #top > div[id][style^="height: 210px"], 
     .app__page > div[class*="-container_"]:not([class*="media"]):not([class*="content"]):first-child, 
     .desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child, 
