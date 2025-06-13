@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250610.2213
+@version        0.20250613.1203
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -568,6 +568,18 @@
     }
     .wrap > .popular {
         visibility: visible !important
+    }
+}
+
+@-moz-document
+  domain("anilib.me"),
+  domain("animelib.org"),
+  domain("hentailib.me"),
+  domain("hentailib.org"),
+  domain("slashlib.me"),
+  domain("yaoilib.net") {
+    img[src*="/uploads/"] {
+        filter: none !important
     }
 }
 
@@ -2440,16 +2452,6 @@
     }
     .main .header {
         padding-top: 94px !important
-    }
-}
-
-@-moz-document
-  domain("hentailib.me"),
-  domain("hentailib.org"),
-  domain("slashlib.me"),
-  domain("yaoilib.net") {
-    img[src*="/uploads/"] {
-        filter: none !important
     }
 }
 
@@ -5173,6 +5175,12 @@
     }
     body {
         position: unset !important
+    }
+}
+
+@-moz-document domain("vuzopedia.ru") {
+    img[src*="/storage/app/resources/"][style*="blur"] {
+        filter: none !important
     }
 }
 
