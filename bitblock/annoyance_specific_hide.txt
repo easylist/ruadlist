@@ -2742,8 +2742,11 @@ dzen.ru##.zen-page .content div[class*="__bannerMain"]
 /^https?:\/\/strm\.yandex\.ru\/get\/[^\s]{1300,}$/$xmlhttprequest,domain=dzen.ru|naydex.net
 @@||ad.mail.ru/adp/*=resplash&$xmlhttprequest,domain=mail.ru
 @@||shedevrum.ai^$generichide
-@@||static-mon.yandex.net/static/main.js?pid=shedevrum|$xmlhttprequest,domain=shedevrum.ai
+@@||statchecker.yandex.ru/ping|$script,domain=drive2.ru
+@@||static-mon.yandex.net/static/main.js$xmlhttprequest,domain=drive2.ru|shedevrum.ai
+@@||www.drive2.ru^$generichide
 @@||yandex.ru/ads/system/context.js|$script,domain=e.mail.ru|octavius.mail.ru|shedevrum.ai
+@@||yastatic.net/partner-code-bundles/*/*.js|$xmlhttprequest,domain=drive2.ru
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body > :not(div[style*=" -"]) .mailru-visibility-check
 dzen.ru#?#div:-abp-has(> .mg-grid__item_type_card > div[class*="loader_animated"])
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Serp"] div[class$="-Incut"][style^="margin-bottom:"]
