@@ -26,7 +26,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportana
 @@||s.zhctrack.net/z|$xmlhttprequest
 @@||s.zmctrack.net/z|$xmlhttprequest
 @@||s.znctrack.net/z|$xmlhttprequest
-@@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
+@@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com|www.championat.ru
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
@@ -809,14 +809,14 @@ lenta.ru#?#._longgrid:-abp-has(> [class*="info"] > [class*="_ad-title"])
 eda.ru#?#.ad_branding_footer div[class^="emotion"]:-abp-has(> [title="yandexzen"])
 eda.ru##.ad_branding_header > section
 avtorambler.com,rambler.ru##.adfox-background-container
-championat.com##.adv-mark
+championat.com,championat.ru##.adv-mark
 lenta.ru##.advertisable-plate__erid
 gazeta.ru##.b_nav > a[target="_blank"]
 gazeta.ru##.b_telegram
-championat.com,gazeta.ru,lenta.ru##.banner
+championat.com,championat.ru,gazeta.ru,lenta.ru##.banner
 lenta.ru##.banner + div[class][id]
-championat.com##.banner-announce
-championat.com##.banner-parallax
+championat.com,championat.ru##.banner-announce
+championat.com,championat.ru##.banner-parallax
 avtorambler.com,rambler.ru##.commercial-branding [id^="rambler-currency-converter-container:"] + div[class]
 avtorambler.com,rambler.ru##.commercial-branding article > div:only-child > div:first-child + div + div:last-child
 avtorambler.com,rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
@@ -825,19 +825,19 @@ vp.rambler.ru##.eagleplayer-advertisement-remain-time
 vp.rambler.ru##.eplayer-time-to-ad
 finance.rambler.ru##.finance__partners
 horoscopes.rambler.ru##.fzwuC
-championat.com##.game-of-day
-championat.com##.header-bottom__adv
-championat.com##.infographic-countdown
-championat.com##.infographic-duel
+championat.com,championat.ru##.game-of-day
+championat.com,championat.ru##.header-bottom__adv
+championat.com,championat.ru##.infographic-countdown
+championat.com,championat.ru##.infographic-duel
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##.lb-ad-visible
 gazeta.ru##.m_zen
 lenta.ru##.promo-block
 gazeta.ru##.rcmw-container
-championat.com##.recommender-block ~ .banner + div:not([class*="comments"])
+championat.com,championat.ru##.recommender-block ~ .banner + div:not([class*="comments"])
 top100.rambler.ru##.rui-Snackbar-snackbar
 moslenta.ru##.sideColumn > div[class] > div[style^="margin-bottom:"] + div
-championat.com##.stat-widget__banner
-championat.com##.stat-widget__header
+championat.com,championat.ru##.stat-widget__banner
+championat.com,championat.ru##.stat-widget__header
 lenta.ru##.topic-page__info ~ div
 lenta.ru##.yandex-games
 www.afisha.ru##[aria-label="Реклама"]
@@ -845,9 +845,9 @@ mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
 auto.rambler.ru,avtorambler.com##[data-auto_media-desktop*="rnet_widget"]
 doctor.rambler.ru##[data-doctor_media-desktop*="rnet_widget"]
 finance.rambler.ru##[data-finance_media-desktop*="rnet_widget"]
-championat.com##[data-goal-label="coeff_fonbet"]
-championat.com##[data-href*="okko.sport"]
-championat.com##[data-href*="utm_"]
+championat.com,championat.ru##[data-goal-label="coeff_fonbet"]
+championat.com,championat.ru##[data-href*="okko.sport"]
+championat.com,championat.ru##[data-href*="utm_"]
 motor.ru##[data-motor-desktop*="exchange_block"]
 rambler.ru##[data-news_media-desktop*="rnet_widget"]
 avtorambler.com,rambler.ru##[data-rcmw-init]
@@ -866,8 +866,8 @@ lenta.ru##a[class="card-mini _topnews"][href^="/extlink/"]
 avtorambler.com,rambler.ru##a[href*="//ads.adfox.ru/"]
 afisha.ru##a[href*="://dzen.ru/"]
 lenta.ru##a[href*="?erid="]
-championat.com##a[href*="offer_id="]
-championat.com,lenta.ru##a[href*="okko.sport"]
+championat.com,championat.ru##a[href*="offer_id="]
+championat.com,championat.ru,lenta.ru##a[href*="okko.sport"]
 www.afisha.ru##a[href^="/out/?url="]
 rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container"]:empty)
 avtorambler.com,rambler.ru#?#aside:-abp-has(> div > [class^="banner--native-partner_widget"])
@@ -914,10 +914,10 @@ avtorambler.com,rambler.ru##div[style^="min-height:400px"]
 avtorambler.com,rambler.ru##div[style^="min-height:600px"]
 avtorambler.com,rambler.ru##div[style^="order:"][style*="-1"]
 avtorambler.com,rambler.ru##rambler-info-banner
-||championat.com/embeds/custom.css
+||championat.*/embeds/custom.css
 ||cpa-elements.rambler.ru/*/sdk.js
 ||embeds.rambler.ru/cpa-elements/
-||img.championat.com/brand/*.png
+||img.championat.*/brand/*.png
 ||kraken.rambler.ru^$domain=~kraken.rambler.ru
 ||lenta.ru/fenwick
 ||rambler.ru/*/okko-metrics
