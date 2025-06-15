@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250613.1203
+@version        0.20250615.1427
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1261,7 +1261,9 @@
     }
 }
 
-@-moz-document domain("championat.com") {
+@-moz-document
+  domain("championat.com"),
+  domain("championat.ru") {
     html:not(#id) {
         padding-top: 0 !important
     }
