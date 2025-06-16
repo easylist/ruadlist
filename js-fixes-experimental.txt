@@ -241,7 +241,7 @@ opennet.me,opennet.ru##+js(href-sanitizer, a[href*="://click.opennet.ru/cgi-bin/
 appleinsider.ru##+js(href-sanitizer, a[href*="?goto=https"], ?goto)
 kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
 lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
-hot.game##+js(href-sanitizer, a[href][target="_blank"][rel="nofollow"], ?ulp)
+hot.game##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
