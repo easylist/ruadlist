@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250615.2127
+@version        0.20250618.25
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1328,6 +1328,12 @@
 @-moz-document domain("club.dns-shop.ru") {
     .header-space {
         max-width: 100% !important
+    }
+}
+
+@-moz-document domain("com-x.life") {
+    .blur-image {
+        filter: none !important
     }
 }
 
