@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250618.25
+@version        0.20250619.1245
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4303,12 +4303,12 @@
 }
 
 @-moz-document domain("ru") {
-    [data-ns-portal] .page-type-article.branding {
+    [data-ns-portal] .branding[data-page] {
         --grid-breakpoint-lg: unset !important;
         margin-top: unset !important;
         width: 100% !important
     }
-    [data-ns-portal] .page-type-article.branding div[class^="content_"] > div[class^="bottom"] {
+    [data-ns-portal] .branding[data-page] div[class^="content_"] > div[class^="bottom"] {
         max-width: 100% !important
     }
 }
