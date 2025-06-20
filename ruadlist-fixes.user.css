@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250619.1245
+@version        0.20250620.1333
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5498,7 +5498,7 @@
 
 @-moz-document domain("ya.ru") {
     .i-mini-bem[style], .market-feed, .reasoning-section, [id*="feed"][id*="_"], 
-    [id^="rythm-fee"], html[class*="morda"] .body__content > aside ~ div[style], 
+    [id^="rythm-"], html[class*="morda"] aside ~ div[style], 
     html[class*="morda"] main > [data-hydration-id]:nth-child(-n+2) {
         display: none !important
     }
