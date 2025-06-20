@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250620.1333
+@version        0.20250620.2150
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2881,6 +2881,12 @@
     }
 }
 
+@-moz-document domain("kinopoisk.ru") {
+    div[class^="styles_adBlockWarningRoot"] {
+        display: none !important
+    }
+}
+
 @-moz-document domain("kinoprofi.vip") {
     body .header {
         padding-top: 0 !important
@@ -5357,7 +5363,6 @@
     .page-content > div[id]:not(#header-info-bg):empty, .top-banner-container, 
     a[href^="https://kinopoisk.ru/special/"][href*="utm_campaign="], 
     aside.dialog, div[class*="__AMNhR styles_"], 
-    div[class^="styles_adBlockWarningRoot"], 
     div[class^="styles_themeTopBanner"], div[class^="toaster-container"], 
     div[data-type="teaserspec"], div[id*="_superbanner_"] {
         display: none !important
