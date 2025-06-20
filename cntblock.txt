@@ -1280,6 +1280,8 @@ mail.yandex.*##div[class^="PageLayout-m__body--"] > div:style(--banners-block-wi
 music.yandex.*##+js(set-constant, Object.prototype.showBranding, noopFunc)
 newssearch.yandex.*##.news-advert__column:style(display: none !important)
 tv.yandex.*##.recommended-ott:style(display: none !important)
+ya.*##html[class*="morda"] [data-test-id="feed"]:style(display: none !important)
+ya.*##html[class*="morda"] [style^="--height-ratio:"]:style(display: none !important)
 ya.*,yandex.*##+js(no-xhr-if, yabs.yandex.ru/count/)
 ya.*,yandex.*##+js(set-constant, Object.prototype.initDeps, undefined)
 ya.*,yandex.*##.content__right div:has(> div > button:matches-attr(/[a-z0-9]/=/advertiser/)):style(display: none !important)

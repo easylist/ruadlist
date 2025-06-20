@@ -1195,6 +1195,7 @@ ukr.net##.lazy-load-banner
 1901.selcdn.ru##.topFaceGuest
 !
 ! Yandex (Яndex)
+/feed?feed_geo=$domain=ya.ru
 /portal/ntp/banner?$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@://ya.r*/search$generichide
 @@://yandex.*/safe/win/$generichide
@@ -1203,6 +1204,8 @@ ukr.net##.lazy-load-banner
 @@||yandex.ru/ads/system/adsdk.js|$script,domain=yandex.ru
 market.yandex.ru,market.yandex.*##.layout_type_search.headline__footer
 ya.ru##.i-mini-bem[class*="banner"]
+ya.ru##[aria-label="Информеры"] ~ [class]
+ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.layout__banner
 ya.ru,yandex.ru,yandex.*##.main__distr-popup
