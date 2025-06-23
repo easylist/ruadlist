@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250620.2150
+@version        0.20250623.1209
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -215,9 +215,7 @@
     }
 }
 
-@-moz-document
-  domain("3dnews.kz"),
-  domain("3dnews.ru") {
+@-moz-document domain("3dnews.ru") {
     .article > .onadlable {
         display: none !important
     }
