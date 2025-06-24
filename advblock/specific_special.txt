@@ -959,14 +959,10 @@ sportrbc.ru##.js-header-slider-container
 rbc.ru##.js-index-central-column .item_promo-card
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([data-pixels-on-show*="adfox"])
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
-rbc.ru##.js-index-central-column > [data-publisher-index] .list-slider-item [href^="https://pro.rbc.ru/"]
-rbc.ru#?#.js-index-central-column > [data-publisher-index]:-abp-has(.item__bottom > [href^="https://pro.rbc.ru"])
-rbc.ru##.js-index-doscroll-pro
 cash.rbc.ru##.js-one-office.premium
 rbc.ru##.js-video-player-ad-skip
 rbc.ru#?#.l-col-100h:-abp-has(> div [href*="banner"])
 rbc.ru##.mts-promo
-rbc.ru##.news-feed a[href*="utm_campaign"]
 utro.ru#?#.news-group__content > .news-group__item:-abp-has(> .banner)
 cnews.ru##.objects_row > .cnb-zone > a:not([href*="cnews.ru"])
 rbc.ru,rbclife.ru##.rbc-header-hide-banners
@@ -990,9 +986,7 @@ rbc.ru##.video-player__controls__ad-countdown
 utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
 rbc.ru##[data-placement]
 rbc.ru##[data-vr-zone="Главная новость"] a[href^="https://pro.rbc.ru/"]
-rbc.ru##[data-vr-zone="Главная новость"]::before
 rbc.ru##[data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
-rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
 rbc.ru##[data-yandex-name^="selfpromo_"]
 rbc.ru##[data-yandex-show="cards_marketplace_show"]
@@ -1005,6 +999,12 @@ quote.ru##a[href="https://quote.ru/?utm_source=topline"] img
 cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##body div .banner__container
 autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
+rbc.ru##body.free .js-index-central-column > [data-publisher-index] .list-slider-item [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has(.item__bottom > [href^="https://pro.rbc.ru"])
+rbc.ru##body.free .js-index-doscroll-pro
+rbc.ru##body.free .news-feed a[href*="utm_campaign"]
+rbc.ru##body.free [data-vr-zone="Главная новость"]::before
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 autodaily.ru,autonews.ru,rbc.ru,rbclife.ru,sportrbc.ru##div[class^="fox-tail"]
 rbc.ru##div[class^="item-slider__partner"]
 utro.ru##div[class^="partners-block"]
