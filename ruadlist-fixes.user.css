@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250627.2109
+@version        0.20250628.1328
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1944,15 +1944,6 @@
 }
 
 @-moz-document
-  domain("filmive-hd.net"),
-  domain("kinoshack.net"),
-  domain("tree.tv") {
-    body > .wrapper {
-        margin-top: 0 !important
-    }
-}
-
-@-moz-document
   domain("filmix.date"),
   domain("filmix.life"),
   domain("filmix.my"),
@@ -2892,6 +2883,14 @@
 @-moz-document domain("kinorium.com") {
     body {
         margin-top: auto !important
+    }
+}
+
+@-moz-document
+  domain("kinoshack.net"),
+  domain("tree.tv") {
+    body > .wrapper {
+        margin-top: 0 !important
     }
 }
 
@@ -4010,7 +4009,6 @@
 
 @-moz-document
   domain("porus.ru"),
-  domain("ruporus.biz"),
   domain("ruporus.cc"),
   domain("ruporus.com"),
   domain("ruporus.net"),
@@ -4286,7 +4284,6 @@
   domain("rp5.am"),
   domain("rp5.by"),
   domain("rp5.co.nz"),
-  domain("rp5.co.uk"),
   domain("rp5.kz"),
   domain("rp5.md"),
   domain("rp5.ru") {
@@ -4336,7 +4333,6 @@
 @-moz-document
   domain("rutr.life"),
   domain("rutracker.net"),
-  domain("rutracker.nl"),
   domain("rutracker.org") {
     #topic_main > [id^="post_"] ~ .hide-for-print, 
     #topic_main > [id^="post_"] ~ tbody:not([id^="post_"]) > [class], 
