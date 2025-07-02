@@ -853,6 +853,7 @@ lenta.ru##.yandex-games
 www.afisha.ru##[aria-label="Реклама"]
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
 auto.rambler.ru,avtorambler.com##[data-auto_media-desktop*="rnet_widget"]
+gazeta.ru##[data-docking="left-down"] > div[style^="height:"][style*="overflow:"]
 doctor.rambler.ru##[data-doctor_media-desktop*="rnet_widget"]
 finance.rambler.ru##[data-finance_media-desktop*="rnet_widget"]
 championat.com,championat.ru##[data-goal-label="coeff_fonbet"]
@@ -902,6 +903,7 @@ nova.rambler.ru##div[class^="DirectMKB"]
 nova.rambler.ru##div[class^="LayoutSearch"] section > article[class*=" Serp__item"]:not([class^=" Serp__item"])
 r0.ru##div[class^="News__adv"]
 afisha.ru##div[data-test*="HONEY-AD"] > [data-test="FALLBACK"] > span
+gazeta.ru##div[id^="__id_global_rambler_video_off_"][data-mediaposition="bottom"]
 gazeta.ru##div[id^="_g_exchange_"]
 avtorambler.com,rambler.ru##div[id^="rambler-info-banner-"]
 avtorambler.com,rambler.ru##div[id^="rcmw-container-"][id*="-horizontal-"]
@@ -938,6 +940,7 @@ avtorambler.com,rambler.ru##rambler-info-banner
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
 ||static.gazeta.ru/nm2021/js/others_scripts_v6.js
 ||trafffgen.rambler.ru^
+||vp.rambler.ru/player/*&mediaposition=bottom&$subdocument,domain=gazeta.ru
 ||winline.rambler.ru^
 !#if ext_abp
 www.rambler.ru#?##app > div:-abp-properties(min-height: 250px)
