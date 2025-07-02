@@ -486,6 +486,8 @@ softportal.com##.st-browser__timer
 gtavicecity.ru##.stop-waiting
 pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story:not([data-author-name])
 pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story[data-context-actions*=",profile_hide,"]
+lenta.ru##.topic-body__content > .box-external-video:last-child:remove()
+lenta.ru##.topic-footer > .box-external-video:remove()
 player.twitch.tv##.ubo-overlay > .player-ad-notice
 dynamo.kiev.ua##.video-scroll:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
