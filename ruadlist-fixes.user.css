@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250702.2258
+@version        0.20250704.1020
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5340,9 +5340,7 @@
     }
     #modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"]), 
     #top > div[id][style^="height: 210px"], 
-    .app__page > div[class*="-container_"]:not([class*="media"]):not([class*="content"]):first-child, 
     .desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child, 
-    .media-post-page > div[class*="-container_"]:not([class*="media"]):first-child, 
     .page-content > div[id]:not(#header-info-bg):empty, .top-banner-container, 
     a[href^="https://kinopoisk.ru/special/"][href*="utm_campaign="], 
     aside.dialog, div[class*="__AMNhR styles_"], 
@@ -5362,6 +5360,8 @@
     div[class^="styles_footerContainer__"] {
         max-width: 100% !important
     }
+    .app__page > div:not([class*="media"]):not([class*="content"]):first-child, 
+    .media-post-page > div:not([class*="media"]):first-child, 
     div[class*="kinopoisk-media-container_pending"], 
     div[class*="styles_baseContainer"] > div[class]:first-child, 
     div[class*="styles_baseContainer"] > div[class]:first-child > div[class]:first-child, 
