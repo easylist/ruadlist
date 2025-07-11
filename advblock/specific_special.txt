@@ -593,16 +593,18 @@ mirtesen.ru##[id^="unit_"]
 !
 ! зеркала MySeria.NET https://vk.com/myserianet
 ! частные
-fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
-fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
-fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
+fanserial.*,fanserial.сс,myfanserial.net##.article-aside-promo
+fanserial.*,fanserial.сс,myfanserial.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+fanserial.*,fanserial.сс,myfanserial.net##.flex-promo-series > .right-col
+fanserial.*,fanserial.сс,myfanserial.net##[itemtype*="://schema.org/TVEpisode"] [data-dlebid]
 ! общие
-##.article-aside-promo a[href][target="_blank"]
+##.article-aside-promo a[href*="webcash&"]
 ##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
-##.flex-promo-series > .right-col a[href][target="_blank"]
+##.flex-promo-series > .right-col
+##[itemtype*="://schema.org/TVEpisode"] [data-dlebid]
 ! запросы
-/player/fan.xml$domain=fanserial.fun|fanserial.pw|fanserial.tv|fanserialstv.net
-@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserial.pw|fanserial.tv|fanserialstv.net
+/player/fan.xml$domain=fanserial.сс|myfanserial.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.cc|myfanserial.net
 !
 ! Одноклассники
 ok.ru###hook_Block_AsideColumn img:first-child ~ div:not(#hook_Block_CompactFooter)
