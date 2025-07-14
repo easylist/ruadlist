@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250712.2339
+@version        0.20250714.918
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2661,6 +2661,12 @@
 }
 
 @-moz-document domain("itc.ua") {
+    body.age-popup-active > .age-popup-overlay {
+        display: none !important
+    }
+    body.age-popup-active {
+        overflow: unset !important
+    }
     a[href*="://rdr.fmcgsd.net/in/offer/"], a[href*="://telemart.ua/"], 
     a[href*="utm_"][target="_blank"], a[href^="https://ek.ua/ua/"] {
         pointer-events: none !important;
