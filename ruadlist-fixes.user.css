@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250714.918
+@version        0.20250715.2205
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -963,6 +963,7 @@
   domain("ladys.media"),
   domain("moskva.fm"),
   domain("newstudio.tv"),
+  domain("nnm-club.me"),
   domain("nnmclub.ro"),
   domain("nnmclub.to"),
   domain("pay-day.ru"),
@@ -1178,24 +1179,6 @@
     }
     .bg-top-menu {
         top: 0 !important
-    }
-}
-
-@-moz-document domain("bzrus.pro") {
-    [id^="oframeplayer-"] {
-        background-color: transparent !important
-    }
-    pjsdiv[style*="blur"], video {
-        filter: none !important
-    }
-    .player-preview {
-        filter: none !important;
-        opacity: unset !important;
-        transform: none !important;
-        padding: 1px !important
-    }
-    [id^="oframeplayer-"] > pjsdiv[style*="scaleX(1.1)"] {
-        transform: none !important
     }
 }
 
@@ -3702,6 +3685,7 @@
 }
 
 @-moz-document
+  domain("nnm-club.me"),
   domain("nnmclub.ro"),
   domain("nnmclub.to") {
     body {
