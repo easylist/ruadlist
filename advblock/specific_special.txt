@@ -593,18 +593,18 @@ mirtesen.ru##[id^="unit_"]
 !
 ! зеркала MySeria.NET https://vk.com/myserianet
 ! частные
-fanserial.*,fanserial.сс,myfanserial.net##.article-aside-promo
-fanserial.*,fanserial.сс,myfanserial.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
-fanserial.*,fanserial.сс,myfanserial.net##.flex-promo-series > .right-col
-fanserial.*,fanserial.сс,myfanserial.net##[itemtype*="://schema.org/TVEpisode"] [data-dlebid]
+fanserial.*,fanserial.сс,myfanserial.net,1fanserials.ru##.article-aside-promo
+fanserial.*,fanserial.сс,myfanserial.net,1fanserials.ru##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+fanserial.*,fanserial.сс,myfanserial.net,1fanserials.ru##.flex-promo-series > .right-col
+fanserial.*,fanserial.сс,myfanserial.net,1fanserials.ru##[itemtype*="://schema.org/TVEpisode"] [data-dlebid]
 ! общие
 ##.article-aside-promo a[href*="webcash&"]
 ##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
 ##.flex-promo-series > .right-col
 ##[itemtype*="://schema.org/TVEpisode"] [data-dlebid]
 ! запросы
-/player/fan.xml$domain=fanserial.сс|myfanserial.net
-@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.cc|myfanserial.net
+/player/fan.xml$domain=1fanserials.ru|fanserial.сс|myfanserial.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=1fanserials.ru|fanserial.cc|myfanserial.net
 !
 ! Одноклассники
 ok.ru###hook_Block_AsideColumn img:first-child ~ div:not(#hook_Block_CompactFooter)
