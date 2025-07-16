@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250715.2205
+@version        0.20250716.1907
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4581,6 +4581,9 @@
     }
     #branding-layout:not(#id), body.img-bg {
         padding-top: 0 !important
+    }
+    body > div[id][style="padding-top: 306px; margin-top: 0px;"] {
+        padding-top: 96px !important
     }
     #branding-layout > * > * {
         pointer-events: auto !important
