@@ -1064,6 +1064,7 @@ sports.ru###media-promo-mount-point a[href*="://sirena.world/"]
 sports.ru###top-ad
 sports.ru###top-banner-place
 sports.ru##.ad
+sports.ru##.branding-ad-link
 sports.ru##.columns__alt-column .frame
 sports.ru##.comment-ads
 sports.ru##.comments-list__ad-item
@@ -1097,6 +1098,7 @@ sports.ru#?#.recommendations__list > .recommendations__item:-abp-has([href*="pro
 sports.ru##.record-widget__bookmaker
 sports.ru##.rightPart > .mB20
 sports.ru#?#.rightPart > div:-abp-contains(Реклама 18+)
+sports.ru##.sb-linked-image
 sports.ru##.short-news > [data-content-name]
 sports.ru##.short-news > br
 sports.ru#?#.short-news > p:-abp-has(> .advert_material)
@@ -1144,20 +1146,14 @@ sports.ru##div[data-control-noinit="Common.BetsTabs"]
 sports.ru##div[data-control="Common.AutoInit"]
 sports.ru##div[data-control^="Common.Bets"]
 tribuna.com##div[data-test="bookie-widget"]
-sports.ru##img[src*="s5o.ru/source/_desktop/aliens/"]
 sports.ru##p > a[rel="nofollow"] > img[height][width]
 sports.ru#?#p:-abp-has(> a[href]:-abp-contains(М.Видео))
 tribuna.com##span[class^="_comments__loader"][class*="_spinner_"]
 sports.ru##style:first-child ~ [class^="gift__"]
-||dumpster.cdn.sports.ru/d/0d/0a7f418ea4ce61f1070bb186f88c0.$image
-||s5o.ru/source/_desktop/aliens/$~image
-||s5o.ru/source/_desktop/assets/00*.jpg
-||s5o.ru/source/_desktop/build/banners/
-||s5o.ru/source/special/
-||senoval.sports.ru/cross-recommender/
-||senoval.sports.ru/snatch-checker/
-||sports.ru/css/promo.
-||sports.ru/desktop/special/*-slider/
+||dumpster.cdn.sports.ru/*.webp|$image
+||s5o.ru/build/_desktop/split_testing_init.js
+||senoval.cdn.sports.ru/cross-recommender/
+||senoval.cdn.sports.ru/s-presence/sblock-presence.min.js
 ||sports.ru^*/banners/
 ||taboola.com^$domain=sports.ru|tribuna.com
 ! обфускация
