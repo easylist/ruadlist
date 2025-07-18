@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250717.1251
+@version        0.20250718.1633
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3232,8 +3232,9 @@
     body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"], 
     body:not(.js-module) .searchContainer ~ div > a.dmb, 
     div[slot="main-column"] > .header, 
-    div[slot="main-column"] > .header ~ .swiper, main#grid .promo-news, 
-    main#grid .tabs__settings, 
+    div[slot="main-column"] > .header ~ .swiper, 
+    html[style*="-tgbv"] > body[style*="position: fixed;"] > div[class=""][style=""] > .modal, 
+    main#grid .promo-news, main#grid .tabs__settings, 
     main#grid > .grid-middle ~ div:not([class]):not([id]) {
         display: none !important
     }
@@ -3300,7 +3301,8 @@
         pointer-events: none !important;
         opacity: 0 !important
     }
-    .tabs-content > :first-child > a::after {
+    .tabs-content > :first-child > a::after, 
+    html[style*="-tgbv"] > body[style*="position: fixed;"] {
         position: unset !important
     }
     .grid__header .ph-modal-projects-overlay {
