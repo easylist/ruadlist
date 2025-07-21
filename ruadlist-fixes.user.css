@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250718.1633
+@version        0.20250721.1330
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -617,15 +617,6 @@
     }
     .need-friends {
         margin-top: 125px !important
-    }
-}
-
-@-moz-document domain("animecos.ru") {
-    .headb {
-        height: auto !important
-    }
-    .wrap {
-        margin-top: unset !important
     }
 }
 
@@ -1935,6 +1926,12 @@
   domain("filmix.tech"),
   domain("filmix.zone") {
     .main-wrapper, .page-wrapper {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("filmix.day") {
+    .wrap {
         margin-top: 0 !important
     }
 }
@@ -4800,15 +4797,6 @@
 @-moz-document domain("torent-igruha.com") {
     body > .header-menu-bg {
         margin-bottom: 0 !important
-    }
-}
-
-@-moz-document domain("tornado.3dn.ru") {
-    .wrap {
-        cursor: default !important
-    }
-    .wraps {
-        margin-top: 0 !important
     }
 }
 
