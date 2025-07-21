@@ -1404,7 +1404,7 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 4pda.*##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):has(> [class] a[href][target="_blank"]):style(display: none !important)
 4pda.*##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):has(> [class]:empty):style(display: none !important)
 4pda.*##html[style] > body .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(-n+3):style(display: none !important)
-4pda.*##html[style] > body .advanced-area .post[itemid]:remove-class(/^wide-\d/)
+4pda.*##html[style] > body .advanced-area .post[itemid][class*="wide"]:remove-class(/^wide-\d/)
 ! различные рекламные ссылки, в основном в брендированных материалах
 4pda.*##.article > div[style^="background-color:"]:has(> span + a[id][href][target="_blank"]):style(display: none !important)
 4pda.*##.infinix-nav:style(display: none !important)
