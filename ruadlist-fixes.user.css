@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250721.1330
+@version        0.20250722.1528
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1645,14 +1645,14 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #ad-feed, .adv-ecom, .news-page-layout__content > div[class*="position"], 
+    #ad-feed, .adv-ecom, .news-page [class$="__rubricator"] + div[class*=" "], 
+    .news-page-layout__content > div[class*="position"], 
     .news-page-layout__rubricator ~ [id], 
     .news-page-layout__rubricator ~ div:not(:nth-last-child(-n+2)), 
     .news-rubric-desktop__adv-column, 
     .news-rubric-desktop__news > section > div > div[id], 
-    .news-secondary-layout-column__secondary div[id], 
-    .news-story-page__app .news-page-layout__rubricator + div[class*=" "], 
-    [class*="CardRtb"], [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
+    .news-secondary-layout-column__secondary div[id], [class*="CardRtb"], 
+    [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], [class*="withStickyAdOnArticle"], 
     [class*="yandex-direct"], 
     [class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"], 
@@ -1664,7 +1664,7 @@
     div[class*="adSplitEmbed"], div[class*="bannerMain"], 
     div[class*="dzen-"][class*="-banner-"], div[class*="dzenProBanner"], 
     div[class*="multiEmbedMode"], 
-    div[class*="videoSite"] [aria-label] > div[id], 
+    div[class*="video-site"] [aria-label] > div[id], 
     div[class^="news-site--"] > section ~ [id], div[id$="-rtb"], 
     div[id*="splashscreen"], div[id^="ad-"][class*=" news-"], 
     div[id^="article-showcase-"], div[style*="important"] div[class*="__main"] {

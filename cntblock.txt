@@ -1260,6 +1260,7 @@ dzen.*##[itemtype="https://www.schema.org/Article"] > div > div[id]:style(displa
 dzen.*##article[class*="_zenad"]:style(display: none !important)
 dzen.*##div:matches-attr(/[a-z0-9]/=/media-banner/):style(display: none !important)
 dzen.*##div[aria-label*="екл"][aria-label*="мн"]:style(display: none !important)
+dzen.*##div[class*="-place"][class*="_root"]:style(display: none !important)
 dzen.*##div[class*="-placeholder_"]:style(display: none !important)
 dzen.*##div[class*="_pos_index-"]:style(display: none !important)
 dzen.*##div[class*="linkBro-"]:style(display: none !important)
