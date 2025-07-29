@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250728.1805
+@version        0.20250729.1238
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1694,6 +1694,12 @@
   domain("sportsdzen.ru") {
     div[class^="news-site-"][class*="skeleton"] {
         background-color: transparent !important
+    }
+    .news-media-block__preview {
+        cursor: auto !important
+    }
+    .news-media-block__preview-fold-count, .news-media-block__preview-play {
+        display: none !important
     }
 }
 
