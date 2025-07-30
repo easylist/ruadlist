@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250729.1238
+@version        0.20250730.1110
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3566,15 +3566,9 @@
     }
 }
 
-@-moz-document domain("naruto-base.tv") {
-    body > [onclick], body > p {
-        display: none !important
-    }
-    .is--forum {
+@-moz-document domain("naruto-base.su") {
+    body > #fll {
         margin-top: 0 !important
-    }
-    body > div[id]:not([class]) {
-        margin-top: auto !important
     }
 }
 
