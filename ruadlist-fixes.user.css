@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250803.1311
+@version        0.20250804.2230
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3036,7 +3036,8 @@
   domain("shakko.ru"),
   domain("shiro-kino.ru"),
   domain("vadimrazumov.ru") {
-    .mdspost > div[class], header > div[class] {
+    .mdspost > div[class], .pagewide-wrapper, .s-layout > div[class], 
+    header > div[class] {
         min-height: 0 !important
     }
 }
@@ -3092,12 +3093,6 @@
     }
     .allpage .currency a {
         pointer-events: none !important
-    }
-}
-
-@-moz-document domain("livejournal.com") {
-    .s-layout > div[class] {
-        min-height: 0 !important
     }
 }
 
