@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250806.1740
+@version        0.20250806.1917
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -755,9 +755,7 @@
     }
 }
 
-@-moz-document
-  domain("anitokyo.org"),
-  domain("anitokyo.tv") {
+@-moz-document domain("anitokyo.tv") {
     .topside::after, .topside::before {
         display: none !important
     }
