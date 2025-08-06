@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250804.2230
+@version        0.20250805.1435
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -274,41 +274,8 @@
     }
 }
 
-@-moz-document domain("aces.gg") {
-    body {
-        background: black !important;
-        cursor: default
-    }
-    #alert > * {
-        pointer-events: auto
-    }
-    #alert {
-        pointer-events: none
-    }
-}
-
-@-moz-document domain("adme.media") {
-    body.ReactModal__Body--open > div[style^="z-index: 999; position: absolute;"] {
-        display: none !important
-    }
-    body.ReactModal__Body--open {
-        overflow: auto !important
-    }
-}
-
 @-moz-document
-  domain("afisha.yandex.by"),
-  domain("afisha.yandex.kz"),
-  domain("afisha.yandex.ru"),
-  domain("afisha.yandex.uz") {
-    div[class$="-banner"], div[data-bem*="height"][data-bem*="R-A-"], 
-    div[id][style="display: block; position: static; opacity: 1;"], 
-    div[style^="width:100%;height:2"][style$="px;display:block"] {
-        display: none !important
-    }
-}
-
-@-moz-document
+  domain("ac"),
   domain("ag"),
   domain("biz"),
   domain("buzz"),
@@ -345,6 +312,40 @@
     }
     body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3) {
         width: unset !important
+    }
+}
+
+@-moz-document domain("aces.gg") {
+    body {
+        background: black !important;
+        cursor: default
+    }
+    #alert > * {
+        pointer-events: auto
+    }
+    #alert {
+        pointer-events: none
+    }
+}
+
+@-moz-document domain("adme.media") {
+    body.ReactModal__Body--open > div[style^="z-index: 999; position: absolute;"] {
+        display: none !important
+    }
+    body.ReactModal__Body--open {
+        overflow: auto !important
+    }
+}
+
+@-moz-document
+  domain("afisha.yandex.by"),
+  domain("afisha.yandex.kz"),
+  domain("afisha.yandex.ru"),
+  domain("afisha.yandex.uz") {
+    div[class$="-banner"], div[data-bem*="height"][data-bem*="R-A-"], 
+    div[id][style="display: block; position: static; opacity: 1;"], 
+    div[style^="width:100%;height:2"][style$="px;display:block"] {
+        display: none !important
     }
 }
 
