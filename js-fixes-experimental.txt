@@ -494,8 +494,8 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 /(aniqit|kodik)./$subdocument,removeparam=geoblock
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
+dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
-dzen.ru##:matches-path(/a/) [data-appid] [style^="max-height:"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
 dzen.ru##:matches-path(/articles) div:has(> article > div > [class*="image"]:empty)
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
