@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250806.1917
+@version        0.20250809.1526
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2393,6 +2393,12 @@
     }
 }
 
+@-moz-document domain("hd.kinopoisk.ru") {
+    .ReactModalPortal > div[class*="styles_fixed_"] {
+        display: none !important
+    }
+}
+
 @-moz-document domain("hdkinomir.cc") {
     #wrapper > .menu {
         margin-top: auto !important
@@ -2850,7 +2856,7 @@
 }
 
 @-moz-document domain("kinopoisk.ru") {
-    div[class^="styles_adBlockWarningRoot"] {
+    div[class*="styles_adBlockWarningRoot"] {
         display: none !important
     }
 }
