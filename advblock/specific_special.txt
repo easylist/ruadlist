@@ -626,11 +626,12 @@ ok.ru###rightColumn[data-mouse-wheel]
 ok.ru##.dialogWrapperBanner
 ok.ru##.exit-popup
 ok.ru#?#.feed-list > .feed-w:-abp-has(> [class^="feed"] > .feed-header [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
-ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"][class*="label"]:-abp-contains(Реклама))
+ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"][class*="label"]:-abp-contains(/реклама/i))
 ok.ru#?#.feed-list > .feed-w:-abp-has(button[class*="advert-badge"])
 ok.ru#?#.feed-list > .feed-w:-abp-has(dzen-content)
 ok.ru##.forthTopAdv
 ok.ru##.html5-vpl_oklive-banner
+ok.ru##[adchoicesize]
 ok.ru#?#[data-logger="SimpleLogger"]:-abp-has([href^="https://dzen.ru/"])
 ok.ru#?#[data-logger="SimpleLogger"]:-abp-has(dzen-content)
 ok.ru#?#div:-abp-has(> #hook_Block_CompactFooter) > div:not(#hook_Block_CompactFooter)
