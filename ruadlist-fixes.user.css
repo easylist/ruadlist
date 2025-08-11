@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250811.1210
+@version        0.20250811.2135
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1323,7 +1323,7 @@
     .popup[id*="-results-banner"] {
         display: none !important
     }
-    .blocked, .blocked .text, .locked .example {
+    .blocked, .blocked .text, [class*="locked"] .example {
         filter: none !important;
         -webkit-filter: none !important
     }
