@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250809.1551
+@version        0.20250811.1210
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3838,6 +3838,17 @@
 @-moz-document domain("patrioty.org.ua") {
     footer {
         margin: 0 !important
+    }
+}
+
+@-moz-document
+  domain("pb.wtf"),
+  domain("pirat.one"),
+  domain("piratbit.fun"),
+  domain("piratbit.org"),
+  domain("piratbit.top") {
+    div[class^="raleas-navbar"] .ad + .ad ~ .all_it {
+        left: -206px !important
     }
 }
 
