@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250811.2135
+@version        0.20250812.1741
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3499,19 +3499,6 @@
 @-moz-document domain("movieshok.ru") {
     .wrapp_content {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("music.yandex.by"),
-  domain("music.yandex.kz"),
-  domain("music.yandex.ru"),
-  domain("music.yandex.uz") {
-    .page-root > .d-overhead, div[class*="sidebar"] .no-ads {
-        display: none !important
-    }
-    body.no-scroll {
-        overflow: visible !important
     }
 }
 
