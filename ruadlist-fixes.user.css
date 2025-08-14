@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250814.1208
+@version        0.20250814.1420
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5526,7 +5526,7 @@
     .sidebar-container div[class^="banner-placeholder"], 
     .stack [class*="sticky"][class*="banner"], 
     .stack [id*="sticky"][id*="banner"], 
-    .stack div[class*="modal"][class*="-R-A"], .turbo-advert__loader, 
+    .stack div[class*="modal"][class*="-R-A"], 
     a[href^="/maps/"][href*="/tinkoff_has_offer"], 
     body > .popup[data-bem*="https://yabs.yandex.ru/count/"], 
     body > .route-tip-view, div[aria-label="Реклама"], 
@@ -5547,16 +5547,6 @@
     }
     .suggest2_align_center[data-bem*="weather_"] {
         max-width: 100% !important
-    }
-    body[class*="exp_ym-referrer-original-url"] div[class*="_type_"], 
-    body[class*="exp_ym-referrer-original-url"] div[class*="rect"][id][data-name] {
-        min-height: 0 !important;
-        height: unset !important
-    }
-    body[class*="exp_ym-referrer-original-url"] div[class*="turbo-"][class*="load-error"] {
-        min-height: 0 !important;
-        margin-top: unset !important;
-        margin-bottom: unset !important
     }
     .b-page {
         padding-top: 0 !important

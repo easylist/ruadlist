@@ -1392,12 +1392,12 @@ realty.ya.ru##div[class^="OfferCard__stickyAd"]
 realty.ya.ru##li[class*="__list-item_type_ad"]
 realty.ya.ru##li[class*="__list-item_type_promo"]
 ! Яндекс.Турбо
-yandex.ru##.custom-block > .ext-embed
+yandex.ru#?#.mg-page-layout-item_pos_none:-abp-has(.turbo-advert)
+yandex.ru##.turbo-advert__loader
+yandex.ru##.unit_rect.advert_type_horizontal
 yandex.ru#?#div[class$="_visible"]:-abp-has([class$="icon"] ~ [class]:-abp-contains(Рекламы нет))
 yandex.ru##div[id][data-log-node] > div:empty ~ i > [class] > .loader__dots
 yandex.ru##div[id][data-log-node] > div:empty ~ i > [class] > .loader__text
-||yastatic.net/*/turbo-static/embed-sandbox/*lentainform.com
-||yastatic.net/*/turbo-static/embed-sandbox/*smi2.ru
 ! Яндекс.Погода
 yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.forecast-details > .card:-abp-has(> [class*="adv"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.weather-maps__ad
