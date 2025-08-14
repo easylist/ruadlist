@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250813.1657
+@version        0.20250814.1208
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5323,9 +5323,9 @@
     .page-content > div[id]:not(#header-info-bg):empty, .top-banner-container, 
     .underheader-superbanner-wrapper, 
     a[href^="https://kinopoisk.ru/special/"][href*="utm_campaign="], 
-    aside.dialog, div[class*="__AMNhR styles_"], 
-    div[class^="styles_themeTopBanner"], div[class^="toaster-container"], 
-    div[data-type="teaserspec"], div[id*="_superbanner_"] {
+    aside.dialog, div[class*="__EPaSo"], div[class^="styles_themeTopBanner"], 
+    div[class^="toaster-container"], div[data-type="teaserspec"], 
+    div[id*="_superbanner_"] {
         display: none !important
     }
     .page-content > #header-info-bg + div[id]:not([class]), 
@@ -5340,6 +5340,7 @@
     div[class^="styles_footerContainer__"] {
         max-width: 100% !important
     }
+    #__next > div[class^="styles_root__"]:first-of-type > div[class^="styles_root__"]:first-child + div > div:first-child, 
     .app__page > div:not([class*="media"]):not([class*="content"]):first-child, 
     .media-post-page > div:not([class*="media"]):first-child, 
     div[class*="kinopoisk-media-container_pending"], 
