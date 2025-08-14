@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250814.1612
+@version        0.20250814.2232
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1966,6 +1966,9 @@
 @-moz-document domain("fishki.net") {
     #container {
         cursor: auto !important
+    }
+    [id^="videoplayer_"][aria-label="Video Player"] {
+        display: block !important
     }
 }
 
