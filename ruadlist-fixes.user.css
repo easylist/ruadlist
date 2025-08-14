@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250814.1420
+@version        0.20250814.1612
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -852,6 +852,12 @@
     }
     .lenta-wrap > .lenta {
         position: relative !important
+    }
+}
+
+@-moz-document domain("ati.su") {
+    body > div[id*="_pr_"] {
+        display: none !important
     }
 }
 
@@ -4844,12 +4850,6 @@
     html[prefix] > body {
         background-color: #202030 !important;
         background-image: none !important
-    }
-}
-
-@-moz-document domain("trucks.ati.su") {
-    #root {
-        min-height: 0 !important
     }
 }
 
