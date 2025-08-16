@@ -521,6 +521,9 @@ love.mail.ru##.TopBannerSlot
 love.mail.ru##.adv-contacts
 love.mail.ru##.banner_left
 love.mail.ru##.link-ad
+! VK Play
+vkplay.ru##.aside__banner
+vkplay.ru##div[class*="ArtBannerSkeleton"]
 !
 ! Блокировка ресурсов в основном на самом mail.ru
 //r.mail.ru/b$subdocument
@@ -528,6 +531,7 @@ love.mail.ru##.link-ad
 ||1l-hit.mail.ru^
 ||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru
 ||an.mail.ru/count/$domain=~e.mail.ru|~o2.mail.ru
+||api.vkplay.ru/*/banner_right/
 ||banners.mail.ru^$third-party
 ||bs.mail.ru^$image,domain=mail.ru
 ||help.mail.ru/mail/faq/adblock$popup,~third-party
