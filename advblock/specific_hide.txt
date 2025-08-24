@@ -2274,6 +2274,7 @@ drive2.com,drive2.ru#?#.c-header:-abp-contains(/Ads|Реклама/)
 telegraf.com.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
 delo.ua,dsnews.ua,focus.ua##.c-r
 5-tv.ru##.cFadeDark
+nashamama.com#?#.cN-linkList:-abp-has(> h3:only-child)
 tomat-pomidor.com##.cPost + script + center
 sravni.ru##.calculator-branded-button
 gorod24.online##.canshow
@@ -5585,7 +5586,6 @@ pravda-tv.ru##[id^="warta_ads-"]
 guitarplayer.ru##[id^="ya_direct_"]
 radidomapro.ru##[id^="zone_pub"]
 sm.news##[itemprop="articleBody"] > [id][class]:empty
-nashamama.com#?#[itemprop="articleBody"] > p:-abp-contains(/ТЬСЯ ТАКОЖ/i)
 fedpress.ru##[itemtype*="://schema.org/NewsArticle"] .article-box + div[style="padding: 10px"]
 iguides.ru##[itemtype="http://schema.org/Article"] > .i-v-list-hr + .row > div[class^='col-']:first-child
 agri-gator.com.ua,itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,rusfootball.info,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
@@ -5612,7 +5612,6 @@ allboxing.ru##[onmouseenter="onClickPbButton()"]
 penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
 radiokot.ru##[src*="//radiokot.ru/adv/"]
-nashamama.com##[src*="//rutube.ru/play/embed/"]
 ozersk74.ru##[src*="/banner"]
 vprognoze.ru##[src*="/banners/"]
 informburo.kz##[src*="/embed/SportsBetting"]
@@ -7702,7 +7701,6 @@ news.sportbox.ru##div[style="padding: 10px 0 38px 30px;"]
 tv-fresh.org##div[style="position: relative;display: block;width: 100%;height: 90px;margin-top: 10px;"]
 alltor.me##div[style="position:absolute; top:65px; left:520px;"]
 photofacefun.com##div[style="position:absolute;width:100%;text-align:center;height:90px;top:10px;left:0"]
-nashamama.com##div[style="position:relative; width:600px; height:350px"]
 referatwork.ru##div[style="rftk"]
 omskregion.info##div[style="text-align: center; margin: -18px 0 25px; "]
 pcnews.ru##div[style="text-align: center; margin: auto;"] > a[target="_blank"]
@@ -8106,6 +8104,7 @@ guzei.com##object[width="200"][height="100"]
 y-games.ru##p > .ContentTitle[style="height: 20px;"]
 y-games.ru##p > .ContentTitle[style="height: 20px;"] + .ContentText
 ppl.nnov.ru##p > a[href][target="_blank"]:not([href*="nnov.ru"]) > img[src*="/bannery/"]
+nashamama.com#?#p > b:-abp-contains(каво також:)
 skmash.ru##p > script[src*="wmrfast.com"] ~ *
 benzin-price.ru#?#p > strong:-abp-contains(реклама)
 onfoto.ru##p > table[cellspacing="5"][cellpadding="0"][width="100%"] > tbody > tr > td[width="50%"][style="border: 1px solid #000;"]
