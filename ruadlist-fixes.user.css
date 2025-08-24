@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250816.1155
+@version        0.20250824.2352
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2395,7 +2395,7 @@
 }
 
 @-moz-document domain("hardwareluxx.ru") {
-    [href^="https://ya.cc/"] {
+    [href*="ya"][href*="cc"][target="_blank"] {
         pointer-events: none !important;
         color: inherit !important
     }
@@ -5470,7 +5470,7 @@
 
 @-moz-document domain("ya.ru") {
     .i-mini-bem[style], .market-feed, .reasoning-section, [id*="feed"][id*="_"], 
-    [id^="rythm-"], html[class*="morda"] aside ~ div[style], 
+    [id^="ryt"][id*="fe"], html[class*="_informers"] aside ~ div[style], 
     html[class*="morda"] main > [data-hydration-id]:nth-child(-n+2) {
         display: none !important
     }
@@ -5485,7 +5485,8 @@
   domain("yandex.kz"),
   domain("yandex.ru"),
   domain("yandex.uz") {
-    #rsya-guarantee, .DirectInline, .DirectSnippet, .SearchPageGrid-Item_direct, 
+    #rsya-guarantee, .AdvRsyaCrossPage, .DirectInline, .DirectSnippet, 
+    .SearchPageGrid-Item_direct, 
     .serp.main__carousel:not([data-bem*="collectionId"]), 
     [data-vnl*="rsya_guarantee"], div[class*="Images"] .SimpleSkeleton, 
     div[class*="Images"] div[class*="-Card_bottomAdv"], 
