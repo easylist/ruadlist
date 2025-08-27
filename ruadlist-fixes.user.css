@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250824.2352
+@version        0.20250827.2259
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -263,11 +263,14 @@
 }
 
 @-moz-document domain("abw.by") {
-    .cookie-modal {
+    .cookie-modal, body.stop-scroll > div[class^="_overlay_"] {
         display: none !important
     }
     body.stop-scroll {
         position: relative !important
+    }
+    .application {
+        top: 0 !important
     }
     .app-branding {
         transform: none !important
