@@ -1260,7 +1260,6 @@ ukr.net##.lazy-load-banner
 1901.selcdn.ru##.topFaceGuest
 !
 ! Yandex (Яndex)
-/feed?feed_geo=$domain=ya.ru
 /portal/ntp/banner?$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@://ya.r*/search$generichide
 @@://yandex.*/safe/win/$generichide
@@ -1269,8 +1268,9 @@ ukr.net##.lazy-load-banner
 @@||yandex.ru/ads/system/adsdk.js|$script,domain=yandex.ru
 market.yandex.ru,market.yandex.*##.layout_type_search.headline__footer
 ya.ru##.i-mini-bem[class*="banner"]
-ya.ru##[aria-label="Информеры"] ~ [class]
+ya.ru##[aria-label^="Информе"] ~ [class]
 ya.ru##[style*="feed"][style*="min-height:"]
+ya.ru##section[class^="reason"]
 ya.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.layout__banner
@@ -1321,6 +1321,7 @@ yandex.ru,yandex.*#?#.scroller__wrap > div[class^="minibadge"]:-abp-has(.serp-it
 ||kiks.yandex.
 ||static-mon.yandex.net/static/main.js$domain=~auto.ru
 ||strm.yandex.ru/get/$media,domain=yastatic.net
+||ya.ru/portal/*feed_geo=
 ||yabs.yandex.*/show/$third-party
 ||yadi.sk^*direct?
 ||yandex-news.naydex.net^$subdocument
