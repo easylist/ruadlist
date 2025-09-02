@@ -2068,7 +2068,6 @@ fontanka.ru#?#div:-abp-has(> div > [href^="https://news.google.com/publications/
 ampercar.com#?#div:-abp-has(> em > a[href^="https://news.google.com/publications/"])
 tvrain.tv##div[app-widget="usersection"]
 deepl.com##div[aria-describedby="callout-subtitle-chromeExtensionPromo"]
-varlamovru.livejournal.com##div[class$="container__aside"] .j-w-youtube
 ren.tv##div[class*=" InformationBlockBtm_"]
 znanija.com##div[class*=" Tooltip-module__brn-tooltip-box--"][class*="-start-arrow-only--"]
 homecredit.ru##div[class*="BlockCookies-"]
@@ -2798,6 +2797,7 @@ mail.*##.tv-widget > .vk-video {remove:true;}
 mail.yandex.ru,mail.yandex.*###js-mail-layout-content-header > .message-list-banner-portal + div:not([class*="message"]):not(:last-child)
 mail.yandex.ru,mail.yandex.*##div#js-layout-inner[class^="PageLayout-m__main--"][id="js-layout-inner"] ~ div[style*="overscroll-behavior: none;"]
 ||dzen.ru/zen-partner/$third-party
+||livejournal.com/*_*_*_*_*_*_*_*_*_$xmlhttprequest
 ||ok.ru/web-api/*/hobby/getMailRuHobbyFeedScriptSrc$domain=mail.ru
 ||ya.ru/portal/feed?
 ||yandex-realty.naydex.net^$script
