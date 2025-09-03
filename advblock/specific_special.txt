@@ -11,6 +11,7 @@
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*.*.*.*.*.*.*.$script
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*_$script
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*.*.*.*.*.*.*.$script
+||static.dzeninfra.ru/s3/zen-lib/*/news-site-mobile/*_$script
 ||static.dzeninfra.ru/s3/zen-lib/*/news-site/*_$script
 !
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com
@@ -400,6 +401,7 @@ news.mail.ru##body > div > style + div[id]
 dzen.ru##div[class*="news-advert"]
 ! Дзен новости Mail-edition
 dzen.ru##[id*="_R-A-"]
+dzen.ru##[id*="_R-E-"]
 dzen.ru##[id*="_R-I-"]
 sportsdzen.ru##div[class*="-sports-button-ad_"]
 dzen.ru##div[class*="DirectAdvert"]
