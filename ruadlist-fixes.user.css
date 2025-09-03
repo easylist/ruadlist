@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250901.2159
+@version        0.20250903.954
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -593,6 +593,14 @@
   domain("anilibria.tv") {
     .new-header {
         display: none !important
+    }
+}
+
+@-moz-document
+  domain("anime-bit.pro"),
+  domain("anime-bit.su") {
+    body {
+        cursor: auto !important
     }
 }
 
@@ -1674,7 +1682,7 @@
     div[class*="bannerMain"], div[class*="dzen-"][class*="-banner-"], 
     div[class*="dzen-desktop--top-sidebar-desktop-ad__root"], 
     div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
-    div[class*="video-site"] [aria-label] > div[id], 
+    div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="news-site--"] > section ~ [id], div[id$="-rtb"], 
     div[id*="splashscreen"], div[id^="ad-"][class*=" news-"], 
     div[id^="article-showcase-"], div[style*="important"] div[class*="__main"] {
