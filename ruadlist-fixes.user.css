@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250903.954
+@version        0.20250903.1946
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -44,7 +44,6 @@
   domain("56.ru"),
   domain("59.ru"),
   domain("60.ru"),
-  domain("62.ru"),
   domain("63.ru"),
   domain("68.ru"),
   domain("71.ru"),
@@ -73,7 +72,8 @@
   domain("ufa1.ru"),
   domain("v1.ru"),
   domain("vladivostok1.ru"),
-  domain("voronezh1.ru") {
+  domain("voronezh1.ru"),
+  domain("ya62.ru") {
     div[class^="articleBlockViqeo_"][class*="notReady_"] {
         padding-bottom: unset !important
     }
@@ -1661,8 +1661,7 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    #ad-feed, .adv-ecom, .news-page [class$="__rubricator"] + div[class*=" "], 
-    .news-page-layout__content > div[class*="position"], 
+    #ad-feed, .adv-ecom, .news-page-layout__content > div[class*="position"], 
     .news-page-layout__rubricator ~ [id], 
     .news-page-layout__rubricator ~ div:not(:nth-last-child(-n+2)), 
     .news-rubric-desktop__adv-column, 
@@ -1683,6 +1682,7 @@
     div[class*="dzen-desktop--top-sidebar-desktop-ad__root"], 
     div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
     div[class*="watch-page-content"] [aria-label] > div[id], 
+    div[class^="news-"] [class$="__rubricator"] + div[class*=" "], 
     div[class^="news-site--"] > section ~ [id], div[id$="-rtb"], 
     div[id*="splashscreen"], div[id^="ad-"][class*=" news-"], 
     div[id^="article-showcase-"], div[style*="important"] div[class*="__main"] {
