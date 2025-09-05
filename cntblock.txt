@@ -1281,7 +1281,6 @@ mail.yandex.*###js-layout-inner ~ div a[href*="/premium-"]:style(display: none !
 mail.yandex.*###js-mail-layout-content-header > .message-list-banner-portal + div[id]:empty
 mail.yandex.*###js-mail-layout-content-header > div:style(--direct-line-min-height: 0 !important; margin-top: unset !important)
 mail.yandex.*##+js(remove-attr, data-link-id, a, stay)
-mail.yandex.*##.mail-Layout-Content > div:first-child + div div[style="height: 36px !important;"]:style(display: none !important)
 mail.yandex.*##.mail-Page-Body .Popup2 > .Tooltip-Content:has-text(2001—202)
 mail.yandex.*##.qa-LeftColumn-Footer > [href="https://ya.ru"]:style(top: 12px !important; left: 19px !important; height: 36px !important; width: 36px !important; position: fixed !important; z-index: 130 !important; opacity: 0 !important)
 mail.yandex.*##div[class^="MidgetsPanel"]:style(display: none !important)
@@ -1343,10 +1342,10 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 ~games.s3.yandex.net,ya.*,yandex.*##+js(no-xhr-if, yabs.yandex.ru/count/)
 ~mail.yandex.*,~vh.yandex.ru,~yandex.net,yandex.*##+js(no-setTimeout-if, Ya.Rum.getSetting, 15)
 ~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.renderDirect, undefined)
+~mail.yandex.*~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.initPcode, undefined)
 ~vh.yandex.ru,~yandex.net,yandex.*##+js(abort-on-property-read, Ya.loaderVer)
 ~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div:style(display: none !important)
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro:style(display: none !important)
-~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.initPcode, undefined)
 ~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.Rtb, undefined)
 !#if env_mv3
 dzen.ru,ya.ru##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
