@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250903.1946
+@version        0.20250907.1422
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4139,6 +4139,16 @@
 
 @-moz-document
   domain("rbc.ru"),
+  domain("rbcrealty.ru"),
+  domain("sportrbc.ru") {
+    #js_col_left > .l-sticky {
+        position: relative !important;
+        top: unset !important
+    }
+}
+
+@-moz-document
+  domain("rbc.ru"),
   domain("sportrbc.ru") {
     .g-relative > .forecast {
         height: auto !important
@@ -4149,10 +4159,6 @@
     .l-col-100h {
         min-height: 0 !important;
         height: auto !important
-    }
-    #js_col_left > .l-sticky {
-        position: relative !important;
-        top: unset !important
     }
 }
 
