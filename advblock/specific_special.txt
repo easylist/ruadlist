@@ -29,8 +29,10 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportana
 @@||s.zhctrack.net/z|$xmlhttprequest
 @@||s.zmctrack.net/z|$xmlhttprequest
 @@||s.znctrack.net/z|$xmlhttprequest
-@@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com|www.championat.ru
+@@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$script,domain=dtf.ru
+@@||ssp.rambler.ru/capirs_async.js|$script,domain=dtf.ru|www.championat.com|www.championat.ru
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
+@@||yandex.ru/ads/system/context.js|$script,domain=dtf.ru
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||captcha-api.yandex.ru^$domain=drive2.ru
 ||imgfrost.net^$third-party
