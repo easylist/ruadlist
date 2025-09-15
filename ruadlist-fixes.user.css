@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250909.2321
+@version        0.20250915.1155
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2014,6 +2014,10 @@
 @-moz-document domain("forbes.ru") {
     .jnrGz {
         height: calc(var(--vh, 1vh)*100 - 1px) !important
+    }
+    a[href*="?erid="] {
+        pointer-events: none !important;
+        color: inherit !important
     }
 }
 
