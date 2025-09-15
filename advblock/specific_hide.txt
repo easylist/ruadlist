@@ -1570,8 +1570,8 @@ riamo.ru##.article--external
 penzadoctor.ru##.article-banner
 techdigest.ru##.article-banner-side
 www.sport.ru##.article-bottom-block > .hdr2
-lifehacker.ru#?#.article-card-container > .container > .article-card__small-wrapper:-abp-has(a[href*="/topics/shopping/"])
-lifehacker.ru#?#.article-card-container > .container > .article-card__small-wrapper:-abp-has(a[href*="utm_"])
+lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(a[href*="/topics/shopping/"])
+lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(a[href*="utm_"])
 playua.net##.article-comments > .row > div[class] + div[class]
 studopedia.ru##.article-description > noindex
 mmorpg.su##.article-free
@@ -4755,6 +4755,7 @@ telegraf.com.ua##.tgr-ads
 vedomosti.ru##.the-header__top a[href*="?erid="]
 ria.ru#?#.the-in-carousel__item:-abp-has(> [data-has-banner])
 vedomosti.ru##.the-loader
+lifehacker.ru#?#.the-tv__observer:-abp-has(a[href*="/topics/shopping/"])
 shraibikus.com,topdaynews.ru##.theiaStickySidebar
 ukrs.com.ua##.theiaStickySidebar .widget_text
 1news.com.ua#?#.theiaStickySidebar > .text-html:-abp-has(> div > iframe[src="about:blank"])
