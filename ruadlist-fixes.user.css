@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250915.1155
+@version        0.20250917.1258
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5010,6 +5010,12 @@
         pointer-events: none !important;
         padding-top: 0 !important;
         background-image: none !important
+    }
+}
+
+@-moz-document domain("video.matchtv.ru") {
+    .video-js::after {
+        background: none !important
     }
 }
 
