@@ -634,6 +634,8 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
 ||vk.com/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru|sportmail.ru
+||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
+||vk.ru/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru|sportmail.ru
 ||vkvideo.ru/video_ext.php?$removeparam=js_api,domain=rg.ru
 ||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
@@ -809,8 +811,10 @@ e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 vk.com/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
-vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, null)
+vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+vk.ru/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
+vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 vkvideo.ru/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
-vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, null)
+vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
 !#endif
