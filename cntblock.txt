@@ -26,7 +26,6 @@
 @@||api.av.by/offers/*/counter|$xmlhttprequest,domain=av.by
 @@||api.chat.olx.*/api/conversations/counters$xmlhttprequest,domain=olx.kz|olx.ua|olx.uz
 @@||aprtx.com/code/decathlonRU/$script,domain=decathlon.ru
-@@||auto.ru/js/counters/google_conversion_async.js|$domain=auto.ru
 @@||business-gazeta.ru/stat/logo$image,domain=business-gazeta.ru
 @@||chat.goodgame.ru/counter/|$websocket
 @@||cloudfront.net/metrika/watch_ua.js|$script,domain=novayagazeta.ru
@@ -1215,7 +1214,6 @@ rutube.ru##[aria-label="raichuLogoLink"]
 tass.ru##[class^="Footer_liveinternet"]
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-react-rcm-block]
 avtorambler.com,rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container-"])
-auto.*#@#.ImageGalleryFullscreenVertical__ad
 avtorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(json-prune, Blocks)
 avtorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##^script:has-text('getPrefixes')
 avtorambler.*,championat.*,eda.*,gazeta.ru,~id.rambler.ru,lenta.*,letidor.*,~mail.rambler.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(abort-on-stack-trace, Object.prototype.getBaseFingerprint, inlineScript)
@@ -1340,7 +1338,7 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
 ~games.s3.yandex.net,ya.*,yandex.*##+js(no-xhr-if, yabs.yandex.ru/count/)
 ~mail.yandex.*,~vh.yandex.ru,~yandex.net,yandex.*##+js(no-setTimeout-if, Ya.Rum.getSetting, 15)
-~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.initPcode, undefined)
+~mail.yandex.*,~yandex.net,auto.*,ya.*,yandex.*##+js(set-constant, Object.prototype.initPcode, undefined)
 ~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.renderDirect, undefined)
 ~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div:style(display: none !important)
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro:style(display: none !important)
@@ -1373,7 +1371,7 @@ yandex.*##div[id*="page"] div[class*="_banner_"]:style(display: none !important)
 ! Альтернативное решение для старых браузеров
 @@||an.yandex.ru/jserr/1|$domain=dzen.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/mapuid/tnscounter/?from=yan_oo-rtb-direct|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||an.yandex.ru/mapuid/yandex/$image,domain=dzen.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
+@@||an.yandex.ru/mapuid/yandex/$image,domain=auto.ru|dzen.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||an.yandex.ru/meta/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/meta/*target-ref=*pogoda$xmlhttprequest,domain=yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||an.yandex.ru/resource/spacer.gif|$image,domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
@@ -1390,6 +1388,8 @@ yandex.*##div[id*="page"] div[class*="_banner_"]:style(display: none !important)
 @@||yastatic.net/safeframe-bundles/*/host.js|$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 dzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
 ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
+||yastatic.net/partner-code-bundles/$badfilter
+||yastatic.net/partner-code-bundles/$domain=~auto.ru
 !
 ! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)
