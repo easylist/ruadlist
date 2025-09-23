@@ -1818,7 +1818,6 @@ ads.vk.com,regard.ru##[class^="CookieBanner"]
 sber.ru##[class^="Cookies_cookie-warning_"]
 auto.ru##[class^="CreditCardRoot"]
 auto.ru##[class^="DealerCreditForm"]
-auto.ru##[class^="GalleryBestPriceFooter"]
 hromadske.radio##[class^="PatreonBanner"]
 meduza.io##[class^="SaveMeduza"]
 igromania.ru,kanobu.ru##[class^="SubscribeForm_subscribe_"]
@@ -1865,6 +1864,7 @@ adme.media##[data-test-id="install-app"]
 adme.media##[data-test-id="subscription-block"]
 wink.ru##[data-test="cookie"]
 znanija.com##[data-test="footer-social-media-links"]
+auto.ru##[data-testid="ListingItemPromoGoToApp"]
 lk.rt.ru##[data-testid="SnowfallCanvas"]
 online.sberbank.ru##[data-testid="cookie-policy"]
 id.sber.ru##[data-testid="cookie_banner"]
@@ -2126,6 +2126,7 @@ meduza.io##div[class^="GDPRPanel"]
 afisha.ru##div[class^="HeaderAdvert"] a[href*="afisha.ru/"]
 daily.afisha.ru##div[class^="Layout_Layout"] > a > div
 igromania.ru,kanobu.ru##div[class^="LinkingButtonsOfArticle_root__"]
+auto.ru##div[class^="MatchApplicationBanner-"]
 loads.ati.su##div[class^="Media_container"]
 hromadske.radio##div[class^="ModalBanner"]
 rg.ru##div[class^="NewsFeed_adsTop_"] > div
@@ -2785,12 +2786,13 @@ dzen.ru##.zen-page .content div[class*="__bannerMain"]
 /^https?:\/\/dzen\.ru\/[^\s]{2100,}$/$script,domain=dzen.ru
 /^https?:\/\/strm\.yandex\.ru\/get\/[^\s]{1300,}$/$xmlhttprequest,domain=dzen.ru|naydex.net
 @@||ad.mail.ru/adp/*=resplash&$xmlhttprequest,domain=mail.ru
+@@||an.yandex.ru/mapuid/yandex/|$image,domain=auto.ru
 @@||shedevrum.ai^$generichide
 @@||statchecker.yandex.ru/ping|$script,domain=drive2.ru
 @@||static-mon.yandex.net/static/main.js$xmlhttprequest,domain=drive2.ru|shedevrum.ai
 @@||www.drive2.ru^$generichide
-@@||yandex.ru/ads/system/context.js|$script,domain=e.mail.ru|octavius.mail.ru|shedevrum.ai
-@@||yastatic.net/partner-code-bundles/*/*.js|$xmlhttprequest,domain=drive2.ru
+@@||yandex.ru/ads/system/context.js|$script,domain=auto.ru|e.mail.ru|octavius.mail.ru|shedevrum.ai
+@@||yastatic.net/partner-code-bundles/*/*.js|$xmlhttprequest,domain=auto.ru|drive2.ru
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body > :not(div[style*=" -"]) .mailru-visibility-check
 dzen.ru#?#div:-abp-has(> .mg-grid__item_type_card > div[class*="loader_animated"])
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Serp"] div[class$="-Incut"][style^="margin-bottom:"]

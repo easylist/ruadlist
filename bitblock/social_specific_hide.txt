@@ -273,7 +273,6 @@ tele-sport.ru##.-social
 tele-sport.ru##.-social-with-counter
 blog.domclick.ru##.A1lqP
 kaktus.kg,kaktus.media##.Article--tg-block
-auto.ru##.ArticleFooterTelegram
 mail.google.com##.Bu + .Bu.yM + .Bu.y3
 delfi.ee##.C-article-social
 delfi.ee##.C-block-type-social
@@ -291,16 +290,14 @@ quote.ru#?#.MuiGrid-root > footer:-abp-has([aria-label="vk"])
 xsport.ua#?#.MuiStack-root:-abp-has(> p ~ svg)
 iviche.com##.MuiToolbar-root > div ~ div > a[href][rel="noopener noreferrer"]
 sv-scena.ru##.Odnoklassniki
-auto.ru##.Review__shareTitle
 gazetametro.ru##.SHeader__social
-auto.ru,myshows.me##.Share
+myshows.me##.Share
 apteka.ru##.SiteFooter__socials
 sv-scena.ru##.Twitter
 anistar.org,astar.bz,online-star.org,online-stars.org##.VK_com
 sv-scena.ru##.VKontakte
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.VideoViewer-InfoContainer .Viewer-ShareLink
 gazetametro.ru##.WShare
-auto.ru##.YaShareWrapper
 sv-scena.ru##.Youtube
 psychologies.ru##._invite-banner
 lenta.ru##._social-network
@@ -2564,6 +2561,7 @@ aniu.ru##body > a[href*="://vk.com/"]
 forums.rusmedserv.com##body noindex > table[align="center"]
 api.rstprgapipt.com#?#button:-abp-has(> .icon-share)
 speka.media#?#button:-abp-has(> span:-abp-contains(телеграм))
+auto.ru##button[class*="ShareButton"]
 56orb.ru,atas.info,bel.ru,gorod55.ru,inkazan.ru,karelinform.ru,kubanpress.ru,kursdela.biz,mkset.ru,muksun.fm,nashgorod.ru,newizv.ru,newkhakasiya.online,newsnn.ru,newstracker.ru,novostivolgograda.ru,prmira.ru,properm.ru,rosbalt.ru,rostovgazeta.ru,tagilcity.ru,transsibinfo.com,udm-info.ru,vostokmedia.com,zr.media##button[class^="LeftcolSocials"]
 frontend.vh.yandex.ru##button[data-control-name="share"]
 culture.ru##button[title="Поделиться"]
@@ -2642,7 +2640,7 @@ iviche.com#?#div[class]:-abp-has(> p + .react-share__ShareButton)
 sport24.ru#?#div[class]:-abp-has(> span + svg)
 zaycev.net##div[class^="ArticlePageSubscribestyled__SubcribeWrapper-"]
 news.finance.ua##div[class^="ArticleShares"]
-auto.ru##div[class^="CardActions"] > .Share__popup + .Button:not(:last-of-type)
+auto.ru##div[class^="CardActions-"] > .HoveredTooltip__trigger:nth-child(2)
 igromania.ru,kanobu.ru##div[class^="CommonInnerHeader_header_pagetitle_right"] > [class] ~ div
 kanobu.ru##div[class^="Copyright_social_"] > a[target="_blank"]
 mir24.tv##div[class^="FooterTopSection_actions__subscribe"]
@@ -2658,6 +2656,7 @@ hromadske.radio##div[class^="Footer_socials"]
 ctc.ru##div[class^="HeaderVerticalNav_socialLinkSet"]
 hromadske.radio##div[class^="Header_socials"]
 images.rambler.ru##div[class^="ImageBig__share"]
+auto.ru##div[class^="LogbookListingSnippetActions-"] > [class^="ModalMenu-"] > [role="button"]:first-child
 afisha.ru##div[class^="NewsItem_social"]
 rg.ru##div[class^="Share"][class*="Content"]
 my.ua##div[class^="ShareButtons_"]
