@@ -402,6 +402,7 @@ dzen.ru##+js(set-constant, Object.prototype.getPlacement, undefined)
 shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
 dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
+dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
 rbc.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
 vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopFunc)
@@ -512,6 +513,7 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
 dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
+dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 dzen.ru##:matches-path(/articles) div:has(> article > div > [class*="image"]:empty)
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
