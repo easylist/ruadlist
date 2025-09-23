@@ -4,15 +4,12 @@
 !#if ext_abp
 ! запросы
 ! ловушка для обфускации дзена: главная, статьи, новости, погода
-||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
-||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
-||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*.*.*.*.*.*.*.$script
-||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*_$script
-||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*.*.*.*.*.*.*.$script
-||static.dzeninfra.ru/s3/zen-lib/*/news-site-mobile/*_$script
-||static.dzeninfra.ru/s3/zen-lib/*/news-site/*_$script
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*a*a*a*a*a*a*a$script
+||static.dzeninfra.ru/s3/zen-lib/*/news-site-mobile/*a*a*a*a*a*a*a$script
 !
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
