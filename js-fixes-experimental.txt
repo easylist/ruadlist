@@ -511,8 +511,8 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
-dtf.ru##:matches-path(-erid-) .block-special-button
-dtf.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
+dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
+dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
 dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
 dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
