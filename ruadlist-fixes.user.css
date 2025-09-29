@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20250929.1724
+@version        0.20250929.2307
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3108,6 +3108,10 @@
 @-moz-document domain("lifehacker.ru") {
     .recipes-layout__content {
         margin-top: 0 !important
+    }
+    .promo__container {
+        pointer-events: none !important;
+        background: none !important
     }
 }
 
