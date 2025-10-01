@@ -900,6 +900,12 @@ libertycity.net,libertycity.ru##.main_shift:style(height: 100px !important)
 ! ---
 lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
 lifehacker.ru##.recipes-layout__content:style(margin-top: 0 !important)
+! Фикс для плеера VIQEO
+lifehacker.ru##[data-video_status="initial"] .splash-pause
+lifehacker.ru##[data-video_status] .previewContainer:style(z-index: unset !important)
+lifehacker.ru##[data-video_status] .splash-icon_animation_container:style(opacity: unset !important)
+lifehacker.ru##[data-video_status] .splashContainer:style(display: unset !important)
+lifehacker.ru##[data-video_status]:not([data-video_status="initial"]) .splash-play
 ! ---
 lifetambov.ru##.theme-wrapper > .container > div:style(padding-bottom: unset !important)
 ! ---
