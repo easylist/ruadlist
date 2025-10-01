@@ -1392,8 +1392,10 @@ tapochek.net##.lenta_scrollable.poster:style(border: none !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 tapochek.net##.lenta-tooltips-container > .tooltip-container:style(top: 43px !important; position: fixed !important)
 ! ---
-tass.ru##aside > div[class^="NavPanel_nav"]:style(width: unset !important)
-tass.ru##div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"]:style(background: none !important)
+tass.ru##div[class^="LoopChannelPlaceholder_bottom"]:style(background: none !important)
+tass.ru##div[class^="LoopChannelPlaceholder_container"]:style(box-shadow: none !important)
+tass.ru##div[class^="LoopChannel_widget"] > [class^="SimpleCaption_wrapper"]:style(background: none !important)
+tass.ru##div[class^="LoopChannel_wrapper"][role="presentation"]:style(box-shadow: none !important)
 ! ---
 doba.te.ua###popup-root
 doba.te.ua##body.locked:style(overflow:auto !important)

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251001.11
+@version        0.20251001.1750
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3109,12 +3109,25 @@
 }
 
 @-moz-document domain("lifehacker.ru") {
+    [data-video_status="initial"] .splash-pause, 
+    [data-video_status]:not([data-video_status="initial"]) .splash-play {
+        display: none !important
+    }
+    [data-video_status] .splashContainer {
+        display: unset !important
+    }
     .recipes-layout__content {
         margin-top: 0 !important
+    }
+    [data-video_status] .splash-icon_animation_container {
+        opacity: unset !important
     }
     .promo__container {
         pointer-events: none !important;
         background: none !important
+    }
+    [data-video_status] .previewContainer {
+        z-index: unset !important
     }
 }
 
@@ -3851,7 +3864,7 @@
 }
 
 @-moz-document domain("overclockers.ru") {
-    a.over-hiddenlink-html[target="_blank"] {
+    a.over-hiddenlink-html[href*="erid="][target="_blank"] {
         pointer-events: none !important;
         color: inherit !important
     }
@@ -4755,11 +4768,13 @@
 }
 
 @-moz-document domain("tass.ru") {
-    div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"] {
+    div[class^="LoopChannelPlaceholder_bottom"], 
+    div[class^="LoopChannel_widget"] > [class^="SimpleCaption_wrapper"] {
         background: none !important
     }
-    aside > div[class^="NavPanel_nav"] {
-        width: unset !important
+    div[class^="LoopChannelPlaceholder_container"], 
+    div[class^="LoopChannel_wrapper"][role="presentation"] {
+        box-shadow: none !important
     }
 }
 

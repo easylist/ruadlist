@@ -384,7 +384,7 @@ ren.tv,rutube.ru##+js(set-constant, Object.prototype.advert, undefined)
 ivi.ru##+js(set-constant, Object.prototype.advertObject, null)
 igroutka.ru##+js(set-constant, Object.prototype.afg, true)
 kinonews.ru##+js(set-constant, Object.prototype.amp, noopFunc)
-cdnvideo.ru,eda.ru,mania.gcdn.co,tass.ru,vp.rambler.ru,www.rambler.ru##+js(set-constant, Object.prototype.autoPlay, false)
+cdnvideo.ru,eda.ru,mania.gcdn.co,vp.rambler.ru,www.rambler.ru##+js(set-constant, Object.prototype.autoPlay, false)
 afisha.ru##+js(set-constant, Object.prototype.autoPlay, null)
 partnerkin.com##+js(set-constant, Object.prototype.autoPopups, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
@@ -421,7 +421,6 @@ gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,megaresheba.com,m
 razlozhi.ru##+js(set-constant, cadb, false)
 audioportal.su##+js(set-constant, clicks, 2)
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(set-constant, countdownNum, 0)
-~spec.tass.ru,tass.ru##+js(set-constant, frames.innerWidth, {})
 gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 gazeta.ru##+js(set-constant, history.replaceState, noopFunc)
 gazeta.ru##+js(set-constant, isAdFree, noopFunc)
@@ -713,6 +712,14 @@ mail.ru##.grid__header .ph-container:matches-media((max-width: 1280px)):style(he
 mail.ru##.grid__header > .headline:matches-media((max-width: 1280px)):style(height: 40px !important; min-height: 40px !important)
 mail.ru##[slot="main-column"] .news-item:matches-media((max-width: 1280px)):style(line-height: 19px !important)
 mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(height: 20px !important)
+!
+! Tass
+tass.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, onCanPlay)
+tass.ru##+js(addEventListener-defuser, pause, '', elements, video[class*="HLSPlayback_player"])
+tass.ru##+js(set-attr, video[class*="HLSPlayback_player"], controls, true)
+tass.ru##+js(set-constant, Object.prototype.autoPlay, {})
+tass.ru##[class^="LoopChannelPlayer_wrapper_"] > [role="presentation"]
+tass.ru##[class^="LoopChannelPlayer_wrapper_"] [class^="Centered_box_"]
 !
 !#if env_mobile
 mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
