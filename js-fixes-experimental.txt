@@ -177,7 +177,6 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.ondragstart)
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 phys-kids.com##+js(abort-on-property-write, fetch)
-gamemag.ru##+js(abort-on-property-write, keepAdblock)
 searchfloor.org##+js(abort-on-property-write, showHelpProjectModal)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
@@ -487,7 +486,6 @@ ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/prav
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
 dtf.ru,vc.ru##.media > .andropov-video > video:remove-attr(autoplay)
-gamemag.ru##.news-view:has(> .overview > .overview__overview:has-text(Реклама)) .content-text a[href]:style(color: inherit !important; pointer-events: none !important)
 hideip.me#@#.node-promoted
 vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
@@ -826,4 +824,9 @@ vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 vkvideo.ru/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
 vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
+!#endif
+!
+! Mobile only
+!#if env_mobile
+gamemag.ru#@?#.news-item-wrap > .news-item:-abp-has(> span:-abp-contains(Ad))
 !#endif
