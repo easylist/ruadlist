@@ -405,9 +405,9 @@ kinokong.sk##+js(set-constant, Object.prototype.disableSelection, noopFunc)
 dzen.ru,frontend.vh.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 dzen.ru##+js(set-constant, Object.prototype.getPlacement, undefined)
 shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
+dzen.ru##+js(set-constant, Object.prototype.initYaVersion, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
 dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
-dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
 rbc.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
 vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopFunc)
@@ -509,13 +509,13 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
 dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
-dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
+dzen.ru##:matches-path(/a/) [class^="content--"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
-dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
+dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class] ~ div:not([class]):not([id])
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
-dzen.ru##:matches-path(/articles) div:has(> article > div > [class*="image"]:empty)
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
+dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div:matches-attr(/./=/card$/) ~ div[id]
 forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)
 pronpic.org#@#:not(obhod-adblocka)
 @@/fuckadblock.$script,domain=aniboom.one
@@ -541,7 +541,7 @@ online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(bt
 trupornolabs.org#@#a[href*="://pronpic.org/"]
 online-fix.me##a[href*=":2053"]:remove-class(btn)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
-dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/direct|mytarget/))
+dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/))
 click-or-die.ru##article:has(p:has-text(ERID)) a:style(pointer-events: none !important; color: inherit !important)
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
@@ -561,6 +561,8 @@ sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="back
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
+dzen.ru##div:matches-attr(/./=dzenpro-banner)
+dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=bottom-ad)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
