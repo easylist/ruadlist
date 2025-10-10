@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251002.1735
+@version        0.20251010.1443
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1714,7 +1714,7 @@
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], 
     [class*="segment__container"] > div > article[class^="card "] ~ div:last-child, 
-    [class*="yandex-direct"], 
+    [class*="yandex-direct"], [class^="dzen-desktop--main-page-"], 
     [class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"], 
     [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
@@ -1738,7 +1738,7 @@
     body {
         overflow-y: unset !important
     }
-    div[class] > [id] > div[style*="important"] {
+    html[class*="morda"] div[class] > [id] > div[style*="%"] {
         padding-top: unset !important
     }
     .climate-calendar__cell {
