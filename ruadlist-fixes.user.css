@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251010.1443
+@version        0.20251011.28
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3800,6 +3800,12 @@
 @-moz-document domain("ofxme.co") {
     .wrapper > .main-content {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("ogo.ua") {
+    .ast-below-header-bar .site-below-header-wrap {
+        min-height: 0 !important
     }
 }
 
