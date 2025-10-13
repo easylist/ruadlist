@@ -704,6 +704,7 @@ e.mail.ru,octavius.mail.ru##+js(addEventListener-defuser, /click|destroy|mousedo
 e.mail.ru,octavius.mail.ru##+js(href-sanitizer, [data-cke-saved-href^="https://checklink.mail.ru/proxy?"])
 e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, MIMIC_FORCE)
 e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, _runBatch, 100)
+e.mail.ru,octavius.mail.ru##+js(set-attr, .html-fishing a, target, true)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
 e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
 e.mail.ru,octavius.mail.ru##body > div[style*="top:"][style*="position:"][style*="visibility:"] #app-canvas div:style(display: block !important)
