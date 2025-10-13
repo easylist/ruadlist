@@ -42,17 +42,18 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||ritsatv.ru^$~document
 ||websdr.su^$~document,~third-party
 ! howdyho - набор правил для проверки таймаута рецидивов
-@@||yandex.ru/ads/meta/*?target-ref=$xmlhttprequest,domain=howdyho.net|howdyho.pro
-@@||yandex.ru/ads/system/context.js|$script,domain=howdyho.net|howdyho.pro
-@@||yastatic.net/*-bundles/*.js|$script,domain=howdyho.net|howdyho.pro
-howdyho.net,howdyho.pro##.g-ads > header > h2
-howdyho.net,howdyho.pro##.interesting_block_links::before
-howdyho.net,howdyho.pro##div[class^="csr-uniq"]
-howdyho.net,howdyho.pro#@#.g-ads
-howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
+howdyho.net#@#.g-ads
+howdyho.net##.g-ads > header > h2
+howdyho.net##.interesting_block_links::before
+@@||yandex.ru/ads/meta/*?target-ref=$xmlhttprequest,domain=howdyho.net
+@@||yandex.ru/ads/system/context.js|$script,domain=howdyho.net
+@@||yastatic.net/*-bundles/*.js|$script,domain=howdyho.net
+howdyho.net##[data-name="adWrapper"]
+howdyho.net##div[class^="csr-uniq"]
+howdyho.net#@#div[id^="yandex_rtb"]
 ||vk-apps.com/*?type=leadform&d=
-||yandex.$domain=howdyho.net|howdyho.pro
-||yastatic.$domain=howdyho.net|howdyho.pro
+||yandex.$domain=howdyho.net
+||yastatic.$domain=howdyho.net
 !
 cq.*##[class*="grid"] > a:has(.p-item__button-sponsored) {remove:true;}
 flightsim.su###tie-popup-adblock {remove:true;}
