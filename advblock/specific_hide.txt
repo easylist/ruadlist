@@ -7685,7 +7685,7 @@ mastergrad.com##div[onclick*="Кликнул по рекламе"]
 delphimaster.net##div[onclick^="onclickRight"]
 vk.com,vk.ru##div[role="feed"] > article > div:not([class]) > div:only-child
 vk.com,vk.ru##div[role="feed"] > article > div[class]
-vk.com,vk.ru#?#div[role="feed"] > article:-abp-has(> div [aria-label="Реклама в сообществе"])
+vk.com,vk.ru#?#div[role="feed"] > article:-abp-has(> div [class^="AdBlockProtector__noVisible--"])
 mega-tracker.net##div[style$="#CCCCCC;"]
 360.ru##div[style$="250px;"]
 mobiledevice.ru##div[style$="468px;"]
