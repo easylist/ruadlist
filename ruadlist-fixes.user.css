@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251016.1448
+@version        0.20251020.1719
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1634,7 +1634,8 @@
 }
 
 @-moz-document domain("dtf.ru") {
-    .right-sidebar div[style*="banner-height"] *, .rotator *, .rotator--limitless {
+    .rotator *, .rotator--limitless, 
+    [class*="sidebar"] div[style*="banner-height"] * {
         display: none !important
     }
     .rotator {
@@ -1644,7 +1645,7 @@
         pointer-events: none !important;
         background-color: transparent !important;
     }
-    .right-sidebar div[style*="banner-height"] {
+    [class*="sidebar"] div[style*="banner-height"] {
         height: 100px !important;
         margin-top: -120px !important;
         pointer-events: none !important;
