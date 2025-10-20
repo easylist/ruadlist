@@ -347,6 +347,7 @@ svoboda.org##+js(remove-attr, data-autoplay, video)
 myshared.ru##+js(remove-attr, disabled, .uk-modal-footer > button)
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##+js(remove-attr, oncontextmenu, [class], stay)
 stalker-mods.clan.su,stalker-mods.su##+js(remove-attr, oncontextmenu|oncopy|onselectstart)
+author.today##+js(remove-attr, onmousedown|unselectable|onselectstart|oncontextmenu, .noselect, stay)
 mag.relax.by##+js(remove-class, b-global-branding, html)
 motorpage.ru##+js(remove-class, noscroll, body)
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
@@ -495,6 +496,7 @@ inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed 
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
 dtf.ru,vc.ru##.media > .andropov-video > video:remove-attr(autoplay)
 hideip.me#@#.node-promoted
+author.today##.noselect:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
 pikabu.ru##.pub300x250.pub300x250m.pub728x90.text-ad.textAd.textad.textads.text-ads.text-ad-links:style(display: block !important; position: absolute !important; top: -10000px !important; left: -10000px !important)
