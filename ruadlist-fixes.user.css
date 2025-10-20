@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251020.1719
+@version        0.20251020.1932
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1657,6 +1657,9 @@
         pointer-events: none !important;
         background-color: transparent !important
     }
+    .sticky-stack-sidebar__section:not(:only-child) {
+        min-height: 0 !important
+    }
 }
 
 @-moz-document
@@ -2224,7 +2227,8 @@
 @-moz-document
   domain("gamegpu.com"),
   domain("overclockers.ua") {
-    a[href*="://artline.ua/"], a[href*="://bit.ly/"], a[href*="://compx.ua/"], 
+    a[href*="://artline.ua/"], a[href*="://bit.ly/"], 
+    a[href*="://brain.com.ua/"], a[href*="://compx.ua/"], 
     a[href*="://rozetka.com.ua/"], a[href*="://telemart.ua/"] {
         pointer-events: none !important;
         color: inherit !important
