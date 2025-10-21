@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251021.1238
+@version        0.20251021.1833
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1657,9 +1657,6 @@
         pointer-events: none !important;
         background-color: transparent !important
     }
-    .sticky-stack-sidebar__section:not(:only-child) {
-        min-height: 0 !important
-    }
 }
 
 @-moz-document
@@ -1667,6 +1664,9 @@
   domain("vc.ru") {
     html {
         --layout-header-height-large: 60px !important
+    }
+    .sticky-stack-sidebar__section:not(:only-child) {
+        min-height: 0 !important
     }
 }
 
