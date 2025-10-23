@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251021.1833
+@version        0.20251023.1418
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1729,7 +1729,7 @@
     div[class*="bannerMain"], div[class*="dzen-"][class*="-banner-"], 
     div[class*="dzen-desktop--top-sidebar-desktop-ad__root"], 
     div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
-    div[class*="new"] [class$="__rubricator"] + div[class*=" "], 
+    div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div[class]:only-child, 
     div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="news-site--"] > section ~ [id], div[id$="-rtb"], 
     div[id*="splashscreen"], div[id^="ad-"][class*=" news-"], 
