@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251025.2018
+@version        0.20251028.2003
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4313,6 +4313,12 @@
     div[class^="PageMediaContentVideo_mainContent"], 
     div[class^="Page_main"][style*="min-height:"] {
         min-height: 0 !important
+    }
+    html[style*="overflow:"] {
+        overflow: auto !important
+    }
+    html[style*="overflow:"] > body {
+        padding-right: 0 !important
     }
     div[class*="_spiegelWrapper"] {
         padding-top: 0 !important
