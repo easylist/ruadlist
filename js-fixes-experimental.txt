@@ -416,6 +416,7 @@ dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
 rbc.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
 vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopFunc)
+embed.rg.ru##+js(set-constant, Object.prototype.onIntersected, undefined)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
 vk.com,vk.ru##+js(set-constant, PageBottomBanners, undefined)
@@ -727,12 +728,6 @@ mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(h
 !#if env_mobile
 mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
 !#endif
-!
-! Embed.rg.ru
-embed.rg.ru##+js(set-attr, video, controls, true)
-embed.rg.ru##+js(set-constant, HTMLVideoElement.prototype.play, {})
-embed.rg.ru##.media-control
-embed.rg.ru##.player-poster
 !
 ! Softportal - https://github.com/uBlockOrigin/uBlock-issues/issues/2246
 !#if env_firefox
