@@ -730,6 +730,12 @@ mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(h
 mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
 !#endif
 !
+! Patephone
+patephone.com###yba-wrap
+patephone.com##+js(no-setTimeout-if, lastTick)
+patephone.com##+js(set-local-storage-item, rwDemo, $remove$)
+patephone.com##.reward-info
+!
 ! Softportal - https://github.com/uBlockOrigin/uBlock-issues/issues/2246
 !#if env_firefox
 softportal.com##+js(addEventListener-defuser, load, screenshotsItems)
