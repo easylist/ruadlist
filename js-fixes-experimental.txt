@@ -721,6 +721,10 @@ mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(h
 mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
 !#endif
 !
+! Book service read&download
+booksreed.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+booksreed.ru,novkniga.ru,skanbooks.ru##+js(set-attr, .specialcontdown > a, download)
+!
 ! Patephone
 patephone.com###yba-wrap
 patephone.com##+js(no-setTimeout-if, lastTick)
