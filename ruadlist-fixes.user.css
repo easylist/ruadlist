@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251105.1225
+@version        0.20251106.41
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4312,6 +4312,9 @@
 }
 
 @-moz-document domain("rg.ru") {
+    #cookie-consent {
+        display: none !important
+    }
     div[class^="PageMediaContentVideo_mainContent"], 
     div[class^="Page_main"][style*="min-height:"] {
         min-height: 0 !important
@@ -4324,6 +4327,9 @@
     }
     div[class*="_spiegelWrapper"] {
         padding-top: 0 !important
+    }
+    #cookie-consent ~ [class*="_root_"] {
+        top: unset !important
     }
 }
 
