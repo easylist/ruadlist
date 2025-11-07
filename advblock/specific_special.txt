@@ -8,8 +8,8 @@
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/$script
-||static.dzeninfra.ru/s3/zen-lib/*/news-site-mobile/$script
+||static.dzeninfra.ru/s3/zen-apps/content/$script
+||static.dzeninfra.ru/s3/zen-apps/mobile/$script
 !
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
@@ -415,6 +415,7 @@ news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
 news.mail.ru##body > div > style + div[id]
 dzen.ru##div[class*="news-advert"]
 ! Дзен новости Mail-edition
+dzen.ru##[id*="8845410"]
 dzen.ru##[id*="_R-A-"]
 dzen.ru##[id*="_R-E-"]
 dzen.ru##[id*="_R-I-"]
