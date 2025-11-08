@@ -724,6 +724,11 @@ mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !
 booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
 booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
 !
+! NTV
+ntv.ru#?##air-mini-player:has(> div > .vjs-paused) ~ .air-player__controls
+ntv.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, manualAutoplay)
+ntv.ru##.vjs-paused > button.vjs-big-play-button:style(display: block !important; z-index: 9999 !important)
+!
 ! Patephone
 patephone.com###yba-wrap
 patephone.com##+js(no-setTimeout-if, lastTick)
