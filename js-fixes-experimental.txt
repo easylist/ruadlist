@@ -820,6 +820,8 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 ! Фоксо-специфичные случаи >
 !#if env_firefox
 sports.ru##+js(cookie-remover, aablc)
+rutube.ru##+js(json-edit-fetch-response, [?!.video_balancer.default].appearance.auto_start, propsToMatch, /api/play)
+rutube.ru#@#+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !rutube.ru/video)
 ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
 dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.autoplay, {})
 @@$cname,domain=360tv.ru|3sat.de|innal.top|kyiv.ua|sports.ru|tosdr.org
