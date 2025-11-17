@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251116.1359
+@version        0.20251117.1810
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1596,13 +1596,10 @@
     div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class] {
         display: none !important
     }
-    div[itemtype*="://schema.org/Product"] ~ div #comments {
-        max-width: 100% !important
+    .o-columns {
+        grid-template-columns: unset !important
     }
-    div[class*="--content article "] + div ~ div:last-child > div:first-child:not(:only-child), 
-    div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child:not(:only-child), 
-    div[itemtype*="://schema.org/Photograph"] > div:last-child > div:first-child:not(:only-child), 
-    div[itemtype*="://schema.org/Review"] ~ div:last-child > div:first-child:not(:only-child) {
+    div[class*="--content article "] + div ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
     }
     [data-track]:not(a), 
@@ -1614,15 +1611,6 @@
         padding-top: unset !important;
         padding-bottom: unset !important;
         box-shadow: inherit !important
-    }
-    div[itemtype*="://schema.org/Product"] ~ div #comments ~ div {
-        width: unset !important
-    }
-    div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child + div[class], 
-    div[itemtype*="://schema.org/Photograph"] > div:last-child > div:first-child + div[class], 
-    div[itemtype*="://schema.org/Review"] ~ div:last-child > div:first-child + div[class] {
-        width: unset !important;
-        margin-left: unset !important
     }
 }
 
