@@ -414,7 +414,6 @@ vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopF
 embed.rg.ru##+js(set-constant, Object.prototype.onIntersected, undefined)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
-myfootball.life##+js(set-constant, Object.prototype.skipDelay, undefined)
 vk.com,vk.ru##+js(set-constant, PageBottomBanners, undefined)
 free-tor.info,korsars.info##+js(set-constant, String.fromCharCode, trueFunc)
 vk.com,vk.ru##+js(set-constant, Unauthorized2, undefined)
@@ -627,6 +626,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||m.mixadvert.com/show/$important,script
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||my.mail.ru/video/embed/*autoplay=1$subdocument,removeparam=autoplay
+||myfootball.life/*/betking/$media,redirect=noopmp4-1s,domain=myfootball.life
 ||partnerprofitboost.com^$popunder
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
