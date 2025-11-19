@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251117.1810
+@version        0.20251119.1350
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1324,12 +1324,16 @@
     div[class^="ReactViewer__root-"] {
         --bottom-banner-height: 1px !important
     }
-    div[class^="Datalistinfo__root"], div[class^="Public-desktop__rightCol-"], 
+    div[class^="Public-desktop_"][class*="_shove--"], 
+    div[class^="ShovePublic__root"] {
+        background-color: inherit !important
+    }
+    div[class^="Public-desktop__rightCol-"], 
     div[class^="ReactViewer__attachesinfo-"] {
         display: none !important
     }
-    div[class^="Public__folderContent"] {
-        padding-right: 0 !important
+    div[class^="ShovePublic__content"], div[class^="ShovePublic__folder"] {
+        width: 100% !important
     }
 }
 
@@ -1602,11 +1606,7 @@
     div[class*="--content article "] + div ~ div:last-child > div:first-child:not(:only-child) {
         max-width: unset !important
     }
-    [data-track]:not(a), 
-    div[itemtype*="://schema.org/BlogPosting"] > div:not(:last-child), 
-    div[itemtype*="://schema.org/Photograph"] > div:not(:last-child), 
-    div[itemtype*="://schema.org/Product"] ~ div:not(:last-child), 
-    div[itemtype*="://schema.org/Review"] ~ div:not(:last-child) {
+    [data-track]:not(a) {
         min-height: 0 !important;
         padding-top: unset !important;
         padding-bottom: unset !important;
