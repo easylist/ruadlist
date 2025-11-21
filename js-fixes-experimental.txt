@@ -249,7 +249,7 @@ lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?
 hot.game,lifehacker.ru##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
-rambler.ru##+js(href-sanitizer, a[href^="http://www.gazeta.ru"][aria-label^="Перейти на страницу источника"], +https)
+rambler.ru##+js(href-sanitizer, a[href^="http:"][aria-label^="Перейти на страницу источника"], +https)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://click.email4customers.com/Link?"], ?args)
 rsload.net##+js(href-sanitizer, a[href^="https://fixti.ru/download.php?files="], ?files)
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
