@@ -883,10 +883,10 @@ avtorambler.com,rambler.ru##.adfox-background-container
 championat.com,championat.ru##.adv-mark
 lenta.ru##.advertisable-plate__erid
 championat.com,championat.ru#?#.article-preview._video:-abp-has(> div > a[href*="okko.sport"])
-gazeta.ru##.b_nav > a[target="_blank"]
-gazeta.ru##.b_rightcol-sticky > div[id]
-gazeta.ru##.b_telegram
-championat.com,championat.ru,gazeta.ru,lenta.ru##.banner
+gazeta.press,gazeta.ru##.b_nav > a[target="_blank"]
+gazeta.press,gazeta.ru##.b_rightcol-sticky > div[id]
+gazeta.press,gazeta.ru##.b_telegram
+championat.com,championat.ru,gazeta.press,gazeta.ru,lenta.ru##.banner
 lenta.ru##.banner + div[class][id]
 championat.com,championat.ru##.banner-announce
 championat.com,championat.ru##.banner-parallax
@@ -905,9 +905,9 @@ championat.com,championat.ru##.infographic-duel
 lenta.ru##.js-scroll-to-site
 lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##.lb-ad-visible
-gazeta.ru##.m_zen
+gazeta.press,gazeta.ru##.m_zen
 lenta.ru##.promo-block
-gazeta.ru##.rcmw-container
+gazeta.press,gazeta.ru##.rcmw-container
 championat.com,championat.ru##.recommender-block ~ .banner + div:not([class*="comments"])
 top100.rambler.ru##.rui-Snackbar-snackbar
 moslenta.ru##.sideColumn > div[class] > div[style^="margin-bottom:"] + div
@@ -923,7 +923,7 @@ mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
 auto.rambler.ru,avtorambler.com##[data-auto_media-desktop*="rnet_widget"]
 auto.rambler.ru,avtorambler.com#?#[data-auto_media-desktop="content_block"] ~ div div:-abp-has(> div > [data-rcmw-init])
 championat.com,championat.ru##[data-champ*="Okko"]
-gazeta.ru##[data-docking="left-down"] > div[style^="height:"][style*="overflow:"]
+gazeta.press,gazeta.ru##[data-docking="left-down"] > div[style^="height:"][style*="overflow:"]
 doctor.rambler.ru##[data-doctor_media-desktop*="rnet_widget"]
 finance.rambler.ru##[data-finance_media-desktop*="rnet_widget"]
 championat.com,championat.ru##[data-goal-label="coeff_fonbet"]
@@ -936,7 +936,7 @@ avtorambler.com,rambler.ru##[data-rcmw-init]
 sport.rambler.ru##[data-sport_media-desktop*="rnet_widget"]
 www.afisha.ru#?#[data-test="SECTION"] > [data-test="SECTION-CONTENT"]:-abp-has(> div > [href^="/out/?url="])
 travel.rambler.ru##[data-travel_media-desktop*="rnet_widget"]
-gazeta.ru##[data-url^="https://www.gazeta.ru/prcom/"]
+gazeta.press,gazeta.ru##[data-url*="/prcom/"]
 weekend.rambler.ru##[data-weekend_media-desktop*="rnet_widget"]
 woman.rambler.ru##[data-woman_media-desktop*="rnet_widget"]
 avtorambler.com,rambler.ru#?#[id^="rambler-"] ~ div:-abp-has(> div > [data-rcmw-init])
@@ -951,12 +951,13 @@ lenta.ru##a[href*="?erid="]
 championat.com,championat.ru##a[href*="offer_id="]
 championat.com,championat.ru,lenta.ru##a[href*="okko.sport"]
 www.afisha.ru##a[href^="/out/?url="]
+gazeta.press,gazeta.ru##a[href^="/prcom/"]
 rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container"]:empty)
 avtorambler.com,rambler.ru#?#article div:-abp-has(> rambler-car-loan-calculator)
 avtorambler.com,rambler.ru#?#article div:-abp-has(> rambler-info-banner)
 avtorambler.com,rambler.ru#?#aside:-abp-has(> div > [class^="banner--native-partner_widget"])
 finance.rambler.ru##body[data-finance_media-desktop="main"] .commercial-branding > nav ~ div > div > script ~ div > div:last-child
-gazeta.ru#?#div:-abp-has(> .b_telegram)
+gazeta.press,gazeta.ru#?#div:-abp-has(> .b_telegram)
 horoscopes.rambler.ru#?#div:-abp-has(> [id^="rcmw-container-"])
 www.rambler.ru#?#div:-abp-has(> div > [data-cerber^="widgets-carousel:"]) + div > div > div > div:-abp-has(> div a[href^="https://ads.adfox.ru/"])
 avtorambler.com,rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
@@ -967,7 +968,7 @@ mail.rambler.ru##div[class*="AddBillboard"]
 mail.rambler.ru##div[class*="AppContainer-adWrapper"]
 mail.rambler.ru##div[class*="SentLetter-context"]
 avtorambler.com,rambler.ru##div[class*="banner-"]
-gazeta.ru,letidor.ru,moslenta.ru,passion.ru,quto.ru##div[class*="billboard"]
+gazeta.press,gazeta.ru,letidor.ru,moslenta.ru,passion.ru,quto.ru##div[class*="billboard"]
 lenta.ru##div[class*="goodnews"][class*=" "]
 horoscopes.rambler.ru##div[class][style=""]
 www.afisha.ru##div[class^="Advert"]
@@ -975,8 +976,8 @@ nova.rambler.ru##div[class^="DirectMKB"]
 nova.rambler.ru##div[class^="LayoutSearch"] section > article[class*=" Serp__item"]:not([class^=" Serp__item"])
 r0.ru##div[class^="News__adv"]
 afisha.ru##div[data-test*="HONEY-AD"] > [data-test="FALLBACK"] > span
-gazeta.ru##div[id^="__id_global_rambler_video_off_"][data-mediaposition="bottom"]
-gazeta.ru##div[id^="_g_exchange_"]
+gazeta.press,gazeta.ru##div[id^="__id_global_rambler_video_off_"][data-mediaposition="bottom"]
+gazeta.press,gazeta.ru##div[id^="_g_exchange_"]
 avtorambler.com,rambler.ru##div[id^="rambler-info-banner-"]
 avtorambler.com,rambler.ru##div[id^="rcmw-container-"][id*="-horizontal-"]
 rambler.ru##div[id^="rnet_"]
@@ -1011,9 +1012,9 @@ avtorambler.com,rambler.ru##rambler-info-banner
 ||rcmjs.rambler.ru/static/rcmw/rcmw.*.horizontal.
 ||rcmjs.rambler.ru/static/recommender.js
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
-||static.gazeta.ru/nm2021/js/others_scripts_v6.js
+||static.gazeta.ru/nm2021/js/others_scripts_
 ||trafffgen.rambler.ru^
-||vp.rambler.ru/player/*&mediaposition=bottom&$subdocument,domain=gazeta.ru
+||vp.rambler.ru/player/*&mediaposition=bottom&$subdocument,domain=gazeta.press|gazeta.ru
 ||winline.rambler.ru^
 !#if ext_abp
 www.rambler.ru#?##app > div:-abp-properties(min-height: 250px)
@@ -1023,10 +1024,10 @@ weather.rambler.ru#?#div:-abp-properties(min-height: 400px)
 weather.rambler.ru#?#div:-abp-properties(min-height: 600px)
 !#endif
 ! мобильная версия
-gazeta.ru###in-read
+gazeta.press,gazeta.ru###in-read
 avtorambler.com,rambler.ru#?#div:-abp-has(> div[style^="min-height:"]) > p ~ div:-abp-contains(Продолжение истории после рекламы)
-gazeta.ru##div[class^="gazeta-dynamic-ban-"]
-gazeta.ru##div[id^="block_pad_id"]
+gazeta.press,gazeta.ru##div[class^="gazeta-dynamic-ban-"]
+gazeta.press,gazeta.ru##div[id^="block_pad_id"]
 !
 ! RBC (РБК)
 cnews.ru,utro.ru##.banner

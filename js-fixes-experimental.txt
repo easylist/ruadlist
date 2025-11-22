@@ -3,7 +3,6 @@
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
 ! --- uBO scriptlets injection rules & other ---
-gazeta.ru###_id_flowup
 tapochek.net###aposnow
 growhow.in.ua###custom-background-css:remove()
 playground.ru###dfpPrerollDelay:remove()
@@ -125,13 +124,13 @@ xn--b1aew.xn--p1ai##+js(abort-on-property-read, document.ondrop)
 turkish-tv-series.ru##+js(abort-on-property-read, document.onkeydown)
 xn--b1aew.xn--p1ai##+js(abort-on-property-read, document.onpaste)
 xn--b1aew.xn--p1ai##+js(abort-on-property-read, document.onselectstart)
-gazeta.ru##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_position)
+gazeta.press,gazeta.ru##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_position)
 footboom.com,footboom.kz##+js(abort-on-property-read, echelon)
 kinozapas.co,livesx.online,xn--80aikhbrhr.xn--j1amh##+js(abort-on-property-read, forTheFreeVideo.css)
 7ogorod.ru,autonevod.ru,shtrafsud.ru,tophallclub.ru,zazloo.ru##+js(abort-on-property-read, fpm_attr)
 buhplatforma.com.ua,championat.com,doramy.club,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
 musify.club##+js(abort-on-property-read, get_ya_browser)
-gazeta.ru##+js(abort-on-property-read, goTolink)
+gazeta.press,gazeta.ru##+js(abort-on-property-read, goTolink)
 dota2.ru##+js(abort-on-property-read, helpUsImproveSite)
 elitesnooker.com##+js(abort-on-property-read, initsnow)
 astrakhan.ru,myjane.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read, kav_cn)
@@ -425,9 +424,9 @@ gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,megaresheba.com,m
 razlozhi.ru##+js(set-constant, cadb, false)
 audioportal.su##+js(set-constant, clicks, 2)
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(set-constant, countdownNum, 0)
-gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
-gazeta.ru##+js(set-constant, history.replaceState, noopFunc)
-gazeta.ru##+js(set-constant, isAdFree, noopFunc)
+gazeta.press,gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
+gazeta.press,gazeta.ru##+js(set-constant, history.replaceState, noopFunc)
+gazeta.press,gazeta.ru##+js(set-constant, isAdFree, noopFunc)
 playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
 tv-gubernia.ru##+js(set-constant, main_air_closed, true)
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-constant, navigator.sendBeacon, noopFunc)
@@ -455,7 +454,7 @@ playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
 kinotv.ru##+js(set-cookie, telegram_popup, Y)
 ferra.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1)
 mp3party.net##+js(set-cookie, yandexFull, true)
-gazeta.ru##+js(set-cookie-reload, unity_pause_sso, 1)
+gazeta.press,gazeta.ru##+js(set-cookie-reload, unity_pause_sso, 1)
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
 iz.ru##+js(set-local-storage-item, vipler.player.live.play, false)
 dtf.ru,vc.ru##+js(set-local-storage-item, visits-count:plus-promotion, $remove$)
@@ -544,7 +543,7 @@ www.sports.ru##[data-noinit]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[value="Скачать"]:remove-attr(disabled)
-gazeta.ru##^responseheader(location)
+gazeta.press,gazeta.ru##^responseheader(location)
 online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(btn)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]
@@ -556,7 +555,7 @@ autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.to##body > div[id^="r"] > div[id^="r"][href]
-gazeta.ru##body > div[style^="height:"][style*="vh"]:empty
+gazeta.press,gazeta.ru##body > div[style^="height:"][style*="vh"]:empty
 anime-chan.me##body > div[style^="pointer-events: none;"][style*="visible;"]
 4pda.to##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay .wdp-onboardings-inventory-module__popup
@@ -844,9 +843,9 @@ www.ukr.net##^script:has-text(znc|track)
 eurointegration.com.ua,pravda.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
 ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/")
 ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/"):remove()
-gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
-gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
-||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.ru|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
+gazeta.ru,gazeta.press|lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
+gazeta.ru,gazeta.press|lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
+||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.ru|gazeta.press|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
 !#endif
 !
 !#if !env_firefox
@@ -855,7 +854,7 @@ gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/playe
 !
 ! MV3-специфичные случаи >
 !#if !env_mv3
-||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|eda.ru|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
+||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|eda.ru|gazeta.press|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
 !#endif
 !
 ! VIQEO автоплей на Shkulev Media, только для десктопов
@@ -865,7 +864,7 @@ gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/playe
 !#endif
 !
 !#if env_mv3
-afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
+afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.press,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)

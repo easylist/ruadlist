@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251120.1156
+@version        0.20251122.1225
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2170,16 +2170,6 @@
     }
 }
 
-@-moz-document
-  domain("gagadget.com"),
-  domain("gazeta.ru"),
-  domain("lenta.ru"),
-  domain("rambler.ru") {
-    body:not(#id) {
-        overflow-y: auto !important
-    }
-}
-
 @-moz-document domain("galka.if.ua") {
     #fb-modal, body.modal-open > .modal-backdrop {
         display: none !important
@@ -2282,7 +2272,9 @@
     }
 }
 
-@-moz-document domain("gazeta.ru") {
+@-moz-document
+  domain("gazeta.press"),
+  domain("gazeta.ru") {
     #_id_main_content, .b_header {
         max-width: 100% !important
     }
@@ -4221,9 +4213,6 @@
     }
     .branding .main-content {
         margin-top: 90px !important
-    }
-    .poster-grid-item > a[target="_blank"]:first-child {
-        pointer-events: none !important
     }
 }
 
