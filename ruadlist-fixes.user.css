@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251122.1225
+@version        0.20251122.2018
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3150,6 +3150,18 @@
 @-moz-document domain("lifetambov.ru") {
     .theme-wrapper > .container > div {
         padding-bottom: unset !important
+    }
+}
+
+@-moz-document
+  domain("liveball.gg"),
+  domain("liveball.my"),
+  domain("liveball.space"),
+  domain("liveball.uno"),
+  domain("liveball.sx"),
+  domain("liveball.ws") {
+    main.main_div {
+        margin-top: 0 !important
     }
 }
 
