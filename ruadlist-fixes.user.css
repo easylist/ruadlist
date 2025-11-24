@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251122.2018
+@version        0.20251124.1423
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3157,11 +3157,12 @@
   domain("liveball.gg"),
   domain("liveball.my"),
   domain("liveball.space"),
-  domain("liveball.uno"),
   domain("liveball.sx"),
+  domain("liveball.uno"),
   domain("liveball.ws") {
     main.main_div {
-        margin-top: 0 !important
+        margin-top: 0 !important;
+        max-width: 100% !important
     }
 }
 
