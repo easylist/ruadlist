@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251124.1423
+@version        0.20251124.2108
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -538,7 +538,7 @@
     #trend {
         margin-bottom: 0 !important
     }
-    a[href*="erid="] {
+    a[href*="://s.zbanx.com/r/"], a[href*="erid="] {
         pointer-events: none !important;
         color: inherit !important;
         border-bottom: inherit !important
@@ -849,6 +849,11 @@
     a[href*="erid="] {
         pointer-events: none !important;
         color: inherit !important
+    }
+    a[href*="://s.zbanx.com/r/"] {
+        pointer-events: none !important;
+        color: inherit !important;
+        border-bottom: inherit !important
     }
 }
 
