@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251124.2108
+@version        0.20251124.2110
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -538,6 +538,11 @@
     #trend {
         margin-bottom: 0 !important
     }
+}
+
+@-moz-document
+  domain("androidinsider.ru"),
+  domain("appleinsider.ru") {
     a[href*="://s.zbanx.com/r/"], a[href*="erid="] {
         pointer-events: none !important;
         color: inherit !important;
@@ -842,18 +847,6 @@
 @-moz-document domain("app2top.ru") {
     .page-wrapper {
         padding-top: 0 !important
-    }
-}
-
-@-moz-document domain("appleinsider.ru") {
-    a[href*="erid="] {
-        pointer-events: none !important;
-        color: inherit !important
-    }
-    a[href*="://s.zbanx.com/r/"] {
-        pointer-events: none !important;
-        color: inherit !important;
-        border-bottom: inherit !important
     }
 }
 
