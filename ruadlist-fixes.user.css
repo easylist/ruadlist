@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251124.2110
+@version        0.20251125.2308
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2448,6 +2448,12 @@
 @-moz-document domain("h-chan.me") {
     img[style^="filter: blur"] {
         filter: none !important
+    }
+}
+
+@-moz-document domain("habr.com") {
+    .has-p-shaped {
+        padding-top: 12px !important
     }
 }
 
