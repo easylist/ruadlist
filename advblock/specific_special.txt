@@ -1324,6 +1324,9 @@ ukr.net##.lazy-load-banner
 @@://yandex.*/search$generichide
 @@://yandex.ru/|$generichide
 @@||yandex.ru/ads/system/adsdk.js|$script,domain=yandex.ru
+market.yandex.ru##[data-auto="banner"] > a:not([href^="/"]):not([href^="https://market.yandex.ru/"])
+market.yandex.ru##[data-auto="banner"] [role="button"]
+market.yandex.ru##[data-auto="banner-ad-label"]
 market.yandex.ru,market.yandex.*##.layout_type_search.headline__footer
 ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[aria-label^="Информ"] ~ [class]
