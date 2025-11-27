@@ -6891,7 +6891,6 @@ football.kulichki.net#?#div:-abp-has(> table > tbody a[href*="kulichki.com/adver
 only-paper.ru#?#div:not(.adv-wrapper):-abp-has(> ins)
 glavagronom.ru#?#div:not([id]):not([class]):-abp-has(> div + div + section + section) > div:first-child + div > div:only-child > div:first-child + div:last-child
 tomat-pomidor.com##div:not([id]):not([class])[style^="min-height:"]
-ura.news#?#div:only-child > div:-abp-contains(Продолжение после рекламы)
 darkmoney.at##div[align="center"] > a[href] > img[src*=".gif"]
 igru-xbox.net,probiv.in,probiv.one##div[align="center"] > a[href][target="_blank"]
 ru-minecraft.ru##div[align="center"] > div[style^="background-color:"][style*="height:300px;"]
@@ -7754,6 +7753,7 @@ vellisa.ru##div[style="display: inline-block;"] a[href]
 novostivmire.com##div[style="float: none; margin:0px;"]
 gizmod.ru##div[style="float:left;width:344px;height:295px;"]
 forum.china-iphone.ru##div[style="float:right; margin-right: 5px;"]
+ura.news#?#div[style="font-size: 16px;"] div:only-child > div:-abp-contains(Продолжение после рекламы)
 lleo.me##div[style="font-size:11px; margin: 0 2px 0 2px;"]
 astrohelper.ru##div[style="height: 120px;"]
 speedme.ru##div[style="height: 250px;"]
@@ -8134,6 +8134,7 @@ besplatnyeprogrammy.ru#?#main > article.post:-abp-has(> header > .mainpage_title
 enthub.it##main > aside + .block > div:not([id]):not([class])
 ura.news#?#main > aside ul > li:-abp-has(a[href^="https://momenty.org/"])
 ura.news##main > aside ~ aside > div:first-child
+ura.news##main > div > div:first-child:not([class=""])
 ura.news##main > div aside > div:first-child
 gk-press.if.ua##main > div[style="display: inline"]
 drivenn.ru#?#main > h3:-abp-contains(/Новости партнёров|Популярное в сети/)
