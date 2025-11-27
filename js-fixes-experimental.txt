@@ -849,8 +849,8 @@ www.ukr.net##^script:has-text(znc|track)
 eurointegration.com.ua,pravda.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
 ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/")
 ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/"):remove()
-gazeta.ru,gazeta.press|lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
-gazeta.ru,gazeta.press|lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
+gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
+gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
 ||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.ru|gazeta.press|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
 !#endif
 !

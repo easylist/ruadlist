@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251125.2308
+@version        0.20251127.1814
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2165,6 +2165,17 @@
     html > body {
         overflow-y: auto !important;
         position: static !important
+    }
+}
+
+@-moz-document
+  domain("gagadget.com"),
+  domain("gazeta.press"),
+  domain("gazeta.ru"),
+  domain("lenta.ru"),
+  domain("rambler.ru") {
+    body:not(#id) {
+        overflow-y: auto !important
     }
 }
 
