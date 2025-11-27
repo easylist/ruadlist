@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251127.1814
+@version        0.20251127.1934
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3177,6 +3177,10 @@
   domain("liveball.ws") {
     main.main_div {
         margin-top: 0 !important;
+        max-width: 100% !important;
+        border-radius: inherit !important
+    }
+    footer {
         max-width: 100% !important
     }
 }
