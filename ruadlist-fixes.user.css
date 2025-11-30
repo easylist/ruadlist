@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251130.1306
+@version        0.20251130.2154
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1811,7 +1811,8 @@
         --scrollable-top-native-adv-height: inherit !important
     }
     #app-canvas .letter-list-item-adv__container, #popup-placeholder, 
-    .letter-meta > .skeleton {
+    .letter-meta > .skeleton, 
+    div[class^="fields_container-"] > div > div[style="display: block;"] {
         display: none !important
     }
     .application-mail__wrap > .application-mail__layout > .layout[style*="grid-template-columns:"] {
@@ -4630,12 +4631,6 @@
 @-moz-document domain("sport.ua") {
     #outer-top {
         padding-top: initial !important
-    }
-}
-
-@-moz-document domain("sportarena.com") {
-    .admineditor-menu {
-        margin-top: 0 !important
     }
 }
 
