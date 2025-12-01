@@ -222,6 +222,7 @@ rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
+championat.com##+js(addEventListener-defuser, scroll, window.location.href)
 rutube.ru##+js(addEventListener-defuser, visibilitychange, document.hidden)
 ritsatv.ru##+js(alert-buster)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)
@@ -492,7 +493,6 @@ smotrim.ru##.dialog-wrapper
 reshu.by,reshuent.kz,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru#?#.js-index-central-column .js-index-doscroll[data-type="spec"]:-abp-has([href*="erid="]):style(padding: 1px !important; border-bottom: none !important; opacity: 0 !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
-lenta.ru##.js-scroll-to-site-container:remove()
 igromania.ru#?#.knb-grid-container > [data-io-article-url]:-abp-has(> [class^="MaterialItemHead_head"] [href="/tags/partnyorskij-material/"]) > .knb-grid-container [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 rbc.ru,rbcrealty.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:style(top: 166px !important; position: unset !important)
 ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/pravila"])
@@ -506,7 +506,6 @@ cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
 pikabu.ru##.pub300x250.pub300x250m.pub728x90.text-ad.textAd.textad.textads.text-ads.text-ad-links:style(display: block !important; position: absolute !important; top: -10000px !important; left: -10000px !important)
 letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##.readMore
 sports.ru##.right-first-banner-place + div
-lenta.ru##.scroll-to-site
 softportal.com##.st-browser__timer
 gtavicecity.ru##.stop-waiting
 pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story:not([data-author-name])
@@ -545,6 +544,7 @@ cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
+championat.com,lenta.ru##[class*="scroll-to-site"]:remove()
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
 www.sports.ru##[data-noinit]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
