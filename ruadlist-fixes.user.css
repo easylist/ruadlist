@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251201.1744
+@version        0.20251202.1836
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3984,6 +3984,10 @@
     }
     .gp-game-card .user-profile-sidebar {
         max-width: unset !important
+    }
+    a[href*="/clck.ru/"] {
+        pointer-events: none !important;
+        color: inherit !important
     }
 }
 
