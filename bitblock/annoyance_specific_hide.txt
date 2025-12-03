@@ -2396,12 +2396,14 @@ shiza-project.com##ul[class*="transparent-btns"]
 wildberries.ru,wildberries.*##.fixed-block__cookies
 !
 ! 4pda.to (ранее 4pda.ru)
+!#if ext_abp
 ! верхняя плашка
 4pda.to##html[style]:not([style=""]) :not(div):not([id]) > :not(div)[id][class] > div[id][class]:not(:empty)
 ! верхняя плашка в мобильном макете 534×854
 4pda.to##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id][style^="min-height:"][style$="px;"]
 ! кликабельный элемент рекламного фона
 4pda.to##html[style] > body [id][class] > script ~ [class]:not(empty):not(:last-of-type) article + article.post
+||4pda.to/s/*.jpg?_=$image
 ! пустые и рекламные блоки в правой колонке
 4pda.to##html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style*="display: block;"]
 4pda.to#?#html[style] > body [id][class][style^="overflow: hidden; height:"] > div[style]:-abp-has(a[href][target="_blank"] > img)
@@ -2446,6 +2448,7 @@ wildberries.ru,wildberries.*##.fixed-block__cookies
 4pda.to##html:not([style]) > body:not([itemscope]) > div[id]:not([href]) > [href="#"]:empty ~ [id][href]
 ! реклама в QMS и мобильной версии сайта
 4pda.to##.menu-main-mobile > [style="display:none;"]
+!#endif
 !
 ! Kinopoisk
 www.kinopoisk.ru###editorial-format-block + div[style^="min-width:"][style*="1px"]
