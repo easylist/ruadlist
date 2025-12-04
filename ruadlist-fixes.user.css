@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251202.1836
+@version        0.20251204.1321
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2230,7 +2230,8 @@
 
 @-moz-document domain("gameguru.ru") {
     body {
-        background-image: none !important
+        background-image: none !important;
+        background-color: inherit !important
     }
     #mainContent > section:first-of-type {
         margin-top: unset !important
