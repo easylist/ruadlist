@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251208.1738
+@version        0.20251209.51
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1336,6 +1336,9 @@
     div[class^="Public-desktop__rightCol-"], 
     div[class^="ReactViewer__attachesinfo-"] {
         display: none !important
+    }
+    div[class^="Public__folderContent"] {
+        padding-right: 0 !important
     }
     div[class^="ShovePublic__content"], div[class^="ShovePublic__folder"] {
         width: 100% !important
