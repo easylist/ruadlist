@@ -722,6 +722,8 @@ e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
 e.mail.ru,octavius.mail.ru##.vkuiPopoutRoot:has(a[href^="https://vk.cc/"])
 e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
 e.mail.ru,octavius.mail.ru##body > div[style*="top:"][style*="position:"][style*="visibility:"] #app-canvas div:style(display: block !important)
+e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]
+e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]:has([data-name="from"] > [class^="containerInner-"] > [class^="label-"] > div:not([class^="beautifulAddressEntry-"])):style(display: block !important)
 ! VK-брендинг
 light.mail.ru##.portal-menu__logo__link:style(width: 90px !important; !important; overflow: hidden !important)
 ! Фикс для маленьких экранов
