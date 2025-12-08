@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251208.1222
+@version        0.20251208.1632
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -543,6 +543,7 @@
 @-moz-document
   domain("androidinsider.ru"),
   domain("appleinsider.ru") {
+    a[href*="://ali.ski/"], a[href*="://aliexpress.ru/item/"], 
     a[href*="://bit.ly/"], a[href*="://s.zbanx.com/r/"], a[href*="erid="] {
         pointer-events: none !important;
         color: inherit !important;
