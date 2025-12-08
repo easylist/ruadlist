@@ -666,6 +666,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 !
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
+cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
 minigames.mail.ru##+js(abort-current-inline-script, $, blockWarnClass)
 mmminigames.mail.ru##+js(abort-current-inline-script, $, mimicTopClass)
 ok.ru##+js(abort-on-property-read, globalAuthLoginPopupCounter)
