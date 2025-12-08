@@ -33,7 +33,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||mult-porno.$csp=connect-src 'self' blob: data:
 ||news-sphere.com^$csp=script-src
 ||nsportal.ru/download/$csp=frame-src 'self'
-||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self';
+||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self';
 ||opensharing.org/img/images/$csp=script-src 'unsafe-inline' 'unsafe-eval' opensharing.org/img/
 ||paileactivist.github.io/toolz/adblock$csp=connect-src 'self'
 ||psysovet24.ru^$csp=script-src 'self' * blob: data:
