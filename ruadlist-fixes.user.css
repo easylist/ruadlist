@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251206.2132
+@version        0.20251208.1222
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2007,6 +2007,15 @@
 @-moz-document domain("films-online.club") {
     .body-wrap > #content {
         margin-top:42px !important
+    }
+}
+
+@-moz-document
+  domain("finance.mail.ru"),
+  domain("news.mail.ru"),
+  domain("vfokuse.mail.ru") {
+    .p-catchup {
+        display: none !important
     }
 }
 
