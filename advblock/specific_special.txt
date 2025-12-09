@@ -583,6 +583,7 @@ vkplay.ru##div[class*="ArtBannerSkeleton"]
 ||radar.imgsmail.ru^
 ||rs.mail.ru^$domain=~account.mail.ru|~o2.mail.ru
 ||showbiz.mail.ru^$third-party
+||storage.mds.yandex.net/get-canvas-html5/$domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=~e.mail.ru
 ||top-fwz1.mail.ru^$domain=~account.mail.ru|~o2.mail.ru
 ||torg.mail.ru/prtnr/$third-party
@@ -1500,6 +1501,7 @@ dzen.ru##div[class*="-top-ad-"]
 dzen.ru##div[class*="_rightAdWrapper"]
 dzen.ru##div[class*="main-page-top-of-the-day-ad"]
 dzen.ru##div[class*="tsar__container"]
+dzen.ru##div[class^="dzen-desktop--top-app__dummy-"]:empty
 dzen.ru#?#div[data-testid="article-showcase-card"]:-abp-has(> [data-testid="card-rtb"])
 !
 ! dzen и ya/yandex - мобильная версия
@@ -1513,54 +1515,6 @@ dzen.ru##div[style*=" !important; "][style$=" !important;"]
 ya.ru,yandex.ru,yandex.*##.t-construct-adapter__adv
 ya.ru,yandex.ru,yandex.*#?##search-result > .serp-item:-abp-has(> .AdvLabel)
 ! переходы
-/*clyd=$popup,domain=dzen.ru
-/*icllcd=$popup,domain=dzen.ru
-/*pil=$popup,domain=dzen.ru
-/*y*ii=$popup,domain=dzen.ru
-/*y*il=$popup,domain=dzen.ru
-/*y*le=$popup,domain=dzen.ru
-/*y*li=$popup,domain=dzen.ru
-/*ychid=$popup,domain=dzen.ru
-/*ychyd=$popup,domain=dzen.ru
-/*yciild=$popup,domain=dzen.ru
-/*ycilid=$popup,domain=dzen.ru
-/*ycilyd=$popup,domain=dzen.ru
-/*yclad=$popup,domain=dzen.ru
-/*ycld=$popup,domain=dzen.ru
-/*ycleed=$popup,domain=dzen.ru
-/*yclid=$popup,domain=dzen.ru
-/*ycliid=$popup,domain=dzen.ru
-/*ycliyd=$popup,domain=dzen.ru
-/*ycllcd=$popup,domain=dzen.ru
-/*yclld=$popup,domain=dzen.ru
-/*yclod=$popup,domain=dzen.ru
-/*yclud=$popup,domain=dzen.ru
-/*yclyyd=$popup,domain=dzen.ru
-/*ycyd=$popup,domain=dzen.ru
-/*ycyid=$popup,domain=dzen.ru
-/*ycylid=$popup,domain=dzen.ru
-/*ycylyd=$popup,domain=dzen.ru
-/*ycyyld=$popup,domain=dzen.ru
-/*ycyylid=$popup,domain=dzen.ru
-/*ycyylyd=$popup,domain=dzen.ru
-/*yhic=$popup,domain=dzen.ru
-/*yhid=$popup,domain=dzen.ru
-/*yhyd=$popup,domain=dzen.ru
-/*ykiid=$popup,domain=dzen.ru
-/*ykild=$popup,domain=dzen.ru
-/*ykilp=$popup,domain=dzen.ru
-/*ykilt=$popup,domain=dzen.ru
-/*yklid=$popup,domain=dzen.ru
-/*yklld=$popup,domain=dzen.ru
-/*ylcd=$popup,domain=dzen.ru
-/*ylced=$popup,domain=dzen.ru
-/*ylcld=$popup,domain=dzen.ru
-/*ylcyd=$popup,domain=dzen.ru
-/*ylecd=$popup,domain=dzen.ru
-/*yleed=$popup,domain=dzen.ru
-/*yllcd=$popup,domain=dzen.ru
-/*yqilp=$popup,domain=dzen.ru
-/*yqipl=$popup,domain=dzen.ru
 =mytarget$popup,domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=dzen.ru
 !

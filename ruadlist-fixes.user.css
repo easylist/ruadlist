@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251209.1541
+@version        0.20251209.1715
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1736,10 +1736,10 @@
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
         grid-template-columns: inherit !important
     }
-    .secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__left"] {
+    #SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"] {
         height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important
     }
-    .secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__root"] {
+    #SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"] {
         min-height: 0 !important;
         --desktopPageLayoutCenterPadding: inherit !important
     }

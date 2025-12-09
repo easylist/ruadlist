@@ -1606,8 +1606,8 @@ dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="important"] div[class*="__main"]
 dzen.ru##html[class*="morda"] div[class] > [id] > div[style*="%"]:style(padding-top: unset !important)
 ! исправление ошибок и косяков оригинальной вёрстки
-dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
-dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__root"]:style(min-height: 0 !important; --desktopPageLayoutCenterPadding: inherit !important)
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"]:style(min-height: 0 !important; --desktopPageLayoutCenterPadding: inherit !important)
 ! видео
 dzen.ru##div[class*="watch-page-content"] [aria-label] > div[id]
 ! статьи
