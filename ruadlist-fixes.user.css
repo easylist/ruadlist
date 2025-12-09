@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251209.51
+@version        0.20251209.1331
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1734,6 +1734,12 @@
     }
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
         grid-template-columns: inherit !important
+    }
+    #SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"] {
+        height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) ! important
+    }
+    #SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"] {
+        min-height: 0 !important
     }
     body {
         overflow-y: unset !important
