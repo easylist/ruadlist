@@ -1344,7 +1344,7 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
 ~games.s3.yandex.net,ya.*,yandex.*##+js(no-xhr-if, yabs.yandex.ru/count/)
 ~mail.yandex.*,~yandex.net,auto.*,ya.*,yandex.*##+js(set-constant, Object.prototype.initPcode, undefined)
-~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(abort-on-property-read, __pcodeAllActiveTestIds)
+~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(abort-on-property-read, __activeTestIds)
 ~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.renderDirect, undefined)
 ~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div:style(display: none !important)
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro:style(display: none !important)
