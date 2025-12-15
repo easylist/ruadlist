@@ -1279,7 +1279,6 @@ dzen.*##div[class^="video-site--panel-view_"] [aria-label] > div[id]:style(displ
 dzen.*##div[class^="video-site--video-view-sidebar__skeleton-"]:style(display: none !important)
 dzen.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid data.*.attributes.blockId)
 dzen.ru##[class*="Morda"] [id][class] > div[style*="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
-mail.yandex.*###js-mail-layout-content-header > div ~ div:not([data-testid]):style(min-height: 0 !important; margin-top: unset !important)
 mail.yandex.*##+js(json-prune, *.disable-adv)
 mail.yandex.*##+js(remove-attr, data-link-id, a, stay)
 mail.yandex.*##+js(set-constant, Object.prototype.DirectLine, undefined)
@@ -1287,7 +1286,8 @@ mail.yandex.*##+js(set-constant, Object.prototype.disable-adv, true)
 mail.yandex.*##+js(set-constant, Object.prototype.renderDirect, noopFunc)
 mail.yandex.*##.mail-Page-Body .Popup2 > .Tooltip-Content:has-text(2025)
 mail.yandex.*##.qa-LeftColumn-Footer-Promo[href="https://ya.ru"]:style(top: 32px !important; left: 6px !important; height: 36px !important; width: 60px !important; position: fixed !important; z-index: 2001 !important; opacity: 0 !important)
-mail.yandex.*##[data-testid="page-layout_right-column_container"]:style(display: none !important)
+mail.yandex.*##[data-testid^="page-layout_right-column_container"]:style(display: none !important)
+mail.yandex.*##[id^="js-mail-layout-content-header"] > div ~ div:not([data-testid]):style(min-height: 0 !important; margin-top: unset !important)
 mail.yandex.*##div[class^="MidgetsPanel"]:style(display: none !important)
 newssearch.yandex.*##.news-advert__column:style(display: none !important)
 tv.yandex.*##.recommended-ott:style(display: none !important)
@@ -1334,14 +1334,14 @@ yandex.*##div[class^="ImagesViewer-"][style^="height:"]:style(display: none !imp
 yandex.*##div[data-bem*="climate-calendar-"] ~ .content > .content__section:first-child > div[class$="__content"] + div[class]:style(display: none !important)
 yandex.com##.RelatedImagesDirect:style(display: none !important)
 yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: none !important)
-||mail.yandex.*/u2709/$empty,script,~third-party
+||mail.yandex.*/u2709/$script,~third-party,redirect=noop.js
 ||strm.yandex.ru/get/$script,domain=yandex.ru|yastatic.net
 ||strm.yandex.ru/get/*?sid=*&vsid=
 ||ya.ru/portal/proxy?blocks=feed_banner
 ||yandex-sport.naydex.net/$script,redirect=empty
 ||yandex.ru/games/_*/*/*/*/Promo.$important
 ||yandex.ru/games/_crpd/*/*_*_*_*_*_$important,xmlhttprequest
-||yastatic.net/naydex/yandex-mail/$empty,script
+||yastatic.net/naydex/yandex-mail/$redirect=noop.js
 ||yastatic.net/s3/games-static/_/build/game/desktop/yandex/Promo.$important
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
 ~games.s3.yandex.net,ya.*,yandex.*##+js(no-xhr-if, yabs.yandex.ru/count/)
