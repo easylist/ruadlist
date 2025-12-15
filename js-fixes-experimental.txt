@@ -3,7 +3,6 @@
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
 ! --- uBO scriptlets injection rules & other ---
-tapochek.net###aposnow
 growhow.in.ua###custom-background-css:remove()
 playground.ru###dfpPrerollDelay:remove()
 freesoft.ru###downloadAdModal:remove()
@@ -145,7 +144,6 @@ it-actual.ru##+js(abort-on-property-read, onload)
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 sm.news##+js(abort-on-property-read, preventSelection)
 zab.ru##+js(abort-on-property-read, scrollw)
-tapochek.net##+js(abort-on-property-read, setsnow)
 anime-chan.me##+js(abort-on-property-read, sparkle)
 footlook.top,rplnews.online##+js(abort-on-property-read, start_cl)
 bryansknovosti.ru,novozybkov.su,sudya-dredd.ru##+js(abort-on-property-read, stopPrntScr)
@@ -569,6 +567,8 @@ rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*="-view-tri
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> .wdp-onboardings-inventory-module__popup)
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*="-view-trigger-popup"])
 rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
+tapochek.net##body:has(#register_link) > canvas
+tapochek.net##body:has(#register_link) > canvas:remove()
 volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
