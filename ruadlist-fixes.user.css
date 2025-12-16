@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251210.1322
+@version        0.20251216.1834
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3048,8 +3048,19 @@
   domain("media"),
   domain("ru"),
   domain("russian.rt.com") {
-    .buttonContainer[data-name="play"][style*="left: 10px;"] {
+    [data-video_status][data-adapter="vk"] .splash-pause, 
+    [data-video_status][data-adapter="vk"]:not([data-video_status="initial"]) .splash-play {
+        display: none !important
+    }
+    [data-video_status][data-adapter="vk"] .splashContainer {
+        display: unset !important
+    }
+    .buttonContainer[data-name="play"][style*="left: 10px;"], 
+    [data-video_status][data-adapter="vk"] .splash-icon_animation_container {
         opacity: unset !important
+    }
+    [data-video_status][data-adapter="vk"] .previewContainer {
+        z-index: unset !important
     }
 }
 
@@ -4816,6 +4827,9 @@
 @-moz-document domain("tapochek.net") {
     .lenta_scrollable.poster {
         border: none !important
+    }
+    td.tRight[width="50%"] {
+        color: transparent !important
     }
     .download-torrent-btn {
         font-size: 17px !important
