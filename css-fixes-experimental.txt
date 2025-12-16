@@ -1504,6 +1504,12 @@ videoredaktor.ru##div[style^="min-height: 100vh;"]:style(min-height: 0 !importan
 ! VIQEO, обще стили для плеера
 kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##.buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
 cdn.viqeo.tv##[data-video_status="paused"] .buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
+! Фикс для VK-плеера во фреймах VIQEO
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .previewContainer:style(z-index: unset !important)
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splash-icon_animation_container:style(opacity: unset !important)
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splash-pause
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splashContainer:style(display: unset !important)
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"]:not([data-video_status="initial"]) .splash-play
 ! ---
 virtualbrest.ru##body > div[id][class] > .header > div > div:not([class^="header"]) > *
 virtualbrest.ru##body > div[id][class] > .header ~ div[class] > ul > li[class]:not(.ttyyuu)
