@@ -801,10 +801,8 @@ sinoptik.ua##head > style:empty:style(all: inherit !important)
 !#endif
 !
 ! ukr.net
-mail.ukr.net###top_banner:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##+js(abort-on-property-read, vpb)
 mail.ukr.net##+js(set-constant, Object.prototype.AdvertisingManager, noopFunc)
-mail.ukr.net##.advt:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##body > .wrapper > #main:style(overflow: hidden !important)
 www.ukr.net##div[class*=" "]:first-child + div[class*=" "]:last-child > div[class*=" "] > div[class*=" "]:first-child:empty ~ div[class*=" "]
 !#if env_mobile
@@ -813,12 +811,7 @@ www.ukr.net##.lazy-load-banner
 ! только десктопы
 !#if !env_mobile
 www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
-mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child:style(height: unset !important)
 !#endif
-mail.ukr.net###page:style(padding-top: 0 !important)
-mail.ukr.net##.sidebar:style(top: 0 !important)
-mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:not(:only-child)
-mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:not(:only-child) ~ div[class]:not([id])
 ||mail.ukr.net^$csp=connect-src 'self' *.ukr.net *.fwdcdn.com
 !
 ! Правила для компенсации отсутствия Scriptlet Doctor
