@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251221.2238
+@version        0.20251222.1304
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2111,6 +2111,9 @@
 }
 
 @-moz-document domain("forum.ru-board.com") {
+    .ny-lights {
+        animation: none !important
+    }
     .tpc > .post > a[href] {
         word-break: break-all
     }
@@ -4828,7 +4831,10 @@
     .lenta_scrollable.poster {
         border: none !important
     }
-    .topmenu td[class^="tRight"] {
+    .topmenu td.rightAlign > #garland-sound-icon {
+        color: #000000 !important
+    }
+    .topmenu td.rightAlign {
         color: transparent !important
     }
     .download-torrent-btn {
