@@ -524,6 +524,7 @@ dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
 dzen.ru##:matches-path(/a/) [class^="content--"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
+dzen.ru##:matches-path(/a/) article:matches-attr(/./=/promo-card/)
 dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class] ~ div:not([class]):not([id])
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
