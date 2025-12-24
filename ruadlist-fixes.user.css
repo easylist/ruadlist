@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251222.1304
+@version        0.20251224.2011
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1343,6 +1343,23 @@
     }
     div[class^="ShovePublic__content"], div[class^="ShovePublic__folder"] {
         width: 100% !important
+    }
+}
+
+@-moz-document
+  domain("club"),
+  domain("com"),
+  domain("kg"),
+  domain("kz"),
+  domain("md"),
+  domain("media"),
+  domain("net"),
+  domain("org"),
+  domain("ru"),
+  domain("su"),
+  domain("tv") {
+    [data-video_status][data-adapter="vk"] .previewContainer {
+        display: none !important
     }
 }
 
@@ -3051,19 +3068,8 @@
   domain("media"),
   domain("ru"),
   domain("russian.rt.com") {
-    [data-video_status][data-adapter="vk"] .splash-pause, 
-    [data-video_status][data-adapter="vk"]:not([data-video_status="initial"]) .splash-play {
-        display: none !important
-    }
-    [data-video_status][data-adapter="vk"] .splashContainer {
-        display: unset !important
-    }
-    .buttonContainer[data-name="play"][style*="left: 10px;"], 
-    [data-video_status][data-adapter="vk"] .splash-icon_animation_container {
+    .buttonContainer[data-name="play"][style*="left: 10px;"] {
         opacity: unset !important
-    }
-    [data-video_status][data-adapter="vk"] .previewContainer {
-        z-index: unset !important
     }
 }
 
