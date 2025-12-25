@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251225.139
+@version        0.20251225.1508
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1741,6 +1741,7 @@
     div[class*="-right-ad-column"], div[class*="__bannerContainer"], 
     div[class*="adContentWrapper"], div[class*="adSplitEmbed"], 
     div[class*="bannerMain"], div[class*="dzen-"][class*="-banner-"], 
+    div[class*="dzen-desktop--feed"][class*="__ad-"], 
     div[class*="dzen-desktop--feed-one-column-right-panel__ad"], 
     div[class*="dzen-desktop--top-sidebar-desktop-ad__root"], 
     div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
@@ -1764,7 +1765,7 @@
     body {
         overflow-y: unset !important
     }
-    html[class*="morda"] div[class] > [id] > div[style*="%"] {
+    [class*="orda"] div[class] > [id] > div[style*="%"] {
         padding-top: unset !important
     }
     .climate-calendar__cell {
@@ -4845,10 +4846,6 @@
     }
     .download-torrent-btn {
         font-size: 17px !important
-    }
-    .lenta-tooltips-container > .tooltip-container {
-        top: 43px !important;
-        position: fixed !important
     }
 }
 
