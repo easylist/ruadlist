@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20251226.1317
+@version        0.20251227.1213
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4028,7 +4028,8 @@
     .gp-game-card .user-profile-sidebar {
         max-width: unset !important
     }
-    a[href^="https://www.playground.ru/redirect/https/"] {
+    a[href*="clck.ru/"], a[href*="market.yandex.ru/"], a[href*="ozon.ru/"], 
+    a[href*="wildberries.ru/"] {
         pointer-events: none !important;
         color: inherit !important
     }
