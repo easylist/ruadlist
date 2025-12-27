@@ -414,14 +414,9 @@ e.mail.ru,octavius.mail.ru##.letter-list-item-adv
 news.mail.ru##.m-fixed-panel
 news.mail.ru##.r-source
 news.mail.ru##.reference-page__card ~ span:last-child
-dzen.ru##[id*="_tsar"]
 news.mail.ru##aside div > div:first-child:empty ~ div
 news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
 news.mail.ru##body > div > style + div[id]
-dzen.ru##div[class*="MyTargetAdvert"]
-dzen.ru##div[class*="news-advert"]
-dzen.ru##div[id][class*="news-"][class*="-advert"]
-dzen.ru##div[id][class*="news-"][class*="_loaded"]
 ! Дзен новости Mail-edition
 dzen.ru##[id*="410-"]
 dzen.ru##[id*="_R-A-"]
@@ -431,17 +426,24 @@ dzen.ru##[id*="_R-N-"]
 dzen.ru##[id*="_R-O-"]
 dzen.ru##[id*="_R-Q-"]
 dzen.ru##[id*="_R-U-"]
+dzen.ru##[id*="_tsar"]
 sportsdzen.ru##div[class*="-sports-button-ad_"]
 dzen.ru##div[class*="DirectAdvert"]
+dzen.ru##div[class*="MyTargetAdvert"]
 dzen.ru##div[class*="_advertItem"]
 sportsdzen.ru##div[class*="bookmakerOdds"]
 dzen.ru,sportsdzen.ru##div[class*="mascot-banner"]
+dzen.ru##div[class*="news-advert"]
 dzen.ru##div[class*="news_branding"]
 dzen.ru,sportsdzen.ru##div[class^="news-"][class*="Branding"]
 dzen.ru##div[class^="news-"][class*="_banner"]
 dzen.ru##div[class^="news-"][class*="banger"]
 dzen.ru##div[class^="news-"][class*="tsar"]
 dzen.ru,sportsdzen.ru##div[class^="news-mt-advert"]
+dzen.ru##div[class^="news-site--news-"]::after
+dzen.ru##div[class^="news-site--news-"][class*="__container-"]
+dzen.ru##div[id][class*="news-"][class*="-advert"]
+dzen.ru##div[id][class*="news-"][class*="_loaded"]
 ! Спорт
 sportmail.ru##.sidebar_video:empty
 sportmail.ru##a[href="/bookmakers/"]
