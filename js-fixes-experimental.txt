@@ -577,6 +577,7 @@ sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="back
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
+playground.ru##div.article-content:remove-class(js-redirect)
 dzen.ru##div:matches-attr(/./=dzenpro-banner)
 dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=bottom-ad)
