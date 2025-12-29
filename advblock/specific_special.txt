@@ -895,9 +895,6 @@ avtorambler.com,rambler.ru##.adfox-background-container
 championat.com,championat.ru##.adv-mark
 lenta.ru##.advertisable-plate__erid
 championat.com,championat.ru#?#.article-preview._video:-abp-has(> div > a[href*="okko.sport"])
-gazeta.press,gazeta.ru##.b_nav > a[target="_blank"]
-gazeta.press,gazeta.ru##.b_rightcol-sticky > div[id]
-gazeta.press,gazeta.ru##.b_telegram
 championat.com,championat.ru,gazeta.press,gazeta.ru,lenta.ru##.banner
 lenta.ru##.banner + div[class][id]
 championat.com,championat.ru##.banner-announce
@@ -920,7 +917,6 @@ lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##.lb-ad-visible
 gazeta.press,gazeta.ru##.m_zen
 lenta.ru##.promo-block
-gazeta.press,gazeta.ru##.rcmw-container
 championat.com,championat.ru##.recommender-block ~ .banner + div:not([class*="comments"])
 top100.rambler.ru##.rui-Snackbar-snackbar
 moslenta.ru##.sideColumn > div[class] > div[style^="margin-bottom:"] + div
@@ -938,7 +934,6 @@ auto.rambler.ru,avtorambler.com##[data-auto_media-desktop*="rnet_widget"]
 auto.rambler.ru,avtorambler.com#?#[data-auto_media-desktop="content_block"] ~ div div:-abp-has(> div > [data-rcmw-init])
 rambler.ru##[data-cerber="weather-widget"] a[href*="?erid="]
 championat.com,championat.ru##[data-champ*="Okko"]
-gazeta.press,gazeta.ru##[data-docking="left-down"] > div[style^="height:"][style*="overflow:"]
 doctor.rambler.ru##[data-doctor_media-desktop*="rnet_widget"]
 finance.rambler.ru##[data-finance_media-desktop*="rnet_widget"]
 championat.com,championat.ru##[data-goal-label="coeff_fonbet"]
@@ -994,7 +989,6 @@ horoscopes.rambler.ru##div[class][style=""]
 www.afisha.ru##div[class^="Advert"]
 r0.ru##div[class^="News__adv"]
 afisha.ru##div[data-test*="HONEY-AD"] > [data-test="FALLBACK"] > span
-gazeta.press,gazeta.ru##div[id^="__id_global_rambler_video_off_"][data-mediaposition="bottom"]
 gazeta.press,gazeta.ru##div[id^="_g_exchange_"]
 avtorambler.com,rambler.ru##div[id^="rambler-info-banner-"]
 avtorambler.com,rambler.ru##div[id^="rcmw-container-"][id*="-horizontal-"]
@@ -1034,7 +1028,6 @@ nova.rambler.ru##section > article[class*=" Serp__item"]:not([class^=" Serp__ite
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
 ||static.gazeta.ru/nm2021/js/others_scripts_
 ||trafffgen.rambler.ru^
-||vp.rambler.ru/player/*&mediaposition=bottom&$subdocument,domain=gazeta.press|gazeta.ru
 ||winline.rambler.ru^
 !#if ext_abp
 www.rambler.ru#?##app > div:-abp-properties(min-height: 250px)
@@ -1045,6 +1038,7 @@ weather.rambler.ru#?#div:-abp-properties(min-height: 600px)
 !#endif
 ! мобильная версия
 gazeta.press,gazeta.ru###in-read
+gazeta.press,gazeta.ru##[eridchecked]
 avtorambler.com,rambler.ru#?#div:-abp-has(> div[style^="min-height:"]) > p ~ div:-abp-contains(Продолжение истории после рекламы)
 gazeta.press,gazeta.ru##div[class^="gazeta-dynamic-ban-"]
 gazeta.press,gazeta.ru##div[id^="block_pad_id"]
