@@ -823,11 +823,13 @@ www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
 ! Правила для компенсации отсутствия Scriptlet Doctor
 !#if env_firefox
 /^https?:\/\/strm\.yandex\.ru\/get\/[^\s]{1300,}$/$xmlhttprequest,domain=widgets.kinopoisk.ru|www.kinopoisk.ru|yastatic.net
-www.kinopoisk.ru##div[class*=" styles_additionalInformationSection__"] > div[class^="styles_root"]:nth-child(-n+4) > div:remove()
+www.kinopoisk.ru##[style^="height:"][style*="250px"]
+www.kinopoisk.ru##div[class*=" styles_additionalInformationSection__"] div[class*="styles_rootRendered"]
 www.kinopoisk.ru##div[class*="__sidebar-content"] div[id][class*="__container"]
 www.kinopoisk.ru##div[class^="styles_sticky__"] > div[class^="styles_root"] > div:remove()
 www.kinopoisk.ru##div[id*="special_popup_desktop"]
 www.kinopoisk.ru##div[id][class^="styles_container__"] > div[id][class]
+www.kinopoisk.ru##div[id^="R-A-"]:remove()
 www.kinopoisk.ru##div[id^="yandex"][class] > div[id][class]:remove()
 www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 !#endif
