@@ -1472,8 +1472,8 @@ $document,removeparam=int_cid,domain=svoboda.org
 $document,removeparam=mp_source,domain=ati.su
 $document,removeparam=npr,domain=ya.ru|yandex.*
 $document,removeparam=nr,domain=ya.ru|yandex.*
-$document,removeparam=rcmd_alg,domain=radiosputnik.ru
-$document,removeparam=rcmd_id,domain=radiosputnik.ru
+$document,removeparam=rcmd_alg,domain=radiosputnik.ru|ria.ru
+$document,removeparam=rcmd_id,domain=radiosputnik.ru|ria.ru
 $document,removeparam=redirect_ts,domain=ya.ru|yandex.*
 $document,removeparam=ref_domain,domain=vkvideo.ru
 $document,removeparam=srsltid
@@ -1623,7 +1623,6 @@ $removeparam=ysclid
 ?pokupki=$document,removeparam=|,domain=market.yandex.*
 ?previewToken=$document,removeparam=|,domain=maximonline.ru
 ?prov=ukrnet$removeparam=prov
-?rcmd_$document,removeparam=|rcmd_,domain=ria.ru
 ?ruid=$document,removeparam=|ruid,domain=autodaily.ru|autonews.ru|rbc.ru|sportrbc.ru
 ?source=tableau_tv$document,removeparam=|,domain=yandex.*
 ?source=ukrnet$document,removeparam=|
