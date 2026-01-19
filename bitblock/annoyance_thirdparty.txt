@@ -168,12 +168,6 @@
 ||widget.onlinetv.ru^
 ||www.rb.ru^$third-party
 !
-! - Фреймы twitch.tv с автозапуском, только для ABP, в uBO работает disableAutoplay
-!#if ext_abp
-rbkgames.com##iframe[src^="https://player.twitch.tv?autoplay=true"][src*="rbkgames"]
-||player.twitch.tv/?autoplay=true&channel=rbkgames$subdocument,domain=rbkgames.com
-!#endif
-!
 ! - Прочее --------------------------------------------------------------------
 ||101widgets.com^$third-party
 ||2142-stats.com^$third-party
