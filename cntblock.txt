@@ -1756,10 +1756,6 @@ $document,removeparam=ustq,domain=r.mail.ru
 !
 ! исключения
 @@/forum\/(login|release|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnm-club.me|nnmclub.ro|nnmclub.to
-@@|https://www.sravni.ru/$subdocument,removeparam=utm_campaign
-@@|https://www.sravni.ru/$subdocument,removeparam=utm_content
-@@|https://www.sravni.ru/$subdocument,removeparam=utm_medium
-@@|https://www.sravni.ru/$subdocument,removeparam=utm_source
 @@||career.habr.com/vacancies?*=email_subscriptions|$removeparam
 @@||quke.ru/promocodes?$document,removeparam
 @@||svpressa.ru/*/?page=1|$removeparam
