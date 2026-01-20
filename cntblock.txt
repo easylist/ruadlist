@@ -1562,7 +1562,7 @@ $removeparam=tt_content,domain=twitch.tv
 $removeparam=tt_medium,domain=twitch.tv
 $removeparam=utm-source
 $removeparam=utm_auth,domain=gazeta.press|gazeta.ru
-$removeparam=utm_campaign,domain=~usprobioticguide.com
+$removeparam=utm_campaign,domain=~quke.ru|~usprobioticguide.com
 $removeparam=utm_campaing
 $removeparam=utm_cmpaign
 $removeparam=utm_content
@@ -1757,5 +1757,4 @@ $document,removeparam=ustq,domain=r.mail.ru
 ! исключения
 @@/forum\/(login|release|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnm-club.me|nnmclub.ro|nnmclub.to
 @@||career.habr.com/vacancies?*=email_subscriptions|$removeparam
-@@||quke.ru/promocodes?$document,removeparam
 @@||svpressa.ru/*/?page=1|$removeparam
