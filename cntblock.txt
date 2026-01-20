@@ -1463,7 +1463,6 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 4pda.*##+js(abort-on-property-read, document.referrer)
 !
 ! Экспериментальные правила для маркеров
-$document,removeparam=/[a-z]\=1$/,domain=svpressa.ru
 $document,removeparam=__rr,domain=ozon.ru
 $document,removeparam=ai,domain=ggsel.net
 $document,removeparam=clid,domain=dzen.ru|ya.ru|yandex.*
@@ -1754,7 +1753,23 @@ $document,removeparam=usqid,domain=r.mail.ru
 $document,removeparam=usstr,domain=r.mail.ru
 $document,removeparam=ustq,domain=r.mail.ru
 !
+! Svpressa.ru
+$document,removeparam=cba,domain=svpressa.ru
+$document,removeparam=cban,domain=svpressa.ru
+$document,removeparam=fotd,domain=svpressa.ru
+$document,removeparam=fpi,domain=svpressa.ru
+$document,removeparam=ft,domain=svpressa.ru
+$document,removeparam=itg,domain=svpressa.ru
+$document,removeparam=lbq,domain=svpressa.ru
+$document,removeparam=nbt,domain=svpressa.ru
+$document,removeparam=notd,domain=svpressa.ru
+$document,removeparam=npm,domain=svpressa.ru
+$document,removeparam=qcq,domain=svpressa.ru
+$document,removeparam=qht,domain=svpressa.ru
+$document,removeparam=qt,domain=svpressa.ru
+$document,removeparam=top,domain=svpressa.ru
+$document,removeparam=tvtd,domain=svpressa.ru
+!
 ! исключения
 @@/forum\/(login|release|torrent)\.php\?(logout|mode)\=/$removeparam,domain=nnm-club.me|nnmclub.ro|nnmclub.to
 @@||career.habr.com/vacancies?*=email_subscriptions|$removeparam
-@@||svpressa.ru/*/?page=1|$removeparam
