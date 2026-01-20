@@ -1661,6 +1661,16 @@ utm_source=*partner=$document,removeparam=partner
 ||youtube.com/embed/$subdocument,removeparam=iv_load_policy
 ||youtube.com/embed/$subdocument,removeparam=rel
 !
+! Appsflyer (onelink.me)
+$document,removeparam=af_xp
+$document,removeparam=shortlink
+$removeparam=af_click_lookback
+$removeparam=af_force_deeplink
+$removeparam=is_retargeting
+is_retargeting=$removeparam=c
+is_retargeting=$removeparam=pid
+is_retargeting=$removeparam=source_caller
+!
 ! Dzen
 $document,removeparam=annot_type,domain=dzen.ru|sportsdzen.ru
 $document,removeparam=cl4url,domain=dzen.ru|sportsdzen.ru
