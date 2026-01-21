@@ -250,6 +250,7 @@ e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
 pikabu.ru##+js(href-sanitizer, a[href^="https://pikabu.ru/"][href*="?u=http"], ?u)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://robot.mos.ru/"], ?url)
+rutube.ru##+js(href-sanitizer, a[href^="https://rutube.ru/api/routing/"][href*="away?target"], ?target)
 nsportal.ru##+js(href-sanitizer, a[href^="https://www.google.com/url?q="])
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://www.gosuslugi.ru/ref?t="], ?to)
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
