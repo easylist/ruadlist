@@ -1479,7 +1479,7 @@ $document,removeparam=redirect_ts,domain=ya.ru|yandex.*
 $document,removeparam=ref_domain,domain=vkvideo.ru
 $document,removeparam=srsltid
 $document,removeparam=topblock,domain=3dnews.ru
-$document,removeparam=via,domain=dzen.*|yandex.*
+$document,removeparam=via,domain=dzen.ru|yandex.*
 $document,subdocument,removeparam=trackcode,domain=vk.com
 $removeparam=?utm_source
 $removeparam=_1ld,domain=vkplay.ru
@@ -1554,6 +1554,7 @@ $removeparam=referrer_clid
 $removeparam=rtclick
 $removeparam=searchid,domain=kufar.by
 $removeparam=short_domain,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+$removeparam=sid,domain=nnm-club.me|nnmclub.ro|nnmclub.to
 $removeparam=source_ve_path,domain=youtube.com
 $removeparam=traffic_source
 $removeparam=tt_content,domain=twitch.tv
@@ -1610,7 +1611,7 @@ $removeparam=ysclid
 /search/*$document,removeparam=search_source,domain=ya.ru|yandex.*
 /search/*$document,removeparam=src,domain=ya.ru|yandex.*
 /search/*$document,removeparam=suggest_reqid,domain=ya.ru|yandex.*
-/story/*?lang=$document,removeparam=|,domain=dzen.*|sportsdzen.*|yandex.*
+/story/*?lang=$document,removeparam=|,domain=dzen.ru|sportsdzen.ru|yandex.*
 ://aliexpress.*.htm?spm=$document,removeparam=|,domain=aliexpress.*
 =ukraine_news&utm_$document,removeparam=|utm_
 ?*r_audience=$document,removeparam=|,domain=ria.com
@@ -1630,11 +1631,12 @@ $removeparam=ysclid
 ?source=ukrnet$document,removeparam=|
 ?sub_confirmation=1$document,removeparam=|,domain=youtube.com
 ?ymclid=$document,removeparam=|
+@@/forum\/(login|release|torrent)\.php\?(logout|mode)\=/$document,domain=nnm-club.me|nnmclub.ro|nnmclub.to
 aff_fcid=$document,removeparam=|,domain=aliexpress.*|~campaign.aliexpress.com
 algo_pvid=$document,removeparam=|,domain=aliexpress.*
 block_click=$removeparam=block_click,domain=rambler.ru
 fbclid=$document,removeparam=fbclid
-from=*_portal&lang=$document,removeparam=|,domain=dzen.*|yandex.*
+from=*_portal&lang=$document,removeparam=|,domain=dzen.ru|yandex.*
 from=pogoda$document,removeparam=from,domain=116.ru|14.ru|161.ru|164.ru|178.ru|26.ru|29.ru|35.ru|43.ru|45.ru|48.ru|51.ru|53.ru|56.ru|59.ru|60.ru|63.ru|68.ru|71.ru|72.ru|74.ru|76.ru|86.ru|89.ru|93.ru|chita.ru|e1.ru|ircity.ru|mgorsk.ru|msk1.ru|ngs.ru|ngs22.ru|ngs24.ru|ngs42.ru|ngs55.ru|ngs70.ru|nn.ru|proizhevsk.ru|provoronezh.ru|sochi1.ru|sterlitamak1.ru|tolyatty.ru|ufa1.ru|v1.ru|vladivostok1.ru|ya62.ru
 referrer=appmetrica_tracking_id$document,removeparam=referrer
 utm_$document,removeparam=ig_rid,domain=instagram.com
