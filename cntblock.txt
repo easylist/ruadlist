@@ -1281,6 +1281,8 @@ dzen.*##div[class^="video-site--panel-view_"] [aria-label] > div[id]:style(displ
 dzen.*##div[class^="video-site--video-view-sidebar__skeleton-"]:style(display: none !important)
 dzen.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid data.*.attributes.blockId)
 dzen.ru##[class*="Morda"] [id][class] > div[style*="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
+eda.yandex.ru##main#main main > div[style^="margin-bottom:"] [aria-label="Акция"]
+eda.yandex.ru#?#main#main main > div[style^="margin-bottom:"]:-abp-has([aria-label="Акция"])
 mail.yandex.*##+js(remove-attr, data-link-id, a, stay)
 mail.yandex.*##+js(set-constant, Object.prototype.DirectLine, undefined)
 mail.yandex.*##+js(set-constant, Object.prototype.renderDirect, noopFunc)
