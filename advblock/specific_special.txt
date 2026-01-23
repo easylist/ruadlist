@@ -1134,16 +1134,14 @@ utro.ru##div[class^="partners-block"]
 ||zoom.cnews.ru/inc/bpic/
 !
 ! Spaces и зеркала
-strip2.club,strip2.in,strip2.xxx,usersporn.com###sidebar > div[class]:last-child
-google-cloud.services,strip2.club,strip2.in,strip2.xxx,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
-gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##.rightbar__reklama
-gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##.tiled_cap
-strip2.club,strip2.in,strip2.xxx,usersporn.com##.tiles_wrapper > .js-file_item ~ div:not([class*="tiled"])
-/^(?!.*(spac.me)).*$/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.net|spac1.org|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.pro|spcs.reviews|spcs.social|strip2.club|strip2.in|strip2.xxx|usersporn.com
-gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.pro,spcs.reviews,spcs.social#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
-gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##div[id][class][style="min-height:150px"]
-! Temporary rule, until denyallow in ABP-MV3 is implemented
-||world/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.net|spac1.org|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.pro|spcs.reviews|spcs.social|strip2.club|strip2.in|strip2.xxx|usersporn.com
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###sidebar > div[class]:last-child
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##.rightbar__reklama
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##.tiled_cap
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##.tiles_wrapper > .js-file_item ~ div:not([class*="tiled"])
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##div[id][class][style="min-height:150px"]
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
+||world/$third-party,script,domain=google-cloud.services|spac.me|spaces.im|spcs.bio|strip2.co|usersporn.com
 !
 ! Sports.ru, а также by.tribuna.com, ua.tribuna.com
 sports.ru###media-promo-mount-point [class*="adv-text"]
