@@ -486,6 +486,8 @@ footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
 dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)
 online-fix.me##.content > .errors
+gamemag.ru##.content-text:has(em:has-text(erid:)) a > strong:style(font-weight: inherit !important)
+gamemag.ru##.content-text:has(em:has-text(erid:)) a:style(pointer-events: none !important; color: inherit !important)
 playground.ru##.dfp-container:remove()
 smotrim.ru##.dialog-wrapper
 reshu.by,reshuent.kz,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
@@ -890,9 +892,4 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
 ||cdn.viqeo.tv/js/assets/master-*/styles/vn_player.css$stylesheet
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
-!#endif
-!
-! Mobile only
-!#if env_mobile
-gamemag.ru#@?#.news-item-wrap > .news-item:-abp-has(> span:-abp-contains(Ad))
 !#endif
