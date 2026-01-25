@@ -2815,6 +2815,7 @@ yandex.ru,yandex.*##footer > [class^="AppFooterLinks_links_"] > div:last-child
 !#if ext_abp
 e.mail.ru,octavius.mail.ru#@##app-canvas .layout__overflow-container > .advert-column
 e.mail.ru,octavius.mail.ru#@##app-canvas .layout__overflow-container > .slot
+mail.ru###grid .widget__container .tgbv-wrapper
 mail.ru###grid:not(.grid) .widget__container ~ .widget__container > div:not([class*=" "])
 cloud.mail.ru#?##react-modals:-abp-has(a[href^="https://vk.cc/"])
 dzen.ru###ya-dist
@@ -2826,7 +2827,7 @@ ya.ru##.body__feed-wrapper
 e.mail.ru,octavius.mail.ru#@#.layer-sent-page__banner
 e.mail.ru,octavius.mail.ru##.layer-sent-page__banner [class]
 e.mail.ru,octavius.mail.ru##.layout__column-wrapper > .react-async
-e.mail.ru,octavius.mail.ruu##.layout__column_right-indented
+e.mail.ru,octavius.mail.ru##.layout__column_right-indented
 e.mail.ru,octavius.mail.ru##.layout__letter-content > .react-async
 e.mail.ru,octavius.mail.ru#@#.letter-list-item-adv
 mail.ru#@#.mailru-visibility-check
@@ -2834,6 +2835,7 @@ dzen.ru#?#.mg-grid__item_type_card:-abp-has(> div[class*="loader_animated"])
 dzen.ru#?#.news-app__heading:-abp-has(> h1:-abp-contains(Реклама))
 mail.ru#@#.tgb-wrapper
 mail.ru#@#.tgbv-wrapper
+mail.ru#@#.trb_taboola
 dzen.ru##.video-card-ads
 e.mail.ru,octavius.mail.ru#?#.vkuiPopoutRoot:-abp-has(a[href^="https://vk.cc/"])
 mail.ru##.widget-uber-wrapper
@@ -2856,7 +2858,7 @@ dzen.ru##div[class*="column_myTarget"]
 e.mail.ru,octavius.mail.ru##div[class*="layout"] .letter-list-item-adv
 e.mail.ru,octavius.mail.ru##div[class*="layout"] .promo-block-letter
 dzen.ru##div[class^="article-"][class*="-placeholder__root"]
-mail.ru##div[class^="tg"][class*="-wrapper_"]
+mail.ru##div[class^="tg"][class*="-wrapper "]
 mail.ru##div[id^="mailru"]
 mail.*##.tv-widget [class^="vk-video"]
 mail.*##.tv-widget [class^="vk-video"] {remove:true;}
