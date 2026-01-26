@@ -66,7 +66,7 @@ IGNORE = ("CC-BY-SA.txt", "easytest.txt", "GPL.txt", "MPL.txt", "antinuha.txt",
 KNOWNOPTIONS = ("badfilter", "cname", "collapse", "doc", "document", "elemhide", "empty", "font",
                 "genericblock", "generichide", "image", "important", "inline-script",
                 "match-case", "media", "object", "object-subrequest", "other", "ping", "popunder", "popup",
-                "script", "stylesheet", "subdocument",  "first-party", "third-party",
+                "reason", "script", "stylesheet", "subdocument",  "first-party", "third-party",
                 "websocket", "webrtc", "xmlhttprequest")
 # List of known key=value parameters (domain is not included)
 KNOWNPARAMETERS = ("csp", "header", "queryprune", "removeparam", "rewrite", "redirect", "redirect-rule")
