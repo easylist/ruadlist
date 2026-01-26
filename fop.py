@@ -69,7 +69,7 @@ KNOWNOPTIONS = ("badfilter", "cname", "collapse", "doc", "document", "elemhide",
                 "reason", "script", "stylesheet", "subdocument",  "first-party", "third-party",
                 "websocket", "webrtc", "xmlhttprequest")
 # List of known key=value parameters (domain is not included)
-KNOWNPARAMETERS = ("csp", "header", "queryprune", "removeparam", "rewrite", "redirect", "redirect-rule")
+KNOWNPARAMETERS = ("csp", "header", "queryprune", "removeparam", "rewrite", "redirect", "redirect-rule", "reason")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
