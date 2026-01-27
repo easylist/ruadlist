@@ -522,7 +522,6 @@ player.twitch.tv##.ubo-overlay > .player-ad-notice
 dynamo.kiev.ua##.video-scroll:remove()
 lenta.ru##.vk-video-popup:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
-/(aniqit|kodik)./$subdocument,removeparam=geoblock
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)

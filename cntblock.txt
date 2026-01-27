@@ -1464,6 +1464,17 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 ! редирект
 4pda.*##+js(abort-on-property-read, document.referrer)
 !
+! Геоблокировки в плеерах
+||aniqit.com/*geoblock=$subdocument,removeparam=geoblock
+||api.namy.ws/embed/*geo_block=$subdocument,removeparam=geo_block
+||api.namy.ws/embed/*geoBlock=$subdocument,removeparam=/geoblock/i
+||assistant.allarknow.online/*block=$subdocument,removeparam=block
+||assistant.stloadi.live/*block=$subdocument,removeparam=block
+||kodik.cc/*geoblock=$subdocument,removeparam=geoblock
+||kodik.info/*geoblock=$subdocument,removeparam=geoblock
+||kodikdb.com/*geoblock=$subdocument,removeparam=geoblock
+||obrut.show/*geo_block=$subdocument,removeparam=geo_block
+!
 ! Экспериментальные правила для маркеров
 $document,removeparam=__rr,domain=ozon.ru
 $document,removeparam=ai,domain=ggsel.net
