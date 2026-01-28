@@ -16,8 +16,8 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.922
-# Adjusted for RU Adlist by Lain Inverse in 2020
+VERSION = 3.923
+# Adjusted for RU Adlist by Lain Inverse in 2026
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -273,7 +273,9 @@ def filtertidy (filterin):
         return removeunnecessarywildcards(filterin, False)
     else:
         # If applicable, separate and sort the filter options in addition to the filter text
-        optionlist = optionsplit.group(2).lower().split(",")
+        optionlist = optionsplit.group(2).split(",")
+        # Change to lowercase everything but removeparam since it is case-sensitive
+        optionlist = list(map(lambda option: option if option[0:12] == "removeparam=" else option.lower(), optionlist))
 
         domainlist = []
         removeentries = []
