@@ -1493,6 +1493,7 @@ $document,removeparam=ref_domain,domain=vkvideo.ru
 $document,removeparam=srsltid
 $document,removeparam=topblock,domain=3dnews.ru
 $document,removeparam=via,domain=dzen.ru|yandex.*
+$document,removeparam=ymclid,domain=~ozon.onelink.me
 $document,subdocument,removeparam=trackcode,domain=vk.com
 $removeparam=?utm_source
 $removeparam=_1ld,domain=vkplay.ru
@@ -1598,11 +1599,6 @@ $removeparam=yaclid
 $removeparam=yclid
 $removeparam=yredirect
 $removeparam=ysclid
-&ymclid=$document,removeparam=|,domain=~ozon.onelink.me
-.com/?_ga=$document,removeparam=|
-.net/?_ga=$document,removeparam=|
-.ru/?_ga=$document,removeparam=|
-.ua/?_ga=$document,removeparam=|
 /*=tabbar$document,removeparam=from,domain=ya.ru|yandex.*
 /*=tabbar$document,removeparam=source,domain=ya.ru|yandex.*
 /?amp;utm_*ukr$document,removeparam=|
@@ -1633,7 +1629,6 @@ $removeparam=ysclid
 ?source=tableau_tv$document,removeparam=|,domain=yandex.*
 ?source=ukrnet$document,removeparam=|
 ?sub_confirmation=1$document,removeparam=|,domain=youtube.com
-?ymclid=$document,removeparam=|
 @@/forum\/(login|release|torrent)\.php\?(logout|mode)\=/$document,domain=nnm-club.me|nnmclub.ro|nnmclub.to
 block_click=$removeparam=block_click,domain=rambler.ru
 fbclid=$document,removeparam=fbclid
