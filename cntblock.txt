@@ -1615,9 +1615,6 @@ $removeparam=ysclid
 /search/*$document,removeparam=src,domain=ya.ru|yandex.*
 /search/*$document,removeparam=suggest_reqid,domain=ya.ru|yandex.*
 /story/*?lang=$document,removeparam=|,domain=dzen.ru|sportsdzen.ru|yandex.*
-=ukraine_news&utm_$document,removeparam=|utm_
-?*r_audience=$document,removeparam=|,domain=ria.com
-?commercial=$document,removeparam=|,domain=ria.com
 ?e=lfm$document,removeparam=|,domain=sports.ru
 ?from=$document,removeparam=from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autodaily.ru|autonews.ru|autopilot.ru|habr.com|igromania.ru|klops.ru|kommersant.ru|mail.ru|metro-cc.ru|mk.ru|myweekend.ru|ntv.ru|ozon.ru|quote.ru|rbc.ru|rbclife.ru|ridus.ru|sportmail.ru|sportrbc.ru|sports.ru|vkplay.ru
 ?from=$document,xmlhttprequest,removeparam=from,domain=vedomosti.ru
@@ -1784,6 +1781,13 @@ $document,removeparam=usln,domain=r.mail.ru
 $document,removeparam=usqid,domain=r.mail.ru
 $document,removeparam=usstr,domain=r.mail.ru
 $document,removeparam=ustq,domain=r.mail.ru
+!
+! Ria.com
+$removeparam=r_audience,domain=ria.com
+$removeparam=r_campaign,domain=ria.com
+$removeparam=r_medium,domain=ria.com
+$removeparam=r_source,domain=ria.com
+$removeparam=withoutHeader,domain=ria.com
 !
 ! Svpressa.ru
 $document,removeparam=cba,domain=svpressa.ru
