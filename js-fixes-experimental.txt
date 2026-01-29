@@ -535,6 +535,7 @@ dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > 
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
+dzen.ru##:matches-path(/news) div[id*="feed"] > div:not([id]) > div[id*="feed"]
 dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div:matches-attr(/./=/card$/) ~ div[id]
 forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)
 pronpic.org#@#:not(obhod-adblocka)
