@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260127.1944
+@version        0.20260129.1812
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1736,11 +1736,13 @@
     [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    article[data-card-type*="-promo"], div[class*="--corner-banner_"], 
-    div[class*="-right-ad-column"], div[class*="__bannerContainer"], 
-    div[class*="adContentWrapper"], div[class*="adSplitEmbed"], 
-    div[class*="bannerMain"], div[class*="dzen-"][class*="-banner-"], 
-    div[class*="dzen-desktop--feed"][class*="__ad-"], 
+    article[data-card-type*="-promo"], 
+    div:not(.news-rubric-desktop__adv-column) > div[class^="mg-sticky"], 
+    div[class*="--corner-banner_"], div[class*="-right-ad-column"], 
+    div[class*="__bannerContainer"], div[class*="adContentWrapper"], 
+    div[class*="adSplitEmbed"], div[class*="bannerMain"], 
+    div[class*="dzen-"][class*="-banner-"], 
+    div[class*="dzen-desktop--"][class*="__ad-"], 
     div[class*="dzen-desktop--feed-one-column-right-panel__ad"], 
     div[class*="dzen-desktop--top-sidebar-desktop-ad__root"], 
     div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
