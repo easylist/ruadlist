@@ -1465,16 +1465,16 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 4pda.*##+js(abort-on-property-read, document.referrer)
 !
 ! Геоблокировки в плеерах
+||allarknow.online/*block=$subdocument,removeparam=block
 ||aniqit.com/*geoblock=$subdocument,removeparam=geoblock
-||api.namy.ws/embed/*geo_block=$subdocument,removeparam=geo_block
-||api.namy.ws/embed/*geoBlock=$subdocument,removeparam=geoBlock
-||api.variyt.ws/embed/*geoBlock=$subdocument,removeparam=geoBlock
-||assistant.allarknow.online/*block=$subdocument,removeparam=block
-||assistant.stloadi.live/*block=$subdocument,removeparam=block
 ||kodik.cc/*geoblock=$subdocument,removeparam=geoblock
 ||kodik.info/*geoblock=$subdocument,removeparam=geoblock
 ||kodikdb.com/*geoblock=$subdocument,removeparam=geoblock
+||namy.ws/embed/*geo_block=$subdocument,removeparam=geo_block
+||namy.ws/embed/*geoBlock=$subdocument,removeparam=geoBlock
 ||obrut.show/*geo_block=$subdocument,removeparam=geo_block
+||stloadi.live/*block=$subdocument,removeparam=block
+||variyt.ws/embed/*geoBlock=$subdocument,removeparam=geoBlock
 !
 ! Экспериментальные правила для маркеров
 $document,removeparam=__rr,domain=ozon.ru
