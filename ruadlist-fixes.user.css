@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260129.1812
+@version        0.20260201.1517
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2708,14 +2708,9 @@
 
 @-moz-document
   domain("innal.top"),
-  domain("zannn.top") {
-    table.lista[width="100%"][style] > tbody > tr > td.header[width="110px"] {
-        color: transparent !important
-    }
-    body {
-        margin-top: 0 !important
-    }
-    div#main {
+  domain("zannn.top"),
+  domain("seedoff.net") {
+    body, div#main {
         margin-top: 0 !important;
         margin-bottom: 0 !important
     }
