@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260201.1517
+@version        0.20260201.2225
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2708,8 +2708,8 @@
 
 @-moz-document
   domain("innal.top"),
-  domain("zannn.top"),
-  domain("seedoff.net") {
+  domain("seedoff.net"),
+  domain("zannn.top") {
     body, div#main {
         margin-top: 0 !important;
         margin-bottom: 0 !important
@@ -4787,24 +4787,6 @@
 @-moz-document domain("stranamam.ru") {
     .n-main-branding-container {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document domain("stratege.ru") {
-    html {
-        background-color: #dbdbdb !important
-    }
-    #vbulletin_html body > div[id][class], html.home > body idiv[class][id] {
-        background: none !important
-    }
-    #vbulletin_html .above_body {
-        margin-bottom: auto !important
-    }
-    #footer {
-        margin-top: 0 !important
-    }
-    #vbulletin_html #globalcontent {
-        margin-top: unset !important
     }
 }
 
