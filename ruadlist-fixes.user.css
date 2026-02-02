@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260201.2225
+@version        0.20260202.1759
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2710,7 +2710,7 @@
   domain("innal.top"),
   domain("seedoff.net"),
   domain("zannn.top") {
-    body, div#main {
+    body[style*="margin"], div#main {
         margin-top: 0 !important;
         margin-bottom: 0 !important
     }
