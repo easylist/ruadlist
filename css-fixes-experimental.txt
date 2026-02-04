@@ -1608,6 +1608,7 @@ dzen.ru##div[class*="watch-page-content"] [aria-label] > div[id]
 ! статьи
 dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
+dzen.ru##div[class*="-ad-block_"]
 dzen.ru##div[class*="-right-ad-column"]
 dzen.ru##div[class*="adContentWrapper"]
 dzen.ru##div[class*="adSplitEmbed"]
@@ -1623,9 +1624,11 @@ dzen.ru##.news-page-layout__rubricator ~ [id]
 dzen.ru##.news-rubric-desktop__adv-column
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
+dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
 dzen.ru##div:not(.news-rubric-desktop__adv-column) > div[class^="mg-sticky"]
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
+dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site--"] > section ~ [id]
 dzen.ru##div[id^="ad-"][class*=" news-"]
