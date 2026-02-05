@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260204.1542
+@version        0.20260205.1412
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1747,11 +1747,11 @@
     div[class*="adContentWrapper"], div[class*="adSplitEmbed"], 
     div[class*="bannerMain"], div[class*="dzen-"][class*="-banner-"], 
     div[class*="dzen-desktop--"][class*="__ad-"], 
-    div[class*="dzen-desktop--feed-one-column-right-panel__ad"], 
     div[class*="dzen-desktop--top-sidebar-desktop-ad__root"], 
     div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
     div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child, 
     div[class*="watch-page-content"] [aria-label] > div[id], 
+    div[class^="dzen-desktop--one-column-with-side-panel__right"], 
     div[class^="news-site--"] > section ~ [id], div[id$="-rtb"], 
     div[id*="splashscreen"], div[id^="ad-"][class*=" news-"], 
     div[id^="article-showcase-"], div[style*="important"] div[class*="__main"] {
@@ -3089,18 +3089,6 @@
   domain("smartphone.ua") {
     #header {
         height: auto !important
-    }
-}
-
-@-moz-document
-  domain("kriminal.net.ua"),
-  domain("news.dn.ua") {
-    #popup-manager.popup-show + #layout {
-        -webkit-filter: none !important;
-        filter: none !important
-    }
-    #popup-manager.popup-show {
-        display: none !important
     }
 }
 
