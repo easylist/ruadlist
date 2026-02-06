@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260205.1412
+@version        0.20260206.1128
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1737,7 +1737,7 @@
     [class*="segment__container"] > div > article[class^="card "] ~ div:last-child, 
     [class*="yandex-direct"], [class^="dzen-desktop--main-page-"], 
     [class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"], 
-    [data-testid="dzenpro-banner"], [id*="card-rtb"], 
+    [data-is-rendered="false"], [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     article[data-card-type*="-promo"], 
@@ -1770,7 +1770,8 @@
     body {
         overflow-y: unset !important
     }
-    [class*="orda"] div[class] > [id] > div[style*="%"] {
+    [class*="orda"] div[class] > [id] > div[style*="%"], 
+    div[style*="branding"] div[class] > [id] > div[style*="%"] {
         padding-top: unset !important
     }
     .climate-calendar__cell {
@@ -4779,6 +4780,15 @@
 @-moz-document domain("stranamam.ru") {
     .n-main-branding-container {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("stratege.ru") {
+    html {
+        background-color: #dbdbdb !important
+    }
+    #vbulletin_html .above_body {
+        margin-bottom: auto !important
     }
 }
 
