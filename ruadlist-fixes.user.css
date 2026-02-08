@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260206.1128
+@version        0.20260207.1343
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1000,7 +1000,6 @@
   domain("pay-day.ru"),
   domain("roem.ru"),
   domain("rusfootball.info"),
-  domain("trupornolabs.org"),
   domain("utorr.cc"),
   domain("vc.ru"),
   domain("virusinfo.info"),
@@ -2411,6 +2410,12 @@
 
 @-moz-document domain("goodgame.ru") {
     .main-block .main-inner-wrap {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("gooool365.org") {
+    body > .page {
         margin-top: 0 !important
     }
 }
