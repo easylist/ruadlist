@@ -1357,6 +1357,7 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 !#if env_mv3
 dzen.ru,ya.ru##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 dzen.ru,ya.ru##+js(cookie-remover, /ancQTZw|bltsr|HgGedof|KIykI/)
+dzen.ru,ya.ru##+js(prevent-setTimeout, BLOCKERS)
 dzen.ru,ya.ru##+js(set-constant, Object.prototype.AdblockCookieMatchingType, undefined)
 !#endif
 !
@@ -1394,6 +1395,7 @@ yandex.*##div[id*="page"] div[class*="_banner_"]:style(display: none !important)
 @@||yandex.ru/ads/system/context.js?|$script,domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/context.js|$domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/header-bidding.js|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
+@@||yandex.ru/ads/system/widget.js|$script,domain=dzen.ru
 @@||yastatic.net/daas/atom.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/pcode/adfox/loader.js|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/safeframe-bundles/*/host.js|$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
