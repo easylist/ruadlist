@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260207.1343
+@version        0.20260210.1318
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -318,19 +318,6 @@
     }
 }
 
-@-moz-document domain("aces.gg") {
-    body {
-        background: black !important;
-        cursor: default
-    }
-    #alert > * {
-        pointer-events: auto
-    }
-    #alert {
-        pointer-events: none
-    }
-}
-
 @-moz-document domain("adme.media") {
     body.ReactModal__Body--open > div[style^="z-index: 999; position: absolute;"] {
         display: none !important
@@ -545,7 +532,18 @@
   domain("appleinsider.ru") {
     [href*="://s.click.aliexpress.ru/"], [href^="https://www.ozon.ru/product/"], 
     a[href*="://ali.ski/"], a[href*="://aliexpress.ru/item/"], 
-    a[href*="://bit.ly/"], a[href*="://s.zbanx.com/r/"], a[href*="erid="] {
+    a[href*="://bit.ly/"], a[href*="://s.zbanx.com/r/"] {
+        pointer-events: none !important;
+        color: inherit !important;
+        border-bottom: inherit !important
+    }
+}
+
+@-moz-document
+  domain("androidinsider.ru"),
+  domain("appleinsider.ru"),
+  domain("iguides.ru") {
+    a[href*="erid="] {
         pointer-events: none !important;
         color: inherit !important;
         border-bottom: inherit !important
@@ -2235,15 +2233,6 @@
     }
 }
 
-@-moz-document domain("game-pool.ru") {
-    body:not(#id) {
-        background-image: none !important
-    }
-    div[class^="container-content"] > div[class^="obolox"] {
-        margin-top: 52px !important
-    }
-}
-
 @-moz-document domain("game2day.ru") {
     body > .container {
         margin-top: 120px !important
@@ -3876,15 +3865,6 @@
 @-moz-document domain("online-fix.me") {
     .quote a.btn {
         pointer-events: auto !important
-    }
-}
-
-@-moz-document domain("onlinemultfilmy.ru") {
-    .video-box[style="display: none;"] {
-        display: block !important
-    }
-    .video-box ~ .ageBlock {
-        display: none !important
     }
 }
 
