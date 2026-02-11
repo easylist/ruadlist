@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260211.1130
+@version        0.20260211.1247
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1315,8 +1315,7 @@
 }
 
 @-moz-document domain("click-or-die.ru") {
-    a[href*="://kik.cat/"], a[href*="erid="], a[href*="sponsored="], 
-    a[href*="wildberries.ru/"], a[href*="www.dns-shop.ru/"] {
+    .prose a[href]:not([href^="/"]):not([href^="https://click-or-die.ru/"]) {
         pointer-events: none !important;
         color: inherit !important
     }
