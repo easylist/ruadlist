@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260211.1247
+@version        0.20260213.1214
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2320,8 +2320,11 @@
 @-moz-document
   domain("gazeta.press"),
   domain("gazeta.ru") {
-    .b_header {
+    .b_content, .b_footer, .b_main, .b_subject_bar {
         max-width: 100% !important
+    }
+    .b_header {
+        min-width: 100% !important
     }
 }
 
