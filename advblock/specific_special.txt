@@ -1351,12 +1351,6 @@ ukr.net##.lazy-load-banner
 @@://yandex.*/search$generichide
 @@://yandex.ru/|$generichide
 @@||yandex.ru/ads/system/adsdk.js|$script,domain=yandex.ru
-market.yandex.ru,market.yandex.*##[aria-label="Баннер"]
-market.yandex.ru,market.yandex.*##[data-apiary-widget-name*="@marketfront/MadvHeaderPromo"]
-market.yandex.ru,market.yandex.*##[data-auto*="banner"] > a:not([href^="/"]):not([href^="https://market.yandex.ru/"])
-market.yandex.ru,market.yandex.*##[data-auto*="banner"] [role="button"]
-market.yandex.ru,market.yandex.*##[data-madv]
-market.yandex.ru,market.yandex.*##div[id^="remix_"] > div[style^="grid-row:"][style*="grid-column:"]:empty
 ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[aria-label="Informers"] ~ [class]
 ya.ru##[aria-label^="Информ"] ~ [class]
@@ -1478,6 +1472,17 @@ yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-"]:empty
 ! Яндекс.Карты
 yandex.ru,yandex.*##.catalog-grid-view__item._advert
 yandex.ru,yandex.*##.map-controls__additional-button .promo-button
+! Яндекс.Маркет
+market.yandex.ru,market.yandex.*##[aria-label="Баннер"]
+market.yandex.ru,market.yandex.*##[data-apiary-widget-name*="@marketfront/MadvHeaderPromo"]
+market.yandex.ru,market.yandex.*##[data-auto*="banner"] > a:not([href^="/"]):not([href^="https://market.yandex.ru/"])
+market.yandex.ru,market.yandex.*##[data-auto*="banner"] [role="button"]
+market.yandex.ru,market.yandex.*##[data-auto="direct-tgo-banner"]
+market.yandex.ru,market.yandex.*##[data-banner-manager-id] [role="button"]
+market.yandex.ru,market.yandex.*##[data-baobab-name="recomMadv"] [role="button"]
+market.yandex.ru,market.yandex.*##[data-madv]
+market.yandex.ru,market.yandex.*##a[href^="https://ad.adriver.ru/"]
+market.yandex.ru,market.yandex.*##div[id^="remix_"] > div[style^="grid-row:"][style*="grid-column:"]:empty
 ! Яндекс.Музыка
 music.yandex.ru,music.yandex.*##section[class^="SideAdvertBanner_root_"]
 ! Яндекс.Недвижимость

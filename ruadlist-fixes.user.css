@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260213.1214
+@version        0.20260216.113
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3472,8 +3472,8 @@
   domain("market.yandex.by"),
   domain("market.yandex.kz"),
   domain("market.yandex.ru") {
-    div[data-zone-name="direct-ads-gallery"] {
-        display: none !important
+    #MainHeader {
+        margin-top: unset ! important
     }
 }
 
