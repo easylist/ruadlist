@@ -1370,6 +1370,8 @@ dzen.*,yandex.*##div[class*="Advert_container__"]:style(display: none !important
 dzen.*,yandex.*##div[id^="ADVERT_"]:style(display: none !important)
 ya.*###search-result > [class*="__card"]:has(> div .AdvLabel):style(display: none !important)
 ya.*###search-result > [class*="__card"]:has(> div > span:has-text(/^Промо$|^Реклама$/)):style(display: none !important)
+yandex.*###footer_ecom_adv:style(display: none !important)
+yandex.*###forecast_third_adv:style(display: none !important)
 yandex.*###search-result > [class*="__card"]:has(> div .AdvLabel):style(display: none !important)
 yandex.*##.justifier__col > div[class*="_type_direct"]:style(display: none !important)
 yandex.*##.tiled-images__items > div[class*="rim-direct-"]:style(display: none !important)
@@ -1380,6 +1382,7 @@ yandex.*##div[class^="Card_container__"][class*=" err_none "]:style(display: non
 yandex.*##div[class^="Card_container__"][class*="state_loaded Advert_fullScreenContainer"]:style(display: none !important)
 yandex.*##div[class^="images-viewer-content"] > div[class*="behavioral-direct"]:style(display: none !important)
 yandex.*##div[id*="page"] div[class*="_banner_"]:style(display: none !important)
+yandex.*##span[class^="style_placeholder_"]:empty:style(display: none !important)
 ~afisha.yandex.*,yandex.*##[data-bem*="type"][data-bem*="banner"]:not(body):not(form):not(.content):style(display: none !important)
 !
 ! Альтернативное решение для старых браузеров
