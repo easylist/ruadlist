@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260216.113
+@version        0.20260216.1350
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3473,7 +3473,7 @@
   domain("market.yandex.kz"),
   domain("market.yandex.ru") {
     #MainHeader {
-        margin-top: unset ! important
+        margin-top: unset !important
     }
 }
 
@@ -4491,6 +4491,12 @@
   domain("uniondht.org") {
     body:not(#id), html:not(#id) {
         padding: 0 !important
+    }
+}
+
+@-moz-document domain("securitymedia.org") {
+    body > .content {
+        padding-top: 0 !important
     }
 }
 
