@@ -1589,9 +1589,9 @@ dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
-dzen.ru##div[class^="dzen-desktop--one-column-with-side-panel__right"]
+dzen.ru##div[class^="dzen-desktop--"][class*="__right-"] div[style^="--top-padding:"]
+dzen.ru##div[class^="dzen-desktop--top-"] > div[style*="%"]:style(padding-top: unset !important)
 dzen.ru##div[id*="splashscreen"]
-dzen.ru##div[style*="branding"] div[class] > [id] > div[style*="%"]:style(padding-top: unset !important)
 dzen.ru##div[style*="important"] div[class*="__main"]
 ! исправление ошибок и косяков оригинальной вёрстки
 dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)

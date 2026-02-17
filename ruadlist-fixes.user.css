@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260216.1350
+@version        0.20260217.1337
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1747,7 +1747,7 @@
     div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
     div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child, 
     div[class*="watch-page-content"] [aria-label] > div[id], 
-    div[class^="dzen-desktop--one-column-with-side-panel__right"], 
+    div[class^="dzen-desktop--"][class*="__right-"] div[style^="--top-padding:"], 
     div[class^="news-site--"] > section ~ [id], div[id$="-rtb"], 
     div[id*="splashscreen"], div[id^="ad-"][class*=" news-"], 
     div[id^="article-showcase-"], div[style*="important"] div[class*="__main"] {
@@ -1767,7 +1767,7 @@
         overflow-y: unset !important
     }
     [class*="orda"] div[class] > [id] > div[style*="%"], 
-    div[style*="branding"] div[class] > [id] > div[style*="%"] {
+    div[class^="dzen-desktop--top-"] > div[style*="%"] {
         padding-top: unset !important
     }
     .climate-calendar__cell {
