@@ -1088,6 +1088,7 @@ rbc.ru##.story-wrapper_branded .story-header__logo
 rbc.ru##.story-wrapper_branded [class*="descriptor"]
 cnews.ru##.tizer_block
 rbc.ru,rbclifetime.ru##.topline-desktop-hide-banners
+rbc.ru##.topline-desktop-link-branding
 autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru##.topline__branding__wrapper
 autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru,sportrbc.ru##.topline__disable-adv__button
 autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##.topline__item__image-block
@@ -1096,6 +1097,7 @@ rbc.ru##.video-player__controls__ad-countdown
 /browser-updater$script,domain=autonews.ru|rbc.ru|sportrbc.ru
 /rbcbanners-*/_fullscreen.js$script,domain=autonews.ru|rbc.ru|rbcautonews.ru|sportrbc.ru
 utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
+rbc.ru##[data-name="SimplePromoCard"]
 rbc.ru##[data-placement]
 rbc.ru##[data-yandex-name^="selfpromo_"]
 rbc.ru##[data-yandex-show="cards_marketplace_show"]
@@ -1122,10 +1124,13 @@ rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
+rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
+rbc.ru##body.free div[class^="style_promo_"]
 rbc.ru,sportrbc.ru##div[class^="bet-block"]
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifetime.ru,sportrbc.ru##div[class^="fox-tail"]
 rbc.ru##div[class^="item-slider__partner"]
 utro.ru##div[class^="partners-block"]
+rbc.ru##div[class^="styles_okko"]
 ||api.mindbox.ru/scripts/*/tracker.$domain=rbc.ru
 ||cnews.ru/inc/js/height_max_banner.js
 ||market.cnews.ru/widget$domain=www.cnews.ru
