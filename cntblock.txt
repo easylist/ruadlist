@@ -1397,7 +1397,8 @@ yandex.*##span[class^="style_placeholder_"]:empty:style(display: none !important
 @@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*afisha.yandex.$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*pogoda$xmlhttprequest,domain=yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
-@@||yandex.ru/ads/system/context.js?|$script,domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
+@@||yandex.ru/ads/system/context.js?$script,domain=dzen.ru
+@@||yandex.ru/ads/system/context.js?|$script,domain=ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/context.js|$domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/header-bidding.js|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/widget.js|$script,domain=dzen.ru
@@ -1407,7 +1408,7 @@ yandex.*##span[class^="style_placeholder_"]:empty:style(display: none !important
 dzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
 ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
 ||yastatic.net/partner-code-bundles/$badfilter
-||yastatic.net/partner-code-bundles/$domain=~auto.ru
+||yastatic.net/partner-code-bundles/$domain=~auto.ru|~dzen.ru
 !
 ! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)

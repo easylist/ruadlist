@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260217.1337
+@version        0.20260219.1002
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1731,7 +1731,7 @@
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], 
     [class*="segment__container"] > div > article[class^="card "] ~ div:last-child, 
-    [class*="yandex-direct"], [class^="dzen-desktop--main-page-"], 
+    [class*="yandex-direct"], 
     [class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"], 
     [data-is-rendered="false"], [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
@@ -1762,6 +1762,9 @@
     #SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"] {
         min-height: 0 !important;
         --desktopPageLayoutCenterPadding: inherit !important
+    }
+    [class^="dzen-desktop--main-page-"] {
+        opacity: 0 !important
     }
     body {
         overflow-y: unset !important
@@ -4217,6 +4220,9 @@
 }
 
 @-moz-document domain("rbc.ru") {
+    .topline-desktop-project-large {
+        border-color: transparent !important
+    }
     .g-icon-big.g-play::after {
         bottom: calc(50% - 55px) !important;
         left: calc(50% - 55px) !important;
