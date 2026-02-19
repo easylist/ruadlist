@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260219.1002
+@version        0.20260219.1137
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4220,7 +4220,7 @@
 }
 
 @-moz-document domain("rbc.ru") {
-    .topline-desktop-project-large {
+    .is-outline .topline__item {
         border-color: transparent !important
     }
     .g-icon-big.g-play::after {
@@ -4266,6 +4266,20 @@
     .l-col-100h {
         min-height: 0 !important;
         height: auto !important
+    }
+}
+
+@-moz-document
+  domain("rbclifemedia.ru"),
+  domain("rbc.ru") {
+    .topline-desktop-project-large {
+        border-color: transparent !important
+    }
+}
+
+@-moz-document domain("rbcrealty.ru") {
+    .is-outline .topline__item {
+        border-color: transparent !important
     }
 }
 
@@ -4683,6 +4697,12 @@
         pointer-events: none !important;
         text-decoration: none !important;
         color: inherit !important
+    }
+}
+
+@-moz-document domain("sportrbc.ru") {
+    .is-outline .topline__item {
+        border-color: transparent !important
     }
 }
 
