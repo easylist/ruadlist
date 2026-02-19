@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260219.1137
+@version        0.20260219.1310
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -327,15 +327,13 @@
     }
 }
 
-@-moz-document
-  domain("afisha.yandex.by"),
-  domain("afisha.yandex.kz"),
-  domain("afisha.yandex.ru"),
-  domain("afisha.yandex.uz") {
-    div[class$="-banner"], div[data-bem*="height"][data-bem*="R-A-"], 
-    div[id][style="display: block; position: static; opacity: 1;"], 
-    div[style^="width:100%;height:2"][style$="px;display:block"] {
+@-moz-document domain("afisha.yandex.ru") {
+    [style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty, 
+    [style^="width:"][style*="100%;"][style*="height:"][style*="250px;"][style*="display:"][style*="block;"]:empty {
         display: none !important
+    }
+    header + div > div {
+        height: auto !important
     }
 }
 
@@ -4220,9 +4218,6 @@
 }
 
 @-moz-document domain("rbc.ru") {
-    .is-outline .topline__item {
-        border-color: transparent !important
-    }
     .g-icon-big.g-play::after {
         bottom: calc(50% - 55px) !important;
         left: calc(50% - 55px) !important;
@@ -4246,8 +4241,19 @@
 
 @-moz-document
   domain("rbc.ru"),
+  domain("rbclifemedia.ru") {
+    .topline-desktop-project-large {
+        border-color: transparent !important
+    }
+}
+
+@-moz-document
+  domain("rbc.ru"),
   domain("rbcrealty.ru"),
   domain("sportrbc.ru") {
+    .is-outline .topline__item {
+        border-color: transparent !important
+    }
     #js_col_left > .l-sticky {
         position: relative !important;
         top: unset !important
@@ -4266,20 +4272,6 @@
     .l-col-100h {
         min-height: 0 !important;
         height: auto !important
-    }
-}
-
-@-moz-document
-  domain("rbclifemedia.ru"),
-  domain("rbc.ru") {
-    .topline-desktop-project-large {
-        border-color: transparent !important
-    }
-}
-
-@-moz-document domain("rbcrealty.ru") {
-    .is-outline .topline__item {
-        border-color: transparent !important
     }
 }
 
@@ -4697,12 +4689,6 @@
         pointer-events: none !important;
         text-decoration: none !important;
         color: inherit !important
-    }
-}
-
-@-moz-document domain("sportrbc.ru") {
-    .is-outline .topline__item {
-        border-color: transparent !important
     }
 }
 

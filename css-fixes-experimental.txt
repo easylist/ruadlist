@@ -1561,10 +1561,9 @@ ya.ru##html[class*="_informers"] aside ~ div[style]
 ya.ru##html[class*="_neuro"] aside ~ div[style]
 ya.ru##html[class*="_reaso"] aside ~ div[style]
 ! афиша
-afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[class$="-banner"]
-afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[data-bem*="height"][data-bem*="R-A-"]
-afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[id][style="display: block; position: static; opacity: 1;"]
-afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[style^="width:100%;height:2"][style$="px;display:block"]
+afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
+afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="250px;"][style*="display:"][style*="block;"]:empty
+afisha.yandex.ru##header + div > div:style(height: auto !important)
 ! ---
 ! диск
 disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##[target][class*="fullscreen-banner"]
