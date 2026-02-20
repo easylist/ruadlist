@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260219.1310
+@version        0.20260220.932
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -903,6 +903,16 @@
     }
 }
 
+@-moz-document
+  domain("autonews.ru"),
+  domain("rbc.ru"),
+  domain("rbcrealty.ru"),
+  domain("sportrbc.ru") {
+    .is-outline .topline__item {
+        border-color: transparent !important
+    }
+}
+
 @-moz-document domain("autosport.com.ru") {
     body:not(#id) {
         padding-top: 0 !important;
@@ -1720,6 +1730,9 @@
 @-moz-document domain("dzen.ru") {
     div[class^="news-site-"][class*="-desktop-"] {
         background-color: transparent !important
+    }
+    div[class*="topContentOneColumnFeed"] > div:first-child + div > article {
+        background: inherit !important
     }
     #ad-feed, .adv-ecom, .news-page-layout__content > div[class*="position"], 
     .news-page-layout__rubricator ~ [id], .news-rubric-desktop__adv-column, 
@@ -4251,9 +4264,6 @@
   domain("rbc.ru"),
   domain("rbcrealty.ru"),
   domain("sportrbc.ru") {
-    .is-outline .topline__item {
-        border-color: transparent !important
-    }
     #js_col_left > .l-sticky {
         position: relative !important;
         top: unset !important
