@@ -1280,7 +1280,7 @@ dzen.*##div[class*="_videoViewerPlayer-"] ~ div > div[aria-label] > [id]:style(d
 dzen.*##div[class*="dzen-desktop--auto-slide-ad_"]:style(display: none !important)
 dzen.*##div[class*="isUnderTopicChannelBlock"]:style(display: block !important)
 dzen.*##div[class*="linkBro-"]:style(display: none !important)
-dzen.*##html[class*="template__"] [id][class] > div[style*="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
+dzen.*##html[class*="template__"] [id][class] div[style*="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
 dzen.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid data.*.attributes.blockId)
 eda.yandex.ru##main#main main > div[style^="margin-bottom:"] [aria-label="Акция"]
 eda.yandex.ru#?#main#main main > div[style^="margin-bottom:"]:-abp-has([aria-label="Акция"])
@@ -1358,7 +1358,7 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 !#if env_mv3
 dzen.ru,ya.ru##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 dzen.ru,ya.ru##+js(cookie-remover, /ancQTZw|bltsr|HgGedof|KIykI/)
-dzen.ru,ya.ru##+js(prevent-setTimeout, BLOCKERS)
+dzen.ru,ya.ru##+js(prevent-setTimeout, /BLOCKERS|NOT_BLOCKED/)
 dzen.ru,ya.ru##+js(set-constant, Object.prototype.AdblockCookieMatchingType, undefined)
 !#endif
 !
