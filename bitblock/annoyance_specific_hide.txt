@@ -2582,6 +2582,9 @@ cloud.mail.ru##[data-qa-tooltip="goto-attaches-promo-tip"]
 news.mail.ru##[data-reactroot] [data-qa^="MoreList"] > div > div:first-child:not(:only-child)
 e.mail.ru,octavius.mail.ru##[id^="octavius-notify-"]
 news.mail.ru#?#aside div[style^="min-height:"]:-abp-has([data-logger="SubscribeButton"])
+cloud.mail.ru#?#body > #react-modals:-abp-has(> div > [class*="Offer"])
+cloud.mail.ru#?#body > #react-modals:-abp-has(> div > [class*="Quota"])
+cloud.mail.ru#?#body > #react-modals:-abp-has(> div > [class*="WhatsNewDialog"])
 ~e.mail.ru,mail.ru##body > .grid .logo__promo-tooltip
 ~e.mail.ru,mail.ru##body > .tooltip > .tooltip__box
 mail.ru##body > .zeropixel ~ * .balloon
