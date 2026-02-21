@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260220.932
+@version        0.20260221.2243
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -900,16 +900,6 @@
     div[id^="pos"] > a > img[src*="audioportal.su/!!!ads/!rotator/"] {
         zoom: 0.1 !important;
         filter: grayscale(1) !important
-    }
-}
-
-@-moz-document
-  domain("autonews.ru"),
-  domain("rbc.ru"),
-  domain("rbcrealty.ru"),
-  domain("sportrbc.ru") {
-    .is-outline .topline__item {
-        border-color: transparent !important
     }
 }
 
@@ -4282,6 +4272,17 @@
     .l-col-100h {
         min-height: 0 !important;
         height: auto !important
+    }
+}
+
+@-moz-document
+  domain("rbcautonews.ru"),
+  domain("autonews.ru"),
+  domain("rbc.ru"),
+  domain("rbcrealty.ru"),
+  domain("sportrbc.ru") {
+    .is-outline .topline__item {
+        border-color: transparent !important
     }
 }
 
