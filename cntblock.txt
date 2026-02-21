@@ -1357,9 +1357,10 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 ~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.Rtb, undefined)
 !#if env_mv3
 dzen.ru,ya.ru##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
+dzen.ru,ya.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x, document)
 dzen.ru,ya.ru##+js(cookie-remover, /ancQTZw|bltsr|HgGedof|KIykI/)
 dzen.ru,ya.ru##+js(prevent-setTimeout, /BLOCKERS|NOT_BLOCKED/)
-dzen.ru,ya.ru##+js(set-constant, Object.prototype.AdblockCookieMatchingType, undefined)
+ya.ru##+js(set-constant, Object.prototype.AdblockCookieMatchingType, undefined)
 !#endif
 !
 ! мобильная версия
