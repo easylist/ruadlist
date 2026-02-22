@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260221.2243
+@version        0.20260222.1630
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -900,6 +900,17 @@
     div[id^="pos"] > a > img[src*="audioportal.su/!!!ads/!rotator/"] {
         zoom: 0.1 !important;
         filter: grayscale(1) !important
+    }
+}
+
+@-moz-document
+  domain("autonews.ru"),
+  domain("rbc.ru"),
+  domain("rbcautonews.ru"),
+  domain("rbcrealty.ru"),
+  domain("sportrbc.ru") {
+    .is-outline .topline__item {
+        border-color: transparent !important
     }
 }
 
@@ -4275,17 +4286,6 @@
     }
 }
 
-@-moz-document
-  domain("rbcautonews.ru"),
-  domain("autonews.ru"),
-  domain("rbc.ru"),
-  domain("rbcrealty.ru"),
-  domain("sportrbc.ru") {
-    .is-outline .topline__item {
-        border-color: transparent !important
-    }
-}
-
 @-moz-document domain("rbkgames.com") {
     html[xmlns] {
         background-image: none !important
@@ -5581,9 +5581,10 @@
 
 @-moz-document domain("ya.ru") {
     .i-mini-bem[style], .market-feed, .reasoning-section, [id*="feed"][id*="_"], 
-    [id^="ryt"][id*="fe"], html[class*="_informers"] aside ~ div[style], 
+    [id^="ryt"][id*="fe"], [style*="--masonry-feed-columns-count:"], 
     html[class*="_neuro"] aside ~ div[style], 
-    html[class*="_reaso"] aside ~ div[style] {
+    html[class*="_reaso"] aside ~ div[style], 
+    html[class*="document_feed_"] aside ~ div[style] {
         display: none !important
     }
     .document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body {
