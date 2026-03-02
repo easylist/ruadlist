@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260225.2005
+@version        0.20260302.1251
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1763,7 +1763,8 @@
     div[class^="dzen-desktop--"][class*="__right-"] div[style^="--top-padding:"], 
     div[class^="news-site--"] > section ~ [id], div[id$="-rtb"], 
     div[id*="splashscreen"], div[id^="ad-"][class*=" news-"], 
-    div[id^="article-showcase-"], div[style*="important"] div[class*="__main"] {
+    div[id^="article-showcase-"], div[style*="12.362637362637363"], 
+    div[style*="important"] div[class*="__main"] {
         display: none !important
     }
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
@@ -1776,15 +1777,11 @@
         min-height: 0 !important;
         --desktopPageLayoutCenterPadding: inherit !important
     }
-    [class^="dzen-desktop--main-page-"] {
+    [class^="dzen-desktop--main-page-"], div[class*="-top-of-the-day-ad"] {
         opacity: 0 !important
     }
     body {
         overflow-y: unset !important
-    }
-    [class*="orda"] div[class] > [id] > div[style*="%"], 
-    div[class^="dzen-desktop--top-"] > div[style*="%"] {
-        padding-top: unset !important
     }
     .climate-calendar__cell {
         width: 13.8% !important;
