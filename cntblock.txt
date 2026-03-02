@@ -1478,7 +1478,7 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 ! реклама в QMS и мобильной версии сайта
 4pda.*##.menu-main-mobile > [style="display:none;"]:style(display: none !important)
 ! редирект
-4pda.*##+js(abort-on-property-read, document.referrer)
+4pda.*##+js(abort-on-stack-trace, document.referrer, https://4pda.to/)
 !
 ! Геоблокировки в плеерах
 ||allarknow.online/*block=$subdocument,removeparam=block
