@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260302.1550
+@version        0.20260302.1643
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1737,7 +1737,8 @@
     div[class*="topContentOneColumnFeed"] > div:first-child + div > article {
         background: inherit !important
     }
-    #ad-feed, .adv-ecom, .news-page-layout__content > div[class*="position"], 
+    #ad-feed, .adv-ecom, .content--styles__banner-cc + [aria-label] ~ div, 
+    .news-page-layout__content > div[class*="position"], 
     .news-page-layout__rubricator ~ [id], .news-rubric-desktop__adv-column, 
     .news-rubric-desktop__news > section > div > div[id], 
     .news-secondary-layout-column__secondary div[id], 
