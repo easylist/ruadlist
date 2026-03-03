@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260303.1852
+@version        0.20260303.1947
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3538,16 +3538,10 @@
     }
 }
 
-@-moz-document domain("meta.ua") {
-    .infobar > .info-block:not(.mail):not(.weather) {
-        border: none !important
-    }
-}
-
 @-moz-document
-  domain("metaratings.by"),
   domain("meta-ratings.kz"),
   domain("metarating.com.ua"),
+  domain("metaratings.by"),
   domain("metaratings.ru"),
   domain("metaratings.tj") {
     div[class^="MatchCarousel-module-"][class*="homePage"] {
@@ -3555,6 +3549,12 @@
     }
     div[class^="MatchCarousel-module-"][class*="homePage"] header > a[href="/match-center/"] {
         color: #fff !important
+    }
+}
+
+@-moz-document domain("meta.ua") {
+    .infobar > .info-block:not(.mail):not(.weather) {
+        border: none !important
     }
 }
 
@@ -4039,8 +4039,8 @@
     .gp-game-card .user-profile-sidebar {
         max-width: unset !important
     }
-    a[href*="clck.ru/"], a[href*="market.yandex.ru/"], a[href*="ozon.ru/"], 
-    a[href*="wildberries.ru/"] {
+    a[href*="clck.ru/"], a[href*="dns-shop.ru/"], a[href*="market.yandex.ru/"], 
+    a[href*="ozon.ru/"], a[href*="wildberries.ru/"] {
         pointer-events: none !important;
         color: inherit !important
     }
