@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260303.1651
+@version        0.20260303.1852
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3538,7 +3538,14 @@
     }
 }
 
+@-moz-document domain("meta.ua") {
+    .infobar > .info-block:not(.mail):not(.weather) {
+        border: none !important
+    }
+}
+
 @-moz-document
+  domain("metaratings.by"),
   domain("meta-ratings.kz"),
   domain("metarating.com.ua"),
   domain("metaratings.ru"),
@@ -3548,12 +3555,6 @@
     }
     div[class^="MatchCarousel-module-"][class*="homePage"] header > a[href="/match-center/"] {
         color: #fff !important
-    }
-}
-
-@-moz-document domain("meta.ua") {
-    .infobar > .info-block:not(.mail):not(.weather) {
-        border: none !important
     }
 }
 
