@@ -883,6 +883,7 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod
 gazeta.ru###_id_sber_auth
 www.rambler.ru###app > .ad
 auto.rambler.ru,avtorambler.com###app > .ad_branding_header ~ div[class] > div[class]:empty
+weekend.rambler.ru###app > div[style^="background:"]
 www.rambler.ru###app > script + div
 eda.ru###billboard
 daily.afisha.ru###partners-news-container
@@ -1022,6 +1023,7 @@ nova.rambler.ru##section > article[class*=" Serp__item"]:not([class^=" Serp__ite
 ||kraken.rambler.ru^$domain=~kraken.rambler.ru
 ||lenta.ru/fenwick
 ||rambler.ru/*/okko-metrics
+||rambler.ru/special/okko/
 ||rcm.rambler.ru/*/widget?adtech_uid=
 ||rcmjs.rambler.ru/static/rcmw/rcmw.*.horizontal.
 ||rcmjs.rambler.ru/static/recommender.js
