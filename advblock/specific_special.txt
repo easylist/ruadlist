@@ -1105,7 +1105,6 @@ quote.ru##a[href="https://quote.ru/?utm_source=topline"] img
 cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
-rbc.ru##body div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free .intresting__list > .intresting__item:-abp-has(a[href^="https://pro.rbc.ru/"])
 rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has([href^="https://pro.rbc.ru"])
 rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
@@ -1115,14 +1114,15 @@ rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*
 rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
 rbc.ru##body.free a[class^="styles_message-bar_"][href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free aside.bside .sidebar:-abp-has(a[href^="https://pro.rbc.ru/"])
+rbc.ru##body.free div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"]
+rbc.ru##body.free div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"] ~ .meta-info-row-wrapper
+rbc.ru#?#body.free div[class*="styles_newsfeed"] .sidebar:-abp-has(a[href*="utm_campaign"])
 rbc.ru#?#body.free div[class="central-publisher-item"]:-abp-has([href^="https://pro.rbc.ru/"])
+rbc.ru##body.free div[class="central-publisher-item"]:nth-child(-n+2) [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free div[class="central-publisher-item"]:nth-child(-n+2):-abp-has([href^="https://pro.rbc.ru/"])
+rbc.ru##body.free div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
 rbc.ru##body.free div[class^="style_promo_"]
 rbc.ru##body.free div[data-name^="SpecialBlockPro"]
-rbc.ru##div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"]
-rbc.ru##div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"] ~ .meta-info-row-wrapper
-rbc.ru#?#div[class*="styles_newsfeed"] .sidebar:-abp-has(a[href*="utm_campaign"])
-rbc.ru##div[class="central-publisher-item"]:nth-child(-n+2) [href^="https://pro.rbc.ru/"]
-rbc.ru#?#div[class="central-publisher-item"]:nth-child(-n+2):-abp-has([href^="https://pro.rbc.ru/"])
 rbc.ru##div[class^="BsideBanner"]
 rbc.ru,sportrbc.ru##div[class^="bet-block"]
 rbc.ru##div[class^="commercial-formats-"]
