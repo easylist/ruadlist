@@ -945,7 +945,6 @@ _pagespeed_beacon?
 ||t.sports.ru^
 ||tag.aticdn.net^$domain=~tv5monde.com
 ||tagmanager.andata.ru^$third-party
-||tags.soloway.ru^$third-party
 ||tags.tiqcdn.com/utag^*/utag.sync.js
 ||tapad.com^$third-party
 ||tapstat.ru^$third-party
@@ -1497,6 +1496,7 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 ! Экспериментальные правила для маркеров
 $document,removeparam=ai,domain=ggsel.net
 $document,removeparam=clid,domain=dzen.ru|ya.ru|yandex.*
+$document,removeparam=context,domain=avito.ru
 $document,removeparam=digest,domain=drive2.com|drive2.ru
 $document,removeparam=erid,domain=~cnews.ru|~forbes.ru|~lifehacker.ru
 $document,removeparam=es,domain=rambler.ru
