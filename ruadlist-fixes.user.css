@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260313.2022
+@version        0.20260314.1134
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4250,8 +4250,14 @@
         left: 200px !important;
         right: 200px !important
     }
+    article .tabs-content-wrapper {
+        margin-bottom: 0 !important
+    }
     .video-gallery-popup.single .video-gallery-popup__wrap {
         max-width: 100% !important
+    }
+    article > .gutter-b:last-child {
+        padding-bottom: 0 !important
     }
     .l-small-width-top-padding {
         padding-top: unset !important
