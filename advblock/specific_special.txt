@@ -30,6 +30,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|note
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||captcha-api.yandex.ru^$domain=drive2.ru
+||eg.ru^$csp=script-src 'self' 'unsafe-eval' https:
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
@@ -85,6 +86,7 @@ vk.com,vk.ru#?#._post_content:-abp-has(.g03FJ4dTToqroympKAMc)
 vk.com,vk.ru#?#._post_content:-abp-has(.l2Q63U68RkAXQkXEoJnJ)
 vk.com,vk.ru#?#._post_content:-abp-has(.r4jouGh_Hfn9c5AzpbJg)
 vk.com,vk.ru#?#._post_content:-abp-has([src*="mradx."])
+eg.ru##.article_tags-block[onclick]
 drive2.ru##.c-dv-side
 vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"] > :not([class="_post_content"])
