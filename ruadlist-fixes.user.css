@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260321.1455
+@version        0.20260323.1223
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1790,6 +1790,9 @@
     }
     body {
         overflow-y: unset !important
+    }
+    body, html {
+        scroll-snap-type: none !important
     }
     .climate-calendar__cell {
         width: 13.8% !important;
