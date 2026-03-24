@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260323.1223
+@version        0.20260324.1320
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1748,7 +1748,8 @@
     [class*="segment__container"] > div > article[class^="card "] ~ div:last-child, 
     [class*="yandex-direct"], 
     [class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"], 
-    [data-is-rendered="false"], [data-testid="dzenpro-banner"], [id*="card-rtb"], 
+    [data-is-rendered="false"], [data-testid*="-ad-block"], 
+    [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     article[data-card-type*="-promo"], 
