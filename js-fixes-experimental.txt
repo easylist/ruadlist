@@ -157,7 +157,7 @@ cikavosti.com,dialogs.org.ua,fakty.ua,gorodkiev.com.ua,informator.ua,kriminal.tv
 bombardir.ru,comp-service.kiev.ua,inforesist.org,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
 softportal.com##+js(abort-on-property-read, window.block)
 growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
-80-e.ru,doramatv.live,examenpdd.com,forum.ixbt.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+80-e.ru,doramatv.live,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
 animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 transkarpatia.net##+js(abort-on-property-write, NiceScroll)
 24pdd.ru##+js(abort-on-property-write, adsBlocked)
@@ -765,6 +765,14 @@ bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkn
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
+!
+! forum.ixbt.com
+@@||yandex.ru/ads/adfox/$xmlhttprequest,domain=forum.ixbt.com
+@@||yandex.ru/ads/system/header-bidding.js|$script,domain=forum.ixbt.com
+@@||yastatic.net/partner-code-bundles/*/*.js|$script,domain=forum.ixbt.com
+forum.ixbt.com##+js(abort-on-stack-trace, Object.prototype.getBid, /header-bidding.js)
+forum.ixbt.com##.deskadv div div:remove()
+forum.ixbt.com#@#.deskadv
 !
 !#if !env_mobile
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru###mobileon
