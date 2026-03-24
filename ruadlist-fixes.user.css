@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260324.1320
+@version        0.20260324.2024
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1792,9 +1792,6 @@
     body {
         overflow-y: unset !important
     }
-    body, html {
-        scroll-snap-type: none !important
-    }
     .climate-calendar__cell {
         width: 13.8% !important;
         -webkit-flex-basis: 13.8% !important;
@@ -1810,6 +1807,9 @@
   domain("sportsdzen.ru") {
     div[class^="news-site-"][class*="skeleton"] {
         background-color: transparent !important
+    }
+    body, html {
+        scroll-snap-type: none !important
     }
 }
 
