@@ -3,7 +3,6 @@
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
 ! --- uBO scriptlets injection rules & other ---
-ixbt.pro###branding-ssr-style:remove()
 growhow.in.ua###custom-background-css:remove()
 playground.ru###dfpPrerollDelay:remove()
 freesoft.ru###downloadAdModal:remove()
@@ -584,6 +583,7 @@ rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
 tapochek.net##body:has(#register_link) > canvas
 tapochek.net##body:has(#register_link) > canvas:remove()
 volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)
+ixbt.pro##body:remove-class(branding)
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
