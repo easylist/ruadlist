@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260324.2024
+@version        0.20260325.1817
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2837,7 +2837,7 @@
 }
 
 @-moz-document domain("ixbt.com") {
-    body {
+    body:not([class*="dark:"]) {
         background-color: inherit !important
     }
     .b-content__pagecontent > .b-content--wrapper > .g-grid, 
