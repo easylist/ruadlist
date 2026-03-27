@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260326.1612
+@version        0.20260327.1417
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1756,6 +1756,7 @@
     div:not(.news-rubric-desktop__adv-column) > div[class^="mg-sticky"], 
     div[class*="--corner-banner_"], div[class*="-ad-block_"], 
     div[class*="-right-ad-column"], div[class*="__bannerContainer"], 
+    div[class*="_advertDoc2Doc-"], 
     div[class*="_content_with-new-"] > div[id] ~ div[id], 
     div[class*="_content_with-new-"] > div[id]:first-child + div[class*=" news-"], 
     div[class*="adContentWrapper"], div[class*="adSplitEmbed"], 
@@ -2790,6 +2791,16 @@
     }
     .entry-content > [class*=" "][style="text-align: center;"] {
         display: none !important
+    }
+}
+
+@-moz-document domain("it-world.ru") {
+    html > body {
+         pointer-events: none !important;
+        background: inherit !important
+    }
+    html > body > * {
+        pointer-events: auto !important
     }
 }
 
