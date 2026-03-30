@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260330.1322
+@version        0.20260330.1326
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -452,6 +452,12 @@
     }
     body[class*="modal-"] {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("allbasketball.org") {
+    .page-content {
+        margin-top: 0 !important
     }
 }
 
