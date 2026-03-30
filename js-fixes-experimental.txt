@@ -782,6 +782,10 @@ libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru###mobileon
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(set-cookie, is_mobile, no, , reload, 1)
 !#endif
 !
+! МИР 24
+mir24.tv##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, _app-)
+mir24.tv##+js(set-constant, Object.prototype.autoPlay, {})
+!
 ! NTV
 ntv.ru#?##air-mini-player:has(> div > .vjs-paused) ~ .air-player__controls
 ntv.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, manualAutoplay)
