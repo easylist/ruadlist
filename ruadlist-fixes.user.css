@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260329.2035
+@version        0.20260330.1322
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -452,12 +452,6 @@
     }
     body[class*="modal-"] {
         overflow: auto !important
-    }
-}
-
-@-moz-document domain("allbasketball.org") {
-    .page-content, aside > div.overflow-hidden + .block-sidebar-wrapper {
-        margin-top: 0 !important
     }
 }
 
@@ -5559,8 +5553,9 @@
 }
 
 @-moz-document domain("ya.ru") {
-    .i-mini-bem[style], .market-feed, .reasoning-section, [id*="feed"][id*="_"], 
-    [id^="ryt"][id*="fe"], [style*="--masonry-feed-columns-count:"], 
+    .i-mini-bem[style], .market-feed, .reasoning-section, 
+    [action="https://ya.ru/search/"] ~ aside ~ div[style], 
+    [class*=" feed"][style*="--masonry-"], [id^="ryt"][id*="fe"], 
     html[class*="_neuro"] aside ~ div[style], 
     html[class*="_reaso"] aside ~ div[style], 
     html[class*="document_feed_"] aside ~ div[style] {
