@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260330.1326
+@version        0.20260331.1154
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1801,6 +1801,10 @@
     }
     .b-page_type_maps div[class$="__content"] > [class$="__ad"] > div {
         width: unset !important
+    }
+    .news-page-layout__content {
+        width: var(--news-content-size) !important;
+        margin-left: auto !important ;margin-right: auto !important
     }
 }
 
