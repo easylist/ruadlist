@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260401.1246
+@version        0.20260401.1312
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1743,7 +1743,8 @@
     .news-page-layout__rubricator ~ [id], .news-rubric-desktop__adv-column, 
     .news-rubric-desktop__news > section > div > div[id], 
     .news-secondary-layout-column__secondary div[id], 
-    .news-story-page div[id] > div:not([id]) > div[id], [class*="CardRtb"], 
+    .news-story-page div[id] > div:not([id]) > div[id], 
+    [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], 
     [class*="segment__container"] > div > article[class^="card "] ~ div:last-child, 
@@ -1759,7 +1760,7 @@
     div[class*="-right-ad-column"], div[class*="AdvertTsar"], 
     div[class*="BrandingAdvertLayoutColumn-"], div[class*="__bannerContainer"], 
     div[class*="_advertDoc2Doc-"], 
-    div[class*="_content_with-new-"] > div[id] ~ div[id], 
+    div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"], 
     div[class*="adContentWrapper"], div[class*="adSplitEmbed"], 
     div[class*="bannerMain"], div[class*="dzen-"][class*="-banner-"], 
     div[class*="dzen-desktop--"][class*="__ad-"], 
@@ -1801,11 +1802,6 @@
     }
     .b-page_type_maps div[class$="__content"] > [class$="__ad"] > div {
         width: unset !important
-    }
-    .news-page-layout__content {
-        width: var(--news-content-size) !important;
-        margin-left: auto !important;
-        margin-right: auto !important
     }
 }
 
