@@ -1485,7 +1485,6 @@ turanpress.kz##.advertising-blank
 minfin.com.ua##.advertising-caption
 vinnitsa.info##.advertising-card
 infotime.co##.advertising-heading
-rozetka.com.ua##.advertising-slider-theme
 mlyn.by##.advertising-widget
 artemsannikov.ru##.advertisingColumn
 gamemag.ru##.advertising_review
@@ -2296,7 +2295,7 @@ echosevera.ru##.cartoon
 livejournal.com##.cat-widget__adv-container
 livejournal.com##.cat-widget__card-wrap--adv
 vsthemes.org#?#.catalog > .shorty:-abp-has(> .block)
-rozetka.com.ua#?#.catalog-grid > .catalog-grid__cell:-abp-has(> rz-catalog-tile [href*="/?advToken="])
+rozetka.com.ua#?#.catalog-grid > .catalog-grid__cell:-abp-has(> rz-catalog-tile [aria-label*=" про рекламу"])
 hotline.ua##.catalog-three-products
 yamart.ru##.catalogElAd
 tabletki.ua#?#.category-card__card-row > .col:-abp-has(> div .com__banner)
@@ -3298,7 +3297,7 @@ online-films.ckoro.ru##.link_test
 avtomaniya.com##.link_textblock > div[style="height:250px"]
 ucrazy.ru##.links
 newsua.ru##.lipuchka
-rozetka.com.ua#?#.list > rz-product-tile:-abp-has(> article [href*="/?advToken="])
+rozetka.com.ua#?#.list > rz-product-tile:-abp-has(> article [aria-label*=" про рекламу"])
 rabotasakhcom.ru##.list-banner
 aldebaran.ru##.list_other_sites
 aldebaran.ru##.list_other_tab
@@ -5684,7 +5683,8 @@ browserss.ru##[onclick^="window."][onclick*="://"]
 allboxing.ru##[onmouseenter="onClickPbButton()"]
 penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
-rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [href*="/?advToken="])
+rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
+rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 radiokot.ru##[src*="//radiokot.ru/adv/"]
 itweek.ru##[src*="/ad/banners/"]
 fixygen.ua##[src*="/assets/banner_"]
@@ -8278,7 +8278,7 @@ brclip.com,clip-share.net,flash-player.net,frvid.com,ibb.co,jpvid.net,kzblow.inf
 stratege.ru##psplus-footer
 ru-dub.xyz,rudub.*##a[href*=".li"]
 rudub.*##.card__description__adv
-rozetka.com.ua#?#rz-catalog-goods > .item:-abp-has(> rz-product-tile [href*="/?advToken="])
+rozetka.com.ua#?#rz-catalog-goods > .item:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 liveinternet.ru##script + div[id] > div[style^="width:"]
 sftv.ru##script[src*="iwantyourpromo.com"] ~ div[align="center"]
 megaimg.ru##script[src^="http://am10.ru/"] + center
