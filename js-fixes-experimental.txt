@@ -73,7 +73,7 @@ rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.bannerOptions)
 gorodrabot.by,gorodrabot.ru##+js(abort-on-property-read, Object.prototype.direct)
 fishki.net##+js(abort-on-property-read, Object.prototype.fakeDetect)
-auto.ru,reshu.by,reshuent.kz,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
+auto.ru,reshuent.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
@@ -214,6 +214,7 @@ www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
 championat.com##+js(addEventListener-defuser, scroll, window.location.href)
 rutube.ru##+js(addEventListener-defuser, visibilitychange, document.hidden)
+reshuent.ru,sdamgia.ru##+js(adjust-setTimeout, (!1)}, 20000)
 ritsatv.ru##+js(alert-buster)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)
 drive2.ru##+js(cookie-remover, hurricane)
@@ -281,7 +282,6 @@ dzen.ru##+js(nano-setTimeout-booster, '()=>r(', 15000)
 tv-kanali.online##+js(nano-setTimeout-booster, , 30000, 0.0001)
 freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)
-reshu.by,sdamgia.ru##+js(nano-setTimeout-booster, {return f(!1)}, 20000)
 www.ukr.net##+js(no-fetch-if, /_events/)
 trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
 animix.lol##+js(no-fetch-if, doubleclick.net)
@@ -480,8 +480,8 @@ vmusi.ru##+js(window.open-defuser, /tutad\.ru/)
 ontivi.net##+js(window.open-defuser, about:blank)
 shazoo.ru##.Entry__content:has(> p > em:has-text(/Erid:/)) a[href][target="_blank"]:style(pointer-events: none !important; color: inherit !important)
 vk.com,vk.ru##.PhotoPrimaryAttachment__background[src*="userapi.com/impf/"][src*="blur="]:style(filter: blur(20px) !important)
-reshu.by,sdamgia.ru##.S617e090e7e
-reshu.by,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: sticky !important)
+reshuent.ru,sdamgia.ru##.S617e090e7e
+reshuent.ru,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: sticky !important)
 inoreader.com##.ad_title:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 inoreader.com##.adsbygoogle:style(display: block !important)
 dtf.ru,vc.ru##.andropov-video-player--with-controls .andropov-video-player__overlay
@@ -497,7 +497,7 @@ gamemag.ru##.content-text:has(em:has-text(erid:)) a > strong:style(font-weight: 
 gamemag.ru##.content-text:has(em:has-text(erid:)) a:style(pointer-events: none !important; color: inherit !important)
 playground.ru##.dfp-container:remove()
 smotrim.ru##.dialog-wrapper
-reshu.by,reshuent.kz,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
+reshuent.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
 igromania.ru#?#.knb-grid-container > [data-io-article-url]:-abp-has(> [class^="MaterialItemHead_head"] [href="/tags/partnyorskij-material/"]) > .knb-grid-container [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 rbc.ru,rbcrealty.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:style(top: 166px !important; position: unset !important)
@@ -609,9 +609,9 @@ ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretm
 kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
 liveball.*,tapochek.net##+js(abort-on-property-read, ABNS)
 m.rp5.*#@#.adsbygoogle
-reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
-reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div > div
-reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; height: 86px !important; margin-bottom: -80px !important)
+reshuent.ru,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
+reshuent.ru,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div > div
+reshuent.ru,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; height: 86px !important; margin-bottom: -80px !important)
 draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 tvzvezda.ru##pjsdiv[id^="oframe"] > pjsdiv[style*="opacity: 0.1;"]:empty
 tvzvezda.ru##pjsdiv[id^="oframe"] [style="animation-play-state: running;"]
