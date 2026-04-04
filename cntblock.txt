@@ -1265,6 +1265,7 @@ top100.rambler.*##body > div:not([id])[style="position: absolute; z-index: 10000
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@://yandex.*/news/$generichide
 @@://yandex.*/news|$generichide
+auto.ru##+js(abort-on-property-read, Object.prototype.partnerRefreshTracker)
 disk.yandex.*##body:has(.resources-action-bar_visible) .footer__copyright a[href="https://ya.ru"]:style(pointer-events: none !important)
 disk.yandex.*,docs.yandex.*##.footer__copyright a[href="https://ya.ru"]:style(top: 32px !important; left: 19px !important; height: 36px !important; width: 36px !important; position: fixed !important; z-index: 90 !important; opacity: 0 !important)
 disk.yandex.*,docs.yandex.*##.footer__copyright:style(color: transparent !important)
@@ -1362,8 +1363,8 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 ||yastatic.net/s3/games-static/_/build/game/desktop/yandex/Promo.$important
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
 ~games.s3.yandex.net,ya.*,yandex.*##+js(no-xhr-if, yabs.yandex.ru/count/)
-~mail.yandex.*,~yandex.net,auto.*,ya.*,yandex.*##+js(set-constant, Object.prototype.initPcode, undefined)
 ~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(abort-on-property-read, __activeTestIds)
+~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.initPcode, undefined)
 ~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.renderDirect, undefined)
 ~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div:style(display: none !important)
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro:style(display: none !important)
@@ -1410,7 +1411,7 @@ yandex.*##span[class^="style_placeholder_"]:empty:style(display: none !important
 @@||yandex.ru/ads/page/*target-ref=*pogoda$xmlhttprequest,domain=yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/context.js?$script,domain=dzen.ru
 @@||yandex.ru/ads/system/context.js?|$script,domain=ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
-@@||yandex.ru/ads/system/context.js|$domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
+@@||yandex.ru/ads/system/context.js|$domain=auto.ru|dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/header-bidding.js|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/widget.js|$script,domain=dzen.ru
 @@||yastatic.net/daas/atom.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
