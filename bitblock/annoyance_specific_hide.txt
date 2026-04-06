@@ -2781,8 +2781,6 @@ dzen.ru##.video-card-ads
 e.mail.ru,octavius.mail.ru#?#.vkuiPopoutRoot:-abp-has(a[href^="https://vk.cc/"])
 mail.ru##.widget-uber-wrapper
 dzen.ru##.zen-page .content div[class*="__bannerMain"]
-/^https?:\/\/dzen\.ru\/[^\s]{2100,}$/$script,domain=dzen.ru
-/^https?:\/\/strm\.yandex\.ru\/get\/[^\s]{1300,}$/$xmlhttprequest,domain=dzen.ru|naydex.net
 @@||ad.mail.ru/adp/*=resplash&$xmlhttprequest,domain=mail.ru
 @@||an.yandex.ru/mapuid/yandex/|$image,domain=auto.ru
 @@||shedevrum.ai^$generichide
@@ -2819,6 +2817,7 @@ vk.com,vk.ru,vkvideo.ru##vk-video-player div[class^="PauseSuggestionsSlider"]
 ||translate.yandex.*/_crpd/
 ||ya.ru/portal/feed?
 ||yandex-realty.naydex.net^$script
+||yandex-tv.naydex.net^$script
 ||yandex.*/maps/_crpd/$xmlhttprequest
 !#endif
 !
