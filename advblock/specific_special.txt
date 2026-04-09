@@ -59,24 +59,25 @@ howdyho.net#@#div[id^="yandex_rtb"]
 ||yandex.$domain=howdyho.net
 ||yastatic.$domain=howdyho.net
 !
-championat.*,lenta.*##.js-scroll-to-site {remove:true;}
-cq.*##[class*="grid"] > a:has(.p-item__button-sponsored) {remove:true;}
+championat.com,lenta.ru##.js-scroll-to-site {remove:true;}
+cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored) {remove:true;}
 flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
 freesoft.ru###error.modal {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
-ixbt.*##.clickable_zone {remove:true;}
-ixbt.*##style[id^="branding-"] {remove:true;}
-lenta.*##.topic-body__content> .box-external-video:last-child {remove:true;}
-lenta.*##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
-lenta.*##.vk-video-popup {remove:true;}
+ixbt.com##.clickable_zone {remove:true;}
+ixbt.com##style[id^="branding-"] {remove:true;}
+lenta.ru##.layout__content > .js-topic:has(.topic-header__erid) {remove:true;}
+lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
+lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
+lenta.ru##.vk-video-popup {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
-tapochek.*##body:has(#register_link) > canvas
-tapochek.*##body:has(#register_link) > canvas {remove:true;}
+tapochek.net##body:has(#register_link) > canvas
+tapochek.net##body:has(#register_link) > canvas {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
-uwupad.*##style:has-text(lb-banner-height) {remove:true;}
-vk.*##head > style:has-text(/adchoice|mkit_|outlineBanner/i) {remove:true;}
-www.ixbt.*##body > style:has-text(margin-top) {remove:true;}
+uwupad.me##style:has-text(lb-banner-height) {remove:true;}
+vk.com,vk.ru##head > style:has-text(/adchoice|mkit_|outlineBanner/i) {remove:true;}
+www.ixbt.com##body > style:has-text(margin-top) {remove:true;}
 ! селекторы
 freesoft.ru###downloadAdModal
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
@@ -929,6 +930,7 @@ championat.com,championat.ru##.infographic-countdown
 championat.com,championat.ru##.infographic-duel
 championat.com,lenta.ru##.js-scroll-to-site
 lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
+lenta.ru#?#.layout__content > .js-topic:-abp-has(.topic-header__erid)
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##.lb-ad-visible
 gazeta.press,gazeta.ru##.m_zen
 lenta.ru##.olympiad
