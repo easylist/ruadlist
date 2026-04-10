@@ -252,6 +252,7 @@ e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a
 rutube.ru##+js(href-sanitizer, a[href^="https://rutube.ru/api/routing/"][href*="away?target"], ?target)
 nsportal.ru##+js(href-sanitizer, a[href^="https://www.google.com/url?q="])
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://www.gosuslugi.ru/ref?t="], ?to)
+livejournal.com##+js(href-sanitizer, a[href^="https://www.livejournal.com/away?to="], ?to)
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
 uma.media##+js(json-prune, appearance.extended_auto_start)
 ivanovonews.ru##+js(json-prune, banner.ytcode)
