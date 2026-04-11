@@ -1609,15 +1609,15 @@ dzen.ru##.news-page-layout__rubricator ~ [id]
 dzen.ru##.news-rubric-desktop__adv-column
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
+dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
+dzen.ru##[aria-label="Страница новостей"] > div[class] > div[class] > div[id] ~ div[id]
+dzen.ru##[aria-label="Страница новостей"] > div[class] > div[class] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"]
 dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
-dzen.ru##div[class*="content_with-new-layout"] > div[id] ~ div[id]
-dzen.ru##div[class*="content_with-new-layout"] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
-dzen.ru##div[class*="discreteStory"] > div[class*="metachannel"] ~ div[id]
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
