@@ -2493,6 +2493,7 @@ ura.news##[title^="Подписаться на "]
 dom2line.ru##a.fa[href^="http"]:not([href*="://dom2line.ru/"])
 zab.ru,zab.tv##a.header-e[target="_blank"]
 orelgrad.ru##a.mmb-floating-button[href^="https://max.ru/"]
+dzen.ru##a.news-story-block__link ~ div > div:not([class])
 peterburg2.ru##a.rl__btn[target="_blank"]
 uazmi.org##a.tgch-card-footer
 mgazeta.com##a.topline-item[href^="https:"][target="_blank"]
@@ -2686,7 +2687,6 @@ rg.ru##div[class*="EditorialHeader_contact"]
 mir24.tv##div[class*="InfoRowSocials"]
 igromania.ru,kanobu.ru##div[class*="ShareLinks_share"]
 ati.su##div[class*="SocialButtons"]
-dzen.ru##div[class*="StoryHead-desktop__controls"] > div:first-child:not([class])
 rg.ru##div[class*="Video"][class*="_share"]
 matchtv.ru##div[class*="WidgetArticle__share"]
 mir24.tv##div[class*="__share__"]
