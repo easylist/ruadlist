@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260410.1250
+@version        0.20260411.2249
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1740,8 +1740,7 @@
     div[class^="news-site-"][class*="-desktop-"] {
         background-color: transparent !important
     }
-    div[class*="body_branding"], 
-    div[class*="topContent"] > div:first-child + div > article[class*="_cardWrapper-"][id] {
+    div[class*="body_branding"] {
         background: inherit !important
     }
     #ad-feed, .adv-ecom, .content--styles__banner-cc + [aria-label] ~ div, 
@@ -1749,7 +1748,10 @@
     .news-page-layout__rubricator ~ [id], .news-rubric-desktop__adv-column, 
     .news-rubric-desktop__news > section > div > div[id], 
     .news-secondary-layout-column__secondary div[id], 
+    .news-sticky__inner > div > div[id], 
     .news-story-page div[id] > div:not([id]) > div[id], 
+    [aria-label="Страница новостей"] > div[class] > div[class] > div[id] ~ div[id], 
+    [aria-label="Страница новостей"] > div[class] > div[class] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], 
@@ -1765,9 +1767,7 @@
     div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"], 
     div[class*="adContentWrapper"], div[class*="adSplitEmbed"], 
     div[class*="bannerMain"], 
-    div[class*="content_with-new-layout"] > div[id] ~ div[id], 
-    div[class*="content_with-new-layout"] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
-    div[class*="discreteStory"] > div[class*="metachannel"] ~ div[id], 
+    div[class*="body_branding"] > div[style*="background-color:"], 
     div[class*="dzen-"][class*="-banner-"], 
     div[class*="dzen-desktop--"][class*="__ad-"], 
     div[class*="dzen-desktop--top-sidebar-desktop-ad__root"], 
@@ -1775,8 +1775,8 @@
     div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child, 
     div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="content--article-bottom-single-"], 
-    div[class^="dzen-desktop--"][class*="_main-"] div[style^="--top-padding:"], 
-    div[id$="-rtb"], div[id*="splashscreen"], 
+    div[class^="dzen-desktop--"][style^="--top-padding:"], div[id$="-rtb"], 
+    div[id*="splashscreen"], 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty, 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"], 
     div[id^="ad-"][class*=" news-"], div[id^="article-showcase-"], 
@@ -1796,6 +1796,10 @@
     }
     [class^="dzen-desktop--main-page-"], div[class*="-top-of-the-day-ad"] {
         opacity: 0 !important
+    }
+    div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div {
+        opacity: 0 !important;
+        pointer-events: none !important
     }
     body {
         overflow-y: unset !important
@@ -2438,7 +2442,10 @@
     }
 }
 
-@-moz-document domain("gooool365.org") {
+@-moz-document
+  domain("gooool365.com"),
+  domain("gooool365.org"),
+  domain("gooool365.sx") {
     body > .page {
         margin-top: 0 !important
     }
