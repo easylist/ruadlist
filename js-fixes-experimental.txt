@@ -472,6 +472,7 @@ iz.ru##+js(set-local-storage-item, vipler.player.live.play, false)
 dtf.ru,vc.ru##+js(set-local-storage-item, visits-count:plus-promotion, $remove$)
 twitch.tv##+js(twitch-videoad)
 aj2738.top##+js(window-close-if)
+beton.ua##+js(window-close-if, /acestream/i)
 silvercube12.xyz##+js(window-close-if, /dispatch)
 tv.acestream.org##+js(window-close-if, /p/?q=)
 infox.sg##+js(window-close-if, utm)
@@ -547,6 +548,7 @@ forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN
 dzen.ru##:matches-path(video/watch) [class*="_withBottomSpace-"]
 dzen.ru##:matches-path(video/watch) [class*="doc2doc-after"]
 pronpic.org#@#:not(obhod-adblocka)
+@@/click?pid=*&sub1=$doc,domain=go.affiliate-beton.com
 @@/fuckadblock.$script,domain=aniboom.one
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport$subdocument,removeparam=|
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-video$subdocument,removeparam=|
