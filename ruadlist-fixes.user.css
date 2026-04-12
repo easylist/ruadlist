@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260411.2249
+@version        0.20260412.1047
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5556,6 +5556,10 @@
     .branding, .logo {
         background: none !important;
         height: auto !important
+    }
+    .branding-bottom {
+        height: auto !important;
+        min-height: 0 !important
     }
     body[style^="padding-top:"][style*="250px"][style*="!important"] > #mkwrapper {
         margin-top: -250px !important
