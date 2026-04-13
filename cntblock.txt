@@ -1260,6 +1260,9 @@ top100.rambler.*##body > div:not([id])[style="position: absolute; z-index: 10000
 ||ntv.ru/api/player/related/$xmlhttprequest
 ||storage.mds.yandex.net/get-canvas-html5/*.html?link1=$empty,subdocument,domain=~dzen.ru
 ||yastatic.net/naydex/autoru/$script,redirect=empty
+!#if env_mv3
+dtf.ru,vc.ru##.oZtbmgrg:style(display: none !important)
+!#endif
 !
 ! yandex
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$empty,image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
