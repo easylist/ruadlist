@@ -1623,6 +1623,7 @@ dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"])
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"]
 dzen.ru##div[id^="ad-"][class*=" news-"]
