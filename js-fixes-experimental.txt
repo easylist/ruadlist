@@ -581,9 +581,9 @@ kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 
 4pda.to##body > div[id^="r"] > div[id^="r"][href]
 anime-chan.me##body > div[style^="pointer-events: none;"][style*="visible;"]
 4pda.to##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
-rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay .wdp-onboardings-inventory-module__popup
+rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*=" wdp-onboardings-inventory-"][class*="-module__popup "]
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*="-view-trigger-popup"]
-rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> .wdp-onboardings-inventory-module__popup)
+rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*=" wdp-onboardings-inventory-"][class*="-module__popup "])
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*="-view-trigger-popup"])
 rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
 tapochek.net##body:has(#register_link) > canvas
