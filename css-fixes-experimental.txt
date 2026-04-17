@@ -1611,8 +1611,8 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
-dzen.ru##[aria-label="Страница новостей"] > div[class] > div[class] > div[id] ~ div[id]
-dzen.ru##[aria-label="Страница новостей"] > div[class] > div[class] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+dzen.ru##[aria-label="Страница с новостями"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label])
+dzen.ru##[aria-label="Страница с новостями"] > div[class] > div > div[id] ~ div[id]
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
@@ -1621,6 +1621,7 @@ dzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
 dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"])
