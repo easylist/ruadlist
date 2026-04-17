@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260414.1951
+@version        0.20260417.1158
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1750,8 +1750,8 @@
     .news-secondary-layout-column__secondary div[id], 
     .news-sticky__inner > div > div[id], 
     .news-story-page div[id] > div:not([id]) > div[id], 
-    [aria-label="Страница новостей"] > div[class] > div[class] > div[id] ~ div[id], 
-    [aria-label="Страница новостей"] > div[class] > div[class] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
+    [aria-label="Страница с новостями"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label]), 
+    [aria-label="Страница с новостями"] > div[class] > div > div[id] ~ div[id], 
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], 
@@ -1776,12 +1776,13 @@
     div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="content--article-bottom-single-"], 
     div[class^="dzen-desktop--"][style^="--top-padding:"], 
+    div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"], 
     div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"]), 
     div[id$="-rtb"], div[id*="splashscreen"], 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty, 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"], 
     div[id^="ad-"][class*=" news-"], div[id^="article-showcase-"], 
-    div[style*="12.362637362637363"], 
+    div[style*="12.36263736263736"], 
     div[style*="important"] div[class*="__main"] {
         display: none !important
     }
