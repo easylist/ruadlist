@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260418.1352
+@version        0.20260418.1638
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2583,6 +2583,14 @@
     }
 }
 
+@-moz-document
+  domain("hdrezka.inc"),
+  domain("rezka.biz") {
+    .container > #content {
+        margin-top: unset !important
+    }
+}
+
 @-moz-document domain("hdru.net") {
     .page {
         margin-top: 0 !important
@@ -4355,12 +4363,6 @@
         height: auto !important
     }
     header[class^="header--standard"] {
-        margin-top: unset !important
-    }
-}
-
-@-moz-document domain("rezka.biz") {
-    .container > #content {
         margin-top: unset !important
     }
 }
