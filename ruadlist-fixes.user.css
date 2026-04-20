@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260420.1426
+@version        0.20260420.1838
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1761,9 +1761,10 @@
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     article[data-card-type*="-promo"], div[class*="--corner-banner_"], 
-    div[class*="-ad-block_"], div[class*="-right-ad-column"], 
-    div[class*="AdvertTsar"], div[class*="BrandingAdvertLayoutColumn-"], 
-    div[class*="__bannerContainer"], div[class*="_advertDoc2Doc-"], 
+    div[class*="-ad-block_"], div[class*="-ad-branding-"], 
+    div[class*="-right-ad-column"], div[class*="AdvertTsar"], 
+    div[class*="BrandingAdvertLayoutColumn-"], div[class*="__bannerContainer"], 
+    div[class*="_advertDoc2Doc-"], 
     div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"], 
     div[class*="adContentWrapper"], div[class*="adSplitEmbed"], 
     div[class*="bannerMain"], 
