@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260421.1326
+@version        0.20260423.1448
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1371,6 +1371,9 @@
   domain("tv") {
     [data-video_status][data-adapter="vk"] .previewContainer {
         display: none !important
+    }
+    [data-video_status][data-adapter="vk"] .mediaContainer {
+        display: unset !important
     }
 }
 
@@ -3101,8 +3104,8 @@
 @-moz-document
   domain("kp.kg"),
   domain("kp.kz"),
-  domain("kp.md"),
-  domain("kp.ru") {
+  domain("kp.ru"),
+  domain("md.kp.media") {
     .page-header__promo-btn[href*="/reklama/"], a[href^="https://advert.kp.ru"] {
         display: none !important
     }
@@ -3117,7 +3120,7 @@
 @-moz-document
   domain("kp.kg"),
   domain("kp.kz"),
-  domain("kp.md"),
+  domain("md"),
   domain("media"),
   domain("ru"),
   domain("russian.rt.com") {
