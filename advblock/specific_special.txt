@@ -120,7 +120,7 @@ mail.ru##[href*="https://dzen.ru"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
-kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
+kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
 drive2.ru#?#div:-abp-properties(min-height: 555px)
@@ -328,18 +328,15 @@ $third-party,script,xmlhttprequest,domain=kino-live8.biz
 kino-live8.biz#?#div[class^="right"] .ramka1:-abp-has(noindex)
 !
 ! Комсомольская правда
-kp.kg,kp.kz,kp.md,kp.ru##[data-subscribe-zen]
-kp.kg,kp.kz,kp.md,kp.ru##[data-test-id="News_SpecialArticle"]
-kp.kg,kp.kz,kp.md,kp.ru##[data-without-height]
-kp.kg,kp.kz,kp.md,kp.ru#?#body > #app [data-gtm-el="content-body"] ~ div > div:-abp-has(> [data-subscribe-zen])
-kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-has(> div:first-child + div > div:first-child > div:first-child + section > div > div > script[data-key])
-kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:last-child:-abp-has(> div > div > div ~ section > div > [id^="unit_"])
-kp.kg,kp.kz,kp.md,kp.ru##div[data-name]:not(.buttonContainer)
+kp.kg,kp.kz,kp.ru,md.kp.media##[data-test-id="News_SpecialArticle"]
+kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:last-child:-abp-has(> div > div > div ~ section > div > [id^="unit_"])
+kp.kg,kp.kz,kp.ru,md.kp.media##div[data-name]:not(.buttonContainer)
 ! спецпроекты, типа отдых в россии
 kp.ru##.inner-layout > div[style*="250px"]
 kp.ru##.kpad
 kp.ru##.kupi-reklamu-btn
 kp.ru##.rcard_link
+kp.ru##div[class^="rec-slot_"]
 ! путеводитель
 kp.ru###sidebar-block-top
 kp.ru##.kion__wrapper
@@ -357,7 +354,7 @@ kp.ru##.tgb_block
 kp.ru##div[id^="rec"] > div div[style="align-items:center;"]
 ||kp.ru/guide/js/brp.js
 ! эксперт
-/market-static/*$domain=kp.kg|kp.kz|kp.md|kp.ru
+/market-static/*$domain=kp.kg|kp.kz|kp.ru|md.kp.media
 kp.ru##.ya-market
 kp.ru##div.ad-slot
 ||kp.ru/*/expert-market/

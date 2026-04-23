@@ -199,7 +199,7 @@ rutube.ru##+js(addEventListener-defuser, click, current, elements, [data-testid=
 ~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
 lrepacks.net##+js(addEventListener-defuser, click, pop)
 ~id.rambler.ru,~mail.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, copy, extra)
-kp.kg,kp.kz,kp.md,kp.ru,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
+kp.kg,kp.kz,kp.ru,md.kp.media,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
 aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 cq.ru##+js(addEventListener-defuser, copy, preventDefault)
 megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
@@ -403,7 +403,7 @@ frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
-dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+dni.expert,dni.ru,kp.kg,kp.kz,kp.ru,ladys.media,lifehacker.ru,md.kp.media,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
@@ -577,7 +577,7 @@ aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
 cq.ru#?#article:-abp-has(> div .p__affiliate) a[href^="http"]:not([href*="cq.ru/"]):style(pointer-events: none !important; border-bottom: none !important; color: inherit !important)
 dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/))
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
-kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
+kp.kg,kp.kz,kp.ru,md.kp.media##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.to##body > div[id^="r"] > div[id^="r"][href]
 anime-chan.me##body > div[style^="pointer-events: none;"][style*="visible;"]
@@ -916,7 +916,7 @@ gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.ram
 !
 ! VIQEO автоплей на Shkulev Media, только для десктопов
 !#if !env_mobile
-7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,the-day.ru,woman.ru,www.fontanka.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
+7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.ru,md.kp.media,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,the-day.ru,woman.ru,www.fontanka.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,starhit.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-constant, Object.prototype.autoplay, undefined)
 !#endif
 !
