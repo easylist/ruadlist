@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260423.1448
+@version        0.20260424.1133
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4393,16 +4393,6 @@
     }
     #cookie-consent ~ [class*="_root_"] {
         top: unset !important
-    }
-}
-
-@-moz-document domain("ria.ru") {
-    .m-blur ~ #modalLayer {
-        display: none !important
-    }
-    .m-blur {
-        filter: none !important;
-        position: relative !important
     }
 }
 
