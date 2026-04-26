@@ -329,8 +329,9 @@ kino-live8.biz#?#div[class^="right"] .ramka1:-abp-has(noindex)
 !
 ! Комсомольская правда
 kp.kg,kp.kz,kp.ru,md.kp.media##[data-test-id="News_SpecialArticle"]
-kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:last-child:-abp-has(> div > div > div ~ section > div > [id^="unit_"])
+kp.kg,kp.kz,kp.ru,md.kp.media#?#div:-abp-has(> section > div > [data-name^="widget"])
 kp.kg,kp.kz,kp.ru,md.kp.media##div[data-name]:not(.buttonContainer)
+kp.kg,kp.kz,kp.ru,md.kp.media#?#section:-abp-has(> div[class]:first-child div[id^="unit_"])
 ! спецпроекты, типа отдых в россии
 kp.ru##.inner-layout > div[style*="250px"]
 kp.ru##.kpad
