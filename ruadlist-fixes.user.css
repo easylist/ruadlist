@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260424.1503
+@version        0.20260426.1457
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4019,17 +4019,11 @@
     header > .header__main {
         background-color: var(--color--header__bg) !important
     }
-    #menu-subs > [href]::after, .sidebar-game-block {
+    #menu-subs > [href]::after {
         display: none !important
     }
     div[class*="page-story"][class*="ments"] div {
         min-height: 0 !important
-    }
-    aside > .sidebar-block, aside > .sidebar-block > div, 
-    aside > .sidebar-block > div > div, 
-    aside > .sidebar-block > div > div > div, 
-    aside > .sidebar-block > div > div > div > div {
-        min-height: unset !important
     }
     .app > .app__inner[style*="padding-top"] {
         padding-top: 64px !important
