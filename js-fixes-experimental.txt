@@ -514,10 +514,11 @@ vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
 letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##.readMore
 sports.ru##.right-first-banner-place + div
+pikabu.ru##.sidebar-block:has(> div:matches-css(height: 0px)):remove()
+pikabu.ru##.sidebar-block:not(.sidebar-block_border):remove()
 softportal.com##.st-browser__timer
 gtavicecity.ru##.stop-waiting
 pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story:not([data-author-name])
-pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story[data-context-actions*=",profile_hide,"]
 24tv.ua##.storify-story-img:style(display: unset !important)
 24tv.ua##.storify-story-video
 gamemag.ru##.top-img-wrap:remove()
