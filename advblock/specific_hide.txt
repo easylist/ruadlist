@@ -5506,6 +5506,7 @@ tulapressa.ru##[data-href*="yandex."][data-href*="news"][data-href*="favid"]
 dltv.org##[data-id]
 smi2.ru##[data-id^="exAd_"]
 app2top.ru##[data-information]
+shuba.life##[data-ingredients] > div > div ~ span ~ div > button:first-child
 forbes.ru##[data-interval] > li div[style="min-height: 64px;"]
 om1.ru##[data-io-article-url] .content-block
 ozon.ru##[data-lcp-name*="anner-"]
@@ -5561,6 +5562,7 @@ dotabuff.com##[data-type="elo-placement"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
 nv.ua##[data-unit_type="bnr"]
 conversion.im##[data-url*="/banners/"]
+shuba.life##[data-v-app] [role="button"]
 slukh.media##[data-vc-parallax]
 trychatgpt.ru##[data-widget-id]
 safezone.cc##[data-widget-key="friends"]
@@ -5691,7 +5693,6 @@ browserss.ru##[onclick^="window."][onclick*="://"]
 allboxing.ru##[onmouseenter="onClickPbButton()"]
 penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
-shuba.life#?#[role="button"]:-abp-contains(Купит)
 rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
 rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 radiokot.ru##[src*="//radiokot.ru/adv/"]
@@ -6829,7 +6830,6 @@ livetvstream.pro,me##body[bgcolor] > div[id^="iframe-container"]
 hi-fi.ru##body[data-pageid] #ipsLayout_sidebar
 2gis.by,2gis.kz,2gis.ru##button > div[style^="width: 136px; height: 100%;"]
 2gis.by,2gis.kz,2gis.ru##button > div[style^="width: 136px; height: 100%;"] ~ div[style*="pointer-events: auto"]
-shuba.life#?#button:-abp-contains(Купит)
 novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
 360.ru,riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
 www.kinopoisk.ru##button[class*=" styles_adButton_"]
