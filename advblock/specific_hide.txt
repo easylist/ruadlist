@@ -2283,6 +2283,7 @@ drive2.ru##.c-dv-p
 drive2.com,drive2.ru##.c-dv-sns
 dsnews.ua#?#.c-feed__list-item:-abp-has(> .c-feed__item > .c-r)
 drive2.com,drive2.ru#?#.c-header:-abp-contains(/Ads|Реклама/)
+shuba.life#?#.c-post__aside-wrapper > aside:-abp-has(.c-product-card)
 telegraf.com.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
 delo.ua,dsnews.ua,focus.ua##.c-r
 5-tv.ru##.cFadeDark
@@ -3743,7 +3744,6 @@ zazbruchem.te.ua##.ova-place-block__position--rendered
 tv-assia.org##.ovdiv
 domkad.ru##.over-rsi
 russia-tv.online##.overflow-hidden.border[class*="border-brand-base"]
-shuba.life##.overflow-hidden.c-card
 bstudy.net,ozlib.com,studbooks.net,studme.org,studref.com,studwood.net,vuzlit.com,xstud.org##.overheader
 krastown.com##.overlay_wrap
 truba.com##.overvideo
@@ -5419,7 +5419,6 @@ season.ru##[class^="bnnr_bx_"]
 101.ru##[class^="bnr-"]
 geonavigator.ge,navigator.az##[class^="brand"]
 slovoidilo.ua##[class^="branding-link-"]
-shuba.life##[class^="c-banner"]
 ukrsport.pro##[class^="cs-banner"]
 fastpic.org##[class^="embed-responsive"]
 klubok.com##[class^="gekon"]
@@ -5469,6 +5468,7 @@ teknoblog.ru##[data-advadstrackid]
 epicentrk.ua##[data-advertising-listing-list] header
 bryansknovosti.ru,novozybkov.su#?#[data-alias="Copyright"] .widget-area > .widget_text:not(:last-child):-abp-has(script)
 vc.ru##[data-analytics*="native"]
+shuba.life#?#[data-article] > section:-abp-has(.c-product-card)
 shuba.life##[data-banner-container]
 bobr.by,buhonline.ru,zakon.ru##[data-banner-id]
 intent.press,karavan.ua,sportarena.ua##[data-banner-name]
@@ -5491,7 +5491,6 @@ starhit.ru##[data-creative]
 drive2.com,drive2.ru##[data-data-ym-view]
 banki.ru##[data-dfp-container]
 briefly.ru##[data-disclaimer*="Реклама"]
-shuba.life##[data-discount-banner]
 basaru.net.ru,gooool365.com,gooool365.org,gooool365.sx,lexxs.us,redheadsound.studio,superkarate.ru,topfile.tj,uzmov.net,weblance.com.ua##[data-dlebclicks]
 dumatv.ru##[data-dzen-url]
 arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##[data-element_type="widget"] a[rel="nofollow"]
@@ -5521,14 +5520,12 @@ vladnews.ru##[data-newsb]
 bankiros.ru##[data-offer]
 kinorium.com##[data-original-url*="erid="]
 news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
-shuba.life,studopedia.ru,studopedia.su##[data-partner]
+studopedia.ru,studopedia.su##[data-partner]
 iz.ru##[data-partners-block-id]
 satellitetvforum.info##[data-phpbb-ads-id]
 litnet.com##[data-popmechanic-embed]
 odds.ru##[data-popup="bonus"]
-shuba.life##[data-product]
 cheezu.ru##[data-provider="yandex"]
-shuba.life#?#[data-purchase-ingredients-url] button:-abp-has(> [src*="/silpo."])
 vseinstrumenti.ru##[data-qa="carousel_adfox"]
 ozon.ru##[data-replace-layout-path] > div[style="height:300px;"]
 ozon.ru##[data-replace-layout-path]:only-child > div[style^="min-width:"][style*="height:"]
@@ -5694,6 +5691,7 @@ browserss.ru##[onclick^="window."][onclick*="://"]
 allboxing.ru##[onmouseenter="onClickPbButton()"]
 penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
+shuba.life#?#[role="button"]:-abp-contains(Купит)
 rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
 rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 radiokot.ru##[src*="//radiokot.ru/adv/"]
@@ -5886,13 +5884,11 @@ dota2.ru##a[href*="/gobet/"]
 gig-torrent.ru##a[href*="/gobtn.php"]
 black-warez.ru##a[href*="/goto.php?file="]
 newsyou.info##a[href*="/goto/"][target]
-shuba.life##a[href*="/ingredients/buy"]
 soccer24.top,sportlive365.net,zfilm-hd.org,zfilme-hd1.site##a[href*="/is.gd/"]
 soccer.ru##a[href*="/odds"]
 posudaa.ru##a[href*="/offer/"]
 pikabu.ru##a[href*="/payment/steam?"]
 sakh.tv##a[href*="/promo/out/banner/"]
-shuba.life##a[href*="/purchase"][target="_blank"]
 kinonews.ru##a[href*="/rdrct_"]
 flatfy.lun.ua##a[href*="/redirect-andromeda/"]
 soccer.ru##a[href*="/redirect.php?destination"]
@@ -6668,7 +6664,6 @@ bessarabiainform.com##aside div[class^="a-single"]
 adme.media##aside div[style^="min-height:"]
 magtimes.info##aside img[src^="http://magtimes.info/wp-content/uploads/"]
 poligon.by##aside#sidebar > a[href]
-shuba.life#?#aside.c-section:-abp-has(a[href*="/silpo/"])
 autotheme.info##aside.sidebar > .custom-html-widget
 autotheme.info##aside.sidebar > h2:first-child
 postal.ninja##aside.tm-sidebar-a [class*="block"]
@@ -6838,8 +6833,6 @@ shuba.life#?#button:-abp-contains(Купит)
 novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
 360.ru,riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
 www.kinopoisk.ru##button[class*=" styles_adButton_"]
-shuba.life#?#button[target="_blank"]:-abp-has(> .i-icon-basket)
-shuba.life##button[target="_blank"]:not([href])
 flamp.ru##cat-banner
 exnews.org##center + noindex
 avtonavideo.ru,chinimavto.ru,minecraftnavideo.ru,multivarki-redmond.ru,odezhda2.ru,piling.re,pol-video.ru,prigotovit.org,prohozhuigru.ru,remontnavideo.ru,televizor2.ru##center > #vis
@@ -8330,7 +8323,6 @@ vgoru.org##script[src^="https://mediabrama.com/shop/"] + div[class]
 car72.ru##section > .container-fluid > div[style^="width:"][style$="%"]
 stopgame.ru#?#section > div[class^="_content-wrapper_"]:-abp-has(> div > a[href^="/watch"]) ~ [class^="_content"] a[href^="/to?http"]
 eanews.ru#?#section > section:-abp-has(> [class^="styled__AdvLink-sc-"])
-shuba.life##section.c-post__full > [style="overflow: hidden;"]
 amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,novostirostov.ru,omskmedia.su,peterburgmedia.ru,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,yakutiamedia.ru,yugopolis.ru##section.countdown
 iguides.ru#?#section.row > section:-abp-has(> article [href*="?erid="])
 byxatab.com##section.sect.sect--bdt:nth-of-type(1)
