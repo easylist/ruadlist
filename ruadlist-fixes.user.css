@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260429.1325
+@version        0.20260430.1656
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1753,10 +1753,10 @@
     .news-secondary-layout-column__secondary div[id], 
     .news-sticky__inner > div > div[id], 
     .news-story-page div[id] > div:not([id]) > div[id], 
-    [aria-label] div[id][class*="-desktop__ad-"], 
-    [aria-label^="Страница "][aria-label*=" новост"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label]), 
-    [aria-label^="Страница "][aria-label*=" новост"] > div[class] > div > div[id] ~ div[id], 
-    [class*="CardRtb"], [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
+    [aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label]), 
+    [aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
+    [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
+    [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], 
     [class*="segment__container"] > div > article[class^="card "] ~ div:last-child, 
     [class*="yandex-direct"], [data-is-rendered="false"], 
