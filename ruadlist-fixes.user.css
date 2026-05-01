@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260430.1656
+@version        0.20260501.1639
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1753,8 +1753,8 @@
     .news-secondary-layout-column__secondary div[id], 
     .news-sticky__inner > div > div[id], 
     .news-story-page div[id] > div:not([id]) > div[id], 
-    [aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label]), 
     [aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
+    [aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], 
