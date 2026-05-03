@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260502.1344
+@version        0.20260503.2035
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4788,14 +4788,11 @@
 }
 
 @-moz-document domain("stratege.ru") {
-    html {
-        background-color: #dbdbdb !important
-    }
-    html[xmlns] .above_body {
+    .above_body {
         margin-bottom: auto !important
     }
-    html[xmlns] #globalcontent {
-        padding-top: 0 !important
+    #globalcontent {
+        margin-top: 0 !important
     }
 }
 
