@@ -1176,6 +1176,13 @@ rbc.ru##div[class^="styles_okko"]
 ||utro.ru/*/banners/
 ||zoom.cnews.ru/inc/bpic/
 !
+! REPAK.me
+repack.me##.row > div:first-child .panel-primary:nth-child(-n+3)
+repack.me##.row > div:first-child .panel-primary:nth-child(-n+3) + br
+! блокировки, добавленные из-за агрессивного обхода >
+||t.me/neovpnbot?$third-party,popup
+||waicore.net^$third-party,popup
+!
 ! Spaces и зеркала
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###sidebar > div[class]:last-child
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
