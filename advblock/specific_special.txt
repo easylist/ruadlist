@@ -1177,8 +1177,8 @@ rbc.ru##div[class^="styles_okko"]
 ||zoom.cnews.ru/inc/bpic/
 !
 ! REPAK.me
-repack.me##.row > div:first-child .panel-primary:nth-child(-n+3)
-repack.me##.row > div:first-child .panel-primary:nth-child(-n+3) + br
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/waicore"])
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href^="/neo"])
 ! блокировки, добавленные из-за агрессивного обхода >
 ||t.me/neovpnbot?$third-party,popup
 ||waicore.net^$third-party,popup
