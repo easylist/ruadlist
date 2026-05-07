@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260507.31
+@version        0.20260507.2120
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1739,8 +1739,8 @@
     .news-secondary-layout-column__secondary div[id], 
     .news-sticky__inner > div > div[id], 
     .news-story-page div[id] > div:not([id]) > div[id], 
-    [aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
-    [aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
+    [aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
+    [aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], 
@@ -1766,14 +1766,13 @@
     div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="content--article-bottom-single-"], 
     div[class^="dzen-desktop--"][style^="--top-padding:"], 
-    div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"], 
+    div[class^="news-"][style="margin-top: 0px; height: calc(99.99% - 0px);"], 
     div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"]), 
     div[id$="-rtb"], div[id*="splashscreen"], 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty, 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"], 
     div[id^="ad-"][class*=" news-"], div[id^="article-showcase-"], 
-    div[style*="12.36263736263736"], 
-    div[style*="important"] div[class*="__main"] {
+    div[style*="12.3626373626373"], div[style*="important"] div[class*="__main"] {
         display: none !important
     }
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
@@ -5549,7 +5548,7 @@
 
 @-moz-document domain("ya.ru") {
     .i-mini-bem[style], .market-feed, .reasoning-section, 
-    [action*="/search/"] ~ div[style], [id^="r"][id*="yt"][id*="m-f"][id$="d"], 
+    [action*="/search/"] ~ div[style], [id^="r"][id*="yt"][id*="m-f"], 
     html[class*="_neuro"] aside ~ div[style], 
     html[class*="_reaso"] aside ~ div[style], 
     html[class*="document_feed_"] aside ~ div[style] {
