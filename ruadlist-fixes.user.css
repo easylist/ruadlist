@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260507.2120
+@version        0.20260508.958
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4325,7 +4325,7 @@
 }
 
 @-moz-document domain("repack.me") {
-    main > div {
+    html:not(.admin) > body > main > div {
         padding-top: 0 !important;
         margin-top: 0 !important
     }
