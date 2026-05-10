@@ -59,7 +59,7 @@ howdyho.net#@#div[id^="yandex_rtb"]
 ||yandex.$domain=howdyho.net
 ||yastatic.$domain=howdyho.net
 !
-championat.com,lenta.ru##.js-scroll-to-site {remove:true;}
+championat.com,lenta.ru##[class*="scroll-to-site"] {remove:true;}
 cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored) {remove:true;}
 flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
@@ -938,7 +938,6 @@ championat.com,championat.ru##.header-bottom__adv
 lenta.ru##.header__my
 championat.com,championat.ru##.infographic-countdown
 championat.com,championat.ru##.infographic-duel
-championat.com,lenta.ru##.js-scroll-to-site
 lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
 lenta.ru#?#.layout__content > .js-topic:-abp-has(.topic-header__erid)
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##.lb-ad-visible
@@ -958,6 +957,7 @@ lenta.ru##.vk-video-popup
 lenta.ru##.yandex-games
 rambler.ru,rambler.ua,www.afisha.ru##[aria-label="Реклама"]
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
+championat.com,lenta.ru##[class*="scroll-to-site"]
 auto.rambler.ru,avtorambler.com##[data-auto_media-desktop*="rnet_widget"]
 auto.rambler.ru,avtorambler.com#?#[data-auto_media-desktop="content_block"] ~ div div:-abp-has(> div > [data-rcmw-init])
 rambler.ru##[data-cerber="weather-widget"] a[href*="?erid="]
