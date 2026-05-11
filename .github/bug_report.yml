@@ -1,0 +1,66 @@
+name: Сообщение о проблеме с фильтрами
+description: Здесь сообщайте о сломанной функциональности русскоязычных сайтов, пропущенной рекламе, обнаружении блокировщиков и т.д.
+body:
+  - type: textarea
+    attributes:
+      label: URL(ы), где возникает проблема.
+      description: |
+        Хотя бы один URL **ОБЯЗАТЕЛЕН** для проблемы, затрагивающей веб-страницу.
+      placeholder: |
+        https://example.com
+        https://example.org
+        https://example.net
+      render: yaml
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Описание
+      description: Дайте чёткое и краткое описание проблемы.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Браузер и версия
+      description: Укажите точное название браузера и его версию.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Скриншот(ы)
+      description: |
+        Скриншот(ы) **ОБЯЗАТЕЛЬНЫ**.
+      value: |
+        <details>
+        <summary>Скриншот(ы)</summary>
+
+        <!-- Перетащите скриншот сюда -->
+        <!-- ⬇️  ⬇️  ⬇️ -->
+
+
+        <!-- ⬆️  ⬆️  ⬆️ -->
+
+        </details>
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Конфигурация
+      description: |
+        Откройте новую вкладку: Воспроизведите проблему и на этой странице > 🛡️ Нажмите на значок uBO > 💬 Кнопка "Report" > Прокрутите вниз > Нажмите "Troubleshooting Information" > Скопируйте и вставьте ниже.
+      value: |
+        <details>
+        <summary>Детали</summary>
+
+        <!-- ⬇️ Вставьте информацию для диагностики здесь ⬇️ -->
+        ```yaml
+
+
+        ```
+        </details>    
+    validations:
+      required: true
