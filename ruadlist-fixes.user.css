@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260512.1722
+@version        0.20260513.1415
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2976,6 +2976,12 @@
 @-moz-document domain("kinokladovka.com") {
     .b-background {
         background: none !important;
+        padding-top: 0 !important
+    }
+}
+
+@-moz-document domain("kinokong.day") {
+    .wrapper {
         padding-top: 0 !important
     }
 }
