@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260513.1415
+@version        0.20260515.1644
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4449,6 +4449,12 @@
 @-moz-document domain("rusnext.ru") {
     .header20-00 {
         height: auto !important
+    }
+}
+
+@-moz-document domain("rusport.live") {
+    body {
+        padding-top: 0 !important
     }
 }
 
