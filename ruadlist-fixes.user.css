@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260515.1644
+@version        0.20260516.1122
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1739,8 +1739,8 @@
     .news-secondary-layout-column__secondary div[id], 
     .news-sticky__inner > div > div[id], 
     .news-story-page div[id] > div:not([id]) > div[id], 
-    [aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
-    [aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
+    [aria-label*="тра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
+    [aria-label*="тра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], 
@@ -1749,11 +1749,12 @@
     [data-testid*="-ad-block"], [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    article[data-card-type*="-promo"], div[class*="--corner-banner_"], 
-    div[class*="-ad-block_"], div[class*="-ad-branding-"], 
-    div[class*="-right-ad-column"], div[class*="AdvertTsar"], 
-    div[class*="BrandingAdvertLayoutColumn-"], div[class*="__bannerContainer"], 
-    div[class*="_advertDoc2Doc-"], 
+    article[data-card-type*="-promo"], 
+    div[class*=" dzen-"][style^="--top-padding:"], 
+    div[class*="--corner-banner_"], div[class*="-ad-block_"], 
+    div[class*="-ad-branding-"], div[class*="-right-ad-column"], 
+    div[class*="AdvertTsar"], div[class*="BrandingAdvertLayoutColumn-"], 
+    div[class*="__bannerContainer"], div[class*="_advertDoc2Doc-"], 
     div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"], 
     div[class*="adContentWrapper"], div[class*="adSplitEmbed"], 
     div[class*="bannerMain"], 
@@ -1765,7 +1766,6 @@
     div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child, 
     div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="content--article-bottom-single-"], 
-    div[class^="dzen-desktop--"][style^="--top-padding:"], 
     div[class^="news-"][style="margin-top: 0px; height: calc(99.99% - 0px);"], 
     div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"]), 
     div[id$="-rtb"], div[id*="splashscreen"], 
