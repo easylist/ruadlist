@@ -575,7 +575,7 @@ gazeta.press,gazeta.ru##^responseheader(location)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
 cq.ru#?#article:-abp-has(> div .p__affiliate) a[href^="http"]:not([href*="cq.ru/"]):style(pointer-events: none !important; border-bottom: none !important; color: inherit !important)
-dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/))
+dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/-yp$|direct|mytarget/))
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 kp.kg,kp.kz,kp.ru,md.kp.media##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
