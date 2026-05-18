@@ -178,7 +178,6 @@ drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
 fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
-cq.ru##+js(addEventListener-defuser, DOMContentLoaded, 'fullscreen-ad')
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /EventTracker|utm_campaign/)
 buhplatforma.com.ua,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua##+js(addEventListener-defuser, DOMContentLoaded, StrategyHandler)
@@ -197,7 +196,6 @@ lrepacks.net##+js(addEventListener-defuser, click, pop)
 ~id.rambler.ru,~mail.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, copy, extra)
 kp.kg,kp.kz,kp.ru,md.kp.media,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
 aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
-cq.ru##+js(addEventListener-defuser, copy, preventDefault)
 megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
 trychatgpt.ru##+js(addEventListener-defuser, error, '', elements, [data-status="loading"])
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
@@ -511,7 +509,6 @@ dtf.ru,vc.ru##.media .andropov-video video:remove-attr(autoplay)
 hideip.me#@#.node-promoted
 author.today##.noselect:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 vm.ru##.onair_wrapper > [name="btn_air_close"]
-cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
 letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##.readMore
 sports.ru##.right-first-banner-place + div
 pikabu.ru##.sidebar-block:has(> div:matches-css(height: 0px)):remove()
@@ -557,7 +554,6 @@ pronpic.org#@#:not(obhod-adblocka)
 @@||studizba.com^$generichide,badfilter
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 sports.ru##[class*="_label "]
-cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
@@ -574,7 +570,7 @@ gazeta.press,gazeta.ru##^responseheader(location)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
-cq.ru#?#article:-abp-has(> div .p__affiliate) a[href^="http"]:not([href*="cq.ru/"]):style(pointer-events: none !important; border-bottom: none !important; color: inherit !important)
+respawn.media#?#article:has(> div span:has-text(/РЕКЛАМА: ЕРИД/i)) a[href^="http"]:not([href*="respawn.media/"]):style(pointer-events: none !important; border-bottom: none !important; color: inherit !important)
 dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/-yp$|direct|mytarget/))
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 kp.kg,kp.kz,kp.ru,md.kp.media##body > #app div:matches-css(background-color: rgb(225, 231, 235))
@@ -605,7 +601,6 @@ dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)
 dzen.ru##div:matches-attr(/data-is-/="false")
 dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница с новостями"] > div:only-child > div > div:first-child:not([style]):not([aria-label])
-cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 dzen.ru##div[class^="news-"]:matches-attr(/./=/-stub/)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
