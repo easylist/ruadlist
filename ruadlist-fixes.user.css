@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260516.1848
+@version        0.20260518.1126
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1429,12 +1429,6 @@
     }
 }
 
-@-moz-document domain("cq.ru") {
-    .box[class*="content"] {
-        margin-top: auto !important
-    }
-}
-
 @-moz-document domain("creativportal.ru") {
     .pocaz {
         width: 10px !important;
@@ -1725,12 +1719,17 @@
 }
 
 @-moz-document domain("dzen.ru") {
+    div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] > div:empty, 
+    div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] > div:empty + div div, 
     div[class^="news"] [class*="skeleton"], 
     div[class^="news-site-"][class*="-desktop-"] {
         background-color: transparent !important
     }
     div[class*="body_branding"] {
         background: inherit !important
+    }
+    div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] {
+        border: inherit !important
     }
     #ad-feed, .adv-ecom, .content--styles__banner-cc + [aria-label] ~ div, 
     .news-page-layout__content > div[class*="position"], 
