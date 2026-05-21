@@ -3,7 +3,10 @@ ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,r
 ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] {padding-top:0;background-color:inherit;}
 ! Моносериальные домены HDrezka
 net##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]) {margin-top:unset;}
-!
+! ---
+! Shkulev Media
+ru##[data-ns-portal] .branding[data-page] {margin-top:unset;width:100%;}
+! ---
 ex-fs.net###content {margin-top:0;}
 respawn.media#?#article:has(> div span:has-text(/РЕКЛАМА: ЕРИД/i)) a[href^="http"]:not([href*="respawn.media/"]) {pointer-events:none;border-bottom:none;color:inherit;}
 stratege.ru###globalcontent {margin-top:0;padding-top:0;}
