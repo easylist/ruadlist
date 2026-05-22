@@ -1534,11 +1534,8 @@ ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
-ya.ru##[action*="/search/"] ~ aside + div
 ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
-ya.ru##html[class*="_neuro"] aside ~ div[style]
-ya.ru##html[class*="_reaso"] aside ~ div[style]
-ya.ru##html[class*="document_feed_"] aside ~ div[style]
+ya.ru##html[class*="document_extra-content"] aside + div
 ! афиша
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="250px;"][style*="display:"][style*="block;"]:empty
