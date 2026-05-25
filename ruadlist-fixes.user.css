@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260522.2149
+@version        0.20260525.1239
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4827,6 +4827,12 @@
     .redirect-button {
         pointer-events: auto !important;
         opacity: 1 !important
+    }
+}
+
+@-moz-document domain("tartugi.net") {
+    .pagebg > .wrapper {
+        padding-top: 0 !important
     }
 }
 
