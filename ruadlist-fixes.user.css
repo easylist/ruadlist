@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260525.1239
+@version        0.20260526.2158
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5418,7 +5418,7 @@
     .film-seances-page, .shadow.shadow-restyle {
         box-shadow: 0 -8px 15px #333333 !important
     }
-    #modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"]), 
+    #modal-container > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"]), 
     #top > div[id][style^="height: 210px"], 
     .desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child, 
     .page-content > div[id]:not(#header-info-bg):empty, .top-banner-container, 
@@ -5566,8 +5566,8 @@
 
 @-moz-document domain("ya.ru") {
     .i-mini-bem[style], .market-feed, .reasoning-section, 
-    [id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"], 
-    html[class*="document_extra-content"] aside + div {
+    [id^="r"][id*="it"][id*="m"][id*="-"][id*="f"], 
+    html[class*="sektlion_top"] aside + div {
         display: none !important
     }
     .document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body {
