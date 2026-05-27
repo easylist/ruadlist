@@ -316,6 +316,7 @@ sm.news##+js(no-xhr-if, method:GET)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
 otzovik.com##+js(noeval-if, ShadowRoot)
 kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
+www.kinopoisk.ru##+js(prevent-addEventListener, /canplay|loadeddata|playing|timeupdate/, '', elements, [poster][loop])
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopop|popMagic/)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0x|popMagic/)
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
@@ -665,8 +666,6 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
 ||googletagmanager.com/gtag/js?id=UA-$important,script,domain=inforesist.org
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
-||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
-||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||loadercdn.com^$important,script,redirect=noopjs
 ||m.mixadvert.com/show/$important,script
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
@@ -689,7 +688,6 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=autostart
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
 ||video.sports.ru/embed/*autoplay=1$subdocument,removeparam=autoplay
-||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
 ||yastatic.net/s3/home-static/feeds/$third-party
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
