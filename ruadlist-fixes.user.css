@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260528.1056
+@version        0.20260528.1512
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1711,16 +1711,19 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] > div:empty, 
-    div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] > div:empty + div div, 
+    div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child > div > div:empty, 
+    div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child > div > div:empty + div div {
+        background-color: inherit !important
+    }
     div[class^="news"] [class*="skeleton"], 
     div[class^="news-site-"][class*="-desktop-"] {
         background-color: transparent !important
     }
-    div[class*="body_branding"] {
+    div[class*="body_branding"], 
+    div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child {
         background: inherit !important
     }
-    div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] {
+    div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child > div {
         border: inherit !important
     }
     #ad-feed, .adv-ecom, .content--styles__banner-cc + [aria-label] ~ div, 
