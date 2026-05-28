@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260527.1710
+@version        0.20260527.2348
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1692,17 +1692,9 @@
     }
 }
 
-@-moz-document
-  domain("dynamo.kiev.ua"),
-  domain("ringside24.com") {
-    .social-open {
-        overflow: auto !important
-    }
-    .fader-social {
-        position: fixed !important;
-        top: -10000px !important;
-        opacity: 0 !important;
-        z-index: -9999 !important
+@-moz-document domain("dynamo.kiev.ua") {
+    body {
+        padding-top: 60px !important
     }
 }
 
@@ -1739,8 +1731,6 @@
     .news-sticky__inner > div > div[id], 
     .news-story-page div[id] > div:not([id]) > div[id], 
     [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
-    [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
-    [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
     [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
