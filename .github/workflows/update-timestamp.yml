@@ -26,4 +26,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@://github.com"
           
-          git diff --quiet || (git add cntblock.txt && git commit -m "chore: update timestamp [skip ci]" && git push)
+          git diff --quiet || (git add cntblock.txt && git commit -m "Autoupdate cntblock timestamp [skip ci]" && git push)
