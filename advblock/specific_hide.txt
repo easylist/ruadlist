@@ -2283,8 +2283,8 @@ drive2.ru##.c-dv-p
 drive2.com,drive2.ru##.c-dv-sns
 dsnews.ua#?#.c-feed__list-item:-abp-has(> .c-feed__item > .c-r)
 drive2.com,drive2.ru#?#.c-header:-abp-contains(/Ads|Реклама/)
-shuba.life#?#.c-post__aside-wrapper > aside:-abp-has(.c-product-card)
 telegraf.com.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
+shuba.life##.c-product-card
 delo.ua,dsnews.ua,focus.ua##.c-r
 5-tv.ru##.cFadeDark
 nashamama.com#?#.cN-linkList:-abp-has(> h3:only-child)
@@ -5470,7 +5470,7 @@ teknoblog.ru##[data-advadstrackid]
 epicentrk.ua##[data-advertising-listing-list] header
 bryansknovosti.ru,novozybkov.su#?#[data-alias="Copyright"] .widget-area > .widget_text:not(:last-child):-abp-has(script)
 vc.ru##[data-analytics*="native"]
-shuba.life#?#[data-article] > section:-abp-has(.c-product-card)
+shuba.life#?#[data-article] > .c-section:-abp-has(.c-product-card)
 shuba.life##[data-banner-container]
 bobr.by,buhonline.ru,zakon.ru##[data-banner-id]
 intent.press,karavan.ua,sportarena.ua##[data-banner-name]
@@ -5509,7 +5509,6 @@ tulapressa.ru##[data-href*="yandex."][data-href*="news"][data-href*="favid"]
 dltv.org##[data-id]
 smi2.ru##[data-id^="exAd_"]
 app2top.ru##[data-information]
-shuba.life##[data-ingredients] > div > div ~ span ~ div > button:first-child
 forbes.ru##[data-interval] > li div[style="min-height: 64px;"]
 om1.ru##[data-io-article-url] .content-block
 ozon.ru##[data-lcp-name*="anner-"]
@@ -5565,7 +5564,7 @@ dotabuff.com##[data-type="elo-placement"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
 nv.ua##[data-unit_type="bnr"]
 conversion.im##[data-url*="/banners/"]
-shuba.life##[data-v-app] [role="button"]
+shuba.life##[data-v-app] button.cursor-pointer
 slukh.media##[data-vc-parallax]
 trychatgpt.ru##[data-widget-id]
 safezone.cc##[data-widget-key="friends"]
