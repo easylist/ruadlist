@@ -1276,7 +1276,6 @@ disk.yandex.*,docs.yandex.*##.footer__copyright a[href="https://ya.ru"]:style(to
 disk.yandex.*,docs.yandex.*##.footer__copyright:style(color: transparent !important)
 disk.yandex.*,docs.yandex.*,mail.yandex.*##[data-testid*="global-bar"] a[aria-label="Яндекс 360"]:style(pointer-events: none !important)
 disk.yandex.*,mail.yandex.*##.Base-Onboarding:style(display: none !important)
-dzen.*##+js(abort-on-property-read, Object.prototype.setBlockId)
 dzen.*##.climate-calendar-container__adv-wide:style(display: none !important)
 dzen.*##.content-id-for-morda div:matches-attr(/./=top-content) > div + div:style(display: none !important)
 dzen.*##.content__adv:style(display: none !important)
@@ -1288,7 +1287,6 @@ dzen.*##[itemtype="https://www.schema.org/Article"] > div > div[id]:style(displa
 dzen.*##article > div[class$="-yp"]:style(display: none !important)
 dzen.*##article[class*="_zenad"]:style(display: none !important)
 dzen.*##div:matches-attr(/[a-z0-9]/=/media-banner/):style(display: none !important)
-dzen.*##div:matches-attr(/data-[a-z0-9]/=/placeholder/):style(display: none !important)
 dzen.*##div[aria-label*="екл"][aria-label*="мн"]:style(display: none !important)
 dzen.*##div[class*="-place"][class*="_root"]:style(display: none !important)
 dzen.*##div[class*="-placeholder_"]:style(display: none !important)
@@ -1303,6 +1301,8 @@ dzen.*##div[class*="linkBro-"]:style(display: none !important)
 dzen.*##div[class^="content--article-right-"]:style(display: none !important)
 dzen.*##div[class^="dzen-desktop--news-right-"]:style(display: none !important)
 dzen.*##html[class*="template__"] [id][class] div[style*="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
+dzen.*,sportsdzen.*##+js(abort-on-property-read, Object.prototype.setBlockId)
+dzen.*,sportsdzen.*##div:matches-attr(/data-[a-z0-9]/=/placeholder/):style(display: none !important)
 dzen.*,ya.*,~yandex.net,yandex.*##+js(json-prune, direct rtb seatbid data.*.attributes.blockId)
 eda.yandex.ru##main#main main > div[style^="margin-bottom:"] [aria-label="Акция"]
 eda.yandex.ru#?#main#main main > div[style^="margin-bottom:"]:-abp-has([aria-label="Акция"])
@@ -1377,10 +1377,10 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro:style(display: none !important)
 ~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.Rtb, undefined)
 !#if env_mv3
-dzen.ru,ya.ru##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
-dzen.ru,ya.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x, document)
-dzen.ru,ya.ru##+js(cookie-remover, /ancQTZw|bltsr|HgGedof|KIykI/)
-dzen.ru,ya.ru##+js(prevent-setTimeout, /BLOCKERS|NOT_BLOCKED/)
+dzen.ru,sportsdzen.ru,ya.ru##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
+dzen.ru,sportsdzen.ru,ya.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x, document)
+dzen.ru,sportsdzen.ru,ya.ru##+js(cookie-remover, /ancQTZw|bltsr|HgGedof|KIykI/)
+dzen.ru,sportsdzen.ru,ya.ru##+js(prevent-setTimeout, /BLOCKERS|NOT_BLOCKED/)
 ya.ru##+js(set-constant, Object.prototype.AdblockCookieMatchingType, undefined)
 !#endif
 !
@@ -1411,23 +1411,23 @@ yandex.*##span[class^="style_placeholder_"]:empty:style(display: none !important
 @@||an.yandex.ru/mapuid/tnscounter/?from=yan_oo-rtb-direct|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||an.yandex.ru/mapuid/yandex/$image,domain=auto.ru|dzen.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||an.yandex.ru/meta/*target-ref=*pogoda$xmlhttprequest,domain=yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
-@@||an.yandex.ru/resource/spacer.gif|$image,domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
+@@||an.yandex.ru/resource/spacer.gif|$image,domain=dzen.ru|sportsdzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||an.yandex.ru/system/context.js|$domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||mc.yandex.ru/metrika/advert.gif|$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=dzen.ru|sportsdzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||yandex.ru/ads/page/*target-ref=*pogoda$xmlhttprequest,domain=yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/context.js?$script,domain=dzen.ru
 @@||yandex.ru/ads/system/context.js?|$script,domain=ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
-@@||yandex.ru/ads/system/context.js|$domain=auto.ru|dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
+@@||yandex.ru/ads/system/context.js|$domain=auto.ru|dzen.ru|sportsdzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
 @@||yandex.ru/ads/system/header-bidding.js|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||yandex.ru/ads/system/widget.js|$script,domain=dzen.ru
+@@||yandex.ru/ads/system/widget.js|$script,domain=dzen.ru|sportsdzen.ru
 @@||yastatic.net/daas/atom.js|$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@||yastatic.net/pcode/adfox/loader.js|$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-@@||yastatic.net/safeframe-bundles/*/host.js|$xmlhttprequest,domain=dzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
-dzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
+@@||yastatic.net/safeframe-bundles/*/host.js|$xmlhttprequest,domain=dzen.ru|sportsdzen.ru|ya.ru|yandex.*|yandex.by|yandex.kz|yandex.lv|yandex.ru|yandex.uz
+dzen.*,sportsdzen.*,ya.*,~yandex.net,yandex.*##body:not(#id) > div[style*="100px"][style*="75px"][style*="overflow:"] div:style(display: block !important)
 ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;width:1px;height:1px;overflow:hidden;"] div:style(display: block ! important)
 ||yastatic.net/partner-code-bundles/$badfilter
-||yastatic.net/partner-code-bundles/$domain=~auto.ru|~dzen.ru
+||yastatic.net/partner-code-bundles/$domain=~auto.ru|~dzen.ru|~sportsdzen.ru
 !
 ! 4pda.to (ранее 4pda.ru)
 4pda.*##+js(no-setTimeout-if, removeAttr, setTimeout)

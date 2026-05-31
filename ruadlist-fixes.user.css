@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260528.1512
+@version        0.20260531.2204
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1733,8 +1733,6 @@
     .news-secondary-layout-column__secondary div[id], 
     .news-sticky__inner > div > div[id], 
     .news-story-page div[id] > div:not([id]) > div[id], 
-    [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
-    [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label]), 
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], 
@@ -1760,7 +1758,6 @@
     div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child, 
     div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="content--article-bottom-single-"], 
-    div[class^="news-"][style^="margin-top: 0px; height: calc(99.998% "], 
     div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"]), 
     div[id$="-rtb"], div[id*="splashscreen"], 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty, 
@@ -1809,6 +1806,11 @@
   domain("sportsdzen.ru") {
     div[class^="news-site-"][class*="skeleton"] {
         background-color: transparent !important
+    }
+    [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
+    [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
+    div[class^="news-"][style^="margin-top: 0px; height: calc(99.998% "] {
+        display: none !important
     }
     body, html {
         scroll-snap-type: none !important
