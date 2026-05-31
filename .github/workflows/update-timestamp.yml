@@ -20,14 +20,14 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Replace %timestamp% with real date
+      - name: Replace timestamp with real date
         run: |
           REAL_DATE=$(date -u +"%d %b %Y %H:%M UTC")
-          sed -i "s/%timestamp%/$REAL_DATE/g" cntblock.txt
+          sed -i "s/\(! Last modified:\).*/\1 $REAL_DATE/g" cntblock.txt
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@://github.com"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
           git diff --quiet || (git add cntblock.txt && git commit -m "Autoupdate cntblock timestamp [skip ci]" && git push)
