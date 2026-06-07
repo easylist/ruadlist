@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260604.1944
+@version        0.20260607.1156
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4827,7 +4827,9 @@
     }
 }
 
-@-moz-document domain("tartugi.net") {
+@-moz-document
+  domain("tartugi.net"),
+  domain("tartugi.site") {
     .pagebg > .wrapper {
         padding-top: 0 !important
     }
