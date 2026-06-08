@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260607.1156
+@version        0.20260608.1829
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2531,6 +2531,15 @@
 @-moz-document domain("h-chan.me") {
     img[style^="filter: blur"] {
         filter: none !important
+    }
+}
+
+@-moz-document domain("habinfo.ru") {
+    .box-day-widget {
+        display: none !important
+    }
+    .header {
+        height: auto !important
     }
 }
 
