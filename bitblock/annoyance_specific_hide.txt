@@ -2893,6 +2893,7 @@ www.kinopoisk.*##div[class^="styles_sidebarContainer_"] > div[style^="position: 
 www.kinopoisk.*##header[style*="--header-height:"][style*="px"] > .header-navigation:style(margin-top: 0 !important)
 www.kinopoisk.*##header[style*="--header-height:"][style*="px"] > div > img:style(display: none !important)
 www.kinopoisk.*##header[style*="--header-height:"][style*="px"] div[class^="styles_logoContainer"] a[href*="utm_"]:not([href^="/"]):not([href^="www.kinopoisk.ru"]):style(pointer-events: none !important)
+www.kinopoisk.*##html[style*="--header-height:"][style*="px"]:style(--header-height: unset !important)
 ! Специфические только для ABP/AB правила
 !#if ext_abp
 tass.ru##div[class^="DesktopLayout_sticky_in_column_"]
