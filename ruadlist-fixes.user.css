@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260612.1702
+@version        0.20260613.112
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3735,6 +3735,14 @@
 }
 
 @-moz-document
+  domain("net"),
+  domain("org") {
+    body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]) {
+        margin-top: unset !important
+    }
+}
+
+@-moz-document
   domain("nevasport.ru"),
   domain("ru-drivemusic.net") {
     .main-wrapper {
@@ -3953,14 +3961,6 @@
     #wrapper {
         background-image: none !important;
         padding-bottom: 0 !important
-    }
-}
-
-@-moz-document
-  domain("org"),
-  domain("net") {
-    body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]) {
-        margin-top: unset !important
     }
 }
 
@@ -5464,7 +5464,7 @@
     div[class*="user-bar"] > div > button ~ div {
         opacity: inherit !important
     }
-    body[class*="body"][class*="_"] {
+    body[class*="body"][style*="overflow"][style*="hidden"] {
         overflow: auto !important
     }
     .filmsListNew .info {
