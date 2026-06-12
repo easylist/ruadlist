@@ -122,7 +122,7 @@ gazeta.press,gazeta.ru##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_
 footboom.com,footboom.kz##+js(abort-on-property-read, echelon)
 kinozapas.co,livesx.online,xn--80aikhbrhr.xn--j1amh##+js(abort-on-property-read, forTheFreeVideo.css)
 7ogorod.ru,autonevod.ru,shtrafsud.ru,tophallclub.ru,zazloo.ru##+js(abort-on-property-read, fpm_attr)
-buhplatforma.com.ua,championat.com,doramy.club,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
+buhplatforma.com.ua,championat.com,championat.ru,doramy.club,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
 musify.club##+js(abort-on-property-read, get_ya_browser)
 gazeta.press,gazeta.ru##+js(abort-on-property-read, goTolink)
 dota2.ru##+js(abort-on-property-read, helpUsImproveSite)
@@ -206,7 +206,7 @@ rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
-championat.com##+js(addEventListener-defuser, scroll, window.location.href)
+championat.com,championat.ru##+js(addEventListener-defuser, scroll, window.location.href)
 rutube.ru##+js(addEventListener-defuser, visibilitychange, document.hidden)
 reshuent.ru,sdamgia.ru##+js(adjust-setTimeout, (!1)}, 20000)
 ritsatv.ru##+js(alert-buster)
@@ -460,7 +460,7 @@ lk.emias.mos.ru##+js(set-cookie, lk-hasConsent, True)
 playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
 remanga.org##+js(set-cookie, promo-toast-tg, true)
 kinotv.ru##+js(set-cookie, telegram_popup, Y)
-championat.com,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
+championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
 mp3party.net##+js(set-cookie, yandexFull, true)
 sport-express.net,sport-express.ru##+js(set-local-storage-item, __videoboxActive, false)
 finuslugi.ru##+js(set-local-storage-item, headerBannerShownAt, 1)
@@ -558,7 +558,7 @@ sports.ru##[class*="_label "]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
-championat.com,lenta.ru##[class*="scroll-to-site"]:remove()
+championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"]:remove()
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
 www.sports.ru##[data-noinit]
 rutube.ru##[data-testid="embed-wrapper"] > [class^="stub-iframe-module__iframeWrapper_"]:style(opacity: unset !important)
@@ -911,7 +911,7 @@ gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.ram
 !
 ! MV3-специфичные случаи >
 !#if !env_mv3
-||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|eda.ru|gazeta.press|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
+||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|championat.ru|eda.ru|gazeta.press|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
 !#endif
 !
 ! VIQEO автоплей на Shkulev Media, только для десктопов
@@ -923,7 +923,7 @@ gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.ram
 !#if env_mv3
 payment.mts.ru###__next > div[id^="adfox_"]:not(:empty):style(display: block !important)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###logo:style(min-height: 100px !important)
-afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.press,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
+afisha.ru,autorambler.ru,championat.com,championat.ru,eda.ru,gazeta.press,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(prevent-setTimeout, _0x)
