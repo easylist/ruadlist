@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260613.1508
+@version        0.20260613.2308
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2106,6 +2106,15 @@
   domain("soccerstand.com") {
     [data-bookmaker-id] {
         pointer-events: none !important
+    }
+}
+
+@-moz-document domain("football.konkurent.ua") {
+    body[style*="overflow:"][style*="hidden"] .popup_age {
+        display: none !important
+    }
+    body[style*="overflow:"][style*="hidden"] {
+        overflow: auto !important
     }
 }
 
