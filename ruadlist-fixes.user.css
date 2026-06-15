@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260614.1214
+@version        0.20260615.1038
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4309,9 +4309,7 @@
     }
 }
 
-@-moz-document
-  domain("regnum.news"),
-  domain("regnum.ru") {
+@-moz-document domain("regnum.ru") {
     .page-column > .right-adv-container {
         top: 100px !important
     }
