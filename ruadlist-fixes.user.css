@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260616.1440
+@version        0.20260618.1749
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2895,21 +2895,17 @@
 @-moz-document domain("kg-portal.ru") {
     body {
         background-image: none !important;
-        background-color: #bdbdbd !important
+        background-color: inherit !important
     }
-    .content_wrap > div[class^="content_"] > div > a[href^="/go.php?id="], 
-    .ten_topbar + div:not(.ten_ears_wrap), 
-    .ten_topbar ~ div[class]:not([id]):nth-child(-n+10):not(.ten_ears_wrap):not(.content_wrap):not(.footer_wrap) {
+    .ten_topbar + div:not(.ten_ears_wrap) {
         display: none !important
     }
-    .ten_topbar {
-        height: 0 !important
-    }
     .ten_ears_wrap {
-        margin: 35px auto 0 auto !important
+        margin-top: 0 !important;
+        background-color: #a5a5a5 !important
     }
-    .comments_form {
-        min-height: 0 !important
+    .ten_topbar {
+        max-height: 10px !important
     }
     body > .menu_wrap {
         position: relative !important
