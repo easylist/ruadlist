@@ -9,6 +9,11 @@ org,net##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]
 ru##[data-ns-portal] .branding[data-page] {margin-top:unset;width:100%;}
 ! ---
 ex-fs.net###content {margin-top:0;}
+kg-portal.ru##.ten_ears_wrap {margin-top:0;background-color:#a5a5a5;}
+kg-portal.ru##.ten_topbar + div:not(.ten_ears_wrap) {display:none;}
+kg-portal.ru##.ten_topbar {max-height:10px;}
+kg-portal.ru##body > .menu_wrap {position:relative;}
+kg-portal.ru##body {background-image:none;background-color:inherit;}
 respawn.media#?#article:has(> div span:has-text(/РЕКЛАМА: ЕРИД/i)) a[href^="http"]:not([href*="respawn.media/"]) {pointer-events:none;border-bottom:none;color:inherit;}
 stratege.ru###globalcontent {margin-top:0;padding-top:0;}
 stratege.ru##.above_body {margin-bottom:0;}
