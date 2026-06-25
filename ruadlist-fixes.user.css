@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260623.2028
+@version        0.20260625.1323
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2567,6 +2567,12 @@
   domain("rezka.biz") {
     .container > #content {
         margin-top: unset !important
+    }
+}
+
+@-moz-document domain("hdrezka.my") {
+    .main-container {
+        margin-top: 0 !important
     }
 }
 
