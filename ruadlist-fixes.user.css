@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260629.1344
+@version        0.20260629.1520
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2147,7 +2147,8 @@
     .tpc > .post > a[href] {
         word-break: break-all
     }
-    .tpc > .post > table[width] > tbody > tr > .lgf {
+    .tpc > .post > table[width] > tbody > tr > .lgf, 
+    body > .tb ~ .tb .tpc > span.post {
         word-break: break-word
     }
 }
