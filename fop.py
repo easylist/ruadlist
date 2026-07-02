@@ -20,11 +20,11 @@ VERSION = 3.933
 # Adjusted for RU Adlist by Lain Inverse in 2026
 
 # Import the key modules
-import collections, filecmp, os, re, subprocess, sys
+import collections, filecmp, os, re, subprocess, sys, datetime, locale
 
 # Check the version of Python for language compatibility and subprocess.check_output()
 MAJORREQUIRED = 3
-MINORREQUIRED = 1
+MINORREQUIRED = 2
 if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
     raise RuntimeError("FOP requires Python {reqmajor}.{reqminor} or greater, but Python {ismajor}.{isminor} is being used to run this program.".format(reqmajor = MAJORREQUIRED, reqminor = MINORREQUIRED, ismajor = sys.version_info.major, isminor = sys.version_info.minor))
 
@@ -72,9 +72,9 @@ KNOWNOPTIONS = ("badfilter", "cname", "collapse", "doc", "document", "elemhide",
 KNOWNPARAMETERS = ("csp", "header", "queryprune", "removeparam", "rewrite", "redirect", "redirect-rule", "reason")
 
 # List the supported revision control system commands
-REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
-GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["pull"], None, None, ["merge"], ["commit", "-am"], ["push"])
-HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["diff"], ["pull"], ["update", "--check"], ["update"], ["merge"], ["commit", "-m"], ["push"])
+REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, getchangedfiles, difference, pull, checkupdate, update, merge, commit, push")
+GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["status", "--porcelain", "--untracked-files=no"], ["diff"], ["pull"], None, None, ["merge"], ["commit", "-am"], ["push"])
+HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["stat", "-ma"], ["diff"], ["pull"], ["update", "--check"], ["update"], ["merge"], ["commit", "-m"], ["push"])
 REPOTYPES = (GIT, HG)
 
 def start ():
@@ -124,6 +124,9 @@ def main (location):
                     basecommand.append("{repodirectoryoption}{location}".format(repodirectoryoption = repository.repodirectoryoption, location = os.path.normpath(os.path.join(location, repository.directory))))
                 else:
                     basecommand.extend([repository.repodirectoryoption, location])
+
+            update_explicit_timestamps(repository, basecommand + repository.getchangedfiles)
+
             command = basecommand + repository.checkchanges
             originaldifference = True if subprocess.check_output(command) else False
         except(subprocess.CalledProcessError, OSError):
@@ -394,6 +397,66 @@ def elementtidy (domains, separator, selector):
     # Remove the markers from the beginning and end of the selector and return the complete rule
     return "{domain}{separator}{selector}{splitter}{tail}".format(domain = domains, separator = separator, selector = selector[1:-1], splitter = splitterpart, tail = tailpart)
 
+def get_changed_files(cmd, skipprefixes):
+    output_bytes = subprocess.check_output(cmd, stderr=subprocess.STDOUT)
+    output_str = output_bytes.decode('utf-8', errors='ignore')
+
+    return [
+        line[3:].strip('"') 
+        for line in output_str.splitlines() 
+        if line and not (skipprefixes and line.startswith(skipprefixes))
+    ]
+
+def update_explicit_timestamps(repository, cmd):
+    try:
+        locale.setlocale(locale.LC_TIME, 'C')
+    except Exception:
+        pass
+
+    current_time = datetime.datetime.now(datetime.UTC).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    target_prefix = "! Last modified: "
+    
+    skipprefixes = ("D ", " D") if repository == GIT else ()
+    for file_path in get_changed_files(cmd, skipprefixes):
+        try:
+            with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                lines = f.readlines()
+            
+            if not lines:
+                continue
+                
+            # If the first line starts with "[", the metadata block starts on the second line
+            start_index = 1 if lines[0].startswith("[") else 0
+            
+            for i, line in enumerate(lines):
+                if i < start_index:
+                    continue
+
+                # Only look for "Last modified" in the header
+                if not line.startswith("! "):
+                    break
+                
+                if not line.startswith(target_prefix):
+                    continue
+                
+                current_value = line[len(target_prefix):].rstrip("\r\n ")
+                
+                # Don't update files with template placeholder, these are handled by ABP 
+                if current_value == "%timestamp%":
+                    break
+                
+                ending = line[len(line.rstrip("\r\n")):]
+                lines[i] = "{target_prefix}{current_time}{ending}".format(target_prefix = target_prefix, current_time = current_time, ending = ending)
+                
+                print("Updating timestamp in: {file_path}".format(file_path = file_path))
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.writelines(lines)
+                
+                break
+                    
+        except Exception as e:
+            print("Could not process file {file_path}: {e}".format(file_path = file_path, e = e))
+
 def commit (repository, basecommand, userchanges):
     """ Commit changes to a repository using the commands provided."""
     difference = subprocess.check_output(basecommand + repository.difference)
@@ -421,7 +484,8 @@ def commit (repository, basecommand, userchanges):
     try:
         print("\nConnecting to server. Please enter your password if required.")
         # Update the server repository as required by the revision control system
-        for command in repository[6:]:
+        commands_to_run = [repository.pull, repository.checkupdate, repository.update, repository.merge, repository.commit, repository.push]
+        for command in commands_to_run:
             if command == None:
                 continue
             if command == repository.commit:
