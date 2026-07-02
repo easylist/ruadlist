@@ -448,14 +448,14 @@ def update_explicit_timestamps(repository, cmd):
                 ending = line[len(line.rstrip("\r\n")):]
                 lines[i] = "{target_prefix}{current_time}{ending}".format(target_prefix = target_prefix, current_time = current_time, ending = ending)
                 
-                print("Updating timestamp in: {0}".format(file_path = file_path))
+                print("Updating timestamp in: {file_path}".format(file_path = file_path))
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.writelines(lines)
                 
                 break
                     
         except Exception as e:
-            print("Could not process file {0}: {1}".format(file_path = file_path, e = e))
+            print("Could not process file {file_path}: {e}".format(file_path = file_path, e = e))
 
 def commit (repository, basecommand, userchanges):
     """ Commit changes to a repository using the commands provided."""
