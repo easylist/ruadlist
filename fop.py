@@ -16,11 +16,11 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.930
+VERSION = 3.931
 # Adjusted for RU Adlist by Lain Inverse in 2026
 
 # Import the key modules
-import collections, filecmp, os, re, subprocess, sys, datetime
+import collections, filecmp, os, re, subprocess, sys, datetime, locale
 
 # Check the version of Python for language compatibility and subprocess.check_output()
 MAJORREQUIRED = 3
@@ -407,7 +407,12 @@ def get_changed_files(repository, cmd):
     ]
 
 def update_explicit_timestamps(repository, cmd):
-    current_time = datetime.datetime.now(datetime.UTC).strftime("%a, %d %b %Y %X %z")
+    try:
+        locale.setlocale(locale.LC_TIME, 'C')
+    except Exception:
+        pass
+
+    current_time = datetime.datetime.now(datetime.UTC).strftime("%a, %d %b %Y %H:%M:%S +0000")
     target_prefix = "! Last modified: "
     
     for file_path in get_changed_files(repository, cmd):
@@ -477,7 +482,8 @@ def commit (repository, basecommand, userchanges):
     try:
         print("\nConnecting to server. Please enter your password if required.")
         # Update the server repository as required by the revision control system
-        for command in repository[6:]:
+        commands_to_run = [repository.pull, repository.checkupdate, repository.update, repository.merge, repository.commit, repository.push]
+        for command in commands_to_run:
             if command == None:
                 continue
             if command == repository.commit:
