@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.932
+VERSION = 3.933
 # Adjusted for RU Adlist by Lain Inverse in 2026
 
 # Import the key modules
@@ -24,7 +24,7 @@ import collections, filecmp, os, re, subprocess, sys, datetime, locale
 
 # Check the version of Python for language compatibility and subprocess.check_output()
 MAJORREQUIRED = 3
-MINORREQUIRED = 1
+MINORREQUIRED = 2
 if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
     raise RuntimeError("FOP requires Python {reqmajor}.{reqminor} or greater, but Python {ismajor}.{isminor} is being used to run this program.".format(reqmajor = MAJORREQUIRED, reqminor = MINORREQUIRED, ismajor = sys.version_info.major, isminor = sys.version_info.minor))
 
@@ -397,12 +397,13 @@ def elementtidy (domains, separator, selector):
     # Remove the markers from the beginning and end of the selector and return the complete rule
     return "{domain}{separator}{selector}{splitter}{tail}".format(domain = domains, separator = separator, selector = selector[1:-1], splitter = splitterpart, tail = tailpart)
 
-def get_changed_files(repository, cmd):
-    result = subprocess.run(cmd, capture_output=True, text=True, check=True)
-    skipprefixes = ("D ", " D") if repository == GIT else ()
+def get_changed_files(cmd, skipprefixes):
+    output_bytes = subprocess.check_output(cmd, stderr=subprocess.STDOUT)
+    output_str = output_bytes.decode('utf-8', errors='ignore')
+
     return [
         line[3:].strip('"') 
-        for line in result.stdout.splitlines() 
+        for line in output_str.splitlines() 
         if line and not (skipprefixes and line.startswith(skipprefixes))
     ]
 
@@ -415,7 +416,8 @@ def update_explicit_timestamps(repository, cmd):
     current_time = datetime.datetime.now(datetime.UTC).strftime("%a, %d %b %Y %H:%M:%S +0000")
     target_prefix = "! Last modified: "
     
-    for file_path in get_changed_files(repository, cmd):
+    skipprefixes = ("D ", " D") if repository == GIT else ()
+    for file_path in get_changed_files(cmd, skipprefixes):
         try:
             with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                 lines = f.readlines()
@@ -444,16 +446,16 @@ def update_explicit_timestamps(repository, cmd):
                     break
                 
                 ending = line[len(line.rstrip("\r\n")):]
-                lines[i] = "{target_prefix}{current_time}{ending}".format(target_prefix=target_prefix, current_time=current_time, ending=ending)
+                lines[i] = "{target_prefix}{current_time}{ending}".format(target_prefix = target_prefix, current_time = current_time, ending = ending)
                 
-                print(f"Updating timestamp in: {file_path}")
+                print("Updating timestamp in: {0}".format(file_path = file_path))
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.writelines(lines)
                 
                 break
                     
         except Exception as e:
-            print(f"Could not process file {file_path}: {e}")
+            print("Could not process file {0}: {1}".format(file_path = file_path, e = e))
 
 def commit (repository, basecommand, userchanges):
     """ Commit changes to a repository using the commands provided."""
