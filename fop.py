@@ -413,7 +413,7 @@ def update_explicit_timestamps(repository, cmd):
     except Exception:
         pass
 
-    current_time = datetime.datetime.now(datetime.UTC).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    current_time = datetime.datetime.now(datetime.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     target_prefix = "! Last modified: "
     
     skipprefixes = ("D ", " D") if repository == GIT else ()
