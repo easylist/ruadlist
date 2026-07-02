@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.931
+VERSION = 3.932
 # Adjusted for RU Adlist by Lain Inverse in 2026
 
 # Import the key modules
@@ -444,7 +444,7 @@ def update_explicit_timestamps(repository, cmd):
                     break
                 
                 ending = line[len(line.rstrip("\r\n")):]
-                lines[i] = f"{target_prefix}{current_time}{ending}"
+                lines[i] = "{target_prefix}{current_time}{ending}".format(target_prefix=target_prefix, current_time=current_time, ending=ending)
                 
                 print(f"Updating timestamp in: {file_path}")
                 with open(file_path, 'w', encoding='utf-8') as f:
