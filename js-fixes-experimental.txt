@@ -771,7 +771,9 @@ mail.ru##[slot="main-column"] .news-item:matches-media((max-width: 1280px)):styl
 mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(height: 20px !important)
 !
 !#if env_mobile
+vk.com,vk.ru##+js(set-attr, html[lang], href-sanitizer, true)
 mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
+vk.com,vk.ru##html[href-sanitizer] a[href*="/away.php?"][href*="to=http"]:style(pointer-events: none !important)
 ||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest,domain=~news.mail.ru
 !#endif
 !
