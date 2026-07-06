@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260701.1534
+@version        0.20260706.1555
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1724,6 +1724,7 @@
     div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child, 
     div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="content--article-bottom-single-"], 
+    div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"], 
     div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"]), 
     div[id$="-rtb"], div[id*="splashscreen"], 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty, 
@@ -1776,8 +1777,7 @@
     [aria-label*="Pа"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
     [aria-label*="Pа"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
     [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
-    [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
-    div[class^="news-"][style^="margin-top: 0px; height: calc(99.997% "] {
+    [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label]) {
         display: none !important
     }
     body, html {
@@ -4728,6 +4728,12 @@
         width: 0 !important;
         height: 0 !important;
         left:-10000px !important
+    }
+}
+
+@-moz-document domain("sportsdzen.ru") {
+    div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"] {
+        display: none !important
     }
 }
 
