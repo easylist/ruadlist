@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260708.1742
+@version        0.20260709.1129
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1670,10 +1670,14 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    .secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child, 
-    .secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty, 
-    .secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div {
+    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child, 
+    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty, 
+    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div {
         background-color: inherit !important
+    }
+    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child {
+        background-color: inherit !important;
+        border: inherit !important
     }
     div[class^="news"] [class*="skeleton"], 
     div[class^="news-site-"][class*="-desktop-"] {
@@ -1682,7 +1686,7 @@
     div[class*="body_branding"] {
         background: inherit !important
     }
-    .secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child {
+    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child [id] {
         border: inherit !important
     }
     #ad-feed, .adv-ecom, .content--styles__banner-cc + [aria-label] ~ div, 
@@ -1723,7 +1727,7 @@
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty, 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"], 
     div[id^="ad-"][class*=" news-"], div[id^="article-showcase-"], 
-    div[style*="12.36263736263"], div[style*="important"] div[class*="__main"] {
+    div[style*="12.3626373626"], div[style*="important"] div[class*="__main"] {
         display: none !important
     }
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
@@ -1767,10 +1771,8 @@
     div[class^="news-site-"][class*="skeleton"] {
         background-color: transparent !important
     }
-    [aria-label*="Pа"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
-    [aria-label*="Pа"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
-    [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
-    [aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
+    [aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
+    [aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
     div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"] {
         display: none !important
     }
