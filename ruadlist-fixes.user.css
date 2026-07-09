@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260709.1129
+@version        0.20260709.1149
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5544,13 +5544,11 @@
 }
 
 @-moz-document domain("ya.ru") {
-    .i-mini-bem[style], .market-feed, .reasoning-section, 
+    #reedhm-rreid, .i-mini-bem[style], .market-feed, .reasoning-section, 
     [id^="r"][id*="ed"][id*="m"][id*="-"][id*="f"], 
-    [id^="r"][id*="et"][id*="m"][id*="-"][id*="f"], 
-    [id^="r"][id*="it"][id*="m"][id*="-"][id*="f"], 
     [id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"], 
-    html[class*="sectllion_top"] aside + div, 
-    html[class*="sectllion_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div, 
+    html[class*="sectillion_top"] aside + div, 
+    html[class*="sectillion_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div, 
     main.body__wrapper > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div {
         display: none !important
     }
