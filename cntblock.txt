@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Sat, 11 Jul 2026 12:20:54 +0000
+! Last modified: Sat, 11 Jul 2026 12:21:35 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1533,6 +1533,7 @@ $document,removeparam=tz,domain=drive2.com|drive2.ru
 $document,removeparam=via,domain=dzen.ru|ya
 $document,removeparam=ymclid,domain=~ozon.onelink.me
 $document,subdocument,removeparam=trackcode,domain=vk.com
+$document,xmlhttprequest,removeparam=readmore,domain=rambler.ru
 $removeparam=?utm_source
 $removeparam=_1ld,domain=vkplay.ru
 $removeparam=_1lp,domain=vkplay.ru
@@ -1631,7 +1632,6 @@ $removeparam=ysclid
 /?from=smm|$removeparam=from
 /?from=yanews$removeparam=from
 /?from_block=$document,removeparam=from_block,domain=www.kinopoisk.ru
-/?readmore$document,xmlhttprequest,removeparam=|,domain=rambler.ru
 /?ref=tg$document,removeparam=ref
 ?e=lfm$document,removeparam=|,domain=sports.ru
 ?es=smi2$document,removeparam=es
