@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Sat, 11 Jul 2026 12:32:16 +0000
+! Last modified: Sat, 11 Jul 2026 12:33:40 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1570,6 +1570,7 @@ $removeparam=gclid
 $removeparam=gid,domain=oformi-foto.ru
 $removeparam=gtm
 $removeparam=ila_camaign
+$removeparam=ila_campaign
 $removeparam=ila_context
 $removeparam=ila_location
 $removeparam=in,domain=ria.ru
@@ -1634,6 +1635,7 @@ $removeparam=yaclid
 $removeparam=yclid
 $removeparam=yredirect
 $removeparam=ysclid
+.html?media&ila_$document,removeparam=media
 /?from=sds$document,removeparam=from
 /?from=smm|$removeparam=from
 /?from=yanews$removeparam=from
@@ -1643,7 +1645,6 @@ $removeparam=ysclid
 ?from=$document,removeparam=from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autodaily.ru|autonews.ru|autopilot.ru|habr.com|igromania.ru|klops.ru|kommersant.ru|kp.ru|mail.ru|metro-cc.ru|mk.ru|myweekend.ru|ntv.ru|ozon.ru|rbc.ru|rbcautonews.ru|rbclifemedia.ru|rbcrealty.ru|ridus.ru|sportmail.ru|sportrbc.ru|sports.ru|vkplay.ru
 ?from=$document,xmlhttprequest,removeparam=from,domain=vedomosti.ru
 ?from=smi2agg$document,removeparam=from
-?media&ila_camaign=$document,removeparam=media
 ?prov=ukrnet$removeparam=prov
 ?ruid=$document,removeparam=ruid,domain=autodaily.ru|autonews.ru|rbc.ru|sportrbc.ru
 @@/forum\/(login|release|torrent)\.php\?(logout|mode)\=/$document,domain=nnm-club.me|nnmclub.ro|nnmclub.to
@@ -1669,7 +1670,6 @@ utm_source=*partner=$document,removeparam=partner
 ||imdb.com^$removeparam=pf_rd_s
 ||imdb.com^$removeparam=pf_rd_t
 ||imdb.com^$removeparam=ref_
-||livejournal.com/*.html?media|$removeparam=|media,domain=livejournal.com
 ||my.mail.ru/apps$document,removeparam=ref,domain=my.mail.ru
 ||quke.ru/promocodes?utm_campaign=*.$removeparam=utm_campaign
 ||ru/*/comments/?recordId=$document,removeparam=recordId
