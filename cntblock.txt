@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Sat, 11 Jul 2026 12:19:48 +0000
+! Last modified: Sat, 11 Jul 2026 12:20:54 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1627,8 +1627,6 @@ $removeparam=yaclid
 $removeparam=yclid
 $removeparam=yredirect
 $removeparam=ysclid
-/?amp;utm_*ukr$document,removeparam=|
-/?f=ukr.net$document,removeparam=|
 /?from=sds$document,removeparam=from
 /?from=smm|$removeparam=from
 /?from=yanews$removeparam=from
@@ -1644,7 +1642,6 @@ $removeparam=ysclid
 ?media&ila_camaign=$document,removeparam=media
 ?prov=ukrnet$removeparam=prov
 ?ruid=$document,removeparam=|ruid,domain=autodaily.ru|autonews.ru|rbc.ru|sportrbc.ru
-?source=ukrnet$document,removeparam=|
 ?sub_confirmation=1$document,removeparam=|,domain=youtube.com
 @@/forum\/(login|release|torrent)\.php\?(logout|mode)\=/$document,domain=nnm-club.me|nnmclub.ro|nnmclub.to
 block_click=$removeparam=block_click,domain=rambler.ru
@@ -1656,6 +1653,10 @@ utm_source=*partner=$document,removeparam=partner
 ||afisha.yandex.*/$removeparam=source
 ||alice.yandex.*/?utm_to=$document,removeparam=utm_to
 ||banki.ru/*?source=*menu_$removeparam=|,domain=banki.ru
+||booking.com/*.html?$document,removeparam=aid
+||booking.com/*.html?$document,removeparam=chal_t
+||booking.com/*.html?$document,removeparam=force_referer
+||booking.com/*.html?$document,removeparam=label
 ||disk.yandex.$document,removeparam=source
 ||facebook.com^*/?hc_ref$removeparam=|,domain=facebook.com
 ||facebook.com^*/?ref=$removeparam=|,domain=facebook.com
