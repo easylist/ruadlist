@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Wed, 08 Jul 2026 14:44:48 +0000
+! Last modified: Sat, 11 Jul 2026 12:18:30 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1511,7 +1511,7 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 !
 ! Экспериментальные правила для маркеров
 $document,removeparam=ai,domain=ggsel.net
-$document,removeparam=clid,domain=dzen.ru|ya.ru|yandex.*
+$document,removeparam=clid,domain=dzen.ru|ya.ru
 $document,removeparam=context,domain=avito.ru
 $document,removeparam=countryId,domain=hd.kinopoisk.ru
 $document,removeparam=digest,domain=drive2.com|drive2.ru
@@ -1520,17 +1520,17 @@ $document,removeparam=es,domain=rambler.ru
 $document,removeparam=from-source,domain=3dnews.ru
 $document,removeparam=int_cid,domain=svoboda.org
 $document,removeparam=mp_source,domain=ati.su
-$document,removeparam=npr,domain=ya.ru|yandex.*
-$document,removeparam=nr,domain=ya.ru|yandex.*
+$document,removeparam=npr,domain=ya.ru
+$document,removeparam=nr,domain=ya.ru
 $document,removeparam=previewToken,domain=maximonline.ru
 $document,removeparam=rcmd_alg,domain=radiosputnik.ru|ria.ru
 $document,removeparam=rcmd_id,domain=radiosputnik.ru|ria.ru
-$document,removeparam=redirect_ts,domain=ya.ru|yandex.*
+$document,removeparam=redirect_ts,domain=ya.ru
 $document,removeparam=ref_domain,domain=vkvideo.ru
 $document,removeparam=srsltid
 $document,removeparam=topblock,domain=3dnews.ru
 $document,removeparam=tz,domain=drive2.com|drive2.ru
-$document,removeparam=via,domain=dzen.ru|yandex.*
+$document,removeparam=via,domain=dzen.ru|ya
 $document,removeparam=ymclid,domain=~ozon.onelink.me
 $document,subdocument,removeparam=trackcode,domain=vk.com
 $removeparam=?utm_source
@@ -1620,15 +1620,13 @@ $removeparam=utm_space
 $removeparam=utm_term
 $removeparam=utm_test
 $removeparam=utmterm
-$removeparam=via,domain=ya.ru
+$removeparam=via,domain=dzen.ru|ya.ru
 $removeparam=weid,domain=sibnet.ru
 $removeparam=xtor
 $removeparam=yaclid
 $removeparam=yclid
 $removeparam=yredirect
 $removeparam=ysclid
-/*=tabbar$document,removeparam=from,domain=ya.ru|yandex.*
-/*=tabbar$document,removeparam=source,domain=ya.ru|yandex.*
 /?amp;utm_*ukr$document,removeparam=|
 /?f=ukr.net$document,removeparam=|
 /?from=sds$document,removeparam=from
@@ -1637,13 +1635,6 @@ $removeparam=ysclid
 /?from_block=$document,removeparam=from_block,domain=www.kinopoisk.ru
 /?readmore$document,xmlhttprequest,removeparam=|,domain=rambler.ru
 /?ref=tg$document,removeparam=ref
-/search/*$document,removeparam=msid,domain=ya.ru|yandex.*
-/search/*$document,removeparam=redircnt,domain=ya.ru|yandex.*
-/search/*$document,removeparam=search_domain,domain=ya.ru|yandex.*
-/search/*$document,removeparam=search_source,domain=ya.ru|yandex.*
-/search/*$document,removeparam=src,domain=ya.ru|yandex.*
-/search/*$document,removeparam=suggest_reqid,domain=ya.ru|yandex.*
-/story/*?lang=$document,removeparam=|,domain=dzen.ru|sportsdzen.ru|yandex.*
 ?e=lfm$document,removeparam=|,domain=sports.ru
 ?es=smi2$document,removeparam=es
 ?from=$document,removeparam=from,domain=3dnews.ru|7days.ru|~auth.mail.ru|auto.ru|autodaily.ru|autonews.ru|autopilot.ru|habr.com|igromania.ru|klops.ru|kommersant.ru|kp.ru|mail.ru|metro-cc.ru|mk.ru|myweekend.ru|ntv.ru|ozon.ru|rbc.ru|rbcautonews.ru|rbclifemedia.ru|rbcrealty.ru|ridus.ru|sportmail.ru|sportrbc.ru|sports.ru|vkplay.ru
@@ -1659,7 +1650,6 @@ $removeparam=ysclid
 @@/forum\/(login|release|torrent)\.php\?(logout|mode)\=/$document,domain=nnm-club.me|nnmclub.ro|nnmclub.to
 block_click=$removeparam=block_click,domain=rambler.ru
 fbclid=$document,removeparam=fbclid
-from=*_portal&lang=$document,removeparam=|,domain=dzen.ru|yandex.*
 from=pogoda$document,removeparam=from,domain=116.ru|14.ru|161.ru|164.ru|178.ru|26.ru|29.ru|35.ru|43.ru|45.ru|48.ru|51.ru|53.ru|56.ru|59.ru|60.ru|63.ru|68.ru|71.ru|72.ru|74.ru|76.ru|86.ru|89.ru|93.ru|chita.ru|e1.ru|ircity.ru|mgorsk.ru|msk1.ru|ngs.ru|ngs22.ru|ngs24.ru|ngs42.ru|ngs55.ru|ngs70.ru|nn.ru|proizhevsk.ru|sochi1.ru|sterlitamak1.ru|tolyatty.ru|ufa1.ru|v1.ru|vladivostok1.ru|voronezh1.ru|ya62.ru
 referrer=appmetrica_tracking_id$document,removeparam=referrer
 utm_$document,removeparam=ig_rid,domain=instagram.com
@@ -1682,6 +1672,11 @@ utm_source=*partner=$document,removeparam=partner
 ||rutube.ru/video/$document,removeparam=r
 ||vk.com/*search_track_code=$document,subdocument,removeparam=/from|search_track_code/
 ||vk.com/widget_comments.php$subdocument,removeparam=referrer
+||yandex.$document,removeparam=clid
+||yandex.$document,removeparam=npr
+||yandex.$document,removeparam=nr
+||yandex.$document,removeparam=redirect_ts
+||yandex.$document,removeparam=via
 ||ykt.ru^$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru
 ||youtube.com/embed/$subdocument,removeparam=iv_load_policy
 ||youtube.com/embed/$subdocument,removeparam=rel
@@ -1854,6 +1849,24 @@ $document,removeparam=qht,domain=svpressa.ru
 $document,removeparam=qt,domain=svpressa.ru
 $document,removeparam=top,domain=svpressa.ru
 $document,removeparam=tvtd,domain=svpressa.ru
+!
+! Yandex search and other
+/*=tabbar$document,removeparam=from,domain=ya.ru
+/*=tabbar$document,removeparam=source,domain=ya.ru
+/search/*$document,removeparam=msid,domain=ya.ru
+/search/*$document,removeparam=redircnt,domain=ya.ru
+/search/*$document,removeparam=search_domain,domain=ya.ru
+/search/*$document,removeparam=search_source,domain=ya.ru
+/search/*$document,removeparam=src,domain=ya.ru
+/search/*$document,removeparam=suggest_reqid,domain=ya.ru
+||yandex.*/search/$document,removeparam=msid
+||yandex.*/search/$document,removeparam=redircnt
+||yandex.*/search/$document,removeparam=search_domain
+||yandex.*/search/$document,removeparam=search_source
+||yandex.*/search/$document,removeparam=src
+||yandex.*/search/$document,removeparam=suggest_reqid
+||yandex.*=tabbar$document,removeparam=from
+||yandex.*=tabbar$document,removeparam=source
 !
 ! Яндекс Маркет
 ||market.yandex.$document,removeparam=auth_renewed
