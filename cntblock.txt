@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Sat, 11 Jul 2026 12:18:30 +0000
+! Last modified: Sat, 11 Jul 2026 12:19:48 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1644,7 +1644,6 @@ $removeparam=ysclid
 ?media&ila_camaign=$document,removeparam=media
 ?prov=ukrnet$removeparam=prov
 ?ruid=$document,removeparam=|ruid,domain=autodaily.ru|autonews.ru|rbc.ru|sportrbc.ru
-?source=tableau_tv$document,removeparam=|,domain=yandex.*
 ?source=ukrnet$document,removeparam=|
 ?sub_confirmation=1$document,removeparam=|,domain=youtube.com
 @@/forum\/(login|release|torrent)\.php\?(logout|mode)\=/$document,domain=nnm-club.me|nnmclub.ro|nnmclub.to
@@ -1677,6 +1676,7 @@ utm_source=*partner=$document,removeparam=partner
 ||yandex.$document,removeparam=nr
 ||yandex.$document,removeparam=redirect_ts
 ||yandex.$document,removeparam=via
+||yandex.*?source=tableau_tv$document,removeparam=source
 ||ykt.ru^$document,removeparam=/news_interesting|news_plus|news_popular|news_recent|promo_inner/,domain=ykt.ru
 ||youtube.com/embed/$subdocument,removeparam=iv_load_policy
 ||youtube.com/embed/$subdocument,removeparam=rel
