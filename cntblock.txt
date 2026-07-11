@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Sat, 11 Jul 2026 12:29:41 +0000
+! Last modified: Sat, 11 Jul 2026 12:31:15 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1661,14 +1661,14 @@ utm_source=*partner=$document,removeparam=partner
 ||booking.com/*.html?$document,removeparam=label
 ||disk.yandex.$document,removeparam=source
 ||facebook.com^$removeparam=ref
-||fontanka.ru/*/comments/$document,removeparam=|recordid,domain=fontanka.ru
-||fontanka.ru/*/comments/$document,removeparam=|regionid,domain=fontanka.ru
-||fontanka.ru/*/comments/$document,removeparam=|source,domain=fontanka.ru
 ||imdb.com/*pf_rd_$document,removeparam=|pf_rd_,domain=imdb.com
 ||imdb.com/*ref_=$document,removeparam=|ref_,domain=imdb.com
 ||livejournal.com/*.html?media|$removeparam=|media,domain=livejournal.com
 ||my.mail.ru/apps$document,removeparam=ref,domain=my.mail.ru
 ||quke.ru/promocodes?utm_campaign=*.$removeparam=utm_campaign
+||ru/*/comments/?recordId=$document,removeparam=recordId
+||ru/*/comments/?recordId=$document,removeparam=regionId
+||ru/*/comments/?recordId=$document,removeparam=source
 ||rutube.ru/video/$document,removeparam=r
 ||vk.com/*search_track_code=$document,subdocument,removeparam=/from|search_track_code/
 ||vk.com/widget_comments.php$subdocument,removeparam=referrer
