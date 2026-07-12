@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260711.1547
+@version        0.20260712.1046
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4986,8 +4986,15 @@
     .page_controller_channel main.content > div[class]:first-child > div:first-child[style*="background-image"], 
     .zen, 
     [class*="grid_period_"] > div[class] > div[class^="grid__"] ~ div:not([class^="grid__"]), 
-    body > #mount > div[class] > :not(header):not(main):not(footer):not(.metrika-loader) {
+    body > #mount > div[class] > :not(header):not(main):not(footer):not(.metrika-loader), 
+    html.modal_open .fullscreen-notification__overrideModal {
         display: none !important
+    }
+    html.modal_open {
+        margin-right: unset !important
+    }
+    html.modal_open .page {
+        overflow-y: auto !important
     }
 }
 
