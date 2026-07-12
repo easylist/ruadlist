@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Sat, 11 Jul 2026 12:33:40 +0000
+! Last modified: Sun, 12 Jul 2026 08:49:09 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1334,6 +1334,7 @@ ya.*,yandex.*##[id][aria-label] > [class*="_card"]:has(> div [data-vnl*="adverti
 ya.*,yandex.*##[id][aria-label] > [class]:has(> div > button:matches-attr(/[a-z0-9]/=/"type":"adv"|advertiser/)):style(display: none !important)
 ya.*,yandex.*##div[aria-label="Баннер с рекламой"]:style(display: none !important)
 ya.*,yandex.*##div[aria-label="Рекламный баннер"]:style(display: none !important)
+ya.*,yandex.*##div[class*="-DirectSkeleton"]:style(display: none !important)
 ya.*,yandex.*##div[class^="Images"] div[class*="_skeleton"]:style(display: none !important)
 ya.*,~yandex.net,yandex.*##+js(remove-attr, data-counter, #search-result > .serp-item a)
 yandex.*###bk-container:style(display: none !important)

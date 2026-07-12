@@ -1546,9 +1546,10 @@ afisha.yandex.ru,afisha.yandex.*##.top-branding-holder
 afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
 afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 ! Яндекс.Видео
-ya.ru##.DirectStripe
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.VideoViewer .Viewer-ScrollContainer > div[class]:first-child > div[id][class]:first-child:empty + div
-yandex.by,yandex.kz,yandex.ru,yandex.uz#?#div[class*="VideoViewer-Block"] > .VideoPlayerMetaInfo ~ div:-abp-has(> div[id]:empty)
+ya.ru,yandex.ru,yandex.*##.DirectStripe
+ya.ru,yandex.ru,yandex.*##.VideoViewer .Viewer-ScrollContainer > div[class]:first-child > div[id][class]:first-child:empty + div
+ya.ru,yandex.ru,yandex.*##.VideoViewer-Direct
+ya.ru,yandex.ru,yandex.*#?#div[class*="VideoViewer-Block"] > .VideoPlayerMetaInfo ~ div:-abp-has(> div[id]:empty)
 ! Яндекс.Здоровье (yandex.*/health)
 yandex.ru##.advert-sticks
 yandex.ru##.pharmacy-page-view__top-banner
