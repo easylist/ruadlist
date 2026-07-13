@@ -14,6 +14,9 @@ kg-portal.ru##.ten_topbar + div:not(.ten_ears_wrap) {display:none;}
 kg-portal.ru##.ten_topbar {max-height:10px;}
 kg-portal.ru##body > .menu_wrap {position:relative;}
 kg-portal.ru##body {background-image:none;background-color:inherit;}
+mem-hub.ru###appPromoModal {display:none;}
+mem-hub.ru##body.modal-open > .modal-backdrop {display:none;}
+mem-hub.ru##body.modal-open {overflow:auto;padding-right:0;}
 respawn.media#?#article:has(> div span:has-text(/РЕКЛАМА: ЕРИД/i)) a[href^="http"]:not([href*="respawn.media/"]) {pointer-events:none;border-bottom:none;color:inherit;}
 stratege.ru###globalcontent {margin-top:0;padding-top:0;}
 stratege.ru##.above_body {margin-bottom:0;}
