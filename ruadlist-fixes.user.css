@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260712.1046
+@version        0.20260713.1205
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1713,6 +1713,7 @@
     div[class*="-ad-branding-"], div[class*="-right-ad-column"], 
     div[class*="AdvertTsar"], div[class*="BrandingAdvertLayoutColumn-"], 
     div[class*="__bannerContainer"], div[class*="_advertDoc2Doc-"], 
+    div[class*="_bannerWrapper-"], 
     div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"], 
     div[class*="_is-branding"] > div[style^="background-color:"], 
     div[class*="adContentWrapper"], div[class*="adSplitEmbed"], 
@@ -3870,6 +3871,15 @@
     }
 }
 
+@-moz-document
+  domain("oc.kg"),
+  domain("ts.kg") {
+    body {
+        background-color: inherit !important;
+        background-image: none !important
+    }
+}
+
 @-moz-document domain("ofxme.co") {
     .wrapper > .main-content {
         margin-top: 0 !important
@@ -4955,9 +4965,6 @@
 }
 
 @-moz-document domain("ts.kg") {
-    body {
-        background-color: inherit !important
-    }
     .main-container {
         margin-top: 0 !important
     }
