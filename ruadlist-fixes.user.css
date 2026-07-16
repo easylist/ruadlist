@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260714.1854
+@version        0.20260716.1511
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1661,9 +1661,6 @@
 }
 
 @-moz-document domain("dyvys.info") {
-    .td-header-sp-logo {
-        max-height: 90px !important
-    }
     body > * {
         pointer-events: auto !important
     }
@@ -1776,7 +1773,7 @@
     [aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
     div[class*="_is-branding"] > div[style^="background-color:"], 
     div[class*="body_branding"] > div[style*="background-color:"], 
-    div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"] {
+    div[class^="news-"][style^="margin-top: 0px; height: calc(100% "][style$=" 0px);"] {
         display: none !important
     }
     body, html {
