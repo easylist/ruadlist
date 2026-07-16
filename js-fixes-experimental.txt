@@ -168,7 +168,6 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 phys-kids.com##+js(abort-on-property-write, fetch)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
-dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
@@ -365,11 +364,10 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
 www.ixbt.com##+js(remove-node-text, style, rose.ixbt.com/banner/)
 playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
-dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, controls, true)
+dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, loop, true)
 rbc.ru##+js(set-attr, .content-custom [href*="?from="]:not([href*="utm"]), target, true)
 fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src, [data-src])
 fishki.net##+js(set-attr, .drag_element a[href*=".html"], target, true)
-dtf.ru,vc.ru##+js(set-attr, .media .andropov-video video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 rbc.ru##+js(set-attr, a[href*="?from=newsfeed"][data-role="title-link"], target, true)
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
@@ -467,6 +465,7 @@ sport-express.net,sport-express.ru##+js(set-local-storage-item, __videoboxActive
 finuslugi.ru##+js(set-local-storage-item, headerBannerShownAt, 1)
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
 rg.ru##+js(set-local-storage-item, rekl_modal_shown, {})
+dtf.ru,vc.ru##+js(set-local-storage-item, video-autoplay, false)
 iz.ru##+js(set-local-storage-item, vipler.player.live.play, false)
 dtf.ru,vc.ru##+js(set-local-storage-item, visits-count:plus-promotion, $remove$)
 twitch.tv##+js(twitch-videoad)
@@ -484,7 +483,6 @@ reshuent.ru,sdamgia.ru##.S617e090e7e
 reshuent.ru,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: sticky !important)
 inoreader.com##.ad_title:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 inoreader.com##.adsbygoogle:style(display: block !important)
-dtf.ru,vc.ru##.andropov-video-player--with-controls .andropov-video-player__overlay
 vc.ru##.andropov_video:remove-attr(data-video-play-mode)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:remove-attr(style)
 androidinsider.ru##.article-body:has(> p > [href="https://androidinsider.ru/tag/reklama"]) a[href*="utm_campaign"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
@@ -493,7 +491,6 @@ dtf.ru,vc.ru##.author__avatar video:remove-attr(autoplay)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 gazeta.press,gazeta.ru##.b_flowup:remove()
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
-dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)
 gamemag.ru##.content-text:has(em:has-text(erid:)) a > strong:style(font-weight: inherit !important)
 gamemag.ru##.content-text:has(em:has-text(erid:)) a:style(pointer-events: none !important; color: inherit !important)
 playground.ru##.dfp-container:remove()
@@ -897,7 +894,6 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 !#if env_firefox
 rutube.ru##+js(json-edit-fetch-response, [?!.video_balancer.default].appearance.auto_start, propsToMatch, /api/play)
 ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit')
-dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.autoplay, {})
 @@$cname,domain=360tv.ru|3sat.de|innal.top|kyiv.ua|sports.ru|tosdr.org
 ndelo.ru##^.js-login > input
 root-nation.com##^.td-a-rec
