@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.933
+VERSION = 3.934
 # Adjusted for RU Adlist by Lain Inverse in 2026
 
 # Import the key modules
@@ -69,7 +69,7 @@ KNOWNOPTIONS = ("badfilter", "cname", "collapse", "doc", "document", "elemhide",
                 "reason", "script", "stylesheet", "subdocument",  "first-party", "third-party",
                 "websocket", "webrtc", "xmlhttprequest")
 # List of known key=value parameters (domain is not included)
-KNOWNPARAMETERS = ("csp", "header", "queryprune", "removeparam", "rewrite", "redirect", "redirect-rule", "reason")
+KNOWNPARAMETERS = ("csp", "header", "queryprune", "reason", "redirect", "redirect-rule", "removeparam", "responseheader", "rewrite")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, getchangedfiles, difference, pull, checkupdate, update, merge, commit, push")
