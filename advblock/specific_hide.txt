@@ -2309,7 +2309,6 @@ drive2.com,drive2.ru##.c-dv-sns
 dsnews.ua#?#.c-feed__list-item:-abp-has(> .c-feed__item > .c-r)
 drive2.com,drive2.ru#?#.c-header:-abp-contains(/Ads|Реклама/)
 telegraf.com.ua,telegraf.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
-shuba.life##.c-product-card
 delo.ua,dsnews.ua,focus.ua##.c-r
 5-tv.ru##.cFadeDark
 nashamama.com#?#.cN-linkList:-abp-has(> h3:only-child)
@@ -5495,6 +5494,7 @@ season.ru##[class^="bnnr_bx_"]
 101.ru##[class^="bnr-"]
 geonavigator.ge,navigator.az##[class^="brand"]
 slovoidilo.ua##[class^="branding-link-"]
+shuba.life##[class^="c-product-"]
 ukrsport.pro##[class^="cs-banner"]
 fastpic.org##[class^="embed-responsive"]
 klubok.com##[class^="gekon"]
@@ -5544,7 +5544,7 @@ teknoblog.ru##[data-advadstrackid]
 epicentrk.ua##[data-advertising-listing-list] header
 bryansknovosti.ru,novozybkov.su#?#[data-alias="Copyright"] .widget-area > .widget_text:not(:last-child):-abp-has(script)
 vc.ru##[data-analytics*="native"]
-shuba.life#?#[data-article] > .c-section:-abp-has(.c-product-card)
+shuba.life#?#[data-article] > .c-section:-abp-has([class^="c-product-"])
 shuba.life##[data-banner-container]
 bobr.by,buhonline.ru,zakon.ru##[data-banner-id]
 intent.press,karavan.ua,sportarena.ua##[data-banner-name]
@@ -5642,7 +5642,7 @@ dotabuff.com##[data-type="elo-placement"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
 nv.ua##[data-unit_type="bnr"]
 conversion.im##[data-url*="/banners/"]
-shuba.life##[data-v-app] button.cursor-pointer
+shuba.life##[data-v-app] button[tabindex]
 slukh.media##[data-vc-parallax]
 trychatgpt.ru##[data-widget-id]
 safezone.cc##[data-widget-key="friends"]
