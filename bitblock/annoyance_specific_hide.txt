@@ -2845,6 +2845,7 @@ mail.yandex.ru,mail.yandex.*##[id^="js-mail-layout-content-header"] > .message-l
 mail.yandex.ru,mail.yandex.*##div#js-layout-inner[class^="PageLayout-m__main--"][id="js-layout-inner"] ~ div[style*="overscroll-behavior: none;"]
 translate.yandex.ru,translate.yandex.*##.side-block > div
 vk.com,vk.ru,vkvideo.ru##vk-video-player div[class^="PauseSuggestionsSlider"]
+yandex.ru,yandex.*##[class*="Money_"] [class]:empty
 ||auto.ru/_crpd/$xmlhttprequest
 ||docviewer.yandex.*/*/*/$script,~third-party
 ||dzen.ru/zen-partner/$third-party
@@ -2855,9 +2856,11 @@ vk.com,vk.ru,vkvideo.ru##vk-video-player div[class^="PauseSuggestionsSlider"]
 ||translate.yandex.*/_crpd/
 ||ya.ru/portal/_crpd/$xmlhttprequest
 ||ya.ru/portal/feed?
+||yandex-pogoda.static-storage.net^$script
 ||yandex-realty.naydex.net^$script
 ||yandex-tv.naydex.net^$script
 ||yandex.*/maps/_crpd/$xmlhttprequest
+||yandex.*/weather/_cry/$xmlhttprequest
 !#endif
 !
 ! - Youtube -
