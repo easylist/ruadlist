@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260716.1511
+@version        0.20260719.1924
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3485,6 +3485,10 @@
     [class*="ComposeDoneScreen"] * {
         height: auto !important;
         min-height: 0 !important
+    }
+    body[style*="padding-right:"][style*="15px"], 
+    html[style*="padding-right:"][style*="15px"] {
+        padding-right: 0 !important
     }
 }
 
