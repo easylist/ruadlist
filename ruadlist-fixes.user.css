@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260719.1924
+@version        0.20260721.1017
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1717,6 +1717,7 @@
     div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child, 
     div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="content--article-bottom-single-"], 
+    div[class^="content--article-right-ads_"], 
     div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"]), 
     div[id$="-rtb"], div[id*="splashscreen"], 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty, 
@@ -1769,8 +1770,8 @@
     div[class*="body_branding"] {
         background: inherit !important
     }
-    [aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
-    [aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
+    [aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
+    [aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
     div[class*="_is-branding"] > div[style^="background-color:"], 
     div[class*="body_branding"] > div[style*="background-color:"], 
     div[class^="news-"][style^="margin-top: 0px; height: calc(100% "][style$=" 0px);"] {
@@ -2214,6 +2215,7 @@
   domain("gagadget.com"),
   domain("gazeta.press"),
   domain("gazeta.ru"),
+  domain("lenta.news"),
   domain("lenta.ru"),
   domain("rambler.ru") {
     body:not(#id) {
@@ -3161,7 +3163,9 @@
     }
 }
 
-@-moz-document domain("lenta.ru") {
+@-moz-document
+  domain("lenta.news"),
+  domain("lenta.ru") {
     .longgrid-list__box {
         justify-content: unset !important
     }
