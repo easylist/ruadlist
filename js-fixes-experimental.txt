@@ -936,6 +936,9 @@ e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 @@||dzen.ru^$generichide
 @@||sportsdzen.ru^$generichide
+com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
+com,~ishosting.com,me,net,org,ru##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+com,me,net,org,~postgrespro.ru,ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style^="height"]
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
 ||cdn.viqeo.tv/js/assets/master-*/styles/vn_player.css$stylesheet
