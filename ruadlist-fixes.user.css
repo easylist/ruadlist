@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260722.1919
+@version        0.20260724.945
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -937,22 +937,6 @@
     }
 }
 
-@-moz-document
-  domain("avtorambler.com"),
-  domain("rambler.ru") {
-    .commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div {
-        box-shadow: none !important
-    }
-    .commercial-branding {
-        margin-top: unset !important;
-        margin-bottom: unset !important
-    }
-    .commercial-branding > div script ~ div > div, 
-    .commercial-branding > div script ~ div > div:last-child div {
-        min-height: 0 !important
-    }
-}
-
 @-moz-document domain("baby.ru") {
     .promo-background {
         padding-top: 0 !important
@@ -1702,8 +1686,7 @@
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     article[data-card-type*="-promo"], 
-    div[class*=" dzen-"] [style^="--top-padding:"], 
-    div[class*="--corner-banner_"], div[class*="-ad-block_"], 
+    div[class*=" dzen-"] [style^="--top-padding:"], div[class*="-ad-block_"], 
     div[class*="-ad-branding-"], div[class*="-right-ad-column"], 
     div[class*="AdvertTsar"], div[class*="BrandingAdvertLayoutColumn-"], 
     div[class*="__bannerContainer"], div[class*="_advertDoc2Doc-"], 
@@ -1719,7 +1702,7 @@
     div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="content--article-bottom-single-"], 
     div[class^="content--article-right-ads_"], 
-    div[class^="dzen-desktop--modal__rootElement-"], 
+    div[class^="dzen-desktop--modal__rootElement-"][style^="z-index: 1000"], 
     div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"]), 
     div[id$="-rtb"], div[id*="splashscreen"], 
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty, 
@@ -4235,6 +4218,23 @@
     }
     .main-wrapp__content {
         margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("rambler.ru") {
+    .commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div {
+        box-shadow: none !important
+    }
+    [data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > [data-text="true"] {
+        container-type: inherit !important
+    }
+    .commercial-branding {
+        margin-top: unset !important;
+        margin-bottom: unset !important
+    }
+    .commercial-branding > div script ~ div > div, 
+    .commercial-branding > div script ~ div > div:last-child div {
+        min-height: 0 !important
     }
 }
 
