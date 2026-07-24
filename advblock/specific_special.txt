@@ -59,7 +59,7 @@ howdyho.net#@#div[id^="yandex_rtb"]
 ||yandex.$domain=howdyho.net
 ||yastatic.$domain=howdyho.net
 !
-championat.com,championat.ru,lenta.ru,lenta.news##[class*="scroll-to-site"] {remove:true;}
+championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"] {remove:true;}
 cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored) {remove:true;}
 flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
@@ -68,10 +68,11 @@ gazeta.press,gazeta.ru##.b_flowup {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
 ixbt.com##.clickable_zone {remove:true;}
 ixbt.com##style[id^="branding-"] {remove:true;}
-lenta.ru,lenta.news##.layout__content > .js-topic:has(.topic-header__erid) {remove:true;}
-lenta.ru,lenta.news##.topic-body__content> .box-external-video:last-child {remove:true;}
-lenta.ru,lenta.news##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
-lenta.ru,lenta.news##.vk-video-popup {remove:true;}
+lenta.news,lenta.ru##.layout__content > .js-topic:has(.topic-header__erid) {remove:true;}
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"] {remove:true;}
+lenta.news,lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
+lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
+lenta.news,lenta.ru##.vk-video-popup {remove:true;}
 liveball.sx,liveball.*###custom_brand {remove:true;}
 pikabu.ru##head > style:has-text(min-height:301px;) {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}

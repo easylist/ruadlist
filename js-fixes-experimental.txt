@@ -502,6 +502,7 @@ igromania.ru#?#.knb-grid-container > [data-io-article-url]:-abp-has(> [class^="M
 rbc.ru,rbcrealty.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:style(top: 166px !important; position: unset !important)
 ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/pravila"])
 lenta.news,lenta.ru##.layout__content > .js-topic:has(.topic-header__erid):remove()
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]:remove()
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
 dtf.ru,vc.ru##.media .andropov-video video:remove-attr(autoplay)
