@@ -1264,6 +1264,7 @@ unews.pro#?#.BodyNewsStyle:-abp-has(> div > [id^="yandex_rtb"])
 f1analytic.com,f1ua.org.ua##.BoxVideo.clear ~ .BoxVideo.clear
 delfi.ee##.C-banner
 myshows.me##.CommentBanner
+vk.com,vk.ru##.ConversationsBar
 meduza.io##.DFPBanner-module-root
 meduza.io##.DFPBanner-root
 comedy-radio.ru,energyfm.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##.D_Top
@@ -5631,7 +5632,7 @@ russia-tv.online#?#[data-test="channel-name-link"] ~ div:-abp-has(> div > div[id
 dom.ru#?#[data-test="custom-wrapper"]:-abp-has(> div > [href*="movix.ru/"])
 scores24.live##[data-testid="ExpressCouponBookmakers"]
 t-j.ru##[data-testid="banner"]
-vk.com,vk.ru##[data-testid="leftmenu"] #l_invite_promo
+vk.com,vk.ru##[data-testid="leftmenu"] [id^="l_invite_"][id*="_promo"]
 telegraf.com.ua,telegraf.ua##[data-text^="Новини партнер"]
 uazmi.org##[data-text^="Рекламн"]
 bryansknovosti.ru,novozybkov.su##[data-title^="erid:"]
@@ -5782,6 +5783,7 @@ browserss.ru##[onclick^="window."][onclick*="://"]
 allboxing.ru##[onmouseenter="onClickPbButton()"]
 penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has([aria-label="Реклама от автора"])
 rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
 rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 ficbook.net##[src*=".net/banners/"]
