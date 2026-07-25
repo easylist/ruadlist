@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260724.945
+@version        0.20260725.1343
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4222,6 +4222,9 @@
 }
 
 @-moz-document domain("rambler.ru") {
+    [data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > div:first-child::before {
+        background-position: inherit !important
+    }
     .commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div {
         box-shadow: none !important
     }
