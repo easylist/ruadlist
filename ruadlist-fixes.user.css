@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260727.1350
+@version        0.20260729.1355
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -641,33 +641,6 @@
     }
     .need-friends {
         margin-top: 125px !important
-    }
-}
-
-@-moz-document domain("animedia.pro") {
-    .right-sidebar {
-        height: auto !important
-    }
-    .content > .media {
-        padding-bottom: unset !important
-    }
-}
-
-@-moz-document
-  domain("animedia.pro"),
-  domain("tt.animedia.tv") {
-    div[class^="promo"][class*="wrapper"] {
-        display: none !important
-    }
-    .main-container {
-        margin-top: 80px !important
-    }
-}
-
-@-moz-document domain("animedub.ru") {
-    article.full > div .skrin ~ div {
-        border: unset !important;
-        background-color: unset !important
     }
 }
 
