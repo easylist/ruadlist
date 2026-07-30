@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260729.1355
+@version        0.20260730.1944
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -599,9 +599,7 @@
     }
 }
 
-@-moz-document
-  domain("aniliberty.top"),
-  domain("anilibria.top") {
+@-moz-document domain("aniliberty.top") {
     .v-carousel, .v-carousel + div.d-flex {
         display: none !important
     }
