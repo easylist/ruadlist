@@ -73,7 +73,7 @@ dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefres
 reshuent.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 auto.ru##+js(abort-on-property-read, Object.prototype.isTopAd)
-e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
+e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 drive2.ru,razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
@@ -247,7 +247,7 @@ livejournal.com##+js(href-sanitizer, a[href^="https://www.livejournal.com/away?t
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
 uma.media##+js(json-prune, appearance.extended_auto_start)
 ivanovonews.ru##+js(json-prune, banner.ytcode)
-kufar.by,pikabu.ru##+js(json-prune, data, errors)
+kufar.by##+js(json-prune, data, errors)
 1plus1.video##+js(json-prune, dl bpas)
 pikabu.ru##+js(json-prune, isVideoAutoplayMode)
 igromania.ru##+js(json-prune, results.fixed)
@@ -670,6 +670,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||myfootball.*/betking/$media,redirect=noopmp4-1s
 ||oc.kg/background/*.mp4$media,redirect=noop-0.1s.mp3
 ||partnerprofitboost.com^$popunder
+||pikabu.ru/ajax/*_*?*=$xmlhttprequest,responseheader=llasalbbubrrl
 ||pravo.by/local/templates/.default/js/addtocopy.js
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
