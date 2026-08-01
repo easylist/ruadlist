@@ -6875,7 +6875,6 @@ htmlweb.ru##body > div[id] > [onclick]
 htmlweb.ru##body > div[id] > [onclick] ~ *
 htmlweb.ru#?#body > div[id]:-abp-has(> [onclick])
 htmlweb.ru##body > div[id]:empty
-fastpic.org##body > div[id]:not([class]):not([style])
 fastpic.org##body > div[id][aria-hidden]
 sibnet.ru##body > div[id][class*="push"]
 ts.kg##body > div[id][data-link]
@@ -6935,6 +6934,7 @@ the-geek.ru##body::before
 livetvstream.pro,me##body[bgcolor] > #adbtm
 livetvstream.pro,me##body[bgcolor] > div[id="ads"][style^="position: absolute;"]
 livetvstream.pro,me##body[bgcolor] > div[id^="iframe-container"]
+fastpic.org##body[class] > div[id]:not([class]):not([style])
 hi-fi.ru##body[data-pageid] #ipsLayout_sidebar
 2gis.by,2gis.kz,2gis.ru##button > div[style^="width: 136px; height: 100%;"]
 2gis.by,2gis.kz,2gis.ru##button > div[style^="width: 136px; height: 100%;"] ~ div[style*="pointer-events: auto"]
