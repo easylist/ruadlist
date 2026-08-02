@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260730.1944
+@version        0.20260802.1308
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2717,6 +2717,13 @@
 @-moz-document domain("instagram.com") {
     body[style*="overflow: hidden;"] {
         overflow: auto !important
+    }
+}
+
+@-moz-document domain("interface31.ru") {
+    .ads-top-container {
+        min-height: 0 !important;
+        margin-bottom: 0 !important
     }
 }
 
