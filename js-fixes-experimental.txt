@@ -313,7 +313,7 @@ dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,y
 otzovik.com##+js(noeval-if, ShadowRoot)
 kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
 www.kinopoisk.ru##+js(prevent-addEventListener, /canplay|loadeddata|playing|timeupdate/, '', elements, [poster][loop])
-fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopop|popMagic/)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopop|popMagic|isTrusted/)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0x|popMagic/)
 mem-hub.ru##+js(prevent-addEventListener, DOMContentLoaded, /adBlocks|adObserver|appPromoModal/)
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
