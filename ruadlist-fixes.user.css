@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260803.2226
+@version        0.20260804.1104
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1960,19 +1960,19 @@
     }
 }
 
-@-moz-document domain("filmix.day") {
-    .wrap {
-        margin-top: 0 !important
-    }
-}
-
 @-moz-document
-  domain("filmix.gg"),
   domain("filmix.date"),
+  domain("filmix.gg"),
   domain("filmix.life"),
   domain("filmix.pub"),
   domain("filmix.tech") {
     .main-wrapper, .page-wrapper {
+        margin-top: 0 !important
+    }
+}
+
+@-moz-document domain("filmix.day") {
+    .wrap {
         margin-top: 0 !important
     }
 }
@@ -5457,16 +5457,6 @@
     }
     .desktop-layout-with-sidebar__content > div[class][data-tid] {
         width: auto !important
-    }
-}
-
-@-moz-document domain("www.liveinternet.ru") {
-    :not(.allpageinner) > :not(.header) > .logo > a[href="/"] > span {
-        top: inherit !important;
-        left: inherit !important;
-        font-size: x-large !important;
-        font-weight: bold !important;
-        color: #0183cb !important
     }
 }
 
