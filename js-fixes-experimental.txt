@@ -15,6 +15,7 @@ rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
 $doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-music.ru|torrent-soft.ru
 */bens/vinos.js$popunder
+*/splash.php?cat=$popunder
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,sso.dzen.ru,sso.ya.ru#@#+js()
 shaiba.kz##+js(abort-current-inline-script, $, 1xbet)
@@ -532,7 +533,6 @@ lenta.news,lenta.ru##.vk-video-popup:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
-/splash.php?cat=$popunder
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
 dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
