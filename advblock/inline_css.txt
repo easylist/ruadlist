@@ -8,6 +8,11 @@ org,net##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]
 ! Shkulev Media
 ru##[data-ns-portal] .branding[data-page] {margin-top:unset;width:100%;}
 ! ---
+! FastPic
+/fastpic\.org\/(view|fullview)/$csp=sandbox allow-same-origin;
+fastpic.org##.show-code-button
+fastpic.org##.show-code-content {display:block;}
+! ---
 ex-fs.net###content {margin-top:0;}
 interface31.ru##.ads-top-container {min-height:0;margin-bottom:0;}
 kg-portal.ru##.ten_ears_wrap {margin-top:0;background-color:#a5a5a5;}
