@@ -14,9 +14,8 @@ inoreader.com###sinner_container:style(display: block !important; z-index: 0 !im
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
 $doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-music.ru|torrent-soft.ru
+*$popunder,domain=fastpic.org
 */bens/vinos.js$popunder
-*/splash.php?$popunder,domain=fastpic.org
-*/u.php?$popunder,domain=fastpic.org
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,sso.dzen.ru,sso.ya.ru#@#+js()
 shaiba.kz##+js(abort-current-inline-script, $, 1xbet)
@@ -56,7 +55,7 @@ marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
 livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, Date.now)
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, VIDEO)
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
 lenta.news,lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
