@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260809.1350
+@version        0.20260810.1849
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5647,6 +5647,9 @@
 @-moz-document
   domain("yap.ru"),
   domain("yaplakal.com") {
+    body:not(#id) {
+        background-color: #85c5a8 !important
+    }
     #footer {
         background: none !important;
         padding: 0 !important
