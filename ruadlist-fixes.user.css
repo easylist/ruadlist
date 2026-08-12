@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260811.2233
+@version        0.20260812.1944
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1730,7 +1730,8 @@
     [aria-label*="ица"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
     div[class*="_is-branding"] > div[style^="background-color:"], 
     div[class*="body_branding"] > div[style*="background-color:"], 
-    div[class^="news-"][style^="margin-top: 0px; height: calc(100% "][style$=" 0px);"] {
+    div[class^="news-"][style^="margin-top: 0px; height: calc(100% "][style$=" 0px);"], 
+    div[style*="--branding-column-sticky-top-offset"] {
         display: none !important
     }
     body, html {
