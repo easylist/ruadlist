@@ -325,7 +325,6 @@ dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
-fastpic.org,~new.fastpic.org##+js(prevent-setTimeout, ad)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
@@ -348,6 +347,7 @@ farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
 ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузер|Установить поиск Яндекса/)
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, )};)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
 ritsatv.ru##+js(remove-node-text, script, /checkAds|initAdblockCheck/)
@@ -433,6 +433,7 @@ gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,megaresheba.com,m
 razlozhi.ru##+js(set-constant, cadb, false)
 audioportal.su##+js(set-constant, clicks, 2)
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(set-constant, countdownNum, 0)
+fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
 gazeta.press,gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 gazeta.press,gazeta.ru##+js(set-constant, history.replaceState, noopFunc)
 gazeta.press,gazeta.ru##+js(set-constant, isAdFree, noopFunc)
@@ -573,6 +574,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()
 fastpic.org,~new.fastpic.org##[srcdoc]:remove()
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[value="Скачать"]:remove-attr(disabled)
+fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 www.gazeta.ru##^responseheader(location)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
@@ -667,7 +669,6 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||dominantroute.com/bens/vinos.js$script,redirect=noop.js
 ||dzen.ru/embed/*autoplay=1$third-party,subdocument,removeparam=|
 ||dzen.ru/zen-partner/$third-party
-||fastpic.org/cz/$popunder
 ||footboom.com/dist/app/js/antiAdBlock-
 ||franecki.net/js/lib.js$important,script,redirect=noop.js
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
