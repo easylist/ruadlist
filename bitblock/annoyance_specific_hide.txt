@@ -2866,7 +2866,7 @@ www.kinopoisk.ru##iframe[src*="kinopoisk-ru.clstorage.net/"]
 mail.*##.tv-widget [class^="vk-video"]
 mail.*##.tv-widget [class^="vk-video"] {remove:true;}
 mail.yandex.ru,mail.yandex.*##[id^="js-mail-layout-content-header"] > .message-list-banner-portal + div:not([class*="message"]):not(:last-child)
-mail.yandex.ru,mail.yandex.*##div#js-layout-inner[class^="PageLayout-m__main--"][id="js-layout-inner"] ~ div[data-testid]
+mail.yandex.ru,mail.yandex.*##div#js-layout-inner[class^="PageLayout-m__main--"][id="js-layout-inner"] ~ [class]
 translate.yandex.ru,translate.yandex.*##.side-block > div
 vk.com,vk.ru,vkvideo.ru##vk-video-player div[class^="PauseSuggestionsSlider"]
 yandex.ru,yandex.*##[class*="Money_"] [class]:empty
