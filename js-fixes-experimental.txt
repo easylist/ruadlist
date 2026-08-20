@@ -708,6 +708,13 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~dtf.ru|~kinoafisha.info|~pikabu.ru|~poolsuite.net|~vc.ru
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.ru
 !
+! FastPic
+fastpic.org,~new.fastpic.org##body:remove()
+fastpic.org,~new.fastpic.org##head:remove()
+fastpic.org,~new.fastpic.org##html::after:style(content: '⚠️ WARNING! Site infected. CLOSE THIS TAB IMMEDIATELY!' !important; font-size: 24px !important; font-weight: bold !important; text-align: center !important; line-height: 1.4 !important; margin-top: 20px !important;)
+fastpic.org,~new.fastpic.org##html::before:style(content: '⚠️ ВНИМАНИЕ! Сайт заражён. НЕМЕДЛЕННО ЗАКРОЙТЕ ВКЛАДКУ!' !important; font-size: 24px !important; font-weight: bold !important; text-align: center !important; line-height: 1.4 !important;)
+fastpic.org,~new.fastpic.org##html:style(background-color: #800000 !important; color: #ffffff !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; height: 100vh !important; margin: 0 !important; padding: 20px !important; box-sizing: border-box !important; font-family: sans-serif !important;)
+!
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
 cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
