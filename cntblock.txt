@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Thu, 20 Aug 2026 13:24:39 +0000
+! Last modified: Thu, 20 Aug 2026 15:10:55 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1315,7 +1315,7 @@ mail.yandex.*##+js(remove-attr, data-link-id, a, stay)
 mail.yandex.*##+js(set-constant, Object.prototype.DirectLine, undefined)
 mail.yandex.*##.mail-Page-Body .Popup2 > .Tooltip-Content:has-text(/^© 202/)
 mail.yandex.*##.qa-LeftColumn-Footer-Promo[href="https://ya.ru"]:style(top: 32px !important; left: 6px !important; height: 36px !important; width: 60px !important; position: fixed !important; z-index: 2001 !important; opacity: 0 !important)
-mail.yandex.*##[data-testid^="page-layout_right-column_"]:style(display: none !important)
+mail.yandex.*##[data-testid="page-layout_body_container"] > [data-testid="layout-main"] ~ div:not(:empty):style(display: none !important)
 mail.yandex.*##[id^="js-mail-layout-content-header"] > div ~ div:not([data-testid]):style(min-height: 0 !important; margin-top: unset !important)
 mail.yandex.*##div[class^="MidgetsPanel"]:style(display: none !important)
 meteum.ai##+js(abort-on-property-write, __pcodeAllActiveTestIds)
