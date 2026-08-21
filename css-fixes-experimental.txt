@@ -875,6 +875,7 @@ lenta.news,lenta.ru##.longgrid-list__box:style(justify-content: unset !important
 ! ---
 lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
 lifehacker.ru##.recipes-layout__content:style(margin-top: 0 !important)
+lifehacker.ru##a[href*="erid="]:not([href^="/"]):not([href^="https://lifehacker.ru/"]):style(pointer-events:none !important; border-bottom: none !important; color: inherit !important)
 ! Фикс для плеера VIQEO
 lifehacker.ru##[data-video_status="initial"] .splash-pause
 lifehacker.ru##[data-video_status] .previewContainer:style(z-index: unset !important)
