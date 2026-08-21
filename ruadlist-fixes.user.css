@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260820.1423
+@version        0.20260821.1005
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3173,6 +3173,11 @@
     .promo__container {
         pointer-events: none !important;
         background: none !important
+    }
+    a[href*="erid="]:not([href^="/"]):not([href^="https://lifehacker.ru/"]) {
+        pointer-events:none !important;
+        border-bottom: none !important;
+        color: inherit !important
     }
     [data-video_status] .previewContainer {
         z-index: unset !important
