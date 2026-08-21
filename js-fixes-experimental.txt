@@ -709,6 +709,9 @@ fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
+!#if env_mv3
+://fastpic.org^$doc
+!#endif
 !
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
