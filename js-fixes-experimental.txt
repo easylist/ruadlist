@@ -715,6 +715,8 @@ fastpic.org,~new.fastpic.org##head:remove()
 fastpic.org,~new.fastpic.org##html::after:style(content: '⚠️ WARNING! Site infected. CLOSE THIS TAB IMMEDIATELY!' !important; font-size: 24px !important; font-weight: bold !important; text-align: center !important; line-height: 1.4 !important; margin-top: 20px !important;)
 fastpic.org,~new.fastpic.org##html::before:style(content: '⚠️ ВНИМАНИЕ! Сайт заражён. НЕМЕДЛЕННО ЗАКРОЙТЕ ВКЛАДКУ!' !important; font-size: 24px !important; font-weight: bold !important; text-align: center !important; line-height: 1.4 !important;)
 fastpic.org,~new.fastpic.org##html:style(background-color: #800000 !important; color: #ffffff !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; height: 100vh !important; margin: 0 !important; padding: 20px !important; box-sizing: border-box !important; font-family: sans-serif !important;)
+|http*://fastpic.org/$csp=script-src
+||fastpic.org^$~doc,domain=fastpic.org|~new.fastpic.org
 !
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
