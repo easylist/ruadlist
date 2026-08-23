@@ -502,6 +502,7 @@ ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/prav
 lenta.news,lenta.ru##.layout__content > .js-topic:has(.topic-header__erid):remove()
 lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]:remove()
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
+povarenok.ru##.m-img:has(> [href*="?erid="]):style(min-height: 0 !important)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
 dtf.ru,vc.ru##.media .andropov-video video:remove-attr(autoplay)
 hideip.me#@#.node-promoted
