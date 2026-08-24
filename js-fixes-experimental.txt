@@ -697,7 +697,6 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.ru
 !
 ! FastPic
-*$popunder,domain=fastpic.org
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
@@ -712,6 +711,7 @@ fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 ! отключенные на время теста правила
+!*$popunder,domain=fastpic.org
 !://fastpic.org^
 !$document,reason=malicious,from=~new.fastpic.org|fastpic.org
 !fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
