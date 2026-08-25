@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260821.1005
+@version        0.20260825.1255
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4213,6 +4213,12 @@
     }
 }
 
+@-moz-document domain("radiosputnik.ru") {
+    .radiosputnik-fixed-video {
+        height: auto !important
+    }
+}
+
 @-moz-document domain("rambler.ru") {
     [data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > div:first-child::before {
         background-position: inherit !important
@@ -5546,11 +5552,9 @@
 }
 
 @-moz-document domain("ya.ru") {
-    #feed-ssr, #reedhm-rreid, .i-mini-bem[style], .market-feed, .reasoning-section, 
-    [id^="r"][id*="ed"][id*="m"][id*="-"][id*="f"], 
-    [id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"], 
-    html[class*="sektilliom_top"] aside + div, 
-    html[class*="sektilliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div, 
+    #rythm-feed, .i-mini-bem[style], .market-feed, .reasoning-section, 
+    html[class*="sektllliom_top"] aside + div, 
+    html[class*="sektllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div, 
     main.body__wrapper > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div {
         display: none !important
     }
