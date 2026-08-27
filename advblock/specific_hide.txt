@@ -5810,6 +5810,7 @@ browserss.ru##[onclick^="window."][onclick*="://"]
 allboxing.ru##[onmouseenter="onClickPbButton()"]
 penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has([aria-label="Реклама от автора"])
 rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
 rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
