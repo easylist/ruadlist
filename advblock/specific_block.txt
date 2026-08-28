@@ -26,6 +26,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||forum.ru-board.com/*.cgi?*=5&topic=51666$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
 ||forums.rusmedserv.com/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: https://forums.rusmedserv.com/clientscript/ cse.google.com *.google.com/cse/ *.googleapis.com
 ||gdz-ru.work/subscribe/$csp=sandbox allow-same-origin;
+||getblockify.com/adblock-test$csp=connect-src 'self'
 ||hawk.live/$csp=sandbox allow-same-origin;
 ||idealmedia.io$csp=script-src
 ||lis-gor.com/$csp=sandbox allow-same-origin;
@@ -41,7 +42,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:
 ||smartmama.com.ua^$csp=media-src 'none'
 ||statusklic.info^$csp=sandbox allow-same-origin;
-||superadblocktest.com^$csp=connect-src 'self';
+||superadblocktest.com^$csp=connect-src 'self'
 ||syndication.exosrv.com^$csp=sandbox allow-same-origin;
 ||t1mcapp.com^$csp=script-src
 ||tapochek.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:
