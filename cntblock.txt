@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Wed, 26 Aug 2026 19:02:00 +0000
+! Last modified: Fri, 28 Aug 2026 22:13:46 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1338,10 +1338,12 @@ ya.*,yandex.*##[class*="video"] div[class*="-Direct_placement_"]:style(display: 
 ya.*,yandex.*##[id][aria-label] > [class*="_card"]:has(> div > div > [data-event-required]):style(display: none !important)
 ya.*,yandex.*##[id][aria-label] > [class*="_card"]:has(> div [data-vnl*="advertiser"]):style(display: none !important)
 ya.*,yandex.*##[id][aria-label] > [class]:has(> div > button:matches-attr(/[a-z0-9]/=/"type":"adv"|advertiser/)):style(display: none !important)
+ya.*,yandex.*##[id][aria-label] > [class]:matches-attr(/[a-z0-9]/=/adv_unisearch|rsya_organic/):style(display: none !important)
 ya.*,yandex.*##div[aria-label="Баннер с рекламой"]:style(display: none !important)
 ya.*,yandex.*##div[aria-label="Рекламный баннер"]:style(display: none !important)
 ya.*,yandex.*##div[class*="-DirectSkeleton"]:style(display: none !important)
 ya.*,yandex.*##div[class^="Images"] div[class*="_skeleton"]:style(display: none !important)
+ya.*,yandex.*##div[id^="advRsya"]:style(display: none !important)
 ya.*,~yandex.net,yandex.*##+js(remove-attr, data-counter, #search-result > .serp-item a)
 ya.ru##main > div > div[data-hydration-id]
 yandex.*###bk-container:style(display: none !important)
