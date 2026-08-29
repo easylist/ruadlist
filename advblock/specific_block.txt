@@ -30,7 +30,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||hawk.live/$csp=sandbox allow-same-origin;
 ||idealmedia.io$csp=script-src
 ||lis-gor.com/$csp=sandbox allow-same-origin;
-||mobileproxy.space/*adblock-test.$csp=connect-src 'self'
+||mobileproxy.*/adblock-test.$csp=connect-src 'self'
 ||modsfire.com/download/*/$csp=script-src 'unsafe-eval' data:
 ||mult-porno.$csp=connect-src 'self' blob: data:
 ||news-sphere.com^$csp=script-src
