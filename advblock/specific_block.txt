@@ -35,7 +35,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||mult-porno.$csp=connect-src 'self' blob: data:
 ||news-sphere.com^$csp=script-src
 ||nsportal.ru/download/$csp=frame-src 'self'
-||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self';
+||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self'
 ||opensharing.org/img/images/$csp=script-src 'unsafe-inline' 'unsafe-eval' opensharing.org/img/
 ||paileactivist.github.io/toolz/adblock$csp=connect-src 'self'
 ||psysovet24.ru^$csp=script-src 'self' * blob: data:
@@ -50,6 +50,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||tdsclicks2.ru^$csp=script-src
 ||utarget.ru^$csp=sandbox allow-same-origin;
 ||utarget.ru^$csp=script-src
+||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
 ||www.liveinternet.ru/|$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' i.li.ru
 ||www.ukr.net^$csp=frame-src 'self' *.ukr.net *.cloudflare.com *.google.com kinoafisha.ua sinoptik.ua *.twitter.com
 ||yadistr.ru^$csp=script-src
