@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260827.1309
+@version        0.20260829.1044
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1737,6 +1737,7 @@
     }
     [aria-label*="ица"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id], 
     [aria-label*="ица"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label]), 
+    div[class*="_content_with-discrete-layout"] > div > div > div[style^="height:"] > div > div[id], 
     div[class*="_is-branding"] > div[style^="background-color:"], 
     div[class*="body_branding"] > div[style*="background-color:"], 
     div[class^="news-"][style^="margin-top: 0px; height: calc(100% "][style$=" 0px);"], 
@@ -2342,6 +2343,12 @@
   domain("glavred.net") {
     .newsfeed {
         height: auto !important
+    }
+}
+
+@-moz-document domain("globus.ru") {
+    a[itemtype*="://schema.org/Product"] span > img {
+        filter: none !important
     }
 }
 
