@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260829.1044
+@version        0.20260829.2238
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3160,6 +3160,14 @@
   domain("vadimrazumov.ru") {
     .mdspost > div[class], .s-layout > div[class], header > div[class] {
         min-height: 0 !important
+    }
+}
+
+@-moz-document
+  domain("libertycity.net"),
+  domain("libertycity.ru") {
+    body > div[class]:not([id]):not([style]) {
+        background-image: none !important
     }
 }
 
