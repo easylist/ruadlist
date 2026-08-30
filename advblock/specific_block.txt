@@ -10,6 +10,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||24smi.*/top/$csp=script-src
 ||24top.*/top/$csp=script-src
 ||adblock.turtlecute.org^$csp=connect-src 'self'; script-src https://adblock.turtlecute.org/js/index.js
+||adblockbench.com^$csp=connect-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'
 ||an.yandex.ru/count/$csp=script-src
 ||azbne.net^$csp=sandbox allow-same-origin;
 ||betnetmed.advertserve.com^$csp=sandbox allow-same-origin;
