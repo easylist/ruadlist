@@ -711,8 +711,6 @@ fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
-fastpic.org/fullview##+js(abort-on-property-read, document.body.appendChild)
-fastpic.org/view##+js(abort-on-property-read, document.body.appendChild)
 ! отключенные на время теста правила
 !*$popunder,domain=fastpic.org
 !://fastpic.org^
