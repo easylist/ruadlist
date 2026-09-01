@@ -9,7 +9,12 @@ org,net##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]
 ru##[data-ns-portal] .branding[data-page] {margin-top:unset;width:100%;}
 ! ---
 ! FastPic
-/fastpic\.org\/(view|fullview|vie%77|fullvie%77)/$csp=sandbox allow-downloads allow-same-origin;
+/fastpic\.org\/(view|fullview|vie%77|fullvie%77)/$csp=sandbox allow-downloads allow-same-origin; img-src *.fastpic.org fastpic.org static.fastpic.ru
+fastpic.org###picContainer .btn-outline-secondary {background-color:#2b6cb0;color:#fff;}
+fastpic.org###picContainer .btn-primary
+fastpic.org###picContainer > [style="position: relative;"] {background-image:none;}
+fastpic.org###picContainer a[href*="/fullview/"] > img:not([src])
+fastpic.org##.image-wrapper ~ div ~ div
 fastpic.org##.show-code-button
 fastpic.org##.show-code-content {display:block;}
 ! ---
