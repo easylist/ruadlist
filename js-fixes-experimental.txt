@@ -713,7 +713,6 @@ fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|2
 fastpic.org,~new.fastpic.org##+js(set-constant, HTMLHtmlElement.prototype.onclick, noopFunc)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
 fastpic.org##[srcdoc]:remove()
-fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 ! отключенные на время теста правила
