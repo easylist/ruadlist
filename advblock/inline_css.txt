@@ -10,6 +10,7 @@ ru##[data-ns-portal] .branding[data-page] {margin-top:unset;width:100%;}
 ! ---
 ! FastPic
 /fastpic\.org\/(view|fullview|vie%77|fullvie%77)/$csp=img-src *.fastpic.org fastpic.org static.fastpic.ru
+@@/fastpic\.org\/(view|fullview|vie%77|fullvie%77)/$csp=sandbox allow-downloads allow-same-origin;
 fastpic.org,~new.fastpic.org##a#imglink[href*="/fullview/"] > img[src*="/preview/"] {margin-bottom:-38px;display:block;}
 fastpic.org,~new.fastpic.org##a#imglink[href*="/fullview/"] {display:inline-block;overflow:hidden;}
 ! ---
