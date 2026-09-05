@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260902.1311
+@version        0.20260905.1436
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4996,6 +4996,12 @@
 @-moz-document domain("tv-kanali.online") {
     iframe.youtube-video:not([src*="//utraff.com/"]) {
         display: block !important
+    }
+}
+
+@-moz-document domain("tv.mail.ru") {
+    [data-qa="Wrapper"][class] {
+        min-height: 0 !important
     }
 }
 
