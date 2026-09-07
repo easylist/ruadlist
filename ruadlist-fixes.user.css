@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260905.1436
+@version        0.20260907.2033
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5575,6 +5575,8 @@
 
 @-moz-document domain("ya.ru") {
     #rythm-feed, .i-mini-bem[style], .market-feed, .reasoning-section, 
+    html[class*="-content_yes"] div[class*="_disclaimer_no"], 
+    html[class*="-content_yes"] div[class*="_disclaimer_no"] + div[class*="_border"], 
     main.body__wrapper > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div {
         display: none !important
     }
