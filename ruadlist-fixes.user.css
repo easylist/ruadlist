@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260907.2033
+@version        0.20260909.117
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3207,6 +3207,7 @@
 
 @-moz-document
   domain("liveball.gg"),
+  domain("liveball.im"),
   domain("liveball.my"),
   domain("liveball.space"),
   domain("liveball.sx"),
@@ -3215,7 +3216,8 @@
     main.main_div {
         margin-top: 0 !important;
         max-width: 100% !important;
-        border-radius: inherit !important
+        border-radius: inherit !important;
+        background-size: unset !important
     }
     footer {
         max-width: 100% !important
