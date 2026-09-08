@@ -75,7 +75,7 @@ lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBo
 lenta.news,lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
 lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 lenta.news,lenta.ru##.vk-video-popup {remove:true;}
-liveball.sx,liveball.*###custom_brand {remove:true;}
+liveball.sx,liveball.*##body > style[id] {remove:true;}
 pikabu.ru##head > style:has-text(min-height:301px;) {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
@@ -423,6 +423,12 @@ kp.ru##body.wp-theme-sports .left-sidebar
 kp.ru#?#body.wp-theme-sports .show-for-large:-abp-has(> .left-sidebar)
 kp.ru##div[class^="ad-slot"]
 kp.ru##div[style*="height:"][style*="250px"][style*="important"]
+!
+! LiveBall
+liveball.sx,liveball.*##[data-noclick]
+liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
+||cdn.lbs.pw/rek/
+||liveball.*/public/js/dm.min.js
 !
 ! мобильная версия livejournal.com
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class$="__inner--custom-width"]
