@@ -1,7 +1,16 @@
 ! Эта секция содержит оперативные исправления
 ! которые невозможно применить в uBOL до выхода новой версии
 ! ----
+.html$third-party,popup,domain=fastpic.org|~new.fastpic.org
+/splash.php?*fastpic$document
+/splash.php?*fHBvcE1hZ2lj$document
+=*=*fastpic*%$document
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, HTMLAnchorElement.prototype.dispatchEvent, /blob|injectedScript|inlineScript/)
+fastpic.org,~new.fastpic.org##a[href*="/big/"]:remove-attr(target)
+fastpic.org,~new.fastpic.org##a[href*="/fullview/"]:remove-attr(target)
 liveball.*##+js(prevent-addEventListener, DOMContentLoaded, start)
 liveball.*##[data-noclick]
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child:style(min-height: 0 !important)
+||lu-games.com^$document
+||redirectthisclick.com^$document
