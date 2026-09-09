@@ -9,7 +9,7 @@ fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, HTMLAnchorElement.protot
 fastpic.org,~new.fastpic.org##a[href*="/big/"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"]:remove-attr(target)
 liveball.*##+js(prevent-addEventListener, DOMContentLoaded, start)
-liveball.*##[data-noclick]
+liveball.*##[data-noclick]:not(#player_block)
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child:style(min-height: 0 !important)
 ||lu-games.com^$document
