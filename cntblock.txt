@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Fri, 11 Sep 2026 09:09:11 +0000
+! Last modified: Fri, 11 Sep 2026 20:16:30 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1399,6 +1399,7 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 !#if env_mv3
 dzen.ru,sportsdzen.ru,ya.ru##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 dzen.ru,sportsdzen.ru,ya.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x, document)
+dzen.ru,sportsdzen.ru,ya.ru##+js(addEventListener-defuser, beforeunload, 'defaultPrevented||this.setCookies')
 dzen.ru,sportsdzen.ru,ya.ru##+js(cookie-remover, /ancQTZw|bltsr|HgGedof|KIykI/)
 dzen.ru,sportsdzen.ru,ya.ru##+js(prevent-setTimeout, /BLOCKERS|NOT_BLOCKED/)
 ya.ru##+js(set-constant, Object.prototype.AdblockCookieMatchingType, undefined)
