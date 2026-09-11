@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Thu, 10 Sep 2026 12:40:41 +0000
+! Last modified: Fri, 11 Sep 2026 09:09:11 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1312,6 +1312,7 @@ dzen.*##div[class*="dzen-desktop--auto-slide-ad_"]:style(display: none !importan
 dzen.*##div[class*="isUnderTopicChannelBlock"]:style(display: block !important)
 dzen.*##div[class*="linkBro-"]:style(display: none !important)
 dzen.*##div[class^="content--article-right-"]:style(display: none !important)
+dzen.*##div[class^="dzen-desktop--feed-one-column-right-skeleton__card"]:style(display: none !important)
 dzen.*##div[class^="dzen-desktop--news-right-"]:style(display: none !important)
 dzen.*##html[class*="template__"] [id][class] div[style*="padding-top:"][style*="position:"][style*="relative"]:style(display: none !important)
 dzen.*,sportsdzen.*##+js(abort-on-property-read, Object.prototype.setBlockId)

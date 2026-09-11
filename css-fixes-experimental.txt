@@ -1561,7 +1561,6 @@ dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
 dzen.ru##article[data-card-type*="-promo"]
 dzen.ru##body:style(overflow-y: unset !important)
-dzen.ru##div[class*=" dzen-"] [style^="--top-padding:"]
 dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
 dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="_bannerWrapper-"]
@@ -1573,6 +1572,7 @@ dzen.ru##div[class^="dzen-desktop--modal__rootElement-"][style^="z-index: 1000"]
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="12.36263736"]
 dzen.ru##div[style*="important"] div[class*="__main"]
+dzen.ru##div[style^="--top-padding:"] div[style^="--imageHeight:"]
 ! исправление ошибок и косяков оригинальной вёрстки
 dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
 dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"]:style(min-height: 0 !important; --desktopPageLayoutCenterPadding: inherit !important)
