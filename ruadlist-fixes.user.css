@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260910.1345
+@version        0.20260911.1209
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1665,8 +1665,7 @@
     [data-testid*="-ad-block"], [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    article[data-card-type*="-promo"], 
-    div[class*=" dzen-"] [style^="--top-padding:"], div[class*="-ad-block_"], 
+    article[data-card-type*="-promo"], div[class*="-ad-block_"], 
     div[class*="-ad-branding-"], div[class*="-right-ad-column"], 
     div[class*="AdvertTsar"], div[class*="BrandingAdvertLayoutColumn-"], 
     div[class*="__bannerContainer"], div[class*="_advertDoc2Doc-"], 
@@ -1689,7 +1688,8 @@
     div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"], 
     div[id^="ad-"][class*=" news-"], div[id^="article-showcase-"], 
     div[style*="12.36263736"], div[style*="12.36263736"], 
-    div[style*="important"] div[class*="__main"] {
+    div[style*="important"] div[class*="__main"], 
+    div[style^="--top-padding:"] div[style^="--imageHeight:"] {
         display: none !important
     }
     div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
