@@ -5378,6 +5378,10 @@ lfootball.ws##.zoneBanner
 ovgorskiy.ru#?#.zsnazzy:-abp-has(.color_b:-abp-contains(Блок рекламы))
 topcraft.ru##.zverinco
 vrhell.com##.zzz
+2gis.ru,2gis.*##[type="button"] > div[style^="width: 136px; height: 100%;"]
+2gis.ru,2gis.*##[type="button"] > div[style^="width: 136px; height: 100%;"] ~ div[style*="pointer-events: auto"]
+2gis.ru,2gis.*##button > div[style^="width: 136px; height: 100%;"]
+2gis.ru,2gis.*##button > div[style^="width: 136px; height: 100%;"] ~ div[style*="pointer-events: auto"]
 freepiks.ru##:not(#container-top) > blockquote
 kerch.fm#?#:not(#dle-content) > .shortstory:-abp-has(> a > div > .advs-label)
 meteo.by##:not(.blinks) > .ad
@@ -6966,8 +6970,6 @@ livetvstream.pro,me##body[bgcolor] > div[id="ads"][style^="position: absolute;"]
 livetvstream.pro,me##body[bgcolor] > div[id^="iframe-container"]
 fastpic.org##body[class] > div[id]:not([class]):not([style])
 hi-fi.ru##body[data-pageid] #ipsLayout_sidebar
-2gis.by,2gis.kz,2gis.ru##button > div[style^="width: 136px; height: 100%;"]
-2gis.by,2gis.kz,2gis.ru##button > div[style^="width: 136px; height: 100%;"] ~ div[style*="pointer-events: auto"]
 novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
 360.ru,riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
 rutube.sport##button[aria-label*="баннер"]
