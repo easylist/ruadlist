@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260911.1209
+@version        0.20260914.957
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2877,6 +2877,13 @@
   domain("uatv.ua") {
     body > .playerlive {
         display: none !important
+    }
+}
+
+@-moz-document domain("kanobu.ru") {
+    a[href*="erid="] {
+        pointer-events: none !important;
+        color: inherit !important
     }
 }
 
