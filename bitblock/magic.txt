@@ -1,21 +1,5 @@
 ! Эта секция содержит оперативные исправления
 ! которые невозможно применить в uBOL до выхода новой версии
 ! ----
-.html$third-party,popup,domain=fastpic.org|~new.fastpic.org
 /^https?:\/\/stratege\.ru\/misc\/[a-z0-9]{25,}/$image,domain=stratege.ru
-/splash.php?*fastpic$document
-/splash.php?*fHBvcE1hZ2lj$document
-2gis.by,2gis.kz,2gis.ru##._1nnq5pzj
-2gis.by,2gis.kz,2gis.ru##._fh8krf5
-=*=*fastpic*%$document
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, HTMLAnchorElement.prototype.dispatchEvent, /blob|injectedScript|inlineScript/)
-fastpic.org,~new.fastpic.org##a[href*="/big/"]:remove-attr(target)
-fastpic.org,~new.fastpic.org##a[href*="/fullview/"]:remove-attr(target)
-link.softoroom.org##[href^="https://softoroom.org/link/jump.php"]
-liveball.*##+js(prevent-addEventListener, DOMContentLoaded, start)
-liveball.*##[data-noclick]:not(#player_block)
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span)
-www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child:style(min-height: 0 !important)
-www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child:style(min-height: 0 !important)
-||lu-games.com^$document
-||redirectthisclick.com^$document
