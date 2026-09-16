@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260914.957
+@version        0.20260916.1124
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1736,9 +1736,8 @@
     div[class*="body_branding"] {
         background: inherit !important
     }
-    [aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id] ~ div[id], 
-    [aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="ubric"]):not(:last-child):not([aria-label]), 
-    div[class*="_content_with-"][class$="layout"] > div > div > div[style^="height:"] > div > div[id], 
+    [aria-label] > div[class*="_content_"] > div > div > div[style^="height:"] > div > div[id], 
+    div[class*="-swap-root "], 
     div[class*="_is-branding"] > div[style^="background-color:"], 
     div[class*="body_branding"] > div[style*="background-color:"], 
     div[class^="news-"] [style^="margin-top: 0px; height: calc("][style$=" - 0px);"], 
@@ -5447,7 +5446,7 @@
     .film-seances-page, .shadow.shadow-restyle {
         box-shadow: 0 -8px 15px #333333 !important
     }
-    #modal-container > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"]), 
+    #modal-container > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"]):not([class^="styles_touch"]):not([class^="styles_closeArea"]), 
     #top > div[id][style^="height: 210px"], 
     .desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child, 
     .page-content > div[id]:not(#header-info-bg):empty, .top-banner-container, 
@@ -5586,6 +5585,8 @@
 
 @-moz-document domain("ya.ru") {
     #rythm-feed, .i-mini-bem[style], .market-feed, .reasoning-section, 
+    html[class*="-content_yes"] .banner-media, 
+    html[class*="-content_yes"] .banner-media + div[class*="_border"], 
     html[class*="-content_yes"] div[class*="_disclaimer_no"], 
     html[class*="-content_yes"] div[class*="_disclaimer_no"] + div[class*="_border"], 
     main.body__wrapper > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div {
