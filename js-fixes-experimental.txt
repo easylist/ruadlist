@@ -710,6 +710,8 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ! FastPic
 *$third-party,popunder,domain=fastpic.org
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
+fastpic.org,~new.fastpic.org##+js(abort-on-property-read, MouseEvent)
+fastpic.org,~new.fastpic.org##+js(abort-on-property-read, document.dispatchEvent)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, /blob|injectedScript|inlineScript/)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopImmediatePropagation, /blob|injectedScript|inlineScript/)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopPropagation, /blob|injectedScript|inlineScript/)
