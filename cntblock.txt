@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Fri, 18 Sep 2026 09:16:40 +0000
+! Last modified: Fri, 18 Sep 2026 09:50:28 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1205,7 +1205,6 @@ kino.mail.ru,pogoda.mail.ru,sportmail.ru,tv.mail.ru##+js(json-prune, is_vpn)
 search.ukr.net##+js(remove-attr, data-cturl, .searchresults a, stay)
 mail.ukr.net##+js(remove-attr, data-safe-proxy-url, a, stay)
 rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##+js(set-constant, BB.disableRefLinks, true)
-fastpic.org,~new.fastpic.org##+js(set-constant, Object.getOwnPropertyDescriptor, noopFunc)
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(set-constant, Object.prototype.Begun, undefined)
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(set-constant, Object.prototype.antiadblock, false)
 ivi.ru##+js(set-constant, Object.prototype.canShowMoreAds, noopFunc)
