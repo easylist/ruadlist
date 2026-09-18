@@ -9,8 +9,10 @@ agroreview.com,agroweek.com##.awb-slot
 dtf.ru,vc.ru##.sidebar__section-content > a[href^="https://edu.vc.ru/"]
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span)
 /^https?:\/\/stratege\.ru\/misc\/[a-z0-9]{25,}/$image,domain=stratege.ru
+/fastpic\.org\/(view|fullview|vie%77|fullvie%77)/$csp=img-src *.fastpic.org fastpic.org static.fastpic.ru
 /tmp-new/js/kgi.js$domain=kinogo.my|kinogohd.im|kinogomy.net|kinogoua.net
 mt.today##a.background
+fastpic.org##a[href*="html?info=1"]
 mt.today##div[class$="-only"][style]
 ||gogo.*.org/$third-party,media
 ||ozzi.*.org/$third-party,media
