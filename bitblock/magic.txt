@@ -1,9 +1,12 @@
 ! Эта секция содержит оперативные исправления
 ! которые невозможно применить в uBOL до выхода новой версии
 ! ----
+fastpic.org#?##mainContainer:-abp-has(a[href*="/big/"] > img:not([src])) a[href*="html?info=1"]
+fastpic.org#?##mainContainer:-abp-has(a[href*="/fullview/"] > img:not([src])) a[href*="html?info=1"]
 agroreview.com,agroweek.com##+js(abort-on-property-read, AWB)
 fastpic.org,~new.fastpic.org##+js(abort-on-property-read, MouseEvent)
 fastpic.org,~new.fastpic.org##+js(abort-on-property-read, document.dispatchEvent)
+fastpic.org,~new.fastpic.org##+js(set-constant, Object.getOwnPropertyDescriptor, noopFunc)
 agroreview.com,agroweek.com##.awb-slot
 .link/jvp0461jga?$third-party,xmlhttprequest
 dtf.ru,vc.ru##.sidebar__section-content > a[href^="https://edu.vc.ru/"]
@@ -12,7 +15,6 @@ vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-p
 /fastpic\.org\/(view|fullview|vie%77|fullvie%77)/$csp=img-src *.fastpic.org fastpic.org static.fastpic.ru
 /tmp-new/js/kgi.js$domain=kinogo.my|kinogohd.im|kinogomy.net|kinogoua.net
 mt.today##a.background
-fastpic.org##a[href*="html?info=1"]
 mt.today##div[class$="-only"][style]
 ||gogo.*.org/$third-party,media
 ||ozzi.*.org/$third-party,media
