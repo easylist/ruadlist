@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260916.2126
+@version        0.20260918.1056
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1910,7 +1910,7 @@
 }
 
 @-moz-document domain("fastpic.org") {
-    #picContainer > [style="position: relative;"] {
+    #picContainer > [style="position: relative;"], .col-auto > div[class] {
         background-image: none !important
     }
     body > footer {
