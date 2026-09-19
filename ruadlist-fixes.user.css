@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260918.1056
+@version        0.20260919.1525
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5678,8 +5678,8 @@
         position: fixed !important;
         transform: scale(0) !important
     }
-    .app__wrapper div[style^="width: calc(100% "] {
-        width: unset !important
+    .app__wrapper .game-root, .app__wrapper .play-similar-games {
+        width: 100% !important
     }
 }
 
