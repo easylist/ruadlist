@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260920.1046
+@version        0.20260920.1258
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5601,6 +5601,9 @@
     }
     #app > div {
         min-height: 0 !important
+    }
+    div[id^="tabs-_"][id$="_-more"]:not([style]) {
+        opacity: 0 !important
     }
 }
 

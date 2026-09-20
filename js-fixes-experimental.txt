@@ -323,6 +323,7 @@ mem-hub.ru##+js(prevent-addEventListener, DOMContentLoaded, /adBlocks|adObserver
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
 liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
+www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
