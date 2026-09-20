@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260920.1258
+@version        0.20260920.1352
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -347,7 +347,8 @@
   domain("win"),
   domain("work"),
   domain("xyz") {
-    a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]) {
+    a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]), 
+    a[href*="fastpic.ru"] {
         pointer-events: none !important
     }
 }
