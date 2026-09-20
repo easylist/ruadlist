@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260920.1015
+@version        0.20260920.1046
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -289,6 +289,72 @@
 @-moz-document
   domain("ac"),
   domain("ag"),
+  domain("ai"),
+  domain("app"),
+  domain("art"),
+  domain("biz"),
+  domain("blog"),
+  domain("buzz"),
+  domain("by"),
+  domain("cc"),
+  domain("city"),
+  domain("cloud"),
+  domain("club"),
+  domain("co"),
+  domain("com"),
+  domain("dev"),
+  domain("family"),
+  domain("fi"),
+  domain("fm"),
+  domain("gg"),
+  domain("in"),
+  domain("info"),
+  domain("ink"),
+  domain("io"),
+  domain("is"),
+  domain("kim"),
+  domain("kz"),
+  domain("la"),
+  domain("lib"),
+  domain("life"),
+  domain("loan"),
+  domain("love"),
+  domain("me"),
+  domain("name"),
+  domain("net"),
+  domain("news"),
+  domain("org"),
+  domain("plus"),
+  domain("press"),
+  domain("pro"),
+  domain("pub"),
+  domain("rest"),
+  domain("ru"),
+  domain("run"),
+  domain("sh"),
+  domain("si"),
+  domain("so"),
+  domain("space"),
+  domain("su"),
+  domain("tech"),
+  domain("today"),
+  domain("tv"),
+  domain("ua"),
+  domain("video"),
+  domain("vip"),
+  domain("website"),
+  domain("wiki"),
+  domain("win"),
+  domain("work"),
+  domain("xyz") {
+    a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]) {
+        pointer-events: none !important
+    }
+}
+
+@-moz-document
+  domain("ac"),
+  domain("ag"),
   domain("biz"),
   domain("buzz"),
   domain("by"),
@@ -370,71 +436,6 @@
 @-moz-document domain("agroxxi.ru") {
     .sidebarfix {
         margin-top: 0 !important
-    }
-}
-
-@-moz-document
-  domain("ai"),
-  domain("ac"),
-  domain("ag"),
-  domain("biz"),
-  domain("buzz"),
-  domain("by"),
-  domain("city"),
-  domain("club"),
-  domain("co"),
-  domain("com"),
-  domain("fi"),
-  domain("in"),
-  domain("ink"),
-  domain("kim"),
-  domain("la"),
-  domain("loan"),
-  domain("me"),
-  domain("name"),
-  domain("net"),
-  domain("org"),
-  domain("pub"),
-  domain("rest"),
-  domain("ru"),
-  domain("is"),
-  domain("run"),
-  domain("life"),
-  domain("lib"),
-  domain("sh"),
-  domain("si"),
-  domain("so"),
-  domain("space"),
-  domain("su"),
-  domain("today"),
-  domain("tv"),
-  domain("vip"),
-  domain("website"),
-  domain("win"),
-  domain("kz"),
-  domain("tech"),
-  domain("app"),
-  domain("dev"),
-  domain("cloud"),
-  domain("ai"),
-  domain("blog"),
-  domain("pro"),
-  domain("art"),
-  domain("video"),
-  domain("wiki"),
-  domain("io"),
-  domain("xyz"),
-  domain("fm"),
-  domain("gg"),
-  domain("work"),
-  domain("news"),
-  domain("press"),
-  domain("plus"),
-  domain("ua"),
-  domain("love"),
-  domain("info") {
-    a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]) {
-        pointer-events: none !important
     }
 }
 
