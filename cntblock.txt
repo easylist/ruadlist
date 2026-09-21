@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Sun, 20 Sep 2026 22:29:32 +0000
+! Last modified: Mon, 21 Sep 2026 09:00:45 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1536,6 +1536,7 @@ ya.*,~yandex.net,yandex.*##body > div[style="position:absolute;left:-10px;top:0;
 ||zenithjs.ws/embed/*geoBlock=$subdocument,removeparam=geoBlock
 !
 ! Экспериментальные правила для маркеров
+$document,removeparam=agent,domain=rambler.ru
 $document,removeparam=ai,domain=ggsel.net
 $document,removeparam=cdwuid_attempt,domain=t-j.ru
 $document,removeparam=clid,domain=dzen.ru|ya.ru
