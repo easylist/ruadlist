@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Mon, 21 Sep 2026 12:04:02 +0000
+! Last modified: Mon, 21 Sep 2026 12:40:04 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -325,7 +325,6 @@ _pagespeed_beacon?
 ||autodealer.ru/includes/button.php?
 ||avito.ru/clickstream/
 ||avito.ru/stat/
-||avtorambler.com/metrics/
 ||awsync.yandex.ru^$third-party
 ||b2b.ainews.kz^$third-party
 ||banstat.nadavi.net^
@@ -1245,13 +1244,12 @@ rutube.ru##[aria-label="raichuLogoLink"]
 tass.ru##[class^="Footer_liveinternet"]
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-react-rcm-block]
 anilib.*,animelib.*##+js(json-prune-xhr-response, meta.country, , propsToMatch, /api/anime)
-avtorambler.com,rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container-"])
-avtorambler.*,championat.*,eda.*,gazeta.press,gazeta.ru,~id.rambler.ru,lenta.news,lenta.ru,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##^script:has-text('getPrefixes')
-avtorambler.*,championat.*,eda.*,gazeta.press,gazeta.ru,~id.rambler.ru,lenta.news,lenta.ru,letidor.*,~mail.rambler.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(abort-on-stack-trace, Object.prototype.getBaseFingerprint, inlineScript)
-avtorambler.*,championat.*,eda.*,gazeta.press,gazeta.ru,~id.rambler.ru,lenta.news.lenta.ru,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(json-prune, Blocks)
-avtorambler.*,rambler.*,~www.rambler.*##.pub_300x250.text-ad-links.adbanner.ad.text_ad.pub_728x90.text-ad.nav-ad.text-ads.textAd.ad-banner.text_ads.pub_300x250m:style(display: block !important)
+rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container-"])
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body[onload] > [id]:not([class]):nth-child(-n+7):not([id^="ajax"]):not([id^="body_"]):not([id^="fancybox-"])
-avtorambler.com,rambler.ru##circle[stroke-dashoffset]
+championat.*,eda.*,gazeta.press,gazeta.ru,~id.rambler.ru,lenta.news,lenta.ru,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##^script:has-text('getPrefixes')
+championat.*,eda.*,gazeta.press,gazeta.ru,~id.rambler.ru,lenta.news,lenta.ru,letidor.*,~mail.rambler.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(abort-on-stack-trace, Object.prototype.getBaseFingerprint, inlineScript)
+championat.*,eda.*,gazeta.press,gazeta.ru,~id.rambler.ru,lenta.news.lenta.ru,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(json-prune, Blocks)
+rambler.ru##circle[stroke-dashoffset]
 inoreader.com##div[id^="leaderboard_ad"] > *
 dzen.*,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.hasPreroll, null)
 radioprofusion.com##footer > .counter
@@ -1263,7 +1261,8 @@ nova.rambler.*##+js(abort-on-property-read, Object.prototype.AdvManager)
 online-fix.*#@#a[href*=":2053"]:remove-class(btn)
 only-paper.*#@#.adbanner
 rambler.*##[data-blocks="rec_block"]:style(display: none !important)
-avtorambler.com,rambler.ru#?#section > nav ~ div div:-abp-has(> div > [id^="rcmw-container-"])
+rambler.*,~www.rambler.*##.pub_300x250.text-ad-links.adbanner.ad.text_ad.pub_728x90.text-ad.nav-ad.text-ads.textAd.ad-banner.text_ads.pub_300x250m:style(display: block !important)
+rambler.ru#?#section > nav ~ div div:-abp-has(> div > [id^="rcmw-container-"])
 shedevrum.*##+js(set-constant, Object.prototype.isNonEmptyString, undefined)
 shedevrum.*##div[class*="-container relative"]:style(display: none !important)
 top100.rambler.*##body > div:not([id])[style="position: absolute; z-index: 10000;"]:style(display: none !important)
