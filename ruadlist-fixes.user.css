@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260920.1352
+@version        0.20260921.2254
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4107,7 +4107,9 @@
     }
 }
 
-@-moz-document domain("pimpletv.me") {
+@-moz-document
+  domain("pimpletv.me"),
+  domain("pimpletv.ru") {
     body > #branding {
         padding-top: 0 !important
     }
