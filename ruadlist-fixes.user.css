@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260921.2254
+@version        0.20260922.1219
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1719,6 +1719,7 @@
         border: inherit !important
     }
     #ad-feed, .adv-ecom, .content--styles__banner-cc + [aria-label] ~ div, 
+    .forecast-details > article[class^="card "] ~ div:last-child, 
     .news-page-layout__content > div[class*="position"], 
     .news-page-layout__rubricator ~ [id], .news-rubric-desktop__adv-column, 
     .news-rubric-desktop__news > section > div > div[id], 
@@ -1727,10 +1728,9 @@
     .news-story-page div[id] > div:not([id]) > div[id], 
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
-    [class*="dzen-desktop--flash-modal"], 
-    [class*="segment__container"] > div > article[class^="card "] ~ div:last-child, 
-    [class*="yandex-direct"], [data-is-rendered="false"], 
-    [data-testid*="-ad-block"], [data-testid="dzenpro-banner"], [id*="card-rtb"], 
+    [class*="dzen-desktop--flash-modal"], [class*="yandex-direct"], 
+    [data-is-rendered="false"], [data-testid*="-ad-block"], 
+    [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
     article[data-card-type*="-promo"], div[class*="-ad-block_"], 
