@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260922.1219
+@version        0.20260922.2114
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -3226,19 +3226,6 @@
 }
 
 @-moz-document
-  domain("levik.blog"),
-  domain("livejournal.com"),
-  domain("olegmakarenko.ru"),
-  domain("periskop.su"),
-  domain("shakko.ru"),
-  domain("shiro-kino.ru"),
-  domain("vadimrazumov.ru") {
-    .mdspost > div[class], .s-layout > div[class], header > div[class] {
-        min-height: 0 !important
-    }
-}
-
-@-moz-document
   domain("libertycity.net"),
   domain("libertycity.ru") {
     body > div[class]:not([id]):not([style]) {
@@ -3312,6 +3299,18 @@
     }
     .allpage .currency a {
         pointer-events: none !important
+    }
+}
+
+@-moz-document
+  domain("livejournal.com"),
+  domain("olegmakarenko.ru"),
+  domain("periskop.su"),
+  domain("shakko.ru"),
+  domain("shiro-kino.ru"),
+  domain("vadimrazumov.ru") {
+    .mdspost > div[class], .s-layout > div[class], header > div[class] {
+        min-height: 0 !important
     }
 }
 
