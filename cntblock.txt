@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Tue, 22 Sep 2026 14:21:07 +0000
+! Last modified: Tue, 22 Sep 2026 18:16:40 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1206,8 +1206,8 @@ kino.mail.ru,pogoda.mail.ru,sportmail.ru,tv.mail.ru##+js(json-prune, is_vpn)
 search.ukr.net##+js(remove-attr, data-cturl, .searchresults a, stay)
 mail.ukr.net##+js(remove-attr, data-safe-proxy-url, a, stay)
 rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##+js(set-constant, BB.disableRefLinks, true)
-levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(set-constant, Object.prototype.Begun, undefined)
-levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(set-constant, Object.prototype.antiadblock, false)
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(set-constant, Object.prototype.Begun, undefined)
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(set-constant, Object.prototype.antiadblock, false)
 ivi.ru##+js(set-constant, Object.prototype.canShowMoreAds, noopFunc)
 ivi.ru##+js(set-constant, Object.prototype.hasAdv, noopFunc)
 rambler.ru##._3S8wP > div:first-child + div
@@ -1243,7 +1243,7 @@ freehd.com.ua,hdreactor.club,hdreactor.su#?#.sidebar > .menu-wrap > .menu-head:-
 @@||www.inoreader.com/adv/$domain=www.inoreader.com
 rutube.ru##[aria-label="raichuLogoLink"]
 tass.ru##[class^="Footer_liveinternet"]
-levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-react-rcm-block]
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-react-rcm-block]
 anilib.*,animelib.*##+js(json-prune-xhr-response, meta.country, , propsToMatch, /api/anime)
 rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container-"])
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body[onload] > [id]:not([class]):nth-child(-n+7):not([id^="ajax"]):not([id^="body_"]):not([id^="fancybox-"])
