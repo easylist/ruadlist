@@ -1017,6 +1017,7 @@ lenta.news,lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
 lenta.news,lenta.ru#?#.layout__content > .js-topic:-abp-has(.topic-header__erid)
 lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##.lb-ad-visible
+moslenta.ru##.lb-ad-visible + div:not([data-qa="partner-wrapper"])
 gazeta.press,gazeta.ru##.m_zen
 lenta.news,lenta.ru##.olympiad
 lenta.news,lenta.ru##.promo-block
@@ -1135,6 +1136,7 @@ nova.rambler.ru##section > article[class*=" Serp__item"]:not([class^=" Serp__ite
 ||rambler.ru/*/okko-metrics
 ||rambler.ru/special/okko/
 ||rcm.rambler.ru/*/widget?adtech_uid=
+||rcm.rambler.ru/*?adtech_uid=$xmlhttprequest,domain=moslenta.ru
 ||rcmjs.rambler.ru/static/rcmw/rcmw.*.horizontal.
 ||rcmjs.rambler.ru/static/recommender.js
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
