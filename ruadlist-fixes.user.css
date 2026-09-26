@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260925.1128
+@version        0.20260926.1403
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -181,11 +181,12 @@
     }
 }
 
-@-moz-document
-  domain("2ip.io"),
-  domain("2ip.ru") {
+@-moz-document domain("2ip.io") {
     .consent__notice, .consent__notice ~ .body-blackout {
         display: none !important
+    }
+    .content {
+        max-width: 100% !important
     }
     body {
         overflow: auto !important
@@ -1807,6 +1808,7 @@
     div[class*="body_branding"] {
         background: inherit !important
     }
+    [aria-label] > div[class*="_content_"] > div > div > div[style^="--height"] > div > div[id], 
     [aria-label] > div[class*="_content_"] > div > div > div[style^="height:"] > div > div[id], 
     div[class*="_is-branding"] > div[style^="background-color:"], 
     div[class*="body_branding"] > div[style*="background-color:"], 
@@ -5543,6 +5545,7 @@
     div[class*="styles_middleContainer"] > div[class]:first-child, 
     div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child, 
     div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child, 
+    div[class^="desktop_root_"] > div[class]:first-child, 
     div[class^="styles_wideContentContainer"] > div[class]:first-child, 
     div[style="min-width: 1px;"], div[style="min-width:1px"] {
         min-height: 0 !important
