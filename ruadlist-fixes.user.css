@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260926.1403
+@version        0.20260929.1359
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1737,11 +1737,11 @@
     [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
     a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div, 
-    article[data-card-type*="-promo"], div[class*="-ad-block_"], 
-    div[class*="-ad-branding-"], div[class*="-right-ad-column"], 
-    div[class*="AdvertTsar"], div[class*="BrandingAdvertLayoutColumn-"], 
-    div[class*="__bannerContainer"], div[class*="_advertDoc2Doc-"], 
-    div[class*="_bannerWrapper-"], 
+    article[class*="_trendsEntry-"], article[data-card-type*="-promo"], 
+    div[class*="-ad-block_"], div[class*="-ad-branding-"], 
+    div[class*="-right-ad-column"], div[class*="AdvertTsar"], 
+    div[class*="BrandingAdvertLayoutColumn-"], div[class*="__bannerContainer"], 
+    div[class*="_advertDoc2Doc-"], div[class*="_bannerWrapper-"], 
     div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"], 
     div[class*="_forceShow"], div[class*="adContentWrapper"], 
     div[class*="adSplitEmbed"], div[class*="bannerMain"], 
@@ -4788,6 +4788,17 @@
 @-moz-document domain("sport.ua") {
     #outer-top {
         padding-top: initial !important
+    }
+}
+
+@-moz-document
+  domain("sportcsat.ru"),
+  domain("vitalsport1.ru") {
+    div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"] {
+        display: none !important
+    }
+    iframe[src] {
+        pointer-events: auto !important
     }
 }
 
