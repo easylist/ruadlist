@@ -1,60 +1,14 @@
 ! Эта секция содержит оперативные исправления
 ! которые невозможно применить в uBOL до выхода новой версии
 ! ----
-sportarena.ua###page > .nomobile:empty
-agroreview.com,agroweek.com##+js(abort-on-property-read, AWB)
-kinofilm.io##+js(prevent-setTimeout, baitHidden)
-xsport.ua#?#.MuiBox-root:-abp-has(> .MuiStack-root + .MuiStack-root [rel*="sponsored"])
-agroreview.com,agroweek.com##.awb-slot
-sportarena.ua##.category__advertisement
-dtf.ru,vc.ru##.sidebar__section-content > a[href^="https://edu.vc.ru/"]
-vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span[data-role])
-minsknews.by##.widget_wp_ad_widget
-shelter.in.ua##[data-ad-pushed]
-tribuna.com##[data-menu-mainsections="casino"]
-shelter.in.ua##[style="height: 250px; opacity: 0;"]
-mt.today##a.background
-livetvstream.pro,me,online##body > #localpp[onclick*="window.open"]
-fcportables.com#?#body > div[id][class]:-abp-has([src*="/chp-ads-block-detector/"])
-livetvstream.pro,me,online##body[bgcolor] > #adbtm
-livetvstream.pro,me,online##body[bgcolor] > div[id="ads"][style^="position: absolute;"]
-livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
-mt.today##div[class$="-only"][style]
-tribuna.com#?#div[class$="match_layout__left_column__main"] > div:-abp-has([href*="/betting/"])
-tribuna.com##div[class*="_match_page__chat_odds_wrapper"]
-tribuna.com##div[class*="_tournament-branding__empty-block"]
-tribuna.com#?#div[class^="MatchLayout-module__"][class$="__match_layout"] > [data-test]:-abp-has([href*="/betting/"])
-tribuna.com##div[class^="_tournaments-header__hero_"]
 epscape.*##+js(prevent-setTimeout, shouldShowPrompt)
 epscape.*##.fixed.backdrop-blur-sm
 epscape.*##.otk-slot
-livetv.sx#?#table[bgcolor] > tbody > tr > td[bgcolor]:-abp-has(.odb)
+minsknews.by##.widget_wp_ad_widget
 !
 ! запросы
 .link/$third-party,domain=gorodyshka.link|player.temptcdn.com|tazaromikaz.link
-/tmp-new/js/kgi.js$domain=kinogo.my|kinogohd.im|kinogomy.net|kinogoua.net
-||aj2663.bid^$third-party
-||balamutka.link^$third-party
-||eugeniy.org^$third-party
-||evropidar.org^$third-party
-||fontmenice.com^$third-party
-||greatekran.org^$third-party
-||ii.apl*.me/js/pop.js|$script
-||ii.apl*.online/js/pop.js|$script
-||ii.apl*.pro/js/pop.js|$script
 ||imgkcdn.com^$third-party
-||kinzazaza.org^$third-party
-||krasnomaga.link^$third-party
-||leningrib.org^$third-party
-||morozovnya.link^$third-party
 ||myagkotela.link^$third-party
-||nevalyashka.link^$third-party
-||pizzahuizza.org^$third-party
-||ritsatv.ru/PLAYER/antiblok.js
-||rubakaka.org^$third-party
-||shaloburda.link^$third-party
-||skovorodnya.link^$third-party
-||strashnokrivo.org^$third-party
-||vertiguzha.link^$third-party
 ||veselchaga.link^$third-party
 ||viieqcjw.com^$third-party
