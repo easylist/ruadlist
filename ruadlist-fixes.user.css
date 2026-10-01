@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20260929.1359
+@version        0.20261001.1024
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1723,7 +1723,6 @@
         border: inherit !important
     }
     #ad-feed, .adv-ecom, .content--styles__banner-cc + [aria-label] ~ div, 
-    .forecast-details > article[class^="card "] ~ div:last-child, 
     .news-page-layout__content > div[class*="position"], 
     .news-page-layout__rubricator ~ [id], .news-rubric-desktop__adv-column, 
     .news-rubric-desktop__news > section > div > div[id], 
@@ -1733,6 +1732,7 @@
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], [class*="yandex-direct"], 
+    [data-bem*="segment-details"] > article[class^="card "] ~ div:last-child, 
     [data-is-rendered="false"], [data-testid*="-ad-block"], 
     [data-testid="dzenpro-banner"], [id*="card-rtb"], 
     a[href*="://yandex.ru/an/count/"], 
@@ -1808,8 +1808,7 @@
     div[class*="body_branding"] {
         background: inherit !important
     }
-    [aria-label] > div[class*="_content_"] > div > div > div[style^="--height"] > div > div[id], 
-    [aria-label] > div[class*="_content_"] > div > div > div[style^="height:"] > div > div[id], 
+    [aria-label] > div[class*="_content_"] > div > div > div[style^="--"][style*="height:"] > div > div[id], 
     div[class*="_is-branding"] > div[style^="background-color:"], 
     div[class*="body_branding"] > div[style*="background-color:"], 
     div[class^="news-"] [class*="-root "], 
@@ -2982,6 +2981,19 @@
 @-moz-document domain("kharkovforum.com") {
     body > table > tbody > tr > td[align="center"] {
         display: none !important
+    }
+}
+
+@-moz-document
+  domain("kingball.top"),
+  domain("sportcsat.ru"),
+  domain("streame.center"),
+  domain("vitalsport1.ru") {
+    div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"] {
+        display: none !important
+    }
+    iframe[src] {
+        pointer-events: auto !important
     }
 }
 
@@ -4788,17 +4800,6 @@
 @-moz-document domain("sport.ua") {
     #outer-top {
         padding-top: initial !important
-    }
-}
-
-@-moz-document
-  domain("sportcsat.ru"),
-  domain("vitalsport1.ru") {
-    div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"] {
-        display: none !important
-    }
-    iframe[src] {
-        pointer-events: auto !important
     }
 }
 
