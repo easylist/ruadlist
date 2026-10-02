@@ -4,7 +4,6 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 .softoroom.org^$csp=default-src 'unsafe-inline',domain=~gzip.softoroom.org|~m.softoroom.org
 /bens/vinos.js$csp=sandbox allow-same-origin;
 /gateway/aHR0c$csp=script-src
-://fastpic.org^$csp=sandbox allow-same-origin;
 |http*://fastpic.org/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org; connect-src 'self'; frame-src 'self'
 ||24click.*/top/$csp=script-src
 ||24smi-*/top/$csp=script-src
@@ -1158,7 +1157,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||faspiic.ru/js/go_re.js
 ||fastpic.org/*provider.js$script
 ||fastpic.org/fpv.js$script
-||fastpic.org/p.js$script
 ||fastpic.org/view/$script
 ||fastpicc.ru^$third-party,script
 ||fatalgame.com/content/js/andfox.
@@ -2788,7 +2786,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||static.criteo.net^$script,domain=minfin.com.ua
 ||static.ctnews.ru/js/prod/uniroll.js
 ||static.fastpic.$subdocument,domain=fastpic.org
-||static.fastpic.org^$domain=fastpic.org|~new.fastpic.org
+||static.fastpic.org/js/fppop.js
 ||static.kulina.ru/br/
 ||static.li.ru/radio/*rmm.$script,stylesheet
 ||static.lostfilm.top/temp/wow_
