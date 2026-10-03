@@ -1041,8 +1041,8 @@ lenta.news,lenta.ru##.traffic-exchange
 lenta.news,lenta.ru##.twz-banner
 lenta.news,lenta.ru##.vk-video-popup
 lenta.news,lenta.ru##.yandex-games
-rambler.ru##[aria-label="Виджеты"] div:has(> div > [data-rcmw-init])
-rambler.ru,rambler.ua,www.afisha.ru##[aria-label="Реклама"]
+rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> div > [data-rcmw-init])
+rambler.ru,www.afisha.ru##[aria-label="Реклама"]
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
 rambler.ru##[class*="licy-not"]
 championat.com,lenta.news,lenta.ru##[class*="scroll-to-site"]
@@ -1055,7 +1055,7 @@ championat.com,championat.ru##[data-goal-label="coeff_fonbet"]
 championat.com,championat.ru##[data-href*="okko.sport"]
 championat.com,championat.ru##[data-href*="utm_"]
 motor.ru##[data-motor-desktop*="exchange_block"]
-rambler.ru,rambler.ua##[data-news_media-desktop*="rnet_widget"]
+rambler.ru##[data-news_media-desktop*="rnet_widget"]
 www.rambler.ru##[data-overflow-item="spasibo"]
 ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
 rambler.ru##[data-rcmw-init]
@@ -1088,7 +1088,7 @@ finance.rambler.ru##body[data-finance_media-desktop="main"] .commercial-branding
 gazeta.press,gazeta.ru#?#div:-abp-has(> .b_telegram)
 www.rambler.ru#?#div:-abp-has(> div > [data-cerber^="widgets-carousel:"]) + div > div > div > div:-abp-has(> div a[href^="https://ads.adfox.ru/"])
 rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
-rambler.ru,rambler.ua#?#div:-abp-has(> div[id^="adfox-"][id*="rambler"])
+rambler.ru#?#div:-abp-has(> div[id^="adfox-"][id*="rambler"])
 mail.rambler.ru##div[class*="Ad-direct"]
 mail.rambler.ru##div[class*="Ad-root"]
 mail.rambler.ru##div[class*="AddBillboard"]
@@ -1097,7 +1097,7 @@ mail.rambler.ru##div[class*="SentLetter-context"]
 nova.rambler.ru#?#div[class*="__sticky--"] > div:-abp-has(> [id^="adfox-"])
 nova.rambler.ru##div[class*="__sticky--"] > div:first-child:not(:only-child):not([class^="Found__root--"])
 nova.rambler.ru##div[class*="adv__context"]
-rambler.ru,rambler.ua##div[class*="banner-"]
+rambler.ru##div[class*="banner-"]
 gazeta.press,gazeta.ru,letidor.ru,moslenta.ru,nova.rambler.ru,passion.ru,quto.ru##div[class*="billboard"]
 lenta.news,lenta.ru##div[class*="goodnews"][class*=" "]
 www.afisha.ru##div[class^="Advert"]
@@ -1112,19 +1112,19 @@ rambler.ru##div[style^="height: 290px"][style*="overflow: hidden"]
 gazeta.press,gazeta.ru##div[style^="height:"][style*="vh"]:empty
 rambler.ru##div[style^="min-height: 140px"]
 rambler.ru##div[style^="min-height: 240px"]
-rambler.ru,rambler.ua##div[style^="min-height: 250px"]
-rambler.ru,rambler.ua##div[style^="min-height: 290px"]
-rambler.ru,rambler.ua##div[style^="min-height: 300px"]
+rambler.ru##div[style^="min-height: 250px"]
+rambler.ru##div[style^="min-height: 290px"]
+rambler.ru##div[style^="min-height: 300px"]
 rambler.ru##div[style^="min-height: 400px"]
 rambler.ru##div[style^="min-height: 600px"]
 rambler.ru##div[style^="min-height:140px"]
 rambler.ru##div[style^="min-height:240px"]
-rambler.ru,rambler.ua##div[style^="min-height:250px"]
-rambler.ru,rambler.ua##div[style^="min-height:290px"]
-rambler.ru,rambler.ua##div[style^="min-height:300px"]
+rambler.ru##div[style^="min-height:250px"]
+rambler.ru##div[style^="min-height:290px"]
+rambler.ru##div[style^="min-height:300px"]
 rambler.ru##div[style^="min-height:400px"]
 rambler.ru##div[style^="min-height:600px"]
-rambler.ru,rambler.ua##div[style^="order:"][style*="-1"]
+rambler.ru##div[style^="order:"][style*="-1"]
 rambler.ru##rambler-info-banner
 nova.rambler.ru##section > article[class*=" Serp__item"]:not([class^=" Serp__item"])
 ||championat.*/embeds/custom.css
