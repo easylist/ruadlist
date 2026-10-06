@@ -1,11 +1,13 @@
 ! Эта секция содержит оперативные исправления
 ! которые невозможно применить в uBOL до выхода новой версии
 ! ----
+tabor.ru##+js(set-cookie-reload, cookie_accepted, 1)
+minsknews.by##.widget_wp_ad_widget
+vk.com,vk.ru##[class*="onversationsBar"]
+vk.com,vk.ru##[data-testid="feed_main_container"] > div > section
 epscape.*##+js(prevent-setTimeout, shouldShowPrompt)
 epscape.*##.fixed.backdrop-blur-sm
 epscape.*##.otk-slot
-minsknews.by##.widget_wp_ad_widget
-tabor.ru##+js(set-cookie-reload, cookie_accepted, 1)
 !
 ! запросы
 .link/$third-party,domain=gorodyshka.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
