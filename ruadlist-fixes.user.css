@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261007.1250
+@version        0.20261009.2105
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1682,7 +1682,6 @@
     div[class*="dzen-desktop--"][class*="__ad-"], 
     div[class*="dzen-desktop--top-sidebar-desktop-ad__root"], 
     div[class*="dzenProBanner"], div[class*="multiEmbedMode"], 
-    div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child, 
     div[class*="watch-page-content"] [aria-label] > div[id], 
     div[class^="content--article-bottom-single-"], 
     div[class^="content--article-right-ads_"], 
@@ -1744,9 +1743,10 @@
     div[class*="body_branding"] {
         background: inherit !important
     }
-    [aria-label] > div[class*="_content_"] > div > div > div[style^="--"][style*="height:"] > div > div[id], 
+    [aria-label] > div[class*="_content"] > div > div > div[style^="--"][style*="height:"] > div > div[id], 
     div[class*="_is-branding"] > div[style^="background-color:"], 
     div[class*="body_branding"] > div[style*="background-color:"], 
+    div[class*="new"] [class*="__rubricator"] + div[class*=" "] > div:only-child, 
     div[class^="news-"] [class*="-root "], 
     div[class^="news-"] [style^="margin-top: 0px; height: calc("][style$=" - 0px);"], 
     div[style*="--branding-column-sticky-top-offset"] {
@@ -5521,6 +5521,11 @@
     div[class*=" styles_basicInfoSection"], 
     div[class*=" styles_basicMediaSection"] {
         padding-top: 40px !important
+    }
+    a[href^="https://igromir.yandex.ru/"] {
+        pointer-events: none !important;
+        color: inherit !important;
+        background-image: none !important
     }
     .user-subscription-partial-component__subscription-item-text {
         white-space: pre-wrap !important
