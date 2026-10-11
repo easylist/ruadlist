@@ -658,7 +658,6 @@ translate.yandex.ru,translate.yandex.*##+js(set-constant, Object.prototype.dispa
 embed.smotrim.ru,gofrag.ru,radiosputnik.ru,videobel.by##video:remove-attr(autoplay)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)
-wildberries.*##+js(set-constant, Object.prototype.prepareBannersList, noopFunc)
 ya.ru,yandex.*##+js(remove-node-text, script, /DistributionLinkBro|-masonry-feed-/)
 ya.ru,yandex.*##.dist-overlay__popup:remove()
 ya.ru,yandex.*##.simple-popup__overlay:remove()
