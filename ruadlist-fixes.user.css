@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261010.940
+@version        0.20261012.1333
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1873,6 +1873,15 @@
         display: none !important
     }
     body {
+        overflow: auto !important
+    }
+}
+
+@-moz-document domain("esports.ru") {
+    html.overflow-hidden .js-popup-promo {
+        display: none !important
+    }
+    html.overflow-hidden {
         overflow: auto !important
     }
 }
