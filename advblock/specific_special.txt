@@ -1045,6 +1045,7 @@ lenta.news,lenta.ru##.traffic-exchange
 lenta.news,lenta.ru##.twz-banner
 lenta.news,lenta.ru##.vk-video-popup
 lenta.news,lenta.ru##.yandex-games
+rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> [data-rcm-widget])
 rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> div > [data-rcmw-init])
 rambler.ru,www.afisha.ru##[aria-label="Реклама"]
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
@@ -1084,7 +1085,7 @@ championat.com,championat.ru##a[href*="offer_id="]
 championat.com,championat.ru,lenta.news,lenta.ru##a[href*="okko.sport"]
 www.afisha.ru##a[href^="/out/?url="]
 gazeta.press,gazeta.ru##a[href^="/prcom/"]
-rambler.ru##article [id^="rambler-weather-container:"] ~ div[class]
+rambler.ru##article [id^="rambler-weather-container:"] ~ div[class*=" "]
 rambler.ru#?#article div:-abp-has(> rambler-car-loan-calculator)
 rambler.ru#?#article div:-abp-has(> rambler-info-banner)
 rambler.ru#?#aside:-abp-has(> div > [class^="banner--native-partner_widget"])
