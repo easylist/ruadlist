@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Tue, 13 Oct 2026 16:00:24 +0000
+! Last modified: Sun, 18 Oct 2026 07:27:32 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1198,6 +1198,8 @@ sfw.so###banner_counters
 sinoptik.ua###bigmirTop
 lurkmo.re,lurkmore.to###p-counters
 game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_footer > .copyright > center:first-child
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > :not(div)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > div[id][style*="height:"]:not(#main_nav)
 fastpic.ru###picContainer > img
 happy-hack.net#?##side_right > .block_r:-abp-has(> div [href*="liveinternet.ru/"])
 browserleaks.com###unsafe-inline
@@ -1247,7 +1249,6 @@ tass.ru##[class^="Footer_liveinternet"]
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-react-rcm-block]
 anilib.*,animelib.*##+js(json-prune-xhr-response, meta.country, , propsToMatch, /api/anime)
 rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container-"])
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body[onload] > [id]:not([class]):nth-child(-n+7):not([id^="ajax"]):not([id^="body_"]):not([id^="fancybox-"])
 championat.*,eda.*,gazeta.press,gazeta.ru,~id.rambler.ru,lenta.news,lenta.ru,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##^script:has-text('getPrefixes')
 championat.*,eda.*,gazeta.press,gazeta.ru,~id.rambler.ru,lenta.news,lenta.ru,letidor.*,~mail.rambler.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(abort-on-stack-trace, Object.prototype.getBaseFingerprint, inlineScript)
 championat.*,eda.*,gazeta.press,gazeta.ru,~id.rambler.ru,lenta.news.lenta.ru,letidor.*,moslenta.*,motor.*,passion.*,~quiz.rambler.ru,quto.*,rambler.*,~vp.rambler.ru,wmj.*,www.afisha.*##+js(json-prune, Blocks)
