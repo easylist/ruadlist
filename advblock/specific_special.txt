@@ -166,7 +166,7 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 !
 ! Плеер VeoVeo
 $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
-.link/$third-party,domain=gorodyshka.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
+.link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
 /ad-rotator/ad-list.json
 /ad-rotator/vast.xml
 /api-integration/*?unique=$third-party,xmlhttprequest
@@ -182,6 +182,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||evropidar.org^$third-party
 ||greatekran.org^$third-party
 ||imgkcdn.com^$third-party
+||khitrozya.link^$third-party
 ||kinzazaza.org^$third-party
 ||krasnomaga.link^$third-party
 ||leningrib.org^$third-party
@@ -256,6 +257,16 @@ $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|
 @@/bundle.min.js$script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|playep.pro|playy.online|plplayer.online|plwork.net|sorb.info|toplay.biz|ttutu.biz
 @@/bundle.serial.min.js$script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|playep.pro|playy.online|plplayer.online|plwork.net|sorb.info|toplay.biz|ttutu.biz
 ||testwest.xyz^$third-party
+!
+! Flicksbar
+brogiro.cfd,bulkikim.cfd,fixtyflux.cfd,flicksbar.*,flcksbr.top,flcksbr.*###tgWrapper
+brogiro.cfd,bulkikim.cfd,fixtyflux.cfd,flicksbar.*,flcksbr.top,flcksbr.*###TopAdMb
+brogiro.cfd,bulkikim.cfd,fixtyflux.cfd,flicksbar.*,flcksbr.top,flcksbr.*##.brand
+brogiro.cfd,bulkikim.cfd,fixtyflux.cfd,flicksbar.*,flcksbr.top,flcksbr.*##div[class^="topAd"]
+cfd##body > .wrapper > #tgWrapper
+cfd##body > .wrapper > #TopAdMb
+cfd##body > .wrapper > .brand
+cfd##body > .wrapper > div[class^="topAd"]
 !
 ! HDRezka
 ! домены: hdrezka.ag,hdrezka.buzz,hdrezka.city,hdrezka.club,hdrezka.co,hdrezka.in,hdrezka.ink,hdrezka.loan,hdrezka.me,hdrezka.name,hdrezka.rest,hdrezka.run,hdrezka.sh,hdrezka.today,hdrezka.tv,hdrezka.vip,hdrezka.website,hdrezka.win,hdrezkapez.org,hdrezkapzm.org,hdrezkawer.org,kinopub.me,rezka-ua.tv,rezka.ag,rezkery.com,rezkify.com
