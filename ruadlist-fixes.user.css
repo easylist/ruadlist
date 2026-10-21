@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261019.1029
+@version        0.20261021.1024
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1309,7 +1309,8 @@
   domain("ru"),
   domain("su"),
   domain("tv") {
-    [data-video_status][data-adapter="vk"] .previewContainer {
+    [data-video_status][data-adapter="vk"] .previewContainer, 
+    [data-video_status][data-adapter="vk"] .spinnerContainer {
         display: none !important
     }
     [data-video_status][data-adapter="vk"] .mediaContainer {
