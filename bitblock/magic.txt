@@ -2,36 +2,13 @@
 ! которые невозможно применить в uBOL до выхода новой версии
 !
 ! косметические правила и скриплеты
-gk-press.if.ua###more-articles > .auto-load
-radar-map.ru##+js(abort-on-property-read, __adfinityLaunch)
 vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
-sn.by##.banner-list
-gk-press.if.ua##.site-content .some-widgets > a
-golossokal.com.ua##.stream-item-below-post-content > .stream-title
-sn.by##.upper-top-head
-rutube.ru##.wdp-wrapper-module__wdp-common-wrapper > .wdp-carousel-module__carouselWrapper
-golossokal.com.ua#?#.widget_block:-abp-has(> [id*="ScriptRoot"])
-golossokal.com.ua##.widget_text
 rutube.ru##a[href*="erid="][target="_blank"]
-cfd##body > .wrapper > #TopAdMb
-cfd##body > .wrapper > #tgWrapper
-cfd##body > .wrapper > .brand
-cfd##body > .wrapper > div[class^="topAd"]
-id.vk.ru##div[class^="AccidentResearchCell-"] section.vkuiBanner__host:style(display: block !important)
 !
 ! сетевые правила
-.link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
-/vast.js$domain=fenixplay.xyz|noodlemagazine.com|ukdevilz.com
-||beloboka.link^$third-party
 ||dolgoruka.link^$third-party
-||khitrozya.link^$third-party
 ||kruglyashka.link^$third-party
 ||mudrobasa.link^$third-party
-||pustobrya.link^$third-party
-||radar-map.ru/static/vendor/adfinity.js
-||samograyka.link^$third-party
 ||skorobeyka.link^$third-party
-||sosilapu.org^$third-party
-||tikhomira.link^$third-party
 ||zhenivalka.link^$third-party
 ||zlatobryuga.link^$third-party
