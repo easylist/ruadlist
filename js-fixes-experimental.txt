@@ -267,7 +267,7 @@ ya.ru##+js(json-prune, rythm_market)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
 aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com,tortuga.wtf##+js(json-prune, vast)
 lumex.space##+js(json-prune-fetch-response, ads.banners.endtag ads.banners.pausebanner ads.rolls)
-rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, embed)
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)
 ohmywishes.com##+js(json-prune-fetch-response, item.banners)
 595.ucoz.net,5wip-file.ru,file-mods.ru,infourok.ru,mixmuz.ru,myshared.ru,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 muzlan.top##+js(nano-setInterval-booster, .numcard)
@@ -543,7 +543,6 @@ dynamo.kiev.ua##.video-scroll:remove()
 lenta.news,lenta.ru##.vk-video-popup:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
-/rutube\.ru\/api\/play\/options\/.*[?&]referer=https.*(116|14|161|164|173|178|26|29|35|43|45|48|51|53|56|59|60|63|68|71|72|74|76|86|89|93|chita|e1|fontanka|ircity|izh1|mgorsk|msk1|ngs22|ngs24|ngs42|ngs55|ngs70|ngs|nn|sochi1|starhit|sterlitamak1|tolyatty|ufa1|v1|vladivostok1|voronezh1|ya62)\.ru/$xmlhttprequest,removeparam=referer
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
 shuba.life##::selection:style(background-color: Highlight !important; color: HighlightText !important)
@@ -701,7 +700,6 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
 ||rbk.ru/*/build/fn/_oprosso.js
-||rutube.ru/api/play/options/*&referer=rambler.$xmlhttprequest,removeparam=referer
 ||rutube.ru/play/embed/$third-party,subdocument,removeparam=autoplay
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
@@ -933,7 +931,6 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 !
 ! Фоксо-специфичные случаи >
 !#if env_firefox
-rutube.ru##+js(json-edit-fetch-response, [?!.video_balancer.default].appearance.auto_start, propsToMatch, /api/play)
 ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit')
 @@$cname,domain=360tv.ru|3sat.de|innal.top|kyiv.ua|sports.ru|tosdr.org
 ndelo.ru##^.js-login > input
