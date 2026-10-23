@@ -964,7 +964,7 @@ gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="htt
 !#if env_mv3
 payment.mts.ru###__next > div[id^="adfox_"]:not(:empty):style(display: block !important)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > :empty
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > [id][style^="margin: 0 0 0 0;"]
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header [style*="margin: 0 0 "]
 $script,responseheader=x-yandex-req-id,domain=dzen.ru|sportsdzen.ru
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
