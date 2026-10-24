@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261021.1024
+@version        0.20261024.2059
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4058,7 +4058,7 @@
     header > .header__main {
         background-color: var(--color--header__bg) !important
     }
-    #menu-subs > [href]::after {
+    #menu-subs > [href]::after, .promo-banner {
         display: none !important
     }
     div[class*="page-story"][class*="ments"] div {
@@ -4066,6 +4066,9 @@
     }
     .app > .app__inner[style*="padding-top"] {
         padding-top: 64px !important
+    }
+    .header {
+        top: 0 !important
     }
 }
 
@@ -5095,6 +5098,12 @@
 @-moz-document domain("uakino.com") {
     header .container {
         padding-top: 30px !important
+    }
+}
+
+@-moz-document domain("ucrazy.org") {
+    .related-grid {
+        display: unset !important
     }
 }
 
