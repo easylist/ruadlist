@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261024.2059
+@version        0.20261026.1228
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2257,15 +2257,6 @@
     }
 }
 
-@-moz-document domain("gamemag.ru") {
-    .comment-background, .main-content {
-        background: none !important
-    }
-    .user-profile-section {
-        margin-top: unset !important
-    }
-}
-
 @-moz-document domain("gamer-info.com") {
     body > div:not([id]):not([class]) > div[class] > div[class] {
         background-image: none !important
@@ -4067,7 +4058,7 @@
     .app > .app__inner[style*="padding-top"] {
         padding-top: 64px !important
     }
-    .header {
+    .promo-banner-sticky .header, .promo-banner-sticky .header-tab-list {
         top: 0 !important
     }
 }
