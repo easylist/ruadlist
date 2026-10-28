@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261028.1711
+@version        0.20261028.2140
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2598,14 +2598,6 @@
     }
 }
 
-@-moz-document
-  domain("hlamer.ru"),
-  domain("ru") {
-    body[style*="://image.krasview.ru/channel"] {
-        background-color: #596c84 !important
-    }
-}
-
 @-moz-document domain("holod.media") {
     .article__bg {
         left: 49% !important
@@ -4236,6 +4228,18 @@
         position: fixed !important;
         transform: scale(0) !important;
         top: -10000px !important
+    }
+}
+
+@-moz-document
+  domain("qanime.ru"),
+  domain("zseek.ru"),
+  domain("hlamer.ru"),
+  domain("sersoap.ru"),
+  domain("smartkino.ru") {
+    body {
+        background-color: #596c84 !important;
+        background-image: none !important
     }
 }
 

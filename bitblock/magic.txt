@@ -4,6 +4,7 @@
 ! косметические правила и скриплеты
 russiatoday.ru###offers
 russiatoday.ru###today-media-article
+hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##+js(abort-on-property-read, adOnClick)
 russiatoday.ru##.Mirtesen-root
 nikvesti.com##.adfree-strip
 24tv.ua##.banner-slot
@@ -25,10 +26,12 @@ niknews.mk.ua##.top-add
 24tv.ua##[app-article-ita]
 24tv.ua##[app-article-partner-ad]
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [data-promo-post-hash])
+hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##body:style(background-color: #596c84 !important; background-image: none !important)
 novosti-n.org,russiatoday.ru##div[class*="banner"]
 russiatoday.ru##div[class^="Popup-"]
 !
 ! сетевые правила
 ||cdn.russiatoday.com/scripts/adfox/
+||ru/content/stargate/*.gif$image,~third-party
 ||russiatoday.ru/nbc/
 ||russiatoday.ru/static/views/wMainBannerTop.
