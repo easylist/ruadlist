@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261027.1925
+@version        0.20261028.1707
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1640,21 +1640,14 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child, 
     .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty, 
-    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div {
+    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty, 
+    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty {
         background-color: inherit !important
-    }
-    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child {
-        background-color: inherit !important;
-        border: inherit !important
     }
     div[class^="news"] [class*="skeleton"], 
     div[class^="news-site-"][class*="-desktop-"] {
         background-color: transparent !important
-    }
-    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child [id] {
-        border: inherit !important
     }
     #ad-feed, .adv-ecom, .content--styles__banner-cc + [aria-label] ~ div, 
     .news-page-layout__content > div[class*="position"], 
@@ -1663,6 +1656,7 @@
     .news-secondary-layout-column__secondary div[id], 
     .news-sticky__inner > div > div[id], 
     .news-story-page div[id] > div:not([id]) > div[id], 
+    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child, 
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], [class*="yandex-direct"], 
@@ -1697,18 +1691,8 @@
     div[style^="--top-padding:"] div[style^="--imageHeight:"] {
         display: none !important
     }
-    div[class*="dzen-wrapper-with-top-content-desktop__topContent-"] {
-        grid-template-columns: inherit !important
-    }
-    #SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"] {
-        height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important
-    }
     .climate-calendar-container {
         margin: unset !important
-    }
-    #SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"] {
-        min-height: 0 !important;
-        --desktopPageLayoutCenterPadding: inherit !important
     }
     [class^="dzen-desktop--main-page-"], div[class*="-top-of-the-day-ad"] {
         opacity: 0 !important
