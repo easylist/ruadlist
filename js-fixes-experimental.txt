@@ -254,6 +254,7 @@ nsportal.ru##+js(href-sanitizer, a[href^="https://www.google.com/url?q="])
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://www.gosuslugi.ru/ref?t="], ?to)
 livejournal.com##+js(href-sanitizer, a[href^="https://www.livejournal.com/away?to="], ?to)
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
+rutube.ru##+js(json-edit-fetch-response, [?!.referer=="https://rutube.ru"].appearance.auto_start, propsToMatch, /api/play)
 uma.media##+js(json-prune, appearance.extended_auto_start)
 ivanovonews.ru##+js(json-prune, banner.ytcode)
 kufar.by##+js(json-prune, data, errors)
@@ -844,11 +845,6 @@ patephone.com##+js(no-setTimeout-if, lastTick)
 patephone.com##+js(set-local-storage-item, rwDemo, $remove$)
 patephone.com##+js(set-local-storage-item, rws, $remove$)
 patephone.com##.reward-info
-!
-! Rutube автоплей, только десктопы
-!#if !env_mobile
-rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !/video/)
-!#endif
 !
 ! Hsmedia автоплей на Shkulev Media
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-attr, [class^="articleBlockVideo_"] video[src*="hsmedia.ru/"], controls, true)
