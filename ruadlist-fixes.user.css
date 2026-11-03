@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261029.1327
+@version        0.20261102.2109
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -911,6 +911,9 @@
 }
 
 @-moz-document domain("avito.ru") {
+    [data-element^="beduin-"][data-element$="/public-profile"] [style*="beduin-child-height:"] {
+        height: auto !important
+    }
     .avito-ads-container {
         margin: 0 !important;
         min-height: 0 !important;
