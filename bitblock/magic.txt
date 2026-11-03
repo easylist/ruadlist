@@ -7,7 +7,7 @@ fastpic.org,~new.fastpic.org##+js(set-cookie-reload, s68f416a, 32767)
 lenta.news,lenta.ru##.board__item._fonbet
 lenta.news,lenta.ru##.fonbetTopStickyBarWidget
 lenta.news,lenta.ru##.giveaway-banner
-!
+! ---
 russiatoday.ru###offers
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([data-testid="feed_replaced_item_notify_modal"])
 russiatoday.ru###today-media-article
@@ -49,6 +49,9 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 myfin.by##html,body:style(overflow: auto !important; padding-right: 0 !important)
 !
 ! сетевые правила
+! news
+||lenta.*/assets/webpack/images/giveaway/$domain=lenta.news|lenta.ru
+! ---
 /wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua|sportnews.com.ua
 ||b.myfin.by/x/?id=
 ||cdn.russiatoday.com/scripts/adfox/
