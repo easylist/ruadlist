@@ -6,7 +6,6 @@ russiatoday.ru###offers
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([data-testid="feed_replaced_item_notify_modal"])
 russiatoday.ru###today-media-article
 hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##+js(abort-on-property-read, adOnClick)
-gamemag.ru##+js(abort-on-property-write, keepAdblock)
 fastpic.org,~new.fastpic.org##+js(set-cookie-reload, s68f416a, 32767)
 russiatoday.ru##.Mirtesen-root
 2ip.io##.ad-container
@@ -45,6 +44,7 @@ myfin.by##html,body:style(overflow: auto !important; padding-right: 0 !important
 ! сетевые правила
 ||b.myfin.by/x/?id=
 ||cdn.russiatoday.com/scripts/adfox/
+||gamemag.ru/assets/*/js/branding-fade.js
 ||myfin.by/ajax-communication/get-active-communication
 ||ru/content/stargate/*.gif$image,~third-party
 ||russiatoday.ru/nbc/
