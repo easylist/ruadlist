@@ -4,62 +4,15 @@
 ! косметические правила и скриплеты
 ! news
 fastpic.org,~new.fastpic.org##+js(set-cookie-reload, s68f416a, 32767)
+dp.ua##.ad
 championat.com,championat.ru##.banner-twz
 lenta.news,lenta.ru##.board__item._fonbet
 lenta.news,lenta.ru##.fonbetTopStickyBarWidget
 lenta.news,lenta.ru##.giveaway-banner
-! ---
-russiatoday.ru###offers
-vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([data-testid="feed_replaced_item_notify_modal"])
-russiatoday.ru###today-media-article
-hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##+js(abort-on-property-read, adOnClick)
-russiatoday.ru##.Mirtesen-root
-2ip.io##.ad-container
-nikvesti.com##.adfree-strip
-24tv.ua##.banner-slot
-russiatoday.ru#?#.column__row_article-page_right:-abp-has(> .hide--partner--block)
-russiatoday.ru#?#.column__row_article-page_right:-abp-has(> [id])
-russiatoday.ru#?#.column__row_article-page_right:-abp-has(> div:empty)
-russiatoday.ru##.column__row_article-page_right:empty
-russiatoday.ru##.external-widget
-russiatoday.ru##.follows-channel_djen
-gamemag.ru##.gm-install
-russiatoday.ru##.hide--partner--block
-nikvesti.com##.nv-ad
-24tv.ua##.revive-block
-russiatoday.ru#?#.right-column > .aside-block:-abp-has(script)
-russiatoday.ru##.socials__link_yandex-zen
-niknews.mk.ua##.top-add
-vk.com,vk.ru#?#.vkuiInternalGroup--mode-card > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span[data-role])
-vk.com,vk.ru#?#.vkuiInternalGroup--mode-card > [role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
-24tv.ua##[app-ad]
-24tv.ua##[app-age-gate-card]
-24tv.ua##[app-article-fuel]
-24tv.ua##[app-article-ita]
-24tv.ua##[app-article-partner-ad]
-respawn.media##[aria-label="Реклама"]
-vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [data-promo-post-hash])
-vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header-coowners-title"])
-hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##body:style(background-color: #596c84 !important; background-image: none !important)
 igra.evroopt.by##body:style(overflow: auto !important)
-novosti-n.org,russiatoday.ru##div[class*="banner"]
-russiatoday.ru##div[class^="Popup-"]
-sportnews.com.ua##div[class^="si"][class*="e-branding-"]
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id*="gagah"]
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="page_"] > br
 myfin.by##html,body:style(overflow: auto !important; padding-right: 0 !important)
 !
 ! сетевые правила
 ! news
 ||championat.*/fenwick/
 ||lenta.*/assets/webpack/images/giveaway/$domain=lenta.news|lenta.ru
-! ---
-/wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua|sportnews.com.ua
-||b.myfin.by/x/?id=
-||cdn.russiatoday.com/scripts/adfox/
-||gamemag.ru/assets/*/js/branding-fade.js
-||ggbetuapromotion.com^$third-party
-||myfin.by/ajax-communication/get-active-communication
-||ru/content/stargate/*.gif$image,~third-party
-||russiatoday.ru/nbc/
-||russiatoday.ru/static/views/wMainBannerTop.
