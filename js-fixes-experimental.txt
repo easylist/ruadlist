@@ -990,3 +990,8 @@ ya.ru##section li > a.home-link2
 ||rsv.today/promo/2ipchange$document
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
 !#endif
+!
+! Временные фиксы для ELC
+evroopt.by##+js(prevent-addEventListener, /^(?:click|scroll|keydown|touchstart|mouseenter)$/, cookies)
+igra.evroopt.by##body:style(overflow: auto !important)
+myfin.by##html,body:style(overflow: auto !important; padding-right: 0 !important)

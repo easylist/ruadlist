@@ -40,3 +40,8 @@ myfin.by##html,body:style(overflow: auto !important; padding-right: 0 !important
 ||factors.championat.com/api/*/banners/
 ||lenta.*/assets/webpack/images/giveaway/$domain=lenta.news|lenta.ru
 ||winline.onelink.me^$popup
+!
+! Временные фиксы для ELC
+evroopt.by##+js(prevent-addEventListener, /^(?:click|scroll|keydown|touchstart|mouseenter)$/, cookies)
+igra.evroopt.by##body:style(overflow: auto !important)
+myfin.by##html,body:style(overflow: auto !important; padding-right: 0 !important)
