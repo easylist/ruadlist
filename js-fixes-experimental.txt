@@ -7,7 +7,6 @@ growhow.in.ua###custom-background-css:remove()
 playground.ru###dfpPrerollDelay:remove()
 freesoft.ru###downloadAdModal:remove()
 myshared.ru###download_form > .modal-body
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###hjhj
 vm.ru###onair > img[data-src="/img/player_cover.svg"]
 inoreader.com###reader_pane:style(padding-right: unset !important)
 3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
@@ -356,7 +355,6 @@ farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
 ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузер|Установить поиск Яндекса/)
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dblo|detected|dGua|tick|Адгу-/)
 streame.center##+js(remove-node-text, script, /adserverDomain|popundersPerIP|right-click/)
 ritsatv.ru##+js(remove-node-text, script, /checkAds|initAdblockCheck/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
@@ -609,6 +607,8 @@ volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)
 ixbt.pro##body:remove-class(branding)
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id] > p:style(margin-top: unset !important)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id]:style(height: auto !important)
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
@@ -966,7 +966,6 @@ gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="htt
 !
 !#if env_mv3
 payment.mts.ru###__next > div[id^="adfox_"]:not(:empty):style(display: block !important)
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header [style*="margin: 0 0 "]
 $script,responseheader=x-yandex-req-id,domain=dzen.ru|sportsdzen.ru
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
@@ -981,8 +980,6 @@ com,~ishosting.com,me,net,org,ru##a[href^="https://ishosting.com"][target="_blan
 com,me,net,org,~postgrespro.ru,ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
 ya.ru##div[class^="main-home-"][class$="_hidden_no"]
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="page_"] > :empty
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="page_"] > [style*="margin: "]
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[style*="position:"][style*="11111"]
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
 ya.ru##section li > a.home-link2
 ||cdn.viqeo.tv/js/assets/master-*/styles/vn_player.css$stylesheet
