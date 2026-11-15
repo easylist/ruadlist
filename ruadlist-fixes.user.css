@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261111.1917
+@version        0.20261115.2025
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -2067,6 +2067,21 @@
     }
 }
 
+@-moz-document
+  domain("footbole24.com"),
+  domain("kingball.top"),
+  domain("sportcsat.com"),
+  domain("sportcsat.ru"),
+  domain("streame.center"),
+  domain("vitalsport1.ru") {
+    div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"] {
+        display: none !important
+    }
+    iframe[src] {
+        pointer-events: auto !important
+    }
+}
+
 @-moz-document domain("forbes.ru") {
     .jNJtr {
         height: calc(var(--vh, 1vh)*100 - 1px) !important
@@ -2899,19 +2914,6 @@
 @-moz-document domain("kharkovforum.com") {
     body > table > tbody > tr > td[align="center"] {
         display: none !important
-    }
-}
-
-@-moz-document
-  domain("kingball.top"),
-  domain("sportcsat.ru"),
-  domain("streame.center"),
-  domain("vitalsport1.ru") {
-    div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"] {
-        display: none !important
-    }
-    iframe[src] {
-        pointer-events: auto !important
     }
 }
 
