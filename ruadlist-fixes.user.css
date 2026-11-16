@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261115.2025
+@version        0.20261116.1922
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -5356,9 +5356,8 @@
 }
 
 @-moz-document domain("www.1tv.ru") {
-    div[class^="Branding_container_"] {
-        margin-top: unset !important;
-        height: auto !important
+    div[class*="Branding_branding_"] {
+        padding-top: unset !important
     }
 }
 
