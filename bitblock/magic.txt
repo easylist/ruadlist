@@ -4,11 +4,13 @@
 ! косметические правила и скриплеты
 ! news
 www.onliner.by###js-pm > header [class]
+sia.ru###left_fixed_block-rand-1
 sovsport.ru###match-forecasts
 hentasis.me##+js(abort-on-property-read, ClickUndercookie)
 fastpic.org,~new.fastpic.org##+js(set-cookie-reload, s68f416a, 32767)
 catalog.onliner.by##.catalog-banner
 rknweb.ru##.code-block
+sia.ru#?#.header:-abp-has(> h3 > a[href="/?section=519"])
 nv.ua##.main-wrapper .container > .row > a[target="_blank"] > picture
 sovsport.ru##.offers-carousel
 hcdn.online,hencdn.top##.video-js > [class][role="status"][aria-live="polite"]
@@ -39,7 +41,8 @@ sovsport.ru##div[class*="_notice"]
 sovsport.ru##div[class*="_predictions"]
 sovsport.ru##div[class*="_seoBlock"]
 sovsport.ru##div[class*="_widget"]
-c-o-k.ru##div[class*="banner"]
+sia.ru##div[class*="banana"]
+c-o-k.ru,sia.ru##div[class*="banner"]
 sovsport.ru##div[class*="coefficient"]
 sovsport.ru##div[class*="freeBet"]
 sovsport.ru##div[class*="partnerMark"]
@@ -63,6 +66,8 @@ sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bookmaker"])
 ||fly.codes^$third-party
 ||gc.onliner.by/js/growthbook-*.js
 ||rapp.su/assets/js/player/counter.js
+||sia.ru/*/piroman_
+||sia.ru/files/b/
 ||site/rtr/$script
 ||sovsport.ru/api/proxy/api/promolink/
 ||strm.yandex.*/vh-adfo*-converted/$media
