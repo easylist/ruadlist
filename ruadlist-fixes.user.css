@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261116.1922
+@version        0.20261116.1959
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -4539,6 +4539,16 @@
     }
     .menu[role="navigation"] div[style], aside > div[class]:first-child div {
         height: auto !important
+    }
+}
+
+@-moz-document domain("sdelanounas.ru") {
+    #SocialWelcome, #modalOverlay {
+        display: none !important
+    }
+    body, html {
+        overflow-x: auto !important;
+        position: initial !important
     }
 }
 
