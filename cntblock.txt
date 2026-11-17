@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Mon, 16 Nov 2026 15:35:20 +0000
+! Last modified: Tue, 17 Nov 2026 08:20:57 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1400,11 +1400,10 @@ yandex.com##.serp-list > div[data-bem*=".jpg"] ~ div .Root[id]:style(display: no
 ||yastatic.net/s3/games-static/_/build/game/desktop/yandex/Promo.$important
 ||yastatic.net/yandex-video-player-iframe-api-bundles-stable/*?adsdk-try=$empty
 ~games.s3.yandex.net,ya.*,yandex.*##+js(no-xhr-if, yabs.yandex.ru/count/)
-~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(abort-on-property-read, __activeTestIds)
-~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(abort-on-property-write, __pcodeAllActiveTestIds)
 ~mail.yandex.*,~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.initPcode, undefined)
 ~yandex.net,mail.yandex.*,yandex.*##.mail-Layout-Main > .mail-Advanced-Search ~ div[class^="ns-view-"] div[style^="height:"][style*="!important"] > div:style(display: none !important)
 ~yandex.net,mail.yandex.*,yandex.*##.PSHeader-Pro:style(display: none !important)
+~yandex.net,ya.*,yandex.*##+js(abort-on-property-read, AdFox_getCodeScript)
 ~yandex.net,ya.*,yandex.*##+js(set-constant, Object.prototype.Rtb, undefined)
 !#if env_mv3
 dzen.ru,sportsdzen.ru,ya.ru##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
