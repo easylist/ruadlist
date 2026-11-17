@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261116.1959
+@version        0.20261117.1530
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -1643,24 +1643,25 @@
 }
 
 @-moz-document domain("dzen.ru") {
-    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child, 
-    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty, 
-    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty, 
-    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty {
+    .content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child, 
+    .content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty, 
+    .content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty, 
+    .content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty {
         background-color: inherit !important
     }
     div[class^="news"] [class*="skeleton"], 
     div[class^="news-site-"][class*="-desktop-"] {
         background-color: transparent !important
     }
-    #ad-feed, .adv-ecom, .content--styles__banner-cc + [aria-label] ~ div, 
+    #ad-feed, .adv-ecom, 
+    .content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child, 
+    .content--styles__banner-cc + [aria-label] ~ div, 
     .news-page-layout__content > div[class*="position"], 
     .news-page-layout__rubricator ~ [id], .news-rubric-desktop__adv-column, 
     .news-rubric-desktop__news > section > div > div[id], 
     .news-secondary-layout-column__secondary div[id], 
     .news-sticky__inner > div > div[id], 
     .news-story-page div[id] > div:not([id]) > div[id], 
-    .secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child, 
     [aria-label] div[id][class*="-desktop__ad-"], [class*="CardRtb"], 
     [class*="card-rtb"], [class*="desktop"] ~ [id*="teaser"], 
     [class*="dzen-desktop--flash-modal"], [class*="yandex-direct"], 
