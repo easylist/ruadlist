@@ -5,7 +5,9 @@
 ! news
 sdelanounas.ru###SocialWelcome
 sdelanounas.ru###modalOverlay
+sovsport.ru##+js(prevent-fetch, _rsc=)
 sdelanounas.ru##body:style(overflow-x: auto !important; position: initial !important)
+sovsport.ru#?#div[class$="_grid"] > div[class*="_cell "]:-abp-has(> div:empty)
 1tv.ru##div[class^="Branding_container_"]
 sdelanounas.ru##div[class^="banner_"]
 sdelanounas.ru##html:style(overflow-x: auto !important; position: initial !important)
@@ -67,6 +69,8 @@ sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bookmaker"])
 !
 ! сетевые правила
 ! news
+||sovsport.ru/api/bonus-rating
+!
 .bid/vast/$third-party,xmlhttprequest
 /ybn3j9e?$third-party,xmlhttprequest
 @@||src.zakaz.atbmarket.com/cache/banners/banner_big_$image,domain=www.atbmarket.com
@@ -79,8 +83,3 @@ sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bookmaker"])
 ||sovsport.ru/api/proxy/api/promolink/
 ||strm.yandex.*/vh-adfo*-converted/$media
 ||ya.ru/adfox/
-!
-! Временные фиксы для ELC
-evroopt.by##+js(prevent-addEventListener, /^(?:click|scroll|keydown|touchstart|mouseenter)$/, cookies)
-igra.evroopt.by##body:style(overflow: auto !important)
-myfin.by##html,body:style(overflow: auto !important; padding-right: 0 !important)
