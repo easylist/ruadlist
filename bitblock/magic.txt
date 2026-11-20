@@ -9,6 +9,8 @@ sdelanounas.ru###modalOverlay
 neoseeker.com###raptive-support-message
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([aria-label^="Вам видны"])
 neoseeker.com###walkthrough-support-rail
+drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
 sovsport.ru##+js(prevent-fetch, _rsc=)
 belgee.by,geelyautomobile.by##+js(set-cookie, hide-cookie-message, true)
 neoseeker.com##.raptive-inline-support
