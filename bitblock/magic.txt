@@ -5,11 +5,13 @@
 ! news
 sdelanounas.ru###SocialWelcome
 kanobu.ru###__next > div > .bg-background > section[aria-label]
+shedevrum.ai###app > [class*="center"] > div[class]:style(height: unset !important)
 sdelanounas.ru###modalOverlay
 neoseeker.com###raptive-support-message
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([aria-label^="Вам видны"])
 neoseeker.com###walkthrough-support-rail
 drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
+shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
 sovsport.ru##+js(prevent-fetch, _rsc=)
 belgee.by,geelyautomobile.by##+js(set-cookie, hide-cookie-message, true)
