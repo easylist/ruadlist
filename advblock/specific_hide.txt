@@ -97,9 +97,6 @@ lifehacker.ru#?##article > p:-abp-has(> em:-abp-contains(отключите бл
 varta1.com.ua###article-content > header > h1:first-child + div > div[style^="--position-aspect-ratio:"]
 agropolit.com###article_banner
 sport.tut.by###article_body > .TitledImage
-sib.fm###article_feeds .title-comments
-sib.fm#?##article_feeds > .row:-abp-has(> div > a[href*="yandex."][href*="news"][href*="favid"])
-sib.fm#?##article_feeds > .row:-abp-has(> div > p:-abp-contains(/яндекс/i))
 portal-kultura.ru###aside > center ~ *
 sinonim.org###aside > div[style^="border:"]
 vsebasni.ru###aside > noindex
@@ -2090,7 +2087,7 @@ stena.ee##.block-outer a[href][rel="nofollow"]
 lovitut.ru##.block-reklamo_rotator
 sntch.com##.block-relap
 dtf.ru,vc.ru##.block-special-button > a[target="_blank"]
-sib.fm##.block-sticky > div[style^="min-height:"]
+sib.fm##.block-sticky div[style^="min-height:"]
 sntch.com##.block-superwidget
 konstruktortestov.ru#?#.block-test:-abp-has(#marketAttractive)
 konstruktortestov.ru#?#.block-test:-abp-has(#vid_vpaut_div)
@@ -2490,6 +2487,7 @@ bazr.ru##.container > .wrapper > .row > .grid_4
 solncevo.info##.container > a[href*="utm_campai"] ~ a[href][target="_blank"]
 saratovnews.ru##.container > div > object
 imagenizr.net##.container > div[id^="adblock-"] ~ .row
+sib.fm##.container > div[style^="min-height:"]
 nashdisk.ru##.container > table[align]
 club.ru##.container-banners
 mctop.su##.container-bbbs
@@ -2830,6 +2828,7 @@ soccer365.com.ua,soccer365.ru##.footer > :not(.footer_bottom)
 mozutil.mozilla-russia.org##.footer > span > div[style="text-align: left;"] > div[style="text-align: right;"]
 rutracker-net.ru##.footer a[target="_blank"]
 sport.kg##.footer-add > a
+sib.fm##.footer-article__more
 kino-archive.ru,silver.ru##.footer-banner
 finam.ru##.footer-banner-block
 kino.video,tasix.me##.footer-container #blink7
@@ -6891,7 +6890,6 @@ nadavi.com.ua,nadavi.ru##body > *>div[id][style*="height:"]
 idwl.cn##body > .brand
 novostiua.net##body > .brend
 nb.by##body > .container > div[style="background-color:#dfe0e1"]
-sib.fm##body > .container > div[style^="min-height:"]
 comedy-radio.ru##body > .container[style*="height:"]
 comss.ru##body > .dlblock ~ .container > div[style="margin-top:25px;margin-bottom:25px;"]
 comss.ru##body > .dlblock ~ .container[style="padding-top:12px;"]
@@ -8118,6 +8116,7 @@ get-save.com##div[style^="min-height: 250px;"]
 cadelta.ru,modfarm.ru##div[style^="min-height: 250px;"][style*="background:"]
 smart-lab.ru##div[style^="min-height: 250px;"][style*="font-size: 0;"]
 liveposts.ru##div[style^="min-height: 700px;"]
+sib.fm#?#div[style^="min-height:"]:-abp-has(.banner)
 open3dmodel.com##div[style^="min-height:"][style$="px;"]
 point.md##div[style^="min-height:"][style*="250px"]
 1pnz.ru##div[style^="position: relative; width: 230px; height: 400px"]

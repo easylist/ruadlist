@@ -15,6 +15,9 @@ shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
 sovsport.ru##+js(prevent-fetch, _rsc=)
 belgee.by,geelyautomobile.by##+js(set-cookie, hide-cookie-message, true)
+sib.fm##.block-sticky div[style^="min-height:"]
+sib.fm##.container > div[style^="min-height:"]
+sib.fm##.footer-article__more
 neoseeker.com##.raptive-inline-support
 vk.com,vk.ru##[id^="l_invite_"][id$="_promo"]
 comedy-radio.ru##body > .container[style*="height:"]
@@ -32,6 +35,7 @@ igromania.ru##div[class^="HeaderPromo_"]
 sdelanounas.ru##div[class^="banner_"]
 www1.ru##div[id*="banner"]
 vk.com,vk.ru##div[role="main"] [data-feed-fpc-exclude]:not(:empty)
+sib.fm#?#div[style^="min-height:"]:-abp-has(.banner)
 sdelanounas.ru##html:style(overflow-x: auto !important; position: initial !important)
 liveball.sx,liveball.*##.home-hero__odds
 liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
@@ -41,4 +45,5 @@ byxatab.com#?#section.sect.sect--bdt:nth-of-type(2) #dle-content > a:-abp-has(> 
 ! сетевые правила
 ! news
 ||rusradio.ru/static/heart-widget.js
+||sib.fm/storage/banner/
 ||sovsport.ru/api/bonus-rating
