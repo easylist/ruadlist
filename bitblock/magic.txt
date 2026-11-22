@@ -6,6 +6,7 @@
 sdelanounas.ru###SocialWelcome
 kanobu.ru###__next > div > .bg-background > section[aria-label]
 shedevrum.ai###app > [class*="center"] > div[class]:style(height: unset !important)
+7kanal.co.il###banner-sticky
 sdelanounas.ru###modalOverlay
 neoseeker.com###raptive-support-message
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([aria-label^="Вам видны"])
@@ -16,6 +17,7 @@ drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, /
 sovsport.ru##+js(prevent-fetch, _rsc=)
 belgee.by,geelyautomobile.by##+js(set-cookie, hide-cookie-message, true)
 championat.com,championat.ru#?#.article-preview-list > .article-preview:-abp-has(a[href^="https://gglead.org/"])
+7kanal.co.il##.banner
 sib.fm##.block-sticky div[style^="min-height:"]
 sib.fm##.container > div[style^="min-height:"]
 sib.fm##.footer-article__more
@@ -38,7 +40,9 @@ igromania.ru##div[class^="GtaButton_button_"]
 igromania.ru##div[class^="HeaderPromo_"]
 sdelanounas.ru##div[class^="banner_"]
 www1.ru##div[id*="banner"]
+7kanal.co.il##div[role="banner"]
 vk.com,vk.ru##div[role="main"] [data-feed-fpc-exclude]:not(:empty)
+7kanal.co.il#?#div[style]:-abp-has(> .taboola:only-child)
 sib.fm#?#div[style^="min-height:"]:-abp-has(.banner)
 sdelanounas.ru##html:style(overflow-x: auto !important; position: initial !important)
 liveball.sx,liveball.*##.home-hero__odds
