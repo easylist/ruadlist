@@ -12,7 +12,7 @@ vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-h
 neoseeker.com###walkthrough-support-rail
 drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
 shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
-drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, /setCookies|srcElement|this/)
 sovsport.ru##+js(prevent-fetch, _rsc=)
 belgee.by,geelyautomobile.by##+js(set-cookie, hide-cookie-message, true)
 championat.com,championat.ru#?#.article-preview-list > .article-preview:-abp-has(a[href^="https://gglead.org/"])
