@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20261121.1602
+@version        0.20261124.1249
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -740,22 +740,11 @@
 @-moz-document
   domain("anistar.org"),
   domain("astar.bz"),
+  domain("astar.pw"),
   domain("online-star.org"),
   domain("online-stars.org") {
-    html > body:not(#id) {
-        background-image: none !important
-    }
-    body > .main.wrapper {
-        margin-top: 0 !important
-    }
-    body > header {
-        top: 0 !important
-    }
-    .list-nav {
-        z-index: 1 !important
-    }
-    .drowmenu {
-        z-index: 1999999999 !important
+    .news_avatar > img {
+        filter: none !important
     }
 }
 
