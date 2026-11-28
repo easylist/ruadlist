@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: RU AdList: Counters
-! Last modified: Sun, 22 Nov 2026 15:25:42 +0000
+! Last modified: Sat, 28 Nov 2026 13:15:02 +0000
 ! Expires: 1 days (фильтр обновляется автоматически каждые 24 часа)
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 !
@@ -1050,7 +1050,6 @@ _pagespeed_beacon?
 ||veon-analytics.digital.medallia.eu^$third-party
 ||veon-udc.digital.medallia.eu^$third-party
 ||vercel-analytics.com^$third-party
-||vgtimes.*/?from=top&_pjax=$xmlhttprequest
 ||vicomi.com/api/*/analytics/$third-party
 ||videoplayerhub.com^$third-party
 ||viqeo.tv/stats?
@@ -1686,7 +1685,7 @@ $removeparam=ysclid
 /?ref=tg$document,removeparam=ref
 ?es=smi2$document,removeparam=es
 ?from=$document,removeparam=from,domain=3dnews.ru|7days.ru|~account.mail.ru|~auth.mail.ru|auto.ru|autodaily.ru|autonews.ru|autopilot.ru|habr.com|igromania.ru|klops.ru|kommersant.ru|kp.ru|libertycity.net|libertycity.ru|~light.mail.ru|mail.ru|metro-cc.ru|mk.ru|myweekend.ru|ntv.ru|~o2.mail.ru|ozon.ru|peers.tv|rbc.ru|rbcautonews.ru|rbclifemedia.ru|rbcrealty.ru|ridus.ru|sportmail.ru|sportrbc.ru|sports.ru|vkplay.ru
-?from=$document,xmlhttprequest,removeparam=from,domain=vedomosti.ru
+?from=$document,xmlhttprequest,removeparam=from,domain=libertycity.net|libertycity.ru|vedomosti.ru|vgtimes.com|vgtimes.ru
 ?from=RCM-$removeparam=from
 ?from=smi2agg$document,removeparam=from
 ?prov=ukrnet$removeparam=prov

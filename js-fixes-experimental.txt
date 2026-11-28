@@ -634,7 +634,7 @@ pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 epscape.*##+js(prevent-setTimeout, shouldShowPrompt)
 fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 fap-guru.*,seks-studentki.*,sex-studentki.*##+js(addEventListener-defuser, DOMContentLoaded, click_time)
-fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)
+fishki.net,game4you.top,hot.game,innal.top,libertycity.*,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib,vgtimes.*##+js(href-sanitizer, [href*="url=https"], ?url)
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(set, Object.prototype.ads/mobiads, undefined)
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
@@ -642,6 +642,9 @@ howdyho.*##+js(no-setTimeout-if, _0x)
 howdyho.*##+js(set-attr, #progress-value, data-timer, 25)
 ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##html[data-env]:style(container-type: unset !important)
 kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
+libertycity.*,vgtimes.*##+js(prevent-setTimeout, ad_fullscreen_shown)
+libertycity.*,vgtimes.*##^.adfshift
+libertycity.*,vgtimes.*##^.backgr42
 liveball.*##+js(prevent-addEventListener, click, excluded)
 m.rp5.*#@#.adsbygoogle
 reshuent.ru,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
@@ -828,11 +831,6 @@ bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkn
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
-!
-!#if !env_mobile
-libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru###mobileon
-libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(set-cookie, is_mobile, no, , reload, 1)
-!#endif
 !
 ! МИР 24
 mir24.tv##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, _app-)
